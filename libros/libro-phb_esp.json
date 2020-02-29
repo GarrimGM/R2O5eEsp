@@ -2,17 +2,17 @@
 	"_meta": {
 		"sources": [
 			{
-				"json": "libro-phb_esp",
-				"abbreviation": "PHB_ESP",
+				"json": "phbesp",
+				"abbreviation": "PHB ESP",
 				"full": "Player's Handbook Español",
 				"color": "af6941",
 				"authors": [
-					"Arcana Games"
+					"Garrim"
 				],
 				"convertedBy": [
 					""
 				],
-				"version": "2020.2",
+				"version": "2020.2.29",
 				"url": "",
 				"targetSchema": "1.0.0"
 			}
@@ -23,8 +23,8 @@
 	"book": [
 		{
 			"name": "Player's Handbook Español",
-			"id": "PHB_ESP",
-			"source": "PHB_ESP",
+			"id": "phbesp",
+			"source": "phbesp",
 			"image": "assets/misc/covers/book-phb.png",
 			"published": "2014-08-19",
 			"author": "Wizards RPG Team",
@@ -55,7 +55,7 @@
 					}
 				},
 				{
-					"name": "Races",
+					"name": "Razas",
 					"headers": [
 						"Choosing a Race"
 					],
@@ -65,20 +65,20 @@
 					}
 				},
 				{
-					"name": "Classes",
+					"name": "Clases",
 					"ordinal": {
 						"type": "chapter",
 						"identifier": 3
 					}
 				},
 				{
-					"name": "Personality and Background",
+					"name": "Personalidad y trasfondo",
 					"headers": [
-						"Character Details",
-						"Alignment",
-						"Languages",
-						"Inspiration",
-						"Backgrounds"
+						"Aspectos de un personaje",
+						"Alineamiento",
+						"Idiomas",
+						"Inspiración",
+						"Trasfondos"
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -86,18 +86,18 @@
 					}
 				},
 				{
-					"name": "Equipment",
+					"name": "Equipo",
 					"headers": [
-						"Starting Equipment",
-						"Wealth",
-						"Armor and Shields",
-						"Weapons",
-						"Adventuring Gear",
-						"Tools",
-						"Mounts and Vehicles",
-						"Trade Goods",
-						"Expenses",
-						"Trinkets"
+						"Equipo inicial",
+						"Riqueza",
+						"Armaduras y escudos",
+						"Armas",
+						"Equipo de aventureros",
+						"Herramientas",
+						"Monturas y vehículos",
+						"Mercancías",
+						"Gastos",
+						"Bagatelas"
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -105,10 +105,10 @@
 					}
 				},
 				{
-					"name": "Customization Options",
+					"name": "Opciones de personalización",
 					"headers": [
-						"Multiclassing",
-						"Feats"
+						"Multiclase",
+						"Dotes"
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -116,14 +116,14 @@
 					}
 				},
 				{
-					"name": "Using Ability Scores",
+					"name": "Usar puntuaciones de característica",
 					"headers": [
-						"Ability Scores and Modifiers",
-						"Advantage and Disadvantage",
-						"Proficiency Bonus",
-						"Ability Checks",
-						"Using Each Ability",
-						"Saving Throws"
+						"Puntuaciones de característica y modificadores",
+						"Ventaja y desventaja",
+						"Bonificador por competencia",
+						"Pruebas de característica",
+						"Usar cada característica",
+						"Tiradas de salvación"
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -131,14 +131,14 @@
 					}
 				},
 				{
-					"name": "Adventuring",
+					"name": "Aventuras",
 					"headers": [
-						"Time",
-						"Movement",
-						"The Environment",
-						"Social Interaction",
-						"Resting",
-						"Between Adventures"
+						"Tiempo",
+						"Movimiento",
+						"El entorno",
+						"Interacciones sociales",
+						"Descansar",
+						"Entre aventuras"
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -146,16 +146,16 @@
 					}
 				},
 				{
-					"name": "Combat",
+					"name": "Combate",
 					"headers": [
-						"The Order of Combat",
-						"Movement and Position",
-						"Actions in Combat",
-						"Making an Attack",
-						"Cover",
-						"Damage and Healing",
-						"Mounted Combat",
-						"Underwater Combat"
+						"Estructura de un combate",
+						"Movimiento y posición",
+						"Acciones en combate",
+						"Atacando",
+						"Cobertura",
+						"Daño y curación",
+						"Combate montado",
+						"Combate bajo el agua"
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -163,10 +163,10 @@
 					}
 				},
 				{
-					"name": "Spellcasting",
+					"name": "Lanzamiento de conjuros",
 					"headers": [
-						"What Is a Spell?",
-						"Casting a Spell"
+						"¿Qué es un conjuro?",
+						"Lanzar un conjuro"
 					],
 					"ordinal": {
 						"type": "chapter",
@@ -174,21 +174,21 @@
 					}
 				},
 				{
-					"name": "Conditions",
+					"name": "Estados",
 					"ordinal": {
 						"type": "appendix",
 						"identifier": "A"
 					}
 				},
 				{
-					"name": "Gods of the Multiverse",
+					"name": "Dioses del multiverso",
 					"ordinal": {
 						"type": "appendix",
 						"identifier": "B"
 					}
 				},
 				{
-					"name": "The Planes of Existence",
+					"name": "Los planos de existencia",
 					"headers": [
 						"The Material Plane",
 						"Beyond the Material"
@@ -203,12 +203,12 @@
 	],
 	"bookData": [
 		{
-			"id": "PHB_ESP",
-			"source": "PHB_ESP",
+			"id": "phbesp",
+			"source": "phbesp",
 			"data": [
 			{
 				"type": "section",
-				"name": "Introduction",
+				"name": "Introducción",
 				"page": 5,
 				"entries": [
 					"The Dungeons & Dragons roleplaying game is about storytelling in worlds of swords and sorcery. It shares elements with childhood games of make-believe. Like those games, D&D is driven by imagination. It's about picturing the towering castle beneath the stormy night sky and imagining how a fantasy adventurer might react to the challenges that scene presents.",
@@ -241,7 +241,7 @@
 					"There's no winning and losing in the Dungeons & Dragons game\u2014at least, not the way those terms are usually understood. Together, the DM and the players create an exciting story of bold adventurers who confront deadly perils. Sometimes an adventurer might come to a grisly end, torn apart by ferocious monsters or done in by a nefarious villain. Even so, the other adventurers can search for powerful magic to revive their fallen comrade, or the player might choose to create a new character to carry on. The group might fail to complete an adventure successfully, but if everyone had a good time and created a memorable story, they all win.",
 					{
 						"type": "section",
-						"name": "Worlds of Adventure",
+						"name": "Mundos de aventura",
 						"page": 5,
 						"entries": [
 							"The many worlds of the Dungeons & Dragons game are places of magic and monsters, of brave warriors and spectacular adventures. They begin with a foundation of medieval fantasy and then add the creatures, places, and magic that make these worlds unique.",
@@ -253,7 +253,7 @@
 					},
 					{
 						"type": "section",
-						"name": "Using this Book",
+						"name": "Cómo usar este libro",
 						"page": 6,
 						"entries": [
 							"The Player's Handbook is divided into three parts.",
@@ -267,7 +267,7 @@
 						"data": {
 							"quickref": 3
 						},
-						"name": "How to Play",
+						"name": "Cómo jugar",
 						"page": 6,
 						"entries": [
 							"{@b 1. The DM describes the environment.} The DM tells the players where their adventurers are and what's around them, presenting the basic scope of options that present themselves (how many doors lead out of a room, what's on a table, who's in the tavern, and so on).",
@@ -335,7 +335,7 @@
 					},
 					{
 						"type": "section",
-						"name": "Adventures",
+						"name": "Aventuras",
 						"page": 7,
 						"entries": [
 							"The Dungeons & Dragons game consists of a group of characters embarking on an adventure that the Dungeon Master presents to them. Each character brings particular capabilities to the adventure in the form of ability scores and skills, class features, racial traits, equipment, and magic items. Every character is different, with various strengths and weaknesses, so the best party of adventurers is one in which the characters complement each other and cover the weaknesses of their companions. The adventurers must cooperate to successfully complete the adventure.",
