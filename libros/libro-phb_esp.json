@@ -30805,6 +30805,453 @@
 			]
 		}
 	],
+	"trait": [
+		{
+			"name": "Awakened",
+			"source": "PHB_Esp",
+			"page": 216,
+			"ref": "{@spell Awaken}",
+			"prerequisite": {
+				"size": {
+					"max": "H"
+				},
+				"type": {
+					"oneOf": [
+						"beast",
+						"plant"
+					]
+				},
+				"int": {
+					"max": 3
+				}
+			},
+			"apply": {
+				"_root": {
+					"int": 10
+				},
+				"_mod": {
+					"languages": {
+						"mode": "replaceOrAppendArr",
+						"replace": "one language known by its creator",
+						"items": "one language known by its creator"
+					}
+				}
+			}
+		},
+		{
+			"name": "Drow",
+			"source": "PHB_Esp",
+			"page": 21,
+			"ref": "{@race Elf (Drow)||Drow}",
+			"apply": {
+				"_root": {
+					"type": {
+						"type": "humanoid",
+						"tags": [
+							"elf"
+						]
+					}
+				},
+				"_mod": {
+					"_": [
+						{
+							"mode": "addSenses",
+							"senses": {
+								"type": "darkvision",
+								"range": 120
+							}
+						},
+						{
+							"mode": "addSkills",
+							"skills": {
+								"perception": 1
+							}
+						}
+					],
+					"languages": {
+						"mode": "replaceOrAppendArr",
+						"replace": "Elvish",
+						"items": "Elvish"
+					},
+					"spellcasting": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"name": "Innate Spellcasting",
+								"headerEntries": [
+									"<$title_name$>'s innate spellcasting ability is Charisma (spell save DC <$spell_dc__cha$>). <$title_name$> can innately cast the following spells, requiring no material components:"
+								],
+								"will": [
+									"{@spell dancing lights}"
+								],
+								"daily": {
+									"1e": [
+										"{@spell darkness}",
+										"{@spell faerie fire}"
+									]
+								},
+								"ability": "cha"
+							}
+						]
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"name": "Fey Ancestry",
+								"entries": [
+									"<$title_name$> has advantage on saving throws against being charmed, and magic can't put <$title_name$> to sleep."
+								]
+							},
+							{
+								"name": "Sunlight Sensitivity",
+								"entries": [
+									"While in sunlight, <$short_name$> has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Half-Elf",
+			"source": "PHB_Esp",
+			"page": 38,
+			"ref": "{@race Half-Elf}",
+			"apply": {
+				"_root": {
+					"type": {
+						"type": "humanoid",
+						"tags": [
+							"half-elf"
+						]
+					}
+				},
+				"_mod": {
+					"_": [
+						{
+							"mode": "addSenses",
+							"senses": {
+								"type": "darkvision",
+								"range": 60
+							}
+						}
+					],
+					"languages": {
+						"mode": "replaceOrAppendArr",
+						"replace": "Elvish",
+						"items": "Elvish"
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"name": "Fey Ancestry",
+								"entries": [
+									"<$title_name$> has advantage on saving throws against being charmed, and magic can't put <$title_name$> to sleep."
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Half-Orc",
+			"source": "PHB_Esp",
+			"page": 40,
+			"ref": "{@race Half-Orc}",
+			"apply": {
+				"_root": {
+					"type": {
+						"type": "humanoid",
+						"tags": [
+							"half-orc"
+						]
+					}
+				},
+				"_mod": {
+					"_": [
+						{
+							"mode": "addSenses",
+							"senses": {
+								"type": "darkvision",
+								"range": 60
+							}
+						},
+						{
+							"mode": "addSkills",
+							"skills": {
+								"intimidation": 1
+							}
+						}
+					],
+					"languages": {
+						"mode": "replaceOrAppendArr",
+						"replace": "Orc",
+						"items": "Orc"
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"name": "Relentless Endurance",
+								"entries": [
+									"When reduced to 0 hit points, <$title_name$> drops to 1 hit point instead (but can't do this again until they finish a long rest)."
+								]
+							},
+							{
+								"name": "Savage Attacks",
+								"entries": [
+									"When they score a critical hit, <$title_name$> can roll one of the weapon's damage dice and add it to the extra damage of the critical hit."
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Mountain Dwarf",
+			"source": "PHB_Esp",
+			"page": 18,
+			"ref": "{@race Dwarf (Mountain)||Mountain Dwarf}",
+			"apply": {
+				"_root": {
+					"type": {
+						"type": "humanoid",
+						"tags": [
+							"dwarf"
+						]
+					},
+					"speed": 25
+				},
+				"_mod": {
+					"_": {
+						"mode": "addSenses",
+						"senses": {
+							"type": "darkvision",
+							"range": 60
+						}
+					},
+					"languages": {
+						"mode": "replaceOrAppendArr",
+						"replace": "Dwarvish",
+						"items": "Dwarvish"
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"name": "Dwarven Resilience",
+								"entries": [
+									"<$title_name$> has advantage on saving throws against poison, and has resistance against poison damage."
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Rock Gnome",
+			"source": "PHB_Esp",
+			"page": 35,
+			"ref": "{@race Gnome (Rock)||Rock Gnome}",
+			"apply": {
+				"_root": {
+					"size": "S",
+					"type": {
+						"type": "humanoid",
+						"tags": [
+							"gnome"
+						]
+					},
+					"speed": 25
+				},
+				"_mod": {
+					"_": {
+						"mode": "addSenses",
+						"senses": {
+							"type": "darkvision",
+							"range": 60
+						}
+					},
+					"languages": {
+						"mode": "replaceOrAppendArr",
+						"replace": "Gnomish",
+						"items": "Gnomish"
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"name": "Gnome Cunning",
+								"entries": [
+									"<$title_name$> has advantage on all Intelligence, Wisdom, and Charisma saving throws against magic."
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Stout Halfling",
+			"source": "PHB_Esp",
+			"page": 35,
+			"ref": "{@race Halfling (Stout)||Stout Halfling}",
+			"apply": {
+				"_root": {
+					"size": "S",
+					"type": {
+						"type": "humanoid",
+						"tags": [
+							"halfling"
+						]
+					},
+					"speed": 25
+				},
+				"_mod": {
+					"languages": {
+						"mode": "replaceOrAppendArr",
+						"replace": "Halfling",
+						"items": "Halfling"
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"name": "Halfling Nimbleness",
+								"entries": [
+									"<$title_name$> can move through a space of a Medium or larger creature."
+								]
+							},
+							{
+								"name": "Brave",
+								"entries": [
+									"<$title_name$> has advantage on saving throws against being {@condition frightened}."
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Tiefling",
+			"source": "PHB_Esp",
+			"page": 42,
+			"ref": "{@race Tiefling}",
+			"apply": {
+				"_root": {
+					"type": {
+						"type": "humanoid",
+						"tags": [
+							"tiefling"
+						]
+					}
+				},
+				"_mod": {
+					"_": {
+						"mode": "addSenses",
+						"senses": {
+							"type": "darkvision",
+							"range": 60
+						}
+					},
+					"resist": {
+						"mode": "replaceOrAppendArr",
+						"replace": "fire",
+						"items": "fire"
+					},
+					"languages": {
+						"mode": "replaceOrAppendArr",
+						"replace": "Infernal",
+						"items": "Infernal"
+					},
+					"spellcasting": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"name": "Innate Spellcasting",
+								"headerEntries": [
+									"<$title_name$>'s innate spellcasting ability is Charisma (spell save DC <$spell_dc__cha$>). <$title_name$> can innately cast the following spells, requiring no material components:"
+								],
+								"will": [
+									"{@spell thaumaturgy}"
+								],
+								"daily": {
+									"1e": [
+										"{@spell darkness}",
+										"{@spell hellish rebuke}"
+									]
+								},
+								"ability": "cha"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Wood Elf",
+			"source": "PHB_Esp",
+			"page": 21,
+			"ref": "{@race Elf (Wood)||Wood Elf}",
+			"apply": {
+				"_root": {
+					"type": {
+						"type": "humanoid",
+						"tags": [
+							"elf"
+						]
+					},
+					"speed": 35
+				},
+				"_mod": {
+					"_": [
+						{
+							"mode": "addSenses",
+							"senses": {
+								"type": "darkvision",
+								"range": 60
+							}
+						},
+						{
+							"mode": "addSkills",
+							"skills": {
+								"perception": 1
+							}
+						}
+					],
+					"languages": {
+						"mode": "replaceOrAppendArr",
+						"replace": "Elvish",
+						"items": "Elvish"
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"name": "Fey Ancestry",
+								"entries": [
+									"<$title_name$> has advantage on saving throws against being charmed, and magic can't put <$title_name$> to sleep."
+								]
+							},
+							{
+								"name": "Mask of the Wild",
+								"entries": [
+									"<$title_name$> can attempt to hide even when they are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+								]
+							}
+						]
+					}
+				}
+			}
+		}
+	],
 	"condition": [
 		{
 			"name": "Blinded",
