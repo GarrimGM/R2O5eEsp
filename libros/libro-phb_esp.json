@@ -32549,8 +32549,6 @@
 			"srd": true
 		}
 	],
-	"disease": [
-	],
 	"deity": [
 		{
 			"name": "The Daghdha",
@@ -41854,7 +41852,7 @@
 	],
 	"language": [
 		{
-			"name": "Abyssal",
+			"name": "Abisal [Abyssal]",
 			"source": "PHB_Esp",
 			"page": 123,
 			"srd": true,
@@ -41868,7 +41866,7 @@
 			]
 		},
 		{
-			"name": "Celestial",
+			"name": "Celestial [Celestial]",
 			"source": "PHB_Esp",
 			"page": 123,
 			"srd": true,
@@ -41879,7 +41877,7 @@
 			"script": "Celestial"
 		},
 		{
-			"name": "Common",
+			"name": "Común [Common]",
 			"source": "PHB_Esp",
 			"page": 123,
 			"srd": true,
@@ -41890,7 +41888,7 @@
 			"script": "Common"
 		},
 		{
-			"name": "Deep Speech",
+			"name": "Habla de las profundidades [Deep Speech]",
 			"source": "PHB_Esp",
 			"page": 123,
 			"srd": true,
@@ -41902,7 +41900,7 @@
 			"script": "none"
 		},
 		{
-			"name": "Draconic",
+			"name": "Dracónico [Draconic]",
 			"source": "PHB_Esp",
 			"page": 123,
 			"srd": true,
@@ -41925,11 +41923,25 @@
 				"fonts/languages/PHB/Draconic/Iokharic Bold Italic.otf"
 			],
 			"entries": [
-				"Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants."
-			]
+				"Se piensa que el dracónico es uno de los idiomas más antiguos y suele emplearse en el estudio de la magia. Resulta áspero a oídos de la mayoría de las criaturas y utiliza muchas consonantes duras y sibilantes."
+			],
+			"fluff":
+			{
+				"name": "Dracónico [Draconic]",
+				"source": "PHB_Esp",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "languages/PHB/Draconic.jpg"
+						}
+					}
+				]
+			}
 		},
 		{
-			"name": "Druidic",
+			"name": "Druídico [Druidic]",
 			"source": "PHB_Esp",
 			"page": 64,
 			"srd": true,
@@ -41939,11 +41951,11 @@
 				"{@creature treant||treants}"
 			],
 			"entries": [
-				"Druidic is the secret language of druids. It can be spoken or used to leave hidden messages. Creatures who know this language automatically spot such a message. Others spot the message's presence with a successful DC 15 Wisdom ({@skill Perception}) check but can't decipher it without magic."
+				"Conoces el druídico, el idioma secreto de los druidas. Puedes hablarlo y utilizarlo para dejar mensajes ocultos. Tanto tu como cualquiera que conozca este idioma advertiréis inmediatamente de la presencia de estos mensajes. Los demás deberán superar una prueba de Sabiduría ({@skill Perception}) CD 15 para detectarlos, pero no podrán descifrarlos sin recurrir a la magia."
 			]
 		},
 		{
-			"name": "Dwarvish",
+			"name": "Enano [Dwarvish]",
 			"source": "PHB_Esp",
 			"page": 123,
 			"srd": true,
@@ -41965,11 +41977,25 @@
 				"fonts/languages/PHB/Dwarvish/Davek Bold Italic.otf"
 			],
 			"entries": [
-				"Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak."
-			]
+				" El idioma enano está lleno de consonantes duras y sonidos guturales, y estas peculiaridades se traslucen en la forma que tienen los enanos de pronunciar cualquier otro lenguaje que conozcan."
+			],
+			"fluff":
+			{
+				"name": "Enano [Dwarvish]",
+				"source": "PHB_Esp",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "languages/PHB/Dwarvish.jpg"
+						}
+					}
+				]
+			}
 		},
 		{
-			"name": "Elvish",
+			"name": "Elfo [Elvish]",
 			"source": "PHB_Esp",
 			"page": 123,
 			"srd": true,
@@ -41991,11 +42017,25 @@
 				"fonts/languages/PHB/Elvish/Rellanic.otf"
 			],
 			"entries": [
-				"Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires."
-			]
+				"El idioma elfo es fluido, con entonaciones sutiles y una gramática compleja. La literatura élfica es rica y variada. y sus canciones y poemas son famosos entre el resto de las razas. Muchos bardos aprenden este idioma para poder añadir baladas élficas a sus repertorios."
+			],
+			"fluff":
+			{
+				"name": "Elfo [Elvish]",
+				"source": "PHB_Esp",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "languages/PHB/Elvish.jpg"
+						}
+					}
+				]
+			}
 		},
 		{
-			"name": "Giant",
+			"name": "Gigante [Giant]",
 			"source": "PHB_Esp",
 			"page": 123,
 			"srd": true,
@@ -42010,10 +42050,24 @@
 				"fonts/languages/PHB/Dwarvish/Davek Bold.otf",
 				"fonts/languages/PHB/Dwarvish/Davek Italic.otf",
 				"fonts/languages/PHB/Dwarvish/Davek Bold Italic.otf"
-			]
+			],
+			"fluff": 
+			{
+				"name": "Gigante [Giant]",
+				"source": "PHB_Esp",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "languages/PHB/Dwarvish.jpg"
+						}
+					}
+				]
+			}
 		},
 		{
-			"name": "Gnomish",
+			"name": "Gnomo [Gnomish]",
 			"source": "PHB_Esp",
 			"page": 123,
 			"srd": true,
@@ -42035,11 +42089,25 @@
 				"fonts/languages/PHB/Dwarvish/Davek Bold Italic.otf"
 			],
 			"entries": [
-				"The Gnomish language, which uses the Dwarvish script, is renowned for its technical treatises and its catalogs of knowledge about the natural world."
-			]
+				"El idioma gnomo, que se escribe con el alfabeto enano, es famoso por la cantidad de tratados técnicos y catálogos de conocimiento sobre el mundo natural escritos en él."
+			],
+			"fluff": 
+			{
+				"name": "Gnomo [Gnomish]",
+				"source": "PHB_Esp",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "languages/PHB/Dwarvish.jpg"
+						}
+					}
+				]
+			}
 		},
 		{
-			"name": "Goblin",
+			"name": "Goblin [Goblin]",
 			"source": "PHB_Esp",
 			"page": 123,
 			"srd": true,
@@ -42053,10 +42121,24 @@
 				"fonts/languages/PHB/Dwarvish/Davek Bold.otf",
 				"fonts/languages/PHB/Dwarvish/Davek Italic.otf",
 				"fonts/languages/PHB/Dwarvish/Davek Bold Italic.otf"
-			]
+			],
+			"fluff": 
+			{
+				"name": "Goblin [Goblin]",
+				"source": "PHB_Esp",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "languages/PHB/Dwarvish.jpg"
+						}
+					}
+				]
+			}
 		},
 		{
-			"name": "Halfling",
+			"name": "Mediano [Halfling]",
 			"source": "PHB_Esp",
 			"page": 123,
 			"srd": true,
@@ -42072,11 +42154,11 @@
 			],
 			"script": "Common",
 			"entries": [
-				"The Halfling language isn't secret, but halflings are loath to share it with others. They write very little, so they don't have a rich body of literature. Their oral tradition, however, is very strong. Almost all halflings speak Common to converse with the people in whose lands they dwell or through which they are traveling."
+				"El idioma de los medianos no es secreto, pero estos son reticentes a compartirlo con otros. Escriben poco, por lo que no tienen una gran producción literaria. No obstante, su tradición oral es muy rica. Prácticamente todos los medianos hablan común para poder comunicarse con los que viven junto a ellos o en los lugares por los que viajan."
 			]
 		},
 		{
-			"name": "Infernal",
+			"name": "Infernal [Infernal]",
 			"source": "PHB_Esp",
 			"page": 123,
 			"srd": true,
@@ -42090,18 +42172,7 @@
 			]
 		},
 		{
-			"name": "Ixitxachitl",
-			"source": "OotA",
-			"page": 225,
-			"typicalSpeakers": [
-				"{@creature Ixitxachitl|OotA|ixitxachitl}",
-				"{@creature Ixitxachitl Cleric|OotA|ixitxachitl clerics}",
-				"{@creature Vampiric Ixitxachitl|OotA|vampiric ixitxachitl}",
-				"{@creature Vampiric Ixitxachitl Cleric|OotA|vampiric ixitxachitl clerics}"
-			]
-		},
-		{
-			"name": "Orc",
+			"name": "Orco [Orc]",
 			"source": "PHB_Esp",
 			"page": 123,
 			"srd": true,
@@ -42117,26 +42188,28 @@
 				"fonts/languages/PHB/Dwarvish/Davek Bold Italic.otf"
 			],
 			"entries": [
-				" Orc is a harsh, grating language with hard consonants. It has no script of its own but is written in the Dwarvish script."
-			]
+				"El orco es un idioma áspero y severo, con consonantes duras. No tiene escritura propia, pero para transcribirlo se usa el alfabeto enano."
+			],
+			"fluff": 
+			{
+				"name": "Orco [Orc]",
+				"source": "PHB_Esp",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "languages/PHB/Dwarvish.jpg"
+						}
+					}
+				]
+			}
 		},
 		{
-			"name": "Primordial",
-			"dialects": [
-				"Auran",
-				"Aquan",
-				"Ignan",
-				"Terran"
-			],
+			"name": "Primordial [Primordial]",
 			"source": "PHB_Esp",
 			"page": 123,
 			"srd": true,
-			"additionalSources": [
-				{
-					"source": "EEPC",
-					"page": 9
-				}
-			],
 			"type": "exotic",
 			"typicalSpeakers": [
 				"{@filter elementals|bestiary|type=elemental}"
@@ -42149,11 +42222,25 @@
 				"fonts/languages/PHB/Dwarvish/Davek Bold Italic.otf"
 			],
 			"entries": [
-				"Primordial is a guttural language, filled with harsh syllables and hard consonants."
-			]
+				"El idioma primordial incluye los dialectos aurano, acuano, ígneo y terrano, cada uno correspondiente a uno de los cuatro planos elementales. Las criaturas que hablen dialectos diferentes del mismo idioma pueden comunicarse entre sí."
+			],
+			"fluff": 
+			{
+				"name": "Primordial [Primordial]",
+				"source": "PHB_Esp",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "languages/PHB/Dwarvish.jpg"
+						}
+					}
+				]
+			}
 		},
 		{
-			"name": "Sylvan",
+			"name": "Silvano [Sylvan]",
 			"source": "PHB_Esp",
 			"page": 123,
 			"srd": true,
@@ -42167,10 +42254,24 @@
 				"fonts/languages/PHB/Elvish/Rellanic Bold.otf",
 				"fonts/languages/PHB/Elvish/Rellanic Italic.otf",
 				"fonts/languages/PHB/Elvish/Rellanic.otf"
-			]
+			],
+			"fluff": 
+			{
+				"name": "Silvano [Sylvan]",
+				"source": "PHB_Esp",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "languages/PHB/Elvish.jpg"
+						}
+					}
+				]
+			}
 		},
 		{
-			"name": "Thieves' Cant",
+			"name": "Jerga de Ladrones [Thieves' Cant]",
 			"source": "PHB_Esp",
 			"page": 94,
 			"srd": true,
@@ -42180,11 +42281,11 @@
 				"{@class rogue||rogues}"
 			],
 			"entries": [
-				"Thieves' cant is a secret mix of dialect, jargon, and code that allows messages to be hidden in seemingly normal conversation. Only a creature that knows thieves' cant understands such messages. It takes four times longer to convey such a message than it does to speak the same idea plainly."
+				"Durante tu entrenamiento como pícaro aprendiste la jerga de ladrones, una mezcla de dialecto, argot y código secreto que te permite esconder mensajes en lo que parece una conversación normal y corriente. Únicamente aquellas criaturas que conozcan la jerga de ladrones podrán en tender estos mensajes. Expresar un mensaje utilizando esta jerga precisa de cuatro veces el tiempo que tardarías en comunicar la misma idea directamente."
 			]
 		},
 		{
-			"name": "Undercommon",
+			"name": "Infracomún [Undercommon]",
 			"source": "PHB_Esp",
 			"page": 123,
 			"srd": true,
@@ -42198,139 +42299,21 @@
 				"fonts/languages/PHB/Elvish/Rellanic Bold.otf",
 				"fonts/languages/PHB/Elvish/Rellanic Italic.otf",
 				"fonts/languages/PHB/Elvish/Rellanic.otf"
-			]
-		}
-	],
-	"languageFluff": [
-		{
-			"name": "Draconic",
-			"source": "PHB_Esp",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "languages/PHB/Draconic.jpg"
+			],
+			"fluff":
+			{
+				"name": "Infracomún [Undercommon]",
+				"source": "PHB_Esp",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "languages/PHB/Elvish.jpg"
+						}
 					}
-				}
-			]
-		},
-		{
-			"name": "Dwarvish",
-			"source": "PHB_Esp",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "languages/PHB/Dwarvish.jpg"
-					}
-				}
-			]
-		},
-		{
-			"name": "Elvish",
-			"source": "PHB_Esp",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "languages/PHB/Elvish.jpg"
-					}
-				}
-			]
-		},
-		{
-			"name": "Sylvan",
-			"source": "PHB_Esp",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "languages/PHB/Elvish.jpg"
-					}
-				}
-			]
-		},
-		{
-			"name": "Undercommon",
-			"source": "PHB_Esp",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "languages/PHB/Elvish.jpg"
-					}
-				}
-			]
-		},
-		{
-			"name": "Giant",
-			"source": "PHB_Esp",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "languages/PHB/Dwarvish.jpg"
-					}
-				}
-			]
-		},
-		{
-			"name": "Gnomish",
-			"source": "PHB_Esp",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "languages/PHB/Dwarvish.jpg"
-					}
-				}
-			]
-		},
-		{
-			"name": "Goblin",
-			"source": "PHB_Esp",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "languages/PHB/Dwarvish.jpg"
-					}
-				}
-			]
-		},
-		{
-			"name": "Orc",
-			"source": "PHB_Esp",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "languages/PHB/Dwarvish.jpg"
-					}
-				}
-			]
-		},
-		{
-			"name": "Primordial",
-			"source": "PHB_Esp",
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "internal",
-						"path": "languages/PHB/Dwarvish.jpg"
-					}
-				}
-			]
+				]
+			}
 		}
 	],
 	"optionalfeature": [
@@ -44270,13 +44253,9 @@
 			]
 		}
 	],
-	"reward": [
-	],
-	"psionic": [
-	],
 	"spell": [
 		{
-			"name": "Acid Splash",
+			"name": "Salpicadura ácida [Acid Splash]",
 			"source": "PHB_Esp",
 			"page": 211,
 			"srd": true,
@@ -44305,8 +44284,8 @@
 				}
 			],
 			"entries": [
-				"You hurl a bubble of acid. Choose one creature you can see within range, or choose two creatures you can see within range that are within 5 feet of each other. A target must succeed on a Dexterity saving throw or take {@damage 1d6} acid damage.",
-				"This spell's damage increases by {@dice 1d6} when you reach 5th level ({@damage 2d6}), 11th level ({@damage 3d6}), and 17th level ({@damage 4d6})."
+				"Lanzas una burbuja de ácido. Elige una o dos criaturas que puedas ver dentro del alcance separadas 5 pies o menos la una de la otra. Cada objetivo deberá tener éxito en una tirada de salvación de Destreza o sufrirá {@damage 1d6} de daño de ácido.",
+				"El daño del conjuro aumenta en {@dice 1d6} cuando alcanzas nivel 5 ({@damage 2d6}), nivel 11 ({@damage 3d6}) y nivel 17 ({@damage 4d6})."
 			],
 			"scalingLevelDice": {
 				"label": "acid damage",
@@ -44340,10 +44319,6 @@
 					{
 						"name": "Wizard",
 						"source": "PHB_Esp"
-					},
-					{
-						"name": "Artificer (Revisited)",
-						"source": "UAArtificerRevisited"
 					},
 					{
 						"name": "Artificer",
@@ -80681,8 +80656,6 @@
 				}
 			]
 		}
-	],
-	"vehicle": [
 	],
 	"table": [
 		{
