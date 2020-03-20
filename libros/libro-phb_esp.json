@@ -44340,7 +44340,7 @@
 			]
 		},
 		{
-			"name": "Aid",
+			"name": "Auxilio [Aid]",
 			"source": "PHB_Esp",
 			"page": 211,
 			"srd": true,
@@ -44349,39 +44349,39 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "action"
+					"unit": "acción"
 				}
 			],
 			"range": {
 				"type": "point",
 				"distance": {
-					"type": "feet",
+					"type": "pies",
 					"amount": 30
 				}
 			},
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a tiny strip of white cloth"
+				"m": "una pequeña tira de tela blanca"
 			},
 			"duration": [
 				{
 					"type": "timed",
 					"duration": {
-						"type": "hour",
+						"type": "hora",
 						"amount": 8
 					}
 				}
 			],
 			"entries": [
-				"Your spell bolsters your allies with toughness and resolve. Choose up to three creatures within range. Each target's hit point maximum and current hit points increase by 5 for the duration."
+				"Este conjuro refuerza la resistencia y decisión de tus aliados. Elige hasta tres criaturas dentro del alcance: sus puntos de golpe máximos y actuales aumentan en 5 hasta el final de la duración del conjuro."
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
-					"name": "At Higher Levels",
+					"name": "A niveles superiores",
 					"entries": [
-						"When you cast this spell using a spell slot of 3rd level or higher, a target's hit points increase by an additional 5 for each slot level above 2nd."
+						"Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 3 o más, los puntos de golpe del objetivo aumentan en 5 más por cada nivel por encima de 2 que tenga el espacio que hayas empleado"
 					]
 				}
 			],
@@ -44400,14 +44400,6 @@
 					},
 					{
 						"name": "Artificer",
-						"source": "UAArtificer"
-					},
-					{
-						"name": "Artificer (Revisited)",
-						"source": "UAArtificerRevisited"
-					},
-					{
-						"name": "Artificer",
 						"source": "ERLW"
 					}
 				],
@@ -44418,28 +44410,8 @@
 							"source": "PHB_Esp"
 						},
 						"subclass": {
-							"name": "Protection (UA)",
-							"source": "UAClericDivineDomains"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB_Esp"
-						},
-						"subclass": {
 							"name": "Solidarity (PSA)",
 							"source": "PSA"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB_Esp"
-						},
-						"subclass": {
-							"name": "Unity (UA)",
-							"source": "UA2020SubclassesPt2"
 						}
 					}
 				],
@@ -44474,7 +44446,7 @@
 			]
 		},
 		{
-			"name": "Alarm",
+			"name": "Alarma [Alarm]",
 			"source": "PHB_Esp",
 			"page": 211,
 			"srd": true,
@@ -44483,26 +44455,26 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "minute"
+					"unit": "minuto"
 				}
 			],
 			"range": {
 				"type": "point",
 				"distance": {
-					"type": "feet",
+					"type": "pies",
 					"amount": 30
 				}
 			},
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a tiny bell and a piece of fine silver wire"
+				"m": "una pequeña campana y un hilo de plata fina"
 			},
 			"duration": [
 				{
 					"type": "timed",
 					"duration": {
-						"type": "hour",
+						"type": "hora",
 						"amount": 8
 					}
 				}
@@ -44511,9 +44483,9 @@
 				"ritual": true
 			},
 			"entries": [
-				"You set an alarm against unwanted intrusion. Choose a door, a window, or an area within range that is no larger than a 20-foot cube. Until the spell ends, an alarm alerts you whenever a Tiny or larger creature touches or enters the warded area. When you cast the spell, you can designate creatures that won't set off the alarm. You also choose whether the alarm is mental or audible.",
-				"A mental alarm alerts you with a ping in your mind if you are within 1 mile of the warded area. This ping awakens you if you are sleeping.",
-				"An audible alarm produces the sound of a hand bell for 10 seconds within 60 feet."
+				"Preparas una alarma contra intrusos. Elige una puerta, ventana o cualquier otra área dentro del alcance cuyo volumen sea menor o igual que un cubo de 20 pies de lado. Una alarma te avisará siempre que una criatura. Diminuta o de tamaño superior, toque o entre en la zona vigilada antes del final del conjuro. Al lanzarlo puedes elegir que ciertas criaturas no activarán la alarma, que puede ser mental o sonora.",
+				"Una alarma mental te alerta con un sonido dentro de tu mente si estás a 1 milla de la zona vigilada. Si estás dormido, te despertará.",
+				"Una alarma sonora produce un sonido de campanilla durante 10 segundos audible a 60 pies de distancia."
 			],
 			"areaTags": [
 				"C"
@@ -44530,27 +44502,7 @@
 					},
 					{
 						"name": "Artificer",
-						"source": "UAArtificer"
-					},
-					{
-						"name": "Artificer (Revisited)",
-						"source": "UAArtificerRevisited"
-					},
-					{
-						"name": "Artificer",
 						"source": "ERLW"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB_Esp"
-						},
-						"subclass": {
-							"name": "Clockwork Soul (UA)",
-							"source": "UA2020SubclassesPt2"
-						}
 					}
 				]
 			},
@@ -44564,7 +44516,7 @@
 			]
 		},
 		{
-			"name": "Alter Self",
+			"name": "Alterar el propio aspecto [Alter Self]",
 			"source": "PHB_Esp",
 			"page": 211,
 			"srd": true,
@@ -44573,7 +44525,7 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "action"
+					"unit": "acción"
 				}
 			],
 			"range": {
@@ -44590,40 +44542,41 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "hour",
+						"type": "hora",
 						"amount": 1
 					},
 					"concentration": true
 				}
 			],
 			"entries": [
-				"You assume a different form. When you cast the spell, choose one of the following options, the effects of which last for the duration of the spell. While the spell lasts, you can end one option as an action to gain the benefits of a different one.",
+				"Asumes un aspecto distinto. Cuando lanzas el conjuro, elige una de las opciones siguientes. Los efectos duran hasta el final de la duración del conjuro. Hasta ese momento, puedes dejar de usar una de las opciones para ganar los beneficios de otra.",
 				{
 					"type": "entries",
-					"name": "Aquatic Adaptation",
+					"name": "Adaptación acuática",
 					"entries": [
-						"You adapt your body to an aquatic environment, sprouting gills and growing webbing between your fingers. You can breathe underwater and gain a swimming speed equal to your walking speed."
+						"Adaptas tu cuerpo a un medio acuático. Te crecen branquias y membranas entre los dedos. Puedes respirar bajo el agua y ganas una velocidad nadando igual a tu velocidad caminando."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Change Appearance",
+					"name": "Cambiar de aspecto",
 					"entries": [
-						"You transform your appearance. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and distinguishing characteristics, if any. You can make yourself appear as a member of another race, though none of your statistics change. You also can't appear as a creature of a different size than you, and your basic shape stays the same; if you're bipedal, you can't use this spell to become quadrupedal, for instance. At any time for the duration of the spell, you can use your action to change your appearance in this way again."
+						"Transformas tu apariencia. Decide tu aspecto, especificando una altura, peso, rasgos faciales, timbre de voz, longitud del cabello, tono de piel y cualquier rasgo distintivo que quieras añadir.",
+						"Eres capaz de adoptar la apariencia de un miembro de otra raza, pero tu perfil no cambia. Tampoco puedes tomar el aspecto de una criatura de un tamaño que no sea el tuyo, ya que tu forma básica debe mantenerse; si eres bípedo, no puedes usar este conjuro para hacerte cuadrúpedo, por ejemplo. En cualquier momento, hasta el final de la duración del conjuro, puedes usar una acción para cambiar tu aspecto de nuevo mediante esta opción."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Natural Weapons",
+					"name": "Armas naturales",
 					"entries": [
-						"You grow claws, fangs, spines, horns, or a different natural weapon of your choice. Your unarmed strikes deal {@damage 1d6} bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes. Finally, the natural weapon is magic and you have a +1 bonus to the attack and damage rolls you make using it."
+						"Te crecen garras, colmillos, pinchos, cuernos u otra arma natural de tu elección. Tus ataques sin armas hacen {@damage 1d6} de daño contundente, perforante o cortante, de acuerdo al arma natural que escojas. Eres competente con esta arma, que es mágica y te proporciona un bonificador de +1 a las tiradas de ataque y de daño que hagas con ella."
 					]
 				}
 			],
 			"damageInflict": [
-				"bludgeoning",
-				"piercing",
-				"slashing"
+				"contundente",
+				"perforante",
+				"cortante"
 			],
 			"classes": {
 				"fromClassList": [
@@ -44637,38 +44590,10 @@
 					},
 					{
 						"name": "Artificer",
-						"source": "UAArtificer"
-					},
-					{
-						"name": "Artificer (Revisited)",
-						"source": "UAArtificerRevisited"
-					},
-					{
-						"name": "Artificer",
 						"source": "ERLW"
 					}
 				],
 				"fromSubclass": [
-					{
-						"class": {
-							"name": "Ranger",
-							"source": "PHB_Esp"
-						},
-						"subclass": {
-							"name": "Horizon Walker (UA)",
-							"source": "UARangerAndRogue"
-						}
-					},
-					{
-						"class": {
-							"name": "Ranger (Revised)",
-							"source": "UATheRangerRevised"
-						},
-						"subclass": {
-							"name": "Horizon Walker (UA)",
-							"source": "UARangerAndRogue"
-						}
-					},
 					{
 						"class": {
 							"name": "Artificer",
@@ -44681,14 +44606,6 @@
 					}
 				]
 			},
-			"races": [
-				{
-					"name": "Tiefling (Abyssal)",
-					"source": "UAThatOldBlackMagic",
-					"baseName": "Tiefling",
-					"baseSource": "PHB_Esp"
-				}
-			],
 			"backgrounds": [
 				{
 					"name": "Simic Scientist",
@@ -80672,17 +80589,17 @@
 			}
 		},
 		{
-			"name": "Aid",
+			"name": "Auxilio [Aid]",
 			"source": "PHB_Esp",
 			"data": {}
 		},
 		{
-			"name": "Alarm",
+			"name": "Alarma [Alarm]",
 			"source": "PHB_Esp",
 			"data": {}
 		},
 		{
-			"name": "Alter Self",
+			"name": "Alterar el propio aspecto [Alter Self]",
 			"source": "PHB_Esp",
 			"data": {}
 		},
