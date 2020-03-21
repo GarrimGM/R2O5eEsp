@@ -46974,7 +46974,7 @@
 			]
 		},
 		{
-			"name": "Bigby's Hand",
+			"name": "Mano de Bigby [Bigby's Hand]",
 			"source": "PHB_Esp",
 			"page": 218,
 			"srd": "Arcane Hand",
@@ -46983,61 +46983,61 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "action"
+					"unit": "acción"
 				}
 			],
 			"range": {
 				"type": "point",
 				"distance": {
-					"type": "feet",
+					"type": "pies",
 					"amount": 120
 				}
 			},
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "an eggshell and a snakeskin glove"
+				"m": "una cáscara de huevo y un guante de piel de serpiente"
 			},
 			"duration": [
 				{
 					"type": "timed",
 					"duration": {
-						"type": "minute",
+						"type": "minuto",
 						"amount": 1
 					},
 					"concentration": true
 				}
 			],
 			"entries": [
-				"You create a Large hand of shimmering, translucent force in an unoccupied space that you can see within range. The hand lasts for the spell's duration, and it moves at your command, mimicking the movements of your own hand.",
-				"The hand is an object that has AC 20 and hit points equal to your hit point maximum. If it drops to 0 hit points, the spell ends. It has a Strength of 26 (+8) and a Dexterity of 10 (+0). The hand doesn't fill its space.",
-				"When you cast the spell and as a bonus action on your subsequent turns, you can move the hand up to 60 feet and then cause one of the following effects with it.",
+				"Creas una mano de fuerza de tamaño grande, destellante y translúcida, en un espacio desocupado que puedas ver dentro del alcance. La mano permanece hasta el final de la duración del conjuro. Se mueve bajo tus órdenes, imitando el movimiento de tu propia mano.",
+				"La mano es un objeto de CA 20 y puntos de golpe iguales a tus puntos de golpe máximos. Si sus puntos de golpe se reducen a 0, el conjuro termina. Su Fuerza es 26 (+8) y su Destreza 10 (+0). La mano no ocupa el espacio en el que está.",
+				"Cuando lanzas el conjuro, y en turnos subsiguientes como acción adicional, puedes mover la mano hasta 60 pies y luego crear uno de los siguientes efectos.",
 				{
 					"type": "entries",
-					"name": "Clenched Fist",
+					"name": "Puño cerrado",
 					"entries": [
-						"The hand strikes one creature or object within 5 feet of it. Make a melee spell attack for the hand using your game statistics. On a hit, the target takes {@damage 4d8} force damage."
+						"La mano golpea a una criatura u objeto a 5 pies de distancia o menos. Realiza un ataque cuerpo a cuerpo con la mano, haciendo las tiradas como si fueras tú el que atacaras. Si impactas, el objetivo recibe {@damage 4d8} de daño de fuerza."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Forceful Hand",
+					"name": "Mano contundente",
 					"entries": [
-						"The hand attempts to push a creature within 5 feet of it in a direction you choose. Make a check with the hand's Strength contested by the Strength (Athletics) check of the target. If the target is Medium or smaller, you have advantage on the check. If you succeed, the hand pushes the target up to 5 feet plus a number of feet equal to five times your spellcasting ability modifier. The hand moves with the target to remain within 5 feet of it."
+						"La mano intenta empujar a una criatura a 5 pies o menos en la dirección que elijas. Haz una tirada enfrentada, una prueba de Fuerza de la mano contra una prueba de Fuerza (Atletismo) del objetivo. Tienes ventaja en la prueba si el objetivo es de tamaño Mediano o más pequeño. Si tienes éxito, la mano empuja al objetivo hasta 5 + cinco veces tu modificador de aptitud mágica en pies. La mano se desplaza con el objetivo para mantenerse a 5 pies de él."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Grasping Hand",
+					"name": "Mano apresadora",
 					"entries": [
-						"The hand attempts to grapple a Huge or smaller creature within 5 feet of it. You use the hand's Strength score to resolve the grapple. If the target is Medium or smaller, you have advantage on the check. While the hand is grappling the target, you can use a bonus action to have the hand crush it. When you do so, the target takes bludgeoning damage equal to {@damage 2d6} + your spellcasting ability modifier."
+						"La mano intenta agarrar a una criatura de tamaño Enorme o más pequeño a 5 pies de distancia. Utiliza la puntuación de Fuerza de la mano para resolver el agarre. Tienes ventaja en la prueba si el objetivo es de tamaño Mediano o más pequeño. Mientras la mano esté agarrando al objetivo, puedes usar una acción adicional para aplastarlo. Si lo haces, la criatura recibe {@damage 2d6} + tu modificador de aptitud mágica de daño contundente."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Interposing Hand",
+					"name": "Mano interpuesta",
 					"entries": [
-						"The hand interposes itself between you and a creature you choose until you give the hand a different command. The hand moves to stay between you and the target, providing you with half cover against the target. The target can't move through the hand's space if its Strength score is less than or equal to the hand's Strength score. If its Strength score is higher than the hand's Strength score, the target can move toward you through the hand's space, but that space is difficult terrain for the target."
+						"La mano se interpone entre tú y una criatura hasta que le des una orden distinta. La mano se mueve para mantenerse entre tu objetivo y tú, proporcionándote cobertura media contra este último. El objetivo no puede atravesar el espacio de la mano si su puntuación de Fuerza es igual o menor que la puntuación de Fuerza de la mano. Si su puntuación de Fuerza es mayor, puede moverse hacia ti a través del espacio de la mano, pero ese espacio se considera terreno difícil para el objetivo."
 					]
 				}
 			],
@@ -47046,7 +47046,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 6th level or higher, the damage from the clenched fist option increases by {@scaledamage 4d8|5-9|2d8} and the damage from the grasping hand increases by {@scaledamage 2d6|5-9|2d6} for each slot level above 5th."
+						"Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 6 o más, el daño de la opción puño cerrado aumenta en {@scaledamage 4d8|5-9|2d8} y el daño de la opción mano apresadora aumenta en {@scaledamage 2d6|5-9|2d6} por cada nivel por encima de 5 que tenga el espacio que hayas empleado."
 					]
 				}
 			],
@@ -47068,10 +47068,6 @@
 					{
 						"name": "Wizard",
 						"source": "PHB_Esp"
-					},
-					{
-						"name": "Artificer (Revisited)",
-						"source": "UAArtificerRevisited"
 					},
 					{
 						"name": "Artificer",
@@ -80375,7 +80371,7 @@
 			}
 		},
 		{
-			"name": "Bigby's Hand",
+			"name": "Mano de Bigby [Bigby's Hand]",
 			"source": "PHB_Esp",
 			"data": {
 				"Spell Attack": "Melee"
