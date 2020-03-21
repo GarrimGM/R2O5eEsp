@@ -10379,7 +10379,7 @@
 											"name": "Spells",
 											"page": 301,
 											"entries": [
-												"A number of spells allow direct or indirect access to other planes of existence. Plane shift and gate can transport adventurers directly to any other plane of existence, with different degrees of precision. Etherealness allows adventurers to enter the Ethereal Plane and travel from there to any of the planes it touches\u2014the Shadowfell, the Feywild, or the Elemental Planes. And the {@spell astral projection} spell lets adventurers project themselves into the Astral Plane and travel to the Outer Planes."
+												"A number of spells allow direct or indirect access to other planes of existence. Plane shift and gate can transport adventurers directly to any other plane of existence, with different degrees of precision. Etherealness allows adventurers to enter the Ethereal Plane and travel from there to any of the planes it touches\u2014the Shadowfell, the Feywild, or the Elemental Planes. And the {@spell Proyección astral [Astral Projection]|phb_esp|proyección astral} spell lets adventurers project themselves into the Astral Plane and travel to the Outer Planes."
 											]
 										},
 										{
@@ -15906,7 +15906,7 @@
 											],
 											[
 												"3rd",
-												"{@spell augury}, {@spell suggestion}"
+												"{@spell Augurio [Augury]|phb_esp|augurio}, {@spell suggestion}"
 											],
 											[
 												"5th",
@@ -19704,7 +19704,7 @@
 						"name": "Empty Body",
 						"entries": [
 							"Beginning at 18th level, you can use your action to spend 4 ki points to become {@condition Invisible [Invisible]|phb_esp|invisible} for 1 minute. During that time, you also have resistance to all damage but force damage.",
-							"Additionally, you can spend 8 ki points to cast the {@spell astral projection} spell, without needing material components. When you do so, you can't take any other creatures with you."
+							"Additionally, you can spend 8 ki points to cast the {@spell Proyección astral [Astral Projection]|phb_esp|proyección astral} spell, without needing material components. When you do so, you can't take any other creatures with you."
 						]
 					}
 				],
@@ -31653,7 +31653,7 @@
 			"name": "Awakened",
 			"source": "PHB_Esp",
 			"page": 216,
-			"ref": "{@spell Awaken}",
+			"ref": "{@spell Despertar [Awaken]|phb_esp|Despertar}",
 			"prerequisite": {
 				"size": {
 					"max": "H"
@@ -45773,7 +45773,7 @@
 			}
 		},
 		{
-			"name": "Astral Projection",
+			"name": "Proyección astral [Astral Projection]",
 			"source": "PHB_Esp",
 			"page": 215,
 			"srd": true,
@@ -45782,13 +45782,13 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "hour"
+					"unit": "hora"
 				}
 			],
 			"range": {
 				"type": "point",
 				"distance": {
-					"type": "feet",
+					"type": "pies",
 					"amount": 10
 				}
 			},
@@ -45796,7 +45796,7 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "for each creature you affect with this spell, you must provide one jacinth worth at least 1,000 gp and one ornately carved bar of silver worth at least 100 gp, all of which the spell consumes",
+					"text": "por cada criatura afectada por este conjuro debes proporcionar un jacinto con un valor igual o superior a 1.000 po y una barra de plata finamente labrada con un valor igual o superior a 100 po, ambas consumidas en el lanzamiento del conjuro",
 					"cost": 100000,
 					"consume": true
 				}
@@ -45807,12 +45807,13 @@
 				}
 			],
 			"entries": [
-				"You and up to eight willing creatures within range project your astral bodies into the Astral Plane (the spell fails and the casting is wasted if you are already on that plane). The material body you leave behind is {@condition Inconsciente [Unconscious]|phb_esp|inconsciente} and in a state of suspended animation, it doesn't need food or air and doesn't age.",
-				"Your astral body resembles your mortal form in almost every way, replicating your game statistics and possessions. The principal difference is the addition of a silvery cord that extends from between your shoulder blades and trails behind you, fading to invisibility after 1 foot. This cord is your tether to your material body. As long as the tether remains intact, you can find your way home. If the cord is cut-something that can happen only when an effect specifically states that it does-your soul and body are separated, killing you instantly.",
-				"Your astral form can freely travel through the Astral Plane and can pass through portals there leading to any other plane. If you enter a new plane or return to the plane you were on when casting this spell, your body and possessions are transported along the silver cord, allowing you to re-enter your body as you enter the new plane. Your astral form is a separate incarnation. Any damage or other effects that apply to it have no effect on your physical body, nor do they persist when you return to it.",
-				"The spell ends for you and your companions when you use your action to dismiss it. When the spell ends, the affected creature returns to its physical body, and it awakens.",
-				"The spell might also end early for you or one of your companions. A successful {@spell dispel magic} spell used against an astral or physical body ends the spell for that creature. If a creature's original body or its astral form drops to 0 hit points, the spell ends for that creature. If the spell ends and the silver cord is intact, the cord pulls the creature's astral form back to its body, ending its state of suspended animation.",
-				"If you are returned to your body prematurely, your companions remain in their astral forms and must find their own way back to their bodies, usually by dropping to 0 hit points."
+				"Tú y hasta ocho criaturas voluntarias dentro del alcance proyectáis vuestros cuerpos astrales en el Plano Astral (el conjuro falla y el espacio de conjuro se pierde si ya estás en este plano). El cuerpo material que dejas atrás queda {@condition Inconsciente [Unconscious]|phb_esp|inconsciente} y en un estado de animación suspendida; no necesita comida ni aire y no envejece.",
+				"Tu cuerpo astral es semejante a tu cuerpo material en casi todo, posee tu mismo perfil y tus mismas posesiones. La diferencia principal es un cordón plateado que sale de entre los omóplatos de la forma astral y flota detrás de ella, desvaneciéndose hasta hacerse invisible a 1 pie de distancia. Este cordón es el ancla a tu cuerpo material. Mientras se mantenga intacto, puedes encontrar el camino a casa. Si el cordón se corta (algo que solo puede ocurrir si un efecto específico así lo indica) tu alma y tu cuerpo quedan separados, provocando tu muerte instantánea.",
+				"Tu forma astral puede viajar libremente a través del Plano Astral y pasar a través de portales que lleven a otros planos. Si cambias de plano o vuelves al plano en el que te encontrabas cuando lanzaste el conjuro, tu cuerpo y tus posesiones te siguen a través del cordón plateado, permitiéndote volver a habitar tu cuerpo al entrar al nuevo plano.",
+				"Tu forma astral es una encarnación separada. Cualquier daño u otros efectos que se apliquen a ella no tienen consecuencia alguna en tu cuerpo material, ni se mantienen cuando vuelves a este.",
+				"El conjuro termina para ti y tus compañeros cuando utilizas una acción para finalizarlo. Cuando el conjuro termina, las criaturas afectadas vuelven a su cuerpo material y despiertan.",
+				"El conjuro también puede terminar antes de tiempo para ti o uno de tus compañeros. Lanzar {@spell dispel magic|phb_esp|disipar magia} con éxito contra un cuerpo astral o material termina el conjuro para esa criatura. Si el cuerpo material de una criatura o los puntos de golpe de su forma astral se reducen a 0, el conjuro termina para esa criatura. Si el conjuro termina y el cordón plateado sigue intacto, este tira de la forma astral de la criatura y la devuelve a su cuerpo material, concluyendo su estado de animación suspendida.",
+				"Si vuelves a tu cuerpo prematuramente, tus compañeros permanecen en sus formas astrales y deben encontrar su propio camino de vuelta a sus cuerpos, normalmente llegando a 0 puntos de golpe."
 			],
 			"conditionInflict": [
 				"unconscious"
@@ -45838,7 +45839,7 @@
 			}
 		},
 		{
-			"name": "Augury",
+			"name": "Augurio [Augury]",
 			"source": "PHB_Esp",
 			"page": 215,
 			"srd": true,
@@ -45847,7 +45848,7 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "minute"
+					"unit": "minuto"
 				}
 			],
 			"range": {
@@ -45860,7 +45861,7 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "specially marked sticks, bones, or similar tokens worth at least 25 gp",
+					"text": "palitos, huesos o abalorios marcados de forma especial y valorados en, al menos, 25 po",
 					"cost": 2500
 				}
 			},
@@ -45873,18 +45874,18 @@
 				"ritual": true
 			},
 			"entries": [
-				"By casting gem-inlaid sticks, rolling dragon bones, laying out ornate cards, or employing some other divining tool, you receive an omen from an otherworldly entity about the results of a specific course of action that you plan to take within the next 30 minutes. The DM chooses from the following possible omens:",
+				"Lanzando huesos de dragón, tirando palitos con gemas incrustadas, echando las cartas o mediante otro método de adivinación, consigues que una entidad de otro mundo te otorgue un presagio sobre los resultados de una acción concreta que planees llevar a cabo en los próximos 30 minutos. El DM elige de entre los siguientes presagios:",
 				{
 					"type": "list",
 					"items": [
-						"Weal, for good results",
-						"Woe, for bad results",
-						"Weal and woe, for both good and bad results",
-						"Nothing, for results that aren't especially good or bad"
+						"Fortuna, para resultados buenos.",
+						"Desdicha, para resultados malos.",
+						"Fortuna y desdicha, para resultados a la vez buenos y malos.",
+						"Nada, para resultados que no son particularmente buenos ni malos."
 					]
 				},
-				"The spell doesn't take into account any possible circumstances that might change the outcome, such as the casting of additional spells or the loss or gain of a companion.",
-				"If you cast the spell two or more times before completing your next long rest, there is a cumulative 25 percent chance for each casting after the first that you get a random reading. The DM makes this roll in secret."
+				"Este conjuro no tiene en cuenta ninguna circunstancia que pueda alterar los resultados como, por ejemplo, el lanzamiento de otros conjuros, o la pérdida o encuentro de un compañero.",
+				"Si se lanza dos veces o más antes del próximo descanso largo, hay una posibilidad acumulativa del 25 % por cada lanzamiento después del primero de recibir un presagio aleatorio. El DM realiza esta tirada en secreto."
 			],
 			"classes": {
 				"fromClassList": [
@@ -45916,16 +45917,6 @@
 					},
 					{
 						"class": {
-							"name": "Warlock",
-							"source": "PHB_Esp"
-						},
-						"subclass": {
-							"name": "Kraken (Stream)",
-							"source": "Stream"
-						}
-					},
-					{
-						"class": {
 							"name": "Barbarian",
 							"source": "PHB_Esp"
 						},
@@ -45948,7 +45939,7 @@
 			}
 		},
 		{
-			"name": "Aura of Life",
+			"name": "Aura de vida [Aura of Life]",
 			"source": "PHB_Esp",
 			"page": 216,
 			"level": 4,
@@ -45956,13 +45947,13 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "action"
+					"unit": "acción"
 				}
 			],
 			"range": {
 				"type": "radius",
 				"distance": {
-					"type": "feet",
+					"type": "piess",
 					"amount": 30
 				}
 			},
@@ -45973,14 +45964,14 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "minute",
+						"type": "minuto",
 						"amount": 10
 					},
 					"concentration": true
 				}
 			],
 			"entries": [
-				"Life-preserving energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. Each nonhostile creature in the aura (including you) has resistance to necrotic damage, and its hit point maximum can't be reduced. In addition, a nonhostile, living creature regains 1 hit point when it starts its turn in the aura with 0 hit points."
+				"Radias una energía preservadora de vida en forma de aura de 30 pies de radio. El aura se mueve contigo, centrada en ti, hasta el final del conjuro. Todas las criaturas no hostiles en el aura (incluido tú) tienen resistencia al daño necrótico y sus puntos de golpe máximos no pueden ser reducidos. Además, todas las criaturas vivas y no hostiles recuperan 1 punto de golpe al principio de su turno si están en el aura y tienen 0 puntos de golpe."
 			],
 			"damageResist": [
 				"necrotic"
@@ -46018,26 +46009,6 @@
 							"name": "Solidarity (PSA)",
 							"source": "PSA"
 						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB_Esp"
-						},
-						"subclass": {
-							"name": "Twilight (UA)",
-							"source": "UAClericDruidWizard"
-						}
-					},
-					{
-						"class": {
-							"name": "Druid",
-							"source": "PHB_Esp"
-						},
-						"subclass": {
-							"name": "Wildfire (UA)",
-							"source": "UAClericDruidWizard"
-						}
 					}
 				],
 				"fromClassListVariant": [
@@ -46069,7 +46040,7 @@
 			]
 		},
 		{
-			"name": "Aura of Purity",
+			"name": "Aura de pureza [Aura of Purity]",
 			"source": "PHB_Esp",
 			"page": 216,
 			"level": 4,
@@ -46077,13 +46048,13 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "action"
+					"unit": "acción"
 				}
 			],
 			"range": {
 				"type": "radius",
 				"distance": {
-					"type": "feet",
+					"type": "piess",
 					"amount": 30
 				}
 			},
@@ -46094,14 +46065,14 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "minute",
+						"type": "minuto",
 						"amount": 10
 					},
 					"concentration": true
 				}
 			],
 			"entries": [
-				"Purifying energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. Each nonhostile creature in the aura (including you) can't become diseased, has resistance to poison damage, and has advantage on saving throws against effects that cause any of the following conditions: {@condition Cegado [Blinded]|phb_esp|cegado}, {@condition Hechizado [Charmed]|phb_esp|hechizado}, {@condition Ensordecido [Deafened]|phb_esp|ensordecido}, {@condition Asustado [Frightened]|phb_esp|asustado}, {@condition Paralizado [Paralyzed]|phb_esp|paralizado}, {@condition Envenenado [Poisoned]|phb_esp|envenenado}, and {@condition Aturdido [Stunned]|phb_esp|aturdido}."
+				"Radias una energía purificante en forma de aura de 30 pies de radio. El aura se mueve contigo, centrada en ti, hasta el final del conjuro. Todas las criaturas no hostiles en el aura (incluido tú) son resistentes al daño de veneno, no pueden enfermar y tienen ventaja en las tiradas de salvación contra cualquier efecto que cause uno de los siguientes estados: {@condition Asustado [Frightened]|phb_esp|asustado}, {@condition Aturdido [Stunned]|phb_esp|aturdido}, {@condition Cegado [Blinded]|phb_esp|cegado}, {@condition Ensordecido [Deafened]|phb_esp|ensordecido}, {@condition Envenenado [Poisoned]|phb_esp|envenenado}, {@condition Hechizado [Charmed]|phb_esp|hechizado} o {@condition Paralizado [Paralyzed]|phb_esp|paralizado}."
 			],
 			"damageResist": [
 				"poison"
@@ -46119,42 +46090,12 @@
 				"fromSubclass": [
 					{
 						"class": {
-							"name": "Artificer (Revisited)",
-							"source": "UAArtificerRevisited"
-						},
-						"subclass": {
-							"name": "Battle Smith",
-							"source": "UAArtificerRevisited"
-						}
-					},
-					{
-						"class": {
 							"name": "Artificer",
 							"source": "ERLW"
 						},
 						"subclass": {
 							"name": "Battle Smith",
 							"source": "ERLW"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB_Esp"
-						},
-						"subclass": {
-							"name": "Unity (UA)",
-							"source": "UA2020SubclassesPt2"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB_Esp"
-						},
-						"subclass": {
-							"name": "Love (UA)",
-							"source": "UA2020SubclassesPt2"
 						}
 					}
 				],
@@ -46181,7 +46122,7 @@
 			]
 		},
 		{
-			"name": "Aura of Vitality",
+			"name": "Aura de vitalidad [Aura of Vitality]",
 			"source": "PHB_Esp",
 			"page": 216,
 			"level": 3,
@@ -46189,13 +46130,13 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "action"
+					"unit": "acción"
 				}
 			],
 			"range": {
 				"type": "radius",
 				"distance": {
-					"type": "feet",
+					"type": "piess",
 					"amount": 30
 				}
 			},
@@ -46206,14 +46147,14 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "minute",
+						"type": "minuto",
 						"amount": 1
 					},
 					"concentration": true
 				}
 			],
 			"entries": [
-				"Healing energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. You can use a bonus action to cause one creature in the aura (including you) to regain {@dice 2d6} hit points."
+				"Radias una energía sanadora en forma de aura de 30 pies de radio. El aura se mueve contigo, centrada en ti, hasta el final del conjuro. Puedes usar una acción adicional para hacer que una criatura en el aura (incluido tú) recupere {@dice 2d6} puntos de golpe."
 			],
 			"miscTags": [
 				"HL"
@@ -46237,26 +46178,6 @@
 						"subclass": {
 							"name": "Crown",
 							"source": "SCAG"
-						}
-					},
-					{
-						"class": {
-							"name": "Artificer (Revisited)",
-							"source": "UAArtificerRevisited"
-						},
-						"subclass": {
-							"name": "Battle Smith",
-							"source": "UAArtificerRevisited"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB_Esp"
-						},
-						"subclass": {
-							"name": "Twilight (UA)",
-							"source": "UAClericDruidWizard"
 						}
 					},
 					{
@@ -46291,7 +46212,7 @@
 			]
 		},
 		{
-			"name": "Awaken",
+			"name": "Despertar [Awaken]",
 			"source": "PHB_Esp",
 			"page": 216,
 			"srd": true,
@@ -46300,7 +46221,7 @@
 			"time": [
 				{
 					"number": 8,
-					"unit": "hour"
+					"unit": "hora"
 				}
 			],
 			"range": {
@@ -46313,7 +46234,7 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "an agate worth at least 1,000 gp, which the spell consumes",
+					"text": "un ágata con un valor de, al menos, 1.000 po, que es consumida como parte del conjuro",
 					"cost": 100000,
 					"consume": true
 				}
@@ -46324,8 +46245,8 @@
 				}
 			],
 			"entries": [
-				"After spending the casting time tracing magical pathways within a precious gemstone, you touch a Huge or smaller beast or plant. The target must have either no Intelligence score or an Intelligence of 3 or less. The target gains an Intelligence of 10. The target also gains the ability to speak one language you know. If the target is a plant, it gains the ability to move its limbs, roots, vines, creepers, and so forth, and it gains senses similar to a human's. Your DM chooses statistics appropriate for the awakened plant, such as the statistics for the {@creature awakened shrub} or the {@creature awakened tree}.",
-				"The awakened beast or plant is {@condition Hechizado [Charmed]|phb_esp|hechizado} by you for 30 days or until you or your companions do anything harmful to it. When the {@condition Hechizado [Charmed]|phb_esp|hechizado} condition ends, the awakened creature chooses whether to remain friendly to you, based on how you treated it while it was {@condition Hechizado [Charmed]|phb_esp|hechizado}."
+				"Después de emplear el tiempo de lanzamiento en trazar dibujos mágicos en el interior de la piedra preciosa, tocas a una bestia o planta de tamaño Enorme o menor. El objetivo debe tener una puntuación de Inteligencia de 3 o menos (o incluso no tener puntuación de Inteligencia). La puntuación de Inteligencia del objetivo pasa a ser 10. Además, gana la capacidad de hablar un idioma que tú conozcas. Si el objetivo es una planta, obtiene la capacidad de mover sus miembros, raíces, vides, enredaderas, etc. y gana sentidos parecidos a los humanos. Tu DM elige un perfil adecuado a la planta que has despertado, como por ejemplo el de un {@creature awakened shrub|phb_esp|arbusto despertado} o un {@creature awakened tree|phb_esp|árbol despertado}.",
+				"El objetivo despertado permanece {@condition Hechizado [Charmed]|phb_esp|hechizado} por ti durante 30 días o hasta que tú o tus compañeros le causéis daño. Cuando el estado \"{@condition Hechizado [Charmed]|phb_esp|hechizado}\" termina, la criatura despertada decide si sigue siendo amistosa hacia ti o no, dependiendo de cómo la trataras cuando estaba {@condition Hechizado [Charmed]|phb_esp|hechizada}."
 			],
 			"conditionInflict": [
 				"charmed"
@@ -80534,34 +80455,34 @@
 			}
 		},
 		{
-			"name": "Astral Projection",
+			"name": "Proyección astral [Astral Projection]",
 			"source": "PHB_Esp",
 			"data": {}
 		},
 		{
-			"name": "Augury",
+			"name": "Augurio [Augury]",
 			"source": "PHB_Esp",
 			"data": {}
 		},
 		{
-			"name": "Aura of Life",
+			"name": "Aura de vida [Aura of Life]",
 			"source": "PHB_Esp",
 			"data": {}
 		},
 		{
-			"name": "Aura of Purity",
+			"name": "Aura de pureza [Aura of Purity]",
 			"source": "PHB_Esp",
 			"data": {}
 		},
 		{
-			"name": "Aura of Vitality",
+			"name": "Aura de vitalidad [Aura of Vitality]",
 			"source": "PHB_Esp",
 			"data": {
 				"Healing": "2d6"
 			}
 		},
 		{
-			"name": "Awaken",
+			"name": "Despertar [Awaken]",
 			"source": "PHB_Esp",
 			"data": {}
 		},
