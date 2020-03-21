@@ -21105,7 +21105,7 @@
 												"rows": [
 													[
 														"3rd",
-														"{@spell bane}, {@spell hunter's mark}"
+														"{@spell Perdición [Bane]|phb_esp|perdición}, {@spell hunter's mark}"
 													],
 													[
 														"5th",
@@ -21117,7 +21117,7 @@
 													],
 													[
 														"13th",
-														"{@spell banishment}, {@spell dimension door}"
+														"{@spell Destierro [Banishment]|phb_esp|destierro}, {@spell dimension door}"
 													],
 													[
 														"17th",
@@ -42703,7 +42703,7 @@
 		{
 			"name": "Thief of Five Fates",
 			"entries": [
-				"You can cast {@spell bane} once using a warlock spell slot. You can't do so again until you finish a long rest."
+				"You can cast {@spell Perdición [Bane]|phb_esp|perdición} once using a warlock spell slot. You can't do so again until you finish a long rest."
 			],
 			"source": "PHB_Esp",
 			"page": 111,
@@ -46245,7 +46245,7 @@
 				}
 			],
 			"entries": [
-				"Después de emplear el tiempo de lanzamiento en trazar dibujos mágicos en el interior de la piedra preciosa, tocas a una bestia o planta de tamaño Enorme o menor. El objetivo debe tener una puntuación de Inteligencia de 3 o menos (o incluso no tener puntuación de Inteligencia). La puntuación de Inteligencia del objetivo pasa a ser 10. Además, gana la capacidad de hablar un idioma que tú conozcas. Si el objetivo es una planta, obtiene la capacidad de mover sus miembros, raíces, vides, enredaderas, etc. y gana sentidos parecidos a los humanos. Tu DM elige un perfil adecuado a la planta que has despertado, como por ejemplo el de un {@creature awakened shrub|phb_esp|arbusto despertado} o un {@creature awakened tree|phb_esp|árbol despertado}.",
+				"Después de emplear el tiempo de lanzamiento en trazar dibujos mágicos en el interior de la piedra preciosa, tocas a una bestia o planta de tamaño Enorme o menor. El objetivo debe tener una puntuación de Inteligencia de 3 o menos (o incluso no tener puntuación de Inteligencia). La puntuación de Inteligencia del objetivo pasa a ser 10. Además, gana la capacidad de hablar un idioma que tú conozcas. Si el objetivo es una planta, obtiene la capacidad de mover sus miembros, raíces, vides, enredaderas, etc. y gana sentidos parecidos a los humanos. Tu DM elige un perfil adecuado a la planta que has despertado, como por ejemplo el de un {@creature awakened shrub|mm|arbusto despertado} o un {@creature awakened tree|mm|árbol despertado}.",
 				"El objetivo despertado permanece {@condition Hechizado [Charmed]|phb_esp|hechizado} por ti durante 30 días o hasta que tú o tus compañeros le causéis daño. Cuando el estado \"{@condition Hechizado [Charmed]|phb_esp|hechizado}\" termina, la criatura despertada decide si sigue siendo amistosa hacia ti o no, dependiendo de cómo la trataras cuando estaba {@condition Hechizado [Charmed]|phb_esp|hechizada}."
 			],
 			"conditionInflict": [
@@ -46291,7 +46291,7 @@
 			]
 		},
 		{
-			"name": "Bane",
+			"name": "Perdición [Bane]",
 			"source": "PHB_Esp",
 			"page": 216,
 			"srd": true,
@@ -46300,40 +46300,40 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "action"
+					"unit": "acción"
 				}
 			],
 			"range": {
 				"type": "point",
 				"distance": {
-					"type": "feet",
+					"type": "pies",
 					"amount": 30
 				}
 			},
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a drop of blood"
+				"m": "una gota de sangre"
 			},
 			"duration": [
 				{
 					"type": "timed",
 					"duration": {
-						"type": "minute",
+						"type": "minuto",
 						"amount": 1
 					},
 					"concentration": true
 				}
 			],
 			"entries": [
-				"Up to three creatures of your choice that you can see within range must make Charisma saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a {@dice d4} and subtract the number rolled from the attack roll or saving throw."
+				"Hasta tres criaturas de tu elección que puedas ver dentro del alcance deben realizar una tirada de salvación de Carisma. Hasta el final de la duración del conjuro, cuando uno de los objetivos que haya fracasado en esta tirada de salvación haga una tirada de ataque o una tirada de salvación, debe tirar {@dice d4} y restar el resultado de esa tirada."
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
+						"Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 2 o más, puedes elegir como objetivo a una criatura adicional por cada nivel por encima de 1 que tenga el espacio que hayas empleado."
 					]
 				}
 			],
@@ -46374,16 +46374,6 @@
 							"source": "PHB_Esp"
 						},
 						"subclass": {
-							"name": "Grave (UA)",
-							"source": "UAClericDivineDomains"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB_Esp"
-						},
-						"subclass": {
 							"name": "Ambition (PSA)",
 							"source": "PSA"
 						}
@@ -46407,22 +46397,12 @@
 							"name": "Divine Soul",
 							"source": "XGE"
 						}
-					},
-					{
-						"class": {
-							"name": "Wizard",
-							"source": "PHB_Esp"
-						},
-						"subclass": {
-							"name": "Onomancy (UA)",
-							"source": "UAClericDruidWizard"
-						}
 					}
 				]
 			}
 		},
 		{
-			"name": "Banishing Smite",
+			"name": "Castigo desterrador [Banishing Smite]",
 			"source": "PHB_Esp",
 			"page": 216,
 			"level": 5,
@@ -46430,7 +46410,7 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "bonus"
+					"unit": "acción adicional"
 				}
 			],
 			"range": {
@@ -46446,14 +46426,14 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "minute",
+						"type": "minuto",
 						"amount": 1
 					},
 					"concentration": true
 				}
 			],
 			"entries": [
-				"The next time you hit a creature with a weapon attack before this spell ends, your weapon crackles with force, and the attack deals an extra {@damage 5d10} force damage to the target. Additionally, if this attack reduces the target to 50 hit points or fewer, you banish it. If the target is native to a different plane of existence than the one you're on, the target disappears, returning to its home plane. If the target is native to the plane you're on, the creature vanishes into a harmless demiplane. While there, the target is {@condition Incapacitado [Incapacitated]|phb_esp|incapacitado}. It remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied."
+				"La próxima vez que impactes a una criatura con un ataque con arma cuerpo a cuerpo antes del final de la duración del conjuro, tu arma restalla con violencia y el ataque inflige {@damage 5d10} de daño de fuerza adicionales al objetivo. Además, si el ataque reduce a la criatura a 50 puntos de golpe o menos, la destierras. Si el objetivo es nativo de un plano diferente al que estás, este desaparece y vuelve a su plano natal. Si el objetivo es nativo del plano en que estas, la criatura se desvanece a un semiplano inofensivo. Estará {@condition Incapacitado [Incapacitated]|phb_esp|incapacitada} mientras permanezca allí, y seguirá en dicho semiplano hasta el final del conjuro, momento en el cual reaparecerá en el espacio que ocupaba antes o en el más cercano disponible si ese ya está ocupado."
 			],
 			"damageInflict": [
 				"force"
@@ -46481,16 +46461,6 @@
 					},
 					{
 						"class": {
-							"name": "Artificer (Revisited)",
-							"source": "UAArtificerRevisited"
-						},
-						"subclass": {
-							"name": "Battle Smith",
-							"source": "UAArtificerRevisited"
-						}
-					},
-					{
-						"class": {
 							"name": "Artificer",
 							"source": "ERLW"
 						},
@@ -46503,7 +46473,7 @@
 			}
 		},
 		{
-			"name": "Banishment",
+			"name": "Destierro [Banishment]",
 			"source": "PHB_Esp",
 			"page": 217,
 			"srd": true,
@@ -46512,42 +46482,42 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "action"
+					"unit": "acción"
 				}
 			],
 			"range": {
 				"type": "point",
 				"distance": {
-					"type": "feet",
+					"type": "pies",
 					"amount": 60
 				}
 			},
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "an item distasteful to the target"
+				"m": "un objeto desagradable para el objetivo"
 			},
 			"duration": [
 				{
 					"type": "timed",
 					"duration": {
-						"type": "minute",
+						"type": "minuto",
 						"amount": 1
 					},
 					"concentration": true
 				}
 			],
 			"entries": [
-				"You attempt to send one creature that you can see within range to another plane of existence. The target must succeed on a Charisma saving throw or be banished.",
-				"If the target is native to the plane of existence you're on, you banish the target to a harmless demiplane. While there, the target is {@condition Incapacitado [Incapacitated]|phb_esp|incapacitado}. The target remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.",
-				"If the target is native to a different plane of existence than the one you're on, the target is banished with a faint popping noise, returning to its home plane. If the spell ends before 1 minute has passed, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied. Otherwise, the target doesn't return."
+				"Intentas enviar a otro plano de existencia a una criatura que puedas ver dentro del alcance. El objetivo debe superar una tirada de salvación de Carisma o ser desterrado",
+				"Si el objetivo es nativo del plano en que estás, la criatura se desvanece a un semiplano inofensivo. Estará {@condition Incapacitado [Incapacitated]|phb_esp|incapacitada} mientras se encuentre en él y permanecerá en dicho semiplano hasta el final del conjuro, momento en el cual reaparecerá en el espacio que ocupaba antes o en el más cercano disponible si ese ya está ocupado.",
+				"Si el objetivo es nativo de un plano diferente al que estás, desaparece y vuelve a su plano natal. Si el conjuro termina antes de que pase 1 minuto, el objetivo reaparecerá en el espacio que ocupaba antes o en el más cercano disponible si ese ya está ocupado. Si no, el objetivo no vuelve."
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th."
+						"Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 5 o más, puedes elegir como objetivo a una criatura adicional por cada nivel por encima de 4 que tenga el espacio que hayas empleado."
 					]
 				}
 			],
@@ -46613,36 +46583,6 @@
 							"source": "PHB_Esp"
 						},
 						"subclass": {
-							"name": "Horizon Walker (UA)",
-							"source": "UARangerAndRogue"
-						}
-					},
-					{
-						"class": {
-							"name": "Ranger",
-							"source": "PHB_Esp"
-						},
-						"subclass": {
-							"name": "Horizon Walker",
-							"source": "XGE"
-						}
-					},
-					{
-						"class": {
-							"name": "Ranger (Revised)",
-							"source": "UATheRangerRevised"
-						},
-						"subclass": {
-							"name": "Horizon Walker (UA)",
-							"source": "UARangerAndRogue"
-						}
-					},
-					{
-						"class": {
-							"name": "Ranger (Revised)",
-							"source": "UATheRangerRevised"
-						},
-						"subclass": {
 							"name": "Horizon Walker",
 							"source": "XGE"
 						}
@@ -46653,58 +46593,8 @@
 							"source": "PHB_Esp"
 						},
 						"subclass": {
-							"name": "Monster Slayer (UA)",
-							"source": "UAATrioOfSubclasses"
-						}
-					},
-					{
-						"class": {
-							"name": "Ranger",
-							"source": "PHB_Esp"
-						},
-						"subclass": {
 							"name": "Monster Slayer",
 							"source": "XGE"
-						}
-					},
-					{
-						"class": {
-							"name": "Ranger (Revised)",
-							"source": "UATheRangerRevised"
-						},
-						"subclass": {
-							"name": "Monster Slayer (UA)",
-							"source": "UAATrioOfSubclasses"
-						}
-					},
-					{
-						"class": {
-							"name": "Ranger (Revised)",
-							"source": "UATheRangerRevised"
-						},
-						"subclass": {
-							"name": "Monster Slayer",
-							"source": "XGE"
-						}
-					},
-					{
-						"class": {
-							"name": "Ranger",
-							"source": "PHB_Esp"
-						},
-						"subclass": {
-							"name": "Fey Wanderer (UA)",
-							"source": "UA2020SubclassesPt3"
-						}
-					},
-					{
-						"class": {
-							"name": "Ranger (Revised)",
-							"source": "UATheRangerRevised"
-						},
-						"subclass": {
-							"name": "Fey Wanderer (UA)",
-							"source": "UA2020SubclassesPt3"
 						}
 					}
 				]
@@ -80487,25 +80377,25 @@
 			"data": {}
 		},
 		{
-			"name": "Bane",
+			"name": "Perdición [Bane]",
 			"source": "PHB_Esp",
 			"data": {
 				"Save": "Charisma"
 			}
 		},
 		{
-			"name": "Banishing Smite",
+			"name": "Castigo desterrador [Banishing Smite]",
 			"source": "PHB_Esp",
 			"data": {
 				"Damage": "5d10",
-				"Damage Type": "Force"
+				"Damage Type": "Fuerza"
 			},
 			"shapedData": {
 				"primaryDamageCondition": "auto"
 			}
 		},
 		{
-			"name": "Banishment",
+			"name": "Destierro [Banishment]",
 			"source": "PHB_Esp",
 			"data": {
 				"Save": "Charisma"
