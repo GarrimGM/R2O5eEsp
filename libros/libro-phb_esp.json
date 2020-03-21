@@ -44574,9 +44574,9 @@
 				}
 			],
 			"damageInflict": [
-				"contundente",
-				"perforante",
-				"cortante"
+				"bludgeoning",
+				"piercing",
+				"slashing"
 			],
 			"classes": {
 				"fromClassList": [
@@ -44965,7 +44965,7 @@
 			]
 		},
 		{
-			"name": "Animate Objects",
+			"name": "Animar objetos [Animate Objects]",
 			"source": "PHB_Esp",
 			"page": 213,
 			"srd": true,
@@ -44974,13 +44974,13 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "action"
+					"unit": "acción"
 				}
 			],
 			"range": {
 				"type": "point",
 				"distance": {
-					"type": "feet",
+					"type": "pies",
 					"amount": 120
 				}
 			},
@@ -44992,25 +44992,25 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "minute",
+						"type": "minuto",
 						"amount": 1
 					},
 					"concentration": true
 				}
 			],
 			"entries": [
-				"Objects come to life at your command. Choose up to ten nonmagical objects within range that are not being worn or carried. Medium targets count as two objects, Large targets count as four objects, Huge targets count as eight objects. You can't animate any object larger than Huge. Each target animates and becomes a creature under your control until the spell ends or until reduced to 0 hit points.",
-				"As a bonus action, you can mentally command any creature you made with this spell if the creature is within 500 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.",
+				"Tus órdenes hacen que los objetos cobren vida. Elige hasta diez objetos no mágicos dentro del alcance que no lleve o vista nadie. Los objetivos Medianos cuentan como dos objetos, los Grandes como cuatro objetos y los Enormes como ocho objetos. No puedes animar ningún objeto mayor que Enorme. Cada objetivo cobra vida y se convierte en una criatura bajo tu control hasta el final de la duración del conjuro o hasta que sea reducido a 0 puntos de golpe.",
+				"En cada turno, puedes usar una acción adicional para dar una orden mental a cualquier criatura creada mediante este conjuro que esté a 500 pies o menos de ti (si controlas varias criaturas, puedes dirigir a una o más de ellas utilizando la misma orden). Decides qué acción va a tomar la criatura y dónde se moverá durante su próximo turno. También puedes dar una orden general, como vigilar una cámara o pasillo en concreto. Si no das ninguna orden, la criatura se limita a defenderse de otras criaturas hostiles. Una vez recibida una orden, la sigue hasta cumplirla.",
 				{
 					"type": "table",
-					"caption": "Animated Object Statistics",
+					"caption": "Perfil de un objeto animado",
 					"colLabels": [
-						"Size",
-						"HP",
-						"AC",
-						"Attack",
-						"Str",
-						"Dex"
+						"Tamaño",
+						"PG",
+						"CA",
+						"Ataque",
+						"Fue",
+						"Des"
 					],
 					"colStyles": [
 						"col-2",
@@ -45025,7 +45025,7 @@
 							"{@creature animated object (tiny)|phb|Tiny}",
 							"20",
 							"18",
-							"{@hit +8} to hit, {@damage 1d4 + 4} damage",
+							"{@hit +8} a impactar, {@damage 1d4 + 4} daño",
 							"{@dice 1d20 - 3|4}",
 							"{@dice 1d20 + 4|18}"
 						],
@@ -45033,7 +45033,7 @@
 							"{@creature animated object (small)|phb|Small}",
 							"25",
 							"16",
-							"{@hit +6} to hit, {@damage 1d8 + 2} damage",
+							"{@hit +6} a impactar, {@damage 1d8 + 2} daño",
 							"{@dice 1d20 - 2|6}",
 							"{@dice 1d20 + 2|14}"
 						],
@@ -45041,7 +45041,7 @@
 							"{@creature animated object (medium)|phb|Medium}",
 							"40",
 							"13",
-							"{@hit +5} to hit, {@damage 2d6 + 1} damage",
+							"{@hit +5} a impactar, {@damage 2d6 + 1} daño",
 							"{@dice 1d20|10}",
 							"{@dice 1d20 + 1|12}"
 						],
@@ -45049,7 +45049,7 @@
 							"{@creature animated object (large)|phb|Large}",
 							"50",
 							"10",
-							"{@hit +6} to hit, {@damage 2d10 + 2} damage",
+							"{@hit +6} a impactar, {@damage 2d10 + 2} daño",
 							"{@dice 1d20 + 2|14}",
 							"{@dice 1d20|10}"
 						],
@@ -45057,21 +45057,21 @@
 							"{@creature animated object (huge)|phb|Huge}",
 							"80",
 							"10",
-							"{@hit +8} to hit, {@damage 2d12 + 4} damage",
+							"{@hit +8} a impactar, {@damage 2d12 + 4} daño",
 							"{@dice 1d20 + 4|18}",
 							"{@dice 1d20 - 3|6}"
 						]
 					]
 				},
-				"An animated object is a construct with AC, hit points, attacks, Strength, and Dexterity determined by its size. Its Constitution is 10 and its Intelligence and Wisdom are 3, and its Charisma is 1. Its speed is 30 feet; if the object lacks legs or other appendages it can use for locomotion, it instead has a flying speed of 30 feet and can hover. If the object is securely attached to a surface or a larger object, such as a chain bolted to a wall, its speed is 0. It has blindsight with a radius of 30 feet and is blind beyond that distance. When the animated object drops to 0 hit points, it reverts to its original object form, and any remaining damage carries over to its original object form.",
-				"If you command an object to attack, it can make a single melee attack against a creature within 5 feet of it. It makes a slam attack with an attack bonus and bludgeoning damage determined by its size. The DM might rule that a specific object inflicts slashing or piercing damage based on its form."
+				"Un objeto animado es un autómata con CA, puntos de golpe, ataques, fuerza y Destreza fijados por su tamaño. Su Constitución es 10, su Inteligencia y Sabiduría son 3 y su Carisma es 1. Su velocidad es de 30 pies; si el objeto no tiene piernas o algún otro tipo de apéndice que pueda usar para desplazarse, gana una velocidad volando de 30 pies y puede levitar. Su velocidad es 0 si el objeto está sujeto firmemente a una superficie o a un objeto de mayor tamaño, como atado a un muro mediante una cadena. Tiene visión ciega en un radio de 30 pies, pero está ciego a más distancia. Cuando los puntos de golpe del objeto animado se reducen a 0, vuelve a su forma original y cualquier daño sobrante se aplica a esta forma.",
+				"Si ordenas a un objeto que ataque, puede hacer un solo ataque cuerpo a cuerpo contra una criatura situada a 5 pies o menos. El bonificador y la cantidad de daño contundente del ataque que realiza están determinados por su tamaño. El DM puede decidir que un objeto en particular inflige daño cortante o perforante, según la forma que tenga."
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"If you cast this spell using a spell slot of 6th level or higher, you can animate two additional objects for each slot level above 5th."
+						"Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 6 o más, puedes animar dos objetos adicionales por cada nivel por encima de 5 que tenga el espacio que hayas empleado."
 					]
 				}
 			],
@@ -45101,10 +45101,6 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Artificer (Revisited)",
-						"source": "UAArtificerRevisited"
-					},
-					{
 						"name": "Artificer",
 						"source": "ERLW"
 					}
@@ -45116,28 +45112,8 @@
 							"source": "PHB_Esp"
 						},
 						"subclass": {
-							"name": "Forge (UA)",
-							"source": "UAClericDivineDomains"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB_Esp"
-						},
-						"subclass": {
 							"name": "Forge",
 							"source": "XGE"
-						}
-					},
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB_Esp"
-						},
-						"subclass": {
-							"name": "Clockwork Soul (UA)",
-							"source": "UA2020SubclassesPt2"
 						}
 					}
 				]
@@ -45150,7 +45126,7 @@
 			]
 		},
 		{
-			"name": "Antilife Shell",
+			"name": "Caparazón antivida [Antilife Shell]",
 			"source": "PHB_Esp",
 			"page": 213,
 			"srd": true,
@@ -45159,13 +45135,13 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "action"
+					"unit": "acción"
 				}
 			],
 			"range": {
 				"type": "radius",
 				"distance": {
-					"type": "feet",
+					"type": "piess",
 					"amount": 10
 				}
 			},
@@ -45177,16 +45153,16 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "hour",
+						"type": "hora",
 						"amount": 1
 					},
 					"concentration": true
 				}
 			],
 			"entries": [
-				"A shimmering barrier extends out from you in a 10-foot radius and moves with you, remaining centered on you and hedging out creatures other than undead and constructs. The barrier lasts for the duration.",
-				"The barrier prevents an affected creature from passing or reaching through. An affected creature can cast spells or make attacks with ranged or reach weapons through the barrier.",
-				"If you move so that an affected creature is forced to pass through the barrier, the spell ends."
+				"Una barrera rutilante se extiende alrededor de ti en un radio de 10 pies. Permanece centrada en ti y se mueve contigo, manteniendo a raya a todas las criaturas que no sean muertos vivientes o autómatas. La barrera persiste hasta el final de la duración del conjuro.",
+				"Las criaturas afectadas no pueden penetrar en el interior de la barrera, ni parcialmente ni por completo. No obstante, son capaces de lanzar conjuros o realizar ataques con armas de gran alcance o a distancia a través de la barrera.",
+				"Si tu movimiento obliga a una criatura afectada a atravesar la barrera, el conjuro termina."
 			],
 			"classes": {
 				"fromClassList": [
@@ -45212,26 +45188,6 @@
 							"source": "PHB_Esp"
 						},
 						"subclass": {
-							"name": "Protection (UA)",
-							"source": "UAClericDivineDomains"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB_Esp"
-						},
-						"subclass": {
-							"name": "Grave (UA)",
-							"source": "UAClericDivineDomains"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB_Esp"
-						},
-						"subclass": {
 							"name": "Grave",
 							"source": "XGE"
 						}
@@ -45248,7 +45204,7 @@
 			]
 		},
 		{
-			"name": "Antimagic Field",
+			"name": "Campo antimagia [Antimagic Field]",
 			"source": "PHB_Esp",
 			"page": 213,
 			"srd": true,
@@ -45257,82 +45213,82 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "action"
+					"unit": "acción"
 				}
 			],
 			"range": {
 				"type": "sphere",
 				"distance": {
-					"type": "feet",
+					"type": "piess",
 					"amount": 10
 				}
 			},
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a pinch of powdered iron or iron filings"
+				"m": "una pizca de polvo de hierro o limaduras de hierro"
 			},
 			"duration": [
 				{
 					"type": "timed",
 					"duration": {
-						"type": "hour",
+						"type": "hora",
 						"amount": 1
 					},
 					"concentration": true
 				}
 			],
 			"entries": [
-				"A 10-foot-radius invisible sphere of antimagic surrounds you. This area is divorced from the magical energy that suffuses the multiverse. Within the sphere, spells can't be cast, summoned creatures disappear, and even magic items become mundane. Until the spell ends, the sphere moves with you, centered on you.",
-				"Spells and other magical effects, except those created by an artifact or a deity, are suppressed in the sphere and can't protrude into it. A slot expended to cast a suppressed spell is consumed. While an effect is suppressed, it doesn't function, but the time it spends suppressed counts against its duration.",
+				"Te rodea una esfera antimagia invisible de 10 pies de radio. El área cubierta queda aislada de la energía mágica que permea el universo. Dentro de la esfera no se pueden lanzar conjuros, las criaturas invocadas desaparecen y los objetos mágicos se vuelven mundanos. La esfera se mueve contigo, centrada en ti, hasta el final del conjuro.",
+				"Los conjuros y otros efectos mágicos, exceptuando aquellos creados por un artefacto o una deidad, no pueden penetrar en la esfera y quedan suprimidos dentro de ella. Los espacios de conjuro empleados en lanzar conjuros que queden suprimidos se gastan con normalidad. Mientras un conjuro está suprimido, no tiene efecto, pero el tiempo que pasa en este estado se resta de su duración normal.",
 				{
 					"type": "entries",
-					"name": "Targeted Effects",
+					"name": "Efectos que eligen un objetivo",
 					"entries": [
-						"Spells and other magical effects, such as magic missile and charm person, that target a creature or an object in the sphere have no effect on that target."
+						"Los conjuros y efectos mágicos que eligen como objetivo a una criatura u objeto, como proyectil mágico o hechizar persona, no tienen efecto si su objetivo está dentro de la esfera."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Areas of Magic",
+					"name": "Áreas de efecto mágico",
 					"entries": [
-						"The area of another spell or magical effect, such as {@spell fireball}, can't extend into the sphere. If the sphere overlaps an area of magic, the part of the area that is covered by the sphere is suppressed. For example, the flames created by a wall of fire are suppressed within the sphere, creating a gap in the wall if the overlap is large enough."
+						"El área de otro conjuro o efecto mágico, como una {@spell fireball|phb_esp|bola de fuego}, no se extiende al interior de la esfera. Si la esfera se superpone con el área de un efecto mágico, este queda anulado en la parte de área cubierta por la esfera. Por ejemplo, las llamas creadas por un muro de fuego quedan suprimidas dentro de la esfera. Si el área superpuesta es lo suficientemente grande, se crea un hueco en el muro."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Spells",
+					"name": "Conjuros",
 					"entries": [
-						"Any active spell or other magical effect on a creature or an object in the sphere is suppressed while the creature or object is in it."
+						"Cualquier conjuro o efecto mágico activo en una criatura u objeto dentro de la esfera queda suprimido mientras la criatura o el objeto permanezca en su interior."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Magic Items",
+					"name": "Objetos mágicos",
 					"entries": [
-						"The properties and powers of magic items are suppressed in the sphere. For example, a +1 longsword in the sphere functions as a nonmagical longsword.",
-						"A magic weapon's properties and powers are suppressed if it is used against a target in the sphere or wielded by an attacker in the sphere. If a magic weapon or a piece of magic ammunition fully leaves the sphere (for example, if you fire a magic arrow or throw a magic spear at a target outside the sphere), the magic of the item ceases to be suppressed as soon as it exits."
+						"Los poderes y propiedades de los objetos mágicos quedan suprimidos dentro de la esfera. Por ejemplo, una espada larga +1 se comporta dentro de la esfera como una espada larga no mágica.",
+						"Los poderes y propiedades de un arma mágica quedan suprimidos si se usan contra un objetivo dentro de la esfera o si las empuña un atacante dentro de la esfera. Si un arma mágica o una unidad de munición mágica abandona por completo la esfera (por ejemplo, una flecha mágica disparada o una lanza mágica arrojada contra un objetivo fuera de la esfera) su magia deja de quedar suprimida en el momento en que sale del campo antimagia."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Magical Travel",
+					"name": "Viajes mágicos",
 					"entries": [
-						"Teleportation and planar travel fail to work in the sphere, whether the sphere is the destination or the departure point for such magical travel. A portal to another location, world, or plane of existence, as well as an opening to an extradimensional space such as that created by the rope trick spell, temporarily closes while in the sphere."
+						"La teletransportación y el viaje interplanar no funcionan si el origen o el destino están dentro de la esfera de un campo antimagia. Un portal a otra localización, mundo o plano de existencia, así como cualquier tipo de apertura a un espacio extradimensional, como el creado por el conjuro truco de la cuerda, se cierra temporalmente mientras permanezca dentro de la esfera."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Creatures and Objects",
+					"name": "Criaturas y objetos",
 					"entries": [
-						"A creature or object summoned or created by magic temporarily winks out of existence in the sphere. Such a creature instantly reappears once the space the creature occupied is no longer within the sphere."
+						"Una criatura o un objeto invocado o creado mediante magia deja de existir en el momento en que entre en la esfera. Reaparecerá instantáneamente en cuanto el espacio que ocupaba no se superponga con el de la esfera."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Dispel Magic",
+					"name": "Disipar magia",
 					"entries": [
-						"Spells and magical effects such as {@spell dispel magic} have no effect on the sphere. Likewise, the spheres created by different {@spell antimagic field} spells don't nullify each other."
+						"Los conjuros y efectos mágicos similares a {@spell dispel magic|phb_esp|disipar magia} no tienen efecto sobre la esfera. Del mismo modo, las esferas creadas por conjuros de {@spell Campo antimagia [Antimagic Field]|phb_esp|campo antimagia} diferentes no se anulan entre sí."
 					]
 				}
 			],
@@ -80616,17 +80572,17 @@
 			"data": {}
 		},
 		{
-			"name": "Animate Objects",
+			"name": "Animar objetos [Animate Objects]",
 			"source": "PHB_Esp",
 			"data": {}
 		},
 		{
-			"name": "Antilife Shell",
+			"name": "Caparazón antivida [Antilife Shell]",
 			"source": "PHB_Esp",
 			"data": {}
 		},
 		{
-			"name": "Antimagic Field",
+			"name": "Campo antimagia [Antimagic Field]",
 			"source": "PHB_Esp",
 			"data": {}
 		},
