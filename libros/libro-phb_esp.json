@@ -45715,7 +45715,7 @@
 			]
 		},
 		{
-			"name": "Arms of Hadar",
+			"name": "Brazos de Hadar [Arms of Hadar]",
 			"source": "PHB_Esp",
 			"page": 215,
 			"level": 1,
@@ -45723,13 +45723,13 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "action"
+					"unit": "acción"
 				}
 			],
 			"range": {
 				"type": "radius",
 				"distance": {
-					"type": "feet",
+					"type": "piess",
 					"amount": 10
 				}
 			},
@@ -45743,14 +45743,14 @@
 				}
 			],
 			"entries": [
-				"You invoke the power of Hadar, the Dark Hunger. Tendrils of dark energy erupt from you and batter all creatures within 10 feet of you. Each creature in that area must make a Strength saving throw. On a failed save, a target takes {@damage 2d6} necrotic damage and can't take reactions until its next turn. On a successful save, the creature takes half damage, but suffers no other effect."
+				"Invocas el poder de Hadar, el Hambre Tenebrosa. Zarcillos de energía oscura surgen de ti y golpean a todas las criaturas a 10 pies o menos de tu posición. Cada criatura en el área debe hacer una tirada de salvación de Fuerza. Si falla, sufrirá {@damage 2d6} de daño necrótico y no podrá llevar a cabo reacciones hasta el comienzo de su próximo turno. Si supera la tirada, recibirá la mitad de daño, pero no sufrirá ningún otro efecto."
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage 2d6|1-9|1d6} for each slot level above 1st."
+						"Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 2 o más, el daño aumenta en {@scaledamage 2d6|1-9|1d6} por cada nivel por encima de 1 que tenga el espacio que hayas empleado."
 					]
 				}
 			],
@@ -45768,28 +45768,6 @@
 					{
 						"name": "Warlock",
 						"source": "PHB_Esp"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB_Esp"
-						},
-						"subclass": {
-							"name": "Darkness (Twitter)",
-							"source": "Twitter"
-						}
-					},
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB_Esp"
-						},
-						"subclass": {
-							"name": "Aberrant Mind (UA)",
-							"source": "UASorcererAndWarlock"
-						}
 					}
 				]
 			}
@@ -80540,16 +80518,16 @@
 			}
 		},
 		{
-			"name": "Arms of Hadar",
+			"name": "Brazos de Hadar [Arms of Hadar]",
 			"source": "PHB_Esp",
 			"data": {
 				"Save": "Strength",
 				"Damage": "2d6",
-				"Damage Type": "Necrotic",
-				"Save Success": "Half damage and can take reactions",
+				"Damage Type": "Necrótico",
+				"Save Success": "Mitad de daño y no sufrirá ningún otro efecto",
 				"Higher Spell Slot Die": "d6",
 				"Higher Spell Slot Dice": "1",
-				"Target": "Each creature within 10 feet of you"
+				"Target": "Todas las criaturas a 10 pies o menos de tu posición"
 			},
 			"shapedData": {
 				"primaryDamageCondition": "save"
