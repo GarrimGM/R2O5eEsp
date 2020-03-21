@@ -14100,7 +14100,7 @@
 										"type": "entries",
 										"name": "Spirit Seeker",
 										"entries": [
-											"Yours is a path that seeks attunement with the natural world, giving you a kinship with beasts. At 3rd level when you adopt this path, you gain the ability to cast the {@spell beast sense} and {@spell speak with animals} spells, but only as rituals, as described in {@book chapter 10|PHB|10|rituals}."
+											"Yours is a path that seeks attunement with the natural world, giving you a kinship with beasts. At 3rd level when you adopt this path, you gain the ability to cast the {@spell Sentidos de la bestia [Beast Sense]|phb_esp|sentidos de la bestia} and {@spell speak with animals} spells, but only as rituals, as described in {@book chapter 10|PHB|10|rituals}."
 										]
 									},
 									{
@@ -16049,7 +16049,7 @@
 											],
 											[
 												"5th",
-												"{@spell beacon of hope}, {@spell revivify}"
+												"{@spell Señal de esperanza [Beacon of Hope]|phb_esp|señal de esperanza}, {@spell revivify}"
 											],
 											[
 												"7th",
@@ -16280,7 +16280,7 @@
 											],
 											[
 												"3rd",
-												"{@spell barkskin}, {@spell spike growth}"
+												"{@spell Piel robliza [Barkskin]|phb_esp|piel robliza}, {@spell spike growth}"
 											],
 											[
 												"5th",
@@ -17534,7 +17534,7 @@
 												"rows": [
 													[
 														"3rd",
-														"{@spell barkskin}, {@spell spider climb}"
+														"{@spell Piel robliza [Barkskin]|phb_esp|piel robliza}, {@spell spider climb}"
 													],
 													[
 														"5th",
@@ -20943,7 +20943,7 @@
 													],
 													[
 														"9th",
-														"{@spell beacon of hope}, {@spell dispel magic}"
+														"{@spell Señal de esperanza [Beacon of Hope]|phb_esp|señal de esperanza}, {@spell dispel magic}"
 													],
 													[
 														"13th",
@@ -42694,7 +42694,7 @@
 				}
 			],
 			"entries": [
-				"You can cast {@spell bestow curse} once using a warlock spell slot. You can't do so again until you finish a long rest."
+				"You can cast {@spell Imponer maldición [Bestow Curse]|phb_esp|imponer maldición} once using a warlock spell slot. You can't do so again until you finish a long rest."
 			],
 			"source": "PHB_Esp",
 			"page": 111,
@@ -46601,7 +46601,7 @@
 			}
 		},
 		{
-			"name": "Barkskin",
+			"name": "Piel robliza [Barkskin]",
 			"source": "PHB_Esp",
 			"page": 217,
 			"srd": true,
@@ -46610,7 +46610,7 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "action"
+					"unit": "acción"
 				}
 			],
 			"range": {
@@ -46622,20 +46622,20 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a handful of oak bark"
+				"m": "un puñado de corteza de roble"
 			},
 			"duration": [
 				{
 					"type": "timed",
 					"duration": {
-						"type": "hour",
+						"type": "hora",
 						"amount": 1
 					},
 					"concentration": true
 				}
 			],
 			"entries": [
-				"You touch a willing creature. Until the spell ends, the target's skin has a rough, bark-like appearance, and the target's AC can't be less than 16, regardless of what kind of armor it is wearing."
+				"Tocas a una criatura voluntaria. Hasta el final de la duración de conjuro, la piel del objetivo se vuelve áspera, con apariencia de corteza, y su CA no podrá ser menor de 16 independientemente de la armadura que lleve."
 			],
 			"areaTags": [
 				"ST"
@@ -46677,7 +46677,7 @@
 			}
 		},
 		{
-			"name": "Beacon of Hope",
+			"name": "Señal de esperanza [Beacon of Hope]",
 			"source": "PHB_Esp",
 			"page": 217,
 			"srd": true,
@@ -46686,13 +46686,13 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "action"
+					"unit": "acción"
 				}
 			],
 			"range": {
 				"type": "point",
 				"distance": {
-					"type": "feet",
+					"type": "pies",
 					"amount": 30
 				}
 			},
@@ -46704,14 +46704,14 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "minute",
+						"type": "minuto",
 						"amount": 1
 					},
 					"concentration": true
 				}
 			],
 			"entries": [
-				"This spell bestows hope and vitality. Choose any number of creatures within range. For the duration, each target has advantage on Wisdom saving throws and death saving throws, and regains the maximum number of hit points possible from any healing."
+				"Este conjuro proporciona esperanza y vitalidad. Elige cualquier número de criaturas dentro del alcance. Hasta el final de la duración de) conjuro, todos los objetivos tienen ventaja en sus tiradas de salvación de Sabiduría y sus tiradas de salvación contra muerte. Además, al recibir cualquier tipo de curación recuperan la cantidad máxima posible de puntos de golpe."
 			],
 			"miscTags": [
 				"HL"
@@ -46756,36 +46756,6 @@
 							"name": "Solidarity (PSA)",
 							"source": "PSA"
 						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB_Esp"
-						},
-						"subclass": {
-							"name": "Beauty (Twitter)",
-							"source": "Twitter"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB_Esp"
-						},
-						"subclass": {
-							"name": "Unity (UA)",
-							"source": "UA2020SubclassesPt2"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB_Esp"
-						},
-						"subclass": {
-							"name": "Love (UA)",
-							"source": "UA2020SubclassesPt2"
-						}
 					}
 				]
 			},
@@ -46805,7 +46775,7 @@
 			]
 		},
 		{
-			"name": "Beast Sense",
+			"name": "Sentidos de la bestia [Beast Sense]",
 			"source": "PHB_Esp",
 			"page": 217,
 			"level": 2,
@@ -46813,7 +46783,7 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "action"
+					"unit": "acción"
 				}
 			],
 			"range": {
@@ -46829,7 +46799,7 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "hour",
+						"type": "hora",
 						"amount": 1
 					},
 					"concentration": true
@@ -46839,7 +46809,8 @@
 				"ritual": true
 			},
 			"entries": [
-				"You touch a willing beast. For the duration of the spell, you can use your action to see through the beast's eyes and hear what it hears, and continue to do so until you use your action to return to your normal senses. While perceiving through the beast's senses, you gain the benefits of any special senses possessed by that creature, though you are blinded and deafened to your own surroundings."
+				"Tocas a una bestia voluntaria. Hasta el final de la duración del conjuro puedes usar tu acción para ver a través de los ojos de dicha criatura y oír lo que ella oye. Continuarás así hasta que utilices una acción para volver a tus sentidos normales.",
+				"Mientras estás percibiendo el entorno a través de los sentidos de la bestia, ganas los beneficios de cualquier sentido especial que esta tenga. Sin embargo, estarás cegado y ensordecido en lo que a tus propios sentidos respecta."
 			],
 			"areaTags": [
 				"ST"
@@ -46884,7 +46855,7 @@
 			]
 		},
 		{
-			"name": "Bestow Curse",
+			"name": "Imponer maldición [Bestow Curse]",
 			"source": "PHB_Esp",
 			"page": 218,
 			"srd": true,
@@ -46893,7 +46864,7 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "action"
+					"unit": "acción"
 				}
 			],
 			"range": {
@@ -46910,31 +46881,31 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "minute",
+						"type": "minuto",
 						"amount": 1
 					},
 					"concentration": true
 				}
 			],
 			"entries": [
-				"You touch a creature, and that creature must succeed on a Wisdom saving throw or become cursed for the duration of the spell. When you cast this spell, choose the nature of the curse from the following options:",
+				"Tocas a una criatura, que debe superar una tirada de salvación de Sabiduría o quedar maldita hasta el final de la duración del conjuro. Cuando lanzas este conjuro, elige la naturaleza de la maldición de entre las siguientes opciones:",
 				{
 					"type": "list",
 					"items": [
-						"Choose one ability score. While cursed, the target has disadvantage on ability checks and saving throws made with that ability score.",
-						"While cursed, the target has disadvantage on attack rolls against you.",
-						"While cursed, the target must make a Wisdom saving throw at the start of each of its turns. If it fails, it wastes its action that turn doing nothing.",
-						"While the target is cursed, your attacks and spells deal an extra {@damage 1d8} necrotic damage to the target."
+						"Elige una puntuación de característica. Mientras está maldito, el objetivo tiene desventaja en las pruebas de característica y tiradas de salvación de dicha característica.",
+						"Hasta el final de la duración del conjuro, el objetivo sufre desventaja en sus tiradas de ataque contra ti.",
+						"Mientras siga maldito, el objetivo debe realizar una tirada de salvación de Sabiduría al principio de cada turno. Si fracasa, gasta su acción de ese turno en no hacer nada.",
+						"Mientras el objetivo siga maldito, tus ataques y conjuros le hacen {@damage 1d8} puntos extra de daño necrótico adicional."
 					]
 				},
-				"A {@spell remove curse} spell ends this effect. At the DM's option, you may choose an alternative curse effect, but it should be no more powerful than those described above. The DM has final say on such a curse's effect."
+				"El conjuro {@spell remove curse|phb_esp|levantar maldición} termina estos efectos. Bajo la discreción del DM, puedes elegir un efecto alternativo para la maldición, pero no debería ser más poderoso que los descritos más arriba. El DM tiene la última palabra sobre los efectos de una maldición."
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"If you cast this spell using a spell slot of 4th level or higher, the duration is concentration, up to 10 minutes. If you use a spell slot of 5th level or higher, the duration is 8 hours. If you use a spell slot of 7th level or higher, the duration is 24 hours. If you use a 9th level spell slot, the spell lasts until it is dispelled. Using a spell slot of 5th level or higher grants a duration that doesn't require concentration."
+						"Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 4 o más, la duración pasa a ser: concentración, hasta 10 minutos. Si utilizas un espacio de conjuro de nivel 5 o más, la duración es de 8 horas. Si usas un espacio de conjuro de nivel 7 u 8, la duración es de 24 horas. Si empleas un espacio de conjuro de nivel 9, el conjuro dura hasta que sea disipado. Además, al lanzar este conjuro con un espacio de nivel 5 o más, no es necesaria la concentración para mantener la duración especificada más arriba."
 					]
 				}
 			],
@@ -46981,26 +46952,6 @@
 						"subclass": {
 							"name": "Ambition (PSA)",
 							"source": "PSA"
-						}
-					},
-					{
-						"class": {
-							"name": "Paladin",
-							"source": "PHB_Esp"
-						},
-						"subclass": {
-							"name": "Conquest (UA)",
-							"source": "UAPaladin"
-						}
-					},
-					{
-						"class": {
-							"name": "Paladin",
-							"source": "PHB_Esp"
-						},
-						"subclass": {
-							"name": "Conquest v2 (UA)",
-							"source": "UARevisedClassOptions"
 						}
 					},
 					{
@@ -80402,22 +80353,22 @@
 			}
 		},
 		{
-			"name": "Barkskin",
+			"name": "Piel robliza [Barkskin]",
 			"source": "PHB_Esp",
 			"data": {}
 		},
 		{
-			"name": "Beacon of Hope",
+			"name": "Señal de esperanza [Beacon of Hope]",
 			"source": "PHB_Esp",
 			"data": {}
 		},
 		{
-			"name": "Beast Sense",
+			"name": "Sentidos de la bestia [Beast Sense]",
 			"source": "PHB_Esp",
 			"data": {}
 		},
 		{
-			"name": "Bestow Curse",
+			"name": "Imponer maldición [Bestow Curse]",
 			"source": "PHB_Esp",
 			"data": {
 				"Save": "Wisdom"
