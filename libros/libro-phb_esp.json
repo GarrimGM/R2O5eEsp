@@ -15914,7 +15914,7 @@
 											],
 											[
 												"7th",
-												"{@spell arcane eye}, {@spell confusion}"
+												"{@spell Ojo arcano [Arcane Eye]|phb_esp|ojo arcano}, {@spell confusion}"
 											],
 											[
 												"9th",
@@ -42742,7 +42742,7 @@
 				}
 			],
 			"entries": [
-				"You can cast {@spell arcane eye} at will, without expending a spell slot."
+				"You can cast {@spell Ojo arcano [Arcane Eye]|phb_esp|ojo arcano} at will, without expending a spell slot."
 			],
 			"source": "PHB_Esp",
 			"page": 111,
@@ -45309,7 +45309,7 @@
 			}
 		},
 		{
-			"name": "Antipathy/Sympathy",
+			"name": "Antipatía/Simpatía [Antipathy/Sympathy]",
 			"source": "PHB_Esp",
 			"page": 214,
 			"srd": true,
@@ -45318,55 +45318,55 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "hour"
+					"unit": "hora"
 				}
 			],
 			"range": {
 				"type": "point",
 				"distance": {
-					"type": "feet",
+					"type": "pies",
 					"amount": 60
 				}
 			},
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "either a lump of alum soaked in vinegar for the antipathy effect or a drop of honey for the sympathy effect"
+				"m": "un pedazo de alumbre empapado en vinagre para el efecto de antipatía o una gota de miel para el efecto de simpatía"
 			},
 			"duration": [
 				{
 					"type": "timed",
 					"duration": {
-						"type": "day",
+						"type": "día",
 						"amount": 10
 					}
 				}
 			],
 			"entries": [
-				"This spell attracts or repels creatures of your choice. You target something within range, either a Huge or smaller object or creature or an area that is no larger than a 200-foot cube. Then specify a kind of intelligent creature, such as red dragons, goblins, or vampires. You invest the target with an aura that either attracts or repels the specified creatures for the duration. Choose antipathy or sympathy as the aura's effect.",
+				"Este conjuro atrae o repele a criaturas de tu elección. Elige a un objetivo dentro del alcance: un objeto, una criatura de tamaño Enorme o más pequeña, o un área igual o menor que un cubo de 200 pies. Una vez hecho esto, deberás especificar también un tipo de criatura inteligente, como dragones rojos, goblins o vampiros. Imbuyes en el objetivo un aura que o bien atrae o repele a las criaturas elegidas hasta el final de la duración del conjuro. El aura podrá causar antipatía o simpatía a tu elección.",
 				{
 					"type": "entries",
-					"name": "Antipathy",
+					"name": "Antipatía",
 					"entries": [
-						"The enchantment causes creatures of the kind you designated to feel an intense urge to leave the area and avoid the target. When such a creature can see the target or comes within 60 feet of it, the creature must succeed on a Wisdom saving throw or become {@condition Asustado [Frightened]|phb_esp|asustado}. The creature remains {@condition Asustado [Frightened]|phb_esp|asustado} while it can see the target or is within 60 feet of it. While {@condition Asustado [Frightened]|phb_esp|asustado} by the target, the creature must use its movement to move to the nearest safe spot from which it can't see the target. If the creature moves more than 60 feet from the target and can't see it, the creature is no longer {@condition Asustado [Frightened]|phb_esp|asustado}, but the creature becomes {@condition Asustado [Frightened]|phb_esp|asustado} again if it regains sight of the target or moves within 60 feet of it."
+						"El encantamiento hace que las criaturas del tipo elegido sientan una fuerte necesidad de abandonar el área y evitar al objetivo. Cuando una de estas criaturas vea al objetivo o se acerque a menos de 60 pies del mismo, deberá tener éxito en una tirada de salvación de Sabiduría o quedará {@condition Asustado [Frightened]|phb_esp|asustada}. La criatura permanecerá {@condition Asustado [Frightened]|phb_esp|asustada} mientras pueda ver al objetivo o se mantenga a 60 pies de él. Mientras esté {@condition Asustado [Frightened]|phb_esp|asustada}, la criatura debe usar su movimiento para dirigirse al lugar más cercano desde el que no pueda ver al objetivo. Si la criatura se aleja más de 60 pies del objetivo y no puede verlo, ya no estará {@condition Asustado [Frightened]|phb_esp|asustada}, pero volverá a estarlo de nuevo si vuelve a ver al objetivo o se acerca 60 pies o menos de él."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Sympathy",
+					"name": "Simpatía",
 					"entries": [
-						"The enchantment causes the specified creatures to feel an intense urge to approach the target while within 60 feet of it or able to see it. When such a creature can see the target or comes within 60 feet of it, the creature must succeed on a Wisdom saving throw or use its movement on each of its turns to enter the area or move within reach of the target. When the creature has done so, it can't willingly move away from the target.",
-						"If the target damages or otherwise harms an affected creature, the affected creature can make a Wisdom saving throw to end the effect, as described below."
+						"El encantamiento hace que las criaturas del tipo elegido a 60 pies o menos del objetivo sientan una fuerte necesidad de acercarse a él. Cuando una de estas criaturas vea al objetivo o se acerque a menos de 60 pies del mismo, deberá tener éxito en una tirada de salvación de Sabiduría o utilizará su movimiento en cada turno para acercarse a él hasta que entre en el área o quede adyacente al objetivo. Una vez hecho esto, no podrá alejarse voluntariamente.",
+						"Si el objetivo daña o lastima de alguna manera a una criatura afectada, esta podrá realizar una tirada de salvación de Sabiduría para que termine el efecto, como se describe más abajo."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Ending the Effect",
+					"name": "Terminar el efecto",
 					"entries": [
-						"If an affected creature ends its turn while not within 60 feet of the target or able to see it, the creature makes a Wisdom saving throw. On a successful save, the creature is no longer affected by the target and recognizes the feeling of repugnance or attraction as magical. In addition, a creature affected by the spell is allowed another Wisdom saving throw every 24 hours while the spell persists."
+						"Si una criatura afectada por el conjuro termina su turno a más de 60 pies del objetivo o no es capaz de verlo, debe hacer una tirada de salvación de Sabiduría. Si tiene éxito, la criatura ya no estará afectada por el objetivo e identificará la naturaleza mágica del sentimiento de atracción o repulsión. Además, una criatura afectada por el conjuro podrá realizar otra tirada de salvación de Sabiduría cada 24 horas mientras su efecto persista."
 					]
 				},
-				"A creature that successfully saves against this effect is immune to it for 1 minute, after which time it can be affected again."
+				"Una criatura que tiene éxito en la tirada de salvación contra este efecto es inmune al conjuro durante 1 minuto, tiempo tras el cual podrá verse afectada de nuevo."
 			],
 			"conditionInflict": [
 				"frightened"
@@ -45397,7 +45397,7 @@
 			}
 		},
 		{
-			"name": "Arcane Eye",
+			"name": "Ojo arcano [Arcane Eye]",
 			"source": "PHB_Esp",
 			"page": 214,
 			"srd": true,
@@ -45406,49 +45406,41 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "action"
+					"unit": "acción"
 				}
 			],
 			"range": {
 				"type": "point",
 				"distance": {
-					"type": "feet",
+					"type": "pies",
 					"amount": 30
 				}
 			},
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a bit of bat fur"
+				"m": "un poco de pelo de murciélago"
 			},
 			"duration": [
 				{
 					"type": "timed",
 					"duration": {
-						"type": "hour",
+						"type": "hora",
 						"amount": 1
 					},
 					"concentration": true
 				}
 			],
 			"entries": [
-				"You create an invisible, magical eye within range that hovers in the air for the duration.",
-				"You mentally receive visual information from the eye, which has normal vision and {@sense darkvision} out to 30 feet. The eye can look in every direction.",
-				"As an action, you can move the eye up to 30 feet in any direction. There is no limit to how far away from you the eye can move, but it can't enter another plane of existence. A solid barrier blocks the eye's movement, but the eye can pass through an opening as small as 1 inch in diameter."
+				"Creas un ojo mágico invisible, capaz de levitar y que permanece hasta el final de la duración del conjuro.",
+				"Recibes mentalmente información visual del ojo, que posee vista normal y {@sense darkvision|visión en la oscuridad} hasta 30 pies. El ojo es capaz de mirar en cualquier dirección.",
+				"Como acción, puedes mover el ojo hasta 30 pies a una nueva localización. No hay un límite de distancia establecido entre tú y el ojo, pero no puede pasar a otro plano de existencia. Si una barrera sólida bloquea el movimiento del ojo, este es capaz de cruzar a través de orificios con un diámetro de, al menos, 1 pulgada (2,5 cm)."
 			],
 			"classes": {
 				"fromClassList": [
 					{
 						"name": "Wizard",
 						"source": "PHB_Esp"
-					},
-					{
-						"name": "Artificer",
-						"source": "UAArtificer"
-					},
-					{
-						"name": "Artificer (Revisited)",
-						"source": "UAArtificerRevisited"
 					},
 					{
 						"name": "Artificer",
@@ -45485,26 +45477,6 @@
 							"name": "Knowledge (PSA)",
 							"source": "PSA"
 						}
-					},
-					{
-						"class": {
-							"name": "Warlock",
-							"source": "PHB_Esp"
-						},
-						"subclass": {
-							"name": "Seeker (UA)",
-							"source": "UATheFaithful"
-						}
-					},
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB_Esp"
-						},
-						"subclass": {
-							"name": "Clockwork Soul (UA)",
-							"source": "UA2020SubclassesPt2"
-						}
 					}
 				]
 			},
@@ -45530,7 +45502,7 @@
 			]
 		},
 		{
-			"name": "Arcane Gate",
+			"name": "Puerta arcana [Arcane Gate]",
 			"source": "PHB_Esp",
 			"page": 214,
 			"level": 6,
@@ -45538,13 +45510,13 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "action"
+					"unit": "acción"
 				}
 			],
 			"range": {
 				"type": "point",
 				"distance": {
-					"type": "feet",
+					"type": "pies",
 					"amount": 500
 				}
 			},
@@ -45556,16 +45528,16 @@
 				{
 					"type": "timed",
 					"duration": {
-						"type": "minute",
+						"type": "minuto",
 						"amount": 10
 					},
 					"concentration": true
 				}
 			],
 			"entries": [
-				"You create linked teleportation portals that remain open for the duration. Choose two points on the ground that you can see, one point within 10 feet of you and one point within 500 feet of you. A circular portal, 10 feet in diameter, opens over each point. If the portal would open in the space occupied by a creature, the spell fails, and the casting is lost.",
-				"The portals are two-dimensional glowing rings filled with mist, hovering inches from the ground and perpendicular to it at the points you choose. A ring is visible only from one side (your choice), which is the side that functions as a portal.",
-				"Any creature or object entering the portal exits from the other portal as if the two were adjacent to each other; passing through a portal from the nonportal side has no effect. The mist that fills each portal is opaque and blocks vision through it. On your turn, you can rotate the rings as a bonus action so that the active side faces in a different direction."
+				"Creas dos portales de teletransporte enlazados. Estos permanecen abiertos hasta el final de la duración del conjuro. Elige dos puntos en el suelo que puedas ver, uno hasta a 10 pies de ti y otro hasta a 500 pies de ti. Un portal circular de 10 pies de diámetro se abre en cada punto. Si el portal fuera a utilizar un espacio ya ocupado por una criatura, el lanzamiento falla y el conjuro se pierde.",
+				"Los portales son anillos bidimensionales, brillantes y cubiertos de niebla, que levitan a pocas pulgadas del suelo de forma perpendicular a los puntos elegidos. El anillo solo es visible desde uno de los lados, a tu elección, que es el lado que funciona como portal.",
+				"Una criatura u objeto que entre por un portal sale por el otro como si estuvieran adyacentes entre sí. Pasar a través del lado no visible no tiene efecto. La niebla que cubre cada portal es opaca y bloquea la visión. En tu turno puedes rotar los anillos, utilizando una acción adicional, para que se encaren en una nueva dirección."
 			],
 			"miscTags": [
 				"SGT"
@@ -45588,7 +45560,7 @@
 			}
 		},
 		{
-			"name": "Arcane Lock",
+			"name": "Cerradura arcana [Arcane Lock]",
 			"source": "PHB_Esp",
 			"page": 215,
 			"srd": true,
@@ -45597,7 +45569,7 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "action"
+					"unit": "acción"
 				}
 			],
 			"range": {
@@ -45610,7 +45582,7 @@
 				"v": true,
 				"s": true,
 				"m": {
-					"text": "gold dust worth at least 25 gp, which the spell consumes",
+					"text": "polvo de oro con un valor de 25 po, que es consumido como parte del conjuro",
 					"cost": 2500,
 					"consume": true
 				}
@@ -45624,8 +45596,8 @@
 				}
 			],
 			"entries": [
-				"You touch a closed door, window, gate, chest, or other entryway, and it becomes locked for the duration. You and the creatures you designate when you cast this spell can open the object normally. You can also set a password that, when spoken within 5 feet of the object, suppresses this spell for 1 minute. Otherwise, it is impassable until it is broken or the spell is dispelled or suppressed. Casting knock on the object suppresses arcane lock for 10 minutes.",
-				"While affected by this spell, the object is more difficult to break or force open; the DC to break it or pick any locks on it increases by 10."
+				"Tocas una puerta, ventana, portón, cofre o entrada, quedando cerrado completamente, como con llave, hasta el final de la duración del conjuro. Al lanzarlo puedes decidir qué criaturas podrán abrir el objeto con normalidad. También puedes elegir una contraseña, que dicha en voz alta a 5 pies o menos del objeto suprime el conjuro durante 1 minuto. En cualquier otro caso, el objeto no se puede abrir a menos que sea destruido o se suprima o disipe el conjuro. Lanzar abrir en el objeto suprime cerradura arcana durante 10 minutos.",
+				"Mientras permanezca afectado por este conjuro, el objeto es más difícil de romper o forzar; la CD para romperlo o forzar la cerradura aumenta en 10."
 			],
 			"classes": {
 				"fromClassList": [
@@ -45635,25 +45607,11 @@
 					},
 					{
 						"name": "Artificer",
-						"source": "UAArtificer"
-					},
-					{
-						"name": "Artificer (Revisited)",
-						"source": "UAArtificerRevisited"
-					},
-					{
-						"name": "Artificer",
 						"source": "ERLW"
 					}
 				]
 			},
 			"races": [
-				{
-					"name": "Tiefling (Mammon)",
-					"source": "UAFiendishOptions",
-					"baseName": "Tiefling",
-					"baseSource": "PHB_Esp"
-				},
 				{
 					"name": "Tiefling (Mammon)",
 					"source": "MTF",
@@ -45675,7 +45633,7 @@
 			]
 		},
 		{
-			"name": "Armor of Agathys",
+			"name": "Armadura de Agathys [Armor of Agathys]",
 			"source": "PHB_Esp",
 			"page": 215,
 			"level": 1,
@@ -45683,7 +45641,7 @@
 			"time": [
 				{
 					"number": 1,
-					"unit": "action"
+					"unit": "acción"
 				}
 			],
 			"range": {
@@ -45695,26 +45653,26 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "a cup of water"
+				"m": "una taza de agua"
 			},
 			"duration": [
 				{
 					"type": "timed",
 					"duration": {
-						"type": "hour",
+						"type": "hora",
 						"amount": 1
 					}
 				}
 			],
 			"entries": [
-				"A protective magical force surrounds you, manifesting as a spectral frost that covers you and your gear. You gain 5 temporary hit points for the duration. If a creature hits you with a melee attack while you have these hit points, the creature takes 5 cold damage."
+				"Una fuerza mágica protectora te rodea, manifestándose como una escarcha espectral que te cubre por completo, incluido a tu equipo. Ganas 5 puntos de golpe temporales hasta el final de la duración del conjuro. Si una criatura te impacta con un ataque cuerpo a cuerpo mientras conservas estos puntos, esta sufre 5 de daño de frío."
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, both the temporary hit points and the cold damage increase by 5 for each slot level above 1st."
+						"Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 2 o más, tanto los puntos de golpe temporales como el daño de frío aumentan en 5 por cada nivel por encima de 1 que tenga el espacio que hayas empleado."
 					]
 				}
 			],
@@ -45735,50 +45693,13 @@
 							"source": "PHB_Esp"
 						},
 						"subclass": {
-							"name": "Conquest (UA)",
-							"source": "UAPaladin"
-						}
-					},
-					{
-						"class": {
-							"name": "Paladin",
-							"source": "PHB_Esp"
-						},
-						"subclass": {
-							"name": "Conquest v2 (UA)",
-							"source": "UARevisedClassOptions"
-						}
-					},
-					{
-						"class": {
-							"name": "Paladin",
-							"source": "PHB_Esp"
-						},
-						"subclass": {
 							"name": "Conquest",
 							"source": "XGE"
-						}
-					},
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB_Esp"
-						},
-						"subclass": {
-							"name": "Giant Soul (UA)",
-							"source": "UAGiantSoulSorcerer",
-							"subSubclass": "Frost"
 						}
 					}
 				]
 			},
 			"races": [
-				{
-					"name": "Tiefling (Levistus)",
-					"source": "UAFiendishOptions",
-					"baseName": "Tiefling",
-					"baseSource": "PHB_Esp"
-				},
 				{
 					"name": "Tiefling (Levistus)",
 					"source": "MTF",
@@ -61368,7 +61289,7 @@
 					"type": "entries",
 					"name": "Doors",
 					"entries": [
-						"All doors in the warded area are magically locked, as if sealed by an {@spell arcane lock} spell. In addition, you can cover up to ten doors with an illusion (equivalent to the illusory object function of the minor illusion spell) to make them appear as plain sections of wall."
+						"All doors in the warded area are magically locked, as if sealed by an {@spell Cerradura arcana [Arcane Lock]|phb_esp|cerradura arcana} spell. In addition, you can cover up to ten doors with an illusion (equivalent to the illusory object function of the minor illusion spell) to make them appear as plain sections of wall."
 					]
 				},
 				{
@@ -80587,31 +80508,31 @@
 			"data": {}
 		},
 		{
-			"name": "Antipathy/Sympathy",
+			"name": "Antipatía/Simpatía [Antipathy/Sympathy]",
 			"source": "PHB_Esp",
 			"data": {}
 		},
 		{
-			"name": "Arcane Eye",
+			"name": "Ojo arcano [Arcane Eye]",
 			"source": "PHB_Esp",
 			"data": {}
 		},
 		{
-			"name": "Arcane Gate",
+			"name": "Puerta arcana [Arcane Gate]",
 			"source": "PHB_Esp",
 			"data": {}
 		},
 		{
-			"name": "Arcane Lock",
+			"name": "Cerradura arcana [Arcane Lock]",
 			"source": "PHB_Esp",
 			"data": {}
 		},
 		{
-			"name": "Armor of Agathys",
+			"name": "Armadura de Agathys [Armor of Agathys]",
 			"source": "PHB_Esp",
 			"data": {
 				"Damage": "5",
-				"Damage Type": "Cold",
+				"Damage Type": "Frio",
 				"Higher Spell Slot Bonus": "5"
 			},
 			"shapedData": {
