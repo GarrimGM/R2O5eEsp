@@ -14733,7 +14733,7 @@
                             }, 
 							"Si normalmente eras capaz de lanzar conjuros, no podrás lanzarlos ni concentrarte en ellos mientras estés enfurecido.", 
 							"Tu furia dura 1 minuto, aunque acabará antes de este tiempo si quedas {@condition Inconsciente [Unconscious]|phb_esp|inconsciente}, o si terminas tu turno sin haber atacado a una criatura hostil o sin haber recibido daño desde tu turno anterior. Si lo deseas, también puedes finalizar tu furia empleando una acción adicional, durante tu turno.", 
-							"Una vez te hayas enfurecido tantas veces como el número indicado en la columna “n.° furias” de la tabla del bárbaro, tendrás que llevar a cabo un descanso largo antes de poder dejarte llevar por la furia de nuevo."
+							"Una vez te hayas enfurecido tantas veces como el número indicado en la columna \"n.° furias\" de la tabla del bárbaro, tendrás que llevar a cabo un descanso largo antes de poder dejarte llevar por la furia de nuevo."
 							]
                     }, {
                         "name": "Defensa sin Armadura",
@@ -14864,54 +14864,57 @@
                         "entries": ["Cuando llegas a nivel 20 encarnas el poder de la naturaleza salvaje. Tus puntuaciones de Fuerza y de Constitución aumentan en 4. Tu valor máximo para dichas puntuaciones pasa a ser 24."]
                     }
                 ]],
-            "subclassTitle": "Primal Path",
+            "subclassTitle": "Sendas primordiales",
             "subclasses": [{
-                    "name": "Path of the Berserker",
+                    "name": "Senda del Berserker [Path of the Berserker]",
                     "shortName": "Berserker",
-                    "source": "PHB",
+                    "source": "PHB_ESP",
                     "page": 49,
                     "srd": true,
                     "subclassFeatures": [[{
-                                "name": "Path of the Berserker",
-                                "entries": ["For some barbarians, rage is a means to an end—that end being violence. The Path of the Berserker is a path of untrammeled fury, slick with blood. As you enter the berserker's rage, you thrill in the chaos of battle, heedless of your own health or well-being.", {
+                                "name": "Senda del Berserker",
+                                "entries": ["Para ciertos bárbaros la furia es el medio para alcanzar un fin: la violencia. La Senda del Berserker se asienta en una rabia sin cortapisas, cubierta de sangre. Al dejarte llevar por la furia del berserker experimentarás el entusiasmo que proporciona el caos del combate, sin reparar en tu propia seguridad o bienestar.", {
                                         "type": "entries",
-                                        "name": "Frenzy",
-                                        "entries": ["Starting when you choose this path at 3rd level, you can go into a frenzy when you rage. If you do so, for the duration of your rage you can make a single melee weapon attack as a bonus action on each of your turns after this one. When your rage ends, you suffer one level of {@condition exhaustion}."]
+                                        "name": "Frenesí",
+                                        "entries": ["A partir del momento en el que escoges esta senda, a nivel 3, puedes abandonarte al frenesí cuando te enfurezcas. Si eliges hacer esto, mientras estés enfurecido podrás hacer un ataque con arma cuerpo a cuerpo como acción adicional durante cada uno de tus turnos (empezando por el siguiente a haberte enfurecido). A cambio, cuando tu furia termine sufrirás un nivel de {@condition Cansancio [Exhaustion]|phb_esp|cansancio}."]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Mindless Rage",
-                                        "entries": ["Beginning at 6th level, you can't be {@condition charmed} or {@condition frightened} while raging. If you are {@condition charmed} or {@condition frightened} when you enter your rage, the effect is suspended for the duration of the rage."]
+                                        "name": "Furia Irracional",
+                                        "entries": ["A partir de nivel 6, no puedes ser {@condition Asustado [Frightened]|phb_esp|asustado} ni {@condition Hechizado [Charmed]|phb_esp|hechizado} mientras estés enfurecido. Si estabas {@condition Asustado [Frightened]|phb_esp|asustado} o {@condition Hechizado [Charmed]|phb_esp|hechizado} antes de enfurecerte, dejarás de estarlo temporalmente, mientras dure la furia."]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Intimidating Presence",
-                                        "entries": ["Beginning at 10th level, you can use your action to frighten someone with your menacing presence. When you do so, choose one creature that you can see within 30 feet of you. If the creature can see or hear you, it must succeed on a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Charisma modifier) or be {@condition frightened} of you until the end of your next turn. On subsequent turns, you can use your action to extend the duration of this effect on the {@condition frightened} creature until the end of your next turn. This effect ends if the creature ends its turn out of line of sight or more than 60 feet away from you.", "If the creature succeeds on its saving throw, you can't use this feature on that creature again for 24 hours."]
+                                        "name": "Presencia Intimidante",
+                                        "entries": [
+										"A partir de nivel 10, puedes usar tu acción para asustar a alguien con tu mera presencia. Para hacer esto, elige a una criatura que puedas ver a 30 pies o menos de ti. Si dicha criatura puede verte u oírte, deberá superar una tirada de salvación de Sabiduría (CD 8 + tu bonificador por competencia + tu bonificador por Carisma) o estará {@condition Asustado [Frightened]|phb_esp|asustada} de ti hasta el final de tu siguiente turno. En cada uno de los turnos subsiguientes, podrás utilizar tu acción para alargar la duración de este efecto sobre la criatura {@condition Asustado [Frightened]|phb_esp|asustada} hasta el final de tu siguiente turno. Este efecto termina si la criatura termina su turno fuera de tu línea de visión o a 60 pies o más de ti.", 
+										"Si tiene éxito en su tirada de salvación, no podrás volver a usar este rasgo sobre esa criatura hasta que pasen 24 horas."
+										]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Retaliation",
-                                        "entries": ["Starting at 14th level, when you take damage from a creature that is within 5 feet of you. you can use your reaction to make a melee weapon attack against that creature."]
+                                        "name": "Represalia",
+                                        "entries": ["A partir de nivel 14, cuando recibas daño de una criatura que se encuentre a 5 pies o menos de ti, podrás utilizar tu reacción para hacer un ataque con arma cuerpo a cuerpo contra ella."]
                                     }
                                 ]
                             }
                         ]]
                 }, {
-                    "name": "Path of the Totem Warrior",
-                    "shortName": "Totem Warrior",
+                    "name": "Senda del Guerrero Totémico [Path of the Totem Warrior]",
+                    "shortName": "Guerrero Totémico",
                     "source": "PHB",
                     "page": 50,
                     "subclassFeatures": [[{
-                                "name": "Path of the Totem Warrior",
+                                "name": "Senda del Guerrero Totémico",
                                 "entries": ["The Path of the Totem Warrior is a spiritual journey, as the barbarian accepts a spirit animal as guide, protector, and inspiration. In battle, your totem spirit fills you with supernatural might, adding magical fuel to your barbarian rage.", "Most barbarian tribes consider a totem animal to be kin to a particular clan. In such cases, it is unusual for an individual to have more than one totem animal spirit, though exceptions exist.", {
                                         "type": "entries",
                                         "name": "Spirit Seeker",
