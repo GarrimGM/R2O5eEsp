@@ -13840,7 +13840,7 @@
 			]
 		},
 		{
-			"name": "Halfling",
+			"name": "Mediano",
 			"source": "PHB_Esp",
 			"page": 26,
 			"size": "S",
@@ -13850,6 +13850,21 @@
 					"dex": 2
 				}
 			],
+			"heightAndWeight": {
+                "baseHeight": 31,
+                "heightMod": "2d4",
+                "baseWeight": 35
+            },
+			"languageProficiencies": [
+				{
+					"common": true,
+					"halfling": true
+				}
+			],
+			"soundClip": {
+                "type": "internal",
+                "path": "races/halfling.mp3"
+            },
 			"entries": [
 				{
 					"name": "Age",
@@ -14202,13 +14217,6 @@
 							}
 						]
 					}
-				}
-			],
-			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/260/halfling.mp3",
-			"languageProficiencies": [
-				{
-					"common": true,
-					"halfling": true
 				}
 			]
 		},
