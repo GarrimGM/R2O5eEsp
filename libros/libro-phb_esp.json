@@ -10958,7 +10958,12 @@
 											"Como alto elfo, posees una mente aguda y un dominio de, como mínimo, los rudimentos de la magia. En muchos de los mundos de D&D hay dos tipos de altos ellos. Los elfos de uno de ellos (que incluye los elfos grises y del valle de Falcongris, los silvanesti de Dragonlance y los elfos solares de los Reinos Olvidados) son orgullosos y retraídos, pues se creen superiores a las razas no élficas e incluso a otros elfos. Los del otro tipo (que incluye los altos elfos de Falcongris, los qualinesti de Dragonlance y los elfos lunares de los Reinos Olvidados) se dejan ver y son más amables, siendo habitual encontrarlos junto a humanos e individuos de otras razas.",
 											"Los elfos solares de Faerûn, también conocidos como elfos dorados o elfos del amanecer, tienen la piel de color bronce y el cabello cobrizo, negro o rubio dorado, y sus ojos son dorados, plateados o negros. Los elfos lunares, igualmente llamados elfos plateados o elfos grises, son mucho más pálidos, con la piel como el alabastro o, a veces, tonos azules. Suelen tener el cabello de color blanco plateado, negro o azul, aunque los tonos rubios, morenos o rojizos no son raros. Sus ojos son verdes o azules con motas doradas."
 										]
-									},
+									}
+								]
+							},
+							{
+								"type": "section",
+								"entries": [
 									{
 										"type": "entries",
 										"entries": [
@@ -11126,7 +11131,12 @@
 											"Como elfo de los bosques, posees sentidos agudos y una buena intuición. Además, los veloces pies te permiten desplazarte rápida y sigilosamente a través de los bosques que son tu hogar. Esta categoría incluye los elfos salvajes (grugaeh) de Falcongris y los kalanesti de Dragonlance, así como las razas conocidas como elfos de los bosques en Falcongris y los Reinos Olvidados. En Faerûn, los elfos de los bosques (también llamados elfos salvajes, elfos verdes o elfos silvanos) son retraídos y no confían en los que no son elfos.",
 											"La piel de los elfos de los bosques suele tener un tono cobrizo, a veces con trazas de verde. Sus cabellos tienden a los tonos marrones y negros, aunque ocasionalmente son rubios o del color del cobre. Sus ojos son de color verde, marrón o avellana."
 										]
-									},
+									}
+								]
+							},
+							{
+								"type": "section",
+								"entries": [
 									{
 										"type": "entries",
 										"entries": [
@@ -11519,7 +11529,12 @@
 										"entries": [
 											"Como gnomo de los bosques, posees un talento natural para la ilusión y una rapidez y sigilo innatos. En los mundos de Dungeons & Dragons estos gnomos son difíciles de encontrar y reservados. Sc reúnen en comunidades ocultas en los bosques mágicos, recurriendo a las ilusiones y el engaño para ocultarse de las amenazas o cubrir su retirada si son detectados. Los gnomos de los bosques tienden a ser amistosos con otros habitantes de los bosques de naturaleza bondadosa, y consideran a los elfos y los feéricos buenos sus aliados más importantes. Estos gnomos también traban amistad con pequeños animales silvestres, a los que recurren para informarse sobre posibles amenazas a sus tierras."
 										]
-									},
+									}
+								]
+							},
+							{
+								"type": "section",
+								"entries": [
 									{
 										"type": "entries",
 										"entries": [
@@ -11739,7 +11754,12 @@
 										"entries": [
 											"Como gnomo de las rocas, posees un ingenio natural y eres más resistente que otros gnomos. La mayoría de los gnomos de los mundos de D&D pertenecen a esta subraza, como es el caso de los gnomos manitas de Dragonlance."
 										]
-									},
+									}
+								]
+							},
+							{
+								"type": "section",
+								"entries": [
 									{
 										"type": "entries",
 										"entries": [
@@ -14351,158 +14371,229 @@
 			"page": 42,
 			"size": "M",
 			"speed": 30,
+			"ability": [{
+                    "cha": 2,
+                    "int": 1
+                }
+            ],
+			"heightAndWeight": {
+                "baseHeight": 57,
+                "heightMod": "2d8",
+                "baseWeight": 110,
+                "weightMod": "2d4"
+            },
 			"darkvision": 60,
+			"traitTags": [
+				"Damage Resistance", 
+				"Uncommon Race", 
+				"Spellcasting"
+			],
+            "languageProficiencies": [{
+                    "common": true,
+                    "infernal": true
+                }
+            ],
+            "soundClip": {
+                "type": "internal",
+                "path": "races/tiefling.mp3"
+            },
 			"entries": [
 				{
-					"name": "Age",
+					"name": "Edad",
 					"type": "entries",
 					"entries": [
-						"Tieflings mature at the same rate as humans but live a few years longer."
+						"Los tieflings alcanzan la madurez al mismo ritmo que los humanos, pero viven unos pocos años más."
 					]
 				},
 				{
-					"name": "Alignment",
+					"name": "Alineamiento",
 					"type": "entries",
 					"entries": [
-						"Tieflings might not have an innate tendency toward evil, but many of them end up there. Evil or not, an independent nature inclines many tieflings toward a chaotic alignment."
+						"Los tieflings no poseen una tendencia innata hacia el mal, aunque muchos acaban abrazándolo. Malvados o no, su naturaleza independiente les hace inclinarse hacia el alineamiento caótico."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Size",
+					"name": "Tamaño",
 					"entries": [
-						"Tieflings are about the same size and build as humans. Your size is Medium."
+						"Los tieflings son de aproximadamente la misma altura y constitución que los humanos. Eres de tamaño Mediano"
 					]
 				},
 				{
-					"name": "Darkvision",
+					"name": "Visión en la Oscuridad",
 					"entries": [
-						"Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"Debido a tu sangre infernal, puedes ver bien en la oscuridad o con poca luz. Eres capaz de percibir hasta a 60 pies en luz tenue como si hubiera luz brillante, y esa misma distancia en la oscuridad como si hubiera luz tenue. Eso sí, no puedes distinguir colores en la oscuridad, solo tonos de gris."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Hellish Resistance",
+					"name": "Resistencia Infernal",
 					"entries": [
-						"You have resistance to fire damage."
+						"Posees resistencia al daño de fuego."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Languages",
+					"name": "Linaje Infernal",
 					"entries": [
-						"You can speak, read, and write Common and Infernal."
+						"Conoces el truco {@spell Taumaturgia [Thaumaturgy]|phb_esp|taumaturgia}. Cuando llegas a nivel 3, puedes lanzar el conjuro {@spell Reprensión infernal [Hellish Rebuke]|phb_esp|reprensión infernal} como conjuro de nivel 2 una vez usando este atributo y recuperas la capacidad para hacerlo tras realizar un descanso largo. Cuando alcanzas el nivel 5, eres capaz de lanzar el conjuro {@spell Oscuridad [Darkness]|phb_esp|oscuridad} una vez empleando este atributo y recuperas la capacidad para hacerlo tras realizar un descanso largo. El Carisma es tu aptitud mágica para estos conjuros."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Idiomas",
+					"entries": [
+						"Puedes hablar, leer y escribir en común e infernal."
 					],
 					"type": "entries"
 				}
 			],
-			"subraces": [
-				{
-					"ability": [
-						{
-							"cha": 2,
-							"int": 1
-						}
-					],
-					"entries": [
-						{
-							"name": "Infernal Legacy",
-							"entries": [
-								"You know the {@spell Taumaturgia [Thaumaturgy]|phb_esp|taumaturgia} cantrip. Once you reach 3rd level, you can cast the {@spell Reprensión infernal [Hellish Rebuke]|phb_esp|reprensión infernal} spell as a 2nd-level spell; you must finish a long rest in order to cast the spell again using this trait. Once you reach 5th level, you can also cast the {@spell Oscuridad [Darkness]|phb_esp|oscuridad} spell; you must finish a long rest in order to cast the spell again using this trait. Charisma is your spellcasting ability for these spells."
-							],
-							"type": "entries"
-						}
-					],
-					"traitTags": [
-						"Spellcasting"
-					],
-					"fluff": {
+			"fluff": {
+				"entries": [
+					{
+						"type": "section",
 						"entries": [
 							{
-								"type": "section",
+								"type": "entries",
 								"entries": [
+									"Ser recibido con miradas y susurros, ser víctima de la violencia y los insultos por la calle, observar desconfianza y miedo en todos los rostros; este es el destino de los tieflings. Y, para añadir sal a la herida, los tieflings saben que esto se debe a un pacto, sellado hace generaciones, que impregnó su linaje con la esencia de Asmodeo, amo de los Nueve Infiernos. La apariencia y naturaleza de los tieflings no son culpa suya, sino de un pecado ancestral, por el que tanto ellos como su descendencia deberán responder para siempre.",
 									{
 										"type": "entries",
+										"name": "Linaje infernal",
 										"entries": [
-											"To be greeted with stares and whispers, to suffer violence and insult on the street, to see mistrust and fear in every eye: this is the lot of the tiefling. And to twist the knife, tieflings know that this is because a pact struck generations ago infused the essence of Asmodeus-overlord of the Nine Hells-into their bloodline. Their appearance and their nature are not their fault but the result of an ancient sin, for which they and their children and their children's children will always be held accountable.",
+											"Los tieflings descienden de humanos y, en el sentido más amplio posible, aún tienen aspecto humano. Sin embargo, su legado infernal ha marcado su apariencia. Poseen largos cuernos, que adoptan una gran variedad de formas: algunos son enroscados, como los de una cabra, mientras que otros son altos y rectos, como los de una gacela, o describen curvas ascendentes, como los de un antílope. También tienen gruesas colas, de hasta cuatro o cinco pies de largo, que agitan o esconden entre las piernas cuando se enfadan o se ponen nerviosos. Sus caninos son muy afilados, y sus ojos no poseen pupila o esclerótica apreciable, siendo de un único color uniforme: negro, rojo, blanco, plata u oro. Su piel puede ser de cualquiera de los colores propios de los humanos, pero también de varias tonalidades de rojo. En lo que a su cabello respecta, este nace tras sus cuernos y suele ser oscuro: negro, marrón, rojo, azul o púrpura."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Autosuficientes y suspicaces",
+										"entries": [
+											"Los tieflings subsisten en pequeñas minorías que suelen encontrarse sobre todo en ciudades humanas, normalmente en los barrios más peligrosos, donde crecen para convertirse en estafadores, ladrones o líderes mafiosos. A veces viven, junto a otras minorías, en enclaves en los que son tratados con más respeto.",
+											"Dado que carecen de una tierra natal, los tieflings son conscientes de que tienen que forjar su propio camino y saben que deben ser fuertes si quieren sobrevivir. Recelan del primero que afirma ser su amigo, pero cuando los compañeros de un tiefling demuestran ser dignos de su confianza, este no duda en entregársela. Cuando un tiefling ofrece su lealtad, se convierte en un amigo fiel y en un aliado de por vida."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Nombres tieflings",
+										"entries": [
+											"Los nombres de las tieflings pueden clasificarse en tres grandes categorías. Por una parte, los nacidos en una cultura distinta a la suya suelen poseer nombres típicos de ella. Otros tienen nombres derivados del idioma infernal, heredados generación tras generación, que reflejan su legado diabólico. Y, por último, ciertos tieflings jóvenes adoptan un nombre que refleje una virtud u otro ideal, que intentan encarnar para así encontrar un lugar en el mundo. Para algunos, el nombre escogido representa una noble búsqueda, pero, para otros, se trata de un destino nefasto.",
 											{
-												"type": "entries",
-												"name": "Infernal Bloodline",
-												"entries": [
-													"Tieflings are derived from human bloodlines, and in the broadest possible sense, they still look human. However, their infernal heritage has left a clear imprint on their appearance. Tieflings have large horns that take any of a variety of shapes - some have curling horns like a ram, others have straight and tall horns like a gazelle's, and some spiral upward like an antelopes' horns. They have thick tails, four to five feet long, which lash or coil around their legs when they get upset or nervous. Their canine teeth are sharply pointed, and their eyes are solid colors black, red, white, silver, or gold with no visible sclera or pupil. Their skin tones cover the full range of human coloration, but also include various shades of red. Their hair, cascading down from behind their horns, is usually dark, from black or brown to dark red, blue, or purple."
-												]
-											},
-											{
-												"type": "entries",
-												"name": "Self-Reliant and Suspicious",
-												"entries": [
-													"Tieflings subsist in small minorities found mostly in human cities or towns, often in the roughest quarters of those places, where they grow up to be swindlers, thieves or crime lords. Sometimes they live among other minority populations in enclaves where they are treated with more respect.",
-													"Lacking a homeland, tieflings know that they have to make their own way in the world and that they have to be strong to survive. They are not quick to trust anyone who claims to be a friend, but when a tiefling's companions demonstrate that they trust him or her, a tiefling learns to extend the same trust to them. And once a tiefling gives someone loyalty, the tiefling is a friend or ally for life."
-												]
-											},
-											{
-												"type": "entries",
-												"name": "Tiefling Names",
-												"entries": [
-													"Tiefling names fall into three broad categories. Tieflings born into another culture typically have names reflective of that culture. Some have names derived from the infernal language passed down through generations, and reflect their fiendish heritage. And some younger tieflings striving to find a place in the world, adopt a name that signifies a virtue or other concept and then try to embody that concept. For some, the chosen name is a quest. For others, its a grim destiny.",
+												"type": "list",
+												"style": "list-hang-notitle",
+												"items": [
 													{
-														"type": "list",
-														"style": "list-hang-notitle",
-														"items": [
-															{
-																"type": "item",
-																"name": "Male Infernal Names:",
-																"entry": "Akmenos, Amnon, Harahas, Ekernon, Tados, Kairon, Leucis, Melech, Morthos, Pelaios, Skamos, Therai"
-															},
-															{
-																"type": "item",
-																"name": "Female Infernal Names:",
-																"entry": "Akra, Anakis, Bryseis, Criella, Ea, Kallista, Lerissa, Makaria, Nemeia, Phelaia, Rieta"
-															},
-															{
-																"type": "item",
-																"name": "Virtue Names:",
-																"entry": "Art, Carrion, Chant, Creed, Despair, Fear, Glory, Hope, Ideal, Music, Nowhere, Poetry, Quest, Random, Reverence, Sorrow, Torment, Weary"
-															}
+														"type": "item",
+														"name": "Nombres infernales masculinos:",
+														"entry": "Akmenos, Amnon, Harahas, Ekernon, Tados, Kairon, Leucis, Melech, Morthos, Pelaios, Skamos, Therai"
+													},
+													{
+														"type": "item",
+														"name": "Nombres infernales femeninos:",
+														"entry": "Akra, Anakis, Bryseis, Criella, Ea, Kallista, Lerissa, Makaria, Nemeia, Phelaia, Rieta"
+													},
+													{
+														"type": "item",
+														"name": "Nombres \"de virtud\"",
+														"entry": "Apertura, Arte, Azar, Cántico, Cansancio, Carroña, Credo, Desesperación, Esperanza, Excelencia, Gloria, Ideal, Miedo, Misión, Música, Ningún lugar, Pena, Poesía, Reverencia, Temeridad, Tormento."
+													}
+												]
+											}
+										]
+									},
+									{
+										"type": "inset",
+										"name": "Desconfianza mutua",
+										"entries": [
+											"La gente tiende a mostrarse suspicaz con los tieflings, pues asumen que su sangre infernal ha dejado marca no solo en su apariencia, sino también en su personalidad y su brújula moral. Los tenderos no pierden de vista sus productos cuando los tieflings entran en sus establecimientos, la guardia de la ciudad los vigila estrechamente durante un tiempo y los demagogos les culpan de los sucesos inexplicables.",
+											"Sin embargo, la realidad es que la sangre de los tieflings no tiene prácticamente ningún efecto apreciable en su personalidad. En cambio, años de lidiar con la desconfianza dejan marca en la mayoría de los miembros de esta raza, que responden a ella de formas diferentes. Algunos eligen encarnar los estereotipos malvados de los que se les acusa, mientras que otros se comportan moralmente. La mayoría simplemente andan con cuidado, sabiendo cómo los demás van a reaccionar. Tras convivir con la suspicacia durante su juventud, la mayor parte de los tieflings desarrollan la habilidad para superar los prejuicios del resto de las personas mediante el encanto o la intimidación."
+										]
+									},
+									{
+										"type": "inset",
+										"name": "Razas poco comunes",
+										"entries": [
+											"Esta raza y el resto de las razas en esta lista son poco comunes. No existen en todos los mundos de D&D, e incluso donde se encuentran, están menos extendidos que los enanos, elfos, medianos y humanos. En las ciudades cosmopolitas del multiverso D&D, la mayoría de las personas apenas miran a los miembros de las razas más exóticas. Pero las pequeñas ciudades y pueblos que salpican el campo son diferentes. La gente común no está acostumbrada a ver miembros de estas razas, y reaccionan en consecuencia.",
+											{
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Dracónido",
+														"entries": [
+															"Es fácil suponer que un dracónido es un monstruo, especialmente si sus escamas demuestran una herencia cromática. Sin embargo, a menos que el dracónido comience a escupir fuego y a causar destrucción, es probable que las personas respondan con precaución en lugar de un miedo absurdo."
 														]
 													}
 												]
 											},
 											{
-												"type": "inset",
-												"name": "Mutual Mistrust",
+												"type": "entries",
 												"entries": [
-													"People tend to be suspicious of tieflings, assuming that their infernal heritage has left its mark on their personality and morality, not just their appearance. Shopkeepers keep a close eye on their goods when tieflings enter their stores, the town watch might follow a tiefling around for a while, and demagogues blame tieflings for strange happenings. The reality, though, is that a tiefling's bloodline doesn't affect his or her personality to any great degree. Years of dealing with mistrust does leave its mark on most tieflings, and they respond to it in different ways. Some choose to live up to the wicked stereotype, but others are virtuous. Most are simply very aware of how people respond to them. After dealing with this mistrust throughout youth, a tiefling often develops the ability to overcome prejudice through charm or intimidation."
+													{
+														"type": "entries",
+														"name": "Gnomo",
+														"entries": [
+															"Los gnomos no parecen una amenaza y pueden desarmar rápidamente cualquier sospecha mediante su buen humor. La gente común a menudo siente curiosidad por los gnomos, probablemente nunca hayan visto uno antes, pero rara vez se comportan de forma hostil o temerosa."
+														]
+													}
+												]
+											},
+											{
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Semielfo",
+														"entries": [
+															"Aunque muchas personas nunca han visto a un semielfo, prácticamente todos saben que existen. La llegada de un extraño semielfo es seguida por chismes a la espalda del semielfo y miradas recelosas a través de la sala común, en lugar de cualquier confrontación o curiosidad abierta."
+														]
+													}
+												]
+											},
+											{
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Semiorco",
+														"entries": [
+															"Por lo general, es seguro asumir que un semiorco es beligerante y se cabrea rápidamente, por lo que las personas se miran alrededor de un semiorco desconocido. Los comerciantes pueden esconder disimuladamente bienes valiosos o frágiles cuando entra un semiorco, y la gente se va lentamente de una taberna, suponiendo que pronto se desatará una pelea."
+														]
+													}
+												]
+											},
+											{
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Tiefling",
+														"entries": [
+															"Los semiorcos son recibidos con una precaución práctica, pero los tieflings son objeto de un miedo sobrenatural. El mal de su herencia es claramente visible en su físico, y en lo que respecta a la mayoría de las personas, un tiefling bien podría ser un demonio llegado directamente de los Nueve Infiernos. Las personas pueden hacer simbolos de protección cuando se acerca un tiefling, cruzar la calle para evitar pasar cerca o cerrar las puertas de las tiendas antes de que pueda entrar un tiefling."
+														]
+													}
 												]
 											}
 										]
 									}
 								]
 							}
-						],
-						"uncommon": true,
-						"images": [
-							{
-								"type": "image",
-								"href": {
-									"type": "internal",
-									"path": "races/Tiefling.png"
-								}
-							}
 						]
-					},
-					"srd": true
-				}
-			],
-			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/488/tiefling.mp3",
-			"traitTags": [
-				"Damage Resistance",
-				"Uncommon Race"
-			],
-			"languageProficiencies": [
+					}
+				],
+				"uncommon": true,
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "races/Tiefling.png"
+						}
+					}
+				]
+			},
+			"subraces": [
 				{
-					"common": true,
-					"infernal": true
+					"srd": true
 				}
 			]
 		}
