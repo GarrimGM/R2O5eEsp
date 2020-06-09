@@ -6819,18 +6819,19 @@
 						},
 						{
 							"type": "section",
-							"name": "Movement",
+							"name": "Movimiento",
 							"page": 181,
 							"entries": [
-								"Swimming across a rushing river, sneaking down a dungeon corridor, scaling a treacherous mountain slope all sorts of movement play a key role in D&D adventures.",
-								"The DM can summarize the adventurers' movement without calculating exact distances or travel times: \"You travel through the forest and find the dungeon entrance late in the evening of the third day.\" Even in a dungeon, particularly a large dungeon or a cave network, the DM can summarize movement between encounters: \"After killing the guardian at the entrance to the ancient dwarven stronghold, you consult your map, which leads you through miles of echoing corridors to a chasm bridged by a narrow stone arch.\"Sometimes it's important, though, to know how long it takes to get from one spot to another, whether the answer is in days, hours, or minutes. The rules for determining travel time depend on two factors: the speed and travel pace of the creatures moving and the terrain they're moving over.",
+								"Cruzar nadando un río revuelto, moverse sigilosamente por el corredor de una mazmorra, escalar la traicionera ladera de una montaña... El movimiento juega un papel fundamental en las aventuras de D&D.",
+								"Muchas veces el DM resumirá estos viajes en lugar de calcular exactamente las distancias o el tiempo necesario para recorrerlas: \"Atravesáis el bosque y encontráis la entrada a la mazmorra al anochecer del tercer día de viaje\". El DM podría resumir el movimiento entre encuentros o incluso en mazmorras, especialmente si se trata de grandes construcciones o complejos de cuevas: \"Tras matar al guardián de la entrada de la antigua fortificación enana, consultáis vuestro mapa, que os lleva, tras atravesar millas de pasadizos acompañados por el eco de vuestros pasos, a un estrecho área de piedra que cruza un abismo\".",
+								"Con todo, a veces será importante saber cuánto tiempo es necesario para viajar de un punto a otro, ya sea la respuesta días, horas o minutos. Las reglas para determinar el tiempo que precisa un viaje dependen de dos factores: la velocidad y el ritmo de viaje de las criaturas que se están desplazando y el tipo de terreno por el que se están moviendo.",
 								{
 									"type": "entries",
-									"name": "Speed",
+									"name": "Velocidad",
 									"page": 181,
 									"entries": [
-										"Every character and monster has a speed, which is the distance in feet that the character or monster can walk in 1 round. This number assumes short bursts of energetic movement in the midst of a life-threatening situation.",
-										"The following rules determine how far a character or monster can move in a minute, an hour, or a day.",
+										"Todos las personajes y monstruos tienen una velocidad, que es la distancia en pies que pueden caminar en un asalto. Este número asume movimientos explosivos pero breves, pues se encuentran en una situación que pone en peligro sus vidas.",
+										"Las siguientes reglas determinan cuánto puede desplazarse una criatura en un minuto, una hora o un día.",
 										{
 											"type": "entries",
 											"data": {
@@ -8373,12 +8374,10 @@
 								},
 								{
 									"type": "entries",
-									"name": "Rituals",
+									"name": "Rituales",
 									"page": 201,
 									"entries": [
-										"Certain spells have a special tag: ritual. Such a spell can be cast following the normal rules for spellcasting, or the spell can be cast as a ritual. The ritual version of a spell takes 10 minutes longer to cast than normal.",
-										"It also doesn't expend a spell slot, which means the ritual version of a spell can't be cast at a higher level.",
-										"To cast a spell as a ritual, a spellcaster must have a feature that grants the ability to do so. The cleric and the druid, for example, have such a feature. The caster must also have the spell prepared or on his or her list of spells known, unless the character's ritual feature specifies otherwise, as the wizard's does."
+										"Algunos conjuros están etiquetados con la palabra \"ritual\". Se puede lanzar dichos conjuros utilizando las reglas habituales o de forma ritual. Lanzar un conjuro de forma ritual precisa de 10 minutos más del tiempo normal, pero, a cambio, no se gasta ningún espacio de conjuro. Por tanto, no se puede lanzar la versión ritual de un conjuro a un nivel superior al de este. Para poder usar un conjuro de forma ritual, el lanzador debe tener algún rasgo que se lo permita, como es el caso de, por ejemplo, clérigos y druidas, entre otros. Además, el lanzador deberá haber preparado el conjuro o tenerlo en su lista de conjuros conocidos, salvo si el rasgo que otorga esta capacidad especifica lo contrario (como ocurre con el mago)."
 									]
 								}
 							]
@@ -14614,7 +14613,7 @@
                 "weapons": ["simple", "martial"],
                 "skills": [{
                         "choose": {
-                            "from": ["animal handling", "athletics", "intimidation", "nature", "perception", "survival"],
+                            "from": ["animal handling|Trato con Animales", "athletics|Atletismo", "intimidation|Intimidación", "nature|Naturaleza", "perception|Percepción", "survival|Supervivencia"],
                             "count": 2
                         }
                     }
@@ -14911,59 +14910,48 @@
                 }, {
                     "name": "Senda del Guerrero Totémico [Path of the Totem Warrior]",
                     "shortName": "Guerrero Totémico",
-                    "source": "PHB",
+                    "source": "PHB_ESP",
                     "page": 50,
                     "subclassFeatures": [[{
                                 "name": "Senda del Guerrero Totémico",
-                                "entries": ["The Path of the Totem Warrior is a spiritual journey, as the barbarian accepts a spirit animal as guide, protector, and inspiration. In battle, your totem spirit fills you with supernatural might, adding magical fuel to your barbarian rage.", "Most barbarian tribes consider a totem animal to be kin to a particular clan. In such cases, it is unusual for an individual to have more than one totem animal spirit, though exceptions exist.", {
+                                "entries": [
+									"La Senda del Guerrero Totémico es un viaje espiritual, mediante el cual el bárbaro acepta a un espíritu animal como guía, protector e inspiración. Durante el combate, tu espíritu totémico te llena de poder sobrenatural, añadiendo energías mágicas a tu furia de bárbaro.", 
+									"La mayoría de las tribus bárbaras consideran que cada animal totémico está unido a un clan concreto. En estas tribus no suele ser frecuente ver bárbaros con más de un espíritu animal como tótem, aunque siempre hay excepciones.", 
+									{
                                         "type": "entries",
-                                        "name": "Spirit Seeker",
-                                        "entries": ["Yours is a path that seeks attunement with the natural world, giving you a kinship with beasts. At 3rd level when you adopt this path, you gain the ability to cast the {@spell beast sense} and {@spell speak with animals} spells, but only as rituals, as described in {@book chapter 10|PHB|10|rituals}."]
+                                        "name": "Buscador de Espíritus",
+                                        "entries": [
+											"Tu senda busca la armonía con el mundo natural, por lo que posees un vínculo especial con las bestias. A nivel 3, cuando adoptes esta senda, serás capaz de lanzar los conjuros {@spell Hablar con los animales [Speak with Animals]|phb_esp|hablar con los animales} y {@spell Sentidos de la bestia [Beast Sense]|phb_esp|sentidos de la bestia}, pero únicamente como rituales, tal y como se describe en el {@book capítulo 10: \"Lanzamiento de conjuros\"|phbesp|10|rituales|0}."
+											]
                                     }, {
                                         "type": "entries",
-                                        "name": "Totem Spirit",
-                                        "entries": ["At 3rd level, when you adopt this path, you choose a totem spirit and gain its feature. You must make or acquire a physical totem object—an amulet or similar adornment—that incorporates fur or feathers, claws, teeth, or bones of the totem animal. At your option, you also gain minor physical attributes that are reminiscent of your totem spirit. For example, if you have a bear totem spirit, you might be unusually hairy and thick-skinned, or if your totem is the eagle, your eyes turn bright yellow.", "Your totem animal might be an animal related to those listed here but more appropriate to your homeland. For example, you could choose a hawk or vulture in place of an eagle.", {
+                                        "name": "Espíritu Totémico",
+                                        "entries": [
+										"A nivel 3, cuando escoges esta senda, también eliges un espíritu totémico y obtienes su rasgo asociado. Debes fabricar o hacerte con un tótem físico (un amuleto o adorno similar) confeccionado a partir de pelaje, plumas, garras, dientes o huesos del animal totémico. Si quieres, también puedes desarrollar pequeños rasgos físicos que recuerden a tu espíritu totémico. De este modo, si tu espíritu totémico es un oso, podrías ser especialmente velludo o tener la piel gruesa, mientras que, si tu tótem es el águila, quizá tus ojos se vuelvan de un color amarillo brillante.", 
+										"Tu animal totémico podría no ser exactamente uno de los enumerados a continuación, sino uno emparentado con alguno de ellos, pero más apropiado a tu tierra natal.", 
+										"Podrías, por ejemplo, elegir un halcón o buitre en vez de un águila.",
+										{
                                                 "type": "entries",
                                                 "entries": [{
                                                         "type": "entries",
-                                                        "name": "Bear",
-                                                        "entries": ["While raging, you have resistance to all damage except psychic damage. The spirit of the bear makes you tough enough to stand up to any punishment."]
+                                                        "name": "Águila",
+                                                        "entries": ["Mientras estés enfurecido y no lleves armadura pesada, el resto de las criaturas tendrán desventaja en sus ataques de oportunidad contra ti y podrás usar la acción de {@action Correr [Dash]|phb_esp|Correr} como acción adicional durante tu turno. El espíritu del águila te convierte en un depredador capaz de moverse sin dificultad en medio del combate."]
                                                     }
                                                 ]
                                             }, {
                                                 "type": "entries",
                                                 "entries": [{
                                                         "type": "entries",
-                                                        "name": "Eagle",
-                                                        "entries": ["While you're raging and aren't wearing heavy armor, other creatures have disadvantage on opportunity attack rolls against you, and you can use the {@action Dash} action as a bonus action on your turn. The spirit of the eagle makes you into a predator who can weave through the fray with ease."]
+                                                        "name": "Lobo",
+                                                        "entries": ["Mientras estés enfurecido, tus aliados tendrán ventaja en las tiradas de ataque cuerpo a cuerpo contra cualquier criatura que te sea hostil y esté a 5 pies o menos de ti. El espíritu del lobo te transforma en un líder de cazadores."]
                                                     }
                                                 ]
                                             }, {
                                                 "type": "entries",
                                                 "entries": [{
                                                         "type": "entries",
-                                                        "name": "Elk",
-                                                        "entries": ["While you're raging and aren't wearing heavy armor, your walking speed increases by 15 feet. The spirit of the elk makes you extraordinarily swift."],
-                                                        "source": "SCAG",
-                                                        "page": 122
-                                                    }
-                                                ]
-                                            }, {
-                                                "type": "entries",
-                                                "entries": [{
-                                                        "type": "entries",
-                                                        "name": "Tiger",
-                                                        "entries": ["While raging, you can add 10 feet to your long jump distance and 3 feet to your high jump distance. The spirit of the tiger empowers your leaps."],
-                                                        "source": "SCAG",
-                                                        "page": 122
-                                                    }
-                                                ]
-                                            }, {
-                                                "type": "entries",
-                                                "entries": [{
-                                                        "type": "entries",
-                                                        "name": "Wolf",
-                                                        "entries": ["While you're raging, your friends have advantage on melee attack rolls against any creature within 5 feet of you that is hostile to you. The spirit of the wolf makes you a leader of hunters."]
+                                                        "name": "Oso",
+                                                        "entries": ["Mientras estés enfurecido, posees resistencia contra todo el daño, excepto el psíquico. El espíritu del oso te da la dureza necesaria para aguantar cualquier castigo."]
                                                     }
                                                 ]
                                             }
@@ -14974,49 +14962,29 @@
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Aspect of the Beast",
-                                        "entries": ["At 6th level, you gain a magical benefit based on the totem animal of your choice. You can choose the same animal you selected at 3rd level or a different one.", {
+                                        "name": "Semblanza de la Bestia",
+                                        "entries": ["A nivel 6 recibes un poder mágico basado en un tótem animal de tu elección. Puedes volver a escoger el mismo animal que elegiste a nivel 3 o uno distinto.", {
                                                 "type": "entries",
                                                 "entries": [{
                                                         "type": "entries",
-                                                        "name": "Bear",
-                                                        "entries": ["You gain the might of a bear. Your carrying capacity (including maximum load and maximum lift) is doubled, and you have advantage on Strength checks made to push, pull, lift, or break objects."]
+                                                        "name": "Águila",
+                                                        "entries": ["Obtienes la agudeza visual de un águila. Puedes ver hasta a 1 milla de distancia sin problemas y eres capaz de distinguir incluso los detalles más pequeños de los objetos que estén a 100 pies o menos de ti. Además, no sufres desventaja al hacer pruebas de Sabiduría ({@skill Perception|phb_esp|Percepción) con luz tenue."]
                                                     }
                                                 ]
                                             }, {
                                                 "type": "entries",
                                                 "entries": [{
                                                         "type": "entries",
-                                                        "name": "Eagle",
-                                                        "entries": ["You gain the eyesight of an eagle. You can see up to 1 mile away with no difficulty, able to discern even fine details as though looking at something no more than 100 feet away from you. Additionally, dim light doesn't impose disadvantage on your Wisdom ({@skill Perception}) checks."]
+                                                        "name": "Lobo",
+                                                        "entries": ["Consigues el instinto para la caza de un lobo. Eres capaz de rastrear a otras criaturas mientras viajas a un ritmo rápido y puedes moverte con sigilo mientras viajas a un ritmo normal (el {@book capítulo 8: \"Aventuras\"|phbesp|8|velocidad|0} contiene las reglas relativas al ritmo de viaje)."]
                                                     }
                                                 ]
                                             }, {
                                                 "type": "entries",
                                                 "entries": [{
                                                         "type": "entries",
-                                                        "name": "Elk",
-                                                        "entries": ["Whether mounted or on foot, your travel pace is doubled, as is the travel pace of up to ten companions while they're within 60 feet of you and you're not {@condition incapacitated}. The elk spirit helps you roam far and fast."],
-                                                        "source": "SCAG",
-                                                        "page": 122
-                                                    }
-                                                ]
-                                            }, {
-                                                "type": "entries",
-                                                "entries": [{
-                                                        "type": "entries",
-                                                        "name": "Tiger",
-                                                        "entries": ["You gain proficiency in two skills from the following list: {@skill Athletics}, {@skill Acrobatics}, {@skill Stealth}, and {@skill Survival}. The cat spirit hones your survival instincts."],
-                                                        "source": "SCAG",
-                                                        "page": 122
-                                                    }
-                                                ]
-                                            }, {
-                                                "type": "entries",
-                                                "entries": [{
-                                                        "type": "entries",
-                                                        "name": "Wolf",
-                                                        "entries": ["You gain the hunting sensibilities of a wolf. You can track other creatures while traveling at a fast pace, and you can move stealthily while traveling at a normal pace."]
+                                                        "name": "Oso",
+                                                        "entries": ["Obtienes el poderío de un oso. Tu capacidad de carga se duplica, tanto para el peso que puedes llevar encima como para el que puedes empujar, arrastrar o levantar. Además, tienes ventaja en las pruebas de Fuerza hechas para levantar, romper, empujar o tirar de objetos."]
                                                     }
                                                 ]
                                             }
@@ -15027,640 +14995,43 @@
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Spirit Walker",
-                                        "entries": ["At 10th level, you can cast the {@spell commune with nature} spell, but only as a ritual. When you do so, a spiritual version of one of the animals you chose for Totem Spirit or Aspect of the Beast appears to you to convey the information you seek."]
+                                        "name": "Caminante Espiritual",
+                                        "entries": [
+											"A nivel 10 eres capaz de lanzar el conjuro {@spell Comunión con la naturaleza [Commune with Nature]|phb_esp|comunión con la naturaleza}, pero solo como ritual. Cuando lo hagas, será una versión espiritual de uno de los animales que escogiste para los rasgos Espíritu Totémico o Semblanza de la Bestia quien te comunique la información que buscas."
+										]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Totemic Attunement",
-                                        "entries": ["At 14th level, you gain a magical benefit based on a totem animal of your choice. You can choose the same animal you selected previously or a different one.", {
+                                        "name": "Armonía Totémica",
+                                        "entries": ["A nivel 14 recibes un poder mágico basado en un tótem animal de tu elección, Puedes volver a escoger uno de los animales que elegiste anteriormente u otro distinto.", {
                                                 "type": "entries",
                                                 "entries": [{
                                                         "type": "entries",
-                                                        "name": "Bear",
-                                                        "entries": ["While you're raging, any creature within 5 feet of you that's hostile to you has disadvantage on attack rolls against targets other than you or another character with this feature. An enemy is immune to this effect if it can't see or hear you or if it can't be {@condition frightened}."]
+                                                        "name": "Águila",
+                                                        "entries": ["Mientras estés enfurecido, tendrás una velocidad volando igual a tu velocidad caminando actual. Esta capacidad se basa en impulsos breves, por lo que caerás si terminas tu turno en el aire y no hay nada que te sujete."]
                                                     }
                                                 ]
                                             }, {
                                                 "type": "entries",
                                                 "entries": [{
                                                         "type": "entries",
-                                                        "name": "Eagle",
-                                                        "entries": ["While raging, you have a flying speed equal to your current walking speed. This benefit works only in short bursts; you fall if you end your turn in the air and nothing else is holding you aloft."]
+                                                        "name": "Lobo",
+                                                        "entries": ["Mientras estés enfurecido, cuando impactes a una criatura Grande o más pequeña con un ataque con arma cuerpo a cuerpo durante tu turno, podrás usar una acción adicional para {@condition Derribado [Prone]|phb_esp|derribarla}."]
                                                     }
                                                 ]
                                             }, {
                                                 "type": "entries",
                                                 "entries": [{
                                                         "type": "entries",
-                                                        "name": "Elk",
-                                                        "entries": ["While raging, you can use a bonus action during your move to pass through the space of a Large or smaller creature. That creature must succeed on a Strength saving throw (DC 8 + your Strength bonus + your proficiency bonus) or be knocked {@condition prone} and take bludgeoning damage equal to {@dice 1d12} + your Strength modifier."],
-                                                        "source": "SCAG",
-                                                        "page": 122
-                                                    }
-                                                ]
-                                            }, {
-                                                "type": "entries",
-                                                "entries": [{
-                                                        "type": "entries",
-                                                        "name": "Tiger",
-                                                        "entries": ["While you're raging, if you move at least 20 feet in a straight line toward a Large or smaller target right before making a melee weapon attack against it, you can use a bonus action to make an additional melee weapon attack against it."],
-                                                        "source": "SCAG",
-                                                        "page": 122
-                                                    }
-                                                ]
-                                            }, {
-                                                "type": "entries",
-                                                "entries": [{
-                                                        "type": "entries",
-                                                        "name": "Wolf",
-                                                        "entries": ["While you're raging, you can use a bonus action on your turn to knock a Large or smaller creature {@condition prone} when you hit it with melee weapon attack."]
+                                                        "name": "Oso",
+                                                        "entries": ["Mientras estés enfurecido, cualquier criatura que te sea hostil que se encuentre a 5 pies o menos de ti tendrá desventaja en las tiradas de ataque contra objetivos que no seáis ni tu ni otro personaje con este rasgo. Los enemigos que no puedan verte ni oírte o no puedan ser {@condition Asustado [Frightened]|phb_esp|asustados} son inmunes a este efecto."]
                                                     }
                                                 ]
                                             }
                                         ]
-                                    }
-                                ]
-                            }
-                        ]]
-                }, {
-                    "name": "Path of the Battlerager",
-                    "shortName": "Battlerager",
-                    "source": "SCAG",
-                    "page": 121,
-                    "subclassFeatures": [[{
-                                "name": "Path of the Battlerager",
-                                "entries": ["Known as Kuldjargh (literally \"axe idiot\") in Dwarvish, battleragers are dwarf followers of the gods of war and take the Path of the Battlerager. They specialize in wearing bulky, {@item spiked armor|scag} and throwing themselves into combat, striking with their body itself and giving themselves over to the fury of battle.", {
-                                        "type": "entries",
-                                        "name": "Restriction - Dwarves Only",
-                                        "entries": ["Only dwarves can follow the Path of the Battlerager. The battlerager fills a particular niche in dwarven society and culture.", "Your DM can lift this restriction to better suit the campaign. The restriction exists for the Forgotten Realms. It might not apply to your DM's setting or your DM's version of the Realms."]
-                                    }, {
-                                        "type": "entries",
-                                        "name": "Battlerager Armor",
-                                        "entries": ["When you choose this path at 3rd level, you gain the ability to use {@item spiked armor|scag} as a weapon.", "While you are wearing {@item spiked armor|scag} and are raging, you can use a bonus action to make one melee weapon attack with your armor spikes at a target within 5 feet of you. If the attack hits, the spikes deal {@dice 1d4} piercing damage. You use your Strength modifier for the attack and damage rolls.", "Additionally, when you use the {@action Attack} action to grapple a creature, the target takes 3 piercing damage if your grapple check succeeds."]
-                                    }
-                                ]
-                            }
-                        ], [{
-                                "entries": [{
-                                        "type": "entries",
-                                        "name": "Reckless Abandon",
-                                        "entries": ["Beginning at 6th level, when you use Reckless Attack while raging, you also gain temporary hit points equal to your Constitution modifier (minimum of 1). They vanish if any of them are left when your rage ends."]
-                                    }
-                                ]
-                            }
-                        ], [{
-                                "entries": [{
-                                        "type": "entries",
-                                        "name": "Battlerager Charge",
-                                        "entries": ["Beginning at 10th level, you can take the {@action Dash} action as a bonus action while you are raging."]
-                                    }
-                                ]
-                            }
-                        ], [{
-                                "entries": [{
-                                        "type": "entries",
-                                        "name": "Spiked Retribution",
-                                        "entries": ["Starting at 14th level, when a creature within 5 feet of you hits you with a melee attack, the attacker takes 3 piercing damage if you are raging, aren't {@condition incapacitated}, and are wearing {@item spiked armor|scag}."]
-                                    }
-                                ]
-                            }
-                        ]]
-                }, {
-                    "name": "Path of the Ancestral Guardian (UA)",
-                    "shortName": "Ancestral Guardian (UA)",
-                    "source": "UABarbarianPrimalPaths",
-                    "page": 1,
-                    "isReprinted": true,
-                    "subclassFeatures": [[{
-                                "name": "Path of the Ancestral Guardian",
-                                "entries": ["Some barbarians hail from cultures that revere their ancestors. These tribes teach that the warriors of the past linger on in the world as mighty spirits who can guide and protect the living. When barbarians who follow this path rage, they cross the barrier into the spirit world and call on these guardian spirits for aid.", "Barbarians who draw on their ancestral guardians fight to protect their tribes and their allies. With the spirits' help, they can hinder their foes even as they strike powerful blows against them.", "In order to cement ties to their ancestral guardians, barbarians who follow this path cover themselves in elaborate tattoos that celebrate their ancestors' deeds. These tattoos tell epic sagas of victories against terrible monsters and other fearsome rivals.", {
-                                        "type": "entries",
-                                        "name": "Ancestral Protectors",
-                                        "entries": ["Starting when you choose this path at 3rd level, spectral warriors appear when you rage. These warriors distract a foe you designate and hinder its attempts to evade you. While you're raging, you can use a bonus action on your turn to choose one creature you can see within 5 feet of you. Until the start of your next turn or until your rage ends, the chosen creature has disadvantage on any attack roll that doesn't target you, and if the creature takes the {@action Disengage} action within 5 feet of you, its speed is halved until the end of its turn."]
-                                    }
-                                ]
-                            }
-                        ], [{
-                                "entries": [{
-                                        "type": "entries",
-                                        "name": "Ancestral Shield",
-                                        "entries": ["Beginning at 6th level, the guardian spirits that aid you can provide protection for your allies. If you are raging and an ally you can see within 30 feet of you takes bludgeoning, piercing, or slashing damage, you can use your reaction to transfer your resistance to those damage types to the ally. The resistance applies to the incoming damage. Until the start of your next turn, the ally keeps the resistance and you lack it, unless you also have it from a source other than rage."]
-                                    }
-                                ]
-                            }
-                        ], [{
-                                "entries": [{
-                                        "type": "entries",
-                                        "name": "Consult the Spirits",
-                                        "entries": ["At 10th level, you gain the ability to consult with your ancestral spirits. Right before you make an Intelligence or a Wisdom check, you can give yourself advantage on the check. You can use this feature three times, and you regain expended uses when you finish a long rest."]
-                                    }
-                                ]
-                            }
-                        ], [{
-                                "entries": [{
-                                        "type": "entries",
-                                        "name": "Vengeful Ancestors",
-                                        "entries": ["At 14th level, your ancestral spirits grow powerful enough to strike your foes. When you or an ally you can see within 30 feet of you is damaged by a melee attack while you're raging, you can use your reaction to cause the attacker to take {@dice 2d8} force damage from the spirits."]
-                                    }
-                                ]
-                            }
-                        ]]
-                }, {
-                    "name": "Path of the Ancestral Guardian v2 (UA)",
-                    "shortName": "Ancestral Guardian v2 (UA)",
-                    "source": "UARevisedSubclasses",
-                    "page": 1,
-                    "spellcastingAbility": "wis",
-                    "subclassFeatures": [[{
-                                "name": "Path of the Ancestral Guardian v2",
-                                "entries": ["Some barbarians hail from cultures that revere their ancestors. These tribes teach that the warriors of the past linger on in the world as mighty spirits who can guide and protect the living. When barbarians who follow this path rage, they cross the barrier into the spirit world and call on these guardian spirits for aid.", "Barbarians who draw on their ancestral guardians fight to protect their tribes and their allies. With the spirits' help, they can hinder their foes even as they strike powerful blows against them.", "In order to cement ties to their ancestral guardians, barbarians who follow this path cover themselves in elaborate tattoos that celebrate their ancestors' deeds. These tattoos tell epic sagas of victories against terrible monsters and other fearsome rivals.", {
-                                        "type": "entries",
-                                        "name": "Ancestral Protectors",
-                                        "entries": ["Starting when you choose this path at 3rd level, spectral warriors appear when you rage. These warriors distract a foe you designate and hinder its attempts to evade you. While you're raging, the first creature you hit with an attack on your turn becomes the target of these warriors. Until the start of your next turn or until your rage ends, that target has disadvantage on any attack roll that doesn't target you, and creatures other than you have resistance to the damage of the creature's attacks."]
-                                    }
-                                ]
-                            }
-                        ], [{
-                                "entries": [{
-                                        "type": "entries",
-                                        "name": "Ancestral Shield",
-                                        "entries": ["Beginning at 6th level, the guardian spirits that aid you can provide protection for your allies. If you are raging and a creature you can see within 30 feet of you takes damage, you can use your reaction and reduce that damage by {@dice 2d8}. When you reach certain levels in this class, you can reduce the damage by more: by {@dice 3d8} at 10th level and by {@dice 4d8} at 14th level."]
-                                    }
-                                ]
-                            }
-                        ], [{
-                                "entries": [{
-                                        "type": "entries",
-                                        "name": "Consult the Spirits",
-                                        "entries": ["At 10th level, you gain the ability to consult with your ancestral spirits and use them to scout far-off lands. When you do so, you cast the {@spell clairvoyance} spell, without needing a spell slot. Rather than creating a spherical sensor, the spell invisibly summons one of your ancestral spirits to the chosen location. Wisdom is your spellcasting ability for the spell. After you cast the spell in this way, you can't do so again until you finish a short or long rest."]
-                                    }
-                                ]
-                            }
-                        ], [{
-                                "entries": [{
-                                        "type": "entries",
-                                        "name": "Vengeful Ancestors",
-                                        "entries": ["At 14th level, your ancestral spirits grow powerful enough to strike foes that dare harm those that you protect. When you use your Spirit Shield Ability to protect a creature damaged by an attack, the attacker takes the same amount of damage that the Spirit Shield protects."]
-                                    }
-                                ]
-                            }
-                        ]]
-                }, {
-                    "name": "Path of the Storm Herald (UA)",
-                    "shortName": "Storm Herald (UA)",
-                    "source": "UABarbarianPrimalPaths",
-                    "page": 1,
-                    "isReprinted": true,
-                    "subclassFeatures": [[{
-                                "name": "Path of the Storm Herald",
-                                "entries": ["Typical barbarians harbor a fury that dwells within. Their rage grants them superior strength, durability, and speed. Barbarians who follow the Path of the Storm Herald learn instead to transform their rage into a mantle of primal magic that swirls around them. When in a fury, a barbarian of this path taps into nature to create powerful, magical effects.", "Storm heralds are typically elite champions who train alongside druids, rangers, and others sworn to protect the natural realm. Other storm heralds hone their craft in elite lodges founded in regions wracked by storms, in the frozen reaches at the world's end, or deep in the hottest deserts.", {
-                                        "type": "entries",
-                                        "name": "Storm of Fury",
-                                        "entries": ["When you select this path at 3rd level, choose one of the following options: desert, sea, or tundra. The environment you choose shapes the nature of the storm you conjure when you rage. While raging, you emanate an aura in a 10-foot radius. The effects of this aura depend on your chosen environment.", {
-                                                "type": "entries",
-                                                "entries": [{
-                                                        "type": "entries",
-                                                        "name": "Desert",
-                                                        "entries": ["Any enemy that ends its turn in your aura takes fire damage equal to 2 + your barbarian level divided by 4."]
-                                                    }
-                                                ]
-                                            }, {
-                                                "type": "entries",
-                                                "entries": [{
-                                                        "type": "entries",
-                                                        "name": "Sea",
-                                                        "entries": ["At the end of each of your turns, you can choose a creature in your aura other than yourself. The target must make a Dexterity saving throw against a DC equal to 8 + your proficiency bonus + your Constitution modifier. The target takes {@dice 2d6} lightning damage on a failed save, and half as much damage on a successful one. This damage increases to {@dice 3d6} at 10th level and to {@dice 4d6} at 15th level."]
-                                                    }
-                                                ]
-                                            }, {
-                                                "type": "entries",
-                                                "entries": [{
-                                                        "type": "entries",
-                                                        "name": "Tundra",
-                                                        "entries": ["Any enemy that ends its turn in your aura takes cold damage equal to 2 + your barbarian level divided by 4."]
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        ], [{
-                                "entries": [{
-                                        "type": "entries",
-                                        "name": "Storm Soul",
-                                        "entries": ["At 6th level, your link to the power of the storm grants you additional abilities based on the environment you chose at 3rd level.", {
-                                                "type": "entries",
-                                                "entries": [{
-                                                        "type": "entries",
-                                                        "name": "Desert",
-                                                        "entries": ["You gain resistance to fire damage and don't suffer the effects of extreme heat."]
-                                                    }
-                                                ]
-                                            }, {
-                                                "type": "entries",
-                                                "entries": [{
-                                                        "type": "entries",
-                                                        "name": "Sea",
-                                                        "entries": ["You gain resistance to lightning damage and can breathe underwater."]
-                                                    }
-                                                ]
-                                            }, {
-                                                "type": "entries",
-                                                "entries": [{
-                                                        "type": "entries",
-                                                        "name": "Tundra",
-                                                        "entries": ["Tundra. You gain resistance to cold damage and don't suffer the effects of extreme cold."]
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        ], [{
-                                "entries": [{
-                                        "type": "entries",
-                                        "name": "Shield of the Storm",
-                                        "entries": ["At 10th level, you learn to use your mastery of the storm to protect your allies. While you are raging, allies within your aura gain the benefits of your Storm Soul feature."]
-                                    }
-                                ]
-                            }
-                        ], [{
-                                "entries": [{
-                                        "type": "entries",
-                                        "name": "Raging Storm",
-                                        "entries": ["At 14th level, the power of the storm you channel grows mightier.", {
-                                                "type": "entries",
-                                                "entries": [{
-                                                        "type": "entries",
-                                                        "name": "Desert",
-                                                        "entries": ["The ground around you becomes like shifting sand. Any enemy that attempts to move more than 5 feet per turn on the ground while in your aura must make a Strength saving throw (DC 8 + your proficiency bonus + your Constitution modifier). On a failed save, the creature's speed drops to 0 until the start of its next turn."]
-                                                    }
-                                                ]
-                                            }, {
-                                                "type": "entries",
-                                                "entries": [{
-                                                        "type": "entries",
-                                                        "name": "Sea",
-                                                        "entries": ["Roaring winds tear through the area around you. Any creature in your aura that you hit with an attack must make a Strength saving throw (DC 8 + your proficiency bonus + your Strength modifier) or be knocked {@condition prone}."]
-                                                    }
-                                                ]
-                                            }, {
-                                                "type": "entries",
-                                                "entries": [{
-                                                        "type": "entries",
-                                                        "name": "Tundra",
-                                                        "entries": ["The air around you coldly slows your foes. The area within your aura is difficult terrain for your enemies."]
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]]
-                }, {
-                    "name": "Path of the Zealot (UA)",
-                    "shortName": "Zealot (UA)",
-                    "source": "UABarbarianPrimalPaths",
-                    "page": 2,
-                    "isReprinted": true,
-                    "subclassFeatures": [[{
-                                "name": "Path of the Zealot",
-                                "entries": ["Some deities inspire their followers to pitch themselves into a ferocious battle fury. These barbarians are zealots—warriors who channel their rage into powerful displays of divine power.", "A variety of gods across the worlds of D&D inspire their followers to embrace this path. Tempus from the Forgotten Realms and Hextor and Erythnul of Greyhawk are all prime examples. In general, the gods who inspire zealots are deities of combat, destruction, and violence. Not all are evil, but few are good.", {
-                                        "type": "entries",
-                                        "name": "Divine Fury",
-                                        "entries": ["Starting when you choose this path at 3rd level, you can channel divine fury when you start to rage. If you do so, you become cloaked in an aura of divine power until the rage ends. At the end of each of your turns for that duration, each creature within 5 feet of you takes damage equal to {@dice 1d6} + half your barbarian level. The damage is necrotic or radiant; you choose the type of damage when you gain this feature."]
-                                    }, {
-                                        "type": "entries",
-                                        "name": "Warrior of the Gods",
-                                        "entries": ["At 3rd level, your soul is marked for endless battle. If a spell would have the sole effect of restoring you to life (but not undeath), the caster does not need material components to cast the spell on you."]
-                                    }
-                                ]
-                            }
-                        ], [{
-                                "entries": [{
-                                        "type": "entries",
-                                        "name": "Zealous Focus",
-                                        "entries": ["At 6th level, the divine power that fuels your rage can shield you from harm. If you fail a saving throw while raging, you can instead succeed on that saving throw as a reaction. However, doing so immediately ends your rage, and you can't rage again until you finish a short or long rest."]
-                                    }
-                                ]
-                            }
-                        ], [{
-                                "entries": [{
-                                        "type": "entries",
-                                        "name": "Zealous Presence",
-                                        "entries": ["At 10th level, you learn to channel divine power to inspire zealotry in others. As an action, you howl in fury and unleash a battle cry infused with divine energy. Every ally within 60 feet of you gains advantage on attack rolls and saving throws until the start of your next turn.", "Once you use this feature, you can't use it again until you finish a long rest."]
-                                    }
-                                ]
-                            }
-                        ], [{
-                                "entries": [{
-                                        "type": "entries",
-                                        "name": "Rage Beyond Death",
-                                        "entries": ["Beginning at 14th level, the divine power that fuels your rage allows you to shrug off fatal blows.", "While raging, having 0 hit points doesn't knock you {@condition unconscious}. You still must make death saving throws, and you suffer the normal effects of taking damage while at 0 hit points. However, if you would die due to failing death saving throws, you don't die until your rage ends."]
-                                    }
-                                ]
-                            }
-                        ]]
-                }, {
-                    "name": "Path of the Ancestral Guardian",
-                    "shortName": "Ancestral Guardian",
-                    "source": "XGE",
-                    "page": 9,
-                    "spellcastingAbility": "wis",
-                    "subclassFeatures": [[{
-                                "name": "Path of the Ancestral Guardian",
-                                "entries": ["Some barbarians hail from cultures that revere their ancestors. These tribes teach that the warriors of the past linger in the world as mighty spirits, who can guide and protect the living. When a barbarian who follows this path rages, the barbarian contacts the spirit world and calls on these guardian spirits for aid.", "Barbarians who draw on their ancestral guardians can better fight to protect their tribes and their allies. In order to cement ties to their ancestral guardians, barbarians who follow this path cover themselves in elaborate tattoos that celebrate their ancestors' deeds. These tattoos tell sagas of victories against terrible monsters and other fearsome rivals.", {
-                                        "type": "entries",
-                                        "name": "Ancestral Protectors",
-                                        "entries": ["Starting when you choose this path at 3rd level, spectral warriors appear when you enter your rage. While you're raging, the first creature you hit with an attack on your turn becomes the target of the warriors, which hinder its attacks. Until the start of your next turn, that target has disadvantage on any attack roll that isn't against you, and when the target hits a creature other than you with an attack, that creature has resistance to the damage dealt by the attack. The effect on the target ends early if your rage ends."]
-                                    }
-                                ]
-                            }
-                        ], [{
-                                "entries": [{
-                                        "type": "entries",
-                                        "name": "Spirit Shield",
-                                        "entries": ["Beginning at 6th level, the guardian spirits that aid you can provide supernatural protection to those you defend. If you are raging and another creature you can see within 30 feet of you takes damage, you can use your reaction to reduce that damage by {@dice 2d6}.", "When you reach certain levels in this class, you can reduce the damage by more: by {@dice 3d6} at 10th level and by {@dice 4d6} at 14th level."]
-                                    }
-                                ]
-                            }
-                        ], [{
-                                "entries": [{
-                                        "type": "entries",
-                                        "name": "Consult the Spirits",
-                                        "entries": ["At 10th level, you gain the ability to consult with your ancestral spirits. When you do so, you cast the {@spell augury} or {@spell clairvoyance} spell, without using a spell slot or material components. Rather than creating a spherical sensor, this use of {@spell clairvoyance} invisibly summons one of your ancestral spirits to the chosen location. Wisdom is your spellcasting ability for these spells.", "After you cast either spell in this way, you can't use this feature again until you finish a short or long rest."]
-                                    }
-                                ]
-                            }
-                        ], [{
-                                "entries": [{
-                                        "type": "entries",
-                                        "name": "Vengeful Ancestors",
-                                        "entries": ["At 14th level, your ancestral spirits grow powerful enough to retaliate. When you use your Spirit Shield to reduce the damage of an attack, the attacker takes an amount of force damage equal to the damage that your Spirit Shield prevents."]
-                                    }
-                                ]
-                            }
-                        ]]
-                }, {
-                    "name": "Path of the Storm Herald",
-                    "shortName": "Storm Herald",
-                    "source": "XGE",
-                    "page": 10,
-                    "subclassFeatures": [[{
-                                "name": "Path of the Storm Herald",
-                                "entries": ["All barbarians harbor a fury within. Their rage grants them superior strength, durability, and speed. Barbarians who follow the Path of the Storm Herald learn to transform that rage into a mantle of primal magic, which swirls around them. When in a fury, a barbarian of this path taps into the forces of nature to create powerful magical effects.", "Storm heralds are typically elite champions who train alongside druids, rangers, and others sworn to protect nature. Other storm heralds hone their craft in lodges in regions wracked by storms, in the frozen reaches at the world's end, or deep in the hottest deserts.", {
-                                        "type": "entries",
-                                        "name": "Storm Aura",
-                                        "entries": ["Starting at 3rd level, you emanate a stormy, magical aura while you rage. The aura extends 10 feet from you in every direction, but not through total cover.", "Your aura has an effect that activates when you enter your rage, and you can activate the effect again on each of your turns as a bonus action. Choose desert, sea, or tundra. Your aura's effect depends on that chosen environment, as detailed below. You can change your environment choice whenever you gain a level in this class.", "If your aura's effects require a saving throw, the DC equals 8 + your proficiency bonus + your Constitution modifier.", {
-                                                "type": "options",
-                                                "entries": [{
-                                                        "type": "entries",
-                                                        "name": "Desert",
-                                                        "entries": ["When this effect is activated, all other creatures in your aura take 2 fire damage each. The damage increases when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level."]
-                                                    }, {
-                                                        "type": "entries",
-                                                        "name": "Sea",
-                                                        "entries": ["When this effect is activated, you can choose one other creature you can see in your aura. The target must make a Dexterity saving throw. The target takes {@dice 1d6} lightning damage on a failed save, or half as much damage on a successful one. The damage increases when you reach certain levels in this class, increasing to {@dice 2d6} at 10th level, {@dice 3d6} at 15th level, and {@dice 4d6} at 20th level."]
-                                                    }, {
-                                                        "type": "entries",
-                                                        "name": "Tundra",
-                                                        "entries": ["When this effect is activated, each creature of your choice in your aura gains 2 temporary hit points, as icy spirits inure it to suffering. The temporary hit points increase when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level."]
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        ], [{
-                                "entries": [{
-                                        "type": "entries",
-                                        "name": "Storm Soul",
-                                        "entries": ["At 6th level, the storm grants you benefits even when your aura isn't active. The benefits are based on the environment you chose for your Storm Aura.", {
-                                                "type": "options",
-                                                "entries": [{
-                                                        "type": "entries",
-                                                        "name": "Desert",
-                                                        "entries": ["You gain resistance to fire damage, and you don't suffer the effects of extreme heat, as described in the Dungeon Master's Guide. Moreover, as an action, you can touch a flammable object that isn't being worn or carried by anyone else and set it on fire."]
-                                                    }, {
-                                                        "type": "entries",
-                                                        "name": "Sea",
-                                                        "entries": ["You gain resistance to lightning damage, and you can breathe underwater. You also gain a swimming speed of 30 feet."]
-                                                    }, {
-                                                        "type": "entries",
-                                                        "name": "Tundra",
-                                                        "entries": ["You gain resistance to cold damage, and you don't suffer the effects of extreme cold, as described in the Dungeon Master's Guide. Moreover, as an action, you can touch water and turn a 5-foot cube of it into ice, which melts after 1 minute. This action fails if a creature is in the cube."]
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        ], [{
-                                "entries": [{
-                                        "type": "entries",
-                                        "name": "Shielding Storm",
-                                        "entries": ["At 10th level, you learn to use your mastery of the storm to protect others. Each creature of your choice has the damage resistance you gained from the Storm Soul feature while the creature is in your Storm Aura."]
-                                    }
-                                ]
-                            }
-                        ], [{
-                                "entries": [{
-                                        "type": "entries",
-                                        "name": "Raging Storm",
-                                        "entries": ["At 14th level, the power of the storm you channel grows mightier, lashing out at your foes. The effect is based on the environment you chose for your Storm Aura.", {
-                                                "type": "options",
-                                                "entries": [{
-                                                        "type": "entries",
-                                                        "name": "Desert",
-                                                        "entries": ["Immediately after a creature in your aura hits you with an attack, you can use your reaction to force that creature to make a Dexterity saving throw. On a failed save, the creature takes fire damage equal to half your barbarian level."]
-                                                    }, {
-                                                        "type": "entries",
-                                                        "name": "Sea",
-                                                        "entries": ["When you hit a creature in your aura with an attack, you can use your reaction to force that creature to make a Strength saving throw. On a failed save, the creature is knocked {@condition prone}, as if struck by a wave."]
-                                                    }, {
-                                                        "type": "entries",
-                                                        "name": "Tundra",
-                                                        "entries": ["Whenever the effect of your Storm Aura is activated, you can choose one creature you can see in the aura. That creature must succeed on a Strength saving throw, or its speed is reduced to 0 until the start of your next turn, as magical frost covers it."]
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]]
-                }, {
-                    "name": "Path of the Zealot",
-                    "shortName": "Zealot",
-                    "source": "XGE",
-                    "page": 11,
-                    "subclassFeatures": [[{
-                                "name": "Path of the Zealot",
-                                "entries": ["Some deities inspire their followers to pitch themselves into a ferocious battle fury. These barbarians are zealots—warriors who channel their rage into powerful displays of divine power.", "A variety of gods across the worlds of D&D inspire their followers to embrace this path. Tempus from the Forgotten Realms and Hextor and Erythnul of Greyhawk are all prime examples. In general, the gods who inspire zealots are deities of combat, destruction, and violence. Not all are evil, but few are good.", {
-                                        "type": "entries",
-                                        "name": "Divine Fury",
-                                        "entries": ["Starting when you choose this path at 3rd level, you can channel divine fury into your weapon strikes. While you're raging, the first creature you hit on each of your turns with a weapon attack takes extra damage equal to {@dice 1d6} + half your barbarian level. The extra damage is necrotic or radiant; you choose the type of damage when you gain this feature."]
-                                    }, {
-                                        "type": "entries",
-                                        "name": "Warrior of the Gods",
-                                        "entries": ["At 3rd level, your soul is marked for endless battle. If a spell, such as {@spell raise dead}, has the sole effect of restoring you to life (but not undeath), the caster doesn't need material components to cast the spell on you."]
-                                    }
-                                ]
-                            }
-                        ], [{
-                                "entries": [{
-                                        "type": "entries",
-                                        "name": "Fanatical Focus",
-                                        "entries": ["Starting at 6th level, the divine power that fuels your rage can protect you. If you fail a saving throw while you're raging, you can reroll it, and you must use the new roll. You can use this ability only once per rage."]
-                                    }
-                                ]
-                            }
-                        ], [{
-                                "entries": [{
-                                        "type": "entries",
-                                        "name": "Zealous Presence",
-                                        "entries": ["At 10th level, you learn to channel divine power to inspire zealotry in others. As a bonus action, you unleash a battle cry infused with divine energy. Up to ten other creatures of your choice within 60 feet of you that can hear you gain advantage on attack rolls and saving throws until the start of your next turn.", "Once you use this feature, you can't use it again until you finish a long rest."]
-                                    }
-                                ]
-                            }
-                        ], [{
-                                "entries": [{
-                                        "type": "entries",
-                                        "name": "Rage beyond Death",
-                                        "entries": ["Beginning at 14th level, the divine power that fuels your rage allows you to shrug off fatal blows.", "While you're raging, having 0 hit points doesn't knock you {@condition unconscious}. You still must make death saving throws, and you suffer the normal effects of taking damage while at 0 hit points. However, if you would die due to failing death saving throws, you don't die until your rage ends, and you die then only if you still have 0 hit points."]
-                                    }
-                                ]
-                            }
-                        ]]
-                }, {
-                    "name": "Path of the Wild Soul (UA)",
-                    "shortName": "Wild Soul (UA)",
-                    "source": "UABarbarianAndMonk",
-                    "page": 1,
-                    "subclassFeatures": [[{
-                                "name": "Path of the Wild Soul",
-                                "entries": ["The realm of the Feywild abounds with beauty, unpredictable emotion, and rampant magic. A barbarian exposed to this realm feels emotions powerfully and magic saturates their body.", "When a barbarian who follows this path rages, it is a bellowing roar for freedom, an explosion of expression, manifesting in unpredictable ways.", {
-                                        "type": "entries",
-                                        "name": "Lingering Magic",
-                                        "entries": ["At 3rd level, your body reacts to the presence of magic. You can cast the {@spell detect magic} spell without using a spell slot or components. Constitution is your spellcasting ability for this spell. You faintly glow a color corresponding to the school of magic you detect (you choose the colors).", "You can use this feature a number of times equal to your Constitution modifier (minimum of once). You regain all expended uses when you finish a long rest."]
-                                    }, {
-                                        "type": "entries",
-                                        "name": "Wild Surge",
-                                        "entries": ["Starting at 3rd level, magic erupts from you as you rage. When you enter your rage, roll on the Wild Surge table to determine the magical effect produced.", "If the wild surge requires a saving throw, the DC equals 8 + your proficiency bonus + your Constitution modifier.", {
-                                                "type": "table",
-                                                "caption": "Wild Surge",
-                                                "colLabels": ["d8", "Effect"],
-                                                "colStyles": ["col-1 text-center", "col-11"],
-                                                "rows": [[1, "Necrotic energy bursts from you. Each creature within 30 feet of you takes {@dice 1d10} necrotic damage, and you gain temporary hit points equal to the sum of the necrotic damage dealt to the creatures."], [2, "You teleport up to 20 feet to an unoccupied space you can see. Until your rage ends, you can activate this effect again on each of your turns as a bonus action."], [3, "You conjure {@dice 1d4} intangible spirits that look like {@creature flumph||flumphs} in unoccupied spaces within 30 feet of you. Each spirit immediately flies 30 feet in a random direction. At the end of your turn, all spirits explode and each creature within 5 feet of one or more of them must succeed on a Dexterity saving throw or take {@dice 2d8} force damage."], [4, "Arcane energy enshrouds you. Until your rage ends, you gain a +2 bonus to AC, and whenever a creature within 10 feet of you hits you with an attack, that creature takes force damage equal to your Constitution modifier."], [5, "Plant life temporarily grows around you: until your rage ends, the ground within 10 feet of you is difficult terrain."], [6, "Arcane energy taps into the minds of those around you. Each creature within 30 feet of you must succeed on a Wisdom saving throw or you see a glimpse of the creature's thoughts, learning how it plans to attack you. As a result, the creature has disadvantage on attack rolls against you until the start of your next turn."], [7, "Shadows weave around a weapon of your choice you are holding. Until your rage ends, your weapon deals psychic damage instead of its bludgeoning, slashing, or piercing damage, and it gains the light and thrown properties with a normal range of 20 feet and a long range of 60 feet. If you drop the weapon or throw it, the weapon dissipates and reappears in your hand at the end of your turn."], [8, "A beam of brilliant light lances from your chest in a 5-foot-wide, 60-foot-long line. Each creature in the line must succeed on a Constitution saving throw or take {@dice 2d8} radiant damage and be {@condition blinded} until the start of your next turn."]]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        ], [{
-                                "entries": [{
-                                        "type": "entries",
-                                        "name": "Magic Reserves",
-                                        "entries": ["At 6th level, you can channel the magic surging inside you into other creatures. As an action, you can touch a creature and roll a {@dice d4}. The creature recovers an expended spell slot of a level equal to the number rolled. If the creature you touch can't recover a spell slot of that level, the creature instead gains temporary hit points equal to five times the number rolled.", "You take force damage equal to five times the number rolled.", "When you reach 14th level in this class, you increase the die to a {@dice d6}."]
-                                    }
-                                ]
-                            }
-                        ], [{
-                                "entries": [{
-                                        "type": "entries",
-                                        "name": "Arcane Rebuke",
-                                        "entries": ["At 10th level, the magic crackling within your soul lashes out. When a creature forces you to make a saving throw while you are raging, you can use your reaction to deal {@dice 3d6} force damage to that creature."]
-                                    }
-                                ]
-                            }
-                        ], [{
-                                "entries": [{
-                                        "type": "entries",
-                                        "name": "Chaotic Fury",
-                                        "entries": ["At 14th level, you become a wellspring of wild magic while you are raging. As a bonus action, you can reroll on the Wild Surge table, replacing your current effect with the new one."]
-                                    }, {
-                                        "type": "entries",
-                                        "name": "Improved Magic Reserves",
-                                        "entries": ["At 14th level, you increase your magic reserves die to a {@dice d6}."]
-                                    }
-                                ]
-                            }
-                        ]]
-                }, {
-                    "name": "Path of the Beast (UA)",
-                    "shortName": "Beast (UA)",
-                    "source": "UA2020SubclassesPt1",
-                    "page": 1,
-                    "subclassFeatures": [[{
-                                "name": "Path of the Beast",
-                                "entries": ["Barbarians who walk the Path of Beast draw their rage from a bestial spark burning within their souls. That beast howls to be released and bursts forth in the throes of rage.", "Those who tread this path might be inhabited by a primal spirit or descended from shapeshifters. You can choose the origin of your feral might or determine it randomly by rolling on the Origin of the Beast table.", {
-                                        "type": "table",
-                                        "caption": "Origin of the Beast",
-                                        "colLabels": ["d4", "Origin"],
-                                        "colStyles": ["col-2 text-center", "col-10"],
-                                        "rows": [["1", "One of your parents is a lycanthrope, and you've inherited some of the curse."], ["2", "You are descended from a legendary druid, a fact manifested by your ability to partially change shape."], ["3", "A fey spirit gifted you with the ability to adopt different bestial aspects."], ["4", "An ancient animal spirit dwells within you, allowing you to walk this path."]]
-                                    }, {
-                                        "type": "entries",
-                                        "name": "Form of the Beast",
-                                        "entries": ["{@i 3rd-level Path of the Beast feature}", "When you enter your rage, you can transform, revealing the bestial power within you. Until your rage ends, you manifest a natural melee weapon, choosing one of the following options each time you rage:", {
-                                                "type": "list",
-                                                "style": "list-hang-notitle",
-                                                "items": [{
-                                                        "type": "item",
-                                                        "name": "Bite",
-                                                        "entry": "Your mouth transforms into a bestial snout or great mandibles (your choice). Your bite deals {@dice 1d8} piercing damage on a hit. Once on each of your turns when you damage a creature with your bite, you regain a number of hit points equal to your Constitution modifier (minimum of 1 hit point)."
-                                                    }, {
-                                                        "type": "item",
-                                                        "name": "Claws",
-                                                        "entry": "Your hands transform into claws, which deal {@dice 1d6} slashing damage on a hit. When you take the {@action Attack} action on your turn and make an attack with your claws, you can make one additional attack using your claws as part of the same action."
-                                                    }, {
-                                                        "type": "item",
-                                                        "name": "Tail",
-                                                        "entry": "You grow a lashing, spiny tail, which deals {@dice 1d12} piercing damage on a hit and has the reach property."
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        ], [{
-                                "entries": [{
-                                        "type": "entries",
-                                        "name": "Bestial Soul",
-                                        "entries": ["{@i 6th-level Path of the Beast feature}", "The feral spirit within you grows in power, causing the natural weapons of your Form of the Beast to count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.", "You can also call on the feral spirit to help you adapt to your surroundings. When you finish a short or long rest, choose one of the following benefits, which lasts until you finish a short or long rest:", {
-                                                "type": "list",
-                                                "items": ["You gain a swimming speed equal to your walking speed, and you can breathe underwater.", "You gain a climbing speed equal to your walking speed, and you can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.", "When you jump, you can make a Strength ({@skill Athletics}) check and extend your jump by a number of feet equal to the check's total. You can make this special check only once per turn."]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        ], [{
-                                "entries": [{
-                                        "type": "entries",
-                                        "name": "Infectious Fury",
-                                        "entries": ["{@i 10th-level Path of the Beast feature}", "When you hit a creature with your natural weapons while you are raging, the spirit within you can curse your target with rabid fury. The target must succeed on a Wisdom saving throw (DC equal to 8 + your Constitution modifier + your proficiency bonus) or suffer one of the following effects (your choice):", {
-                                                "type": "list",
-                                                "items": ["The target must use its reaction to make a melee attack against another creature of your choice that you can see.", "Target takes {@dice 2d12} psychic damage. You can use this feature a number of times equal to your Constitution modifier (a minimum of once)."]
-                                            }, "You regain all expended uses when you finish a long rest."]
-                                    }
-                                ]
-                            }
-                        ], [{
-                                "entries": [{
-                                        "type": "entries",
-                                        "name": "Call the Hunt",
-                                        "entries": ["{@i 14th-level Path of the Beast feature}", "The beast within grows so powerful that you can spread its ferocity to your allies. When you enter your rage, you can choose a number of willing creatures you can see within 30 feet of you equal to your Constitution modifier (minimum of one creature). Until your rage ends, the chosen creatures gain the Reckless {@action Attack} feature and you have advantage on saving throws against being {@condition frightened}. You also gain 5 temporary hit points for each creature that accepts the benefit. You can use this feature a number of times equal to your Constitution modifier (a minimum of once). You regain all expended uses when you finish a long rest."]
                                     }
                                 ]
                             }
@@ -15668,210 +15039,46 @@
                 }
             ],
             "fluff": [{
-                    "name": "Barbarian",
+                    "name": "Bárbaro",
                     "type": "section",
-                    "entries": ["A tall human tribesman strides through a blizzard, draped in fur and hefting his axe. He laughs as he charges toward the frost giant who dared poach his people's elk herd.", "A half-orc snarls at the latest challenger to her authority over their savage tribe, ready to break his neck with her bare hands as she did to the last six rivals.", "Frothing at the mouth, a dwarf slams his helmet into the face of his drow foe, then turns to drive his armored elbow into the gut of another.", "These barbarians, different as they might be, are defined by their rage: unbridled, unquenchable, and unthinking fury. More than a mere emotion, their anger is the ferocity of a cornered predator, the unrelenting assault of a storm, the churning turmoil of the sea.", "For some, their rage springs from a communion with fierce animal spirits. Others draw from a roiling reservoir of anger at a world full of pain. For every barbarian, rage is a power that fuels not just a battle frenzy but also uncanny reflexes, resilience, and feats of strength.", {
+                    "entries": [
+					"Un humano alto y salvaje, envuelto en pieles y asiendo su hacha, atraviesa, con largas zancadas, una tormenta de nieve.", 
+					"Se ríe mientras carga contra el gigante de escarcha que se ha atrevido a cazar los rebaños de alces de su pueblo. Una semiorca gruñe a su nuevo rival, el último en desafiar su autoridad sobre los miembros de la tribu. Está lista para romperle el cuello con las manos desnudas, como ya hizo con los seis contrincantes anteriores.", 
+					"Echando espumarajos por la boca, un enano estrella su yelmo contra el rostro de un drow, para inmediatamente después girarse y hundir su codo acorazado en el estómago de otro enemigo.", 
+					"Estos bárbaros, a pesar de sus diferencias, tienen algo en común: su furia. Una ira desenfrenada, insaciable e irreflexiva. No se trata de una simple emoción, pues esta ira es similar a la ferocidad del depredador acorralado, el asalto implacable de la tormenta o la agitada confusión del mar.", 
+					"Para algunos bárbaros, la furia emana de la comunión con fieros espíritus animales, mientras que otros dan salida a sus reservas de ira apenas contenida, desatándola contra un mundo lleno de sufrimiento. Todos los bárbaros sienten su furia como una energía que no solo alimenta su agresividad en combate, sino que también les proporciona sus increíbles reflejos, resistencia y proezas de fuerza.", {
                             "type": "entries",
-                            "name": "Primal Instinct",
-                            "entries": ["People of towns and cities take pride in how their civilized ways set them apart from animals, as if denying one's own nature was a mark of superiority. To a barbarian, though, civilization is no virtue, but a sign of weakness. The strong embrace their animal nature—keen instincts, primal physicality, and ferocious rage. Barbarians are uncomfortable when hedged in by walls and crowds. They thrive in the wilds of their homelands: the tundra, jungle, or grasslands where their tribes live and hunt.", "Barbarians come alive in the chaos of combat. They can enter a berserk state where rage takes over, giving them superhuman strength and resilience. A barbarian can draw on this reservoir of fury only a few times without resting, but those few rages are usually sufficient to defeat whatever threats arise."]
+                            "name": "Instinto primordial",
+                            "entries": [
+							"Los habitantes de pueblos y ciudades se enorgullecen de sus civilizadas costumbres, que los distinguen de los animales, como si rechazar la propia naturaleza fuera señal de superioridad. Sin embargo, para un bárbaro la civilización no es una virtud, sino una muestra de debilidad. Los fuertes abrazan su naturaleza animal; sus instintos agudos, su físico primordial y su furia desencadenada. Los bárbaros no se encuentran cómodos cuando están rodeados por muros o multitudes. Medran en las tierras salvajes que son su hogar; las tundras, selvas o praderas en las que sus tribus habitan y cazan.", 
+							"Los bárbaros cobran vida en media del caos del combate. Pueden entrar en un estado de locura berserker en el que la furia les domina, otorgándoles una fuerza y resistencia sobre­humanas. Un bárbaro tan solo puede recurrir a sus reservas de ira unas pocas veces entre descansos, pero estos escasos arrebatos suelen ser más que suficientes para derrotar a cualquier amenaza que pueda presentarse."
+							]
                         }, {
                             "type": "entries",
-                            "name": "A Life of Danger",
-                            "entries": ["Not every member of the tribes deemed \"barbarians\" by scions of civilized society has the barbarian class. A true barbarian among these people is as uncommon as a skilled fighter in a town, and he or she plays a similar role as a protector of the people and a leader in times of war. Life in the wild places of the world is fraught with peril: rival tribes, deadly weather, and terrifying monsters. Barbarians charge headlong into that danger so that their people don't have to.", "Their courage in the face of danger makes barbarians perfectly suited for adventuring. Wandering is often a way of life for their native tribes, and the rootless life of the adventurer is little hardship for a barbarian. Some barbarians miss the close-knit family structures of the tribe, but eventually find them replaced by the bonds formed among the members of their adventuring parties."]
+                            "name": "Una vida de peligros",
+                            "entries": [
+							"No todos los miembros de las tribus llamadas \"bárbaras\" por los vástagos de las sociedades civilizadas poseen la clase \"bárbaro\". Es tan poco común encontrar un auténtico bárbaro en estas culturas como lo es dar con un guerrero habilidoso en una ciudad, ya que ambos desempeñan funciones similares: proteger a su pueblo y servir como líderes en tiempos de guerra. La vida en los lugares más salvajes del mundo está llena de dificultades: tribus rivales, un clima hostil y monstruos terroríficos. Por ello, los bárbaros se lanzan de cabeza hacia el peligro para que su pueblo no tenga que hacerlo.", 
+							"El valor frente a la adversidad de los bárbaros les convierte en aventureros excelentes. Muchas veces sus tribus de origen ya eran nómadas, por lo que la vida del aventurero, que impide echar raíces, no representa una molestia para ellos. Algunos bárbaros echan de menos las estructuras familiares de la tribu, muy estrechamente unidas, pero acaban reemplazándolas por los lazos forjados con el resto de los miembros de sus grupos de aventureros."
+							]
                         }, {
                             "type": "entries",
-                            "name": "Creating a Barbarian",
-                            "entries": ["When creating a barbarian character, think about where your character comes from and his or her place in the world. Talk with your DM about an appropriate origin for your barbarian. Did you come from a distant land, making you a stranger in the area of the campaign? Or is the campaign set in a rough-and-tumble frontier where barbarians are common?", "What led you to take up the adventuring life? Were you lured to settled lands by the promise of riches? Did you join forces with soldiers of those lands to face a shared threat? Did monsters or an invading horde drive you out of your homeland, making you a rootless refugee? Perhaps you were a prisoner of war, brought in chains to \"civilized\" lands and only now able to win your freedom. Or you might have been cast out from your people because of a crime you committed, a taboo you violated, or a coup that removed you from a position of authority.", {
+                            "name": "Creación de un bárbaro",
+                            "entries": [
+							"Cuando crees un personaje bárbaro, piensa de dónde viene y cuál es su lugar en el mundo. Habla con tu DM para encontrar un origen apropiado para él. ¿Provienes de una tierra lejana? Si es así, serás un extraño en la zona en la que se desarrolle la campaña. O quizá esta está ubicada en una zona fronteriza y conflictiva, en la que es frecuente encontrar bárbaros.", 
+							"¿Qué te ha llevado a vivir aventuras? ¿Fuiste atraído a zonas más pobladas siguiendo promesas de riquezas? ¿Te uniste a los soldados de estas naciones para enfrentarte a un enemigo común? Puede que los monstruos o una horda invasora te expulsarán de tu hogar, convirtiéndote en un refugiado y un apátrida. Quizá fuiste un prisionero de guerra, que llegó a las tierras “civilizadas” encadenado, pero que ahora por fin acaba de conseguir la libertad. O tal vez hayas sido expulsado por tú propio pueblo, ya fuera por cometer un crimen, violar un tabú o ser víctima de una conjura destinada a desposeerte de algún cargo de responsabilidad.", {
                                     "type": "entries",
-                                    "name": "Quick Build",
-                                    "entries": ["You can make a barbarian quickly by following these suggestions. First, put your highest ability score in Strength, followed by Constitution. Second, choose the {@background outlander} background."]
-                                }
-                            ]
-                        }
-                    ],
-                    "source": "PHB",
-                    "page": 46
-                }, {
-                    "type": "section",
-                    "entries": [{
-                            "type": "quote",
-                            "entries": ["I have witnessed the indomitable performance of barbarians on the field of battle, and it makes me wonder what force lies at the heart of their rage."],
-                            "by": "Seret, archwizard"
-                        }, "The anger felt by a normal person resembles the rage of a barbarian in the same way that a gentle breeze is akin to a furious thunderstorm. The barbarian's driving force comes from a place that transcends mere emotion, making its manifestation all the more terrible. Whether the impetus for the fury comes entirely from within or from forging a link with a spirit animal, a raging barbarian becomes able to perform supernatural feats of strength and endurance. The outburst is temporary, but while it lasts, it takes over body and mind, driving the barbarian on despite peril and injury, until the last enemy falls.", "It can be tempting to play a barbarian character that is a straightforward application of the classic archetype—a brute, and usually a dimwitted one at that, who rushes in where others fear to tread. But not all the barbarians in the world are cut from that cloth, so you can certainly put your own spin on things. Either way, consider adding some flourishes to make your barbarian stand out from all others; see the following sections for some ideas.", {
-                            "type": "entries",
-                            "name": "Personal Totems",
-                            "entries": ["Barbarians tend to travel light, carrying little in the way of personal effects or other unnecessary gear. The few possessions they do carry often include small items that have special significance. A personal totem is significant because it has a mystical origin or is tied to an important moment in the character's life—perhaps a remembrance from the barbarian's past or a harbinger of what lies ahead.", "A personal totem of this sort might be associated with a barbarian's spirit animal, or might actually be the totem object for the animal, but such a connection is not essential. One who has a bear totem spirit, for instance, could still carry an eagle's feather as a personal totem.", "Consider creating one or more personal totems for your character—objects that hold a special link to your character's past or future. Think about how a totem might affect your character's actions.", {
-                                    "type": "table",
-                                    "caption": "Personal Totems",
-                                    "colLabels": ["{@dice d6}", "Totem"],
-                                    "colStyles": ["col-1 text-center", "col-11"],
-                                    "rows": [[{
-                                                "type": "cell",
-                                                "roll": {
-                                                    "exact": 1
-                                                }
-                                            }, "A tuft of fur from a solitary wolf that you befriended during a hunt"], [{
-                                                "type": "cell",
-                                                "roll": {
-                                                    "exact": 2
-                                                }
-                                            }, "Three eagle feathers given to you by a wise shaman, who told you they would play a role in determining your fate"], [{
-                                                "type": "cell",
-                                                "roll": {
-                                                    "exact": 3
-                                                }
-                                            }, "A necklace made from the claws of a young cave bear that you slew singlehandedly as a child"], [{
-                                                "type": "cell",
-                                                "roll": {
-                                                    "exact": 4
-                                                }
-                                            }, "A small leather pouch holding three stones that represent your ancestors"], [{
-                                                "type": "cell",
-                                                "roll": {
-                                                    "exact": 5
-                                                }
-                                            }, "A few small bones from the first beast you killed, tied together with colored wool"], [{
-                                                "type": "cell",
-                                                "roll": {
-                                                    "exact": 6
-                                                }
-                                            }, "An egg-sized stone in the shape of your spirit animal that appeared one day in your belt pouch"]]
-                                }
-                            ]
-                        }, {
-                            "type": "entries",
-                            "name": "Tattoos",
-                            "entries": ["The members of many barbarian clans decorate their bodies with tattoos, each of which represents a significant moment in the life of the bearer or the bearer's ancestors, or which symbolizes a feeling or an attitude. As with personal totems, a barbarian's tattoos might or might not be related to an animal spirit.", "Each tattoo a barbarian displays contributes to that individual's identity. If your character wears tattoos, what do they look like, and what do they represent?", {
-                                    "type": "table",
-                                    "caption": "Tattoos",
-                                    "colLabels": ["{@dice d6}", "Tattoo"],
-                                    "colStyles": ["col-1 text-center", "col-11"],
-                                    "rows": [[{
-                                                "type": "cell",
-                                                "roll": {
-                                                    "exact": 1
-                                                }
-                                            }, "The wings of an eagle are spread wide across your upper back."], [{
-                                                "type": "cell",
-                                                "roll": {
-                                                    "exact": 2
-                                                }
-                                            }, "Etched on the backs of your hands are the paws of a cave bear."], [{
-                                                "type": "cell",
-                                                "roll": {
-                                                    "exact": 3
-                                                }
-                                            }, "The symbols of your clan are displayed in viny patterns along your arms."], [{
-                                                "type": "cell",
-                                                "roll": {
-                                                    "exact": 4
-                                                }
-                                            }, "The antlers of an elk are inked across your back."], [{
-                                                "type": "cell",
-                                                "roll": {
-                                                    "exact": 5
-                                                }
-                                            }, "Images of your spirit animal are tattooed along your weapon arm and hand."], [{
-                                                "type": "cell",
-                                                "roll": {
-                                                    "exact": 6
-                                                }
-                                            }, "The eyes of a wolf are marked on your back to help you see and ward off evil spirits."]]
-                                }
-                            ]
-                        }, {
-                            "type": "entries",
-                            "name": "Superstitions",
-                            "entries": ["Barbarians vary widely in how they understand life. Some follow gods and look for guidance from those deities in the cycles of nature and the animals they encounter. These barbarians believe that spirits inhabit the plants and animals of the world, and the barbarians look to them for omens and power.", "Other barbarians trust only in the blood that runs in their veins and the steel they hold in their hands. They have no use for the invisible world, instead relying on their senses to hunt and survive like the wild beasts they emulate.", "Both of these attitudes can give rise to superstitions. These beliefs are often passed down within a family or shared among the members of a clan or a hunting group.", "If your barbarian character has any superstitions, were they ingrained in you by your family, or are they the result of personal experience?", {
-                                    "type": "table",
-                                    "caption": "Superstition",
-                                    "colLabels": ["{@dice d6}", "Superstition"],
-                                    "colStyles": ["col-1 text-center", "col-11"],
-                                    "rows": [[{
-                                                "type": "cell",
-                                                "roll": {
-                                                    "exact": 1
-                                                }
-                                            }, "If you disturb the bones of the dead, you inherit all the troubles that plagued them in life."], [{
-                                                "type": "cell",
-                                                "roll": {
-                                                    "exact": 2
-                                                }
-                                            }, "Never trust a wizard. They're all devils in disguise, especially the friendly ones."], [{
-                                                "type": "cell",
-                                                "roll": {
-                                                    "exact": 3
-                                                }
-                                            }, "Dwarves have lost their spirits, and are almost like the undead. That's why they live underground."], [{
-                                                "type": "cell",
-                                                "roll": {
-                                                    "exact": 4
-                                                }
-                                            }, "Magical things bring trouble. Never sleep with a magic object within ten feet of you."], [{
-                                                "type": "cell",
-                                                "roll": {
-                                                    "exact": 5
-                                                }
-                                            }, "When you walk through a graveyard, be sure to wear silver, or a ghost might jump into your body."], [{
-                                                "type": "cell",
-                                                "roll": {
-                                                    "exact": 6
-                                                }
-                                            }, "If an elf looks you in the eyes, she's trying to read your thoughts."]]
-                                }
-                            ]
-                        }
-                    ],
-                    "source": "XGE",
-                    "page": 8
-                }
-            ],
-			"fluff": [
-				{
-					"name": "Barbarian",
-					"type": "section",
-					"entries": [
-						"A tall human tribesman strides through a blizzard, draped in fur and hefting his axe. He laughs as he charges toward the frost giant who dared poach his people's elk herd.",
-						"A half-orc snarls at the latest challenger to her authority over their savage tribe, ready to break his neck with her bare hands as she did to the last six rivals.",
-						"Frothing at the mouth, a dwarf slams his helmet into the face of his drow foe, then turns to drive his armored elbow into the gut of another.",
-						"These barbarians, different as they might be, are defined by their rage: unbridled, unquenchable, and unthinking fury. More than a mere emotion, their anger is the ferocity of a cornered predator, the unrelenting assault of a storm, the churning turmoil of the sea.",
-						"For some, their rage springs from a communion with fierce animal spirits. Others draw from a roiling reservoir of anger at a world full of pain. For every barbarian, rage is a power that fuels not just a battle frenzy but also uncanny reflexes, resilience, and feats of strength.",
-						{
-							"type": "entries",
-							"name": "Primal Instinct",
-							"entries": [
-								"People of towns and cities take pride in how their civilized ways set them apart from animals, as if denying one's own nature was a mark of superiority. To a barbarian, though, civilization is no virtue, but a sign of weakness. The strong embrace their animal nature\u2014keen instincts, primal physicality, and ferocious rage. Barbarians are uncomfortable when hedged in by walls and crowds. They thrive in the wilds of their homelands: the tundra, jungle, or grasslands where their tribes live and hunt.",
-								"Barbarians come alive in the chaos of combat. They can enter a berserk state where rage takes over, giving them superhuman strength and resilience. A barbarian can draw on this reservoir of fury only a few times without resting, but those few rages are usually sufficient to defeat whatever threats arise."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "A Life of Danger",
-							"entries": [
-								"Not every member of the tribes deemed \"barbarians\" by scions of civilized society has the barbarian class. A true barbarian among these people is as uncommon as a skilled fighter in a town, and he or she plays a similar role as a protector of the people and a leader in times of war. Life in the wild places of the world is fraught with peril: rival tribes, deadly weather, and terrifying monsters. Barbarians charge headlong into that danger so that their people don't have to.",
-								"Their courage in the face of danger makes barbarians perfectly suited for adventuring. Wandering is often a way of life for their native tribes, and the rootless life of the adventurer is little hardship for a barbarian. Some barbarians miss the close-knit family structures of the tribe, but eventually find them replaced by the bonds formed among the members of their adventuring parties."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Creating a Barbarian",
-							"entries": [
-								"When creating a barbarian character, think about where your character comes from and his or her place in the world. Talk with your DM about an appropriate origin for your barbarian. Did you come from a distant land, making you a stranger in the area of the campaign? Or is the campaign set in a rough-and-tumble frontier where barbarians are common?",
-								"What led you to take up the adventuring life? Were you lured to settled lands by the promise of riches? Did you join forces with soldiers of those lands to face a shared threat? Did monsters or an invading horde drive you out of your homeland, making you a rootless refugee? Perhaps you were a prisoner of war, brought in chains to \"civilized\" lands and only now able to win your freedom. Or you might have been cast out from your people because of a crime you committed, a taboo you violated, or a coup that removed you from a position of authority.",
-								{
-									"type": "entries",
-									"name": "Quick Build",
-									"entries": [
-										"You can make a barbarian quickly by following these suggestions. First, put your highest ability score in Strength, followed by Constitution. Second, choose the {@background outlander} background."
+                                    "name": "Creación rápida",
+                                    "entries": [
+									"Para crear un bárbaro de forma rápida sugerimos lo siguiente. Para empezar, Fuerza debería ser tu característica más alta, seguida de Constitución. A continuación, elige el trasfondo \"{@background outlander|phb_esp|salvaje}\"."
 									]
-								}
-							]
-						}
-					],
-					"source": "PHB_Esp",
-					"page": 46
-				}
-			]
+                                }
+                            ]
+                        }
+                    ],
+                    "source": "PHB_ESP",
+                    "page": 46
+                }
+            ]
 		},
 		{
 			"name": "Bard",
