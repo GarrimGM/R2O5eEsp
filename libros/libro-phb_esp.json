@@ -37390,7 +37390,7 @@
 			"name": "Martillo de guerra [Warhammer]",
 			"type": "M",
 			"weapon": true,
-			"weaponCategory": "Martial",
+			"weaponCategory": "martial",
 			"rarity": "none",
 			"value": 1500,
 			"weight": 2,
@@ -37579,7 +37579,7 @@
 		},
 		{
 			"name": "Gaita [Bagpipes]",
-			"type": "INS",
+			"type": "Instrumento",
 			"rarity": "none",
 			"value": 3000,
 			"weight": 6,
@@ -37588,6 +37588,58 @@
 			],
 			"source": "PHB_Esp",
 			"page": 154,
+			"additionalSources": [
+				{
+					"source": "XGE",
+					"page": 83
+				}
+			],
+			"additionalEntries": [
+				"Proficiency with a musical instrument indicates you are familiar with the techniques used to play it. You also have knowledge of some songs commonly performed with that instrument.",
+				{
+					"type": "entries",
+					"name": "History",
+					"entries": [
+						"Your expertise aids you in recalling lore related to your instrument."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Performance",
+					"entries": [
+						"Your ability to put on a good show is improved when you incorporate an instrument into your act."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Compose a Tune",
+					"entries": [
+						"As part of a long rest, you can compose a new tune and lyrics for your instrument. You might use this ability to impress a noble or spread scandalous rumors with a catchy tune."
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Musical Instrument",
+					"colLabels": [
+						"Activity",
+						"DC"
+					],
+					"colStyles": [
+						"col-10",
+						"col-2 text-center"
+					],
+					"rows": [
+						[
+							"Identify a tune",
+							"10"
+						],
+						[
+							"Improvise a tune",
+							"20"
+						]
+					]
+				}
+			],
 			"srd": true
 		},
 		{
@@ -38770,7 +38822,7 @@
 		},
 		{
 			"name": "Tambor [Drum]",
-			"type": "INS",
+			"type": "Instrumento",
 			"rarity": "none",
 			"value": 600,
 			"weight": 3,
@@ -38783,7 +38835,7 @@
 		},
 		{
 			"name": "Dulcémele [Dulcimer]",
-			"type": "INS",
+			"type": "Instrumento",
 			"rarity": "none",
 			"value": 2500,
 			"weight": 10,
@@ -38994,7 +39046,7 @@
 		},
 		{
 			"name": "Flauta [Flute]",
-			"type": "INS",
+			"type": "Instrumento",
 			"rarity": "none",
 			"value": 200,
 			"weight": 1,
@@ -39424,7 +39476,7 @@
 		},
 		{
 			"name": "Cuerno [Horn]",
-			"type": "INS",
+			"type": "Instrumento",
 			"rarity": "none",
 			"value": 300,
 			"weight": 2,
@@ -39733,7 +39785,7 @@
 		},
 		{
 			"name": "Laúd [Lute]",
-			"type": "INS",
+			"type": "Instrumento",
 			"rarity": "none",
 			"value": 3500,
 			"weight": 2,
@@ -39746,7 +39798,7 @@
 		},
 		{
 			"name": "Lira [Lyre]",
-			"type": "INS",
+			"type": "Instrumento",
 			"rarity": "none",
 			"value": 3000,
 			"weight": 2,
@@ -40118,7 +40170,7 @@
 		},
 		{
 			"name": "Flauta de pan [Pan Flute]",
-			"type": "INS",
+			"type": "Instrumento",
 			"rarity": "none",
 			"value": 1200,
 			"weight": 2,
@@ -40650,7 +40702,7 @@
 		},
 		{
 			"name": "Chirimía [Shawm]",
-			"type": "INS",
+			"type": "Instrumento",
 			"rarity": "none",
 			"value": 200,
 			"weight": 1,
@@ -41623,7 +41675,7 @@
 		},
 		{
 			"name": "Viola [Viol]",
-			"type": "INS",
+			"type": "Instrumento",
 			"rarity": "none",
 			"value": 3000,
 			"weight": 1,
@@ -41960,7 +42012,7 @@
 		},
 		{
 			"name": "Instrumentos musicales [Musical Instrument]",
-			"type": "INS",
+			"type": "Instrumento",
 			"rarity": "none",
 			"property": [
 				"INS_COMPLETE_TYPE_ESP"
