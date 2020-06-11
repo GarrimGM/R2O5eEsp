@@ -36422,7 +36422,7 @@
 			"page": 296
 		}
 	],
-	"baseitem": [
+	"item": [
 		{
 			"name": "Flecha [Arrow]",
 			"source": "PHB_ESP",
@@ -37375,33 +37375,33 @@
 		},
 		{
 			"name": "Pico de guerra [War Pick]",
-			"source": "PHB_ESP",
-            "page": 149,
-            "srd": true,
-            "type": "M",
-            "rarity": "none",
-            "weight": 2,
-            "value": 500,
-            "weaponCategory": "martial",
-            "dmg1": "1d8",
-            "dmgType": "P",
-            "weapon": true
+			"type": "M",
+			"weapon": true,
+			"weaponCategory": "Martial",
+			"rarity": "none",
+			"value": 500,
+			"weight": 2,
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"source": "PHB_Esp",
+			"page": 149
 		},
 		{
 			"name": "Martillo de guerra [Warhammer]",
-			"source": "PHB_ESP",
-            "page": 149,
-            "srd": true,
-            "type": "M",
-            "rarity": "none",
-            "weight": 2,
-            "value": 1500,
-            "weaponCategory": "martial",
-            "property": ["V_ESP"],
-            "dmg1": "1d8",
-            "dmgType": "B",
-            "dmg2": "1d10",
-            "weapon": true
+			"type": "M",
+			"weapon": true,
+			"weaponCategory": "Martial",
+			"rarity": "none",
+			"value": 1500,
+			"weight": 2,
+			"dmg1": "1d8",
+			"dmg2": "1d10",
+			"dmgType": "B",
+			"property": [
+				"V_ESP"
+			],
+			"source": "PHB_Esp",
+			"page": 149
 		},
 		{
 			"name": "Látigo [Whip]",
@@ -37419,9 +37419,7 @@
 			],
 			"source": "PHB_Esp",
 			"page": 149
-		}
-	],
-	"item": [
+		},
 		{
 			"name": "Ábaco [Abacus]",
 			"rarity": "none",
@@ -41178,7 +41176,7 @@
 			"srd": true
 		},
 		{
-			"name": "Antorcha2 [Torch]",
+			"name": "Antorcha [Torch]",
 			"type": "G",
 			"rarity": "none",
 			"value": 1,
