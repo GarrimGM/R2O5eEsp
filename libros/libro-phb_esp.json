@@ -15081,872 +15081,357 @@
             ]
 		},
 		{
-			"name": "Bard",
-			"source": "PHB_Esp",
-			"page": 51,
-			"srd": true,
-			"hd": {
-				"number": 1,
-				"faces": 8
-			},
-			"proficiency": [
-				"dex",
-				"cha"
-			],
-			"spellcastingAbility": "cha",
-			"casterProgression": "full",
-			"startingProficiencies": {
-				"armor": [
-					"light"
-				],
-				"weapons": [
-					"simple",
-					"hand crossbows",
-					"longswords",
-					"rapiers",
-					"shortswords"
-				],
-				"tools": [
-					"three musical instruments of your choice"
-				],
-				"skills": [
-					{
-						"choose": {
-							"from": [
-								"athletics",
-								"acrobatics",
-								"sleight of hand",
-								"stealth",
-								"arcana",
-								"history",
-								"investigation",
-								"nature",
-								"religion",
-								"animal handling",
-								"insight",
-								"medicine",
-								"perception",
-								"survival",
-								"deception",
-								"intimidation",
-								"performance",
-								"persuasion"
-							],
-							"count": 3
-						}
-					}
-				]
-			},
-			"startingEquipment": {
-				"additionalFromBackground": true,
-				"default": [
-					"(a) a {@item Estoque [Rapier]|phb_esp}, (b) a {@item Espada larga [Longsword]|phb_esp}, or (c) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
-					"(a) a {@item Paquete de diplomático [Diplomat's Pack]|phb_esp} or (b) an {@item Paquete de artista [Entertainer's Pack]|phb_esp}",
-					"(a) a {@item Laúd [Lute]|phb_esp} or (b) any other {@filter musical instrument|items|miscellaneous=mundane|type=instrument}",
-					"{@item Armadura de cuero [Leather Armor]|phb_esp}, and a {@item Daga [Dagger]|phb_esp}"
-				],
-				"goldAlternative": "{@dice 5d4×10|5d4 × 10|Starting Gold}"
-			},
-			"multiclassing": {
-				"requirements": {
-					"cha": 13
-				},
-				"proficienciesGained": {
-					"armor": [
-						"light"
-					],
-					"skills": [
-						{
-							"choose": {
-								"from": [
-									"athletics",
-									"acrobatics",
-									"sleight of hand",
-									"stealth",
-									"arcana",
-									"history",
-									"investigation",
-									"nature",
-									"religion",
-									"animal handling",
-									"insight",
-									"medicine",
-									"perception",
-									"survival",
-									"deception",
-									"intimidation",
-									"performance",
-									"persuasion"
-								],
-								"count": 1
-							}
-						}
-					],
-					"tools": [
-						"one musical instrument of your choice"
-					]
-				}
-			},
-			"classTableGroups": [
-				{
-					"colLabels": [
-						"{@filter Cantrips Known|spells|level=0|class=bard}",
-						"{@filter Spells Known|spells|class=bard}"
-					],
-					"rows": [
-						[
-							2,
-							4
-						],
-						[
-							2,
-							5
-						],
-						[
-							2,
-							6
-						],
-						[
-							3,
-							7
-						],
-						[
-							3,
-							8
-						],
-						[
-							3,
-							9
-						],
-						[
-							3,
-							10
-						],
-						[
-							3,
-							11
-						],
-						[
-							3,
-							12
-						],
-						[
-							4,
-							14
-						],
-						[
-							4,
-							15
-						],
-						[
-							4,
-							15
-						],
-						[
-							4,
-							16
-						],
-						[
-							4,
-							18
-						],
-						[
-							4,
-							19
-						],
-						[
-							4,
-							19
-						],
-						[
-							4,
-							20
-						],
-						[
-							4,
-							22
-						],
-						[
-							4,
-							22
-						],
-						[
-							4,
-							22
+            "name": "Bardo",
+            "source": "PHB_ESP",
+            "page": 51,
+            "srd": true,
+            "hd": {
+                "number": 1,
+                "faces": 8
+            },
+            "proficiency": ["dex", "cha"],
+            "spellcastingAbility": "cha",
+            "casterProgression": "full",
+            "startingProficiencies": {
+                "armor": ["light"],
+                "weapons": ["simple", "hand crossbows", "longswords", "rapiers", "shortswords"],
+                "tools": ["tres instrumentos musicales a tu elección"],
+                "skills": [{
+                        "choose": {
+                            "from": ["athletics|Atletismo", "acrobatics|Acrobacias", "sleight of hand|Juego de Manos", "stealth|Sigilo", "arcana|Conocimiento Arcano", "history|Historia", "investigation|Investigación", "nature|Naturaleza", "religion|Religión", "animal handling|Trato con Animales", "insight|Perspicacia", "medicine|Medicina", "perception|Percepción", "survival|Supervivencia", "deception|Engaño", "intimidation|Intimidación", "performance|Interpretación", "persuasion|Persuasión"],
+                            "count": 3
+                        }
+                    }
+                ]
+            },
+            "startingEquipment": {
+                "additionalFromBackground": true,
+                "default": ["(a) un {@item Estoque [Rapier]|phb_esp|estoque}, (b) una {@item Espada larga [Longsword]|phb_esp|espada larga} o (c) cualquier {@filter simple arma sencilla|items|source=phb_esp|category=basic|type=simple weapon}", "(a) un {@item Paquete de diplomático [Diplomat's Pack]|phb_esp|paquete de diplomático} o (b) un {@item Paquete de artista [Entertainer's Pack]|phb_esp|paquete de artista}", "(a) un {@item Flauta [Flute]|phb_esp|flauta} o (b) cualquier otro {@filter instrumento musical|items|miscellaneous=mundane|type=instrumento}", "{@item Armadura de cuero [Leather Armor]|phb_esp|armadura de cuero} y una {@item Daga [Dagger]|phb_esp|daga}"],
+                "goldAlternative": "{@dice 5d4×10|5d4 × 10|Starting Gold}"
+            },
+            "multiclassing": {
+                "requirements": {
+                    "cha": 13
+                },
+                "proficienciesGained": {
+                    "armor": ["light"],
+                    "skills": [{
+                            "choose": {
+                                "from": ["athletics|Atletismo", "acrobatics|Acrobacias", "sleight of hand|Juego de Manos", "stealth|Sigilo", "arcana|Conocimiento Arcano", "history|Historia", "investigation|Investigación", "nature|Naturaleza", "religion|Religión", "animal handling|Trato con Animales", "insight|Perspicacia", "medicine|Medicina", "perception|Percepción", "survival|Supervivencia", "deception|Engaño", "intimidation|Intimidación", "performance|Interpretación", "persuasion|Persuasión"],
+                                "count": 1
+                            }
+                        }
+                    ],
+                    "tools": ["un instrumento musical a tu elección"]
+                }
+            },
+            "classTableGroups": [{
+                    "colLabels": ["{@filter Cantrips Known|spells|level=0|class=bardo (PHB_ESP)}", "{@filter Spells Known|spells|class=bardo (PHB_ESP)}"],
+                    "rows": [[2, 4], [2, 5], [2, 6], [3, 7], [3, 8], [3, 9], [3, 10], [3, 11], [3, 12], [4, 14], [4, 15], [4, 15], [4, 16], [4, 18], [4, 19], [4, 19], [4, 20], [4, 22], [4, 22], [4, 22]]
+                }, {
+                    "title": "Espacios de conjuro por cada nivel de conjuro",
+                    "colLabels": ["{@filter 1st|spells|level=1|class=bardo (PHB_ESP)}", "{@filter 2nd|spells|level=2|class=bardo (PHB_ESP)}", "{@filter 3rd|spells|level=3|class=bardo (PHB_ESP)}", "{@filter 4th|spells|level=4|class=bardo (PHB_ESP)}", "{@filter 5th|spells|level=5|class=bardo (PHB_ESP)}", "{@filter 6th|spells|level=6|class=bardo (PHB_ESP)}", "{@filter 7th|spells|level=7|class=bardo (PHB_ESP)}", "{@filter 8th|spells|level=8|class=bardo (PHB_ESP)}", "{@filter 9th|spells|level=9|class=bardo (PHB_ESP)}"],
+                    "rows": [[2, 0, 0, 0, 0, 0, 0, 0, 0], [3, 0, 0, 0, 0, 0, 0, 0, 0], [4, 2, 0, 0, 0, 0, 0, 0, 0], [4, 3, 0, 0, 0, 0, 0, 0, 0], [4, 3, 2, 0, 0, 0, 0, 0, 0], [4, 3, 3, 0, 0, 0, 0, 0, 0], [4, 3, 3, 1, 0, 0, 0, 0, 0], [4, 3, 3, 2, 0, 0, 0, 0, 0], [4, 3, 3, 3, 1, 0, 0, 0, 0], [4, 3, 3, 3, 2, 0, 0, 0, 0], [4, 3, 3, 3, 2, 1, 0, 0, 0], [4, 3, 3, 3, 2, 1, 0, 0, 0], [4, 3, 3, 3, 2, 1, 1, 0, 0], [4, 3, 3, 3, 2, 1, 1, 0, 0], [4, 3, 3, 3, 2, 1, 1, 1, 0], [4, 3, 3, 3, 2, 1, 1, 1, 0], [4, 3, 3, 3, 2, 1, 1, 1, 1], [4, 3, 3, 3, 3, 1, 1, 1, 1], [4, 3, 3, 3, 3, 2, 1, 1, 1], [4, 3, 3, 3, 3, 2, 2, 1, 1]]
+                }
+            ],
+            "classFeatures": [[{
+                        "name": "Inspiración Bárdica",
+                        "entries": [
+							"Puedes recurrir a tus palabras o a tu música, especialmente emotivas, para inspirar a las demás. Para hacer esto, deberás utilizar una acción adicional durante tu turno y elegir a una criatura que no seas tú, pueda oírte y esté a 60 pies o menos de ti. Dicho objetivo recibe un dado de Inspiración Bárdica, {@dice d6}.", 
+							"Una sola vez, antes de que pasen 10 minutos, la criatura puede tirar el dado y añadir el resultado a una de sus pruebas de característica, tiradas de ataque o tiradas de salvación. Puede esperar a ver el resultado del {@dice d20} antes de elegir si usar el dado de Inspiración Bárdica, pero debe tomar la decisión antes de que el DM diga si la tirada tiene éxito o no. Una vez se tira el dado de Inspiración Bárdica, este se pierde. Además, cada criatura solo puede tener un dado de Inspiración Bárdica al mismo tiempo.", 
+							"Puedes utilizar este rasgo tantas veces como tu modificador por Carisma (mínimo una vez). Recuperas todos los usos tras finalizar un descanso largo.", 
+							"Tu dado de Inspiración Bárdica cambia cuando alcanzas ciertos niveles de esta clase: pasa a ser {@dice d8} a nivel 5, {@dice d10} a nivel 10 y {@dice d12} a nivel 15."
 						]
-					]
-				},
-				{
-					"title": "Spell Slots per Spell Level",
-					"colLabels": [
-						"{@filter 1st|spells|level=1|class=bard}",
-						"{@filter 2nd|spells|level=2|class=bard}",
-						"{@filter 3rd|spells|level=3|class=bard}",
-						"{@filter 4th|spells|level=4|class=bard}",
-						"{@filter 5th|spells|level=5|class=bard}",
-						"{@filter 6th|spells|level=6|class=bard}",
-						"{@filter 7th|spells|level=7|class=bard}",
-						"{@filter 8th|spells|level=8|class=bard}",
-						"{@filter 9th|spells|level=9|class=bard}"
-					],
-					"rows": [
-						[
-							2,
-							0,
-							0,
-							0,
-							0,
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							3,
-							0,
-							0,
-							0,
-							0,
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							2,
-							0,
-							0,
-							0,
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							0,
-							0,
-							0,
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							2,
-							0,
-							0,
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							0,
-							0,
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							1,
-							0,
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							2,
-							0,
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							1,
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							2,
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							2,
-							1,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							2,
-							1,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							2,
-							1,
-							1,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							2,
-							1,
-							1,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							2,
-							1,
-							1,
-							1,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							2,
-							1,
-							1,
-							1,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							2,
-							1,
-							1,
-							1,
-							1
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							3,
-							1,
-							1,
-							1,
-							1
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							3,
-							2,
-							1,
-							1,
-							1
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							3,
-							2,
-							2,
-							1,
-							1
-						]
-					]
-				}
-			],
-			"classFeatures": [
-				[
-					{
-						"name": "Bardic Inspiration",
-						"entries": [
-							"You can inspire others through stirring words or music. To do so, you use a bonus action on your turn to choose one creature other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a {@dice d6}.",
-							"Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after it rolls the {@dice d20} before deciding to use the Bardic Inspiration die, but must decide before the DM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A creature can have only one Bardic Inspiration die at a time.",
-							"You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain any expended uses when you finish a long rest.",
-							"Your Bardic Inspiration die changes when you reach certain levels in this class. The die becomes a {@dice d8} at 5th level, a {@dice d10} at 10th level, and a {@dice d12} at 15th level."
-						]
-					},
-					{
-						"name": "Spellcasting",
-						"entries": [
-							"You have learned to untangle and reshape the fabric of reality in harmony with your wishes and music. Your spells are part of your vast repertoire, magic that you can tune to different situations. See {@book chapter 10|PHB|10} for the general rules of spellcasting and chapter 11 for the {@filter bard spell list|spells|class=bard}.",
-							{
-								"type": "entries",
-								"name": "Cantrips",
-								"entries": [
-									"You know two cantrips of your choice from the bard spell list. You learn additional bard cantrips of your choice at higher levels, learning a 3rd cantrip at 4th level and a 4th at 10th level."
+                    }, {
+                        "name": "Lanzamiento de Conjuros",
+                        "entries": ["Has aprendido a desenmarañar y remodelar el tejido de la realidad, en armonía con tus deseos y la música. Los conjuros que puedes lanzar son parte de tu vasto repertorio; una magia que afinas para adaptarte a diferentes situaciones. El {@book capítulo 10|phbesp|10} contiene las reglas de lanzamiento de conjuros y el 11 la {@filter lista de conjuros de bardo|spells|class=bardo (PHB_ESP)}.", {
+                                "type": "entries",
+                                "name": "Trucos",
+                                "entries": ["Conoces dos trucos de tu elección escogidos de entre los de la lista de conjuros de bardo. Podrás elegir más trucos de bardo cuando llegues a niveles más altos, como se indica en la columna “trucos conocidos” de la tabla del bardo."]
+                            }, {
+                                "type": "entries",
+                                "name": "Espacios de conjuro",
+                                "entries": [
+									"La tabla del bardo muestra de cuantos espacios de conjuro dispones para lanzar {@filter conjuros de bardo|spells|class=bardo (PHB_ESP)} de nivel 1 y superiores. Para lanzar uno de estos conjuros deberás invertir un espacio de al menos el nivel del conjuro. Recuperas todos los espacios utilizados tras finalizar un descanso largo.",
+									"Si, por ejemplo, conoces el conjuro de nivel 1 {@spell Curar heridas [Cure Wounds]|phb_esp|curar heridas} y posees un espacio de conjuro de nivel 1 y otro de nivel 2, podrías lanzar {@spell Curar heridas [Cure Wounds]|phb_esp|curar heridas} empleando cualquiera de los dos espacios."
 								]
-							},
-							{
-								"type": "entries",
-								"name": "Spell Slots",
-								"entries": [
-									"The Bard table shows how many spell slots you have to cast your {@filter bard spells|spells|class=bard} of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
-									"For example, if you know the 1st-level spell {@spell Curar heridas [Cure Wounds]|phb_esp|curar heridas} and have a 1st-level and a 2nd-level spell slot available, you can cast {@spell Curar heridas [Cure Wounds]|phb_esp|curar heridas} using either slot."
+                            }, {
+                                "type": "entries",
+                                "name": "Conjuros conocidos de nivel 1 y superiores",
+                                "entries": [
+									"Conoces cuatro conjuros de nivel 1 de tu elección, escogidos de entre la lista de conjuros de bardo.", 
+									"La columna “conjuros conocidos” de la tabla del bardo te indica cuando podrás aprender más conjuros de bardo y cuántos elegir. Estos conjuros deben ser de un nivel para el que tengas espacios de conjuro, tal y como se indica en la tabla. Así, cuando subes a nivel 3 en esta clase puedes aprender un conjuro nuevo, que puede ser de nivel 1 o 2.",
+									"Además, cada vez que subas un nivel de esta clase podrás elegir uno de los conjuros de bardo que ya conoces y reemplazarlo por otro de los que aparecen en la lista de conjuros de bardo. Este reemplazo deberá ser de un nivel para el que poseas espacios de conjuro."
 								]
-							},
-							{
-								"type": "entries",
-								"name": "Spells Known of 1st Level and Higher",
-								"entries": [
-									"You know four 1st-level spells of your choice from the bard spell list.",
-									"You learn an additional bard spell of your choice at each level except 12th, 16th, 19th, and 20th. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 3rd level in this class, you can learn one new spell of 1st or 2nd level.",
-									"Additionally, when you gain a level in this class, you can choose one of the bard spells you know and replace it with another spell from the bard spell list, which also must be of a level for which you have spell slots."
-								]
-							},
-							{
-								"type": "entries",
-								"name": "Spellcasting Ability",
-								"entries": [
-									"Charisma is your spellcasting ability for your bard spells. Your magic comes from the heart and soul you pour into the performance of your music or oration. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a bard spell you cast and when making an attack roll with one.",
-									{
-										"type": "abilityDc",
-										"name": "Spell",
-										"attributes": [
-											"cha"
-										]
-									},
-									{
-										"type": "abilityAttackMod",
-										"name": "Spell",
-										"attributes": [
-											"cha"
-										]
-									}
-								]
-							},
-							{
-								"type": "entries",
-								"name": "Ritual Casting",
-								"entries": [
-									"You can cast any bard spell you know as a ritual if that spell has the ritual tag."
-								]
-							},
-							{
-								"type": "entries",
-								"name": "Spellcasting Focus",
-								"entries": [
-									"You can use a musical instrument (found in chapter 5) as a spellcasting focus for your bard spells."
-								]
-							}
+                            }, {
+                                "type": "entries",
+                                "name": "Aptitud mágica",
+                                "entries": ["El Carisma es tu aptitud mágica en lo que a conjuros de bardo respecta, ya que tu magia proviene del corazón y el alma que pones cuando interpretas tus canciones o discursos. Así, utilizarás tu Carisma siempre que un conjuro de bardo haga referencia a tu aptitud mágica. Además, también usarás tu modificador por Carisma para determinar la CD de las tiradas de salvación y las tiradas de ataque de los conjuros de bardo que lances.", {
+                                        "type": "abilityDc",
+                                        "name": "Spell",
+                                        "attributes": ["cha"]
+                                    }, {
+                                        "type": "abilityAttackMod",
+                                        "name": "Spell",
+                                        "attributes": ["cha"]
+                                    }
+                                ]
+                            }, {
+                                "type": "entries",
+                                "name": "Lanzamiento ritual",
+                                "entries": ["Puedes lanzar de forma ritual aquellos conjuros de bardo que conozcas y estén marcados come \"ritual\"."]
+                            }, {
+                                "type": "entries",
+                                "name": "Canalizador mágico",
+                                "entries": ["Puedes utilizar un instrumento musical (mira el capítulo 5: \"Equipo\") como canalizador mágico para los conjuros de bardo."]
+                            }
+                        ]
+                    }
+                ], [{
+                        "name": "Aprendiz de Mucho",
+                        "entries": ["A partir de nivel 2, puedes añadir la mitad de tu bonificador por competencia (redondeado hacia abajo) a cualquier prueba de característica que hagas que no se beneficie ya de tu bonificador por competencia."]
+                    }, {
+                        "name": "Canción de Descanso (d6)",
+                        "entries": [
+							"A partir de nivel 2, puedes recurrir a palabras o canciones reconfortantes para ayudar a tus aliados heridos a recuperarse durante un descanso corto. Si cualquiera de las criaturas amistosas (incluyéndote a ti) que escuchan tu interpretación gasta Dados de Golpe para recuperar puntos de golpe al final del descanso corto, cada una de ellas recobrará {@dice 1d6} puntos de golpe adicionales.", 
+							"Estos puntos de golpe adicionales aumentan cuando alcanzas ciertos niveles de esta clase: a {@dice 1d8} a nivel 9, a {@dice 1d10} a nivel 13 y a {@dice 1d12} a nivel 17."
 						]
-					}
-				],
-				[
-					{
-						"name": "Jack of All Trades",
-						"entries": [
-							"Starting at 2nd level, you can add half your proficiency bonus, rounded down, to any ability check you make that doesn't already include your proficiency bonus."
-						]
-					},
-					{
-						"name": "Song of Rest (d6)",
-						"entries": [
-							"Beginning at 2nd level, you can use soothing music or oration to help revitalize your wounded allies during a short rest. If you or any friendly creatures who can hear your performance regain hit points by spending Hit Dice at the end of the short rest, each of those creatures regains an extra {@dice 1d6} hit points.",
-							"The extra hit points increase when you reach certain levels in this class: to {@dice 1d8} at 9th level, to {@dice 1d10} at 13th level, and to {@dice 1d12} at 17th level."
-						]
-					}
-				],
-				[
-					{
-						"name": "Bard College",
-						"entries": [
-							"At 3rd level, you delve into the advanced techniques of a bard college of your choice from the list of available colleges. Your choice grants you features at 3rd level and again at 6th and 14th level."
-						],
-						"gainSubclassFeature": true
-					},
-					{
-						"name": "Expertise",
-						"entries": [
-							"At 3rd level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.",
-							"At 10th level, you can choose another two skill proficiencies to gain this benefit."
-						]
-					}
-				],
-				[
-					{
-						"name": "Ability Score Improvement",
-						"entries": [
-							"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-							"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-						]
-					}
-				],
-				[
-					{
-						"name": "Bardic Inspiration (d8)",
-						"entries": [
-							"At 5th level, your Bardic Inspiration die changes to a {@dice d8}."
-						]
-					},
-					{
-						"name": "Font of Inspiration",
-						"entries": [
-							"Beginning when you reach 5th level, you regain all of your expended uses of Bardic Inspiration when you finish a short or long rest."
-						]
-					}
-				],
-				[
-					{
-						"name": "Countercharm",
-						"entries": [
-							"At 6th level, you gain the ability to use musical notes or words of power to disrupt mind-influencing effects. As an action, you can start a performance that lasts until the end of your next turn. During that time, you and any friendly creatures within 30 feet of you have advantage on saving throws against being {@condition Asustado [Frightened]|phb_esp|asustado} or {@condition Hechizado [Charmed]|phb_esp|hechizado}. A creature must be able to hear you to gain this benefit. The performance ends early if you are {@condition Incapacitado [Incapacitated]|phb_esp|incapacitado} or silenced or if you voluntarily end it (no action required)."
-						]
-					},
-					{
-						"name": "Bard College feature",
-						"entries": [
-							"At 6th level, you gain a feature from your Bard College."
-						],
-						"gainSubclassFeature": true
-					}
-				],
-				[],
-				[
-					{
-						"name": "Ability Score Improvement",
-						"entries": [
-							"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-							"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-						]
-					}
-				],
-				[
-					{
-						"name": "Song of Rest (d8)",
-						"entries": [
-							"At 9th level, the extra hit points gained from Song of Rest increases to {@dice 1d8}."
-						]
-					}
-				],
-				[
-					{
-						"name": "Bardic Inspiration (d10)",
-						"entries": [
-							"At 10th level, your Bardic Inspiration die changes to a {@dice d10}."
-						]
-					},
-					{
-						"name": "Expertise",
-						"entries": [
-							"At 10th level, you can choose another two skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies."
-						]
-					},
-					{
-						"name": "Magical Secrets",
-						"entries": [
-							"By 10th level, you have plundered magical knowledge from a wide spectrum of disciplines. Choose two spells from any classes, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip.",
-							"The chosen spells count as bard spells for you and are included in the number in the Spells Known column of the Bard table.",
-							"You learn two additional spells from any classes at 14th level and again at 18th level."
-						]
-					}
-				],
-				[],
-				[
-					{
-						"name": "Ability Score Improvement",
-						"entries": [
-							"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-							"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-						]
-					}
-				],
-				[
-					{
-						"name": "Song of Rest (d10)",
-						"entries": [
-							"At 13th level, the extra hit points gained from Song of Rest increases to {@dice 1d10}."
-						]
-					}
-				],
-				[
-					{
-						"name": "Magical Secrets",
-						"entries": [
-							"At 14th level, choose two additional spells from any classes, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip.",
-							"The chosen spells count as bard spells for you and are included in the number in the Spells Known column of the Bard table."
-						]
-					},
-					{
-						"name": "Bard College feature",
-						"entries": [
-							"At 14th level, you gain a feature from your Bard College."
-						],
-						"gainSubclassFeature": true
-					}
-				],
-				[
-					{
-						"name": "Bardic Inspiration (d12)",
-						"entries": [
-							"At 15th level, your Bardic Inspiration die changes to a {@dice d12}."
-						]
-					}
-				],
-				[
-					{
-						"name": "Ability Score Improvement",
-						"entries": [
-							"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-							"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-						]
-					}
-				],
-				[
-					{
-						"name": "Song of Rest (d12)",
-						"entries": [
-							"At 17th level, the extra hit points gained from Song of Rest increases to {@dice 1d12}."
-						]
-					}
-				],
-				[
-					{
-						"name": "Magical Secrets",
-						"entries": [
-							"At 18th level, choose two additional spells from any class, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip.",
-							"The chosen spells count as bard spells for you and are included in the number in the Spells Known column of the Bard table."
-						]
-					}
-				],
-				[
-					{
-						"name": "Ability Score Improvement",
-						"entries": [
-							"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-							"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-						]
-					}
-				],
-				[
-					{
-						"name": "Superior Inspiration",
-						"entries": [
-							"At 20th level, when you roll initiative and have no uses of Bardic Inspiration left, you regain one use."
-						]
-					}
-				]
-			],
-			"subclassTitle": "Bard College",
-			"subclasses": [
-				{
-					"name": "College of Lore",
-					"shortName": "Lore",
-					"source": "PHB_Esp",
-					"srd": true,
-					"subclassFeatures": [
-						[
-							{
-								"name": "College of Lore",
-								"entries": [
-									"Bards of the College of Lore know something about most things, collecting bits of knowledge from sources as diverse as scholarly tomes and peasant tales. Whether singing folk ballads in taverns or elaborate compositions in royal courts, these bards use their gifts to hold audiences spellbound. When the applause dies down, the audience members might find themselves questioning everything they held to be true, from their faith in the priesthood of the local temple to their loyalty to the king.",
-									"The loyalty of these bards lies in the pursuit of beauty and truth, not in fealty to a monarch or following the tenets of a deity. A noble who keeps such a bard as a herald or advisor knows that the bard would rather be honest than politic.",
-									"The college's members gather in libraries and sometimes in actual colleges, complete with classrooms and dormitories, to share their lore with one another. They also meet at festivals or affairs of state, where they can expose corruption, unravel lies, and poke fun at self-important figures of authority.",
-									{
-										"type": "entries",
-										"name": "Bonus Proficiencies",
-										"entries": [
-											"When you join the College of Lore at 3rd level, you gain proficiency with three skills of your choice."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Cutting Words",
-										"entries": [
-											"Also at 3rd level, you learn how to use your wit to distract, confuse, and otherwise sap the confidence and competence of others. When a creature that you can see within 60 feet of you makes an attack roll, an ability check, or a damage roll, you can use your reaction to expend one of your uses of Bardic Inspiration, rolling a Bardic Inspiration die and subtracting the number rolled from the creature's roll. You can choose to use this feature after the creature makes its roll, but before the DM determines whether the attack roll or ability check succeeds or fails, or before the creature deals its damage. The creature is immune if it can't hear you or if it's immune to being {@condition Hechizado [Charmed]|phb_esp|hechizado}."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Additional Magical Secrets",
-										"entries": [
-											"At 6th level, you learn two spells of your choice from any class. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip. The chosen spells count as bard spells for you but don't count against the number of bard spells you know."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Peerless Skill",
-										"entries": [
-											"Starting at 14th level, when you make an ability check, you can expend one use of Bardic Inspiration. Roll a Bardic Inspiration die and add the number rolled to your ability check. You can choose to do so after you roll the die for the ability check, but before the DM tells you whether you succeed or fail."
-										]
-									}
-								]
-							}
-						]
-					]
-				},
-				{
-					"name": "College of Valor",
-					"shortName": "Valor",
-					"source": "PHB_Esp",
-					"subclassFeatures": [
-						[
-							{
-								"name": "College of Valor",
-								"entries": [
-									"Bards of the College of Valor are daring skalds whose tales keep alive the memory of the great heroes of the past, and thereby inspire a new generation of heroes. These bards gather in mead halls or around great bonfires to sing the deeds of the mighty, both past and present. They travel the land to witness great events firsthand and to ensure that the memory of those events doesn't pass from the world. With their songs, they inspire others to reach the same heights of accomplishment as the heroes of old.",
-									{
-										"type": "entries",
-										"name": "Bonus Proficiencies",
-										"entries": [
-											"When you join the College of Valor at 3rd level, you gain proficiency with medium armor, shields, and martial weapons."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Combat Inspiration",
-										"entries": [
-											"Also at 3rd level, you learn to inspire others in battle. A creature that has a Bardic Inspiration die from you can roll that die and add the number rolled to a weapon damage roll it just made. Alternatively, when an attack roll is made against the creature, it can use its reaction to roll the Bardic Inspiration die and add the number rolled to its AC against that attack, after seeing the roll but before knowing whether it hits or misses."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Extra Attack",
-										"entries": [
-											"Starting at 6th level, you can attack twice, instead of once, whenever you take the {@action Atacar [Attack]|phb_esp|atacar} action on your turn."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Battle Magic",
-										"entries": [
-											"At 14th level, you have mastered the art of weaving spellcasting and weapon use into a single harmonious act. When you use your action to cast a bard spell, you can make one weapon attack as a bonus action."
-										]
-									}
-								]
-							}
-						]
-					]
-				}
-			],
-			"fluff": [
-				{
-					"name": "Bard",
-					"type": "section",
-					"entries": [
-						"Humming as she traces her fingers over an ancient monument in a long-forgotten ruin, a half-elf in rugged leathers finds knowledge springing into her mind, conjured forth by the magic of her song\u2014knowledge of the people who constructed the monument and the mythic saga it depicts.",
-						"A stern human warrior bangs his sword rhythmically against his scale mail, setting the tempo for his war chant and exhorting his companions to bravery and heroism. The magic of his song fortifies and emboldens them.",
-						"Laughing as she tunes her cittern, a gnome weaves her subtle magic over the assembled nobles, ensuring that her companions' words will be well received.",
-						"Whether scholar, skald, or scoundrel, a bard weaves magic through words and music to inspire allies, demoralize foes, manipulate minds, create illusions, and even heal wounds.",
-						{
-							"type": "entries",
-							"name": "Music and Magic",
-							"entries": [
-								"In the worlds of D&D, words and music are not just vibrations of air, but vocalizations with power all their own. The bard is a master of song, speech, and the magic they contain. Bards say that the multiverse was spoken into existence, that the words of the gods gave it shape, and that echoes of these primordial Words of Creation still resound throughout the cosmos. The music of bards is an attempt to snatch and harness those echoes, subtly woven into their spells and powers.",
-								"The greatest strength of bards is their sheer versatility. Many bards prefer to stick to the sidelines in combat, using their magic to inspire their allies and hinder their foes from a distance. But bards are capable of defending themselves in melee if necessary, using their magic to bolster their swords and armor. Their spells lean toward charms and illusions rather than blatantly destructive spells. They have a wide-ranging knowledge of many subjects and a natural aptitude that lets them do almost anything well. Bards become masters of the talents they set their minds to perfecting, from musical performance to esoteric knowledge."
+                    }
+                ], [{
+                        "name": "Colegio Bárdico",
+                        "entries": ["A nivel 3 profundizas en las técnicas avanzadas de un colegio bárdico a tu elección: el Colegio del Conocimiento o el Colegio del Valor. Ambos están explicados al final de la descripción de esta clase. Esta elección te proporciona ciertos rasgos cuando alcanzas los niveles 3, 6 y 14."],
+                        "gainSubclassFeature": true
+                    }, {
+                        "name": "Pericia",
+                        "entries": [
+							"A nivel 3, escoge dos habilidades en las que seas competente. Tu bonificador por competencia se duplica para cualquier prueba de característica que hagas utilizando cualquiera de las dos habilidades elegidas.", 
+							"A nivel 10 puedes elegir otras dos habilidades en las que seas competente, para que estas también disfruten de este beneficio."
 							]
-						},
-						{
-							"type": "entries",
-							"name": "Learning from Experience",
-							"entries": [
-								"True bards are not common in the world. Not every minstrel singing in a tavern or jester cavorting in a royal court is a bard. Discovering the magic hidden in music requires hard study and some measure of natural talent that most troubadours and jongleurs lack. It can be hard to spot the difference between these performers and true bards, though. A bard's life is spent wandering across the land gathering lore, telling stories, and living on the gratitude of audiences, much like any other entertainer. But a depth of knowledge, a level of musical skill, and a touch of magic set bards apart from their fellows.",
-								"Only rarely do bards settle in one place for long, and their natural desire to travel\u2014to find new tales to tell, new skills to learn, and new discoveries beyond the horizon\u2014makes an adventuring career a natural calling. Every adventure is an opportunity to learn, practice a variety of skills, enter long-forgotten tombs, discover lost works of magic, decipher old tomes, travel to strange places, or encounter exotic creatures. Bards love to accompany heroes to witness their deeds firsthand. A bard who can tell an awe-inspiring story from personal experience earns renown among other bards. Indeed, after telling so many stories about heroes accomplishing mighty deeds, many bards take these themes to heart and assume heroic roles themselves."
+                    }
+                ], [{
+                        "name": "Mejora de Característica",
+                        "entries": [
+							"Cuando alcances el nivel 4, podrás escoger una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.", 
+							"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+						]
+                    }
+                ], [{
+                        "name": "Inspiración Bárdica (d8)",
+                        "entries": ["A nivel 5, tu dado de Inspiración Bárdica cambia a un {@dice d8}."]
+                    }, {
+                        "name": "Fuente de Inspiración",
+                        "entries": ["A partir de nivel 5 recuperas todos los usos de Inspiración Bárdica tras hacer un descanso corto o largo."]
+                    }
+                ], [{
+                        "name": "Contraencantamiento",
+                        "entries": [
+							"A partir de nivel 6, obtienes la capacidad de utilizar notas musicales o palabras de poder para interrumpir efectos que afecten a la mente. Como acción, puedes dar comienzo a una interpretación que durará hasta el final de tu siguiente turno. Durante este periodo, tanto tú como las criaturas amistosas a 30 pies o menos de ti tendréis ventaja en las tiradas de salvación para evitar ser {@condition Asustado [Frightened]|phb_esp|asustados} o {@condition Hechizado [Charmed]|phb_esp|hechizados}. Para que una criatura pueda beneficiarse de este efecto deberá ser capaz de oírte. La interpretación terminará si quedas {@condition Incapacitado [Incapacitated]|phb_esp|incapacitado}, eres silenciado o decides finalizarla voluntariamente (no es necesario gastar ninguna acción)."
+						]
+                    }, {
+                        "name": "Rasgo de Colegio Bárdico",
+                        "entries": ["A nivel 6 ganas un rasgo de tu Colegio Bárdico."],
+                        "gainSubclassFeature": true
+                    }
+                ], [], [{
+                        "name": "Mejora de Característica",
+                        "entries": [
+							"Cuando alcances el nivel 8, podrás escoger una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.", 
+							"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+						]
+                    }
+                ], [{
+                        "name": "Canción de Descanso (d8)",
+                        "entries": ["A nivel 9, los puntos de golpe adicionales recuperados por Canción de Descanso aumentan a un {@dice 1d8}."]
+                    }
+                ], [{
+                        "name": "Inspiración Bárdica (d10)",
+                        "entries": ["A nivel 10, tu dado de Inspiración Bárdica cambia a un {@dice d10}."]
+                    }, {
+                        "name": "Pericia",
+                        "entries": ["A nivel 10 puedes elegir otras dos habilidades en las que seas competente. Tu bonificador por competencia se duplica para cualquier prueba de característica que hagas utilizando cualquiera de las dos habilidades elegidas."]
+                    }, {
+                        "name": "Secretos Mágicos",
+                        "entries": [
+							"Para cuando llegas a nivel 10 ya has saqueado conocimientos mágicos pertenecientes a un amplio espectro de disciplinas. Escoge dos conjuros de cualquier clase (no tienen por qué ser los dos de la misma), esta incluida. Ambos conjuros deben ser de un nivel que puedas lanzar, tal y como se indica en la tabla del bardo, o un truco",
+							"Estos conjuros se consideran, en lo que a ti respecta, conjuros de bardo, y cuentan para el número de conjuros conocidos que puedes tener (consulta la tabla del bardo).",
+							"Aprendes otros dos conjuros de cualquier clase cuando alcanzas los niveles 14 y 18."
+						]
+                    }
+                ], [], [{
+                        "name": "Mejora Característica",
+                        "entries": [
+							"Cuando alcances el nivel 12, podrás escoger una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.", 
+							"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+						]
+                    }
+                ], [{
+                        "name": "Canción de Descanso (d10)",
+                        "entries": ["A nivel 13, los puntos de golpe adicionales recuperados por Canción de Descanso aumentan a un {@dice 1d10}."]
+                    }
+                ], [{
+                        "name": "Secretos Mágicos",
+                        "entries": [
+							"A nivel 14, escoge dos conjuros de cualquier clase (no tienen por qué ser los dos de la misma), esta incluida. Ambos conjuros deben ser de un nivel que puedas lanzar, tal y como se indica en la tabla del bardo, o un truco",
+							"Estos conjuros se consideran, en lo que a ti respecta, conjuros de bardo, y cuentan para el número de conjuros conocidos que puedes tener (consulta la tabla del bardo)."
+						]
+                    }, {
+                        "name": "Rasgo de Colegio Bárdico",
+                        "entries": ["A nivel 14 ganas un rasgo de tu Colegio Bárdico."],
+                        "gainSubclassFeature": true
+                    }
+                ], [{
+                        "name": "Inspiración Bárdica (d12)",
+                        "entries": ["A nivel 15, tu dado de Inspiración Bárdica cambia a un {@dice d12}."]
+                    }
+                ], [{
+                        "name": "Mejora Característica",
+                        "entries": [
+							"Cuando alcances el nivel 16, podrás escoger una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.", 
+							"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+						]
+                    }
+                ], [{
+                        "name": "Canción de Descanso (d12)",
+                        "entries": ["A nivel 17, los puntos de golpe adicionales recuperados por Canción de Descanso aumentan a un {@dice 1d12}."]
+                    }
+                ], [{
+                        "name": "Secretos Mágicos",
+                        "entries": [
+							"A nivel 18, escoge dos conjuros de cualquier clase (no tienen por qué ser los dos de la misma), esta incluida. Ambos conjuros deben ser de un nivel que puedas lanzar, tal y como se indica en la tabla del bardo, o un truco",
+							"Estos conjuros se consideran, en lo que a ti respecta, conjuros de bardo, y cuentan para el número de conjuros conocidos que puedes tener (consulta la tabla del bardo)."
+						]
+                    }
+                ], [{
+                        "name": "Mejora Característica",
+                        "entries": [
+							"Cuando alcances el nivel 19, podrás escoger una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.", 
+							"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+						]
+                    }
+                ], [{
+                        "name": "Inspiración Superior",
+                        "entries": ["A partir de nivel 20, si cuando tiras iniciativa no te quedan usos de Inspiración Bárdica, recuperas uno de ellos."]
+                    }
+                ]],
+            "subclassTitle": "Colegios bárdicos",
+            "subclasses": [{
+                    "name": "Colegio del Conocimiento",
+                    "shortName": "Conocimiento",
+                    "source": "PHB_ESP",
+                    "page": 54,
+                    "srd": true,
+                    "subclassFeatures": [[{
+                                "name": "Colegio del Conocimiento",
+                                "entries": [
+									"Los bardos del Colegio del Conocimiento siempre saben algo sobre prácticamente cualquier tema, pues coleccionan perlas de conocimiento procedentes de fuentes muy diversas; desde tratados sobre temas muy especializados hasta cuentos de campesinos. Ya sea cantando baladas populares en una taberna o interpretando elaboradas composiciones en una corte real, estos bardos emplean sus dones para fascinar a sus audiencias. Cuando los aplausos por fin se apagan, los espectadores podrían llegar a plantearse incluso sus creencias más arraigadas; desde la fe en los sacerdotes del templo local hasta su fidelidad al rey.", 
+									"Estos bardos depositan su lealtad en la búsqueda de la belleza y la verdad, no en reyes ni en los preceptos de una deidad. Los nobles que recurren a uno de estos bardos como consejero o heraldo saben que este tenderá a comportarse de forma más honesta que diplomática.", 
+									"Los miembros de este colegio se reúnen en bibliotecas y, a veces, en auténticos colegios, con sus aulas y dormitorios, en las que comparten con otros sus conocimientos. También se encuentran en festivales o reuniones de estado, en los que pueden sacar a la luz casos de corrupción, desvelar mentiras o reírse de los vanidosos representantes de la autoridad.", 
+									{
+                                        "type": "entries",
+                                        "name": "Competencias Adicionales",
+                                        "entries": ["Cuando te unes al Colegio del Conocimiento, a nivel 3, ganas competencia en tres habilidades cualquiera, las que elijas."]
+                                    }, {
+                                        "type": "entries",
+                                        "name": "Palabras Cortantes",
+                                        "entries": [
+											"También a nivel 3, aprendes cómo usar tu astucia para distraer, confundir y minar la confianza y aptitudes de otros. Cuando una criatura que puedas ver a 60 pies o menos de ti haga una tirada de ataque, prueba de característica o tirada de daño, podrás emplear tu reacción y gastar uno de los usos de Inspiración Bárdica para tirar el dado de Inspiración Bárdica y restar el número obtenido del resultado de la tirada de la criatura. Puedes elegir utilizar este rasgo después de que la criatura haga su tirada, pero antes de que el DM indique si la tirada de ataque o prueba de característica ha tenido éxito, o la criatura cause el daño. Las criaturas que no puedan oírte o sean inmunes al estado \"{@condition Hechizado [Charmed]|phb_esp|hechizado}\" no pueden verse afectadas por este rasgo."
+										]
+                                    }
+                                ]
+                            }
+                        ], [{
+                                "entries": [{
+                                        "type": "entries",
+                                        "name": "Secretos Mágicos adicionales",
+                                        "entries": ["A nivel 6, aprendes dos conjuros a tu elección de los de las listas de cualquier clase. Ambos conjuros deben ser de un nivel que puedas lanzar, tal y como se indica en la tabla del bardo, o un truco. Estos conjuros se consideran, en lo que a ti respecta, conjuros de bardo, pero no cuentan para el numero de conjuros conocidos que puedes tener."]
+                                    }
+                                ]
+                            }
+                        ], [{
+                                "entries": [{
+                                        "type": "entries",
+                                        "name": "Habilidad sin Parangón",
+                                        "entries": ["A partir de nivel 14, cuando hagas una prueba de característica podrás gastar uno de tus usos de Inspiración Bárdica. Tira el dado de Inspiración Bárdica y suma el número obtenido al resultado de la prueba. Puedes elegir hacer esto después de haber hecho la tirada, pero antes de que el DM te diga si tienes éxito o no."]
+                                    }
+                                ]
+                            }
+                        ]]
+                }, {
+                    "name": "Colegio del Valor",
+                    "shortName": "Valor",
+                    "source": "PHB_ESP",
+                    "page": 55,
+                    "subclassFeatures": [[{
+                                "name": "Colegio del Valor",
+                                "entries": ["Los bardos del Colegio del Valor son atrevidos escaldos, cuyas historias mantienen vivo el recuerdo de los grandes campeones del pasado, inspirando así a una nueva generación de héroes. Estos bardos se reúnen en salas de hidromiel o en torno a grandes hogueras para cantar las hazañas de los poderosos, tanto del presente como del pasado. Viajan por el mundo con el fin de ser testigos de grandes eventos en primera persona, para que la memoria de dichos sucesos no se pierda. A través de sus canciones, inspiran a otros para alcanzar las mismas cotas de éxito que los héroes de antaño.", {
+                                        "type": "entries",
+                                        "name": "Competencias Adicionales",
+                                        "entries": ["Cuando te unes al Colegio del Valor, a nivel 3, ganas competencia con armaduras medias, escudos y armas marciales."]
+                                    }, {
+                                        "type": "entries",
+                                        "name": "Inspiración en Combate",
+                                        "entries": ["También a nivel 3, aprendes como inspirar a los demás en combate. Una criatura que posea un dado de Inspiración Bárdica que tú le hayas dado podrá tirarlo y añadir el resultado a una tirada de daño con un arma que acabe de hacer. Además, cuando se realice una tirada de ataque que tenga como objetivo a dicha criatura, esta puede usar su reacción para tirar el dado de Inspiración Bárdica y añadir el resultado obtenido a su CA contra ese ataque. Puede hacer esto tras ver el resultado de la tirada de ataque, pero antes de saber si impacta o no."]
+                                    }
+                                ]
+                            }
+                        ], [{
+                                "entries": [{
+                                        "type": "entries",
+                                        "name": "Ataque Adicional",
+                                        "entries": ["A partir de nivel 6, cuando lleves a cabo la acción de {@action Atacar [Attack]|phb_esp|Atacar} durante tu turno, podrás hacer dos ataques en lugar de uno."]
+                                    }
+                                ]
+                            }
+                        ], [{
+                                "entries": [{
+                                        "type": "entries",
+                                        "name": "Magia de Batalla",
+                                        "entries": ["A nivel 14 has logrado dominar el arte de conjugar el lanzamiento de conjuros y el manejo de las armas, mezclándolos armoniosamente. Cuando usas tu acción para lanzar un conjuro de bardo, puedes emplear tu acción adicional para hacer un ataque con arma."]
+                                    }
+                                ]
+                            }
+                        ]]
+                }
+            ],
+            "fluff": [{
+                    "name": "Bardo",
+                    "type": "section",
+                    "entries": [
+						"Una semielfa cubierta de resistentes pieles canturrea mientras traza con sus dedos el perfil de un antiguo monumento, encontrado en unas ruinas olvidadas. Siente cómo, gracias a la magia de su canción, su mente se llena de conocimiento: la historia del pueblo que construye el monumento y la saga mítica que este representa.", 
+						"Un adusto combatiente humano golpea rítmicamente su espada contra su cota de escamas, marcando el compás de su canto marcial y exhortando a sus compañeros a protagonizar actos de coraje y heroísmo. La magia de su canción les fortalece y envalentona.", 
+						"Riendo mientras afina su cistro, una gnoma teje su sutil magia sobre los nobles reunidos en la sala, asegurándose así de que las palabras de sus compañeros serán bien recibidas.", 
+						"Un bardo, ya sea este un erudito, un escaldo o un bribón, es capaz de tejer magia a través de sus palabras y su música, inspirando a sus aliados, desmoralizando a sus enemigos, manipulando mentes, creando ilusiones e incluso sanando heridas.", {
+                            "type": "entries",
+                            "name": "Música y magia",
+                            "entries": [
+								"En los mundos de D&D, las palabras y la música no son solo vibraciones del aire, sino vocalizaciones que contienen poder en sí mismas. El bardo es un maestro de la canción, el discurso y la magia que ambos albergan. Los bardos afirman que el multiverso nació del habla de los dioses, que sus palabras le dieron forma y que los ecos de estas Palabras de Creación primordiales aún resuenan a través del cosmos. La música de los bardos es un intento de atrapar y tomar el control de dichos ecos, tejiéndolos sutilmente en sus conjuros y poderes.", 
+								"La mayor fortaleza de los bardos es su increíble versatilidad. Muchos prefieren echarse a un lado durante el combate, recurriendo a su magia para inspirar a sus aliados y obstaculizar a sus enemigos desde la distancia. No obstante, los bardos también son capaces de defenderse en cuerpo a cuerpo si se da el caso, empleando su magia para potenciar sus espadas y armadura. Sus conjuros no suelen desencadenar fuerzas destructoras, sino que tienden a manifestarse como encantamientos e ilusiones. Poseen un amplio espectro de conocimientos sobre muchas disciplinas, así como un talento natural que les permite sobresalir en prácticamente todo lo que hacen. Los bardos acaban transformándose en auténticos maestros de las artes que deciden perfeccionar; desde la interpretación musical hasta conocimientos esotéricos."
 							]
-						},
-						{
-							"type": "entries",
-							"name": "Creating a Bard",
-							"entries": [
-								"Bards thrive on stories, whether those stories are true or not. Your character's background and motivations are not as important as the stories that he or she tells about them. Perhaps you had a secure and mundane childhood. There's no good story to be told about that, so you might paint yourself as an orphan raised by a hag in a dismal swamp. Or your childhood might be worthy of a story. Some bards acquire their magical music through extraordinary means, including the inspiration of fey or other supernatural creatures.",
-								"Did you serve an apprenticeship, studying under a master, following the more experienced bard until you were ready to strike out on your own? Or did you attend a college where you studied bardic lore and practiced your musical magic? Perhaps you were a young runaway or orphan, befriended by a wandering bard who became your mentor. Or you might have been a spoiled noble child tutored by a master. Perhaps you stumbled into the clutches of a hag, making a bargain for a musical gift in addition to your life and freedom, but at what cost?",
-								{
-									"type": "entries",
-									"name": "Quick Build",
-									"entries": [
-										"You can make a bard quickly by following these suggestions. First, Charisma should be your highest ability score, followed by Dexterity. Second, choose the {@background entertainer} background. Third, choose the {@spell Luces danzantes [Dancing Lights]|phb_esp|luces danzantes} and {@spell Burla dañina [Vicious Mockery]|phb_esp|burla dañina} cantrips, along with the following 1st-level spells: {@spell Hechizar persona [Charm Person]|phb_esp|hechizar persona}, {@spell Detectar magia [Detect Magic]|phb_esp|detectar magia}, {@spell Palabra de curación [Healing Word]|phb_esp|palabra de curación}, and {@spell Ola atronadora [Thunderwave]|phb_esp|ola atronadora}."
-									]
-								}
+                        }, {
+                            "type": "entries",
+                            "name": "Aprender de la experiencia",
+                            "entries": [
+								"Los auténticos bardos son muy poco frecuentes. No todos las juglares que cantan en una taberna o bufones que brincan en una corte real son bardos. Desentrañar la magia escondida en la música precisa de un intenso estudio y un talento natural de los que la mayoría de los trovadores y rapsodas carecen. Con todo, a veces es difícil distinguir entre verdaderos bardos y simples artistas. Los bardos pasan sus vidas vagabundeando de un lugar a otro, recopilando conocimientos, contando historias y viviendo de la buena voluntad de sus audiencias, como les suele suceder a la mayoría de los animadores. Pero su amplitud de conocimientos, su gran aptitud para la música y su dominio de la magia les distingue del resto de intérpretes.", 
+								"Rara vez un bardo pasará una temporada larga en el mismo sitio. Su ansia viajera, que les lleva a buscar nuevas historias que contar, nuevas habilidades que aprender y nuevos horizontes que descubrir, hace que la vida del aventurero sea una vocación bastante habitual entre ellos. Toda aventura es una nueva oportunidad para aprender, practicar una gran variedad de habilidades, penetrar en tumbas ya olvidadas, descubrir artefactos mágicos perdidos, descifrar tomos antiguos, viajar a lugares extraños o encontrarse con criaturas exóticas. Los bardos adoran acompañar a héroes, para así poder ser testigos presenciales de sus hazañas, pues un bardo capaz de contar una impresionante epopeya basada en sus propias vivencias gozará de gran renombre entre los suyos. De hecho, tras narrar numerosas gestas protagonizadas por héroes, muchos bardos acaban interiorizando sus ideales y ellos mismos terminan asumiendo roles heroicos."
 							]
-						}
-					],
-					"source": "PHB_Esp",
-					"page": 51
-				}
-			]
-		},
+                        }, {
+                            "type": "entries",
+                            "name": "Creación de un bardo",
+                            "entries": [
+								"Las historias dan vida a los bardos, tanto si son ciertas como si no. El trasfondo y las motivaciones de tu personaje no son tan importantes como los relatos en los que los plasma. Puede que hayas disfrutado de una infancia segura y prosaica, pero como es imposible elaborar una historia decente a partir de ella, quizá afirmes ser un huérfano criado por una saga en medio de un pantano lúgubre. O puede que tu infancia sí haya sido digna de ser contada, ya que algunos bardos reciben su magia musical a través de medios extraordinarios, como los seres feéricos u otras criaturas sobrenaturales.", 
+								"¿Serviste como aprendiz a un maestro, obedeciendo las órdenes de un bardo más experto hasta que estuviste listo para partir? ¿O estudiaste en una universidad, un lugar donde practicar tu magia musical y adquirir conocimientos bárdicos? Tal vez te escapaste de tu hogar o tuviste la desgracia de ser huérfano, y un bardo que pasaba por allí se convirtió en tu mentor. O puede que seas el hijo malcriado de un noble, que disfrutó de un tutor extraordinario. Incluso podrías haber caído en las garras de una saga, con la que llegaste a un acuerdo que te proporcionó no solo tu vida y tu libertad, sino también tu don para la música. ¿Pero a qué precio?", {
+                                    "type": "entries",
+                                    "name": "Creación rápida",
+                                    "entries": ["Para crear un bardo de forma rápida sugerimos lo siguiente. Para empezar, Carisma debería ser tu característica más alta, seguida de Destreza. A continuación, elige el trasfondo \"{@background entertainer|phb_esp|animador}\". Después, escoge los trucos {@spell Burla dañina [Vicious Mockery]|phb_esp|burla dañina} y {@spell Luces danzantes [Dancing Lights]|phb_esp|luces danzantes} y los siguientes conjuros de nivel 1: {@spell Detectar magia [Detect Magic]|phb_esp|detectar magia}, {@spell Hechizar persona [Charm Person]|phb_esp|hechizar persona}, {@spell Ola atronadora [Thunderwave]|phb_esp|ola atronadora} y {@spell Palabra de curación [Healing Word]|phb_esp|palabra de curación}."]
+                                }
+                            ]
+                        }
+                    ],
+                    "source": "PHB_ESP",
+                    "page": 51
+                }
+            ]
+        },
 		{
 			"name": "Cleric",
 			"source": "PHB_Esp",
@@ -45794,7 +45279,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -46051,7 +45536,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -46154,7 +45639,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -46466,7 +45951,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -46767,7 +46252,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					}
 				]
@@ -47637,7 +47122,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -47726,7 +47211,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -48311,7 +47796,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -48572,7 +48057,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -48955,7 +48440,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -49549,7 +49034,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -49734,7 +49219,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -50133,7 +49618,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -50309,7 +49794,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -50535,7 +50020,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					}
 				]
@@ -50708,7 +50193,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					}
 				]
@@ -51032,7 +50517,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -51108,7 +50593,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					}
 				],
@@ -51347,7 +50832,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -52076,7 +51561,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					}
 				]
@@ -53183,7 +52668,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -53348,7 +52833,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -53456,7 +52941,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -54264,7 +53749,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -54451,7 +53936,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -54558,7 +54043,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -54662,7 +54147,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -54933,7 +54418,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -55050,7 +54535,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					}
 				],
@@ -55532,7 +55017,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -55614,7 +55099,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -55811,7 +55296,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -56265,7 +55750,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -56394,7 +55879,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -56631,7 +56116,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -56717,7 +56202,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -56963,7 +56448,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -57098,7 +56583,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -57305,7 +56790,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -57394,7 +56879,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -57471,7 +56956,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -57552,7 +57037,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -57735,7 +57220,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -58916,7 +58401,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -58973,7 +58458,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -59040,7 +58525,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -59208,7 +58693,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -59488,7 +58973,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -59707,7 +59192,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -59867,7 +59352,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -60144,7 +59629,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -60250,7 +59735,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -60521,7 +60006,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -61053,7 +60538,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -61377,7 +60862,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -61474,7 +60959,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -61661,7 +61146,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					}
 				]
@@ -61718,7 +61203,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -61892,7 +61377,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -62004,7 +61489,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -62347,7 +61832,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -62535,7 +62020,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -62637,7 +62122,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -63150,7 +62635,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -63335,7 +62820,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -63403,7 +62888,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -63584,7 +63069,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -63639,7 +63124,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -63831,7 +63316,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -64069,7 +63554,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -64139,7 +63624,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -64244,7 +63729,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -64335,7 +63820,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -64471,7 +63956,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -64851,7 +64336,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -65049,7 +64534,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -65126,7 +64611,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -65298,7 +64783,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					}
 				]
@@ -65375,7 +64860,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -65447,7 +64932,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					}
 				]
@@ -65656,7 +65141,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -65756,7 +65241,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -65891,7 +65376,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -65946,7 +65431,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -66025,7 +65510,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -66128,7 +65613,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					}
 				]
@@ -66182,7 +65667,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -66386,7 +65871,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -66621,7 +66106,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -66785,7 +66270,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -66903,7 +66388,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -67238,7 +66723,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -67469,7 +66954,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -67587,7 +67072,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					}
 				]
@@ -67765,7 +67250,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -67925,7 +67410,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -68132,7 +67617,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -68207,7 +67692,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					}
 				],
@@ -68263,7 +67748,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -68328,7 +67813,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -68468,7 +67953,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -68647,7 +68132,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					}
 				]
@@ -68776,7 +68261,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					}
 				]
@@ -68915,7 +68400,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -68982,7 +68467,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -69448,7 +68933,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -69547,7 +69032,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					}
 				]
@@ -69894,7 +69379,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -70270,7 +69755,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -70895,7 +70380,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -71117,7 +70602,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -71197,7 +70682,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -71273,7 +70758,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -71482,7 +70967,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -71887,7 +71372,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -71978,7 +71463,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -72108,7 +71593,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -72341,7 +71826,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					}
 				]
@@ -72441,7 +71926,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -72542,7 +72027,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -72639,7 +72124,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -73178,7 +72663,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -73599,7 +73084,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -73957,7 +73442,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -74032,7 +73517,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -74337,7 +73822,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -74399,7 +73884,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -74803,7 +74288,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -74937,7 +74422,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -75178,7 +74663,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -75292,7 +74777,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -75353,7 +74838,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -75475,7 +74960,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
@@ -75668,7 +75153,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					}
 				]
@@ -77055,7 +76540,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Bard",
+						"name": "Bardo",
 						"source": "PHB_Esp"
 					},
 					{
