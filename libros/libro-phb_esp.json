@@ -15478,19 +15478,24 @@
                 }
             ],
             "classFeatures": [[{
-                        "name": "Spellcasting",
-                        "entries": ["As a conduit for divine power, you can cast cleric spells. See {@book chapter 10|PHB|10} for the general rules of spellcasting and chapter 11 for a selection of {@filter cleric spells|spells|class=cleric}.", {
+                        "name": "Lanzamiento de Conjuros",
+                        "entries": ["Como canalizador de poder divino, puedes lanzar conjuros de clérigo. El {@book capítulo 10|phbesp|10} contiene las reglas de lanzamiento de conjuros y el 11 la lista de {@filter conjuros de clérigo|spells|class=clérigo (PBH_Esp)}.", {
                                 "type": "entries",
-                                "name": "Cantrips",
-                                "entries": ["At 1st level, you know three cantrips of your choice from the cleric spell list. You learn additional cleric cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Cleric table."]
+                                "name": "Trucos",
+                                "entries": ["A nivel 1 conoces tres trucos de tu elección escogidos de entre los de la lista de conjuros de clérigo. Podrás elegir más trucos de clérigo cuando llegues a niveles más altos, como se indica en la columna \"trucos conocidos\" de la tabla del clérigo."]
                             }, {
                                 "type": "entries",
                                 "name": "Preparing and Casting Spells",
-                                "entries": ["The Cleric table shows how many spell slots you have to cast your {@filter cleric spells|spells|class=cleric} of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.", "You prepare the list of cleric spells that are available for you to cast, choosing from the cleric spell list. When you do so, choose a number of cleric spells equal to your Wisdom modifier + your cleric level (minimum of one spell). The spells must be of a level for which you have spell slots.", "For example, if you are a 3rd-level cleric, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell {@spell cure wounds}, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.", "You can change your list of prepared spells when you finish a long rest. Preparing a new list of cleric spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list."]
+                                "entries": [
+									"La tabla del clérigo muestra de cuántos espacios de conjuro dispones para lanzar {@filter conjuros de clérigo|spells|class=clérigo (PBH_Esp)} de nivel 1 y superiores. Para lanzar uno de estos conjuros deberás invertir un espacio de al menos el nivel del conjuro. Recuperas todos los espacios utilizados tras finalizar un descanso largo.", 
+									"Puedes preparar una serie de conjuros, que son los que podrás lanzar, de entre la lista de conjuros de clérigo. Para hacer esto, escoge tantos conjuros de clérigo como tu nivel de clérigo + tu modificador por Sabiduría (como mínimo un conjuro). Estos conjuros deben ser de un nivel para el que tengas espacios.", 
+									"De esta forma, si eres un clérigo de nivel 3, tendrás cuatro espacios de nivel 1 y dos espacios de nivel 2. Con una Sabiduría de 16, podrías preparar cualquier combinación de seis conjuros de nivel 1 o 2. Además, si prepararas un conjuro de nivel 1, como {@spell Curar heridas # Cure Wounds|phb_esp|curar heridas}, podrías lanzarlo usando un espacio tanto de nivel 1 como de nivel 2. Lanzar un conjuro no hace que desaparezca de tu lista de conjuros preparados.", 
+									"Puedes cambiar qué conjuros tienes preparados tras finalizar un descanso largo. Preparar una nueva serie de conjuros precisa de cierto tiempo de estudio y meditación: al menos 1 minuto por cada nivel de cada conjuro que prepares."
+								]
                             }, {
                                 "type": "entries",
-                                "name": "Spellcasting Ability",
-                                "entries": ["Wisdom is your spellcasting ability for your cleric spells. The power of your spells comes from your devotion to your deity. You use your Wisdom whenever a cleric spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a cleric spell you cast and when making an attack roll with one.", {
+                                "name": "Aptitud mágica",
+                                "entries": ["La Sabiduría es tu aptitud mágica en lo que a conjuros de clérigo respecta, ya que el poder de tus conjuros proviene de tu devoción hacia tu dios. Así, utilizarás tu Sabiduría siempre que un conjuro de clérigo haga referencia a tu aptitud mágica. Además, también usarás tu modificador por Sabiduría para determinar la CD de las tiradas de salvación y las tiradas de ataque de los conjuros de clérigo que lances.", {
                                         "type": "abilityDc",
                                         "name": "Spell",
                                         "attributes": ["wis"]
@@ -15502,183 +15507,235 @@
                                 ]
                             }, {
                                 "type": "entries",
-                                "name": "Ritual Casting",
-                                "entries": ["You can cast a cleric spell as a ritual if that spell has the ritual tag and you have the spell prepared."]
+                                "name": "Lanzamiento ritual",
+                                "entries": ["Puedes lanzar de forma ritual aquellos conjuros de clérigo que tengas preparados y estén marcados como \"ritual\"."]
                             }, {
                                 "type": "entries",
-                                "name": "Spellcasting Focus",
-                                "entries": ["You can use a holy symbol (found in chapter 5) as a spellcasting focus for your cleric spells."]
+                                "name": "Canalizador mágico",
+                                "entries": ["Puedes utilizar un símbolo sagrado (mira el capítulo 5: \"Equipo\") como canalizador mágico para los conjuros de clérigo."]
                             }
                         ]
                     }, {
-                        "name": "Cantrip Versatility",
-                        "entries": ["{@i 1st-level cleric feature (enhances Spellcasting)}", "Whenever you gain a level in this class, you can replace one cantrip you learned from this Spellcasting feature with another cantrip from the cleric spell list."],
-                        "source": "UAClassFeatureVariants",
-                        "page": 3
-                    }, {
-                        "name": "Divine Domain",
-                        "entries": ["Choose one domain related to your deity from the list of available domains. Each domain is detailed in their own feature, and each one provides examples of gods associated with it. Your choice grants you domain spells and other features when you choose it at 1st level. It also grants you additional ways to use Channel Divinity when you gain that feature at 2nd level, and additional benefits at 6th, 8th, and 17th levels.", {
+                        "name": "Dominio Divino",
+                        "entries": ["Escoge uno de los siguientes dominios, que debe estar relacionado con tu dios: Conocimiento, Engaño, Guerra, Luz, Naturaleza, Tempestad o Vida. Estos dominios están detallados al final de la descripción de esta clase y cada uno de ellos incluye ejemplos de dioses asociados al mismo. Tu elección determinará qué conjuros de dominio y otros rasgos recibes a nivel 1. Además, también te proporcionará formas adicionales de usar Canalizar Divinidad, un rasgo que obtendrás a nivel 2. Por último, te otorgará ventajas específicas a los niveles 6, 8 y 17.", {
                                 "type": "entries",
-                                "name": "Domain Spells",
-                                "entries": ["Each domain has a list of spells—its domain spells—that you gain at the cleric levels noted in the domain description. Once you gain a domain spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day.", "If you have a domain spell that doesn't appear on the cleric spell list, the spell is nonetheless a cleric spell for you."]
+                                "name": "Conjuros de dominio",
+                                "entries": [
+									"Cada dominio tiene su propia lista de conjuros, llamados conjuros de dominio, que conseguirás cuando alcances el nivel de clérigo indicado en la descripción de dicho dominio. Una vez obtenidos, estos conjuros siempre se considerarán preparados y no cuentan para el total de conjuros que puedes preparar cada día.", 
+									"Aunque recibas un conjuro de dominio que no aparezca en la lista de los de clérigo, para ti sí que se considerará como conjuro de clérigo."
+								]
                             }
                         ],
                         "gainSubclassFeature": true
                     }
                 ], [{
-                        "name": "Channel Divinity (1/rest)",
-                        "entries": ["At 2nd level, you gain the ability to channel divine energy directly from your deity, using that energy to fuel magical effects. You start with two such effects: Turn Undead and an effect determined by your domain. Some domains grant you additional effects as you advance in levels, as noted in the domain description.", "When you use your Channel Divinity, you choose which effect to create. You must then finish a short or long rest to use your Channel Divinity again.", "Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your cleric spell save DC.", "Beginning at 6th level, you can use your Channel Divinity twice between rests, and beginning at 18th level, you can use it three times between rests. When you finish a short or long rest, you regain your expended uses.", {
+                        "name": "Canalizar Divinidad (1/descanso)",
+                        "entries": [
+							"A nivel 2 ganas la habilidad para canalizar energía divina directamente desde tu deidad y usar dicha energía para alimentar varios efectos mágicos. Empiezas con dos de estos efectos: Expulsar Muertos Vivientes y un segundo poder determinado por tu dominio. Algunos dominios te otorgan efectos adicionales al subir de nivel, tal y como se indica en sus descripciones.", 
+							"Cuando utilices Canalizar Divinidad, elige cuál de los efectos vas a crear. Deberás terminar un descanso corto o largo para poder volver a usar Canalizar Divinidad otra vez.", 
+							"Algunos efectos de Canalizar Divinidad exigen hacer tiradas de salvación. Cuando utilices uno de los proporcionados por esta clase, la CD será la misma que la de las tiradas de salvación de tus conjuros de clérigo.", 
+							"A partir de nivel 6, puedes emplear Canalizar Divinidad dos veces entre descansos y, a partir de nivel 18, tres veces. Recuperas todos los usos tras realizar un descanso corto o largo.", {
                                 "type": "entries",
-                                "name": "Turn Undead",
-                                "entries": ["As an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.", "A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the {@action Dash} action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the {@action Dodge} action."]
+                                "name": "Expulsar Muertos Vivientes",
+                                "entries": [
+									"Puedes utilizar tu acción para mostrar tu símbolo sagrado y rezar una oración que condene a los muertos vivientes. Todos los muertos vivientes que puedan verte u oírte a 30 pies o menos de ti deben realizar una tirada de salvación de Sabiduría. Si el objetivo falla su tirada de salvación, estará expulsado durante 1 minuto o hasta recibir daño.", 
+									"Una criatura expulsada deberá dedicar su turno a moverse lo más lejos posible de ti, si es que puede, y no podrá acercarse a ningún espacio a 30 pies o menos de ti. Además, tampoco será capaz de llevar a cabo reacciones. Solo puede realizar la acción de {@action Correr # Dash|phb_esp|Correr} o intentar escapar de un efecto que le impida moverse. Si no tiene a dónde moverse, llevará a cabo la acción de {@action Esquivar # Dodge|phb_esp|Esquivar}."
+								]
                             }
                         ]
                     }, {
-                        "name": "Divine Domain feature",
-                        "entries": ["At 2nd level, you gain a feature from your Divine Domain."],
+                        "name": "Rasgo de Dominio Divino",
+                        "entries": ["A nivel 2 ganas un rasgo de tu Dominio Divino."],
                         "gainSubclassFeature": true
                     }
                 ], [], [{
-                        "name": "Ability Score Improvement",
-                        "entries": ["When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.", "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."]
+                        "name": "Mejora Característica",
+                        "entries": [
+							"Cuando alcances el nivel 4 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.", 
+							"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+						]
                     }
                 ], [{
-                        "name": "Destroy Undead (CR 1/2)",
-                        "entries": ["Starting at 5th level, when an {@filter undead of CR 1/2 or lower|bestiary|challenge rating=[&0;&1/2]|type=undead|miscellaneous=!swarm} fails its saving throw against your Turn Undead feature, the creature is instantly destroyed."]
+                        "name": "Destruir Muertos Vivientes (VD 1/2)",
+                        "entries": [
+							"A partir de nivel 5, cuando un {@filter muerto viviente de valor de desafío 1/2 o inferior|bestiary|challenge rating=[&0;&1/2]|type=undead|miscellaneous=!swarm} falle la tirada de salvación contra tu rasgo Expulsar Muertos Vivientes, la criatura es destruida."
+						]
                     }
                 ], [{
-                        "name": "Channel Divinity (2/rest)",
-                        "entries": ["Beginning at 6th level, you can use your Channel Divinity twice between rests."]
+                        "name": "Canalizar Divinidad (2/descanso)",
+                        "entries": ["A partir de nivel 6, puedes emplear Canalizar Divinidad dos veces entre descansos."]
                     }, {
-                        "name": "Divine Domain feature",
-                        "entries": ["At 6th level, you gain a feature from your Divine Domain."],
+                        "name": "Rasgo de Dominio Divino",
+                        "entries": ["A nivel 6 ganas un rasgo de tu Dominio Divino."],
                         "gainSubclassFeature": true
                     }
                 ], [], [{
-                        "name": "Ability Score Improvement",
-                        "entries": ["When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.", "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."]
+                        "name": "Mejora Característica ",
+                        "entries": [
+							"Cuando alcances el nivel 8 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.", 
+							"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+						]
                     }, {
-                        "name": "Destroy Undead (CR 1)",
-                        "entries": ["Starting at 8th level, when an {@filter undead of CR 1 or lower|bestiary|challenge rating=[&0;&1]|type=undead|miscellaneous=!swarm} fails its saving throw against your Turn Undead feature, the creature is instantly destroyed."]
+                        "name": "Destruir Muertos Vivientes (VD 1)",
+                        "entries": [
+							"A partir de nivel 8, cuando un {@filter muerto viviente de valor de desafío 1 o inferior|bestiary|challenge rating=[&0;&1]|type=undead|miscellaneous=!swarm} falle la tirada de salvación contra tu rasgo Expulsar Muertos Vivientes, la criatura es destruida."
+						]
                     }, {
-                        "name": "Divine Domain feature",
-                        "entries": ["At 8th level, you gain a feature from your Divine Domain."],
+                        "name": "Rasgo de Dominio Divino",
+                        "entries": ["A nivel 8 ganas un rasgo de tu Dominio Divino."],
                         "gainSubclassFeature": true
                     }
                 ], [], [{
-                        "name": "Divine Intervention",
-                        "entries": ["Beginning at 10th level, you can call on your deity to intervene on your behalf when your need is great.", "Imploring your deity's aid requires you to use your action. Describe the assistance you seek, and roll percentile dice. If you roll a number equal to or lower than your cleric level, your deity intervenes. The DM chooses the nature of the intervention; the effect of any cleric spell or cleric domain spell would be appropriate. If your deity intervenes, you can't use this feature again for 7 days. Otherwise, you can use it again after you finish a long rest.", "At 20th level, your call for intervention succeeds automatically, no roll required."]
+                        "name": "Intercesión Divina",
+                        "entries": [
+							"A partir de nivel 10, puedes solicitar a tu deidad que interceda por ti en momentos de gran necesidad.", 
+							"Para implorar el auxilio de tu dios es necesario que utilices tu acción. Describe el tipo de ayuda que solicitas y tira 1d100. Si sacas un resultado igual o inferior a tu nivel de clérigo, tu deidad intercederá. El DM decide la naturaleza exacta de la intercesión; el efecto de cualquier conjuro de clérigo o de dominio, por ejemplo, sería un resultado apropiado.", 
+							"Si la divinidad interviene, no podrás volver a emplear este rasgo durante 7 días. Si no, puedes volver a usarlo tras finalizar un descanso largo.",
+							"A nivel 20 tu petición de auxilio tiene éxito automáticamente, no es necesario tirar."
+						]
                     }
                 ], [{
-                        "name": "Destroy Undead (CR 2)",
-                        "entries": ["Starting at 11th level, when an {@filter undead of CR 2 or lower|bestiary|challenge rating=[&0;&2]|type=undead|miscellaneous=!swarm} or lower fails its saving throw against your Turn Undead feature, the creature is instantly destroyed."]
+                        "name": "Destruir Muertos Vivientes (VD 2)",
+                        "entries": [
+							"A partir de nivel 11, cuando un {@filter muerto viviente de valor de desafío 2 o inferior|bestiary|challenge rating=[&0;&2]|type=undead|miscellaneous=!swarm} falle la tirada de salvación contra tu rasgo Expulsar Muertos Vivientes, la criatura es destruida."
+						]
                     }
                 ], [{
-                        "name": "Ability Score Improvement",
-                        "entries": ["When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.", "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."]
+                        "name": "Mejora Característica ",
+                        "entries": [
+							"Cuando alcances el nivel 12 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.", 
+							"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+						]
                     }
                 ], [], [{
-                        "name": "Destroy Undead (CR 3)",
-                        "entries": ["Starting at 14th level, when an {@filter undead of CR 3 or lower|bestiary|challenge rating=[&0;&3]|type=undead|miscellaneous=!swarm} fails its saving throw against your Turn Undead feature, the creature is instantly destroyed."]
+                        "name": "Destruir Muertos Vivientes (VD 3)",
+                        "entries": [
+							"A partir de nivel 14, cuando un {@filter muerto viviente de valor de desafío 3 o inferior|bestiary|challenge rating=[&0;&3]|type=undead|miscellaneous=!swarm} falle la tirada de salvación contra tu rasgo Expulsar Muertos Vivientes, la criatura es destruida."
+						]
                     }
                 ], [], [{
-                        "name": "Ability Score Improvement",
-                        "entries": ["When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.", "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."]
+                        "name": "Mejora Característica ",
+                        "entries": [
+							"Cuando alcances el nivel 16 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.", 
+							"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+						]
                     }
                 ], [{
-                        "name": "Destroy Undead (CR 4)",
-                        "entries": ["Starting at 17th level, when an {@filter undead of CR 4 or lower|bestiary|challenge rating=[&0;&4]|type=undead|miscellaneous=!swarm} fails its saving throw against your Turn Undead feature, the creature is instantly destroyed."]
+                        "name": "Destruir Muertos Vivientes (VD 4)",
+                        "entries": [
+							"A partir de nivel 17, cuando un {@filter muerto viviente de valor de desafío 4 o inferior|bestiary|challenge rating=[&0;&4]|type=undead|miscellaneous=!swarm} falle la tirada de salvación contra tu rasgo Expulsar Muertos Vivientes, la criatura es destruida."
+						]
                     }, {
-                        "name": "Divine Domain feature",
-                        "entries": ["At 17th level, you gain a feature from your Divine Domain."],
+                        "name": "Rasgo de Dominio Divino",
+                        "entries": ["A nivel 17 ganas un rasgo de tu Dominio Divino."],
                         "gainSubclassFeature": true
                     }
                 ], [{
-                        "name": "Channel Divinity (3/rest)",
-                        "entries": ["Beginning at 18th level, you can use your Channel Divinity three times between rests."]
+                        "name": "Canalizar Divinidad (3/descanso)",
+                        "entries": ["A partir de nivel 18, puedes emplear Canalizar Divinidad tres veces entre descansos."]
                     }
                 ], [{
-                        "name": "Ability Score Improvement",
-                        "entries": ["When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.", "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."]
+                        "name": "Mejora Característica ",
+                        "entries": [
+							"Cuando alcances el nivel 19 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.", 
+							"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+						]
                     }
                 ], [{
-                        "name": "Divine Intervention Improvement",
-                        "entries": ["At 20th level, your call for intervention succeeds automatically, no roll required."]
+                        "name": "Mejora de Intercesión Divina",
+                        "entries": ["A nivel 20 tu petición de auxilio tiene éxito automáticamente, no es necesario tirar."]
                     }
                 ]],
-            "subclassTitle": "Divine Domain",
+            "subclassTitle": "Dominios divinos",
             "subclasses": [{
-                    "name": "Knowledge Domain",
-                    "shortName": "Knowledge",
+                    "name": "Dominio del Conocimiento # Knowledge Domain",
+                    "shortName": "Conocimiento",
                     "source": "PHB_Esp",
                     "page": 59,
                     "additionalSpells": [{
                             "prepared": {
-                                "1": ["command", "identify"],
-                                "3": ["augury", "suggestion"],
-                                "5": ["nondetection", "speak with dead"],
-                                "7": ["arcane eye", "confusion"],
-                                "9": ["legend lore", "scrying"]
+                                "1": ["Orden imperiosa # Command|phb_esp|orden imperiosa", "Identificar # Identify|phb_esp|identificar"],
+                                "3": ["Augurio # Augury|phb_esp|augurio", "Sugestión # Suggestion|phb_esp|sugestión"],
+                                "5": ["Indetectable # Nondetection|phb_esp|indetectable", "Hablar con los muertos # Speak with Dead|phb_esp|hablar con los muertos"],
+                                "7": ["Ojo arcano # Arcane Eye|phb_esp|ojo arcano", "Confusión # Confusion|phb_esp|confusión"],
+                                "9": ["Conocer las leyendas # Legend Lore|phb_esp|conocer las leyendas", "Escudriñar # Scrying|phb_esp|escudriñar"]
                             }
                         }
                     ],
                     "subclassFeatures": [[{
                                 "name": "Knowledge Domain",
-                                "entries": ["The gods of knowledge—including Oghma, Boccob, Gilean, Aureon, and Thoth—value learning and understanding above all. Some teach that knowledge is to be gathered and shared in libraries and universities, or promote the practical knowledge of craft and invention. Some deities hoard knowledge and keep its secrets to themselves. And some promise their followers that they will gain tremendous power if they unlock the secrets of the multiverse. Followers of these gods study esoteric lore, collect old tomes, delve into the secret places of the earth, and learn all they can. Some gods of knowledge promote the practical knowledge of craft and invention, including smith deities like Gond, Reorx, Onatar, Moradin, Hephaestus, and Goibhniu.", "At each indicated cleric level, you add the listed spells to your spells prepared.", {
+                                "entries": [
+									"Los dioses del conocimiento, entre los que se incluyen Oghma, Boccob, Gilean, Aureon y Thoth, valoran el aprendizaje y el entendimiento por encima de todo. Algunos de ellos enseñan que el conocimiento debe ser reunido y compartido en bibliotecas y universidades, o promueven el saber práctico de la artesanía y la invención. Otras deidades atesoran el conocimiento y se guardan sus secretos solo para ellos. Y ciertos dioses prometen a sus seguidores un tremendo poder si consiguen descifrar los secretos del multiverso. Sus fieles estudian saberes esotéricos, coleccionan volúmenes antiguos, exploran los lugares secretos de la tierra y aprenden todo lo que pueden. Algunos dioses, entre los que se encuentran herreros como Gond, Reorx, Onatar, Moradin, Hefesto y Goibhnu, favorecen el conocimiento aplicado de los inventores y artesanos.", {
                                         "type": "table",
-                                        "caption": "Knowledge Domain Spells",
-                                        "colLabels": ["Cleric Level", "Spells"],
+                                        "caption": "Conjuros de dominio del Conocimiento",
+                                        "colLabels": ["Nivel de clérigo", "Conjuros"],
                                         "colStyles": ["col-3 text-center", "col-9"],
-                                        "rows": [["1st", "{@spell command}, {@spell identify}"], ["3rd", "{@spell augury}, {@spell suggestion}"], ["5th", "{@spell nondetection}, {@spell speak with dead}"], ["7th", "{@spell arcane eye}, {@spell confusion}"], ["9th", "{@spell legend lore}, {@spell scrying}"]]
+                                        "rows": [
+											["1", "{@spell Orden imperiosa # Command|phb_esp|orden imperiosa}, {@spell Identificar # Identify|phb_esp|identificar}"], 
+											["3", "{@spell Augurio # Augury|phb_esp|augurio}, {@spell Sugestión # Suggestion|phb_esp|sugestión}"], 
+											["5", "{@spell Indetectable # Nondetection|phb_esp|indetectable}, {@spell Hablar con los muertos # Speak with Dead|phb_esp|hablar con los muertos}"], 
+											["7", "{@spell Ojo arcano # Arcane Eye|phb_esp|ojo arcano}, {@spell Confusión # Confusion|phb_esp|confusión}"], 
+											["9", "{@spell Conocer las leyendas # Legend Lore|phb_esp|conocer las leyendas}, {@spell Escudriñar # Scrying|phb_esp|escudriñar}"]
+										]
                                     }, {
                                         "type": "entries",
-                                        "name": "Blessings of Knowledge",
-                                        "entries": ["At 1st level, you learn two languages of your choice. You also become proficient in your choice of two of the following skills: {@skill Arcana}, {@skill History}, {@skill Nature}, or {@skill Religion}.", "Your proficiency bonus is doubled for any ability check you make that uses either of those skills."]
+                                        "name": "Bendiciones del Conocimiento",
+                                        "entries": [
+											"A nivel 1, aprendes dos idiomas de tu elección. También ganas competencia en dos habilidades a elegir de entre las siguientes: {@skill Arcana|Arcano}, {@skill History|Historia}, {@skill Nature|Naturaleza}, or {@skill Religion|Religión}.", 
+											"Tu bonificador por competencia se duplica para cualquier prueba de característica que hagas utilizando cualquiera de las dos habilidades escogidas."
+										]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Channel Divinity: Knowledge of the Ages",
-                                        "entries": ["Starting at 2nd level, you can use your Channel Divinity to tap into a divine well of knowledge. As an action, you choose one skill or tool. For 10 minutes, you have proficiency with the chosen skill or tool."]
+                                        "name": "Canalizar Divinidad: Conocimientos de las Eras",
+                                        "entries": ["A partir de nivel 2, puedes utilizar tu Canalizar Divinidad para acceder a un repositorio divino de conocimientos. Como acción, escoge una habilidad o herramienta. Durante 10 minutos, poseerás competencia en ella."]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Channel Divinity: Read Thoughts",
-                                        "entries": ["At 6th level, you can use your Channel Divinity to read a creature's thoughts. You can then use your access to the creature's mind to command it.", "As an action, choose one creature that you can see within 60 feet of you. That creature must make a Wisdom saving throw. If the creature succeeds on the saving throw, you can't use this feature on it again until you finish a long rest.", "If the creature fails its save, you can read its surface thoughts (those foremost in its mind, reflecting its current emotions and what it is actively thinking about) when it is within 60 feet of you. This effect lasts for 1 minute.", "During that time, you can use your action to end this effect and cast the {@spell suggestion} spell on the creature without expending a spell slot. The target automatically fails its saving throw against the spell."]
+                                        "name": "Canalizar Divinidad: Leer Pensamientos",
+                                        "entries": [
+											"A partir de nivel 6, puedes usar tu Canalizar Divinidad para leer los pensamientos de una criatura. Puedes aprovecharte de tu acceso a la mente de la criatura para darle órdenes.", 
+											"Como acción, elige a una criatura que puedas ver a 60 pies o menos de ti. Dicho objetivo deberá hacer una tirada de salvación de Sabiduría. Si tiene éxito, no podrás volver a utilizar este rasgo sobre él hasta que termines un descanso largo.", 
+											"Si falla, serás capaz de leer sus pensamientos superficiales (los dominantes en este momento, que suelen reflejar sus emociones actuales y en qué está pensando ahora mismo) siempre que se encuentre a 60 pies o menos de ti. Este efecto dura 1 minuto.", 
+											"Durante este periodo de tiempo, puedes usar tu acción para dar por concluido el efecto y lanzar el conjuro {@spell Sugestión # Suggestion|phb_esp|sugestión} sin gastar un espacio de conjuro. El objetivo fallará automáticamente su tirada de salvación contra este conjuro."
+										]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Potent Spellcasting",
-                                        "entries": ["Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip."]
+                                        "name": "Lanzamiento Potente",
+                                        "entries": ["A partir de nivel 8, puedes añadir tu modificador por Sabiduría al daño que causas con cualquier truco de clérigo."]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Visions of the Past",
-                                        "entries": ["Starting at 17th level, you can call up visions of the past that relate to an object you hold or your immediate surroundings. You spend at least 1 minute in meditation and prayer, then receive dreamlike, shadowy glimpses of recent events. You can meditate in this way for a number of minutes equal to your Wisdom score and must maintain concentration during that time, as if you were casting a spell.", "Once you use this feature, you can't use it again until you finish a short or long rest.", {
+                                        "name": "Visiones del Pasado",
+                                        "entries": [
+											"A partir de nivel 17, puedes invocar visiones del pasado relativas a un objeto que sostengas o a tu entorno inmediato. Tras pasar al menos 1 minuto sumido en la meditación y la oración, podrás entrever una imagen sombría y onírica de eventos recientes. Puedes meditar de esta forma durante tantos minutos como tu puntuación de Sabiduría. Deberás pasar este tiempo concentrado, como si estuvieras lanzando un conjuro.", 
+											"Una vez utilizado este rasgo, deberás terminar un descanso corto o largo para poder volver a usarlo otra vez.", {
                                                 "type": "entries",
                                                 "entries": [{
                                                         "type": "entries",
-                                                        "name": "Object Reading",
-                                                        "entries": ["Holding an object as you meditate, you can see visions of the object's previous owner. After meditating for 1 minute, you learn how the owner acquired and lost the object, as well as the most recent significant event involving the object and that owner. If the object was owned by another creature in the recent past (within a number of days equal to your Wisdom score), you can spend 1 additional minute for each owner to learn the same information about that creature."]
+                                                        "name": "Leer un objeto",
+                                                        "entries": ["Si sostienes un objeto mientras meditas, podrás contemplar visiones de su anterior dueño. Tras meditar durante al menos 1 minuto, descubrirás cómo dicho dueño consiguió y perdió el objeto, así como el evento importante más reciente que haya implicado tanto al objeto como al dueño. Si el objeto tuvo otros dueños en el pasado reciente (tantos días como tu puntuación de Sabiduría o menos), podrás invertir 1 minuto adicional por cada dueño para obtener esta misma información sobre él."]
                                                     }
                                                 ]
                                             }, {
                                                 "type": "entries",
                                                 "entries": [{
                                                         "type": "entries",
-                                                        "name": "Area Reading",
-                                                        "entries": ["As you meditate, you see visions of recent events in your immediate vicinity (a room, street, tunnel, clearing, or the like, up to a 50-foot cube), going back a number of days equal to your Wisdom score. For each minute you meditate, you learn about one significant event, beginning with the most recent. Significant events typically involve powerful emotions, such as battles and betrayals, marriages and murders, births and funerals. However, they might also include more mundane events that are nevertheless important in your current situation."]
+                                                        "name": "Leer una zona",
+                                                        "entries": ["Mientras meditas, puedes vislumbrar visiones de tu entorno inmediato (una habitación, calle, túnel, claro o similar de tamaño igual o inferior a un cubo de 50 pies) que se remontan a tantos días hacia el pasado como tu puntuación de Sabiduría. Por cada minuto que pases meditando descubrirás un suceso importante, empezando por el más reciente. Los eventos de este tipo suelen ser aquellos que implican emociones poderosas, como batallas y traiciones, matrimonios y asesinatos, o nacimientos y funerales. Con todo, también pueden tratarse de sucesos más mundanos que, por la razón que sea, son relevantes para tus circunstancias actuales."]
                                                     }
                                                 ]
                                             }
