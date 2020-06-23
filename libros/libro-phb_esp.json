@@ -14621,7 +14621,7 @@
             },
             "startingEquipment": {
                 "additionalFromBackground": true,
-                "default": ["(a) un {@item Hacha a dos manos # Greataxe|phb_esp|hacha a dos manos} o (b) cualquier {@filter arma cuerpo a cuerpo marcial|items|source=phb_esp|category=basic|type=martial weapon;melee weapon=sand}", "(a) dos {@item Hacha de mano # Handaxe|phb_esp|hachas de mano} o (b) cualquier {@filter arma sencilla|items|source=phb_esp|category=basic|type=simple weapon}", "Un {@item Paquete de explorador # Explorer's Pack|phb_esp|paquete de explorador} y cuatro {@item Jabalina # Javelin|phb_esp|jabalinas}"],
+                "default": ["(a) un {@item Hacha a dos manos # Greataxe|phb_esp|hacha a dos manos} o (b) cualquier {@filter arma cuerpo a cuerpo marcial|items|source=phb_esp|category=basic|type=martial weapon;melee weapon=sand}", "(a) dos {@item Hacha de mano # Handaxe|phb_esp|hachas de mano} o (b) cualquier {@filter arma sencilla|items|source=phb_esp|type=simple weapon}", "Un {@item Paquete de explorador # Explorer's Pack|phb_esp|paquete de explorador} y cuatro {@item Jabalina # Javelin|phb_esp|jabalinas}"],
                 "goldAlternative": "{@dice 2d4×10|2d4 × 10|Starting Gold}"
             },
             "multiclassing": {
@@ -15106,7 +15106,7 @@
             },
             "startingEquipment": {
                 "additionalFromBackground": true,
-                "default": ["(a) un {@item Estoque # Rapier|phb_esp|estoque}, (b) una {@item Espada larga # Longsword|phb_esp|espada larga} o (c) cualquier {@filter simple arma sencilla|items|source=phb_esp|category=basic|type=simple weapon}", "(a) un {@item Paquete de diplomático # Diplomat's Pack|phb_esp|paquete de diplomático} o (b) un {@item Paquete de artista # Entertainer's Pack|phb_esp|paquete de artista}", "(a) un {@item Flauta # Flute|phb_esp|flauta} o (b) cualquier otro {@filter instrumento musical|items|miscellaneous=mundane|type=instrumento}", "{@item Armadura de cuero # Leather Armor|phb_esp|armadura de cuero} y una {@item Daga # Dagger|phb_esp|daga}"],
+                "default": ["(a) un {@item Estoque # Rapier|phb_esp|estoque}, (b) una {@item Espada larga # Longsword|phb_esp|espada larga} o (c) cualquier {@filter simple arma sencilla|items|source=phb_esp|type=simple weapon}", "(a) un {@item Paquete de diplomático # Diplomat's Pack|phb_esp|paquete de diplomático} o (b) un {@item Paquete de artista # Entertainer's Pack|phb_esp|paquete de artista}", "(a) un {@item Flauta # Flute|phb_esp|flauta} o (b) cualquier otro {@filter instrumento musical|items|miscellaneous=mundane|type=instrumento}", "{@item Armadura de cuero # Leather Armor|phb_esp|armadura de cuero} y una {@item Daga # Dagger|phb_esp|daga}"],
                 "goldAlternative": "{@dice 5d4×10|5d4 × 10|Starting Gold}"
             },
             "multiclassing": {
@@ -15449,7 +15449,7 @@
                 "weapons": ["simple"],
                 "skills": [{
                         "choose": {
-                            "from": ["history", "insight", "medicine", "persuasion", "religion"],
+                            "from": ["history|Historia", "insight|Perspicacia", "medicine|Medicina", "persuasion|Persuasión", "religion|Religión"],
                             "count": 2
                         }
                     }
@@ -15457,7 +15457,7 @@
             },
             "startingEquipment": {
                 "additionalFromBackground": true,
-                "default": ["(a) a {@item mace|phb} or (b) a {@item warhammer|phb} (if proficient)", "(a) {@item scale mail|phb}, (b) {@item leather armor|phb}, or (c) {@item chain mail|phb} (if proficient)", "(a) a {@item light crossbow|phb} and {@item Crossbow Bolts (20)|phb|20 bolts} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}", "(a) a {@item priest's pack|phb} or (b) an {@item explorer's pack|phb}", "A {@item shield|phb} and a {@item holy symbol|phb}"],
+                "default": ["(a) una {@item Maza # Mace|phb_esp|maza} o (b) un {@item Martillo de guerra # Warhammer|phb_esp|martillo de guerra} (si eres competente)", "(a) {@item Cota de escamas # Scale Mail|phb_esp|cota de escamas}, (b) {@item Armadura de cuero # Leather Armor|phb_esp|armadura de cuero} o (c) {@item Cota de malla # Chain Mail|phb_esp|cota de malla} (si eres competente)", "(a) una {@item Ballesta ligera # Light Crossbow|phb_esp|ballesta ligera} y {@item Virotes de ballesta (20) # Crossbow Bolts|phb_esp|20 virotes} o (b) cualquier {@filter arma sencilla|items|source=phb_esp|type=simple weapon}", "(a) un {@item Paquete de sacerdote # Priest's Pack|phb_esp|paquete de sacerdote} o (b) un {@item Paquete de explorador # Explorer's Pack|phb_esp|paquete de explorador}", "Un {@item Escudo # Shield|phb_esp|escudo} y un {@item Símbolos sagrados # Holy Symbol|phb_esp|símbolo sagrado}"],
                 "goldAlternative": "{@dice 5d4×10|5d4 × 10|Starting Gold}"
             },
             "multiclassing": {
