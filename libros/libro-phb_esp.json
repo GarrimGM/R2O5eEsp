@@ -15745,203 +15745,233 @@
                             }
                         ]]
                 }, {
-                    "name": "Life Domain",
-                    "shortName": "Life",
+                    "name": "Dominio de la Vida # Life Domain",
+                    "shortName": "Vida",
                     "source": "PHB_Esp",
                     "page": 60,
                     "srd": true,
                     "additionalSpells": [{
                             "prepared": {
-                                "1": ["bless", "cure wounds"],
-                                "3": ["lesser restoration", "spiritual weapon"],
-                                "5": ["beacon of hope", "revivify"],
-                                "7": ["death ward", "guardian of faith"],
-                                "9": ["mass cure wounds", "raise dead"]
+                                "1": ["Bendición # Bless|phb_esp|bendición", "Curar heridas # Cure Wounds|phb_esp|curar heridas"],
+                                "3": ["Restablecimiento menor # Lesser Restoration|phb_esp|restablecimiento menor", "Arma espiritual # Spiritual Weapon|phb_esp|arma espiritual"],
+                                "5": ["Señal de esperanza # Beacon of Hope|phb_esp|señal de esperanza", "Revivir # Revivify|phb_esp|revivir"],
+                                "7": ["Guarda contra la muerte # Death Ward|phb_esp|guarda contra la muerte", "Guardián de la fe # Guardian of Faith|phb_esp|guardián de la fe"],
+                                "9": ["Curar heridas en masa # Mass Cure Wounds|phb_esp|curar heridas en masa", "Alzar a los muertos # Raise Dead|phb_esp|alzar a los muertos"]
                             }
                         }
                     ],
                     "subclassFeatures": [[{
                                 "name": "Life Domain",
-                                "entries": ["The Life domain focuses on the vibrant positive energy—one of the fundamental forces of the universe—that sustains all life. The gods of life promote vitality and health through healing the sick and wounded, caring for those in need, and driving away the forces of death and undeath. Almost any non-evil deity can claim influence over this domain, particularly agricultural deities (such as Chauntea, Arawai, and Demeter), sun gods (such as Lathander, Pelor, and Re-Horakhty), gods of healing or endurance (such as Ilmater, Mishakal, Apollo, and Diancecht), and gods of home and community (such as Hestia, Hathor, and Boldrei).", "At each indicated cleric level, you add the listed spells to your spells prepared.", {
+                                "entries": ["El dominio de la Vida se centra en la brillante energía positiva (una de las fuerzas fundamentales del universo) que sustenta a todos los seres vivos. Los dioses de la vida promueven la vitalidad y la salud curando a los enfermos y a los heridos, cuidando de los necesitados y expulsando a las fuerzas de la muerte y a los muertos vivientes. Prácticamente todas las deidades no malvadas están asociadas a este dominio, en especial las de la agricultura (como Chauntea, Arawai y Deméter), las solares (como Lathander, Pelor y Ra), las de la curación y la resistencia (como Ilmater, Mishakal, Apolo y Dian Cecht) y las del hogar y la comunidad (como Hestia, Hathory Boldrei).", {
                                         "type": "table",
-                                        "caption": "Life Domain Spells",
-                                        "colLabels": ["Cleric Level", "Spells"],
+                                        "caption": "Conjuros de dominio de la Vida",
+                                        "colLabels": ["Nivel de clérigo", "Conjuros"],
                                         "colStyles": ["col-3 text-center", "col-9"],
-                                        "rows": [["1st", "{@spell bless}, {@spell cure wounds}"], ["3rd", "{@spell lesser restoration}, {@spell spiritual weapon}"], ["5th", "{@spell beacon of hope}, {@spell revivify}"], ["7th", "{@spell death ward}, {@spell guardian of faith}"], ["9th", "{@spell mass cure wounds}, {@spell raise dead}"]]
+                                        "rows": [
+											["1", "{@spell Bendición # Bless|phb_esp|bendición}, {@spell Curar heridas # Cure Wounds|phb_esp|curar heridas}"], 
+											["3", "{@spell Restablecimiento menor # Lesser Restoration|phb_esp|restablecimiento menor}, {@spell Arma espiritual # Spiritual Weapon|phb_esp|arma espiritual}"], 
+											["5", "{@spell Señal de esperanza # Beacon of Hope|phb_esp|señal de esperanza}, {@spell Revivir # Revivify|phb_esp|revivir}"], 
+											["7", "{@spell Guarda contra la muerte # Death Ward|phb_esp|guarda contra la muerte}, {@spell Guardián de la fe # Guardian of Faith|phb_esp|guardián de la fe}"], 
+											["9", "{@spell Curar heridas en masa # Mass Cure Wounds|phb_esp|curar heridas en masa}, {@spell Alzar a los muertos # Raise Dead|phb_esp|alzar a los muertos}"]
+										]
                                     }, {
                                         "type": "entries",
-                                        "name": "Bonus Proficiency",
-                                        "entries": ["When you choose this domain at 1st level, you gain proficiency with heavy armor."]
+                                        "name": "Competencia Adicional",
+                                        "entries": ["A nivel 1, cuando escoges este dominio, ganas competencia con armaduras pesadas."]
                                     }, {
                                         "type": "entries",
-                                        "name": "Disciple of Life",
-                                        "entries": ["Also starting at 1st level, your healing spells are more effective. Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains additional hit points equal to 2 + the spell's level."]
+                                        "name": "Discípulo de la Vida",
+                                        "entries": ["Además, también a partir de nivel 1, tus conjuros de curación se vuelven más efectivos. Cuando emplees un conjuro de nivel 1 o más para hacer recuperar puntos de golpe a una criatura, dicha criatura recuperará 2 + el nivel del conjuro puntos de golpe adicionales."]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Channel Divinity: Preserve Life",
-                                        "entries": ["Starting at 2nd level, you can use your Channel Divinity to heal the badly injured.", "As an action, you present your holy symbol and evoke healing energy that can restore a number of hit points equal to five times your cleric level. Choose any creatures within 30 feet of you, and divide those hit points among them. This feature can restore a creature to no more than half of its hit point maximum. You can't use this feature on an undead or a construct."]
+                                        "name": "Canalizar Divinidad: Preservar Vida",
+                                        "entries": [
+											"A partir de nivel 2, eres capaz de utilizar tu Canalizar Divinidad para curar a los gravemente heridos.", 
+											"Como acción, puedes mostrar tu símbolo sagrado y generar una energía curativa capaz de recuperar tantos puntos de golpe como cinco veces tu nivel de clérigo. Elige a cualquier cantidad de criaturas a 30 pies o menos de ti y divide estos puntos de golpe entre ellas. Este rasgo no puede hacer que una criatura pase a tener más de la mitad de sus puntos de golpe máximos y no podrás utilizarlo sobre muertos vivientes o autómatas."
+										]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Blessed Healer",
-                                        "entries": ["Beginning at 6th level, the healing spells you cast on others heal you as well. When you cast a spell of 1st level or higher that restores hit points to a creature other than you, you regain hit points equal to 2 + the spell's level."]
+                                        "name": "Sanador Bendito",
+                                        "entries": ["A partir de nivel 6, los conjuros de curación que lances sobre otros también te sanan a ti. Cuando emplees un conjuro de nivel 1 o más para hacer recuperar puntos de golpe a una criatura que no seas tú, tú recuperarás 2 + el nivel del conjuro puntos de golpe."]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Divine Strike",
-                                        "entries": ["At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@dice 1d8} radiant damage to the target. When you reach 14th level, the extra damage increases to {@dice 2d8}."]
+                                        "name": "Golpe Divino",
+                                        "entries": ["A nivel 8 obtienes la capacidad para imbuir los golpes de tu arma con energía divina. Una vez en cada uno de tus turnos, cuando impactes a una criatura con un ataque con arma, puedes hacer que dicho ataque cause {@dice 1d8} de daño radiante adicional al objetivo. Cuando llegas a nivel 14, este daño adicional pasa a ser {@dice 2d8}."]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Supreme Healing",
-                                        "entries": ["Starting at 17th level, when you would normally roll one or more dice to restore hit points with a spell, you instead use the highest number possible for each die. For example, instead of restoring {@dice 2d6} hit points to a creature, you restore 12."]
+                                        "name": "Sanación Suprema",
+                                        "entries": ["A partir de nivel 17, en vez de tirar uno o más dados para determinar la cantidad de puntos de golpe curados por tus conjuros, utilizarás el resultado máximo posible de cada dado. Así, una criatura a la que normalmente harías recuperar {@dice 2d6} puntos de golpe, recuperará 12."]
                                     }
                                 ]
                             }
                         ]]
                 }, {
-                    "name": "Light Domain",
-                    "shortName": "Light",
+                    "name": "Dominio de la Luz # Light Domain",
+                    "shortName": "Luz",
                     "source": "PHB_Esp",
                     "page": 60,
                     "additionalSpells": [{
                             "prepared": {
-                                "1": ["burning hands", "faerie fire"],
-                                "3": ["flaming sphere", "scorching ray"],
-                                "5": ["daylight", "fireball"],
-                                "7": ["guardian of faith", "wall of fire"],
-                                "9": ["flame strike", "scrying"]
+                                "1": ["Manos ardientes # Burning Hands|phb_esp|manos ardientes", "Fuego feérico # Faerie Fire|phb_esp|fuego feérico"],
+                                "3": ["Esfera de llamas # Flaming Sphere|phb_esp|esfera de llamas", "Rayo abrasador # Scorching Ray|phb_esp|rayo abrasador"],
+                                "5": ["Luz del día # Daylight|phb_esp|luz del día", "Bola de fuego # Fireball|phb_esp|bola de fuego"],
+                                "7": ["Guardián de la fe # Guardian of Faith|phb_esp|guardián de la fe", "Muro de fuego # Wall of Fire|phb_esp|muro de fuego"],
+                                "9": ["Golpe flamígero # Flame Strike|phb_esp|golpe flamígero", "Escudriñar # Scrying|phb_esp|Escudriñar"]
                             }
                         }
                     ],
                     "subclassFeatures": [[{
                                 "name": "Light Domain",
-                                "entries": ["Gods of light—including Helm, Lathander, Pholtus, Branchala, the Silver Flame, Belenus, Apollo, and Re-Horakhty—promote the ideals of rebirth and renewal, truth, vigilance, and beauty, often using the symbol of the sun. Some of these gods are portrayed as the sun itself or as a charioteer who guides the sun across the sky. Others are tireless sentinels whose eyes pierce every shadow and see through every deception. Some are deities of beauty and artistry, who teach that art is a vehicle for the soul's improvement. Clerics of a god of light are enlightened souls infused with radiance and the power of their gods' discerning vision, charged with chasing away lies and burning away darkness.", "At each indicated cleric level, you add the listed spells to your spells prepared.", {
+                                "entries": ["Los dioses de la luz, entre los que se encuentran Yelmo, Lathander, Pholtus, Branchala, la Llama de Plata, Belenus, Apolo y Ra, promueven los ideales del renacimiento, la renovación, la verdad, la vigilancia y la belleza. Suelen usar como símbolo el sol. De hecho, a algunas de estas deidades se las representa como el propio sol o como un auriga que guía al sol a través del cielo. Otras son centinelas incansables, cuyos ojos penetran cada sombra y pueden ver más allá de cualquier engaño. Algunas son divinidades de la belleza y el arte, que enseñan cómo esta no es sino un vehículo para mejorar la propia alma. Los clérigos de un dios de la luz son espíritus iluminados, imbuidos del brillo y el poder de la visión preclara de su dios. Su misión es ahuyentar la mentira y traer la luz a la oscuridad.", {
                                         "type": "table",
-                                        "caption": "Light Domain Spells",
-                                        "colLabels": ["Cleric Level", "Spells"],
+                                        "caption": "Conjuros de dominio de la Luz",
+                                        "colLabels": ["Nivel de clérigo", "Conjuros"],
                                         "colStyles": ["col-3 text-center", "col-9"],
-                                        "rows": [["1st", "{@spell burning hands}, {@spell faerie fire}"], ["3rd", "{@spell flaming sphere}, {@spell scorching ray}"], ["5th", "{@spell daylight}, {@spell fireball}"], ["7th", "{@spell guardian of faith}, {@spell wall of fire}"], ["9th", "{@spell flame strike}, {@spell scrying}"]]
+                                        "rows": [
+											["1", "{@spell Manos ardientes # Burning Hands|phb_esp|manos ardientes}, {@spell Fuego feérico # Faerie Fire|phb_esp|fuego feérico}"], 
+											["3", "{@spell Esfera de llamas # Flaming Sphere|phb_esp|esfera de llamas}, {@spell Rayo abrasador # Scorching Ray|phb_esp|rayo abrasador}"], 
+											["5", "{@spell Luz del día # Daylight|phb_esp|luz del día}, {@spell Bola de fuego # Fireball|phb_esp|bola de fuego}"], 
+											["7", "{@spell Guardián de la fe # Guardian of Faith|phb_esp|guardián de la fe}, {@spell Muro de fuego # Wall of Fire|phb_esp|muro de fuego}"], 
+											["9", "{@spell Golpe flamígero # Flame Strike|phb_esp|golpe flamígero}, {@spell Escudriñar # Scrying|phb_esp|Escudriñar}"]
+										]
                                     }, {
                                         "type": "entries",
-                                        "name": "Bonus Cantrip",
-                                        "entries": ["When you choose this domain at 1st level, you gain the {@spell light} cantrip if you don't already know it."]
+                                        "name": "Truco Adicional",
+                                        "entries": ["A nivel 1, cuando escoges este dominio, obtienes el truco {@spell Luz # Light|phb_esp|luz}, si no lo conocías ya."]
                                     }, {
                                         "type": "entries",
-                                        "name": "Warding Flare",
-                                        "entries": ["Also at 1st level, you can interpose divine light between yourself and an attacking enemy. When you are attacked by a creature within 30 feet of you that you can see, you can use your reaction to impose disadvantage on the attack roll, causing light to flare before the attacker before it hits or misses. An attacker that can't be {@condition blinded} is immune to this feature.", "You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest."]
+                                        "name": "Fulgor Protector",
+                                        "entries": [
+											"También desde nivel 1, puedes interponer una luz divina entre tú y un enemigo que te ataque. Cuando una criatura a 30 pies o menos de ti y que puedas ver te ataque, podrás usar tu reacción para dar desventaja a su tirada de ataque: haces que una luz resplandezca súbitamente ante ella. Un atacante que no pueda ser {@condition Cegado # Blinded|phb_esp|cegado} es inmune a este rasgo.", 
+											"Puedes emplear este rasgo tantas veces como tu modificador por Sabiduría (mínimo una vez). Recuperas todos los usos tras finalizar un descanso largo."
+										]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Channel Divinity: Radiance of the Dawn",
-                                        "entries": ["Starting at 2nd level, you can use your Channel Divinity to harness sunlight, banishing darkness and dealing radiant damage to your foes.", "As an action, you present your holy symbol, and any magical darkness within 30 feet of you is dispelled. Additionally, each hostile creature within 30 feet of you must make a Constitution saving throw. A creature takes radiant damage equal to {@dice 2d10} + your cleric level on a failed saving throw, and half as much damage on a successful one. A creature that has total cover from you is not affected."]
+                                        "name": "Canalizar Divinidad: Resplandor del Amanecer",
+                                        "entries": [
+											"A partir de nivel 2, puedes utilizar tu Canalizar Divinidad para empuñar el poder de la luz solar, expulsando la oscuridad y causando daño radiante a tus enemigos.", 
+											"Puedes usar tu acción para mostrar tu símbolo sagrado y disipar cualquier oscuridad mágica a 30 pies o menos de ti. Además, todas las criaturas hostiles dentro de esta distancia deberán hacer una tirada de salvación de Constitución, recibiendo {@dice 2d10} + tu nivel de clérigo de daño radiante si la fallan o la mitad de ese daño si la superan. Las criaturas con cobertura completa no se ven afectadas."
+										]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Improved Flare",
-                                        "entries": ["Starting at 6th level, you can also use your Warding Flare feature when a creature that you can see within 30 feet of you attacks a creature other than you."]
+                                        "name": "Fulgor Mejorado",
+                                        "entries": ["A partir de nivel 6, también podrás emplear tu rasgo Fulgor Protector cuando una criatura a 30 pies o menos de ti y que puedas ver ataque a una criatura que no seas tú."]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Potent Spellcasting",
-                                        "entries": ["Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip."]
+                                        "name": "Lanzamiento Potente",
+                                        "entries": ["A partir de nivel 8, puedes añadir tu modificador por Sabiduría al daño que causas con cualquier truco de clérigo."]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Corona of Light",
-                                        "entries": ["Starting at 17th level, you can use your action to activate an aura of sunlight that lasts for 1 minute or until you dismiss it using another action. You emit bright light in a 60-foot radius and dim light 30 feet beyond that. Your enemies in the bright light have disadvantage on saving throws against any spell that deals fire or radiant damage."]
+                                        "name": "Halo de Luz",
+                                        "entries": ["A partir de nivel 17, puedes usar tu acción para activar un aura de luz solar que dura 1 minuto o hasta que emplees otra acción para disiparla. Dicha aura hace que emitas luz brillante en un radio de 60 pies y luz tenue 30 pies más allá. Aquellos enemigos que se encuentren en la zona de luz brillante tienen desventaja en las tiradas de salvación contra cualquier conjuro que cause daño de fuego o radiante."]
                                     }
                                 ]
                             }
                         ]]
                 }, {
-                    "name": "Nature Domain",
-                    "shortName": "Nature",
+                    "name": "Dominio de la Naturaleza # Nature Domain",
+                    "shortName": "Naturaleza",
                     "source": "PHB_Esp",
                     "page": 61,
                     "additionalSpells": [{
                             "prepared": {
-                                "1": ["animal friendship", "speak with animals"],
-                                "3": ["barkskin", "spike growth"],
-                                "5": ["plant growth", "wind wall"],
-                                "7": ["dominate beast", "grasping vine"],
-                                "9": ["insect plague", "tree stride"]
+                                "1": ["Encantar animal # Animal Friendship|phb_esp|encantar animal", "Hablar con los animales # Speak with Animals|phb_esp|hablar con los animales"],
+                                "3": ["Piel robliza # Barkskin|phb_esp|piel robliza", "Crecimiento espinoso # Spike Growth|phb_esp|crecimiento espinoso"],
+                                "5": ["Crecimiento vegetal # Plant Growth|phb_esp|crecimiento vegetal", "Muro de viento # Wind Wall|phb_esp|muro de viento"],
+                                "7": ["Dominar bestia # Dominate Beast|phb_esp|dominar bestia", "Enredadera # Grasping Vine|phb_esp|enredadera"],
+                                "9": ["Plaga de insectos # Insect Plague|phb_esp|plaga de insectos", "Paso arbóreo # Tree Stride|phb_esp|paso arbóreo"]
                             }
                         }
                     ],
                     "subclassFeatures": [[{
                                 "name": "Nature Domain",
-                                "entries": ["Gods of nature are as varied as the natural world itself, from inscrutable gods of the deep forests (such as Silvanus, Obad-Hai, Chislev, Balinor, and Pan) to friendly deities associated with particular springs and groves (such as Eldath). Druids revere nature as a whole and might serve one of these deities, practicing mysterious rites and reciting all-but-forgotten prayers in their own secret tongue. But many of these gods have clerics as well, champions who take a more active role in advancing the interests of a particular nature god. These clerics might hunt the evil monstrosities that despoil the woodlands, bless the harvest of the faithful, or wither the crops of those who anger their gods.", "At each indicated cleric level, you add the listed spells to your spells prepared.", {
+                                "entries": ["Los dioses de la naturaleza son tan variados como ella; desde las inescrutables deidades de los bosques profundos (como Silvanus, Obad-Hai, Chislev, Balinory Pan) hasta las amables divinidades asociadas con arroyos o arboledas concretas (como Eldath). Los druidas veneran la naturaleza en su conjunto y podrían servir a uno de estos dioses, practicando misteriosos ritos y recitando en su lengua secreta rezos prácticamente olvidados. No obstante, muchas de estas divinidades también poseen clérigos; campeones que persiguen los intereses de un dios de la naturaleza concreto de forma más proactiva. Estos clérigos pueden cazar a las malvadas monstruosidades que saquean los bosques, bendecir las cosechas de sus feligreses o marchitar los cultivos de aquellos que atraen la ira de sus dioses.", {
                                         "type": "table",
-                                        "caption": "Nature Domain Spells",
-                                        "colLabels": ["Cleric Level", "Spells"],
+                                        "caption": "Conjuros de dominio de la Naturaleza",
+                                        "colLabels": ["Nivel de clérigo", "Conjuros"],
                                         "colStyles": ["col-3 text-center", "col-9"],
-                                        "rows": [["1st", "{@spell animal friendship}, {@spell speak with animals}"], ["3rd", "{@spell barkskin}, {@spell spike growth}"], ["5th", "{@spell plant growth}, {@spell wind wall}"], ["7th", "{@spell dominate beast}, {@spell grasping vine}"], ["9th", "{@spell insect plague}, {@spell tree stride}"]]
+                                        "rows": [
+											["1", "{@spell Encantar animal # Animal Friendship|phb_esp|encantar animal}, {@spell Hablar con los animales # Speak with Animals|phb_esp|hablar con los animales}"], 
+											["3", "{@spell Piel robliza # Barkskin|phb_esp|piel robliza}, {@spell Crecimiento espinoso # Spike Growth|phb_esp|crecimiento espinoso}"], 
+											["5", "{@spell Crecimiento vegetal # Plant Growth|phb_esp|crecimiento vegetal}, {@spell Muro de viento # Wind Wall|phb_esp|muro de viento}"], 
+											["7", "{@spell Dominar bestia # Dominate Beast|phb_esp|dominar bestia}, {@spell Enredadera # Grasping Vine|phb_esp|enredadera}"], 
+											["9", "{@spell Plaga de insectos # Insect Plague|phb_esp|plaga de insectos}, {@spell Paso arbóreo # Tree Stride|phb_esp|paso arbóreo}"]
+										]
                                     }, {
                                         "type": "entries",
-                                        "name": "Acolyte of Nature",
-                                        "entries": ["At 1st level, you learn one druid cantrip of your choice. You also gain proficiency in one of the following skills of your choice: {@skill Animal Handling}, {@skill Nature}, or {@skill Survival}."]
+                                        "name": "Acólito de la Naturaleza",
+                                        "entries": ["A nivel 1, aprendes un truco de druida de tu elección. También ganas competencia en una habilidad a elegir de entre las siguientes: {@skill Nature|Naturaleza}, {@skill Survival|Supervivencia} y {@skill Animal Handling|Trato con Animales}."]
                                     }, {
                                         "type": "entries",
-                                        "name": "Bonus Proficiency",
-                                        "entries": ["Also at 1st level, you gain proficiency with heavy armor."]
+                                        "name": "Competencia Adicional",
+                                        "entries": ["También a nivel 1, consigues competencia con armaduras pesadas."]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Channel Divinity: Charm Animals and Plants",
-                                        "entries": ["Starting at 2nd level, you can use your Channel Divinity to charm animals and plants.", "As an action, you present your holy symbol and invoke the name of your deity. Each beast or plant creature that can see you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is {@condition charmed} by you for 1 minute or until it takes damage. While it is {@condition charmed} by you, it is friendly to you and other creatures you designate."]
+                                        "name": "Canalizar Divinidad: Hechizar Animales y Plantas",
+                                        "entries": [
+											"A partir de nivel 2, eres capaz de utilizar tu Canalizar Divinidad para hechizar animales y plantas.", 
+											"Puedes emplear tu acción para mostrar tu símbolo sagrado e invocar el nombre de tu deidad. Todas las bestias y plantas a 30 pies o menos de ti que puedan verte deben realizar una tirada de salvación de Sabiduría. Las criaturas que fallen su tirada de salvación estarán {@condition Hechizado # Charmed|phb_esp|hechizadas} por ti durante 1 minuto o hasta recibir daño. Mientras las tengas {@condition Hechizado # Charmed|phb_esp|hechizadas}, se mostrarán amistosas hacia ti y todas las criaturas que elijas."
+										]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Dampen Elements",
-                                        "entries": ["Starting at 6th level, when you or a creature within 30 feet of you takes acid, cold, fire, lightning, or thunder damage, you can use your reaction to grant resistance to the creature against that instance of the damage."]
+                                        "name": "Atenuar Elementos",
+                                        "entries": ["A partir de nivel 6, cuando una criatura a 30 pies o menos de ti (tú incluido) fuera a recibir daño de ácido, frío, fuego, relámpago o trueno, podrás usar tu reacción para otorgar a dicha criatura resistencia a ese daño."]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Divine Strike",
-                                        "entries": ["At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@dice 1d8} cold, fire, or lightning damage (your choice) to the target. When you reach 14th level, the extra damage increases to {@dice 2d8}."]
+                                        "name": "Golpe Divino",
+                                        "entries": ["A nivel 8 obtienes la capacidad para imbuir los golpes de tu arma con energía divina. Una vez en cada uno de tus turnos, cuando impactes a una criatura con un ataque con arma, puedes hacer que dicho ataque cause {@dice 1d8} de daño de frío, fuego o relámpago (tú eliges cual) adicional al objetivo. Cuando llegas a nivel 14, este daño adicional pasa a ser {@dice 2d8}."]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Master of Nature",
-                                        "entries": ["At 17th level, you gain the ability to command animals and plant creatures. While creatures are {@condition charmed} by your Charm Animals and Plants feature, you can take a bonus action on your turn to verbally command what each of those creatures will do on its next turn."]
+                                        "name": "Maestro de la Naturaleza",
+                                        "entries": ["A nivel 17, consigues la capacidad para dar órdenes a animales y criaturas de tipo \"planta\". Durante tu turno, mientras haya criaturas {@condition Hechizado # Charmed|phb_esp|hechizadas} por tu rasgo Hechizar Animales y Plantas, podrás usar una acción adicional para dar una orden verbal a cada una de esas criaturas, que deberán ejecutarla durante su siguiente turno."]
                                     }
                                 ]
                             }
