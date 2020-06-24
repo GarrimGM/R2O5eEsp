@@ -15485,7 +15485,7 @@
                                 "entries": ["A nivel 1 conoces tres trucos de tu elección escogidos de entre los de la lista de conjuros de clérigo. Podrás elegir más trucos de clérigo cuando llegues a niveles más altos, como se indica en la columna \"trucos conocidos\" de la tabla del clérigo."]
                             }, {
                                 "type": "entries",
-                                "name": "Preparing and Casting Spells",
+                                "name": "Preparar y lanzar conjuros",
                                 "entries": [
 									"La tabla del clérigo muestra de cuántos espacios de conjuro dispones para lanzar {@filter conjuros de clérigo|spells|class=clérigo (PBH_Esp)} de nivel 1 y superiores. Para lanzar uno de estos conjuros deberás invertir un espacio de al menos el nivel del conjuro. Recuperas todos los espacios utilizados tras finalizar un descanso largo.", 
 									"Puedes preparar una serie de conjuros, que son los que podrás lanzar, de entre la lista de conjuros de clérigo. Para hacer esto, escoge tantos conjuros de clérigo como tu nivel de clérigo + tu modificador por Sabiduría (como mínimo un conjuro). Estos conjuros deben ser de un nivel para el que tengas espacios.", 
@@ -15977,198 +15977,232 @@
                             }
                         ]]
                 }, {
-                    "name": "Tempest Domain",
-                    "shortName": "Tempest",
+                    "name": "Dominio de la Tempestad # Tempest Domain",
+                    "shortName": "Tempestad",
                     "source": "PHB_Esp",
                     "page": 62,
                     "additionalSpells": [{
                             "prepared": {
-                                "1": ["fog cloud", "thunderwave"],
-                                "3": ["gust of wind", "shatter"],
-                                "5": ["call lightning", "sleet storm"],
-                                "7": ["control water", "ice storm"],
-                                "9": ["destructive wave", "insect plague"]
+                                "1": ["Nube de oscurecimiento # Fog Cloud|phb_esp|nube de oscurecimiento", "Ola atronadora # Thunderwave|phb_esp|ola atronadora"],
+                                "3": ["Ráfaga de viento # Gust of Wind|phb_esp|ráfaga de viento", "Hacer añicos # Shatter|phb_esp|hacer añicos"],
+                                "5": ["Llamar al relámpago # Call Lightning|phb_esp|llamar al relámpago", "Tormenta de aguanieve # Sleet Storm|phb_esp|tormenta de aguanieve"],
+                                "7": ["Controlar agua # Control Water|phb_esp|controlar agua", "Tormenta de hielo # Ice Storm|phb_esp|tormenta de hielo"],
+                                "9": ["Ola destructora # Destructive Wave|phb_esp|ola destructora", "Plaga de insectos # Insect Plague|phb_esp|plaga de insectos"]
                             }
                         }
                     ],
                     "subclassFeatures": [[{
                                 "name": "Tempest Domain",
-                                "entries": ["Gods whose portfolios include the Tempest domain—including Talos, Umberlee, Kord, Zeboim, the Devourer, Zeus, and Thor—govern storms, sea, and sky. They include gods of lightning and thunder, gods of earthquakes, some fire gods, and certain gods of violence, physical strength, and courage. In some pantheons, a god of this domain rules over other deities and is known for swift justice delivered by thunderbolts. In the pantheons of seafaring people, gods of this domain are ocean deities and the patrons of sailors. Tempest gods send their clerics to inspire fear in the common folk, either to keep those folk on the path of righteousness or to encourage them to offer sacrifices of propitiation to ward off divine wrath.", "At each indicated cleric level, you add the listed spells to your spells prepared.", {
+                                "entries": ["Los dioses cuyos ámbitos incluyen el dominio de la Tempestad, como pueden ser Talos, Umberlee, Kord, Zeboim, el Devorador, Zeus o Thor, gobiernan sobre las tormentas, el mar y el cielo. Entre ellos se encuentran las deidades del relámpago y el trueno, los dioses de los terremotos, algunas divinidades ígneas y ciertos dioses de la violencia, la fuerza física y el valor. En algunos panteones, es una deidad de este dominio, normalmente conocida por ajusticiar raudamente empleando relámpagos, la que gobierna sobre los otros dioses. En los panteones de los pueblos muy marineros, las divinidades de este dominio son los dioses del océano y los patrones de los marinos. Las deidades de la tempestad envían a sus clérigos a inspirar miedo en el pueblo llano, ya sea para mantener a este en la senda de la rectitud o para motivar la celebración de sacrificios conciliatorios que mantendrán a raya la ira divina.", {
                                         "type": "table",
-                                        "caption": "Tempest Domain Spells",
-                                        "colLabels": ["Cleric Level", "Spells"],
+                                        "caption": "Conjuros de dominio de la Tempestad",
+                                        "colLabels": ["Nivel de clérigo", "Conjuros"],
                                         "colStyles": ["col-3 text-center", "col-9"],
-                                        "rows": [["1st", "{@spell fog cloud}, {@spell thunderwave}"], ["3rd", "{@spell gust of wind}, {@spell shatter}"], ["5th", "{@spell call lightning}, {@spell sleet storm}"], ["7th", "{@spell control water}, {@spell ice storm}"], ["9th", "{@spell destructive wave}, {@spell insect plague}"]]
+                                        "rows": [
+											["1", "{@spell Nube de oscurecimiento # Fog Cloud|phb_esp|nube de oscurecimiento}, {@spell Ola atronadora # Thunderwave|phb_esp|ola atronadora}"], 
+											["3", "{@spell Ráfaga de viento # Gust of Wind|phb_esp|ráfaga de viento}, {@spell Hacer añicos # Shatter|phb_esp|hacer añicos}"], 
+											["5", "{@spell Llamar al relámpago # Call Lightning|phb_esp|llamar al relámpago}, {@spell Tormenta de aguanieve # Sleet Storm|phb_esp|tormenta de aguanieve}"], 
+											["7", "{@spell Controlar agua # Control Water|phb_esp|controlar agua}, {@spell Tormenta de hielo # Ice Storm|phb_esp|tormenta de hielo}"], 
+											["9", "{@spell Ola destructora # Destructive Wave|phb_esp|ola destructora}, {@spell Plaga de insectos # Insect Plague|phb_esp|plaga de insectos}"]
+										]
                                     }, {
                                         "type": "entries",
-                                        "name": "Bonus Proficiencies",
-                                        "entries": ["At 1st level, you gain proficiency with martial weapons and heavy armor."]
+                                        "name": "Competencias Adicionales",
+                                        "entries": ["A nivel 1, ganas competencia con armas marciales y armaduras pesadas."]
                                     }, {
                                         "type": "entries",
-                                        "name": "Wrath of the Storm",
-                                        "entries": ["Also at 1st level, you can thunderously rebuke attackers. When a creature within 5 feet of you that you can see hits you with an attack, you can use your reaction to cause the creature to make a Dexterity saving throw. The creature takes {@dice 2d8} lightning or thunder damage (your choice) on a failed saving throw, and half as much damage on a successful one.", "You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest."]
+                                        "name": "Ira de la Tormenta",
+                                        "entries": [
+											"También a nivel 1, puedes castigar con el poder de la tormenta a quienes te ataquen. Cuando una criatura que se encuentre a 5 pies o menos de ti y que puedas ver te impacte con un ataque, podrás usar tu reacción para obligarla a hacer una tirada de salvación de Destreza. Dicha criatura recibe {@dice 2d8} de daño de relámpago o trueno (a tu elección) si falla la tirada o la mitad si la supera.", 
+											"Puedes emplear este rasgo tantas veces como tu modificador por Sabiduría (mínimo una vez). Recuperas todos los usos tras finalizar un descanso largo."
+										]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Channel Divinity: Destructive Wrath",
-                                        "entries": ["Starting at 2nd level, you can use your Channel Divinity to wield the power of the storm with unchecked ferocity.", "When you roll lightning or thunder damage, you can use your Channel Divinity to deal maximum damage, instead of rolling."]
+                                        "name": "Canalizar Divinidad: Ira Destructora",
+                                        "entries": [
+											"A partir de nivel 2, puedes utilizar tu Canalizar Divinidad para empuñar el poder de la tormenta con furia desmedida.", 
+											"Cuando tires para determinar la cantidad de daño de relámpago o trueno que causas, podrás usar tu Canalizar Divinidad para hacer el daño máximo en vez de tirar los dados."
+										]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Thunderbolt Strike",
-                                        "entries": ["At 6th level, when you deal lightning damage to a Large or smaller creature, you can also push it up to 10 feet away from you."]
+                                        "name": "Golpe Tempestuoso",
+                                        "entries": ["A partir de nivel 6, cuando causes daño de relámpago a una criatura Grande o más pequeña, también puedes empujarla hasta 10 pies en la dirección opuesta a ti."]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Divine Strike",
-                                        "entries": ["At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@dice 1d8} thunder damage to the target. When you reach 14th level, the extra damage increases to {@dice 2d8}."]
+                                        "name": "Golpe Divino",
+                                        "entries": ["A nivel 8 obtienes la capacidad para imbuir los golpes de tu arma con energía divina. Una vez en cada uno de tus turnos, cuando impactes a una criatura con un ataque con arma, puedes hacer que dicho ataque cause {@dice 1d8} de daño de trueno adicional al objetivo. Cuando llegas a nivel 14, este daño adicional pasa a ser {@dice 2d8}."]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Stormborn",
-                                        "entries": ["At 17th level, you have a flying speed equal to your current walking speed whenever you are not underground or indoors."]
+                                        "name": "Nacido de la Tempestad",
+                                        "entries": ["A nivel 17 obtienes una velocidad volando igual a tu velocidad caminando, siempre que no estés bajo tierra o en interiores."]
                                     }
                                 ]
                             }
                         ]]
                 }, {
-                    "name": "Trickery Domain",
-                    "shortName": "Trickery",
+                    "name": "Dominio del Engaño # Trickery Domain",
+                    "shortName": "Engaño",
                     "source": "PHB_Esp",
                     "page": 62,
                     "additionalSpells": [{
                             "prepared": {
-                                "1": ["charm person", "disguise self"],
-                                "3": ["mirror image", "pass without trace"],
-                                "5": ["blink", "dispel magic"],
-                                "7": ["dimension door", "polymorph"],
-                                "9": ["dominate person", "modify memory"]
+                                "1": ["Hechizar persona # Charm Person|phb_esp|hechizar persona", "Disfrazarse # Disguise Self|phb_esp|disfrazarse"],
+                                "3": ["Imagen múltiple # Mirror Image|phb_esp|imagen múltiple", "Pasar sin rastro # Pass without Trace|phb_esp|pasar sin rastro"],
+                                "5": ["Desplazamiento # Blink|phb_esp|desplazamiento", "Disipar magia # Dispel Magic|phb_esp|disipar magia"],
+                                "7": ["Puerta dimensional # Dimension Door|phb_esp|puerta dimensional", "Polimorfar # Polymorph|phb_esp|Polimorfar"],
+                                "9": ["Dominar persona # Dominate Person|phb_esp|dominar persona", "Alterar los recuerdos # Modify Memory|phb_esp|alterar los recuerdos"]
                             }
                         }
                     ],
                     "subclassFeatures": [[{
                                 "name": "Trickery Domain",
-                                "entries": ["Gods of trickery—such as Tymora, Beshaba, Olidammara, the Traveler, Garl Glittergold, and Loki—are mischief-makers and instigators who stand as a constant challenge to the accepted order among both gods and mortals. They're patrons of thieves, scoundrels, gamblers, rebels, and liberators. Their clerics are a disruptive force in the world, puncturing pride, mocking tyrants, stealing from the rich, freeing captives, and flouting hollow traditions. They prefer subterfuge, pranks, deception, and theft rather than direct confrontation.", "At each indicated cleric level, you add the listed spells to your spells prepared.", {
+                                "entries": ["Las divinidades del engaño, como Tymora, Beshaba, Olidammara, el Viajero, Garl Oro Reluciente y Loki, son seres revoltosos y manipuladores, que presentan un desafío constante al orden aceptado tanto por dioses como por mortales. Son patrones de canallas, ladrones, jugadores, rebeldes y libertadores. Sus clérigos son una fuerza que perturba el mundo; pinchando a los orgullosos, burlándose de los tiranos, robando de los ricos, liberando a los cautivos y desdeñando tradiciones vacías. Prefieren el subterfugio, las bromas, el engaño y el robo frente a la confrontación directa.", {
                                         "type": "table",
-                                        "caption": "Trickery Domain Spells",
-                                        "colLabels": ["Cleric Level", "Spells"],
+                                        "caption": "Conjuros de dominio del Engaño",
+                                        "colLabels": ["Nivel de clérigo", "Conjuros"],
                                         "colStyles": ["col-3 text-center", "col-9"],
-                                        "rows": [["1st", "{@spell charm person}, {@spell disguise self}"], ["3rd", "{@spell mirror image}, {@spell pass without trace}"], ["5th", "{@spell blink}, {@spell dispel magic}"], ["7th", "{@spell dimension door}, {@spell polymorph}"], ["9th", "{@spell dominate person}, {@spell modify memory}"]]
+                                        "rows": [
+											["1", "{@spell Hechizar persona # Charm Person|phb_esp|hechizar persona}, {@spell Disfrazarse # Disguise Self|phb_esp|disfrazarse}"], 
+											["3", "{@spell Imagen múltiple # Mirror Image|phb_esp|imagen múltiple}, {@spell Pasar sin rastro # Pass without Trace|phb_esp|pasar sin rastro}"], 
+											["5", "{@spell Desplazamiento # Blink|phb_esp|desplazamiento}, {@spell Disipar magia # Dispel Magic|phb_esp|disipar magia}"], 
+											["7", "{@spell Puerta dimensional # Dimension Door|phb_esp|puerta dimensional}, {@spell Polimorfar # Polymorph|phb_esp|Polimorfar}"], 
+											["9", "{@spell Dominar persona # Dominate Person|phb_esp|dominar persona}, {@spell Alterar los recuerdos # Modify Memory|phb_esp|alterar los recuerdos}"]
+										]
                                     }, {
                                         "type": "entries",
-                                        "name": "Blessing of the Trickster",
-                                        "entries": ["Starting when you choose this domain at 1st level, you can use your action to touch a willing creature other than yourself to give it advantage on Dexterity ({@skill Stealth}) checks. This blessing lasts for 1 hour or until you use this feature again."]
+                                        "name": "Bendición del Embaucador",
+                                        "entries": ["A partir del momento en el que escojas este dominio, a nivel 1, podrás usar tu acción para tocar a una criatura voluntaria que no seas tú. que tendrá ventaja en sus pruebas de Destreza ({@skill Stealth|Sigilo}). Esta bendición dura 1 hora o hasta que emplees este rasgo de nuevo."]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Channel Divinity: Invoke Duplicity",
-                                        "entries": ["Starting at 2nd level, you can use your Channel Divinity to create an illusory duplicate of yourself.", "As an action, you create a perfect illusion of yourself that lasts for 1 minute, or until you lose your concentration (as if you were concentrating on a spell). The illusion appears in an unoccupied space that you can see within 30 feet of you. As a bonus action on your turn, you can move the illusion up to 30 feet to a space you can see, but it must remain within 120 feet of you.", "For the duration, you can cast spells as though you were in the illusion's space, but you must use your own senses. Additionally, when both you and your illusion are within 5 feet of a creature that can see the illusion, you have advantage on attack rolls against that creature, given how distracting the illusion is to the target."]
+                                        "name": "Canalizar Divinidad: Invocar Duplicidad",
+                                        "entries": [
+											"A partir de nivel 2, puedes utilizar tu Canalizar Divinidad para crear un duplicado ilusorio de ti mismo.", 
+											"Como acción, puedes crear una ilusión perfecta de tu propia persona durante 1 minuto o hasta que dejes de concentrarte (como si te estuvieras concentrando en un conjuro). Esta ilusión aparecerá en un espacio desocupado que puedas ver a 30 pies de ti. Durante tu turno, como acción adicional, puedes mover la ilusión hasta 30 pies a un nuevo espacio que puedas ver, pero esta debe permanecer siempre a 120 pies o menos de ti.", 
+											"Mientras la ilusión siga activa, podrás lanzar conjuros como si te encontraras físicamente en el lugar que ocupa esta, aunque tendrás que recurrir a tus propios sentidos. Además, si tanto tú como la ilusión estáis a menos de 5 pies de una criatura que pueda ver a esta última, tendrás ventaja en las tiradas de ataque contra dicha criatura, ya que tu imagen falsa la distrae."
+										]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Channel Divinity: Cloak of Shadows",
-                                        "entries": ["Starting at 6th level, you can use your Channel Divinity to vanish.", "As an action, you become {@condition invisible} until the end of your next turn. You become visible if you attack or cast a spell."]
+                                        "name": "Canalizar Divinidad: Capa de Sombras",
+                                        "entries": [
+											"A partir de nivel 6, puedes utilizar tu Canalizar Divinidad para desaparecer.", 
+											"Puedes usar tu acción para volverte {@condition Invisible # Invisible|phb_esp|invisible} hasta el final de tu siguiente turno. Vuelves a ser visible si atacas o lanzas un conjuro."
+										]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Divine Strike",
-                                        "entries": ["At 8th level, you gain the ability to infuse your weapon strikes with poison—a gift from your deity. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@dice 1d8} poison damage to the target. When you reach 14th level, the extra damage increases to {@dice 2d8}."]
+                                        "name": "Golpe Divino",
+                                        "entries": ["A nivel 8 obtienes la capacidad para imbuir los golpes de tu arma con veneno; un regalo de tu deidad. Una vez en cada uno de tus turnos, cuando impactes a una criatura con un ataque con arma, puedes hacer que dicho ataque cause {@dice 1d8} de daño de veneno adicional al objetivo. Cuando llegas a nivel 14. Este daño adicional pasa a ser {@dice 2d8}."]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Improved Duplicity",
-                                        "entries": ["At 17th level, you can create up to four duplicates of yourself, instead of one, when you use Invoke Duplicity. As a bonus action on your turn, you can move any number of them up to 30 feet, to a maximum range of 120 feet."]
+                                        "name": "Duplicidad Mejorada",
+                                        "entries": ["A partir de nivel 17, puedes crear hasta cuatro duplicados de ti mismo, en vez de simplemente uno, cuando uses Invocar Duplicidad. Durante tu turno, como acción adicional, puedes mover tantos duplicados como quieras hasta 30 pies cada uno, pero siempre a un punto que no esté a más de 120 pies de ti."]
                                     }
                                 ]
                             }
                         ]]
                 }, {
-                    "name": "War Domain",
-                    "shortName": "War",
+                    "name": "Dominio de la Guerra # War Domain",
+                    "shortName": "Guerra",
                     "source": "PHB_Esp",
                     "page": 63,
                     "additionalSpells": [{
                             "prepared": {
-                                "1": ["divine favor", "shield of faith"],
-                                "3": ["magic weapon", "spiritual weapon"],
-                                "5": ["crusader's mantle", "spirit guardians"],
-                                "7": ["freedom of movement", "stoneskin"],
-                                "9": ["flame strike", "hold monster"]
+                                "1": ["Favor divino # Divine Favor|phb_esp|favor divino", "Escudo de fe # Shield of Faith|phb_esp|escudo de fe"],
+                                "3": ["Arma mágica # Magic Weapon|phb_esp|arma mágica", "Arma espiritual # Spiritual Weapon|phb_esp|arma espiritual"],
+                                "5": ["El manto del cruzado # Crusader's Mantle|phb_esp|el manto del cruzado", "Espíritus guardianes # Spirit Guardians|phb_esp|espíritus guardianes"],
+                                "7": ["Libertad de movimiento # Freedom of Movement|phb_esp|libertad de movimiento", "Piel pétrea # Stoneskin|phb_esp|piel pétrea"],
+                                "9": ["Golpe flamígero # Flame Strike|phb_esp|golpe flamígero", "Inmovilizar monstruo # Hold Monster|phb_esp|inmovilizar monstruo"]
                             }
                         }
                     ],
                     "subclassFeatures": [[{
-                                "name": "War Domain",
-                                "entries": ["War has many manifestations. It can make heroes of ordinary people. It can be desperate and horrific, with acts of cruelty and cowardice eclipsing instances of excellence and courage. In either case, the gods of war watch over warriors and reward them for their great deeds. The clerics of such gods excel in battle, inspiring others to fight the good fight or offering acts of violence as prayers. Gods of war include champions of honor and chivalry (such as Torm, Heironeous, and Kiri-Jolith) as well as gods of destruction and pillage (such as Erythnul, the Fury, Gruumsh, and Ares) and gods of conquest and domination (such as Bane, Hextor, and Maglubiyet). Other war gods (such as Tempus, Nike, and Nuada) take a more neutral stance, promoting war in all its manifestations and supporting warriors in any circumstance.", "At each indicated cleric level, add the listed spells to your spells prepared.", {
+                                "name": "Dominio de la Guerra",
+                                "entries": ["La guerra se manifiesta de muchas formas. Puede convertir a personas corrientes en héroes. Puede ser desesperada y terrorífica, con actos de crueldad y cobardía capaces de eclipsar los ejemplos de excelencia y coraje. Sea como fuere, los dioses de la guerra observan a los guerreros y los recompensan por sus hazañas heroicas. Los clérigos de estas deidades destacan en combate, inspirando a otros a pelear en buena lid u ofrecer actos de violencia como si de oraciones se tratara. Entre los dioses de la guerra se encuentran los campeones del honor y de la caballerosidad, como Torm, Heironeous o Kiri-Jolith, los dioses de la destrucción y el saqueo, como Erythnul, la Furia, Gruumsh o Ares, y las deidades de la conquista y la dominación, como Perdición, Hextor o Maglubiyet. Otros dioses de la guerra, como Tempus, Niké y Nuada adoptan una postura más neutral, promoviendo la guerra en todas sus facetas y apoyando a los guerreros sean cuales sean las circunstancias.", {
                                         "type": "table",
-                                        "caption": "War Domain Spells",
-                                        "colLabels": ["Cleric Level", "Spells"],
+                                        "caption": "Conjuros de dominio de la Guerra",
+                                        "colLabels": ["Nivel de clérigo", "Conjuros"],
                                         "colStyles": ["col-3 text-center", "col-9"],
-                                        "rows": [["1st", "{@spell divine favor}, {@spell shield of faith}"], ["3rd", "{@spell magic weapon}, {@spell spiritual weapon}"], ["5th", "{@spell crusader's mantle}, {@spell spirit guardians}"], ["7th", "{@spell freedom of movement}, {@spell stoneskin}"], ["9th", "{@spell flame strike}, {@spell hold monster}"]]
+                                        "rows": [
+											["1", "{@spell Favor divino # Divine Favor|phb_esp|favor divino}, {@spell Escudo de fe # Shield of Faith|phb_esp|escudo de fe}"], 
+											["3", "{@spell Arma mágica # Magic Weapon|phb_esp|arma mágica}, {@spell Arma espiritual # Spiritual Weapon|phb_esp|arma espiritual}"], 
+											["5", "{@spell El manto del cruzado # Crusader's Mantle|phb_esp|el manto del cruzado}, {@spell Espíritus guardianes # Spirit Guardians|phb_esp|espíritus guardianes}"], 
+											["7", "{@spell Libertad de movimiento # Freedom of Movement|phb_esp|libertad de movimiento}, {@spell Piel pétrea # Stoneskin|phb_esp|piel pétrea}"], 
+											["9", "{@spell Golpe flamígero # Flame Strike|phb_esp|golpe flamígero}, {@spell Inmovilizar monstruo # Hold Monster|phb_esp|inmovilizar monstruo}"]
+										]
                                     }, {
                                         "type": "entries",
-                                        "name": "Bonus Proficiencies",
-                                        "entries": ["At 1st level, you gain proficiency with martial weapons and heavy armor."]
+                                        "name": "Competencias Adicionales",
+                                        "entries": ["A nivel 1, ganas competencia con armas marciales y armaduras pesadas."]
                                     }, {
                                         "type": "entries",
-                                        "name": "War Priest",
-                                        "entries": ["From 1st level, your god delivers bolts of inspiration to you while you are engaged in battle. When you use the {@action Attack} action, you can make one weapon attack as a bonus action. You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest."]
+                                        "name": "Sacerdote Guerrero",
+                                        "entries": [
+											"Desde el nivel 1, tu dios te recompensa con arrebatos de inspiración mientras te encuentras enzarzado en un combate. Cuando llevas a cabo la acción de {@action Atacar # Attack|phb_esp|Atacar} durante tu turno, puedes emplear tu acción adicional para hacer otro ataque con arma.",
+											"Puedes usar este rasgo tantas veces como tu modificador por Sabiduría (mínimo una vez). Recuperas todos los usos tras finalizar un descanso largo."
+										]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Channel Divinity: Guided Strike",
-                                        "entries": ["Starting at 2nd level, you can use your Channel Divinity to strike with supernatural accuracy. When you make an attack roll, you can use your Channel Divinity to gain a +10 bonus to the roll. You make this choice after you see the roll, but before the DM says whether the attack hits or misses."]
+                                        "name": "Canalizar Divinidad: Golpe Guiado",
+                                        "entries": ["A partir de nivel 2, puedes utilizar tu Canalizar Divinidad para atacar con una precisión sobrenatural. Cuando hagas una tirada de ataque, podrás usar tu Canalizar Divinidad para sumar +10 al resultado de dicha tirada. Puedes elegir emplear este rasgo después de ver el resultado de la tirada, pero antes de que el DM te diga si el ataque impacta o no."]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Channel Divinity: War God's Blessing",
-                                        "entries": ["At 6th level, when a creature within 30 feet of you makes an attack roll, you can use your reaction to grant that creature a +10 bonus to the roll, using your Channel Divinity. You make this choice after you see the roll, but before the DM says whether the attack hits or misses."]
+                                        "name": "Canalizar Divinidad: Bendición del Dios de la Guerra",
+                                        "entries": ["A partir de nivel 6, cuando una criatura a 30 pies o menos de ti haga una tirada de ataque, podrás usar tu reacción para utilizar Canalizar Divinidad para sumar +10 al resultado de dicha tirada. Puedes elegir emplear este rasgo después de ver el resultado de la tirada, pero antes de que el DM te diga si el ataque impacta o no."]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Divine Strike",
-                                        "entries": ["At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@dice 1d8} damage of the same type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to {@dice 2d8}."]
+                                        "name": "Golpe Divino",
+                                        "entries": ["A nivel 8 obtienes la capacidad para imbuir los golpes de tu arma con energía divina. Una vez en cada uno de tus turnos, cuando impactes a una criatura con un ataque con arma, puedes hacer que dicho ataque cause {@dice 1d8} de daño adicional (del tipo que causa el arma) al objetivo. Cuando llegas a nivel 14, este daño adicional pasa a ser {@dice 2d8}."]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Avatar of Battle",
-                                        "entries": ["At 17th level, you gain resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons."]
+                                        "name": "Avatar de la Batalla",
+                                        "entries": ["A nivel 17, obtienes resistencia a daño contundente, cortante y perforante de armas no mágicas."]
                                     }
                                 ]
                             }
@@ -16178,164 +16212,41 @@
             "fluff": [{
                     "name": "Clérigo",
                     "type": "section",
-                    "entries": ["Arms and eyes upraised toward the sun and a prayer on his lips, an elf begins to glow with an inner light that spills out to heal his battle-worn companions.", "Chanting a song of glory, a dwarf swings his axe in wide swaths to cut through the ranks of orcs arrayed against him, shouting praise to the gods with every foe's fall.", "Calling down a curse upon the forces of undeath, a human lifts her holy symbol as light pours from it to drive back the zombies crowding in on her companions.", "Clerics are intermediaries between the mortal world and the distant planes of the gods. As varied as the gods they serve, clerics strive to embody the handiwork of their deities. No ordinary priest, a cleric is imbued with divine magic.", {
+                    "entries": [
+						"Con los brazos en alto, mirando hacia el sol y con una oración en sus labios, una elfa refulge con una luz interior que se expande y sana a sus compañeros, agotados por el combate.", 
+						"Mientras entona una canción de gloria, un enano gira su hacha en grandes arcos que hacen mella en las filas de orcos que forman contra él, proclamando a gritos su alabanza a los dioses con cada enemigo caído.", 
+						"Invocando una maldición sobre las hordas de muertos vivientes, una humana alza su símbolo sagrado, del que emana una luz que hace retroceder a los zombis que se agolpan sobre sus compañeros.", 
+						"Los clérigos son intermediarios entre el mundo mortal y los remotos planos de los dioses. Tan variopintos como las deidades a las que sirven, estos se esfuerzan por personificar las obras de sus dioses. Un clérigo no es un sacerdote corriente, pues está imbuido de magia divina.", {
                             "type": "entries",
-                            "name": "Healers and Warriors",
-                            "entries": ["Divine magic, as the name suggests, is the power of the gods, flowing from them into the world. Clerics are conduits for that power, manifesting it as miraculous effects. The gods don't grant this power to everyone who seeks it, but only to those chosen to fulfill a high calling.", "Harnessing divine magic doesn't rely on study or training. A cleric might learn formulaic prayers and ancient rites, but the ability to cast cleric spells relies on devotion and an intuitive sense of a deity's wishes.", "Clerics combine the helpful magic of healing and inspiring their allies with spells that harm and hinder foes. They can provoke awe and dread, lay curses of plague or poison, and even call down flames from heaven to consume their enemies. For those evildoers who will benefit most from a mace to the head, clerics depend on their combat training to let them wade into melee with the power of the gods on their side."]
+                            "name": "Sanadores y guerreros",
+                            "entries": [
+								"La magia divina, como su propio nombre indica, es el poder de los dioses, que fluye de ellos hasta el mundo. Los clérigos son los catalizadores de dicho poder, que se manifiesta en forma de efectos milagrosos. Los dioses no conceden este poder a todo el que lo busca, sino únicamente a los elegidos para cumplir con una vocación excelsa.", 
+								"Dominar la magia divina no depende del estudio o del entrenamiento; un clérigo podría memorizar de forma literal oraciones y ritos antiguos, pero la capacidad de lanzar conjuros clericales yace en la devoción y en una comprensión intuitiva de los deseos de la deidad.", 
+								"Los clérigos combinan la útil magia curativa y la capacidad de inspirar a sus aliados con conjuros que dañan y obstaculizan a sus enemigos. Pueden infundir admiración y terror, maldecir con plagas y venenos e incluso hacer descender llamas desde los cielos para que consuman a sus enemigos. Y para tratar con aquellos maleantes que se merecen un mazazo en la cabeza, los clérigos recurren a su entrenamiento marcial, que les permite entrar en combate con el poder de los dioses a su lado."
+							]
                         }, {
                             "type": "entries",
-                            "name": "Divine Agents",
-                            "entries": ["Not every acolyte or officiant at a temple or shrine is a cleric. Some priests are called to a simple life of temple service, carrying out their gods' will through prayer and sacrifice, not by magic and strength of arms. In some cities, priesthood amounts to a political office, viewed as a stepping stone to higher positions of authority and involving no communion with a god at all. True clerics are rare in most hierarchies.", "When a cleric takes up an adventuring life, it is usually because his or her god demands it. Pursuing the goals of the gods often involves braving dangers beyond the walls of civilization, smiting evil or seeking holy relics in ancient tombs. Many clerics are also expected to protect their deities' worshipers, which can mean fighting rampaging orcs, negotiating peace between warring nations, or sealing a portal that would allow a demon prince to enter the world.", "Most adventuring clerics maintain some connection to established temples and orders of their faiths. A temple might ask for a cleric's aid, or a high priest might be in a position to demand it."]
+                            "name": "Agentes divinos",
+                            "entries": [
+								"No todos los acólitos y celebrantes de un templo o santuario son clérigos. Algunos sacerdotes son llamados a vivir una vida sencilla de servicio al templo, ejecutando la voluntad de sus dioses a través de la oración y el sacrificio en vez de mediante la magia y la fuerza de las armas. En ciertas ciudades el sacerdocio no es sino un cargo político, un paso previo para alcanzar cargos de mayor autoridad que no implican comunión con deidad alguna. Los auténticos clérigos son raros en la mayoría de las jerarquías.", 
+								"Cuando un clérigo se embarca en una vida de aventuras suele ser porque su deidad lo exige. Perseguir los objetivos de los dioses normalmente implica enfrentarse a peligros más allá de las fronteras de la civilización, castigar el mal o buscar reliquias sagradas en tumbas antiguas. También se espera de la mayor parte de clérigos que protejan a los adoradores de sus dioses, lo que puede significar luchar contra invasores orcos, negociar tratados de paz entre naciones en conflicto o sellar un portal que permitiría a un príncipe demonio penetrar en este mundo.", 
+								"La mayoría de los clérigos que salen a vivir aventuras mantienen el contacto con los templos y órdenes de su fe. Un templo podría solicitar la ayuda de un clérigo, y un sumo sacerdote incluso estar en situación de exigirla."
+							]
                         }, {
                             "type": "entries",
-                            "name": "Creating a Cleric",
-                            "entries": ["As you create a cleric, the most important question to consider is which deity to serve and what principles you want your character to embody. Appendix B includes lists of many of the gods of the multiverse. Check with your DM to learn which deities are in your campaign.", "Once you've chosen a deity, consider your cleric's relationship to that god. Did you enter this service willingly? Or did the god choose you, impelling you into service with no regard for your wishes? How do the temple priests of your faith regard you: as a champion or a troublemaker? What are your ultimate goals? Does your deity have a special task in mind for you? Or are you striving to prove yourself worthy of a great quest?", {
+                            "name": "Creación de un clérigo",
+                            "entries": [
+								"Cuando crees un clérigo, las preguntas más importantes que debes hacerte son a qué deidad sirve tu personaje y qué principios quieres que encarne. El apéndice B contiene una lista con muchos de los dioses del multiverso. Consulta con tu DM qué deidades forman parte de vuestra campaña.", 
+								"Una vez hayas escogido un dios, piensa qué relación tiene tu personaje con él. ¿Comenzó a servirle voluntariamente o le escogió el dios a él, forzándole a una vida de servicio sin tener en consideración sus deseos? ¿Cómo te ven los sacerdotes de los templos de tu fe, como un héroe o como una fuente de problemas? ¿Cuáles son tus objetivos finales? ¿Ha pensado tu dios en una tarea especial para ti? ¿O intentas demostrar que eres digno de una misión importante?", {
                                     "type": "entries",
-                                    "name": "Quick Build",
-                                    "entries": ["You can make a cleric quickly by following these suggestions. First, Wisdom should be your highest ability score, followed by Strength or Constitution. Second, choose the {@background acolyte} background."]
+                                    "name": "Creación rápida",
+                                    "entries": ["Para crear un clérigo de forma rápida sugerimos lo siguiente. Para empezar, Sabiduría debería ser tu característica más alta, seguida de Fuerza o Constitución. A continuación, elige el trasfondo \"{@background acolyte|phb_esp|acólito}\"."]
                                 }
                             ]
                         }
                     ],
                     "source": "PHB_Esp",
                     "page": 56
-                }, {
-                    "type": "section",
-                    "entries": [{
-                            "type": "quote",
-                            "entries": ["To become a cleric is to become a messenger of the gods. The power the divine offers is great, but it always comes with tremendous responsibility."],
-                            "by": "Riggby the patriarch"
-                        }, "Almost all the folk in the world who revere a deity live their lives without ever being directly touched by a divine being. As such, they can never know what it feels like to be a cleric—someone who is not only a devout worshiper, but who has also been invested with a measure of a deity's power.", "The question has long been debated: Does a mortal become a cleric as a consequence of deep devotion to one's deity, thereby attracting the god's favor? Or is it the deity who sees the potential in a person and calls that individual into service? Ultimately, perhaps, the answer doesn't matter. However clerics come into being, the world needs clerics as much as clerics and deities need each other.", "If you're playing a cleric character, the following sections offer ways to add some detail to that character's history and personality.", {
-                            "type": "entries",
-                            "name": "Temple",
-                            "entries": ["Most clerics start their lives of service as priests in an order, then later realize that they have been blessed by their god with the qualities needed to become a cleric. To prepare for this new duty, candidates typically receive instruction from a cleric of a temple or another place of study devoted to their deity.", "Some temples are cut off from the world so that their occupants can focus on devotions, while other temples open their doors to minister to and heal the masses. What is noteworthy about the temple you studied at?", {
-                                    "type": "table",
-                                    "caption": "Temple",
-                                    "colLabels": ["{@dice d6}", "Temple"],
-                                    "colStyles": ["col-1 text-center", "col-11"],
-                                    "rows": [[{
-                                                "type": "cell",
-                                                "roll": {
-                                                    "exact": 1
-                                                }
-                                            }, "Your temple is said to be the oldest surviving structure built to honor your god."], [{
-                                                "type": "cell",
-                                                "roll": {
-                                                    "exact": 2
-                                                }
-                                            }, "Acolytes of several like-minded deities all received instruction together in your temple."], [{
-                                                "type": "cell",
-                                                "roll": {
-                                                    "exact": 3
-                                                }
-                                            }, "You come from a temple famed for the brewery it operates. Some say you smell like one of its ales."], [{
-                                                "type": "cell",
-                                                "roll": {
-                                                    "exact": 4
-                                                }
-                                            }, "Your temple is a fortress and a proving ground that trains warrior-priests."], [{
-                                                "type": "cell",
-                                                "roll": {
-                                                    "exact": 5
-                                                }
-                                            }, "Your temple is a peaceful, humble place, filled with vegetable gardens and simple priests."], [{
-                                                "type": "cell",
-                                                "roll": {
-                                                    "exact": 6
-                                                }
-                                            }, "You served in a temple in the Outer Planes."]]
-                                }, {
-                                    "type": "entries",
-                                    "name": "Keepsake",
-                                    "entries": ["Many clerics have items among their personal gear that symbolize their faith, remind them of their vows, or otherwise help to keep them on their chosen paths. Even though such an item is not imbued with divine power, it is vitally important to its owner because of what it represents.", {
-                                            "type": "table",
-                                            "caption": "Keepsake",
-                                            "colLabels": ["{@dice d6}", "Keepsake"],
-                                            "colStyles": ["col-1 text-center", "col-11"],
-                                            "rows": [[{
-                                                        "type": "cell",
-                                                        "roll": {
-                                                            "exact": 1
-                                                        }
-                                                    }, "The finger bone of a saint"], [{
-                                                        "type": "cell",
-                                                        "roll": {
-                                                            "exact": 2
-                                                        }
-                                                    }, "A metal-bound book that tells how to hunt and destroy infernal creatures"], [{
-                                                        "type": "cell",
-                                                        "roll": {
-                                                            "exact": 3
-                                                        }
-                                                    }, "A pig's whistle that reminds you of your humble and beloved mentor"], [{
-                                                        "type": "cell",
-                                                        "roll": {
-                                                            "exact": 4
-                                                        }
-                                                    }, "A braid of hair woven from the tail of a unicorn"], [{
-                                                        "type": "cell",
-                                                        "roll": {
-                                                            "exact": 5
-                                                        }
-                                                    }, "A scroll that describes how best to rid the world of necromancers"], [{
-                                                        "type": "cell",
-                                                        "roll": {
-                                                            "exact": 6
-                                                        }
-                                                    }, "A runestone said to be blessed by your god"]]
-                                        }
-                                    ]
-                                }, {
-                                    "type": "entries",
-                                    "name": "Secret",
-                                    "entries": ["No mortal soul is entirely free of second thoughts or doubt. Even a cleric must grapple with dark desires or the forbidden attraction of turning against the teachings of one's deity.", "If you haven't considered this aspect of your character yet, see the table entries for some possibilities, or use them for inspiration. Your deep, dark secret might involve something you did (or are doing), or it could be rooted in the way you feel about the world and your role in it.", {
-                                            "type": "table",
-                                            "caption": "Secret",
-                                            "colLabels": ["{@dice d6}", "Secret"],
-                                            "colStyles": ["col-1 text-center", "col-11"],
-                                            "rows": [[{
-                                                        "type": "cell",
-                                                        "roll": {
-                                                            "exact": 1
-                                                        }
-                                                    }, "An imp offers you counsel. You try to ignore the creature, but sometimes its advice is helpful."], [{
-                                                        "type": "cell",
-                                                        "roll": {
-                                                            "exact": 2
-                                                        }
-                                                    }, "You believe that, in the final analysis, the gods are nothing more than ultrapowerful mortal creatures."], [{
-                                                        "type": "cell",
-                                                        "roll": {
-                                                            "exact": 3
-                                                        }
-                                                    }, "You acknowledge the power of the gods, but you think that most events are dictated by pure chance."], [{
-                                                        "type": "cell",
-                                                        "roll": {
-                                                            "exact": 4
-                                                        }
-                                                    }, "Even though you can work divine magic, you have never truly felt the presence of a divine essence within yourself."], [{
-                                                        "type": "cell",
-                                                        "roll": {
-                                                            "exact": 5
-                                                        }
-                                                    }, "You are plagued by nightmares that you believe are sent by your god as punishment for some unknown transgression."], [{
-                                                        "type": "cell",
-                                                        "roll": {
-                                                            "exact": 6
-                                                        }
-                                                    }, "In times of despair, you feel that you are but a plaything of the gods, and you resent their remoteness."]]
-                                        }
-                                    ]
-                                }, {
-                                    "type": "inset",
-                                    "name": "Serving a Pantheon, Philosophy, or Force",
-                                    "entries": ["The typical cleric is an ordained servant of a particular god and chooses a Divine Domain associated with that deity. The cleric's magic flows from the god or the god's sacred realm, and often the cleric bears a holy symbol that represents that divinity.", "Some clerics, especially in a world like Eberron, serve a whole pantheon, rather than a single deity. In certain campaigns, a cleric might instead serve a cosmic force, such as life or death, or a philosophy or concept, such as love, peace, or one of the nine alignments. Chapter 1 of the Dungeon Master's Guide explores options like these, in the section \"Gods of Your World.\"", "Talk with your DM about the divine options available in your campaign, whether they're gods, pantheons, philosophies, or cosmic forces. Whatever being or thing your cleric ends up serving, choose a Divine Domain that is appropriate for it, and if it doesn't have a holy symbol, work with your DM to design one.", "The cleric's class features often refer to your deity. If you are devoted to a pantheon, cosmic force, or philosophy, your cleric features still work for you as written. Think of the references to a god as references to the divine thing you serve that gives you your magic."]
-                                }
-                            ]
-                        }
-                    ],
-                    "source": "XGE",
-                    "page": 17
                 }
             ]
         },
