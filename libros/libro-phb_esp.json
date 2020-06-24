@@ -14609,7 +14609,20 @@
             },
             "proficiency": ["str", "con"],
             "startingProficiencies": {
-                "armor": ["light", "medium", "shields"],
+                "armor": [
+					{
+						"proficiency": "light",
+						"full": "armaduras ligeras"
+					},
+					{
+						"proficiency": "medium",
+						"full": "armaduras medias"
+					},					
+					{
+						"proficiency": "shields",
+						"full": "escudos"
+					}
+				],
                 "weapons": ["simple", "martial"],
                 "skills": [{
                         "choose": {
@@ -14629,7 +14642,12 @@
                     "str": 13
                 },
                 "proficienciesGained": {
-                    "armor": ["shields"],
+                    "armor": [
+						{
+							"proficiency": "shields",
+							"full": "escudos"
+						}
+					],
                     "weapons": ["simple", "martial"]
                 }
             },
@@ -15093,7 +15111,12 @@
             "spellcastingAbility": "cha",
             "casterProgression": "full",
             "startingProficiencies": {
-                "armor": ["light"],
+                "armor": [
+					{
+						"proficiency": "light",
+						"full": "armaduras ligeras"
+					}
+				],
                 "weapons": ["simple", "hand crossbows", "longswords", "rapiers", "shortswords"],
                 "tools": ["tres instrumentos musicales a tu elección"],
                 "skills": [{
@@ -15114,7 +15137,12 @@
                     "cha": 13
                 },
                 "proficienciesGained": {
-                    "armor": ["light"],
+                    "armor": [
+						{
+							"proficiency": "light",
+							"full": "armaduras ligeras"
+						}
+					],
                     "skills": [{
                             "choose": {
                                 "from": ["athletics|Atletismo", "acrobatics|Acrobacias", "sleight of hand|Juego de Manos", "stealth|Sigilo", "arcana|Conocimiento Arcano", "history|Historia", "investigation|Investigación", "nature|Naturaleza", "religion|Religión", "animal handling|Trato con Animales", "insight|Perspicacia", "medicine|Medicina", "perception|Percepción", "survival|Supervivencia", "deception|Engaño", "intimidation|Intimidación", "performance|Interpretación", "persuasion|Persuasión"],
@@ -15445,7 +15473,20 @@
             "spellcastingAbility": "wis",
             "casterProgression": "full",
             "startingProficiencies": {
-                "armor": ["light", "medium", "shields"],
+                "armor": [
+					{
+						"proficiency": "light",
+						"full": "armaduras ligeras"
+					},
+					{
+						"proficiency": "medium",
+						"full": "armaduras medias"
+					},					
+					{
+						"proficiency": "shields",
+						"full": "escudos"
+					}
+				],
                 "weapons": ["simple"],
                 "skills": [{
                         "choose": {
@@ -15465,7 +15506,20 @@
                     "wis": 13
                 },
                 "proficienciesGained": {
-                    "armor": ["light", "medium", "shields"]
+                    "armor": [
+						{
+							"proficiency": "light",
+							"full": "armaduras ligeras"
+						},
+						{
+							"proficiency": "medium",
+							"full": "armaduras medias"
+						},					
+						{
+							"proficiency": "shields",
+							"full": "escudos"
+						}
+					]
                 }
             },
             "classTableGroups": [{
@@ -16251,1135 +16305,420 @@
             ]
         },
 		{
-			"name": "Druid",
-			"source": "PHB_Esp",
-			"page": 64,
-			"srd": true,
-			"hd": {
-				"number": 1,
-				"faces": 8
-			},
-			"proficiency": [
-				"int",
-				"wis"
-			],
-			"spellcastingAbility": "wis",
-			"casterProgression": "full",
-			"startingProficiencies": {
-				"armor": [
-					"light",
-					"medium",
+            "name": "Druida",
+            "source": "PHB_Esp",
+            "page": 64,
+            "srd": true,
+            "hd": {
+                "number": 1,
+                "faces": 8
+            },
+            "proficiency": ["int", "wis"],
+            "spellcastingAbility": "wis",
+            "casterProgression": "full",
+            "startingProficiencies": {
+                "armor": [
 					{
-						"proficiency": "shields",
-						"full": "shields (druids will not wear armor or use shields made of metal)"
-					}
-				],
-				"weapons": [
-					"clubs",
-					"daggers",
-					"darts",
-					"javelins",
-					"maces",
-					"quarterstaffs",
-					"scimitars",
-					"sickles",
-					"slings",
-					"spears"
-				],
-				"tools": [
-					"Herbalism kit"
-				],
-				"skills": [
+                        "proficiency": "light",
+                        "full": "armaduras ligeras"
+                    }, 
 					{
-						"choose": {
-							"from": [
-								"arcana",
-								"animal handling",
-								"insight",
-								"medicine",
-								"nature",
-								"perception",
-								"religion",
-								"survival"
-							],
-							"count": 2
-						}
-					}
-				]
-			},
-			"startingEquipment": {
-				"additionalFromBackground": true,
-				"default": [
-					"(a) a wooden {@item Escudo # Shield|phb_esp} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
-					"(a) a {@item Cimitarra # Scimitar|phb_esp} or (b) any {@filter simple melee weapon|items|source=phb|category=basic|type=simple weapon;melee weapon=sand}",
-					"{@item Armadura de cuero # Leather Armor|phb_esp}, an {@item Paquete de explorador # Explorer's Pack|phb_esp}, and a {@item Canalizadores druídicos # Druidic Focus|phb_esp}"
-				],
-				"goldAlternative": "{@dice 2d4×10|2d4 × 10|Starting Gold}"
-			},
-			"multiclassing": {
-				"requirements": {
-					"wis": 13
-				},
-				"proficienciesGained": {
-					"armor": [
-						"light",
-						"medium",
+                        "proficiency": "medium",
+                        "full": "armaduras medias"
+                    }, 
+					{
+                        "proficiency": "shields",
+                        "full": "escudos (aunque los druidas nunca llevan armaduras ni escudos hechos de metal)"
+                    }
+                ],
+                "weapons": ["clubs", "daggers", "darts", "javelins", "maces", "quarterstaffs", "scimitars", "sickles", "slings", "spears"],
+                "tools": ["Útiles de herborista"],
+                "skills": [{
+                        "choose": {
+                            "from": ["arcana", "animal handling", "insight", "medicine", "nature", "perception", "religion", "survival"],
+                            "count": 2
+                        }
+                    }
+                ]
+            },
+            "startingEquipment": {
+                "additionalFromBackground": true,
+                "default": ["(a) a wooden {@item shield|phb} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}", "(a) a {@item scimitar|phb} or (b) any {@filter simple melee weapon|items|source=phb|category=basic|type=simple weapon;melee weapon=sand}", "{@item Leather armor|phb}, an {@item explorer's pack|phb}, and a {@item druidic focus|phb}"],
+                "goldAlternative": "{@dice 2d4×10|2d4 × 10|Starting Gold}"
+            },
+            "multiclassing": {
+                "requirements": {
+                    "wis": 13
+                },
+                "proficienciesGained": {
+                    "armor": [
+						{
+							"proficiency": "light",
+							"full": "armaduras ligeras"
+						}, 
+						{
+							"proficiency": "medium",
+							"full": "armaduras medias"
+						}, 
 						{
 							"proficiency": "shields",
-							"full": "shields (druids will not wear armor or use shields made of metal)"
+							"full": "escudos (aunque los druidas nunca llevan armaduras ni escudos hechos de metal)"
 						}
 					]
-				}
-			},
-			"classTableGroups": [
-				{
-					"colLabels": [
-						"{@filter Cantrips Known|spells|level=0|class=Druid}"
-					],
-					"rows": [
-						[
-							2
-						],
-						[
-							2
-						],
-						[
-							2
-						],
-						[
-							3
-						],
-						[
-							3
-						],
-						[
-							3
-						],
-						[
-							3
-						],
-						[
-							3
-						],
-						[
-							3
-						],
-						[
-							4
-						],
-						[
-							4
-						],
-						[
-							4
-						],
-						[
-							4
-						],
-						[
-							4
-						],
-						[
-							4
-						],
-						[
-							4
-						],
-						[
-							4
-						],
-						[
-							4
-						],
-						[
-							4
-						],
-						[
-							4
-						]
-					]
-				},
-				{
-					"title": "Spell Slots per Spell Level",
-					"colLabels": [
-						"{@filter 1st|spells|level=1|class=Druid}",
-						"{@filter 2nd|spells|level=2|class=Druid}",
-						"{@filter 3rd|spells|level=3|class=Druid}",
-						"{@filter 4th|spells|level=4|class=Druid}",
-						"{@filter 5th|spells|level=5|class=Druid}",
-						"{@filter 6th|spells|level=6|class=Druid}",
-						"{@filter 7th|spells|level=7|class=Druid}",
-						"{@filter 8th|spells|level=8|class=Druid}",
-						"{@filter 9th|spells|level=9|class=Druid}"
-					],
-					"rows": [
-						[
-							2,
-							0,
-							0,
-							0,
-							0,
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							3,
-							0,
-							0,
-							0,
-							0,
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							2,
-							0,
-							0,
-							0,
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							0,
-							0,
-							0,
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							2,
-							0,
-							0,
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							0,
-							0,
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							1,
-							0,
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							2,
-							0,
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							1,
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							2,
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							2,
-							1,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							2,
-							1,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							2,
-							1,
-							1,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							2,
-							1,
-							1,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							2,
-							1,
-							1,
-							1,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							2,
-							1,
-							1,
-							1,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							2,
-							1,
-							1,
-							1,
-							1
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							3,
-							1,
-							1,
-							1,
-							1
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							3,
-							2,
-							1,
-							1,
-							1
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							3,
-							2,
-							2,
-							1,
-							1
-						]
-					]
-				}
-			],
-			"classFeatures": [
-				[
-					{
-						"name": "Druidic",
-						"entries": [
-							"You know Druidic, the secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a message. Others spot the message's presence with a successful DC 15 Wisdom ({@skill Perception}) check but can't decipher it without magic."
-						]
-					},
-					{
-						"name": "Spellcasting",
-						"entries": [
-							"Drawing on the divine essence of nature itself, you can cast spells to shape that essence to your will. See {@book chapter 10|PHB|10} for the general rules of spellcasting and chapter 11 for the {@filter druid spell list|spells|class=druid}.",
-							{
-								"type": "entries",
-								"name": "Cantrips",
-								"entries": [
-									"At 1st level, you know two cantrips of your choice from the druid spell list. You learn additional druid cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Druid table."
-								]
-							},
-							{
-								"type": "entries",
-								"name": "Preparing and Casting Spells",
-								"entries": [
-									"The Druid table shows how many spell slots you have to cast your {@filter druid spells|spells|class=druid} of 1st level and higher. To cast one of these druid spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
-									"You prepare the list of druid spells that are available for you to cast, choosing from the druid spell list. When you do so, choose a number of druid spells equal to your Wisdom modifier + your druid level (minimum of one spell). The spells must be of a level for which you have spell slots.",
-									"For example, if you are a 3rd-level druid, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell {@spell Curar heridas # Cure Wounds|phb_esp|curar heridas}, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
-									"You can also change your list of prepared spells when you finish a long rest. Preparing a new list of druid spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list."
-								]
-							},
-							{
-								"type": "entries",
-								"name": "Spellcasting Ability",
-								"entries": [
-									"Wisdom is your spellcasting ability for your druid spells, since your magic draws upon your devotion and attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a druid spell you cast and when making an attack roll with one.",
-									{
-										"type": "abilityDc",
-										"name": "Spell",
-										"attributes": [
-											"wis"
-										]
-									},
-									{
-										"type": "abilityAttackMod",
-										"name": "Spell",
-										"attributes": [
-											"wis"
-										]
-									}
-								]
-							},
-							{
-								"type": "entries",
-								"name": "Ritual Casting",
-								"entries": [
-									"You can cast a druid spell as a ritual if that spell has the ritual tag and you have the spell prepared."
-								]
-							},
-							{
-								"type": "entries",
-								"name": "Spellcasting Focus",
-								"entries": [
-									"You can use a druidic focus (found in chapter 5) as a spellcasting focus for your druid spells"
-								]
-							}
-						]
-					}
-				],
-				[
-					{
-						"name": "Wild Shape",
-						"entries": [
-							"Starting at 2nd level, you can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or long rest.",
-							"Your druid level determines the beasts you can transform into, as shown in the Beast Shapes table. At 2nd level, for example, you can transform into any beast that has a challenge rating of 1/4 or lower that doesn't have a flying or swimming speed.",
-							{
-								"type": "table",
-								"caption": "Beast Shapes",
-								"colLabels": [
-									"Level",
-									"Max. CR",
-									"Limitations",
-									"Example"
-								],
-								"colStyles": [
-									"col-2 text-center",
-									"col-2 text-center",
-									"col-5",
-									"col-3"
-								],
-								"rows": [
-									[
-										"2nd",
-										"{@filter 1/4|bestiary|challenge rating=[&0;&1/4]|type=beast|speed type=!fly;!swim|miscellaneous=!swarm}",
-										"No flying or swimming speed",
-										"Wolf"
-									],
-									[
-										"4th",
-										"{@filter 1/2|bestiary|challenge rating=[&0;&1/2]|type=beast|speed type=!fly|miscellaneous=!swarm}",
-										"No flying speed",
-										"Crocodile"
-									],
-									[
-										"8th",
-										"{@filter 1|bestiary|challenge rating=[&0;&1]|type=beast|miscellaneous=!swarm}",
-										"\u2014",
-										"Giant eagle"
-									]
-								]
-							},
-							"You can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you fall {@condition Inconsciente # Unconscious|phb_esp|inconsciente}, drop to 0 hit points, or die.",
-							"While you are transformed, the following rules apply:",
-							{
-								"type": "list",
-								"items": [
-									"Your game statistics are replaced by the statistics of the beast, but you retain your alignment, personality, and Intelligence, Wisdom, and Charisma scores. You also retain all of your skill and saving throw proficiencies, in addition to gaining those of the creature. If the creature has the same proficiency as you and the bonus in its stat block is higher than yours, use the creature's bonus instead of yours. If the creature has any legendary or lair actions, you can't use them.",
-									"When you transform, you assume the beast's hit points and Hit Dice. When you revert to your normal form, you return to the number of hit points you had before you transformed. However, if you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. For example, if you take 10 damage in animal form and have only 1 hit point left, you revert and take 9 damage. As long as the excess damage doesn't reduce your normal form to 0 hit points, you aren't knocked {@condition Inconsciente # Unconscious|phb_esp|inconsciente}.",
-									"You can't cast spells, and your ability to speak or take any action that requires hands is limited to the capabilities of your beast form. Transforming doesn't break your concentration on a spell you've already cast, however, or prevent you from taking actions that are part of a spell, such as {@spell Llamar al relámpago # Call Lightning|phb_esp|llamar al relámpago}, that you've already cast.",
-									"You retain the benefit of any features from your class, race, or other source and can use them if the new form is physically capable of doing so. However, you can't use any of your special senses, such as darkvision, unless your new form also has that sense.",
-									"You choose whether your equipment falls to the ground in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the DM decides whether it is practical for the new form to wear a piece of equipment, based on the creature's shape and size. Your equipment doesn't change size or shape to match the new form, and any equipment that the new form can't wear must either fall to the ground or merge with it. Equipment that merges with the form has no effect until you leave the form."
-								]
-							}
-						]
-					},
-					{
-						"name": "Druid Circle",
-						"entries": [
-							"At 2nd level, you choose to identify with a circle of druids from the list of available circles. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level."
-						],
-						"gainSubclassFeature": true
-					}
-				],
-				[],
-				[
-					{
-						"name": "Wild Shape Improvement",
-						"entries": [
-							"At 4th level, your Wild Shape improves as shown on the Beast Shapes table."
-						]
-					},
-					{
-						"name": "Ability Score Improvement",
-						"entries": [
-							"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-							"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-						]
-					}
-				],
-				[],
-				[
-					{
-						"name": "Druid Circle feature",
-						"entries": [
-							"At 6th level, you gain a feature granted by your Druid Circle."
-						],
-						"gainSubclassFeature": true
-					}
-				],
-				[],
-				[
-					{
-						"name": "Wild Shape Improvement",
-						"entries": [
-							"At 8th level, your Wild Shape improves as shown on the Beast Shapes table."
-						]
-					},
-					{
-						"name": "Ability Score Improvement",
-						"entries": [
-							"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-							"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-						]
-					}
-				],
-				[],
-				[
-					{
-						"name": "Druid Circle feature",
-						"entries": [
-							"At 10th level, you gain a feature granted by your Druid Circle feature."
-						],
-						"gainSubclassFeature": true
-					}
-				],
-				[],
-				[
-					{
-						"name": "Ability Score Improvement",
-						"entries": [
-							"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-							"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-						]
-					}
-				],
-				[],
-				[
-					{
-						"name": "Druid Circle feature",
-						"entries": [
-							"At 14th level, you gain a feature granted by your Druid Circle feature."
-						],
-						"gainSubclassFeature": true
-					}
-				],
-				[],
-				[
-					{
-						"name": "Ability Score Improvement",
-						"entries": [
-							"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-							"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-						]
-					}
-				],
-				[],
-				[
-					{
-						"name": "Timeless Body",
-						"entries": [
-							"Starting at 18th level, the primal magic that you wield causes you to age more slowly. For every 10 years that pass, your body ages only 1 year."
-						]
-					},
-					{
-						"name": "Beast Spells",
-						"entries": [
-							"Beginning at 18th level, you can cast many of your druid spells in any shape you assume using Wild Shape. You can perform the somatic and verbal components of a druid spell while in a beast shape, but you aren't able to provide material components."
-						]
-					}
-				],
-				[
-					{
-						"name": "Ability Score Improvement",
-						"entries": [
-							"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-							"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-						]
-					}
-				],
-				[
-					{
-						"name": "Archdruid",
-						"entries": [
-							"At 20th level, you can use your Wild Shape an unlimited number of times.",
-							"Additionally, you can ignore the verbal and somatic components of your druid spells, as well as any material components that lack a cost and aren't consumed by a spell. You gain this benefit in both your normal shape and your beast shape from Wild Shape."
-						]
-					}
-				]
-			],
-			"subclassTitle": "Druid Circle",
-			"subclasses": [
-				{
-					"name": "Circle of the Land",
-					"shortName": "Land",
-					"source": "PHB_Esp",
-					"srd": true,
-					"subclassFeatures": [
-						[
-							{
-								"name": "Circle of the Land",
-								"entries": [
-									"The Circle of the Land is made up of mystics and sages who safeguard ancient knowledge and rites through a vast oral tradition. These druids meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. The circle's wisest members preside as the chief priests of communities that hold to the Old Faith and serve as advisors to the rulers of those folk. As a member of this circle, your magic is influenced by the land where you were initiated into the circle's mysterious rites.",
-									{
-										"type": "entries",
-										"name": "Bonus Cantrip",
-										"entries": [
-											"You learn one additional druid cantrip of your choice."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Natural Recovery",
-										"entries": [
-											"Starting at 2nd level, you can regain some of your magical energy by sitting in meditation and communing with nature. During a short rest, you choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your druid level (rounded up), and none of the slots can be 6th level or higher. You can't use this feature again until you finish a long rest",
-											"For example, when you are a 4th-level druid, you can recover up to two levels worth of spell slots. You can recover either a 2nd-level slot or two 1st-level slots."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Circle Spells",
-										"entries": [
-											"Your mystical connection to the land infuses you with the ability to cast certain spells. At 3rd, 5th, 7th, and 9th level you gain access to circle spells connected to the land where you became a druid. Choose that land - arctic, coast, desert, forest, grassland, mountain, swamp, or Underdark - and consult the associated list of spells.",
-											"Once you gain access to a circle spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you.",
-											{
-												"type": "table",
-												"caption": "Arctic",
-												"colLabels": [
-													"Druid Level",
-													"Circle Spells"
-												],
-												"colStyles": [
-													"col-3 text-center",
-													"col-9"
-												],
-												"rows": [
-													[
-														"3rd",
-														"{@spell Inmovilizar persona # Hold Person|phb_esp|inmovilizar persona}, {@spell Crecimiento espinoso # Spike Growth|phb_esp|crecimiento espinoso}"
-													],
-													[
-														"5th",
-														"{@spell Tormenta de aguanieve # Sleet Storm|phb_esp|tormenta de aguanieve}, {@spell Ralentizar # Slow|phb_esp|ralentizar}"
-													],
-													[
-														"7th",
-														"{@spell Libertad de movimiento # Freedom of Movement|phb_esp|libertad de movimiento}, {@spell Tormenta de hielo # Ice Storm|phb_esp|tormenta de hielo}"
-													],
-													[
-														"9th",
-														"{@spell Comunión con la naturaleza # Commune with Nature|phb_esp|comunión con la naturaleza}, {@spell Cono de frío # Cone of Cold|phb_esp|cono de frío}"
-													]
-												]
-											},
-											{
-												"type": "table",
-												"caption": "Coast",
-												"colLabels": [
-													"Druid Level",
-													"Circle Spells"
-												],
-												"colStyles": [
-													"col-3 text-center",
-													"col-9"
-												],
-												"rows": [
-													[
-														"3rd",
-														"{@spell Imagen múltiple # Mirror Image|phb_esp|imagen múltiple}, {@spell Paso brumoso # Misty Step|phb_esp|paso brumoso}"
-													],
-													[
-														"5th",
-														"{@spell Respirar bajo el agua # Water Breathing|phb_esp|respirar bajo el agua}, {@spell Caminar sobre el agua # Water Walk|phb_esp|caminar sobre el agua}"
-													],
-													[
-														"7th",
-														"{@spell Controlar agua # Control Water|phb_esp|controlar agua}, {@spell Libertad de movimiento # Freedom of Movement|phb_esp|libertad de movimiento}"
-													],
-													[
-														"9th",
-														"{@spell conjure elemental}, {@spell Escudriñar # Scrying|phb_esp|escudriñar}"
-													]
-												]
-											},
-											{
-												"type": "table",
-												"caption": "Desert",
-												"colLabels": [
-													"Druid Level",
-													"Circle Spells"
-												],
-												"colStyles": [
-													"col-3 text-center",
-													"col-9"
-												],
-												"rows": [
-													[
-														"3rd",
-														"{@spell Contorno borroso # Blur|phb_esp|contorno borroso}, {@spell Silencio # Silence|phb_esp|silencio}"
-													],
-													[
-														"5th",
-														"{@spell Crear comida y agua # Create Food and Water|phb_esp|crear comida y agua}, {@spell Protección contra energía # Protection from Energy|phb_esp|protección contra energía}"
-													],
-													[
-														"7th",
-														"{@spell Marchitar # Blight|phb_esp|marchitar}, {@spell Terreno alucinatorio # Hallucinatory Terrain|phb_esp|terreno alucinatorio}"
-													],
-													[
-														"9th",
-														"{@spell Plaga de insectos # Insect Plague|phb_esp|plaga de insectos}, {@spell Muro de piedra # Wall of Stone|phb_esp|muro de piedra}"
-													]
-												]
-											},
-											{
-												"type": "table",
-												"caption": "Forest",
-												"colLabels": [
-													"Druid Level",
-													"Circle Spells"
-												],
-												"colStyles": [
-													"col-3 text-center",
-													"col-9"
-												],
-												"rows": [
-													[
-														"3rd",
-														"{@spell Piel robliza # Barkskin|phb_esp|piel robliza}, {@spell Trepar cual arácnido # Spider Climb|phb_esp|trepar cual arácnido}"
-													],
-													[
-														"5th",
-														"{@spell Llamar al relámpago # Call Lightning|phb_esp|llamar al relámpago}, {@spell Crecimiento vegetal # Plant Growth|phb_esp|crecimiento vegetal}"
-													],
-													[
-														"7th",
-														"{@spell Adivinación # Divination|phb_esp|adivinación}, {@spell Libertad de movimiento # Freedom of Movement|phb_esp|libertad de movimiento}"
-													],
-													[
-														"9th",
-														"{@spell Comunión con la naturaleza # Commune with Nature|phb_esp|comunión con la naturaleza}, {@spell Paso arbóreo # Tree Stride|phb_esp|paso arbóreo}"
-													]
-												]
-											},
-											{
-												"type": "table",
-												"caption": "Grassland",
-												"colLabels": [
-													"Druid Level",
-													"Circle Spells"
-												],
-												"colStyles": [
-													"col-3 text-center",
-													"col-9"
-												],
-												"rows": [
-													[
-														"3rd",
-														"{@spell Invisibilidad # Invisibility|phb_esp|invisibilidad}, {@spell Pasar sin rastro # Pass without Trace|phb_esp|pasar sin rastro}"
-													],
-													[
-														"5th",
-														"{@spell Luz del día # Daylight|phb_esp|luz del día}, {@spell Acelerar # Haste|phb_esp|acelerar}"
-													],
-													[
-														"7th",
-														"{@spell Adivinación # Divination|phb_esp|adivinación}, {@spell Libertad de movimiento # Freedom of Movement|phb_esp|libertad de movimiento}"
-													],
-													[
-														"9th",
-														"{@spell Ensueño # Dream|phb_esp|ensueño}, {@spell Plaga de insectos # Insect Plague|phb_esp|plaga de insectos}"
-													]
-												]
-											},
-											{
-												"type": "table",
-												"caption": "Mountain",
-												"colLabels": [
-													"Druid Level",
-													"Circle Spells"
-												],
-												"colStyles": [
-													"col-3 text-center",
-													"col-9"
-												],
-												"rows": [
-													[
-														"3rd",
-														"{@spell Trepar cual arácnido # Spider Climb|phb_esp|trepar cual arácnido}, {@spell Crecimiento espinoso # Spike Growth|phb_esp|crecimiento espinoso}"
-													],
-													[
-														"5th",
-														"{@spell Relámpago # Lightning Bolt|phb_esp|relámpago}, {@spell Fundirse con la piedra # Meld into Stone|phb_esp|fundirse con la piedra}"
-													],
-													[
-														"7th",
-														"{@spell Moldear la piedra # Stone Shape|phb_esp|moldear la piedra}, {@spell Piel pétrea # Stoneskin|phb_esp|piel pétrea}"
-													],
-													[
-														"9th",
-														"{@spell Pasamuros # Passwall|phb_esp|Pasamuros}, {@spell Muro de piedra # Wall of Stone|phb_esp|muro de piedra}"
-													]
-												]
-											},
-											{
-												"type": "table",
-												"caption": "Swamp",
-												"colLabels": [
-													"Druid Level",
-													"Circle Spells"
-												],
-												"colStyles": [
-													"col-3 text-center",
-													"col-9"
-												],
-												"rows": [
-													[
-														"3rd",
-														"{@spell Oscuridad # Darkness|phb_esp|oscuridad}, {@spell Flecha ácida de Melf # Melf's Acid Arrow|phb_esp|flecha ácida de Melf}"
-													],
-													[
-														"5th",
-														"{@spell Caminar sobre el agua # Water Walk|phb_esp|caminar sobre el agua}, {@spell Nube apestosa # Stinking Cloud|phb_esp|nube apestosa}"
-													],
-													[
-														"7th",
-														"{@spell Libertad de movimiento # Freedom of Movement|phb_esp|libertad de movimiento}, {@spell Localizar criatura # Locate Creature|phb_esp|localizar criatura}"
-													],
-													[
-														"9th",
-														"{@spell Plaga de insectos # Insect Plague|phb_esp|plaga de insectos}, {@spell Escudriñar # Scrying|phb_esp|escudriñar}"
-													]
-												]
-											},
-											{
-												"type": "table",
-												"caption": "Underdark",
-												"colLabels": [
-													"Druid Level",
-													"Circle Spells"
-												],
-												"colStyles": [
-													"col-3 text-center",
-													"col-9"
-												],
-												"rows": [
-													[
-														"3rd",
-														"{@spell Trepar cual arácnido # Spider Climb|phb_esp|trepar cual arácnido}, {@spell Telaraña # Web|phb_esp|telaraña}"
-													],
-													[
-														"5th",
-														"{@spell Forma gaseosa # Gaseous Form|phb_esp|forma gaseosa}, {@spell Nube apestosa # Stinking Cloud|phb_esp|nube apestosa}"
-													],
-													[
-														"7th",
-														"{@spell Invisibilidad mejorada # Greater Invisibility|phb_esp|invisibilidad mejorada}, {@spell Moldear la piedra # Stone Shape|phb_esp|moldear la piedra}"
-													],
-													[
-														"9th",
-														"{@spell Nube aniquiladora # Cloudkill|phb_esp|nube aniquiladora}, {@spell Plaga de insectos # Insect Plague|phb_esp|plaga de insectos}"
-													]
-												]
-											}
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Land's Stride",
-										"entries": [
-											"Starting at 6th level, moving through nonmagical difficult terrain costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.",
-											"In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the {@spell Enmarañar # Entangle|phb_esp|enmarañar} spell."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Nature's Ward",
-										"entries": [
-											"When you reach 10th level, you can't be {@condition Hechizado # Charmed|phb_esp|hechizado} or {@condition Asustado # Frightened|phb_esp|asustado} by elementals or fey, and you are immune to poison and disease."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Nature's Sanctuary",
-										"entries": [
-											"When you reach 14th level, creatures of the natural world sense your connection to nature and become hesitant to attack you. When a beast or plant creature attacks you, that creature must make a Wisdom saving throw against your druid spell save DC. On a failed save, the creature must choose a different target, or the attack automatically misses. On a successful save, the creature is immune to this effect for 24 hours.",
-											"The creature is aware of this effect before it makes its attack against you."
-										]
-									}
-								]
-							}
-						]
-					]
-				},
-				{
-					"name": "Circle of the Moon",
-					"shortName": "Moon",
-					"source": "PHB_Esp",
-					"subclassFeatures": [
-						[
-							{
-								"name": "Circle of the Moon",
-								"entries": [
-									"Druids of the Circle of the Moon are fierce guardians of the wilds. Their order gathers under the full moon to share news and trade warnings. They haunt the deepest parts of the wilderness, where they might go for weeks on end before crossing paths with another humanoid creature, let alone another druid.",
-									"Changeable as the moon, a druid of this circle might prowl as a great cat one night, soar over the treetops as an eagle the next day, and crash through the undergrowth in bear form to drive off a trespassing monster. The wild is in the druid's blood.",
-									{
-										"type": "entries",
-										"name": "Combat Wild Shape",
-										"entries": [
-											"You gain the ability to use Wild Shape on your turn as a bonus action, rather than as an action.",
-											"Additionally, while you are transformed by Wild Shape, you can use a bonus action to expend one spell slot to regain {@dice 1d8} hit points per level of the spell slot expended."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Circle Forms",
-										"entries": [
-											"The rites of your circle grant you the ability to transform into more dangerous animal forms. Starting at 2nd level, you can use your Wild Shape to transform into a {@filter beast with a challenge rating as high as 1|bestiary|challenge rating=[&0;&1]|type=beast|speed type=!fly;!swim|miscellaneous=!swarm} (you ignore the Max. CR column of the Beast Shapes table, but must abide by the other limitations there).",
-											"Starting at 6th level, you can transform into a beast with a challenge rating as high as your druid level divided by 3, rounded down.",
-											{
-												"type": "table",
-												"caption": "Circle of the Moon Beast Shapes",
-												"colLabels": [
-													"Level",
-													"Max. CR",
-													"Limitations"
-												],
-												"colStyles": [
-													"col-2 text-center",
-													"col-2 text-center",
-													"col-8"
-												],
-												"rows": [
-													[
-														"2nd",
-														"{@filter 1|bestiary|challenge rating=[&0;&1]|type=beast|speed type=!fly;!swim|miscellaneous=!swarm}",
-														"No flying or swimming speed"
-													],
-													[
-														"4th",
-														"{@filter 1|bestiary|challenge rating=[&0;&1]|type=beast|speed type=!fly|miscellaneous=!swarm}",
-														"No flying speed"
-													],
-													[
-														"6th",
-														"{@filter 2|bestiary|challenge rating=[&0;&2]|type=beast|speed type=!fly|miscellaneous=!swarm}",
-														"No flying speed"
-													],
-													[
-														"8th",
-														"{@filter 2|bestiary|challenge rating=[&0;&2]|type=beast|miscellaneous=!swarm}",
-														"\u2014"
-													],
-													[
-														"9th",
-														"{@filter 3|bestiary|challenge rating=[&0;&3]|type=beast|miscellaneous=!swarm}",
-														"\u2014"
-													],
-													[
-														"12th",
-														"{@filter 4|bestiary|challenge rating=[&0;&4]|type=beast|miscellaneous=!swarm}",
-														"\u2014"
-													],
-													[
-														"15th",
-														"{@filter 5|bestiary|challenge rating=[&0;&5]|type=beast|miscellaneous=!swarm}",
-														"\u2014"
-													],
-													[
-														"18th",
-														"{@filter 6|bestiary|challenge rating=[&0;&6]|type=beast|miscellaneous=!swarm}",
-														"\u2014"
-													]
-												]
-											}
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Primal Strike",
-										"entries": [
-											"Starting at 6th level, your attacks in beast form count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Elemental Wild Shape",
-										"entries": [
-											"At 10th level, you can expend two uses of Wild Shape at the same time to transform into an {@creature air elemental}, an {@creature earth elemental}, a {@creature fire elemental}, or a {@creature water elemental}."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Thousand Forms",
-										"entries": [
-											"By 14th level, you have learned to use magic to alter your physical form in more subtle ways. You can cast the {@spell Alterar el propio aspecto # Alter Self|phb_esp|alterar el propio aspecto} spell at will."
-										]
-									}
-								]
-							}
-						]
-					]
-				}
-			],
-			"fluff": [
-				{
-					"name": "Druid",
-					"type": "section",
-					"entries": [
-						"Holding high a gnarled staff wreathed with holly, an elf summons the fury of the storm and calls down explosive bolts of lightning to smite the torch-carrying orcs who threaten her forest.",
-						"Crouching out of sight on a high tree branch in the form of a leopard, a human peers out of the jungle at the strange construction of a temple of Evil Elemental Air, keeping a close eye on the cultists' activities.",
-						"Swinging a blade formed of pure fire, a half-elf charges into a mass of skeletal soldiers, sundering the unnatural magic that gives the foul creatures the mocking semblance of life.",
-						"Whether calling on the elemental forces of nature or emulating the creatures of the animal world, druids are an embodiment of nature's resilience, cunning, and fury. They claim no mastery over nature. Instead, they see themselves as extensions of nature's indomitable will.",
-						{
-							"type": "entries",
-							"name": "Power of Nature",
-							"entries": [
-								"Druids revere nature above all, gaining their spells and other magical powers either from the force of nature itself or from a nature deity. Many druids pursue a mystic spirituality of transcendent union with nature rather than devotion to a divine entity, while others serve gods of wild nature, animals, or elemental forces. The ancient druidic traditions are sometimes called the Old Faith, in contrast to the worship of gods in temples and shrines.",
-								"Druid spells are oriented toward nature and animals\u2014the power of tooth and claw, of sun and moon, of fire and storm. Druids also gain the ability to take on animal forms, and some druids make a particular study of this practice, even to the point where they prefer animal form to their natural form."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Preserve the Balance",
-							"entries": [
-								"For druids, nature exists in a precarious balance. The four elements that make up a world\u2014air, earth, fire, and water\u2014must remain in equilibrium. If one element were to gain power over the others, the world could be destroyed, drawn into one of the elemental planes and broken apart into its component elements. Thus, druids oppose cults of Elemental Evil and others who promote one element to the exclusion of others.",
-								"Druids are also concerned with the delicate ecological balance that sustains plant and animal life, and the need for civilized folk to live in harmony with nature, not in opposition to it. Druids accept that which is cruel in nature, and they hate that which is unnatural, including aberrations (such as beholders and mind flayers) and undead (such as zombies and vampires). Druids sometimes lead raids against such creatures, especially when the monsters encroach on the druids' territory.",
-								"Druids are often found guarding sacred sites or watching over regions of unspoiled nature. But when a significant danger arises, threatening nature's balance or the lands they protect, druids take on a more active role in combating the threat, as adventurers."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Creating a Druid",
-							"entries": [
-								"When making a druid, consider why your character has such a close bond with nature. Perhaps your character lives in a society where the Old Faith still thrives, or was raised by a druid after being abandoned in the depths of a forest. Perhaps your character had a dramatic encounter with the spirits of nature, coming face to face with a giant eagle or dire wolf and surviving the experience. Maybe your character was born during an epic storm or a volcanic eruption, which was interpreted as a sign that becoming a druid was part of your character's destiny.",
-								"Have you always been an adventurer as part of your druidic calling, or did you first spend time as a caretaker of a sacred grove or spring? Perhaps your homeland was befouled by evil, and you took up an adventuring life in hopes of finding a new home or purpose.",
-								{
-									"type": "entries",
-									"name": "Quick Build",
-									"entries": [
-										"You can make a druid quickly by following these suggestions. First, Wisdom should be your highest ability score, followed by Constitution. Second, choose the {@background hermit} background."
-									]
-								}
-							]
-						}
-					],
-					"source": "PHB_Esp",
-					"page": 64
-				}
-			]
-		},
+                }
+            },
+            "classTableGroups": [{
+                    "colLabels": ["{@filter Cantrips Known|spells|level=0|class=Druid}"],
+                    "rows": [[2], [2], [2], [3], [3], [3], [3], [3], [3], [4], [4], [4], [4], [4], [4], [4], [4], [4], [4], [4]]
+                }, {
+                    "title": "Spell Slots per Spell Level",
+                    "colLabels": ["{@filter 1st|spells|level=1|class=Druid}", "{@filter 2nd|spells|level=2|class=Druid}", "{@filter 3rd|spells|level=3|class=Druid}", "{@filter 4th|spells|level=4|class=Druid}", "{@filter 5th|spells|level=5|class=Druid}", "{@filter 6th|spells|level=6|class=Druid}", "{@filter 7th|spells|level=7|class=Druid}", "{@filter 8th|spells|level=8|class=Druid}", "{@filter 9th|spells|level=9|class=Druid}"],
+                    "rows": [[2, 0, 0, 0, 0, 0, 0, 0, 0], [3, 0, 0, 0, 0, 0, 0, 0, 0], [4, 2, 0, 0, 0, 0, 0, 0, 0], [4, 3, 0, 0, 0, 0, 0, 0, 0], [4, 3, 2, 0, 0, 0, 0, 0, 0], [4, 3, 3, 0, 0, 0, 0, 0, 0], [4, 3, 3, 1, 0, 0, 0, 0, 0], [4, 3, 3, 2, 0, 0, 0, 0, 0], [4, 3, 3, 3, 1, 0, 0, 0, 0], [4, 3, 3, 3, 2, 0, 0, 0, 0], [4, 3, 3, 3, 2, 1, 0, 0, 0], [4, 3, 3, 3, 2, 1, 0, 0, 0], [4, 3, 3, 3, 2, 1, 1, 0, 0], [4, 3, 3, 3, 2, 1, 1, 0, 0], [4, 3, 3, 3, 2, 1, 1, 1, 0], [4, 3, 3, 3, 2, 1, 1, 1, 0], [4, 3, 3, 3, 2, 1, 1, 1, 1], [4, 3, 3, 3, 3, 1, 1, 1, 1], [4, 3, 3, 3, 3, 2, 1, 1, 1], [4, 3, 3, 3, 3, 2, 2, 1, 1]]
+                }
+            ],
+            "classFeatures": [[{
+                        "name": "Druidic",
+                        "entries": ["You know Druidic, the secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a message. Others spot the message's presence with a successful DC 15 Wisdom ({@skill Perception}) check but can't decipher it without magic."]
+                    }, {
+                        "name": "Spellcasting",
+                        "entries": ["Drawing on the divine essence of nature itself, you can cast spells to shape that essence to your will. See {@book chapter 10|PHB|10} for the general rules of spellcasting and chapter 11 for the {@filter druid spell list|spells|class=druid}.", {
+                                "type": "entries",
+                                "name": "Cantrips",
+                                "entries": ["At 1st level, you know two cantrips of your choice from the druid spell list. You learn additional druid cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Druid table."]
+                            }, {
+                                "type": "entries",
+                                "name": "Preparing and Casting Spells",
+                                "entries": ["The Druid table shows how many spell slots you have to cast your {@filter druid spells|spells|class=druid} of 1st level and higher. To cast one of these druid spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.", "You prepare the list of druid spells that are available for you to cast, choosing from the druid spell list. When you do so, choose a number of druid spells equal to your Wisdom modifier + your druid level (minimum of one spell). The spells must be of a level for which you have spell slots.", "For example, if you are a 3rd-level druid, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell {@spell cure wounds}, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.", "You can also change your list of prepared spells when you finish a long rest. Preparing a new list of druid spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list."]
+                            }, {
+                                "type": "entries",
+                                "name": "Spellcasting Ability",
+                                "entries": ["Wisdom is your spellcasting ability for your druid spells, since your magic draws upon your devotion and attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a druid spell you cast and when making an attack roll with one.", {
+                                        "type": "abilityDc",
+                                        "name": "Spell",
+                                        "attributes": ["wis"]
+                                    }, {
+                                        "type": "abilityAttackMod",
+                                        "name": "Spell",
+                                        "attributes": ["wis"]
+                                    }
+                                ]
+                            }, {
+                                "type": "entries",
+                                "name": "Ritual Casting",
+                                "entries": ["You can cast a druid spell as a ritual if that spell has the ritual tag and you have the spell prepared."]
+                            }, {
+                                "type": "entries",
+                                "name": "Spellcasting Focus",
+                                "entries": ["You can use a druidic focus (found in chapter 5) as a spellcasting focus for your druid spells"]
+                            }
+                        ]
+                    }
+                ], [{
+                        "name": "Wild Shape",
+                        "entries": ["Starting at 2nd level, you can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or long rest.", "Your druid level determines the beasts you can transform into, as shown in the Beast Shapes table. At 2nd level, for example, you can transform into any beast that has a challenge rating of 1/4 or lower that doesn't have a flying or swimming speed.", {
+                                "type": "table",
+                                "caption": "Beast Shapes",
+                                "colLabels": ["Level", "Max. CR", "Limitations", "Example"],
+                                "colStyles": ["col-2 text-center", "col-2 text-center", "col-5", "col-3"],
+                                "rows": [["2nd", "{@filter 1/4|bestiary|challenge rating=[&0;&1/4]|type=beast|speed type=!fly;!swim|miscellaneous=!swarm}", "No flying or swimming speed", "Wolf"], ["4th", "{@filter 1/2|bestiary|challenge rating=[&0;&1/2]|type=beast|speed type=!fly|miscellaneous=!swarm}", "No flying speed", "Crocodile"], ["8th", "{@filter 1|bestiary|challenge rating=[&0;&1]|type=beast|miscellaneous=!swarm}", "—", "Giant eagle"]]
+                            }, "You can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you fall {@condition unconscious}, drop to 0 hit points, or die.", "While you are transformed, the following rules apply:", {
+                                "type": "list",
+                                "items": ["Your game statistics are replaced by the statistics of the beast, but you retain your alignment, personality, and Intelligence, Wisdom, and Charisma scores. You also retain all of your skill and saving throw proficiencies, in addition to gaining those of the creature. If the creature has the same proficiency as you and the bonus in its stat block is higher than yours, use the creature's bonus instead of yours. If the creature has any legendary or lair actions, you can't use them.", "When you transform, you assume the beast's hit points and Hit Dice. When you revert to your normal form, you return to the number of hit points you had before you transformed. However, if you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. For example, if you take 10 damage in animal form and have only 1 hit point left, you revert and take 9 damage. As long as the excess damage doesn't reduce your normal form to 0 hit points, you aren't knocked {@condition unconscious}.", "You can't cast spells, and your ability to speak or take any action that requires hands is limited to the capabilities of your beast form. Transforming doesn't break your concentration on a spell you've already cast, however, or prevent you from taking actions that are part of a spell, such as {@spell call lightning}, that you've already cast.", "You retain the benefit of any features from your class, race, or other source and can use them if the new form is physically capable of doing so. However, you can't use any of your special senses, such as darkvision, unless your new form also has that sense.", "You choose whether your equipment falls to the ground in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the DM decides whether it is practical for the new form to wear a piece of equipment, based on the creature's shape and size. Your equipment doesn't change size or shape to match the new form, and any equipment that the new form can't wear must either fall to the ground or merge with it. Equipment that merges with the form has no effect until you leave the form."]
+                            }
+                        ]
+                    }, {
+                        "name": "Druid Circle",
+                        "entries": ["At 2nd level, you choose to identify with a circle of druids from the list of available circles. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level."],
+                        "gainSubclassFeature": true
+                    }
+                ], [], [{
+                        "name": "Wild Shape Improvement",
+                        "entries": ["At 4th level, your Wild Shape improves as shown on the Beast Shapes table."]
+                    }, {
+                        "name": "Ability Score Improvement",
+                        "entries": ["When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.", "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."]
+                    }
+                ], [], [{
+                        "name": "Druid Circle feature",
+                        "entries": ["At 6th level, you gain a feature granted by your Druid Circle."],
+                        "gainSubclassFeature": true
+                    }
+                ], [], [{
+                        "name": "Wild Shape Improvement",
+                        "entries": ["At 8th level, your Wild Shape improves as shown on the Beast Shapes table."]
+                    }, {
+                        "name": "Ability Score Improvement",
+                        "entries": ["When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.", "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."]
+                    }
+                ], [], [{
+                        "name": "Druid Circle feature",
+                        "entries": ["At 10th level, you gain a feature granted by your Druid Circle feature."],
+                        "gainSubclassFeature": true
+                    }
+                ], [], [{
+                        "name": "Ability Score Improvement",
+                        "entries": ["When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.", "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."]
+                    }
+                ], [], [{
+                        "name": "Druid Circle feature",
+                        "entries": ["At 14th level, you gain a feature granted by your Druid Circle feature."],
+                        "gainSubclassFeature": true
+                    }
+                ], [], [{
+                        "name": "Ability Score Improvement",
+                        "entries": ["When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.", "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."]
+                    }
+                ], [], [{
+                        "name": "Timeless Body",
+                        "entries": ["Starting at 18th level, the primal magic that you wield causes you to age more slowly. For every 10 years that pass, your body ages only 1 year."]
+                    }, {
+                        "name": "Beast Spells",
+                        "entries": ["Beginning at 18th level, you can cast many of your druid spells in any shape you assume using Wild Shape. You can perform the somatic and verbal components of a druid spell while in a beast shape, but you aren't able to provide material components."]
+                    }
+                ], [{
+                        "name": "Ability Score Improvement",
+                        "entries": ["When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.", "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."]
+                    }
+                ], [{
+                        "name": "Archdruid",
+                        "entries": ["At 20th level, you can use your Wild Shape an unlimited number of times.", "Additionally, you can ignore the verbal and somatic components of your druid spells, as well as any material components that lack a cost and aren't consumed by a spell. You gain this benefit in both your normal shape and your beast shape from Wild Shape."]
+                    }
+                ]],
+            "subclassTitle": "Druid Circle",
+            "subclasses": [{
+                    "name": "Circle of the Land",
+                    "shortName": "Land",
+                    "source": "PHB_Esp",
+                    "page": 68,
+                    "srd": true,
+                    "additionalSpells": [{
+                            "prepared": {
+                                "3": ["hold person", "spike growth"],
+                                "5": ["sleet storm", "slow"],
+                                "7": ["freedom of movement", "ice storm"],
+                                "9": ["commune with nature", "cone of cold"]
+                            }
+                        }, {
+                            "prepared": {
+                                "3": ["mirror image", "misty step"],
+                                "5": ["water breathing", "water walk"],
+                                "7": ["control water", "freedom of movement"],
+                                "9": ["conjure elemental", "scrying"]
+                            }
+                        }, {
+                            "prepared": {
+                                "3": ["blur", "silence"],
+                                "5": ["create food and water", "protection from energy"],
+                                "7": ["blight", "hallucinatory terrain"],
+                                "9": ["insect plague", "wall of stone"]
+                            }
+                        }, {
+                            "prepared": {
+                                "3": ["barkskin", "spider climb"],
+                                "5": ["call lightning", "plant growth"],
+                                "7": ["divination", "freedom of movement"],
+                                "9": ["commune with nature", "tree stride"]
+                            }
+                        }, {
+                            "prepared": {
+                                "3": ["invisibility", "pass without trace"],
+                                "5": ["daylight", "haste"],
+                                "7": ["divination", "freedom of movement"],
+                                "9": ["dream", "insect plague"]
+                            }
+                        }, {
+                            "prepared": {
+                                "3": ["spider climb", "spike growth"],
+                                "5": ["lightning bolt", "meld into stone"],
+                                "7": ["stone shape", "stoneskin"],
+                                "9": ["passwall", "wall of stone"]
+                            }
+                        }, {
+                            "prepared": {
+                                "3": ["darkness", "Melf's acid arrow"],
+                                "5": ["water walk", "stinking cloud"],
+                                "7": ["freedom of movement", "locate creature"],
+                                "9": ["insect plague", "scrying"]
+                            }
+                        }, {
+                            "prepared": {
+                                "3": ["spider climb", "web"],
+                                "5": ["gaseous form", "stinking cloud"],
+                                "7": ["greater invisibility", "stone shape"],
+                                "9": ["cloudkill", "insect plague"]
+                            }
+                        }
+                    ],
+                    "subclassFeatures": [[{
+                                "name": "Circle of the Land",
+                                "entries": ["The Circle of the Land is made up of mystics and sages who safeguard ancient knowledge and rites through a vast oral tradition. These druids meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. The circle's wisest members preside as the chief priests of communities that hold to the Old Faith and serve as advisors to the rulers of those folk. As a member of this circle, your magic is influenced by the land where you were initiated into the circle's mysterious rites.", {
+                                        "type": "entries",
+                                        "name": "Bonus Cantrip",
+                                        "entries": ["You learn one additional druid cantrip of your choice."]
+                                    }, {
+                                        "type": "entries",
+                                        "name": "Natural Recovery",
+                                        "entries": ["Starting at 2nd level, you can regain some of your magical energy by sitting in meditation and communing with nature. During a short rest, you choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your druid level (rounded up), and none of the slots can be 6th level or higher. You can't use this feature again until you finish a long rest", "For example, when you are a 4th-level druid, you can recover up to two levels worth of spell slots. You can recover either a 2nd-level slot or two 1st-level slots."]
+                                    }, {
+                                        "type": "entries",
+                                        "name": "Circle Spells",
+                                        "entries": ["Your mystical connection to the land infuses you with the ability to cast certain spells. At 3rd, 5th, 7th, and 9th level you gain access to circle spells connected to the land where you became a druid. Choose that land - arctic, coast, desert, forest, grassland, mountain, swamp, or Underdark - and consult the associated list of spells.", "Once you gain access to a circle spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you.", {
+                                                "type": "table",
+                                                "caption": "Arctic",
+                                                "colLabels": ["Druid Level", "Circle Spells"],
+                                                "colStyles": ["col-3 text-center", "col-9"],
+                                                "rows": [["3rd", "{@spell hold person}, {@spell spike growth}"], ["5th", "{@spell sleet storm}, {@spell slow}"], ["7th", "{@spell freedom of movement}, {@spell ice storm}"], ["9th", "{@spell commune with nature}, {@spell cone of cold}"]]
+                                            }, {
+                                                "type": "table",
+                                                "caption": "Coast",
+                                                "colLabels": ["Druid Level", "Circle Spells"],
+                                                "colStyles": ["col-3 text-center", "col-9"],
+                                                "rows": [["3rd", "{@spell mirror image}, {@spell misty step}"], ["5th", "{@spell water breathing}, {@spell water walk}"], ["7th", "{@spell control water}, {@spell freedom of movement}"], ["9th", "{@spell conjure elemental}, {@spell scrying}"]]
+                                            }, {
+                                                "type": "table",
+                                                "caption": "Desert",
+                                                "colLabels": ["Druid Level", "Circle Spells"],
+                                                "colStyles": ["col-3 text-center", "col-9"],
+                                                "rows": [["3rd", "{@spell blur}, {@spell silence}"], ["5th", "{@spell create food and water}, {@spell protection from energy}"], ["7th", "{@spell blight}, {@spell hallucinatory terrain}"], ["9th", "{@spell insect plague}, {@spell wall of stone}"]]
+                                            }, {
+                                                "type": "table",
+                                                "caption": "Forest",
+                                                "colLabels": ["Druid Level", "Circle Spells"],
+                                                "colStyles": ["col-3 text-center", "col-9"],
+                                                "rows": [["3rd", "{@spell barkskin}, {@spell spider climb}"], ["5th", "{@spell call lightning}, {@spell plant growth}"], ["7th", "{@spell divination}, {@spell freedom of movement}"], ["9th", "{@spell commune with nature}, {@spell tree stride}"]]
+                                            }, {
+                                                "type": "table",
+                                                "caption": "Grassland",
+                                                "colLabels": ["Druid Level", "Circle Spells"],
+                                                "colStyles": ["col-3 text-center", "col-9"],
+                                                "rows": [["3rd", "{@spell invisibility}, {@spell pass without trace}"], ["5th", "{@spell daylight}, {@spell haste}"], ["7th", "{@spell divination}, {@spell freedom of movement}"], ["9th", "{@spell dream}, {@spell insect plague}"]]
+                                            }, {
+                                                "type": "table",
+                                                "caption": "Mountain",
+                                                "colLabels": ["Druid Level", "Circle Spells"],
+                                                "colStyles": ["col-3 text-center", "col-9"],
+                                                "rows": [["3rd", "{@spell spider climb}, {@spell spike growth}"], ["5th", "{@spell lightning bolt}, {@spell meld into stone}"], ["7th", "{@spell stone shape}, {@spell stoneskin}"], ["9th", "{@spell passwall}, {@spell wall of stone}"]]
+                                            }, {
+                                                "type": "table",
+                                                "caption": "Swamp",
+                                                "colLabels": ["Druid Level", "Circle Spells"],
+                                                "colStyles": ["col-3 text-center", "col-9"],
+                                                "rows": [["3rd", "{@spell darkness}, {@spell Melf's acid arrow}"], ["5th", "{@spell water walk}, {@spell stinking cloud}"], ["7th", "{@spell freedom of movement}, {@spell locate creature}"], ["9th", "{@spell insect plague}, {@spell scrying}"]]
+                                            }, {
+                                                "type": "table",
+                                                "caption": "Underdark",
+                                                "colLabels": ["Druid Level", "Circle Spells"],
+                                                "colStyles": ["col-3 text-center", "col-9"],
+                                                "rows": [["3rd", "{@spell spider climb}, {@spell web}"], ["5th", "{@spell gaseous form}, {@spell stinking cloud}"], ["7th", "{@spell greater invisibility}, {@spell stone shape}"], ["9th", "{@spell cloudkill}, {@spell insect plague}"]]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ], [{
+                                "entries": [{
+                                        "type": "entries",
+                                        "name": "Land's Stride",
+                                        "entries": ["Starting at 6th level, moving through nonmagical difficult terrain costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.", "In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the {@spell entangle} spell."]
+                                    }
+                                ]
+                            }
+                        ], [{
+                                "entries": [{
+                                        "type": "entries",
+                                        "name": "Nature's Ward",
+                                        "entries": ["When you reach 10th level, you can't be {@condition charmed} or {@condition frightened} by elementals or fey, and you are immune to poison and disease."]
+                                    }
+                                ]
+                            }
+                        ], [{
+                                "entries": [{
+                                        "type": "entries",
+                                        "name": "Nature's Sanctuary",
+                                        "entries": ["When you reach 14th level, creatures of the natural world sense your connection to nature and become hesitant to attack you. When a beast or plant creature attacks you, that creature must make a Wisdom saving throw against your druid spell save DC. On a failed save, the creature must choose a different target, or the attack automatically misses. On a successful save, the creature is immune to this effect for 24 hours.", "The creature is aware of this effect before it makes its attack against you."]
+                                    }
+                                ]
+                            }
+                        ]]
+                }, {
+                    "name": "Circle of the Moon",
+                    "shortName": "Moon",
+                    "source": "PHB_Esp",
+                    "page": 69,
+                    "subclassFeatures": [[{
+                                "name": "Circle of the Moon",
+                                "entries": ["Druids of the Circle of the Moon are fierce guardians of the wilds. Their order gathers under the full moon to share news and trade warnings. They haunt the deepest parts of the wilderness, where they might go for weeks on end before crossing paths with another humanoid creature, let alone another druid.", "Changeable as the moon, a druid of this circle might prowl as a great cat one night, soar over the treetops as an eagle the next day, and crash through the undergrowth in bear form to drive off a trespassing monster. The wild is in the druid's blood.", {
+                                        "type": "entries",
+                                        "name": "Combat Wild Shape",
+                                        "entries": ["You gain the ability to use Wild Shape on your turn as a bonus action, rather than as an action.", "Additionally, while you are transformed by Wild Shape, you can use a bonus action to expend one spell slot to regain {@dice 1d8} hit points per level of the spell slot expended."]
+                                    }, {
+                                        "type": "entries",
+                                        "name": "Circle Forms",
+                                        "entries": ["The rites of your circle grant you the ability to transform into more dangerous animal forms. Starting at 2nd level, you can use your Wild Shape to transform into a {@filter beast with a challenge rating as high as 1|bestiary|challenge rating=[&0;&1]|type=beast|speed type=!fly;!swim|miscellaneous=!swarm} (you ignore the Max. CR column of the Beast Shapes table, but must abide by the other limitations there).", "Starting at 6th level, you can transform into a beast with a challenge rating as high as your druid level divided by 3, rounded down.", {
+                                                "type": "table",
+                                                "caption": "Circle of the Moon Beast Shapes",
+                                                "colLabels": ["Level", "Max. CR", "Limitations"],
+                                                "colStyles": ["col-2 text-center", "col-2 text-center", "col-8"],
+                                                "rows": [["2nd", "{@filter 1|bestiary|challenge rating=[&0;&1]|type=beast|speed type=!fly;!swim|miscellaneous=!swarm}", "No flying or swimming speed"], ["4th", "{@filter 1|bestiary|challenge rating=[&0;&1]|type=beast|speed type=!fly|miscellaneous=!swarm}", "No flying speed"], ["6th", "{@filter 2|bestiary|challenge rating=[&0;&2]|type=beast|speed type=!fly|miscellaneous=!swarm}", "No flying speed"], ["8th", "{@filter 2|bestiary|challenge rating=[&0;&2]|type=beast|miscellaneous=!swarm}", "—"], ["9th", "{@filter 3|bestiary|challenge rating=[&0;&3]|type=beast|miscellaneous=!swarm}", "—"], ["12th", "{@filter 4|bestiary|challenge rating=[&0;&4]|type=beast|miscellaneous=!swarm}", "—"], ["15th", "{@filter 5|bestiary|challenge rating=[&0;&5]|type=beast|miscellaneous=!swarm}", "—"], ["18th", "{@filter 6|bestiary|challenge rating=[&0;&6]|type=beast|miscellaneous=!swarm}", "—"]]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ], [{
+                                "entries": [{
+                                        "type": "entries",
+                                        "name": "Primal Strike",
+                                        "entries": ["Starting at 6th level, your attacks in beast form count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."]
+                                    }
+                                ]
+                            }
+                        ], [{
+                                "entries": [{
+                                        "type": "entries",
+                                        "name": "Elemental Wild Shape",
+                                        "entries": ["At 10th level, you can expend two uses of Wild Shape at the same time to transform into an {@creature air elemental}, an {@creature earth elemental}, a {@creature fire elemental}, or a {@creature water elemental}."]
+                                    }
+                                ]
+                            }
+                        ], [{
+                                "entries": [{
+                                        "type": "entries",
+                                        "name": "Thousand Forms",
+                                        "entries": ["By 14th level, you have learned to use magic to alter your physical form in more subtle ways. You can cast the {@spell alter self} spell at will."]
+                                    }
+                                ]
+                            }
+                        ]]
+                }
+            ],
+            "fluff": [{
+                    "name": "Druida",
+                    "type": "section",
+                    "entries": ["Holding high a gnarled staff wreathed with holly, an elf summons the fury of the storm and calls down explosive bolts of lightning to smite the torch-carrying orcs who threaten her forest.", "Crouching out of sight on a high tree branch in the form of a leopard, a human peers out of the jungle at the strange construction of a temple of Evil Elemental Air, keeping a close eye on the cultists' activities.", "Swinging a blade formed of pure fire, a half-elf charges into a mass of skeletal soldiers, sundering the unnatural magic that gives the foul creatures the mocking semblance of life.", "Whether calling on the elemental forces of nature or emulating the creatures of the animal world, druids are an embodiment of nature's resilience, cunning, and fury. They claim no mastery over nature. Instead, they see themselves as extensions of nature's indomitable will.", {
+                            "type": "entries",
+                            "name": "Power of Nature",
+                            "entries": ["Druids revere nature above all, gaining their spells and other magical powers either from the force of nature itself or from a nature deity. Many druids pursue a mystic spirituality of transcendent union with nature rather than devotion to a divine entity, while others serve gods of wild nature, animals, or elemental forces. The ancient druidic traditions are sometimes called the Old Faith, in contrast to the worship of gods in temples and shrines.", "Druid spells are oriented toward nature and animals—the power of tooth and claw, of sun and moon, of fire and storm. Druids also gain the ability to take on animal forms, and some druids make a particular study of this practice, even to the point where they prefer animal form to their natural form."]
+                        }, {
+                            "type": "entries",
+                            "name": "Preserve the Balance",
+                            "entries": ["For druids, nature exists in a precarious balance. The four elements that make up a world—air, earth, fire, and water—must remain in equilibrium. If one element were to gain power over the others, the world could be destroyed, drawn into one of the elemental planes and broken apart into its component elements. Thus, druids oppose cults of Elemental Evil and others who promote one element to the exclusion of others.", "Druids are also concerned with the delicate ecological balance that sustains plant and animal life, and the need for civilized folk to live in harmony with nature, not in opposition to it. Druids accept that which is cruel in nature, and they hate that which is unnatural, including aberrations (such as beholders and mind flayers) and undead (such as zombies and vampires). Druids sometimes lead raids against such creatures, especially when the monsters encroach on the druids' territory.", "Druids are often found guarding sacred sites or watching over regions of unspoiled nature. But when a significant danger arises, threatening nature's balance or the lands they protect, druids take on a more active role in combating the threat, as adventurers."]
+                        }, {
+                            "type": "entries",
+                            "name": "Creating a Druid",
+                            "entries": ["When making a druid, consider why your character has such a close bond with nature. Perhaps your character lives in a society where the Old Faith still thrives, or was raised by a druid after being abandoned in the depths of a forest. Perhaps your character had a dramatic encounter with the spirits of nature, coming face to face with a giant eagle or dire wolf and surviving the experience. Maybe your character was born during an epic storm or a volcanic eruption, which was interpreted as a sign that becoming a druid was part of your character's destiny.", "Have you always been an adventurer as part of your druidic calling, or did you first spend time as a caretaker of a sacred grove or spring? Perhaps your homeland was befouled by evil, and you took up an adventuring life in hopes of finding a new home or purpose.", {
+                                    "type": "entries",
+                                    "name": "Quick Build",
+                                    "entries": ["You can make a druid quickly by following these suggestions. First, Wisdom should be your highest ability score, followed by Constitution. Second, choose the {@background hermit} background."]
+                                }
+                            ]
+                        }
+                    ],
+                    "source": "PHB_Esp",
+                    "page": 64
+                }
+            ]
+        },
 		{
 			"name": "Fighter",
 			"source": "PHB_Esp",
@@ -26208,7 +25547,7 @@
 			}
 		},
 		{
-			"name": "Druid",
+			"name": "Druida",
 			"source": "PHB_Esp",
 			"reasons": [
 				"I saw too much devastation in the wild places, too much of nature's splendor ruined by the despoilers. I joined a circle of druids to fight back against the enemies of nature.",
@@ -44506,7 +43845,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					}
 				]
@@ -44857,7 +44196,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -44960,7 +44299,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -45032,7 +44371,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					}
 				]
@@ -45120,7 +44459,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -45346,7 +44685,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					}
 				],
@@ -45559,7 +44898,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -46107,7 +45446,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -46376,7 +45715,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					}
 				]
@@ -46443,7 +45782,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					}
 				],
@@ -46835,7 +46174,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -46856,7 +46195,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -47010,7 +46349,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -47545,7 +46884,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -47584,7 +46923,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -47605,7 +46944,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -47806,7 +47145,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -47966,7 +47305,7 @@
 				"fromSubclass": [
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -48268,7 +47607,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					}
 				],
@@ -48285,7 +47624,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -48540,7 +47879,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -49223,7 +48562,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -49244,7 +48583,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -49647,7 +48986,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -49658,7 +48997,7 @@
 				"fromSubclass": [
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -49669,7 +49008,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -50000,7 +49339,7 @@
 				"fromSubclass": [
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -50032,7 +49371,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					}
 				]
@@ -50153,7 +49492,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -50198,7 +49537,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -50288,7 +49627,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -50502,7 +49841,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -50513,7 +49852,7 @@
 				"fromSubclass": [
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -50595,7 +49934,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -50670,7 +50009,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -50811,7 +50150,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -50984,7 +50323,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					}
 				],
@@ -51011,7 +50350,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -51128,7 +50467,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					}
 				]
@@ -51231,7 +50570,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -51252,7 +50591,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -51425,7 +50764,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -51633,7 +50972,7 @@
 				"fromSubclass": [
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -51722,7 +51061,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					}
 				]
@@ -52158,7 +51497,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -52356,7 +51695,7 @@
 				"fromSubclass": [
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -52476,7 +51815,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -52546,7 +51885,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -52575,7 +51914,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -53074,7 +52413,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -53172,7 +52511,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -53743,7 +53082,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -53927,7 +53266,7 @@
 				"fromSubclass": [
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -53938,7 +53277,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -53950,7 +53289,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -54188,7 +53527,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -54628,7 +53967,7 @@
 				"fromSubclass": [
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -54692,7 +54031,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					}
 				],
@@ -54802,7 +54141,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -54953,7 +54292,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					}
 				]
@@ -55075,7 +54414,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -55200,7 +54539,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					}
 				]
@@ -55367,7 +54706,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					}
 				],
@@ -55904,7 +55243,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -56277,7 +55616,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -56362,7 +55701,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -56545,7 +55884,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					}
 				]
@@ -56591,7 +55930,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -56844,7 +56183,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -56903,7 +56242,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -57092,7 +56431,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					}
 				],
@@ -57308,7 +56647,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -57429,7 +56768,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -57561,7 +56900,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -57779,7 +57118,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -57850,7 +57189,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -57875,7 +57214,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -57886,7 +57225,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -57897,7 +57236,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -57908,7 +57247,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -57919,7 +57258,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -58114,7 +57453,7 @@
 				"fromSubclass": [
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -58125,7 +57464,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -58298,7 +57637,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -58394,7 +57733,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -58460,7 +57799,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					}
 				]
@@ -58740,7 +58079,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -58807,7 +58146,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -58961,7 +58300,7 @@
 				"fromSubclass": [
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -59060,7 +58399,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -59379,7 +58718,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -59536,7 +58875,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -59859,7 +59198,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -59874,7 +59213,7 @@
 				"fromSubclass": [
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -60010,7 +59349,7 @@
 				"fromSubclass": [
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -60123,7 +59462,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					}
 				]
@@ -60187,7 +59526,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					}
 				],
@@ -60280,7 +59619,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -60457,7 +59796,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					}
 				],
@@ -60814,7 +60153,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -60833,7 +60172,7 @@
 				"fromSubclass": [
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -61235,7 +60574,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -61260,7 +60599,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -61642,7 +60981,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					}
 				]
@@ -61805,7 +61144,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -61836,7 +61175,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -61847,7 +61186,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -61858,7 +61197,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -61869,7 +61208,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -61975,7 +61314,7 @@
 				"fromSubclass": [
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -62055,7 +61394,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -62449,7 +61788,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -62821,7 +62160,7 @@
 				"fromSubclass": [
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -62875,7 +62214,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -62949,7 +62288,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -62968,7 +62307,7 @@
 				"fromSubclass": [
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -63054,7 +62393,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -63141,7 +62480,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -63936,7 +63275,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					}
 				],
@@ -64308,14 +63647,14 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					}
 				],
 				"fromSubclass": [
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -64400,7 +63739,7 @@
 				"fromSubclass": [
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -64466,7 +63805,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -64831,7 +64170,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -64908,7 +64247,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -65059,7 +64398,7 @@
 				"fromSubclass": [
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -65294,7 +64633,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					}
 				],
@@ -65645,7 +64984,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -66093,7 +65432,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -66114,7 +65453,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -66203,7 +65542,7 @@
 				"fromSubclass": [
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -66575,7 +65914,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -66667,7 +66006,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -66731,7 +66070,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -66752,7 +66091,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -66852,7 +66191,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -66938,7 +66277,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -67019,7 +66358,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					}
 				]
@@ -67645,7 +66984,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					}
 				]
@@ -67853,7 +67192,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -67876,7 +67215,7 @@
 				"fromSubclass": [
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -68043,7 +67382,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -68102,7 +67441,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -68183,7 +67522,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -68704,7 +68043,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					}
 				]
@@ -68908,7 +68247,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					}
 				]
@@ -69016,7 +68355,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -69131,7 +68470,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -69236,7 +68575,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -69705,7 +69044,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -69750,7 +69089,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -69761,7 +69100,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -70213,7 +69552,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -70558,7 +69897,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					}
 				]
@@ -70704,7 +70043,7 @@
 				"fromSubclass": [
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -71013,7 +70352,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -71038,7 +70377,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -71121,7 +70460,7 @@
 				"fromSubclass": [
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -71247,7 +70586,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -71445,7 +70784,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -71534,7 +70873,7 @@
 				"fromSubclass": [
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -71545,7 +70884,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -71556,7 +70895,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -71625,7 +70964,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -71646,7 +70985,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -71657,7 +70996,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -71995,7 +71334,7 @@
 				"fromSubclass": [
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -72006,7 +71345,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -72067,7 +71406,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -72082,7 +71421,7 @@
 				"fromSubclass": [
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -72093,7 +71432,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -72165,7 +71504,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -72198,7 +71537,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -72343,7 +71682,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					}
 				]
@@ -72508,7 +71847,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -72572,7 +71911,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -72773,7 +72112,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					}
 				]
@@ -73477,7 +72816,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -73609,7 +72948,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -73814,7 +73153,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					}
 				]
@@ -73860,7 +73199,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -73881,7 +73220,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -74045,7 +73384,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					}
 				]
@@ -74226,7 +73565,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					}
 				]
@@ -74551,7 +73890,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -74826,7 +74165,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -74845,7 +74184,7 @@
 				"fromSubclass": [
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -74856,7 +74195,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -74930,7 +74269,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					}
 				]
@@ -75093,7 +74432,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -75116,7 +74455,7 @@
 				"fromSubclass": [
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -75188,7 +74527,7 @@
 						"source": "PHB_Esp"
 					},
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
@@ -75207,7 +74546,7 @@
 				"fromSubclass": [
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -75218,7 +74557,7 @@
 					},
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -75317,7 +74656,7 @@
 				"fromSubclass": [
 					{
 						"class": {
-							"name": "Druid",
+							"name": "Druida",
 							"source": "PHB_Esp"
 						},
 						"subclass": {
@@ -75442,7 +74781,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					}
 				]
@@ -75500,7 +74839,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Druid",
+						"name": "Druida",
 						"source": "PHB_Esp"
 					},
 					{
