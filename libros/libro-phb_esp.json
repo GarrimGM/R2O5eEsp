@@ -15129,7 +15129,7 @@
             },
             "startingEquipment": {
                 "additionalFromBackground": true,
-                "default": ["(a) un {@item Estoque # Rapier|phb_esp|estoque}, (b) una {@item Espada larga # Longsword|phb_esp|espada larga} o (c) cualquier {@filter simple arma sencilla|items|source=phb_esp|type=simple weapon}", "(a) un {@item Paquete de diplomático # Diplomat's Pack|phb_esp|paquete de diplomático} o (b) un {@item Paquete de artista # Entertainer's Pack|phb_esp|paquete de artista}", "(a) un {@item Flauta # Flute|phb_esp|flauta} o (b) cualquier otro {@filter instrumento musical|items|miscellaneous=mundane|type=instrumento}", "{@item Armadura de cuero # Leather Armor|phb_esp|armadura de cuero} y una {@item Daga # Dagger|phb_esp|daga}"],
+                "default": ["(a) un {@item Estoque # Rapier|phb_esp|estoque}, (b) una {@item Espada larga # Longsword|phb_esp|espada larga} o (c) cualquier {@filter simple arma sencilla|items|source=phb_esp|type=simple weapon}", "(a) un {@item Paquete de diplomático # Diplomat's Pack|phb_esp|paquete de diplomático} o (b) un {@item Paquete de artista # Entertainer's Pack|phb_esp|paquete de artista}", "(a) un {@item Flauta # Flute|phb_esp|flauta} o (b) cualquier otro {@filter instrumento musical|items|miscellaneous=mundane|type=Instrumento}", "{@item Armadura de cuero # Leather Armor|phb_esp|armadura de cuero} y una {@item Daga # Dagger|phb_esp|daga}"],
                 "goldAlternative": "{@dice 5d4×10|5d4 × 10|Starting Gold}"
             },
             "multiclassing": {
@@ -34167,7 +34167,7 @@
 		},
 		{
 			"name": "Cerbatana # Blowgun",
-			"type": "R",
+			"type": "R_ESP",
 			"weapon": true,
 			"weaponCategory": "Martial",
 			"rarity": "none",
@@ -34176,13 +34176,14 @@
 			"dmg1": "1",
 			"dmgType": "P",
 			"property": [
-				"R_TYPE_ESP",
 				"A_ESP",
 				"LD_ESP"
 			],
 			"range": "25/100",
+			"ammoType": "Dardo de cerbatana # Blowgun Needle|phb_esp|dardo de cerbatana",
 			"source": "PHB_Esp",
-			"page": 149
+			"page": 149,
+			"srd": true
 		},
 		{
 			"name": "Dardo de cerbatana # Blowgun Needle",
@@ -35161,13 +35162,10 @@
 		},
 		{
 			"name": "Suministros de alquimista # Alchemist's Supplies",
-			"type": "AT",
+			"type": "AT_ESP",
 			"rarity": "none",
 			"value": 5000,
 			"weight": 8,
-			"property": [
-				"AT_TYPE_ESP"
-			],
 			"source": "PHB_Esp",
 			"page": 154,
 			"additionalSources": [
@@ -35238,6 +35236,12 @@
 							"Neutralize acid",
 							"20"
 						]
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
 					]
 				}
 			]
@@ -35439,13 +35443,10 @@
 		},
 		{
 			"name": "Suministros de cervecero # Brewer's Supplies",
-			"type": "AT",
+			"type": "AT_ESP",
 			"rarity": "none",
 			"value": 2000,
 			"weight": 9,
-			"property": [
-				"AT_TYPE_ESP"
-			],
 			"source": "PHB_Esp",
 			"page": 154,
 			"additionalSources": [
@@ -35516,6 +35517,12 @@
 							"20"
 						]
 					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
+					]
 				}
 			],
 			"srd": true
@@ -35579,13 +35586,10 @@
 		},
 		{
 			"name": "Suministros de calígrafo # Calligrapher's Supplies",
-			"type": "AT",
+			"type": "AT_ESP",
 			"rarity": "none",
 			"value": 1000,
 			"weight": 5,
-			"property": [
-				"AT_TYPE_ESP"
-			],
 			"source": "PHB_Esp",
 			"page": 154,
 			"additionalSources": [
@@ -35653,6 +35657,12 @@
 							"20"
 						]
 					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
+					]
 				}
 			],
 			"srd": true
@@ -35719,13 +35729,10 @@
 		},
 		{
 			"name": "Herramientas de carpintero # Carpenter's Tools",
-			"type": "AT",
+			"type": "AT_ESP",
 			"rarity": "none",
 			"value": 800,
 			"weight": 6,
-			"property": [
-				"AT_TYPE_ESP"
-			],
 			"source": "PHB_Esp",
 			"page": 154,
 			"additionalSources": [
@@ -35814,6 +35821,12 @@
 							"20"
 						]
 					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
+					]
 				}
 			],
 			"srd": true
@@ -35840,13 +35853,10 @@
 		},
 		{
 			"name": "Herramientas de cartógrafo # Cartographer's Tools",
-			"type": "AT",
+			"type": "AT_ESP",
 			"rarity": "none",
 			"value": 1500,
 			"weight": 6,
-			"property": [
-				"AT_TYPE_ESP"
-			],
 			"source": "PHB_Esp",
 			"page": 154,
 			"additionalSources": [
@@ -35920,6 +35930,12 @@
 							"Fill in a missing part of a map",
 							"20"
 						]
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
 					]
 				}
 			],
@@ -36019,13 +36035,10 @@
 		},
 		{
 			"name": "Herramientas de zapatero # Cobbler's Tools",
-			"type": "AT",
+			"type": "AT_ESP",
 			"rarity": "none",
 			"value": 500,
 			"weight": 5,
-			"property": [
-				"AT_TYPE_ESP"
-			],
 			"source": "PHB_Esp",
 			"page": 154,
 			"additionalSources": [
@@ -36092,6 +36105,12 @@
 							"15"
 						]
 					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
+					]
 				}
 			],
 			"srd": true
@@ -36121,13 +36140,10 @@
 		},
 		{
 			"name": "Útiles de cocinero # Cook's Utensils",
-			"type": "AT",
+			"type": "AT_ESP",
 			"rarity": "none",
 			"value": 100,
 			"weight": 8,
-			"property": [
-				"AT_TYPE_ESP"
-			],
 			"source": "PHB_Esp",
 			"page": 154,
 			"additionalSources": [
@@ -36201,6 +36217,12 @@
 							"Create a gourmet meal",
 							"15"
 						]
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
 					]
 				}
 			],
@@ -36309,14 +36331,17 @@
 		},
 		{
 			"name": "Dados # Dice Set",
-			"type": "GS",
+			"type": "GS_ESP",
 			"rarity": "none",
 			"value": 10,
-			"property": [
-				"GS_TYPE_ESP"
-			],
 			"source": "PHB_Esp",
 			"page": 154,
+			"additionalSources": [
+				{
+					"source": "XGE",
+					"page": 81
+				}
+			],
 			"srd": true
 		},
 		{
@@ -36462,15 +36487,18 @@
 		},
 		{
 			"name": "Ajedrez de Dragón # Dragonchess Set",
-			"type": "GS",
+			"type": "GS_ESP",
 			"rarity": "none",
 			"value": 100,
 			"weight": 0.5,
-			"property": [
-				"GS_TYPE_ESP"
-			],
 			"source": "PHB_Esp",
-			"page": 154
+			"page": 154,
+			"additionalSources": [
+				{
+					"source": "XGE",
+					"page": 81
+				}
+			]
 		},
 		{
 			"name": "Tambor # Drum",
@@ -36838,13 +36866,10 @@
 		},
 		{
 			"name": "Herramientas de soplador de vidrio # Glassblower's Tools",
-			"type": "AT",
+			"type": "AT_ESP",
 			"rarity": "none",
 			"value": 3000,
 			"weight": 5,
-			"property": [
-				"AT_TYPE_ESP"
-			],
 			"source": "PHB_Esp",
 			"page": 154,
 			"additionalSources": [
@@ -36903,6 +36928,12 @@
 							"Determine what a glass object once held",
 							"20"
 						]
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
 					]
 				}
 			],
@@ -37242,13 +37273,10 @@
 		},
 		{
 			"name": "Herramientas de joyero # Jeweler's Tools",
-			"type": "AT",
+			"type": "AT_ESP",
 			"rarity": "none",
 			"value": 2500,
 			"weight": 2,
-			"property": [
-				"AT_TYPE_ESP"
-			],
 			"source": "PHB_Esp",
 			"page": 154,
 			"additionalSources": [
@@ -37308,6 +37336,12 @@
 							"20"
 						]
 					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
+					]
 				}
 			],
 			"srd": true
@@ -37353,13 +37387,10 @@
 		},
 		{
 			"name": "Herramientas de curtidor # Leatherworker's Tools",
-			"type": "AT",
+			"type": "AT_ESP",
 			"rarity": "none",
 			"value": 500,
 			"weight": 5,
-			"property": [
-				"AT_TYPE_ESP"
-			],
 			"source": "PHB_Esp",
 			"page": 154,
 			"additionalSources": [
@@ -37418,6 +37449,12 @@
 							"Determine a leather item's history",
 							"20"
 						]
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
 					]
 				}
 			],
@@ -37519,13 +37556,10 @@
 		},
 		{
 			"name": "Herramientas de albañil # Mason's Tools",
-			"type": "AT",
+			"type": "AT_ESP",
 			"rarity": "none",
 			"value": 1000,
 			"weight": 8,
-			"property": [
-				"AT_TYPE_ESP"
-			],
 			"source": "PHB_Esp",
 			"page": 154,
 			"additionalSources": [
@@ -37591,6 +37625,12 @@
 							"Find a weak point in a stone wall",
 							"15"
 						]
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
 					]
 				}
 			],
@@ -37768,13 +37808,10 @@
 		},
 		{
 			"name": "Suministros de pintor # Painter's Supplies",
-			"type": "AT",
+			"type": "AT_ESP",
 			"rarity": "none",
 			"value": 1000,
 			"weight": 5,
-			"property": [
-				"AT_TYPE_ESP"
-			],
 			"source": "PHB_Esp",
 			"page": 154,
 			"additionalSources": [
@@ -37833,6 +37870,12 @@
 							"Create a painting with a hidden message",
 							"20"
 						]
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
 					]
 				}
 			],
@@ -37978,14 +38021,17 @@
 		},
 		{
 			"name": "Naipes # Playing Card Set",
-			"type": "GS",
+			"type": "GS_ESP",
 			"rarity": "none",
 			"value": 50,
-			"property": [
-				"GS_TYPE_ESP"
-			],
 			"source": "PHB_Esp",
 			"page": 154,
+			"additionalSources": [
+				{
+					"source": "XGE",
+					"page": 81
+				}
+			],
 			"srd": true
 		},
 		{
@@ -38100,13 +38146,10 @@
 		},
 		{
 			"name": "Herramientas de alfarero # Potter's Tools",
-			"type": "AT",
+			"type": "AT_ESP",
 			"rarity": "none",
 			"value": 1000,
 			"weight": 3,
-			"property": [
-				"AT_TYPE_ESP"
-			],
 			"source": "PHB_Esp",
 			"page": 154,
 			"additionalSources": [
@@ -38169,6 +38212,12 @@
 							"Find a weak point in a ceramic object",
 							"20"
 						]
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
 					]
 				}
 			],
@@ -38517,13 +38566,10 @@
 		},
 		{
 			"name": "Herramientas de herrero # Smith's Tools",
-			"type": "AT",
+			"type": "AT_ESP",
 			"rarity": "none",
 			"value": 2000,
 			"weight": 8,
-			"property": [
-				"AT_TYPE_ESP"
-			],
 			"source": "PHB_Esp",
 			"page": 154,
 			"additionalSources": [
@@ -38586,6 +38632,12 @@
 							"Sunder a nonmagical metal object",
 							"15"
 						]
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
 					]
 				}
 			],
@@ -38755,14 +38807,17 @@
 		},
 		{
 			"name": "Apuesta de Tres Dragones # Three-Dragon Ante Set",
-			"type": "GS",
+			"type": "GS_ESP",
 			"rarity": "none",
 			"value": 100,
-			"property": [
-				"GS_TYPE_ESP"
-			],
 			"source": "PHB_Esp",
-			"page": 154
+			"page": 154,
+			"additionalSources": [
+				{
+					"source": "XGE",
+					"page": 81
+				}
+			]
 		},
 		{
 			"name": "Yesquero # Tinderbox",
@@ -38779,13 +38834,10 @@
 		},
 		{
 			"name": "Herramientas de manitas # Tinker's Tools",
-			"type": "AT",
+			"type": "AT_ESP",
 			"rarity": "none",
 			"value": 5000,
 			"weight": 10,
-			"property": [
-				"AT_TYPE_ESP"
-			],
 			"source": "PHB_Esp",
 			"page": 154,
 			"additionalSources": [
@@ -38848,6 +38900,12 @@
 							"Improvise a temporary item using scraps",
 							"20"
 						]
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
 					]
 				}
 			],
@@ -39402,13 +39460,10 @@
 		},
 		{
 			"name": "Herramientas de tejedor # Weaver's Tools",
-			"type": "AT",
+			"type": "AT_ESP",
 			"rarity": "none",
 			"value": 100,
 			"weight": 5,
-			"property": [
-				"AT_TYPE_ESP"
-			],
 			"source": "PHB_Esp",
 			"page": 154,
 			"additionalSources": [
@@ -39479,6 +39534,12 @@
 							"15"
 						]
 					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
+					]
 				}
 			],
 			"srd": true
@@ -39507,13 +39568,10 @@
 		},
 		{
 			"name": "Herramientas de ebanista # Woodcarver's Tools",
-			"type": "AT",
+			"type": "AT_ESP",
 			"rarity": "none",
 			"value": 100,
 			"weight": 5,
-			"property": [
-				"AT_TYPE_ESP"
-			],
 			"source": "PHB_Esp",
 			"page": 154,
 			"additionalSources": [
@@ -39579,6 +39637,12 @@
 							"Carve an intricate pattern in wood",
 							"15"
 						]
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
 					]
 				}
 			],
@@ -39703,7 +39767,7 @@
             "type": "INS_ESP",
             "rarity": "none",
 			"entries": [
-				"Existen múltiples instrumentos musicales, como se detalla a continuación:",
+				"Existen múltiples variaciones de este elemento, como se detalla a continuación:",
 				{
 					"type": "list",
 					"items": [
@@ -39723,30 +39787,100 @@
 		},
 		{
 			"name": "Juegos # Gaming Set",
-			"type": "GS",
+			"type": "GS_ESP",
 			"rarity": "none",
-			"property": [
-				"GS_COMPLETE_TYPE_ESP"
-			],
 			"source": "PHB_Esp",
 			"page": 154,
-			"srd": true
+			"additionalSources": [
+				{
+					"source": "XGE",
+					"page": 81
+				}
+			],
+			"srd": true,
+			"entries": [
+				"Existen múltiples variaciones de este elemento, como se detalla a continuación:",
+				{
+					"type": "list",
+					"items": [
+						"{@item Dados # Dice Set|PHB_Esp|Dados}",
+						"{@item Ajedrez de Dragón # Dragonchess Set|PHB_Esp|Ajedrez de Dragón}",
+						"{@item Naipes # Playing Card Set|PHB_Esp|Naipes}",
+						"{@item Apuesta de Tres Dragones # Three-Dragon Ante Set|PHB_Esp|Apuesta de Tres Dragones}"
+					]
+				}
+			]
 		}
 	],
-	"itemGroup": [	
-	],
 	"itemType": [{
-            "abbreviation": "AT",
+            "abbreviation": "AT_ESP",
             "source": "PHB_Esp",
             "page": 154,
-            "name": "Artisan's Tools",
-            "entries": ["These special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency."]
+            "name": "Herramientas de artesano"
         }, {
-            "abbreviation": "GS",
+            "abbreviation": "GS_ESP",
             "source": "PHB_Esp",
             "page": 154,
-            "name": "Gaming Set",
-            "entries": ["If you are proficient with a gaming set, you can add your proficiency bonus to ability checks you make to play a game with that set. Each type of gaming set requires a separate proficiency."]
+            "name": "Juegos",
+            "entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
+					]
+				},
+				"Proficiency with a gaming set applies to one type of game, such as Three-Dragon Ante or games of chance that use dice.",
+				{
+					"type": "entries",
+					"name": "Components",
+					"entries": [
+						"A gaming set has all the pieces needed to play a specific game or type of game, such as a complete deck of cards or a board and tokens."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "History",
+					"entries": [
+						"Your mastery of a game includes knowledge of its history, as well as of important events it was connected to or prominent historical figures involved with it."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Insight",
+					"entries": [
+						"Playing games with someone is a good way to gain understanding of their personality, granting you a better ability to discern their lies from their truths and read their mood."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sleight of Hand",
+					"entries": [
+						"Sleight of Hand is a useful skill for cheating at a game, as it allows you to swap pieces, palm cards, or alter a die roll. Alternatively, engrossing a target in a game by manipulating the components with dexterous movements is a great distraction for a pickpocketing attempt."
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Gaming Set",
+					"colLabels": [
+						"Activity",
+						"DC"
+					],
+					"colStyles": [
+						"col-10",
+						"col-2 text-center"
+					],
+					"rows": [
+						[
+							"Catch a player cheating",
+							"15"
+						],
+						[
+							"Gain insight into an opponent's personality",
+							"15"
+						]
+					]
+				}
+			]
         }, {
             "abbreviation": "INS_ESP",
             "source": "PHB_Esp",
@@ -39805,15 +39939,18 @@
 				}
 			]
         }, {
-            "abbreviation": "R",
+            "abbreviation": "R_ESP",
             "source": "PHB_Esp",
             "page": 146,
-            "entries": [{
-                    "type": "entries",
-                    "name": "Range",
-                    "entries": ["A weapon that can be used to make a ranged attack has a range shown in parentheses after the ammunition or thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second indicates the weapon's maximum range. When attacking a target beyond normal range, you have disadvantage on the attack roll. You can't attack a target beyond the weapon's long range."]
-                }
-            ]
+            "entries": [
+				{
+					"type": "entries",
+					"name": "Alcance",
+					"entries": [
+						"Las armas que se pueden utilizar para hacer ataques a distancia muestran su alcance entre paréntesis, justo después de las propiedades \"munición\" o \"arrojadiza\". El alcance está compuesto de dos números: el primero es el alcance normal y el segundo el alcance largo. Ambos están expresados en pies. Cuando ataques a un objetivo que esté más allá del alcance normal tendrás desventaja en la tirada de ataque y no podrás atacar a un objeto que este más allá del alcance largo."
+					]
+				}
+			]
         }, {
             "abbreviation": "TG",
             "source": "PHB_Esp",
