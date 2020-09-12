@@ -14781,7 +14781,7 @@
                 ], [{
                         "name": "Mejora de Característica",
                         "entries": [
-							"Cuando asciendas al nivel 4 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.", 
+							"Cuando alcances el nivel 4 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.", 
 							"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
 						]
                     }
@@ -14809,7 +14809,7 @@
                 ], [{
                         "name": "Mejora de Característica",
                         "entries": [
-							"Cuando asciendas al nivel 8 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.", 
+							"Cuando alcances el nivel 8 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.", 
 							"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
 						]
                     }
@@ -14835,7 +14835,7 @@
                 ], [{
                         "name": "Mejora de Característica",
                         "entries": [
-							"Cuando asciendas al nivel 12 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.", 
+							"Cuando alcances el nivel 12 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.", 
 							"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
 						]
                     }
@@ -14860,7 +14860,7 @@
                 ], [{
                         "name": "Mejora de Característica",
                         "entries": [
-							"Cuando asciendas al nivel 16 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.", 
+							"Cuando alcances el nivel 16 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.", 
 							"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
 						]
                     }
@@ -14875,7 +14875,7 @@
                 ], [{
                         "name": "Mejora de Característica",
                         "entries": [
-							"Cuando asciendas al nivel 19 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.", 
+							"Cuando alcances el nivel 19 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.", 
 							"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
 						]
                     }
@@ -15135,7 +15135,7 @@
                 "default": [
 					"(a) un {@item Estoque # Rapier|phb_esp|estoque}, (b) una {@item Espada larga # Longsword|phb_esp|espada larga} o (c) cualquier {@filter simple arma sencilla|items|source=phb_esp|type=simple weapon}", 
 					"(a) un {@item Paquete de diplomático # Diplomat's Pack|phb_esp|paquete de diplomático} o (b) un {@item Paquete de artista # Entertainer's Pack|phb_esp|paquete de artista}", 
-					"(a) un {@item Flauta # Flute|phb_esp|flauta} o (b) cualquier otro {@filter instrumento musical|items|miscellaneous=mundane|type=instrument}", 
+					"(a) un {@item Flauta # Flute|phb_esp|flauta} o (b) cualquier otro {@filter instrumento musical|items|miscellaneous=mundane|type=instrumento}", 
 					"{@item Armadura de cuero # Leather Armor|phb_esp|armadura de cuero} y una {@item Daga # Dagger|phb_esp|daga}"],
                 "goldAlternative": "{@dice 5d4×10|5d4 × 10|Starting Gold}"
             },
@@ -16919,213 +16919,254 @@
                 }
             },
             "classFeatures": [[{
-                        "name": "Fighting Style",
-                        "entries": ["You adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take the same Fighting Style option more than once, even if you get to choose again.", {
+                        "name": "Estilo de Combate",
+                        "entries": ["Adoptas un estilo de combate concreto como tu especialidad. Elige una de las siguientes opciones que aparecen a continuación. No puedes escoger el mismo Estilo de Combate más de una vez, incluso aunque luego puedas elegir de nuevo un Estilo de Combate.", {
                                 "type": "options",
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Archery",
-                                        "entries": ["You gain a +2 bonus to attack rolls you make with ranged weapons."]
+                                        "name": "Combate con Armas a Dos Manos",
+                                        "entries": ["Si sacas un 1 o un 2 en alguno de los dados de daño de un ataque hecho con un arma cuerpo a cuerpo que empuñes con las dos manos, puedes volver a tirar el dado en cuestión. Debes usar el nuevo resultado, incluso aunque este sea un 1 o un 2. Para poder obtener este beneficio el arma debe poseer la propiedad \"versátil\" o \"a dos manos\"."]
                                     }, {
                                         "type": "entries",
-                                        "name": "Defense",
-                                        "entries": ["While you are wearing armor, you gain a +1 bonus to AC."]
+                                        "name": "Combate con Dos Armas",
+                                        "entries": ["Cuando estés combatiendo con dos armas, puedes añadir tu modificador por característica al daño del segundo ataque."]
                                     }, {
                                         "type": "entries",
-                                        "name": "Dueling",
-                                        "entries": ["When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon."]
+                                        "name": "Defensa",
+                                        "entries": ["Recibes un + 1 a la CA cuando lleves puesta cualquier armadura."]
                                     }, {
                                         "type": "entries",
-                                        "name": "Great Weapon Fighting",
-                                        "entries": ["When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit."]
+                                        "name": "Duelo",
+                                        "entries": ["Cuando empuñes una única arma cuerpo a cuerpo que solo requiera de una mano para usarse recibes un +2 a tus tiradas de daño con esa arma."]
                                     }, {
                                         "type": "entries",
-                                        "name": "Protection",
-                                        "entries": ["When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield."]
+                                        "name": "Protección",
+                                        "entries": ["Cuando una criatura que puedas ver ataque a un objetivo que esté a 5 pies o menos de ti y no seas tú mismo, puedes utilizar tu reacción para dar desventaja a la tirada de ataque. Debes estar embrazando un escudo."]
                                     }, {
                                         "type": "entries",
-                                        "name": "Two-Weapon Fighting",
-                                        "entries": ["When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack."]
+                                        "name": "Tiro con Arco",
+                                        "entries": ["Recibes un bonificador de +2 a las tiradas de ataque con armas a distancia."]
                                     }
                                 ]
                             }
                         ]
                     }, {
-                        "name": "Second Wind",
-                        "entries": ["You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to {@dice 1d10} + your fighter level.", "Once you use this feature, you must finish a short or long rest before you can use it again."]
+                        "name": "Tomar Aliento",
+                        "entries": [
+							"Posees una pequeña reserva de energías, a la que puedes recurrir para protegerte del peligro. Puedes usar una acción adicional durante tu turno para recuperar tantos puntos de golpe como {@dice 1d10} + tu nivel de guerrero.", 
+							"Una vez utilizado este rasgo, deberás terminar un descanso corto o largo para poder volver a emplearlo de nuevo."
+							]
                     }
                 ], [{
-                        "name": "Action Surge",
-                        "entries": ["Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action.", "Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn."]
+                        "name": "Acción Súbita",
+                        "entries": [
+							"A partir de nivel 2, puedes superar tus propios límites durante un instante. Durante tu turno, puedes llevar a cabo una acción más, además de tu acción y acción adicional habituales.", 
+							"Una vez utilizado este rasgo, deberás terminar un descanso corto o largo para poder volver a emplearlo de nuevo. A partir de nivel 17, puedes usar este rasgo dos veces antes de descansar, pero solo una vez por turno."
+						]
                     }
                 ], [{
-                        "name": "Martial Archetype",
-                        "entries": ["At 3rd level, you choose an archetype from the list available that you strive to emulate in your combat styles and techniques. The archetype you choose grants you features at 3rd level and again at 7th, 10th, 15th, and 18th level."],
+                        "name": "Arquetipo Marcial",
+                        "entries": ["A nivel 3, escoges un arquetipo al que aspiras emular con tu estilo y técnicas de combate. Elige entre Campeón, Maestro del Combate o Caballero Arcano. Todos ellos están detallados al final de la descripción de esta clase. Esta elección te proporciona ciertos rasgos cuando alcanzas los niveles 3, 7, 10, 15 y 18."],
                         "gainSubclassFeature": true
                     }
                 ], [{
-                        "name": "Ability Score Improvement",
-                        "entries": ["When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.", "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."]
+                        "name": "Mejora de Característica",
+                        "entries": [
+							"Cuando alcances el nivel 4 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.", 
+							"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+						]
                     }
                 ], [{
-                        "name": "Extra Attack",
-                        "entries": ["Beginning at 5th level, you can attack twice, instead of once, whenever you take the {@action Attack} action on your turn.", "The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class."]
+                        "name": "Ataque Adicional",
+                        "entries": [
+							"A partir de nivel 5, cuando lleves a cabo la acción de {@action Attack|phb_esp|Atacar} durante tu turno, podrás hacer dos ataques en lugar de uno.", 
+							"La cantidad de ataques aumenta a tres cuando alcanzas el nivel 11 de esta clase y a cuatro cuando alcanzas el 20."
+						]
                     }
                 ], [{
-                        "name": "Ability Score Improvement",
-                        "entries": ["When you reach 6th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.", "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."]
+                        "name": "Mejora de Característica",
+                        "entries": [
+							"Cuando alcances el nivel 6 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.", 
+							"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+						]
                     }
                 ], [{
-                        "name": "Martial Archetype feature",
-                        "entries": ["At 7th level, you gain a feature granted by your Martial Archetype."],
+                        "name": "Rasgo de Arquetipo Marcial",
+                        "entries": ["A nivel 7 ganas un rasgo de tu Arquetipo Marcial."],
                         "gainSubclassFeature": true
                     }
                 ], [{
-                        "name": "Ability Score Improvement",
-                        "entries": ["When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.", "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."]
+                        "name": "Mejora de Característica",
+                        "entries": [
+							"Cuando alcances el nivel 8 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.", 
+							"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+						]
                     }
                 ], [{
-                        "name": "Indomitable",
-                        "entries": ["Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can't use this feature again until you finish a long rest.", "You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level."]
+                        "name": "Indómito",
+                        "entries": [
+							"A partir de nivel 9, puedes repetir una tirada de salvación que hayas fallado, pero tendrás que quedarte con el nuevo resultado, aunque sea peor. Una vez utilizado este rasgo, deberás terminar un descanso largo para poder volver a usarlo otra vez.", 
+							"Puedes emplear este rasgo dos veces entre descansos largos cuando alcanzas el nivel 13 y tres veces entre descansos largos a partir de nivel 17."
+						]
                     }
                 ], [{
-                        "name": "Martial Archetype feature",
-                        "entries": ["At 10th level, you gain a feature granted by your Martial Archetype."],
+                        "name": "Rasgo de Arquetipo Marcial",
+                        "entries": ["A nivel 10 ganas un rasgo de tu Arquetipo Marcial."],
                         "gainSubclassFeature": true
                     }
                 ], [{
-                        "name": "Extra Attack (2)",
-                        "entries": ["At 11th level, you can attack three times whenever you take the {@action Attack} action on your turn."]
+                        "name": "Ataque Adicional (2)",
+                        "entries": ["A partir de nivel 11, pues atacar tres veces cuando lleves a cabo la acción de {@action Attack|phb_esp|Atacar} durante tu turno."]
                     }
                 ], [{
-                        "name": "Ability Score Improvement",
-                        "entries": ["When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.", "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."]
+                        "name": "Mejora de Característica",
+                        "entries": [
+							"Cuando alcances el nivel 12 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.", 
+							"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+						]
                     }
                 ], [{
-                        "name": "Indomitable (two uses)",
-                        "entries": ["At 13th level, you can use Indomitable twice between long rests."]
+                        "name": "Indómito (dos usos)",
+                        "entries": ["A partir de nivel 13, puedes usar Indómito dos veces entre descansos largos."]
                     }
                 ], [{
-                        "name": "Ability Score Improvement",
-                        "entries": ["When you reach 14th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.", "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."]
+                        "name": "Mejora de Característica",
+                        "entries": [
+							"Cuando alcances el nivel 14 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.", 
+							"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+						]
                     }
                 ], [{
-                        "name": "Martial Archetype feature",
-                        "entries": ["At 15th level, you gain a feature granted by your Martial Archetype."],
+                        "name": "Rasgo de Arquetipo Marcial",
+                        "entries": ["A nivel 15 ganas un rasgo de tu Arquetipo Marcial."],
                         "gainSubclassFeature": true
                     }
                 ], [{
-                        "name": "Ability Score Improvement",
-                        "entries": ["When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.", "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."]
+                        "name": "Mejora de Característica",
+                        "entries": [
+							"Cuando alcances el nivel 16 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.", 
+							"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+						]
                     }
                 ], [{
-                        "name": "Action Surge (two uses)",
-                        "entries": ["At 17th level, you can use Action Surge twice before a rest, but only once on the same turn."]
+                        "name": "Acción Súbita (dos usos)",
+                        "entries": ["A partir de nivel 17, puedes usar Acción Súbita dos veces antes de descansar, pero solo una vez por turno."]
                     }, {
-                        "name": "Indomitable (three uses)",
-                        "entries": ["At 17th level, you can use Indomitable three times between long rests."]
+                        "name": "Indómito (tres usos)",
+                        "entries": ["A partir de nivel 17, puedes usar Indómito tres veces entre descansos largos."]
                     }
                 ], [{
-                        "name": "Martial Archetype feature",
-                        "entries": ["At 18th level, you gain a feature granted by your Martial Archetype."],
+                        "name": "Rasgo de Arquetipo Marcial",
+                        "entries": ["A nivel 18 ganas un rasgo de tu Arquetipo Marcial."],
                         "gainSubclassFeature": true
                     }
                 ], [{
-                        "name": "Ability Score Improvement",
-                        "entries": ["When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.", "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."]
+                        "name": "Mejora de Característica",
+                        "entries": [
+							"Cuando alcances el nivel 19 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.", 
+							"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+						]
                     }
                 ], [{
-                        "name": "Extra Attack (3)",
-                        "entries": ["At 20th level, you can attack four times whenever you take the {@action Attack} action on your turn."]
+                        "name": "Ataque Adicional (3)",
+                        "entries": ["A partir de nivel 20, pues atacar cuatro veces cuando lleves a cabo la acción de {@action Attack|phb_esp|Atacar} durante tu turno."]
                     }
                 ]],
-            "subclassTitle": "Martial Archetype",
+            "subclassTitle": "Arquetipos Marciales",
             "subclasses": [{
-                    "name": "Champion",
-                    "shortName": "Champion",
+                    "name": "Campeón # Champion",
+                    "shortName": "Campeón",
                     "source": "PHB_Esp",
                     "page": 72,
                     "srd": true,
                     "subclassFeatures": [[{
-                                "name": "Champion",
-                                "entries": ["The archetypal Champion focuses on the development of raw physical power honed to deadly perfection. Those who model themselves on this archetype combine rigorous training with physical excellence to deal devastating blows.", {
+                                "name": "Campeón",
+                                "entries": ["El Campeón arquetípico se centra en desarrollar su poderío físico en bruto hasta alcanzar una perfección mortal. Aquellos que deciden emular este arquetipo combinan un riguroso entrenamiento con un estado físico excelente, que les permite dar golpes devastadores.", {
                                         "type": "entries",
-                                        "name": "Improved Critical",
-                                        "entries": ["Beginning when you choose this archetype at 3rd level, your weapon attacks score a critical hit on a roll of 19 or 20."]
+                                        "name": "Crítico Mejorado",
+                                        "entries": ["A partir del momento en el que eliges este arquetipo, a nivel 3, tus ataques con arma causarán críticos con un resultado de 19 o 20 en la tirada."]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Remarkable Athlete",
-                                        "entries": ["Starting at 7th level, you can add half your proficiency bonus (round up) to any Strength, Dexterity, or Constitution check you make that doesn't already use your proficiency bonus.", "In addition, when you make a running long jump, the distance you can cover increases by a number of feet equal to your Strength modifier."]
+                                        "name": "Atleta Sobresaliente",
+                                        "entries": [
+											"A partir de nivel 7, puedes añadir la mitad de tu bonificador por competencia (redondeado hacia abajo) a cualquier prueba de Fuerza, Destreza o Constitución que hagas que no se beneficie ya de tu bonificador por competencia.", 
+											"Además. cuando realices un salto de longitud habiendo tomado carrerilla, aumentarás la distancia que saltas en tantos pies como tu modificador por Fuerza."
+										]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Additional Fighting Style",
-                                        "entries": ["At 10th level, you can choose a second option from the Fighting Style class feature."]
+                                        "name": "Estilo de Combate Adicional",
+                                        "entries": ["A nivel 10 puedes escoger una segunda opción del rasgo Estilo de Combate."]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Superior Critical",
-                                        "entries": ["Starting at 15th level, your weapon attacks score a critical hit on a roll of 18-20."]
+                                        "name": "Crítico Superior",
+                                        "entries": ["A partir de nivel 15, tus ataques con arma causarán críticos con un resultado de 18 a 20 en la tirada."]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Survivor",
-                                        "entries": ["At 18th level, you attain the pinnacle of resilience in battle. At the start of each of your turns, you regain hit points equal to 5 + your Constitution modifier if you have no more than half of your hit points left. You don't gain this benefit if you have 0 hit points."]
+                                        "name": "Superviviente",
+                                        "entries": ["A nivel 18 alcanzas el pináculo de la resistencia en batalla. Al comienzo de cada uno de tus turnos, recuperas 5 + tu modificador por Constitución puntos de golpe si no te quedan más de la mitad de tus puntos de golpe máximos. Con todo, no puedes disfrutar de este beneficio si te quedan 0 puntos de golpe."]
                                     }
                                 ]
                             }
                         ]]
                 }, {
-                    "name": "Battle Master",
-                    "shortName": "Battle Master",
+                    "name": "Maestro del Combate # Battle Master",
+                    "shortName": "Maestro del Combate",
                     "source": "PHB_Esp",
                     "page": 73,
                     "subclassFeatures": [[{
-                                "name": "Battle Master",
-                                "entries": ["Those who emulate the archetypal Battle Master employ martial techniques passed down through generations. To a Battle Master, combat is an academic field, sometimes including subjects beyond battle such as weaponsmithing and calligraphy. Not every fighter absorbs the lessons of history, theory, and artistry that are reflected in the Battle Master archetype, but those who do are well-rounded fighters of great skill and knowledge.", {
+                                "name": "Maestro del Combate",
+                                "entries": ["Los que eligen imitar al Maestro del Combate arquetípico recurren a técnicas marciales que han sido transmitidas durante generaciones. El Maestro del Combate entiende la lucha como un campo de estudio, en el que algunos también incluyen otras disciplinas como la forja de armas o la caligrafía. No todos los combatientes interiorizan las lecciones que imparte la historia, la teoría y el arte que se ven reflejadas en el arquetipo Maestro del Combate, pero aquellos que lo hacen se convierten en luchadores equilibrados, de gran habilidad y poseedores de amplios conocimientos.", {
                                         "type": "entries",
-                                        "name": "Student of War",
-                                        "entries": ["At 3rd level, you gain proficiency with one type of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools} of your choice."]
+                                        "name": "Estudioso de la Guerra",
+                                        "entries": ["A nivel 3 ganas competencia en un tipo de {@filter herramientas de artesano|items|source=phb_esp|miscellaneous=mundane|type=Herramientas de artesano} de tu elección."]
                                     }, {
                                         "type": "entries",
-                                        "name": "Combat Superiority",
-                                        "entries": ["When you choose this archetype at 3rd level, you learn maneuvers that are fueled by special dice called superiority dice.", {
+                                        "name": "Supremacía en Combate",
+                                        "entries": ["A nivel 3, cuando escoges este arquetipo, aprendes una serie de maniobras que se alimentan de dados especiales llamados dados de supremacía.", {
                                                 "type": "entries",
                                                 "entries": [{
                                                         "type": "entries",
-                                                        "name": "Maneuvers",
-                                                        "entries": ["You learn three maneuvers of your choice, which are listed under \"Maneuvers\" below. Many maneuvers enhance an attack in some way. You can use only one maneuver per attack.", "You learn two additional maneuvers of your choice at 7th, 10th, and 15th level. Each time you learn new maneuvers, you can also replace one maneuver you know with a different one."]
+                                                        "name": "Maniobras",
+                                                        "entries": [
+															"Aprendes tres maniobras de tu elección. Puedes elegir entre las que se explican más adelante, en el apartado \"Maniobras\". Una gran parte de las maniobras mejoran un ataque de alguna forma. Solo puedes usar una maniobra por ataque.", 
+															"Adquieres dos nuevas maniobras más a tu elección cuando alcanzas los niveles 7, 10 y 15. Cada vez que aprendas una maniobra, también podrás reemplazar una de las que ya conozcas por otra distinta."
+														]
                                                     }
                                                 ]
                                             }, {
                                                 "type": "entries",
                                                 "entries": [{
                                                         "type": "entries",
-                                                        "name": "Superiority Dice",
-                                                        "entries": ["You have four superiority dice, which are {@dice d8}s. A superiority die is expended when you use it. You regain all of your expended superiority dice when you finish a short or long rest.", "You gain another superiority die at 7th level and one more at 15th level."]
+                                                        "name": "Dados de supremacía",
+                                                        "entries": [
+															"Posees cuatro dados de supremacía, todos ellos {@dice d8}. Cada vez que empleas uno de ellos, se gasta. Recuperas todos los dados de supremacía tras realizar un descanso corto o largo.", 
+															"Además, recibes un dado adicional de supremacía a nivel 7 y otro más a nivel 15."]
                                                     }
                                                 ]
                                             }, {
                                                 "type": "entries",
                                                 "entries": [{
                                                         "type": "entries",
-                                                        "name": "Saving Throws",
-                                                        "entries": ["Some of your maneuvers require your target to make a saving throw to resist the maneuver's effects. The saving throw DC is calculated as follows:", {
+                                                        "name": "Tiradas de salvación",
+                                                        "entries": ["Algunas de tus maniobras exigen a tu objetivo hacer una tirada de salvación para resistir sus efectos. La CD para estas tiradas de salvación se calcula de la siguiente forma:", {
                                                                 "type": "abilityDc",
-                                                                "name": "Maneuver",
+                                                                "name": "Maniobras",
                                                                 "attributes": ["str", "dex"]
                                                             }
                                                         ]
@@ -17135,180 +17176,138 @@
                                         ]
                                     }, {
                                         "type": "options",
-                                        "name": "Maneuvers",
+                                        "name": "Maniobras",
                                         "entries": [{
                                                 "type": "entries",
                                                 "entries": [{
                                                         "type": "entries",
-                                                        "name": "Commander's Strike",
-                                                        "entries": ["When you take the {@action Attack} action on your turn, you can forgo one of your attacks and use a bonus action to direct one of your companions to strike. When you do so, choose a friendly creature who can see or hear you and expend one superiority die. That creature can immediately use its reaction to make one weapon attack, adding the superiority die to the attack's damage roll."]
+                                                        "name": "Arremetida",
+                                                        "entries": ["Cuando ataques a una criatura con un ataque con arma cuerpo a cuerpo durante tu turno, puedes gastar un dado de supremacía para aumentar tu alcance a efectos de dicho ataque en 5 pies. Si impactas, añades tu dado de supremacía a la tirada de daño del ataque."]
                                                     }
                                                 ]
                                             }, {
                                                 "type": "entries",
                                                 "entries": [{
                                                         "type": "entries",
-                                                        "name": "Disarming Attack",
-                                                        "entries": ["When you hit a creature with a weapon attack, you can expend one superiority die to attempt to disarm the target, forcing it to drop one item of your choice that it's holding. You add the superiority die to the attack's damage roll, and the target must make a Strength saving throw. On a failed save, it drops the object you choose. The object lands at its feet."]
+                                                        "name": "Ataque Amenazador",
+                                                        "entries": ["Cuando impactes a una criatura con un ataque con arma, puedes gastar un dado de supremacía para intentar asustar al objetivo. Añades tu dado de supremacía a la tirada de daño del ataque y el objetivo debe hacer una tirada de salvación de Sabiduría. Si falla, estará {@condition frightened|phb_esp|asustado} de ti hasta el final de tu próximo turno."]
                                                     }
                                                 ]
                                             }, {
                                                 "type": "entries",
                                                 "entries": [{
                                                         "type": "entries",
-                                                        "name": "Distracting Strike",
-                                                        "entries": ["When you hit a creature with a weapon attack, you can expend one superiority die to distract the creature, giving your allies an opening. You add the superiority die to the attack's damage roll. The next attack roll against the target by an attacker other than you has advantage if the attack is made before the start of your next turn."]
+                                                        "name": "Ataque de Barrido",
+                                                        "entries": ["Cuando impactes a una criatura con un ataque con arma cuerpo a cuerpo, puedes gastar un dado de supremacía para tratar de infligir daño a otra criatura con el mismo ataque. Escoge a otra criatura que se encuentre a 5 pies o menos del objetivo original y que esté dentro de tu alcance. Si la tirada de ataque original hubiera impactado también a la segunda criatura, esta recibe una cantidad daño igual al resultado de tirar el dado de supremacía. El tipo de daño es el mismo que el causado por el ataque original."]
                                                     }
                                                 ]
                                             }, {
                                                 "type": "entries",
                                                 "entries": [{
                                                         "type": "entries",
-                                                        "name": "Evasive Footwork",
-                                                        "entries": ["When you move, you can expend one superiority die, rolling the die and adding the number rolled to your AC until you stop moving."]
+                                                        "name": "Ataque Preciso",
+                                                        "entries": ["Cuando realices un ataque con arma contra una criatura, puedes gastar un dado de supremacía para añadir el resultado de tirarlo a la tirada de ataque. Puedes usar esta maniobra tanto antes como después de hacer la tirada de ataque, pero previamente a que se apliquen los efectos de la misma."]
                                                     }
                                                 ]
                                             }, {
                                                 "type": "entries",
                                                 "entries": [{
                                                         "type": "entries",
-                                                        "name": "Feinting Attack",
-                                                        "entries": ["You can expend one superiority die and use a bonus action on your turn to feint, choosing one creature within 5 feet of you as your target. You have advantage on your next attack roll this turn against that creature. If that attack hits, add the superiority die to the attack's damage roll.", "The advantage is lost if not used on the turn you gain it."]
+                                                        "name": "Ataque Provocador",
+                                                        "entries": ["Cuando impactes a una criatura con un ataque con arma, puedes gastar un dado de supremacía para intentar provocar al objetivo para que te ataque. Añades tu dado de supremacía a la tirada de daño del ataque y la criatura debe hacer una tirada de salvación de Sabiduría. Si falla, tendrá desventaja en todas las tiradas de ataque contra cualquier objetivo que no seas tú hasta el final de tu siguiente turno."]
                                                     }
                                                 ]
                                             }, {
                                                 "type": "entries",
                                                 "entries": [{
                                                         "type": "entries",
-                                                        "name": "Goading Attack",
-                                                        "entries": ["When you hit a creature with a weapon attack, you can expend one superiority die to attempt to goad the target into attacking you. You add the superiority die to the attack's damage roll, and the target must make a Wisdom saving throw. On a failed save, the target has disadvantage on all attack rolls against targets other than you until the end of your next turn."]
+                                                        "name": "Ataque y Derribo",
+                                                        "entries": ["Cuando impactes a una criatura con un ataque con arma, puedes gastar un dado de supremacía para intentar derribarla. Añades tu dado de supremacía a la tirada de daño del ataque y, si el objetivo es Grande o más pequeño, debe hacer una tirada de salvación de Fuerza. Si falla, es {@condition prone|phb_esp|derribado}."]
                                                     }
                                                 ]
                                             }, {
                                                 "type": "entries",
                                                 "entries": [{
                                                         "type": "entries",
-                                                        "name": "Lunging Attack",
-                                                        "entries": ["When you make a melee weapon attack on your turn, you can expend one superiority die to increase your reach for that attack by 5 feet. If you hit, you add the superiority die to the attack's damage roll."]
+                                                        "name": "Ataque y Desarme",
+                                                        "entries": ["Cuando impactes a una criatura con un ataque con arma, puedes gastar un dado de supremacía para tratar de desarmar a tu oponente, obligándole a soltar un objeto de tu elección que esté sujetando. Añades tu dado de supremacía a la tirada de daño del ataque y el objetivo ha de realizar una tirada de salvación de Fuerza. Si falla, deja caer el objeto que escogiste, que cae a sus pies."]
                                                     }
                                                 ]
                                             }, {
                                                 "type": "entries",
                                                 "entries": [{
                                                         "type": "entries",
-                                                        "name": "Maneuvering Attack",
-                                                        "entries": ["When you hit a creature with a weapon attack, you can expend one superiority die to maneuver one of your comrades into a more advantageous position. You add the superiority die to the attack's damage roll, and you choose a friendly creature who can see or hear you. That creature can use its reaction to move up to half its speed without provoking opportunity attacks from the target of your attack."]
+                                                        "name": "Ataque y Distracción",
+                                                        "entries": ["Cuando impactes a una criatura con un ataque con arma, puedes gastar un dado de supremacía para intentar distraerla, dando a tus aliados una oportunidad de atacarla. Añades tu dado de supremacía a la tirada de daño del ataque y la siguiente tirada de ataque contra el objetivo, hecha por cualquiera que no seas tú, tendrá ventaja, siempre y cuando se realice antes de que empiece tu siguiente turno."]
                                                     }
                                                 ]
                                             }, {
                                                 "type": "entries",
                                                 "entries": [{
                                                         "type": "entries",
-                                                        "name": "Menacing Attack",
-                                                        "entries": ["When you hit a creature with a weapon attack, you can expend one superiority die to attempt to frighten the target. You add the superiority die to the attack's damage roll, and the target must make a Wisdom saving throw. On a failed save, it is {@condition frightened} of you until the end of your next turn."]
+                                                        "name": "Ataque y Empujón",
+                                                        "entries": ["Cuando impactes a una criatura con un ataque con arma, puedes gastar un dado de supremacía para tratar de hacer retroceder al objetivo. Añades tu dado de supremacía a la tirada de daño del ataque y, si el objetivo es Grande o más pequeño, debe realizar una tirada de salvación de Fuerza. Si falla, le empujarás hasta 15 pies en dirección contraria a ti."]
                                                     }
                                                 ]
                                             }, {
                                                 "type": "entries",
                                                 "entries": [{
                                                         "type": "entries",
-                                                        "name": "Parry",
-                                                        "entries": ["When another creature damages you with a melee attack, you can use your reaction and expend one superiority die to reduce the damage by the number you roll on your superiority die + your Dexterity modifier."]
+                                                        "name": "Ataque y Maniobra",
+                                                        "entries": ["Cuando impactes a una criatura con un ataque con arma, puedes gastar un dado de supremacía para permitir a uno de tus compañeros maniobrar para conseguir una posición ventajosa. Añade el dado de supremacía a la tirada de daño de tu ataque y elige a una criatura amistosa que pueda verte o escucharte. Dicho aliado podrá, en ese mismo instante, usar su reacción para moverse hasta la mitad de su velocidad sin provocar ataques de oportunidad por parte del objetivo de tu ataque."]
                                                     }
                                                 ]
                                             }, {
                                                 "type": "entries",
                                                 "entries": [{
                                                         "type": "entries",
-                                                        "name": "Precision Attack",
-                                                        "entries": ["When you make a weapon attack roll against a creature, you can expend one superiority die to add it to the roll. You can use this maneuver before or after making the attack roll, but before any effects of the attack are applied."]
+                                                        "name": "Contraataque",
+                                                        "entries": ["Cuando una criatura falle al intentar atacarte cuerpo a cuerpo, puedes emplear tu reacción y gastar un dado de supremacía para hacer un ataque con arma cuerpo a cuerpo contra dicha criatura. Si impactas, añades tu dado de supremacía a la tirada de daño del ataque."]
                                                     }
                                                 ]
                                             }, {
                                                 "type": "entries",
                                                 "entries": [{
                                                         "type": "entries",
-                                                        "name": "Pushing Attack",
-                                                        "entries": ["When you hit a creature with a weapon attack, you can expend one superiority die to attempt to drive the target back. You add the superiority die to the attack's damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you push the target up to 15 feet away from you."]
+                                                        "name": "Finta",
+                                                        "entries": ["Puedes gastar un dado de supremacía y usar tu acción adicional durante tu turno para realizar una finta, escogiendo a una criatura que esté a 5 pies o menos de ti como objetivo. Si haces esto, tendrás ventaja en tu siguiente tirada de ataque contra dicha criatura este turno. Si este ataque impacta, añade el dado de supremacía a la tirada de daño del ataque.", 
+														"La ventaja se pierde si no la usas en el turno que la consigues."]
                                                     }
                                                 ]
                                             }, {
                                                 "type": "entries",
                                                 "entries": [{
                                                         "type": "entries",
-                                                        "name": "Rally",
-                                                        "entries": ["On your turn, you can use a bonus action and expend one superiority die to bolster the resolve of one of your companions. When you do so, choose a friendly creature who can see or hear you. That creature gains temporary hit points equal to the superiority die roll + your Charisma modifier."]
+                                                        "name": "Juego de Pies Evasivo",
+                                                        "entries": ["Cuando te mueves, puedes utilizar un dado de supremacía para tirarlo y añadir el resultado a tu CA hasta que acabas el movimiento."]
                                                     }
                                                 ]
                                             }, {
                                                 "type": "entries",
                                                 "entries": [{
                                                         "type": "entries",
-                                                        "name": "Riposte",
-                                                        "entries": ["When a creature misses you with a melee attack, you can use your reaction and expend one superiority die to make a melee weapon attack against the creature. If you hit, you add the superiority die to the attack's damage roll."]
+                                                        "name": "Orden de Ataque",
+                                                        "entries": ["Cuando llevas a cabo la acción de {@action Attack|phb_esp|Atacar} durante tu turno, puedes renunciar a uno de tus ataques y usar tu acción adicional para ordenar a uno de tus compañeros que ataque. Para hacer esto, elige a una criatura amistosa que pueda verte o escucharte y gasta uno de tus dados de supremacía. Dicha criatura podrá, en ese mismo instante, gastar su reacción para realizar un ataque con arma, añadiendo el dado de supremacía a la tirada de daño de su ataque."]
                                                     }
                                                 ]
                                             }, {
                                                 "type": "entries",
                                                 "entries": [{
                                                         "type": "entries",
-                                                        "name": "Sweeping Attack",
-                                                        "entries": ["When you hit a creature with a melee weapon attack, you can expend one superiority die to attempt to damage another creature with the same attack. Choose another creature within 5 feet of the original target and within your reach. If the original attack roll would hit the second creature, it takes damage equal to the number you roll on your superiority die. The damage is of the same type dealt by the original attack."]
+                                                        "name": "Parada",
+                                                        "entries": ["Cuando otra criatura te hace daño con un ataque cuerpo a cuerpo, puedes emplear tu reacción y gastar un dado de supremacía para reducir dicho daño en tu modificador por Destreza + el resultado de tirar el dado de supremacía."]
                                                     }
                                                 ]
                                             }, {
                                                 "type": "entries",
                                                 "entries": [{
                                                         "type": "entries",
-                                                        "name": "Trip Attack",
-                                                        "entries": ["When you hit a creature with a weapon attack, you can expend one superiority die to attempt to knock the target down. You add the superiority die to the attack's damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you knock the target {@condition prone}."]
+                                                        "name": "Reagrupar",
+                                                        "entries": ["Durante tu turno, puedes usar una acción adicional y gastar un dado de supremacía para reforzar la determinación de uno de tus compañeros. Para hacer esto, elige a una criatura amistosa que pueda verte o escucharte. Dicha criatura obtiene tantos puntos de golpe temporales como tu modificador por Carisma + tu dado de supremacía."]
                                                     }
                                                 ]
                                             }
                                         ]
-                                    }, {
-                                        "name": "Maneuver Options",
-                                        "type": "entries",
-                                        "entries": ["{@i 1st-level feature (enhances Maneuvers)}", "If you have access to maneuvers, the following maneuvers are added to the list of options available to you. Maneuvers are available to Battle Masters and to characters who have the Superior Technique fighting style or the Martial Adept feat.", {
-                                                "type": "entries",
-                                                "entries": [{
-                                                        "type": "options",
-                                                        "entries": [{
-                                                                "type": "entries",
-                                                                "name": "Ambush",
-                                                                "entries": ["When you make a Dexterity ({@skill Stealth}) check or an initiative roll, you can expend one superiority die and add the die to the roll."]
-                                                            }, {
-                                                                "type": "entries",
-                                                                "name": "Bait and Switch",
-                                                                "entries": ["When you're within 5 feet of an ally on your turn, you can expend one superiority die and switch places with that ally, provided you spend at least 5 feet of movement. This movement doesn't provoke opportunity attacks.", "Roll the superiority die. Until the start of your next turn, the ally gains a bonus to AC equal to the number rolled."]
-                                                            }, {
-                                                                "type": "entries",
-                                                                "name": "Brace",
-                                                                "entries": ["When an enemy you can see moves within 5 feet of you, you can use your reaction to expend one superiority die and make one weapon attack against that creature. If the attack hits, add the superiority die to the attack's damage roll."]
-                                                            }, {
-                                                                "type": "entries",
-                                                                "name": "Restraining Strike",
-                                                                "entries": ["Immediately after you hit a creature with a melee weapon attack on your turn, you can expend one superiority die and use a bonus action to grapple the target (see chapter 9 in the Player's Handbook for rules on grappling). Add the superiority die to your Strength ({@skill Athletics}) check. The target is also restrained while grappled in this way."]
-                                                            }, {
-                                                                "type": "entries",
-                                                                "name": "Silver Tongue",
-                                                                "entries": ["When you make a Charisma ({@skill Deception}) check or a Charisma ({@skill Persuasion}) check, you can expend one superiority die, and add the superiority die to the ability check."]
-                                                            }, {
-                                                                "type": "entries",
-                                                                "name": "Snipe",
-                                                                "entries": ["As a bonus action, you can expend one superiority die and make a ranged weapon attack. You can draw a thrown weapon as part of making this attack. If you hit, add the superiority die to the attack's damage roll."]
-                                                            }, {
-                                                                "type": "entries",
-                                                                "name": "Studious Eye",
-                                                                "entries": ["When you make a Wisdom ({@skill Insight}) check or an Intelligence ({@skill Investigation}) check, you can expend one superiority die, and add the superiority die to the ability check."]
-                                                            }
-                                                        ]
-                                                    }
-                                                ]
-                                            }
-                                        ],
-                                        "source": "UAClassFeatureVariants",
-                                        "page": 5
                                     }
                                 ]
                             }
@@ -17370,15 +17369,15 @@
                             }
                         ]]
                 }, {
-                    "name": "Eldritch Knight",
-                    "shortName": "Eldritch Knight",
+                    "name": "Caballero Arcano # Eldritch Knight",
+                    "shortName": "Caballero Arcano",
                     "source": "PHB_Esp",
                     "page": 74,
                     "spellcastingAbility": "int",
                     "casterProgression": "1/3",
                     "subclassTableGroups": [{
                             "subclasses": [{
-                                    "name": "Eldritch Knight",
+                                    "name": "Caballero Arcano",
                                     "source": "PHB_Esp"
                                 }
                             ],
@@ -17396,7 +17395,7 @@
                         }
                     ],
                     "subclassFeatures": [[{
-                                "name": "Eldritch Knight",
+                                "name": "Caballero Arcano",
                                 "entries": ["The archetypal Eldritch Knight combines the martial mastery common to all fighters with a careful study of magic. Eldritch Knights use magical techniques similar to those practiced by wizards. They focus their study on two of the eight schools of magic—abjuration and evocation. Abjuration spells grant an Eldritch Knight additional protection in battle, and evocation spells deal damage to many foes at once, extending the fighter's reach in combat. These knights learn a comparatively small number of spells, committing them to memory instead of keeping them in a spellbook.", {
                                         "type": "entries",
                                         "name": "Spellcasting",
@@ -17484,21 +17483,34 @@
             "fluff": [{
                     "name": "Guerrero",
                     "type": "section",
-                    "entries": ["A human in clanging plate armor holds her shield before her as she runs toward the massed goblins. An elf behind her, clad in studded leather armor, peppers the goblins with arrows loosed from his exquisite bow. The half-orc nearby shouts orders, helping the two combatants coordinate their assault to the best advantage.", "A dwarf in chain mail interposes his shield between the ogre's club and his companion, knocking the deadly blow aside. His companion, a half-elf in scale armor, swings two scimitars in a blinding whirl as she circles the ogre, looking for a blind spot in its defenses.", "A gladiator fights for sport in an arena, a master with his trident and net, skilled at toppling foes and moving them around for the crowd's delight—and his own tactical advantage. His opponent's sword flares with blue light an instant before she sends lightning flashing forth to smite him.", "All of these heroes are fighters, perhaps the most diverse class of characters in the worlds of Dungeons & Dragons. Questing knights, conquering overlords, royal champions, elite foot soldiers, hardened mercenaries, and bandit kings—as fighters, they all share an unparalleled mastery with weapons and armor, and a thorough knowledge of the skills of combat. And they are well acquainted with death, both meting it out and staring it defiantly in the face.", {
+                    "entries": [
+						"Una humana alza su escudo mientras carga contra una horda de goblins, acompañada por el traqueteo de su pesada armadura de placas. Tras ella se encuentra un elfo que, protegido por una armadura de cuero tachonado, asaeta a los goblins con las flechas que lanza desde su bellísimo arco. Les da órdenes una semiorca, ayudándoles así a coordinar su asalto para sacar la máxima ventaja posible.", 
+						"Un enano cubierto por una cota de malla interpone su escudo entre el garrote de un ogro y sus compañeros, desviando un golpe mortal. Su compañera, una semielfa con armadura de escamas, mueve sus dos cimitarras en un remolino cegador mientras rodea al ogro, buscando una brecha en sus defensas.", 
+						"Un gladiador combate por deporte en la arena. Es un maestro del tridente y la red, experto en derribar y arrastrar a sus enemigos de un lado a otro para mayor disfrute del público... y para obtener una posición de ventaja. La espada de su oponente brilla con una luz azul un breve instante, anunciando un relámpago que surge de ella para golpearle.", 
+						"Todos estos héroes son guerreros, miembros de la que probablemente sea la clase de personaje más variopinta de los mundos de Dungeons & Dragons. Caballeros andantes, generales conquistadores, campeones reales, soldados de élite, mercenarios endurecidos y reyes bandidos ... Todos ellos son guerreros y, como tales, comparten una maestría sin par con las armas y armaduras, así como un conocimiento profundo de las artes del combate. También están acostumbrados a la muerte, pues se han cruzado con ella y la han desafiado con valentía.", 
+						{
                             "type": "entries",
-                            "name": "Well-Rounded Specialists",
-                            "entries": ["Fighters learn the basics of all combat styles. Every fighter can swing an axe, fence with a rapier, wield a longsword or a greatsword, use a bow, and even trap foes in a net with some degree of skill. Likewise, a fighter is adept with shields and every form of armor. Beyond that basic degree of familiarity, each fighter specializes in a certain style of combat. Some concentrate on archery, some on fighting with two weapons at once, and some on augmenting their martial skills with magic. This combination of broad general ability and extensive specialization makes fighters superior combatants on battlefields and in dungeons alike."]
+                            "name": "Especialistas equilibrados",
+                            "entries": [
+								"Los guerreros aprenden los rudimentos de todos los estilos de combate. Todos y cada uno de ellos son lo bastante hábiles para atacar con un hacha, participar en un duelo con un estoque, empuñar una espada larga o un espadón, tirar con arco e incluso atrapar a sus enemigos en una red. De la misma forma, cualquier guerrero está familiarizado con los escudos y todos los tipos de armaduras. Sin embargo, los guerreros van más allá de estos conocimientos básicos, pues cada uno de ellos se especializa en un estilo de combate concreto. Algunos se centran en el tiro con arco, otros en el combate con dos armas a la vez y los hay que incluso complementan sus habilidades marciales mediante la magia. Esta combinación de amplias capacidades y especialización intensiva convierte a los guerreros en combatientes supremos, que destacan tanto en campos de batalla como en mazmorras."
+							]
                         }, {
                             "type": "entries",
-                            "name": "Trained for Danger",
-                            "entries": ["Not every member of the city watch, the village militia, or the queen's army is a fighter. Most of these troops are relatively untrained soldiers with only the most basic combat knowledge. Veteran soldiers, military officers, trained bodyguards, dedicated knights, and similar figures are fighters.", "Some fighters feel drawn to use their training as adventurers. The dungeon delving, monster slaying, and other dangerous work common among adventurers is second nature for a fighter, not all that different from the life he or she left behind. There are greater risks, perhaps, but also much greater rewards—few fighters in the city watch have the opportunity to discover a magic flame tongue sword, for example."]
+                            "name": "Entrenados para el Peligro",
+                            "entries": [
+								"No todos los miembros de la guardia de la ciudad, la milicia del pueblo o el ejército de la reina son guerreros. La mayoría de estos soldados no están especialmente bien entrenados y solo poseen los conocimientos marciales más básicos. Únicamente los soldados veteranos, oficiales del ejército, guardaespaldas diestros, caballeros entregados y figuras similares son guerreros.", 
+								"Algunos guerreros se sienten llamados a poner su entrenamiento al servicio de una vida de aventuras. Explorar mazmorras, matar monstruos y otras actividades peligrosas típicas de los aventureros son algo natural para un guerrero, parte del día a día de la vida que dejaron atrás. Y si bien es cierto que el riesgo es mayor, también lo es la recompensa; pocos guerreros de la guardia de la ciudad tendrán la oportunidad de encontrar una espada {@italic lengua de fuego}, por ejemplo."
+							]
                         }, {
                             "type": "entries",
-                            "name": "Creating a Fighter",
-                            "entries": ["As you build your fighter, think about two related elements of your character's background: Where did you get your combat training, and what set you apart from the mundane warriors around you? Were you particularly ruthless? Did you get extra help from a mentor, perhaps because of your exceptional dedication? What drove you to this training in the first place? A threat to your homeland, a thirst for revenge, or a need to prove yourself might all have been factors.", "You might have enjoyed formal training in a noble's army or in a local militia. Perhaps you trained in a war academy, learning strategy, tactics, and military history. Or you might be self-taught—unpolished but well tested. Did you take up the sword as a way to escape the limits of life on a farm, or are you following a proud family tradition? Where did you acquire your weapons and armor? They might have been military issue or family heirlooms, or perhaps you scrimped and saved for years to buy them. Your armaments are now among your most important possessions—the only things that stand between you and death's embrace.", {
+                            "name": "Creación de un guerrero",
+                            "entries": [
+								"Cuando crees tú guerrero, piensa en los dos siguientes aspectos de su pasado, que están relacionados: dónde recibió su entrenamiento en combate y qué le distingue de otros combatientes menos capaces. ¿Eres especialmente despiadado?, ¿recibiste ayuda de un mentor, quizá debido a tu entrega excepcional?, ¿qué te motivó a comenzar tu entrenamiento? Puede que se tratara de una amenaza sobre tu hogar, el ansia de venganza o la necesidad de demostrar tu valía. O incluso una mezcla de todos ellos.", 
+								"Tal vez hayas disfrutado de adiestramiento militar en el ejército de un noble o en una milicia local. O puede que te hayas formado en una academia militar, aprendiendo estrategia, táctica e historia militar. O incluso podrías ser autodidacta, alguien poco pulido, pero con experiencia real. ¿Escogiste la espada como vía de escape, para dejar atrás las penurias de una vida en la granja? ¿O eres el heredero de una orgullosa tradición familiar? ¿Cómo conseguiste tus armas y armadura? Bien podrían ser equipamiento militar o un legado de tu familia. También cabe la posibilidad de que hayas ahorrado durante años para poder comprarlos. Independientemente de su origen, tu armamento es ahora una de tus posesiones más valiosas, pues es lo único que te protege del abrazo de la muerte.", 
+								{
                                     "type": "entries",
-                                    "name": "Quick Build",
-                                    "entries": ["You can make a fighter quickly by following these suggestions. First, make Strength or Dexterity your highest ability score, depending on whether you want to focus on melee weapons or on archery (or finesse weapons). Your next-highest score should be Constitution, or Intelligence if you plan to adopt the Eldritch Knight martial archetype. Second, choose the {@background soldier} background."]
+                                    "name": "Creación rápida",
+                                    "entries": ["Para crear un guerrero de forma rápida sugerimos lo siguiente. Para empezar, Fuerza o Destreza debería ser tu característica más alta, en función de si prefieres centrarte en las armas cuerpo a cuerpo o en el tiro con arco y las armas sutiles. Tu siguiente característica más elevada debería ser o bien Constitución o Inteligencia, esta última si aspiras a seguir el arquetipo marcial Caballero Arcano. A continuación, elige el trasfondo \"{@background soldier|phb_esp|soldado}\"."]
                                 }
                             ]
                         }
@@ -39891,17 +39903,17 @@
             "abbreviation": "AT_ESP",
             "source": "PHB_Esp",
             "page": 154,
-            "name": "Artisan's tools"
+            "name": "Herramientas de artesano"
         }, {
             "abbreviation": "SCF_ESP",
             "source": "PHB_Esp",
             "page": 151,
-			"name": "Spellcasting focus"
+			"name": "Canalizador mágico"
         }, {
             "abbreviation": "GS_ESP",
             "source": "PHB_Esp",
             "page": 154,
-            "name": "Gaming set",
+            "name": "Juego",
             "entries": [
 				{
 					"type": "entries",
@@ -39965,7 +39977,7 @@
             "abbreviation": "INS_ESP",
             "source": "PHB_Esp",
             "page": 154,
-            "name": "Instrument",
+            "name": "Instrumento",
 			"entries": [
 				{
 					"type": "entries",
