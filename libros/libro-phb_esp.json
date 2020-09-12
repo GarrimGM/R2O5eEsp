@@ -17314,18 +17314,25 @@
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Additional Maneuvers",
-                                        "entries": ["At 7th level, you learn two additional maneuvers of your choice."]
+                                        "name": "Maniobras Adicionales",
+                                        "entries": ["A nivel 7, adquieres dos nuevas maniobras más a tu elección."]
                                     }, {
                                         "type": "entries",
-                                        "name": "Additional Superiority Die",
-                                        "entries": ["You gain another superiority die at 7th level."]
+                                        "name": "Dado de Supremacía Adicional",
+                                        "entries": ["Recibes un dado adicional de supremacía a nivel 7."]
                                     }, {
                                         "type": "entries",
-                                        "name": "Know Your Enemy",
-                                        "entries": ["If you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own. The DM tells you if the creature is your equal, superior, or inferior in regard to two of the following characteristics of your choice:", {
+                                        "name": "Conoce a tu Enemigo",
+                                        "entries": ["A partir de nivel 7, si inviertes al menos 1 minuto en observar o interactuar con otra criatura fuera del combate, podrás evaluar hasta cierto punto sus capacidades en comparación con las tuyas. El DM te dirá si el objetivo es tu igual, tu superior o tu inferior en lo que a dos de las siguientes características (a tu elección) respecta:", {
                                                 "type": "list",
-                                                "items": ["Strength score", "Dexterity score", "Constitution score", "Armor Class", "Current hit points", "Total class levels (if any)", "Fighter class levels (if any)"]
+                                                "items": [
+													"Puntuación de Fuerza", 
+													"Puntuación de Destreza", 
+													"Puntuación de Constitución", 
+													"Clase de Armadura", 
+													"Puntos de golpe actuales", 
+													"Niveles de clase totales (si posee alguno)", 
+													"Niveles de clase de guerrero (si posee alguno)"]
                                             }
                                         ]
                                     }
@@ -17334,36 +17341,36 @@
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Additional Maneuvers",
-                                        "entries": ["At 10th level, you learn two additional maneuvers of your choice."]
+                                        "name": "Maniobras Adicionales",
+                                        "entries": ["A nivel 10, adquieres dos nuevas maniobras más a tu elección."]
                                     }, {
                                         "type": "entries",
-                                        "name": "Improved Combat Superiority (d10)",
-                                        "entries": ["At 10th level, your superiority dice turn into {@dice d10}s."]
+                                        "name": "Supremacía en Combate Mejorada (d10)",
+                                        "entries": ["A nivel 10 tus dados de supremacía se convierten en {@dice d10}."]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Additional Maneuvers",
-                                        "entries": ["At 15th level, you learn two additional maneuvers of your choice."]
+                                        "name": "Maniobras Adicionales",
+                                        "entries": ["A nivel 15, adquieres dos nuevas maniobras más a tu elección."]
                                     }, {
                                         "type": "entries",
-                                        "name": "Additional Superiority Die",
-                                        "entries": ["You gain another superiority die at 15th level."]
+                                        "name": "Dado de Supremacía Adicional",
+                                        "entries": ["Recibes un dado adicional de supremacía a nivel 15."]
                                     }, {
                                         "type": "entries",
-                                        "name": "Relentless",
-                                        "entries": ["Starting at 15th level, when you roll initiative and have no superiority dice remaining, you regain 1 superiority die."]
+                                        "name": "Incansable",
+                                        "entries": ["A partir de nivel 15, si cuando tiras iniciativa no te quedan dados de supremacía, recuperas uno de ellos."]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Improved Combat Superiority (d12)",
-                                        "entries": ["At 18th level, your superiority dice turn into {@dice d12}s."]
+                                        "name": "Supremacía en Combate Mejorada (d12)",
+                                        "entries": ["A nivel 18 tus dados de supremacía se convierten en {@dice d12}."]
                                     }
                                 ]
                             }
@@ -17381,16 +17388,16 @@
                                     "source": "PHB_Esp"
                                 }
                             ],
-                            "colLabels": ["{@filter Cantrips Known|spells|level=0|subclass=Fighter: Eldritch Knight}", "{@filter Spells Known|spells|subclass=Fighter: Eldritch Knight}"],
+                            "colLabels": ["{@filter Cantrips Known|spells|level=0|subclass=Guerrero): Caballero Arcano (PHB_Esp)}", "{@filter Spells Known|spells|subclass=Guerrero: Caballero Arcano (PHB_Esp)}"],
                             "rows": [[0, 0], [0, 0], [2, 3], [2, 4], [2, 4], [2, 4], [2, 5], [2, 6], [2, 6], [3, 7], [3, 8], [3, 8], [3, 9], [3, 10], [3, 10], [3, 11], [3, 11], [3, 11], [3, 12], [3, 13]]
                         }, {
                             "title": "Spell Slots per Spell Level",
                             "subclasses": [{
-                                    "name": "Eldritch Knight",
+                                    "name": "Caballero Arcano",
                                     "source": "PHB_Esp"
                                 }
                             ],
-                            "colLabels": ["{@filter 1st|spells|level=1|subclass=Fighter: Eldritch Knight}", "{@filter 2nd|spells|level=2|subclass=Fighter: Eldritch Knight}", "{@filter 3rd|spells|level=3|subclass=Fighter: Eldritch Knight}", "{@filter 4th|spells|level=4|subclass=Fighter: Eldritch Knight}"],
+                            "colLabels": ["{@filter 1st|spells|level=1|subclass=Guerrero: Caballero Arcano (PHB_Esp)}", "{@filter 2nd|spells|level=2|subclass=Guerrero: Caballero Arcano (PHB_Esp)}", "{@filter 3rd|spells|level=3|subclass=Guerrero: Caballero Arcano (PHB_Esp)}", "{@filter 4th|spells|level=4|subclass=Guerrero: Caballero Arcano (PHB_Esp)}"],
                             "rows": [[0, 0, 0, 0], [0, 0, 0, 0], [2, 0, 0, 0], [3, 0, 0, 0], [3, 0, 0, 0], [3, 0, 0, 0], [4, 2, 0, 0], [4, 2, 0, 0], [4, 2, 0, 0], [4, 3, 0, 0], [4, 3, 0, 0], [4, 3, 0, 0], [4, 3, 2, 0], [4, 3, 2, 0], [4, 3, 2, 0], [4, 3, 3, 0], [4, 3, 3, 0], [4, 3, 3, 0], [4, 3, 3, 1], [4, 3, 3, 1]]
                         }
                     ],
@@ -43166,6 +43173,18 @@
 						"name": "Artificer",
 						"source": "ERLW"
 					}
+				],
+					"fromSubclass": [
+					{
+						"class": {
+							"name": "Guerrero",
+							"source": "PHB_Esp"
+						},
+						"subclass": {
+							"name": "Caballero Arcano",
+							"source": "PHB_Esp"
+						}
+					}
 				]
 			},
 			"races": [
@@ -43273,7 +43292,12 @@
 					"name": "Simic Scientist",
 					"source": "GGR"
 				}
-			]
+			],
+			"eldritchInvocations": [{
+                    "name": "Master of Myriad Forms",
+                    "source": "PHB_Esp"
+                }
+            ]
 		},
 		{
 			"name": "Encantar animal # Animal Friendship",
