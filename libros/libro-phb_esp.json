@@ -16979,7 +16979,7 @@
                 ], [{
                         "name": "Ataque Adicional",
                         "entries": [
-							"A partir de nivel 5, cuando lleves a cabo la acción de {@action Attack|phb_esp|Atacar} durante tu turno, podrás hacer dos ataques en lugar de uno.", 
+							"A partir de nivel 5, cuando lleves a cabo la acción de {@action Atacar # Attack|PHB_Esp|Atacar} durante tu turno, podrás hacer dos ataques en lugar de uno.", 
 							"La cantidad de ataques aumenta a tres cuando alcanzas el nivel 11 de esta clase y a cuatro cuando alcanzas el 20."
 						]
                     }
@@ -17016,7 +17016,7 @@
                     }
                 ], [{
                         "name": "Ataque Adicional (2)",
-                        "entries": ["A partir de nivel 11, pues atacar tres veces cuando lleves a cabo la acción de {@action Attack|phb_esp|Atacar} durante tu turno."]
+                        "entries": ["A partir de nivel 11, pues atacar tres veces cuando lleves a cabo la acción de {@action Atacar # Attack|PHB_Esp|Atacar} durante tu turno."]
                     }
                 ], [{
                         "name": "Mejora de Característica",
@@ -17069,7 +17069,7 @@
                     }
                 ], [{
                         "name": "Ataque Adicional (3)",
-                        "entries": ["A partir de nivel 20, pues atacar cuatro veces cuando lleves a cabo la acción de {@action Attack|phb_esp|Atacar} durante tu turno."]
+                        "entries": ["A partir de nivel 20, pues atacar cuatro veces cuando lleves a cabo la acción de {@action Atacar # Attack|PHB_Esp|Atacar} durante tu turno."]
                     }
                 ]],
             "subclassTitle": "Arquetipos Marciales",
@@ -17388,56 +17388,64 @@
                                     "source": "PHB_Esp"
                                 }
                             ],
-                            "colLabels": ["{@filter Cantrips Known|spells|level=0|subclass=Guerrero: Caballero Arcano (PHB_Esp)}", "{@filter Spells Known|spells|subclass=Guerrero: Caballero Arcano (PHB_Esp)}"],
+                            "colLabels": ["{@filter Trucos conocidos|spells|level=0|subclass=Guerrero: Caballero Arcano (PHB_Esp)}", "{@filter Conjuros conocidos|spells|subclass=Guerrero: Caballero Arcano (PHB_Esp)}"],
                             "rows": [[0, 0], [0, 0], [2, 3], [2, 4], [2, 4], [2, 4], [2, 5], [2, 6], [2, 6], [3, 7], [3, 8], [3, 8], [3, 9], [3, 10], [3, 10], [3, 11], [3, 11], [3, 11], [3, 12], [3, 13]]
                         }, {
-                            "title": "Spell Slots per Spell Level",
+                            "title": "Espacios de conjuro por cada nivel de conjuro",
                             "subclasses": [{
                                     "name": "Caballero Arcano",
                                     "source": "PHB_Esp"
                                 }
                             ],
-                            "colLabels": ["{@filter 1st|spells|level=1|subclass=Guerrero: Caballero Arcano (PHB_Esp)}", "{@filter 2nd|spells|level=2|subclass=Guerrero: Caballero Arcano (PHB_Esp)}", "{@filter 3rd|spells|level=3|subclass=Guerrero: Caballero Arcano (PHB_Esp)}", "{@filter 4th|spells|level=4|subclass=Guerrero: Caballero Arcano (PHB_Esp)}"],
+                            "colLabels": ["{@filter 1|spells|level=1|subclass=Guerrero: Caballero Arcano (PHB_Esp)}", "{@filter 2|spells|level=2|subclass=Guerrero: Caballero Arcano (PHB_Esp)}", "{@filter 3|spells|level=3|subclass=Guerrero: Caballero Arcano (PHB_Esp)}", "{@filter 4|spells|level=4|subclass=Guerrero: Caballero Arcano (PHB_Esp)}"],
                             "rows": [[0, 0, 0, 0], [0, 0, 0, 0], [2, 0, 0, 0], [3, 0, 0, 0], [3, 0, 0, 0], [3, 0, 0, 0], [4, 2, 0, 0], [4, 2, 0, 0], [4, 2, 0, 0], [4, 3, 0, 0], [4, 3, 0, 0], [4, 3, 0, 0], [4, 3, 2, 0], [4, 3, 2, 0], [4, 3, 2, 0], [4, 3, 3, 0], [4, 3, 3, 0], [4, 3, 3, 0], [4, 3, 3, 1], [4, 3, 3, 1]]
                         }
                     ],
                     "subclassFeatures": [[{
                                 "name": "Caballero Arcano",
-                                "entries": ["The archetypal Eldritch Knight combines the martial mastery common to all fighters with a careful study of magic. Eldritch Knights use magical techniques similar to those practiced by wizards. They focus their study on two of the eight schools of magic—abjuration and evocation. Abjuration spells grant an Eldritch Knight additional protection in battle, and evocation spells deal damage to many foes at once, extending the fighter's reach in combat. These knights learn a comparatively small number of spells, committing them to memory instead of keeping them in a spellbook.", {
+                                "entries": ["El Caballero Arcano arquetípico combina la maestría marcial típica de los guerreros con un cuidadoso estudio de la magia. Los Caballeros Arcanos emplean técnicas mágicas similares a las utilizadas por los magos. Centran sus estudios en dos de las ocho escuelas mágicas: abjuración y evocación. Los conjuros de la primera dan al Caballero Arcano una protección adicional durante el combate, mientras que los de la segunda le permiten hacer daño a muchos enemigos al mismo tiempo, ampliando así el repertorio del guerrero. Estos caballeros aprenden una cantidad relativamente pequeña de conjuros, memorizándolos en lugar de apuntándolos en un libro de conjuros.", {
                                         "type": "entries",
-                                        "name": "Spellcasting",
-                                        "entries": ["When you reach 3rd level, you augment your martial prowess with the ability to cast spells. See {@book chapter 10|PHB|10} for the general rules of spellcasting and chapter 11 for the {@filter wizard spell list|spells|class=wizard}.", {
+                                        "name": "Lanzamiento de Conjuros",
+                                        "entries": ["Cuando llegas a nivel 3, puedes complementar tu habilidad marcial con la capacidad de lanzar conjuros. El  {@book capítulo 10|phbesp|10} contiene las reglas de lanzamiento de conjuros y el 11 la lista de {@filter conjuros de mago|spells|class=mago}.", {
                                                 "type": "entries",
-                                                "name": "Cantrips",
-                                                "entries": ["You learn two cantrips of your choice from the {@filter wizard spell list|spells|class=wizard}. You learn an additional wizard cantrip of your choice at 10th level."]
+                                                "name": "Trucos",
+                                                "entries": ["Aprendes dos trucos de tu elección escogidos de entre los de la {@filter lista de conjuros de mago|spells|class=mago}. Adquieres otro nuevo truco de mago tu elección cuando alcanzas el nivel 10."]
                                             }, {
                                                 "type": "entries",
                                                 "entries": [{
                                                         "type": "entries",
-                                                        "name": "Spell Slots",
-                                                        "entries": ["The Eldritch Knight Spellcasting table shows how many spell slots you have to cast your {@filter wizard spells|spells|class=wizard} of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.", "For example, if you know the 1st-level spell {@spell shield} and have a 1st-level and a 2nd-level spell slot available, you can cast {@spell shield} using either slot."]
+                                                        "name": "Espacios de conjuro",
+                                                        "entries": [
+															"La tabla \"lanzamiento de conjuros del Caballero Arcano\" muestra de cuántos espacios de conjuro de Caballero Arcano dispones para lanzar conjuros de nivel 1 y superiores. Para lanzar uno de estos conjuros deberás invertir un espacio de al menos el nivel del conjuro. Recuperas todos los espacios utilizados tras finalizar un descanso largo.",
+															"Si, por ejemplo, conoces el conjuro de nivel 1 {@spell escudo # shield|phb_esp|escudo} y posees un espacio de conjuro de nivel 1 y otro de nivel 2, podrías lanzar escudo empleando cualquiera de los dos espacios."
+														]
                                                     }
                                                 ]
                                             }, {
                                                 "type": "entries",
                                                 "entries": [{
                                                         "type": "entries",
-                                                        "name": "Spells Known of 1st-Level and Higher",
-                                                        "entries": ["You know three 1st-level wizard spells of your choice, two of which you must choose from the abjuration and evocation spells on the wizard spell list.", "The Spells Known column of the Eldritch Knight Spellcasting table shows when you learn more wizard spells of 1st level or higher. Each of these spells must be an abjuration or evocation spell of your choice, and must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.", "The spells you learn at 8th, 14th, and 20th level can come from any school of magic.", "Whenever you gain a level in this class, you can replace one of the wizard spells you know with another spell of your choice from the wizard spell list. The new spell must be of a level for which you have spell slots, and it must be an abjuration or evocation spell, unless you're replacing the spell you gained at 3rd, 8th, 14th, or 20th level from any school of magic."]
+                                                        "name": "Conjuros conocidos de nivel 1 y superiores",
+                                                        "entries": [
+															"Conoces tres conjuros de mago de nivel 1 a tu elección, dos de los cuales deben ser de abjuración o evocación. Todos ellos deben pertenecer a la lista de conjuros de mago.", 
+															"La columna \"conjuros conocidos\" de la tabla \"lanzamiento de conjuros del Caballero Arcano\" te indica cuándo podrás aprender más conjuros de mago de nivel 1 o superiores. Tú eliges cuales, pero todos estos conjuros deben ser de abjuración o evocación y de un nivel para el que tengas espacios de conjuro. Así, cuando subes a nivel 7 en esta clase puedes aprender un conjuro nuevo, que puede ser de nivel 1 o 2.", 
+															"Los conjuros que aprendes al alcanzar los niveles 8, 14 y 20 pueden ser de cualquier escuela mágica.", 
+															"Además, cada vez que subas un nivel de esta clase podrás elegir uno de los conjuros de mago que ya conoces y reemplazarlo por otro de los que aparecen en la lista de conjuros de mago. El nuevo conjuro deberá ser de un nivel para el que tengas espacios de conjuro. Además, ha de ser de abjuración o evocación, salvo si estás reemplazando los conjuros que obtuviste a los niveles 3, 8, 14 o 20 y que podían pertenecer a cualquier escuela de magia."
+														]
                                                     }
                                                 ]
                                             }, {
                                                 "type": "entries",
                                                 "entries": [{
                                                         "type": "entries",
-                                                        "name": "Spellcasting Ability",
-                                                        "entries": ["Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.", {
+                                                        "name": "Aptitud mágica",
+                                                        "entries": ["La Inteligencia es tu aptitud mágica en lo que a conjuros de mago respecta, ya que aprendes tus conjuros mediante el estudio y la memorización. Así, utilizarás tu Inteligencia siempre que un conjuro de mago haga referencia a tu aptitud mágica. Además, también usarás tu modificador por Inteligencia para determinar la CD de las tiradas de salvación y las tiradas de ataque de los conjuros de mago que lances.", {
                                                                 "type": "abilityDc",
-                                                                "name": "Spell",
+                                                                "name": "Conjuros",
                                                                 "attributes": ["int"]
                                                             }, {
                                                                 "type": "abilityAttackMod",
-                                                                "name": "Spell",
+                                                                "name": "Conjuros",
                                                                 "attributes": ["int"]
                                                             }
                                                         ]
@@ -17447,40 +17455,44 @@
                                         ]
                                     }, {
                                         "type": "entries",
-                                        "name": "Weapon Bond",
-                                        "entries": ["At 3rd level, you learn a ritual that creates a magical bond between yourself and one weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. The weapon must be within your reach throughout the ritual, at the conclusion of which you touch the weapon and forge the bond.", "Once you have bonded a weapon to yourself, you can't be disarmed of that weapon unless you are {@condition incapacitated}. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand.", "You can have up to two bonded weapons, but can summon only one at a time with your bonus action. If you attempt to bond with a third weapon, you must break the bond with one of the other two."]
+                                        "name": "Vínculo con Arma",
+                                        "entries": [
+											"A nivel 3 aprendes un ritual que crea un vínculo mágico entre una de tus armas y tú. Para ejecutar este ritual necesitas 1 hora, que puede ser la de un descanso corto. El arma debe estar dentro de tu alcance durante todo el proceso, y al final de este la tocarás, estableciendo así el vínculo.", 
+											"Una vez te hayas vinculado con un arma, la única forma de desarmarte será dejándote {@condition incapacitado # incapacitated|phb_esp|incapacitado}. Además, si ambos os encontráis en el mismo plano de existencia, podrás invocar a tu arma empleando una acción adicional durante tu turno; el arma se teletransportará instantáneamente a tu mano.", 
+											"Puedes tener vinculadas hasta dos armas, pero solo puedes invocar una de ellas cuando usas tu acción adicional. Si intentas vincularte con una tercera, deberás antes romper uno de los vínculos existentes con una de las otras dos."
+										]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "War Magic",
-                                        "entries": ["Beginning at 7th level, when you use your action to cast a cantrip, you can make one weapon attack as a bonus action."]
+                                        "name": "Magia de Guerra",
+                                        "entries": ["A partir de nivel 7, cuando utilizas tu acción para lanzar un truco, puedes emplear tu acción adicional para hacer un ataque con arma."]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Eldritch Strike",
-                                        "entries": ["At 10th level, you learn how to make your weapon strikes undercut a creature's resistance to your spells. When you hit a creature with a weapon attack, that creature has disadvantage on the next saving throw it makes against a spell you cast before the end of your next turn."]
+                                        "name": "Golpe Sobrenatural",
+                                        "entries": ["A nivel 10 aprendes a hacer que los golpes de tus armas debiliten la resistencia del objetivo a tus conjuros. Cuando impactas a una criatura con un ataque con arma, dicha criatura tendrá desventaja en la siguiente tirada de salvación que realice por causa de un conjuro que lances antes del final de tu próximo turno."]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Arcane Charge",
-                                        "entries": ["At 15th level, you gain the ability to teleport up to 30 feet to an unoccupied space you can see when you use your Action Surge. You can teleport before or after the additional action."]
+                                        "name": "Carga Arcana",
+                                        "entries": ["A nivel 15 obtienes la capacidad de, cuando usas tu Acción Súbita, teletransportarte hasta 30 pies a un espacio desocupado que puedas ver. Puedes teletransportarte antes o después de hacer la acción adicional."]
                                     }
                                 ]
                             }
                         ], [{
                                 "entries": [{
                                         "type": "entries",
-                                        "name": "Improved War Magic",
-                                        "entries": ["Starting at 18th level, when you use your action to cast a spell, you can make one weapon attack as a bonus action."]
+                                        "name": "Magia de Guerra Mejorada",
+                                        "entries": ["A partir de nivel 18, cuando utilizas tu acción para lanzar un conjuro, puedes emplear tu acción adicional para hacer un ataque con arma."]
                                     }
                                 ]
                             }
