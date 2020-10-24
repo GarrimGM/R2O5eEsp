@@ -35427,13 +35427,13 @@
 			"page": 296
 		}
 	],
-	"item": [
+	"baseitem": [
 		{
 			"name": "Flecha # Arrow",
 			"source": "PHB-ES",
             "page": 150,
             "srd": true,
-            "type": "A",
+            "type": "A_ESP",
             "rarity": "none",
             "weight": 0.05,
             "value": 5
@@ -35441,7 +35441,7 @@
 		{
 			"name": "Flechas (20) # Arrows",
 			"source": "PHB-ES",
-			"type": "A",
+			"type": "A_ESP",
 			"rarity": "none",
 			"value": 100,
 			"weight": 1,
@@ -35490,7 +35490,7 @@
 		},
 		{
 			"name": "Dardo de cerbatana # Blowgun Needle",
-			"type": "A",
+			"type": "A_ESP",
 			"rarity": "none",
 			"value": 2,
 			"weight": 0.02,
@@ -35500,7 +35500,7 @@
 		},
 		{
 			"name": "Dardos de cerbatana (50) # Blowgun Needles",
-			"type": "A",
+			"type": "A_ESP",
 			"rarity": "none",
 			"value": 100,
 			"weight": 1,
@@ -35575,7 +35575,7 @@
 		},
 		{
 			"name": "Virote de ballesta # Crossbow Bolt",
-			"type": "A",
+			"type": "A_ESP",
 			"rarity": "none",
 			"value": 5,
 			"weight": 0.075,
@@ -35585,7 +35585,7 @@
 		},
 		{
 			"name": "Virotes de ballesta (20) # Crossbow Bolts",
-			"type": "A",
+			"type": "A_ESP",
 			"rarity": "none",
 			"value": 100,
 			"weight": 1.5,
@@ -36312,7 +36312,7 @@
 		},
 		{
 			"name": "Bala de honda # Sling Bullet",
-			"type": "A",
+			"type": "A_ESP",
 			"rarity": "none",
 			"value": 0.2,
 			"weight": 0.075,
@@ -36322,7 +36322,7 @@
 		},
 		{
 			"name": "Balas de honda (20) # Sling Bullets",
-			"type": "A",
+			"type": "A_ESP",
 			"rarity": "none",
 			"value": 4,
 			"weight": 1.5,
@@ -36481,7 +36481,9 @@
 			"source": "PHB-ES",
 			"page": 149,
 			"srd": true
-		},
+		}
+	],
+	"item": [
 		{
 			"name": "Ábaco # Abacus",
 			"rarity": "none",
@@ -36605,6 +36607,23 @@
 			]
 		},
 		{
+            "name": "Cerveza (Galón) # Ale",
+            "source": "PHB-ES",
+            "page": 158,
+            "srd": true,
+            "type": "FD_ESP",
+            "rarity": "none",
+            "value": 20
+        }, {
+            "name": "Cerveza (Jarra) # Ale",
+            "source": "PHB-ES",
+            "page": 158,
+            "srd": true,
+            "type": "FD_ESP",
+            "rarity": "none",
+            "value": 4
+        },
+		{
 			"name": "Amuleto # Amulet",
 			"type": "SCF_ESP",
 			"scfType": "holy",
@@ -36684,19 +36703,6 @@
 			"entries": [
 				"Puedes usar tu acción para esparcir estas pequeñas esferas metálicas, que vienen en una bolsita, sobre una superficie nivelada, cubriendo un cuadrado de 10 pies de lado. Las criaturas que se muevan a través de la zona afectada deberán superar una tirada de salvación de Destreza CD 10 o serán {@condition Derribado # Prone|PHB-ES|derribadas}. Sin embargo, si una criatura se desplaza por la zona a la mitad de su velocidad, no tendrá que superar la tirada de salvación."
 			],
-			"srd": true
-		},
-		{
-			"name": "Barda # Barding",
-			"type": "TAH",
-			"rarity": "none",
-			"source": "PHB-ES",
-			"page": 157,
-			"entries": [
-				"La barda es una armadura diseñada para proteger la cabeza, cuello, pecho y cuerpo de un animal. Cualquier tipo de armadura de la tabla “armaduras” puede comprarse en forma de barda. Su precio será cuatro veces el de la armadura para humanoides equivalente y su peso dos veces el de esta."
-			],
-			"weightMult": 2,
-			"valueMult": 4,
 			"srd": true
 		},
 		{
@@ -37346,6 +37352,15 @@
 			"srd": true
 		},
 		{
+            "name": "Carne, trozo # Chunk of Meat",
+            "source": "PHB-ES",
+            "page": 158,
+            "srd": true,
+            "type": "FD_ESP",
+            "rarity": "none",
+            "value": 30
+        },
+		{
 			"name": "Pollo # Chicken",
 			"type": "TG",
 			"rarity": "none",
@@ -37479,6 +37494,15 @@
 			"page": 150,
 			"srd": true
 		},
+		{
+            "name": "Vino común (Jarra) # Common Wine",
+            "source": "PHB-ES",
+            "page": 158,
+            "srd": true,
+            "type": "FD_ESP",
+            "rarity": "none",
+            "value": 20
+        },
 		{
 			"name": "Saquito de componentes # Component Pouch",
 			"type": "G_ESP",
@@ -38044,6 +38068,15 @@
 			"srd": true
 		},
 		{
+            "name": "Vino de calidad (Botella)  # Fine Wine",
+            "source": "PHB-ES",
+            "page": 158,
+            "srd": true,
+            "type": "FD_ESP",
+            "rarity": "none",
+            "value": 1000
+        },
+		{
 			"name": "Caña de pescar # Fishing Tackle",
 			"type": "G_ESP",
 			"rarity": "none",
@@ -38536,6 +38569,15 @@
 			"srd": true
 		},
 		{
+            "name": "Queso, trozo # Hunk of Cheese",
+            "source": "PHB-ES",
+            "page": 158,
+            "srd": true,
+            "type": "FD_ESP",
+            "rarity": "none",
+            "value": 10
+        },
+		{
 			"name": "Trampa para cazar # Hunting Trap",
 			"type": "G_ESP",
 			"rarity": "none",
@@ -38810,6 +38852,15 @@
 			"page": 157,
 			"srd": true
 		},
+		{
+            "name": "Pan, hogaza # Loaf of Bread",
+            "source": "PHB-ES",
+            "page": 158,
+            "srd": true,
+            "type": "FD_ESP",
+            "rarity": "none",
+            "value": 2
+        },
 		{
 			"name": "Cerradura # Lock",
 			"type": "G_ESP",
@@ -41041,6 +41092,45 @@
 			]
 		},
 		{
+            "name": "Herramientas de artesano # Artisan's Tools",
+            "source": "PHB-ES",
+            "page": 154,
+            "srd": true,
+            "type": "AT_ESP",
+            "rarity": "none",
+			"entries": [
+				"Existen múltiples variaciones de este elemento, como se detalla a continuación:",
+				{
+					"type": "list",
+					"items": [
+						"{@item Suministros de alquimista # Alchemist's Supplies|PHB-ES|Suministros de alquimista}",
+						"{@item Suministros de cervecero # Brewer's Supplies|PHB-ES|Suministros de cervecero}",
+						"{@item Suministros de calígrafo # Calligrapher's Supplies|PHB-ES|Suministros de calígrafo}",
+						"{@item Herramientas de carpintero # Carpenter's Tools|PHB-ES|Herramientas de carpintero}",
+						"{@item Herramientas de cartógrafo # Cartographer's Tools|PHB-ES|Herramientas de cartógrafo}",
+						"{@item Herramientas de zapatero # Cobbler's Tools|PHB-ES|Herramientas de zapatero}",
+						"{@item Útiles de cocinero # Cook's Utensils|PHB-ES|Útiles de cocinero}",
+						"{@item Herramientas de soplador de vidrio # Glassblower's Tools|PHB-ES|Herramientas de soplador de vidrio}",
+						"{@item Herramientas de joyero # Jeweler's Tools|PHB-ES|Herramientas de joyero}",
+						"{@item Herramientas de curtidor # Leatherworker's Tools|PHB-ES|Herramientas de curtidor}",
+						"{@item Herramientas de albañil # Mason's Tools|PHB-ES|Herramientas de albañil}",
+						"{@item Suministros de pintor # Painter's Supplies|PHB-ES|Suministros de pintor}",
+						"{@item Herramientas de alfarero # Potter's Tools|PHB-ES|Herramientas de alfarero}",
+						"{@item Herramientas de herrero # Smith's Tools|PHB-ES|Herramientas de herrero}",
+						"{@item Herramientas de manitas # Tinker's Tools|PHB-ES|Herramientas de manitas}",
+						"{@item Herramientas de tejedor # Weaver's Tools|PHB-ES|Herramientas de tejedor}",
+						"{@item Herramientas de ebanista # Woodcarver's Tools|PHB-ES|Herramientas de ebanista}"
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
+					]
+				}
+			]
+        },
+		{
 			"name": "Canalizadores druídicos # Druidic Focus",
 			"type": "SCF_ESP",
 			"scfType": "druid",
@@ -41148,6 +41238,24 @@
 		}
 	],
 	"itemType": [
+		{
+            "abbreviation": "TAH_ESP",
+            "source": "PHB-ES",
+            "page": 154,
+            "name": "Arreos y arneses"
+        },
+		{
+            "abbreviation": "A_ESP",
+            "source": "PHB-ES",
+            "page": 154,
+            "name": "Munición"
+        },
+		{
+            "abbreviation": "FD_ESP",
+            "source": "PHB-ES",
+            "page": 154,
+            "name": "Comida y bebida"
+        },
 		{
             "abbreviation": "G_ESP",
             "source": "PHB-ES",
@@ -41508,63 +41616,31 @@
 			]
 		}
 	],
-	"itemTypeAdditionalEntries": [
+	"variant": [
 		{
-			"appliesTo": "GS",
-			"entries": [
-				"Proficiency with a gaming set applies to one type of game, such as Three-Dragon Ante or games of chance that use dice.",
-				{
-					"type": "entries",
-					"name": "Components",
-					"entries": [
-						"A gaming set has all the pieces needed to play a specific game or type of game, such as a complete deck of cards or a board and tokens."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "History",
-					"entries": [
-						"Your mastery of a game includes knowledge of its history, as well as of important events it was connected to or prominent historical figures involved with it."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Insight",
-					"entries": [
-						"Playing games with someone is a good way to gain understanding of their personality, granting you a better ability to discern their lies from their truths and read their mood."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Sleight of Hand",
-					"entries": [
-						"Sleight of Hand is a useful skill for cheating at a game, as it allows you to swap pieces, palm cards, or alter a die roll. Alternatively, engrossing a target in a game by manipulating the components with dexterous movements is a great distraction for a pickpocketing attempt."
-					]
-				},
-				{
-					"type": "table",
-					"caption": "Gaming Set",
-					"colLabels": [
-						"Activity",
-						"DC"
-					],
-					"colStyles": [
-						"col-10",
-						"col-2 text-center"
-					],
-					"rows": [
-						[
-							"Catch a player cheating",
-							"15"
-						],
-						[
-							"Gain insight into an opponent's personality",
-							"15"
-						]
-					]
-				}
-			]
-		}
+            "name": "Barda # Barding",
+			"source": "PHB-ES",
+            "type": "GV",
+            "requires": [{
+                    "armor": true,
+					"source": "PHB-ES"
+                }
+            ],
+            "inherits": {
+                "namePrefix": "Barda de ",
+                "nameRemove": "Armadura de ",
+                "source": "PHB-ES",
+                "page": 157,
+                "srd": true,
+                "type": "TAH_ESP",
+                "rarity": "none",
+                "weightMult": 2,
+                "weightExpression": "[[baseItem.weight]] * 2",
+                "valueMult": 4,
+                "valueExpression": "[[baseItem.value]] * 4",
+                "entries": ["La barda es una armadura diseñada para proteger la cabeza, cuello, pecho y cuerpo de un animal. Cualquier tipo de armadura de la tabla \"armaduras\" puede comprarse en forma de barda. Su precio será cuatro veces el de la armadura para humanoides equivalente y su peso dos veces el de esta."]
+            }
+        }
 	],
 	"lifeTrinket": [
 		"a small round coin with a hole in it made of a strange black metal.",
