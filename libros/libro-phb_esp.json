@@ -16122,7 +16122,12 @@
             },
             "startingEquipment": {
                 "additionalFromBackground": true,
-                "default": ["(a) un {@filter arma marcial|items|source=PHB-ES|type=martial weapon} y un {@item escudo|PHB-ES|escudo} o (b) dos {@filter armas marciales|items|source=PHB-ES|type=martial weapon}", "(a) cinco {@item jabalina|PHB-ES|jabalinas} o (b) cualquier  {@filter arma cuerpo a cuerpo sencilla|items|source=PHB-ES|type=simple weapon;melee weapon=sand}", "(a) un {@item paquete de sacerdote|PHB-ES} o (b) un {@item paquete de explorador|PHB-ES}", "{@item Cota de malla|PHB-ES} y un {@item símbolos sagrados|PHB-ES|símbolo sagrado}"],
+                "default": [
+					"(a) un {@filter arma marcial|items|source=PHB-ES|type=martial weapon} y un {@item escudo|PHB-ES|escudo} o (b) dos {@filter armas marciales|items|source=PHB-ES|type=martial weapon}", 
+					"(a) cinco {@item jabalina|PHB-ES|jabalinas} o (b) cualquier  {@filter arma cuerpo a cuerpo sencilla|items|source=PHB-ES|type=simple weapon;melee weapon=sand}", 
+					"(a) un {@item paquete de sacerdote|PHB-ES} o (b) un {@item paquete de explorador|PHB-ES}",
+					"{@item Cota de malla|PHB-ES} y un {@item símbolos sagrados|PHB-ES|símbolo sagrado}"
+				],
                 "goldAlternative": "{@dice 5d4 × 10|5d4 × 10|Starting Gold}",
                 "defaultData": [{
                         "a": [{
@@ -16177,7 +16182,13 @@
             },
             "classTableGroups": [{
                     "title": "Espacios de conjuro por cada nivel de conjuro",
-                    "colLabels": ["{@filter 1st|spells|level=1|class=Paladin (PHB-ES)}", "{@filter 2nd|spells|level=2|class=Paladin (PHB-ES)}", "{@filter 3rd|spells|level=3|class=Paladin (PHB-ES)}", "{@filter 4th|spells|level=4|class=Paladin (PHB-ES)}", "{@filter 5th|spells|level=5|class=Paladin (PHB-ES)}"],
+                    "colLabels": [
+						"{@filter 1|spells|level=1|class=Paladin (PHB-ES)}", 
+						"{@filter 2|spells|level=2|class=Paladin (PHB-ES)}", 
+						"{@filter 3|spells|level=3|class=Paladin (PHB-ES)}", 
+						"{@filter 4|spells|level=4|class=Paladin (PHB-ES)}", 
+						"{@filter 5|spells|level=5|class=Paladin (PHB-ES)}"
+					],
                     "rows": [[0, 0, 0, 0, 0], [2, 0, 0, 0, 0], [3, 0, 0, 0, 0], [3, 0, 0, 0, 0], [4, 2, 0, 0, 0], [4, 2, 0, 0, 0], [4, 3, 0, 0, 0], [4, 3, 0, 0, 0], [4, 3, 2, 0, 0], [4, 3, 2, 0, 0], [4, 3, 3, 0, 0], [4, 3, 3, 0, 0], [4, 3, 3, 1, 0], [4, 3, 3, 1, 0], [4, 3, 3, 2, 0], [4, 3, 3, 2, 0], [4, 3, 3, 3, 1], [4, 3, 3, 3, 1], [4, 3, 3, 3, 2], [4, 3, 3, 3, 2]]
                 }
             ],
@@ -16323,899 +16334,276 @@
             ]
         },
 		{
-			"name": "Ranger",
-			"source": "PHB-ES",
-			"page": 89,
-			"srd": true,
-			"hd": {
-				"number": 1,
-				"faces": 10
-			},
-			"proficiency": [
-				"str",
-				"dex"
-			],
-			"spellcastingAbility": "wis",
-			"casterProgression": "1/2",
-			"startingProficiencies": {
-				"armor": [
-					"light",
-					"medium",
-					"shields"
+            "name": "Explorador",
+            "source": "PHB-ES",
+            "page": 89,
+            "srd": true,
+            "hd": {
+                "number": 1,
+                "faces": 10
+            },
+            "proficiency": ["str", "dex"],
+            "spellcastingAbility": "wis",
+            "casterProgression": "1/2",
+            "spellsKnownProgression": [0, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11],
+            "startingProficiencies": {
+                "armor": [{
+						"proficiency": "light",
+						"full": "{@filter armaduras ligeras|items|source=PHB-ES|type=light armor}"
+					},{
+						"proficiency": "medium",
+						"full": "{@filter armaduras medias|items|source=PHB-ES|type=medium armor}"
+					},{
+						"proficiency": "shields",
+						"full": "{@item escudo|PHB-ES|escudos}"
+					}
 				],
-				"weapons": [
-					"simple",
-					"martial"
-				],
-				"skills": [
-					{
-						"choose": {
-							"from": [
-								"animal handling",
-								"athletics",
-								"insight",
-								"investigation",
-								"nature",
-								"perception",
-								"stealth",
-								"survival"
+                "weapons": ["simple", "martial"],
+                "skills": [{
+                        "choose": {
+                            "from": [
+								"animal handling|Trato con Animales", 
+								"athletics|Atletismo", 
+								"insight|Perspicacia", 
+								"investigation|Investigación", 
+								"nature|Naturaleza", 
+								"perception|Percepción", 
+								"stealth|Sigilo", 
+								"survival|Supervivencia"
 							],
-							"count": 3
+                            "count": 3
+                        }
+                    }
+                ]
+            },
+            "startingEquipment": {
+                "additionalFromBackground": true,
+                "default": [
+					"(a) {@item cota de escamas|PHB-ES} o (b) {@item armadura de cuero|PHB-ES}", 
+					"(a) dos {@item espada corta|PHB-ES|espadas cortas} o (b) dos {@filter armas sencillas|items|source=PHB-ES|type=simple weapon;melee weapon=sand}", 
+					"(a) un {@item paquete de explorador de mazmorras|PHB-ES} o (b) un {@item paquete de explorador|PHB-ES}", 
+					"Un {@item arco largo|PHB-ES} y una {@item aljaba|PHB-ES} con {@item flechas (20)|PHB-ES|20 flechas}"],
+                "goldAlternative": "{@dice 5d4 × 10|5d4 × 10|Starting Gold}",
+                "defaultData": [{
+                        "a": ["cota de escamas|PHB-ES"],
+                        "b": ["armadura de cuero|PHB-ES"]
+                    }, {
+                        "a": [{
+                                "item": "espada corta|PHB-ES",
+                                "quantity": 2
+                            }
+                        ],
+                        "b": [{
+                                "equipmentType": "weaponSimpleMelee",
+                                "quantity": 2
+                            }
+                        ]
+                    }, {
+                        "a": ["paquete de explorador de mazmorras|PHB-ES"],
+                        "b": ["paquete de explorador|PHB-ES"]
+                    }, {
+                        "_": ["arco largo|PHB-ES", "flechas (20)|PHB-ES"]
+                    }
+                ]
+            },
+            "multiclassing": {
+                "requirements": {
+                    "dex": 13,
+                    "wis": 13
+                },
+                "proficienciesGained": {
+                    "armor": [{
+							"proficiency": "light",
+							"full": "{@filter armaduras ligeras|items|source=PHB-ES|type=light armor}"
+						},{
+							"proficiency": "medium",
+							"full": "{@filter armaduras medias|items|source=PHB-ES|type=medium armor}"
+						},{
+							"proficiency": "shields",
+							"full": "{@item escudo|PHB-ES|escudos}"
 						}
-					}
-				]
-			},
-			"startingEquipment": {
-				"additionalFromBackground": true,
-				"default": [
-					"(a) {@item Cota de escamas|PHB-ES} or (b) {@item Armadura de cuero|PHB-ES}",
-					"(a) two {@item Espada corta|PHB-ES} or (b) two {@filter simple melee weapons|items|source=phb|category=basic|type=simple weapon;melee weapon=sand}",
-					"(a) a {@item Paquete de explorador de mazmorras|PHB-ES} or (b) an {@item Paquete de explorador|PHB-ES}",
-					"A {@item longbow|PHB-ES} and a {@item Aljaba|PHB-ES} of {@item Flechas (20)|PHB-ES}"
-				],
-				"goldAlternative": "{@dice 5d4×10|5d4 × 10|Starting Gold}"
-			},
-			"multiclassing": {
-				"requirements": {
-					"dex": 13,
-					"wis": 13
-				},
-				"proficienciesGained": {
-					"armor": [
-						"light",
-						"medium",
-						"shields"
 					],
-					"skills": [
-						{
-							"choose": {
-								"from": [
-									"animal handling",
-									"athletics",
-									"insight",
-									"investigation",
-									"nature",
-									"perception",
-									"stealth",
-									"survival"
+                    "skills": [{
+                            "choose": {
+                                "from": [
+									"animal handling|Trato con Animales", 
+									"athletics|Atletismo", 
+									"insight|Perspicacia", 
+									"investigation|Investigación", 
+									"nature|Naturaleza", 
+									"perception|Percepción", 
+									"stealth|Sigilo", 
+									"survival|Supervivencia"
 								],
-								"count": 1
-							}
-						}
-					],
-					"weapons": [
-						"simple",
-						"martial"
-					]
-				}
-			},
-			"classTableGroups": [
+                                "count": 1
+                            }
+                        }
+                    ],
+                    "weapons": ["simple", "martial"]
+                }
+            },
+            "classTableGroups": [{
+                    "colLabels": ["{@filter Trucos conocidos|spells|class=Explorador (PHB-ES)}"],
+                    "rows": [[0], [2], [3], [3], [4], [4], [5], [5], [6], [6], [7], [7], [8], [8], [9], [9], [10], [10], [11], [11]]
+                }, {
+                    "title": "Espacios de conjuro por cada nivel de conjuro",
+                    "colLabels": [
+						"{@filter 1|spells|level=1|class=Explorador (PHB-ES)}", 
+						"{@filter 2|spells|level=2|class=Explorador (PHB-ES)}", 
+						"{@filter 3|spells|level=3|class=Explorador (PHB-ES)}", 
+						"{@filter 4|spells|level=4|class=Explorador (PHB-ES)}", 
+						"{@filter 5|spells|level=5|class=Explorador (PHB-ES)}"],
+                    "rows": [[0, 0, 0, 0, 0], [2, 0, 0, 0, 0], [3, 0, 0, 0, 0], [3, 0, 0, 0, 0], [4, 2, 0, 0, 0], [4, 2, 0, 0, 0], [4, 3, 0, 0, 0], [4, 3, 0, 0, 0], [4, 3, 2, 0, 0], [4, 3, 2, 0, 0], [4, 3, 3, 0, 0], [4, 3, 3, 0, 0], [4, 3, 3, 1, 0], [4, 3, 3, 1, 0], [4, 3, 3, 2, 0], [4, 3, 3, 2, 0], [4, 3, 3, 3, 1], [4, 3, 3, 3, 1], [4, 3, 3, 3, 2], [4, 3, 3, 3, 2]]
+                }
+            ],
+            "classFeatures": [
+				"Favored Enemy|Ranger||1",
+				"Natural Explorer|Ranger||1",
+				"Fighting Style|Ranger||2",
+				"Spellcasting|Ranger||2", 
 				{
-					"colLabels": [
-						"{@filter Spells Known|spells|class=ranger}"
-					],
-					"rows": [
-						[
-							0
-						],
-						[
-							2
-						],
-						[
-							3
-						],
-						[
-							3
-						],
-						[
-							4
-						],
-						[
-							4
-						],
-						[
-							5
-						],
-						[
-							5
-						],
-						[
-							6
-						],
-						[
-							6
-						],
-						[
-							7
-						],
-						[
-							7
-						],
-						[
-							8
-						],
-						[
-							8
-						],
-						[
-							9
-						],
-						[
-							9
-						],
-						[
-							10
-						],
-						[
-							10
-						],
-						[
-							11
-						],
-						[
-							11
-						]
-					]
-				},
+                    "classFeature": "Ranger Archetype|Ranger||3",
+                    "gainSubclassFeature": true
+                }, 
+				"Primeval Awareness|Ranger||3", 
+				"Ability Score Improvement|Ranger||4",
+				"Extra Attack|Ranger||5", 
+				"Favored Enemy and Natural Explorer improvements|Ranger||6",
 				{
-					"title": "Spell Slots per Spell Level",
-					"colLabels": [
-						"{@filter 1st|spells|level=1|class=Ranger}",
-						"{@filter 2nd|spells|level=2|class=Ranger}",
-						"{@filter 3rd|spells|level=3|class=Ranger}",
-						"{@filter 4th|spells|level=4|class=Ranger}",
-						"{@filter 5th|spells|level=5|class=Ranger}"
-					],
-					"rows": [
-						[
-							0,
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							2,
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							3,
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							3,
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							2,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							2,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							2,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							2,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							1,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							1,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							2,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							2,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							1
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							1
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							2
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							2
-						]
-					]
-				}
+                    "classFeature": "Ranger Archetype feature|Ranger||7",
+                    "gainSubclassFeature": true
+                }, 
+				"Ability Score Improvement|Ranger||8",
+				"Land's Stride|Ranger||8", 
+				"Hide in Plain Sight|Ranger||10",
+				"Natural Explorer improvement|Ranger||10",
+				{
+                    "classFeature": "Ranger Archetype feature|Ranger||11",
+                    "gainSubclassFeature": true
+                }, 
+				"Ability Score Improvement|Ranger||12",
+				"Vanish|Ranger||14", 
+				"Favored Enemy improvement|Ranger||14", 
+				{
+                    "classFeature": "Ranger Archetype feature|Ranger||15",
+                    "gainSubclassFeature": true
+                }, 
+				"Ability Score Improvement|Ranger||16",
+				"Feral Senses|Ranger||18", 
+				"Ability Score Improvement|Ranger||19",
+				"Foe Slayer|Ranger||20"
 			],
-			"classFeatures": [
-				[
-					{
-						"name": "Favored Enemy",
-						"entries": [
-							"Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy.",
-							"Choose a type of favored enemy: {@filter aberrations|bestiary|type=aberration}, {@filter beasts|bestiary|type=beast}, {@filter celestials|bestiary|type=celestial}, {@filter constructs|bestiary|type=construct}, {@filter dragons|bestiary|type=dragon}, {@filter elementals|bestiary|type=elemental}, {@filter fey|bestiary|type=fey}, {@filter fiends|bestiary|type=fiend}, {@filter giants|bestiary|type=giant}, {@filter monstrosities|bestiary|type=monstrosity}, {@filter oozes|bestiary|type=ooze}, {@filter plants|bestiary|type=plant}, or {@filter undead|bestiary|type=undead}. Alternatively, you can select two races of {@filter humanoid|bestiary|type=humanoid} (such as {@creature gnoll||gnolls} and {@creature orc||orcs}) as favored enemies.",
-							"You have advantage on Wisdom (Survival) checks to track your favored enemies, as well as on Intelligence checks to recall information about them.",
-							"When you gain this feature, you also learn one language of your choice that is spoken by your favored enemies, if they speak one at all.",
-							"You choose one additional favored enemy, as well as an associated language, at 6th and 14th level. As you gain levels, your choices should reflect the types of monsters you have encountered on your adventures."
-						]
-					},
-					{
-						"name": "Natural Explorer",
-						"entries": [
-							"You are particularly familiar with one type of natural environment and are adept at traveling and surviving in such regions. Choose one type of favored terrain: arctic, coast, desert, forest, grassland, mountain, swamp, or the Underdark. When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency bonus is doubled if you are using a skill that you're proficient in.",
-							"While traveling for an hour or more in your favored terrain, you gain the following benefits:",
-							{
-								"type": "list",
-								"items": [
-									"Difficult terrain doesn't slow your group's travel.",
-									"Your group can't become lost except by magical means.",
-									"Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.",
-									"If you are traveling alone, you can move stealthily at a normal pace.",
-									"When you forage, you find twice as much food as you normally would.",
-									"While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area."
-								]
-							},
-							"You choose additional favored terrain types at 6th and 10th level."
-						]
-					}
-				],
-				[
-					{
-						"name": "Fighting Style",
-						"entries": [
-							"At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again.",
-							{
-								"type": "options",
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Archery",
-										"entries": [
-											"You gain a +2 bonus to attack rolls you make with ranged weapons."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Defense",
-										"entries": [
-											"While you are wearing armor, you gain a +1 bonus to AC."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Dueling",
-										"entries": [
-											"When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Two-Weapon Fighting",
-										"entries": [
-											"When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack."
-										]
-									}
-								]
-							}
-						]
-					},
-					{
-						"name": "Spellcasting",
-						"entries": [
-							"By the time you reach 2nd level, you have learned to use the magical essence of nature to cast spells, much as a druid does. See {@book chapter 10|PHB|10} for the general rules of spellcasting and chapter 11 for the {@filter ranger spell list|spells|class=ranger}.",
-							{
-								"type": "entries",
-								"name": "Spell Slots",
-								"entries": [
-									"The Ranger table shows how many spell slots you have to cast your {@filter ranger spells|spells|class=ranger} of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
-									"For example, if you know the 1st-level spell {@spell Encantar animal # Animal Friendship|PHB-ES|encantar animal} and have a 1st-level and a 2nd-level spell slot available, you can cast {@spell Encantar animal # Animal Friendship|PHB-ES|encantar animal} using either slot."
-								]
-							},
-							{
-								"type": "entries",
-								"name": "Spells Known of 1st Level and Higher",
-								"entries": [
-									"You know two 1st-level spells of your choice from the ranger spell list.",
-									"The Spells Known column of the Ranger table shows when you learn more ranger spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level.",
-									"Additionally, when you gain a level in this class, you can choose one of the ranger spells you know and replace it with another spell from the ranger spell list, which also must be of a level for which you have spell slots."
-								]
-							},
-							{
-								"type": "entries",
-								"name": "Spellcasting Ability",
-								"entries": [
-									"Wisdom is your spellcasting ability for your ranger spells, since your magic draws on your attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a ranger spell you cast and when making an attack roll with one.",
-									{
-										"type": "abilityDc",
-										"name": "Spell",
-										"attributes": [
-											"wis"
-										]
-									},
-									{
-										"type": "abilityAttackMod",
-										"name": "Spell",
-										"attributes": [
-											"wis"
-										]
-									}
-								]
-							}
-						]
-					}
-				],
-				[
-					{
-						"name": "Ranger Archetype",
-						"entries": [
-							"At 3rd level, you choose an archetype that you strive to emulate from the list of available archetypes. Your choice grants features at 3rd level, and again at 7th, 11th, and 15th level."
-						],
-						"gainSubclassFeature": true
-					},
-					{
-						"name": "Primeval Awareness",
-						"entries": [
-							"Beginning at 3rd level, you can use your action and expend one ranger spell slot to focus your awareness on the region around you. For 1 minute per level of the spell slot you expend, you can sense whether the following types of creatures are present within 1 mile of you (or within up to 6 miles if you are in your favored terrain): aberrations, celestials, dragons, elementals, fey, fiends, and undead. This feature doesn't reveal the creatures' location or number."
-						]
-					}
-				],
-				[
-					{
-						"name": "Ability Score Improvement",
-						"entries": [
-							"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-							"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-						]
-					}
-				],
-				[
-					{
-						"name": "Extra Attack",
-						"entries": [
-							"Beginning at 5th level, you can attack twice, instead of once, whenever you take the {@action Atacar|PHB-ES|atacar} action on your turn."
-						]
-					}
-				],
-				[
-					{
-						"name": "Favored Enemy and Natural Explorer improvements",
-						"entries": [
-							"At 6th level, you gain an additional favored terrain.",
-							"At 6th level, you choose one additional favored enemy, as well as an associated language. Your choice should reflect the types of monsters you have encountered on your adventures."
-						]
-					}
-				],
-				[
-					{
-						"name": "Ranger Archetype feature",
-						"entries": [
-							"At 7th level, you gain a feature granted to you by your Ranger Archetype."
-						],
-						"gainSubclassFeature": true
-					}
-				],
-				[
-					{
-						"name": "Ability Score Improvement",
-						"entries": [
-							"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-							"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-						]
-					},
-					{
-						"name": "Land's Stride",
-						"entries": [
-							"Starting at 8th level, moving through nonmagical difficult terrain costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.",
-							"In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the {@spell Enmarañar # Entangle|PHB-ES|enmarañar} spell."
-						]
-					}
-				],
-				[],
-				[
-					{
-						"name": "Hide in Plain Sight",
-						"entries": [
-							"Starting at 10th level, you can spend 1 minute creating camouflage for yourself. You must have access to fresh mud, dirt, plants, soot, and other naturally occurring materials with which to create your camouflage.",
-							"Once you are camouflaged in this way, you can try to hide by pressing yourself up against a solid surface, such as a tree or wall, that is at least as tall and wide as you are. You gain a +10 bonus to Dexterity ({@skill Stealth}) checks as long as you remain there without moving or taking actions. Once you move or take an action or a reaction, you must camouflage yourself again to gain this benefit."
-						]
-					},
-					{
-						"name": "Natural Explorer improvement",
-						"entries": [
-							"You gain an additional favored terrain."
-						]
-					}
-				],
-				[
-					{
-						"name": "Ranger Archetype feature",
-						"entries": [
-							"At 11th level, you gain a feature granted to you by your Ranger Archetype."
-						],
-						"gainSubclassFeature": true
-					}
-				],
-				[
-					{
-						"name": "Ability Score Improvement",
-						"entries": [
-							"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-							"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-						]
-					}
-				],
-				[],
-				[
-					{
-						"name": "Vanish",
-						"entries": [
-							"Starting at 14th level, you can use the {@action Esconderse|PHB-ES|esconderse} action as a bonus action on your turn. Also, you can't be tracked by nonmagical means, unless you choose to leave a trail."
-						]
-					},
-					{
-						"name": "Favored Enemy improvement",
-						"entries": [
-							"At 14th level, you choose one additional favored enemy, as well as an associated language. Your choice should reflect the types of monsters you have encountered on your adventures."
-						]
-					}
-				],
-				[
-					{
-						"name": "Ranger Archetype feature",
-						"entries": [
-							"At 15th level, you gain a feature granted to you by your Ranger Archetype."
-						],
-						"gainSubclassFeature": true
-					}
-				],
-				[
-					{
-						"name": "Ability Score Improvement",
-						"entries": [
-							"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-							"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-						]
-					}
-				],
-				[],
-				[
-					{
-						"name": "Feral Senses",
-						"entries": [
-							"At 18th level, you gain preternatural senses that help you fight creatures you can't see. When you attack a creature you can't see, your inability to see it doesn't impose disadvantage on your attack rolls against it. You are also aware of the location of any {@condition Invisible|PHB-ES|invisible} creature within 30 feet of you, provided that the creature isn't hidden from you and you aren't {@condition Cegado|PHB-ES|cegado} or {@condition Ensordecido|PHB-ES|ensordecido}."
-						]
-					}
-				],
-				[
-					{
-						"name": "Ability Score Improvement",
-						"entries": [
-							"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-							"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-						]
-					}
-				],
-				[
-					{
-						"name": "Foe Slayer",
-						"entries": [
-							"At 20th level, you become an unparalleled hunter of your enemies. Once on each of your turns, you can add your Wisdom modifier to the attack roll or the damage roll of an attack you make against one of your favored enemies. You can choose to use this feature before or after the roll, but before any effects of the roll are applied."
-						]
-					}
-				]
-			],
-			"subclassTitle": "Ranger Archetype",
-			"subclasses": [
-				{
-					"name": "Hunter",
-					"shortName": "Hunter",
-					"source": "PHB-ES",
-					"srd": true,
-					"subclassFeatures": [
-						[
-							{
-								"name": "Hunter",
-								"entries": [
-									"Emulating the Hunter archetype means accepting your place as a bulwark between civilization and the terrors of the wilderness. As you walk the Hunter's path, you learn specialized techniques for fighting the threats you face, from rampaging ogres and hordes of orcs to towering giants and terrifying dragons.",
-									{
-										"type": "entries",
-										"name": "Hunter's Prey",
-										"entries": [
-											"At 3rd level, you gain one of the following features of your choice: Colossus Slayer, Giant Killer, or Horde Breaker.",
-											{
-												"type": "entries",
-												"entries": [
-													{
-														"type": "entries",
-														"name": "Colossus Slayer",
-														"entries": [
-															"Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra {@dice 1d8} damage if it's below its hit point maximum. You can deal this extra damage only once per turn."
-														]
-													}
-												]
-											},
-											{
-												"type": "entries",
-												"entries": [
-													{
-														"type": "entries",
-														"name": "Giant Killer",
-														"entries": [
-															"When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature."
-														]
-													}
-												]
-											},
-											{
-												"type": "entries",
-												"entries": [
-													{
-														"type": "entries",
-														"name": "Horde Breaker",
-														"entries": [
-															"Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon."
-														]
-													}
-												]
-											}
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Defensive Tactics",
-										"entries": [
-											"At 7th level, you gain one of the following features of your choice: Escape the Horde, Multiattack Defense, or Steel Will.",
-											{
-												"type": "entries",
-												"entries": [
-													{
-														"type": "entries",
-														"name": "Escape the Horde",
-														"entries": [
-															"Opportunity attacks against you are made with disadvantage."
-														]
-													}
-												]
-											},
-											{
-												"type": "entries",
-												"entries": [
-													{
-														"type": "entries",
-														"name": "Multiattack Defense",
-														"entries": [
-															"When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that creature for the rest of the turn."
-														]
-													}
-												]
-											},
-											{
-												"type": "entries",
-												"entries": [
-													{
-														"type": "entries",
-														"name": "Steel Will",
-														"entries": [
-															"You have advantage on saving throws against being {@condition Asustado|PHB-ES|asustado}."
-														]
-													}
-												]
-											}
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Multiattack",
-										"entries": [
-											"At 11th level, you gain one of the following features of your choice: Volley or Whirlwind Attack.",
-											{
-												"type": "entries",
-												"entries": [
-													{
-														"type": "entries",
-														"name": "Volley",
-														"entries": [
-															"You can use your action to make a ranged attack against any number of creatures within 10 feet of a point you can see within your weapon's range. You must have ammunition for each target, as normal, and you make a separate attack roll for each target."
-														]
-													}
-												]
-											},
-											{
-												"type": "entries",
-												"entries": [
-													{
-														"type": "entries",
-														"name": "Whirlwind Attack",
-														"entries": [
-															"You can use your action to make a melee attack against any number of creatures within 5 feet of you, with a separate attack roll for each target."
-														]
-													}
-												]
-											}
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Superior Hunter's Defense",
-										"entries": [
-											"At 15th level, you gain one of the following features of your choice: Evasion, Stand Against the Tide, or Uncanny Dodge.",
-											{
-												"type": "entries",
-												"entries": [
-													{
-														"type": "entries",
-														"name": "Evasion",
-														"entries": [
-															"You can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or a {@spell Relámpago # Lightning Bolt|PHB-ES|relámpago} spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
-														]
-													}
-												]
-											},
-											{
-												"type": "entries",
-												"entries": [
-													{
-														"type": "entries",
-														"name": "Stand Against the Tide",
-														"entries": [
-															"When a hostile creature misses you with a melee attack, you can use your reaction to force that creature to repeat the same attack against another creature (other than itself) of your choice."
-														]
-													}
-												]
-											},
-											{
-												"type": "entries",
-												"entries": [
-													{
-														"type": "entries",
-														"name": "Uncanny Dodge",
-														"entries": [
-															"When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you."
-														]
-													}
-												]
-											}
-										]
-									}
-								]
-							}
-						]
+            "subclassTitle": "Ranger Archetype",
+            "subclasses": [{
+                    "name": "Beast Master",
+                    "shortName": "Beast Master",
+                    "source": "PHB-ES",
+                    "page": 93,
+                    "subclassFeatures": [
+						"Beast Master|Ranger||Beast Master||3", 
+						"Exceptional Training|Ranger||Beast Master||7", 
+						"Bestial Fury|Ranger||Beast Master||11", 
+						"Share Spells|Ranger||Beast Master||15"
 					]
-				},
-				{
-					"name": "Beast Master",
-					"shortName": "Beast Master",
-					"source": "PHB-ES",
-					"subclassFeatures": [
-						[
-							{
-								"name": "Beast Master",
-								"entries": [
-									"The Beast Master archetype embodies a friendship between the civilized races and the beasts of the world. United in focus, beast and ranger work as one to fight the monstrous foes that threaten civilization and the wilderness alike. Emulating the Beast Master archetype means committing yourself to this ideal, working in partnership with an animal as its companion and friend.",
-									{
-										"type": "entries",
-										"name": "Ranger's Companion",
-										"entries": [
-											"You gain a beast companion that accompanies you on your adventures and is trained to fight alongside you. Choose a {@filter beast that is no larger than Medium and that has a challenge rating of 1/4 or lower|bestiary|challenge rating=[&0;&1/4]|type=beast|size=f;d;t;s;m|miscellaneous=!swarm}. Add your proficiency bonus to the beast's AC, attack rolls, and damage rolls, as well as to any saving throws and skills it is proficient in. Its hit point maximum equals its normal maximum or four times your ranger level, whichever is higher. Like any creature, the beast can spend Hit Dice during a short rest.",
-											"The beast obeys your commands as best as it can. It takes its turn on your initiative. On your turn, you can verbally command the beast where to move (no action required by you). You can use your action to verbally command it to take the {@action Atacar|PHB-ES|atacar}, {@action Correr|PHB-ES|correr}, {@action Destrabarse|PHB-ES|destrabarse}, or {@action Ayudar|PHB-ES|ayudar} action. If you don't issue a command, the beast takes the {@action Esquivar|PHB-ES|esquivar} action. Once you have the Extra Attack feature, you can make one weapon attack yourself when you command the beast to take the {@action Atacar|PHB-ES|atacar} action.",
-											"If you are {@condition Incapacitado|PHB-ES|incapacitado} or absent, your beast companion acts on its own, focusing on protecting you and itself. It never requires your command to use its reaction, such as when making an opportunity attack.",
-											"Like any creature, the beast can spend hit dice during a short rest.",
-											"While traveling through your favored terrain with only the beast, you can move stealthily at a normal pace.",
-											"If the beast dies, you can obtain another one by spending 8 hours magically bonding with another beast that isn't hostile to you, either the same type of beast as before or a different one."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Exceptional Training",
-										"entries": [
-											"Beginning at 7th level, on any of your turns when your beast companion doesn't attack, you can use a bonus action to command the beast to take the {@action Correr|PHB-ES|correr}, {@action Destrabarse|PHB-ES|destrabarse}, or {@action Ayudar|PHB-ES|ayudar} action on its turn. In addition, the beast's attacks now count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Bestial Fury",
-										"entries": [
-											"Starting at 11th level, when you command your beast companion to take the {@action Atacar|PHB-ES|atacar} action, the beast can make two attacks, or it can take the Multiattack action if it has that action."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Share Spells",
-										"entries": [
-											"Beginning at 15th level, when you cast a spell targeting yourself, you can also affect your beast companion with the spell if the beast is within 30 feet of you."
-										]
-									}
-								]
-							}
-						]
+                }, {
+                    "name": "Hunter",
+                    "shortName": "Hunter",
+                    "source": "PHB-ES",
+                    "page": 93,
+                    "srd": true,
+                    "subclassFeatures": [
+						"Hunter|Ranger||Hunter||3", 
+						"Defensive Tactics|Ranger||Hunter||7", 
+						"Multiattack|Ranger||Hunter||11", 
+						"Superior Hunter's Defense|Ranger||Hunter||15"
 					]
-				}
-			],
-			"fluff": [
-				{
-					"name": "Ranger",
-					"type": "section",
-					"entries": [
-						"Rough and wild looking, a human stalks alone through the shadows of trees, hunting the orcs he knows are planning a raid on a nearby farm. Clutching a shortsword in each hand, he becomes a whirlwind of steel, cutting down one enemy after another.",
-						"After tumbling away from a cone of freezing air, an elf finds her feet and draws back her bow to loose an arrow at the white dragon. Shrugging off the wave of fear that emanates from the dragon like the cold of its breath, she sends one arrow after another to find the gaps between the dragon's thick scales.",
-						"Holding his hand high, a half-elf whistles to the hawk that circles high above him, calling the bird back to his side. Whispering instructions in Elvish, he points to the owlbear he's been tracking and sends the hawk to distract the creature while he readies his bow.",
-						"Far from the bustle of cities and towns, past the hedges that shelter the most distant farms from the terrors of the wild, amid the dense-packed trees of trackless forests and across wide and empty plains, rangers keep their unending watch.",
+                }
+            ],
+            "fluff": [{
+                    "name": "Explorador",
+                    "type": "section",
+                    "entries": [
+						"Rough and wild looking, a human stalks alone through the shadows of trees, hunting the orcs he knows are planning a raid on a nearby farm. Clutching a shortsword in each hand, he becomes a whirlwind of steel, cutting down one enemy after another.", 
+						"After tumbling away from a cone of freezing air, an elf finds her feet and draws back her bow to loose an arrow at the white dragon. Shrugging off the wave of fear that emanates from the dragon like the cold of its breath, she sends one arrow after another to find the gaps between the dragon's thick scales.", 
+						"Holding his hand high, a half-elf whistles to the hawk that circles high above him, calling the bird back to his side. Whispering instructions in Elvish, he points to the owlbear he's been tracking and sends the hawk to distract the creature while he readies his bow.", 
+						"Far from the bustle of cities and towns, past the hedges that shelter the most distant farms from the terrors of the wild, amid the dense-packed trees of trackless forests and across wide and empty plains, rangers keep their unending watch.", 
 						{
-							"type": "entries",
-							"name": "Deadly Hunters",
-							"entries": [
-								"Warriors of the wilderness, rangers specialize in hunting the monsters that threaten the edges of civilization\u2014humanoid raiders, rampaging beasts and monstrosities, terrible giants, and deadly dragons. They learn to track their quarry as a predator does, moving stealthily through the wilds and hiding themselves in brush and rubble. Rangers focus their combat training on techniques that are particularly useful against their specific favored foes.",
+                            "type": "entries",
+                            "name": "Deadly Hunters",
+                            "entries": [
+								"Warriors of the wilderness, rangers specialize in hunting the monsters that threaten the edges of civilization—humanoid raiders, rampaging beasts and monstrosities, terrible giants, and deadly dragons. They learn to track their quarry as a predator does, moving stealthily through the wilds and hiding themselves in brush and rubble. Rangers focus their combat training on techniques that are particularly useful against their specific favored foes.", 
 								"Thanks to their familiarity with the wilds, rangers acquire the ability to cast spells that harness nature's power, much as a druid does. Their spells, like their combat abilities, emphasize speed, stealth, and the hunt. A ranger's talents and abilities are honed with deadly focus on the grim task of protecting the borderlands."
 							]
-						},
-						{
-							"type": "entries",
-							"name": "Independent Adventurers",
-							"entries": [
-								"Though a ranger might make a living as a hunter, a guide, or a tracker, a ranger's true calling is to defend the outskirts of civilization from the ravages of monsters and humanoid hordes that press in from the wild. In some places, rangers gather in secretive orders or join forces with druidic circles. Many rangers, though, are independent almost to a fault, knowing that, when a dragon or a band of orcs attacks, a ranger might be the first\u2014and possibly the last\u2014line of defense.",
+                        }, {
+                            "type": "entries",
+                            "name": "Independent Adventurers",
+                            "entries": [
+								"Though a ranger might make a living as a hunter, a guide, or a tracker, a ranger's true calling is to defend the outskirts of civilization from the ravages of monsters and humanoid hordes that press in from the wild. In some places, rangers gather in secretive orders or join forces with druidic circles. Many rangers, though, are independent almost to a fault, knowing that, when a dragon or a band of orcs attacks, a ranger might be the first—and possibly the last—line of defense.", 
 								"This fierce independence makes rangers well suited to adventuring, since they are accustomed to life far from the comforts of a dry bed and a hot bath. Faced with city-bred adventurers who grouse and whine about the hardships of the wild, rangers respond with some mixture of amusement, frustration, and compassion. But they quickly learn that other adventurers who can carry their own weight in a fight against civilization's foes are worth any extra burden. Coddled city folk might not know how to feed themselves or find fresh water in the wild, but they make up for it in other ways."
 							]
-						},
-						{
-							"type": "entries",
-							"name": "Creating a Ranger",
-							"entries": [
-								"As you create your ranger character, consider the nature of the training that gave you your particular capabilities. Did you train with a single mentor, wandering the wilds together until you mastered the ranger's ways? Did you leave your apprenticeship, or was your mentor slain\u2014perhaps by the same kind of monster that became your favored enemy? Or perhaps you learned your skills as part of a band of rangers affiliated with a druidic circle, trained in mystic paths as well as wilderness lore. You might be self-taught, a recluse who learned combat skills, tracking, and even a magical connection to nature through the necessity of surviving in the wilds.",
-								"What's the source of your particular hatred of a certain kind of enemy? Did a monster kill someone you loved or destroy your home village? Or did you see too much of the destruction these monsters cause and commit yourself to reining in their depredations? Is your adventuring career a continuation of your work in protecting the borderlands, or a significant change? What made you join up with a band of adventurers? Do you find it challenging to teach new allies the ways of the wild, or do you welcome the relief from solitude that they offer?",
+                        }, {
+                            "type": "entries",
+                            "name": "Creating a Ranger",
+                            "entries": [
+								"As you create your ranger character, consider the nature of the training that gave you your particular capabilities. Did you train with a single mentor, wandering the wilds together until you mastered the ranger's ways? Did you leave your apprenticeship, or was your mentor slain—perhaps by the same kind of monster that became your favored enemy? Or perhaps you learned your skills as part of a band of rangers affiliated with a druidic circle, trained in mystic paths as well as wilderness lore. You might be self-taught, a recluse who learned combat skills, tracking, and even a magical connection to nature through the necessity of surviving in the wilds.", 
+								"What's the source of your particular hatred of a certain kind of enemy? Did a monster kill someone you loved or destroy your home village? Or did you see too much of the destruction these monsters cause and commit yourself to reining in their depredations? Is your adventuring career a continuation of your work in protecting the borderlands, or a significant change? What made you join up with a band of adventurers? Do you find it challenging to teach new allies the ways of the wild, or do you welcome the relief from solitude that they offer?", 
 								{
-									"type": "entries",
-									"name": "Quick Build",
-									"entries": [
+                                    "type": "entries",
+                                    "name": "Quick Build",
+                                    "entries": [
 										"You can make a ranger quickly by following these suggestions. First, make Dexterity your highest ability score, followed by Wisdom. (Some rangers who focus on two-weapon fighting make Strength higher than Dexterity.) Second, choose the {@background outlander} background."
 									]
-								}
+                                }
+                            ]
+                        }
+                    ],
+                    "source": "PHB-ES",
+                    "page": 89
+                }
+            ],
+            "fluff": [{
+                    "name": "Explorador",
+                    "type": "section",
+                    "entries": [
+						"Rough and wild looking, a human stalks alone through the shadows of trees, hunting the orcs he knows are planning a raid on a nearby farm. Clutching a shortsword in each hand, he becomes a whirlwind of steel, cutting down one enemy after another.", 
+						"After tumbling away from a cone of freezing air, an elf finds her feet and draws back her bow to loose an arrow at the white dragon. Shrugging off the wave of fear that emanates from the dragon like the cold of its breath, she sends one arrow after another to find the gaps between the dragon's thick scales.", 
+						"Holding his hand high, a half-elf whistles to the hawk that circles high above him, calling the bird back to his side. Whispering instructions in Elvish, he points to the owlbear he's been tracking and sends the hawk to distract the creature while he readies his bow.", 
+						"Far from the bustle of cities and towns, past the hedges that shelter the most distant farms from the terrors of the wild, amid the dense-packed trees of trackless forests and across wide and empty plains, rangers keep their unending watch.", 
+						{
+                            "type": "entries",
+                            "name": "Deadly Hunters",
+                            "entries": [
+								"Warriors of the wilderness, rangers specialize in hunting the monsters that threaten the edges of civilization—humanoid raiders, rampaging beasts and monstrosities, terrible giants, and deadly dragons. They learn to track their quarry as a predator does, moving stealthily through the wilds and hiding themselves in brush and rubble. Rangers focus their combat training on techniques that are particularly useful against their specific favored foes.", 
+								"Thanks to their familiarity with the wilds, rangers acquire the ability to cast spells that harness nature's power, much as a druid does. Their spells, like their combat abilities, emphasize speed, stealth, and the hunt. A ranger's talents and abilities are honed with deadly focus on the grim task of protecting the borderlands."
 							]
-						}
-					],
-					"source": "PHB-ES",
-					"page": 89
-				}
-			]
-		},
+                        }, {
+                            "type": "entries",
+                            "name": "Independent Adventurers",
+                            "entries": [
+								"Though a ranger might make a living as a hunter, a guide, or a tracker, a ranger's true calling is to defend the outskirts of civilization from the ravages of monsters and humanoid hordes that press in from the wild. In some places, rangers gather in secretive orders or join forces with druidic circles. Many rangers, though, are independent almost to a fault, knowing that, when a dragon or a band of orcs attacks, a ranger might be the first—and possibly the last—line of defense.", 
+								"This fierce independence makes rangers well suited to adventuring, since they are accustomed to life far from the comforts of a dry bed and a hot bath. Faced with city-bred adventurers who grouse and whine about the hardships of the wild, rangers respond with some mixture of amusement, frustration, and compassion. But they quickly learn that other adventurers who can carry their own weight in a fight against civilization's foes are worth any extra burden. Coddled city folk might not know how to feed themselves or find fresh water in the wild, but they make up for it in other ways."
+							]
+                        }, {
+                            "type": "entries",
+                            "name": "Creating a Ranger",
+                            "entries": [
+								"As you create your ranger character, consider the nature of the training that gave you your particular capabilities. Did you train with a single mentor, wandering the wilds together until you mastered the ranger's ways? Did you leave your apprenticeship, or was your mentor slain—perhaps by the same kind of monster that became your favored enemy? Or perhaps you learned your skills as part of a band of rangers affiliated with a druidic circle, trained in mystic paths as well as wilderness lore. You might be self-taught, a recluse who learned combat skills, tracking, and even a magical connection to nature through the necessity of surviving in the wilds.", 
+								"What's the source of your particular hatred of a certain kind of enemy? Did a monster kill someone you loved or destroy your home village? Or did you see too much of the destruction these monsters cause and commit yourself to reining in their depredations? Is your adventuring career a continuation of your work in protecting the borderlands, or a significant change? What made you join up with a band of adventurers? Do you find it challenging to teach new allies the ways of the wild, or do you welcome the relief from solitude that they offer?", 
+								{
+                                    "type": "entries",
+                                    "name": "Quick Build",
+                                    "entries": [
+										"You can make a ranger quickly by following these suggestions. First, make Dexterity your highest ability score, followed by Wisdom. (Some rangers who focus on two-weapon fighting make Strength higher than Dexterity.) Second, choose the {@background outlander} background."
+									]
+                                }
+                            ]
+                        }
+                    ],
+                    "source": "PHB-ES",
+                    "page": 89
+                }
+            ]
+        },
 		{
 			"name": "Rogue",
 			"source": "PHB-ES",
@@ -17993,7 +17381,7 @@
 										"type": "entries",
 										"name": "Spellcasting",
 										"entries": [
-											"When you reach 3rd level, you gain the ability to cast spells. See {@book chapter 10|PHB|10} for the general rules of spellcasting and chapter 11 for the {@filter wizard spell list|spells|class=wizard}.",
+											"When you reach 3rd level, you gain the ability to cast spells. See {@book chapter 10|PHB-ES|10} for the general rules of spellcasting and chapter 11 for the {@filter wizard spell list|spells|class=wizard}.",
 											{
 												"type": "entries",
 												"entries": [
@@ -18748,7 +18136,7 @@
 					{
 						"name": "Spellcasting",
 						"entries": [
-							"An event in your past, or in the life of a parent or ancestor, left an indelible mark on you, infusing you with arcane magic. This font of magic, whatever its origin, fuels your spells. See {@book chapter 10|PHB|10} for the general rules of spellcasting and chapter 11 for the {@filter sorcerer spell list|spells|class=sorcerer}.",
+							"An event in your past, or in the life of a parent or ancestor, left an indelible mark on you, infusing you with arcane magic. This font of magic, whatever its origin, fuels your spells. See {@book chapter 10|PHB-ES|10} for the general rules of spellcasting and chapter 11 for the {@filter sorcerer spell list|spells|class=sorcerer}.",
 							{
 								"type": "entries",
 								"name": "Cantrips",
@@ -19741,7 +19129,7 @@
 					{
 						"name": "Pact Magic",
 						"entries": [
-							"Your arcane research and the magic bestowed on you by your patron have given you facility with spells. See {@book chapter 10|PHB|10} for the general rules of spellcasting and chapter 11 for the {@filter warlock spell list|spells|class=warlock}.",
+							"Your arcane research and the magic bestowed on you by your patron have given you facility with spells. See {@book chapter 10|PHB-ES|10} for the general rules of spellcasting and chapter 11 for the {@filter warlock spell list|spells|class=warlock}.",
 							{
 								"type": "entries",
 								"name": "Cantrips",
@@ -20720,7 +20108,7 @@
 					{
 						"name": "Spellcasting",
 						"entries": [
-							"As a student of arcane magic, you have a spellbook containing spells that show the first glimmerings of your true power. See {@book chapter 10|PHB|10} for the general rules of spellcasting and chapter 11 for the {@filter wizard spell list|spells|class=wizard}.",
+							"As a student of arcane magic, you have a spellbook containing spells that show the first glimmerings of your true power. See {@book chapter 10|PHB-ES|10} for the general rules of spellcasting and chapter 11 for the {@filter wizard spell list|spells|class=wizard}.",
 							{
 								"type": "entries",
 								"name": "Cantrips",
@@ -23542,7 +22930,7 @@
             "className": "Paladin",
             "classSource": "PHB-ES",
             "level": 2,
-            "entries": ["Cuando alcanzas el nivel 2 has aprendido a emplear la magia divina mediante la meditación y la oración, lanzando conjuros como lo haría un clérigo. El {@book capítulo 10|PHB-ES|10} contiene las reglas de lanzamiento de conjuros y el {@book capítulo 11|PHB|11} la {@filter lista de conjuros de paladín|spells|class=paladin (PHB-ES)}.", {
+            "entries": ["Cuando alcanzas el nivel 2 has aprendido a emplear la magia divina mediante la meditación y la oración, lanzando conjuros como lo haría un clérigo. El {@book capítulo 10|PHB-ES|10} contiene las reglas de lanzamiento de conjuros y el {@book capítulo 11|PHB-ES|11} la {@filter lista de conjuros de paladín|spells|class=paladin (PHB-ES)}.", {
                     "type": "entries",
                     "name": "Preparar y lanzar conjuros",
                     "entries": [
@@ -26895,7 +26283,7 @@
 			}
 		},
 		{
-			"name": "Ranger",
+			"name": "Explorador",
 			"source": "PHB-ES",
 			"reasons": [
 				"I found purpose while I honed my hunting skills by bringing down dangerous animals at the edge of civilization.",
@@ -43690,7 +43078,7 @@
 				{
 					"type": "list",
 					"items": [
-						"You learn two {@filter maneuvers|optionalfeatures|feature type=MV:B} of your choice from among those available to the {@class fighter|phb|Battle Master|Battle Master|phb|Martial Archetype 3} archetype in the fighter class. If a maneuver you use requires your target to make a saving throw to resist the maneuver's effects, the saving throw DC equals 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).",
+						"You learn two {@filter maneuvers|optionalfeatures|feature type=MV:B} of your choice from among those available to the {@class fighter|PHB-ES|Battle Master|Battle Master|PHB-ES|Martial Archetype 3} archetype in the fighter class. If a maneuver you use requires your target to make a saving throw to resist the maneuver's effects, the saving throw DC equals 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).",
 						"You gain one superiority die, which is a {@dice d6} (this die is added to any superiority dice you have from another source). This die is used to fuel your maneuvers. A superiority die is expended when you use it. You regain your expended superiority dice when you finish a short or long rest."
 					]
 				}
@@ -43940,7 +43328,7 @@
 			"source": "PHB-ES",
 			"page": 170,
 			"entries": [
-				"You gain proficiency in any combination of three {@book skills|phb|7|skills} or {@filter tools|items|type=tool;artisan's tools} of your choice."
+				"You gain proficiency in any combination of three {@book skills|PHB-ES|7|skills} or {@filter tools|items|type=tool;artisan's tools} of your choice."
 			]
 		},
 		{
@@ -44261,7 +43649,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				]
@@ -44333,7 +43721,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					},
 					{
@@ -44569,7 +43957,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				],
@@ -44672,7 +44060,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				]
@@ -44909,7 +44297,7 @@
 					],
 					"rows": [
 						[
-							"{@creature animated object (tiny)|phb|Tiny}",
+							"{@creature animated object (tiny)|PHB-ES|Tiny}",
 							"20",
 							"18",
 							"{@hit +8} a impactar, {@damage 1d4 + 4} daño",
@@ -44917,7 +44305,7 @@
 							"{@dice 1d20 + 4|18}"
 						],
 						[
-							"{@creature animated object (small)|phb|Small}",
+							"{@creature animated object (small)|PHB-ES|Small}",
 							"25",
 							"16",
 							"{@hit +6} a impactar, {@damage 1d8 + 2} daño",
@@ -44925,7 +44313,7 @@
 							"{@dice 1d20 + 2|14}"
 						],
 						[
-							"{@creature animated object (medium)|phb|Medium}",
+							"{@creature animated object (medium)|PHB-ES|Medium}",
 							"40",
 							"13",
 							"{@hit +5} a impactar, {@damage 2d6 + 1} daño",
@@ -44933,7 +44321,7 @@
 							"{@dice 1d20 + 1|12}"
 						],
 						[
-							"{@creature animated object (large)|phb|Large}",
+							"{@creature animated object (large)|PHB-ES|Large}",
 							"50",
 							"10",
 							"{@hit +6} a impactar, {@damage 2d10 + 2} daño",
@@ -44941,7 +44329,7 @@
 							"{@dice 1d20|10}"
 						],
 						[
-							"{@creature animated object (huge)|phb|Huge}",
+							"{@creature animated object (huge)|PHB-ES|Huge}",
 							"80",
 							"10",
 							"{@hit +8} a impactar, {@damage 2d12 + 4} daño",
@@ -46199,7 +45587,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				]
@@ -46508,7 +45896,7 @@
 					},
 					{
 						"class": {
-							"name": "Ranger",
+							"name": "Explorador",
 							"source": "PHB-ES"
 						},
 						"subclass": {
@@ -46518,7 +45906,7 @@
 					},
 					{
 						"class": {
-							"name": "Ranger",
+							"name": "Explorador",
 							"source": "PHB-ES"
 						},
 						"subclass": {
@@ -46589,7 +45977,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				],
@@ -46764,7 +46152,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				],
@@ -47477,7 +46865,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				]
@@ -49611,7 +48999,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				],
@@ -50294,7 +49682,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				]
@@ -50355,7 +49743,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				],
@@ -50763,7 +50151,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				]
@@ -50839,7 +50227,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				]
@@ -51517,7 +50905,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				]
@@ -52230,7 +51618,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					},
 					{
@@ -52586,7 +51974,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					},
 					{
@@ -52682,7 +52070,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					},
 					{
@@ -52846,7 +52234,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				]
@@ -53210,7 +52598,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					},
 					{
@@ -53308,7 +52696,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				]
@@ -53671,7 +53059,7 @@
 					},
 					{
 						"class": {
-							"name": "Ranger",
+							"name": "Explorador",
 							"source": "PHB-ES"
 						},
 						"subclass": {
@@ -54438,7 +53826,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				]
@@ -55289,7 +54677,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					},
 					{
@@ -55495,7 +54883,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				],
@@ -55583,7 +54971,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				]
@@ -56428,7 +55816,7 @@
 					},
 					{
 						"class": {
-							"name": "Ranger",
+							"name": "Explorador",
 							"source": "PHB-ES"
 						},
 						"subclass": {
@@ -56951,7 +56339,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				]
@@ -58025,7 +57413,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					},
 					{
@@ -58334,7 +57722,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					},
 					{
@@ -59266,7 +58654,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				]
@@ -59333,7 +58721,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				],
@@ -59526,7 +58914,7 @@
 					},
 					{
 						"class": {
-							"name": "Ranger",
+							"name": "Explorador",
 							"source": "PHB-ES"
 						},
 						"subclass": {
@@ -59646,7 +59034,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				]
@@ -60146,7 +59534,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				]
@@ -60219,7 +59607,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				]
@@ -60655,7 +60043,7 @@
 					},
 					{
 						"class": {
-							"name": "Ranger",
+							"name": "Explorador",
 							"source": "PHB-ES"
 						},
 						"subclass": {
@@ -61690,7 +61078,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				],
@@ -62785,7 +62173,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					},
 					{
@@ -63269,7 +62657,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					},
 					{
@@ -63583,7 +62971,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				]
@@ -63733,7 +63121,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				]
@@ -63811,7 +63199,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					},
 					{
@@ -63916,7 +63304,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					},
 					{
@@ -63999,7 +63387,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					},
 					{
@@ -64348,7 +63736,7 @@
 					},
 					{
 						"class": {
-							"name": "Ranger",
+							"name": "Explorador",
 							"source": "PHB-ES"
 						},
 						"subclass": {
@@ -64761,7 +64149,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				]
@@ -65331,7 +64719,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				]
@@ -66178,7 +65566,7 @@
 					},
 					{
 						"class": {
-							"name": "Ranger",
+							"name": "Explorador",
 							"source": "PHB-ES"
 						},
 						"subclass": {
@@ -66861,7 +66249,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					},
 					{
@@ -67309,7 +66697,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				],
@@ -67870,7 +67258,7 @@
 					},
 					{
 						"class": {
-							"name": "Ranger",
+							"name": "Explorador",
 							"source": "PHB-ES"
 						},
 						"subclass": {
@@ -68009,7 +67397,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				],
@@ -69193,7 +68581,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					},
 					{
@@ -69348,7 +68736,7 @@
 					},
 					{
 						"class": {
-							"name": "Ranger",
+							"name": "Explorador",
 							"source": "PHB-ES"
 						},
 						"subclass": {
@@ -69358,7 +68746,7 @@
 					},
 					{
 						"class": {
-							"name": "Ranger",
+							"name": "Explorador",
 							"source": "PHB-ES"
 						},
 						"subclass": {
@@ -69446,7 +68834,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					},
 					{
@@ -70638,7 +70026,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				]
@@ -70697,7 +70085,7 @@
 				"fromSubclass": [
 					{
 						"class": {
-							"name": "Ranger",
+							"name": "Explorador",
 							"source": "PHB-ES"
 						},
 						"subclass": {
@@ -71301,7 +70689,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				]
@@ -71484,7 +70872,7 @@
 					},
 					{
 						"class": {
-							"name": "Ranger",
+							"name": "Explorador",
 							"source": "PHB-ES"
 						},
 						"subclass": {
@@ -72219,7 +71607,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				],
@@ -72855,7 +72243,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				],
@@ -73053,7 +72441,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				]
@@ -73253,7 +72641,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				],
@@ -73813,7 +73201,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					},
 					{
@@ -74313,7 +73701,7 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				]
@@ -74930,7 +74318,7 @@
 					},
 					{
 						"class": {
-							"name": "Ranger",
+							"name": "Explorador",
 							"source": "PHB-ES"
 						},
 						"subclass": {
@@ -75507,7 +74895,7 @@
 				],
 				"fromClassListVariant": [
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				]
@@ -75610,7 +74998,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				],
@@ -76854,7 +76242,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				]
@@ -76927,7 +76315,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					},
 					{
@@ -77042,7 +76430,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					},
 					{
@@ -77374,7 +76762,7 @@
 						"source": "PHB-ES"
 					},
 					{
-						"name": "Ranger",
+						"name": "Explorador",
 						"source": "PHB-ES"
 					}
 				],
@@ -77784,7 +77172,7 @@
 					},
 					{
 						"class": {
-							"name": "Ranger",
+							"name": "Explorador",
 							"source": "PHB-ES"
 						},
 						"subclass": {
