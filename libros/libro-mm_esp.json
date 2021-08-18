@@ -57,7 +57,7 @@
                 "stealth": "+6",
                 "survival": "+2"
             },
-            "senses": ["{@sense darkvision|visión en la oscuridad} 60 pies"],
+            "senses": ["visión en la oscuridad 60 pies"],
             "passive": 10,
             "languages": ["Común", "Goblin"],
             "cr": "1",
@@ -71,15 +71,14 @@
             ],
             "action": [{
                     "name": "Lucero del alba",
-                    "entries": ["{@atk mw} {@hit 4} a impactar, alcance 5 pies, un objetivo. {@h}11 ({@damage 2d8 + 2}) de daño perforante."]
+                    "entries": ["{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d8 + 2}) piercing damage."]
                 }, {
                     "name": "Jabalina",
-                    "entries": ["{@atk mw,rw} {@hit 4} a impactar, alcance 5 pies o alcance 30/120 pies, un objetivo. {@h}9 ({@damage 2d6 + 2}) de daño perforante en cuerpo a cuerpo o 5 ({@damage 1d6 + 2}) de daño perforante a distancia."]
+                    "entries": ["{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}9 ({@damage 2d6 + 2}) piercing damage in melee or 5 ({@damage 1d6 + 2}) piercing damage at range."]
                 }
             ],
             "environment": ["underdark", "praderas", "bosques"],
-			"hasToken": true,
-            "tokenUrl": "/img/MM/Bugbear.png",
+            "tokenUrl": "https://5e.tools/img/MM/Bugbear.png",
             "soundClip": {
                 "type": "internal",
                 "path": "bestiary/bugbear.mp3"
