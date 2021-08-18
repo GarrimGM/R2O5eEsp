@@ -121,6 +121,259 @@
 					}
 				]
 			}
+        },
+		{
+            "name": "Plebeyo",
+            "source": "MM-ES",
+            "page": 345,
+            "srd": true,
+            "otherSources": [
+                {
+                    "source": "LMoP-ES"
+                }
+            ],
+            "size": "M",
+            "type": {
+                "type": "humanoid",
+                "tags": ["cualquier raza"]
+            },
+            "alignment": ["A"],
+            "ac": [10],
+            "hp": {
+                "average": 4,
+                "formula": "1d8"
+            },
+            "speed": {
+                "walk": 30
+            },
+            "str": 10,
+            "dex": 10,
+            "con": 10,
+            "int": 10,
+            "wis": 10,
+            "cha": 10,
+            "passive": 10,
+            "languages": ["uno cualquiera (normalmente común)"],
+            "cr": "0",
+            "action": [{
+                    "name": "Garrote",
+                    "entries": ["{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) bludgeoning damage."]
+                }
+            ],
+            "environment": ["zonas polares", "desiertos", "costas", "praderas", "colinas", "ciudades", "bosques"],
+            "tokenUrl": "https://5e.tools/img/MM/Commoner.png",
+            "soundClip": {
+                "type": "internal",
+                "path": "bestiary/commoner.mp3"
+            },
+            "languageTags": ["C", "X"],
+            "damageTags": ["B"],
+            "miscTags": ["MW"],
+            "fluff": 
+			{
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": ["Campesinos, sirvientes, esclavos, siervos, peregrinos, mercaderes, artesanos y ermitaños son todos ellos ejemplos de plebeyos."]
+							}
+						]
+					}
+				]
+			}
+        },
+		{
+            "name": "Sectario",
+            "source": "MM-ES",
+            "page": 345,
+            "srd": true,
+            "otherSources": [
+                {
+                    "source": "LMoP-ES"
+                }
+            ],
+            "size": "M",
+            "type": {
+                "type": "humanoid",
+                "tags": ["cualquier raza"]
+            },
+            "alignment": ["L", "NX", "C", "NY", "E"],
+            "ac": [{
+                    "ac": 12,
+                    "from": ["{@item armadura de cuero|PHB-ES}"]
+                }
+            ],
+            "hp": {
+                "average": 9,
+                "formula": "2d8"
+            },
+            "speed": {
+                "walk": 30
+            },
+            "str": 11,
+            "dex": 12,
+            "con": 10,
+            "int": 10,
+            "wis": 11,
+            "cha": 10,
+            "skill": {
+                "deception": "+2",
+                "religion": "+2"
+            },
+            "passive": 10,
+            "languages": ["uno cualquiera (normalmente común)"],
+            "cr": "1/8",
+            "trait": [{
+                    "name": "Devoción Oscura",
+                    "entries": ["El sectario tiene ventaja en las tiradas de salvación para evitar ser {@condition hechizado|PHB-ES} o {@condition asustado|PHB-ES}."]
+                }
+            ],
+            "action": [{
+                    "name": "Cimitarra",
+                    "entries": ["{@atk mw} {@hit 3} to hit, reach 5 ft., one creature. {@h}4 ({@damage 1d6 + 1}) slashing damage."]
+                }
+            ],
+            "tokenUrl": "https://5e.tools/img/MM/Cultist.png",
+            "soundClip": {
+                "type": "internal",
+                "path": "bestiary/cultist.mp3"
+            },
+            "languageTags": ["C", "X"],
+            "damageTags": ["S"],
+            "miscTags": ["MW"],
+            "fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [{
+								"type": "entries",
+								"entries": ["Los sectarios juran lealtad a poderes oscuros: príncipes elementales, señores demoníacos o archidiablos. La mayoría de ellos ocultan sus actividades para evitar ser condenados al ostracismo, apresados o ejecutados por sus creencias. A diferencia de los acólitos malvados, los sectarios suelen mostrar señales evidentes de locura en sus actos y creencias."]
+							}
+						]
+					}
+				],
+				"images": [{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Cultist.png"
+						}
+					}
+				]
+			}
+        },
+		{
+            "name": "Doppelganger",
+            "source": "MM-ES",
+            "page": 82,
+            "srd": true,
+            "otherSources": [
+                {
+                    "source": "LMoP"
+                }
+            ],
+            "size": "M",
+            "type": {
+                "type": "monstrosity",
+                "tags": ["cambiaformas"]
+            },
+            "alignment": ["N"],
+            "ac": [14],
+            "hp": {
+                "average": 52,
+                "formula": "8d8 + 16"
+            },
+            "speed": {
+                "walk": 30
+            },
+            "str": 11,
+            "dex": 18,
+            "con": 14,
+            "int": 11,
+            "wis": 12,
+            "cha": 14,
+            "skill": {
+                "deception": "+6",
+                "insight": "+3"
+            },
+            "senses": ["darkvision 60 ft."],
+            "passive": 11,
+            "conditionImmune": ["charmed"],
+            "languages": ["Común"],
+            "cr": "3",
+            "trait": [{
+                    "name": "Cambiaformas",
+                    "entries": ["El doppelganger puede usar su acción para polimorfarse en un humanoide Mediano o Pequeño que haya visto antes, o volver a asumir su auténtica forma. Su perfil, con la excepción del tamaño, es el mismo en todas las formas. Cualquier elemento de equipo que lleve o vista no se transformará. Si muere, volverá a su forma auténtica. "]
+                }, {
+                    "name": "Emboscador",
+                    "entries": ["Durante el primer asalto de un combate, el doppelganger tiene ventaja en las tiradas de ataque contra cualquier criatura a la que haya sorprendido."]
+                }, {
+                    "name": "Ataque por sorpresa",
+                    "entries": ["Si el doppelganger sorprende a una criatura y la impacta con un ataque durante el primer asalto del combate, ese ataque causa 10 ({@dice 3d6}) de daño adicionales."]
+                }
+            ],
+            "action": [{
+                    "name": "Ataque múltiple",
+                    "entries": ["El doppelganger realiza dos ataques cuerpo a cuerpo."]
+                }, {
+                    "name": "Golpe",
+                    "entries": ["{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) bludgeoning damage."]
+                }, {
+                    "name": "Leer pensamientos",
+                    "entries": [
+						"El doppelganger puede leer mediante la magia los pensamientos superficiales de una criatura que se encuentre a 60 pies o menos. Este efecto es capaz de atravesar la mayoría de las barreras, pero se ve bloqueado por 3 pies de madera o tierra, 2 pies de piedra, 2 pulgadas de metal, o una fina lámina de plomo. Si el objetivo permanece dentro del alcance y el doppelganger mantiene la concentración (como si se concentrara en un conjuro), este podrá seguir percibiendo sus pensamientos. Mientras le esté leyendo la mente, el doppelganger tendrá ventaja en las pruebas de Sabiduría ({@skill Insight|Perspicacia}) y Carisma ({@skill Deception|Engaño}, {@skill Intimidation|Intimidación} y {@skill Persuasion|Persuasión}) contra el objetivo."
+					]
+                }
+            ],
+            "environment": ["underdark", "ciudades"],
+            "tokenUrl": "https://5e.tools/img/MM/Doppelganger.png",
+            "soundClip": {
+                "type": "internal",
+                "path": "bestiary/doppelganger.mp3"
+            },
+            "traitTags": ["Ambusher", "Shapechanger"],
+            "senseTags": ["D"],
+            "actionTags": ["Multiattack"],
+            "languageTags": ["C"],
+            "damageTags": ["B"],
+            "miscTags": ["MW"],
+            "fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [{
+								"type": "entries",
+								"entries": [
+									"Los doppelgangers son cambiaformas insidiosos que toman el aspecto de otros humanoides, persiguiendo o atrayendo a sus víctimas hacia su perdición mediante el engaño y la distracción. Pocas criaturas son capaces de causar tanto miedo, sospecha y engaño como un doppelganger. Se conocen casos en todos los lugares y en todas las culturas, ya que son capaces de disfrazarse de cualquier individuo de cualquier raza.", 
+									{
+										"name": "Robando secretos",
+										"type": "entries",
+										"entries": ["La capacidad de adquirir cualquier forma de un doppelganger les permite mezclarse en cualquier comunidad o grupo, pero su transformación no les hace conocer la lengua, las costumbres, los recuerdos o la personalidad. En muchas ocasiones, estas criaturas siguen o capturan a aquellos que quieren suplantar, estudiándolos y sondeando su mente para conocer sus secretos. Pueden leer los pensamientos superficiales de un objetivo, lo que les permite averiguar el nombre, los deseos, los miedos, así como algunos recuerdos aislados. Los doppelgangers que planean suplantar a una criatura durante un largo período de tiempo podrían dejar a su doble vivo y en algún lugar cercano durante semanas, sondeando su mente diariamente para descubrir cómo se comporta y cómo habla de verdad."]
+									}, {
+										"name": "Estafadores hedonistas",
+										"type": "entries",
+										"entries": ["Los doppelgangers trabajan solos o en grupos pequeños, cambiando el papel de una estafa a otra. Mientras que uno podría tomar el lugar de un mercader o noble asesinado, los demás asumen las identidades que hagan falta, interpretando a la familia o los sirvientes, lo que les permite vivir de las riquezas de la víctima."]
+									}, {
+										"name": "Cambiantes",
+										"type": "entries",
+										"entries": ["Estas criaturas son demasiado indolentes y carecen del interés necesario para criar a su progenie. Los varones asumen la forma de atractivos miembros masculinos de una especie y seducen a las hembras, a las que luego dejan solas para que críen a su progenie. Una cría de doppelganger parece un miembro normal de la especie de la madre hasta que llega la adolescencia, momento en el que descubre su naturaleza real y busca a los de su especie para unirse a ellos."]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Doppelganger.jpg"
+						}
+					}
+				]
+			}
         }
 	]
 }
