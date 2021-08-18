@@ -32,7 +32,7 @@
             "size": "M",
             "type": {
                 "type": "humanoid",
-                "tags": ["trasgo"]
+                "tags": ["humanoide","trasgo"]
             },
             "alignment": ["C", "E"],
             "ac": [{
@@ -83,7 +83,7 @@
                 "type": "internal",
                 "path": "bestiary/bugbear.mp3"
             },
-            "traitTags": ["Brute"],
+            "traitTags": ["Bruto"],
             "senseTags": ["D"],
             "languageTags": ["C", "GO"],
             "damageTags": ["P"],
@@ -135,7 +135,7 @@
             "size": "M",
             "type": {
                 "type": "humanoid",
-                "tags": ["cualquier raza"]
+                "tags": ["humanoide","cualquier raza"]
             },
             "alignment": ["A"],
             "ac": [10],
@@ -197,7 +197,7 @@
             "size": "M",
             "type": {
                 "type": "humanoid",
-                "tags": ["cualquier raza"]
+                "tags": ["humanoide","cualquier raza"]
             },
             "alignment": ["L", "NX", "C", "NY", "E"],
             "ac": [{
@@ -277,7 +277,7 @@
             "size": "M",
             "type": {
                 "type": "monstrosity",
-                "tags": ["cambiaformas"]
+                "tags": ["monstruosidad","cambiaformas"]
             },
             "alignment": ["N"],
             "ac": [14],
@@ -333,9 +333,9 @@
                 "type": "internal",
                 "path": "bestiary/doppelganger.mp3"
             },
-            "traitTags": ["Ambusher", "Shapechanger"],
+            "traitTags": ["Emboscador", "Cambiaformas"],
             "senseTags": ["D"],
-            "actionTags": ["Multiattack"],
+            "actionTags": ["Ataque múltiple"],
             "languageTags": ["C"],
             "damageTags": ["B"],
             "miscTags": ["MW"],
@@ -370,6 +370,241 @@
 						"href": {
 							"type": "internal",
 							"path": "bestiary/MM/Doppelganger.jpg"
+						}
+					}
+				]
+			}
+        },
+		{
+            "name": "Calavera llameante",
+            "source": "MM-ES",
+            "page": 134,
+            "otherSources": [
+                {
+                    "source": "LMoP-ES"
+                }
+            ],
+            "size": "T",
+			"type": {
+                "type": "undead",
+                "tags": ["muerto viviente"]
+            },
+            "alignment": ["N", "E"],
+            "ac": [13],
+            "hp": {
+                "average": 40,
+                "formula": "9d4 + 18"
+            },
+            "speed": {
+                "walk": 0,
+                "fly": {
+                    "number": 40,
+                    "condition": "(hover)"
+                },
+                "canHover": true
+            },
+            "str": 1,
+            "dex": 17,
+            "con": 14,
+            "int": 16,
+            "wis": 10,
+            "cha": 11,
+            "skill": {
+                "arcana": "+5",
+                "perception": "+2"
+            },
+            "senses": ["darkvision 60 ft."],
+            "passive": 12,
+            "resist": ["lightning", "necrotic", "piercing"],
+            "immune": ["cold", "fire", "poison"],
+            "conditionImmune": ["charmed", "frightened", "paralyzed", "poisoned", "prone"],
+            "languages": ["Common"],
+            "cr": "4",
+            "spellcasting": [{
+                    "name": "Lanzamiento de Conjuros",
+                    "headerEntries": ["La calavera llameante es una lanzadora de conjuros de nivel 5. Su aptitud mágica es Inteligencia (salvación de conjuros {@dc 13}, {@hit 5} a impactar con ataques de conjuro). No necesita componentes materiales ni somáticos para lanzar sus conjuros. Tiene preparados los conjuros de mago siguientes:"],
+                    "spells": {
+                        "0": {
+                            "spells": ["{@spell mano de mago|PHB-ES}"]
+                        },
+                        "1": {
+                            "slots": 3,
+                            "spells": ["{@spell proyectil mágico|PHB-ES}", "{@spell escudo|PHB-ES}"]
+                        },
+                        "2": {
+                            "slots": 2,
+                            "spells": ["{@spell contorno borroso|PHB-ES}", "{@spell esfera de llamas|PHB-ES}"]
+                        },
+                        "3": {
+                            "slots": 1,
+                            "spells": ["{@spell bola de fuego|PHB-ES}"]
+                        }
+                    },
+                    "ability": "int"
+                }
+            ],
+            "trait": [{
+                    "name": "Iluminar",
+                    "entries": ["La calavera llameante emite luz tenue en un radio de 15 pies, o luz brillante en un radio de 15 pies y luz tenue 15 pies más allá. Puede cambiar entre los dos modos utilizando una acción."]
+                }, {
+                    "name": "Resistencia Mágica",
+                    "entries": ["La calavera llameante tiene ventaja en las tiradas de salvación contra conjuros y otros efectos mágicos."]
+                }, {
+                    "name": "Rejuvenecimiento",
+                    "entries": ["Si la calavera llameante es destruida, recuperará todos sus puntos de golpe en 1 hora salvo que se rocíen sus restos con agua sagrada o se lance sobre ellos un conjuro de {@spell disipar magia|PHB-ES} o de {@spell levantar maldición|PHB-ES}."]
+                }
+            ],
+            "action": [{
+                    "name": "Ataque múltiple",
+                    "entries": ["La calavera llameante utiliza rayo de fuego dos veces. "]
+                }, {
+                    "name": "Rayo de fuego",
+                    "entries": ["{@atk rs} {@hit 5} to hit, range 30 ft., one target. {@h}10 ({@damage 3d6}) fire damage."]
+                }
+            ],
+            "environment": ["underdark"],
+            "tokenUrl": "https://5e.tools/img/MM/Flameskull.png",
+            "soundClip": {
+                "type": "internal",
+                "path": "bestiary/flameskull.mp3"
+            },
+            "traitTags": ["Iluminar", "Resistencia Mágica", "Rejuvenecimiento"],
+            "senseTags": ["D"],
+            "actionTags": ["Ataque múltiple"],
+            "languageTags": ["C"],
+            "damageTags": ["F"],
+            "spellcastingTags": ["CW"],
+            "miscTags": ["AOE"],
+            "fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [{
+								"type": "entries",
+								"entries": [
+									"Unas brillantes llamas verdes y una carcajada reverberante y demente siguen a una calavera sin cuerpo que patrulla sus dominios. Cuando descubren intrusos, las calaveras llameantes les atacan lanzando ardientes rayos por los ojos y ejecutando terribles conjuros provenientes de los rincones más oscuros de su memoria.", 
+									"Algunos siniestros lanzadores de conjuros crean calaveras llameantes a partir de los restos de magos muertos. Cuando se completa el ritual surgen llamas verdes del cráneo, completando así la espantosa transformación. ", 
+									{
+										"name": "Legado vital",
+										"type": "entries",
+										"entries": ["Las calaveras llameantes solo recuerdan vagamente su vida pasada. Aunque podrían hablar usando su antigua voz y rememorar hechos clave de su pasado, no son sino un eco de su antiguo ser. Sin embargo, su transformación en muerto viviente les proporciona un acceso total a la magia que eran capaces de ejecutar en vida, lo que les permite lanzar conjuros ignorando los componentes materiales y somáticos que ya no puede usar."]
+									}, {
+										"name": "Enlazados para la eternidad",
+										"type": "entries",
+										"entries": ["Las calaveras llameantes, inteligentes y vigilantes, sirven a su creador protegiendo un tesoro oculto, una cámara secreta o a un individuo particular. Llevan a cabo las directrices suministradas cuando fueron creadas y las interpretan al pie de la letra. Quien domine una calavera llameante debe preparar sus instrucciones con cuidado para asegurarse de que esta las realizará adecuadamente.", {
+												"name": "Envueltas en llamas",
+												"entries": [" El fuego que rodea a estas calaveras arde continuamente, emitiendo una luz brillante que la criatura controla. Emplea las llamas como un arma, concentrándolas para arrojarlas desde sus cuencas oculares como ardientes rayos. "],
+												"type": "entries"
+											}
+										]
+									}, {
+										"name": "Rejuvenecimiento sobrenatural",
+										"type": "entries",
+										"entries": ["Cuando se hacen añicos, sus fragmentos se recomponen salvo que se les rocíe con agua bendita o se les someta a un conjuro de {@spell disipar magia|PHB-ES} o de {@spell levantar maldición|PHB-ES}. Si no pudiera continuar realizando su cometido, una calavera reconstruida no obedece a nadie y se vuelve autónoma."]
+									}, {
+										"name": "Muerto viviente",
+										"type": "entries",
+										"entries": ["Una calavera llameante no necesita respirar, comer, beber ni dormir."]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Flameskull.png"
+						}
+					}
+				]
+			}
+        },
+		{
+            "name": "Ghoul",
+            "source": "MM-ES",
+            "page": 148,
+            "srd": true,
+            "otherSources": [
+				{
+                    "source": "LMoP-ES"
+                }
+            ],
+            "size": "M",
+            "type": {
+                "type": "undead",
+                "tags": ["muerto viviente"]
+            },
+            "alignment": ["C", "E"],
+            "ac": [12],
+            "hp": {
+                "average": 22,
+                "formula": "5d8"
+            },
+            "speed": {
+                "walk": 30
+            },
+            "str": 13,
+            "dex": 15,
+            "con": 10,
+            "int": 7,
+            "wis": 10,
+            "cha": 6,
+            "senses": ["darkvision 60 ft."],
+            "passive": 10,
+            "immune": ["poison"],
+            "conditionImmune": ["charmed", "exhaustion", "poisoned"],
+            "languages": ["Común"],
+            "cr": "1",
+            "action": [{
+                    "name": "Mordisco",
+                    "entries": ["{@atk mw} {@hit 2} to hit, reach 5 ft., one creature. {@h}9 ({@damage 2d6 + 2}) piercing damage."]
+                }, {
+                    "name": "Garras",
+                    "entries": ["{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d4 + 2}) slashing damage. Si el objetivo es una criatura y no es elfo ni muerto viviente, deberá superar una tirada de salvación de Constitución {@dc 10} o quedará {@condition paralizado|PHB-ES} durante 1 minuto. La criatura puede repetir la tirada de salvación al final de cada uno de sus turnos, librándose del efecto si tiene éxito."]
+                }
+            ],
+            "environment": ["underdark", "pantanos", "ciudades"],
+            "tokenUrl": "https://5e.tools/img/MM/Ghoul.png",
+            "soundClip": {
+                "type": "internal",
+                "path": "bestiary/ghoul.mp3"
+            },
+            "senseTags": ["D"],
+            "languageTags": ["C"],
+            "damageTags": ["P", "S"],
+            "miscTags": ["MW"],
+            "conditionInflict": ["paralizado"],
+            "fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [{
+								"type": "entries",
+								"entries": ["Los gules forman jaurías que vagan por las noches, presas de un hambre insaciable por la carne de humanoide.", {
+										"name": "Devoradores de carne",
+										"type": "entries",
+										"entries": ["Al igual que los gusanos y los escarabajos carroñeros, medran en entornos plagados de muerte y putrefacción. Los gules infestan los lugares en los que pueden atiborrarse de la carne y órganos de cadáveres. Cuando no es posible alimentarse de estos restos, persiguen a criaturas vivas y tratan de asesinarlas para devorarlas. Aunque no se nutren de lo que comen, están motivados por un hambre insaciable que los obliga a consumir carne de humanoide. Su cuerpo muerto viviente no se descompone, por lo que pueden aguantar en una cripta o una tumba durante incontables eras sin alimentarse."]
+									}, {
+										"name": "Orígenes abisales",
+										"type": "entries",
+										"entries": ["Los gules se originaron en el Abismo. Doresain, el primero de su raza, fue un elfo adorador de Orcus. Traicionó a su pueblo alimentándose de la carne de humanoides para ensalzar al Príncipe Demonio de los Muertos Vivientes. Como recompensa, Orcus transformó a Doresain en el primer gul. Este sirvió a su señor fervientemente en el Abismo, creando gules de entre los sirvientes del señor demoníaco hasta que, en una incursión de Yeenoghu, el señor demoníaco de los gnolls, fue secuestrado. Cuando Orcus lo abandonó a su suerte, Doresain se dirigió a los dioses elfos y les rogó que lo salvaran. Estos se apiadaron de él y le ayudaron a escapar de su destrucción. Desde aquel día, los elfos son inmunes al toque paralizante de los gules."]
+									}, {
+										"name": "Ghasts",
+										"type": "entries",
+										"entries": ["A veces Orcus imbuye a un gul con una cantidad aún mayor de energía abisal, de manera que se crea un ghast. Así como los gules son poco más que bestias salvajes, los ghasts son seres astutos, capaces de inspirar a una manada de gules a seguir sus órdenes."]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Ghoul.png"
 						}
 					}
 				]
