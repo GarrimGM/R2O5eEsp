@@ -32860,6 +32860,98 @@
 					}
 				]
 			}
+        },
+		{
+            "name": "Giant Spider",
+            "source": "MM-ES",
+            "page": 328,
+            "srd": true,
+            "otherSources": [
+				{
+                    "source": "LMoP-ES"
+                },
+            ],
+            "size": "L",
+            "type": {
+                "type": "beast",
+                "tags": ["bestia"]
+            },
+            "alignment": ["U"],
+            "ac": [{
+                    "ac": 14,
+                    "from": ["armadura natural"]
+                }
+            ],
+            "hp": {
+                "average": 26,
+                "formula": "4d10 + 4"
+            },
+            "speed": {
+                "walk": 30,
+                "climb": 30
+            },
+            "str": 14,
+            "dex": 16,
+            "con": 12,
+            "int": 2,
+            "wis": 11,
+            "cha": 4,
+            "skill": {
+                "stealth": "+7"
+            },
+            "senses": ["blindsight 10 ft.", "darkvision 60 ft."],
+            "passive": 10,
+            "cr": "1",
+            "trait": [{
+                    "name": "Trepar cual Arácnido",
+                    "entries": ["La araña puede trepar por superficies difíciles, incluyendo recorrer el techo boca abajo, sin tener que hacer pruebas de característica."]
+                }, {
+                    "name": "Sentir a través de Telarañas",
+                    "entries": [" Mientras esté en contacto con una telaraña, la araña sabrá la ubicación exacta de cualquier otra criatura en contacto con dicha telaraña."]
+                }, {
+                    "name": "Caminar por Telarañas",
+                    "entries": ["La araña ignora todas las restricciones al movimiento causadas por cualquier tipo de red o telaraña."]
+                }
+            ],
+            "action": [{
+                    "name": "Mordisco",
+                    "entries": ["{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}7 ({@damage 1d8 + 3}) piercing damage, y el objetivo debe hacer una tirada de salvación de Constitución {@dc 11}, sufriendo 9 ({@damage 2d8}) de daño de veneno si la falla, o la mitad del daño si la supera. Si el veneno reduce al objetivo a O puntos de golpe, este estará estable pero {@condition envenenado|PHB-ES} durante 1 hora, incluso tras recuperar puntos de golpe. Además, mientras esté {@condition envenenado|PHB-ES} (por este veneno) también estará {@condition paralizado|PHB-ES}."]
+                }, {
+                    "name": "Telaraña {@recharge 5}",
+                    "entries": ["{@atk rw} {@hit 5} to hit, range 30/60 ft., one creature. {@h}El objetivo está {@condition apresado|PHB-ES} por la telaraña. Dicha criatura puede gastar su acción para hacer una prueba de Fuerza {@dc 12}, rompiendo la telaraña si tiene éxito. También se puede atacar a la telaraña para intentar destruirla (CA 10; 5 pg; vulnerable a daño de fuego; inmune a daños contundente, psíquico y de veneno)."]
+                }
+            ],
+            "environment": ["underdark", "bosques", "pantanos", "ciudades", "desiertos"],
+            "tokenUrl": "https://5e.tools/img/MM/Giant%20Spider.png",
+            "soundClip": {
+                "type": "internal",
+                "path": "bestiary/giant-spider.mp3"
+            },
+            "traitTags": ["Trepar cual Arácnido", "Sentir a través de Telarañas", "Caminar por Telarañas"],
+            "senseTags": ["B", "D"],
+            "damageTags": ["I", "P"],
+            "miscTags": ["MW", "RW"],
+            "conditionInflict": ["paralizado", "envenenado", "apresado"],
+            "fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [{
+								"type": "entries",
+								"entries": ["Las arañas gigantes tejen elaboradas redes o disparan una masa pegajosa de tela desde su abdomen para atrapar a sus presas. Suelen habitar en subterráneos y ubican sus madrigueras en el techo o en grietas oscuras, lugares que acaban cubiertos de telarañas y engalanados con horribles capullos que contienen los restos de sus víctimas anteriores."]
+							}
+						]
+					}
+				],
+				"images": [{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Giant Spider.jpg"
+						}
+					}
+				]
+			}
         }
 	],
 	"trait": [
