@@ -32952,6 +32952,116 @@
 					}
 				]
 			}
+        },
+		{
+            "name": "Goblin",
+            "source": "MM-ES",
+            "page": 166,
+            "srd": true,
+            "otherSources": [
+				{
+                    "source": "LMoP-ES"
+                }
+            ],
+            "size": "S",
+            "type": {
+                "type": "humanoid",
+                "tags": ["humanoide","trasgo"]
+            },
+            "alignment": ["N", "E"],
+            "ac": [{
+                    "ac": 15,
+                    "from": ["{@item armadura de cuero|PHB-ES}", "{@item escudo|PHB-ES}"]
+                }
+            ],
+            "hp": {
+                "average": 7,
+                "formula": "2d6"
+            },
+            "speed": {
+                "walk": 30
+            },
+            "str": 8,
+            "dex": 14,
+            "con": 10,
+            "int": 10,
+            "wis": 8,
+            "cha": 8,
+            "skill": {
+                "stealth": "+6"
+            },
+            "senses": ["darkvision 60 ft."],
+            "passive": 9,
+            "languages": ["Común", "Goblin"],
+            "cr": "1/4",
+            "trait": [{
+                    "name": "Huida veloz",
+                    "entries": ["El goblin puede, en cada uno de sus turnos, usar una acción adicional para {@action Destrabarse|PHB-ES} o {@action Esconderse|PHB-ES}."]
+                }
+            ],
+            "action": [{
+                    "name": "Cimitarra",
+                    "entries": ["{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage."]
+                }, {
+                    "name": "Arco corto",
+                    "entries": ["{@atk rw} {@hit 4} to hit, range 80/320 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."]
+                }
+            ],
+            "environment": ["underdark", "praderas", "bosques", "colinas"],
+            "tokenUrl": "https://5e.tools/img/MM/Goblin.png",
+            "soundClip": {
+                "type": "internal",
+                "path": "bestiary/goblin.mp3"
+            },
+            "senseTags": ["D"],
+            "languageTags": ["C", "GO"],
+            "damageTags": ["P", "S"],
+            "miscTags": ["MW", "RNG", "RW"],
+            "fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [{
+								"type": "entries",
+								"entries": ["Los goblins son pequeños humanoides, egoístas y de negro corazón, que habitan en cavernas, minas abandonadas, mazmorras saqueadas y otros lugares lúgubres. Dado que son individualmente débiles, se reúnen en grandes grupos, de un tamaño que llega a ser apabullante. Ansían el poder y abusan constantemente de cualquier migaja de autoridad que consigan.", {
+										"name": "Trasgos",
+										"type": "entries",
+										"entries": ["Los goblins pertenecen a la familia de criaturas denominadas trasgos. A sus primos más grandes, los hobgoblins y los osgos, les encanta abusar de ellos hasta someterlos, pero los goblins son vagos e indisciplinados, lo cual provoca que sean malos sirvientes, trabajadores o guardias. "]
+									}, {
+										"name": "Mirada maliciosa",
+										"type": "entries",
+										"entries": ["Motivados por la avaricia y la malicia, los goblins no pueden sino celebrar las pocas veces que superan a sus enemigos. Danzan y hacen cabriolas de auténtica alegría cuando la victoria es suya. Cuando terminan de celebrar, disfrutan atormentando a otras criaturas y haciendo todo tipo de maldades. "]
+									}, {
+										"name": "Líderes y seguidores",
+										"type": "entries",
+										"entries": ["A los goblins los comanda el más fuerte o inteligente que haya entre ellos. Un jefe goblin podría mandar sobre una guarida, mientras que un rey o reina goblin, que no son más que una versión del jefe goblin con ínfulas, es capaz de gobernar a cientos de goblins, repartidos en varias guaridas para asegurar la supervivencia de la tribu. Los jefes goblins son fácilmente expulsados, por lo que en muchas tribus goblins asume el mando un señor de la guerra hobgoblin o un jefe osgo."]
+									}, {
+										"name": "Mazmorras desafiantes",
+										"type": "entries",
+										"entries": ["Los goblins adornan sus hogares con alarmas pensadas para avisar de la llegada de intrusos. Las guaridas están plagadas de túneles estrechos y vías de escape que las criaturas de tamaño humano no pueden cruzar, pero que ellos pueden atravesar sin problemas, lo que les permite escabullirse o rodear a sus enemigos para sorprenderles."]
+									}, {
+										"name": "Domadores de ratas y jinetes de lobo",
+										"type": "entries",
+										"entries": ["Los goblins tienen afinidad con las ratas y lobos, a los que crían para que les sirvan de compañeros o monturas, respectivamente. Como las ratas, los goblins odian la luz del sol y duermen bajo tierra durante el día. Como los lobos, cazan en manadas, haciéndose más peligrosos cuanto mayor sea su número. Cuando cazan desde los lomos de un lobo, los goblins atacan sin trabarse, huyendo tras el golpe."]
+									}, {
+										"name": "Adoradores de Maglubiyet",
+										"type": "entries",
+										"entries": ["Maglubiyet el Poderoso, el Señor de las Profundidades y la Oscuridad es el gran dios de los trasgos. Muchos goblins lo imaginan como un goblin de 11 pies (3,4 m) de alto, lleno de cicatrices, con piel negra y fuego llameante en sus ojos, y no lo adoran por devoción sino por miedo. Creen que, cuando mueran, pasarán a formar parte del ejército de Maglubiyet en el plano de Aqueronte. Este es un \"privilegio\" temido por los goblins, ya que piensan que la tiranía eterna de El Poderoso es peor que la muerte."]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Goblin.jpg"
+						}
+					}
+				]
+			}
         }
 	],
 	"trait": [
