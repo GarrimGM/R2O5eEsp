@@ -1,0 +1,126 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "MM-ES",
+				"abbreviation": "MM-ES",
+				"full": "Monster Manual - Español",
+				"color": "27c602",
+				"authors": [
+					"Garrim"
+				],
+				"convertedBy": [
+					""
+				],
+				"version": "2021.8.18",
+				"url": ""
+			}
+		],
+		"dateAdded": 1412035200,
+		"dateLastModified": 1629284141
+	},
+	"monster": [
+		{
+            "name": "Osgo",
+            "source": "MM-ES",
+            "page": 33,
+            "srd": true,
+            "otherSources": [{
+                    "source": "LMoP-ES"
+                }
+            ],
+            "size": "M",
+            "type": {
+                "type": "humanoid",
+                "tags": ["trasgo"]
+            },
+            "alignment": ["C", "E"],
+            "ac": [{
+                    "ac": 16,
+                    "from": ["{@item armadura de pieles|PHB-ES}", "{@item escudo|PHB-ES}"]
+                }
+            ],
+            "hp": {
+                "average": 27,
+                "formula": "5d8 + 5"
+            },
+            "speed": {
+                "walk": 30
+            },
+            "str": 15,
+            "dex": 14,
+            "con": 13,
+            "int": 8,
+            "wis": 11,
+            "cha": 9,
+            "skill": {
+                "stealth": "+6",
+                "survival": "+2"
+            },
+            "senses": ["{@sense darkvision|visión en la oscuridad} 60 pies"],
+            "passive": 10,
+            "languages": ["Común", "Goblin"],
+            "cr": "1",
+            "trait": [{
+                    "name": "Bruto",
+                    "entries": ["Cuando el osgo impacta con un ataque realizado con un arma cuerpo a cupero, tira una vez más el daño del arma y añádelo al resultado (ya incluido)."]
+                }, {
+                    "name": "Ataque por Sorpresa",
+                    "entries": ["Si el osgo sorprende a una criatura y la impacta con un ataque durante el primer asalto del combate, este causa 7 ({@dice 2d6}) de daño adicional."]
+                }
+            ],
+            "action": [{
+                    "name": "Lucero del alba",
+                    "entries": ["{@atk mw} {@hit 4} a impactar, alcance 5 pies, un objetivo. {@h}11 ({@damage 2d8 + 2}) de daño perforante."]
+                }, {
+                    "name": "Jabalina",
+                    "entries": ["{@atk mw,rw} {@hit 4} a impactar, alcance 5 pies o alcance 30/120 pies, un objetivo. {@h}9 ({@damage 2d6 + 2}) de daño perforante en cuerpo a cuerpo o 5 ({@damage 1d6 + 2}) de daño perforante a distancia."]
+                }
+            ],
+            "environment": ["underdark", "praderas", "bosques"],
+            "tokenUrl": "/img/MM/Bugbear.png",
+            "soundClip": {
+                "type": "internal",
+                "path": "bestiary/bugbear.mp3"
+            },
+            "traitTags": ["Brute"],
+            "senseTags": ["D"],
+            "languageTags": ["C", "GO"],
+            "damageTags": ["P"],
+            "miscTags": ["MW", "RW", "THW"],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [{
+								"type": "entries",
+								"entries": ["Los osgos nacieron para combatir y provocar el caos. Estas criaturas basan su supervivencia en la caza y las incursiones. Abusan de los débiles y desprecian a quien intenta darles órdenes, pero su amor por la matanza les lleva a luchar bajo las órdenes de alguien poderoso si el derramamiento de sangre y el tesoro están asegurados", {
+										"name": "Trasgos",
+										"type": "entries",
+										"entries": ["A los osgos se les ve frecuentemente en compañía de sus primos, los hobgoblins y los goblins. Esclavizan normalmente a los goblins a los que se encuentran y obligan a los hobgoblins a entregarles oro y comida a cambio de servirles como exploradores y tropas de choque. Uno no debe fiarse nunca de los osgos, incluso tras haberles pagado. Sin embargo, los goblins y los hobgoblins entienden que, al margen de lo mucho que drenen los recursos de sus tribus, estas criaturas poseen una fuerza considerable."]
+									}, {
+										"name": "Seguidores de Hruggek",
+										"type": "entries",
+										"entries": ["Los osgos adoran a Hruggek, un dios menor que habita en el plano de Aqueronte. Cuando no están cerca de sus parientes trasgos, los osgos forman bandas poco disciplinadas, guiados por su miembro más feroz. Estas criaturas creen que cuando mueren, sus espíritus tienen la oportunidad de luchar al lado de Hruggek. Para considerarse dignos de tal honor, tratan de derrotar a la mayor cantidad de enemigos posible."]
+									}, {
+										"name": "Emboscadores mercenarios",
+										"type": "entries",
+										"entries": ["A pesar de su aspecto amenazador, los osgos son sorprendentemente sigilosos. Les encanta tender emboscadas y huir si se sienten sobrepasados. Son mercenarios fiables siempre que se les suministre alimento, bebida y tesoro, pero un osgo olvidará cualquier vínculo si su vida está en peligro. Es común dejar a un miembro herido de una banda de osgos atrás si eso ayuda al resto del grupo a escapar. Posteriormente, ese osgo abandonado podría ayudar a sus enemigos a localizar a sus antiguos compañeros si así puede salvar su vida. "]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Bugbear.jpg"
+						}
+					}
+				]
+			}
+        }
+	]
+}
