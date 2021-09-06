@@ -14637,16 +14637,19 @@
                 "armor": [
 					{
 						"proficiency": "light",
-						"full": "armaduras ligeras"
+						"full": "{@filter armaduras ligeras|items|source=PHB-ES|type=light armor}"
 					}, {
 						"proficiency": "medium",
-						"full": "armaduras medias"
+						"full": "{@filter armaduras medias|items|source=PHB-ES|type=medium armor}"
 					}, {
 						"proficiency": "shields",
-						"full": "escudos"
+						"full": "{@item Escudo|PHB-ES|escudos}"
 					}
 				],
-                "weapons": ["simple", "martial"],
+                "weapons": [
+					"{@filter armas sencillas|items|source=PHB-ES|type=simple weapon}", 
+					"{@filter armas marciales|items|source=PHB-ES|type=martial weapon}"
+				],
                 "skills": [{
 						"choose": {
 							"from": ["animal handling|Trato con Animales", "athletics|Atletismo", "intimidation|Intimidación", "nature|Naturaleza", "perception|Percepción", "survival|Supervivencia"],
@@ -14694,10 +14697,13 @@
                 "proficienciesGained": {
                     "armor": [{
 							"proficiency": "shields",
-							"full": "escudos"
+							"full": "{@item Escudo|PHB-ES|escudos}"
 						}
 					],
-                    "weapons": ["simple", "martial"]
+                    "weapons": [
+						"{@filter armas sencillas|items|source=PHB-ES|type=simple weapon}", 
+						"{@filter armas marciales|items|source=PHB-ES|type=martial weapon}"
+					]
                 }
             },
             "classTableGroups": [{
@@ -14855,10 +14861,16 @@
             "startingProficiencies": {
                 "armor": [{
 						"proficiency": "light",
-						"full": "armaduras ligeras"
+						"full": "{@filter armaduras ligeras|items|source=PHB-ES|type=light armor}"
 					}
 				],
-                "weapons": ["simple", "hand crossbows", "longswords", "rapiers", "shortswords"],
+                "weapons": [
+					"{@filter armas sencillas|items|source=PHB-ES|type=simple weapon}", 
+					"{@item ballesta de mano|PHB-ES|ballestas de mano}", 
+					"{@item espada corta|PHB-ES|espadas cortas}",
+					"{@item espada larga|PHB-ES|espadas largas}", 
+					"{@item estoque|PHB-ES|estoques}"
+				],
 				"tools": ["tres {@item Instrumentos musicales|PHB-ES|instrumentos musicales} a tu elección"],
                 "skills": [{
 						"choose": {
@@ -14871,7 +14883,7 @@
             "startingEquipment": {
                 "additionalFromBackground": true,
                 "default": [
-					"(a) un {@item Estoque|PHB-ES|estoque}, (b) una {@item Espada larga|PHB-ES|espada larga} o (c) cualquier {@filter simple arma sencilla|items|source=PHB-ES|type=simple weapon}",
+					"(a) un {@item Estoque|PHB-ES|estoque}, (b) una {@item Espada larga|PHB-ES|espada larga} o (c) cualquier {@filter arma sencilla|items|source=PHB-ES|type=simple weapon}",
 					"(a) un {@item Paquete de diplomático|PHB-ES|paquete de diplomático} o (b) un {@item Paquete de artista|PHB-ES|paquete de artista}",
 					"(a) un {@item Flauta|PHB-ES|flauta} o (b) cualquier otro {@filter instrumento musical|items|miscellaneous=mundane|type=instrumento}",
 					"{@item Armadura de cuero|PHB-ES|armadura de cuero} y una {@item Daga|PHB-ES|daga}"],
@@ -14904,7 +14916,7 @@
                 "proficienciesGained": {
 					"armor": [{
 							"proficiency": "light",
-							"full": "armaduras ligeras"
+							"full": "{@filter armaduras ligeras|items|source=PHB-ES|type=light armor}"
 						}
 					],
 					"skills": [{
@@ -14991,16 +15003,16 @@
             "startingProficiencies": {
 				"armor": [{
 						"proficiency": "light",
-						"full": "armaduras ligeras"
+						"full": "{@filter armaduras ligeras|items|source=PHB-ES|type=light armor}"
 					}, {
 						"proficiency": "medium",
-						"full": "armaduras medias"
+						"full": "{@filter armaduras medias|items|source=PHB-ES|type=medium armor}"
 					}, {
 						"proficiency": "shields",
-						"full": "escudos"
+						"full": "{@item Escudo|PHB-ES|escudos}"
 					}
 				],
-				"weapons": ["simple"],
+				"weapons": ["{@filter armas sencillas|items|source=PHB-ES|type=simple weapon}"],
 				"skills": [{
 						"choose": {
 							"from": ["history|Historia", "insight|Perspicacia", "medicine|Medicina", "persuasion|Persuasión", "religion|Religión"],
@@ -15041,13 +15053,13 @@
                 "proficienciesGained": {
                     "armor": [{
 							"proficiency": "light",
-							"full": "armaduras ligeras"
+							"full": "{@filter armaduras ligeras|items|source=PHB-ES|type=light armor}"
 						}, {
 							"proficiency": "medium",
-							"full": "armaduras medias"
+							"full": "{@filter armaduras medias|items|source=PHB-ES|type=medium armor}"
 						}, {
 							"proficiency": "shields",
-							"full": "escudos"
+							"full": "{@item Escudo|PHB-ES|escudos}"
 						}
 					]
                 }
@@ -15134,16 +15146,16 @@
             "startingProficiencies": {
                 "armor": [{
 						"proficiency": "light",
-						"full": "armaduras ligeras"
+						"full": "{@filter armaduras ligeras|items|source=PHB-ES|type=light armor}"
 					}, {
 						"proficiency": "medium",
-						"full": "armaduras medias"
+						"full": "{@filter armaduras medias|items|source=PHB-ES|type=medium armor}"
 					}, {
 						"proficiency": "shields",
-						"full": "escudos (aunque los druidas nunca llevan armaduras ni escudos hechos de metal)"
+						"full": "{@item Escudo|PHB-ES|escudos} (aunque los druidas nunca llevan armaduras ni escudos hechos de metal)"
 					}
 				],
-				"weapons": ["clubs", "daggers", "darts", "javelins", "maces", "quarterstaffs", "scimitars", "sickles", "slings", "spears"],
+				"weapons": ["{@item garrote|PHB-ES|garrotes}", "{@item daga|PHB-ES|dagas}", "{@item dardo|PHB-ES|dardos}", "{@item jabalina|PHB-ES|jabalinas}", "{@item maza|PHB-ES|mazas}", "{@item bastón|PHB-ES|bastones}", "{@item cimitarra|PHB-ES|cimitarras}", "{@item hoz|PHB-ES|hoces}", "{@item honda|PHB-ES|hondas}", "{@item lanza|PHB-ES|lanzas}"],
                 "tools": ["{@item Útiles de herborista|PHB-ES|Útiles de herborista}"],
                 "skills": [{
                         "choose": {
@@ -15181,13 +15193,13 @@
                 "proficienciesGained": {
 					"armor": [{
 							"proficiency": "light",
-							"full": "armaduras ligeras"
+							"full": "{@filter armaduras ligeras|items|source=PHB-ES|type=light armor}"
 						}, {
 							"proficiency": "medium",
-							"full": "armaduras medias"
+							"full": "{@filter armaduras medias|items|source=PHB-ES|type=medium armor}"
 						}, {
 							"proficiency": "shields",
-							"full": "escudos (aunque los druidas nunca llevan armaduras ni escudos hechos de metal)"
+							"full": "{@item Escudo|PHB-ES|escudos} (aunque los druidas nunca llevan armaduras ni escudos hechos de metal)"
 						}
 					]
 				}
@@ -15280,7 +15292,10 @@
 						"full": "{@item escudo|phb-es|escudos}"
 					}
 				],
-                "weapons": ["simple", "martial"],
+                "weapons": [
+					"{@filter armas sencillas|items|source=PHB-ES|type=simple weapon}", 
+					"{@filter armas marciales|items|source=PHB-ES|type=martial weapon}"
+				],
                 "skills": [{
                         "choose": {
 							"from": ["acrobatics|Acrobacias", "animal handling|Trato con Animales", "athletics|Atletismo", "history|Historia", "insight|Perspicacia", "intimidation|Intimidación", "perception|Percepción", "survival|Supervivencia"],
@@ -15346,7 +15361,10 @@
 							"full": "{@item escudo|phb-es|escudos}"
 						}
 					],
-                    "weapons": ["simple", "martial"]
+                    "weapons": [
+						"{@filter armas sencillas|items|source=PHB-ES|type=simple weapon}", 
+						"{@filter armas marciales|items|source=PHB-ES|type=martial weapon}"
+					]
                 }
             },
             "classFeatures": [
@@ -15438,7 +15456,10 @@
             },
             "proficiency": ["str", "dex"],
             "startingProficiencies": {
-                "weapons": ["simple", "shortswords"],
+                "weapons": [
+					"{@filter armas sencillas|items|source=PHB-ES|type=simple weapon}", 
+					"{@item Espada corta|PHB-ES|espadas cortas}"
+				],
                 "tools": ["escoge un tipo de {@filter herramientas de artesano|items|source=PHB-ES|miscellaneous=mundane|type=Herramientas de artesano} o un {@item Instrumentos musicales|PHB-ES|instrumento musical}"],
                 "skills": [{
                         "choose": {
@@ -15479,7 +15500,10 @@
                     "wis": 13
                 },
                 "proficienciesGained": {
-                    "weapons": ["simple", "shortswords"]
+                    "weapons": [
+						"{@filter armas sencillas|items|source=PHB-ES|type=simple weapon}", 
+						"{@item Espada corta|PHB-ES|espadas cortas}"
+					]
                 }
             },
             "classTableGroups": [{
@@ -15791,7 +15815,10 @@
 						"full": "{@item escudo|PHB-ES|escudos}"
 					}
 				],
-                "weapons": ["simple", "martial"],
+                "weapons": [
+					"{@filter armas sencillas|items|source=PHB-ES|type=simple weapon}", 
+					"{@filter armas marciales|items|source=PHB-ES|type=martial weapon}"
+				],
                 "skills": [{
                         "choose": {
                             "from": ["athletics|Atletismo", "insight|Perspicacia", "intimidation|Intimidación", "medicine|Medicina", "persuasion|Persuasión", "religion|Religión"],
@@ -15857,7 +15884,10 @@
 							"full": "{@item escudo|phb-es|escudos}"
 						}
 					],
-                    "weapons": ["simple", "martial"]
+                    "weapons": [
+						"{@filter armas sencillas|items|source=PHB-ES|type=simple weapon}", 
+						"{@filter armas marciales|items|source=PHB-ES|type=martial weapon}"
+					]
                 }
             },
             "classTableGroups": [{
@@ -15975,7 +16005,10 @@
 						"full": "{@item escudo|PHB-ES|escudos}"
 					}
 				],
-                "weapons": ["simple", "martial"],
+                "weapons": [
+					"{@filter armas sencillas|items|source=PHB-ES|type=simple weapon}", 
+					"{@filter armas marciales|items|source=PHB-ES|type=martial weapon}"
+				],
                 "skills": [{
                         "choose": {
                             "from": [
@@ -16056,7 +16089,10 @@
                             }
                         }
                     ],
-                    "weapons": ["simple", "martial"]
+                    "weapons": [
+						"{@filter armas sencillas|items|source=PHB-ES|type=simple weapon}", 
+						"{@filter armas marciales|items|source=PHB-ES|type=martial weapon}"
+					]
                 }
             },
             "classTableGroups": [{
@@ -16171,7 +16207,8 @@
 					}
 				],
                 "weapons": [
-					"simple", "{@item Ballesta de mano|PHB-ES|ballestas de mano}", 
+					"{@filter armas sencillas|items|source=PHB-ES|type=simple weapon}", 
+					"{@item Ballesta de mano|PHB-ES|ballestas de mano}", 
 					"{@item Espada larga|PHB-ES|espadas largas}", 
 					"{@item Estoque|PHB-ES|estoques}", 
 					"{@item Espada corta|PHB-ES|espadas cortas}"
@@ -16714,7 +16751,7 @@
 					}
 				],
                 "weapons": [
-					"simple"
+					"{@filter armas sencillas|items|source=PHB-ES|type=simple weapon}"
 				],
                 "skills": [{
                         "choose": {
@@ -16778,7 +16815,7 @@
 							"full": "{@filter armaduras ligeras|items|source=PHB-ES|type=light armor}"
 						}
 					],
-                    "weapons": ["simple"]
+                    "weapons": ["{@filter armas sencillas|items|source=PHB-ES|type=simple weapon}"]
                 }
             },
             "classTableGroups": [{
@@ -33008,7 +33045,7 @@
                 }
             ],
             "environment": ["underdark", "praderas", "bosques", "colinas"],
-            "tokenUrl": "https://5e.tools/img/MM/Goblin.png",
+            "tokenUrl": "https://images2.imgbox.com/a8/91/unXAXjtx_o.png",
             "soundClip": {
                 "type": "internal",
                 "path": "bestiary/goblin.mp3"
