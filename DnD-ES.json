@@ -33045,8 +33045,7 @@
                 }
             ],
             "environment": ["underdark", "praderas", "bosques", "colinas"],
-            "tokenUrl": "img/MM/Goblin.png",
-			"hasToken": true,
+            "tokenUrl": "https://5e.tools/img/MM/Goblin.png",
             "soundClip": {
                 "type": "internal",
                 "path": "bestiary/goblin.mp3"
@@ -33100,7 +33099,1605 @@
 					}
 				]
 			}
-        }
+        },
+		{
+            "name": "Grick",
+            "source": "MM-ES",
+            "page": 173,
+            "srd": true,
+            "otherSources": [{
+                    "source": "LMoP-ES"
+                }
+            ],
+            "size": "M",
+			"type": {
+                "type": "monstrosity",
+                "tags": ["monstruosidad"]
+            },
+            "alignment": ["N"],
+            "ac": [{
+                    "ac": 14,
+                    "from": ["armadura natural"]
+                }
+            ],
+            "hp": {
+                "average": 27,
+                "formula": "6d8"
+            },
+            "speed": {
+                "walk": 30,
+                "climb": 30
+            },
+            "str": 14,
+            "dex": 14,
+            "con": 11,
+            "int": 3,
+            "wis": 14,
+            "cha": 5,
+            "senses": ["darkvision 60 ft."],
+            "passive": 12,
+            "resist": [{
+                    "resist": ["bludgeoning", "piercing", "slashing"],
+                    "note": "de ataques no mágicos",
+                    "cond": true
+                }
+            ],
+            "cr": "2",
+            "trait": [{
+                    "name": "Camuflarse en la Piedra",
+                    "entries": ["El grick tiene ventaja en las pruebas de Destreza (Sigilo) para esconderse en terrenos rocosos."]
+                }
+            ],
+            "action": [{
+                    "name": "Ataque múltiple",
+                    "entries": ["El grick realiza un ataque con sus tentáculos. Si este impacta, puede llevar a cabo un ataque con su pico contra el mismo objetivo."]
+                }, {
+                    "name": "Tentáculos",
+                    "entries": ["{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) slashing damage."]
+                }, {
+                    "name": "Pico",
+                    "entries": ["{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."]
+                }
+            ],
+            "environment": ["underdark", "bosques"],
+            "tokenUrl": "https://5e.tools/img/MM/Grick.png",
+            "soundClip": {
+                "type": "internal",
+                "path": "bestiary/grick.mp3"
+            },
+            "senseTags": ["D"],
+            "actionTags": ["Ataque múltiple", "Tentáculos"],
+            "damageTags": ["P", "S"],
+            "miscTags": ["MW"],
+            "fluff": {
+					"entries": [{
+						"type": "entries",
+						"entries": [{
+								"type": "entries",
+								"entries": ["Los anélidos gricks acechan sin ser vistos, mezclándose con las rocas de las cuevas y cavernas que habitan. Esperan a que la presa esté muy cerca para abalanzarse sobre ella, con sus cuatro tentáculos extendidos para revelar un afilado y hambriento pico. ", {
+										"name": "Predadores pasivos",
+										"type": "entries",
+										"entries": ["Son pocas las ocasiones en las que un grick caza. En vez de ello, arrastran sus gomosos cuerpos a los lugares donde habitualmente pasan criaturas. Allí se mantienen siempre fuera de la vista entre arenisca y escombros, excavando madrigueras, agujeros o fisuras, trepando cornisas o enrollándose en estalactitas para dejarse caer sobre sus incautas presas. Consumen virtualmente cualquier cosa que se mueva, salvo otros gricks. Su objetivo es la presa más cercana, de manera que agarran a cualquier criatura que caiga con sus tentáculos y la arrastran para devorarla en soledad. "]
+									}, {
+										"name": "Emboscadores errantes",
+										"type": "entries",
+										"entries": ["Los gricks se quedan en el mismo lugar hasta que deja de haber comida, a veces porque las criaturas conscientes comienzan a darse cuenta de su presencia y planean rutas alternativas. Cuando carecen de presas en el Underdark, los gricks se atreven a salir a la superficie para cazar en la naturaleza salvaje, donde acechan desde los árboles o en cornisas de acantilados. Las manadas de gricks suelen reunirse alrededor de un alfa bien alimentado y de un tamaño mayor que el resto."]
+									}, {
+										"name": "Recompensas por sus asesinatos",
+										"type": "entries",
+										"entries": [
+										"Con tiempo, las guaridas de los gricks acumulan las posesiones de sus presas inteligentes, y los guías expertos saben cómo buscar indicios de estos escondrijos.", 
+										"Algunos exploradores del Underdark sellan las rutas que llevan a guaridas de gricks para matarlos de hambre y después adueñarse de las riquezas de sus víctimas."]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Grick.jpg"
+						}
+					}
+				]
+			}
+        },
+		{
+            "name": "Hobgoblin",
+            "source": "MM-ES",
+            "page": 186,
+            "srd": true,
+            "otherSources": [{
+                    "source": "LMoP-ES"
+                }
+            ],
+            "size": "M",
+            "type": {
+                "type": "humanoid",
+                "tags": ["humanoide","trasgo"]
+            },
+            "alignment": ["L", "E"],
+            "ac": [{
+                    "ac": 18,
+                    "from": ["{@item Cota de malla|PHB-ES}", "{@item escudo|PHB-ES}"]
+                }
+            ],
+            "hp": {
+                "average": 11,
+                "formula": "2d8 + 2"
+            },
+            "speed": {
+                "walk": 30
+            },
+            "str": 13,
+            "dex": 12,
+            "con": 12,
+            "int": 10,
+            "wis": 10,
+            "cha": 9,
+            "senses": ["darkvision 60 ft."],
+            "passive": 10,
+            "languages": ["Común", "Goblin"],
+            "cr": "1/2",
+            "trait": [{
+                    "name": "Ventaja marcial",
+                    "entries": ["El hobgoblin puede, una vez por turno, infligir 7 ({@dice 2d6}) de daño adicional a una criatura a la que impacte con un ataque con arma si dicha criatura está a 5 pies o menos de un aliado del hobgoblin que no esté {@condition incapacitado|PHB-ES}."]
+                }
+            ],
+            "action": [{
+                    "name": "Espada larga",
+                    "entries": ["{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d8 + 1}) slashing damage, or 6 ({@damage 1d10 + 1}) slashing damage if used with two hands."]
+                }, {
+                    "name": "Arco largo",
+                    "entries": ["{@atk rw} {@hit 3} to hit, range 150/600 ft., one target. {@h}5 ({@damage 1d8 + 1}) piercing damage."]
+                }
+            ],
+            "environment": ["underdark", "praderas", "bosques", "colinas", "desiertos"],
+            "tokenUrl": "https://5e.tools/img/MM/Hobgoblin.png",
+            "soundClip": {
+                "type": "internal",
+                "path": "bestiary/hobgoblin.mp3"
+            },
+            "senseTags": ["D"],
+            "languageTags": ["C", "GO"],
+            "damageTags": ["P", "S"],
+            "miscTags": ["MW", "RNG", "RW"],
+            "fluff": {
+					"entries": [{
+						"type": "entries",
+						"entries": [{
+								"type": "entries",
+								"entries": [
+									"Suenan los cuernos de guerra, vuelan rocas desde las catapultas y el sonido de miles de botas retumba en la tierra cuando los hobgoblins marchan al combate. En los límites del mundo civilizado, los asentamientos y colonos deben lidiar con estos humanoides agresivos cuya sed de conquista nunca está satisfecha.", 
+									"Los hobgoblins poseen la piel de un color naranja oscuro o rojizo, y su cabello varía entre el marrón oscuro, casi rojo, y el gris oscuro. Sus ojos amarillos o marrones observan bajo unas cejas pobladas, y sus amplias bocas muestran dientes afilados y amarillentos. Algunos hobgoblins macho tienen una prominente nariz azul o roja, símbolo de virilidad y poder entre los trasgos. Los hobgoblins pueden vivir tanto como los humanos, aunque su amor por la guerra y las batallas hace que esto sea poco probable.", {
+										"name": "Trasgos",
+										"type": "entries",
+										"entries": ["Los hobgoblins pertenecen a una familia de criaturas denominada trasgos. Suelen gobernar sobre sus primos, los pequeños goblins y los feroces osgos."]
+									}, {
+										"name": "Poder marcial",
+										"type": "entries",
+										"entries": [
+											"Los hobgoblins miden su valía mediante la fuerza física y aptitudes marciales, sin preocuparse de nada más que de mostrar su habilidad y astucia en combate. Aquellos que ocupan altos cargos militares alcanzan sus cargos a través de la fuerza y los conservan imponiendo su autoridad mediante medidas draconianas.",
+											"Se entrenan para luchar con una gran variedad de equipo y son más que capaces de forjar armas, armaduras, máquinas de asedio y otros artilugios militares. Se trata de seres muy organizados y disciplinados, que se preocupan enormemente por su equipo de campaña y sus posesiones personales. Prefieren los colores vivos asociados con sus tribus y adornan sus uniformes, que en ocasiones son extremadamente elaborados, con ribetes del color de la sangre y cuero teñido de negro. "
+										]
+									}, {
+										"name": "Legiones militares",
+										"type": "entries",
+										"entries": [
+											"Estas criaturas se organizan en hordas tribales denominadas legiones. En su sociedad marcial, cada hobgoblin tiene un rango, desde los líderes poderosos y los campeones hasta los soldados de a pie. Incluso los goblins, que se ven forzados a luchar en primera fila a punta de lanza, forman parte de este organigrama. Cada legión es dirigida por un señor de la guerra con varios capitanes a su mando. Un señor de la guerra hobgoblin es un tirano despiadado más interesado en la estrategia, la victoria, la gloria, la reputación y el dominio que en liderar sus tropas durante el combate. ", 
+											"Aunque son muy leales y disciplinados dentro de sus legiones, estas últimas compiten constantemente con las legiones rivales para ensalzar su reputación y estatus social. Los encuentros entre estas hordas acabarán de forma violenta si no se detiene a las tropas a tiempo, y tan solo los líderes más poderosos pueden obligar a dos legiones a cooperar en el campo de batalla."
+										]
+									}, {
+										"name": "Estrategas astutos",
+										"type": "entries",
+										"entries": [
+											"Los hobgoblins poseen un pensamiento táctico innato y son muy disciplinados, por lo que son capaces de ejecutar planes de batalla sofisticados bajo la dirección de un estratega. Sin embargo, odian a los elfos y los atacarán antes que a cualquier otro enemigo, incluso si ello desbarata sus cuidados planes.", 
+											"A veces, las legiones se complementan con tropas sacrificables y de inferior calidad, como goblins, osgos, orcos, humanos malvados, ogros y gigantes. "
+										]
+									}, {
+										"name": "Domadores de bestias",
+										"type": "entries",
+										"entries": ["Estas criaturas tienen una larga historia entrenando animales. Al igual que otras razas más civilizadas, recurren a bueyes y caballos para transportar bienes y equipo militar durante leguas. Se comunican entre ellos usando cuervos entrenados y emplean sanguinarios lobos para vigilar a los prisioneros y proteger sus campamentos. La caballería hobgoblin usa huargos adiestrados como monturas, de forma similar a como los goblins cabalgan en lobo. Algunas tribus doman a simios carnívoros para que combatan por ellos."]
+									}, {
+										"name": "Conquistar y controlar",
+										"type": "entries",
+										"entries": [
+											"Los hobgoblins ocupan tierras capaces de proveerlos de abundantes recursos, por lo que se los puede hallar en bosques y montañas, cerca de minas y asentamientos de humanoides, y en cualquier lugar donde pueda encontrarse madera, metal o esclavos potenciales. Construyen y conquistan fortalezas en posiciones estratégicas, que después usan como puestos avanzados a partir de los cuales expandir sus territorios.", 
+											"Los señores de la guerra hobgoblin nunca se cansan de combatir, pero tampoco desenvainan sus armas a la ligera. Antes de atacar, exploran la zona para evaluar los puntos fuertes y débiles de sus enemigos. Cuando asaltan una fortaleza, la rodean primero para evitar que nadie escape o les provea suministros, y después esperan a que sus enemigos mueran de hambre.", 
+											"Los hobgoblins fortifican sus posiciones, mejorando las defensas existentes con innovaciones propias. Cuando ocupan complejos de cuevas, mazmorras, ruinas o bosques, los protegen con fosos, vallas, puertas, torres de vigilancia, pozos y toscas catapultas o balistas."
+										]
+									}, {
+										"name": "Legión de Maglubiyet",
+										"type": "entries",
+										"entries": ["Los Hobgoblin adoran a Maglubiyet el Poderoso, el gran dios de los trasgos. Aunque su figura resulta aterradora, los hobgoblins no temen a la muerte, pues creen que si caen en combate sus espíritus se unirán a las honorables filas del ejército de Maglubiyet en el plano de Aqueronte."]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Hobgoblin.jpg"
+						}
+					}
+				]
+			}
+        },
+		{
+            "name": "Nótico",
+            "source": "MM-ES",
+            "page": 236,
+            "otherSources": [{
+                    "source": "LMoP-ES"
+                }
+            ],
+            "size": "M",
+			"type": {
+                "type": "aberration",
+                "tags": ["aberración"]
+            },
+            "alignment": ["N", "E"],
+            "ac": [{
+                    "ac": 15,
+                    "from": ["armadura natural"]
+                }
+            ],
+            "hp": {
+                "average": 45,
+                "formula": "6d8 + 18"
+            },
+            "speed": {
+                "walk": 30
+            },
+            "str": 14,
+            "dex": 16,
+            "con": 16,
+            "int": 13,
+            "wis": 10,
+            "cha": 8,
+            "skill": {
+                "arcana": "+3",
+                "insight": "+4",
+                "perception": "+2",
+                "stealth": "+5"
+            },
+            "senses": ["truesight 120 ft."],
+            "passive": 12,
+            "languages": ["Infracomún"],
+            "cr": "2",
+            "trait": [{
+                    "name": "Vista Aguda",
+                    "entries": ["El nótico tiene ventaja en las pruebas de Sabiduría ({@skill Perception|Percepción}) que dependan de la vista."]
+                }
+            ],
+            "action": [{
+                    "name": "Ataque múltiple",
+                    "entries": ["El nótico realiza dos ataques con sus garras."]
+                }, {
+                    "name": "Garra",
+                    "entries": ["{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."]
+                }, {
+                    "name": "Mirada putrescente",
+                    "entries": ["El nótico elige a una criatura que se encuentre a 30 pies o menos y pueda ver. El objetivo deberá tener éxito en una tirada de salvación de Constitución {@dc 12}, o sufrirá 10 ({@damage 3d6}) de daño necrótico."]
+                }, {
+                    "name": "Intuición sobrecogedora",
+                    "entries": ["El nótico elige a una criatura situada a 30 pies o menos y pueda ver. Deberá hacerse una tirada enfrentada entre el Carisma (Engaño) del objetivo y la Sabiduría (Perspicacia) del nótico. Si gana este último, aprenderá mágicamente un dato o un secreto de la criatura. El objetivo ganará automáticamente si es inmune el estado {@condition hechizado|PHB-ES}."]
+                }
+            ],
+            "environment": ["underdark"],
+            "tokenUrl": "https://5e.tools/img/MM/Nothic.png",
+            "soundClip": {
+                "type": "internal",
+                "path": "bestiary/nothic.mp3"
+            },
+            "traitTags": ["Sentidos agudos"],
+            "senseTags": ["U"],
+            "actionTags": ["Ataque múltiple"],
+            "languageTags": ["U"],
+            "damageTags": ["N", "S"],
+            "miscTags": ["MW"],
+            "fluff": {
+					"entries": [{
+						"type": "entries",
+						"entries": [{
+								"type": "entries",
+								"entries": ["Un ojo siniestro observa desde la oscuridad. Su mirada insinúa una inteligencia incomprensible y una maldad perturbadora. La mayoría de las veces los nóticos se contentan con mirar, valorando a las criaturas con las que se encuentra. Cuando se deciden a recurrir a la violencia, emplean su terrible mirada para pudrir la carne de sus enemigos.", {
+										"name": "Arcanistas malditos",
+										"type": "entries",
+										"entries": ["En vez de alcanzar el estatus de divinidad con el que soñaban, algunos magos que dedicaron su vida a la búsqueda de secretos arcanos acaban convertidos en monstruos insidiosos y atormentados. La causa de esta transformación es una oscura maldición obra de Vecna, un poderoso liche que, en algunos mundos, ha trascendido su existencia como muerto viviente para convertirse en el dios de los secretos. Los nóticos no recuerdan nada de su anterior vida. Acechan entre las sombras y merodean en lugares en los que abunda el conocimiento mágico, atraídos por recuerdos e impulsos que no son capaces de entender. "]
+									}, {
+										"name": "Oráculos oscuros",
+										"type": "entries",
+										"entries": ["Los nóticos poseen una extraña intuición mágica, que les permite extraer el conocimiento de otras criaturas. Esto les dota de una comprensión única de saberes secretos y prohibidos, que aceptan compartir a cambio de un precio. Los nóticos ansían objetos mágicos, por lo que aceptarán estos regalos de aquellas criaturas que buscan sus conocimientos.", {
+												"name": "Acechando en lugares mágicos",
+												"entries": ["Los nóticos son famosos por su tendencia a infiltrarse en academias de lo arcano y otros lugares en los que se enseña la práctica de la magia. Les mueve una vaga esperanza de que quizá exista alguna forma de volver a su estado original. Aunque tampoco puede decirse que tengan un propósito claro y definido. Se trata más bien de un leve tirón en un rincón de sus mentes. Ciertos nóticos son lo bastante astutos como para darse cuenta de que esta sensación no es sino parte de las consecuencias de su estupidez; una esperanza falsa que les lleva a buscar aún más secretos arcanos."],
+												"type": "entries"
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Nothic.png"
+						}
+					}
+				]
+			}
+        },
+		{
+            "name": "Gelatina Ocre",
+            "source": "MM-ES",
+            "page": 243,
+            "srd": true,
+            "otherSources": [{
+                    "source": "LMoP-ES"
+                }
+            ],
+            "size": "L",
+			"type": {
+                "type": "ooze",
+                "tags": ["cieno"]
+            },
+            "alignment": ["U"],
+            "ac": [8],
+            "hp": {
+                "average": 45,
+                "formula": "6d10 + 12"
+            },
+            "speed": {
+                "walk": 10,
+                "climb": 10
+            },
+            "str": 15,
+            "dex": 6,
+            "con": 14,
+            "int": 2,
+            "wis": 6,
+            "cha": 1,
+            "senses": ["blindsight 60 ft. (blind beyond this radius)"],
+            "passive": 8,
+            "resist": ["acid"],
+            "immune": ["lightning", "slashing"],
+            "conditionImmune": ["blinded", "charmed", "deafened", "exhaustion", "frightened", "prone"],
+            "cr": "2",
+            "trait": [{
+                    "name": "Amorfa",
+                    "entries": ["La gelatina puede moverse a través de espacios de tan solo 1 pulgada de ancho sin apretarse."]
+                }, {
+                    "name": "Trepar cual Arácnido",
+                    "entries": ["La gelatina puede trepar por superficies difíciles, incluyendo recorrer el techo boca abajo, sin tener que hacer pruebas de característica."]
+                }
+            ],
+            "action": [{
+                    "name": "Pseudópodo",
+                    "entries": ["{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) bludgeoning damage plus 3 ({@damage 1d6}) acid damage."]
+                }
+            ],
+            "reaction": [{
+                    "name": "Dividirse",
+                    "entries": ["Cuando una gelatina Mediana o más grande que tenga al menos 10 puntos de golpe reciba daño de relámpago o cortante, se dividirá en dos nuevas gelatinas. Cada una de ellas tendrá la mitad de puntos de golpe, redondeando hacia abajo, y será una categoría de tamaño más pequeña que la original."]
+                }
+            ],
+            "environment": ["underdark"],
+            "tokenUrl": "https://5e.tools/img/MM/Ochre%20Jelly.png",
+            "soundClip": {
+                "type": "internal",
+                "path": "bestiary/ochre-jelly.mp3"
+            },
+            "traitTags": ["Amorfa", "Trepar cual Arácnido"],
+            "senseTags": ["B"],
+            "damageTags": ["A", "B"],
+            "miscTags": ["MW"],
+            "fluff": {
+					"entries": [{
+						"type": "entries",
+						"entries": [{
+								"type": "entries",
+								"entries": [
+									"La gelatina ocre es una masa amarillenta que puede pasar bajo las puertas y por grietas estrechas buscando a criaturas a las que devorar. Su astucia animal le permite evitar a grupos grandes de enemigos.", 
+									"Sigue a sus víctimas desde una distancia segura. Sus enzimas digestivas disuelven la carne con rapidez, pero no afectan a otras sustancias como hueso, madera o metal.", 
+									{
+										"type": "entries",
+										"name": "Cienos",
+										"entries": [
+											"Los cienos medran en la oscuridad y evitan las zonas con mucha luz o temperaturas extremas. Fluyen por húmedos subterráneos, arrastrándose por el suelo, goteando de techos y muros, diseminándose por los bordes de los lagos subterráneos o atravesando rocas a través de sus grietas. Se alimentan de cualquier objeto o criatura que pueda disolverse. El primer aviso que recibe un aventurero de la existencia de los cienos es a menudo el insoportable dolor de su toque ácido.", 
+											"Los cienos se sienten atraídos por el movimiento y el calor. Se nutren de materia orgánica, y cuando escasean las presas se alimentan de mugre, hongos y excrementos. Los aventureros veteranos saben que un pasillo inmaculadamente limpio es un síntoma de que la guarida de un cieno está cerca.", 
+											{
+												"name": "Muerte lenta",
+												"entries": [
+													"Los cienos matan a sus presas lentamente. Algunas especies, como los pudines negros o los cubos gelatinosos, envuelven a las criaturas para evitar que escapen. Lo único bueno de esta tortuosa muerte es que los camaradas de la víctima tienen tiempo para rescatarla antes de que sea tarde.", 
+													"Dado que no todos los cienos digieren todo tipo de sustancias, algunos tienen monedas, equipo metálico, huesos y otros restos suspendidos en sus temblorosos cuerpos. Un cieno muerto puede ser una sustancial fuente de riquezas para los que lo abatieron."],
+												"type": "entries"
+											}, {
+												"name": "Sirvientes involuntarios",
+												"entries": ["Aunque los cienos carecen de la inteligencia para aliarse con otras criaturas, aquellas que entienden sus hábitos alimenticios pueden atraerlos a lugares convenientes para ellos. Los monstruos más listos utilizan a los cienos para defender pasillos o comerse sus desechos. De la misma manera, se puede atraer a un cieno a una trampa de foso donde sus captores le alimentan lo suficiente para que no vaya tras ellos. Las criaturas más hábiles podrían también añadir antorchas y braseros en lugares estratégicos para evitar que un cieno abandone un túnel o una habitación determinada. "],
+												"type": "entries"
+											}, {
+												"name": "Hijos de Juiblex",
+												"entries": ["Según el Demonomicón de Iggwilv y otras fuentes, los cienos son fragmentos o hijos del señor demoníaco Juiblex. Al margen de si esto es cierto o no, el Señor sin Rostro es uno de los pocos entes capaces de controlar a los cienos e imbuirles de un mínimo de inteligencia. No obstante, la mayoría de las veces no se preocupan por emplear tácticas o por su propia supervivencia. Son predecibles y directos, atacando y devorando sin astucia alguna. Bajo el control de Juiblex, muestran destellos de consciencia e intención malévola. "],
+												"type": "entries"
+											}, {
+												"name": "Cienos",
+												"entries": ["Un cieno no necesita dormir."],
+												"type": "entries"
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Ochre Jelly.jpg"
+						}
+					}
+				]
+			}
+        },
+		{
+            "name": "Ogro",
+            "source": "MM-ES",
+            "page": 237,
+            "srd": true,
+            "otherSources": [{
+                    "source": "LMoP-ES"
+                }
+            ],
+            "size": "L",
+			"type": {
+                "type": "giant",
+                "tags": ["gigante"]
+            },
+            "alignment": ["C", "E"],
+            "ac": [{
+                    "ac": 11,
+                    "from": ["{@item armadura de pieles|PHB-ES}"]
+                }
+            ],
+            "hp": {
+                "average": 59,
+                "formula": "7d10 + 21"
+            },
+            "speed": {
+                "walk": 40
+            },
+            "str": 19,
+            "dex": 8,
+            "con": 16,
+            "int": 5,
+            "wis": 7,
+            "cha": 7,
+            "senses": ["darkvision 60 ft."],
+            "passive": 8,
+            "languages": ["Común", "Gigante"],
+            "cr": "2",
+            "action": [{
+                    "name": "Garrote grande",
+                    "entries": ["{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage."]
+                }, {
+                    "name": "Jabalina",
+                    "entries": ["{@atk mw,rw} {@hit 6} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage."]
+                }
+            ],
+            "environment": ["praderas", "bosques", "pantanos", "colinas", "desiertos", "costas", "zonas polares", "underdark", "montañas"],
+            "tokenUrl": "https://5e.tools/img/MM/Ogre.png",
+            "soundClip": {
+                "type": "internal",
+                "path": "bestiary/ogre.mp3"
+            },
+            "senseTags": ["D"],
+            "languageTags": ["C", "GI"],
+            "damageTags": ["B", "P"],
+            "miscTags": ["MW", "RW", "THW"],
+            "fluff": {
+					"entries": [{
+						"type": "entries",
+						"entries": [{
+								"type": "entries",
+								"entries": ["La mente de los ogros es tan lenta como fuertes son sus cuerpos. Viven del saqueo, la rapiña y el asesinato, ya sea por placer o por alimentarse. El espécimen adulto medio mide entre 9 y 10 pies (2,7 a 3 m) de estatura y pesa cerca de 1.000 libras (450 kg).", {
+										"name": "Temperamento furioso",
+										"type": "entries",
+										"entries": ["Los ogros son conocidos por su carácter iracundo, que estalla ante la más mínima ofensa percibida. Los insultos y las injurias pueden despertar la ira de un ogro en el acto, igual que robarle, chocarse con él, propinarle un golpe, pellizcarle, reírse de él, hacerle muecas o simplemente mirarle de una manera extraña. Cuando se despierta su furia, los ogros irrumpen en un berrinche de frustración que no se apacigua hasta que desaparece cualquier objeto o criatura a los que aplastar."]
+									}, {
+										"name": "Glotones repelentes",
+										"type": "entries",
+										"entries": ["Los ogros se comen casi cualquier cosa, pero les gusta especialmente la carne de enano, mediano y elfo. Siempre que pueden, combinan la comida con el placer y dan caza a víctimas huidizas para después comérselas crudas. Si queda algo de la víctima después de haberse saciado, puede que utilicen su piel para hacerse un taparrabos o un collar con sus huesos. Esta artesanía macabra es el culmen de la cultura ogra."]
+									}, {
+										"name": "Ávidos coleccionistas",
+										"type": "entries",
+										"entries": ["Los ojos de los ogros refulgen con avaricia cuando se posan sobre las posesiones de otros. En sus incursiones llevan toscos sacos que llenan de fabulosos \"tesoros\" obtenidos de sus víctimas. Esto podría incluir una colección de cascos abollados, una rueda de queso mohoso, un retal de pellejo animal prendido como una capa o un cerdo chillón y embarrado. Los ogros también se deleitan en el brillo del oro y la plata, y llegarán a luchar entre ellos por pequeños puñados de monedas. Otras criaturas más pequeñas pueden ganarse la confianza de un ogro ofreciéndole oro o un arma forjada para una criatura de su tamaño."]
+									}, {
+										"name": "Estupidez legendaria",
+										"type": "entries",
+										"entries": ["Solo unos pocos ogros son capaces de contar hasta diez, incluso con sus dedos delante. La mayoría solo pueden hablar una versión rudimentaria del idioma gigante y conocen un puñado de palabras en común. Los ogros creen todo lo que se les dice y se les puede engañar y confundir con facilidad, pero rompen todo aquello que no entienden. Los embaucadores con pico de oro que ponen a prueba su talento con estos salvajes suelen acabar tragándose sus elocuentes palabras, para después ser devorados. "]
+									}, {
+										"name": "Nómadas primitivos",
+										"type": "entries",
+										"entries": [
+											"Los ogros se visten con pieles de animales y arrancan árboles de raíz para utilizarlos como herramientas y armas rudimentarias. Fabrican jabalinas con punta de piedra para cazar. Cuando establecen guaridas, lo hacen cerca de los márgenes rurales de las tierras civilizadas, aprovechándose de ganado desatendido, las alacenas mal defendidas y los granjeros incautos.", 
+											"Los ogros duermen en cavernas, guaridas de animales o bajo los árboles hasta que encuentran una cabaña o una granja aisladas, tras lo cual matan a sus habitantes y se instalan allí. Cuando están aburridos o hambrientos, salen de su guarida y atacan a cualquier cosa que se cruce en su camino. Los ogros solo se trasladan una vez han agotado el alimento de una zona."
+										]
+									}, {
+										"name": "Bandas de ogros",
+										"type": "entries",
+										"entries": [
+											"En ocasiones los ogros se reúnen en pequeños grupos nómadas, pero carecen de una auténtica noción de tribalismo. Cuando una banda de ogros se encuentra con otra, es posible que una de ellas intente capturar miembros del otro grupo para incrementar sus filas. Sin embargo, es igual de probable que el intercambio de miembros se produzca libremente, sobre todo si en ese momento la banda que los recibe posee comida o armas en abundancia.", 
+											"Cuando se presenta la ocasión, los ogros se agrupan con otros monstruos con el fin de hostigar o dar caza a criaturas más débiles que ellos. Se asocian libremente con trasgos, orcos y trolls, y prácticamente veneran a los gigantes. En la compleja estructura social de los gigantes, conocida como el ordning, los ogros tienen un estatus inferior al del más indigno de los gigantes. Es por esto que un ogro hará casi cualquier cosa que le pida un gigante."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Ogre.jpg"
+						}
+					}
+				]
+			}
+        },
+		{
+            "name": "Orco",
+            "source": "MM-ES",
+            "page": 246,
+            "srd": true,
+            "otherSources": [{
+                    "source": "LMoP-ES"
+                }
+            ],
+            "size": "M",
+            "type": {
+                "type": "humanoid",
+                "tags": ["humanoide", "orco"]
+            },
+            "alignment": ["C", "E"],
+            "ac": [{
+                    "ac": 13,
+                    "from": ["{@item armadura de pieles|PHB-ES}"]
+                }
+            ],
+            "hp": {
+                "average": 15,
+                "formula": "2d8 + 6"
+            },
+            "speed": {
+                "walk": 30
+            },
+            "str": 16,
+            "dex": 12,
+            "con": 16,
+            "int": 7,
+            "wis": 11,
+            "cha": 10,
+            "skill": {
+                "intimidation": "+2"
+            },
+            "senses": ["darkvision 60 ft."],
+            "passive": 10,
+            "languages": ["Común", "Orco"],
+            "cr": "1/2",
+            "trait": [{
+                    "name": "Agresivo",
+                    "entries": ["El orco puede utilizar una acción adicional para moverse hasta su velocidad hacia una criatura hostil a la que pueda ver."]
+                }
+            ],
+            "action": [{
+                    "name": "Hacha a dos manos",
+                    "entries": ["{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d12 + 3}) slashing damage."]
+                }, {
+                    "name": "Jabalina",
+                    "entries": ["{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."]
+                }
+            ],
+            "environment": ["underdark", "montañas", "praderas", "bosques", "pantanos", "colinas", "zonas polares"],
+            "tokenUrl": "https://5e.tools/img/MM/Orc.png",
+            "soundClip": {
+                "type": "internal",
+                "path": "bestiary/orc.mp3"
+            },
+            "altArt": [{
+                    "name": "Iceshield Orc",
+                    "source": "PotA"
+                }
+            ],
+            "traitTags": ["Agresivo"],
+            "senseTags": ["D"],
+            "languageTags": ["C", "O"],
+            "damageTags": ["P", "S"],
+            "miscTags": ["MW", "RW", "THW"],
+            "fluff": {
+					"entries": [{
+						"type": "entries",
+						"entries": [{
+								"type": "entries",
+								"entries": ["Los orcos son bandidos y saqueadores salvajes de espalda encorvada, frente baja y una cara porcina con prominentes caninos inferiores que recuerdan a los colmillos de un jabalí.", {
+										"name": "Gruumsh Un-Ojo",
+										"entries": [
+											"Los orcos adoran a Gruumsh, su creador y deidad más poderosa. Creen que, en días pasados, todos los dioses se reunieron para repartir el mundo entre sus fieles. Cuando Gruumsh reclamó las montañas, descubrió que ya habían sido tomadas por los enanos. Exigió los bosques, pero los elfos ya se habían asentado allí. Todos los lugares que Gruumsh deseaba ya habían sido requeridos. Las otras deidades se rieron de él, ante lo que respondió con un alarido de furia. Agarró su poderosa lanza y derribó las montañas, incendió los bosques y labró enormes surcos en los campos. Aquel sería el papel de los orcos, proclamó, conquistar y destruir todo lo que las demás razas les habían negado. Hasta hoy, los orcos mantienen una guerra eterna contra los humanos, elfos, enanos y otras gentes.", 
+											"Los orcos sienten un odio especial por los elfos. El dios elfo Corellon Larethian dejó tuerto a Gruumsh con un flechazo certero en el ojo. Desde entonces, los orcos disfrutan especialmente masacrando elfos. Gruumsh convirtió su herida en un don siniestro, de manera que otorga un poderío divino a aquellos campeones que se arranquen voluntariamente un ojo en su honor. "
+										],
+										"type": "entries"
+									}, {
+										"name": "Tribus como plagas",
+										"type": "entries",
+										"entries": ["Los orcos se agrupan en tribus que expanden sus territorios y satisfacen su sed de sangre saqueando aldeas, devorando o ahuyentando rebaños trashumantes y matando cualquier humanoide que se les oponga. Tras arrasar un asentamiento, los orcos lo despojan de riquezas y herramientas que puedan utilizar en sus tierras. Después, prenden fuego a lo que queda de los pueblos o campos y se marchan por donde vinieron, con su sed de sangre saciada."]
+									}, {
+										"name": "Saqueadores nómadas",
+										"type": "entries",
+										"entries": [
+											"El ansia de matar de los orcos exige que habiten siempre a una distancia que haga posible el ataque a nuevos objetivos. Es por esto que no suelen establecer asentamientos permanentes, sino que convierten ruinas, complejos de cavernas y pueblos tomados a sus enemigos en campamentos fortificados y fortalezas. Los orcos solo construyen con fines defensivos, sin hacer ningún tipo de innovación ni mejora en sus guaridas más allá de ensartar miembros amputados a sus enemigos en las empalizadas o en las picas dispuestas en motas y fosos.", 
+											"Cuando se agota el alimento de un territorio, la tribu orca se divide en partidas de batidores que parten en busca de terrenos de caza adecuados. Cuando esos grupos regresan, traen consigo trofeos e informes de objetivos listos para ser atacados, entre los que se escoge el más rico de todos ellos. Entonces toda la tribu emprende la marcha, trazando una senda sangrienta hasta su nuevo territorio.",
+											"En ocasiones extraordinarias, el líder de una tribu decide conservar una guarida particularmente defendible durante décadas. Los orcos de tribus así deben aventurarse grandes distancias para saciar su apetito."
+										]
+									}, {
+										"name": "Liderazgo y poder",
+										"type": "entries",
+										"entries": [
+											"La mayoría de tribus oreas son patriarcales, y en ellas se hace alarde de títulos tan gráficos y grotescos como Muchas Flechas, Ojo Chillón o Destripaelfos. A veces un poderoso caudillo orco reúne a varias tribus desperdigadas para formar una única horda devastadora, que avanza arrasando a otras tribus oreas y asentamientos humanoides con una fuerza abrumadora.",
+											"La fuerza y el poder son las virtudes orcas más importantes, por lo que acogen en sus tribus a cualquier criatura vigorosa. Rechazan cualquier noción de pureza racial y aceptan orgullosos a ogros, trolls, semiorcos y orogs en sus filas. Además, los orcos respetan y temen el poder y el tamaño de los gigantes malvados, hecho que lleva a que a menudo les sirven como guardias o soldados."
+										]
+									}, {
+										"type": "entries",
+										"name": "Mestizaje orco",
+										"entries": ["Luthic, la diosa orca de la fertilidad y esposa de Gruumsh, exige que los orcos procreen frecuente e indiscriminadamente para incrementar sus hordas con cada generación. El instinto reproductor de los orcos es más poderoso que el de cualquier otra raza humanoide, por lo que están más que dispuestos a procrear con otras razas. Cuando un orco procrea con otros humanoides de tamaño y estatura similares, como enanos o humanos, el niño que nace de esa unión será un orco o un semiorco. Cuando un orco tiene descendencia con un ogro, el resultado es un semiogro de fuerza intimidatoria y rasgos brutales llamado ogrillon."]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Orc.jpg"
+						}
+					}
+				]
+			}
+        },
+		{
+            "name": "Oso Lechuza",
+            "source": "MM-ES",
+            "page": 249,
+            "srd": true,
+            "otherSources": [{
+                    "source": "LMoP-ES"
+                }
+            ],
+            "size": "L",
+			"type": {
+                "type": "monstrosity",
+                "tags": ["monstruosidad"]
+            },
+            "alignment": ["U"],
+            "ac": [{
+                    "ac": 13,
+                    "from": ["armadura natural"]
+                }
+            ],
+            "hp": {
+                "average": 59,
+                "formula": "7d10 + 21"
+            },
+            "speed": {
+                "walk": 40
+            },
+            "str": 20,
+            "dex": 12,
+            "con": 17,
+            "int": 3,
+            "wis": 12,
+            "cha": 7,
+            "skill": {
+                "perception": "+3"
+            },
+            "senses": ["darkvision 60 ft."],
+            "passive": 13,
+            "cr": "3",
+            "trait": [{
+                    "name": "Vista y Olfato Agudo",
+                    "entries": ["El oso lechuza tiene ventaja en las pruebas de Sabiduría ({@skill Perception|Percepción}) que dependan de la vista o del olfato."]
+                }
+            ],
+            "action": [{
+                    "name": "Ataque múltiple",
+                    "entries": ["El oso lechuza realiza dos ataques: uno con su pico y uno con sus garras."]
+                }, {
+                    "name": "Pico",
+                    "entries": ["{@atk mw} {@hit 7} to hit, reach 5 ft., one creature. {@h}10 ({@damage 1d10 + 5}) piercing damage."]
+                }, {
+                    "name": "Garras",
+                    "entries": ["{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) slashing damage."]
+                }
+            ],
+            "environment": ["bosques"],
+            "tokenUrl": "https://5e.tools/img/MM/Owlbear.png",
+            "soundClip": {
+                "type": "internal",
+                "path": "bestiary/owlbear.mp3"
+            },
+            "altArt": [{
+                    "name": "Owlbear",
+                    "source": "RMBRE"
+                }
+            ],
+            "traitTags": ["Sentidos agudos"],
+            "senseTags": ["D"],
+            "actionTags": ["Ataque múltiple"],
+            "damageTags": ["P", "S"],
+            "miscTags": ["MW"],
+            "fluff": {
+					"entries": [{
+						"type": "entries",
+						"entries": [{
+								"type": "entries",
+								"entries": ["El graznido de los osos lechuza resuena por los valles oscuros y los bosques remotos, rompiendo la quietud de la noche para anunciar la muerte de sus presas. El grueso y enmarañado pelaje de su cuerpo de úrsido está cubierto de plumas, y en su cabeza de lechuza observan furiosas las pupilas de sus claros, enormes y redondos ojos.", {
+										"name": "Ferocidad mortal",
+										"type": "entries",
+										"entries": [
+											"Los osos lechuza son famosos por su ferocidad, agresividad, tozudez y mal temperamento, lo que les convierte en uno de los depredadores más temidos de la naturaleza. Pocas cosas, si es que existe alguna, son capaces de inspirar temor a un oso lechuza hambriento. Incluso monstruos más grandes y fuertes evitan vérselas con ellos, ya que estas criaturas no tienen en consideración la superioridad física de su enemigo y atacan sin provocación alguna."
+										]
+									}, {
+										"name": "Depredadores consumados",
+										"type": "entries",
+										"entries": [
+											"Los osos lechuza salen de sus guaridas al caer el sol y cazan durante las horas más oscuras de la noche, ululando o graznando para delimitar su territorio, buscar pareja o hacer salir a las presas de su territorio de caza. Estos suelen ser bosques con los que el oso lechuza está familiarizado, pero también lo suficientemente densos como para limitar las vías de escape de sus presas. ", 
+											"Estas monstruosidades anidan en cavernas o ruinas cubiertas de los huesos de sus víctimas. Esto se debe a que arrastran presas a medio devorar de regreso a su guarida, con el fin de almacenar parte de los cuerpos entre las rocas, arbustos y árboles circundantes.",
+											"El olor a sangre y a carne podrida infesta las inmediaciones de la guarida de un oso lechuza, lo que atrae a carroñeros, que no son sino más presas para estas bestias.",
+											"Los osos lechuza cazan solos o en pareja. Si hay suficiente caza, una familia de osos lechuza podría permanecer unida más tiempo del necesario para criar a su descendencia. Si no, se separan en cuanto sus crías son capaces de cazar."
+										]
+									}, {
+										"name": "Compañeros salvajes",
+										"type": "entries",
+										"entries": [
+											"Aunque son más inteligentes que la mayoría de animales, los osos lechuza son muy difíciles de domar. Sin embargo, con el tiempo, el alimento y la suerte suficientes, una criatura inteligente podría llegar a conseguir que un oso lechuza le reconozca como su amo y hacer de él un guardia inexorable o una montura rápida y resistente. Los habitantes de remotos asentamientos fronterizos han conseguido incluso realizar carreras de osos lechuza, aunque los espectadores apuestan tanto por cuál será el primero en llegar a la meta como por cuál será el primero enatacar a su amo.",
+											"Algunas comunidades élficas acogen a los osos lechuza para que hagan sus guaridas bajo sus pueblos arbóreos, sirviéndose de estas las bestias como defensas naturales durante la noche. Los hobgoblins sienten predilección por los osos lechuza como bestias de guerra, y a veces los gigantes de las colinas y de la escarcha los tienen como mascota. Puede que un oso lechuza famélico aparezca en una arena de gladiadores, devorando y destripando a sus víctimas sin compasión ante un público sediento de sangre."
+										]
+									},
+									{
+										"name": "Origen de los osos lechuza",
+										"type": "entries",
+										"entries": [
+											"Los eruditos han debatido largo y tendido sobre el origen de los osos lechuza. La teoría más habitual es que un mago demente creó al primer espécimen cruzando a un búho gigante con un oso. Sin embargo, los elfos más ancianos afirman haber conocido a estas criaturas desde hace miles de años e, incluso, algunos feéricos insisten en que siempre han existido osos lechuza en el Feywild."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Owlbear.jpg"
+						}
+					}
+				]
+			}
+        },
+		{
+            "name": "Esqueleto",
+            "source": "MM-ES",
+            "page": 272,
+            "srd": true,
+            "otherSources": [{
+                    "source": "LMoP-ES"
+                }
+            ],
+            "size": "M",
+			"type": {
+                "type": "undead",
+                "tags": ["muerto viviente"]
+            },
+            "alignment": ["L", "E"],
+            "ac": [{
+                    "ac": 13,
+                    "from": ["restos de armadura"]
+                }
+            ],
+            "hp": {
+                "average": 13,
+                "formula": "2d8 + 4"
+            },
+            "speed": {
+                "walk": 30
+            },
+            "str": 10,
+            "dex": 14,
+            "con": 15,
+            "int": 6,
+            "wis": 8,
+            "cha": 5,
+            "senses": ["darkvision 60 ft."],
+            "passive": 9,
+            "immune": ["poison"],
+            "vulnerable": ["bludgeoning"],
+            "conditionImmune": ["exhaustion", "poisoned"],
+            "languages": ["entiende los idiomas que conoció en vida, pero no puede hablar"],
+            "cr": "1/4",
+            "action": [{
+                    "name": "Espada corta",
+                    "entries": ["{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."]
+                }, {
+                    "name": "Arco corto",
+                    "entries": ["{@atk rw} {@hit 4} to hit, range 80/320 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."]
+                }
+            ],
+            "environment": ["ciudades"],
+            "tokenUrl": "https://5e.tools/img/MM/Skeleton.png",
+            "soundClip": {
+                "type": "internal",
+                "path": "bestiary/skeleton.mp3"
+            },
+            "senseTags": ["D"],
+            "languageTags": ["CS", "LF"],
+            "damageTags": ["P"],
+            "miscTags": ["MW", "RNG", "RW"],
+            "fluff": {
+					"entries": [{
+						"type": "entries",
+						"entries": [{
+								"type": "entries",
+								"entries": ["Es posible lograr que un esqueleto se levante insuflándole magia oscura. Estos monstruos obedecen las invocaciones de los lanzadores de conjuros que los convocan desde cementerios pedregosos y campos de batalla, o se alzan en los lugares saturados de muerte y pérdida, despertados por el estímulo de la magia nigromántica o la presencia de un mal que corrompe lo que toca. ", {
+										"name": "Muertos animados",
+										"type": "entries",
+										"entries": [
+											"Sea cual sea la fuerza que despierta a los esqueletos, les imbuye de una vitalidad oscura, uniendo articulación con articulación y reconstruyendo los miembros desmantelados. Esta energía los conmina a avanzar, e incluso a pensar de una manera rudimentaria, pero solo como meras imitaciones de lo que una vez fueron. Estos esqueletos no recuerdan nada de su pasado. No obstante, si se consigue resucitar a un esqueleto se recuperarán tanto su cuerpo como su alma originales, expulsando al espíritu muerto viviente que animaba los huesos.", 
+											"Aunque la mayoría de estos monstruos son los restos animados de humanos y otros humanoides muertos, se pueden crear esqueletos a partir de los huesos de cualquier criatura. Esto da lugar a huestes de seres tan terribles como únicos."
+										]
+									}, {
+										"name": "Siervos obedientes",
+										"type": "entries",
+										"entries": [
+											"Los esqueletos alzados mediante un conjuro están vinculados a la voluntad de su creador. Siguen sus órdenes al pie de la letra, sin cuestionarlas ni tener en cuenta las consecuencias. Como interpretan literalmente las órdenes que reciben y su obediencia es ciega, les cuesta adaptarse a cambios en las circunstancias. No pueden leer, hablar, transmitir emociones o comunicarse salvo asintiendo, negando o señalando. Sin embargo, son capaces de realizar tareas relativamente complejas.", 
+											"Pueden luchar con armas y vestir armaduras, recargar y disparar una catapulta o fundíbulo, trepar por una escalera de asedio, formar un muro de escudos o arrojar aceite hirviendo. Con todo, deben recibir instrucciones específicas de cómo realizar cada una de estas tareas.", 
+											"Aunque carecen de la inteligencia que poseían en vida, los esqueletos no son descerebrados. Antes de partirse las extremidades intentando abrirse paso a través de una puerta de hierro, tratarán de abrirla girando un pomo. Y, si así no lo consiguen, buscarán otros medios de abrirla o un camino alternativo."
+										]
+									}, {
+										"name": "Criaturas de hábitos",
+										"type": "entries",
+										"entries": [
+											"A veces, los esqueletos independientes, temporal o permanentemente liberados del control de sus maestros, repiten comportamientos de su existencia pasada mecánicamente, ejecutando las tareas que solían realizar en vida. El esqueleto de un minero podría coger un pico y comenzar a golpear muros de piedra; el de un guardia ponerse a vigilar una puerta al azar; el de un dragón tumbarse sobre una pila de tesoros; y el de un caballo masticar hierba que jamás alcanzará ningún estómago. Si se queda solo en un salón de baile, el esqueleto de un noble podría ponerse a danzar por toda la eternidad.", 
+											"Cuando los esqueletos se topan con criaturas vivas, su energía nigromántica los fuerza a matarlas salvo que sus maestros les ordenen lo contrario. Atacan sin piedad y combaten hasta ser destruidos, ya que tienen poca consciencia de sí mismos y aún menos instinto de supervivencia."
+										]
+									}, {
+										"name": "Muerto viviente",
+										"type": "entries",
+										"entries": ["Un esqueleto no necesita respirar, comer, beber ni dormir."]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Skeleton.jpg"
+						}
+					}
+				]
+			}
+        },
+		{
+            "name": "Espectador",
+            "group": "Contempladores",
+            "source": "MM-ES",
+            "page": 30,
+            "otherSources": [{
+                    "source": "LMoP-ES"
+                }
+            ],
+            "size": "M",
+			"type": {
+                "type": "aberration",
+                "tags": ["aberración"]
+            },
+            "alignment": ["L", "N"],
+            "ac": [{
+                    "ac": 14,
+                    "from": ["armadura natural"]
+                }
+            ],
+            "hp": {
+                "average": 39,
+                "formula": "6d8 + 12"
+            },
+            "speed": {
+                "walk": 0,
+                "fly": {
+                    "number": 30,
+                    "condition": "(levitar)"
+                },
+                "canHover": true
+            },
+            "str": 8,
+            "dex": 14,
+            "con": 14,
+            "int": 13,
+            "wis": 14,
+            "cha": 11,
+            "skill": {
+                "perception": "+6"
+            },
+            "senses": ["darkvision 120 ft."],
+            "passive": 16,
+            "conditionImmune": ["prone"],
+            "languages": ["Habla de las profundidades", "Infracomún", "telepatía 120 pies"],
+            "cr": "3",
+            "action": [{
+                    "name": "Mordisco",
+                    "entries": ["{@atk mw} {@hit 1} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d6 - 1}) piercing damage."]
+                }, {
+                    "name": "Rayos oculares",
+                    "entries": ["El espectador dispara hasta dos de los siguientes rayos oculares mágicos contra una o dos criaturas que pueda ver y se encuentren a 90 pies o menos de distancia. Solo puede usar cada rayo una vez por turno.", {
+                            "type": "list",
+                            "style": "list-hang-notitle",
+                            "items": [{
+                                    "type": "item",
+                                    "name": "1. Rayo de confusión.",
+                                    "style": "italic",
+                                    "entry": "El objetivo deberá superar en una tirada de salvación de Sabiduría {@dc 13} no podrá llevar a cabo reacciones hasta el final de su siguiente turno. Además durante su próximo turno el objetivo no podrá moverse y tendrá que usar su acción para hacer un ataque cuerpo a cuerpo o a distancia contra una criatura determinada aleatoriamente dentro de su alcance. Si el objetivo no pude atacar no hará nada durante su próximo turno."
+                                }, {
+                                    "type": "item",
+                                    "name": "2. Rayo paralizador.",
+                                    "style": "italic",
+                                    "entry": "La criatura deberá superar una tirada de salvación de Constitución {@dc 13} o quedará {@condition paralizado|PHB-ES|paralizada} durante 1 minuto. El objetivo puede repetir la tirada de salvación al final de cada uno de sus turnos, librándose del efecto si tiene éxito."
+                                }, {
+                                    "type": "item",
+                                    "name": "3. Rayo aterrador.",
+                                    "style": "italic",
+                                    "entry": "La criatura deberá superar una tirada de salvación de Sabiduría {@dc 13} estará {@condition asustado|PHB-ES|asustada} durante 1 minuto. El objetivo puede repetir la tirada de salvación (con desventaja si puede ver al espectador) al final de cada uno de sus turnos, librándose del efecto si tiene éxito."
+                                }, {
+                                    "type": "item",
+                                    "name": "4. Rayo hiriente.",
+                                    "style": "italic",
+                                    "entry": "El objetivo deberá hacer una tirada de salvación de Constitución {@dc 13}, sufriendo 16 ({@damage 3d10}) de daño de necrótico si la falla, o la mitad de ese daño si la supera."
+                                }
+                            ]
+                        }
+                    ]
+                }, {
+                    "name": "Crear comida yagua",
+                    "entries": ["El espectador crea mágicamente suficiente agua y comida para mantenerse a sí mismo durante 24 horas."]
+                }
+            ],
+            "reaction": [{
+                    "name": "Reflejar conjuro",
+                    "entries": ["Si el espectador supera una tirada de salvación contra un conjuro, o un conjuro falla a la hora de impactarle, esta aberración podrá elegir otra criatura que se encuentre a 30 pies o menos de él y que pueda ver (incluso al propio lanzador del conjuro). El conjuro afectará a dicha criatura en lugar de al espectador. Si el conjuro obliga a hacer una tirada de salvación, la criatura elegida deberá realizar la suya propia. Si, en cambio, el conjuro era un ataque, habrá que repetir la tirada de ataque contra el nuevo objetivo."]
+                }
+            ],
+            "environment": ["underdark"],
+            "tokenUrl": "https://5e.tools/img/MM/Spectator.png",
+            "soundClip": {
+                "type": "internal",
+                "path": "bestiary/spectator.mp3"
+            },
+            "altArt": [{
+                    "name": "Spectator",
+                    "source": "RMBRE"
+                }
+            ],
+            "senseTags": ["SD"],
+            "languageTags": ["DS", "TP", "U"],
+            "damageTags": ["N", "P"],
+            "miscTags": ["MW"],
+            "conditionInflict": ["frightened", "paralyzed"],
+            "fluff": {
+					"entries": [{
+						"type": "entries",
+						"entries": [{
+								"type": "entries",
+								"entries": ["Un espectador es un contemplador menor al que se invoca desde otro plano de existencia mediante un ritual mágico, cuyos componentes incluyen cuatro tallos oculares de contemplador que desaparecerán, consumidos por la magia del ritual. Es por esto que los espectadores tienen cuatro tallos, dos a cada lado del gran ojo que ocupa el centro de un cuerpo de 4 pies (1,2 m) de diámetro.", {
+										"name": "Guardianes mágicos",
+										"type": "entries",
+										"entries": ["Los espectadores vigilan un lugar o tesoro a elección de sus invocadores durante 101 años, impidiendo a cualquier criatura, salvo a quien lo invocó, acercarse al lugar o utilizar el tesoro, a no ser que su invocador ordenara lo contrario. Si lo que guardaban desaparece o es destruido antes de que pasen sus años de servicio, el espectador desaparecerá. De ninguna otra manera abandonará su tarea."]
+									}, {
+										"name": "Destellos de locura",
+										"type": "entries",
+										"entries": [
+											"Aunque puede hablar, un espectador se comunica principalmente mediante telepatía. Es respetuoso mientras cumple su cometido, y hablará sin problemas sobre sus órdenes y sobre su invocador. Sin embargo, incluso la más nimia de las conversaciones deja entrever pequeñas excentricidades en su personalidad, producto de muchos años aislado. Podría inventarse enemigos, hablar de él mismo en tercera persona o imitar la voz de su invocador.", 
+											"Al igual que los contempladores, cada espectador se considera el paradigma de su raza, y odia profundamente al resto de espectadores. Si por algún casual dos de estas criaturas se encontraran, lo más probable es que luchen hasta la muerte."
+										]
+									}, {
+										"type": "entries",
+										"name": "Libres de su carga",
+										"entries": ["Cuando un espectador cumple su tarea, es libre de hacer lo que quiera. Muchos deciden instalarse en el lugar que antes protegían, especialmente si quienes los invocaron han muerto. Dado que su vida carece de sentido, la locura que mostraban durante su servicio se agudiza."]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Spectator.png"
+						}
+					}
+				]
+			}
+        },
+		{
+            "name": "Estirge",
+            "source": "MM-ES",
+            "page": 284,
+            "srd": true,
+            "otherSources": [{
+                    "source": "LMoP-ES"
+                }
+            ],
+            "size": "T",
+			"type": {
+                "type": "beast",
+                "tags": ["bestia"]
+            },
+            "alignment": ["U"],
+            "ac": [{
+                    "ac": 14,
+                    "from": ["armadura natural"]
+                }
+            ],
+            "hp": {
+                "average": 2,
+                "formula": "1d4"
+            },
+            "speed": {
+                "walk": 10,
+                "fly": 40
+            },
+            "str": 4,
+            "dex": 16,
+            "con": 11,
+            "int": 2,
+            "wis": 8,
+            "cha": 6,
+            "senses": ["darkvision 60 ft."],
+            "passive": 9,
+            "cr": "1/8",
+            "action": [{
+                    "name": "Chupar sangre",
+                    "entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}5 ({@damage 1d4 + 3}) piercing damage, y la estirge se engancha al objetivo. Esta no atacará mientras esté enganchada. En lugar de eso, al inicio de cada uno de los turnos de la estirge, el objetivo perderá 5 ({@dice 1d4 + 3}) puntos de golpe debido a la pérdida de sangre.", 
+						"La estirge puede desengancharse utilizando 5 pies de su movimiento. Lo hará tras chupar 10 puntos de golpe en forma de sangre de su objetivo o cuando este muera. Cualquier criatura, incluyendo el objetivo, puede usar una acción para desenganchar a la estirge."]
+                }
+            ],
+            "environment": ["praderas", "bosques", "pantanos", "colinas", "ciudades", "desiertos", "costas", "montañas", "underdark"],
+            "tokenUrl": "https://5e.tools/img/MM/Stirge.png",
+            "soundClip": {
+                "type": "internal",
+                "path": "bestiary/stirge.mp3"
+            },
+            "senseTags": ["D"],
+            "damageTags": ["P"],
+            "miscTags": ["MW"],
+            "fluff": {
+					"entries": [{
+						"type": "entries",
+						"entries": [{
+								"type": "entries",
+								"entries": [
+									"Estas horribles criaturas voladoras parecen un cruce entre un murciélago enorme y un mosquito gigante. Sus patas terminan en pinzas afiladas y su larga probóscide azota el aire en busca de su próxima comida.", 
+									"Las estirges se alimentan de la sangre de seres vivos, pegándose a ellos y drenándolos poco a poco. Aunque no son un peligro cuando son pocos, una bandada de estirges puede representar una amenaza formidable, ya que estas criaturas tienen la oportunidad de volver a adherirse a sus debilitadas víctimas en cuanto estas consiguen quitárselas de encima.", 
+									{
+										"name": "Chupar sangre",
+										"type": "entries",
+										"entries": ["Las estirges atacan posándose sobre su víctima, encontrando un punto vulnerable y clavando su probóscide en la carne mientras sujetan al objetivo mediante sus pinzas. Una vez se han saciado, se separan y alejan volando, para digerir su comida."]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Stirge.jpg"
+						}
+					}
+				]
+			}
+        },
+		{
+            "name": "Rama Marchita",
+            "source": "MM-ES",
+            "page": 32,
+            "otherSources": [{
+                    "source": "LMoP-ES"
+                }
+            ],
+            "size": "S",
+			"type": {
+                "type": "plant",
+                "tags": ["planta"]
+            },
+            "alignment": ["N", "E"],
+            "ac": [{
+                    "ac": 13,
+                    "from": ["armadura natural"]
+                }
+            ],
+            "hp": {
+                "average": 4,
+                "formula": "1d6 + 1"
+            },
+            "speed": {
+                "walk": 20
+            },
+            "str": 6,
+            "dex": 13,
+            "con": 12,
+            "int": 4,
+            "wis": 8,
+            "cha": 3,
+            "skill": {
+                "stealth": "+3"
+            },
+            "senses": ["blindsight 60 ft. (blind beyond this radius)"],
+            "passive": 9,
+            "vulnerable": ["fire"],
+            "conditionImmune": ["blinded", "deafened"],
+            "languages": ["entiende común, pero no puede hablar"],
+            "cr": "1/8",
+            "trait": [{
+                    "name": "Apariencia Falsa",
+                    "entries": ["Mientras permanezca estática, la rama marchita es indistinguible de un arbusto muerto."]
+                }
+            ],
+            "action": [{
+                    "name": "Garras",
+                    "entries": ["{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage."]
+                }
+            ],
+            "environment": ["bosques"],
+            "tokenUrl": "https://5e.tools/img/MM/Twig%20Blight.png",
+            "soundClip": {
+                "type": "internal",
+                "path": "bestiary/twig-blight.mp3"
+            },
+            "altArt": [{
+                    "name": "Twig Blight",
+                    "source": "DIP"
+                }
+            ],
+            "traitTags": ["Apariencia Falsa"],
+            "senseTags": ["B"],
+            "languageTags": ["C", "CS"],
+            "damageTags": ["P"],
+            "miscTags": ["MW"],
+            "fluff": {
+					"entries": [{
+						"type": "entries",
+						"entries": [{
+								"type": "entries",
+								"entries": ["Las marchitas, plantas despiertas dotadas de inteligencia y capaces de moverse, plagan las tierras contaminadas por la oscuridad. Tras beber dicha oscuridad del suelo, llevan a cabo la voluntad de un mal ancestral, tratando de extender su influencia allá donde pueden.", {
+										"name": "Raíces del árbol de Gulthias",
+										"type": "entries",
+										"entries": ["Las leyendas hablan de un vampiro llamado Gulthias que levantó una torre abominable, a la que llamó Colmillo de la Noche, usando para ello las magias más horribles. Gulthias fue derrotado cuando un héroe hundió una estaca de madera en su pecho, atravesando su corazón. Sin embargo, su sangre impregnó la estaca con un poder terrible. Pasado un tiempo, de ella brotaron nuevos zarcillos, de los que creció un retoño lleno de la esencia malvada del vampiro. Se dice que un druida loco descubrió el joven árbol y lo trasplantó a una gruta subterránea, donde podría crecer. Del árbol de Gulthias surgió la primera cosecha de marchitas."]
+									}, {
+										"name": "Conquista oscura",
+										"type": "entries",
+										"entries": [
+											"Cada vez que un árbol o planta es corrompido por una mente o poder malvado, puede transformarse en un árbol de Gulthias para infestar y corromper el bosque que le rodea. Su mal se propaga a través de sus raíces hacia el suelo, extendiéndose por otras plantas, que perecen o se transforman en marchitas. A medida que las marchitas crecen, estas envenenan y arrancan las plantas sanas, reemplazándolas con zarzas, maleza venenosa y vegetación por el estilo. Si se les da tiempo, las marchitas pueden convertir cualquier terreno o bosque en un lugar corrupto.", 
+											"En los bosques infestados con marchitas, los árboles y las plantas crecen a una velocidad sobrenatural. Las enredaderas y la maleza se extienden rápidamente por los edificios y esconden los caminos y las carreteras bajo su manto. Tras expulsar o asesinar a sus habitantes, las marchitas son capaces de hacer desaparecer pueblos enteros en pocos días.", 
+											{
+												"name": "Controladas por el mal",
+												"entries": ["Las marchitas son criaturas independientes, pero la mayoría actúan bajo las órdenes de un árbol de Gulthias y muestran a menudo hábitos y rasgos de la fuerza vital o el espíritu que las engendró. Continúan el legado de un mal largamente olvidado, atacando a viejos enemigos de su progenitor o buscando tesoros que le resulten valiosos."],
+												"type": "entries"
+											}
+										]
+									}, {
+										"type": "entries",
+										"name": "Rama marchita",
+										"entries": [
+											"Las ramas marchitas pueden echar raíces en la tierra, algo que hacen cuando escasean las presas. Mientras están enraizadas se asemejan a simples arbustos leñosos. Sin embargo, cuando se desarraigan para moverse, sus ramas se retuercen hasta formar un cuerpo de aspecto humanoide, con cabeza y extremidades. ", 
+											"Las ramas marchitas buscan lugares de acampada y abrevaderos, donde echan raíces mientras preparan emboscadas para posibles víctimas que vayan allí a beber o descansar. Se desplazan en grupo, y se entremezclan con la vegetación del lugar o con montones de restos o de leña. ", 
+											"Dado que su madera está muy seca, las ramas marchitas son particularmente vulnerables al fuego. "
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Twig Blight.png"
+						}
+					}
+				]
+			}
+        },
+		{
+            "name": "Lobo",
+            "source": "MM-ES",
+            "page": 341,
+            "srd": true,
+            "otherSources": [{
+                    "source": "LMoP-ES"
+                }
+            ],
+            "size": "M",
+			"type": {
+                "type": "beast",
+                "tags": ["bestia"]
+            },
+            "alignment": ["U"],
+            "ac": [{
+                    "ac": 13,
+                    "from": ["armadura natural"]
+                }
+            ],
+            "hp": {
+                "average": 11,
+                "formula": "2d8 + 2"
+            },
+            "speed": {
+                "walk": 40
+            },
+            "str": 12,
+            "dex": 15,
+            "con": 12,
+            "int": 3,
+            "wis": 12,
+            "cha": 6,
+            "skill": {
+                "perception": "+3",
+                "stealth": "+4"
+            },
+            "passive": 13,
+            "cr": "1/4",
+            "trait": [{
+                    "name": "Oído y Olfato Agudos",
+                    "entries": ["El lobo posee ventaja en las pruebas de Sabiduría ({@skill Perception|Percepción}) que dependan del oído o del olfato."]
+                }, {
+                    "name": "Atacar en Manada",
+                    "entries": ["El lobo tiene ventaja en las tiradas de ataque contra criaturas que estén a 5 pies amenos de, al menos, un aliado del lobo que no esté {@condition incapacitado|PHB-ES}."]
+                }
+            ],
+            "action": [{
+                    "name": "Mordisco",
+                    "entries": ["{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d4 + 2}) piercing damage. Si el objetivo es una criatura, deberá superar una tirada de salvación de Fuerza {@dc 11} o será {@condition derribado|PHB-ES}."]
+                }
+            ],
+            "environment": ["praderas", "bosques", "colinas"],
+            "tokenUrl": "https://5e.tools/img/MM/Wolf.png",
+            "soundClip": {
+                "type": "internal",
+                "path": "bestiary/wolf.mp3"
+            },
+            "traitTags": ["Sentidos agudos", "Atacar en Manada"],
+            "damageTags": ["P"],
+            "miscTags": ["MW"],
+            "conditionInflict": ["prone"]
+        },
+		{
+            "name": "Dragón Verde Joven ",
+            "group": "Dragón Cromático",
+            "source": "MM-ES",
+            "page": 94,
+            "srd": true,
+            "size": "L",
+			"type": {
+                "type": "dragon",
+                "tags": ["dragón"]
+            },
+            "alignment": ["L", "E"],
+            "ac": [{
+                    "ac": 18,
+                    "from": ["armadura natural"]
+                }
+            ],
+            "hp": {
+                "average": 136,
+                "formula": "16d10 + 48"
+            },
+            "speed": {
+                "walk": 40,
+                "fly": 80,
+                "swim": 40
+            },
+            "str": 19,
+            "dex": 12,
+            "con": 17,
+            "int": 16,
+            "wis": 13,
+            "cha": 15,
+            "save": {
+                "dex": "+4",
+                "con": "+6",
+                "wis": "+4",
+                "cha": "+5"
+            },
+            "skill": {
+                "deception": "+5",
+                "perception": "+7",
+                "stealth": "+4"
+            },
+            "senses": ["blindsight 30 ft.", "darkvision 120 ft."],
+            "passive": 17,
+            "immune": ["poison"],
+            "conditionImmune": ["poisoned"],
+            "languages": ["Común", "Dracónico"],
+            "cr": "8",
+            "trait": [{
+                    "name": "Anfibio",
+                    "entries": ["El dragón puede respirar tanto aire como agua."]
+                }
+            ],
+            "action": [{
+                    "name": "Ataque múltiple",
+                    "entries": ["El dragón realiza tres ataques: uno con su mordisco y dos con sus garras."]
+                }, {
+                    "name": "Mordisco",
+                    "entries": ["{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}15 ({@damage 2d10 + 4}) piercing damage plus 7 ({@damage 2d6}) poison damage."]
+                }, {
+                    "name": "Garra",
+                    "entries": ["{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."]
+                }, {
+                    "name": "Aliento venenoso {@recharge 5}",
+                    "entries": ["El dragón exhala un gas venenoso en un cono de 30 pies. Todas las criaturas situadas en el área deberán hacer una tirada de salvación de Constitución {@dc 14}, sufriendo 42 {@damage 12d6} de daño de veneno si la fallan, o la mitad del daño si la superan."]
+                }, {
+					"type": "inset",
+					"name": "Variante: Dragones Lanzadores de Conjuros Innatos",
+					"entries": [
+						"Los dragones son criaturas de naturaleza mágica que son capaces de dominar unos pocos conjuros al ir envejeciendo. Para representar esto, puedes recurrir a esta variante.",
+						"Un dragón joven o de mayor edad puede lanzar de forma innata tantos conjuros como su modificador por Carisma. Es capaz de lanzar cada conjuro una vez al día, y no necesita componentes materiales para hacerlo, pero el nivel del conjuro no puede ser superior al valor de desafío del dragón dividido por tres (redondeando hacia abajo). El bonificador para impactar con ataques de conjuro es su bonificador por competencia + su modificador por Carisma. La CD de la salvación de conjuros del dragón es 8 + su bonificador por competencia + su modificador por Carisma.",
+						"{@i {@color Este dragón puede lanzar dos conjuros de forma innata, una vez al día cada uno, sin necesidad de componentes materiales. El nivel de cada conjuro no puede ser superior a 2. El CD de salvación de conjuro del dragón es CD 13, y tiene +5 para golpear con conjuros de ataque. Consulte la |7f7f7f} {@filter página de conjuros|spells|level=0;1;2|source=PHB-ES} {@color para obtener una lista de los conjuros que el dragón es capaz de lanzar. A continuación se muestra una selección de ejemplos:|7f7f7f}}",
+						{
+							"type": "list",
+							"items": [
+								"{@spell rayo nauseabundo|PHB-ES}",
+								"{@spell hechizar persona|PHB-ES}",
+								"{@spell detectar pensamientos|PHB-ES}",
+								"{@spell invisibilidad|PHB-ES}",
+								"{@spell sugestión|PHB-ES}"
+							]
+						}
+					]
+				}
+            ],
+            "environment": ["Bosques"],
+            "tokenUrl": "https://5e.tools/img/MM/Young%20Green%20Dragon.png",
+            "soundClip": {
+                "type": "internal",
+                "path": "bestiary/green-dragon.mp3"
+            },
+            "altArt": [{
+                    "name": "Young Green Dragon",
+                    "source": "RMBRE"
+                }
+            ],
+            "traitTags": ["Anfibio"],
+            "senseTags": ["B", "SD"],
+            "actionTags": ["Ataque múltiple"],
+            "languageTags": ["C", "DR"],
+            "damageTags": ["I", "P", "S"],
+            "miscTags": ["AOE", "MW", "RCH"],
+			"fluff": {
+				"entries": [{
+						"type": "entries",
+						"entries": [{
+								"type": "entries",
+								"entries": [
+									"Estos dragones son los más astutos y taimados de todos los dragones verdaderos, de modo que utilizan la distracción y el engaño para tener ventaja sobre sus enemigos. Poseen un temperamento terrible, son completamente malvados y gozan especialmente cuando pervierten y corrompen a criaturas bondadosas. Viven en los bosques antiguos, donde demuestran una agresividad que muchas veces tiene poco que ver con la conquista y mucho más con ganar poder y riquezas con el menor esfuerzo posible.", 
+									"Se reconoce a estos dragones por su mandíbula curvilínea y la cresta que nace cerca de sus ojos y se extiende por su columna vertebral, desplegándose al máximo justo detrás de su cráneo. No poseen orejas, pero a cambio tienen unas placas coriáceas puntiagudas que recorren los laterales de su cuello.", 
+									"Las crías de dragón verde poseen unas escamas de un verde tan oscuro que parece casi negro. A medida que envejecen, crecen en tamaño y se vuelven más ligeras, con un color más boscoso, esmeralda u olivado que les ayuda a camuflarse en su entorno boscoso. Sus alas tienen lunares oscuros en su nacimiento y más claros al final de la membrana.", 
+									"Las piernas de estos dragones son más largas en relación a su tamaño que las de cualquier otro dragón, lo que les permite caminar fácilmente sobre maleza y restos forestales mientras se desplazan. Con su largo cuello, los dragones más ancianos pueden ver sobre las copas de los árboles sin tener que erguirse.", 
+									{
+										"name": "Cazadores caprichosos",
+										"type": "entries",
+										"entries": [
+											"Los dragones verdes cazan cuando patrullan su territorio tanto desde el aire como desde el suelo. Se comen cualquier criatura que vean y, si están muy hambrientos, arbustos y pequeños árboles. Sin embargo, su comida favorita son los elfos.", 
+											"Estos seres son mentirosos consumados y maestros de la ambigüedad. Prefieren intimidar a las criaturas menores, pero tratarán de manipular más sutilmente a otros dragones. Atacan a animales y monstruos que no los hayan provocado antes, especialmente si presentan una amenaza potencial para su territorio. Cuando lidian con criaturas inteligentes, muestran un ansia de poder capaz de competir con su dracónico deseo de amasar riquezas. Además, siempre andan en busca de criaturas que les ayuden a cumplir sus objetivos.", 
+											"Acechan a sus víctimas mientras planean su ataque, en ocasiones siguiéndolas durante días. Si su presa es débil, disfrutan viendo cómo su presencia la aterroriza antes de atacar. Nunca acaban con todos sus enemigos, ya que prefieren intimidar a los supervivientes para controlarlos. De esta manera, averiguan lo máximo posible acerca de las actividades que se están llevando a cabo cerca de sus dominios y de los tesoros que se encuentran cerca. En ocasiones liberan prisioneros por los que se haya pagado un rescate. De no ser así, la criatura ha de mostrarse útil para los dragones a diario o morir. "
+										]
+									}, {
+										"name": "Manipuladores y conspiradores",
+										"type": "entries",
+										"entries": [
+											"Los dragones verdes son arteros y sutiles, por lo que consiguen someter a otras criaturas midiéndolas y jugando con sus deseos más profundos. Cualquier ser tan incauto como para pretender someter a un dragón verde se dará cuenta en algún momento de que este está fingiendo servirle mientras evalúa a su supuesto amo.", 
+											"Cuando manipulan a otras criaturas, estos dragones son zalameros, sutiles y sofisticados. Entre ellos son ruidosos, groseros y maleducados, especialmente si se trata de dragones verdes de la misma edad y rango social."
+										]
+									}, {
+										"name": "Conflicto y corrupción",
+										"type": "entries",
+										"entries": [
+											"En ocasiones ocurre que los dragones verdes se enfrentan a otros dragones cuando el bosque que habitan se adentra en algún territorio previamente ocupado. En esas circunstancias, normalmente un dragón verde fingirá retirarse mientras espera y observa, incluso durante décadas, hasta que ve la oportunidad de acabar con el otro dragón, tras lo cual reclama su guarida y su tesoro.", 
+											"Los dragones verdes aceptan a criaturas inteligentes, como trasgos, ettercaps, ettins, kobolds, orcos y yuan-tis, como criados. También disfrutan corrompiendo y sometiendo a su voluntad a los elfos. A veces atormentan las mentes de sus sirvientes con un miedo capaz de volverles locos, y hacen que la niebla que se extiende por su bosque refleje sus tortuosas pesadillas. "
+										]
+									}, {
+										"name": "Tesoros vivientes",
+										"type": "entries",
+										"entries": ["El tesoro preferido de un dragón verde es una criatura inteligente a la que someter, incluyendo figuras de renombre como héroes populares, eruditos famosos y bardos aclamados. Con respecto a tesoros materiales, los dragones verdes aman las esmeraldas, las obras talladas en madera, los instrumentos musicales y las esculturas de humanoides."]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"name": "La guarida de un dragón verde",
+						"entries": [
+							"Los dragones verdes adoran los bosques, tanto que a veces compiten con los dragones negros por los bosques cenagosos y con los dragones blancos por las taigas subárticas. Con todo, es fácil distinguir cuando una floresta está bajo el control de un dragón verde. Una niebla perpetua cubre los bosques en los que habitan dragones verdes legendarios, de manera que se impregna el aire del aroma acre de su aliento venenoso. Los árboles, cubiertos de musgo, crecen muy juntos, dejando únicamente el espacio necesario para describir laberínticos caminos que conducen al corazón del bosque. La poca luz que alcanza el suelo tiene un tono esmeralda y los sonidos parecen apagados.", 
+							"En el centro del bosque, el dragón elige como guarida una cueva encaramada a un acantilado o en la ladera de una colina, cuya entrada esté oculta a ojos curiosos. Algunos buscan cavernas ocultas tras una cascada o grutas parcialmente sumergidas, a las que se pueda acceder a través de un lago o un torrente. Otros cubren las entradas a sus cubiles con vegetación.",
+							{
+								"type": "entries",
+								"name": "Acciones en guarida",
+								"entries": [
+									"En la posición 20 del orden de iniciativa (perdiendo empates), el dragón es capaz de realizar una acción en guarida para causar uno de los efectos siguientes, pero no podrá utilizar el mismo efecto durante dos asaltos seguidos.",
+									{
+										"type": "list",
+										"items": [
+											"Una masa de raíces y enredaderas llena una zona de 20 pies de radio en torno a un punto a la elección del dragón que se encuentre a 120 pies o menos de él. El área se convierte en terreno difícil, y todas las criaturas en ella deberán superar una tirada de salvación de Fuerza CD 15 o estarán apresadas por la vegetación. Una criatura puede invertir su acción en hacer una prueba de Fuerza CD 15, logrando liberarse a sí misma o a otra criatura dentro de su alcance si tiene éxito. Las raíces y enredaderas se marchitan si el dragón usa esta acción en guarida de nuevo o muere.",
+											{
+												"type": "entries",
+												"entries": [
+													"Un muro de espesos matorrales cubiertos de espinas surge de la nada sobre una superficie sólida situada a 120 pies o menos del dragón. El muro tiene 60 pies de largo, 10 de alto y 5 pies de grosor, y bloquea la línea de visión. Cuando el muro aparece, todas las criaturas en el área deberán hacer una tirada de salvación de Destreza CD 15. Si la fallan, recibirán 18 ({@dice 4d8}) de daño perforante y serán empujadas 5 pies hacia el exterior del espacio del muro, acabando en el lado del muro que prefieran. Una criatura puede atravesar el muro, pero será una tarea lenta y dolorosa. Deberá emplear 4 pies de movimiento por cada pie que quiera mover. Además, cualquier criatura en el espacio del muro tendrá que hacer una tirada de salvación de Destreza CD15 por cada asalto que permanezca en contacto con este, recibiendo 18 ({@dice 4d8}) de daño perforante si la falla, o la mitad de ese daño si tiene éxito. Cada sección de 10 pies del muro tiene CA 5, 15 puntos de golpe, vulnerabilidad a daño de fuego, resistencia a daños contundente y perforante e inmunidad a daño psíquico.",
+													"El muro vuelve a hundirse en el suelo si el dragón emplea esta acción en guarida de nuevo o muere."
+												]
+											},
+											"Una neblina mágica se concentra alrededor de una criatura que se encuentre a 120 pies o menos del dragón y este pueda ver. El objetivo deberá superar una tirada de salvación de Sabiduría CD 15 o estará hechizado por el dragón hasta la posición 20 en el orden de iniciativa del siguiente asalto."
+										]
+									}
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Efectos regionales",
+								"entries": [
+									"La región que contiene la guarida de un dragón verde legendario se ve distorsionada por la magia de la criatura, que crea uno o varios de los efectos siguientes:",
+									{
+										"type": "list",
+										"items": [
+											{
+												"type": "entries",
+												"entries": [
+													"Numerosos matorrales forman pasadizos laberínticos en la región situada a 1 milla o menos de la guarida. Esta espesura se comporta como una pared de 10 pies de alto y de ancho que bloquea la línea de visión. Cualquier criatura que atraviese los matorrales debe emplear 4 pies de movimiento por cada pie que quiera moverse. Además, cualquier criatura deberá superar una tirada de salvación de Destreza CD 15 por cada asalto que permanezca en contacto con los matorrales o recibirá 3 ({@dice 1d6}) de daño perforante.",
+													"Cada cubo de 10 pies de espesura tiene CA 5, 30 puntos de golpe, resistencia a daños contundente y perforante, vulnerabilidad a daño de fuego e inmunidad a daños psíquico y de trueno."
+												]
+											},
+											{
+												"type": "entries",
+												"entries": [
+													"Salvo que así lo desee, el dragón no deja evidencia física alguna de su paso en un radio de 1 milla alrededor de la guarida. Es imposible rastrearlo en esta zona sin recurrir a la magia.",
+													"Además, el dragón también ignora cualquier restricción al movimiento o daño causado por las plantas de la zona que no sean mágicas ni criaturas (incluyendo los matorrales descritos anteriormente). La vegetación se aparta del paso del dragón."
+												]
+											},
+											"Los roedores y aves que se encuentren a 1 milla del cubil del dragón se convierten en sus ojos y oídos. Los ciervos y otros animales de mayor tamaño habrán desaparecido por completo, algo extraño que indica que la cercanía de un depredador antinaturalmente hambriento."
+										]
+									},
+									"Si el dragón muere, los roedores y las aves perderán su enlace sobrenatural con él. Los matorrales permanecerán en donde se encuentran, pero en {@dice 1d10} se transformarán en plantas mundanas, perdiendo sus espinas y siendo simplemente terreno difícil."
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Dragones",
+						"entries": [
+							"Los verdaderos dragones son reptiles alados de linaje antiguo y terrible poder. Se les conoce y teme por su astucia predadora y su avaricia, y los dragones más ancianos son de las criaturas más poderosas del mundo. Además, se trata de criaturas mágicas cuyos poderes innatos son el combustible de su temido aliento, así como de sus otras habilidades sobrenaturales.",
+							"Existen muchas criaturas con sangre dracónica, como los guivernos y los dragones tortuga. Sin embargo, los verdaderos dragones tan solo pertenecen a una de las dos grandes categorías de dragón: cromáticos o metálicos. Los dragones negros, azules, verdes, rojos y blancos son egoístas, malvados y temidos por todos. Los dragones de oropel, bronce, cobre, oro y plata son nobles, bondadosos y tenidos en alta estima por los sabios del mundo.",
+							"Pese a que sus objetivos e ideales varían muchísimo, todos los verdaderos dragones ansían riquezas, amasando enormes fortunas en monedas, gemas, joyas y objetos mágicos. Los dragones con grandes tesoros odian abandonarlos por mucho tiempo y se aventuran más allá de sus guaridas tan solo para patrullar o alimentarse.",
+							"Los verdaderos dragones pasan por cuatro fases vitales distintas, desde crías hasta ancianos, y son capaces de vivir por más de mil años. Durante ese tiempo, su fuerza podría no encontrar rival y sus riquezas alcanzar un valor incalculable.",
+							{
+								"type": "table",
+								"caption": "Categorías de edad de los dragones",
+								"colLabels": [
+									"Categoría",
+									"Tamaño",
+									"Abanico de edades"
+								],
+								"colStyles": [
+									"col-4",
+									"col-4",
+									"col-4"
+								],
+								"rows": [
+									[
+										"Cría",
+										"Mediano",
+										"5 años o menos"
+									],
+									[
+										"Joven",
+										"Grande",
+										"6-100 años"
+									],
+									[
+										"Adulto",
+										"Enorme",
+										"101-800 años"
+									],
+									[
+										"Anciano",
+										"Gargantuesco",
+										"801 años o más"
+									]
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Dragones Cromáticos",
+						"entries": [
+							"Los dragones negros, azules, verdes, rojos y blancos representan el mal entre los dragones. Los dragones cromáticos son agresivos, glotones y frívolos, además de siniestros eruditos y poderosos tiranos temidos por todas las criaturas, incluyéndose a ellos mismos.",
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Motivados por la codicia",
+										"entries": [
+											"A los dragones cromáticos les encanta amasar fortunas, y esta avaricia tinta cualquiera de sus planes y maquinaciones. Consideran que toda la riqueza del mundo les pertenece por derecho y, por ello, la toman por la fuerza sin importarles los humanoides o cualquier otra criatura que la haya \"robado\". Los tesoros que posee un dragón, montones de monedas, gemas brillantes y objetos mágicos, son material para una leyenda. Sin embargo, los dragones cromáticos no están interesados en comerciar y amasan riquezas por la única razón de poseerlas."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Ególatras",
+										"entries": [
+											"Lo que más une a los dragones cromáticos es su sentimiento de superioridad, pues se creen los más poderosos y valiosos que el resto de las criaturas mortales. Solo tratan con otros seres si les es útil en sus maquinaciones. Creen que poseen el derecho natural de gobernar al resto de criaturas, y esa creencia es la base de su personalidad y su visión del mundo. Tratar de hacer que un dragón cromático se comporte de forma humilde es como pedirle al viento que pare de soplar. Para estas criaturas los humanoides son animales, adecuados para servir como presas o bestias de carga, y no se merecen ni un ápice de su respeto."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Guaridas peligrosas",
+										"entries": [
+											"Las guaridas de los dragones hacen las veces de sede de su poder y cámara acorazada. Dada su dureza innata y su capacidad para tolerar los climas más inclementes, estas criaturas no construyen sus guaridas para refugiarse de ellos, sino como posiciones defensivas tanto para sí mismos, prefiriendo los lugares con múltiples entradas y salidas, y que sean seguros para su tesoro.",
+											"Muchas de las guaridas de este tipo de dragón se esconden en lugares ignotos y peligrosos para evitar que entre en ellas cualquier criatura salvo, quizá, las más audaces. Un dragón negro podría ubicar su guarida en el corazón de un vasto pantano, mientras que uno rojo podría reclamar el cráter de un volcán activo. Además de estas defensas naturales, los dragones cromáticos más poderosos usan guardianes mágicos, trampas y sirvientes para proteger sus tesoros."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "La Reina de los Dragones Malvados",
+										"entries": [
+											"Tiamat, la Reina de los Dragones, es la deidad principal de las criaturas draconianas malvadas. Tiene su hogar en el Averno, la primera capa de los Nueve Infiernos. Tiamat posee los poderes de un dios menor y puede otorgar conjuros a sus adoradores, aunque odia compartir su poder. Es el paradigma de la avaricia de los dragones malvados, y cree que el multiverso y todas sus riquezas serán algún día suyos y solo suyos.",
+											"Tiamat es un dragón gigante con cinco cabezas, una de cada color, que representan a los dragones que la adoran: blanco, azul, verde, rojo y blanco. Es terrible en combate, capaz de aniquilar ejércitos enteros con sus cinco ataques de aliento, su fantástica capacidad para lanzar conjuros y sus terribles garras.",
+											"El peor enemigo de Tiamat es Bahamut, el Dragón de Platino, con quien comparte la fe de las criaturas draconianas. Además, está especialmente enemistada con Asmodeo, quien arrancó de sus manos el control del Averno y constantemente trata de contener el poder de la Reina de los Dragones."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Green Dragon.jpg"
+						}
+					}
+				]
+			}
+		}
 	],
 	"trait": [
 		{
