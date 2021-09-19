@@ -44639,6 +44639,20 @@
             "entries": ["Es un hacha de guerra +1 que hace el daño máximo cuando el portador impacta a una criatura de tipo \"planta\" o un objeto hecho de madera. El creador del hacha fue un herrero enano que se enemistó con las dríades de un bosque en el que cortaba leña. Quien porte el hacha se sentirá incómodo siempre que viaje a través de un bosque."]
         },
 		{
+            "name": "Portadora de Luz",
+            "source": "LMoP-ES",
+            "page": 48,
+            "baseItem": "maza|PHB-ES",
+            "type": "M",
+            "rarity": "uncommon",
+            "weight": 4,
+            "weaponCategory": "simple",
+            "dmg1": "1d6",
+            "dmgType": "B",
+            "bonusWeapon": "+1",
+            "entries": ["Esta maza +1 fue hecha para un clérigo de Lathander, el dios del amanecer. La cabeza de la maza tiene forma de un sol llameante y está hecha de latón sólido. Llamada Portador de Luz, esta arma brilla con la misma intensidad que una {@item antorcha|PHB-ES} cuando quien la empuña lo ordena. Mientras esté brillando hará {@dice 1d6} de daño radiante adicional a los muertos vivientes."]
+        },
+		{
             "name": "Bastón de la araña",
             "source": "LMoP-ES",
             "page": 53,
@@ -44664,6 +44678,33 @@
             "attachedSpells": [
 				"trepar cual arácnido|PHB-ES", 
 				"telaraña|PHB-ES"
+			]
+        },
+		{
+            "name": "Bastón de defensa",
+            "source": "LMoP-ES",
+            "page": 53,
+            "rarity": "rare",
+            "reqAttune": true,
+            "weight": 3,
+            "weaponCategory": "simple",
+            "property": ["V"],
+            "dmg1": "1d6",
+            "dmgType": "B",
+            "dmg2": "1d8",
+            "bonusAc": "+1",
+            "recharge": "dawn",
+            "charges": 10,
+            "staff": true,
+            "entries": [
+				"Este esbelto bastón hueco está hecho de cristal, pero es tan fuerte como un roble. Tiene un peso de 3 libras. Es necesario que estés sintonizado con este objeto para poder beneficiarte de sus poderes y lanzar sus conjuros.", 
+				"Recibes un bonificador de +1 a la Clase de Armadura cuando sostengas este bastón.", 
+				"Este objeto tiene 10 cargas, que sirven para alimentar los conjuros contenidos en su interior. Mientras sujetas el bastón puedes gastar tu acción para lanzar uno de los siguientes conjuros si este pertenece a la lista de los de tu clase: {@spell armadura de mago|PHB-ES} (1 carga) o {@spell escudo|PHB-ES} (2 cargas). No se precisa componente alguno para su lanzamiento.", 
+				"El bastón recupera {@dice 1d6 + 4} cargas gastadas cada día al amanecer. Si empleas la última carga, tira {@dice 1d20}. Si sacas un 1, el objeto se hace añicos y es destruido."
+			],
+            "attachedSpells": [
+				"armadura de mago|PHB-ES", 
+				"escudo|PHB-ES"
 			]
         }
 	],
