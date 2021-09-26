@@ -35109,7 +35109,7 @@
                     "entries": ["{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d12 + 4}) bludgeoning damage."]
                 }
             ],
-            "tokenUrl": "https://5e.tools/img/PHB/Animated%20Object%20(Huge).png",
+            "tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/PHB/Animated%20Object%20(Huge).png",
             "senseTags": ["B"],
             "damageTags": ["B"],
             "miscTags": ["MW"]
@@ -35159,7 +35159,7 @@
                     "entries": ["{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d10 + 2}) bludgeoning damage."]
                 }
             ],
-            "tokenUrl": "https://5e.tools/img/PHB/Animated%20Object%20(Large).png",
+            "tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/PHB/Animated%20Object%20(Large).png",
             "senseTags": ["B"],
             "damageTags": ["B"],
             "miscTags": ["MW"]
@@ -35208,7 +35208,7 @@
                     "entries": ["{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d6 + 1}) bludgeoning damage."]
                 }
             ],
-            "tokenUrl": "https://5e.tools/img/PHB/Animated%20Object%20(Medium).png",
+            "tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/PHB/Animated%20Object%20(Medium).png",
             "senseTags": ["B"],
             "damageTags": ["B"],
             "miscTags": ["MW"]
@@ -35257,7 +35257,7 @@
                     "entries": ["{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) bludgeoning damage."]
                 }
             ],
-            "tokenUrl": "https://5e.tools/img/PHB/Animated%20Object%20(Small).png",
+            "tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/PHB/Animated%20Object%20(Small).png",
             "senseTags": ["B"],
             "damageTags": ["B"],
             "miscTags": ["MW"]
@@ -35306,7 +35306,7 @@
                     "entries": ["{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d4 + 4}) bludgeoning damage."]
                 }
             ],
-            "tokenUrl": "https://5e.tools/img/PHB/Animated%20Object%20(Tiny).png",
+            "tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/PHB/Animated%20Object%20(Tiny).png",
             "senseTags": ["B"],
             "damageTags": ["B"],
             "miscTags": ["MW"]
@@ -38029,15 +38029,25 @@
                     "headerEntries": ["El mago es un lanzador de conjuros de nivel 4 que usa Inteligencia para su aptitud mágica (salvación de conjuro {@dc 13}; {@hit 5} a impactar con ataques de conjuro). Conoce los siguientes conjuros de la lista de mago:"],
                     "spells": {
                         "0": {
-                            "spells": ["{@spell agarre electrizante|PHB-ES}", "{@spell luz|PHB-ES}", "{@spell mano de mago|PHB-ES}"]
+                            "spells": [
+								"{@spell agarre electrizante|PHB-ES|agarre electrizante}", 
+								"{@spell luz|PHB-ES|luz}", 
+								"{@spell mano de mago|PHB-ES|mano de mago}"
+							]
                         },
                         "1": {
                             "slots": 4,
-                            "spells": ["{@spell hechizar persona|PHB-ES}", "{@spell proyectil mágico|PHB-ES}"]
+                            "spells": [
+								"{@spell hechizar persona|PHB-ES}", 
+								"{@spell proyectil mágico|PHB-ES}"
+							]
                         },
                         "2": {
                             "slots": 3,
-                            "spells": ["{@spell inmovilizar persona|PHB-ES}", "{@spell paso brumoso|PHB-ES}"]
+                            "spells": [
+								"{@spell inmovilizar persona|PHB-ES}", 
+								"{@spell paso brumoso|PHB-ES}"
+							]
                         }
                     },
                     "ability": "int"
