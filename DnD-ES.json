@@ -11283,7 +11283,7 @@
 						{
 							"name": "Truco",
 							"entries": [
-								"Conoces un {@filter truco de tu elección escogido de entre los de la lista de conjuros de mago|spells|level=0|class=Mago (PHB-ES)}. La Inteligencia es tu aptitud mágica para lanzarlo."
+								"Conoces un truco de tu elección escogido de entre los de la {@filter lista de conjuros de mago|spells|level=0|class=Mago (PHB-ES)}. La Inteligencia es tu aptitud mágica para lanzarlo."
 							],
 							"type": "entries"
 						},
@@ -13436,71 +13436,41 @@
 		},
 		{
 			"name": "Semielfo",
-			"source": "PHB-ES",
-			"page": 38,
-			"size": "M",
-			"speed": 30,
-			"ability": [
-				{
-					"cha": 2,
-					"choose": {
-						"from": [
-							"str",
-							"dex",
-							"con",
-							"int",
-							"wis"
-						],
-						"count": 2
-					}
-				}
-			],
-			"heightAndWeight": {
+            "source": "PHB-ES",
+            "page": 38,
+            "srd": true,
+            "size": ["M"],
+            "speed": 30,
+            "ability": [{
+                    "cha": 2,
+                    "choose": {
+                        "from": ["str", "dex", "con", "int", "wis"],
+                        "count": 2
+                    }
+                }
+            ],
+            "heightAndWeight": {
                 "baseHeight": 57,
                 "heightMod": "2d8",
                 "baseWeight": 110,
                 "weightMod": "2d4"
             },
-			"darkvision": 60,
-			"traitTags": [
-				"Skill Proficiency",
-				"Uncommon Race"
-			],
-			"languageProficiencies": [
-				{
-					"common": true,
-					"elvish": true,
-					"anyStandard": 1
-				}
-			],
-			"skillProficiencies": [
-				{
-					"choose": {
-						"from": [
-							"athletics",
-							"acrobatics",
-							"sleight of hand",
-							"stealth",
-							"arcana",
-							"history",
-							"investigation",
-							"nature",
-							"religion",
-							"animal handling",
-							"insight",
-							"medicine",
-							"perception",
-							"survival",
-							"deception",
-							"intimidation",
-							"performance",
-							"persuasion"
-						],
-						"count": 2
-					}
-				}
-			],
-			"soundClip": {
+            "darkvision": 60,
+            "traitTags": ["Uncommon Race"],
+            "skillProficiencies": [{
+                    "choose": {
+                        "from": ["athletics", "acrobatics", "sleight of hand", "stealth", "arcana", "history", "investigation", "nature", "religion", "animal handling", "insight", "medicine", "perception", "survival", "deception", "intimidation", "performance", "persuasion"],
+                        "count": 2
+                    }
+                }
+            ],
+            "languageProficiencies": [{
+                    "common": true,
+                    "elvish": true,
+                    "anyStandard": 1
+                }
+            ],
+            "soundClip": {
                 "type": "internal",
                 "path": "races/half-elf.mp3"
             },
@@ -13663,6 +13633,49 @@
 								]
 							}
 						]
+					},
+					{
+						"type": "section",
+						"source": "SCAG-ES",
+						"page": 116,
+						"name": " ",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Un elfo que mire a un semielfo verá a un humano, mientras que un humano que mire a la misma persona verá un elfo. Aunque esto es una caracterización simplista, condensa lo que significa ser un semielfo en Faerûn.",
+									"Según los elfos con un punto de vista extremo sobre este asunto, los semielfos son el emblema del declive de su civilización, el debilitamiento de la herencia y la cultura de la raza que acabará conllevando su desintegración. Para los humanos que están al otro lado, los semielfos tiene una ventaja injusta sobre sus iguales completamente humanos: se les percibe como privilegiados y preferidos sin importar las circunstancias concretas de su nacimiento.",
+									"La mayoría de faerûnenses no ve el asunto de un modo tan claro. En general, se tolera a los semielfos doquiera que vayan o residan, si bien una sociedad que no vea con buenos ojos a elfos o humanos seguramente siente lo mismo hacia alguien que posee sangre de ambas razas. Por el contrario, una sociedad que tiene a elfos o a humanos en alta estima no suele conceder la misma posición a los semielfos, si bien no se excluye a estos individuos."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Raza joven de raíces viejas",
+								"entries": [
+									"En el pasado distante, había pocos semielfos porque los humanos y los elfos estaban en contacto con poca frecuencia. Los antiguos reinos elfos de Cormanthyr y Myth Drannor contaban con bastante población semielfa. Hasta cosa del último milenio las razas no se han ido mezclando cada vez más, de modo que la cantidad de semielfos ha crecido tanto que ahora se encuentran por todo Faerûn.",
+									"Como es de esperar, disfrutan en compañía de otros como ellos, de modo que, si en un lugar se congregan semielfos, es muy posible que otros se les sumen. La mayoría de semielfos del Norte y de la Costa de la Espada tienen ascendencia de elfo lunar mezclada con sangre illuskana o tethyriana. En otros enclaves de Faerûn, los semielfos tienen comunidades importantes en el bosque de Yuir y por todo Aglarond. Los semielfos acuáticos viven en las costas, incluyendo cerca de Aglarond, la Costa del Dragón, Impiltur, Sembia y la Cuenca de Vilhon. Hay más semielfos drows en la nación de Dambrath, conquistada por los elfos oscuros hace años, y en el Underdark, pues la casa Ousstyl de Menzoberranzan es especialmente infame por haberse reproducido con humanos."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Herencia de dos razas",
+								"entries": [
+									"Los semielfos son muy diversos, pues hay muchas combinaciones de subrazas elfas y etnias humanas entre los suyos. La mayoría considera que su naturaleza dual es una bendición más que una desventaja, pues les da un conjunto de capacidades y una perspectiva del mundo que los humanos y los elfos de pura sangre no alcanzan a igualar.",
+									"Al mismo tiempo, la herencia mixta de los semielfos les obliga a esforzarse para encajar entre humanos o elfos siempre que pueden. Por ejemplo, los nacidos y criados en asentamientos humanos suelen tener nombres humanos, pero los semielfos de comunidades elfas suelen tener nombres elfos. En algunos lugares, los niños semielfos reciben el nombre del \"otro\" padre o una mezcla de nombres humanos y elfos. De esta manera se distinguen a los semielfos del resto de la comunidad.",
+									"Hablan tanto común como elfo. Además, los semielfos del bosque de Yuir suelen hablar aglarondano.",
+									"Los semielfos de Faerûn tienen los atributos raciales de los semielfos del {@italic Player's Handbook}, aunque es posible que haya algunas variaciones (consulta de caja \"Variantes de semielfo\")."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Los dioses de dos pueblos",
+								"entries": [
+									"No hay dioses semielfos, de modo que siguen a las deidades élficas o humanas que escogen, aunque muchos semielfos religiosos creen que son los dioses quienes los eligen a ellos. Suelen venerar a las divinidades de la cultura en la que se han criado, aunque algunos se rebelan contra su educación y buscan a los dioses de la otra parte de su linaje, o simplemente sienten la llamada a hacerlo.",
+									"Como le ocurre a la mayoría, los semielfos a menudo escogen una deidad preferida basada en su vocación u oficio: Corellon Larethian, Azuth o Mystra si son magos, Solonor Thelandira o Mielikki si son exploradores, Milil o Corellon para poetas y bardos, etc. Muchos semielfos veneran a Sune o Hanali Celanil por agradecimiento al amorque sintieron sus progenitores y las dos diosas son vistas como amigas íntimas.",
+									"Ciertos semielfos se sienten atraídos por deidades forasteras como Auril, Eldath, Erevan Ilesere o Ilmater, o por dioses de la naturaleza como Mielikki, Rillifane Rallathil o Silvanus. Los semielfos de Aglarond a menudo escogen a Chauntea, Selûne o uno de los Seldarine como patrón."
+								]
+							}
+						]
 					}
 				],
 				"uncommon": true,
@@ -13675,44 +13688,359 @@
 						}
 					}
 				]
-			},
-			"srd": true
+			}
 		},
 		{
-			"name": "Semiorco",
-			"source": "PHB-ES",
-			"page": 40,
-			"size": "M",
-			"speed": 30,
-			"ability": [
+            "name": "Semielfo (Variante)",
+            "source": "PHB-ES",
+            "page": 38,
+            "size": ["M"],
+            "speed": 30,
+            "ability": [{
+                    "cha": 2,
+                    "choose": {
+                        "from": ["str", "dex", "con", "int", "wis"],
+                        "count": 2
+                    }
+                }
+            ],
+            "heightAndWeight": {
+                "baseHeight": 57,
+                "heightMod": "2d8",
+                "baseWeight": 110,
+                "weightMod": "2d4"
+            },
+            "darkvision": 60,
+            "traitTags": ["Uncommon Race"],
+            "skillProficiencies": [{
+                    "choose": {
+                        "from": ["athletics", "acrobatics", "sleight of hand", "stealth", "arcana", "history", "investigation", "nature", "religion", "animal handling", "insight", "medicine", "perception", "survival", "deception", "intimidation", "performance", "persuasion"],
+                        "count": 2
+                    }
+                }
+            ],
+            "languageProficiencies": [{
+                    "common": true,
+                    "elvish": true,
+                    "anyStandard": 1
+                }
+            ],
+            "soundClip": {
+                "type": "internal",
+                "path": "races/half-elf.mp3"
+            },
+            "entries": [
 				{
-					"str": 2,
-					"con": 1
+					"name": "Edad",
+					"type": "entries",
+					"entries": [
+						"Los semielfos maduran al mismo ritmo que los humanos y alcanzan la edad adulta en torno a los veinte años. No obstante, viven mucho más que los humanos, superando a veces los ciento ochenta años."
+					]
+				},
+				{
+					"name": "Alineamiento",
+					"type": "entries",
+					"entries": [
+						"Los semielfos comparten la vena caótica de su linaje élfico. Valoran tanto la libertad individual como la creatividad, y no demuestran aprecio por los líderes ni desean seguidores. Les irritan las normas, se molestan con las órdenes de otros y a veces pueden no ser de confianza o, como mínimo, resultar impredecibles."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Tamaño",
+					"entries": [
+						"Los semielfos miden más o menos lo mismo que los humanos, entre 5 y 6 pies de alto. Eres de tamaño Mediano."
+					]
+				},
+				{
+					"name": "Visión en la Oscuridad",
+					"entries": [
+						"Debido a tu sangre élfica, puedes ver bien en la oscuridad o con poca luz. Eres capaz de percibir hasta a 60 pies en luz tenue como si hubiera luz brillante, y esa misma distancia en la oscuridad como si hubiera luz tenue. Eso sí, no puedes distinguir colores en la oscuridad, solo tonos de gris"
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Linaje Feérico",
+					"entries": [
+						"Tienes ventaja en las tiradas de salvación para evitar ser {@condition Hechizado|PHB-ES|hechizado} y la magia no puede dormirte."
+					],
+					"type": "entries"
+				}, 
+				{
+					"name": "Versátil con Habilidades",
+					"entries": [
+						"Ganas competencia en dos habilidades de tu elección."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Idiomas",
+					"entries": [
+						"Puedes hablar, leer y escribir común, elfo y un idioma adicional de tu elección."
+					],
+					"type": "entries"
 				}
-			],
-			"heightAndWeight": {
+            ],
+            "subraces": [
+				{
+                    "name": "Descendiente de elfo acuático",
+                    "source": "SCAG-ES",
+                    "page": 116,
+                    "speed": 30,
+                    "skillProficiencies": [{
+                            "choose": {
+                                "from": ["athletics", "acrobatics", "sleight of hand", "stealth", "arcana", "history", "investigation", "nature", "religion", "animal handling", "insight", "medicine", "perception", "survival", "deception", "intimidation", "performance", "persuasion"],
+                                "count": 2
+                            }
+                        }
+                    ],
+                    "entries": [{
+                            "type": "inset",
+                            "name": "Característica variante (Elige 1)",
+                            "entries": [{
+                                    "name": "Versátil con Habilidades",
+                                    "entries": ["Ganas competencia en dos habilidades de tu elección."],
+                                    "type": "entries"
+                                }, {
+                                    "name": "Sentidos Agudos",
+                                    "entries": ["Eres competente en la habilidad {@skill Perception|Percepción}."],
+                                    "type": "entries"
+                                }, {
+                                    "name": "Nadar",
+                                    "entries": ["Ganas una velocidad nadando de 30 pies."],
+                                    "type": "entries"
+                                }
+                            ],
+                            "data": {
+                                "overwrite": "Versátil con Habilidades"
+                            }
+                        }
+                    ],
+                    "overwrite": {
+                        "skillProficiencies": true
+                    }
+                }, 
+				{
+                    "name": "Descendiente de drow",
+                    "source": "SCAG-ES",
+                    "page": 116,
+                    "skillProficiencies": [{
+                            "choose": {
+                                "from": ["athletics", "acrobatics", "sleight of hand", "stealth", "arcana", "history", "investigation", "nature", "religion", "animal handling", "insight", "medicine", "perception", "survival", "deception", "intimidation", "performance", "persuasion"],
+                                "count": 2
+                            }
+                        }
+                    ],
+					"additionalSpells": [{
+                            "innate": {
+                                "1": ["luces danzantes|PHB-ES"],
+                                "3": {
+                                    "daily": {
+                                        "1": ["fuego feérico|PHB-ES"]
+                                    }
+                                },
+                                "5": {
+                                    "daily": {
+                                        "1": ["oscuridad|PHB-ES"]
+                                    }
+                                }
+                            },
+                            "ability": "cha"
+                        }
+                    ],
+                    "entries": [{
+                            "type": "inset",
+                            "name": "Característica variante (Elige 1)",
+                            "entries": [
+								{
+                                    "name": "Versátil con Habilidades",
+                                    "entries": ["Ganas competencia en dos habilidades de tu elección."],
+                                    "type": "entries"
+                                }, 
+								{
+                                    "name": "Sentidos Agudos",
+                                    "entries": ["Eres competente en la habilidad {@skill Perception|Percepción}."],
+                                    "type": "entries"
+                                }, 
+								{
+									"name": "Magia Drow",
+									"entries": [
+										"Conoces el truco {@spell Luces danzantes|PHB-ES|luces danzantes}. Cuando llegas a nivel 3, puedes lanzar el conjuro {@spell Fuego feérico|PHB-ES|fuego feérico} una vez usando este tributo y recuperas la capacidad para hacerlo tras realizar un descanso largo. Cuando alcanzas el nivel 5, eres capaz de lanzar el conjuro {@spell Oscuridad|PHB-ES|oscuridad} una vez empleando este atributo y recuperas la capacidad para hacerlo tras realizar un descanso largo. El Carisma es tu aptitud mágica para estos conjuros."
+									],
+									"type": "entries"
+								}
+                            ],
+                            "data": {
+                                "overwrite": "Versátil con Habilidades"
+                            }
+                        }
+                    ],
+                    "overwrite": {
+                        "skillProficiencies": true
+                    }
+                }, 
+				{
+                    "name": "Descendiente de elfo lunar o solar",
+                    "source": "SCAG-ES",
+                    "page": 116,
+                    "skillProficiencies": [{
+                            "choose": {
+                                "from": ["athletics", "acrobatics", "sleight of hand", "stealth", "arcana", "history", "investigation", "nature", "religion", "animal handling", "insight", "medicine", "perception", "survival", "deception", "intimidation", "performance", "persuasion"],
+                                "count": 2
+                            }
+                        }
+                    ],					
+					"weaponProficiencies": [{
+                            "espada larga|PHB-ES": true,
+                            "espada corta|PHB-ES": true,
+                            "arco corto|PHB-ES": true,
+                            "arco largo|PHB-ES": true
+                        }
+                    ],
+                    "additionalSpells": [{
+                            "ability": "int",
+                            "innate": {
+                                "1": {
+                                    "_": [{
+                                            "choose": "level=0|class=mago (PHB-ES)"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "entries": [{
+                            "type": "inset",
+                            "name": "Característica variante (Elige 1)",
+                            "entries": [
+								{
+                                    "name": "Versátil con Habilidades",
+                                    "entries": ["Ganas competencia en dos habilidades de tu elección."],
+                                    "type": "entries"
+                                }, 
+								{
+                                    "name": "Sentidos Agudos",
+                                    "entries": ["Eres competente en la habilidad {@skill Perception|Percepción}."],
+                                    "type": "entries"
+                                },
+								{
+									"name": "Entrenamiento con Armas Élficas",
+									"entries": [
+										"Eres competente con {@item Espada corta|PHB-ES|espadas cortas}, {@item Espada larga|PHB-ES|espadas largas}, {@item Arco corto|PHB-ES|arcos cortos} y {@item Arco largo|PHB-ES|arcos largos}."
+									],
+									"type": "entries"
+								},
+								{
+									"name": "Truco",
+									"entries": [
+										"Conoces un truco de tu elección escogido de entre los de la {@filter lista de conjuros de mago|spells|level=0|class=Mago (PHB-ES)}. La Inteligencia es tu aptitud mágica para lanzarlo."
+									],
+									"type": "entries"
+								}
+                            ],
+                            "data": {
+                                "overwrite": "Versátil con Habilidades"
+                            }
+                        }
+                    ],
+                    "overwrite": {
+                        "skillProficiencies": true
+                    }
+                }, 
+				{
+                    "name": "Descendiente de elfo de los bosques",
+                    "source": "SCAG-ES",
+                    "page": 116,
+                    "skillProficiencies": [{
+                            "choose": {
+                                "from": ["athletics", "acrobatics", "sleight of hand", "stealth", "arcana", "history", "investigation", "nature", "religion", "animal handling", "insight", "medicine", "perception", "survival", "deception", "intimidation", "performance", "persuasion"],
+                                "count": 2
+                            }
+                        }
+                    ],
+					"weaponProficiencies": [{
+                            "espada larga|PHB-ES": true,
+                            "espada corta|PHB-ES": true,
+                            "arco corto|PHB-ES": true,
+                            "arco largo|PHB-ES": true
+                        }
+                    ],
+                    "entries": [{
+                            "type": "inset",
+                            "name": "Característica variante (Elige 1)",
+                            "entries": [
+								{
+                                    "name": "Versátil con Habilidades",
+                                    "entries": ["Ganas competencia en dos habilidades de tu elección."],
+                                    "type": "entries"
+                                }, 
+								{
+                                    "name": "Sentidos Agudos",
+                                    "entries": ["Eres competente en la habilidad {@skill Perception|Percepción}."],
+                                    "type": "entries"
+                                },
+								{
+									"name": "Entrenamiento con Armas Élficas",
+									"entries": [
+										"Eres competente con {@item Espada corta|PHB-ES|espadas cortas}, {@item Espada larga|PHB-ES|espadas largas}, {@item Arco corto|PHB-ES|arcos cortos} y {@item Arco largo|PHB-ES|arcos largos}."
+									],
+									"type": "entries"
+								},
+								{
+									"name": "Pies Veloces",
+									"entries": [
+										"Tu velocidad caminando base aumenta a 35 pies."
+									],
+									"type": "entries"
+								},
+								{
+									"name": "Máscara de la Naturaleza",
+									"entries": [
+										"Puedes intentar esconderte incluso cuando estés en un lugar solo ligeramente oscuro, siempre que lo que te tape sea follaje, una lluvia fuerte, nieve que cae, niebla o cualquier otro fenómeno natural."
+									],
+									"type": "entries"
+								}
+                            ],
+                            "data": {
+                                "overwrite": "Versátil con Habilidades"
+                            }
+                        }
+                    ],
+                    "overwrite": {
+                        "skillProficiencies": true
+                    }
+                }
+            ]
+        },
+		{
+			"name": "Semiorco",
+            "source": "PHB-ES",
+            "page": 40,
+            "srd": true,
+            "size": ["M"],
+            "speed": 30,
+            "ability": [{
+                    "str": 2,
+                    "con": 1
+                }
+            ],
+            "heightAndWeight": {
                 "baseHeight": 58,
                 "heightMod": "2d10",
                 "baseWeight": 140,
                 "weightMod": "2d6"
             },
-			"darkvision": 60,
-			"traitTags": [
-				"Uncommon Race", 
-				"Skill Proficiency"
-			],
-			"languageProficiencies": [
-				{
-					"common": true,
-					"orc": true
-				}
-			],
-			"skillProficiencies": [
-				{
-					"intimidation": true
-				}
-			],
-			"soundClip": {
+            "darkvision": 60,
+            "traitTags": ["Uncommon Race"],
+            "skillProficiencies": [{
+                    "intimidation": true
+                }
+            ],
+            "languageProficiencies": [{
+                    "common": true,
+                    "orc": true
+                }
+            ],
+            "soundClip": {
                 "type": "internal",
                 "path": "races/half-orc.mp3"
             },
@@ -13906,6 +14234,73 @@
 								]
 							}
 						]
+					},
+					{
+						"type": "section",
+						"source": "SCAG-ES",
+						"page": 117,
+						"name": " ",
+						"entries": [
+							"Los semiorcos llevan existiendo en el mundo desde antes del amanecer de la historia documentada, cuando se conocieron orcos y humanos. A pesar de ello, en todo este tiempo han encontrado pocos lugares en los que encajar en la civilización faerûnense, o quizá sea más exacto afirmar que la civilización nunca les ha hecho un hueco.",
+							"La mayor parte del pueblo llano siente una aversión hacia ellos, causada en gran parte por su aspecto. Su razonamiento es que cualquiera que se parezca demasiado a un orco debe ser un orco y alguien a quien tener lejos.  Puesto que los semiorcos suelen ser más fuertes y robustos que sus iguales humanos, encuentran trabajo en pueblos y ciudades, pero su aspecto físico los señala como parias. Como respuesta a su exclusión, los semiorcos aceptan su aspecto extraño y se enorgullecen de su superioridad física, se cierran y tratan de no atraer mucho la atención, o dejan de intentar encajar en cualquier lugar y adoptan un estilo de vida nómada.",
+							"Los semiorcos de Faerûn tienen los atributos raciales de los semiorcos del {@italic Player's Handbook}. Hablan tanto común como orco. Los pocos ejemplos escritos de idioma orco usan el alfabeto dethek.",
+							{
+								"type": "entries",
+								"name": "La sangre lo determinará",
+								"entries": [
+									"El dios Gruumsh, creador de los orcos, es el responsable de la situación de los semiorcos. Según la leyenda, cuando Gruumsh descubrió que las otras razas se habían adjudicado todos los territorios del mundo, juró que los orcos se vengarían, tomando lo que quisieran por la fuerza. Las grandes hordas orcas siguen haciendo eso hoy en día y aparecen cada cierto tiempo de entre la naturaleza salvaje para saquear y hurgar entre los escombros.",
+									"Como consecuencia, la palabra \"orco\" no posee una connotación agradable para otros faerûnenses. Por otro lado, el prefijo \"semi\" es motivo de escarnio entre los orcos. Algunos semiorcos criados entre orcos reaccionan a este estigma siendo más crueles que el resto de su tribu, lo que a veces los coloca en posiciones de liderazgo, pero los semiorcos forasteros no son bienvenidos en la sociedad orca porque no son de sangre pura. Tampoco los aceptan en otras comunidades por su herencia orca.",
+									"A otros, los semiorcos les parecen repelentes e intimidatorios, lo que es tanto una bendición como una maldición, porque, aunque quienes les temen suelen dejarles en paz, a menudo son víctimas de discriminación o incluso ataques directos por parte de aquellos que se sienten amenazados por ellos. Este prejuicio hacia la raza hace que los semiorcos tarden en confiar incluso en quienes son educados con ellos, puesto que todos han sufrido experiencias de haber sido engañados con este comportamiento. Su sangre orca (la Marca de Gruumsh) hace que se enfaden con facilidad y que tengan tendencia a arremeter contra quienes les tratan de un modo injusto.",
+									"Como crecen entre orcos y bajo la sombra de su linaje, apenas cuentan con experiencia con una sociedad educada y suelen parecer rudos, cortantes o maleducados cuando tratan con otros. Tienen la franqueza de un orco y dan su opinión sin preocuparse en apariencia por la reacción. Sin importar donde residan, suelen ser definidos por otros con respecto a su utilidad como expertos en trabajos pesados y soldados. Hay pocos afortunados que sean juzgados por su carácter y sus acciones en vez de serlo por su linaje."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Patrias semiorcas",
+								"entries": [
+									"En los países lejanos a la Costa de la Espada, como Thesk o Chessenta, hay grandes comunidades semiorcas en las que han vivido durante generaciones como un pueblo por derecho propio. Pero existen pocos lugares así en el Norte. Cerca del Reino de Muchas Flechas estaba creciendo un pequeño grupo de esta clase, pero la guerra reciente con los orcos del reino provocó que esta boyante población se dispersase.",
+									"Ningún lugar civilizado del Norte tiene una población semiorca considerable, aunque como mínimo unos pocos residen dentro o cerca de cualquier comunidad estable. Irónicamente, los semiorcos cuentan con más oportunidades de ser aceptados en los lugares más grandes y civilizados, importantes ciudades en las que sus habitantes poseen un punto de vista más cosmopolita.",
+									"Por ejemplo, en Waterdeep los semiorcos son un porcentaje diminuto de la población, aunque hay cientos de ellos. Los semiorcos que tienen su hogar en la urbe aprecian ser aceptados o, al menos, tolerados en la ciudad, hayan nacido allí, llegado por tierra desde cualquier otra parte del continente o entrado en ella junto a las naves de comerciantes."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Deidades semiorcas",
+								"entries": [
+									"Como corresponde a su naturaleza dual, muchos semiorcos rinden culto o dioses de sus panteones humanos y orcos. Solos o entre iguales, los semiorcos rezan a deidades orcas. En especial, al Ilneval, que se considera el patrón de los semiorcos y otros orcos mixtos.",
+									{
+										"type": "entries",
+										"name": "Deidades faerûnenses",
+										"entries": [
+											"Los semiorcos que intentan encajar en la sociedad de los humanos a menudo adoptan a una divinidad humana por conveniencia, pero muy pocas veces la siguen con sinceridad, ya que lo hacen solo para mantener las apariencias. Prefieren los dioses faerûnenses de la guerra y el engaño, como Perdición, Máscara o Tempus."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Primera familia",
+										"entries": [
+											"El panteón orco, conocido como la Tribu del que Observa, es un grupo de deidades brutales y crueles dominada por su padre y jefe, Gruumsh el Tuerto. El dios de la conquista, la fuerza y la supervivencia es el rival odiado de la divinidad elfa Corellon Larethian. Se dice que Gruumsh perdió un ojo a causa de la puntería de Corellon con el arco.",
+											"La diosa madre de los orcos es Luthic, compañera de Gruumsh y diosa de la fecundidad, las cavernas y la brujería.",
+											"Bahgtru, el hijo de Gruumsh, es la divinidad de la fuerza pura y bruta. Es famoso por su poder, pero algunos lo desprecian porque es zafio."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Líder de la horda",
+										"entries": [
+											"El dios patrón de los semiorcos es Ilneval, la deidad de la guerra. Tiene el título de Señor de la Guerra en el panteón y lo adoran quienes creen en la sabiduría de atacar en números aplastantes."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Blanco y negro",
+										"entries": [
+											"Los dos miembros más siniestros del panteón orco están en posiciones opuestas del espectro visual. Uno es Shargaas, el Señor de la Noche, dios de la oscuridad, la noche y el sigilo. El otro es Yurtrus de la Mano Blanca, el Señor de los Gusanos, una deidad terrible de las plagas y la muerte."
+										]
+									}
+								]
+							}
+						]
 					}
 				],
 				"uncommon": true,
@@ -13918,8 +14313,7 @@
 						}
 					}
 				]
-			},
-			"srd": true
+			}
 		},
 		{
 			"name": "Enano",
@@ -15449,7 +15843,7 @@
 					]
 				},
 				{
-					"name": "Alternativo",
+					"name": "Variante",
                     "page": 31,
                     "srd": true,
                     "ability": [{
@@ -16759,36 +17153,51 @@
 		},
 		{
 			"name": "Tiefling",
-			"source": "PHB-ES",
-			"page": 42,
-			"size": "M",
-			"speed": 30,
-			"ability": [{
+            "source": "PHB-ES",
+            "page": 42,
+            "srd": true,
+            "size": ["M"],
+            "speed": 30,
+            "ability": [{
                     "cha": 2,
                     "int": 1
                 }
             ],
-			"heightAndWeight": {
+            "heightAndWeight": {
                 "baseHeight": 57,
                 "heightMod": "2d8",
                 "baseWeight": 110,
                 "weightMod": "2d4"
             },
-			"darkvision": 60,
-			"traitTags": [
-				"Damage Resistance", 
-				"Uncommon Race", 
-				"Spellcasting"
-			],
+            "darkvision": 60,
+            "traitTags": ["Uncommon Race"],
             "languageProficiencies": [{
                     "common": true,
                     "infernal": true
                 }
             ],
+            "resist": ["fire"],
             "soundClip": {
                 "type": "internal",
                 "path": "races/tiefling.mp3"
             },
+            "additionalSpells": [{
+                    "innate": {
+                        "1": ["taumaturgia|PHB-ES"],
+                        "3": {
+                            "daily": {
+                                "1": ["reprensión infernal|PHB-ES#2"]
+                            }
+                        },
+                        "5": {
+                            "daily": {
+                                "1": ["oscuridad|PHB-ES"]
+                            }
+                        }
+                    },
+                    "ability": "cha"
+                }
+            ],
 			"entries": [
 				{
 					"name": "Edad",
@@ -16970,6 +17379,54 @@
 								]
 							}
 						]
+					},
+					{
+						"type": "section",
+						"source": "SCAG-ES",
+						"page": 105,
+						"name": " ",
+						"entries": [
+							"La mayoría de tieflings faerûnenses, humanos con sangre infernal, poseen un vínculo común a causa de las intrigas del archidiablo Asmodeo hace un siglo.",
+							{
+								"type": "entries",
+								"name": "La Marca de Asmodeo",
+								"entries": [
+									"Durante la Plaga de Conjuros, Asmodeo consumió la chipa divina de Azuth y de ese modo consiguió la divinidad. Posteriormente, Asmodeo y un aquelarre de brujos, los Trece de Toril, llevaron a cabo un rito mediante el cual el archidiablo se apropió de todos los tieflings del mundo y los maldijo, haciéndoles portar \"la sangre de Asmodeo\". Este acto marcó a todos los tieflings como \"descendientes\" del Señor de los Nueve Infiernos, sin importar su herencia real, y los transformó en criaturas que se parecían a su supuesto progenitor. El resto de faerûnenses, desconcertados por el aspecto de estos seres demoníacos, desconfiaron de todos los tieflings y llegaron a ser hostiles hacia ellos.",
+									"Sin embargo, pese a lo que ciertas personas creen, Asmodeo no ejerce poder sobre su \"progenie\" y hoy en día tienen tanto libre albedrío (y cabezonería) como siempre. Algunos escogen servir al Señor de los Nueve Infiernos y a sus intrigas, mientras que otros encajan en facciones infernales totalmente distintas o en ninguna, pues prefieren mantenerse lejos de la política infernal.",
+									"Desde el rito que propagó la maldición de Asmodeo hace un siglo, han nacido tieflings en Faerûn que pertenecen a otras estirpes infernales, pero los que llevan la marca del archidiablo y sus descendientes siguen siendo de lejos los más cuantiosos.",
+									"Los tieflings de Faerûn suelen tener los atributos raciales de los tieflings del {@italic Player's Handbook}. Los que no descienden de Asmodeo pueden poseer habilidades diferentes."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Una raza sin hogar",
+								"entries": [
+									"Como prole infernal, los tieflings no tienen un hogar propio en Faerûn, aunque algunos lugares y naciones son más tolerantes con ellos que la media.",
+									"En el norte, la mayor población tiefling se encuentra en Neverwinter. Como los ashmadai (miembros de una secta violenta consagrada a Asmodeo) también están activos en la ciudad es habitual que se desconfíe de los tieflings incluso aquí, ya que nadie sabe si un tiefling es miembro de los ashmadai o si llegaron a Neverwinter atraídos por la oportunidad de camuflarse que da la metrópolis.",
+									"Pequeños grupos dispersos de tieflings se encuentran en otras partes de todo Faerûn, en especial en las ciudades cosmopolitas (que les permiten cierto nivel de anonimato) y en asentamientos toscos y pobres que acogen a cualquiera que les ayude a sobrevivir y prosperar.",
+									"Hay bastantes en Calimshan, donde muchos de ellos lucharon por los djinns como mercenarios y ahora sirven a otros amos con fortunas para pagarles. En el este, muchos residen en Aglarond. Se trata de esclavos que escaparon de Thay o sus descendientes. También viven en Mulhorand, donde se cree que llevan la sangre de los mismos dioses de la zona."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Fieles solitarios",
+								"entries": [
+									"Aunque muchos faerûnenses creen que todos los tieflings veneran a Asmodeo y los Amos de los Nueve Infiernos, lo cierto es que solo una fracción de ellos lo hace, pero hay suficientes adoradores de diablos y demonios para que haya cierta verdad en todos los rumores y sospechas.",
+									"Los tieflings que adoran a otro dios que no sea Asmodeo suelen venerar a deidades que vigilan y cuidan de los forasteros, como Ilmater, Máscara, Selûne, Shar y Tymora. Los dioses del conocimiento, la supervivencia, la astucia y la guerra también suelen atraer a los tieflings que valoran esas características. Beshaba tiene fieles tieflings que consideran que el accidente de su nacimiento es una especie de broma cruel que deben aceptar.",
+									"A los devotos de algunas fes de Faerûn les resultan igual de interesantes y perturbadoras las historias de tieflings que afirman haber tenido visiones en las que los dioses de Faerûn se les aparecen a imagen y semejanza de los propios tieflings. Llaman a una de esas entidades \"la pálida y cornuda diosa lunar\" (Selûne), otra es la \"dama oscura y diabólica de la suerte\" (Tymora). Los tieflings aseguran que esto indica que la apariencia externa y el linaje de alguien importan menos a las deidades que el corazón y el alma que se tiene."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Nombres tieflings",
+								"entries": [
+									"Muchísimos padres tieflings siguen las convenciones para poner nombre de la cultura en la que nacen sus hijos, de modo que usan nombres humanos si viven en un asentamiento humano, para así aparentar mejor ser ciudadanos \"normales\". Otros tienen nombres derivados del idioma infernal, nombres que se llevan heredando desde tiempos antiguos.",
+									"Además, algunos tieflings faerûnenses poseen nombres que provienen de los idiomas de culturas en los que es relativamente habitual que vivan y se les suele aceptar, como el calishita y mulhorandín. Estos nombres suenan a extranjero a los habitantes del Norte y la Costa de la Espada.",
+									"Al-Khem y Beni-Asmodai son dos apellidos calishitas habituales en tieflings que proclaman la herencia de esa raza. También se emplean nombres propios como Haroun, Ishaq y Nizam (masculinos) o Hania, Rashaa y Zaar (femeninos).",
+									"Los apellidos mulhonrandines que empiezan en \"Sia\" o \"Zia\" y van seguidos de un nombre divino indican que el portador es del linaje de ese dios, como Zianhur y Siasobek. Los nombres que suelen usar habitualmente los tieflings mulhonrandines incluyen Aybtep (\"cornudo\"), Bahati (\"alma sabia\"), Het (\"humo\"), Kamen (\"oscuro\"), Katsu (\"nacido de las estrellas\") y Kohl (\"de ojos oscuros\")."
+								]
+							}
+						]
 					}
 				],
 				"uncommon": true,
@@ -16986,7 +17443,185 @@
 			"subraces": [
 				{
 					"srd": true
-				}
+				},
+				{
+                    "name": "Variante; Lengua de Diablo",
+                    "source": "SCAG-ES",
+                    "page": 118,
+                    "ability": [{
+                            "int": 1,
+                            "choose": {
+                                "from": ["dex", "cha"],
+                                "count": 1,
+                                "amount": 2
+                            }
+                        }
+                    ],
+                    "additionalSpells": [{
+                            "innate": {
+                                "1": ["burla dañina|PHB-ES"],
+                                "3": {
+                                    "daily": {
+                                        "1": ["hechizar persona|PHB-ES#2"]
+                                    }
+                                },
+                                "5": {
+                                    "daily": {
+                                        "1": ["embelesar|PHB-ES"]
+                                    }
+                                }
+                            },
+                            "ability": "cha"
+                        }
+                    ],
+                    "entries": [
+						{
+                            "name": "Aspecto",
+                            "entries": ["Puede que tu tiefling no se parezca a otros tieflings. En vez de tener las características personales que se describen en el {@italic Player's Handbook}, escoge {@dice 1d4+1} de estos rasgos: cuernos pequeños, colmillos o dientes afilados, lengua bífida, ojos felinos, seis dedos en cada mano, piernas de cabra, pezuñas hendidas, cola bífida, piel curtida o escamosa, piel de color rojo o azul oscuro, no hacer sombra o reflejo, exudar olor a azufre."],
+                            "type": "entries"
+                        }, 
+						{
+                            "type": "entries",
+                            "name": "Lengua de Diablo",
+                            "entries": ["Conoces el truco {@spell burla dañina|PHB-ES}. Cuando llegues al nivel 3, puedes lanzar el conjuro {@spell hechizar persona|PHB-ES} como conjuro de segundo nivel una vez con este atributo. Cuando alcanzas el nivel 5, obtienes la capacidad de lanzar sobre ti mismo el conjuro {@spell embelesar|PHB-ES} una vez con este atributo. Para volver a lanzar los conjuros, debes haber hecho un descanso largo. Tu aptitud mágica para estos conjuros es el Carisma."],
+                            "data": {
+                                "overwrite": "Linaje Infernal"
+                            }
+                        }
+                    ],
+                    "overwrite": {
+                        "ability": true
+                    }
+                }, 
+				{
+                    "name": "Variante; Fuego Infernal",
+                    "source": "SCAG-ES",
+                    "page": 118,
+                    "ability": [{
+                            "int": 1,
+                            "choose": {
+                                "from": ["dex", "cha"],
+                                "count": 1,
+                                "amount": 2
+                            }
+                        }
+                    ],
+                    "additionalSpells": [{
+                            "innate": {
+                                "1": ["taumaturgia|PHB-ES"],
+                                "3": {
+                                    "daily": {
+                                        "1": ["manos ardientes|PHB-ES#2"]
+                                    }
+                                },
+                                "5": {
+                                    "daily": {
+                                        "1": ["oscuridad|PHB-ES"]
+                                    }
+                                }
+                            },
+                            "ability": "cha"
+                        }
+                    ],
+                    "entries": [
+						{
+                            "name": "Aspecto",
+                            "entries": ["Puede que tu tiefling no se parezca a otros tieflings. En vez de tener las características personales que se describen en el {@italic Player's Handbook}, escoge {@dice 1d4+1} de estos rasgos: cuernos pequeños, colmillos o dientes afilados, lengua bífida, ojos felinos, seis dedos en cada mano, piernas de cabra, pezuñas hendidas, cola bífida, piel curtida o escamosa, piel de color rojo o azul oscuro, no hacer sombra o reflejo, exudar olor a azufre."],
+                            "type": "entries"
+                        },
+						{
+                            "type": "entries",
+                            "name": "Fuego Infernal",
+                            "entries": ["Conoces el truco {@spell taumaturgia|PHB-ES}. Cuando llegues al nivel 3, puedes lanzar el conjuro {@spell manos ardientes|PHB-ES} como conjuro de segundo nivel una vez con este atributo. Cuando alcanzas el nivel 5, obtienes la capacidad de lanzar sobre ti mismo el conjuro {@spell oscuridad|PHB-ES} una vez con este atributo. Para volver a lanzar los conjuros, debes haber hecho un descanso largo. Tu aptitud mágica para estos conjuros es el Carisma."],
+                            "data": {
+                                "overwrite": "Linaje Infernal"
+                            }
+                        }
+                    ],
+                    "overwrite": {
+                        "ability": true
+                    }
+                }, 
+				{
+                    "name": "Variante; Legado Infernal",
+                    "source": "SCAG-ES",
+                    "page": 118,
+                    "ability": [{
+                            "int": 1,
+                            "choose": {
+                                "from": ["dex", "cha"],
+                                "count": 1,
+                                "amount": 2
+                            }
+                        }
+                    ],
+                    "additionalSpells": [{
+                            "innate": {
+                                "1": ["taumaturgia|PHB-ES"],
+                                "3": {
+                                    "daily": {
+                                        "1": ["reprensión infernal|PHB-ES"]
+                                    }
+                                },
+                                "5": {
+                                    "daily": {
+                                        "1": ["oscuridad|PHB-ES"]
+                                    }
+                                }
+                            },
+                            "ability": "cha"
+                        }
+                    ],
+                    "entries": [
+						{
+                            "name": "Aspecto",
+                            "entries": ["Puede que tu tiefling no se parezca a otros tieflings. En vez de tener las características personales que se describen en el {@italic Player's Handbook}, escoge {@dice 1d4+1} de estos rasgos: cuernos pequeños, colmillos o dientes afilados, lengua bífida, ojos felinos, seis dedos en cada mano, piernas de cabra, pezuñas hendidas, cola bífida, piel curtida o escamosa, piel de color rojo o azul oscuro, no hacer sombra o reflejo, exudar olor a azufre."],
+                            "type": "entries"
+                        }
+                    ],
+                    "overwrite": {
+                        "ability": true
+                    }
+                }, 
+				{
+                    "name": "Variante; Alado",
+                    "source": "SCAG-ES",
+                    "page": 118,
+                    "speed": {
+                        "walk": 30,
+                        "fly": 30
+                    },
+                    "ability": [{
+                            "int": 1,
+                            "choose": {
+                                "from": ["dex", "cha"],
+                                "count": 1,
+                                "amount": 2
+                            }
+                        }
+                    ],
+                    "traitTags": ["Uncommon Race"],
+                    "additionalSpells": null,
+                    "entries": [
+						{
+                            "name": "Aspecto",
+                            "entries": ["Puede que tu tiefling no se parezca a otros tieflings. En vez de tener las características personales que se describen en el {@italic Player's Handbook}, escoge {@dice 1d4+1} de estos rasgos: cuernos pequeños, colmillos o dientes afilados, lengua bífida, ojos felinos, seis dedos en cada mano, piernas de cabra, pezuñas hendidas, cola bífida, piel curtida o escamosa, piel de color rojo o azul oscuro, no hacer sombra o reflejo, exudar olor a azufre."],
+                            "type": "entries"
+                        }, 
+						{
+                            "type": "entries",
+                            "name": "Alado",
+                            "entries": ["Tienes unas alas similares a las de un murciélago saliendo de los omoplatos. Tu velocidad volando es de 30 pies mientras no lleves una armadura pesada."],
+                            "data": {
+                                "overwrite": "Linaje Infernal"
+                            }
+                        }
+                    ],
+                    "overwrite": {
+                        "ability": true,
+                        "traitTags": true
+                    }
+                }
 			]
 		}
 	],
@@ -37420,7 +38055,8 @@
                             "spells": ["{@spell inmovilizar persona|PHB-ES}", "{@spell paso brumoso|PHB-ES}"]
                         }
                     },
-                    "ability": "int"
+                    "ability": "int",
+					"type": "spellcasting"
                 }
             ],
             "action": [{
