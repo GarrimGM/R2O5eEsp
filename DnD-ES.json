@@ -35325,6 +35325,167 @@
             "damageTags": ["B"],
             "miscTags": ["MW"]
         },
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		{
+            "name": "Árbol despertado",
+            "source": "MM-ES",
+            "page": 317,
+            "srd": true,
+            "size": "H",
+            "type": "plant",
+			"type": {
+                "type": "plant",
+                "tags": ["planta"]
+            },
+            "alignment": ["U"],
+            "ac": [{
+                    "ac": 13,
+                    "from": ["armadura natural"]
+                }
+            ],
+            "hp": {
+                "average": 59,
+                "formula": "7d12 + 14"
+            },
+            "speed": {
+                "walk": 20
+            },
+            "str": 19,
+            "dex": 6,
+            "con": 15,
+            "int": 10,
+            "wis": 10,
+            "cha": 7,
+            "passive": 10,
+            "resist": ["bludgeoning", "piercing"],
+            "vulnerable": ["fire"],
+            "languages": ["un idioma conocido por su creador"],
+            "cr": "2",
+            "trait": [{
+                    "name": "Apariencia Falsa",
+                    "entries": ["Mientras permanezca estático, el árbol despertado es indistinguible de un árbol normal y corriente."]
+                }
+            ],
+            "action": [{
+                    "name": "Golpe",
+                    "entries": ["{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}14 ({@damage 3d6 + 4}) bludgeoning damage."]
+                }
+            ],
+            "environment": ["bosque"],
+            "tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Awakened%20Tree.png",
+            "soundClip": {
+                "type": "internal",
+                "path": "bestiary/awakened-tree.mp3"
+            },
+            "traitTags": ["Apariencia Falsa"],
+            "damageTags": ["B"],
+            "miscTags": ["MW", "RCH"],
+            "fluff": {
+				"entries": [{
+						"type": "entries",
+						"entries": [{
+								"type": "entries",
+								"entries": ["Un árbol despertado es un árbol normal que ha sido dotado de consciencia y la capacidad de desplazarse mediante el conjuro {@spell despertar|PHB-ES} o alguna magia de similar naturaleza."]
+							}
+						]
+					}
+				]
+			}
+        },
 		{
             "name": "Osgo",
             "source": "MM-ES",
@@ -85269,7 +85430,7 @@
             }
         }, 
 		{
-            "name": "Catapult",
+            "name": "Catapulta",
             "source": "XGE-ES",
             "page": 150,
             "level": 1,
@@ -85293,11 +85454,11 @@
                     "type": "instant"
                 }
             ],
-            "entries": ["Choose one object weighing 1 to 5 pounds within range that isn't being worn or carried. The object flies in a straight line up to 90 feet in a direction you choose before falling to the ground, stopping early if it impacts against a solid surface. If the object would strike a creature, that creature must make a Dexterity saving throw. On a failed save, the object strikes the target and stops moving. When the object strikes something, the object and what it strikes each take {@damage 3d8} bludgeoning damage."],
+            "entries": ["Elige un objeto que pese entre 1 y 5 libras, se encuentre dentro del alcance y no esté siendo vestido ni transportado. Este vuela describiendo una recta línea de hasta 90 pies en una dirección que escojas antes de caer al suelo, deteniéndose si impacta contra una superficie sólida. Si el objeto fuera a chocar contra una criatura, esta deberá hacer una tirada de salvación de Destreza. Si la falla, el objeto golpeará a dicha criatura y parará de moverse. Cuando el objeto choca con algo, tanto el objeto como aquello contra lo que impacte recibirán {@damage 3d8} de daño contundente."],
             "entriesHigherLevel": [{
                     "type": "entries",
                     "name": "At Higher Levels",
-                    "entries": ["When you cast this spell using a spell slot of 2nd level or higher, the maximum weight of objects that you can target with this spell increases by 5 pounds, and the damage increases by {@scaledamage 3d8|1-9|1d8}, for each slot level above 1st."]
+                    "entries": ["Cuando lanzas este conjuro usando un espacio de conjuro de nivel 2 o superior, el peso máximo del objeto que puedes elegir aumenta en 5 libras y el daño que inflige en {@scaledamage 3d8|1-9|1d8} por cada nivel por encima de 1 que tenga el espacio que hayas empleado."]
                 }
             ],
             "damageInflict": ["bludgeoning"],
@@ -85318,7 +85479,7 @@
             }
         }, 
 		{
-            "name": "Catnap",
+            "name": "Cabezadita",
             "source": "XGE-ES",
             "page": 151,
             "level": 3,
@@ -85337,7 +85498,7 @@
             },
             "components": {
                 "s": true,
-                "m": "a pinch of sand"
+                "m": "una pizca de arena"
             },
             "duration": [{
                     "type": "timed",
@@ -85347,11 +85508,11 @@
                     }
                 }
             ],
-            "entries": ["You make a calming gesture, and up to three willing creatures of your choice that you can see within range fall {@condition unconscious} for the spell's duration. The spell ends on a target early if it takes damage or someone uses an action to shake or slap it awake. If a target remains {@condition unconscious} for the full duration, that target gains the benefit of a short rest, and it can't be affected by this spell again until it finishes a long rest."],
+            "entries": ["Haces un gesto tranquilizador y hasta tres criaturas voluntarias de tu elección que puedas ver y se encuentren dentro del alcance caen {@condition inconsciente|PHB-ES|inconscientes} mientras dure el conjuro. Este último finaliza para un objetivo si este recibe daño o alguien usa una acción para sacudirle o abofetearle hasta que despierte. Si alguien permanece {@condition inconsciente|PHB-ES} durante la duración completa del conjuro, obtendrá los beneficios de un descanso corto y, además, no podrá ser afectado por este conjuro otra vez hasta que termine un descanso largo."],
             "entriesHigherLevel": [{
                     "type": "entries",
                     "name": "At Higher Levels",
-                    "entries": ["When you cast this spell using a spell slot of 4th level or higher, you can target one additional willing creature for each slot level above 3rd."]
+                    "entries": ["Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 4 o más, puedes elegir como objetivo a una criatura adicional por cada nivel por encima de 3 que tenga el espacio que hayas empleado."]
                 }
             ],
             "conditionInflict": ["unconscious"],
@@ -85993,7 +86154,7 @@
 			}
         }, 
 		{
-            "name": "Dawn",
+            "name": "Amanecer",
             "source": "XGE-ES",
             "page": 153,
             "level": 5,
@@ -86014,7 +86175,7 @@
                 "v": true,
                 "s": true,
                 "m": {
-                    "text": "a sunburst pendant worth at least 100 gp",
+                    "text": "un colgante con un sol de por lo menos 100 po de valor",
                     "cost": 10000
                 }
             },
@@ -86027,7 +86188,11 @@
                     "concentration": true
                 }
             ],
-            "entries": ["The light of dawn shines down on a location you specify within range. Until the spell ends, a 30-foot-radius, 40-foot-high cylinder of bright light glimmers there. This light is sunlight.", "When the cylinder appears, each creature in it must make a Constitution saving throw, taking {@damage 4d10} radiant damage on a failed save, or half as much damage on a successful one. A creature must also make this saving throw whenever it ends its turn in the cylinder.", "If you're within 60 feet of the cylinder, you can move it up to 60 feet as a bonus action on your turn."],
+            "entries": [
+				"La luz del amanecer brilla en un lugar que especifiques dentro del alcance. Hasta que el conjuro termine, un cilindro de luz brillante de 30 de radio y 40 pies de altura centellea en ese punto. Esta luz se considera luz solar.",
+				"Cuando el cilindro aparece, toda criatura situada en él deberá hacer una tirada de salvación de Constitución, sufriendo {@damage 4d10} de daño radiante si la falla, o la mitad de dicho daño si la supera. Cuando una criatura acabe su turno en el cilindro también tendrá que realizar esta tirada de salvación.",
+				"Si estás a 60 pies o menos del cilindro, puedes moverlo hasta 60 pies como acción adicional durante tu turno."
+			],
             "damageInflict": ["radiant"],
             "savingThrow": ["constitution"],
             "areaTags": ["Y"],
@@ -86039,21 +86204,11 @@
                         "name": "Mago",
                         "source": "PHB-ES"
                     }
-                ],
-                "fromClassListVariant": [{
-                        "name": "Druida",
-                        "source": "PHB-ES",
-                        "definedInSource": "UAClassFeatureVariants"
-                    }, {
-                        "name": "Paladin",
-                        "source": "PHB-ES",
-                        "definedInSource": "UAClassFeatureVariants"
-                    }
                 ]
             }
         }, 
 		{
-            "name": "Dragon's Breath",
+            "name": "Aliento de dragón",
             "source": "XGE-ES",
             "page": 154,
             "level": 2,
@@ -86072,7 +86227,7 @@
             "components": {
                 "v": true,
                 "s": true,
-                "m": "a hot pepper"
+                "m": "una guindilla"
             },
             "duration": [{
                     "type": "timed",
@@ -86083,11 +86238,11 @@
                     "concentration": true
                 }
             ],
-            "entries": ["You touch one willing creature and imbue it with the power to spew magical energy from its mouth, provided it has one. Choose acid, cold, fire, lightning, or poison. Until the spell ends, the creature can use an action to exhale energy of the chosen type in a 15-foot cone. Each creature in that area must make a Dexterity saving throw, taking {@damage 3d6} damage of the chosen type on a failed save, or half as much damage on a successful one."],
+            "entries": ["Tocas una criatura voluntaria y la imbuyes con el poder de expulsar energía mágica por su boca, siempre y cuando tenga una. Escoger entre ácido, frío, fuego, relámpago o veneno. Hasta que termine el conjuro, el objetivo puede utilizar una acción para exhalar la energía del tipo elegido en un cono de 15 pies. Cada criatura situada en la zona deberá realizar una tirada de salvación de Destreza, sufriendo {@damage 3d6} del tipo de daño elegido si la falla, o la mitad de ese daño si la supera."],
             "entriesHigherLevel": [{
                     "type": "entries",
                     "name": "At Higher Levels",
-                    "entries": ["When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@scaledamage 3d6|2-9|1d6} for each slot level above 2nd."]
+                    "entries": ["Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 3 o más, el daño aumenta en {@scaledamage 3d6|2-9|1d6} por cada nivel por encima de 2 que tenga el espacio que hayas empleado."]
                 }
             ],
             "damageInflict": ["acid", "cold", "fire", "lightning", "poison"],
@@ -86105,7 +86260,7 @@
             }
         }, 
 		{
-            "name": "Druid Grove",
+            "name": "Arboleda druídica",
             "source": "XGE-ES",
             "page": 154,
             "level": 6,
@@ -86125,7 +86280,7 @@
                 "v": true,
                 "s": true,
                 "m": {
-                    "text": "mistletoe, which the spell consumes, that was harvested with a golden sickle under the light of a full moon",
+                    "text": "muérdago cosechado con una hoz de oro bajo la luz de la luna llena, que es consumido por el conjuro",
                     "consume": true
                 }
             },
@@ -86137,26 +86292,39 @@
                     }
                 }
             ],
-            "entries": ["You invoke the spirits of nature to protect an area outdoors or underground. The area can be as small as a 30-foot cube or as large as a 90-foot cube. Buildings and other structures are excluded from the affected area. If you cast this spell in the same area every day for a year, the spell lasts until dispelled.", "The spell creates the following effects within the area. When you cast this spell, you can specify creatures as friends who are immune to the effects. You can also specify a password that, when spoken aloud, makes the speaker immune to these effects.", "The entire warded area radiates magic. A {@spell dispel magic} cast on the area, if successful, removes only one of the following effects, not the entire area. That spell's caster chooses which effect to end. Only when all its effects are gone is this spell dispelled.", {
+            "entries": [
+				"Invocas a los espíritus de la naturaleza para proteger una zona al aire libre o bajo tierra. Esta zona puede ser tan pequeña como un cubo de 30 pies o tan grande como uno de 90 pies. Los edificios y otras estructuras están excluidos de la zona afectada. Si lanzas este conjuro en la misma zona todo los días durante un año, se mantendrá hasta que sea disipado.",
+				"El conjuro crea los efectos que se describen más adelante en la zona. Cuando lo utilizas, puedes especificar qué criaturas son amigas e inmunes a los efectos. También puedes elegir un santo y seña que, dicho en voz alta, hace al que lo dice inmune de la misma forma.",
+				"Toda la zona protegida irradia magia. Si se lanza {@spell disipar magia|PHB-ES} en la zona con éxito, elimina solo uno de los efectos siguiente y no finaliza el conjuro. El lanzador escoge el efecto que termina. Solo cuando todos ellos hayan desaparecido será disipado el conjuro.", 
+				{
                     "type": "entries",
-                    "name": "Solid Fog",
-                    "entries": ["You can fill any number of 5-foot squares on the ground with thick fog, making them heavily obscured. The fog reaches 10 feet high. In addition, every foot of movement through the fog costs 2 extra feet. To a creature immune to this effect, the fog obscures nothing and looks like soft mist, with motes of green light floating in the air."]
-                }, {
+                    "name": "Guardianes de la arboleda",
+                    "entries": ["Puedes animar hasta cuatro árboles que se encuentre en la zona, haciendo que se desarraiguen del suelo. Estos tienen el mismo perfil que un {@creature árbol despertado|MM-ES}, tal y como figura en el {@italic Monster Manual}, excepto porque no pueden hablar y su corteza está cubierta con símbolos druídicos. Si alguna criatura no inmune a este efecto entra en la zona protegida, los guardianes de la arboleda lucharán hasta expulsar o matar a los intrusos. Estos árboles también obedecen las órdenes (sin requerir de ninguna acción) que emitas en la zona. Si no les das órdenes y no hay intrusos presentes, los guardianes no hacen nada. Además nunca pueden abandonar la zona que vigilan. Cuando el conjuro termina, la magia que los anima desaparece y los árboles vuelven a echar raíces, si les es posible."]
+                }, 
+				{
                     "type": "entries",
-                    "name": "Grasping Undergrowth",
-                    "entries": ["You can fill any number of 5-foot squares on the ground that aren't filled with fog with grasping weeds and vines, as if they were affected by an {@spell entangle} spell. To a creature immune to this effect, the weeds and vines feel soft and reshape themselves to serve as temporary seats or beds."]
-                }, {
+                    "name": "Maleza atrapadora",
+                    "entries": ["Puedes llenar cualquier número de áreas cuadradas de 5 pies de lado, siempre que no contengan niebla, con malezas y enredaderas, como si estuvieran afectadas por un conjuro de {@spell enmarañar|PHB-ES}. Para una criatura inmune a este efecto, esta maleza se siente suave e incluso cambia de forma para hacer las veces de como camas o asientos."]
+                }, 
+				{
                     "type": "entries",
-                    "name": "Grove Guardians",
-                    "entries": ["You can animate up to four trees in the area, causing them to uproot themselves from the ground. These trees have the same statistics as an {@creature awakened tree}, which appears in the Monster Manual, except they can't speak, and their bark is covered with druidic symbols. If any creature not immune to this effect enters the warded area, the grove guardians fight until they have driven off or slain the intruders. The grove guardians also obey your spoken commands (no action required by you) that you issue while in the area. If you don't give them commands and no intruders are present, the grove guardians do nothing. The grove guardians can't leave the warded area. When the spell ends, the magic animating them disappears, and the trees take root again if possible."]
-                }, {
+                    "name": "Niebla sólida",
+                    "entries": ["Puedes llenar cualquier número de áreas cuadradas de 5 pies de lado situadas dentro de la zona con una bruma espesa, haciéndolas muy oscuras. La niebla alcanza los 10 pies de altura. Además, cada pie de movimiento a través de ella cuesta dos pies adicionales. Para una criatura inmune a este efecto, la niebla no oscurece nada y parece una suave neblina, con motas de luz verde flotando en el aire."]
+                }, 
+				{
                     "type": "entries",
-                    "name": "Additional Spell Effect",
-                    "entries": ["You can place your choice of one of the following magical effects within the warded area:"]
-                }, {
+                    "name": "Efectos de conjuro adicionales",
+                    "entries": ["Puedes elegir uno de los siguientes efectos mágicos y aplicarlo en la zona protegida:"]
+                }, 
+				{
                     "type": "list",
-                    "items": ["A constant {@spell gust of wind} in two locations of your choice", "{@spell Spike growth} in one location of your choice", "{@spell Wind wall} in two locations of your choice"]
-                }, "To a creature immune to this effect, the winds are a fragrant, gentle breeze, and the area of {@spell spike growth} is harmless."],
+                    "items": [
+						"Una constante {@spell ráfaga de viento|PHB-ES} en dos ubicaciones de tu elección.", 
+						"{@spell Crecimiento espinoso|PHB-ES} en una ubicación de tu elección.", 
+						"{@spell Muro de viento|PHB-ES} en dos ubicaciones de tu elección."
+					]
+                }, 
+				"Para una criatura inmune a este efecto, los vientos son una brisa perfumada y el área de {@spell crecimiento espinoso|PHB-ES} es inofensiva."],
             "miscTags": ["PRM", "SMN"],
             "areaTags": ["C", "Q"],
             "classes": {
@@ -86278,7 +86446,7 @@
             }
         }, 
 		{
-            "name": "Earthbind",
+            "name": "Amarrar a la tierra",
             "source": "XGE-ES",
             "page": 154,
             "level": 2,
@@ -86307,7 +86475,7 @@
                     "concentration": true
                 }
             ],
-            "entries": ["Choose one creature you can see within range. Yellow strips of magical energy loop around the creature. The target must succeed on a Strength saving throw, or its flying speed (if any) is reduced to 0 feet for the spell's duration. An airborne creature affected by this spell safely descends at 60 feet per round until it reaches the ground or the spell ends."],
+            "entries": ["Elige a una criatura que puedas ver y se encuentre dentro del alcance. Tiras amarillas de energía mágica se entrelazan alrededor de ella. El objetivo deberá tener éxito en una tirada de salvación de Fuerza o su velocidad volando (si existe) se reducirá a 0 pies mientras el conjuro se mantenga. Una criatura en el aire que sea afectada por este conjuro descenderá 60 pies por asalto de forma segura hasta que llegue al suelo o el conjuro termine."],
             "savingThrow": ["strength"],
             "miscTags": ["SGT"],
             "areaTags": ["ST"],
@@ -86935,7 +87103,7 @@
             }
         }, 
 		{
-            "name": "Holy Weapon",
+            "name": "Arma sagrada",
             "source": "XGE-ES",
             "page": 157,
             "level": 5,
@@ -86964,7 +87132,10 @@
                     "concentration": true
                 }
             ],
-            "entries": ["You imbue a weapon you touch with holy power. Until the spell ends, the weapon emits bright light in a 30-foot radius and dim light for an additional 30 feet. In addition, weapon attacks made with it deal an extra {@damage 2d8} radiant damage on a hit. If the weapon isn't already a magic weapon, it becomes one for the duration.", "As a bonus action on your turn, you can dismiss this spell and cause the weapon to emit a burst of radiance. Each creature of your choice that you can see within 30 feet of the weapon must make a Constitution saving throw. On a failed save, a creature takes {@damage 4d8} radiant damage, and it is {@condition blinded} for 1 minute. On a successful save, a creature takes half as much damage and isn't {@condition blinded}. At the end of each of its turns, a {@condition blinded} creature can make a Constitution saving throw, ending the effect on itself on a success."],
+            "entries": [
+				"Imbuyes un arma que tocas con poder sagrado. Hasta que el conjuro termine, el objeto emite luz brillante en un radio de 30 pies y luz tenue 30 más allá. Además, los ataques de arma que se realizan con ella infligen {@damage 2d8} de daño radiante adicional cuando impacta. Asimismo, si no lo era ya, el objeto se convierte en mágico mientras dure este conjuro.", 
+				"Como acción adicional en tu turno, puedes terminar este conjuro y hacer que el arma emita un estallido resplandeciente. Todas las criaturas que escojas, puedas ver y se encuentren a 30 pies o menos de ti deberán realizar una tirada de salvación de Constitución. Si fallan, recibirán {@damage 4d8} de daño radiante y quedarán {@condition cegado|PHB-ES|cegadas} durante 1 minuto. Si la superan, recibirán la mitad de dicho daño y no serán {@condition cegado|PHB-ES|cegadas}. Las criaturas {@condition cegado|PHB-ES|cegadas} pueden repetir la tirada de salvación al final de cada uno de sus turnos, librándose del efecto si tiene éxito."
+			],
             "damageInflict": ["radiant"],
             "conditionInflict": ["blinded"],
             "savingThrow": ["constitution"],
@@ -88694,7 +88865,7 @@
             }
         }, 
 		{
-            "name": "Snare",
+            "name": "Atrapar",
             "source": "XGE-ES",
             "page": 165,
             "level": 1,
@@ -88713,7 +88884,7 @@
             "components": {
                 "s": true,
                 "m": {
-                    "text": "25 feet of rope, which the spell consumes",
+                    "text": "25 pies de cuerda, que el conjuro consume",
                     "consume": true
                 }
             },
@@ -88725,7 +88896,12 @@
                     }
                 }
             ],
-            "entries": ["As you cast this spell, you use the rope to create a circle with a 5-foot radius on the ground or the floor. When you finish casting, the rope disappears and the circle becomes a magic trap.", "This trap is nearly invisible, requiring a successful Intelligence ({@skill Investigation}) check against your spell save DC to be discerned.", "The trap triggers when a Small, Medium, or Large creature moves onto the ground or the floor in the spell's radius. That creature must succeed on a Dexterity saving throw or be magically hoisted into the air, leaving it hanging upside down 3 feet above the ground or the floor. The creature is {@condition restrained} there until the spell ends.", "A {@condition restrained} creature can make a Dexterity saving throw at the end of each of its turns, ending the effect on itself on a success. Alternatively, the creature or someone else who can reach it can use an action to make an Intelligence ({@skill Arcana}) check against your spell save DC. On a success, the {@condition restrained} effect ends.", "After the trap is triggered, the spell ends when no creature is {@condition restrained} by it."],
+            "entries": [
+				"Mientras lanzas este conjuro, utilizas la cuerda para crear un círculo con un radio de 5 pies en el suelo. Cuando terminas de lanzarlo, la cuerda desaparece y el círculo se convierte en una trampa mágica. Esta última es casi invisible, por lo que es necesario tener éxito en una prueba de Inteligencia ({@skill Investigation|Investigación}) con CD igual a tu salvación de conjuros para descubrirla.",
+				"La trampa se activa cuando una criatura Pequeña, Mediana o Grande se mueve sobre el suelo o terreno en el interior del radio del conjuro. Dicha criatura deberá tener éxito en una tirada de salvación de Destreza o se alzará en el aire por arte de magia, quedando colgada del revés a 3 pies sobre el suelo. La criatura estará {@condition apresado|PHB-ES|apresada} en esa posición hasta que el conjuro termine.", 
+				"Quien haya sido {@condition apresado|PHB-ES|capturado} puede realizar una tirada de salvación de Destreza al final de cada uno de sus turnos, librándose del efecto si tiene éxito. Por otra parte, la criatura, o alguien más que puede alcanzarla, puede usar una acción para hacer una prueba de Inteligencia ({@skill Arcana|Conocimiento Arcano}) contra tu CD de salvación de conjuros. Si tiene éxito, dejará de estar {@condition apresado|PHB-ES|atrapada} inmediatamente.", 
+				"Una vez la trampa sea activada, el conjuro terminará cuando ninguna criatura esté {@condition apresado|PHB-ES|apresada} por él."
+			],
             "conditionInflict": ["restrained"],
             "savingThrow": ["dexterity"],
             "abilityCheck": ["intelligence"],
@@ -92937,7 +93113,1146 @@
 			"data": {
 				"Save": "Charisma"
 			}
-		}
+		},
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		{
+            "name": "Abi-Dalzim's Horrid Wilting",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Constitution",
+                "Damage": "12d8",
+                "Damage Type": "Necrótico",
+                "Save Success": "Mitad del daño",
+                "Target": "Every creature in a 30-foot cube centered on a point"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Absorber elementos",
+            "source": "XGE-ES",
+            "data": {
+                "Damage": "1d6",
+                "Damage Type": "Mismo tipo del que lo activo",
+                "Higher Spell Slot Die": "d6",
+                "Higher Spell Slot Dice": "1"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "auto"
+            }
+        }, 
+		{
+            "name": "Aganazzar's Scorcher",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Dexterity",
+                "Damage": "3d8",
+                "Damage Type": "Fuego",
+                "Higher Spell Slot Die": "d8",
+                "Higher Spell Slot Dice": "1",
+                "Target": "Each creature in a line 30 feet long and 5 feet wide emanating from you in a direction you choose",
+                "Save Success": "Mitad del daño"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Beast Bond",
+            "source": "XGE-ES",
+            "data": {}
+        }, 
+		{
+            "name": "Bones of the Earth",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Dexterity",
+                "Damage": "6d6",
+                "Damage Type": "Contundente"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Catapulta",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Dexterity",
+                "Damage": "3d8",
+                "Damage Type": "Contundente",
+                "Higher Spell Slot Die": "d8",
+                "Higher Spell Slot Dice": "1"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Cabezadita",
+            "source": "XGE-ES",
+            "data": {}
+        }, 
+		{
+            "name": "Cause Fear",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Wisdom",
+                "Target": "Una criatura que puedas ver y se encuentre dentro del alcance",
+                "Save Success": "El efecto termina en la criatura"
+            }
+        }, 
+		{
+            "name": "Ceremony",
+            "source": "XGE-ES",
+            "data": {}
+        }, 
+		{
+            "name": "Chaos Bolt",
+            "source": "XGE-ES",
+            "data": {
+                "Damage": "2d8",
+                "Damage Type": "Variable",
+                "Target": "One creature in range",
+                "Spell Attack": "Ranged",
+                "Secondary Higher Spell Slot Die": "d6",
+                "Secondary Higher Spell Slot Dice": "1",
+                "Secondary Damage": "1d6",
+                "Secondary Damage Type": "Variable"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "attack",
+                "secondaryDamageCondition": "attack"
+            }
+        }, 
+		{
+            "name": "Charm Monster",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Wisdom"
+            }
+        }, 
+		{
+            "name": "Control Flames",
+            "source": "XGE-ES",
+            "data": {}
+        }, 
+		{
+            "name": "Control Winds",
+            "source": "XGE-ES",
+            "data": {}
+        }, 
+		{
+            "name": "Create Bonfire",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Dexterity",
+                "Damage": "1d8",
+                "Damage Type": "Fuego",
+                "data-Cantrip Scaling": "dice"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Create Homunculus",
+            "source": "XGE-ES",
+            "data": {}
+        }, 
+		{
+            "name": "Crown of Stars",
+            "source": "XGE-ES",
+            "data": {
+                "Damage": "4d12",
+                "Damage Type": "Radiant",
+                "Target": "One creature or object within 120 feet",
+                "Spell Attack": "Ranged"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "attack"
+            }
+        }, 
+		{
+            "name": "Danse Macabre",
+            "source": "XGE-ES",
+            "data": {}
+        }, 
+		{
+            "name": "Amanecer",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Constitution",
+                "Damage": "4d10",
+                "Damage Type": "Radiant",
+                "Target": "Cada criatura en un cilindro de 30 de radio y 40 pies de altura",
+                "Save Success": "Mitad del daño"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Aliento de dragón",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Dexterity",
+                "Damage": "3d6",
+                "Damage Type": "Ácido, frío, fuego, relámpago o veneno",
+                "Target": "Cada criatura en un cono de 15 pies",
+                "Save Success": "Mitad del daño",
+                "Higher Spell Slot Die": "d6",
+                "Higher Spell Slot Dice": "1"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Arboleda druídica",
+            "source": "XGE-ES",
+            "data": {}
+        }, 
+		{
+            "name": "Dust Devil",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Strength",
+                "Damage": "1d8",
+                "Damage Type": "Contundente",
+                "Save Success": "Half damage and not pushed",
+                "Higher Spell Slot Die": "d8",
+                "Higher Spell Slot Dice": "1"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Earth Tremor",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Dexterity",
+                "Damage": "1d6",
+                "Damage Type": "Contundente",
+                "Higher Spell Slot Die": "d6",
+                "Higher Spell Slot Dice": "1",
+                "Target": "Each creature other than you"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Amarrar a la tierra",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Strength"
+            }
+        }, 
+		{
+            "name": "Elemental Bane",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Constitution",
+                "Damage": "2d6",
+                "Damage Type": "Extra of the chosen type"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Enemies Abound",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Intelligence",
+                "Save Success": "Effect ends on creature"
+            }
+        }, 
+		{
+            "name": "Agotamiento",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Dexterity",
+                "Damage": "4d8",
+                "Damage Type": "Necrótico",
+                "Save Success": "Half damage and no continuing effect",
+                "Target": "A creature you can see within range",
+                "Higher Spell Slot Die": "d8",
+                "Higher Spell Slot Dice": "1"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Erupting Earth",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Dexterity",
+                "Damage": "3d12",
+                "Damage Type": "Contundente",
+                "Save Success": "Mitad del daño",
+                "Higher Spell Slot Die": "d12",
+                "Higher Spell Slot Dice": "1",
+                "Target": "Each creature in a 20-foot cube centered on point you can see on the ground within range"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Far Step",
+            "source": "XGE-ES",
+            "data": {}
+        }, 
+		{
+            "name": "Find Greater Steed",
+            "source": "XGE-ES",
+            "data": {}
+        }, 
+		{
+            "name": "Flame Arrows",
+            "source": "XGE-ES",
+            "data": {
+                "Damage": "1d6",
+                "Damage Type": "Fuego"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "auto"
+            }
+        }, 
+		{
+            "name": "Frostbite",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Constitution",
+                "Damage": "1d6",
+                "Damage Type": "Cold",
+                "data-Cantrip Scaling": "dice"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Guardian of Nature",
+            "source": "XGE-ES",
+            "data": {}
+        }, 
+		{
+            "name": "Gust",
+            "source": "XGE-ES",
+            "data": {}
+        }, 
+		{
+            "name": "Healing Spirit",
+            "source": "XGE-ES",
+            "data": {
+                "Target": "A space that is a 5-foot cube you can see within range",
+                "Healing": "1d6",
+                "Higher Spell Slot Die": "d6",
+                "Higher Spell Slot Dice": "1"
+            }
+        }, 
+		{
+            "name": "Arma sagrada",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Constitution",
+                "Damage": "2d8",
+                "Damage Type": "Radiante",
+                "Target": "Todas las criaturas que escojas, puedas ver y se encuentren a 30 pies o menos de ti",
+                "Save Success": "Mitad de daño y no es cegada",
+                "Secondary Damage": "4d8",
+                "Secondary Damage Type": "Radiante"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "auto",
+                "secondaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Ice Knife",
+            "source": "XGE-ES",
+            "data": {
+                "Damage": "1d10",
+                "Damage Type": "Piercing",
+                "Spell Attack": "Ranged",
+                "Save": "Dexterity",
+                "Target": "Each creature within 5 feet of the point where the ice exploded",
+                "Secondary Damage": "2d6",
+                "Secondary Damage Type": "Cold",
+                "Secondary Higher Spell Slot Die": "d6",
+                "Secondary Higher Spell Slot Dice": "1"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "attack",
+                "secondaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Illusory Dragon",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Wisdom",
+                "Save Success": "Not frightened"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Immolation",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Dexterity",
+                "Damage": "8d6",
+                "Damage Type": "Fuego",
+                "Save Success": "Half damage and not burning",
+                "Target": "One creature you can see withing range"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Infernal Calling",
+            "source": "XGE-ES",
+            "data": {}
+        }, 
+		{
+            "name": "Infestation",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Constitution",
+                "Damage": "1d6",
+                "Damage Type": "Poison",
+                "data-Cantrip Scaling": "dice",
+                "Target": "Una criatura que puedas ver y se encuentre dentro del alcance"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Investiture of Flame",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Dexterity",
+                "Damage": "4d8",
+                "Damage Type": "Fuego",
+                "Target": "Each creature in a line 15 feet long and 5 feet wide extending from you in a direction you choose",
+                "Secondary Damage": "1d10",
+                "Secondary Damage Type": "Fire",
+                "Save Success": "Mitad del daño"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save",
+                "secondaryDamageCondition": "auto"
+            }
+        }, 
+		{
+            "name": "Investiture of Ice",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Constitution",
+                "Damage": "4d6",
+                "Damage Type": "Cold",
+                "Save Success": "Half damage and speed not halved",
+                "Target": "Each creature in a 15-foot cone extending from you in a direction you choose"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Investiture of Stone",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Dexterity",
+                "Target": "Other creatures on the ground in a 15-foot radius centred on you"
+            }
+        }, 
+		{
+            "name": "Investiture of Wind",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Constitution",
+                "Damage": "2d10",
+                "Damage Type": "Contundente",
+                "Save Success": "Half damage and not pushed away",
+                "Target": "Each creature in a 15-foot cube centered on a point you can see within 60 feet of you"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Invulnerability",
+            "source": "XGE-ES",
+            "data": {}
+        }, 
+		{
+            "name": "Life Transference",
+            "source": "XGE-ES",
+            "data": {
+                "Damage": "4d8",
+                "Damage Type": "Necrótico",
+                "Target": "One creature of your choice that you can see within range",
+                "Healing": "Twice the necrotic damage you take",
+                "Higher Spell Slot Die": "d8",
+                "Higher Spell Slot Dice": "1"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "auto"
+            }
+        }, 
+		{
+            "name": "Maddening Darkness",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Wisdom",
+                "Damage": "8d8",
+                "Damage Type": "Psychic",
+                "Save Success": "Mitad del daño"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Maelstrom",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Strength",
+                "Damage": "6d6",
+                "Damage Type": "Contundente"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Magic Stone",
+            "source": "XGE-ES",
+            "data": {
+                "Damage": "1d6",
+                "Damage Type": "Contundente",
+                "Spell Attack": "Ranged",
+                "Add Casting Modifier": "Yes"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "attack"
+            }
+        }, 
+		{
+            "name": "Mass Polymorph",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Wisdom"
+            }
+        }, 
+		{
+            "name": "Maximilian's Earthen Grasp",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Strength",
+                "Damage": "2d6",
+                "Damage Type": "Contundente",
+                "Target": "A 5-foot-square unoccupied space on the ground that you can see within range"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Melf's Minute Meteors",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Dexterity",
+                "Damage": "2d6",
+                "Damage Type": "Fuego",
+                "Target": "Each creature within 5 feet of a point or points you choose within 120 feet of you",
+                "Save Success": "Mitad del daño"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Mental Prison",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Intelligence",
+                "Damage": "5d10",
+                "Damage Type": "Psychic",
+                "Target": "Una criatura que puedas ver y se encuentre dentro del alcance",
+                "Save Success": "Spell ends",
+                "Secondary Damage": "10d10",
+                "Secondary Damage Type": "Psychic"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "auto",
+                "secondaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Mighty Fortress",
+            "source": "XGE-ES",
+            "data": {}
+        }, 
+		{
+            "name": "Mind Spike",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Wisdom",
+                "Damage": "3d8",
+                "Damage Type": "Psychic",
+                "Target": "Una criatura que puedas ver y se encuentre dentro del alcance",
+                "Save Success": "Mitad del daño",
+                "Higher Spell Slot Die": "d8",
+                "Higher Spell Slot Dice": "1"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Mold Earth",
+            "source": "XGE-ES",
+            "data": {}
+        }, 
+		{
+            "name": "Negative Energy Flood",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Constitution",
+                "Damage": "5d12",
+                "Damage Type": "Necrótico",
+                "Target": "Una criatura que puedas ver y se encuentre dentro del alcance",
+                "Save Success": "Mitad del daño"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Power Word Pain",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Constitution"
+            }
+        }, 
+		{
+            "name": "Primal Savagery",
+            "source": "XGE-ES",
+            "data": {
+                "Damage": "1d10",
+                "Damage Type": "Acid",
+                "data-Cantrip Scaling": "dice",
+                "Target": "One creature within 5 feet of you",
+                "Spell Attack": "Melee"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "attack"
+            }
+        }, 
+		{
+            "name": "Primordial Ward",
+            "source": "XGE-ES",
+            "data": {}
+        }, 
+		{
+            "name": "Psychic Scream",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Intelligence",
+                "Damage": "14d6",
+                "Damage Type": "Psychic",
+                "Target": "Up to ten creatures of your choice that you can see within range",
+                "Save Success": "Half damage and not stunned"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Pyrotechnics",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Constitution",
+                "Target": "Each creature within 10 feet of the target"
+            }
+        }, 
+		{
+            "name": "Scatter",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Wisdom",
+                "Target": "Up to five creatures of your choice that you can see within range"
+            }
+        }, 
+		{
+            "name": "Shadow Blade",
+            "source": "XGE-ES",
+            "data": {
+                "Damage": "2d8",
+                "Damage Type": "Psychic",
+                "Higher Spell Slot Die": "d8",
+                "Higher Spell Slot Dice": "0.49"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "auto"
+            }
+        }, 
+		{
+            "name": "Shadow of Moil",
+            "source": "XGE-ES",
+            "data": {
+                "Damage": "2d8",
+                "Damage Type": "Necrótico"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "auto"
+            }
+        }, 
+		{
+            "name": "Shape Water",
+            "source": "XGE-ES",
+            "data": {}
+        }, 
+		{
+            "name": "Sickening Radiance",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Constitution",
+                "Damage": "4d10",
+                "Damage Type": "Radiant",
+                "Target": "A creature that moves into the spell's area for the first time on a turn or starts its turn there"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Skill Empowerment",
+            "source": "XGE-ES",
+            "data": {}
+        }, 
+		{
+            "name": "Skywrite",
+            "source": "XGE-ES",
+            "data": {}
+        }, 
+		{
+            "name": "Atrapar",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Dexterity"
+            }
+        }, 
+		{
+            "name": "Snilloc's Snowball Swarm",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Dexterity",
+                "Damage": "3d6",
+                "Damage Type": "Cold",
+                "Save Success": "Mitad del daño",
+                "Higher Spell Slot Die": "d6",
+                "Higher Spell Slot Dice": "1",
+                "Target": "Each creature in a 5-foot-radius sphere centered on a point you choose within range"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Soul Cage",
+            "source": "XGE-ES",
+            "data": {
+                "Healing": "2d8"
+            }
+        }, 
+		{
+            "name": "Steel Wind Strike",
+            "source": "XGE-ES",
+            "data": {
+                "Damage": "6d10",
+                "Damage Type": "Force",
+                "Target": "Up to five creatures you can see within range",
+                "Spell Attack": "Melee"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "attack"
+            }
+        }, 
+		{
+            "name": "Storm Sphere",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Strength",
+                "Damage": "2d6",
+                "Damage Type": "Contundente",
+                "Higher Spell Slot Die": "d6",
+                "Higher Spell Slot Dice": "1",
+                "Target": "Each creature in a 20-foot-radius sphere centered on a point you choose within range",
+                "Spell Attack": "Ranged",
+                "Secondary Damage": "4d6",
+                "Secondary Damage Type": "Lightning",
+                "Secondary Higher Spell Slot Die": "d6",
+                "Secondary Higher Spell Slot Dice": "1"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save",
+                "secondaryDamageCondition": "attack"
+            }
+        }, 
+		{
+            "name": "Summon Greater Demon",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Charisma"
+            }
+        }, 
+		{
+            "name": "Summon Lesser Demons",
+            "source": "XGE-ES",
+            "data": {}
+        }, 
+		{
+            "name": "Synaptic Static",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Intelligence",
+                "Damage": "8d6",
+                "Damage Type": "Psychic",
+                "Target": "Each creature within a 20-foot-radius sphere centered on a point within range",
+                "Save Success": "Mitad del daño"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Temple of the Gods",
+            "source": "XGE-ES",
+            "data": {}
+        }, 
+		{
+            "name": "Tenser's Transformation",
+            "source": "XGE-ES",
+            "data": {}
+        }, 
+		{
+            "name": "Thunder Step",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Constitution",
+                "Damage": "3d10",
+                "Damage Type": "Thunder",
+                "Target": "Each creature within 10 feet of the space you left",
+                "Save Success": "Mitad del daño",
+                "Higher Spell Slot Die": "d10",
+                "Higher Spell Slot Dice": "1"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Thunderclap",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Constitution",
+                "Damage": "1d6",
+                "Damage Type": "Thunder",
+                "data-Cantrip Scaling": "dice",
+                "Target": "Each creature within range other than you"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Tidal Wave",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Dexterity",
+                "Damage": "4d8",
+                "Damage Type": "Contundente",
+                "Save Success": "Half damage and not prone",
+                "Target": "Each creature in an area within range up to 30 feet long, up to 10 feet wide, and up to 10 feet tall"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Tiny Servant",
+            "source": "XGE-ES",
+            "data": {}
+        }, 
+		{
+            "name": "Toll the Dead",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Wisdom",
+                "Damage": "1d8",
+                "Damage Type": "Necrótico",
+                "data-Cantrip Scaling": "dice",
+                "Target": "Una criatura que puedas ver y se encuentre dentro del alcance",
+                "Secondary Damage": "[[round((@{level} + 1) / 6 + 0.5)]]d12",
+                "Secondary Damage Type": "Necrotic"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save",
+                "secondaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Transmute Rock",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Dexterity",
+                "Damage": "4d8",
+                "Damage Type": "Contundente"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Vitriolic Sphere",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Dexterity",
+                "Damage": "10d4",
+                "Damage Type": "Acid",
+                "Higher Spell Slot Die": "d4",
+                "Higher Spell Slot Dice": "2",
+                "Save Success": "Half damage and no damage at end of turn",
+                "Target": "Each creature in a 20-foot-radius sphere centered on a point within range",
+                "Secondary Damage": "5d4",
+                "Secondary Damage Type": "Acid"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save",
+                "secondaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Wall of Light",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Constitution",
+                "Damage": "4d8",
+                "Damage Type": "Radiant",
+                "Higher Spell Slot Die": "d8",
+                "Higher Spell Slot Dice": "1",
+                "Target": "Each creature in the wall's area",
+                "Save Success": "Half damage and not blinded",
+                "Secondary Damage": "4d8",
+                "Secondary Damage Type": "Radiant",
+                "Secondary Higher Spell Slot Die": "d8",
+                "Secondary Higher Spell Slot Dice": "1"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save",
+                "secondaryDamageCondition": "auto"
+            }
+        }, 
+		{
+            "name": "Wall of Sand",
+            "source": "XGE-ES",
+            "data": {}
+        }, 
+		{
+            "name": "Wall of Water",
+            "source": "XGE-ES",
+            "data": {}
+        }, 
+		{
+            "name": "Warding Wind",
+            "source": "XGE-ES",
+            "data": {}
+        }, 
+		{
+            "name": "Watery Sphere",
+            "source": "XGE-ES",
+            "data": {}
+        }, 
+		{
+            "name": "Whirlwind",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Dexterity",
+                "Damage": "10d6",
+                "Damage Type": "Contundente",
+                "Save Success": "Half damage and not restrained",
+                "Target": "Each creature in a 10-foot-radius, 30-foot-high cylinder centred on a point on the ground within range"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Word of Radiance",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Constitution",
+                "Damage": "1d6",
+                "Damage Type": "Radiant",
+                "data-Cantrip Scaling": "dice",
+                "Target": "Each creature of your choice that you can see within range"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save"
+            }
+        }, 
+		{
+            "name": "Wrath of Nature",
+            "source": "XGE-ES",
+            "data": {
+                "Save": "Dexterity",
+                "Damage": "4d6",
+                "Damage Type": "Slashing",
+                "Target": "Each of your enemies within 10 feet of any tree within a 60-foot cube centered on a point chosen when the spell was cast",
+                "Spell Attack": "Ranged",
+                "Secondary Damage": "3d8",
+                "Secondary Damage Type": "Nonmagical bludgeoning"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "save",
+                "secondaryDamageCondition": "attack"
+            }
+        }, 
+		{
+            "name": "Zephyr Strike",
+            "source": "XGE-ES",
+            "data": {
+                "Damage": "1d8",
+                "Damage Type": "Force"
+            },
+            "shapedData": {
+                "primaryDamageCondition": "auto"
+            }
+        }
 	],
 	"table": [
 		{
