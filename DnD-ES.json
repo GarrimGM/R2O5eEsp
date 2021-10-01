@@ -36507,6 +36507,90 @@
 			}
         },
 		{
+            "name": "Homúnculo",
+            "source": "MM-ES",
+            "page": 188,
+            "srd": true,
+            "size": "T",
+			"type": {
+                "type": "construct",
+                "tags": ["autómata"]
+            },
+            "alignment": ["N"],
+            "ac": [{
+                    "ac": 13,
+                    "from": ["armadura natural"]
+                }
+            ],
+            "hp": {
+                "average": 5,
+                "formula": "2d4"
+            },
+            "speed": {
+                "walk": 20,
+                "fly": 40
+            },
+            "str": 4,
+            "dex": 15,
+            "con": 11,
+            "int": 10,
+            "wis": 10,
+            "cha": 7,
+            "senses": ["darkvision 60 ft."],
+            "passive": 10,
+            "immune": ["poison"],
+            "conditionImmune": ["charmed", "poisoned"],
+            "languages": ["entiende los idiomas de su creador, pero no puede hablar"],
+            "cr": "0",
+            "trait": [{
+                    "name": "Enlace Telepático",
+                    "entries": ["Mientras el homúnculo se encuentre en el mismo plano de existencia que su maestro, podrá transmitirle mágicamente lo que están percibiendo sus sentidos y los dos podrán comunicarse telepáticamente."]
+                }
+            ],
+            "action": [{
+                    "name": "Mordisco",
+                    "entries": ["{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}1 piercing damage, y el objetivo deberá superar una tirada de salvación de Constitución {@dc 10} o estará {@condition envenenado|PHB-ES} durante 1 minuto. Si falla la tirada de salvación por 5 o más, estará {@condition envenenado|PHB-ES} durante 5 ({@dice 1d10}) minutos en lugar de solo 1 e {@condition inconsciente|PHB-ES} mientras esté {@condition envenenado|PHB-ES} de esta forma."]
+                }
+            ],
+            "tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Homunculus.png",
+            "soundClip": {
+                "type": "internal",
+                "path": "bestiary/homunculus.mp3"
+            },
+            "senseTags": ["D"],
+            "languageTags": ["CS"],
+            "damageTags": ["P"],
+            "miscTags": ["MW"],
+            "conditionInflict": ["poisoned", "unconscious"],
+            "fluff": {
+				"entries": [{
+						"type": "entries",
+						"entries": [{
+								"type": "entries",
+								"entries": [
+									"Dando forma a una mezcla de arcilla, ceniza, raíz de mandrágora y sangre se puede canalizar la magia de un extraño ritual para crear un compañero fiel del tamaño de una ardilla.", 
+									"Un homúnculo es un autómata que actúa como una extensión de su creador. Ambos comparten pensamientos, sentidos e idiomas mediante un lazo místico. Cada amo solo puede poseer un homúnculo a la vez, por lo que el intento de crear otro siempre resulta un fracaso. Si un amo muere, su homúnculo también.", 
+									{
+										"name": "Mente compartida",
+										"type": "entries",
+										"entries": ["Estas criaturas comparten los conocimientos de su creador, incluyendo los idiomas que este sea capaz de leer o hablar. De la misma forma, el amo sabe todo lo que el autómata siente, incluso aunque los separen grandes distancias, siempre y cuando ambos se encuentren en el mismo plano. Los homúnculos sirven como espías, exploradores, emisarios o mensajeros, y son sirvientes inestimables para un lanzador de conjuros ocupado con algún experimento secreto o de aventuras."]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Homunculus.jpg"
+						}
+					}
+				]
+			}
+        },
+		{
             "name": "Nótico",
             "source": "MM-ES",
             "page": 236,
@@ -85588,7 +85672,7 @@
             }
         }, 
 		{
-            "name": "Ceremony",
+            "name": "Ceremonia",
             "source": "XGE-ES",
             "page": 151,
             "level": 1,
@@ -85608,7 +85692,7 @@
                 "v": true,
                 "s": true,
                 "m": {
-                    "text": "25 gp worth of powdered silver, which the spell consumes",
+                    "text": "25 po de plata en polvo, que es consumido por el conjuro",
                     "cost": 2500,
                     "consume": true
                 }
@@ -85620,30 +85704,37 @@
             "meta": {
                 "ritual": true
             },
-            "entries": ["You perform a special religious ceremony that is infused with magic. When you cast the spell, choose one of the following rites, the target of which must be within 10 feet of you throughout the casting.", {
+            "entries": [
+				"Realizas una ceremonia religiosa especial: impregnada de magia. Cuando lances el conjuro, elige uno de los siguientes ritos. El objetivo debe encontrarse a menos de 10 pies de ti cuando se produzca lanzamiento.", 
+				{
                     "type": "entries",
-                    "name": "Atonement",
-                    "entries": ["You touch one willing creature whose alignment has changed, and you make a DC 20 Wisdom ({@skill Insight}) check. On a successful check, you restore the target to its original alignment."]
-                }, {
+                    "name": "Bendecir agua",
+                    "entries": ["Tocas un {@item vial|PHB-ES} de agua y lo conviertes en {@item Agua bendita (frasco)|PHB-ES|agua bendita}."]
+                }, 
+				{
                     "type": "entries",
-                    "name": "Bless Water",
-                    "entries": ["You touch one {@item vial|phb} of water and cause it to become {@item Holy Water (flask)|phb|holy water}."]
-                }, {
+                    "name": "Boda",
+                    "entries": ["Tocas a dos humanoides adultos dispuestos a ser unidos en matrimonio. Durante los próximos 7 días, ambos objetivos obtendrán un bonificador +2 a la CA mientras estén a 30 pies el uno del otro. Una criatura solo puede beneficiarse de este rito otra vez si enviuda."]
+                },
+				{
                     "type": "entries",
-                    "name": "Coming of Age",
-                    "entries": ["You touch one humanoid who is a young adult. For the next 24 hours, whenever the target makes an ability check, it can roll a {@dice d4} and add the number rolled to the ability check. A creature can benefit from this rite only once."]
-                }, {
+                    "name": "Dedicación",
+                    "entries": ["Tocas a un humanoide que desee dedicarse al servicio de tu dios. Durante las próximas 24 horas, siempre que el objetivo haga una tirada de salvación, podrá tirar un {@dice d4} y sumar el resultado a dicha tirada. Una criatura solo puede beneficiarse de este rito una vez."]
+                },
+				{
                     "type": "entries",
-                    "name": "Dedication",
-                    "entries": ["You touch one humanoid who wishes to be dedicated to your god's service. For the next 24 hours, whenever the target makes a saving throw, it can roll a {@dice d4} and add the number rolled to the save. A creature can benefit from this rite only once."]
-                }, {
+                    "name": "Expiación",
+                    "entries": ["Tocas a una criatura voluntaria cuyo alinea miento haya cambiado con anterioridad y haces una prueba de Sabiduría CD 20 ({@skill Insight|Perspicacia}). Si tienes éxito, devuelves al objetivo a su alineamiento original."]
+                }, 
+				{
                     "type": "entries",
-                    "name": "Funeral Rite",
-                    "entries": ["You touch one corpse, and for the next 7 days, the target can't become undead by any means short of a {@spell wish} spell."]
-                }, {
+                    "name": "Mayoría de edad",
+                    "entries": ["Tocas a un humanoide adulto joven. Durante las próximas 24 horas, siempre que el objetivo haga una prueba de característica, podrá tirar un {@dice d4} y sumar el resultado a dicha prueba. Una criatura solo puede beneficiarse de este rito una vez."]
+                },  
+				{
                     "type": "entries",
-                    "name": "Wedding",
-                    "entries": ["You touch adult humanoids willing to be bonded together in marriage. For the next 7 days, each target gains a +2 bonus to AC while they are within 30 feet of each other. A creature can benefit from this rite again only if widowed."]
+                    "name": "Ritos funerarios",
+                    "entries": ["Tocas un cadáver y, durante los próximos 7 días, el objetivo no puede convertirse en muerto viviente por ningún medio excepto un conjuro de {@spell deseo|PHB-ES}."]
                 }
             ],
             "miscTags": ["MAC"],
@@ -85820,7 +85911,7 @@
             }
         }, 
 		{
-            "name": "Control Flames",
+            "name": "Controlar llamas",
             "source": "XGE-ES",
             "page": 152,
             "level": 0,
@@ -85850,10 +85941,19 @@
                     }
                 }
             ],
-            "entries": ["You choose nonmagical flame that you can see within range and that fits within a 5-foot cube. You affect it in one of the following ways:", {
+            "entries": [
+				"Elige una llama no mágica que puedas ver dentro del alcance y que quepa dentro de un cubo de 5 pies de lado. Puedes manipularla de una de las formas siguientes:", 
+				{
                     "type": "list",
-                    "items": ["You instantaneously expand the flame 5 feet in one direction, provided that wood or other fuel is present in the new location.", "You instantaneously extinguish the flames within the cube.", "You double or halve the area of bright light and dim light cast by the flame, change its color, or both. The change lasts for 1 hour.", "You cause simple shapes—such as the vague form of a creature, an inanimate object, or a location—to appear within the flames and animate as you like. The shapes last for 1 hour."]
-                }, "If you cast this spell multiple times, you can have up to three non-instantaneous effects created by it active at a time, and you can dismiss such an effect as an action."],
+                    "items": [
+						"Expandes el fuego 5 pies en una dirección instantáneamente, siempre que haya madera u otro combustible presente en la nueva ubicación.", 
+						"Apagas las llamas dentro del cubo instantáneamente.",
+						"Duplicas o reduces a la mitad el tamaño de las zonas de luz brillante y luz tenue proyectadas por el fuego, cambias su color o hacer ambas cosas. Esta transformación dura hora.",						
+						"Creas formas simples -como la figura imprecisa de una criatura, un objeto inanimado o un lugar- que aparecen dentro de las llamas y las animas como desees. Las formas persisten durante 1 hora."
+					]
+                }, 
+				"Si lanzas este conjuro varias veces, puedes mantener hasta tres de sus efectos no instantáneos activos a la vez y puedes utilizar una acción para finalizar cualquiera de ellos."
+			],
             "miscTags": ["SGT"],
             "areaTags": ["C"],
             "classes": {
@@ -85871,7 +85971,7 @@
             }
         }, 
 		{
-            "name": "Control Winds",
+            "name": "Controlar vientos",
             "source": "XGE-ES",
             "page": 152,
             "level": 5,
@@ -85901,18 +86001,22 @@
                     "concentration": true
                 }
             ],
-            "entries": ["You take control of the air in a 100-foot cube that you can see within range. Choose one of the following effects when you cast the spell. The effect lasts for the spell's duration, unless you use your action on a later turn to switch to a different effect. You can also use your action to temporarily halt the effect or to restart one you've halted.", {
+            "entries": [
+				"Tomas el control del aire dentro de un cubo de 100 pies que puedas ver y se encuentre dentro del alcance. Cuando lanzas este conjuro, escoge uno de los siguientes efectos, que permanecerá activo durante toda la duración del conjuro, a menos que uses una acción en un turno posterior para cambiar a un efecto diferente. También puedes utilizar una acción para parar temporalmente el efecto o reiniciar uno que hayas detenido.", 
+				{
                     "type": "entries",
-                    "name": "Gusts",
-                    "entries": ["A wind picks up within the cube, continually blowing in a horizontal direction you designate. You choose the intensity of the wind: calm, moderate, or strong. If the wind is moderate or strong, ranged weapon attacks that pass through it or that are made against targets within the cube have disadvantage on their attack rolls. If the wind is strong, any creature moving against the wind must spend 1 extra foot of movement for each foot moved."]
-                }, {
+                    "name": "Ráfagas",
+                    "entries": ["Se levanta un viento dentro del cubo, soplando continuamente en la dirección horizontal que designes. Tú eliges su intensidad: leve, moderado o fuerte. Si el viento es moderado o fuerte, los ataques con arma a distancia que entran o salen del cubo o pasan a través de él tienen desventaja en sus tiradas de ataque. Además, si es fuerte, cualquier criatura que se mueva en contra del viento deberá emplear un pie de movimiento adicional por cada pie que se mueva."]
+                }, 
+				{
                     "type": "entries",
-                    "name": "Downdraft",
-                    "entries": ["You cause a sustained blast of strong wind to blow downward from the top of the cube. Ranged weapon attacks that pass through the cube or that are made against targets within it have disadvantage on their attack rolls. A creature must make a Strength saving throw if it flies into the cube for the first time on a turn or starts its turn there flying. On a failed save, the creature is knocked {@condition prone}."]
-                }, {
+                    "name": "Corrientes ascendentes",
+                    "entries": ["Causas una ráfaga ascendente sostenida dentro del cubo, que sopla desde la base de este. Las criaturas que terminan una caída dentro del área reciben solo la mitad del daño provocado por dicha caída. Cuando una criatura situada en el cubo hace un salto vertical, esta puede elevarse hasta 10 pies más arriba de lo normal."]
+                }, 
+				{
                     "type": "entries",
-                    "name": "Updraft",
-                    "entries": ["You cause a sustained updraft within the cube, rising upward from the cube's bottom side. Creatures that end a fall within the cube take only half damage from the fall. When a creature in the cube makes a vertical jump, the creature can jump up to 10 feet higher than normal."]
+                    "name": "Corrientes descendentes",
+                    "entries": ["Causas una ráfaga sostenida de fuerte viento que sopla hacia abajo desde la parte superior del cubo. Los ataques con armas a distancia que pasan por el área o hechos contra objetivos situados dentro de esta tienen desventaja en sus tiradas de ataque. Las criaturas que vuelven hasta el interior del cubo deben o empiecen su turno volando en su interior deberán realizar una tirada de salvación de Fuerza. Si la fallan, son {@condition derribado|PHB-ES|derribadas}."]
                 }
             ],
             "conditionInflict": ["prone"],
@@ -85934,7 +86038,7 @@
             }
         }, 
 		{
-            "name": "Create Bonfire",
+            "name": "Crear hoguera",
             "source": "XGE-ES",
             "page": 152,
             "level": 0,
@@ -85964,7 +86068,11 @@
                     "concentration": true
                 }
             ],
-            "entries": ["You create a bonfire on ground that you can see within range. Until the spell ends, the magic bonfire fills a 5-foot cube. Any creature in the bonfire's space when you cast the spell must succeed on a Dexterity saving throw or take {@damage 1d8} fire damage. A creature must also make the saving throw when it moves into the bonfire's space for the first time on a turn or ends its turn there.", "The bonfire ignites flammable objects in its area that aren't being worn or carried.", "The spell's damage increases by {@dice 1d8} when you reach 5th level ({@damage 2d8}), 11th level ({@damage 3d8}), and 17th level ({@damage 4d8})."],
+            "entries": [
+				"Creas una hoguera en un punto del suelo que puedas ver y se encuentre dentro del alcance. Hasta que el conjuro termine, el fuego mágico llena un cubo de 5 pies. Cualquier criatura en el espacio de la hoguera cuando lanzas el conjuro deberá tener éxito en una tirada de salvación de Destreza o recibirá {@damage 1d8} de daño de fuego. Las criaturas también deberán hacer esta tirada de salvación cuando entren en la zona donde se halla el fuego por primera vez en un turno o cuando acaben su turno en ella.", 
+				"La hoguera prende los objetos inflamables en su área que no estén siendo llevados o vestidos.", 
+				"El daño del conjuro aumenta en {@dice 1d8} cuando alcanzas nivel 5 ({@dice 2d8}), nivel 11 ({@dice 3d8}) y nivel 17 ({@dice 4d8})."
+			],
             "scalingLevelDice": {
                 "label": "fire damage",
                 "scaling": {
@@ -85999,7 +86107,7 @@
             }
         }, 
 		{
-            "name": "Create Homunculus",
+            "name": "Crear homúnculo",
             "source": "XGE-ES",
             "page": 152,
             "level": 6,
@@ -86019,7 +86127,7 @@
                 "v": true,
                 "s": true,
                 "m": {
-                    "text": "clay, ash, and mandrake root, all of which the spell consumes, and a jewel-encrusted dagger worth at least 1,000 gp",
+                    "text": "arcilla, ceniza y raíz de mandrágora, que son consumidos por el conjuro, y una daga incrustada de joyas con un valor de al menos 1.000 po",
                     "cost": 100000,
                     "consume": true
                 }
@@ -86028,7 +86136,10 @@
                     "type": "instant"
                 }
             ],
-            "entries": ["While speaking an intricate incantation, you cut yourself with a jewel-encrusted dagger, taking {@damage 2d4} piercing damage that can't be reduced in any way. You then drip your blood on the spell's other components and touch them, transforming them into a special construct called a {@creature homunculus}.", "The statistics of the {@creature homunculus} are in the Monster Manual. It is your faithful companion, and it dies if you die. Whenever you finish a long rest, you can spend up to half your Hit Dice if the homunculus is on the same plane of existence as you. When you do so, roll each die and add your Constitution modifier to it. Your hit point maximum is reduced by the total, and the homunculus's hit point maximum and current hit points are both increased by it. This process can reduce you to no lower than 1 hit point, and the change to your and the homunculus's hit points ends when you finish your next long rest. The reduction to your hit point maximum can't be removed by any means before then, except by the homunculus's death.", "You can have only one homunculus at a time. If you cast this spell while your homunculus lives, the spell fails."],
+            "entries": [
+				"Te cortas con una daga incrustada de joyas mientras pronuncias un intrincado encantamiento, recibiendo {@damage 2d4} de daño perforante que no se puede reducir de ninguna manera. Después, derramas unas gotas de tu sangre sobre los otros componentes del conjuro y los tocas, transformándolos en un autómata especial llamado {@creature homúnculo|MM-ES}.", 
+				"El perfil del {@creature homúnculo|MM-ES} se encuentra en el {@italic Monster Manual}. Es tu fiel compañero y, de hecho, morirá si tú mueres. Cada vez que termines un descanso largo, podrás gastar hasta la mitad de tus Dados de Golpe si el autómata está en el mismo plano de existencia que tú. Al hacer esto, tira cada dado y añade tu modificador por Constitución. Tus у puntos de golpe máximos se reducen en el total obtenido, mientras que los puntos de golpe máximos del homúnculo y sus puntos de golpe actuales aumentan en esa cantidad. Este proceso no puede dejarte a menos de 1 punto de golpe, y el intercambio de tus puntos de golpe y los del autómata finaliza cuando terminas tu siguiente descanso largo. No existe forma alguna de eliminar la reducción de tu máximo de puntos de golpe antes de ese momento, salvo por la muerte del homúnculo.", 
+				"Puedes tener solo un homúnculo a la vez. Si lanzas este conjuro mientras tu autómata aún vive, este fallará."],
             "miscTags": ["PRM"],
             "classes": {
                 "fromClassList": [{
@@ -86039,7 +86150,7 @@
             }
         }, 
 		{
-            "name": "Crown of Stars",
+            "name": "Corona de estrellas",
             "source": "XGE-ES",
             "page": 152,
             "level": 7,
@@ -86067,11 +86178,14 @@
                     }
                 }
             ],
-            "entries": ["Seven star-like motes of light appear and orbit your head until the spell ends. You can use a bonus action to send one of the motes streaking toward one creature or object within 120 feet of you. When you do so, make a ranged spell attack. On a hit, the target takes {@damage 4d12} radiant damage. Whether you hit or miss, the mote is expended. The spell ends early if you expend the last mote.", "If you have four or more motes remaining, they shed bright light in a 30-foot radius and dim light for an additional 30 feet. If you have one to three motes remaining, they shed dim light in a 30-foot radius."],
+            "entries": [
+				"Aparecen siete motas de luz parecidas a una estrella y orbitan alrededor de tu cabeza hasta que el conjuro termina. Puedes usar una acción adicional para enviar una de ellas hacia una criatura u objeto que esté a 120 pies o menos de ti. Si haces esto, realiza un ataque de conjuro a distancia. Si impactas, el objetivo recibe {@damage 4d12} de daño radiante. Aciertes o falles, la mota desaparece. El conjuro termina antes de tiempo cuando se desvanece la última mota.", 
+				"Si te quedan cuatro o más motas, emiten luz brillante en un radio de 30 pies y luz tenue 30 pies más allá. Si tienes de una a tres de ellas, arrojan luz tenue en un radio de 30 pies."
+			],
             "entriesHigherLevel": [{
                     "type": "entries",
                     "name": "At Higher Levels",
-                    "entries": ["When you cast this spell using a spell slot of 8th level or higher, the number of motes created increases by two for each slot level above 7th."]
+                    "entries": ["A niveles superiores. Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 8 o más, el número de motas aumenta en dos por cada nivel por encima de 7 que tenga el espacio que hayas empleado."]
                 }
             ],
             "damageInflict": ["radiant"],
@@ -86868,7 +86982,7 @@
             }
         }, 
 		{
-            "name": "Frostbite",
+            "name": "Congelar",
             "source": "XGE-ES",
             "page": 156,
             "level": 0,
@@ -86893,7 +87007,10 @@
                     "type": "instant"
                 }
             ],
-            "entries": ["You cause numbing frost to form on one creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes {@damage 1d6} cold damage, and it has disadvantage on the next weapon attack roll it makes before the end of its next turn.", "The spell's damage increases by {@dice 1d6} when you reach 5th level ({@damage 2d6}), 11th level ({@damage 3d6}), and 17th level ({@damage 4d6})."],
+            "entries": [
+				"Haces que se forme escarcha entumecedora alrededor de una criatura que puedas ver y se encuentre dentro del alcance. El objetivo deberá hacer una tirada de salvación de Constitución. La criatura recibirá {@damage 1d6} de daño de frío si falla la tirada de salvación y tendrá desventaja en la siguiente tirada de ataque con arma que realice antes del final de su próximo turno.", 
+				"El daño del conjuro aumenta en {@dice 1d6} cuando alcanzas nivel 5 ({@damage 2d6}), nivel 11 ({@damage 3d6}) y nivel 17 ({@damage 4d6})."
+			],
             "scalingLevelDice": {
                 "label": "cold damage",
                 "scaling": {
@@ -87153,7 +87270,7 @@
             }
         }, 
 		{
-            "name": "Ice Knife",
+            "name": "Cuchillo de hielo",
             "source": "XGE-ES",
             "page": 157,
             "level": 1,
@@ -87172,17 +87289,17 @@
             },
             "components": {
                 "s": true,
-                "m": "a drop of water or piece of ice"
+                "m": "una gota de agua o un trozo de hielo"
             },
             "duration": [{
                     "type": "instant"
                 }
             ],
-            "entries": ["You create a shard of ice and fling it at one creature within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d10} piercing damage. Hit or miss, the shard then explodes. The target and each creature within 5 feet of it must succeed on a Dexterity saving throw or take {@damage 2d6} cold damage."],
+            "entries": ["Creas un fragmento de hielo y lo arrojas contra una criatura que se encuentre dentro del alcance. Haz un ataque de conjuro a distancia contra el objetivo. Si este impacta, la criatura sufrirá {@damage 1d10} de daño perforante. Acierte o falle, el fragmento explota, de modo que el objetivo y todas las criaturas situadas a 5 pies o menos de él deberán superar una tirada de salvación de Destreza o recibirán {@damage 2d6} de daño de frío."],
             "entriesHigherLevel": [{
                     "type": "entries",
                     "name": "At Higher Levels",
-                    "entries": ["When you cast this spell using a spell slot of 2nd level or higher, the cold damage increases by {@scaledamage 2d6|1-9|1d6} for each slot level above 1st."]
+                    "entries": ["Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 2 o más, el daño aumenta en {@scaledamage 2d6|1-9|1d6} por cada nivel por encima de 1 que tenga el espacio que hayas empleado."]
                 }
             ],
             "damageInflict": ["cold", "piercing"],
@@ -88125,7 +88242,7 @@
 			}
         }, 
 		{
-            "name": "Mind Spike",
+            "name": "Clavo mental",
             "source": "XGE-ES",
             "page": 162,
             "level": 2,
@@ -88154,11 +88271,11 @@
                     "concentration": true
                 }
             ],
-            "entries": ["You reach into the mind of one creature you can see within range. The target must make a Wisdom saving throw, taking {@damage 3d8} psychic damage on a failed save, or half as much damage on a successful one. On a failed save, you also always know the target's location until the spell ends, but only while the two of you are on the same plane of existence. While you have this knowledge, the target can't become hidden from you, and if it's {@condition invisible}, it gains no benefit from that condition against you."],
+            "entries": ["Entras en la mente de una criatura que puedas ver y se encuentre dentro del alcance. El objetivo deberá hacer una tirada de salvación de Sabiduría, sufriendo {@damage 3d8} de daño de psíquico si la falla o la mitad de ese daño si la supera. Además, si falla la tirada de salvación, conocerás en todo momento la ubicación del objetivo hasta que el conjuro finalice, pero solo mientras los dos estéis en el mismo plano de existencia. Mientras tengas este conocimiento, la criatura no podrá ocultarse de ti y, si es {@condition invisible|PHB-ES}, no se beneficiará de dicha condición contra ti."],
             "entriesHigherLevel": [{
                     "type": "entries",
                     "name": "At Higher Levels",
-                    "entries": ["When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@scaledamage 3d8|2-9|1d8} for each slot level above 2nd."]
+                    "entries": ["A niveles superiores. Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 3 o más, el daño aumenta en {@scaledamage 3d8|2-9|1d8} por cada nivel por encima de 2 que tenga el espacio empleado."]
                 }
             ],
             "damageInflict": ["psychic"],
@@ -93316,7 +93433,7 @@
             }
         }, 
 		{
-            "name": "Ceremony",
+            "name": "Ceremonia",
             "source": "XGE-ES",
             "data": {}
         }, 
@@ -93346,17 +93463,17 @@
             }
         }, 
 		{
-            "name": "Control Flames",
+            "name": "Controlar llamas",
             "source": "XGE-ES",
             "data": {}
         }, 
 		{
-            "name": "Control Winds",
+            "name": "Controlar vientos",
             "source": "XGE-ES",
             "data": {}
         }, 
 		{
-            "name": "Create Bonfire",
+            "name": "Crear hoguera",
             "source": "XGE-ES",
             "data": {
                 "Save": "Dexterity",
@@ -93369,17 +93486,17 @@
             }
         }, 
 		{
-            "name": "Create Homunculus",
+            "name": "Crear homúnculo",
             "source": "XGE-ES",
             "data": {}
         }, 
 		{
-            "name": "Crown of Stars",
+            "name": "Corona de estrellas",
             "source": "XGE-ES",
             "data": {
                 "Damage": "4d12",
-                "Damage Type": "Radiant",
-                "Target": "One creature or object within 120 feet",
+                "Damage Type": "Radiante",
+                "Target": "Una criatura u objeto que esté a 120 pies o menos",
                 "Spell Attack": "Ranged"
             },
             "shapedData": {
@@ -93397,7 +93514,7 @@
             "data": {
                 "Save": "Constitution",
                 "Damage": "4d10",
-                "Damage Type": "Radiant",
+                "Damage Type": "Radiante",
                 "Target": "Cada criatura en un cilindro de 30 de radio y 40 pies de altura",
                 "Save Success": "Mitad del daño"
             },
@@ -93537,7 +93654,7 @@
             }
         }, 
 		{
-            "name": "Frostbite",
+            "name": "Congelar",
             "source": "XGE-ES",
             "data": {
                 "Save": "Constitution",
@@ -93587,14 +93704,14 @@
             }
         }, 
 		{
-            "name": "Ice Knife",
+            "name": "Cuchillo de hielo",
             "source": "XGE-ES",
             "data": {
                 "Damage": "1d10",
-                "Damage Type": "Piercing",
+                "Damage Type": "Perforante",
                 "Spell Attack": "Ranged",
                 "Save": "Dexterity",
-                "Target": "Each creature within 5 feet of the point where the ice exploded",
+                "Target": "Todas las criaturas situadas a 5 pies o menos del punto donde el fragmento de hilo explota",
                 "Secondary Damage": "2d6",
                 "Secondary Damage Type": "Cold",
                 "Secondary Higher Spell Slot Die": "d6",
@@ -93728,7 +93845,7 @@
             "data": {
                 "Save": "Wisdom",
                 "Damage": "8d8",
-                "Damage Type": "Psychic",
+                "Damage Type": "Psíquico",
                 "Save Success": "Mitad del daño"
             },
             "shapedData": {
@@ -93800,7 +93917,7 @@
             "data": {
                 "Save": "Intelligence",
                 "Damage": "5d10",
-                "Damage Type": "Psychic",
+                "Damage Type": "Psíquico",
                 "Target": "Una criatura que puedas ver y se encuentre dentro del alcance",
                 "Save Success": "Spell ends",
                 "Secondary Damage": "10d10",
@@ -93817,12 +93934,12 @@
             "data": {}
         }, 
 		{
-            "name": "Mind Spike",
+            "name": "Clavo mental",
             "source": "XGE-ES",
             "data": {
                 "Save": "Wisdom",
                 "Damage": "3d8",
-                "Damage Type": "Psychic",
+                "Damage Type": "Psíquico",
                 "Target": "Una criatura que puedas ver y se encuentre dentro del alcance",
                 "Save Success": "Mitad del daño",
                 "Higher Spell Slot Die": "d8",
@@ -93883,7 +94000,7 @@
             "data": {
                 "Save": "Intelligence",
                 "Damage": "14d6",
-                "Damage Type": "Psychic",
+                "Damage Type": "Psíquico",
                 "Target": "Up to ten creatures of your choice that you can see within range",
                 "Save Success": "Half damage and not stunned"
             },
@@ -93912,7 +94029,7 @@
             "source": "XGE-ES",
             "data": {
                 "Damage": "2d8",
-                "Damage Type": "Psychic",
+                "Damage Type": "Psíquico",
                 "Higher Spell Slot Die": "d8",
                 "Higher Spell Slot Dice": "0.49"
             },
@@ -93942,7 +94059,7 @@
             "data": {
                 "Save": "Constitution",
                 "Damage": "4d10",
-                "Damage Type": "Radiant",
+                "Damage Type": "Radiante",
                 "Target": "A creature that moves into the spell's area for the first time on a turn or starts its turn there"
             },
             "shapedData": {
@@ -94041,7 +94158,7 @@
             "data": {
                 "Save": "Intelligence",
                 "Damage": "8d6",
-                "Damage Type": "Psychic",
+                "Damage Type": "Psíquico",
                 "Target": "Each creature within a 20-foot-radius sphere centered on a point within range",
                 "Save Success": "Mitad del daño"
             },
@@ -94162,7 +94279,7 @@
             "data": {
                 "Save": "Constitution",
                 "Damage": "4d8",
-                "Damage Type": "Radiant",
+                "Damage Type": "Radiante",
                 "Higher Spell Slot Die": "d8",
                 "Higher Spell Slot Dice": "1",
                 "Target": "Each creature in the wall's area",
@@ -94217,7 +94334,7 @@
             "data": {
                 "Save": "Constitution",
                 "Damage": "1d6",
-                "Damage Type": "Radiant",
+                "Damage Type": "Radiante",
                 "data-Cantrip Scaling": "dice",
                 "Target": "Each creature of your choice that you can see within range"
             },
