@@ -35731,6 +35731,91 @@
 			}
         },
 		{
+			"name": "Lobo terrible",
+			"source": "MM-ES",
+			"page": 321,
+			"srd": true,
+			"size": "L",
+			"type": {
+                "type": "beast",
+                "tags": ["bestia"]
+            },
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"armadura natural"
+					]
+				}
+			],
+			"hp": {
+				"average": 37,
+				"formula": "5d10 + 10"
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 17,
+			"dex": 15,
+			"con": 15,
+			"int": 3,
+			"wis": 12,
+			"cha": 7,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+4"
+			},
+			"passive": 13,
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Oído y Olfato Agudos",
+					"entries": [
+						"El lobo tiene ventaja en las pruebas de Sabiduría ({@skill Perception|Percepción}) que dependan del oído o del olfato."
+					]
+				},
+				{
+					"name": "Atacar en Manada",
+					"entries": [
+						"El lobo posee ventaja en las tiradas de ataque contra criaturas que estén a 5 pies o menos de, al menos, un aliado del lobo que no esté {@condition incapacitado|PHB-ES}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Mordisco",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) piercing damage. Si el objetivo es una criatura, deberá superar una tirada de salvación de Fuerza {@dc 13} o será {@condition derribado|PHB-ES|derribada}."
+					]
+				}
+			],
+			"environment": [
+				"bosques",
+				"colinas"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Dire%20Wolf.png",
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/dire-wolf.mp3"
+			},
+			"traitTags": [
+				"Sentidos agudos",
+				"Atacar en Manada"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
             "name": "Doppelganger",
             "source": "MM-ES",
             "page": 82,
@@ -36382,6 +36467,149 @@
 				]
 			}
         },
+		{
+			"name": "Grifo",
+			"source": "MM-ES",
+			"page": 174,
+			"srd": true,
+			"size": "L",
+			"type": {
+                "type": "monstrosity",
+                "tags": ["monstruosidad"]
+            },
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 59,
+				"formula": "7d10 + 21"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 80
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 16,
+			"int": 2,
+			"wis": 13,
+			"cha": 8,
+			"skill": {
+				"perception": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 15,
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Vista Aguda",
+					"entries": [
+						"El grifo tiene ventaja en las pruebas de Sabiduría ({@skill Perception|Percepción}) que dependan de la vista."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Ataque múltiple",
+					"entries": [
+						"El grifo realiza dos ataques: uno con su pico y uno con sus garras. "
+					]
+				},
+				{
+					"name": "Pico",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Garras",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+					]
+				}
+			],
+			"environment": [
+				"montañas",
+				"praderas",
+				"colinas",
+				"costas",
+				"zonas polares"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Griffon.png",
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/griffon.mp3"
+			},
+			"traitTags": [
+				"Sentidos agudos"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Ataque múltiple"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Los grifos son feroces aves carnívoras con los musculosos cuerpos de un león y las cabezas, patas delanteras y alas de un águila. Cuando atacan, son ágiles y letales como águilas, pero luchan con el poder y la gracilidad de un león.",
+									{
+										"name": "Devoradores de caballos",
+										"type": "entries",
+										"entries": [
+											"Los grifos cazan en pequeñas bandadas, volando alto sobre llanuras y bosques cerca de sus nidos en acantilados rocosos. El ganado, especialmente los caballos, es la presa que más les gusta, aunque cazan y matan hipogrifos también. Cuando detectan caballos, emiten un chirrido que alerta a sus compañeros de manada, que descienden rápidamente hacia su presa.",
+											"Aquellos que crían o montan caballos temen el perforante grito de los grifos y se preparan para la sangrienta batalla que le sigue. Los grifos ignoran a los jinetes si pueden, y un jinete que abandona su montura o un granjero que libera uno o dos caballos puede escapar sin que los grifos le dañen. Sin embargo, los jinetes que tratan de defender sus caballos sufrirán toda su furia."
+										]
+									},
+									{
+										"name": "Habitantes del cielo",
+										"type": "entries",
+										"entries": [
+											"Los grifos ubican sus nidos, hechos de palos, hojas y huesos de víctimas, en los puntos más altos de los acantilados. Una vez establecen su territorio, se quedan allí hasta que la comida escasea.",
+											"Son agresivos y territoriales, y mantendrán combates voladores para defender sus nidos, arrancando y desgarrando las alas de los intrusos voladores, que caerán a tierra en barrena. A aquellas criaturas que trepan hasta el nido de un grifo se las agarra y devora o se las derriba de la pared montañosa, dejándolas caer hacia su muerte."
+										]
+									},
+									{
+										"name": "Monturas entrenadas",
+										"type": "entries",
+										"entries": [
+											"Los grifos que han sido criados desde que son polluelos pueden adiestrarse para que sirvan de montura. Sin embargo, dichos entrenamientos consumen mucho tiempo, mucho dinero (la mayoría en la comida que el grifo necesita) y son peligrosos. Los domadores expertos que conocen la legendaria ferocidad de los grifos son normalmente los únicos capaces de cuidar a estas criaturas de una manera segura.",
+											"Una vez entrenados, los grifos son monturas feroces y leales. Se unen a un solo amo toda su vida y luchan hasta la muerte para protegerlo. La montura sigue manteniendo su apetito por la carne de caballo, y un jinete sabio se asegurará de que su grifo esté saciado cuando viaja por lugares civilizados."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Griffon.jpg"
+						}
+					}
+				]
+			}
+		},
 		{
             "name": "Hobgoblin",
             "source": "MM-ES",
@@ -37158,6 +37386,450 @@
 				]
 			}
         },
+		{
+			"name": "Pegaso",
+			"source": "MM-ES",
+			"page": 250,
+			"srd": true,
+			"size": "L",
+			"type": "celestial",
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 59,
+				"formula": "7d10 + 21"
+			},
+			"speed": {
+				"walk": 60,
+				"fly": 90
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 16,
+			"int": 10,
+			"wis": 15,
+			"cha": 13,
+			"save": {
+				"dex": "+4",
+				"wis": "+4",
+				"cha": "+3"
+			},
+			"skill": {
+				"perception": "+6"
+			},
+			"passive": 16,
+			"languages": [
+				"entiende Celestial",
+				"Común",
+				"Elfo",
+				"y Silvano, pero no puede hablar"
+			],
+			"cr": "2",
+			"action": [
+				{
+					"name": "Cascos",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage."
+					]
+				}
+			],
+			"environment": [
+				"praderas",
+				"bosques",
+				"colinas"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Pegasus.png",
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/pegasus.mp3"
+			},
+			"languageTags": [
+				"C",
+				"CE",
+				"CS",
+				"E",
+				"S"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Contemplar a los alados caballos blancos conocidos como pegasos surcar el cielo es una visión majestuosa. Solo se detienen en tierra firma unos instantes, lo imprescindible para beber de arroyos de montaña y lagos cristalinos. Cualquier ruido o señal de otra criatura les sobresalta, lo que provoca que emprendan el vuelo de nuevo y se pierdan entre las nubes.",
+									{
+										"name": "Monturas nobles",
+										"type": "entries",
+										"entries": [
+											"Los pegasos son monturas muy valoradas, pues son ágiles y se puede confiar en ellos. Son más veloces y menos temperamentales que los grifos, los hipogrifos y los guivernos. No obstante, estas criaturas tímidas y salvajes son tan inteligentes como un humanoide, por lo que no se las puede someter y domesticar de la forma tradicional. Los pegasos deben ser persuadidos para que acepten servir como montura de una criatura, que además debe ser de alineamiento bueno. Sin embargo, cuando forjan un pacto con un nuevo compañero, establecen un vínculo de por vida."
+										]
+									},
+									{
+										"name": "Nacidos en los planos",
+										"type": "entries",
+										"entries": [
+											"Los pegasos pueden trazar sus orígenes hasta la Floresta Olímpica de Arbórea, plano cuyos cielos surcaban. Allí eras las fieles monturas de los Seldarine, el panteón de los dioses elfos. Se sabe de casos en los que estas deidades han enviado pegasos al Plano Material para ayudar a quienes lo necesitan."
+										]
+									},
+									{
+										"name": "Nidos de pegasos",
+										"type": "entries",
+										"entries": [
+											"Los pegasos comparten sus vidas con una sola pareja, construyen sus nidos en lugares inaccesibles y paren a sus crías."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Pegasus.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Peryton",
+			"source": "MM-ES",
+			"page": 251,
+			"size": "M",
+			"type": {
+                "type": "monstrosity",
+                "tags": ["monstruosidad"]
+            },
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"armadura natural"
+					]
+				}
+			],
+			"hp": {
+				"average": 33,
+				"formula": "6d8 + 6"
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 60
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 13,
+			"int": 9,
+			"wis": 12,
+			"cha": 10,
+			"skill": {
+				"perception": "+5"
+			},
+			"passive": 15,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "de ataques no mágicos",
+					"cond": true
+				}
+			],
+			"languages": [
+				" entiende Común y Elfo, pero no puede hablar"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Ataque en Picado",
+					"entries": [
+						"Si el peryton está volando, cae en picado al menos 30 pies directamente hacia un objetivo y después consigue impactarle con un ataque con arma cuerpo a cuerpo, este ataque inflige 9 ({@dice 2d8}) de daño adicional al objetivo."
+					]
+				},
+				{
+					"name": "Pasar Volando",
+					"entries": [
+						"El peryton no provoca ataques de oportunidad cuando vuela para moverse fuera del alcance de un enemigo."
+					]
+				},
+				{
+					"name": "Vista y Olfato Agudos",
+					"entries": [
+						"El peryton tiene ventaja en las pruebas de Sabiduría ({@skill Perception|Percepción}) que dependan de la vista o del olfato."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Ataque múltiple",
+					"entries": [
+						"El peryton realiza un ataque de cornada y otro de garras."
+					]
+				},
+				{
+					"name": "Cornada",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Garras",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 2d4 + 3}) piercing damage."
+					]
+				}
+			],
+			"environment": [
+				"montañas",
+				"colinas"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Peryton.png",
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/peryton.mp3"
+			},
+			"traitTags": [
+				"Pasar Volando",
+				"Sentidos agudos"
+			],
+			"actionTags": [
+				"Ataque múltiple"
+			],
+			"languageTags": [
+				"C",
+				"CS",
+				"E"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Aunque este monstruoso carnívoro es capaz de alimentarse de cualquier criatura, su plato preferido son los humanoides, en especial elfos, semielfos y humanos. Cuando mata a un humanoide, el peryton le arranca el corazón y se lo lleva a su nido para devorarlo allí.",
+									"Los perytons son criaturas extrañas, que combinan el cuerpo y las alas de un ave de presa con la cabeza de un venado. No obstante, el más sorprendente de sus rasgos es su sombra, que parece la de un humanoide en vez de la que su cuerpo proyectaría normalmente. Los sabios postulan que los primeros perytons eran humanos que fueron transformados por una terrible maldición o experimento mágico. Sin embargo, los bardos cuentan un relato distinto. Según ellos, la infidelidad de un hombre arrastró a su mujer, despechada, a arrancar el corazón a su rival más joven y consumirlo en un ritual, cuyo objeto era recuperar para siempre el amor de su marido. El ritual funcionó hasta que su villanía fue descubierta. Fue ahorcada por sus crímenes, pero la magia residual de su horroroso ritual transformó a las aves carroñeras que se alimentaron de su cadáver en los primeros perytons.",
+									{
+										"name": "Hambre antinatural",
+										"type": "entries",
+										"entries": [
+											"Para reproducirse, los perytons necesitan el corazón todavía fresco de un humanoide recién asesinado. El órgano debe ser consumido por una peryton hembra, que entonces podrá engendrar descendencia. Cuando una de estas criaturas devora un corazón, su sombra cambia brevemente para reflejar la monstruosidad de su verdadera forma.",
+											"Los perytons se muestran obsesivos e incansables cuando se enfrentan humanoides, de manera que luchan hasta que ellos mismos o su presa han fallecido. Si, de alguna forma, se logra expulsar a un peryton, este seguirá a su presa desde lejos, esperando una nueva oportunidad para atacar. "
+										]
+									},
+									{
+										"name": "Perdición de las montañas",
+										"type": "entries",
+										"entries": [
+											"Los perytons anidan en las crestas de las montañas y cuevas a gran altitud. Cazan a las criaturas que viven o vagan por los valles cercanos. Quienes viajan por solitarias carreteras de montaña aprenden a no quitar ojo al cielo. Como las armas normales son poco efectivas contra estos monstruos, los habitantes de las montañas procuran evitar enfrentarse a estas bestias.",
+											"Las poblaciones bien asentadas son muy atractivas para los perytons, ya que representan una fuente de alimento que se renueva constantemente. Así, es habitual que los concejos de los pueblos y los nobles locales contraten a aventureros para eliminar los nidos de perytons."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Peryton.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Rinoceronte",
+			"source": "MM-ES",
+			"page": 336,
+			"srd": true,
+			"size": "L",
+			"type": {
+                "type": "beast",
+                "tags": ["bestia"]
+            },
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 11,
+					"from": [
+						"armadura natural"
+					]
+				}
+			],
+			"hp": {
+				"average": 45,
+				"formula": "6d10 + 12"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 21,
+			"dex": 8,
+			"con": 15,
+			"int": 2,
+			"wis": 12,
+			"cha": 6,
+			"passive": 11,
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Carga",
+					"entries": [
+						"Si el rinoceronte se mueve al menos 20 pies en línea recta hacia un objetivo y después le impacta con su ataque de cornada durante el mismo turno, el objetivo recibe 9 ({@damage 2d8}) de daño contundente adicional. Si el objetivo es una criatura, deberá superar una tirada de salvación de Fuerza {@dc 15} o será {@condition derribado|PHB-ES|derribada}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Cornada",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) bludgeoning damage."
+					]
+				}
+			],
+			"environment": [
+				"praderas"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Rhinoceros.png",
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/rhinoceros.mp3"
+			},
+			"traitTags": [
+				"Carga"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Tigre dientes de sable",
+			"source": "MM-ES",
+			"page": 336,
+			"srd": true,
+			"size": "L",
+			"type": {
+                "type": "beast",
+                "tags": ["bestia"]
+            },
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 52,
+				"formula": "7d10 + 14"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 15,
+			"int": 3,
+			"wis": 12,
+			"cha": 8,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+6"
+			},
+			"passive": 13,
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Olfato Agudo",
+					"entries": [
+						"El tigre tiene ventaja en las pruebas de Sabiduría ({@skill Perception|Percepción}) que dependan del olfato."
+					]
+				},
+				{
+					"name": "Abalanzarse",
+					"entries": [
+						"Si el tigre se mueve al menos 20 pies en línea recta hacia una criatura y después la impacta con su ataque de garra durante el mismo turno, el objetivo deberá superar una tirada de salvación de Fuerza {@dc 14} o será {@condition derribado|PHB-ES}. Si el objetivo está {@condition derribado|PHB-ES}, el tigre puede usar una acción adicional para hacer un ataque de mordisco contra él."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Mordisco",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d10 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Garra",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage."
+					]
+				}
+			],
+			"environment": [
+				"montañas",
+				"zonas polares"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Saber-Toothed%20Tiger.png",
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/saber-toothed-tiger.mp3"
+			},
+			"traitTags": [
+				"Sentidos agudos",
+				"Abalanzarse"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
 		{
             "name": "Esqueleto",
             "source": "MM-ES",
@@ -85373,7 +86045,7 @@
             }
         }, 
 		{
-            "name": "Aganazzar's Scorcher",
+            "name": "Horno de Aganazzar",
             "source": "XGE-ES",
             "page": 150,
             "level": 2,
@@ -85393,17 +86065,17 @@
             "components": {
                 "v": true,
                 "s": true,
-                "m": "a red dragon's scale"
+                "m": "una escama de dragón rojo"
             },
             "duration": [{
                     "type": "instant"
                 }
             ],
-            "entries": ["A line of roaring flame 30 feet long and 5 feet wide emanates from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes {@damage 3d8} fire damage on a failed save, or half as much damage on a successful one."],
+            "entries": ["Una línea de rugientes llamas de 30 pies de largo y 5 pies de ancho surge de ti en una dirección de tu elección. Todas las criaturas que se encuentren en ella deberán hacer una tirada de salvación de Destreza. Sufrirán {@damage 3d8} de daño de fuego si la fallan o la mitad de ese daño si la superan."],
             "entriesHigherLevel": [{
                     "type": "entries",
                     "name": "At Higher Levels",
-                    "entries": ["When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@scaledamage 3d8|2-9|1d8} for each slot level above 2nd."]
+                    "entries": ["Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 3 o más, el daño aumenta en {@scaledamage 3d8|2-9|1d8} por cada nivel por encima de 2 que tenga el espacio que hayas empleado."]
                 }
             ],
             "damageInflict": ["fire"],
@@ -85467,7 +86139,7 @@
             }
         }, 
 		{
-            "name": "Bones of the Earth",
+            "name": "Huesos de la tierra",
             "source": "XGE-ES",
             "page": 150,
             "level": 6,
@@ -85492,11 +86164,15 @@
                     "type": "instant"
                 }
             ],
-            "entries": ["You cause up to six pillars of stone to burst from places on the ground that you can see within range. Each pillar is a cylinder that has a diameter of 5 feet and a height of up to 30 feet. The ground where a pillar appears must be wide enough for its diameter, and you can target the ground under a creature if that creature is Medium or smaller. Each pillar has AC 5 and 30 hit points. When reduced to 0 hit points, a pillar crumbles into rubble, which creates an area of difficult terrain with a 10-foot radius that lasts until the rubble is cleared. Each 5-foot-diameter portion of the area requires at least 1 minute to clear by hand.", "If a pillar is created under a creature, that creature must succeed on a Dexterity saving throw or be lifted by the pillar. A creature can choose to fail the save.", "If a pillar is prevented from reaching its full height because of a ceiling or other obstacle, a creature on the pillar takes {@damage 6d6} bludgeoning damage and is {@condition restrained}, pinched between the pillar and the obstacle. The {@condition restrained} creature can use an action to make a Strength or Dexterity check (the creature's choice) against the spell's save DC. On a success, the creature is no longer {@condition restrained} and must either move off the pillar or fall off it."],
+            "entries": [
+				"Creas hasta seis pilares de piedra que emergen desde la tierra en puntos que puedas ver y se encuentren dentro del alcance. Cada uno de ellos es un cilindro que tiene un diámetro de 5 pies y una altura de hasta 30 pies. El terreno donde aparece un pilar debe ser lo suficientemente ancho para su diámetro y, además, puedes elegir como objetivo al terreno debajo de una criatura si esta es Mediana o más pequeña. Cada cilindro tiene CA 5 y 30 puntos de golpe. Cuando sus puntos de golpe se ven reducidos a 0, el pilar se desmenuza en escombros, creando una zona de terreno difícil con un radio de 10 pies que se mantiene así hasta que los restos sean apartados. Es necesario al menos 1 minuto para limpiar a mano una porción de 5 pies cuadrados de la zona.", 
+				"Si un pilar se crea debajo de una criatura, esta deberá tener éxito en una tirada de salvación de Destreza o será elevada por el cilindro de piedra. Una criatura podrá elegir fallar dicha tirada si así lo quiere.", 
+				"Si un pilar no puede alcanzar su altura máxima debido al techo u otro obstáculo, cualquier criatura que se encuentre sobre él recibirá {@damage 6d6} de daño contundente y será {@condition apresado|PHB-ES|apresada} entre el cilindro y el obstáculo. La criatura podrá utilizar una acción para hacer una prueba de Fuerza o Destreza (a su elección) contra la CD de salvación del conjuro. Si tiene éxito, ya no estará {@condition apresado|PHB-ES|apresada} y deberá moverse fuera del pilar o caerse de él."
+			],
             "entriesHigherLevel": [{
                     "type": "entries",
                     "name": "At Higher Levels",
-                    "entries": ["When you cast this spell using a spell slot of 7th level or higher, you can create two additional pillars for each slot level above 6th."]
+                    "entries": ["Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 7 o más, puedes crear dos pilares adicionales por cada nivel por encima de 6 que tenga el espacio que hayas empleado."]
                 }
             ],
             "damageInflict": ["bludgeoning"],
@@ -85751,13 +86427,9 @@
             }
         }, 
 		{
-            "name": "Chaos Bolt",
+            "name": "Descarga caótica",
             "source": "XGE-ES",
             "page": 151,
-            "otherSources": [{
-                    "source": "GGR"
-                }
-            ],
             "level": 1,
             "school": "V",
             "time": [{
@@ -85780,57 +86452,62 @@
                     "type": "instant"
                 }
             ],
-            "entries": ["You hurl an undulating, warbling mass of chaotic energy at one creature in range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 2d8 + 1d6} damage. Choose one of the {@dice d8}s. The number rolled on that die determines the attack's damage type, as shown below.", {
+            "entries": [
+				"Lanzas una masa trémula y ondulante de energía caótica contra una criatura situada dentro del alcance. Haz un ataque de conjuro a distancia contra el objetivo. Si impactas, este sufre {@damage 2d8 + 1d6} de daño. Elige uno de los {@dice d8}. El número de ese dado determina el tipo de daño del ataque, tal y como se muestra a continuación.", 
+				{
                     "type": "table",
-                    "caption": "Chaos Bolt",
-                    "colLabels": ["{@dice d8}", "Damage Type"],
+                    "caption": "Descarga caótica",
+                    "colLabels": ["{@dice d8}", "Tipo de daño"],
                     "colStyles": ["col-1 text-center", "col-11"],
                     "rows": [[{
                                 "type": "cell",
                                 "roll": {
                                     "exact": 1
                                 }
-                            }, "Acid"], [{
+                            }, "Ácido"], [{
                                 "type": "cell",
                                 "roll": {
                                     "exact": 2
                                 }
-                            }, "Cold"], [{
+                            }, "Frío"], [{
                                 "type": "cell",
                                 "roll": {
                                     "exact": 3
                                 }
-                            }, "Fire"], [{
+                            }, "Fuego"], [{
                                 "type": "cell",
                                 "roll": {
                                     "exact": 4
                                 }
-                            }, "Force"], [{
+                            }, "Fuerza"], [{
                                 "type": "cell",
                                 "roll": {
                                     "exact": 5
                                 }
-                            }, "Lightning"], [{
+                            }, "Psíquico"], [{
                                 "type": "cell",
                                 "roll": {
                                     "exact": 6
                                 }
-                            }, "Poison"], [{
+                            }, "Relámpago"], [{
                                 "type": "cell",
                                 "roll": {
                                     "exact": 7
                                 }
-                            }, "Psychic"], [{
+                            }, "Trueno"], [{
                                 "type": "cell",
                                 "roll": {
                                     "exact": 8
                                 }
-                            }, "Thunder"]]
-                }, "If you roll the same number on both {@dice d8}s, the chaotic energy leaps from the target to a different creature of your choice within 30 feet of it. Make a new attack roll against the new target, and make a new damage roll, which could cause the chaotic energy to leap again.", "A creature can be targeted only once by each casting of this spell."],
+                            }, "Veneno"]]
+                }, 
+				"Si sacas el mismo número en ambos {@dice d8}, la energía caótica salta desde el objetivo hasta una criatura diferente de tu elección, que se encuentre a 30 pies o menos del objetivo. Realiza una nueva tirada de ataque contra el nuevo objetivo y haz una nueva tirada de daño, que podría causar que la energía caótica saltara otra vez.", 
+				"Una criatura solo puede ser elegida como objetivo una vez por cada lanzamiento de este conjuro."
+			],
             "entriesHigherLevel": [{
                     "type": "entries",
                     "name": "At Higher Levels",
-                    "entries": ["When you cast this spell using a spell slot of 2nd level or higher, each target takes {@scaledamage 2d8 + 1d6|1-9|1d6} extra damage of the type rolled for each slot level above 1st."]
+                    "entries": ["Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 2 o más, el daño aumenta en {@scaledamage 2d8 + 1d6|1-9|1d6} por cada nivel por encima de 1 que tenga el espacio que hayas empleado."]
                 }
             ],
             "damageInflict": ["acid", "cold", "fire", "force", "lightning", "poison", "psychic", "thunder"],
@@ -85842,15 +86519,10 @@
                         "source": "PHB-ES"
                     }
                 ]
-            },
-            "backgrounds": [{
-                    "name": "Izzet Engineer",
-                    "source": "GGR"
-                }
-            ]
+            }
         }, 
 		{
-            "name": "Charm Monster",
+            "name": "Hechizar monstruo",
             "source": "XGE-ES",
             "page": 151,
             "level": 4,
@@ -85879,11 +86551,11 @@
                     }
                 }
             ],
-            "entries": ["You attempt to charm a creature you can see within range. It must make a Wisdom saving throw, and it does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is {@condition charmed} by you until the spell ends or until you or your companions do anything harmful to it. The {@condition charmed} creature is friendly to you. When the spell ends, the creature knows it was {@condition charmed} by you."],
+            "entries": ["Intentas hechizar a una criatura que puedas ver y se encuentre dentro del alcance. El objetivo deberá hacer una tirada de salvación, con ventaja si está luchando contra ti o tus compañeros. Si la falla, quedará {@condition hechizado|PHB-ES} por ti hasta que termine la duración del conjuro o tú mismo o uno de tus compañeros le dañéis de alguna forma. La criatura {@condition hechizado|PHB-ES|hechizada} es amistosa hacia ti. Cuando el conjuro termine, sabrá que la {@condition hechizado|PHB-ES|hechizaste}."],
             "entriesHigherLevel": [{
                     "type": "entries",
                     "name": "At Higher Levels",
-                    "entries": ["When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th. The creatures must be within 30 feet of each other when you target them."]
+                    "entries": ["Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 5 o más, puedes elegir como objetivo a una criatura adicional por cada nivel por encima de 4 que tenga el espacio que hayas empleado. En el momento de elegirlas como objetivo, cada criatura debe estar a 30 pies o menos de todas las demás."]
                 }
             ],
             "conditionInflict": ["charmed"],
@@ -86206,7 +86878,7 @@
             }
         }, 
 		{
-            "name": "Danse Macabre",
+            "name": "Danza macabra",
             "source": "XGE-ES",
             "page": 153,
             "level": 5,
@@ -86236,11 +86908,15 @@
                     "concentration": true
                 }
             ],
-            "entries": ["Threads of dark power leap from your fingers to pierce up to five Small or Medium corpses you can see within range. Each corpse immediately stands up and becomes undead. You decide whether it is a {@creature zombie} or a {@creature skeleton} (the statistics for {@creature zombie||zombies} and {@creature skeleton||skeletons} are in the Monster Manual), and it gains a bonus to its attack and damage rolls equal to your spellcasting ability modifier.", "You can use a bonus action to mentally command the creatures you make with this spell, issuing the same command to all of them. To receive the command, a creature must be within 60 feet of you. You decide what action the creatures will take and where they will move during their next turn, or you can issue a general command, such as to guard a chamber or passageway against your foes. If you issue no commands, the creatures do nothing except defend themselves against hostile creatures. Once given an order, the creatures continue to follow it until their task is complete.", "The creatures are under your control until the spell ends, after which they become inanimate once more."],
+            "entries": [
+				"Hilos de poder oscuro saltan de tus dedos para perforar hasta cinco cadáveres Pequeños o Medianos que puedas ver y se encuentren dentro del alcance. Cada uno se levanta inmediatamente y se convierte en un muerto viviente. Tú decides si se trata de un {@creature zombi|MM-ES} o un {@creature esqueleto|MM-ES} (los perfiles de ambas criaturas están en el {@italic Monster Manual}), que gana un bonificador a las tiradas de ataque y daño igual a tu modificador por aptitud mágica.", 
+				"Puedes usar una acción adicional para ordenar mentalmente a los muertos vivientes que creas con este conjuro, emitiendo el mismo mandato para todos ellos. Para poder recibir la orden, una de estas criaturas debe estar a 60 pies de ti. Tú decides qué acción realizarán y dónde se moverán durante su próximo turno. También puedes dar una instrucción general, como vigilar una cámara o pasillo en concreto contra tus enemigos. Si no les das ninguna orden, los muertos vivientes no harán nada excepto defenderse contra criaturas hostiles. Cuando uno de ellos recibe una orden, la sigue hasta cumplirla.", 
+				"Las criaturas están bajo tu control hasta que el conjuro termine. Después vuelven a su estado inanimado una vez más."
+			],
             "entriesHigherLevel": [{
                     "type": "entries",
                     "name": "At Higher Levels",
-                    "entries": ["When you cast this spell using a spell slot of 6th level or higher, you animate up to two additional corpses for each slot level above 5th."]
+                    "entries": ["Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 6 o más, puedes animar dos cadáveres adicionales por cada nivel por encima de 5 que tenga el espacio que hayas empleado."]
                 }
             ],
             "miscTags": ["SGT", "SMN"],
@@ -86450,7 +87126,7 @@
             }
         }, 
 		{
-            "name": "Dust Devil",
+            "name": "Diablo de polvo",
             "source": "XGE-ES",
             "page": 154,
             "level": 2,
@@ -86470,7 +87146,7 @@
             "components": {
                 "v": true,
                 "s": true,
-                "m": "a pinch of dust"
+                "m": "una pizca de polvo"
             },
             "duration": [{
                     "type": "timed",
@@ -86481,11 +87157,15 @@
                     "concentration": true
                 }
             ],
-            "entries": ["Choose an unoccupied 5-foot cube of air that you can see within range. An elemental force that resembles a dust devil appears in the cube and lasts for the spell's duration.", "Any creature that ends its turn within 5 feet of the dust devil must make a Strength saving throw. On a failed save, the creature takes {@damage 1d8} bludgeoning damage and is pushed 10 feet away from the dust devil. On a successful save, the creature takes half as much damage and isn't pushed.", "As a bonus action, you can move the dust devil up to 30 feet in any direction. If the dust devil moves over sand, dust, loose dirt, or light gravel, it sucks up the material and forms a 10-foot-radius cloud of debris around itself that lasts until the start of your next turn. The cloud heavily obscures its area."],
+            "entries": [
+				"Elige un cubo de aire de 5 pies desocupado que puedas ver y se encuentre dentro del alcance. Una fuerza elemental que se asemeja a un torbellino de polvo aparece en el área y persiste hasta el final de la duración del conjuro.", 
+				"Cualquier criatura que acabe su turno situada a 5 pies o menos del diablo de polvo deberá hacer una tirada de salvación de Fuerza. Si falla, la criatura recibirá {@damage 1d8} de daño contundente y será empujada 10 pies en dirección contraria al diablo de polvo. Si la supera, recibirá la mitad del daño y no será empujada.", 
+				"Como acción adicional, puedes mover el diablo de polvo hasta 30 pies en cualquier dirección. Si este se desplaza sobre arena, polvo, tierra suelta o gravilla, absorbe el material y forma una nube de 10 pies de radio alrededor de sí que se mantiene hasta el inicio de tu próximo turno. La nube se considera un área muy oscura."
+			],
             "entriesHigherLevel": [{
                     "type": "entries",
                     "name": "At Higher Levels",
-                    "entries": ["When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@scaledamage 1d8|2-9|1d8} for each slot level above 2nd."]
+                    "entries": ["Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 3 o más, el daño aumenta en {@scaledamage 1d8|2-9|1d8} por cada nivel por encima de 2 que tenga el espacio que hayas empleado."]
                 }
             ],
             "damageInflict": ["bludgeoning"],
@@ -86878,7 +87558,7 @@
             }
         }, 
 		{
-            "name": "Find Greater Steed",
+            "name": "Hallar corcel superior",
             "source": "XGE-ES",
             "page": 156,
             "level": 4,
@@ -86903,7 +87583,13 @@
                     "type": "instant"
                 }
             ],
-            "entries": ["You summon a spirit that assumes the form of a loyal, majestic mount. Appearing in an unoccupied space within range, the spirit takes on a form you choose: a {@creature griffon}, a {@creature pegasus}, a {@creature peryton}, a {@creature dire wolf}, a {@creature rhinoceros}, or a {@creature saber-toothed tiger}. The creature has the statistics provided in the Monster Manual for the chosen form, though it is a celestial, a fey, or a fiend (your choice) instead of its normal creature type. Additionally, if it has an Intelligence score of 5 or lower, its Intelligence becomes 6, and it gains the ability to understand one language of your choice that you speak.", "You control the mount in combat. While the mount is within 1 mile of you, you can communicate with it telepathically. While mounted on it, you can make any spell you cast that targets only you also target the mount.", "The mount disappears temporarily when it drops to 0 hit points or when you dismiss it as an action. Casting this spell again re-summons the bonded mount, with all its hit points restored and any conditions removed.", "You can't have more than one mount bonded by this spell or {@spell find steed} at the same time. As an action, you can release a mount from its bond, causing it to disappear permanently.", "Whenever the mount disappears, it leaves behind any objects it was wearing or carrying."],
+            "entries": [
+				"Invocas a un espíritu, que asume la forma de una majestuosa y leal montura. Aparece en un espacio desocupado que se encuentre dentro del alcance. Este adopta el aspecto que elijas de entre los siguientes: un {@creature grifo|MM-ES}, un {@creature pegaso|MM-ES}, un {@creature peryton|MM-ES}, un {@creature lobo terrible|MM-ES}, un {@creature rinoceronte|MM-ES} o un {@creature tigre dientes de sable|MM-ES}. La criatura posee el perfil proporcionado en el Monster Manual para la forma en cuestión, con excepción de que su tipo es celeste, feérico o infernal (a tu elección). Además, si tu corcel tiene Inteligencia 5 o menos, su Inteligencia pasa a ser 6 y podrá entender un idioma que tú hables, el que prefieras.", 
+				"Tú controlas a la montura en combate. Mientras se encuentre a 1 milla o menos de ti, serás capaz de comunicarte con ella telepáticamente. Si estás cabalgando sobre ella, puedes elegir que cualquier conjuro que lances que te afecte solo a ti también tenga efecto sobre tu montura.", 
+				"La montura desaparece temporalmente cuando sus puntos de golpe descienden a 0 o cuando decides desconvocarla usando una acción. Al lanzar este conjuro, se vuelve a convocar la montura vinculada, con todos sus puntos de golpe restaurados y cualquier condición eliminada.", 
+				"No puedes tener más de una montura vinculada mediante este conjuro o {@spell hallar corcel|PHB-ES} al mismo tiempo. Como acción, puedes liberar a la montura de su vínculo haciendo que se marche permanentemente.", 
+				"Cada vez que la montura desaparece, deja atrás cualquier objeto que vistiera o portase."
+			],
             "miscTags": ["PRM", "SMN"],
             "classes": {
                 "fromClassList": [{
@@ -86924,7 +87610,7 @@
 			}
         }, 
 		{
-            "name": "Flame Arrows",
+            "name": "Flechas llameantes",
             "source": "XGE-ES",
             "page": 156,
             "level": 3,
@@ -86953,11 +87639,11 @@
                     "concentration": true
                 }
             ],
-            "entries": ["You touch a quiver containing arrows or bolts. When a target is hit by a ranged weapon attack using a piece of ammunition drawn from the quiver, the target takes an extra {@damage 1d6} fire damage. The spell's magic ends on a piece of ammunition when it hits or misses, and the spell ends when twelve pieces of ammunition have been drawn from the quiver."],
+            "entries": ["Tocas un carcaj con flechas o virotes. Cuando un objetivo es golpeado por un ataque de arma a distancia usando una munición extraída de dicha aljaba, este objetivo recibe {@damage 1d6} de daño de fuego adicional. La magia del conjuro presente en cada proyectil desaparece cuando este impacta o falla un ataque. El conjuro finaliza cuando doce flechas o virotes han sido extraídos del carcaj."],
             "entriesHigherLevel": [{
                     "type": "entries",
                     "name": "At Higher Levels",
-                    "entries": ["When you cast this spell using a spell slot of 4th level or higher, the number of pieces of ammunition you can affect with this spell increases by two for each slot level above 3rd."]
+                    "entries": ["Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 4 o más, el número de municiones que puedes afectar con este conjuro aumenta en dos por cada nivel por encima de 3 que tenga espacio que hayas empleado."]
                 }
             ],
             "damageInflict": ["fire"],
@@ -87045,7 +87731,7 @@
             }
         }, 
 		{
-            "name": "Guardian of Nature",
+            "name": "Guardián de la naturaleza",
             "source": "XGE-ES",
             "page": 157,
             "level": 4,
@@ -87073,20 +87759,30 @@
                     "concentration": true
                 }
             ],
-            "entries": ["A nature spirit answers your call and transforms you into a powerful guardian. The transformation lasts until the spell ends. You choose one of the following forms to assume: Primal Beast or Great Tree.", {
+            "entries": ["Un espíritu de la naturaleza responde a tu llamada y te transforma en un poderoso guardián. La metamorfosis dura hasta que el conjuro termina. Elige una de las siguientes formas para adoptar: Bestia Primordial o Gran Árbol.", {
                     "type": "entries",
-                    "name": "Primal Beast",
-                    "entries": ["Bestial fur covers your body, your facial features become feral, and you gain the following benefits:"]
+                    "name": "Bestia Primordial",
+                    "entries": ["Un pelaje de bestia cubre tu cuerpo, tus rasgos faciales se vuelven salvajes y obtienes los siguientes beneficios:"]
                 }, {
                     "type": "list",
-                    "items": ["Your walking speed increases by 10 feet.", "You gain {@sense darkvision} with a range of 120 feet.", "You make Strength-based attack rolls with advantage.", "Your melee weapon attacks deal an extra {@damage 1d6} force damage on a hit."]
+                    "items": [
+						"Tu velocidad caminando aumenta en 10 pies.", 
+						"Obtienes {@sense darkvision|visión en la oscuridad} con un alcance de 120 pies.", 
+						"Realizas las tiradas de ataque basadas en Fuerza con ventaja.", 
+						"Tus ataques con armas cuerpo a cuerpo infligen {@damage 1d6} de daño de fuerza adicional al impactar."
+					]
                 }, {
                     "type": "entries",
-                    "name": "Great Tree",
-                    "entries": ["Your skin appears barky, leaves sprout from your hair, and you gain the following benefits:"]
+                    "name": "Gran Árbol",
+                    "entries": ["Tu piel se vuelve rugosa, brotan hojas de tu cabello y obtienes los siguientes beneficios:"]
                 }, {
                     "type": "list",
-                    "items": ["You gain 10 temporary hit points.", "You make Constitution saving throws with advantage.", "You make Dexterity- and Wisdom-based attack rolls with advantage.", "While you are on the ground, the ground within 15 feet of you is difficult terrain for your enemies."]
+                    "items": [
+						"Ganas 10 puntos de golpe temporales.", 
+						"Realizas las tiradas de salvación de Constitución con ventaja.", 
+						"Haces las tiradas de ataque basadas en Destreza y Sabiduría con ventaja.", 
+						"Mientras estés sobre el suelo, el terreno a 15 pies de ti es terreno difícil para tus enemigos."
+					]
                 }
             ],
             "damageInflict": ["force"],
@@ -87169,7 +87865,7 @@
             ]
         }, 
 		{
-            "name": "Healing Spirit",
+            "name": "Espíritu sanador",
             "source": "XGE-ES",
             "page": 157,
             "level": 2,
@@ -87199,11 +87895,15 @@
                     "concentration": true
                 }
             ],
-            "entries": ["You call forth a nature spirit to soothe the wounded. The intangible spirit appears in a space that is a 5-foot cube you can see within range. The spirit looks like a transparent beast or fey (your choice).", "Until the spell ends, whenever you or a creature you can see moves into the spirit's space for the first time on a turn or starts its turn there, you can cause the spirit to restore {@dice 1d6} hit points to that creature (no action required). The spirit can't heal constructs or undead. The spirit can heal a number of times equal to 1 + your spellcasting ability modifier (minimum of twice). After healing that number of times, the spirit disappears.", "As a bonus action on your turn, you can move the spirit up to 30 feet to a space you can see."],
+            "entries": [
+				"Invocas un espíritu de la naturaleza para calmar a los heridos. Este ser intangible aparece en un cubo de 5 pies que puedas ver y se encuentre dentro del alcance. El espíritu aparenta ser una bestia transparente o un ser feérico (a tu elección).", 
+				"Hasta que el conjuro termine, siempre que o una criatura que puedas ver se mueva al espacio del espíritu por primera vez en su turno o su turno allí, podrás hacer que este restaure {@dice 1d6} puntos de golpe a dicha criatura (no requiere acción). El espíritu no puede sanar a autómatas o muertos vivientes.", 
+				"Como acción adicional en tu turno, puedes mover el espíritu hasta 30 pies, siempre a un espacio que puedas ver."
+			],
             "entriesHigherLevel": [{
                     "type": "entries",
                     "name": "At Higher Levels",
-                    "entries": ["When you cast this spell using a spell slot of 3rd level or higher, the healing increases by {@scaledice 1d6|2-9|1d6} for each slot level above 2nd."]
+                    "entries": ["Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 3 o más, la curación aumenta en {@scaledice 1d6|2-9|1d6} por cada nivel por encima de 2 que tenga el espacio que hayas empleado."]
                 }
             ],
             "miscTags": ["HL", "SGT"],
@@ -87321,7 +88021,7 @@
             }
         }, 
 		{
-            "name": "Illusory Dragon",
+            "name": "Dragón ilusorio",
             "source": "XGE-ES",
             "page": 157,
             "level": 8,
@@ -87350,7 +88050,12 @@
                     "concentration": true
                 }
             ],
-            "entries": ["By gathering threads of shadow material from the Shadowfell, you create a Huge shadowy dragon in an unoccupied space that you can see within range. The illusion lasts for the spell's duration and occupies its space, as if it were a creature.", "When the illusion appears, any of your enemies that can see it must succeed on a Wisdom saving throw or become {@condition frightened} of it for 1 minute. If a {@condition frightened} creature ends its turn in a location where it doesn't have line of sight to the illusion, it can repeat the saving throw, ending the effect on itself on a success.", "As a bonus action on your turn, you can move the illusion up to 60 feet. At any point during its movement, you can cause it to exhale a blast of energy in a 60-foot cone originating from its space. When you create the dragon, choose a damage type: acid, cold, fire, lightning, necrotic, or poison. Each creature in the cone must make an Intelligence saving throw, taking {@damage 7d6} damage of the chosen damage type on a failed save, or half as much damage on a successful one.", "The illusion is tangible because of the shadow stuff used to create it, but attacks miss it automatically, it succeeds on all saving throws, and it is immune to all damage and conditions. A creature that uses an action to examine the dragon can determine that it is an illusion by succeeding on an Intelligence ({@skill Investigation}) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through it and has advantage on saving throws against its breath."],
+            "entries": [
+				"Al juntar hilos de las sombras que provienen del Shadowfell, creas un dragón sombrío Enorme en un espacio desocupado que puedas ver y que se encuentre dentro del alcance. Se trata de una ilusión que permanece hasta el final de la duración del conjuro y ocupa su espacio, como si fuera una criatura.", 
+				"Cuando el dragón aparece, todos tus enemigos que puedan verlo deberán tener éxito en una tirada de salvación de Sabiduría o estarán asustados por él durante 1 minuto. Si una criatura {@condition asustado|PHB-ES|asustada} termina su turno en un lugar donde no tiene línea de visión hasta la ilusión, podrá repetir la tirada de salvación, dejando de estar {@condition asustado|PHB-ES|asustada} por el dragón si tiene éxito.", 
+				"Como acción adicional en tu turno, puedes mover el dragón hasta 60 pies. En cualquier punto durante su movimiento, puedes hacer que exhale una ráfaga de energía en un cono de 60 pies que se origina en su espacio. Cuando crees la ilusión, elige un tipo de daño: ácido, frío, fuego, necrótico, relámpago o veneno. Todas las criaturas situadas en el cono deberán realizar una tirada de salvación de Destreza, sufriendo {@damage 7d6} del tipo de daño elegido si la fallan, o la mitad de ese daño si la superan.", 
+				"La ilusión es tangible debido a las sombras que se usan para crearla, pero los ataques fallan automáticamente. Además, tiene éxito en todas las tiradas de salvación y es inmune a todos los daños y condiciones. Una criatura que utilice su acción en examinar el dragón puede determinar que es una ilusión si tiene éxito en una prueba de Inteligencia ({@skill Investigation|Investigación}) contra tu CD de salvación de conjuros. Si una criatura logra reconocer la ilusión por lo que realmente es, podrá ver a través del dragón y tendrá ventaja en las tiradas de salvación contra su aliento."
+			],
             "damageInflict": ["acid", "cold", "fire", "lightning", "necrotic", "poison"],
             "conditionInflict": ["frightened"],
             "savingThrow": ["wisdom", "intelligence"],
@@ -87591,7 +88296,7 @@
             }
         }, 
 		{
-            "name": "Investiture of Ice",
+            "name": "Indumentaria de hielo",
             "source": "XGE-ES",
             "page": 159,
             "level": 6,
@@ -87620,9 +88325,14 @@
                     "concentration": true
                 }
             ],
-            "entries": ["Until the spell ends, ice rimes your body, and you gain the following benefits:", {
+            "entries": ["Hasta que el conjuro termine, el hielo cubre tu cuerpo y obtienes los siguientes beneficios:", {
                     "type": "list",
-                    "items": ["You are immune to cold damage and have resistance to fire damage.", "You can move across difficult terrain created by ice or snow without spending extra movement.", "The ground in a 10-foot radius around you is icy and is difficult terrain for creatures other than you. The radius moves with you.", "You can use your action to create a 15-foot cone of freezing wind extending from your outstretched hand in a direction you choose. Each creature in the cone must make a Constitution saving throw. A creature takes {@damage 4d6} cold damage on a failed save, or half as much damage on a successful one. A creature that fails its save against this effect has its speed halved until the start of your next turn."]
+                    "items": [
+						"Eres inmune al daño de frío y tienes resistencia al daño de fuego.", 
+						"Puedes moverte a través del terreno difícil creado por el hielo o la nieve sin gastar movimiento adicional.", 
+						"La zona en un radio de 10 pies a tu alrededor está helada y se considerará terreno difícil para las criaturas que no sean tú. Este radio se mueve contigo.", 
+						"Puedes usar tu acción para crear un cono de 15 pies de viento helado que se extienda desde tu mano extendida, en la dirección que elijas. Cada criatura situada en el área deberá hacer una tirada de salvación de Constitución. Sufrirá {@damage 4d6} de daño de frío si falla la tirada o la mitad de ese daño si la supera. Una criatura que falle su tirada de salvación contra este efecto verá su velocidad reducida a la mitad hasta el comienzo de tu próximo turno."
+					]
                 }
             ],
             "damageResist": ["fire"],
@@ -88190,7 +88900,7 @@
             }
         }, 
 		{
-            "name": "Mighty Fortress",
+            "name": "Fortaleza imponente",
             "source": "XGE-ES",
             "page": 161,
             "level": 8,
@@ -88211,7 +88921,7 @@
                 "v": true,
                 "s": true,
                 "m": {
-                    "text": "a diamond worth at least 500 gp, which the spell consumes",
+                    "text": "un diamante con un valor de, al menos, 500 po, que es consumido como parte del conjuro",
                     "cost": 50000,
                     "consume": true
                 }
@@ -88220,7 +88930,15 @@
                     "type": "instant"
                 }
             ],
-            "entries": ["A fortress of stone erupts from a square area of ground of your choice that you can see within range. The area is 120 feet on each side, and it must not have any buildings or other structures on it. Any creatures in the area are harmlessly lifted up as the fortress rises.", "The fortress has four turrets with square bases, each one 20 feet on a side and 30 feet tall, with one turret on each corner. The turrets are connected to each other by stone walls that are each 80 feet long, creating an enclosed area. Each wall is 1 foot thick and is composed of panels that are 10 feet wide and 20 feet tall. Each panel is contiguous with two other panels or one other panel and a turret. You can place up to four stone doors in the fortress's outer wall.", "A small keep stands inside the enclosed area. The keep has a square base that is 50 feet on each side, and it has three floors with 10-foot-high ceilings. Each of the floors can be divided into as many rooms as you like, provided each room is at least 5 feet on each side. The floors of the keep are connected by stone staircases, its walls are 6 inches thick, and interior rooms can have stone doors or open archways as you choose. The keep is furnished and decorated however you like, and it contains sufficient food to serve a nine-course banquet for up to 100 people each day. Furnishings, food, and other objects created by this spell crumble to dust if removed from the fortress.", "A staff of one hundred invisible servants obeys any command given to them by creatures you designate when you cast the spell. Each servant functions as if created by the unseen servant spell.", "The walls, turrets, and keep are all made of stone that can be damaged. Each 10-foot-by-10-foot section of stone has AC 15 and 30 hit points per inch of thickness. It is immune to poison and psychic damage. Reducing a section of stone to 0 hit points destroys it and might cause connected sections to buckle and collapse at the DM's discretion.", "After 7 days or when you cast this spell somewhere else, the fortress harmlessly crumbles and sinks back into the ground, leaving any creatures that were inside it safely on the ground.", "Casting this spell on the same spot once every 7 days for a year makes the fortress permanent."],
+            "entries": [
+				"Una fortaleza de piedra emerge desde un área de suelo cuadrada de tu elección que puedas ver y se encuentre dentro del alcance. El área tendrá 120 pies de lado y no deberá contener ningún edificio u otra estructura. Cualquier criatura situada en la zona será alzada inofensivamente a medida que el baluarte se eleva.", 
+				"La fortaleza tiene cuatro torres con bases cuadradas, cada una de 20 pies de lado y 30 pies de alto. Estas torres, situadas una en cada esquina, están conectadas entre sí por paredes de piedra de 80 pies de largo cada una, creando una zona cerrada. Cada uno de estos muros tiene un grosor de 1 pie y está compuesto por paneles de 10 pies de ancho y 20 pies de alto. Cada panel es contiguo con otros dos paneles u otro panel y una torre. Puedes colocar hasta cuatro puertas de piedra en la pared exterior de la fortificación.", 
+				"Una torre del homenaje se encuentra dentro del área cerrada. Este torreón tiene una base cuadrada de 50 pies de lado y cuenta con tres pisos cuyos techos tienen 10 pies de altura. Cada una de las plantas se puede dividir en tantas salas como desees, siempre que cada habitación tenga al menos 5 pies en cada lado. Los pisos de la torre del homenaje están conectados por escaleras de piedra, sus paredes miden 6 pulgadas de grosor y las habitaciones interiores pueden tener puertas de piedra o arcos abiertos, según tu gusto. Igualmente, está amueblada y decorada como prefieras y contiene suficiente comida para servir un banquete de nueve platos para hasta 100 personas cada día. Los muebles, los alimentos y otros objetos creados por este conjuro se desmoronan si se retiran de la fortaleza.", 
+				"Una plantilla de cien sirvientes invisibles obedece cualquier orden dada por criaturas que designes cuando lanzas el conjuro. Cada criado funciona como si hubiera sido creado por un conjuro de sirviente invisible.", 
+				"Las paredes, las torres y el torreón están hechos de piedra, que puede ser dañada. Cada sección de piedra de 10 pies por 10 pies tiene CA 15 y 30 puntos de golpe por pulgada de espesor. Las secciones son inmunes al daño psíquico y de veneno. Reducir los puntos de golpe de una sección de piedra a 0 la destruye, y podría, a discreción del DM, hacer que otras secciones conectadas se derrumbaran.", 
+				"Después de 7 días o cuando lances este conjuro en otro lugar, la fortaleza se desmoronará inofensivamente y se hundirá nuevamente en el suelo, dejando a las criaturas que estén en su interior en el suelo, sin causarlas daño alguno.", 
+				"Lanzar este conjuro sobre el mismo lugar una vez cada 7 días durante un año hará que la fortaleza se vuelva permanente."
+			],
             "damageImmune": ["poison", "psychic"],
             "miscTags": ["PRM", "SGT"],
             "classes": {
@@ -88479,7 +89197,7 @@
             }
         }, 
 		{
-            "name": "Primordial Ward",
+            "name": "Guardia primordial",
             "source": "XGE-ES",
             "page": 163,
             "level": 6,
@@ -88508,7 +89226,10 @@
                     "concentration": true
                 }
             ],
-            "entries": ["You have resistance to acid, cold, fire, lightning, and thunder damage for the spell's duration.", "When you take damage of one of those types, you can use your reaction to gain immunity to that type of damage, including against the triggering damage. If you do so, the resistances end, and you have the immunity until the end of your next turn, at which time the spell ends."],
+            "entries": [
+				"Tienes resistencia al daño de ácido, frío, fuego, relámpago y trueno mientras dure el conjuro.", 
+				"Cuando recibes daño de uno de esos tipos, puedes usar tu reacción para ganar inmunidad a ese tipo de daño (esta inmunidad también afecta al daño desencadenante). Si decides hacer esto, dejas de poseer las resistencias al daño y tienes la inmunidad que acabas de ganar hasta el final de tu siguiente turno, momento en el que el conjuro termina."
+			],
             "damageResist": ["acid", "cold", "fire", "lightning", "thunder"],
             "damageImmune": ["acid", "cold", "fire", "lightning", "thunder"],
             "classes": {
@@ -88520,7 +89241,7 @@
             }
         }, 
 		{
-            "name": "Psychic Scream",
+            "name": "Grito psíquico",
             "source": "XGE-ES",
             "page": 163,
             "level": 9,
@@ -88544,7 +89265,11 @@
                     "type": "instant"
                 }
             ],
-            "entries": ["You unleash the power of your mind to blast the intellect of up to ten creatures of your choice that you can see within range. Creatures that have an Intelligence score of 2 or lower are unaffected.", "Each target must make an Intelligence saving throw. On a failed save, a target takes {@damage 14d6} psychic damage and is {@condition stunned}. On a successful save, a target takes half as much damage and isn't {@condition stunned}. If a target is killed by this damage, its head explodes, assuming it has one.", "A {@condition stunned} target can make an Intelligence saving throw at the end of each of its turns. On a successful save, the stunning effect ends."],
+            "entries": [
+				"Liberas el poder de tu mente para destruir el intelecto de hasta diez criaturas de tu elección que puedas ver y se encuentren dentro del alcance. Las que tienen una puntuación de inteligencia de 2 o menos no se ven afectadas.", 
+				"Cada objetivo deberá hacer una tirada de salvación de Inteligencia. Si falla, la criatura recibirá {@damage 14d6} de daño psíquico y quedará {@condition aturdido|PHB-ES|aturdida}. Si tiene éxito, sufrirá la mitad de ese daño y no estará {@condition aturdido|PHB-ES|aturdida}. Si un objetivo muere a casusa de este daño, su cabeza explotará (siempre y cuando tenga una).", 
+				"Una criatura {@condition aturdido|PHB-ES|aturdida} puede realizar una tirada de salvación de Inteligencia al final de cada uno de sus turnos. Si tiene éxito, el aturdimiento termina."
+			],
             "damageInflict": ["psychic"],
             "conditionInflict": ["stunned"],
             "savingThrow": ["intelligence"],
@@ -88625,7 +89350,7 @@
             }
         }, 
 		{
-            "name": "Scatter",
+            "name": "Dispersar",
             "source": "XGE-ES",
             "page": 164,
             "level": 6,
@@ -88649,7 +89374,7 @@
                     "type": "instant"
                 }
             ],
-            "entries": ["The air quivers around up to five creatures of your choice that you can see within range. An unwilling creature must succeed on a Wisdom saving throw to resist this spell. You teleport each affected target to an unoccupied space that you can see within 120 feet of you. That space must be on the ground or on a floor."],
+            "entries": ["El aire se agita alrededor de hasta cinco criaturas de tu elección que puedas ver y que se encuentren dentro del alcance. Un objetivo deberá tener éxito en una tirada de salvación de Sabiduría para resistirse a este conjuro. Teletransportas a cada criatura afectada a un espacio sin ocupar que puedas ver y se encuentre a 120 pies o menos de ti. Ese espacio debe estar sobre tierra firme o sobre un suelo."],
             "savingThrow": ["wisdom"],
             "miscTags": ["SGT", "TP"],
             "areaTags": ["MT"],
@@ -88668,7 +89393,7 @@
             }
         }, 
 		{
-            "name": "Shadow Blade",
+            "name": "Hoja sombría",
             "source": "XGE-ES",
             "page": 164,
             "level": 2,
@@ -88697,11 +89422,14 @@
                     "concentration": true
                 }
             ],
-            "entries": ["You weave together threads of shadow to create a sword of solidified gloom in your hand. This magic sword lasts until the spell ends. It counts as a simple melee weapon with which you are proficient. It deals {@damage 2d8} psychic damage on a hit and has the finesse, light, and thrown properties (range 20/60). In addition, when you use the sword to attack a target that is in dim light or darkness, you make the attack roll with advantage.", "If you drop the weapon or throw it, it dissipates at the end of the turn. Thereafter, while the spell persists, you can use a bonus action to cause the sword to reappear in your hand."],
+            "entries": [
+				"Entrelazas hilos de sombra para crear una espada de oscuridad solidificada en tu mano. Esta permanece hasta que termina el conjuro. Cuenta como un arma de cuerpo a cuerpo sencilla con la que eres competente. Inflige {@damage 2d8} de daño psíquico en cada golpe y tiene las propiedades sutil, ligera y arrojadiza (alcance 20/60). Además, cuando utilices esta espada para atacar a un objetivo que está en un área de luz tenue u oscuridad, haces la tirada de ataque con ventaja.", 
+				"Si sueltas el arma o la lanzas, esta se disipa al final del turno. A partir de ese momento, mientras el conjuro persista, podrás usar una acción adicional para hacer que la espada reaparezca en tu mano."
+			],
             "entriesHigherLevel": [{
                     "type": "entries",
                     "name": "At Higher Levels",
-                    "entries": ["When you cast this spell using a 3rd- or 4th-level spell slot, the damage increases to {@dice 3d8}. When you cast it using a 5th- or 6th-level spell slot, the damage increases to {@dice 4d8}. When you cast it using a spell slot of 7th level or higher, the damage increases to {@dice 5d8}."]
+                    "entries": ["Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 3 o 4, el daño se incrementa a {@dice 3d8}. Cuando uses un espacio de nivel 5 o 6, aumenta a {@dice 4d8}. Cuando sea un espacio de nivel 7 o más, alcanza los {@dice 5d8}."]
                 }
             ],
             "damageInflict": ["psychic"],
@@ -88831,7 +89559,7 @@
             }
         }, 
 		{
-            "name": "Sickening Radiance",
+            "name": "Fulgor nauseabundo",
             "source": "XGE-ES",
             "page": 164,
             "level": 4,
@@ -88861,7 +89589,10 @@
                     "concentration": true
                 }
             ],
-            "entries": ["Dim, greenish light spreads within a 30-foot-radius sphere centered on a point you choose within range. The light spreads around corners, and it lasts until the spell ends.", "When a creature moves into the spell's area for the first time on a turn or starts its turn there, that creature must succeed on a Constitution saving throw or take {@damage 4d10} radiant damage, and it suffers one level of {@condition exhaustion} and emits a dim, greenish light in a 5-foot radius. This light makes it impossible for the creature to benefit from being {@condition invisible}. The light and any levels of {@condition exhaustion} caused by this spell go away when the spell ends."],
+            "entries": [
+				"Una débil luz verdosa se propaga por el interior de una esfera de 30 pies de radio, centrada en un punto que elijas dentro del alcance. La luz se extiende más allá de las esquinas y dura hasta que termina el conjuro.", 
+				"Cuando una criatura se mueva al interior de esta zona por primera vez durante su turno o comienza su turno allí, deberá tener éxito en una tirada de salvación de Constitución o recibirá {@damage 4d10} de daño radiante, sufrirá un nivel de {@condition cansancio|PHB-ES} y emitirá una luz tenue de color verde en un radio de 5 pies. Esta última hace que para la criatura sea imposible beneficiarse de la {@condition invisible|PHB-ES|invisibilidad}. La luz y cualquier nivel de {@condition cansancio|PHB-ES} causado por este conjuro desaparecen cuando el conjuro termina."
+			],
             "damageInflict": ["radiant"],
             "conditionInflict": ["exhaustion"],
             "savingThrow": ["constitution"],
@@ -88881,7 +89612,7 @@
             }
         }, 
 		{
-            "name": "Skill Empowerment",
+            "name": "Fortalecer habilidad",
             "source": "XGE-ES",
             "page": 165,
             "level": 5,
@@ -88910,7 +89641,10 @@
                     "concentration": true
                 }
             ],
-            "entries": ["Your magic deepens a creature's understanding of its own talent. You touch one willing creature and give it expertise in one skill of your choice; until the spell ends, the creature doubles its proficiency bonus for ability checks it makes that use the chosen skill.", "You must choose a skill in which the target is proficient and that isn't already benefiting from an effect, such as Expertise, that doubles its proficiency bonus."],
+            "entries": [
+				"Tu magia profundiza la comprensión de una criatura de sus propias aptitudes. Tocas a una criatura voluntaria y le das conocimientos en una habilidad de su elección. Hasta que termine el conjuro, la criatura duplica su bonificador por competencia para las pruebas de característica que usan la habilidad escogida.", 
+				"Debes elegir una habilidad en la que el objetivo sea competente y que no está beneficiándose de otro efecto, como Pericia, que ya duplique su bonificador por competencia."
+			],
             "areaTags": ["ST"],
             "classes": {
                 "fromClassList": [{
@@ -88930,7 +89664,7 @@
             }
         }, 
 		{
-            "name": "Skywrite",
+            "name": "Escribir en las nubes",
             "source": "XGE-ES",
             "page": 165,
             "level": 2,
@@ -88962,7 +89696,7 @@
             "meta": {
                 "ritual": true
             },
-            "entries": ["You cause up to ten words to form in a part of the sky you can see. The words appear to be made of cloud and remain in place for the spell's duration. The words dissipate when the spell ends. A strong wind can disperse the clouds and end the spell early."],
+            "entries": ["Haces aparecer hasta diez palabras en una parte del cielo que puedas ver. Estas parecen estar hechas por nubes y permanecen en su sitio hasta que finalice la duración del conjuro. Las palabras se disipan cuando el conjuro termina. Un viento fuerte puede dispersar las nubes y finalizar así el conjuro."],
             "miscTags": ["SGT"],
             "classes": {
                 "fromClassList": [{
@@ -89089,7 +89823,7 @@
             }
         }, 
 		{
-            "name": "Soul Cage",
+            "name": "Encarcelar alma",
             "source": "XGE-ES",
             "page": 165,
             "level": 6,
@@ -89097,7 +89831,7 @@
             "time": [{
                     "number": 1,
                     "unit": "reaction",
-                    "condition": "which you take when a humanoid you can see within 60 feet of you dies"
+                    "condition": "que llevas a cabo cuando una criatura que puedas ver y se encuentre a 60 pies o menos de ti muera"
                 }
             ],
             "range": {
@@ -89111,7 +89845,7 @@
                 "v": true,
                 "s": true,
                 "m": {
-                    "text": "a tiny silver cage worth 100 gp",
+                    "text": "una pequeña jaula de plata con un valor de 100 po",
                     "cost": 10000
                 }
             },
@@ -89123,23 +89857,29 @@
                     }
                 }
             ],
-            "entries": ["This spell snatches the soul of a humanoid as it dies and traps it inside the tiny cage you use for the material component. A stolen soul remains inside the cage until the spell ends or until you destroy the cage, which ends the spell. While you have a soul inside the cage, you can exploit it in any of the ways described below. You can use a trapped soul up to six times. Once you exploit a soul for the sixth time, it is released, and the spell ends. While a soul is trapped, the dead humanoid it came from can't be revived.", {
+            "entries": [
+				"Este conjuro arrebata el alma a un humanoide en el momento de su muerte y la atrapa dentro de la pequeña jaula que utilizas como componente. Un alma robada de esta manera queda dentro de la jaula hasta el final del conjuro o hasta que dicha prisión sea destruida, lo que provoca que termine el conjuro. Mientras tengas un alma capturada en la jaula, puedes abusar de ella de cualquiera de las formas que se describen a continuación. Esto puede hacerse hasta seis veces. Una vez abusas de un alma por sexta vez, esta se libera y el conjuro finaliza. Mientras su alma esté atrapada, el humanoide muerto no podrá ser devuelto a la vida.", 
+				{
                     "type": "entries",
-                    "name": "Steal Life",
-                    "entries": ["You can use a bonus action to drain vigor from the soul and regain {@dice 2d8} hit points."]
-                }, {
+                    "name": "Robar vida",
+                    "entries": ["Puedes usar una acción adicional para robar el vigor del alma y recuperar {@dice 2d8} puntos de golpe."]
+                }, 
+				{
                     "type": "entries",
-                    "name": "Query Soul",
-                    "entries": ["You ask the soul a question (no action required) and receive a brief telepathic answer, which you can understand regardless of the language used. The soul knows only what it knew in life, but it must answer you truthfully and to the best of its ability. The answer is no more than a sentence or two and might be cryptic."]
-                }, {
+                    "name": "Interrogar alma",
+                    "entries": ["Le haces una pregunta al alma (no requiere ninguna acción) y recibes una breve respuesta telepática, que puedes entender independientemente del lenguaje utilizado. El alma solo conoce lo que sabía en vida, pero debe responderte sinceramente y lo mejor que pueda. La respuesta no es más que una frase o dos y puede ser críptica."]
+                }, 
+				{
                     "type": "entries",
-                    "name": "Borrow Experience",
-                    "entries": ["You can use a bonus action to bolster yourself with the soul's life experience, making your next attack roll, ability check, or saving throw with advantage. If you don't use this benefit before the start of your next turn, it is lost."]
-                }, {
+                    "name": "Compartir experiencia",
+                    "entries": ["Puedes usar una acción adicional para apoyarte en la experiencia en vida del alma y realizar tu siguiente tirada de ataque, prueba de característica o tirada de salvación con ventaja. Si no empleas este beneficio antes del comienzo de tu próximo turno, se perderá."]
+                }, 
+				{
                     "type": "entries",
-                    "name": "Eyes of the Dead",
-                    "entries": ["You can use an action to name a place the humanoid saw in life, which creates an invisible sensor somewhere in that place if it is on the plane of existence you're currently on. The sensor remains for as long as you concentrate, up to 10 minutes (as if you were concentrating on a spell). You receive visual and auditory information from the sensor as if you were in its space using your senses."]
-                }, "A creature that can see the sensor (such as one using {@spell see invisibility} or {@sense truesight}) sees a translucent image of the tormented humanoid whose soul you caged."],
+                    "name": "Ojos de los muertos",
+                    "entries": ["Puedes utilizar una acción para nombrar un lugar que el humanoide vio en vida, lo que crea un sensor invisible en alguna parte de ese lugar, siempre y cuando este esté en el plano de existencia en el que te encuentras actualmente. Este sensor se mantiene mientras permanezcas concentrado, hasta 10 minutos (como si te concentraras en un conjuro). Recibes información visual y auditiva del sensor como si estuvieras en su espacio usando tus propios sentidos."]
+                }, 
+				"Una criatura que pueda percibir el sensor (como una que emplee {@spell ver invisibilidad|PHB-ES} o {@sense truesight|visión verdadera}) apreciará una imagen translúcida del humanoide atormentado cuya alma enjaulaste."],
             "miscTags": ["HL"],
             "classes": {
                 "fromClassList": [{
@@ -89153,7 +89893,7 @@
             }
         }, 
 		{
-            "name": "Steel Wind Strike",
+            "name": "Golpe de viento acerado",
             "source": "XGE-ES",
             "page": 166,
             "level": 5,
@@ -89172,13 +89912,16 @@
             },
             "components": {
                 "s": true,
-                "m": "a melee weapon worth at least 1 sp"
+                "m": "un arma cuerpo a cuerpo con un valor de al menos 1 pp"
             },
             "duration": [{
                     "type": "instant"
                 }
             ],
-            "entries": ["You flourish the weapon used in the casting and then vanish to strike like the wind. Choose up to five creatures you can see within range. Make a melee spell attack against each target. On a hit, a target takes {@damage 6d10} force damage.", "You can then teleport to an unoccupied space you can see within 5 feet of one of the targets you hit or missed."],
+            "entries": [
+				"Blandes el arma utilizada en el lanzamiento y luego des apareces para golpear como el viento. Elige hasta cinco criaturas que puedas ver y se encuentren dentro del alcance Haz un ataque de conjuro cuerpo a cuerpo contra cada una de ellas. Si impactas, el objetivo recibe {@damage 6d10} de daño de fuerza.", 
+				"Después de hacer esto puedes teletransportarte a un espacio desocupado que puedas ver y que se encuentre 5 pies o menos de uno de los objetivos, le impactaras o no."
+			],
             "damageInflict": ["force"],
             "spellAttack": ["M"],
             "miscTags": ["SGT", "TP"],
@@ -89195,7 +89938,7 @@
             }
         }, 
 		{
-            "name": "Storm Sphere",
+            "name": "Esfera tormentosa",
             "source": "XGE-ES",
             "page": 166,
             "level": 4,
@@ -89225,11 +89968,15 @@
                     "concentration": true
                 }
             ],
-            "entries": ["A 20-foot-radius sphere of whirling air springs into existence, centered on a point you choose within range. The sphere remains for the spell's duration. Each creature in the sphere when it appears or that ends its turn there must succeed on a Strength saving throw or take {@damage 2d6} bludgeoning damage. The sphere's space is difficult terrain.", "Until the spell ends, you can use a bonus action on each of your turns to cause a bolt of lightning to leap from the center of the sphere toward one creature you choose within 60 feet of the center. Make a ranged spell attack. You have advantage on the attack roll if the target is in the sphere. On a hit, the target takes {@damage 4d6} lightning damage.", "Creatures within 30 feet of the sphere have disadvantage on Wisdom ({@skill Perception}) checks made to listen."],
+            "entries": [
+				"Una esfera de aire arremolinado de 20 pies de radio aparece, centrada en un punto que elijas dentro del alcance. Esta permanece mientras dure el conjuro. Todas las criaturas situadas en la esfera cuando esta aparece o que terminen su turno en ella deberán tener éxito en una tirada de salvación de Fuerza o recibirán {@damage 2d6} de daño contundente. El espacio que ocupa la esfera es terreno difícil.", 
+				"Hasta que el conjuro termine, puedes utilizar una acción adicional en cada uno de tus turnos para causar que un rayo salte desde el centro de la esfera hacia una criatura de tu elección situada a 60 pies o menos de su centro. Haz un ataque de conjuro a distancia. Tienes ventaja la tirada de ataque si el objetivo está en el interior de la esfera. Si impactas, el objetivo recibe {@damage 4d6} de daño de relámpago.", 
+				"Las criaturas que se encuentran a 30 pies o menos de la esfera tienen desventaja en las pruebas de Sabiduría ({@skill Perception|Percepción}) realizadas para escuchar."
+			],
             "entriesHigherLevel": [{
                     "type": "entries",
                     "name": "At Higher Levels",
-                    "entries": ["When you cast this spell using a spell slot of 5th level or higher, the damage for each of its effects increases by {@scaledamage 2d6;4d6|4-9|1d6} for each slot level above 4th."]
+                    "entries": ["Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 5 o más, el daño para cada uno de sus efectos se incrementa en {@scaledamage 2d6;4d6|4-9|1d6} por cada nivel por encima de 4 que tenga el espacio que hayas empleado."]
                 }
             ],
             "damageInflict": ["bludgeoning", "lightning"],
@@ -89390,7 +90137,7 @@
             }
         }, 
 		{
-            "name": "Synaptic Static",
+            "name": "Estática sináptica",
             "source": "XGE-ES",
             "page": 167,
             "level": 5,
@@ -89415,7 +90162,10 @@
                     "type": "instant"
                 }
             ],
-            "entries": ["You choose a point within range and cause psychic energy to explode there. Each creature in a 20-foot-radius sphere centered on that point must make an Intelligence saving throw. A creature with an Intelligence score of 2 or lower can't be affected by this spell. A target takes {@damage 8d6} psychic damage on a failed save, or half as much damage on a successful one.", "After a failed save, a target has muddled thoughts for 1 minute. During that time, it rolls a {@dice d6} and subtracts the number rolled from all its attack rolls and ability checks, as well as its Constitution saving throws to maintain concentration. The target can make an Intelligence saving throw at the end of each of its turns, ending the effect on itself on a success."],
+            "entries": [
+				"Eliges un punto dentro del alcance y provocas que una energía psíquica explote allí. Todas las criaturas en una esfera de 20 pies de radio centrada en dicho punto deberán realizar una tirada de salvación de Inteligencia. Las criaturas con una puntuación de Inteligencia de 2 o menos no pueden verse afectada por este conjuro. Cada criatura sufrirá {@damage 8d6} de daño psíquico si falla la tirada o la mitad de dicho daño si la supera.", 
+				"Después de que una criatura falle esta tirada de salvación, verá su mente nublada durante 1 minuto. Durante ese tiempo, la criatura lanzará un {@dice d6} y restará ese número a todas sus tiradas de ataque y pruebas de característica, así como a sus tiradas de salvación de Constitución para mantener la concentración. La criatura puede hacer una tirada de salvación de Inteligencia al final de cada uno de sus turnos, librándose de este efecto si tiene éxito."
+			],
             "damageInflict": ["psychic"],
             "savingThrow": ["intelligence", "constitution"],
             "areaTags": ["S"],
@@ -89867,7 +90617,7 @@
             }
         }, 
 		{
-            "name": "Vitriolic Sphere",
+            "name": "Esfera vitriólica",
             "source": "XGE-ES",
             "page": 170,
             "level": 4,
@@ -89887,17 +90637,17 @@
             "components": {
                 "v": true,
                 "s": true,
-                "m": "a drop of giant slug bile"
+                "m": "una gota de bilis de babosa gigante"
             },
             "duration": [{
                     "type": "instant"
                 }
             ],
-            "entries": ["You point at a location within range, and a glowing 1-foot-diameter ball of emerald acid streaks there and explodes in a 20-foot-radius sphere. Each creature in that area must make a Dexterity saving throw. On a failed save, a creature takes {@damage 10d4} acid damage and another {@damage 5d4} acid damage at the end of its next turn. On a successful save, a creature takes half the initial damage and no damage at the end of its next turn."],
+            "entries": ["Señala un lugar que se encuentre dentro del alcance. Una bola resplandeciente de ácido esmeralda de 1 pie de diámetro, localizada en el punto escogido, explota y cubre de salpicaduras corrosivas una esfera de 20 pies de radio. Toda criatura situada en esta última área deberá hacer una tirada de salvación de Destreza. Si falla, recibirá {@damage 10d4} de daño de ácido y otros {@damage 5d4} de daño de ácido al final de su siguiente turno. Si tiene éxito, sufrirá la mitad de daño inicial y ningún daño al final de su siguiente turno."],
             "entriesHigherLevel": [{
                     "type": "entries",
                     "name": "At Higher Levels",
-                    "entries": ["When you cast this spell using a spell slot of 5th level or higher, the initial damage increases by {@scaledamage 10d4|4-9|2d4} for each slot level above 4th."]
+                    "entries": ["A niveles superiores. Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 5 o más, el daño inicial aumenta en {@scaledamage 10d4|4-9|2d4} por cada nivel por encima de 4 que tenga el espacio que hayas empleado."]
                 }
             ],
             "damageInflict": ["acid"],
@@ -90134,7 +90884,7 @@
             }
         }, 
 		{
-            "name": "Watery Sphere",
+            "name": "Esfera acuosa",
             "source": "XGE-ES",
             "page": 170,
             "level": 4,
@@ -90154,7 +90904,7 @@
             "components": {
                 "v": true,
                 "s": true,
-                "m": "a droplet of water"
+                "m": "una gota de agua"
             },
             "duration": [{
                     "type": "timed",
@@ -90165,7 +90915,13 @@
                     "concentration": true
                 }
             ],
-            "entries": ["You conjure up a sphere of water with a 5-foot radius at a point you can see within range. The sphere can hover but no more than 10 feet off the ground. The sphere remains for the spell's duration.", "Any creature in the sphere's space must make a Strength saving throw. On a successful save, a creature is ejected from that space to the nearest unoccupied space of the creature's choice outside the sphere. A Huge or larger creature succeeds on the saving throw automatically, and a Large or smaller creature can choose to fail it. On a failed save, a creature is {@condition restrained} by the sphere and is engulfed by the water. At the end of each of its turns, a {@condition restrained} target can repeat the saving throw, ending the effect on itself on a success.", "The sphere can restrain as many as four Medium or smaller creatures or one Large creature. If the sphere restrains a creature that causes it to exceed this capacity, a random creature that was already {@condition restrained} by the sphere falls out of it and lands {@condition prone} in a space within 5 feet of it.", "As an action, you can move the sphere up to 30 feet in a straight line. If it moves over a pit, a cliff, or other drop-off, it safely descends until it is hovering 10 feet above the ground. Any creature {@condition restrained} by the sphere moves with it. You can ram the sphere into creatures, forcing them to make the saving throw.", "When the spell ends, the sphere falls to the ground and extinguishes all normal flames within 30 feet of it. Any creature {@condition restrained} by the sphere is knocked {@condition prone} in the space where it falls. The water then vanishes."],
+            "entries": [
+				"Conjuras una esfera de agua de un radio de 5 pies en un punto que puedas ver y que se encuentre dentro del alcance. Esta puede levitar, pero no a más de 10 pies de altura. La esfera permanece hasta que el conjuro termina.", 
+				"Cualquier criatura situada en el espacio de la esfera deberá hacer una tirada de salvación de Fuerza. Si tiene éxito, será expulsada de esa zona hasta el espacio desocupado más cercano que la criatura elija en el exterior de la esfera. Un objetivo Enorme o más grande tiene éxito en la tirada de salvación automáticamente, mientras que una criatura Grande o más pequeña puede decidir fallar voluntariamente. Si falla, el objetivo será {@condition apresado|PHB-ES} por la esfera y engullido por el agua. Al final de cada uno de sus turnos, dicha criatura podrá repetir la tirada de salvación, librándose del efecto si tiene éxito.", 
+				"La esfera puede contener hasta cuatro criaturas Medianas o Pequeñas o únicamente una Grande. Si apresa a un objetivo que hace que se exceda esta capacidad, una criatura al azar que ya fue {@condition apresado|PHB-ES|capturada} por la esfera saldrá fuera y caerá {@condition derribado|PHB-ES|derribada} en un espacio situado a 5 pies o menos de la esfera.", 
+				"Como acción adicional, puedes mover la esfera hasta 30 pies en línea recta. Si se desplaza sobre un foso, un acantilado u otra caída, descenderá de manera segura hasta que esté suspendida a 10 pies del suelo. Cualquier objetivo {@condition apresado|PHB-ES} por la esfera se mueve con ella. Además, puedes lanzarla contra criaturas, obligándolas a hacer tirada de salvación.", 
+				"Cuando el conjuro termina, la esfera cae al suelo y apaga todas las llamas normales que se encuentren a 30 pies o menos de ella. Cualquier criatura que estuviera {@condition apresado|PHB-ES|apresada} en su interior acaba {@condition derribado|PHB-ES|derribada} en el espacio donde cae la esfera. Después, el agua desaparece."
+			],
             "conditionInflict": ["prone", "restrained"],
             "savingThrow": ["strength"],
             "miscTags": ["SGT"],
@@ -90352,7 +91108,7 @@
             }
         }, 
 		{
-            "name": "Zephyr Strike",
+            "name": "Golpe de céfiro",
             "source": "XGE-ES",
             "page": 171,
             "level": 1,
@@ -90380,7 +91136,10 @@
                     "concentration": true
                 }
             ],
-            "entries": ["You move like the wind. Until the spell ends, your movement doesn't provoke opportunity attacks.", "Once before the spell ends, you can give yourself advantage on one weapon attack roll on your turn. That attack deals an extra {@damage 1d8} force damage on a hit. Whether you hit or miss, your walking speed increases by 30 feet until the end of that turn."],
+            "entries": [
+				"Te mueves como el viento. Hasta que el conjuro termine, tu movimiento no provoca ataques de oportunidad. ", 
+				"Además, una sola vez, antes de la finalización del conjuro, puedes darte ventaja en una tirada de ataque de arma durante tu turno. Este ataque inflige un {@damage 1d8} de daño de fuerza adicionales si impacta. Tanto si aciertas como si no, tu velocidad caminando aumenta en 30 pies hasta el final de ese turno."
+			],
             "damageInflict": ["force"],
             "classes": {
                 "fromClassList": [{
@@ -93372,7 +94131,7 @@
             }
         }, 
 		{
-            "name": "Aganazzar's Scorcher",
+            "name": "Horno de Aganazzar",
             "source": "XGE-ES",
             "data": {
                 "Save": "Dexterity",
@@ -93380,7 +94139,7 @@
                 "Damage Type": "Fuego",
                 "Higher Spell Slot Die": "d8",
                 "Higher Spell Slot Dice": "1",
-                "Target": "Each creature in a line 30 feet long and 5 feet wide emanating from you in a direction you choose",
+                "Target": "Todas las criaturas en una linea de 30 pies de largo y 5 de ancho que surge de ti en una dirección de tu elección",
                 "Save Success": "Mitad del daño"
             },
             "shapedData": {
@@ -93393,7 +94152,7 @@
             "data": {}
         }, 
 		{
-            "name": "Bones of the Earth",
+            "name": "Huesos de la tierra",
             "source": "XGE-ES",
             "data": {
                 "Save": "Dexterity",
@@ -93438,12 +94197,12 @@
             "data": {}
         }, 
 		{
-            "name": "Chaos Bolt",
+            "name": "Descarga caótica",
             "source": "XGE-ES",
             "data": {
                 "Damage": "2d8",
                 "Damage Type": "Variable",
-                "Target": "One creature in range",
+                "Target": "Una criatura dentro del alcance",
                 "Spell Attack": "Ranged",
                 "Secondary Higher Spell Slot Die": "d6",
                 "Secondary Higher Spell Slot Dice": "1",
@@ -93456,7 +94215,7 @@
             }
         }, 
 		{
-            "name": "Charm Monster",
+            "name": "Hechizar monstruo",
             "source": "XGE-ES",
             "data": {
                 "Save": "Wisdom"
@@ -93504,7 +94263,7 @@
             }
         }, 
 		{
-            "name": "Danse Macabre",
+            "name": "Danza macabra",
             "source": "XGE-ES",
             "data": {}
         }, 
@@ -93544,13 +94303,13 @@
             "data": {}
         }, 
 		{
-            "name": "Dust Devil",
+            "name": "Diablo de polvo",
             "source": "XGE-ES",
             "data": {
                 "Save": "Strength",
                 "Damage": "1d8",
                 "Damage Type": "Contundente",
-                "Save Success": "Half damage and not pushed",
+                "Save Success": "Mitad de daño y no es empujada",
                 "Higher Spell Slot Die": "d8",
                 "Higher Spell Slot Dice": "1"
             },
@@ -93638,12 +94397,12 @@
             "data": {}
         }, 
 		{
-            "name": "Find Greater Steed",
+            "name": "Hallar corcel superior",
             "source": "XGE-ES",
             "data": {}
         }, 
 		{
-            "name": "Flame Arrows",
+            "name": "Flechas llameantes",
             "source": "XGE-ES",
             "data": {
                 "Damage": "1d6",
@@ -93667,7 +94426,7 @@
             }
         }, 
 		{
-            "name": "Guardian of Nature",
+            "name": "Guardián de la naturaleza",
             "source": "XGE-ES",
             "data": {}
         }, 
@@ -93677,10 +94436,10 @@
             "data": {}
         }, 
 		{
-            "name": "Healing Spirit",
+            "name": "Espíritu sanador",
             "source": "XGE-ES",
             "data": {
-                "Target": "A space that is a 5-foot cube you can see within range",
+                "Target": "El espacio de un cubo de 5 pies que puedas ver y se encuentre dentro del alcance",
                 "Healing": "1d6",
                 "Higher Spell Slot Die": "d6",
                 "Higher Spell Slot Dice": "1"
@@ -93723,11 +94482,11 @@
             }
         }, 
 		{
-            "name": "Illusory Dragon",
+            "name": "Dragón ilusorio",
             "source": "XGE-ES",
             "data": {
                 "Save": "Wisdom",
-                "Save Success": "Not frightened"
+                "Save Success": "No es asustado"
             },
             "shapedData": {
                 "primaryDamageCondition": "save"
@@ -93784,14 +94543,14 @@
             }
         }, 
 		{
-            "name": "Investiture of Ice",
+            "name": "Indumentaria de hielo",
             "source": "XGE-ES",
             "data": {
                 "Save": "Constitution",
                 "Damage": "4d6",
                 "Damage Type": "Cold",
-                "Save Success": "Half damage and speed not halved",
-                "Target": "Each creature in a 15-foot cone extending from you in a direction you choose"
+                "Save Success": "Mitad de daño y velocidad no reducida a la mitad",
+                "Target": "Cada criatura un cono de 15 pies que se extiende desde ti en una dirección de tu elección"
             },
             "shapedData": {
                 "primaryDamageCondition": "save"
@@ -93929,7 +94688,7 @@
             }
         }, 
 		{
-            "name": "Mighty Fortress",
+            "name": "Fortaleza imponente",
             "source": "XGE-ES",
             "data": {}
         }, 
@@ -93990,19 +94749,19 @@
             }
         }, 
 		{
-            "name": "Primordial Ward",
+            "name": "Guardia primordial",
             "source": "XGE-ES",
             "data": {}
         }, 
 		{
-            "name": "Psychic Scream",
+            "name": "Grito psíquico",
             "source": "XGE-ES",
             "data": {
                 "Save": "Intelligence",
                 "Damage": "14d6",
                 "Damage Type": "Psíquico",
-                "Target": "Up to ten creatures of your choice that you can see within range",
-                "Save Success": "Half damage and not stunned"
+                "Target": "Hasta diez criaturas de tu elección que puedas ver y se encuentren dentro del alcance",
+                "Save Success": "Mitad de daño y no estará aturdida"
             },
             "shapedData": {
                 "primaryDamageCondition": "save"
@@ -94017,15 +94776,15 @@
             }
         }, 
 		{
-            "name": "Scatter",
+            "name": "Dispersar",
             "source": "XGE-ES",
             "data": {
                 "Save": "Wisdom",
-                "Target": "Up to five creatures of your choice that you can see within range"
+                "Target": "Hasta cinco criaturas de tu elección que puedas ver y que se encuentre dentro del alcance"
             }
         }, 
 		{
-            "name": "Shadow Blade",
+            "name": "Hoja sombría",
             "source": "XGE-ES",
             "data": {
                 "Damage": "2d8",
@@ -94054,25 +94813,25 @@
             "data": {}
         }, 
 		{
-            "name": "Sickening Radiance",
+            "name": "Fulgor nauseabundo",
             "source": "XGE-ES",
             "data": {
                 "Save": "Constitution",
                 "Damage": "4d10",
                 "Damage Type": "Radiante",
-                "Target": "A creature that moves into the spell's area for the first time on a turn or starts its turn there"
+                "Target": "Una criatura que se mueva al interior de la zona por primera vez durante su turno o comienza su turno allí"
             },
             "shapedData": {
                 "primaryDamageCondition": "save"
             }
         }, 
 		{
-            "name": "Skill Empowerment",
+            "name": "Fortalecer habilidad",
             "source": "XGE-ES",
             "data": {}
         }, 
 		{
-            "name": "Skywrite",
+            "name": "Escribir en las nubes",
             "source": "XGE-ES",
             "data": {}
         }, 
@@ -94100,19 +94859,19 @@
             }
         }, 
 		{
-            "name": "Soul Cage",
+            "name": "Encarcelar alma",
             "source": "XGE-ES",
             "data": {
                 "Healing": "2d8"
             }
         }, 
 		{
-            "name": "Steel Wind Strike",
+            "name": "Golpe de viento acerado",
             "source": "XGE-ES",
             "data": {
                 "Damage": "6d10",
-                "Damage Type": "Force",
-                "Target": "Up to five creatures you can see within range",
+                "Damage Type": "Fuerza",
+                "Target": "Hasta cinco criaturas que puedas ver y se encuentren dentro del alcance",
                 "Spell Attack": "Melee"
             },
             "shapedData": {
@@ -94120,7 +94879,7 @@
             }
         }, 
 		{
-            "name": "Storm Sphere",
+            "name": "Esfera tormentosa",
             "source": "XGE-ES",
             "data": {
                 "Save": "Strength",
@@ -94128,10 +94887,10 @@
                 "Damage Type": "Contundente",
                 "Higher Spell Slot Die": "d6",
                 "Higher Spell Slot Dice": "1",
-                "Target": "Each creature in a 20-foot-radius sphere centered on a point you choose within range",
+                "Target": "Cada criatura en una esfera de 20 pies de radio centrado en un punto que elijas dentro del alcance",
                 "Spell Attack": "Ranged",
                 "Secondary Damage": "4d6",
-                "Secondary Damage Type": "Lightning",
+                "Secondary Damage Type": "Relámpago",
                 "Secondary Higher Spell Slot Die": "d6",
                 "Secondary Higher Spell Slot Dice": "1"
             },
@@ -94153,13 +94912,13 @@
             "data": {}
         }, 
 		{
-            "name": "Synaptic Static",
+            "name": "Estática sináptica",
             "source": "XGE-ES",
             "data": {
                 "Save": "Intelligence",
                 "Damage": "8d6",
                 "Damage Type": "Psíquico",
-                "Target": "Each creature within a 20-foot-radius sphere centered on a point within range",
+                "Target": "Cada criatura dentro de una esfera de 20 pies de radio centrada en un punto dentro del alcance",
                 "Save Success": "Mitad del daño"
             },
             "shapedData": {
@@ -94255,7 +95014,7 @@
             }
         }, 
 		{
-            "name": "Vitriolic Sphere",
+            "name": "Esfera vitriólica",
             "source": "XGE-ES",
             "data": {
                 "Save": "Dexterity",
@@ -94263,8 +95022,8 @@
                 "Damage Type": "Acid",
                 "Higher Spell Slot Die": "d4",
                 "Higher Spell Slot Dice": "2",
-                "Save Success": "Half damage and no damage at end of turn",
-                "Target": "Each creature in a 20-foot-radius sphere centered on a point within range",
+                "Save Success": "Mitad de daño inicial y ningún daño al final del siguiente turno",
+                "Target": "Cada criatura en una esfera de 20 pies de radio centrado en un punto que elijas dentro del alcance",
                 "Secondary Damage": "5d4",
                 "Secondary Damage Type": "Acid"
             },
@@ -94310,7 +95069,7 @@
             "data": {}
         }, 
 		{
-            "name": "Watery Sphere",
+            "name": "Esfera acuosa",
             "source": "XGE-ES",
             "data": {}
         }, 
@@ -94360,11 +95119,11 @@
             }
         }, 
 		{
-            "name": "Zephyr Strike",
+            "name": "Golpe de céfiro",
             "source": "XGE-ES",
             "data": {
                 "Damage": "1d8",
-                "Damage Type": "Force"
+                "Damage Type": "Fuerza"
             },
             "shapedData": {
                 "primaryDamageCondition": "auto"
