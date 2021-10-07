@@ -35487,6 +35487,452 @@
 			}
         },
 		{
+			"name": "Barlgura",
+			"source": "MM-ES",
+			"page": 56,
+			"size": "L",
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"infernal","demonio"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"armadura natural"
+					]
+				}
+			],
+			"hp": {
+				"average": 68,
+				"formula": "8d10 + 24"
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 16,
+			"int": 7,
+			"wis": 14,
+			"cha": 9,
+			"save": {
+				"dex": "+5",
+				"con": "+6"
+			},
+			"skill": {
+				"perception": "+5",
+				"stealth": "+5"
+			},
+			"senses": [
+				"blindsight 30 ft.",
+				"darkvision 120 ft."
+			],
+			"passive": 15,
+			"resist": [
+				"cold",
+				"fire",
+				"lightning"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal",
+				"telepathy 120 ft."
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Lanzamiento de Conjuros Innato",
+					"headerEntries": [
+						"La aptitud mágica del barlgura es Sabiduría (salvación de conjuros {@dc 13}). Puede lanzar de forma innata los siguientes conjuros, sin necesidad de componentes materiales:"
+					],
+					"daily": {
+						"1e": [
+							"{@spell enmarañar|PHB-ES}",
+							"{@spell fuerza fantasmal|PHB-ES}"
+						],
+						"2e": [
+							"{@spell disfrazarse|PHB-ES}",
+							"{@spell invisibilidad|PHB-ES} (solo lanzador))"
+						]
+					},
+					"ability": "wis"
+				}
+			],
+			"trait": [
+				{
+					"name": "Temerario",
+					"entries": [
+						"Al inicio de su turno, el barlgura puede decidir obtener ventaja en todas las tiradas de ataque con arma cuerpo a cuerpo que haga durante dicho turno, pero, a cambio, las tiradas de ataque que le tengan como objetivo hasta el final de su siguiente turno también tendrán ventaja"
+					]
+				},
+				{
+					"name": "Saltar con Carrera",
+					"entries": [
+						"El barlgura puede hacer un salto de longitud de 40 pies o un salto de altura de 20 pies, pero solo si ha cogido carrerilla. "
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Ataque múltiple",
+					"entries": [
+						"El barlgura realiza tres ataques: uno con su mordisco y dos con sus puñetazos."
+					]
+				},
+				{
+					"name": "Mordisco",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Puñetazo",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d10 + 4}) bludgeoning damage."
+					]
+				}
+			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Invocar demonio (1/Día)",
+					"entries": [
+						"El demonio elige qué seres va a invocar e intenta recurrir a la magia para hacerlo.",
+						"Un {@b barlgura} tiene un {@chance 30|30%} de probabilidades de invocar 1 barlgura.",
+						"Los demonios invocados aparecen en un espacio desocupado a 60 pies o menos de su invocador. Se comportan como sus aliados y no podrán invocar a su vez a otros demonios. Permanecerán durante 1 minuto, hasta que su invocador muera o hasta que este los desconvoque utilizando una acción."
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Barlgura.png",
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/barlgura.mp3"
+			},
+			"traitTags": [
+				"Temerario"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Ataque múltiple"
+			],
+			"languageTags": [
+				"AB",
+				"TP"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Los barlguras representan la barbarie y la brutalidad del Abismo. Estos demonios se reúnen en manadas para acabar con sus enemigos, guardar horribles trofeos como recuerdo de sus victorias y decorar su territorio con estos objetos.",
+									"Los barlguras parecen corpulentos orangutanes de rostro espantoso, con un semblante caído y colmillos que sobresalen de sus mandíbulas. Alcanzan casi 8 pies (2,4 m) de altura, son anchos de hombros y pesan 650 libras (290 kg). Por tierra se mueven como un gorila, pero son capaces de trepar con destreza y velocidad."
+								]
+							}
+						]
+					},
+					{
+						"name": "Demonios",
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Los demonios nacen en las Infinitas Capas del Abismo y son la personificación del caos y del mal: máquinas de destrucción apenas contenidas dentro de formas monstruosas. Solo existen para causar la destrucción y no poseen misericordia, compasión ni empatía.",
+											{
+												"name": "Engendros del caos",
+												"type": "entries",
+												"entries": [
+													"El Abismo crea espontáneamente demonios, que son extensiones de sí mismo, usando suciedad y carroña. Algunos son únicos en su monstruosidad, mientras que otros parecen surgidos de la misma cepa, prácticamente idénticos los unos a los otros. Hay otros demonios (como los manes) formados a partir de almas mortales, malditas y abandonadas por los dioses o atrapadas en el Abismo por cualquier otro motivo."
+												]
+											},
+											{
+												"name": "Encumbramiento caprichoso",
+												"type": "entries",
+												"entries": [
+													"Los demonios solo respetan el poder. Así, los demonios mayores comandan hordas de demonios menores simplemente porque son capaces de aplastarlos si se niegan a obedecer sus órdenes. El estatus de los demonios crece junto con la sangre que derraman. Cuantos más enemigos caigan a sus pies, mayor será su reputación.",
+													"Un demonio puede ser engendrado como un mane, para después pasar a ser un dretch, que a su vez podría acabar transformado en un vrok tras una eternidad luchando y sobreviviendo en el Abismo. Sin embargo, estos encumbramientos son raros, ya que la mayoría de los demonios son destruidos antes de ser capaces de amasar una cantidad importante de poder. Los más poderosos de los que sobreviven pasan a engrosar las filas de los señores demoníacos, que amenazan con desgarrar el Abismo con sus interminables guerras.",
+													"Estos señores demoníacos pueden convertir a demonios menores en demonios más poderosos consumiendo una importante cantidad de poder mágico en el proceso. No obstante, estos ascensos no se producen nunca como reconocimiento a sus méritos, sino que suceden por las necesidades del demonio mayor. Un señor demoníaco podría transformar a un mane en un quasit porque requiere un espía invisible, o convertir una horda de dretchs en hezrous si está combatiendo a otro señor demoníaco. En muy pocas ocasiones se asciende a un demonio a los rangos más altos, ya que esto resultaría en la creación de rivales de su mismo poder."
+												]
+											},
+											{
+												"name": "Invasiones abisales",
+												"type": "entries",
+												"entries": [
+													"En sus viajes por el Abismo, los demonios buscan portales hacia otros planos. Anhelan la oportunidad de escapar de su reino nativo y extender su influencia oscura por todo el multiverso, deshaciendo las obras de los dioses, derribando civilizaciones y reduciendo el cosmos a la desesperación y la ruina.",
+													"Algunas de las leyendas más oscuras del reino mortal se refieren a la destrucción causada por demonios que caminaron por el mundo. Incluso las naciones envueltas en cruentas guerras apartarán por un momento sus diferencias para ayudar a contener a los demonios que pretenden invadir el mundo, o para sellar brechas abisales antes de que estos infernales sean capaces de atravesarlas."
+												]
+											},
+											{
+												"name": "Signos de corrupción",
+												"type": "entries",
+												"entries": [
+													"Los demonios arrastran la mancha de la corrupción abisal con ellos y su sola presencia transforma el mundo en un lugar peor. Las plantas se marchitan y mueren en las zonas donde aparecen brechas abisales o demonios. Los animales evitan los lugares en los que un demonio ha cometido un asesinato. El espacio en el que se produce una infestación demoníaca podría corromperse con un olor asqueroso que nunca remite, con zonas de calor o frío extremos, o con una sombra eterna que marca los lugares donde los infernales merodearon."
+												]
+											},
+											{
+												"name": "Mal eterno",
+												"type": "entries",
+												"entries": [
+													"Fuera del Abismo, la muerte es una molestia menor que los demonios no temen. Las armas mundanas no pueden detener a estos infernales y muchos demonios son resistentes a la energía de los conjuros más potentes. Cuando un afortunado héroe logra derrotar en combate a un demonio, este último se disuelve en un icor asqueroso. En ese momento se reconstruye dentro del Abismo con su mente y esencia intactos, pero albergando un profundo odio contra su ejecutor. La única manera de destruir verdaderamente un demonio es buscarlo en el Abismo y matarlo en ese plano."
+												]
+											},
+											{
+												"name": "Esencia protegida",
+												"type": "entries",
+												"entries": [
+													"Un demonio poderoso es capaz de tomar medidas para salvaguardar su esencia vital, utilizando métodos secretos y metales abisales para crear un amuleto al cual cede parte de su esencia. Si la forma abisal de un demonio es destruida, dicho amuleto le permite reconstruirse cuando y donde quiera.",
+													"Obtener un amuleto demoníaco es peligroso, y simplemente el buscarlo puede poner en guardia al demonio que lo creó. Una criatura que posea un amuleto de este tipo puede exigir favores al ser infernal cuya esencia vital está contenida en el objeto, así como provocarle un gran dolor si este se resiste. Si el amuleto es destruido, el demonio que lo creó quedará atrapado en el Abismo durante un año y un día."
+												]
+											},
+											{
+												"name": "Sectas demoníacas",
+												"type": "entries",
+												"entries": [
+													"A pesar de los grandes riesgos que supone tratar con infernales, el reino mortal está plagado de criaturas que ansían poder demoníaco. Los señores demoníacos manipulan a estos servidores mortales para que realicen grandes actos de maldad y depravación, satisfaciendo así sus ambiciones a cambio de magia y otros beneficios. No obstante, un demonio considera a los mortales que están a su servicio como herramientas que usar y tirar cuando ya no le son útiles. En lo que a estas pobres víctimas respecta, sus almas mortales terminan en el Abismo."
+												]
+											},
+											{
+												"name": "Invocaciones demoníacas",
+												"type": "entries",
+												"entries": [
+													"Hay pocos actos más peligrosos que invocar a un demonio, e incluso aquellos magos que tratan habitualmente con diablos temen a los infernales del Abismo. Aunque los demonios ansían sembrar el caos en el Plano Material, no muestran gratitud alguna cuando se les invoca y, furiosos, arremeten contra sus cárceles, exigiendo su liberación.",
+													"Aquellas criaturas que se arriesgan a invocar a un demonio lo hacen para sonsacarles información, forzarles a trabajar para ellas o mandarles en alguna misión que solo un ser de pura maldad podría completar. La preparación es clave, y los invocadores más experimentados conocen los conjuros y objetos mágicos capaces de doblegar a un demonio a su voluntad. Un único error es suficiente para que el monstruo se libere; no mostrará piedad alguna y la primera víctima de su furia será el invocador."
+												]
+											},
+											{
+												"name": "Vincular a un demonio",
+												"type": "entries",
+												"entries": [
+													"{@italic El Libro de la Oscuridad Vil}, los {@italic Pergaminos Negros de Ahm} y el {@italic Demonomicón de Iggwilv} son las máximas autoridades en lo que a demonios se refiere. Estos tomos antiguos describen técnicas capaces de atrapar la esencia de un demonio en el Plano Material, colocándolo dentro de un arma, ídolo o joya para así evitar que regrese al Abismo.",
+													"El objeto al que se vincula el demonio debe estar imbuido con encantamientos impíos y sangre de inocente. Irradiará un mal capaz de corromper y enfriar el aire a su alrededor. Aquella criatura que porte el objeto experimentará sueños inquietantes e impulsos malignos, pero a cambio será capaz de controlar al demonio cuya esencia esté atrapada en el objeto. Si el objeto se destruye, la criatura se liberará y buscará saciar su sed de venganza persiguiendo a quien lo vinculó."
+												]
+											},
+											{
+												"name": "Posesión demoniaca",
+												"type": "entries",
+												"entries": [
+													"No importa cómo de seguro sea un vínculo: un demonio poderoso suele encontrar la manera de escapar del objeto al que fue atado. Cuando una esencia demoníaca se libera de aquello que la contiene, puede poseer a un anfitrión mortal. En ocasiones, los demonios recurren al subterfugio para que una posesión no resulte obvia. Pero otras veces desatan la fuerza de sus impulsos demoníacos a través de su nuevo cuerpo.",
+													"Mientras el demonio continúe poseyendo a su anfitrión, el alma de este último estará en peligro de ser arrastrada al Abismo junto con el demonio si se le exorciza del cuerpo o el poseído muere. Si un demonio posee a una criatura y el objeto al que estaba vinculado es destruido, la posesión se mantendrá hasta que algún conjuro u oración poderosa expulse al demonio de su anfitrión."
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"name": "Señores demoníacos",
+								"type": "entries",
+								"entries": [
+									"La energía caótica del Abismo premia a los demonios particularmente crueles e ingeniosos con una bendición oscura, transformándolos en seres únicos cuyo poder puede rivalizar con el de los dioses. Estos señores demoníacos gobiernan mediante la fuerza bruta o la astucia con la esperanza de poder autoproclamarse en el futuro amos de todo el Abismo.",
+									{
+										"type": "entries",
+										"entries": [
+											{
+												"name": "Recompensas para los forasteros",
+												"type": "entries",
+												"entries": [
+													"Aunque la mayoría de los señores demonio ascienden de entre las vastas e incontables hordas de demonios repartidas por los Planos Inferiores, el Abismo también recompensa a aquellos forasteros que conquistan cualquiera de sus infinitas capas. Por ejemplo, la diosa elfa Lolth se convirtió en señora demoníaca después de que Corellon Larethian la arrojara al Abismo por traicionar a toda la estirpe de los elfos. Además, los eruditos afirman que el Príncipe Oscuro Graz'zt llegó al Abismo desde algún otro plano y le robó su título en el abismo a un señor demoníaco ya olvidado."
+												]
+											},
+											{
+												"name": "Poder y control",
+												"type": "entries",
+												"entries": [
+													"La mayor muestra de poder de un señor demoníaco es su capacidad para transformar un reino abisal. Si controla alguna de las infinitas capas del Abismo, esta se convertirá en un reflejo de la terrible personalidad de su gobernante. Los señores demoníacos rara vez abandonan su reino, pues temen que otra criatura le dé forma y se haga con su control.",
+													"Como ocurre con otros demonios, la esencia de un señor demoníaco que muera en otro plano volverá al Abismo, donde tomará de nuevo forma corpórea. Además, un señor demoníaco que muera en el Abismo será destruido permanentemente. La mayoría de los señores demonio mantienen parte de su esencia a buen recaudo para evitar tal destino."
+												]
+											}
+										]
+									},
+									{
+										"name": "Bafomet",
+										"type": "entries",
+										"entries": [
+											"El señor demoníaco Bafomet, también conocido como el Rey Astado y el Príncipe de las Bestias, gobierna a los minotauros y otras criaturas salvajes. Si consiguiera su objetivo, la civilización se desmoronaría y todas las razas abrazarían sus instintos animales más elementales.",
+											"El Príncipe de las Bestias se presenta como un minotauro enorme, de pelaje negro, con cuernos de hierro, ojos rojos y una boca empapada en sangre. Su corona de hierro está adornada con las cabezas podridas de sus enemigos y su armadura oscura está tachonada con pinchos y bordes dentados en forma de calavera. Lleva una enorme guja llamada Hiendecorazones, pero a menudo la arroja en batalla para enfrentarse a sus enemigos con cuernos y pezuñas."
+										]
+									},
+									{
+										"name": "Demogorgon",
+										"type": "entries",
+										"entries": [
+											"La Bestia Sibilante y el autoproclamado Príncipe de los Demonios, Demogorgon anhela destruir por completo el orden del multiverso. El Príncipe de los Demonios es una mezcla de rasgos e impulsos que desafía la cordura, inspirando miedo y odio entre el resto de demonios y señores demoníacos.",
+											"Demogorgon sobrepasa tres veces la altura de un ser humano, su cuerpo es sinuoso como el de una serpiente y tan poderoso como el de un gran simio. En lugar de brazos posee tentáculos. La mitad inferior de su cuerpo, similar a la de un reptil, acaba en unos pies palmeados y con garras, y en una cola bífida cuyas puntas están cubiertas de cuchillas mortales. El Príncipe de los Demonios tiene dos funestas cabezas de babuino, pero ambas están locas. Lo único que pone en jaque las ambiciones del señor demoníaco es el conflicto constante entre sus dos mitades."
+										]
+									},
+									{
+										"name": "Graz'zt",
+										"type": "entries",
+										"entries": [
+											"El señor demoníaco Graz'zt se manifiesta como una figura de una intensa belleza oscura y casi 9 pies (2,7 m) de altura. Aquellos que se refieren al Príncipe Oscuro como el más humano de los señores demonio subestiman enormemente la capacidad para el mal que posee su corazón lleno de intrigas.",
+											"Graz'zt es un espécimen físico sorprendente, cuya naturaleza demoníaca se muestra en su piel de ébano, orejas puntiagudas, colmillos amarillentos, corona de cuernos y seis dedos en cada mano. Le deleita vestir ropajes elegantes, la pompa y saciar sus deseos decadentes con súbditos y consortes por igual. Sus favoritos suelen ser íncubos y súcubos."
+										]
+									},
+									{
+										"name": "Juiblex",
+										"type": "entries",
+										"entries": [
+											"Juiblex, el señor demoníaco de limos y cienos, es un potaje de líquidos nocivos que se esconde en las profundidades abisales. El miserable Señor sin Rostro no se preocupa por ser venerado o tener siervos mortales, ya que su único deseo es convertir a todas las criaturas en copias de su horrible ser.",
+											"En su estado de reposo, Juiblex se extiende como una masa nociva y burbujeante, e inunda el aire de un profundo hedor. En las raras ocasiones en las que alguna criatura se enfrenta a este señor demoníaco, Juiblex se convierte en un tembloroso cono de limo estriado con vetas negras y verdes. Un par de ojos rojos y funestos nada en su cuerpo gelatinoso, mientras sus pseudópodos que gotean perpetuamente arremeten con avidez contra cualquier criatura que puedan alcanzar."
+										]
+									},
+									{
+										"name": "Lolth",
+										"type": "entries",
+										"entries": [
+											"La Reina Demoníaca de las Arañas es la malvada matrona de los drows. Todo pensamiento que recorre su mente tiene tintes malignos, hasta tal punto que la profundidad de su salvajismo sorprende incluso a sus más devotas sacerdotisas. Dirige a sus fieles mientras teje conspiraciones a través de los mundos del Plano Material, esperando el momento en el que sus seguidores drows le ofrezcan el control de esos mundos.",
+											"Lolth se muestra como una matriarca drow ágil e imperiosa cuando se manifiesta a sus seguidores del reino mortal, cosa que hace con inusitada frecuencia. Cuando entre en combate (o si desea recordar a sus seguidores que deben temerla) la parte inferior de su cuerpo se transforma en la de una enorme araña demoníaca, cuyas afiladas patas y mandíbulas parten a sus enemigos en dos."
+										]
+									},
+									{
+										"name": "Orcus",
+										"type": "entries",
+										"entries": [
+											"Conocido como el Príncipe Demonio de los Muertos Vivientes y el Señor de la Sangre, Orcus es adorado por los muertos vivientes y las criaturas vivas que canalizan la energía de la muerte en vida. Orcus, un ser nihilista y sombrío, anhela hacer del multiverso un lugar fúnebre y oscuro, en el que nada cambie salvo si él así lo desea.",
+											"El Príncipe Demonio de los Muertos Vivientes es una criatura nauseabunda y corpulenta, con un torso humanoide, poderosas patas de cabra y la cabeza de un carnero enjuto. Su cuerpo, cubierto de úlceras, hiede a enfermedad, pero su podrida cabeza y brillantes ojos rojos son los de una criatura ya muerta. De su espalda brotan negras alas de murciélago que producen un aire apestoso al moverse.",
+											"Orcus posee un malévolo artefacto conocido como la {@italic Varita de Orcus}, una vara de obsidiana con forma de maza en cuyo extremo superior reposa un cráneo humanoide. Este infernal se rodea de muertos vivientes y los vivos que no están bajo su control le repugnan."
+										]
+									},
+									{
+										"name": "Yeenoghu",
+										"type": "entries",
+										"entries": [
+											"Conocido como el Señor de los Gnolls y la Bestia de la Carnicería, el señor demoníaco Yeenoghu anhela masacrar y destruir sin propósito. Los gnolls son sus instrumentos mortales, a los cuales conmina a cometer atrocidades cada vez más grandes en su nombre. El Señor de los Gnolls se regodea en el dolor y la desesperación, y desea convertir el mundo en un erial en el que los últimos supervivientes, sus hijos los gnolls, se disputen el derecho a alimentarse de los muertos.",
+											"Yeenoghu se muestra como un gnoll enorme lleno de cicatrices, con una prominente cresta de espinas negras y ojos que arden con un brillo esmeralda. Su armadura es un conglomerado de escudos y petos arrancados de los cadáveres de sus enemigos y decorado con sus pieles desolladas. Yeenoghu puede invocar un flagelo triple al que llama el Carnicero, que maneja con mortal destreza. Esta arma también es capaz de atacar de forma independiente, controlada por la voluntad de Yeenoghu mientras este se abalanzar al combate para destrozar a sus enemigos con garras y dientes."
+										]
+									},
+									{
+										"name": "Otros señores demoníacos",
+										"type": "entries",
+										"entries": [
+											"Se desconoce el número total de señores demoníacos que llenan el Abismo con su furia. Teniendo en cuenta las infinitas profundidades de este plano, constantemente aparecen demonios poderosos que se alzan con el título de señores demoníacos para perderlo inmediatamente después. Algunos de los señores demoníacos cuyo poder les ha permitido mantenerse con vida el tiempo suficiente como para que los demonólogos registren sus andanzas se encuentran Fraz-Urb'luu, Príncipe del Engaño; Kostchtchie, Príncipe de la Ira; Pazuzu, Príncipe de los Reinos Aéreos Inferiores; y Zuggtmoy, Dama de los Hongos."
+										]
+									}
+								]
+							},
+							{
+								"name": "Tipos de demonio",
+								"type": "entries",
+								"entries": [
+									"Los demonólogos categorizan a los caóticos demonios según su poder en lo que denominan tipos. La mayoría de demonios encajan en uno de los seis tipos principales, con los más débiles clasificados como de tipo 1 y los más fuertes como de tipo 6. Los demonios que no forman parte de los seis tipos principales se clasifican como demonios menores o señores demoníacos."
+								]
+							},
+							{
+								"type": "table",
+								"caption": "Demonios por tipo",
+								"colLabels": [
+									"Tipo",
+									"Ejemplos"
+								],
+								"colStyles": [
+									"col-2 text-center",
+									"col-10"
+								],
+								"rows": [
+									[
+										"1",
+										"Barlgura, demonio de las sombras, vrock"
+									],
+									[
+										"2",
+										"Chasme, hezrou"
+									],
+									[
+										"3",
+										"Glabrezu, yochlol"
+									],
+									[
+										"4",
+										"Nalfeshnee"
+									],
+									[
+										"5",
+										"Marilith"
+									],
+									[
+										"6",
+										"Balor, goristro"
+									]
+								]
+							},
+							{
+								"type": "inset",
+								"name": "Los nombres verdaderos de los demonios",
+								"entries": [
+									"Aunque todos los demonios poseen nombres comunes, cada señor demoníaco y demonio de los tipos 1 a 6 tiene un nombre propio que guarda en secreto. Un demonio {@condition hechizado|PHB-ES} puede ser obligado a revelar su verdadero nombre, y se dice que ciertos tomos y pergaminos antiguos contienen listas con los nombres de los demonios más poderosos.",
+									"Un mortal que aprenda el nombre propio de un demonio será capaz de invocarlo usando poderosos conjuros y mantener cierto tipo de control sobre él. Sin embargo, la mayoría de los demonios que llegan al Plano Material de esta manera hacen todo lo posible para causar estragos o sembrar la discordia en el mundo."
+								]
+							},
+							{
+								"type": "inset",
+								"name": "Variante: Invocaciones demoníacas",
+								"entries": [
+									"Algunos demonios pueden utilizar una acción para invocar a otros demonios.",
+									"{@b Invocar demonio (1/Día)}. El demonio elige qué seres va a invocar e intenta recurrir a la magia para hacerlo.",
+									{
+										"type": "list",
+										"items": [
+											"Un {@b balor} tiene un {@chance 50|50%} de probabilidades de invocar {@dice 1d8} vrocks, {@dice 1d6} hezrous, {@dice 1d4} glabrezus, {@dice 1d3} nalfeshnees, {@dice 1d2} mariliths o 1 goristro.",
+											"Un {@b barlgura} tiene un {@chance 30|30%} de probabilidades de invocar 1 barlgura.",
+											"Un {@b chasme} tiene un {@chance 30|30%} de probabilidades de invocar 1 chasme.",
+											"Un {@b glabrezu} tiene un {@chance 30|30%} de probabilidades de invocar {@dice 1d3} vrocks, {@dice 1d2} hezrous o 1 glabrezu.",
+											"Un {@b hezrou} tiene un {@chance 30|30%} de probabilidades de invocar {@dice 2d6} dretchs o 1 hezrou.",
+											"Una {@b marilith} tiene un {@chance 50|50%} de probabilidades de invocar {@dice 1d6} vrocks, {@dice 1d4} hezrous, {@dice 1d3} glabrezus, {@dice 1d2} nalfeshnees o 1 marilith.",
+											"Un {@b nalfeshnee} tiene un {@chance 50|50%} de probabilidades de invocar {@dice 1d4} vrocks, {@dice 1d3} hezrous, {@dice 1d2} glabrezus o 1 nalfeshnee.",
+											"Un {@b vrock} tiene un {@chance 30|30%} de probabilidades de invocar {@dice 2d4} dretchs o 1 vrock",
+											"Una {@b yochlol} tiene un {@chance 50|50%} de probabilidades de invocar 1 yochlol."
+										]
+									},
+									"Los demonios invocados aparecen en un espacio desocupado a 60 pies o menos de su invocador. Se comportan como sus aliados y no podrán invocar a su vez a otros demonios. Permanecerán durante 1 minuto, hasta que su invocador muera o hasta que este los desconvoque utilizando una acción."
+								]
+							}
+						]
+					}
+				],	
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Barlgura.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
             "name": "Osgo",
             "source": "MM-ES",
             "page": 33,
@@ -37829,6 +38275,431 @@
 			"conditionInflict": [
 				"prone"
 			]
+		},
+		{
+			"name": "Demonio de las sombras",
+			"source": "MM-ES",
+			"page": 64,
+			"size": "M",
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"infernal","demonio"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 66,
+				"formula": "12d8 + 12"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30
+			},
+			"str": 1,
+			"dex": 17,
+			"con": 12,
+			"int": 14,
+			"wis": 13,
+			"cha": 14,
+			"save": {
+				"dex": "+5",
+				"cha": "+4"
+			},
+			"skill": {
+				"stealth": "+7"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 11,
+			"resist": [
+				"acid",
+				"fire",
+				"necrotic",
+				"thunder",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "de ataques no mágicos",
+					"cond": true
+				}
+			],
+			"immune": [
+				"cold",
+				"lightning",
+				"poison"
+			],
+			"vulnerable": [
+				"radiant"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"languages": [
+				"Abisal",
+				"telepatía 120 pies"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Movimiento Incorpóreo",
+					"entries": [
+						"El demonio puede moverse a través de otras criaturas y objetos como si fueran terreno difícil. Recibe 5 ({@damage 1d10}) de daño de fuerza si acaba su turno dentro de un objeto."
+					]
+				},
+				{
+					"name": "Sensibilidad a la Luz",
+					"entries": [
+						"El demonio tiene desventaja en las tiradas de ataque y las pruebas de Sabiduría ({@skill Perception|Percepción}) que dependan de la vista hechas bajo luz brillante."
+					]
+				},
+				{
+					"name": "Esconderse en las Sombras",
+					"entries": [
+						"Mientras se encuentra bajo luz tenue o en oscuridad, el demonio puede Esconderse usando una acción adicional. "
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Garras",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}10 ({@damage 2d6 + 3}) psychic damage or, if the demon had advantage on the attack roll, 17 ({@damage 4d6 + 3}) psychic damage."
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Shadow%20Demon.png",
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/shadow-demon.mp3"
+			},
+			"traitTags": [
+				"Movimiento Incorpóreo",
+				"Sensibilidad a la Luz"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languageTags": [
+				"AB",
+				"TP"
+			],
+			"damageTags": [
+				"O",
+				"Y"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Cuando el cuerpo de un demonio es destruido y de alguna forma se evita que este se reconstituya en el Abismo, a veces su esencia asume una forma física difusa; la de un demonio de las sombras. Estos demonios existen fuera de la jerarquía normal del Abismo, ya que su creación suele depender más de la magia mortal que de encumbramientos o transformaciones.",
+									"Los demonios de las sombras apenas son visibles en la oscuridad y pueden arrastrarse sin hacer un solo ruido. Estas criaturas utilizan sus garras insustanciales para alimentarse de los miedos de sus víctimas, probar sus recuerdos y beberse sus dudas. La luz brillante atormenta a estos demonios y les obliga a mostrar su verdadera forma, la de un humanoide con alas cuya parte inferior se desvanece y cuyas garras rasgan la mente de sus víctimas. ",
+									{
+										"name": "Naturaleza sombría",
+										"type": "entries",
+										"entries": [
+											"Un demonio de las sombras no necesita respirar, comer, beber ni dormir."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"name": "Demonios",
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Los demonios nacen en las Infinitas Capas del Abismo y son la personificación del caos y del mal: máquinas de destrucción apenas contenidas dentro de formas monstruosas. Solo existen para causar la destrucción y no poseen misericordia, compasión ni empatía.",
+											{
+												"name": "Engendros del caos",
+												"type": "entries",
+												"entries": [
+													"El Abismo crea espontáneamente demonios, que son extensiones de sí mismo, usando suciedad y carroña. Algunos son únicos en su monstruosidad, mientras que otros parecen surgidos de la misma cepa, prácticamente idénticos los unos a los otros. Hay otros demonios (como los manes) formados a partir de almas mortales, malditas y abandonadas por los dioses o atrapadas en el Abismo por cualquier otro motivo."
+												]
+											},
+											{
+												"name": "Encumbramiento caprichoso",
+												"type": "entries",
+												"entries": [
+													"Los demonios solo respetan el poder. Así, los demonios mayores comandan hordas de demonios menores simplemente porque son capaces de aplastarlos si se niegan a obedecer sus órdenes. El estatus de los demonios crece junto con la sangre que derraman. Cuantos más enemigos caigan a sus pies, mayor será su reputación.",
+													"Un demonio puede ser engendrado como un mane, para después pasar a ser un dretch, que a su vez podría acabar transformado en un vrok tras una eternidad luchando y sobreviviendo en el Abismo. Sin embargo, estos encumbramientos son raros, ya que la mayoría de los demonios son destruidos antes de ser capaces de amasar una cantidad importante de poder. Los más poderosos de los que sobreviven pasan a engrosar las filas de los señores demoníacos, que amenazan con desgarrar el Abismo con sus interminables guerras.",
+													"Estos señores demoníacos pueden convertir a demonios menores en demonios más poderosos consumiendo una importante cantidad de poder mágico en el proceso. No obstante, estos ascensos no se producen nunca como reconocimiento a sus méritos, sino que suceden por las necesidades del demonio mayor. Un señor demoníaco podría transformar a un mane en un quasit porque requiere un espía invisible, o convertir una horda de dretchs en hezrous si está combatiendo a otro señor demoníaco. En muy pocas ocasiones se asciende a un demonio a los rangos más altos, ya que esto resultaría en la creación de rivales de su mismo poder."
+												]
+											},
+											{
+												"name": "Invasiones abisales",
+												"type": "entries",
+												"entries": [
+													"En sus viajes por el Abismo, los demonios buscan portales hacia otros planos. Anhelan la oportunidad de escapar de su reino nativo y extender su influencia oscura por todo el multiverso, deshaciendo las obras de los dioses, derribando civilizaciones y reduciendo el cosmos a la desesperación y la ruina.",
+													"Algunas de las leyendas más oscuras del reino mortal se refieren a la destrucción causada por demonios que caminaron por el mundo. Incluso las naciones envueltas en cruentas guerras apartarán por un momento sus diferencias para ayudar a contener a los demonios que pretenden invadir el mundo, o para sellar brechas abisales antes de que estos infernales sean capaces de atravesarlas."
+												]
+											},
+											{
+												"name": "Signos de corrupción",
+												"type": "entries",
+												"entries": [
+													"Los demonios arrastran la mancha de la corrupción abisal con ellos y su sola presencia transforma el mundo en un lugar peor. Las plantas se marchitan y mueren en las zonas donde aparecen brechas abisales o demonios. Los animales evitan los lugares en los que un demonio ha cometido un asesinato. El espacio en el que se produce una infestación demoníaca podría corromperse con un olor asqueroso que nunca remite, con zonas de calor o frío extremos, o con una sombra eterna que marca los lugares donde los infernales merodearon."
+												]
+											},
+											{
+												"name": "Mal eterno",
+												"type": "entries",
+												"entries": [
+													"Fuera del Abismo, la muerte es una molestia menor que los demonios no temen. Las armas mundanas no pueden detener a estos infernales y muchos demonios son resistentes a la energía de los conjuros más potentes. Cuando un afortunado héroe logra derrotar en combate a un demonio, este último se disuelve en un icor asqueroso. En ese momento se reconstruye dentro del Abismo con su mente y esencia intactos, pero albergando un profundo odio contra su ejecutor. La única manera de destruir verdaderamente un demonio es buscarlo en el Abismo y matarlo en ese plano."
+												]
+											},
+											{
+												"name": "Esencia protegida",
+												"type": "entries",
+												"entries": [
+													"Un demonio poderoso es capaz de tomar medidas para salvaguardar su esencia vital, utilizando métodos secretos y metales abisales para crear un amuleto al cual cede parte de su esencia. Si la forma abisal de un demonio es destruida, dicho amuleto le permite reconstruirse cuando y donde quiera.",
+													"Obtener un amuleto demoníaco es peligroso, y simplemente el buscarlo puede poner en guardia al demonio que lo creó. Una criatura que posea un amuleto de este tipo puede exigir favores al ser infernal cuya esencia vital está contenida en el objeto, así como provocarle un gran dolor si este se resiste. Si el amuleto es destruido, el demonio que lo creó quedará atrapado en el Abismo durante un año y un día."
+												]
+											},
+											{
+												"name": "Sectas demoníacas",
+												"type": "entries",
+												"entries": [
+													"A pesar de los grandes riesgos que supone tratar con infernales, el reino mortal está plagado de criaturas que ansían poder demoníaco. Los señores demoníacos manipulan a estos servidores mortales para que realicen grandes actos de maldad y depravación, satisfaciendo así sus ambiciones a cambio de magia y otros beneficios. No obstante, un demonio considera a los mortales que están a su servicio como herramientas que usar y tirar cuando ya no le son útiles. En lo que a estas pobres víctimas respecta, sus almas mortales terminan en el Abismo."
+												]
+											},
+											{
+												"name": "Invocaciones demoníacas",
+												"type": "entries",
+												"entries": [
+													"Hay pocos actos más peligrosos que invocar a un demonio, e incluso aquellos magos que tratan habitualmente con diablos temen a los infernales del Abismo. Aunque los demonios ansían sembrar el caos en el Plano Material, no muestran gratitud alguna cuando se les invoca y, furiosos, arremeten contra sus cárceles, exigiendo su liberación.",
+													"Aquellas criaturas que se arriesgan a invocar a un demonio lo hacen para sonsacarles información, forzarles a trabajar para ellas o mandarles en alguna misión que solo un ser de pura maldad podría completar. La preparación es clave, y los invocadores más experimentados conocen los conjuros y objetos mágicos capaces de doblegar a un demonio a su voluntad. Un único error es suficiente para que el monstruo se libere; no mostrará piedad alguna y la primera víctima de su furia será el invocador."
+												]
+											},
+											{
+												"name": "Vincular a un demonio",
+												"type": "entries",
+												"entries": [
+													"{@italic El Libro de la Oscuridad Vil}, los {@italic Pergaminos Negros de Ahm} y el {@italic Demonomicón de Iggwilv} son las máximas autoridades en lo que a demonios se refiere. Estos tomos antiguos describen técnicas capaces de atrapar la esencia de un demonio en el Plano Material, colocándolo dentro de un arma, ídolo o joya para así evitar que regrese al Abismo.",
+													"El objeto al que se vincula el demonio debe estar imbuido con encantamientos impíos y sangre de inocente. Irradiará un mal capaz de corromper y enfriar el aire a su alrededor. Aquella criatura que porte el objeto experimentará sueños inquietantes e impulsos malignos, pero a cambio será capaz de controlar al demonio cuya esencia esté atrapada en el objeto. Si el objeto se destruye, la criatura se liberará y buscará saciar su sed de venganza persiguiendo a quien lo vinculó."
+												]
+											},
+											{
+												"name": "Posesión demoniaca",
+												"type": "entries",
+												"entries": [
+													"No importa cómo de seguro sea un vínculo: un demonio poderoso suele encontrar la manera de escapar del objeto al que fue atado. Cuando una esencia demoníaca se libera de aquello que la contiene, puede poseer a un anfitrión mortal. En ocasiones, los demonios recurren al subterfugio para que una posesión no resulte obvia. Pero otras veces desatan la fuerza de sus impulsos demoníacos a través de su nuevo cuerpo.",
+													"Mientras el demonio continúe poseyendo a su anfitrión, el alma de este último estará en peligro de ser arrastrada al Abismo junto con el demonio si se le exorciza del cuerpo o el poseído muere. Si un demonio posee a una criatura y el objeto al que estaba vinculado es destruido, la posesión se mantendrá hasta que algún conjuro u oración poderosa expulse al demonio de su anfitrión."
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"name": "Señores demoníacos",
+								"type": "entries",
+								"entries": [
+									"La energía caótica del Abismo premia a los demonios particularmente crueles e ingeniosos con una bendición oscura, transformándolos en seres únicos cuyo poder puede rivalizar con el de los dioses. Estos señores demoníacos gobiernan mediante la fuerza bruta o la astucia con la esperanza de poder autoproclamarse en el futuro amos de todo el Abismo.",
+									{
+										"type": "entries",
+										"entries": [
+											{
+												"name": "Recompensas para los forasteros",
+												"type": "entries",
+												"entries": [
+													"Aunque la mayoría de los señores demonio ascienden de entre las vastas e incontables hordas de demonios repartidas por los Planos Inferiores, el Abismo también recompensa a aquellos forasteros que conquistan cualquiera de sus infinitas capas. Por ejemplo, la diosa elfa Lolth se convirtió en señora demoníaca después de que Corellon Larethian la arrojara al Abismo por traicionar a toda la estirpe de los elfos. Además, los eruditos afirman que el Príncipe Oscuro Graz'zt llegó al Abismo desde algún otro plano y le robó su título en el abismo a un señor demoníaco ya olvidado."
+												]
+											},
+											{
+												"name": "Poder y control",
+												"type": "entries",
+												"entries": [
+													"La mayor muestra de poder de un señor demoníaco es su capacidad para transformar un reino abisal. Si controla alguna de las infinitas capas del Abismo, esta se convertirá en un reflejo de la terrible personalidad de su gobernante. Los señores demoníacos rara vez abandonan su reino, pues temen que otra criatura le dé forma y se haga con su control.",
+													"Como ocurre con otros demonios, la esencia de un señor demoníaco que muera en otro plano volverá al Abismo, donde tomará de nuevo forma corpórea. Además, un señor demoníaco que muera en el Abismo será destruido permanentemente. La mayoría de los señores demonio mantienen parte de su esencia a buen recaudo para evitar tal destino."
+												]
+											}
+										]
+									},
+									{
+										"name": "Bafomet",
+										"type": "entries",
+										"entries": [
+											"El señor demoníaco Bafomet, también conocido como el Rey Astado y el Príncipe de las Bestias, gobierna a los minotauros y otras criaturas salvajes. Si consiguiera su objetivo, la civilización se desmoronaría y todas las razas abrazarían sus instintos animales más elementales.",
+											"El Príncipe de las Bestias se presenta como un minotauro enorme, de pelaje negro, con cuernos de hierro, ojos rojos y una boca empapada en sangre. Su corona de hierro está adornada con las cabezas podridas de sus enemigos y su armadura oscura está tachonada con pinchos y bordes dentados en forma de calavera. Lleva una enorme guja llamada Hiendecorazones, pero a menudo la arroja en batalla para enfrentarse a sus enemigos con cuernos y pezuñas."
+										]
+									},
+									{
+										"name": "Demogorgon",
+										"type": "entries",
+										"entries": [
+											"La Bestia Sibilante y el autoproclamado Príncipe de los Demonios, Demogorgon anhela destruir por completo el orden del multiverso. El Príncipe de los Demonios es una mezcla de rasgos e impulsos que desafía la cordura, inspirando miedo y odio entre el resto de demonios y señores demoníacos.",
+											"Demogorgon sobrepasa tres veces la altura de un ser humano, su cuerpo es sinuoso como el de una serpiente y tan poderoso como el de un gran simio. En lugar de brazos posee tentáculos. La mitad inferior de su cuerpo, similar a la de un reptil, acaba en unos pies palmeados y con garras, y en una cola bífida cuyas puntas están cubiertas de cuchillas mortales. El Príncipe de los Demonios tiene dos funestas cabezas de babuino, pero ambas están locas. Lo único que pone en jaque las ambiciones del señor demoníaco es el conflicto constante entre sus dos mitades."
+										]
+									},
+									{
+										"name": "Graz'zt",
+										"type": "entries",
+										"entries": [
+											"El señor demoníaco Graz'zt se manifiesta como una figura de una intensa belleza oscura y casi 9 pies (2,7 m) de altura. Aquellos que se refieren al Príncipe Oscuro como el más humano de los señores demonio subestiman enormemente la capacidad para el mal que posee su corazón lleno de intrigas.",
+											"Graz'zt es un espécimen físico sorprendente, cuya naturaleza demoníaca se muestra en su piel de ébano, orejas puntiagudas, colmillos amarillentos, corona de cuernos y seis dedos en cada mano. Le deleita vestir ropajes elegantes, la pompa y saciar sus deseos decadentes con súbditos y consortes por igual. Sus favoritos suelen ser íncubos y súcubos."
+										]
+									},
+									{
+										"name": "Juiblex",
+										"type": "entries",
+										"entries": [
+											"Juiblex, el señor demoníaco de limos y cienos, es un potaje de líquidos nocivos que se esconde en las profundidades abisales. El miserable Señor sin Rostro no se preocupa por ser venerado o tener siervos mortales, ya que su único deseo es convertir a todas las criaturas en copias de su horrible ser.",
+											"En su estado de reposo, Juiblex se extiende como una masa nociva y burbujeante, e inunda el aire de un profundo hedor. En las raras ocasiones en las que alguna criatura se enfrenta a este señor demoníaco, Juiblex se convierte en un tembloroso cono de limo estriado con vetas negras y verdes. Un par de ojos rojos y funestos nada en su cuerpo gelatinoso, mientras sus pseudópodos que gotean perpetuamente arremeten con avidez contra cualquier criatura que puedan alcanzar."
+										]
+									},
+									{
+										"name": "Lolth",
+										"type": "entries",
+										"entries": [
+											"La Reina Demoníaca de las Arañas es la malvada matrona de los drows. Todo pensamiento que recorre su mente tiene tintes malignos, hasta tal punto que la profundidad de su salvajismo sorprende incluso a sus más devotas sacerdotisas. Dirige a sus fieles mientras teje conspiraciones a través de los mundos del Plano Material, esperando el momento en el que sus seguidores drows le ofrezcan el control de esos mundos.",
+											"Lolth se muestra como una matriarca drow ágil e imperiosa cuando se manifiesta a sus seguidores del reino mortal, cosa que hace con inusitada frecuencia. Cuando entre en combate (o si desea recordar a sus seguidores que deben temerla) la parte inferior de su cuerpo se transforma en la de una enorme araña demoníaca, cuyas afiladas patas y mandíbulas parten a sus enemigos en dos."
+										]
+									},
+									{
+										"name": "Orcus",
+										"type": "entries",
+										"entries": [
+											"Conocido como el Príncipe Demonio de los Muertos Vivientes y el Señor de la Sangre, Orcus es adorado por los muertos vivientes y las criaturas vivas que canalizan la energía de la muerte en vida. Orcus, un ser nihilista y sombrío, anhela hacer del multiverso un lugar fúnebre y oscuro, en el que nada cambie salvo si él así lo desea.",
+											"El Príncipe Demonio de los Muertos Vivientes es una criatura nauseabunda y corpulenta, con un torso humanoide, poderosas patas de cabra y la cabeza de un carnero enjuto. Su cuerpo, cubierto de úlceras, hiede a enfermedad, pero su podrida cabeza y brillantes ojos rojos son los de una criatura ya muerta. De su espalda brotan negras alas de murciélago que producen un aire apestoso al moverse.",
+											"Orcus posee un malévolo artefacto conocido como la {@italic Varita de Orcus}, una vara de obsidiana con forma de maza en cuyo extremo superior reposa un cráneo humanoide. Este infernal se rodea de muertos vivientes y los vivos que no están bajo su control le repugnan."
+										]
+									},
+									{
+										"name": "Yeenoghu",
+										"type": "entries",
+										"entries": [
+											"Conocido como el Señor de los Gnolls y la Bestia de la Carnicería, el señor demoníaco Yeenoghu anhela masacrar y destruir sin propósito. Los gnolls son sus instrumentos mortales, a los cuales conmina a cometer atrocidades cada vez más grandes en su nombre. El Señor de los Gnolls se regodea en el dolor y la desesperación, y desea convertir el mundo en un erial en el que los últimos supervivientes, sus hijos los gnolls, se disputen el derecho a alimentarse de los muertos.",
+											"Yeenoghu se muestra como un gnoll enorme lleno de cicatrices, con una prominente cresta de espinas negras y ojos que arden con un brillo esmeralda. Su armadura es un conglomerado de escudos y petos arrancados de los cadáveres de sus enemigos y decorado con sus pieles desolladas. Yeenoghu puede invocar un flagelo triple al que llama el Carnicero, que maneja con mortal destreza. Esta arma también es capaz de atacar de forma independiente, controlada por la voluntad de Yeenoghu mientras este se abalanzar al combate para destrozar a sus enemigos con garras y dientes."
+										]
+									},
+									{
+										"name": "Otros señores demoníacos",
+										"type": "entries",
+										"entries": [
+											"Se desconoce el número total de señores demoníacos que llenan el Abismo con su furia. Teniendo en cuenta las infinitas profundidades de este plano, constantemente aparecen demonios poderosos que se alzan con el título de señores demoníacos para perderlo inmediatamente después. Algunos de los señores demoníacos cuyo poder les ha permitido mantenerse con vida el tiempo suficiente como para que los demonólogos registren sus andanzas se encuentran Fraz-Urb'luu, Príncipe del Engaño; Kostchtchie, Príncipe de la Ira; Pazuzu, Príncipe de los Reinos Aéreos Inferiores; y Zuggtmoy, Dama de los Hongos."
+										]
+									}
+								]
+							},
+							{
+								"name": "Tipos de demonio",
+								"type": "entries",
+								"entries": [
+									"Los demonólogos categorizan a los caóticos demonios según su poder en lo que denominan tipos. La mayoría de demonios encajan en uno de los seis tipos principales, con los más débiles clasificados como de tipo 1 y los más fuertes como de tipo 6. Los demonios que no forman parte de los seis tipos principales se clasifican como demonios menores o señores demoníacos."
+								]
+							},
+							{
+								"type": "table",
+								"caption": "Demonios por tipo",
+								"colLabels": [
+									"Tipo",
+									"Ejemplos"
+								],
+								"colStyles": [
+									"col-2 text-center",
+									"col-10"
+								],
+								"rows": [
+									[
+										"1",
+										"Barlgura, demonio de las sombras, vrock"
+									],
+									[
+										"2",
+										"Chasme, hezrou"
+									],
+									[
+										"3",
+										"Glabrezu, yochlol"
+									],
+									[
+										"4",
+										"Nalfeshnee"
+									],
+									[
+										"5",
+										"Marilith"
+									],
+									[
+										"6",
+										"Balor, goristro"
+									]
+								]
+							},
+							{
+								"type": "inset",
+								"name": "Los nombres verdaderos de los demonios",
+								"entries": [
+									"Aunque todos los demonios poseen nombres comunes, cada señor demoníaco y demonio de los tipos 1 a 6 tiene un nombre propio que guarda en secreto. Un demonio {@condition hechizado|PHB-ES} puede ser obligado a revelar su verdadero nombre, y se dice que ciertos tomos y pergaminos antiguos contienen listas con los nombres de los demonios más poderosos.",
+									"Un mortal que aprenda el nombre propio de un demonio será capaz de invocarlo usando poderosos conjuros y mantener cierto tipo de control sobre él. Sin embargo, la mayoría de los demonios que llegan al Plano Material de esta manera hacen todo lo posible para causar estragos o sembrar la discordia en el mundo."
+								]
+							},
+							{
+								"type": "inset",
+								"name": "Variante: Invocaciones demoníacas",
+								"entries": [
+									"Algunos demonios pueden utilizar una acción para invocar a otros demonios.",
+									"{@b Invocar demonio (1/Día)}. El demonio elige qué seres va a invocar e intenta recurrir a la magia para hacerlo.",
+									{
+										"type": "list",
+										"items": [
+											"Un {@b balor} tiene un {@chance 50|50%} de probabilidades de invocar {@dice 1d8} vrocks, {@dice 1d6} hezrous, {@dice 1d4} glabrezus, {@dice 1d3} nalfeshnees, {@dice 1d2} mariliths o 1 goristro.",
+											"Un {@b barlgura} tiene un {@chance 30|30%} de probabilidades de invocar 1 barlgura.",
+											"Un {@b chasme} tiene un {@chance 30|30%} de probabilidades de invocar 1 chasme.",
+											"Un {@b glabrezu} tiene un {@chance 30|30%} de probabilidades de invocar {@dice 1d3} vrocks, {@dice 1d2} hezrous o 1 glabrezu.",
+											"Un {@b hezrou} tiene un {@chance 30|30%} de probabilidades de invocar {@dice 2d6} dretchs o 1 hezrou.",
+											"Una {@b marilith} tiene un {@chance 50|50%} de probabilidades de invocar {@dice 1d6} vrocks, {@dice 1d4} hezrous, {@dice 1d3} glabrezus, {@dice 1d2} nalfeshnees o 1 marilith.",
+											"Un {@b nalfeshnee} tiene un {@chance 50|50%} de probabilidades de invocar {@dice 1d4} vrocks, {@dice 1d3} hezrous, {@dice 1d2} glabrezus o 1 nalfeshnee.",
+											"Un {@b vrock} tiene un {@chance 30|30%} de probabilidades de invocar {@dice 2d4} dretchs o 1 vrock",
+											"Una {@b yochlol} tiene un {@chance 50|50%} de probabilidades de invocar 1 yochlol."
+										]
+									},
+									"Los demonios invocados aparecen en un espacio desocupado a 60 pies o menos de su invocador. Se comportan como sus aliados y no podrán invocar a su vez a otros demonios. Permanecerán durante 1 minuto, hasta que su invocador muera o hasta que este los desconvoque utilizando una acción."
+								]
+							}
+						]
+					}
+				],	
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Shadow Demon.jpg"
+						}
+					}
+				]
+			}
 		},
 		{
             "name": "Esqueleto",
@@ -88071,7 +88942,7 @@
             }
         }, 
 		{
-            "name": "Immolation",
+            "name": "Inmolación",
             "source": "XGE-ES",
             "page": 158,
             "level": 5,
@@ -88100,7 +88971,10 @@
                     "concentration": true
                 }
             ],
-            "entries": ["Flames wreathe one creature you can see within range. The target must make a Dexterity saving throw. It takes {@damage 8d6} fire damage on a failed save, or half as much damage on a successful one. On a failed save, the target also burns for the spell's duration. The burning target sheds bright light in a 30-foot radius and dim light for an additional 30 feet. At the end of each of its turns, the target repeats the saving throw. It takes {@damage 4d6} fire damage on a failed save, and the spell ends on a successful one. These magical flames can't be extinguished by nonmagical means.", "If damage from this spell kills a target, the target is turned to ash."],
+            "entries": [
+				"Una criatura que puedas ver y se encuentre dentro del alcance se ve envuelta en llamas. El objetivo deberá hacer una tirada de salvación de Destreza. Sufrirá {@damage 8d6} de daño de fuego si falla la tirada o la mitad de ese daño si la supera. Si falla, la criatura también arderá mientras dure el conjuro, emitiendo luz brillante en un radio de 30 pies y luz tenue 30 pies más allá. Al final de cada uno de sus turnos, la criatura que está ardiendo repetirá la tirada de salvación. Sufrirá {@damage 4d6} de daño de fuego si la falla y terminará el conjuro si la supera. Estas llamas mágicas no pueden extinguirse usando medios no mágicos.", 
+				"Si el daño de este conjuro mata a un objetivo, su cuerpo se convierte en cenizas."
+			],
             "damageInflict": ["fire"],
             "savingThrow": ["dexterity"],
             "miscTags": ["SGT"],
@@ -88239,7 +89113,7 @@
             }
         }, 
 		{
-            "name": "Investiture of Flame",
+            "name": "Indumentaria de llamas",
             "source": "XGE-ES",
             "page": 159,
             "level": 6,
@@ -88268,9 +89142,13 @@
                     "concentration": true
                 }
             ],
-            "entries": ["Flames race across your body, shedding bright light in a 30-foot radius and dim light for an additional 30 feet for the spell's duration. The flames don't harm you. Until the spell ends, you gain the following benefits:", {
+            "entries": ["Llamas delgadas y delicadas envuelven tu cuerpo hasta el final de la duración del conjuro, emitiendo luz brillante en un radio de 30 pies y luz tenue 30 pies más allá. El fuego no te hace daño. Hasta que el conjuro termine, obtienes los siguientes beneficios:", {
                     "type": "list",
-                    "items": ["You are immune to fire damage and have resistance to cold damage.", "Any creature that moves within 5 feet of you for the first time on a turn or ends its turn there takes {@damage 1d10} fire damage.", "You can use your action to create a line of fire 15 feet long and 5 feet wide extending from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes {@damage 4d8} fire damage on a failed save, or half as much damage on a successful one."]
+                    "items": [
+						"Eres inmune al daño de fuego y tienes resistencia al daño de frío.", 
+						"Cualquier criatura que se mueva a 5 pies o menos de ti por primera vez en un turno o termine su turno dentro de esa distancia recibe {@damage 1d10} de daño de fuego.",
+						"Puedes usar tu acción para crear una línea de fuego de 15 pies de largo y 5 pies de ancho que se extiende desde ti en la dirección que elijas. Todas las criaturas situadas en esa área deberán hacer una tirada de salvación de Destreza. Cada una sufrirá {@damage 4d8} de daño de fuego si falla la tirada o la mitad de ese daño si la supera."
+					]
                 }
             ],
             "damageResist": ["cold"],
@@ -88358,7 +89236,7 @@
             }
         }, 
 		{
-            "name": "Investiture of Stone",
+            "name": "Indumentaria de piedra",
             "source": "XGE-ES",
             "page": 159,
             "level": 6,
@@ -88387,9 +89265,13 @@
                     "concentration": true
                 }
             ],
-            "entries": ["Until the spell ends, bits of rock spread across your body, and you gain the following benefits:", {
+            "entries": ["Hasta que el conjuro termine, pedacitos de roca se extienden por tu cuerpo, de modo que obtienes los siguientes beneficios:", {
                     "type": "list",
-                    "items": ["You have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks.", "You can use your action to create a small earthquake on the ground in a 15-foot radius centered on you. Other creatures on that ground must succeed on a Dexterity saving throw or be knocked {@condition prone}.", "You can move across difficult terrain made of earth or stone without spending extra movement. You can move through solid earth or stone as if it was air and without destabilizing it, but you can't end your movement there. If you do so, you are ejected to the nearest unoccupied space, this spell ends, and you are {@condition stunned} until the end of your next turn."]
+                    "items": [
+						"Ganas resistencia al daño contundente, cortante y perforante proveniente de ataques no mágicos.", 
+						"Puedes utilizar una acción para crear un pequeño terremoto en el suelo en un radio de 15 pies a tu alrededor. Todas las criaturas que se encuentren en esta área deberán superar una tirada de salvación de Destreza o serán {@condition derribado|PHB-ES|derribadas}.", 
+						"Puedes moverte a través del terreno difícil formado por tierra o piedra sin gastar movimiento adicional. Puedes desplazarte a través de tierra sólida o piedra como si fuese aire y sin desestabilizarla, pero no puedes terminar tu movimiento en su interior. Si lo haces, serás expulsado al espacio desocupado más cercano, este conjuro finalizará y estarás {@condition aturdido|PHB-ES} hasta el final de tu siguiente turno."
+					]
                 }
             ],
             "damageResist": ["bludgeoning", "piercing", "slashing"],
@@ -88414,7 +89296,7 @@
             }
         }, 
 		{
-            "name": "Investiture of Wind",
+            "name": "Indumentaria de viento",
             "source": "XGE-ES",
             "page": 160,
             "level": 6,
@@ -88443,9 +89325,13 @@
                     "concentration": true
                 }
             ],
-            "entries": ["Until the spell ends, wind whirls around you, and you gain the following benefits:", {
+            "entries": ["Hasta que el conjuro termine, el viento se arremolina alrededor de tu cuerpo y obtienes los siguientes beneficios:", {
                     "type": "list",
-                    "items": ["Ranged weapon attacks made against you have disadvantage on the attack roll.", "You gain a flying speed of 60 feet. If you are still flying when the spell ends, you fall, unless you can somehow prevent it.", "You can use your action to create a 15-foot cube of swirling wind centered on a point you can see within 60 feet of you. Each creature in that area must make a Constitution saving throw. A creature takes {@damage 2d10} bludgeoning damage on a failed save, or half as much damage on a successful one. If a Large or smaller creature fails the save, that creature is also pushed up to 10 feet away from the center of the cube."]
+                    "items": [
+						"Los ataques con arma a distancia que se realicen contra ti tienen desventaja en la tirada de ataque.", 
+						"Obtienes una velocidad volando de 60 pies. Si todavía estás volando cuando el conjuro termina, caerás, a menos que puedas evitarlo de alguna manera.", 
+						"Puedes utilizar tu acción para crear en un cubo de 15 pies, centrado en un punto que puedas ver y a un máximo de 60 pies de ti, un remolino de viento. Las criaturas situadas en la zona deberán hacer una tirada de salvación de Constitución. Sufrirán {@damage 2d10} de daño contundente si la fallan o la mitad de ese daño si la superan. Si una criatura Grande o más pequeña no supera la tirada, también será empujada hasta 10 pies alejándose del centro del cubo."
+					]
                 }
             ],
             "damageInflict": ["bludgeoning"],
@@ -89066,7 +89952,7 @@
             }
         }, 
 		{
-            "name": "Negative Energy Flood",
+            "name": "Inundación de energía negativa",
             "source": "XGE-ES",
             "page": 163,
             "level": 5,
@@ -89085,13 +89971,16 @@
             },
             "components": {
                 "v": true,
-                "m": "a broken bone and a square of black silk"
+                "m": "un hueso roto y un cuadrado de seda negra"
             },
             "duration": [{
                     "type": "instant"
                 }
             ],
-            "entries": ["You send ribbons of negative energy at one creature you can see within range. Unless the target is undead, it must make a Constitution saving throw, taking {@damage 5d12} necrotic damage on a failed save, or half as much damage on a successful one. A target killed by this damage rises up as a {@creature zombie} at the start of your next turn. The zombie pursues whatever creature it can see that is closest to it. Statistics for the {@creature zombie} are in the Monster Manual.", "If you target an undead with this spell, the target doesn't make a saving throw. Instead, roll {@dice 5d12}. The target gains half the total as temporary hit points."],
+            "entries": [
+				"Envías lazos de energía negativa a una criatura que puedas ver y se encuentre dentro del alcance. Salvo que el objetivo sea un muerto viviente, deberá hacer una tirada de salvación de Constitución, sufriendo {@damage 5d12} de daño de necrótico si la falla o la mitad de ese daño si la supera. Una criatura que fallezca a causa de este daño se alzará como un {@creature zombi|MM-ES} al inicio de tu siguiente turno. Este muerto viviente perseguirá a la criatura más cercana a él que pueda ver. El perfil del {@creature zombi|MM-ES} se encuentra en el {@italic Monster Manual}.", 
+				"Si atacas a un muerto viviente con este conjuro, el objetivo no realizará una tirada de salvación. En lugar de eso, tira {@dice 5d12}. La criatura recibe la mitad del total obtenido como puntos de golpe temporales."
+			],
             "damageInflict": ["necrotic"],
             "savingThrow": ["constitution"],
             "miscTags": ["SGT", "SMN", "THP"],
@@ -90005,7 +90894,7 @@
 			}
         }, 
 		{
-            "name": "Summon Greater Demon",
+            "name": "Invocar demonio mayor",
             "source": "XGE-ES",
             "page": 166,
             "level": 4,
@@ -90026,7 +90915,7 @@
                 "v": true,
                 "s": true,
                 "m": {
-                    "text": "a vial of blood from a humanoid killed within the past 24 hours",
+                    "text": "un vial con sangre de un humanoide muerto en las últimas 24 horas",
                     "consume": "optional"
                 }
             },
@@ -90039,11 +90928,16 @@
                     "concentration": true
                 }
             ],
-            "entries": ["You utter foul words, summoning one demon from the chaos of the Abyss. You choose the demon's type, which must be {@filter one of challenge rating 5 or lower|bestiary|challenge rating=[&0;&5]|tag=demon|miscellaneous=!swarm}, such as a {@creature shadow demon} or a {@creature barlgura}. The demon appears in an unoccupied space you can see within range, and the demon disappears when it drops to 0 hit points or when the spell ends.", "Roll initiative for the demon, which has its own turns. When you summon it and on each of your turns thereafter, you can issue a verbal command to it (requiring no action on your part), telling it what it must do on its next turn. If you issue no command, it spends its turn attacking any creature within reach that has attacked it.", "At the end of each of the demon's turns, it makes a Charisma saving throw. The demon has disadvantage on this saving throw if you say its true name. On a failed save, the demon continues to obey you. On a successful save, your control of the demon ends for the rest of the duration, and the demon spends its turns pursuing and attacking the nearest non-demons to the best of its ability. If you stop concentrating on the spell before it reaches its full duration, an uncontrolled demon doesn't disappear for {@dice 1d6} rounds if it still has hit points.", "As part of casting the spell, you can form a circle on the ground with the blood used as a material component. The circle is large enough to encompass your space. While the spell lasts, the summoned demon can't cross the circle or harm it, and it can't target anyone within it. Using the material component in this manner consumes it when the spell ends."],
+            "entries": [
+				"Pronuncias unas palabras blasfemas, convocando a un demonio desde el caos del Abismo. Eliges el tipo de demonio, que debe ser de {@filter valor de desafío 5 o inferior|bestiary|challenge rating=[&0;&5]|tag=demonio|miscellaneous=!swarm}, como un {@creature demonio de las sombras|MM-ES} o un {@creature barlgura|MM-ES}. La criatura aparece en un espacio desocupado que puedas ver y se encuentre dentro del alcance. El demonio desaparece si sus puntos de golpe descienden a 0 o el conjuro termina.", 
+				"Haz una tirada de iniciativa para el infernal, que tiene sus propios turnos. Cuando lo convoques y en cada uno de sus turnos a partir de entonces, puedes darle una orden verbal (sin requerir ninguna acción por tu parte), diciéndole lo que debe realizar en su siguiente turno. Si no le das orden alguna, pasa su turno atacando a cualquier criatura dentro de su alcance que lo haya atacado.", 
+				"Al final de cada uno de los turnos del demonio, este hace una tirada de salvación de Carisma. El infernal tiene desventaja en esta tirada de si pronuncias su nombre verdadero. Si falla, el demonio continuará obedeciéndote. Si tiene éxito, tu control del infernal termina durante el resto de la duración del conjuro y el demonio utilizará sus turnos para perseguir y atacar a los no demonios más cercanos en la medida de sus capacidades. Si dejas de concentrarte en el conjuro antes de que llegue a su duración completa, un demonio descontrolado no desaparecerá hasta pasados {@dice 1d6} asaltos sí todavía tiene puntos de golpe.", 
+				"Como parte del lanzamiento del conjuro, puedes formar un círculo en el suelo con la sangre utilizada como componente. El círculo ha de ser lo suficientemente grande como para abarcar tu espacio. Mientras dure el conjuro, el demonio invocado no podrá cruzar ni perturbar dicho círculo, y tampoco podrá atacar a nadie dentro de él. Usar el componente material de esta manera lo consume cuando el conjuro termina."
+			],
             "entriesHigherLevel": [{
                     "type": "entries",
                     "name": "At Higher Levels",
-                    "entries": ["When you cast this spell using a spell slot of 5th level or higher, the challenge rating increases by 1 for each slot level above 4th."]
+                    "entries": ["A niveles superiores. Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 5 o más, el valor de desafío aumenta en 1 por cada nivel por encima de 4 que tenga el espacio que hayas empleado."]
                 }
             ],
             "savingThrow": ["charisma"],
@@ -94493,14 +95387,14 @@
             }
         }, 
 		{
-            "name": "Immolation",
+            "name": "Inmolación",
             "source": "XGE-ES",
             "data": {
                 "Save": "Dexterity",
                 "Damage": "8d6",
                 "Damage Type": "Fuego",
-                "Save Success": "Half damage and not burning",
-                "Target": "One creature you can see withing range"
+                "Save Success": "Mitad de daño y no arderá",
+                "Target": "Una criatura que puedas ver y se encuentre dentro del alcance"
             },
             "shapedData": {
                 "primaryDamageCondition": "save"
@@ -94526,15 +95420,15 @@
             }
         }, 
 		{
-            "name": "Investiture of Flame",
+            "name": "Indumentaria de llamas",
             "source": "XGE-ES",
             "data": {
                 "Save": "Dexterity",
                 "Damage": "4d8",
                 "Damage Type": "Fuego",
-                "Target": "Each creature in a line 15 feet long and 5 feet wide extending from you in a direction you choose",
+                "Target": "Cada critura en una linea de 15 pies de largo y 5 de ancho que se extiende desde ti en la dirección que elijas",
                 "Secondary Damage": "1d10",
-                "Secondary Damage Type": "Fire",
+                "Secondary Damage Type": "Fuego",
                 "Save Success": "Mitad del daño"
             },
             "shapedData": {
@@ -94557,22 +95451,22 @@
             }
         }, 
 		{
-            "name": "Investiture of Stone",
+            "name": "Indumentaria de piedra",
             "source": "XGE-ES",
             "data": {
                 "Save": "Dexterity",
-                "Target": "Other creatures on the ground in a 15-foot radius centred on you"
+                "Target": "Todas las criaturas en el suelo en un radio de 15 pies a tu alrededor"
             }
         }, 
 		{
-            "name": "Investiture of Wind",
+            "name": "Indumentaria de viento",
             "source": "XGE-ES",
             "data": {
                 "Save": "Constitution",
                 "Damage": "2d10",
                 "Damage Type": "Contundente",
-                "Save Success": "Half damage and not pushed away",
-                "Target": "Each creature in a 15-foot cube centered on a point you can see within 60 feet of you"
+                "Save Success": "Mitad de daño y no es empujada",
+                "Target": "Cada criatura en un cubo de 15 pies centrado en un punto que puedas ver y a un máximo de 60 pies de ti"
             },
             "shapedData": {
                 "primaryDamageCondition": "save"
@@ -94714,7 +95608,7 @@
             "data": {}
         }, 
 		{
-            "name": "Negative Energy Flood",
+            "name": "Inundación de energía negativa",
             "source": "XGE-ES",
             "data": {
                 "Save": "Constitution",
@@ -94900,7 +95794,7 @@
             }
         }, 
 		{
-            "name": "Summon Greater Demon",
+            "name": "Invocar demonio mayor",
             "source": "XGE-ES",
             "data": {
                 "Save": "Charisma"
