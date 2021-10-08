@@ -35487,6 +35487,466 @@
 			}
         },
 		{
+			"name": "Diablo punzante",
+			"source": "MM-ES",
+			"page": 70,
+			"srd": true,
+			"size": "M",
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"infernal","diablo"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"armadura natural"
+					]
+				}
+			],
+			"hp": {
+				"average": 110,
+				"formula": "13d8 + 52"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 17,
+			"con": 18,
+			"int": 12,
+			"wis": 14,
+			"cha": 14,
+			"save": {
+				"str": "+6",
+				"con": "+7",
+				"wis": "+5",
+				"cha": "+5"
+			},
+			"skill": {
+				"deception": "+5",
+				"insight": "+5",
+				"perception": "+8"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 18,
+			"resist": [
+				"cold",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "de ataques ni mágicos ni hechos con armas de plata",
+					"cond": true
+				}
+			],
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"infernal",
+				"telepatía 120 pies"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Piel Espinosa",
+					"entries": [
+						"Al principio de cada uno de sus turnos, el diablo punzante inflige 5 ({@damage 1d10}) de daño perforante a cualquier criatura que lo esté agarrando."
+					]
+				},
+				{
+					"name": "Vista del Diablo",
+					"entries": [
+						"La oscuridad mágica no impide la visión en la oscuridad del diablo."
+					]
+				},
+				{
+					"name": "Resistencia Mágica",
+					"entries": [
+						"El diablo tiene ventaja en las tiradas de salvación para evitar conjuros y otros efectos mágicos."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Ataque múltiple",
+					"entries": [
+						"El diablo realiza tres ataques cuerpo a cuerpo; uno con su cola y dos con sus garras. O, si lo prefiere, puede usar arrojar llama dos veces."
+					]
+				},
+				{
+					"name": "Garra",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Cola",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Arrojar llama",
+					"entries": [
+						"{@atk rs} {@hit 5} to hit, range 150 ft., one target. {@h}10 ({@damage 3d6}) fire damage. Si el objetivo es un objeto inflamable que no lleve o vista nadie, arderá. "
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Barbed%20Devil.png",
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/barbed-devil.mp3"
+			},
+			"traitTags": [
+				"Vista del Diablo",
+				"Resistencia Mágica"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Ataque múltiple"
+			],
+			"languageTags": [
+				"I",
+				"TP"
+			],
+			"damageTags": [
+				"F",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Los diablos punzantes son criaturas de deseo y avaricia desbocados. Sirven como guardianes de otros habitantes más poderosos de los Nueve Infiernos y de sus arcas. Los hamatulas tienen un aspecto similar al de un humanoide alto cubierto de afiladas púas, espinas y garfios, y poseen ojos brillantes que están siempre al acecho de criaturas u objetos que puedan reclamar para sí. Estos infernales combatirán siempre que ganar les reporte algún beneficio.",
+									"Los diablos punzantes son conocidos por su capacidad de mantenerse alerta, que hace difícil pillarlos por sorpresa, y realizan sus tareas sin aburrirse o distraerse. Utilizan sus afiladas garras como armas, y arrojarán bolas de fuego a aquellos enemigos que traten de huir de ellos."
+								]
+							}
+						]
+					},
+					{
+						"name": "Diablos",
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Los diablos son la personificación de la tiranía y mantienen una sociedad totalitaria consagrada a la dominación absoluta de toda vida mortal. La sombra de los Nueve Infiernos de Baator se extiende por las inmensidades del multiverso y Asmodeo, el señor oscuro de Neso, ansía someter el cosmos para satisfacer su sed de poder. Para ello debe ampliar constantemente las filas de sus ejércitos infernales, enviando a sus siervos al reino mortal con el fin de corromper las almas de las que surgirán nuevos diablos. ",
+											{
+												"name": "Señores de la tiranía",
+												"type": "entries",
+												"entries": [
+													"Los diablos viven para conquistar, esclavizar y oprimir. Gozan perversamente ejerciendo su autoridad sobre aquellos más débiles, y quien se atreva a desafiar su autoridad se enfrentará a un castigo rápido y cruel. Los diablos consideran cualquier interacción como una oportunidad de mostrar su poderío, y todos y cada uno de ellos saben perfectamente cómo usar y abusar de su poder.",
+													"Los diablos conocen los puntos flacos que plagan la mente de los mortales y los utilizan para tentarlos y arrastrarlos a la oscuridad, convirtiéndolos en esclavos de su propia corrupción. Los diablos que se encuentran en el Plano Material usan su influencia para manipular a los líderes humanoides, susurrándoles siniestras ideas, fomentando su paranoia y llevándoles a cometer, en definitiva, actos tiránicos."
+												]
+											},
+											{
+												"name": "Obediencia y ambición",
+												"type": "entries",
+												"entries": [
+													"Dado su alineamiento legal, los diablos obedecen a sus superiores, a pesar de que los envidien y odien, porque saben que esta obediencia será recompensada. La jerarquía de los Nueve Infiernos depende de esta lealtad infalible, sin la cual este plano infernal sería tan anárquico como el Abismo.",
+													"Al mismo tiempo, el deseo de conspirar y maquinar forma parte de la naturaleza de los diablos y provoca en ellos un deseo de gobernar superior a la satisfacción que les produce ser gobernados. Esta ambición es más fuerte en los archidiablos a los que Asmodeo ha ordenado gobernar las nueve capas de los Nueve Infiernos. Estos infernales son los únicos que han tenido la oportunidad de probar el auténtico poder, que ansían como si del néctar más dulce se tratara."
+												]
+											},
+											{
+												"name": "Comerciantes oscuros y traficantes de almas",
+												"type": "entries",
+												"entries": [
+													"Los diablos están confinados en los Planos Inferiores, pero pueden viajar más allá de ellos mediante el uso de portales o poderosas magias de invocación. Aman negociar con los mortales, que a su vez esperan obtener de ellos algún beneficio. Estos mortales han de ser cautos, pues los diablos son negociadores astutos y no dudan a la hora de ejecutar los términos de un acuerdo, aunque sea a la fuerza. Además, los pactos con incluso el más débil de los diablos están sujeto a la voluntad de Asmodeo. Cualquier criatura mortal que rompa uno de estos contratos perderá inmediatamente su alma, que será arrojada a los Nueve Infiernos.",
+													"Poseer el alma de una criatura es tener control absoluto sobre ella, razón por la que muchos diablos solo aceptan el pago en almas a cambio de los poderes y beneficios infernales que pueden ofrecer. Lo habitual es que el mortal entregue su alma al morir, ya que los diablos son inmortales y, por tanto, pueden permitirse el lujo de esperar muchos años antes de obtener su recompensa. Si un contrato permite a un diablo reclamar el alma de un mortal antes de que este muera, podrá volver inmediatamente a los Nueve Infiernos con el alma en su posesión. Tan solo la intervención divina puede liberar un alma del yugo de los diablos."
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"name": "La jerarquía infernal",
+								"type": "entries",
+								"entries": [
+									"Los Nueve Infiernos están rígidamente jerarquizados. Esta característica define todas las facetas de su sociedad. Asmodeo es el líder supremo de todos los diablos, y es la única criatura en los Nueve Infiernos con el poder equivalente a un dios menor. Es por esto que es adorado en el mundo mortal e inspira a sectas malvadas que claman su nombre. En los Nueve Infiernos comanda a numerosos diablos de la sima, sus generales, que a su vez lideran legiones de subordinados.",
+									"Asmodeo es el tirano supremo, un perfecto embustero y el maestro de la sutileza. Protege su trono manteniendo a sus amigos cerca, pero todavía más cerca a sus enemigos. Delega la mayoría de gestiones en diablos de la sima y archidiablos menores, que componen la burocracia infernal de los Nueve Infiernos. Y hace esto incluso aunque es consciente de que estos poderosos diablos conspiran para usurpar el Trono de Baator desde el que reina. Asmodeo designa a los archidiablos y tiene la potestad de retirar del cargo a cualquier miembro de la jerarquía infernal.",
+									"Cuando un diablo muere en un lugar distinto a los Nueve Infiernos, desaparece en una nube sulfurosa o se disuelve en un charco de icor, volviendo inmediatamente a su capa de origen, donde se recompone en plenitud de facultades. Los diablos que mueren en los Nueve Infiernos son destruidos para siempre, un destino que hasta Asmodeo teme.",
+									{
+										"type": "entries",
+										"entries": [
+											{
+												"name": "Archidiablos",
+												"type": "entries",
+												"entries": [
+													"Los archidiablos son todos los gobernadores, actuales y depuestos, de los Nueve Infiernos (consulta la tabla \"capas y señores de los Nueve Infiernos\"), así como los duques y duquesas que forman sus cortes, sirven como consejeros y aspiran a suplantarlos en el futuro. Todos los archidiablos son seres únicos con una apariencia que refleja su naturaleza malvada particular."
+												]
+											},
+											{
+												"name": "Diablos mayores",
+												"type": "entries",
+												"entries": [
+													"Los diablos mayores incluyen a los diablos de la sima, erinias, diablos astados y diablos gélidos. Dirigen a los diablos menores y sirven a los archidiablos."
+												]
+											},
+											{
+												"name": "Diablos menores",
+												"type": "entries",
+												"entries": [
+													"Varios linajes de infernales son considerados diablos menores. Algunos ejemplos son los diablillos, diablos de las cadenas, diablos espinosos, diablos barbados, diablos punzantes y diablos óseos."
+												]
+											},
+											{
+												"name": "Lémures",
+												"type": "entries",
+												"entries": [
+													"Los lémures son el tipo de diablo más débil que existe, ya que no son más que las almas atormentadas de mortales malvados y corruptos. Los lémures que mueren en los Nueve Infiernos solo son destruidos permanentemente si se les mata con un arma bendita o si se rocían sus restos informes con agua bendita antes de que puedan volver a la vida."
+												]
+											},
+											{
+												"name": "Ascenso y caída",
+												"type": "entries",
+												"entries": [
+													"Cuando el alma de un mortal malvado es arrojada a los Nueve Infiernos, recibe la forma física de un deplorable lémur. Los archidiablos y grandes diablos tienen el poder para ascender a estos lémures a diablos menores. Los archidiablos pueden ascender a los diablos menores a diablos mayores, pero tan solo Asmodeo es capaz de encumbrar a estos diablos mayores a la categoría de archidiablos. Este ascenso diabólico consiste en una transformación breve y dolorosa, en la que las memorias del diablo quedan intactas entre una forma y la siguiente.",
+													"Los ascensos en los niveles más bajos suelen responder a la necesidad de sus superiores, como, por ejemplo, un diablo de la sima transformando a los lémures en diablillos para tener espías invisibles bajo su control. Las promociones a niveles más altos tienden a deberse al mérito, como cuando un archidiablo transforma a un diablo óseo que destaca especialmente en batalla a diablo astado. En muy raras ocasiones se asciende a un diablo más de un puesto de una sola vez.",
+													"La caída es el castigo más habitual para la desobediencia entre los diablos. Los archidiablos y grandes diablos son capaces de hacer caer a un diablo menor a lémur, que pierde cualquier recuerdo relacionado con su existencia previa. Un archidiablo puede provocar la caída de un diablo mayor a diablo menor, pero este mantiene su memoria intacta, y podría querer vengarse si considera que su castigo ha sido excesivo.",
+													"Ningún diablo puede ascender o hacer caer a nadie que no le haya jurado lealtad, evitándose así que dos archidiablos rivales provoquen la caída de los sirvientes más poderosos de su enemigo. Dado que todos los diablos deben jurar lealtad a Asmodeo, él sí puede hacer caer a cualquier diablo y transformarlo en la forma infernal que desee."
+												]
+											}
+										]
+									},
+									{
+										"type": "table",
+										"caption": "La jerarquía infernal",
+										"colLabels": [
+											"Rank",
+											"Devil(s)"
+										],
+										"colStyles": [
+											"col-4",
+											"col-8"
+										],
+										"rows": [
+											[
+												"1.",
+												"Lémur"
+											],
+											[
+												"2. (Diablos menores)",
+												"Diablillo"
+											],
+											[
+												"3.",
+												"Diablo espinoso"
+											],
+											[
+												"4.",
+												"Diablo barbado"
+											],
+											[
+												"5.",
+												"Diablo punzante"
+											],
+											[
+												"6.",
+												"Diablo de las cadenas"
+											],
+											[
+												"7.",
+												"Diablo óseo"
+											],
+											[
+												"8. (Diablos mayores)",
+												"Diablo astado"
+											],
+											[
+												"9.",
+												"Erinia"
+											],
+											[
+												"10.",
+												"Diablo gélido"
+											],
+											[
+												"11.",
+												"Diablo de la sima"
+											],
+											[
+												"12. (Archidiablos)",
+												"Duque o duquesa"
+											],
+											[
+												"13.",
+												"Archiduque o archiduquesa"
+											]
+										]
+									},
+									{
+										"name": "Los Nueve Infiernos",
+										"type": "entries",
+										"entries": [
+											"Los Nueve Infiernos son un plano único compuesto de nueve capas separadas (ver la tabla \"capas y señores de los Nueve Infiernos\"). Las primeras ocho están gobernadas por archidiablos que solo responden ante el más grande de los suyos: Asmodeo, archiduque de Neso, la novena capa.",
+											"Para alcanzar la capa más profunda de los Nueve Infiernos, hay que atravesar las otras ocho anteriores en orden. La manera más rápida de hacer esto es a través del río Estigio, que se hunde cada vez más profundamente hacia cada una de las siguientes capas. Tan solo los aventureros más valientes son capaces de aguantar el tormento y el horror de tal viaje.",
+											{
+												"type": "table",
+												"caption": "Capas y señores de los Nueve Infiernos",
+												"colLabels": [
+													"Capa",
+													"Nombre de la capa",
+													"Archiduque o archiduquesa",
+													"Anteriores gobernantes",
+													"Habitantes principales"
+												],
+												"colStyles": [
+													"col-1",
+													"col-2",
+													"col-3",
+													"col-3",
+													"col-3"
+												],
+												"rows": [
+													[
+														"1",
+														"Averno",
+														"Zariel",
+														"Bel, Tiamat",
+														"Erinias, diablillos, diablos espinosos"
+													],
+													[
+														"2",
+														"Dis",
+														"Dispater",
+														"\u2014",
+														"Diablos barbados, erinias, diablillos, diablos espinosos"
+													],
+													[
+														"3",
+														"Minauros",
+														"Mammón",
+														"\u2014",
+														"Diablos barbados, diablos de las cadenas, diablillos, diablos espinosos"
+													],
+													[
+														"4",
+														"Phlegethos",
+														"Belial y Fierna",
+														"\u2014",
+														"Diablos punzantes, diablos óseos, diablillos, diablos espinosos."
+													],
+													[
+														"5",
+														"Estigia",
+														"Levistus",
+														"Geryon",
+														"Diablos óseos, erinias, diablos gélidos, diablillos"
+													],
+													[
+														"6",
+														"Malbolge",
+														"Glasya",
+														"Malagard, Moloch",
+														"Diablos punzantes, diablos óseos, diablos astados, diablillos"
+													],
+													[
+														"7",
+														"Maladomini",
+														"Belcebú",
+														"\u2014",
+														"Diablos punzantes, diablos óseos, diablos astados, diablillos."
+													],
+													[
+														"8",
+														"Cania",
+														"Mefistófeles",
+														"\u2014",
+														"Diablos astados, diablos gélidos, diablillos, diablos de la sima"
+													],
+													[
+														"9",
+														"Neso",
+														"Asmodeo",
+														"\u2014",
+														"Todos los diablos"
+													]
+												]
+											}
+										]
+									},
+									{
+										"type": "inset",
+										"name": "Los verdaderos nombres de los diablos y los talismanes",
+										"entries": [
+											"Aunque todos los diablos tienen nombres comunes, solo aquellos con un rango superior al de lémur poseen un nombre auténtico, que mantienen en secreto. Un diablo {@condition hechizado|PHB-ES} puede ser obligado a revelar su verdadero nombre, y se dice que ciertos tomos y pergaminos antiguos contienen listas con los nombres de los diablos más poderosos.",
+											"Un mortal que conozca el nombre de un diablo puede recurrir a magia poderosa para invocarlo desde los Nueve Infiernos y atarlo a su voluntad. Esta atadura también puede realizarse con la ayuda de un talismán diabólico. Cada una de estas antiguas reliquias tiene inscrito el nombre verdadero del diablo que controla y fue bañada en la sangre de un sacrificio digno cuando se creó. Normalmente, la de alguien a quien su creador amaba.",
+											"Sin importar la forma en la que fuera invocado, un diablo que llegue al mundo material se mostrará molesto al verse obligado a servir a otro. Sin embargo, aprovechará cualquier oportunidad para corromper a su invocador y provocar que su alma termine en los Nueve Infiernos. Solamente los diablillos estarán encantados de que se les invoque y aceptarán servir a su invocador como familiares. Aun así, harán todo lo que esté en su mano para corromper a su amo."
+										]
+									},
+									{
+										"type": "inset",
+										"name": "Variante: Invocaciones diabólicas",
+										"entries": [
+											"Algunos diablos pueden utilizar una acción para invocar a otros diablos",
+											{
+												"name": "Invocar diablo (1/Día)",
+												"entries": [
+													" El diablo elige qué seres va a invocar e intenta recurrir a la magia para hacerlo."
+												],
+												"type": "entries"
+											},
+											{
+												"type": "list",
+												"items": [
+													"Un {@b diablo punzante} tiene un {@chance 30|30%} de probabilidades de invocar 1 diablo punzante.",
+													"Un {@b diablo barbado} tiene un {@chance 30|30%} de probabilidades de invocar 1 diablo barbado",
+													"Un {@b diablo espinoso} tiene un {@chance 40|40%} de probabilidades de invocar {@dice 2d6} diablos espinosos o 1 diablo óseo.",
+													"Una {@b erinia} tiene un {@chance 50|50%} de probabilidades de invocar {@dice 3d6} diablos espinosos, {@dice 1d6} diablos barbados o 1 erinia",
+													"Un {@b diablo astado} tiene un {@chance 30|30%} de probabilidades de invocar 1 diablo astado.",
+													"Un {@b diablo gélido} tiene un {@chance 60|60%} de probabilidades de invocar 1 diablo gélido.",
+													"Un {@b diablo de la sima} invoca, sin probabilidad alguna de fallo, {@dice 2d4} diablos barbados, {@dice 1d4} diablos punzantes o 1 erinia."
+												]
+											},
+											"Los diablos invocados aparecen en un espacio desocupado a 60 pies o menos de su invocador. Se comportan como sus aliados y no podrán invocar a su vez a otros diablos. Permanecerán durante 1 minuto, hasta que su invocador muera o hasta que este los desconvoque utilizando una acción."
+										]
+									}
+								]
+							}
+						]
+					}
+				],	
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Barbed Devil.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
 			"name": "Barlgura",
 			"source": "MM-ES",
 			"page": 56,
@@ -35933,6 +36393,458 @@
 			}
 		},
 		{
+			"name": "Diablo barbado",
+			"source": "MM-ES",
+			"page": 70,
+			"srd": true,
+			"size": "M",
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"infernal","diablo"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"armadura natural"
+					]
+				}
+			],
+			"hp": {
+				"average": 52,
+				"formula": "8d8 + 16"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 15,
+			"con": 15,
+			"int": 9,
+			"wis": 11,
+			"cha": 11,
+			"save": {
+				"str": "+5",
+				"con": "+4",
+				"wis": "+2"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 10,
+			"resist": [
+				"cold",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "de ataques ni mágicos ni hechos con armas de plata",
+					"cond": true
+				}
+			],
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"infernal",
+				"telepatía 120 pies"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Vista del Diablo",
+					"entries": [
+						"La oscuridad mágica no impide la visión en la oscuridad del diablo."
+					]
+				},
+				{
+					"name": "Resistencia Mágica",
+					"entries": [
+						"El diablo tiene ventaja en las tiradas de salvación para evitar conjuros y otros efectos mágicos."
+					]
+				},
+				{
+					"name": "Resuelto",
+					"entries": [
+						"El diablo no podrá ser {@condition asustado|PHB-ES} mientras sea capaz de ver a una criatura aliada a 30 pies o menos de él."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Ataque múltiple",
+					"entries": [
+						"El diablo realiza dos ataques: uno con su barba y otro con su guja. "
+					]
+				},
+				{
+					"name": "Barba",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}6 ({@damage 1d8 + 2}) piercing damage, y el objetivo deberá superar una tirada de salvación de Constitución {@dc 12} o estará {@condition envenenado|PHB-ES} durante 1 minuto. Mientras esté {@condition envenenado|PHB-ES} de esta forma, el objetivo no podrá recuperar puntos de golpe. El objetivo puede repetir la tirada de salvación al final de cada uno de sus turnos, librándose del efecto si tiene éxito."
+					]
+				},
+				{
+					"name": "Guja",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}8 ({@damage 1d10 + 3}) slashing damage. Si el objetivo es una criatura que no sea ni un autómata ni un muerto viviente, deberá superar una tirada de salvación de Constitución {@dc 12} o, debido a una herida infernal, perderá 5 ({@dice 1d10}) puntos de golpe al principio de cada uno de sus turnos. Cada vez que el diablo impacte con este ataque al objetivo herido, el daño causado por la herida aumentará en 5 ({@dice 1d10}). Cualquier criatura puede utilizar una acción para intentar restañar la herida, teniendo éxito si supera una prueba de Sabiduría (Medicina) {@dc 12}. La herida también se cerrará si el objetivo recibe curación mágica."
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Bearded%20Devil.png",
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/bearded-devil.mp3"
+			},
+			"traitTags": [
+				"Vista del Diablo",
+				"Resistencia Mágica"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Ataque múltiple"
+			],
+			"languageTags": [
+				"I",
+				"TP"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Los diablos barbados sirven a los archidiablos como fuerzas de choque, luchando hombro con hombro, y deleitándose en la gloria de la batalla. Responden con dureza ante cualquier desaire, real o imaginado, atiborrándose de violencia mientras sus gujas serradas despedazan a sus enemigos.",
+									"Su forma es la de un humanoide de orejas puntiagudas, piel escamosa, larga cola y garras que muestran claramente su naturaleza infernal. Estos diablos toman su nombre de las trenzas serpenteantes que adornan sus mentones. Las utilizan para azotar y envenenar a sus enemigos, debilitándolos con una virulenta ponzoña."
+								]
+							}
+						]
+					},
+					{
+						"name": "Diablos",
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Los diablos son la personificación de la tiranía y mantienen una sociedad totalitaria consagrada a la dominación absoluta de toda vida mortal. La sombra de los Nueve Infiernos de Baator se extiende por las inmensidades del multiverso y Asmodeo, el señor oscuro de Neso, ansía someter el cosmos para satisfacer su sed de poder. Para ello debe ampliar constantemente las filas de sus ejércitos infernales, enviando a sus siervos al reino mortal con el fin de corromper las almas de las que surgirán nuevos diablos. ",
+											{
+												"name": "Señores de la tiranía",
+												"type": "entries",
+												"entries": [
+													"Los diablos viven para conquistar, esclavizar y oprimir. Gozan perversamente ejerciendo su autoridad sobre aquellos más débiles, y quien se atreva a desafiar su autoridad se enfrentará a un castigo rápido y cruel. Los diablos consideran cualquier interacción como una oportunidad de mostrar su poderío, y todos y cada uno de ellos saben perfectamente cómo usar y abusar de su poder.",
+													"Los diablos conocen los puntos flacos que plagan la mente de los mortales y los utilizan para tentarlos y arrastrarlos a la oscuridad, convirtiéndolos en esclavos de su propia corrupción. Los diablos que se encuentran en el Plano Material usan su influencia para manipular a los líderes humanoides, susurrándoles siniestras ideas, fomentando su paranoia y llevándoles a cometer, en definitiva, actos tiránicos."
+												]
+											},
+											{
+												"name": "Obediencia y ambición",
+												"type": "entries",
+												"entries": [
+													"Dado su alineamiento legal, los diablos obedecen a sus superiores, a pesar de que los envidien y odien, porque saben que esta obediencia será recompensada. La jerarquía de los Nueve Infiernos depende de esta lealtad infalible, sin la cual este plano infernal sería tan anárquico como el Abismo.",
+													"Al mismo tiempo, el deseo de conspirar y maquinar forma parte de la naturaleza de los diablos y provoca en ellos un deseo de gobernar superior a la satisfacción que les produce ser gobernados. Esta ambición es más fuerte en los archidiablos a los que Asmodeo ha ordenado gobernar las nueve capas de los Nueve Infiernos. Estos infernales son los únicos que han tenido la oportunidad de probar el auténtico poder, que ansían como si del néctar más dulce se tratara."
+												]
+											},
+											{
+												"name": "Comerciantes oscuros y traficantes de almas",
+												"type": "entries",
+												"entries": [
+													"Los diablos están confinados en los Planos Inferiores, pero pueden viajar más allá de ellos mediante el uso de portales o poderosas magias de invocación. Aman negociar con los mortales, que a su vez esperan obtener de ellos algún beneficio. Estos mortales han de ser cautos, pues los diablos son negociadores astutos y no dudan a la hora de ejecutar los términos de un acuerdo, aunque sea a la fuerza. Además, los pactos con incluso el más débil de los diablos están sujeto a la voluntad de Asmodeo. Cualquier criatura mortal que rompa uno de estos contratos perderá inmediatamente su alma, que será arrojada a los Nueve Infiernos.",
+													"Poseer el alma de una criatura es tener control absoluto sobre ella, razón por la que muchos diablos solo aceptan el pago en almas a cambio de los poderes y beneficios infernales que pueden ofrecer. Lo habitual es que el mortal entregue su alma al morir, ya que los diablos son inmortales y, por tanto, pueden permitirse el lujo de esperar muchos años antes de obtener su recompensa. Si un contrato permite a un diablo reclamar el alma de un mortal antes de que este muera, podrá volver inmediatamente a los Nueve Infiernos con el alma en su posesión. Tan solo la intervención divina puede liberar un alma del yugo de los diablos."
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"name": "La jerarquía infernal",
+								"type": "entries",
+								"entries": [
+									"Los Nueve Infiernos están rígidamente jerarquizados. Esta característica define todas las facetas de su sociedad. Asmodeo es el líder supremo de todos los diablos, y es la única criatura en los Nueve Infiernos con el poder equivalente a un dios menor. Es por esto que es adorado en el mundo mortal e inspira a sectas malvadas que claman su nombre. En los Nueve Infiernos comanda a numerosos diablos de la sima, sus generales, que a su vez lideran legiones de subordinados.",
+									"Asmodeo es el tirano supremo, un perfecto embustero y el maestro de la sutileza. Protege su trono manteniendo a sus amigos cerca, pero todavía más cerca a sus enemigos. Delega la mayoría de gestiones en diablos de la sima y archidiablos menores, que componen la burocracia infernal de los Nueve Infiernos. Y hace esto incluso aunque es consciente de que estos poderosos diablos conspiran para usurpar el Trono de Baator desde el que reina. Asmodeo designa a los archidiablos y tiene la potestad de retirar del cargo a cualquier miembro de la jerarquía infernal.",
+									"Cuando un diablo muere en un lugar distinto a los Nueve Infiernos, desaparece en una nube sulfurosa o se disuelve en un charco de icor, volviendo inmediatamente a su capa de origen, donde se recompone en plenitud de facultades. Los diablos que mueren en los Nueve Infiernos son destruidos para siempre, un destino que hasta Asmodeo teme.",
+									{
+										"type": "entries",
+										"entries": [
+											{
+												"name": "Archidiablos",
+												"type": "entries",
+												"entries": [
+													"Los archidiablos son todos los gobernadores, actuales y depuestos, de los Nueve Infiernos (consulta la tabla \"capas y señores de los Nueve Infiernos\"), así como los duques y duquesas que forman sus cortes, sirven como consejeros y aspiran a suplantarlos en el futuro. Todos los archidiablos son seres únicos con una apariencia que refleja su naturaleza malvada particular."
+												]
+											},
+											{
+												"name": "Diablos mayores",
+												"type": "entries",
+												"entries": [
+													"Los diablos mayores incluyen a los diablos de la sima, erinias, diablos astados y diablos gélidos. Dirigen a los diablos menores y sirven a los archidiablos."
+												]
+											},
+											{
+												"name": "Diablos menores",
+												"type": "entries",
+												"entries": [
+													"Varios linajes de infernales son considerados diablos menores. Algunos ejemplos son los diablillos, diablos de las cadenas, diablos espinosos, diablos barbados, diablos punzantes y diablos óseos."
+												]
+											},
+											{
+												"name": "Lémures",
+												"type": "entries",
+												"entries": [
+													"Los lémures son el tipo de diablo más débil que existe, ya que no son más que las almas atormentadas de mortales malvados y corruptos. Los lémures que mueren en los Nueve Infiernos solo son destruidos permanentemente si se les mata con un arma bendita o si se rocían sus restos informes con agua bendita antes de que puedan volver a la vida."
+												]
+											},
+											{
+												"name": "Ascenso y caída",
+												"type": "entries",
+												"entries": [
+													"Cuando el alma de un mortal malvado es arrojada a los Nueve Infiernos, recibe la forma física de un deplorable lémur. Los archidiablos y grandes diablos tienen el poder para ascender a estos lémures a diablos menores. Los archidiablos pueden ascender a los diablos menores a diablos mayores, pero tan solo Asmodeo es capaz de encumbrar a estos diablos mayores a la categoría de archidiablos. Este ascenso diabólico consiste en una transformación breve y dolorosa, en la que las memorias del diablo quedan intactas entre una forma y la siguiente.",
+													"Los ascensos en los niveles más bajos suelen responder a la necesidad de sus superiores, como, por ejemplo, un diablo de la sima transformando a los lémures en diablillos para tener espías invisibles bajo su control. Las promociones a niveles más altos tienden a deberse al mérito, como cuando un archidiablo transforma a un diablo óseo que destaca especialmente en batalla a diablo astado. En muy raras ocasiones se asciende a un diablo más de un puesto de una sola vez.",
+													"La caída es el castigo más habitual para la desobediencia entre los diablos. Los archidiablos y grandes diablos son capaces de hacer caer a un diablo menor a lémur, que pierde cualquier recuerdo relacionado con su existencia previa. Un archidiablo puede provocar la caída de un diablo mayor a diablo menor, pero este mantiene su memoria intacta, y podría querer vengarse si considera que su castigo ha sido excesivo.",
+													"Ningún diablo puede ascender o hacer caer a nadie que no le haya jurado lealtad, evitándose así que dos archidiablos rivales provoquen la caída de los sirvientes más poderosos de su enemigo. Dado que todos los diablos deben jurar lealtad a Asmodeo, él sí puede hacer caer a cualquier diablo y transformarlo en la forma infernal que desee."
+												]
+											}
+										]
+									},
+									{
+										"type": "table",
+										"caption": "La jerarquía infernal",
+										"colLabels": [
+											"Rank",
+											"Devil(s)"
+										],
+										"colStyles": [
+											"col-4",
+											"col-8"
+										],
+										"rows": [
+											[
+												"1.",
+												"Lémur"
+											],
+											[
+												"2. (Diablos menores)",
+												"Diablillo"
+											],
+											[
+												"3.",
+												"Diablo espinoso"
+											],
+											[
+												"4.",
+												"Diablo barbado"
+											],
+											[
+												"5.",
+												"Diablo punzante"
+											],
+											[
+												"6.",
+												"Diablo de las cadenas"
+											],
+											[
+												"7.",
+												"Diablo óseo"
+											],
+											[
+												"8. (Diablos mayores)",
+												"Diablo astado"
+											],
+											[
+												"9.",
+												"Erinia"
+											],
+											[
+												"10.",
+												"Diablo gélido"
+											],
+											[
+												"11.",
+												"Diablo de la sima"
+											],
+											[
+												"12. (Archidiablos)",
+												"Duque o duquesa"
+											],
+											[
+												"13.",
+												"Archiduque o archiduquesa"
+											]
+										]
+									},
+									{
+										"name": "Los Nueve Infiernos",
+										"type": "entries",
+										"entries": [
+											"Los Nueve Infiernos son un plano único compuesto de nueve capas separadas (ver la tabla \"capas y señores de los Nueve Infiernos\"). Las primeras ocho están gobernadas por archidiablos que solo responden ante el más grande de los suyos: Asmodeo, archiduque de Neso, la novena capa.",
+											"Para alcanzar la capa más profunda de los Nueve Infiernos, hay que atravesar las otras ocho anteriores en orden. La manera más rápida de hacer esto es a través del río Estigio, que se hunde cada vez más profundamente hacia cada una de las siguientes capas. Tan solo los aventureros más valientes son capaces de aguantar el tormento y el horror de tal viaje.",
+											{
+												"type": "table",
+												"caption": "Capas y señores de los Nueve Infiernos",
+												"colLabels": [
+													"Capa",
+													"Nombre de la capa",
+													"Archiduque o archiduquesa",
+													"Anteriores gobernantes",
+													"Habitantes principales"
+												],
+												"colStyles": [
+													"col-1",
+													"col-2",
+													"col-3",
+													"col-3",
+													"col-3"
+												],
+												"rows": [
+													[
+														"1",
+														"Averno",
+														"Zariel",
+														"Bel, Tiamat",
+														"Erinias, diablillos, diablos espinosos"
+													],
+													[
+														"2",
+														"Dis",
+														"Dispater",
+														"\u2014",
+														"Diablos barbados, erinias, diablillos, diablos espinosos"
+													],
+													[
+														"3",
+														"Minauros",
+														"Mammón",
+														"\u2014",
+														"Diablos barbados, diablos de las cadenas, diablillos, diablos espinosos"
+													],
+													[
+														"4",
+														"Phlegethos",
+														"Belial y Fierna",
+														"\u2014",
+														"Diablos punzantes, diablos óseos, diablillos, diablos espinosos."
+													],
+													[
+														"5",
+														"Estigia",
+														"Levistus",
+														"Geryon",
+														"Diablos óseos, erinias, diablos gélidos, diablillos"
+													],
+													[
+														"6",
+														"Malbolge",
+														"Glasya",
+														"Malagard, Moloch",
+														"Diablos punzantes, diablos óseos, diablos astados, diablillos"
+													],
+													[
+														"7",
+														"Maladomini",
+														"Belcebú",
+														"\u2014",
+														"Diablos punzantes, diablos óseos, diablos astados, diablillos."
+													],
+													[
+														"8",
+														"Cania",
+														"Mefistófeles",
+														"\u2014",
+														"Diablos astados, diablos gélidos, diablillos, diablos de la sima"
+													],
+													[
+														"9",
+														"Neso",
+														"Asmodeo",
+														"\u2014",
+														"Todos los diablos"
+													]
+												]
+											}
+										]
+									},
+									{
+										"type": "inset",
+										"name": "Los verdaderos nombres de los diablos y los talismanes",
+										"entries": [
+											"Aunque todos los diablos tienen nombres comunes, solo aquellos con un rango superior al de lémur poseen un nombre auténtico, que mantienen en secreto. Un diablo {@condition hechizado|PHB-ES} puede ser obligado a revelar su verdadero nombre, y se dice que ciertos tomos y pergaminos antiguos contienen listas con los nombres de los diablos más poderosos.",
+											"Un mortal que conozca el nombre de un diablo puede recurrir a magia poderosa para invocarlo desde los Nueve Infiernos y atarlo a su voluntad. Esta atadura también puede realizarse con la ayuda de un talismán diabólico. Cada una de estas antiguas reliquias tiene inscrito el nombre verdadero del diablo que controla y fue bañada en la sangre de un sacrificio digno cuando se creó. Normalmente, la de alguien a quien su creador amaba.",
+											"Sin importar la forma en la que fuera invocado, un diablo que llegue al mundo material se mostrará molesto al verse obligado a servir a otro. Sin embargo, aprovechará cualquier oportunidad para corromper a su invocador y provocar que su alma termine en los Nueve Infiernos. Solamente los diablillos estarán encantados de que se les invoque y aceptarán servir a su invocador como familiares. Aun así, harán todo lo que esté en su mano para corromper a su amo."
+										]
+									},
+									{
+										"type": "inset",
+										"name": "Variante: Invocaciones diabólicas",
+										"entries": [
+											"Algunos diablos pueden utilizar una acción para invocar a otros diablos",
+											{
+												"name": "Invocar diablo (1/Día)",
+												"entries": [
+													" El diablo elige qué seres va a invocar e intenta recurrir a la magia para hacerlo."
+												],
+												"type": "entries"
+											},
+											{
+												"type": "list",
+												"items": [
+													"Un {@b diablo punzante} tiene un {@chance 30|30%} de probabilidades de invocar 1 diablo punzante.",
+													"Un {@b diablo barbado} tiene un {@chance 30|30%} de probabilidades de invocar 1 diablo barbado",
+													"Un {@b diablo espinoso} tiene un {@chance 40|40%} de probabilidades de invocar {@dice 2d6} diablos espinosos o 1 diablo óseo.",
+													"Una {@b erinia} tiene un {@chance 50|50%} de probabilidades de invocar {@dice 3d6} diablos espinosos, {@dice 1d6} diablos barbados o 1 erinia",
+													"Un {@b diablo astado} tiene un {@chance 30|30%} de probabilidades de invocar 1 diablo astado.",
+													"Un {@b diablo gélido} tiene un {@chance 60|60%} de probabilidades de invocar 1 diablo gélido.",
+													"Un {@b diablo de la sima} invoca, sin probabilidad alguna de fallo, {@dice 2d4} diablos barbados, {@dice 1d4} diablos punzantes o 1 erinia."
+												]
+											},
+											"Los diablos invocados aparecen en un espacio desocupado a 60 pies o menos de su invocador. Se comportan como sus aliados y no podrán invocar a su vez a otros diablos. Permanecerán durante 1 minuto, hasta que su invocador muera o hasta que este los desconvoque utilizando una acción."
+										]
+									}
+								]
+							}
+						]
+					}
+				],	
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Bearded Devil.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
             "name": "Osgo",
             "source": "MM-ES",
             "page": 33,
@@ -36372,6 +37284,401 @@
 				]
 			}
         },
+		{
+			"name": "Dretch",
+			"source": "MM-ES",
+			"page": 57,
+			"srd": true,
+			"size": "S",
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"infernal","demonio"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 11,
+					"from": [
+						"armadura natural"
+					]
+				}
+			],
+			"hp": {
+				"average": 18,
+				"formula": "4d6 + 4"
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 11,
+			"dex": 11,
+			"con": 12,
+			"int": 5,
+			"wis": 8,
+			"cha": 3,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"resist": [
+				"cold",
+				"fire",
+				"lightning"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Abisal",
+				"telepatía 60 pies (solo funciona con criaturas que entiendan abisal) "
+			],
+			"cr": "1/4",
+			"action": [
+				{
+					"name": "Ataque múltiple",
+					"entries": [
+						"El dretch realiza dos ataques: uno con su mordisco y otro con sus garras."
+					]
+				},
+				{
+					"name": "Mordisco",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) piercing damage."
+					]
+				},
+				{
+					"name": "Garras",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}5 ({@damage 2d4}) slashing damage."
+					]
+				},
+				{
+					"name": "Nube fétida (1/Día)",
+					"entries": [
+						"Un gas desagradable de color verde se expande en un radio de 10 pies alrededor del dretch. Se extiende más allá de las esquinas y el área se considera ligeramente oscura. Se mantiene durante 1 minuto o hasta que un viento fuerte la disperse. Cualquier criatura que empiece su turno en la zona deberá superar una tirada de salvación de Constitución {@dc 11} o estará {@condition envenenado|PHB-ES|envenenada} hasta el principio de su siguiente turno. Además, mientras esté {@condition envenenado|PHB-ES|envenenada} de esta forma, no podrá llevar a cabo reacciones y tendrá que elegir si k1 quiere realizar una acción o una acción adicional en su turno, solo una de las dos."
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Dretch.png",
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/dretch.mp3"
+			},
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Ataque múltiple"
+			],
+			"languageTags": [
+				"AB",
+				"TP"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Los dretchs se cuentan entre los más débiles de los demonios. Son criaturas que se odian a sí mismas y están condenadas a pasar la eternidad en un estado de perpetuo descontento. Su escasa inteligencia les hace incapaces de cualquier cosa que no sean las tareas más simples. Sin embargo, lo que les falta en potencial, lo suplen con maldad. Los dretchs se aglutinan en turbas que expresan su descontento con un inquietante estruendo de gritos, gruñidos y alaridos."
+								]
+							}
+						]
+					},
+					{
+						"name": "Demonios",
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Los demonios nacen en las Infinitas Capas del Abismo y son la personificación del caos y del mal: máquinas de destrucción apenas contenidas dentro de formas monstruosas. Solo existen para causar la destrucción y no poseen misericordia, compasión ni empatía.",
+											{
+												"name": "Engendros del caos",
+												"type": "entries",
+												"entries": [
+													"El Abismo crea espontáneamente demonios, que son extensiones de sí mismo, usando suciedad y carroña. Algunos son únicos en su monstruosidad, mientras que otros parecen surgidos de la misma cepa, prácticamente idénticos los unos a los otros. Hay otros demonios (como los manes) formados a partir de almas mortales, malditas y abandonadas por los dioses o atrapadas en el Abismo por cualquier otro motivo."
+												]
+											},
+											{
+												"name": "Encumbramiento caprichoso",
+												"type": "entries",
+												"entries": [
+													"Los demonios solo respetan el poder. Así, los demonios mayores comandan hordas de demonios menores simplemente porque son capaces de aplastarlos si se niegan a obedecer sus órdenes. El estatus de los demonios crece junto con la sangre que derraman. Cuantos más enemigos caigan a sus pies, mayor será su reputación.",
+													"Un demonio puede ser engendrado como un mane, para después pasar a ser un dretch, que a su vez podría acabar transformado en un vrok tras una eternidad luchando y sobreviviendo en el Abismo. Sin embargo, estos encumbramientos son raros, ya que la mayoría de los demonios son destruidos antes de ser capaces de amasar una cantidad importante de poder. Los más poderosos de los que sobreviven pasan a engrosar las filas de los señores demoníacos, que amenazan con desgarrar el Abismo con sus interminables guerras.",
+													"Estos señores demoníacos pueden convertir a demonios menores en demonios más poderosos consumiendo una importante cantidad de poder mágico en el proceso. No obstante, estos ascensos no se producen nunca como reconocimiento a sus méritos, sino que suceden por las necesidades del demonio mayor. Un señor demoníaco podría transformar a un mane en un quasit porque requiere un espía invisible, o convertir una horda de dretchs en hezrous si está combatiendo a otro señor demoníaco. En muy pocas ocasiones se asciende a un demonio a los rangos más altos, ya que esto resultaría en la creación de rivales de su mismo poder."
+												]
+											},
+											{
+												"name": "Invasiones abisales",
+												"type": "entries",
+												"entries": [
+													"En sus viajes por el Abismo, los demonios buscan portales hacia otros planos. Anhelan la oportunidad de escapar de su reino nativo y extender su influencia oscura por todo el multiverso, deshaciendo las obras de los dioses, derribando civilizaciones y reduciendo el cosmos a la desesperación y la ruina.",
+													"Algunas de las leyendas más oscuras del reino mortal se refieren a la destrucción causada por demonios que caminaron por el mundo. Incluso las naciones envueltas en cruentas guerras apartarán por un momento sus diferencias para ayudar a contener a los demonios que pretenden invadir el mundo, o para sellar brechas abisales antes de que estos infernales sean capaces de atravesarlas."
+												]
+											},
+											{
+												"name": "Signos de corrupción",
+												"type": "entries",
+												"entries": [
+													"Los demonios arrastran la mancha de la corrupción abisal con ellos y su sola presencia transforma el mundo en un lugar peor. Las plantas se marchitan y mueren en las zonas donde aparecen brechas abisales o demonios. Los animales evitan los lugares en los que un demonio ha cometido un asesinato. El espacio en el que se produce una infestación demoníaca podría corromperse con un olor asqueroso que nunca remite, con zonas de calor o frío extremos, o con una sombra eterna que marca los lugares donde los infernales merodearon."
+												]
+											},
+											{
+												"name": "Mal eterno",
+												"type": "entries",
+												"entries": [
+													"Fuera del Abismo, la muerte es una molestia menor que los demonios no temen. Las armas mundanas no pueden detener a estos infernales y muchos demonios son resistentes a la energía de los conjuros más potentes. Cuando un afortunado héroe logra derrotar en combate a un demonio, este último se disuelve en un icor asqueroso. En ese momento se reconstruye dentro del Abismo con su mente y esencia intactos, pero albergando un profundo odio contra su ejecutor. La única manera de destruir verdaderamente un demonio es buscarlo en el Abismo y matarlo en ese plano."
+												]
+											},
+											{
+												"name": "Esencia protegida",
+												"type": "entries",
+												"entries": [
+													"Un demonio poderoso es capaz de tomar medidas para salvaguardar su esencia vital, utilizando métodos secretos y metales abisales para crear un amuleto al cual cede parte de su esencia. Si la forma abisal de un demonio es destruida, dicho amuleto le permite reconstruirse cuando y donde quiera.",
+													"Obtener un amuleto demoníaco es peligroso, y simplemente el buscarlo puede poner en guardia al demonio que lo creó. Una criatura que posea un amuleto de este tipo puede exigir favores al ser infernal cuya esencia vital está contenida en el objeto, así como provocarle un gran dolor si este se resiste. Si el amuleto es destruido, el demonio que lo creó quedará atrapado en el Abismo durante un año y un día."
+												]
+											},
+											{
+												"name": "Sectas demoníacas",
+												"type": "entries",
+												"entries": [
+													"A pesar de los grandes riesgos que supone tratar con infernales, el reino mortal está plagado de criaturas que ansían poder demoníaco. Los señores demoníacos manipulan a estos servidores mortales para que realicen grandes actos de maldad y depravación, satisfaciendo así sus ambiciones a cambio de magia y otros beneficios. No obstante, un demonio considera a los mortales que están a su servicio como herramientas que usar y tirar cuando ya no le son útiles. En lo que a estas pobres víctimas respecta, sus almas mortales terminan en el Abismo."
+												]
+											},
+											{
+												"name": "Invocaciones demoníacas",
+												"type": "entries",
+												"entries": [
+													"Hay pocos actos más peligrosos que invocar a un demonio, e incluso aquellos magos que tratan habitualmente con diablos temen a los infernales del Abismo. Aunque los demonios ansían sembrar el caos en el Plano Material, no muestran gratitud alguna cuando se les invoca y, furiosos, arremeten contra sus cárceles, exigiendo su liberación.",
+													"Aquellas criaturas que se arriesgan a invocar a un demonio lo hacen para sonsacarles información, forzarles a trabajar para ellas o mandarles en alguna misión que solo un ser de pura maldad podría completar. La preparación es clave, y los invocadores más experimentados conocen los conjuros y objetos mágicos capaces de doblegar a un demonio a su voluntad. Un único error es suficiente para que el monstruo se libere; no mostrará piedad alguna y la primera víctima de su furia será el invocador."
+												]
+											},
+											{
+												"name": "Vincular a un demonio",
+												"type": "entries",
+												"entries": [
+													"{@italic El Libro de la Oscuridad Vil}, los {@italic Pergaminos Negros de Ahm} y el {@italic Demonomicón de Iggwilv} son las máximas autoridades en lo que a demonios se refiere. Estos tomos antiguos describen técnicas capaces de atrapar la esencia de un demonio en el Plano Material, colocándolo dentro de un arma, ídolo o joya para así evitar que regrese al Abismo.",
+													"El objeto al que se vincula el demonio debe estar imbuido con encantamientos impíos y sangre de inocente. Irradiará un mal capaz de corromper y enfriar el aire a su alrededor. Aquella criatura que porte el objeto experimentará sueños inquietantes e impulsos malignos, pero a cambio será capaz de controlar al demonio cuya esencia esté atrapada en el objeto. Si el objeto se destruye, la criatura se liberará y buscará saciar su sed de venganza persiguiendo a quien lo vinculó."
+												]
+											},
+											{
+												"name": "Posesión demoniaca",
+												"type": "entries",
+												"entries": [
+													"No importa cómo de seguro sea un vínculo: un demonio poderoso suele encontrar la manera de escapar del objeto al que fue atado. Cuando una esencia demoníaca se libera de aquello que la contiene, puede poseer a un anfitrión mortal. En ocasiones, los demonios recurren al subterfugio para que una posesión no resulte obvia. Pero otras veces desatan la fuerza de sus impulsos demoníacos a través de su nuevo cuerpo.",
+													"Mientras el demonio continúe poseyendo a su anfitrión, el alma de este último estará en peligro de ser arrastrada al Abismo junto con el demonio si se le exorciza del cuerpo o el poseído muere. Si un demonio posee a una criatura y el objeto al que estaba vinculado es destruido, la posesión se mantendrá hasta que algún conjuro u oración poderosa expulse al demonio de su anfitrión."
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"name": "Señores demoníacos",
+								"type": "entries",
+								"entries": [
+									"La energía caótica del Abismo premia a los demonios particularmente crueles e ingeniosos con una bendición oscura, transformándolos en seres únicos cuyo poder puede rivalizar con el de los dioses. Estos señores demoníacos gobiernan mediante la fuerza bruta o la astucia con la esperanza de poder autoproclamarse en el futuro amos de todo el Abismo.",
+									{
+										"type": "entries",
+										"entries": [
+											{
+												"name": "Recompensas para los forasteros",
+												"type": "entries",
+												"entries": [
+													"Aunque la mayoría de los señores demonio ascienden de entre las vastas e incontables hordas de demonios repartidas por los Planos Inferiores, el Abismo también recompensa a aquellos forasteros que conquistan cualquiera de sus infinitas capas. Por ejemplo, la diosa elfa Lolth se convirtió en señora demoníaca después de que Corellon Larethian la arrojara al Abismo por traicionar a toda la estirpe de los elfos. Además, los eruditos afirman que el Príncipe Oscuro Graz'zt llegó al Abismo desde algún otro plano y le robó su título en el abismo a un señor demoníaco ya olvidado."
+												]
+											},
+											{
+												"name": "Poder y control",
+												"type": "entries",
+												"entries": [
+													"La mayor muestra de poder de un señor demoníaco es su capacidad para transformar un reino abisal. Si controla alguna de las infinitas capas del Abismo, esta se convertirá en un reflejo de la terrible personalidad de su gobernante. Los señores demoníacos rara vez abandonan su reino, pues temen que otra criatura le dé forma y se haga con su control.",
+													"Como ocurre con otros demonios, la esencia de un señor demoníaco que muera en otro plano volverá al Abismo, donde tomará de nuevo forma corpórea. Además, un señor demoníaco que muera en el Abismo será destruido permanentemente. La mayoría de los señores demonio mantienen parte de su esencia a buen recaudo para evitar tal destino."
+												]
+											}
+										]
+									},
+									{
+										"name": "Bafomet",
+										"type": "entries",
+										"entries": [
+											"El señor demoníaco Bafomet, también conocido como el Rey Astado y el Príncipe de las Bestias, gobierna a los minotauros y otras criaturas salvajes. Si consiguiera su objetivo, la civilización se desmoronaría y todas las razas abrazarían sus instintos animales más elementales.",
+											"El Príncipe de las Bestias se presenta como un minotauro enorme, de pelaje negro, con cuernos de hierro, ojos rojos y una boca empapada en sangre. Su corona de hierro está adornada con las cabezas podridas de sus enemigos y su armadura oscura está tachonada con pinchos y bordes dentados en forma de calavera. Lleva una enorme guja llamada Hiendecorazones, pero a menudo la arroja en batalla para enfrentarse a sus enemigos con cuernos y pezuñas."
+										]
+									},
+									{
+										"name": "Demogorgon",
+										"type": "entries",
+										"entries": [
+											"La Bestia Sibilante y el autoproclamado Príncipe de los Demonios, Demogorgon anhela destruir por completo el orden del multiverso. El Príncipe de los Demonios es una mezcla de rasgos e impulsos que desafía la cordura, inspirando miedo y odio entre el resto de demonios y señores demoníacos.",
+											"Demogorgon sobrepasa tres veces la altura de un ser humano, su cuerpo es sinuoso como el de una serpiente y tan poderoso como el de un gran simio. En lugar de brazos posee tentáculos. La mitad inferior de su cuerpo, similar a la de un reptil, acaba en unos pies palmeados y con garras, y en una cola bífida cuyas puntas están cubiertas de cuchillas mortales. El Príncipe de los Demonios tiene dos funestas cabezas de babuino, pero ambas están locas. Lo único que pone en jaque las ambiciones del señor demoníaco es el conflicto constante entre sus dos mitades."
+										]
+									},
+									{
+										"name": "Graz'zt",
+										"type": "entries",
+										"entries": [
+											"El señor demoníaco Graz'zt se manifiesta como una figura de una intensa belleza oscura y casi 9 pies (2,7 m) de altura. Aquellos que se refieren al Príncipe Oscuro como el más humano de los señores demonio subestiman enormemente la capacidad para el mal que posee su corazón lleno de intrigas.",
+											"Graz'zt es un espécimen físico sorprendente, cuya naturaleza demoníaca se muestra en su piel de ébano, orejas puntiagudas, colmillos amarillentos, corona de cuernos y seis dedos en cada mano. Le deleita vestir ropajes elegantes, la pompa y saciar sus deseos decadentes con súbditos y consortes por igual. Sus favoritos suelen ser íncubos y súcubos."
+										]
+									},
+									{
+										"name": "Juiblex",
+										"type": "entries",
+										"entries": [
+											"Juiblex, el señor demoníaco de limos y cienos, es un potaje de líquidos nocivos que se esconde en las profundidades abisales. El miserable Señor sin Rostro no se preocupa por ser venerado o tener siervos mortales, ya que su único deseo es convertir a todas las criaturas en copias de su horrible ser.",
+											"En su estado de reposo, Juiblex se extiende como una masa nociva y burbujeante, e inunda el aire de un profundo hedor. En las raras ocasiones en las que alguna criatura se enfrenta a este señor demoníaco, Juiblex se convierte en un tembloroso cono de limo estriado con vetas negras y verdes. Un par de ojos rojos y funestos nada en su cuerpo gelatinoso, mientras sus pseudópodos que gotean perpetuamente arremeten con avidez contra cualquier criatura que puedan alcanzar."
+										]
+									},
+									{
+										"name": "Lolth",
+										"type": "entries",
+										"entries": [
+											"La Reina Demoníaca de las Arañas es la malvada matrona de los drows. Todo pensamiento que recorre su mente tiene tintes malignos, hasta tal punto que la profundidad de su salvajismo sorprende incluso a sus más devotas sacerdotisas. Dirige a sus fieles mientras teje conspiraciones a través de los mundos del Plano Material, esperando el momento en el que sus seguidores drows le ofrezcan el control de esos mundos.",
+											"Lolth se muestra como una matriarca drow ágil e imperiosa cuando se manifiesta a sus seguidores del reino mortal, cosa que hace con inusitada frecuencia. Cuando entre en combate (o si desea recordar a sus seguidores que deben temerla) la parte inferior de su cuerpo se transforma en la de una enorme araña demoníaca, cuyas afiladas patas y mandíbulas parten a sus enemigos en dos."
+										]
+									},
+									{
+										"name": "Orcus",
+										"type": "entries",
+										"entries": [
+											"Conocido como el Príncipe Demonio de los Muertos Vivientes y el Señor de la Sangre, Orcus es adorado por los muertos vivientes y las criaturas vivas que canalizan la energía de la muerte en vida. Orcus, un ser nihilista y sombrío, anhela hacer del multiverso un lugar fúnebre y oscuro, en el que nada cambie salvo si él así lo desea.",
+											"El Príncipe Demonio de los Muertos Vivientes es una criatura nauseabunda y corpulenta, con un torso humanoide, poderosas patas de cabra y la cabeza de un carnero enjuto. Su cuerpo, cubierto de úlceras, hiede a enfermedad, pero su podrida cabeza y brillantes ojos rojos son los de una criatura ya muerta. De su espalda brotan negras alas de murciélago que producen un aire apestoso al moverse.",
+											"Orcus posee un malévolo artefacto conocido como la {@italic Varita de Orcus}, una vara de obsidiana con forma de maza en cuyo extremo superior reposa un cráneo humanoide. Este infernal se rodea de muertos vivientes y los vivos que no están bajo su control le repugnan."
+										]
+									},
+									{
+										"name": "Yeenoghu",
+										"type": "entries",
+										"entries": [
+											"Conocido como el Señor de los Gnolls y la Bestia de la Carnicería, el señor demoníaco Yeenoghu anhela masacrar y destruir sin propósito. Los gnolls son sus instrumentos mortales, a los cuales conmina a cometer atrocidades cada vez más grandes en su nombre. El Señor de los Gnolls se regodea en el dolor y la desesperación, y desea convertir el mundo en un erial en el que los últimos supervivientes, sus hijos los gnolls, se disputen el derecho a alimentarse de los muertos.",
+											"Yeenoghu se muestra como un gnoll enorme lleno de cicatrices, con una prominente cresta de espinas negras y ojos que arden con un brillo esmeralda. Su armadura es un conglomerado de escudos y petos arrancados de los cadáveres de sus enemigos y decorado con sus pieles desolladas. Yeenoghu puede invocar un flagelo triple al que llama el Carnicero, que maneja con mortal destreza. Esta arma también es capaz de atacar de forma independiente, controlada por la voluntad de Yeenoghu mientras este se abalanzar al combate para destrozar a sus enemigos con garras y dientes."
+										]
+									},
+									{
+										"name": "Otros señores demoníacos",
+										"type": "entries",
+										"entries": [
+											"Se desconoce el número total de señores demoníacos que llenan el Abismo con su furia. Teniendo en cuenta las infinitas profundidades de este plano, constantemente aparecen demonios poderosos que se alzan con el título de señores demoníacos para perderlo inmediatamente después. Algunos de los señores demoníacos cuyo poder les ha permitido mantenerse con vida el tiempo suficiente como para que los demonólogos registren sus andanzas se encuentran Fraz-Urb'luu, Príncipe del Engaño; Kostchtchie, Príncipe de la Ira; Pazuzu, Príncipe de los Reinos Aéreos Inferiores; y Zuggtmoy, Dama de los Hongos."
+										]
+									}
+								]
+							},
+							{
+								"name": "Tipos de demonio",
+								"type": "entries",
+								"entries": [
+									"Los demonólogos categorizan a los caóticos demonios según su poder en lo que denominan tipos. La mayoría de demonios encajan en uno de los seis tipos principales, con los más débiles clasificados como de tipo 1 y los más fuertes como de tipo 6. Los demonios que no forman parte de los seis tipos principales se clasifican como demonios menores o señores demoníacos."
+								]
+							},
+							{
+								"type": "table",
+								"caption": "Demonios por tipo",
+								"colLabels": [
+									"Tipo",
+									"Ejemplos"
+								],
+								"colStyles": [
+									"col-2 text-center",
+									"col-10"
+								],
+								"rows": [
+									[
+										"1",
+										"Barlgura, demonio de las sombras, vrock"
+									],
+									[
+										"2",
+										"Chasme, hezrou"
+									],
+									[
+										"3",
+										"Glabrezu, yochlol"
+									],
+									[
+										"4",
+										"Nalfeshnee"
+									],
+									[
+										"5",
+										"Marilith"
+									],
+									[
+										"6",
+										"Balor, goristro"
+									]
+								]
+							},
+							{
+								"type": "inset",
+								"name": "Los nombres verdaderos de los demonios",
+								"entries": [
+									"Aunque todos los demonios poseen nombres comunes, cada señor demoníaco y demonio de los tipos 1 a 6 tiene un nombre propio que guarda en secreto. Un demonio {@condition hechizado|PHB-ES} puede ser obligado a revelar su verdadero nombre, y se dice que ciertos tomos y pergaminos antiguos contienen listas con los nombres de los demonios más poderosos.",
+									"Un mortal que aprenda el nombre propio de un demonio será capaz de invocarlo usando poderosos conjuros y mantener cierto tipo de control sobre él. Sin embargo, la mayoría de los demonios que llegan al Plano Material de esta manera hacen todo lo posible para causar estragos o sembrar la discordia en el mundo."
+								]
+							},
+							{
+								"type": "inset",
+								"name": "Variante: Invocaciones demoníacas",
+								"entries": [
+									"Algunos demonios pueden utilizar una acción para invocar a otros demonios.",
+									"{@b Invocar demonio (1/Día)}. El demonio elige qué seres va a invocar e intenta recurrir a la magia para hacerlo.",
+									{
+										"type": "list",
+										"items": [
+											"Un {@b balor} tiene un {@chance 50|50%} de probabilidades de invocar {@dice 1d8} vrocks, {@dice 1d6} hezrous, {@dice 1d4} glabrezus, {@dice 1d3} nalfeshnees, {@dice 1d2} mariliths o 1 goristro.",
+											"Un {@b barlgura} tiene un {@chance 30|30%} de probabilidades de invocar 1 barlgura.",
+											"Un {@b chasme} tiene un {@chance 30|30%} de probabilidades de invocar 1 chasme.",
+											"Un {@b glabrezu} tiene un {@chance 30|30%} de probabilidades de invocar {@dice 1d3} vrocks, {@dice 1d2} hezrous o 1 glabrezu.",
+											"Un {@b hezrou} tiene un {@chance 30|30%} de probabilidades de invocar {@dice 2d6} dretchs o 1 hezrou.",
+											"Una {@b marilith} tiene un {@chance 50|50%} de probabilidades de invocar {@dice 1d6} vrocks, {@dice 1d4} hezrous, {@dice 1d3} glabrezus, {@dice 1d2} nalfeshnees o 1 marilith.",
+											"Un {@b nalfeshnee} tiene un {@chance 50|50%} de probabilidades de invocar {@dice 1d4} vrocks, {@dice 1d3} hezrous, {@dice 1d2} glabrezus o 1 nalfeshnee.",
+											"Un {@b vrock} tiene un {@chance 30|30%} de probabilidades de invocar {@dice 2d4} dretchs o 1 vrock",
+											"Una {@b yochlol} tiene un {@chance 50|50%} de probabilidades de invocar 1 yochlol."
+										]
+									},
+									"Los demonios invocados aparecen en un espacio desocupado a 60 pies o menos de su invocador. Se comportan como sus aliados y no podrán invocar a su vez a otros demonios. Permanecerán durante 1 minuto, hasta que su invocador muera o hasta que este los desconvoque utilizando una acción."
+								]
+							}
+						]
+					}
+				],	
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Dretch.jpg"
+						}
+					}
+				]
+			}
+		},
 		{
             "name": "Calavera llameante",
             "source": "MM-ES",
@@ -37264,6 +38571,376 @@
 				]
 			}
         },
+		{
+			"name": "Mane",
+			"source": "MM-ES",
+			"page": 60,
+			"size": "S",
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"infernal","demonio"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 9,
+					"from": [
+						"armadura natural"
+					]
+				}
+			],
+			"hp": {
+				"average": 9,
+				"formula": "2d6 + 2"
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 10,
+			"dex": 9,
+			"con": 13,
+			"int": 3,
+			"wis": 8,
+			"cha": 4,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"resist": [
+				"cold",
+				"fire",
+				"lightning"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"entiende abisal, pero no puede hablar"
+			],
+			"cr": "1/8",
+			"action": [
+				{
+					"name": "Garras",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}5 ({@damage 2d4}) slashing damage."
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Manes.png",
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/manes.mp3"
+			},
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"AB",
+				"CS"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Las almas de las criaturas malvadas que descienden a los Planos Inferiores se transforman en manes, el tipo de demonio menos poderoso. Estos desdichados infernales atacan a cualquier criatura que no sea un demonio que tengan a la vista, y aquellos que buscan provocar el caos y la muerte los invocan desde el Plano Material.",
+									"Orcus, el Príncipe de los Muertos Vivientes, tiene el poder de transformar a los manes en muertos vivientes monstruosos, normalmente gules o sombras. Otros señores demoníacos los devoran, destruyéndolos por completo. Si se mata a un mane de cualquier otra forma, este se disipará en una nube de vapor apestoso que se recompondrá tras un día."
+								]
+							}
+						]
+					},
+					{
+						"name": "Demonios",
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Los demonios nacen en las Infinitas Capas del Abismo y son la personificación del caos y del mal: máquinas de destrucción apenas contenidas dentro de formas monstruosas. Solo existen para causar la destrucción y no poseen misericordia, compasión ni empatía.",
+											{
+												"name": "Engendros del caos",
+												"type": "entries",
+												"entries": [
+													"El Abismo crea espontáneamente demonios, que son extensiones de sí mismo, usando suciedad y carroña. Algunos son únicos en su monstruosidad, mientras que otros parecen surgidos de la misma cepa, prácticamente idénticos los unos a los otros. Hay otros demonios (como los manes) formados a partir de almas mortales, malditas y abandonadas por los dioses o atrapadas en el Abismo por cualquier otro motivo."
+												]
+											},
+											{
+												"name": "Encumbramiento caprichoso",
+												"type": "entries",
+												"entries": [
+													"Los demonios solo respetan el poder. Así, los demonios mayores comandan hordas de demonios menores simplemente porque son capaces de aplastarlos si se niegan a obedecer sus órdenes. El estatus de los demonios crece junto con la sangre que derraman. Cuantos más enemigos caigan a sus pies, mayor será su reputación.",
+													"Un demonio puede ser engendrado como un mane, para después pasar a ser un dretch, que a su vez podría acabar transformado en un vrok tras una eternidad luchando y sobreviviendo en el Abismo. Sin embargo, estos encumbramientos son raros, ya que la mayoría de los demonios son destruidos antes de ser capaces de amasar una cantidad importante de poder. Los más poderosos de los que sobreviven pasan a engrosar las filas de los señores demoníacos, que amenazan con desgarrar el Abismo con sus interminables guerras.",
+													"Estos señores demoníacos pueden convertir a demonios menores en demonios más poderosos consumiendo una importante cantidad de poder mágico en el proceso. No obstante, estos ascensos no se producen nunca como reconocimiento a sus méritos, sino que suceden por las necesidades del demonio mayor. Un señor demoníaco podría transformar a un mane en un quasit porque requiere un espía invisible, o convertir una horda de dretchs en hezrous si está combatiendo a otro señor demoníaco. En muy pocas ocasiones se asciende a un demonio a los rangos más altos, ya que esto resultaría en la creación de rivales de su mismo poder."
+												]
+											},
+											{
+												"name": "Invasiones abisales",
+												"type": "entries",
+												"entries": [
+													"En sus viajes por el Abismo, los demonios buscan portales hacia otros planos. Anhelan la oportunidad de escapar de su reino nativo y extender su influencia oscura por todo el multiverso, deshaciendo las obras de los dioses, derribando civilizaciones y reduciendo el cosmos a la desesperación y la ruina.",
+													"Algunas de las leyendas más oscuras del reino mortal se refieren a la destrucción causada por demonios que caminaron por el mundo. Incluso las naciones envueltas en cruentas guerras apartarán por un momento sus diferencias para ayudar a contener a los demonios que pretenden invadir el mundo, o para sellar brechas abisales antes de que estos infernales sean capaces de atravesarlas."
+												]
+											},
+											{
+												"name": "Signos de corrupción",
+												"type": "entries",
+												"entries": [
+													"Los demonios arrastran la mancha de la corrupción abisal con ellos y su sola presencia transforma el mundo en un lugar peor. Las plantas se marchitan y mueren en las zonas donde aparecen brechas abisales o demonios. Los animales evitan los lugares en los que un demonio ha cometido un asesinato. El espacio en el que se produce una infestación demoníaca podría corromperse con un olor asqueroso que nunca remite, con zonas de calor o frío extremos, o con una sombra eterna que marca los lugares donde los infernales merodearon."
+												]
+											},
+											{
+												"name": "Mal eterno",
+												"type": "entries",
+												"entries": [
+													"Fuera del Abismo, la muerte es una molestia menor que los demonios no temen. Las armas mundanas no pueden detener a estos infernales y muchos demonios son resistentes a la energía de los conjuros más potentes. Cuando un afortunado héroe logra derrotar en combate a un demonio, este último se disuelve en un icor asqueroso. En ese momento se reconstruye dentro del Abismo con su mente y esencia intactos, pero albergando un profundo odio contra su ejecutor. La única manera de destruir verdaderamente un demonio es buscarlo en el Abismo y matarlo en ese plano."
+												]
+											},
+											{
+												"name": "Esencia protegida",
+												"type": "entries",
+												"entries": [
+													"Un demonio poderoso es capaz de tomar medidas para salvaguardar su esencia vital, utilizando métodos secretos y metales abisales para crear un amuleto al cual cede parte de su esencia. Si la forma abisal de un demonio es destruida, dicho amuleto le permite reconstruirse cuando y donde quiera.",
+													"Obtener un amuleto demoníaco es peligroso, y simplemente el buscarlo puede poner en guardia al demonio que lo creó. Una criatura que posea un amuleto de este tipo puede exigir favores al ser infernal cuya esencia vital está contenida en el objeto, así como provocarle un gran dolor si este se resiste. Si el amuleto es destruido, el demonio que lo creó quedará atrapado en el Abismo durante un año y un día."
+												]
+											},
+											{
+												"name": "Sectas demoníacas",
+												"type": "entries",
+												"entries": [
+													"A pesar de los grandes riesgos que supone tratar con infernales, el reino mortal está plagado de criaturas que ansían poder demoníaco. Los señores demoníacos manipulan a estos servidores mortales para que realicen grandes actos de maldad y depravación, satisfaciendo así sus ambiciones a cambio de magia y otros beneficios. No obstante, un demonio considera a los mortales que están a su servicio como herramientas que usar y tirar cuando ya no le son útiles. En lo que a estas pobres víctimas respecta, sus almas mortales terminan en el Abismo."
+												]
+											},
+											{
+												"name": "Invocaciones demoníacas",
+												"type": "entries",
+												"entries": [
+													"Hay pocos actos más peligrosos que invocar a un demonio, e incluso aquellos magos que tratan habitualmente con diablos temen a los infernales del Abismo. Aunque los demonios ansían sembrar el caos en el Plano Material, no muestran gratitud alguna cuando se les invoca y, furiosos, arremeten contra sus cárceles, exigiendo su liberación.",
+													"Aquellas criaturas que se arriesgan a invocar a un demonio lo hacen para sonsacarles información, forzarles a trabajar para ellas o mandarles en alguna misión que solo un ser de pura maldad podría completar. La preparación es clave, y los invocadores más experimentados conocen los conjuros y objetos mágicos capaces de doblegar a un demonio a su voluntad. Un único error es suficiente para que el monstruo se libere; no mostrará piedad alguna y la primera víctima de su furia será el invocador."
+												]
+											},
+											{
+												"name": "Vincular a un demonio",
+												"type": "entries",
+												"entries": [
+													"{@italic El Libro de la Oscuridad Vil}, los {@italic Pergaminos Negros de Ahm} y el {@italic Demonomicón de Iggwilv} son las máximas autoridades en lo que a demonios se refiere. Estos tomos antiguos describen técnicas capaces de atrapar la esencia de un demonio en el Plano Material, colocándolo dentro de un arma, ídolo o joya para así evitar que regrese al Abismo.",
+													"El objeto al que se vincula el demonio debe estar imbuido con encantamientos impíos y sangre de inocente. Irradiará un mal capaz de corromper y enfriar el aire a su alrededor. Aquella criatura que porte el objeto experimentará sueños inquietantes e impulsos malignos, pero a cambio será capaz de controlar al demonio cuya esencia esté atrapada en el objeto. Si el objeto se destruye, la criatura se liberará y buscará saciar su sed de venganza persiguiendo a quien lo vinculó."
+												]
+											},
+											{
+												"name": "Posesión demoniaca",
+												"type": "entries",
+												"entries": [
+													"No importa cómo de seguro sea un vínculo: un demonio poderoso suele encontrar la manera de escapar del objeto al que fue atado. Cuando una esencia demoníaca se libera de aquello que la contiene, puede poseer a un anfitrión mortal. En ocasiones, los demonios recurren al subterfugio para que una posesión no resulte obvia. Pero otras veces desatan la fuerza de sus impulsos demoníacos a través de su nuevo cuerpo.",
+													"Mientras el demonio continúe poseyendo a su anfitrión, el alma de este último estará en peligro de ser arrastrada al Abismo junto con el demonio si se le exorciza del cuerpo o el poseído muere. Si un demonio posee a una criatura y el objeto al que estaba vinculado es destruido, la posesión se mantendrá hasta que algún conjuro u oración poderosa expulse al demonio de su anfitrión."
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"name": "Señores demoníacos",
+								"type": "entries",
+								"entries": [
+									"La energía caótica del Abismo premia a los demonios particularmente crueles e ingeniosos con una bendición oscura, transformándolos en seres únicos cuyo poder puede rivalizar con el de los dioses. Estos señores demoníacos gobiernan mediante la fuerza bruta o la astucia con la esperanza de poder autoproclamarse en el futuro amos de todo el Abismo.",
+									{
+										"type": "entries",
+										"entries": [
+											{
+												"name": "Recompensas para los forasteros",
+												"type": "entries",
+												"entries": [
+													"Aunque la mayoría de los señores demonio ascienden de entre las vastas e incontables hordas de demonios repartidas por los Planos Inferiores, el Abismo también recompensa a aquellos forasteros que conquistan cualquiera de sus infinitas capas. Por ejemplo, la diosa elfa Lolth se convirtió en señora demoníaca después de que Corellon Larethian la arrojara al Abismo por traicionar a toda la estirpe de los elfos. Además, los eruditos afirman que el Príncipe Oscuro Graz'zt llegó al Abismo desde algún otro plano y le robó su título en el abismo a un señor demoníaco ya olvidado."
+												]
+											},
+											{
+												"name": "Poder y control",
+												"type": "entries",
+												"entries": [
+													"La mayor muestra de poder de un señor demoníaco es su capacidad para transformar un reino abisal. Si controla alguna de las infinitas capas del Abismo, esta se convertirá en un reflejo de la terrible personalidad de su gobernante. Los señores demoníacos rara vez abandonan su reino, pues temen que otra criatura le dé forma y se haga con su control.",
+													"Como ocurre con otros demonios, la esencia de un señor demoníaco que muera en otro plano volverá al Abismo, donde tomará de nuevo forma corpórea. Además, un señor demoníaco que muera en el Abismo será destruido permanentemente. La mayoría de los señores demonio mantienen parte de su esencia a buen recaudo para evitar tal destino."
+												]
+											}
+										]
+									},
+									{
+										"name": "Bafomet",
+										"type": "entries",
+										"entries": [
+											"El señor demoníaco Bafomet, también conocido como el Rey Astado y el Príncipe de las Bestias, gobierna a los minotauros y otras criaturas salvajes. Si consiguiera su objetivo, la civilización se desmoronaría y todas las razas abrazarían sus instintos animales más elementales.",
+											"El Príncipe de las Bestias se presenta como un minotauro enorme, de pelaje negro, con cuernos de hierro, ojos rojos y una boca empapada en sangre. Su corona de hierro está adornada con las cabezas podridas de sus enemigos y su armadura oscura está tachonada con pinchos y bordes dentados en forma de calavera. Lleva una enorme guja llamada Hiendecorazones, pero a menudo la arroja en batalla para enfrentarse a sus enemigos con cuernos y pezuñas."
+										]
+									},
+									{
+										"name": "Demogorgon",
+										"type": "entries",
+										"entries": [
+											"La Bestia Sibilante y el autoproclamado Príncipe de los Demonios, Demogorgon anhela destruir por completo el orden del multiverso. El Príncipe de los Demonios es una mezcla de rasgos e impulsos que desafía la cordura, inspirando miedo y odio entre el resto de demonios y señores demoníacos.",
+											"Demogorgon sobrepasa tres veces la altura de un ser humano, su cuerpo es sinuoso como el de una serpiente y tan poderoso como el de un gran simio. En lugar de brazos posee tentáculos. La mitad inferior de su cuerpo, similar a la de un reptil, acaba en unos pies palmeados y con garras, y en una cola bífida cuyas puntas están cubiertas de cuchillas mortales. El Príncipe de los Demonios tiene dos funestas cabezas de babuino, pero ambas están locas. Lo único que pone en jaque las ambiciones del señor demoníaco es el conflicto constante entre sus dos mitades."
+										]
+									},
+									{
+										"name": "Graz'zt",
+										"type": "entries",
+										"entries": [
+											"El señor demoníaco Graz'zt se manifiesta como una figura de una intensa belleza oscura y casi 9 pies (2,7 m) de altura. Aquellos que se refieren al Príncipe Oscuro como el más humano de los señores demonio subestiman enormemente la capacidad para el mal que posee su corazón lleno de intrigas.",
+											"Graz'zt es un espécimen físico sorprendente, cuya naturaleza demoníaca se muestra en su piel de ébano, orejas puntiagudas, colmillos amarillentos, corona de cuernos y seis dedos en cada mano. Le deleita vestir ropajes elegantes, la pompa y saciar sus deseos decadentes con súbditos y consortes por igual. Sus favoritos suelen ser íncubos y súcubos."
+										]
+									},
+									{
+										"name": "Juiblex",
+										"type": "entries",
+										"entries": [
+											"Juiblex, el señor demoníaco de limos y cienos, es un potaje de líquidos nocivos que se esconde en las profundidades abisales. El miserable Señor sin Rostro no se preocupa por ser venerado o tener siervos mortales, ya que su único deseo es convertir a todas las criaturas en copias de su horrible ser.",
+											"En su estado de reposo, Juiblex se extiende como una masa nociva y burbujeante, e inunda el aire de un profundo hedor. En las raras ocasiones en las que alguna criatura se enfrenta a este señor demoníaco, Juiblex se convierte en un tembloroso cono de limo estriado con vetas negras y verdes. Un par de ojos rojos y funestos nada en su cuerpo gelatinoso, mientras sus pseudópodos que gotean perpetuamente arremeten con avidez contra cualquier criatura que puedan alcanzar."
+										]
+									},
+									{
+										"name": "Lolth",
+										"type": "entries",
+										"entries": [
+											"La Reina Demoníaca de las Arañas es la malvada matrona de los drows. Todo pensamiento que recorre su mente tiene tintes malignos, hasta tal punto que la profundidad de su salvajismo sorprende incluso a sus más devotas sacerdotisas. Dirige a sus fieles mientras teje conspiraciones a través de los mundos del Plano Material, esperando el momento en el que sus seguidores drows le ofrezcan el control de esos mundos.",
+											"Lolth se muestra como una matriarca drow ágil e imperiosa cuando se manifiesta a sus seguidores del reino mortal, cosa que hace con inusitada frecuencia. Cuando entre en combate (o si desea recordar a sus seguidores que deben temerla) la parte inferior de su cuerpo se transforma en la de una enorme araña demoníaca, cuyas afiladas patas y mandíbulas parten a sus enemigos en dos."
+										]
+									},
+									{
+										"name": "Orcus",
+										"type": "entries",
+										"entries": [
+											"Conocido como el Príncipe Demonio de los Muertos Vivientes y el Señor de la Sangre, Orcus es adorado por los muertos vivientes y las criaturas vivas que canalizan la energía de la muerte en vida. Orcus, un ser nihilista y sombrío, anhela hacer del multiverso un lugar fúnebre y oscuro, en el que nada cambie salvo si él así lo desea.",
+											"El Príncipe Demonio de los Muertos Vivientes es una criatura nauseabunda y corpulenta, con un torso humanoide, poderosas patas de cabra y la cabeza de un carnero enjuto. Su cuerpo, cubierto de úlceras, hiede a enfermedad, pero su podrida cabeza y brillantes ojos rojos son los de una criatura ya muerta. De su espalda brotan negras alas de murciélago que producen un aire apestoso al moverse.",
+											"Orcus posee un malévolo artefacto conocido como la {@italic Varita de Orcus}, una vara de obsidiana con forma de maza en cuyo extremo superior reposa un cráneo humanoide. Este infernal se rodea de muertos vivientes y los vivos que no están bajo su control le repugnan."
+										]
+									},
+									{
+										"name": "Yeenoghu",
+										"type": "entries",
+										"entries": [
+											"Conocido como el Señor de los Gnolls y la Bestia de la Carnicería, el señor demoníaco Yeenoghu anhela masacrar y destruir sin propósito. Los gnolls son sus instrumentos mortales, a los cuales conmina a cometer atrocidades cada vez más grandes en su nombre. El Señor de los Gnolls se regodea en el dolor y la desesperación, y desea convertir el mundo en un erial en el que los últimos supervivientes, sus hijos los gnolls, se disputen el derecho a alimentarse de los muertos.",
+											"Yeenoghu se muestra como un gnoll enorme lleno de cicatrices, con una prominente cresta de espinas negras y ojos que arden con un brillo esmeralda. Su armadura es un conglomerado de escudos y petos arrancados de los cadáveres de sus enemigos y decorado con sus pieles desolladas. Yeenoghu puede invocar un flagelo triple al que llama el Carnicero, que maneja con mortal destreza. Esta arma también es capaz de atacar de forma independiente, controlada por la voluntad de Yeenoghu mientras este se abalanzar al combate para destrozar a sus enemigos con garras y dientes."
+										]
+									},
+									{
+										"name": "Otros señores demoníacos",
+										"type": "entries",
+										"entries": [
+											"Se desconoce el número total de señores demoníacos que llenan el Abismo con su furia. Teniendo en cuenta las infinitas profundidades de este plano, constantemente aparecen demonios poderosos que se alzan con el título de señores demoníacos para perderlo inmediatamente después. Algunos de los señores demoníacos cuyo poder les ha permitido mantenerse con vida el tiempo suficiente como para que los demonólogos registren sus andanzas se encuentran Fraz-Urb'luu, Príncipe del Engaño; Kostchtchie, Príncipe de la Ira; Pazuzu, Príncipe de los Reinos Aéreos Inferiores; y Zuggtmoy, Dama de los Hongos."
+										]
+									}
+								]
+							},
+							{
+								"name": "Tipos de demonio",
+								"type": "entries",
+								"entries": [
+									"Los demonólogos categorizan a los caóticos demonios según su poder en lo que denominan tipos. La mayoría de demonios encajan en uno de los seis tipos principales, con los más débiles clasificados como de tipo 1 y los más fuertes como de tipo 6. Los demonios que no forman parte de los seis tipos principales se clasifican como demonios menores o señores demoníacos."
+								]
+							},
+							{
+								"type": "table",
+								"caption": "Demonios por tipo",
+								"colLabels": [
+									"Tipo",
+									"Ejemplos"
+								],
+								"colStyles": [
+									"col-2 text-center",
+									"col-10"
+								],
+								"rows": [
+									[
+										"1",
+										"Barlgura, demonio de las sombras, vrock"
+									],
+									[
+										"2",
+										"Chasme, hezrou"
+									],
+									[
+										"3",
+										"Glabrezu, yochlol"
+									],
+									[
+										"4",
+										"Nalfeshnee"
+									],
+									[
+										"5",
+										"Marilith"
+									],
+									[
+										"6",
+										"Balor, goristro"
+									]
+								]
+							},
+							{
+								"type": "inset",
+								"name": "Los nombres verdaderos de los demonios",
+								"entries": [
+									"Aunque todos los demonios poseen nombres comunes, cada señor demoníaco y demonio de los tipos 1 a 6 tiene un nombre propio que guarda en secreto. Un demonio {@condition hechizado|PHB-ES} puede ser obligado a revelar su verdadero nombre, y se dice que ciertos tomos y pergaminos antiguos contienen listas con los nombres de los demonios más poderosos.",
+									"Un mortal que aprenda el nombre propio de un demonio será capaz de invocarlo usando poderosos conjuros y mantener cierto tipo de control sobre él. Sin embargo, la mayoría de los demonios que llegan al Plano Material de esta manera hacen todo lo posible para causar estragos o sembrar la discordia en el mundo."
+								]
+							},
+							{
+								"type": "inset",
+								"name": "Variante: Invocaciones demoníacas",
+								"entries": [
+									"Algunos demonios pueden utilizar una acción para invocar a otros demonios.",
+									"{@b Invocar demonio (1/Día)}. El demonio elige qué seres va a invocar e intenta recurrir a la magia para hacerlo.",
+									{
+										"type": "list",
+										"items": [
+											"Un {@b balor} tiene un {@chance 50|50%} de probabilidades de invocar {@dice 1d8} vrocks, {@dice 1d6} hezrous, {@dice 1d4} glabrezus, {@dice 1d3} nalfeshnees, {@dice 1d2} mariliths o 1 goristro.",
+											"Un {@b barlgura} tiene un {@chance 30|30%} de probabilidades de invocar 1 barlgura.",
+											"Un {@b chasme} tiene un {@chance 30|30%} de probabilidades de invocar 1 chasme.",
+											"Un {@b glabrezu} tiene un {@chance 30|30%} de probabilidades de invocar {@dice 1d3} vrocks, {@dice 1d2} hezrous o 1 glabrezu.",
+											"Un {@b hezrou} tiene un {@chance 30|30%} de probabilidades de invocar {@dice 2d6} dretchs o 1 hezrou.",
+											"Una {@b marilith} tiene un {@chance 50|50%} de probabilidades de invocar {@dice 1d6} vrocks, {@dice 1d4} hezrous, {@dice 1d3} glabrezus, {@dice 1d2} nalfeshnees o 1 marilith.",
+											"Un {@b nalfeshnee} tiene un {@chance 50|50%} de probabilidades de invocar {@dice 1d4} vrocks, {@dice 1d3} hezrous, {@dice 1d2} glabrezus o 1 nalfeshnee.",
+											"Un {@b vrock} tiene un {@chance 30|30%} de probabilidades de invocar {@dice 2d4} dretchs o 1 vrock",
+											"Una {@b yochlol} tiene un {@chance 50|50%} de probabilidades de invocar 1 yochlol."
+										]
+									},
+									"Los demonios invocados aparecen en un espacio desocupado a 60 pies o menos de su invocador. Se comportan como sus aliados y no podrán invocar a su vez a otros demonios. Permanecerán durante 1 minuto, hasta que su invocador muera o hasta que este los desconvoque utilizando una acción."
+								]
+							}
+						]
+					}
+				],	
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Manes.jpg"
+						}
+					}
+				]
+			}
+		},
 		{
             "name": "Nótico",
             "source": "MM-ES",
@@ -86813,7 +88490,7 @@
 		
 		
 		{
-            "name": "Abi-Dalzim's Horrid Wilting",
+            "name": "Marchitamiento horrible de Abi-Dalzim",
             "source": "XGE-ES",
             "page": 150,
             "level": 8,
@@ -86833,13 +88510,16 @@
             "components": {
                 "v": true,
                 "s": true,
-                "m": "a bit of sponge"
+                "m": "un trozo de esponja"
             },
             "duration": [{
                     "type": "instant"
                 }
             ],
-            "entries": ["You draw the moisture from every creature in a 30-foot cube centered on a point you choose within range. Each creature in that area must make a Constitution saving throw. Constructs and undead aren't affected, and plants and water elementals make this saving throw with disadvantage. A creature takes {@damage 12d8} necrotic damage on a failed save, or half as much damage on a successful one.", "Nonmagical plants in the area that aren't creatures, such as trees and shrubs, wither and die instantly."],
+            "entries": [
+				"Robas el agua que forma parte del cuerpo de toda criatura que se encuentre en un cubo de 30 pies centrado en un punto que elijas dentro del alcance. Las criaturas en el área deberán realizar una tirada de salvación de Constitución. Los autómatas y muertos vivientes no se ven afectados, pero las plantas y los elementales de agua harán la tirada de salvación con desventaja. Las criaturas afectadas sufrirán {@damage 12d8} de daño necrótico si fallan la tirada o la mitad del daño si la superan.", 
+				"Las plantas no mágicas que no sean criaturas, tales como árboles y arbustos, y se encuentren en el área se marchitan y mueren inmediatamente."
+			],
             "damageInflict": ["necrotic"],
             "savingThrow": ["constitution"],
             "areaTags": ["C"],
@@ -88162,7 +89842,7 @@
             }
         }, 
 		{
-            "name": "Elemental Bane",
+            "name": "Perdición elemental",
             "source": "XGE-ES",
             "page": 155,
             "level": 4,
@@ -88192,11 +89872,11 @@
                     "concentration": true
                 }
             ],
-            "entries": ["Choose one creature you can see within range, and choose one of the following damage types: acid, cold, fire, lightning, or thunder. The target must succeed on a Constitution saving throw or be affected by the spell for its duration. The first time each turn the affected target takes damage of the chosen type, the target takes an extra {@damage 2d6} damage of that type. Moreover, the target loses any resistance to that damage type until the spell ends."],
+            "entries": ["Elige una criatura que puedas ver y se encuentre dentro del alcance y escoge uno de los siguientes tipos de daño: ácido, frío, fuego, relámpago o trueno. El objetivo deberá tener éxito en una tirada de salvación de Constitución o será afectado por el conjuro mientras este se mantenga. La primera vez en cada turno que la criatura reciba daño del tipo elegido, esta recibe {@damage 2d6} de daño adicional de dicho tipo. Además, el objetivo pierde cualquier resistencia que tuviera a ese tipo de daño hasta que el conjuro termine."],
             "entriesHigherLevel": [{
                     "type": "entries",
                     "name": "At Higher Levels",
-                    "entries": ["When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th. The creatures must be within 30 feet of each other when you target them."]
+                    "entries": ["Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 5 o más, puedes elegir como objetivo a una criatura adicional por cada nivel por encima de 4 que tenga el espacio que hayas empleado. En el momento de elegirlas como objetivo, cada criatura debe estar a 30 pies o menos de todas las demás."]
                 }
             ],
             "damageInflict": ["acid", "cold", "fire", "lightning", "thunder"],
@@ -88384,7 +90064,7 @@
             }
         }, 
 		{
-            "name": "Far Step",
+            "name": "Paso lejano",
             "source": "XGE-ES",
             "page": 155,
             "level": 5,
@@ -88412,7 +90092,7 @@
                     "concentration": true
                 }
             ],
-            "entries": ["You teleport up to 60 feet to an unoccupied space you can see. On each of your turns before the spell ends, you can use a bonus action to teleport in this way again."],
+            "entries": ["Te teletransportas hasta 60 pies a un espacio desocupado de tu elección que puedas ver. En cada uno de tus turnos antes de que el conjuro termine, puedes usar una acción adicional para teletransportarte de esta manera nuevamente."],
             "miscTags": ["SGT", "TP"],
             "classes": {
                 "fromClassList": [{
@@ -88991,7 +90671,7 @@
             }
         }, 
 		{
-            "name": "Infernal Calling",
+            "name": "Llamada infernal",
             "source": "XGE-ES",
             "page": 158,
             "level": 5,
@@ -89012,7 +90692,7 @@
                 "v": true,
                 "s": true,
                 "m": {
-                    "text": "a ruby worth at least 999 gp",
+                    "text": "un rubí que valga, al menos, 999 po",
                     "cost": 99900
                 }
             },
@@ -89025,11 +90705,17 @@
                     "concentration": true
                 }
             ],
-            "entries": ["Uttering a dark incantation, you summon a devil from the Nine Hells. You choose the devil's type, which must be one of {@filter challenge rating 6 or lower|bestiary|challenge rating=[&0;&6]|tag=devil|miscellaneous=!swarm}, such as a {@creature barbed devil} or a {@creature bearded devil}. The devil appears in an unoccupied space that you can see within range. The devil disappears when it drops to 0 hit points or when the spell ends.", "The devil is unfriendly toward you and your companions. Roll initiative for the devil, which has its own turns. It is under the Dungeon Master's control and acts according to its nature on each of its turns, which might result in its attacking you if it thinks it can prevail, or trying to tempt you to undertake an evil act in exchange for limited service. The DM has the creature's statistics.", "On each of your turns, you can try to issue a verbal command to the devil (no action required by you). It obeys the command if the likely outcome is in accordance with its desires, especially if the result would draw you toward evil. Otherwise, you must make a Charisma ({@skill Deception}, {@skill Intimidation}, or {@skill Persuasion}) check contested by its Wisdom ({@skill Insight}) check. You make the check with advantage if you say the devil's true name. If your check fails, the devil becomes immune to your verbal commands for the duration of the spell, though it can still carry out your commands if it chooses. If your check succeeds, the devil carries out your command—such as \"attack my enemies,\" \"explore the room ahead,\" or \"bear this message to the queen\"—until it completes the activity, at which point it returns to you to report having done so.", "If your concentration ends before the spell reaches its full duration, the devil doesn't disappear if it has become immune to your verbal commands. Instead, it acts in whatever manner it chooses for {@dice 3d6} minutes, and then it disappears.", "If you possess an individual devil's talisman, you can summon that devil if it is of the appropriate challenge rating plus 1, and it obeys all your commands, with no Charisma checks required."],
+            "entries": [
+				"Pronunciando una oración oscura, convocas a un diablo de los Nueve Infiernos. Eliges el tipo del diablo, que debe ser de {@filter valor de desafío 6 o inferior|bestiary|challenge rating=[&0;&6]|tag=diablo|miscellaneous=!swarm}, como un {@creature diablo punzante|MM-ES} o un {@creature diablo barbado|MM-ES}. La criatura aparece en un espacio desocupado que puedas ver y se encuentre dentro del alcance. El diablo desaparece si sus puntos de golpe descienden a 0 o el conjuro termina.", 
+				"El diablo se muestra antipático contigo y con tus compañeros. Haz una tirada de iniciativa para el diablo, que tiene sus propios turnos. Está bajo el control del Dungeon Master y actúa de acuerdo a su naturaleza en cada uno de ellos, lo que podría provocar que te ataque si cree que puede vencerte o intente tentarte para que realices un acto malvado a cambio de un servicio limitado. El DM tiene el perfil de esta criatura.", 
+				"En cada uno de sus turnos, puedes tratar de emitir una orden verbal al diablo (no requiere de ninguna acción por tu parte). Este obedecerá el mandato si el posible resultado está en concordancia con sus deseos, especialmente si al hacerlo te atrae hacia el mal. De lo contrario, deberás hacer una tirada enfrentada de Carisma ({@skill Deception|Engaño}, {@skill Intimidation|Intimidación} o {@skill Persuasion|Persuasión}) contra su Sabiduría ({@skill Insight|Percepción}). Realizas la tirada con ventaja si pronuncias el nombre verdadero del diablo. Si fallas, el diablo se volverá inmune a tus órdenes verbales hasta que termine el conjuro, aunque puede seguir obedeciendo tus mandatos si así lo desea. Si tienes éxito, el diablo ejecuta tu orden -como \"ataca a mis enemigos\", \"explora la sala de delante\" o \"lleva este mensaje a la reina\"- hasta terminar con el encargo. En ese momento regresará hasta donde te encuentres para informar de que ha cumplido con su misión.", 
+				"Si tu concentración termina antes de que el conjuro alcance su duración completa, el diablo no desaparecerá si se ha vuelto inmune a tus órdenes verbales. En cambio, actuará de la manera que prefiera durante {@dice 3d6} minutos y, tras este tiempo, desaparecerá.", 
+				"Si posees el talismán de un diablo en particular, podrás invocarle siempre y cuando su valor de desafío sea igual o inferior al que puedes invocar con este conjuro + 1. Este obedecerá todos tus mandatos, sin necesidad de pruebas de Carisma."
+			],
             "entriesHigherLevel": [{
                     "type": "entries",
                     "name": "At Higher Levels",
-                    "entries": ["When you cast this spell using a spell slot of 6th level or higher, the challenge rating increases by 1 for each slot level above 5th."]
+                    "entries": ["Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 6 o más, el valor de desafío aumenta en 1 por cada nivel por encima de 5 que tenga el espacio que hayas empleado."]
                 }
             ],
             "miscTags": ["SGT", "SMN"],
@@ -89055,7 +90741,7 @@
 			}
         }, 
 		{
-            "name": "Infestation",
+            "name": "Plaga",
             "source": "XGE-ES",
             "page": 158,
             "level": 0,
@@ -89075,13 +90761,16 @@
             "components": {
                 "v": true,
                 "s": true,
-                "m": "a living flea"
+                "m": "una pulga viva"
             },
             "duration": [{
                     "type": "instant"
                 }
             ],
-            "entries": ["You cause a cloud of mites, fleas, and other parasites to appear momentarily on one creature you can see within range. The target must succeed on a Constitution saving throw, or it takes {@damage 1d6} poison damage and moves 5 feet in a random direction if it can move and its speed is at least 5 feet. Roll a {@dice d4} for the direction: 1, north; 2, south; 3, east; or 4, west. This movement doesn't provoke opportunity attacks, and if the direction rolled is blocked, the target doesn't move.", "The spell's damage increases by {@dice 1d6} when you reach 5th level ({@damage 2d6}), 11th level ({@damage 3d6}), and 17th level ({@damage 4d6})."],
+            "entries": [
+				"Creas un enjambre de ácaros, pulgas y otros parásitos, que aparecen momentáneamente sobre una criatura que puedas ver y se encuentre dentro del alcance. El objetivo deberá tener éxito en una tirada de salvación de Constitución o recibirá {@damage 1d6} de daño de veneno y se moverá 5 pies en una dirección aleatoria, siempre y cuando pueda desplazarse y su velocidad sea de al menos 5 pies. Lanza un {@dice d4} para determinar la dirección: 1, norte; 2, sur; 3, este; o 4, oeste. Este movimiento no provoca ataques de oportunidad. Si la dirección obtenida está bloqueada, el objetivo no se mueve.", 
+				"El daño del conjuro aumenta en {@dice 1d6} cuando alcanzas nivel 5 ({@damage 2d6}), nivel 11 ({@damage 3d6}) y nivel 17 ({@damage 4d6})."
+			],
             "scalingLevelDice": {
                 "label": "poison damage",
                 "scaling": {
@@ -89356,7 +91045,7 @@
             }
         }, 
 		{
-            "name": "Invulnerability",
+            "name": "Invulnerabilidad",
             "source": "XGE-ES",
             "page": 160,
             "level": 9,
@@ -89376,7 +91065,7 @@
                 "v": true,
                 "s": true,
                 "m": {
-                    "text": "a small piece of adamantine worth at least 500 gp, which the spell consumes",
+                    "text": "un pequeño trozo de adamantina con un valor de 500 po, que es consumido por el conjuro",
                     "cost": 50000,
                     "consume": true
                 }
@@ -89390,7 +91079,7 @@
                     "concentration": true
                 }
             ],
-            "entries": ["You are immune to all damage until the spell ends."],
+            "entries": ["Eres inmune a todo el daño hasta que el conjuro termina."],
             "classes": {
                 "fromClassList": [{
                         "name": "Mago",
@@ -89447,7 +91136,7 @@
             }
         }, 
 		{
-            "name": "Maddening Darkness",
+            "name": "Oscuridad enloquecedora",
             "source": "XGE-ES",
             "page": 160,
             "level": 8,
@@ -89466,7 +91155,7 @@
             },
             "components": {
                 "v": true,
-                "m": "a drop of pitch mixed with a drop of mercury"
+                "m": "una gota de brea mezclada con una gota de mercurio"
             },
             "duration": [{
                     "type": "timed",
@@ -89477,7 +91166,10 @@
                     "concentration": true
                 }
             ],
-            "entries": ["Magical darkness spreads from a point you choose within range to fill a 60-foot-radius sphere until the spell ends. The darkness spreads around corners. A creature with {@sense darkvision} can't see through this darkness. Non-magical light, as well as light created by spells of 8th level or lower, can't illuminate the area.", "Shrieks, gibbering, and mad laughter can be heard within the sphere. Whenever a creature starts its turn in the sphere, it must make a Wisdom saving throw, taking {@damage 8d8} psychic damage on a failed save, or half as much damage on a successful one."],
+            "entries": [
+				"Una oscuridad mágica se propaga desde un punto de tu elección que se encuentre dentro del alcance, y llena una esfera de 60 pies de radio hasta que el conjuro finalice. Esta oscuridad se extiende más allá de las esquinas. Las criaturas con {@sense darkvision|visión en la oscuridad} no pueden ver a través de esta esfera. Las luces no mágicas, así como aquellas creadas por conjuros de nivel 8 o inferiores, no pueden iluminar la zona.", 
+				"Chillidos, farfullidos y risas maníacas resuenan dentro de la esfera. Siempre que una criatura empiece su turno dentro de ella, deberá hacer una tirada de salvación de Sabiduría, recibiendo {@damage 8d8} de daño psíquico si falla o la mitad de ese daño si la supera."
+			],
             "damageInflict": ["psychic"],
             "savingThrow": ["wisdom"],
             "areaTags": ["S"],
@@ -89538,7 +91230,7 @@
             }
         }, 
 		{
-            "name": "Magic Stone",
+            "name": "Piedra mágica",
             "source": "XGE-ES",
             "page": 160,
             "level": 0,
@@ -89566,7 +91258,10 @@
                     }
                 }
             ],
-            "entries": ["You touch one to three pebbles and imbue them with magic. You or someone else can make a ranged spell attack with one of the pebbles by throwing it or hurling it with a {@item sling|phb}. If thrown, a pebble has a range of 60 feet. If someone else attacks with a pebble, that attacker adds your spellcasting ability modifier, not the attacker's, to the attack roll. On a hit, the target takes bludgeoning damage equal to {@damage 1d6} + your spellcasting ability modifier. Whether the attack hits or misses, the spell then ends on the stone.", "If you cast this spell again, the spell ends on any pebbles still affected by your previous casting."],
+            "entries": [
+				"Tocas entre uno y tres guijarros y los imbuyes de magia. Tú o cualquier otro podéis arrojar o lanzar con una {@item honda|PHB-ES} cualquiera de ellos, realizando un ataque de conjuro a distancia al hacerlo. Al ser arrojadas, estas piedras tienen un alcance de 60 pies. Cualquiera que no seas tú que ataque usando estos guijarros añadirá tu modificador de aptitud mágica, en vez del suyo, a la tirada de ataque. Si este ataque impacta, el objetivo recibirá {@damage 1d6} + tu modificador por aptitud mágica de daño contundente. Tanto si el ataque impacta como si falla, el conjuro deja de afectar a la piedra.", 
+				"Si lanzas otra vez este conjuro, este termina en cualquier piedra que todavía estuviera afectada por tu anterior lanzamiento."
+			],
             "damageInflict": ["bludgeoning"],
             "spellAttack": ["R"],
             "areaTags": ["ST"],
@@ -89585,7 +91280,7 @@
             }
         }, 
 		{
-            "name": "Mass Polymorph",
+            "name": "Polimorfar en masa",
             "source": "XGE-ES",
             "page": 160,
             "level": 9,
@@ -89605,7 +91300,7 @@
             "components": {
                 "v": true,
                 "s": true,
-                "m": "a caterpillar cocoon"
+                "m": "un capullo de oruga"
             },
             "duration": [{
                     "type": "timed",
@@ -89616,7 +91311,13 @@
                     "concentration": true
                 }
             ],
-            "entries": ["You transform up to ten creatures of your choice that you can see within range. An unwilling target must succeed on a Wisdom saving throw to resist the transformation. An unwilling shapechanger automatically succeeds on the save.", "Each target assumes a beast form of your choice, and you can choose the same form or different ones for each target. The new form can be {@filter any beast|bestiary|type=beast|miscellaneous=!swarm} you have seen whose challenge rating is equal to or less than the target's (or half the target's level, if the target doesn't have a challenge rating). The target's game statistics, including mental ability scores, are replaced by the statistics of the chosen beast, but the target retains its hit points, alignment, and personality.", "Each target gains a number of temporary hit points equal to the hit points of its new form. These temporary hit points can't be replaced by temporary hit points from another source. A target reverts to its normal form when it has no more temporary hit points or it dies. If the spell ends before then, the creature loses all its temporary hit points and reverts to its normal form.", "The creature is limited in the actions it can perform by the nature of its new form. It can't speak, cast spells, or do anything else that requires hands or speech.", "The target's gear melds into the new form. The target can't activate, use, wield, or otherwise benefit from any of its equipment."],
+            "entries": [
+				"Transformas hasta diez criaturas de tu elección que puedas ver y se encuentren dentro del alcance. Un objetivo involuntario deberá tener éxito en una tirada de salvación de Sabiduría para resistirse a la transformación. Un cambiaformas que se oponga a ser transformado tendrá éxito automáticamente en esta tirada.", 
+				"Cada objetivo asume una forma bestial de tu elección. Puedes elegir un mismo aspecto para todos o uno diferente para cada criatura. La nueva forma puede ser la de {@filter cualquier bestia|bestiary|tag=bestia|miscellaneous=!swarm} cuyo valor de desafío sea igual o menor que el del objetivo (o igual o inferior al nivel del objetivo, si este no tiene un valor de desafío). El perfil de la criatura, incluyendo sus puntuaciones de características mentales, son sustituidas por las de la bestia escogida, pero el objetivo conserva sus puntos de golpe, alineamiento y personalidad.", 
+				"La criatura transformada obtiene tantos puntos de golpe temporales como puntos de golpe posee su nueva forma. Estos puntos de golpe temporales no pueden ser reemplazados por puntos de golpe temporales de otra fuente. Un objetivo vuelve a su aspecto original cuando no le quedan más puntos de golpe temporales o cuando muere. Si el conjuro termina antes de que esto ocurra, la criatura perderá todos sus puntos de golpe temporales y volverá a su forma normal.", 
+				"Las acciones del objetivo quedan limitadas por la naturaleza de la bestia elegida. No puede hablar, lanzar conjuros o hacer cualquier otra cosa que requiera de manos o la capacidad de hablar.", 
+				"El equipamiento de la criatura se funde con su nueva forma, de modo que esta no puede activar, blandir o beneficiarse de su equipamiento de ninguna manera."
+			],
             "savingThrow": ["wisdom"],
             "miscTags": ["SGT", "THP"],
             "areaTags": ["MT"],
@@ -89685,7 +91386,7 @@
             }
         }, 
 		{
-            "name": "Melf's Minute Meteors",
+            "name": "Meteoritos diminutos de Melf",
             "source": "XGE-ES",
             "page": 161,
             "level": 3,
@@ -89704,7 +91405,7 @@
             "components": {
                 "v": true,
                 "s": true,
-                "m": "niter, sulfur, and pine tar formed into a bead"
+                "m": "salitre, azufre y resina de pino a los que se ha dado la forma de una cuenta"
             },
             "duration": [{
                     "type": "timed",
@@ -89715,11 +91416,11 @@
                     "concentration": true
                 }
             ],
-            "entries": ["You create six tiny meteors in your space. They float in the air and orbit you for the spell's duration. When you cast the spell—and as a bonus action on each of your turns thereafter—you can expend one or two of the meteors, sending them streaking toward a point or points you choose within 120 feet of you. Once a meteor reaches its destination or impacts against a solid surface, the meteor explodes. Each creature within 5 feet of the point where the meteor explodes must make a Dexterity saving throw. A creature takes {@damage 2d6} fire damage on a failed save, or half as much damage on a successful one."],
+            "entries": ["Creas seis pequeños meteoritos en tu espacio. Flotan en el aire y orbitan a tu alrededor durante la duración del conjuro. Cuando lanzas este conjuro -y como acción adicional en cada uno de tus turnos posteriores a este- puedes gastar uno o dos de los meteoritos, enviándolos hacia uno o más puntos que elijas y que se encuentren a un máximo de 120 pies de ti. Cuando un meteorito llega a su destino o impacta contra una superficie sólida, este explota. Las criaturas situadas a 5 pies o menos del punto donde el meteorito estalla deberán realizar una tirada de salvación de Destreza. Sufrirán {@damage 2d6} de daño de fuego si fallan la tirada o la mitad de ese daño si la superan."],
             "entriesHigherLevel": [{
                     "type": "entries",
                     "name": "At Higher Levels",
-                    "entries": ["When you cast this spell using a spell slot of 4th level or higher, the number of meteors created increases by two for each slot level above 3rd."]
+                    "entries": ["Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 4 o más, el número de meteoritos aumenta en dos por cada nivel por encima de 3 que tenga el espacio que hayas empleado."]
                 }
             ],
             "damageInflict": ["fire"],
@@ -89901,7 +91602,7 @@
             }
         }, 
 		{
-            "name": "Mold Earth",
+            "name": "Moldear la tierra",
             "source": "XGE-ES",
             "page": 162,
             "level": 0,
@@ -89931,10 +91632,17 @@
                     }
                 }
             ],
-            "entries": ["You choose a portion of dirt or stone that you can see within range and that fits within a 5-foot cube. You manipulate it in one of the following ways:", {
+            "entries": [
+				"Elige un fragmento de barro o tierra que puedas ver, se encuentre dentro del alcance y quepa dentro de un cubo de 5 pies de lado. Puedes manipularlo de una de las formas siguientes:", {
                     "type": "list",
-                    "items": ["If you target an area of loose earth, you can instantaneously excavate it, move it along the ground, and deposit it up to 5 feet away. This movement doesn't involve enough force to cause damage.", "You cause shapes, colors, or both to appear on the dirt or stone, spelling out words, creating images, or shaping patterns. The changes last for 1 hour.", "If the dirt or stone you target is on the ground, you cause it to become difficult terrain. Alternatively, you can cause the ground to become normal terrain if it is already difficult terrain. This change lasts for 1 hour."]
-                }, "If you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action."],
+                    "items": [
+						"Si eliges una zona de tierra suelta, podrás excavarla instantáneamente, desplazarla sobre el suelo y depositarla a una distancia de hasta 5 pies. Este movimiento no tiene la fuerza como para infligir daño.", 
+						"Haces que distintas formas, colores o ambas cosas aparezcan en la tierra o la piedra, deletreando palabras, creando imágenes o moldeando patrones. Los cambios duran 1 hora.", 
+						"Si la tierra o piedra que eliges como objetivo está en el suelo, puedes provocar que se convierta en terreno difícil. Alternativamente, puedes decidir que el suelo se convierta en terreno normal si ya es terreno difícil. Este cambio dura 1 hora. "
+					]
+                }, 
+				"Si lanzas este conjuro varias veces, puedes mantener hasta dos de sus efectos no instantáneos activos a la vez. Puedes utilizar una acción para finalizar cualquiera de ellos."
+			],
             "miscTags": ["SGT"],
             "areaTags": ["C"],
             "classes": {
@@ -89997,7 +91705,7 @@
             }
         }, 
 		{
-            "name": "Power Word Pain",
+            "name": "Palabra de poder: dolor",
             "source": "XGE-ES",
             "page": 163,
             "level": 7,
@@ -90021,7 +91729,12 @@
                     "type": "instant"
                 }
             ],
-            "entries": ["You speak a word of power that causes waves of intense pain to assail one creature you can see within range. If the target has 100 hit points or fewer, it is subject to crippling pain. Otherwise, the spell has no effect on it. A target is also unaffected if it is immune to being {@condition charmed}.", "While the target is affected by crippling pain, any speed it has can be no higher than 10 feet. The target also has disadvantage on attack rolls, ability checks, and saving throws, other than Constitution saving throws. Finally, if the target tries to cast a spell, it must first succeed on a Constitution saving throw, or the casting fails and the spell is wasted.", "A target suffering this pain can make a Constitution saving throw at the end of each of its turns. On a successful save, the pain ends."],
+            "entries": [
+				"Pronuncias una palabra de poder que causa olas de intenso dolor a una criatura que puedas ver y se encuentre dentro del alcance.",
+				"Si el objetivo tiene 100 puntos de golpe o menos, es objeto de un dolor paralizante. Si no es así, el conjuro no tiene efecto. Una criatura tampoco se verá afectada si es inmune a ser {@condition hechizado|PHB-ES|hechizada}.", 
+				"Mientras el objetivo sufra este dolor paralizante, cualquier velocidad que posea no podrá ser mayor a 10 pies. La criatura también tendrá desventaja en las tiradas de ataque, las pruebas de característica y las tiradas de salvación (con excepción de las tiradas de salvación de Constitución). Finalmente, si el objetivo intenta lanzar un conjuro, primero deberá tener éxito en una tirada de salvación de Constitución. De lo contrario, el lanzamiento falla y el conjuro se malgasta.", 
+				"La criatura que sufra este dolor puede realizar una tirada de salvación de Constitución al final de cada uno de sus turnos. Si tiene éxito, el conjuro termina inmediatamente."
+			],
             "savingThrow": ["constitution"],
             "miscTags": ["SGT"],
             "areaTags": ["ST"],
@@ -90182,7 +91895,7 @@
             }
         }, 
 		{
-            "name": "Pyrotechnics",
+            "name": "Pirotecnia",
             "source": "XGE-ES",
             "page": 163,
             "level": 2,
@@ -90207,14 +91920,21 @@
                     "type": "instant"
                 }
             ],
-            "entries": ["Choose an area of nonmagical flame that you can see and that fits within a 5-foot cube within range. You can extinguish the fire in that area, and you create either fireworks or smoke when you do so.", {
+            "entries": [
+				"Elige una zona de llamas no mágicas que puedas ver, se encuentre dentro del alcance y quepa dentro de un cubo de 5 pies de lado. Puedes extinguir el fuego en esa área y crear fuegos artificiales o humo cuando lo haces.", 
+				{
                     "type": "entries",
-                    "name": "Fireworks",
-                    "entries": ["The target explodes with a dazzling display of colors. Each creature within 10 feet of the target must succeed on a Constitution saving throw or become {@condition blinded} until the end of your next turn."]
-                }, {
+                    "name": "Fuegos artificiales",
+                    "entries": [
+						"El cubo explota con un deslumbrante despliegue de colores. Cada criatura situada a 10 pies del objetivo deberá tener éxito en una tirada de salvación de Constitución o quedará {@condition cegado|PHB-ES|cegada} hasta el final de tu siguiente turno."
+					]
+                }, 
+				{
                     "type": "entries",
-                    "name": "Smoke",
-                    "entries": ["Thick black smoke spreads out from the target in a 20-foot radius, moving around corners. The area of the smoke is heavily obscured. The smoke persists for 1 minute or until a strong wind disperses it."]
+                    "name": "Humo",
+                    "entries": [
+						"Un humo negro se extiende desde el cubo en un radio de 20 pies, esparciéndose por todos los rincones. Esta zona se vuelve muy oscura. El humo persiste durante 1 minuto o hasta que un viento fuerte lo disperse."
+					]
                 }
             ],
             "conditionInflict": ["blinded"],
@@ -90393,13 +92113,9 @@
             }
         }, 
 		{
-            "name": "Shape Water",
+            "name": "Moldear el agua",
             "source": "XGE-ES",
             "page": 164,
-            "otherSources": [{
-                    "source": "EGW"
-                }
-            ],
             "level": 0,
             "school": "T",
             "time": [{
@@ -90427,10 +92143,19 @@
                     }
                 }
             ],
-            "entries": ["You choose an area of water that you can see within range and that fits within a 5-foot cube. You manipulate it in one of the following ways:", {
+            "entries": [
+				"Elige una zona de agua situada dentro del alcance, que puedas ver y que quepa dentro de un cubo de 5 pies de lado. Puedes manipularla de una de las formas siguientes:", 
+				{
                     "type": "list",
-                    "items": ["You instantaneously move or otherwise change the flow of the water as you direct, up to 5 feet in any direction. This movement doesn't have enough force to cause damage.", "You cause the water to form into simple shapes and animate at your direction. This change lasts for 1 hour.", "You change the water's color or opacity. The water must be changed in the same way throughout. This change lasts for 1 hour.", "You freeze the water, provided that there are no creatures in it. The water unfreezes in 1 hour."]
-                }, "If you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action."],
+                    "items": [
+						"Mueves o cambias cómo fluye el agua de forma instantánea, hasta 5 pies en la dirección que prefieras. Este movimiento no tiene la fuerza suficiente como para infligir daño.", 
+						"Haces que el agua asuma formas simples y se anime siguiendo tus órdenes. Este cambio dura 1 hora.", 
+						"Modificas el color o la opacidad del agua. Toda la masa de agua se ve afectada uniformemente. Este cambio dura 1 hora.", 
+						"Congelas el agua, siempre y cuando no haya criaturas sumergidas en ella. Se descongelará en 1 hora."
+					]
+                }, 
+				"Si lanzas este conjuro varias veces, eres capaz de mantener hasta dos de sus efectos no instantáneos activos a la vez. Puedes utilizar una acción para finalizar cualquiera de ellos."
+			],
             "miscTags": ["SGT"],
             "areaTags": ["C"],
             "classes": {
@@ -90664,7 +92389,7 @@
             }
         }, 
 		{
-            "name": "Snilloc's Snowball Swarm",
+            "name": "Nube de bolas de nieve de Snilloc",
             "source": "XGE-ES",
             "page": 165,
             "level": 2,
@@ -90684,17 +92409,17 @@
             "components": {
                 "v": true,
                 "s": true,
-                "m": "a piece of ice or a small white rock chip"
+                "m": "un trozo de hielo o un pequeño trozo de roca blanca"
             },
             "duration": [{
                     "type": "instant"
                 }
             ],
-            "entries": ["A flurry of magic snowballs erupts from a point you choose within range. Each creature in a 5-foot-radius sphere centered on that point must make a Dexterity saving throw. A creature takes {@damage 3d6} cold damage on a failed save, or half as much damage on a successful one."],
+            "entries": ["Una ráfaga de bolas de nieve mágicas irrumpe desde un punto que elijas y se encuentre dentro del alcance. Todas las criaturas situadas en una esfera de 5 pies de radio, centrada en el lugar escogido, deberán hacer una tirada de salvación de Destreza. Sufrirán {@damage 3d6} de daño de frío si fallan la tirada o la mitad de ese daño si la superan."],
             "entriesHigherLevel": [{
                     "type": "entries",
                     "name": "At Higher Levels",
-                    "entries": ["When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@scaledamage 3d6|2-9|1d6} for each slot level above 2nd."]
+                    "entries": ["Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 3 o más, el daño aumenta en {@scaledamage 3d6|2-9|1d6} por cada nivel por encima de 2 que tenga el espacio que hayas empleado."]
                 }
             ],
             "damageInflict": ["cold"],
@@ -90954,7 +92679,7 @@
             }
         }, 
 		{
-            "name": "Summon Lesser Demons",
+            "name": "Invocar demonios menores",
             "source": "XGE-ES",
             "page": 167,
             "level": 3,
@@ -90975,7 +92700,7 @@
                 "v": true,
                 "s": true,
                 "m": {
-                    "text": "a vial of blood from a humanoid killed within the past 24 hours",
+                    "text": "un vial con sangre de un humanoide muerto en las últimas 24 horas",
                     "consume": "optional"
                 }
             },
@@ -90988,34 +92713,49 @@
                     "concentration": true
                 }
             ],
-            "entries": ["You utter foul words, summoning demons from the chaos of the Abyss. Roll on the following table to determine what appears.", {
+            "entries": [
+				"Pronuncias unas palabras blasfemas, convocando demonios desde el caos del Abismo. Tira un dado en la siguiente tabla para determinar qué aparece.", 
+				{
                     "type": "table",
-                    "colLabels": ["{@dice d6}", "Demons Summoned"],
+                    "colLabels": ["{@dice d6}", "Demonios convocados"],
                     "colStyles": ["col-1 text-center", "col-11"],
-                    "rows": [[{
+                    "rows": [
+						[
+							{
                                 "type": "cell",
                                 "roll": {
                                     "min": 1,
                                     "max": 2
                                 }
-                            }, "Two {@filter demons of challenge rating 1 or lower|bestiary|challenge rating=[&0;&1]|tag=demon|miscellaneous=!swarm}"], [{
+                            }, 
+							"Dos {@filter demonios con un valor de desafío de 1 o inferior|bestiary|challenge rating=[&0;&1]|tag=demonio|miscellaneous=!swarm}"],
+							[
+								{
                                 "type": "cell",
                                 "roll": {
                                     "min": 3,
                                     "max": 4
                                 }
-                            }, "Four {@filter demons of challenge rating 1/2 or lower|bestiary|challenge rating=[&0;&1/2]|tag=demon|miscellaneous=!swarm}"], [{
+                            }, 
+							"Cuatro {@filter demonios con un valor de desafío de 1/2 o inferior|bestiary|challenge rating=[&0;&1/2]|tag=demonio|miscellaneous=!swarm}"],
+							[{
                                 "type": "cell",
                                 "roll": {
                                     "min": 5,
                                     "max": 6
                                 }
-                            }, "Eight {@filter demons of challenge rating 1/4 or lower|bestiary|challenge rating=[&0;&1/4]|tag=demon|miscellaneous=!swarm}"]]
-                }, "The DM chooses the demons, such as {@creature manes} or {@creature dretch||dretches}, and you choose the unoccupied spaces you can see within range where they appear. A summoned demon disappears when it drops to 0 hit points or when the spell ends.", "The demons are hostile to all creatures, including you. Roll initiative for the summoned demons as a group, which has its own turns. The demons pursue and attack the nearest non-demons to the best of their ability.", "As part of casting the spell, you can form a circle on the ground with the blood used as a material component. The circle is large enough to encompass your space. While the spell lasts, the summoned demons can't cross the circle or harm it, and they can't target anyone within it. Using the material component in this manner consumes it when the spell ends."],
+                            }, 
+							"Ocho {@filter demonios con un valor de desafío de 1/4 o inferior|bestiary|challenge rating=[&0;&1/4]|tag=demonio|miscellaneous=!swarm}"
+						]
+					]
+                }, 
+				"El DM elige los demonios, como {@creature mane|MM-ES|manes} o {@creature dretch|MM-ES|dretches}, y tu escoges los espacios desocupados donde aparecen, que puedas ver y se encuentren dentro del alcance. Un demonio invocado desaparece si sus puntos de golpe descienden a Q o el conjuro termina.", 
+				"Estos demonios son hostiles a todas las criaturas, incluyéndote a ti. Los infernales actúan como un grupo con sus propios turnos, con una sola de tirada de iniciativa común. Los demonios persiguen y atacan las criaturas no demonios más cercanas en la medida de sus capacidades.", 
+				"Como parte del lanzamiento del conjuro, puedes formar un círculo en el suelo con la sangre utilizada como componente, El círculo ha de ser lo suficientemente grande como para abarcar tu espacio. Mientras dure el conjuro, los demonios invocados no podrán cruzar ni perturbar dicho círculo, y tampoco podrán atacar a nadie dentro de él. Usar el componente material de esta manera lo consume cuando e conjuro termina."],
             "entriesHigherLevel": [{
                     "type": "entries",
                     "name": "At Higher Levels",
-                    "entries": ["When you cast this spell using a spell slot of 6th or 7th level, you summon twice as many demons. If you cast it using a spell slot of 8th or 9th level, you summon three times as many demons."]
+                    "entries": ["Cuando lances este conjuro usando un espacio de conjuro de nivel 6 o 7, invocas el doble de demonios. Si utilizas empleando un espacio de nivel 80% convocas el triple de infernales."]
                 }
             ],
             "miscTags": ["SGT", "SMN"],
@@ -91173,7 +92913,7 @@
             }
         }, 
 		{
-            "name": "Thunder Step",
+            "name": "Paso atronador",
             "source": "XGE-ES",
             "page": 168,
             "level": 3,
@@ -91197,11 +92937,14 @@
                     "type": "instant"
                 }
             ],
-            "entries": ["You teleport yourself to an unoccupied space you can see within range. Immediately after you disappear, a thunderous boom sounds, and each creature within 10 feet of the space you left must make a Constitution saving throw, taking {@damage 3d10} thunder damage on a failed save, or half as much damage on a successful one. The thunder can be heard from up to 300 feet away.", "You can bring along objects as long as their weight doesn't exceed what you can carry. You can also teleport one willing creature of your size or smaller who is carrying gear up to its carrying capacity. The creature must be within 5 feet of you when you cast this spell, and there must be an unoccupied space within 5 feet of your destination space for the creature to appear in; otherwise, the creature is left behind."],
+            "entries": [
+				"Te teletransportas a un espacio desocupado que puedas ver y que se encuentre dentro del alcance. Inmediatamente después de que desaparezcas, suena un estruendoso bum y todas las criaturas situadas a 10 pies o menos del espacio que abandonas deberán hacer una tirada de salvación de Constitución, recibiendo {@damage 3d10} de daño de trueno en caso de fallar, o la mitad de ese daño con un éxito. El trueno se puede escuchar desde una distancia de hasta 300 pies.", 
+				"Puedes llevar objetos contigo mientras su peso no supere tu capacidad de carga. También eres capaz de teletransportar a una criatura voluntaria de tu tamaño o menor que lleve una cantidad de equipo que entre dentro de su capacidad de carga. La criatura ha de estar a 5 pies o menos de ti cuando lanzas este conjuro y debe haber un espacio desocupado a 5 pies o menos de tu espacio de destino para que esta aparezca; de lo contrario, la criatura se quedará atrás."
+			],
             "entriesHigherLevel": [{
                     "type": "entries",
                     "name": "At Higher Levels",
-                    "entries": ["When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@scaledamage 3d10|3-9|1d10} for each slot level above 3rd."]
+                    "entries": ["Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 4 o más, el daño aumenta en {@scaledamage 3d10|3-9|1d10} por cada nivel por encima de 3 que tenga el espacio que hayas empleado."]
                 }
             ],
             "damageInflict": ["thunder"],
@@ -91285,7 +93028,7 @@
             }
         }, 
 		{
-            "name": "Tidal Wave",
+            "name": "Maremoto",
             "source": "XGE-ES",
             "page": 168,
             "level": 3,
@@ -91305,13 +93048,15 @@
             "components": {
                 "v": true,
                 "s": true,
-                "m": "a drop of water"
+                "m": "una gota de agua"
             },
             "duration": [{
                     "type": "instant"
                 }
             ],
-            "entries": ["You conjure up a wave of water that crashes down on an area within range. The area can be up to 30 feet long, up to 10 feet wide, and up to 10 feet tall. Each creature in that area must make a Dexterity saving throw. On a failed save, a creature takes {@damage 4d8} bludgeoning damage and is knocked {@condition prone}. On a successful save, a creature takes half as much damage and isn't knocked {@condition prone}. The water then spreads out across the ground in all directions, extinguishing unprotected flames in its area and within 30 feet of it, and then it vanishes."],
+            "entries": [
+				"Conjuras una ola de agua que se estrella contra un área que se encuentre dentro del alcance. El área puede ser de hasta 30 pies de largo, 10 pies de ancho y 10 pies de altura. Toda criatura situada en la zona deberá hacer una tirada de salvación de Destreza. Con un fallo, sufrirá {@damage 4d8} de daño contundente y será {@condition derribado|PHB-ES|derribada}. Si supera la tirada, recibirá la mitad de ese daño y no será {@condition derribado|PHB-ES|derribada}. Tras el impacto el agua se extiende por el suelo en todas direcciones, extinguiendo toda llama desprotegida en el área y a 30 pies o menos de ella para, inmediatamente después, desaparecer."
+			],
             "damageInflict": ["bludgeoning"],
             "conditionInflict": ["prone"],
             "savingThrow": ["dexterity"],
@@ -91559,7 +93304,7 @@
             }
         }, 
 		{
-            "name": "Wall of Light",
+            "name": "Muro de luz",
             "source": "XGE-ES",
             "page": 170,
             "level": 5,
@@ -91579,7 +93324,7 @@
             "components": {
                 "v": true,
                 "s": true,
-                "m": "a hand mirror"
+                "m": "un espejo de mano"
             },
             "duration": [{
                     "type": "timed",
@@ -91590,11 +93335,16 @@
                     "concentration": true
                 }
             ],
-            "entries": ["A shimmering wall of bright light appears at a point you choose within range. The wall appears in any orientation you choose: horizontally, vertically, or diagonally. It can be free floating, or it can rest on a solid surface. The wall can be up to 60 feet long, 10 feet high, and 5 feet thick. The wall blocks line of sight, but creatures and objects can pass through it. It emits bright light out to 120 feet and dim light for an additional 120 feet.", "When the wall appears, each creature in its area must make a Constitution saving throw. On a failed save, a creature takes {@damage 4d8} radiant damage, and it is {@condition blinded} for 1 minute. On a successful save, it takes half as much damage and isn't {@condition blinded}. A {@condition blinded} creature can make a Constitution saving throw at the end of each of its turns, ending the effect on itself on a success.", "A creature that ends its turn in the wall's area takes {@damage 4d8} radiant damage.", "Until the spell ends, you can use an action to launch a beam of radiance from the wall at one creature you can see within 60 feet of it. Make a ranged spell attack. On a hit, the target takes {@damage 4d8} radiant damage. Whether you hit or miss, reduce the length of the wall by 10 feet. If the wall's length drops to 0 feet, the spell ends."],
+            "entries": [
+				"Un muro resplandeciente de luz brillante aparece en un punto que elijas y se encuentre dentro del alcance. La pared aparece en cualquier posición que decidas: horizontal, vertical o diagonalmente. Puede flotar en el aire o reposar en una superficie sólida. El muro puede tener hasta 60 pies de largo, 10 pies de alto y 5 pies de grosor. La pared bloquea la línea de visión, pero criaturas y objetos pueden atravesarla. Emite luz brillante a 120 pies y luz tenue 120 pies más allá.", 
+				"Cuando el muro aparece, todas las criaturas situadas en su área deberán hacer una tirada de salvación de Constitución. Si fracasa, sufrirá {@damage 4d8} de daño radiante y quedará {@condition cegado|PHB-ES|cegada} durante 1 minuto. Si la supera, recibirá la mitad del daño y no sufrirá ningún efecto. Una criatura {@condition cegado|PHB-ES|cegada} podrá realizar una tirada de salvación de Constitución al final de cada uno de sus turnos, finalizando el efecto si la supera.", 
+				"Una criatura que termine su turno en la zona ocupada por la pared recibirá {@damage 4d8} de daño radiante.", 
+				"Hasta que el conjuro termine, puedes utilizar una acción para lanzar un haz de luz desde el muro a una criatura que puedas ver y se encuentre 60 pies o menos de él. Realiza un ataque de conjuro a distancia. Si impactas, el objetivo recibirá {@damage 4d8} de daño radiante. Tanto si impactas como si no, reduce la longitud de la pared en 10 pies. Si la longitud del muro llega a 0 pies, el conjuro termina."
+			],
             "entriesHigherLevel": [{
                     "type": "entries",
                     "name": "At Higher Levels",
-                    "entries": ["When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@scaledamage 4d8|5-9|1d8} for each slot level above 5th."]
+                    "entries": ["Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 6 o más, el daño aumenta en {@scaledamage 4d8|5-9|1d8} por cada nivel por encima de 5 que tenga el espacio que hayas usado."]
                 }
             ],
             "damageInflict": ["radiant"],
@@ -91618,7 +93368,7 @@
             }
         }, 
 		{
-            "name": "Wall of Sand",
+            "name": "Muro de arena",
             "source": "XGE-ES",
             "page": 170,
             "level": 3,
@@ -91638,7 +93388,7 @@
             "components": {
                 "v": true,
                 "s": true,
-                "m": "a handful of sand"
+                "m": "un puñado de arena"
             },
             "duration": [{
                     "type": "timed",
@@ -91649,7 +93399,9 @@
                     "concentration": true
                 }
             ],
-            "entries": ["You create a wall of swirling sand on the ground at a point you can see within range. You can make the wall up to 30 feet long, 10 feet high, and 10 feet thick, and it vanishes when the spell ends. It blocks line of sight but not movement. A creature is {@condition blinded} while in the wall's space and must spend 3 feet of movement for every 1 foot it moves there."],
+            "entries": [
+				"Creas un muro de arena arremolinada sobre el suelo, en un punto que puedas ver y se encuentre dentro del alcance. Puedes hacer la pared de hasta 30 pies de largo, 10 pies de alto y 10 pies de grosor. Esta desaparece cuando el conjuro termina. El muro bloquea la línea de visión, pero no el movimiento. Las criaturas que estén en el mismo espacio ocupado por el muro de arena resultarán {@condition cegado|PHB-ES|cegadas}, y deberán gastar 3 pies de movimiento por cada pie que se muevan en su interior."
+			],
             "conditionInflict": ["blinded"],
             "miscTags": ["SGT"],
             "areaTags": ["W"],
@@ -91662,19 +93414,9 @@
             }
         }, 
 		{
-            "name": "Wall of Water",
+            "name": "Muro de agua",
             "source": "XGE-ES",
             "page": 170,
-            "otherSources": [
-				{
-                    "source": "VGM",
-                    "page": 116
-                }, 
-				{
-                    "source": "MOT",
-                    "page": 0
-                }
-            ],
             "level": 3,
             "school": "V",
             "time": [{
@@ -91692,7 +93434,7 @@
             "components": {
                 "v": true,
                 "s": true,
-                "m": "a drop of water"
+                "m": "una gota de agua"
             },
             "duration": [{
                     "type": "timed",
@@ -91703,7 +93445,10 @@
                     "concentration": true
                 }
             ],
-            "entries": ["You create a wall of water on the ground at a point you can see within range. You can make the wall up to 30 feet long, 10 feet high, and 1 foot thick, or you can make a ringed wall up to 20 feet in diameter, 20 feet high, and 1 foot thick. The wall vanishes when the spell ends. The wall's space is difficult terrain.", "Any ranged weapon attack that enters the wall's space has disadvantage on the attack roll, and fire damage is halved if the fire effect passes through the wall to reach its target. Spells that deal cold damage that pass through the wall cause the area of the wall they pass through to freeze solid (at least a 5-foot-square section is frozen). Each 5-foot-square frozen section has AC 5 and 15 hit points. Reducing a frozen section to 0 hit points destroys it. When a section is destroyed, the wall's water doesn't fill it."],
+            "entries": [
+				"Conjuras un muro de agua sobre el suelo, en un punto que puedas ver y que se encuentre dentro del alcance. Puede ser recto, de hasta 30 pies de largo, 10 de alto y 1 de grosor. o en forma de anillo, de 20 pies de diámetro, 20 de alto y 1 de grosor. En cualquier caso, este desaparece cuando el conjuro termina. El espacio ocupado por el muro se considera terreno difícil.", 
+				"Cualquier ataque con arma a distancia que entre en el espacio del muro tendrá desventaja en la tirada de ataque y, además, el daño de fuego se reduce a la mitad si el efecto pasa por el muro para alcanzar su objetivo. Los conjuros que inflijan daño de frío y crucen el muro congelarán la zona atravesada, convirtiéndola en hielo sólido (como mínimo una sección cuadrada de 5 pies). Cada sección de 5 pies congelada tendrá CA 5 y 15 puntos de golpe. Reducir una zona helada a 0 puntos de golpe la destruirá. Si una zona es destruida, el agua del resto del muro no llenará el hueco."
+			],
             "miscTags": ["SGT"],
             "areaTags": ["W"],
             "classes": {
@@ -91887,7 +93632,7 @@
             }
         }, 
 		{
-            "name": "Word of Radiance",
+            "name": "Palabra de resplandor",
             "source": "XGE-ES",
             "page": 171,
             "level": 0,
@@ -91912,7 +93657,10 @@
                     "type": "instant"
                 }
             ],
-            "entries": ["You utter a divine word, and burning radiance erupts from you. Each creature of your choice that you can see within range must succeed on a Constitution saving throw or take {@damage 1d6} radiant damage.", "The spell's damage increases by {@dice 1d6} when you reach 5th level ({@damage 2d6}), 11th level ({@damage 3d6}), and 17th level ({@damage 4d6})."],
+            "entries": [
+				"Pronuncias una palabra divina y un fulgor ardiente emana de ti. Todas las criaturas de tu elección que puedas ver y se encuentren dentro del alcance deberán tener éxito en una tirada de salvación de Constitución o recibirán {@damage 1d6} de daño radiante.", 
+				"El daño del conjuro aumenta en {@dice 1d6} cuando alcanzas nivel 5 ({@damage 2d6}), nivel 11 ({@damage 3d6}) y nivel 17 ({@damage 4d6})."
+			],
             "scalingLevelDice": {
                 "label": "radiant damage",
                 "scaling": {
@@ -91935,7 +93683,7 @@
             }
         }, 
 		{
-            "name": "Wrath of Nature",
+            "name": "Ira de la naturaleza",
             "source": "XGE-ES",
             "page": 171,
             "level": 5,
@@ -91965,22 +93713,27 @@
                     "concentration": true
                 }
             ],
-            "entries": ["You call out to the spirits of nature to rouse them against your enemies. Choose a point you can see within range. The spirits cause trees, rocks, and grasses in a 60-foot cube centered on that point to become animated until the spell ends.", {
+            "entries": [
+				"Invocas a los espíritus de la naturaleza para incitarles a atacar a tus enemigos. Elige un punto sobre el suelo que puedas ver y que se encuentre dentro del alcance. Los espíritus hacen que árboles, rocas y hierba en un cubo de 60 pies centrado en ese punto sean animados hasta que termina el conjuro.", 
+				{
                     "type": "entries",
-                    "name": "Grasses and Undergrowth",
-                    "entries": ["Any area of ground in the cube that is covered by grass or undergrowth is difficult terrain for your enemies."]
-                }, {
+                    "name": "Árboles",
+                    "entries": ["Al inicio de cada uno de tus turnos, todos tus enemigos situados a 10 pies o menos de cualquier árbol en el interior del cubo deberán tener éxito en una tirada de salvación de Destreza o recibirán {@damage 4d6} de daño cortante por el azote de las ramas."]
+                },
+				{
                     "type": "entries",
-                    "name": "Trees",
-                    "entries": ["At the start of each of your turns, each of your enemies within 10 feet of any tree in the cube must succeed on a Dexterity saving throw or take {@damage 4d6} slashing damage from whipping branches."]
-                }, {
+                    "name": "Hierba y maleza",
+                    "entries": ["Cualquier zona del suelo en el interior del cubo que esté cubierta por hierba o maleza es terreno difícil para tus enemigos."]
+                },  
+				{
                     "type": "entries",
-                    "name": "Roots and Vines",
-                    "entries": ["At the end of each of your turns, one creature of your choice that is on the ground in the cube must succeed on a Strength saving throw or become {@condition restrained} until the spell ends. A {@condition restrained} creature can use an action to make a Strength ({@skill Athletics}) check against your spell save DC, ending the effect on itself on a success."]
-                }, {
+                    "name": "Raíces y vides",
+                    "entries": ["Al final de cada uno de tus turnos, una criatura de tu elección que esté sobre el suelo y dentro del cubo deberá tener éxito en una tirada de salvación de Fuerza o será {@condition apresado|PHB-ES|apresada} hasta que el conjuro termine. Cualquier criatura {@condition apresado|PHB-ES|apresada} de esta manera puede usar una acción para hacer una prueba de Fuerza ({@skill Athletics|Atletismo}) contra tu CD de salvación de conjuros, terminando el efecto sobre sí mismo en caso de éxito."]
+                }, 
+				{
                     "type": "entries",
-                    "name": "Rocks",
-                    "entries": ["As a bonus action on your turn, you can cause a loose rock in the cube to launch at a creature you can see in the cube. Make a ranged spell attack against the target. On a hit, the target takes {@damage 3d8} nonmagical bludgeoning damage, and it must succeed on a Strength saving throw or fall {@condition prone}."]
+                    "name": "Rocas",
+                    "entries": ["Como una acción adicional en tu turno, puedes hacer que una roca suelta situada en el cubo se lance contra una criatura que puedas ver y también se encuentre dentro del cubo. Haz un ataque de conjuro a distancia contra el objetivo. Si impactas, este recibe {@damage 3d8} de daño contundente y deberá superar una tirada de salvación de Fuerza o caerá {@condition derribado|PHB-ES}."]
                 }
             ],
             "damageInflict": ["bludgeoning", "slashing"],
@@ -92527,7 +94280,7 @@
 				"Save": "Constitution",
 				"Damage": "8d8",
 				"Target": "Cada criatura en un cono de 60 pies",
-				"Damage Type": "Cold",
+				"Damage Type": "Frío",
 				"Save Success": "Mitad del daño",
 				"Higher Spell Slot Die": "d8",
 				"Higher Spell Slot Dice": "1"
@@ -94998,14 +96751,14 @@
 		
 		
 		{
-            "name": "Abi-Dalzim's Horrid Wilting",
+            "name": "Marchitamiento horrible de Abi-Dalzim",
             "source": "XGE-ES",
             "data": {
                 "Save": "Constitution",
                 "Damage": "12d8",
                 "Damage Type": "Necrótico",
                 "Save Success": "Mitad del daño",
-                "Target": "Every creature in a 30-foot cube centered on a point"
+                "Target": "Toda criatura que se encuentre en un cubo de 30 pies centrado en un punto que elijas dentro del alcance"
             },
             "shapedData": {
                 "primaryDamageCondition": "save"
@@ -95234,12 +96987,12 @@
             }
         }, 
 		{
-            "name": "Elemental Bane",
+            "name": "Perdición elemental",
             "source": "XGE-ES",
             "data": {
                 "Save": "Constitution",
                 "Damage": "2d6",
-                "Damage Type": "Extra of the chosen type"
+                "Damage Type": "Adicional del tipo elegido"
             },
             "shapedData": {
                 "primaryDamageCondition": "save"
@@ -95286,7 +97039,7 @@
             }
         }, 
 		{
-            "name": "Far Step",
+            "name": "Paso lejano",
             "source": "XGE-ES",
             "data": {}
         }, 
@@ -95312,7 +97065,7 @@
             "data": {
                 "Save": "Constitution",
                 "Damage": "1d6",
-                "Damage Type": "Cold",
+                "Damage Type": "Frío",
                 "data-Cantrip Scaling": "dice"
             },
             "shapedData": {
@@ -95401,17 +97154,17 @@
             }
         }, 
 		{
-            "name": "Infernal Calling",
+            "name": "Llamada infernal",
             "source": "XGE-ES",
             "data": {}
         }, 
 		{
-            "name": "Infestation",
+            "name": "Plaga",
             "source": "XGE-ES",
             "data": {
                 "Save": "Constitution",
                 "Damage": "1d6",
-                "Damage Type": "Poison",
+                "Damage Type": "Veneno",
                 "data-Cantrip Scaling": "dice",
                 "Target": "Una criatura que puedas ver y se encuentre dentro del alcance"
             },
@@ -95442,7 +97195,7 @@
             "data": {
                 "Save": "Constitution",
                 "Damage": "4d6",
-                "Damage Type": "Cold",
+                "Damage Type": "Frío",
                 "Save Success": "Mitad de daño y velocidad no reducida a la mitad",
                 "Target": "Cada criatura un cono de 15 pies que se extiende desde ti en una dirección de tu elección"
             },
@@ -95473,7 +97226,7 @@
             }
         }, 
 		{
-            "name": "Invulnerability",
+            "name": "Invulnerabilidad",
             "source": "XGE-ES",
             "data": {}
         }, 
@@ -95493,7 +97246,7 @@
             }
         }, 
 		{
-            "name": "Maddening Darkness",
+            "name": "Oscuridad enloquecedora",
             "source": "XGE-ES",
             "data": {
                 "Save": "Wisdom",
@@ -95518,7 +97271,7 @@
             }
         }, 
 		{
-            "name": "Magic Stone",
+            "name": "Piedra mágica",
             "source": "XGE-ES",
             "data": {
                 "Damage": "1d6",
@@ -95531,7 +97284,7 @@
             }
         }, 
 		{
-            "name": "Mass Polymorph",
+            "name": "Polimorfar en masa",
             "source": "XGE-ES",
             "data": {
                 "Save": "Wisdom"
@@ -95551,13 +97304,13 @@
             }
         }, 
 		{
-            "name": "Melf's Minute Meteors",
+            "name": "Meteoritos diminutos de Melf",
             "source": "XGE-ES",
             "data": {
                 "Save": "Dexterity",
                 "Damage": "2d6",
                 "Damage Type": "Fuego",
-                "Target": "Each creature within 5 feet of a point or points you choose within 120 feet of you",
+                "Target": "Las criaturas situadas a 5 pies o menos del punto o puntos que elijas y se encuentren a un máximo de 120 pies de ti",
                 "Save Success": "Mitad del daño"
             },
             "shapedData": {
@@ -95603,7 +97356,7 @@
             }
         }, 
 		{
-            "name": "Mold Earth",
+            "name": "Moldear la tierra",
             "source": "XGE-ES",
             "data": {}
         }, 
@@ -95622,7 +97375,7 @@
             }
         }, 
 		{
-            "name": "Power Word Pain",
+            "name": "Palabra de poder: dolor",
             "source": "XGE-ES",
             "data": {
                 "Save": "Constitution"
@@ -95662,11 +97415,11 @@
             }
         }, 
 		{
-            "name": "Pyrotechnics",
+            "name": "Pirotecnia",
             "source": "XGE-ES",
             "data": {
                 "Save": "Constitution",
-                "Target": "Each creature within 10 feet of the target"
+                "Target": "Cada criatura situada a 10 pies del objetivo"
             }
         }, 
 		{
@@ -95702,7 +97455,7 @@
             }
         }, 
 		{
-            "name": "Shape Water",
+            "name": "Moldear el agua",
             "source": "XGE-ES",
             "data": {}
         }, 
@@ -95737,16 +97490,16 @@
             }
         }, 
 		{
-            "name": "Snilloc's Snowball Swarm",
+            "name": "Nube de bolas de nieve de Snilloc",
             "source": "XGE-ES",
             "data": {
                 "Save": "Dexterity",
                 "Damage": "3d6",
-                "Damage Type": "Cold",
+                "Damage Type": "Frío",
                 "Save Success": "Mitad del daño",
                 "Higher Spell Slot Die": "d6",
                 "Higher Spell Slot Dice": "1",
-                "Target": "Each creature in a 5-foot-radius sphere centered on a point you choose within range"
+                "Target": "Todas las criaturas situadas en una esfera de 5 pies de radio centrada en el lugar escogido"
             },
             "shapedData": {
                 "primaryDamageCondition": "save"
@@ -95801,7 +97554,7 @@
             }
         }, 
 		{
-            "name": "Summon Lesser Demons",
+            "name": "Invocar demonios menores",
             "source": "XGE-ES",
             "data": {}
         }, 
@@ -95830,13 +97583,13 @@
             "data": {}
         }, 
 		{
-            "name": "Thunder Step",
+            "name": "Paso atronador",
             "source": "XGE-ES",
             "data": {
                 "Save": "Constitution",
                 "Damage": "3d10",
-                "Damage Type": "Thunder",
-                "Target": "Each creature within 10 feet of the space you left",
+                "Damage Type": "Trueno",
+                "Target": "Todas las criaturas situadas a 10 pies o menos del espacio que abandonas",
                 "Save Success": "Mitad del daño",
                 "Higher Spell Slot Die": "d10",
                 "Higher Spell Slot Dice": "1"
@@ -95851,7 +97604,7 @@
             "data": {
                 "Save": "Constitution",
                 "Damage": "1d6",
-                "Damage Type": "Thunder",
+                "Damage Type": "Trueno",
                 "data-Cantrip Scaling": "dice",
                 "Target": "Each creature within range other than you"
             },
@@ -95860,14 +97613,14 @@
             }
         }, 
 		{
-            "name": "Tidal Wave",
+            "name": "Maremoto",
             "source": "XGE-ES",
             "data": {
                 "Save": "Dexterity",
                 "Damage": "4d8",
                 "Damage Type": "Contundente",
-                "Save Success": "Half damage and not prone",
-                "Target": "Each creature in an area within range up to 30 feet long, up to 10 feet wide, and up to 10 feet tall"
+                "Save Success": "Mitad de daño y no es derribado",
+                "Target": "Toda criatura situada en una zona de 30 pies de largo, 10 pies de ancho y 10 pies de altura"
             },
             "shapedData": {
                 "primaryDamageCondition": "save"
@@ -95927,7 +97680,7 @@
             }
         }, 
 		{
-            "name": "Wall of Light",
+            "name": "Muro de luz",
             "source": "XGE-ES",
             "data": {
                 "Save": "Constitution",
@@ -95935,10 +97688,10 @@
                 "Damage Type": "Radiante",
                 "Higher Spell Slot Die": "d8",
                 "Higher Spell Slot Dice": "1",
-                "Target": "Each creature in the wall's area",
-                "Save Success": "Half damage and not blinded",
+                "Target": "Todas las criaturas situadas en del muro",
+                "Save Success": "Mitad de daño y no es cegado",
                 "Secondary Damage": "4d8",
-                "Secondary Damage Type": "Radiant",
+                "Secondary Damage Type": "Radiante",
                 "Secondary Higher Spell Slot Die": "d8",
                 "Secondary Higher Spell Slot Dice": "1"
             },
@@ -95948,12 +97701,12 @@
             }
         }, 
 		{
-            "name": "Wall of Sand",
+            "name": "Muro de arena",
             "source": "XGE-ES",
             "data": {}
         }, 
 		{
-            "name": "Wall of Water",
+            "name": "Muro de agua",
             "source": "XGE-ES",
             "data": {}
         }, 
@@ -95982,30 +97735,30 @@
             }
         }, 
 		{
-            "name": "Word of Radiance",
+            "name": "Palabra de resplandor",
             "source": "XGE-ES",
             "data": {
                 "Save": "Constitution",
                 "Damage": "1d6",
                 "Damage Type": "Radiante",
                 "data-Cantrip Scaling": "dice",
-                "Target": "Each creature of your choice that you can see within range"
+                "Target": "Todas las criaturas de tu elección que puedas ver y se encuentren dentro del alcance"
             },
             "shapedData": {
                 "primaryDamageCondition": "save"
             }
         }, 
 		{
-            "name": "Wrath of Nature",
+            "name": "Ira de la naturaleza",
             "source": "XGE-ES",
             "data": {
                 "Save": "Dexterity",
                 "Damage": "4d6",
-                "Damage Type": "Slashing",
-                "Target": "Each of your enemies within 10 feet of any tree within a 60-foot cube centered on a point chosen when the spell was cast",
+                "Damage Type": "Cortante",
+                "Target": "Todos tus enemigos situados a 10 pies o menos de cualquier árbol en el interior de un cubo de 60 pies centrado en un punto donde se lanzo el conjuro",
                 "Spell Attack": "Ranged",
                 "Secondary Damage": "3d8",
-                "Secondary Damage Type": "Nonmagical bludgeoning"
+                "Secondary Damage Type": "Contundente no mágico"
             },
             "shapedData": {
                 "primaryDamageCondition": "save",
