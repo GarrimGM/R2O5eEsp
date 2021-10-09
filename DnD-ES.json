@@ -22120,7 +22120,7 @@
             "classSource": "PHB-ES",
             "level": 5,
             "entries": [
-				"A partir de nivel 5, cuando un {@filter muerto viviente de valor de desafío 1/2 o inferior|bestiary|challenge rating=[&0;&1/2]|type=undead|miscellaneous=!swarm} falle la tirada de salvación contra tu rasgo Expulsar Muertos Vivientes, la criatura es destruida."
+				"A partir de nivel 5, cuando un {@filter muerto viviente de valor de desafío 1/2 o inferior|bestiary|challenge rating=[&0;&1/2]|tag=muerto viviente|miscellaneous=!swarm} falle la tirada de salvación contra tu rasgo Expulsar Muertos Vivientes, la criatura es destruida."
 			]
         }, 
 		{
@@ -22165,7 +22165,7 @@
             "classSource": "PHB-ES",
             "level": 8,
             "entries": [
-				"A partir de nivel 8, cuando un {@filter muerto viviente de valor de desafío 1 o inferior|bestiary|challenge rating=[&0;&1]|type=undead|miscellaneous=!swarm} falle la tirada de salvación contra tu rasgo Expulsar Muertos Vivientes, la criatura es destruida."
+				"A partir de nivel 8, cuando un {@filter muerto viviente de valor de desafío 1 o inferior|bestiary|challenge rating=[&0;&1]|tag=muerto viviente|miscellaneous=!swarm} falle la tirada de salvación contra tu rasgo Expulsar Muertos Vivientes, la criatura es destruida."
 			]
         }, 
 		{
@@ -22202,7 +22202,7 @@
             "classSource": "PHB-ES",
             "level": 11,
             "entries": [
-				"A partir de nivel 11, cuando un {@filter muerto viviente de valor de desafío 2 o inferior|bestiary|challenge rating=[&0;&2]|type=undead|miscellaneous=!swarm} falle la tirada de salvación contra tu rasgo Expulsar Muertos Vivientes, la criatura es destruida."
+				"A partir de nivel 11, cuando un {@filter muerto viviente de valor de desafío 2 o inferior|bestiary|challenge rating=[&0;&2]|tag=muerto viviente|miscellaneous=!swarm} falle la tirada de salvación contra tu rasgo Expulsar Muertos Vivientes, la criatura es destruida."
 			]
         }, 
 		{
@@ -22227,7 +22227,7 @@
             "classSource": "PHB-ES",
             "level": 14,
             "entries": [
-				"A partir de nivel 14, cuando un {@filter muerto viviente de valor de desafío 3 o inferior|bestiary|challenge rating=[&0;&3]|type=undead|miscellaneous=!swarm} falle la tirada de salvación contra tu rasgo Expulsar Muertos Vivientes, la criatura es destruida."
+				"A partir de nivel 14, cuando un {@filter muerto viviente de valor de desafío 3 o inferior|bestiary|challenge rating=[&0;&3]|tag=muerto viviente|miscellaneous=!swarm} falle la tirada de salvación contra tu rasgo Expulsar Muertos Vivientes, la criatura es destruida."
 			]
         }, 
 		{
@@ -22252,7 +22252,7 @@
             "classSource": "PHB-ES",
             "level": 17,
             "entries": [
-				"A partir de nivel 17, cuando un {@filter muerto viviente de valor de desafío 4 o inferior|bestiary|challenge rating=[&0;&4]|type=undead|miscellaneous=!swarm} falle la tirada de salvación contra tu rasgo Expulsar Muertos Vivientes, la criatura es destruida."
+				"A partir de nivel 17, cuando un {@filter muerto viviente de valor de desafío 4 o inferior|bestiary|challenge rating=[&0;&4]|tag=muerto viviente|miscellaneous=!swarm} falle la tirada de salvación contra tu rasgo Expulsar Muertos Vivientes, la criatura es destruida."
 			]
         }, 
 		{
@@ -22379,9 +22379,9 @@
 					"colLabels": ["Nivel", "VD máx.", "Limitaciones", "Ejemplo"],
 					"colStyles": ["col-2 text-center", "col-2 text-center", "col-5", "col-3"],
 					"rows": [
-						["2", "{@filter 1/4|bestiary|challenge rating=[&0;&1/4]|type=beast|speed type=!fly;!swim|miscellaneous=!swarm}", "Sin velocidades nadando ni volando ", "Lobo"],
-						["4", "{@filter 1/2|bestiary|challenge rating=[&0;&1/2]|type=beast|speed type=!fly|miscellaneous=!swarm}", "Sin velocidad volando", "Cocodrilo"],
-						["8", "{@filter 1|bestiary|challenge rating=[&0;&1]|type=beast|miscellaneous=!swarm}", "—", "Águila gigante"]
+						["2", "{@filter 1/4|bestiary|challenge rating=[&0;&1/4]|tag=bestia|speed type=!fly;!swim|miscellaneous=!swarm}", "Sin velocidades nadando ni volando ", "Lobo"],
+						["4", "{@filter 1/2|bestiary|challenge rating=[&0;&1/2]|tag=bestia|speed type=!fly|miscellaneous=!swarm}", "Sin velocidad volando", "Cocodrilo"],
+						["8", "{@filter 1|bestiary|challenge rating=[&0;&1]|tag=bestia|miscellaneous=!swarm}", "—", "Águila gigante"]
 					]
 				},
 				"Puedes permanecer en forma de bestia tantas horas como la mitad de tu nivel de druida (redondeando hacia abajo). Pasado este tiempo volverás a asumir tu forma normal, salvo si gastas otro uso de este rasgo. Si lo deseas, también puedes retornar a tu forma normal antes de que pase este tiempo, utilizando una acción adicional durante tu turno. Además, también vuelves a tu forma normal si quedas {@condition Inconsciente|PHB-ES|inconsciente}, tus puntos de golpe se reducen a 0 o mueres.",
@@ -23482,7 +23482,7 @@
             "level": 1,
             "entries": [
 				"Desde el nivel 1 posees una enorme experiencia estudiando, rastreando, cazando e incluso hablando con un tipo concreto de enemigo.", 
-				"Escoge un tipo de enemigo predilecto: {@filter aberraciones|bestiary|type=aberration}, {@filter autómatas|bestiary|type=autómata|source=PHB-ES}, {@filter bestias|bestiary|type=beast}, {@filter celestiales|bestiary|type=celestial}, {@filter cienos|bestiary|type=ooze}, {@filter dragones|bestiary|type=dragon}, {@filter elementales|bestiary|type=elemental}, {@filter feéricos|bestiary|type=fey}, {@filter gigantes|bestiary|type=giant}, {@filter infernales|bestiary|type=fiend}, {@filter monstruosidades|bestiary|type=monstrosity}, {@filter muertos vivientes|bestiary|type=undead} o {@filter plantas|bestiary|type=plant}. De forma alternativa, puedes elegir dos razas de {@filter humanoides|bestiary|type=humanoid} (como {@creature gnoll||gnolls} y {@creature orc||orcos}, por ejemplo) como enemigos predilectos.", 
+				"Escoge un tipo de enemigo predilecto: {@filter aberraciones|bestiary|tag=aberración}, {@filter autómatas|bestiary|tag=autómata}, {@filter bestias|bestiary|tag=bestia}, {@filter celestiales|bestiary|tag=celestial}, {@filter cienos|bestiary|tag=cieno}, {@filter dragones|bestiary|tag=dragón}, {@filter elementales|bestiary|tag=elemental}, {@filter feéricos|bestiary|tag=feérico}, {@filter gigantes|bestiary|tag=giante}, {@filter infernales|bestiary|tag=infernal}, {@filter monstruosidades|bestiary|tad=monstruosidad}, {@filter muertos vivientes|bestiary|tag=muerto viviente} o {@filter plantas|bestiary|tag=planta}. De forma alternativa, puedes elegir dos razas de {@filter humanoides|bestiary|tag=humanoide} (como {@creature gnoll|MM-ES|gnolls} y {@creature orco|MM-ES|orcos}, por ejemplo) como enemigos predilectos.", 
 				"Posees ventaja en las pruebas de Sabiduría ({@skill Survival|Supervivencia}) para rastrear a tus enemigos predilectos, así como en las pruebas de Inteligencia para recordar información sobre ellos.", 
 				"Cuando obtienes este rasgo también aprendes un idioma de tu elección que sea hablado por tus enemigos predilectos (si es que poseen alguno).", 
 				"Puedes elegir un enemigo predilecto adicional, así como el idioma asociado al mismo, cuando alcanzas los niveles 6 y 14. Estas elecciones deberían representar aquellos tipos de monstruos con los que te has encontrado durante tus aventuras."
@@ -24073,7 +24073,7 @@
             "entries": ["Un evento de tu pasado, o de la vida de uno de tus padres o ancestros, dejo una marca indeleble en ti, llenándote de magia arcana. Esta fuente de magia sea cual sea su origen, alimenta tus conjuros. El {@book capítulo 10|PHB-ES|10} contiene las reglas de lanzamiento de conjuros y el {@book capítulo 11|PHB-ES|11} la {@filter lista de conjuros de hechicero|spells|class=Hechicero (PHB-ES)}.", {
                     "type": "entries",
                     "name": "Trucos",
-                    "entries": ["A nivel 1 conoces cuatro trucos de tu elección escogidos de entre los de la lista de conjuros de hechicero. Podrás elegir más trucos de hechicero cuando llegues a niveles más altos, como se indica en la columna “trucos conocidos” de la tabla del hechicero."]
+                    "entries": ["A nivel 1 conoces cuatro trucos de tu elección escogidos de entre los de la lista de conjuros de hechicero. Podrás elegir más trucos de hechicero cuando llegues a niveles más altos, como se indica en la columna \"trucos conocidos\" de la tabla del hechicero."]
                 }, {
                     "type": "entries",
                     "name": "Espacios de conjuro",
@@ -26254,21 +26254,21 @@
             "level": 2,
             "header": 1,
             "entries": [
-				"Los ritos de tu círculo te proporcionan la habilidad para transformarte en formas animales aún más peligrosas. A partir de nivel 2, puedes usar tu Forma Salvaje para transformarte en una {@filter bestia con un valor de desafío de hasta 1|bestiary|challenge rating=[&0;&1]|type=beast|speed type=!fly;!swim|miscellaneous=!swarm}. Es decir, que ignoras la columna \"VD máx.\" de la tabla \"formas de bestia\", aunque debes atenerte al resto de restricciones de la misma.",
+				"Los ritos de tu círculo te proporcionan la habilidad para transformarte en formas animales aún más peligrosas. A partir de nivel 2, puedes usar tu Forma Salvaje para transformarte en una {@filter bestia con un valor de desafío de hasta 1|bestiary|challenge rating=[&0;&1]|tag=bestia|speed type=!fly;!swim|miscellaneous=!swarm}. Es decir, que ignoras la columna \"VD máx.\" de la tabla \"formas de bestia\", aunque debes atenerte al resto de restricciones de la misma.",
 				"A partir de nivel 6, puedes transformarte en una bestia común valor de desafío de hasta tu nivel de druida dividido por 3, redondeando hacia abajo.", {
 					"type": "table",
 					"caption": "Formas de bestia del Círculo de la Luna",
 					"colLabels": ["Nivel", "VD máx.", "Limitaciones"],
 					"colStyles": ["col-2 text-center", "col-2 text-center", "col-8"],
 					"rows": [
-						["2", "{@filter 1|bestiary|challenge rating=[&0;&1]|type=beast|speed type=!fly;!swim|miscellaneous=!swarm}", "Sin velocidades nadando ni volando"],
-						["4", "{@filter 1|bestiary|challenge rating=[&0;&1]|type=beast|speed type=!fly|miscellaneous=!swarm}", "Sin velocidad volando"],
-						["6", "{@filter 2|bestiary|challenge rating=[&0;&2]|type=beast|speed type=!fly|miscellaneous=!swarm}", "Sin velocidad volando"],
-						["8", "{@filter 2|bestiary|challenge rating=[&0;&2]|type=beast|miscellaneous=!swarm}", "—"],
-						["9", "{@filter 3|bestiary|challenge rating=[&0;&3]|type=beast|miscellaneous=!swarm}", "—"],
-						["12", "{@filter 4|bestiary|challenge rating=[&0;&4]|type=beast|miscellaneous=!swarm}", "—"],
-						["15", "{@filter 5|bestiary|challenge rating=[&0;&5]|type=beast|miscellaneous=!swarm}", "—"],
-						["18", "{@filter 6|bestiary|challenge rating=[&0;&6]|type=beast|miscellaneous=!swarm}", "—"]
+						["2", "{@filter 1|bestiary|challenge rating=[&0;&1]|tag=bestia|speed type=!fly;!swim|miscellaneous=!swarm}", "Sin velocidades nadando ni volando"],
+						["4", "{@filter 1|bestiary|challenge rating=[&0;&1]|tag=bestia|speed type=!fly|miscellaneous=!swarm}", "Sin velocidad volando"],
+						["6", "{@filter 2|bestiary|challenge rating=[&0;&2]|tag=bestia|speed type=!fly|miscellaneous=!swarm}", "Sin velocidad volando"],
+						["8", "{@filter 2|bestiary|challenge rating=[&0;&2]|tag=bestia|miscellaneous=!swarm}", "—"],
+						["9", "{@filter 3|bestiary|challenge rating=[&0;&3]|tag=bestia|miscellaneous=!swarm}", "—"],
+						["12", "{@filter 4|bestiary|challenge rating=[&0;&4]|tag=bestia|miscellaneous=!swarm}", "—"],
+						["15", "{@filter 5|bestiary|challenge rating=[&0;&5]|tag=bestia|miscellaneous=!swarm}", "—"],
+						["18", "{@filter 6|bestiary|challenge rating=[&0;&6]|tag=bestia|miscellaneous=!swarm}", "—"]
 					]
 				}
 			]
@@ -26310,7 +26310,7 @@
             "subclassSource": "PHB-ES",
             "level": 10,
             "header": 2,
-            "entries": ["A partir de nivel 10, puedes gastar dos usos de Forma Salvaje al mismo tiempo para transformarte en un {@creature air elemental|mm|elemental de aire}, un {@creature earth elemental|mm|elemental de tierra}, un {@creature fire elemental|mm|elemental de fuego} o un {@creature water elemental|mm|elemental de agua}."]
+            "entries": ["A partir de nivel 10, puedes gastar dos usos de Forma Salvaje al mismo tiempo para transformarte en un {@creature elemental de aire|MM-ES}, un {@creature elemental de tierra|MM-ES}, un {@creature elemental de fuego|MM-ES} o un {@creature elemental de agua|MM-ES}."]
         }, 
 		{
             "name": "Mil Formas",
@@ -27685,7 +27685,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-				"A nivel 3 obtienes un compañero animal que parte contigo de aventuras y está entrenado para luchar a tu lado. Escoge una {@filter bestia Mediana o más pequeña que posea un valor de desafío de 1/4 o inferior|bestiary|challenge rating=[&0;&1/4]|type=beast|size=f;d;t;s;m|miscellaneous=!swarm}. El apéndice D contiene los perfiles del halcón, el mastín y la pantera como ejemplos de estas criaturas. Añade tu bonificador por competencia a la CA, tiradas de ataque y tiradas de daño de la bestia, así como a aquellas tiradas de salvación y habilidades con las que el animal sea competente. Sus puntos de golpe máximos serán o bien los que aparecen en su perfil o cuatro veces tu nivel de explorador, lo que sea mayor. Como cualquier otra criatura, puede gastar Dados de Golpe durante un descanso corto para recuperar puntos de golpe.", 
+				"A nivel 3 obtienes un compañero animal que parte contigo de aventuras y está entrenado para luchar a tu lado. Escoge una {@filter bestia Mediana o más pequeña que posea un valor de desafío de 1/4 o inferior|bestiary|challenge rating=[&0;&1/4]|tag=bestia|size=f;d;t;s;m|miscellaneous=!swarm}. El apéndice D contiene los perfiles del halcón, el mastín y la pantera como ejemplos de estas criaturas. Añade tu bonificador por competencia a la CA, tiradas de ataque y tiradas de daño de la bestia, así como a aquellas tiradas de salvación y habilidades con las que el animal sea competente. Sus puntos de golpe máximos serán o bien los que aparecen en su perfil o cuatro veces tu nivel de explorador, lo que sea mayor. Como cualquier otra criatura, puede gastar Dados de Golpe durante un descanso corto para recuperar puntos de golpe.", 
 				"La bestia obedece tus órdenes en la medida de sus posibilidades. Lleva a cabo su turno en tu misma posición en el orden de iniciativa, pero no realizará su acción salvo que se lo órdenes. Durante tu turno, puedes dar una orden verbal a tu animal para indicarle a dónde moverse. No necesitas invertir ninguna acción para hacer esto. Sin embargo, sí que necesitas utilizar tu acción para ordenar verbalmente a tu animal que realice una de las siguientes acciones: {@action Atacar|PHB-ES|Atacar}, {@action Ayudar|PHB-ES|Ayudar}, {@action Correr|PHB-ES|Correr}, {@action Destrabarse|PHB-ES|Destrabarse}. Si no das una orden, el animal realiza la acción {@action Esquivar|PHB-ES|Esquivar}. Una vez poseas el rasgo Ataque Adicional, podrás realizar tú mismo un ataque con arma mientras ordenas a tu bestia que lleve a cabo una acción de {@action Atacar|PHB-ES|Atacar}.", 
 				"Si quedas {@condition incapacitado|PHB-ES|incapacitado} o no estás presente, el animal actuará según considere oportuno, pero concentrándose en protegeros tanto a ti como a él mismo. La bestia no necesita que le des órdenes para utilizar su reacción, como cuando realiza un ataque de oportunidad.", 
 				"Si viajas por tu terreno predilecto acompañado únicamente de tu compañero animal, podrás moverte con sigilo a un ritmo de viaje normal.", 
@@ -28614,7 +28614,7 @@
 						], 
 						[
 							"47-48", 
-							"Un {@creature unicorn|MM-ES|unicornio} controlado por el DM aparece en un espacio desocupado que se encuentre a 5 pies o menos de ti. Desaparece 1 minuto después."
+							"Un {@creature unicornio|MM-ES} controlado por el DM aparece en un espacio desocupado que se encuentre a 5 pies o menos de ti. Desaparece 1 minuto después."
 						], 
 						[
 							"49-50", 
@@ -29781,7 +29781,7 @@
             "level": 10,
             "header": 2,
             "entries": [
-				"A nivel 10 añades el conjuro {@spell Polimorfar|PHB-ES|polimorfar} a tu libro de conjuros, si es que no figuraba ya en él. Además, puedes lanzar {@spell Polimorfar|PHB-ES|polimorfar} sin gastar un espacio de conjuros, pero solo cuando el objetivo seas tú mismo y te transformes en una {@filter bestia cuyo valor de desafío sea de como mucho 1|bestiary|challenge rating=[&0;&1]|type=beast|miscellaneous=!swarm}.", 
+				"A nivel 10 añades el conjuro {@spell Polimorfar|PHB-ES|polimorfar} a tu libro de conjuros, si es que no figuraba ya en él. Además, puedes lanzar {@spell Polimorfar|PHB-ES|polimorfar} sin gastar un espacio de conjuros, pero solo cuando el objetivo seas tú mismo y te transformes en una {@filter bestia cuyo valor de desafío sea de como mucho 1|bestiary|challenge rating=[&0;&1]|tag=bestia|miscellaneous=!swarm}.", 
 				"Una vez hayas lanzado {@spell Polimorfar|PHB-ES|polimorfar} de esta forma, no podrás volver a realizarlo de nuevo hasta que finalices un descanso corto o largo. Con todo, seguirás pudiendo lanzarlo de forma normal, utilizando un espacio de conjuro."
 			]
         }, 
@@ -35421,6 +35421,203 @@
 		
 		
 		{
+			"name": "Elemental de aire",
+			"source": "MM-ES",
+			"page": 124,
+			"srd": true,
+			"size": "L",
+			"type": {
+                "type": "elemental",
+                "tags": ["elemental"]
+            },
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"average": 90,
+				"formula": "12d10 + 24"
+			},
+			"speed": {
+				"fly": {
+					"number": 90,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 14,
+			"dex": 20,
+			"con": 14,
+			"int": 6,
+			"wis": 10,
+			"cha": 6,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				"lightning",
+				"thunder",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "de ataques no mágicos",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
+			"languages": [
+				"aurano"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Forma de Aire",
+					"entries": [
+						"El elemental podrá entrar en el espacio de una criatura hostil y detenerse en él. Además, puede moverse a través de espacios de tan solo 1 pulgada de ancho sin apretarse."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Ataque múltiple",
+					"entries": [
+						"El elemental realiza dos ataques de golpe."
+					]
+				},
+				{
+					"name": "Golpe",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Torbellino {@recharge 4}",
+					"entries": [
+						"Todas las criaturas situadas en el espacio del elemental deberán hacer una tirada de salvación de Fuerza {@dc 13}. Si la falla, el objetivo recibirá 15 ({@damage 3d8 + 2}) de daño contundente y será lanzando por los aires 20 pies, alejándose del elemental en una dirección aleatoria y quedando {@condition derribado|PHB-ES}. Si la criatura que ha salido despedida se golpea contra un objeto, como una pared o el suelo, recibirá 3 ({@damage 1d6}) de daño contundente por cada 10 pies que haya recorrido. Si el objetivo es lanzando contra otra criatura, esta deberá superar una tirada de salvación de Destreza {@dc 13} o sufrirá el mismo daño y será {@condition derribado|PHB-ES|derribada}.",
+						"Si el objetivo original supera la tirada de salvación, recibirá la mitad del daño contundente y no será arrojado ni quedará {@condition derribado|PHB-ES}."
+					]
+				}
+			],
+			"environment": [
+				"montañas",
+				"desiertos"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Air%20Elemental.png",
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/air-elemental.mp3"
+			},
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AU"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [{
+								"type": "entries",
+								"entries": [
+									"Un elemental de aire es un torbellino de aire que parece insinuar algo parecido a un rostro. Aunque les encanta desplazarse a ras del suelo, recogiendo polvo y restos a su paso, también pueden volar y atacar desde las alturas.",
+									"Un elemental de aire es capaz de transformarse en un rugiente ciclón, creando un remolino que golpea con fuerza a las criaturas que le rodean, expulsándolas en todas direcciones."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": []
+					},
+					{
+						"type": "section",
+						"name": "Elementales",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Los elementales son la encarnación de los elementos que forman el universo: aire, tierra, fuego y agua. Aunque en sus planos son poco más que energía animada, algunos lanzadores de conjuros y criaturas poderosas pueden invocarlos para que asuman una forma concreta y realicen tareas.",
+											{
+												"type": "entries",
+												"name": "Elementos vivientes",
+												"entries": [
+													"En su plano original, los elementales son una fuerza vital incorpórea. Su leve consciencia se manifiesta en una forma física solo cuando se les canaliza a través de la magia. Los espíritus salvajes de fuerza elemental no poseen más deseo que moverse en el elemento que conforma su plano nativo. Como las bestias del Plano Material, estos espíritus elementales no poseen sociedad ni cultura, y tan solo una ligera noción del yo."	
+												]
+											},
+											{
+												"type": "entries",
+												"name": "Conjurados por la magia",
+												"entries": [
+													"Algunos conjuros y objetos mágicos pueden invocar a un elemental, trayéndolo desde los Planos Interiores hasta el Plano Material. Los elementales se resisten de forma instintiva a ser arrancados de su hogar y obligados a servir. Por ello, una criatura que invoque a un elemental debe recurrir a su fuerza de voluntad para controlarlo."	
+												]
+											},
+											{
+												"type": "entries",
+												"name": "Atados y con forma",
+												"entries": [
+													"Existen poderes mágicos capaces de atar a un espíritu elemental a una forma particular que defina un uso y función concretas. Los acechadores invisibles son elementales de aire ligados a una forma específica. De igual forma, a los elementales de agua se les puede dar la forma de extraños de agua.",
+													"La fuerza de la magia y los materiales que atan al elemental determinan hasta qué punto este es capaz de adaptarse a su nueva forma. Los gólems son espíritus elementales ligados a una realidad física, pero los débiles materiales de los que están hechos, como la carne o la arcilla, no pueden atar el poder del elemental con la suficiente fuerza. Otros materiales más resistentes, como la piedra y el hierro, requieren una magia más poderosa, pero a cambio someten al elemental con más fuerza."
+												]
+											},
+											{
+												"type": "entries",
+												"name": "Naturaleza elemental",
+												"entries": [
+													"Un elemental no necesita respirar, comer, beber ni dormir."
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Air Elemental.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
             "name": "Árbol despertado",
             "source": "MM-ES",
             "page": 317,
@@ -37696,6 +37893,402 @@
 			}
 		},
 		{
+			"name": "Elemental de tierra",
+			"source": "MM-ES",
+			"page": 124,
+			"srd": true,
+			"size": "L",
+			"type": {
+                "type": "elemental",
+                "tags": ["elemental"]
+            },
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"armadura natural"
+					]
+				}
+			],
+			"hp": {
+				"average": 126,
+				"formula": "12d10 + 60"
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 30
+			},
+			"str": 20,
+			"dex": 8,
+			"con": 20,
+			"int": 5,
+			"wis": 10,
+			"cha": 5,
+			"senses": [
+				"darkvision 60 ft.",
+				"tremorsense 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "de ataques no mágicos",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"thunder"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"unconscious"
+			],
+			"languages": [
+				"terrano"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Deslizarse por la Tierra",
+					"entries": [
+						"El elemental puede excavar a través de la tierra y la piedra que no sean mágicas ni estén trabajadas. Al hacer esto no desplaza o perturba el material a través del que se mueve."
+					]
+				},
+				{
+					"name": "Monstruo de Asedio",
+					"entries": [
+						"El elemental inflige el doble de daño a objetos y estructuras."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Ataque múltiple",
+					"entries": [
+						"El elemental realiza dos ataques de golpe."
+					]
+				},
+				{
+					"name": "Golpe",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}14 ({@damage 2d8 + 5}) bludgeoning damage."
+					]
+				}
+			],
+			"environment": [
+				"underdark"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Earth%20Elemental.png",
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/earth-elemental.mp3"
+			},
+			"traitTags": [
+				"Siege Monster"
+			],
+			"senseTags": [
+				"D",
+				"T"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"T"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [{
+								"type": "entries",
+								"entries": [
+									"Un elemental de tierra avanzan lentamente como si de una colina ambulante se tratara, con sus brazos de afilada piedra, fuertes como mazas, balanceándose de lado a lado. Su cabeza y su cuerpo, compuesto de tierra y piedra, algunas veces también contiene trozos de metal, gemas y minerales brillantes.",
+									"Los elementales de tierra se deslizan sobre la roca y la tierra como si fueran líquidos. Las criaturas incapaces de volar tienen mucho que temer de estos elementales, ya que pueden determinar con total precisión la localización de cualquier enemigo cercano que tenga sus pies sobre el suelo. "
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": []
+					},
+					{
+						"type": "section",
+						"name": "Elementales",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Los elementales son la encarnación de los elementos que forman el universo: aire, tierra, fuego y agua. Aunque en sus planos son poco más que energía animada, algunos lanzadores de conjuros y criaturas poderosas pueden invocarlos para que asuman una forma concreta y realicen tareas.",
+											{
+												"type": "entries",
+												"name": "Elementos vivientes",
+												"entries": [
+													"En su plano original, los elementales son una fuerza vital incorpórea. Su leve consciencia se manifiesta en una forma física solo cuando se les canaliza a través de la magia. Los espíritus salvajes de fuerza elemental no poseen más deseo que moverse en el elemento que conforma su plano nativo. Como las bestias del Plano Material, estos espíritus elementales no poseen sociedad ni cultura, y tan solo una ligera noción del yo."	
+												]
+											},
+											{
+												"type": "entries",
+												"name": "Conjurados por la magia",
+												"entries": [
+													"Algunos conjuros y objetos mágicos pueden invocar a un elemental, trayéndolo desde los Planos Interiores hasta el Plano Material. Los elementales se resisten de forma instintiva a ser arrancados de su hogar y obligados a servir. Por ello, una criatura que invoque a un elemental debe recurrir a su fuerza de voluntad para controlarlo."	
+												]
+											},
+											{
+												"type": "entries",
+												"name": "Atados y con forma",
+												"entries": [
+													"Existen poderes mágicos capaces de atar a un espíritu elemental a una forma particular que defina un uso y función concretas. Los acechadores invisibles son elementales de aire ligados a una forma específica. De igual forma, a los elementales de agua se les puede dar la forma de extraños de agua.",
+													"La fuerza de la magia y los materiales que atan al elemental determinan hasta qué punto este es capaz de adaptarse a su nueva forma. Los gólems son espíritus elementales ligados a una realidad física, pero los débiles materiales de los que están hechos, como la carne o la arcilla, no pueden atar el poder del elemental con la suficiente fuerza. Otros materiales más resistentes, como la piedra y el hierro, requieren una magia más poderosa, pero a cambio someten al elemental con más fuerza."
+												]
+											},
+											{
+												"type": "entries",
+												"name": "Naturaleza elemental",
+												"entries": [
+													"Un elemental no necesita respirar, comer, beber ni dormir."
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Earth Elemental.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Elemental de fuego",
+			"source": "MM-ES",
+			"page": 125,
+			"srd": true,
+			"size": "L",
+			"type": {
+                "type": "elemental",
+                "tags": ["elemental"]
+            },
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 102,
+				"formula": "12d10 + 36"
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 10,
+			"dex": 17,
+			"con": 16,
+			"int": 6,
+			"wis": 10,
+			"cha": 7,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "de ataques no mágicos",
+					"cond": true
+				}
+			],
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
+			"languages": [
+				"ígneo"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Forma de Fuego",
+					"entries": [
+						"El elemental puede moverse a través de espacios de tan solo 1 pulgada de ancho sin apretarse. Cualquier criatura que toque al elemental o le impacte con un ataque cuerpo a cuerpo estando a 5 pies o menos de distancia recibirá 5 ({@damage 1d10}) de daño de fuego.", 
+						"Además, el elemental podrá entrar en el espacio de una criatura hostil y detenerse en él. La primera vez en un turno que se interne en el espacio de otra criatura, esta última recibirá 5 ({@damage 1d10}) de daño de fuego y se prenderá fuego. Si ocurre esto, la criatura recibirá 5 ({@damage 1d10}) de daño de fuego al principio de cada uno de sus turnos hasta que alguien utilice una acción para extinguir las llamas."
+					]
+				},
+				{
+					"name": "Iluminar",
+					"entries": [
+						"El elemental emite luz brillante en un radio de 30 pies y luz tenue 30 pies más allá."
+					]
+				},
+				{
+					"name": "Susceptibilidad al Agua",
+					"entries": [
+						"El elemental sufrirá 1 de daño de frío por cada 5 pies que se mueva en el agua o por cada galón de agua que se vierta sobre él."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Ataque múltiple",
+					"entries": [
+						"El elemental realiza dos ataques de toque."
+					]
+				},
+				{
+					"name": "Toque",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) fire damage. Si el objetivo es una criatura u objeto inflamable, se prenderá fuego. Si ocurre esto, recibirá 5 ({@damage 1d10}) de daño de fuego al principio de cada uno de sus turnos hasta que una criatura utilice una acción para extinguir las llamas."
+					]
+				}
+			],
+			"environment": [
+				"desiertos"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Fire%20Elemental.png",
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/fire-elemental.mp3"
+			},
+			"traitTags": [
+				"Illumination"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"IG"
+			],
+			"damageTags": [
+				"C",
+				"F"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [{
+								"type": "entries",
+								"entries": [
+									"En el centro de esta llama salvaje, en constante movimiento, se encuentra una vaga forma humanoide. Un elemental de fuego es una fuerza destructiva y caprichosa. Prende todo a su paso y reduciendo el mundo a cenizas, humo y ascuas. El agua puede detener su avance, pues reduce el tamaño de estas criaturas y las fuerza a alejarse siseando y humeando de dolor e ira."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": []
+					},
+					{
+						"type": "section",
+						"name": "Elementales",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Los elementales son la encarnación de los elementos que forman el universo: aire, tierra, fuego y agua. Aunque en sus planos son poco más que energía animada, algunos lanzadores de conjuros y criaturas poderosas pueden invocarlos para que asuman una forma concreta y realicen tareas.",
+											{
+												"type": "entries",
+												"name": "Elementos vivientes",
+												"entries": [
+													"En su plano original, los elementales son una fuerza vital incorpórea. Su leve consciencia se manifiesta en una forma física solo cuando se les canaliza a través de la magia. Los espíritus salvajes de fuerza elemental no poseen más deseo que moverse en el elemento que conforma su plano nativo. Como las bestias del Plano Material, estos espíritus elementales no poseen sociedad ni cultura, y tan solo una ligera noción del yo."	
+												]
+											},
+											{
+												"type": "entries",
+												"name": "Conjurados por la magia",
+												"entries": [
+													"Algunos conjuros y objetos mágicos pueden invocar a un elemental, trayéndolo desde los Planos Interiores hasta el Plano Material. Los elementales se resisten de forma instintiva a ser arrancados de su hogar y obligados a servir. Por ello, una criatura que invoque a un elemental debe recurrir a su fuerza de voluntad para controlarlo."	
+												]
+											},
+											{
+												"type": "entries",
+												"name": "Atados y con forma",
+												"entries": [
+													"Existen poderes mágicos capaces de atar a un espíritu elemental a una forma particular que defina un uso y función concretas. Los acechadores invisibles son elementales de aire ligados a una forma específica. De igual forma, a los elementales de agua se les puede dar la forma de extraños de agua.",
+													"La fuerza de la magia y los materiales que atan al elemental determinan hasta qué punto este es capaz de adaptarse a su nueva forma. Los gólems son espíritus elementales ligados a una realidad física, pero los débiles materiales de los que están hechos, como la carne o la arcilla, no pueden atar el poder del elemental con la suficiente fuerza. Otros materiales más resistentes, como la piedra y el hierro, requieren una magia más poderosa, pero a cambio someten al elemental con más fuerza."
+												]
+											},
+											{
+												"type": "entries",
+												"name": "Naturaleza elemental",
+												"entries": [
+													"Un elemental no necesita respirar, comer, beber ni dormir."
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Fire Elemental.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
             "name": "Calavera llameante",
             "source": "MM-ES",
             "page": 134,
@@ -37841,6 +38434,163 @@
 				]
 			}
         },
+		{
+			"name": "Flumph",
+			"source": "MM-ES",
+			"page": 135,
+			"size": "S",
+			"type": {
+                "type": "aberration",
+                "tags": ["aberración"]
+            },
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 7,
+				"formula": "2d6"
+			},
+			"speed": {
+				"walk": 5,
+				"fly": 30
+			},
+			"str": 6,
+			"dex": 15,
+			"con": 10,
+			"int": 14,
+			"wis": 14,
+			"cha": 11,
+			"skill": {
+				"arcana": "+4",
+				"history": "+4",
+				"religion": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"vulnerable": [
+				"psychic"
+			],
+			"languages": [
+				"entiende infracomún pero no puede hablar",
+				"telepatía 60 pies"
+			],
+			"cr": "1/8",
+			"trait": [
+				{
+					"name": "Telepatía Avanzada",
+					"entries": [
+						"El flumph puede conocer el contenido de cualquier comunicación telepática que se realice a 60 pies o menos de él. Además, no puede ser sorprendido por criaturas que posean alguna forma de telepatía."
+					]
+				},
+				{
+					"name": "Vulnerable a Ser Derribado",
+					"entries": [
+						"Si el flumph es {@condition derribado|PHB-ES}, tira un dado. Con un resultado impar, el flumph aterriza del revés y está {@condition incapacitado|PHB-ES}. Al final de cada uno de sus turnos, el flumph puede hacer una tirada de salvación de Destreza {@dc 10}. Si la supera, se dará la vuelta y dejará de estar {@condition incapacitado|PHB-ES}."
+					]
+				},
+				{
+					"name": "Velo Telepático",
+					"entries": [
+						"El flumph es inmune a cualquier efecto que intente percibir sus emociones o leer sus pensamientos, así como a los conjuros de adivinación."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Zarcillos",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}4 ({@damage 1d4 + 2}) piercing damage plus 2 ({@damage 1d4}) acid damage. Al final de cada uno de sus turnos, el objetivo deberá hacer una tirada de salvación de Constitución {@dc 10}, recibiendo 2({@damage 1d4}) de daño ácido si la falla, o librándose de este daño de ácido periódico si la supera. Un conjuro de {@spell restablecimiento menor|PHB-ES} sobre el objetivo también acaba con el daño de ácido periódico."
+					]
+				},
+				{
+					"name": "Rociada apestosa (1/Día)",
+					"entries": [
+						"Todas las criaturas que se encuentren en un cono de 15 pies con su origen en el flumph deberán superar una tirada de salvación de Destreza {@dc 10} o acabarán cubiertas de un líquido hediondo. Los objetivos que sufran este destino emitirán un olor horrible durante {@dice 1d4} horas y estarán {@condition envenenado|PHB-ES|envenenados} mientras este hedor permanezca. Además, las criaturas situadas a 5 pies o menos de un objetivo cubierto de líquido estarán {@condition envenenado|PHB-ES|envenenadas}. Una criatura untada de líquido podrá librarse del hedor si dedica un descanso corto a bañarse en agua, alcohol o vinagre."
+					]
+				}
+			],
+			"environment": [
+				"underdark"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Flumph.png",
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/flumph.mp3"
+			},
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"CS",
+				"TP",
+				"U"
+			],
+			"damageTags": [
+				"A",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"poisoned",
+				"prone"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Los misteriosos flumphs viajan por el Underdark, propulsándose por el aire con los chorros cuyo sonido les da nombre. Los flumphs brillan levemente, reflejando su humor a través del color de esta luz. Un rosa suave implica que están entretenidos, y un azul profundo que están tristes. El verde muestra curiosidad y el carmesí enfado.",
+									{
+										"name": "Inteligentes y sabias",
+										"type": "entries",
+										"entries": [
+											"Estas criaturas se comunican telepáticamente. Aunque parecen medusas, los flumphs son seres conscientes con una gran sabiduría e inteligencia, que poseen conocimientos avanzados de religión, filosofía, matemáticas y otros muchos temas.",
+											"Son capaces de percibir los estados de ánimo de las criaturas cercanas. Si los pensamientos de una criatura indican bondad, el flumph intentará dar con ella. Y de la misma forma, si un flumph se encuentra con un ser que emana maldad, huirá."
+										]
+									},
+									{
+										"name": "Drenadores psiónicos",
+										"type": "entries",
+										"entries": [
+											"Los flumphs se alimentan extrayendo la energía mental de criaturas psiónicas, por lo que se les puede encontrar acechando cerca de comunidades de azotamentes, aboleths, githyankis o githzerais. Son parásitos pasivos, que solo toman la energía que necesitan. De hecho, la mayoría de criaturas no sienten ningún tipo de incomodidad o pérdida durante el proceso.",
+											"Al consumir energía psiónica los flumphs aprenden los pensamientos y emociones de las criaturas de las que se han alimentado. Dado que muchas son malvadas, los flumphs se encuentran con asiduidad con emociones, pensamientos e impulsos que les dan náuseas. Cuando hallan a aventureros de buen corazón, comparten con ellos de buen grado los secretos oscuros que hayan aprendido, para así tratar de acabar con las fuentes de energía negativa que los originaron, incluso aunque ello implique tener que buscar nuevas fuentes de alimento. "
+										]
+									},
+									{
+										"name": "Sociedad flumph",
+										"type": "entries",
+										"entries": [
+											"Los flumphs viven en grupos complejos y bien estructurados llamados claustros, en los que cada flumph tiene su lugar y propósito. Estos grupos tan armoniosos no necesitan líderes, ya que todos los flumphs contribuyen a su manera."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Flumph.jpg"
+						}
+					}
+				]
+			}
+		},
 		{
             "name": "Gul",
             "source": "MM-ES",
@@ -38022,6 +38772,157 @@
 				]
 			}
         },
+		{
+			"name": "Gnoll",
+			"source": "MM-ES",
+			"page": 163,
+			"srd": true,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"humanoide",
+					"gnoll"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item armadura de pieles|PHB-ES}",
+						"{@item escudo|PHB-ES}"
+					]
+				}
+			],
+			"hp": {
+				"average": 22,
+				"formula": "5d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 12,
+			"con": 11,
+			"int": 6,
+			"wis": 10,
+			"cha": 7,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"languages": [
+				"gnoll"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Rabia",
+					"entries": [
+						"Si el gnoll reduce los puntos de golpe de una criatura a 0 mediante un ataque cuerpo a cuerpo durante su turno, puede utilizar una acción adicional para moverse hasta la mitad de su velocidad y realizar un ataque de mordisco."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Mordisco",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Lanza",
+					"entries": [
+						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage, or ({@damage 1d8 + 2}) piercing damage si se usa a dos manos para hacer un ataque cuerpo a cuerpo."
+					]
+				},
+				{
+					"name": "Arco largo",
+					"entries": [
+						"{@atk rw} {@hit 3} to hit, range 150/600 ft., one target. {@h}5 ({@damage 1d8 + 1}) piercing damage."
+					]
+				}
+			],
+			"environment": [
+				"praderas",
+				"bosques",
+				"colinas",
+				"desiertos"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Gnoll.png",
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/gnoll.mp3"
+			},
+			"traitTags": [
+				"Rampage"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"OTH"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW",
+				"THW"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Los gnolls son humanoides salvajes que atacan sin previo aviso asentamientos en las fronteras de la civilización, asesinando a sus víctimas y devorando su carne",
+									{
+										"name": "Origen demoníaco",
+										"type": "entries",
+										"entries": [
+											"El origen de los gnolls data de un tiempo en el que el señor demoníaco Yeenoghu encontró una manera de entrar en el Plano Material y allí lo recorrió sin control. Hubo manadas de hienas que lo siguieron, alimentándose de aquellos a quien asesinaba. Estos animales fueron transformados en los primeros gnolls y marcharon junto a Yeenoghu hasta que este fue arrojado de nuevo al Abismo. En ese momento, sus creaciones se esparcieron por el mundo como un recuerdo atroz del poder demoníaco."
+										]
+									},
+									{
+										"name": "Destructores nómadas",
+										"type": "entries",
+										"entries": [
+											"El peligro de los gnolls es lo impredecible de sus ataques. Emergen de las tierras salvajes, saquean y matan todo lo que ven y se van a otro lado. Son como una plaga de langostas, saqueando asentamientos y dejando atrás poco más que cuerpos a medio comer, edificios arrasados y tierra estéril. Escogen objetivos fáciles para sus asaltos. Un ejército de guerreros atrincherados en un castillo reforzado sobrevivirá a una horda de gnolls salvajes sin problemas, pero los pueblos, granjas y pueblos aledaños acabarán destruidos y sus habitantes devorados.",
+											"Estas criaturas pocas veces construyen estructuras permanentes o fabrican objetos de los que se espere que perduren en el tiempo. No elaboran armas ni armadura, sino que se las roban a los cadáveres de sus víctimas, atando a sus armaduras de retales orejas, cabelleras, dientes y otros trofeos de sus enemigos.",
+											{
+												"name": "Sed de sangre",
+												"entries": [
+													" Ni la bondad ni la compasión habitan en el corazón de un gnoll. No tienen nada parecido a una consciencia, al igual que los demonios, y no se les puede enseñar o amedrentar para que abandonen sus tendencias destructivas. La sed de sangre de los gnolls les hace enemigos de todo y, cuando carecen de un enemigo común, luchan entre ellos. Incluso los orcos más salvajes evitan aliarse con los gnolls."
+												],
+												"type": "entries"
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Gnoll.jpg"
+						}
+					}
+				]
+			}
+		},
 		{
             "name": "Goblin",
             "source": "MM-ES",
@@ -40940,6 +41841,466 @@
 			}
         },
 		{
+			"name": "Unicornio",
+			"source": "MM-ES",
+			"page": 294,
+			"srd": true,
+			"size": "L",
+			"type": {
+                "type": "celestial",
+                "tags": ["celestial"]
+            },
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 67,
+				"formula": "9d10 + 18"
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 15,
+			"int": 11,
+			"wis": 17,
+			"cha": 16,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"immune": [
+				"veneno"
+			],
+			"conditionImmune": [
+				"charmed||hechizado",
+				"paralyzed||paralizado",
+				"poisoned||envenenado"
+			],
+			"languages": [
+				"celestial",
+				"elfo",
+				"silvano",
+				"telepatía 60 pies"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Lanzamiento de Conjuros Innato",
+					"headerEntries": [
+						"La aptitud mágica del unicornio es Carisma (salvación de conjuros {@dc 14}). Puede lanzar de forma innata los siguientes conjuros, sin necesidad de componentes:"
+					],
+					"will": [
+						"{@spell detectar el bien y el mal|PHB-ES}",
+						"{@spell pasar sin rastro|PHB-ES}",
+						"{@spell saber druídico|PHB-ES}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell calmar emociones|PHB-ES}",
+							"{@spell disipar el bien y el mal|PHB-ES}",
+							"{@spell enmarañar|PHB-ES}"
+						]
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"name": "Carga",
+					"entries": [
+						"Si el unicornio se mueve al menos 20 pies en línea recta hacia un objetivo y después le impacta con su ataque de cuerno durante el mismo turno, el objetivo recibe 9 ({@damage 2d8}) de daño perforante adicional. Si el objetivo es una criatura, deberá superar una tirada de salvación de Fuerza {@dc 15} o será {@condition derribado|PHB-ES|derribada}."
+					]
+				},
+				{
+					"name": "Resistencia Mágica",
+					"entries": [
+						"El unicornio tiene ventaja en las tiradas de salvación contra conjuros y otros efectos mágicos."
+					]
+				},
+				{
+					"name": "Armas Mágica",
+					"entries": [
+						"Los ataques con arma del unicornio se consideran mágicos."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Ataque múltiple",
+					"entries": [
+						"El unicornio realiza dos ataques: uno con sus cascos y otro con su cuerno."
+					]
+				},
+				{
+					"name": "Cascos",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Cuerno",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Toque sonador (3/Día)",
+					"entries": [
+						"El unicornio toca a otra criatura con su cuerno. El objetivo recupera mágicamente 11 ({@dice 2d8 + 2}) puntos de golpe. Además, su contacto también elimina todas las enfermedades y neutraliza todos los venenos que afectaran al objetivo."
+					]
+				},
+				{
+					"name": "Teletransporte (1/Día)",
+					"entries": [
+						"El unicornio puede teletransportarse mágicamente a sí mismo y hasta a tres criaturas voluntarias que se encuentren a 5 pies o menos y pueda ver, así como cualquier equipo que estén llevando o vistiendo. El destino es una ubicación con la que el unicornio esté familiarizado situada a 1 milla de distancia o menos."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Cascos",
+					"entries": [
+						"El unicornio realiza un ataque con sus cascos."
+					]
+				},
+				{
+					"name": "Escudo resplandeciente (cuesta 2 acciones)",
+					"entries": [
+						"El unicornio crea un escudo brillante de naturaleza mágica alrededor de sí mismo o de otra criatura que se encuentre a 60 pies o menos y pueda ver. El objetivo recibe un bonificador de +2 a su CA hasta el final del siguiente turno del unicornio."
+					]
+				},
+				{
+					"name": "Curarse a sí mismo (cuesta 3 acciones)",
+					"entries": [
+						"El unicornio recupera mágicamente 11 ({@dice 2d8 + 2}) puntos de golpe."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Unicornio",
+				"source": "MM-ES"
+			},
+			"environment": [
+				"bosques"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Unicorn.png",
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/unicorn.mp3"
+			},
+			"traitTags": [
+				"Charge",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Teleport"
+			],
+			"languageTags": [
+				"CE",
+				"E",
+				"S",
+				"TP"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"conditionInflictSpell": [
+				"restrained"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Los unicornios viven en bosques encantados. No están relacionados con los caballos a los que se parecen, sino que se trata de criaturas celestiales que habitan los reinos silvanos y cuya blanca figura brilla como una estrella.",
+									"En la frente de un unicornio crece un cuerno de marfil en espiral, cuyo toque mágico es capaz de curar a los enfermos y a los heridos. Sus orejas captan las palabras y susurros de las criaturas con las que habita y conoce las lenguas de los elfos y de los silvanos. Los unicornios permiten que los seres de buen corazón entren en sus bosques para cazar o recolectar comida, pero mantienen al mal siempre alejado. Las criaturas de perverso corazón rara vez abandonan con vida los dominios de un unicornio.",
+									{
+										"name": "Guardianes divinos",
+										"type": "entries",
+										"entries": [
+											"Las deidades bondadosas colocan a los unicornios en el Plano Material para vigilar que el mal no se acerque a los lugares sagrados que protegen y preservan. La mayoría de estas bestias salvaguardan un reino vinculado a ellos, como un bosque encantado. Sin embargo, a veces son enviados a defender artefactos sagrados o criaturas específicas. Cuando las fuerzas de la oscuridad atacan a una criatura que los dioses quieren proteger, estos pueden enviarla al bosque de un unicornio, donde los seres malvados no podrán perseguirla sin ponerse en grave peligro.",
+											"La mayoría de unicornios sirven a las deidades de los bosques, incluyendo a las divinidades de los feéricos benevolentes.",
+											"Aunque todos ellos poseen poderes naturales de curación, algunos sirven a los dioses con otros talentos, ya que son capaces de realizar milagros normalmente solo al alcance de los sumos sacerdotes."
+										]
+									},
+									{
+										"name": "Señores de los bosques",
+										"type": "entries",
+										"entries": [
+											"El bosque de un unicornio es un reino celestial donde nada ocurre bajo sus hojas bañadas por el sol sin que la criatura se entere. Un unicornio escucha cada canción que entonan los elfos desde las copas de los árboles. Siente dónde teje cada oruga su capullo. Percibe cada hoja y cada rama sobre la que una mariposa reposa sus cansadas alas.",
+											"Los bosques de estos seres están bañados por una sensación de calma. Lobos, zorros, aves, ardillas, e insectos diminutos... todos parecen domesticados en sus dominios. Los pixies, duendes, sátiros, dríades, y otros feéricos normalmente volubles servirán al unicornio mientras habiten su bosque. Bajo la protección de un unicornio, las criaturas se sienten seguras de la amenaza de la civilización y del mal que se expande por la tierra.",
+											"Los unicornios pasean por sus dominios constantemente, donde se mueven con absoluta cautela para no molestar a sus habitantes. Estos últimos podrían ver un destello del unicornio por el rabillo del ojo y girarse para no apreciar nada más que el bosque."
+										]
+									},
+									{
+										"name": "Cuernos sagrados",
+										"type": "entries",
+										"entries": [
+											"El cuerno del unicornio es el canalizador de su poder, un fragmento de magia divina tejido en forma de marfil anillado. Las varitas hechas de cuerno de unicornio son capaces de manejar magias poderosas, mientras que las armas fabricadas con este cuerno atacan con poder divino. Los magos pueden trabajar con polvo de cuerno de unicornio para fabricar potentes ungüentos y tinta para pergaminos o usarlo como componente de rituales sobrecogedores. Sin embargo, cualquier criatura que participe, aunque sea mínimamente, en el asesinato de un unicornio, será probablemente objeto de un castigo divino."
+										]
+									},
+									{
+										"name": "Monturas benditas",
+										"type": "entries",
+										"entries": [
+											"Cuando la oscuridad y la maldad amenazan con saturar el mundo mortal, los dioses consideran a veces oportuno unir a un unicornio con un campeón. Un paladín a lomos de un unicornio es un signo de la intervención directa de las divinidades en asuntos mortales. Es una alianza sagrada hecha para arrancar las cabezas de los demonios y enviar a los diablos de vuelta a los Nueve Infiernos.",
+											"Mientras el período de oscuridad persista, el unicornio se mantendrá junto al campeón con su cuerno brillando con fuerza para alejar la noche. No obstante, si el campeón cae en desgracia o abandona la causa de la justicia y la bondad, el unicornio lo abandonará para nunca regresar."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"name": "La guarida de un unicornio",
+						"entries": [
+							"Un unicornio podría morar en una ruina ancestral cubierta de enredaderas, en un claro sumido en la niebla y rodeado de robles imponentes, en la cima de una colina cubierta de flores y llena de mariposas o en cualquier otro lugar tranquilo en medio de un bosque."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Unicorn.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Elemental de agua",
+			"source": "MM-ES",
+			"page": 125,
+			"srd": true,
+			"size": "L",
+			"type": {
+                "type": "elemental",
+                "tags": ["elemental"]
+            },
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"armadura natural"
+					]
+				}
+			],
+			"hp": {
+				"average": 114,
+				"formula": "12d10 + 48"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 90
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 18,
+			"int": 5,
+			"wis": 10,
+			"cha": 8,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				"acid",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "de ataques no mágicos",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
+			"languages": [
+				"acuario"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Forma de Agua",
+					"entries": [
+						"El elemental podrá entrar en el espacio de una criatura hostil y detenerse en él. Además, puede moverse a través de espacios de tan solo 1 pulgada de ancho sin apretarse."
+					]
+				},
+				{
+					"name": "Congelarse",
+					"entries": [
+						"Si el elemental recibe daño de frío, quedará parcialmente congelado y su velocidad se reducirá en 20 pies hasta el final de su siguiente turno."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Ataque múltiple",
+					"entries": [
+						"El elemental realiza dos ataques de golpe."
+					]
+				},
+				{
+					"name": "Golpe",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Anegar {@recharge 4}",
+					"entries": [
+						"Todas las criaturas situadas en el espacio del elemental deberán hacer una tirada de salvación de Fuerza {@dc 15}. Si la falla, cada objetivo recibirá 13 ({@damage 2d8 + 4}) de daño contundente y, si es Grande o más pequeño, también estará {@condition agarrado|PHB-ES} ({@dc 14} para escapar). Hasta que el agarre finalice, la criatura además estará {@condition apresado|PHB-ES|apresada} y no podrá respirar (salvo que pueda respirar bajo el agua). Si supera la tirada de salvación, la criatura será empujada fuera del espacio del elemental.",
+						"El elemental puede agarrar a una criatura Grande o hasta a dos criaturas Medianas o más pequeñas al mismo tiempo utilizando esta acción. Al principio de cada uno de los turnos del elemental, todas las criaturas que tenga {@condition agarrado|PHB-ES|agarradas} recibirán 13 ({@damage 2d8 + 4}) de daño contundente.",
+						"Una criatura a 5 pies o menos del elemental puede utilizar una acción para intentar sacar a otra criatura u objeto de su interior, lográndolo si supera una prueba de Fuerza {@dc 14}."
+					]
+				}
+			],
+			"environment": [
+				"bajo el agua",
+				"pantanos",
+				"costas"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Water%20Elemental.png",
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/water-elemental.mp3"
+			},
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AQ"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [{
+								"type": "entries",
+								"entries": [
+									"Un elemental de agua es una ola que viaja a través del suelo, volviéndose prácticamente invisible al desplazarse por masas de agua grandes. Envuelve a cualquier criatura que se interponga en su camino, inundando su boca y pulmones con la misma facilidad con la que apaga las llamas."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": []
+					},
+					{
+						"type": "section",
+						"name": "Elementales",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Los elementales son la encarnación de los elementos que forman el universo: aire, tierra, fuego y agua. Aunque en sus planos son poco más que energía animada, algunos lanzadores de conjuros y criaturas poderosas pueden invocarlos para que asuman una forma concreta y realicen tareas.",
+											{
+												"type": "entries",
+												"name": "Elementos vivientes",
+												"entries": [
+													"En su plano original, los elementales son una fuerza vital incorpórea. Su leve consciencia se manifiesta en una forma física solo cuando se les canaliza a través de la magia. Los espíritus salvajes de fuerza elemental no poseen más deseo que moverse en el elemento que conforma su plano nativo. Como las bestias del Plano Material, estos espíritus elementales no poseen sociedad ni cultura, y tan solo una ligera noción del yo."	
+												]
+											},
+											{
+												"type": "entries",
+												"name": "Conjurados por la magia",
+												"entries": [
+													"Algunos conjuros y objetos mágicos pueden invocar a un elemental, trayéndolo desde los Planos Interiores hasta el Plano Material. Los elementales se resisten de forma instintiva a ser arrancados de su hogar y obligados a servir. Por ello, una criatura que invoque a un elemental debe recurrir a su fuerza de voluntad para controlarlo."	
+												]
+											},
+											{
+												"type": "entries",
+												"name": "Atados y con forma",
+												"entries": [
+													"Existen poderes mágicos capaces de atar a un espíritu elemental a una forma particular que defina un uso y función concretas. Los acechadores invisibles son elementales de aire ligados a una forma específica. De igual forma, a los elementales de agua se les puede dar la forma de extraños de agua.",
+													"La fuerza de la magia y los materiales que atan al elemental determinan hasta qué punto este es capaz de adaptarse a su nueva forma. Los gólems son espíritus elementales ligados a una realidad física, pero los débiles materiales de los que están hechos, como la carne o la arcilla, no pueden atar el poder del elemental con la suficiente fuerza. Otros materiales más resistentes, como la piedra y el hierro, requieren una magia más poderosa, pero a cambio someten al elemental con más fuerza."
+												]
+											},
+											{
+												"type": "entries",
+												"name": "Naturaleza elemental",
+												"entries": [
+													"Un elemental no necesita respirar, comer, beber ni dormir."
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Water Elemental.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
             "name": "Lobo",
             "source": "MM-ES",
             "page": 341,
@@ -41074,7 +42435,7 @@
 					"entries": [
 						"Los dragones son criaturas de naturaleza mágica que son capaces de dominar unos pocos conjuros al ir envejeciendo. Para representar esto, puedes recurrir a esta variante.",
 						"Un dragón joven o de mayor edad puede lanzar de forma innata tantos conjuros como su modificador por Carisma. Es capaz de lanzar cada conjuro una vez al día, y no necesita componentes materiales para hacerlo, pero el nivel del conjuro no puede ser superior al valor de desafío del dragón dividido por tres (redondeando hacia abajo). El bonificador para impactar con ataques de conjuro es su bonificador por competencia + su modificador por Carisma. La CD de la salvación de conjuros del dragón es 8 + su bonificador por competencia + su modificador por Carisma.",
-						"{@i {@color Este dragón puede lanzar dos conjuros de forma innata, una vez al día cada uno, sin necesidad de componentes materiales. El nivel de cada conjuro no puede ser superior a 2. El CD de salvación de conjuro del dragón es CD 13, y tiene +5 para golpear con conjuros de ataque. Consulte la |7f7f7f} {@filter página de conjuros|spells|level=0;1;2|source=PHB-ES} {@color para obtener una lista de los conjuros que el dragón es capaz de lanzar. A continuación se muestra una selección de ejemplos:|7f7f7f}}",
+						"{@i {@color Este dragón puede lanzar dos conjuros de forma innata, una vez al día cada uno, sin necesidad de componentes materiales. El nivel de cada conjuro no puede ser superior a 2. El CD de salvación de conjuro del dragón es CD 13, y tiene +5 para golpear con conjuros de ataque. Consulte la |7f7f7f} {@filter página de conjuros|spells|level=0;1;2|source=PHB-ES|source=XGE-ES} {@color para obtener una lista de los conjuros que el dragón es capaz de lanzar. A continuación se muestra una selección de ejemplos:|7f7f7f}}",
 						{
 							"type": "list",
 							"items": [
@@ -42367,6 +43728,25 @@
             "damageTags": ["I", "P", "S"],
             "miscTags": ["AOE", "MW", "RCH"]
         }
+	],
+	"legendaryGroup": [
+		{
+			"name": "Unicornio",
+			"source": "MM-ES",
+			"regionalEffects": [
+				"La presencia celestial del unicornio transforma sus dominios, lo que puede producir cualquiera de los efectos mágicos siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Las llamas desprotegidas de naturaleza no mágica se extinguen dentro de los dominios del unicornio. Las antorchas y fogatas no prenden, pero las linternas no se ven afectadas.",
+						"Las criaturas nativas de los dominios del unicornio pueden ocultarse con más facilidad; tienen ventaja en las pruebas de Destreza ({@skill Stealth|Sigilo}) para esconderse.",
+						"Si una criatura de alineamiento bueno lanza un conjuro o utiliza un efecto mágico que provoque que otra criatura buena recupere puntos de golpe, esta recuperará la máxima cantidad de puntos de golpe posibles para el conjuro o efecto.",
+						"Las maldiciones que afectan a criaturas buenas son suprimidas."
+					]
+				},
+				"Si el unicornio muere, todos estos efectos terminan inmediatamente."
+			]
+		}
 	],
 	"trait": [
 		{
@@ -52320,7 +53700,7 @@
 			"srd": true,
 			"type": "exotic",
 			"typicalSpeakers": [
-				"{@filter demons|bestiary|tag=demon}"
+				"{@filter demons|bestiary|tag=demonio}"
 			],
 			"script": "Infernal",
 			"fonts": ["fonts/languages/PHB/Infernal/Infernal.ttf", "fonts/languages/PHB/Infernal/Barazhad.otf", "fonts/languages/PHB/Infernal/Barazhad Bold.otf", "fonts/languages/PHB/Infernal/Barazhad Italic.otf", "fonts/languages/PHB/Infernal/Barazhad Bold Italic.otf"]
@@ -52332,7 +53712,7 @@
 			"srd": true,
 			"type": "exotic",
 			"typicalSpeakers": [
-				"{@filter celestials|bestiary|type=celestial}"
+				"{@filter celestials|bestiary|tag=celestial}"
 			],
 			"script": "Celestial"
 		},
@@ -52343,7 +53723,7 @@
 			"srd": true,
 			"type": "standard",
 			"typicalSpeakers": [
-				"{@filter humans|bestiary|type=humanoid|tag=any race;human}"
+				"{@filter humans|bestiary|tag=humanoide;cualquier raza;humano}"
 			],
 			"script": "Common",
             "fonts": ["fonts/languages/PHB/Human/Harpers.ttf"]
@@ -52373,7 +53753,7 @@
 			],
 			"type": "exotic",
 			"typicalSpeakers": [
-				"{@filter dragons|bestiary|type=dragon}",
+				"{@filter dragons|bestiary|tag=dragón}",
 				"{@race dracónido|PHB-ES|dracónidos}"
 			],
 			"script": "Draconic",
@@ -52423,7 +53803,7 @@
 			],
 			"type": "standard",
 			"typicalSpeakers": [
-				"{@filter dwarves|bestiary|type=humanoid|tag=any race;dwarf}"
+				"{@filter dwarves|bestiary|tag=humanoide;cualquier raza;enano}"
 			],
 			"script": "Dwarvish",
 			"fonts": ["fonts/languages/PHB/Dwarvish/Dethek.otf", "fonts/languages/PHB/Dwarvish/Dethek Bold.otf", "fonts/languages/PHB/Dwarvish/Dethek Italic.otf", "fonts/languages/PHB/Dwarvish/Dethek Bold Italic.otf", "fonts/languages/PHB/Dwarvish/Dethek Stone.ttf", "fonts/languages/PHB/Dwarvish/Dethek Alt.ttf", "fonts/languages/PHB/Dwarvish/Olde Dethek.otf", "fonts/languages/PHB/Dwarvish/Olde Dethek Italic.otf", "fonts/languages/PHB/Dwarvish/Davek 4e.otf", "fonts/languages/PHB/Dwarvish/Davek 4e Bold.otf", "fonts/languages/PHB/Dwarvish/Davek 4e Italic.otf", "fonts/languages/PHB/Dwarvish/Davek 4e Bold Italic.otf"],
@@ -52458,7 +53838,7 @@
 			],
 			"type": "standard",
 			"typicalSpeakers": [
-				"{@filter elves|bestiary|type=humanoid|tag=any race;elf}"
+				"{@filter elves|bestiary|tag=humanoide;cualquier raza;elfo}"
 			],
 			"script": "Elvish",
 			"fonts": ["fonts/languages/PHB/Elvish/Espruar 5e.ttf", "fonts/languages/PHB/Elvish/Espruar 3e.otf", "fonts/languages/PHB/Elvish/Espruar 3e Bold.otf", "fonts/languages/PHB/Elvish/Espruar 3e Italic.otf", "fonts/languages/PHB/Elvish/Espruar 3e Bold Italic.otf", "fonts/languages/PHB/Elvish/Espruar 3e Alt.ttf", "fonts/languages/PHB/Elvish/Espruar 2e.ttf", "fonts/languages/PHB/Elvish/Olde Espruar.otf", "fonts/languages/PHB/Elvish/Rellanic 4e.otf", "fonts/languages/PHB/Elvish/Rellanic 4e Bold.otf", "fonts/languages/PHB/Elvish/Rellanic 4e Italic.otf", "fonts/languages/PHB/Elvish/Rellanic 4e Bold Italic.otf"],
@@ -52488,7 +53868,7 @@
 			"type": "standard",
 			"typicalSpeakers": [
 				"{@creature ogre||ogres}",
-				"{@filter giants|bestiary|type=giant}"
+				"{@filter giants|bestiary|tag=gigante}"
 			],
 			"script": "Dwarvish",
 			"fonts": ["fonts/languages/PHB/Dwarvish/Dethek.otf", "fonts/languages/PHB/Dwarvish/Dethek Bold.otf", "fonts/languages/PHB/Dwarvish/Dethek Italic.otf", "fonts/languages/PHB/Dwarvish/Dethek Bold Italic.otf", "fonts/languages/PHB/Dwarvish/Dethek Stone.ttf", "fonts/languages/PHB/Dwarvish/Dethek Alt.ttf", "fonts/languages/PHB/Dwarvish/Olde Dethek.otf", "fonts/languages/PHB/Dwarvish/Olde Dethek Italic.otf", "fonts/languages/PHB/Dwarvish/Davek 4e.otf", "fonts/languages/PHB/Dwarvish/Davek 4e Bold.otf", "fonts/languages/PHB/Dwarvish/Davek 4e Italic.otf", "fonts/languages/PHB/Dwarvish/Davek 4e Bold Italic.otf"],
@@ -52520,7 +53900,7 @@
 			],
 			"type": "standard",
 			"typicalSpeakers": [
-				"{@filter gnomes|bestiary|type=humanoid|tag=any race;gnome}"
+				"{@filter gnomes|bestiary|tag=humanoide;cualquier raza;gnomo}"
 			],
 			"script": "Dwarvish",
 			"fonts": ["fonts/languages/PHB/Dwarvish/Dethek.otf", "fonts/languages/PHB/Dwarvish/Dethek Bold.otf", "fonts/languages/PHB/Dwarvish/Dethek Italic.otf", "fonts/languages/PHB/Dwarvish/Dethek Bold Italic.otf", "fonts/languages/PHB/Dwarvish/Dethek Stone.ttf", "fonts/languages/PHB/Dwarvish/Dethek Alt.ttf", "fonts/languages/PHB/Dwarvish/Olde Dethek.otf", "fonts/languages/PHB/Dwarvish/Olde Dethek Italic.otf", "fonts/languages/PHB/Dwarvish/Davek 4e.otf", "fonts/languages/PHB/Dwarvish/Davek 4e Bold.otf", "fonts/languages/PHB/Dwarvish/Davek 4e Italic.otf", "fonts/languages/PHB/Dwarvish/Davek 4e Bold Italic.otf"],
@@ -52549,7 +53929,7 @@
 			"srd": true,
 			"type": "standard",
 			"typicalSpeakers": [
-				"{@filter goblinoids|bestiary|tag=goblinoid}"
+				"{@filter goblinoids|bestiary|tag=trasgo}"
 			],
 			"script": "Dwarvish",
 			"fonts": ["fonts/languages/PHB/Dwarvish/Dethek.otf", "fonts/languages/PHB/Dwarvish/Dethek Bold.otf", "fonts/languages/PHB/Dwarvish/Dethek Italic.otf", "fonts/languages/PHB/Dwarvish/Dethek Bold Italic.otf", "fonts/languages/PHB/Dwarvish/Dethek Stone.ttf", "fonts/languages/PHB/Dwarvish/Dethek Alt.ttf", "fonts/languages/PHB/Dwarvish/Olde Dethek.otf", "fonts/languages/PHB/Dwarvish/Olde Dethek Italic.otf", "fonts/languages/PHB/Dwarvish/Davek 4e.otf", "fonts/languages/PHB/Dwarvish/Davek 4e Bold.otf", "fonts/languages/PHB/Dwarvish/Davek 4e Italic.otf", "fonts/languages/PHB/Dwarvish/Davek 4e Bold Italic.otf"],
@@ -52581,7 +53961,7 @@
 			],
 			"type": "standard",
 			"typicalSpeakers": [
-				"{@filter halflings|bestiary|type=humanoid|tag=any race;halfling}"
+				"{@filter halflings|bestiary|tag=humanoide;cualquier raza;mediano}"
 			],
 			"script": "Common",
 			"entries": [
@@ -52595,7 +53975,7 @@
 			"srd": true,
 			"type": "exotic",
 			"typicalSpeakers": [
-				"{@filter devils|bestiary|tag=devil}"
+				"{@filter devils|bestiary|tag=diablo}"
 			],
 			"script": "Infernal",
 			"fonts": ["fonts/languages/PHB/Infernal/Infernal.ttf", "fonts/languages/PHB/Infernal/Barazhad.otf", "fonts/languages/PHB/Infernal/Barazhad Bold.otf", "fonts/languages/PHB/Infernal/Barazhad Italic.otf", "fonts/languages/PHB/Infernal/Barazhad Bold Italic.otf"]
@@ -52607,7 +53987,7 @@
 			"srd": true,
 			"type": "standard",
 			"typicalSpeakers": [
-				"{@filter orcs|bestiary|tag=orc}"
+				"{@filter orcs|bestiary|tag=orco}"
 			],
 			"script": "Dwarvish",
 			"fonts": ["fonts/languages/PHB/Dwarvish/Dethek.otf", "fonts/languages/PHB/Dwarvish/Dethek Bold.otf", "fonts/languages/PHB/Dwarvish/Dethek Italic.otf", "fonts/languages/PHB/Dwarvish/Dethek Bold Italic.otf", "fonts/languages/PHB/Dwarvish/Dethek Stone.ttf", "fonts/languages/PHB/Dwarvish/Dethek Alt.ttf", "fonts/languages/PHB/Dwarvish/Olde Dethek.otf", "fonts/languages/PHB/Dwarvish/Olde Dethek Italic.otf", "fonts/languages/PHB/Dwarvish/Davek 4e.otf", "fonts/languages/PHB/Dwarvish/Davek 4e Bold.otf", "fonts/languages/PHB/Dwarvish/Davek 4e Italic.otf", "fonts/languages/PHB/Dwarvish/Davek 4e Bold Italic.otf"],
@@ -52636,7 +54016,7 @@
 			"srd": true,
 			"type": "exotic",
 			"typicalSpeakers": [
-				"{@filter elementals|bestiary|type=elemental}"
+				"{@filter elementals|bestiary|tag=elemental}"
 			],
 			"script": "Dwarvish",
 			"fonts": ["fonts/languages/PHB/Dwarvish/Dethek.otf", "fonts/languages/PHB/Dwarvish/Dethek Bold.otf", "fonts/languages/PHB/Dwarvish/Dethek Italic.otf", "fonts/languages/PHB/Dwarvish/Dethek Bold Italic.otf", "fonts/languages/PHB/Dwarvish/Dethek Stone.ttf", "fonts/languages/PHB/Dwarvish/Dethek Alt.ttf", "fonts/languages/PHB/Dwarvish/Olde Dethek.otf", "fonts/languages/PHB/Dwarvish/Olde Dethek Italic.otf", "fonts/languages/PHB/Dwarvish/Davek 4e.otf", "fonts/languages/PHB/Dwarvish/Davek 4e Bold.otf", "fonts/languages/PHB/Dwarvish/Davek 4e Italic.otf", "fonts/languages/PHB/Dwarvish/Davek 4e Bold Italic.otf"],
@@ -52665,7 +54045,7 @@
 			"srd": true,
 			"type": "exotic",
 			"typicalSpeakers": [
-				"{@filter fey creatures|bestiary|type=fey}"
+				"{@filter fey creatures|bestiary|tag=feérico}"
 			],
 			"script": "Elvish",
 			"fonts": ["fonts/languages/PHB/Elvish/Espruar 5e.ttf", "fonts/languages/PHB/Elvish/Espruar 3e.otf", "fonts/languages/PHB/Elvish/Espruar 3e Bold.otf", "fonts/languages/PHB/Elvish/Espruar 3e Italic.otf", "fonts/languages/PHB/Elvish/Espruar 3e Bold Italic.otf", "fonts/languages/PHB/Elvish/Espruar 3e Alt.ttf", "fonts/languages/PHB/Elvish/Espruar 2e.ttf", "fonts/languages/PHB/Elvish/Olde Espruar.otf", "fonts/languages/PHB/Elvish/Rellanic 4e.otf", "fonts/languages/PHB/Elvish/Rellanic 4e Bold.otf", "fonts/languages/PHB/Elvish/Rellanic 4e Italic.otf", "fonts/languages/PHB/Elvish/Rellanic 4e Bold Italic.otf"],
@@ -55728,7 +57108,7 @@
 				}
 			],
 			"entries": [
-				"Este conjuro crea un siervo muerto viviente. Elige un montón de huesos o un cadáver de un humanoide de tamaño Mediano o Pequeño. Debe estar dentro del alcance. El conjuro insufla en el objetivo una burda semblanza de vida, alzándolo como una criatura muerta viviente. El objetivo se convierte en un {@creature skeleton|mm|esqueleto}, si elegiste un montón de huesos, o en un {@creature zombie|mm|zombi}, si elegiste un cadáver. El DM tiene el perfil de la criatura.",
+				"Este conjuro crea un siervo muerto viviente. Elige un montón de huesos o un cadáver de un humanoide de tamaño Mediano o Pequeño. Debe estar dentro del alcance. El conjuro insufla en el objetivo una burda semblanza de vida, alzándolo como una criatura muerta viviente. El objetivo se convierte en un {@creature esqueleto|MM-ES}, si elegiste un montón de huesos, o en un {@creature zombi|MM-ES}, si elegiste un cadáver. El DM tiene el perfil de la criatura.",
 				"En cada turno, puedes usar una acción adicional para dar una orden mental a cualquier criatura creada mediante este conjuro que esté a 60 pies o menos de ti (si controlas varias criaturas, puedes dirigir a una o más de él las utilizando la misma orden). Decides qué acción va a tomar la criatura y dónde se moverá durante su próximo turno. También puedes dar una orden general, como vigilar una cámara o pasillo en concreto. Si no das ninguna orden, la criatura se limita a defenderse de otras criaturas hostiles. Una vez recibida una orden, la sigue hasta cumplirla.",
 				"La criatura permanece bajo tu control durante 24 horas, después de las cuales abandonará cualquier orden que hayas dado. Para mantener el control de la criatura durante otras 24 horas, debes lanzar este conjuro de nuevo sobre ella antes de que el periodo actual de 24 horas termine. Puedes usar este conjuro para reafirmar tu control sobre hasta cuatro criaturas que hayas animado previamente con este conjuro o para reanimar a una nueva."
 			],
@@ -57125,7 +58505,7 @@
 				}
 			],
 			"entries": [
-				"Después de emplear el tiempo de lanzamiento en trazar dibujos mágicos en el interior de la piedra preciosa, tocas a una bestia o planta de tamaño Enorme o menor. El objetivo debe tener una puntuación de Inteligencia de 3 o menos (o incluso no tener puntuación de Inteligencia). La puntuación de Inteligencia del objetivo pasa a ser 10. Además, gana la capacidad de hablar un idioma que tú conozcas. Si el objetivo es una planta, obtiene la capacidad de mover sus miembros, raíces, vides, enredaderas, etc. y gana sentidos parecidos a los humanos. Tu DM elige un perfil adecuado a la planta que has despertado, como por ejemplo el de un {@creature awakened shrub|mm|arbusto despertado} o un {@creature awakened tree|mm|árbol despertado}.",
+				"Después de emplear el tiempo de lanzamiento en trazar dibujos mágicos en el interior de la piedra preciosa, tocas a una bestia o planta de tamaño Enorme o menor. El objetivo debe tener una puntuación de Inteligencia de 3 o menos (o incluso no tener puntuación de Inteligencia). La puntuación de Inteligencia del objetivo pasa a ser 10. Además, gana la capacidad de hablar un idioma que tú conozcas. Si el objetivo es una planta, obtiene la capacidad de mover sus miembros, raíces, vides, enredaderas, etc. y gana sentidos parecidos a los humanos. Tu DM elige un perfil adecuado a la planta que has despertado, como por ejemplo el de un {@creature awakened shrub|mm|arbusto despertado} o un {@creature árbol despertado|MM-ES}.",
 				"El objetivo despertado permanece {@condition Hechizado|PHB-ES|hechizado} por ti durante 30 días o hasta que tú o tus compañeros le causéis daño. Cuando el estado \"{@condition Hechizado|PHB-ES|hechizado}\" termina, la criatura despertada decide si sigue siendo amistosa hacia ti o no, dependiendo de cómo la trataras cuando estaba {@condition Hechizado|PHB-ES|hechizada}."
 			],
 			"conditionInflict": [
@@ -61209,10 +62589,10 @@
 				{
 					"type": "list",
 					"items": [
-						"Una {@filter bestia con valor de desafío 2 o menos|bestiary|challenge rating=[&0;&2]|type=beast|miscellaneous=!swarm}.",
-						"Dos {@filter bestias con valor de desafío 1 o menos|bestiary|challenge rating=[&0;&1]|type=beast|miscellaneous=!swarm}.",
-						"Cuatro {@filter bestias con valor de desafío 1/2 o menos|bestiary|challenge rating=[&0;&1/2]|type=beast|miscellaneous=!swarm}.",
-						"Ocho {@filter bestias con valor de desafío 1/4 o menos|bestiary|challenge rating=[&0;&1/4]|type=beast|miscellaneous=!swarm}."
+						"Una {@filter bestia con valor de desafío 2 o menos|bestiary|challenge rating=[&0;&2]|tag=bestia|miscellaneous=!swarm}.",
+						"Dos {@filter bestias con valor de desafío 1 o menos|bestiary|challenge rating=[&0;&1]|tag=bestia|miscellaneous=!swarm}.",
+						"Cuatro {@filter bestias con valor de desafío 1/2 o menos|bestiary|challenge rating=[&0;&1/2]|tag=bestia|miscellaneous=!swarm}.",
+						"Ocho {@filter bestias con valor de desafío 1/4 o menos|bestiary|challenge rating=[&0;&1/4]|tag=bestia|miscellaneous=!swarm}."
 					]
 				},
 				"Cada bestia se considera feérica y desaparece cuando sus puntos de golpe se reducen a 0 o el conjuro termina.",
@@ -61367,7 +62747,7 @@
 				}
 			],
 			"entries": [
-				"Invocas un {@filter celestial con valor de desafío 4 o menos|bestiary|challenge rating=[&0;&4]|type=celestial|miscellaneous=!swarm} en un espacio desocupado que puedas ver dentro del alcance. El celestial desaparece si sus puntos de golpe se reducen a 0 o el conjuro termina",
+				"Invocas un {@filter celestial con valor de desafío 4 o menos|bestiary|challenge rating=[&0;&4]|tag=celestial|miscellaneous=!swarm} en un espacio desocupado que puedas ver dentro del alcance. El celestial desaparece si sus puntos de golpe se reducen a 0 o el conjuro termina",
 				"Es amistoso hacia ti y tus compañeros hasta el final de la duración del conjuro. Haz una tirada de iniciativa para el celestial, que tiene sus propios turnos. Obedecerá cualquier mandato verbal tuyo (no requiere acción) que no viole su alineamiento. Si no le das ninguna orden, se defenderá de criaturas hostiles, pero no realizará ninguna otra acción.",
 				"El DM tiene el perfil del {@creature couatl|mm|celestial}."
 			],
@@ -61376,7 +62756,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 9, invocas a un {@filter celestial con valor de desafío 5 o menos|bestiary|challenge rating=[&0;&5]|type=celestial|miscellaneous=!swarm}."
+						"Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 9, invocas a un {@filter celestial con valor de desafío 5 o menos|bestiary|challenge rating=[&0;&5]|tag=celestial|miscellaneous=!swarm}."
 					]
 				}
 			],
@@ -61429,7 +62809,7 @@
 				}
 			],
 			"entries": [
-				"Invocas a un sirviente elemental. Elige un área de agua, aire, fuego o tierra, dentro del alcance que llene un cubo de 10 pies de lado. Un {@filter elemental con valor de desafío 5 o menos|bestiary|challenge rating=[&0;&5]|type=elemental|miscellaneous=!swarm} y apropiado al área elegida aparece en un espacio desocupado a 10 pies de esta. Por ejemplo, un {@creature fire elemental|mm|elemental} de fuego emerge de una fogata y un {@creature earth elemental|mm|elemental de tierra} se alza de un suelo de tierra. El elemental desaparece si sus puntos de golpe se reducen a 0 o el conjuro termina.",
+				"Invocas a un sirviente elemental. Elige un área de agua, aire, fuego o tierra, dentro del alcance que llene un cubo de 10 pies de lado. Un {@filter elemental con valor de desafío 5 o menos|bestiary|challenge rating=[&0;&5]|tag=elemental|miscellaneous=!swarm} y apropiado al área elegida aparece en un espacio desocupado a 10 pies de esta. Por ejemplo, un {@creature elemental de fuego|MM-ES} emerge de una fogata y un {@creature elemental de tierra|MM-ES} se alza de un suelo de tierra. El elemental desaparece si sus puntos de golpe se reducen a 0 o el conjuro termina.",
 				"Es amistoso hacia ti y tus compañeros hasta el final de la duración del conjuro. Haz una tirada de iniciativa para el elemental, que tiene sus propios turnos. Obedece cualquier mandato verbal tuyo (no requiere acción). Si no le das ninguna orden, se defenderá de criaturas hostiles, pero no realizará ninguna otra acción.",
 				"Si tu concentración se rompe, el elemental no desaparece. En vez de eso, pierdes el control del elemental, que se vuelve hostil hacia ti y tus compañeros y podría atacaros. No puedes desconvocar a un elemental descontrolado, que desaparecerá 1 hora después de que lo invoques.",
 				"El DM tiene el perfil del elemental."
@@ -61521,7 +62901,7 @@
 				}
 			],
 			"entries": [
-				"Invocas a una {@filter criatura feérica con valor de desafío 6 o menos|bestiary|challenge rating=[&0;&6]|type=fey|miscellaneous=!swarm}, o un espíritu feérico que tome la forma de una {@filter bestia con valor de desafío 6 o menos|bestiary|challenge rating=[&0;&6]|type=beast|miscellaneous=!swarm}. Aparece en un espacio desocupado que puedas ver dentro del alcance. El feérico desaparece si sus puntos de golpe se reducen a 0 o el conjuro termina.",
+				"Invocas a una {@filter criatura feérica con valor de desafío 6 o menos|bestiary|challenge rating=[&0;&6]|tag=feérico|miscellaneous=!swarm}, o un espíritu feérico que tome la forma de una {@filter bestia con valor de desafío 6 o menos|bestiary|challenge rating=[&0;&6]|tag=bestia|miscellaneous=!swarm}. Aparece en un espacio desocupado que puedas ver dentro del alcance. El feérico desaparece si sus puntos de golpe se reducen a 0 o el conjuro termina.",
 				"Es amistoso hacia ti y tus compañeros hasta el final de la duración del conjuro. Haz una tirada de iniciativa para el feérico, que tiene sus propios turnos. Obedecerá cualquier mandato verbal tuyo (no requiere acción) que no viole su alineamiento. Si no le das ninguna orden, se defenderá de criaturas hostiles, pero no realizará ninguna otra acción.",
 				"Si tu concentración se rompe, el feérico no desaparece. En vez de eso, pierdes el control del feérico, que se vuelve hostil hacia ti y tus compañeros y podría atacaros. No puedes desconvocar al feérico descontrolado, que desaparecerá 1 hora después de que lo invoques.",
 				"El DM tiene el perfil de las criaturas."
@@ -61591,10 +62971,10 @@
 				{
 					"type": "list",
 					"items": [
-						"Un {@filter elemental con valor de desafío 2 o menos|bestiary|challenge rating=[&0;&2]|type=elemental|miscellaneous=!swarm}.",
-						"Dos {@filter elementales con valor de desafío 1 o menos|bestiary|challenge rating=[&0;&1]|type=elemental|miscellaneous=!swarm}.",
-						"Cuatro {@filter elementales con valor de desafío 1/2 o menos|bestiary|challenge rating=[&0;&1/2]|type=elemental|miscellaneous=!swarm}.",
-						"Ocho {@filter elementales con valor de desafío 1/4 o menos|bestiary|challenge rating=[&0;&1/4]|type=elemental|miscellaneous=!swarm}."
+						"Un {@filter elemental con valor de desafío 2 o menos|bestiary|challenge rating=[&0;&2]|tag=elemental|miscellaneous=!swarm}.",
+						"Dos {@filter elementales con valor de desafío 1 o menos|bestiary|challenge rating=[&0;&1]|tag=elemental|miscellaneous=!swarm}.",
+						"Cuatro {@filter elementales con valor de desafío 1/2 o menos|bestiary|challenge rating=[&0;&1/2]|tag=elemental|miscellaneous=!swarm}.",
+						"Ocho {@filter elementales con valor de desafío 1/4 o menos|bestiary|challenge rating=[&0;&1/4]|tag=elemental|miscellaneous=!swarm}."
 					]
 				},
 				"Los elementales desaparecen si llegan a 0 puntos de golpe o el conjuro termina.",
@@ -61754,10 +63134,10 @@
 				{
 					"type": "list",
 					"items": [
-						"Un {@filter feérico con valor de desafío 2 o menos|bestiary|challenge rating=[&0;&2]|type=fey|miscellaneous=!swarm}.",
-						"Dos {@filter feéricos con valor de desafío 1 o menos|bestiary|challenge rating=[&0;&1]|type=fey|miscellaneous=!swarm}.",
-						"Cuatro {@filter feéricos con valor de desafío 1/2 o menos|bestiary|challenge rating=[&0;&1/2]|type=fey|miscellaneous=!swarm}.",
-						"Ocho {@filter feéricos con valor de desafío 1/4 o menos|bestiary|challenge rating=[&0;&1/4]|type=fey|miscellaneous=!swarm}."
+						"Un {@filter feérico con valor de desafío 2 o menos|bestiary|challenge rating=[&0;&2]|tag=feérico|miscellaneous=!swarm}.",
+						"Dos {@filter feéricos con valor de desafío 1 o menos|bestiary|challenge rating=[&0;&1]|tag=feérico|miscellaneous=!swarm}.",
+						"Cuatro {@filter feéricos con valor de desafío 1/2 o menos|bestiary|challenge rating=[&0;&1/2]|tag=feérico|miscellaneous=!swarm}.",
+						"Ocho {@filter feéricos con valor de desafío 1/4 o menos|bestiary|challenge rating=[&0;&1/4]|tag=feérico|miscellaneous=!swarm}."
 					]
 				},
 				"Una criatura invocada desaparece si sus puntos de golpe se reducen a 0 o el conjuro termina.",
@@ -62757,7 +64137,7 @@
 				}
 			],
 			"entries": [
-				"Este conjuro solo puede lanzarse de noche. Elige hasta tres cadáveres de humanoide de tamaño Mediano o Pequeño. Deben estar dentro del alcance. Cada uno de ellos se convierte en un {@creature ghoul|mm|gul} bajo tu control (el DM tiene los perfiles de estas criaturas.)",
+				"Este conjuro solo puede lanzarse de noche. Elige hasta tres cadáveres de humanoide de tamaño Mediano o Pequeño. Deben estar dentro del alcance. Cada uno de ellos se convierte en un {@creature gul|MM-ES} bajo tu control (el DM tiene los perfiles de estas criaturas.)",
 				"En cada turno, puedes usar una acción adicional para dar una orden mental a cualquier criatura creada mediante este conjuro si está a 120 pies o menos de ti (si controlas varias criaturas, puedes dirigir a una o más de ellas utilizando la misma orden). Decides qué acción va a tomar la criatura y dónde se moverá durante su próximo turno. También puedes dar una orden general, como vigilar una cámara o pasillo en concreto. Si no indicas ninguna orden, la criatura se limita a defenderse de otras criaturas hostiles. Una vez que recibe una orden, la sigue hasta cumplirla.",
 				"La criatura se mantiene bajo tu control durante 24 horas, después de las cuales abandonará cualquier orden que hayas dado. Para mantener el control sobre ella durante otras 24 horas, debes lanzar este conjuro de nuevo sobre ella antes de que el periodo actual de 24 horas termine. Puedes usar este conjuro para reafirmar tu control sobre hasta tres criaturas que hayas animado previamente con este conjuro en vez de reanimar nuevos cadáveres."
 			],
@@ -62766,7 +64146,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 7, reanimas o reafirmas tu control sobre cuatro {@creature ghoul|mm|gules}. Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 8, reanimas o reafirmas tu control sobre cinco {@creature ghoul|mm|gules}, o dos {@creature ghast|mm|ghasts} o {@creature wight|mm|tumularios}. Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 9, reanimas o reafirmas tu control sobre seis {@creature ghoul|mm|gules}, tres {@creature ghast|mm|ghasts} o {@creature wight|mm|tumularios}, o dos {@creature mummy|mm|momias}."
+						"Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 7, reanimas o reafirmas tu control sobre cuatro {@creature gul|MM-ES|gules}. Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 8, reanimas o reafirmas tu control sobre cinco {@creature gul|mm|gules}, o dos {@creature ghast|mm|ghasts} o {@creature wight|mm|tumularios}. Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 9, reanimas o reafirmas tu control sobre seis {@creature gul|mm|gules}, tres {@creature ghast|mm|ghasts} o {@creature wight|mm|tumularios}, o dos {@creature mummy|mm|momias}."
 					]
 				}
 			],
@@ -78684,7 +80064,7 @@
 				}
 			],
 			"entries": [
-				"Suplicas la ayuda de una entidad de otro mundo. Debe ser una entidad que conozcas: un {@filter dios|bestiary|type=celestial|miscellaneous=!swarm}, un {@filter primordial|bestiary|type=elemental|miscellaneous=!swarm}, un {@filter príncipe demonio u otro ser de poderes cósmicos|bestiary|type=fiend|miscellaneous=!swarm}. Para ayudarte, enviará un celestial, elemental o infernal leal a ti, haciendo que aparezca en un espacio desocupado dentro del alcance. Si conoces el nombre específico de una criatura, puedes pronunciar  su nombre al lanzar el conjuro para solicitar a esa criatura en concreto, aunque aun así podrías recibir otra criatura diferente (a elección del DM).",
+				"Suplicas la ayuda de una entidad de otro mundo. Debe ser una entidad que conozcas: un {@filter dios|bestiary|tag=celestial|miscellaneous=!swarm}, un {@filter primordial|bestiary|tag=elemental|miscellaneous=!swarm}, un {@filter príncipe demonio u otro ser de poderes cósmicos|bestiary|tag=infernal|miscellaneous=!swarm}. Para ayudarte, enviará un celestial, elemental o infernal leal a ti, haciendo que aparezca en un espacio desocupado dentro del alcance. Si conoces el nombre específico de una criatura, puedes pronunciar  su nombre al lanzar el conjuro para solicitar a esa criatura en concreto, aunque aun así podrías recibir otra criatura diferente (a elección del DM).",
 				"Cuando la criatura se presenta no está bajo los efectos de ninguna obligación que le haga comportarse de una manera determinada. Puedes pedirle que lleve a cabo un servicio a cambio de un pago, pero no está obligada a hacerlo. La tarea solicitada puede ser simple (como \"llévanos volando a través del abismo\" o \"ayúdanos en una batalla\") o compleja (como \"espía a nuestros enemigos\" o \"protégenos durante nuestra incursión en la mazmorra\"). Debes ser capaz de comunicarte con la criatura para contratar sus servicios.",
 				"El pago puede tomar formas muy variadas. Un celestial podría requerir una cuantiosa donación de oro u objetos mágicos a un templo aliado, mientras que un infernal podría requerir un sacrificio de un ser vivo o cierto tipo de regalo. Algunas criaturas podrían pedirte que lleves a cabo una misión a cambio de sus servicios.",
 				"Como regla general, una tarea que pueda ser medida en minutos cuesta 100 po por minuto. Una tarea medida en horas cuesta 1.000 po por hora. Finalmente, una tarea medida en días (hasta 10) cuesta 10.000 po por día. El DM puede ajustar estos precios en función de las circunstancias en las que se lance el conjuro. Si la tarea se ajusta a los valores de la criatura, el pago podría ser reducido a la mitad o incluso condonado. Las tareas sin peligro cuestan normalmente la mitad, mientras que las que sean especialmente peligrosas pueden requerir una donación mayor. Sería raro que alguna criatura aceptará una tarea que le pareciera suicida.",
@@ -78742,7 +80122,7 @@
 				}
 			],
 			"entries": [
-				"Con este conjuro, intentas obligar a un {@filter celestial|bestiary|type=celestial|miscellaneous=!swarm}, {@filter elemental|bestiary|type=elemental|miscellaneous=!swarm}, {@filter feérico|bestiary|type=fey|miscellaneous=!swarm} o {@filter infernal|bestiary|type=fiend|miscellaneous=!swarm} a servirte. La criatura debe estar dentro del alcance durante toda la duración del lanzamiento del conjuro (típicamente se invoca a la criatura en el centro de un círculo mágico invertido para evitar que escape mientras se lanza el conjuro). Al finalizar el lanzamiento, el objetivo debe hacer una tirada de salvación de Carisma. Si falla, queda atado, obligado a servirte hasta el final de la duración del conjuro. Si la criatura fue invocada o creada por otro conjuro, la duración de ese último se extiende hasta igualar la de este conjuro.",
+				"Con este conjuro, intentas obligar a un {@filter celestial|bestiary|tag=celestial|miscellaneous=!swarm}, {@filter elemental|bestiary|tag=elemental|miscellaneous=!swarm}, {@filter feérico|bestiary|tag=feérico|miscellaneous=!swarm} o {@filter infernal|bestiary|type=infernal|miscellaneous=!swarm} a servirte. La criatura debe estar dentro del alcance durante toda la duración del lanzamiento del conjuro (típicamente se invoca a la criatura en el centro de un círculo mágico invertido para evitar que escape mientras se lanza el conjuro). Al finalizar el lanzamiento, el objetivo debe hacer una tirada de salvación de Carisma. Si falla, queda atado, obligado a servirte hasta el final de la duración del conjuro. Si la criatura fue invocada o creada por otro conjuro, la duración de ese último se extiende hasta igualar la de este conjuro.",
 				"El objetivo atado debe obedecer tus órdenes lo mejor que pueda. Puedes pedirle que te acompañe en una aventura, que vigile un sitio o que entregue un mensaje. La criatura seguirá las instrucciones al pie de la letra, pero si es hostil hacia ti, intentará retorcer tus palabras para conseguir sus propios objetivos. Si cumple totalmente tus órdenes antes de que acabe el conjuro, viajará hasta donde estés para informarte, siempre y cuando estéis en el mismo plano de existencia. Si estás en otro plano, volverá al sitio donde la ataste y se quedará ahí hasta que el conjuro termine."
 			],
 			"entriesHigherLevel": [
@@ -79138,7 +80518,7 @@
 			],
 			"entries": [
 				"Este conjuro transforma a una criatura que puedas ver dentro del alcance en una nueva forma. Una criatura no voluntaria puede hacer una tirada de salvación de Sabiduría para evitar la transformación. El conjuro no tendrá efecto en un cambiaformas o en una criatura con 0 puntos de golpe.",
-				"La transformación se mantiene hasta el final de la duración del conjuro o hasta que el objetivo muera o sea reducido a 0 puntos de golpe. La nueva forma puede ser la de cualquier {@filter bestia|bestiary|type=beast|miscellaneous=!swarm} cuyo valor de desafío sea igual o menor que el del objetivo (o igual o menor que el nivel del objetivo, si este no tiene un valor de desafío). Reemplaza el perfil del objetivo por el perfil de la bestia elegida, incluyendo las puntuaciones de característica mentales. Únicamente mantendrá su alineamiento y personalidad.",
+				"La transformación se mantiene hasta el final de la duración del conjuro o hasta que el objetivo muera o sea reducido a 0 puntos de golpe. La nueva forma puede ser la de cualquier {@filter bestia|bestiary|tag=bestia|miscellaneous=!swarm} cuyo valor de desafío sea igual o menor que el del objetivo (o igual o menor que el nivel del objetivo, si este no tiene un valor de desafío). Reemplaza el perfil del objetivo por el perfil de la bestia elegida, incluyendo las puntuaciones de característica mentales. Únicamente mantendrá su alineamiento y personalidad.",
 				"También pasará a tener los puntos de golpe de su nueva forma. Cuando revierta a su forma normal volverá a poseer los puntos de golpe que tuviera antes de la transformación. Si la transformación se rompe al quedar su nueva forma reducida a 0 puntos de golpe, cualquier daño sobrante se aplica a la forma normal. Si este daño sobrante no reduce la forma normal de la criatura a 0 puntos de vida, no cae inconsciente.",
 				"Las acciones de la criatura quedan limitadas por la naturaleza de su nueva forma, y tampoco puede hablar, lanzar conjuros o realizar cualquier acción que requiera del habla o uso de las manos.",
 				"El equipamiento del objetivo se funde con la nueva forma. El objetivo no puede activar, blandir o beneficiarse de su equipamiento de ninguna manera."
