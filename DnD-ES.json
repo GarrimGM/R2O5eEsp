@@ -38646,10 +38646,10 @@
             "cr": "1",
             "action": [{
                     "name": "Mordisco",
-                    "entries": ["{@atk mw} {@hit 2} to hit, reach 5 pies, una criatura. {@h}9 ({@damage 2d6 + 2}) perforante damage."]
+                    "entries": ["{@atk mw} {@hit 2} to hit, reach 5 ft., una criatura. {@h}9 ({@damage 2d6 + 2}) perforante damage."]
                 }, {
                     "name": "Garras",
-                    "entries": ["{@atk mw} {@hit 4} to hit, reach 5 pies, un objetivo. {@h}7 ({@damage 2d4 + 2}) cortante damage. Si el objetivo es una criatura y no es elfo ni muerto viviente, deberá superar una tirada de salvación de Constitución {@dc 10} o quedará {@condition paralizado|PHB-ES} durante 1 minuto. La criatura puede repetir la tirada de salvación al final de cada uno de sus turnos, librándose del efecto si tiene éxito."]
+                    "entries": ["{@atk mw} {@hit 4} to hit, reach 5 ft., un objetivo. {@h}7 ({@damage 2d4 + 2}) cortante damage. Si el objetivo es una criatura y no es elfo ni muerto viviente, deberá superar una tirada de salvación de Constitución {@dc 10} o quedará {@condition paralizado|PHB-ES} durante 1 minuto. La criatura puede repetir la tirada de salvación al final de cada uno de sus turnos, librándose del efecto si tiene éxito."]
                 }
             ],
             "environment": ["underdark", "pantanos", "ciudades"],
@@ -38751,10 +38751,10 @@
             ],
             "action": [{
                     "name": "Mordisco",
-                    "entries": ["{@atk mw} {@hit 5} to hit, reach 5 pies, un objetivo. {@h}7 ({@damage 1d8 + 3}) perforante damage, y el objetivo debe hacer una tirada de salvación de Constitución {@dc 11}, sufriendo 9 ({@damage 2d8}) poison damage si la falla, o la mitad del daño si la supera. Si el veneno reduce al objetivo a O puntos de golpe, este estará estable pero {@condition envenenado|PHB-ES} durante 1 hora, incluso tras recuperar puntos de golpe. Además, mientras esté {@condition envenenado|PHB-ES} (por este veneno) también estará {@condition paralizado|PHB-ES}."]
+                    "entries": ["{@atk mw} {@hit 5} to hit, reach 5 ft., un objetivo. {@h}7 ({@damage 1d8 + 3}) perforante damage, y el objetivo debe hacer una tirada de salvación de Constitución {@dc 11}, sufriendo 9 ({@damage 2d8}) poison damage si la falla, o la mitad del daño si la supera. Si el veneno reduce al objetivo a O puntos de golpe, este estará estable pero {@condition envenenado|PHB-ES} durante 1 hora, incluso tras recuperar puntos de golpe. Además, mientras esté {@condition envenenado|PHB-ES} (por este veneno) también estará {@condition paralizado|PHB-ES}."]
                 }, {
                     "name": "Telaraña {@recharge 5}",
-                    "entries": ["{@atk rw} {@hit 5} to hit, range 30/60 pies, una criatura. {@h}El objetivo está {@condition apresado|PHB-ES} por la telaraña. Dicha criatura puede gastar su acción para hacer una prueba de Fuerza {@dc 12}, rompiendo la telaraña si tiene éxito. También se puede atacar a la telaraña para intentar destruirla (CA 10; 5 pg; vulnerable a daño de fuego; inmune a daños contundente, psíquico y de veneno)."]
+                    "entries": ["{@atk rw} {@hit 5} to hit, range 30/60 ft., una criatura. {@h}El objetivo está {@condition apresado|PHB-ES} por la telaraña. Dicha criatura puede gastar su acción para hacer una prueba de Fuerza {@dc 12}, rompiendo la telaraña si tiene éxito. También se puede atacar a la telaraña para intentar destruirla (CA 10; 5 pg; vulnerable a daño de fuego; inmune a daños contundente, psíquico y de veneno)."]
                 }
             ],
             "environment": ["underdark", "bosques", "pantanos", "ciudades", "desiertos"],
@@ -38856,19 +38856,19 @@
 				{
 					"name": "Mordisco",
 					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 pies, una criatura. {@h}4 ({@damage 1d4 + 2}) perforante damage."
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., una criatura. {@h}4 ({@damage 1d4 + 2}) perforante damage."
 					]
 				},
 				{
 					"name": "Lanza",
 					"entries": [					
-						"{@atk mw,rw} {@hit 4} to hit, reach 5 pies or range 20/60 pies, un objetivo. {@h}5 ({@damage 1d6 + 2}) perforante damage, or 6 ({@damage 1d8 + 2}) perforante damage si se usa a dos manos para hacer un ataque cuerpo a cuerpo."
+						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., un objetivo. {@h}5 ({@damage 1d6 + 2}) perforante damage, or 6 ({@damage 1d8 + 2}) perforante damage si se usa a dos manos para hacer un ataque cuerpo a cuerpo."
 					]
 				},
 				{
 					"name": "Arco largo",
 					"entries": [
-						"{@atk rw} {@hit 3} to hit, range 150/600 pies, un objetivo. {@h}5 ({@damage 1d8 + 1}) perforante damage."
+						"{@atk rw} {@hit 3} to hit, range 150/600 ft., un objetivo. {@h}5 ({@damage 1d8 + 1}) perforante damage."
 					]
 				}
 			],
@@ -38987,7 +38987,7 @@
             },
             "senses": ["darkvision 60 ft."],
             "passive": 9,
-            "languages": ["Común", "Goblin"],
+            "languages": ["común", "goblin"],
             "cr": "1/4",
             "trait": [{
                     "name": "Huida veloz",
@@ -38996,10 +38996,10 @@
             ],
             "action": [{
                     "name": "Cimitarra",
-                    "entries": ["{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage."]
+                    "entries": ["{@atk mw} {@hit 4} to hit, reach 5 ft., un objetivo. {@h}5 ({@damage 1d6 + 2}) cortante damage."]
                 }, {
                     "name": "Arco corto",
-                    "entries": ["{@atk rw} {@hit 4} to hit, range 80/320 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."]
+                    "entries": ["{@atk rw} {@hit 4} to hit, range 80/320 ft., un objetivo. {@h}5 ({@damage 1d6 + 2}) perforante damage."]
                 }
             ],
             "environment": ["underdark", "praderas", "bosques", "colinas"],
@@ -39095,7 +39095,7 @@
             "senses": ["darkvision 60 ft."],
             "passive": 12,
             "resist": [{
-                    "resist": ["bludgeoning", "piercing", "slashing"],
+                    "resist": ["contundente", "perforante", "cortante"],
                     "note": "de ataques no mágicos",
                     "cond": true
                 }
@@ -39111,10 +39111,10 @@
                     "entries": ["El grick realiza un ataque con sus tentáculos. Si este impacta, puede llevar a cabo un ataque con su pico contra el mismo objetivo."]
                 }, {
                     "name": "Tentáculos",
-                    "entries": ["{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) slashing damage."]
+                    "entries": ["{@atk mw} {@hit 4} to hit, reach 5 ft., un objetivo. {@h}9 ({@damage 2d6 + 2}) cortante damage."]
                 }, {
                     "name": "Pico",
-                    "entries": ["{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."]
+                    "entries": ["{@atk mw} {@hit 4} to hit, reach 5 ft., un objetivo. {@h}5 ({@damage 1d6 + 2}) perforante damage."]
                 }
             ],
             "environment": ["underdark", "bosques"],
@@ -39124,7 +39124,10 @@
                 "path": "bestiary/grick.mp3"
             },
             "senseTags": ["D"],
-            "actionTags": ["Ataque múltiple", "Tentáculos"],
+            "actionTags": [
+				"Multiattack",
+				"Tentacles"
+			],
             "damageTags": ["P", "S"],
             "miscTags": ["MW"],
             "fluff": {
@@ -39218,13 +39221,13 @@
 				{
 					"name": "Pico",
 					"entries": [
-						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage."
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., un objetivo. {@h}8 ({@damage 1d8 + 4}) perforante damage."
 					]
 				},
 				{
 					"name": "Garras",
 					"entries": [
-						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., un objetivo. {@h}11 ({@damage 2d6 + 4}) cortante damage."
 					]
 				}
 			],
@@ -39241,13 +39244,13 @@
 				"path": "bestiary/griffon.mp3"
 			},
 			"traitTags": [
-				"Sentidos agudos"
+				"Keen Senses"
 			],
 			"senseTags": [
 				"D"
 			],
 			"actionTags": [
-				"Ataque múltiple"
+				"Multiattack"
 			],
 			"damageTags": [
 				"P",
@@ -39322,7 +39325,7 @@
             "alignment": ["L", "E"],
             "ac": [{
                     "ac": 18,
-                    "from": ["{@item Cota de malla|PHB-ES}", "{@item escudo|PHB-ES}"]
+                    "from": ["{@item cota de malla|PHB-ES}", "{@item escudo|PHB-ES}"]
                 }
             ],
             "hp": {
@@ -39340,7 +39343,7 @@
             "cha": 9,
             "senses": ["darkvision 60 ft."],
             "passive": 10,
-            "languages": ["Común", "Goblin"],
+            "languages": ["común", "goblin"],
             "cr": "1/2",
             "trait": [{
                     "name": "Ventaja marcial",
@@ -39349,10 +39352,10 @@
             ],
             "action": [{
                     "name": "Espada larga",
-                    "entries": ["{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d8 + 1}) slashing damage, or 6 ({@damage 1d10 + 1}) slashing damage if used with two hands."]
+                    "entries": ["{@atk mw} {@hit 3} to hit, reach 5 ft., un objetivo. {@h}5 ({@damage 1d8 + 1}) cortante damage, or 6 ({@damage 1d10 + 1}) cortante damage si se usa a dos manos."]
                 }, {
                     "name": "Arco largo",
-                    "entries": ["{@atk rw} {@hit 3} to hit, range 150/600 ft., one target. {@h}5 ({@damage 1d8 + 1}) piercing damage."]
+                    "entries": ["{@atk rw} {@hit 3} to hit, range 150/600 ft., un objetivo. {@h}5 ({@damage 1d8 + 1}) perforante damage."]
                 }
             ],
             "environment": ["underdark", "praderas", "bosques", "colinas", "desiertos"],
