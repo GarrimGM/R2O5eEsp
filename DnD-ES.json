@@ -37189,7 +37189,7 @@
             "cr": "0",
             "action": [{
                     "name": "Garrote",
-                    "entries": ["{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) bludgeoning damage."]
+                    "entries": ["{@atk mw} {@hit 2} to hit, reach 5 pies, un objetivo. {@h}2 ({@damage 1d4}) contundente damage."]
                 }
             ],
             "environment": ["zonas polares", "desiertos", "costas", "praderas", "colinas", "ciudades", "bosques"],
@@ -37264,7 +37264,7 @@
             ],
             "action": [{
                     "name": "Cimitarra",
-                    "entries": ["{@atk mw} {@hit 3} to hit, reach 5 ft., one creature. {@h}4 ({@damage 1d6 + 1}) slashing damage."]
+                    "entries": ["{@atk mw} {@hit 3} to hit, reach 5 pies, una criatura. {@h}4 ({@damage 1d6 + 1}) cortante damage."]
                 }
             ],
             "tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Cultist.png",
@@ -37354,7 +37354,7 @@
 				{
 					"name": "Mordisco",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) piercing damage. Si el objetivo es una criatura, deberá superar una tirada de salvación de Fuerza {@dc 13} o será {@condition derribado|PHB-ES|derribada}."
+						"{@atk mw} {@hit 5} to hit, reach 5 pies, un objetivo. {@h}10 ({@damage 2d6 + 3}) perforante damage. Si el objetivo es una criatura, deberá superar una tirada de salvación de Fuerza {@dc 13} o será {@condition derribado|PHB-ES|derribada}."
 					]
 				}
 			],
@@ -37368,8 +37368,8 @@
 				"path": "bestiary/dire-wolf.mp3"
 			},
 			"traitTags": [
-				"Sentidos agudos",
-				"Atacar en Manada"
+				"Keen Senses",
+				"Pack Tactics"
 			],
 			"damageTags": [
 				"P"
@@ -37417,8 +37417,8 @@
             },
             "senses": ["darkvision 60 ft."],
             "passive": 11,
-            "conditionImmune": ["charmed"],
-            "languages": ["Común"],
+            "conditionImmune": ["hechizado|PHB-ES"],
+            "languages": ["común"],
             "cr": "3",
             "trait": [{
                     "name": "Cambiaformas",
@@ -37436,7 +37436,7 @@
                     "entries": ["El doppelganger realiza dos ataques cuerpo a cuerpo."]
                 }, {
                     "name": "Golpe",
-                    "entries": ["{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) bludgeoning damage."]
+                    "entries": ["{@atk mw} {@hit 6} to hit, reach 5  pies, un objetivo. {@h}7 ({@damage 1d6 + 4}) contundente damage."]
                 }, {
                     "name": "Leer pensamientos",
                     "entries": [
@@ -37450,9 +37450,12 @@
                 "type": "internal",
                 "path": "bestiary/doppelganger.mp3"
             },
-            "traitTags": ["Emboscador", "Cambiaformas"],
+            "traitTags": [
+				"Ambusher",
+				"Shapechanger"
+			],
             "senseTags": ["D"],
-            "actionTags": ["Ataque múltiple"],
+            "actionTags": ["Multiattack"],
             "languageTags": ["C"],
             "damageTags": ["B"],
             "miscTags": ["MW"],
@@ -37501,7 +37504,8 @@
 			"type": {
 				"type": "fiend",
 				"tags": [
-					"infernal","demonio"
+					"infernal",
+					"demonio"
 				]
 			},
 			"alignment": [
@@ -37534,18 +37538,18 @@
 			],
 			"passive": 9,
 			"resist": [
-				"cold",
-				"fire",
-				"lightning"
+				"frío",
+				"fuego",
+				"relámpago"
 			],
 			"immune": [
-				"poison"
+				"veneno"
 			],
 			"conditionImmune": [
-				"poisoned"
+				"envenenado|PHB-ES"
 			],
 			"languages": [
-				"Abisal",
+				"abisal",
 				"telepatía 60 pies (solo funciona con criaturas que entiendan abisal) "
 			],
 			"cr": "1/4",
@@ -37559,13 +37563,13 @@
 				{
 					"name": "Mordisco",
 					"entries": [
-						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) piercing damage."
+						"{@atk mw} {@hit 2} to hit, reach 5 pies, un objetivo. {@h}3 ({@damage 1d6}) perforante damage."
 					]
 				},
 				{
 					"name": "Garras",
 					"entries": [
-						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}5 ({@damage 2d4}) slashing damage."
+						"{@atk mw} {@hit 2} to hit, reach 5 pies, un objetivo. {@h}5 ({@damage 2d4}) cortante damage."
 					]
 				},
 				{
@@ -37584,7 +37588,7 @@
 				"D"
 			],
 			"actionTags": [
-				"Ataque múltiple"
+				"Multiattack"
 			],
 			"languageTags": [
 				"AB",
@@ -37934,26 +37938,26 @@
 			"resist": [
 				{
 					"resist": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
+						"contundente",
+						"perforante",
+						"cortante"
 					],
 					"note": "de ataques no mágicos",
 					"cond": true
 				}
 			],
 			"immune": [
-				"poison"
+				"veneno"
 			],
 			"vulnerable": [
-				"thunder"
+				"trueno"
 			],
 			"conditionImmune": [
-				"exhaustion",
-				"paralyzed",
-				"petrified",
-				"poisoned",
-				"unconscious"
+				"cansancio|PHB-ES",
+				"paralizado|PHB-ES",
+				"petrificado|PHB-ES",
+				"envenenado|PHB-ES",
+				"inconsciente|PHB-ES"
 			],
 			"languages": [
 				"terrano"
@@ -37983,7 +37987,7 @@
 				{
 					"name": "Golpe",
 					"entries": [
-						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}14 ({@damage 2d8 + 5}) bludgeoning damage."
+						"{@atk mw} {@hit 8} to hit, reach 10 pies, un objetivo. {@h}14 ({@damage 2d8 + 5}) contundente damage."
 					]
 				}
 			],
@@ -38125,27 +38129,27 @@
 			"resist": [
 				{
 					"resist": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
+						"contundente",
+						"perforante",
+						"cortante"
 					],
 					"note": "de ataques no mágicos",
 					"cond": true
 				}
 			],
 			"immune": [
-				"fire",
-				"poison"
+				"fuego",
+				"veneno"
 			],
 			"conditionImmune": [
-				"exhaustion",
-				"grappled",
-				"paralyzed",
-				"petrified",
-				"poisoned",
-				"prone",
-				"restrained",
-				"unconscious"
+				"cansando|PHB-ES",
+				"agarrado|PHB-ES",
+				"paralizado|PHB-ES",
+				"petrificado|PHB-ES",
+				"envenenado|PHB-ES",
+				"derribado|PHB-ES",
+				"apresado|PHB-ES",
+				"inconsciente|PHB-ES"
 			],
 			"languages": [
 				"ígneo"
@@ -38311,7 +38315,7 @@
                 "walk": 0,
                 "fly": {
                     "number": 40,
-                    "condition": "(hover)"
+                    "condition": "(levitar)"
                 },
                 "canHover": true
             },
@@ -38327,10 +38331,16 @@
             },
             "senses": ["darkvision 60 ft."],
             "passive": 12,
-            "resist": ["lightning", "necrotic", "piercing"],
-            "immune": ["cold", "fire", "poison"],
-            "conditionImmune": ["charmed", "frightened", "paralyzed", "poisoned", "prone"],
-            "languages": ["Común"],
+            "resist": ["relámpago", "necrótico", "perforante"],
+            "immune": ["frío", "fuego", "veneno"],
+            "conditionImmune": [
+				"hechizado|PHB-ES", 
+				"asustado|PHB-ES", 
+				"paralizado|PHB-ES", 
+				"envenenado|PHB-ES", 
+				"derribado|PHB-ES"
+			],
+            "languages": ["común"],
             "cr": "4",
             "spellcasting": [{
                     "name": "Lanzamiento de Conjuros",
@@ -38371,7 +38381,7 @@
                     "entries": ["La calavera llameante utiliza rayo de fuego dos veces. "]
                 }, {
                     "name": "Rayo de fuego",
-                    "entries": ["{@atk rs} {@hit 5} to hit, range 30 ft., one target. {@h}10 ({@damage 3d6}) fire damage."]
+                    "entries": ["{@atk rs} {@hit 5} to hit, range 30 pies, un objetivo. {@h}10 ({@damage 3d6}) fuego damage."]
                 }
             ],
             "environment": ["underdark"],
@@ -38380,9 +38390,13 @@
                 "type": "internal",
                 "path": "bestiary/flameskull.mp3"
             },
-            "traitTags": ["Iluminar", "Resistencia Mágica", "Rejuvenecimiento"],
+            "traitTags": [
+				"Illumination",
+				"Magic Resistance",
+				"Rejuvenation"
+			],
             "senseTags": ["D"],
-            "actionTags": ["Ataque múltiple"],
+            "actionTags": ["Multiattack"],
             "languageTags": ["C"],
             "damageTags": ["F"],
             "spellcastingTags": ["CW"],
@@ -38473,7 +38487,7 @@
 			],
 			"passive": 12,
 			"vulnerable": [
-				"psychic"
+				"psíquico"
 			],
 			"languages": [
 				"entiende infracomún pero no puede hablar",
@@ -38504,7 +38518,7 @@
 				{
 					"name": "Zarcillos",
 					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}4 ({@damage 1d4 + 2}) piercing damage plus 2 ({@damage 1d4}) acid damage. Al final de cada uno de sus turnos, el objetivo deberá hacer una tirada de salvación de Constitución {@dc 10}, recibiendo 2({@damage 1d4}) de daño ácido si la falla, o librándose de este daño de ácido periódico si la supera. Un conjuro de {@spell restablecimiento menor|PHB-ES} sobre el objetivo también acaba con el daño de ácido periódico."
+						"{@atk mw} {@hit 4} to hit, reach 5 pies, una criatura. {@h}4 ({@damage 1d4 + 2}) perforante damage plus 2 ({@damage 1d4}) ácido damage. Al final de cada uno de sus turnos, el objetivo deberá hacer una tirada de salvación de Constitución {@dc 10}, recibiendo 2({@damage 1d4}) de daño ácido si la falla, o librándose de este daño de ácido periódico si la supera. Un conjuro de {@spell restablecimiento menor|PHB-ES} sobre el objetivo también acaba con el daño de ácido periódico."
 					]
 				},
 				{
@@ -38622,16 +38636,20 @@
             "cha": 6,
             "senses": ["darkvision 60 ft."],
             "passive": 10,
-            "immune": ["poison"],
-            "conditionImmune": ["charmed", "exhaustion", "poisoned"],
-            "languages": ["Común"],
+            "immune": ["veneno"],
+            "conditionImmune": [
+				"hechizado|PHB-ES", 
+				"cansancio|PHB-ES", 
+				"envenenado|PHB-ES"
+			],
+            "languages": ["común"],
             "cr": "1",
             "action": [{
                     "name": "Mordisco",
-                    "entries": ["{@atk mw} {@hit 2} to hit, reach 5 ft., one creature. {@h}9 ({@damage 2d6 + 2}) piercing damage."]
+                    "entries": ["{@atk mw} {@hit 2} to hit, reach 5 pies, una criatura. {@h}9 ({@damage 2d6 + 2}) perforante damage."]
                 }, {
                     "name": "Garras",
-                    "entries": ["{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d4 + 2}) slashing damage. Si el objetivo es una criatura y no es elfo ni muerto viviente, deberá superar una tirada de salvación de Constitución {@dc 10} o quedará {@condition paralizado|PHB-ES} durante 1 minuto. La criatura puede repetir la tirada de salvación al final de cada uno de sus turnos, librándose del efecto si tiene éxito."]
+                    "entries": ["{@atk mw} {@hit 4} to hit, reach 5 pies, un objetivo. {@h}7 ({@damage 2d4 + 2}) cortante damage. Si el objetivo es una criatura y no es elfo ni muerto viviente, deberá superar una tirada de salvación de Constitución {@dc 10} o quedará {@condition paralizado|PHB-ES} durante 1 minuto. La criatura puede repetir la tirada de salvación al final de cada uno de sus turnos, librándose del efecto si tiene éxito."]
                 }
             ],
             "environment": ["underdark", "pantanos", "ciudades"],
@@ -38644,7 +38662,7 @@
             "languageTags": ["C"],
             "damageTags": ["P", "S"],
             "miscTags": ["MW"],
-            "conditionInflict": ["paralizado"],
+            "conditionInflict": ["paralyzed"],
             "fluff": {
 				"entries": [
 					{
@@ -38733,10 +38751,10 @@
             ],
             "action": [{
                     "name": "Mordisco",
-                    "entries": ["{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}7 ({@damage 1d8 + 3}) piercing damage, y el objetivo debe hacer una tirada de salvación de Constitución {@dc 11}, sufriendo 9 ({@damage 2d8}) poison damage si la falla, o la mitad del daño si la supera. Si el veneno reduce al objetivo a O puntos de golpe, este estará estable pero {@condition envenenado|PHB-ES} durante 1 hora, incluso tras recuperar puntos de golpe. Además, mientras esté {@condition envenenado|PHB-ES} (por este veneno) también estará {@condition paralizado|PHB-ES}."]
+                    "entries": ["{@atk mw} {@hit 5} to hit, reach 5 pies, un objetivo. {@h}7 ({@damage 1d8 + 3}) perforante damage, y el objetivo debe hacer una tirada de salvación de Constitución {@dc 11}, sufriendo 9 ({@damage 2d8}) poison damage si la falla, o la mitad del daño si la supera. Si el veneno reduce al objetivo a O puntos de golpe, este estará estable pero {@condition envenenado|PHB-ES} durante 1 hora, incluso tras recuperar puntos de golpe. Además, mientras esté {@condition envenenado|PHB-ES} (por este veneno) también estará {@condition paralizado|PHB-ES}."]
                 }, {
                     "name": "Telaraña {@recharge 5}",
-                    "entries": ["{@atk rw} {@hit 5} to hit, range 30/60 ft., one creature. {@h}El objetivo está {@condition apresado|PHB-ES} por la telaraña. Dicha criatura puede gastar su acción para hacer una prueba de Fuerza {@dc 12}, rompiendo la telaraña si tiene éxito. También se puede atacar a la telaraña para intentar destruirla (CA 10; 5 pg; vulnerable a daño de fuego; inmune a daños contundente, psíquico y de veneno)."]
+                    "entries": ["{@atk rw} {@hit 5} to hit, range 30/60 pies, una criatura. {@h}El objetivo está {@condition apresado|PHB-ES} por la telaraña. Dicha criatura puede gastar su acción para hacer una prueba de Fuerza {@dc 12}, rompiendo la telaraña si tiene éxito. También se puede atacar a la telaraña para intentar destruirla (CA 10; 5 pg; vulnerable a daño de fuego; inmune a daños contundente, psíquico y de veneno)."]
                 }
             ],
             "environment": ["underdark", "bosques", "pantanos", "ciudades", "desiertos"],
@@ -38745,11 +38763,19 @@
                 "type": "internal",
                 "path": "bestiary/giant-spider.mp3"
             },
-            "traitTags": ["Trepar cual Arácnido", "Sentir a través de Telarañas", "Caminar por Telarañas"],
+            "traitTags": [
+				"Spider Climb",
+				"Web Sense",
+				"Web Walker"
+			],
             "senseTags": ["B", "D"],
             "damageTags": ["I", "P"],
             "miscTags": ["MW", "RW"],
-            "conditionInflict": ["paralizado", "envenenado", "apresado"],
+            "conditionInflict": [
+				"paralyzed",
+				"poisoned",
+				"restrained"
+			],
             "fluff": {
 				"entries": [
 					{
@@ -38830,19 +38856,19 @@
 				{
 					"name": "Mordisco",
 					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+						"{@atk mw} {@hit 4} to hit, reach 5 pies, una criatura. {@h}4 ({@damage 1d4 + 2}) perforante damage."
 					]
 				},
 				{
 					"name": "Lanza",
 					"entries": [
-						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage, or ({@damage 1d8 + 2}) piercing damage si se usa a dos manos para hacer un ataque cuerpo a cuerpo."
+						"{@atk mw,rw} {@hit 4} to hit, reach 5 pies or range 20/60 pies, un objetivo. {@h}5 ({@damage 1d6 + 2}) perforante damage, or ({@damage 1d8 + 2}) perforante damage si se usa a dos manos para hacer un ataque cuerpo a cuerpo."
 					]
 				},
 				{
 					"name": "Arco largo",
 					"entries": [
-						"{@atk rw} {@hit 3} to hit, range 150/600 ft., one target. {@h}5 ({@damage 1d8 + 1}) piercing damage."
+						"{@atk rw} {@hit 3} to hit, range 150/600 pies, un objetivo. {@h}5 ({@damage 1d8 + 1}) perforante damage."
 					]
 				}
 			],
