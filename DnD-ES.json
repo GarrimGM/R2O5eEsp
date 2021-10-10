@@ -39464,8 +39464,11 @@
             "cha": 7,
             "senses": ["darkvision 60 ft."],
             "passive": 10,
-            "immune": ["poison"],
-            "conditionImmune": ["charmed", "poisoned"],
+            "immune": ["veneno"],
+            "conditionImmune": [
+				"hechizado|PHB-ES", 
+				"envenenado|PHB-ES"
+			],
             "languages": ["entiende los idiomas de su creador, pero no puede hablar"],
             "cr": "0",
             "trait": [{
@@ -39475,7 +39478,7 @@
             ],
             "action": [{
                     "name": "Mordisco",
-                    "entries": ["{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}1 piercing damage, y el objetivo deberá superar una tirada de salvación de Constitución {@dc 10} o estará {@condition envenenado|PHB-ES} durante 1 minuto. Si falla la tirada de salvación por 5 o más, estará {@condition envenenado|PHB-ES} durante 5 ({@dice 1d10}) minutos en lugar de solo 1 e {@condition inconsciente|PHB-ES} mientras esté {@condition envenenado|PHB-ES} de esta forma."]
+                    "entries": ["{@atk mw} {@hit 4} to hit, reach 5 ft., una criatura. {@h}1 perforante damage, y el objetivo deberá superar una tirada de salvación de Constitución {@dc 10} o estará {@condition envenenado|PHB-ES} durante 1 minuto. Si falla la tirada de salvación por 5 o más, estará {@condition envenenado|PHB-ES} durante 5 ({@dice 1d10}) minutos en lugar de solo 1 e {@condition inconsciente|PHB-ES} mientras esté {@condition envenenado|PHB-ES} de esta forma."]
                 }
             ],
             "tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Homunculus.png",
@@ -39557,17 +39560,17 @@
 			],
 			"passive": 9,
 			"resist": [
-				"cold",
-				"fire",
-				"lightning"
+				"frío",
+				"fuego",
+				"relámpago"
 			],
 			"immune": [
-				"poison"
+				"veneno"
 			],
 			"conditionImmune": [
-				"charmed",
-				"frightened",
-				"poisoned"
+				"hechizado|PHB-ES",
+				"asustado|PHB-ES",
+				"envenenado|PHB-ES"
 			],
 			"languages": [
 				"entiende abisal, pero no puede hablar"
@@ -39577,7 +39580,7 @@
 				{
 					"name": "Garras",
 					"entries": [
-						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}5 ({@damage 2d4}) slashing damage."
+						"{@atk mw} {@hit 2} to hit, reach 5 ft., un objetivo. {@h}5 ({@damage 2d4}) cortante damage."
 					]
 				}
 			],
@@ -39930,7 +39933,7 @@
             },
             "senses": ["truesight 120 ft."],
             "passive": 12,
-            "languages": ["Infracomún"],
+            "languages": ["infracomún"],
             "cr": "2",
             "trait": [{
                     "name": "Vista Aguda",
@@ -39942,7 +39945,7 @@
                     "entries": ["El nótico realiza dos ataques con sus garras."]
                 }, {
                     "name": "Garra",
-                    "entries": ["{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."]
+                    "entries": ["{@atk mw} {@hit 4} to hit, reach 5 ft., un objetivo. {@h}6 ({@damage 1d6 + 3}) cortante damage."]
                 }, {
                     "name": "Mirada putrescente",
                     "entries": ["El nótico elige a una criatura que se encuentre a 30 pies o menos y pueda ver. El objetivo deberá tener éxito en una tirada de salvación de Constitución {@dc 12}, o sufrirá 10 ({@damage 3d6}) de daño necrótico."]
@@ -39957,9 +39960,9 @@
                 "type": "internal",
                 "path": "bestiary/nothic.mp3"
             },
-            "traitTags": ["Sentidos agudos"],
+            "traitTags": ["Keen Senses"],
             "senseTags": ["U"],
-            "actionTags": ["Ataque múltiple"],
+            "actionTags": ["Multiattack"],
             "languageTags": ["U"],
             "damageTags": ["N", "S"],
             "miscTags": ["MW"],
@@ -40029,9 +40032,16 @@
             "cha": 1,
             "senses": ["blindsight 60 ft. (blind beyond this radius)"],
             "passive": 8,
-            "resist": ["acid"],
-            "immune": ["lightning", "slashing"],
-            "conditionImmune": ["blinded", "charmed", "deafened", "exhaustion", "frightened", "prone"],
+            "resist": ["ácido"],
+            "immune": ["relámpago", "cortante"],
+            "conditionImmune": [
+				"cegado|PHB-ES", 
+				"hechizado|PHB-ES", 
+				"ensordecido|PHB-ES", 
+				"cansancio|PHB-ES", 
+				"asustado|PHB-ES", 
+				"derribado|PHB-ES"
+			],
             "cr": "2",
             "trait": [{
                     "name": "Amorfa",
@@ -40043,7 +40053,7 @@
             ],
             "action": [{
                     "name": "Pseudópodo",
-                    "entries": ["{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) bludgeoning damage plus 3 ({@damage 1d6}) acid damage."]
+                    "entries": ["{@atk mw} {@hit 4} to hit, reach 5 ft., un objetivo. {@h}9 ({@damage 2d6 + 2}) contundente damage plus 3 ({@damage 1d6}) ácido damage."]
                 }
             ],
             "reaction": [{
@@ -40057,7 +40067,10 @@
                 "type": "internal",
                 "path": "bestiary/ochre-jelly.mp3"
             },
-            "traitTags": ["Amorfa", "Trepar cual Arácnido"],
+            "traitTags": [
+				"Amorphous",
+				"Spider Climb"
+			],
             "senseTags": ["B"],
             "damageTags": ["A", "B"],
             "miscTags": ["MW"],
@@ -40161,14 +40174,14 @@
             "cha": 7,
             "senses": ["darkvision 60 ft."],
             "passive": 8,
-            "languages": ["Común", "Gigante"],
+            "languages": ["común", "gigante"],
             "cr": "2",
             "action": [{
                     "name": "Garrote grande",
-                    "entries": ["{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage."]
+                    "entries": ["{@atk mw} {@hit 6} to hit, reach 5 ft., un objetivo. {@h}13 ({@damage 2d8 + 4}) contundente damage."]
                 }, {
                     "name": "Jabalina",
-                    "entries": ["{@atk mw,rw} {@hit 6} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage."]
+                    "entries": ["{@atk mw,rw} {@hit 6} to hit, reach 5 ft. or range 30/120 ft., un objetivo. {@h}11 ({@damage 2d6 + 4}) perforante damage."]
                 }
             ],
             "environment": ["praderas", "bosques", "pantanos", "colinas", "desiertos", "costas", "zonas polares", "underdark", "montañas"],
@@ -40270,7 +40283,7 @@
             },
             "senses": ["darkvision 60 ft."],
             "passive": 10,
-            "languages": ["Común", "Orco"],
+            "languages": ["común", "orco"],
             "cr": "1/2",
             "trait": [{
                     "name": "Agresivo",
@@ -40279,10 +40292,10 @@
             ],
             "action": [{
                     "name": "Hacha a dos manos",
-                    "entries": ["{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d12 + 3}) slashing damage."]
+                    "entries": ["{@atk mw} {@hit 5} to hit, reach 5 ft., un objetivo. {@h}9 ({@damage 1d12 + 3}) cortante damage."]
                 }, {
                     "name": "Jabalina",
-                    "entries": ["{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."]
+                    "entries": ["{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 30/120 ft., un objetivo. {@h}6 ({@damage 1d6 + 3}) perforante damage."]
                 }
             ],
             "environment": ["underdark", "montañas", "praderas", "bosques", "pantanos", "colinas", "zonas polares"],
@@ -40296,7 +40309,7 @@
                     "source": "PotA"
                 }
             ],
-            "traitTags": ["Agresivo"],
+            "traitTags": ["Aggressive"],
             "senseTags": ["D"],
             "languageTags": ["C", "O"],
             "damageTags": ["P", "S"],
@@ -40401,10 +40414,10 @@
                     "entries": ["El oso lechuza realiza dos ataques: uno con su pico y uno con sus garras."]
                 }, {
                     "name": "Pico",
-                    "entries": ["{@atk mw} {@hit 7} to hit, reach 5 ft., one creature. {@h}10 ({@damage 1d10 + 5}) piercing damage."]
+                    "entries": ["{@atk mw} {@hit 7} to hit, reach 5 ft., una criatura. {@h}10 ({@damage 1d10 + 5}) perforante damage."]
                 }, {
                     "name": "Garras",
-                    "entries": ["{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) slashing damage."]
+                    "entries": ["{@atk mw} {@hit 7} to hit, reach 5 ft., un objetivo. {@h}14 ({@damage 2d8 + 5}) cortante damage."]
                 }
             ],
             "environment": ["bosques"],
@@ -40413,9 +40426,9 @@
                 "type": "internal",
                 "path": "bestiary/owlbear.mp3"
             },
-            "traitTags": ["Sentidos agudos"],
+            "traitTags": ["Keen Senses"],
             "senseTags": ["D"],
-            "actionTags": ["Ataque múltiple"],
+            "actionTags": ["Multiattack"],
             "damageTags": ["P", "S"],
             "miscTags": ["MW"],
             "fluff": {
@@ -40474,7 +40487,10 @@
 			"page": 250,
 			"srd": true,
 			"size": "L",
-			"type": "celestial",
+			"type": {
+                "type": "celestial",
+                "tags": ["celestial"]
+            },
 			"alignment": [
 				"C",
 				"G"
@@ -40506,17 +40522,17 @@
 			},
 			"passive": 16,
 			"languages": [
-				"entiende Celestial",
-				"Común",
-				"Elfo",
-				"y Silvano, pero no puede hablar"
+				"entiende celestial",
+				"común",
+				"elfo",
+				"y silvano, pero no puede hablar"
 			],
 			"cr": "2",
 			"action": [
 				{
 					"name": "Cascos",
 					"entries": [
-						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage."
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., un objetivo. {@h}11 ({@damage 2d6 + 4}) contundente damage."
 					]
 				}
 			],
@@ -40631,16 +40647,16 @@
 			"resist": [
 				{
 					"resist": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
+						"contundente",
+						"perforante",
+						"cortante"
 					],
 					"note": "de ataques no mágicos",
 					"cond": true
 				}
 			],
 			"languages": [
-				" entiende Común y Elfo, pero no puede hablar"
+				"entiende común y elfo, pero no puede hablar"
 			],
 			"cr": "2",
 			"trait": [
@@ -40673,13 +40689,13 @@
 				{
 					"name": "Cornada",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., un objetivo. {@h}7 ({@damage 1d8 + 3}) perforante damage."
 					]
 				},
 				{
 					"name": "Garras",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 2d4 + 3}) piercing damage."
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., un objetivo. {@h}8 ({@damage 2d4 + 3}) perforante damage."
 					]
 				}
 			],
@@ -40693,11 +40709,11 @@
 				"path": "bestiary/peryton.mp3"
 			},
 			"traitTags": [
-				"Pasar Volando",
-				"Sentidos agudos"
+				"Flyby",
+				"Keen Senses"
 			],
 			"actionTags": [
-				"Ataque múltiple"
+				"Multiattack"
 			],
 			"languageTags": [
 				"C",
@@ -40800,7 +40816,7 @@
 				{
 					"name": "Cornada",
 					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) bludgeoning damage."
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., un objetivo. {@h}14 ({@damage 2d8 + 5}) contundente damage."
 					]
 				}
 			],
@@ -40813,7 +40829,7 @@
 				"path": "bestiary/rhinoceros.mp3"
 			},
 			"traitTags": [
-				"Carga"
+				"Charge"
 			],
 			"damageTags": [
 				"B"
@@ -40878,13 +40894,13 @@
 				{
 					"name": "Mordisco",
 					"entries": [
-						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d10 + 5}) piercing damage."
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., un objetivo. {@h}10 ({@damage 1d10 + 5}) perforante damage."
 					]
 				},
 				{
 					"name": "Garra",
 					"entries": [
-						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage."
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., un objetivo. {@h}12 ({@damage 2d6 + 5}) cortante damage."
 					]
 				}
 			],
@@ -40898,8 +40914,8 @@
 				"path": "bestiary/saber-toothed-tiger.mp3"
 			},
 			"traitTags": [
-				"Sentidos agudos",
-				"Abalanzarse"
+				"Keen Senses",
+				"Pounce"
 			],
 			"damageTags": [
 				"P",
@@ -40956,39 +40972,39 @@
 			],
 			"passive": 11,
 			"resist": [
-				"acid",
-				"fire",
-				"necrotic",
-				"thunder",
+				"ácido",
+				"fuego",
+				"necrótico",
+				"trueno",
 				{
 					"resist": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
+						"contundente",
+						"perforante",
+						"cortante"
 					],
 					"note": "de ataques no mágicos",
 					"cond": true
 				}
 			],
 			"immune": [
-				"cold",
-				"lightning",
-				"poison"
+				"frío",
+				"relámpago",
+				"veneno"
 			],
 			"vulnerable": [
-				"radiant"
+				"radiante"
 			],
 			"conditionImmune": [
-				"exhaustion",
-				"grappled",
-				"paralyzed",
-				"petrified",
-				"poisoned",
-				"prone",
-				"restrained"
+				"cansancio|PHB-ES",
+				"agarrado|PHB-ES",
+				"paralizado|PHB-ES",
+				"petrificado|PHB-ES",
+				"envenenado|PHB-ES",
+				"derribado|PHB-ES",
+				"apresado|PHB-ES"
 			],
 			"languages": [
-				"Abisal",
+				"abisal",
 				"telepatía 120 pies"
 			],
 			"cr": "4",
@@ -41016,7 +41032,7 @@
 				{
 					"name": "Garras",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}10 ({@damage 2d6 + 3}) psychic damage or, if the demon had advantage on the attack roll, 17 ({@damage 4d6 + 3}) psychic damage."
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., un objetivo. {@h}10 ({@damage 2d6 + 3}) psíquico damage or, si el demonio tiene ventaja en la tirada de ataque, 17 ({@damage 4d6 + 3}) de daño psíquico."
 					]
 				}
 			],
@@ -41026,8 +41042,8 @@
 				"path": "bestiary/shadow-demon.mp3"
 			},
 			"traitTags": [
-				"Movimiento Incorpóreo",
-				"Sensibilidad a la Luz"
+				"Incorporeal Movement",
+				"Light Sensitivity"
 			],
 			"senseTags": [
 				"SD"
