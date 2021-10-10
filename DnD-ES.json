@@ -35443,7 +35443,7 @@
 			"speed": {
 				"fly": {
 					"number": 90,
-					"condition": "(hover)"
+					"condition": "(levitar)"
 				},
 				"canHover": true
 			},
@@ -35623,7 +35623,6 @@
             "page": 317,
             "srd": true,
             "size": "H",
-            "type": "plant",
 			"type": {
                 "type": "plant",
                 "tags": ["planta"]
@@ -35648,8 +35647,8 @@
             "wis": 10,
             "cha": 7,
             "passive": 10,
-            "resist": ["bludgeoning", "piercing"],
-            "vulnerable": ["fire"],
+            "resist": ["contundente", "perforante"],
+            "vulnerable": ["fuego"],
             "languages": ["un idioma conocido por su creador"],
             "cr": "2",
             "trait": [{
@@ -35659,7 +35658,7 @@
             ],
             "action": [{
                     "name": "Golpe",
-                    "entries": ["{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}14 ({@damage 3d6 + 4}) bludgeoning damage."]
+                    "entries": ["{@atk mw} {@hit 6} to hit, reach 10 pies, un objetivo. {@h}14 ({@damage 3d6 + 4}) contundente damage."]
                 }
             ],
             "environment": ["bosque"],
@@ -35668,7 +35667,7 @@
                 "type": "internal",
                 "path": "bestiary/awakened-tree.mp3"
             },
-            "traitTags": ["Apariencia Falsa"],
+            "traitTags": ["False Appearance"],
             "damageTags": ["B"],
             "miscTags": ["MW", "RCH"],
             "fluff": {
@@ -35736,23 +35735,23 @@
 			],
 			"passive": 18,
 			"resist": [
-				"cold",
+				"frío",
 				{
 					"resist": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
+						"contundente",
+						"perforante",
+						"cortante"
 					],
 					"note": "de ataques ni mágicos ni hechos con armas de plata",
 					"cond": true
 				}
 			],
 			"immune": [
-				"fire",
-				"poison"
+				"fuego",
+				"veneno"
 			],
 			"conditionImmune": [
-				"poisoned"
+				"envenenado|PHB-ES"
 			],
 			"languages": [
 				"infernal",
@@ -35789,19 +35788,19 @@
 				{
 					"name": "Garra",
 					"entries": [
-						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+						"{@atk mw} {@hit 6} to hit, reach 5 pies, un objetivo. {@h}6 ({@damage 1d6 + 3}) perforante damage."
 					]
 				},
 				{
 					"name": "Cola",
 					"entries": [
-						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) piercing damage."
+						"{@atk mw} {@hit 6} to hit, reach 5 pies, un objetivo. {@h}10 ({@damage 2d6 + 3}) perforante damage."
 					]
 				},
 				{
 					"name": "Arrojar llama",
 					"entries": [
-						"{@atk rs} {@hit 5} to hit, range 150 ft., one target. {@h}10 ({@damage 3d6}) fire damage. Si el objetivo es un objeto inflamable que no lleve o vista nadie, arderá. "
+						"{@atk rs} {@hit 5} to hit, range 150 pies, un objetivo. {@h}10 ({@damage 3d6}) fuego damage. Si el objetivo es un objeto inflamable que no lleve o vista nadie, arderá. "
 					]
 				}
 			],
@@ -35811,14 +35810,14 @@
 				"path": "bestiary/barbed-devil.mp3"
 			},
 			"traitTags": [
-				"Vista del Diablo",
-				"Resistencia Mágica"
+				"Devil's Sight",
+				"Magic Resistance"
 			],
 			"senseTags": [
 				"SD"
 			],
 			"actionTags": [
-				"Ataque múltiple"
+				"Multiattack"
 			],
 			"languageTags": [
 				"I",
@@ -36198,19 +36197,19 @@
 			],
 			"passive": 15,
 			"resist": [
-				"cold",
-				"fire",
-				"lightning"
+				"frío",
+				"fuego",
+				"relámpago"
 			],
 			"immune": [
-				"poison"
+				"veneno"
 			],
 			"conditionImmune": [
-				"poisoned"
+				"envenenado|PHB-ES"
 			],
 			"languages": [
-				"Abyssal",
-				"telepathy 120 ft."
+				"abisal",
+				"telepatía 120 pies"
 			],
 			"cr": "5",
 			"spellcasting": [
@@ -36256,13 +36255,13 @@
 				{
 					"name": "Mordisco",
 					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage."
+						"{@atk mw} {@hit 7} to hit, reach 5 pies, un objetivo. {@h}11 ({@damage 2d6 + 4}) perforante damage."
 					]
 				},
 				{
 					"name": "Puñetazo",
 					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d10 + 4}) bludgeoning damage."
+						"{@atk mw} {@hit 7} to hit, reach 5 pies, un objetivo. {@h}9 ({@damage 1d10 + 4}) contundente damage."
 					]
 				}
 			],
@@ -36283,14 +36282,14 @@
 				"path": "bestiary/barlgura.mp3"
 			},
 			"traitTags": [
-				"Temerario"
+				"Reckless"
 			],
 			"senseTags": [
 				"B",
 				"SD"
 			],
 			"actionTags": [
-				"Ataque múltiple"
+				"Multiattack"
 			],
 			"languageTags": [
 				"AB",
@@ -36644,23 +36643,23 @@
 			],
 			"passive": 10,
 			"resist": [
-				"cold",
+				"frío",
 				{
 					"resist": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
+						"contundente",
+						"perforante",
+						"cortante"
 					],
 					"note": "de ataques ni mágicos ni hechos con armas de plata",
 					"cond": true
 				}
 			],
 			"immune": [
-				"fire",
-				"poison"
+				"fuego",
+				"veneno"
 			],
 			"conditionImmune": [
-				"poisoned"
+				"envenenado|PHB-ES"
 			],
 			"languages": [
 				"infernal",
@@ -36697,13 +36696,13 @@
 				{
 					"name": "Barba",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}6 ({@damage 1d8 + 2}) piercing damage, y el objetivo deberá superar una tirada de salvación de Constitución {@dc 12} o estará {@condition envenenado|PHB-ES} durante 1 minuto. Mientras esté {@condition envenenado|PHB-ES} de esta forma, el objetivo no podrá recuperar puntos de golpe. El objetivo puede repetir la tirada de salvación al final de cada uno de sus turnos, librándose del efecto si tiene éxito."
+						"{@atk mw} {@hit 5} to hit, reach 5 pies, un objetivo. {@h}6 ({@damage 1d8 + 2}) perforante damage, y el objetivo deberá superar una tirada de salvación de Constitución {@dc 12} o estará {@condition envenenado|PHB-ES} durante 1 minuto. Mientras esté {@condition envenenado|PHB-ES} de esta forma, el objetivo no podrá recuperar puntos de golpe. El objetivo puede repetir la tirada de salvación al final de cada uno de sus turnos, librándose del efecto si tiene éxito."
 					]
 				},
 				{
 					"name": "Guja",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}8 ({@damage 1d10 + 3}) slashing damage. Si el objetivo es una criatura que no sea ni un autómata ni un muerto viviente, deberá superar una tirada de salvación de Constitución {@dc 12} o, debido a una herida infernal, perderá 5 ({@dice 1d10}) puntos de golpe al principio de cada uno de sus turnos. Cada vez que el diablo impacte con este ataque al objetivo herido, el daño causado por la herida aumentará en 5 ({@dice 1d10}). Cualquier criatura puede utilizar una acción para intentar restañar la herida, teniendo éxito si supera una prueba de Sabiduría (Medicina) {@dc 12}. La herida también se cerrará si el objetivo recibe curación mágica."
+						"{@atk mw} {@hit 5} to hit, reach 10 pies, un objetivo. {@h}8 ({@damage 1d10 + 3}) cortante damage. Si el objetivo es una criatura que no sea ni un autómata ni un muerto viviente, deberá superar una tirada de salvación de Constitución {@dc 12} o, debido a una herida infernal, perderá 5 ({@dice 1d10}) puntos de golpe al principio de cada uno de sus turnos. Cada vez que el diablo impacte con este ataque al objetivo herido, el daño causado por la herida aumentará en 5 ({@dice 1d10}). Cualquier criatura puede utilizar una acción para intentar restañar la herida, teniendo éxito si supera una prueba de Sabiduría (Medicina) {@dc 12}. La herida también se cerrará si el objetivo recibe curación mágica."
 					]
 				}
 			],
@@ -36713,14 +36712,14 @@
 				"path": "bestiary/bearded-devil.mp3"
 			},
 			"traitTags": [
-				"Vista del Diablo",
-				"Resistencia Mágica"
+				"Devil's Sight",
+				"Magic Resistance"
 			],
 			"senseTags": [
 				"SD"
 			],
 			"actionTags": [
-				"Ataque múltiple"
+				"Multiattack"
 			],
 			"languageTags": [
 				"I",
@@ -37092,7 +37091,7 @@
             },
             "senses": ["darkvision 60 ft."],
             "passive": 10,
-            "languages": ["Común", "Goblin"],
+            "languages": ["común", "goblin"],
             "cr": "1",
             "trait": [{
                     "name": "Bruto",
@@ -37104,10 +37103,10 @@
             ],
             "action": [{
                     "name": "Lucero del alba",
-                    "entries": ["{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d8 + 2}) piercing damage."]
+                    "entries": ["{@atk mw} {@hit 4} to hit, reach 5 pies, un objetivo. {@h}11 ({@damage 2d8 + 2}) perforante damage."]
                 }, {
                     "name": "Jabalina",
-                    "entries": ["{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}9 ({@damage 2d6 + 2}) piercing damage in melee or 5 ({@damage 1d6 + 2}) piercing damage at range."]
+                    "entries": ["{@atk mw,rw} {@hit 4} to hit, reach 5 pies. or range 30/120 pies., un objetivo. {@h}9 ({@damage 2d6 + 2}) perforante damage en cuerpo a cuerpo, o 5 ({@damage 1d6 + 2}) de daño perforante a distancia."]
                 }
             ],
             "environment": ["underdark", "praderas", "bosques"],
@@ -37116,7 +37115,7 @@
                 "type": "internal",
                 "path": "bestiary/bugbear.mp3"
             },
-            "traitTags": ["Bruto"],
+            "traitTags": ["Brute"],
             "senseTags": ["D"],
             "languageTags": ["C", "GO"],
             "damageTags": ["P"],
