@@ -35120,7 +35120,7 @@
             ],
             "action": [{
                     "name": "Golpe",
-                    "entries": ["{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d12 + 4}) bludgeoning damage."]
+                    "entries": ["{@atk mw} {@hit 8} to hit, reach 5 ft., un objetivo. {@h}16 ({@damage 2d12 + 4}) contundente damage."]
                 }
             ],
             "tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/PHB/Animated%20Object%20(Huge).png",
@@ -35170,7 +35170,7 @@
             ],
             "action": [{
                     "name": "Golpe",
-                    "entries": ["{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d10 + 2}) bludgeoning damage."]
+                    "entries": ["{@atk mw} {@hit 6} to hit, reach 5 ft., un objetivo. {@h}12 ({@damage 2d10 + 2}) contundente damage."]
                 }
             ],
             "tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/PHB/Animated%20Object%20(Large).png",
@@ -35219,7 +35219,7 @@
             ],
             "action": [{
                     "name": "Golpe",
-                    "entries": ["{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d6 + 1}) bludgeoning damage."]
+                    "entries": ["{@atk mw} {@hit 5} to hit, reach 5 ft., un objetivo. {@h}7 ({@damage 2d6 + 1}) contundente damage."]
                 }
             ],
             "tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/PHB/Animated%20Object%20(Medium).png",
@@ -35268,7 +35268,7 @@
             ],
             "action": [{
                     "name": "Golpe",
-                    "entries": ["{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) bludgeoning damage."]
+                    "entries": ["{@atk mw} {@hit 6} to hit, reach 5 ft., un objetivo. {@h}6 ({@damage 1d8 + 2}) contundente damage."]
                 }
             ],
             "tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/PHB/Animated%20Object%20(Small).png",
@@ -35317,7 +35317,7 @@
             ],
             "action": [{
                     "name": "Golpe",
-                    "entries": ["{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d4 + 4}) bludgeoning damage."]
+                    "entries": ["{@atk mw} {@hit 8} to hit, reach 5 ft., un objetivo. {@h}6 ({@damage 1d4 + 4}) contundente damage."]
                 }
             ],
             "tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/PHB/Animated%20Object%20(Tiny).png",
@@ -41392,17 +41392,20 @@
             "cha": 5,
             "senses": ["darkvision 60 ft."],
             "passive": 9,
-            "immune": ["poison"],
-            "vulnerable": ["bludgeoning"],
-            "conditionImmune": ["exhaustion", "poisoned"],
+            "immune": ["veneno"],
+            "vulnerable": ["contundente"],
+            "conditionImmune": [
+				"cansancio|PHB-ES", 
+				"envenenado|PHB-ES"
+			],
             "languages": ["entiende los idiomas que conoció en vida, pero no puede hablar"],
             "cr": "1/4",
             "action": [{
                     "name": "Espada corta",
-                    "entries": ["{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."]
+                    "entries": ["{@atk mw} {@hit 4} to hit, reach 5 ft., un objetivo. {@h}5 ({@damage 1d6 + 2}) perforante damage."]
                 }, {
                     "name": "Arco corto",
-                    "entries": ["{@atk rw} {@hit 4} to hit, range 80/320 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."]
+                    "entries": ["{@atk rw} {@hit 4} to hit, range 80/320 ft., un objetivo. {@h}5 ({@damage 1d6 + 2}) perforante damage."]
                 }
             ],
             "environment": ["ciudades"],
@@ -41505,13 +41508,15 @@
             },
             "senses": ["darkvision 120 ft."],
             "passive": 16,
-            "conditionImmune": ["prone"],
-            "languages": ["Habla de las profundidades", "Infracomún", "telepatía 120 pies"],
+            "conditionImmune": ["derribado|PHB-ES"],
+            "languages": ["habla de las profundidades", "infracomún", "telepatía 120 pies"],
             "cr": "3",
-            "action": [{
+            "action": [
+				{
                     "name": "Mordisco",
-                    "entries": ["{@atk mw} {@hit 1} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d6 - 1}) piercing damage."]
-                }, {
+                    "entries": ["{@atk mw} {@hit 1} to hit, reach 5 ft., un objetivo. {@h}2 ({@damage 1d6 - 1}) perforante damage."]
+                }, 
+				{
                     "name": "Rayos oculares",
                     "entries": ["El espectador dispara hasta dos de los siguientes rayos oculares mágicos contra una o dos criaturas que pueda ver y se encuentren a 90 pies o menos de distancia. Solo puede usar cada rayo una vez por turno.", {
                             "type": "list",
@@ -41540,7 +41545,8 @@
                             ]
                         }
                     ]
-                }, {
+                }, 
+				{
                     "name": "Crear comida yagua",
                     "entries": ["El espectador crea mágicamente suficiente agua y comida para mantenerse a sí mismo durante 24 horas."]
                 }
@@ -41722,7 +41728,7 @@
             "action": [{
                     "name": "Chupar sangre",
                     "entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}5 ({@damage 1d4 + 3}) piercing damage, y la estirge se engancha al objetivo. Esta no atacará mientras esté enganchada. En lugar de eso, al inicio de cada uno de los turnos de la estirge, el objetivo perderá 5 ({@dice 1d4 + 3}) puntos de golpe debido a la pérdida de sangre.", 
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., un objetivo. {@h}5 ({@damage 1d4 + 3}) perforante damage, y la estirge se engancha al objetivo. Esta no atacará mientras esté enganchada. En lugar de eso, al inicio de cada uno de los turnos de la estirge, el objetivo perderá 5 ({@dice 1d4 + 3}) puntos de golpe debido a la pérdida de sangre.", 
 						"La estirge puede desengancharse utilizando 5 pies de su movimiento. Lo hará tras chupar 10 puntos de golpe en forma de sangre de su objetivo o cuando este muera. Cualquier criatura, incluyendo el objetivo, puede usar una acción para desenganchar a la estirge."]
                 }
             ],
@@ -41800,8 +41806,11 @@
             },
             "senses": ["blindsight 60 ft. (blind beyond this radius)"],
             "passive": 9,
-            "vulnerable": ["fire"],
-            "conditionImmune": ["blinded", "deafened"],
+            "vulnerable": ["fuego"],
+            "conditionImmune": [
+				"cegado|PHB-ES", 
+				"ensordecido|PHB-ES"
+			],
             "languages": ["entiende común, pero no puede hablar"],
             "cr": "1/8",
             "trait": [{
@@ -41811,7 +41820,7 @@
             ],
             "action": [{
                     "name": "Garras",
-                    "entries": ["{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage."]
+                    "entries": ["{@atk mw} {@hit 3} to hit, reach 5 ft., un objetivo. {@h}3 ({@damage 1d4 + 1}) perforante damage."]
                 }
             ],
             "environment": ["bosques"],
@@ -41825,7 +41834,7 @@
                     "source": "DIP"
                 }
             ],
-            "traitTags": ["Apariencia Falsa"],
+            "traitTags": ["False Appearance"],
             "senseTags": ["B"],
             "languageTags": ["C", "CS"],
             "damageTags": ["P"],
@@ -41984,13 +41993,13 @@
 				{
 					"name": "Cascos",
 					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage."
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., un objetivo. {@h}11 ({@damage 2d6 + 4}) contundente damage."
 					]
 				},
 				{
 					"name": "Cuerno",
 					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage."
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., un objetivo. {@h}8 ({@damage 1d8 + 4}) perforante damage."
 					]
 				},
 				{
@@ -42178,29 +42187,29 @@
 			],
 			"passive": 10,
 			"resist": [
-				"acid",
+				"ácido",
 				{
 					"resist": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
+						"contundente",
+						"cortante",
+						"perforante"
 					],
 					"note": "de ataques no mágicos",
 					"cond": true
 				}
 			],
 			"immune": [
-				"poison"
+				"veneno"
 			],
-			"conditionImmune": [
-				"exhaustion",
-				"grappled",
-				"paralyzed",
-				"petrified",
-				"poisoned",
-				"prone",
-				"restrained",
-				"unconscious"
+			"conditionImmune": [				
+				"agarrado|PHB-ES", 
+				"apresado|PHB-ES", 
+				"cansancio|PHB-ES", 
+				"derribado|PHB-ES",
+				"envenenado|PHB-ES", 
+				"inconsciente|PHB-ES", 
+				"paralizado|PHB-ES", 
+				"petrificado|PHB-ES"
 			],
 			"languages": [
 				"acuario"
@@ -42230,7 +42239,7 @@
 				{
 					"name": "Golpe",
 					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage."
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., un objetivo. {@h}13 ({@damage 2d8 + 4}) contundente damage."
 					]
 				},
 				{
@@ -42393,7 +42402,7 @@
             ],
             "action": [{
                     "name": "Mordisco",
-                    "entries": ["{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d4 + 2}) piercing damage. Si el objetivo es una criatura, deberá superar una tirada de salvación de Fuerza {@dc 11} o será {@condition derribado|PHB-ES}."]
+                    "entries": ["{@atk mw} {@hit 4} to hit, reach 5 ft., un objetivo. {@h}7 ({@damage 2d4 + 2}) perforante damage. Si el objetivo es una criatura, deberá superar una tirada de salvación de Fuerza {@dc 11} o será {@condition derribado|PHB-ES}."]
                 }
             ],
             "environment": ["praderas", "bosques", "colinas"],
@@ -42402,7 +42411,10 @@
                 "type": "internal",
                 "path": "bestiary/wolf.mp3"
             },
-            "traitTags": ["Sentidos agudos", "Atacar en Manada"],
+            "traitTags": [
+				"Keen Senses",
+				"Pack Tactics"
+			],
             "damageTags": ["P"],
             "miscTags": ["MW"],
             "conditionInflict": ["prone"]
@@ -42452,9 +42464,9 @@
             },
             "senses": ["blindsight 30 ft.", "darkvision 120 ft."],
             "passive": 17,
-            "immune": ["poison"],
-            "conditionImmune": ["poisoned"],
-            "languages": ["Común", "Dracónico"],
+            "immune": ["veneno"],
+            "conditionImmune": ["envenenado|PHB-ES"],
+            "languages": ["común", "dracónico"],
             "cr": "8",
             "trait": [{
                     "name": "Anfibio",
@@ -42466,10 +42478,10 @@
                     "entries": ["El dragón realiza tres ataques: uno con su mordisco y dos con sus garras."]
                 }, {
                     "name": "Mordisco",
-                    "entries": ["{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}15 ({@damage 2d10 + 4}) piercing damage plus 7 ({@damage 2d6}) poison damage."]
+                    "entries": ["{@atk mw} {@hit 7} to hit, reach 10 ft., un objetivo. {@h}15 ({@damage 2d10 + 4}) perforante damage plus 7 ({@damage 2d6}) veneno damage."]
                 }, {
                     "name": "Garra",
-                    "entries": ["{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."]
+                    "entries": ["{@atk mw} {@hit 7} to hit, reach 5 ft., un objetivo. {@h}11 ({@damage 2d6 + 4}) cortante damage."]
                 }, {
                     "name": "Aliento venenoso {@recharge 5}",
                     "entries": ["El dragón exhala un gas venenoso en un cono de 30 pies. Todas las criaturas situadas en el área deberán hacer una tirada de salvación de Constitución {@dc 14}, sufriendo 42 {@damage 12d6} de daño de veneno si la fallan, o la mitad del daño si la superan."]
@@ -42493,15 +42505,18 @@
 					]
 				}
             ],
-            "environment": ["Bosques"],
+            "environment": ["bosques"],
             "tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Young%20Green%20Dragon.png",
             "soundClip": {
                 "type": "internal",
                 "path": "bestiary/green-dragon.mp3"
             },
-            "traitTags": ["Anfibio"],
+            "traitTags": ["Amphibious"],
             "senseTags": ["B", "SD"],
-            "actionTags": ["Ataque múltiple"],
+            "actionTags": [
+				"Breath Weapon",
+				"Multiattack"
+			],
             "languageTags": ["C", "DR"],
             "damageTags": ["I", "P", "S"],
             "miscTags": ["AOE", "MW", "RCH"],
@@ -42747,8 +42762,8 @@
             },
             "senses": ["darkvision 60 ft."],
             "passive": 8,
-            "immune": ["poison"],
-            "conditionImmune": ["poisoned"],
+            "immune": ["veneno"],
+            "conditionImmune": ["envenenado|PHB-ES"],
             "languages": ["entiende los idiomas que conoció en vida, pero no puede hablar"],
             "cr": "1/4",
             "trait": [{
@@ -42758,7 +42773,7 @@
             ],
             "action": [{
                     "name": "Golpe",
-                    "entries": ["{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) bludgeoning damage."]
+                    "entries": ["{@atk mw} {@hit 3} to hit, reach 5 ft., un objetivo. {@h}4 ({@damage 1d6 + 1}) contundente damage."]
                 }
             ],
             "environment": ["ciudades"],
@@ -42767,7 +42782,7 @@
                 "type": "internal",
                 "path": "bestiary/zombie.mp3"
             },
-            "traitTags": ["Fortaleza de Muerto Viviente"],
+            "traitTags": ["Undead Fortitude"],
             "senseTags": ["D"],
             "languageTags": ["CS", "LF"],
             "damageTags": ["B"],
@@ -42950,24 +42965,24 @@
 			],
 			"passive": 10,
 			"immune": [
-				"poison",
-				"psychic"
+				"veneno",
+				"psíquico"
 			],
 			"conditionImmune": [
-				"blinded",
-				"charmed",
-				"deafened",
-				"exhaustion",
-				"frightened",
-				"paralyzed",
-				"petrified",
-				"poisoned"
+				"cegado|PHB-ES",
+				"hechizado|PHB-ES",
+				"ensordecido|PHB-ES",
+				"cansancio|PHB-ES",
+				"asustado|PHB-ES",
+				"paralizado|PHB-ES",
+				"petrificado|PHB-ES",
+				"envenenado|PHB-ES"
 			],
 			"action": [
 				{
 					"name": "Golpe",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) bludgeoning damage."
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., un objetivo. {@h}5 ({@damage 1d4 + 3}) contundente damage."
 					]
 				}
 			],
@@ -43106,8 +43121,8 @@
             },
             "senses": ["darkvision 60 ft."],
             "passive": 8,
-            "immune": ["poison"],
-            "conditionImmune": ["poisoned"],
+            "immune": ["veneno"],
+            "conditionImmune": ["envenenado|PHB-ES"],
             "languages": ["entiende los idiomas que conoció en vida, pero no puede hablar"],
             "cr": "1/4",
             "trait": [{
@@ -43120,11 +43135,11 @@
             ],
             "action": [{
                     "name": "Golpe",
-                    "entries": ["{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) bludgeoning damage."]
+                    "entries": ["{@atk mw} {@hit 3} to hit, reach 5 ft., un objetivo. {@h}4 ({@damage 1d6 + 1}) contundente damage."]
                 }
             ],
             "tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/LMoP/Ash%20Zombie.png",
-            "traitTags": ["Fortaleza de Muerto Viviente"],
+            "traitTags": ["Undead Fortitude"],
             "senseTags": ["D"],
             "languageTags": ["CS", "LF"],
             "damageTags": ["B"],
@@ -43236,7 +43251,7 @@
                 "history": "+5"
             },
             "passive": 11,
-            "languages": ["Común", "Dracónico", "Elfo", "Enano"],
+            "languages": ["común", "dracónico", "elfo", "enano"],
             "cr": "1",
             "spellcasting": [{
                     "name": "Lanzamiento de Conjuros",
@@ -43269,7 +43284,7 @@
             ],
             "action": [{
                     "name": "Bastón",
-                    "entries": ["{@atk mw} {@hit 1} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d8 - 1}) bludgeoning damage."]
+                    "entries": ["{@atk mw} {@hit 1} to hit, reach 5 ft., un objetivo. {@h}3 ({@damage 1d8 - 1}) contundente damage."]
                 }
             ],
             "tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/LMoP/Evil%20Mage.png",
@@ -43316,8 +43331,8 @@
             "cha": 10,
 			"senses": ["darkvision 60 ft."],
             "passive": 10,
-			"resist": ["poison"],
-            "languages": ["uno cualquiera (normalmente común)","Enano"],
+			"resist": ["veneno"],
+            "languages": ["uno cualquiera (normalmente común)","enano"],
             "cr": "0",
 			"trait": [{
                     "name": "Resistencia Enana",
@@ -43326,7 +43341,7 @@
             ],
             "action": [{
                     "name": "Garrote",
-                    "entries": ["{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) bludgeoning damage."]
+                    "entries": ["{@atk mw} {@hit 2} to hit, reach 5 ft., un objetivo. {@h}2 ({@damage 1d4}) contundente damage."]
                 }
             ],
             "tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/LMoP/Gundren%20Rockseeker.png",
@@ -43362,15 +43377,23 @@
             "cha": 15,
             "senses": ["darkvision 60 ft."],
             "passive": 12,
-            "resist": ["acid", "cold", "fire", "lightning", "thunder", {
-                    "resist": ["bludgeoning", "piercing", "slashing"],
+            "resist": ["ácido", "frío", "fuego", "relámpago", "trueno", {
+                    "resist": ["contundente", "cortante", "perforante"],
                     "note": "de armas ni mágicas ni de plata",
                     "cond": true
                 }
             ],
-            "immune": ["necrotic", "poison"],
-            "conditionImmune": ["charmed", "grappled", "paralyzed", "petrified", "poisoned", "prone", "restrained"],
-            "languages": ["Común", "Infernal"],
+            "immune": ["necrótico", "veneno"],
+            "conditionImmune": [
+				"hechizado|PHB-ES", 
+				"agarrado|PHB-ES", 
+				"paralizado|PHB-ES", 
+				"petrificado|PHB-ES", 
+				"envenenado|PHB-ES", 
+				"derribado|PHB-ES", 
+				"apresado|PHB-ES"
+			],
+            "languages": ["común", "infernal"],
             "cr": "3",
             "trait": [{
                     "name": "Movimiento Incorpóreo",
@@ -43382,11 +43405,14 @@
             ],
             "action": [{
                     "name": "Consumir vida",
-                    "entries": ["{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}16 ({@damage 3d8 + 3}) necrotic damage, y el objetivo debe superar una tirada de salvación de Constitución {@dc 13} o sus puntos de golpe máximos se reducirán en la cantidad de daño recibida. Si este ataque reduce los puntos de golpe máximos del objetivo a 0, este morirá. Esta reducción de  los puntos de golpe máximos permanece hasta que el objetivo finaliza un descanso largo."]
+                    "entries": ["{@atk mw} {@hit 5} to hit, reach 5 ft., un objetivo. {@h}16 ({@damage 3d8 + 3}) necrótico damage, y el objetivo debe superar una tirada de salvación de Constitución {@dc 13} o sus puntos de golpe máximos se reducirán en la cantidad de daño recibida. Si este ataque reduce los puntos de golpe máximos del objetivo a 0, este morirá. Esta reducción de  los puntos de golpe máximos permanece hasta que el objetivo finaliza un descanso largo."]
                 }
             ],
             "tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/LMoP/Mormesk%20the%20Wraith.png",
-            "traitTags": ["Movimiento Incorpóreo", "Sensibilidad a la Luz"],
+            "traitTags": [
+				"Incorporeal Movement",
+				"Sunlight Sensitivity"
+			],
             "senseTags": ["D"],
             "languageTags": ["C", "I"],
             "damageTags": ["N"],
@@ -43448,7 +43474,7 @@
             },
             "senses": ["darkvision 120 ft."],
             "passive": 14,
-            "languages": ["Elfo", "Infracomún"],
+            "languages": ["elfo", "infracomún"],
             "cr": "2",
             "spellcasting": [{
                     "name": "Lanzamiento de Conjuros Innato",
@@ -43489,11 +43515,14 @@
             ],
             "action": [{
                     "name": "Bastón de la araña",
-                    "entries": ["{@atk mw} {@hit 1} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d6 - 1}) bludgeoning damage plus 3 ({@damage 1d6}) poison damage."]
+                    "entries": ["{@atk mw} {@hit 1} to hit, reach 5 ft., un objetivo. {@h}2 ({@damage 1d6 - 1}) contundente damage plus 3 ({@damage 1d6}) veneno damage."]
                 }
             ],
             "tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/LMoP/Nezznar%20the%20Black%20Spider.png",
-            "traitTags": ["Linaje Feérico", "Sensibilidad a la Luz"],
+            "traitTags": [
+				"Fey Ancestry",
+				"Sunlight Sensitivity"
+			],
             "senseTags": ["SD"],
             "languageTags": ["E", "U"],
             "damageTags": ["B", "I"],
@@ -43547,8 +43576,8 @@
             "cha": 10,
 			"senses": ["darkvision 60 ft."],
             "passive": 10,
-			"resist": ["poison"],
-            "languages": ["uno cualquiera (normalmente común)","Enano"],
+			"resist": ["veneno"],
+            "languages": ["uno cualquiera (normalmente común)","enano"],
             "cr": "0",
 			"trait": [{
                     "name": "Resistencia Enana",
@@ -43557,7 +43586,7 @@
             ],
             "action": [{
                     "name": "Garrote",
-                    "entries": ["{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) bludgeoning damage."]
+                    "entries": ["{@atk mw} {@hit 2} to hit, reach 5 ft., un objetivo. {@h}2 ({@damage 1d4}) contundente damage."]
                 }
             ],
             "tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/LMoP/Nundro%20Rockseeker.png",
@@ -43597,18 +43626,18 @@
                 "intimidation": "+2"
             },
             "passive": 9,
-            "languages": ["Común"],
+            "languages": ["común"],
             "cr": "1/2",
             "action": [{
                     "name": "Ataque múltiple",
                     "entries": ["El rufián hace dos ataques cuerpo a cuerpo."]
                 }, {
                     "name": "Estada corta",
-                    "entries": ["{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."]
+                    "entries": ["{@atk mw} {@hit 4} to hit, reach 5 ft., un objetivo. {@h}5 ({@damage 1d6 + 2}) perforante damage."]
                 }
             ],
             "tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/LMoP/Redbrand%20Ruffian.png",
-            "actionTags": ["Ataque múltiple"],
+            "actionTags": ["Multiattack"],
             "languageTags": ["C"],
             "damageTags": ["P"],
             "miscTags": ["MW"],
@@ -43661,17 +43690,17 @@
                 "perception": "+2"
             },
             "passive": 12,
-            "languages": ["Común"],
+            "languages": ["común"],
             "cr": "1",
             "action": [{
                     "name": "Ataque múltiple",
                     "entries": ["Sildar hace dos ataques cuerpo a cuerpo."]
                 }, {
                     "name": "Espada larga",
-                    "entries": ["{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d8 + 1}) slashing damage."]
+                    "entries": ["{@atk mw} {@hit 3} to hit, reach 5 ft., un objetivo. {@h}5 ({@damage 1d8 + 1}) cortante damage."]
                 }, {
                     "name": "Ballesta pesada",
-                    "entries": ["{@atk rw} {@hit 2} to hit, range 100/400 ft., one target. {@h}5 ({@damage 1d10}) piercing damage."]
+                    "entries": ["{@atk rw} {@hit 2} to hit, range 100/400 ft., un objetivo. {@h}5 ({@damage 1d10}) perforante damage."]
                 }
             ],
             "reaction": [{
@@ -43680,7 +43709,10 @@
                 }
             ],
             "tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/LMoP/Sildar%20Hallwinter.png",
-            "actionTags": ["Ataque múltiple", "Parry"],
+            "actionTags": [
+				"Multiattack",
+				"Parry"
+			],
             "languageTags": ["C"],
             "damageTags": ["P", "S"],
             "miscTags": ["MW", "RNG", "RW"],
@@ -43740,9 +43772,9 @@
             },
             "senses": ["blindsight 30 ft.", "darkvision 120 ft."],
             "passive": 17,
-            "immune": ["poison"],
-            "conditionImmune": ["poisoned"],
-            "languages": ["Común", "Dracónico"],
+            "immune": ["veneno"],
+            "conditionImmune": ["envenenado|PHB-ES"],
+            "languages": ["común", "dracónico"],
             "cr": "8",
             "trait": [{
                     "name": "Anfibio",
@@ -43754,20 +43786,23 @@
                     "entries": ["Venomfang realiza tres ataques: uno con su mordisco y dos con sus garras."]
                 }, {
                     "name": "Mordisco",
-                    "entries": ["{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}15 ({@damage 2d10 + 4}) piercing damage plus 7 ({@damage 2d6}) poison damage."]
+                    "entries": ["{@atk mw} {@hit 7} to hit, reach 10 ft., un objetivo. {@h}15 ({@damage 2d10 + 4}) perforante damage plus 7 ({@damage 2d6}) veneno damage."]
                 }, {
                     "name": "Garra",
-                    "entries": ["{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."]
+                    "entries": ["{@atk mw} {@hit 7} to hit, reach 5 ft., un objetivo. {@h}11 ({@damage 2d6 + 4}) cortante damage."]
                 }, {
                     "name": "Aliento venenoso {@recharge 5}",
                     "entries": ["Venomfang exhala un gas venenoso en un cono de 30 pies. Todas las criaturas situadas en el área deberán hacer una tirada de salvación de Constitución {@dc 14}, sufriendo 42 {@damage 12d6} de daño de veneno si la fallan, o la mitad del daño si la superan."]
                 }
             ],
-            "environment": ["Bosques"],
+            "environment": ["bosques"],
             "tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Young%20Green%20Dragon.png",
-            "traitTags": ["Anfibio"],
+            "traitTags": ["Amphibious"],
             "senseTags": ["B", "SD"],
-            "actionTags": ["Ataque múltiple"],
+            "actionTags": [
+				"Breath Weapon",
+				"Multiattack"
+			],
             "languageTags": ["C", "DR"],
             "damageTags": ["I", "P", "S"],
             "miscTags": ["AOE", "MW", "RCH"]
