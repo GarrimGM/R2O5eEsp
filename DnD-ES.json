@@ -95,7 +95,8 @@
 			"ED_Esp": "Disciplinas elementales",
 			"MM_Esp": "Metamagia",
 			"EI_Esp": "Invocaciones Sobrenaturales",
-			"PB_Esp": "Beneficio del Pacto"
+			"PB_Esp": "Beneficio del Pacto",
+			"AS_Esp": "Disparo Arcano"
 		},
 		"dateAdded": 1582989372,
 		"dateLastModified": 1629284141
@@ -17823,7 +17824,8 @@
 						"gainSubclassFeature": true
 					}, "Furia Persistente|Bárbaro|PHB-ES|15", "Mejora de Característica|Bárbaro|PHB-ES|16", "Crítico Brutal (3 dados)|Bárbaro|PHB-ES|17", "Poderío Indómito|Bárbaro|PHB-ES|18", "Mejora de Característica|Bárbaro|PHB-ES|19", "Campeón Primordial|Bárbaro|PHB-ES|20"],
             "subclassTitle": "Sendas primordiales",
-            "fluff": [{
+            "fluff": [
+				{
                     "name": "Bárbaro",
                     "type": "section",
                     "entries": [
@@ -17860,7 +17862,254 @@
                     ],
                     "source": "PHB-ES",
                     "page": 46
-                }
+                },
+				{
+					"type": "section",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"He sido testigo del indómito espectáculo de un bárbaro en el campo de batalla y me hace preguntarme qué fuerza yace en el corazón de su rabia."
+							],
+							"by": "Seret, archimago"
+						},
+						"La ira que puede sentir una persona normal se parece a la rabia de un bárbaro de la misma manera que una suave brisa se parece a una furiosa tempestad. La fuerza que impulsa a un bárbaro viene de más allá de las meras emociones, haciendo que su manifestación sea aún más terrible. Proceda este ímpetu de una furia interior o de un vínculo con un animal espiritual, un bárbaro enfurecido es capaz de proezas de fuerza y resistencia sobrenaturales. Estos arrebatos son temporales, pero mientras duran se anteponen a la mente y al cuerpo, impulsando al bárbaro pese al peligro y las lesiones, hasta que el último enemigo cae.",
+						"Es tentador interpretar a un personaje bárbaro que sea una aplicación directa del arquetipo clásico: un bruto, normalmente con pocas luces, que se arroja donde otros temen ir. Pero no todos los bárbaros del mundo están cortados con ese patrón, así que puedes darle tu propio toque personal. Sea como sea, considera añadir algunos detalles para hacer que tu bárbaro destaque sobre los demás. En la siguiente sección podrás ver algunas ideas.",
+						{
+							"type": "entries",
+							"name": "Tótems personales",
+							"entries": [
+								"Los bárbaros tienden a viajar ligeros, sin muchos efectos personales o equipo innecesario. Las pocas posesiones que llevan incluyen pequeños objetos con un valor especial. Un tótem personal es significativo porque tiene un origen místico o está ligado a un momento importante de la vida del personaje: quizá un recuerdo del pasado o un presagio de aquello por venir.",
+								"Un tótem personal de este tipo puede estar asociado con el animal espiritual de un bárbaro, o puede que incluso sea el propio objeto totémico del animal, pero esta clase de conexión no es esencial. Un bárbaro cuyo espíritu totémico sea un oso, por ejemplo, podría portar una pluma de águila como tótem personal.",
+								"Considera la posibilidad de crear uno o más tótems particulares para tu personaje: objetos con un vínculo especial con el futuro o pasado de tu aventurero. Piensa en cómo este tótem podría afectar a sus acciones.",
+								{
+									"type": "table",
+									"caption": "Tótems personales",
+									"colLabels": [
+										"{@dice d6}",
+										"Tótem"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Un mechón de pelaje de un lobo solitario del que te hiciste amigo en una caza. "
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"Tres plumas de águila, otorgadas por un sabio chamán que pronosticó que tendrían un papel en tu destino."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Un collar hecho a partir de las garras de un oso de las cavernas joven, al que mataste en combate singular siendo solo un niño."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"Una pequeña bolsa de cuero con tres piedras que representan a tus ancestros."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"Algunos huesecillos de la primera bestia que cazaste, atados con lana de colores."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Una piedra del tamaño de un huevo y con la forma de tu animal espiritual, que apareció misteriosamente en la bolsa de tu cinturón."
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Tatuajes",
+							"entries": [
+								"Los miembros de muchos clanes bárbaros decoran sus cuerpos con tatuajes, cada uno de ellos representando un momento significativo de su vida o de la historia de sus ancestros. También es posible que simbolicen un sentimiento o una actitud. Al igual que ocurre con los tótems personales, pueden estar en ocasiones relacionados con su animal espiritual.",
+								"Cada tatuaje de un bárbaro contribuye a su identidad como individuo. Si tu personaje lleva algunos, ¿qué aspecto tienen? ¿Qué representan?",
+								{
+									"type": "table",
+									"caption": "Tatuajes",
+									"colLabels": [
+										"{@dice d6}",
+										"Tatuaje"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Las alas de un águila, extendidas, en la parte superior de tu espalda."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"Los dorsos de tus manos tienen grabadas las zarpas de un oso de las cavernas."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Los símbolos de tu clan, tatuados con un patrón de enredadera a lo largo de tus brazos."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"La cornamenta de un alce grabada en tu espalda."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"Imágenes de tu animal espiritual, tatuadas en la mano y el brazo con el que empuñas el arma."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Los ojos de un lobo en tu espalda, para ayudarte a ver y repeler espíritus malvados."
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Supersticiones",
+							"entries": [
+								"Hay muchas diferencias entre cómo entiende la vida cada bár baro. Algunos siguen a los dioses y buscan su guía en los ciclos de la naturaleza y los animales que encuentran. Estos bárbaros creen que los espíritus habitan en las plantas y animales del mundo, de modo que ven en ellos señales de poder y presagios.",
+								"Otros bárbaros solo creen en la sangre que corre por sus venas y el acero que sostienen en sus manos. No tienen tiempo para el mundo invisible, por lo que confían en sus sentidos para cazar y sobrevivir, como las bestias salvajes a las que emulan.",
+								"Ambos puntos de vista pueden dar lugar a supersticiones. Estas creencias son pasadas de padres a hijos o entre miembros de un clan o grupo de caza.",
+								"Si tu personaje bárbaro tiene supersticiones, ¿las heredó de su familia o son el resultado de experiencias personales?",
+								{
+									"type": "table",
+									"caption": "Supersticiones",
+									"colLabels": [
+										"{@dice d6}",
+										"Superstición"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Si perturbas los huesos de los muertos, heredarás todos los problemas que les atormentaron en vida."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"Nunca confíes en un mago. Son diablos disfrazados, en particular los amistosos."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Los enanos han perdido sus espíritus y son prácticamente muertos vivientes. Por eso viven bajo tierra."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"Las cosas mágicas no traen más que problemas. Nunca duermas situado a menos de diez pies de un objeto mágico."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"Cuando atravieses un cementerio asegúrate de llevar algo de plata. De lo contrario, un fantasma podría entrar en tu cuerpo."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Si una elfa te mira a los ojos, está intentando leerte la mente."
+										]
+									]
+								}
+							]
+						}
+					],
+					"source": "XGE-ES",
+					"page": 8
+				}
             ]
 		},
 		{
@@ -17955,18 +18204,46 @@
 					"rows": [[2, 0, 0, 0, 0, 0, 0, 0, 0], [3, 0, 0, 0, 0, 0, 0, 0, 0], [4, 2, 0, 0, 0, 0, 0, 0, 0], [4, 3, 0, 0, 0, 0, 0, 0, 0], [4, 3, 2, 0, 0, 0, 0, 0, 0], [4, 3, 3, 0, 0, 0, 0, 0, 0], [4, 3, 3, 1, 0, 0, 0, 0, 0], [4, 3, 3, 2, 0, 0, 0, 0, 0], [4, 3, 3, 3, 1, 0, 0, 0, 0], [4, 3, 3, 3, 2, 0, 0, 0, 0], [4, 3, 3, 3, 2, 1, 0, 0, 0], [4, 3, 3, 3, 2, 1, 0, 0, 0], [4, 3, 3, 3, 2, 1, 1, 0, 0], [4, 3, 3, 3, 2, 1, 1, 0, 0], [4, 3, 3, 3, 2, 1, 1, 1, 0], [4, 3, 3, 3, 2, 1, 1, 1, 0], [4, 3, 3, 3, 2, 1, 1, 1, 1], [4, 3, 3, 3, 3, 1, 1, 1, 1], [4, 3, 3, 3, 3, 2, 1, 1, 1], [4, 3, 3, 3, 3, 2, 2, 1, 1]]
 				}
 			],
-            "classFeatures": ["Inspiración Bárdica|Bardo|PHB-ES|1", "Lanzamiento de Conjuros|Bardo|PHB-ES|1", "Aprendiz de Mucho|Bardo|PHB-ES|2", "Canción de Descanso (d6)|Bardo|PHB-ES|2", {
+            "classFeatures": [
+				"Inspiración Bárdica|Bardo|PHB-ES|1", 
+				"Lanzamiento de Conjuros|Bardo|PHB-ES|1", 
+				"Aprendiz de Mucho|Bardo|PHB-ES|2", 
+				"Canción de Descanso (d6)|Bardo|PHB-ES|2", 
+				{
                     "classFeature": "Colegio Bárdico|Bardo|PHB-ES|3",
                     "gainSubclassFeature": true
-                }, "Pericia|Bardo|PHB-ES|3", "Mejora de Característica|Bardo|PHB-ES|4", "Inspiración Bárdica (d8)|Bardo|PHB-ES|5", "Fuente de Inspiración|Bardo|PHB-ES|5", "Contraencantamiento|Bardo|PHB-ES|6", {
+                }, 
+				"Pericia|Bardo|PHB-ES|3", 
+				"Mejora de Característica|Bardo|PHB-ES|4", 
+				"Inspiración Bárdica (d8)|Bardo|PHB-ES|5", 
+				"Fuente de Inspiración|Bardo|PHB-ES|5", 
+				"Contraencantamiento|Bardo|PHB-ES|6", 
+				{
                     "classFeature": "Rasgo de Colegio Bárdico|Bardo|PHB-ES|6",
                     "gainSubclassFeature": true
-                }, "Mejora de Característica|Bardo|PHB-ES|8", "Canción de Descanso (d8)|Bardo|PHB-ES|9", "Inspiración Bárdica (d10)|Bardo|PHB-ES|10", "Pericia|Bardo|PHB-ES|10", "Secretos Mágicos|Bardo|PHB-ES|10", "Mejora de Característica|Bardo|PHB-ES|12", "Canción de Descanso (d10)|Bardo|PHB-ES|13", "Secretos Mágicos|Bardo|PHB-ES|14", {
+                }, 
+				"Mejora de Característica|Bardo|PHB-ES|8", 
+				"Canción de Descanso (d8)|Bardo|PHB-ES|9", 
+				"Inspiración Bárdica (d10)|Bardo|PHB-ES|10", 
+				"Pericia|Bardo|PHB-ES|10", 
+				"Secretos Mágicos|Bardo|PHB-ES|10", 
+				"Mejora de Característica|Bardo|PHB-ES|12", 
+				"Canción de Descanso (d10)|Bardo|PHB-ES|13", 
+				"Secretos Mágicos|Bardo|PHB-ES|14", 
+				{
                     "classFeature": "Rasgo de Colegio Bárdico|Bardo|PHB-ES|14",
                     "gainSubclassFeature": true
-                }, "Inspiración Bárdica (d12)|Bardo|PHB-ES|15", "Mejora de Característica|Bardo|PHB-ES|16", "Canción de Descanso (d12)|Bardo|PHB-ES|17", "Secretos Mágicos|Bardo|PHB-ES|18", "Mejora de Característica|Bardo|PHB-ES|19", "Inspiración Superior|Bardo|PHB-ES|20"],
+                }, 
+				"Inspiración Bárdica (d12)|Bardo|PHB-ES|15", 
+				"Mejora de Característica|Bardo|PHB-ES|16", 
+				"Canción de Descanso (d12)|Bardo|PHB-ES|17", 
+				"Secretos Mágicos|Bardo|PHB-ES|18", 
+				"Mejora de Característica|Bardo|PHB-ES|19", 
+				"Inspiración Superior|Bardo|PHB-ES|20"
+			],
             "subclassTitle": "Colegios bárdicos",
-            "fluff": [{
+            "fluff": [
+				{
                     "name": "Bardo",
                     "type": "section",
                     "entries": [
@@ -18002,7 +18279,289 @@
 					],
                     "source": "PHB-ES",
                     "page": 51
-                }
+                },
+				{
+					"type": "section",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"La música es la fruta del árbol divino que vibra con las Palabras de Creación. Pero lo que yo te pregunto es: ¿Puede un bardo llegar a la raíz de este árbol? ¿Es posible acceder a la fuente de ese poder? Ah, ¡la música que podría traer a este mundo!"
+							],
+							"by": "Fletcher Danairia, maestro bardo"
+						},
+						"Los bardos proporcionan desenfado en tiempos oscuros, otorgan sabiduría para contrarrestar la ignorancia y hacen que lo ridículo parezca sublime. Son conservadores de la historia más antigua, usando canciones y relatos para perpetuar a través de los tiempos la memoria de grandes acontecimientos. Este conocimiento es tan importante que será aprendido y difundido, sobreviviendo de esta manera cuando no quede nada escrito.",
+						"También es parte del papel de un bardo ser cronista de hechos menores y más contemporáneos: las historias de los héroes de hoy, desde sus mayores gestas a sus poco impresionantes fracasos.",
+						"No obstante, en el mundo hay muchas personas que pueden seguir una melodía o contar bien una historia, razón por la que un bardo aventurero no posee solo su labia y una voz melodiosa. Lo que realmente distingue a una de estas personas (y lo diferencia de otros bardos) es el estilo y la sustancia de su interpretación.",
+						"Para conquistar y mantener la atención del público, los bardos normalmente actúan de forma ostentosa y extrovertida. Los más famosos son el equivalente en el mundo de D&D a una estrella del pop. Si tu personaje es un miembro de esta clase, considera usar a uno de tus músicos favoritos como referente para tu aventurero.",
+						"Puedes añadir aspectos únicos a tu personaje con las siguientes sugerencias.",
+						{
+							"type": "entries",
+							"name": "Obra característica",
+							"entries": [
+								"Todo bardo de éxito es conocido por una obra de arte interpretativo, normalmente una canción o un poema que encandila a quien quiera que la escuche. Estas piezas son capaces de cambiar la vida del público o, por lo menos, de hacer que hablen de ella durante años.",
+								"Si tu personaje está empezando, tu obra característica probablemente aún no ha llegado, pero, para poder ganarte la vida con tu profesión, seguro que ya tienes dos o tres piezas que han sido un éxito en tu repertorio.",
+								{
+									"type": "table",
+									"caption": "Obra característica",
+									"colLabels": [
+										"{@dice d6}",
+										"Obra característica"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"\"Los tres flambinis\", una atrevida canción de identidades equivocadas y deseo sin trabas."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"\"El vals de los micónidos\", una alegre melodía que gusta especialmente a los niños."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"\"El trasero dorado de Asmodeo\", un poema dramático cuya inspiración fue tu supuesta visita personal al Averno."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"\"Los piratas de Luskan\", un relato de primera mano de tu secuestro por unos piratas cuando eras solo un niño."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"\"Un aro, dos pichones y un sabueso infernal\", una sutil parodia de un noble incompetente."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"\"Un pardillo en el Abismo\", poema cómico sobre un bufón y sus viajes entre demonios."
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Instrumento",
+							"entries": [
+								"En la búsqueda de un bardo de la interpretación definitiva y el máximo aplauso, su instrumento es tan importante como su habilidad vocal. La calidad de su manufactura es, por tanto, crítica: los mejores instrumentos crean la mejor música, por lo que algunos bardos no paran de buscar uno mejor. Pero quizá sea igual de importante el impacto que pueda causar el instrumento en sí mismo. Es más probable que aquellos construidos de forma extraña o con materiales exóticos dejen un recuerdo duradero en el público.",
+								"Puede que tu instrumento actual sea \"de tienda\", porque no te podías permitir otra cosa, o que haya sido un regalo y sea muy elaborado. ¿Estás satisfecho con el que tienes o quieres reemplazarlo por uno realmente peculiar?",
+								{
+									"type": "table",
+									"caption": "Instrumento",
+									"colLabels": [
+										"{@dice d6}",
+										"Instrumento"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Un violín mediano de excelente manufactura "
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"Un {@item cuerno|PHB-ES} de mithral hecho por elfos"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Una citara fabricada con seda de araña drow"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"Un {@item tambor|PHB-ES} orco"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"Una caja de madera que croa como un bullywug"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"El arpa de un manitas, de diseño gnomo"
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Vergüenza",
+							"entries": [
+								"Casi cualquier bardo ha sufrido al menos una mala experiencia de cara al público, y lo normal es que tú no seas la excepción. Al fin y al cabo, nadie se vuelve famoso de golpe. Quizá tuviste alguna dificultad al principio de tu carrera o necesitaste tiempo para limpiar tu reputación tras una noche agónica en la que el destino conspiró para traer la ruina a tus interpretaciones.",
+								"Una actuación puede ir mal de tantas maneras como peces hay en el mar. Pero, sea cual sea el desastre, un bardo tiene el coraje y la confianza necesaria para recuperarse tras el descalabro, ya sea continuando la actuación, si es posible, o prometiendo volver mañana con un éxito seguro.",
+								{
+									"type": "table",
+									"caption": "Vergüenzas",
+									"colLabels": [
+										"{@dice d6}",
+										"Vergüenza"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Esa vez que tu canción cómica \"Las travesuras del Gran Tom\" (que, por cierto, crees que es brillante) no le sentó bien al Gran Tom."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"La matiné en la que el oso lechuza del circo escapó y aterrorizó al público."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Cuando tu primer acto fue tu entusiástica, pero universalmente aborrecida, interpretación de \"La canción del ranamot\"."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"La primera y última interpretación en público de \"Mirt, hombre de mundo\"."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"La vez que tu peluca se prendió fuego y la tiraste al suelo, incendiando el escenario."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Cuando te sentaste por error en tu {@item laúd|PHB-ES} durante la última estrofa de \"Serenata a la luz de las estrellas\"."
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "La musa del bardo",
+							"entries": [
+								"Como es natural, todo bardo posee un repertorio de canciones e historias. Algunos son generalistas, capaces de recurrir a una amplia variedad de temas para cada actuación, y están orgullosos de su versatilidad. Otros tienen un enfoque más personal en su arte, llevados por su apego a una musa, un concepto especial que inspira mucho de lo que esos artistas despliegan delante de una audiencia.",
+								"Un bardo que sigue a una musa normalmente lo hace para ganar una comprensión más profunda de lo que esta representa, con el fin de ser capaz de transmitir este conocimiento a otros a través de su interpretación.",
+								"Si tu personaje bardo tiene una musa, podría ser una de las tres descritas aquí, pero también otra creada por ti.",
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Naturaleza",
+											"entries": [
+												"Sientes una afinidad por la naturaleza. Su belleza y misterio te inspiran. Para ti, un árbol es profundamente simbólico. Sus profundas raíces ahondan en lo desconocido para extraer el poder de la tierra, mientras sus ramas se estiran hacia el sol para alimentar sus flores y fruta. La naturaleza ha sido testigo del alzamiento y caída de todos los reinos, incluso aquellos cuyos nombres han sido olvidados y esperan ser redescubiertos. Los dioses de la naturaleza comparten sus secretos con druidas y sabios, abriendo sus corazones y mentes a nuevas maneras de ver. Tú, al igual que ellos, sientes que tu creatividad florece cuando vagas por un campo abierto de ondulada hierba o cuando caminas en silencio por una arboleda de robles ancianos."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Amor",
+											"entries": [
+												"Buscas identificar la esencia del amor verdadero. Aunque no desdeñas el amor superficial de la carne y el aspecto, lo que realmente te interesa es esa forma de amor profundo que puede inspirar a miles o llenar de alegría cada pequeño momento. El amor de este tipo es omnipresente, por lo que puede tomar muchos aspectos: desde el brillo de una piedra preciosa a la canción de un simple pescador, que agradece al mar su abundancia. Sigues el rastro del amor, la emoción más preciosa y misteriosa de todas y, así, tu búsqueda llena tus historias y canciones con vitalidad y pasión."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Conflicto",
+											"entries": [
+												"El drama supone el enfrentamiento encarnado: las mejores historias giran alrededor del conflicto. Desde la historia de la mañana siguiente de una pelea de taberna a la saga que recuerda una batalla épica; desde una disputa de enamorados a una pugna entre poderosas dinastías, el conflicto es lo que inspira a los cuentacuentos a crear sus mejores obras. El conflicto puede sacar lo mejor de algunos, haciendo que brille su naturaleza heroica y transformen el mundo, pero también provoca que otros se vean atraídos hacia la oscuridad y caigan bajo el influjo del mal. Aspiras a experimentar o ser testigo de todas las formas de conflicto, grandes y pequeñas, para estudiar este aspecto eterno de la vida y poder inmortalizarlo en tus palabras y tu música."
+											]
+										}
+									]
+								}
+							]
+						}
+					],
+					"source": "XGE-ES",
+					"page": 12
+				}
             ]
         },
 		{
@@ -20017,7 +20576,8 @@
 				"Mejora de Característica|Brujo|PHB-ES|19", 
 				"Maestro Sobrenatural|Brujo|PHB-ES|20"],
             "subclassTitle": "Patrones sobrenaturales",
-            "fluff": [{
+            "fluff": [
+				{
                     "name": "Brujo",
                     "type": "section",
                     "entries": [
@@ -20059,7 +20619,222 @@
                     ],
                     "page": 105,
                     "source": "PHB-ES"
-                }
+                },
+				{
+					"type": "section",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"¿Crees que estoy loco? La verdadera locura es conformarse con vivir una vida mortal de monotonía y aburrimiento cuando el poder y el conocimiento están a tu alcance en el reino del más allá."
+							],
+							"by": "Xarren, heraldo de Acamar"
+						},
+						"Los brujos encuentran y guardan secretos. Amplían los horizontes de nuestro conocimiento del mundo, siempre en búsqueda de expandir su habilidad. Allí donde un sabio o un mago hará caso de un obvio signo de peligro y dará por terminada su investigación, un brujo se lanzará hacia delante, sin importar el coste. Es por tanto necesario contar con una mezcla particular de inteligencia, curiosidad e insensatez para poder convertirse en un miembro de esta clase. Muchos dirían que esa combinación es una prueba de su locura, pero para un brujo es una prueba de su valentía.",
+						"Los brujos siempre están definidos por dos elementos, que trabajan conjuntamente para forjar su camino dentro de esta clase. El primero es el evento o circunstancia que llevó a que el individuo forjara un pacto con una entidad planar. La segunda es la naturaleza de este patrón con el que el brujo queda vinculado. A diferencia de un clérigo. que normalmente adopta la ética y principios de una deidad, un brujo no tiene por qué sentir nada por su patrón, ni viceversa.",
+						"Los siguientes apartados proporcionan maneras de enriquecer a un personaje brujo, creando interesantes oportunidades narrativas y de interpretación.",
+						{
+							"type": "entries",
+							"name": "Actitud del patrón",
+							"entries": [
+								"Toda relación es un camino de doble sentido, pero en el caso de los brujos y sus patrones no es necesariamente cierto que ambos lados del camino sean del mismo ancho o estén hechos del mismo material. Los sentimientos que un brujo tenga hacia su patrón, ya sean positivos o negativos, pueden ser recíprocos o contrarios desde el punto de vista de la otra parte.",
+								"Cuando determines la actitud que tu personaje brujo mantiene respecto a su patrón, considera también el punto de vista de este. ¿Cómo se comporta tu patrón contigo? ¿Es tu patrón un amigo o aliado o, por el contrario, un enemigo que te otorga poder porque le forzaste a aceptar un pacto?",
+								{
+									"type": "table",
+									"caption": "Actitudes del patrón",
+									"colLabels": [
+										"{@dice d6}",
+										"Actitud"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Tu patrón ha guiado y ayudado a tu familia durante generaciones, por lo que es amable contigo."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"Cualquier interacción con tu caprichoso patrón es una sorpresa, agradable o dolorosa."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Tu patrón es el espíritu de un héroe muerto hace tiempo, que ve su pacto contigo como una manera de continuar su influencia en el mundo."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"Tu patrón es de disciplina rígida, pero te trata con cierto respeto."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"Tu patrón te engañó para aceptar el pacto y te trata como a un esclavo."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Tu patrón te deja a tu aire, sin interferencia. A veces temes las peticiones que hará cuando aparezca."
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Términos especiales del pacto",
+							"entries": [
+								"Un pacto puede ser desde un acuerdo de términos imprecisos hasta un contrato formal con largas y detalladas cláusulas y listas de requisitos. Sus términos (lo que el brujo debe hacer para recibir el favor de la entidad sobrenatural) son siempre dictados por el patrón. En ocasiones, incluyen disposiciones especiales que pueden parecer caprichosas o extrañas, pero los brujos se las toman tan en serio como el resto de requisitos de sus pactos.",
+								"¿Tiene tu personaje un acuerdo que le obliga a cambiar de comportamiento de una manera inusual o aparentemente frívola? Incluso si tu patrón aún no te ha impuesto una de estas obligaciones, eso no quiere decir que no vaya a pasar.",
+								{
+									"type": "table",
+									"caption": "Términos especiales",
+									"colLabels": [
+										"{@dice d6}",
+										"Término"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Cuando se te indique, debes tomar acciones inmediatas contra un enemigo específico de tu patrón."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"Tu pacto pone a prueba tu fuerza de voluntad: estás obligado a no tomar alcohol ni estupefacientes."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Por lo menos una vez al día has de inscribir o grabar el símbolo o nombre de tu patrón en el muro de un edificio."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"De vez en cuando debes llevar a cabo extravagantes rituales para mantener tu pacto."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"Nunca puedes repetir tu atuendo, ya que tu patrón considera que ser predecible es ser aburrido."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Cuando utilizas una invocación sobrenatural, has de decir el nombre de tu patrón en voz alta o arriesgarte a atraer su ira."
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Marca vinculante",
+							"entries": [
+								"Algunos patrones tienen como hábito marcar de algún modo a los brujos que están bajo su influencia. Una marca vinculante deja claro (para aquellos que saben de ello), que el individuo en cuestión está bajo patronazgo. Este puede querer aprovecharse de esa marca, usándola como prueba del pacto, o preferir ocultarla (si es posible) para evitar las dificultades que pueda traer.",
+								"Si tu pacto de brujo tiene una marca vinculante, cómo te sientes acerca de mostrarla depende de la naturaleza de tu relación con quien te la dio. ¿Es esta marca un motivo de orgullo o algo de lo que te avergüenzas en secreto?",
+								{
+									"type": "table",
+									"caption": "Marcas vinculantes",
+									"colLabels": [
+										"d6",
+										"Marca"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											"1",
+											"Uno de tus ojos tiene el mismo aspecto que el de tu patrón."
+										],
+										[
+											"2",
+											"Cada vez que te levantas, la pequeña marca de tu cara aparece en un sitio distinto."
+										],
+										[
+											"3",
+											"Muestras los síntomas de una enfermedad, pero no sufres los efectos negativos."
+										],
+										[
+											"4",
+											"Tu lengua es de un color antinatural."
+										],
+										[
+											"5",
+											"Tienes una cola vestigial."
+										],
+										[
+											"6",
+											"Tu nariz brilla en la oscuridad."
+										]
+									]
+								}
+							]
+						}
+					],
+					"page": 53,
+					"source": "XGE-ES"
+				}
             ]
         },
 		{
@@ -20260,6 +21035,59 @@
 			]
 		},
 		{
+			"name": "Senda del Guardián Ancestral",
+			"shortName": "Guardián Ancestral",
+			"source": "XGE-ES",
+			"className": "Bárbaro",
+			"classSource": "PHB-ES",
+			"page": 9,
+			"spellcastingAbility": "wis",
+			"additionalSpells": [
+				{
+					"innate": {
+						"10": [
+							"augurio|PHB-ES",
+							"clarividencia|PHB-ES"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Senda del Guardián Ancestral|Bárbaro|PHB-ES|Guardián Ancestral|XGE-ES|3",
+				"Escudo de los Espíritus|Bárbaro|PHB-ES|Guardián Ancestral|XGE-ES|6",
+				"Consultar a los Espíritus|Bárbaro|PHB-ES|Guardián Ancestral|XGE-ES|10",
+				"Ancestros Vengativos|Bárbaro|PHB-ES|Guardián Ancestral|XGE-ES|14"
+			]
+		},
+		{
+			"name": "Senda del Heraldo de las Tormentas",
+			"shortName": "Heraldo de las Tormentas",
+			"source": "XGE-ES",
+			"className": "Bárbaro",
+			"classSource": "PHB-ES",
+			"page": 10,
+			"subclassFeatures": [
+				"Senda del Heraldo de las Tormentas|Bárbaro|PHB-ES|Heraldo de las Tormentas|XGE-ES|3",
+				"Alma de Tormenta|Bárbaro|PHB-ES|Heraldo de las Tormentas|XGE-ES|6",
+				"Tormenta Protectora|Bárbaro|PHB-ES|Heraldo de las Tormentas|XGE-ES|10",
+				"Tormenta Enfurecida|Bárbaro|PHB-ES|Heraldo de las Tormentas|XGE-ES|14"
+			]
+		},
+		{
+			"name": "Senda del Fanático",
+			"shortName": "Fanático",
+			"source": "XGE-ES",
+			"className": "Bárbaro",
+			"classSource": "PHB-ES",
+			"page": 11,
+			"subclassFeatures": [
+				"Senda del Fanático|Bárbaro|PHB-ES|Fanático|XGE-ES|3",
+				"Foco Fanático|Bárbaro|PHB-ES|Fanático|XGE-ES|6",
+				"Presencia Ferviente|Bárbaro|PHB-ES|Fanático|XGE-ES|10",
+				"Furia más allá de la muerte|Bárbaro|PHB-ES|Fanático|XGE-ES|14"
+			]
+		},
+		{
 			"name": "Colegio del Conocimiento",
 			"shortName": "Conocimiento",
 			"source": "PHB-ES",
@@ -20284,6 +21112,54 @@
 				"Colegio del Valor|Bardo|PHB-ES|Valor|PHB-ES|3", 
 				"Ataque Adicional|Bardo|PHB-ES|Valor|PHB-ES|6", 
 				"Magia de Batalla|Bardo|PHB-ES|Valor|PHB-ES|14"
+			]
+		},
+		{
+			"name": "Colegio del Glamour",
+			"shortName": "Glamour",
+			"source": "XGE-ES",
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"page": 14,
+			"additionalSpells": [
+				{
+					"innate": {
+						"6": [
+							"orden imperiosa|PHB-ES"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Colegio del Glamour|Bardo|PHB-ES|Glamour|XGE-ES|3",
+				"Manto de Majestad|Bardo|PHB-ES|Glamour|XGE-ES|6",
+				"Majestad Inquebrantable|Bardo|PHB-ES|Glamour|XGE-ES|14"
+			]
+		},
+		{
+			"name": "Colegio de las Espadas",
+			"shortName": "Espadas",
+			"source": "XGE-ES",
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"page": 15,
+			"subclassFeatures": [
+				"Colegio de las Espadas|Bardo|PHB-ES|Espadas|XGE-ES|3",
+				"Ataque Adicional|Bardo|PHB-ES|Espadas|XGE-ES|6",
+				"Floritura del Maestro|Bardo|PHB-ES|Espadas|XGE-ES|14"
+			]
+		},
+		{
+			"name": "Colegio de los Susurros",
+			"shortName": "Susurros",
+			"source": "XGE-ES",
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"page": 16,
+			"subclassFeatures": [
+				"Colegio de los Susurros|Bardo|PHB-ES|Susurros|XGE-ES|3",
+				"Manto de Susurros|Bardo|PHB-ES|Susurros|XGE-ES|6",
+				"Saber de las sombras|Bardo|PHB-ES|Susurros|XGE-ES|14"
 			]
 		},
 		{
@@ -21253,6 +22129,92 @@
 				"Crear Siervo|Brujo|PHB-ES|Primigenio|PHB-ES|14"
 			]
         },
+		{
+			"name": "El Celestial",
+			"shortName": "Celestial",
+			"source": "XGE-ES",
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"page": 54,
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"llama sagrada|PHB-ES#c",
+							"luz|PHB-ES#c"
+						]
+					},
+					"expanded": {
+						"s1": [
+							"curar heridas|PHB-ES",
+							"saeta guía|PHB-ES"
+						],
+						"s2": [
+							"esfera de llamas|PHB-ES",
+							"restablecimiento menor|PHB-ES"
+						],
+						"s3": [
+							"luz del día|PHB-ES",
+							"revivir|PHB-ES"
+						],
+						"s4": [
+							"guardián de la fe|PHB-ES",
+							"muro de fuego|PHB-ES"
+						],
+						"s5": [
+							"golpe flamígero|PHB-ES",
+							"restablecimiento mayor|PHB-ES"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"El Celestial|Brujo|PHB-ES|Celestial|XGE-ES|1",
+				"Alma Radiante|Brujo|PHB-ES|Celestial|XGE-ES|6",
+				"Resiliencia Celestial|Brujo|PHB-ES|Celestial|XGE-ES|10",
+				"Venganza Ardiente|Brujo|PHB-ES|Celestial|XGE-ES|14"
+			]
+		},
+		{
+			"name": "El Filo Maléfico",
+			"shortName": "Filo Maléfico",
+			"source": "XGE-ES",
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"page": 55,
+			"additionalSpells": [
+				{
+					"expanded": {
+						"s1": [
+							"escudo|PHB-ES",
+							"castigo furioso|PHB-ES"
+						],
+						"s2": [
+							"contorno borroso|PHB-ES",
+							"castigo marcador|PHB-ES"
+						],
+						"s3": [
+							"desplazamiento|PHB-ES",
+							"arma elemental|PHB-ES"
+						],
+						"s4": [
+							"asesino fantasmal|PHB-ES",
+							"castigo abrumador|PHB-ES"
+						],
+						"s5": [
+							"castigo desterrador|PHB-ES",
+							"cono de frío|PHB-ES"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"El Filo Maléfico|Brujo|PHB-ES|Filo Maléfico|XGE-ES|1",
+				"Espectro Maldito|Brujo|PHB-ES|Filo Maléfico|XGE-ES|6",
+				"Armadura de Maleficios|Brujo|PHB-ES|Filo Maléfico|XGE-ES|10",
+				"Maestro de Maldiciones|Brujo|PHB-ES|Filo Maléfico|XGE-ES|14"
+			]
+		},
 		{
             "name": "Escuela de Abjuración",
             "shortName": "Abjuración",
@@ -25134,6 +26096,420 @@
             ]
         },
 		{
+			"name": "Senda del Guardián Ancestral",
+			"source": "XGE-ES",
+			"page": 9,
+			"className": "Bárbaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Guardián Ancestral",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"Algunos bárbaros descienden de culturas que veneran a sus ancestros. Estas tribus enseñan que los guerreros del pasado permanecen en el mundo como poderosos espíritus, de modo que pueden guiar y proteger a los vivos. Cuando uno de los seguidores de esta senda se enfurece, entra en contacto con el mundo de los espíritus y recurre a la ayuda de estos guardianes.",
+				"Los bárbaros que buscan el apoyo de estos espíritus ancestrales son más capaces de proteger a sus tribus y a sus aliados. Para afianzar los vínculos con estos guardianes, los bárbaros que siguen esta senda se cubren de elaborados tatuajes en homenaje a las gestas de sus ancestros. Estos dibujos cuentan sagas de victorias contra monstruos terribles y rivales imponentes.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Protectores Ancestrales|Bárbaro|PHB-ES|Guardián Ancestral|XGE-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Protectores Ancestrales",
+			"source": "XGE-ES",
+			"page": 9,
+			"className": "Bárbaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Guardián Ancestral",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Desde el momento en que elijas esta senda a nivel 3, cada vez que te enfurezcas aparecerán guerreros espectrales. Mientras estés en ese estado, la primera criatura que impactes con un ataque en tu turno se convertirá en el objetivo de estos espíritus, que entorpecerán sus ataques. Hasta el principio de tu siguiente turno, el objetivo tiene desventaja en cualquier tirada de ataque que no sea contra ti y, además, cuando golpee a una criatura que no seas tú con un ataque, esta última disfrutará de resistencia contra el daño de dicho ataque. Este efecto finaliza antes de tiempo si tu furia termina."
+			]
+		},
+		{
+			"name": "Escudo de los Espíritus",
+			"source": "XGE-ES",
+			"page": 9,
+			"className": "Bárbaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Guardián Ancestral",
+			"subclassSource": "XGE-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 6, tus espíritus guardianes pueden otorgar una protección sobrenatural a aquellos que defiendas. Si estás enfurecido y otra criatura que puedas ver y se encuentre a 30 pies o menos de ti recibe daño, puedes usar tu reacción para reducir ese daño en {@dice 2d6}.",
+				"Según alcances ciertos niveles de esta clase, esta reducción de daño se incrementa: {@dice 3d6} a nivel 10 y {@dice 4d6} a nivel 14."
+			]
+		},
+		{
+			"name": "Consultar a los Espíritus",
+			"source": "XGE-ES",
+			"page": 9,
+			"className": "Bárbaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Guardián Ancestral",
+			"subclassSource": "XGE-ES",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"A nivel 10, obtienes la capacidad de comunicarte con tus espíritus ancestrales. Cuando lo haces, lanzas el conjuro de {@spell augurio|PHB-ES} o {@spell clarividencia|PHB-ES} sin utilizar un espacio de conjuro o componentes materiales. En vez de crear un sensor esférico, esta manera de emplear {@spell clarividencia|PHB-ES} invoca a una de las ánimas de tus antepasados en la localización deseada. Tu aptitud mágica para estos conjuros es Sabiduría.",
+				"Después de lanzar uno de los dos conjuros de este modo, no puedes volver a usar este rasgo hasta que termines un descanso corto o largo."
+			]
+		},
+		{
+			"name": "Ancestros Vengativos",
+			"source": "XGE-ES",
+			"page": 9,
+			"className": "Bárbaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Guardián Ancestral",
+			"subclassSource": "XGE-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"A nivel 14, tus espíritus ancestrales se han vuelto tan poderosos que son capaces de contraatacar. Cuando utilizas tu Escudo de los Espíritus para reducir el daño de un ataque, el atacante recibe tanto daño de fuerza como el daño prevenido por el Escudo de los Espíritus."
+			]
+		},
+		{
+			"name": "Senda del Heraldo de las Tormentas",
+			"source": "XGE-ES",
+			"page": 10,
+			"className": "Bárbaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Heraldo de las Tormentas",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"Todos los bárbaros albergan furia en su interior. Su rabia les otorga una fuerza, velocidad y durabilidad superiores a las de los hombres ordinarios. Aquellos que siguen la Senda del Heraldo de las Tormentas aprenden a transformar esa ira en un manto de magia primordial que se arremolina a su alrededor. Cuando la furia le consume, un bárbaro que siga esta senda es capaz de utilizar las fuerzas de la naturaleza para crear poderosos efectos mágicos.",
+				"Los heraldos de la tormenta suelen ser guerreros de élite, que entrenan junto a druidas, exploradores y ciertos protectores jurados de la naturaleza. Otros seguidores de esta senda perfeccionan sus habilidades en regiones castigadas por tempestades, en los confines helados del fin del mundo o en la profundidad de ardientes desiertos.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Aura de Tormenta|Bárbaro|PHB-ES|Heraldo de las Tormentas|XGE-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Aura de Tormenta",
+			"source": "XGE-ES",
+			"page": 10,
+			"className": "Bárbaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Heraldo de las Tormentas",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Desde el nivel 3 emanas un aura mágica y tormentosa cuando te encuentras enfurecido. Esta aura cubre 10 pies alrededor de ti en todas direcciones, pero no atraviesa la cobertura completa.",
+				"Esta aura tiene un efecto que se activa cuando te enfureces y que, además, puedes activar de nuevo en cada uno de tus turnos como acción adicional. Elige desierto, mar o tundra. El efecto de tu aura depende del entorno elegido, como se detalla más abajo. Puedes cambiar tu elección de ambiente cada vez que ganes un nivel en esta clase.",
+				"Si los efectos de tu aura requieren de una tirada de salvación, la CD es igual a 8 + tu bonificador por competencia + tu modificador por Constitución.",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Desierto|Bárbaro|XGE-ES|Heraldo de las Tormentas|XGE-ES|3"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Mar|Bárbaro|XGE-ES|Heraldo de las Tormentas|XGE-ES|3"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Tundra|Bárbaro|XGE-ES|Heraldo de las Tormentas|XGE-ES|3"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Desierto",
+			"source": "XGE-ES",
+			"page": 10,
+			"className": "Bárbaro",
+			"classSource": "XGE-ES",
+			"subclassShortName": "Heraldo de las Tormentas",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"Cuando se activa este efecto, todas las criaturas situadas en tu aura (excepto tú) sufren 2 de daño de fuego cada una. Este daño aumenta cuando alcanzas ciertos niveles en esta clase: 3 a nivel 5, 4 a nivel 10, 5 a nivel 15 y 6 a nivel 20."
+			]
+		},
+		{
+			"name": "Mar",
+			"source": "XGE-ES",
+			"page": 10,
+			"className": "Bárbaro",
+			"classSource": "XGE-ES",
+			"subclassShortName": "Heraldo de las Tormentas",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"Cuando se activa este efecto, puedes escoger a una criatura que puedas ver y se encuentre en tu aura. El objetivo deberá hacer una tirada de salvación de Destreza. Sufrirá {@damage 1d6} puntos de daño de relámpago si falla la tirada o la mitad del daño si la supera. Este daño aumenta cuando alcanzas ciertos niveles de esta clase: {@dice 2d6} a nivel 10, {@dice 3d6} a nivel 15 y {@dice 4d6} a nivel 20."
+			]
+		},
+		{
+			"name": "Tundra",
+			"source": "XGE-ES",
+			"page": 10,
+			"className": "Bárbaro",
+			"classSource": "XGE-ES",
+			"subclassShortName": "Heraldo de las Tormentas",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"Cuando se activa este efecto, cada criatura de tu elección situada en el aura gana 2 puntos de golpe temporales, gracias a los espíritus de hielo que les habitúan al daño. Los puntos de golpe temporales aumentan cuando alcanzas ciertos niveles en esta clase: 3 a nivel 5, 4 a nivel 10, 5 a nivel 15 y 6 a nivel 20."
+			]
+		},
+		{
+			"name": "Alma de Tormenta",
+			"source": "XGE-ES",
+			"page": 10,
+			"className": "Bárbaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Heraldo de las Tormentas",
+			"subclassSource": "XGE-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A nivel 6, la tormenta te proporciona beneficios incluso cuando tu aura no está activa. Estos beneficios dependen del entorno elegido para tu Aura de Tormenta.",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Desierto|Bárbaro|XGE-ES|Heraldo de las Tormentas|XGE-ES|6"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Mar|Bárbaro|XGE-ES|Heraldo de las Tormentas|XGE-ES|6"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Tundra|Bárbaro|XGE-ES|Heraldo de las Tormentas|XGE-ES|6"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Desierto",
+			"source": "XGE-ES",
+			"page": 10,
+			"className": "Bárbaro",
+			"classSource": "XGE-ES",
+			"subclassShortName": "Heraldo de las Tormentas",
+			"subclassSource": "XGE-ES",
+			"level": 6,
+			"entries": [
+				"Ganas resistencia al daño de fuego y no sufres los efectos del calor extremo, tal y como se describen en el Dungeon Master's Guide. Adicionalmente, utilizando una acción, puedes tocar un objeto inflamable que no lleve o vista nadie y hacerlo arder."
+			]
+		},
+		{
+			"name": "Mar",
+			"source": "XGE-ES",
+			"page": 10,
+			"className": "Bárbaro",
+			"classSource": "XGE-ES",
+			"subclassShortName": "Heraldo de las Tormentas",
+			"subclassSource": "XGE-ES",
+			"level": 6,
+			"entries": [
+				"Adquieres resistencia al daño de relámpago y la capacidad de respirar bajo el agua. También ganas una velocidad nadando de 30 pies."
+			]
+		},
+		{
+			"name": "Tundra",
+			"source": "XGE-ES",
+			"page": 10,
+			"className": "Bárbaro",
+			"classSource": "XGE-ES",
+			"subclassShortName": "Heraldo de las Tormentas",
+			"subclassSource": "XGE-ES",
+			"level": 6,
+			"entries": [
+				"Obtienes resistencia al daño de frío y no sufres los efectos del frío extremo, tal y como se describen en el Dungeon Master's Guide. Además, empleando una acción, eres capaz de tocar agua y convertir un cubo de 5 pies de lado de la misma en hielo. Se derretirá pasado 1 minuto. Esta acción falla si alguna criatura está dentro del cubo."
+			]
+		},
+		{
+			"name": "Tormenta Protectora",
+			"source": "XGE-ES",
+			"page": 10,
+			"className": "Bárbaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Heraldo de las Tormentas",
+			"subclassSource": "XGE-ES",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"A nivel 10, aprendes a utilizar tu dominio sobre la tormenta para proteger a otros. Todas las criaturas de tu elección tienen la resistencia al daño que ganaste del rasgo Alma de Tormenta mientras se encuentren en tu Aura de Tormenta."
+			]
+		},
+		{
+			"name": "Tormenta Enfurecida",
+			"source": "XGE-ES",
+			"page": 10,
+			"className": "Bárbaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Heraldo de las Tormentas",
+			"subclassSource": "XGE-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"A nivel 14, tu tormenta se vuelve aún más poderosa, atacando a tus enemigos. Este efecto está basado en el entorno que hayas elegido para tu Aura de Tormenta.",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Desierto|Bárbaro|XGE-ES|Heraldo de las Tormentas|XGE-ES|14"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Mar|Bárbaro|XGE-ES|Heraldo de las Tormentas|XGE-ES|14"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Tundra|Bárbaro|XGE-ES|Heraldo de las Tormentas|XGE-ES|14"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Desierto",
+			"source": "XGE-ES",
+			"page": 10,
+			"className": "Bárbaro",
+			"classSource": "XGE-ES",
+			"subclassShortName": "Heraldo de las Tormentas",
+			"subclassSource": "XGE-ES",
+			"level": 14,
+			"entries": [
+				"Inmediatamente después de que una criatura situada dentro de tu aura te impacte con un ataque, puedes usar tu reacción para obligarla a realizar una tirada de salvación de Destreza. Si la falla, dicha criatura sufrirá la mitad de tu nivel de bárbaro de daño de fuego."
+			]
+		},
+		{
+			"name": "Mar",
+			"source": "XGE-ES",
+			"page": 10,
+			"className": "Bárbaro",
+			"classSource": "XGE-ES",
+			"subclassShortName": "Heraldo de las Tormentas",
+			"subclassSource": "XGE-ES",
+			"level": 14,
+			"entries": [
+				"Cuando impactas a una criatura que se encuentra dentro de tu aura con un ataque, puedes usar tu reacción para obligarla a realizar una tirada de salvación de Fuerza. Si falla la tirada, dicha criatura queda derribada, como si hubiera sido golpeada por una ola."
+			]
+		},
+		{
+			"name": "Tundra",
+			"source": "XGE-ES",
+			"page": 10,
+			"className": "Bárbaro",
+			"classSource": "XGE-ES",
+			"subclassShortName": "Heraldo de las Tormentas",
+			"subclassSource": "XGE-ES",
+			"level": 14,
+			"entries": [
+				"Cuando el efecto de tu Aura de Tormentas se activa, puedes elegir una criatura que puedas ver y esté situada dentro del aura. El objetivo deberá tener éxito en una tirada de salvación de Fuerza o su velocidad quedará reducida a 0 hasta el principio de tu próximo turno debido a la escarcha mágica que la cubre."
+			]
+		},
+		{
+			"name": "Senda del Fanático",
+			"source": "XGE-ES",
+			"page": 11,
+			"className": "Bárbaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Fanático",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"Algunas deidades exhortan a sus seguidores a dejarse llevar por una feroz furia de batalla. Estos bárbaros son fanáticos, guerreros que canalizan su rabia en poderosos alardes de poder divino. ",
+				"Varios dioses de los mundos de D&D conducen a sus seguidores por este camino. Tempus, de los Reinos Olvidados, y Hextor y Erythnul, de Falcongrís, son claros ejemplos. En general, las divinidades que inspiran a fanáticos son deidades del combate, la destrucción y la violencia. No todas son malvadas, pero pocas son buenas.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Furia Divina|Bárbaro|PHB-ES|Fanático|XGE-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Guerrero de los Dioses|Bárbaro|PHB-ES|Fanático|XGE-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Furia Divina",
+			"source": "XGE-ES",
+			"page": 11,
+			"className": "Bárbaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Fanático",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Desde el momento en que elijas esta senda a nivel 3, puedes canalizar la furia divina en los golpes de tus armas. Cuando estés enfurecido, la primera criatura a la que impactes en cada uno de tus turnos con un ataque con arma recibe {@dice 1d6} + la mitad de tu nivel de bárbaro de daño adicional. Este daño adicional es necrótico o radiante. El tipo de daño se elige al obtener este rasgo."
+			]
+		},
+		{
+			"name": "Guerrero de los Dioses",
+			"source": "XGE-ES",
+			"page": 11,
+			"className": "Bárbaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Fanático",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A nivel 3, tu alma queda marcada para la batalla eterna. Si un conjuro, como {@spell alzar a los muertos|PHB-ES}, tiene como único efecto devolverte a la vida (pero no la muerte en vida), el lanzador no necesita componentes materiales para lanzarlo sobre ti."
+			]
+		},
+		{
+			"name": "Foco Fanático",
+			"source": "XGE-ES",
+			"page": 11,
+			"className": "Bárbaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Fanático",
+			"subclassSource": "XGE-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 6, el poder divino que alimenta tu rabia también puede protegerte. Si fallas una tirada de salvación mientras estás enfurecido, puedes repetir dicha tirada, quedándote con el nuevo resultado. Puedes usar esta habilidad solo una vez por furia."
+			]
+		},
+		{
+			"name": "Presencia Ferviente",
+			"source": "XGE-ES",
+			"page": 11,
+			"className": "Bárbaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Fanático",
+			"subclassSource": "XGE-ES",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"A nivel 10 aprendes a canalizar el poder divino para inspirar fanatismo en otros. Como acción adicional, puedes dar rienda suelta a un grito de guerra infundido con energía sagrada. Hasta diez criaturas de tu elección (excepto tú), que se encuentren hasta un máximo de 60 pies de ti y que puedan oírte, ganan ventaja en las tiradas de salvación y de ataque hasta el principio de tu siguiente turno. ",
+				"Una vez utilizado este rasgo, deberás terminar un descanso largo para poder volver a usarlo."
+			]
+		},
+		{
+			"name": "Furia más allá de la muerte",
+			"source": "XGE-ES",
+			"page": 11,
+			"className": "Bárbaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Fanático",
+			"subclassSource": "XGE-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 14, el poder divino que alimenta tu furia te permite ignorar golpes letales.",
+				"Mientras estés enfurecido, tener 0 puntos de golpe no te hace caer {@condition inconsciente|PHB-ES}. Todavía debes realizar tiradas de salvación contra muerte, del mismo modo que sufres los efectos normales de recibir daño estando a 0 puntos de golpe. Sin embargo, si fueras a fallecer debido a haber fallado tiradas de salvación contra muerte, no mueres hasta que tu furia termine. Incluso en ese caso, solo fallecerías si todavía tienes 0 puntos de golpe."
+			]
+		},
+		{
             "name": "Colegio del Conocimiento",
             "source": "PHB-ES",
             "page": 54,
@@ -25276,6 +26652,352 @@
             "header": 2,
             "entries": ["A nivel 14 has logrado dominar el arte de conjugar el lanzamiento de conjuros y el manejo de las armas, mezclándolos armoniosamente. Cuando usas tu acción para lanzar un conjuro de bardo, puedes emplear tu acción adicional para hacer un ataque con arma."]
         },
+		{
+			"name": "Colegio del Glamour",
+			"source": "XGE-ES",
+			"page": 14,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Glamour",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"El Colegio del Glamour es el hogar de aquellos bardos que han afinado su habilidad en el vibrante reino del Feywild o bajo la tutela de alguien que vivió allí. Con sátiros, eladrines y otros feéricos como profesores, estos aventureros aprenden a usar su magia para cautivar y hacer las delicias de quienes los escuchan.",
+				"Los bardos de este colegio son recibidos con una mezcla de admiración y miedo. Sus actuaciones son legendarias. Su elocuencia es tal que un discurso o una de sus canciones puede conseguir que sus captores los liberen o, incluso, acunar a un furioso dragón y que se vuelva autocomplaciente. La misma magia que les permite apaciguar a las bestias es capaz de someter voluntades. Los bardos malvados son capaces de explotar a una comunidad durante semanas, usando su magia para convertir a sus anfitriones en siervos. En contraste, aquellos miembros más heroicos de este colegio utilizan su poder para regocijar a los oprimidos y debilitar a los opresores.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Manto de Inspiración|Bardo|PHB-ES|Glamour|XGE-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Interpretación Cautivadora|Bardo|PHB-ES|Glamour|XGE-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Interpretación Cautivadora",
+			"source": "XGE-ES",
+			"page": 14,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Glamour",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A partir de nivel 3, puedes cargar tu interpretación de energía seductora, usando para ello magia feérica.",
+				"Si actúas durante al menos 1 minuto, puedes intentar maravillar a tu público, ya sea cantando, recitando un poema o bailando. Al final de la actuación, elige tantos humanoides como tu modificador de Carisma. Deben estar situados a 60 pies o menos de ti y haber escuchado o visto todo el espectáculo. Cada objetivo deberá tener éxito en una tirada de salvación de Sabiduría contra tu salvación de conjuros o quedará {@condition hechizado|PHB-ES} por ti. Mientras esté {@condition hechizado|PHB-ES} de esta manera, esa criatura te idolatrará, hablará muy bien de ti a cualquiera con el que se encuentre y tratará de obstaculizar a cualquiera que esté en tu contra, aunque evitará la violencia si no estaba ya dispuesto a luchar por ti. Este efecto se desvanece tras 1 hora, si el objetivo recibe cualquier tipo de daño, si le atacas o si te ve atacando o dañando a cualquiera de sus aliados.",
+				"Si una criatura tiene éxito en su tirada de salvación, no será consciente de que has intentado hechizarla.",
+				"Una vez utilizado este rasgo, deberás terminar un des canso corto o largo para poder volver a emplearlo."
+			]
+		},
+		{
+			"name": "Manto de Inspiración",
+			"source": "XGE-ES",
+			"page": 14,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Glamour",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Cuando te unes al Colegio del Glamour, en el nivel 3, ganas la habilidad de urdir una canción con magia feérica, la cual infundirá en tus aliados vigor y velocidad.",
+				"Como acción adicional, puedes gastar uno de tus usos de Inspiración Bárdica para imbuirte de una apariencia maravillosa. Cuando lo hagas, elige un número de criaturas igual a tu modificador de Carisma, que puedas ver y que te puedan ver y se encuentren a 60 pies o menos de ti. Cada una de ellas gana 5 puntos de golpe temporales. Cuando una criatura consigue estos puntos de golpe temporales, puede utilizar inmediatamente su reacción para mover hasta su velocidad, sin provocar ataques de oportunidad.",
+				"El número de puntos de golpe temporales aumenta según alcanzas ciertos niveles en esta clase, incrementándose a 8 en el nivel 5, a 11 en el nivel 10 y finalmente a 14 en el nivel 15."
+			]
+		},
+		{
+			"name": "Manto de Majestad",
+			"source": "XGE-ES",
+			"page": 14,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Glamour",
+			"subclassSource": "XGE-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A nivel 6 obtienes la capacidad de cubrirte de una magia feérica que incita a los demás a servirte. Como acción adicional, puedes lanzar un conjuro de {@spell orden imperiosa|PHB-ES} sin utilizar un espacio de conjuro y, además, tu aspecto queda envuelto en una belleza sobrenatural durante 1 minuto o hasta que tu concentración termine (como si estuvieras concentrándote en un conjuro). Durante este espacio de tiempo, puedes lanzar {@spell orden imperiosa|PHB-ES} como acción adicional cada turno, sin emplear un espacio de conjuro.",
+				"Cualquier criatura {@condition hechizado|PHB-ES|hechizada} por ti falla automáticamente su tirada de salvación contra la {@spell orden imperiosa|PHB-ES} que lanzas con este rasgo.",
+				"Una vez utilizado este rasgo, deberás finalizar un descanso largo para poder volver a usarlo."
+			]
+		},
+		{
+			"name": "Majestad Inquebrantable",
+			"source": "XGE-ES",
+			"page": 14,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Glamour",
+			"subclassSource": "XGE-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"A nivel 14, tu apariencia se altera de forma permanente, adoptando un aspecto de otro mundo, que te hace parecer más agradable y fiero.",
+				"Además, como acción adicional, puedes asumir una presencia mágica majestuosa durante 1 minuto o hasta que quedes {@condition incapacitado|PHB-ES}. Hasta que termine la duración de este efecto, cuando cualquier criatura te ataque por primera vez en un turno, deberá realizar una tirada de salvación de Carisma contra tu salvación de conjuros. Si falla, no podrá atacarte ese turno y deberá elegir un nuevo objetivo para su ataque o este será desperdiciado. En cambio, si tiene éxito, podrá atacarte ese turno, pero tendrá desventaja en cualquier tirada de salvación que haga contra tus conjuros durante tu próximo turno.",
+				"Una vez asumes esta presencia majestuosa, no puedes emplearla de nuevo hasta que termines un descanso corto o largo."
+			]
+		},
+		{
+			"name": "Colegio de las Espadas",
+			"source": "XGE-ES",
+			"page": 15,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Espadas",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"Los bardos del Colegio de las Espadas reciben el nombre de filos, ya que entretienen con osadas proezas de pericia en armas. Realizan interpretaciones tales como combates fingidos, tragarse sables, lanzamiento de cuchillos o malabares con dagas. Aunque utilizan sus armas para entretener, también son guerreros entrenados y de gran habilidad.",
+				"Su talento con las armas lleva a muchos filos a llevar dobles vidas. Uno de estos bardos quizá use a una compañía circense como tapadera para perversos actos, como asesinatos, robos y chantajes. Otros filos cazan a los malvados, dispensando justicia a los crueles y poderosos. La mayoría de compañías no tienen problema en añadir el talento de uno de ellos a sus filas, debido a la gran emoción que añaden a una actuación, pero pocos se fían por completo de lo que puedan hacer.",
+				"Aquellos bardos que dejan sus vidas como animadores muchas veces acaban teniendo problemas que les impiden mantener en secreto sus otras actividades. Un filo al que pillen robando o haciendo de justiciero supone un lastre demasiado grande para la mayor parte de compañías. Con su habilidad con las armas y su magia, estos bardos acaban encontrando trabajo como sicarios de algún gremio de ladrones o salen en busca de aventuras.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Competencias Adicionales|Bardo|PHB-ES|Espadas|XGE-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Estilo de Combate|Bardo|PHB-ES|Espadas|XGE-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Floritura con la Espada|Bardo|PHB-ES|Espadas|XGE-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Floritura con la Espada",
+			"source": "XGE-ES",
+			"page": 15,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Espadas",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A nivel 3, aprendes a realizar impresionantes muestras de velocidad y de habilidad marcial.",
+				"Cuando realizas una acción de {@action Atacar|PHB-ES} en tu turno, tu velocidad aumenta en 10 pies hasta el final del turno. Además. si un ataque que haces como parte de esta acción impacta a una criatura, puedes usar una de las siguientes Florituras con la Espada a tu elección. Solo puedes emplear una de las opciones de Floritura con la Espada cada turno.",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Floritura defensiva|Bardo|XGE-ES|Espadas|XGE-ES|3"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Floritura cortante|Bardo|XGE-ES|Espadas|XGE-ES|3"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Floritura móvil|Bardo|XGE-ES|Espadas|XGE-ES|3"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Competencias Adicionales",
+			"source": "XGE-ES",
+			"page": 15,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Espadas",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Cuando te unes al Colegio de las Espadas, al alcanzar el nivel 3, ganas competencia con armaduras medias y con {@item cimitarra|PHB-ES|cimitarras}.",
+				"Si eres competente en el uso de un arma cuerpo a cuerpo sencilla o marcial, puedes utilizarla como canalizador mágico para tus conjuros de bardo."
+			]
+		},
+		{
+			"name": "Estilo de Combate",
+			"source": "XGE-ES",
+			"page": 15,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Espadas",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A nivel 3, te especializas en un estilo de combate. Elige una de las siguientes opciones que aparecen a continuación. No puedes volver a escoger una de las opciones de este rasgo, incluso si algún elemento del juego te deja seleccionar de nuevo entre varios estilos de combate.",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Duelo|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Combate con dos armas|PHB-ES"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Ataque Adicional",
+			"source": "XGE-ES",
+			"page": 15,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Espadas",
+			"subclassSource": "XGE-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 6, cuando lleves a cabo la acción de {@action Atacar|PHB-ES} durante tu turno, podrás hacer dos ataques en lugar de uno."
+			]
+		},
+		{
+			"name": "Floritura del Maestro",
+			"source": "XGE-ES",
+			"page": 15,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Espadas",
+			"subclassSource": "XGE-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 14, siempre que uses una de las opciones de Floritura con la Espada, puedes lanzar un {@dice d6} y utilizarlo en vez de emplear uno de tus dados de Inspiración Bárdica."
+			]
+		},
+		{
+			"name": "Colegio de los Susurros",
+			"source": "XGE-ES",
+			"page": 16,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Susurros",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"La mayoría de la gente no tiene problema en acoger a un bardo. De esto se aprovechan los miembros del Colegio de los Susurros. Se comportan como el resto de bardos: comparten noticias, cantan canciones y cuentan historias para el público. Pero, en realidad, este colegio enseña a sus estudiantes a ser como lobos entre el rebaño. Sus integrantes utilizan su conocimiento y su magia para descubrir secretos y volverlos contra otros, normalmente en forma de extorsión y amenazas.",
+				"Muchos otros bardos odian al Colegio de los Susurros. Lo ven como un parásito que usa la reputación de los de su clase para adquirir riqueza y poder. Por este motivo, los miembros de este colegio rara vez revelan su verdadera naturaleza. Normalmente dicen ser de otro colegio o no descubren su verdadera afiliación para poder infiltrarse y aprovecharse de cortes reales o entornos similares.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hoja Psíquica|Bardo|PHB-ES|Susurros|XGE-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Palabras de Terror|Bardo|PHB-ES|Susurros|XGE-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Hoja Psíquica",
+			"source": "XGE-ES",
+			"page": 16,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Susurros",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Cuando te unes al Colegio de los Susurros, a nivel 3, consigues la capacidad de hacer que tu arma intoxique de forma mágica la mente de una criatura.",
+				"Cuando impactas a una criatura con un ataque con arma, puedes emplear uno de tus usos de Inspiración Bárdica para infligir {@damage 2d6} de daño psíquico adicional al objetivo. Solo puedes realizar esto una vez por asalto, en tu turno.",
+				"El daño psíquico toma nuevos valores cuando llegas a niveles concretos de esta clase: {@dice 3d6} a nivel 5, {@dice 5d6} a nivel 10 y {@dice 8d6} a nivel 15."
+			]
+		},
+		{
+			"name": "Palabras de Terror",
+			"source": "XGE-ES",
+			"page": 16,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Susurros",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A nivel 3, aprendes a infundir palabras aparentemente inocentes con una magia insidiosa, capaz de infundir terror.",
+				"Si hablas a solas con un humanoide durante por lo menos 1 minuto, puedes intentar plantar la semilla de la paranoia en su mente. Al final de la conversación, el objetivo deberá tener éxito en una tirada de salvación de Sabiduría contra tu CD de salvación de conjuros o quedará {@condition asustado|PHB-ES} de ti o de otra criatura de tu elección. Este efecto dura 1 hora, hasta que el objetivo sea atacado o dañado, o hasta que vea a sus aliados ser atacados o dañados.",
+				"Si la criatura tiene éxito en su tirada de salvación, no será consciente de que has intentado asustarla.",
+				"Una vez utilizado este rasgo, deberás terminar un des canso corto o largo para poder volver a usarlo."
+			]
+		},
+		{
+			"name": "Manto de Susurros",
+			"source": "XGE-ES",
+			"page": 16,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Susurros",
+			"subclassSource": "XGE-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A nivel 6 consigues la capacidad de adoptar la identidad de otra persona. Cuando un humanoide situado a 30 pies o menos de ti muere, puedes capturar su sombra de forma mágica usando tu reacción. De este modo, la retienes hasta que la utilices o hasta que completes un descanso largo.",
+				"Como acción, puedes emplear la sombra. Si lo haces, esta desaparece, transformándose en un disfraz mágico que se coloca sobre ti. Pasas a tener el aspecto de la persona muerta, pero vivo y en perfecto estado de salud. El disfraz dura 1 hora o hasta que decidas retirarlo como acción adicional.",
+				"Mientras estás disfrazado, tienes acceso a toda la información que el humanoide hubiera compartido libremente con un conocido. Esta incluye detalles generales sobre su trasfondo y vida personal, pero no secretos. Estos datos son suficientes como para hacerte pasar por esta persona usando sus recuerdos.",
+				"Otra criatura podría detectar el disfraz teniendo éxito en una tirada enfrentada entre su prueba de Sabiduría ({@skill Insight|Perspicacia}) y tu prueba de Carisma ({@skill Deception|Engaño}). Disfrutas de un bonificador de +5 en esta prueba.",
+				"Una vez capturas una sombra utilizando este rasgo, puedes apresar otra hasta que no termines un descanso corto o largo."
+			]
+		},
+		{
+			"name": "Saber de las sombras",
+			"source": "XGE-ES",
+			"page": 16,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Susurros",
+			"subclassSource": "XGE-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"A nivel 14 eres capaz de entretejer magia oscura en tus palabras y acceder a los miedos más profundos de una criatura. Como acción, puedes pronunciar una frase que solo será oída por un objetivo de tu elección que se encuentre a 30 pies o menos de ti. Este deberá hacer una tirada de salvación de Sabiduría contra tu CD de salvación de conjuros. Tiene éxito de forma automática si no comparte un lenguaje contigo o si no puede oírte. Si la supera, tu susurro parecerá un murmullo ininteligible y no tendrá efecto. En cambio, si la falla, quedará {@condition hechizado|PHB-ES} por ti durante 8 horas, o hasta que tú o uno de tus aliados le ataquéis, dañéis o forcéis a realizar una tirada de salvación. El susurro le parecerá una descripción de su secreto más vergonzoso. No consigues ninguna información sobre este, pero tu objetivo estará convencido de que conoces su secreto.",
+				"La criatura {@condition hechizado|PHB-ES|hechizada} obedecerá tus instrucciones por miedo a que reveles el secreto. No arriesgará su vida o luchará por ti, a menos que ya estuviera dispuesta a hacerlo antes. Te otorgará favores y regalos que ofrecería a un amigo muy cercano.",
+				"Cuando el efecto termina, la criatura no entiende por qué te tenía tanto miedo.",
+				"Una vez utilizado este rasgo, deberás finalizar un descanso largo para poder volver a usarlo."
+			]
+		},
+		{
+			"name": "Floritura defensiva",
+			"source": "XGE-ES",
+			"page": 15,
+			"className": "Bardo",
+			"classSource": "XGE-ES",
+			"subclassShortName": "Espadas",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"Puedes gastar uno de tus usos de Inspiración Bárdica para que el arma inflija daño adicional al objetivo impactado. El daño es igual al número que obtengas en el dado de Inspiración Bárdica. También añades ese dado a tu CA hasta el comienzo de tu próximo turno."
+			]
+		},
+		{
+			"name": "Floritura móvil",
+			"source": "XGE-ES",
+			"page": 15,
+			"className": "Bardo",
+			"classSource": "XGE-ES",
+			"subclassShortName": "Espadas",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"Puedes emplear uno de tus usos de Inspiración Bárdica para que el arma inflija daño adicional al objetivo impactado. El daño es igual al número que obtengas en el dado de Inspiración Bárdica. Además, puedes empujar a tu objetivo hasta 5 pies más el número que hayas obtenido en este dado. Inmediatamente después, puedes utilizar tu reacción para moverte hasta tu velocidad caminando a un espacio libre que se encuentre a 5 pies o menos del objetivo."
+			]
+		},
+		{
+			"name": "Floritura cortante",
+			"source": "XGE-ES",
+			"page": 15,
+			"className": "Bardo",
+			"classSource": "XGE-ES",
+			"subclassShortName": "Espadas",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"Puedes utilizar uno de tus usos de Inspiración Bárdica para hacer que el arma inflija daño adicional a la criatura impactada y a cualquier otra criatura de tu elección que se encuentre hasta a 5 pies de ti y a la que puedas ver. El daño es igual al número que obtengas en el dado de Inspiración Bárdica."
+			]
+		},
 		{
             "name": "Dominio del Conocimiento",
             "source": "PHB-ES",
@@ -29077,6 +30799,287 @@
 				"Mientras los dos estéis en el mismo plano de existencia podrás comunicarte telepáticamente con la criatura {@condition hechizado|PHB-ES|hechizada}."
 			]
         }, 
+		{
+			"name": "El Celestial",
+			"source": "XGE-ES",
+			"page": 54,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Celestial",
+			"subclassSource": "XGE-ES",
+			"level": 1,
+			"entries": [
+				"Tu patrón es un poderoso ser de los Planos Superiores. Te has vinculado con un antiguo empíreo, solar, kirin, unicornio u otra entidad que resida en los planos de dicha dimensión Tu pacto con este ser te permite experimentar hasta el más mínimo rayo de luz sagrada que ilumina el multiverso.",
+				"Estar conectado con estos poderes puede causar cambios en tu comportamiento y en tus creencias. Puede que te encuentres impulsado a aniquilar muertos vivientes, derrotar infernales y proteger a los inocentes. A veces, tu corazón añorará el reino celestial de tu patrón, poder vagar por ese paraíso el resto de tus días. No obstante, sabes que tu misión está entre los mortales por ahora y que tu pacto te obliga a llevar luz a los rincones más oscuros del mundo.",
+				{
+					"type": "entries",
+					"name": "Lista de Conjuros Ampliada",
+					"entries": [
+						"El Celestial te permite elegir de entre una lista de conjuros ampliada cada vez que aprendes un conjuro de brujo. Los siguientes conjuros también forman parte de tu lista de conjuros de brujo.",
+						{
+							"type": "table",
+							"caption": "Lista de conjuros ampliada del Celestial",
+							"colLabels": [
+								"Nivel de conjuro",
+								"Conjuros"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"{@spell curar heridas|PHB-ES}, {@spell saeta guía|PHB-ES}"
+								],
+								[
+									"2",
+									"{@spell esfera de llamas|PHB-ES}, {@spell restablecimiento menor|PHB-ES}"
+								],
+								[
+									"3",
+									"{@spell luz del día|PHB-ES}, {@spell revivir|PHB-ES}"
+								],
+								[
+									"4",
+									"{@spell guardián de la fe|PHB-ES}, {@spell muro de fuego|PHB-ES}"
+								],
+								[
+									"5",
+									"{@spell golpe flamígero|PHB-ES}, {@spell restablecimiento mayor|PHB-ES}"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Trucos Adicionales|Brujo|PHB-ES|Celestial|XGE-ES|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Luz Sanadora|Brujo|PHB-ES|Celestial|XGE-ES|1"
+				}
+			]
+		},
+		{
+			"name": "Trucos Adicionales",
+			"source": "XGE-ES",
+			"page": 54,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Celestial",
+			"subclassSource": "XGE-ES",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"A nivel 1, aprendes los trucos {@spell luz|PHB-ES} y {@spell llama sagrada|PHB-ES}. Se consideran trucos de brujo para ti, pero no cuentan como parte de tu número de trucos conocidos."
+			]
+		},
+		{
+			"name": "Luz Sanadora",
+			"source": "XGE-ES",
+			"page": 54,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Celestial",
+			"subclassSource": "XGE-ES",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"A nivel 1 obtienes la capacidad de canalizar energía celestial para curar heridas. Tienes una reserva de dados ({@dice d6}) que puedes gastar para realizar esta curación. La cantidad de estos dados es igual a 1 + tu nivel de brujo.",
+				"Como acción adicional, puedes sanar a una criatura que puedas ver y se encuentre a 60 pies o menos de ti, gastando dados de dicha reserva. El máximo número de ellos que pue des emplear a la vez es igual a tu modificador de Carisma (mínimo de 1 dado). Lanza los dados que hayas decidido, suma los resultados y restaura ese número total de puntos de golpe a la criatura escogida.",
+				"Tu reserva recupera todos los dados gastados cuando completas un descanso largo."
+			]
+		},
+		{
+			"name": "Alma Radiante",
+			"source": "XGE-ES",
+			"page": 54,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Celestial",
+			"subclassSource": "XGE-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 6, tu vínculo con el Celestial te permite servir como conducto para la energía luminosa. Obtienes resistencia al daño radiante y, además, cuando lanzas un conjuro que inflige daño de fuego o radiante, puedes añadir tu modificador de Carisma a una tirada de daño radiante o de fuego de ese conjuro, contra uno de sus objetivos."
+			]
+		},
+		{
+			"name": "Resiliencia Celestial",
+			"source": "XGE-ES",
+			"page": 54,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Celestial",
+			"subclassSource": "XGE-ES",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 10, consigues puntos de golpe temporales siempre que termines un descanso corto o largo. Estos son iguales a tu nivel de brujo + tu modificador de Carisma. Además, elige hasta a cinco criaturas que puedas ver en el momento de terminar el descanso. Cada una de ellas consigue tantos puntos de golpe temporales iguales como la mitad de tu nivel de brujo + tu modificador de Carisma."
+			]
+		},
+		{
+			"name": "Venganza Ardiente",
+			"source": "XGE-ES",
+			"page": 54,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Celestial",
+			"subclassSource": "XGE-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"A nivel 14, la energía radiante que canalizas te permite resistir a la muerte. Cuando tengas que realizar una tirada de salvación contra muerte al principio de tu turno, en vez de eso puedes ponerte en pie súbitamente en un estallido de energía radiante. Recuperas tantos puntos de golpe como tus puntos de golpe máximos y después puedes levantarte si así lo deseas. Cada criatura de tu elección que se encuentre a 30 pies o menos de ti recibirá {@dice 2d8} + tu modificador de Carisma de daño radiante y quedará {@condition cegado|PHB-ES|cegada} hasta el final del turno actual.",
+				"Una vez utilizado este rasgo, deberás terminar un des canso largo para poder volver a usarlo."
+			]
+		},
+		{
+			"name": "El Filo Maléfico",
+			"source": "XGE-ES",
+			"page": 55,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Filo Maléfico",
+			"subclassSource": "XGE-ES",
+			"level": 1,
+			"entries": [
+				"Has forjado un pacto con una misteriosa entidad del Shadowfell: una fuerza que se manifiesta en armas conscientes hechas de jirones de sombra. La poderosa espada Negrarma es la más notable de todas ellas, que se han extendido por el multiverso a lo largo de los años. La fuerza sombría tras estas armas puede ofrecer poder a los brujos que forjen pactos con ellas. Muchos seguidores del Filo Maléfico crean armas que emulan a las que se forman en el Shadowfell. Otros las ignoran y se contentan con entretejer la magia oscura de ese plano en su lanzamiento de conjuros.",
+				"Como es sabido, la Reina Cuervo forjó la primera de estas armas, por lo que muchos sabios sostienen que ella y la fuerza son en realidad una, y que las armas, junto con los brujos filo maléfico, son herramientas que utiliza para manipular los eventos del Plano Material para sus propios fines inescrutables.",
+				{
+					"type": "entries",
+					"name": "Lista de Conjuros Ampliada",
+					"entries": [
+						"El Filo Maléfico te permite elegir de entre una lista de con juros ampliada cada vez que aprendes un conjuro de brujo. Los siguientes conjuros también forman parte de tu lista de conjuros de brujo.",
+						{
+							"type": "table",
+							"caption": "Lista de conjuros ampliada del Filo Maléfico",
+							"colLabels": [
+								"Nivel de conjuro",
+								"Conjuros"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"{@spell castigo furioso|PHB-ES}, {@spell escudo|PHB-ES}"
+								],
+								[
+									"2",
+									"{@spell castigo marcador|PHB-ES}, {@spell contorno borroso|PHB-ES}"
+								],
+								[
+									"3",
+									"{@spell arma elemental|PHB-ES}, {@spell desplazamiento|PHB-ES}"
+								],
+								[
+									"4",
+									"{@spell asesino fantasmal|PHB-ES}, {@spell castigo abrumador|PHB-ES}"
+								],
+								[
+									"5",
+									"{@spell castigo desterrador|PHB-ES}, {@spell cono de frío|PHB-ES}"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Maldición del Filo Maléfico|Brujo|PHB-ES|Filo Maléfico|XGE-ES|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Guerrero Maléfico|Brujo|PHB-ES|Filo Maléfico|XGE-ES|1"
+				}
+			]
+		},
+		{
+			"name": "Guerrero Maléfico",
+			"source": "XGE-ES",
+			"page": 55,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Filo Maléfico",
+			"subclassSource": "XGE-ES",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"A nivel 1, adquieres el entrenamiento necesario para armarte de forma efectiva para la batalla. Obtienes competencia con armaduras medias, escudos y armas marciales.",
+				"La influencia de tu patrón también te permite canalizar tu voluntad místicamente a través de un arma concreta. Tras terminar un descanso largo, puedes tocar un arma con la que seas competente y que no tenga la propiedad \"a dos manos\". Cuando ataques con esa arma, puedes usar tu modificador de Carisma, en vez del de Fuerza o Destreza, tanto para las tiradas de ataque como para las de daño. Este beneficio dura hasta que completes un descanso largo. Si consigues más tarde el rasgo Pacto del Filo, este efecto se extiende a cualquier arma de pacto que conjures con ese rasgo, independientemente del tipo que sea."
+			]
+		},
+		{
+			"name": "Maldición del Filo Maléfico",
+			"source": "XGE-ES",
+			"page": 55,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Filo Maléfico",
+			"subclassSource": "XGE-ES",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"A nivel 1, eres capaz de imponer una maldición terrible. Como acción adicional, elige a una criatura que puedas ver y se encuentre a 30 pies o menos de ti. El objetivo queda maldito durante 1 minuto. Esta maldición termina antes de ese tiempo si el objetivo o tú morís, o si quedas {@condition incapacitado|PHB-ES}. Hasta que la maldición finalice, obtienes los siguientes beneficios:",
+				{
+					"type": "list",
+					"items": [
+						"Consigues un bonificador a las tiradas de ataque contra el objetivo. Este bonificador es igual a tu bonificador por competencia.",
+						"Cualquier tirada de ataque que realices contra la criatura maldita es un crítico con un resultado de 19 o 20 en el {@dice d20}.",
+						"Si el objetivo maldito muere, recuperas tantos puntos de golpe como tu nivel de brujo + tu modificador de Carisma (mínimo 1 punto de golpe)."
+					]
+				},
+				"Una vez utilizado este rasgo, deberás terminar un descanso corto o largo para poder volver a usarlo."
+			]
+		},
+		{
+			"name": "Espectro Maldito",
+			"source": "XGE-ES",
+			"page": 55,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Filo Maléfico",
+			"subclassSource": "XGE-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 6, puedes maldecir el alma de una persona a la que mates, forzándola a servirte temporalmente. Cuando acabas con la vida de un humanoide, puedes hacer que su espíritu se alce de su cadáver como un espectro. Puedes encontrar su perfil en el Monster Manual. Cuando el {@creature espectro|MM-ES} aparece, este obtiene tantos puntos de golpe temporales como la mitad de tu nivel de brujo. Haz una tirada de iniciativa para el espectro, que tiene sus propios turnos. Obedecerá tus órdenes verbales y, además, cuenta con un bonificador especial a sus tiradas de ataque igual a tu modificador de Carisma (mínimo de +0).",
+				"El espectro estará a tu servicio hasta el final de tu siguiente descanso largo, momento en el que se disipará en el más allá.",
+				"Una vez ates a un alma con este rasgo, no podrás utilizarlo de nuevo hasta que acabes un descanso largo."
+			]
+		},
+		{
+			"name": "Armadura de Maleficios",
+			"source": "XGE-ES",
+			"page": 55,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Filo Maléfico",
+			"subclassSource": "XGE-ES",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"A nivel 10, tu maleficio se vuelve más poderoso. Si el objetivo de tu Maldición del Filo Maléfico te impacta con una tirada de ataque, puedes utilizar tu reacción para tirar un {@dice d6}. Con un resultado de 4 o superior, el ataque falla, independientemente de su tirada."
+			]
+		},
+		{
+			"name": "Maestro de Maldiciones",
+			"source": "XGE-ES",
+			"page": 55,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Filo Maléfico",
+			"subclassSource": "XGE-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 14, puedes extender tu Maldición del Filo Maléfico de una criatura derrotada a otra. Cuando el objetivo afectado por tu Maldición del Filo Maléfico muera, puedes trasladar la maldición a una criatura diferente que puedas ver y se encuentre a 30 pies o menos de ti, siempre que no estés {@condition incapacitado|PHB-ES}. Cuando transfieres la maldición de este modo, no recuperas puntos de golpe por la muerte de la criatura previamente maldita."
+			]
+		},
 		{
             "name": "Escuela de Abjuración",
             "source": "PHB-ES",
@@ -48117,7 +50120,7 @@
 				{
 					"type": "entries",
 					"entries": [
-						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE-ES|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
 					]
 				}
 			]
@@ -48406,7 +50409,7 @@
 				{
 					"type": "entries",
 					"entries": [
-						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE-ES|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
 					]
 				}
 			],
@@ -48546,7 +50549,7 @@
 				{
 					"type": "entries",
 					"entries": [
-						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE-ES|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
 					]
 				}
 			],
@@ -48708,7 +50711,7 @@
 				{
 					"type": "entries",
 					"entries": [
-						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE-ES|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
 					]
 				}
 			],
@@ -48818,7 +50821,7 @@
 				{
 					"type": "entries",
 					"entries": [
-						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE-ES|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
 					]
 				}
 			],
@@ -48995,7 +50998,7 @@
 				{
 					"type": "entries",
 					"entries": [
-						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE-ES|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
 					]
 				}
 			],
@@ -49117,7 +51120,7 @@
 				{
 					"type": "entries",
 					"entries": [
-						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE-ES|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
 					]
 				}
 			],
@@ -49830,7 +51833,7 @@
 				{
 					"type": "entries",
 					"entries": [
-						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE-ES|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
 					]
 				}
 			],
@@ -50240,7 +52243,7 @@
 				{
 					"type": "entries",
 					"entries": [
-						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE-ES|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
 					]
 				}
 			],
@@ -50354,7 +52357,7 @@
 				{
 					"type": "entries",
 					"entries": [
-						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE-ES|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
 					]
 				}
 			],
@@ -50537,7 +52540,7 @@
 				{
 					"type": "entries",
 					"entries": [
-						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE-ES|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
 					]
 				}
 			],
@@ -50780,7 +52783,7 @@
 				{
 					"type": "entries",
 					"entries": [
-						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE-ES|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
 					]
 				}
 			],
@@ -51110,7 +53113,7 @@
 				{
 					"type": "entries",
 					"entries": [
-						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE-ES|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
 					]
 				}
 			],
@@ -51524,7 +53527,7 @@
 				{
 					"type": "entries",
 					"entries": [
-						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE-ES|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
 					]
 				}
 			],
@@ -51795,7 +53798,7 @@
 				{
 					"type": "entries",
 					"entries": [
-						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE-ES|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
 					]
 				}
 			],
@@ -52431,7 +54434,7 @@
 				{
 					"type": "entries",
 					"entries": [
-						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE-ES|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
 					]
 				}
 			],
@@ -52533,7 +54536,7 @@
 				{
 					"type": "entries",
 					"entries": [
-						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE-ES|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
 					]
 				}
 			],
@@ -52636,7 +54639,7 @@
 				{
 					"type": "entries",
 					"entries": [
-						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE-ES|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
 					]
 				}
 			]
@@ -53438,7 +55441,7 @@
 				{
 					"type": "entries",
 					"entries": [
-						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE-ES|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
 					]
 				},
 				"La competencia en juegos se aplica a un tipo de juego, como la Apuesta de los Tres Dragones, o a los juegos de azar que usan dados.",
@@ -53503,7 +55506,7 @@
 				{
 					"type": "entries",
 					"entries": [
-						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE-ES|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
 					]
 				},
 				"La competencia con un instrumento musical indica que estás familiarizado con las técnicas necesarias para tocarlo y que también conoces algunas canciones que habitualmente se interpretan usándolo.",
@@ -54223,6 +56226,10 @@
             "srd": true,
             "otherSources": [
 				{
+					"source": "XGE-ES",
+					"page": 15
+				},
+				{
                     "source": "PHB-ES",
                     "page": 84
                 }, {
@@ -54267,6 +56274,10 @@
             "page": 72,
             "srd": true,
             "otherSources": [
+				{
+					"source": "XGE-ES",
+					"page": 15
+				},
 				{
                     "source": "PHB-ES",
                     "page": 91
@@ -55398,7 +57409,425 @@
 				"Tu patrón te hace entrega de un grimorio que recibe el nombre de Libro de las Sombras. Cuando obtengas este rasgo, elige tres {@filter trucos|spells|level=0|class=(PHB-ES)} de la lista de conjuros de cualquier clase. No tienen por qué ser los tres de la misma lista. Mientras tengas el libro contigo, puedes lanzar esos trucos a voluntad y no cuentan dentro de tu límite de trucos conocidos. Además, aunque no aparezcan en la lista de conjuros de brujo, para ti sí que se considerarán como conjuros de brujo.",
 				"Si pierdes el Libro de las Sombras, puedes llevar a cabo una ceremonia de 1 hora a través de la cual tu patrón te proporcionará un reemplazo. Puedes ejecutarla como parte de un descanso corto o largo, y esta ceremonia destruye el libro anterior. El Libro de las Sombras se convierte en cenizas cuando mueres."
 			]
-        }
+        },
+		{
+			"name": "Banishing Arrow",
+			"source": "XGE-ES",
+			"page": 29,
+			"featureType": [
+				"AS_Esp"
+			],
+			"entries": [
+				"You use abjuration magic to try to temporarily banish your target to a harmless location in the Feywild. The creature hit by the arrow must also succeed on a Charisma saving throw or be banished. While banished in this way, the target's speed is 0, and it is {@condition incapacitated}. At the end of its next turn, the target reappears in the space it vacated or in the nearest unoccupied space if that space is occupied.",
+				"After you reach 18th level in this class, a target also takes {@damage 2d6} force damage when the arrow hits it."
+			]
+		},
+		{
+			"name": "Beguiling Arrow",
+			"source": "XGE-ES",
+			"page": 29,
+			"featureType": [
+				"AS_Esp"
+			],
+			"entries": [
+				"Your enchantment magic causes this arrow to temporarily beguile its target. The creature hit by the arrow takes an extra {@damage 2d6} psychic damage, and choose one of your allies within 30 feet of the target. The target must succeed on a Wisdom saving throw, or it is {@condition charmed} by the chosen ally until the start of your next turn. This effect ends early if the chosen ally attacks the {@condition charmed} target, deals damage to it, or forces it to make a saving throw.",
+				"The psychic damage increases to {@damage 4d6} when you reach 18th level in this class."
+			]
+		},
+		{
+			"name": "Bursting Arrow",
+			"source": "XGE-ES",
+			"page": 29,
+			"featureType": [
+				"AS_Esp"
+			],
+			"entries": [
+				"You imbue your arrow with force energy drawn from the school of evocation. The energy detonates after your attack. Immediately after the arrow hits the creature, the target and all other creatures within 10 feet of it take {@damage 2d6} force damage each.",
+				"The force damage increases to {@damage 4d6} when you reach 18th level in this class."
+			]
+		},
+		{
+			"name": "Enfeebling Arrow",
+			"source": "XGE-ES",
+			"page": 29,
+			"featureType": [
+				"AS_Esp"
+			],
+			"entries": [
+				"You weave necromantic magic into your arrow. The creature hit by the arrow takes an extra {@damage 2d6} necrotic damage. The target must also succeed on a Constitution saving throw, or the damage dealt by its weapon attacks is halved until the start of your next turn.",
+				"The necrotic damage increases to {@damage 4d6} when you reach 18th level in this class."
+			]
+		},
+		{
+			"name": "Grasping Arrow",
+			"source": "XGE-ES",
+			"page": 29,
+			"featureType": [
+				"AS_Esp"
+			],
+			"entries": [
+				"When this arrow strikes its target, conjuration magic creates grasping, poisonous brambles, which wrap around the target. The creature hit by the arrow takes an extra {@damage 2d6} poison damage, its speed is reduced by 10 feet, and it takes {@damage 2d6} slashing damage the first time on each turn it moves 1 foot or more without teleporting. The target or any creature that can reach it can use its action to remove the brambles with a successful Strength ({@skill Athletics}) check against your Arcane Shot save DC. Otherwise, the brambles last for 1 minute or until you use this option again.",
+				"The poison damage and slashing damage both increase to {@damage 4d6} when you reach 18th level in this class."
+			]
+		},
+		{
+			"name": "Piercing Arrow",
+			"source": "XGE-ES",
+			"page": 29,
+			"featureType": [
+				"AS_Esp"
+			],
+			"entries": [
+				"You use transmutation magic to give your arrow an ethereal quality. When you use this option, you don't make an attack roll for the attack. Instead, the arrow shoots forward in a line, which is 1 foot wide and 30 feet long, before disappearing. The arrow passes harmlessly through objects, ignoring cover. Each creature in that line must make a Dexterity saving throw. On a failed save, a creature takes damage as if it were hit by the arrow, plus an extra {@damage 1d6} piercing damage. On a successful save, a target takes half as much damage.",
+				"The piercing damage increases to {@damage 2d6} when you reach 18th level in this class."
+			]
+		},
+		{
+			"name": "Seeking Arrow",
+			"source": "XGE-ES",
+			"page": 30,
+			"featureType": [
+				"AS_Esp"
+			],
+			"entries": [
+				"Using divination magic, you grant your arrow the ability to seek out a target. When you use this option, you don't make an attack roll for the attack. Instead, choose one creature you have seen in the past minute. The arrow flies toward that creature, moving around corners if necessary and ignoring three-quarters cover and half cover. If the target is within the weapon's range and there is a path large enough for the arrow to travel to the target, the target must make a Dexterity saving throw. Otherwise, the arrow disappears after traveling as far as it can. On a failed save, the target takes damage as if it were hit by the arrow, plus an extra {@damage 1d6} force damage, and you learn the target's current location. On a successful save, the target takes half as much damage, and you don't learn its location.",
+				"The force damage increases to {@damage 2d6} when you reach 18th level in this class."
+			]
+		},
+		{
+			"name": "Shadow Arrow",
+			"source": "XGE-ES",
+			"page": 30,
+			"featureType": [
+				"AS_Esp"
+			],
+			"entries": [
+				"You weave illusion magic into your arrow, causing it to occlude your foe's vision with shadows. The creature hit by the arrow takes an extra {@damage 2d6} psychic damage, and it must succeed on a Wisdom saving throw or be unable to see anything farther than 5 feet away until the start of your next turn.",
+				"The psychic damage increases to {@damage 4d6} when you reach 18th level in this class."
+			]
+		},
+		{
+			"name": "Aspecto de la Luna",
+			"source": "XGE-ES",
+			"page": 56,
+			"featureType": [
+				"EI_Esp"
+			],
+			"prerequisite": [
+				{
+					"pact": "Pacto del Grimorio"
+				}
+			],
+			"entries": [
+				"Ya no necesitas dormir y no pueden forzarte a hacerlo de ninguna manera. Para conseguir los beneficios de un des canso largo, puedes pasar 8 horas realizando actividades poco intensas, como leer tu Libro de las Sombras o montar guardia."
+			]
+		},
+		{
+			"name": "Capa de Moscas",
+			"source": "XGE-ES",
+			"page": 56,
+			"featureType": [
+				"EI_Esp"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Brujo"
+						}
+					}
+				}
+			],
+			"entries": [
+				"Como acción adicional, puedes rodearte de un aura mágica con apariencia de moscas zumbando. Esta cubre un área de 5 pies alrededor de ti en todas direcciones, pero no atraviesa la cobertura completa. Dura hasta que quedes {@condition incapacitado|PHB-ES} o la des por terminada usando una acción adicional.",
+				"El aura te otorga ventaja en las pruebas de Carisma ({@skill Intimidation|Intimidación}) y desventaja en todo el resto de pruebas de Carisma. Cualquier otra criatura que comience su turno en el área recibe tanto daño de veneno como tu modificador de Carisma (mínimo 0 de daño).",
+				"Una vez utilizada esta invocación, deberás terminar un descanso corto o largo para poder volver a usarla."
+			]
+		},
+		{
+			"name": "Castigo Arcano",
+			"source": "XGE-ES",
+			"page": 56,
+			"featureType": [
+				"EI_Esp"
+			],
+			"prerequisite": [
+				{
+					"pact": "Pacto del Filo",
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Brujo"
+						}
+					}
+				}
+			],
+			"entries": [
+				"Una vez por turno, cuando impactas a una criatura con tu arma de pacto, puedes utilizar un espacio de conjuro de brujo para infligir {@damage 1d8} de daño de fuerza adicional, más {@damage 1d8} por cada nivel del espacio de conjuro empleado. Además, si el objetivo es de tamaño Enorme o menor, puedes {@condition derribado|PHB-ES|derribarlo}."
+			]
+		},
+		{
+			"name": "Mirada Fantasmal",
+			"source": "XGE-ES",
+			"page": 56,
+			"featureType": [
+				"EI_Esp"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Brujo"
+						}
+					}
+				}
+			],
+			"entries": [
+				"Como acción, obtienes la habilidad de ver a través de objetos sólidos situados hasta a 30 pies de distancia. Dentro de ese alcance, además, tienes {@sense darkvision|visión en la oscuridad} si no la tenías ya. Esta vista especial dura 1 minuto o hasta que acabe tu concentración (como si te estuvieras concentrando en un conjuro). Durante ese tiempo, percibes los objetos como imágenes fantasmales, transparentes.",
+				"Una vez utilizada esta invocación, deberás terminar un descanso corto o largo para poder volver a usarla."
+			]
+		},
+		{
+			"name": "Don de las Profundidades",
+			"source": "XGE-ES",
+			"page": 57,
+			"featureType": [
+				"EI_Esp"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Brujo"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1e": [
+									"respirar bajo el agua|PHB-ES"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"Puedes respirar bajo el agua y ganas una velocidad nadando igual a tu velocidad caminando.",
+				"También puedes lanzar {@spell respirar bajo el agua|PHB-ES} una vez sin gastar un espacio de conjuro. Recuperas la capacidad para hacerlo tras finalizar un descanso largo."
+			]
+		},
+		{
+			"name": "Don de los Siempre Vivos",
+			"source": "XGE-ES",
+			"page": 57,
+			"featureType": [
+				"EI_Esp"
+			],
+			"prerequisite": [
+				{
+					"pact": "Pacto de la Cadena"
+				}
+			],
+			"entries": [
+				"Cuando recuperes puntos de golpe y tu familiar esté a 100 pies o menos de ti, trata el resultado de cualquier dado tirado para determinar los puntos de golpe que recuperas como si hubiera obtenido el máximo resultado."
+			]
+		},
+		{
+			"name": "Agarre de Hadar",
+			"source": "XGE-ES",
+			"page": 57,
+			"featureType": [
+				"EI_Esp"
+			],
+			"prerequisite": [
+				{
+					"spell": [
+						"descarga sobrenatural|PHB-ES#c"
+					]
+				}
+			],
+			"entries": [
+				"Una vez en cada uno de tus turnos, cuando impactes a una criatura con tu {@spell descarga sobrenatural|PHB-ES}, puedes mover a ese objetivo en línea recta 10 pies acercándolo a ti."
+			]
+		},
+		{
+			"name": "Arma de Pacto Mejorada ",
+			"source": "XGE-ES",
+			"page": 57,
+			"featureType": [
+				"EI_Esp"
+			],
+			"prerequisite": [
+				{
+					"pact": "Pacto del Filo"
+				}
+			],
+			"entries": [
+				"Puedes usar cualquier arma que invoques con tu rasgo Pacto del Filo como canalizador mágico para tus conjuros de brujo.",
+				"Además, el arma gana un bonificador de +1 a sus tiradas de ataque y daño, a menos que esta sea mágica y ya tenga un bonificador a esas tiradas.",
+				"Por último, el arma que conjuras puede ser un {@item arco corto|PHB-ES}, {@item arco largo|PHB-ES}, {@item ballesta ligera|PHB-ES} o {@item ballesta pesada|PHB-ES}."
+			]
+		},
+		{
+			"name": "Lanza de Letargo",
+			"source": "XGE-ES",
+			"page": 57,
+			"featureType": [
+				"EI_Esp"
+			],
+			"prerequisite": [
+				{
+					"spell": [
+						"descarga sobrenatural|PHB-ES#c"
+					]
+				}
+			],
+			"entries": [
+				"Una vez en cada uno de tus turnos, cuando impactes a un objetivo con tu {@spell descarga sobrenatural|PHB-ES}, puedes reducir la velocidad de esa criatura en 10 pies hasta el final de tu próximo turno."
+			]
+		},
+		{
+			"name": "Maldición Enloquecedora",
+			"source": "XGE-ES",
+			"page": 57,
+			"featureType": [
+				"EI_Esp"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Brujo"
+						}
+					},
+					"spell": [
+						"maleficio/maldición#x"
+					]
+				}
+			],
+			"entries": [
+				"Como acción adicional, causas una perturbación psíquica alrededor de una criatura afectada por tu conjuro {@spell maleficio|PHB-ES} o por uno de tus rasgos de Brujo, como la Marca del Mal Augurio o la Maldición del Filo Maléfico. Cuando lo hagas, infliges daño psíquico al objetivo y a cada criatura de tu elección que puedas ver y esté a 5 pies o menos de él. El daño psíquico es igual a tu modificador de Carisma (mínimo 1 de daño). Para utilizar esta invocación, debes ser capaz de ver al objetivo maldito, que ha de encontrarse a 30 pies o menos de ti."
+			]
+		},
+		{
+			"name": "Maldición Implacable",
+			"source": "XGE-ES",
+			"page": 57,
+			"featureType": [
+				"EI_Esp"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Brujo"
+						}
+					},
+					"spell": [
+						"maleficio/maldición#x"
+					]
+				}
+			],
+			"entries": [
+				"Tu maldición crea un vínculo temporal entre ti y tu objetivo. Como acción adicional, puedes teletransportarte mágica mente hasta 30 pies a un espacio libre que puedas ver y se encuentre a 5 pies o menos del objetivo maldito por tu conjuro de {@spell maleficio|PHB-ES} o por uno de tus rasgos de Brujo, como la Marca del Mal Augurio o la Maldición del Filo Maléfico. Para teletransportarte de esta manera, debes ser capaz de ver al objetivo."
+			]
+		},
+		{
+			"name": "Sudario de Sombras",
+			"source": "XGE-ES",
+			"page": 57,
+			"featureType": [
+				"EI_Esp"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "Brujo"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"invisibilidad|PHB-ES"
+						]
+					}
+				}
+			],
+			"entries": [
+				"Puedes lanzar {@spell invisibilidad|PHB-ES} a voluntad, sin utilizar un espacio de conjuro."
+			]
+		},
+		{
+			"name": "Tumba de Levistus",
+			"source": "XGE-ES",
+			"page": 57,
+			"featureType": [
+				"EI_Esp"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Brujo"
+						}
+					}
+				}
+			],
+			"entries": [
+				"Como reacción cuando recibes daño, puedes encerrarte en un bloque de hielo, que se derretirá al final de tu próximo turno. Obtienes 10 puntos de golpe temporales por cada nivel de brujo, que absorben todo el daño que sea posible del ataque. Inmediatamente después de recibir el daño, te vuelves vulnerable al daño de fuego, tu velocidad se reduce a 0 y quedas {@condition incapacitado|PHB-ES}. Estos efectos, incluyendo cualesquiera puntos de golpe temporales que quedaran, terminan cuando el hielo se derrita.",
+				"Una vez utilizada esta invocación, deberás terminar un descanso corto o largo para poder volver a usarla."
+			]
+		},
+		{
+			"name": "Huida Sagaz",
+			"source": "XGE-ES",
+			"page": 57,
+			"featureType": [
+				"EI_Esp"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Brujo"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1e": [
+									"libertad de movimiento|PHB-ES"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"Puedes lanzar {@spell libertad de movimiento|PHB-ES} una vez sobre ti mismo sin utilizar un espacio de conjuro. Recuperas la capacidad para hacerlo tras finalizar un descanso largo."
+			]
+		}
 	],
 	"feat": [
 		{
