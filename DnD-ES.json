@@ -18666,7 +18666,8 @@
                     "gainSubclassFeature": true
                 }, "Canalizar Divinidad (3/descanso)|Clérigo|PHB-ES|18", "Mejora Característica|Clérigo|PHB-ES|19", "Mejora de Intercesión Divina|Clérigo|PHB-ES|20"],
             "subclassTitle": "Dominios divinos",
-            "fluff": [{
+            "fluff": [
+				{
                     "name": "Clérigo",
                     "type": "section",
                     "entries": [
@@ -18704,7 +18705,261 @@
 					],
                     "source": "PHB-ES",
                     "page": 56
-                }
+                },
+				{
+					"type": "section",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"Hacerse clérigo es convertirse en mensajero de los dioses. El poder que ofrece lo divino es impresionante, pero también conlleva una enorme responsabilidad."
+							],
+							"by": "Riggby el Patriarcal"
+						},
+						"Casi todas las personas que adoran a una deidad viven sus vidas sin ser directamente tocados por un ser divino. Así, no pueden saber lo que es ser un clérigo, alguien que no solo es un adorador devoto, sino que también ha sido imbuido con una pizca del poder de ese dios.",
+						"Esta cuestión ha sido debatida largo y tendido: ¿Se convierte el mortal en clérigo como consecuencia de su profunda devoción hacia su deidad, atrayendo de esta manera el favor del dios? ¿O es la divinidad la que ve el potencial de una persona y la llama a su servicio? Al final, quizá, no importe la respuesta. Independientemente de cómo se creen los clérigos, el mundo los necesita tanto como los clérigos y las deidades se necesitan los unos a los otros.",
+						"Si juegas un aventurero clérigo, las siguientes secciones te ofrecen maneras de añadir algo de detalle a la historia y personalidad de ese personaje.",
+						{
+							"type": "entries",
+							"name": "Templo",
+							"entries": [
+								"La mayoría de los miembros de esta clase comienzan sus vidas como sacerdotes en una orden. Más tarde, se dan cuenta de que han sido bendecidos por su dios con las cualidades necesarias para convertirse en clérigos. Para prepararse para este nuevo deber, normalmente los candidatos reciben entrenamiento de otro miembro de su clase, venido de un templo o de un lugar de estudio similar dedicado a su deidad.",
+								"Algunos santuarios se aíslan del mundo para que sus ocupantes puedan concentrarse en su devoción, mientras que otros abren sus puertas para cuidar y curar a las masas. ¿Qué característica del templo en que estudiaste destaca?",
+								{
+									"type": "table",
+									"caption": "Templos",
+									"colLabels": [
+										"{@dice d6}",
+										"Templo"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Se dice que tu templo es la estructura más antigua aún en pie que se construyó en honor de tu dios."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"Acólitos de varias deidades de ideologías similares recibían instrucción en tu templo, todos juntos."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Vienes de un templo famoso por la cervecería que en el opera. Hay quien dice que hueles como una de sus cervezas."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"Tu templo es una fortaleza y área de entrenamiento para monjes guerreros."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"Tu templo es un lugar pacífico y humilde, con monjes sencillos y huertos de vegetales."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Serviste en un templo en los Planos Exteriores."
+										]
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Recuerdo",
+									"entries": [
+										"Muchos clérigos cuentan entre sus efectos personales con objetos que simbolizan su fe, les recuerdan sus votos o les ayudan de alguna otra manera a mantenerse en el camino elegido. Aunque estos objetos no están imbuidos de poder divino, son de vital importancia para su propietario por lo que representan.",
+										{
+											"type": "table",
+											"caption": "Recuerdos",
+											"colLabels": [
+												"{@dice d6}",
+												"Recuerdo"
+											],
+											"colStyles": [
+												"col-1 text-center",
+												"col-11"
+											],
+											"rows": [
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 1
+														}
+													},
+													"El hueso del dedo de un santo."
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 2
+														}
+													},
+													"Un libro forrado en metal que te ayuda a cazar y destruir criaturas infernales."
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 3
+														}
+													},
+													"Un silbato para cerdos que te recuerda a tu querido y humilde mentor."
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 4
+														}
+													},
+													"Una trenza de pelo de la cola de un unicornio."
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 5
+														}
+													},
+													"Un pergamino que describe cómo librar al mundo de nigromantes."
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 6
+														}
+													},
+													"Una piedra rúnica que se dice fue bendecida por tu dios."
+												]
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Secreto",
+									"entries": [
+										"Ningún alma mortal está completamente libre de dudas. Incluso un clérigo debe luchar contra deseos oscuros o la atracción prohibida de lo opuesto a las enseñanzas de su deidad.",
+										"Si no has considerado este aspecto de tu personaje todavía, en la siguiente tabla encontrarás algunas posibilidades, que puedes utilizar o dejar que te sirvan como inspiración para idear algo apropiado. Tu sombrío y profundo secreto puede ser sobre algo que has hecho (o estás haciendo) o puede relacionarse con la manera en que te sientes sobre el mundo y tu papel en él.",
+										{
+											"type": "table",
+											"caption": "Secreto",
+											"colLabels": [
+												"{@dice d6}",
+												"Secreto"
+											],
+											"colStyles": [
+												"col-1 text-center",
+												"col-11"
+											],
+											"rows": [
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 1
+														}
+													},
+													"Un diablillo te aconseja. Intentas ignorar a la criatura, pero a veces su consejo es de ayuda."
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 2
+														}
+													},
+													"Crees que, al final, los dioses no son nada más que mortales ultrapoderosos."
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 3
+														}
+													},
+													"Aceptas el poder de las deidades, pero crees que la mayoría de acontecimientos vienen dictados por puro azar."
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 4
+														}
+													},
+													"Aunque puedes usar magia divina, nunca has sentido de verdad la presencia de una esencia divina dentro de ti."
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 5
+														}
+													},
+													"Te asolan pesadillas que crees que tu dios te manda como castigo por alguna transgresión desconocida."
+												],
+												[
+													{
+														"type": "cell",
+														"roll": {
+															"exact": 6
+														}
+													},
+													"En momentos sin esperanza, sientes que no eres más que un juguete de las deidades, y te molesta su lejanía."
+												]
+											]
+										}
+									]
+								},
+								{
+									"type": "inset",
+									"name": "Servir a un panteón, filosofía o fuerza",
+									"entries": [
+										"El clérigo típico es un sirviente ordenado de un dios concreto, que elige un Dominio Divino asociado con esa deidad. La magia de los miembros de esta clase procede de la propia divinidad o del reino del dios. Muchas veces los clérigos llevan un símbolo sagrado que representa a esta misma divinidad.",
+										"Algunos clérigos, especialmente en un mundo como Eberron, sirven a todo un panteón. En ciertas campañas, podrían seguir a una fuerza cósmica, como la vida o la muerte, a una filosofía o concepto, como el amor o la paz, o incluso a uno de los nueve alineamientos. El capítulo 1 del Dungeon Master's Guide explora opciones como estas, en el apartado \"Dioses de tu mundo\".",
+										"Habla con tu DM sobre las opciones divinas disponibles en tu campaña, ya sean dioses, panteones, filosofías o fuerzas cósmicas. Sea lo que sea que elija servir tu clérigo, escoge un Dominio Divino que sea apropiado, y si no tiene un símbolo sagrado, diseña uno junto a tu DM.",
+										"Los rasgos de clase del clérigo se referirán muchas veces a tu deidad. Si eres devoto de un panteón, fuerza cósmica o filosofía, estos rasgos seguirán funcionando tal y como están escritos. Piensa en las referencias a dioses como referencias al poder divino que te otorga tu magia."
+									]
+								}
+							]
+						}
+					],
+					"source": "XGE-ES",
+					"page": 17
+				}
             ]
         },
 		{
@@ -21446,6 +21701,93 @@
 				"Canalizar Divinidad: Bendición del Dios de la Guerra|Clérigo|PHB-ES|Guerra|PHB-ES|6", 
 				"Golpe Divino|Clérigo|PHB-ES|Guerra|PHB-ES|8", 
 				"Avatar de la Batalla|Clérigo|PHB-ES|Guerra|PHB-ES|17"
+			]
+		},
+		{
+			"name": "Dominio de la Forja",
+			"shortName": "Forja",
+			"source": "XGE-ES",
+			"className": "Clérigo",
+			"classSource": "PHB-ES",
+			"page": 18,
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"identificar|PHB-ES",
+							"castigo abrasador|PHB-ES"
+						],
+						"3": [
+							"calentar metal|PHB-ES",
+							"arma mágica|PHB-ES"
+						],
+						"5": [
+							"arma elemental|PHB-ES",
+							"protección contra energía|PHB-ES"
+						],
+						"7": [
+							"fabricar|PHB-ES",
+							"muro de fuego|PHB-ES"
+						],
+						"9": [
+							"animar objetos|PHB-ES",
+							"creación|PHB-ES"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Dominio de la Forja|Clérigo|PHB-ES|Forja|XGE-ES|1",
+				"Canalizar Divinidad: Bendición del Artesano|Clérigo|PHB-ES|Forja|XGE-ES|2",
+				"Alma de la Forja|Clérigo|PHB-ES|Forja|XGE-ES|6",
+				"Golpe Divino|Clérigo|PHB-ES|Forja|XGE-ES|8",
+				"Santo de la Forja y el Fuego|Clérigo|PHB-ES|Forja|XGE-ES|17"
+			]
+		},
+		{
+			"name": "Dominio de la Sepultura",
+			"shortName": "Sepultura",
+			"source": "XGE-ES",
+			"className": "Clérigo",
+			"classSource": "PHB-ES",
+			"page": 19,
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"perdición|PHB-ES",
+							"falsa vida|PHB-ES"
+						],
+						"3": [
+							"dulce descanso|PHB-ES",
+							"rayo debilitador|PHB-ES"
+						],
+						"5": [
+							"revivir|PHB-ES",
+							"toque vampírico|PHB-ES"
+						],
+						"7": [
+							"marchitar|PHB-ES",
+							"guarda contra la muerte|PHB-ES"
+						],
+						"9": [
+							"caparazón antivida|PHB-ES",
+							"alzar a los muertos|PHB-ES"
+						]
+					},
+					"known": {
+						"1": [
+							"piedad con los moribundos|PHB-ES#c"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Dominio de la Sepultura|Clérigo|PHB-ES|Sepultura|XGE-ES|1",
+				"Canalizar Divinidad: Camino a la Sepultura|Clérigo|PHB-ES|Sepultura|XGE-ES|2",
+				"Centinela a las Puertas de la Muerte|Clérigo|PHB-ES|Sepultura|XGE-ES|6",
+				"Lanzamiento Potente|Clérigo|PHB-ES|Sepultura|XGE-ES|8",
+				"Guardián de Almas|Clérigo|PHB-ES|Sepultura|XGE-ES|17"
 			]
 		},
 		{
@@ -27746,6 +28088,307 @@
             "header": 2,
             "entries": ["A nivel 17, obtienes resistencia a daño contundente, cortante y perforante de armas no mágicas."]
         },
+		{
+			"name": "Dominio de la Forja",
+			"source": "XGE-ES",
+			"page": 18,
+			"className": "Clérigo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Forja",
+			"subclassSource": "XGE-ES",
+			"level": 1,
+			"entries": [
+				"Los dioses de la forja son patrones de aquellos artesanos que trabajan con el metal, desde un humilde herrero, que mantiene a su pueblo surtido de herraduras y rejas de arado, al poderoso artesano elfo cuyas flechas de punta de diamante han derrotado a señores demoníacos. Las deidades de la fragua enseñan que, con paciencia y trabajo duro, hasta el metal más intratable puede ser transformado de un trozo de mineral a un objeto bellamente forjado. Los clérigos de estas divinidades buscan artefactos perdidos a manos de las fuerzas del mal, liberan minas infestadas de orcos y descubren raros y preciosos minerales con los que crear potentes objetos mágicos. Los seguidores de estos dioses se enorgullecen de su trabajo y están dispuestos a elaborar y usar pesadas armaduras y poderosas armas para protegerlo. Las deidades de este dominio incluyen a Gond, Reorx, Onatar, Moradin, Hefesto y Goibniu.",
+				"Consigues conjuros de dominio al alcanzar ciertos niveles de clérigo. Puedes ver cómo funcionan los conjuros de dominio en el rasgo de clase Dominio Divino.",
+				{
+					"type": "table",
+					"caption": "Conjuros del Dominio de la Forja",
+					"colLabels": [
+						"Nivel de clérigo",
+						"Conjuros"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell castigo abrasador|PHB-ES}, {@spell identificar|PHB-ES}"
+						],
+						[
+							"3rd",
+							"{@spell arma mágica|PHB-ES}, {@spell calentar metal|PHB-ES}"
+						],
+						[
+							"5th",
+							"{@spell arma elemental|PHB-ES}, {@spell protección contra energía|PHB-ES}"
+						],
+						[
+							"7th",
+							"{@spell fabricar|PHB-ES}, {@spell muro de fuego|PHB-ES}"
+						],
+						[
+							"9th",
+							"{@spell animar objetos|PHB-ES}, {@spell creación|PHB-ES}"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Competencias Adicionales|Clérigo|PHB-ES|Forja|XGE-ES|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bendición de la Forja|Clérigo|PHB-ES|Forja|XGE-ES|1"
+				}
+			]
+		},
+		{
+			"name": "Bendición de la Forja",
+			"source": "XGE-ES",
+			"page": 18,
+			"className": "Clérigo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Forja",
+			"subclassSource": "XGE-ES",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"A nivel 1, obtienes la habilidad de imbuir un arma o armadura con magia. Al final de un descanso largo, puedes tocar un objeto no mágico que sea una armadura o un arma marcial o sencilla. Hasta el final de tu próximo descanso largo, este objeto se convierte en mágico, otorgando un bonificador de +1 a la CA si es una armadura o de +1 a las tiradas de ataque y daño si es un arma.",
+				"Una vez utilizado este rasgo, deberás terminar un des canso largo para poder volver a emplearlo."
+			]
+		},
+		{
+			"name": "Competencias Adicionales",
+			"source": "XGE-ES",
+			"page": 18,
+			"className": "Clérigo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Forja",
+			"subclassSource": "XGE-ES",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"Cuando eliges este dominio a nivel 1, ganas competencia con armaduras pesadas y {@item Herramientas de herrero|PHB-ES}."
+			]
+		},
+		{
+			"name": "Canalizar Divinidad: Bendición del Artesano",
+			"source": "XGE-ES",
+			"page": 18,
+			"className": "Clérigo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Forja",
+			"subclassSource": "XGE-ES",
+			"level": 2,
+			"header": 2,
+			"entries": [
+				"Desde el nivel 2, puedes usar tu Canalizar Divinidad para crear objetos sencillos.",
+				"Llevas a cabo un ritual de una hora de duración que creará un objeto no mágico que debe incluir metal: un arma sencilla o marcial, una armadura, diez unidades de munición, unas herramientas u otro objeto de metal (consulta el capítulo 5, \"Equipo\", en el Player's Handbook, para ver algunos ejemplos). La creación queda completa al terminar la hora, apareciendo en un espacio desocupado de tu elección, encima de una superficie que se encuentre a 5 pies o menos de ti.",
+				"Lo que crees no puede tener un valor superior a 100 po. Como parte del ritual debes preparar metal, que puede incluir monedas, de un valor igual al del objeto generado. El metal se funde y transforma en la creación al final del ritual, dando lugar de forma mágica a las partes no metálicas del objeto.",
+				"El ritual puede crear un duplicado de un objeto no mágico que contenga metal, como una llave, si tienes en tu posesión el original al llevarlo a cabo."
+			]
+		},
+		{
+			"name": "Alma de la Forja",
+			"source": "XGE-ES",
+			"page": 18,
+			"className": "Clérigo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Forja",
+			"subclassSource": "XGE-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 6, tu maestría con la forja te proporciona habilidades especiales:",
+				{
+					"type": "list",
+					"items": [
+						"Ganas resistencia al fuego.",
+						"Recibes un bonificador de +1 a la Clase de Armadura cuando lleves armadura pesada."
+					]
+				}
+			]
+		},
+		{
+			"name": "Golpe Divino",
+			"source": "XGE-ES",
+			"page": 18,
+			"className": "Clérigo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Forja",
+			"subclassSource": "XGE-ES",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"A nivel 8 obtienes la capacidad de infundir los golpes de tu arma con el fiero poder de la forja. Una vez en cada uno de tus turnos, cuando impactes a una criatura con un ataque con arma, puedes hacer que dicho ataque cause {@damage 1d8} de daño de fuego adicional al objetivo. Cuando llegas a nivel 14. Este daño adicional pasa a ser {@damage 2d8}."
+			]
+		},
+		{
+			"name": "Santo de la Forja y el Fuego",
+			"source": "XGE-ES",
+			"page": 18,
+			"className": "Clérigo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Forja",
+			"subclassSource": "XGE-ES",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"A nivel 17, tu afinidad sagrada con el fuego y el metal se vuelve más poderosa:",
+				{
+					"type": "list",
+					"items": [
+						"Ganas inmunidad al daño de fuego.",
+						"Mientras lleves armadura pesada, tienes resistencia al daño contundente, cortante y perforante de ataques no mágicos."
+					]
+				}
+			]
+		},
+		{
+			"name": "Dominio de la Sepultura",
+			"source": "XGE-ES",
+			"page": 19,
+			"className": "Clérigo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Sepultura",
+			"subclassSource": "XGE-ES",
+			"level": 1,
+			"entries": [
+				"Los dioses de la sepultura vigilan la línea entre la vida y la muerte. Para estas deidades, la muerte y el más allá son parte fundamental del universo. Romper la paz de los muertos es una abominación. Las divinidades de la tumba incluyen Kelemvor, Wee Jas, los espíritus ancestrales de la Corte Eterna, Hades, Anubis y Osiris. Los seguidores de estas deidades buscan dar descanso a los espíritus errantes, destruir a los muertos vivientes y aliviar el sufrimiento de los moribundos. Su magia también les permite mantener a raya a la muerte durante un tiempo, especialmente si se trata de una persona que todavía debe realizar una gran obra en el mundo. Este hecho representa un retraso de la muerte, no su negación, porque la muerte siempre consigue lo que es suyo.",
+				{
+					"type": "table",
+					"caption": "Conjuros del Dominio de la Sepultura",
+					"colLabels": [
+						"Nivel de clérigo",
+						"Conjuros"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell falsa vida|PHB-ES}, {@spell perdición|PHB-ES}"
+						],
+						[
+							"3rd",
+							"{@spell dulce descanso|PHB-ES}, {@spell rayo debilitador|PHB-ES}"
+						],
+						[
+							"5th",
+							"{@spell revivir|PHB-ES}, {@spell toque vampírico|PHB-ES}"
+						],
+						[
+							"7th",
+							"{@spell guarda contra la muerte|PHB-ES}, {@spell marchitar|PHB-ES}"
+						],
+						[
+							"9th",
+							"{@spell alzar a los muertos|PHB-ES}, {@spell caparazón antivida|PHB-ES}"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Círculo de Mortalidad|Clérigo|PHB-ES|Sepultura|XGE-ES|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Ojos de la Tumba|Clérigo|PHB-ES|Sepultura|XGE-ES|1"
+				}
+			]
+		},
+		{
+			"name": "Círculo de Mortalidad",
+			"source": "XGE-ES",
+			"page": 19,
+			"className": "Clérigo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Sepultura",
+			"subclassSource": "XGE-ES",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"A nivel 1 obtienes la capacidad de manipular la línea entre la vida y la muerte. Cuando fueras a lanzar uno o más dados para recuperar puntos de golpe mediante un conjuro a una criatura con 0 puntos de golpe, en vez de eso utilizas el mayor número posible para cada dado.",
+				"Además, aprendes el truco {@spell piedad con los moribundos|PHB-ES}, que no cuenta dentro del número de trucos de clérigo que puedes conocer. Para ti tiene un alcance de 30 pies y puedes lanzarlo como acción adicional."
+			]
+		},
+		{
+			"name": "Ojos de la Tumba",
+			"source": "XGE-ES",
+			"page": 19,
+			"className": "Clérigo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Sepultura",
+			"subclassSource": "XGE-ES",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"A nivel 1 obtienes la capacidad de sentir la presencia de los muertos vivientes, cuya misma existencia es un insulto al ciclo vital. Como acción, puedes expandir tu percepción para detectar de forma mágica a este tipo de criaturas. Hasta el final del próximo turno, conoces la localización de cualquier muerto viviente situado a 60 pies o menos de ti, siempre que no esté tras cobertura completa ni protegido contra la magia de adivinación. Este sentido no te dice nada sobre las capacidades o la identidad de una criatura.",
+				"Puedes emplear este rasgo tantas veces como tu modificador por Sabiduría (mínimo una vez). Recuperas todos los usos tras finalizar un descanso largo."
+			]
+		},
+		{
+			"name": "Canalizar Divinidad: Camino a la Sepultura",
+			"source": "XGE-ES",
+			"page": 19,
+			"className": "Clérigo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Sepultura",
+			"subclassSource": "XGE-ES",
+			"level": 2,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 2, puedes usar tu Canalizar Divinidad para marcar la fuerza vital de otra criatura, que quedará condenada a la extinción.",
+				"Como acción, eliges un objetivo al que puedas ver y se encuentre a 30 pies o menos de ti, maldiciéndolo hasta el final de tu siguiente turno. La próxima vez que tú o un aliado tuyo impacte a la criatura maldita con un ataque, esta tendrá vulnerabilidad al daño de ese ataque, tras el cual finalizará la maldición."
+			]
+		},
+		{
+			"name": "Centinela a las Puertas de la Muerte",
+			"source": "XGE-ES",
+			"page": 19,
+			"className": "Clérigo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Sepultura",
+			"subclassSource": "XGE-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A nivel 6 obtienes la capacidad de impedir el avance de la muerte. Como reacción, cuando tú o una criatura que puedas ver y se encuentre a 30 pies o menos de ti sufra un crítico, puedes convertirlo en un impacto normal. Además, cualquier efecto activado como consecuencia de que el ataque sea un crítico queda cancelado.",
+				"Puedes emplear este rasgo tantas veces como tu modificador por Sabiduría (mínimo una vez). Recuperas todos los usos tras finalizar un descanso largo."
+			]
+		},
+		{
+			"name": "Lanzamiento Potente",
+			"source": "XGE-ES",
+			"page": 19,
+			"className": "Clérigo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Sepultura",
+			"subclassSource": "XGE-ES",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 8, puedes añadir tu modificador por Sabiduría al daño que causas con cualquier truco de clérigo."
+			]
+		},
+		{
+			"name": "Guardián de Almas",
+			"source": "XGE-ES",
+			"page": 19,
+			"className": "Clérigo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Sepultura",
+			"subclassSource": "XGE-ES",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 17, puedes agarrar una hebra de vitalidad de un alma que parte y utilizarla para curar a los vivos. Cuando un enemigo que puedas ver fallezca y se encuentre a 60 pies o menos de ti, tú mismo o una criatura de tu elección situada a 60 pies o menos de ti recupera tantos puntos de golpe como dados de golpe tuviera el enemigo muerto. Solo puedes usar este rasgo si no estás {@condition incapacitado|PHB-ES}. Una vez lo utilices, no puedes volver a hacerlo hasta el comienzo de tu siguiente turno."
+			]
+		},
 		{
             "name": "Círculo de la Tierra",
             "source": "PHB-ES",
