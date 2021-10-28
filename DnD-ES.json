@@ -103,7 +103,7 @@
 	},
 	"book": [
 		{
-			"name": "Player's Handbook Español",
+			"name": "Player's Handbook - Español",
 			"id": "PHB-ES",
 			"source": "PHB-ES",
 			"coverUrl": "img/covers/PHB.png",
@@ -3301,7 +3301,7 @@
 											"type": "row",
 											"style": "row-indent-first",
 											"row": [
-												"{@item Bastón|PHB-ES}",
+												"{@item Bastón (canalizador arcano)|PHB-ES|Bastón}",
 												"5 gp",
 												"4 lb."
 											]
@@ -19095,6 +19095,1339 @@
 					],
 					"source": "PHB-ES",
 					"page": 64
+				},
+				{
+					"type": "section",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"Even in death, each creature plays its part in maintaining the Great Balance. But now an imbalance grows, a force that seeks to hold sway over nature. This is the destructive behavior of the mortal races. The farther away from nature their actions take them, the more corrupting their influence becomes. As druids, we seek mainly to protect and educate, to preserve the Great Balance, but there are times when we must rise up against danger and eradicate it."
+							],
+							"by": "Safhran, archdruid"
+						},
+						"Druids are the caretakers of the natural world, and it is said that in time a druid becomes the voice of nature, speaking the truth that is too subtle for the general populace to hear. Many who become druids find that they naturally gravitate toward nature; its forces, cycles, and movements fill their minds and spirits with wonder and insight. Many sages and wise folk have studied nature, writing volumes about its mystery and power, but druids are a special kind of being: at some point, they begin to embody these natural forces, producing magical phenomena that link them to the spirit of nature and the flow of life. Because of their strange and mysterious power, druids are often revered, shunned, or considered dangerous by the people around them.",
+						"Your druid character might be a true worshiper of nature, one who has always scorned civilization and found solace in the wild. Or your character could be a child of the city who now strives to bring the civilized world into harmony with the wilderness. You can use the sections that follow to flesh out your druid, regardless of how your character came to the profession.",
+						{
+							"type": "entries",
+							"name": "Treasured Item",
+							"entries": [
+								"Some druids carry one or more items that are sacred to them or have deep personal significance. Such items are not necessarily magical, but every one is an object whose meaning connects the druid's mind and heart to a profound concept or spiritual outlook.",
+								"When you decide what your character's treasured item is, think about giving it an origin story: how did you come by the item, and why is it important to you?",
+								{
+									"type": "table",
+									"caption": "Treasured Item",
+									"colLabels": [
+										"{@dice d6}",
+										"Treasured Item"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"A twig from the meeting tree that stands in the center of your village"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"A vial of water from the source of a sacred river"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Special herbs tied together in a bundle"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"A small bronze bowl engraved with animal images"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"A rattle made from a dried gourd and holly berries"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"A miniature golden sickle handed down to you by your mentor"
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Guiding Aspects",
+							"entries": [
+								"Many druids feel a strong link to a specific aspect of the natural world, such as a body of water, an animal, a type of tree, or some other sort of plant. You identify with your chosen aspect; by its behavior or its very nature, it sets an example that you seek to emulate.",
+								{
+									"type": "table",
+									"caption": "Guiding Aspects",
+									"colLabels": [
+										"{@dice d6}",
+										"Guiding Aspects"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Yew trees remind you of renewing your mind and spirit, letting the old die and the new spring forth."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"Oak trees represent strength and vitality. Meditating under an oak fills your body and mind with resolve and fortitude."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"The river's endless flow reminds you of the great span of the world. You seek to act with the long-term interests of nature in mind."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"The sea is a constant, churning cauldron of power and chaos. It reminds you that accepting change is necessary to sustain yourself in the world."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"The birds in the sky are evidence that even the smallest creatures can survive if they remain above the fray."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"As demonstrated by the actions of the wolf, an individual's strength is nothing compared to the power of the pack."
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Mentors",
+							"entries": [
+								"It's not unusual for would-be druids to seek out (or be sought out by) instructors or elders who teach them the basics of their magical arts. Most druids who learn from a mentor begin their training at a young age, and the mentor has a vital role in shaping a student's attitudes and beliefs.",
+								"If your character received training from someone else, who or what was that individual, and what was the nature of your relationship? Did your mentor imbue you with a particular outlook or otherwise influence your approach to achieving the goals of your chosen path?",
+								{
+									"type": "table",
+									"caption": "Mentors",
+									"colLabels": [
+										"{@dice d6}",
+										"Mentors"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Your mentor was a wise treant who taught you to think in terms of years and decades rather than days or months."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"You were tutored by a dryad who watched over a slumbering portal to the Abyss. During your training, you were tasked with watching for hidden threats to the world."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Your tutor always interacted with you in the form of a falcon. You never saw the tutor's humanoid form."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"You were one of several youngsters who were mentored by an old druid, until one of your fellow pupils betrayed your group and killed your master."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"Your mentor has appeared to you only in visions. You have yet to meet this person, and you are not sure such a person exists in mortal form."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Your mentor was a werebear who taught you to treat all living things with equal regard."
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "section",
+							"name": "Learning Beast Shapes",
+							"entries": [
+								"The Wild Shape feature in the player's handbook lets you transform into a beast that you've seen. That rule gives you a tremendous amount of flexibility, making it easy to amass an array of beast form options for yourself, but you must abide by the limitations in the Beast Shapes table in that book.",
+								"When you gain Wild Shape as a 2nd-level druid, you might wonder which beasts you've already seen. The following tables organize beasts from the monster manual according to the beasts' most likely environments. Consider the environment your druid grew up in, then consult the appropriate table for a list of animals that your druid has probably seen by 2nd level.",
+								"These tables can also help you and your DM determine which animals you might see on your travels. In addition, the tables include each beast's challenge rating and note whether a beast has a flying or swimming speed. This information will help you determine whether you qualify to assume that beast's form.",
+								"The tables include all the individual beasts that are eligible for Wild Shape (up to a challenge rating of 1) or the Circle Forms feature of the Circle of the Moon (up to a challenge rating of 6).",
+								{
+									"type": "table",
+									"caption": "Arctic",
+									"colLabels": [
+										"CR",
+										"Beast",
+										"Fly/Swim"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-8",
+										"col-2"
+									],
+									"rows": [
+										[
+											"0",
+											"{@creature Owl}",
+											"Fly"
+										],
+										[
+											"1/8",
+											"{@creature Blood hawk}",
+											"Fly"
+										],
+										[
+											"1/4",
+											"{@creature Giant owl}",
+											"Fly"
+										],
+										[
+											"1",
+											"{@creature Brown bear}",
+											"\u2014"
+										],
+										[
+											"2",
+											"{@creature Polar bear}",
+											"Swim"
+										],
+										[
+											"2",
+											"{@creature Saber-toothed tiger}",
+											"\u2014"
+										],
+										[
+											"6",
+											"{@creature Mammoth}",
+											"\u2014"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Coast",
+									"colLabels": [
+										"CR",
+										"Beast",
+										"Fly/Swim"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-8",
+										"col-2"
+									],
+									"rows": [
+										[
+											"0",
+											"{@creature Crab}",
+											"Swim"
+										],
+										[
+											"0",
+											"{@creature Eagle}",
+											"Fly"
+										],
+										[
+											"1/8",
+											"{@creature Blood hawk}",
+											"Fly"
+										],
+										[
+											"1/8",
+											"{@creature Giant crab}",
+											"Swim"
+										],
+										[
+											"1/8",
+											"{@creature Poisonous snake}",
+											"Swim"
+										],
+										[
+											"1/8",
+											"{@creature Stirge}",
+											"Fly"
+										],
+										[
+											"1/4",
+											"{@creature Giant lizard}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Giant wolf spider}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Pteranodon}",
+											"Fly"
+										],
+										[
+											"1",
+											"{@creature Giant eagle}",
+											"Fly"
+										],
+										[
+											"1",
+											"{@creature Giant toad}",
+											"Swim"
+										],
+										[
+											"2",
+											"{@creature Plesiosaurus}",
+											"Swim"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Desert",
+									"colLabels": [
+										"CR",
+										"Beast",
+										"Fly/Swim"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-8",
+										"col-2"
+									],
+									"rows": [
+										[
+											"0",
+											"{@creature Cat}",
+											"\u2014"
+										],
+										[
+											"0",
+											"{@creature Hyena}",
+											"\u2014"
+										],
+										[
+											"0",
+											"{@creature Jackal}",
+											"\u2014"
+										],
+										[
+											"0",
+											"{@creature Scorpion}",
+											"\u2014"
+										],
+										[
+											"0",
+											"{@creature Vulture}",
+											"Fly"
+										],
+										[
+											"1/8",
+											"{@creature Camel}",
+											"\u2014"
+										],
+										[
+											"1/8",
+											"{@creature Flying snake}",
+											"Fly"
+										],
+										[
+											"1/8",
+											"{@creature Mule}",
+											"\u2014"
+										],
+										[
+											"1/8",
+											"{@creature Poisonous snake}",
+											"Swim"
+										],
+										[
+											"1/8",
+											"{@creature Stirge}",
+											"Fly"
+										],
+										[
+											"1/4",
+											"{@creature Constrictor snake}",
+											"Swim"
+										],
+										[
+											"1/4",
+											"{@creature Giant lizard}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Giant poisonous snake}",
+											"Swim"
+										],
+										[
+											"1/4",
+											"{@creature Giant wolf spider}",
+											"\u2014"
+										],
+										[
+											"1",
+											"{@creature Giant hyena}",
+											"\u2014"
+										],
+										[
+											"1",
+											"{@creature Giant spider}",
+											"\u2014"
+										],
+										[
+											"1",
+											"{@creature Giant toad}",
+											"Swim"
+										],
+										[
+											"1",
+											"{@creature Giant vulture}",
+											"Fly"
+										],
+										[
+											"1",
+											"{@creature Lion}",
+											"\u2014"
+										],
+										[
+											"2",
+											"{@creature Giant constrictor snake}",
+											"Swim"
+										],
+										[
+											"3",
+											"{@creature Giant scorpion}",
+											"\u2014"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Forest",
+									"colLabels": [
+										"CR",
+										"Beast",
+										"Fly/Swim"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-8",
+										"col-2"
+									],
+									"rows": [
+										[
+											"0",
+											"{@creature Baboon}",
+											"\u2014"
+										],
+										[
+											"0",
+											"{@creature Badger}",
+											"\u2014"
+										],
+										[
+											"0",
+											"{@creature Cat}",
+											"\u2014"
+										],
+										[
+											"0",
+											"{@creature Deer}",
+											"\u2014"
+										],
+										[
+											"0",
+											"{@creature Hyena}",
+											"\u2014"
+										],
+										[
+											"0",
+											"{@creature Owl}",
+											"Fly"
+										],
+										[
+											"1/8",
+											"{@creature Blood hawk}",
+											"Fly"
+										],
+										[
+											"1/8",
+											"{@creature Flying snake}",
+											"Fly"
+										],
+										[
+											"1/8",
+											"{@creature Giant rat}",
+											"\u2014"
+										],
+										[
+											"1/8",
+											"{@creature Giant weasel}",
+											"\u2014"
+										],
+										[
+											"1/8",
+											"{@creature Poisonous snake}",
+											"Swim"
+										],
+										[
+											"1/8",
+											"{@creature Mastiff}",
+											"\u2014"
+										],
+										[
+											"1/8",
+											"{@creature Stirge}",
+											"Fly"
+										],
+										[
+											"1/4",
+											"{@creature Boar}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Constrictor snake}",
+											"Swim"
+										],
+										[
+											"1/4",
+											"{@creature Elk}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Giant badger}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Giant bat}",
+											"Fly"
+										],
+										[
+											"1/4",
+											"{@creature Giant frog}",
+											"Swim"
+										],
+										[
+											"1/4",
+											"{@creature Giant lizard}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Giant owl}",
+											"Fly"
+										],
+										[
+											"1/4",
+											"{@creature Giant poisonous snake}",
+											"Swim"
+										],
+										[
+											"1/4",
+											"{@creature Giant wolf spider}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Panther}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Wolf}",
+											"\u2014"
+										],
+										[
+											"1/2",
+											"{@creature Ape}",
+											"\u2014"
+										],
+										[
+											"1/2",
+											"{@creature Black bear}",
+											"\u2014"
+										],
+										[
+											"1/2",
+											"{@creature Giant wasp}",
+											"Fly"
+										],
+										[
+											"1",
+											"{@creature Brown bear}",
+											"\u2014"
+										],
+										[
+											"1",
+											"{@creature Dire wolf}",
+											"\u2014"
+										],
+										[
+											"1",
+											"{@creature Giant hyena}",
+											"\u2014"
+										],
+										[
+											"1",
+											"{@creature Giant spider}",
+											"\u2014"
+										],
+										[
+											"1",
+											"{@creature Giant toad}",
+											"Swim"
+										],
+										[
+											"1",
+											"{@creature Tiger}",
+											"\u2014"
+										],
+										[
+											"2",
+											"{@creature Giant boar}",
+											"\u2014"
+										],
+										[
+											"2",
+											"{@creature Giant constrictor snake}",
+											"Swim"
+										],
+										[
+											"2",
+											"{@creature Giant elk}",
+											"\u2014"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Grassland",
+									"colLabels": [
+										"CR",
+										"Beast",
+										"Fly/Swim"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-8",
+										"col-2"
+									],
+									"rows": [
+										[
+											"0",
+											"{@creature Cat}",
+											"\u2014"
+										],
+										[
+											"0",
+											"{@creature Deer}",
+											"\u2014"
+										],
+										[
+											"0",
+											"{@creature Eagle}",
+											"Fly"
+										],
+										[
+											"0",
+											"{@creature Goat}",
+											"\u2014"
+										],
+										[
+											"0",
+											"{@creature Hyena}",
+											"\u2014"
+										],
+										[
+											"0",
+											"{@creature Jackal}",
+											"\u2014"
+										],
+										[
+											"0",
+											"{@creature Vulture}",
+											"Fly"
+										],
+										[
+											"1/8",
+											"{@creature Blood hawk}",
+											"Fly"
+										],
+										[
+											"1/8",
+											"{@creature Flying snake}",
+											"Fly"
+										],
+										[
+											"1/8",
+											"{@creature Giant weasel}",
+											"\u2014"
+										],
+										[
+											"1/8",
+											"{@creature Poisonous snake}",
+											"Swim"
+										],
+										[
+											"1/8",
+											"{@creature Stirge}",
+											"Fly"
+										],
+										[
+											"1/4",
+											"{@creature Axe beak}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Boar}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Elk}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Giant poisonous snake}",
+											"Swim"
+										],
+										[
+											"1/4",
+											"{@creature Giant wolf spider}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Panther} (leopard)",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Pteranodon}",
+											"Fly"
+										],
+										[
+											"1/4",
+											"{@creature Riding horse}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Wolf}",
+											"\u2014"
+										],
+										[
+											"1/2",
+											"{@creature Giant goat}",
+											"\u2014"
+										],
+										[
+											"1/2",
+											"{@creature Giant wasp}",
+											"Fly"
+										],
+										[
+											"1",
+											"{@creature Giant eagle}",
+											"Fly"
+										],
+										[
+											"1",
+											"{@creature Giant hyena}",
+											"\u2014"
+										],
+										[
+											"1",
+											"{@creature Giant vulture}",
+											"Fly"
+										],
+										[
+											"1",
+											"{@creature Lion}",
+											"\u2014"
+										],
+										[
+											"1",
+											"{@creature Tiger}",
+											"\u2014"
+										],
+										[
+											"2",
+											"{@creature Allosaurus}",
+											"\u2014"
+										],
+										[
+											"2",
+											"{@creature Giant boar}",
+											"\u2014"
+										],
+										[
+											"2",
+											"{@creature Giant elk}",
+											"\u2014"
+										],
+										[
+											"2",
+											"{@creature Rhinoceros}",
+											"\u2014"
+										],
+										[
+											"3",
+											"{@creature Ankylosaurus}",
+											"\u2014"
+										],
+										[
+											"4",
+											"{@creature Elephant}",
+											"\u2014"
+										],
+										[
+											"5",
+											"{@creature Triceratops}",
+											"\u2014"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Hill",
+									"colLabels": [
+										"CR",
+										"Beast",
+										"Fly/Swim"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-8",
+										"col-2"
+									],
+									"rows": [
+										[
+											"0",
+											"{@creature Baboon}",
+											"\u2014"
+										],
+										[
+											"0",
+											"{@creature Eagle}",
+											"Fly"
+										],
+										[
+											"0",
+											"{@creature Goat}",
+											"\u2014"
+										],
+										[
+											"0",
+											"{@creature Hyena}",
+											"\u2014"
+										],
+										[
+											"0",
+											"{@creature Raven}",
+											"Fly"
+										],
+										[
+											"0",
+											"{@creature Vulture}",
+											"Fly"
+										],
+										[
+											"1/8",
+											"{@creature Blood hawk}",
+											"Fly"
+										],
+										[
+											"1/8",
+											"{@creature Giant weasel}",
+											"\u2014"
+										],
+										[
+											"1/8",
+											"{@creature Mastiff}",
+											"\u2014"
+										],
+										[
+											"1/8",
+											"{@creature Mule}",
+											"\u2014"
+										],
+										[
+											"1/8",
+											"{@creature Poisonous snake}",
+											"Swim"
+										],
+										[
+											"1/8",
+											"{@creature Stirge}",
+											"Fly"
+										],
+										[
+											"1/4",
+											"{@creature Axe beak}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Boar}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Elk}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Giant owl}",
+											"Fly"
+										],
+										[
+											"1/4",
+											"{@creature Giant wolf spider}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Panther} (cougar)",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Wolf}",
+											"\u2014"
+										],
+										[
+											"1/2",
+											"{@creature Giant goat}",
+											"\u2014"
+										],
+										[
+											"1",
+											"{@creature Brown bear}",
+											"\u2014"
+										],
+										[
+											"1",
+											"{@creature Dire wolf}",
+											"\u2014"
+										],
+										[
+											"1",
+											"{@creature Giant eagle}",
+											"Fly"
+										],
+										[
+											"1",
+											"{@creature Giant hyena}",
+											"\u2014"
+										],
+										[
+											"1",
+											"{@creature Lion}",
+											"\u2014"
+										],
+										[
+											"2",
+											"{@creature Giant boar}",
+											"\u2014"
+										],
+										[
+											"2",
+											"{@creature Giant elk}",
+											"\u2014"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Mountain",
+									"colLabels": [
+										"CR",
+										"Beast",
+										"Fly/Swim"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-8",
+										"col-2"
+									],
+									"rows": [
+										[
+											"0",
+											"{@creature Eagle}",
+											"Fly"
+										],
+										[
+											"0",
+											"{@creature Goat}",
+											"\u2014"
+										],
+										[
+											"1/8",
+											"{@creature Blood hawk}",
+											"Fly"
+										],
+										[
+											"1/8",
+											"{@creature Stirge}",
+											"Fly"
+										],
+										[
+											"1/4",
+											"{@creature Pteranodon}",
+											"Fly"
+										],
+										[
+											"1/2",
+											"{@creature Giant goat}",
+											"\u2014"
+										],
+										[
+											"1",
+											"{@creature Giant eagle}",
+											"Fly"
+										],
+										[
+											"1",
+											"{@creature Lion}",
+											"\u2014"
+										],
+										[
+											"2",
+											"{@creature Giant elk}",
+											"\u2014"
+										],
+										[
+											"2",
+											"{@creature Saber-toothed tiger}",
+											"\u2014"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Swamp",
+									"colLabels": [
+										"CR",
+										"Beast",
+										"Fly/Swim"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-8",
+										"col-2"
+									],
+									"rows": [
+										[
+											"0",
+											"{@creature Rat}",
+											"\u2014"
+										],
+										[
+											"0",
+											"{@creature Raven}",
+											"Fly"
+										],
+										[
+											"1/8",
+											"{@creature Giant rat}",
+											"\u2014"
+										],
+										[
+											"1/8",
+											"{@creature Poisonous snake}",
+											"Swim"
+										],
+										[
+											"1/8",
+											"{@creature Stirge}",
+											"Fly"
+										],
+										[
+											"1/4",
+											"{@creature Constrictor snake}",
+											"Swim"
+										],
+										[
+											"1/4",
+											"{@creature Giant frog}",
+											"Swim"
+										],
+										[
+											"1/4",
+											"{@creature Giant lizard}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Giant poisonous snake}",
+											"Swim"
+										],
+										[
+											"1/2",
+											"{@creature Crocodile}",
+											"Swim"
+										],
+										[
+											"1",
+											"{@creature Giant spider}",
+											"\u2014"
+										],
+										[
+											"1",
+											"{@creature Giant toad}",
+											"Swim"
+										],
+										[
+											"2",
+											"{@creature Giant constrictor snake}",
+											"Swim"
+										],
+										[
+											"5",
+											"{@creature Giant crocodile}",
+											"Swim"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Underdark",
+									"colLabels": [
+										"CR",
+										"Beast",
+										"Fly/Swim"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-8",
+										"col-2"
+									],
+									"rows": [
+										[
+											"0",
+											"{@creature Giant fire beetle}",
+											"\u2014"
+										],
+										[
+											"1/8",
+											"{@creature Giant rat}",
+											"\u2014"
+										],
+										[
+											"1/8",
+											"{@creature Stirge}",
+											"Fly"
+										],
+										[
+											"1/4",
+											"{@creature Giant bat}",
+											"Fly"
+										],
+										[
+											"1/4",
+											"{@creature Giant centipede}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Giant lizard}",
+											"\u2014"
+										],
+										[
+											"1/4",
+											"{@creature Giant poisonous snake}",
+											"Swim"
+										],
+										[
+											"1",
+											"{@creature Giant spider}",
+											"\u2014"
+										],
+										[
+											"1",
+											"{@creature Giant toad}",
+											"Swim"
+										],
+										[
+											"2",
+											"{@creature Giant constrictor snake}",
+											"Swim"
+										],
+										[
+											"2",
+											"{@creature Polar bear} (cave bear)",
+											"Swim"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Underwater",
+									"colLabels": [
+										"CR",
+										"Beast",
+										"Fly/Swim"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-8",
+										"col-2"
+									],
+									"rows": [
+										[
+											"0",
+											"{@creature Quipper}",
+											"Swim"
+										],
+										[
+											"1/4",
+											"{@creature Constrictor snake}",
+											"Swim"
+										],
+										[
+											"1/2",
+											"{@creature Giant sea horse}",
+											"Swim"
+										],
+										[
+											"1/2",
+											"{@creature Reef shark}",
+											"Swim"
+										],
+										[
+											"1",
+											"{@creature Giant octopus}",
+											"Swim"
+										],
+										[
+											"2",
+											"{@creature Giant constrictor snake}",
+											"Swim"
+										],
+										[
+											"2",
+											"{@creature Hunter shark}",
+											"Swim"
+										],
+										[
+											"2",
+											"{@creature Plesiosaurus}",
+											"Swim"
+										],
+										[
+											"3",
+											"{@creature Killer whale}",
+											"Swim"
+										],
+										[
+											"5",
+											"{@creature Giant shark}",
+											"Swim"
+										]
+									]
+								}
+							]
+						}
+					],
+					"source": "XGE-ES",
+					"page": 21
 				}
 			]
         },
@@ -39699,6 +41032,190 @@
 			}
 		},
 		{
+			"name": "Halcón sangriento",
+			"source": "MM-ES",
+			"page": 319,
+			"srd": true,
+			"size": "S",
+			"type": {
+                "type": "beast",
+                "tags": ["bestia"]
+            },
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 7,
+				"formula": "2d6"
+			},
+			"speed": {
+				"walk": 10,
+				"fly": 60
+			},
+			"str": 6,
+			"dex": 14,
+			"con": 10,
+			"int": 3,
+			"wis": 14,
+			"cha": 5,
+			"skill": {
+				"perception": "+4"
+			},
+			"passive": 14,
+			"cr": "1/8",
+			"trait": [
+				{
+					"name": "Vista Aguda",
+					"entries": [
+						"El halcón posee ventaja en las pruebas de Sabiduría ({@skill Perception|Percepción}) que dependan de la vista."
+					]
+				},
+				{
+					"name": "Atacar en Manada",
+					"entries": [
+						"El halcón tiene ventaja en las tiradas de ataque contra criaturas que estén a 5 pies o menos de, al menos, un aliado del halcón que no esté {@condition incapacitado|PHB-ES}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Pico",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., un objetivo. {@h}4 ({@damage 1d4 + 2}) perforante damage."
+					]
+				}
+			],
+			"environment": [
+				"montañas",
+				"praderas",
+				"bosques",
+				"colinas",
+				"costas",
+				"zonas polares"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Blood%20Hawk.png",
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/blood-hawk.mp3"
+			},
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"type": "entries",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Los halcones sangrientos reciben este nombre tanto por sus plumas carmesíes como por su agresividad, pues atacan temerariamente a prácticamente cualquier otro animal, apuñalándolo con su afilado pico. Estas aves forman enormes bandadas, que aprovechan la ventaja que les da el número para abatir a sus presas."
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Oso pardo",
+			"source": "MM-ES",
+			"page": 319,
+			"srd": true,
+			"size": "L",
+			"type": {
+                "type": "beast",
+                "tags": ["bestia"]
+            },
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 11,
+					"from": [
+						"armadura natural"
+					]
+				}
+			],
+			"hp": {
+				"average": 34,
+				"formula": "4d10 + 12"
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 30
+			},
+			"str": 19,
+			"dex": 10,
+			"con": 16,
+			"int": 2,
+			"wis": 13,
+			"cha": 7,
+			"skill": {
+				"perception": "+3"
+			},
+			"passive": 13,
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Olfato Agudo",
+					"entries": [
+						"El oso tiene ventaja en las pruebas de Sabiduría ({@skill Perception|Percepción}) que dependan del olfato."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Ataque múltiple",
+					"entries": [
+						"El oso realiza dos ataques: uno con su mordisco y otro con sus garras."
+					]
+				},
+				{
+					"name": "Mordisco",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., un objetivo. {@h}8 ({@damage 1d8 + 4}) perforante damage."
+					]
+				},
+				{
+					"name": "Garras",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., un objetivo. {@h}11 ({@damage 2d6 + 4}) cortante damage."
+					]
+				}
+			],
+			"environment": [
+				"bosques",
+				"colinas",
+				"zonas polares"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Brown%20Bear.png",
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/brown-bear.mp3"
+			},
+			"traitTags": [
+				"Keen Senses"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
             "name": "Osgo",
             "source": "MM-ES",
             "page": 33,
@@ -39800,6 +41317,102 @@
 				]
 			}
         },
+		{
+			"name": "Oso de las cavernas",
+			"source": "MM-ES",
+			"page": 334,
+			"srd": true,
+			"size": "L",
+			"type": {
+                "type": "beast",
+                "tags": ["bestia"]
+            },
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"armadura natural"
+					]
+				}
+			],
+			"hp": {
+				"average": 42,
+				"formula": "5d10 + 15"
+			},
+			"speed": {
+				"walk": 40,
+				"swim": 30
+			},
+			"str": 20,
+			"dex": 10,
+			"con": 16,
+			"int": 2,
+			"wis": 13,
+			"cha": 7,
+			"skill": {
+				"perception": "+3"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Olfato Agudo",
+					"entries": [
+						"El oso tiene ventaja en las pruebas de Sabiduría ({@skill Perception|Percepción}) que dependan del olfato."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Ataque múltiple",
+					"entries": [
+						"El oso realiza dos ataques: uno con su mordisco y otro con sus garras."
+					]
+				},
+				{
+					"name": "Mordisco",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., un objetivo. {@h}9 ({@damage 1d8 + 5}) perforante damage."
+					]
+				},
+				{
+					"name": "Garras",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., un objetivo. {@h}12 ({@damage 2d6 + 5}) cortante damage."
+					]
+				}
+			],
+			"environment": [
+				"bosques"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Cave%20Bear.png",
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/cave-bear.mp3"
+			},
+			"traitTags": [
+				"Keen Senses"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
 		{
             "name": "Plebeyo",
             "source": "MM-ES",
@@ -41344,6 +42957,126 @@
 			}
         },
 		{
+			"name": "Búho gigante",
+			"source": "MM-ES",
+			"page": 327,
+			"srd": true,
+			"size": "L",
+			"type": {
+                "type": "beast",
+                "tags": ["bestia"]
+            },
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 19,
+				"formula": "3d10 + 3"
+			},
+			"speed": {
+				"walk": 5,
+				"fly": 60
+			},
+			"str": 13,
+			"dex": 15,
+			"con": 12,
+			"int": 8,
+			"wis": 13,
+			"cha": 10,
+			"skill": {
+				"perception": "+5",
+				"stealth": "+4"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 15,
+			"languages": [
+				"búho gigante",
+				"entiende común, elfo y silvano, pero no puede hablarlos"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Pasar Volando",
+					"entries": [
+						"El búho no provoca ataques de oportunidad cuando vuela para moverse fuera del alcance de un enemigo."
+					]
+				},
+				{
+					"name": "Oído y Vista Agudos",
+					"entries": [
+						"El búho tiene ventaja en las pruebas de Sabiduría ({@skill Perception|Percepción}) que dependan de la vista o del oído."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Garras",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., un objetivo. {@h}8 ({@damage 2d6 + 1}) cortante damage."
+					]
+				}
+			],
+			"environment": [
+				"bosques",
+				"colinas",
+				"zonas polares"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Giant%20Owl.png",
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/giant-owl.mp3"
+			},
+			"traitTags": [
+				"Flyby",
+				"Keen Senses"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languageTags": [
+				"C",
+				"CS",
+				"E",
+				"OTH",
+				"S"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"Los búhos gigantes suelen llevarse bien con los feéricos y el resto de criaturas silvestres. Además, sirven de protectores de los bosques."
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MM/Giant Owl.jpg"
+					}
+				}
+			]
+			}
+		},
+		{
             "name": "Araña gigante",
             "source": "MM-ES",
             "page": 328,
@@ -42165,6 +43898,90 @@
 				]
 			}
         },
+		{
+			"name": "Mamut",
+			"source": "MM-ES",
+			"page": 332,
+			"srd": true,
+			"size": "H",
+			"type": {
+				"type": "beast",
+				"tags": ["bestia"]
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"armadura natural"
+					]
+				}
+			],
+			"hp": {
+				"average": 126,
+				"formula": "11d12 + 55"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 24,
+			"dex": 9,
+			"con": 21,
+			"int": 3,
+			"wis": 11,
+			"cha": 6,
+			"passive": 10,
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Carga Pisoteadora",
+					"entries": [
+						"Si el mamut se mueve al menos 20 pies en línea recta hacia una criatura y después la impacta con su ataque de colmillos durante el mismo turno, el objetivo deberá superar una tirada de salvación de Fuerza {@dc 18} o será {@condition derribado|PHB-ES}. Si el objetivo está {@condition derribado|PHB-ES}, el mamut puede usar una acción adicional para hacer un ataque de pisotón contra él."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Colmillos",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., un objetivo. {@h}25 ({@damage 4d8 + 7}) perforante damage."
+					]
+				},
+				{
+					"name": "Pisotón",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., una criatura {@condition derribado|PHB-ES|derribada}. {@h}29 ({@damage 4d10 + 7}) contundente damage."
+					]
+				}
+			],
+			"environment": [
+				"zonas polares"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Mammoth.png",
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/mammoth.mp3"
+			},
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"fluff": {
+				"type": "entries",
+				"entries": [
+					"Los mamuts son criaturas similares a elefantes, pero con un pelaje espeso y los colmillos tremendamente largos. También son más fornidos y feroces que los elefantes, y habitan en una gran variedad de climas, desde el subártico al subtropical."
+				]
+			}
+		},
 		{
 			"name": "Mane",
 			"source": "MM-ES",
@@ -43012,6 +44829,91 @@
 			}
         },
 		{
+			"name": "Búho",
+			"source": "MM-ES",
+			"page": 333,
+			"srd": true,
+			"size": "T",
+			"type": {
+                "type": "beast",
+                "tags": ["bestia"]
+            },
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				11
+			],
+			"hp": {
+				"average": 1,
+				"formula": "1d4 - 1"
+			},
+			"speed": {
+				"walk": 5,
+				"fly": 60
+			},
+			"str": 3,
+			"dex": 13,
+			"con": 8,
+			"int": 2,
+			"wis": 12,
+			"cha": 7,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+3"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 13,
+			"cr": "0",
+			"trait": [
+				{
+					"name": "Pasar Volando",
+					"entries": [
+						"El búho no provoca ataques de oportunidad cuando vuela para moverse fuera del alcance de un enemigo."
+					]
+				},
+				{
+					"name": "Oído y Vista Agudos",
+					"entries": [
+						"El búho tiene ventaja en las pruebas de Sabiduría ({@skill Perception|Percepción}) que dependan de la vista o del oído."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Garras",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., un objetivo. {@h}1 cortante damage."
+					]
+				}
+			],
+			"environment": [
+				"bosques",
+				"zonas polares"
+			],
+			"familiar": true,
+			"tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Owl.png",
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/owl.mp3"
+			},
+			"traitTags": [
+				"Flyby",
+				"Keen Senses"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
             "name": "Oso Lechuza",
             "source": "MM-ES",
             "page": 249,
@@ -43413,6 +45315,97 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Oso polar",
+			"source": "MM-ES",
+			"page": 334,
+			"srd": true,
+			"size": "L",
+			"type": {
+                "type": "beast",
+                "tags": ["bestia"]
+            },
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"armadura natural"
+					]
+				}
+			],
+			"hp": {
+				"average": 42,
+				"formula": "5d10 + 15"
+			},
+			"speed": {
+				"walk": 40,
+				"swim": 30
+			},
+			"str": 20,
+			"dex": 10,
+			"con": 16,
+			"int": 2,
+			"wis": 13,
+			"cha": 7,
+			"skill": {
+				"perception": "+3"
+			},
+			"passive": 13,
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Olfato Agudo",
+					"entries": [
+						"El oso tiene ventaja en las pruebas de Sabiduría ({@skill Perception|Percepción}) que dependan del olfato."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Ataque múltiple",
+					"entries": [
+						"El oso realiza dos ataques: uno con su mordisco y otro con sus garras."
+					]
+				},
+				{
+					"name": "Mordisco",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., un objetivo. {@h}9 ({@damage 1d8 + 5}) perforante damage."
+					]
+				},
+				{
+					"name": "Garras",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., un objetivo. {@h}12 ({@damage 2d6 + 5}) cortante damage."
+					]
+				}
+			],
+			"environment": [
+				"underdark",
+				"zonas polares"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Polar%20Bear.png",
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/polar-bear.mp3"
+			},
+			"traitTags": [
+				"Keen Senses"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
 		},
 		{
 			"name": "Rinoceronte",
@@ -50288,22 +52281,21 @@
 		},
 		{
 			"name": "Bastón",
+			"source": "PHB-ES",
+			"page": 149,
+			"srd": true,
 			"type": "M",
-			"weapon": true,
-			"weaponCategory": "simple",
 			"rarity": "none",
-			"value": 20,
 			"weight": 4,
-			"dmg1": "1d6",
-			"dmg2": "1d8",
-			"dmgType": "B",
+			"value": 20,
+			"weaponCategory": "simple",
 			"property": [
 				"V"
 			],
-			"source": "PHB-ES",
-			"page": 149,
-			"staff": true,
-			"srd": true
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8",
+			"weapon": true
 		},
 		{
 			"name": "Estoque",
@@ -50533,19 +52525,26 @@
 			"srd": true
 		},
 		{
-			"name": "Bastón",
+			"name": "Bastón (canalizador arcano)",
+			"source": "PHB-ES",
+			"page": 151,
+			"srd": true,
 			"type": "SCF_ESP",
 			"scfType": "arcane",
 			"rarity": "none",
-			"value": 500,
 			"weight": 4,
+			"value": 500,
+			"weaponCategory": "simple",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8",
+			"staff": true,
 			"entries": [ 
 				"Un canalizador arcano es un objeto especial, diseñado para conducir el poder de los conjuros arcanos. Los brujos, hechiceros y magos pueden utilizar este objeto como canalizador mágico."
-			],
-			"source": "PHB-ES",
-			"page": 151,
-			"staff": true,
-			"srd": true
+			]
 		},
 		{
 			"name": "Armadura de cuero tachonado",
@@ -50696,7 +52695,7 @@
 					"page": 79
 				}
 			],
-			"additionalEntries": [
+			"entries": [
 				"Los suministros de alquimista permiten a un personaje elaborar líquidos útiles, como el ácido o el fuego de alquimista.",
 				{
 					"type": "entries",
@@ -50986,7 +52985,7 @@
 					"page": 79
 				}
 			],
-			"additionalEntries": [
+			"entries": [
 				"Elaborar cerveza es un arte. No solo sirve como bebida alcohólica, sino que el proceso de fermentación purifica el agua. Fabricar cerveza conlleva semanas de fermentación, pero solo unas horas de trabajo.",
 				{
 					"type": "entries",
@@ -51129,7 +53128,7 @@
 					"page": 79
 				}
 			],
-			"additionalEntries": [
+			"entries": [
 				"La caligrafía considera la escritura un arte bello y delicado. Los calígrafos crean textos agradables a la vista, usando un estilo difícil de falsificar. Sus suministros les dan cierta capacidad de examinar escritos y determinar si son legítimos, ya que han dedicado largas horas a estudiar, escribir e intentar replicar estilos y diseños.",
 				{
 					"type": "entries",
@@ -51270,7 +53269,7 @@
 					"page": 80
 				}
 			],
-			"additionalEntries": [
+			"entries": [
 				"Ser experto en carpintería permite a un personaje construir estructuras de madera. Un carpintero puede realizar una casa, un cobertizo, un armario de madera o un objeto similar.",
 				{
 					"type": "entries",
@@ -51394,7 +53393,7 @@
 					"page": 80
 				}
 			],
-			"additionalEntries": [
+			"entries": [
 				"Utilizando las herramientas de cartógrafo, puedes crear mapas precisos que hagan que viajar sea más fácil para ti y para los que vengan detrás. Entre ellos se incluyen desde cartografías a gran escala que muestran cordilleras hasta diagramas que representan el plano del nivel de una mazmorra.",
 				{
 					"type": "entries",
@@ -51579,7 +53578,7 @@
 					"page": 80
 				}
 			],
-			"additionalEntries": [
+			"entries": [
 				"Aunque el oficio del zapatero puede parecer humilde para un aventurero, un buen par de botas llevarán a un personaje a través de espesuras salvajes y mazmorras mortales.",
 				{
 					"type": "entries",
@@ -51693,7 +53692,7 @@
 					"page": 80
 				}
 			],
-			"additionalEntries": [
+			"entries": [
 				"Ir de aventuras es duro. No obstante, si tienes un cocinero, tus comidas serán mucho mejores que la típica mezcla de galletas y fruta seca.",
 				{
 					"type": "entries",
@@ -51804,7 +53803,7 @@
 						"type": "image",
 						"href": {
 							"type": "internal",
-							"path": "items/Copper (cp).jpg"
+							"path": "items/PHB/Copper (cp).jpg"
 						}
 					}
 				]
@@ -52117,7 +54116,7 @@
 						"type": "image",
 						"href": {
 							"type": "internal",
-							"path": "items/Electrum (ep).jpg"
+							"path": "items/PHB/Electrum (ep).jpg"
 						}
 					}
 				]
@@ -52421,7 +54420,7 @@
 					"page": 82
 				}
 			],
-			"additionalEntries": [
+			"entries": [
 				"Alguien competente con las herramientas de soplador de vidrio no solo es capaz de dar forma al vidrio, sino que también tiene conocimientos especializados sobre los métodos que se utilizan para producir objetos de cristal.",
 				{
 					"type": "entries",
@@ -52526,7 +54525,7 @@
 						"type": "image",
 						"href": {
 							"type": "internal",
-							"path": "items/Gold (gp).jpg"
+							"path": "items/PHB/Gold (gp).jpg"
 						}
 					}
 				]
@@ -52572,7 +54571,7 @@
 						"type": "image",
 						"href": {
 							"type": "internal",
-							"path": "items/Healer's Kit.jpg"
+							"path": "items/PHB/Healer's Kit.jpg"
 						}
 					}
 				]
@@ -52831,7 +54830,7 @@
 					"page": 82
 				}
 			],
-			"additionalEntries": [
+			"entries": [
 				"Haber entrenado con herramientas de joyero implica haber aprendido las técnicas básicas necesarias para embellecer gemas. También te hace un experto en la identificación de piedras preciosas.",
 				{
 					"type": "entries",
@@ -52945,7 +54944,7 @@
 					"page": 82
 				}
 			],
-			"additionalEntries": [
+			"entries": [
 				"Tu conocimiento del curtido de cuero se extiende a las pieles de cualquier animal y sus propiedades. También conoces bien las armaduras de cuero y otros objetos similares.",
 				{
 					"type": "entries",
@@ -53121,7 +55120,7 @@
 					"page": 83
 				}
 			],
-			"additionalEntries": [
+			"entries": [
 				"Las herramientas de albañil te permiten construir estructuras de piedra, incluyendo muros y edificios hechos de ladrillo.",
 				{
 					"type": "entries",
@@ -53321,6 +55320,12 @@
 							"15"
 						]
 					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE-ES|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
+					]
 				}
 			],
 			"srd": true
@@ -53371,7 +55376,7 @@
 					"page": 83
 				}
 			],
-			"additionalEntries": [
+			"entries": [
 				"La competencia con los suministros de pintor representa tu habilidad para pintar y dibujar. También poses conocimientos de historia del arte, muy útiles a la hora de examinar obras artísticas.",
 				{
 					"type": "entries",
@@ -53552,7 +55557,7 @@
 						"type": "image",
 						"href": {
 							"type": "internal",
-							"path": "items/Platinum (pp).jpg"
+							"path": "items/PHB/Platinum (pp).jpg"
 						}
 					}
 				]
@@ -53697,7 +55702,7 @@
 					"page": 84
 				}
 			],
-			"additionalEntries": [
+			"entries": [
 				"Las herramientas de alfarero se utilizan para crear diferentes objetos de cerámica, como ollas o recipientes similares.",
 				{
 					"type": "entries",
@@ -54071,7 +56076,7 @@
 						"type": "image",
 						"href": {
 							"type": "internal",
-							"path": "items/Silver (sp).jpg"
+							"path": "items/PHB/Silver (sp).jpg"
 						}
 					}
 				]
@@ -54111,7 +56116,7 @@
 					"page": 84
 				}
 			],
-			"additionalEntries": [
+			"entries": [
 				"Las herramientas de herrero te permiten trabajar el metal, calentarlo para alterar su forma, reparar el daño o convertir lingotes en objetos útiles.",
 				{
 					"type": "entries",
@@ -54270,10 +56275,7 @@
 				}
 			],
 			"entries": [
-				"Quizá la herramienta de uso más común por los aventureros, sus componentes están diseñados para abrir cerraduras y frustrar trampas. La competencia con estas herramientas también te da un conocimiento general de trampas y cerrojos."
-			],
-			"additionalEntries": [
-				"Perhaps the most common tools used by adventurers, thieves' tools are designed for picking locks and foiling traps. Proficiency with the tools also grants you a general knowledge of traps and locks.",
+				"Quizá la herramienta de uso más común por los aventureros, sus componentes están diseñados para abrir cerraduras y frustrar trampas. La competencia con estas herramientas también te da un conocimiento general de trampas y cerrojos.",
 				{
 					"type": "entries",
 					"name": "Componentes",
@@ -54323,6 +56325,12 @@
 							"Varía"
 						]
 					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"{@i {@color See the|7f7f7f} {@variantrule Tool Proficiencies|XGE-ES|Tool Proficiencies} {@color entry for more information.|7f7f7f}}"
+					]
 				}
 			],
 			"fluff": 
@@ -54334,7 +56342,7 @@
 						"type": "image",
 						"href": {
 							"type": "internal",
-							"path": "items/Thieves' Tools.jpg"
+							"path": "items/PHB/Thieves' Tools.jpg"
 						}
 					}
 				]
@@ -54382,7 +56390,7 @@
 					"page": 84
 				}
 			],
-			"additionalEntries": [
+			"entries": [
 				"Las herramientas de manitas están diseñadas para permitirte reparar muchos objetos corrientes. Aunque no hay mucho que seas capaz de fabricar con ellas, puedes coser ropa desgarrada, afilar una espada o parchear una cota de malla andrajosa.",
 				{
 					"type": "entries",
@@ -54915,7 +56923,7 @@
 						"type": "image",
 						"href": {
 							"type": "internal",
-							"path": "items/Trinket (PHB).png"
+							"path": "items/PHB/Trinket (PHB).png"
 						}
 					}
 				]
@@ -55011,7 +57019,7 @@
 					"page": 85
 				}
 			],
-			"additionalEntries": [
+			"entries": [
 				"Las herramientas de tejedor te permiten crear tejidos y convertirlos en prendas de ropa.",
 				{
 					"type": "entries",
@@ -55117,7 +57125,7 @@
 					"page": 85
 				}
 			],
-			"additionalEntries": [
+			"entries": [
 				"Las herramientas de ebanista te permiten crear intricados objetos de madera, como fichas o flechas.",
 				{
 					"type": "entries",
@@ -55187,26 +57195,25 @@
 		},
 		{
 			"name": "Bastón de madera",
-			"weaponCategory": "simple",
-			"dmg1": "1d6",
-			"dmg2": "1d8",
-			"dmgType": "B",
-			"property": [
-				"V"
-			],
+			"source": "PHB-ES",
+			"page": 151,
+			"srd": true,
 			"type": "SCF_ESP",
 			"scfType": "druid",
 			"rarity": "none",
-			"value": 500,
 			"weight": 4,
+			"value": 500,
+			"weaponCategory": "simple",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8",
 			"entries": [ 
 				"Los druidas pueden utilizar este objeto como canalizador mágico."
-			],
-			"source": "PHB-ES",
-			"page": 151,
-			"staff": true,
-			"srd": true
-		},
+			]
+		},	
 		{
 			"name": "Varita de tejo",
 			"type": "SCF_ESP",
@@ -55237,7 +57244,7 @@
 						"{@item Cristal|PHB-ES|Cristal}",
 						"{@item Orbe|PHB-ES|Orbe}",
 						"{@item Vara|PHB-ES|Vara}",
-						"{@item Bastón|PHB-ES|Bastón}",
+						"{@item Bastón (canalizador arcano)|PHB-ES|Bastón}",
 						"{@item Varita|PHB-ES|Varita}"
 					]
 				}
