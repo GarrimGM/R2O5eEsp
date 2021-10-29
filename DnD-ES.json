@@ -41476,6 +41476,87 @@
 			}
         },
 		{
+			"name": "Cangrejo",
+			"source": "MM-ES",
+			"page": 320,
+			"srd": true,
+			"size": "T",
+			"type": {
+                "type": "beast",
+                "tags": ["bestia"]
+            },
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 11,
+					"from": [
+						"armadura natural"
+					]
+				}
+			],
+			"hp": {
+				"average": 2,
+				"formula": "1d4"
+			},
+			"speed": {
+				"walk": 20,
+				"swim": 20
+			},
+			"str": 2,
+			"dex": 11,
+			"con": 10,
+			"int": 1,
+			"wis": 8,
+			"cha": 2,
+			"skill": {
+				"stealth": "+2"
+			},
+			"senses": [
+				"blindsight 30 ft."
+			],
+			"passive": 9,
+			"cr": "0",
+			"trait": [
+				{
+					"name": "Anfibio",
+					"entries": [
+						"El cangrejo puede respirar tanto dentro del agua como fuera de ella."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Pinza",
+					"entries": [
+						"{@atk mw} {@hit 0} to hit, reach 5 ft., un objetivo. {@h}1 contundente damage."
+					]
+				}
+			],
+			"environment": [
+				"costas"
+			],
+			"familiar": true,
+			"tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Crab.png",
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/crab.mp3"
+			},
+			"traitTags": [
+				"Amphibious"
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
             "name": "Sectario",
             "source": "MM-ES",
             "page": 345,
@@ -42153,6 +42234,78 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Águila",
+			"source": "MM-ES",
+			"page": 322,
+			"srd": true,
+			"size": "S",
+			"type": {
+                "type": "beast",
+                "tags": ["bestia"]
+            },
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 3,
+				"formula": "1d6"
+			},
+			"speed": {
+				"walk": 10,
+				"fly": 60
+			},
+			"str": 6,
+			"dex": 15,
+			"con": 10,
+			"int": 2,
+			"wis": 14,
+			"cha": 7,
+			"skill": {
+				"perception": "+4"
+			},
+			"passive": 14,
+			"cr": "0",
+			"trait": [
+				{
+					"name": "Vista Aguda",
+					"entries": [
+						"El águila tiene ventaja en las pruebas de Sabiduría ({@skill Perception|Percepción}) que dependan de la vista."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Garras",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., un objetivo. {@h}4 ({@damage 1d4 + 2}) cortante damage."
+					]
+				}
+			],
+			"environment": [
+				"montañas",
+				"praderas",
+				"colinas",
+				"costas"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Eagle.png",
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/eagle.mp3"
+			},
+			"traitTags": [
+				"Keen Senses"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
 		},
 		{
 			"name": "Elemental de tierra",
@@ -42957,6 +43110,341 @@
 			}
         },
 		{
+			"name": "Cangrejo gigante",
+			"source": "MM-ES",
+			"page": 324,
+			"srd": true,
+			"size": "M",
+			"type": {
+                "type": "beast",
+                "tags": ["bestia"]
+            },
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"armadura natural"
+					]
+				}
+			],
+			"hp": {
+				"average": 13,
+				"formula": "3d8"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 13,
+			"dex": 15,
+			"con": 11,
+			"int": 1,
+			"wis": 9,
+			"cha": 3,
+			"skill": {
+				"stealth": "+4"
+			},
+			"senses": [
+				"blindsight 30 ft."
+			],
+			"passive": 9,
+			"cr": "1/8",
+			"trait": [
+				{
+					"name": "Anfibio",
+					"entries": [
+						"El cangrejo puede respirar tanto dentro del agua como fuera de ella."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Pinza",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., un objetivo. {@h}4 ({@damage 1d6 + 1}) contundente damage, y el objetivo está {@condition agarrado|PHB-ES} ({@dc 11} para escapar). El cangrejo tiene dos pinzas, así que solo podrá agarrar a un objetivo con cada una."
+					]
+				}
+			],
+			"environment": [
+				"costas"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Giant%20Crab.png",
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/giant-crab.mp3"
+			},
+			"traitTags": [
+				"Amphibious"
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"grappled"
+			]
+		},
+		{
+			"name": "Águila gigante",
+			"source": "MM-ES",
+			"page": 324,
+			"srd": true,
+			"size": "L",
+			"type": {
+                "type": "beast",
+                "tags": ["bestia"]
+            },
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 26,
+				"formula": "4d10 + 4"
+			},
+			"speed": {
+				"walk": 10,
+				"fly": 80
+			},
+			"str": 16,
+			"dex": 17,
+			"con": 13,
+			"int": 8,
+			"wis": 14,
+			"cha": 10,
+			"skill": {
+				"perception": "+4"
+			},
+			"passive": 14,
+			"languages": [
+				"águila gigante",
+				"entiende aurano y común, pero no puede hablarlos"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Vista Aguda",
+					"entries": [
+						"El águila tiene ventaja en las pruebas de Sabiduría ({@skill Perception|Percepción}) que dependan de la vista."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Ataque múltiple",
+					"entries": [
+						"El águila realiza dos ataques: uno con su pico y otro con sus garras. "
+					]
+				},
+				{
+					"name": "Pico",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., un objetivo. {@h}6 ({@damage 1d6 + 3}) perforante damage."
+					]
+				},
+				{
+					"name": "Garras",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., un objetivo. {@h}10 ({@damage 2d6 + 3}) cortante damage."
+					]
+				}
+			],
+			"environment": [
+				"montañas",
+				"praderas",
+				"colinas",
+				"costas"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Giant%20Eagle.png",
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/giant-eagle.mp3"
+			},
+			"traitTags": [
+				"Keen Senses"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AU",
+				"C",
+				"CS",
+				"OTH"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Las águilas gigantes son criaturas nobles, que hablan su propio idioma y entienden el común. Las parejas de águilas gigantes suelen tener hasta cuatro huevos o polluelos en su nido. Trata a los polluelos como águilas normales."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Giant Eagle.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Lagarto gigante",
+			"source": "MM-ES",
+			"page": 326,
+			"srd": true,
+			"size": "L",
+			"type": {
+                "type": "beast",
+                "tags": ["bestia"]
+            },
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"armadura natural"
+					]
+				}
+			],
+			"hp": {
+				"average": 19,
+				"formula": "3d10 + 3"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 15,
+			"dex": 12,
+			"con": 13,
+			"int": 2,
+			"wis": 10,
+			"cha": 5,
+			"senses": [
+				"darkvision 30 ft."
+			],
+			"passive": 10,
+			"cr": "1/4",
+			"action": [
+				{
+					"name": "Mordisco",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., un objetivo. {@h}6 ({@damage 1d8 + 2}) perforante damage."
+					]
+				}
+			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Atributos de los lagartos gigantes",
+					"entries": [
+						"Algunos lagartos gigantes poseen uno (o varios) de los atributos siguientes:",
+						{
+							"type": "entries",
+							"name": "Aguantar la Respiración",
+							"entries": [
+								"El lagarto es capaz de aguantar la respiración durante 15 minutos. Los lagartos que tengan este atributo también tendrán una velocidad nadando de 30 pies."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Trepar cual Arácnido",
+							"entries": [
+								"El lagarto puede trepar por superficies difíciles, incluyendo recorrer el techo boca abajo, sin tener que hacer pruebas de característica."
+							]
+						}
+					]
+				}
+			],
+			"environment": [
+				"underdark",
+				"bosques",
+				"pantanos",
+				"desiertos",
+				"costas"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Giant%20Lizard.png",
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/giant-lizard.mp3"
+			},
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"A veces se utiliza a los lagartos gigantes como monturas o bestias de carga. De hecho, los drows, duergars y otros moradores del Underdark recurren a ellos con frecuencia, mientras que los hombres lagarto incluso llegan a criarlos como mascotas.",
+									{
+										"type": "inset",
+										"name": "Variante: Atributos de los lagartos gigantes",
+										"entries": [
+											"Algunos lagartos gigantes poseen uno (o varios) de los atributos siguientes:",
+											{
+												"type": "entries",
+												"name": "Aguantar la Respiración",
+												"entries": [
+													"El lagarto es capaz de aguantar la respiración durante 15 minutos. Los lagartos que tengan este atributo también tendrán una velocidad nadando de 30 pies."
+												]
+											},
+											{
+												"type": "entries",
+												"name": "Trepar cual Arácnido",
+												"entries": [
+													"El lagarto puede trepar por superficies difíciles, incluyendo recorrer el techo boca abajo, sin tener que hacer pruebas de característica."
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		{
 			"name": "Búho gigante",
 			"source": "MM-ES",
 			"page": 327,
@@ -43176,6 +43664,221 @@
 				]
 			}
         },
+		{
+			"name": "Sapo gigante",
+			"source": "MM-ES",
+			"page": 329,
+			"srd": true,
+			"size": "L",
+			"type": {
+                "type": "beast",
+                "tags": ["bestia"]
+            },
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				11
+			],
+			"hp": {
+				"average": 39,
+				"formula": "6d10 + 6"
+			},
+			"speed": {
+				"walk": 20,
+				"swim": 40
+			},
+			"str": 15,
+			"dex": 13,
+			"con": 13,
+			"int": 2,
+			"wis": 10,
+			"cha": 3,
+			"senses": [
+				"darkvision 30 ft."
+			],
+			"passive": 10,
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Anfibio",
+					"entries": [
+						"El sapo puede respirar tanto dentro del agua como fuera de ella."
+					]
+				},
+				{
+					"name": "Saltar sin Carrera",
+					"entries": [
+						"El sapo es capaz de hacer un salto de longitud de 20 pies o un salto de altura de 10 pies, tanto si ha cogido carrerilla como si no."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Mordisco",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., un objetivo. {@h}7 ({@damage 1d10 + 2}) perforante damage plus 5 ({@damage 1d10}) veneno damage, y el objetivo está {@condition agarrado|PHB-ES} ({@dc 13} para escapar). Hasta que el agarre finalice, el objetivo también estará {@condition apresado|PHB-ES} y el sapo no podrá morder a otro objetivo."
+					]
+				},
+				{
+					"name": "Engullir",
+					"entries": [
+						"El sapo realiza un ataque de mordisco contra una criatura de tamaño Pequeño o menor a la que esté agarrando. Si el ataque impacta, el sapo engullirá al objetivo y el agarre terminará. La criatura engullida está {@condition apresado|PHB-ES|apresada} y {@condition cegado|PHB-ES|cegada}, tiene cobertura total contra ataques y otros efectos que se originen en el exterior del sapo y recibe 10 ({@damage 3d6}) de daño de ácido al comienzo de cada uno de los turnos del sapo. El sapo solo puede tener engullido a un objetivo al mismo tiempo.",
+						"Si el sapo muere, la criatura engullida dejará de estar {@condition apresado|PHB-ES|apresada} por él y podrá escapar del cadáver gastando 5 pies de su movimiento. No obstante, estará {@condition derribado|PHB-ES|derribada} al salir."
+					]
+				}
+			],
+			"environment": [
+				"underdark",
+				"bosques",
+				"pantanos",
+				"desiertos",
+				"costas"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Giant%20Toad.png",
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/giant-toad.mp3"
+			},
+			"traitTags": [
+				"Amphibious"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Swallow"
+			],
+			"damageTags": [
+				"A",
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"blinded",
+				"grappled",
+				"restrained"
+			]
+		},
+		{
+			"name": "Tarántula gigante",
+			"source": "MM-ES",
+			"page": 330,
+			"srd": true,
+			"size": "M",
+			"type": {
+                "type": "beast",
+                "tags": ["bestia"]
+            },
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 11,
+				"formula": "2d8 + 2"
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 13,
+			"int": 3,
+			"wis": 12,
+			"cha": 4,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+7"
+			},
+			"senses": [
+				"blindsight 10 ft.",
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Trepar cual Arácnido",
+					"entries": [
+						"La araña puede trepar por superficies difíciles, incluyendo recorrer el techo boca abajo, sin tener que hacer pruebas de característica."
+					]
+				},
+				{
+					"name": "Sentir a través de Telarañas",
+					"entries": [
+						"Mientras esté en contacto con una telaraña, la araña sabrá la ubicación exacta de cualquier otra criatura en contacto con dicha telaraña."
+					]
+				},
+				{
+					"name": "Caminar por Telarañas",
+					"entries": [
+						"La araña ignora todas las restricciones al movimiento causadas por cualquier tipo de red o telaraña."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Mordisco",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., una criatura. {@h}4 ({@damage 1d6 + 1}) perforante damage, y el objetivo debe hacer una tirada de salvación de Constitución {@dc 11}, sufriendo 7 ({@damage 2d6}) veneno damage si la falla, o la mitad del daño si la supera. Si el veneno reduce al objetivo a 0 puntos de golpe, este estará estable pero {@condition envenenado|PHB-ES} durante 1 hora, incluso tras recuperar puntos de golpe. Además, mientras esté {@condition envenenado|PHB-ES} también estará {@condition paralizado|PHB-ES}."
+					]
+				}
+			],
+			"environment": [
+				"praderas",
+				"bosques",
+				"colinas",
+				"desiertos",
+				"costas"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Giant%20Wolf%20Spider.png",
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/giant-wolf-spider.mp3"
+			},
+			"traitTags": [
+				"Spider Climb",
+				"Web Sense",
+				"Web Walker"
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"paralyzed",
+				"poisoned"
+			],
+			"fluff": {
+				"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"Las tarántulas gigantes, de menor tamaño que las arañas gigantes, persiguen a sus presas a campo abierto o se esconden para emboscarlas, enterrándose en madrigueras, grietas o entre escombros."
+							]
+						}
+					]
+				}
+			]
+			}
+		},
 		{
 			"name": "Gnoll",
 			"source": "MM-ES",
