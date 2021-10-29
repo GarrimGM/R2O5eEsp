@@ -46020,6 +46020,195 @@
 			}
 		},
 		{
+			"name": "Plesiosaurio",
+			"group": "Dinosaurios",
+			"source": "MM-ES",
+			"page": 80,
+			"srd": true,
+			"size": "L",
+			"type": {
+                "type": "beast",
+                "tags": ["bestia"]
+            },
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"armadura natural"
+					]
+				}
+			],
+			"hp": {
+				"average": 68,
+				"formula": "8d10 + 24"
+			},
+			"speed": {
+				"walk": 20,
+				"swim": 40
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 16,
+			"int": 2,
+			"wis": 12,
+			"cha": 5,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+4"
+			},
+			"passive": 13,
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Aguantar la Respiración",
+					"entries": [
+						"El plesiosaurio puede aguantar la respiración durante 1 hora."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Mordisco",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 10 ft., un objetivo. {@h}14 ({@damage 3d6 + 4}) perforante damage."
+					]
+				}
+			],
+			"environment": [
+				"bajo el agua",
+				"costas"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Plesiosaurus.png",
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/plesiosaurus.mp3"
+			},
+			"traitTags": [
+				"Hold Breath"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"fluff": {
+				"entries": [					
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Los plesiosaurios son dinosaurios marinos cuyo cuerpo compacto se impulsa a través del mar con sus potentes aletas. Se trata de dinosaurios depredadores y agresivos, que atacarán a cualquier criatura con la que se encuentren. Su cuello flexible mide un tercio de su longitud total, lo que les permite retorcerlo en cualquier dirección para utilizar su poderoso mordisco."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+						]
+					},
+					{
+						"type": "section",
+						"name": "Dinosaurios",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Los dinosaurios, o behemoths, están entre los reptiles más antiguos del mundo. Los dinosaurios depredadores son cazadores salvajes y territoriales. Los herbívoros son menos agresivos, pero podrían atacar para defender a sus crías o si se les asusta o acosa.",
+									"Estas criaturas tienen distintas formas y tamaños. Los más grandes normalmente poseen colores más apagados, mientras que los más pequeños tienen marcas coloridas similares a las de las aves.",
+									"Estas criaturas vagan por regiones aisladas y accidentadas que los humanoides no acostumbran a visitar, incluyendo valles montañosos remotos, mesetas inaccesibles, islas tropicales y ciénagas profundas."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Plesiosaurus.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Serpiente venenosa",
+			"source": "MM-ES",
+			"page": 334,
+			"srd": true,
+			"size": "T",
+			"type": {
+                "type": "beast",
+                "tags": ["bestia"]
+            },
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 2,
+				"formula": "1d4"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 2,
+			"dex": 16,
+			"con": 11,
+			"int": 1,
+			"wis": 10,
+			"cha": 3,
+			"senses": [
+				"blindsight 10 ft."
+			],
+			"passive": 10,
+			"cr": "1/8",
+			"action": [
+				{
+					"name": "Mordisco",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., un objetivo. {@h}1 perforante damage, y el objetivo debe hacer una tirada de salvación de Constitución {@dc 10}, sufriendo 5 ({@damage 2d4}) veneno damage si la falla, o la mitad del daño si la supera."
+					]
+				}
+			],
+			"environment": [
+				"praderas",
+				"bosques",
+				"pantanos",
+				"colinas",
+				"desiertos",
+				"costas"
+			],
+			"familiar": true,
+			"tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Poisonous%20Snake.png",
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/poisonous-snake.mp3"
+			},
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
 			"name": "Oso polar",
 			"source": "MM-ES",
 			"page": 334,
@@ -46109,6 +46298,125 @@
 			"miscTags": [
 				"MW"
 			]
+		},
+		{
+			"name": "Pteranodon",
+			"group": "Dinosaurios",
+			"source": "MM-ES",
+			"page": 80,
+			"size": "M",
+			"type": {
+                "type": "beast",
+                "tags": ["bestia"]
+            },
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"armadura natural"
+					]
+				}
+			],
+			"hp": {
+				"average": 13,
+				"formula": "3d8"
+			},
+			"speed": {
+				"walk": 10,
+				"fly": 60
+			},
+			"str": 12,
+			"dex": 15,
+			"con": 10,
+			"int": 2,
+			"wis": 9,
+			"cha": 5,
+			"skill": {
+				"perception": "+1"
+			},
+			"passive": 11,
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Pasar Volando",
+					"entries": [
+						"El pteranodon no provoca ataques de oportunidad cuando vuela para moverse fuera del alcance de un enemigo."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Mordisco",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., un objetivo. {@h}6 ({@damage 2d4 + 1}) perforante damage"
+					]
+				}
+			],
+			"environment": [
+				"montañas",
+				"praderas",
+				"costas"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/MM/Pteranodon.png",
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/pteranodon.mp3"
+			},
+			"traitTags": [
+				"Flyby"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Estos reptiles voladores tienen una envergadura de entre quince y veinte pies. Normalmente se sumergen en el agua para cazar a presas pequeñas, aunque son oportunistas y atacarán a cualquier criatura que parezca comestible. Un pteranodon no tiene dientes, por lo que usa su afilado pico para atravesar a las presas que son demasiado grandes para tragárselas de un solo golpe."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+						]
+					},
+					{
+						"type": "section",
+						"name": "Dinosaurios",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Los dinosaurios, o behemoths, están entre los reptiles más antiguos del mundo. Los dinosaurios depredadores son cazadores salvajes y territoriales. Los herbívoros son menos agresivos, pero podrían atacar para defender a sus crías o si se les asusta o acosa.",
+									"Estas criaturas tienen distintas formas y tamaños. Los más grandes normalmente poseen colores más apagados, mientras que los más pequeños tienen marcas coloridas similares a las de las aves.",
+									"Estas criaturas vagan por regiones aisladas y accidentadas que los humanoides no acostumbran a visitar, incluyendo valles montañosos remotos, mesetas inaccesibles, islas tropicales y ciénagas profundas."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Dinosaurs.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Rinoceronte",
