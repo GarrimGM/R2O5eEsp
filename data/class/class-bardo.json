@@ -1,0 +1,1843 @@
+{
+	"_meta": {
+		"dependencies": {
+			"subclass": [
+				"generic"
+			]
+		}
+	},
+	"class": [
+		{
+			"name": "Bardo",
+			"source": "PHB-ES",
+			"page": 51,
+			"srd": true,
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"dex",
+				"cha"
+			],
+			"spellcastingAbility": "cha",
+			"casterProgression": "full",
+			"startingProficiencies": {
+				"armor": [
+					{
+						"proficiency": "light",
+						"full": "{@filter armaduras ligeras|items|source=PHB-ES|type=light armor}"
+					}
+				],
+				"weapons": [
+					"{@filter armas sencillas|items|source=PHB-ES|type=simple weapon}",
+					"{@item ballesta de mano|PHB-ES|ballestas de mano}",
+					"{@item espada corta|PHB-ES|espadas cortas}",
+					"{@item espada larga|PHB-ES|espadas largas}",
+					"{@item estoque|PHB-ES|estoques}"
+				],
+				"tools": [
+					"tres {@item Instrumentos musicales|PHB-ES|instrumentos musicales} a tu elección"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"athletics|Atletismo",
+								"acrobatics|Acrobacias",
+								"sleight of hand|Juego de Manos",
+								"stealth|Sigilo",
+								"arcana|Conocimiento Arcano",
+								"history|Historia",
+								"investigation|Investigación",
+								"nature|Naturaleza",
+								"religion|Religión",
+								"animal handling|Trato con Animales",
+								"insight|Perspicacia",
+								"medicine|Medicina",
+								"perception|Percepción",
+								"survival|Supervivencia",
+								"deception|Engaño",
+								"intimidation|Intimidación",
+								"performance|Interpretación",
+								"persuasion|Persuasión"
+							],
+							"count": 3
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) un {@item Estoque|PHB-ES|estoque}, (b) una {@item Espada larga|PHB-ES|espada larga} o (c) cualquier {@filter arma sencilla|items|source=PHB-ES|type=simple weapon}",
+					"(a) un {@item Paquete de diplomático|PHB-ES|paquete de diplomático} o (b) un {@item Paquete de artista|PHB-ES|paquete de artista}",
+					"(a) un {@item Flauta|PHB-ES|flauta} o (b) cualquier otro {@filter instrumento musical|items|miscellaneous=mundane|type=instrumento}",
+					"{@item Armadura de cuero|PHB-ES|armadura de cuero} y una {@item Daga|PHB-ES|daga}"
+				],
+				"goldAlternative": "{@dice 5d4 × 10|5d4 × 10|Starting Gold}",
+				"defaultData": [
+					{
+						"a": [
+							"Estoque|PHB-ES"
+						],
+						"b": [
+							"Espada larga|PHB-ES"
+						],
+						"c": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					},
+					{
+						"a": [
+							"Paquete de diplomático|PHB-ES"
+						],
+						"b": [
+							"Paquete de artista|PHB-ES"
+						]
+					},
+					{
+						"a": [
+							"Flauta|PHB-ES"
+						],
+						"b": [
+							{
+								"equipmentType": "instrumentMusical"
+							}
+						]
+					},
+					{
+						"_": [
+							"Armadura de cuero|PHB-ES",
+							"dagger|PHB-ES"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"cha": 13
+				},
+				"proficienciesGained": {
+					"armor": [
+						{
+							"proficiency": "light",
+							"full": "{@filter armaduras ligeras|items|source=PHB-ES|type=light armor}"
+						}
+					],
+					"skills": [
+						{
+							"choose": {
+								"from": [
+									"athletics|Atletismo",
+									"acrobatics|Acrobacias",
+									"sleight of hand|Juego de Manos",
+									"stealth|Sigilo",
+									"arcana|Conocimiento Arcano",
+									"history|Historia",
+									"investigation|Investigación",
+									"nature|Naturaleza",
+									"religion|Religión",
+									"animal handling|Trato con Animales",
+									"insight|Perspicacia",
+									"medicine|Medicina",
+									"perception|Percepción",
+									"survival|Supervivencia",
+									"deception|Engaño",
+									"intimidation|Intimidación",
+									"performance|Interpretación",
+									"persuasion|Persuasión"
+								],
+								"count": 1
+							}
+						}
+					],
+					"tools": [
+						"un {@item Instrumentos musicales|PHB-ES|instrumento musical} a tu elección"
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"{@filter Trucos conocidos|spells|level=0|class=bardo (PHB-ES)}",
+						"{@filter Conjuros conocidos|spells|class=bardo (PHB-ES)}"
+					],
+					"rows": [
+						[
+							2,
+							4
+						],
+						[
+							2,
+							5
+						],
+						[
+							2,
+							6
+						],
+						[
+							3,
+							7
+						],
+						[
+							3,
+							8
+						],
+						[
+							3,
+							9
+						],
+						[
+							3,
+							10
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							12
+						],
+						[
+							4,
+							14
+						],
+						[
+							4,
+							15
+						],
+						[
+							4,
+							15
+						],
+						[
+							4,
+							16
+						],
+						[
+							4,
+							18
+						],
+						[
+							4,
+							19
+						],
+						[
+							4,
+							19
+						],
+						[
+							4,
+							20
+						],
+						[
+							4,
+							22
+						],
+						[
+							4,
+							22
+						],
+						[
+							4,
+							22
+						]
+					]
+				},
+				{
+					"title": "Espacios de conjuro por cada nivel de conjuro",
+					"colLabels": [
+						"{@filter 1|spells|level=1|class=bardo (PHB-ES)}",
+						"{@filter 2|spells|level=2|class=bardo (PHB-ES)}",
+						"{@filter 3|spells|level=3|class=bardo (PHB-ES)}",
+						"{@filter 4|spells|level=4|class=bardo (PHB-ES)}",
+						"{@filter 5|spells|level=5|class=bardo (PHB-ES)}",
+						"{@filter 6|spells|level=6|class=bardo (PHB-ES)}",
+						"{@filter 7|spells|level=7|class=bardo (PHB-ES)}",
+						"{@filter 8|spells|level=8|class=bardo (PHB-ES)}",
+						"{@filter 9|spells|level=9|class=bardo (PHB-ES)}"
+					],
+					"rows": [
+						[
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							1,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							2,
+							2,
+							1,
+							1
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"Inspiración Bárdica|Bardo|PHB-ES|1",
+				"Lanzamiento de Conjuros|Bardo|PHB-ES|1",
+				"Aprendiz de Mucho|Bardo|PHB-ES|2",
+				"Canción de Descanso (d6)|Bardo|PHB-ES|2",
+				{
+					"classFeature": "Colegio Bárdico|Bardo|PHB-ES|3",
+					"gainSubclassFeature": true
+				},
+				"Pericia|Bardo|PHB-ES|3",
+				"Mejora de Característica|Bardo|PHB-ES|4",
+				"Inspiración Bárdica (d8)|Bardo|PHB-ES|5",
+				"Fuente de Inspiración|Bardo|PHB-ES|5",
+				"Contraencantamiento|Bardo|PHB-ES|6",
+				{
+					"classFeature": "Rasgo de Colegio Bárdico|Bardo|PHB-ES|6",
+					"gainSubclassFeature": true
+				},
+				"Mejora de Característica|Bardo|PHB-ES|8",
+				"Canción de Descanso (d8)|Bardo|PHB-ES|9",
+				"Inspiración Bárdica (d10)|Bardo|PHB-ES|10",
+				"Pericia|Bardo|PHB-ES|10",
+				"Secretos Mágicos|Bardo|PHB-ES|10",
+				"Mejora de Característica|Bardo|PHB-ES|12",
+				"Canción de Descanso (d10)|Bardo|PHB-ES|13",
+				"Secretos Mágicos|Bardo|PHB-ES|14",
+				{
+					"classFeature": "Rasgo de Colegio Bárdico|Bardo|PHB-ES|14",
+					"gainSubclassFeature": true
+				},
+				"Inspiración Bárdica (d12)|Bardo|PHB-ES|15",
+				"Mejora de Característica|Bardo|PHB-ES|16",
+				"Canción de Descanso (d12)|Bardo|PHB-ES|17",
+				"Secretos Mágicos|Bardo|PHB-ES|18",
+				"Mejora de Característica|Bardo|PHB-ES|19",
+				"Inspiración Superior|Bardo|PHB-ES|20"
+			],
+			"subclassTitle": "Colegios bárdicos",
+			"fluff": [
+				{
+					"name": "Bardo",
+					"type": "section",
+					"entries": [
+						"Una semielfa cubierta de resistentes pieles canturrea mientras traza con sus dedos el perfil de un antiguo monumento, encontrado en unas ruinas olvidadas. Siente cómo, gracias a la magia de su canción, su mente se llena de conocimiento: la historia del pueblo que construye el monumento y la saga mítica que este representa.",
+						"Un adusto combatiente humano golpea rítmicamente su espada contra su cota de escamas, marcando el compás de su canto marcial y exhortando a sus compañeros a protagonizar actos de coraje y heroísmo. La magia de su canción les fortalece y envalentona.",
+						"Riendo mientras afina su cistro, una gnoma teje su sutil magia sobre los nobles reunidos en la sala, asegurándose así de que las palabras de sus compañeros serán bien recibidas.",
+						"Un bardo, ya sea este un erudito, un escaldo o un bribón, es capaz de tejer magia a través de sus palabras y su música, inspirando a sus aliados, desmoralizando a sus enemigos, manipulando mentes, creando ilusiones e incluso sanando heridas.",
+						{
+							"type": "entries",
+							"name": "Música y magia",
+							"entries": [
+								"En los mundos de D&D, las palabras y la música no son solo vibraciones del aire, sino vocalizaciones que contienen poder en sí mismas. El bardo es un maestro de la canción, el discurso y la magia que ambos albergan. Los bardos afirman que el multiverso nació del habla de los dioses, que sus palabras le dieron forma y que los ecos de estas Palabras de Creación primordiales aún resuenan a través del cosmos. La música de los bardos es un intento de atrapar y tomar el control de dichos ecos, tejiéndolos sutilmente en sus conjuros y poderes.",
+								"La mayor fortaleza de los bardos es su increíble versatilidad. Muchos prefieren echarse a un lado durante el combate, recurriendo a su magia para inspirar a sus aliados y obstaculizar a sus enemigos desde la distancia. No obstante, los bardos también son capaces de defenderse en cuerpo a cuerpo si se da el caso, empleando su magia para potenciar sus espadas y armadura. Sus conjuros no suelen desencadenar fuerzas destructoras, sino que tienden a manifestarse como encantamientos e ilusiones. Poseen un amplio espectro de conocimientos sobre muchas disciplinas, así como un talento natural que les permite sobresalir en prácticamente todo lo que hacen. Los bardos acaban transformándose en auténticos maestros de las artes que deciden perfeccionar; desde la interpretación musical hasta conocimientos esotéricos."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Aprender de la experiencia",
+							"entries": [
+								"Los auténticos bardos son muy poco frecuentes. No todos las juglares que cantan en una taberna o bufones que brincan en una corte real son bardos. Desentrañar la magia escondida en la música precisa de un intenso estudio y un talento natural de los que la mayoría de los trovadores y rapsodas carecen. Con todo, a veces es difícil distinguir entre verdaderos bardos y simples artistas. Los bardos pasan sus vidas vagabundeando de un lugar a otro, recopilando conocimientos, contando historias y viviendo de la buena voluntad de sus audiencias, como les suele suceder a la mayoría de los animadores. Pero su amplitud de conocimientos, su gran aptitud para la música y su dominio de la magia les distingue del resto de intérpretes.",
+								"Rara vez un bardo pasará una temporada larga en el mismo sitio. Su ansia viajera, que les lleva a buscar nuevas historias que contar, nuevas habilidades que aprender y nuevos horizontes que descubrir, hace que la vida del aventurero sea una vocación bastante habitual entre ellos. Toda aventura es una nueva oportunidad para aprender, practicar una gran variedad de habilidades, penetrar en tumbas ya olvidadas, descubrir artefactos mágicos perdidos, descifrar tomos antiguos, viajar a lugares extraños o encontrarse con criaturas exóticas. Los bardos adoran acompañar a héroes, para así poder ser testigos presenciales de sus hazañas, pues un bardo capaz de contar una impresionante epopeya basada en sus propias vivencias gozará de gran renombre entre los suyos. De hecho, tras narrar numerosas gestas protagonizadas por héroes, muchos bardos acaban interiorizando sus ideales y ellos mismos terminan asumiendo roles heroicos."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creación de un bardo",
+							"entries": [
+								"Las historias dan vida a los bardos, tanto si son ciertas como si no. El trasfondo y las motivaciones de tu personaje no son tan importantes como los relatos en los que los plasma. Puede que hayas disfrutado de una infancia segura y prosaica, pero como es imposible elaborar una historia decente a partir de ella, quizá afirmes ser un huérfano criado por una saga en medio de un pantano lúgubre. O puede que tu infancia sí haya sido digna de ser contada, ya que algunos bardos reciben su magia musical a través de medios extraordinarios, como los seres feéricos u otras criaturas sobrenaturales.",
+								"¿Serviste como aprendiz a un maestro, obedeciendo las órdenes de un bardo más experto hasta que estuviste listo para partir? ¿O estudiaste en una universidad, un lugar donde practicar tu magia musical y adquirir conocimientos bárdicos? Tal vez te escapaste de tu hogar o tuviste la desgracia de ser huérfano, y un bardo que pasaba por allí se convirtió en tu mentor. O puede que seas el hijo malcriado de un noble, que disfrutó de un tutor extraordinario. Incluso podrías haber caído en las garras de una saga, con la que llegaste a un acuerdo que te proporcionó no solo tu vida y tu libertad, sino también tu don para la música. ¿Pero a qué precio?",
+								{
+									"type": "entries",
+									"name": "Creación rápida",
+									"entries": [
+										"Para crear un bardo de forma rápida sugerimos lo siguiente. Para empezar, Carisma debería ser tu característica más alta, seguida de Destreza. A continuación, elige el trasfondo \"{@background entertainer|PHB-ES|animador}\". Después, escoge los trucos {@spell Burla dañina|PHB-ES|burla dañina} y {@spell Luces danzantes|PHB-ES|luces danzantes} y los siguientes conjuros de nivel 1: {@spell Detectar magia|PHB-ES|detectar magia}, {@spell Hechizar persona|PHB-ES|hechizar persona}, {@spell Ola atronadora|PHB-ES|ola atronadora} y {@spell Palabra de curación|PHB-ES|palabra de curación}."
+									]
+								}
+							]
+						}
+					],
+					"source": "PHB-ES",
+					"page": 51
+				},
+				{
+					"type": "section",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"La música es la fruta del árbol divino que vibra con las Palabras de Creación. Pero lo que yo te pregunto es: ¿Puede un bardo llegar a la raíz de este árbol? ¿Es posible acceder a la fuente de ese poder? Ah, ¡la música que podría traer a este mundo!"
+							],
+							"by": "Fletcher Danairia, maestro bardo"
+						},
+						"Los bardos proporcionan desenfado en tiempos oscuros, otorgan sabiduría para contrarrestar la ignorancia y hacen que lo ridículo parezca sublime. Son conservadores de la historia más antigua, usando canciones y relatos para perpetuar a través de los tiempos la memoria de grandes acontecimientos. Este conocimiento es tan importante que será aprendido y difundido, sobreviviendo de esta manera cuando no quede nada escrito.",
+						"También es parte del papel de un bardo ser cronista de hechos menores y más contemporáneos: las historias de los héroes de hoy, desde sus mayores gestas a sus poco impresionantes fracasos.",
+						"No obstante, en el mundo hay muchas personas que pueden seguir una melodía o contar bien una historia, razón por la que un bardo aventurero no posee solo su labia y una voz melodiosa. Lo que realmente distingue a una de estas personas (y lo diferencia de otros bardos) es el estilo y la sustancia de su interpretación.",
+						"Para conquistar y mantener la atención del público, los bardos normalmente actúan de forma ostentosa y extrovertida. Los más famosos son el equivalente en el mundo de D&D a una estrella del pop. Si tu personaje es un miembro de esta clase, considera usar a uno de tus músicos favoritos como referente para tu aventurero.",
+						"Puedes añadir aspectos únicos a tu personaje con las siguientes sugerencias.",
+						{
+							"type": "entries",
+							"name": "Obra característica",
+							"entries": [
+								"Todo bardo de éxito es conocido por una obra de arte interpretativo, normalmente una canción o un poema que encandila a quien quiera que la escuche. Estas piezas son capaces de cambiar la vida del público o, por lo menos, de hacer que hablen de ella durante años.",
+								"Si tu personaje está empezando, tu obra característica probablemente aún no ha llegado, pero, para poder ganarte la vida con tu profesión, seguro que ya tienes dos o tres piezas que han sido un éxito en tu repertorio.",
+								{
+									"type": "table",
+									"caption": "Obra característica",
+									"colLabels": [
+										"{@dice d6}",
+										"Obra característica"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"\"Los tres flambinis\", una atrevida canción de identidades equivocadas y deseo sin trabas."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"\"El vals de los micónidos\", una alegre melodía que gusta especialmente a los niños."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"\"El trasero dorado de Asmodeo\", un poema dramático cuya inspiración fue tu supuesta visita personal al Averno."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"\"Los piratas de Luskan\", un relato de primera mano de tu secuestro por unos piratas cuando eras solo un niño."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"\"Un aro, dos pichones y un sabueso infernal\", una sutil parodia de un noble incompetente."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"\"Un pardillo en el Abismo\", poema cómico sobre un bufón y sus viajes entre demonios."
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Instrumento",
+							"entries": [
+								"En la búsqueda de un bardo de la interpretación definitiva y el máximo aplauso, su instrumento es tan importante como su habilidad vocal. La calidad de su manufactura es, por tanto, crítica: los mejores instrumentos crean la mejor música, por lo que algunos bardos no paran de buscar uno mejor. Pero quizá sea igual de importante el impacto que pueda causar el instrumento en sí mismo. Es más probable que aquellos construidos de forma extraña o con materiales exóticos dejen un recuerdo duradero en el público.",
+								"Puede que tu instrumento actual sea \"de tienda\", porque no te podías permitir otra cosa, o que haya sido un regalo y sea muy elaborado. ¿Estás satisfecho con el que tienes o quieres reemplazarlo por uno realmente peculiar?",
+								{
+									"type": "table",
+									"caption": "Instrumento",
+									"colLabels": [
+										"{@dice d6}",
+										"Instrumento"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Un violín mediano de excelente manufactura "
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"Un {@item cuerno|PHB-ES} de mithral hecho por elfos"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Una citara fabricada con seda de araña drow"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"Un {@item tambor|PHB-ES} orco"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"Una caja de madera que croa como un bullywug"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"El arpa de un manitas, de diseño gnomo"
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Vergüenza",
+							"entries": [
+								"Casi cualquier bardo ha sufrido al menos una mala experiencia de cara al público, y lo normal es que tú no seas la excepción. Al fin y al cabo, nadie se vuelve famoso de golpe. Quizá tuviste alguna dificultad al principio de tu carrera o necesitaste tiempo para limpiar tu reputación tras una noche agónica en la que el destino conspiró para traer la ruina a tus interpretaciones.",
+								"Una actuación puede ir mal de tantas maneras como peces hay en el mar. Pero, sea cual sea el desastre, un bardo tiene el coraje y la confianza necesaria para recuperarse tras el descalabro, ya sea continuando la actuación, si es posible, o prometiendo volver mañana con un éxito seguro.",
+								{
+									"type": "table",
+									"caption": "Vergüenzas",
+									"colLabels": [
+										"{@dice d6}",
+										"Vergüenza"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Esa vez que tu canción cómica \"Las travesuras del Gran Tom\" (que, por cierto, crees que es brillante) no le sentó bien al Gran Tom."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"La matiné en la que el oso lechuza del circo escapó y aterrorizó al público."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Cuando tu primer acto fue tu entusiástica, pero universalmente aborrecida, interpretación de \"La canción del ranamot\"."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"La primera y última interpretación en público de \"Mirt, hombre de mundo\"."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"La vez que tu peluca se prendió fuego y la tiraste al suelo, incendiando el escenario."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Cuando te sentaste por error en tu {@item laúd|PHB-ES} durante la última estrofa de \"Serenata a la luz de las estrellas\"."
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "La musa del bardo",
+							"entries": [
+								"Como es natural, todo bardo posee un repertorio de canciones e historias. Algunos son generalistas, capaces de recurrir a una amplia variedad de temas para cada actuación, y están orgullosos de su versatilidad. Otros tienen un enfoque más personal en su arte, llevados por su apego a una musa, un concepto especial que inspira mucho de lo que esos artistas despliegan delante de una audiencia.",
+								"Un bardo que sigue a una musa normalmente lo hace para ganar una comprensión más profunda de lo que esta representa, con el fin de ser capaz de transmitir este conocimiento a otros a través de su interpretación.",
+								"Si tu personaje bardo tiene una musa, podría ser una de las tres descritas aquí, pero también otra creada por ti.",
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Naturaleza",
+											"entries": [
+												"Sientes una afinidad por la naturaleza. Su belleza y misterio te inspiran. Para ti, un árbol es profundamente simbólico. Sus profundas raíces ahondan en lo desconocido para extraer el poder de la tierra, mientras sus ramas se estiran hacia el sol para alimentar sus flores y fruta. La naturaleza ha sido testigo del alzamiento y caída de todos los reinos, incluso aquellos cuyos nombres han sido olvidados y esperan ser redescubiertos. Los dioses de la naturaleza comparten sus secretos con druidas y sabios, abriendo sus corazones y mentes a nuevas maneras de ver. Tú, al igual que ellos, sientes que tu creatividad florece cuando vagas por un campo abierto de ondulada hierba o cuando caminas en silencio por una arboleda de robles ancianos."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Amor",
+											"entries": [
+												"Buscas identificar la esencia del amor verdadero. Aunque no desdeñas el amor superficial de la carne y el aspecto, lo que realmente te interesa es esa forma de amor profundo que puede inspirar a miles o llenar de alegría cada pequeño momento. El amor de este tipo es omnipresente, por lo que puede tomar muchos aspectos: desde el brillo de una piedra preciosa a la canción de un simple pescador, que agradece al mar su abundancia. Sigues el rastro del amor, la emoción más preciosa y misteriosa de todas y, así, tu búsqueda llena tus historias y canciones con vitalidad y pasión."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Conflicto",
+											"entries": [
+												"El drama supone el enfrentamiento encarnado: las mejores historias giran alrededor del conflicto. Desde la historia de la mañana siguiente de una pelea de taberna a la saga que recuerda una batalla épica; desde una disputa de enamorados a una pugna entre poderosas dinastías, el conflicto es lo que inspira a los cuentacuentos a crear sus mejores obras. El conflicto puede sacar lo mejor de algunos, haciendo que brille su naturaleza heroica y transformen el mundo, pero también provoca que otros se vean atraídos hacia la oscuridad y caigan bajo el influjo del mal. Aspiras a experimentar o ser testigo de todas las formas de conflicto, grandes y pequeñas, para estudiar este aspecto eterno de la vida y poder inmortalizarlo en tus palabras y tu música."
+											]
+										}
+									]
+								}
+							]
+						}
+					],
+					"source": "XGE-ES",
+					"page": 12
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Colegio del Conocimiento",
+			"shortName": "Conocimiento",
+			"source": "PHB-ES",
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"page": 54,
+			"srd": true,
+			"additionalSpells": [
+				{
+					"name": "Secretos Mágicos adicionales",
+					"known": {
+						"6": [
+							{
+								"choose": "level=0;1;2;3"
+							},
+							{
+								"choose": "level=0;1;2;3"
+							}
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Colegio del Conocimiento|Bardo|PHB-ES|Conocimiento|PHB-ES|3",
+				"Secretos Mágicos adicionales|Bardo|PHB-ES|Conocimiento|PHB-ES|6",
+				"Habilidad sin Parangón|Bardo|PHB-ES|Conocimiento|PHB-ES|14"
+			]
+		},
+		{
+			"name": "Colegio del Valor",
+			"shortName": "Valor",
+			"source": "PHB-ES",
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"page": 55,
+			"subclassFeatures": [
+				"Colegio del Valor|Bardo|PHB-ES|Valor|PHB-ES|3",
+				"Ataque Adicional|Bardo|PHB-ES|Valor|PHB-ES|6",
+				"Magia de Batalla|Bardo|PHB-ES|Valor|PHB-ES|14"
+			]
+		},
+		{
+			"name": "Colegio del Glamour",
+			"shortName": "Glamour",
+			"source": "XGE-ES",
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"page": 14,
+			"additionalSpells": [
+				{
+					"innate": {
+						"6": [
+							"orden imperiosa|PHB-ES"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Colegio del Glamour|Bardo|PHB-ES|Glamour|XGE-ES|3",
+				"Manto de Majestad|Bardo|PHB-ES|Glamour|XGE-ES|6",
+				"Majestad Inquebrantable|Bardo|PHB-ES|Glamour|XGE-ES|14"
+			]
+		},
+		{
+			"name": "Colegio de las Espadas",
+			"shortName": "Espadas",
+			"source": "XGE-ES",
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"page": 15,
+			"subclassFeatures": [
+				"Colegio de las Espadas|Bardo|PHB-ES|Espadas|XGE-ES|3",
+				"Ataque Adicional|Bardo|PHB-ES|Espadas|XGE-ES|6",
+				"Floritura del Maestro|Bardo|PHB-ES|Espadas|XGE-ES|14"
+			]
+		},
+		{
+			"name": "Colegio de los Susurros",
+			"shortName": "Susurros",
+			"source": "XGE-ES",
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"page": 16,
+			"subclassFeatures": [
+				"Colegio de los Susurros|Bardo|PHB-ES|Susurros|XGE-ES|3",
+				"Manto de Susurros|Bardo|PHB-ES|Susurros|XGE-ES|6",
+				"Saber de las sombras|Bardo|PHB-ES|Susurros|XGE-ES|14"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Inspiración Bárdica",
+			"source": "PHB-ES",
+			"page": 51,
+			"srd": true,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"level": 1,
+			"entries": [
+				"Puedes recurrir a tus palabras o a tu música, especialmente emotivas, para inspirar a las demás. Para hacer esto, deberás utilizar una acción adicional durante tu turno y elegir a una criatura que no seas tú, pueda oírte y esté a 60 pies o menos de ti. Dicho objetivo recibe un dado de Inspiración Bárdica, {@dice d6}.",
+				"Una sola vez, antes de que pasen 10 minutos, la criatura puede tirar el dado y añadir el resultado a una de sus pruebas de característica, tiradas de ataque o tiradas de salvación. Puede esperar a ver el resultado del {@dice d20} antes de elegir si usar el dado de Inspiración Bárdica, pero debe tomar la decisión antes de que el DM diga si la tirada tiene éxito o no. Una vez se tira el dado de Inspiración Bárdica, este se pierde. Además, cada criatura solo puede tener un dado de Inspiración Bárdica al mismo tiempo.",
+				"Puedes utilizar este rasgo tantas veces como tu modificador por Carisma (mínimo una vez). Recuperas todos los usos tras finalizar un descanso largo.",
+				"Tu dado de Inspiración Bárdica cambia cuando alcanzas ciertos niveles de esta clase: pasa a ser {@dice d8} a nivel 5, {@dice d10} a nivel 10 y {@dice d12} a nivel 15."
+			]
+		},
+		{
+			"name": "Lanzamiento de Conjuros",
+			"source": "PHB-ES",
+			"page": 51,
+			"srd": true,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"level": 1,
+			"entries": [
+				"Has aprendido a desenmarañar y remodelar el tejido de la realidad, en armonía con tus deseos y la música. Los conjuros que puedes lanzar son parte de tu vasto repertorio; una magia que afinas para adaptarte a diferentes situaciones. El {@book capítulo 10|PHB-ES|10} contiene las reglas de lanzamiento de conjuros y el {@book capítulo 11|PHB-ES|11} la {@filter lista de conjuros de bardo|spells|class=bardo (PHB-ES)}.",
+				{
+					"type": "entries",
+					"name": "Trucos",
+					"entries": [
+						"Conoces dos trucos de tu elección escogidos de entre los de la lista de conjuros de bardo. Podrás elegir más trucos de bardo cuando llegues a niveles más altos, como se indica en la columna “trucos conocidos” de la tabla del bardo."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Espacios de conjuro",
+					"entries": [
+						"La tabla del bardo muestra de cuantos espacios de conjuro dispones para lanzar {@filter conjuros de bardo|spells|class=bardo (PHB-ES)} de nivel 1 y superiores. Para lanzar uno de estos conjuros deberás invertir un espacio de al menos el nivel del conjuro. Recuperas todos los espacios utilizados tras finalizar un descanso largo.",
+						"Si, por ejemplo, conoces el conjuro de nivel 1 {@spell Curar heridas|PHB-ES|curar heridas} y posees un espacio de conjuro de nivel 1 y otro de nivel 2, podrías lanzar {@spell Curar heridas|PHB-ES|curar heridas} empleando cualquiera de los dos espacios."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Conjuros conocidos de nivel 1 y superiores",
+					"entries": [
+						"Conoces cuatro conjuros de nivel 1 de tu elección, escogidos de entre la lista de conjuros de bardo.",
+						"La columna “conjuros conocidos” de la tabla del bardo te indica cuando podrás aprender más conjuros de bardo y cuántos elegir. Estos conjuros deben ser de un nivel para el que tengas espacios de conjuro, tal y como se indica en la tabla. Así, cuando subes a nivel 3 en esta clase puedes aprender un conjuro nuevo, que puede ser de nivel 1 o 2.",
+						"Además, cada vez que subas un nivel de esta clase podrás elegir uno de los conjuros de bardo que ya conoces y reemplazarlo por otro de los que aparecen en la lista de conjuros de bardo. Este reemplazo deberá ser de un nivel para el que poseas espacios de conjuro."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Aptitud mágica",
+					"entries": [
+						"El Carisma es tu aptitud mágica en lo que a conjuros de bardo respecta, ya que tu magia proviene del corazón y el alma que pones cuando interpretas tus canciones o discursos. Así, utilizarás tu Carisma siempre que un conjuro de bardo haga referencia a tu aptitud mágica. Además, también usarás tu modificador por Carisma para determinar la CD de las tiradas de salvación y las tiradas de ataque de los conjuros de bardo que lances.",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"cha"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"cha"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Lanzamiento ritual",
+					"entries": [
+						"Puedes lanzar de forma ritual aquellos conjuros de bardo que conozcas y estén marcados come \"ritual\"."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Canalizador mágico",
+					"entries": [
+						"Puedes utilizar un {@item Instrumentos musicales|PHB-ES|instrumento musical} como canalizador mágico para los conjuros de bardo."
+					]
+				}
+			]
+		},
+		{
+			"name": "Aprendiz de Mucho",
+			"source": "PHB-ES",
+			"page": 51,
+			"srd": true,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"level": 2,
+			"entries": [
+				"A partir de nivel 2, puedes añadir la mitad de tu bonificador por competencia (redondeado hacia abajo) a cualquier prueba de característica que hagas que no se beneficie ya de tu bonificador por competencia."
+			]
+		},
+		{
+			"name": "Canción de Descanso (d6)",
+			"source": "PHB-ES",
+			"page": 51,
+			"srd": true,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"level": 2,
+			"entries": [
+				"A partir de nivel 2, puedes recurrir a palabras o canciones reconfortantes para ayudar a tus aliados heridos a recuperarse durante un descanso corto. Si cualquiera de las criaturas amistosas (incluyéndote a ti) que escuchan tu interpretación gasta Dados de Golpe para recuperar puntos de golpe al final del descanso corto, cada una de ellas recobrará {@dice 1d6} puntos de golpe adicionales.",
+				"Estos puntos de golpe adicionales aumentan cuando alcanzas ciertos niveles de esta clase: a {@dice 1d8} a nivel 9, a {@dice 1d10} a nivel 13 y a {@dice 1d12} a nivel 17."
+			]
+		},
+		{
+			"name": "Colegio Bárdico",
+			"source": "PHB-ES",
+			"page": 51,
+			"srd": true,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"level": 3,
+			"entries": [
+				"A nivel 3 profundizas en las técnicas avanzadas de un colegio bárdico a tu elección: el Colegio del Conocimiento o el Colegio del Valor. Ambos están explicados al final de la descripción de esta clase. Esta elección te proporciona ciertos rasgos cuando alcanzas los niveles 3, 6 y 14."
+			]
+		},
+		{
+			"name": "Pericia",
+			"source": "PHB-ES",
+			"page": 51,
+			"srd": true,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"level": 3,
+			"entries": [
+				"A nivel 3, escoge dos habilidades en las que seas competente. Tu bonificador por competencia se duplica para cualquier prueba de característica que hagas utilizando cualquiera de las dos habilidades elegidas.",
+				"A nivel 10 puedes elegir otras dos habilidades en las que seas competente, para que estas también disfruten de este beneficio."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 51,
+			"srd": true,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"level": 4,
+			"entries": [
+				"Cuando alcances el nivel 4, podrás escoger una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Inspiración Bárdica (d8)",
+			"source": "PHB-ES",
+			"page": 51,
+			"srd": true,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"level": 5,
+			"entries": [
+				"A nivel 5, tu dado de Inspiración Bárdica cambia a un {@dice d8}."
+			]
+		},
+		{
+			"name": "Fuente de Inspiración",
+			"source": "PHB-ES",
+			"page": 51,
+			"srd": true,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"level": 5,
+			"entries": [
+				"A partir de nivel 5 recuperas todos los usos de Inspiración Bárdica tras hacer un descanso corto o largo."
+			]
+		},
+		{
+			"name": "Rasgo de Colegio Bárdico",
+			"source": "PHB-ES",
+			"page": 51,
+			"srd": true,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"level": 6,
+			"entries": [
+				"A nivel 6 ganas un rasgo de tu Colegio Bárdico."
+			]
+		},
+		{
+			"name": "Contraencantamiento",
+			"source": "PHB-ES",
+			"page": 51,
+			"srd": true,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"level": 6,
+			"entries": [
+				"A partir de nivel 6, obtienes la capacidad de utilizar notas musicales o palabras de poder para interrumpir efectos que afecten a la mente. Como acción, puedes dar comienzo a una interpretación que durará hasta el final de tu siguiente turno. Durante este periodo, tanto tú como las criaturas amistosas a 30 pies o menos de ti tendréis ventaja en las tiradas de salvación para evitar ser {@condition Asustado|PHB-ES|asustados} o {@condition Hechizado|PHB-ES|hechizados}. Para que una criatura pueda beneficiarse de este efecto deberá ser capaz de oírte. La interpretación terminará si quedas {@condition Incapacitado|PHB-ES|incapacitado}, eres silenciado o decides finalizarla voluntariamente (no es necesario gastar ninguna acción)."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 51,
+			"srd": true,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"level": 8,
+			"entries": [
+				"Cuando alcances el nivel 8, podrás escoger una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Canción de Descanso (d8)",
+			"source": "PHB-ES",
+			"page": 51,
+			"srd": true,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"level": 9,
+			"entries": [
+				"A nivel 9, los puntos de golpe adicionales recuperados por Canción de Descanso aumentan a un {@dice 1d8}."
+			]
+		},
+		{
+			"name": "Inspiración Bárdica (d10)",
+			"source": "PHB-ES",
+			"page": 51,
+			"srd": true,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"level": 10,
+			"entries": [
+				"A nivel 10, tu dado de Inspiración Bárdica cambia a un {@dice d10}."
+			]
+		},
+		{
+			"name": "Pericia",
+			"source": "PHB-ES",
+			"page": 51,
+			"srd": true,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"level": 10,
+			"entries": [
+				"A nivel 10 puedes elegir otras dos habilidades en las que seas competente. Tu bonificador por competencia se duplica para cualquier prueba de característica que hagas utilizando cualquiera de las dos habilidades elegidas."
+			]
+		},
+		{
+			"name": "Secretos Mágicos",
+			"source": "PHB-ES",
+			"page": 51,
+			"srd": true,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"level": 10,
+			"entries": [
+				"Para cuando llegas a nivel 10 ya has saqueado conocimientos mágicos pertenecientes a un amplio espectro de disciplinas. Escoge dos conjuros de cualquier clase (no tienen por qué ser los dos de la misma), esta incluida. Ambos conjuros deben ser de un nivel que puedas lanzar, tal y como se indica en la tabla del bardo, o un truco",
+				"Estos conjuros se consideran, en lo que a ti respecta, conjuros de bardo, y cuentan para el número de conjuros conocidos que puedes tener (consulta la tabla del bardo).",
+				"Aprendes otros dos conjuros de cualquier clase cuando alcanzas los niveles 14 y 18."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 51,
+			"srd": true,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"level": 12,
+			"entries": [
+				"Cuando alcances el nivel 12, podrás escoger una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Canción de Descanso (d10)",
+			"source": "PHB-ES",
+			"page": 51,
+			"srd": true,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"level": 13,
+			"entries": [
+				"A nivel 13, los puntos de golpe adicionales recuperados por Canción de Descanso aumentan a un {@dice 1d10}."
+			]
+		},
+		{
+			"name": "Rasgo de Colegio Bárdico",
+			"source": "PHB-ES",
+			"page": 51,
+			"srd": true,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"level": 14,
+			"entries": [
+				"A nivel 14 ganas un rasgo de tu Colegio Bárdico."
+			]
+		},
+		{
+			"name": "Secretos Mágicos",
+			"source": "PHB-ES",
+			"page": 51,
+			"srd": true,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"level": 14,
+			"entries": [
+				"A nivel 14, escoge dos conjuros de cualquier clase (no tienen por qué ser los dos de la misma), esta incluida. Ambos conjuros deben ser de un nivel que puedas lanzar, tal y como se indica en la tabla del bardo, o un truco",
+				"Estos conjuros se consideran, en lo que a ti respecta, conjuros de bardo, y cuentan para el número de conjuros conocidos que puedes tener (consulta la tabla del bardo)."
+			]
+		},
+		{
+			"name": "Inspiración Bárdica (d12)",
+			"source": "PHB-ES",
+			"page": 51,
+			"srd": true,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"level": 15,
+			"entries": [
+				"A nivel 15, tu dado de Inspiración Bárdica cambia a un {@dice d12}."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 51,
+			"srd": true,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"level": 16,
+			"entries": [
+				"Cuando alcances el nivel 16, podrás escoger una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Canción de Descanso (d12)",
+			"source": "PHB-ES",
+			"page": 51,
+			"srd": true,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"level": 17,
+			"entries": [
+				"A nivel 17, los puntos de golpe adicionales recuperados por Canción de Descanso aumentan a un {@dice 1d12}."
+			]
+		},
+		{
+			"name": "Secretos Mágicos",
+			"source": "PHB-ES",
+			"page": 51,
+			"srd": true,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"level": 18,
+			"entries": [
+				"A nivel 18, escoge dos conjuros de cualquier clase (no tienen por qué ser los dos de la misma), esta incluida. Ambos conjuros deben ser de un nivel que puedas lanzar, tal y como se indica en la tabla del bardo, o un truco",
+				"Estos conjuros se consideran, en lo que a ti respecta, conjuros de bardo, y cuentan para el número de conjuros conocidos que puedes tener (consulta la tabla del bardo)."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 51,
+			"srd": true,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"level": 19,
+			"entries": [
+				"Cuando alcances el nivel 19, podrás escoger una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Inspiración Superior",
+			"source": "PHB-ES",
+			"page": 51,
+			"srd": true,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"level": 20,
+			"entries": [
+				"A partir de nivel 20, si cuando tiras iniciativa no te quedan usos de Inspiración Bárdica, recuperas uno de ellos."
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Colegio del Conocimiento",
+			"source": "PHB-ES",
+			"page": 54,
+			"srd": true,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Conocimiento",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"entries": [
+				"Los bardos del Colegio del Conocimiento siempre saben algo sobre prácticamente cualquier tema, pues coleccionan perlas de conocimiento procedentes de fuentes muy diversas; desde tratados sobre temas muy especializados hasta cuentos de campesinos. Ya sea cantando baladas populares en una taberna o interpretando elaboradas composiciones en una corte real, estos bardos emplean sus dones para fascinar a sus audiencias. Cuando los aplausos por fin se apagan, los espectadores podrían llegar a plantearse incluso sus creencias más arraigadas; desde la fe en los sacerdotes del templo local hasta su fidelidad al rey.",
+				"Estos bardos depositan su lealtad en la búsqueda de la belleza y la verdad, no en reyes ni en los preceptos de una deidad. Los nobles que recurren a uno de estos bardos como consejero o heraldo saben que este tenderá a comportarse de forma más honesta que diplomática.",
+				"Los miembros de este colegio se reúnen en bibliotecas y, a veces, en auténticos colegios, con sus aulas y dormitorios, en las que comparten con otros sus conocimientos. También se encuentran en festivales o reuniones de estado, en los que pueden sacar a la luz casos de corrupción, desvelar mentiras o reírse de los vanidosos representantes de la autoridad.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Competencias Adicionales|Bardo|PHB-ES|Conocimiento|PHB-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Palabras Cortantes|Bardo|PHB-ES|Conocimiento|PHB-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Competencias Adicionales",
+			"source": "PHB-ES",
+			"page": 54,
+			"srd": true,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Conocimiento",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Cuando te unes al Colegio del Conocimiento, a nivel 3, ganas competencia en tres habilidades cualquiera, las que elijas."
+			]
+		},
+		{
+			"name": "Palabras Cortantes",
+			"source": "PHB-ES",
+			"page": 54,
+			"srd": true,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Conocimiento",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"También a nivel 3, aprendes cómo usar tu astucia para distraer, confundir y minar la confianza y aptitudes de otros. Cuando una criatura que puedas ver a 60 pies o menos de ti haga una tirada de ataque, prueba de característica o tirada de daño, podrás emplear tu reacción y gastar uno de los usos de Inspiración Bárdica para tirar el dado de Inspiración Bárdica y restar el número obtenido del resultado de la tirada de la criatura. Puedes elegir utilizar este rasgo después de que la criatura haga su tirada, pero antes de que el DM indique si la tirada de ataque o prueba de característica ha tenido éxito, o la criatura cause el daño. Las criaturas que no puedan oírte o sean inmunes al estado \"{@condition Hechizado|PHB-ES|hechizado}\" no pueden verse afectadas por este rasgo."
+			]
+		},
+		{
+			"name": "Secretos Mágicos adicionales",
+			"source": "PHB-ES",
+			"page": 54,
+			"srd": true,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Conocimiento",
+			"subclassSource": "PHB-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A nivel 6, aprendes dos conjuros a tu elección de los de las listas de cualquier clase. Ambos conjuros deben ser de un nivel que puedas lanzar, tal y como se indica en la tabla del bardo, o un truco. Estos conjuros se consideran, en lo que a ti respecta, conjuros de bardo, pero no cuentan para el numero de conjuros conocidos que puedes tener."
+			]
+		},
+		{
+			"name": "Habilidad sin Parangón",
+			"source": "PHB-ES",
+			"page": 54,
+			"srd": true,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Conocimiento",
+			"subclassSource": "PHB-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 14, cuando hagas una prueba de característica podrás gastar uno de tus usos de Inspiración Bárdica. Tira el dado de Inspiración Bárdica y suma el número obtenido al resultado de la prueba. Puedes elegir hacer esto después de haber hecho la tirada, pero antes de que el DM te diga si tienes éxito o no."
+			]
+		},
+		{
+			"name": "Colegio del Valor",
+			"source": "PHB-ES",
+			"page": 55,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Valor",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"entries": [
+				"Los bardos del Colegio del Valor son atrevidos escaldos, cuyas historias mantienen vivo el recuerdo de los grandes campeones del pasado, inspirando así a una nueva generación de héroes. Estos bardos se reúnen en salas de hidromiel o en torno a grandes hogueras para cantar las hazañas de los poderosos, tanto del presente como del pasado. Viajan por el mundo con el fin de ser testigos de grandes eventos en primera persona, para que la memoria de dichos sucesos no se pierda. A través de sus canciones, inspiran a otros para alcanzar las mismas cotas de éxito que los héroes de antaño.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Competencias Adicionales|Bardo|PHB-ES|Valor|PHB-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Inspiración en Combate|Bardo|PHB-ES|Valor|PHB-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Competencias Adicionales",
+			"source": "PHB-ES",
+			"page": 55,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Valor",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Cuando te unes al Colegio del Valor, a nivel 3, ganas competencia con armaduras medias, escudos y armas marciales."
+			]
+		},
+		{
+			"name": "Inspiración en Combate",
+			"source": "PHB-ES",
+			"page": 55,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Valor",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"También a nivel 3, aprendes como inspirar a los demás en combate. Una criatura que posea un dado de Inspiración Bárdica que tú le hayas dado podrá tirarlo y añadir el resultado a una tirada de daño con un arma que acabe de hacer. Además, cuando se realice una tirada de ataque que tenga como objetivo a dicha criatura, esta puede usar su reacción para tirar el dado de Inspiración Bárdica y añadir el resultado obtenido a su CA contra ese ataque. Puede hacer esto tras ver el resultado de la tirada de ataque, pero antes de saber si impacta o no."
+			]
+		},
+		{
+			"name": "Ataque Adicional",
+			"source": "PHB-ES",
+			"page": 55,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Valor",
+			"subclassSource": "PHB-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 6, cuando lleves a cabo la acción de {@action Atacar|PHB-ES|Atacar} durante tu turno, podrás hacer dos ataques en lugar de uno."
+			]
+		},
+		{
+			"name": "Magia de Batalla",
+			"source": "PHB-ES",
+			"page": 55,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Valor",
+			"subclassSource": "PHB-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"A nivel 14 has logrado dominar el arte de conjugar el lanzamiento de conjuros y el manejo de las armas, mezclándolos armoniosamente. Cuando usas tu acción para lanzar un conjuro de bardo, puedes emplear tu acción adicional para hacer un ataque con arma."
+			]
+		},
+		{
+			"name": "Colegio del Glamour",
+			"source": "XGE-ES",
+			"page": 14,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Glamour",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"El Colegio del Glamour es el hogar de aquellos bardos que han afinado su habilidad en el vibrante reino del Feywild o bajo la tutela de alguien que vivió allí. Con sátiros, eladrines y otros feéricos como profesores, estos aventureros aprenden a usar su magia para cautivar y hacer las delicias de quienes los escuchan.",
+				"Los bardos de este colegio son recibidos con una mezcla de admiración y miedo. Sus actuaciones son legendarias. Su elocuencia es tal que un discurso o una de sus canciones puede conseguir que sus captores los liberen o, incluso, acunar a un furioso dragón y que se vuelva autocomplaciente. La misma magia que les permite apaciguar a las bestias es capaz de someter voluntades. Los bardos malvados son capaces de explotar a una comunidad durante semanas, usando su magia para convertir a sus anfitriones en siervos. En contraste, aquellos miembros más heroicos de este colegio utilizan su poder para regocijar a los oprimidos y debilitar a los opresores.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Manto de Inspiración|Bardo|PHB-ES|Glamour|XGE-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Interpretación Cautivadora|Bardo|PHB-ES|Glamour|XGE-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Interpretación Cautivadora",
+			"source": "XGE-ES",
+			"page": 14,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Glamour",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A partir de nivel 3, puedes cargar tu interpretación de energía seductora, usando para ello magia feérica.",
+				"Si actúas durante al menos 1 minuto, puedes intentar maravillar a tu público, ya sea cantando, recitando un poema o bailando. Al final de la actuación, elige tantos humanoides como tu modificador de Carisma. Deben estar situados a 60 pies o menos de ti y haber escuchado o visto todo el espectáculo. Cada objetivo deberá tener éxito en una tirada de salvación de Sabiduría contra tu salvación de conjuros o quedará {@condition hechizado|PHB-ES} por ti. Mientras esté {@condition hechizado|PHB-ES} de esta manera, esa criatura te idolatrará, hablará muy bien de ti a cualquiera con el que se encuentre y tratará de obstaculizar a cualquiera que esté en tu contra, aunque evitará la violencia si no estaba ya dispuesto a luchar por ti. Este efecto se desvanece tras 1 hora, si el objetivo recibe cualquier tipo de daño, si le atacas o si te ve atacando o dañando a cualquiera de sus aliados.",
+				"Si una criatura tiene éxito en su tirada de salvación, no será consciente de que has intentado hechizarla.",
+				"Una vez utilizado este rasgo, deberás terminar un des canso corto o largo para poder volver a emplearlo."
+			]
+		},
+		{
+			"name": "Manto de Inspiración",
+			"source": "XGE-ES",
+			"page": 14,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Glamour",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Cuando te unes al Colegio del Glamour, en el nivel 3, ganas la habilidad de urdir una canción con magia feérica, la cual infundirá en tus aliados vigor y velocidad.",
+				"Como acción adicional, puedes gastar uno de tus usos de Inspiración Bárdica para imbuirte de una apariencia maravillosa. Cuando lo hagas, elige un número de criaturas igual a tu modificador de Carisma, que puedas ver y que te puedan ver y se encuentren a 60 pies o menos de ti. Cada una de ellas gana 5 puntos de golpe temporales. Cuando una criatura consigue estos puntos de golpe temporales, puede utilizar inmediatamente su reacción para mover hasta su velocidad, sin provocar ataques de oportunidad.",
+				"El número de puntos de golpe temporales aumenta según alcanzas ciertos niveles en esta clase, incrementándose a 8 en el nivel 5, a 11 en el nivel 10 y finalmente a 14 en el nivel 15."
+			]
+		},
+		{
+			"name": "Manto de Majestad",
+			"source": "XGE-ES",
+			"page": 14,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Glamour",
+			"subclassSource": "XGE-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A nivel 6 obtienes la capacidad de cubrirte de una magia feérica que incita a los demás a servirte. Como acción adicional, puedes lanzar un conjuro de {@spell orden imperiosa|PHB-ES} sin utilizar un espacio de conjuro y, además, tu aspecto queda envuelto en una belleza sobrenatural durante 1 minuto o hasta que tu concentración termine (como si estuvieras concentrándote en un conjuro). Durante este espacio de tiempo, puedes lanzar {@spell orden imperiosa|PHB-ES} como acción adicional cada turno, sin emplear un espacio de conjuro.",
+				"Cualquier criatura {@condition hechizado|PHB-ES|hechizada} por ti falla automáticamente su tirada de salvación contra la {@spell orden imperiosa|PHB-ES} que lanzas con este rasgo.",
+				"Una vez utilizado este rasgo, deberás finalizar un descanso largo para poder volver a usarlo."
+			]
+		},
+		{
+			"name": "Majestad Inquebrantable",
+			"source": "XGE-ES",
+			"page": 14,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Glamour",
+			"subclassSource": "XGE-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"A nivel 14, tu apariencia se altera de forma permanente, adoptando un aspecto de otro mundo, que te hace parecer más agradable y fiero.",
+				"Además, como acción adicional, puedes asumir una presencia mágica majestuosa durante 1 minuto o hasta que quedes {@condition incapacitado|PHB-ES}. Hasta que termine la duración de este efecto, cuando cualquier criatura te ataque por primera vez en un turno, deberá realizar una tirada de salvación de Carisma contra tu salvación de conjuros. Si falla, no podrá atacarte ese turno y deberá elegir un nuevo objetivo para su ataque o este será desperdiciado. En cambio, si tiene éxito, podrá atacarte ese turno, pero tendrá desventaja en cualquier tirada de salvación que haga contra tus conjuros durante tu próximo turno.",
+				"Una vez asumes esta presencia majestuosa, no puedes emplearla de nuevo hasta que termines un descanso corto o largo."
+			]
+		},
+		{
+			"name": "Colegio de las Espadas",
+			"source": "XGE-ES",
+			"page": 15,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Espadas",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"Los bardos del Colegio de las Espadas reciben el nombre de filos, ya que entretienen con osadas proezas de pericia en armas. Realizan interpretaciones tales como combates fingidos, tragarse sables, lanzamiento de cuchillos o malabares con dagas. Aunque utilizan sus armas para entretener, también son guerreros entrenados y de gran habilidad.",
+				"Su talento con las armas lleva a muchos filos a llevar dobles vidas. Uno de estos bardos quizá use a una compañía circense como tapadera para perversos actos, como asesinatos, robos y chantajes. Otros filos cazan a los malvados, dispensando justicia a los crueles y poderosos. La mayoría de compañías no tienen problema en añadir el talento de uno de ellos a sus filas, debido a la gran emoción que añaden a una actuación, pero pocos se fían por completo de lo que puedan hacer.",
+				"Aquellos bardos que dejan sus vidas como animadores muchas veces acaban teniendo problemas que les impiden mantener en secreto sus otras actividades. Un filo al que pillen robando o haciendo de justiciero supone un lastre demasiado grande para la mayor parte de compañías. Con su habilidad con las armas y su magia, estos bardos acaban encontrando trabajo como sicarios de algún gremio de ladrones o salen en busca de aventuras.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Competencias Adicionales|Bardo|PHB-ES|Espadas|XGE-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Estilo de Combate|Bardo|PHB-ES|Espadas|XGE-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Floritura con la Espada|Bardo|PHB-ES|Espadas|XGE-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Floritura con la Espada",
+			"source": "XGE-ES",
+			"page": 15,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Espadas",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A nivel 3, aprendes a realizar impresionantes muestras de velocidad y de habilidad marcial.",
+				"Cuando realizas una acción de {@action Atacar|PHB-ES} en tu turno, tu velocidad aumenta en 10 pies hasta el final del turno. Además. si un ataque que haces como parte de esta acción impacta a una criatura, puedes usar una de las siguientes Florituras con la Espada a tu elección. Solo puedes emplear una de las opciones de Floritura con la Espada cada turno.",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Floritura defensiva|Bardo|XGE-ES|Espadas|XGE-ES|3"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Floritura cortante|Bardo|XGE-ES|Espadas|XGE-ES|3"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Floritura móvil|Bardo|XGE-ES|Espadas|XGE-ES|3"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Competencias Adicionales",
+			"source": "XGE-ES",
+			"page": 15,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Espadas",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Cuando te unes al Colegio de las Espadas, al alcanzar el nivel 3, ganas competencia con armaduras medias y con {@item cimitarra|PHB-ES|cimitarras}.",
+				"Si eres competente en el uso de un arma cuerpo a cuerpo sencilla o marcial, puedes utilizarla como canalizador mágico para tus conjuros de bardo."
+			]
+		},
+		{
+			"name": "Estilo de Combate",
+			"source": "XGE-ES",
+			"page": 15,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Espadas",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A nivel 3, te especializas en un estilo de combate. Elige una de las siguientes opciones que aparecen a continuación. No puedes volver a escoger una de las opciones de este rasgo, incluso si algún elemento del juego te deja seleccionar de nuevo entre varios estilos de combate.",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Duelo|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Combate con dos armas|PHB-ES"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Ataque Adicional",
+			"source": "XGE-ES",
+			"page": 15,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Espadas",
+			"subclassSource": "XGE-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 6, cuando lleves a cabo la acción de {@action Atacar|PHB-ES} durante tu turno, podrás hacer dos ataques en lugar de uno."
+			]
+		},
+		{
+			"name": "Floritura del Maestro",
+			"source": "XGE-ES",
+			"page": 15,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Espadas",
+			"subclassSource": "XGE-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 14, siempre que uses una de las opciones de Floritura con la Espada, puedes lanzar un {@dice d6} y utilizarlo en vez de emplear uno de tus dados de Inspiración Bárdica."
+			]
+		},
+		{
+			"name": "Colegio de los Susurros",
+			"source": "XGE-ES",
+			"page": 16,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Susurros",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"La mayoría de la gente no tiene problema en acoger a un bardo. De esto se aprovechan los miembros del Colegio de los Susurros. Se comportan como el resto de bardos: comparten noticias, cantan canciones y cuentan historias para el público. Pero, en realidad, este colegio enseña a sus estudiantes a ser como lobos entre el rebaño. Sus integrantes utilizan su conocimiento y su magia para descubrir secretos y volverlos contra otros, normalmente en forma de extorsión y amenazas.",
+				"Muchos otros bardos odian al Colegio de los Susurros. Lo ven como un parásito que usa la reputación de los de su clase para adquirir riqueza y poder. Por este motivo, los miembros de este colegio rara vez revelan su verdadera naturaleza. Normalmente dicen ser de otro colegio o no descubren su verdadera afiliación para poder infiltrarse y aprovecharse de cortes reales o entornos similares.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hoja Psíquica|Bardo|PHB-ES|Susurros|XGE-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Palabras de Terror|Bardo|PHB-ES|Susurros|XGE-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Hoja Psíquica",
+			"source": "XGE-ES",
+			"page": 16,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Susurros",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Cuando te unes al Colegio de los Susurros, a nivel 3, consigues la capacidad de hacer que tu arma intoxique de forma mágica la mente de una criatura.",
+				"Cuando impactas a una criatura con un ataque con arma, puedes emplear uno de tus usos de Inspiración Bárdica para infligir {@damage 2d6} de daño psíquico adicional al objetivo. Solo puedes realizar esto una vez por asalto, en tu turno.",
+				"El daño psíquico toma nuevos valores cuando llegas a niveles concretos de esta clase: {@dice 3d6} a nivel 5, {@dice 5d6} a nivel 10 y {@dice 8d6} a nivel 15."
+			]
+		},
+		{
+			"name": "Palabras de Terror",
+			"source": "XGE-ES",
+			"page": 16,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Susurros",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A nivel 3, aprendes a infundir palabras aparentemente inocentes con una magia insidiosa, capaz de infundir terror.",
+				"Si hablas a solas con un humanoide durante por lo menos 1 minuto, puedes intentar plantar la semilla de la paranoia en su mente. Al final de la conversación, el objetivo deberá tener éxito en una tirada de salvación de Sabiduría contra tu CD de salvación de conjuros o quedará {@condition asustado|PHB-ES} de ti o de otra criatura de tu elección. Este efecto dura 1 hora, hasta que el objetivo sea atacado o dañado, o hasta que vea a sus aliados ser atacados o dañados.",
+				"Si la criatura tiene éxito en su tirada de salvación, no será consciente de que has intentado asustarla.",
+				"Una vez utilizado este rasgo, deberás terminar un des canso corto o largo para poder volver a usarlo."
+			]
+		},
+		{
+			"name": "Manto de Susurros",
+			"source": "XGE-ES",
+			"page": 16,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Susurros",
+			"subclassSource": "XGE-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A nivel 6 consigues la capacidad de adoptar la identidad de otra persona. Cuando un humanoide situado a 30 pies o menos de ti muere, puedes capturar su sombra de forma mágica usando tu reacción. De este modo, la retienes hasta que la utilices o hasta que completes un descanso largo.",
+				"Como acción, puedes emplear la sombra. Si lo haces, esta desaparece, transformándose en un disfraz mágico que se coloca sobre ti. Pasas a tener el aspecto de la persona muerta, pero vivo y en perfecto estado de salud. El disfraz dura 1 hora o hasta que decidas retirarlo como acción adicional.",
+				"Mientras estás disfrazado, tienes acceso a toda la información que el humanoide hubiera compartido libremente con un conocido. Esta incluye detalles generales sobre su trasfondo y vida personal, pero no secretos. Estos datos son suficientes como para hacerte pasar por esta persona usando sus recuerdos.",
+				"Otra criatura podría detectar el disfraz teniendo éxito en una tirada enfrentada entre su prueba de Sabiduría ({@skill Insight|Perspicacia}) y tu prueba de Carisma ({@skill Deception|Engaño}). Disfrutas de un bonificador de +5 en esta prueba.",
+				"Una vez capturas una sombra utilizando este rasgo, puedes apresar otra hasta que no termines un descanso corto o largo."
+			]
+		},
+		{
+			"name": "Saber de las sombras",
+			"source": "XGE-ES",
+			"page": 16,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Susurros",
+			"subclassSource": "XGE-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"A nivel 14 eres capaz de entretejer magia oscura en tus palabras y acceder a los miedos más profundos de una criatura. Como acción, puedes pronunciar una frase que solo será oída por un objetivo de tu elección que se encuentre a 30 pies o menos de ti. Este deberá hacer una tirada de salvación de Sabiduría contra tu CD de salvación de conjuros. Tiene éxito de forma automática si no comparte un lenguaje contigo o si no puede oírte. Si la supera, tu susurro parecerá un murmullo ininteligible y no tendrá efecto. En cambio, si la falla, quedará {@condition hechizado|PHB-ES} por ti durante 8 horas, o hasta que tú o uno de tus aliados le ataquéis, dañéis o forcéis a realizar una tirada de salvación. El susurro le parecerá una descripción de su secreto más vergonzoso. No consigues ninguna información sobre este, pero tu objetivo estará convencido de que conoces su secreto.",
+				"La criatura {@condition hechizado|PHB-ES|hechizada} obedecerá tus instrucciones por miedo a que reveles el secreto. No arriesgará su vida o luchará por ti, a menos que ya estuviera dispuesta a hacerlo antes. Te otorgará favores y regalos que ofrecería a un amigo muy cercano.",
+				"Cuando el efecto termina, la criatura no entiende por qué te tenía tanto miedo.",
+				"Una vez utilizado este rasgo, deberás finalizar un descanso largo para poder volver a usarlo."
+			]
+		},
+		{
+			"name": "Floritura defensiva",
+			"source": "XGE-ES",
+			"page": 15,
+			"className": "Bardo",
+			"classSource": "XGE-ES",
+			"subclassShortName": "Espadas",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"Puedes gastar uno de tus usos de Inspiración Bárdica para que el arma inflija daño adicional al objetivo impactado. El daño es igual al número que obtengas en el dado de Inspiración Bárdica. También añades ese dado a tu CA hasta el comienzo de tu próximo turno."
+			]
+		},
+		{
+			"name": "Floritura móvil",
+			"source": "XGE-ES",
+			"page": 15,
+			"className": "Bardo",
+			"classSource": "XGE-ES",
+			"subclassShortName": "Espadas",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"Puedes emplear uno de tus usos de Inspiración Bárdica para que el arma inflija daño adicional al objetivo impactado. El daño es igual al número que obtengas en el dado de Inspiración Bárdica. Además, puedes empujar a tu objetivo hasta 5 pies más el número que hayas obtenido en este dado. Inmediatamente después, puedes utilizar tu reacción para moverte hasta tu velocidad caminando a un espacio libre que se encuentre a 5 pies o menos del objetivo."
+			]
+		},
+		{
+			"name": "Floritura cortante",
+			"source": "XGE-ES",
+			"page": 15,
+			"className": "Bardo",
+			"classSource": "XGE-ES",
+			"subclassShortName": "Espadas",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"Puedes utilizar uno de tus usos de Inspiración Bárdica para hacer que el arma inflija daño adicional a la criatura impactada y a cualquier otra criatura de tu elección que se encuentre hasta a 5 pies de ti y a la que puedas ver. El daño es igual al número que obtengas en el dado de Inspiración Bárdica."
+			]
+		}
+	]
+}

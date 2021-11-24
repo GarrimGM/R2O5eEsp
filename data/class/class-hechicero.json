@@ -1,0 +1,2267 @@
+{
+	"_meta": {
+		"dependencies": {
+			"subclass": [
+				"generic"
+			]
+		}
+	},
+	"class": [
+		{
+			"name": "Hechicero",
+			"source": "PHB-ES",
+			"page": 99,
+			"srd": true,
+			"hd": {
+				"number": 1,
+				"faces": 6
+			},
+			"proficiency": [
+				"con",
+				"cha"
+			],
+			"spellcastingAbility": "cha",
+			"casterProgression": "full",
+			"cantripProgression": [
+				4,
+				4,
+				4,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				6,
+				6,
+				6,
+				6,
+				6,
+				6,
+				6,
+				6,
+				6,
+				6,
+				6
+			],
+			"spellsKnownProgression": [
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				12,
+				13,
+				13,
+				14,
+				14,
+				15,
+				15,
+				15,
+				15
+			],
+			"startingProficiencies": {
+				"weapons": [
+					"{@item daga|PHB-ES|dagas}",
+					"{@item dardo|PHB-ES|dardos}",
+					"{@item honda|PHB-ES|hondas}",
+					"{@item bastón|PHB-ES|bastones}",
+					"{@item ballesta ligera|PHB-ES|ballestas ligeras}"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"arcana|conocimiento arcano",
+								"deception|engaño",
+								"insight|perspicacia",
+								"intimidation|intimidación",
+								"persuasion|persuasión",
+								"religion|religión"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) una {@item ballesta ligera|PHB-ES} y {@item virotes de ballesta (20)|PHB-ES|20 virotes} o (b) cualquier {@filter arma sencilla|items|source=PHB-ES|type=simple weapon}",
+					"(a) un {@item saquito de componentes|PHB-ES} o (b) un {@item canalizadores arcanos|PHB-ES|canalizador arcano}",
+					"(a) un {@item paquete de explorador de mazmorras|PHB-ES} o (b) un {@item paquete de explorador|PHB-ES}",
+					"Dos {@item daga|PHB-ES|dagas}"
+				],
+				"goldAlternative": "{@dice 3d4 × 10|3d4 × 10|Starting Gold}",
+				"defaultData": [
+					{
+						"a": [
+							"ballesta ligera|PHB-ES",
+							"virotes de ballesta (20)|PHB-ES"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					},
+					{
+						"a": [
+							"saquito de componentes|PHB-ES"
+						],
+						"b": [
+							"canalizadores arcanos|PHB-ES"
+						]
+					},
+					{
+						"a": [
+							"paquete de explorador de mazmorras|PHB-ES"
+						],
+						"b": [
+							"paquete de explorador|PHB-ES"
+						]
+					},
+					{
+						"_": [
+							{
+								"item": "daga|PHB-ES",
+								"quantity": 2
+							}
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"cha": 13
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"Puntos de hechicería"
+					],
+					"rows": [
+						[
+							0
+						],
+						[
+							2
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							5
+						],
+						[
+							6
+						],
+						[
+							7
+						],
+						[
+							8
+						],
+						[
+							9
+						],
+						[
+							10
+						],
+						[
+							11
+						],
+						[
+							12
+						],
+						[
+							13
+						],
+						[
+							14
+						],
+						[
+							15
+						],
+						[
+							16
+						],
+						[
+							17
+						],
+						[
+							18
+						],
+						[
+							19
+						],
+						[
+							20
+						]
+					]
+				},
+				{
+					"colLabels": [
+						"{@filter Trucos conocidos|spells|level=0|class=Hechicero (PHB-ES)}",
+						"{@filter Conjuros conocidos|spells|class=Hechicero (PHB-ES)}"
+					],
+					"rows": [
+						[
+							4,
+							2
+						],
+						[
+							4,
+							3
+						],
+						[
+							4,
+							4
+						],
+						[
+							5,
+							5
+						],
+						[
+							5,
+							6
+						],
+						[
+							5,
+							7
+						],
+						[
+							5,
+							8
+						],
+						[
+							5,
+							9
+						],
+						[
+							5,
+							10
+						],
+						[
+							6,
+							11
+						],
+						[
+							6,
+							12
+						],
+						[
+							6,
+							12
+						],
+						[
+							6,
+							13
+						],
+						[
+							6,
+							13
+						],
+						[
+							6,
+							14
+						],
+						[
+							6,
+							14
+						],
+						[
+							6,
+							15
+						],
+						[
+							6,
+							15
+						],
+						[
+							6,
+							15
+						],
+						[
+							6,
+							15
+						]
+					]
+				},
+				{
+					"title": "Espacios de conjuro por cada nivel de conjuro",
+					"colLabels": [
+						"{@filter 1|spells|level=1|class=Hechicero (PHB-ES)}",
+						"{@filter 2|spells|level=2|class=Hechicero (PHB-ES)}",
+						"{@filter 3|spells|level=3|class=Hechicero (PHB-ES)}",
+						"{@filter 4|spells|level=4|class=Hechicero (PHB-ES)}",
+						"{@filter 5|spells|level=5|class=Hechicero (PHB-ES)}",
+						"{@filter 6|spells|level=6|class=Hechicero (PHB-ES)}",
+						"{@filter 7|spells|level=7|class=Hechicero (PHB-ES)}",
+						"{@filter 8|spells|level=8|class=Hechicero (PHB-ES)}",
+						"{@filter 9|spells|level=9|class=Hechicero (PHB-ES)}"
+					],
+					"rows": [
+						[
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							1,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							2,
+							2,
+							1,
+							1
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"Lanzamiento de Conjuros|Hechicero|PHB-ES|1",
+				{
+					"classFeature": "Origen Mágico|Hechicero|PHB-ES|1",
+					"gainSubclassFeature": true
+				},
+				"Fuente de Magia|Hechicero|PHB-ES|2",
+				"Metamagia|Hechicero|PHB-ES|3",
+				"Mejora de Característica|Hechicero|PHB-ES|4",
+				{
+					"classFeature": "Rasgo de Origen Mágico|Hechicero|PHB-ES|6",
+					"gainSubclassFeature": true
+				},
+				"Mejora de Característica|Hechicero|PHB-ES|8",
+				"Metamagia|Hechicero|PHB-ES|10",
+				"Mejora de Característica|Hechicero|PHB-ES|12",
+				{
+					"classFeature": "Rasgo de Origen Mágico|Hechicero|PHB-ES|14",
+					"gainSubclassFeature": true
+				},
+				"Mejora de Característica|Hechicero|PHB-ES|16",
+				"Metamagia|Hechicero|PHB-ES|17",
+				{
+					"classFeature": "Rasgo de Origen Mágico|Hechicero|PHB-ES|18",
+					"gainSubclassFeature": true
+				},
+				"Mejora de Característica|Hechicero|PHB-ES|19",
+				"Recuperación Mágica|Hechicero|PHB-ES|20"
+			],
+			"subclassTitle": "Orígenes mágicos",
+			"fluff": [
+				{
+					"name": "Hechicero",
+					"type": "section",
+					"entries": [
+						"Con sus dorados ojos refulgiendo, una humana extiende su mano y da rienda suelta al fuego de dragón que arde en sus venas.",
+						"Mientras un infierno se desata sobre sus enemigos, un par de coriáceas alas brota de su espalda, elevándola hacia el cielo.",
+						"La larga melena del semielfo se agita, movida por un viento mágico, mientras él abre sus brazos de par en par y echa su cabeza hacia atrás. Su cuerpo levita momentáneamente, alzado por una ola de magia que crece en su interior, le atraviesa y, finalmente, surge de él para descargar un poderoso relámpago.",
+						"Agachándose tras una estalagmita, una mediana levanta su mano para señalar a un troglodita que se abalanza sobre ella. Una explosión ígnea surge de su dedo para golpear al ser y, esbozando una sonrisa, se esconde de nuevo tras la formación rocosa, sin reparar en que su magia salvaje ha tejido su piel de un color azul brillante.",
+						"Los hechiceros portan un derecho de nacimiento, recibido de una estirpe exótica, la influencia de un ser sobrenatural o la exposición a fuerzas cósmicas desconocidas. No se puede estudiar la hechicería como si de un idioma se tratara, al igual que tampoco se puede aprender a vivir una vida legendaria. Nadie escoge el camino del hechicero, es el poder el que te escoge a ti.",
+						{
+							"type": "entries",
+							"name": "Magia en bruto",
+							"entries": [
+								"La magia es parte de todo hechicero; permea su cuerpo, mente y espíritu con un poder latente que anhela ser desencadenado. Algunos hechiceros empuñan una magia que proviene de un linaje ancestral por el que fluye la magia de los dragones. Otros llevan en su interior una magia salvaje y descontrolada, una tormenta caótica que se manifiesta de formas inesperadas.",
+								"A veces es difícil predecir si se manifestarán o no los dones de la hechicería en una persona concreta. Ciertos linajes dracónicos producen exactamente un hechicero en cada generación, pero hay estirpes en las que todos y cada uno de sus miembros son hechiceros. La mayor parte de las veces la aparición de estos talentos parece obedecer únicamente a la casualidad. Algunos hechiceros ni siquiera pueden explicar la procedencia de sus poderes, mientras que otros buscan su origen en extraños sucesos de su pasado. El toque de un demonio, la bendición de una dríade durante el nacimiento o haber probado el agua de un misterioso manantial son eventos que pueden prender la chispa de la hechicería. También lo son el regalo de una deidad de la magia, la exposición a las fuerzas elementales de los Planos Interiores o el caos enloquecedor del Limbo o un vistazo a los mecanismos que gobiernan la realidad.",
+								"A los hechiceros no les sirven de nada los libros de conjuros ni los antiguos volúmenes de conocimiento mágico en los que los magos se apoyan, al igual que tampoco dependen de un patrón que les otorgue conjuros, como sucede con los brujos. Al aprender a dominar y canalizar su propia magia interior, los hechiceros descubren nuevas y asombrosas formas de liberar su poder."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Poderes sin explicación",
+							"entries": [
+								"Los hechiceros son muy poco frecuentes y es inusual dar con uno que no esté, de alguna forma, envuelto en una vida de aventuras. Las personas que sienten un poder mágico bullendo en sus venas descubren pronto que es difícil acallar esta energía. La magia de un hechicero anhela ser empuñada y tiene tendencia a desbordarse de formas impredecibles si no se la invoca.",
+								"Los hechiceros suelen estar movidos por motivaciones oscuras o quijotescas, que los conducen a la aventura. Algunos buscan entender mejor la fuerza mágica que les imbuye o encontrar una respuesta al misterio del origen de su poder. Otros anhelan hallar una forma de librarse de ella, o lo contrario, dar rienda suelta a su verdadero potencial. Independientemente de sus objetivos, los hechiceros son igual de útiles que los magos para un grupo de aventureros, pues compensan sus comparativamente menos extensos conocimientos mágicos con una enorme flexibilidad a la hora de usar los conjuros que conocen."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creación de un hechicero",
+							"entries": [
+								"El punto más importante a considerar cuando crees a tu hechicero es la procedencia de su poder. Deberás escoger un origen que se pueda enlazar con un linaje dracónico o la influencia de la magia salvaje, aunque tienes libertad para elegir la fuente concreta de tu poder dentro de estos parámetros. ¿Es una maldición familiar, heredada de unos ancestros remotos? ¿O viviste algún suceso extraordinario que te bendijo con una magia innata, dejándote quizá alguna marca en el proceso?",
+								"¿Como te sientes con respecto al poder mágico que corre por tus venas? Puede que lo abraces, intentes dominarlo o te recrees en su naturaleza impredecible. ¿Se trata de una bendición o de una maldición? ¿Lo buscaste o te encontró él a ti? ¿Tuviste la posibilidad rechazarlo? Y, de ser así, ¿desearías haberlo hecho? ¿Qué uso planeas darle? A lo mejor sientes que has recibido tu poder en aras de cumplir con algún propósito elevado. O podrías decidir lo contrario, que tu don te da derecho a hacer lo que quieras, a tomar cuanto desees de aquellos que carecen de tus facultades. Quizá tus capacidades te aten a un ente especialmente poderoso en el mundo del juego: una criatura feérica que te bendijo al nacer, un dragón que dejó caer una gota de su sangre en tus venas, un liche que te creó como experimento o un dios que te escogió para ser portador de sus poderes.",
+								{
+									"type": "entries",
+									"name": "Creación rápida",
+									"entries": [
+										"Para crear un hechicero de forma rápida sugerimos lo siguiente. Para empezar, Carisma debería ser tu característica más alta, seguida de Constitución. A continuación, elige el trasfondo \"{@background hermit|PHB-ES|ermitaño}\". Después, escoge los trucos agarre electrizante, {@spell Luz|PHB-ES|luz}, {@spell Prestidigitación|PHB-ES|prestidigitación} y {@spell Rayo de escarcha|PHB-ES|rayo de escarcha} y los conjuros de nivel 1 {@spell Escudo|PHB-ES|escudo} y {@spell Proyectil mágico|PHB-ES|proyectil mágico}."
+									]
+								}
+							]
+						}
+					],
+					"page": 99,
+					"source": "PHB-ES"
+				},
+				{
+					"type": "section",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"Practicar y estudiar es para aficionados. El verdadero poder es un derecho de nacimiento."
+							],
+							"by": "Hennet, vástago de Tiamat"
+						},
+						"Cuando se trata de sacar a la luz sus habilidades en tiempos de necesidad, los hechiceros lo tienen fácil comparados con otros aventureros. Su poder descansa en su interior, pero también necesita ser contenido. Todos los de su clase nacen para desempeñar su destino o caen en él por el azar cósmico. Al contrario que otros personajes, que deben aprender, aceptar y dedicarse a sus talentos, a los hechiceros sus poderes les vienen dados.",
+						"La idea de un ser de poder mágico innato deambulando por ahí no suele sentar bien, así que los miembros de esta clase generan desconfianza y sospechas en los demás. A pesar de ello, muchos consiguen sobreponerse a los prejuicios mediante acciones que benefician a sus compatriotas con menos aptitud mágica.",
+						"Los hechiceros suelen quedar definidos por cómo se manifestó su poder. Para los que lo reciben como un esperado derecho de nacimiento, su aparición es motivo de celebración. Otros, en cambio, son marginados y expulsados de sus casas tras la aterradora manifestación de sus habilidades.",
+						"Jugar con un personaje hechicero puede ser tan gratificante como desafiante. Los siguientes apartados ofrecen sugerencias sobre cómo dar cuerpo y personalizar a tu hechicero.",
+						{
+							"type": "entries",
+							"name": "Origen arcano",
+							"entries": [
+								"Algunos hechiceros entienden de dónde vino su poder, basándose en cómo se manifestaron sus habilidades. Otros, sin embargo, solo pueden especular, ya que sus poderes aparecieron sin sugerir ningún origen en particular.",
+								"¿Conoce tu personaje la fuente de su poder mágico? ¿Está vinculado a un pariente lejano, a un evento cósmico o simplemente a la pura suerte? Si tu hechicero no sabe de dónde procede su poder, tu DM puede usar esta tabla (o elegir una de las entradas) y revelártelo cuando esta información pueda tener un papel importante en la campaña.",
+								{
+									"type": "table",
+									"caption": "Orígenes arcanos",
+									"colLabels": [
+										"{@dice d6}",
+										"Origen"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Tu poder viene de tu estirpe. Estás vinculado a una criatura poderosa o heredaste una bendición o maldición."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"Eres la reencarnación de un ser de otro plano de existencia."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Una entidad poderosa entró en el mundo. Su magia te cambió."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"Tu nacimiento fue profetizado en un antiguo texto, el cual presagia que utilizarás tu poder para fines terribles."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"Eres el producto de generaciones de reproducción cuidadosa y selectiva."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Te creó un alquimista: saliste de una cubeta."
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Reacción",
+							"entries": [
+								"Cuando un nuevo hechicero aparece en el mundo, ya sea al nacer o cuando su poder se hace evidente, las consecuencias de este evento dependen enormemente de cómo los testigos reaccionen a lo que han visto.",
+								"Cuando aparecieron tus poderes de hechicero, ¿cómo respondió el mundo a ellos? ¿Se mostraron alentadores los demás, tuvieron miedo o reaccionaron de forma ambivalente?",
+								{
+									"type": "table",
+									"caption": "Reacciones",
+									"colLabels": [
+										"{@dice d6}",
+										"Reacción"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Tus poderes son una gran bendición para los que te rodean y, además, se espera que los uses al servicio de la comunidad."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"Tus poderes causaron destrucción e incluso muerte cuando se manifestaron, razón por la que te trataron como a un criminal."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Tus vecinos te odian y tienen miedo de tu poder, de modo que te rechazan."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"Llamaste la atención de un siniestro culto que planea explotar tus habilidades."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"La gente que te rodea cree que tus poderes son una maldición impuesta a tu familia por una transgresión pasada."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Se piensa que tus poderes están vinculados a un antiguo linaje de reyes locos que acabó en una sangrienta revuelta hace más de un siglo."
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Marca sobrenatural",
+							"entries": [
+								"Un hechicero en reposo es casi indistinguible de una persona normal: solo cuando vuelan los conjuros se revela su verdadera naturaleza. No obstante, muchos miembros de esta clase también tienen un atributo físico, sutil pero inequívoco, que les diferencia de un individuo corriente.",
+								"Si tu hechicero tiene una marca sobrenatural, quizá sea una que se oculta con facilidad o algo de lo que se enorgullece y que muestra continuamente.",
+								{
+									"type": "table",
+									"caption": "Marcas sobrenaturales",
+									"colLabels": [
+										"{@dice d6}",
+										"Marca"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Tus ojos son de un color inusual, como el rojo."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"Tienes un dedo de más en un pie."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Una de tus orejas es bastante más grande que la otra."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"Tu pelo crece a una velocidad prodigiosa."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"Arrugas la nariz repetidas veces cuando masticas."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Una mancha roja aparece en tu cuello una vez al día, pero desaparece al cabo de una hora."
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Signos de hechicería",
+							"entries": [
+								"Como es bien sabido, a algunos hechiceros se les da mejor que a otros controlar su lanzamiento de conjuros. A veces una ráfaga de magia salvaje desviada emana de uno de ellos en el momento en que lanza un conjuro. Pero incluso cuando la magia funciona como estaba planeado, el acto de emplear el conjuro suele ir acompañado de un símbolo claro que indica de dónde salió esa energía mágica.",
+								"Cuando tu hechicero lanza un conjuro, ¿se revela el esfuerzo con un signo de hechicería? ¿Está el signo vinculado a tu origen, a algún otro aspecto de tu ser o parece un fenómeno aleatorio?",
+								{
+									"type": "table",
+									"caption": "Signos de hechicería",
+									"colLabels": [
+										"{@dice d6}",
+										"Símbolo"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Pronuncias los componentes verbales de tus conjuros con una atronadora voz de titán."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"Durante un momento, después de que lances un conjuro, el área a tu alrededor se vuelve oscura y tenebrosa."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Sudas abundantemente mientras lanzas un conjuro y también unos segundos después."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"Tu pelo y vestimentas se mueven, como si los agitara una brisa, siempre que invocas un conjuro."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"Si te encuentras de pie al lanzar un conjuro, te elevas seis pulgadas y después caes lentamente."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Llamas azules ilusorias coronan tu cabeza al empezar el lanzamiento, pero desaparecen abruptamente."
+										]
+									]
+								}
+							]
+						}
+					],
+					"page": 48,
+					"source": "XGE-ES"
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Linaje Dracónico",
+			"shortName": "Dracónico",
+			"source": "PHB-ES",
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"page": 102,
+			"srd": true,
+			"subclassFeatures": [
+				"Linaje Dracónico|Hechicero|PHB-ES|Dracónico|PHB-ES|1",
+				"Afinidad Elemental|Hechicero|PHB-ES|Dracónico|PHB-ES|6",
+				"Alas de Dragón|Hechicero|PHB-ES|Dracónico|PHB-ES|14",
+				"Presencia Dracónica|Hechicero|PHB-ES|Dracónico|PHB-ES|18"
+			]
+		},
+		{
+			"name": "Magia Salvaje",
+			"shortName": "Salvaje",
+			"source": "PHB-ES",
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"page": 103,
+			"subclassFeatures": [
+				"Magia Salvaje|Hechicero|PHB-ES|Salvaje|PHB-ES|1",
+				"Doblegar la Suerte|Hechicero|PHB-ES|Salvaje|PHB-ES|6",
+				"Caos Controlado|Hechicero|PHB-ES|Salvaje|PHB-ES|14",
+				"Bombardeo de Conjuros|Hechicero|PHB-ES|Salvaje|PHB-ES|18"
+			]
+		},
+		{
+			"name": "Alma Divina",
+			"shortName": "Alma Divina",
+			"source": "XGE-ES",
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"page": 50,
+			"additionalSpells": [
+				{
+					"name": "Bien",
+					"known": {
+						"1": [
+							"curar heridas|PHB-ES"
+						]
+					}
+				},
+				{
+					"name": "Mal",
+					"known": {
+						"1": [
+							"infligir heridas|PHB-ES"
+						]
+					}
+				},
+				{
+					"name": "Ley",
+					"known": {
+						"1": [
+							"bendición|PHB-ES"
+						]
+					}
+				},
+				{
+					"name": "Caos",
+					"known": {
+						"1": [
+							"perdición|PHB-ES"
+						]
+					}
+				},
+				{
+					"name": "Neutralidad",
+					"known": {
+						"1": [
+							"protección contra el bien y el mal|PHB-ES"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Alma Divina|Hechicero|PHB-ES|Alma Divina|XGE-ES|1",
+				"Curación Mejorada|Hechicero|PHB-ES|Alma Divina|XGE-ES|6",
+				"Alas de Otro Mundo|Hechicero|PHB-ES|Alma Divina|XGE-ES|14",
+				"Recuperación Extraterrena|Hechicero|PHB-ES|Alma Divina|XGE-ES|18"
+			]
+		},
+		{
+			"name": "Magia de las Sombras",
+			"shortName": "Sombras",
+			"source": "XGE-ES",
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"page": 50,
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"oscuridad|PHB-ES"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Magia de las Sombras|Hechicero|PHB-ES|Sombras|XGE-ES|1",
+				"Sabueso de Mal Agüero|Hechicero|PHB-ES|Sombras|XGE-ES|6",
+				"Caminante de Sombras|Hechicero|PHB-ES|Sombras|XGE-ES|14",
+				"Forma de Umbra|Hechicero|PHB-ES|Sombras|XGE-ES|18"
+			]
+		},
+		{
+			"name": "Hechicería de Tormenta",
+			"shortName": "Tormenta",
+			"source": "XGE-ES",
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"page": 51,
+			"otherSources": [
+				{
+					"source": "SCAG-ES",
+					"page": 137
+				}
+			],
+			"subclassFeatures": [
+				"Hechicería de Tormenta|Hechicero|PHB-ES|Tormenta|XGE-ES|1",
+				"Corazón de la Tormenta|Hechicero|PHB-ES|Tormenta|XGE-ES|6",
+				"Guía de la Tormenta|Hechicero|PHB-ES|Tormenta|XGE-ES|6",
+				"Furia de la Tormenta|Hechicero|PHB-ES|Tormenta|XGE-ES|14",
+				"Alma del Viento|Hechicero|PHB-ES|Tormenta|XGE-ES|18"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Origen Mágico",
+			"source": "PHB-ES",
+			"page": 99,
+			"srd": true,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"level": 1,
+			"entries": [
+				"Elige un origen mágico, que describe la procedencia de tus poderes innatos. Puedes escoger entre Linaje Dracónico o Magia Salvaje. Ambos están detallados al final de la descripción de esta clase.",
+				"Esta elección te proporciona ciertos rasgos cuando alcanzas los niveles 1, 6, 14 y 18."
+			]
+		},
+		{
+			"name": "Lanzamiento de Conjuros",
+			"source": "PHB-ES",
+			"page": 99,
+			"srd": true,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"level": 1,
+			"entries": [
+				"Un evento de tu pasado, o de la vida de uno de tus padres o ancestros, dejo una marca indeleble en ti, llenándote de magia arcana. Esta fuente de magia sea cual sea su origen, alimenta tus conjuros. El {@book capítulo 10|PHB-ES|10} contiene las reglas de lanzamiento de conjuros y el {@book capítulo 11|PHB-ES|11} la {@filter lista de conjuros de hechicero|spells|class=Hechicero (PHB-ES)}.",
+				{
+					"type": "entries",
+					"name": "Trucos",
+					"entries": [
+						"A nivel 1 conoces cuatro trucos de tu elección escogidos de entre los de la lista de conjuros de hechicero. Podrás elegir más trucos de hechicero cuando llegues a niveles más altos, como se indica en la columna \"trucos conocidos\" de la tabla del hechicero."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Espacios de conjuro",
+					"entries": [
+						"La tabla del hechicero muestra de cuántos espacios de conjuro dispones para lanzar {@filter conjuros de hechicero|spells|class=Hechicero (PHB-ES)} nivel 1 y superiores. Para lanzar uno de estos conjuros deberás invertir un espacio de al menos el nivel del conjuro. Recuperas todos los espacios utilizados tras finalizar un descanso largo.",
+						"Si, por ejemplo, conoces el conjuro de nivel 1 {@spell Manos ardientes|PHB-ES|manos ardientes} y posees un espacio de conjuro de nivel 1 y otro de nivel 2, podrías lanzar {@spell Manos ardientes|PHB-ES|manos ardientes} empleando cualquiera de los dos espacios."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Conjuros conocidos de nivel 1 y superiores",
+					"entries": [
+						"Conoces dos conjuros de nivel 1 de tu elección, escogidos de entre la lista de conjuros de hechicero.",
+						"La columna “conjuros conocidos” de la tabla del hechicero te indica cuándo podrás aprender más conjuros de hechicero y cuantos elegir. Estos conjuros deben de ser de un nivel para el que tengas espacios de conjuro. Así, cuando subes a nivel 3 en esta clase puedes aprender un conjuro nuevo, que puede ser de nivel 1 o 2.",
+						"Además, cada vez que subas un nivel de esta clase podrás elegir uno de los conjuros de hechicero que ya conoces y reemplazarlo por otro de los que aparecen en la lista de conjuros de hechicero. Este reemplazo deberá ser de un nivel para el que poseas espacios de conjuro."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Aptitud mágica",
+					"entries": [
+						"El Carisma es tu aptitud mágica en lo que a conjuros de hechicero respecta, ya que el poder de tu magia descansa en tu habilidad para proyectar tu voluntad sobre el mundo. Así, utilizarás tu Carisma siempre que un conjuro de hechicero haga referencia a tu aptitud mágica. Además, también usarás tu modificador por Carisma para determinar la CD de las tiradas de salvación y las tiradas de ataque de los conjuros de hechicero que lances.",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"cha"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"cha"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Focus",
+					"entries": [
+						"Puedes utilizar un {@item Canalizadores arcanos|PHB-ES|canalizador arcano} como canalizador mágico para los conjuros de hechicero."
+					]
+				}
+			]
+		},
+		{
+			"name": "Lanzamiento Flexible",
+			"source": "PHB-ES",
+			"page": 99,
+			"srd": true,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"Puedes usar tus puntos de hechicería para obtener espacios de conjuro adicionales y viceversa: sacrificar espacios de conjuro para conseguir puntos de hechicería adicionales. Aprenderás otras formas de utilizar tus puntos de hechicería cuando alcances niveles superiores.",
+				{
+					"type": "entries",
+					"name": "Crear espacios de conjuro",
+					"entries": [
+						"Puedes emplear una acción adicional durante tu turno para transformar puntos de hechicería que no hayas gastado aún en un espacio de conjuro. La tabla \"crear espacios de conjuro\" indica el coste de crear un espacio de conjuro de un nivel determinado. No puedes crear espacios de conjuro de niveles superiores a 5. Cualquier espacio creado mediante este rasgo se desvanece cuando finalizas un descanso largo.",
+						{
+							"type": "table",
+							"caption": "Crear espacios de conjuro",
+							"colLabels": [
+								"Nivel del espacio de conjuro",
+								"Coste en puntos de hechicería"
+							],
+							"colStyles": [
+								"col-6 text-center",
+								"col-6 text-center"
+							],
+							"rows": [
+								[
+									"1",
+									"2"
+								],
+								[
+									"2",
+									"3"
+								],
+								[
+									"3",
+									"5"
+								],
+								[
+									"4",
+									"6"
+								],
+								[
+									"5",
+									"7"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Convertir un espacio de conjuro en puntos de hechicería",
+					"entries": [
+						"Puedes utilizar una acción adicional durante tu turno para gastar un espacio de conjuro y obtener tantos puntos de hechicería como el nivel del espacio."
+					]
+				}
+			]
+		},
+		{
+			"name": "Fuente de Magia",
+			"source": "PHB-ES",
+			"page": 99,
+			"srd": true,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"level": 2,
+			"entries": [
+				"A nivel 2 logras acceder a una abundante fuente de magia que nace de tu interior. Esta fuente se representa mediante una serie de puntos de hechicería, que te permiten crear una gran variedad de efectos mágicos.",
+				{
+					"type": "entries",
+					"name": "Puntos de hechicería",
+					"entries": [
+						"Posees 2 puntos de hechicería, pero obtendrás más según subas de nivel en esta clase, tal y como se muestra en la columna \"puntos de hechicería\" de la tabla del hechicero. Nunca puedes tener más puntos de hechicería de los que aparecen en dicha columna para tu nivel. Recuperas todos los puntos de hechicería utilizados tras finalizar un descanso largo."
+					]
+				},
+				{
+					"type": "refClassFeature",
+					"classFeature": "Lanzamiento Flexible|Hechicero|PHB-ES|2"
+				}
+			]
+		},
+		{
+			"name": "Metamagia",
+			"source": "PHB-ES",
+			"page": 99,
+			"srd": true,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"level": 3,
+			"entries": [
+				"A nivel 3 obtienes la capacidad para retorcer tus conjuros, adaptándolos a tus necesidades. Consigues dos de las opciones de Metamagia que aparecen más adelante, a tu elección. Además, recibirás otra cuando alcances los niveles 10 y17.",
+				"Cuando lanzas un conjuro solo puedes usar una opción de Metamagia, salvo que se especifique lo contrario.",
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Conjuro Acelerado|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Conjuro Cuidadoso|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Conjuro Distante|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Conjuro Extendido|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Conjuro Gemelo|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Conjuro Intensificado|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Conjuro Potenciado|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Conjuro Sutil|PHB-ES"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 99,
+			"srd": true,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"level": 4,
+			"entries": [
+				"Cuando alcances el nivel 4 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Rasgo de Origen Mágico",
+			"source": "PHB-ES",
+			"page": 99,
+			"srd": true,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"level": 6,
+			"entries": [
+				"A nivel 6 ganas un rasgo de tu Origen Mágico."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 99,
+			"srd": true,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"level": 8,
+			"entries": [
+				"Cuando alcances el nivel 8 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Metamagia",
+			"source": "PHB-ES",
+			"page": 99,
+			"srd": true,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"level": 10,
+			"entries": [
+				"A nivel 10 aprendes una opción de metamagia adicional."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 99,
+			"srd": true,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"level": 12,
+			"entries": [
+				"Cuando alcances el nivel 12 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Rasgo de Origen Mágico",
+			"source": "PHB-ES",
+			"page": 99,
+			"srd": true,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"level": 14,
+			"entries": [
+				"A nivel 14 ganas un rasgo de tu Origen Mágico."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 99,
+			"srd": true,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"level": 16,
+			"entries": [
+				"Cuando alcances el nivel 16 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Metamagia",
+			"source": "PHB-ES",
+			"page": 99,
+			"srd": true,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"level": 17,
+			"entries": [
+				"A nivel 17 aprendes una opción de metamagia adicional."
+			]
+		},
+		{
+			"name": "Rasgo de Origen Mágico",
+			"source": "PHB-ES",
+			"page": 99,
+			"srd": true,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"level": 18,
+			"entries": [
+				"A nivel 18 ganas un rasgo de tu Origen Mágico."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 99,
+			"srd": true,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"level": 19,
+			"entries": [
+				"Cuando alcances el nivel 19 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Recuperación Mágica",
+			"source": "PHB-ES",
+			"page": 99,
+			"srd": true,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"level": 20,
+			"entries": [
+				"A nivel 20 recuperas 4 puntos de hechicería gastados cada vez que terminas un descanso corto."
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Linaje Dracónico",
+			"source": "PHB-ES",
+			"page": 102,
+			"srd": true,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Dracónico",
+			"subclassSource": "PHB-ES",
+			"level": 1,
+			"entries": [
+				"Tu poder innato proviene de la magia dracónica, que fue mezclada con tu sangre o la de tus antepasados. La mayor parte de los hechiceros que poseen este origen pueden trazar su ascendencia hasta un poderoso hechicero de tiempos ancestrales, que cerró un trato con un dragón o incluso fuera el hijo de uno de estos seres. Algunos de estos linajes están bien asentados en el mundo, mientras que otros son desconocidos. Cualquier hechicero podría ser el primero de una nueva estirpe, como resultado de un pacto o cualquier otra circunstancia excepcional.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Ancestro Dragón|Hechicero|PHB-ES|Dracónico|PHB-ES|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Resistencia Dracónica|Hechicero|PHB-ES|Dracónico|PHB-ES|1"
+				}
+			]
+		},
+		{
+			"name": "Resistencia Dracónica",
+			"source": "PHB-ES",
+			"page": 102,
+			"srd": true,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Dracónico",
+			"subclassSource": "PHB-ES",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"Al recorrer tu cuerpo, la magia provoca que ciertas características físicas de tus ancestros dragones se manifiesten. A nivel 1 tus puntos de golpe máximos aumentan en 1, y volverán a hacerlo cada vez que subas un nuevo nivel de esta clase.",
+				"Además, algunas partes de tu piel se cubrirán de un fino lustre de aspecto similar al de las escamas de un dragón. Mientras no estés llevando armadura alguna, tu CA será de 13 + tu modificador por Destreza."
+			]
+		},
+		{
+			"name": "Ancestro Dragón",
+			"source": "PHB-ES",
+			"page": 102,
+			"srd": true,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Dracónico",
+			"subclassSource": "PHB-ES",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"A nivel 1, eliges uno de los siguientes tipos de dragón como tu antepasado. El tipo de daño del dragón escogido será el que usen los rasgos que obtendrás más adelante.",
+				{
+					"type": "table",
+					"caption": "Linaje dracónico",
+					"colLabels": [
+						"Dragón",
+						"Tipo de daño"
+					],
+					"colStyles": [
+						"col-6 text-center",
+						"col-6 text-center"
+					],
+					"rows": [
+						[
+							"Azul",
+							"{@filter Relámpago|spells|damage type=lightning|class=Hechicero (PHB-ES)}"
+						],
+						[
+							"Blanco",
+							"{@filter Frío|spells|damage type=cold|class=Hechicero (PHB-ES)}"
+						],
+						[
+							"Bronce",
+							"{@filter Relámpago|spells|damage type=lightning|class=Hechicero (PHB-ES)}"
+						],
+						[
+							"Cobre",
+							"{@filter Ácido|spells|damage type=acid|class=Hechicero (PHB-ES)}"
+						],
+						[
+							"Negro",
+							"{@filter Ácido|spells|damage type=acid|class=Hechicero (PHB-ES)}"
+						],
+						[
+							"Oro",
+							"{@filter Fuego|spells|damage type=fire|class=Hechicero (PHB-ES)}"
+						],
+						[
+							"Oropel",
+							"{@filter Fuego|spells|damage type=fire|class=Hechicero (PHB-ES)}"
+						],
+						[
+							"Plata",
+							"{@filter Frío|spells|damage type=cold|class=Hechicero (PHB-ES)}"
+						],
+						[
+							"Rojo",
+							"{@filter Fuego|spells|damage type=fire|class=Hechicero (PHB-ES)}"
+						],
+						[
+							"Verde",
+							"{@filter Veneno|spells|damage type=poison|class=Hechicero (PHB-ES)}"
+						]
+					]
+				},
+				"Puedes hablar, leer y escribir en {@language dracónico|PHB-ES|dracónico}. Además, cuando hagas una prueba de Carisma para relacionarte con dragones, puedes duplicar tu bonificador por competencia si es aplicable a la prueba."
+			]
+		},
+		{
+			"name": "Afinidad Elemental",
+			"source": "PHB-ES",
+			"page": 102,
+			"srd": true,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Dracónico",
+			"subclassSource": "PHB-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 6, cuando lanzas un conjuro que inflige daño del tipo asociado con tu linaje dracónico, puedes añadir tu modificador por Carisma a una de las tiradas de daño de ese conjuro. Asimismo, puedes gastar 1 punto de hechicería en obtener resistencia a ese tipo de daño durante 1 hora."
+			]
+		},
+		{
+			"name": "Alas de Dragón",
+			"source": "PHB-ES",
+			"page": 102,
+			"srd": true,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Dracónico",
+			"subclassSource": "PHB-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"A nivel 14 desarrollas la capacidad de hacer brotar un par de alas como las de un dragón de tu espalda, obteniendo una velocidad volando igual a tu velocidad actual. Puedes crear estas alas empleando una acción adicional durante tu turno. Permanecerán hasta que decidas retirarlas, gastando para ello una acción adicional durante tu turno.",
+				"No puedes manifestar tus alas mientras llevas armadura, salvo que esta haya sido adaptada para acomodarlas, y las prendas que no estén diseñadas ex profeso, dejando espacio para las alas, podrían resultar destruidas cuando las hagas brotar."
+			]
+		},
+		{
+			"name": "Presencia Dracónica",
+			"source": "PHB-ES",
+			"page": 102,
+			"srd": true,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Dracónico",
+			"subclassSource": "PHB-ES",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 18, puedes canalizar la pavorosa presencia de tu antepasado dragón, haciendo que los que te rodean queden fascinados o {@condition asustado|PHB-ES|aterrorizados}. Como acción, puedes gastar 5 puntos de hechicería para recurrir a este poder y exudar un aura de asombro o terror (tú eliges) a una distancia de hasta 60 pies. Durante 1 minuto o hasta que pierdas tu concentración (como si te concentrarás en un conjuro), todas las criaturas hostiles que empiecen su turno en el interior del área deberán tener éxito en una tirada de salvación de Sabiduría o estarán {@condition hechizado|PHB-ES|hechizados} (si eliges asombro) o {@condition asustado|PHB-ES|asustados} (si eliges terror) hasta que el aura termine. Las criaturas que tengan éxito en su tirada de salvación serán inmunes a tu aura durante 24 horas."
+			]
+		},
+		{
+			"name": "Magia Salvaje",
+			"source": "PHB-ES",
+			"page": 103,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Salvaje",
+			"subclassSource": "PHB-ES",
+			"level": 1,
+			"entries": [
+				"Tu magia innata proviene de las fuerzas del caos que sustentan el orden de la creación. Puede que hayas sido expuesto a magia en bruto, quizá través de un portal planar que llevaba al Limbo, los Planos Elementales o el Reino Lejano. A lo mejor fuiste bendecido por un ser feérico o marcado por un demonio. O incluso puede que tu magia se deba a un evento casual durante tu nacimiento, sin causa aparente alguna. Independientemente de su razón de ser, la magia hierve en tu interior, esperando la oportunidad de manifestarse.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Sobrecarga de Magia Salvaje|Hechicero|PHB-ES|Salvaje|PHB-ES|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Mareas del Caos|Hechicero|PHB-ES|Salvaje|PHB-ES|1"
+				}
+			]
+		},
+		{
+			"name": "Mareas del Caos",
+			"source": "PHB-ES",
+			"page": 103,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Salvaje",
+			"subclassSource": "PHB-ES",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"A nivel 1 puedes manipular las fuerzas del cambio y el caos para obtener ventaja en una tirada de ataque, prueba de característica o tirada de salvación. Una vez utilizado este rasgo, deberás terminar un descanso largo para poder volver a usarlo otra vez.",
+				"En cualquier momento antes de que recuperes el empleo de este rasgo, e inmediatamente después de que lances un conjuro de hechicero de nivel 1 o superiores, el DM puede pedirte que tires en la tabla \"{@table Sobrecarga de Magia Salvaje|PHB-ES|sobrecargas de Magia Salvaje}\". Si ocurre esto, recuperarás el uso de este rasgo."
+			]
+		},
+		{
+			"name": "Sobrecarga de Magia Salvaje",
+			"source": "PHB-ES",
+			"page": 103,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Salvaje",
+			"subclassSource": "PHB-ES",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"A partir del momento en el que escoges este origen, a nivel 1, tu lanzamiento de conjuros puede desencadenar sobrecargas de magia descontrolada. Una vez por turno, inmediatamente después de que lances un conjuro de hechicero de nivel 1 o superiores, el DM puede pedirte que tires {@dice 1d20}. Si sacas un 1, tira en la tabla \"sobrecargas de Magia Salvaje\" para crear un efecto mágico.",
+				"Si el efecto resultante es un conjuro, este será demasiado salvaje para verse afectado por tu Metamagia y, si normalmente requería de concentración, no la necesita en este caso concreto; el conjuro alcanza su duración completa.",
+				{
+					"type": "table",
+					"caption": "Sobrecarga de Magia Salvaje",
+					"colLabels": [
+						"{@dice d100}",
+						"Efecto"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-11"
+					],
+					"rows": [
+						[
+							"01-02",
+							"Tira en esta tabla al comienzo de cada uno de tus turnos durante el minuto siguiente, ignorando este resultado en esas tiradas."
+						],
+						[
+							"03-04",
+							"Durante el próximo minuto, puedes ver cualquier criatura {@condition invisible|PHB-ES} hasta la que tengas línea de visión."
+						],
+						[
+							"05-06",
+							"Un {@filter modron|bestiary|search=modron} elegido y controlado por el DM aparece en un espacio desocupado que se encuentre a 5 pies o menos de ti. Desaparece 1 minuto después."
+						],
+						[
+							"07-08",
+							"Lanzas una {@spell Bola de fuego|PHB-ES|bola de fuego} como conjuro de nivel 3 centrado en ti."
+						],
+						[
+							"09-10",
+							"Lanzas {@spell Proyectil mágico|PHB-ES|proyectil mágico} como conjuro de nivel 5."
+						],
+						[
+							"11-12",
+							"Tira {@dice 1d10}. Tu altura cambia el número de pulgadas que indica la tirada. Si el resultado es impar, encoges. Si el resultado es par, creces."
+						],
+						[
+							"13-14",
+							"Lanzas el conjuro {@spell Confusión|PHB-ES|confusión} centrado en ti mismo"
+						],
+						[
+							"15-16",
+							"Durante el próximo minuto, recuperas 5 puntos de golpe al comienzo de cada uno de tus turnos."
+						],
+						[
+							"17-18",
+							"Te crece una larga barba hecha de plumas que permanece en su sitio hasta que estornudas, momento en el cual las plumas salen despedidas de tu rostro."
+						],
+						[
+							"19-20",
+							"Lanzas el conjuro {@spell Grasa|PHB-ES|grasa} centrado en ti mismo."
+						],
+						[
+							"21-22",
+							"Todas las criaturas tienen desventaja en las tiradas de salvación contra el siguiente conjuro que lances durante el próximo minuto y que implique hacer tiradas de salvación."
+						],
+						[
+							"23-24",
+							"Tu piel se vuelve de un brillante color azul. El conjuro {@spell Levantar maldición|PHB-ES|levantar maldición} puede terminar con este efecto."
+						],
+						[
+							"25-26",
+							"En tu frente aparece un ojo durante el próximo minuto. Durante este periodo de tiempo, tienes ventaja en las pruebas de Sabiduría ({@skill Perception|Percepción}) que dependan de la vista."
+						],
+						[
+							"27-28",
+							"Durante el próximo minuto, todos tus conjuros con un tiempo de lanzamiento \"1 acción\" poseen un tiempo de lanzamiento \"1 acción adicional\"."
+						],
+						[
+							"29-30",
+							"Te teletransportas hasta 60 pies a un espacio desocupado de tu elección que puedas ver."
+						],
+						[
+							"31-32",
+							"Eres transportado al Plano Astral hasta el final de tu siguiente turno, momento en el que vuelves al espacio que ocupabas antes, o al más cercano si aquel en el que te encontrabas ya no está libre."
+						],
+						[
+							"33-34",
+							"El siguiente conjuro que cause daño que lances durante el próximo minuto infligirá el daño máximo posible."
+						],
+						[
+							"35-36",
+							"Tira {@dice 1d10}. Tu edad cambia el número de años que indica la tirada. Si el resultado es impar, rejuveneces (hasta una edad mínima de 1 año). Si el resultado es par, envejeces."
+						],
+						[
+							"37-38",
+							"{@dice 1d6} {@creature flumph|MM-ES|flumphs} controlados par el DM aparecen en espacios desocupados a 60 pies o menos de ti. Están {@condition asustado|PHB-ES|asustados} de ti. Desaparecen 1 minuto después."
+						],
+						[
+							"39-40",
+							"Recuperas {@dice 2d10} puntos de golpe."
+						],
+						[
+							"41-42",
+							"Te transformas en una planta en una maceta hasta el comienzo de tu siguiente turno. Mientras seas una planta estarás {@condition incapacitado|PHB-ES|incapacitado} y serás vulnerable a todo el daño. Si tus puntos de golpe se reducen a 0 tu maceta se romperá y volverás a tu forma original."
+						],
+						[
+							"43-44",
+							"Durante el próximo minuto, puedes teletransportarte hasta 20 pies como acción adicional durante cada uno de tus turnos."
+						],
+						[
+							"45-46",
+							"Lanzas el conjuro {@spell Levitar|PHB-ES|levitar} sobre ti mismo."
+						],
+						[
+							"47-48",
+							"Un {@creature unicornio|MM-ES} controlado por el DM aparece en un espacio desocupado que se encuentre a 5 pies o menos de ti. Desaparece 1 minuto después."
+						],
+						[
+							"49-50",
+							"No puedes hablar durante el minuto siguiente. Cada vez que lo intentes saldrán flotando de tu boca burbujas rosas."
+						],
+						[
+							"51-52",
+							"Un escudo espectral levita cerca de ti durante el minuto siguiente, dándote un +2 a tu CA e inmunidad a {@spell Proyectil mágico|PHB-ES|proyectiles mágicos}."
+						],
+						[
+							"53-54",
+							"Eres inmune a la borrachera producida por el alcohol durante los siguientes {@dice 5d6} días."
+						],
+						[
+							"55-56",
+							"Se te cae todo el pelo, pero vuelve a crecer en 24 horas."
+						],
+						[
+							"57-58",
+							"Durante el próximo minuto, cualquier objeto inflamable que toques y no esté llevando o vistiendo otra criatura se prendera fuego."
+						],
+						[
+							"59-60",
+							"Recuperas el espacio de conjuro de menor nivel que hayas gastado ya."
+						],
+						[
+							"61-62",
+							"Durante el próximo minuto, deberás gritar siempre que hables."
+						],
+						[
+							"63-64",
+							"Lanzas el conjuro {@spell Nube de oscurecimiento|PHB-ES|nube de oscurecimiento} centrado en ti."
+						],
+						[
+							"65-66",
+							"Hasta tres criaturas de tu elección a 30 pies o menos de ti reciben {@damage 4d10} de daño de relámpago."
+						],
+						[
+							"67-68",
+							"Estas {@condition asustado|PHB-ES|asustado} de la criatura más cercana hasta el final de tu siguiente turno."
+						],
+						[
+							"69-70",
+							"Todas las criaturas a 30 pies o menos de ti se vuelven {@condition invisible|PHB-ES|invisibles} durante el próximo minuto. Cualquiera de estas criaturas dejara de ser invisible si ataca o lanza un conjuro."
+						],
+						[
+							"71-72",
+							"Obtienes resistencia a todo el daño durante el próximo minuto."
+						],
+						[
+							"73-74",
+							"Una criatura elegida al azar a 60 pies o menos de ti esta {@condition envenenado|PHB-ES|envenenada} durante {@dice 1d4} horas."
+						],
+						[
+							"75-76",
+							"Refulges, emitiendo luz brillante en un radio de 30 pies durante el minuto siguiente. Cualquier criatura que acabe su turno situada a 5 pies o menos de ti estará {@condition cegado|PHB-ES|cegada} hasta el final de tu siguiente turno."
+						],
+						[
+							"77-78",
+							"Lanzas el conjuro {@spell Polimorfar|PHB-ES|polimorfar} sobre ti mismo. Si fallas la tirada de salvación, te transformas en una oveja hasta el final de la duración del conjuro."
+						],
+						[
+							"79-80",
+							"Mariposas ilusorias y pétalos de flores llenan el aire a 10 pies o menos de ti durante el minuto siguiente."
+						],
+						[
+							"81-82",
+							"Puedes realizar una nueva acción inmediatamente. Esta acción es adicional a las que puedes hacer durante tu turno."
+						],
+						[
+							"83-84",
+							"Todas las criaturas a 30 pies a menas de ti reciben {@damage 1d10} de daño necrótico. Recuperas tantas puntas de golpe como la suma de todo el de daño necrótico infligido."
+						],
+						[
+							"85-86",
+							"Lanzas el conjuro {@spell Imagen múltiple|PHB-ES|imagen múltiple}."
+						],
+						[
+							"87-88",
+							"Lanzas el conjuro {@spell Volar|PHB-ES|volar} sobre una criatura elegida al azar a 60 pies o menos de ti."
+						],
+						[
+							"89-90",
+							"Te vuelves {@condition invisible|PHB-ES|invisible} durante el minuto siguiente. Además, durante este periodo de tiempo otras criaturas no podrán oírte. Esta invisibilidad termina si atacas o lanzas un conjuro."
+						],
+						[
+							"91-92",
+							"Si mueres durante el próximo minuto, volverás inmediatamente a la vida como si te hubieran lanzado el conjuro {@spell Reencarnar|PHB-ES|reencarnar}."
+						],
+						[
+							"93-94",
+							"Tu tamaño aumenta en una categoría durante el minuto siguiente."
+						],
+						[
+							"95-96",
+							"Tanto tu como todas las criaturas a 30 pies o menos de ti seréis vulnerables al daño perforante durante el próximo minuto."
+						],
+						[
+							"97-98",
+							"Durante el minuto siguiente estarás rodeado de una música suave etérea."
+						],
+						[
+							"99-00",
+							"Recuperas todos tus puntos de hechicería gastados."
+						]
+					],
+					"data": {
+						"tableInclude": true
+					}
+				}
+			]
+		},
+		{
+			"name": "Doblegar la Suerte",
+			"source": "PHB-ES",
+			"page": 103,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Salvaje",
+			"subclassSource": "PHB-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 6 puedes recurrir a tu magia salvaje para retorcer el destino. Cuando otra criatura que puedas ver haga una tirada de ataque, una prueba de característica o una tirada de salvación, puedes utilizar tu reacción y gastar 2 puntos de hechicería para tirar {@dice 1d4} y aplicar el resultado como bonificador o penalizador (tú eliges) a la tirada de la criatura. Puedes realizar esto después de que la criatura tire, pero previamente a que se resuelvan los efectos de la tirada."
+			]
+		},
+		{
+			"name": "Caos Controlado",
+			"source": "PHB-ES",
+			"page": 103,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Salvaje",
+			"subclassSource": "PHB-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"A nivel 14 adquieres un pequeño ápice de control sobre las sobrecargas de tu magia salvaje. Siempre que tires en la tabla \"{@table Sobrecarga de Magia Salvaje|PHB-ES|sobrecargas de Magia Salvaje}\", puedes lanzar dos dados y usar el resultado que prefieras."
+			]
+		},
+		{
+			"name": "Bombardeo de Conjuros",
+			"source": "PHB-ES",
+			"page": 103,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Salvaje",
+			"subclassSource": "PHB-ES",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 18, la energía dañina de tus conjuros se intensifica. Cuando tires el daño de un conjuro y obtengas el resultado máximo posible en alguno de los dados, escoge uno de estos dados, vuélvelo a lanzar y añade el nuevo resultado al daño, además del que ya habías añadido antes. Solo puede emplear este rasgo una vez por turno."
+			]
+		},
+		{
+			"name": "Alma Divina",
+			"source": "XGE-ES",
+			"page": 50,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Alma Divina",
+			"subclassSource": "XGE-ES",
+			"level": 1,
+			"entries": [
+				"A veces la chispa de magia que da poder a un hechicero viene de una fuente divina que ilumina desde el interior del alma. Tener una esencia así, bendita, es un signo de que tu magia podría venir de una conexión familiar distante, pero poderosa, con un ser divino. Quizá un ancestro tuyo era un ángel, transformado en mortal y enviado a luchar en nombre de un dios. Tal vez tu nacimiento se alineó con una antigua profecía, marcándote como sirviente de las deidades o receptor escogido de magia divina.",
+				"Este tipo de hechiceros, con su magnetismo natural, son considerados una amenaza por algunas jerarquías religiosas. Al tratarse de alguien de fuera de la estructura, pero que domina un poder sagrado, un alma divina puede socavar la legitimidad de una orden al mostrar una conexión directa con lo sagrado.",
+				"En algunas culturas, solo aquellos que pueden demostrar ser un alma divina pueden tener poder religioso. En estas tierras, las posiciones eclesiásticas están dominadas por unos pocos linajes, que se preservan durante generaciones.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Magia Divina|Hechicero|PHB-ES|Alma Divina|XGE-ES|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Favorecido por los Dioses|Hechicero|PHB-ES|Alma Divina|XGE-ES|1"
+				}
+			]
+		},
+		{
+			"name": "Magia Divina",
+			"source": "XGE-ES",
+			"page": 50,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Alma Divina",
+			"subclassSource": "XGE-ES",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"Gracias a tu enlace con lo divino eres capaz de aprender conjuros de clérigo. Cuando tu rasgo Lanzamiento de Conjuros te permite reemplazar un truco o conjuro de hechicero de nivel 1 o superior, puedes elegir el nuevo conjuro de la lista de conjuros de clérigo o de la lista de conjuros de hechicero. Debes cumplir el resto de restricciones relacionadas con la elección del conjuro, que se convierte en un conjuro de hechicero para ti.",
+				"Además, escoge una afinidad para la fuente de tu poder divino: bien, mal, ley, caos o neutralidad. Aprendes un conjuro adicional basado en esa afinidad, como se muestra más abajo. Se considera un conjuro de hechicero para ti, pero no cuenta como parte de tus conjuros de hechicero conocidos. Si más tarde reemplazas este conjuro, debes hacerlo con uno de la lista de conjuros de clérigo.",
+				{
+					"type": "table",
+					"colLabels": [
+						"Afinidad",
+						"Conjuro"
+					],
+					"colStyles": [
+						"col-5",
+						"col-7"
+					],
+					"rows": [
+						[
+							"Bien",
+							"{@spell curar heridas|PHB-ES}"
+						],
+						[
+							"Mal",
+							"{@spell infligir heridas|PHB-ES}"
+						],
+						[
+							"Ley",
+							"{@spell bendición|PHB-ES}"
+						],
+						[
+							"Caos",
+							"{@spell perdición|PHB-ES}"
+						],
+						[
+							"Neutralidad",
+							"{@spell protección contra el bien y el mal|PHB-ES}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Favorecido por los Dioses",
+			"source": "XGE-ES",
+			"page": 50,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Alma Divina",
+			"subclassSource": "XGE-ES",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"A nivel 1, el poder divino protege tu destino. Si fallas una tirada de salvación o tirada de ataque, puedes lanzar {@dice 2d4} y añadirlos al total, posiblemente cambiando el resultado. Una vez utilizado este rasgo, deberás terminar un descanso corto o largo para poder volver a usarlo."
+			]
+		},
+		{
+			"name": "Curación Mejorada",
+			"source": "XGE-ES",
+			"page": 50,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Alma Divina",
+			"subclassSource": "XGE-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 6. la energía divina que corre por tus venas puede mejorar tus conjuros de curación, Cuando tú o un aliado situado a 5 pies o menos de ti haga una tirada para determinar cuántos puntos de golpe recupera un conjuro, puedes utilizar 1 punto de hechicería para volver a tirar cualquier número de esos dados, siempre que no estés {@condition incapacitado|PHB-ES}. Solo puedes usar este rasgo una vez por turno."
+			]
+		},
+		{
+			"name": "Alas de Otro Mundo",
+			"source": "XGE-ES",
+			"page": 50,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Alma Divina",
+			"subclassSource": "XGE-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 14, puedes utilizar una acción adicional para manifestar un par de alas espectrales en tu espalda. Mientras se encuentren presentes, tienes una velocidad volando de 30 pies. Permanecerán hasta que quedes {@condition incapacitado|PHB-ES}, mueras o las descartes con una acción adicional.",
+				"La afinidad que elijas para tu magia divina determinará la apariencia de estas alas espectrales: alas de águila para el bien o la ley, alas de murciélago para el mal o el caos y alas de libélula para la neutralidad."
+			]
+		},
+		{
+			"name": "Recuperación Extraterrena",
+			"source": "XGE-ES",
+			"page": 50,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Alma Divina",
+			"subclassSource": "XGE-ES",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"A nivel 18 consigues la capacidad de sobreponerte a heridas graves. Como acción adicional cuando tengas menos de la mitad de tus puntos de golpe máximos, puedes recuperar tantos puntos de golpe como la mitad de tus puntos de golpe máximos. Una vez utilizado este rasgo, deberás terminar un descanso largo para poder volver a usarlo."
+			]
+		},
+		{
+			"name": "Magia de las Sombras",
+			"source": "XGE-ES",
+			"page": 50,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Sombras",
+			"subclassSource": "XGE-ES",
+			"level": 1,
+			"entries": [
+				"Eres una criatura de las sombras, ya que tu magia innata viene del propio Shadowfell. Quizá seas un descendiente de una entidad de ese lugar o tal vez quedaste expuesto a su energía corrupta y esta te transformó.",
+				"El poder de la magia de las sombras tiene un efecto lúgubre sobre tu apariencia física. La chispa de la vida que te sostenía ha quedado sofocada, aunque lucha por existir bajo la energía oscura que imbuye tu alma. Como opción, puedes elegir o tirar en la tabla \"Peculiaridades del Hechicero de las Sombras\" para crear una característica singular para tu personaje.",
+				{
+					"type": "table",
+					"caption": "Peculiaridades del Hechicero de las Sombras",
+					"colLabels": [
+						"d6",
+						"Peculiaridad"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"Siempre estás helado al tacto."
+						],
+						[
+							"2",
+							"Cuando duermes, parece que no respiras (aunque debes respirar para sobrevivir)."
+						],
+						[
+							"3",
+							"Prácticamente no sangras, incluso cuando estás gravemente herido."
+						],
+						[
+							"4",
+							"Tu corazón late una vez por minuto. Esto a veces te sorprende."
+						],
+						[
+							"5",
+							"Te cuesta recordar que las criaturas vivientes y los cadáveres deben ser tratados de forma diferente."
+						],
+						[
+							"6",
+							"Parpadeaste. Una vez. La semana pasada."
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Ojos de la Oscuridad|Hechicero|PHB-ES|Sombras|XGE-ES|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Fuerza de Ultratumba|Hechicero|PHB-ES|Sombras|XGE-ES|1"
+				}
+			]
+		},
+		{
+			"name": "Ojos de la Oscuridad",
+			"source": "XGE-ES",
+			"page": 50,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Sombras",
+			"subclassSource": "XGE-ES",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"Desde el nivel 1, tienes {@sense darkvision|visión en la oscuridad} hasta a 120 pies.",
+				"Cuando alcanzas el nivel 3 de esta clase, aprendes el conjuro de {@spell oscuridad|PHB-ES}, pero no cuenta como uno de tus conjuros de hechicero conocidos. Podrás lanzarlo utilizando un espacio de conjuro o gastando 2 puntos de hechicería. Si lo utilizas con puntos de hechicería, eres capaz de ver a través de la {@spell oscuridad|PHB-ES} creada por el conjuro."
+			]
+		},
+		{
+			"name": "Fuerza de Ultratumba",
+			"source": "XGE-ES",
+			"page": 50,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Sombras",
+			"subclassSource": "XGE-ES",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"A nivel 1, tu existencia entre la vida y la muerte te hace difícil de derrotar. Cuando tus puntos de golpe fueran a ser reducidos a 0, puedes realizar una tirada de salvación de Carisma (CD 5 + el daño recibido). Si tienes éxito, en vez de que ocurra esto tus puntos de golpe quedan reducidos a 1. No puedes usar este rasgo si tus puntos de golpe llegan a 0 por daño radiante o por un crítico.",
+				"Una vez tengas éxito haciendo esta tirada de salvación, no podrás volver a emplear este rasgo hasta que no completes un descanso largo."
+			]
+		},
+		{
+			"name": "Sabueso de Mal Agüero",
+			"source": "XGE-ES",
+			"page": 50,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Sombras",
+			"subclassSource": "XGE-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A nivel 6 eres capaz de llamar a una criatura aullante de oscuridad para acosar a tus enemigos. Como acción adicional, puedes gastar 3 puntos de hechicería para invocar mágicamente a un sabueso de mal agüero, que tendrá como objetivo a una criatura que puedas ver y se encuentre a 120 pies o menos de ti. Este animal utiliza el perfil de un {@creature lobo terrible|MM-ES} (consulta el {@i Monster Manual} o el apéndice C del {@i Player's Handbook}), con las siguientes modificaciones:",
+				{
+					"type": "list",
+					"items": [
+						"El sabueso es de tamaño Mediano, no Grande, y es considerado una monstruosidad, no una bestia.",
+						"Aparece con un número de puntos de golpe temporales igual a la mitad de tu nivel de hechicero.",
+						"Puede moverse a través de otras criaturas y objetos como si fueran terreno difícil. El sabueso recibirá 5 de daño si acaba su turno dentro de un objeto.",
+						"Al principio de su turno, aprende automáticamente la localización de su objetivo. Si este estaba escondido, ya no es considerado así para el sabueso."
+					]
+				},
+				"El sabueso aparece en un espacio libre de tu elección situado a 30 pies o menos del objetivo. Haz una tirada de iniciativa para él. En su turno, solo puede moverse hacia su objetivo por la ruta más directa y, además, no puede usar su acción más que para atacarle. El sabueso puede realizar ataques de oportunidad, pero solo contra su objetivo. Además, mientras el sabueso se encuentre a 5 pies o menos del objetivo, este último tiene desventaja en tiradas de salvación contra cualquier conjuro que lances. El sabueso desaparece si sus puntos de golpe se reducen a 0, si los puntos de golpe de su objetivo se reducen a 0 o 5 minutos después de ser convocado."
+			]
+		},
+		{
+			"name": "Caminante de Sombras",
+			"source": "XGE-ES",
+			"page": 50,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Sombras",
+			"subclassSource": "XGE-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"A nivel 14, obtienes la habilidad para saltar de una sombra a otra. Cuando te encuentres bajo luz tenue u oscuridad podrás, usando una acción adicional, teletransportarte mágicamente hasta 120 pies a un espacio desocupado que puedas ver y que también se encuentre bajo luz tenue u oscuridad."
+			]
+		},
+		{
+			"name": "Forma de Umbra",
+			"source": "XGE-ES",
+			"page": 50,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Sombras",
+			"subclassSource": "XGE-ES",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 18, puedes gastar 6 puntos de hechicería y una acción adicional para transformarte mágicamente en una forma hecha de sombras. Cuando te encuentres bajo esta forma, tendrás resistencia a todo el daño excepto el del fuerza y radiante, y podrás moverte a través de otras criaturas y objetos como si fueran terreno difícil. Recibes 5 de daño de fuerza si terminas tu turno dentro de un objeto.",
+				"Permaneces en esta forma durante 1 minuto. Este efecto termina antes de tiempo si estás {@condition incapacitado|PHB-ES}, si mueres o si lo das por terminado usando una acción adicional."
+			]
+		},
+		{
+			"name": "Hechicería de Tormenta",
+			"source": "XGE-ES",
+			"page": 51,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Tormenta",
+			"subclassSource": "XGE-ES",
+			"level": 1,
+			"entries": [
+				"Tu magia innata viene del poder elemental del aire. Muchos de los que poseen este don pueden encontrar el origen de su magia en una experiencia cercana a la muerte causada por la Gran Lluvia, aunque puede que nacieras durante un aullante vendaval, tan fuerte que todavía se cuenten historias sobre él o que en tu linaje influyan criaturas aéreas portentosas, como los vaatis o los djinns. Sea como fuere, la magia de la tormenta impregna tu ser.",
+				"Los hechiceros de la tormenta no tienen precio como miembros de la tripulación de un barco. Su magia les per mite controlar el viento y el estado atmosférico en su entorno inmediato. Sus habilidades también son útiles para repeler ataques de sahuagins, piratas y otras amenazas acuáticas.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Portavoz del Viento|Hechicero|PHB-ES|Tormenta|XGE-ES|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Magia Tempestuosa|Hechicero|PHB-ES|Tormenta|XGE-ES|1"
+				}
+			]
+		},
+		{
+			"name": "Magia Tempestuosa",
+			"source": "XGE-ES",
+			"page": 51,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Tormenta",
+			"subclassSource": "XGE-ES",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"A partir del nivel 1 puedes usar una acción adicional en tu turno para hacer que ráfagas de aire elemental se arremolinen brevemente y te rodeen justo antes o después de lanzar un conjuro de nivel 1 o superior. Hacerlo te permite volar hasta 10 pies sin provocar un ataque de oportunidad."
+			]
+		},
+		{
+			"name": "Portavoz del Viento",
+			"source": "XGE-ES",
+			"page": 51,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Tormenta",
+			"subclassSource": "XGE-ES",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"La magia arcana que dominas está cargada de aire elemental. Puedes hablar, leer y escribir en {@language primordial|PHB-ES}. Conocer este idioma te permite comprender y hacerte entender por quienes hablan sus dialectos: {@language acuano|PHB-ES}, {@language aurano|PHB-ES}, {@language ígneo|PHB-ES} y {@language terrano|PHB-ES}."
+			]
+		},
+		{
+			"name": "Corazón de la Tormenta",
+			"source": "XGE-ES",
+			"page": 51,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Tormenta",
+			"subclassSource": "XGE-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A partir del nivel 6 obtienes resistencia al daño de relámpago y de trueno. Además, siempre que empieces a lanzar un conjuro de nivel 1 o superior que inflija daño de relámpago o de trueno, de ti manará una magia tormentosa. Esta explosión provocará que las criaturas que elijas, puedas ver y se encuentren a 10 pies o menos de ti reciban la mitad de tu nivel de hechicero de daño de relámpago o de trueno (elígelo cada vez que uses esta opción)."
+			]
+		},
+		{
+			"name": "Guía de la Tormenta",
+			"source": "XGE-ES",
+			"page": 51,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Tormenta",
+			"subclassSource": "XGE-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Cuando llegas a nivel 6, obtienes la habilidad de controlar sutilmente el clima que te rodea.",
+				"Si está lloviendo, puedes emplear una acción para que cese la lluvia en una esfera de 20 pies de radio en la que seas el centro. Puedes terminar este efecto como acción adicional.",
+				"Si hace viento, puedes usar una acción adicional en cada asalto para elegir la dirección en la que sopla el viento en una esfera de 100 pies de radio en la que seas el centro. El viento soplará en esa dirección hasta el final de tu siguiente turno, Este rasgo no altera la velocidad del viento."
+			]
+		},
+		{
+			"name": "Furia de la Tormenta",
+			"source": "XGE-ES",
+			"page": 51,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Tormenta",
+			"subclassSource": "XGE-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"A partir del nivel 14, cuando eres impactado por un ataque cuerpo a cuerpo, puedes utilizar tu reacción para hacer daño de relámpago al atacante. El daño es equivalente a tu nivel de hechicero. El atacante deberá realizar una tirada de salvación de Sabiduría con la misma CD que tu tirada de salvación de conjuros. Si no supera la tirada, el atacante será empujado hasta 20 pies en dirección opuesta a ti en línea recta."
+			]
+		},
+		{
+			"name": "Alma del Viento",
+			"source": "XGE-ES",
+			"page": 51,
+			"className": "Hechicero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Tormenta",
+			"subclassSource": "XGE-ES",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"A partir del nivel 18 consigues inmunidad al daño de relámpago y de trueno.",
+				"También obtienes una velocidad volando mágica de 60 pies. Puedes usar tu acción para reducir tu velocidad volando a 30 pies durante una hora y elegir a 3 + tu modificador de Carisma criaturas situadas a 30 pies o menos de ti. Las criaturas escogidas ganan una velocidad volando de 30 pies durante una hora. Si reduces tu velocidad volando de este modo, no puedes volver a hacerlo hasta terminar un descanso corto o largo."
+			]
+		}
+	]
+}

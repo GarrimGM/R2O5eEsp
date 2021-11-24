@@ -1,0 +1,2798 @@
+{
+	"class": [
+		{
+			"name": "Paladín",
+			"source": "PHB-ES",
+			"page": 82,
+			"srd": true,
+			"hd": {
+				"number": 1,
+				"faces": 10
+			},
+			"proficiency": [
+				"wis",
+				"cha"
+			],
+			"spellcastingAbility": "cha",
+			"casterProgression": "1/2",
+			"preparedSpells": "<$level$> / 2 + <$cha_mod$>",
+			"startingProficiencies": {
+				"armor": [
+					{
+						"proficiency": "light",
+						"full": "{@filter armaduras ligeras|items|source=PHB-ES|type=light armor}"
+					},
+					{
+						"proficiency": "medium",
+						"full": "{@filter armaduras medias|items|source=PHB-ES|type=medium armor}"
+					},
+					{
+						"proficiency": "heavy",
+						"full": "{@filter armaduras pesadas|items|source=PHB-ES|type=heavy armor}"
+					},
+					{
+						"proficiency": "shields",
+						"full": "{@item escudo|PHB-ES|escudos}"
+					}
+				],
+				"weapons": [
+					"{@filter armas sencillas|items|source=PHB-ES|type=simple weapon}",
+					"{@filter armas marciales|items|source=PHB-ES|type=martial weapon}"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"athletics|Atletismo",
+								"insight|Perspicacia",
+								"intimidation|Intimidación",
+								"medicine|Medicina",
+								"persuasion|Persuasión",
+								"religion|Religión"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) un {@filter arma marcial|items|source=PHB-ES|type=martial weapon} y un {@item escudo|PHB-ES|escudo} o (b) dos {@filter armas marciales|items|source=PHB-ES|type=martial weapon}",
+					"(a) cinco {@item jabalina|PHB-ES|jabalinas} o (b) cualquier  {@filter arma cuerpo a cuerpo sencilla|items|source=PHB-ES|type=simple weapon;melee weapon=sand}",
+					"(a) un {@item paquete de sacerdote|PHB-ES} o (b) un {@item paquete de explorador|PHB-ES}",
+					"{@item Cota de malla|PHB-ES} y un {@item símbolos sagrados|PHB-ES|símbolo sagrado}"
+				],
+				"goldAlternative": "{@dice 5d4 × 10|5d4 × 10|Starting Gold}",
+				"defaultData": [
+					{
+						"a": [
+							{
+								"equipmentType": "weaponMartial"
+							},
+							"shield|PHB-ES"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponMartial",
+								"quantity": 2
+							}
+						]
+					},
+					{
+						"a": [
+							{
+								"item": "jabalina|PHB-ES",
+								"quantity": 5
+							}
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimpleMelee"
+							}
+						]
+					},
+					{
+						"a": [
+							"paquete de sacerdote|PHB-ES"
+						],
+						"b": [
+							"paquete de explorador|PHB-ES"
+						]
+					},
+					{
+						"_": [
+							"Cota de malla|PHB-ES",
+							"símbolos sagrados|PHB-ES"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"str": 13,
+					"cha": 13
+				},
+				"proficienciesGained": {
+					"armor": [
+						{
+							"proficiency": "light",
+							"full": "{@filter armaduras ligeras|items|source=phb-es|type=light armor}"
+						},
+						{
+							"proficiency": "medium",
+							"full": "{@filter armaduras medias|items|source=phb-es|type=medium armor}"
+						},
+						{
+							"proficiency": "heavy",
+							"full": "{@filter armaduras pesadas|items|source=phb-es|type=heavy armor}"
+						},
+						{
+							"proficiency": "shields",
+							"full": "{@item escudo|phb-es|escudos}"
+						}
+					],
+					"weapons": [
+						"{@filter armas sencillas|items|source=PHB-ES|type=simple weapon}",
+						"{@filter armas marciales|items|source=PHB-ES|type=martial weapon}"
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"title": "Espacios de conjuro por cada nivel de conjuro",
+					"colLabels": [
+						"{@filter 1|spells|level=1|class=Paladin (PHB-ES)}",
+						"{@filter 2|spells|level=2|class=Paladin (PHB-ES)}",
+						"{@filter 3|spells|level=3|class=Paladin (PHB-ES)}",
+						"{@filter 4|spells|level=4|class=Paladin (PHB-ES)}",
+						"{@filter 5|spells|level=5|class=Paladin (PHB-ES)}"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"Sentidos Divinos|Paladín|PHB-ES|1",
+				"Imponer las Manos|Paladín|PHB-ES|1",
+				"Castigo Divino|Paladín|PHB-ES|2",
+				"Estilo de Combate|Paladín|PHB-ES|2",
+				"Lanzamiento de Conjuros|Paladín|PHB-ES|2",
+				"Salud Divina|Paladín|PHB-ES|3",
+				{
+					"classFeature": "Juramento Sagrado|Paladín|PHB-ES|3",
+					"gainSubclassFeature": true
+				},
+				"Mejora de Característica|Paladín|PHB-ES|4",
+				"Ataque Adicional|Paladín|PHB-ES|5",
+				"Aura de Protección|Paladín|PHB-ES|6",
+				{
+					"classFeature": "Rasgo de Juramento|Paladín|PHB-ES|7",
+					"gainSubclassFeature": true
+				},
+				"Mejora de Característica|Paladín|PHB-ES|8",
+				"Aura de Coraje|Paladín|PHB-ES|10",
+				"Castigo Divino Mejorado|Paladín|PHB-ES|11",
+				"Mejora de Característica|Paladín|PHB-ES|12",
+				"Toque Purificador|Paladín|PHB-ES|14",
+				{
+					"classFeature": "Rasgo de Juramento|Paladín|PHB-ES|15",
+					"gainSubclassFeature": true
+				},
+				"Mejora de Característica|Paladín|PHB-ES|16",
+				"Mejora de Auras|Paladín|PHB-ES|18",
+				"Mejora de Característica|Paladín|PHB-ES|19",
+				{
+					"classFeature": "Rasgo de Juramento|Paladín|PHB-ES|20",
+					"gainSubclassFeature": true
+				}
+			],
+			"subclassTitle": "Juramentos sagrados",
+			"fluff": [
+				{
+					"name": "Paladín",
+					"type": "section",
+					"entries": [
+						"Una humana deja a un lado su espada y escudo para imponer sus manos sobre un hombre mortalmente herido. Está protegida por una armadura de placas que, a pesar del polvo y la mugre que la cubren, productos de un largo viaje, resplandece bajo la luz del sol. Las manos de la mujer emiten un brillo agrado. Este fulgor cierra los cortes del herido, que abre los ojos en un gesto de asombro.",
+						"Un enano se agazapa tras unas rocas, casi invisible en la oscuridad de la noche gracias a su capa negra. Observa una partida de guerra área que está celebrando su última victoria. En silencio, se mueve hasta estar en media del grupo de monstruos, donde susurra un juramento que hace que dos de ellos caigan muertos incluso antes de ser conscientes de su presencia.",
+						"Con sus cabellos plateados brillando bajo un rayo de luz que parece iluminarle solamente a él, un elfo ríe de júbilo. Sus ojos relampaguean con la misma intensidad que su lanza, que clava una y otra vez en un retorcido gigante, repitiendo este acto hasta que la luz se impone sobre la espantosa oscuridad del ser.",
+						"Independientemente de su origen o misión, los paladines están unidos por su juramento, que los lleva a enfrentarse a las fuerzas del mal. Ya lo hayan pronunciado ante el altar de un dios y con un sacerdote como testigo, en un claro sagrado frente a espíritus de la naturaleza y seres feéricos o en un momento de desesperación y pena con los difuntos como únicos testigos, el juramento de un paladín es un vínculo muy poderoso. Es la fuente del poder que transforma a un combatiente devoto en un campeón bendito.",
+						{
+							"type": "entries",
+							"name": "La causa de la virtud",
+							"entries": [
+								"Un paladín jura defender la justicia y la virtud, ponerse del lado de los seres bondadosos de este mundo para luchar contra la creciente oscuridad y dar caza a las fuerzas del mal allá donde moren. Diferentes paladines persiguen la virtud de varias formas distintas, pero todos ellos están atados por el juramento que les concede su poder y les impele a llevar a cabo su tarea sagrada. Aunque muchos son devotos de los dioses del bien, el poder de un paladín proviene tanto de su compromiso con la justicia como de la deidad a la que venera.",
+								"Los paladines entrenan durante años para adquirir sus habilidades de combate, llegando a dominar una amplia variedad de armas y armaduras. A pesar de ello, sus capacidades marciales palidecen en comparación con el poder mágico que también empuñan; un poder que les permite curar a los enfermos y los heridos, castigar a los malvados y los muertos vivientes y proteger a los inocentes y los que se unen a ellos para luchar por la justicia."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Una vida lejos de lo mundano",
+							"entries": [
+								"Casi por definición, la vida de un paladín es una vida de aventuras. Salvo que una herida les impida partir en busca de aventuras durante un tiempo, todos los paladines se encuentran constantemente en primera línea del conflicto cósmico contra el mal. Los guerreros son personas poco frecuentes, incluso entre las milicias y ejércitos del mundo, pero es que las que siguen el camino del paladín son aún menos numerosos. Cuando sienten la llamada, estos combatientes abandonan sus ocupaciones anteriores y se arman para luchar contra el mal. A veces su juramento les fuerza a servir la corona como líderes de un grupo de caballeros de elite, aunque incluso entonces su fidelidad a la familia real y el reino es secundaria frente a su lealtad a la causa de la virtud.",
+								"Los paladines que parten de aventuras se toman su trabajo muy seriamente. La exploración de una ruina antigua o una cripta polvorienta puede tratarse de una misión cuyo fin es un objetivo superior a la simple adquisición de riquezas. El mal acecha en mazmorras y bosques primigenios, y la más pequeña de las victorias puede inclinar la balanza cósmica, evitando que el mundo desaparezca en el olvido."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creación de un paladín",
+							"entries": [
+								"El aspecto más importante de un paladín es la naturaleza de su misión sagrada. Aunque los rasgos de clase relacionados con tu juramento no se manifiestan hasta que alcances el nivel 3, piensa antes de que llegue ese momento en cual elegirás. Para ello puedes leer en que consiste cada juramento al final de la descripción de esta clase. Puede que seas un siervo devoto del bien, leal a los dioses de la justicia y el honor; un caballero de brillante armadura que está decidido a castigar el mal. ¿Eres un glorioso campeón de la luz, que ama todas las cosas bellas, baluartes frente a la sombra?, ¿un caballero cuyo juramento es heredero de tradiciones más antiguas que la mayoría de los dioses? O quizá seas alguien solitario y amargado, que ha jurado vengarse de aquellos que han causado un gran mal, enviado cual ángel vengador por los dioses o por su propio deseo de venganza. El apéndice B contiene muchas deidades veneradas por paladines a lo largo y ancho del multiverso, como Torm, Tyr, Heironeous, Paladine, KiriJolith, Dol Arrah, la Llama de Plata, Bahamut, Atenea, Ra o Heimdall.",
+								"¿Cómo sentiste la llamada a servir como paladín? ¿Escuchaste un dios invisible mientras estabas sumido en la oración? Puede que otro paladín sintiera el potencial que albergabas en tu interior y decidiera tomarte como escudero. ¿O fue un terrible evento, como la destrucción de tu hogar, lo que te llevó a embarcarte en tu misión? Quizá te topaste con un claro sagrado en medio del bosque, o con un enclave élfico oculto, y sentiste la necesidad de proteger estos lugares, refugios del bien y la belleza. También es posible que, desde que tienes uso de razón, supieras que la vida del paladín era para ti, como si hubieras venido al mundo con este propósito grabado a fuego en tu alma.",
+								"Como guardianes que luchan contra las fuerzas de la crueldad, los paladines prácticamente nunca son de alineamientos malvados. La mayoría de ellos siguen la senda de la caridad y la justicia. Considera la forma en la que tu alineamiento influye en tu manera de abordar tu misión sagrada y en cómo te comportas con dioses y mortales. Tu juramento y tu alineamiento pueden estar en armonía, o aquel podría imponer estándares de comportamiento que aún no has alcanzado.",
+								{
+									"type": "entries",
+									"name": "Creación rápida",
+									"entries": [
+										"Para crear un paladín de forma rápida sugerimos lo siguiente. Para empezar, Fuerza debería ser tu característica más alta, seguida de Carisma. A continuación, elige el trasfondo \"{@background noble|PHB-ES|noble}\"."
+									]
+								}
+							]
+						}
+					],
+					"page": 82,
+					"source": "PHB-ES"
+				},
+				{
+					"type": "section",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"El verdadero valor de un paladín no se mide en enemigos derrotados o mazmorras saqueadas. Se mide en vidas salvadas y corazones convertidos a la causa de la piedad y la justicia."
+							],
+							"by": "Isteval"
+						},
+						"El paladín es la encarnación de un juramento: una promesa manifiesta en el cuerpo de un guerrero sagrado que tiene la habilidad y la determinación para llevarla hasta el final. Algunos miembros de esta clase se dedican expresamente a la protección de los inocentes y a propagar la justicia por el mundo, mientras que otros persiguen la misma meta, pero la alcanzan conquistando a los que se rebelan y llevándolos ante la justicia.",
+						"Aunque ningún paladín del mundo puede ser descrito como \"típico\", unos cuantos de ellos son fanáticos de mente cerrada que no son capaces de tolerar ni la más mínima desviación de su dogma. Los paladines que se dedican a ir de aventuras, sin embargo, no suelen ser tan rígidos, aunque solo sea para no enemistarse con sus compañeros.",
+						"Puedes dar cuerpo a tu personaje paladín utilizando las sugerencias que podrás encontrar a continuación. Es importante tener en cuenta que la mayoría de ellos no son robots. Tienen dudas, prejuicios y pensamientos contradictorios como cualquier otro aventurero. Algunos incluso tienen una motivación interna que a veces choca con los principios de su juramento.",
+						{
+							"type": "entries",
+							"name": "Objetivo personal",
+							"entries": [
+								"Los preceptos del juramento de un paladín le proporcionan una finalidad y dictan su objetivo último o un propósito general que el personaje acata e intenta llevar a cabo. Aparte de eso, ciertos paladines están resueltos a cumplir un objetivo personal que complementa o incluso va más allá de los dictados de su juramento. Paladines comprometidos con diferentes juramentos podrían tener el mismo objetivo personal, de modo que solo difieren en cómo este guía sus acciones, que deben encajar con su juramento.",
+								"Si tu paladín posee un objetivo personal, este puede tener como origen un evento vital y no estar directamente vinculado al juramento.",
+								{
+									"type": "table",
+									"caption": "Objetivos personales",
+									"colLabels": [
+										"{@dice d6}",
+										"Objetivo"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Paz. Luchas para que las generaciones futuras no tengan que hacerlo."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"Venganza. Tu juramento es el camino para rectificar una vieja injusticia."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Deber. Vivirás cumpliendo tu juramento o morirás en el intento."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"Liderazgo. Ganarás una gran batalla, sobre la que cantarán los bardos, y al hacerlo te convertirás en un ejemplo que inspire a otros."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"Fe. Sabes que tu camino es recto. De otra forma, los dioses no te hubieran puesto en él."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Gloria. Llevarás al mundo a una nueva y gloriosa era, una marcada por tu nombre."
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Símbolo",
+							"entries": [
+								"Los paladines son conscientes de la influencia de los símbolos, por lo que muchos de ellos adoptan o diseñan un recurso artístico que les proporcione una imagen distintiva. Tu símbolo representa el juramento que hayas tomado y comunica ese mensaje a los que te rodean, amigos y enemigos.",
+								"Tu símbolo puede estar a la vista de todos en un estandarte, bandera o tus propias vestimentas. Pero también podría ser menos obvio, en la forma de una insignificancia o bagatela que llevas escondida en tu persona.",
+								{
+									"type": "table",
+									"caption": "Símbolos",
+									"colLabels": [
+										"{@dice d6}",
+										"Símbolo"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Un dragón, emblema de tu nobleza en la paz y tu fiereza en el combate."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"Un puño apretado, porque siempre estás listo para luchar por tus creencias."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Una mano abierta y levantada, que indica tu preferencia por la diplomacia sobre el combate."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"Un corazón rojo, que muestra al mundo tu compromiso con la justicia."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"Un corazón negro, que indica que emociones como la compasión no alteran tu entrega a tu juramento."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Un ojo que no parpadea, que significa una alerta perpetua frente a lo que amenaza tu causa."
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Némesis",
+							"entries": [
+								"Su lealtad a un juramento sagrado exige que los paladines sean activos respecto a llevar sus creencias al mundo. Esta actividad hace que, de forma natural, entren en conflicto con criaturas o entidades que se oponen a su fe. Entre esos oponentes, suele haber uno que destaca entre los demás por ser el enemigo más persistente o más formidable: una némesis cuya presencia o influencia es una constante en la vida del paladín.",
+								"Tu personaje puede tener un enemigo que date de antes de emprender su camino. O podrías ser su objetivo porque cuando te convertiste en paladín, atrajiste de manera inmediata la atención de los que te quieren mal. Si tienes una némesis, ¿qué o quién es? ¿Quién de entre tus enemigos es tu mayor amenaza para conseguir tus objetivos?",
+								{
+									"type": "table",
+									"caption": "Némesis",
+									"colLabels": [
+										"{@dice d6}",
+										"Némesis"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Un poderoso caudillo orco que amenaza con arrasar y destruir todo lo que consideras sagrado. "
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"Un infernal o un celestial, agente de un poder de los Planos Exteriores, a quien han encargado corromperte o redimirte, según sea apropiado."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Un dragón cuyo sirviente sigue cada uno de tus pasos."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"Un sacerdote de alto rango que te ve como un tonto mal informado y quiere que abandones tu religión."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"Un paladín rival que entrenó contigo, pero que rompió su juramento y te culpa de ello."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Un vampiro que ha jurado venganza contra todos los paladines tras ser derrotado por uno de ellos."
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Tentación",
+							"entries": [
+								"Aunque los paladines están dedicados a su juramento, son mortales y por tanto tienen defectos. Muchos de ellos muestran comportamientos o actitudes que no se acogen a los ideales de su llamada.",
+								"¿A qué tentación sucumbe tu personaje o qué problemas tiene para resistirse?",
+								{
+									"type": "table",
+									"caption": "Tentaciones",
+									"colLabels": [
+										"{@dice d6}",
+										"Tentación"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Furia. Cuando tu ira se desencadena, tienes problemas para pensar con claridad y temes que puedas hacer algo de lo que te arrepientas."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"Orgullo. Tus acciones son notables y nadie toma nota de ellas más que tú."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Lujuria. No puedes resistirte a una cara atractiva y una sonrisa amable."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"Envidia. Tienes envidia de lo que algunas personas famosas han conseguido, de modo que no te sientes cómodo cuando tus acciones no pueden compararse con las suyas."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"Desesperación. Cuando consideras la fuerza de los enemigos a los que debes enfrentarte, te cuesta ver un camino a la victoria final."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Avaricia. Da igual cuanto tesoro y gloria acumules, nunca es suficiente para ti."
+										]
+									]
+								}
+							]
+						}
+					],
+					"source": "XGE-ES",
+					"page": 36
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Juramento de Entrega",
+			"shortName": "Entrega",
+			"source": "PHB-ES",
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"page": 85,
+			"srd": true,
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"Protección contra el bien y el mal|PHB-ES|protección contra el bien y el mal",
+							"Santuario|PHB-ES|santuario"
+						],
+						"5": [
+							"Restablecimiento menor|PHB-ES|restablecimiento menor",
+							"Zona de la verdad|PHB-ES|zona de la verdad"
+						],
+						"9": [
+							"Señal de esperanza|PHB-ES|señal de esperanza",
+							"Disipar magia|PHB-ES|disipar magia"
+						],
+						"13": [
+							"Libertad de movimiento|PHB-ES|libertad de movimiento",
+							"Guardián de la fe|PHB-ES|guardián de la fe"
+						],
+						"17": [
+							"Comunión|PHB-ES|comunión",
+							"Golpe flamígero|PHB-ES|golpe flamígero"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Juramento de Entrega|Paladín|PHB-ES|Entrega|PHB-ES|3",
+				"Aura de Entrega|Paladín|PHB-ES|Entrega|PHB-ES|7",
+				"Pureza de Espíritu|Paladín|PHB-ES|Entrega|PHB-ES|15",
+				"Halo Sagrado|Paladín|PHB-ES|Entrega|PHB-ES|20"
+			]
+		},
+		{
+			"name": "Juramento de los Antiguos",
+			"shortName": "Antiguos",
+			"source": "PHB-ES",
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"page": 86,
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"Golpe apresador|PHB-ES|golpe apresador",
+							"Hablar con los animales|PHB-ES|hablar con los animales"
+						],
+						"5": [
+							"Rayo de luna|PHB-ES|rayo de luna",
+							"Paso brumoso|PHB-ES|paso brumoso"
+						],
+						"9": [
+							"Crecimiento vegetal|PHB-ES|crecimiento vegetal",
+							"Protección contra energía|PHB-ES|protección contra energía"
+						],
+						"13": [
+							"Tormenta de hielo|PHB-ES|tormenta de hielo",
+							"Piel pétrea|PHB-ES|piel pétrea"
+						],
+						"17": [
+							"Comunión con la naturaleza|PHB-ES|comunión con la naturaleza",
+							"Paso arbóreo|PHB-ES|paso arbóreo"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Juramento de los Antiguos|Paladín|PHB-ES|Antiguos|PHB-ES|3",
+				"Aura de Salvaguarda|Paladín|PHB-ES|Antiguos|PHB-ES|7",
+				"Centinela Imperecedero|Paladín|PHB-ES|Antiguos|PHB-ES|15",
+				"Campeón Ancestral|Paladín|PHB-ES|Antiguos|PHB-ES|20"
+			]
+		},
+		{
+			"name": "Juramento de Venganza",
+			"shortName": "Venganza",
+			"source": "PHB-ES",
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"page": 87,
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"Perdición|PHB-ES|perdición",
+							"Marca del cazador|PHB-ES|marca del cazador"
+						],
+						"5": [
+							"Inmovilizar persona|PHB-ES|inmovilizar persona",
+							"Paso brumoso|PHB-ES|paso brumoso"
+						],
+						"9": [
+							"Acelerar|PHB-ES|acelerar",
+							"Protección contra energía|PHB-ES|protección contra energía"
+						],
+						"13": [
+							"Destierro|PHB-ES|destierro",
+							"Puerta dimensional|PHB-ES|puerta dimensional"
+						],
+						"17": [
+							"Inmovilizar monstruo|PHB-ES|inmovilizar monstruo",
+							"Escudriñar|PHB-ES|escudriñar"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Juramento de Venganza|Paladín|PHB-ES|Venganza|PHB-ES|3",
+				"Vengador Implacable|Paladín|PHB-ES|Venganza|PHB-ES|7",
+				"Espíritu Vengativo|Paladín|PHB-ES|Venganza|PHB-ES|15",
+				"Ángel Vengador|Paladín|PHB-ES|Venganza|PHB-ES|20"
+			]
+		},
+		{
+			"name": "Rompejuramentos",
+			"shortName": "Rompejuramentos",
+			"source": "DMG-ES",
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"page": 97,
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"infligir heridas|PHB-ES",
+							"reprensión infernal|PHB-ES"
+						],
+						"5": [
+							"corona de la locura|PHB-ES",
+							"oscuridad|PHB-ES"
+						],
+						"9": [
+							"animar a los muertos|PHB-ES",
+							"imponer maldición|PHB-ES"
+						],
+						"13": [
+							"confusión|PHB-ES",
+							"marchitar|PHB-ES"
+						],
+						"17": [
+							"contagio|PHB-ES",
+							"dominar persona|PHB-ES"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Rompejuramentos|Paladín|PHB-ES|Rompejuramentos|DMG-ES|3",
+				"Aura de Odio|Paladín|PHB-ES|Rompejuramentos|DMG-ES|7",
+				"Resistencia Sobrenatural|Paladín|PHB-ES|Rompejuramentos|DMG-ES|15",
+				"Amo del Pavor|Paladín|PHB-ES|Rompejuramentos|DMG-ES|20"
+			]
+		},
+		{
+			"name": "Juramento a la Corona",
+			"shortName": "Corona",
+			"source": "SCAG-ES",
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"page": 132,
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"duelo forzado|PHB-ES",
+							"orden imperiosa|PHB-ES"
+						],
+						"5": [
+							"vínculo protector|PHB-ES",
+							"zona de la verdad|PHB-ES"
+						],
+						"9": [
+							"aura de vitalidad|PHB-ES",
+							"espíritus guardianes|PHB-ES"
+						],
+						"13": [
+							"destierro|PHB-ES",
+							"guardián de la fe|PHB-ES"
+						],
+						"17": [
+							"círculo de poder|PHB-ES",
+							"geas|PHB-ES"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Juramento a la Corona|Paladín|PHB-ES|Corona|SCAG-ES|3",
+				"Lealtad Divina|Paladín|PHB-ES|Corona|SCAG-ES|7",
+				"Espíritu Inflexible|Paladín|PHB-ES|Corona|SCAG-ES|15",
+				"Campeón Glorificado|Paladín|PHB-ES|Corona|SCAG-ES|20"
+			]
+		},
+		{
+			"name": "Juramento de Conquista",
+			"shortName": "Conquista",
+			"source": "XGE-ES",
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"page": 37,
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"armadura de Agathys|PHB-ES",
+							"orden imperiosa|PHB-ES"
+						],
+						"5": [
+							"inmovilizar persona|PHB-ES",
+							"arma espiritual|PHB-ES"
+						],
+						"9": [
+							"imponer maldición|PHB-ES",
+							"terror|PHB-ES"
+						],
+						"13": [
+							"dominar bestia|PHB-ES",
+							"piel pétrea|PHB-ES"
+						],
+						"17": [
+							"nube aniquiladora|PHB-ES",
+							"dominar persona|PHB-ES"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Juramento de Conquista|Paladín|PHB-ES|Conquista|XGE-ES|3",
+				"Aura de Conquista|Paladín|PHB-ES|Conquista|XGE-ES|7",
+				"Reprimenda Despreciativa|Paladín|PHB-ES|Conquista|XGE-ES|15",
+				"Conquistador Invencible|Paladín|PHB-ES|Conquista|XGE-ES|20"
+			]
+		},
+		{
+			"name": "Juramento de Redención",
+			"shortName": "Redención",
+			"source": "XGE-ES",
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"page": 38,
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"santuario|PHB-ES",
+							"dormir|PHB-ES"
+						],
+						"5": [
+							"calmar emociones|PHB-ES",
+							"inmovilizar persona|PHB-ES"
+						],
+						"9": [
+							"contrahechizo|PHB-ES",
+							"patrón hipnótico|PHB-ES"
+						],
+						"13": [
+							"esfera elástica de Otiluke|PHB-ES",
+							"piel pétrea|PHB-ES"
+						],
+						"17": [
+							"inmovilizar monstruo|PHB-ES",
+							"muro de fuerza|PHB-ES"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Juramento de Redención|Paladín|PHB-ES|Redención|XGE-ES|3",
+				"Aura del Guardián|Paladín|PHB-ES|Redención|XGE-ES|7",
+				"Espíritu Protector|Paladín|PHB-ES|Redención|XGE-ES|15",
+				"Emisario de Redención|Paladín|PHB-ES|Redención|XGE-ES|20"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Sentidos Divinos",
+			"source": "PHB-ES",
+			"page": 82,
+			"srd": true,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"level": 1,
+			"entries": [
+				"La presencia de un fuerte mal se manifiesta en tus sentidos como un hedor nauseabundo, mientras que un poderoso bien resuena en tus oídos como música celestial. Como acción, puedes expandir tu percepción para detectar estas fuerzas. Hasta el final de tu siguiente turno, sabrás la ubicación de cualquier celestial, infernal o muerto viviente a 60 pies o menos de ti que no se encuentre tras cobertura completa. Conocerás el tipo (celestial, infernal o muerto viviente) de cualquier ser cuya presencia puedas percibir, pero no su identidad (el conde vampiro Strahd von Zarovich, por ejemplo). Dentro de esa misma distancia también podrás detectar la presencia de cualquier lugar u objeto que haya sido consagrado o profanado, como con el conjuro {@spell Consagrar|PHB-ES|consagrar}.",
+				"Puedes emplear este rasgo tantas veces como 1 + tu modificador por Carisma. Recuperas todos los usos tras finalizar un descanso largo."
+			]
+		},
+		{
+			"name": "Imponer las Manos",
+			"source": "PHB-ES",
+			"page": 82,
+			"srd": true,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"level": 1,
+			"entries": [
+				"Tu toque bendito puede sanar heridas. Posees una reserva de poder curativo que se recupera cuando llevas a cabo un descanso largo. Puedes recurrir a esta reserva para restaurar tantos puntos de golpe como cinco veces tu nivel de paladín.",
+				"Como acción, puedes tocar a una criatura y tomar cierta cantidad de poder de tu reserva para hacer recuperar a la criatura los puntos de golpe que elijas, siempre que este número no supere la cantidad restante en tu reserva.",
+				"Como alternativa, puedes gastar 5 puntos de golpe de tu reserva para curar al objetivo de una enfermedad o neutralizar un veneno que le esté afectando. Eres capaz de curar varias enfermedades y neutralizar varios venenos con un solo uso de Imponer las Manos, pero deberás gastar los puntos de golpe necesarios para todos ellos.",
+				"Este rasgo no afecta a muertos vivientes ni a autómatas."
+			]
+		},
+		{
+			"name": "Castigo Divino",
+			"source": "PHB-ES",
+			"page": 82,
+			"srd": true,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"level": 2,
+			"entries": [
+				"A partir de nivel 2, cuando impactas a una criatura con un ataque con arma cuerpo a cuerpo, puedes gastar uno de tus espacios de conjuro para infligir daño radiante al objetivo, además del que ya causa el arma. Este daño adicional es de {@dice 2d8} si inviertes un espacio de nivel 1, más 1d8 adicionales por cada nivel del espacio por encima de 1, hasta un máximo de {@dice 5d8}. Este daño aumenta en {@dice 1d8} si el objetivo es un muerto viviente o un infernal, hasta un máximo de {@dice 6d8}."
+			]
+		},
+		{
+			"name": "Estilo de Combate",
+			"source": "PHB-ES",
+			"page": 82,
+			"srd": true,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"level": 2,
+			"entries": [
+				"A nivel 2 adoptas un estilo de combate concreto como tu especialidad. Elige una de las siguientes opciones que aparecen a continuación. No puedes escoger el mismo Estilo de Combate más de una vez, incluso aunque luego puedas elegir de nuevo un Estilo de Combate.",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Combate con Armas a Dos Manos|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Defensa|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Duelo|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Protección|PHB-ES"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Lanzamiento de Conjuros",
+			"source": "PHB-ES",
+			"page": 82,
+			"srd": true,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"level": 2,
+			"entries": [
+				"Cuando alcanzas el nivel 2 has aprendido a emplear la magia divina mediante la meditación y la oración, lanzando conjuros como lo haría un clérigo. El {@book capítulo 10|PHB-ES|10} contiene las reglas de lanzamiento de conjuros y el {@book capítulo 11|PHB-ES|11} la {@filter lista de conjuros de paladín|spells|class=paladin (PHB-ES)}.",
+				{
+					"type": "entries",
+					"name": "Preparar y lanzar conjuros",
+					"entries": [
+						"La tabla del paladín muestra de cuantos espacios de conjuro dispones. Para lanzar uno de tus conjuros de paladín nivel 1 o superiores deberás invertir un espacio de al menos el nivel del conjuro. Recuperas todos los espacios utilizados tras finalizar un descanso largo.",
+						"Puedes preparar una serie de conjuros, que son los que podrás lanzar, de entre la lista de conjuros de paladín. Para hacer esto, escoge tantos conjuros de paladín como tu modificador por Carisma + la mitad de tu nivel de paladín, redondeando hacia abajo (como mínimo un conjuro). Estos conjuros deben ser de un nivel para el que tengas espacios.",
+						"De esta forma, si eres un paladín de nivel 5, tendrás cuatro espacios de nivel 1 y dos espacios de nivel 2. Con un Carisma de 14, podrías preparar cualquier combinación de cuatro conjuros de nivel 1 o 2. Además, si prepararas un conjuro de nivel 1, como {@spell Curar heridas|PHB-ES|curar heridas}, podrías lanzarlo usando un espacio tanto de nivel 1 como de nivel 2. Lanzar un conjuro no hace que desaparezca de tu lista de conjuros preparados.",
+						"Puedes cambiar qué conjuros tienes preparados tras finalizar un descanso largo. Preparar una nueva serie de conjuros precisa de cierto tiempo de estudio y meditación: al menos 1 minuto por cada nivel de cada conjuro que prepares."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Aptitud mágica",
+					"entries": [
+						"El Carisma es tu aptitud mágica en lo que a conjuros de paladín respecta, ya que su poder proviene de la fuerza de tus convicciones. Así, utilizarás tu Carisma siempre que un conjuro de paladín haga referencia a tu aptitud mágica. Además, también usarás tu modificador por Carisma para determinar la CD de las tiradas de salvación y las tiradas de ataque de los conjuros de paladín que lances.",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"cha"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"cha"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Canalizador mágico",
+					"entries": [
+						"Puedes utilizar un {@item símbolos sagrados|PHB-ES|símbolo sagrado} como canalizador mágico para los conjuros de paladín."
+					]
+				}
+			]
+		},
+		{
+			"name": "Salud Divina",
+			"source": "PHB-ES",
+			"page": 82,
+			"srd": true,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"level": 3,
+			"entries": [
+				"A partir de nivel 3, la magia que fluye a través de ti le hace inmune a las enfermedades."
+			]
+		},
+		{
+			"name": "Juramento Sagrado",
+			"source": "PHB-ES",
+			"page": 82,
+			"srd": true,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"level": 3,
+			"entries": [
+				"Cuando alcanzas el nivel 3 pronuncias el juramento que te atará para siempre a la senda del paladín. Hasta este momento has pasado simplemente por una fase de preparación, comprometido con tu deber, pero sin haber hecho aún el juramento. Ahora debes elegir entre el Juramento de Entrega, el Juramento de los Antiguos o el Juramento de Venganza. Todos ellos están explicados al final de la descripción de esta clase.",
+				"Esta elección te proporciona ciertos rasgos cuando alcanzas los niveles 3, 7, 15 y 20. Entre estos rasgos se encuentran los conjuros de juramento y Canalizar Divinidad.",
+				{
+					"name": "Conjuros de juramento",
+					"type": "entries",
+					"entries": [
+						"Cada juramento tiene una serie de conjuros asociados. Puedes acceder a estos conjuros cuando llegas a los niveles especificados en la descripción del juramento en cuestión. Una vez accedes a ellos, estos conjuros siempre se considerarán preparados y no cuentan para el total de conjuros que puedes preparar cada día.",
+						"Aunque obtengas un conjuro de juramento que no aparezca en la lista de los de paladín, para ti sí que se considerará como conjuro de paladín."
+					]
+				},
+				{
+					"name": "Canalizar Divinidad",
+					"type": "entries",
+					"entries": [
+						"Tu juramento te permite canalizar energía divina para alimentar varios efectos mágicos. Cada forma de utilizar Canalizar Divinidad que tu juramento te proporciona incluye una explicación de cómo usarla.",
+						"Cuando empleas Canalizar Divinidad, elige cuál de las opciones vas a emplear. Deberás terminar un descanso corto o largo para poder volver a usar Canalizar Divinidad otra vez.",
+						"Algunos efectos de Canalizar Divinidad exigen hacer tiradas de salvación. Cuando utilices uno de los proporcionados por esta clase, la CD será la misma que la de las tiradas de salvación de tus conjuros de paladín."
+					]
+				},
+				{
+					"name": "Romper tu juramento",
+					"type": "inset",
+					"entries": [
+						"Un paladín siempre intenta alcanzar los más altos estándares de conducta, pero incluso el más virtuoso de ellos es falible. A veces el camino correcto es demasiado exigente, una situación fuerza a elegir el menor de dos males o el calor de las emociones hace que un paladín viole su propio juramento.",
+						"Lo normal es que un paladín que haya rota sus votos busque que un clérigo que comparta su fe u otro paladín de la misma orden le absuelva. El paladín podría pasar una noche entera de vigilia, rezando, como señal de penitencia. Una alternativa es ayunar o llevar a cabo cualquier otro acto de sacrificio. Tras finalizar el rito de la confesión y el perdón, el paladín puede hacer borrón y cuenta nueva.",
+						"Si un paladín viola su juramento a sabiendas y no muestra señal alguna de arrepentimiento, las consecuencias pueden ser mucho más serias. Si el DM lo considera oportuno, el paladín impenitente podría verse forzado a abandonar su clase y adoptar otra, aunque quizá elija convertirse en un paladín Rompejuramentos, una opción que se describe en el Dungeon Master's Guide."
+					]
+				}
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 82,
+			"srd": true,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"level": 4,
+			"entries": [
+				"Cuando alcances el nivel 4 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Ataque Adicional",
+			"source": "PHB-ES",
+			"page": 82,
+			"srd": true,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"level": 5,
+			"entries": [
+				"A partir de nivel 5, cuando lleves a cabo la acción de {@action Atacar|PHB-ES} durante tu turno, podrás hacer dos ataques en lugar de uno."
+			]
+		},
+		{
+			"name": "Aura de Protección",
+			"source": "PHB-ES",
+			"page": 82,
+			"srd": true,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"level": 6,
+			"entries": [
+				"A partir de nivel 6, cuando tú o una criatura amistosa a 10 pies o menos de ti debáis hacer una tirada de salvación, obtendréis un bombeador igual a tu modificador por Carisma (mínimo de +1) a dicha tirada. Debes estar consciente para poder conceder este bonificador.",
+				"A nivel 18 el alcance de esta aura aumenta a 30 pies."
+			]
+		},
+		{
+			"name": "Rasgo de Juramento",
+			"source": "PHB-ES",
+			"page": 82,
+			"srd": true,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"level": 7,
+			"entries": [
+				"A nivel 7 ganas un rasgo de tu Juramento."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 82,
+			"srd": true,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"level": 8,
+			"entries": [
+				"Cuando alcances el nivel 8 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Aura de Coraje",
+			"source": "PHB-ES",
+			"page": 82,
+			"srd": true,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"level": 10,
+			"entries": [
+				"A partir de nivel 10, ni tu ni las criaturas amistosas a 10 pies o menos de ti podréis ser {@condition asustado|PHB-ES|asustadas} mientras permanezcas consciente.",
+				"A nivel 18 el alcance de esta aura aumenta a 30 pies."
+			]
+		},
+		{
+			"name": "Castigo Divino Mejorado",
+			"source": "PHB-ES",
+			"page": 82,
+			"srd": true,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"level": 11,
+			"entries": [
+				"A nivel 11 estás tan bañado en el poder de la virtud que todos los golpes de tus armas cuerpo a cuerpo llevan consigo una fuerza divina. Siempre que impactes a una criatura con un ataque cuerpo a cuerpo, este infligirá {@damage 1d8} de daño radiante adicional."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 82,
+			"srd": true,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"level": 12,
+			"entries": [
+				"Cuando alcances el nivel 12 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Toque Purificador",
+			"source": "PHB-ES",
+			"page": 82,
+			"srd": true,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"level": 14,
+			"entries": [
+				"A partir de nivel 14, puedes utilizar tu acción para finalizar un conjuro que te esté afectando a ti o a una criatura voluntaria a la que toques.",
+				"Puedes emplear este rasgo tantas veces como tu modificador por Carisma (mínimo una vez). Recuperas todos los usos tras finalizar un descanso largo."
+			]
+		},
+		{
+			"name": "Rasgo de Juramento",
+			"source": "PHB-ES",
+			"page": 82,
+			"srd": true,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"level": 15,
+			"entries": [
+				"A nivel 15 ganas un rasgo de tu Juramento."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 82,
+			"srd": true,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"level": 16,
+			"entries": [
+				"Cuando alcances el nivel 16 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Mejora de Auras",
+			"source": "PHB-ES",
+			"page": 82,
+			"srd": true,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"level": 18,
+			"entries": [
+				"A nivel 18 el alcance de tu aura aumenta a 30 pies."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 82,
+			"srd": true,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"level": 19,
+			"entries": [
+				"Cuando alcances el nivel 19 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Rasgo de Juramento",
+			"source": "PHB-ES",
+			"page": 82,
+			"srd": true,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"level": 20,
+			"entries": [
+				"A nivel 20 ganas un rasgo de tu Juramento."
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Juramento de los Antiguos",
+			"source": "PHB-ES",
+			"page": 86,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Antiguos",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"entries": [
+				"El juramento de los Antiguos es tan antiguo como los elfos y los rituales de los druidas. También llamados caballeros feéricos, caballeros verdes o caballeros astados, los paladines que pronuncian este juramento se alinean con el bando de la luz en el conflicto cósmico contra la oscuridad. Pero lo hacen porque aman las cosas bellas y capaces de dar vida del mundo, y no necesariamente porque crean en principios como el honor, el valor o la justicia. Adornan su armadura y sus prendas con imágenes que representan seres capaces de crecer, como hojas, astas o flores, para reflejar su compromiso con el cuidado de la vida y la luz en el mundo.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Principios de los Antiguos|Paladín|PHB-ES|Antiguos|PHB-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conjuros de juramento|Paladín|PHB-ES|Antiguos|PHB-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Canalizar Divinidad: Ira de la Naturaleza|Paladín|PHB-ES|Antiguos|PHB-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Canalizar Divinidad: Expulsar Infieles|Paladín|PHB-ES|Antiguos|PHB-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Canalizar Divinidad: Ira de la Naturaleza",
+			"source": "PHB-ES",
+			"page": 86,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Antiguos",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Puedes utilizar tu Canalizar Divinidad para invocar fuerzas primordiales que atrapan a un enemigo. Como acción, puedes hacer que aparezcan enredaderas espectrales y se abalancen sobre una criatura a 10 pies o menos de ti que puedas ver. Dicho objetivo debe tener éxito en una tirada de salvación de Fuerza o Destreza (a su elección) o estará {@condition apresado|PHB-ES}. Mientras permanezca {@condition apresado|PHB-ES|apresada} por las enredaderas, la criatura puede repetir la tirada de salvación al final de cada uno de sus turnos. Si tiene éxito, se libera de su prisión y las enredaderas se desvanecen."
+			]
+		},
+		{
+			"name": "Canalizar Divinidad: Expulsar Infieles",
+			"source": "PHB-ES",
+			"page": 86,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Antiguos",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Puedes usar Canalizar Divinidad para pronunciar palabras ancestrales, que causan dolor a los seres feéricos y los infernales que las escuchan. Como acción, puedes mostrar tu símbolo sagrado y todos los infernales y feéricos a 30 pies o menos de ti que puedan oírte deben realizar una tirada de salvación de Sabiduría. Si el objetivo falla su tirada de salvación, estará expulsado durante 1 minuto o hasta recibir daño.",
+				"Una criatura expulsada deberá dedicar su turno a alejarse lo más lejos posible de ti, si es que puede, y no podrá moverse a ningún espacio a 30 pies o menos de ti. Además, tampoco será capaz de llevar a cabo reacciones. Solo puede realizar la acción de {@action Correr|PHB-ES} o intentar escapar de un efecto que le impida moverse. Si no tiene a dónde moverse, llevará a cabo la acción de {@action Esquivar|PHB-ES}.",
+				"Si el verdadero aspecto de la criatura está oculto tras una ilusión, cambio de forma u otro efecto similar, este es revelado mientras el objetivo permanezca expulsado."
+			]
+		},
+		{
+			"name": "Conjuros de juramento",
+			"source": "PHB-ES",
+			"page": 86,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Antiguos",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Obtienes los siguientes conjuros de juramento a los niveles de paladín indicados.",
+				{
+					"type": "table",
+					"caption": "Conjuros del Juramento de los Antiguos",
+					"colLabels": [
+						"Nivel del paladín",
+						"Conjuros"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell Golpe apresador|PHB-ES|Golpe apresador}, {@spell Hablar con los animales|PHB-ES|Hablar con los animales}"
+						],
+						[
+							"5th",
+							"{@spell Rayo de luna|PHB-ES|Rayo de luna}, {@spell Paso brumoso|PHB-ES|Paso brumoso}"
+						],
+						[
+							"9th",
+							"{@spell Crecimiento vegetal|PHB-ES|Crecimiento vegetal}, {@spell Protección contra energía|PHB-ES|Protección contra energía}"
+						],
+						[
+							"13th",
+							"{@spell Tormenta de hielo|PHB-ES|Tormenta de hielo}, {@spell Piel pétrea|PHB-ES|Piel pétrea}"
+						],
+						[
+							"17th",
+							"{@spell Comunión con la naturaleza|PHB-ES|Comunión con la naturaleza}, {@spell Paso arbóreo|PHB-ES|Paso arbóreo}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Principios de los Antiguos",
+			"source": "PHB-ES",
+			"page": 86,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Antiguos",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Los principios del Juramento de los Antiguos han sido preservados durante incontables siglos. Este juramento enfatiza el bien por encima de cualquier otra cosa, sin preocuparse por la ley o el caos. Sus cuatro principios fundamentales son sencillos.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Prende la luz",
+							"entries": [
+								"Debes prender la luz de la esperanza en el mundo a través de tus actos de caridad, bondad y perdón, haciendo retroceder al desespero."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Cobija la luz",
+							"entries": [
+								"Debes montar guardia allá donde haya bondad, belleza, amor y risa, pues la maldad aspira a devorarlos. Debes montar guardia allá donde la vida florezca, pues existen fuerzas que anhelan volverla estéril."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Conserva tu propia luz",
+							"entries": [
+								"Regocíjate con la canción y la risa, la belleza y el arte. Si dejas morir la luz de tu corazón, no tendrás forma alguna de preservar la del resto del mundo."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Sé la luz",
+							"entries": [
+								"Conviértete en un faro para todos aquellos que viven en la desesperación. Permite que la luz de tu alegría y tu coraje se deje ver a través de tus obras."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Aura de Salvaguarda",
+			"source": "PHB-ES",
+			"page": 86,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Antiguos",
+			"subclassSource": "PHB-ES",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 7, la magia antigua te ha impregnado hasta tal punto que ha formado una protección sobrenatural. Tanto tu como las criaturas amistosas a 10 pies o menos de ti tenéis resistencia al daño proveniente de conjuros.",
+				"A nivel 18 el alcance de esta aura aumenta a 30 pies."
+			]
+		},
+		{
+			"name": "Centinela Imperecedero",
+			"source": "PHB-ES",
+			"page": 86,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Antiguos",
+			"subclassSource": "PHB-ES",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 15, si tus puntos de golpe se ven reducidos a 0 pero no mueres instantáneamente, puedes volver a tener 1 punto de golpe. Una vez utilizado este rasgo, deberás terminar un descanso largo para poder volver a usarlo otra vez.",
+				"Además, no sufres de ninguno de los inconvenientes de la vejez y no puedes envejecer por medias mágicos."
+			]
+		},
+		{
+			"name": "Campeón Ancestral",
+			"source": "PHB-ES",
+			"page": 86,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Antiguos",
+			"subclassSource": "PHB-ES",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"A nivel 20 puedes asumir la forma de una antigua fuerza de la naturaleza, tornando una apariencia de tu elección. Por ejemplo: tu piel podría volverse verduzca o desarrollar una textura parecida a la corteza de un árbol, tupelo podría mutar en hojas o musgo e incluso podrían salirte astas o una melena como la de un león.",
+				"Puedes usar tu acción para llevar a cabo esta transformación. Obtienes los siguientes beneficios durante 1 minuto:",
+				{
+					"type": "list",
+					"items": [
+						"Al comienzo de cada uno de tus turnos recuperas 10 puntos de golpe.",
+						"Puedes lanzar un conjuro de paladín con un tiempo de lanzamiento de 1 acción empleando únicamente una acción adicional.",
+						"Las criaturas enemigas a 10 pies o menos de ti tienen desventaja en las tiradas de salvación hechas contra tus conjuros de paladín o tus opciones de Canalizar Divinidad."
+					]
+				},
+				"Una vez utilizado este rasgo, deberás terminar un descanso largo para poder volver a usarlo otra vez."
+			]
+		},
+		{
+			"name": "Juramento de Entrega",
+			"source": "PHB-ES",
+			"page": 85,
+			"srd": true,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Entrega",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"entries": [
+				"El juramento de Entrega vincula al paladín con tres ideales sublimes: la justicia, la virtud y el orden. También llamados adalides, caballeros blancos o guerreros sagrados, estos paladines encarnan el ideal del caballero de brillante armadura, que actúa con honor y persigue la justicia y el bien mayor. Se exigen a sí mismos los más altos estándares de conducta y algunos de ellos, para bien o para mal, esperan lo mismo del resto del mundo. Muchos de los que pronuncian este juramento veneran a dioses de la ley y la bondad y emplean los mandamientos de estas deidades como vara de medir de su propia entrega. Conciben a los ángeles (los siervos perfectos del bien) como el ideal al que aspirar e incorporan imágenes de alas angelicales en sus yelmos o blasones.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Principios de la Entrega|Paladín|PHB-ES|Entrega|PHB-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conjuros de juramento|Paladín|PHB-ES|Entrega|PHB-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Canalizar Divinidad: Arma Sagrada|Paladín|PHB-ES|Entrega|PHB-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Canalizar Divinidad: Expulsar lo Impío|Paladín|PHB-ES|Entrega|PHB-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Canalizar Divinidad: Arma Sagrada",
+			"source": "PHB-ES",
+			"page": 85,
+			"srd": true,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Entrega",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Como acción, puedes usar Canalizar Divinidad para imbuir de energía positiva una de las armas que estés sujetando. Durante 1 minuto, añades tu modificador por Carisma a las tiradas de ataque hechas con dicha arma (bonificador mínimo de +1). El arma también emite luz brillante en un radio de 20 pies y luz tenue 20 pies más allá. Además, si no lo era ya, el arma se convierte en mágica mientras dure este efecto.",
+				"Puedes dar por finalizado este efecto durante tu turno, como parte de cualquier otra acción. También terminará si dejas de empuñar o llevar el arma, o si caes {@condition inconsciente|PHB-ES}."
+			]
+		},
+		{
+			"name": "Canalizar Divinidad: Expulsar lo Impío",
+			"source": "PHB-ES",
+			"page": 85,
+			"srd": true,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Entrega",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Puedes utilizar Canalizar Divinidad e invertir tu acción para mostrar tu símbolo sagrado y rezar una oración que condene a los infernales y los muertos vivientes. Todos los infernales y muertos vivientes que puedan verte u oírte a 30 pies o menos de ti deben realizar una tirada de salvación de Sabiduría. Si el objetivo falla su tirada de salvación, estará expulsado durante 1 minuto o hasta recibir daño.",
+				"Una criatura expulsada deberá dedicar su turno a alejarse lo más lejos posible de ti, si es que puede, y no podrá moverse a ningún espacio a 30 pies o menos de ti. Además, tampoco será capaz de llevar a cabo reacciones. Solo puede realizar la acción de {@action Correr|PHB-ES} o intentar escapar de un efecto que le impida moverse. Si no tiene a dónde moverse, llevará a cabo la acción de {@action Esquivar|PHB-ES}."
+			]
+		},
+		{
+			"name": "Conjuros de juramento",
+			"source": "PHB-ES",
+			"page": 85,
+			"srd": true,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Entrega",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Obtienes los siguientes conjuros de juramento a los niveles de paladín indicados.",
+				{
+					"type": "table",
+					"caption": "Conjuros del Juramento de Entrega",
+					"colLabels": [
+						"Nivel del paladín",
+						"Conjuros"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell Protección contra el bien y el mal|PHB-ES|Protección contra el bien y el mal}, {@spell Santuario|PHB-ES|Santuario}"
+						],
+						[
+							"5th",
+							"{@spell Restablecimiento menor|PHB-ES|Restablecimiento menor}, {@spell Zona de la verdad|PHB-ES|Zona de la verdad}"
+						],
+						[
+							"9th",
+							"{@spell Señal de esperanza|PHB-ES|Señal de esperanza}, {@spell Disipar magia|PHB-ES|Disipar magia}"
+						],
+						[
+							"13th",
+							"{@spell Libertad de movimiento|PHB-ES|Libertad de movimiento}, {@spell Guardián de la fe|PHB-ES|Guardián de la fe}"
+						],
+						[
+							"17th",
+							"{@spell Comunión|PHB-ES|Comunión}, {@spell Golpe flamígero|PHB-ES|Golpe flamígero}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Principios de la Entrega",
+			"source": "PHB-ES",
+			"page": 85,
+			"srd": true,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Entrega",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Aunque las palabras y escrituras exactas del juramento de Entrega varían, los paladines de este juramento comparten los siguientes principios:",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Honestidad",
+							"entries": [
+								"No mientas ni engañes. Que tus palabras sean siempre promesas."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Valor",
+							"entries": [
+								"Nunca temas actuar, aunque los sabios son cautelosos."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Compasión",
+							"entries": [
+								"Ayuda a los demás, protege al débil y castiga a los que amenazan a otros. Sé compasivo con tus enemigos, pero con sabiduría."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Honor",
+							"entries": [
+								"Trata a los demás con ecuanimidad, y deja que tus hechos honorables sean un ejemplo para ellos. Haz todo el bien que este en tu mano causando el menor daño posible."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Deber",
+							"entries": [
+								"Sé responsable de tus actos y sus consecuencias, protege a aquellos a tu cargo y obedece a quienes poseen una autoridad justa sobre ti."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Aura de Entrega",
+			"source": "PHB-ES",
+			"page": 85,
+			"srd": true,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Entrega",
+			"subclassSource": "PHB-ES",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 7, ni tu ni las criaturas amistosas a 10 pies o menos de ti podéis ser {@condition hechizado|PHB-ES|hechizadas} mientras permanezcas consciente.",
+				"A nivel 18 el alcance de esta aura aumenta a 30 pies."
+			]
+		},
+		{
+			"name": "Pureza de Espíritu",
+			"source": "PHB-ES",
+			"page": 85,
+			"srd": true,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Entrega",
+			"subclassSource": "PHB-ES",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 11, estás siempre bajo los efectos de un conjuro de {@spell Protección contra el bien y el mal|PHB-ES|protección contra el bien y el mal}."
+			]
+		},
+		{
+			"name": "Halo Sagrado",
+			"source": "PHB-ES",
+			"page": 85,
+			"srd": true,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Entrega",
+			"subclassSource": "PHB-ES",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 20 puedes, como acción, emanar un aura de luz solar. Durante 1 minuto, emites luz brillante en un radio de 30 pies y luz tenue 30 pies más allá.",
+				"Cuando una criatura enemiga empiece su turno en la zona de luz brillante, sufrirá 10 de daño radiante.",
+				"Además, mientras dure este efecto tendrás ventaja en las tiradas de salvación hechas contra conjuros lanzados por infernales o muertos vivientes.",
+				"Una vez utilizado este rasgo deberás terminar un descanso largo para poder volver a usarlo otra vez."
+			]
+		},
+		{
+			"name": "Juramento de Venganza",
+			"source": "PHB-ES",
+			"page": 87,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Venganza",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"entries": [
+				"El Juramento de Venganza es el propósito solemne de castigar a aquellos que han cometido un pecado grave. Cuando las fuerzas del mal masacran a aldeanos indefensos, una comunidad entera se vuelve contra la voluntad de los dioses, un gremio de ladrones se torna excesivamente violentos y poderoso o un dragón arrasa los campos de cultivo, surgen los paladines que pronuncian el Juramento de la Venganza, decididos a enderezar aquello que se ha torcido. Para estos paladines, que a veces reciben el nombre de vengadores o caballeros oscuros, su propia pureza carece de importancia frente a la necesidad de impartir justicia.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Principios de la Venganza|Paladín|PHB-ES|Venganza|PHB-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conjuros de juramento|Paladín|PHB-ES|Venganza|PHB-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Canalizar Divinidad: Abjurar Enemigo|Paladín|PHB-ES|Venganza|PHB-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Canalizar Divinidad: Voto de Enemistad|Paladín|PHB-ES|Venganza|PHB-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Canalizar Divinidad: Abjurar Enemigo",
+			"source": "PHB-ES",
+			"page": 87,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Venganza",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Puedes utilizar Canalizar Divinidad e invertir tu acción para mostrar tu símbolo sagrado y rezar una oración de denuncia. Como acción, elige a una criatura que puedas ver a 60 pies o menos de ti. Dicha criatura, salvo que sea inmune a ser {@condition asustado|PHB-ES|asustada}, deberá hacer una tirada de salvación de Sabiduría. Los muertos vivientes y los infernales tienen desventaja en esta tirada de salvación.",
+				"Si el objetivo falla su tirada de salvación, estará {@condition asustado|PHB-ES} durante 1 minuto o hasta recibir daño. Mientras esté {@condition asustado|PHB-ES|asustada}, la velocidad de la criatura será 0 y no podrá beneficiarse de ningún bonificador a su velocidad.",
+				"Si el objetivo tiene éxito en la tirada de salvación, su velocidad se verá reducida a la mitad durante 1 minuto o hasta recibir daño."
+			]
+		},
+		{
+			"name": "Canalizar Divinidad: Voto de Enemistad",
+			"source": "PHB-ES",
+			"page": 87,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Venganza",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Como acción adicional, puedes emplear Canalizar Divinidad para pronunciar un voto de enemistad contra una criatura que puedas ver a 10 pies o menos de ti. Tienes ventaja en las tiradas de ataque contra dicho objetivo durante 1 minuto, hasta que sus puntos de golpe se reduzcan a 0 o quede {@condition inconsciente|PHB-ES}."
+			]
+		},
+		{
+			"name": "Conjuros de juramento",
+			"source": "PHB-ES",
+			"page": 87,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Venganza",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Obtienes los siguientes conjuros de juramento a los niveles de paladín indicados.",
+				{
+					"type": "table",
+					"caption": "Conjuros del Juramento de Venganza",
+					"colLabels": [
+						"Nivel del paladín",
+						"Conjuros"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell Perdición|PHB-ES|Perdición}, {@spell Marca del cazador|PHB-ES|Marca del cazador}"
+						],
+						[
+							"5th",
+							"{@spell Inmovilizar persona|PHB-ES|Inmovilizar persona}, {@spell Paso brumoso|PHB-ES|Paso brumoso}"
+						],
+						[
+							"9th",
+							"{@spell Acelerar|PHB-ES|Acelerar}, {@spell Protección contra energía|PHB-ES|Protección contra energía}"
+						],
+						[
+							"13th",
+							"{@spell Destierro|PHB-ES|Destierro}, {@spell Puerta dimensional|PHB-ES|Puerta dimensional}"
+						],
+						[
+							"17th",
+							"{@spell Inmovilizar monstruo|PHB-ES|Inmovilizar monstruo}, {@spell Escudriñar|PHB-ES|Escudriñar}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Principios de la Venganza",
+			"source": "PHB-ES",
+			"page": 87,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Venganza",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Los principios del Juramento de Venganza varían de paladín a paladín, pero todos ellos giran en torno al deseo de castigar a los criminales cueste lo que cueste. Los paladines que honran estos principios están dispuestos a sacrificar incluso su propia virtud para traer la justicia a aquellos que hacen el mal, por lo que muchos de ellos son de alineamiento neutral o legal neutral. Los pilares fundamentales de estos principios son brutalmente simples.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Combatir el mal mayor",
+							"entries": [
+								"Si tengo que elegir entre luchar contra mis enemigos jurados o combatir un mal menor, escogeré el mal mayor."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Sin piedad para los malvados",
+							"entries": [
+								"Los enemigos corrientes podrían ganarse mi misericordia, pero mis enemigos jurados jamás."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Cualquier medio que sea necesario",
+							"entries": [
+								"Mis escrúpulos no pueden interponerse en el camino al exterminio de mis enemigos."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Restituir",
+							"entries": [
+								"Si mis enemigos traen la ruina al mundo es porque fracasé intentando detenerlos. Debo ayudar a aquellos que han sufrido por culpa de mis errores."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Vengador Implacable",
+			"source": "PHB-ES",
+			"page": 87,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Venganza",
+			"subclassSource": "PHB-ES",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"Cuando alcanzas el nivel 7 tu concentración sobrenatural te permite impedir la retirada de un enemigo. Cuando impactas a una criatura con un ataque de oportunidad, puedes moverte hasta la mitad de tu velocidad inmediatamente después de haber hecho el ataque como parte de la misma reacción. Este movimiento no provoca ataques de oportunidad."
+			]
+		},
+		{
+			"name": "Espíritu Vengativo",
+			"source": "PHB-ES",
+			"page": 87,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Venganza",
+			"subclassSource": "PHB-ES",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 15, la autoridad con la que pronuncias tu Voto de Enemistad te proporciona aún más poder sobre tu enemigo. Cuando una criatura bajo los efectos de tu Voto de Enemistad ataque, podrás usar tu reacción para realizar un ataque con arma cuerpo a cuerpo contra dicho objetivo, si es que este se encuentra dentro de tu alcance."
+			]
+		},
+		{
+			"name": "Ángel Vengador",
+			"source": "PHB-ES",
+			"page": 87,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Venganza",
+			"subclassSource": "PHB-ES",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"A nivel 20 puedes asumir la forma de un ángel vengador. Puedes usar tu acción para transformarte. Obtienes los siguientes beneficios durante 1 hora:",
+				{
+					"type": "list",
+					"items": [
+						"Un par de alas surge de tu espalda y te proporcionan una velocidad volando de 60 pies.",
+						"Emanas un aura de amenaza en un radio de 30 pies. La primera vez que cualquier criatura enemiga entre en el área o comience su turno en ella, debe tener éxito en una tirada de salvación de Sabiduría o estará {@condition asustado|PHB-ES|asustada} de ti durante 1 minuto o hasta recibir daño. Las tiradas de {@action Atacar|PHB-ES|ataque} contra la criatura {@condition asustado|PHB-ES|asustada} tienen ventaja."
+					]
+				},
+				"Una vez utilizado este rasgo, deberás terminar un descanso largo para poder volver a usarlo otra vez."
+			]
+		},
+		{
+			"name": "Rompejuramentos",
+			"source": "DMG-ES",
+			"page": 97,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Rompejuramentos",
+			"subclassSource": "DMG-ES",
+			"level": 3,
+			"entries": [
+				"Un Rompejuramentos es un paladín que quebrantó sus votos sagrados para perseguir una ambición oscura o servir a un poder maligno. La luz que pudiera haber en el corazón del paladín se ha extinguido. En su lugar solo queda oscuridad.",
+				"Un paladín debe ser malvado y de, al menos, nivel 3, para convertirse en un Rompejuramentos. Sustituirá los rasgos específicos de su Juramento Sagrado por los del Rompejuramentos.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conjuros de un Rompejuramentos|Paladín|PHB-ES|Rompejuramentos|DMG-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Canalizar Divinidad: Controlar Muertos Vivientes|Paladín|PHB-ES|Rompejuramentos|DMG-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Canalizar Divinidad: Aspecto Aterrador|Paladín|PHB-ES|Rompejuramentos|DMG-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Canalizar Divinidad: Controlar Muertos Vivientes",
+			"source": "DMG-ES",
+			"page": 97,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Rompejuramentos",
+			"subclassSource": "DMG-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"El paladín utiliza una acción para elegir a una criatura muerta viviente que se encuentre a 30 pies o menos y pueda ver. El objetivo deberá hacer una tirada de salvación de Sabiduría. Si la falla, tendrá que obedecer las órdenes del paladín durante las 24 horas siguientes o hasta que este vuelva a usar esta opción de Canalizar Divinidad. Los muertos vivientes cuyo valor de desafío sea igual o superior al nivel del paladín serán inmunes a este efecto."
+			]
+		},
+		{
+			"name": "Canalizar Divinidad: Aspecto Aterrador",
+			"source": "DMG-ES",
+			"page": 97,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Rompejuramentos",
+			"subclassSource": "DMG-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"El paladín emplea una acción, canaliza sus emociones más oscuras y las concentra en un estallido de amenaza mágica. Todas las criaturas situadas a 30 pies o menos del paladín, que puedan verle y que este elija deberán realizar una tirada de salvación de Sabiduría. Si la fallan, estarán {@condition asustado|PHB-ES|asustadas} del paladín durante 1 minuto. Si una criatura {@condition asustado|PHB-ES|asustada} por este efecto termina su turno a 30 pies o más del paladín, podrá intentar hacer de nuevo la tirada de salvación de Sabiduría para librarse del efecto."
+			]
+		},
+		{
+			"name": "Conjuros de un Rompejuramentos",
+			"source": "DMG-ES",
+			"page": 97,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Rompejuramentos",
+			"subclassSource": "DMG-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Un paladín Rompejuramentos pierde todos los conjuros de juramento que hubiera ganado hasta este momento y, en lugar de eso, recibe los conjuros de Rompejuramentos de los niveles de paladín pertinentes.",
+				{
+					"type": "table",
+					"caption": "Conjuros de Rompejuramentos",
+					"colLabels": [
+						"Nivel de paladín",
+						"Conjuros"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3",
+							"{@spell infligir heridas|PHB-ES}, {@spell reprensión infernal|PHB-ES}"
+						],
+						[
+							"5",
+							"{@spell corona de la locura|PHB-ES}, {@spell oscuridad|PHB-ES}"
+						],
+						[
+							"9",
+							"{@spell animar a los muertos|PHB-ES}, {@spell imponer maldición|PHB-ES}"
+						],
+						[
+							"13",
+							"{@spell confusión|PHB-ES}, {@spell marchitar|PHB-ES}"
+						],
+						[
+							"17",
+							"{@spell contagio|PHB-ES}, {@spell dominar persona|PHB-ES}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Aura de Odio",
+			"source": "DMG-ES",
+			"page": 97,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Rompejuramentos",
+			"subclassSource": "DMG-ES",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 7, el paladín, así como todos los infernales y muertos vivientes que se encuentren a 10 pies o menos de él, reciben un bonificador igual al modificador por Carisma del paladín (mínimo de +1) a las tiradas de daño de los ataques con arma cuerpo a cuerpo. Si hay varios paladines usando este rasgo al mismo tiempo, cada criatura solo podrá beneficiarse del de uno de ellos.",
+				"A nivel 18 el alcance de esta aura aumenta a 30 pies."
+			]
+		},
+		{
+			"name": "Resistencia Sobrenatural",
+			"source": "DMG-ES",
+			"page": 97,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Rompejuramentos",
+			"subclassSource": "DMG-ES",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 15, el paladín obtiene resistencia a daño contundente, cortante y perforante de armas no mágicas."
+			]
+		},
+		{
+			"name": "Amo del Pavor",
+			"source": "DMG-ES",
+			"page": 97,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Rompejuramentos",
+			"subclassSource": "DMG-ES",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"A nivel 20, el paladín podrá, utilizando una acción para ello, rodearse de un aura de pesadumbre que durará 1 minuto. Esta aura reducirá cualquier luz brillante en un radio de 30 pies alrededor del paladín a luz tenue. Siempre que un enemigo que esté {@condition asustado|PHB-ES} del paladín empiece su turno dentro del aura, recibirá {@damage 4d10} de daño psíquico. Además, el paladín y las criaturas que este elija dentro del aura estarán arropadas en una sombra aún más profunda. Las criaturas que dependan de la vista sufrirán desventaja en las tiradas de ataque contra las criaturas envueltas en sombras.",
+				"Mientras esta aura se mantenga activa, el paladín podrá emplear una acción adicional durante su turno para que las sombras del aura ataquen a una criatura. El paladín realiza un ataque de conjuro cuerpo a cuerpo contra el objetivo. Si este impacta, el objetivo sufrirá {@dice 3d10} + el modificador por Carisma del paladín de daño necrótico.",
+				"Una vez activada el aura, el paladín no podrá volver a hacerlo hasta que finalice un descanso largo."
+			]
+		},
+		{
+			"name": "Juramento a la Corona",
+			"source": "SCAG-ES",
+			"page": 132,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Corona",
+			"subclassSource": "SCAG-ES",
+			"level": 3,
+			"entries": [
+				"El Juramento a la Corona está dedicado a los ideales de civilización, ya sea en la forma del espíritu de una nación, del vasallaje a un soberano o del servicio a un dios de la ley y el gobierno. Los paladines que hacen este juramento se dedican a servir a la sociedad y, en concreto, a las leyes justas que la mantienen unida. Son los guardianes vigilantes de los muros, que se enfrentan a las olas caóticas de barbarie que amenazan con destrozar todo lo que la civilización ha construido. Se les conoce popularmente como guardianes, parangones o centinelas. Los paladines que hacen este juramento a menudo son miembros de una orden de caballería en servicio a una nación o un soberano y hacen el juramento como parte de la admisión a las filas de la orden.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Principios de la Corona|Paladín|PHB-ES|Corona|SCAG-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conjuros de juramento|Paladín|PHB-ES|Corona|SCAG-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Canalizar Divinidad: Desafío del Campeón|Paladín|PHB-ES|Corona|SCAG-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Canalizar Divinidad: Cambio de Rumbo|Paladín|PHB-ES|Corona|SCAG-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Canalizar Divinidad: Desafío del Campeón",
+			"source": "SCAG-ES",
+			"page": 132,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Corona",
+			"subclassSource": "SCAG-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Pronuncias un desafío que obliga a otras criaturas a luchar contigo. Todas las criaturas que escojas, puedas ver y se encuentren a 30 pies o menos de ti deben realizar una tirada de salvación de Sabiduría. Si no la supera, una criatura no se podrá mover por voluntad propia a más de 30 pies de ti. El efecto deja de afectar a la criatura si te {@condition incapacitado|PHB-ES|incapacitan}, si mueres o si la criatura es trasladada a más de 30 pies de ti."
+			]
+		},
+		{
+			"name": "Canalizar Divinidad: Cambio de Rumbo",
+			"source": "SCAG-ES",
+			"page": 132,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Corona",
+			"subclassSource": "SCAG-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Como acción adicional, puedes levantar la moral de las criaturas heridas usando Canalizar Divinidad. Todas las criaturas que escojas, puedan escucharte y estén situadas a 30 pies o menos de ti recuperan hasta {@dice 1d6} + tu modificador de Carisma (1 como mínimo) puntos de golpe si tienen la mitad de sus puntos de golpe máximos o menos."
+			]
+		},
+		{
+			"name": "Conjuros de juramento",
+			"source": "SCAG-ES",
+			"page": 132,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Corona",
+			"subclassSource": "SCAG-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Obtienes los siguientes conjuros de juramento a los niveles de paladín indicados.",
+				{
+					"type": "table",
+					"caption": "Conjuros del Juramento a la Corona",
+					"colLabels": [
+						"Nivel de paladín",
+						"Conjuros"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3",
+							"{@spell duelo forzado|PHB-ES}, {@spell orden imperiosa|PHB-ES}"
+						],
+						[
+							"5",
+							"{@spell vínculo protector|PHB-ES}, {@spell zona de la verdad|PHB-ES}"
+						],
+						[
+							"9",
+							"{@spell aura de vitalidad|PHB-ES}, {@spell espíritus guardianes|PHB-ES}"
+						],
+						[
+							"13",
+							"{@spell destierro|PHB-ES}, {@spell guardián de la fe|PHB-ES}"
+						],
+						[
+							"17",
+							"{@spell círculo de poder|PHB-ES}, {@spell geas|PHB-ES}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Principios de la Corona",
+			"source": "SCAG-ES",
+			"page": 132,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Corona",
+			"subclassSource": "SCAG-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Los principios del Juramento a la Corona a menudo los determina el monarca al que se hace el juramento, pero se suelen enfatizar estos principios.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Ley",
+							"entries": [
+								"La ley es primordial. Es la argamasa que une las piedras de la civilización y se debe respetar."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Lealtad",
+							"entries": [
+								"Tu palabra es tu compromiso. Sin lealtad, los juramentos y las leyes no tienen sentido."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Valor",
+							"entries": [
+								"Debes estar dispuesto a hacer lo que es necesario por el bien del orden, incluso con todo en contra. Si no haces nada, ¿quién lo hará?"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Responsabilidad",
+							"entries": [
+								"Debes enfrentarte a las consecuencias de tus actos. Eres responsable de cumplir con tus deberes y obligaciones."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Lealtad Divina",
+			"source": "SCAG-ES",
+			"page": 132,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Corona",
+			"subclassSource": "SCAG-ES",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"A partir del nivel 7, cuando una criatura que se encuentre a 5 pies o menos de ti reciba daño, puedes usar tu reacción para sustituir mágicamente tu salud por la de la criatura objetivo, lo que provoca que esa criatura no reciba daño. Tú recibes el daño en su lugar, y este daño no puede ser reducido ni prevenido de ninguna manera."
+			]
+		},
+		{
+			"name": "Espíritu Inflexible",
+			"source": "SCAG-ES",
+			"page": 132,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Corona",
+			"subclassSource": "SCAG-ES",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"A partir del nivel 15, tienes ventaja en las tiradas de salvación para evitar que ser {@condition paralizado|PHB-ES} o {@condition aturdido|PHB-ES}."
+			]
+		},
+		{
+			"name": "Campeón Glorificado",
+			"source": "SCAG-ES",
+			"page": 132,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Corona",
+			"subclassSource": "SCAG-ES",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"A nivel 20, tu presencia en el campo de batalla es una inspiración para los dedicados a tu causa. Puedes usar tu acción para obtener los beneficios siguientes durante 1 hora:",
+				{
+					"type": "list",
+					"items": [
+						"Tienes resistencia al daño contundente, cortante y perforante de armas no mágicas.",
+						"Tus aliados tienen ventaja en las tiradas de salvación contra muerte cuando están a 30 pies o menos de ti.",
+						"Tus aliados tienen ventaja en las tiradas de salvación de Sabiduría cuando están a 30 pies o menos de ti."
+					]
+				},
+				"Este efecto acaba si te {@condition incapacitado|PHB-ES|incapacitan} o mueres. Una vez utilizado este rasgo, deberás terminar un descanso largo para poder volver a usarlo."
+			]
+		},
+		{
+			"name": "Juramento de Conquista",
+			"source": "XGE-ES",
+			"page": 37,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Conquista",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"El Juramento de Conquista atrae a los paladines que buscan la gloria en batalla y el sometimiento de sus enemigos. Para ellos no es suficiente con establecer el orden; deben aplastar a las fuerzas del caos. A veces llamados caballeros tiranos o señores del hierro, los que realizan este juramento se unen en sombrías órdenes que sirven a dioses o ideologías de guerra, poder y orden.",
+				"Algunos de estos paladines llegan incluso a unirse con poderes de los Nueve Infiernos, valorando el puño de hierro de la ley por encima del bálsamo de la clemencia. El archidiablo Bel, señor de la guerra del Averno, cuenta con muchos de estos paladines, llamados caballeros infernales, entre sus más fieles partidarios. Los caballeros infernales cubren su armadura con trofeos tomados de enemigos caídos, una lúgubre advertencia para los que osen oponerse a ellos y los deseos de sus señores. Estos caballeros se enfrentan a mucha oposición por parte de otros paladines de su juramento, ya que creen que los caballeros infernales se han aventurado demasiado en la oscuridad.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Principios de la Conquista|Paladín|PHB-ES|Conquista|XGE-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conjuros de juramento|Paladín|PHB-ES|Conquista|XGE-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Canalizar Divinidad: Presencia de Conquistador|Paladín|PHB-ES|Conquista|XGE-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Canalizar Divinidad: Golpe Guiado|Paladín|PHB-ES|Conquista|XGE-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Canalizar Divinidad: Presencia de Conquistador",
+			"source": "XGE-ES",
+			"page": 37,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Conquista",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Puedes usar tu Canalizar Divinidad para proyectar una presencia terrorífica. Como acción, puedes forzar a todas las criaturas de tu elección que puedas ver y se encuentren a 30 pies o menos de ti a realizar una tirada de salvación de Sabiduría. Las que fallen quedarán {@condition asustado|PHB-ES|asustadas} de ti durante 1 minuto. Un objetivo {@condition asustado|PHB-ES} puede repetir la tirada de salvación al final de cada uno de sus turnos, librándose del efecto si tiene éxito."
+			]
+		},
+		{
+			"name": "Canalizar Divinidad: Golpe Guiado",
+			"source": "XGE-ES",
+			"page": 37,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Conquista",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Puedes utilizar tu Canalizar Divinidad para atacar con una precisión sobrenatural. Cuando hagas una tirada de ataque, podrás usar tu Canalizar Divinidad para sumar +10 al resultado de dicha tirada. Puedes elegir emplear este rasgo después de ver el resultado de la tirada, pero antes de que el DM te diga si el ataque impacta o no."
+			]
+		},
+		{
+			"name": "Conjuros de juramento",
+			"source": "XGE-ES",
+			"page": 37,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Conquista",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Consigues conjuros de juramento en los niveles de paladín indicados en la tabla \"Conjuros del Juramento de Conquista\". Puedes consultar el rasgo de clase Juramento Sagrado para ver cómo funcionan los conjuros de juramento.",
+				{
+					"type": "table",
+					"caption": "Conjuros del Juramento de Conquista",
+					"colLabels": [
+						"Nivel de paladín",
+						"Conjuros"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3",
+							"{@spell armadura de Agathys|PHB-ES}, {@spell orden imperiosa|PHB-ES}"
+						],
+						[
+							"5",
+							"{@spell arma espiritual|PHB-ES}, {@spell inmovilizar persona|PHB-ES}"
+						],
+						[
+							"9",
+							"{@spell imponer maldición|PHB-ES}, {@spell terror|PHB-ES}"
+						],
+						[
+							"13",
+							"{@spell dominar bestia|PHB-ES}, {@spell piel pétrea|PHB-ES}"
+						],
+						[
+							"17",
+							"{@spell dominar persona|PHB-ES}, {@spell nube aniquiladora|PHB-ES}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Principios de la Conquista",
+			"source": "XGE-ES",
+			"page": 37,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Conquista",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Al paladín que toma este juramento se le marcan con fuego los principios de la conquista en el brazo.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Apaga la llama de la esperanza",
+							"entries": [
+								"No es suficiente con derrotar a un enemigo en batalla; tu victoria debe ser tan aplastante que la voluntad de luchar de tus oponentes quede aplastada para siempre. Una espada puede terminar con una vida. El miedo puede acabar con un imperio."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Gobernar con puño de hierro",
+							"entries": [
+								"Una vez hayas conquistado, no toleres la disensión. Tu palabra es la ley. Los que la obedezcan serán favorecidos. Los que la desafíen serán castigados como ejemplo para los que puedan venir."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Fuerza por encima de todo",
+							"entries": [
+								"Regirás hasta que se alce uno más fuerte. En ese momento deberás volverte más poderoso y enfrentarte al desafío o caerás en tu ruina."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Aura de Conquista",
+			"source": "XGE-ES",
+			"page": 37,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Conquista",
+			"subclassSource": "XGE-ES",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 7, emanas constantemente un aura de amenaza cuando no estás {@condition incapacitado|PHB-ES}. Esta se extiende hasta 10 pies desde ti en todas direcciones, pero no a través de cobertura completa.",
+				"Si una criatura está {@condition asustado|PHB-ES|asustada} de ti, su velocidad se reduce a 0 mientras permanezca en el aura y, además, recibirá daño psíquico igual a la mitad de tu nivel de paladín si comienza su turno dentro de ella.",
+				"A nivel 18 el alcance del aura aumenta a 30 pies."
+			]
+		},
+		{
+			"name": "Reprimenda Despreciativa",
+			"source": "XGE-ES",
+			"page": 37,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Conquista",
+			"subclassSource": "XGE-ES",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"A nivel 15, aquellos que osen atacarte serán castigados psíquicamente por su audacia. Cuando una criatura te impacte con un ataque, sufrirá daño psíquico igual a tu modificador de Carisma (mínimo 1) si no estás {@condition incapacitado|PHB-ES}."
+			]
+		},
+		{
+			"name": "Conquistador Invencible",
+			"source": "XGE-ES",
+			"page": 37,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Conquista",
+			"subclassSource": "XGE-ES",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"A nivel 20 tienes la capacidad de manifestar proezas marciales extraordinarias durante un tiempo limitado. Como acción, puedes convertirte mágicamente en un avatar de la conquista, obteniendo los siguientes beneficios durante 1 minuto:",
+				{
+					"type": "list",
+					"items": [
+						"Tienes resistencia a todo el daño.",
+						"Cuando empleas la acción de {@action Atacar|PHB-ES} tu turno, puedes realizar un ataque adicional como parte de esa acción.",
+						"Tus ataques con arma cuerpo a cuerpo causan críticos con resultados de 19 o 20 en el {@dice d20}."
+					]
+				},
+				"Una vez utilizado este rasgo, deberás terminar un descanso largo para poder volver a usarlo."
+			]
+		},
+		{
+			"name": "Juramento de Redención",
+			"source": "XGE-ES",
+			"page": 38,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Redención",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"El Juramento de Redención sitúa al paladín en un camino difícil, ya que exige a este guerrero sagrado que solo utilice la violencia como último recurso. Aquellos que se encomiendan a este juramento creen que cualquier persona puede ser redimida, por lo que el camino de la benevolencia y la justicia es uno que todos pueden recorrer. Estos paladines se enfrentan a criaturas malvadas con la esperanza de convertirlas a la luz, de modo que solo matan a sus enemigos cuando esta acción salvará inequívocamente otras vidas. Los que siguen este juramento son conocidos como redentores.",
+				"Aunque los redentores son idealistas, no son tontos. Entienden que los muertos vivientes, demonios, diablos y otras amenazas sobrenaturales pueden ser inherentemente malvados. Contra estos adversarios, los paladines así juramentados descargan todo el peso de su ira, mediante armas y conjuros. A pesar de ello, los redentores rezan para que, algún día, incluso las criaturas de pura maldad lleguen a su propia redención.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Principios de la Redención|Paladín|PHB-ES|Redención|XGE-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conjuros de Juramento|Paladín|PHB-ES|Redención|XGE-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Canalizar Divinidad: Emisario de Paz|Paladín|PHB-ES|Redención|XGE-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Canalizar Divinidad: Reprender a los Violentos|Paladín|PHB-ES|Redención|XGE-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Canalizar Divinidad: Emisario de Paz",
+			"source": "XGE-ES",
+			"page": 38,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Redención",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Puedes usar tu Canalizar Divinidad para hacer más intensa tu presencia mediante el poder divino. Como acción adicional, puedes obtener un bonificador de +5 a las pruebas de Carisma ({@skill Persuasion|Persuasión}) durante los próximos 10 minutos."
+			]
+		},
+		{
+			"name": "Canalizar Divinidad: Reprender a los Violentos",
+			"source": "XGE-ES",
+			"page": 38,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Redención",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Puedes utilizar tu Canalizar Divinidad para reprender a los que recurran a la violencia. Inmediatamente después de que un atacante situado a 30 pies o menos de ti inflija daño con un ataque a una criatura distinta a ti, puedes emplear tu reacción para forzar al atacante a realizar una tirada de salvación de Sabiduría. Si falla, recibirá tanto daño radiante como el daño que acaba de infligir. Si la supera, sufre la mitad del daño."
+			]
+		},
+		{
+			"name": "Conjuros de Juramento",
+			"source": "XGE-ES",
+			"page": 38,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Redención",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Consigues conjuros de juramento en los niveles de paladín indicados en la tabla \"Conjuros del Juramento de Redención\". Puedes consultar el rasgo de clase Juramento Sagrado para ver cómo funcionan los conjuros de juramento.",
+				{
+					"type": "table",
+					"caption": "Conjuros del Juramento de Redención",
+					"colLabels": [
+						"Nivel de paladín",
+						"Conjuros"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3",
+							"{@spell dormir|PHB-ES}, {@spell santuario|PHB-ES}"
+						],
+						[
+							"5",
+							"{@spell calmar emociones|PHB-ES}, {@spell inmovilizar persona|PHB-ES}"
+						],
+						[
+							"9",
+							"{@spell contrahechizo|PHB-ES}, {@spell patrón hipnótico|PHB-ES}"
+						],
+						[
+							"13",
+							"{@spell esfera elástica de Otiluke|PHB-ES}, {@spell piel pétrea|PHB-ES}"
+						],
+						[
+							"17",
+							"{@spell inmovilizar monstruo|PHB-ES}, {@spell muro de fuerza|PHB-ES}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Principios de la Redención",
+			"source": "XGE-ES",
+			"page": 38,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Redención",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Los principios del Juramento de Redención atan a los paladines a unos criterios estrictos de paz y justicia.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Paz",
+							"entries": [
+								"La violencia es el último recurso. La diplomacia y la comprensión son el camino a la paz duradera."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Inocencia",
+							"entries": [
+								"Todas las personas comienzan su vida en un estado de inocencia. Es su entorno o la influencia de fuerzas oscuras lo que las lleva hacia el mal. Dar ejemplo y trabajar para curar las heridas de este mundo imperfecto puede conseguir que cualquiera vuelva al camino recto."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Paciencia",
+							"entries": [
+								"El cambio lleva tiempo. A los que han caminado por la senda de los malvados hay que recordarles que se mantengan honestos y veraces. Una vez has plantado la semilla de la virtud en una criatura, debes trabajar día tras día para permitir que esta sobreviva y florezca."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Sabiduría",
+							"entries": [
+								"Tu corazón y tu mente deben permanecer claros, porque antes o después te verás obligado a admitir la derrota. Aunque cualquier criatura puede ser redimida, algunas han viajado tanto por el camino del mal que no tienes más remedio que terminar con su vida por el bien mayor. Cualquier acción de este tipo ha de ser sopesada con cuidado, y sus consecuencias consideradas por completo, pero una vez hayas tomado la decisión haz lo que debes sabiendo que tu camino es justo."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Aura del Guardián",
+			"source": "XGE-ES",
+			"page": 38,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Redención",
+			"subclassSource": "XGE-ES",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"A nivel 7, puedes proteger a otros del daño a expensas de tu propia salud. Cuando una criatura que se encuentre a 10 pies o menos de ti recibe daño, puedes usar tu reacción para recibir mágicamente ese daño, en vez de que lo sufra esa criatura. Este rasgo no transfiere ningún otro efecto que pueda acompañar al daño y, además, este daño no puede ser reducido de ninguna manera.",
+				"A nivel 18 el alcance de esta aura aumenta a 30 pies."
+			]
+		},
+		{
+			"name": "Espíritu Protector",
+			"source": "XGE-ES",
+			"page": 38,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Redención",
+			"subclassSource": "XGE-ES",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 15, una presencia sagrada cura tus heridas en batalla. Recuperas {@dice 1d6} + la mitad de tu nivel de paladín puntos de golpe si terminas tu turno en combate con menos de la mitad de tus puntos de golpe y no estás {@condition incapacitado|PHB-ES}."
+			]
+		},
+		{
+			"name": "Emisario de Redención",
+			"source": "XGE-ES",
+			"page": 38,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Redención",
+			"subclassSource": "XGE-ES",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"A nivel 20 te conviertes en un avatar de la paz, lo que te proporciona los siguientes beneficios:",
+				{
+					"type": "list",
+					"items": [
+						"Tienes resistencia al daño infligido por otras criaturas (sus ataques, conjuros y otros efectos).",
+						"Cuando una criatura te impacta con un ataque, recibe daño igual a la mitad del daño que tú recibas del ataque."
+					]
+				},
+				"Si atacas a una criatura, lanzas un conjuro sobre ella o le haces daño de cualquier manera distinta a este rasgo, ninguno de sus beneficios funcionará contra esa criatura hasta que completes un descanso largo."
+			]
+		}
+	]
+}

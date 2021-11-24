@@ -1,0 +1,1957 @@
+{
+	"_meta": {
+		"dependencies": {
+			"subclass": [
+				"generic"
+			]
+		}
+	},
+	"class": [
+		{
+			"name": "Brujo",
+			"source": "PHB-ES",
+			"page": 105,
+			"srd": true,
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"wis",
+				"cha"
+			],
+			"spellcastingAbility": "cha",
+			"casterProgression": "pact",
+			"cantripProgression": [
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4
+			],
+			"spellsKnownProgression": [
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				10,
+				11,
+				11,
+				12,
+				12,
+				13,
+				13,
+				14,
+				14,
+				15,
+				15
+			],
+			"spellsKnownProgressionFixedByLevel": {
+				"11": {
+					"6": 1
+				},
+				"13": {
+					"7": 1
+				},
+				"15": {
+					"8": 1
+				},
+				"17": {
+					"9": 1
+				}
+			},
+			"optionalfeatureProgression": [
+				{
+					"name": "Invocaciones Sobrenaturales",
+					"featureType": "EI_Esp",
+					"progression": [
+						0,
+						2,
+						2,
+						2,
+						3,
+						3,
+						4,
+						4,
+						5,
+						5,
+						5,
+						6,
+						6,
+						6,
+						7,
+						7,
+						7,
+						8,
+						8,
+						8
+					]
+				}
+			],
+			"startingProficiencies": {
+				"armor": [
+					{
+						"proficiency": "light",
+						"full": "{@filter armaduras ligeras|items|source=PHB-ES|type=light armor}"
+					}
+				],
+				"weapons": [
+					"{@filter armas sencillas|items|source=PHB-ES|type=simple weapon}"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"arcana|conocimiento arcano",
+								"deception|engaño",
+								"history|historia",
+								"intimidation|intimidación",
+								"investigation|investigación",
+								"nature|naturaleza",
+								"religion|religión"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) una {@item ballesta ligera|PHB-ES} y {@item Virotes de ballesta (20)|PHB-ES|20 virotes} o (b) cualquier {@filter arma sencilla|items|source=PHB-ES|type=simple weapon}",
+					"(a) un {@item saquito de componentes|PHB-ES} o (b) un {@item canalizadores arcanos|PHB-ES|canalizador arcano}",
+					"(a) un {@item paquete de erudito|PHB-ES} o (b) un {@item paquete de explorador de mazmorras|PHB-ES}",
+					"{@item Armadura de cuero|PHB-ES}, cualquier {@filter arma sencilla|items|source=PHB-ES|type=simple weapon} y dos {@item daga|PHB-ES|dagas}"
+				],
+				"goldAlternative": "{@dice 4d4 × 10|4d4 × 10|Starting Gold}",
+				"defaultData": [
+					{
+						"a": [
+							"ballesta ligera|PHB-ES",
+							"virotes de ballesta (20)|PHB-ES"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					},
+					{
+						"a": [
+							"saquito de componentes|PHB-ES"
+						],
+						"b": [
+							"canalizadores arcanos|PHB-ES"
+						]
+					},
+					{
+						"a": [
+							"scholar's pack|PHB-ES"
+						],
+						"b": [
+							"paquete de explorador de mazmorras|PHB-ES"
+						]
+					},
+					{
+						"_": [
+							"Armadura de cuero|PHB-ES",
+							{
+								"equipmentType": "weaponSimple"
+							},
+							{
+								"item": "daga|PHB-ES",
+								"quantity": 2
+							}
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"cha": 13
+				},
+				"proficienciesGained": {
+					"armor": [
+						{
+							"proficiency": "light",
+							"full": "{@filter armaduras ligeras|items|source=PHB-ES|type=light armor}"
+						}
+					],
+					"weapons": [
+						"{@filter armas sencillas|items|source=PHB-ES|type=simple weapon}"
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"{@filter Trucos conocidos|spells|level=0|class=Brujo (PHB-ES)}",
+						"{@filter Conjuros conocidos|spells|class=Brujo (PHB-ES)}",
+						"Espacios de conjuro",
+						"Nivel de los espacios",
+						"{@filter Invocaciones conocidas|optionalfeatures|feature type=EI_Esp}"
+					],
+					"rows": [
+						[
+							2,
+							2,
+							1,
+							"{@filter 1|spells|level=1|class=Brujo (PHB-ES)}",
+							0
+						],
+						[
+							2,
+							3,
+							2,
+							"{@filter 1|spells|level=1|class=Brujo (PHB-ES)}",
+							2
+						],
+						[
+							2,
+							4,
+							2,
+							"{@filter 2|spells|level=2|class=Brujo (PHB-ES)}",
+							2
+						],
+						[
+							3,
+							5,
+							2,
+							"{@filter 2|spells|level=2|class=Brujo (PHB-ES)}",
+							2
+						],
+						[
+							3,
+							6,
+							2,
+							"{@filter 3|spells|level=3|class=Brujo (PHB-ES)}",
+							3
+						],
+						[
+							3,
+							7,
+							2,
+							"{@filter 3|spells|level=3|class=Brujo (PHB-ES)}",
+							3
+						],
+						[
+							3,
+							8,
+							2,
+							"{@filter 4|spells|level=4|class=Brujo (PHB-ES)}",
+							4
+						],
+						[
+							3,
+							9,
+							2,
+							"{@filter 4|spells|level=4|class=Brujo (PHB-ES)}",
+							4
+						],
+						[
+							3,
+							10,
+							2,
+							"{@filter 5|spells|level=5|class=Brujo (PHB-ES)}",
+							5
+						],
+						[
+							4,
+							10,
+							2,
+							"{@filter 5|spells|level=5|class=Brujo (PHB-ES)}",
+							5
+						],
+						[
+							4,
+							11,
+							3,
+							"{@filter 5|spells|level=5|class=Brujo (PHB-ES)}",
+							5
+						],
+						[
+							4,
+							11,
+							3,
+							"{@filter 5|spells|level=5|class=Brujo (PHB-ES)}",
+							6
+						],
+						[
+							4,
+							12,
+							3,
+							"{@filter 5|spells|level=5|class=Brujo (PHB-ES)}",
+							6
+						],
+						[
+							4,
+							12,
+							3,
+							"{@filter 5|spells|level=5|class=Brujo (PHB-ES)}",
+							6
+						],
+						[
+							4,
+							13,
+							3,
+							"{@filter 5|spells|level=5|class=Brujo (PHB-ES)}",
+							7
+						],
+						[
+							4,
+							13,
+							3,
+							"{@filter 5|spells|level=5|class=Brujo (PHB-ES)}",
+							7
+						],
+						[
+							4,
+							14,
+							4,
+							"{@filter 5|spells|level=5|class=Brujo (PHB-ES)}",
+							7
+						],
+						[
+							4,
+							14,
+							4,
+							"{@filter 5|spells|level=5|class=Brujo (PHB-ES)}",
+							8
+						],
+						[
+							4,
+							15,
+							4,
+							"{@filter 5|spells|level=5|class=Brujo (PHB-ES)}",
+							8
+						],
+						[
+							4,
+							15,
+							4,
+							"{@filter 5|spells|level=5|class=Brujo (PHB-ES)}",
+							8
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"Magia del Pacto|Brujo|PHB-ES|1",
+				{
+					"classFeature": "Patrón Sobrenatural|Brujo|PHB-ES|1",
+					"gainSubclassFeature": true
+				},
+				"Invocaciones Sobrenaturales|Brujo|PHB-ES|2",
+				"Beneficio del Pacto|Brujo|PHB-ES|3",
+				"Mejora de Característica|Brujo|PHB-ES|4",
+				{
+					"classFeature": "Rasgo de Patrón Sobrenatural|Brujo|PHB-ES|6",
+					"gainSubclassFeature": true
+				},
+				"Mejora de Característica|Brujo|PHB-ES|8",
+				{
+					"classFeature": "Rasgo de Patrón Sobrenatural|Brujo|PHB-ES|10",
+					"gainSubclassFeature": true
+				},
+				"Arcanum Místico (nivel 6)|Brujo|PHB-ES|11",
+				"Mejora de Característica|Brujo|PHB-ES|12",
+				"Arcanum Místico (nivel 7)|Brujo|PHB-ES|13",
+				{
+					"classFeature": "Rasgo de Patrón Sobrenatural|Brujo|PHB-ES|14",
+					"gainSubclassFeature": true
+				},
+				"Arcanum Místico (nivel 8)|Brujo|PHB-ES|15",
+				"Mejora de Característica|Brujo|PHB-ES|16",
+				"Arcanum Místico (nivel 9)|Brujo|PHB-ES|17",
+				"Mejora de Característica|Brujo|PHB-ES|19",
+				"Maestro Sobrenatural|Brujo|PHB-ES|20"
+			],
+			"subclassTitle": "Patrones sobrenaturales",
+			"fluff": [
+				{
+					"name": "Brujo",
+					"type": "section",
+					"entries": [
+						"Envuelto en una túnica dorada y con su pseudodragón enroscado en torno al hombro, un joven elfo sonríe con calidez, tejiendo un encantamiento mágico en sus melifluas palabras y doblegando a los centinelas de palacio a su voluntad.",
+						"Mientras las llamas cobran vida en sus manos, una marchita humana susurra el nombre secreto de su patrón demoníaco, que como respuesta llena el conjuro de magia infernal.",
+						"Un tiefling de ojos salvajes levanta la vista de un maltratado tomo para observar el extraño alineamiento estelar que brilla en el ciclo. Sus labios pronuncian las salmodias de un ritual místico, que abrirá un portal a un mundo remoto.",
+						"Los brujos buscan el conocimiento que yace escondido tras el tejido mismo del multiverso. A través de pactos forjados con misteriosos seres de poder sobrenatural, desvelan efectos mágicos sutiles y espectaculares a partes iguales. A partir del conocimiento ancestral poseído por entidades como nobles feéricos, demonios, diablos, sagas o los extraños seres del Reino Lejano, los brujos descubren secretos arcanos que refuerzan sus propios poderes.",
+						{
+							"type": "entries",
+							"name": "Atados por un pacto",
+							"entries": [
+								"Cada brujo se define por el pacto que ha forjado con un ser sobrenatural. A veces la relación entre un brujo y su patrón es similar a la de un clérigo con su deidad, aunque las entidades con las que los brujos pactan no son dioses. Un brujo podría liderar una secta dedicada a un príncipe demonio, un archidiablo o un ente fuera de la comprensión humana; todos ellos ejemplos de amos a los que los clérigos no suelen servir. De hecho, en la mayoría de los casos la relación es más asimilable a la de un maestro y su aprendiz. El brujo aprende y desarrolla sus poderes y, a cambio, hace servicios puntuales en nombre de su patrón.",
+								"La magia conferida a un brujo puede manifestarse en forma de pequeñas alteraciones sobre el propio brujo (como la facultad para ver en la oscuridad o leer cualquier idioma) o en la capacidad para acceder a conjuros poderosos. A diferencia de los estudiosos magos, los brujos complementan su magia con cierta aptitud para el combate cuerpo a cuerpo. Se encuentran cómodos con armaduras ligeras y saben utilizar armas sencillas."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Exploradores de secretos",
+							"entries": [
+								"Los brujos están movidos por un insaciable deseo de conocimiento y poder, que les insta a forjar sus pactos y marca sus vidas. Es un ansia que acaba determinando su destino.",
+								"Existen abundantes historias sobre brujos que se atan a infernales, pero también los hay que sirven a otro tipo de patrones. Cabe la posibilidad de que un viajero se encuentre, en medio de la naturaleza, una torre extrañamente hermosa, conozca al señor (o señora) feérico que la habita y cierre un pacto con él sin ser totalmente consciente de lo que ha hecho. Y a veces, mientras estudia detenidamente tomos de conocimiento prohibido, la brillante pero enloquecida mente de un estudiante se abre a realidades más allá del mundo material y a las entidades alienígenas que habitan en el vacío exterior.",
+								"Una vez cerrado un pacto, el ansia por el conocimiento y poder de un brujo no puede ser saciada únicamente por el estudio y la investigación. Nadie forja un acuerdo con un patrón de tamaño poderío si no planea dar uso a los regalos recibidos. Es más, la mayoría de los brujos pasan los días persiguiendo activamente sus objetivos, lo que suele implicar partir de aventuras. De hecho, suelen ser las demandas de sus patrones lo que muchas veces les empuja a convertirse en aventureros."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creación de un brujo",
+							"entries": [
+								"Cuando crees tú brujo, dedica un tiempo a pensar en tu patrón y las obligaciones que tu pacto te impone. ¿Qué te llevo a forjar el pacto? ¿Como contactaste con tu patrón? Quizá fuiste tentado para invocar un diablo, o buscaste tú mismo el ritual que te permitió contactar con una antigua deidad alienígena. ¿Buscaste tú a tu patrón o te encontró y escogió él a ti? ¿Te irritan las responsabilidades de tu pacto o sirves a tu señor con alegría, esperando con impaciencia las recompensas prometidas?",
+								"Habla con tu DM para decidir hasta qué punto el pacto desempeñará un papel en la carrera como aventurero de tu personaje. Las demandas de tu patrón podrían conducirte a aventuras o, por el contrario, limitarse a pequeños favores que puedes realizar entre ellas.",
+								"¿Qué tipo de relación mantienes con tu patrón? Puede ser amistosa, antagónica, incomoda o incluso romántica. ¿Cuán importante es para ti tu patrón, ¿qué papel juegas en sus planes?, ¿conoces a algún otro de sus siervos?, ¿cómo se comunica contigo? Si posees un familiar, tu patrón podría hablar a través de sus labios de vez en cuando. Algunos brujos encuentran mensajes de sus patrones grabados en los árboles, entre los posos del té o dibujados por las nubes; misivas que solo el propio brujo puede percibir. Otros patrones conversan con sus siervos a través de sueños o visiones, y los hay que incluso se limitan a interactuar mediante intermediarios.",
+								{
+									"type": "entries",
+									"name": "Creación rápida",
+									"entries": [
+										"Para crear un brujo de forma rápida sugerimos lo siguiente. Para empezar, Carisma debería ser tu característica más alta, seguida de Constitución. A continuación, elige el trasfondo \"{@background charlatan|PHB-ES|charlatán}\". Después, escoge los trucos {@spell Descarga sobrenatural|PHB-ES|descarga sobrenatural} y {@spell Toque helado|PHB-ES|toque helado} y los siguientes conjuros de nivel 1: {@spell Hechizar persona|PHB-ES|hechizar persona} y {@spell Rayo de hechicería|PHB-ES|rayo de hechicería}."
+									]
+								}
+							]
+						}
+					],
+					"page": 105,
+					"source": "PHB-ES"
+				},
+				{
+					"type": "section",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"¿Crees que estoy loco? La verdadera locura es conformarse con vivir una vida mortal de monotonía y aburrimiento cuando el poder y el conocimiento están a tu alcance en el reino del más allá."
+							],
+							"by": "Xarren, heraldo de Acamar"
+						},
+						"Los brujos encuentran y guardan secretos. Amplían los horizontes de nuestro conocimiento del mundo, siempre en búsqueda de expandir su habilidad. Allí donde un sabio o un mago hará caso de un obvio signo de peligro y dará por terminada su investigación, un brujo se lanzará hacia delante, sin importar el coste. Es por tanto necesario contar con una mezcla particular de inteligencia, curiosidad e insensatez para poder convertirse en un miembro de esta clase. Muchos dirían que esa combinación es una prueba de su locura, pero para un brujo es una prueba de su valentía.",
+						"Los brujos siempre están definidos por dos elementos, que trabajan conjuntamente para forjar su camino dentro de esta clase. El primero es el evento o circunstancia que llevó a que el individuo forjara un pacto con una entidad planar. La segunda es la naturaleza de este patrón con el que el brujo queda vinculado. A diferencia de un clérigo. que normalmente adopta la ética y principios de una deidad, un brujo no tiene por qué sentir nada por su patrón, ni viceversa.",
+						"Los siguientes apartados proporcionan maneras de enriquecer a un personaje brujo, creando interesantes oportunidades narrativas y de interpretación.",
+						{
+							"type": "entries",
+							"name": "Actitud del patrón",
+							"entries": [
+								"Toda relación es un camino de doble sentido, pero en el caso de los brujos y sus patrones no es necesariamente cierto que ambos lados del camino sean del mismo ancho o estén hechos del mismo material. Los sentimientos que un brujo tenga hacia su patrón, ya sean positivos o negativos, pueden ser recíprocos o contrarios desde el punto de vista de la otra parte.",
+								"Cuando determines la actitud que tu personaje brujo mantiene respecto a su patrón, considera también el punto de vista de este. ¿Cómo se comporta tu patrón contigo? ¿Es tu patrón un amigo o aliado o, por el contrario, un enemigo que te otorga poder porque le forzaste a aceptar un pacto?",
+								{
+									"type": "table",
+									"caption": "Actitudes del patrón",
+									"colLabels": [
+										"{@dice d6}",
+										"Actitud"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Tu patrón ha guiado y ayudado a tu familia durante generaciones, por lo que es amable contigo."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"Cualquier interacción con tu caprichoso patrón es una sorpresa, agradable o dolorosa."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Tu patrón es el espíritu de un héroe muerto hace tiempo, que ve su pacto contigo como una manera de continuar su influencia en el mundo."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"Tu patrón es de disciplina rígida, pero te trata con cierto respeto."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"Tu patrón te engañó para aceptar el pacto y te trata como a un esclavo."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Tu patrón te deja a tu aire, sin interferencia. A veces temes las peticiones que hará cuando aparezca."
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Términos especiales del pacto",
+							"entries": [
+								"Un pacto puede ser desde un acuerdo de términos imprecisos hasta un contrato formal con largas y detalladas cláusulas y listas de requisitos. Sus términos (lo que el brujo debe hacer para recibir el favor de la entidad sobrenatural) son siempre dictados por el patrón. En ocasiones, incluyen disposiciones especiales que pueden parecer caprichosas o extrañas, pero los brujos se las toman tan en serio como el resto de requisitos de sus pactos.",
+								"¿Tiene tu personaje un acuerdo que le obliga a cambiar de comportamiento de una manera inusual o aparentemente frívola? Incluso si tu patrón aún no te ha impuesto una de estas obligaciones, eso no quiere decir que no vaya a pasar.",
+								{
+									"type": "table",
+									"caption": "Términos especiales",
+									"colLabels": [
+										"{@dice d6}",
+										"Término"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Cuando se te indique, debes tomar acciones inmediatas contra un enemigo específico de tu patrón."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"Tu pacto pone a prueba tu fuerza de voluntad: estás obligado a no tomar alcohol ni estupefacientes."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Por lo menos una vez al día has de inscribir o grabar el símbolo o nombre de tu patrón en el muro de un edificio."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"De vez en cuando debes llevar a cabo extravagantes rituales para mantener tu pacto."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"Nunca puedes repetir tu atuendo, ya que tu patrón considera que ser predecible es ser aburrido."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Cuando utilizas una invocación sobrenatural, has de decir el nombre de tu patrón en voz alta o arriesgarte a atraer su ira."
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Marca vinculante",
+							"entries": [
+								"Algunos patrones tienen como hábito marcar de algún modo a los brujos que están bajo su influencia. Una marca vinculante deja claro (para aquellos que saben de ello), que el individuo en cuestión está bajo patronazgo. Este puede querer aprovecharse de esa marca, usándola como prueba del pacto, o preferir ocultarla (si es posible) para evitar las dificultades que pueda traer.",
+								"Si tu pacto de brujo tiene una marca vinculante, cómo te sientes acerca de mostrarla depende de la naturaleza de tu relación con quien te la dio. ¿Es esta marca un motivo de orgullo o algo de lo que te avergüenzas en secreto?",
+								{
+									"type": "table",
+									"caption": "Marcas vinculantes",
+									"colLabels": [
+										"d6",
+										"Marca"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											"1",
+											"Uno de tus ojos tiene el mismo aspecto que el de tu patrón."
+										],
+										[
+											"2",
+											"Cada vez que te levantas, la pequeña marca de tu cara aparece en un sitio distinto."
+										],
+										[
+											"3",
+											"Muestras los síntomas de una enfermedad, pero no sufres los efectos negativos."
+										],
+										[
+											"4",
+											"Tu lengua es de un color antinatural."
+										],
+										[
+											"5",
+											"Tienes una cola vestigial."
+										],
+										[
+											"6",
+											"Tu nariz brilla en la oscuridad."
+										]
+									]
+								}
+							]
+						}
+					],
+					"page": 53,
+					"source": "XGE-ES"
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "El Señor Feérico",
+			"shortName": "Señor Feérico",
+			"source": "PHB-ES",
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"page": 108,
+			"additionalSpells": [
+				{
+					"expanded": {
+						"s1": [
+							"Fuego feérico|PHB-ES|fuego feérico",
+							"Dormir|PHB-ES|dormir"
+						],
+						"s2": [
+							"Calmar emociones|PHB-ES|calmar emociones",
+							"Fuerza fantasmal|PHB-ES|fuerza fantasmal"
+						],
+						"s3": [
+							"Desplazamiento|PHB-ES|desplazamiento",
+							"Crecimiento vegetal|PHB-ES|crecimiento vegetal"
+						],
+						"s4": [
+							"Dominar bestia|PHB-ES|dominar bestia",
+							"Invisibilidad mejorada|PHB-ES|invisibilidad mejorada"
+						],
+						"s5": [
+							"Dominar persona|PHB-ES|dominar persona",
+							"Apariencia|PHB-ES|apariencia"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"El Señor Feérico|Brujo|PHB-ES|Señor Feérico|PHB-ES|1",
+				"Escape Brumoso|Brujo|PHB-ES|Señor Feérico|PHB-ES|6",
+				"Defensas Seductoras|Brujo|PHB-ES|Señor Feérico|PHB-ES|10",
+				"Delirio Oscuro|Brujo|PHB-ES|Señor Feérico|PHB-ES|14"
+			]
+		},
+		{
+			"name": "El Infernal",
+			"shortName": "Infernal",
+			"source": "PHB-ES",
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"page": 109,
+			"srd": true,
+			"additionalSpells": [
+				{
+					"expanded": {
+						"s1": [
+							"Manos ardientes|PHB-ES|manos ardientes",
+							"Orden imperiosa|PHB-ES|orden imperiosa"
+						],
+						"s2": [
+							"Sordera/Ceguera|PHB-ES|sordera/ceguera",
+							"Rayo abrasador|PHB-ES|rayo abrasador"
+						],
+						"s3": [
+							"Bola de fuego|PHB-ES|bola de fuego",
+							"Nube apestosa|PHB-ES|nube apestosa"
+						],
+						"s4": [
+							"Escudo de fuego|PHB-ES|escudo de fuego",
+							"Muro de fuego|PHB-ES|muro de fuego"
+						],
+						"s5": [
+							"Golpe flamígero|PHB-ES|golpe flamígero",
+							"Consagrar|PHB-ES|consagrar"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"El Infernal|Brujo|PHB-ES|Infernal|PHB-ES|1",
+				"La Suerte del Oscuro|Brujo|PHB-ES|Infernal|PHB-ES|6",
+				"Resistencia Infernal|Brujo|PHB-ES|Infernal|PHB-ES|10",
+				"Arrastrar por el Infierno|Brujo|PHB-ES|Infernal|PHB-ES|14"
+			]
+		},
+		{
+			"name": "El Primigenio",
+			"shortName": "Primigenio",
+			"source": "PHB-ES",
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"page": 109,
+			"additionalSpells": [
+				{
+					"expanded": {
+						"s1": [
+							"Susurros discordantes|PHB-ES|susurros discordantes",
+							"Risa horrible de Tasha|PHB-ES|risa horrible de Tasha"
+						],
+						"s2": [
+							"Detectar pensamientos|PHB-ES|detectar pensamientos",
+							"Fuerza fantasmal|PHB-ES|fuerza fantasmal"
+						],
+						"s3": [
+							"Clarividencia|PHB-ES|clarividencia",
+							"Recado|PHB-ES|recado"
+						],
+						"s4": [
+							"Dominar bestia|PHB-ES|dominar bestia",
+							"Tentáculos negros de Evard|PHB-ES|tentáculos negros de Evard"
+						],
+						"s5": [
+							"Dominar persona|PHB-ES|dominar persona",
+							"Telequinesis|PHB-ES|telequinesis"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"El Primigenio|Brujo|PHB-ES|Primigenio|PHB-ES|1",
+				"Salvaguarda Entrópica|Brujo|PHB-ES|Primigenio|PHB-ES|6",
+				"Escudo Mental|Brujo|PHB-ES|Primigenio|PHB-ES|10",
+				"Crear Siervo|Brujo|PHB-ES|Primigenio|PHB-ES|14"
+			]
+		},
+		{
+			"name": "El Inmortal",
+			"shortName": "Inmortal",
+			"source": "SCAG-ES",
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"page": 139,
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"piedad con los moribundos|PHB-ES#c"
+						]
+					},
+					"expanded": {
+						"s1": [
+							"falsa vida|PHB-ES",
+							"rayo nauseabundo|PHB-ES"
+						],
+						"s2": [
+							"silencio|PHB-ES",
+							"sordera/ceguera|PHB-ES"
+						],
+						"s3": [
+							"fingir muerte|PHB-ES",
+							"hablar con los muertos|PHB-ES"
+						],
+						"s4": [
+							"aura de vida|PHB-ES",
+							"guarda contra la muerte|PHB-ES"
+						],
+						"s5": [
+							"conocer las leyendas|PHB-ES",
+							"contagio|PHB-ES"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"El Inmortal|Brujo|PHB-ES|Inmortal|SCAG-ES|1",
+				"Desafiar a la Muerte|Brujo|PHB-ES|Inmortal|SCAG-ES|6",
+				"Naturaleza Imperecedera|Brujo|PHB-ES|Inmortal|SCAG-ES|10",
+				"Vida indestructible|Brujo|PHB-ES|Inmortal|SCAG-ES|14"
+			]
+		},
+		{
+			"name": "El Celestial",
+			"shortName": "Celestial",
+			"source": "XGE-ES",
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"page": 54,
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"llama sagrada|PHB-ES#c",
+							"luz|PHB-ES#c"
+						]
+					},
+					"expanded": {
+						"s1": [
+							"curar heridas|PHB-ES",
+							"saeta guía|PHB-ES"
+						],
+						"s2": [
+							"esfera de llamas|PHB-ES",
+							"restablecimiento menor|PHB-ES"
+						],
+						"s3": [
+							"luz del día|PHB-ES",
+							"revivir|PHB-ES"
+						],
+						"s4": [
+							"guardián de la fe|PHB-ES",
+							"muro de fuego|PHB-ES"
+						],
+						"s5": [
+							"golpe flamígero|PHB-ES",
+							"restablecimiento mayor|PHB-ES"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"El Celestial|Brujo|PHB-ES|Celestial|XGE-ES|1",
+				"Alma Radiante|Brujo|PHB-ES|Celestial|XGE-ES|6",
+				"Resiliencia Celestial|Brujo|PHB-ES|Celestial|XGE-ES|10",
+				"Venganza Ardiente|Brujo|PHB-ES|Celestial|XGE-ES|14"
+			]
+		},
+		{
+			"name": "El Filo Maléfico",
+			"shortName": "Filo Maléfico",
+			"source": "XGE-ES",
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"page": 55,
+			"additionalSpells": [
+				{
+					"expanded": {
+						"s1": [
+							"escudo|PHB-ES",
+							"castigo furioso|PHB-ES"
+						],
+						"s2": [
+							"contorno borroso|PHB-ES",
+							"castigo marcador|PHB-ES"
+						],
+						"s3": [
+							"desplazamiento|PHB-ES",
+							"arma elemental|PHB-ES"
+						],
+						"s4": [
+							"asesino fantasmal|PHB-ES",
+							"castigo abrumador|PHB-ES"
+						],
+						"s5": [
+							"castigo desterrador|PHB-ES",
+							"cono de frío|PHB-ES"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"El Filo Maléfico|Brujo|PHB-ES|Filo Maléfico|XGE-ES|1",
+				"Espectro Maldito|Brujo|PHB-ES|Filo Maléfico|XGE-ES|6",
+				"Armadura de Maleficios|Brujo|PHB-ES|Filo Maléfico|XGE-ES|10",
+				"Maestro de Maldiciones|Brujo|PHB-ES|Filo Maléfico|XGE-ES|14"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Patrón Sobrenatural",
+			"source": "PHB-ES",
+			"page": 105,
+			"srd": true,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"level": 1,
+			"entries": [
+				"A nivel 1 has acordado un trato con un ser sobrenatural de tu elección: el Señor Feérico, el Infernal o el Primigenio. Todos ellos están detallados al final de la descripción de esta clase. Esta elección te proporciona ciertos rasgos cuando alcanzas los niveles 1, 6, 10 y 14."
+			]
+		},
+		{
+			"name": "Magia del Pacto",
+			"source": "PHB-ES",
+			"page": 105,
+			"srd": true,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"level": 1,
+			"entries": [
+				"Tus investigaciones en lo arcano y la magia que te ha sido concedida por tu patrón te han dotado de cierta habilidad con los conjuros. El {@book capítulo 10|PHB-ES|10} contiene las reglas de lanzamiento de conjuros y el {@book capítulo 11|PHB-ES|11} la {@filter lista de conjuros de brujo|spells|class=Brujo (PHB-ES)}.",
+				{
+					"type": "entries",
+					"name": "Trucos",
+					"entries": [
+						"Conoces dos trucos de tu elección escogidos de entre los de la lista de conjuros de brujo. Podrás elegir más trucos de brujo cuando llegues a niveles más altos, como se indica en la columna \"trucos conocidos\" de la tabla del brujo."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Espacios de conjuro",
+					"entries": [
+						"La tabla del brujo muestra de cuántos espacios de conjuro dispones.",
+						"Esta tabla también te indica de qué nivel son dichos espacios. Todos tus espacios son del mismo nivel. Para lanzar uno de tus {@filter conjuros de brujo|spells|class=Brujo (PHB-ES)} de nivel 1 o superiores deberás gastar un espacio de conjuro. Recuperas todos los espacios utilizados tras finalizar un descanso corto o largo..",
+						"Así, si eres un brujo de nivel 5, dispondrás de dos espacios de conjuro de nivel 3. Para lanzar el conjuro de nivel 1 {@spell Rayo de hechicería|PHB-ES|rayo de hechicería} deberás invertir uno de estos espacios, y lo lanzarás como un conjuro de nivel 3."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Conjuros conocidos de nivel 1 y superiores",
+					"entries": [
+						"A nivel 1 conoces dos conjuros de nivel 1 de tu elección, escogidos de entre la lista de conjuros de brujo.",
+						"La columna \"conjuros conocidos\" de la tabla del brujo te indica cuándo podrás aprender más conjuros de brujo de nivel 1 o superiores. Siempre que elijas un conjuro, este debe ser de un nivel igual o inferior al que aparece en la columna \"nivel de los espacios\" para tu nivel de brujo. Así, cuando subes a nivel 6 en esta clase puedes aprender un conjuro de brujo nuevo, que puede ser de nivel 1, 2 o 3.",
+						"Además, cada vez que subas un nivel de esta clase podrás elegir uno de los conjuros de brujo que ya conoces y reemplazarlo por otro de las que aparecen en la lista de conjuros de brujo. Este reemplazo deberá ser de un nivel para el que poseas espacios de conjuro."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Aptitud mágica",
+					"entries": [
+						"El Carisma es tu aptitud mágica en lo que a conjuros de brujo respecta. Así, utilizarás tu Carisma siempre que un conjuro de brujo haga referencia a tu aptitud mágica. Además, también usarás tu modificador por Carisma para determinar la CD de las tiradas de salvación y las tiradas de ataque de los conjuros de brujo que lances.",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"cha"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"cha"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Canalizador mágico",
+					"entries": [
+						"Puedes utilizar un {@item canalizadores arcanos|PHB-ES|canalizador arcano} como canalizador mágico para los conjuros de brujo."
+					]
+				}
+			]
+		},
+		{
+			"name": "Invocaciones Sobrenaturales",
+			"source": "PHB-ES",
+			"page": 105,
+			"srd": true,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"level": 2,
+			"entries": [
+				"Durante tu estudio de lo oculto, has desenterrado invocaciones sobrenaturales: fragmentos de conocimiento prohibido que te imbuyen de una capacidad mágica perpetua.",
+				"A nivel 2, obtienes dos invocaciones sobrenaturales a tu elección. Las {@filter invocaciones|optionalfeatures|Feature Type=EI_Esp} entre las que puedes elegir están detalladas al final de la descripción de esta clase. Podrás escoger más invocaciones sobrenaturales cuando subas a niveles de brujo más altos, como se indica en la columna \"invocaciones conocidas\" de la tabla del brujo.",
+				"Además, cada vez que subas un nivel de esta clase podrás elegir una de las invocaciones que ya conoces y reemplazarla por otra que puedas aprender a tu nuevo nivel."
+			]
+		},
+		{
+			"name": "Beneficio del Pacto",
+			"source": "PHB-ES",
+			"page": 105,
+			"srd": true,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"level": 3,
+			"entries": [
+				"A nivel 3 tu patrón sobrenatural le concede un regalo como recompensa por tus leales servicios. Obtienes uno de los siguientes rasgos, a tu elección.",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Pacto de la Cadena|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Pacto del Filo|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Pacto del Grimorio|PHB-ES"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 105,
+			"srd": true,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"level": 4,
+			"entries": [
+				"Cuando alcances el nivel 4 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Rasgo de Patrón Sobrenatural",
+			"source": "PHB-ES",
+			"page": 105,
+			"srd": true,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"level": 6,
+			"entries": [
+				"A nivel 6 ganas un rasgo de tu Patrón Sobrenatural."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 105,
+			"srd": true,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"level": 8,
+			"entries": [
+				"Cuando alcances el nivel 8 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Rasgo de Patrón Sobrenatural",
+			"source": "PHB-ES",
+			"page": 105,
+			"srd": true,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"level": 10,
+			"entries": [
+				"A nivel 10 ganas un rasgo de tu Patrón Sobrenatural."
+			]
+		},
+		{
+			"name": "Arcanum Místico (nivel 6)",
+			"source": "PHB-ES",
+			"page": 105,
+			"srd": true,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"level": 11,
+			"entries": [
+				"A nivel 11, tu patrón te recompensa con un secreto mágico llamado arcanum. Escoge uno de los {@filter conjuros de nivel 6 de la lista del brujo|spells|level=6|class=Brujo (PHB-ES)} como este arcanum.",
+				"Puedes lanzar tu conjuro de arcanum una vez sin gastar ningún espacio de conjuro, pero debes terminar un descanso largo para poder volver a hacerlo otra vez.",
+				"A niveles superiores puedes elegir más conjuros de brujo, que serás capaz de lanzar de esta forma: un conjuro de nivel 7 cuando subas a nivel 13, uno de nivel 8 cuando subas a nivel 15 y uno de nivel 9 cuando subas a nivel 17. Recuperas todos los usos de Arcanum Místico tras finalizar un descanso largo."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 105,
+			"srd": true,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"level": 12,
+			"entries": [
+				"Cuando alcances el nivel 12 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Arcanum Místico (nivel 7)",
+			"source": "PHB-ES",
+			"page": 105,
+			"srd": true,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"level": 13,
+			"entries": [
+				"A nivel 13, tu patrón te recompensa con un secreto mágico llamado arcanum. Escoge uno de los {@filter conjuros de nivel 7 de la lista del brujo|spells|level=7|class=Brujo (PHB-ES)} como este arcanum.",
+				"Puedes lanzar tu conjuro de arcanum una vez sin gastar ningún espacio de conjuro, pero debes terminar un descanso largo para poder volver a hacerlo otra vez."
+			]
+		},
+		{
+			"name": "Rasgo de Patrón Sobrenatural",
+			"source": "PHB-ES",
+			"page": 105,
+			"srd": true,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"level": 14,
+			"entries": [
+				"A nivel 14 ganas un rasgo de tu Patrón Sobrenatural."
+			]
+		},
+		{
+			"name": "Arcanum Místico (nivel 8)",
+			"source": "PHB-ES",
+			"page": 105,
+			"srd": true,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"level": 15,
+			"entries": [
+				"A nivel 15, tu patrón te recompensa con un secreto mágico llamado arcanum. Escoge uno de los {@filter conjuros de nivel 8 de la lista del brujo|spells|level=8|class=Brujo (PHB-ES)} como este arcanum.",
+				"Puedes lanzar tu conjuro de arcanum una vez sin gastar ningún espacio de conjuro, pero debes terminar un descanso largo para poder volver a hacerlo otra vez."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 105,
+			"srd": true,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"level": 16,
+			"entries": [
+				"Cuando alcances el nivel 16 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Arcanum Místico (nivel 9)",
+			"source": "PHB-ES",
+			"page": 105,
+			"srd": true,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"level": 17,
+			"entries": [
+				"A nivel 17, tu patrón te recompensa con un secreto mágico llamado arcanum. Escoge uno de los {@filter conjuros de nivel 9 de la lista del brujo|spells|level=9|class=Brujo (PHB-ES)} como este arcanum.",
+				"Puedes lanzar tu conjuro de arcanum una vez sin gastar ningún espacio de conjuro, pero debes terminar un descanso largo para poder volver a hacerlo otra vez."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 105,
+			"srd": true,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"level": 19,
+			"entries": [
+				"Cuando alcances el nivel 19 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Maestro Sobrenatural",
+			"source": "PHB-ES",
+			"page": 105,
+			"srd": true,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"level": 20,
+			"entries": [
+				"A nivel 20 puedes acceder a tu reserva interior de poder místico mientras ruegas a tu patrón que te permita recuperar espacios de conjuro gastados. Puedes pasar 1 minuto suplicando a tu patrón que te ayude y este te hará recuperar todos los espacios de conjuro obtenidos mediante el rasgo Magia del Pacto que hayas gastado ya. Una vez utilizado este rasgo, deberás terminar un descanso largo para poder volver a usarlo otra vez."
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "El Señor Feérico",
+			"source": "PHB-ES",
+			"page": 108,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Señor Feérico",
+			"subclassSource": "PHB-ES",
+			"level": 1,
+			"entries": [
+				"Tu patrón es un señor o señora feérico: una criatura de leyenda que atesora secretos que ya habían sido olvidados antes de que las razas mortales vieran la luz. Las motivaciones de una entidad como esta suelen ser incognoscibles y a veces parecen caprichosas, pues lo mismo pueden aspirar a aumentar su poder mágico como buscar vengarse de un agravio ancestral.",
+				"Ejemplos de seres de este tipo son el Príncipe de la Escarcha; la Reina del Aire y la Oscuridad, gobernante de la Corte Crepuscular; Titania de la Corte del Verano; su consorte Oberón, el Lord Verde; Hyrsam, el Príncipe de los Locos; y sagas muy ancianas.",
+				{
+					"type": "entries",
+					"name": "Lista de conjuros ampliada",
+					"entries": [
+						"El Señor Feérico te permite elegir de entre una lista de conjuros ampliada cada vez que aprendes un conjuro de brujo. Los siguientes conjuros también forman parte de tu lista de conjuros de brujo.",
+						{
+							"type": "table",
+							"caption": "Conjuros adicionales del Señor Feérico",
+							"colLabels": [
+								"Nivel de Conjuro",
+								"Conjuros"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"{@spell Dormir|PHB-ES|dormir}, {@spell Fuego feérico|PHB-ES|fuego feérico}"
+								],
+								[
+									"2",
+									"{@spell Calmar emociones|PHB-ES|calmar emociones}, {@spell Fuerza fantasmal|PHB-ES|fuerza fantasmal}"
+								],
+								[
+									"3",
+									"{@spell Crecimiento vegetal|PHB-ES|crecimiento vegetal}, {@spell Desplazamiento|PHB-ES|desplazamiento}"
+								],
+								[
+									"4",
+									"{@spell Dominar bestia|PHB-ES|dominar bestia}, {@spell Invisibilidad mejorada|PHB-ES|invisibilidad mejorada}"
+								],
+								[
+									"5",
+									"{@spell Apariencia|PHB-ES|apariencia}, {@spell Dominar persona|PHB-ES|dominar persona}"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Presencia Feérica|Brujo|PHB-ES|Señor Feérico|PHB-ES|1"
+				}
+			]
+		},
+		{
+			"name": "Presencia Feérica",
+			"source": "PHB-ES",
+			"page": 108,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Señor Feérico",
+			"subclassSource": "PHB-ES",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"A partir de nivel 1 tu patrón te concede la facultad para proyectar la seductora e imponente presencia de los seres feéricos. Como acción, puedes provocar que todas las criaturas en un cubo de 10 pies adyacente a ti tengan que hacer una tirada de salvación de Sabiduría con la misma CD que las tiradas de salvación de tus conjuros de brujo. Aquellas que fallen la tirada de salvación estarán {@condition hechizado|PHB-ES|hechizadas} o {@condition asustado|PHB-ES|asustadas} (tú eliges) por ti hasta el final de tu siguiente turno.",
+				"Una vez utilizado este rasgo, deberás terminar un descanso corto o largo para poder volver a usarlo otra vez."
+			]
+		},
+		{
+			"name": "Escape Brumoso",
+			"source": "PHB-ES",
+			"page": 108,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Señor Feérico",
+			"subclassSource": "PHB-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 6, puedes responder a un peligro desvaneciéndote en una leve niebla. Cuando recibas daño, puedes usar tu reacción para volverte {@condition invisible|PHB-ES} y teletransportarte hasta 60 pies a una casilla desocupada que puedas ver. Seguirás siendo {@condition invisible|PHB-ES} hasta que dé comienzo tu siguiente turno, ataques o lances un conjuro.",
+				"Una vez utilizado este rasgo, deberás terminar un descanso corto o largo para poder volver a usarlo otra vez."
+			]
+		},
+		{
+			"name": "Defensas Seductoras",
+			"source": "PHB-ES",
+			"page": 108,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Señor Feérico",
+			"subclassSource": "PHB-ES",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"A nivel 10, tu patrón te enseña cómo volver contra tus enemigos sus propios intentos de embotar tus sentidos mediante la magia. No puedes ser {@condition hechizado|PHB-ES} y, cuando otra criatura trate de hechizarte, podrás emplear tu reacción para tratar de volver su intento contra ella. La criatura deberá hacer una tirada de salvación de Sabiduría con la misma CD que las tiradas de salvación de tus conjuros de brujo. Si falla, estará {@condition hechizado|PHB-ES|hechizada} por ti durante 1 minuto o hasta que reciba daño."
+			]
+		},
+		{
+			"name": "Delirio Oscuro",
+			"source": "PHB-ES",
+			"page": 108,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Señor Feérico",
+			"subclassSource": "PHB-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 14 puedes sumergir a una criatura en un reino imaginario. Como acción, elige una criatura que puedas ver a 60 pies o menos de ti. Deberá hacer una tirada de salvación de Sabiduría con la misma CD que las tiradas de salvación de tus conjuros de brujo. Si falla, estará {@condition hechizado|PHB-ES|hechizada} o {@condition asustado|PHB-ES|asustada} (tú eliges) por ti durante 1 minuto o hasta que se rompa tu concentración (como si te estuvieras concentrando en un conjuro). Este efecto termina antes de tiempo si el objetivo recibe cualquier tipo de daño.",
+				"Hasta que la ilusión termine, la criatura pensará que está perdida en un reino brumoso, que tomará la apariencia que tú prefieras. El objetivo únicamente puede ver y oír a la ilusión y a sí mismo.",
+				"Una vez utilizado este rasgo, deberás terminar un descanso corto o largo para poder volver a usarlo otra vez."
+			]
+		},
+		{
+			"name": "El Infernal",
+			"source": "PHB-ES",
+			"page": 109,
+			"srd": true,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Infernal",
+			"subclassSource": "PHB-ES",
+			"level": 1,
+			"entries": [
+				"Has cerrado un trato con un infernal de los Planos Inferiores; un ser de fines malvados, a los que incluso tú mismo podrías oponerte. Este tipo de seres desean la corrupción y destrucción de todas las cosas, lo que, en última instancia, también te incluye. Entre los infernales lo bastante importantes para formar un pacto se encuentran señores demonio como Demogorgon, Orcus, Fraz'Urb-luu o Bafomet; archidiablos como Asmodeo, Dispater, Mefistófeles o Belial; diablos de la sima y balors especialmente poderosos; y ultroloths u otros señores de los yugoloths.",
+				{
+					"type": "entries",
+					"name": "Lista de conjuros ampliada",
+					"entries": [
+						"El Infernal te permite elegir de entre una lista de conjuros ampliada cada vez que aprendes un conjuro de brujo. Los siguientes conjuros también forman parte de tu lista de conjuros de brujo.",
+						{
+							"type": "table",
+							"caption": "Conjuros adicionales del Infernal",
+							"colLabels": [
+								"Nivel de Conjuro",
+								"Conjuros"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"{@spell Manos ardientes|PHB-ES|manos ardientes}, {@spell Orden imperiosa|PHB-ES|orden imperiosa}"
+								],
+								[
+									"2",
+									"{@spell Rayo abrasador|PHB-ES|rayo abrasador}, {@spell Sordera/Ceguera|PHB-ES|sordera/ceguera}"
+								],
+								[
+									"3",
+									"{@spell Bola de fuego|PHB-ES|bola de fuego}, {@spell Nube apestosa|PHB-ES|nube apestosa}"
+								],
+								[
+									"4",
+									"{@spell Escudo de fuego|PHB-ES|escudo de fuego}, {@spell Muro de fuego|PHB-ES|muro de fuego}"
+								],
+								[
+									"5",
+									"{@spell Consagrar|PHB-ES|consagrar}, {@spell Golpe flamígero|PHB-ES|golpe flamígero}"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bendición del Oscuro|Brujo|PHB-ES|Infernal|PHB-ES|1"
+				}
+			]
+		},
+		{
+			"name": "Bendición del Oscuro",
+			"source": "PHB-ES",
+			"page": 109,
+			"srd": true,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Infernal",
+			"subclassSource": "PHB-ES",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"A partir de nivel 1, cuando reduces a una criatura hostil a 0 puntos de golpe, ganas tantos puntos de golpe temporales como tu modificador por Carisma + tu nivel de brujo (mínimo de 1)."
+			]
+		},
+		{
+			"name": "La Suerte del Oscuro",
+			"source": "PHB-ES",
+			"page": 109,
+			"srd": true,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Infernal",
+			"subclassSource": "PHB-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 6 puedes invocar a tu patrón para alterar el destino a tu favor. Cuando hagas una prueba de característica o una tirada de salvación, puedes utilizar este rasgo para añadir {@dice 1d10} a tu tirada. Puedes realizar esto después de ver el resultado de la tirada, pero antes de que se resuelvan los efectos de esta misma.",
+				"Una vez empleado este rasgo, deberás terminar un descanso corto o largo para poder volver a usarlo otra vez."
+			]
+		},
+		{
+			"name": "Resistencia Infernal",
+			"source": "PHB-ES",
+			"page": 109,
+			"srd": true,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Infernal",
+			"subclassSource": "PHB-ES",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 10 puedes elegir un tipo de daño cada vez que finalices un descanso corto o largo. Obtienes resistencia a ese tipo de daño hasta que vuelvas a usar este rasgo para escoger uno distinto. El daño que provenga de armas mágicas o de plata no se ve afectado por esta resistencia."
+			]
+		},
+		{
+			"name": "Arrastrar por el Infierno",
+			"source": "PHB-ES",
+			"page": 109,
+			"srd": true,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Infernal",
+			"subclassSource": "PHB-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 14, cuando impactas a una criatura con un ataque, puedes utilizar este rasgo para teletransportar instantáneamente al objetivo a los Planos Inferiores. La criatura desaparece y se precipita a través de un paisaje de pesadilla.",
+				"Al final de tu siguiente turno, el objetivo vuelve al espacio que ocupaba anteriormente o al espacio desocupado más cercano si el original está ahora ocupado. Si la criatura no es un infernal, sufrirá {@damage 10d10} de daño psíquico, debido al profundo impacto que le ha producido la terrorífica experiencia.",
+				"Una vez empleado este rasgo, deberás terminar un descanso largo para poder volver a usarlo otra vez."
+			]
+		},
+		{
+			"name": "El Primigenio",
+			"source": "PHB-ES",
+			"page": 109,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Primigenio",
+			"subclassSource": "PHB-ES",
+			"level": 1,
+			"entries": [
+				"Tu patrón es una misteriosa entidad cuya naturaleza es completamente ajena al tejido de la realidad. Puede que provenga del Reino Lejano, un espacio más allá de la realidad, o quizá se trate de uno de los dioses antiguos que solo se recuerdan a través de leyendas. Sus motivos son incomprensibles para los mortales y su conocimiento es tan inmenso y antiguo que incluso las bibliotecas más grandes palidecen en comparación con los vastos secretos que este ser cobija. Es posible que el Primigenio no sea siquiera consciente de tu existencia o que le seas completamente indiferente, pero los secretos que has descubierto te permiten extraer poder mágico de él.",
+				"Entre las entidades de este tipo se encuentran Ghaunadar, también llamado Aquel Que Acecha; Tharizdun, el Dios Encadenado; Dendar, la Serpiente Nocturna; Zargon, El Que Regresa; el Gran Cthulhu; y otros seres insondables.",
+				{
+					"type": "entries",
+					"name": "Lista de conjuros ampliada",
+					"entries": [
+						"El Primigenio te permite elegir de entre una lista de conjuros ampliada cada vez que aprendes un conjuro de brujo. Los siguientes conjuros también forma parte de tu lista de conjuros de brujo.",
+						{
+							"type": "table",
+							"caption": "Conjuros adicionales del Primigenio",
+							"colLabels": [
+								"Nivel de Conjuro",
+								"Conjuros"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"{@spell Risa horrible de Tasha|PHB-ES|risa horrible de Tasha}, {@spell Susurros discordantes|PHB-ES|susurros discordantes}"
+								],
+								[
+									"2",
+									"{@spell Detectar pensamientos|PHB-ES|detectar pensamientos}, {@spell Fuerza fantasmal|PHB-ES|fuerza fantasmal}"
+								],
+								[
+									"3",
+									"{@spell Clarividencia|PHB-ES|clarividencia}, {@spell Recado|PHB-ES|recado}"
+								],
+								[
+									"4",
+									"{@spell Dominar bestia|PHB-ES|dominar bestia}, {@spell Tentáculos negros de Evard|PHB-ES|tentáculos negros de Evard}"
+								],
+								[
+									"5",
+									"{@spell Dominar persona|PHB-ES|dominar persona}, {@spell Telequinesis|PHB-ES|telequinesis}"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Mente Iluminada|Brujo|PHB-ES|Primigenio|PHB-ES|1"
+				}
+			]
+		},
+		{
+			"name": "Mente Iluminada",
+			"source": "PHB-ES",
+			"page": 109,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Primigenio",
+			"subclassSource": "PHB-ES",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"A partir de nivel 1 tus conocimientos ultraterrenos te dotan de la facultad de tocar las mentes de otras criaturas. Eres capaz de hablar telepáticamente con cualquier criatura que puedas ver a 30 pies o menos de ti. La criatura y tú no tenéis por qué compartir un idioma para que esta entienda tus locuciones telepáticas, pero sí que es necesario que tu objetivo comprenda al menos un idioma."
+			]
+		},
+		{
+			"name": "Salvaguarda Entrópica",
+			"source": "PHB-ES",
+			"page": 109,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Primigenio",
+			"subclassSource": "PHB-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A nivel 6 aprendes cómo protegerte mágicamente de los ataques y cómo transformar el golpe fallido de un oponente en buena suerte para ti mismo. Cuando una criatura haga una tirada de ataque contra ti, podrás usar tu reacción para dar desventaja a la tirada. Si el ataque falla, tu siguiente tirada de ataque contra dicha criatura tendrá ventaja, siempre y cuando la realices antes del final de tu siguiente turno.",
+				"Una vez utilizado este rasgo, deberás terminar un descanso corto o largo para poder volver a usarlo otra vez."
+			]
+		},
+		{
+			"name": "Escudo Mental",
+			"source": "PHB-ES",
+			"page": 109,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Primigenio",
+			"subclassSource": "PHB-ES",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 10 tus pensamientos ya no pueden ser leídos mediante telepatía o cualquier otro medio sin que tú lo permitas. Además, tienes resistencia al daño psíquico, y siempre que una criatura te inflija daño psíquico, ella también recibirá la misma cantidad de daño que tú has sufrido."
+			]
+		},
+		{
+			"name": "Crear Siervo",
+			"source": "PHB-ES",
+			"page": 109,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Primigenio",
+			"subclassSource": "PHB-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"A nivel 14, obtienes la capacidad de infectar la mente de un humanoide con la magia extraterrenal de tu patrón. Puedes utilizar tu acción para tocar a un humanoide {@condition incapacitado|PHB-ES}. Tras hacer esto, la criatura estará {@condition hechizado|PHB-ES|hechizada} por ti hasta que se lance un conjuro de {@spell Levantar maldición|PHB-ES|levantar maldición} sobre ella, se la libre del estado \"{@condition hechizado|PHB-ES}\" o uses este rasgo de nuevo.",
+				"Mientras los dos estéis en el mismo plano de existencia podrás comunicarte telepáticamente con la criatura {@condition hechizado|PHB-ES|hechizada}."
+			]
+		},
+		{
+			"name": "El Inmortal",
+			"source": "SCAG-ES",
+			"page": 139,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Inmortal",
+			"subclassSource": "SCAG-ES",
+			"level": 1,
+			"entries": [
+				"La muerte no controla a tu patrón, que ha desentrañado los secretos de la vida eterna, aunque tal recompensa tiene un precio, como cualquier poder. El Inmortal, que antaño fue mortal, ha visto pasar vidas mortales como si fueran estaciones, como el parpadeo de días y noches sin fin. Puede compartir los secretos de eras, de la vida y la muerte. Entre este tipo de seres están Vecna, el Señor de la Mano y el Ojo; el temible Iuz; la reina liche Vol; la Corte Eterna de Aerenal: Vlaakith, la reina liche de los githyankis; y Fistandantalus, el mago inmortal.",
+				"En los Reinos, entre los patrones Inmortales se encuentran Larloch, el Rey Sombra y amo legendario de la Cripta del Brujo; y Gilgeam, el Dios y Rey de Unther.",
+				{
+					"type": "entries",
+					"name": "Lista de conjuros ampliada",
+					"entries": [
+						"El Inmortal te permite elegir de entre una lista de conjuros ampliada cada vez que aprendes un conjuro de brujo. Los siguientes conjuros también forman parte de tu lista de conjuros de brujo.",
+						{
+							"type": "table",
+							"caption": "Lista de conjuros ampliada de Inmortal",
+							"colLabels": [
+								"Nivel de conjuro",
+								"Conjuros"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"{@spell falsa vida|PHB-ES}, {@spell rayo nauseabundo|PHB-ES}"
+								],
+								[
+									"2",
+									"{@spell silencio|PHB-ES}, {@spell sordera/ceguera|PHB-ES}"
+								],
+								[
+									"3",
+									"{@spell fingir muerte|PHB-ES}, {@spell hablar con los muertos|PHB-ES}"
+								],
+								[
+									"4",
+									"{@spell aura de vida|PHB-ES}, {@spell guarda contra la muerte|PHB-ES}"
+								],
+								[
+									"5",
+									"{@spell conocer las leyendas|PHB-ES}, {@spell contagio|PHB-ES}"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Entre los Muertos|Brujo|PHB-ES|Inmortal|SCAG-ES|1"
+				}
+			]
+		},
+		{
+			"name": "Entre los Muertos",
+			"source": "SCAG-ES",
+			"page": 139,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Inmortal",
+			"subclassSource": "SCAG-ES",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"A partir del nivel 1, aprendes el truco {@spell piedad con los moribundos|PHB-ES}, que para ti es un truco de brujo. También tienes ventaja en las tiradas de salvación contra cualquier enfermedad.",
+				"Además, los muertos vivientes tienen problemas para herirte. Si un muerto viviente te elige como objetivo directo de un ataque o conjuro dañino, la criatura debe hacer una tirada de salvación de Sabiduría contra la CD de tu salvación de conjuros. El muerto viviente no necesita realizar la tirada si tú simplemente estás en la zona afectada, como en la explosión de {@spell bola de fuego|PHB-ES}. Si no supera la tirada, la criatura debe escoger a un nuevo objetivo o renunciar a atacar a alguien que no seas tú, lo que puede significar malgastar el ataque o conjuro. Si supera la tirada, será inmune a este efecto durante 24 horas. Un muerto viviente también será inmune a este efecto durante 24 horas si le eliges como objetivo de un ataque o conjuro dañino."
+			]
+		},
+		{
+			"name": "Desafiar a la Muerte",
+			"source": "SCAG-ES",
+			"page": 139,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Inmortal",
+			"subclassSource": "SCAG-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A partir del nivel 6, puedes obtener vitalidad cuando burlas a la muerte o cuando ayudas a hacerlo a otro. Recuperas {@dice 1d8} + tu modificador de Constitución puntos de golpe (mínimo 1 punto de golpe) cuando superas una tirada de salvación contra muerte o cuando estabilizas a una criatura usando {@spell piedad con los moribundos|PHB-ES}.",
+				"Una vez utilizado este rasgo, deberás terminar un des canso largo para poder volver a usarlo."
+			]
+		},
+		{
+			"name": "Naturaleza Imperecedera",
+			"source": "SCAG-ES",
+			"page": 139,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Inmortal",
+			"subclassSource": "SCAG-ES",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"A partir del nivel 10, puedes aguantar el aliento infinitamente y no necesitas comida, agua o sueño, aunque sigues requiriendo descansar para reducir el {@condition cansancio|PHB-ES} y seguir aprovechando los descansos cortos y largos.",
+				"Además, envejeces a menor velocidad. Por cada 10 años que pasan, tu cuerpo solo envejece 1 año y eres inmune al envejecimiento mágico."
+			]
+		},
+		{
+			"name": "Vida indestructible",
+			"source": "SCAG-ES",
+			"page": 139,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Inmortal",
+			"subclassSource": "SCAG-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Cuando llegas a nivel 14, eres partícipe de algunos de los verdaderos secretos de los Inmortales. Puedes usar una acción adicional durante tu turno para recuperar {@dice 1d8} + tu nivel de brujo puntos de golpe. Además, si recolocas una parte de tu cuerpo cercenada en su lugar cuando empleas este rasgo, se volverá a unir.",
+				"Una vez utilizado este rasgo, deberás terminar un descanso corto o largo para poder volver a usarlo."
+			]
+		},
+		{
+			"name": "El Celestial",
+			"source": "XGE-ES",
+			"page": 54,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Celestial",
+			"subclassSource": "XGE-ES",
+			"level": 1,
+			"entries": [
+				"Tu patrón es un poderoso ser de los Planos Superiores. Te has vinculado con un antiguo empíreo, solar, kirin, unicornio u otra entidad que resida en los planos de dicha dimensión Tu pacto con este ser te permite experimentar hasta el más mínimo rayo de luz sagrada que ilumina el multiverso.",
+				"Estar conectado con estos poderes puede causar cambios en tu comportamiento y en tus creencias. Puede que te encuentres impulsado a aniquilar muertos vivientes, derrotar infernales y proteger a los inocentes. A veces, tu corazón añorará el reino celestial de tu patrón, poder vagar por ese paraíso el resto de tus días. No obstante, sabes que tu misión está entre los mortales por ahora y que tu pacto te obliga a llevar luz a los rincones más oscuros del mundo.",
+				{
+					"type": "entries",
+					"name": "Lista de Conjuros Ampliada",
+					"entries": [
+						"El Celestial te permite elegir de entre una lista de conjuros ampliada cada vez que aprendes un conjuro de brujo. Los siguientes conjuros también forman parte de tu lista de conjuros de brujo.",
+						{
+							"type": "table",
+							"caption": "Lista de conjuros ampliada del Celestial",
+							"colLabels": [
+								"Nivel de conjuro",
+								"Conjuros"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"{@spell curar heridas|PHB-ES}, {@spell saeta guía|PHB-ES}"
+								],
+								[
+									"2",
+									"{@spell esfera de llamas|PHB-ES}, {@spell restablecimiento menor|PHB-ES}"
+								],
+								[
+									"3",
+									"{@spell luz del día|PHB-ES}, {@spell revivir|PHB-ES}"
+								],
+								[
+									"4",
+									"{@spell guardián de la fe|PHB-ES}, {@spell muro de fuego|PHB-ES}"
+								],
+								[
+									"5",
+									"{@spell golpe flamígero|PHB-ES}, {@spell restablecimiento mayor|PHB-ES}"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Trucos Adicionales|Brujo|PHB-ES|Celestial|XGE-ES|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Luz Sanadora|Brujo|PHB-ES|Celestial|XGE-ES|1"
+				}
+			]
+		},
+		{
+			"name": "Trucos Adicionales",
+			"source": "XGE-ES",
+			"page": 54,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Celestial",
+			"subclassSource": "XGE-ES",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"A nivel 1, aprendes los trucos {@spell luz|PHB-ES} y {@spell llama sagrada|PHB-ES}. Se consideran trucos de brujo para ti, pero no cuentan como parte de tu número de trucos conocidos."
+			]
+		},
+		{
+			"name": "Luz Sanadora",
+			"source": "XGE-ES",
+			"page": 54,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Celestial",
+			"subclassSource": "XGE-ES",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"A nivel 1 obtienes la capacidad de canalizar energía celestial para curar heridas. Tienes una reserva de dados ({@dice d6}) que puedes gastar para realizar esta curación. La cantidad de estos dados es igual a 1 + tu nivel de brujo.",
+				"Como acción adicional, puedes sanar a una criatura que puedas ver y se encuentre a 60 pies o menos de ti, gastando dados de dicha reserva. El máximo número de ellos que pue des emplear a la vez es igual a tu modificador de Carisma (mínimo de 1 dado). Lanza los dados que hayas decidido, suma los resultados y restaura ese número total de puntos de golpe a la criatura escogida.",
+				"Tu reserva recupera todos los dados gastados cuando completas un descanso largo."
+			]
+		},
+		{
+			"name": "Alma Radiante",
+			"source": "XGE-ES",
+			"page": 54,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Celestial",
+			"subclassSource": "XGE-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 6, tu vínculo con el Celestial te permite servir como conducto para la energía luminosa. Obtienes resistencia al daño radiante y, además, cuando lanzas un conjuro que inflige daño de fuego o radiante, puedes añadir tu modificador de Carisma a una tirada de daño radiante o de fuego de ese conjuro, contra uno de sus objetivos."
+			]
+		},
+		{
+			"name": "Resiliencia Celestial",
+			"source": "XGE-ES",
+			"page": 54,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Celestial",
+			"subclassSource": "XGE-ES",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 10, consigues puntos de golpe temporales siempre que termines un descanso corto o largo. Estos son iguales a tu nivel de brujo + tu modificador de Carisma. Además, elige hasta a cinco criaturas que puedas ver en el momento de terminar el descanso. Cada una de ellas consigue tantos puntos de golpe temporales iguales como la mitad de tu nivel de brujo + tu modificador de Carisma."
+			]
+		},
+		{
+			"name": "Venganza Ardiente",
+			"source": "XGE-ES",
+			"page": 54,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Celestial",
+			"subclassSource": "XGE-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"A nivel 14, la energía radiante que canalizas te permite resistir a la muerte. Cuando tengas que realizar una tirada de salvación contra muerte al principio de tu turno, en vez de eso puedes ponerte en pie súbitamente en un estallido de energía radiante. Recuperas tantos puntos de golpe como tus puntos de golpe máximos y después puedes levantarte si así lo deseas. Cada criatura de tu elección que se encuentre a 30 pies o menos de ti recibirá {@dice 2d8} + tu modificador de Carisma de daño radiante y quedará {@condition cegado|PHB-ES|cegada} hasta el final del turno actual.",
+				"Una vez utilizado este rasgo, deberás terminar un des canso largo para poder volver a usarlo."
+			]
+		},
+		{
+			"name": "El Filo Maléfico",
+			"source": "XGE-ES",
+			"page": 55,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Filo Maléfico",
+			"subclassSource": "XGE-ES",
+			"level": 1,
+			"entries": [
+				"Has forjado un pacto con una misteriosa entidad del Shadowfell: una fuerza que se manifiesta en armas conscientes hechas de jirones de sombra. La poderosa espada Negrarma es la más notable de todas ellas, que se han extendido por el multiverso a lo largo de los años. La fuerza sombría tras estas armas puede ofrecer poder a los brujos que forjen pactos con ellas. Muchos seguidores del Filo Maléfico crean armas que emulan a las que se forman en el Shadowfell. Otros las ignoran y se contentan con entretejer la magia oscura de ese plano en su lanzamiento de conjuros.",
+				"Como es sabido, la Reina Cuervo forjó la primera de estas armas, por lo que muchos sabios sostienen que ella y la fuerza son en realidad una, y que las armas, junto con los brujos filo maléfico, son herramientas que utiliza para manipular los eventos del Plano Material para sus propios fines inescrutables.",
+				{
+					"type": "entries",
+					"name": "Lista de Conjuros Ampliada",
+					"entries": [
+						"El Filo Maléfico te permite elegir de entre una lista de con juros ampliada cada vez que aprendes un conjuro de brujo. Los siguientes conjuros también forman parte de tu lista de conjuros de brujo.",
+						{
+							"type": "table",
+							"caption": "Lista de conjuros ampliada del Filo Maléfico",
+							"colLabels": [
+								"Nivel de conjuro",
+								"Conjuros"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"{@spell castigo furioso|PHB-ES}, {@spell escudo|PHB-ES}"
+								],
+								[
+									"2",
+									"{@spell castigo marcador|PHB-ES}, {@spell contorno borroso|PHB-ES}"
+								],
+								[
+									"3",
+									"{@spell arma elemental|PHB-ES}, {@spell desplazamiento|PHB-ES}"
+								],
+								[
+									"4",
+									"{@spell asesino fantasmal|PHB-ES}, {@spell castigo abrumador|PHB-ES}"
+								],
+								[
+									"5",
+									"{@spell castigo desterrador|PHB-ES}, {@spell cono de frío|PHB-ES}"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Maldición del Filo Maléfico|Brujo|PHB-ES|Filo Maléfico|XGE-ES|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Guerrero Maléfico|Brujo|PHB-ES|Filo Maléfico|XGE-ES|1"
+				}
+			]
+		},
+		{
+			"name": "Guerrero Maléfico",
+			"source": "XGE-ES",
+			"page": 55,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Filo Maléfico",
+			"subclassSource": "XGE-ES",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"A nivel 1, adquieres el entrenamiento necesario para armarte de forma efectiva para la batalla. Obtienes competencia con armaduras medias, escudos y armas marciales.",
+				"La influencia de tu patrón también te permite canalizar tu voluntad místicamente a través de un arma concreta. Tras terminar un descanso largo, puedes tocar un arma con la que seas competente y que no tenga la propiedad \"a dos manos\". Cuando ataques con esa arma, puedes usar tu modificador de Carisma, en vez del de Fuerza o Destreza, tanto para las tiradas de ataque como para las de daño. Este beneficio dura hasta que completes un descanso largo. Si consigues más tarde el rasgo Pacto del Filo, este efecto se extiende a cualquier arma de pacto que conjures con ese rasgo, independientemente del tipo que sea."
+			]
+		},
+		{
+			"name": "Maldición del Filo Maléfico",
+			"source": "XGE-ES",
+			"page": 55,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Filo Maléfico",
+			"subclassSource": "XGE-ES",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"A nivel 1, eres capaz de imponer una maldición terrible. Como acción adicional, elige a una criatura que puedas ver y se encuentre a 30 pies o menos de ti. El objetivo queda maldito durante 1 minuto. Esta maldición termina antes de ese tiempo si el objetivo o tú morís, o si quedas {@condition incapacitado|PHB-ES}. Hasta que la maldición finalice, obtienes los siguientes beneficios:",
+				{
+					"type": "list",
+					"items": [
+						"Consigues un bonificador a las tiradas de ataque contra el objetivo. Este bonificador es igual a tu bonificador por competencia.",
+						"Cualquier tirada de ataque que realices contra la criatura maldita es un crítico con un resultado de 19 o 20 en el {@dice d20}.",
+						"Si el objetivo maldito muere, recuperas tantos puntos de golpe como tu nivel de brujo + tu modificador de Carisma (mínimo 1 punto de golpe)."
+					]
+				},
+				"Una vez utilizado este rasgo, deberás terminar un descanso corto o largo para poder volver a usarlo."
+			]
+		},
+		{
+			"name": "Espectro Maldito",
+			"source": "XGE-ES",
+			"page": 55,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Filo Maléfico",
+			"subclassSource": "XGE-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 6, puedes maldecir el alma de una persona a la que mates, forzándola a servirte temporalmente. Cuando acabas con la vida de un humanoide, puedes hacer que su espíritu se alce de su cadáver como un espectro. Puedes encontrar su perfil en el Monster Manual. Cuando el {@creature espectro|MM-ES} aparece, este obtiene tantos puntos de golpe temporales como la mitad de tu nivel de brujo. Haz una tirada de iniciativa para el espectro, que tiene sus propios turnos. Obedecerá tus órdenes verbales y, además, cuenta con un bonificador especial a sus tiradas de ataque igual a tu modificador de Carisma (mínimo de +0).",
+				"El espectro estará a tu servicio hasta el final de tu siguiente descanso largo, momento en el que se disipará en el más allá.",
+				"Una vez ates a un alma con este rasgo, no podrás utilizarlo de nuevo hasta que acabes un descanso largo."
+			]
+		},
+		{
+			"name": "Armadura de Maleficios",
+			"source": "XGE-ES",
+			"page": 55,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Filo Maléfico",
+			"subclassSource": "XGE-ES",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"A nivel 10, tu maleficio se vuelve más poderoso. Si el objetivo de tu Maldición del Filo Maléfico te impacta con una tirada de ataque, puedes utilizar tu reacción para tirar un {@dice d6}. Con un resultado de 4 o superior, el ataque falla, independientemente de su tirada."
+			]
+		},
+		{
+			"name": "Maestro de Maldiciones",
+			"source": "XGE-ES",
+			"page": 55,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Filo Maléfico",
+			"subclassSource": "XGE-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 14, puedes extender tu Maldición del Filo Maléfico de una criatura derrotada a otra. Cuando el objetivo afectado por tu Maldición del Filo Maléfico muera, puedes trasladar la maldición a una criatura diferente que puedas ver y se encuentre a 30 pies o menos de ti, siempre que no estés {@condition incapacitado|PHB-ES}. Cuando transfieres la maldición de este modo, no recuperas puntos de golpe por la muerte de la criatura previamente maldita."
+			]
+		}
+	]
+}

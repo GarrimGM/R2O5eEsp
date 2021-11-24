@@ -1,0 +1,2058 @@
+{
+	"class": [
+		{
+			"name": "Monje",
+			"source": "PHB-ES",
+			"page": 76,
+			"srd": true,
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"str",
+				"dex"
+			],
+			"startingProficiencies": {
+				"weapons": [
+					"{@filter armas sencillas|items|source=PHB-ES|type=simple weapon}",
+					"{@item Espada corta|PHB-ES|espadas cortas}"
+				],
+				"tools": [
+					"escoge un tipo de {@filter herramientas de artesano|items|source=PHB-ES|miscellaneous=mundane|type=Herramientas de artesano} o un {@item Instrumentos musicales|PHB-ES|instrumento musical}"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics|Acrobacias",
+								"athletics|Atletismo",
+								"history|Historia",
+								"insight|Perspicacia",
+								"religion|Religión",
+								"stealth|Sigilo"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) una {@item Espada corta|PHB-ES|espada corta} o (b) cualquier {@filter arma sencilla|items|source=PHB-ES|category=basic|type=simple weapon}",
+					"(a) un {@item Paquete de explorador de mazmorras|PHB-ES|paquete de explorador de mazmorras} o (b) un {@item Paquete de explorador|PHB-ES|paquete de explorador}",
+					"10 {@item Dardo|PHB-ES|dardos}"
+				],
+				"goldAlternative": "{@dice 5d4|5d4|Starting Gold}",
+				"defaultData": [
+					{
+						"a": [
+							"Espada corta|PHB-ES"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					},
+					{
+						"a": [
+							"Paquete de explorador de mazmorras|PHB-ES"
+						],
+						"b": [
+							"Paquete de explorador|PHB-ES"
+						]
+					},
+					{
+						"_": [
+							{
+								"item": "Dardo|PHB-ES",
+								"count": 10
+							}
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"dex": 13,
+					"wis": 13
+				},
+				"proficienciesGained": {
+					"weapons": [
+						"{@filter armas sencillas|items|source=PHB-ES|type=simple weapon}",
+						"{@item Espada corta|PHB-ES|espadas cortas}"
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"Artes Marciales",
+						"Puntos de ki",
+						"Mov. sin Armadura"
+					],
+					"rows": [
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							},
+							0,
+							{
+								"type": "bonusSpeed",
+								"value": 0
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							},
+							2,
+							{
+								"type": "bonusSpeed",
+								"value": 10
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							},
+							3,
+							{
+								"type": "bonusSpeed",
+								"value": 10
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							},
+							4,
+							{
+								"type": "bonusSpeed",
+								"value": 10
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							5,
+							{
+								"type": "bonusSpeed",
+								"value": 10
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							6,
+							{
+								"type": "bonusSpeed",
+								"value": 15
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							7,
+							{
+								"type": "bonusSpeed",
+								"value": 15
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							8,
+							{
+								"type": "bonusSpeed",
+								"value": 15
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							9,
+							{
+								"type": "bonusSpeed",
+								"value": 15
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							10,
+							{
+								"type": "bonusSpeed",
+								"value": 20
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							11,
+							{
+								"type": "bonusSpeed",
+								"value": 20
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							12,
+							{
+								"type": "bonusSpeed",
+								"value": 20
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							13,
+							{
+								"type": "bonusSpeed",
+								"value": 20
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							14,
+							{
+								"type": "bonusSpeed",
+								"value": 25
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							15,
+							{
+								"type": "bonusSpeed",
+								"value": 25
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							16,
+							{
+								"type": "bonusSpeed",
+								"value": 25
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							17,
+							{
+								"type": "bonusSpeed",
+								"value": 25
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							18,
+							{
+								"type": "bonusSpeed",
+								"value": 30
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							19,
+							{
+								"type": "bonusSpeed",
+								"value": 30
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							20,
+							{
+								"type": "bonusSpeed",
+								"value": 30
+							}
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"Defensa sin Armadura|Monje|PHB-ES|1",
+				"Artes Marciales|Monje|PHB-ES|1",
+				"Ki|Monje|PHB-ES|2",
+				"Movimiento sin Armadura|Monje|PHB-ES|2",
+				"Desviar Proyectiles|Monje|PHB-ES|3",
+				{
+					"classFeature": "Tradición Monástica|Monje|PHB-ES|3",
+					"gainSubclassFeature": true
+				},
+				"Mejora de Característica|Monje|PHB-ES|4",
+				"Caída Lenta|Monje|PHB-ES|4",
+				"Ataque Adicional|Monje|PHB-ES|5",
+				"Golpe Aturdidor|Monje|PHB-ES|5",
+				"Golpes Potenciados con Ki|Monje|PHB-ES|6",
+				{
+					"classFeature": "Rasgo de Tradición Monástica|Monje|PHB-ES|6",
+					"gainSubclassFeature": true
+				},
+				"Evasión|Monje|PHB-ES|7",
+				"Quietud Mental|Monje|PHB-ES|7",
+				"Mejora de Característica|Monje|PHB-ES|8",
+				"Mejora de Movimiento sin Armadura|Monje|PHB-ES|9",
+				"Pureza de Cuerpo|Monje|PHB-ES|10",
+				{
+					"classFeature": "Rasgo de Tradición Monástica|Monje|PHB-ES|11",
+					"gainSubclassFeature": true
+				},
+				"Mejora de Característica|Monje|PHB-ES|12",
+				"Lengua del Sol y la Luna|Monje|PHB-ES|13",
+				"Alma Diamantina|Monje|PHB-ES|14",
+				"Cuerpo Atemporal|Monje|PHB-ES|15",
+				"Mejora de Característica|Monje|PHB-ES|16",
+				{
+					"classFeature": "Rasgo de Tradición Monástica|Monje|PHB-ES|17",
+					"gainSubclassFeature": true
+				},
+				"Cuerpo Vacío|Monje|PHB-ES|18",
+				"Mejora de Característica|Monje|PHB-ES|19",
+				"Yo Perfecto|Monje|PHB-ES|20"
+			],
+			"subclassTitle": "Tradiciones monásticas",
+			"fluff": [
+				{
+					"name": "Monje",
+					"type": "section",
+					"entries": [
+						"Los puños de la semielfa se mueven a tal velocidad que parecen borrones, desviando la lluvia de flechas que cae sobre ella. Supera de un salto la barricada que la separa de las filas de hobgoblins, sobre los que se abalanza. Se desplaza entre ellos con ágiles giros, bloqueando sus golpes y haciéndoles tambalearse, hasta que ella es la única en pie.",
+						"Inspirando profundamente, un humano cubierto de tatuajes se prepara para el combate, adoptando una postura de lucha. En el instante en que el primero de los orcos que cargan contra él le alcanza, exhala con fuerza una descarga de llamas que envuelve a sus enemigos.",
+						"Protegida por el silencio de la noche, una mediana vestida de negro penetra en las sombras que proyecta un arco, para surgir inmediatamente después en otra oscura sombra, situada en un balcón cercano. Extrae con cuidado su cuchillo de una vaina envuelta en telas y observa al príncipe tirano a través de una ventana abierta. Es tan vulnerable mientras duerme...",
+						"Independientemente de la disciplina que practiquen, todos los monjes tienen en común su capacidad para controlar la energía mágica que fluye a través de sus cuerpos. Ya sea canalizándola a través de una impresionante muestra de habilidad en combate o de un sutil refuerzo de sus capacidades defensivas y su velocidad, esta energía impregna todo lo que el monje hace.",
+						{
+							"type": "entries",
+							"name": "La magia del ki",
+							"entries": [
+								"Los monjes estudian detenidamente una energía mágica que la mayoría de las tradiciones monásticas llaman \"ki\". Esta energía es parte de la magia que permea el multiverso y, más concretamente, el elemento que fluye a través de los seres vivos. Los monjes hacen este poder suyo, controlándolo en el interior de sus propios cuerpos para crear efectos mágicos y superar los límites físicos de su organismo. Además, algunos de sus ataques especiales pueden perturbar el flujo del ki de sus oponentes. A través de esta energía, los monjes dotan a sus ataques sin armas de una fuerza y velocidad asombrosas. Según ganan experiencia, su entrenamiento marcial y su dominio del ki les permite aumentar su control tanto sobre sus propios cuerpos como los de sus enemigos."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Entrenamiento y ascetismo",
+							"entries": [
+								"Los mundos de D&D están llenos de pequeños claustros amurallados; apartados refugios que aíslan a sus habitantes de la vida mundana. En ellos el tiempo parece detenerse. Los monjes que viven en ellos aspiran a alcanzar la perfección personal a través de la contemplación y un entrenamiento riguroso. Muchos entraron en un monasterio cuando aún eran niños, pues fueron enviados allí cuando sus padres murieron, porque no había comida suficiente para alimentarlos o a cambio de algún gesto bondadoso que los monjes tuvieron con sus familias.",
+								"Algunos monjes viven completamente apartados de las poblaciones circundantes, aislados de todo aquello que pudiera estorbar su desarrollo espiritual. Otros se han comprometido a la soledad, de la que solo emergen para servir como espías o asesinos a su líder, a un patrón noble o a cualquier otro poder, ya sea mortal o divino.",
+								"Pero la mayoría de los monjes no rehúyen a sus vecinos, sino que visitan con frecuencia las ciudades y pueblos cercanos, en los que intercambian sus servicios por comida y otros bienes. De hecho, como los versátiles combatientes que son, los monjes a menudo acaban protegiendo a sus conciudadanos de monstruos o tiranos.",
+								"Para un monje, convertirse en aventurero implica dejar atrás una vida estructurada y comunal; convertirse en un vagabundo. Esta puede ser una transición abrupta, por lo que no es una decisión que los monjes tomen a la ligera. Aquellos que dejan sus claustros se toman su trabajo muy en serio, entendiendo sus aventuras como formas de poner a prueba su crecimiento tanto físico como espiritual. Normalmente los monjes no se preocupan prácticamente nada por las riquezas materiales, pues les mueve un deseo de cumplir con una misión importante que va más allá de simplemente matar monstruos y quedarse con su tesoro."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creación de un monje",
+							"entries": [
+								"Cuando crees a tu monje, piensa en su conexión con el monasterio en el que aprendió sus habilidades y paso sus años de formación. ¿Eras huérfano o un niño al que abandonaron en las puertas del monasterio? ¿Te entregaron tus padres al claustro como agradecimiento por un servicio prestado por los monjes? ¿Huiste a una vida de reclusión para esconderte de un crimen que habías cometido? ¿Escogiste la vida monástica por propia voluntad?",
+								"Medita sobre tu razón para dejar el monasterio. ¿Te eligió el abad para llevar a cabo una importante misión fuera de las puertas del claustro? Quizá fuiste expulsado por violar alguna de las reglas de la comunidad. ¿Te horrorizaba marcharte o estabas contento de partir? ¿Existe algo que aspires a conseguir fuera del monasterio? ¿Estas ansioso de volver a tu hogar?",
+								"Como consecuencia de la estructurada vida de una comunidad monástica y de la disciplina necesaria para controlar el ki, los monjes son prácticamente siempre de alineamiento legal.",
+								{
+									"type": "entries",
+									"name": "Creación rápida",
+									"entries": [
+										"Para crear un monje de forma rápida sugerimos lo siguiente. Para empezar, Destreza debería ser tu característica más alta, seguida de Sabiduría. A continuación, elige el trasfondo \"{@background hermit|PHB-ES|ermitaño}\"."
+									]
+								}
+							]
+						}
+					],
+					"source": "PHB-ES",
+					"page": 76
+				},
+				{
+					"type": "section",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"No confundas mi silencio con la aceptación de tu vileza. Mientras tú fanfarroneas y amenazas, he planeado cuatro maneras distintas de partirte el cuello con las manos."
+							],
+							"by": "Ember, gran maestro de las flores"
+						},
+						"Los monjes caminan una senda contradictoria. Estudian su arte como los magos y, al igual que estos, no llevan armadura y suelen evitar las armas. Por otro lado, son combatientes letales cuyas habilidades suelen estar a la par con las de un bárbaro enfurecido o un guerrero magníficamente entrenado. Los miembros de esta clase aceptan esta aparente contradicción, ya que pone en evidencia lo fundamental del estudio monástico: conocerse a uno mismo completamente es conocer mucho del mundo.",
+						"Esta obsesión de los monjes con el dominio interior es lo que lleva a muchos individuos a acabar separados de la sociedad, más preocupados por su experiencia personal que de lo que ocurre fuera. Los aventureros que pertenecen a esta clase son un caso raro dentro de un tipo de personaje poco frecuente, que lleva su búsqueda de la perfección más allá de los muros del monasterio, al mundo exterior.",
+						"Jugar con un aventurero monje ofrece muchas oportunidades de hacer algo diferente. Para distinguir aún más a tu personaje, considera las opciones de los siguientes apartados.",
+						{
+							"type": "entries",
+							"name": "Monasterio",
+							"entries": [
+								"Un monje estudia en un monasterio, preparándose para una vida de ascetismo. La mayoría de los que entran en un santuario lo convierten en su hogar para el resto de sus vidas, a excepción de los aventureros y los que tengan una razón para partir. Para estos individuos, un monasterio puede servir de refugio entre salidas al mundo exterior o como fuente de apoyo en tiempo de necesidad.",
+								"¿Qué clase de lugar era tu santuario y dónde estaba situado? ¿Contribuyó tu estancia allí a tus vivencias de una forma extraña o inusual?",
+								{
+									"type": "table",
+									"caption": "Monasterios",
+									"colLabels": [
+										"{@dice d6}",
+										"Monasterio"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Tu monasterio está tallado en la ladera de una cumbre, desde donde se cierne sobre un peligroso paso de montaña."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"Tu santuario está en las ramas más altas de un árbol enorme en el Feywild."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Tu monasterio fue fundado hace mucho por un gigante de las nubes, por lo que se encuentra en un castillo en los cielos al que solo se puede llegar volando."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"Tu santuario está construido junto a un sistema volcánico de aguas termales, géiseres y estanques sulfúreos. Solíais recibir visitas de comerciantes azers."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"Tu monasterio fue fundado por gnomos, de modo que en realidad es un laberinto subterráneo de túneles y habitaciones."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Tu santuario fue tallado en un iceberg, en los confines helados del mundo."
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Icono monástico",
+							"entries": [
+								"Incluso en el estilo de vida monástico, que rehúye el materialismo y las posesiones personales, el simbolismo es una parte importante de la identidad de una orden. Algunas órdenes monásticas tratan a ciertas criaturas con una reverencia especial, ya sea porque están vinculadas a la historia de esa orden o porque muestran una cualidad que los monjes quieren emular.",
+								"Si el santuario de tu personaje tenía un icono especial, es posible que lleves una burda imagen de este en algún lugar discreto de tus vestimentas, para servir como símbolo de identidad.",
+								"Quizá el icono de tu orden no tenga una forma física, sino que se exprese a través de un gesto o postura que adoptas, y que quizá otros monjes sepan interpretar.",
+								{
+									"type": "table",
+									"caption": "Iconos monásticos",
+									"colLabels": [
+										"{@dice d6}",
+										"Icono"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Mono. Entre las razones por las que tu orden admira al mono se encuentran sus rápidos reflejos y su capacidad para viajar entre las copas de los árboles."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"Dragón tortuga. Los monjes de tu monasterio costero veneran al dragón tortuga. Recitan antiguas plegarias y ofrecen guirnaldas de flores para honrar a este espíritu del mar viviente."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Kirin. Tu monasterio tiene como propósito principal vigilar y proteger la tierra, del mismo modo en que lo hace el kirin."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"Oso lechuza. Los monjes de tu monasterio veneran a una familia de osos lechuza con los que han coexistido durante generaciones."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"Hidra. Tu orden eligió a la hidra por su capacidad de realizar varios ataques simultáneamente."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Dragón. Un dragón tuvo una vez su guarida en tu monasterio. Su influencia aún perdura, incluso largo tiempo después de su partida."
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Maestro",
+							"entries": [
+								"Lo más probable es que, mientras estudiabas, estuvieras bajo la tutela de un maestro que te instruyera en los preceptos de tu orden. Dicho maestro fue el responsable de forjar tu comprensión de las artes marciales y tu actitud hacia el mundo. ¿Qué clase de persona era tu maestro?, ¿cómo te afecta tu relación con él?",
+								{
+									"type": "table",
+									"caption": "Maestros",
+									"colLabels": [
+										"{@dice d6}",
+										"Maestro"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Tu maestro era un tirano al que tuviste que derrotar en combate singular para dar por terminado tu aprendizaje."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"Tu maestro era amable y te enseñó a luchar por la paz."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Tu maestro era despiadado, llevándote hasta tus límites. Casi pierdes un ojo durante una sesión de entrenamiento particularmente brutal."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"Tu maestro parecía tener buenas intenciones mientras te enseñaba, pero acabó traicionando a vuestro monasterio."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"Tu maestro era frío y distante. Sospechas que podríais ser parientes."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Tu maestro era amable y generoso, no criticando nunca tus progresos. No obstante, crees que nunca llegaste a alcanzar las expectativas que había depositado en ti."
+										]
+									]
+								}
+							]
+						}
+					],
+					"source": "XGE-ES",
+					"page": 32
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Camino de la Sombra",
+			"shortName": "Sombra",
+			"source": "PHB-ES",
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"page": 80,
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"ilusión menor|PHB-ES#c"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Camino de la Sombra|Monje|PHB-ES|Sombra|PHB-ES|3",
+				"Paso entre Sombras|Monje|PHB-ES|Sombra|PHB-ES|6",
+				"Capa de Sombras|Monje|PHB-ES|Sombra|PHB-ES|11",
+				"Oportunista|Monje|PHB-ES|Sombra|PHB-ES|17"
+			]
+		},
+		{
+			"name": "Camino de la Mano Abierta",
+			"shortName": "Mano Abierta",
+			"source": "PHB-ES",
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"page": 79,
+			"srd": true,
+			"subclassFeatures": [
+				"Camino de la Mano Abierta|Monje|PHB-ES|Mano Abierta|PHB-ES|3",
+				"Plenitud de Cuerpo|Monje|PHB-ES|Mano Abierta|PHB-ES|6",
+				"Tranquilidad|Monje|PHB-ES|Mano Abierta|PHB-ES|11",
+				"Palma Estremecedora|Monje|PHB-ES|Mano Abierta|PHB-ES|17"
+			]
+		},
+		{
+			"name": "Camino de los Cuatro Elementos",
+			"shortName": "Cuatro Elementos",
+			"source": "PHB-ES",
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"page": 80,
+			"spellcastingAbility": "wis",
+			"subclassFeatures": [
+				"Camino de los Cuatro Elementos|Monje|PHB-ES|Cuatro Elementos|PHB-ES|3",
+				"Disciplina elemental adicional|Monje|PHB-ES|Cuatro Elementos|PHB-ES|6",
+				"Disciplina elemental adicional|Monje|PHB-ES|Cuatro Elementos|PHB-ES|11",
+				"Disciplina elemental adicional|Monje|PHB-ES|Cuatro Elementos|PHB-ES|17"
+			]
+		},
+		{
+			"name": "Camino de la Larga Muerte",
+			"shortName": "Larga Muerte",
+			"source": "SCAG-ES",
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"page": 130,
+			"subclassFeatures": [
+				"Camino de la Larga Muerte|Monje|PHB-ES|Larga Muerte|SCAG-ES|3",
+				"Hora de la Cosecha|Monje|PHB-ES|Larga Muerte|SCAG-ES|6",
+				"Dominio de la Muerte|Monje|PHB-ES|Larga Muerte|SCAG-ES|11",
+				"Toque de la Larga Muerte|Monje|PHB-ES|Larga Muerte|SCAG-ES|17"
+			]
+		},
+		{
+			"name": "Camino del Maestro Borracho",
+			"shortName": "Maestro Borracho",
+			"source": "XGE-ES",
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"page": 33,
+			"subclassFeatures": [
+				"Camino del Maestro Borracho|Monje|PHB-ES|Maestro Borracho|XGE-ES|3",
+				"Bamboleo Achispado|Monje|PHB-ES|Maestro Borracho|XGE-ES|6",
+				"Suerte del Beodo|Monje|PHB-ES|Maestro Borracho|XGE-ES|11",
+				"Furia Embriagada|Monje|PHB-ES|Maestro Borracho|XGE-ES|17"
+			]
+		},
+		{
+			"name": "Camino del Kensei",
+			"shortName": "Kensei",
+			"source": "XGE-ES",
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"page": 34,
+			"subclassFeatures": [
+				"Camino del Kensei|Monje|PHB-ES|Kensei|XGE-ES|3",
+				"Uno con la espada|Monje|PHB-ES|Kensei|XGE-ES|6",
+				"Afilar la Hoja|Monje|PHB-ES|Kensei|XGE-ES|11",
+				"Precisión Infalible|Monje|PHB-ES|Kensei|XGE-ES|17"
+			]
+		},
+		{
+			"name": "Camino del Alma Solar",
+			"shortName": "Alma Solar",
+			"source": "XGE-ES",
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"page": 35,
+			"otherSources": [
+				{
+					"source": "SCAG-ES",
+					"page": 131
+				}
+			],
+			"subclassFeatures": [
+				"Camino del Alma Solar|Monje|PHB-ES|Alma Solar|XGE-ES|3",
+				"Golpe del Arco Ardiente|Monje|PHB-ES|Alma Solar|XGE-ES|6",
+				"Explosión solar abrasadora|Monje|PHB-ES|Alma Solar|XGE-ES|11",
+				"Escudo Solar|Monje|PHB-ES|Alma Solar|XGE-ES|17"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Artes Marciales",
+			"source": "PHB-ES",
+			"page": 76,
+			"srd": true,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"level": 1,
+			"entries": [
+				"A nivel 1 tu práctica de las artes marciales te ha otorgado un dominio de los estilos de combate que emplean ataques sin armas y armas de monje, que son las espadas cortas y cualquier arma sencilla que no posea las propiedades \"a dos manos\" o \"pesada\".",
+				"Obtienes los siguientes beneficios mientras no portes armadura ni escudo, y estés desarmado o empuñes únicamente armas de monje.",
+				{
+					"type": "list",
+					"items": [
+						"Puedes usar tu Destreza en lugar de tu Fuerza para las tiradas de ataque y de daño de tus ataques sin armas y tus armas de monje.",
+						"Puedes tirar {@dice d4} en lugar del daño normal de tus ataques sin armas o tus armas de monje. Este dado cambia según subes niveles como monje, tal y como se muestra en la columna \"artes marciales\" de la tabla del monje.",
+						"Cuando llevas a cabo la acción de {@action Atacar|PHB-ES|Atacar} con un ataque sin armas o un arma de monje durante tu turno, puedes utilizar tu acción adicional para hacer un ataque sin armas. De este modo, si empleas la acción de {@action Atacar|PHB-ES|Atacar} para atacar con un bastón, también puedes realizar un ataque sin armas con tu acción adicional, siempre y cuando no hayas usado ya está."
+					]
+				},
+				"Ciertos monasterios utilizan armas de monje específicas. Por ejemplo, podrías usar un garrote llamado nunchaku, que está compuesto de dos trozos de madera unidos por una cadena corta, o una hoz con un filo más corto y recto, que recibe el nombre de kama"
+			]
+		},
+		{
+			"name": "Defensa sin Armadura",
+			"source": "PHB-ES",
+			"page": 76,
+			"srd": true,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"level": 1,
+			"entries": [
+				"A partir de nivel 1, si no estás portando armadura alguna ni embrazando un escudo, tu Clase de Armadura será 10 + tu modificador por Destreza + tu modificador por Sabiduría."
+			]
+		},
+		{
+			"name": "Ki",
+			"source": "PHB-ES",
+			"page": 76,
+			"srd": true,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"level": 2,
+			"entries": [
+				"A partir de nivel 2, tu entrenamiento te permite controlar la energía mística llamada \"ki\". Tu capacidad de emplearla se representa mediante una serie de puntos de ki. Tu nivel de monje determina cuántos de estos puntos posees, como se muestra en la columna \"puntos de ki\" de la tabla del monje.",
+				"Puedes utilizar estos puntos para alimentar varios rasgos ki. Empiezas con tres de estos rasgos: Ráfaga de Golpes, Defensa Paciente y Paso del Viento. Aprenderás más rasgos ki según vayas subiendo de nivel en esta clase.",
+				"Cuando uses un punto de ki, este dejará de estar disponible hasta que termines un descanso corto o largo, al final del cual volverás a reunir el ki en tu interior. Debes estar meditando durante al menos 30 minutos del descanso para poder recuperar los puntos de ki.",
+				"Algunos de tus rasgos ki exigen a tu objetivo hacer una tirada de salvación para resistir sus efectos. La CD para estas tiradas de salvación se calcula de la siguiente forma:",
+				{
+					"type": "abilityDc",
+					"name": "Ki",
+					"attributes": [
+						"wis"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ráfaga de Golpes",
+					"entries": [
+						"Inmediatamente después de llevar a cabo la acción de {@action Atacar|PHB-ES|Atacar} durante tu turno, puedes gastar un 1 punto de ki para hacer dos ataques sin armas como acción adicional."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Defensa Paciente",
+					"entries": [
+						"Puedes gastar 1 punto de ki para realizar la acción de {@action Esquivar|PHB-ES|Esquivar} como acción adicional durante tu turno."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Paso del Viento",
+					"entries": [
+						"Puedes gastar 1 punto de ki para llevar a cabo las acciones de {@action Destrabarse|PHB-ES|Destrabarse} o {@action Correr|PHB-ES|Correr} como acción adicional durante tu turno. Además, tu distancia de salto se duplica durante este turno."
+					]
+				}
+			]
+		},
+		{
+			"name": "Movimiento sin Armadura",
+			"source": "PHB-ES",
+			"page": 76,
+			"srd": true,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"level": 2,
+			"entries": [
+				"A partir de nivel 2, si no estás llevando armadura ni escudo, tu velocidad aumenta en 10 pies. Esta bonificación aumenta según alcanzas ciertos niveles de monje, tal y como se muestra en la tabla del monje.",
+				"A nivel 9 obtienes la capacidad para moverte, durante tu turno, por superficies verticales y sobre líquidos sin caerte."
+			]
+		},
+		{
+			"name": "Desviar Proyectiles",
+			"source": "PHB-ES",
+			"page": 76,
+			"srd": true,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"level": 3,
+			"entries": [
+				"A partir de nivel 3, puedes usar tu reacción para desviar o atrapar el proyectil de un ataque con arma a distancia que te haya impactado. Si haces esto, el daño que recibes del ataque se reduce en {@dice 1d10} + tu modificador por Destreza + tu nivel de monje.",
+				"Si disminuyes el daño a 0 podrás atrapar el proyectil, siempre y cuando este sea lo bastante pequeño como para que puedas sujetarlo con una mano y tengas al menos una mano libre. Si atrapas el proyectil, puedes gastar 1 punto de ki para, como parte de la misma reacción, realizar un ataque a distancia con el arma o unidad de munición que acabas de atrapar. Haces este ataque como si fueras competente, independientemente de tus competencias con armas, y el proyectil cuenta como un arma de monje a efectos del ataque, que tiene un alcance normal de 20 ies y un alcance largo de 60 pies."
+			]
+		},
+		{
+			"name": "Tradición Monástica",
+			"source": "PHB-ES",
+			"page": 76,
+			"srd": true,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"level": 3,
+			"entries": [
+				"Cuando alcanzas el nivel 3 te entregas a una tradición monástica de entre las siguientes: el Camino de la Mano Abierta, el Camino de la Sombra o el Camino de los Cuatro Elementos. Todas ellas están detalladas al final de la descripción de esta clase. Tu tradición te proporciona ciertos rasgos cuando alcanzas los niveles 3, 6, 11 y 17."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 76,
+			"srd": true,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"level": 4,
+			"entries": [
+				"Cuando alcances el nivel 4 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Caída Lenta",
+			"source": "PHB-ES",
+			"page": 76,
+			"srd": true,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"level": 4,
+			"entries": [
+				"A partir de nivel 4, puedes usar tu reacción cuando caigas para reducir cualquier daño por caída que recibas en cinco veces tú nivel de monje."
+			]
+		},
+		{
+			"name": "Ataque Adicional",
+			"source": "PHB-ES",
+			"page": 76,
+			"srd": true,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"level": 5,
+			"entries": [
+				"A partir de nivel 5, cuando lleves a cabo la acción de {@action Atacar|PHB-ES|Atacar} durante tu turno, podrás hacer dos ataques en lugar de uno."
+			]
+		},
+		{
+			"name": "Golpe Aturdidor",
+			"source": "PHB-ES",
+			"page": 76,
+			"srd": true,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"level": 5,
+			"entries": [
+				"A partir de nivel 5, puedes interferir con el flujo de ki del cuerpo de un oponente. Cuando impactes a una criatura con un ataque con arma cuerpo a cuerpo, puedes gastar 1 punto de ki para intentar realizar un golpe aturdidor. El objetivo debe tener éxito en una tirada de salvación de Constitución o quedará {@condition Aturdido|PHB-ES|aturdido} hasta el final de tu siguiente turno."
+			]
+		},
+		{
+			"name": "Golpes Potenciados con Ki",
+			"source": "PHB-ES",
+			"page": 76,
+			"srd": true,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"level": 6,
+			"entries": [
+				"A partir de nivel 6, tus ataques sin armas cuentan como mágicos a efectos de superar las resistencias e inmunidades a ataques y daño no mágicos."
+			]
+		},
+		{
+			"name": "Rasgo de Tradición Monástica",
+			"source": "PHB-ES",
+			"page": 76,
+			"srd": true,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"level": 6,
+			"entries": [
+				"A nivel 6 ganas un rasgo de tu Tradición Monástica."
+			]
+		},
+		{
+			"name": "Evasión",
+			"source": "PHB-ES",
+			"page": 76,
+			"srd": true,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"level": 7,
+			"entries": [
+				"A nivel 7 tu agilidad instintiva te da opción de evitar ciertos efectos de área, como el aliento de relámpago de un dragón o un conjuro de {@spell Bola de fuego|PHB-ES|bola de fuego}. Cuando seas víctima de un efecto que te permita hacer una tirada de salvación de Destreza para recibir solo la mitad del daño, no recibirás daño alguno si tienes éxito en la tirada de salvación y solo la mitad si la fallas."
+			]
+		},
+		{
+			"name": "Quietud Mental",
+			"source": "PHB-ES",
+			"page": 76,
+			"srd": true,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"level": 7,
+			"entries": [
+				"A partir de nivel 7, puedes utilizar tu acción para finalizar un efecto que te esté causando los estados \"{@condition Hechizado|PHB-ES|hechizado}\" o \"{@condition Asustado|PHB-ES|asustado}\"."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 76,
+			"srd": true,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"level": 8,
+			"entries": [
+				"Cuando alcances el nivel 8 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Mejora de Movimiento sin Armadura",
+			"source": "PHB-ES",
+			"page": 76,
+			"srd": true,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"level": 9,
+			"entries": [
+				"A nivel 9 obtienes la capacidad para moverte, durante tu turno, por superficies verticales y sobre líquidos sin caerte."
+			]
+		},
+		{
+			"name": "Pureza de Cuerpo",
+			"source": "PHB-ES",
+			"page": 76,
+			"srd": true,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"level": 10,
+			"entries": [
+				"A nivel 10 tu maestría sobre el ki que fluye a través de ti te hace inmune a la enfermedad y el veneno."
+			]
+		},
+		{
+			"name": "Rasgo de Tradición Monástica",
+			"source": "PHB-ES",
+			"page": 76,
+			"srd": true,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"level": 11,
+			"entries": [
+				"A nivel 11 ganas un rasgo de tu Tradición Monástica."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 76,
+			"srd": true,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"level": 12,
+			"entries": [
+				"Cuando alcances el nivel 12 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Lengua del Sol y la Luna",
+			"source": "PHB-ES",
+			"page": 76,
+			"srd": true,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"level": 13,
+			"entries": [
+				"A partir de nivel 13, aprendes a tocar el ki de otras mentes, de tal forma que puedes entender todos los idiomas hablados. Además, cualquier criatura que pueda comprender al menos un idioma entenderá lo que digas."
+			]
+		},
+		{
+			"name": "Alma Diamantina",
+			"source": "PHB-ES",
+			"page": 76,
+			"srd": true,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"level": 14,
+			"entries": [
+				"A partir de nivel 14, tu dominio del ki te otorga competencia en todas las tiradas de salvación.",
+				"Además, cada vez que intentes hacer una tirada de salvación y falles, podrás gastar 1 punto de ki para repetir la tirada y quedarte con el nuevo resultado."
+			]
+		},
+		{
+			"name": "Cuerpo Atemporal",
+			"source": "PHB-ES",
+			"page": 76,
+			"srd": true,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"level": 15,
+			"entries": [
+				"A nivel 15 tu ki es capaz de mantenerte, de tal forma que no sufres de la fragilidad de la vejez y no puedes envejecer por medios mágicos. Aun así, todavía puedes morir de viejo. Además, ya no necesitas ni agua ni comida."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 76,
+			"srd": true,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"level": 16,
+			"entries": [
+				"Cuando alcances el nivel 16 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Rasgo de Tradición Monástica",
+			"source": "PHB-ES",
+			"page": 76,
+			"srd": true,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"level": 17,
+			"entries": [
+				"A nivel 17 ganas un rasgo de tu Tradición Monástica."
+			]
+		},
+		{
+			"name": "Cuerpo Vacío",
+			"source": "PHB-ES",
+			"page": 76,
+			"srd": true,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"level": 18,
+			"entries": [
+				"A partir de nivel 18, puedes usar tu acción y gastar 4 puntos de ki para volverte {@condition Invisible|PHB-ES|invisible} durante 1 minuto. Durante este periodo de tiempo, también tendrás resistencia a todo el daño excepto el de fuerza.",
+				"Asimismo, puedes gastar 8 puntos de ki para lanzar el conjuro {@spell Proyección astral|PHB-ES|proyección astral} sin tener que utilizar componente material alguno. Sin embargo, no podrás llevar contigo a ninguna otra criatura."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 76,
+			"srd": true,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"level": 19,
+			"entries": [
+				"Cuando alcances el nivel 19 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Yo Perfecto",
+			"source": "PHB-ES",
+			"page": 76,
+			"srd": true,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"level": 20,
+			"entries": [
+				"A nivel 20, si cuando tiras iniciativa no te quedan puntos de ki, recuperas 4 de ellos."
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Camino de los Cuatro Elementos",
+			"source": "PHB-ES",
+			"page": 80,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Cuatro Elementos",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"entries": [
+				"Sigues una tradición monástica que te enseña a dominar los elementos. Cuando concentras tu ki, puedes alinearte con las fuerzas de la creación y doblegar los cuatro elementos a tu voluntad, utilizándolos como si de una extensión de tu propio cuerpo se trataran. Algunos miembros de esta tradición se entregan a un único elemento, mientras que otros los entrelazan.",
+				"Muchos monjes del Camino de los Cuatro Elementos tatúan sus cuerpos con símbolos de sus poderes ki, representándolos habitualmente como dragones enroscados, aunque a veces también como peces, plantas, fénix, montañas o crestas de olas.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Discípulo de los Elementos|Monje|PHB-ES|Cuatro Elementos|PHB-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Disciplinas elementales|Monje|PHB-ES|Cuatro Elementos|PHB-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Discípulo de los Elementos",
+			"source": "PHB-ES",
+			"page": 80,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Cuatro Elementos",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A partir del momento en el que escoges esta tradición, a nivel 3, puedes aprender disciplinas mágicas que te permiten controlar el poder de los cuatro elementos. Cada vez que uses una disciplina tendrás que gastar puntos de ki.",
+				"Conoces la disciplina Armonía con los Elementos y otra disciplina de tu elección. Estas están detalladas en la sección \"Disciplinas elementales\", que se encuentra más adelante. Aprendes una disciplina adicional de tu elección cuando alcanzas los niveles 6, 11 y 17.",
+				"Cada vez que aprendas una disciplina elemental nueva, también podrás reemplazar una de las que ya conozcas por otra distinta.",
+				{
+					"type": "entries",
+					"name": "Lanzar conjuros elementales",
+					"entries": [
+						"Algunas disciplinas elementales te permiten lanzar conjuros. El {@book capítulo 10|PHB-ES|10} contiene las reglas necesarias para ello. Para lanzar uno de estos conjuros, utilizarás su tiempo de lanzamiento, así como cualquier otra regla pertinente, pero no tendrás que aportar componentes materiales.",
+						"Una vez alcances el nivel 5 de esta clase, podrás invertir puntos de ki adicionales para aumentar el nivel del conjuro de una disciplina elemental que lances, siempre y cuando dicho conjuro produzca un efecto mejorado a niveles superiores, como es el caso de, por ejemplo, {@spell Manos ardientes|PHB-ES|manos ardientes}. El nivel del conjuro aumenta en uno por cada punto de ki adicional que gastes. Así, si eres un monje de nivel 5 y usas Barrido de las Ascuas para lanzar {@spell Manos ardientes|PHB-ES|manos ardientes}, podrás gastar 3 puntos de ki para lanzarlo como si fuera un conjuro de nivel 2 (el coste base de la disciplina de 2 puntos de ki más 1).",
+						"La cantidad máxima de puntos de ki que puedes invertir en lanzar un conjuro de esta forma (incluye tanto el coste base como los puntos de ki adicionales para aumentar el nivel) viene determinado por tu nivel de monje, tal y como se indica en la tabla \"conjuros y puntos de ki\".",
+						{
+							"type": "table",
+							"caption": "Conjuros y puntos de ki",
+							"colLabels": [
+								"Nivel de monje",
+								"Puntos de ki máximos para un conjuro"
+							],
+							"colStyles": [
+								"col-5 text-center",
+								"col-7 text-center"
+							],
+							"rows": [
+								[
+									"5-8",
+									3
+								],
+								[
+									"9-12",
+									4
+								],
+								[
+									"13-16",
+									5
+								],
+								[
+									"17-20",
+									6
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Disciplinas elementales",
+			"source": "PHB-ES",
+			"page": 80,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Cuatro Elementos",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Las disciplinas elementales están dispuestas en orden alfabético. Si una disciplina exige un nivel mínimo, deberás haber alcanzado dicho nivel en esta clase para poder aprender dicha disciplina.",
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Aliento del Invierno|PHB-ES",
+							"name": "Aliento del Invierno (requiere nivel 17)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Agarre del Viento del Norte|PHB-ES",
+							"name": "Agarre del Viento del Norte (requiere nivel 6)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Armonía con los Elementos|PHB-ES",
+							"data": {
+								"isRequiredOption": true
+							}
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Defensa de la Montaña Eterna|PHB-ES",
+							"name": "Defensa de la Montaña Eterna (requiere nivel 17)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Colmillos de la Serpiente Ígnea|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Puño de los Cuatro Truenos|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Puño del Aire Inquebrantable|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Llamas del Fénix|PHB-ES",
+							"name": "Llamas del Fénix (requiere nivel 11)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Gong de la Cumbre|PHB-ES",
+							"name": "Gong de la Cumbre (requiere nivel 6)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Postura de la Niebla|PHB-ES",
+							"name": "Postura de la Niebla (requiere nivel 11)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Cabalgar el Viento|PHB-ES",
+							"name": "Cabalgar el Viento (requiere nivel 11)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Río de la Llama Insaciable|PHB-ES",
+							"name": "Río de la Llama Insaciable (requiere nivel 17)"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Ráfaga de los Espíritus del Vendaval|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Moldear el Río que Fluye|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Barrido de las Ascuas|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Látigo de Agua|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Ola de la Tierra Ondulante|PHB-ES",
+							"name": "Ola de la Tierra Ondulante (requiere nivel 17)"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Disciplina elemental adicional",
+			"source": "PHB-ES",
+			"page": 80,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Cuatro Elementos",
+			"subclassSource": "PHB-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Aprendes una disciplina adicional de tu elección. Debes conocer 2 disciplinas elementales, además de Armonía con los Elementos.",
+				"Cada vez que aprendas una disciplina elemental nueva, también podrás reemplazar una de las que ya conozcas por otra distinta."
+			]
+		},
+		{
+			"name": "Disciplina elemental adicional",
+			"source": "PHB-ES",
+			"page": 80,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Cuatro Elementos",
+			"subclassSource": "PHB-ES",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"Aprendes una disciplina adicional de tu elección. Debes conocer 3 disciplinas elementales, además de Armonía con los Elementos.",
+				"Cada vez que aprendas una disciplina elemental nueva, también podrás reemplazar una de las que ya conozcas por otra distinta."
+			]
+		},
+		{
+			"name": "Disciplina elemental adicional",
+			"source": "PHB-ES",
+			"page": 80,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Cuatro Elementos",
+			"subclassSource": "PHB-ES",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"Aprendes una disciplina adicional de tu elección. Debes conocer 4 disciplinas elementales, además de Armonía con los Elementos.",
+				"Cada vez que aprendas una disciplina elemental nueva, también podrás reemplazar una de las que ya conozcas por otra distinta."
+			]
+		},
+		{
+			"name": "Camino de la Mano Abierta",
+			"source": "PHB-ES",
+			"page": 79,
+			"srd": true,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Mano Abierta",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"entries": [
+				"Los monjes del Camino de la Mano Abierta son los maestros definitivos de las artes marciales, ya sea con o sin armas. Aprenden técnicas que les permiten empujar y derribar a sus oponentes, manipular el ki para curar sus propios cuerpos y practicar un tipo de meditación avanzada que les protege de toda agresión.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Técnica de la Mano Abierta|Monje|PHB-ES|Mano Abierta|PHB-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Técnica de la Mano Abierta",
+			"source": "PHB-ES",
+			"page": 79,
+			"srd": true,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Mano Abierta",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A partir del momento en el que escoges esta tradición, a nivel 3, puedes manipular el ki de tus enemigos mientras dominas el tuyo propio. Cuando impactas a una criatura con uno de los ataques que te proporciona Ráfaga de Golpes, puedes obligarla a sufrir uno de los siguientes efectos:",
+				{
+					"type": "list",
+					"items": [
+						"Debe superar una tirada de salvación de Destreza o será {@condition Derribado|PHB-ES|derribado}.",
+						"Ha de hacer una tirada de salvación de Fuerza. Si falla, puedes empujarla hasta 15 pies en dirección contraria a ti.",
+						"No puede realizar reacciones hasta el final de tu siguiente turno."
+					]
+				}
+			]
+		},
+		{
+			"name": "Plenitud de Cuerpo",
+			"source": "PHB-ES",
+			"page": 79,
+			"srd": true,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Mano Abierta",
+			"subclassSource": "PHB-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A nivel 6 obtienes la capacidad de sanarte a ti mismo. Puedes usar una acción para recuperar tantos puntos de golpe como tres veces tu nivel de monje. Una vez utilizado este rasgo, debe ras terminar un descanso largo para poder volver emplearlo de nuevo."
+			]
+		},
+		{
+			"name": "Tranquilidad",
+			"source": "PHB-ES",
+			"page": 79,
+			"srd": true,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Mano Abierta",
+			"subclassSource": "PHB-ES",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 11, puedes iniciar una meditación especial que te rodea de un aura de paz. Al terminar un descanso largo obtienes los beneficios equivalentes a un conjuro {@spell Santuario|PHB-ES|santuario} que dura hasta el comienzo de tu siguiente descanso largo. El conjuro puede terminar antes de tiempo de forma normal. La CD de la tirada de salvación del conjuro es de 8 + tu modificador por Sabiduría + tu bonificador por competencia."
+			]
+		},
+		{
+			"name": "Palma Estremecedora",
+			"source": "PHB-ES",
+			"page": 79,
+			"srd": true,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Mano Abierta",
+			"subclassSource": "PHB-ES",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"A nivel 17 consigues la capacidad para transmitir vibraciones letales al cuerpo de un oponente. Cuando impactas a una criatura con un ataque sin armas, puedes gastar 3 puntos de ki para iniciar estas vibraciones imperceptibles, que durarán tantos días como tu nivel de monje. Las vibraciones son inofensivas, salvo si usas tu acción para hacer que terminen. Para poder realizar esto, tu objetivo debe estar en el mismo plano de existencia que tú. Cuando lleves a cabo esta acción, la criatura deberá hacer una tirada de salvación de Constitución. Si falla, sus puntos de golpe bajarán a 0. Si tiene éxito, recibirá {@damage 10d10} de daño necrótico.",
+				"Solo eres capaz de tener una criatura bajo los efectos de este rasgo al mismo tiempo. También puedes elegir dar por terminadas las vibraciones de forma inocua sin necesidad de usar ninguna acción."
+			]
+		},
+		{
+			"name": "Camino de la Sombra",
+			"source": "PHB-ES",
+			"page": 80,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Sombra",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"entries": [
+				"Los monjes del Camino de la Sombra siguen una tradición que valora el sigilo y el subterfugio. Estos monjes son conocidos en ciertos lugares como ninjas o bailarines sombríos, y sirven como espías y asesinos. A veces los miembros de un monasterio de ninjas son parte de una misma familia, un clan que ha jurado mantener en secreto sus artes y sus misiones. Otros monasterios son más parecidos a un gremio de ladrones, ya que ofertan sus servicios a nobles, ricos mercaderes o cualquiera que pueda permitirse sus tarifas. Independientemente de sus métodos, los líderes de estos monasterios esperan una obediencia incondicional por parte de sus estudiantes.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Artes Sombrías|Monje|PHB-ES|Sombra|PHB-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Artes Sombrías",
+			"source": "PHB-ES",
+			"page": 80,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Sombra",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A partir del momento en el que escoges esta tradición, a nivel 3, puedes utilizar tu ki para duplicar los efectos de ciertos conjuros. Como acción, puedes usar 2 puntos de ki para lanzar {@spell Oscuridad|PHB-ES|oscuridad}, {@spell Pasar sin rastro|PHB-ES|pasar sin rastro}, {@spell Silencio|PHB-ES|silencio} o {@spell Visión en la oscuridad|PHB-ES|visión en la oscuridad} sin tener que emplear componente material alguno. Además, también obtienes el truco {@spell Ilusión menor|PHB-ES|ilusión menor}, si es que no lo conocías ya."
+			]
+		},
+		{
+			"name": "Paso entre Sombras",
+			"source": "PHB-ES",
+			"page": 80,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Sombra",
+			"subclassSource": "PHB-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A nivel 6 obtienes la facultad para saltar de una sombra a otra. Cuando estás en una zona de luz tenue u oscuridad, puedes usar una acción adicional para teletransportarte hasta 60 pies a un espacio desocupado que puedas ver y que también esté en un área de luz tenue u oscuridad. Después de hacer esto, tendrás ventaja en el primer ataque cuerpo a cuerpo que realices antes del final del turno."
+			]
+		},
+		{
+			"name": "Capa de Sombras",
+			"source": "PHB-ES",
+			"page": 80,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Sombra",
+			"subclassSource": "PHB-ES",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"A nivel 11 ya has aprendido a fundirte por completo con las sombras. Cuando estás en una zona de luz tenue u oscuridad, puedes emplear tu acción para volverte {@condition Invisible|PHB-ES|invisible}. Seguirás siendo {@condition Invisible|PHB-ES|invisible} hasta que ataques, lances un conjuro o te encuentres en una zona de luz brillante."
+			]
+		},
+		{
+			"name": "Oportunista",
+			"source": "PHB-ES",
+			"page": 80,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Sombra",
+			"subclassSource": "PHB-ES",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"A nivel 17 puedes aprovecharte de la distracción fugaz que produce en una criatura el ser impactada por un ataque. Cuando una criatura que se encuentre a 5 pies o menos de ti sea impactada por un ataque hecho por otra criatura que no seas tú, podrás usar tu reacción para realizar un ataque cuerpo a cuerpo contra la criatura impactada."
+			]
+		},
+		{
+			"name": "Camino de la Larga Muerte",
+			"source": "SCAG-ES",
+			"page": 130,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Larga Muerte",
+			"subclassSource": "SCAG-ES",
+			"level": 3,
+			"entries": [
+				"Los monjes del Camino de la Larga Muerte están obsesionados con el significado de la muerte y el proceso de morir. Atrapan a criaturas y preparan experimentos elaborados para capturar, registrar y entender los instantes de sus fallecimientos. Luego usan este conocimiento para guiar su comprensión de las artes marciales y practican un estilo de combate mortal.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Toque de la Muerte|Monje|PHB-ES|Larga Muerte|SCAG-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Toque de la Muerte",
+			"source": "SCAG-ES",
+			"page": 130,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Larga Muerte",
+			"subclassSource": "SCAG-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A partir del momento en que escoges esta tradición, a nivel 3, tu estudio de la muerte te permite extraer vitalidad de otra criatura a medida que se aproxima su defunción. Cuando reduces a 0 los puntos de golpe de una criatura situada a 5 pies o menos de ti, obtienes tantos puntos de golpe temporales como tu modificador de Sabiduría + tu nivel de monje (1 punto de golpe temporal como mínimo)."
+			]
+		},
+		{
+			"name": "Hora de la Cosecha",
+			"source": "SCAG-ES",
+			"page": 130,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Larga Muerte",
+			"subclassSource": "SCAG-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A nivel 6, obtienes la habilidad de perturbar o aterrorizar a quienes te rodean utilizando una acción, pues la sombra de la muerte ha tocado tu alma. Cuando llevas a cabo esta acción, toda criatura que se encuentre a 30 pies o menos de ti que puedas ver debe superar una tirada de salvación de Sabiduría o estará {@condition asustado|PHB-ES|asustada} hasta el final de tu siguiente turno."
+			]
+		},
+		{
+			"name": "Dominio de la Muerte",
+			"source": "SCAG-ES",
+			"page": 130,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Larga Muerte",
+			"subclassSource": "SCAG-ES",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"A partir del nivel 11, puedes utilizar tu conocimiento sobre la muerte para escapar de su alcance. Cuando tus puntos de golpe descienden a 0, puedes gastar 1 punto de ki (no es necesario utilizar una acción) para que tus puntos de golpe pasen a ser 1."
+			]
+		},
+		{
+			"name": "Toque de la Larga Muerte",
+			"source": "SCAG-ES",
+			"page": 130,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Larga Muerte",
+			"subclassSource": "SCAG-ES",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"A partir del nivel 17, tu toque es capaz de canalizar la energía de la muerte sobre una criatura. Puedes tocar a una criatura que esté a 5 pies o menos de ti como acción y gastar entre 1 y 10 puntos de ki. El objetivo deberá hacer una tirada de salvación de Constitución y sufrirá {@damage 2d10} de daño necrótico por punto de ki invertido si la falla o la mitad de ese daño si la supera."
+			]
+		},
+		{
+			"name": "Camino del Maestro Borracho",
+			"source": "XGE-ES",
+			"page": 33,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Maestro Borracho",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"El Camino del Maestro Borracho enseña a sus estudiantes a moverse de forma errática e impredecible, como un borracho. Un maestro borracho se balancea, tambaleándose sobre sus piernas inestables y presentando un oponente aparentemente incompetente, pero frustrante en combate. Los trompicones de estos monjes ocultan un baile cuidadosamente ejecutado de paradas, esquivas, avances, ataques y retiradas.",
+				"El maestro borracho se divierte haciéndose el tonto, para alegrar a los alicaídos o enseñar humildad a los arrogantes, pero cuando da comienzo la batalla, se convierte en un experto que enfurece a sus oponentes.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Competencias Adicionales|Monje|PHB-ES|Maestro Borracho|XGE-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Técnica Ebria|Monje|PHB-ES|Maestro Borracho|XGE-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Competencias Adicionales",
+			"source": "XGE-ES",
+			"page": 33,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Maestro Borracho",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Cuando eliges esta tradición a nivel 3, ganas competencia con la habilidad {@skill Performance|Interpretación}, si no la tenías ya. Tu arte marcial mezcla entrenamiento de combate con la precisión de un bailarín y las payasadas de un bufón. También obtienes competencia con {@item suministros de cervecero|PHB-ES}, si no la tenías ya."
+			]
+		},
+		{
+			"name": "Técnica Ebria",
+			"source": "XGE-ES",
+			"page": 33,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Maestro Borracho",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A nivel 3, aprendes a girarte y retorcerte rápidamente durante tu Ráfaga de Golpes. Siempre que uses Ráfaga de Golpes, recibes los beneficios de la acción de {@action Destrabarse|PHB-ES} y. además, tu velocidad caminando se incrementa en 10 pies hasta el final del turno actual."
+			]
+		},
+		{
+			"name": "Bamboleo Achispado",
+			"source": "XGE-ES",
+			"page": 33,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Maestro Borracho",
+			"subclassSource": "XGE-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 6, puedes moverte de formas súbitas y bamboleantes. Obtienes los beneficios siguientes:",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Ponerse en pie de un salto|Monje|XGE-ES|Maestro Borracho|XGE-ES|6"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Redirigir ataque|Monje|XGE-ES|Maestro Borracho|XGE-ES|6"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Suerte del Beodo",
+			"source": "XGE-ES",
+			"page": 33,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Maestro Borracho",
+			"subclassSource": "XGE-ES",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 11, parece que siempre tienes suerte en el momento justo. Cuando haces una prueba de característica, una tirada de ataque o una tirada de salvación y sufres desventaja en la tirada, puedes gastar 2 puntos de ki para cancelar esa desventaja."
+			]
+		},
+		{
+			"name": "Furia Embriagada",
+			"source": "XGE-ES",
+			"page": 33,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Maestro Borracho",
+			"subclassSource": "XGE-ES",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"A nivel 17 eres capaz de realizar un número abrumador de ataques sobre un grupo de enemigos. Cuando utilizas tu Ráfaga de Golpes, puedes hacer hasta tres ataques adicionales con ella (hasta un total de cinco ataques de Ráfaga de Golpes), siempre y cuando cada ataque de la Ráfaga de Gol pes tenga como objetivo a una criatura diferente este turno."
+			]
+		},
+		{
+			"name": "Camino del Kensei",
+			"source": "XGE-ES",
+			"page": 34,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Kensei",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"Los monjes del Camino del Kensei entrenan incansable mente con sus armas, hasta el punto de que estas no son más que una extensión de su cuerpo. Inicialmente basada en la maestría de la espada, esta tradición se ha expandido para incluir muchas armas diferentes.",
+				"Un kensei ve un arma de la misma manera que un calígrafo o pintor percibe una pluma o pincel. Sea cual sea el arma, para estos monjes es una herramienta con la que expresar la belleza y precisión de las artes marciales. Que esta maestría convierta al kensei en un guerrero sin igual es solo un efecto secundario de la intensa devoción, práctica y estudio.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Sendero del Kensei|Monje|PHB-ES|Kensei|XGE-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Sendero del Kensei",
+			"source": "XGE-ES",
+			"page": 34,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Kensei",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Cuando eliges esta tradición a nivel 3, tu entrenamiento en las artes marciales te lleva a convertir en un maestro en ciertas armas. También incluye instrucción en caligrafía o pintura. Obtienes los beneficios siguientes:",
+				{
+					"type": "entries",
+					"name": "Armas de kensei",
+					"entries": [
+						"Elige dos tipos de armas para ser tus armas de kensei: una cuerpo a cuerpo y una a distancia. Pueden ser cualquier arma sencilla o marcial que no tenga las propiedades \"especial\" o \"pesada\". El arco largo también es una elección válida. Consigues competencia con esas armas si no la tenías. Las armas del tipo escogido se consideran armas de monje para ti. Muchos de los rasgos de esta tradición solo funcionan con tus armas de kensei. Cuando llegas a nivel 6, 11 y 17 de esta clase, puedes elegir otro tipo de arma, ya sea cuerpo a cuerpo o a distancia, para que sea también un arma de kensei para ti, siguiendo las mismas limitaciones ya indicadas."
+					]
+				},
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Bloqueo veloz|Monje|XGE-ES|Kensei|XGE-ES|3"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Disparo del kensei|Monje|XGE-ES|Kensei|XGE-ES|3"
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Camino del pincel",
+					"entries": [
+						"Ganas competencia con {@item suministros de calígrafo|PHB-ES} o de {@item suministros de pintor|PHB-ES|pintor}, a tu elección."
+					]
+				}
+			]
+		},
+		{
+			"name": "Uno con la espada",
+			"source": "XGE-ES",
+			"page": 34,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Kensei",
+			"subclassSource": "XGE-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A nivel 6, puedes extender tu ki a tus armas de kensei, obteniendo los siguientes beneficios.",
+				{
+					"type": "entries",
+					"name": "Armas mágicas de kensei",
+					"entries": [
+						"Los ataques que hagas con armas de kensei cuentan como mágicos en lo que a sobrepasar las resistencias e inmunidades a daño y ataques no mágicos se refiere."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Golpe diestro",
+					"entries": [
+						"Cuando impactas a un objetivo con un ataque con un arma de kensei, puedes gastar 1 punto de ki para que el arma inflija daño adicional al objetivo igual a tu dado de Artes Marciales. Solo puedes usar este rasgo una vez en cada uno de tus turnos."
+					]
+				}
+			]
+		},
+		{
+			"name": "Afilar la Hoja",
+			"source": "XGE-ES",
+			"page": 34,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Kensei",
+			"subclassSource": "XGE-ES",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"A nivel 11 obtienes la capacidad de potenciar aún más tus armas mediante tu ki. Como acción adicional, puedes gastar hasta 3 puntos de ki para infundir un arma de kensei que toques con un bonificador a las tiradas de ataque y daño cuando ataques con ella. El bonificador es igual a los puntos de ki que gastes. Dura 1 minuto o hasta que vuelvas a usar este rasgo. No tiene efecto en un arma mágica que ya tenga un bonificador a las tiradas de ataque y daño."
+			]
+		},
+		{
+			"name": "Precisión Infalible",
+			"source": "XGE-ES",
+			"page": 34,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Kensei",
+			"subclassSource": "XGE-ES",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"A nivel 17, tu maestría con las armas se traduce en una precisión extraordinaria. Si fallas una tirada de ataque utilizando un arma de monje en tu turno, puedes repetirla. Solo puedes usar este rasgo una vez en cada uno de tus turnos."
+			]
+		},
+		{
+			"name": "Camino del Alma Solar",
+			"source": "XGE-ES",
+			"page": 35,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Alma Solar",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"Los monjes del Camino del Alma Solar aprenden a canalizar su propia energía vital en rayos de luz abrasadores. Predican que meditar puede desencadenar la habilidad de desatar una luz indómita que irradia del alma de toda criatura viva.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Rayo de Sol Radiante|Monje|PHB-ES|Alma Solar|XGE-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Rayo de Sol Radiante",
+			"source": "XGE-ES",
+			"page": 35,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Alma Solar",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A partir del momento en que escoges esta tradición, a nivel 3, puedes lanzar rayos de resplandor mágico abrasador.",
+				"Obtienes un ataque de conjuro a distancia que puedes usar con tu acción de {@action Atacar|PHB-ES}. El ataque tiene un alcance de 30 pis. Eres competente en él y añades tu modificador de Destreza a las tiradas de ataque y daño. Su daño es radiante y usas {@dice d4} como dado de daño. Este dado cambia según subes niveles como monje, tal y como se muestra en la columna \"Artes Marciales\" de la tabla del monje.",
+				"Si empleas la acción {@action Atacar|PHB-ES} en tu turno para usar este ataque especial, puedes gastar 1 punto de ki para hacer otros dos ataques de este tipo como acción adicional.",
+				"Si obtienes el rasgo Ataque Adicional, podrás utilizar este ataque especial como cualquiera de los ataques que realizas como parte de la acción {@action Atacar|PHB-ES}."
+			]
+		},
+		{
+			"name": "Golpe del Arco Ardiente",
+			"source": "XGE-ES",
+			"page": 35,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Alma Solar",
+			"subclassSource": "XGE-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Cuando llegas al nivel 6, obtienes la habilidad de canalizar tu ki en forma de olas de energía abrasadoras. Justo después de que realices una acción {@action Atacar|PHB-ES} durante tu turno, puedes gastar 2 puntos de ki para lanzar el conjuro de nivel 1 {@spell manos ardientes|PHB-ES} como acción adicional.",
+				"Puedes gastar más puntos de ki para lanzar {@spell manos ardientes|PHB-ES} como conjuro de nivel superior. El nivel del conjuro aumenta en uno por cada punto de ki adicional que gastes. La cantidad máxima de puntos de ki (2 más cualquier punto adicional) que puedes gastar en el conjuro es equivalente a la mitad de tu nivel de monje (redondeando hacia abajo)."
+			]
+		},
+		{
+			"name": "Explosión solar abrasadora",
+			"source": "XGE-ES",
+			"page": 35,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Alma Solar",
+			"subclassSource": "XGE-ES",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"Cuando llegas al nivel 11, ganas la habilidad de crear mágicamente un orbe de luz que estalla en una explosión devastadora. Puedes usar una acción para crear un orbe y lanzarlo a un lugar que elijas y que se encuentre a 150 pies o menos de ti, donde explota en una esfera de luz radiante durante un instante breve pero mortal.",
+				"Todas las criaturas situadas en una esfera de 20 pies de radio centrada en ese punto deben superar una tirada de salvación de Constitución o recibirán {@damage 2d6} de daño radiante. Una criatura que esté bajo una cobertura completa opaca no tiene que hacer la tirada de salvación.",
+				"Puedes incrementar el daño que hace la esfera gastando puntos de ki. Cada punto que gastes, hasta un máximo de 3, aumenta el daño en {@damage 2d6}."
+			]
+		},
+		{
+			"name": "Escudo Solar",
+			"source": "XGE-ES",
+			"page": 35,
+			"className": "Monje",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Alma Solar",
+			"subclassSource": "XGE-ES",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"A nivel 17, te cubre un aura luminosa mágica. Emites luz brillante en un radio de 30 pies y luz tenue 30 pies más allá. Puedes apagar la luz o volver a encenderla como acción adicional.",
+				"Si una criatura te golpea con un ataque cuerpo a cuerpo mientras brilla esta luz, puedes usar tu reacción para infligir daño radiante a la criatura. El daño radiante equivale a 5 + tu modificador de Sabiduría."
+			]
+		},
+		{
+			"name": "Ponerse en pie de un salto",
+			"source": "XGE-ES",
+			"page": 34,
+			"className": "Monje",
+			"classSource": "XGE-ES",
+			"subclassShortName": "Maestro Borracho",
+			"subclassSource": "XGE-ES",
+			"level": 6,
+			"entries": [
+				"Cuando te encuentras {@condition derribado|PHB-ES}, puedes ponerte de pie utilizando 5 pies de movimiento, en vez de la mitad de tu velocidad."
+			]
+		},
+		{
+			"name": "Redirigir ataque",
+			"source": "XGE-ES",
+			"page": 34,
+			"className": "Monje",
+			"classSource": "XGE-ES",
+			"subclassShortName": "Maestro Borracho",
+			"subclassSource": "XGE-ES",
+			"level": 6,
+			"entries": [
+				"Cuando una criatura falle su tirada de ataque cuerpo a cuerpo contra ti, puedes gastar un punto de ki como reacción para que ese ataque impacte a un objetivo de tu elección, distinto al atacante, que puedas ver y se encuentre a 5 pies o menos de ti."
+			]
+		},
+		{
+			"name": "Bloqueo veloz",
+			"source": "XGE-ES",
+			"page": 34,
+			"className": "Monje",
+			"classSource": "XGE-ES",
+			"subclassShortName": "Kensei",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"Si realizas un ataque sin armas como parte de una acción de {@action Atacar|PHB-ES} durante tu turno y empuñas un arma de kensei, puedes utilizarla para defenderte si se trata de un arma cuerpo a cuerpo. Obtienes un bonificador de +2 a la CA hasta el comienzo de tu próximo turno, siempre y cuando el arma siga en tu mano y no quedes {@condition incapacitado|PHB-ES}."
+			]
+		},
+		{
+			"name": "Disparo del kensei",
+			"source": "XGE-ES",
+			"page": 34,
+			"className": "Monje",
+			"classSource": "XGE-ES",
+			"subclassShortName": "Kensei",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"Puedes usar una acción adicional en tu turno para que tus ataques a distancia con un arma de kensei sean más letales. Si lo haces, cualquier objetivo impactado con un ataque a distancia utilizando un arma de kensei recibe {@damage 1d4} de daño adicional del mismo tipo que el arma. Mantienes este beneficio hasta el final del turno actual."
+			]
+		}
+	]
+}
