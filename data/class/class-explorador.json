@@ -1,0 +1,2048 @@
+{
+	"class": [
+		{
+			"name": "Explorador",
+			"source": "PHB-ES",
+			"page": 89,
+			"srd": true,
+			"hd": {
+				"number": 1,
+				"faces": 10
+			},
+			"proficiency": [
+				"str",
+				"dex"
+			],
+			"spellcastingAbility": "wis",
+			"casterProgression": "1/2",
+			"spellsKnownProgression": [
+				0,
+				2,
+				3,
+				3,
+				4,
+				4,
+				5,
+				5,
+				6,
+				6,
+				7,
+				7,
+				8,
+				8,
+				9,
+				9,
+				10,
+				10,
+				11,
+				11
+			],
+			"startingProficiencies": {
+				"armor": [
+					{
+						"proficiency": "light",
+						"full": "{@filter armaduras ligeras|items|source=PHB-ES|type=light armor}"
+					},
+					{
+						"proficiency": "medium",
+						"full": "{@filter armaduras medias|items|source=PHB-ES|type=medium armor}"
+					},
+					{
+						"proficiency": "shields",
+						"full": "{@item escudo|PHB-ES|escudos}"
+					}
+				],
+				"weapons": [
+					"{@filter armas sencillas|items|source=PHB-ES|type=simple weapon}",
+					"{@filter armas marciales|items|source=PHB-ES|type=martial weapon}"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"animal handling|Trato con Animales",
+								"athletics|Atletismo",
+								"insight|Perspicacia",
+								"investigation|Investigación",
+								"nature|Naturaleza",
+								"perception|Percepción",
+								"stealth|Sigilo",
+								"survival|Supervivencia"
+							],
+							"count": 3
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) {@item cota de escamas|PHB-ES} o (b) {@item armadura de cuero|PHB-ES}",
+					"(a) dos {@item espada corta|PHB-ES|espadas cortas} o (b) dos {@filter armas sencillas|items|source=PHB-ES|type=simple weapon;melee weapon=sand}",
+					"(a) un {@item paquete de explorador de mazmorras|PHB-ES} o (b) un {@item paquete de explorador|PHB-ES}",
+					"Un {@item arco largo|PHB-ES} y una {@item aljaba|PHB-ES} con {@item flechas (20)|PHB-ES|20 flechas}"
+				],
+				"goldAlternative": "{@dice 5d4 × 10|5d4 × 10|Starting Gold}",
+				"defaultData": [
+					{
+						"a": [
+							"cota de escamas|PHB-ES"
+						],
+						"b": [
+							"armadura de cuero|PHB-ES"
+						]
+					},
+					{
+						"a": [
+							{
+								"item": "espada corta|PHB-ES",
+								"quantity": 2
+							}
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimpleMelee",
+								"quantity": 2
+							}
+						]
+					},
+					{
+						"a": [
+							"paquete de explorador de mazmorras|PHB-ES"
+						],
+						"b": [
+							"paquete de explorador|PHB-ES"
+						]
+					},
+					{
+						"_": [
+							"arco largo|PHB-ES",
+							"flechas (20)|PHB-ES"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"dex": 13,
+					"wis": 13
+				},
+				"proficienciesGained": {
+					"armor": [
+						{
+							"proficiency": "light",
+							"full": "{@filter armaduras ligeras|items|source=PHB-ES|type=light armor}"
+						},
+						{
+							"proficiency": "medium",
+							"full": "{@filter armaduras medias|items|source=PHB-ES|type=medium armor}"
+						},
+						{
+							"proficiency": "shields",
+							"full": "{@item escudo|PHB-ES|escudos}"
+						}
+					],
+					"skills": [
+						{
+							"choose": {
+								"from": [
+									"animal handling|Trato con Animales",
+									"athletics|Atletismo",
+									"insight|Perspicacia",
+									"investigation|Investigación",
+									"nature|Naturaleza",
+									"perception|Percepción",
+									"stealth|Sigilo",
+									"survival|Supervivencia"
+								],
+								"count": 1
+							}
+						}
+					],
+					"weapons": [
+						"{@filter armas sencillas|items|source=PHB-ES|type=simple weapon}",
+						"{@filter armas marciales|items|source=PHB-ES|type=martial weapon}"
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"{@filter Trucos conocidos|spells|class=Explorador (PHB-ES)}"
+					],
+					"rows": [
+						[
+							0
+						],
+						[
+							2
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							6
+						],
+						[
+							6
+						],
+						[
+							7
+						],
+						[
+							7
+						],
+						[
+							8
+						],
+						[
+							8
+						],
+						[
+							9
+						],
+						[
+							9
+						],
+						[
+							10
+						],
+						[
+							10
+						],
+						[
+							11
+						],
+						[
+							11
+						]
+					]
+				},
+				{
+					"title": "Espacios de conjuro por cada nivel de conjuro",
+					"colLabels": [
+						"{@filter 1|spells|level=1|class=Explorador (PHB-ES)}",
+						"{@filter 2|spells|level=2|class=Explorador (PHB-ES)}",
+						"{@filter 3|spells|level=3|class=Explorador (PHB-ES)}",
+						"{@filter 4|spells|level=4|class=Explorador (PHB-ES)}",
+						"{@filter 5|spells|level=5|class=Explorador (PHB-ES)}"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"Enemigo Predilecto|Explorador|PHB-ES|1",
+				"Explorador Nato|Explorador|PHB-ES|1",
+				"Estilo de Combate|Explorador|PHB-ES|2",
+				"Lanzamiento de Conjuros|Explorador|PHB-ES|2",
+				{
+					"classFeature": "Arquetipo de Explorador|Explorador|PHB-ES|3",
+					"gainSubclassFeature": true
+				},
+				"Percepción Primigenia|Explorador|PHB-ES|3",
+				"Mejora de Característica|Explorador|PHB-ES|4",
+				"Ataque Adicional|Explorador|PHB-ES|5",
+				"Mejora de Enemigo Predilecto y Explorador Nato|Explorador|PHB-ES|6",
+				{
+					"classFeature": "Rasgo de Arquetipo de Explorador|Explorador|PHB-ES|7",
+					"gainSubclassFeature": true
+				},
+				"Mejora de Característica|Explorador|PHB-ES|8",
+				"Paso de la Tierra|Explorador|PHB-ES|8",
+				"Esconderse a Plena Vista|Explorador|PHB-ES|10",
+				"Mejora de Explorador Nato|Explorador|PHB-ES|10",
+				{
+					"classFeature": "Rasgo de Arquetipo de Explorador|Explorador|PHB-ES|11",
+					"gainSubclassFeature": true
+				},
+				"Mejora de Característica|Explorador|PHB-ES|12",
+				"Desvanecerse|Explorador|PHB-ES|14",
+				"Mejora de Enemigo Predilecto|Explorador|PHB-ES|14",
+				{
+					"classFeature": "Rasgo de Arquetipo de Explorador|Explorador|PHB-ES|15",
+					"gainSubclassFeature": true
+				},
+				"Mejora de Característica|Explorador|PHB-ES|16",
+				"Sentidos Salvajes|Explorador|PHB-ES|18",
+				"Mejora de Característica|Explorador|PHB-ES|19",
+				"Azote de Enemigos|Explorador|PHB-ES|20"
+			],
+			"subclassTitle": "Arquetipos de explorador",
+			"fluff": [
+				{
+					"name": "Explorador",
+					"type": "section",
+					"entries": [
+						"Duro y de aspecto salvaje, un explorador humano acecha en solitario entre las sombras de los árboles, cazando a un grupo de orcos, sabedor de que planean una incursión a una granja cercana. Agarrando con fuerza una espada corta en cada mano, se transforma en un torbellino de acero, cortando en pedazos a un enemigo tras otro.",
+						"Tras esquivar un cono de aire helado, una elfa se pone en pie y tensa la cuerda de su arco para disparar una flecha contra el dragón blanco. Sin dejarse dominar por la ola de terror que surge de la horrible bestia con una fuerza comparable a la de su gélido aliento, la arquera lanza una flecha tras otra, penetrando en los huecos entre las gruesas escamas del dragón",
+						"Alzando su mano, un semielfo silba para llamar la atención del halcón que vuela describiendo círculos sobre él, ordenándolo que vuelva a su lado. Susurrando a la rapaz instrucciones en lengua élfica, señala a un oso lechuza al que ha estado rastreando y manda al halcón que distraiga a la criatura mientras él tensa su arco.",
+						"Los exploradores persisten en su eterna vigilancia lejos del bullicio de las ciudades y los pueblos, fuera de los muros que defienden las granjas más remotas de los terrores de la naturaleza salvaje, entre los densos bosques que carecen de sendero alguno y a través de extensas llanuras deshabitadas.",
+						{
+							"type": "entries",
+							"name": "Cazadores Letales",
+							"entries": [
+								"Los exploradores son combatientes acostumbrados a la naturaleza salvaje, que se especializan en cazar a los monstruos que amenazan los lindes de la civilización: incursores humanoides, bestias u otras monstruosidades enfurecidas, gigantes terribles y mortíferos dragones. Aprenden a rastrear a sus presas como si de depredadores se tratara, moviéndose con sigilo a través del entorno natural y escondiéndose entre arbustos y escombros. Los exploradores enfocan su entrenamiento para el combate en aquellas técnicas que son especialmente útiles contra sus enemigos predilectos.",
+								"Gracias a su conexión con la tierra y el entorno, los exploradores, de forma similar a los druidas, desarrollan la capacidad de lanzar conjuros que emplean el poder de la naturaleza. Sus conjuros, al igual que sus habilidades para el combate, enfatizan la velocidad, el sigilo y otros aspectos de la caza. Los mortíferos talentos y capacidades de un explorador han sido perfeccionados con el fin de defender las tierras fronterizas, una tarea desalentadora."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Aventureros Independientes",
+							"entries": [
+								"Aunque un explorador podría ganarse la vida como cazador, guía o rastreador, su verdadera vocación es defender las zonas periféricas de la civilización de las depredaciones de monstruos y hordas de humanoides, que surgen de las tierras salvajes. En algunos lugares, los exploradores se reúnen en órdenes herméticas o unen fuerzas con círculos druídicos. Con todo, muchos exploradores son extremadamente independientes, pues saben que, si un dragón o una banda de orcos ataca, ellos podrían ser la primera, y quizá la última, línea de defensa",
+								"Esta feroz independencia hace de los exploradores muy buenos aventureros, ya que están acostumbrados a la vida lejos de la comodidad de una cama seca y un baño caliente. Cuando se encuentran con los aventureros criados en una ciudad, que se quejan y lamentan de las privaciones del campo, los exploradores reaccionan con una mezcla de diversión, frustración y compasión. No obstante, pronto aprenden que poder apoyarse en otros aventureros, capaces de colaborar en la lucha contra los enemigos de la civilización, compensa de sobra la carga que conlleva relacionarse con ellos. Puede que los consentidos habitantes de una ciudad no sean capaces ni siquiera de encontrar alimento y agua fresca en la naturaleza, pero tienen otros talentos que ofrecer."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creación de un explorador",
+							"entries": [
+								"Cuando crees a tu explorador, medita sobre cómo se desarrolló el entrenamiento que le dotó de sus excepcionales facultades. ¿Aprendiste junto a un mentor, vagabundeando por la naturaleza juntos mientras descubrías el camino del explorador? Si fue este el caso, ¿abandonaste tu entrenamiento por voluntad propia?, ¿fue asesinado tu mentor? Si ocurrió esto último, quizá el perpetrador del crimen fuera el tipo de monstruo que acabó convirtiéndose en tu enemigo predilecto. Otra opción es que aprendieras tus habilidades como parte de una banda de exploradores afiliados a un círculo druídico, conocedores tanto de las sendas místicas como del saber de la naturaleza. Tal vez seas un autodidacta, un ermitaño que ha aprendido sus técnicas de combate, rastreo e incluso su conexión mágica con la naturaleza por necesidad, para sobrevivir en las tierras salvajes.",
+								"¿Cuál es la fuente de tu especial odio a cierto tipo de enemigos? Puede que un monstruo quitara la vida a alguien al que amabas o destruyera tu aldea natal. O quizá fuiste testigo de la excesiva destrucción que estos seres causan y decidieras tomarte la justicia por tu mano y acabar con sus estragos. ¿Es tu carrera como aventurero una continuación de tu tarea como protector de las fronteras o un cambio con respecto a ella? ¿Qué te ha movido a unirte a una banda de aventureros? A lo mejor encuentras estimulante enseñar a tus nuevos aliados cómo convivir con la naturaleza o puede que aprecies cómo su presencia ofrece un respiro a tu habitual soledad.",
+								{
+									"type": "entries",
+									"name": "Creación rápida",
+									"entries": [
+										"Para crear un explorador de forma rápida sugerimos lo siguiente. Para empezar, Destreza debería ser tu característica más alta, seguida de Sabiduría. Aunque algunos de los exploradores que se especializan en el combate con dos armas prefieren que su Fuerza sea superior a su Destreza. A continuación, elige el trasfondo \"{@background outlander|PHB-ES|salvaje}\"."
+									]
+								}
+							]
+						}
+					],
+					"source": "PHB-ES",
+					"page": 89
+				},
+				{
+					"type": "section",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"Paso gran parte de mi vida lejos de la civilización, quedándome en la periferia para protegerla. No pienses que porque no hinco mi rodilla ante tu rey no he hecho más para defenderle que todos sus caballeros juntos."
+							],
+							"by": "Soveliss"
+						},
+						"Los exploradores son vagabundos de mente libre y rastreadores que patrullan las fronteras de la civilización, repeliendo a los habitantes de las tierras salvajes que acechan en el exterior. Es un trabajo desagradecido, ya que sus esfuerzos son rara vez comprendidos y casi nunca recompensados. Aun así, los miembros de esta clase siguen cumpliendo con su deber y nunca dudan de que su trabajo hace del mundo un lugar más seguro.",
+						"Su relación con la civilización es lo que define la personalidad e historia de un explorador. Algunos se ven a sí mismos como encargados de hacer cumplir la ley, llevando la justicia a los límites de lo salvaje, que no responden ante ningún gobierno. Otros son supervivientes, que rehúyen por completo la civilización. Matan monstruos para mantenerse seguros mientras viven y viajan por las peligrosas zonas agrestes del mundo. Si sus esfuerzos también benefician a los reinos y estados civilizados a los que evitan, que así sea.",
+						"Si estás creando o jugando un personaje explorador, las siguientes secciones ofrecen ideas para dar profundidad al aventurero y ayudarte a interpretarlo.",
+						{
+							"type": "entries",
+							"name": "Visión del mundo",
+							"entries": [
+								"La visión del mundo de un explorador comienza (y a veces termina) con la opinión de ese personaje de la gente civilizada y los lugares que habitan. Algunos de ellos tienen una actitud hacia la civilización profundamente arraigada en el desdén, mientas que otros solo compadecen a aquellos a los que han jurado proteger. En el campo de batalla, sin embargo, es imposible diferenciar entre un explorador y otro. Para los que los han visto trabajar y han sido beneficiarios de su habilidad, poco importa por qué hacen lo que hacen. Dicho esto, no hay dos miembros de esta clase que expresen su opinión sobre un asunto de la misma manera.",
+								"Si todavía no te has planteado los detalles de la visión del mundo que tiene tu personaje, puedes resumirlo en una frase, como las que puedes encontrar en la tabla siguiente. ¿Cómo afecta ese punto de vista a la manera en que te comportas?",
+								{
+									"type": "table",
+									"caption": "Visión del mundo",
+									"colLabels": [
+										"{@dice d6}",
+										"Visión"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Los pueblos y las ciudades son los mejores sitios para aquellos que no pueden sobrevivir por sí mismos."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"El avance de la civilización es la mejor manera de frustrar el avance del caos, pero hay que tener cuidado."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Los pueblos y las ciudades son un mal necesario, aunque en cuanto la naturaleza sea purgada de amenazas sobrenaturales ya no los necesitaremos."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"Los muros son para cobardes, que se esconden detrás de ellos mientras otros hacen del mundo un lugar más seguro."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"Visitar un pueblo no es desagradable, pero después de unos días siento una irresistible llamada de vuelta a la naturaleza."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Las ciudades crean debilidad, aislando a las personas de las rigurosas lecciones de la naturaleza."
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Tierra natal",
+							"entries": [
+								"Todos los exploradores, independientemente de cómo hayan acabado en su profesión, tienen una fuerte conexión con el mundo natural y sus variados terrenos. Para algunos miembros de esta clase, la naturaleza es donde crecieron, ya sea como resultado de haber nacido en ella o haber llegado allí a una edad temprana. Para otros, la civilización era su hogar, pero la naturaleza se volvió su segunda casa.",
+								"Piensa en el trasfondo de tu personaje y decide qué terreno siente como su hogar, naciera allí o no. ¿Qué dice ese lugar sobre tu personalidad? ¿Tiene que ver con los conjuros que has decidido aprender? ¿Tus experiencias allí influyeron en cuáles son tus enemigos predilectos?",
+								{
+									"type": "table",
+									"caption": "Tierras natales",
+									"colLabels": [
+										"{@dice d6}",
+										"Tierra natal"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Patrullaste un bosque antiguo, oscuro y corrompido por muchos portales al Shadowfell."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"Como parte de un grupo de nómadas, aprendiste las habilidades necesarias para sobrevivir en el desierto."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Tus primeros años, pasados en el Underdark, te prepararon para enfrentarte a sus habitantes."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"Vivías en el borde de un pantano, un área amenazada tanto por criaturas terrestres como acuáticas."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"Como creciste entre las cumbres, encontrar el mejor camino a través de las montañas es instintivo para ti."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Erraste por el lejano norte, aprendiendo a protegerte y prosperar en un reino cubierto de hielo."
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Enemigo jurado",
+							"entries": [
+								"Todo explorador comienza con un enemigo predilecto (o dos). Determinar cuál es puede estar vinculado a un evento en la primera etapa de la vida del personaje o, simplemente, puede ser una elección.",
+								"¿Qué llevó a tu personaje a elegir a un enemigo concreto? Esta decisión. ¿estuvo motivada por la tradición y la curiosidad o es una cuestión de rencor?",
+								{
+									"type": "table",
+									"caption": "Enemigos jurados",
+									"colLabels": [
+										"{@dice d6}",
+										"Enemigo"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Buscas vengarte en nombre de la naturaleza por las terribles transgresiones que ha cometido tu enemigo."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"Tus ancestros o predecesores lucharon contra estas criaturas, por lo que tú también lo harás."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"No sientes enemistad por tu adversario. Acechas a estas criaturas como un cazador rastrea a un animal salvaje."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"Encuentras a tu rival fascinante, de modo que coleccionas libros de historia y relatos sobre él."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"Acumulas símbolos de tus enemigos caídos para recordarte cada muerte."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Respetas a tu enemigo elegido y ves vuestras batallas como una prueba de las habilidades de cada uno."
+										]
+									]
+								}
+							]
+						}
+					],
+					"page": 40,
+					"source": "XGE-ES"
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Señor de las Bestias",
+			"shortName": "Señor de las Bestias",
+			"source": "PHB-ES",
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"page": 93,
+			"subclassFeatures": [
+				"Señor de las Bestias|Explorador|PHB-ES|Señor de las Bestias|PHB-ES|3",
+				"Entrenamiento Excepcional|Explorador|PHB-ES|Señor de las Bestias|PHB-ES|7",
+				"Furia Bestial|Explorador|PHB-ES|Señor de las Bestias|PHB-ES|11",
+				"Compartir Conjuros|Explorador|PHB-ES|Señor de las Bestias|PHB-ES|15"
+			]
+		},
+		{
+			"name": "Cazador",
+			"shortName": "Cazador",
+			"source": "PHB-ES",
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"page": 93,
+			"srd": true,
+			"subclassFeatures": [
+				"Cazador|Explorador|PHB-ES|Cazador|PHB-ES|3",
+				"Tácticas Defensivas|Explorador|PHB-ES|Cazador|PHB-ES|7",
+				"Ataque Múltiple|Explorador|PHB-ES|Cazador|PHB-ES|11",
+				"Defensa de Cazador Experto|Explorador|PHB-ES|Cazador|PHB-ES|15"
+			]
+		},
+		{
+			"name": "Acechador en la Penumbra",
+			"shortName": "Acechador en la Penumbra",
+			"source": "XGE-ES",
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"page": 41,
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"disfrazarse|PHB-ES"
+						],
+						"5": [
+							"truco de la cuerda|PHB-ES"
+						],
+						"9": [
+							"terror|PHB-ES"
+						],
+						"13": [
+							"invisibilidad mejorada|PHB-ES"
+						],
+						"17": [
+							"apariencia|PHB-ES"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Acechador en la Penumbra|Explorador|PHB-ES|Acechador en la Penumbra|XGE-ES|3",
+				"Mente de Hierro|Explorador|PHB-ES|Acechador en la Penumbra|XGE-ES|7",
+				"Oleada del Acechador|Explorador|PHB-ES|Acechador en la Penumbra|XGE-ES|11",
+				"Esquiva de las Sombras|Explorador|PHB-ES|Acechador en la Penumbra|XGE-ES|15"
+			]
+		},
+		{
+			"name": "Caminante del Horizonte",
+			"shortName": "Caminante del Horizonte",
+			"source": "XGE-ES",
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"page": 42,
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"protección contra el bien y el mal|PHB-ES"
+						],
+						"5": [
+							"paso brumoso|PHB-ES"
+						],
+						"9": [
+							"acelerar|PHB-ES"
+						],
+						"13": [
+							"destierro|PHB-ES"
+						],
+						"17": [
+							"círculo de teletransportación|PHB-ES"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Caminante del Horizonte|Explorador|PHB-ES|Caminante del Horizonte|XGE-ES|3",
+				"Paso Etéreo|Explorador|PHB-ES|Caminante del Horizonte|XGE-ES|7",
+				"Golpe Lejano|Explorador|PHB-ES|Caminante del Horizonte|XGE-ES|11",
+				"Defensa Espectral|Explorador|PHB-ES|Caminante del Horizonte|XGE-ES|15"
+			]
+		},
+		{
+			"name": "Cazador de Monstruos",
+			"shortName": "Cazador de Monstruos",
+			"source": "XGE-ES",
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"page": 43,
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"protección contra el bien y el mal|PHB-ES"
+						],
+						"5": [
+							"zona de la verdad|PHB-ES"
+						],
+						"9": [
+							"círculo mágico|PHB-ES"
+						],
+						"13": [
+							"destierro|PHB-ES"
+						],
+						"17": [
+							"inmovilizar monstruo|PHB-ES"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Cazador de Monstruos|Explorador|PHB-ES|Cazador de Monstruos|XGE-ES|3",
+				"Defensa Sobrenatural|Explorador|PHB-ES|Cazador de Monstruos|XGE-ES|7",
+				"Némesis de Magos|Explorador|PHB-ES|Cazador de Monstruos|XGE-ES|11",
+				"Contraataque del Cazador|Explorador|PHB-ES|Cazador de Monstruos|XGE-ES|15"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Enemigo Predilecto",
+			"source": "PHB-ES",
+			"page": 89,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"level": 1,
+			"entries": [
+				"Desde el nivel 1 posees una enorme experiencia estudiando, rastreando, cazando e incluso hablando con un tipo concreto de enemigo.",
+				"Escoge un tipo de enemigo predilecto: {@filter aberraciones|bestiary|tag=aberración}, {@filter autómatas|bestiary|tag=autómata}, {@filter bestias|bestiary|tag=bestia}, {@filter celestiales|bestiary|tag=celestial}, {@filter cienos|bestiary|tag=cieno}, {@filter dragones|bestiary|tag=dragón}, {@filter elementales|bestiary|tag=elemental}, {@filter feéricos|bestiary|tag=feérico}, {@filter gigantes|bestiary|tag=giante}, {@filter infernales|bestiary|tag=infernal}, {@filter monstruosidades|bestiary|tad=monstruosidad}, {@filter muertos vivientes|bestiary|tag=muerto viviente} o {@filter plantas|bestiary|tag=planta}. De forma alternativa, puedes elegir dos razas de {@filter humanoides|bestiary|tag=humanoide} (como {@creature gnoll|MM-ES|gnolls} y {@creature orco|MM-ES|orcos}, por ejemplo) como enemigos predilectos.",
+				"Posees ventaja en las pruebas de Sabiduría ({@skill Survival|Supervivencia}) para rastrear a tus enemigos predilectos, así como en las pruebas de Inteligencia para recordar información sobre ellos.",
+				"Cuando obtienes este rasgo también aprendes un idioma de tu elección que sea hablado por tus enemigos predilectos (si es que poseen alguno).",
+				"Puedes elegir un enemigo predilecto adicional, así como el idioma asociado al mismo, cuando alcanzas los niveles 6 y 14. Estas elecciones deberían representar aquellos tipos de monstruos con los que te has encontrado durante tus aventuras."
+			]
+		},
+		{
+			"name": "Explorador Nato",
+			"source": "PHB-ES",
+			"page": 89,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"level": 1,
+			"entries": [
+				"Estás muy familiarizado con un tipo de entorno natural concreto, por lo que eres un experto en viajar por y sobrevivir en las regiones de ese tipo. Escoge un tipo de terreno predilecto: bosque, costa, desierto, montaña, pantano, pradera, polar o Underdark. Cuando hagas una prueba de Inteligencia o Sabiduría que tenga relación con tu terreno predilecto, añadirás dos veces tu bonificador por competencia si estás usando una habilidad en la que eres competente.",
+				"Cuando viajas durante al menos una hora por tu terreno favorito, obtienes los siguientes beneficios:",
+				{
+					"type": "list",
+					"items": [
+						"El terreno difícil no ralentiza el viaje de tu grupo.",
+						"Tu grupo no puede perderse por causas no mágicas.",
+						"Incluso aunque estés ocupado con otra actividad mientras viajas (como forrajear, orientarse o rastrear), permaneces atento al peligro.",
+						"Si estás viajando en solitario, puedes moverte con sigilo a un ritmo de viaje normal.",
+						"Cuando forrajeas, encuentras el doble de comida de lo normal.",
+						"Cuando rastreas a otras criaturas, también descubres el número exacto de las mismas, sus tamaños y hace cuánto pasaron por la zona."
+					]
+				},
+				"Puedes elegir un terreno predilecto adicional cuando alcanzas los niveles 6 y 10."
+			]
+		},
+		{
+			"name": "Estilo de Combate",
+			"source": "PHB-ES",
+			"page": 89,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"level": 2,
+			"entries": [
+				"A nivel 2 adoptas un estilo de combate concreto como tu especialidad. Elige una de las siguientes opciones que aparecen a continuación. No puedes escoger el mismo Estilo de Combate más de una vez, incluso aunque luego puedas elegir de nuevo un Estilo de Combate.",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Combate con Dos Armas|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Defensa|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Duelo|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Tiro con Arco|PHB-ES"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Lanzamiento de Conjuros",
+			"source": "PHB-ES",
+			"page": 89,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"level": 2,
+			"entries": [
+				"Cuando alcanzas el nivel 2 has aprendido a emplear la esencia mágica de la naturaleza, lanzando conjuros como lo haría un druida. El {@book capítulo 10|PHB-ES|10} contiene las reglas de lanzamiento de conjuros y el {@book capítulo 11|PHB-ES|11} la {@filter lista de conjuros de explorador|spells|class=explorador (PHB-ES)}.",
+				{
+					"type": "entries",
+					"name": "Espacios de conjuro",
+					"entries": [
+						"La tabla del explorador muestra de cuantos espacios de {@filter conjuro de explorador|spells|class=explorador (PHB-ES)} dispones para lanzar conjuros de nivel 1 y superiores. Para lanzar uno de estos conjuros deberás invertir un espacio de al menos el nivel del conjuro. Recuperas todos los espacios utilizados tras finalizar un descanso largo.",
+						"Si, por ejemplo, conoces el conjuro de nivel 1 {@spell Encantar animal|PHB-ES|encantar animal} y posees un espacio de conjuro de nivel 1 y otro de nivel 2, podrías lanzar {@spell Encantar animal|PHB-ES|encantar animal} empleando cualquiera de los dos espacios."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Conjuros conocidos de nivel 1 y superiores",
+					"entries": [
+						"Conoces dos conjuros de nivel 1 de tu elección, escogidos de entre la lista de conjuros de explorador.",
+						"La columna \"conjuros conocidos\" de la tabla del explorador te indica cuándo podrás aprender más conjuros de explorador y cuántos elegir. Estos conjuros deben ser de un nivel para el que tengas espacios de conjuro. Así, cuando subes a nivel 5 en esta clase puedes aprender un conjuro nuevo, que puede ser de nivel 1 o 2.",
+						"Además, cada vez que subas un nivel de esta clase podrás elegir uno de los conjuros de explorador que ya conoces y reemplazarlo por otro de los que aparecen en la lista de conjuros de explorador. Este reemplazo deberá ser de un nivel para el que poseas espacios de conjuro."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Aptitud mágica",
+					"entries": [
+						"La Sabiduría es tu aptitud mágica en lo que a conjuros de explorador respecta, ya que tu magia proviene de tu sintonía con la naturaleza. Así, utilizarás tu Sabiduría siempre que un conjuro de explorador haga referencia a tu aptitud mágica. Además, también usarás tu modificador por Sabiduría para determinar la CD de las tiradas de salvación y las tiradas de ataque de los conjuros de explorador que lances.",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"wis"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"wis"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Percepción Primigenia",
+			"source": "PHB-ES",
+			"page": 89,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"level": 3,
+			"entries": [
+				"A partir de nivel 3, puedes usar tu acción y gastar uno de tus espacios de conjuro de explorador para concentrar tu percepción en la región en la que te encuentras. Durante 1 minuto por cada nivel del espacio de conjuro que hayas invertido, puedes sentir si los siguientes tipos de criatura están presentes a, como mucho, 1 milla de distancia de ti: aberraciones, celestiales, dragones, elementales, feéricos, infernales y muertos vivientes. Esta percepción se extiende a 6 millas si estás en tu terreno predilecto. Este rasgo no revela ni el número de criaturas ni su ubicación."
+			]
+		},
+		{
+			"name": "Arquetipo de Explorador",
+			"source": "PHB-ES",
+			"page": 89,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"level": 3,
+			"entries": [
+				"A nivel 3, escoges un arquetipo al que aspiras emular. Elige entre Cazador o Señor de las Bestias. Ambos están detallados al final de la descripción de esta clase. Esta elección le proporciona ciertos rasgos cuando alcanzas los niveles 3, 7, 11 y 15."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 89,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"level": 4,
+			"entries": [
+				"Cuando alcances el nivel 4 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Ataque Adicional",
+			"source": "PHB-ES",
+			"page": 89,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"level": 5,
+			"entries": [
+				"A partir de nivel 5, cuando lleves a cabo la acción de {@action Atacar|PHB-ES} durante tu turno, podrás hacer dos ataques en lugar de uno."
+			]
+		},
+		{
+			"name": "Mejora de Enemigo Predilecto y Explorador Nato",
+			"source": "PHB-ES",
+			"page": 89,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"level": 6,
+			"entries": [
+				"A nivel 6 puedes elegir un terreno predilecto adicional.",
+				"A nivel 6 puedes elegir un enemigo predilecto adicional, así como el idioma asociado al mismo. Estas elecciones deberían representar aquellos tipos de monstruos con los que te has encontrado durante tus aventuras."
+			]
+		},
+		{
+			"name": "Rasgo de Arquetipo de Explorador",
+			"source": "PHB-ES",
+			"page": 89,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"level": 7,
+			"entries": [
+				"A nivel 7 ganas un rasgo de tu Arquetipo de Explorador."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 89,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"level": 8,
+			"entries": [
+				"Cuando alcances el nivel 8 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Paso de la Tierra",
+			"source": "PHB-ES",
+			"page": 89,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"level": 8,
+			"entries": [
+				"A partir de nivel 8, moverte a través de terreno difícil no mágico no te cuesta movimiento adicional. También puedes pasar a través de plantas no mágicas sin que éstas reduzcan tu velocidad y, aunque dichas plantas posean espinas, pinchos o peligros similares, no recibirás daño de ellas.",
+				"Además, tienes ventaja en las tiradas de salvación contra plantas que han sido creadas o manipuladas mágicamente con el fin de obstaculizar el movimiento, como las producidas por el conjuro {@spell Enmarañar|PHB-ES|enmarañar}"
+			]
+		},
+		{
+			"name": "Esconderse a Plena Vista",
+			"source": "PHB-ES",
+			"page": 89,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"level": 10,
+			"entries": [
+				"A partir de nivel 10, puedes pasar 1 minuto confeccionando un camuflaje que te oculte. Debes tener acceso a barro fresco, tierra, plantas, hollín o cualquier otro tipo de materiales que se den de forma habitual en la naturaleza y que quieras emplear para crear tu camuflaje.",
+				"Una vez te hayas camuflado de esta forma, puedes intentar esconderte apoyándote sobre una superficie sólida, como un árbol o un muro, que sea al menos tan alta y ancha como tú. Obtienes un bonificador de + 10 a las pruebas de Destreza ({@skill Stealth|Sigilo}) mientras permanezcas estático y no realices acción alguna. En cuanto te muevas o lleves a cabo una acción o reacción, deberás volver a camuflarte de nuevo para disfrutar de este beneficio."
+			]
+		},
+		{
+			"name": "Mejora de Explorador Nato",
+			"source": "PHB-ES",
+			"page": 89,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"level": 10,
+			"entries": [
+				"A nivel 10 puedes elegir un terreno predilecto adicional."
+			]
+		},
+		{
+			"name": "Rasgo de Arquetipo de Explorador",
+			"source": "PHB-ES",
+			"page": 89,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"level": 11,
+			"entries": [
+				"A nivel 11 ganas un rasgo de tu Arquetipo de Explorador."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 89,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"level": 12,
+			"entries": [
+				"Cuando alcances el nivel 12 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Mejora de Enemigo Predilecto",
+			"source": "PHB-ES",
+			"page": 89,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"level": 14,
+			"entries": [
+				"A nivel 14 puedes elegir un enemigo predilecto adicional, así como el idioma asociado al mismo. Estas elecciones deberían representar aquellos tipos de monstruos con los que te has encontrado durante tus aventuras."
+			]
+		},
+		{
+			"name": "Desvanecerse",
+			"source": "PHB-ES",
+			"page": 89,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"level": 14,
+			"entries": [
+				"A partir de nivel 14, puedes realizar la acción de {@action Esconderse|PHB-ES|Esconderse} como acción adicional durante tu turno. Además, no puedes ser rastreado empleando medios no mágicos, salvo que decidas dejar un rastro de forma voluntaria."
+			]
+		},
+		{
+			"name": "Rasgo de Arquetipo de Explorador",
+			"source": "PHB-ES",
+			"page": 89,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"level": 15,
+			"entries": [
+				"A nivel 15 ganas un rasgo de tu Arquetipo de Explorador."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 89,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"level": 16,
+			"entries": [
+				"Cuando alcances el nivel 16 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Sentidos Salvajes",
+			"source": "PHB-ES",
+			"page": 89,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"level": 18,
+			"entries": [
+				"A nivel 18 desarrollas unos sentidos sobrenaturales, que te ayudan a luchar contra criaturas a las que no puedes ver. Cuando ataques a un objetivo que no seas capaz de ver, tu incapacidad para verlo no te dará desventaja en tus tiradas de ataque contra él.",
+				"Además, también eres consciente de la ubicación de cualquier criatura {@condition Invisible|PHB-ES|invisible} que esté a 30 pies o menos de ti, siempre y cuando dicha criatura no esté escondida de ti y no estés {@condition Cegado|PHB-ES|cegado} ni {@condition Ensordecido|PHB-ES|ensordecido}."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 89,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"level": 19,
+			"entries": [
+				"Cuando alcances el nivel 19 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Azote de Enemigos",
+			"source": "PHB-ES",
+			"page": 89,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"level": 20,
+			"entries": [
+				"A nivel 20 te conviertes en un cazador sin parangón en lo que a tus enemigos respecta. Una vez en cada uno de tus turnos, puedes añadir tu modificador por Sabiduría a una tirada de ataque o de daño de uno de tus ataques que tenga como objetivo a uno de tus enemigos predilectos. Puedes elegir usar este rasgo antes o después de tirar, pero siempre previamente a que los efectos de la tirada se apliquen."
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Señor de las Bestias",
+			"source": "PHB-ES",
+			"page": 93,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Señor de las Bestias",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"entries": [
+				"El arquetipo del Señor de las Bestias encarna la amistad entre las razas civilizadas y las bestias de la naturaleza. Unidos por un mismo propósito, tanto animal como explorador combaten a los monstruos que amenazan a la civilización y al entorno natural por igual.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Compañero del Explorador|Explorador|PHB-ES|Señor de las Bestias|PHB-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Compañero del Explorador",
+			"source": "PHB-ES",
+			"page": 93,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Señor de las Bestias",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A nivel 3 obtienes un compañero animal que parte contigo de aventuras y está entrenado para luchar a tu lado. Escoge una {@filter bestia Mediana o más pequeña que posea un valor de desafío de 1/4 o inferior|bestiary|challenge rating=[&0;&1/4]|tag=bestia|size=f;d;t;s;m|miscellaneous=!swarm}. El apéndice D contiene los perfiles del halcón, el mastín y la pantera como ejemplos de estas criaturas. Añade tu bonificador por competencia a la CA, tiradas de ataque y tiradas de daño de la bestia, así como a aquellas tiradas de salvación y habilidades con las que el animal sea competente. Sus puntos de golpe máximos serán o bien los que aparecen en su perfil o cuatro veces tu nivel de explorador, lo que sea mayor. Como cualquier otra criatura, puede gastar Dados de Golpe durante un descanso corto para recuperar puntos de golpe.",
+				"La bestia obedece tus órdenes en la medida de sus posibilidades. Lleva a cabo su turno en tu misma posición en el orden de iniciativa, pero no realizará su acción salvo que se lo órdenes. Durante tu turno, puedes dar una orden verbal a tu animal para indicarle a dónde moverse. No necesitas invertir ninguna acción para hacer esto. Sin embargo, sí que necesitas utilizar tu acción para ordenar verbalmente a tu animal que realice una de las siguientes acciones: {@action Atacar|PHB-ES|Atacar}, {@action Ayudar|PHB-ES|Ayudar}, {@action Correr|PHB-ES|Correr}, {@action Destrabarse|PHB-ES|Destrabarse}. Si no das una orden, el animal realiza la acción {@action Esquivar|PHB-ES|Esquivar}. Una vez poseas el rasgo Ataque Adicional, podrás realizar tú mismo un ataque con arma mientras ordenas a tu bestia que lleve a cabo una acción de {@action Atacar|PHB-ES|Atacar}.",
+				"Si quedas {@condition incapacitado|PHB-ES|incapacitado} o no estás presente, el animal actuará según considere oportuno, pero concentrándose en protegeros tanto a ti como a él mismo. La bestia no necesita que le des órdenes para utilizar su reacción, como cuando realiza un ataque de oportunidad.",
+				"Si viajas por tu terreno predilecto acompañado únicamente de tu compañero animal, podrás moverte con sigilo a un ritmo de viaje normal.",
+				"Si tu animal muere, podrás encontrar un nuevo compañero invirtiendo 8 horas en crear un vínculo mágico con una bestia que no te sea hostil y cumpla con los requisitos necesarios que se enumeraron antes."
+			]
+		},
+		{
+			"name": "Entrenamiento Excepcional",
+			"source": "PHB-ES",
+			"page": 93,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Señor de las Bestias",
+			"subclassSource": "PHB-ES",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 7, en cualquiera de tus turnos en los que tu compañero animal no ataque, puedes usar una acción adicional para ordenarle que realice una acción de {@action Ayudar|PHB-ES|Ayudar}, {@action Correr|PHB-ES|Correr} o {@action Destrabarse|PHB-ES|Destrabarse} durante su turno. Además, los ataques de la bestia ahora cuentan como mágicos, con el propósito de superar la resistencia y la inmunidad a los ataques y daños no mágicos."
+			]
+		},
+		{
+			"name": "Furia Bestial",
+			"source": "PHB-ES",
+			"page": 93,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Señor de las Bestias",
+			"subclassSource": "PHB-ES",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 11, cuando órdenes a tu animal que realice una acción de {@action Atacar|PHB-ES|Atacar}, la bestia podrá hacer dos ataques o llevar a cabo una acción de ataque múltiple, si es que posee alguna."
+			]
+		},
+		{
+			"name": "Compartir Conjuros",
+			"source": "PHB-ES",
+			"page": 93,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Señor de las Bestias",
+			"subclassSource": "PHB-ES",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 15, cuando lanzas un conjuro que te tenga a ti mismo como objetivo y tu bestia esté a 30 pies o menos de ti, puedes hacer que el conjuro la afecte también a ella."
+			]
+		},
+		{
+			"name": "Cazador",
+			"source": "PHB-ES",
+			"page": 93,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Cazador",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"entries": [
+				"Emular el arquetipo del Cazador implica aceptar tu papel como baluarte que protege la civilización de los terrores de la naturaleza salvaje. Al caminar por la senda del Cazador aprendes técnicas especializadas para enfrentarte a los desafíos con los que este protector se encuentra; desde unos incursores ogros hasta hordas de orcos, pasando por descomunales gigantes y espantosos dragones.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "El Cazador y la Presa|Explorador|PHB-ES|Cazador|PHB-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Destructor de Hordas",
+			"source": "PHB-ES",
+			"page": 93,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Cazador",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Una vez en cada uno de tus turnos, cuando hagas un ataque con arma, podrás realizar otro ataque con la misma arma contra otra criatura distinta a la original que esté a 5 pies o menos de ella y dentro del alcance de tu arma."
+			]
+		},
+		{
+			"name": "El Cazador y la Presa",
+			"source": "PHB-ES",
+			"page": 93,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Cazador",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A nivel 3 obtienes uno de los siguientes rasgos, a tu elección.",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Asesino de Gigantes|Explorador|PHB-ES|Cazador|PHB-ES|3"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Azote de Colosos|Explorador|PHB-ES|Cazador|PHB-ES|3"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Destructor de Hordas|Explorador|PHB-ES|Cazador|PHB-ES|3"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Azote de Colosos",
+			"source": "PHB-ES",
+			"page": 93,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Cazador",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"Tu tenacidad puede agotar incluso a los enemigos más poderosos. Cuando impactes a una criatura con un ataque con arma, dicha criatura recibirá {@damage 1d8} de daño adicional si está por debajo ele sus puntos de golpe máximos. Puedes infligir este daño adicional solo una vez por turno."
+			]
+		},
+		{
+			"name": "Asesino de Gigantes",
+			"source": "PHB-ES",
+			"page": 93,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Cazador",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"Cuando una criatura Grande o de mayor tamaño que se encuentre a 5 pies o menos de ti te ataque (tanto si impacta como si falla), podrás usar tu reacción para atacarla inmediatamente después de que esta finalice su ataque. Para realizar este ataque debes poder verla."
+			]
+		},
+		{
+			"name": "Tácticas Defensivas",
+			"source": "PHB-ES",
+			"page": 93,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Cazador",
+			"subclassSource": "PHB-ES",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"A nivel 7 obtienes uno de los siguientes rasgos, a tu elección.",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Defensa contra Ataques Múltiples|Explorador|PHB-ES|Cazador|PHB-ES|7"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Escapar de la Horda|Explorador|PHB-ES|Cazador|PHB-ES|7"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Voluntad de Acero|Explorador|PHB-ES|Cazador|PHB-ES|7"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Escapar de la Horda",
+			"source": "PHB-ES",
+			"page": 93,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Cazador",
+			"subclassSource": "PHB-ES",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"Los ataques de oportunidad hechos contra ti tienen desventaja."
+			]
+		},
+		{
+			"name": "Defensa contra Ataques Múltiples",
+			"source": "PHB-ES",
+			"page": 93,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Cazador",
+			"subclassSource": "PHB-ES",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"Cuando una criatura te impacte con un ataque, obtendrás un bonificador de +4 a tu CA contra todos los ataques subsiguientes de dicha criatura hasta el final del turno."
+			]
+		},
+		{
+			"name": "Voluntad de Acero",
+			"source": "PHB-ES",
+			"page": 93,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Cazador",
+			"subclassSource": "PHB-ES",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"Tienes ventaja en las tiradas de salvación para evitar ser {@condition asustado|PHB-ES|asustado}."
+			]
+		},
+		{
+			"name": "Ataque Múltiple",
+			"source": "PHB-ES",
+			"page": 93,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Cazador",
+			"subclassSource": "PHB-ES",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"A nivel 11 obtienes uno de los siguientes rasgos, a tu elección.",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Andanada|Explorador|PHB-ES|Cazador|PHB-ES|11"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Ataque Huracanado|Explorador|PHB-ES|Cazador|PHB-ES|11"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Andanada",
+			"source": "PHB-ES",
+			"page": 93,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Cazador",
+			"subclassSource": "PHB-ES",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"Puedes usar tu acción para realizar un ataque a distancia contra cualquier cantidad de criaturas que se encuentren a 10 pies o menos de un punto que puedas ver dentro del alcance de tu arma. Debes tener munición suficiente para todos los objetivos y hacer una tirada de ataque para cada objetivo por separado."
+			]
+		},
+		{
+			"name": "Ataque Huracanado",
+			"source": "PHB-ES",
+			"page": 93,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Cazador",
+			"subclassSource": "PHB-ES",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"Puedes emplear tu acción para realizar un ataque cuerpo a cuerpo contra cualquier cantidad de criaturas que se encuentren a 5 pies o menos de ti, haciendo una tirada de ataque para cada objetivo por separado."
+			]
+		},
+		{
+			"name": "Evasión",
+			"source": "PHB-ES",
+			"page": 93,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Cazador",
+			"subclassSource": "PHB-ES",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"Cuando seas víctima de un efecto (como el ardiente aliento de un dragón rojo o el conjuro {@spell Relámpago|PHB-ES|relámpago}) que te permita hacer una tirada de salvación de Destreza para recibir solo la mitad del daño, no recibirás daño alguno si tienes éxito en la tirada de salvación y solo la mitad si fallas."
+			]
+		},
+		{
+			"name": "Aguantar la Marea",
+			"source": "PHB-ES",
+			"page": 93,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Cazador",
+			"subclassSource": "PHB-ES",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				" Cuando una criatura hostil falle al realizar un ataque cuerpo a cuerpo contra ti, puedes utilizar tu reacción para obligar a la criatura a repetir su ataque, pero contra otra criatura (que no sea ella misma) de tu elección."
+			]
+		},
+		{
+			"name": "Defensa de Cazador Experto",
+			"source": "PHB-ES",
+			"page": 93,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Cazador",
+			"subclassSource": "PHB-ES",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"A nivel 15 obtienes uno de los siguientes rasgos, a tu elección.",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Aguantar la Marea|Explorador|PHB-ES|Cazador|PHB-ES|15"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Esquiva Asombrosa|Explorador|PHB-ES|Cazador|PHB-ES|15"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Evasión|Explorador|PHB-ES|Cazador|PHB-ES|15"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Esquiva Asombrosa",
+			"source": "PHB-ES",
+			"page": 93,
+			"srd": true,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Cazador",
+			"subclassSource": "PHB-ES",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"Cuando un atacante que puedas ver te impacte con una tirada de ataque, puedes usar tu reacción para reducir a la mitad el daño que te causa dicho ataque."
+			]
+		},
+		{
+			"name": "Acechador en la Penumbra",
+			"source": "XGE-ES",
+			"page": 41,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Acechador en la Penumbra",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"Los acechadores en la penumbra se sienten en casa en los sitios más oscuros: bajo tierra, en callejones tenebrosos, bosques primigenios o cualquier lugar en el que la luz sea tenue. La mayoría de las personas entra en esos espacios turbada, pero estos exploradores se aventuran valerosos en la oscuridad, buscando emboscar a los monstruos antes de que puedan llegar al mundo exterior. Los acechadores en la penumbra suelen encontrarse en el Underdark, pero irán a cualquier sitio donde el mal aceche en las sombras.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Magia de Acechador en la Penumbra|Explorador|PHB-ES|Acechador en la Penumbra|XGE-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Emboscador Pavoroso|Explorador|PHB-ES|Acechador en la Penumbra|XGE-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Visión en la Umbra|Explorador|PHB-ES|Acechador en la Penumbra|XGE-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Emboscador Pavoroso",
+			"source": "XGE-ES",
+			"page": 41,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Acechador en la Penumbra",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A nivel 3 te conviertes en un maestro del arte de la emboscada. Puedes ganar un bonificador a las tiradas de iniciativa igual a tu modificador por Sabiduría.",
+				"Al principio de tu primer turno de cada combate, tu velocidad caminando se incrementa en 10 pies hasta el final del turno. Además, si utilizas la acción de {@action Atacar|PHB-ES} en ese turno, puedes realizar un ataque con arma adicional como parte de esa acción. Si este ataque impacta, el objetivo recibe {@damage 1d8} de daño adicional del tipo de daño del arma."
+			]
+		},
+		{
+			"name": "Magia de Acechador en la Penumbra",
+			"source": "XGE-ES",
+			"page": 41,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Acechador en la Penumbra",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Empezando a nivel 3, aprenderás conjuros adicionales al alcanzar ciertos niveles de esta clase, como se puede ver en la tabla \"Conjuros de Acechador en la Penumbra\". Estos se consideran conjuros de explorador para ti, pero no contra los conjuros totales de explorador que puedes conocer.",
+				{
+					"type": "table",
+					"caption": "Conjuros de Acechador en la Penumbra",
+					"colLabels": [
+						"Nivel de explorador",
+						"Conjuro"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3",
+							"{@spell disfrazarse|PHB-ES}"
+						],
+						[
+							"5",
+							"{@spell truco de la cuerda|PHB-ES}"
+						],
+						[
+							"9",
+							"{@spell terror|PHB-ES}"
+						],
+						[
+							"13",
+							"{@spell invisibilidad mejorada|PHB-ES}"
+						],
+						[
+							"17",
+							"{@spell apariencia|PHB-ES}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Visión en la Umbra",
+			"source": "XGE-ES",
+			"page": 41,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Acechador en la Penumbra",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A nivel 3 obtienes {@sense darkvision|visión en la oscuridad} hasta 60 pies. Si tu raza ya te proporcionaba {@sense darkvision|visión en la oscuridad}, su alcance aumenta en 30 pies.",
+				"También eres muy hábil evadiendo criaturas que dependan de su {@sense darkvision|visión en la oscuridad}. Mientras estés en la oscuridad, eres invisible frente a cualquiera que dependa de su {@sense darkvision|visión en la oscuridad} para verte."
+			]
+		},
+		{
+			"name": "Mente de Hierro",
+			"source": "XGE-ES",
+			"page": 41,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Acechador en la Penumbra",
+			"subclassSource": "XGE-ES",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"A nivel 7, has perfeccionado tu capacidad de resistir los poderes alteradores de mentes de tu presa. Ganas competencia en las tiradas de salvación de Sabiduría. Si ya tienes esta competencia, en vez de eso ganas competencia en tiradas de salvación de Inteligencia o Carisma, a tu elección."
+			]
+		},
+		{
+			"name": "Oleada del Acechador",
+			"source": "XGE-ES",
+			"page": 41,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Acechador en la Penumbra",
+			"subclassSource": "XGE-ES",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"A nivel 11 aprendes a atacar con una velocidad tan inesperada que puedes convertir un fallo en otro impacto. Una vez en cada uno de tus turnos, cuando falles una tirada de ataque con arma, puedes hacer otro ataque con arma como parte de la misma acción."
+			]
+		},
+		{
+			"name": "Esquiva de las Sombras",
+			"source": "XGE-ES",
+			"page": 41,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Acechador en la Penumbra",
+			"subclassSource": "XGE-ES",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 15, puedes esquivar de maneras nunca vistas, con hebras de sombras sobrenaturales a tu alrededor. Cuando una criatura hace una tirada de ataque contra ti, si no tiene ventaja en esa tirada puedes usar tu reacción para obligar a que la realice con desventaja. Debes usar este rasgo antes de saber el resultado de la tirada de ataque."
+			]
+		},
+		{
+			"name": "Caminante del Horizonte",
+			"source": "XGE-ES",
+			"page": 42,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Caminante del Horizonte",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"Los Caminantes del Horizonte protegen el mundo de amena zas que se originan en otros planos o que buscan asolar los reinos mortales con magia de otro mundo. Rastrean portales interplanares y los vigilan, internándose en los Planos Exteriores e Interiores si fuera necesario para perseguir a sus enemigos. Estos exploradores también son amigos de cualquier fuerza del multiverso (especialmente dragones benévolos, feéricos y elementales) que trabaje para preservar la vida y el orden en los planos.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Magia de Caminante del Horizonte|Explorador|PHB-ES|Caminante del Horizonte|XGE-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Detectar Portal|Explorador|PHB-ES|Caminante del Horizonte|XGE-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Guerrero Interplanar|Explorador|PHB-ES|Caminante del Horizonte|XGE-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Detectar Portal",
+			"source": "XGE-ES",
+			"page": 42,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Caminante del Horizonte",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A nivel 3 obtienes la capacidad de descubrir mágicamente la presencia de un portal interplanar. Como acción, detectas la distancia y dirección del portal interplanar más cercano, situado a 1 milla o menos de ti.",
+				"Una vez utilizado este rasgo, deberás terminar un canso corto o largo para poder volver a usarlo.",
+				"Puedes consultar la sección \"Viaje Interplanar\", en el capítulo 2 del {@i Dungeon Master's Guide}, para encontrar ejemplos de portales interplanares."
+			]
+		},
+		{
+			"name": "Magia de Caminante del Horizonte",
+			"source": "XGE-ES",
+			"page": 42,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Caminante del Horizonte",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Desde el nivel 3, aprenderás conjuros adicionales al alcanzar ciertos niveles de esta clase, como se puede ver en la tabla \"Conjuros de Caminante del Horizonte\". Estos se consideran conjuros de explorador para ti, pero no contra los conjuros totales de explorador que puedes conocer.",
+				{
+					"type": "table",
+					"caption": "Conjuros de Caminante del Horizonte",
+					"colLabels": [
+						"Nivel de explorador",
+						"Conjuro"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3",
+							"{@spell protección contra el bien y el mal|PHB-ES}"
+						],
+						[
+							"5",
+							"{@spell paso brumoso|PHB-ES}"
+						],
+						[
+							"9",
+							"{@spell acelerar|PHB-ES}"
+						],
+						[
+							"13",
+							"{@spell destierro|PHB-ES}"
+						],
+						[
+							"17",
+							"{@spell círculo de teletransportación|PHB-ES}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Guerrero Interplanar",
+			"source": "XGE-ES",
+			"page": 42,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Caminante del Horizonte",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Cuando llegas a nivel 3, has aprendido a utilizar la energía del multiverso para mejorar tus ataques.",
+				"Como acción adicional, elige a una criatura que puedas ver y se encuentre a 30 pies o menos de ti. La próxima vez que impactes a ese objetivo en este turno con un ataque con arma, todo el daño realizado por el ataque se convierte en daño de fuerza y la criatura sufre {@damage 1d8} de daño de fuerza adicional de este ataque. Cuando llegas a nivel 11 en esta clase, el daño adicional se incrementa a {@dice 2d8}."
+			]
+		},
+		{
+			"name": "Paso Etéreo",
+			"source": "XGE-ES",
+			"page": 42,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Caminante del Horizonte",
+			"subclassSource": "XGE-ES",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"A nivel 7 aprendes a atravesar momentáneamente el Plano Etéreo. Como acción adicional, puedes, sin utilizar un espacio de conjuro, lanzar el conjuro {@spell excursión etérea|PHB-ES} mediante este rasgo, pero solo durará hasta el final del turno actual.",
+				"Una vez empleado este rasgo, deberás terminar un descanso corto o largo para poder volver a usarlo."
+			]
+		},
+		{
+			"name": "Golpe Lejano",
+			"source": "XGE-ES",
+			"page": 42,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Caminante del Horizonte",
+			"subclassSource": "XGE-ES",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"A nivel 11 obtienes la capacidad de atravesar los planos en un suspiro. Cuando utilizas la acción de {@action Atacar}, puedes teletransportarte hasta 10 pies antes de cada ataque a un espacio libre que puedas ver.",
+				"Si atacas al menos a dos criaturas diferentes con esta acción, también puedes realizar un ataque adicional contra una tercera."
+			]
+		},
+		{
+			"name": "Defensa Espectral",
+			"source": "XGE-ES",
+			"page": 42,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Caminante del Horizonte",
+			"subclassSource": "XGE-ES",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"A nivel 15, tu capacidad de moverte entre planos te permite escabullirte entre las fronteras planares para reducir el daño que sufres en combate. Cuando sufres daño de un ataque, puedes utilizar tu reacción para concederte resistencia a todo el daño de ese ataque durante este turno."
+			]
+		},
+		{
+			"name": "Cazador de Monstruos",
+			"source": "XGE-ES",
+			"page": 43,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Cazador de Monstruos",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"Has dedicado tu vida a cazar criaturas de la noche y usuarios de magia oscura. Un Cazador de Monstruos busca vampiros, dragones, feéricos malvados, infernales y otras amenazas mágicas. Entrenado en técnicas sobre naturales que le permiten imponerse a estos monstruos, es experto en sacar a la luz y derrotar a enemigos místicos y poderosos.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Magia de Cazador de Monstruos|Explorador|PHB-ES|Cazador de Monstruos|XGE-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Sentidos De Cazador|Explorador|PHB-ES|Cazador de Monstruos|XGE-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Presa|Explorador|PHB-ES|Cazador de Monstruos|XGE-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Sentidos De Cazador",
+			"source": "XGE-ES",
+			"page": 43,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Cazador de Monstruos",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A nivel 3, obtienes la capacidad de observar a una criatura y discernir mágicamente la mejor manera de dañarla. Como acción, elige a un objetivo que puedas ver y se encuentre a 60 pies o menos de ti. Inmediatamente sabes si la criatura tiene inmunidades, resistencias o vulnerabilidades al daño y cuáles son. Si el objetivo está oculto frente a la magia de adivinación, sientes que no tiene inmunidades al daño, resistencias o vulnerabilidades.",
+				"Puedes utilizar este rasgo tantas veces como tu modificador por Sabiduría (mínimo una vez). Recuperas todos los usos tras finalizar un descanso largo."
+			]
+		},
+		{
+			"name": "Magia de Cazador de Monstruos",
+			"source": "XGE-ES",
+			"page": 43,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Cazador de Monstruos",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A partir de nivel 3, aprenderás conjuros adicionales al alcanzar ciertos niveles de esta clase, como se puede ver en la tabla \"Conjuros de Cazador de Monstruos\". Estos se consideran conjuros de explorador para ti, pero no contra los conjuros totales de explorador que puedes conocer.",
+				{
+					"type": "table",
+					"caption": "Conjuros de Cazador de Monstruos",
+					"colLabels": [
+						"Nivel de explorador",
+						"Conjuro"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3",
+							"{@spell protección contra el bien y el mal|PHB-ES}"
+						],
+						[
+							"5",
+							"{@spell zona de la verdad|PHB-ES}"
+						],
+						[
+							"9",
+							"{@spell círculo mágico|PHB-ES}"
+						],
+						[
+							"13",
+							"{@spell destierro|PHB-ES}"
+						],
+						[
+							"17",
+							"{@spell inmovilizar monstruo|PHB-ES}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Presa",
+			"source": "XGE-ES",
+			"page": 43,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Cazador de Monstruos",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A partir de nivel 3, eres capaz de canalizar tu ira contra un enemigo, aumentando el daño que le infliges. Como acción adicional, puedes elegir a una criatura que puedas ver y se encuentre a 60 pies o menos de ti como objetivo de este rasgo. La primera vez en cada turno que impactes a esa criatura con un ataque con arma, recibe {@damage 1d6} de daño adicional del tipo del arma.",
+				"Este beneficio dura hasta que completes un descanso corto o largo. Terminará antes de tiempo si designas a un objetivo diferente."
+			]
+		},
+		{
+			"name": "Defensa Sobrenatural",
+			"source": "XGE-ES",
+			"page": 43,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Cazador de Monstruos",
+			"subclassSource": "XGE-ES",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"A nivel 7, tu resistencia contra los ataques de tu presa sobre tu mente y tu cuerpo aumenta. Cuando el objetivo del rasgo Presa te obligue a realizar una tirada de salvación, o si tienes que hacer una prueba de característica para escapar del agarre de esa criatura, añade {@damage 1d6} a tu tirada."
+			]
+		},
+		{
+			"name": "Némesis de Magos",
+			"source": "XGE-ES",
+			"page": 43,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Cazador de Monstruos",
+			"subclassSource": "XGE-ES",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"Cuando alcanzas el nivel 11 eres capaz de frustrar la magia de otros. Si ves a una criatura a 60 pies o menos de ti lanzando un conjuro o teletransportándose, puedes emplear tu reacción para intentar desbaratar su acción. El objetivo deberá tener éxito en una tirada de salvación de Sabiduría contra tu CD de salvación de conjuros o su conjuro o teletransporte fallará y se malgastará. ",
+				"Una vez utilizado este rasgo, deberás terminar un des canso corto o largo para poder volver a usarlo."
+			]
+		},
+		{
+			"name": "Contraataque del Cazador",
+			"source": "XGE-ES",
+			"page": 43,
+			"className": "Explorador",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Cazador de Monstruos",
+			"subclassSource": "XGE-ES",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"A nivel 15 aprendes a contraatacar cuando tu presa intenta sabotearte. Si el objetivo de tu rasgo Presa te obliga a realizar una tirada de salvación, puedes usar tu reacción para hacer un ataque con arma contra esa criatura. Realizas el ataque inmediatamente antes de la tirada de salvación. Si tu ataque impacta, tu tirada de salvación tiene éxito automática mente, además de los efectos normales del ataque."
+			]
+		}
+	]
+}

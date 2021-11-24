@@ -1,0 +1,77 @@
+{
+	"monster": [
+		{
+			"name": "Siervo Diminuto",
+			"source": "XGE-ES",
+			"page": 169,
+			"size": "T",
+			"type": {
+				"type": "construct",
+				"tags": [
+					"autómata"
+				]
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"armadura natural"
+					]
+				}
+			],
+			"hp": {
+				"average": 10,
+				"formula": "4d4"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 4,
+			"dex": 16,
+			"con": 10,
+			"int": 2,
+			"wis": 10,
+			"cha": 1,
+			"senses": [
+				"blindsight 60 ft. (blind beyond this radius)"
+			],
+			"passive": 10,
+			"immune": [
+				"veneno",
+				"psíquico"
+			],
+			"conditionImmune": [
+				"cegado|PHB-ES",
+				"hechizado|PHB-ES",
+				"ensordecido|PHB-ES",
+				"cansancio|PHB-ES",
+				"asustado|PHB-ES",
+				"paralizado|PHB-ES",
+				"petrificado|PHB-ES",
+				"envenenado|PHB-ES"
+			],
+			"action": [
+				{
+					"name": "Golpe",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., un objetivo. {@h}5 ({@damage 1d4 + 3}) contundente damage."
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/GarrimGM/R2O5eEsp/master/img/XGE/Tiny%20Servant.png",
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			]
+		}
+	]
+}

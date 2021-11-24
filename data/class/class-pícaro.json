@@ -1,0 +1,2141 @@
+{
+	"class": [
+		{
+			"name": "Pícaro",
+			"source": "PHB-ES",
+			"page": 94,
+			"srd": true,
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"dex",
+				"int"
+			],
+			"startingProficiencies": {
+				"armor": [
+					{
+						"proficiency": "light",
+						"full": "{@filter armaduras ligeras|items|source=PHB-ES|type=light armor}"
+					}
+				],
+				"weapons": [
+					"{@filter armas sencillas|items|source=PHB-ES|type=simple weapon}",
+					"{@item Ballesta de mano|PHB-ES|ballestas de mano}",
+					"{@item Espada larga|PHB-ES|espadas largas}",
+					"{@item Estoque|PHB-ES|estoques}",
+					"{@item Espada corta|PHB-ES|espadas cortas}"
+				],
+				"tools": [
+					"{@item Herramientas de ladrón|PHB-ES|herramientas de ladrón}"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics|acrobacias",
+								"athletics|atletismo",
+								"deception|engaño",
+								"insight|perspicacia",
+								"intimidation|intimidación",
+								"investigation|investigación",
+								"perception|percepción",
+								"performance|interpretación",
+								"persuasion|persuasión",
+								"sleight of hand|juego de manos",
+								"stealth|sigilo"
+							],
+							"count": 4
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) un {@item estoque|PHB-ES} o (b) una {@item espada corta|PHB-ES}",
+					"(a) un {@item arco corto|PHB-ES} y una {@item aljaba|PHB-ES} de {@item Flechas (20)|PHB-ES|20 20 flechas} o (b) una {@item espada corta|PHB-ES}",
+					"(a) un {@item paquete de ladrón|PHB-ES}, (b) un {@item paquete de explorador de mazmorras|PHB-ES} o (c) un {@item paquete de explorador|PHB-ES}",
+					"{@item Armadura de cuero|PHB-ES}, dos {@item daga|PHB-ES|dagas} y {@item herramientas de ladrón|PHB-ES}"
+				],
+				"goldAlternative": "{@dice 4d4 × 10|4d4 × 10|Starting Gold}",
+				"defaultData": [
+					{
+						"a": [
+							"estoque|PHB-ES"
+						],
+						"b": [
+							"espada corta|PHB-ES"
+						]
+					},
+					{
+						"a": [
+							"arco corto|PHB-ES",
+							"Flechas (20)|PHB-ES"
+						],
+						"b": [
+							"espada corta|PHB-ES"
+						]
+					},
+					{
+						"a": [
+							"paquete de ladrón|PHB-ES"
+						],
+						"b": [
+							"paquete de explorador de mazmorras|PHB-ES"
+						],
+						"c": [
+							"paquete de explorador|PHB-ES"
+						]
+					},
+					{
+						"_": [
+							"Armadura de cuero|PHB-ES",
+							{
+								"item": "daga|PHB-ES",
+								"quantity": 2
+							},
+							"herramientas de ladrón|PHB-ES"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"dex": 13
+				},
+				"proficienciesGained": {
+					"armor": [
+						{
+							"proficiency": "light",
+							"full": "{@filter armaduras ligeras|items|source=PHB-ES|type=light armor}"
+						}
+					],
+					"skills": [
+						{
+							"choose": {
+								"from": [
+									"acrobatics|acrobacias",
+									"athletics|atletismo",
+									"deception|engaño",
+									"insight|perspicacia",
+									"intimidation|intimidación",
+									"investigation|investigación",
+									"perception|percepción",
+									"performance|interpretación",
+									"persuasion|persuasión",
+									"sleight of hand|juego de manos",
+									"stealth|sigilo"
+								],
+								"count": 1
+							}
+						}
+					],
+					"tools": [
+						"{@item herramientas de ladrón|PHB-ES}"
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"Ataque Furtivo"
+					],
+					"rows": [
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 2,
+										"faces": 6
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 2,
+										"faces": 6
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 3,
+										"faces": 6
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 3,
+										"faces": 6
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 4,
+										"faces": 6
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 4,
+										"faces": 6
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 5,
+										"faces": 6
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 5,
+										"faces": 6
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 6,
+										"faces": 6
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 6,
+										"faces": 6
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 7,
+										"faces": 6
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 7,
+										"faces": 6
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 8,
+										"faces": 6
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 8,
+										"faces": 6
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 9,
+										"faces": 6
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 9,
+										"faces": 6
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 10,
+										"faces": 6
+									}
+								]
+							}
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 10,
+										"faces": 6
+									}
+								]
+							}
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"Pericia|Pícaro|PHB-ES|1",
+				"Ataque Furtivo|Pícaro|PHB-ES|1",
+				"Jerga de Ladrones|Pícaro|PHB-ES|1",
+				"Acción Astuta|Pícaro|PHB-ES|2",
+				{
+					"classFeature": "Arquetipo de Pícaro|Pícaro|PHB-ES|3",
+					"gainSubclassFeature": true
+				},
+				"Mejora de Característica|Pícaro|PHB-ES|4",
+				"Esquiva Asombrosa|Pícaro|PHB-ES|5",
+				"Pericia|Pícaro|PHB-ES|6",
+				"Evasión|Pícaro|PHB-ES|7",
+				"Mejora de Característica|Pícaro|PHB-ES|8",
+				{
+					"classFeature": "Rasgo de Arquetipo de Pícaro|Pícaro|PHB-ES|9",
+					"gainSubclassFeature": true
+				},
+				"Mejora de Característica|Pícaro|PHB-ES|10",
+				"Talentos Fiables|Pícaro|PHB-ES|11",
+				"Mejora de Característica|Pícaro|PHB-ES|12",
+				{
+					"classFeature": "Rasgo de Arquetipo de Pícaro|Pícaro|PHB-ES|13",
+					"gainSubclassFeature": true
+				},
+				"Sentir sin Ver|Pícaro|PHB-ES|14",
+				"Mente Escurridiza|Pícaro|PHB-ES|15",
+				"Mejora de Característica|Pícaro|PHB-ES|16",
+				{
+					"classFeature": "Rasgo de Arquetipo de Pícaro|Pícaro|PHB-ES|17",
+					"gainSubclassFeature": true
+				},
+				"Elusivo|Pícaro|PHB-ES|18",
+				"Mejora de Característica|Pícaro|PHB-ES|19",
+				"Golpe de Suerte|Pícaro|PHB-ES|20"
+			],
+			"subclassTitle": "Arquetipos de pícaro",
+			"fluff": [
+				{
+					"name": "Pícaro",
+					"type": "section",
+					"entries": [
+						"Indicando a sus compañeros que esperen, una mediana avanza con precaución por una de las salas de una mazmorra. Apoya su oreja contra una puerta, saca su juego de herramientas y ganzúas y fuerza la cerradura en un abrir y cerrar de ojos. Desaparece entre las sombras tras terminar con éxito el proceso, apartándose para que su compañero, un guerrero, abra la puerta de una patada.",
+						"Un humano acecha entre la oscuridad de un callejón mientras su cómplice se prepara para la emboscada. Cuando su objetivo, un famoso esclavista, cruza el callejón, la cómplice deja escapar un grito. El esclavista acude a investigar, pero lo único que encuentra es el filo de un asesino, que atraviesa su garganta antes de poder emitir sonido alguno.",
+						"Aguantándose una risita, la gnoma agita sus dedos, haciendo que, por arte de magia, el llavero del guardia vuele alejándose del cinturón de este. Instantes después, las llaves se encuentran en las manos de la mujer, la celda está abierta y tanto ella como su compañero son libres para marcharse.",
+						"Los pícaros recurren a la habilidad, el sigilo y explotar las debilidades de sus enemigos para sacar ventaja de cualquier situación. Tienen un don para encontrar la solución a casi cualquier problema. Su ingenio y versatilidad les convierten en la piedra angular de prácticamente cualquier grupo que culmina sus aventuras con éxito.",
+						{
+							"type": "entries",
+							"name": "Habilidad y precisión",
+							"entries": [
+								"Los pícaros dedican mucho esfuerzo a dominar una gran variedad de habilidades y perfeccionar sus técnicas de combate. Toda esto les da una perspectiva muy amplia, que muy pocos personajes pueden igualar. Muchos pícaros se especializan en el sigilo y el engaño, mientras que otros pulen aquellas habilidades que les ayudan a explorar mazmorras, como trepar, encontrar y desactivar trampas o forzar cerraduras.",
+								"Cuando llega la hora de combatir, los pícaros prefieren recurrir a la astucia antes que a la fuerza bruta. Un pícaro, por ejemplo, siempre escogerá ejecutar un único golpe preciso, que hiera a su enemigo en su punto más vulnerable, frente a desgastar a su oponente con un torrente de ataques. Los pícaros tienen un don casi sobrenatural para evitar el peligro, y algunos de ellos incluso aprenden ciertos trucos mágicos con los que complementar sus otros talentos."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Una vida turbia",
+							"entries": [
+								"En toda población de cierto tamaño aparecen pícaros. Muchos de ellos están a la altura de los peores estereotipos de su clase, ganándose la vida como ladrones, asesinos, carteristas y timadores. Es frecuente que estos sinvergüenzas se organicen en gremios de ladrones o familias criminales. Aun así, un gran número de pícaros operan de forma independiente, pero incluso ellos pueden acabar contratando aprendices que les ayuden con sus estafas y golpes. Unos pocos pícaros se ganan la vida de forma honesta, trabajando como cerrajeros, investigadores o exterminadores. Aunque parezca extraño, este último oficio puede ser muy peligroso en un mundo en el que las ratas terribles (e incluso los hombres rata) acechan en las alcantarillas. Como aventureros, los pícaros pueden acabar tanto defendiendo la ley como oponiéndose a ella. Algunos son encallecidos criminales que deciden hacer fortuna buscando tesoros, mientras que otros parten de aventuras para escapar de la ley. Los hay que incluso han aprendido y perfeccionado sus habilidades con el fin expreso de saquear los tesoros ocultos en ruinas ancestrales y criptas ocultas."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creación de un pícaro",
+							"entries": [
+								"Cuando crees tú pícaro, ten en consideración su relación con la ley. ¿Tienes un pasado (o presente) criminal? ¿Estás huyendo de la ley o del enfadado maestro de un gremio de ladrones? Puede que abandonaras tu gremio en busca de mayores recompensas (y, por tanto, también riesgos). ¿Es la codicia lo que te motiva o algún otro deseo o ideal? ¿Qué fue lo que te apartó de tu anterior vida? Quizá uno de tus golpes o estafas acabará siendo un fracaso absoluto, forzándote a replantearte tu carrera como criminal. O a lo mejor sucedió lo contrario, y un robo que salió a pedir de boca te proporcionó los medios para salir de la miseria en la que te encontrabas.",
+								"Es posible que el ansia por viajar te apartara de tu hogar. Si te viste separado súbitamente de tu familia o tu mentor, probablemente tuvieras que encontrar otra forma de mantenerte. O puede que hicieras un amigo nuevo (otro miembro de tu grupo de aventureros), que te enseñó nuevas maneras de emplear tus especiales talentos y, de paso, ganarte la vida haciéndolo.",
+								{
+									"type": "entries",
+									"name": "Creación rápida",
+									"entries": [
+										"Para crear un pícaro de forma rápida sugerimos lo siguiente. Para empezar, Destreza debería ser tu característica más alta. Si te gusta destacar cuando uses Investigación o planeas elegir el arquetipo Embaucador Arcano, tu siguiente característica más alta debería ser la Inteligencia. Sin embargo, si prefieres recurrir al engaño y la interacción social, lo mejor es que elijas el Carisma como tu siguiente característica más alta después de Destreza. A continuación, escoge el trasfondo \"{@background charlatan|PHB-ES|charlatán}\"."
+									]
+								}
+							]
+						}
+					],
+					"page": 94,
+					"source": "PHB-ES"
+				},
+				{
+					"type": "section",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"La gente se olvida de que la verdadera razón por la que bajas a una tumba polvorienta es para traer de vuelta los tesoros escondidos que puedas encontrar. Pelear es para idiotas. Un hombre muerto no puede gastar su dinero."
+							],
+							"by": "Barnabas Bladecutter"
+						},
+						"Cuando la fuerza bruta no consigue terminar el trabajo, o la magia no está disponible o no es útil, el pícaro entra en acción. Con habilidades ligadas al sigilo, el subterfugio y el engaño, los miembros de esta clase son capaces de meterse y salir de los problemas de maneras que pocos otros personajes pueden emular.",
+						"Algunos pícaros que se meten a aventureros antes eran criminales, habiendo decidido que esquivar monstruos es mejor que esquivar el largo brazo de la ley. Otros son asesinos profesionales que buscan un uso productivo de sus talentos entre contrato y contrato. A otros simplemente les encanta la emoción de superar cualquier desafío que se les presente.",
+						"De aventuras, un pícaro suele combinar un enfoque aparentemente cauteloso (pocos miembros de esta clase disfrutan del combate) con un hambre voraz por el botín. La mayor parte del tiempo, piensa el pícaro, enfrentarse a una criatura no tiene como objetivo matarla, sino convertirse en el nuevo dueño de sus tesoros.",
+						"Las siguientes secciones exploran ciertos aspectos de lo que implica ser un pícaro, y podrás usarlos para añadir profundidad a tu personaje.",
+						{
+							"type": "entries",
+							"name": "Placer culpable",
+							"entries": [
+								"La mayor parte de las cosas que hace un pícaro giran alrededor de obtener tesoro y evitar que otros lo consigan. Pocos se interpondrán entre ellos y esos objetivos, aunque muchos picaros se ven desviados del camino por una compulsión que nubla su juicio: una irresistible necesidad que debe ser satisfecha, incluso aunque hacerlo sea arriesgado.",
+								"El placer culpable de un pícaro podría ser conseguir un determinado objeto, experimentar algo o simplemente una manera de comportarse en ciertas circunstancias. Por ejemplo, un pícaro podría ser incapaz de dejar pasar la oportunidad de robar cualquier cosa hecha de plata, incluso si esta está colgando del cuello de un guardia del castillo. En cambio, para otro podría ser imposible permanecer un día en la ciudad sin birlar un par de bolsas, solo para mantenerse en forma.",
+								"¿Cuál es la tentación a la que tu pícaro es incapaz de resistirse cuando se presenta la oportunidad, incluso aunque sea problemático para ti y tus compañeros?",
+								{
+									"type": "table",
+									"caption": "Placeres culpables",
+									"colLabels": [
+										"{@dice d6}",
+										"Placer"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Las piedras preciosas grandes"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"La sonrisa de una cara bonita."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Un anillo nuevo para tus dedos"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"La oportunidad de desinflar el ego de alguien"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"La mejor comida y bebida"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Añadir una pieza a tu colección de monedas exóticas"
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Adversario",
+							"entries": [
+								"Naturalmente, aquellos que hacen cumplir la ley acaban encontrándose con los que la rompen, por lo que un pícaro que no tiene su cara en un cartel de \"Se busca\" es poco común. Además, como parte de su profesión, es normal que los miembros de esta clase entren en contacto con elementos criminales, ya sea por elección o necesidad. Algunas de esas personas pueden ser adversarios y normalmente será más difícil encargarse de ellos que de la guardia de la ciudad.",
+								"Si el trasfondo de tu aventurero no incluye todavía a un personaje de este tipo, puedes trabajar con tu DM para encontrar una razón por la que un adversario ha entrado en tu vida. Quizá hay alguien que lleva tiempo vigilándote y quiere usarte para terribles propósitos, pero tú acabas de ser consciente de su existencia. Este tipo de incidente podría ser la base de una aventura futura.",
+								"¿Tiene tu pícaro un adversario que también es un criminal? Si es así, ¿cómo afecta esta relación a tu vida?",
+								{
+									"type": "table",
+									"caption": "Adversarios",
+									"colLabels": [
+										"{@dice d6}",
+										"Adversario"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"El capitán pirata en cuyo barco serviste tiempo atrás. Lo que tú llamas \"pasar a otra cosa\", el capitán lo llama motín."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"Un maestro espía al que sin querer diste información errónea, lo que le llevó a asesinar al objetivo incorrecto."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"El maestro del gremio de ladrones local, que quiere que te unas a él o salgas de la ciudad."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"Un coleccionista de arte que utiliza medios ilegales para conseguir obras maestras."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"Un comerciante de objetos robados, que te usa como mensajero para reuniones ilícitas."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"El propietario de una arena de luchadores del pozo en la que fuiste corredor de apuestas."
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Benefactor",
+							"entries": [
+								"Pocos pícaros llegan lejos sin necesitar la ayuda de alguien, lo que implica deber un gran favor a ese benefactor.",
+								"Si el trasfondo de tu aventurero no incluye este tipo de personaje, puedes colaborar con tu DM para determinar por qué hay un benefactor en tu vida. Quizá fuiste favorecido por algo que hizo tu benefactor, sin que supieras quién era el responsable de ello, y acabas de conocer la existencia de esa persona. ¿Quién te ayudó en el pasado, lo supieras o no en ese momento, y qué le debes a esa persona como recompensa?",
+								{
+									"type": "table",
+									"caption": "Benefactores",
+									"colLabels": [
+										"{@dice d6}",
+										"Benefactor"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Un contrabandista que evitó que te capturaran, pero perdió un importante cargamento al hacerlo. Ahora le debes a esa persona un favor igual de valioso."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"El Rey Mendigo te ha escondido muchas veces de tus perseguidores, a cambio de favores futuros."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Un magistrado te mantuvo fuera de la cárcel, pero en compensación tuviste que dar información sobre un poderoso señor del crimen."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"Tus padres utilizaron sus ahorros para sacarte de un problema y ahora están desamparados."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"Un dragón no te comió cuando tuvo la oportunidad y, a cambio, prometiste guardarle los mejores tesoros."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Un druida te ayudó una vez a salir de una situación difícil. Ahora cualquier animal que ves podría ser ese benefactor, quizá llegado para pedirte que le devuelvas el favor."
+										]
+									]
+								}
+							]
+						}
+					],
+					"page": 44,
+					"source": "XGE-ES"
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Embaucador Arcano",
+			"shortName": "Embaucador Arcano",
+			"source": "PHB-ES",
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"page": 97,
+			"spellcastingAbility": "int",
+			"casterProgression": "1/3",
+			"cantripProgression": [
+				0,
+				0,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4
+			],
+			"spellsKnownProgression": [
+				0,
+				0,
+				3,
+				4,
+				4,
+				4,
+				5,
+				6,
+				6,
+				7,
+				8,
+				8,
+				9,
+				10,
+				10,
+				11,
+				11,
+				11,
+				12,
+				13
+			],
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"mano de mago|PHB-ES#c"
+						]
+					}
+				}
+			],
+			"subclassTableGroups": [
+				{
+					"subclasses": [
+						{
+							"name": "Embaucador Arcano",
+							"source": "PHB-ES"
+						}
+					],
+					"colLabels": [
+						"{@filter Trucos conocidos|spells|level=0|subclass=Pícaro: Embaucador Arcano (PHB-ES)}",
+						"{@filter Conjuros conocidos|spells|subclass=Pícaro: Embaucador Arcano (PHB-ES)}"
+					],
+					"rows": [
+						[
+							0,
+							0
+						],
+						[
+							0,
+							0
+						],
+						[
+							3,
+							3
+						],
+						[
+							3,
+							4
+						],
+						[
+							3,
+							4
+						],
+						[
+							3,
+							4
+						],
+						[
+							3,
+							5
+						],
+						[
+							3,
+							6
+						],
+						[
+							3,
+							6
+						],
+						[
+							4,
+							7
+						],
+						[
+							4,
+							8
+						],
+						[
+							4,
+							8
+						],
+						[
+							4,
+							9
+						],
+						[
+							4,
+							10
+						],
+						[
+							4,
+							10
+						],
+						[
+							4,
+							11
+						],
+						[
+							4,
+							11
+						],
+						[
+							4,
+							11
+						],
+						[
+							4,
+							12
+						],
+						[
+							4,
+							13
+						]
+					]
+				},
+				{
+					"title": "Espacios de conjuro por cada nivel de conjuro",
+					"subclasses": [
+						{
+							"name": "Embaucador Arcano",
+							"source": "PHB-ES"
+						}
+					],
+					"colLabels": [
+						"{@filter 1|spells|level=1|subclass=Pícaro: Embaucador Arcano (PHB-ES)}",
+						"{@filter 2|spells|level=2|subclass=Pícaro: Embaucador Arcano (PHB-ES)}",
+						"{@filter 3|spells|level=3|subclass=Pícaro: Embaucador Arcano (PHB-ES)}",
+						"{@filter 4|spells|level=4|subclass=Pícaro: Embaucador Arcano (PHB-ES)}"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						]
+					]
+				}
+			],
+			"subclassFeatures": [
+				"Embaucador Arcano|Pícaro|PHB-ES|Embaucador Arcano|PHB-ES|3",
+				"Emboscada Mágica|Pícaro|PHB-ES|Embaucador Arcano|PHB-ES|9",
+				"Embaucador Versátil|Pícaro|PHB-ES|Embaucador Arcano|PHB-ES|13",
+				"Ladrón de Conjuros|Pícaro|PHB-ES|Embaucador Arcano|PHB-ES|17"
+			]
+		},
+		{
+			"name": "Asesino",
+			"shortName": "Asesino",
+			"source": "PHB-ES",
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"page": 97,
+			"subclassFeatures": [
+				"Asesino|Pícaro|PHB-ES|Asesino|PHB-ES|3",
+				"Pericia en Infiltrarse|Pícaro|PHB-ES|Asesino|PHB-ES|9",
+				"Impostor|Pícaro|PHB-ES|Asesino|PHB-ES|13",
+				"Golpe Mortal|Pícaro|PHB-ES|Asesino|PHB-ES|17"
+			]
+		},
+		{
+			"name": "Ladrón",
+			"shortName": "Ladrón",
+			"source": "PHB-ES",
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"page": 97,
+			"srd": true,
+			"subclassFeatures": [
+				"Ladrón|Pícaro|PHB-ES|Ladrón|PHB-ES|3",
+				"Sigilo Supremo|Pícaro|PHB-ES|Ladrón|PHB-ES|9",
+				"Usar Objetos Mágicos|Pícaro|PHB-ES|Ladrón|PHB-ES|13",
+				"Reflejos de Ladrón|Pícaro|PHB-ES|Ladrón|PHB-ES|17"
+			]
+		},
+		{
+			"name": "Inquisitivo",
+			"shortName": "Inquisitivo",
+			"source": "XGE-ES",
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"page": 45,
+			"subclassFeatures": [
+				"Inquisitivo|Pícaro|PHB-ES|Inquisitivo|XGE-ES|3",
+				"Ojo Estable|Pícaro|PHB-ES|Inquisitivo|XGE-ES|9",
+				"Vista Infalible|Pícaro|PHB-ES|Inquisitivo|XGE-ES|13",
+				"Ojo para la Debilidad|Pícaro|PHB-ES|Inquisitivo|XGE-ES|17"
+			]
+		},
+		{
+			"name": "Mente Maestra",
+			"shortName": "Mente Maestra",
+			"source": "XGE-ES",
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"page": 46,
+			"otherSources": [
+				{
+					"source": "SCAG-ES",
+					"page": 135
+				}
+			],
+			"subclassFeatures": [
+				"Mente Maestra|Pícaro|PHB-ES|Mente Maestra|XGE-ES|3",
+				"Manipulador Perspicaz|Pícaro|PHB-ES|Mente Maestra|XGE-ES|9",
+				"Distracción|Pícaro|PHB-ES|Mente Maestra|XGE-ES|13",
+				"Alma Engañosa|Pícaro|PHB-ES|Mente Maestra|XGE-ES|17"
+			]
+		},
+		{
+			"name": "Batidor",
+			"shortName": "Batidor",
+			"source": "XGE-ES",
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"page": 47,
+			"subclassFeatures": [
+				"Batidor|Pícaro|PHB-ES|Batidor|XGE-ES|3",
+				"Movilidad Superior|Pícaro|PHB-ES|Batidor|XGE-ES|9",
+				"Maestro de la Emboscada|Pícaro|PHB-ES|Batidor|XGE-ES|13",
+				"Ataque Súbito|Pícaro|PHB-ES|Batidor|XGE-ES|17"
+			]
+		},
+		{
+			"name": "Espadachín",
+			"shortName": "Espadachín",
+			"source": "XGE-ES",
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"page": 48,
+			"otherSources": [
+				{
+					"source": "SCAG-ES",
+					"page": 135
+				}
+			],
+			"subclassFeatures": [
+				"Espadachín|Pícaro|PHB-ES|Espadachín|XGE-ES|3",
+				"Garbo|Pícaro|PHB-ES|Espadachín|XGE-ES|9",
+				"Maniobra elegante|Pícaro|PHB-ES|Espadachín|XGE-ES|13",
+				"Duelista Experto|Pícaro|PHB-ES|Espadachín|XGE-ES|17"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Pericia",
+			"source": "PHB-ES",
+			"page": 94,
+			"srd": true,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"level": 1,
+			"entries": [
+				"A nivel 1, escoge dos de tus competencias en habilidades, o bien solo una y tu competencia con las {@item herramientas de ladrón|PHB-ES}. Tu bonificador por competencia se duplica para cualquier prueba de característica que hagas utilizando cualquiera de las dos competencias elegidas.",
+				"A nivel 6 puedes elegir otras dos competencias (en habilidades o con {@item herramientas de ladrón|PHB-ES}) y obtener este beneficio para ellas."
+			]
+		},
+		{
+			"name": "Ataque Furtivo",
+			"source": "PHB-ES",
+			"page": 94,
+			"srd": true,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"level": 1,
+			"entries": [
+				"A partir de nivel 1 sabes cómo golpear sutilmente y aprovecharte de un enemigo distraído. Una vez por turno, puedes infligir {@damage 1d6} de daño adicional a una criatura a la que impactes con un ataque en cuya tirada de ataque tuvieras ventaja. Este ataque debe haber sido hecho utilizando un arma sutil o a distancia.",
+				"No necesitas tener ventaja en la tirada de ataque si otro enemigo del objetivo está a 5 pies o menos de él, dicho enemigo no está {@condition incapacitado|PHB-ES}, y no sufres desventaja en la tirada de ataque.",
+				"La cantidad de daño adicional aumenta según subes de nivel en esta clase, tal y como se indica en la columna “ataque furtivo” de la tabla del pícaro."
+			]
+		},
+		{
+			"name": "Jerga de Ladrones",
+			"source": "PHB-ES",
+			"page": 94,
+			"srd": true,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"level": 1,
+			"entries": [
+				"Durante tu entrenamiento como pícaro aprendiste la jerga de ladrones, una mezcla de dialecto, argot y código secreto que te permite esconder mensajes en lo que parece una conversación normal y corriente. Únicamente aquellas criaturas que conozcan la jerga de ladrones podrán en tender estos mensajes. Expresar un mensaje utilizando esta jerga precisa de cuatro veces el tiempo que tardarías en comunicar la misma idea directamente.",
+				"Además, también comprendes un conjunto de señales y símbolos secretos que se usan para dejar mensajes cortos y sencillos, como el hecho de que una zona sea peligrosa o el territorio de un gremio de ladrones, si hay o no botín cerca, o si los lugareños de los alrededores son presas fáciles o pueden proporcionar un piso franco para ladrones a la fuga."
+			]
+		},
+		{
+			"name": "Acción Astuta",
+			"source": "PHB-ES",
+			"page": 94,
+			"srd": true,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"level": 2,
+			"entries": [
+				"A partir de nivel 2 tu agilidad mental y rapidez te permiten moverte y actuar con presteza, por lo que puedes llevar a cabo una acción adicional en cada uno de tus turnos durante un combate. Solo puedes utilizar esta acción adicional para realizar las acciones de {@action Correr|PHB-ES|Correr}, {@action Destrabarse|PHB-ES|Destrabarse} o {@action Esconderse|PHB-ES|Esconderse}."
+			]
+		},
+		{
+			"name": "Arquetipo de Pícaro",
+			"source": "PHB-ES",
+			"page": 94,
+			"srd": true,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"level": 3,
+			"entries": [
+				"A nivel 3, escoges un arquetipo al que aspiras emular, desarrollando tus habilidades como pícaro siguiendo ese modelo. Elige entre Ladrón, Asesino o Embaucador Arcano. Todos ellos están detallados al final de la descripción de esta clase. Esta elección te proporciona ciertos rasgos cuando alcanzas los niveles 3, 9, 13 y 17."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 94,
+			"srd": true,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"level": 4,
+			"entries": [
+				"Cuando alcances el nivel 4 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Esquiva Asombrosa",
+			"source": "PHB-ES",
+			"page": 94,
+			"srd": true,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"level": 5,
+			"entries": [
+				"A partir de nivel 5, cuando un atacante que puedas ver te impacte con un ataque, puedes usar tu reacción para reducir a la mitad el daño que te causa dicho ataque."
+			]
+		},
+		{
+			"name": "Pericia",
+			"source": "PHB-ES",
+			"page": 94,
+			"srd": true,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"level": 6,
+			"entries": [
+				"A nivel 6 puedes elegir otras dos competencias (en habilidades o con {@item herramientas de ladrón|PHB-ES}) y obtener este beneficio para ellas."
+			]
+		},
+		{
+			"name": "Evasión",
+			"source": "PHB-ES",
+			"page": 94,
+			"srd": true,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"level": 7,
+			"entries": [
+				"A partir de nivel 7 puedes evitar con agilidad ciertos efectos de área, como el aliento ígneo de un dragón rojo o un conjuro de {@spell Tormenta de hielo|PHB-ES|tormenta de hielo}. Cuando seas víctima de un efecto que le permita hacer una tirada de salvación de Destreza para recibir solo la mitad del daño, no recibirás daño alguno si tienes éxito en la tirada de salvación y solo la mitad si la fallas."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 94,
+			"srd": true,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"level": 8,
+			"entries": [
+				"Cuando alcances el nivel 8 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Rasgo de Arquetipo de Pícaro",
+			"source": "PHB-ES",
+			"page": 94,
+			"srd": true,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"level": 9,
+			"entries": [
+				"A nivel 9 ganas un rasgo de tu Arquetipo de Pícaro."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 94,
+			"srd": true,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"level": 10,
+			"entries": [
+				"Cuando alcances el nivel 10 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Talentos Fiables",
+			"source": "PHB-ES",
+			"page": 94,
+			"srd": true,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"level": 11,
+			"entries": [
+				"Cuando llegas a nivel 11 has pulido tus habilidades escogidas hasta prácticamente alcanzar la perfección. Cuando hagas una prueba de característica que te permita añadir tu bonificador por competencia, puedes considerar cualquier resultado de 9 o menos en el {@dice d20} como si fuera un 10."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 94,
+			"srd": true,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"level": 12,
+			"entries": [
+				"Cuando alcances el nivel 12 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Rasgo de Arquetipo de Pícaro",
+			"source": "PHB-ES",
+			"page": 94,
+			"srd": true,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"level": 13,
+			"entries": [
+				"A nivel 13 ganas un rasgo de tu Arquetipo de Pícaro."
+			]
+		},
+		{
+			"name": "Sentir sin Ver",
+			"source": "PHB-ES",
+			"page": 94,
+			"srd": true,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"level": 14,
+			"entries": [
+				"A partir de nivel 14, si eres capaz de escuchar, también eres consciente de la ubicación de cualquier criatura escondida o {@condition invisible|PHB-ES} a 10 pies o menos de ti."
+			]
+		},
+		{
+			"name": "Mente Escurridiza",
+			"source": "PHB-ES",
+			"page": 94,
+			"srd": true,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"level": 15,
+			"entries": [
+				"A nivel 15 has adquirido una Fortaleza mental considerable. Ganas competencia en las tiradas de salvación de Sabiduría."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 94,
+			"srd": true,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"level": 16,
+			"entries": [
+				"Cuando alcances el nivel 16 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Rasgo de Arquetipo de Pícaro",
+			"source": "PHB-ES",
+			"page": 94,
+			"srd": true,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"level": 17,
+			"entries": [
+				"A nivel 17 ganas un rasgo de tu Arquetipo de Pícaro."
+			]
+		},
+		{
+			"name": "Elusivo",
+			"source": "PHB-ES",
+			"page": 94,
+			"srd": true,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"level": 18,
+			"entries": [
+				"A partir de nivel 18, eres tan escurridizo que será raro que un atacante pueda tomar el control de la situación. Ninguna tirada de ataque hecha contra ti tendrá ventaja mientras no estés {@condition incapacitado|PHB-ES}."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 94,
+			"srd": true,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"level": 19,
+			"entries": [
+				"Cuando alcances el nivel 19 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Golpe de Suerte",
+			"source": "PHB-ES",
+			"page": 94,
+			"srd": true,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"level": 20,
+			"entries": [
+				"A nivel 20 has desarrollado una capacidad asombrosa para tener éxito justo cuando lo necesitas. Si fallas al atacar a un objetivo dentro del alcance, puedes transformar el fallo en un impacto. También puedes emplear este rasgo para, si fallas al hacer una prueba de característica, considerar el resultado de la tirada del {@dice d20} como un 20.",
+				"Una vez utilizado este rasgo, deberás terminar un descanso corto o largo para poder volver a usarlo otra vez."
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Embaucador Arcano",
+			"source": "PHB-ES",
+			"page": 97,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Embaucador Arcano",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"entries": [
+				"Algunos pícaros complementan sus bien pulidas habilidades para el sigilo y su agilidad con magia, aprendiendo trucos de encantamiento e ilusionismo. Muchos de estos pícaros pueden ser carteristas o ladrones, pero también bromistas o alborotadores. Y, por qué no decirlo, un número no despreciable de ellos son aventureros.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Lanzamiento de Conjuros|Pícaro|PHB-ES|Embaucador Arcano|PHB-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Destreza con Mano de Mago|Pícaro|PHB-ES|Embaucador Arcano|PHB-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Destreza con Mano de Mago",
+			"source": "PHB-ES",
+			"page": 97,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Embaucador Arcano",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A partir de nivel 3, cuando lances mano de mago podrás hacer que la mano espectral sea {@condition invisible|PHB-ES} y serás capaz de llevar a cabo las siguientes tareas adicionales con ella:",
+				{
+					"type": "list",
+					"items": [
+						"Puedes guardar un objeto en un contenedor que esté llevando o vistiendo otra criatura.",
+						"Puedes sacar un objeto de un contenedor que esté llevando o vistiendo otra criatura.",
+						"Puedes usar las {@item herramientas de ladrón|PHB-ES} para forzar cerraduras y desarmar trampas a distancia."
+					]
+				},
+				"Para realizar cualquiera de estas tareas sin ser detectado por una criatura deberás vencer en una tirada enfrentada entre tu Destreza ({@skill Sleight of Hand|Juego de Manos}) y la Sabiduría ({@skill Perception|Percepción}) de la criatura.",
+				"Además, puedes utilizar la acción adicional que te da Acción Astuta para controlar la mano."
+			]
+		},
+		{
+			"name": "Lanzamiento de Conjuros",
+			"source": "PHB-ES",
+			"page": 97,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Embaucador Arcano",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Cuando llegas a nivel 3, obtienes la capacidad de lanzar conjuro. El {@book capítulo 10|PHB-ES|10} contiene las reglas de lanzamiento de conjuros y el {@book capítulo 11|PHB-ES|10} la {@filter lista de conjuros de mago|spells|class=mago (PHB-ES)}.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Trucos",
+							"entries": [
+								"Aprendes tres trucos: {@spell Mano de mago|PHB-ES|mano de mago} y otros dos de tu elección de la lista de conjuros de mago. Adquieres otro nuevo truco de mago de tu elección cuando alcanzas el nivel 10."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Espacios de conjuro",
+							"entries": [
+								"La tabla \"lanzamiento de conjuros del Embaucador Arcano\" muestra de cuántos espacios de conjuro dispones para lanzar conjuros de {@filter Embaucador Arcano|spells|class=mago (PHB-ES)} nivel 1 y superiores. Para lanzar uno de estos conjuros deberás invertir un espacio de al menos el nivel del conjuro. Recuperas todos los espacios utilizados tras finalizar un descanso largo.",
+								"Si, por ejemplo, conoces el conjuro de nivel 1 {@spell Hechizar persona|PHB-ES|hechizar persona} y posees un espacio de conjuro de nivel 1 y otro de nivel 2, podrías lanzar {@spell Hechizar persona|PHB-ES|hechizar persona} empleando cualquiera de los dos espacios."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Conjuros conocidos de nivel 1 y superiores",
+							"entries": [
+								"Conoces tres conjuros de mago de nivel 1 a tu elección, dos de los cuales deben ser de encantamiento o ilusionismo. Todos ellos han de pertenecer a la lista de conjuros de mago.",
+								"La columna \"conjuros conocidos\" de la tabla \"lanzamiento de conjuros del Embaucador Arcano\" te indica cuándo podrás aprender más conjuros de mago de nivel 1 o superiores. Tú eliges cuales, pero todos estos conjuros deben ser de encantamiento o ilusionismo y de un nivel para el que tengas espacios de conjuro. Así, cuando subes a nivel 7 en esta clase puedes aprender un conjuro nuevo, que puede ser de nivel 1 o 2.",
+								"Los conjuros que aprendes al alcanzar las niveles 8, 14 y 20 pueden ser de cualquier escuela mágica.",
+								"Además, cada vez que subas un nivel de esta clase podrás elegir uno de los conjuros de mago que ya conoces y reemplazarlo por otro de los que aparecen en la lista de conjuros de mago. El nuevo conjuro deberá ser de un nivel para el que tengas espacios de conjuro. Además, ha de ser de encantamiento o ilusionismo, salvo si estás reemplazando los conjuros que obtuviste a los niveles 8, 14 o 20."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Aptitud mágica",
+							"entries": [
+								"La Inteligencia es tu aptitud mágica en lo que a conjuros de mago respecta, ya que aprendes tus conjuros mediante el estudio concienzudo y la memorización. Así, utilizarás tu Inteligencia siempre que un conjuro de rango haga referencia a tu aptitud mágica. Además, también usarás tu modificador por Inteligencia para determinar la CD de las tiradas de salvación y las tiradas de ataque de los conjuros de mago que lances.",
+								{
+									"type": "abilityDc",
+									"name": "Spell",
+									"attributes": [
+										"int"
+									]
+								},
+								{
+									"type": "abilityAttackMod",
+									"name": "Spell",
+									"attributes": [
+										"int"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Emboscada Mágica",
+			"source": "PHB-ES",
+			"page": 97,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Embaucador Arcano",
+			"subclassSource": "PHB-ES",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 9, si estás escondido de una criatura cuando lanzas un conjuro sobre ella, el objetivo tendrá desventaja en cualquier tirada de salvación que deba hacer contra el conjuro este turno."
+			]
+		},
+		{
+			"name": "Embaucador Versátil",
+			"source": "PHB-ES",
+			"page": 97,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Embaucador Arcano",
+			"subclassSource": "PHB-ES",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"A nivel 13 obtienes la capacidad para distraer a tus objetivos con tu {@spell Mano de mago|PHB-ES|mano de mago}. Como acción adicional durante tu turno, puedes designar una criatura que se encuentre a 5 pies o menos de la mano espectral creada por el conjuro. Hacer esto te da ventaja en las tiradas de ataque contra el objetivo hasta el final del turno."
+			]
+		},
+		{
+			"name": "Ladrón de Conjuros",
+			"source": "PHB-ES",
+			"page": 97,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Embaucador Arcano",
+			"subclassSource": "PHB-ES",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"A nivel 17 obtienes la capacidad para robar mágicamente el conocimiento de cómo lanzar un conjuro a otro lanzador.",
+				"Inmediatamente después de que una criatura lance un conjuro que te tenga como objetivo cuya área de efecto te incluya, puedes usar tu reacción para obligar a la criatura a hacer una tirada de salvación con su modificador por aptitud mágica. La CD es tu CD de salvación de conjuros. Si falla, anularás los efectos del conjuro sobre ti y robarás el conocimiento de cómo lanzarlo si es de al menos nivel 1 y de un nivel que puedas lanzar (no tiene por qué ser un conjuro de mago). Durante las siguientes 8 horas, conocerás el conjuro y serás capaz de lanzarlo utilizando uno de tus espacios de conjuro. Además, la criatura no podrá lanzar el conjuro hasta que las 8 horas hayan pasado.",
+				"Una vez empleado este rasgo, deberás terminar un descanso largo para poder volver a usarlo otra vez."
+			]
+		},
+		{
+			"name": "Asesino",
+			"source": "PHB-ES",
+			"page": 97,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Asesino",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"entries": [
+				"Enfocas tu entrenamiento en el sombrío arte de la muerte. A este arquetipo pueden pertenecer personas muy diversas: asesinos a sueldo, espías, cazarrecompensas e incluso sacerdotes que han sido ungidos y entrenados específicamente para exterminar a los enemigos de su deidad. El sigilo, el veneno y el disfraz te ayudan a eliminar a tus oponentes con una eficacia mortífera.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Competencias Adicionales|Pícaro|PHB-ES|Asesino|PHB-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Asesinar|Pícaro|PHB-ES|Asesino|PHB-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Asesinar",
+			"source": "PHB-ES",
+			"page": 97,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Asesino",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A partir de nivel 3, eres especialmente mortífero cuando consigues sorprender a tus enemigos. Tienes ventaja en las tiradas de ataque contra cualquier criatura que aún no haya llevado a cabo ningún turno en el combate actual. Además, cualquier impacto contra una criatura sorprendida será automáticamente un crítico."
+			]
+		},
+		{
+			"name": "Competencias Adicionales",
+			"source": "PHB-ES",
+			"page": 97,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Asesino",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A nivel 3, cuando escoges este arquetipo, ganas competencia con los {@item útiles para disfrazarse|PHB-ES} y los {@item útiles de envenenador|PHB-ES}."
+			]
+		},
+		{
+			"name": "Pericia en Infiltrarse",
+			"source": "PHB-ES",
+			"page": 97,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Asesino",
+			"subclassSource": "PHB-ES",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 9 puedes crearte identidades falsas. Debes invertir siete días y 25 po para establecer la historia, profesión y afiliaciones de la identidad. Además, no puedes crear una identidad que ya pertenezca a otra persona. Por ejemplo, podrías adquirir la ropa, cartas de presentación y certificados de aspecto oficial necesarios para poder hacerte pasar por un miembro de alguna casa comercial de una ciudad remota, para así acceder a la compañía de otros ricos mercaderes.",
+				"A partir de ese momento, si adoptas la nueva identidad como un disfraz, otras criaturas creerán, salvo que les des una razón obvia para no hacerlo, que eres esa persona."
+			]
+		},
+		{
+			"name": "Impostor",
+			"source": "PHB-ES",
+			"page": 97,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Asesino",
+			"subclassSource": "PHB-ES",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"A nivel 13 adquieres la capacidad para imitar de forma infalible el habla, caligrafía y comportamiento de otra persona. Debes pasar al menos 3 horas estudiando tres aspectos de la conducta del objetivo: escucharle hablar, examinar su caligrafía y observar sus gestos.",
+				"Tu ardid es indiscernible para un observador casual. Si una criatura recelosa sospecha que algo no anda bien, tendrás ventaja en cualquier prueba de Carisma ({@skill Deception|Engaño}) para evitar ser descubierto."
+			]
+		},
+		{
+			"name": "Golpe Mortal",
+			"source": "PHB-ES",
+			"page": 97,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Asesino",
+			"subclassSource": "PHB-ES",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 17 te conviertes en un experto en matar instantáneamente. Cuando atacas e impactas a una criatura sorprendida, esta debe hacer una tirada de salvación de Constitución (CD 8 + tu modificador por Destreza + tu bonificador por competencia). Si falla, duplicarás el daño de tu ataque contra el objetivo."
+			]
+		},
+		{
+			"name": "Ladrón",
+			"source": "PHB-ES",
+			"page": 97,
+			"srd": true,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Ladrón",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"entries": [
+				"Has decidido pulir aquellas habilidades útiles para el arte del latrocinio. Rateros, bandidos, carteristas y otros criminales tienden a seguir este arquetipo, pero también lo hacen aquellos pícaros que prefieren verse a sí mismo como buscadores de tesoros profesionales, exploradores, descubridores o investigadores. Además de mejorar tu agilidad y sigilo, también aprendes habilidades útiles para la exploración de ruinas antiguas, a leer idiomas con los que no estás familiarizado y a usar objetos mágicos que normalmente no podrías emplear.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Manos Rápidas|Pícaro|PHB-ES|Ladrón|PHB-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Balconero|Pícaro|PHB-ES|Ladrón|PHB-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Manos Rápidas",
+			"source": "PHB-ES",
+			"page": 97,
+			"srd": true,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Ladrón",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A partir de nivel 3, puedes utilizar la acción adicional que obtuviste de Acción Astuta para hacer una prueba de Destreza ({@skill Sleight of Hand|Juego de Manos}), realizar una acción de {@action Usar un Objeto|PHB-ES} o usar tus {@item herramientas de ladrón|PHB-ES} para intentar desarmar una trampa o forzar una cerradura."
+			]
+		},
+		{
+			"name": "Balconero",
+			"source": "PHB-ES",
+			"page": 97,
+			"srd": true,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Ladrón",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Cuando escoges este arquetipo, a nivel 3, obtienes la capacidad para trepar más rápido de lo normal, por lo que trepar ya no te cuesta movimiento adicional.",
+				"Además, cuando saltes con carrerilla aumentarás la distancia que saltas en tantos pies como tu modificador por Destreza."
+			]
+		},
+		{
+			"name": "Sigilo Supremo",
+			"source": "PHB-ES",
+			"page": 97,
+			"srd": true,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Ladrón",
+			"subclassSource": "PHB-ES",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 9, si no te mueves más de la mitad de tu velocidad, tendrás ventaja en las pruebas de Destreza ({@skill Stealth|Sigilo}) hechas durante el mismo turno."
+			]
+		},
+		{
+			"name": "Usar Objetos Mágicos",
+			"source": "PHB-ES",
+			"page": 97,
+			"srd": true,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Ladrón",
+			"subclassSource": "PHB-ES",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"A nivel 13 has aprendido lo suficiente sobre el funcionamiento de la magia como para poder apañártelas para usar incluso aquellos objetos mágicos que no están destinados a alguien como tú. Ignoras todas las restricciones de clase, raza y nivel a la hora de emplear objetos mágicos."
+			]
+		},
+		{
+			"name": "Reflejos de Ladrón",
+			"source": "PHB-ES",
+			"page": 97,
+			"srd": true,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Ladrón",
+			"subclassSource": "PHB-ES",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"Cuando alcanzas el nivel 17 te has vuelto un experto en preparar emboscadas y escapar rápidamente del peligro. Puedes hacer dos turnos durante el primer asalto de cualquier combate. Llevarás a cabo tu primer turno según el orden de iniciativa normal y el segundo en tu iniciativa menos 10. No puedes usar este rasgo si estás sorprendido."
+			]
+		},
+		{
+			"name": "Inquisitivo",
+			"source": "XGE-ES",
+			"page": 45,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Inquisitivo",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"Como Inquisitivo arquetípico, te distingues por tu capacidad para desenterrar secretos y desentrañar misterios. Recurres a tu enorme atención al detalle y tu bien entrenada habilidad para leer las palabras y acciones de los demás para determinar sus verdaderas intenciones. Eres un experto en derrotar a criaturas que se ocultan entre la gente común y hacen de ellos tu presa. Tu maestría de la cultura popular y tus sagaces deducciones te permiten estar bien equipado para sacar a la luz y acabar con males ocultos.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Oído para el Engaño|Pícaro|PHB-ES|Inquisitivo|XGE-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Ojo para el Detalle|Pícaro|PHB-ES|Inquisitivo|XGE-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Lucha Perspicaz|Pícaro|PHB-ES|Inquisitivo|XGE-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Oído para el Engaño",
+			"source": "XGE-ES",
+			"page": 45,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Inquisitivo",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Cuando eliges este arquetipo a nivel 3, desarrollas tu talento para detectar mentiras. Siempre que hagas una prueba de Sabiduría ({@skill Insight|Perspicacia}) para determinar si una criatura miente, trata una tirada de 7 o menos en el {@dice d20} como si fuera un 8."
+			]
+		},
+		{
+			"name": "Ojo para el Detalle",
+			"source": "XGE-ES",
+			"page": 45,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Inquisitivo",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A partir de nivel 3, puedes usar una acción adicional para realizar una prueba de Sabiduría ({@skill Perception|Percepción}) para detectar a una criatura u objeto oculto o para hacer una prueba de Inteligencia ({@skill Investigation|Investigación}) para descubrir o descifrar una pista."
+			]
+		},
+		{
+			"name": "Lucha Perspicaz",
+			"source": "XGE-ES",
+			"page": 45,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Inquisitivo",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A nivel 3, obtienes la capacidad de conocer las tácticas de un oponente y contrarrestarlas. Como acción adicional, puedes realizar una prueba de Sabiduría ({@skill Insight|Perspicacia}) contra una criatura que puedas ver y que no esté {@condition incapacitado|PHB-ES|incapacitada}, enfrentándote a la prueba de Carisma ({@skill Deception|Engaño}) del objetivo. Si tienes éxito, puedes usar tu Ataque Furtivo contra él aunque no tengas ventaja en la tirada de ataque, pero no si tienes desventaja.",
+				"Este beneficio dura 1 minuto o hasta que utilices esta habilidad con éxito contra un objetivo diferente."
+			]
+		},
+		{
+			"name": "Ojo Estable",
+			"source": "XGE-ES",
+			"page": 45,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Inquisitivo",
+			"subclassSource": "XGE-ES",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 9, tienes ventaja en cualquier prueba de Sabiduría ({@skill Perception|Percepción}) o Inteligencia ({@skill Investigation|Investigación}) si no te desplazas más de la mitad de tu velocidad en el mismo turno."
+			]
+		},
+		{
+			"name": "Vista Infalible",
+			"source": "XGE-ES",
+			"page": 45,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Inquisitivo",
+			"subclassSource": "XGE-ES",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"A nivel 13, tus sentidos son prácticamente imposibles de engañar. Como acción, puedes sentir la presencia de ilusiones, cambiaformas que no estén en su forma original y otros efectos mágicos diseñados para engañar a los sentidos que se encuentren a 30 pies o menos de ti, siempre que no estés {@condition cegado|PHB-ES} o {@condition ensordecido|PHB-ES}. Sientes que un efecto está intentando engañarte, pero no sabes lo que esconde o su verdadera naturaleza.",
+				"Puedes emplear este rasgo tantas veces como tu modificador por Sabiduría (mínimo una vez) y recuperas todos los usos tras finalizar un descanso largo."
+			]
+		},
+		{
+			"name": "Ojo para la Debilidad",
+			"source": "XGE-ES",
+			"page": 45,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Inquisitivo",
+			"subclassSource": "XGE-ES",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"A nivel 17 aprendes a aprovechar las debilidades de una criatura estudiando cuidadosamente sus tácticas y sus movimientos. Si tu rasgo Lucha Perspicaz se aplica sobre un objetivo, tu daño de Ataque Furtivo contra este aumenta en {@dice 3d6}."
+			]
+		},
+		{
+			"name": "Mente Maestra",
+			"source": "XGE-ES",
+			"page": 46,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Mente Maestra",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"Te centras en las personas y en la influencia o los secretos que poseen. Muchos espías, cortesanos y estrategas siguen este arquetipo y llevan vidas llenas de intriga. Usas las palabras como arma con tanta frecuencia como los cuchillos o el veneno, y entre tus tesoros favoritos destacan los secretos y favores.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Maestro de la Intriga|Pícaro|PHB-ES|Mente Maestra|XGE-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Maestro de la Táctica|Pícaro|PHB-ES|Mente Maestra|XGE-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Maestro de la Intriga",
+			"source": "XGE-ES",
+			"page": 46,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Mente Maestra",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Cuando escoges este arquetipo a nivel 3, obtienes competencia con {@item útiles para disfrazarse|PHB-ES}, {@item útiles para falsificar|PHB-ES} y un {@item juegos|PHB-ES|juego} a tu elección. También aprendes los dos idiomas adicionales que elijas.",
+				"Además, puedes imitar sin equivocarte el dialecto y el acento de una criatura a la que hayas oído hablar durante como mínimo 1 minuto, lo que te permite hacerte pasar por hablante nativo de una zona concreta, siempre que sepas el idioma."
+			]
+		},
+		{
+			"name": "Maestro de la Táctica",
+			"source": "XGE-ES",
+			"page": 46,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Mente Maestra",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A partir de nivel 3, puedes utilizar la acción {@action Ayudar|PHB-ES} como acción adicional. Además, puedes utilizarla para echar una mano a un aliado que ataca a una criatura. El objetivo de ese ataque puede estar a 30 pies o menos de ti, en vez de a solo 5, siempre y cuando el objetivo pueda verte u oírte."
+			]
+		},
+		{
+			"name": "Manipulador Perspicaz",
+			"source": "XGE-ES",
+			"page": 46,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Mente Maestra",
+			"subclassSource": "XGE-ES",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 9, si dedicas al menos 1 minuto en observar o interactuar con otra criatura fuera del combate, podrás dilucidar hasta cierto punto sus capacidades en comparación con las tuyas. El DM te dirá si la criatura es tu igual, tu superior o tu inferior en lo que respecta a dos de las siguientes características a tu elección:",
+				{
+					"type": "list",
+					"items": [
+						"Puntuación de Inteligencia ",
+						"Puntuación de Sabiduría",
+						"Puntuación de Carisma",
+						"Nivel de clase (si lo tiene)"
+					]
+				},
+				"Si el DM lo prefiere, también puedes darte cuenta de que conoces parte de la historia de la criatura o uno de sus rasgos de personalidad, si es que tiene."
+			]
+		},
+		{
+			"name": "Distracción",
+			"source": "XGE-ES",
+			"page": 46,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Mente Maestra",
+			"subclassSource": "XGE-ES",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 13, eres capaz de provocar que una criatura reciba un ataque que iba dirigido a ti. Cuando seas el objetivo de un ataque en el que una criatura situada a 5 pies o menos de ti te da cobertura para ese ataque, puedes usar tu reacción para que dicha criatura se convierta en el objetivo en tu lugar."
+			]
+		},
+		{
+			"name": "Alma Engañosa",
+			"source": "XGE-ES",
+			"page": 46,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Mente Maestra",
+			"subclassSource": "XGE-ES",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 17, tus pensamientos ya no pueden ser leídos mediante telepatía o cualquier otro medio sin que tú lo permitas. Puedes mostrar pensamientos falsos mediante una tirada enfrentada de Carisma ({@skill Deception|Engaño}) contra la prueba de Sabiduría ({@skill Insight|Perspicacia}) del telépata.",
+				"Además, independientemente de lo que digas, cualquier efecto mágico que determine si estás diciendo la verdad indica que estás siendo sincero si así lo deseas y no se te puede obligar a decir la verdad mediante magia."
+			]
+		},
+		{
+			"name": "Batidor",
+			"source": "XGE-ES",
+			"page": 47,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Batidor",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"Estás versado en el sigilo y en la supervivencia lejos de las calles de la ciudad, lo que te permite explorar por delante de tus compañeros de expedición. Los pícaros que adoptan este arquetipo se sienten como en casa en la naturaleza, entre bárbaros y exploradores. Muchos batidores son los ojos y oídos de una escuadra militar. Emboscador, espía, cazarrecompensas: estos son solo algunos de los roles desempeñados por estos pícaros cuando viajan por el mundo.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Experto en Escaramuzas|Pícaro|PHB-ES|Batidor|XGE-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Superviviente Nato|Pícaro|PHB-ES|Batidor|XGE-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Experto en Escaramuzas",
+			"source": "XGE-ES",
+			"page": 47,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Batidor",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A partir de nivel 3, resultas difícil de arrinconar en batalla Cuando un enemigo termina su turno situado a 5 pies o menos de ti, puedes usar tu reacción parar moverte hasta la mitad de tu velocidad. Este movimiento no provoca ataques de oportunidad."
+			]
+		},
+		{
+			"name": "Superviviente Nato",
+			"source": "XGE-ES",
+			"page": 47,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Batidor",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Cuando eliges este arquetipo a nivel 3, ganas competencia en las habilidades {@skill Nature|Naturaleza} y {@skill Survival|Supervivencia}, si no la tenías ya. Tu bonificador por competencia se duplica para cualquier prueba de característica que hagas utilizando cualquiera de estas dos habilidades."
+			]
+		},
+		{
+			"name": "Movilidad Superior",
+			"source": "XGE-ES",
+			"page": 47,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Batidor",
+			"subclassSource": "XGE-ES",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"A nivel 9 tu velocidad caminando se incrementa en 10 pies. Si tienes una velocidad nadando o trepando, también aumenta en la misma cantidad."
+			]
+		},
+		{
+			"name": "Maestro de la Emboscada",
+			"source": "XGE-ES",
+			"page": 47,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Batidor",
+			"subclassSource": "XGE-ES",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 13, sobresales iniciando emboscadas y actuando el primero en una pelea.",
+				"Tienes ventaja en las tiradas de iniciativa. Además, la primera criatura a la que impactes durante el primer asalto de un combate es más fácil de golpear para ti y para otros: las tiradas de ataque contra ese objetivo se realizan con ventaja hasta el principio de tu siguiente turno."
+			]
+		},
+		{
+			"name": "Ataque Súbito",
+			"source": "XGE-ES",
+			"page": 47,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Batidor",
+			"subclassSource": "XGE-ES",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 17, puedes golpear con una velocidad letal. Si realizas la acción de {@action Atacar|PHB-ES} en tu turno, puedes hacer un ataque más como acción adicional. Este ataque puede beneficiarse de tu Ataque Furtivo incluso si ya lo has usado este turno, pero no puedes emplear Ataque Furtivo contra un mismo objetivo más de una vez por turno."
+			]
+		},
+		{
+			"name": "Espadachín",
+			"source": "XGE-ES",
+			"page": 48,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Espadachín",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"Centras tu entrenamiento en el arte de la espada y lo basas en igual medida en la velocidad, la elegancia y el carisma. Aunque hay guerreros que son brutos y llevan armadura pesada, tu estilo de lucha casi parece un espectáculo. Los duelistas y los piratas suelen pertenecer a este arquetipo.",
+				"Un Espadachín sobresale en duelos y puede luchar con dos armas mientras se escapa como un rayo de su oponente.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Juego de Pies Elegante|Pícaro|PHB-ES|Espadachín|XGE-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Audacia Galante|Pícaro|PHB-ES|Espadachín|XGE-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Juego de Pies Elegante",
+			"source": "XGE-ES",
+			"page": 48,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Espadachín",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Cuando escoges este arquetipo a nivel 3, aprendes a dar un golpe y apartarte sin represalias. Si en tu turno realizas un ataque cuerpo a cuerpo contra una criatura, esta no podrá realizar ataques de oportunidad contra ti durante el resto de tu turno."
+			]
+		},
+		{
+			"name": "Audacia Galante",
+			"source": "XGE-ES",
+			"page": 48,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Espadachín",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A partir de nivel 3, tu confianza inconfundible te impulsa a luchar. Puedes añadir el modificador de Carisma a tus tiradas de iniciativa.",
+				"Además, no necesitas ventaja en tu tirada de ataque para usar Ataque Furtivo si ninguna criatura además de tu objetivo está a 5 pies o menos de ti. Se te siguen aplicando el resto de reglas del rasgo de clase Ataque Furtivo."
+			]
+		},
+		{
+			"name": "Garbo",
+			"source": "XGE-ES",
+			"page": 48,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Espadachín",
+			"subclassSource": "XGE-ES",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 9, tu encanto se vuelve increíblemente seductor. Puedes emplear una acción en hacer una tirada de Carisma ({@skill Persuasion|Persuasión}) enfrentada a la prueba de Sabiduría ({@skill Insight|Perspicacia}) de una criatura. La criatura debe poder oírte y debéis tener un idioma en común.",
+				"Si superas la tirada y la criatura te es hostil, esta tendrá desventaja en las tiradas de ataque contra objetivos distintos a ti y no podrá hacer ataques de oportunidad contra cualquier objetivo que no seas tú. El efecto dura 1 minuto, hasta que uno de tus compañeros ataque al objetivo, use un conjuro que le afecte o hasta que el objetivo y tú os encontréis a más de 60 pies de distancia.",
+				"Si superas la tirada y la criatura no te es hostil, la habrás {@condition hechizado|PHB-ES} durante 1 minuto y te considerará un conocido amistoso. Este efecto acaba de forma inmediata si tú o tus compañeros le hacéis algún daño."
+			]
+		},
+		{
+			"name": "Maniobra elegante",
+			"source": "XGE-ES",
+			"page": 48,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Espadachín",
+			"subclassSource": "XGE-ES",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 13, puedes usar una acción adicional durante tu turno para conseguir ventaja en la siguiente prueba de Destreza ({@skill Acrobatics|Acrobacias}) o Fuerza ({@skill Athletics|Atletismo}) que hagas en el mismo turno."
+			]
+		},
+		{
+			"name": "Duelista Experto",
+			"source": "XGE-ES",
+			"page": 48,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Espadachín",
+			"subclassSource": "XGE-ES",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 17, tu dominio de la espada te permite convertir un fallo durante el combate en un éxito. Si fallas una tirada de ataque, puedes volver a tirar con ventaja. Una vez hecho esto, deberás terminar un descanso corto o largo para poder volver a usar este rasgo."
+			]
+		}
+	]
+}

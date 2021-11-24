@@ -1,0 +1,2343 @@
+{
+	"class": [
+		{
+			"name": "Guerrero",
+			"source": "PHB-ES",
+			"page": 70,
+			"srd": true,
+			"hd": {
+				"number": 1,
+				"faces": 10
+			},
+			"proficiency": [
+				"str",
+				"con"
+			],
+			"startingProficiencies": {
+				"armor": [
+					{
+						"proficiency": "light",
+						"full": "{@filter armaduras ligeras|items|source=phb-es|type=light armor}"
+					},
+					{
+						"proficiency": "medium",
+						"full": "{@filter armaduras medias|items|source=phb-es|type=medium armor}"
+					},
+					{
+						"proficiency": "heavy",
+						"full": "{@filter armaduras pesadas|items|source=phb-es|type=heavy armor}"
+					},
+					{
+						"proficiency": "shields",
+						"full": "{@item escudo|phb-es|escudos}"
+					}
+				],
+				"weapons": [
+					"{@filter armas sencillas|items|source=PHB-ES|type=simple weapon}",
+					"{@filter armas marciales|items|source=PHB-ES|type=martial weapon}"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics|Acrobacias",
+								"animal handling|Trato con Animales",
+								"athletics|Atletismo",
+								"history|Historia",
+								"insight|Perspicacia",
+								"intimidation|Intimidación",
+								"perception|Percepción",
+								"survival|Supervivencia"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) {@item Cota de malla|PHB-ES|cota de malla} o (b) {@item Armadura de cuero|PHB-ES|armadura de cuero}, {@item Arco largo|PHB-ES|arco largo} y {@item Flechas (20)|PHB-ES|20 flechas}",
+					"(a) un {@filter arma marcial|items|source=PHB-ES|category=basic|type=martial weapon} y un {@item Escudo|PHB-ES|escudo} o (b) dos {@filter armas marciales|items|source=PHB-ES|type=martial weapon}",
+					"(a) una {@item Ballesta ligera|PHB-ES|ballesta ligera} y {@item Virotes de ballesta (20)|PHB-ES|20 virotes} o (b) dos {@item Hacha de mano|PHB-ES|hachas de mano}",
+					"(a) un {@item Paquete de explorador de mazmorras|PHB-ES|paquete de explorador de mazmorras} o (b) un {@item Paquete de explorador|PHB-ES|paquete de explorador}"
+				],
+				"goldAlternative": "{@dice 5d4 × 10|5d4 × 10|Starting Gold}",
+				"defaultData": [
+					{
+						"a": [
+							"Cota de malla|PHB-ES"
+						],
+						"b": [
+							"Armadura de cuero|PHB-ES",
+							"Arco largo|PHB-ES",
+							"Flechas (20)|PHB-ES"
+						]
+					},
+					{
+						"a": [
+							{
+								"equipmentType": "weaponMartial"
+							},
+							"Escudo|PHB-ES"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponMartial",
+								"quantity": 2
+							}
+						]
+					},
+					{
+						"a": [
+							"Ballesta ligera|PHB-ES",
+							"Virotes de ballesta (20)|PHB-ES"
+						],
+						"b": [
+							{
+								"item": "Hacha de mano|PHB-ES",
+								"quantity": 2
+							}
+						]
+					},
+					{
+						"a": [
+							"Paquete de explorador de mazmorras|PHB-ES"
+						],
+						"b": [
+							"Paquete de explorador|PHB-ES"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"or": [
+						{
+							"str": 13,
+							"dex": 13
+						}
+					]
+				},
+				"proficienciesGained": {
+					"armor": [
+						{
+							"proficiency": "light",
+							"full": "{@filter armaduras ligeras|items|source=phb-es|type=light armor}"
+						},
+						{
+							"proficiency": "medium",
+							"full": "{@filter armaduras medias|items|source=phb-es|type=medium armor}"
+						},
+						{
+							"proficiency": "heavy",
+							"full": "{@filter armaduras pesadas|items|source=phb-es|type=heavy armor}"
+						},
+						{
+							"proficiency": "shields",
+							"full": "{@item escudo|phb-es|escudos}"
+						}
+					],
+					"weapons": [
+						"{@filter armas sencillas|items|source=PHB-ES|type=simple weapon}",
+						"{@filter armas marciales|items|source=PHB-ES|type=martial weapon}"
+					]
+				}
+			},
+			"classFeatures": [
+				"Estilo de Combate|Guerrero|PHB-ES|1",
+				"Tomar Aliento|Guerrero|PHB-ES|1",
+				"Acción Súbita|Guerrero|PHB-ES|2",
+				{
+					"classFeature": "Arquetipo Marcial|Guerrero|PHB-ES|3",
+					"gainSubclassFeature": true
+				},
+				"Mejora de Característica|Guerrero|PHB-ES|4",
+				"Ataque Adicional|Guerrero|PHB-ES|5",
+				"Mejora de Característica|Guerrero|PHB-ES|6",
+				{
+					"classFeature": "Rasgo de Arquetipo Marcial|Guerrero|PHB-ES|7",
+					"gainSubclassFeature": true
+				},
+				"Mejora de Característica|Guerrero|PHB-ES|8",
+				"Indómito|Guerrero|PHB-ES|9",
+				{
+					"classFeature": "Rasgo de Arquetipo Marcial|Guerrero|PHB-ES|10",
+					"gainSubclassFeature": true
+				},
+				"Ataque Adicional (2)|Guerrero|PHB-ES|11",
+				"Mejora de Característica|Guerrero|PHB-ES|12",
+				"Indómito (dos usos)|Guerrero|PHB-ES|13",
+				"Mejora de Característica|Guerrero|PHB-ES|14",
+				{
+					"classFeature": "Rasgo de Arquetipo Marcial|Guerrero|PHB-ES|15",
+					"gainSubclassFeature": true
+				},
+				"Mejora de Característica|Guerrero|PHB-ES|16",
+				"Acción Súbita (dos usos)|Guerrero|PHB-ES|17",
+				"Indómito (tres usos)|Guerrero|PHB-ES|17",
+				{
+					"classFeature": "Rasgo de Arquetipo Marcial|Guerrero|PHB-ES|18",
+					"gainSubclassFeature": true
+				},
+				"Mejora de Característica|Guerrero|PHB-ES|19",
+				"Ataque Adicional (3)|Guerrero|PHB-ES|20"
+			],
+			"subclassTitle": "Arquetipos Marciales",
+			"fluff": [
+				{
+					"name": "Guerrero",
+					"type": "section",
+					"entries": [
+						"Una humana alza su escudo mientras carga contra una horda de goblins, acompañada por el traqueteo de su pesada armadura de placas. Tras ella se encuentra un elfo que, protegido por una armadura de cuero tachonado, asaeta a los goblins con las flechas que lanza desde su bellísimo arco. Les da órdenes una semiorca, ayudándoles así a coordinar su asalto para sacar la máxima ventaja posible.",
+						"Un enano cubierto por una cota de malla interpone su escudo entre el garrote de un ogro y sus compañeros, desviando un golpe mortal. Su compañera, una semielfa con armadura de escamas, mueve sus dos cimitarras en un remolino cegador mientras rodea al ogro, buscando una brecha en sus defensas.",
+						"Un gladiador combate por deporte en la arena. Es un maestro del tridente y la red, experto en derribar y arrastrar a sus enemigos de un lado a otro para mayor disfrute del público... y para obtener una posición de ventaja. La espada de su oponente brilla con una luz azul un breve instante, anunciando un relámpago que surge de ella para golpearle.",
+						"Todos estos héroes son guerreros, miembros de la que probablemente sea la clase de personaje más variopinta de los mundos de Dungeons & Dragons. Caballeros andantes, generales conquistadores, campeones reales, soldados de élite, mercenarios endurecidos y reyes bandidos ... Todos ellos son guerreros y, como tales, comparten una maestría sin par con las armas y armaduras, así como un conocimiento profundo de las artes del combate. También están acostumbrados a la muerte, pues se han cruzado con ella y la han desafiado con valentía.",
+						{
+							"type": "entries",
+							"name": "Especialistas equilibrados",
+							"entries": [
+								"Los guerreros aprenden los rudimentos de todos los estilos de combate. Todos y cada uno de ellos son lo bastante hábiles para atacar con un hacha, participar en un duelo con un estoque, empuñar una espada larga o un espadón, tirar con arco e incluso atrapar a sus enemigos en una red. De la misma forma, cualquier guerrero está familiarizado con los escudos y todos los tipos de armaduras. Sin embargo, los guerreros van más allá de estos conocimientos básicos, pues cada uno de ellos se especializa en un estilo de combate concreto. Algunos se centran en el tiro con arco, otros en el combate con dos armas a la vez y los hay que incluso complementan sus habilidades marciales mediante la magia. Esta combinación de amplias capacidades y especialización intensiva convierte a los guerreros en combatientes supremos, que destacan tanto en campos de batalla como en mazmorras."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Entrenados para el Peligro",
+							"entries": [
+								"No todos los miembros de la guardia de la ciudad, la milicia del pueblo o el ejército de la reina son guerreros. La mayoría de estos soldados no están especialmente bien entrenados y solo poseen los conocimientos marciales más básicos. Únicamente los soldados veteranos, oficiales del ejército, guardaespaldas diestros, caballeros entregados y figuras similares son guerreros.",
+								"Algunos guerreros se sienten llamados a poner su entrenamiento al servicio de una vida de aventuras. Explorar mazmorras, matar monstruos y otras actividades peligrosas típicas de los aventureros son algo natural para un guerrero, parte del día a día de la vida que dejaron atrás. Y si bien es cierto que el riesgo es mayor, también lo es la recompensa; pocos guerreros de la guardia de la ciudad tendrán la oportunidad de encontrar una espada {@italic lengua de fuego}, por ejemplo."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creación de un guerrero",
+							"entries": [
+								"Cuando crees tú guerrero, piensa en los dos siguientes aspectos de su pasado, que están relacionados: dónde recibió su entrenamiento en combate y qué le distingue de otros combatientes menos capaces. ¿Eres especialmente despiadado?, ¿recibiste ayuda de un mentor, quizá debido a tu entrega excepcional?, ¿qué te motivó a comenzar tu entrenamiento? Puede que se tratara de una amenaza sobre tu hogar, el ansia de venganza o la necesidad de demostrar tu valía. O incluso una mezcla de todos ellos.",
+								"Tal vez hayas disfrutado de adiestramiento militar en el ejército de un noble o en una milicia local. O puede que te hayas formado en una academia militar, aprendiendo estrategia, táctica e historia militar. O incluso podrías ser autodidacta, alguien poco pulido, pero con experiencia real. ¿Escogiste la espada como vía de escape, para dejar atrás las penurias de una vida en la granja? ¿O eres el heredero de una orgullosa tradición familiar? ¿Cómo conseguiste tus armas y armadura? Bien podrían ser equipamiento militar o un legado de tu familia. También cabe la posibilidad de que hayas ahorrado durante años para poder comprarlos. Independientemente de su origen, tu armamento es ahora una de tus posesiones más valiosas, pues es lo único que te protege del abrazo de la muerte.",
+								{
+									"type": "entries",
+									"name": "Creación rápida",
+									"entries": [
+										"Para crear un guerrero de forma rápida sugerimos lo siguiente. Para empezar, Fuerza o Destreza debería ser tu característica más alta, en función de si prefieres centrarte en las armas cuerpo a cuerpo o en el tiro con arco y las armas sutiles. Tu siguiente característica más elevada debería ser o bien Constitución o Inteligencia, esta última si aspiras a seguir el arquetipo marcial Caballero Arcano. A continuación, elige el trasfondo \"{@background soldier|PHB-ES|soldado}\"."
+									]
+								}
+							]
+						}
+					],
+					"source": "PHB-ES",
+					"page": 70
+				},
+				{
+					"type": "section",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"Avísame cuando hayas acabado de hablar."
+							],
+							"by": "Tordek"
+						},
+						"De todos los aventureros del mundo de D&D, el guerrero es quizá la mayor paradoja. Por un lado, una característica singular de la clase es que no hay dos miembros con las mismas habilidades: sus armaduras, armas y tácticas cubren un amplio espectro. Por otro lado, independientemente de sus herramientas y métodos, en el corazón de todo guerrero yace la misma verdad: es mejor herir que ser herido.",
+						"Aunque algunos aventureros de esta clase arriesgan su vida por gloria o muchos de ellos se ven movidos por proteger a los demás; dan más valor al bienestar de la sociedad, la aldea o el grupo que a su propia seguridad. Incluso aunque haya oro de por medio, la verdadera recompensa de la mayoría de los guerreros está en mandar enemigos al Abismo.",
+						"La siguiente sección ofrece maneras de añadir profundidad y toques personales a personajes de esta clase.",
+						{
+							"type": "entries",
+							"name": "Símbolo heráldico",
+							"entries": [
+								"Los guerreros normalmente pelean por una causa. Algunos para defender a reinos sitiados por monstruos y otros en una búsqueda personal de gloria. Sea como fuere, un miembro de esta clase suele lucir un símbolo heráldico que representa su causa. Puede haber adoptado el de una nación o linaje real, o haber creado su escudo para representar su propio interés.",
+								"Tu personaje podría estar ya afiliado a una organización o causa, de modo que viaje bajo su estandarte. Si no es el caso, piensa en crear un símbolo heráldico que represente un aspecto de tu naturaleza o esté relacionado con tu propósito en el mundo.",
+								{
+									"type": "table",
+									"caption": "Símbolo heráldico",
+									"colLabels": [
+										"{@dice d6}",
+										"Símbolo"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Un dragón dorado rampante sobre un campo verde, representando el valor y la búsqueda de la riqueza."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"El puño de un gigante de las tormentas ante una nube tormentosa, que simboliza la ira y el poder."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Espadones cruzados delante de la puerta de un castillo, señal de defensa de una ciudad o reino."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"Una calavera con una daga atravesada, que representa la condenación que llevas a tus enemigos."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"Un fénix en un anillo de fuego, expresión de un espíritu indomable."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Tres gotas de sangre bajo una espada horizontal sobre un fondo negro, simbolizando tres enemigos a los que has jurado matar."
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Instructor",
+							"entries": [
+								"Algunos guerreros son luchadores natos, con un talento especial para sobrevivir en la batalla. Otros han desarrollado los fundamentos del combate en sus años de formación, aprendiendo de los líderes del ejército u otra organización marcial.",
+								"Un tercer tipo de guerrero viene de entre los que han recibido entrenamiento personal de un veterano consumado. Este instructor es, posiblemente, un experto en un aspecto del combate relacionado con el pasado del estudiante.",
+								"Si decides que tu personaje estudió bajo un maestro, ¿cuál era su especialidad? ¿Emulaste a tu instructor en su estilo o tomaste sus enseñanzas y las adaptaste a tus propósitos?",
+								{
+									"type": "table",
+									"caption": "Instructores",
+									"colLabels": [
+										"{@dice d6}",
+										"Instructor"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Gladiador. Tu mentor fue un esclavo que luchó por su libertad en la arena o uno que eligió la vida del gladiador para ganar fama y fortuna. "
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"Militar. Tu entrenador sirvió con un grupo de soldados y sabe mucho de trabajar en equipo."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Guardia de la ciudad. El control de multitudes y mantener la paz son las especialidades de tu instructor."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"Guerrero tribal. Tu maestro creció en una tribu, donde luchar por la propia vida es algo habitual. "
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"Luchador callejero. Tu entrenador sobresale en el combate urbano, combinando la lucha codo con codo con el silencio y la eficacia."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Maestro de armas. Tu mentor te ayudó a hacerte uno con tu arma elegida, transmitiéndote el conocimiento específico para blandirla lo mejor posible."
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Estilo característico",
+							"entries": [
+								"Muchos guerreros se distinguen de sus pares al adoptar y perfeccionar un estilo particular de combate. Aunque este puede ser una consecuencia natural de la personalidad del luchador, no siempre es así. El enfoque vital de cada uno no siempre dicta cómo esa persona actúa cuando hay vidas en juego.",
+								"¿Tienes un estilo de combate que refleja tu actitud frente a la vida o hay algo más dentro de ti, que liberas cuando se desenvainan las armas?",
+								{
+									"type": "table",
+									"caption": "Estilos característicos",
+									"colLabels": [
+										"{@dice d6}",
+										"Estilo"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Elegante. Te mueves con gracia y control total, nunca empleas más energía de la necesaria."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"Brutal. Tus ataques son verdaderos mazazos, capaces de romper huesos y derramar sangre."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Astuto. Cuando llega el momento justo, atacas como un rayo, usando tácticas a pequeña escala para cambiar las tornas a tu favor."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"Naturalidad. En batalla, raramente sudas o muestras algo que no sea una expresión estoica."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"Energético. Cantas y bailas durante el combate mientras tu espíritu se eleva. Eres feliz cuando tienes un enemigo enfrente y un arma en la mano."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Siniestro. Luchas con el ceño fruncido y miradas de desdén, burlándote de tus adversarios mientras los derrotas."
+										]
+									]
+								}
+							]
+						}
+					],
+					"source": "XGE-ES",
+					"page": 27
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Maestro del Combate",
+			"shortName": "Maestro del Combate",
+			"source": "PHB-ES",
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"page": 73,
+			"subclassFeatures": [
+				"Maestro del Combate|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|3",
+				"Maniobras Adicionales|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|7",
+				"Dado de Supremacía Adicional|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|7",
+				"Conoce a tu Enemigo|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|7",
+				"Maniobras Adicionales|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|10",
+				"Supremacía en Combate Mejorada (d10)|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|10",
+				"Maniobras Adicionales|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|15",
+				"Dado de Supremacía Adicional|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|15",
+				"Incansable|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|15",
+				"Supremacía en Combate Mejorada (d12)|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|18"
+			]
+		},
+		{
+			"name": "Campeón",
+			"shortName": "Campeón",
+			"source": "PHB-ES",
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"page": 72,
+			"srd": true,
+			"subclassFeatures": [
+				"Campeón|Guerrero|PHB-ES|Campeón|PHB-ES|3",
+				"Atleta Sobresaliente|Guerrero|PHB-ES|Campeón|PHB-ES|7",
+				"Estilo de Combate Adicional|Guerrero|PHB-ES|Campeón|PHB-ES|10",
+				"Crítico Superior|Guerrero|PHB-ES|Campeón|PHB-ES|15",
+				"Superviviente|Guerrero|PHB-ES|Campeón|PHB-ES|18"
+			]
+		},
+		{
+			"name": "Caballero Arcano",
+			"shortName": "Caballero Arcano",
+			"source": "PHB-ES",
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"page": 74,
+			"spellcastingAbility": "int",
+			"casterProgression": "1/3",
+			"cantripProgression": [
+				0,
+				0,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3
+			],
+			"spellsKnownProgression": [
+				0,
+				0,
+				3,
+				4,
+				4,
+				4,
+				5,
+				6,
+				6,
+				7,
+				8,
+				8,
+				9,
+				10,
+				10,
+				11,
+				11,
+				11,
+				12,
+				13
+			],
+			"subclassTableGroups": [
+				{
+					"subclasses": [
+						{
+							"name": "Caballero Arcano",
+							"source": "PHB-ES"
+						}
+					],
+					"colLabels": [
+						"{@filter Trucos conocidos|spells|level=0|subclass=Guerrero: Caballero Arcano (PHB-ES)}",
+						"{@filter Conjuros conocidos|spells|subclass=Guerrero: Caballero Arcano (PHB-ES)}"
+					],
+					"rows": [
+						[
+							0,
+							0
+						],
+						[
+							0,
+							0
+						],
+						[
+							2,
+							3
+						],
+						[
+							2,
+							4
+						],
+						[
+							2,
+							4
+						],
+						[
+							2,
+							4
+						],
+						[
+							2,
+							5
+						],
+						[
+							2,
+							6
+						],
+						[
+							2,
+							6
+						],
+						[
+							3,
+							7
+						],
+						[
+							3,
+							8
+						],
+						[
+							3,
+							8
+						],
+						[
+							3,
+							9
+						],
+						[
+							3,
+							10
+						],
+						[
+							3,
+							10
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							12
+						],
+						[
+							3,
+							13
+						]
+					]
+				},
+				{
+					"title": "Espacios de conjuro por cada nivel de conjuro",
+					"subclasses": [
+						{
+							"name": "Caballero Arcano",
+							"source": "PHB-ES"
+						}
+					],
+					"colLabels": [
+						"{@filter 1|spells|level=1|subclass=Guerrero: Caballero Arcano (PHB-ES)}",
+						"{@filter 2|spells|level=2|subclass=Guerrero: Caballero Arcano (PHB-ES)}",
+						"{@filter 3|spells|level=3|subclass=Guerrero: Caballero Arcano (PHB-ES)}",
+						"{@filter 4|spells|level=4|subclass=Guerrero: Caballero Arcano (PHB-ES)}"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						]
+					]
+				}
+			],
+			"subclassFeatures": [
+				"Caballero Arcano|Guerrero|PHB-ES|Caballero Arcano|PHB-ES|3",
+				"Magia de Guerra|Guerrero|PHB-ES|Caballero Arcano|PHB-ES|7",
+				"Golpe Sobrenatural|Guerrero|PHB-ES|Caballero Arcano|PHB-ES|10",
+				"Carga Arcana|Guerrero|PHB-ES|Caballero Arcano|PHB-ES|15",
+				"Magia de Guerra Mejorada|Guerrero|PHB-ES|Caballero Arcano|PHB-ES|18"
+			]
+		},
+		{
+			"name": "Caballero del Dragón Púrpura",
+			"shortName": "Caballero del Dragón Púrpura",
+			"source": "SCAG-ES",
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"page": 128,
+			"subclassFeatures": [
+				"Caballero del Dragón Púrpura|Guerrero|PHB-ES|Caballero del Dragón Púrpura|SCAG-ES|3",
+				"Enviado Real|Guerrero|PHB-ES|Caballero del Dragón Púrpura|SCAG-ES|7",
+				"Inspiración Súbita|Guerrero|PHB-ES|Caballero del Dragón Púrpura|SCAG-ES|10",
+				"Bastión|Guerrero|PHB-ES|Caballero del Dragón Púrpura|SCAG-ES|15",
+				"Inspiración Súbita|Guerrero|PHB-ES|Caballero del Dragón Púrpura|SCAG-ES|18"
+			]
+		},
+		{
+			"name": "Arquero Arcano",
+			"shortName": "Arquero Arcano",
+			"source": "XGE-ES",
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"page": 28,
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"prestidigitación|PHB-ES#c"
+						]
+					}
+				},
+				{
+					"known": {
+						"3": [
+							"saber druídico|PHB-ES#c"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Arquero Arcano|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|3",
+				"Flecha Mágica|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|7",
+				"Disparo Curvo|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|7",
+				"Opción adicional de Disparo Arcano|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|7",
+				"Opción adicional de Disparo Arcano|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|10",
+				"Disparo Siempre Listo|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|15",
+				"Opción adicional de Disparo Arcano|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|15",
+				"Opción adicional de Disparo Arcano|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|18"
+			]
+		},
+		{
+			"name": "Caballero",
+			"shortName": "Caballero",
+			"source": "XGE-ES",
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"page": 30,
+			"subclassFeatures": [
+				"Caballero|Guerrero|PHB-ES|Caballero|XGE-ES|3",
+				"Maniobra de Protección|Guerrero|PHB-ES|Caballero|XGE-ES|7",
+				"Mantener la Formación|Guerrero|PHB-ES|Caballero|XGE-ES|10",
+				"Carga Feroz|Guerrero|PHB-ES|Caballero|XGE-ES|15",
+				"Defensor Atento|Guerrero|PHB-ES|Caballero|XGE-ES|18"
+			]
+		},
+		{
+			"name": "Samurái",
+			"shortName": "Samurái",
+			"source": "XGE-ES",
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"page": 31,
+			"subclassFeatures": [
+				"Samurái|Guerrero|PHB-ES|Samurái|XGE-ES|3",
+				"Cortesano Elegante|Guerrero|PHB-ES|Samurái|XGE-ES|7",
+				"Espíritu Incansable|Guerrero|PHB-ES|Samurái|XGE-ES|10",
+				"Golpe Súbito|Guerrero|PHB-ES|Samurái|XGE-ES|15",
+				"Fortaleza ante la Muerte|Guerrero|PHB-ES|Samurái|XGE-ES|18"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Estilo de Combate",
+			"source": "PHB-ES",
+			"page": 72,
+			"srd": true,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"level": 1,
+			"entries": [
+				"Adoptas un estilo de combate concreto como tu especialidad. Elige una de las siguientes opciones que aparecen a continuación. No puedes escoger el mismo Estilo de Combate más de una vez, incluso aunque luego puedas elegir de nuevo un Estilo de Combate.",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Tiro con Arco|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Defensa|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Duelo|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Combate con Armas a Dos Manos|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Protección|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Combate con Dos Armas|PHB-ES"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Tomar Aliento",
+			"source": "PHB-ES",
+			"page": 72,
+			"srd": true,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"level": 1,
+			"entries": [
+				"Posees una pequeña reserva de energías, a la que puedes recurrir para protegerte del peligro. Puedes usar una acción adicional durante tu turno para recuperar tantos puntos de golpe como {@dice 1d10} + tu nivel de guerrero.",
+				"Una vez utilizado este rasgo, deberás terminar un descanso corto o largo para poder volver a emplearlo de nuevo."
+			]
+		},
+		{
+			"name": "Acción Súbita",
+			"source": "PHB-ES",
+			"page": 72,
+			"srd": true,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"level": 2,
+			"entries": [
+				"A partir de nivel 2, puedes superar tus propios límites durante un instante. Durante tu turno, puedes llevar a cabo una acción más, además de tu acción y acción adicional habituales.",
+				"Una vez utilizado este rasgo, deberás terminar un descanso corto o largo para poder volver a emplearlo de nuevo. A partir de nivel 17, puedes usar este rasgo dos veces antes de descansar, pero solo una vez por turno."
+			]
+		},
+		{
+			"name": "Arquetipo Marcial",
+			"source": "PHB-ES",
+			"page": 72,
+			"srd": true,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"level": 3,
+			"entries": [
+				"A nivel 3, escoges un arquetipo al que aspiras emular con tu estilo y técnicas de combate. Elige entre Campeón, Maestro del Combate o Caballero Arcano. Todos ellos están detallados al final de la descripción de esta clase. Esta elección te proporciona ciertos rasgos cuando alcanzas los niveles 3, 7, 10, 15 y 18."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 72,
+			"srd": true,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"level": 4,
+			"entries": [
+				"Cuando alcances el nivel 4 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Ataque Adicional",
+			"source": "PHB-ES",
+			"page": 72,
+			"srd": true,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"level": 5,
+			"entries": [
+				"A partir de nivel 5, cuando lleves a cabo la acción de {@action Atacar|PHB-ES|Atacar} durante tu turno, podrás hacer dos ataques en lugar de uno.",
+				"La cantidad de ataques aumenta a tres cuando alcanzas el nivel 11 de esta clase y a cuatro cuando alcanzas el 20."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 72,
+			"srd": true,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"level": 6,
+			"entries": [
+				"Cuando alcances el nivel 6 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Rasgo de Arquetipo Marcial",
+			"source": "PHB-ES",
+			"page": 72,
+			"srd": true,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"level": 7,
+			"entries": [
+				"A nivel 7 ganas un rasgo de tu Arquetipo Marcial."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 72,
+			"srd": true,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"level": 8,
+			"entries": [
+				"Cuando alcances el nivel 8 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Indómito",
+			"source": "PHB-ES",
+			"page": 72,
+			"srd": true,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"level": 9,
+			"entries": [
+				"A partir de nivel 9, puedes repetir una tirada de salvación que hayas fallado, pero tendrás que quedarte con el nuevo resultado, aunque sea peor. Una vez utilizado este rasgo, deberás terminar un descanso largo para poder volver a usarlo otra vez.",
+				"Puedes emplear este rasgo dos veces entre descansos largos cuando alcanzas el nivel 13 y tres veces entre descansos largos a partir de nivel 17."
+			]
+		},
+		{
+			"name": "Rasgo de Arquetipo Marcial",
+			"source": "PHB-ES",
+			"page": 72,
+			"srd": true,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"level": 10,
+			"entries": [
+				"A nivel 10 ganas un rasgo de tu Arquetipo Marcial."
+			]
+		},
+		{
+			"name": "Ataque Adicional (2)",
+			"source": "PHB-ES",
+			"page": 72,
+			"srd": true,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"level": 11,
+			"entries": [
+				"A partir de nivel 11, pues atacar tres veces cuando lleves a cabo la acción de {@action Atacar|PHB-ES|Atacar} durante tu turno."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 72,
+			"srd": true,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"level": 12,
+			"entries": [
+				"Cuando alcances el nivel 12 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Indómito (dos usos)",
+			"source": "PHB-ES",
+			"page": 72,
+			"srd": true,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"level": 13,
+			"entries": [
+				"A partir de nivel 13, puedes usar Indómito dos veces entre descansos largos."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 72,
+			"srd": true,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"level": 14,
+			"entries": [
+				"Cuando alcances el nivel 14 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Rasgo de Arquetipo Marcial",
+			"source": "PHB-ES",
+			"page": 72,
+			"srd": true,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"level": 15,
+			"entries": [
+				"A nivel 15 ganas un rasgo de tu Arquetipo Marcial."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 72,
+			"srd": true,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"level": 16,
+			"entries": [
+				"Cuando alcances el nivel 16 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Acción Súbita (dos usos)",
+			"source": "PHB-ES",
+			"page": 72,
+			"srd": true,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"level": 17,
+			"entries": [
+				"A partir de nivel 17, puedes usar Acción Súbita dos veces antes de descansar, pero solo una vez por turno."
+			]
+		},
+		{
+			"name": "Indómito (tres usos)",
+			"source": "PHB-ES",
+			"page": 72,
+			"srd": true,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"level": 17,
+			"entries": [
+				"A partir de nivel 17, puedes usar Indómito tres veces entre descansos largos."
+			]
+		},
+		{
+			"name": "Rasgo de Arquetipo Marcial",
+			"source": "PHB-ES",
+			"page": 72,
+			"srd": true,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"level": 18,
+			"entries": [
+				"A nivel 18 ganas un rasgo de tu Arquetipo Marcial."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 72,
+			"srd": true,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"level": 19,
+			"entries": [
+				"Cuando alcances el nivel 19 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Ataque Adicional (3)",
+			"source": "PHB-ES",
+			"page": 72,
+			"srd": true,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"level": 20,
+			"entries": [
+				"A partir de nivel 20, pues atacar cuatro veces cuando lleves a cabo la acción de {@action Atacar|PHB-ES|Atacar} durante tu turno."
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Maestro del Combate",
+			"source": "PHB-ES",
+			"page": 73,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Maestro del Combate",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"entries": [
+				"Los que eligen imitar al Maestro del Combate arquetípico recurren a técnicas marciales que han sido transmitidas durante generaciones. El Maestro del Combate entiende la lucha como un campo de estudio, en el que algunos también incluyen otras disciplinas como la forja de armas o la caligrafía. No todos los combatientes interiorizan las lecciones que imparte la historia, la teoría y el arte que se ven reflejadas en el arquetipo Maestro del Combate, pero aquellos que lo hacen se convierten en luchadores equilibrados, de gran habilidad y poseedores de amplios conocimientos.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Estudioso de la Guerra|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Supremacía en Combate|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Maniobras|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Supremacía en Combate",
+			"source": "PHB-ES",
+			"page": 73,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Maestro del Combate",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A nivel 3, cuando escoges este arquetipo, aprendes una serie de maniobras que se alimentan de dados especiales llamados dados de supremacía.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Maniobras",
+							"entries": [
+								"Aprendes tres maniobras de tu elección. Puedes elegir entre las que se explican más adelante, en el apartado \"Maniobras\". Una gran parte de las maniobras mejoran un ataque de alguna forma. Solo puedes usar una maniobra por ataque.",
+								"Adquieres dos nuevas maniobras más a tu elección cuando alcanzas los niveles 7, 10 y 15. Cada vez que aprendas una maniobra, también podrás reemplazar una de las que ya conozcas por otra distinta."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Dados de supremacía",
+							"entries": [
+								"Posees cuatro dados de supremacía, todos ellos {@dice d8}. Cada vez que empleas uno de ellos, se gasta. Recuperas todos los dados de supremacía tras realizar un descanso corto o largo.",
+								"Además, recibes un dado adicional de supremacía a nivel 7 y otro más a nivel 15."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Tiradas de salvación",
+							"entries": [
+								"Algunas de tus maniobras exigen a tu objetivo hacer una tirada de salvación para resistir sus efectos. La CD para estas tiradas de salvación se calcula de la siguiente forma:",
+								{
+									"type": "abilityDc",
+									"name": "Maniobras",
+									"attributes": [
+										"str",
+										"dex"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Maniobras",
+			"source": "PHB-ES",
+			"page": 73,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Maestro del Combate",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Las maniobras se presentan en orden alfabético.",
+				{
+					"type": "options",
+					"count": 3,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Orden de Ataque|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Ataque y Desarme|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Ataque y Distracción|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Juego de Pies Evasivo|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Finta|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Ataque Provocador|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Arremetida|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Ataque y Maniobra|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Ataque Amenazador|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Parada|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Ataque Preciso|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Ataque y Empujón|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Reagrupar|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Contraataque|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Ataque de Barrido|PHB-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Ataque y Derribo|PHB-ES"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Estudioso de la Guerra",
+			"source": "PHB-ES",
+			"page": 73,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Maestro del Combate",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A nivel 3 ganas competencia en un tipo de {@filter herramientas de artesano|items|source=PHB-ES|miscellaneous=mundane|type=Herramientas de artesano} de tu elección."
+			]
+		},
+		{
+			"name": "Maniobras Adicionales",
+			"source": "PHB-ES",
+			"page": 73,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Maestro del Combate",
+			"subclassSource": "PHB-ES",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"A nivel 7, adquieres dos nuevas maniobras más a tu elección."
+			]
+		},
+		{
+			"name": "Dado de Supremacía Adicional",
+			"source": "PHB-ES",
+			"page": 73,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Maestro del Combate",
+			"subclassSource": "PHB-ES",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"Recibes un dado adicional de supremacía a nivel 7."
+			]
+		},
+		{
+			"name": "Conoce a tu Enemigo",
+			"source": "PHB-ES",
+			"page": 73,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Maestro del Combate",
+			"subclassSource": "PHB-ES",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 7, si inviertes al menos 1 minuto en observar o interactuar con otra criatura fuera del combate, podrás evaluar hasta cierto punto sus capacidades en comparación con las tuyas. El DM te dirá si el objetivo es tu igual, tu superior o tu inferior en lo que a dos de las siguientes características (a tu elección) respecta:",
+				{
+					"type": "list",
+					"items": [
+						"Puntuación de Fuerza",
+						"Puntuación de Destreza",
+						"Puntuación de Constitución",
+						"Clase de Armadura",
+						"Puntos de golpe actuales",
+						"Niveles de clase totales (si posee alguno)",
+						"Niveles de clase de guerrero (si posee alguno)"
+					]
+				}
+			]
+		},
+		{
+			"name": "Maniobras Adicionales",
+			"source": "PHB-ES",
+			"page": 73,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Maestro del Combate",
+			"subclassSource": "PHB-ES",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"A nivel 10, adquieres dos nuevas maniobras más a tu elección."
+			]
+		},
+		{
+			"name": "Supremacía en Combate Mejorada (d10)",
+			"source": "PHB-ES",
+			"page": 73,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Maestro del Combate",
+			"subclassSource": "PHB-ES",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"A nivel 10 tus dados de supremacía se convierten en {@dice d10}."
+			]
+		},
+		{
+			"name": "Maniobras Adicionales",
+			"source": "PHB-ES",
+			"page": 73,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Maestro del Combate",
+			"subclassSource": "PHB-ES",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"A nivel 15, adquieres dos nuevas maniobras más a tu elección."
+			]
+		},
+		{
+			"name": "Dado de Supremacía Adicional",
+			"source": "PHB-ES",
+			"page": 73,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Maestro del Combate",
+			"subclassSource": "PHB-ES",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"Recibes un dado adicional de supremacía a nivel 15."
+			]
+		},
+		{
+			"name": "Incansable",
+			"source": "PHB-ES",
+			"page": 73,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Maestro del Combate",
+			"subclassSource": "PHB-ES",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 15, si cuando tiras iniciativa no te quedan dados de supremacía, recuperas uno de ellos."
+			]
+		},
+		{
+			"name": "Supremacía en Combate Mejorada (d12)",
+			"source": "PHB-ES",
+			"page": 73,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Maestro del Combate",
+			"subclassSource": "PHB-ES",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"A nivel 18 tus dados de supremacía se convierten en {@dice d12}."
+			]
+		},
+		{
+			"name": "Campeón",
+			"source": "PHB-ES",
+			"page": 72,
+			"srd": true,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Campeón",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"entries": [
+				"El Campeón arquetípico se centra en desarrollar su poderío físico en bruto hasta alcanzar una perfección mortal. Aquellos que deciden emular este arquetipo combinan un riguroso entrenamiento con un estado físico excelente, que les permite dar golpes devastadores.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Crítico Mejorado|Guerrero|PHB-ES|Campeón|PHB-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Crítico Mejorado",
+			"source": "PHB-ES",
+			"page": 72,
+			"srd": true,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Campeón",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A partir del momento en el que eliges este arquetipo, a nivel 3, tus ataques con arma causarán críticos con un resultado de 19 o 20 en la tirada."
+			]
+		},
+		{
+			"name": "Atleta Sobresaliente",
+			"source": "PHB-ES",
+			"page": 72,
+			"srd": true,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Campeón",
+			"subclassSource": "PHB-ES",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 7, puedes añadir la mitad de tu bonificador por competencia (redondeado hacia abajo) a cualquier prueba de Fuerza, Destreza o Constitución que hagas que no se beneficie ya de tu bonificador por competencia.",
+				"Además. cuando realices un salto de longitud habiendo tomado carrerilla, aumentarás la distancia que saltas en tantos pies como tu modificador por Fuerza."
+			]
+		},
+		{
+			"name": "Estilo de Combate Adicional",
+			"source": "PHB-ES",
+			"page": 72,
+			"srd": true,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Campeón",
+			"subclassSource": "PHB-ES",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"A nivel 10 puedes escoger una segunda opción del rasgo Estilo de Combate."
+			]
+		},
+		{
+			"name": "Crítico Superior",
+			"source": "PHB-ES",
+			"page": 72,
+			"srd": true,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Campeón",
+			"subclassSource": "PHB-ES",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 15, tus ataques con arma causarán críticos con un resultado de 18 a 20 en la tirada."
+			]
+		},
+		{
+			"name": "Superviviente",
+			"source": "PHB-ES",
+			"page": 72,
+			"srd": true,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Campeón",
+			"subclassSource": "PHB-ES",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"A nivel 18 alcanzas el pináculo de la resistencia en batalla. Al comienzo de cada uno de tus turnos, recuperas 5 + tu modificador por Constitución puntos de golpe si no te quedan más de la mitad de tus puntos de golpe máximos. Con todo, no puedes disfrutar de este beneficio si te quedan 0 puntos de golpe."
+			]
+		},
+		{
+			"name": "Caballero Arcano",
+			"source": "PHB-ES",
+			"page": 74,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Caballero Arcano",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"entries": [
+				"El Caballero Arcano arquetípico combina la maestría marcial típica de los guerreros con un cuidadoso estudio de la magia. Los Caballeros Arcanos emplean técnicas mágicas similares a las utilizadas por los magos. Centran sus estudios en dos de las ocho escuelas mágicas: abjuración y evocación. Los conjuros de la primera dan al Caballero Arcano una protección adicional durante el combate, mientras que los de la segunda le permiten hacer daño a muchos enemigos al mismo tiempo, ampliando así el repertorio del guerrero. Estos caballeros aprenden una cantidad relativamente pequeña de conjuros, memorizándolos en lugar de apuntándolos en un libro de conjuros.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Lanzamiento de Conjuros|Guerrero|PHB-ES|Caballero Arcano|PHB-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Vínculo con Arma|Guerrero|PHB-ES|Caballero Arcano|PHB-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Lanzamiento de Conjuros",
+			"source": "PHB-ES",
+			"page": 74,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Caballero Arcano",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Cuando llegas a nivel 3, puedes complementar tu habilidad marcial con la capacidad de lanzar conjuros. El  {@book capítulo 10|PHB-ES|10} contiene las reglas de lanzamiento de conjuros y el 11 la lista de {@filter conjuros de mago|spells|class=mago}.",
+				{
+					"type": "entries",
+					"name": "Trucos",
+					"entries": [
+						"Aprendes dos trucos de tu elección escogidos de entre los de la {@filter lista de conjuros de mago|spells|class=mago}. Adquieres otro nuevo truco de mago tu elección cuando alcanzas el nivel 10."
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Espacios de conjuro",
+							"entries": [
+								"La tabla \"lanzamiento de conjuros del Caballero Arcano\" muestra de cuántos espacios de conjuro de Caballero Arcano dispones para lanzar conjuros de nivel 1 y superiores. Para lanzar uno de estos conjuros deberás invertir un espacio de al menos el nivel del conjuro. Recuperas todos los espacios utilizados tras finalizar un descanso largo.",
+								"Si, por ejemplo, conoces el conjuro de nivel 1 {@spell Escudo|PHB-ES|escudo} y posees un espacio de conjuro de nivel 1 y otro de nivel 2, podrías lanzar escudo empleando cualquiera de los dos espacios."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Conjuros conocidos de nivel 1 y superiores",
+							"entries": [
+								"Conoces tres conjuros de mago de nivel 1 a tu elección, dos de los cuales deben ser de abjuración o evocación. Todos ellos deben pertenecer a la lista de conjuros de mago.",
+								"La columna \"conjuros conocidos\" de la tabla \"lanzamiento de conjuros del Caballero Arcano\" te indica cuándo podrás aprender más conjuros de mago de nivel 1 o superiores. Tú eliges cuales, pero todos estos conjuros deben ser de abjuración o evocación y de un nivel para el que tengas espacios de conjuro. Así, cuando subes a nivel 7 en esta clase puedes aprender un conjuro nuevo, que puede ser de nivel 1 o 2.",
+								"Los conjuros que aprendes al alcanzar los niveles 8, 14 y 20 pueden ser de cualquier escuela mágica.",
+								"Además, cada vez que subas un nivel de esta clase podrás elegir uno de los conjuros de mago que ya conoces y reemplazarlo por otro de los que aparecen en la lista de conjuros de mago. El nuevo conjuro deberá ser de un nivel para el que tengas espacios de conjuro. Además, ha de ser de abjuración o evocación, salvo si estás reemplazando los conjuros que obtuviste a los niveles 3, 8, 14 o 20 y que podían pertenecer a cualquier escuela de magia."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Aptitud mágica",
+							"entries": [
+								"La Inteligencia es tu aptitud mágica en lo que a conjuros de mago respecta, ya que aprendes tus conjuros mediante el estudio y la memorización. Así, utilizarás tu Inteligencia siempre que un conjuro de mago haga referencia a tu aptitud mágica. Además, también usarás tu modificador por Inteligencia para determinar la CD de las tiradas de salvación y las tiradas de ataque de los conjuros de mago que lances.",
+								{
+									"type": "abilityDc",
+									"name": "Conjuros",
+									"attributes": [
+										"int"
+									]
+								},
+								{
+									"type": "abilityAttackMod",
+									"name": "Conjuros",
+									"attributes": [
+										"int"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Vínculo con Arma",
+			"source": "PHB-ES",
+			"page": 74,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Caballero Arcano",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A nivel 3 aprendes un ritual que crea un vínculo mágico entre una de tus armas y tú. Para ejecutar este ritual necesitas 1 hora, que puede ser la de un descanso corto. El arma debe estar dentro de tu alcance durante todo el proceso, y al final de este la tocarás, estableciendo así el vínculo.",
+				"Una vez te hayas vinculado con un arma, la única forma de desarmarte será dejándote {@condition Incapacitado|PHB-ES|incapacitado}. Además, si ambos os encontráis en el mismo plano de existencia, podrás invocar a tu arma empleando una acción adicional durante tu turno; el arma se teletransportará instantáneamente a tu mano.",
+				"Puedes tener vinculadas hasta dos armas, pero solo puedes invocar una de ellas cuando usas tu acción adicional. Si intentas vincularte con una tercera, deberás antes romper uno de los vínculos existentes con una de las otras dos."
+			]
+		},
+		{
+			"name": "Magia de Guerra",
+			"source": "PHB-ES",
+			"page": 74,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Caballero Arcano",
+			"subclassSource": "PHB-ES",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 7, cuando utilizas tu acción para lanzar un truco, puedes emplear tu acción adicional para hacer un ataque con arma."
+			]
+		},
+		{
+			"name": "Golpe Sobrenatural",
+			"source": "PHB-ES",
+			"page": 74,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Caballero Arcano",
+			"subclassSource": "PHB-ES",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"A nivel 10 aprendes a hacer que los golpes de tus armas debiliten la resistencia del objetivo a tus conjuros. Cuando impactas a una criatura con un ataque con arma, dicha criatura tendrá desventaja en la siguiente tirada de salvación que realice por causa de un conjuro que lances antes del final de tu próximo turno."
+			]
+		},
+		{
+			"name": "Carga Arcana",
+			"source": "PHB-ES",
+			"page": 74,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Caballero Arcano",
+			"subclassSource": "PHB-ES",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"A nivel 15 obtienes la capacidad de, cuando usas tu Acción Súbita, teletransportarte hasta 30 pies a un espacio desocupado que puedas ver. Puedes teletransportarte antes o después de hacer la acción adicional."
+			]
+		},
+		{
+			"name": "Magia de Guerra Mejorada",
+			"source": "PHB-ES",
+			"page": 74,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Caballero Arcano",
+			"subclassSource": "PHB-ES",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 18, cuando utilizas tu acción para lanzar un conjuro, puedes emplear tu acción adicional para hacer un ataque con arma."
+			]
+		},
+		{
+			"name": "Caballero del Dragón Púrpura",
+			"source": "SCAG-ES",
+			"page": 128,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Caballero del Dragón Púrpura",
+			"subclassSource": "SCAG-ES",
+			"level": 3,
+			"entries": [
+				"Los Caballeros del Dragón Púrpura son guerreros que provienen del reino de Cormyr. Juran proteger la corona y luchan contra el mal más allá de las fronteras del reino. Se ocupan de recorrer el mundo como caballeros errantes y se basan en su juicio, valentía y lealtad, que conforman un código caballeresco que les guía para derrotar a los maleantes.",
+				"Un Caballero del Dragón Púrpura inspira grandeza a otros emprendiendo hazañas valientes en combate. Su mera presencia en una aldea basta para que algunos orcos y bandidos busquen presas más fáciles. Un caballero solitario es un guerrero habilidoso, pero un caballero que lidere a un grupo de aliados transforma incluso a la milicia peor equipada en una partida de guerra feroz.",
+				"Un Caballero del Dragón Púrpura prefiere liderar con hechos y no con palabras. Cuando encabeza un ataque, sus acciones pueden despertar reservas de valor y convicción insospechadas en sus aliados.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Restricción: Caballería|Guerrero|PHB-ES|Caballero del Dragón Púrpura|SCAG-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Llamada a las Armas|Guerrero|PHB-ES|Caballero del Dragón Púrpura|SCAG-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Llamada a las Armas",
+			"source": "SCAG-ES",
+			"page": 128,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Caballero del Dragón Púrpura",
+			"subclassSource": "SCAG-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A partir del momento en el que eliges este arquetipo, a nivel 3, aprendes a inspirar a tus aliados para que luchen aunque estén heridos.",
+				"Al usar tu rasgo Tomar Aliento, puedes elegir hasta tres criaturas aliadas que se encuentren a 60 pies o menos de ti. Todas recuperan tantos puntos de golpe como tu nivel de guerrero, siempre puedan verte u oírte."
+			]
+		},
+		{
+			"name": "Restricción: Caballería",
+			"source": "SCAG-ES",
+			"page": 128,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Caballero del Dragón Púrpura",
+			"subclassSource": "SCAG-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Los caballeros del Dragón Púrpura están ligados a una orden específica de caballeros de Cormyr.",
+				"Puedes usar Mesnadero como nombre genérico para este arquetipo si lo utilizas en otros entornos de campaña o para crear otros señores de la guerra que no sean los Caballeros del Dragón Purpura."
+			]
+		},
+		{
+			"name": "Enviado Real",
+			"source": "SCAG-ES",
+			"page": 128,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Caballero del Dragón Púrpura",
+			"subclassSource": "SCAG-ES",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"Un Caballero del Dragón Púrpura ejerce de enviado de la corona de Cormyr. Se espera de los caballeros de alto rango un comportamiento elegante.",
+				"A nivel 7, obtienes competencia en la habilidad {@skill Persuasion|Persuasión}. Si ya tienes competencia en ella, adquieres competencia en la habilidad que prefieras entre las siguientes: {@skill Performance|Interpretación}, {@skill Intimidation|Intimidación}, {@skill Insight|Perspicacia} o {@skill Animal Handling|Trato con Animales}.",
+				"Tu bonificador por competencia se duplica para cualquier prueba de característica que hagas utilizando {@skill Persuasion|Persuasión}. Recibes este beneficio sin tener en cuenta la competencia en habilidad que consigas con este rasgo."
+			]
+		},
+		{
+			"name": "Inspiración Súbita",
+			"source": "SCAG-ES",
+			"page": 128,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Caballero del Dragón Púrpura",
+			"subclassSource": "SCAG-ES",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"A partir del nivel 10, cuando usas el rasgo Acción Súbita, puedes escoger a una criatura que se encuentre a 60 pies o menos de ti y esté aliada contigo. Esta podrá hacer un ataque con arma cuerpo a cuerpo o arma a distancia utilizando su reacción, siempre que pueda verte u oírte.",
+				"A partir del nivel 18, puedes elegir a dos aliados situados a 60 pies o menos de ti en vez de solo uno."
+			]
+		},
+		{
+			"name": "Bastión",
+			"source": "SCAG-ES",
+			"page": 128,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Caballero del Dragón Púrpura",
+			"subclassSource": "SCAG-ES",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"A partir del nivel 15, puedes trasladar a un aliado los beneficios de tu rasgo Indómito. Cuando decidas emplear Indómito para volver a hacer una tirada de salvación de Inteligencia, Sabiduría o Carisma, siempre que no estés {@condition incapacitado|PHB-ES}, puedes escoger a un aliado que se encuentre a 60 pies o menos de ti y que tampoco haya superado su tirada de salvación contra el mismo efecto. Si la criatura puede verte u oírte, puede volver a hacer su tirada de salvación y debe quedarse con el nuevo resultado."
+			]
+		},
+		{
+			"name": "Inspiración Súbita",
+			"source": "SCAG-ES",
+			"page": 128,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Caballero del Dragón Púrpura",
+			"subclassSource": "SCAG-ES",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"A partir del nivel 18, puedes elegir a dos aliados situados a 60 pies o menos de ti en vez de solo uno."
+			]
+		},
+		{
+			"name": "Arquero Arcano",
+			"source": "XGE-ES",
+			"page": 28,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Arquero Arcano",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"El arquero arcano estudia un método único de arquería de origen élfico que entreteje magia en sus ataques para producir efectos sobrenaturales. Estos guerreros son parte de los cuerpos de élite élficos. Guardianes de las fronteras de los dominios de esta raza, se mantienen alerta en busca de invasores y usan sus flechas infundidas con magia para derrotarlos antes de que puedan llegar a sus asentamientos. A lo largo de los siglos, los métodos de estos arqueros elfos se han extendido también a miembros de otras razas, por tanto capaces de conjugar aptitud arcana y arquería.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conocimiento de Arquero Arcano|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Disparo Arcano|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Opciones de Disparo Arcano|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Conocimiento de Arquero Arcano",
+			"source": "XGE-ES",
+			"page": 28,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Arquero Arcano",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A nivel 3, puedes conocer teoría mágica o secretos de la naturaleza, algo normal para los practicantes de esta disciplina marcial élfica. Elige una habilidad entre Conocimiento {@skill Arcana|Arcano} o {@skill Nature|Naturaleza}, con la que obtienes competencia, y aprendes un truco, a elegir entre {@spell prestidigitación|PHB-ES} o {@spell saber druídico|PHB-ES}."
+			]
+		},
+		{
+			"name": "Disparo Arcano",
+			"source": "XGE-ES",
+			"page": 28,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Arquero Arcano",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A nivel 3 consigues desatar efectos mágicos con algunos de tus disparos. Cuando obtienes este rasgo, aprendes dos opciones de Disparo Arcano a tu elección (consulta \"Opciones de Disparo Arcano\" más adelante).",
+				"Una vez por turno, cuando dispares una flecha desde un arco corto o largo como parte de una acción de {@action Atacar|PHB-ES|Ataque}, puedes aplicar una de tus opciones de Disparo Arcano a ese proyectil. Decides usar la opción cuando la flecha impacta a una criatura, a menos que la opción no implique tirada de ataque alguna. Posees dos usos de esta habilidad, los cuales recuperas cuando completas un descanso corto o largo.",
+				"Ganas una opción adicional de Disparo Arcano a tu elección cuando alcanzas ciertos niveles en esta clase: 7, 10, 15 y 18. Todas las opciones mejoran cuando llegas a ser un guerrero de nivel 18."
+			]
+		},
+		{
+			"name": "Opciones de Disparo Arcano",
+			"source": "XGE-ES",
+			"page": 28,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Arquero Arcano",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"El rasgo Disparo Arcano te permite elegir entre varias opciones a ciertos niveles. Aquí se presentan en orden alfabético. Se consideran efectos mágicos, por lo que cada flecha está asociada a una de las escuelas de magia.",
+				"Si una de las opciones requiere una tirada de salvación, la de tu Disparo Arcano es igual a la siguiente:",
+				{
+					"type": "abilityDc",
+					"name": "Disparo Arcano",
+					"attributes": [
+						"int"
+					]
+				},
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Flecha Buscadora|XGE-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Flecha Debilitadora|XGE-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Flecha de Sombras|XGE-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Flecha Desterradora|XGE-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Flecha Encantadora|XGE-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Flecha Enredadora|XGE-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Flecha Explosiva|XGE-ES"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Flecha Penetrante|XGE-ES"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Opción adicional de Disparo Arcano",
+			"source": "XGE-ES",
+			"page": 28,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Arquero Arcano",
+			"subclassSource": "XGE-ES",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"Obtienes una opción adicional de Disparo Arcano a tu elección cuando alcanzas el nivel 7."
+			]
+		},
+		{
+			"name": "Disparo Curvo",
+			"source": "XGE-ES",
+			"page": 28,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Arquero Arcano",
+			"subclassSource": "XGE-ES",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"A nivel 7 aprendes a dirigir un proyectil errante hacia un nuevo objetivo. Cuando realizas una tirada de ataque con una flecha mágica y fallas, puedes usar una acción adicional para volver a hacer la tirada de ataque contra un objetivo distinto situado a 60 pies o menos del original."
+			]
+		},
+		{
+			"name": "Flecha Mágica",
+			"source": "XGE-ES",
+			"page": 28,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Arquero Arcano",
+			"subclassSource": "XGE-ES",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"A nivel 7 eres capaz de infundir magia en tus proyectiles. Cuando disparas una flecha no mágica desde un arco corto o largo, puedes convertirla en mágica en lo que a superar resistencias e inmunidades a ataques y daño no mágico se refiere. La magia se desvanece del proyectil inmediatamente después de impactar o fallar a su objetivo."
+			]
+		},
+		{
+			"name": "Opción adicional de Disparo Arcano",
+			"source": "XGE-ES",
+			"page": 28,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Arquero Arcano",
+			"subclassSource": "XGE-ES",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"Obtienes una opción adicional de Disparo Arcano a tu elección cuando alcanzas el nivel 10."
+			]
+		},
+		{
+			"name": "Opción adicional de Disparo Arcano",
+			"source": "XGE-ES",
+			"page": 28,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Arquero Arcano",
+			"subclassSource": "XGE-ES",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"Obtienes una opción adicional de Disparo Arcano a tu elección cuando alcanzas el nivel 15."
+			]
+		},
+		{
+			"name": "Disparo Siempre Listo",
+			"source": "XGE-ES",
+			"page": 28,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Arquero Arcano",
+			"subclassSource": "XGE-ES",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 15, tu arquería mágica está disponible en cuanto empieza el combate, Si al realizar una tirada de iniciativa no te quedan usos de Disparo Arcano, recuperas uno."
+			]
+		},
+		{
+			"name": "Opción adicional de Disparo Arcano",
+			"source": "XGE-ES",
+			"page": 28,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Arquero Arcano",
+			"subclassSource": "XGE-ES",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"Obtienes una opción adicional de Disparo Arcano a tu elección cuando alcanzas el nivel 18. Cada opción también mejora cuando te conviertes en un guerrero de nivel 18."
+			]
+		},
+		{
+			"name": "Caballero",
+			"source": "XGE-ES",
+			"page": 30,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Caballero",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"El arquetipo Caballero sobresale en el combate montado. Normalmente de nacimiento noble y criado en la corte, se siente como en casa tanto en una conversación ingeniosa en una cena de estado como liderando una carga de caballería. Estos guerreros también aprenden a proteger del peligro a aquellos a su cargo, siendo frecuentemente guardianes tanto de sus superiores como de los más débiles. Motivados por el afán por deshacer entuertos o conseguir prestigio, muchos de ellos dejan sus vidas confortables para embarcarse en gloriosas aventuras.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Competencia adicional|Guerrero|PHB-ES|Caballero|XGE-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Nacido en la Silla|Guerrero|PHB-ES|Caballero|XGE-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Marca Inquebrantable|Guerrero|PHB-ES|Caballero|XGE-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Competencia adicional",
+			"source": "XGE-ES",
+			"page": 30,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Caballero",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Cuando eliges este arquetipo a nivel 3, obtienes competencia en una de las siguientes habilidades, a tu elección: {@skill History|Historia}, {@skill Performance|Interpretación}, {@skill Insight|Perspicacia}, {@skill Persuasion|Persuasión} o {@skill Animal Handling|Trato con Animales}. Como alternativa, puedes aprender un idioma, el que prefieras."
+			]
+		},
+		{
+			"name": "Nacido en la Silla",
+			"source": "XGE-ES",
+			"page": 30,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Caballero",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A nivel 3, tu maestría como jinete se vuelve evidente. Tienes ventaja en tiradas de salvación que realices para evitar caer de tu montura. Además, si al caer de ella desciendes menos de 10 pies y no estás {@condition incapacitado|PHB-ES}, puedes aterrizar de pie.",
+				"Por último, montar o desmontar de una criatura solo te cuesta 5 pies de movimiento, en vez de la mitad de tu velocidad. "
+			]
+		},
+		{
+			"name": "Marca Inquebrantable",
+			"source": "XGE-ES",
+			"page": 30,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Caballero",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A partir de nivel 3, puedes amenazar a tus enemigos, impidiendo sus ataques y castigándoles por dañar a otros. Cuando impactas a una criatura con un ataque cuerpo a cuerpo con arma, puedes marcarla hasta el final de tu siguiente turno. Este efecto acaba si quedas {@condition incapacitado|PHB-ES}, mueres u otro marca a la misma criatura.",
+				"Mientras esté a 5 pies o menos de ti, una criatura marcada por ti tendrá desventaja en cualquier tirada de ataque que no te tenga como objetivo.",
+				"Además, si una criatura marcada por ti inflige daño a cualquiera que no seas tú, podrás realizar un ataque cuerpo a cuerpo con arma especial contra ella, usando una acción adicional en tu próximo turno. Tienes ventaja en la tirada de ataque y, si impactas, infliges daño adicional al objetivo igual a la mitad de tu nivel de guerrero.",
+				"Independientemente del número de criaturas que marques, puedes realizar este ataque especial tantas veces como tu modificador por Fuerza (mínimo de uno). Recuperas todos los usos cuando completas un descanso largo."
+			]
+		},
+		{
+			"name": "Maniobra de Protección",
+			"source": "XGE-ES",
+			"page": 30,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Caballero",
+			"subclassSource": "XGE-ES",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"A nivel 7, has aprendido a eludir golpes dirigidos contra ti, tu montura u otros compañeros cercanos. Si tú o una criatura que puedas ver y se encuentre a 5 pies o menos de ti es impactada por un ataque y blandes un arma cuerpo a cuerpo o un escudo, puedes tirar {@dice 1d8} como reacción. Añade el resultado de la tirada a la CA del objetivo contra ese ataque. Si, aun así, el ataque impactara, el objetivo tendría resistencia contra el daño del ataque.",
+				"Puedes utilizar este rasgo tantas veces como tu modificador por Constitución (mínimo una vez) y recuperas todos los usos tras finalizar un descanso largo."
+			]
+		},
+		{
+			"name": "Mantener la Formación",
+			"source": "XGE-ES",
+			"page": 30,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Caballero",
+			"subclassSource": "XGE-ES",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"A nivel 10 te conviertes en un maestro en impedir el movimiento de tus enemigos. Las criaturas provocan un ataque de oportunidad tuyo cuando se mueven 5 pies o más dentro de tu alcance. Además, si impactas a un objetivo con un ataque de oportunidad, su velocidad quedará reducida a 0 hasta el final del turno actual."
+			]
+		},
+		{
+			"name": "Carga Feroz",
+			"source": "XGE-ES",
+			"page": 30,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Caballero",
+			"subclassSource": "XGE-ES",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 15 eres capaz de atropellar a tus enemigos, estés montado o no. Si te mueves al menos 10 pies en línea recta justo antes de atacar a una criatura, y le impactas con el ataque, esta deberá tener éxito en una tirada de salvación de Fuerza (CD 8 + tu bonificador por competencia + modificador por Fuerza) o quedará {@condition derribado|PHB-ES|derribada}. Solo puedes usar este rasgo una vez en cada uno de tus turnos."
+			]
+		},
+		{
+			"name": "Defensor Atento",
+			"source": "XGE-ES",
+			"page": 30,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Caballero",
+			"subclassSource": "XGE-ES",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"A nivel 18, te enfrentas al peligro con una atención extraordinaria. En combate, recibes una reacción especial, que puedes usar una vez en el turno de cada criatura, menos en el tuyo. Esta reacción especial solo puedes emplearla para realizar un ataque de oportunidad, así que no puedes utilizarla en el mismo turno en que uses tu reacción normal."
+			]
+		},
+		{
+			"name": "Samurái",
+			"source": "XGE-ES",
+			"page": 31,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Samurái",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"El Samurái es un guerrero que usa su implacable espíritu de lucha para superar a sus enemigos. Su determinación es inquebrantable, por lo que los adversarios que se encuentren en su camino tienen dos opciones: rendirse o morir luchando.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Competencia Adicional|Guerrero|PHB-ES|Samurái|XGE-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Espíritu de Lucha|Guerrero|PHB-ES|Samurái|XGE-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Competencia Adicional",
+			"source": "XGE-ES",
+			"page": 31,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Samurái",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Cuando eliges este arquetipo a nivel 3, obtienes competencia en una de las siguientes habilidades, a tu elección: {@skill History|Historia}, {@skill Performance|Interpretación}, {@skill Insight|Perspicacia} o {@skill Persuasion|Persuasión}. Como alternativa, puedes aprender un idioma, el que prefieras."
+			]
+		},
+		{
+			"name": "Espíritu de Lucha",
+			"source": "XGE-ES",
+			"page": 31,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Samurái",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A nivel 3, tu intensidad en batalla puede escudarte y ayudarte a golpear de forma certera. Como acción adicional en tu turno puedes obtener ventaja en las tiradas de ataque con arma hasta el final del mismo turno. Si lo haces, también ganas 5 puntos de golpe temporales. Este número de puntos de golpe temporales aumenta según alcanzas ciertos niveles en esta clase, incrementándose a 10 en el nivel 10 y a 15 en el nivel 15.",
+				"Puedes utilizar este rasgo tres veces, recuperando todos los usos gastados cuando terminas un descanso largo."
+			]
+		},
+		{
+			"name": "Cortesano Elegante",
+			"source": "XGE-ES",
+			"page": 31,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Samurái",
+			"subclassSource": "XGE-ES",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 7, tu disciplina y atención al detalle te permiten brillar en situaciones sociales. Cuando realices una prueba de Carisma ({@skill Persuasion|Persuasión}), recibes un bonificador igual a tu modificador de Sabiduría.",
+				"Tu autocontrol también te hace ganar competencia en tira das de salvación de Sabiduría. Si ya tienes esta competencia, en vez de eso obtienes competencia en tiradas de salvación de Inteligencia o Carisma, a tu elección."
+			]
+		},
+		{
+			"name": "Espíritu Incansable",
+			"source": "XGE-ES",
+			"page": 31,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Samurái",
+			"subclassSource": "XGE-ES",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 10, siempre que realices una tirada de iniciativa y no te queden usos de Espíritu de Lucha, recuperas uno de ellos."
+			]
+		},
+		{
+			"name": "Golpe Súbito",
+			"source": "XGE-ES",
+			"page": 31,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Samurái",
+			"subclassSource": "XGE-ES",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"A nivel 15 aprendes a intercambiar precisión por rapidez en el ataque. Si realizas una acción de {@action Atacar|PHB-ES} en tu turno y tienes ventaja contra uno de los objetivos, puedes renunciar a la ventaja en esa tirada para realizar un ataque con arma adicional contra el objetivo, como parte de la misma acción. No puedes hacer esto más de una vez por turno."
+			]
+		},
+		{
+			"name": "Fortaleza ante la Muerte",
+			"source": "XGE-ES",
+			"page": 31,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Samurái",
+			"subclassSource": "XGE-ES",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 18, la fuerza de tu espíritu es capaz de impedir el abrazo de la muerte. Si sufres una cantidad de daño que reduce tus puntos de golpe a 0, pero no te mata, puedes usar tu reacción para no caer {@condition inconsciente|PHB-ES} y obtener un turno adicional inmediatamente, interrumpiendo el actual. Mientras tengas 0 puntos de golpe durante ese turno adicional, recibir daño causa fallos en tiradas de salvación contra muerte de la forma habitual y tres fallos en tiradas de salvación contra muerte todavía pueden matarte. Cuando el turno adicional termina, caes {@condition inconsciente|PHB-ES} si todavía tienes 0 puntos de golpe.",
+				"Una vez utilizado este rasgo, deberás terminar un descanso largo para poder volver a usarlo."
+			]
+		}
+	]
+}

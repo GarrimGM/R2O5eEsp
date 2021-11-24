@@ -1,0 +1,2331 @@
+{
+	"_meta": {
+		"dependencies": {
+			"subclass": [
+				"generic"
+			]
+		}
+	},
+	"class": [
+		{
+			"name": "Mago",
+			"source": "PHB-ES",
+			"page": 112,
+			"srd": true,
+			"hd": {
+				"number": 1,
+				"faces": 6
+			},
+			"proficiency": [
+				"int",
+				"wis"
+			],
+			"spellcastingAbility": "int",
+			"casterProgression": "full",
+			"preparedSpells": "<$level$> + <$int_mod$>",
+			"cantripProgression": [
+				3,
+				3,
+				3,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5
+			],
+			"spellsKnownProgressionFixed": [
+				6,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2
+			],
+			"spellsKnownProgressionFixedAllowLowerLevel": true,
+			"startingProficiencies": {
+				"weapons": [
+					"{@item daga|PHB-ES|dagas}",
+					"{@item dardo|PHB-ES|dardos}",
+					"{@item honda|PHB-ES|hondas}",
+					"{@item bastón|PHB-ES|bastones}",
+					"{@item ballesta ligera|PHB-ES|ballestas ligeras}"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"arcana|conocimiento Arcano",
+								"history|historia",
+								"insight|perspicacia",
+								"investigation|investigación",
+								"medicine|medicina",
+								"religion|religión"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) un {@item bastón|PHB-ES} o (b) una {@item daga|PHB-ES}",
+					"(a) un {@item saquito de componentes|PHB-ES} o (b) un {@item canalizadores arcanos|PHB-ES|canalizador arcano}",
+					"(a) un {@item paquete de erudito|PHB-ES} o (b) un {@item paquete de explorador|PHB-ES}",
+					"Un {@item libro de conjuros|PHB-ES}"
+				],
+				"goldAlternative": "{@dice 4d4 × 10|4d4 × 10|Starting Gold}",
+				"defaultData": [
+					{
+						"a": [
+							"bastón|PHB-ES"
+						],
+						"b": [
+							"daga|PHB-ES"
+						]
+					},
+					{
+						"a": [
+							"saquito de componentes|PHB-ES"
+						],
+						"b": [
+							"canalizadores arcanos|PHB-ES"
+						]
+					},
+					{
+						"a": [
+							"paquete de erudito|PHB-ES"
+						],
+						"b": [
+							"paquete de explorador|PHB-ES"
+						]
+					},
+					{
+						"_": [
+							"libro de conjuros|PHB-ES"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"int": 13
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"{@filter Trucos conocidos|spells|level=0|class=Mago (PHB-ES)}"
+					],
+					"rows": [
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							5
+						]
+					]
+				},
+				{
+					"title": "Espacios de conjuro por cada nivel de conjuro",
+					"colLabels": [
+						"{@filter 1|spells|level=1|class=Mago (PHB-ES)}",
+						"{@filter 2|spells|level=2|class=Mago (PHB-ES)}",
+						"{@filter 3|spells|level=3|class=Mago (PHB-ES)}",
+						"{@filter 4|spells|level=4|class=Mago (PHB-ES)}",
+						"{@filter 5|spells|level=5|class=Mago (PHB-ES)}",
+						"{@filter 6|spells|level=6|class=Mago (PHB-ES)}",
+						"{@filter 7|spells|level=7|class=Mago (PHB-ES)}",
+						"{@filter 8|spells|level=8|class=Mago (PHB-ES)}",
+						"{@filter 9|spells|level=9|class=Mago (PHB-ES)}"
+					],
+					"rows": [
+						[
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							1,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							2,
+							2,
+							1,
+							1
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"Recuperación Arcana|Mago|PHB-ES|1",
+				"Lanzamiento de Conjuros|Mago|PHB-ES|1",
+				{
+					"classFeature": "Tradición Arcana|Mago|PHB-ES|2",
+					"gainSubclassFeature": true
+				},
+				"Mejora de Característica|Mago|PHB-ES|4",
+				{
+					"classFeature": "Rasgo de Tradición Arcana|Mago|PHB-ES|6",
+					"gainSubclassFeature": true
+				},
+				"Mejora de Característica|Mago|PHB-ES|8",
+				{
+					"classFeature": "Rasgo de Tradición Arcana|Mago|PHB-ES|10",
+					"gainSubclassFeature": true
+				},
+				"Mejora de Característica|Mago|PHB-ES|12",
+				{
+					"classFeature": "Rasgo de Tradición Arcana|Mago|PHB-ES|14",
+					"gainSubclassFeature": true
+				},
+				"Mejora de Característica|Mago|PHB-ES|16",
+				"Maestría sobre Conjuros|Mago|PHB-ES|18",
+				"Mejora de Característica|Mago|PHB-ES|19",
+				"Conjuros Característicos|Mago|PHB-ES|20"
+			],
+			"subclassTitle": "Tradiciones arcanas",
+			"fluff": [
+				{
+					"name": "Mago",
+					"type": "section",
+					"entries": [
+						"Envuelta en la túnica plateada símbolo de su cargo, una elfa cierra los ojos, con el fin de apartar de su mente las distracciones del campo de batalla y así poder comenzar a pronunciar su silenciosa salmodia. Agitando los dedos, da por terminado su conjuro y arroja una pequeña cuenta de fuego hacia las filas de enemigos, donde estalla en una deflagración que envuelve a los soldados.",
+						"Repasando una y otra vez su trabajo, un humano dibuja con tiza un intrincado círculo mágico en el suelo de piedra, para inmediatamente después esparcir polvo de hierro siguiendo el contorno de las gráciles curvas y precisas líneas que acaba de trazar. Cuando el círculo está terminado, murmura un largo ensalmo. En el espacio que ocupa el interior del círculo se abre un agujero, del que emana un aroma a azufre proveniente del místico plano que se encuentra al otro lado.",
+						"Agachándose sobre el suelo de una de las intersecciones de la mazmorra, un gnomo lanza un puñado de pequeños huesos inscritos con símbolos misteriosos mientras murmura unas breves palabras de poder. Tras cerrar los ojos para poder contemplar las visiones con más claridad, asiente lentamente, los abre de nuevo y señala el pasillo de su izquierda.",
+						"Los magos son los supremos usuarios de la magia. Si algo define a esta clase es la gran cantidad de conjuros que puede lanzar. Tirando del sutil tejido mágico que permea el cosmos, lanzan conjuros de fuego explosivo, relámpagos súbitos, engaños sutiles y control mental. Su magia les permite conjurar elementales desde otros planos de existencia, vislumbrar el futuro o alzar enemigos fallecidos en forma de zombis. Sus conjuros más poderosos les permiten transmutar una sustancia en otra, invocar meteoros para que caigan desde el cielo o abrir portales a otros mundos.",
+						{
+							"type": "entries",
+							"name": "Estudioso de lo arcano",
+							"entries": [
+								"Salvaje y enigmática, diversa tanto en forma como en funciones, la magia atrae a numerosos estudiantes, que buscan dominar sus misterios. Algunos aspiran a convertirse en dioses, capaces de moldear la propia realidad. Aunque para lanzar la mayoría de los conjuros basta con pronunciar unas pocas palabras extrañas, ejecutar unos gestos fugaces y, a veces, recurrir a un pellizco de materiales exóticos, estos componentes no son sino la superficie bajo la que se esconde una enorme pericia, producto de años de aprendizaje e incontables horas de estudio.",
+								"Un mago vive por y para sus conjuros; todo lo demás es secundario. Su forma de aprenderlos es mediante la experimentación y el propio crecimiento personal. No obstante, también pueden aprender conjuros de otros magos, de grimorios o inscripciones antiguas y de criaturas ancestrales impregnadas de magia, como los seres feéricos."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "La atracción del conocimiento",
+							"entries": [
+								"Las vidas de los magos no suelen ser prosaicas. Lo más cerca que uno de ellos puede estar de una vida corriente es trabajando como erudito o profesor en una biblioteca o universidad, enseñando a otros los secretos del multiverso. Otros magos ofrecen sus servicios como adivinos, sirven en las fuerzas armadas o se dedican al crimen ya subyugar a los demás.",
+								"Pero la atracción del conocimiento y el poder tienta incluso a los magos más osados a abandonar la seguridad de sus bibliotecas y laboratorios para internarse en ruinas desmoronadas y ciudades perdidas. La mayoría de los magos creen que sus contrapartidas de civilizaciones antiguas conocían grandes secretos mágicos, perdidos con el paso de los siglos. Descubrir esos misterios podrá abrir el camino a un poder mayor al de cualquier magia disponible en el presente."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creación de un mago",
+							"entries": [
+								"Para crear un mago tendrás que idear un pasado dominado por, como mínimo, un suceso extraordinario. ¿Cómo entraste en contacto con la magia? Piensa también en cómo descubriste tu aptitud para ella: ¿posees un talento natural o es el producto de un intenso estudio y la practica incesante? Quizá aprendiste los rudimentos de la magia de una criatura sobrenatural o las páginas de un libro antiguo.",
+								"¿Qué te ha hecho apartarte de tu vida de estudio? Es posible que tu primer bocado de conocimiento mágico te abriera el apetito de más. Tal vez hayas sido informado de la ubicación secreta de un repositorio de conocimientos que aún no ha sido saqueado por ningún otro mago. O puede que simplemente anheles poner a prueba tus recién adquiridas facultades mágicas, y que mejor forma de hacerlo que frente al peligro.",
+								{
+									"type": "entries",
+									"name": "Creación rápida",
+									"entries": [
+										"Para crear un mago de forma rápida sugerimos lo siguiente. Para empezar, Inteligencia deberá ser tu característica más alta, seguida de Constitución o Destreza. Si planeas unirte a la Escuela de Encantamiento, pon tu siguiente puntuación más alta en Carisma. A continuación, elige el trasfondo \"{@background sage|PHB-ES|erudito}\". Después, escoge los trucos {@spell Luz|PHB-ES|luz}, {@spell Mano de mago|PHB-ES|mano de mago} y {@spell Rayo de escarcha|PHB-ES|rayo de escarcha} y apunta los siguientes conjuros de nivel 1 en tu libro de conjuros: {@spell Armadura de mago|PHB-ES|armadura de mago}, {@spell Caída de pluma|PHB-ES|caída de pluma}, {@spell Dormir|PHB-ES|dormir}, {@spell Hechizar persona|PHB-ES|hechizar persona}, {@spell Manos ardientes|PHB-ES|manos ardientes} y {@spell Proyectil mágico|PHB-ES|proyectil mágico}."
+									]
+								}
+							]
+						}
+					],
+					"page": 112,
+					"source": "PHB-ES"
+				},
+				{
+					"type": "section",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"Ser un mago requiere de entendimiento. El conocimiento de cómo y por qué funciona la magia. De hecho, nuestros esfuerzos para ampliar ese conocimiento han traído los avances clave de la civilización a lo largo de los siglos."
+							],
+							"by": "Gimble el ilusionista"
+						},
+						"Solo algunas personas escogidas en todo el mundo son capaces de usar la magia. De entre ellos, los magos se encuentran solos en la cima de este arte. El menos capaz de entre ellos puede manipular fuerzas que se burlan de las leyes de la naturaleza, mientras que los mejores lanzan conjuros cuyos efectos hacen retumbar el mundo entero.",
+						"Los magos pagan por su maestría en la moneda más valiosa: tiempo. Son necesarios años de estudio, instrucción y experimentación para aprender a emplear la energía mágica y almacenar conjuros en la mente. Para los magos aventureros y otros lanzadores de conjuros que aspiran a los más altos escalafones de la profesión, el estudio nunca termina, de la misma forma que no lo hace la búsqueda de conocimiento y poder.",
+						"Si estás jugando con un mago, aprovecha la oportunidad para hacer de tu personaje algo más que el típico tiraconjuros. Utiliza la información que se presenta a continuación para añadir algunos toques interesantes a cómo tu mago interactúa con el mundo.",
+						{
+							"type": "entries",
+							"name": "Libro de conjuros",
+							"entries": [
+								"La posesión más preciada de tu personaje mago, su libro de conjuros, puede tener muchos aspectos distintos. Es posible que sea un volumen de aspecto inocuo cuyas cubiertas no dan ninguna pista de lo que está dentro, pero a muchos miembros de esta clase les gusta mostrar su estilo usando libros de conjuros inusuales. Si no tienes todavía un objeto así, puede que tu objetivo sea encontrar un libro distintivo, ya sea por su apariencia o su material.",
+								{
+									"type": "table",
+									"caption": "Libros de conjuros",
+									"colLabels": [
+										"{@dice d6}",
+										"Libro de conjuros"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Un tomo cuyas páginas son finas láminas de metal, con los conjuros grabados en ellas con ácido."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"Largas tiras de cuero en las que están recogidos los hechizos, envueltas alrededor de un bastón para 2 transportarlas con facilidad."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Un tomo maltratado, con pictogramas que solo tú puedes entender."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"Pequeñas piedras con conjuros inscritos, que llevas en una bolsa de tela."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"Un libro quemado, devastado por el fuego de un dragón, con las letras de tus conjuros difícilmente legibles."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Un tomo de páginas negras cuya letra solo puede verse en luz tenue o en la oscuridad."
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Ambición",
+							"entries": [
+								"Pocos aspirantes a mago emprenden el estudio de la magia sin algún tipo de objetivo personal. Muchos de ellos utilizan sus conjuros como una herramienta para producir un beneficio tangible, en estatus o bienes materiales, para ellos mismos o para sus compañeros. Para otros, el aspecto teórico de la magia tiene un gran atractivo, llevando a estos magos a buscar conocimiento que soporte nuevos postula dos o confirme viejas teorías de lo arcano.",
+								"Más allá de lo obvio, ¿por qué estudia magia tu mago y qué quiere conseguir? Si no has pensado mucho en ello, ahora tienes la oportunidad. Las respuestas que halles probablemente afectarán a cómo se desarrolle tu futuro.",
+								{
+									"type": "table",
+									"caption": "Ambiciones",
+									"colLabels": [
+										"{@dice d6}",
+										"Ambición"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Vas a demostrar que los dioses no son tan poderosos como cree el común de los mortales."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"La inmortalidad es la meta final de tus estudios."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Si puedes comprender la magia por completo, podrás extender su uso a todo el mundo, trayendo una era de igualdad."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"La magia es una herramienta peligrosa. La usas para proteger lo que más quieres."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"El poder arcano debe ser arrebatado a los que abusan de él."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Te convertirás en el mago más poderoso que el mundo ha visto en siglos."
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Excentricidad",
+							"entries": [
+								"Incontables horas pasadas estudiando e investigando en soledad tienen su efecto en las habilidades sociales de cualquiera. Los magos, ya de por si particulares, no son la excepción. Una manía o dos no son necesariamente algo malo: una rareza de este tipo es normalmente inofensiva y una potencial fuente de diversión, incluso una tarjeta de presentación.",
+								"Si tu personaje tiene una excentricidad, ¿es mental o física? ¿Te hace esta rareza conocido? ¿Luchas por superarla o la adoptas como un pequeño símbolo de tu fama?",
+								{
+									"type": "table",
+									"caption": "Excentricidades",
+									"colLabels": [
+										"{@dice d6}",
+										"Excentricidad"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Tienes la costumbre de golpetear incesantemente con el pie en el suelo, lo que suele resultar molesto a los demás."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"Tu memoria es bastante buena, pero no te cuesta fingir ser distraído cuando te conviene."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Nunca entras en una habitación sin ver lo que cuelga del techo."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"Tu posesión más querida es un gusano muerto que guardas dentro de un vial de poción."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"Cuando quieres que la gente te deje en paz, empiezas a hablar solo. Suele funcionar."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Tu cuidado personal y estilo, o más bien la falta de ambos, hace que muchas veces piensen que eres un mendigo."
+										]
+									]
+								}
+							]
+						}
+					],
+					"page": 58,
+					"source": "XGE-ES"
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Escuela de Abjuración",
+			"shortName": "Abjuración",
+			"source": "PHB-ES",
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"page": 115,
+			"subclassFeatures": [
+				"Escuela de Abjuración|Mago|PHB-ES|Abjuración|PHB-ES|2",
+				"Salvaguarda Proyectada|Mago|PHB-ES|Abjuración|PHB-ES|6",
+				"Abjuración Mejorada|Mago|PHB-ES|Abjuración|PHB-ES|10",
+				"Resistencia a Conjuros|Mago|PHB-ES|Abjuración|PHB-ES|14"
+			]
+		},
+		{
+			"name": "Escuela de Conjuración",
+			"shortName": "Conjuración",
+			"source": "PHB-ES",
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"page": 116,
+			"subclassFeatures": [
+				"Escuela de Conjuración|Mago|PHB-ES|Conjuración|PHB-ES|2",
+				"Trasposición Benigna|Mago|PHB-ES|Conjuración|PHB-ES|6",
+				"Conjuración Concentrada|Mago|PHB-ES|Conjuración|PHB-ES|10",
+				"Invocaciones Duraderas|Mago|PHB-ES|Conjuración|PHB-ES|14"
+			]
+		},
+		{
+			"name": "Escuela de Adivinación",
+			"shortName": "Adivinación",
+			"source": "PHB-ES",
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"page": 116,
+			"subclassFeatures": [
+				"Escuela de Adivinación|Mago|PHB-ES|Adivinación|PHB-ES|2",
+				"Adivino Avezado|Mago|PHB-ES|Adivinación|PHB-ES|6",
+				"El Tercer Ojo|Mago|PHB-ES|Adivinación|PHB-ES|10",
+				"Presagio Mayor|Mago|PHB-ES|Adivinación|PHB-ES|14"
+			]
+		},
+		{
+			"name": "Escuela de Encantamiento",
+			"shortName": "Encantamiento",
+			"source": "PHB-ES",
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"page": 117,
+			"subclassFeatures": [
+				"Escuela de Encantamiento|Mago|PHB-ES|Encantamiento|PHB-ES|2",
+				"Encantamiento Instintivo|Mago|PHB-ES|Encantamiento|PHB-ES|6",
+				"Duplicar Encantamiento|Mago|PHB-ES|Encantamiento|PHB-ES|10",
+				"Modificar Recuerdos|Mago|PHB-ES|Encantamiento|PHB-ES|14"
+			]
+		},
+		{
+			"name": "Escuela de Evocación",
+			"shortName": "Evocación",
+			"source": "PHB-ES",
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"page": 117,
+			"srd": true,
+			"subclassFeatures": [
+				"Escuela de Evocación|Mago|PHB-ES|Evocación|PHB-ES|2",
+				"Truco Potente|Mago|PHB-ES|Evocación|PHB-ES|6",
+				"Evocación Potenciada|Mago|PHB-ES|Evocación|PHB-ES|10",
+				"Sobrecanalizar|Mago|PHB-ES|Evocación|PHB-ES|14"
+			]
+		},
+		{
+			"name": "Escuela de Ilusionismo",
+			"shortName": "Ilusionismo",
+			"source": "PHB-ES",
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"page": 118,
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"Ilusión menor|PHB-ES|ilusión menor"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Escuela de Ilusionismo|Mago|PHB-ES|Ilusionismo|PHB-ES|2",
+				"Ilusiones Maleables|Mago|PHB-ES|Ilusionismo|PHB-ES|6",
+				"Yo Ilusorio|Mago|PHB-ES|Ilusionismo|PHB-ES|10",
+				"Realidad Ilusoria|Mago|PHB-ES|Ilusionismo|PHB-ES|14"
+			]
+		},
+		{
+			"name": "Escuela de Nigromancia",
+			"shortName": "Nigromancia",
+			"source": "PHB-ES",
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"page": 118,
+			"subclassFeatures": [
+				"Escuela de Nigromancia|Mago|PHB-ES|Nigromancia|PHB-ES|2",
+				"Siervos Muertos Vivientes|Mago|PHB-ES|Nigromancia|PHB-ES|6",
+				"Habituado a la Muerte en Vida|Mago|PHB-ES|Nigromancia|PHB-ES|10",
+				"Controlar Muertos Vivientes|Mago|PHB-ES|Nigromancia|PHB-ES|14"
+			]
+		},
+		{
+			"name": "Escuela de Transmutación",
+			"shortName": "Transmutación",
+			"source": "PHB-ES",
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"page": 119,
+			"subclassFeatures": [
+				"Escuela de Transmutación|Mago|PHB-ES|Transmutación|PHB-ES|2",
+				"Piedra de Transmutador|Mago|PHB-ES|Transmutación|PHB-ES|6",
+				"Cambiar de Forma|Mago|PHB-ES|Transmutación|PHB-ES|10",
+				"Maestro Transmutador|Mago|PHB-ES|Transmutación|PHB-ES|14"
+			]
+		},
+		{
+			"name": "Magia de Guerra",
+			"shortName": "Guerra",
+			"source": "XGE-ES",
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"page": 59,
+			"subclassFeatures": [
+				"Magia de Guerra|Mago|PHB-ES|Guerra|XGE-ES|2",
+				"Sobrecarga de Poder|Mago|PHB-ES|Guerra|XGE-ES|6",
+				"Magia Resistente|Mago|PHB-ES|Guerra|XGE-ES|10",
+				"Manto Deflector|Mago|PHB-ES|Guerra|XGE-ES|14"
+			]
+		},
+		{
+			"name": "Canto de la Hoja",
+			"shortName": "Canto de la Hoja",
+			"source": "TCE-ES",
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"page": 76,
+			"otherSources": [
+				{
+					"source": "SCAG-ES",
+					"page": 141
+				}
+			],
+			"subclassFeatures": [
+				"Canto de la Hoja|Mago|PHB-ES|Canto de la Hoja|TCE-ES|2",
+				"Ataque Adicional|Mago|PHB-ES|Canto de la Hoja|TCE-ES|6",
+				"Canción de Defensa|Mago|PHB-ES|Canto de la Hoja|TCE-ES|10",
+				"Canción de la Victoria|Mago|PHB-ES|Canto de la Hoja|TCE-ES|14"
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Recuperación Arcana",
+			"source": "PHB-ES",
+			"page": 112,
+			"srd": true,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"level": 1,
+			"entries": [
+				"Has aprendido a recuperar parte de tus energías mágicas estudiando tu libro de conjuros. Una vez al día, tras finalizar un descanso corto, puedes elegir espacios de conjuro gastados y recuperarlos. La suma de niveles de estos espacios de conjuro debe ser igual o inferior a la mitad de tu nivel de mago (redondeando hacia arriba), y ninguno de los espacios puede ser de nivel 6 o más.",
+				"Si, por ejemplo, eres un mago de nivel 4, podrás recuperar hasta dos niveles en espacios de conjuro: un espacio de nivel 2 o dos de nivel 1."
+			]
+		},
+		{
+			"name": "Lanzamiento de Conjuros",
+			"source": "PHB-ES",
+			"page": 112,
+			"srd": true,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"level": 1,
+			"entries": [
+				"Como estudioso de la magia arcana que eres, posees un libro de conjuros que muestra los primeros destellos de tu verdadero poder. El {@book capítulo 10|PHB-ES|10} contiene las reglas de lanzamiento de conjuros y el {@book capítulo 11|PHB-ES|11} la {@filter lista de conjuros de mago|spells|class=Mago (PHB-ES).",
+				{
+					"type": "entries",
+					"name": "Trucos",
+					"entries": [
+						"A nivel 1 conoces tres trucos de tu elección escogidos de entre los de la lista de conjuros de mago. Podrás elegir más trucos de mago cuando llegues a niveles más altos, como se indica en la columna \"trucos conocidos\" de la tabla del mago."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Libro de conjuros",
+					"entries": [
+						"A nivel 1 posees un libro de conjuros que contiene seis {@filter conjuros de mago|spells|class=Mago (PHB-ES)} de nivel 1 de tu elección. Este libro es el depositario de los conjuros de mago que conoces, con la excepción de los trucos, que están grabados en tu mente."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Preparar y lanzar conjuros",
+					"entries": [
+						"La tabla del mago muestra de cuantos espacios de conjuro dispones para lanzar conjuros de mago nivel 1 y superiores. Para lanzar uno de estos conjuros deberás invertir un espacio de al menos el nivel del conjuro. Recuperas todos los espacios utilizados tras finalizar un descanso largo.",
+						"Puedes preparar una serie de conjuros de mago, que son los que podrás lanzar. Para hacer esto, escoge tantos conjuros de mago como tu nivel de mago + tu modificador por Inteligencia (como mínimo un conjuro). Todos estos conjuros deben estar escritos en tu libro de conjuros y ser de un nivel para el que tengas espacios.",
+						"De esta forma, si eres un mago de nivel 3, tendrás cuatro espacios de nivel 1 y dos espacios de nivel 2. Con una Inteligencia de 16, podrías preparar cualquier combinación de seis conjuros de nivel 1 o 2, siempre y cuando todos ellos figuren en tu libro de conjuros. Además, si prepararas un conjuro de nivel 1, como {@spell Proyectil mágico|PHB-ES|proyectil mágico}, podrías lanzarlo usando un espacio tanto de nivel 1 como de nivel 2. Lanzar un conjuro no hace que desaparezca de tu lista de conjuros preparados.",
+						"Puedes cambiar que conjuros tienes preparados tras finalizar un descanso largo. Para preparar una nueva serie de conjuros es necesario pasar cierto tiempo estudiando tu libro de conjuros y memorizando los ensalmos y gestos que debes ejecutar para poder lanzarlos: al menos 1 minuto por cada nivel de cada conjuro que prepares."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Aptitud mágica",
+					"entries": [
+						"La Inteligencia es tu aptitud mágica en lo que a conjuros de mago respecta, ya que aprendes tus conjuros mediante el estudio concienzudo y la memorización. Así, utilizarás tu Inteligencia siempre que un conjuro de mago haga referencia a tu aptitud mágica. Además, también usarás tu modificador por Inteligencia para determinar la CD de las tiradas de salvación y las tiradas de ataque de los conjuros de mago que lances.",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"int"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"int"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Lanzamiento ritual",
+					"entries": [
+						"Puedes lanzar de forma ritual aquellos conjuros de mago que figuren en tu libro de conjuros y estén marcados como \"ritual\". No necesitas tener preparados estos conjuros."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Canalizador mágico",
+					"entries": [
+						"Puedes utilizar un {@item Canalizadores arcanos|PHB-ES|canalizador arcano} como canalizador mágico para los conjuros de mago."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Aprender conjuros de nivel 1 y superiores",
+					"entries": [
+						"Cada vez que subas un nivel de mago, podrás añadir dos conjuros de mago de tu elección a tu libro de conjuros sin coste alguno. Estos conjuros deben ser de un nivel para el que tengas espacios de conjuro, tal y como se indica en la tabla del mago, Es posible que durante tus aventuras encuentres otros conjuros, que también podrás añadir a tu libro (consulta la caja \"Tu libro de conjuros\")."
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Tu libro de conjuros",
+					"entries": [
+						"Los conjuros que añadas a tu libro de conjuros según vayas subiendo de nivel reflejaran tanto la investigación de lo arcano que llevas a cabo por tu cuenta como los hitos en tu comprensión de la naturaleza del multiverso. También podrías encontrar otros conjuros durante tus aventuras: en un pergamino dentro del cofre de un mago malvado o entre las páginas de un polvoriento volumen en una antigua biblioteca, por poner dos ejemplos.",
+						"Los libros de conjuros no contienen trucos.",
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Copiar un conjuro en tu libro",
+									"entries": [
+										"Cuando localices un conjuro de mago de nivel 1 o superiores, podrás añadirlo a tu libro de conjuros si es de un nivel que puedas preparar y dispones del tiempo suficiente como para poder descifrarlo y copiarlo.",
+										"Para copiar el conjuro es necesario no solo reproducir la forma básica del mismo, sino también descifrar la notación única empleada por el mago que lo puso por escrito. Debes practicar el conjuro hasta que entiendas los sonidos y gestos necesarios para lanzarlo. Solo entonces podrás transcribirlo a tu propio libro de conjuros utilizando tu propia notación.",
+										"El proceso exige 2 horas y 50 po por cada nivel del conjuro. Este coste representa los componentes materiales que gastas al experimentar con el conjuro hasta dominarlo, así como las valiosas tintas que empleas para registrarlo. Una vez hayas invertido el tiempo y el dinero, podrás preparar el conjuro exactamente igual que cualquier otro.",
+										{
+											"type": "entries",
+											"name": "Copiar de un pergamino de conjuro",
+											"source": "DMG-ES",
+											"page": 139,
+											"entries": [
+												"Un conjuro de mago en un pergamino de conjuro puede ser copiado del mismo modo que los conjuros en un libro de conjuros. Cuando se copia de un pergamino, el que lo hace debe tener éxito en una prueba de Inteligencia ({@skill Arcana|Conocimiento Arcano}) con CD igua l a 10 + nivel de l conjuro. Si lo consigue, la copia del conjuro se realiza con éxito. Independientemente de que la prueba tenga éxito o fracase, el pergamino de conjuro queda destruido."
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Reemplazar el libro",
+									"entries": [
+										"Puedes copiar un conjuro desde tu libro a cualquier otro. Algo útil para, por ejemplo, crear una copia de seguridad de tu libro de conjuros. Este proceso es exactamente el mismo que cuando copias un conjuro a tu libro, pero más rápido y fácil, ya que entiendes tu propia notación y ya sabes cómo lanzarlo. Solo necesitas invertir 1 hora y 10 po por cada nivel del conjuro copiado.",
+										"Si perdieras tu libro de conjuros, podrías recurrir al mismo procedimiento para transcribir los conjuros que tengas preparados en este momento a un nuevo libro. Por desgracia, para poder añadir los conjuros restantes (que ya estuvieran en el libro perdido, pero no tuvieras preparados) tendrás que encontrarlos primero, siguiendo el procedimiento detallado anteriormente. Precisamente por esto es bastante habitual que los magos conserven una copia de sus libros de conjuros en un lugar seguro."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Apariencia del libro",
+									"entries": [
+										"Tu libro es una combinación única de conjuros, escrito con las florituras típicas de tu escritura y tus notas personales al margen. Puede tratarse tanto de un manuscrito sencillo con tapas de cuero, que recibiste de tu maestro como regalo, como de un grueso volumen cuidadosamente encuadernado y con los cantos cubiertos con pan de oro. Podría incluso consistir en un amasijo de notas desordenadas, que a duras penas pudiste reunir tras sufrir un percance que te llevó a perder tu anterior libro de conjuros."
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Tradición Arcana",
+			"source": "PHB-ES",
+			"page": 112,
+			"srd": true,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"level": 2,
+			"entries": [
+				"Cuando llegas a nivel 2 escoges una tradición arcana, que moldea tu práctica de la magia a través de la óptica de una de las escuelas de magia. Esta elección te proporciona ciertos rasgos cuando alcanzas los niveles 2, 6, 10 y 14."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 112,
+			"srd": true,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"level": 4,
+			"entries": [
+				"Cuando alcances el nivel 4 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Rasgo de Tradición Arcana",
+			"source": "PHB-ES",
+			"page": 112,
+			"srd": true,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"level": 6,
+			"entries": [
+				"A nivel 6 ganas un rasgo de tu Tradición Arcana."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 112,
+			"srd": true,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"level": 8,
+			"entries": [
+				"Cuando alcances el nivel 8 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Rasgo de Tradición Arcana",
+			"source": "PHB-ES",
+			"page": 112,
+			"srd": true,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"level": 10,
+			"entries": [
+				"A nivel 10 ganas un rasgo de tu Tradición Arcana."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 112,
+			"srd": true,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"level": 12,
+			"entries": [
+				"Cuando alcances el nivel 12 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Rasgo de Tradición Arcana",
+			"source": "PHB-ES",
+			"page": 112,
+			"srd": true,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"level": 14,
+			"entries": [
+				"A nivel 14 ganas un rasgo de tu Tradición Arcana."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 112,
+			"srd": true,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"level": 16,
+			"entries": [
+				"Cuando alcances el nivel 16 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Maestría sobre Conjuros",
+			"source": "PHB-ES",
+			"page": 112,
+			"srd": true,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"level": 18,
+			"entries": [
+				"A nivel 18 has alcanzado tal maestría sobre ciertos conjuros que puedes lanzarlos a voluntad. Escoge un conjuro de mago de nivel 1 y otro de nivel 2 que figuren en tu libro de conjuros. Puedes lanzar estos conjuros a su nivel más bajo a voluntad, sin necesidad de gastar un espacio de conjuro. Eso sí, debes tener estos conjuros preparados. Si quieres lanzar cualquiera de los dos conjuros a un nivel superior deberás gastar un espacio de conjuro de forma normal.",
+				"Tras estudiar durante 8 horas podrás intercambiar uno o ambos conjuros por otros del mismo nivel."
+			]
+		},
+		{
+			"name": "Mejora de Característica",
+			"source": "PHB-ES",
+			"page": 112,
+			"srd": true,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"level": 19,
+			"entries": [
+				"Cuando alcances el nivel 19 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
+			]
+		},
+		{
+			"name": "Conjuros Característicos",
+			"source": "PHB-ES",
+			"page": 112,
+			"srd": true,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"level": 20,
+			"entries": [
+				"Cuando asciendes a nivel 20 dominas por completo dos poderosos conjuros, que podrás lanzar sin apenas esfuerzo. Escoge dos conjuros de mago de nivel 3 que figuren en tu libro de conjuros como conjuros característicos. Siempre tendrás estos conjuros preparados, no contarán para el total de conjuros que puedes preparar y podrás lanzarlos a nivel 3 sin tener que invertir un espacio de conjuro. Una vez lances cada uno de ellos, no podrás volver a hacerlo hasta que finalices un descanso corto o largo.",
+				"Si quieres lanzar cualquiera de los dos conjuros a un nivel superior, deberás gastar un espacio de conjuro de forma normal."
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Escuela de Abjuración",
+			"source": "PHB-ES",
+			"page": 115,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Abjuración",
+			"subclassSource": "PHB-ES",
+			"level": 2,
+			"entries": [
+				"La Escuela de Abjuración enfatiza la magia que detiene, destierra o protege. Los detractores de esta escuela afirman que se trata de una tradición enfocada en el rechazo, en la negación y no una afirmación positiva. Sin embargo, tu entiendes que acabar con efectos dañinos, proteger al inocente y desterrar las influencias malignas no es ni de lejos un vacío filosófico. Se trata de una vocación orgullosa y respetable. Conocidos como abjuradores, las miembros de esta escuela son especialmente demandados cuando aparecen espíritus siniestros a las que exorcizar, es necesario proteger localizaciones importantes del espionaje mágico o existen portales a otros planos que deben ser clausurados.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Experto en Abjuración|Mago|PHB-ES|Abjuración|PHB-ES|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Salvaguarda Arcana|Mago|PHB-ES|Abjuración|PHB-ES|2"
+				}
+			]
+		},
+		{
+			"name": "Experto en Abjuración",
+			"source": "PHB-ES",
+			"page": 115,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Abjuración",
+			"subclassSource": "PHB-ES",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"A partir del momento en el que eliges esta escuela, a nivel 2, solo necesitas la mitad de tiempo y dinero para copiar un conjuro de abjuración a tu libro de conjuros."
+			]
+		},
+		{
+			"name": "Salvaguarda Arcana",
+			"source": "PHB-ES",
+			"page": 115,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Abjuración",
+			"subclassSource": "PHB-ES",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"A partir de nivel 2, puedes tejer una protección mágica a tu alrededor. Cuando lanzas un {@filter conjuro de abjuración de nivel 1 o superiores|spells|school=A|level=!0|source=PHB-ES}, puedes aprovechar una de las hebras mágicas del conjuro para tejer una salvaguarda sobre ti mismo, que durará hasta que termines un descanso largo. Esta salvaguarda tiene tantos puntos de golpe máximos como dos veces tu nivel de mago + tu modificador por Inteligencia. Cada vez que fueras a sufrir daño, será ella la que lo reciba en tu lugar. Si este daño reduce los puntos de golpe de la salvaguarda a 0, recibirás el daño restante.",
+				"La salvaguarda no podrá absorber daño mientras tenga 0 puntos de golpe, pero su magia permanecerá activa. Cada vez que lances un {@filter conjuro de abjuración de nivel 1 o superiores|spells|school=A|level=!0|source=PHB-ES}, la salvaguarda recuperará tantos puntos de golpe como el doble del nivel del conjuro.",
+				"Una vez creada la salvaguarda, deberás terminar un descanso largo para poder volver a formarla de nuevo."
+			]
+		},
+		{
+			"name": "Salvaguarda Proyectada",
+			"source": "PHB-ES",
+			"page": 115,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Abjuración",
+			"subclassSource": "PHB-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 6, cuando una criatura que puedas ver a 30 pies o menos de ti fuera a recibir daño, podrás utilizar tu reacción para hacer que tu Salvaguarda Arcana absorba dicho daño. Si este daño reduce los puntos de golpe de la salvaguarda a 0, la criatura original recibirá el daño restante."
+			]
+		},
+		{
+			"name": "Abjuración Mejorada",
+			"source": "PHB-ES",
+			"page": 115,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Abjuración",
+			"subclassSource": "PHB-ES",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 10, cuando lanzas un conjuro de abjuración que te exige hacer una prueba de característica como parte del lanzamiento del mismo (como es el caso de {@spell Contrahechizo|PHB-ES|contrahechizo} o {@spell Disipar magia|PHB-ES|disipar magia}), podrás añadir tu bonificador por competencia a la prueba."
+			]
+		},
+		{
+			"name": "Resistencia a Conjuros",
+			"source": "PHB-ES",
+			"page": 115,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Abjuración",
+			"subclassSource": "PHB-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 14 posees ventaja en las tiradas de salvación contra conjuros.",
+				"Además, tienes resistencia al daño causado por conjuros."
+			]
+		},
+		{
+			"name": "Escuela de Conjuración",
+			"source": "PHB-ES",
+			"page": 116,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Conjuración",
+			"subclassSource": "PHB-ES",
+			"level": 2,
+			"entries": [
+				"Como conjurador, prefieres los conjuros que crean objetos y criaturas a partir de la nada. Puedes invocar una niebla ondulante y mortífera o convocar criaturas para que acudan a combatir por ti. Cuando crezca tu dominio de la magia, aprenderás conjuros de transporte y podrás teletransportarte a ti mismo grandes distancias, e incluso a otros planos de existencia, en un instante.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Experto en Conjuración|Mago|PHB-ES|Conjuración|PHB-ES|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conjuración Menor|Mago|PHB-ES|Conjuración|PHB-ES|2"
+				}
+			]
+		},
+		{
+			"name": "Experto en Conjuración",
+			"source": "PHB-ES",
+			"page": 116,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Conjuración",
+			"subclassSource": "PHB-ES",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"A partir del momento en el que eliges esta escuela, a nivel 2, solo necesitas la mitad de tiempo y dinero para copiar un conjuro de conjuración a tu libro de conjuros."
+			]
+		},
+		{
+			"name": "Conjuración Menor",
+			"source": "PHB-ES",
+			"page": 116,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Conjuración",
+			"subclassSource": "PHB-ES",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"A partir de nivel 2, cuando escoges esta escuela, puedes utilizar tu acción para conjurar un objeto inanimado en tu propia mano o en el suelo, en un espacio desocupado que puedas ver a 10 pies o menos de ti. El objeto no puede medir más de 3 pies en cualquiera de sus lados ni pesar más de 10 libras, y debe tener la forma de un objeto no mágico que hayas visto antes. Este objeto es claramente mágico, pues emite luz tenue en un radio de 5 pies y desaparecerá tras 1 hora, cuando uses este rasgo de nuevo, o si causa o recibe cualquier cantidad de daño."
+			]
+		},
+		{
+			"name": "Trasposición Benigna",
+			"source": "PHB-ES",
+			"page": 116,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Conjuración",
+			"subclassSource": "PHB-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 6 puedes usar tu acción para teletransportarte hasta 30 pies a un espacio desocupado que puedas ver. Alternativamente, puedes elegir un espacio dentro del alcance que esté ocupado por una criatura Pequeña o Mediana. Si es una criatura voluntaria, ambos os teletransportaréis, intercambiando vuestras posiciones. Una vez utilizado este rasgo, deberás terminar un descanso largo o lanzar un conjuro de conjuración de nivel 1 o superiores para poder volver a usarlo otra vez."
+			]
+		},
+		{
+			"name": "Conjuración Concentrada",
+			"source": "PHB-ES",
+			"page": 116,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Conjuración",
+			"subclassSource": "PHB-ES",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 10, recibir daño no te hará perder la concentración en tus conjuros de conjuración."
+			]
+		},
+		{
+			"name": "Invocaciones Duraderas",
+			"source": "PHB-ES",
+			"page": 116,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Conjuración",
+			"subclassSource": "PHB-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 14, cualquier criatura que invoques o crees con un conjuro de conjuración poseerá 30 puntos de golpe temporales."
+			]
+		},
+		{
+			"name": "Escuela de Adivinación",
+			"source": "PHB-ES",
+			"page": 116,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Adivinación",
+			"subclassSource": "PHB-ES",
+			"level": 2,
+			"entries": [
+				"El consejo de un adivino es un bien preciado, perseguido por reyes y plebeyos por igual, pues todos anhelan poseer una comprensión más clara de su pasado, presente y futuro. Como adivino, buscas apartar los velos del espacio, el tiempo y la consciencia, para así poder ver con claridad. Trabajas para dominar los conjuros que proporcionan discernimiento, visión remota, conocimiento sobrenatural y presagios del futuro.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Experto en Adivinación|Mago|PHB-ES|Adivinación|PHB-ES|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Presagio|Mago|PHB-ES|Adivinación|PHB-ES|2"
+				}
+			]
+		},
+		{
+			"name": "Experto en Adivinación",
+			"source": "PHB-ES",
+			"page": 116,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Adivinación",
+			"subclassSource": "PHB-ES",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"A partir del momento en el que eliges esta escuela, a nivel 2, solo necesitas la mitad de tiempo y dinero para copiar un conjuro de adivinación a tu libro de conjuros."
+			]
+		},
+		{
+			"name": "Presagio",
+			"source": "PHB-ES",
+			"page": 116,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Adivinación",
+			"subclassSource": "PHB-ES",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"A partir de nivel 2, cuando eliges esta escuela, empiezas a vislumbrar retazos del futuro en los límites de tu percepción. Después de terminar un descanso largo, tira {@dice 2d20} y apunta los dos resultados obtenidos. Puedes sustituir cualquier tirada de ataque, tirada de salvación o prueba de característica que vayáis a realizar o tu o una criatura que puedas ver por el número de una de las dos tiradas de presagio. Debes indicar que haces esto antes de que se lleve a cabo la tirada y solo puedes sustituir una tirada de esta forma una vez por turno.",
+				"Cada tirada de presagio solo puede emplearse una vez. Perderás todas las tiradas de presagio que no hayas utilizado cuando finalices un descanso largo."
+			]
+		},
+		{
+			"name": "Adivino Avezado",
+			"source": "PHB-ES",
+			"page": 116,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Adivinación",
+			"subclassSource": "PHB-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 6, lanzar conjuros de adivinación te resulta tan fácil que solo requiere una pequeña parte de tus esfuerzos. Cuando lanzas un {@filter conjuro de adivinación de nivel 2 o más|spells|school=D|source=PHB-ES} empleando un espacio de conjuro, recuperas otro espacio de conjuro ya gastado. El espacio recobrado debe ser de nivel inferior al del conjuro lanzado, y en ningún caso superior a 5."
+			]
+		},
+		{
+			"name": "El Tercer Ojo",
+			"source": "PHB-ES",
+			"page": 116,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Adivinación",
+			"subclassSource": "PHB-ES",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 10 puedes usar tu acción para aumentar tus poderes de percepción. Cuando hagas esto, escoge uno de los beneficios que aparecen a continuación, que permanecerá activo hasta que quedes {@condition incapacitado|PHB-ES} o finalices un descanso corto o largo. Para poder volver a utilizar este rasgo tendrás que terminar un descanso, corto o largo.",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Visión en la Oscuridad",
+							"entries": [
+								"Obtienes {@sense darkvision|visión en la oscuridad} con un alcance de 60 pies."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Visión Etérea",
+							"entries": [
+								"Puedes ver en el Plano Etéreo a 60 pies de distancia."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Comprensión Superior",
+							"entries": [
+								"Puedes leer cualquier idioma."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Ver Invisibilidad",
+							"entries": [
+								"Puedes ver las criaturas y objetos {@condition invisible|PHB-ES|invisibles} que estén en tu línea de visión y a 10 pies o muertos de ti."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Presagio Mayor",
+			"source": "PHB-ES",
+			"page": 116,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Adivinación",
+			"subclassSource": "PHB-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 14, las visiones de tus sueños se intensifican, dibujando en tu mente una imagen más clara de lo que está por acontecer. Puedes tirar tres {@dice d20} cuando uses tu rasgo Presagio en lugar de dos."
+			]
+		},
+		{
+			"name": "Escuela de Encantamiento",
+			"source": "PHB-ES",
+			"page": 117,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Encantamiento",
+			"subclassSource": "PHB-ES",
+			"level": 2,
+			"entries": [
+				"Como miembro de la Escuela de Encantamiento, has perfeccionado tu capacidad para embelesar y cautivar a otras personas y monstruos. Algunos encantadores son pacificadores, que embrujan a los violentos para que dejen las armas y hechizan a los crueles para que muestren misericordia. Otros son tiranos que recurran a la magia para atar a los reticentes a su voluntad. Pero la mayoría de los encantadores se encuentran entre ambos extremos.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Experto en Encantamiento|Mago|PHB-ES|Encantamiento|PHB-ES|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Mirada Hipnótica|Mago|PHB-ES|Encantamiento|PHB-ES|2"
+				}
+			]
+		},
+		{
+			"name": "Experto en Encantamiento",
+			"source": "PHB-ES",
+			"page": 117,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Encantamiento",
+			"subclassSource": "PHB-ES",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"A partir del momento en el que eliges esta escuela, a nivel 2, solo necesitas la mitad de tiempo y dinero para copiar un conjuro de encantamiento a tu libro de conjuros."
+			]
+		},
+		{
+			"name": "Mirada Hipnótica",
+			"source": "PHB-ES",
+			"page": 117,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Encantamiento",
+			"subclassSource": "PHB-ES",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"A partir de nivel 2, cuando escoges esta escuela, tus suaves palabras y fascinante mirada te permiten embelesar a otra criatura. Como acción, elige a una criatura que puedas ver a 5 pies o menos de ti. Si el objetivo puede verte u oírte, deberá hacer una tirada de salvación de Sabiduría con la misma CD que las tiradas de salvación de tus conjuros de mago. Si falla, estará {@condition hechizado|PHB-ES} por ti hasta el final de tu siguiente turno. La criatura {@condition hechizado|PHB-ES|hechizada} queda {@condition incapacitado|PHB-ES|incapacitada} y está claramente afectada. Además, su velocidad baja a 0.",
+				"En cada uno de los turnos subsiguientes, podrás utilizar tu acción para mantener este efecto, alargando su duración hasta el final de tu siguiente turno. Sin embargo, el efecto terminará si te mueves a más de 5 pies de distancia de la criatura, si esta dejar de poder verte u oírte o si la criatura recibe daño.",
+				"Una vez finaliza el efecto, o si la criatura tiene éxito en su tirada de salvación inicial contra él, no podrás volver a usar este rasgo contra dicha criatura hasta que termines un descanso largo."
+			]
+		},
+		{
+			"name": "Encantamiento Instintivo",
+			"source": "PHB-ES",
+			"page": 117,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Encantamiento",
+			"subclassSource": "PHB-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 6, cuando una criatura que puedas ver a 30 pies o menos de ti haga una tirada de ataque que te tenga como objetivo, podrás emplear tu reacción para redirigir el ataque. Para hacer esto es necesario que haya otra criatura dentro del alcance del ataque. El atacante deberá realizar una tirada de salvación de Sabiduría con la misma CD que las tiradas de salvación de tus conjuros de mago. Si la falla, debe elegir como objetivo de su ataque a la criatura más cercana a él, sin contaros ni a ti ni al propio atacante. En caso de que hubiera varias criaturas a la misma distancia, el atacante elige a cuál ataca. Si el atacante tiene éxito en su tirada de salvación, no podrás volver a usar este rasgo sobre él hasta que termines un descanso largo.",
+				"Debes decidir utilizar este rasgo antes de saber si el ataque impacta o no. Las criaturas que no puedan ser {@condition hechizado|PHB-ES|hechizadas}hechizadas no se ven afectadas por este efecto."
+			]
+		},
+		{
+			"name": "Duplicar Encantamiento",
+			"source": "PHB-ES",
+			"page": 117,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Encantamiento",
+			"subclassSource": "PHB-ES",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 10, cuando lanzas un conjuro de encantamiento de nivel 1 o más cuyo objetivo sea una única criatura, puedes hacer que también tenga como objetivo a una segunda."
+			]
+		},
+		{
+			"name": "Modificar Recuerdos",
+			"source": "PHB-ES",
+			"page": 117,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Encantamiento",
+			"subclassSource": "PHB-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"A nivel 14 obtienes la capacidad de provocar que una criatura no sea consciente de tu influencia mágica sobre ella. Cuando lanzas un conjuro de encantamiento para hechizar a una o más criaturas, puedes alterar el entendimiento de una de ellas para que no sea consciente de que ha sido {@condition hechizado|PHB-ES|hechizada}.",
+				"Además, una única vez antes de que el conjuro termine, puedes usar tu acción para intentar que la criatura escogida olvide parte del tiempo que ha pasado {@condition hechizado|PHB-ES|hechizada}. La criatura deberá realizar una tirada de salvación de Inteligencia con la misma CD que las tiradas de salvación de tus conjuros de mago. Si falla, perderá los recuerdos correspondientes a 1 + tu modificador por Carisma horas (mínimo 1 hora). Puedes hacer que la criatura olvide menos tiempo, y el periodo olvidado nunca puede exceder la duración del conjuro de encantamiento."
+			]
+		},
+		{
+			"name": "Escuela de Evocación",
+			"source": "PHB-ES",
+			"page": 117,
+			"srd": true,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Evocación",
+			"subclassSource": "PHB-ES",
+			"level": 2,
+			"entries": [
+				"Haces hincapié en el estudio de la magia capaz de crear poderosos efectos elementales, como un frío penetrante, llamas abrasadoras, ácidos corrosivos, truenos reverberantes o violentos relámpagos. Algunos evocadores encuentran empleo en las fuerzas armadas, sirviendo en regimientos de artillería, destrozando a sus enemigos desde la distancia. Otros emplean sus espectaculares poderes para proteger a los débiles, y los hay que incluso buscan su propio beneficio, viviendo como bandidos, aventureros o aspirantes a tirano.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Experto en Evocación|Mago|PHB-ES|Evocación|PHB-ES|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Esculpir Conjuros|Mago|PHB-ES|Evocación|PHB-ES|2"
+				}
+			]
+		},
+		{
+			"name": "Experto en Evocación",
+			"source": "PHB-ES",
+			"page": 117,
+			"srd": true,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Evocación",
+			"subclassSource": "PHB-ES",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"A partir del momento en el que eliges esta escuela, a nivel 2, solo necesitas la mitad de tiempo y dinero para copiar un conjuro de evocación a tu libro de conjuros."
+			]
+		},
+		{
+			"name": "Esculpir Conjuros",
+			"source": "PHB-ES",
+			"page": 117,
+			"srd": true,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Evocación",
+			"subclassSource": "PHB-ES",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"A partir de nivel 2 puedes crear espacios de relativa seguridad en el interior de los efectos generados por tus conjuros de evocación. Cuando lanzas un conjuro de evocación que afecta a otras criaturas que puedes ver, puedes elegir a tantas de estas criaturas como 1 + el nivel del conjuro. Las criaturas elegidas tienen éxito automáticamente en sus tiradas de salvación contra el conjuro, y no reciben daño alguno si normalmente recibirían la mitad de daño del mismo al superar una tirada de salvación."
+			]
+		},
+		{
+			"name": "Truco Potente",
+			"source": "PHB-ES",
+			"page": 117,
+			"srd": true,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Evocación",
+			"subclassSource": "PHB-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 6, tus trucos que causan daño pueden afectar incluso a aquellas criaturas que han evitado la peor parte del efecto. Cuando una criatura supere una tirada de salvación contra uno de tus trucos, aun así, recibirá la mitad del daño del truco (si es que causa alguno), pero no sufrirá ningún otro de sus efectos."
+			]
+		},
+		{
+			"name": "Evocación Potenciada",
+			"source": "PHB-ES",
+			"page": 117,
+			"srd": true,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Evocación",
+			"subclassSource": "PHB-ES",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 10 puedes añadir tu modificador por Inteligencia a una de las tiradas de daño de cualquier conjuro de evocación de mago que lances."
+			]
+		},
+		{
+			"name": "Sobrecanalizar",
+			"source": "PHB-ES",
+			"page": 117,
+			"srd": true,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Evocación",
+			"subclassSource": "PHB-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 14 puedes aumentar el poder de tus conjuros más sencillos. Cuando lanzas un conjuro de mago de niveles entre 1 y 5 que causa daño, este inflige el daño máximo posible.",
+				"La primera vez que hagas esto no sufrirás ningún efecto negativo, pero si usas este rasgo de nuevo sin haber finalizado un descanso largo antes, recibirás, inmediatamente después de lanzar el conjuro, {@damage 2d12} de daño necrótico por cada nivel del mismo. Cada vez que utilices este rasgo otra vez sin haber terminado un descanso largo, el daño necrótico por cada nivel del conjuro aumenta en {@damage 1d12}. Este daño ignora cualquier resistencia e inmunidad."
+			]
+		},
+		{
+			"name": "Escuela de Ilusionismo",
+			"source": "PHB-ES",
+			"page": 118,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Ilusionismo",
+			"subclassSource": "PHB-ES",
+			"level": 2,
+			"entries": [
+				"Concentras tus estudios en la magia capaz de deslumbrar los sentidos, aturdir la mente y engañar incluso a las más sabios. Tu magia es sutil, pero las ilusiones que tu aguda mente concibe hacen que lo imposible parezca real. Algunos ilusionistas, entre los que se encuentran muchos magos gnomos, son embaucadores bondadosos, que usan sus conjuros para entretener. Sin embargo, otros son siniestros amos del engaño, que recurren a sus ilusiones para asustar y confundir a otros en aras de su beneficio personal.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Experto en Ilusionismo|Mago|PHB-ES|Ilusionismo|PHB-ES|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Ilusión Menor Mejorada|Mago|PHB-ES|Ilusionismo|PHB-ES|2"
+				}
+			]
+		},
+		{
+			"name": "Experto en Ilusionismo",
+			"source": "PHB-ES",
+			"page": 118,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Ilusionismo",
+			"subclassSource": "PHB-ES",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"A partir del momento en el que eliges esta escuela, a nivel 2, solo necesitas la mitad de tiempo y dinero para copiar un conjuro de ilusionismo a tu libro de conjuros."
+			]
+		},
+		{
+			"name": "Ilusión Menor Mejorada",
+			"source": "PHB-ES",
+			"page": 118,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Ilusionismo",
+			"subclassSource": "PHB-ES",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"A nivel 2, cuando escoges esta escuela, aprendes el truco {@spell Ilusión menor|PHB-ES|ilusión menor}. Si ya lo conocías, puedes adquirir otro truco de mago a tu elección en su lugar. En cualquiera de los dos casos, este truco no cuenta contra tu límite de trucos conocidos.",
+				"Además, cuando lanzas {@spell Ilusión menor|PHB-ES|ilusión menor} puedes crear tanto un sonido como una imagen en el mismo lanzamiento."
+			]
+		},
+		{
+			"name": "Ilusiones Maleables",
+			"source": "PHB-ES",
+			"page": 118,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Ilusionismo",
+			"subclassSource": "PHB-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 6, cuando lanzas un conjuro de ilusionismo cuya duración sea de al menos 1 minuto, puedes utilizar tu acción para cambiar la naturaleza de la ilusión (dentro de las para metros normales del conjuro), siempre y cuando estés viéndola."
+			]
+		},
+		{
+			"name": "Yo Ilusorio",
+			"source": "PHB-ES",
+			"page": 118,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Ilusionismo",
+			"subclassSource": "PHB-ES",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 10, puedes crear un duplicado ilusorio de ti mismo instantáneamente, casi como una reacción instintiva al peligro. Cuando una criatura haga una tirada de ataque contra ti, puedes utilizar tu reacción para interponer tu doble falso entre el atacante y tú. Como consecuencia, el ataque fallará automáticamente y la ilusión se disipará.",
+				"Una vez empleado este rasgo, deberás terminar un descanso corto o largo para poder volver a usarlo otra vez."
+			]
+		},
+		{
+			"name": "Realidad Ilusoria",
+			"source": "PHB-ES",
+			"page": 118,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Ilusionismo",
+			"subclassSource": "PHB-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"A nivel 14 has logrado aprender el secreto de como tejer magia de sombras en tus ilusiones, dotándolas así de una pseudorealidad. Cuando lanzas un conjuro de ilusión de nivel 1 o superiores, puedes elegir un objeto inanimado y no mágico que forme parte de la ilusión para hacerlo real. Puedes realizar esto mientras el conjuro esté activo, como una acción adicional durante tu turno. El objeto conserva su realidad durante 1 minuto. Podrías, por ejemplo, crear la ilusión de un puente que cruza un abismo y darle consistencia el tiempo suficiente como para que tus aliados puedan cruzarlo.",
+				"El objeto no puede causar daño o dañar de forma directa a nadie."
+			]
+		},
+		{
+			"name": "Escuela de Nigromancia",
+			"source": "PHB-ES",
+			"page": 118,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Nigromancia",
+			"subclassSource": "PHB-ES",
+			"level": 2,
+			"entries": [
+				"La Escuela de Nigromancia explora las fuerzas cósmicas de la vida, la muerte y la muerte en vida. Al focalizar tus estudios en esta tradición aprendes a manipular la energía que anima a todos los seres vivos. Cuando progreses en ellos, serás capaz de succionar la fuerza vital de una criatura mientras tu magia destruye su cuerpo. transformando esa esencia fundamental en poder mágico que podrás manipular.",
+				"Debido a su estrecha relación con la muerte, la mayoría de la gente percibe a los nigromantes como seres amenazadores o directamente malignos. Pero, aunque las fuerzas que controlan son considerarlas tabúes en muchas culturas. no todos los nigromantes son malvados.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Experto en Nigromancia|Mago|PHB-ES|Nigromancia|PHB-ES|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Cosecha Siniestra|Mago|PHB-ES|Nigromancia|PHB-ES|2"
+				}
+			]
+		},
+		{
+			"name": "Cosecha Siniestra",
+			"source": "PHB-ES",
+			"page": 118,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Nigromancia",
+			"subclassSource": "PHB-ES",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"A nivel 2 obtienes la capacidad de segar la energía vital de las criaturas que mates con tus conjuros. Una vez por turno, cuando mates a al menos una criatura mediante un conjuro de nivel 1 o superiores, recuperarás tantos puntos de golpe como dos veces el nivel del conjuro, o tres veces si este pertenece a la {@filter escuela de nigromancia|spells|school=N|source=PHB-ES}. No obtendrás este beneficio al matar autómatas o muertos vivientes."
+			]
+		},
+		{
+			"name": "Experto en Nigromancia",
+			"source": "PHB-ES",
+			"page": 118,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Nigromancia",
+			"subclassSource": "PHB-ES",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"A partir del momento en el que eliges esta escuela, a nivel 2, solo necesitas la mitad de tiempo y dinero para copiar un conjuro de nigromancia a tu libro de conjuros."
+			]
+		},
+		{
+			"name": "Siervos Muertos Vivientes",
+			"source": "PHB-ES",
+			"page": 118,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Nigromancia",
+			"subclassSource": "PHB-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A nivel 6 añades el conjuro {@spell Animar a los muertos|PHB-ES|animar a los muertos} a tu libro de conjuros, si es que no figuraba ya en él. Cuando lanzas {@spell Animar a los muertos|PHB-ES|animar a los muertos}, puebles elegir como objetivo a un cadáver o pila de huesos adicional, formando así a otro zombi o esqueleto, lo que corresponda.",
+				"Además, siempre que crees un muerto viviente mediante un conjuro de nigromancia, este disfrutará de los siguientes beneficios:",
+				{
+					"type": "list",
+					"items": [
+						"Los puntos de golpe máximos de la criatura aumentan en una cantidad igual a tu nivel de mago.",
+						"La criatura sumará tu bonificador por competencia a las tiradas de daño con armas."
+					]
+				}
+			]
+		},
+		{
+			"name": "Habituado a la Muerte en Vida",
+			"source": "PHB-ES",
+			"page": 118,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Nigromancia",
+			"subclassSource": "PHB-ES",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 10, posees resistencia al daño necrótico y tus puntos de golpe máximos no pueden ser reducidos. Has pasado tanto tiempo tratando con los muertos vivientes y a las fuerzas que las animan, que te has acostumbrado a sus peores efectos."
+			]
+		},
+		{
+			"name": "Controlar Muertos Vivientes",
+			"source": "PHB-ES",
+			"page": 118,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Nigromancia",
+			"subclassSource": "PHB-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 14, puedes utilizar tu magia para someter a los muertos vivientes, incluso aquellos creados por otros magos, a tu control. Como acción, puedes elegir un muerto viviente que puedas ver a 60 pies o menos de ti. La criatura deberá hacer una tirada de salvación de Carisma con la misma CD que las tiradas de salvación de tus conjuros de mago. Si tiene éxito, no podrás volver a usar este rasgo sobre ella. Si falla, se volverá amistosa hacia ti y obedecerá tus órdenes hasta que vuelvas a utilizar este rasgo.",
+				"Es más difícil controlar muertos vivientes inteligentes mediante este poder; si el objetivo tiene Inteligencia 8 o más, disfrutará de ventaja en la tirada de salvación. Además, si posee Inteligencia 12 o más y falla la tirada de salvación, podrá repetirla al final de cada hora hasta tener éxito y así liberarse."
+			]
+		},
+		{
+			"name": "Escuela de Transmutación",
+			"source": "PHB-ES",
+			"page": 119,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Transmutación",
+			"subclassSource": "PHB-ES",
+			"level": 2,
+			"entries": [
+				"Eres un estudioso de los conjuros que modifican la energía y la materia. Para ti el mundo no es estático, sino eminentemente mutable, y disfrutas comportándote como un agente del cambio. Posees la capacidad de empujar la materia pura de la creación y has aprendido cómo alterar tanto la forma física como las cualidades mentales. Tu magia te proporciona las herramientas necesarias para convertirte en el herrero de la forja de la realidad.",
+				"Algunos transmutadores son inventores y bromistas que convierten a la gente en rana y transforman el cobre en plata, ya sea para divertirse o para obtener algún beneficio ocasional. Otros se afanan en su estudio de la magia con una seriedad absoluta, pues buscan el poder de los dioses para crear y destruir mundos.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Experto en Transmutación|Mago|PHB-ES|Transmutación|PHB-ES|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Alquimia Menor|Mago|PHB-ES|Transmutación|PHB-ES|2"
+				}
+			]
+		},
+		{
+			"name": "Alquimia Menor",
+			"source": "PHB-ES",
+			"page": 119,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Transmutación",
+			"subclassSource": "PHB-ES",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"A partir de nivel 2, cuando escoges esta escuela, eres capaz de alterar temporalmente las propiedades físicas de un objeto no mágico, cambiando la sustancia de la que está hecho por otra. Puedes llevar a cabo un procedimiento alquímico especial sobre un objeto hecho por completo de madera, piedra (pero no piedras preciosas), hierro, cobre o plata, transformándolo enteramente en otro cualquiera de los materiales nombrados. Por cada 10 minutos que inviertas en este proceso podrás transformar 1 pie cúbico de material. Después de 1 hora, o cuando pierdas la concentración (como si te estuvieras concentrando en un conjuro), el objeto volverá a estar hecho de la sustancia original."
+			]
+		},
+		{
+			"name": "Experto en Transmutación",
+			"source": "PHB-ES",
+			"page": 119,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Transmutación",
+			"subclassSource": "PHB-ES",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"A partir del momento en el que eliges esta escuela, a nivel 2, solo necesitas la mitad de tiempo y dinero para copiar un conjuro de transmutación a tu libro de conjuros."
+			]
+		},
+		{
+			"name": "Piedra de Transmutador",
+			"source": "PHB-ES",
+			"page": 119,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Transmutación",
+			"subclassSource": "PHB-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 6 puedes invertir 8 horas en crear una piedra de transmutador que almacena magia de esta escuela. Puedes beneficiarte tú mismo de los poderes de la piedra o dársela a otra criatura. Mientras mantenga la piedra en su posesión, el portador disfrutará de un beneficio a tu elección, que escogerás de entre las siguientes opciones cuando crees la piedra:",
+				{
+					"type": "list",
+					"items": [
+						"Visión en la oscuridad hasta un alcance de 60 pies, tal y como se describe en el capítulo 8: \"Aventuras\".",
+						"Un incremento de 10 pies en la velocidad de la criatura, siempre y cuando esta no esté cargada.",
+						"Competencia en las tiradas de salvación de Constitución.",
+						"Resistencia a daño de ácido, frío, fuego, relámpago o trueno (tú eliges cuál cuando escoges este beneficio)."
+					]
+				},
+				"Cada vez que lances un conjuro de transmutación de nivel 1 o superiores podrás cambiar el efecto de tu piedra, siempre y cuando la lleves contigo.",
+				"Si creas una piedra de transmutador nueva, la anterior dejará de existir."
+			]
+		},
+		{
+			"name": "Cambiar de Forma",
+			"source": "PHB-ES",
+			"page": 119,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Transmutación",
+			"subclassSource": "PHB-ES",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"A nivel 10 añades el conjuro {@spell Polimorfar|PHB-ES|polimorfar} a tu libro de conjuros, si es que no figuraba ya en él. Además, puedes lanzar {@spell Polimorfar|PHB-ES|polimorfar} sin gastar un espacio de conjuros, pero solo cuando el objetivo seas tú mismo y te transformes en una {@filter bestia cuyo valor de desafío sea de como mucho 1|bestiary|challenge rating=[&0;&1]|tag=bestia|miscellaneous=!swarm}.",
+				"Una vez hayas lanzado {@spell Polimorfar|PHB-ES|polimorfar} de esta forma, no podrás volver a realizarlo de nuevo hasta que finalices un descanso corto o largo. Con todo, seguirás pudiendo lanzarlo de forma normal, utilizando un espacio de conjuro."
+			]
+		},
+		{
+			"name": "Maestro Transmutador",
+			"source": "PHB-ES",
+			"page": 119,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Transmutación",
+			"subclassSource": "PHB-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 14, puedes emplear tu acción para consumir todas las reservas de magia de transmutación almacenadas en tu piedra de transmutador de una sola vez. Cuando hagas esto, elige uno de los efectos que aparecen a continuación. Tu piedra de transmutador será destruida y no podrás volver a fabricar una hasta que termines un descanso largo.",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Transformación Mayor",
+							"entries": [
+								"Puedes transmutar un objeto no mágico cuyo tamaño sea de, como mucho, un cubo de 5 pies, en otro objeto no mágico de tamaño similar y una masa igual o inferior a la del original. Debes pasar 10 minutos manipulando el objeto para poder transformarlo."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Panacea",
+							"entries": [
+								"Eliminas todas las maldiciones, enfermedades y venenos que estén afectando a una criatura que toques con la piedra de transmutador. Además, esta criatura también recupera todos sus puntos de golpe."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Devolver la Vida",
+							"entries": [
+								"Puedes lanzar el conjuro {@spell Alzar a los muertos|PHB-ES|alzar a los muertos} sobre una criatura que toques con la piedra de transmutador. No es necesario que gastes un espacio de conjuro ni que alzar a los muertos figure en tu libro de conjuros."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Devolver la Juventud",
+							"entries": [
+								"Tras tocar con la piedra de transmutador a una criatura voluntaria, su edad aparente se reduce en {@dice 3d10} años, hasta un mínimo de 13. Sin embargo, este efecto no prolonga la esperanza de vida de la criatura."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Magia de Guerra",
+			"source": "XGE-ES",
+			"page": 59,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Guerra",
+			"subclassSource": "XGE-ES",
+			"level": 2,
+			"entries": [
+				"Muchos colegios arcanos se especializan en entrenar magos para la batalla. La tradición Magia de Guerra mezcla principios de evocación y abjuración, en vez de especializarse en una de esas escuelas. Enseña técnicas que hacen más potentes los conjuros, a la vez que proporciona defensas mejoradas a sus practicantes.",
+				"Los seguidores de esta tradición son conocidos como magos de guerra. Consideran que su magia es arma y armadura, un recurso superior a cualquier pedazo de metal. Estos magos actúan rápidamente en los combates, utilizando sus conjuros para arrebatar el control de la situación. Estos golpean fuerte y sus habilidades defensivas frustran los intentos de contraataque de sus oponentes. Los magos de guerra también son muy hábiles volviendo los conjuros de otros lanzadores contra ellos mismos.",
+				"En grandes batallas, los magos de guerra suelen trabajar con evocadores, abjuradores y otros tipos de mago. Los evocadores, en particular, suelen bromear con ellos por dividir su atención entre ataque y defensa. La respuesta típica del mago de guerra suele ser: ¿De qué sirve poder arrojar una poderosísima bola de fuego si muero antes de lanzarla?",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Deflección Arcana|Mago|PHB-ES|Guerra|XGE-ES|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Ingenio Táctico|Mago|PHB-ES|Guerra|XGE-ES|2"
+				}
+			]
+		},
+		{
+			"name": "Deflección Arcana",
+			"source": "XGE-ES",
+			"page": 59,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Guerra",
+			"subclassSource": "XGE-ES",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"A nivel 2, aprendes a usar tu magia para protegerte del daño. Cuando un ataque te impacta o fallas una tirada de salvación, puedes usar tu reacción para obtener un bonificador de +2 a tu CA contra ese ataque o un bonificador de +4 a esa tirada de salvación.",
+				"Cuando usas este rasgo, no podrás utilizar ningún conjuro excepto trucos hasta el final de tu siguiente turno."
+			]
+		},
+		{
+			"name": "Ingenio Táctico",
+			"source": "XGE-ES",
+			"page": 59,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Guerra",
+			"subclassSource": "XGE-ES",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"A partir de nivel 2, tu capacidad para analizar la situación tácticamente te permite actuar antes en el combate. Puedes ganar un bonificador a las tiradas de iniciativa igual a tu modificador de Inteligencia."
+			]
+		},
+		{
+			"name": "Sobrecarga de Poder",
+			"source": "XGE-ES",
+			"page": 59,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Guerra",
+			"subclassSource": "XGE-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 6, puedes guardar energía mágica dentro de ti para aumentar tus conjuros dañinos más adelante. Cuando está almacenada, esta energía se llama carga de poder.",
+				"Puedes guardar un número máximo de cargas igual a tu modificador de Inteligencia (mínimo de 1). Cuando acabas un descanso largo, tu número de cargas se reinicia a uno. Si consigues finalizar un conjuro mediante {@spell disipar magia|PHB-ES} o {@spell contrahechizo|PHB-ES}, obtienes una carga de poder, al robar la magia del conjuro que desbarataste. Si finalizas un descanso corto sin cargas de poder, ganas una.",
+				"Una vez por turno, cuando inflijas daño a una criatura u objeto con un conjuro de mago, puedes utilizar una carga de poder para añadir tanto daño de fuerza adicional a ese objetivo como la mitad de tu nivel de mago."
+			]
+		},
+		{
+			"name": "Magia Resistente",
+			"source": "XGE-ES",
+			"page": 59,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Guerra",
+			"subclassSource": "XGE-ES",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 10, la magia que canalizas te ayuda a protegerte del peligro. Mientras mantengas la concentración en un conjuro, recibes un bonificador de +2 a la CA y a las tiradas de salvación."
+			]
+		},
+		{
+			"name": "Manto Deflector",
+			"source": "XGE-ES",
+			"page": 59,
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Guerra",
+			"subclassSource": "XGE-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"A nivel 14, tu Deflección Arcana queda infundida con magia letal. Cuando utilizas tu rasgo Deflección Arcana, puedes hacer que la magia viaje trazando arcos desde ti. Hasta tres criaturas de tu elección que puedas ver y se encuentren a 60 pies o menos de ti reciben tanto daño de fuerza como la mitad de tu nivel de mago."
+			]
+		},
+		{
+			"name": "Canto de la Hoja",
+			"source": "TCE-ES",
+			"page": 76,
+			"otherSources": [
+				{
+					"source": "SCAG-ES",
+					"page": 141
+				}
+			],
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Canto de la Hoja",
+			"subclassSource": "TCE-ES",
+			"level": 2,
+			"entries": [
+				"Los hojacantantes son elfos que defienden con a su pueblo y sus tierras. Se trata de magos que dominan una escuela de esgrima basada en una tradición de magia arcana. Durante el combate, un hojacantante usa una serie de maniobras intrincadas y elegantes para eludir el daño y canalizar su magia en ataques arrasadores y en una defensa ingeniosa.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Entrenarse en la Guerra y la Canción|Mago|PHB-ES|Canto de la Hoja|TCE-ES|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Canción de la Hoja|Mago|PHB-ES|Canto de la Hoja|TCE-ES|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Estilos de hojacantantes|Mago|PHB-ES|Canto de la Hoja|TCE-ES|2"
+				}
+			]
+		},
+		{
+			"name": "Estilos de hojacantantes",
+			"source": "TCE-ES",
+			"page": 76,
+			"otherSources": [
+				{
+					"source": "SCAG-ES",
+					"page": 141
+				}
+			],
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Canto de la Hoja",
+			"subclassSource": "TCE-ES",
+			"level": 2,
+			"header": 1,
+			"type": "inset",
+			"entries": [
+				"Desde su concepción como arte mágica y marcial, el canto de la hoja ha estado ligado a la espada, en concreto a la espada larga. Sin embargo, muchas generaciones de estudio han llevado a varios estilos del Canto de la Hoja, según las armas cuerpo a cuerpo utilizadas. Los maestros transmiten las técnicas de estos estilos a sus estudiantes en pequeñas escuelas, algunas de las cuales cuentan con edificios dedicados a la formación. Incluso los estilos más recientes tienen cientos de años de antigüedad, pero los siguen enseñando sus creadores originales, debido a las largas vidas de los elfos. La mayoría de escuelas del Canto de la Hoja están en Evermeet o Evereska. Se fundó una en Myth Drannor, aunque la destrucción de la ciudad desperdigó a los estudiantes supervivientes.",
+				"En líneas generales, los estilos del Canto de la Hoja se clasifican según el tipo de arma que se emplea. Cada tipo está asocia do a una categoría animal. Dentro de cada estilo hay especializaciones que reciben su nombre de animales concretos según la clase de conjuros que se usan, las técnicas del maestro y el arma que se emplea. Los hojacantantes aprendices de un maestro suelen hacerse un tatuaje del animal del estilo que han escogido. Algunos hojacantantes aprenden múltiples estilos y llevan muchos tatuajes, advirtiendo así con su piel sobre sus habilidades mortales.",
+				{
+					"type": "entries",
+					"name": "Felino",
+					"entries": [
+						"Los estilos que emplean una espada pertenecen a esta familia. El estilo del león, el más antiguo, entrena a quienes lo practican en el uso de la espada larga y no tiene preferencia por ningún tipo concreto de conjuros. El del leopardo se centra en la espada corta y en los conjuros de ilusionismo y sigilo. El tigre rojo, un estilo de apenas tres siglos de antigüedad, hace que los hojacantantes utilicen una cimitarra en un baile defensivo en el que se da vueltas, a partir del cual se lanzan en saltos y ataques repentinos."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Pájaro",
+					"entries": [
+						"Los estilos que se centran en el uso de un arma con mango, como un hacha o un martillo, se han agrupado bajo el nombre de estilos del pájaro, aunque varían extremadamente. Todos son estilos relativamente nuevos en los que se emplean armas que no suelen ser las que prefieren los elfos. Los hojacantantes del estilo del águila utilizan hachas de mano pequeñas. Muchas de las maniobras de este estilo se centran en encontrar modos de lanzar el arma con fluidez y sacar otra. El estilo del cuervo usa un pico y los conjuros asociados a este estilo otorgan más agilidad durante el combate al hojacantante."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Serpiente",
+					"entries": [
+						"Los practicantes de estos estilos emplean un flagelo, una cadena o un látigo. El estilo de la víbora usa un látigo, pese a ser un arma poco elegante, y tiene casi la misma antigüedad que el estilo del león. Sus maestros entonan su canción de la hoja con latigazos dados a un ritmo sorprendentemente rápido, lo que mantiene a raya a los oponentes y dota al hojacantante del espacio necesario para lanzar los crueles conjuros de veneno y enfermedad preferidos de este estilo."
+					]
+				}
+			]
+		},
+		{
+			"name": "Canción de la Hoja",
+			"source": "TCE-ES",
+			"page": 76,
+			"otherSources": [
+				{
+					"source": "SCAG-ES",
+					"page": 141
+				}
+			],
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Canto de la Hoja",
+			"subclassSource": "TCE-ES",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"A partir del nivel 2 puedes invocar una magia élfica secreta llamada Canción de la Hoja, siempre que no lleves armadura media o pesada o uses escudo. Te concede una velocidad, agilidad y concentración sobrenaturales.",
+				"Puedes usar una acción adicional para iniciar la Canción de la Hoja, que dura 1 minuto. Termina antes de tiempo si te {@condition incapacitado|PHB-ES|incapacitan}, si te pones armadura media o pesada o portas escudo, o bien si empleas las dos manos para atacar con un arma. También puedes dar por terminada la Canción de la Hoja en cualquier momento, sin gastar una acción para ello.",
+				"Mientras está activa tu Canción de la Hoja, consigues estos beneficios:",
+				{
+					"type": "list",
+					"items": [
+						"Ganas un bonificador a tu CA equivalente a tu modificador de Inteligencia (mínimo de +1).",
+						"Tu velocidad caminando aumenta en 10 pies.",
+						"Tienes ventaja en las pruebas de Destreza ({@skill Acrobatics|Acrobacias}).",
+						"Consigues un bonificador para cualquier tirada de salvación de Constitución que realices para seguir concentrado en un conjuro, Este bonificador es equivalente a tu modificador de Inteligencia (mínimo de +1)."
+					]
+				},
+				"Puedes usar este rasgo dos veces. Recuperas todos los usos tras finalizar un descanso corto o largo."
+			]
+		},
+		{
+			"name": "Entrenarse en la Guerra y la Canción",
+			"source": "TCE-ES",
+			"page": 76,
+			"otherSources": [
+				{
+					"source": "SCAG-ES",
+					"page": 141
+				}
+			],
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Canto de la Hoja",
+			"subclassSource": "TCE-ES",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"A partir del momento en el que eliges esta tradición, a nivel 2, obtienes competencia con armaduras ligeras, así como con un tipo de arma cuerpo a cuerpo de una mano a tu elección.",
+				"También adquieres competencia en la habilidad {@skill Performance|Interpretación}, si no la tenías ya."
+			]
+		},
+		{
+			"name": "Ataque Adicional",
+			"source": "TCE-ES",
+			"page": 76,
+			"otherSources": [
+				{
+					"source": "SCAG-ES",
+					"page": 141
+				}
+			],
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Canto de la Hoja",
+			"subclassSource": "TCE-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 6, cuando lleves a cabo la acción de {@action Atacar|PHB-ES} durante tu turno, podrás realizar dos ataques en lugar de uno."
+			]
+		},
+		{
+			"name": "Canción de Defensa",
+			"source": "TCE-ES",
+			"page": 76,
+			"otherSources": [
+				{
+					"source": "SCAG-ES",
+					"page": 141
+				}
+			],
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Canto de la Hoja",
+			"subclassSource": "TCE-ES",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"A partir del nivel 10, puedes dirigir tu magia para absorber daño cuando tu Canción de la Hoja esté activa. Tras recibir daño, puedes usar tu reacción para emplear un espacio de conjuro y reducir ese daño en una cantidad equivalente al nivel del espacio de conjuro multiplicado por cinco."
+			]
+		},
+		{
+			"name": "Canción de la Victoria",
+			"source": "TCE-ES",
+			"page": 76,
+			"otherSources": [
+				{
+					"source": "SCAG-ES",
+					"page": 141
+				}
+			],
+			"className": "Mago",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Canto de la Hoja",
+			"subclassSource": "TCE-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"A partir del nivel 14, sumas tu modificador de Inteligencia (mínimo de +1) al daño que hacen tus ataques cuerpo a cuerpo con armas mientras tu Canción de la Hoja esté activa."
+			]
+		}
+	]
+}
