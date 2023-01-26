@@ -277,7 +277,8 @@
 			"MM_Esp": "Metamagia",
 			"EI_Esp": "Invocaciones Sobrenaturales",
 			"PB_Esp": "Beneficio del Pacto",
-			"AS_Esp": "Disparo Arcano"
+			"AS_Esp": "Disparo Arcano",
+			"AI_Esp": "Infusión de Artífice"
 		},
 		"dateAdded": 1582989372,
 		"dateLastModified": 1629284141
@@ -21767,6 +21768,89 @@
 			]
 		}
 	],
+	"magicvariant": [
+		{
+			"name": "Barda",
+			"type": "GV",
+			"requires": [
+				{
+					"armor": true
+				}
+			],
+			"inherits": {
+				"namePrefix": "Barda ",
+				"nameRemove": "Armadura ",
+				"source": "PHB-ES",
+				"page": 157,
+				"srd": true,
+				"basicRules": true,
+				"type": "TAH",
+				"rarity": "none",
+				"weightMult": 2,
+				"weightExpression": "[[baseItem.weight]] * 2",
+				"valueMult": 4,
+				"valueExpression": "[[baseItem.value]] * 4",
+				"barding": true,
+				"entries": [
+					"La barda es una armadura diseñada para proteger la cabeza, cuello, pecho y cuerpo de un animal. Cualquier tipo de armadura de la tabla \"armaduras\" puede comprarse en forma de barda. Su precio será cuatro veces el de la armadura para humanoides equivalente y su peso dos veces el de esta."
+				]
+			}
+		},
+		{
+			"name": "Munición de plata",
+			"type": "GV",
+			"requires": [
+				{
+					"type": "A"
+				},
+				{
+					"type": "AF"
+				}
+			],
+			"excludes": {
+				"name": [
+					"Energy Cell",
+					"Célula de energía"
+				]
+			},
+			"ammo": true,
+			"entries": [
+				"Algunos monstruos que poseen inmunidad o resistencia a las armas no mágicas son vulnerables a las de plata, por lo que los aventureros precavidos invertirán en bañar su munición en este metal. Bañar en plata diez unidades de munición cuesta 100 po. Este coste no representa solo el precio del metal, sino también el tiempo y habilidad necesarios para cubrir el arma de plata sin que esta pierda efectividad."
+			],
+			"inherits": {
+				"nameSuffix": " de plata",
+				"source": "PHB-ES",
+				"page": 148,
+				"basicRules": true,
+				"tier": "minor",
+				"rarity": "unknown"
+			}
+		},
+		{
+			"name": "Arma de plata",
+			"type": "GV",
+			"requires": [
+				{
+					"weapon": true
+				}
+			],
+			"excludes": {
+				"net": true
+			},
+			"entries": [
+				"Algunos monstruos que poseen inmunidad o resistencia a las armas no mágicas son vulnerables a las de plata, por lo que los aventureros precavidos invertirán en bañar sus armas en este metal. Bañar en plata un arma cuesta 100 po. Este coste no representa solo el precio del metal, sino también el tiempo y habilidad necesarios para cubrir el arma de plata sin que esta pierda efectividad."
+			],
+			"inherits": {
+				"nameSuffix": " de plata",
+				"source": "PHB-ES",
+				"page": 148,
+				"basicRules": true,
+				"tier": "major",
+				"rarity": "unknown",
+				"valueExpression": "[[baseItem.value]] + 10000"
+			}
+		}
+	],
 	"spell": [
 		{
 			"name": "Abrir",
@@ -22799,7 +22883,8 @@
 			],
 			"miscTags": [
 				"PRM",
-				"SMN"
+				"SMN",
+				"UBA"
 			],
 			"classes": {
 				"fromClassList": [
@@ -22963,7 +23048,8 @@
 				"slashing"
 			],
 			"miscTags": [
-				"SMN"
+				"SMN",
+				"UBA"
 			],
 			"areaTags": [
 				"MT"
@@ -23350,6 +23436,9 @@
 			],
 			"spellAttack": [
 				"M"
+			],
+			"miscTags": [
+				"UBA"
 			],
 			"areaTags": [
 				"ST"
@@ -24282,7 +24371,8 @@
 				"Radias una energía sanadora en forma de aura de 30 pies de radio. El aura se mueve contigo, centrada en ti, hasta el final del conjuro. Puedes usar una acción adicional para hacer que una criatura en el aura (incluido tú) recupere {@dice 2d6} puntos de golpe."
 			],
 			"miscTags": [
-				"HL"
+				"HL",
+				"UBA"
 			],
 			"areaTags": [
 				"S"
@@ -25400,7 +25490,8 @@
 				"constitution"
 			],
 			"miscTags": [
-				"SGT"
+				"SGT",
+				"UBA"
 			],
 			"areaTags": [
 				"ST"
@@ -25966,6 +26057,9 @@
 			"entries": [
 				"Transmutas tu aljaba para que produzca una reserva infinita de munición no mágica, que parece saltar a tu mano cuando vas a cogerla.",
 				"En cada uno de tus turnos hasta el final del conjuro puedes utilizar una acción adicional para realizar dos ataques con un arma que use munición de la aljaba. Cada vez que llevas a cabo uno de estos ataques a distancia, la aljaba repone mágicamente la unidad de munición empleada con otra unidad de munición no mágica similar. Cualquier unidad de munición creada por este conjuro se desvanece cuando este acaba. Si la aljaba deja de estar en tu posesión, el conjuro termina."
+			],
+			"miscTags": [
+				"UBA"
 			],
 			"classes": {
 				"fromClassList": [
@@ -27283,7 +27377,8 @@
 				"wisdom"
 			],
 			"miscTags": [
-				"SGT"
+				"SGT",
+				"UBA"
 			],
 			"areaTags": [
 				"MT"
@@ -30029,7 +30124,8 @@
 			],
 			"miscTags": [
 				"PRM",
-				"SMN"
+				"SMN",
+				"UBA"
 			],
 			"classes": {
 				"fromClassList": [
@@ -33579,7 +33675,8 @@
 				"invisible"
 			],
 			"miscTags": [
-				"SGT"
+				"SGT",
+				"UBA"
 			],
 			"classes": {
 				"fromClassList": [
@@ -33822,7 +33919,8 @@
 			],
 			"miscTags": [
 				"FMV",
-				"SGT"
+				"SGT",
+				"UBA"
 			],
 			"areaTags": [
 				"ST"
@@ -34640,7 +34738,8 @@
 				"dexterity"
 			],
 			"miscTags": [
-				"LGT"
+				"LGT",
+				"UBA"
 			],
 			"areaTags": [
 				"S"
@@ -34855,7 +34954,8 @@
 				"M"
 			],
 			"miscTags": [
-				"SGT"
+				"SGT",
+				"UBA"
 			],
 			"areaTags": [
 				"ST"
@@ -38101,7 +38201,8 @@
 				"M"
 			],
 			"miscTags": [
-				"LGT"
+				"LGT",
+				"UBA"
 			],
 			"areaTags": [
 				"ST"
@@ -40901,7 +41002,8 @@
 				"Como acción adicional puedes mover las luces hasta 60 pies a una nueva localización dentro del alcance. Cada luz debe estar a 20 pies o menos de otra luz creada por este conjuro y se desvanecerá si sale del alcance del mismo."
 			],
 			"miscTags": [
-				"LGT"
+				"LGT",
+				"UBA"
 			],
 			"classes": {
 				"fromClassList": [
@@ -41313,7 +41415,8 @@
 				"necrotic"
 			],
 			"miscTags": [
-				"SGT"
+				"SGT",
+				"UBA"
 			],
 			"areaTags": [
 				"ST"
@@ -41428,7 +41531,8 @@
 			],
 			"miscTags": [
 				"FMV",
-				"SGT"
+				"SGT",
+				"UBA"
 			],
 			"classes": {
 				"fromClassList": [
@@ -41841,7 +41945,8 @@
 				"wisdom"
 			],
 			"miscTags": [
-				"SGT"
+				"SGT",
+				"UBA"
 			],
 			"areaTags": [
 				"ST"
@@ -47407,7 +47512,8 @@
 				"intelligence"
 			],
 			"miscTags": [
-				"SGT"
+				"SGT",
+				"UBA"
 			],
 			"classes": {
 				"fromClassList": [
@@ -47560,7 +47666,8 @@
 			],
 			"miscTags": [
 				"SGT",
-				"TP"
+				"TP",
+				"UBA"
 			],
 			"classes": {
 				"fromClassList": [
@@ -47804,7 +47911,8 @@
 				"strength"
 			],
 			"miscTags": [
-				"FMV"
+				"FMV",
+				"UBA"
 			],
 			"areaTags": [
 				"L"
@@ -47933,7 +48041,8 @@
 				"wisdom"
 			],
 			"miscTags": [
-				"MAC"
+				"MAC",
+				"UBA"
 			],
 			"areaTags": [
 				"MT",
@@ -49953,6 +50062,9 @@
 			"entries": [
 				"Este conjuro te permite moverte a una velocidad increíble. Puedes realizar la acción de {@action Correr|PHB-ES|Correr} cuando lanzas este conjuro y posteriormente como acción adicional en cada uno de tus turnos hasta el final del conjuro."
 			],
+			"miscTags": [
+				"UBA"
+			],
 			"classes": {
 				"fromClassList": [
 					{
@@ -51702,6 +51814,9 @@
 				"Este conjuro crea una fuerza Media, {@condition Invisible|PHB-ES|invisible}, sin mente y sin forma, que realiza tareas simples bajo tus órdenes hasta el final de la duración del conjuro. El sirviente surge de la nada en un espacio desocupado del suelo dentro del alcance. Tiene CA 10, 1 punto de golpe, su Fuerza es 2 y no puede atacar. Si sus puntos de golpe se reducen a 0, el conjuro termina.",
 				"Una vez por turno, como acción adicional, puedes dar una orden mental al sirviente para que se mueva 15 pies e interactúe con un objeto. El sirviente es capaz de realizar tareas simples, que un siervo humano podría hacer, como traer y llevar cosas, limpiar, remendar, doblar la ropa, encender el fuego, servir comida o escanciar vino. Una vez que le das una orden, el sirviente lleva a cabo la tarea lo mejor posible hasta terminarla, momento en el cual queda a la espera de tu siguiente orden.",
 				"Si ordenas al sirviente realizar una tarea que lo alejaría más de 60 pies de ti, el conjuro termina."
+			],
+			"miscTags": [
+				"UBA"
 			],
 			"classes": {
 				"fromClassList": [
@@ -54879,6 +54994,280 @@
 					"source": "ERLW-ES",
 					"baseName": "Humano",
 					"baseSource": "PHB-ES"
+				}
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Replicar objeto mágico",
+			"source": "TCE-ES",
+			"page": 21,
+			"featureType": [
+				"AI_Esp"
+			],
+			"entries": [
+				"Con esta infusión, replicas un objeto mágico concreto. Puede aprender esta infusión varias veces. Cada vez que lo hagas, elige un objeto mágico que puedas hacer con ella de los que hay disponibles en las tablas \"Objetos replicables\". El título de la tabla te indica el nivel que debes tener en la clase para elegir un objeto de ella. De forma alternativa, puedes elegir un objeto mágico de entre los {@filter objetos mágicos comunes|items|type=!potion;!scroll|rarity=common} del juego, excepto pociones y pergaminos.",
+				"En cada tabla, podrás ver si el objeto necesita sintonización o no. Puedes consultar la descripción del objeto en la {@book Dungeon Master's Guide|DMG-ES} para obtener más información sobre él, incluido el tipo de objeto necesario para su fabricación.",
+				{
+					"type": "table",
+					"caption": "Objetos replicarles (artífice de nivel 2)",
+					"colLabels": [
+						"Objeto mágico",
+						"Sintonización"
+					],
+					"colStyles": [
+						"col-10",
+						"col-2 text-center"
+					],
+					"rows": [
+						[
+							"{@item Alchemy jug}",
+							"No"
+						],
+						[
+							"{@item Bag of holding}",
+							"No"
+						],
+						[
+							"{@item Cap of water breathing}",
+							"No"
+						],
+						[
+							"{@item Goggles of night}",
+							"No"
+						],
+						[
+							"{@item Rope of climbing}",
+							"No"
+						],
+						[
+							"{@item Sending stones}",
+							"No"
+						],
+						[
+							"{@item Wand of magic detection}",
+							"No"
+						],
+						[
+							"{@item Wand of secrets}",
+							"No"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Objetos replicarles (artífice de nivel 6)",
+					"colLabels": [
+						"Objeto mágico",
+						"Sintonización"
+					],
+					"colStyles": [
+						"col-10",
+						"col-2 text-center"
+					],
+					"rows": [
+						[
+							"{@item Boots of elvenkind}",
+							"No"
+						],
+						[
+							"{@item Cloak of elvenkind}",
+							"Sí"
+						],
+						[
+							"{@item Cloak of the manta ray}",
+							"No"
+						],
+						[
+							"{@item Eyes of charming}",
+							"Sí"
+						],
+						[
+							"{@item Gloves of thievery}",
+							"No"
+						],
+						[
+							"{@item Lantern of revealing}",
+							"No"
+						],
+						[
+							"{@item Pipes of haunting}",
+							"No"
+						],
+						[
+							"{@item Ring of water walking}",
+							"No"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Objetos replicarles (artífice de nivel 10)",
+					"colLabels": [
+						"Objeto mágico",
+						"Sintonización"
+					],
+					"colStyles": [
+						"col-11",
+						"col-2 text-center"
+					],
+					"rows": [
+						[
+							"{@item Boots of striding and springing}",
+							"Sí"
+						],
+						[
+							"{@item Boots of the winterlands}",
+							"Sí"
+						],
+						[
+							"{@item Bracers of archery}",
+							"Sí"
+						],
+						[
+							"{@item Brooch of shielding}",
+							"Sí"
+						],
+						[
+							"{@item Cloak of protection}",
+							"Sí"
+						],
+						[
+							"{@item Eyes of the eagle}",
+							"Sí"
+						],
+						[
+							"{@item Gauntlets of ogre power}",
+							"Sí"
+						],
+						[
+							"{@item Gloves of missile snaring}",
+							"Sí"
+						],
+						[
+							"{@item Gloves of swimming and climbing}",
+							"Sí"
+						],
+						[
+							"{@item Hat of disguise}",
+							"Sí"
+						],
+						[
+							"{@item Headband of intellect}",
+							"Sí"
+						],
+						[
+							"{@item Helm of telepathy}",
+							"Sí"
+						],
+						[
+							"{@item Medallion of thoughts}",
+							"Sí"
+						],
+						[
+							"{@item Necklace of adaptation}",
+							"Sí"
+						],
+						[
+							"{@item Periapt of wound closure}",
+							"Sí"
+						],
+						[
+							"{@item Pipes of the sewers}",
+							"Sí"
+						],
+						[
+							"{@item Quiver of Ehlonna}",
+							"No"
+						],
+						[
+							"{@item Ring of jumping}",
+							"Sí"
+						],
+						[
+							"{@item Ring of mind shielding}",
+							"Sí"
+						],
+						[
+							"{@item Slippers of spider climbing}",
+							"Sí"
+						],
+						[
+							"{@item Ventilating lungs|ERLW} (detailed in {@book chapter 5|ERLW|13})",
+							"Sí"
+						],
+						[
+							"{@item Winged boots}",
+							"Sí"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Objetos replicarles (artífice de nivel 14)",
+					"colLabels": [
+						"Objeto mágico",
+						"Sintonización"
+					],
+					"colStyles": [
+						"col-11",
+						"col-1 text-center"
+					],
+					"rows": [
+						[
+							"{@item Amulet of health}",
+							"Sí"
+						],
+						[
+							"{@item Arcane propulsion arm|ERLW} (detailed in {@book chapter 5|ERLW|13})",
+							"Sí"
+						],
+						[
+							"{@item Belt of Hill Giant Strength||Belt of hill giant strength}",
+							"Sí"
+						],
+						[
+							"{@item Boots of levitation}",
+							"Sí"
+						],
+						[
+							"{@item Boots of speed}",
+							"Sí"
+						],
+						[
+							"{@item Bracers of defense}",
+							"Sí"
+						],
+						[
+							"{@item Cloak of the bat}",
+							"Sí"
+						],
+						[
+							"{@item Dimensional shackles}",
+							"No"
+						],
+						[
+							"{@item Gem of seeing}",
+							"Sí"
+						],
+						[
+							"{@item Horn of blasting}",
+							"No"
+						],
+						[
+							"{@item Ring of free action}",
+							"Sí"
+						],
+						[
+							"{@item Ring of protection}",
+							"Sí"
+						],
+						[
+							"{@item Ring of the ram}",
+							"Sí"
+						]
+					]
 				}
 			]
 		}

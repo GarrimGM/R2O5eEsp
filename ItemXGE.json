@@ -657,5 +657,166 @@
 				"The wand regains all expended charges daily at dawn. If you expend the wand's last charge, roll a {@dice d20}. On a 1, the wand transforms into a {@item wand of scowls|xge}."
 			]
 		}
+	],
+	"magicvariant": [
+		{
+			"name": "Adamantine Ammunition",
+			"type": "GV",
+			"requires": [
+				{
+					"type": "A"
+				},
+				{
+					"type": "AF"
+				}
+			],
+			"excludes": {
+				"name": "Energy Cell"
+			},
+			"ammo": true,
+			"entries": [
+				"Ammunition made of or coated with adamantine is unusually effective when used to break objects. Whenever a piece of adamantine ammunition hits an object, the hit is a critical hit.",
+				"The adamantine version of ten pieces of ammunition costs 500 gp more than the normal version, whether the ammunition is made of the metal or coated with it."
+			],
+			"inherits": {
+				"namePrefix": "Adamantine ",
+				"source": "XGE-ES",
+				"page": 78,
+				"tier": "minor",
+				"rarity": "unknown",
+				"entries": [
+					"Whenever you hit an object using this ammunition, the hit is a critical hit."
+				]
+			}
+		},
+		{
+			"name": "Adamantine Weapon",
+			"type": "GV",
+			"requires": [
+				{
+					"weapon": true
+				}
+			],
+			"excludes": {
+				"net": true
+			},
+			"entries": [
+				"Melee weapons made of or coated with adamantine are unusually effective when used to break objects. Whenever an adamantine weapon hits an object, the hit is a critical hit.",
+				"The adamantine version of a melee weapon costs 500 gp more than the normal version, whether the weapon is made of the metal or coated with it."
+			],
+			"inherits": {
+				"namePrefix": "Adamantine ",
+				"source": "XGE-ES",
+				"page": 78,
+				"tier": "major",
+				"rarity": "unknown",
+				"valueExpression": "[[baseItem.value]] + 50000",
+				"entries": [
+					"Whenever you hit an object with this weapon, the hit is a critical hit."
+				]
+			}
+		},
+		{
+			"name": "Armor of Gleaming",
+			"type": "GV",
+			"requires": [
+				{
+					"type": "HA"
+				},
+				{
+					"type": "MA"
+				}
+			],
+			"inherits": {
+				"nameSuffix": " of Gleaming",
+				"source": "XGE-ES",
+				"page": 136,
+				"tier": "minor",
+				"rarity": "common",
+				"entries": [
+					"This armor never gets dirty."
+				]
+			}
+		},
+		{
+			"name": "Cast-Off Armor",
+			"type": "GV",
+			"requires": [
+				{
+					"armor": true
+				}
+			],
+			"inherits": {
+				"namePrefix": "Cast-Off ",
+				"source": "XGE-ES",
+				"page": 136,
+				"tier": "minor",
+				"rarity": "common",
+				"entries": [
+					"You can doff this armor as an action."
+				]
+			}
+		},
+		{
+			"name": "Moon-Touched Sword",
+			"type": "GV",
+			"requires": [
+				{
+					"sword": true
+				}
+			],
+			"inherits": {
+				"namePrefix": "Moon-Touched ",
+				"source": "XGE-ES",
+				"page": 138,
+				"tier": "minor",
+				"rarity": "common",
+				"entries": [
+					"In darkness, the unsheathed blade of this sword sheds moonlight, creating bright light in a 15-foot radius and dim light for an additional 15 feet."
+				]
+			}
+		},
+		{
+			"name": "Smoldering Armor",
+			"type": "GV",
+			"requires": [
+				{
+					"armor": true
+				}
+			],
+			"inherits": {
+				"namePrefix": "Smoldering ",
+				"source": "XGE-ES",
+				"page": 139,
+				"tier": "minor",
+				"rarity": "common",
+				"entries": [
+					"Wisps of harmless, odorless smoke rise from this armor while it is worn."
+				]
+			}
+		},
+		{
+			"name": "Walloping Ammunition",
+			"type": "GV",
+			"requires": [
+				{
+					"type": "A"
+				},
+				{
+					"type": "AF"
+				}
+			],
+			"ammo": true,
+			"inherits": {
+				"namePrefix": "Walloping ",
+				"source": "XGE-ES",
+				"page": 139,
+				"tier": "minor",
+				"rarity": "common",
+				"entries": [
+					" This ammunition packs a wallop. A creature hit by the ammunition must succeed on a DC 10 Strength saving throw or be knocked {@condition prone}."
+				]
+			}
+		}
 	]
 }
