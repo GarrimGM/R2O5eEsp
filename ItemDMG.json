@@ -276,9 +276,9 @@
 			]
 		},
 		{
-			"name": "Amulet of Health",
+			"name": "Amuleto de salud",
 			"source": "DMG-ES",
-			"page": 150,
+			"page": 151,
 			"srd": true,
 			"basicRules": true,
 			"tier": "major",
@@ -292,7 +292,7 @@
 				}
 			},
 			"entries": [
-				"Your Constitution score is 19 while you wear this amulet. It has no effect on you if your Constitution score is already 19 or higher without it."
+				"Tu puntuación de Constitución es de 19 mientras lleves puesto este amuleto. No tiene ningún efecto si tu Constitución es de 19 o más sin él."
 			],
 			"optionalfeatures": [
 				"Replicar objeto mágico|TCE-ES"
@@ -569,11 +569,11 @@
 			}
 		},
 		{
-			"name": "Armor of Vulnerability (Bludgeoning)",
+			"name": "Armadura de vulnerabilidad (Contundente)",
 			"source": "DMG-ES",
-			"page": 152,
+			"page": 158,
 			"srd": true,
-			"baseItem": "plate armor|phb",
+			"baseItem": "armadura de placas|PHB-ES",
 			"type": "HA",
 			"resist": [
 				"bludgeoning"
@@ -591,22 +591,22 @@
 			"strength": "15",
 			"stealth": true,
 			"entries": [
-				"While wearing this armor, you have resistance to bludgeoning damage.",
+				"Cuando llevas puesta esta armadura, tienes resistencia al tipo de daño contundente.",
 				{
 					"type": "entries",
-					"name": "Curse",
+					"name": "Maldición",
 					"entries": [
-						"This armor is cursed, a fact that is revealed only when an {@spell identify} spell is cast on the armor or you attune to it. Attuning to the armor curses you until you are targeted by the {@spell remove curse} spell or similar magic; removing the armor fails to end the curse. While cursed you have vulnerability to piercing and slashing damage."
+						"Esta armadura esta maldita. Circunstancia que solo se revela cuando se usa el conjuro de {@spell identificar|PHB-ES} sobre ella o te sintonizas con ella. Sintonizarse con la armadura te maldice hasta que seas objetivo del conjuro {@spell levantar maldición|PHB-ES} o un efecto mágico similar. Quitarse la armadura no acaba con la maldición. Mientras estés maldito eres vulnerable a los tipos de daño perforante y cortante."
 					]
 				}
 			]
 		},
 		{
-			"name": "Armor of Vulnerability (Piercing)",
+			"name": "Armadura de vulnerabilidad (Perforante)",
 			"source": "DMG-ES",
-			"page": 152,
+			"page": 158,
 			"srd": true,
-			"baseItem": "plate armor|phb",
+			"baseItem": "armadura de placas|PHB-ES",
 			"type": "HA",
 			"resist": [
 				"piercing"
@@ -624,22 +624,22 @@
 			"strength": "15",
 			"stealth": true,
 			"entries": [
-				"While wearing this armor, you have resistance to piercing damage.",
+				"Cuando llevas puesta esta armadura, tienes resistencia al tipo de daño perforante.",
 				{
 					"type": "entries",
-					"name": "Curse",
+					"name": "Maldición",
 					"entries": [
-						"This armor is cursed, a fact that is revealed only when an {@spell identify} spell is cast on the armor or you attune to it. Attuning to the armor curses you until you are targeted by the {@spell remove curse} spell or similar magic; removing the armor fails to end the curse. While cursed you have vulnerability to bludgeoning and slashing damage."
+						"Esta armadura esta maldita. Circunstancia que solo se revela cuando se usa el conjuro de {@spell identificar|PHB-ES} sobre ella o te sintonizas con ella. Sintonizarse con la armadura te maldice hasta que seas objetivo del conjuro {@spell levantar maldición|PHB-ES} o un efecto mágico similar. Quitarse la armadura no acaba con la maldición. Mientras estés maldito eres vulnerable a los tipos de daño contundente y cortante."
 					]
 				}
 			]
 		},
 		{
-			"name": "Armor of Vulnerability (Slashing)",
+			"name": "Armadura de vulnerabilidad (Cortante)",
 			"source": "DMG-ES",
-			"page": 152,
+			"page": 158,
 			"srd": true,
-			"baseItem": "plate armor|phb",
+			"baseItem": "armadura de placas|PHB-ES",
 			"type": "HA",
 			"resist": [
 				"slashing"
@@ -657,12 +657,12 @@
 			"strength": "15",
 			"stealth": true,
 			"entries": [
-				"While wearing this armor, you have resistance to slashing damage.",
+				"Cuando llevas puesta esta armadura, tienes resistencia al tipo de daño cortante.",
 				{
 					"type": "entries",
-					"name": "Curse",
+					"name": "Maldición",
 					"entries": [
-						"This armor is cursed, a fact that is revealed only when an {@spell identify} spell is cast on the armor or you attune to it. Attuning to the armor curses you until you are targeted by the {@spell remove curse} spell or similar magic; removing the armor fails to end the curse. While cursed you have vulnerability to bludgeoning and piercing damage."
+						"Esta armadura esta maldita. Circunstancia que solo se revela cuando se usa el conjuro de {@spell identificar|PHB-ES} sobre ella o te sintonizas con ella. Sintonizarse con la armadura te maldice hasta que seas objetivo del conjuro {@spell levantar maldición|PHB-ES} o un efecto mágico similar. Quitarse la armadura no acaba con la maldición. Mientras estés maldito eres vulnerable a los tipos de daño contundente y perforante."
 					]
 				}
 			]
@@ -4567,17 +4567,17 @@
 			]
 		},
 		{
-			"name": "Eversmoking Bottle",
+			"name": "Botella siemprehumeante",
 			"source": "DMG-ES",
-			"page": 168,
+			"page": 170,
 			"srd": true,
 			"tier": "major",
 			"rarity": "uncommon",
 			"wondrous": true,
 			"weight": 1,
 			"entries": [
-				"Smoke leaks from the lead-stoppered mouth of this brass bottle, which weighs 1 pound. When you use an action to remove the stopper, a cloud of thick smoke pours out in a 60-foot radius from the bottle. The cloud's area is heavily obscured. Each minute the bottle remains open and within the cloud, the radius increases by 10 feet until it reaches its maximum radius of 120 feet.",
-				"The cloud persists as long as the bottle is open. Closing the bottle requires you to speak its command word as an action. Once the bottle is closed, the cloud disperses after 10 minutes. A moderate wind (11 to 20 miles per hour) can also disperse the smoke after 1 minute, and a strong wind (21 or more miles per hour) can do so after 1 round."
+				"El humo se filtra a través del tapón de plomo de esta botella de latón, que pesa 1 libra. Cuando usas una acción para quitar el tapón, una nube de denso humo sale de la botella, cubriendo un radio de 60 pies. Se extiende más allá de las esquinas y el área se considera muy oscura. Cada minuto que la botella permanezca abierta y dentro de la nube, este radio se incrementará en 10 pies, hasta que alcance su radio máximo de 120 pies.",
+				"La nube permanece mientras la botella siga abierta. Cerrarla implica emplear una acción para pronunciar la palabra de activación. Una vez la botella está cerrada, la nube se disipará en 10 minutos. Un viento moderado (entre 11 y 20 millas por hora) dispersará el humo en 1 minuto, y uno fuerte (más de 20 millas por hora) lo disipará en 1 asalto."
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos F"
@@ -4707,9 +4707,9 @@
 			"value": 250000
 		},
 		{
-			"name": "Eyes of Charming",
+			"name": "Anteojos de encantamiento",
 			"source": "DMG-ES",
-			"page": 168,
+			"page": 155,
 			"srd": true,
 			"tier": "major",
 			"rarity": "uncommon",
@@ -4719,13 +4719,13 @@
 			"rechargeAmount": 3,
 			"charges": 3,
 			"entries": [
-				"These crystal lenses fit over the eyes. They have 3 charges. While wearing them, you can expend 1 charge as an action to cast the {@spell charm person} spell (save DC 13) on a humanoid within 30 feet of you, provided that you and the target can see each other. The lenses regain all expended charges daily at dawn."
+				"Estas lentes de cristal cubren los ojos. Tienen 3 cargas. Mientras las lleves puestas, puedes usar una acción para lanzar el conjuro {@spell hechizar persona|PHB-ES} (tirada de salvación CD 13) en un humanoide que se encuentre a 30 pies o menos de ti, pero solo si podéis veros el uno al otro. Las lentes recuperan todas las cargas empleadas cada día, al amanecer."
 			],
 			"optionalfeatures": [
 				"Replicar objeto mágico|TCE-ES"
 			],
 			"attachedSpells": [
-				"charm person"
+				"hechizar persona|PHB-ES"
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos F"
@@ -4758,7 +4758,7 @@
 			]
 		},
 		{
-			"name": "Eyes of the Eagle",
+			"name": "Anteojos de vista de águila",
 			"source": "DMG-ES",
 			"page": 168,
 			"srd": true,
@@ -4767,7 +4767,7 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"entries": [
-				"These crystal lenses fit over the eyes. While wearing them, you have advantage on Wisdom ({@skill Perception}) checks that rely on sight. In conditions of clear visibility, you can make out details of even extremely distant creatures and objects as small as 2 feet across."
+				"Estas lentes de cristal cubren los ojos. Mientras las lleves, tienes ventaja en las pruebas de Sabiduría ({@skill Perception||Percepción}) que dependan de la vista. En condiciones de buena visibilidad, puedes ver detalles de criaturas y objetos extremadamente distantes, siempre que estos midan al menos 2 pies."
 			],
 			"optionalfeatures": [
 				"Replicar objeto mágico|TCE-ES"
@@ -4788,66 +4788,66 @@
 			}
 		},
 		{
-			"name": "Figurine of Wondrous Power, Bronze Griffon",
+			"name": "Estatuilla de poder maravilloso, Grifo de bronce",
 			"source": "DMG-ES",
-			"page": 169,
+			"page": 183,
 			"srd": true,
 			"tier": "major",
 			"rarity": "rare",
 			"wondrous": true,
 			"entries": [
-				"A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.",
-				"The creature is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions.",
-				"The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.",
-				"{@creature griffon||Bronze Griffon}.",
-				"This bronze statuette is of a {@creature griffon} rampant. It can become a {@creature griffon} for up to 6 hours. Once it has been used, it can't be used again until 5 days have passed."
+				"Una estatuilla de poder maravilloso es una pequeña escultura de una bestia que cabe en un bolsillo. Si usas una acción para pronunciar la palabra de activación y tiras la estatuilla a un punto del suelo situado a 60 pies o menos de ti, se convertirá en una criatura viva. Si el espacio en el que la criatura aparecería está ocupado por otras criaturas u objetos, o si no hay suficiente espacio para ella, seguirá siendo una estatuilla.",
+				"La criatura es amistosa hacia ti y tus compañeros. Entiende tus idiomas y obedece tus órdenes verbales. Si no le das ninguna, se defenderá de criaturas hostiles pero no realizará ninguna otra acción.",
+				"La criatura existe durante un tiempo concreto, que depende de cada estatuilla. Al final de la duración, volverá a su forma original. También retornará a esta forma si sus puntos de golpe descienden a 0 o si utilizas una acción para pronunciar la palabra de activación de nuevo mientras la tocas. Cuando vuelve a ser una estatua, su propiedad mágica no podrá volver a ser empleada hasta que pase una cierta cantidad de tiempo, que se especifica en la descripción de la estatuilla.",
+				"{@creature Grifo|MM-ES|Grifo de bronce}.",
+				"Una estatuilla de bronce de un {@creature grifo|MM-ES} rampante. Puede convertirse en {@creature grifo|MM-ES} durante 6 horas. Una vez usada, no puede volver a transformase hasta que hayan pasado 5 días."
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos G"
 			]
 		},
 		{
-			"name": "Figurine of Wondrous Power, Ebony Fly",
+			"name": "Estatuilla de poder maravilloso, Mosca de ébano",
 			"source": "DMG-ES",
-			"page": 169,
+			"page": 183,
 			"srd": true,
 			"tier": "major",
 			"rarity": "rare",
 			"wondrous": true,
 			"entries": [
-				"A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.",
-				"The creature is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions.",
-				"The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.",
-				"{@creature giant fly|dmg|Ebony Fly}.",
-				"This ebony statuette is carved in the likeness of a horsefly. It can become a {@creature giant fly|dmg} for up to 12 hours and can be ridden as a mount. Once it has been used, it can't be used again until 2 days have passed."
+				"Una estatuilla de poder maravilloso es una pequeña escultura de una bestia que cabe en un bolsillo. Si usas una acción para pronunciar la palabra de activación y tiras la estatuilla a un punto del suelo situado a 60 pies o menos de ti, se convertirá en una criatura viva. Si el espacio en el que la criatura aparecería está ocupado por otras criaturas u objetos, o si no hay suficiente espacio para ella, seguirá siendo una estatuilla.",
+				"La criatura es amistosa hacia ti y tus compañeros. Entiende tus idiomas y obedece tus órdenes verbales. Si no le das ninguna, se defenderá de criaturas hostiles pero no realizará ninguna otra acción.",
+				"La criatura existe durante un tiempo concreto, que depende de cada estatuilla. Al final de la duración, volverá a su forma original. También retornará a esta forma si sus puntos de golpe descienden a 0 o si utilizas una acción para pronunciar la palabra de activación de nuevo mientras la tocas. Cuando vuelve a ser una estatua, su propiedad mágica no podrá volver a ser empleada hasta que pase una cierta cantidad de tiempo, que se especifica en la descripción de la estatuilla.",
+				"{@creature mosca gigante|DMG-ES|Mosca de ébano}.",
+				"Esta estatua de ébano está tallada con la forma de un tábano. Puede convertirse en una {@creature mosca gigante|DMG-ES} durante 12 horas y ser empleada como montura. Una vez utilizada, no puede volver a transformarse hasta que hayan pasado 2 días."
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos G"
 			]
 		},
 		{
-			"name": "Figurine of Wondrous Power, Golden Lions",
+			"name": "Estatuilla de poder maravilloso, Leones dorados",
 			"source": "DMG-ES",
-			"page": 169,
+			"page": 183,
 			"srd": true,
 			"tier": "major",
 			"rarity": "rare",
 			"wondrous": true,
 			"entries": [
-				"A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.",
-				"The creature is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions.",
-				"The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.",
-				"{@creature lion||Golden Lions}.",
-				"These gold statuettes of lions are always created in pairs. You can use one figurine or both simultaneously. Each can become a {@creature lion} for up to 1 hour. Once a {@creature lion} has been used, it can't be used again until 7 days have passed."
+				"Una estatuilla de poder maravilloso es una pequeña escultura de una bestia que cabe en un bolsillo. Si usas una acción para pronunciar la palabra de activación y tiras la estatuilla a un punto del suelo situado a 60 pies o menos de ti, se convertirá en una criatura viva. Si el espacio en el que la criatura aparecería está ocupado por otras criaturas u objetos, o si no hay suficiente espacio para ella, seguirá siendo una estatuilla.",
+				"La criatura es amistosa hacia ti y tus compañeros. Entiende tus idiomas y obedece tus órdenes verbales. Si no le das ninguna, se defenderá de criaturas hostiles pero no realizará ninguna otra acción.",
+				"La criatura existe durante un tiempo concreto, que depende de cada estatuilla. Al final de la duración, volverá a su forma original. También retornará a esta forma si sus puntos de golpe descienden a 0 o si utilizas una acción para pronunciar la palabra de activación de nuevo mientras la tocas. Cuando vuelve a ser una estatua, su propiedad mágica no podrá volver a ser empleada hasta que pase una cierta cantidad de tiempo, que se especifica en la descripción de la estatuilla.",
+				"{@creature león|MM-ES|Leones dorados}.",
+				"Estas estatuillas de oro de leones siempre se crean en parejas. Puedes usar una estatuilla o las dos simultáneamente. Cada una puede convertirse en {@creature león|MM-ES} durante 1 hora. Una vez un {@creature león|MM-ES} ha sido empleado, no puede volver a transformarse hasta que hayan pasado 7 días."
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos G"
 			]
 		},
 		{
-			"name": "Figurine of Wondrous Power, Ivory Goats",
+			"name": "Estatuilla de poder maravilloso, Cabras de marfil",
 			"source": "DMG-ES",
-			"page": 169,
+			"page": 183,
 			"srd": true,
 			"tier": "major",
 			"rarity": "rare",
@@ -4855,17 +4855,17 @@
 			"bonusWeapon": "+1",
 			"charges": 24,
 			"entries": [
-				"A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.",
-				"The creature is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions.",
-				"The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.",
-				"{@creature riding horse||Ivory Goats}.",
-				"These ivory statuettes of goats are always created in sets of three. Each goat looks unique and functions differently from the others. Their properties are as follows:",
+				"Una estatuilla de poder maravilloso es una pequeña escultura de una bestia que cabe en un bolsillo. Si usas una acción para pronunciar la palabra de activación y tiras la estatuilla a un punto del suelo situado a 60 pies o menos de ti, se convertirá en una criatura viva. Si el espacio en el que la criatura aparecería está ocupado por otras criaturas u objetos, o si no hay suficiente espacio para ella, seguirá siendo una estatuilla.",
+				"La criatura es amistosa hacia ti y tus compañeros. Entiende tus idiomas y obedece tus órdenes verbales. Si no le das ninguna, se defenderá de criaturas hostiles pero no realizará ninguna otra acción.",
+				"La criatura existe durante un tiempo concreto, que depende de cada estatuilla. Al final de la duración, volverá a su forma original. También retornará a esta forma si sus puntos de golpe descienden a 0 o si utilizas una acción para pronunciar la palabra de activación de nuevo mientras la tocas. Cuando vuelve a ser una estatua, su propiedad mágica no podrá volver a ser empleada hasta que pase una cierta cantidad de tiempo, que se especifica en la descripción de la estatuilla.",
+				"{@creature caballo de monta|MM-ES|Cabras de marfil}.",
+				"Estas estatuillas de marfil en forma de cabras siempre se crean en tríos. Cada una posee un aspecto único y funciona de forma distinta a las demás. Sus propiedades son las siguientes:",
 				{
 					"type": "list",
 					"items": [
-						"The goat of traveling can become a Large goat with the same statistics as a {@creature riding horse}. It has 24 charges, and each hour or portion thereof it spends in beast form costs 1 charge. While it has charges, you can use it as often as you wish. When it runs out of charges, it reverts to a figurine and can't be used again until 7 days have passed, when it regains all its charges.",
-						"The goat of travail becomes a {@creature giant goat} for up to 3 hours. Once it has been used, it can't be used again until 30 days have passed.",
-						"The goat of terror becomes a {@creature giant goat} for up to 3 hours. The goat can't attack, but you can remove its horns and use them as weapons. One horn becomes a +1 lance, and the other becomes a +2 longsword. Removing a horn requires an action, and the weapons disappear and the horns return when the goat reverts to figurine form. In addition, the goat radiates a 30-foot-radius aura of terror while you are riding it. Any creature hostile to you that starts its turn in the aura must succeed on a DC 15 Wisdom saving throw or be {@condition frightened} of the goat for 1 minute, or until the goat reverts to figurine form. The {@condition frightened} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Once it successfully saves against the effect, a creature is immune to the goat's aura for the next 24 hours. Once the figurine has been used, it can't be used again until 15 days have passed."
+						"La cabra de viaje puede convertirse en una cabra Grande con el mismo perfil que un {@creature caballo de monta|MM-ES}. Tiene 24 cargas, y cada hora o porción de hora que pase en forma de bestia gasta 1 carga. Mientras posea cargas, puedes usarla tantas veces como quieras. Cuando se queda sin cargas, se convierte de nuevo en estatua. No puede ser usada de nuevo hasta que pasen 7 días, momento en el cual recupera todas sus cargas.",
+						"La cabra de trabajo se convierte en una {@creature cabra gigante|MM-ES} durante 3 horas. Una vez utilizada, no puede volver a transformarse hasta que hayan pasado 30 días.",
+						"La cabra del terror se convierte en una {@creature cabra gigante|MM-ES} durante 3 horas. No puede atacar, pero puedes sacarle los cuernos y emplearlos como armas. Un cuerno se convierte en una lanza +1 y el otro en una espada larga +2. Para extraer un cuerno es necesaria una acción, y las armas desaparecen, volviendo los cuernos, cuando la cabra retorna a la forma de estatuilla. Además, la cabra radia un aura de terror de 30 pies de radio mientras la cabalgues. Cualquier criatura hostil a ti que comience su turno en el área deberá tener éxito en una tirada de salvación de Sabiduría CD 15 o quedará {@condition asustado|PHB-ES|asustada} por la cabra durante 1 minuto o hasta que esta vuelva a forma de estatua. Un objetivo {@condition asustado|PHB-ES} puede repetir la tirada de salvación al final de cada uno de sus turnos, librándose del efecto si tiene éxito. Las criaturas que superen esta tirada de salvación con éxito serán inmunes al aura de la cabra durante 24 horas. Una vez usada, no puede volver a transformarse hasta que hayan pasado 15 días."
 					]
 				}
 			],
@@ -4874,96 +4874,96 @@
 			]
 		},
 		{
-			"name": "Figurine of Wondrous Power, Marble Elephant",
+			"name": "Estatuilla de poder maravilloso, Elefante de mármol",
 			"source": "DMG-ES",
-			"page": 170,
+			"page": 183,
 			"srd": true,
 			"tier": "major",
 			"rarity": "rare",
 			"wondrous": true,
 			"entries": [
-				"A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.",
-				"The creature is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions.",
-				"The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.",
-				"{@creature elephant||Marble Elephant}.",
-				"This marble statuette is about 4 inches high and long. It can become an {@creature elephant} for up to 24 hours. Once it has been used, it can't be used again until 7 days have passed."
+				"Una estatuilla de poder maravilloso es una pequeña escultura de una bestia que cabe en un bolsillo. Si usas una acción para pronunciar la palabra de activación y tiras la estatuilla a un punto del suelo situado a 60 pies o menos de ti, se convertirá en una criatura viva. Si el espacio en el que la criatura aparecería está ocupado por otras criaturas u objetos, o si no hay suficiente espacio para ella, seguirá siendo una estatuilla.",
+				"La criatura es amistosa hacia ti y tus compañeros. Entiende tus idiomas y obedece tus órdenes verbales. Si no le das ninguna, se defenderá de criaturas hostiles pero no realizará ninguna otra acción.",
+				"La criatura existe durante un tiempo concreto, que depende de cada estatuilla. Al final de la duración, volverá a su forma original. También retornará a esta forma si sus puntos de golpe descienden a 0 o si utilizas una acción para pronunciar la palabra de activación de nuevo mientras la tocas. Cuando vuelve a ser una estatua, su propiedad mágica no podrá volver a ser empleada hasta que pase una cierta cantidad de tiempo, que se especifica en la descripción de la estatuilla.",
+				"{@creature elefante|MM-ES|Elefante de mármol}.",
+				"Esta estatuilla de mármol mide unas 4 pulgadas de alto y largo. Puede convertirse en {@creature elefante|MM-ES} durante 24 horas. Una vez utilizada, no puede volver a transformarse hasta que hayan pasado 7 días."
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos G"
 			]
 		},
 		{
-			"name": "Figurine of Wondrous Power, Obsidian Steed",
+			"name": "Estatuilla de poder maravilloso, Corcel de obsidiana",
 			"source": "DMG-ES",
-			"page": 170,
+			"page": 183,
 			"srd": true,
 			"tier": "major",
 			"rarity": "very rare",
 			"wondrous": true,
 			"entries": [
-				"A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.",
-				"The creature is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions.",
-				"The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.",
-				"{@creature nightmare||Obsidian Steed}.",
-				"This polished obsidian horse can become a {@creature nightmare} for up to 24 hours. The {@creature nightmare} fights only to defend itself. Once it has been used, it can't be used again until 5 days have passed.",
-				"If you have a good alignment, the figurine has a {@chance 10} chance each time you use it to ignore your orders, including a command to revert to figurine form. If you mount the {@creature nightmare} while it is ignoring your orders, you and the {@creature nightmare} are instantly transported to a random location on the plane of Hades, where the {@creature nightmare} reverts to figurine form."
+				"Una estatuilla de poder maravilloso es una pequeña escultura de una bestia que cabe en un bolsillo. Si usas una acción para pronunciar la palabra de activación y tiras la estatuilla a un punto del suelo situado a 60 pies o menos de ti, se convertirá en una criatura viva. Si el espacio en el que la criatura aparecería está ocupado por otras criaturas u objetos, o si no hay suficiente espacio para ella, seguirá siendo una estatuilla.",
+				"La criatura es amistosa hacia ti y tus compañeros. Entiende tus idiomas y obedece tus órdenes verbales. Si no le das ninguna, se defenderá de criaturas hostiles pero no realizará ninguna otra acción.",
+				"La criatura existe durante un tiempo concreto, que depende de cada estatuilla. Al final de la duración, volverá a su forma original. También retornará a esta forma si sus puntos de golpe descienden a 0 o si utilizas una acción para pronunciar la palabra de activación de nuevo mientras la tocas. Cuando vuelve a ser una estatua, su propiedad mágica no podrá volver a ser empleada hasta que pase una cierta cantidad de tiempo, que se especifica en la descripción de la estatuilla.",
+				"{@creature pesadilla|MM-ES|Corcel de obsidiana}.",
+				"Este caballo de obsidiana pulida puede convertirse en {@creature pesadilla|MM-ES} durante 24 horas. Solo luchará para defenderse. Una vez usado, no puede volver a transformarse hasta que hayan pasado 5 días.",
+				"Si tu alineamiento es bueno, la {@creature pesadilla|MM-ES} tiene un {@chance 10|10 %} de probabilidades cada vez que es utilizada de ignorar tus órdenes, incluyendo volver a convertirse en estatua. Si la montas mientras está rechazando tus órdenes, tú y la {@creature pesadilla|MM-ES} seréis transportados instantáneamente a un lugar aleatorio del plano de Hades, donde se volverá a transformar en estatua."
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos H"
 			]
 		},
 		{
-			"name": "Figurine of Wondrous Power, Onyx Dog",
+			"name": "Estatuilla de poder maravilloso, Perro de ónice",
 			"source": "DMG-ES",
-			"page": 170,
+			"page": 183,
 			"srd": true,
 			"tier": "major",
 			"rarity": "rare",
 			"wondrous": true,
 			"entries": [
-				"A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.",
-				"The creature is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions.",
-				"The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.",
-				"{@creature mastiff||Onyx Dog}.",
-				"This onyx statuette of a dog can become a {@creature mastiff} for up to 6 hours. The {@creature mastiff} has an Intelligence of 8 and can speak Common. It also has {@sense darkvision} out to a range of 60 feet and can see {@condition invisible} creatures and objects within that range. Once it has been used, it can't be used again until 7 days have passed."
+				"Una estatuilla de poder maravilloso es una pequeña escultura de una bestia que cabe en un bolsillo. Si usas una acción para pronunciar la palabra de activación y tiras la estatuilla a un punto del suelo situado a 60 pies o menos de ti, se convertirá en una criatura viva. Si el espacio en el que la criatura aparecería está ocupado por otras criaturas u objetos, o si no hay suficiente espacio para ella, seguirá siendo una estatuilla.",
+				"La criatura es amistosa hacia ti y tus compañeros. Entiende tus idiomas y obedece tus órdenes verbales. Si no le das ninguna, se defenderá de criaturas hostiles pero no realizará ninguna otra acción.",
+				"La criatura existe durante un tiempo concreto, que depende de cada estatuilla. Al final de la duración, volverá a su forma original. También retornará a esta forma si sus puntos de golpe descienden a 0 o si utilizas una acción para pronunciar la palabra de activación de nuevo mientras la tocas. Cuando vuelve a ser una estatua, su propiedad mágica no podrá volver a ser empleada hasta que pase una cierta cantidad de tiempo, que se especifica en la descripción de la estatuilla.",
+				"{@creature mastín|MM-ES|Perro de ónice}.",
+				"Esta estatuilla de ónice de un perro puede convertirse en {@creature mastín|MM-ES} durante 6 horas. Tiene una Inteligencia de 8 y puede hablar común. También posee {@sense darkvision||visión en la oscuridad} a 60 pies y es capaz de ver criaturas y objetos {@condition invisible|PHB-ES|invisibles} dentro de ese alcance. Una vez utilizada, no puede volver a transformarse hasta que hayan pasado 7 días."
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos G"
 			]
 		},
 		{
-			"name": "Figurine of Wondrous Power, Serpentine Owl",
+			"name": "Estatuilla de poder maravilloso, Búho de serpentina",
 			"source": "DMG-ES",
-			"page": 170,
+			"page": 183,
 			"srd": true,
 			"tier": "major",
 			"rarity": "rare",
 			"wondrous": true,
 			"entries": [
-				"A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.",
-				"The creature is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions.",
-				"The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.",
-				"{@creature giant owl||Serpentine Owl}.",
-				"This serpentine statuette of an owl can become a {@creature giant owl} for up to 8 hours. Once it has been used, it can't be used again until 2 days have passed. The owl can telepathically communicate with you at any range if you and it are on the same plane of existence."
+				"Una estatuilla de poder maravilloso es una pequeña escultura de una bestia que cabe en un bolsillo. Si usas una acción para pronunciar la palabra de activación y tiras la estatuilla a un punto del suelo situado a 60 pies o menos de ti, se convertirá en una criatura viva. Si el espacio en el que la criatura aparecería está ocupado por otras criaturas u objetos, o si no hay suficiente espacio para ella, seguirá siendo una estatuilla.",
+				"La criatura es amistosa hacia ti y tus compañeros. Entiende tus idiomas y obedece tus órdenes verbales. Si no le das ninguna, se defenderá de criaturas hostiles pero no realizará ninguna otra acción.",
+				"La criatura existe durante un tiempo concreto, que depende de cada estatuilla. Al final de la duración, volverá a su forma original. También retornará a esta forma si sus puntos de golpe descienden a 0 o si utilizas una acción para pronunciar la palabra de activación de nuevo mientras la tocas. Cuando vuelve a ser una estatua, su propiedad mágica no podrá volver a ser empleada hasta que pase una cierta cantidad de tiempo, que se especifica en la descripción de la estatuilla.",
+				"{@creature búho gigante|MM-ES|Búho de serpentina}.",
+				"Esta estatuilla de serpentina de un búho puede convertirse en un {@creature búho gigante|MM-ES} durante 8 horas. Una vez usada, no puede volver a transformarse hasta que hayan pasado 2 días. El búho es capaz de comunicarse telepáticamente contigo a cualquier distancia, siempre que estéis en el mismo plano de existencia."
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos G"
 			]
 		},
 		{
-			"name": "Figurine of Wondrous Power, Silver Raven",
+			"name": "Estatuilla de poder maravilloso, Cuervo de plata",
 			"source": "DMG-ES",
-			"page": 170,
+			"page": 183,
 			"srd": true,
 			"tier": "major",
 			"rarity": "uncommon",
 			"wondrous": true,
 			"entries": [
-				"A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.",
-				"The creature is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions.",
-				"The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.",
-				"{@creature raven||Silver Raven}.",
-				"This silver statuette of a raven can become a raven for up to 12 hours. Once it has been used, it can't be used again until 2 days have passed. While in raven form, the figurine allows you to cast the {@spell animal messenger} spell on it at will."
+				"Una estatuilla de poder maravilloso es una pequeña escultura de una bestia que cabe en un bolsillo. Si usas una acción para pronunciar la palabra de activación y tiras la estatuilla a un punto del suelo situado a 60 pies o menos de ti, se convertirá en una criatura viva. Si el espacio en el que la criatura aparecería está ocupado por otras criaturas u objetos, o si no hay suficiente espacio para ella, seguirá siendo una estatuilla.",
+				"La criatura es amistosa hacia ti y tus compañeros. Entiende tus idiomas y obedece tus órdenes verbales. Si no le das ninguna, se defenderá de criaturas hostiles pero no realizará ninguna otra acción.",
+				"La criatura existe durante un tiempo concreto, que depende de cada estatuilla. Al final de la duración, volverá a su forma original. También retornará a esta forma si sus puntos de golpe descienden a 0 o si utilizas una acción para pronunciar la palabra de activación de nuevo mientras la tocas. Cuando vuelve a ser una estatua, su propiedad mágica no podrá volver a ser empleada hasta que pase una cierta cantidad de tiempo, que se especifica en la descripción de la estatuilla.",
+				"{@creature cuervo|MM-ES|Cuervo de plata}.",
+				"Esta estatuilla de plata de un cuervo puede convertirse en {@creature cuervo|MM-ES} durante 12 horas. Una vez empleada, no puede volver a transformarse hasta que hayan pasado 2 días. En forma de cuervo te permite lanzar sobre ella el conjuro {@spell mensajero animal} a voluntad."
 			],
 			"attachedSpells": [
 				"animal messenger"
@@ -5102,9 +5102,9 @@
 			}
 		},
 		{
-			"name": "Gem of Brightness",
+			"name": "Gema del resplandor",
 			"source": "DMG-ES",
-			"page": 171,
+			"page": 187,
 			"srd": true,
 			"tier": "major",
 			"rarity": "uncommon",
@@ -5112,16 +5112,16 @@
 			"weight": 1,
 			"charges": 50,
 			"entries": [
-				"This prism has 50 charges. While you are holding it, you can use an action to speak one of three command words to cause one of the following effects:",
+				"Este prisma tiene 50 cargas. Mientras lo sostengas, puedes usar una acción para pronunciar una de las tres palabras de activación y causar uno de los siguientes efectos:",
 				{
 					"type": "list",
 					"items": [
-						"The first command word causes the gem to shed bright light in a 30-foot radius and dim light for an additional 30 feet. This effect doesn't expend a charge. It lasts until you use a bonus action to repeat the command word or until you use another function of the gem.",
-						"The second command word expends 1 charge and causes the gem to fire a brilliant beam of light at one creature you can see within 60 feet of you. The creature must succeed on a DC 15 Constitution saving throw or become {@condition blinded} for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
-						"The third command word expends 5 charges and causes the gem to flare with blinding light in a 30-foot cone originating from it. Each creature in the cone must make a saving throw as if struck by the beam created with the second command word."
+						"La primera palabra de activación hace que la gema emita luz brillante en un radio de 30 pies y luz tenue otros 30 pies más allá. Este efecto no gasta una carga. Dura hasta que utilices una acción adicional para repetir la palabra de activación o hasta que emplees otra función de la gema.",
+						"La segunda palabra de activación gasta 1 carga y provoca que la gema lance un rayo cegador de luz a una criatura que puedas ver y que se encuentre a 60 pies o menos de ti. Deberá superar una tirada de salvación de Constitución CD 15 o estará {@condition cegado|PHB-ES|cegada} durante 1 minuto. La criatura puede repetir la tirada de salvación al final de cada uno de sus turnos, librándose del efecto si tiene éxito.",
+						"La tercera palabra de activación utiliza 5 cargas y hace que la gema se ilumine con un fulgor que cubre un cono de 30 pies con origen en ella misma. Cada criatura dentro del cono deberá hacer una tirada de salvación como si hubiera sido afectada por el rayo creado con la segunda palabra de activación."
 					]
 				},
-				"When all of the gem's charges are expended, the gem becomes a nonmagical jewel worth 50 gp."
+				"Cuando todas las cargas de la gema se gastan, esta se convierte en una joya mundana valorada en 50 po."
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos F"
@@ -5192,16 +5192,16 @@
 			]
 		},
 		{
-			"name": "Gloves of Missile Snaring",
+			"name": "Guantes atrapaflechas",
 			"source": "DMG-ES",
-			"page": 172,
+			"page": 188,
 			"srd": true,
 			"tier": "major",
 			"rarity": "uncommon",
 			"reqAttune": true,
 			"wondrous": true,
 			"entries": [
-				"These gloves seem to almost meld into your hands when you don them. When a ranged weapon attack hits you while you're wearing them, you can use your reaction to reduce the damage by {@dice 1d10} + your Dexterity modifier, provided that you have a free hand. If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in that hand."
+				"Estos guantes parecen fundirse con tus manos cuando los vistes. Cuando un ataque con arma a distancia te impacte llevándolos puestos, podrás usar tu reacción para reducir el daño en {@dice 1d10} + tu bonificador de Destreza, siempre y cuando tengas una mano libre. Si reduces el daño a 0, podrás atrapar el proyectil, aunque solo cuando este sea lo bastante pequeño como para que puedas sujetarlo con una mano."
 			],
 			"optionalfeatures": [
 				"Replicar objeto mágico|TCE-ES"
@@ -5222,9 +5222,9 @@
 			}
 		},
 		{
-			"name": "Gloves of Swimming and Climbing",
+			"name": "Guantes de natación y escalada",
 			"source": "DMG-ES",
-			"page": 172,
+			"page": 189,
 			"srd": true,
 			"basicRules": true,
 			"tier": "major",
@@ -5232,7 +5232,7 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"entries": [
-				"While wearing these gloves, climbing and swimming don't cost you extra movement, and you gain a +5 bonus to Strength ({@skill Athletics}) checks made to climb or swim."
+				"Mientras lleves estos guantes, nadar y escalar no te cuesta movimiento adicional y, además, obtienes un bonificador de +5 a tus pruebas de Fuerza ({@skill Athletics||Atletismo}) para nadar o escalar."
 			],
 			"optionalfeatures": [
 				"Replicar objeto mágico|TCE-ES"
@@ -5242,14 +5242,14 @@
 			]
 		},
 		{
-			"name": "Gloves of Thievery",
+			"name": "Guantes de ladrón",
 			"source": "DMG-ES",
-			"page": 172,
+			"page": 189,
 			"tier": "major",
 			"rarity": "uncommon",
 			"wondrous": true,
 			"entries": [
-				"These gloves are {@condition invisible} while worn. While wearing them, you gain a +5 bonus to Dexterity ({@skill Sleight of Hand}) checks and Dexterity checks made to pick locks."
+				"Estos guantes son {@condition invisible|PHB-ES|invisibles} mientras los lleves puestos. Si los vistes, ganas un bonificador de +5 a pruebas de Destreza ({@skill Sleight of Hand||Juego de Manos}) y pruebas de Destreza para forzar cerraduras."
 			],
 			"optionalfeatures": [
 				"Replicar objeto mágico|TCE-ES"
@@ -5606,9 +5606,9 @@
 			]
 		},
 		{
-			"name": "Headband of Intellect",
+			"name": "Diadema de intelecto",
 			"source": "DMG-ES",
-			"page": 173,
+			"page": 179,
 			"srd": true,
 			"basicRules": true,
 			"tier": "major",
@@ -5621,7 +5621,7 @@
 				}
 			},
 			"entries": [
-				"Your Intelligence score is 19 while you wear this headband. It has no effect on you if your Intelligence is already 19 or higher without it."
+				"Tu puntuación de Inteligencia es 19 mientras lleves esta diadema. No tiene ningún efecto si tu Inteligencia era de 19 o más sin ella."
 			],
 			"optionalfeatures": [
 				"Replicar objeto mágico|TCE-ES"
@@ -5718,24 +5718,24 @@
 			}
 		},
 		{
-			"name": "Helm of Telepathy",
+			"name": "Yelmo de telepatía",
 			"source": "DMG-ES",
-			"page": 174,
+			"page": 212,
 			"srd": true,
 			"tier": "major",
 			"rarity": "uncommon",
 			"reqAttune": true,
 			"wondrous": true,
 			"entries": [
-				"While wearing this helm, you can use an action to cast the {@spell detect thoughts} spell (save DC 13) from it. As long as you maintain concentration on the spell, you can use a bonus action to send a telepathic message to a creature you are focused on. It can reply\u2014using a bonus action to do so\u2014while your focus on it continues.",
-				"While focusing on a creature with {@spell detect thoughts}, you can use an action to cast the {@spell suggestion} spell (save DC 13) from the helm on that creature. Once used, the suggestion property can't be used again until the next dawn."
+				"Siempre que lleves este yelmo, puedes utilizar una acción para lanzar a voluntad el conjuro {@spell detectar pensamientos|PHB-ES} (tirada de salvación CD 13) desde él. Mientras mantengas la concentración en el conjuro, puedes usar una acción adicional para mandar un mensaje telepático a la criatura en la que estás enfocado. Esta es capaz de contestar, utilizando una acción adicional, mientras sigas enfocado en ella.",
+				"Si estás manteniendo {@spell detectar pensamientos|PHB-ES} sobre una criatura, puedes usar una acción para lanzar el conjuro {@spell sugestión|PHB-ES} (tirada de salvación CD 13). La propiedad de lanzar sugestión del yelmo no puede volver a emplearse hasta el siguiente amanecer."
 			],
 			"optionalfeatures": [
 				"Replicar objeto mágico|TCE-ES"
 			],
 			"attachedSpells": [
-				"detect thoughts",
-				"suggestion"
+				"detectar pensamientos|PHB-ES",
+				"sugestión|PHB-ES"
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos F"
@@ -5995,35 +5995,35 @@
 			}
 		},
 		{
-			"name": "Instrument of the Bards, Anstruth Harp",
+			"name": "Instrumento de los bardos, Arpa de Anstruth",
 			"source": "DMG-ES",
-			"page": 176,
+			"page": 190,
 			"type": "INS",
 			"tier": "major",
 			"rarity": "very rare",
-			"reqAttune": "by a bard",
+			"reqAttune": "con un bardo",
 			"reqAttuneTags": [
 				{
-					"class": "bard"
+					"class": "bardo"
 				}
 			],
 			"wondrous": true,
 			"weight": 2,
 			"entries": [
-				"An instrument of the bards is an exquisite example of its kind, superior to an ordinary instrument in every way. Seven types of these instruments exist, each named after a legendary bard college. A creature that attempts to play the instrument without being attuned to it must succeed on a DC 15 Wisdom saving throw or take {@damage 2d4} psychic damage.",
-				"You can use an action to play the instrument and cast one of its spells. Once the instrument has been used to cast a spell, it can't be used to cast that spell again until the next dawn. The spells use your spellcasting ability and spell save DC.",
-				"You can play the instrument while casting a spell that causes any of its targets to be {@condition charmed} on a failed saving throw, thereby imposing disadvantage on the save. This effect applies only if the spell has a somatic or a material component.",
-				"All instruments of the bards can be used to cast the following spells: {@spell fly}, {@spell invisibility}, {@spell levitate}, and {@spell protection from evil and good}.",
-				"In addition, the Anstruth harp can be used to cast {@spell control weather}, {@spell cure wounds} (5th level), and {@spell wall of thorns}."
+				"Un instrumento de los bardos es un objeto exquisito, superior a un instrumento ordinario en todos los aspectos. Existen siete tipos de instrumentos de esta clase, cada uno nombrado como un Colegio Bárdico legendario. Una criatura que intente tocar el instrumento sin estar sintonizado con él deberá tener éxito en una tirada de salvación de Sabiduría CD 15 o sufrirá {@damage 2d4} de daño psíquico.",
+				"Puedes usar una acción para tocar el instrumento y lanzar uno de sus conjuros. Una vez que ha sido empleado para este fin, el instrumento no podrá volver a lanzar ese conjuro concreto hasta la mañana siguiente. Los lanzamientos utilizan tu aptitud mágica y CD de salvación de conjuros.",
+				"Cuando usas el instrumento para lanzar un conjuro que hace que los objetivos queden {@condition hechizado|PHB-ES|hechizados} si fallan una tirada de salvación, esta tirada de salvación se hará con desventaja. Este efecto se aplica tanto si el instrumento es el origen del conjuro como si lo estás empleando como canalizador mágico.",
+				"Todos los instrumentos de los bardos se pueden usar para lanzar los siguientes hechizos: {@spell invisibilidad|PHB-ES}, {@spell levitar|PHB-ES}, {@spell protección contra el bien y el mal|PHB-ES} y {@spell volar|PHB-ES}.",
+				"Además el arpa de Anstruth puede ser usada para lanzar los conjuros {@spell controlar el clima|PHB-ES}, {@spell curar heridas|PHB-ES} (nivel 5) y {@spell muro de espinas|PHB-ES}."
 			],
 			"attachedSpells": [
-				"control weather",
-				"fly",
-				"invisibility",
-				"levitate",
-				"protection from evil and good",
-				"cure wounds",
-				"wall of thorns"
+				"controlar el clima|PHB-ES",
+				"volar|PHB-ES",
+				"invisibilidad|PHB-ES",
+				"levitar|PHB-ES",
+				"protección contra el bien y el mal|PHB-ES",
+				"curar heridas|PHB-ES",
+				"muro de espinas|PHB-ES"
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos H"
@@ -6041,7 +6041,7 @@
 			}
 		},
 		{
-			"name": "Instrument of the Bards, Canaith Mandolin",
+			"name": "Instrumento de los bardos, Mandolina de Canaith",
 			"source": "DMG-ES",
 			"page": 176,
 			"type": "INS",
@@ -6056,20 +6056,20 @@
 			"wondrous": true,
 			"weight": 2,
 			"entries": [
-				"An instrument of the bards is an exquisite example of its kind, superior to an ordinary instrument in every way. Seven types of these instruments exist, each named after a legendary bard college. A creature that attempts to play the instrument without being attuned to it must succeed on a DC 15 Wisdom saving throw or take {@damage 2d4} psychic damage.",
-				"You can use an action to play the instrument and cast one of its spells. Once the instrument has been used to cast a spell, it can't be used to cast that spell again until the next dawn. The spells use your spellcasting ability and spell save DC.",
-				"You can play the instrument while casting a spell that causes any of its targets to be {@condition charmed} on a failed saving throw, thereby imposing disadvantage on the save. This effect applies only if the spell has a somatic or a material component.",
-				"All instruments of the bards can be used to cast the following spells: {@spell fly}, {@spell invisibility}, {@spell levitate}, and {@spell protection from evil and good}.",
-				"In addition, the Canaith mandolin can be used to cast {@spell cure wounds} (3rd level), {@spell dispel magic}, and {@spell protection from energy} (lightning only)."
+				"Un instrumento de los bardos es un objeto exquisito, superior a un instrumento ordinario en todos los aspectos. Existen siete tipos de instrumentos de esta clase, cada uno nombrado como un Colegio Bárdico legendario. Una criatura que intente tocar el instrumento sin estar sintonizado con él deberá tener éxito en una tirada de salvación de Sabiduría CD 15 o sufrirá {@damage 2d4} de daño psíquico.",
+				"Puedes usar una acción para tocar el instrumento y lanzar uno de sus conjuros. Una vez que ha sido empleado para este fin, el instrumento no podrá volver a lanzar ese conjuro concreto hasta la mañana siguiente. Los lanzamientos utilizan tu aptitud mágica y CD de salvación de conjuros.",
+				"Cuando usas el instrumento para lanzar un conjuro que hace que los objetivos queden {@condition hechizado|PHB-ES|hechizados} si fallan una tirada de salvación, esta tirada de salvación se hará con desventaja. Este efecto se aplica tanto si el instrumento es el origen del conjuro como si lo estás empleando como canalizador mágico.",
+				"Todos los instrumentos de los bardos se pueden usar para lanzar los siguientes hechizos: {@spell invisibilidad|PHB-ES}, {@spell levitar|PHB-ES}, {@spell protección contra el bien y el mal|PHB-ES} y {@spell volar|PHB-ES}.",
+				"Además la mandolina de Canaith puede ser usada para lanzar los conjuros {@spell curar heridas|PHB-ES} (nivel 3), {@spell disipar magia|PHB-ES} y {@spell protección contra energía|PHB-ES} (solo relámpago)."
 			],
 			"attachedSpells": [
-				"cure wounds",
-				"fly",
-				"invisibility",
-				"levitate",
-				"protection from evil and good",
-				"dispel magic",
-				"protection from energy"
+				"curar heridas|PHB-ES",
+				"volar|PHB-ES",
+				"invisibilidad|PHB-ES",
+				"levitar|PHB-ES",
+				"protección contra el bien y el mal|PHB-ES",
+				"disipar magia|PHB-ES",
+				"protección contra energía|PHB-ES"
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos G"
@@ -6087,35 +6087,35 @@
 			}
 		},
 		{
-			"name": "Instrument of the Bards, Cli Lyre",
+			"name": "Instrumento de los bardos, Lira de Cli",
 			"source": "DMG-ES",
-			"page": 176,
+			"page": 190,
 			"type": "INS",
 			"tier": "major",
 			"rarity": "rare",
-			"reqAttune": "by a bard",
+			"reqAttune": "con un bardo",
 			"reqAttuneTags": [
 				{
-					"class": "bard"
+					"class": "bardo"
 				}
 			],
 			"wondrous": true,
 			"weight": 2,
 			"entries": [
-				"An instrument of the bards is an exquisite example of its kind, superior to an ordinary instrument in every way. Seven types of these instruments exist, each named after a legendary bard college. A creature that attempts to play the instrument without being attuned to it must succeed on a DC 15 Wisdom saving throw or take {@damage 2d4} psychic damage.",
-				"You can use an action to play the instrument and cast one of its spells. Once the instrument has been used to cast a spell, it can't be used to cast that spell again until the next dawn. The spells use your spellcasting ability and spell save DC.",
-				"You can play the instrument while casting a spell that causes any of its targets to be {@condition charmed} on a failed saving throw, thereby imposing disadvantage on the save. This effect applies only if the spell has a somatic or a material component.",
-				"All instruments of the bards can be used to cast the following spells: {@spell fly}, {@spell invisibility}, {@spell levitate}, and {@spell protection from evil and good}.",
-				"In addition, the Cli lyre can be used to cast {@spell stone shape}, {@spell wall of fire}, and {@spell wind wall}."
+				"Un instrumento de los bardos es un objeto exquisito, superior a un instrumento ordinario en todos los aspectos. Existen siete tipos de instrumentos de esta clase, cada uno nombrado como un Colegio Bárdico legendario. Una criatura que intente tocar el instrumento sin estar sintonizado con él deberá tener éxito en una tirada de salvación de Sabiduría CD 15 o sufrirá {@damage 2d4} de daño psíquico.",
+				"Puedes usar una acción para tocar el instrumento y lanzar uno de sus conjuros. Una vez que ha sido empleado para este fin, el instrumento no podrá volver a lanzar ese conjuro concreto hasta la mañana siguiente. Los lanzamientos utilizan tu aptitud mágica y CD de salvación de conjuros.",
+				"Cuando usas el instrumento para lanzar un conjuro que hace que los objetivos queden {@condition hechizado|PHB-ES|hechizados} si fallan una tirada de salvación, esta tirada de salvación se hará con desventaja. Este efecto se aplica tanto si el instrumento es el origen del conjuro como si lo estás empleando como canalizador mágico.",
+				"Todos los instrumentos de los bardos se pueden usar para lanzar los siguientes hechizos: {@spell invisibilidad|PHB-ES}, {@spell levitar|PHB-ES}, {@spell protección contra el bien y el mal|PHB-ES} y {@spell volar|PHB-ES}.",
+				"Además la lira de Cli puede ser usada para lanzar los conjuros {@spell moldear la piedra|PHB-ES}, {@spell muro de fuego|PHB-ES} y {@spell muro de viento|PHB-ES}."
 			],
 			"attachedSpells": [
-				"stone shape",
-				"fly",
-				"invisibility",
-				"levitate",
-				"protection from evil and good",
-				"wall of fire",
-				"wind wall"
+				"moldear la piedra|PHB-ES",
+				"volar|PHB-ES",
+				"invisibilidad|PHB-ES",
+				"levitar|PHB-ES",
+				"protección contra el bien y el mal|PHB-ES",
+				"muro de fuego|PHB-ES",
+				"muro de viento|PHB-ES"
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos G"
@@ -6133,35 +6133,35 @@
 			}
 		},
 		{
-			"name": "Instrument of the Bards, Doss Lute",
+			"name": "Instrumento de los bardos, Laúd de Doss",
 			"source": "DMG-ES",
-			"page": 176,
+			"page": 190,
 			"type": "INS",
 			"tier": "major",
 			"rarity": "uncommon",
-			"reqAttune": "by a bard",
+			"reqAttune": "con un bardo",
 			"reqAttuneTags": [
 				{
-					"class": "bard"
+					"class": "bardo"
 				}
 			],
 			"wondrous": true,
 			"weight": 2,
 			"entries": [
-				"An instrument of the bards is an exquisite example of its kind, superior to an ordinary instrument in every way. Seven types of these instruments exist, each named after a legendary bard college. A creature that attempts to play the instrument without being attuned to it must succeed on a DC 15 Wisdom saving throw or take {@damage 2d4} psychic damage.",
-				"You can use an action to play the instrument and cast one of its spells. Once the instrument has been used to cast a spell, it can't be used to cast that spell again until the next dawn. The spells use your spellcasting ability and spell save DC.",
-				"You can play the instrument while casting a spell that causes any of its targets to be {@condition charmed} on a failed saving throw, thereby imposing disadvantage on the save. This effect applies only if the spell has a somatic or a material component.",
-				"All instruments of the bards can be used to cast the following spells: {@spell fly}, {@spell invisibility}, {@spell levitate}, and {@spell protection from evil and good}.",
-				"In addition, the Doss lute can be used to cast {@spell animal friendship}, {@spell protection from energy} (fire only), and {@spell protection from poison}."
+				"Un instrumento de los bardos es un objeto exquisito, superior a un instrumento ordinario en todos los aspectos. Existen siete tipos de instrumentos de esta clase, cada uno nombrado como un Colegio Bárdico legendario. Una criatura que intente tocar el instrumento sin estar sintonizado con él deberá tener éxito en una tirada de salvación de Sabiduría CD 15 o sufrirá {@damage 2d4} de daño psíquico.",
+				"Puedes usar una acción para tocar el instrumento y lanzar uno de sus conjuros. Una vez que ha sido empleado para este fin, el instrumento no podrá volver a lanzar ese conjuro concreto hasta la mañana siguiente. Los lanzamientos utilizan tu aptitud mágica y CD de salvación de conjuros.",
+				"Cuando usas el instrumento para lanzar un conjuro que hace que los objetivos queden {@condition hechizado|PHB-ES|hechizados} si fallan una tirada de salvación, esta tirada de salvación se hará con desventaja. Este efecto se aplica tanto si el instrumento es el origen del conjuro como si lo estás empleando como canalizador mágico.",
+				"Todos los instrumentos de los bardos se pueden usar para lanzar los siguientes hechizos: {@spell invisibilidad|PHB-ES}, {@spell levitar|PHB-ES}, {@spell protección contra el bien y el mal|PHB-ES} y {@spell volar|PHB-ES}.",
+				"Además el laúd de Doss puede ser usado para lanzar los conjuros {@spell encantar animal|PHB-ES}, {@spell protección contra energía|PHB-ES} (solo fuego) y {@spell protección contra veneno|PHB-ES}."
 			],
 			"attachedSpells": [
-				"animal friendship",
-				"fly",
-				"invisibility",
-				"levitate",
-				"protection from evil and good",
-				"protection from energy",
-				"protection from poison"
+				"encantar animal|PHB-ES",
+				"volar|PHB-ES",
+				"invisibilidad|PHB-ES",
+				"levitar|PHB-ES",
+				"protección contra el bien y el mal|PHB-ES",
+				"protección contra energía|PHB-ES",
+				"protección contra veneno|PHB-ES"
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos F"
@@ -6179,36 +6179,36 @@
 			}
 		},
 		{
-			"name": "Instrument of the Bards, Fochlucan Bandore",
+			"name": "Instrumento de los bardos, Bandura de Fochlucan",
 			"source": "DMG-ES",
-			"page": 176,
+			"page": 190,
 			"type": "INS",
 			"tier": "major",
 			"rarity": "uncommon",
-			"reqAttune": "by a bard",
+			"reqAttune": "con un bardo",
 			"reqAttuneTags": [
 				{
-					"class": "bard"
+					"class": "bardo"
 				}
 			],
 			"wondrous": true,
 			"weight": 2,
 			"entries": [
-				"An instrument of the bards is an exquisite example of its kind, superior to an ordinary instrument in every way. Seven types of these instruments exist, each named after a legendary bard college. A creature that attempts to play the instrument without being attuned to it must succeed on a DC 15 Wisdom saving throw or take {@damage 2d4} psychic damage.",
-				"You can use an action to play the instrument and cast one of its spells. Once the instrument has been used to cast a spell, it can't be used to cast that spell again until the next dawn. The spells use your spellcasting ability and spell save DC.",
-				"You can play the instrument while casting a spell that causes any of its targets to be {@condition charmed} on a failed saving throw, thereby imposing disadvantage on the save. This effect applies only if the spell has a somatic or a material component.",
-				"All instruments of the bards can be used to cast the following spells: {@spell fly}, {@spell invisibility}, {@spell levitate}, and {@spell protection from evil and good}.",
-				"In addition, the Fochlucan bandore can be used to cast {@spell entangle}, {@spell faerie fire}, {@spell shillelagh}, and {@spell speak with animals}."
+				"Un instrumento de los bardos es un objeto exquisito, superior a un instrumento ordinario en todos los aspectos. Existen siete tipos de instrumentos de esta clase, cada uno nombrado como un Colegio Bárdico legendario. Una criatura que intente tocar el instrumento sin estar sintonizado con él deberá tener éxito en una tirada de salvación de Sabiduría CD 15 o sufrirá {@damage 2d4} de daño psíquico.",
+				"Puedes usar una acción para tocar el instrumento y lanzar uno de sus conjuros. Una vez que ha sido empleado para este fin, el instrumento no podrá volver a lanzar ese conjuro concreto hasta la mañana siguiente. Los lanzamientos utilizan tu aptitud mágica y CD de salvación de conjuros.",
+				"Cuando usas el instrumento para lanzar un conjuro que hace que los objetivos queden {@condition hechizado|PHB-ES|hechizados} si fallan una tirada de salvación, esta tirada de salvación se hará con desventaja. Este efecto se aplica tanto si el instrumento es el origen del conjuro como si lo estás empleando como canalizador mágico.",
+				"Todos los instrumentos de los bardos se pueden usar para lanzar los siguientes hechizos: {@spell invisibilidad|PHB-ES}, {@spell levitar|PHB-ES}, {@spell protección contra el bien y el mal|PHB-ES} y {@spell volar|PHB-ES}.",
+				"Además la bandura de Fochlucan puede ser usada para lanzar los conjuros {@spell enmaraflar|PHB-ES}, {@spell fuego feérico|PHB-ES}, {@spell shillelagh|PHB-ES} y {@spell hablar con los animales|PHB-ES}."
 			],
 			"attachedSpells": [
-				"entangle",
-				"fly",
-				"invisibility",
-				"levitate",
-				"protection from evil and good",
-				"faerie fire",
-				"shillelagh",
-				"speak with animals"
+				"enmaraflar|PHB-ES",
+				"volar|PHB-ES",
+				"invisibilidad|PHB-ES",
+				"levitar|PHB-ES",
+				"protección contra el bien y el mal|PHB-ES",
+				"fuego feérico|PHB-ES",
+				"shillelagh|PHB-ES",
+				"hablar con los animales|PHB-ES"
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos F"
@@ -6226,35 +6226,35 @@
 			}
 		},
 		{
-			"name": "Instrument of the Bards, Mac-Fuirmidh Cittern",
+			"name": "Instrumento de los bardos, Cistro de Mac-Fuirmidh",
 			"source": "DMG-ES",
-			"page": 176,
+			"page": 190,
 			"type": "INS",
 			"tier": "major",
 			"rarity": "uncommon",
-			"reqAttune": "by a bard",
+			"reqAttune": "con un bardo",
 			"reqAttuneTags": [
 				{
-					"class": "bard"
+					"class": "bardo"
 				}
 			],
 			"wondrous": true,
 			"weight": 2,
 			"entries": [
-				"An instrument of the bards is an exquisite example of its kind, superior to an ordinary instrument in every way. Seven types of these instruments exist, each named after a legendary bard college. A creature that attempts to play the instrument without being attuned to it must succeed on a DC 15 Wisdom saving throw or take {@damage 2d4} psychic damage.",
-				"You can use an action to play the instrument and cast one of its spells. Once the instrument has been used to cast a spell, it can't be used to cast that spell again until the next dawn. The spells use your spellcasting ability and spell save DC.",
-				"You can play the instrument while casting a spell that causes any of its targets to be {@condition charmed} on a failed saving throw, thereby imposing disadvantage on the save. This effect applies only if the spell has a somatic or a material component.",
-				"All instruments of the bards can be used to cast the following spells: {@spell fly}, {@spell invisibility}, {@spell levitate}, and {@spell protection from evil and good}.",
-				"In addition, the Mac-Fuirmidh cittern can be used to cast {@spell barkskin}, {@spell cure wounds}, and {@spell fog cloud}."
+				"Un instrumento de los bardos es un objeto exquisito, superior a un instrumento ordinario en todos los aspectos. Existen siete tipos de instrumentos de esta clase, cada uno nombrado como un Colegio Bárdico legendario. Una criatura que intente tocar el instrumento sin estar sintonizado con él deberá tener éxito en una tirada de salvación de Sabiduría CD 15 o sufrirá {@damage 2d4} de daño psíquico.",
+				"Puedes usar una acción para tocar el instrumento y lanzar uno de sus conjuros. Una vez que ha sido empleado para este fin, el instrumento no podrá volver a lanzar ese conjuro concreto hasta la mañana siguiente. Los lanzamientos utilizan tu aptitud mágica y CD de salvación de conjuros.",
+				"Cuando usas el instrumento para lanzar un conjuro que hace que los objetivos queden {@condition hechizado|PHB-ES|hechizados} si fallan una tirada de salvación, esta tirada de salvación se hará con desventaja. Este efecto se aplica tanto si el instrumento es el origen del conjuro como si lo estás empleando como canalizador mágico.",
+				"Todos los instrumentos de los bardos se pueden usar para lanzar los siguientes hechizos: {@spell invisibilidad|PHB-ES}, {@spell levitar|PHB-ES}, {@spell protección contra el bien y el mal|PHB-ES} y {@spell volar|PHB-ES}.",
+				"Además el cistro de Mac-Fuirmidh puede ser usado para lanzar los conjuros {@spell piel robliza|PHB-ES}, {@spell curar heridas|PHB-ES} y {@spell nube de oscurecimiento|PHB-ES}."
 			],
 			"attachedSpells": [
-				"barkskin",
-				"fly",
-				"invisibility",
-				"levitate",
-				"protection from evil and good",
-				"cure wounds",
-				"fog cloud"
+				"piel robliza|PHB-ES",
+				"volar|PHB-ES",
+				"invisibilidad|PHB-ES",
+				"levitar|PHB-ES",
+				"protección contra el bien y el mal|PHB-ES",
+				"curar heridas|PHB-ES",
+				"nube de oscurecimiento|PHB-ES"
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos F"
@@ -6272,35 +6272,35 @@
 			}
 		},
 		{
-			"name": "Instrument of the Bards, Ollamh Harp",
+			"name": "Instrumento de los bardos, Arpa de Ollamh",
 			"source": "DMG-ES",
-			"page": 176,
+			"page": 190,
 			"type": "INS",
 			"tier": "major",
 			"rarity": "legendary",
-			"reqAttune": "by a bard",
+			"reqAttune": "con un bardo",
 			"reqAttuneTags": [
 				{
-					"class": "bard"
+					"class": "bardo"
 				}
 			],
 			"wondrous": true,
 			"weight": 2,
 			"entries": [
-				"An instrument of the bards is an exquisite example of its kind, superior to an ordinary instrument in every way. Seven types of these instruments exist, each named after a legendary bard college. A creature that attempts to play the instrument without being attuned to it must succeed on a DC 15 Wisdom saving throw or take {@damage 2d4} psychic damage.",
-				"You can use an action to play the instrument and cast one of its spells. Once the instrument has been used to cast a spell, it can't be used to cast that spell again until the next dawn. The spells use your spellcasting ability and spell save DC.",
-				"You can play the instrument while casting a spell that causes any of its targets to be {@condition charmed} on a failed saving throw, thereby imposing disadvantage on the save. This effect applies only if the spell has a somatic or a material component.",
-				"All instruments of the bards can be used to cast the following spells: {@spell fly}, {@spell invisibility}, {@spell levitate}, and {@spell protection from evil and good}.",
-				"In addition, the Ollamh harp can be used to cast {@spell confusion}, {@spell control weather}, and {@spell fire storm}."
+				"Un instrumento de los bardos es un objeto exquisito, superior a un instrumento ordinario en todos los aspectos. Existen siete tipos de instrumentos de esta clase, cada uno nombrado como un Colegio Bárdico legendario. Una criatura que intente tocar el instrumento sin estar sintonizado con él deberá tener éxito en una tirada de salvación de Sabiduría CD 15 o sufrirá {@damage 2d4} de daño psíquico.",
+				"Puedes usar una acción para tocar el instrumento y lanzar uno de sus conjuros. Una vez que ha sido empleado para este fin, el instrumento no podrá volver a lanzar ese conjuro concreto hasta la mañana siguiente. Los lanzamientos utilizan tu aptitud mágica y CD de salvación de conjuros.",
+				"Cuando usas el instrumento para lanzar un conjuro que hace que los objetivos queden {@condition hechizado|PHB-ES|hechizados} si fallan una tirada de salvación, esta tirada de salvación se hará con desventaja. Este efecto se aplica tanto si el instrumento es el origen del conjuro como si lo estás empleando como canalizador mágico.",
+				"Todos los instrumentos de los bardos se pueden usar para lanzar los siguientes hechizos: {@spell invisibilidad|PHB-ES}, {@spell levitar|PHB-ES}, {@spell protección contra el bien y el mal|PHB-ES} y {@spell volar|PHB-ES}.",
+				"Además el arpa de Ollamh puede ser usada para lanzar los conjuros {@spell confusión|PHB-ES}, {@spell controlar el clima|PHB-ES} y {@spell tormenta de fuego|PHB-ES}."
 			],
 			"attachedSpells": [
-				"confusion",
-				"fly",
-				"invisibility",
-				"levitate",
-				"protection from evil and good",
-				"control weather",
-				"fire storm"
+				"confusión|PHB-ES",
+				"volar|PHB-ES",
+				"invisibilidad|PHB-ES",
+				"levitar|PHB-ES",
+				"protección contra el bien y el mal|PHB-ES",
+				"controlar el clima|PHB-ES",
+				"tormenta de fuego|PHB-ES"
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos I"
@@ -7375,9 +7375,9 @@
 			}
 		},
 		{
-			"name": "Medallion of Thoughts",
+			"name": "Medallón de los pensamientos",
 			"source": "DMG-ES",
-			"page": 181,
+			"page": 194,
 			"srd": true,
 			"tier": "major",
 			"rarity": "uncommon",
@@ -7388,13 +7388,13 @@
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
-				"The medallion has 3 charges. While wearing it, you can use an action and expend 1 charge to cast the {@spell detect thoughts} spell (save DC 13) from it. The medallion regains {@dice 1d3} expended charges daily at dawn."
+				"El medallón tiene 3 cargas. Mientras lo lleves puesto, podrás utilizar una acción para gastar 1 carga y lanzar el conjuro {@spell detectar pensamientos|PHB-ES} (tirada de salvación CD 13) desde él. Recupera {@dice 1d3} cargas empleadas cada día, al amanecer."
 			],
 			"optionalfeatures": [
 				"Replicar objeto mágico|TCE-ES"
 			],
 			"attachedSpells": [
-				"detect thoughts"
+				"detectar pensamientos|PHB-ES"
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos F"
@@ -7615,9 +7615,9 @@
 			]
 		},
 		{
-			"name": "Necklace of Adaptation",
+			"name": "Collar de adaptación",
 			"source": "DMG-ES",
-			"page": 182,
+			"page": 175,
 			"srd": true,
 			"tier": "major",
 			"rarity": "uncommon",
@@ -7625,7 +7625,7 @@
 			"wondrous": true,
 			"weight": 1,
 			"entries": [
-				"While wearing this necklace, you can breathe normally in any environment, and you have advantage on saving throws made against harmful gases and vapors (such as {@spell cloudkill} and {@spell stinking cloud} effects, inhaled poisons, and the breath weapons of some dragons)."
+				"Si llevas este collar, puedes respirar normalmente en cualquier entorno y tienes ventaja en tiradas de salvación contra gases y vapores (como los de los conjuros {@spell nube aniquiladora|PHB-ES} y {@spell nube apestosa|PHB-ES}, venenos inhalados y los ataques de aliento de algunos dragones)."
 			],
 			"optionalfeatures": [
 				"Replicar objeto mágico|TCE-ES"
@@ -8162,9 +8162,9 @@
 			]
 		},
 		{
-			"name": "Periapt of Wound Closure",
+			"name": "Talismán de cerrar heridas",
 			"source": "DMG-ES",
-			"page": 184,
+			"page": 200,
 			"srd": true,
 			"tier": "major",
 			"rarity": "uncommon",
@@ -8172,7 +8172,7 @@
 			"wondrous": true,
 			"weight": 1,
 			"entries": [
-				"While you wear this pendant, you stabilize whenever you are dying at the start of your turn. In addition, whenever you roll a Hit Die to regain hit points, double the number of hit points it restores."
+				"Mientras lleves este talismán, te estabilizas automáticamente si al principio de tu turno estás agonizando. Además, cuando tires un Dado de Golpe para recuperar puntos de golpe, duplica el número de puntos de golpe que recuperas."
 			],
 			"optionalfeatures": [
 				"Replicar objeto mágico|TCE-ES"
@@ -8219,7 +8219,7 @@
 			]
 		},
 		{
-			"name": "Pipes of Haunting",
+			"name": "Flauta de la aparición",
 			"source": "DMG-ES",
 			"page": 185,
 			"srd": true,
@@ -8232,7 +8232,7 @@
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
-				"You must be proficient with wind instruments to use these pipes. They have 3 charges. You can use an action to play them and expend 1 charge to create an eerie, spellbinding tune. Each creature within 30 feet of you that hears you play must succeed on a DC 15 Wisdom saving throw or become {@condition frightened} of you for 1 minute. If you wish, all creatures in the area that aren't hostile toward you automatically succeed on the saving throw. A creature that fails the saving throw can repeat it at the end of each of its turns, ending the effect on itself on a success. A creature that succeeds on its saving throw is immune to the effect of these pipes for 24 hours. The pipes regain {@dice 1d3} expended charges daily at dawn."
+				"Debes ser competente con instrumentos de viento para poder usar esta flauta. Tiene 3 cargas. Puedes emplear una acción para tocarla y gastar 1 carga, creando una melodía inquietante pero a la vez fascinante. Todas las criaturas que se encuentren a 30 pies o menos de ti y que te escuchen tocar deberán tener éxito en una tirada de salvación de Sabiduría CD 15 o quedarán {@condition asustado|PHB-ES|asustadas} durante l minuto. Si así lo deseas, todas las criaturas del área que no sean hostiles hacia ti tendrán éxito automáticamente en esta tirada. Una criatura que haya fallado puede repetir la tirada de salvación al final de cada uno de sus turnos, librándose del efecto si tiene éxito. Una criatura que supere la tirada de salvación es inmune al efecto de la flauta durante 24 horas. La flauta recupera {@dice 1d3} cargas utilizadas cada día, al amanecer."
 			],
 			"optionalfeatures": [
 				"Replicar objeto mágico|TCE-ES"
@@ -8253,7 +8253,7 @@
 			}
 		},
 		{
-			"name": "Pipes of the Sewers",
+			"name": "Flauta de las cloacas",
 			"source": "DMG-ES",
 			"page": 185,
 			"srd": true,
@@ -8267,9 +8267,9 @@
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
-				"You must be proficient with wind instruments to use these pipes. While you are attuned to the pipes, ordinary rats and giant rats are indifferent toward you and will not attack you unless you threaten or harm them.",
-				"The pipes have 3 charges. If you play the pipes as an action, you can use a bonus action to expend 1 to 3 charges, calling forth one {@creature swarm of rats} with each expended charge, provided that enough rats are within half a mile of you to be called in this fashion (as determined by the DM). If there aren't enough rats to form a swarm, the charge is wasted. Called swarms move toward the music by the shortest available route but aren't under your control otherwise. The pipes regain {@dice 1d3} expended charges daily at dawn.",
-				"Whenever a {@creature swarm of rats} that isn't under another creature's control comes within 30 feet of you while you are playing the pipes, you can make a Charisma check contested by the swarm's Wisdom check. If you lose the contest, the swarm behaves as it normally would and can't be swayed by the pipes' music for the next 24 hours. If you win the contest, the swarm is swayed by the pipes' music and becomes friendly to you and your companions for as long as you continue to play the pipes each round as an action. A friendly swarm obeys your commands. If you issue no commands to a friendly swarm, it defends itself but otherwise takes no actions. If a friendly swarm starts its turn and can't hear the pipes' music, your control over that swarm ends, and the swarm behaves as it normally would and can't be swayed by the pipes' music for the next 24 hours."
+				"Debes ser competente con instrumentos de viento para poder usar esta flauta. Mientras estés sintonizado con ella, las ratas ordinarias y gigantes se mostrarán indiferentes hacia ti, y no te atacarán a menos que las dañes o amenaces.",
+				"La flauta tiene 3 cargas. S i empleas una acción para tocar la flauta, puedes además utilizar una acción adicional para gastar de 1 a 3 cargas, convocando a un {@creature enjambre de ratas|MM-ES} por cada carga usada, suponiendo que haya suficientes ratas a media milla de ti como para ser convocadas de esta manera. Si no hay suficientes ratas para formar un enjambre, la carga se desperdicia. Los enjambres convocados se desplazan hacia la música por el camino más corto, pero por lo demás no están bajo tu control. La flauta recupera {@dice 1d3} cargas empleadas cada día, al amanecer.",
+				"Cuando un {@creature enjambre de ratas|MM-ES} que no esté bajo el control de otra criatura se acerque a 30 pies o menos de ti mientras tocas la flauta, puedes hacer una tirada enfrentada de Carisma contra la Sabiduría del enjambre. Si fallas esta tirada, el enjambre se comporta de forma normal y no puede ser influido por la música de la flauta en las próximas 24 horas. Si la superas, el enjambre se ve influenciado por la música de la flauta y se vuelve amistoso hacia ti y tus compañeros mientras sigas tocando la flauta cada asalto, utilizando una acción para ello. Un enjambre amistoso obedece tus órdenes. Si no les das ninguna, se defenderá de criaturas hostiles pero no realizará ninguna otra acción."
 			],
 			"optionalfeatures": [
 				"Replicar objeto mágico|TCE-ES"
@@ -9155,30 +9155,30 @@
 			]
 		},
 		{
-			"name": "Quiver of Ehlonna",
+			"name": "Carcaj de Ehlonna",
 			"source": "DMG-ES",
-			"page": 189,
+			"page": 172,
 			"srd": "Efficient Quiver",
 			"tier": "major",
 			"rarity": "uncommon",
 			"wondrous": true,
 			"weight": 2,
 			"entries": [
-				"Each of the quiver's three compartments connects to an extradimensional space that allows the quiver to hold numerous items while never weighing more than 2 pounds. The shortest compartment can hold up to sixty {@item arrow|phb|arrows}, {@item crossbow bolt|phb|bolts}, or similar objects. The midsize compartment holds up to eighteen {@item javelin|phb|javelins} or similar objects. The longest compartment holds up to six long objects, such as bows, {@item quarterstaff|phb|quarterstaffs}, or {@item spear|phb|spears}.",
-				"You can draw any item the quiver contains as if doing so from a regular quiver or scabbard."
+				"Cada uno de los tres compartimentos de este objeto está conectado con un espacio extradimensional, lo que permite a esta aljaba contener muchos objetos sin pesar nunca más de 2 libras. El compartimento más pequeño puede guardar hasta sesenta {@item flecha|PHB-ES|flechas}, {@item virote de ballesta|PHB-ES|virotes} u objetos similares. El compartimento intermedio puede albergar hasta dieciocho {@item jabalina|PHB-ES|jabalinas} u objetos equivalentes. El compartimento más grande puede contener hasta seis objetos largos, como arcos, {@item bastón|PHB-ES|bastones} o @item lanza|PHB-ES|lanzas}.",
+				"Puedes sacar cualquier objeto contenido en el carcaj de Ehlonna como si lo hicieras de una aljaba o vaina normal."
 			],
 			"containerCapacity": {
 				"item": [
 					{
-						"crossbow bolt|phb": 60,
-						"arrow|phb": 60
+						"virote de ballesta|PHB-ES": 60,
+						"flecha|PHB-ES": 60
 					},
 					{
-						"javelin|phb": 18
+						"jabalina|PHB-ES": 18
 					},
 					{
-						"quarterstaff|phb": 6,
-						"spear|phb": 6
+						"bastón|PHB-ES": 6,
+						"lanza|PHB-ES": 6
 					}
 				],
 				"weightless": true
@@ -9632,22 +9632,22 @@
 			}
 		},
 		{
-			"name": "Ring of Jumping",
+			"name": "Anillo de salto",
 			"source": "DMG-ES",
-			"page": 191,
+			"page": 155,
 			"srd": true,
 			"type": "RG",
 			"tier": "major",
 			"rarity": "uncommon",
 			"reqAttune": true,
 			"entries": [
-				"While wearing this ring, you can cast the {@spell jump} spell from it as a bonus action at will, but can target only yourself when you do so."
+				"Mientras lleves este anillo, puedes lanzar a voluntad el conjuro {@spell salto|PHB-ES} desde él usando una acción adicional, pero solo tú podrás ser el objetivo."
 			],
 			"optionalfeatures": [
 				"Replicar objeto mágico|TCE-ES"
 			],
 			"attachedSpells": [
-				"jump"
+				"salto|PHB-ES"
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos F"
@@ -9673,18 +9673,18 @@
 			]
 		},
 		{
-			"name": "Ring of Mind Shielding",
+			"name": "Anillo de escudo mental",
 			"source": "DMG-ES",
-			"page": 191,
+			"page": 153,
 			"srd": true,
 			"type": "RG",
 			"tier": "major",
 			"rarity": "uncommon",
 			"reqAttune": true,
 			"entries": [
-				"While wearing this ring, you are immune to magic that allows other creatures to read your thoughts, determine whether you are lying, know your alignment, or know your creature type. Creatures can telepathically communicate with you only if you allow it.",
-				"You can use an action to cause the ring to become {@condition invisible} until you use another action to make it visible, until you remove the ring, or until you die.",
-				"If you die while wearing the ring, your soul enters it, unless it already houses a soul. You can remain in the ring or depart for the afterlife. As long as your soul is in the ring, you can telepathically communicate with any creature wearing it. A wearer can't prevent this telepathic communication."
+				"Mientras lleves este anillo, eres inmune a la magia que permita a otras criaturas leer tus pensamientos, determinar si mientes, conocer tu alineamiento o averiguar tu tipo de criatura. Además, solo podrán comunicarse telepáticamente contigo si se lo permites.",
+				"Puedes usar una acción para que el anillo se vuelva {@condition invisible} hasta que emplees otra acción para hacerlo visible, te lo quites o mueras.",
+				"Si falleces mientras llevas el anillo, tu alma entrará en él a menos que ya tenga otra dentro. Puedes permanecer en el anillo o partir al más allá. Mientras tu alma permanezca en este objeto, puedes comunicarte telepáticamente con cualquier criatura que lo lleve puesto. Esta última no puede evitar esta comunicación telepática."
 			],
 			"optionalfeatures": [
 				"Replicar objeto mágico|TCE-ES"
@@ -10088,9 +10088,9 @@
 			]
 		},
 		{
-			"name": "Ring of Warmth",
+			"name": "Anillo de calidez",
 			"source": "DMG-ES",
-			"page": 193,
+			"page": 152,
 			"srd": true,
 			"type": "RG",
 			"resist": [
@@ -10100,7 +10100,7 @@
 			"rarity": "uncommon",
 			"reqAttune": true,
 			"entries": [
-				"While wearing this ring, you have resistance to cold damage. In addition, you and everything you wear and carry are unharmed by temperatures as low as -50 degrees Fahrenheit."
+				"Tienes resistencia al daño de frío cuando llevas puesto este anillo. Además, tú y todo lo que lleves y vistas no se ve dañado por el frío provocado por temperaturas de hasta -45 °C. Por debajo de esta temperatura os veréis afectados normalmente."
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos F"
@@ -10154,15 +10154,15 @@
 			]
 		},
 		{
-			"name": "Ring of Water Walking",
+			"name": "Anillo de caminar sobre las aguas",
 			"source": "DMG-ES",
-			"page": 193,
+			"page": 152,
 			"srd": true,
 			"type": "RG",
 			"tier": "major",
 			"rarity": "uncommon",
 			"entries": [
-				"While wearing this ring, you can stand on and move across any liquid surface as if it were solid ground."
+				"Mientras lleves este anillo, puedes permanecer encima de cualquier líquido y avanzar sobre él como si fuera terreno sólido."
 			],
 			"optionalfeatures": [
 				"Replicar objeto mágico|TCE-ES"
@@ -12483,9 +12483,9 @@
 			}
 		},
 		{
-			"name": "Stone of Good Luck",
+			"name": "Piedra de la buena fortuna",
 			"source": "DMG-ES",
-			"page": 205,
+			"page": 196,
 			"srd": true,
 			"tier": "major",
 			"rarity": "uncommon",
@@ -12494,7 +12494,7 @@
 			"bonusSavingThrow": "+1",
 			"bonusAbilityCheck": "+1",
 			"entries": [
-				"While this polished agate is on your person, you gain a +1 bonus to ability checks and saving throws."
+				"Cuando tienes esta ágata pulida en tu poder, obtienes un +1 a las pruebas de característica y tiradas de salvación."
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos F"
@@ -14192,18 +14192,18 @@
 			]
 		},
 		{
-			"name": "Wind Fan",
+			"name": "Abanico del viento",
 			"source": "DMG-ES",
-			"page": 213,
+			"page": 150,
 			"srd": true,
 			"tier": "major",
 			"rarity": "uncommon",
 			"wondrous": true,
 			"entries": [
-				"While holding this fan, you can use an action to cast the {@spell gust of wind} spell (save DC 13) from it. Once used, the fan shouldn't be used again until the next dawn. Each time it is used again before then, it has a cumulative {@chance 20} chance of not working and tearing into useless, nonmagical tatters."
+				"Mientras sostengas este abanico, puedes usar una acción para lanzar {@spell ráfaga de viento|PHB-ES} (tirada de salvación CD 13) desde él. Una vez empleado, no debe ser utilizado de nuevo hasta el siguiente amanecer. Cada vez que se use antes de ese momento, existe una probabilidad acumulativa del {@chance 20|20 %} de que no funcione y se desgarre en jirones inútiles, carentes de magia."
 			],
 			"attachedSpells": [
-				"gust of wind"
+				"ráfaga de viento|PHB-ES"
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos F"
@@ -14221,9 +14221,9 @@
 			}
 		},
 		{
-			"name": "Winged Boots",
+			"name": "Botas aladas",
 			"source": "DMG-ES",
-			"page": 214,
+			"page": 168,
 			"srd": true,
 			"tier": "major",
 			"rarity": "uncommon",
@@ -14235,8 +14235,8 @@
 				}
 			},
 			"entries": [
-				"While you wear these boots, you have a flying speed equal to your walking speed. You can use the boots to fly for up to 4 hours, all at once or in several shorter flights, each one using a minimum of 1 minute from the duration. If you are flying when the duration expires, you descend at a rate of 30 feet per round until you land.",
-				"The boots regain 2 hours of flying capability for every 12 hours they aren't in use."
+				"Mientras lleves puestas estas botas, tendrás una velocidad volando igual a tu velocidad caminando. Puedes usar las botas para volar hasta 4 horas, todas seguidas o en varios vuelos más cortos. Cada uno de ellos gastará una duración mínima de 1 minuto. Si estás volando cuando la duración expira, desciendes a una velocidad de 30 pies por asalto hasta que aterrices.",
+				"Las botas recuperan 2 horas de vuelo por cada 12 horas que no se utilicen."
 			],
 			"optionalfeatures": [
 				"Replicar objeto mágico|TCE-ES"
@@ -14417,10 +14417,10 @@
 			}
 		},
 		{
-			"name": "Armor of Vulnerability",
+			"name": "Armadura de vulnerabilidad",
 			"source": "DMG-ES",
-			"page": 152,
-			"baseItem": "plate armor|phb",
+			"page": 158,
+			"baseItem": "armadura de placas|PHB-ES",
 			"type": "HA",
 			"tier": "major",
 			"rarity": "rare",
@@ -14431,9 +14431,9 @@
 			"strength": "15",
 			"stealth": true,
 			"items": [
-				"Armor of Vulnerability (Bludgeoning)",
-				"Armor of Vulnerability (Piercing)",
-				"Armor of Vulnerability (Slashing)"
+				"Armadura de vulnerabilidad (Contundente)",
+				"Armadura de vulnerabilidad (Perforante)",
+				"Armadura de vulnerabilidad (Cortante)"
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos G"
@@ -14599,21 +14599,21 @@
 			}
 		},
 		{
-			"name": "Figurine of Wondrous Power",
+			"name": "Estatuilla de poder maravilloso",
 			"source": "DMG-ES",
-			"page": 169,
+			"page": 183,
 			"rarity": "varies",
 			"wondrous": true,
 			"items": [
-				"Figurine of Wondrous Power, Bronze Griffon",
-				"Figurine of Wondrous Power, Ebony Fly",
-				"Figurine of Wondrous Power, Golden Lions",
-				"Figurine of Wondrous Power, Ivory Goats",
-				"Figurine of Wondrous Power, Marble Elephant",
-				"Figurine of Wondrous Power, Obsidian Steed",
-				"Figurine of Wondrous Power, Onyx Dog",
-				"Figurine of Wondrous Power, Serpentine Owl",
-				"Figurine of Wondrous Power, Silver Raven"
+				"Estatuilla de poder maravilloso, Grifo de bronce",
+				"Estatuilla de poder maravilloso, Mosca de ébano",
+				"Estatuilla de poder maravilloso, Leones dorados",
+				"Estatuilla de poder maravilloso, Cabras de marfil",
+				"Estatuilla de poder maravilloso, Elefante de mármol",
+				"Estatuilla de poder maravilloso, Corcel de obsidiana",
+				"Estatuilla de poder maravilloso, Perro de ónice",
+				"Estatuilla de poder maravilloso, Búho de serpentina",
+				"Estatuilla de poder maravilloso, Cuervo de plata"
 			],
 			"fluff": {
 				"images": [
@@ -14652,38 +14652,38 @@
 			}
 		},
 		{
-			"name": "Instrument of the Bards",
+			"name": "Instrumento de los bardos",
 			"source": "DMG-ES",
-			"page": 176,
+			"page": 190,
 			"type": "INS",
 			"rarity": "varies",
-			"reqAttune": "by a bard",
+			"reqAttune": "con un bardo",
 			"reqAttuneTags": [
 				{
-					"class": "bard"
+					"class": "bardo"
 				}
 			],
 			"wondrous": true,
 			"entries": [
-				"An instrument of the bards is an exquisite example of its kind, superior to an ordinary instrument in every way. Seven types of these instruments exist, each named after a legendary bard college. A creature that attempts to play the instrument without being attuned to it must succeed on a DC 15 Wisdom saving throw or take {@damage 2d4} psychic damage.",
-				"You can use an action to play the instrument and cast one of its spells. Once the instrument has been used to cast a spell, it can't be used to cast that spell again until the next dawn. The spells use your spellcasting ability and spell save DC.",
-				"You can play the instrument while casting a spell that causes any of its targets to be {@condition charmed} on a failed saving throw, thereby imposing disadvantage on the save. This effect applies only if the spell has a somatic or a material component.",
-				"All instruments of the bards can be used to cast the following spells: {@spell fly}, {@spell invisibility}, {@spell levitate}, and {@spell protection from evil and good}."
+				"Un instrumento de los bardos es un objeto exquisito, superior a un instrumento ordinario en todos los aspectos. Existen siete tipos de instrumentos de esta clase, cada uno nombrado como un Colegio Bárdico legendario. Una criatura que intente tocar el instrumento sin estar sintonizado con él deberá tener éxito en una tirada de salvación de Sabiduría CD 15 o sufrirá {@damage 2d4} de daño psíquico.",
+				"Puedes usar una acción para tocar el instrumento y lanzar uno de sus conjuros. Una vez que ha sido empleado para este fin, el instrumento no podrá volver a lanzar ese conjuro concreto hasta la mañana siguiente. Los lanzamientos utilizan tu aptitud mágica y CD de salvación de conjuros.",
+				"Cuando usas el instrumento para lanzar un conjuro que hace que los objetivos queden {@condition hechizado|PHB-ES|hechizados} si fallan una tirada de salvación, esta tirada de salvación se hará con desventaja. Este efecto se aplica tanto si el instrumento es el origen del conjuro como si lo estás empleando como canalizador mágico.",
+				"Todos los instrumentos de los bardos se pueden usar para lanzar los siguientes hechizos: {@spell invisibilidad|PHB-ES}, {@spell levitar|PHB-ES}, {@spell protección contra el bien y el mal|PHB-ES} y {@spell volar|PHB-ES}."
 			],
 			"items": [
-				"Instrument of the Bards, Anstruth Harp",
-				"Instrument of the Bards, Canaith Mandolin",
-				"Instrument of the Bards, Cli Lyre",
-				"Instrument of the Bards, Doss Lute",
-				"Instrument of the Bards, Fochlucan Bandore",
-				"Instrument of the Bards, Mac-Fuirmidh Cittern",
-				"Instrument of the Bards, Ollamh Harp"
+				"Instrumento de los bardos, Arpa de Anstruth",
+				"Instrumento de los bardos, Mandolina de Canaith",
+				"Instrumento de los bardos, Lira de Cli",
+				"Instrumento de los bardos, Laúd de Doss",
+				"Instrumento de los bardos, Bandera de Fochlucan",
+				"Instrumento de los bardos, Cistro de Mac-Fuirmidh",
+				"Instrumento de los bardos, Arpa de Ollamh"
 			],
 			"attachedSpells": [
-				"fly",
-				"invisibility",
-				"levitate",
-				"protection from evil and good"
+				"volar|PHB-ES",
+				"invisibilidad|PHB-ES",
+				"levitar|PHB-ES",
+				"protección contra el bien y el mal|PHB-ES"
 			]
 		},
 		{
