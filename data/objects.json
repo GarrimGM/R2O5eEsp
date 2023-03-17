@@ -1,0 +1,425 @@
+{
+	"object": [
+		{
+			"name": "Balista",
+			"source": "DMG-ES",
+			"page": 255,
+			"size": "L",
+			"objectType": "SW",
+			"ac": 15,
+			"hp": 50,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"entries": [
+				"Una balista es una ballesta enorme, que arroja virotes muy pesados. Para dispararla es preciso haberla cargado y apuntado al objetivo antes. Así, es necesario invertir una acción en cargarla, otra en apuntar y una tercera en disparar."
+			],
+			"actionEntries": [
+				{
+					"type": "actions",
+					"name": "Virote",
+					"entries": [
+						{
+							"type": "attack",
+							"attackType": "RW",
+							"attackEntries": [
+								"{@hit +6} to hit, range 120/480 ft., one target."
+							],
+							"hitEntries": [
+								"16 ({@damage 3d10}) piercing damage."
+							]
+						}
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/5etools-mirror-1/5etools-mirror-1.github.io/master/img/vehicles/tokens/DMG/Ballista.png"
+		},
+		{
+			"name": "Cañón",
+			"source": "DMG-ES",
+			"page": 255,
+			"size": "L",
+			"objectType": "SW",
+			"ac": 19,
+			"hp": 75,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"entries": [
+				"Los cañones son armas que, mediante la pólvora, propulsan pesadas bolas de hierro por el aire a gran velocidad, de modo que causan una gran destrucción cuando estas impactan. En campañas en las que no se utiliza la pólvora los cañones pueden ser artilugios arcanos, construidos por gnomos astutos o ingenieros mágicos.",
+				"La mayoría de los cañones están apoyados sobre un armazón de madera con ruedas. Para disparar un cañón es preciso haberlo cargado y apuntado al objetivo antes. Así, es necesario invertir una acción en cargarlo, otra en apuntar y una tercera en disparar."
+			],
+			"actionEntries": [
+				{
+					"type": "actions",
+					"name": "Bala de cañón",
+					"entries": [
+						{
+							"type": "attack",
+							"attackType": "RW",
+							"attackEntries": [
+								"{@hit +6} to hit, range 600/2,400 ft., one target."
+							],
+							"hitEntries": [
+								"44 ({@damage 8d10}) bludgeoning damage."
+							]
+						}
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/5etools-mirror-1/5etools-mirror-1.github.io/master/img/vehicles/tokens/DMG/Cannon.png"
+		},
+		{
+			"name": "Objeto genérico",
+			"source": "DMG-ES",
+			"page": 246,
+			"srd": true,
+			"size": "V",
+			"objectType": "GEN",
+			"ac": {
+				"special": "Varies (see below)"
+			},
+			"hp": {
+				"special": "Varies (see below)"
+			},
+			"immune": [
+				{
+					"special": "Varies (see below)"
+				}
+			],
+			"entries": [
+				"Cuando los aventureros necesiten cortar una cuerda, hacer añicos una ventana o romper el ataúd de un vampiro, la única regla general es esta: con suficiente tiempo y las herramientas adecuadas, los personajes pueden destruir cualquier cosa susceptible de ser destruida. Recurre al sentido común para decidir si una criatura logra dañar un objeto con éxito. ¿Puede el guerrero cortar un trozo del muro de piedra con su espada? La respuesta es \"no\". Lo más probable es que la espada se rompa antes que la pared.",
+				"A efectos de estas reglas, un objeto es un artefacto discreto e inanimado, como una ventana, puerta, espada, libro, mesa, silla o piedra. No lo sería un edificio ni un vehículo, por ejemplo, ya que están compuestos de muchos otros objetos.",
+				{
+					"type": "entries",
+					"name": "Perfiles de los objetos",
+					"entries": [
+						"Cuando el tiempo es relevante, puedes asignar una Clase de Armadura y un número de puntos de golpe a cualquier objeto destructible. También es posible dotarlo de inmunidades, resistencias y vulnerabilidades a tipos de daño concretos.",
+						{
+							"type": "entries",
+							"name": "Clase de Armadura",
+							"entries": [
+								" La Clase de Armadura de un objeto es una medida de la dificultad de dañarlo cuando se le golpea, ya que al ser inanimado no tiene forma alguna de esquivar o apartarse. La tabla \"Clase de Armadura de un objeto\" sugiere una serie de valores de CA en función del material.",
+								{
+									"type": "table",
+									"caption": "Clase de Armadura de un objeto",
+									"colLabels": [
+										"Material",
+										"CA"
+									],
+									"colStyles": [
+										"col-6",
+										"col-6"
+									],
+									"rows": [
+										[
+											"Tela, papel, cuerda",
+											"11"
+										],
+										[
+											"Cristal, vidrio, hielo",
+											"13"
+										],
+										[
+											"Madera, hueso",
+											"15"
+										],
+										[
+											"Piedra",
+											"17"
+										],
+										[
+											"Hierro, acero",
+											"19"
+										],
+										[
+											"Mithral",
+											"21"
+										],
+										[
+											"Adamantina",
+											"23"
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Puntos de golpe",
+							"entries": [
+								" Los puntos de golpe de un objeto determinan la cantidad de daño que puede sufrir antes de perder por completo su integridad estructural. Los objetos resistentes tienen más puntos de golpe que los frágiles. Además, los objetos grandes suelen poseer más puntos de golpe que los pequeños. La excepción es cuando romper una parte pequeña de un objeto grande tiene el mismo efecto que destruir el objeto por completo. La tabla \"Puntos de golpe de un objeto\" enumera cuántos puntos de golpe son apropiados para objetos, tanto frágiles como resistentes, en función de su tamaño (Grande o más pequeño).",
+								{
+									"type": "table",
+									"caption": "Puntos de golpe de un objeto",
+									"colLabels": [
+										"Tamaño",
+										"Frágil",
+										"Resistente"
+									],
+									"colStyles": [
+										"col-6",
+										"col-6"
+									],
+									"rows": [
+										[
+											"Diminuto (botella, cerrojo)",
+											"2 (1d4)",
+											"5 (2d4)"
+										],
+										[
+											"Pequeño (cofre, laúd)",
+											"3 (1d6)",
+											"10 (3d6)"
+										],
+										[
+											"Mediano (barril, lámpara de araña)",
+											"4 (1d8)",
+											"18 (4d8)"
+										],
+										[
+											"Grande (carreta, ventana de 10 por 10 pies)",
+											"5 (1d10)",
+											"27 (5d10)"
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Objetos Enormes y Garéantuescos",
+							"entries": [
+								"Las armas normales no sirven prácticamente de nada contra objetos Enormes y Gargantuescos, como pueden ser una estatua colosal, una alta columna de piedra o una roca gigantesca. Dicho esto, una antorcha es suficiente para hacer arder un tapiz Enorme y un conjuro de terremoto puede reducir un coloso a escombros. Si quieres, puedes llevar la cuenta de los puntos de golpe de los objetos de estos tamaños, pero también puedes limitarte a decidir cuánto tiempo pueden aguantar la fuerza o arma con la que están siendo afectados. Si cuentas los puntos de golpe, divide el objeto en secciones Grandes o más pequeñas y apunta los puntos de golpe de cada una de estas secciones de forma independiente. Quizá destruir una de ellas sea suficiente para echar a perder el objeto entero. Por ejemplo, la estatua Gargantuesca de un humano podría caer al suelo si una de sus piernas (de tamaño Grande) es reducida a 0 puntos de golpe."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Objetos y tipos de daño",
+							"entries": [
+								"Los objetos son inmunes al daño psíquico y de veneno. Además, podrías decidir que ciertos tipos de daño son particularmente efectivos contra un objeto o material concreto. Por ejemplo: el daño contundente funciona bien con cosas susceptibles de ser quebradas, pero no sirve para cortar cuerdas o el cuero. Los objetos de papel o de tela podrían ser vulnerables al daño de fuego y relámpago. Un pico puede resultar muy útil para socavar una piedra, pero no servirá para talar un árbol. Como siempre, confía en tu criterio."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Umbral de daño",
+							"entries": [
+								"Los objetos más grandes, como las murallas de un castillo, poseen una resistencia excepcional, que se representa mediante un umbral de daño mínimo. Estos objetos son inmunes a todo el daño, salvo aquel que reciban de un ataque o efecto que por sí mismo inflija una cantidad de daño igual o superior al umbral de daño. El objeto recibirá el daño de estos ataques o efectos de la forma habitual. Cualquier daño que no iguale o supere el umbral de daño se considera superficial, por lo que no hará perder puntos de golpe al objeto."
+							]
+						}
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/5etools-mirror-1/5etools-mirror-1.github.io/master/img/vehicles/tokens/DMG/Generic%20Object.png"
+		},
+		{
+			"name": "El Árbol de Gulthias",
+			"source": "TftYP-ES",
+			"page": 31,
+			"size": "G",
+			"objectType": "U",
+			"ac": 10,
+			"hp": 35,
+			"immune": [
+				"necrotic",
+				"poison",
+				"psychic"
+			],
+			"resist": [
+				"piercing"
+			],
+			"vulnerable": [
+				"fire"
+			],
+			"entries": [
+				"El árbol de Gulthias es una planta Gargantuesca con CA 10 y 35 puntos de golpe. Es inmune al daño necrótico, psíquico y de veneno. También tiene resistencia al daño perforante. Es vulnerable al daño de fuego.",
+				{
+					"type": "entries",
+					"name": "Fruto",
+					"entries": [
+						"Dos frutas mágicas (de la escuela de la evocación) maduran cada año en el árbol. Estas parecen manzanas, pero el árbol las expulsa poco a poco como un quiste.",
+						"Cuando queda aproximadamente una semana para el solsticio de verano, crece una fruta roja como el rubí. Cualquiera que no sea un autómata y que coma un cuarto o más de ella recuperará 70 puntos de golpe. Además, la fruta pondrá fin a cualquier {@condition cegado|PHB-ES|ceguera}, {@condition ensordecido|PHB-ES|sordera} o enfermedad que afecten a quien la consume.",
+						"Cuando queda aproximadamente una semana para el solsticio de invierno, crece una fruta de un color blanquecino y enfermizo. Cualquiera que coma un cuarto o más de ella sufrirá 70 de daño necrótico.",
+						"Cada fruta contiene {@dice 1d4} semillas que, si se plantan, germinarán en forma de arbustos leñosos y sin hojas que cobrarán vida como ramas marchitas un año después."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Siervos del árbol",
+					"entries": [
+						"Si se ata un humanoide al tronco del árbol de Culthias, en las siguientes 24 horas este absorberá totalmente a la víctima. Una vez ha sido consumido por completo por la planta, el humanoide se convertirá en su siervo y será expulsado en la siguiente hora. El árbol de Gulthias solo puede tener cuatro siervos a la vez. La piel de la víctima se vuelve áspera, gris y similar a un a corteza. Los siervos están corrompidos por completo y se vuelven de alineamiento neutral malvado. Las criaturas de ese tipo solo existen para servir al árbol de Gulthias y a quienes se ocupan de él (como Belak). Además, conservan todas sus características previas y obtienen los siguientes atributos:",
+						{
+							"type": "entries",
+							"name": "Piel robliza",
+							"entries": [
+								"La CA del siervo no puede ser inferior a 16."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Siervo del árbol",
+							"entries": [
+								"Si el árbol de Gulthias muere, el siervo fallece 24 horas después."
+							]
+						}
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/5etools-mirror-1/5etools-mirror-1.github.io/master/img/vehicles/tokens/TftYP/Gulthias%20Tree.png"
+		},
+		{
+			"name": "Mangana",
+			"source": "DMG-ES",
+			"page": 256,
+			"size": "L",
+			"objectType": "SW",
+			"ac": 15,
+			"hp": 100,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"entries": [
+				"Una mangana es una catapulta que lanza proyectiles pesados en un arco muy pronunciado. Debido a ello, esta arma puede impactar a objetivos que estén protegidos tras una cobertura. Para dispararla es preciso haberla cargado y apuntado al objetivo antes. Así, es necesario invertir dos acciones en cargarla, otras dos en apuntar y una más en disparar.",
+				"Lo más habitual es que las manganas lancen piedras, pero pueden utilizar cualquier otro tipo de proyectil, que causará efectos diferentes según su naturaleza."
+			],
+			"actionEntries": [
+				{
+					"type": "actions",
+					"name": "Piedra de mangana",
+					"entries": [
+						{
+							"type": "attack",
+							"attackType": "RW",
+							"attackEntries": [
+								"{@hit +5} to hit, range 200/800 ft. (no puede alcanzar objetivos a menos de 60 pies), one target."
+							],
+							"hitEntries": [
+								"27 ({@damage 5d10}) bludgeoning damage."
+							]
+						}
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/5etools-mirror-1/5etools-mirror-1.github.io/master/img/vehicles/tokens/DMG/Mangonel.png"
+		},
+		{
+			"name": "Ariete",
+			"source": "DMG-ES",
+			"page": 255,
+			"size": "L",
+			"objectType": "SW",
+			"ac": 15,
+			"hp": 100,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"entries": [
+				"Un ariete es una galería móvil en cuyo interior se encuentra un pesado tronco en posición horizontal, enganchado mediante cadenas a dos de las vigas del techo. La punta del tronco está cubierta de hierro y se usa para golpear repetidamente puertas y barricadas con el fin de destruirlas.",
+				"Son necesarias como mínimo cuatro criaturas Medianas para poder operar un ariete. Gracias al techo de la galería, los que utilizan esta arma de asedio disfrutan de cobertura completa contra los ataques que provengan de arriba."
+			],
+			"actionEntries": [
+				{
+					"type": "actions",
+					"name": "Embestir",
+					"entries": [
+						{
+							"type": "attack",
+							"attackType": "MW",
+							"attackEntries": [
+								"{@hit +8} to hit, reach 5 ft., one object."
+							],
+							"hitEntries": [
+								"16 ({@damage 3d10}) bludgeoning damage."
+							]
+						}
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/5etools-mirror-1/5etools-mirror-1.github.io/master/img/vehicles/tokens/DMG/Ram.png"
+		},
+		{
+			"name": "Torre de asedio",
+			"source": "DMG-ES",
+			"page": 256,
+			"size": "G",
+			"objectType": "SW",
+			"ac": 15,
+			"hp": 200,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"entries": [
+				"Las torres de asedio son estructuras de madera móviles construidas a partir de vigas y con aspilleras en sus paredes. Se desplazan sobre grandes ruedas de madera o rodillos, empujadas por soldados o bestias de tiro. Las criaturas Medianas o más pequeñas pueden utilizar una torre de asedio para alcanzar la parte superior de muros de hasta 40 pies de altura. Las criaturas dentro la torre disfrutan de cobertura completa contra los ataques que provengan del exterior."
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/5etools-mirror-1/5etools-mirror-1.github.io/master/img/vehicles/tokens/DMG/Siege%20Tower.png"
+		},
+		{
+			"name": "Caldero suspendido",
+			"source": "DMG-ES",
+			"page": 255,
+			"size": "L",
+			"objectType": "SW",
+			"ac": 19,
+			"hp": 20,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"entries": [
+				"Este caldero de hierro está colgado de tal forma que se puede volcar fácilmente, derramando su contenido. Como es lógico, para poder volver a usarlo una vez vacío habrá que rellenarlo. Además, lo normal es que también haya que calentar el contenido. Es necesario invertir tres acciones en llenar un caldero y otra más en volcarlo.",
+				"Los calderos pueden llenarse con una gran variedad de líquidos, desde el ácido hasta el {@hazard cieno verde|DMG-ES}, cada uno con su propio efecto."
+			],
+			"actionEntries": [
+				{
+					"type": "entries",
+					"name": "Aceite hirviendo",
+					"entries": [
+						"El caldero derrama aceite hirviendo en un área cuadrada de 10 pies de lado situada justo debajo de él. Todas las criaturas que se encuentren en el área deberán hacer una tirada de salvación de Destreza CD 15, sufriendo 10 ({@damage 3d6}) de daño de fuego si la fallan, o la mitad del daño s i la superan."
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/5etools-mirror-1/5etools-mirror-1.github.io/master/img/vehicles/tokens/DMG/Suspended%20Cauldron.png"
+		},
+		{
+			"name": "Fundíbulo",
+			"source": "DMG-ES",
+			"page": 256,
+			"size": "H",
+			"objectType": "SW",
+			"ac": 15,
+			"hp": 150,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"entries": [
+				"Un fundíbulo es una poderosa catapulta que lanza sus proyectiles en un arco muy pronunciado, por lo que puede alcanzar objetivos a cubierto. Para dispararlo es preciso haberlo cargado y apuntado al objetivo antes. Es necesario invertir dos acciones en cargarlo, otras dos en apuntar y una más en disparar.",
+				"Lo normal es que los fundíbulos lancen piedras muy pesadas, pero pueden utilizar otros proyectiles, como barriles de aceite o aguas negras, que causarán efectos distintos."
+			],
+			"actionEntries": [
+				{
+					"type": "actions",
+					"name": "Piedra de fundíbulo",
+					"entries": [
+						{
+							"type": "attack",
+							"attackType": "RW",
+							"attackEntries": [
+								"{@hit +5} to hit, range 300/1,200 ft. (no puede alcanzar objetivos a menos de 60 pies), one target."
+							],
+							"hitEntries": [
+								"44 ({@damage 8d10}) bludgeoning damage."
+							]
+						}
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/5etools-mirror-1/5etools-mirror-1.github.io/master/img/vehicles/tokens/DMG/Trebuchet.png"
+		}
+	]
+}

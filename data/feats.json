@@ -1,0 +1,2408 @@
+{
+	"feat": [
+		{
+			"name": "Actor",
+			"source": "PHB-ES",
+			"page": 165,
+			"ability": [
+				{
+					"cha": 1
+				}
+			],
+			"entries": [
+				"Debido a tu habilidad para la imitación y el arte dramático, recibes los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Tienes ventaja en las pruebas de Carisma ({@skill Engaño|PHB-ES}) y Carisma ({@skill Interpretación|PHB-ES}) que hagas para hacerte pasar por otra persona.",
+						"Puedes imitar el habla de otra persona o los sonidos que hacen otras criaturas. Debes haber oído hablar a la persona o los sonidos de la criatura durante al menos 1 minuto. Si quien te escucha vence en una prueba de Sabiduría ({@skill Perspicacia|PHB-ES}) enfrentada a tu prueba de Carisma ({@skill Engaño|PHB-ES}), sabrá que se trata de una imitación."
+					]
+				}
+			]
+		},
+		{
+			"name": "Alerta",
+			"source": "PHB-ES",
+			"page": 165,
+			"entries": [
+				"Siempre estás atento al peligro. Obtienes los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Ganas un bonificador de +5 a la iniciativa.",
+						"Mientras estés consciente no puedes ser {@book sorprendido|PHB-ES|9|sorprendido}.",
+						"Las criaturas que te ataquen sin que puedas verlas no reciben ventaja en sus tiradas de ataque por este motivo."
+					]
+				}
+			]
+		},
+		{
+			"name": "Iniciado Artífice",
+			"source": "TCE-ES",
+			"page": 79,
+			"toolProficiencies": [
+				{
+					"anyArtisansTool": true
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "int",
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									{
+										"choose": "level=1|class=Artífice (TCE-ES)"
+									}
+								]
+							}
+						}
+					},
+					"known": {
+						"_": [
+							{
+								"choose": "level=0|class=Artífice (TCE-ES)"
+							}
+						]
+					}
+				}
+			],
+			"entries": [
+				"Has adquirido parte de la inventiva de un artífice:",
+				{
+					"type": "list",
+					"items": [
+						"Aprendes un truco de tu elección escogido de entre los de la {@filter lista de conjuros de artífice|spells|level=0;1|class=Artífice (TCE-ES)} y aprendes un conjuro de nivel 1 de tu elección de esa {@filter that lista|spells|level=0;1|class=Artífice (TCE-ES)}. La Inteligencia es tu aptitud mágica para estos conjuros.",
+						"Puedes lanzar el conjuro de nivel 1 de esta dote sin un espacio de conjuro y debes finalizar un descanso largo antes de poder volver a lanzarlo de este modo. También puedes lanzar el conjuro usando cualquier espacio de conjuro que tengas.",
+						"Obtienes competencia con el tipo de {@filter herramientas de artesano|items|type=artisan's tools} de tu elección y puedes emplear ese tipo de herramientas como canalizador mágico para cualquier conjuro que lances y que use la Inteligencia como su aptitud mágica."
+					]
+				}
+			]
+		},
+		{
+			"name": "Atleta",
+			"source": "PHB-ES",
+			"page": 166,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Has seguido un entrenamiento físico muy intenso, que te proporciona los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Solo te cuesta 5 pies de movimiento levantarte cuando estás {@condition Derribado|PHB-ES|derribado}.",
+						"No necesitas invertir movimiento adicional para trepar",
+						"Puedes hacer un salto con carrerilla, tanto de altura como de longitud, tras haberte movido tan solo 5 pies, en lugar de los 10 pies habituales."
+					]
+				}
+			]
+		},
+		{
+			"name": "Suerte Abundante",
+			"source": "XGE-ES",
+			"page": 75,
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "mediano"
+						}
+					]
+				}
+			],
+			"entries": [
+				"Tu gente tiene una suerte extraordinaria, que has aprendido a ceder místicamente a tus compañeros cuando los ves flaquear. No sabes cómo lo haces: simplemente lo deseas y sucede. ¡Sin duda un signo de que la fortuna te favorece!",
+				"Cuando un aliado que puedes ver y que se encuentre a 30 pies o menos de ti saca un 1 en el {@dice d20} de una tirada de ataque, prueba de característica o tirada de salvación, puedes usar tu reacción para permitir a ese compañero volver a tirar el dado. Ese aliado debe utilizar el resultado de la nueva tirada.",
+				"Cuando empleas esta capacidad especial, no puedes utilizar tu atributo racial Afortunado antes del final de tu próximo turno."
+			]
+		},
+		{
+			"name": "Atacante a la Carga",
+			"source": "PHB-ES",
+			"page": 165,
+			"entries": [
+				"Cuando utilizas tu acción para {@action Correr|PHB-ES}, puedes usar una acción adicional para hacer un ataque con arma cuerpo a cuerpo o {@action empujar|PHB-ES} a una criatura.",
+				"Si mueves al menos 10 pies en línea recta justo antes de emplear esta acción adicional, podrás elegir entre ganar un bonificador de +5 a la tirada de daño del ataque (si optas por hacer el ataque cuerpo a cuerpo e impactas) o empujar al objetivo hasta 10 pies en dirección contraria a ti (si decides empujar y tienes éxito)."
+			]
+		},
+		{
+			"name": "Chef",
+			"source": "TCE-ES",
+			"page": 78,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"con",
+							"wis"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"toolProficiencies": [
+				{
+					"cook's utensils": true
+				}
+			],
+			"entries": [
+				"El tiempo invertido en dominar las artes culinarias ha dado sus frutos, otorgándote los siguientes beneficios:",
+				{
+					"type": "list",
+					"items": [
+						"También obtienes competencia con {@item útiles de cocinero|PHB-ES} si aún no la tienes.",
+						"Como parte de un descanso corto, puedes preparar comida especial, siempre que tengas a mano los ingredientes y {@item útiles de cocinero|PHB-ES}. Puedes preparar suficiente de esta comida como para una cantidad de criaturas igual a 4 + tu bonificador por competencia. Al final del descanso corto, cualquier criatura que coma la comida y gaste uno o más Dados de Golpe para recuperar puntos de golpe recuperará {@dice 1d8} puntos de golpe adicionales.",
+						"Con una hora de trabajo o tras finalizar un descanso largo, puedes preparar una cantidad de delicias igual a tu bonificador por competencia. Estas delicias especiales duran 8 horas una vez preparadas. Una criatura puede usar una acción adicional para comerse una de estas delicias y obtener una cantidad de puntos de golpe temporales igual a tu bonificador por competencia."
+					]
+				}
+			]
+		},
+		{
+			"name": "Experto en Ballestas",
+			"source": "PHB-ES",
+			"page": 167,
+			"entries": [
+				"Debido a una práctica intensa con la ballesta, has conseguido los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Puedes ignorar la propiedad \"recarga\" de las ballestas con las que eres competente.",
+						"Estar a 5 pies o menos de una criatura hostil no te causa desventaja en las tiradas de ataque a distancia.",
+						"Cuando realizas una acción de {@action Atacar|PHB-ES} y atacas con un arma a una mano, puedes utilizar tu acción adicional para atacar con una {@item ballesta de mano|PHB-ES} que estés sujetando."
+					]
+				}
+			]
+		},
+		{
+			"name": "Triturador",
+			"source": "TCE-ES",
+			"page": 81,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"con"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Tienes experiencia en el arte de triturar a tus enemigos, lo que te otorga los siguientes beneficios:",
+				{
+					"type": "list",
+					"items": [
+						"Una vez por turno, cuando impactes a una criatura con un ataque que cause daño contundente, podrás moverla 5 pies hasta un espacio sin ocupar, siempre que el objetivo no tenga un tamaño que esté, como mucho, una categoría por encima de la tuya.",
+						"Cuando causes un crítico que haga daño contundente a una criatura, las tiradas de ataque contra esa criatura se harán con ventaja hasta el principio de tu siguiente turno."
+					]
+				}
+			]
+		},
+		{
+			"name": "Duelista Defensivo",
+			"source": "PHB-ES",
+			"page": 167,
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"dex": 13
+						}
+					]
+				}
+			],
+			"entries": [
+				"Cuando estás empuñando un arma sutil con la que seas competente y otra criatura te impacte con un ataque cuerpo a cuerpo, podrás utilizar tu reacción para sumar tu bonificador por competencia a tu CA a efectos de este ataque. Con suerte, conseguirás que falle."
+			]
+		},
+		{
+			"name": "Miedo Dracónico",
+			"source": "XGE-ES",
+			"page": 74,
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "dracónido"
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"con",
+							"cha"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Cuando te enfureces, puedes irradiar amenaza pura. Obtienes los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"En vez de exhalar energía destructiva, puedes gastar un uso de tu atributo Ataque de Aliento para rugir, forzando a cada criatura de tu elección que se encuentre a 30 pies o menos de ti a realizar una tirada de salvación de Sabiduría (CD 8 + tu bonificador por competencia + tu modificador por Carisma). Una criatura que no pueda verte u oírte tendrá éxito automático en la tirada de salvación. Las criaturas que fallen la tirada quedarán {@condition asustado|PHB-ES|asustadas} de ti durante 1 minuto. Si el objetivo {@condition asustado|PHB-ES} recibe cualquier cantidad de daño, podrá repetir la tirada de salvación y terminará el efecto para sí mismo si tiene éxito."
+					]
+				}
+			]
+		},
+		{
+			"name": "Piel Dracónica",
+			"source": "XGE-ES",
+			"page": 74,
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "dracónido"
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"con",
+							"cha"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Manifiestas escamas y garras que recuerdan a tus ancestros dracónidos. Obtienes los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Tus escamas se endurecen. Mientras no lleves armadura, puedes calcular tu CA como 13 + tu modificador por Destreza. Podrás usar escudo sin tener que renunciar a este beneficio.",
+						"También te crecen garras retráctiles en la punta de los dedos. Extender o retraer las garras no requiere de ninguna acción. Estas se consideran armas naturales, por lo que puedes emplearlas para hacer ataques sin armas. Si impactas con ellas, infliges daño cortante igual a {@dice 1d4} + tu modificador por Fuerza, en vez del daño contundente habitual para un ataque sin armas."
+					]
+				}
+			]
+		},
+		{
+			"name": "Alta Magia Drow",
+			"source": "XGE-ES",
+			"page": 73,
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "elfo",
+							"subrace": "drow"
+						}
+					]
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"innate": {
+						"_": {
+							"will": [
+								"detectar magia|PHB-ES"
+							],
+							"daily": {
+								"1e": [
+									"levitar|PHB-ES",
+									"disipar magia|PHB-ES"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"Asimilas más de la magia típica de los elfos oscuros. Aprendes el conjuro de {@spell detectar magia|PHB-ES} y puedes lanzarlo a voluntad, sin gastar un espacio de conjuro. También adquieres {@spell levitar|PHB-ES} y {@spell disipar magia|PHB-ES}, cada uno de los cuales puedes utilizar una vez sin emplear un espacio de conjuro. Recuperas la capacidad de lanzar esos dos conjuros de esta manera cuando terminas un descanso largo. Tu aptitud mágica para estos tres conjuros es Carisma."
+			]
+		},
+		{
+			"name": "Combatiente con Dos Armas",
+			"source": "PHB-ES",
+			"page": 167,
+			"entries": [
+				"Has dominado el combate con dos armas, obteniendo los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Recibes un +1 a tu CA cuando estás empuñando varias armas cuerpo a cuerpo, una en cada mano.",
+						"Puedes combatir con dos armas incluso si las armas que estás utilizando no son ligeras.",
+						"Puedes envainar y desenvainar dos armas a una mano en aquellas circunstancias en las que antes solo podías hacerlo con una."
+					]
+				}
+			]
+		},
+		{
+			"name": "Explorador de Mazmorras",
+			"source": "PHB-ES",
+			"page": 167,
+			"entries": [
+				"Estás alerta a las trampas ocultas y las puertas secretas habituales en muchas mazmorras, lo que te proporciona los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Tienes ventaja en las pruebas de Sabiduría ({@skill Percepción|PHB-ES}) e Inteligencia ({@skill Investigación|PHB-ES}) para detectar la presencia de puertas secretas.",
+						"Posees ventaja en las tiradas de salvación para evitar o resistir trampas.",
+						"Tienes resistencia al daño causado por trampas.",
+						"Viajar a un ritmo rápido no impone la penalización normal de −5 en su puntuación de Sabiduría pasiva ({@skill Percepción|PHB-ES})."
+					]
+				}
+			]
+		},
+		{
+			"name": "Resistente",
+			"source": "PHB-ES",
+			"page": 170,
+			"ability": [
+				{
+					"con": 1
+				}
+			],
+			"entries": [
+				"Tu dureza y resistencia te otorgan los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Cuando tiras un Dado de Golpe para recuperar puntos de golpe, el número mínimo que recuperas con esta tirada es dos veces tu modificador por Constitución (como mínimo 2)."
+					]
+				}
+			]
+		},
+		{
+			"name": "Fortaleza Enana",
+			"source": "XGE-ES",
+			"page": 74,
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "enano"
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"con": 1
+				}
+			],
+			"entries": [
+				"La sangre de héroes enanos corre por tus venas. Obtienes los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Siempre que utilizas la acción de {@action Esquivar|PHB-ES} en combate, puedes gastar un Dado de Golpe para curarte. Tira el dado, añade tu modificador de Constitución y recupera un número de puntos de golpe igual al total (mínimo 1)."
+					]
+				}
+			]
+		},
+		{
+			"name": "Adepto Sobrenatural",
+			"source": "TCE-ES",
+			"page": 78,
+			"prerequisite": [
+				{
+					"spellcasting2020": true
+				}
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "Eldritch Invocations",
+					"featureType": [
+						"EI_Esp"
+					],
+					"progression": {
+						"*": 1
+					}
+				}
+			],
+			"entries": [
+				"Gracias al estudio de conocimientos ocultos, has liberado un poder sobrenatural en tu interior: aprendes una opción de {@filter Invocación Sobrenatural|optionalfeatures|Feature Type=EI_Esp} de tu elección de la clase brujo. Si la invocación tiene requisitos de cualquier tipo, solo podrás elegirla si eres un brujo que los cumpla.",
+				"Siempre que subas un nivel, podrás sustituir la invocación por otra de la clase brujo."
+			]
+		},
+		{
+			"name": "Versado en un Elemento",
+			"source": "PHB-ES",
+			"page": 170,
+			"prerequisite": [
+				{
+					"spellcasting": true
+				}
+			],
+			"entries": [
+				"Cuando obtengas esta dote, elige uno de los siguientes tipos de daño: ácido, frío, fuego, relámpago o trueno.",
+				"Los conjuros que lances ignoran la resistencia al daño del tipo elegido. Además, cuando tires el daño de uno de tus conjuros que inflija ese tipo de daño, puedes considerar cualquier 1 en los dados de daño como 2.",
+				"Puedes escoger esta dote varias veces, pero deberás elegir un tipo de daño distinto cada vez que lo hagas."
+			]
+		},
+		{
+			"name": "Precisión Élfica",
+			"source": "XGE-ES",
+			"page": 75,
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "elfo"
+						},
+						{
+							"name": "semielfo"
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"dex",
+							"int",
+							"wis",
+							"cha"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"La precisión de los elfos es legendaria, especialmente la de sus arqueros y lanzadores de conjuros. Tienes una puntería insólita con aquellos ataques que dependen de la precisión más que de la fuerza bruta. Obtienes los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Siempre que tengas ventaja en una tirada de ataque que utilice Carisma, Destreza, Inteligencia o Sabiduría, puedes volver a tirar uno de los dados una vez."
+					]
+				}
+			]
+		},
+		{
+			"name": "Desvanecerse",
+			"source": "XGE-ES",
+			"page": 74,
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "gnomo"
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"dex",
+							"int"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Tu pueblo es inteligente y posee facilidad para la magia de ilusionismo. Has aprendido un truco para desvanecerte cuando recibes daño. Obtienes los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Inmediatamente después de recibir daño, puedes usar tu reacción para volverte {@condition invisible|PHB-ES} mágicamente hasta el final de tu próximo turno o hasta que ataques, inflijas daño o fuerces a alguien a realizar una tirada de salvación. Una vez uses esta capacidad especial, deberás terminar un descanso corto o largo para poder volver a emplearla."
+					]
+				}
+			]
+		},
+		{
+			"name": "Teletransportación Feérica",
+			"source": "XGE-ES",
+			"page": 75,
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "elfo",
+							"subrace": "alto"
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"int",
+							"cha"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"sylvan": true
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "int",
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									"paso brumoso|PHB-ES"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"Tu estudio del conocimiento tradicional alto elfo ha liberado un poder feérico que pocos de tu raza poseen, excepto tus primos eladrines. Recurriendo a tu linaje feérico, puedes atravesar momentáneamente el Feywild para acortar tu trayecto entre un sitio y otro. Obtienes los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Aprendes a hablar, leer y escribir {@language silvano|PHB-ES}.",
+						"Aprendes el conjuro de {@spell paso brumoso|PHB-ES} y puedes lanzarlo una vez sin emplear un espacio de conjuro. Recuperas la capacidad de volver a lanzarlo de esta manera cuando completes un descanso corto o largo. Tu aptitud mágica para este conjuro es Inteligencia."
+					]
+				}
+			]
+		},
+		{
+			"name": "Toque Feérico",
+			"source": "TCE-ES",
+			"page": 80,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "inherit",
+					"innate": {
+						"_": {
+							"daily": {
+								"1e": [
+									"misty step",
+									{
+										"choose": "level=1|school=E;D"
+									}
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"Tu exposición a la magia de Feywild te ha cambiado, otorgándote los siguientes beneficios:",
+				{
+					"type": "list",
+					"items": [
+						"Aprendes el conjuro {@spell paso brumoso|PHB-ES} y un {@filter conjuro de nivel 1|spells|level=1|school=E;D} de tu elección. El {@filter conjuro de nivel 1|spells|level=1|school=E;D} debe ser de la escuela mágica de adivinación o de encantamiento. Puedes lanzar cada uno de estos conjuros sin gastar un espacio de conjuro. Cuando lances cualquiera de estos conjuros de este modo, no podrás volver a hacerlo hasta que finalices un descanso largo. También puedes lanzar estos conjuros usando espacios de conjuro que tengas del nivel apropiado. La aptitud mágica de los conjuros es la característica aumentada por esta dote."
+					]
+				}
+			]
+		},
+		{
+			"name": "Iniciado en Combate",
+			"source": "TCE-ES",
+			"page": 80,
+			"prerequisite": [
+				{
+					"proficiency": [
+						{
+							"weapon": "martial"
+						}
+					]
+				}
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "Fighting Style",
+					"featureType": [
+						"FS_Esp:F"
+					],
+					"progression": {
+						"*": 1
+					}
+				}
+			],
+			"entries": [
+				"Tu entrenamiento marcial te ha ayudado a desarrollar un estilo de combate particular. Como resultado, aprendes una opción de {@filter Estilo de Combate|optionalfeatures|Feature Type=FS_Esp:F} de tu elección de la clase guerrero. Si ya tienes un estilo, el que elijas debe ser diferente.",
+				"Cuando alcanzas un nivel que otorga el rasgo Mejora de Característica, puedes sustituir el estilo de combate de esta dote por otro de la clase guerrero que no tengas."
+			]
+		},
+		{
+			"name": "Llamas de Phlegethos",
+			"source": "XGE-ES",
+			"page": 74,
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "tiefling"
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"int",
+							"cha"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Aprendes a convocar el fuego infernal y ponerlo a tu servicio. Obtienes los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Cuando haces una tirada para calcular el daño de fuego de un conjuro que lances, puedes volver a tirar cualquier resultado de 1 en los dados de daño de fuego, pero debes usar el resultado de la nueva tirada, incluso aunque sea otro 1.",
+						"Siempre que lances un conjuro que inflija daño de fuego, puedes hacer que las llamas te envuelvan hasta el final de tu siguiente turno. Estas no te dañan a ti ni a tus posesiones y, además, emiten luz brillante en un radio 30 pies y luz tenue 30 pies más allá. Mientras las llamas sigan presentes, cualquier criatura que se encuentre a 5 pies o menos de ti que te impacte con un ataque cuerpo a cuerpo recibirá {@damage 1d4} de daño de fuego."
+					]
+				}
+			]
+		},
+		{
+			"name": "Apresador",
+			"source": "PHB-ES",
+			"page": 165,
+			"srd": true,
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"str": 13
+						}
+					]
+				}
+			],
+			"entries": [
+				"Has desarrollado las aptitudes necesarias para pelear bien a distancias extremadamente cortas. Obtienes los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Tienes ventaja en las tiradas de ataque contra una criatura a la que estés agarrando.",
+						"Puedes usar tu acción para intentar someter a un objetivo al que estés {@condition Agarrado|PHB-ES|agarrado}. Para ello, haz otra prueba de agarrar. Si tienes éxito, tanto tu como la criatura estaréis {@condition Apresado|PHB-ES|apresados} hasta que el agarre finalice."
+					]
+				}
+			]
+		},
+		{
+			"name": "Maestro en Armas Pesadas",
+			"source": "PHB-ES",
+			"page": 168,
+			"entries": [
+				"Has aprendido a usar el peso de tu arma en tu beneficio, empleando su impulso para reforzar tus golpes. Obtienes los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Una vez por turno, cuando, con un arma cuerpo a cuerpo, hagas un crítico o reduzcas los puntos de golpe de una criatura a 0, podrás utilizar tu acción adicional para realizar un ataque con arma cuerpo a cuerpo.",
+						"Puedes elegir, antes de hacer un ataque cuerpo a cuerpo con un arma pesada con la que seas competente, sufrir un penalizador de –5 a la tirada de ataque. Si impactas, puedes sumar +10 al daño del ataque."
+					]
+				}
+			]
+		},
+		{
+			"name": "Artillero",
+			"source": "TCE-ES",
+			"page": 78,
+			"ability": [
+				{
+					"dex": 1
+				}
+			],
+			"weaponProficiencies": [
+				{
+					"firearms": true
+				}
+			],
+			"entries": [
+				"Eres rápido y preciso con las armas de fuego, lo que te otorga los siguientes beneficios:",
+				{
+					"type": "list",
+					"items": [
+						"Obtienes competencia con armas de fuego (consulta la sección \"{@variantrule Armas de fuego|DMG-ES}\" en la Dungeon Master's Cuide).",
+						"Ignoras la propiedad \"recarga\" de las armas de fuego.",
+						"Estar a 5 pies o menos de una criatura hostil no provoca desventaja en tus tiradas de ataque a distancia."
+					]
+				}
+			]
+		},
+		{
+			"name": "Sanador",
+			"source": "PHB-ES",
+			"page": 170,
+			"entries": [
+				"Tienes talento como médico. Eres capaz de cerrar heridas rápidamente. permitiendo a tus aliados volver al combate. Obtienes los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Cuando estabilizas a una criatura que está agonizando (con 0 puntos de golpe) utilizando unos {@item Útiles de sanador|PHB-ES|útiles de sanador}, la criatura también recupera 1 punto de golpe.",
+						"Como acción, puedes gastar uno de los usos de unos {@item Útiles de sanador|PHB-ES|útiles de sanador} para atender a una criatura y hacerla recuperar {@dice 1d6+4} puntos de golpe. Además, el objetivo también recupera tantos puntos de golpe adicionales como su número de Dados de Golpe máximos. Esta criatura no puede volver a recuperar puntos de golpe gracias a esta dote hasta que termine un descanso corto o largo."
+					]
+				}
+			]
+		},
+		{
+			"name": "Muy Acorzado",
+			"source": "PHB-ES",
+			"page": 170,
+			"prerequisite": [
+				{
+					"proficiency": [
+						{
+							"armor": "medium"
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"str": 1
+				}
+			],
+			"armorProficiencies": [
+				{
+					"heavy": true
+				}
+			],
+			"entries": [
+				"Te has entrenado hasta dominar el combate en armaduras pesadas, obteniendo los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Ganas competencia con armaduras pesadas."
+					]
+				}
+			]
+		},
+		{
+			"name": "Maestro en Armaduras Pesadas",
+			"source": "PHB-ES",
+			"page": 168,
+			"prerequisite": [
+				{
+					"proficiency": [
+						{
+							"armor": "heavy"
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"str": 1
+				}
+			],
+			"entries": [
+				"Eres capaz de emplear tu armadura para desviar golpes que matarían a otros. Obtienes los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Mientras estás llevando armadura pesada, el daño contundente, cortante y perforante de armas no mágicas que recibas se reduce en 3."
+					]
+				}
+			]
+		},
+		{
+			"name": "Constitución Infernal",
+			"source": "XGE-ES",
+			"page": 73,
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "tiefling"
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"con": 1
+				}
+			],
+			"entries": [
+				"La sangre demoníaca corre abundantemente por tus venas, otorgándote una resistencia similar a la de algunos infernales. Obtienes los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Posees resistencia al daño de frío y al daño de veneno.",
+						"Tienes ventaja en las tiradas de salvación contra ser {@condition envenenado|PHB-ES}."
+					]
+				}
+			]
+		},
+		{
+			"name": "Líder Inspirador",
+			"source": "PHB-ES",
+			"page": 167,
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"cha": 13
+						}
+					]
+				}
+			],
+			"entries": [
+				"Puedes invertir 10 minutos en inspirar a tus compañeros, apuntalando su voluntad para luchar. Cuando hagas esto, escoge hasta a seis criaturas amistosas (entre las que puedes encontrarte tú mismo) a 30 pies o menos de ti que puedan verte u oírte y sean capaces de entenderte. Cada uno de estos objetivos recibe tantos puntos de golpe temporales como tu nivel + tu modificador por Carisma.",
+				"Ninguna de las criaturas puede volver a recibir puntos de golpe temporales gracias a esta dote hasta que termine un descanso corto o largo."
+			]
+		},
+		{
+			"name": "Mente Aguda",
+			"source": "PHB-ES",
+			"page": 169,
+			"ability": [
+				{
+					"int": 1
+				}
+			],
+			"entries": [
+				"Posees una mente con una capacidad asombrosa para percibir el paso del tiempo, orientarse y recordar hasta el más mínimo detalle. Obtienes los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Siempre distingues dónde está el norte.",
+						"Siempre sabes cuantas horas faltan para el siguiente amanecer o anochecer.",
+						"Puedes recordar con exactitud todo lo que hayas vista u oído durante el último mes."
+					]
+				}
+			]
+		},
+		{
+			"name": "Ligeramente Acorazado",
+			"source": "PHB-ES",
+			"page": 168,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"armorProficiencies": [
+				{
+					"light": true
+				}
+			],
+			"entries": [
+				"Te has entrenado hasta dominar el combate en armaduras ligeras, obteniendo los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Ganas competencia con armaduras ligeras."
+					]
+				}
+			]
+		},
+		{
+			"name": "Lingüista",
+			"source": "PHB-ES",
+			"page": 168,
+			"ability": [
+				{
+					"int": 1
+				}
+			],
+			"languageProficiencies": [
+				{
+					"any": 3
+				}
+			],
+			"entries": [
+				"Has estudiado idiomas y códigos, adquiriendo los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Aprendes tres idiomas de tu elección.",
+						"Eres capaz de inventar códigos para cifrar mensajes escritos. Si alguien quiere descifrarlos tendrá tres opciones: que le enseñes cómo hacerlo, tener éxito en una prueba de Inteligencia (CD tu puntuación de Inteligencia + tu modificador por competencia) o recurrir a la magia"
+					]
+				}
+			]
+		},
+		{
+			"name": "Afortunado",
+			"source": "PHB-ES",
+			"page": 165,
+			"entries": [
+				"Posees una suerte inexplicable, que te sonríe siempre en el momento idóneo.",
+				"Tienes 3 puntos de suerte. Cuando hagas una tirada de ataque, prueba de característica o tirada de salvación, podrás gastar 1 punto de suerte para tirar {@dice 1d20} adicional. Puedes elegir hacer esto después de haber hecho la tirada, pero antes de que se determine el resultado. Podrás escoger cuál de los {@dice 2d20} vas a usar en la tirada de ataque, prueba de característica o tirada de salvación.",
+				"También puedes gastar 1 punto de suerte después de que se haga una tirada de ataque contra ti. Tira {@dice 1d20} y decide con qué resultado quieres que se realice el ataque, si con el del dado del atacante o con el tuyo.",
+				"Si más de una criatura invierte puntos de suerte en influir en el resultado de la misma tirada, los puntos se cancelan unos con otros y no se tiran dados adicionales.",
+				"Recuperas todos tus puntos de suerte tras finalizar un descanso largo."
+			]
+		},
+		{
+			"name": "Azote de Magos",
+			"source": "PHB-ES",
+			"page": 166,
+			"entries": [
+				"Has ensayado técnicas útiles para luchar en cuerpo a cuerpo contra lanzadores de conjuros, recibiendo los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Si una criatura que se encuentre a 5 pies o menos de ti lanza un conjuro, puedes utilizar tu reacción para hacer un ataque con arma cuerpo a cuerpo contra ella.",
+						"Si infliges daño a una criatura que se está concentrando en un conjuro, esta tendrá desventaja en las tiradas de salvación que haga con el fin de mantener la concentración.",
+						"Tienes ventaja en las tiradas de salvación contra los conjuros lanzados por criaturas que se encuentren a 5 pies o menos de ti."
+					]
+				}
+			]
+		},
+		{
+			"name": "Iniciado en la Magia",
+			"source": "PHB-ES",
+			"page": 167,
+			"additionalSpells": [
+				{
+					"name": "Conjuros de Bardo",
+					"ability": "cha",
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									{
+										"choose": "level=1|class=Bardo (PHB-ES)"
+									}
+								]
+							}
+						}
+					},
+					"known": {
+						"_": [
+							{
+								"choose": "level=0|class=Bardo (PHB-ES)",
+								"count": 2
+							}
+						]
+					}
+				},
+				{
+					"name": "Conjuros de Clérigo",
+					"ability": "wis",
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									{
+										"choose": "level=1|class=Clérigo (PHB-ES)"
+									}
+								]
+							}
+						}
+					},
+					"known": {
+						"_": [
+							{
+								"choose": "level=0|class=Clérigo (PHB-ES)",
+								"count": 2
+							}
+						]
+					}
+				},
+				{
+					"name": "Conjuros de Druida",
+					"ability": "wis",
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									{
+										"choose": "level=1|class=Druida (PHB-ES)"
+									}
+								]
+							}
+						}
+					},
+					"known": {
+						"_": [
+							{
+								"choose": "level=0|class=Druida (PHB-ES)",
+								"count": 2
+							}
+						]
+					}
+				},
+				{
+					"name": "Conjuros de Hechicero",
+					"ability": "cha",
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									{
+										"choose": "level=1|class=Hechicero (PHB-ES)"
+									}
+								]
+							}
+						}
+					},
+					"known": {
+						"_": [
+							{
+								"choose": "level=0|class=Hechicero (PHB-ES)",
+								"count": 2
+							}
+						]
+					}
+				},
+				{
+					"name": "Conjuros de Brujo",
+					"ability": "cha",
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									{
+										"choose": "level=1|class=Brujo (PHB-ES)"
+									}
+								]
+							}
+						}
+					},
+					"known": {
+						"_": [
+							{
+								"choose": "level=0|class=Brujo (PHB-ES)",
+								"count": 2
+							}
+						]
+					}
+				},
+				{
+					"name": "Conjuros de Mago",
+					"ability": "int",
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									{
+										"choose": "level=1|class=Mago (PHB-ES)"
+									}
+								]
+							}
+						}
+					},
+					"known": {
+						"_": [
+							{
+								"choose": "level=0|class=Mago (PHB-ES)",
+								"count": 2
+							}
+						]
+					}
+				}
+			],
+			"entries": [
+				"Elige una clase: {@filter bardo|spells|level=0;1|class=Bardo (PHB-ES)}, {@filter brujo|spells|level=0;1|class=Brujo (PHB-ES)}, {@filter clérigo|spells|level=0;1|class=Clérigo (PHB-ES)}, {@filter druida|spells|level=0;1|class=Druida (PHB-ES)}, {@filter hechicero|spells|level=0;1|class=Hechicero (PHB-ES)} o {@filter mago|spells|level=0;1|class=Mago (PHB-ES)}. Aprendes dos trucos de tu elección escogidos de entre los de la lista de conjuros de esa clase.",
+				"También aprendes el conjuro de nivel 1 que escojas de dicha lista. Podrás emplear esta dote para lanzar una vez este conjuro a su nivel más bajo. Deberás finalizar un descanso largo para poder lanzarlo otra vez mediante esta dote.",
+				"Tu aptitud mágica para estos conjuros dependerá de la clase que hayas elegido: Carisma para {@filter bardo|spells|level=0;1|class=Bardo (PHB-ES)}, {@filter brujo|spells|level=0;1|class=Brujo (PHB-ES)} o {@filter hechicero|spells|level=0;1|class=Hechicero (PHB-ES)}; Sabiduría para {@filter clérigo|spells|level=0;1|class=Clérigo (PHB-ES)} o {@filter druida|spells|level=0;1|class=Druida (PHB-ES)}; e Inteligencia para {@filter mago|spells|level=0;1|class=Mago (PHB-ES)}."
+			]
+		},
+		{
+			"name": "Versado en las Armas",
+			"source": "PHB-ES",
+			"page": 170,
+			"optionalfeatureProgression": [
+				{
+					"name": "Maniobras",
+					"featureType": [
+						"MV_Esp:B"
+					],
+					"progression": {
+						"*": 2
+					}
+				}
+			],
+			"entries": [
+				"Has recibido un entrenamiento marcial que te permite ejecutar ciertas maniobras de combate. Obtienes los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Aprendes dos {@filter maniobras|optionalfeatures|feature type=MV_Esp:B} a tu elección de entre las disponibles para el arquetipo {@class guerrero|PHB-ES|Maestro del Combate|Maestro del Combate|PHB-ES|2-0}} de la clase guerrero. Si alguna exige a tu objetivo hacer una tirada de salvación para resistir sus efectos, la CD será 8 + tu modificador por competencia + tu modificador por Fuerza o Destreza (tú eliges).",
+						"Ganas un dado más de supremacía del tipo que tuvieras y, si no lo tienes, ganas {@dice 1d6}. Puedes utilizar este dado para ejecutar tus maniobras, y se gastará cuando lo uses. Recuperas todos los dados de supremacía tras hacer un descanso corto o largo."
+					]
+				}
+			]
+		},
+		{
+			"name": "Maestro en Armaduras Medias",
+			"source": "PHB-ES",
+			"page": 168,
+			"prerequisite": [
+				{
+					"proficiency": [
+						{
+							"armor": "medium"
+						}
+					]
+				}
+			],
+			"entries": [
+				"Te has acostumbrado a moverte con armaduras medias, obteniendo los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Llevar armadura media no te da desventaja en las pruebas de Destreza ({@skill Sigilo|PHB-ES}).",
+						"Cuando portas armadura media puedes sumar 3, en lugar de 2, a tu CA si tienes Destreza 16 o más."
+					]
+				}
+			]
+		},
+		{
+			"name": "Adepto de la Metamagia",
+			"source": "TCE-ES",
+			"page": 78,
+			"prerequisite": [
+				{
+					"spellcasting2020": true
+				}
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "Metamagic",
+					"featureType": [
+						"MM_Esp"
+					],
+					"progression": {
+						"*": 2
+					}
+				}
+			],
+			"entries": [
+				"Has aprendido a ejercer tu voluntad sobre tus conjuros para modificar el modo en que funcionan:",
+				{
+					"type": "list",
+					"items": [
+						"Aprendes dos opciones de {@filter Metamagia|optionalfeatures|Feature Type=MM_Esp} de tu elección escogidas de entre las de la clase hechicero. Solo puedes usar una opción de Metamagia en un conjuro cuando lo lanzas, a menos que dicha opción diga otra cosa. Cuando alcanzas un nivel que otorga el rasgo Mejora de Característica, puedes sustituir una de estas opciones de Metamagia por otra de la clase hechicero.",
+						"Ganas 2 puntos de hechicería para gastar en Metamagia (esos puntos se añaden a los puntos de hechicería que tengas de otro origen, pero solo se pueden usar en Metamagia). Recuperas todos los puntos de hechicería tras finalizar un descanso largo."
+					]
+				}
+			]
+		},
+		{
+			"name": "Móvil",
+			"source": "PHB-ES",
+			"page": 170,
+			"entries": [
+				"Eres excepcionalmente ágil y veloz. Posees los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Tu velocidad aumenta en 10 pies.",
+						"Al realizar una acción de {@action Correr|PHB-ES}, el {@book terreno difícil|PHB-ES|9|terreno difícil} no te cuesta movimiento adicional durante este turno.",
+						"Si realizas un ataque cuerpo a cuerpo contra una criatura (impactes o no), no provocarás ataques de oportunidad de esa criatura durante el resto del turno."
+					]
+				}
+			]
+		},
+		{
+			"name": "Moderadamente Acorazado",
+			"source": "PHB-ES",
+			"page": 170,
+			"prerequisite": [
+				{
+					"proficiency": [
+						{
+							"armor": "light"
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"armorProficiencies": [
+				{
+					"medium": true,
+					"shield|phb": true
+				}
+			],
+			"entries": [
+				"Te has entrenado hasta dominar el combate en armaduras medias y escudos, obteniendo los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Ganas competencia con armaduras medias y escudos."
+					]
+				}
+			]
+		},
+		{
+			"name": "Combatiente Montado",
+			"source": "PHB-ES",
+			"page": 167,
+			"entries": [
+				"Eres un enemigo muy peligroso cuando te encuentras sobre una montura. Obtendrás los beneficios siguientes mientras estés sobre una montura y no estés {@condition Incapacitado|PHB-ES|incapacitado}:",
+				{
+					"type": "list",
+					"items": [
+						"Tienes ventaja en las tiradas de ataque cuerpo a cuerpo contra cualquier criatura que no esté montada y sea de un tamaño inferior al de tu montura.",
+						"Puedes obligar a que un ataque cuyo objetivo original fuera tu montura te tenga como objetivo a ti en su lugar.",
+						"Si tu montura es víctima de un efecto que le permita hacer una tirada de salvación de Destreza para recibir solo la mitad del daño, no recibirá daño alguno si tiene éxito en la tirada de salvación y solo la mitad si falla."
+					]
+				}
+			]
+		},
+		{
+			"name": "Observador",
+			"source": "PHB-ES",
+			"page": 170,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"int",
+							"wis"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Te percatas con facilidad de los detalles de tu entorno, por lo que recibes los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Podrás saber lo que dice, leyendo sus labios, cualquier criatura que esté hablando un idioma que conozcas y cuya boca puedas ver.",
+						"Tienes un bonificador de +5 a tus puntuaciones de Sabiduría ({@skill Percepción|PHB-ES}) e Inteligencia ({@skill Investigación|PHB-ES}) pasivas."
+					]
+				}
+			]
+		},
+		{
+			"name": "Furia Orca",
+			"source": "XGE-ES",
+			"page": 74,
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "semiorco"
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"con"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Tu furia interior arde sin fin. Obtienes los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Cuando impactas con un ataque utilizando un {@filter arma marcial o sencilla|items|source=PHB-ES|category=basic|type=martial weapon;simple weapon}, puedes tirar uno de los dados de daño del arma una vez más y añadirlo como daño adicional del tipo del arma. Una vez empleada esta capacidad especial, deberás terminar un descanso corto o largo para poder volver a usarla otra vez.",
+						"Inmediatamente después de utilizar tu atributo Aguante Incansable, puedes usar tu reacción para realizar un ataque con arma."
+					]
+				}
+			]
+		},
+		{
+			"name": "Perforador",
+			"source": "TCE-ES",
+			"page": 80,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Has conseguido una precisión perforadora en combate, que te concede los siguientes beneficios:",
+				{
+					"type": "list",
+					"items": [
+						"Una vez por turno, cuando impactes a una criatura con un ataque que cause daño perforante, podrás volver a tirar uno de los dados de daño del ataque, pero tendrás que usar el nuevo resultado.",
+						"Cuando causes un crítico que haga daño perforante a una criatura, podrás tirar un dado de daño adicional al determinar el daño perforante adicional que recibe el objetivo."
+					]
+				}
+			]
+		},
+		{
+			"name": "Envenenador",
+			"source": "TCE-ES",
+			"page": 79,
+			"toolProficiencies": [
+				{
+					"poisoner's kit": true
+				}
+			],
+			"entries": [
+				"Puedes preparar y suministrar venenos letales, lo que te proporciona los siguientes beneficios:",
+				{
+					"type": "list",
+					"items": [
+						"Cuando hagas una tirada de daño que cause daño de veneno, esta ignorará la resistencia a ese daño.",
+						"Puedes aplicar veneno a un arma o munición como acción adicional, en vez de como acción.",
+						"También ganas competencia con {@item útiles de envenenador|PHB-ES} si aún no la tienes. Con una hora de trabajo usando {@item útiles de envenenador|PHB-ES} y gastando 50 po de materiales, puedes crear una cantidad de dosis de potente veneno igual a tu bonificador por competencia. Una vez aplicado a un arma o munición, el veneno conserva su potencia durante 1 minuto o hasta que impactes a un objetivo con el arma o la munición. Cuando una criatura sufra daño de ese arma o munición envenenadas, deberá superar una tirada de salvación de Constitución con CD 14 o sufrirá {@damage 2d8} de daño de veneno y quedará {@condition envenenado|PHB-ES|envenenada} hasta el final de tu siguiente turno."
+					]
+				}
+			]
+		},
+		{
+			"name": "Maestro en Armas de Asta",
+			"source": "PHB-ES",
+			"page": 168,
+			"entries": [
+				"Puedes mantener a tus enemigos a raya con las armas de alcance.",
+				"Posees los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Cuando realizas una acción de {@action Atacar|PHB-ES} y atacas únicamente con una {@item alabarda|PHB-ES}, {@item bastón|PHB-ES}, {@item lanza|PHB-ES} o {@item guja|PHB-ES}, puedes emplear tu acción adicional para ejecutar un ataque cuerpo a cuerpo con el lado opuesto del arma. Este ataque utiliza el mismo modificador por característica que el ataque primario, su dado de daño es {@dice d4} e inflige daño contundente.",
+						"Mientras estás empuñando una {@item alabarda|PHB-ES}, {@item bastón|PHB-ES}, {@item lanza|PHB-ES}, {@item guja|PHB-ES} o {@item pica|PHB-ES} puedes hacer un ataque de oportunidad contra aquellas criaturas que entren dentro del alcance que estas armas te dan."
+					]
+				}
+			]
+		},
+		{
+			"name": "Prodigio",
+			"source": "XGE-ES",
+			"page": 75,
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "semielfo"
+						},
+						{
+							"name": "semiorco"
+						},
+						{
+							"name": "humano"
+						}
+					]
+				}
+			],
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"athletics",
+							"acrobatics",
+							"sleight of hand",
+							"stealth",
+							"arcana",
+							"history",
+							"investigation",
+							"nature",
+							"religion",
+							"animal handling",
+							"insight",
+							"medicine",
+							"perception",
+							"survival",
+							"deception",
+							"intimidation",
+							"performance",
+							"persuasion"
+						]
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"any": 1
+				}
+			],
+			"toolProficiencies": [
+				{
+					"any": 1
+				}
+			],
+			"entries": [
+				"Tienes facilidad para aprender cosas nuevas. Obtienes los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Ganas competencia con una {@table habilidades|PHB-ES|habilidad} de tu elección y unas {@filter herramientas|items|type=Tools;Artisan's tools} que escojas y, además, aprendes un idioma de tu elección.",
+						"Elige una habilidad en la que seas competente. Ganas pericia con esa habilidad, lo que quiere decir que tu bonificador por competencia se duplica para cualquier prueba de característica que hagas con ella. La habilidad que escojas no puede ser una que ya se beneficie de un rasgo, como Pericia, que duplica tu bonificador por competencia."
+					]
+				}
+			]
+		},
+		{
+			"name": "Resiliente",
+			"source": "PHB-ES",
+			"page": 170,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						],
+						"amount": 1,
+						"entry": "Tu puntuación de característica elegida aumenta en 1, hasta un máximo de 20"
+					}
+				}
+			],
+			"savingThrowProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						]
+					}
+				}
+			],
+			"entries": [
+				"Elige una puntuación de característica. Obtienes los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Obtienes competencia en las tiradas de salvación de la característica elegida."
+					]
+				}
+			]
+		},
+		{
+			"name": "Lanzador Ritual",
+			"source": "PHB-ES",
+			"page": 168,
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"int": 13
+						},
+						{
+							"wis": 13
+						}
+					]
+				}
+			],
+			"additionalSpells": [
+				{
+					"name": "Conjuros de Bardo",
+					"ability": "cha",
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									{
+										"choose": "level=1|class=Bardo (PHB-ES)|components & miscellaneous=ritual",
+										"count": 2
+									}
+								]
+							}
+						}
+					}
+				},
+				{
+					"name": "Conjuros de Clérigo",
+					"ability": "wis",
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									{
+										"choose": "level=1|class=Clérigo (PHB-ES)|components & miscellaneous=ritual",
+										"count": 2
+									}
+								]
+							}
+						}
+					}
+				},
+				{
+					"name": "Conjuros de Druida",
+					"ability": "wis",
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									{
+										"choose": "level=1|class=Druida (PHB-ES)|components & miscellaneous=ritual",
+										"count": 2
+									}
+								]
+							}
+						}
+					}
+				},
+				{
+					"name": "Conjuros de Hechicero",
+					"ability": "cha",
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									{
+										"choose": "level=1|class=Hechicero (PHB-ES)|components & miscellaneous=ritual",
+										"count": 2
+									}
+								]
+							}
+						}
+					}
+				},
+				{
+					"name": "Conjuros de Brujo",
+					"ability": "cha",
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									{
+										"choose": "level=1|class=Brujo (PHB-ES)|components & miscellaneous=ritual",
+										"count": 2
+									}
+								]
+							}
+						}
+					}
+				},
+				{
+					"name": "Conjuros de Mago",
+					"ability": "int",
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									{
+										"choose": "level=1|class=Mago (PHB-ES)|components & miscellaneous=ritual",
+										"count": 2
+									}
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"Has aprendido una serie de conjuros que puedes lanzar como rituales. Estos conjuros están escritos en un libro de rituales, que debes tener en las manos para poder lanzar cualquiera de ellos.",
+				"Cuando escojas esta dote obtendrás este libro, que contendrá dos conjuros de nivel 1 de tu elección. Elige una de las siguientes clases: {@filter bardo|spells|level=1|class=bardo (PHB-ES)|components & miscellaneous=ritual}, {@filter brujo|spells|level=1|class=brujo (PHB-ES)|components & miscellaneous=ritual}, {@filter clérigo|spells|level=1|class=clérigo (PHB-ES)|components & miscellaneous=ritual}, {@filter druida|spells|level=1|class=druida (PHB-ES)|components & miscellaneous=ritual}, {@filter hechicero|spells|level=1|class=hechicero (PHB-ES)|components & miscellaneous=ritual} o {@filter mago|spells|level=1|class=mago (PHB-ES)|components & miscellaneous=ritual}. Debes escoger los conjuros de entre los de la lista de dicha clase y ambos deben estar marcados como \"ritual\". La clase elegida también determinará tu aptitud mágica para ellos: Carisma para bardo, brujo o hechicero; Sabiduría para clérigo o druida; e Inteligencia para mago.",
+				"Si te encuentras con un conjuro que esté plasmado por escrito, como en un {@item Pergamino de conjuro|PHB-ES|pergamino} de conjuro o en el libro de conjuros de un mago, podrás añadirlo a tu libro de rituales. Dicho conjuro deberá figurar en la lista de la clase que elegiste, su nivel no puede ser superior a la mitad del tuyo (redondeando hacia arriba) y debe estar marcado como \"ritual\". El proceso de copia al libro de rituales precisa de 2 horas y 50 po por cada nivel del conjuro. Este coste representa los componentes materiales que gastas al experimentar con el conjuro hasta dominarlo, así como las valiosas tintas que utilizas para registrarlo."
+			]
+		},
+		{
+			"name": "Atacante Salvaje",
+			"source": "PHB-ES",
+			"page": 166,
+			"entries": [
+				"Una vez por turno, cuando tiras el daño de un ataque con arma cuerpo a cuerpo, puedes repetir los dados de daño del arma y usar el resultado que prefieras."
+			]
+		},
+		{
+			"name": "Segunda Oportunidad",
+			"source": "XGE-ES",
+			"page": 75,
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "mediano"
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"dex",
+							"con",
+							"cha"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"La fortuna te favorece cuando alguien intenta atacarte. Obtienes los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Cuando una criatura que puedas ver te impacta con una tirada de ataque, puedes usar tu reacción para forzarla a repetir la tirada. Una vez utilices esta capacidad especial, no podrás volver hacerlo hasta que tires iniciativa al principio de un combate o hasta que completes un descanso corto o largo."
+					]
+				}
+			]
+		},
+		{
+			"name": "Centinela",
+			"source": "PHB-ES",
+			"page": 167,
+			"entries": [
+				"Has dominado una serie de técnicas que te permiten aprovecharte de la más mínima brecha en las defensas de tu enemigo, por lo que recibes los siguientes beneficios:",
+				{
+					"type": "list",
+					"items": [
+						"Si impactas a una criatura con un ataque de oportunidad, su velocidad desciende a 0 durante el resto del turno.",
+						"Podrás hacer ataques de oportunidad incluso contra aquellas criaturas que realicen una acción de {@action Destrabarse|PHB-ES} antes de salir de tu alcance.",
+						"Cuando una criatura que se encuentre a 5 pies o menos de ti ataque a un objetivo que no seas tú (y dicho objetivo no posea también esta dote), podrás usar tu reacción para realizar un ataque con arma cuerpo a cuerpo contra la criatura atacante."
+					]
+				}
+			]
+		},
+		{
+			"name": "Toque Sombrío",
+			"source": "TCE-ES",
+			"page": 81,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "inherit",
+					"innate": {
+						"_": {
+							"daily": {
+								"1e": [
+									"invisibilidad|PHB-ES",
+									{
+										"choose": "level=1|school=I;N"
+									}
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"Tu exposición a la magia de Shadowfell te ha cambiado, otorgándote los siguientes beneficios:",
+				{
+					"type": "list",
+					"items": [
+						"Aprendes el conjuro {@spell invisibilidad|PHB-ES} y un {@filter conjuro de nivel 1|spells|level=1|school=I;N} de tu elección. El {@filter conjuro de nivel 1|spells|level=1|school=I;N} debe ser de la escuela mágica de nigromancia o ilusionismo. Puedes lanzar cada uno de estos conjuros sin gastar un espacio de conjuro. Cuando lances cualquiera de estos conjuros de este modo, no podrás volver a hacerlo hasta que finalices un descanso largo. También puedes lanzar estos conjuros usando espacios de conjuro que tengas del nivel apropiado. La aptitud mágica de los conjuros es la característica aumentada por esta dote."
+					]
+				}
+			]
+		},
+		{
+			"name": "Tirador de Primera",
+			"source": "PHB-ES",
+			"page": 170,
+			"entries": [
+				"Eres un maestro de las armas a distancia, capaz de acertar con disparos que otros considerarían imposibles. Posees los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"No tienes desventaja en las tiradas de ataque con armas a distancia a alcance largo.",
+						"Tus ataques con armas a distancia ignoran las coberturas media y tres cuartos.",
+						"Puedes elegir, antes de hacer un ataque con un arma a distancia con la que seas competente, sufrir un penalizador de –5 a la tirada de ataque. Si impactas, puedes sumar +10 al daño del ataque."
+					]
+				}
+			]
+		},
+		{
+			"name": "Maestro en Escudos",
+			"source": "PHB-ES",
+			"page": 169,
+			"entries": [
+				"No solo usas el escudo para protegerte, sino también para atacar. Mientras estés embrazando un {@item escudo|PHB-ES} recibirás los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Si realizas una acción de {@action Atacar|PHB-ES} durante tu turno, puedes utilizar una acción adicional para intentar {@action empujar|PHB-ES} una criatura que se encuentre a 5 pies o menos de ti con tu escudo.",
+						"Si no estás {@condition Incapacitado|PHB-ES|incapacitado}, puedes añadir el bonificador de CA de tu escudo a cualquier tirada de salvación de Destreza que hagas contra cualquier conjuro u otro efecto pernicioso que solo te tenga como objetivo a ti.",
+						"Si eres víctima de un efecto que te permite hacer una tirada de salvación de Destreza para recibir solo la mitad del daño, puedes emplear tu reacción para no recibir daño alguno si tienes éxito en la tirada de salvación, interponiendo tu escudo entre el origen del efecto y tú."
+					]
+				}
+			]
+		},
+		{
+			"name": "Experto en Habilidades",
+			"source": "TCE-ES",
+			"page": 79,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"athletics",
+							"acrobatics",
+							"sleight of hand",
+							"stealth",
+							"arcana",
+							"history",
+							"investigation",
+							"nature",
+							"religion",
+							"animal handling",
+							"insight",
+							"medicine",
+							"perception",
+							"survival",
+							"deception",
+							"intimidation",
+							"performance",
+							"persuasion"
+						]
+					}
+				}
+			],
+			"expertise": [
+				{
+					"anyProficientSkill": 1
+				}
+			],
+			"entries": [
+				"Has perfeccionado tu competencia en determinadas habilidades, lo que te concede los siguientes beneficios:",
+				{
+					"type": "list",
+					"items": [
+						"Ganas competencia en una {@table habilidades|PHB-ES|habilidad} de tu elección.",
+						"Elige una habilidad en la que tengas competencia. Ganas pericia con esa habilidad, lo que significa que tu bonificador por competencia se duplica para cualquier prueba de característica que hagas con ella. La habilidad elegida debe ser una que aún no se beneficie de un rasgo, como Pericia, que duplica tu bonificador por competencia."
+					]
+				}
+			]
+		},
+		{
+			"name": "Habilidoso",
+			"source": "PHB-ES",
+			"page": 167,
+			"skillToolLanguageProficiencies": [
+				{
+					"choose": [
+						{
+							"from": [
+								"anySkill",
+								"anyTool"
+							],
+							"count": 3
+						}
+					]
+				}
+			],
+			"entries": [
+				"Ganas competencia en cualquier combinación de tres {@table habilidades|PHB-ES} o {@filter herramientas|items|type=Tools;Artisan's tools;Instrument;Gaming set;Vehicle (land);Vehicle (water)} de tu elección."
+			]
+		},
+		{
+			"name": "Acechador",
+			"source": "PHB-ES",
+			"page": 165,
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"dex": 13
+						}
+					]
+				}
+			],
+			"entries": [
+				"Eres experto en escabullirte entre las sombras. Obtienes los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Puedes intentar esconderte simplemente con estar en una zona ligeramente oscura desde el punto de vista de la criatura de la que deseas ocultarte.",
+						"Cuando estás escondido de una criatura y fallas un ataque con arma a distancia contra ella, el haber realizado este ataque no revela tu ubicación.",
+						"La luz tenue no te provoca desventaja en las pruebas de Sabiduría ({@skill Percepción|PHB-ES}) que dependen de la vista."
+					]
+				}
+			]
+		},
+		{
+			"name": "Rebanador",
+			"source": "TCE-ES",
+			"page": 80,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Has aprendido dónde cortar para obtener los mejores resultados, lo que te concede los siguientes beneficios:",
+				{
+					"type": "list",
+					"items": [
+						"Una vez por turno, cuando impactes a una criatura con un ataque que cause daño cortante, podrás reducir la velocidad del objetivo en 10 pies hasta el principio de tu siguiente turno.",
+						"Cuando causes un crítico que haga daño cortante a una criatura, la herirás gravemente. Hasta el principio de tu siguiente turno, el objetivo tendrá desventaja en todas las tiradas de ataque."
+					]
+				}
+			]
+		},
+		{
+			"name": "Lanzador Preciso",
+			"source": "PHB-ES",
+			"page": 168,
+			"prerequisite": [
+				{
+					"spellcasting": true
+				}
+			],
+			"additionalSpells": [
+				{
+					"name": "Conjuros de Bardo",
+					"ability": "cha",
+					"known": {
+						"_": [
+							{
+								"choose": "level=0|class=Bardo (PHB-ES)|spell attack=m;r;o",
+								"count": 1
+							}
+						]
+					}
+				},
+				{
+					"name": "Conjuros de Clérigo",
+					"ability": "wis",
+					"known": {
+						"_": [
+							{
+								"choose": "level=0|class=Clérigo (PHB-ES)|spell attack=m;r;o",
+								"count": 1
+							}
+						]
+					}
+				},
+				{
+					"name": "Conjuros de Druida",
+					"ability": "wis",
+					"known": {
+						"_": [
+							{
+								"choose": "level=0|class=Druida (PHB-ES)|spell attack=m;r;o",
+								"count": 1
+							}
+						]
+					}
+				},
+				{
+					"name": "Conjuros de Hechicero",
+					"ability": "cha",
+					"known": {
+						"_": [
+							{
+								"choose": "level=0|class=Hechicero (PHB-ES)|spell attack=m;r;o",
+								"count": 1
+							}
+						]
+					}
+				},
+				{
+					"name": "Conjuros de Brujo",
+					"ability": "cha",
+					"known": {
+						"_": [
+							{
+								"choose": "level=0|class=Brujo (PHB-ES)|spell attack=m;r;o",
+								"count": 1
+							}
+						]
+					}
+				},
+				{
+					"name": "Conjuros de Mago",
+					"ability": "int",
+					"known": {
+						"_": [
+							{
+								"choose": "level=0|class=Mago (PHB-ES)|spell attack=m;r;o",
+								"count": 1
+							}
+						]
+					}
+				}
+			],
+			"entries": [
+				"Has aprendido varias técnicas que te permiten mejorar tus ataques con ciertos tipos de conjuros, recibiendo los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Cuando lances un conjuro que precise de una tirada de ataque, su alcance se duplica.",
+						"Tus ataques de conjuros a distancia ignoran las coberturas media y tres cuartos.",
+						"Aprendes un truco que requiera de una tirada de ataque. Escógelo de entre las listas de {@filter bardo|spells|level=0|class=bardo (PHB-ES)|spell attack=m;r;o}, {@filter brujo|spells|level=0|class=brujo (PHB-ES)|spell attack=m;r;o}, {@filter clérigo|spells|level=0|class=clérigo (PHB-ES)|spell attack=m;r;o}, {@filter druida|spells|level=0|class=druida (PHB-ES)|spell attack=m;r;o}, {@filter hechicero|spells|level=0|class=hechicero (PHB-ES)|spell attack=m;r;o} o {@filter mago|spells|level=0|class=mago (PHB-ES)|spell attack=m;r;o}. Tu aptitud mágica para este truco dependerá de la clase a la que pertenezca la lista en la que figuraba: Carisma para bardo, brujo o hechicero; Sabiduría para clérigo o druida; e Inteligencia para mago."
+					]
+				}
+			]
+		},
+		{
+			"name": "Agilidad de los Bajitos",
+			"source": "XGE-ES",
+			"page": 73,
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "enano"
+						},
+						{
+							"name": "raza pequeña",
+							"displayEntry": "raza pequeña"
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"acrobatics",
+							"athletics"
+						]
+					}
+				}
+			],
+			"entries": [
+				"Eres extrañamente ágil para tu raza. Obtienes los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Tu velocidad caminando aumenta en 5 pies.",
+						"Consigues competencia en la habilidad {@skill Acrobacias|PHB-ES} o {@skill Atletismo|PHB-ES}, a tu elección.",
+						"Tienes ventaja en cualquier tirada de Fuerza ({@skill Atletismo|PHB-ES}) o Destreza ({@skill Acrobacias|PHB-ES}) que realices para liberarte del estado \"{@condition agarrado|PHB-ES}\"."
+					]
+				}
+			]
+		},
+		{
+			"name": "Magia Svirfneblin",
+			"source": "SCAG-ES",
+			"page": 115,
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "gnomo",
+							"subrace": "de las profundidades"
+						}
+					]
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "int",
+					"innate": {
+						"_": {
+							"will": [
+								"indetectable|PHB-ES"
+							],
+							"daily": {
+								"1e": [
+									"sordera/ceguera|PHB-ES",
+									"contorno borroso|PHB-ES",
+									"disfrazarse|PHB-ES"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"Has heredado la aptitud mágica innata de tus ancestros. Esta habilidad te permite lanzar {@spell indetectable|PHB-ES} a voluntad sobre ti mismo, sin necesitar un componente material. También puedes emplear los conjuros siguientes con esta habilidad: {@spell sordera/ceguera|PHB-ES}, {@spell contorno borroso|PHB-ES}, {@spell disfrazarse|PHB-ES}. Recuperas la capacidad para lanzar estos conjuros tras hacer un descanso largo.",
+				"La Inteligencia es tu aptitud mágica para estos conjuros."
+			]
+		},
+		{
+			"name": "Matón de Taberna",
+			"source": "PHB-ES",
+			"page": 169,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"con"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Estás acostumbrado a pelear de forma brusca y agresiva, empleando como arma cualquier objeto que caiga en tus manos. Por tanto, posees los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Eres competente con armas improvisadas.",
+						"Tus ataques sin armas infligen {@damage 1d4} de daño.",
+						"Cuando impactas a una criatura con un ataque sin armas o un arma improvisada durante tu turno, puedes utilizar una acción adicional para intentar agarrar al objetivo."
+					]
+				}
+			]
+		},
+		{
+			"name": "Telequinético",
+			"source": "TCE-ES",
+			"page": 80,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "inherit",
+					"known": {
+						"_": [
+							"mano de mago|PHB-ES#c"
+						]
+					}
+				}
+			],
+			"entries": [
+				"Aprendes a mover cosas con tu mente, lo que te concede los siguientes beneficios:",
+				{
+					"type": "list",
+					"items": [
+						"Aprendes el truco {@spell mano de mago|PHB-ES}. Puedes lanzarlo sin componentes verbales ni somáticos y puedes hacer {@condition invisible|PHB-ES} la mano espectral. Si ya conoces este conjuro, su alcance aumenta en 30 pies cuando lo lanzas. Su aptitud mágica es la característica aumentada por esta dote.",
+						"Como acción adicional, puedes intentar empujar telepática mente una criatura que puedas ver a 30 pies o menos de ti. Si lo haces, el objetivo deberá superar una tirada de salvación de Fuerza (CD 8 +tu bonificador por competencia + el modificador por característica de la puntuación aumentada por esta dote) o se moverá 5 pies hacia ti o alejándose de ti. Una criatura puede fallar voluntariamente esta tirada."
+					]
+				}
+			]
+		},
+		{
+			"name": "Telepático",
+			"source": "TCE-ES",
+			"page": 80,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "inherit",
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									"detectar pensamientos|PHB-ES"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"Despiertas la capacidad de conectar mentalmente con los demás, lo que te concede los siguientes beneficios:",
+				{
+					"type": "list",
+					"items": [
+						"Puedes hablar telepáticamente con cualquier criatura que puedas ver a 60 pies o menos de ti. Hablas telepáticamente en un idioma que conoces, y la criatura solo te entiende si también conoce dicho idioma. Tu comunicación no concede a la criatura la capacidad de responderte telepáticamente.",
+						"Puedes lanzar el conjuro {@spell detectar pensamientos|PHB-ES} sin necesidad de un espacio de conjuro ni componentes y debes finalizar un descanso largo antes de volver a lanzarlo de este modo. La aptitud mágica del conjuro es la característica aumentada por esta dote. Si tienes espacios de conjuro de nivel 2 o superior, puedes lanzar este conjuro con ellos."
+					]
+				}
+			]
+		},
+		{
+			"name": "Duro",
+			"source": "PHB-ES",
+			"page": 167,
+			"entries": [
+				"Tus puntos de golpe máximos aumentan en dos veces tu nivel en el momento en que eliges esta dote. A partir de ese momento, cada vez que alcances un nuevo nivel tus puntos de golpe máximos aumentarán en 2 más."
+			]
+		},
+		{
+			"name": "Lanzador en Combate",
+			"source": "PHB-ES",
+			"page": 167,
+			"prerequisite": [
+				{
+					"spellcasting": true
+				}
+			],
+			"entries": [
+				"Has practicado como lanzar conjuros en medio del combate, aprendiendo técnicas que te proporcionan los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Tienes ventaja en las tiradas de salvación de Constitución que hagas para mantener la concentración en un conjuro cuando recibes daño.",
+						"Puedes ejecutar los componentes somáticos de tus conjuros incluso cuando empuñas armas o un {@item escudo|PHB-ES}, en una o ambas manos.",
+						"Cuando el movimiento de una criatura hostil te permite hacer un ataque de oportunidad contra ella, puedes usar tu reacción para, en lugar de realizar este ataque, lanzar un conjuro contra la criatura. Dicho conjuro deberá tener un tiempo de lanzamiento de 1 acción y tener como objetivo una única criatura."
+					]
+				}
+			]
+		},
+		{
+			"name": "Maestro de Armas",
+			"source": "PHB-ES",
+			"page": 168,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"weaponProficiencies": [
+				{
+					"choose": {
+						"fromFilter": "type=martial weapon;mundane weapon|miscellaneous=mundane",
+						"count": 4
+					}
+				}
+			],
+			"entries": [
+				"Has practicado intensamente con una gran variedad de armas, por lo que disfrutas de los beneficios siguientes:",
+				{
+					"type": "list",
+					"items": [
+						"Ganas competencia con cuatro armas de tu elección. Podrás escoger cualquier arma sencilla o marcial."
+					]
+				}
+			]
+		},
+		{
+			"name": "Magia de los Elfos de los Bosques",
+			"source": "XGE-ES",
+			"page": 74,
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "elfo",
+							"subrace": "de los bosques"
+						}
+					]
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "wis",
+					"innate": {
+						"_": {
+							"daily": {
+								"1e": [
+									"zancada prodigiosa|PHB-ES",
+									"pasar sin rastro|PHB-ES"
+								]
+							}
+						}
+					},
+					"known": {
+						"_": [
+							{
+								"choose": "level=0|class=Druida (PHB-ES)"
+							}
+						]
+					}
+				}
+			],
+			"entries": [
+				"Asimilas la magia de los bosques primordiales, adorados y protegidos por tu raza. Aprendes un truco de druida a tu elección. También adquieres los conjuros de {@spell zancada prodigiosa|PHB-ES} y {@spell pasar sin rastro|PHB-ES} y, además, puedes lanzar cada uno de ellos una vez sin utilizar un espacio de conjuro. Recuperas la capacidad de emplear esos dos conjuros de esta manera cuando terminas un descanso largo. Tu aptitud mágica para estos tres conjuros es Sabiduría."
+			]
+		},
+		{
+			"name": "Gift of the Chromatic Dragon",
+			"source": "FTD-ES",
+			"page": 17,
+			"entries": [
+				"You've manifested some of the power of chromatic dragons, granting you the following benefits:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Chromatic Infusion",
+							"entries": [
+								"As a bonus action, you can touch a {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon} and infuse it with one of the following damage types: acid, cold, fire, lightning, or poison. For the next minute, the weapon deals an extra {@damage 1d4} damage of the chosen type when it hits. After you use this bonus action, you can't do so again until you finish a long rest."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Reactive Resistance",
+							"entries": [
+								"When you take acid, cold, fire, lightning, or poison damage, you can use your reaction to give yourself resistance to that instance of damage. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Gift of the Gem Dragon",
+			"source": "FTD-ES",
+			"page": 17,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You've manifested some of the power of gem dragons, granting you the following benefits:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Telekinetic Reprisal",
+							"entries": [
+								"When you take damage from a creature that is within 10 feet of you, you can use your reaction to emanate telekinetic energy. The creature that dealt damage to you must make a Strength saving throw (DC equals 8 + your proficiency bonus + the ability modifier of the score increased by this feat). On a failed save, the creature takes {@damage 2d8} force damage and is pushed up to 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Gift of the Metallic Dragon",
+			"source": "FTD-ES",
+			"page": 17,
+			"additionalSpells": [
+				{
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									"cure wounds"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"You've manifested some of the power of metallic dragons, granting you the following benefits:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Draconic Healing",
+							"entries": [
+								"You learn the {@spell cure wounds} spell. You can cast this spell without expending a spell slot. Once you cast this spell in this way, you can't do so again until you finish a long rest. You can also cast this spell using spell slots you have. The spell's spellcasting ability is Intelligence, Wisdom, or Charisma when you cast it with this feat (choose when you gain the feat)."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Protective Wings",
+							"entries": [
+								"You can manifest protective wings that can shield you or others. When you or another creature you can see within 5 feet of you is hit by an attack roll, you can use your reaction to manifest spectral wings from your back for a moment. You grant a bonus to the target's AC equal to your proficiency bonus against that attack roll, potentially causing it to miss. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
