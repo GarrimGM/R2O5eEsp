@@ -1,13 +1,18 @@
 package org.openjfx.service;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Writer;
 import java.util.List;
 
 import org.openjfx.AppProperties;
+import org.openjfx.repositories.ImportTableRepository;
 import org.openjfx.repositories.OptionalFeatureTypesRepository;
 import org.openjfx.repositories.SourcesRepository;
+import org.openjfx.repositories.model.ImportTableModel;
 import org.openjfx.repositories.model.OptionalFeatureTypesModel;
 import org.openjfx.repositories.model.SourcesModel;
 
@@ -18,6 +23,7 @@ import com.google.gson.JsonObject;
 
 public class FormarDocumento {
     public static void crear() throws IOException {
+        System.out.println("Inicio - Creando documento final");
         //Crea el documento json base
         String rutaDocumento = AppProperties.getInstance().getProperty("rutaEsp")+"DnD-ES.json";
         JsonObject jsDocumento =  new JsonObject();
@@ -58,11 +64,34 @@ public class FormarDocumento {
         //Informa el grupo de _Meta
         jsDocumento.add("_meta", jsMeta);
 
+        //Consulta la lista de documentos a importar
+        List<ImportTableModel> listaTablas = ImportTableRepository.consultaActivos();
+        for (ImportTableModel importTable : listaTablas) {
+            String rutaDocEsp = AppProperties.getInstance().getProperty("rutaEsp")+"data\\"+importTable.getJsonDocument();
+
+            try {
+                BufferedReader bufferedReaderEsp = new BufferedReader(new FileReader(rutaDocEsp));
+                Gson gsonEsp = new Gson();
+                JsonObject jsonEsp = gsonEsp.fromJson(bufferedReaderEsp, JsonObject.class);
+                //Comprueba si tiene el campo
+                if(!jsonEsp.has(importTable.getFieldName())){
+                    JsonArray jsLista = new JsonArray();
+                    jsonEsp.add(importTable.getFieldName(), jsLista);
+                }
+                JsonArray jsLista = jsonEsp.getAsJsonArray(importTable.getFieldName());
+                jsDocumento.add(importTable.getFieldName(), jsLista);
+            } catch (FileNotFoundException e) {
+                System.out.println("Documento "+importTable.getJsonDocument()+" no encontrado");
+            }
+        }  
+
 
         //Crea el documento físico
         try (Writer writer = new FileWriter(rutaDocumento)) {
             Gson gson = new GsonBuilder().create();
             gson.toJson(jsDocumento, writer);
         }
+
+        System.out.println("Fin - Creando documento final");
     }
 }

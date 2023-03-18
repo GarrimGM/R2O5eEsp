@@ -9,8 +9,6 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-import org.openjfx.service.CargarTablas;
-
 /**
  * JavaFX App
  */
@@ -20,8 +18,6 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        CargarTablas.cargarTablas();
-
         scene = new Scene(loadFXML("primary"), 640, 480);
         stage.setScene(scene);
         stage.getIcons().add(new Image(App.class.getResourceAsStream("img/icon.png")));
