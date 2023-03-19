@@ -43243,6 +43243,44 @@
 					}
 				]
 			}	
+		},
+		{
+			"name": "Espada mental",
+			"type": "GV",
+			"requires": [
+				{
+					"sword": true
+				}
+			],
+			"inherits": {
+				"namePrefix": "Espada mental ",
+				"source": "VGM-ES",
+				"page": 16,
+				"rarity": "rare",
+				"reqAttune": "con un individuo específico",
+				"entries": [
+					"Los azotamentes pueden convertir cualquier espada no mágica en una espada mental. Solo una criatura puede sintonizarse con ella: un ilícido concreto o uno de sus esclavos. En manos de cualquier otra criatura, la espada mental funciona como una espada normal de su tipo. En manos de su portador designado, la espada mental es un arma mágica que causa {@dice 2d6} de daño psíquico adicional a cualquier objetivo al que impacte."
+				]
+			}
+		},
+		{
+			"name": "Armadura de caparazón mental",
+			"type": "GV",
+			"requires": [
+				{
+					"type": "HA"
+				}
+			],
+			"inherits": {
+				"nameSuffix": " caparazón mental",
+				"source": "VGM-ES",
+				"page": 81,
+				"rarity": "uncommon",
+				"reqAttune": "con un individuo específico",
+				"entries": [
+					"Los azotamentes pueden convertir cualquier armadura pesada no mágica en una armadura de caparazón mental. Solo una criatura puede sintonizarse con ella: un ilícido concreto o uno de su esclavos. Mientras la usa cualquier otra criatura, la armadura de caparazón mental funciona como una armadura normal de su tipo. Para su portador designado, la armadura otorga ventaja en las tiradas de salvación de Inteligencia, Sabiduría y Carisma y hace que este sea inmune a la condición \"{@condition asustado|PHB-ES}\"."
+				]
+			}
 		}
 	],
 	"object": [
