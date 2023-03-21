@@ -1607,6 +1607,165 @@
 					"Recibes un bonificador {=bonusWeapon} a las tiradas de ataque y de daño que hagas con esta arma. Pierde sus bonificadores permanentemente si se ve expuesta a la luz solar durante al menos 1 hora."
 				]
 			}
+		},
+		{
+			"name": "Munición de adamantina",
+			"type": "GV",
+			"requires": [
+				{
+					"type": "A"
+				},
+				{
+					"type": "AF"
+				}
+			],
+			"excludes": {
+				"name": "Energy Cell"
+			},
+			"ammo": true,
+			"entries": [
+				"La munición hecha o recubierta de este metal es inusualmente efectiva para romper objetos. Cuando la munición de adamantina impacta a un objeto, este se considera un crítico.",
+				"La versión adamantina de diez unidades de munición cuesta 500 po más que la versión normal, independientemente de que la munición esté hecha del metal o recubierta de él."
+			],
+			"inherits": {
+				"nameSuffix": " de adamantina",
+				"source": "XGE-ES",
+				"page": 78,
+				"tier": "minor",
+				"rarity": "unknown",
+				"entries": [
+					"Cuando la munición de adamantina impacta a un objeto, este se considera un crítico."
+				]
+			}
+		},
+		{
+			"name": "Arma de adamantina",
+			"type": "GV",
+			"requires": [
+				{
+					"weapon": true
+				}
+			],
+			"excludes": {
+				"net": true
+			},
+			"entries": [
+				"Las armas cuerpo a cuerpo recubiertas de este metal son inusualmente efectivas para romper objetos. Cuando un arma de adamantina impacta a un objeto, este se considera un crítico.",
+				"La versión adamantina de un arma cuerpo a cuerpo cuesta 500 po más que la versión normal, independientemente de que el arma esté hecho del metal o recubierto de él."
+			],
+			"inherits": {
+				"nameSuffix": " de adamantina",
+				"source": "XGE-ES",
+				"page": 78,
+				"tier": "major",
+				"rarity": "unknown",
+				"valueExpression": "[[baseItem.value]] + 50000",
+				"entries": [
+					"Cuando un arma de adamantina impacta a un objeto, este se considera un crítico."
+				]
+			}
+		},
+		{
+			"name": "Armadura resplandeciente",
+			"type": "GV",
+			"requires": [
+				{
+					"type": "HA"
+				},
+				{
+					"type": "MA"
+				}
+			],
+			"inherits": {
+				"nameSuffix": " resplandeciente",
+				"source": "XGE-ES",
+				"page": 136,
+				"tier": "minor",
+				"rarity": "common",
+				"entries": [
+					"Esta armadura nunca se ensucia."
+				]
+			}
+		},
+		{
+			"name": "Armadura de quita y pon",
+			"type": "GV",
+			"requires": [
+				{
+					"armor": true
+				}
+			],
+			"inherits": {
+				"nameSuffix": " de quita y pon",
+				"source": "XGE-ES",
+				"page": 136,
+				"tier": "minor",
+				"rarity": "common",
+				"entries": [
+					"Puedes quitarte esta armadura con una acción."
+				]
+			}
+		},
+		{
+			"name": "Espada tocada por la luna",
+			"type": "GV",
+			"requires": [
+				{
+					"sword": true
+				}
+			],
+			"inherits": {
+				"nameSuffix": " tocada por la luna",
+				"source": "XGE-ES",
+				"page": 138,
+				"tier": "minor",
+				"rarity": "common",
+				"entries": [
+					"En la oscuridad, la hoja desenvainada de esta espada emite luz de luna, creando una zona de 15 pies de radio de luz brillante, que se extiende como luz tenue otros 15 pies más allá."
+				]
+			}
+		},
+		{
+			"name": "Armadura de rescoldos",
+			"type": "GV",
+			"requires": [
+				{
+					"armor": true
+				}
+			],
+			"inherits": {
+				"nameSuffix": " de rescoldos",
+				"source": "XGE-ES",
+				"page": 136,
+				"tier": "minor",
+				"rarity": "common",
+				"entries": [
+					"Hilillos de humo sin olor emanan de esta armadura mientras alguien la lleve puesta."
+				]
+			}
+		},
+		{
+			"name": "Munición poderosa",
+			"type": "GV",
+			"requires": [
+				{
+					"type": "A"
+				},
+				{
+					"type": "AF"
+				}
+			],
+			"ammo": true,
+			"inherits": {
+				"nameSuffix": " poderosa",
+				"source": "XGE-ES",
+				"page": 138,
+				"tier": "minor",
+				"rarity": "common",
+				"entries": [
+					"Esta munición es extremadamente potente. Cualquier criatura impactada con ella deberá tener éxito en una tirada de salvación de Fuerza CD 10 o quedará {@condition derribado|PHB-ES|derribada}."
+				]
+			}
 		}
 	]
 }

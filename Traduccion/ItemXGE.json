@@ -674,7 +674,7 @@
 	],
 	"magicvariant": [
 		{
-			"name": "Adamantine Ammunition",
+			"name": "Munición de adamantina",
 			"type": "GV",
 			"requires": [
 				{
@@ -689,22 +689,22 @@
 			},
 			"ammo": true,
 			"entries": [
-				"Ammunition made of or coated with adamantine is unusually effective when used to break objects. Whenever a piece of adamantine ammunition hits an object, the hit is a critical hit.",
-				"The adamantine version of ten pieces of ammunition costs 500 gp more than the normal version, whether the ammunition is made of the metal or coated with it."
+				"La munición hecha o recubierta de este metal es inusualmente efectiva para romper objetos. Cuando la munición de adamantina impacta a un objeto, este se considera un crítico.",
+				"La versión adamantina de diez unidades de munición cuesta 500 po más que la versión normal, independientemente de que la munición esté hecha del metal o recubierta de él."
 			],
 			"inherits": {
-				"namePrefix": "Adamantine ",
+				"nameSuffix": " de adamantina",
 				"source": "XGE-ES",
 				"page": 78,
 				"tier": "minor",
 				"rarity": "unknown",
 				"entries": [
-					"Whenever you hit an object using this ammunition, the hit is a critical hit."
+					"Cuando la munición de adamantina impacta a un objeto, este se considera un crítico."
 				]
 			}
 		},
 		{
-			"name": "Adamantine Weapon",
+			"name": "Arma de adamantina",
 			"type": "GV",
 			"requires": [
 				{
@@ -715,23 +715,23 @@
 				"net": true
 			},
 			"entries": [
-				"Melee weapons made of or coated with adamantine are unusually effective when used to break objects. Whenever an adamantine weapon hits an object, the hit is a critical hit.",
-				"The adamantine version of a melee weapon costs 500 gp more than the normal version, whether the weapon is made of the metal or coated with it."
+				"Las armas cuerpo a cuerpo recubiertas de este metal son inusualmente efectivas para romper objetos. Cuando un arma de adamantina impacta a un objeto, este se considera un crítico.",
+				"La versión adamantina de un arma cuerpo a cuerpo cuesta 500 po más que la versión normal, independientemente de que el arma esté hecho del metal o recubierto de él."
 			],
 			"inherits": {
-				"namePrefix": "Adamantine ",
+				"nameSuffix": " de adamantina",
 				"source": "XGE-ES",
 				"page": 78,
 				"tier": "major",
 				"rarity": "unknown",
 				"valueExpression": "[[baseItem.value]] + 50000",
 				"entries": [
-					"Whenever you hit an object with this weapon, the hit is a critical hit."
+					"Cuando un arma de adamantina impacta a un objeto, este se considera un crítico."
 				]
 			}
 		},
 		{
-			"name": "Armor of Gleaming",
+			"name": "Armadura resplandeciente",
 			"type": "GV",
 			"requires": [
 				{
@@ -742,18 +742,18 @@
 				}
 			],
 			"inherits": {
-				"nameSuffix": " of Gleaming",
+				"nameSuffix": " resplandeciente",
 				"source": "XGE-ES",
 				"page": 136,
 				"tier": "minor",
 				"rarity": "common",
 				"entries": [
-					"This armor never gets dirty."
+					"Esta armadura nunca se ensucia."
 				]
 			}
 		},
 		{
-			"name": "Cast-Off Armor",
+			"name": "Armadura de quita y pon",
 			"type": "GV",
 			"requires": [
 				{
@@ -761,18 +761,18 @@
 				}
 			],
 			"inherits": {
-				"namePrefix": "Cast-Off ",
+				"nameSuffix": " de quita y pon",
 				"source": "XGE-ES",
 				"page": 136,
 				"tier": "minor",
 				"rarity": "common",
 				"entries": [
-					"You can doff this armor as an action."
+					"Puedes quitarte esta armadura con una acción."
 				]
 			}
 		},
 		{
-			"name": "Moon-Touched Sword",
+			"name": "Espada tocada por la luna",
 			"type": "GV",
 			"requires": [
 				{
@@ -780,18 +780,18 @@
 				}
 			],
 			"inherits": {
-				"namePrefix": "Moon-Touched ",
+				"nameSuffix": " tocada por la luna",
 				"source": "XGE-ES",
 				"page": 138,
 				"tier": "minor",
 				"rarity": "common",
 				"entries": [
-					"In darkness, the unsheathed blade of this sword sheds moonlight, creating bright light in a 15-foot radius and dim light for an additional 15 feet."
+					"En la oscuridad, la hoja desenvainada de esta espada emite luz de luna, creando una zona de 15 pies de radio de luz brillante, que se extiende como luz tenue otros 15 pies más allá."
 				]
 			}
 		},
 		{
-			"name": "Smoldering Armor",
+			"name": "Armadura de rescoldos",
 			"type": "GV",
 			"requires": [
 				{
@@ -799,18 +799,18 @@
 				}
 			],
 			"inherits": {
-				"namePrefix": "Smoldering ",
+				"nameSuffix": " de rescoldos",
 				"source": "XGE-ES",
-				"page": 139,
+				"page": 136,
 				"tier": "minor",
 				"rarity": "common",
 				"entries": [
-					"Wisps of harmless, odorless smoke rise from this armor while it is worn."
+					"Hilillos de humo sin olor emanan de esta armadura mientras alguien la lleve puesta."
 				]
 			}
 		},
 		{
-			"name": "Walloping Ammunition",
+			"name": "Munición poderosa",
 			"type": "GV",
 			"requires": [
 				{
@@ -822,13 +822,13 @@
 			],
 			"ammo": true,
 			"inherits": {
-				"namePrefix": "Walloping ",
+				"nameSuffix": " poderosa",
 				"source": "XGE-ES",
-				"page": 139,
+				"page": 138,
 				"tier": "minor",
 				"rarity": "common",
 				"entries": [
-					" This ammunition packs a wallop. A creature hit by the ammunition must succeed on a DC 10 Strength saving throw or be knocked {@condition prone}."
+					"Esta munición es extremadamente potente. Cualquier criatura impactada con ella deberá tener éxito en una tirada de salvación de Fuerza CD 10 o quedará {@condition derribado|PHB-ES|derribada}."
 				]
 			}
 		}
