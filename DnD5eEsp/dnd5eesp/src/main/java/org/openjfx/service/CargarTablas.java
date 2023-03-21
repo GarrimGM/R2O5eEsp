@@ -44,6 +44,53 @@ public class CargarTablas {
             //Recupera el json del documento
             String rutaDocOriginal = AppProperties.getInstance().getProperty("rutaOriginal")+"data\\"+importTable.getJsonDocument();
             String rutaDocEsp = AppProperties.getInstance().getProperty("rutaEsp")+"data\\"+importTable.getJsonDocument();
+
+            //Comprueba si existe el documento json de destino
+            JsonObject jsonEsp = new JsonObject();
+            try {
+                BufferedReader bufferedReaderEsp = new BufferedReader(new FileReader(rutaDocEsp));
+                Gson gsonEsp = new Gson();
+                jsonEsp = gsonEsp.fromJson(bufferedReaderEsp, JsonObject.class);
+                //Comprueba si tiene el campo
+                if(!jsonEsp.has(importTable.getFieldName())){
+                    JsonArray jsLista = new JsonArray();
+                    jsonEsp.add(importTable.getFieldName(), jsLista);
+                }
+            } catch (FileNotFoundException e) {
+                //Si no encuentra el documento lo crea
+                JsonArray jsLista = new JsonArray();
+                jsonEsp.add(importTable.getFieldName(), jsLista);
+                try (Writer writer = new FileWriter(rutaDocEsp)) {
+                    Gson gsonCreate = new GsonBuilder().create();
+                    gsonCreate.toJson(jsonEsp, writer);
+                }
+                System.out.println("Documento "+importTable.getJsonDocument()+" creado");
+            }
+            JsonObject jsonEspOriginal = jsonEsp.deepCopy();
+            JsonArray listaDatosEsp = jsonEsp.get(importTable.getFieldName()).getAsJsonArray();
+
+            //Recuperamos el documento fluff
+            JsonArray listaDatosFluff = new JsonArray();
+            HashMap<String,JsonObject> fluffMap = new HashMap<>();
+            if(importTable.getFluffDocument()!=null && !importTable.getFluffDocument().isEmpty()) {
+                try {
+                    String rutaDocFluff = AppProperties.getInstance().getProperty("rutaOriginal")+"data\\"+importTable.getFluffDocument();
+                    BufferedReader bufferedReader = new BufferedReader(new FileReader(rutaDocFluff));
+                    Gson gson = new Gson();
+                    JsonObject json = gson.fromJson(bufferedReader, JsonObject.class);
+                    listaDatosFluff = json.get(importTable.getFluffFieldName()).getAsJsonArray();
+
+                    for (int i = 0; i < listaDatosFluff.size(); i++) {
+                        JsonObject datoFluff = listaDatosFluff.get(i).getAsJsonObject();
+                        String sourceDocFluff = datoFluff.get("source").getAsString();
+                        String textDocFluff = datoFluff.get("name").getAsString();
+                        fluffMap.put(textDocFluff+"|"+sourceDocFluff, datoFluff);
+                    } 
+                } catch (FileNotFoundException e) {
+                    System.out.println("Documento Fluff "+importTable.getFluffDocument()+" no encontrado");
+                }
+            }
+
             //Comprobar el tipo de tabla
             if(importTable.getTypeTable().equals("A")) {
                 try {
@@ -71,7 +118,7 @@ public class CargarTablas {
                                 //Como aún no existe se añade a la tabla de destino
                                 TypeTableARepository.alta(importTable.getTableId(), new TypeTableAModel(source, text, ""));
                             }
-                            buscarActDocA(importTable, rutaDocEsp, dato, source, sourceEsp, text, textEsp);
+                            jsonEsp = buscarActDocA(jsonEsp, importTable, listaDatosEsp, fluffMap, dato, source, sourceEsp, text, textEsp);
                         }
                     }
                 } catch (FileNotFoundException e) {
@@ -105,12 +152,21 @@ public class CargarTablas {
                                 //Como aún no existe se añade a la tabla de destino
                                 TypeTableARepository.alta(importTable.getTableId(), new TypeTableAModel(source, text, ""));
                             }
-                            buscarActDocB(importTable, rutaDocEsp, dato, source, sourceEsp, text, textEsp);
+                            jsonEsp = buscarActDocB(jsonEsp, importTable, listaDatosEsp, fluffMap, dato, source, sourceEsp, text, textEsp);
                         }
                     }
                 } catch (FileNotFoundException e) {
                     System.out.println("Documento original no encontrado");
                 }
+            }
+            //Comprobamos si se ha añadido algo al original
+            if(!jsonEspOriginal.equals(jsonEsp)) {
+                //Actualiza el documento
+                try (Writer writer = new FileWriter(rutaDocEsp)) {
+                    Gson gsonCreate = new GsonBuilder().create();
+                    gsonCreate.toJson(jsonEsp, writer);
+                }
+                System.out.println("Documento "+importTable.getJsonDocument()+" guardado.");
             }
             System.out.println("Fin - Proceso de carga de la tabla "+importTable.getTableId());
         }
@@ -128,30 +184,8 @@ public class CargarTablas {
         System.out.println("Fin - Carga de tablas");
     }
 
-    private static void buscarActDocA(ImportTableModel importTable,
-            String rutaDocEsp, JsonObject dato, String source, String sourceEsp, String text, String textEsp) throws IOException {
-        //Comprueba si existe el documento json de destino
-        JsonObject jsonEsp = new JsonObject();
-        try {
-            BufferedReader bufferedReaderEsp = new BufferedReader(new FileReader(rutaDocEsp));
-            Gson gsonEsp = new Gson();
-            jsonEsp = gsonEsp.fromJson(bufferedReaderEsp, JsonObject.class);
-            //Comprueba si tiene el campo
-            if(!jsonEsp.has(importTable.getFieldName())){
-                JsonArray jsLista = new JsonArray();
-                jsonEsp.add(importTable.getFieldName(), jsLista);
-            }
-        } catch (FileNotFoundException e) {
-            //Si no encuentra el documento lo crea
-            JsonArray jsLista = new JsonArray();
-            jsonEsp.add(importTable.getFieldName(), jsLista);
-            try (Writer writer = new FileWriter(rutaDocEsp)) {
-                Gson gsonCreate = new GsonBuilder().create();
-                gsonCreate.toJson(jsonEsp, writer);
-            }
-            System.out.println("Documento "+importTable.getJsonDocument()+" creado");
-        }
-        JsonArray listaDatosEsp = jsonEsp.get(importTable.getFieldName()).getAsJsonArray();
+    private static JsonObject buscarActDocA(JsonObject jsonEsp, ImportTableModel importTable, JsonArray listaDatosEsp, 
+            HashMap<String,JsonObject> fluffMap, JsonObject dato, String source, String sourceEsp, String text, String textEsp) throws IOException {
         //Recorre la lista traducida para buscar si ya esta el registro añadido
         boolean encontradoDocEsp = false;
         for (int i = 0; i < listaDatosEsp.size(); i++) {
@@ -168,81 +202,17 @@ public class CargarTablas {
         //Si no lo encuentra lo añade al documento
         if(!encontradoDocEsp) {
             dato.addProperty("source", sourceEsp);
-            //Comprobamos si tienes token
-            if(dato.has("hasToken")) {
-                dato.remove("hasToken");
-                String rutaToken = "img/";
-                if(importTable.getFieldName().equals("object")) {
-                    rutaToken = rutaToken+"vehicles/tokens/";
-                }
-                rutaToken = rutaToken+source+"/";
-                String nombreToken = text.trim().replaceAll(" ", "%20")+".png";
-                String urlToken = AppProperties.getInstance().getProperty("urlToken")+rutaToken+nombreToken;
-                dato.addProperty("tokenUrl", urlToken);
-            }
-            //Comprobamos si esta tabla puede tener fluff
-            if(importTable.getFluffDocument()!=null && !importTable.getFluffDocument().isEmpty()) {
-                if(dato.has("hasFluff") || dato.has("hasFluffImages")){
-                    dato.remove("hasFluff");
-                    dato.remove("hasFluffImages");
-                    //Recuperamos el documento fluff
-                    String rutaDocFluff = AppProperties.getInstance().getProperty("rutaOriginal")+"data\\"+importTable.getFluffDocument();
-                    BufferedReader bufferedReader = new BufferedReader(new FileReader(rutaDocFluff));
-                    Gson gson = new Gson();
-                    JsonObject json = gson.fromJson(bufferedReader, JsonObject.class);
-                    JsonArray listaDatosFluff = json.get(importTable.getFluffFieldName()).getAsJsonArray();
-                    //Buscamos el identificador en la lista de fluff
-                    for (int i = 0; i < listaDatosFluff.size(); i++) {
-                        JsonObject datoFluff = listaDatosFluff.get(i).getAsJsonObject();
-                        String sourceDocFluff = datoFluff.get("source").getAsString();
-                        String textDocFluff = datoFluff.get("name").getAsString();
-                        if(sourceDocFluff.equals(source) &&
-                                textDocFluff.equals(text)) {
-                            datoFluff.remove("name");
-                            datoFluff.remove("source");
-                            //Se añade al fluff al dato que se llevará al json
-                            dato.add("fluff", datoFluff);
-                            i = listaDatosFluff.size();
-                        }
-                    }    
-                }
-            }
-
+            dato = actualizarFluff(importTable, fluffMap, dato, source, text);
             listaDatosEsp.add(dato);
             jsonEsp.add(importTable.getFieldName(), listaDatosEsp);
-            try (Writer writer = new FileWriter(rutaDocEsp)) {
-                Gson gsonCreate = new GsonBuilder().create();
-                gsonCreate.toJson(jsonEsp, writer);
-            }
             System.out.println("Documento "+importTable.getJsonDocument()+" actualizado, registro: "
-                +text+"|"+source);
+                                +text+"|"+source);
         }
+        return jsonEsp;
     }
 
-    private static void buscarActDocB(ImportTableModel importTable,
-            String rutaDocEsp, JsonObject dato, String source, String sourceEsp, String text, String textEsp) throws IOException {
-        //Comprueba si existe el documento json de destino
-        JsonObject jsonEsp = new JsonObject();
-        try {
-            BufferedReader bufferedReaderEsp = new BufferedReader(new FileReader(rutaDocEsp));
-            Gson gsonEsp = new Gson();
-            jsonEsp = gsonEsp.fromJson(bufferedReaderEsp, JsonObject.class);
-            //Comprueba si tiene el campo
-            if(!jsonEsp.has(importTable.getFieldName())){
-                JsonArray jsLista = new JsonArray();
-                jsonEsp.add(importTable.getFieldName(), jsLista);
-            }
-        } catch (FileNotFoundException e) {
-            //Si no encuentra el documento lo crea
-            JsonArray jsLista = new JsonArray();
-            jsonEsp.add(importTable.getFieldName(), jsLista);
-            try (Writer writer = new FileWriter(rutaDocEsp)) {
-                Gson gsonCreate = new GsonBuilder().create();
-                gsonCreate.toJson(jsonEsp, writer);
-            }
-            System.out.println("Documento "+importTable.getJsonDocument()+" creado");
-        }
-        JsonArray listaDatosEsp = jsonEsp.get(importTable.getFieldName()).getAsJsonArray();
+    private static JsonObject buscarActDocB(JsonObject jsonEsp, ImportTableModel importTable, JsonArray listaDatosEsp, 
+            HashMap<String,JsonObject> fluffMap, JsonObject dato, String source, String sourceEsp, String text, String textEsp) throws IOException {
         //Recorre la lista traducida para buscar si ya esta el registro añadido
         boolean encontradoDocEsp = false;
         for (int i = 0; i < listaDatosEsp.size(); i++) {
@@ -263,54 +233,44 @@ public class CargarTablas {
             JsonObject datoHeredado = dato.getAsJsonObject("inherits");
             datoHeredado.addProperty("source", sourceEsp);
             dato.add("inherits", datoHeredado);
-            //Comprobamos si tienes token
-            if(dato.has("hasToken")) {
-                dato.remove("hasToken");
-                String rutaToken = "img/";
-                if(importTable.getFieldName().equals("object")) {
-                    rutaToken = rutaToken+"vehicles/tokens/";
-                }
-                rutaToken = rutaToken+source+"/";
-                String nombreToken = text.trim().replaceAll(" ", "%20")+".png";
-                String urlToken = AppProperties.getInstance().getProperty("urlToken")+rutaToken+nombreToken;
-                dato.addProperty("tokenUrl", urlToken);
-            }
-            //Comprobamos si esta tabla puede tener fluff
-            if(importTable.getFluffDocument()!=null && !importTable.getFluffDocument().isEmpty()) {
-                if(dato.has("hasFluff") || dato.has("hasFluffImages")){
-                    dato.remove("hasFluff");
-                    dato.remove("hasFluffImages");
-                    //Recuperamos el documento fluff
-                    String rutaDocFluff = AppProperties.getInstance().getProperty("rutaOriginal")+"data\\"+importTable.getFluffDocument();
-                    BufferedReader bufferedReader = new BufferedReader(new FileReader(rutaDocFluff));
-                    Gson gson = new Gson();
-                    JsonObject json = gson.fromJson(bufferedReader, JsonObject.class);
-                    JsonArray listaDatosFluff = json.get(importTable.getFluffFieldName()).getAsJsonArray();
-                    //Buscamos el identificador en la lista de fluff
-                    for (int i = 0; i < listaDatosFluff.size(); i++) {
-                        JsonObject datoFluff = listaDatosFluff.get(i).getAsJsonObject();
-                        String sourceDocFluff = datoFluff.get("source").getAsString();
-                        String textDocFluff = datoFluff.get("name").getAsString();
-                        if(sourceDocFluff.equals(source) &&
-                                textDocFluff.equals(text)) {
-                            datoFluff.remove("name");
-                            datoFluff.remove("source");
-                            //Se añade al fluff al dato que se llevará al json
-                            dato.add("fluff", datoFluff);
-                            i = listaDatosFluff.size();
-                        }
-                    }    
-                }
-            }
-
+            dato = actualizarFluff(importTable, fluffMap, dato, source, text);
             listaDatosEsp.add(dato);
             jsonEsp.add(importTable.getFieldName(), listaDatosEsp);
-            try (Writer writer = new FileWriter(rutaDocEsp)) {
-                Gson gsonCreate = new GsonBuilder().create();
-                gsonCreate.toJson(jsonEsp, writer);
-            }
             System.out.println("Documento "+importTable.getJsonDocument()+" actualizado, registro: "
-                +text+"|"+source);
+                                +text+"|"+source);
         }
+        return jsonEsp;
     }
+
+    private static JsonObject actualizarFluff(ImportTableModel importTable, HashMap<String,JsonObject> fluffMap, JsonObject dato, String source, String text) {
+        //Comprobamos si tienes token
+        if(dato.has("hasToken")) {
+            dato.remove("hasToken");
+            String rutaToken = "img/";
+            if(importTable.getFieldName().equals("object")) {
+                rutaToken = rutaToken+"vehicles/tokens/";
+            }
+            rutaToken = rutaToken+source+"/";
+            String nombreToken = text.trim().replaceAll(" ", "%20")+".png";
+            String urlToken = AppProperties.getInstance().getProperty("urlToken")+rutaToken+nombreToken;
+            dato.addProperty("tokenUrl", urlToken);
+        }
+        //Comprobamos si esta tabla puede tener fluff
+        if(dato.has("hasFluff") || dato.has("hasFluffImages")){
+            dato.remove("hasFluff");
+            dato.remove("hasFluffImages");
+            
+            //Buscamos el identificador en la lista de fluff
+            String keyFluff = text+"|"+source;
+            if(fluffMap.containsKey(keyFluff)) {
+                JsonObject datoFluff = fluffMap.get(keyFluff);
+                datoFluff.remove("name");
+                datoFluff.remove("source");
+                //Se añade al fluff al dato que se llevará al json
+                dato.add("fluff", datoFluff);
+            }
+        }
+        return dato;
+    }
+
 }
