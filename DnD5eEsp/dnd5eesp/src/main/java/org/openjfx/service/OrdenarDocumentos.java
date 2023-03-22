@@ -91,13 +91,16 @@ public class OrdenarDocumentos {
                 for (TypeTableAModel dato : listaDatos) {
                     String sourceEsp = sourcesMap.get(dato.getSource()).getSourceEsp();
                     String textoOriginal = dato.getText();
-                    String textoTraduc = dato.getTextEsp();
+                    String textoTraduc = "";
+                    if(dato.getTextEsp()!=null) {
+                        textoTraduc = dato.getTextEsp();
+                    }
                     String claveOriginal = sourceEsp+'|'+textoOriginal;
                     String claveTraduc = sourceEsp+'|'+textoTraduc;
 
-                    if(textoTraduc!=null && textoTraduc!="" && listaDatosEspMap.containsKey(claveTraduc)) {
+                    if(textoTraduc!="" && listaDatosEspMap.containsKey(claveTraduc)) {
                         jsListaOrdenado.add(listaDatosEspMap.get(claveTraduc));
-                    } else {
+                    } else if(listaDatosEspMap.containsKey(claveOriginal)){
                         jsListaOrdenado.add(listaDatosEspMap.get(claveOriginal));
                     }
                 }
@@ -133,7 +136,7 @@ public class OrdenarDocumentos {
             jsonEspOrdenado.add(importTable.getFieldName(), jsListaOrdenado);
 
             //Comprobamos si se ha añadido algo al original
-            if(!jsonEspOrdenado.equals(jsonEsp)) {
+            if(!jsListaOrdenado.isEmpty() && !jsonEspOrdenado.equals(jsonEsp)) {
                 //Actualiza el documento
                 try (Writer writer = new FileWriter(rutaDocEsp)) {
                     Gson gsonCreate = new GsonBuilder().create();
@@ -144,5 +147,5 @@ public class OrdenarDocumentos {
             System.out.println("Fin - Ordenando documento "+importTable.getJsonDocument());
         }
         System.out.println("Fin - Ordenando documentos");
-    }   
+    }
 }
