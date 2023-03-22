@@ -46853,7 +46853,7 @@
 				}
 			],
 			"entries": [
-				"Un rayo de luz amarilla se proyecta desde tu índice y se condensa, quedando latente con la forma de una cuenta brillante en un punto dentro del alcance. Cuando el conjuro termina, ya sea porque se rompe tu concentración o porque decides terminarlo, la cuenta se transforma con un rugido sordo en una explosión ardiente que se extiende más allá de las esquinas. Todas las criaturas en una esfera de 20 pies centrada en el punto deben hacer una tirada de salvación de Destreza. Sufrirán daño de fuego igual al daño acumulado si fallan la tirada o la mitad del daño si la superan.",
+				"Un rayo de luz amarilla se proyecta desde tu índice y se condensa, quedando latente con la forma de una cuenta brillante en un punto dentro del alcance. Cuando el conjuro termina, ya sea porque se rompe tu {@status concentración|PHB-ES} o porque decides terminarlo, la cuenta se transforma con un rugido sordo en una explosión ardiente que se extiende más allá de las esquinas. Todas las criaturas en una esfera de 20 pies centrada en el punto deben hacer una tirada de salvación de Destreza. Sufrirán daño de fuego igual al daño acumulado si fallan la tirada o la mitad del daño si la superan.",
 				"El daño base del conjuro es {@damage 12d6}. Si al final de tu turno la cuenta aún no ha explotado, este daño se incrementa en {@dice 1d6}.",
 				"Si se toca la cuenta antes de que termine el tiempo, la criatura que lo haga debe realizar una tirada de salvación de Destreza. Si falla, el conjuro termina inmediatamente, haciendo que la cuenta explote. Si tiene éxito, la criatura puede lanzar la cuenta hasta a 40 pies de distancia. Cuando esta golpee a una criatura u objeto sólido, el conjuro termina y la cuenta explota.",
 				"El fuego daña los objetos que se encuentren en el área, haciendo arder los que sean inflamables y no lleve o vista alguien."
@@ -49622,7 +49622,7 @@
 			"entries": [
 				"Invocas a un sirviente elemental. Elige un área de agua, aire, fuego o tierra, dentro del alcance que llene un cubo de 10 pies de lado. Un {@filter elemental con valor de desafío 5 o menos|bestiary|challenge rating=[&0;&5]|tag=elemental|miscellaneous=!swarm} y apropiado al área elegida aparece en un espacio desocupado a 10 pies de esta. Por ejemplo, un {@creature elemental de fuego|MM-ES} emerge de una fogata y un {@creature elemental de tierra|MM-ES} se alza de un suelo de tierra. El elemental desaparece si sus puntos de golpe se reducen a 0 o el conjuro termina.",
 				"Es amistoso hacia ti y tus compañeros hasta el final de la duración del conjuro. Haz una tirada de iniciativa para el elemental, que tiene sus propios turnos. Obedece cualquier mandato verbal tuyo (no requiere acción). Si no le das ninguna orden, se defenderá de criaturas hostiles, pero no realizará ninguna otra acción.",
-				"Si tu concentración se rompe, el elemental no desaparece. En vez de eso, pierdes el control del elemental, que se vuelve hostil hacia ti y tus compañeros y podría atacaros. No puedes desconvocar a un elemental descontrolado, que desaparecerá 1 hora después de que lo invoques.",
+				"Si tu {@status concentración|PHB-ES} se rompe, el elemental no desaparece. En vez de eso, pierdes el control del elemental, que se vuelve hostil hacia ti y tus compañeros y podría atacaros. No puedes desconvocar a un elemental descontrolado, que desaparecerá 1 hora después de que lo invoques.",
 				"El DM tiene el perfil del elemental."
 			],
 			"entriesHigherLevel": [
@@ -49791,7 +49791,7 @@
 			"entries": [
 				"Invocas a una {@filter criatura feérica con valor de desafío 6 o menos|bestiary|challenge rating=[&0;&6]|tag=fey|miscellaneous=!swarm}, o un espíritu feérico que tome la forma de una {@filter bestia con valor de desafío 6 o menos|bestiary|challenge rating=[&0;&6]|tag=beast|miscellaneous=!swarm}. Aparece en un espacio desocupado que puedas ver dentro del alcance. El feérico desaparece si sus puntos de golpe se reducen a 0 o el conjuro termina.",
 				"Es amistoso hacia ti y tus compañeros hasta el final de la duración del conjuro. Haz una tirada de iniciativa para el feérico, que tiene sus propios turnos. Obedecerá cualquier mandato verbal tuyo (no requiere acción) que no viole su alineamiento. Si no le das ninguna orden, se defenderá de criaturas hostiles, pero no realizará ninguna otra acción.",
-				"Si tu concentración se rompe, el feérico no desaparece. En vez de eso, pierdes el control del feérico, que se vuelve hostil hacia ti y tus compañeros y podría atacaros. No puedes desconvocar al feérico descontrolado, que desaparecerá 1 hora después de que lo invoques.",
+				"Si tu {@status concentración|PHB-ES} se rompe, el feérico no desaparece. En vez de eso, pierdes el control del feérico, que se vuelve hostil hacia ti y tus compañeros y podría atacaros. No puedes desconvocar al feérico descontrolado, que desaparecerá 1 hora después de que lo invoques.",
 				"El DM tiene el perfil de las criaturas."
 			],
 			"entriesHigherLevel": [
@@ -52435,7 +52435,7 @@
 				"Intentas convertir en piedra a una criatura que puedas ver dentro del alcance. Si su cuerpo está hecho de carne, debe hacer una tirada de salvación de Constitución. Si fracasa, queda {@condition Apresado|PHB-ES|apresada} mientras su carne comienza a endurecerse. Si tiene éxito, no se ve afectada.",
 				"Una criatura {@condition Apresado|PHB-ES|apresada} por este conjuro realiza otra tirada de salvación de Constitución al final de cada uno de sus turnos. El conjuro termina si la criatura tiene éxito tres veces en esta tirada. Si fracasa tres veces, queda convertida en piedra y, por tanto, bajo el estado \"{@condition Petrificado|PHB-ES|petrificado}\" hasta el final de la duración del conjuro. Los éxitos y fallos no tienen por qué ser consecutivos. Lleva la cuenta de ambos hasta que tengas tres del mismo tipo.",
 				"Si se rompe físicamente a la criatura mientras esta {@condition Petrificado|PHB-ES|petrificada}, sufrirá deformaciones análogas en su cuerpo cuando vuelva a su estado original.",
-				"Si mantienes tu concentración en este conjuro durante toda la duración posible, la criatura se convertirá en piedra hasta que el efecto sea anulado."
+				"Si mantienes tu {@status concentración|PHB-ES} en este conjuro durante toda la duración posible, la criatura se convertirá en piedra hasta que el efecto sea anulado."
 			],
 			"conditionInflict": [
 				"petrified",
@@ -53998,7 +53998,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 5, la duración pasa a ser: concentración, hasta 10 minutos. Si usas un espacio de conjuro de nivel 6, la duración pasa a ser: concentración, hasta 1 hora. Si empleas un espacio de conjuro de nivel 7 o más, la duración pasa a ser: concentración, hasta 8 horas."
+						"Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 5, la duración pasa a ser: {@status concentración|PHB-ES}, hasta 10 minutos. Si usas un espacio de conjuro de nivel 6, la duración pasa a ser: {@status concentración|PHB-ES}, hasta 1 hora. Si empleas un espacio de conjuro de nivel 7 o más, la duración pasa a ser: {@status concentración|PHB-ES}, hasta 8 horas."
 					]
 				}
 			],
@@ -54125,7 +54125,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Si utilizas un espacio de conjuro de nivel 9, la duración pasa a ser: concentración, hasta 8 horas."
+						"Si utilizas un espacio de conjuro de nivel 9, la duración pasa a ser: {@status concentración|PHB-ES}, hasta 8 horas."
 					]
 				}
 			],
@@ -54208,7 +54208,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 6, la duración pasa a ser: concentración, hasta 10 minutos. Si usas un espacio de conjuro de nivel 7, la duración pasa a ser: concentración, hasta 1 hora. Si empleas un espacio de conjuro de nivel 8 o más, la duración pasa a ser: concentración, hasta 8 horas."
+						"Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 6, la duración pasa a ser: {@status concentración|PHB-ES}, hasta 10 minutos. Si usas un espacio de conjuro de nivel 7, la duración pasa a ser: {@status concentración|PHB-ES}, hasta 1 hora. Si empleas un espacio de conjuro de nivel 8 o más, la duración pasa a ser: {@status concentración|PHB-ES}, hasta 8 horas."
 					]
 				}
 			],
@@ -57778,7 +57778,7 @@
 					"type": "entries",
 					"name": "Glifo de conjuro",
 					"entries": [
-						"Puedes guardar un conjuro preparado de nivel 3 o menos en el glifo, lanzándolo como parte de la creación de este. El conjuro debe elegir como objetivo a una sola persona o una zona y no tiene efecto en el momento de lanzarlo, sino que, cuando se activa el glifo, se lanza el conjuro guardado. Si el conjuro tiene un objetivo, este será la criatura que active el glifo. Si el conjuro afecta a una zona, la zona queda centrada en la criatura. Si el conjuro convoca criaturas hostiles o crear objetos o trampas dañinos, estos aparecen lo más cerca posible del intruso y lo atacan. Si el conjuro requiere concentración, dura hasta el final de su duración completa."
+						"Puedes guardar un conjuro preparado de nivel 3 o menos en el glifo, lanzándolo como parte de la creación de este. El conjuro debe elegir como objetivo a una sola persona o una zona y no tiene efecto en el momento de lanzarlo, sino que, cuando se activa el glifo, se lanza el conjuro guardado. Si el conjuro tiene un objetivo, este será la criatura que active el glifo. Si el conjuro afecta a una zona, la zona queda centrada en la criatura. Si el conjuro convoca criaturas hostiles o crear objetos o trampas dañinos, estos aparecen lo más cerca posible del intruso y lo atacan. Si el conjuro requiere {@status concentración|PHB-ES}, dura hasta el final de su duración completa."
 					]
 				}
 			],
@@ -59742,7 +59742,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 6 o más, el conjuro se mantiene hasta que sea disipado; sin requerir concentración."
+						"Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 6 o más, el conjuro se mantiene hasta que sea disipado; sin requerir {@status concentración|PHB-ES}."
 					]
 				}
 			],
@@ -60057,7 +60057,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 4 o más, la duración pasa a ser: concentración, hasta 10 minutos. Si utilizas un espacio de conjuro de nivel 5 o más, la duración es de 8 horas. Si usas un espacio de conjuro de nivel 7 u 8, la duración es de 24 horas. Si empleas un espacio de conjuro de nivel 9, el conjuro dura hasta que sea disipado. Además, al lanzar este conjuro con un espacio de nivel 5 o más, no es necesaria la concentración para mantener la duración especificada más arriba."
+						"Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 4 o más, la duración pasa a ser: {@status concentración|PHB-ES}, hasta 10 minutos. Si utilizas un espacio de conjuro de nivel 5 o más, la duración es de 8 horas. Si usas un espacio de conjuro de nivel 7 u 8, la duración es de 24 horas. Si empleas un espacio de conjuro de nivel 9, el conjuro dura hasta que sea disipado. Además, al lanzar este conjuro con un espacio de nivel 5 o más, no es necesaria la {@status concentración|PHB-ES} para mantener la duración especificada más arriba."
 					]
 				}
 			],
@@ -62510,7 +62510,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Si utilizas un espacio de conjuro de nivel 3 o 4, la duración pasa a ser: concentración, hasta 8 horas. Si usas un espacio de conjuro de nivel 5 o más, la duración pasa a ser: concentración, hasta 24 horas."
+						"Si utilizas un espacio de conjuro de nivel 3 o 4, la duración pasa a ser: {@status concentración|PHB-ES}, hasta 8 horas. Si usas un espacio de conjuro de nivel 5 o más, la duración pasa a ser: {@status concentración|PHB-ES}, hasta 24 horas."
 					]
 				}
 			],
@@ -63014,7 +63014,7 @@
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"Si empleas un espacio de conjuro de nivel 3 o 4, la duración pasa a ser: concentración, hasta 8 horas. Si usas un espacio de conjuro de nivel 5 o más, la duración pasa a ser: concentración, hasta 24 horas."
+						"Si empleas un espacio de conjuro de nivel 3 o 4, la duración pasa a ser: {@status concentración|PHB-ES}, hasta 8 horas. Si usas un espacio de conjuro de nivel 5 o más, la duración pasa a ser: {@status concentración|PHB-ES}, hasta 24 horas."
 					]
 				}
 			],
@@ -63597,7 +63597,7 @@
 			],
 			"entries": [
 				"Elige una zona de terreno cuadrada de hasta 40 pies de lado dentro del alcance. Eres capaz de cambiar la forma de la tierra, arena o arcilla en la zona como desees, hasta el final de la duración del conjuro. Puedes subir o bajar la elevación de la zona, crear o llenar una zanja, construir o derribar un muro o crear un pilar. La magnitud de estos cambios no puede exceder la mitad de la mayor de las dimensiones del área. De esta manera, si afectas a un cuadrado de 40 pies de lado, podrías crear un pilar de hasta 20 pies de altura, subir o bajar la elevación del cuadrado hasta 20 pies, cavar una zanja de 20 pies de profundidad, etc. Estos cambios tardan 10 minutos en completarse.",
-				"Cada 10 minutos que te concentres en el conjuro puedes elegir una nueva zona de terreno a la que afectar.",
+				"Cada 10 minutos que te {@status concentración|PHB-ES|concentres} en el conjuro puedes elegir una nueva zona de terreno a la que afectar.",
 				"Debido a que la transformación ocurre lentamente, las criaturas que estuvieran en el área no se verán atrapadas o heridas por el movimiento de tierras.",
 				"Este conjuro no puede manipular la piedra, ya sea natural o en forma de estructura. Las rocas y construcciones se mueven para adaptarse al nuevo terreno. Si la manera en que modificas el terreno hace inestable una construcción, esta podría derrumbarse.",
 				"De igual forma, este conjuro tampoco afecta al crecimiento de la vegetación. Pero la tierra desplazada arrastra consigo cualquier planta con ella."
@@ -64034,7 +64034,7 @@
 				"El muro puede tener cualquier forma que desees, pero no puede ocupar el mismo espacio que una criatura u objeto. No es necesario que sea vertical o que descanse sobre unos cimientos sólidos. Sin embargo, sí que es obligatorio que se funda con un cuerpo de piedra existente, y que este pueda sostener el muro. De esta manera, podrías usar el conjuro para salvar un abismo o crear una rampa.",
 				"Si creas una arcada de más de 20 pies de longitud, debes reducir a la mitad el tamaño de cada panel para crear estructuras de soporte. Además, eres capaz, de manera tosca, de dar forma al muro para añadir almenas, parapetos, etc.",
 				"El muro es un objeto hecho de piedra que puede ser dañado y por tanto atravesado. Cada panel tiene CA 15 y 30 puntos de golpe por cada pulgada de grosor. Reducir a un panel a 0 puntos de golpe lo destruye, y podría, a discreción del DM, hacer que otros paneles conectados se derrumbasen.",
-				"Si mantienes tu concentración en el conjuro durante toda su duración, el muro se convierte en permanente y no puede ser disipado. En caso contrario, el muro desaparece cuando el conjuro termina."
+				"Si mantienes tu {@status concentración|PHB-ES} en el conjuro durante toda su duración, el muro se convierte en permanente y no puede ser disipado. En caso contrario, el muro desaparece cuando el conjuro termina."
 			],
 			"savingThrow": [
 				"dexterity"
@@ -73662,8 +73662,8 @@
 			],
 			"entries": [
 				"Creas un fenómeno sísmico en un punto del suelo que puedas ver dentro del alcance. Hasta el final de la duración del conjuro, un intenso temblor arrasa el área en un radio de 100 pies alrededor del punto, haciendo temblar a las criaturas y estructuras en la zona y en contacto con el suelo.",
-				"El terreno en el área pasa a considerarse {@book terreno difícil|PHB-ES|9|terreno difícil}. Todas las criaturas sobre el que estén concentrándose deberá hacer una tirada de salvación de Constitución. Si fallan, su concentración se rompe.",
-				"En el momento de lanzar el conjuro y al final de cada turno en el que sigas concentrándote en él, cada criatura sobre el suelo del área debe realizar una tirada de salvación de Destreza. Si falla, es {@condition Derribado|PHB-ES|derribada}.",
+				"El terreno en el área pasa a considerarse {@book terreno difícil|PHB-ES|9|terreno difícil}. Todas las criaturas sobre el que estén {@status concentración|PHB-ES|concentrándose} deberá hacer una tirada de salvación de Constitución. Si fallan, su concentración se rompe.",
+				"En el momento de lanzar el conjuro y al final de cada turno en el que sigas {@status concentración|PHB-ES|concentrándote} en él, cada criatura sobre el suelo del área debe realizar una tirada de salvación de Destreza. Si falla, es {@condition Derribado|PHB-ES|derribada}.",
 				"Este conjuro puede tener efectos adiciónales dependiendo del tipo de terreno en el área, a determinar por el DM.",
 				{
 					"type": "entries",
@@ -74248,7 +74248,7 @@
 			"entries": [
 				"Cae aguanieve y lluvia helada hasta el final del conjuro, cubriendo un cilindro de 20 pies de alto y 40 pies de radio centrado en un punto de tu elección dentro del alcance. El área pasará a ser muy oscura y los fuegos expuestos dentro de ella se extinguirán",
 				"El suelo se cubrirá de hielo deslizante, convirtiendo la zona en {@book terreno difícil|PHB-ES|9|terreno difícil}. Cuando una criatura entra en el área del conjuro por primera vez en un turno, o cuando empieza su turno en ella, debe realizar una tirada de salvación de Destreza. Si fracasa, caerá {@condition Derribado|PHB-ES|derribada}.",
-				"Si una criatura inicia su turno dentro del área de este conjuro y se está concentrando en un conjuro, debe tener éxito en una tirada de salvación de Constitución con CD igual a tu salvación de conjuros o perderá la concentración."
+				"Si una criatura inicia su turno dentro del área de este conjuro y se está {@status concentración|PHB-ES|concentrando} en un conjuro, debe tener éxito en una tirada de salvación de Constitución con CD igual a tu salvación de conjuros o perderá la {@status concentración|PHB-ES}."
 			],
 			"conditionInflict": [
 				"prone"
@@ -74611,7 +74611,7 @@
 			],
 			"entries": [
 				"Formas unas nubes de tormenta que se agitan en torno de un punto de tu elección que puedas ver, cubriendo un área de 360 pies de radio. Sobre ella caen relámpagos, estallan truenos y rugen fuertes vientos. Todas las criaturas debajo de las nubes (a no más de 5.000 pies bajo ella) cuando estas aparecen deben hacer una tirada de salvación de Constitución. Si fallan la tirada, sufrirán {@damage 2d6} de daño de trueno y quedarán {@condition Ensordecido|PHB-ES|ensordecidas} durante 5 minutos.",
-				"Cada asalto que mantengas la concentración en este conjuro, la tormenta produce en tu turno diferentes efectos.",
+				"Cada asalto que mantengas la {@status concentración|PHB-ES} en este conjuro, la tormenta produce en tu turno diferentes efectos.",
 				{
 					"type": "entries",
 					"name": "Asalto 2",
@@ -74637,7 +74637,7 @@
 					"type": "entries",
 					"name": "Asalto 5 a 10",
 					"entries": [
-						"Ráfagas de viento y una lluvia helada asaltan a las criaturas bajo las nubes. La zona cubierta se considera muy oscura y {@book terreno difícil|PHB-ES|9|terreno difícil}. Todas las criaturas debajo de ella reciben {@damage 1d6} de daño de frío. No se pueden realizar ataques con arma a distancia en el área. El viento y la lluvia cuentan como una distracción severa a la hora de mantener la concentración en un conjuro. Por último, las fuertes ráfagas de viento (de entre 20 y 50 millas por hora) dispersan automáticamente nieblas, brumas y fenómenos similares en la zona, ya sean mágicos o mundanos."
+						"Ráfagas de viento y una lluvia helada asaltan a las criaturas bajo las nubes. La zona cubierta se considera muy oscura y {@book terreno difícil|PHB-ES|9|terreno difícil}. Todas las criaturas debajo de ella reciben {@damage 1d6} de daño de frío. No se pueden realizar ataques con arma a distancia en el área. El viento y la lluvia cuentan como una distracción severa a la hora de mantener la {@status concentración|PHB-ES} en un conjuro. Por último, las fuertes ráfagas de viento (de entre 20 y 50 millas por hora) dispersan automáticamente nieblas, brumas y fenómenos similares en la zona, ya sean mágicos o mundanos."
 					]
 				}
 			],
@@ -78165,7 +78165,7 @@
 				"Pronunciando una oración oscura, convocas a un diablo de los Nueve Infiernos. Eliges el tipo del diablo, que debe ser de {@filter valor de desafío 6 o inferior|bestiary|challenge rating=[&0;&6]|tag=diablo|miscellaneous=!swarm}, como un {@creature diablo punzante|MM-ES} o un {@creature diablo barbado|MM-ES}. La criatura aparece en un espacio desocupado que puedas ver y se encuentre dentro del alcance. El diablo desaparece si sus puntos de golpe descienden a 0 o el conjuro termina.",
 				"El diablo se muestra antipático contigo y con tus compañeros. Haz una tirada de iniciativa para el diablo, que tiene sus propios turnos. Está bajo el control del Dungeon Master y actúa de acuerdo a su naturaleza en cada uno de ellos, lo que podría provocar que te ataque si cree que puede vencerte o intente tentarte para que realices un acto malvado a cambio de un servicio limitado. El DM tiene el perfil de esta criatura.",
 				"En cada uno de sus turnos, puedes tratar de emitir una orden verbal al diablo (no requiere de ninguna acción por tu parte). Este obedecerá el mandato si el posible resultado está en concordancia con sus deseos, especialmente si al hacerlo te atrae hacia el mal. De lo contrario, deberás hacer una tirada enfrentada de Carisma ({@skill Engaño|PHB-ES}, {@skill Intimidación|PHB-ES} o {@skill Persuasión|PHB-ES}) contra su Sabiduría ({@skill Percepción|PHB-ES}). Realizas la tirada con ventaja si pronuncias el nombre verdadero del diablo. Si fallas, el diablo se volverá inmune a tus órdenes verbales hasta que termine el conjuro, aunque puede seguir obedeciendo tus mandatos si así lo desea. Si tienes éxito, el diablo ejecuta tu orden -como \"ataca a mis enemigos\", \"explora la sala de delante\" o \"lleva este mensaje a la reina\"- hasta terminar con el encargo. En ese momento regresará hasta donde te encuentres para informar de que ha cumplido con su misión.",
-				"Si tu concentración termina antes de que el conjuro alcance su duración completa, el diablo no desaparecerá si se ha vuelto inmune a tus órdenes verbales. En cambio, actuará de la manera que prefiera durante {@dice 3d6} minutos y, tras este tiempo, desaparecerá.",
+				"Si tu {@status concentración|PHB-ES} termina antes de que el conjuro alcance su duración completa, el diablo no desaparecerá si se ha vuelto inmune a tus órdenes verbales. En cambio, actuará de la manera que prefiera durante {@dice 3d6} minutos y, tras este tiempo, desaparecerá.",
 				"Si posees el talismán de un diablo en particular, podrás invocarle siempre y cuando su valor de desafío sea igual o inferior al que puedes invocar con este conjuro + 1. Este obedecerá todos tus mandatos, sin necesidad de pruebas de Carisma."
 			],
 			"entriesHigherLevel": [
@@ -79927,7 +79927,7 @@
 					"type": "entries",
 					"name": "Ojos de los muertos",
 					"entries": [
-						"Puedes utilizar una acción para nombrar un lugar que el humanoide vio en vida, lo que crea un sensor invisible en alguna parte de ese lugar, siempre y cuando este esté en el plano de existencia en el que te encuentras actualmente. Este sensor se mantiene mientras permanezcas concentrado, hasta 10 minutos (como si te concentraras en un conjuro). Recibes información visual y auditiva del sensor como si estuvieras en su espacio usando tus propios sentidos."
+						"Puedes utilizar una acción para nombrar un lugar que el humanoide vio en vida, lo que crea un sensor invisible en alguna parte de ese lugar, siempre y cuando este esté en el plano de existencia en el que te encuentras actualmente. Este sensor se mantiene mientras permanezcas {@status concentración|PHB-ES|concentrado}, hasta 10 minutos (como si te concentraras en un conjuro). Recibes información visual y auditiva del sensor como si estuvieras en su espacio usando tus propios sentidos."
 					]
 				},
 				"Una criatura que pueda percibir el sensor (como una que emplee {@spell ver invisibilidad|PHB-ES} o {@sense visión verdadera|PHB-ES}) apreciará una imagen translúcida del humanoide atormentado cuya alma enjaulaste."
@@ -80106,7 +80106,7 @@
 			"entries": [
 				"Pronuncias unas palabras blasfemas, convocando a un demonio desde el caos del Abismo. Eliges el tipo de demonio, que debe ser de {@filter valor de desafío 5 o inferior|bestiary|challenge rating=[&0;&5]|tag=demon|miscellaneous=!swarm}, como un {@creature demonio de las sombras|MM-ES} o un {@creature barlgura|MM-ES}. La criatura aparece en un espacio desocupado que puedas ver y se encuentre dentro del alcance. El demonio desaparece si sus puntos de golpe descienden a 0 o el conjuro termina.",
 				"Haz una tirada de iniciativa para el infernal, que tiene sus propios turnos. Cuando lo convoques y en cada uno de sus turnos a partir de entonces, puedes darle una orden verbal (sin requerir ninguna acción por tu parte), diciéndole lo que debe realizar en su siguiente turno. Si no le das orden alguna, pasa su turno atacando a cualquier criatura dentro de su alcance que lo haya atacado.",
-				"Al final de cada uno de los turnos del demonio, este hace una tirada de salvación de Carisma. El infernal tiene desventaja en esta tirada de si pronuncias su nombre verdadero. Si falla, el demonio continuará obedeciéndote. Si tiene éxito, tu control del infernal termina durante el resto de la duración del conjuro y el demonio utilizará sus turnos para perseguir y atacar a los no demonios más cercanos en la medida de sus capacidades. Si dejas de concentrarte en el conjuro antes de que llegue a su duración completa, un demonio descontrolado no desaparecerá hasta pasados {@dice 1d6} asaltos sí todavía tiene puntos de golpe.",
+				"Al final de cada uno de los turnos del demonio, este hace una tirada de salvación de Carisma. El infernal tiene desventaja en esta tirada de si pronuncias su nombre verdadero. Si falla, el demonio continuará obedeciéndote. Si tiene éxito, tu control del infernal termina durante el resto de la duración del conjuro y el demonio utilizará sus turnos para perseguir y atacar a los no demonios más cercanos en la medida de sus capacidades. Si dejas de {@status concentración|PHB-ES|concentrarte} en el conjuro antes de que llegue a su duración completa, un demonio descontrolado no desaparecerá hasta pasados {@dice 1d6} asaltos sí todavía tiene puntos de golpe.",
 				"Como parte del lanzamiento del conjuro, puedes formar un círculo en el suelo con la sangre utilizada como componente. El círculo ha de ser lo suficientemente grande como para abarcar tu espacio. Mientras dure el conjuro, el demonio invocado no podrá cruzar ni perturbar dicho círculo, y tampoco podrá atacar a nadie dentro de él. Usar el componente material de esta manera lo consume cuando el conjuro termina."
 			],
 			"entriesHigherLevel": [
@@ -80257,7 +80257,7 @@
 			],
 			"entries": [
 				"Eliges un punto dentro del alcance y provocas que una energía psíquica explote allí. Todas las criaturas en una esfera de 20 pies de radio centrada en dicho punto deberán realizar una tirada de salvación de Inteligencia. Las criaturas con una puntuación de Inteligencia de 2 o menos no pueden verse afectada por este conjuro. Cada criatura sufrirá {@damage 8d6} de daño psíquico si falla la tirada o la mitad de dicho daño si la supera.",
-				"Después de que una criatura falle esta tirada de salvación, verá su mente nublada durante 1 minuto. Durante ese tiempo, la criatura lanzará un {@dice d6} y restará ese número a todas sus tiradas de ataque y pruebas de característica, así como a sus tiradas de salvación de Constitución para mantener la concentración. La criatura puede hacer una tirada de salvación de Inteligencia al final de cada uno de sus turnos, librándose de este efecto si tiene éxito."
+				"Después de que una criatura falle esta tirada de salvación, verá su mente nublada durante 1 minuto. Durante ese tiempo, la criatura lanzará un {@dice d6} y restará ese número a todas sus tiradas de ataque y pruebas de característica, así como a sus tiradas de salvación de Constitución para mantener la {@status concentración|PHB-ES}. La criatura puede hacer una tirada de salvación de Inteligencia al final de cada uno de sus turnos, librándose de este efecto si tiene éxito."
 			],
 			"damageInflict": [
 				"psychic"

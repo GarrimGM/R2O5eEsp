@@ -848,6 +848,10 @@
 					"con": 1
 				}
 			],
+			"resist": [
+				"cold",
+				"poison"
+			],
 			"entries": [
 				"La sangre demoníaca corre abundantemente por tus venas, otorgándote una resistencia similar a la de algunos infernales. Obtienes los beneficios siguientes:",
 				{
@@ -975,7 +979,7 @@
 					"type": "list",
 					"items": [
 						"Si una criatura que se encuentre a 5 pies o menos de ti lanza un conjuro, puedes utilizar tu reacción para hacer un ataque con arma cuerpo a cuerpo contra ella.",
-						"Si infliges daño a una criatura que se está concentrando en un conjuro, esta tendrá desventaja en las tiradas de salvación que haga con el fin de mantener la concentración.",
+						"Si infliges daño a una criatura que se está {@status concentración|PHB-ES|concentrando} en un conjuro, esta tendrá desventaja en las tiradas de salvación que haga con el fin de mantener la {@status concentración|PHB-ES}.",
 						"Tienes ventaja en las tiradas de salvación contra los conjuros lanzados por criaturas que se encuentren a 5 pies o menos de ti."
 					]
 				}
@@ -2215,7 +2219,7 @@
 				{
 					"type": "list",
 					"items": [
-						"Tienes ventaja en las tiradas de salvación de Constitución que hagas para mantener la concentración en un conjuro cuando recibes daño.",
+						"Tienes ventaja en las tiradas de salvación de Constitución que hagas para mantener la {@status concentración|PHB-ES} en un conjuro cuando recibes daño.",
 						"Puedes ejecutar los componentes somáticos de tus conjuros incluso cuando empuñas armas o un {@item escudo|PHB-ES}, en una o ambas manos.",
 						"Cuando el movimiento de una criatura hostil te permite hacer un ataque de oportunidad contra ella, puedes usar tu reacción para, en lugar de realizar este ataque, lanzar un conjuro contra la criatura. Dicho conjuro deberá tener un tiempo de lanzamiento de 1 acción y tener como objetivo una única criatura."
 					]
