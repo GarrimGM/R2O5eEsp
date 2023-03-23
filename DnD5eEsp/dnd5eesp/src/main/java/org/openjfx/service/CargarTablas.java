@@ -24,7 +24,7 @@ import com.google.gson.JsonObject;
 
 public class CargarTablas {
     public static void cargarTablas() throws IOException {
-        System.out.println("Inicio - Carga de tablas");
+        System.out.println("--- Inicio - Carga de tablas");
         //Consulta la lista de sources activos para comparar
         //creo un hashmap para solo tener que recorrer esta lista una vez
         HashMap<String,SourcesModel> sourcesMap = new HashMap<>();
@@ -181,7 +181,7 @@ public class CargarTablas {
             }
         }
 
-        System.out.println("Fin - Carga de tablas");
+        System.out.println("--- Fin - Carga de tablas");
     }
 
     private static JsonObject buscarActDocA(JsonObject jsonEsp, ImportTableModel importTable, JsonArray listaDatosEsp, 

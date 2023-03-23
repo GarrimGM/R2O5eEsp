@@ -1,6 +1,138 @@
 {
 	"trap": [
 		{
+			"name": "Techo que se hunde",
+			"source": "DMG-ES",
+			"page": 123,
+			"srd": true,
+			"trapHazType": "MECH",
+			"entries": [
+				"Esta trampa utiliza un hilo, que, al ser tensado, derriba unos apoyos que mantenían en su sitio una parte del techo a punto de derrumbarse.",
+				"El hilo se halla a una altura de 3 pulgadas (7,5 cm) por encima del suelo y está tendido entre dos vigas de soporte. La CD para detectarlo es 10. Superar una prueba de Destreza CD 15 usando {@item herramientas de ladrón|PHB-ES} permite desarmar el hilo sin más contratiempos. Un personaje que no disponga de {@item herramientas de ladrón|PHB-ES} puede intentar realizar la prueba empleando cualquier arma o herramienta con filo, pero tendrá desventaja. En cualquiera de los dos casos, si se falla la prueba se activará la trampa.",
+				"Cualquiera que inspeccione las vigas se dará cuenta de que solamente están calzadas y no bien sujetas. Un personaje puede emplear su acción para derribar una de ellas, activando la trampa.",
+				"El techo directamente encima del hilo está en malas condiciones, por lo que cualquiera que se fije en él podrá concluir que corre peligro de desplomarse.",
+				"Cuando la trampa se activa, el techo se hunde. Todas las criaturas que se encuentren en el área debajo del techo inestable deberán realizar una tirada de salvación de Destreza CD 15, sufriendo 22 ({@dice 4d10}) de daño contundente si la fallan, o la mitad de ese daño si la superan. Si se activa la trampa, el suelo de la zona quedará cubierto de escombros, convirtiéndose en {@book terreno difícil|PHB-ES|9|terreno difícil}."
+			]
+		},
+		{
+			"name": "Red que cae",
+			"source": "DMG-ES",
+			"page": 123,
+			"srd": true,
+			"trapHazType": "MECH",
+			"entries": [
+				"Esta trampa utiliza un hilo que, al tensarse, deja caer una red suspendida del techo.",
+				"El hilo se halla a una altura de 3 pulgadas (7,5 cm) por encima del suelo y está tendido entre dos columnas o árboles. La red está oculta por telarañas o follaje. La CD para detectar ambos es 10. Superar una prueba de Destreza CD 15 usando herramientas de ladrón permite cortar el hilo sin más contratiempos. Un personaje que no disponga de herramientas de ladrón puede intentar realizar la prueba empleando cualquier arma o herramienta con filo, pero tendrá desventaja. En cualquiera de los dos casos, si se falla la prueba se activará la trampa.",
+				"Si la trampa se activa la red caerá, cubriendo un área cuadrada de 10 pies de lado. Todos los que se encuentren en su interior estarán {@condition apresado|PHB-ES|apresados} por la red y, si además fallan una tirada de salvación de Fuerza CD 10, también quedarán {@condition derribado|PHB-ES|derribados}. Una criatura puede invertir su acción en hacer una prueba de Fuerza CD 10, logrando liberarse a sí misma o a otra criatura dentro de su alcance si tiene éxito. La red posee CA 10 y 20 puntos de golpe. Además, si se infligen 5 de daño cortante a la red (CA 10), se destruirá una sección cuadrada de 5 pies de lado, liberando a cualquier criatura que se halle en ella."
+			]
+		},
+		{
+			"name": "Estatua que escupe fuego",
+			"source": "DMG-ES",
+			"page": 123,
+			"srd": true,
+			"trapHazType": "MAG",
+			"entries": [
+				"Esta trampa se activa si algún intruso pisa una placa de presión oculta, lo que provoca que una estatua cercana descargue una llamarada mágica. La estatua puede representar cualquier cosa. Algunos ejemplos son un dragón o un mago lanzando un conjuro.",
+				"Detectar la placa de presión o las leves marcas que han dejado las llamas en el suelo y paredes tiene una CD de 15. Un conjuro o cualquier otro efecto capaz de sentir la presencia de magia, como detectar magia, revelará un aura de magia de evocación alrededor de la estatua.",
+				"La trampa se activa cuando hay un peso superior a 20 libras sobre la placa de presión. Si esto sucede, la estatua producirá un cono de llamas de 30 pies. Todas las criaturas cubiertas por el fuego deberán realizar una tirada de salvación de Destreza CD 13, sufriendo 22 ({@dice 4d10}) de daño si la fallan, o la mitad de ese daño si la superan.",
+				"Usar un pincho de hierro o cualquier otro objeto como cuña, situándolo debajo de la placa de presión, impedirá que la trampa se active. Un conjuro de {@spell disipar magia|PHB-ES} (CD 13) lanzado con éxito sobre la estatua destruirá la trampa."
+			]
+		},
+		{
+			"name": "Pozos",
+			"source": "DMG-ES",
+			"page": 123,
+			"srd": true,
+			"trapHazType": "MECH",
+			"entries": [
+				"A continuación se detallan cuatro tipos de trampas de pozo.",
+				{
+					"type": "entries",
+					"name": "Pozo sencillo",
+					"entries": [
+						"Un pozo sencillo no es más que un agujero excavado en el suelo. Está tapado por una tela grande anclada a los extremos del pozo y camuflada con tierra y escombros.",
+						"La CD para detectar el pozo es 10. Cualquiera que ponga pie sobre la tela caerá al fondo del agujero, llevándose la tela consigo, y recibirá una cantidad de daño que depende de la profundidad del pozo (normalmente 10 pies, pero algunos son más profundos)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Pozo escondido",
+					"entries": [
+						"Este pozo tiene una cubierta construida a partir del mismo material que el suelo que lo rodea.",
+						"Es necesario superar una prueba de Sabiduría ({@skill Percepción|PHB-ES}) CD 15 para darse cuenta de la ausencia de pisadas en la sección de suelo que corresponde a la cubierta. Una prueba de Inteligencia ({@skill Investigación|PHB-ES}) CD 15 con éxito confirmará que la sección de suelo está, en efecto, ocultando una trampa de pozo.",
+						"Si una criatura pisa sobre la cubierta, esta se abrirá cual trampilla, provocando que la desafortunada víctima caiga al pozo que está debajo. El abismo suele tener una profundidad de 10 o 20 pies, pero algunos son todavía más profundos.",
+						"Una vez detectada la trampa de pozo, bastará con emplear un pincho de hierro u otro objeto similar de cuña, situándolo entre la cubierta del pozo y el suelo circundante, para así impedir que aquella se abra. Hacer esto permitirá cruzar con seguridad. La cubierta también puede mantenerse cerrada utilizando un conjuro de {@spell cerradura arcana|PHB-ES} u otro efecto mágico similar."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Pozo que se cierra",
+					"entries": [
+						"Esta trampa de pozo es idéntica al pozo escondido, con una salvedad: la trampilla que cubre el pozo está activada por resortes. Después de que una criatura caiga en su interior, la cubierta volverá a cerrarse, atrapando a la víctima en el interior.",
+						"Se necesita superar una prueba de Fuerza CD 20 para abrir la trampilla. Otra opción es destrozar la cubierta a golpes (determina sus valores de juego utilizando las directrices del capítulo 8). Un personaje en el interior del pozo puede intentar desactivar el mecanismo de resorte mediante una prueba de Destreza CD 15 usando herramientas de ladrón, pero solo si el personaje es capaz de alcanzar el mecanismo desde su posición y puede ver. En algunos casos (normalmente tras una puerta secreta cercana) puede haber un mecanismo que permita abrir el pozo desde fuera."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Pozo con pinchos",
+					"entries": [
+						"Esta trampa es un pozo sencillo, escondido o que se cierra que, además, posee afilados pinchos de madera o hierro en el fondo. Cualquier criatura que caiga en este pozo recibirá 11 ({@dice 2d10}) de daño perforante por culpa de los pinchos, además del daño por caída que sufriría normalmente. Hay versiones todavía más terribles de esta trampa, que tienen las puntas untadas de veneno. Si es este el caso, cualquiera que reciba daño perforante de los pinchos también deberá realizar una tirada de salvación de Constitución CD 13, recibiendo 22 ({@dice 4d10}) de daño de veneno si la falla, o la mitad de ese daño si la supera."
+					]
+				}
+			]
+		},
+		{
+			"name": "Dardos envenenados",
+			"source": "DMG-ES",
+			"page": 122,
+			"srd": true,
+			"trapHazType": "MECH",
+			"entries": [
+				"Si una criatura pisa una placa de presión, unos tubos astutamente tallados en las paredes circundantes dispararán dardos untados con veneno. Una zona podría contener varias placas de presión, cada una enlazada con su propio grupo de dardos.",
+				"Los diminutos agujeros de las paredes están ocultos tras polvo y telarañas o camuflados entre bajorrelieves, murales o frescos que adornen los muros. La CD para detectarlos es 15. Una prueba de Inteligencia ({@skill Investigación|PHB-ES}) CD 15 con éxito permitirá discernir la presencia de la placa de presión a partir de las diferencias en la piedra y el mortero utilizados para crearla, distintos a los del resto del suelo. Usar un pincho de hierro o cualquier otro objeto como cuña, situándolo debajo de la placa de presión, impedirá que la trampa se active. También es posible tapar los agujeros con tela o cera, bloqueando así la salida de los dardos.",
+				"La trampa se activa cuando hay un peso superior a 20 libras sobre la placa de presión. Si esto sucede, se lanzarán cuatro dardos. Cada uno de ellos realiza un ataque a distancia con un bonificador de +8 contra un objetivo determinado al azar que se encuentre a 10 pies o menos de la placa de presión (la visión no afecta a esta tirada de ataque). Si no hay ningún objetivo en el área, los dardos no impactarán a nadie. Cada impacto causará 2 ({@dice 1d4}) de daño perforante y el objetivo deberá hacer una tirada de salvación de Constitución CD 15, recibiendo 11 ({@dice 2d10}) de daño de veneno si la falla, o la mitad de ese daño si la supera."
+			]
+		},
+		{
+			"name": "Aguja envenenada",
+			"source": "DMG-ES",
+			"page": 122,
+			"srd": true,
+			"trapHazType": "MECH",
+			"entries": [
+				"La aguja envenenada está escondida en la cerradura de un cofre cerrado o cualquier otro objeto susceptible de ser abierto por una criatura. Si se abre sin usar la llave correcta, la aguja saltará e inyectará una dosis de veneno.",
+				"Al activarse la trampa, la aguja se extenderá una distancia de 3 pulgadas (7,5 cm) en línea recta a partir de la cerradura. Una criatura dentro de este alcance recibirá 1 de daño perforante y 11 ({@dice 2d10}) de daño de veneno, y deberá superar una tirada de salvación de Constitución CD 15 o estará {@condition envenenado|PHB-ES|envenenada} durante 1 hora.",
+				"Un personaje que tenga éxito en una prueba de Inteligencia ({@skill Investigación|PHB-ES}) CD 20 podrá deducir la presencia de la trampa a partir de las pequeñas alteraciones ele la cerradura, necesarias para alojar la aguja. Superar una prueba de Destreza CD 15 usando {@item herramientas de ladrón|PHB-ES} permite desarmar la trampa, extrayendo la aguja de la cerradura. Intentar forzar la cerradura sin éxito activará la trampa."
+			]
+		},
+		{
+			"name": "Esfera rodante",
+			"source": "DMG-ES",
+			"page": 122,
+			"srd": true,
+			"trapHazType": "MECH",
+			"entries": [
+				"Cuando un peso de al menos 20 libras se sitúa sobre la placa de presión de esta trampa, una trampilla oculta en el techo se abre, liberando una esfera rodante de piedra de 10 pies de diámetro.",
+				"Un personaje que supere una prueba de Sabiduría ({@skill Percepción|PHB-ES}) CD 15 verá la trampilla y la placa de presión. Si se investiga el suelo y se realiza una prueba de Inteligencia ({@skill Investigación|PHB-ES}) CD 15 con éxito, se observarán pequeñas diferencias en el mortero y las piedras del suelo, que revelarán la presencia de la placa de presión. La misma prueba, pero acompañada de una investigación del techo, permitirá detectar las diferencias en el trabajo de la piedra que traicionan la existencia de la trampilla. Usar un pincho ele hierro o cualquier otro objeto como cuña, situándolo debajo de la placa de presión, impedirá que la trampa se active.",
+				"Si la esfera se activa, todas las criaturas presentes tendrán que tirar iniciativa. L a esfera también lo hace, con un bonificador de {@hit +8}. Durante su turno. se desplazará 60 pies en línea recta. La esfera puede moverse a través de los espacios de otras criaturas, y las criaturas pueden a su vez desplazarse atravesando su espacio, considerándolo como {@book terreno difícil|PHB-ES|9|terreno difícil}. Cada vez que la esfera entre en el espacio de una criatura o una criatura entre en el de la esfera mientras esta está rodando, la criatura deberá superar una tirada de salvación ele Destreza CD 15 o recibirá 55 ({@dice 10d10}) de daño contundente y será {@condition derribado|PHB-ES|derribada}.",
+				"La esfera se detendrá si choca contra un muro o barrera similar. No puede doblar esquinas, pero si los constructores de la mazmorra son astutos habrán diseñado sutiles pasadizos curvados que permitirán a la esfera seguir rodando.",
+				"Una criatura que se encuentre a 5 pies o menos de la esfera puede utilizar una acción para intentar ralentizarla. Deberá realizar una prueba de Fuerza CD 20. Si la supera, la velocidad de la esfera se reduce en 15 pies. Si su velocidad desciende a 0, dejará de moverse y ya no será una amenaza."
+			]
+		},
+		{
+			"name": "Esfera de aniquilación",
+			"source": "DMG-ES",
+			"page": 122,
+			"srd": true,
+			"trapHazType": "MAG",
+			"entries": [
+				"Una oscuridad mágica e impenetrable llena las fauces abiertas de un rostro de piedra tallado en una pared. La boca tiene un diámetro ele 2 pies y es prácticamente circular. No surge sonido alguno de ella. ninguna fuente de luz es capaz de iluminar su interior y cualquier materia que entre en ella es aniquilada instantáneamente.",
+				"Un personaje que supere una prueba de Inteligencia ({@skill Conocimiento Arcano|PHB-ES}) CD 20 se ciará cuenta de que la boca alberga una esfera de aniquilación que no puede ser controlada ni desplazada. En el resto ele aspectos se comporta igual que una esfera de aniquilación normal, descrita en el capítulo 7: \"Tesoro\".",
+				"En ciertas versiones de esta trampa, el rostro de piedra posee un encantamiento que hace que las criaturas especificadas sientan un deseo irrefrenable de acercarse y meterse dentro de la boca. Este efecto funciona como la simpatía del conjuro {@spell antipatía/simpatía|PHB-ES}. Un {@spell disipar magia|PHB-ES} (CD 18) lanzado con éxito eliminará este encantamiento."
+			]
+		},
+		{
 			"name": "Bear Trap",
 			"source": "XGE-ES",
 			"page": 113,
@@ -21,20 +153,6 @@
 			]
 		},
 		{
-			"name": "Techo que se hunde",
-			"source": "DMG-ES",
-			"page": 123,
-			"srd": true,
-			"trapHazType": "MECH",
-			"entries": [
-				"Esta trampa utiliza un hilo, que, al ser tensado, derriba unos apoyos que mantenían en su sitio una parte del techo a punto de derrumbarse.",
-				"El hilo se halla a una altura de 3 pulgadas (7,5 cm) por encima del suelo y está tendido entre dos vigas de soporte. La CD para detectarlo es 10. Superar una prueba de Destreza CD 15 usando {@item herramientas de ladrón|PHB-ES} permite desarmar el hilo sin más contratiempos. Un personaje que no disponga de {@item herramientas de ladrón|PHB-ES} puede intentar realizar la prueba empleando cualquier arma o herramienta con filo, pero tendrá desventaja. En cualquiera de los dos casos, si se falla la prueba se activará la trampa.",
-				"Cualquiera que inspeccione las vigas se dará cuenta de que solamente están calzadas y no bien sujetas. Un personaje puede emplear su acción para derribar una de ellas, activando la trampa.",
-				"El techo directamente encima del hilo está en malas condiciones, por lo que cualquiera que se fije en él podrá concluir que corre peligro de desplomarse.",
-				"Cuando la trampa se activa, el techo se hunde. Todas las criaturas que se encuentren en el área debajo del techo inestable deberán realizar una tirada de salvación de Destreza CD 15, sufriendo 22 ({@dice 4d10}) de daño contundente si la fallan, o la mitad de ese daño si la superan. Si se activa la trampa, el suelo de la zona quedará cubierto de escombros, convirtiéndose en {@book terreno difícil|PHB-ES|9|terreno difícil}."
-			]
-		},
-		{
 			"name": "Crossbow Trap",
 			"source": "XGE-ES",
 			"page": 113,
@@ -52,18 +170,6 @@
 			],
 			"entries": [
 				"The crossbow trap is a favorite of kobolds and other creatures that rely on traps to defend their lairs. It consists of a trip wire strung across a hallway and connected to a pair of hidden heavy crossbows. The crossbows are aimed to fire down the hallway at anyone who disturbs the trip wire."
-			]
-		},
-		{
-			"name": "Red que cae",
-			"source": "DMG-ES",
-			"page": 123,
-			"srd": true,
-			"trapHazType": "MECH",
-			"entries": [
-				"Esta trampa utiliza un hilo que, al tensarse, deja caer una red suspendida del techo.",
-				"El hilo se halla a una altura de 3 pulgadas (7,5 cm) por encima del suelo y está tendido entre dos columnas o árboles. La red está oculta por telarañas o follaje. La CD para detectar ambos es 10. Superar una prueba de Destreza CD 15 usando herramientas de ladrón permite cortar el hilo sin más contratiempos. Un personaje que no disponga de herramientas de ladrón puede intentar realizar la prueba empleando cualquier arma o herramienta con filo, pero tendrá desventaja. En cualquiera de los dos casos, si se falla la prueba se activará la trampa.",
-				"Si la trampa se activa la red caerá, cubriendo un área cuadrada de 10 pies de lado. Todos los que se encuentren en su interior estarán {@condition apresado|PHB-ES|apresados} por la red y, si además fallan una tirada de salvación de Fuerza CD 10, también quedarán {@condition derribado|PHB-ES|derribados}. Una criatura puede invertir su acción en hacer una prueba de Fuerza CD 10, logrando liberarse a sí misma o a otra criatura dentro de su alcance si tiene éxito. La red posee CA 10 y 20 puntos de golpe. Además, si se infligen 5 de daño cortante a la red (CA 10), se destruirá una sección cuadrada de 5 pies de lado, liberando a cualquier criatura que se halle en ella."
 			]
 		},
 		{
@@ -104,19 +210,6 @@
 			],
 			"entries": [
 				"Anyone who steps on the mosaic causes fire to erupt from it. Those who openly wear holy symbols of Pyremius don't trigger this trap."
-			]
-		},
-		{
-			"name": "Estatua que escupe fuego",
-			"source": "DMG-ES",
-			"page": 123,
-			"srd": true,
-			"trapHazType": "MAG",
-			"entries": [
-				"Esta trampa se activa si algún intruso pisa una placa de presión oculta, lo que provoca que una estatua cercana descargue una llamarada mágica. La estatua puede representar cualquier cosa. Algunos ejemplos son un dragón o un mago lanzando un conjuro.",
-				"Detectar la placa de presión o las leves marcas que han dejado las llamas en el suelo y paredes tiene una CD de 15. Un conjuro o cualquier otro efecto capaz de sentir la presencia de magia, como detectar magia, revelará un aura de magia de evocación alrededor de la estatua.",
-				"La trampa se activa cuando hay un peso superior a 20 libras sobre la placa de presión. Si esto sucede, la estatua producirá un cono de llamas de 30 pies. Todas las criaturas cubiertas por el fuego deberán realizar una tirada de salvación de Destreza CD 13, sufriendo 22 ({@dice 4d10}) de daño si la fallan, o la mitad de ese daño si la superan.",
-				"Usar un pincho de hierro o cualquier otro objeto como cuña, situándolo debajo de la placa de presión, impedirá que la trampa se active. Un conjuro de {@spell disipar magia|PHB-ES} (CD 13) lanzado con éxito sobre la estatua destruirá la trampa."
 			]
 		},
 		{
@@ -276,73 +369,6 @@
 			]
 		},
 		{
-			"name": "Pozos",
-			"source": "DMG-ES",
-			"page": 123,
-			"srd": true,
-			"trapHazType": "MECH",
-			"entries": [
-				"A continuación se detallan cuatro tipos de trampas de pozo.",
-				{
-					"type": "entries",
-					"name": "Pozo sencillo",
-					"entries": [
-						"Un pozo sencillo no es más que un agujero excavado en el suelo. Está tapado por una tela grande anclada a los extremos del pozo y camuflada con tierra y escombros.",
-						"La CD para detectar el pozo es 10. Cualquiera que ponga pie sobre la tela caerá al fondo del agujero, llevándose la tela consigo, y recibirá una cantidad de daño que depende de la profundidad del pozo (normalmente 10 pies, pero algunos son más profundos)."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Pozo escondido",
-					"entries": [
-						"Este pozo tiene una cubierta construida a partir del mismo material que el suelo que lo rodea.",
-						"Es necesario superar una prueba de Sabiduría ({@skill Percepción|PHB-ES}) CD 15 para darse cuenta de la ausencia de pisadas en la sección de suelo que corresponde a la cubierta. Una prueba de Inteligencia ({@skill Investigación|PHB-ES}) CD 15 con éxito confirmará que la sección de suelo está, en efecto, ocultando una trampa de pozo.",
-						"Si una criatura pisa sobre la cubierta, esta se abrirá cual trampilla, provocando que la desafortunada víctima caiga al pozo que está debajo. El abismo suele tener una profundidad de 10 o 20 pies, pero algunos son todavía más profundos.",
-						"Una vez detectada la trampa de pozo, bastará con emplear un pincho de hierro u otro objeto similar de cuña, situándolo entre la cubierta del pozo y el suelo circundante, para así impedir que aquella se abra. Hacer esto permitirá cruzar con seguridad. La cubierta también puede mantenerse cerrada utilizando un conjuro de {@spell cerradura arcana|PHB-ES} u otro efecto mágico similar."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Pozo que se cierra",
-					"entries": [
-						"Esta trampa de pozo es idéntica al pozo escondido, con una salvedad: la trampilla que cubre el pozo está activada por resortes. Después de que una criatura caiga en su interior, la cubierta volverá a cerrarse, atrapando a la víctima en el interior.",
-						"Se necesita superar una prueba de Fuerza CD 20 para abrir la trampilla. Otra opción es destrozar la cubierta a golpes (determina sus valores de juego utilizando las directrices del capítulo 8). Un personaje en el interior del pozo puede intentar desactivar el mecanismo de resorte mediante una prueba de Destreza CD 15 usando herramientas de ladrón, pero solo si el personaje es capaz de alcanzar el mecanismo desde su posición y puede ver. En algunos casos (normalmente tras una puerta secreta cercana) puede haber un mecanismo que permita abrir el pozo desde fuera."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Pozo con pinchos",
-					"entries": [
-						"Esta trampa es un pozo sencillo, escondido o que se cierra que, además, posee afilados pinchos de madera o hierro en el fondo. Cualquier criatura que caiga en este pozo recibirá 11 ({@dice 2d10}) de daño perforante por culpa de los pinchos, además del daño por caída que sufriría normalmente. Hay versiones todavía más terribles de esta trampa, que tienen las puntas untadas de veneno. Si es este el caso, cualquiera que reciba daño perforante de los pinchos también deberá realizar una tirada de salvación de Constitución CD 13, recibiendo 22 ({@dice 4d10}) de daño de veneno si la falla, o la mitad de ese daño si la supera."
-					]
-				}
-			]
-		},
-		{
-			"name": "Dardos envenenados",
-			"source": "DMG-ES",
-			"page": 122,
-			"srd": true,
-			"trapHazType": "MECH",
-			"entries": [
-				"Si una criatura pisa una placa de presión, unos tubos astutamente tallados en las paredes circundantes dispararán dardos untados con veneno. Una zona podría contener varias placas de presión, cada una enlazada con su propio grupo de dardos.",
-				"Los diminutos agujeros de las paredes están ocultos tras polvo y telarañas o camuflados entre bajorrelieves, murales o frescos que adornen los muros. La CD para detectarlos es 15. Una prueba de Inteligencia ({@skill Investigación|PHB-ES}) CD 15 con éxito permitirá discernir la presencia de la placa de presión a partir de las diferencias en la piedra y el mortero utilizados para crearla, distintos a los del resto del suelo. Usar un pincho de hierro o cualquier otro objeto como cuña, situándolo debajo de la placa de presión, impedirá que la trampa se active. También es posible tapar los agujeros con tela o cera, bloqueando así la salida de los dardos.",
-				"La trampa se activa cuando hay un peso superior a 20 libras sobre la placa de presión. Si esto sucede, se lanzarán cuatro dardos. Cada uno de ellos realiza un ataque a distancia con un bonificador de +8 contra un objetivo determinado al azar que se encuentre a 10 pies o menos de la placa de presión (la visión no afecta a esta tirada de ataque). Si no hay ningún objetivo en el área, los dardos no impactarán a nadie. Cada impacto causará 2 ({@dice 1d4}) de daño perforante y el objetivo deberá hacer una tirada de salvación de Constitución CD 15, recibiendo 11 ({@dice 2d10}) de daño de veneno si la falla, o la mitad de ese daño si la supera."
-			]
-		},
-		{
-			"name": "Aguja envenenada",
-			"source": "DMG-ES",
-			"page": 122,
-			"srd": true,
-			"trapHazType": "MECH",
-			"entries": [
-				"La aguja envenenada está escondida en la cerradura de un cofre cerrado o cualquier otro objeto susceptible de ser abierto por una criatura. Si se abre sin usar la llave correcta, la aguja saltará e inyectará una dosis de veneno.",
-				"Al activarse la trampa, la aguja se extenderá una distancia de 3 pulgadas (7,5 cm) en línea recta a partir de la cerradura. Una criatura dentro de este alcance recibirá 1 de daño perforante y 11 ({@dice 2d10}) de daño de veneno, y deberá superar una tirada de salvación de Constitución CD 15 o estará {@condition envenenado|PHB-ES|envenenada} durante 1 hora.",
-				"Un personaje que tenga éxito en una prueba de Inteligencia ({@skill Investigación|PHB-ES}) CD 20 podrá deducir la presencia de la trampa a partir de las pequeñas alteraciones ele la cerradura, necesarias para alojar la aguja. Superar una prueba de Destreza CD 15 usando {@item herramientas de ladrón|PHB-ES} permite desarmar la trampa, extrayendo la aguja de la cerradura. Intentar forzar la cerradura sin éxito activará la trampa."
-			]
-		},
-		{
 			"name": "Poison Needle Trap",
 			"source": "XGE-ES",
 			"page": 114,
@@ -475,20 +501,6 @@
 			]
 		},
 		{
-			"name": "Esfera rodante",
-			"source": "DMG-ES",
-			"page": 122,
-			"srd": true,
-			"trapHazType": "MECH",
-			"entries": [
-				"Cuando un peso de al menos 20 libras se sitúa sobre la placa de presión de esta trampa, una trampilla oculta en el techo se abre, liberando una esfera rodante de piedra de 10 pies de diámetro.",
-				"Un personaje que supere una prueba de Sabiduría ({@skill Percepción|PHB-ES}) CD 15 verá la trampilla y la placa de presión. Si se investiga el suelo y se realiza una prueba de Inteligencia ({@skill Investigación|PHB-ES}) CD 15 con éxito, se observarán pequeñas diferencias en el mortero y las piedras del suelo, que revelarán la presencia de la placa de presión. La misma prueba, pero acompañada de una investigación del techo, permitirá detectar las diferencias en el trabajo de la piedra que traicionan la existencia de la trampilla. Usar un pincho ele hierro o cualquier otro objeto como cuña, situándolo debajo de la placa de presión, impedirá que la trampa se active.",
-				"Si la esfera se activa, todas las criaturas presentes tendrán que tirar iniciativa. L a esfera también lo hace, con un bonificador de {@hit +8}. Durante su turno. se desplazará 60 pies en línea recta. La esfera puede moverse a través de los espacios de otras criaturas, y las criaturas pueden a su vez desplazarse atravesando su espacio, considerándolo como {@book terreno difícil|PHB-ES|9|terreno difícil}. Cada vez que la esfera entre en el espacio de una criatura o una criatura entre en el de la esfera mientras esta está rodando, la criatura deberá superar una tirada de salvación ele Destreza CD 15 o recibirá 55 ({@dice 10d10}) de daño contundente y será {@condition derribado|PHB-ES|derribada}.",
-				"La esfera se detendrá si choca contra un muro o barrera similar. No puede doblar esquinas, pero si los constructores de la mazmorra son astutos habrán diseñado sutiles pasadizos curvados que permitirán a la esfera seguir rodando.",
-				"Una criatura que se encuentre a 5 pies o menos de la esfera puede utilizar una acción para intentar ralentizarla. Deberá realizar una prueba de Fuerza CD 20. Si la supera, la velocidad de la esfera se reduce en 15 pies. Si su velocidad desciende a 0, dejará de moverse y ya no será una amenaza."
-			]
-		},
-		{
 			"name": "Scything Blade Trap",
 			"source": "XGE-ES",
 			"page": 114,
@@ -526,18 +538,6 @@
 			],
 			"entries": [
 				"When a sleep of ages trap activates, a pressure plate unleashes a spell that threatens to send intruders into a deep slumber. The dungeon's guardians can then more easily dispose of the sleepers."
-			]
-		},
-		{
-			"name": "Esfera de aniquilación",
-			"source": "DMG-ES",
-			"page": 122,
-			"srd": true,
-			"trapHazType": "MAG",
-			"entries": [
-				"Una oscuridad mágica e impenetrable llena las fauces abiertas de un rostro de piedra tallado en una pared. La boca tiene un diámetro ele 2 pies y es prácticamente circular. No surge sonido alguno de ella. ninguna fuente de luz es capaz de iluminar su interior y cualquier materia que entre en ella es aniquilada instantáneamente.",
-				"Un personaje que supere una prueba de Inteligencia ({@skill Conocimiento Arcano|PHB-ES}) CD 20 se ciará cuenta de que la boca alberga una esfera de aniquilación que no puede ser controlada ni desplazada. En el resto ele aspectos se comporta igual que una esfera de aniquilación normal, descrita en el capítulo 7: \"Tesoro\".",
-				"En ciertas versiones de esta trampa, el rostro de piedra posee un encantamiento que hace que las criaturas especificadas sientan un deseo irrefrenable de acercarse y meterse dentro de la boca. Este efecto funciona como la simpatía del conjuro {@spell antipatía/simpatía|PHB-ES}. Un {@spell disipar magia|PHB-ES} (CD 18) lanzado con éxito eliminará este encantamiento."
 			]
 		},
 		{
@@ -610,28 +610,6 @@
 	],
 	"hazard": [
 		{
-			"name": "Avalanche",
-			"source": "TCE-ES",
-			"page": 169,
-			"trapHazType": "WLD",
-			"entries": [
-				"A typical avalanche (or rockslide) is 300 feet wide, 150 feet long, and 30 feet thick. Creatures in the path of an avalanche can avoid it or escape it if they're close to its edge, but outrunning one is almost impossible.",
-				"When an avalanche occurs, all nearby creatures must roll initiative. Twice each round, on initiative counts 10 and 0, the avalanche travels 300 feet until it can travel no more. When an avalanche moves, any creature in its space moves along with it and falls {@condition prone}, and the creature must make a DC 15 Strength saving throw, taking {@dice 1d10} bludgeoning damage on a failed save, or half as much damage on a successful one.",
-				"When an avalanche stops, the snow and other debris settle and bury creatures. A creature buried in this way is {@condition blinded} and {@condition restrained}, and it has total cover. The creature gains 1 level of {@condition exhaustion} for every 5 minutes it spends buried. It can try to dig itself free as an action, breaking the surface and ending the {@condition blinded} and {@condition restrained} conditions on itself with a successful DC 15 Strength ({@skill Athletics}) check. A creature that fails this check three times can't attempt to dig itself out again.",
-				"A creature that is not {@condition restrained} or {@condition incapacitated} can spend 1 minute freeing a buried creature. Once free, that creature is no longer {@condition blinded} or {@condition restrained} by the avalanche."
-			]
-		},
-		{
-			"name": "Moho marrón",
-			"source": "DMG-ES",
-			"page": 105,
-			"entries": [
-				"El moho marrón se alimenta de calor, robándolo de cualquiera que se encuentre cerca. Una colonia de moho marrón suele cubrir una superficie cuadrada de 10 pies de lado y la temperatura a 30 pies o menos de él siempre es gélida.",
-				"Cuando una criatura se mueva por primera vez en un turno dentro de un radio de 5 pies del moho, o si empieza su turno a esa distancia o menos, deberá realizar una tirada de salvación de Constitución CD 12, recibiendo 22 ({@dice 4d10}) de daño si la falla, o la mitad de ese daño si la supera.",
-				"El moho marrón es inmune al fuego, y cualquier fuente de fuego que sea desplazada a 5 pies o menos de él provocará que el moho se expanda violentamente en dirección a ella, cubriendo un área cuadrada de 10 pies de lado centrada en el fuego. Una colonia de moho marrón expuesta a cualquier efecto que cause daño de frío será destruida instantáneamente."
-			]
-		},
-		{
 			"name": "Demon Ichor",
 			"source": "BGDIA-ES",
 			"page": 78,
@@ -659,87 +637,97 @@
 					],
 					"rows": [
 						[
-							"01\u201305",
+							"01–05",
 							"The color of the target's hair, eyes, and skin becomes blue, red, yellow, or patterned."
 						],
 						[
-							"06\u201310",
+							"06–10",
 							"The target's eyes push out of its head on the end of stalks."
 						],
 						[
-							"11\u201315",
+							"11–15",
 							"The target's hands grow claws, which can be used as daggers."
 						],
 						[
-							"16\u201320",
+							"16–20",
 							"One of the target's legs grows longer than the other, reducing its walking speed by 10 feet."
 						],
 						[
-							"21\u201325",
+							"21–25",
 							"The target's eyes become beacons, filling a 15-foot cone with dim light when they are open."
 						],
 						[
-							"26\u201330",
+							"26–30",
 							"A pair of wings, either feathered or leathery, sprout from the target's back, granting it a flying speed of 30 feet."
 						],
 						[
-							"31\u201335",
+							"31–35",
 							"The target's ears tear free from its head and scurry away; the target is {@condition deafened}."
 						],
 						[
-							"36\u201340",
+							"36–40",
 							"Two of the target's teeth turn into tusks."
 						],
 						[
-							"41\u201345",
+							"41–45",
 							"The target's skin becomes scabby, granting it a +1 bonus to AC but reducing its Charisma by 2 (to a minimum of 1)."
 						],
 						[
-							"46\u201350",
+							"46–50",
 							"The target's arms and legs switch places, preventing the target from moving unless it crawls."
 						],
 						[
-							"51\u201355",
+							"51–55",
 							"The target's arms become tentacles with fingers on the ends, increasing its reach by 5 feet."
 						],
 						[
-							"56\u201360",
+							"56–60",
 							"The target's legs grow incredibly long and springy, increasing its walking speed by 10 feet."
 						],
 						[
-							"61\u201365",
+							"61–65",
 							"The target grows a whiplike tail, which it can use as a whip."
 						],
 						[
-							"66\u201370",
+							"66–70",
 							"The target's eyes turn black, and it gains {@sense darkvision} out to a range of 120 feet."
 						],
 						[
-							"71\u201375",
+							"71–75",
 							"The target swells, tripling its weight."
 						],
 						[
-							"76\u201380",
+							"76–80",
 							"The target becomes thin and skeletal, halving its weight."
 						],
 						[
-							"81\u201385",
+							"81–85",
 							"The target's head doubles in size."
 						],
 						[
-							"86\u201390",
+							"86–90",
 							"The target's ears become wings, giving it a flying speed of 5 feet."
 						],
 						[
-							"91\u201395",
+							"91–95",
 							"The target's body becomes unusually brittle, causing the target to gain vulnerability to bludgeoning, piercing, and slashing damage."
 						],
 						[
-							"96\u201300",
+							"96–00",
 							"The target grows another head, causing it to have advantage on saving throws against being {@condition charmed}, {@condition frightened}, or {@condition stunned}."
 						]
 					]
 				}
+			]
+		},
+		{
+			"name": "Moho marrón",
+			"source": "DMG-ES",
+			"page": 105,
+			"entries": [
+				"El moho marrón se alimenta de calor, robándolo de cualquiera que se encuentre cerca. Una colonia de moho marrón suele cubrir una superficie cuadrada de 10 pies de lado y la temperatura a 30 pies o menos de él siempre es gélida.",
+				"Cuando una criatura se mueva por primera vez en un turno dentro de un radio de 5 pies del moho, o si empieza su turno a esa distancia o menos, deberá realizar una tirada de salvación de Constitución CD 12, recibiendo 22 ({@dice 4d10}) de daño si la falla, o la mitad de ese daño si la supera.",
+				"El moho marrón es inmune al fuego, y cualquier fuente de fuego que sea desplazada a 5 pies o menos de él provocará que el moho se expanda violentamente en dirección a ella, cubriendo un área cuadrada de 10 pies de lado centrada en el fuego. Una colonia de moho marrón expuesta a cualquier efecto que cause daño de frío será destruida instantáneamente."
 			]
 		},
 		{
@@ -770,44 +758,6 @@
 			"entries": [
 				"Cualquier criatura directamente expuesta a una temperatura superior a 40°C y no disponga de agua potable deberá superar una tirada de salvación de Constitución al final de cada hora o recibirá un nivel de {@condition cansancio|PHB-ES}. Esta CD es de 5 para la primera hora y aumenta en 1 por cada hora después de esta.",
 				"Las criaturas que lleven armadura media o pesada, o que vistan ropas gruesas, tendrán desventaja en la tirada. Las que tengan resistencia o inmunidad al daño de calor tendrán éxito automáticamente. Lo mismo ocurrirá con las que estén adaptadas a climas cálidos de forma natural."
-			]
-		},
-		{
-			"name": "Falling into Water",
-			"source": "TCE-ES",
-			"page": 170,
-			"trapHazType": "WLD",
-			"entries": [
-				"A creature that falls into water or another liquid can use its reaction to make a DC 15 Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check to hit the surface head or feet first. On a successful check, any damage resulting from the fall is halved."
-			]
-		},
-		{
-			"name": "Falling onto a Creature",
-			"source": "TCE-ES",
-			"page": 170,
-			"trapHazType": "WLD",
-			"entries": [
-				"If a creature falls into the space of a second creature and neither of them is Tiny, the second creature must succeed on a DC 15 Dexterity saving throw or be impacted by the falling creature, and any damage resulting from the fall is divided evenly between them. The impacted creature is also knocked {@condition prone}, unless it is two or more sizes larger than the falling creature."
-			]
-		},
-		{
-			"name": "Flame Storm",
-			"source": "TCE-ES",
-			"page": 163,
-			"trapHazType": "EST",
-			"entries": [
-				"Sooty thunderclouds shot through with red and orange lightning release a deluge of fiery droplets. Any creature caught in the burning rain takes {@dice 2d6} fire damage at the start of each of its turns. The droplets ignite any flammable objects that aren't being worn or carried; otherwise, the droplets burn out immediately. The smoke, soot, crackle, and low roar of the storm impose disadvantage on Wisdom ({@skill Perception}) checks and ranged attack rolls.",
-				"A flame storm usually lasts {@dice 2d4} minutes, though the originating storm clouds can persist for days, creating multiple flame storms."
-			]
-		},
-		{
-			"name": "Flaywind",
-			"source": "TCE-ES",
-			"page": 163,
-			"trapHazType": "EST",
-			"entries": [
-				"Supernaturally powerful winds\u2014like those from planes such as Pandemonium or Minethys, the third layer of Carceri\u2014can spawn flaywinds. A flaywind is an intense sandstorm, gathering large rocks and other debris in addition to sand or grit. The area within the storm is heavily obscured, and a creature exposed to the storm takes {@dice 1d4} slashing damage at the start of each of its turns. Only substantial cover or shelter offers protection against the flensing grit.",
-				"A flaywind leaves {@dice 4d6} feet of sand or debris in its wake. A successful DC 15 Intelligence ({@skill Arcana}) or ({@skill Nature}) check or Wisdom ({@skill Survival}) check allows a character to recognize a flaywind 1 minute before it strikes, allowing time to seek shelter. A flaywind typically lasts {@dice 1d4 × 10} hours."
 			]
 		},
 		{
@@ -943,17 +893,6 @@
 			]
 		},
 		{
-			"name": "Necrotic Tempest",
-			"source": "TCE-ES",
-			"page": 163,
-			"trapHazType": "EST",
-			"entries": [
-				"Storms infused with the essence of death roil with dark clouds that manifest leering skulls and bone-white lightning. Any creature exposed to the storm that isn't a construct or an undead must succeed on a DC 13 Constitution saving throw at the end of each minute or take {@dice 3d6} necrotic damage.",
-				"A creature that dies in a necrotic tempest rises as a {@creature skeleton} or {@creature zombie} (your choice) {@dice 1d10} minutes later.",
-				" A necrotic tempest lasts for {@dice 1d4} hours and leaves crops withered and wells undrinkable for {@dice 1d4} days after its passing."
-			]
-		},
-		{
 			"name": "Arenas movedizas",
 			"source": "DMG-ES",
 			"page": 110,
@@ -971,6 +910,124 @@
 			"entries": [
 				"La enredadera afilada es una planta que crece formando setos o marañas. También se agarra a las paredes de los edificios y otras superficies verticales, igual que la hiedra. Un muro o seto de enredaderas afiladas de 10 pies de alto y de ancho y 5 pies de espesor tiene CA 11, 25 puntos de golpe e inmunidad a los daños contundente, perforante y psíquico.",
 				"Si una criatura entra en contacto directo con una enredadera afilada por primera vez en un turno, deberá superar una tirada de salvación de Destreza CD 10 o recibirá 5 ({@dice 1d10}) de daño cortante al ser lacerada por las afiladas hojas de la planta."
+			]
+		},
+		{
+			"name": "Hielo resbaladizo",
+			"source": "DMG-ES",
+			"page": 110,
+			"trapHazType": "WLD",
+			"entries": [
+				"El hielo resbaladizo es {@book terreno difícil|PHB-ES|9|terreno difícil}. Además, cuando una criatura se mueva sobre una superficie de este tipo por primera vez en un turno, deberá superar una prueba de Destreza ({@skill Acrobacias|PHB-ES}) CD 10 o caerá {@condition derribado|PHB-ES|derribada}."
+			]
+		},
+		{
+			"name": "Viento fuerte",
+			"source": "DMG-ES",
+			"page": 110,
+			"trapHazType": "WTH",
+			"entries": [
+				"Un viento fuerte provoca desventaja en las tiradas de ataque con arma a distancia y las pruebas de Sabiduría ({@skill Percepción|PHB-ES}) que dependan del oído. Además, estos vientos también extinguirán las llamas desprotegidas, dispersarán la niebla y harán que volar mediante medios no mágicos sea prácticamente imposible. Una criatura que esté volando en medio de un viento fuerte deberá aterrizar al fina l de su turno o caerá.",
+				"Los vientos fuertes en desiertos pueden crear tormentas de arena, que provocan desventaja en las pruebas de Sabiduría ({@skill Percepción|PHB-ES}) que dependan de la vista."
+			]
+		},
+		{
+			"name": "Hielo delgado",
+			"source": "DMG-ES",
+			"page": 110,
+			"trapHazType": "WLD",
+			"entries": [
+				"El hielo delgado puede aguantar un peso de hasta 3d10 x 10 libras por cada área cuadrada de 10 pies de lado. Si en algún momento el peso total en algún área excede estos límites, ese trozo de hielo se romperá y todas las criaturas que se encuentren sobre él caerán a lo que haya debajo."
+			]
+		},
+		{
+			"name": "Telarañas",
+			"source": "DMG-ES",
+			"page": 105,
+			"entries": [
+				"Las arañas gigantes tejen una tela gruesa y pegajosa por los corredores y pozos, de la que se sirven para atrapar a sus presas. Estas áreas cubiertas de telarañas son {@book terreno difícil|PHB-ES|9|terreno difícil}. Además, cualquier criatura que entre en una de estas zonas por primera vez en un turno o empiece su turno en ellas deberá superar una tirada de salvación de Destreza CD 12 o estará {@condition apresado|PHB-ES|apresada} por las telarañas. Una criatura {@condition apresado|PHB-ES|apresada} puede utilizar su acción para intentar escapar, consiguiéndolo si supera una prueba de Fuerza ({@skill Atletismo|PHB-ES}) o Destreza ({@skill Acrobacias|PHB-ES}) CD 12.",
+				"Cada cubo de 10 pies de telarañas tiene CD 10, 15 puntos de golpe, vulnerabilidad al fuego e inmunidad a daños contundente, perforante y psíquico."
+			]
+		},
+		{
+			"name": "Moho amarillo",
+			"source": "DMG-ES",
+			"page": 105,
+			"entries": [
+				"El moho amarillo crece en lugares oscuros, y una colonia cubre un cuadrado de 5 pies de lado. Si se le toca, expulsará una nube de esporas que cubrirá un cubo de 10 pies con su origen en el moho. Todas las criaturas que se encuentren en esta área deberán superar una tirada de salvación de Constitución CD 15 o recibirán 11 ({@dice 2d10}) de daño de veneno y estarán envenenadas durante 1 minuto. Mientras esté {@condition envenenado|PHB-ES|envenenada} de esta forma, cada criatura sufre 5 ({@dice 1d10}) de daño de veneno al principio de cada uno de sus turnos. La criatura puede repetir la tirada de salvación al final de cada uno de sus turnos, librándose del efecto si tiene éxito.",
+				"La luz solar o cualquier cantidad de daño de fuego destruirán instantáneamente una colonia de moho amarillo."
+			]
+		},
+		{
+			"name": "Avalanche",
+			"source": "TCE-ES",
+			"page": 169,
+			"trapHazType": "WLD",
+			"entries": [
+				"A typical avalanche (or rockslide) is 300 feet wide, 150 feet long, and 30 feet thick. Creatures in the path of an avalanche can avoid it or escape it if they're close to its edge, but outrunning one is almost impossible.",
+				"When an avalanche occurs, all nearby creatures must roll initiative. Twice each round, on initiative counts 10 and 0, the avalanche travels 300 feet until it can travel no more. When an avalanche moves, any creature in its space moves along with it and falls {@condition prone}, and the creature must make a DC 15 Strength saving throw, taking {@dice 1d10} bludgeoning damage on a failed save, or half as much damage on a successful one.",
+				"When an avalanche stops, the snow and other debris settle and bury creatures. A creature buried in this way is {@condition blinded} and {@condition restrained}, and it has total cover. The creature gains 1 level of {@condition exhaustion} for every 5 minutes it spends buried. It can try to dig itself free as an action, breaking the surface and ending the {@condition blinded} and {@condition restrained} conditions on itself with a successful DC 15 Strength ({@skill Athletics}) check. A creature that fails this check three times can't attempt to dig itself out again.",
+				"A creature that is not {@condition restrained} or {@condition incapacitated} can spend 1 minute freeing a buried creature. Once free, that creature is no longer {@condition blinded} or {@condition restrained} by the avalanche."
+			]
+		},
+		{
+			"name": "Falling into Water",
+			"source": "TCE-ES",
+			"page": 170,
+			"trapHazType": "WLD",
+			"entries": [
+				"A creature that falls into water or another liquid can use its reaction to make a DC 15 Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check to hit the surface head or feet first. On a successful check, any damage resulting from the fall is halved."
+			]
+		},
+		{
+			"name": "Falling onto a Creature",
+			"source": "TCE-ES",
+			"page": 170,
+			"trapHazType": "WLD",
+			"entries": [
+				"If a creature falls into the space of a second creature and neither of them is Tiny, the second creature must succeed on a DC 15 Dexterity saving throw or be impacted by the falling creature, and any damage resulting from the fall is divided evenly between them. The impacted creature is also knocked {@condition prone}, unless it is two or more sizes larger than the falling creature."
+			]
+		},
+		{
+			"name": "Flame Storm",
+			"source": "TCE-ES",
+			"page": 163,
+			"trapHazType": "EST",
+			"entries": [
+				"Sooty thunderclouds shot through with red and orange lightning release a deluge of fiery droplets. Any creature caught in the burning rain takes {@dice 2d6} fire damage at the start of each of its turns. The droplets ignite any flammable objects that aren't being worn or carried; otherwise, the droplets burn out immediately. The smoke, soot, crackle, and low roar of the storm impose disadvantage on Wisdom ({@skill Perception}) checks and ranged attack rolls.",
+				"A flame storm usually lasts {@dice 2d4} minutes, though the originating storm clouds can persist for days, creating multiple flame storms."
+			]
+		},
+		{
+			"name": "Flaywind",
+			"source": "TCE-ES",
+			"page": 163,
+			"trapHazType": "EST",
+			"entries": [
+				"Supernaturally powerful winds—like those from planes such as Pandemonium or Minethys, the third layer of Carceri—can spawn flaywinds. A flaywind is an intense sandstorm, gathering large rocks and other debris in addition to sand or grit. The area within the storm is heavily obscured, and a creature exposed to the storm takes {@dice 1d4} slashing damage at the start of each of its turns. Only substantial cover or shelter offers protection against the flensing grit.",
+				"A flaywind leaves {@dice 4d6} feet of sand or debris in its wake. A successful DC 15 Intelligence ({@skill Arcana}) or ({@skill Nature}) check or Wisdom ({@skill Survival}) check allows a character to recognize a flaywind 1 minute before it strikes, allowing time to seek shelter. A flaywind typically lasts {@dice 1d4 × 10} hours."
+			]
+		},
+		{
+			"name": "Necrotic Tempest",
+			"source": "TCE-ES",
+			"page": 163,
+			"trapHazType": "EST",
+			"entries": [
+				"Storms infused with the essence of death roil with dark clouds that manifest leering skulls and bone-white lightning. Any creature exposed to the storm that isn't a construct or an undead must succeed on a DC 13 Constitution saving throw at the end of each minute or take {@dice 3d6} necrotic damage.",
+				"A creature that dies in a necrotic tempest rises as a {@creature skeleton} or {@creature zombie} (your choice) {@dice 1d10} minutes later.",
+				" A necrotic tempest lasts for {@dice 1d4} hours and leaves crops withered and wells undrinkable for {@dice 1d4} days after its passing."
+			]
+		},
+		{
+			"name": "Thrym's Howl",
+			"source": "TCE-ES",
+			"page": 163,
+			"trapHazType": "EST",
+			"entries": [
+				"These bone-chilling blizzards drive a wall of wind and snow like a living glacier. The storm projects {@hazard extreme cold} (see the {@book Dungeon Master's Guide|DMG}). Due to the howling wind and dense blue-white ice particles, the area in the storm is heavily obscured, and ranged attack rolls and Wisdom ({@skill Perception}) checks made within it have disadvantage.",
+				"Any creature exposed to the storm at the start of its turn takes {@dice 2d6} cold damage and can't regain hit points until it spends at least 1 hour in a warm environment. A creature that dies in the storm freezes solid. Creatures that are immune to cold damage are immune to the effects of the storm and can see normally within it.",
+				"Thrym's howl typically lasts {@dice 2d10} hours."
 			]
 		},
 		{
@@ -1024,63 +1081,6 @@
 						"Russet mold can be hard to kill, since weapons and most types of damage do it no harm. Effects that deal acid, necrotic, or radiant damage kill 1 square foot of russet mold per 1 damage dealt. A pound of salt, a gallon of alcohol, or magic that cures disease kills russet mold in a square area that is 10 feet on a side. Sunlight kills any russet mold in the light's area."
 					]
 				}
-			]
-		},
-		{
-			"name": "Hielo resbaladizo",
-			"source": "DMG-ES",
-			"page": 110,
-			"trapHazType": "WLD",
-			"entries": [
-				"El hielo resbaladizo es {@book terreno difícil|PHB-ES|9|terreno difícil}. Además, cuando una criatura se mueva sobre una superficie de este tipo por primera vez en un turno, deberá superar una prueba de Destreza ({@skill Acrobacias|PHB-ES}) CD 10 o caerá {@condition derribado|PHB-ES|derribada}."
-			]
-		},
-		{
-			"name": "Viento fuerte",
-			"source": "DMG-ES",
-			"page": 110,
-			"trapHazType": "WTH",
-			"entries": [
-				"Un viento fuerte provoca desventaja en las tiradas de ataque con arma a distancia y las pruebas de Sabiduría ({@skill Percepción|PHB-ES}) que dependan del oído. Además, estos vientos también extinguirán las llamas desprotegidas, dispersarán la niebla y harán que volar mediante medios no mágicos sea prácticamente imposible. Una criatura que esté volando en medio de un viento fuerte deberá aterrizar al fina l de su turno o caerá.",
-				"Los vientos fuertes en desiertos pueden crear tormentas de arena, que provocan desventaja en las pruebas de Sabiduría ({@skill Percepción|PHB-ES}) que dependan de la vista."
-			]
-		},
-		{
-			"name": "Hielo delgado",
-			"source": "DMG-ES",
-			"page": 110,
-			"trapHazType": "WLD",
-			"entries": [
-				"El hielo delgado puede aguantar un peso de hasta 3d10 x 10 libras por cada área cuadrada de 10 pies de lado. Si en algún momento el peso total en algún área excede estos límites, ese trozo de hielo se romperá y todas las criaturas que se encuentren sobre él caerán a lo que haya debajo."
-			]
-		},
-		{
-			"name": "Thrym's Howl",
-			"source": "TCE-ES",
-			"page": 163,
-			"trapHazType": "EST",
-			"entries": [
-				"These bone-chilling blizzards drive a wall of wind and snow like a living glacier. The storm projects {@hazard extreme cold} (see the {@book Dungeon Master's Guide|DMG}). Due to the howling wind and dense blue-white ice particles, the area in the storm is heavily obscured, and ranged attack rolls and Wisdom ({@skill Perception}) checks made within it have disadvantage.",
-				"Any creature exposed to the storm at the start of its turn takes {@dice 2d6} cold damage and can't regain hit points until it spends at least 1 hour in a warm environment. A creature that dies in the storm freezes solid. Creatures that are immune to cold damage are immune to the effects of the storm and can see normally within it.",
-				"Thrym's howl typically lasts {@dice 2d10} hours."
-			]
-		},
-		{
-			"name": "Telarañas",
-			"source": "DMG-ES",
-			"page": 105,
-			"entries": [
-				"Las arañas gigantes tejen una tela gruesa y pegajosa por los corredores y pozos, de la que se sirven para atrapar a sus presas. Estas áreas cubiertas de telarañas son {@book terreno difícil|PHB-ES|9|terreno difícil}. Además, cualquier criatura que entre en una de estas zonas por primera vez en un turno o empiece su turno en ellas deberá superar una tirada de salvación de Destreza CD 12 o estará {@condition apresado|PHB-ES|apresada} por las telarañas. Una criatura {@condition apresado|PHB-ES|apresada} puede utilizar su acción para intentar escapar, consiguiéndolo si supera una prueba de Fuerza ({@skill Atletismo|PHB-ES}) o Destreza ({@skill Acrobacias|PHB-ES}) CD 12.",
-				"Cada cubo de 10 pies de telarañas tiene CD 10, 15 puntos de golpe, vulnerabilidad al fuego e inmunidad a daños contundente, perforante y psíquico."
-			]
-		},
-		{
-			"name": "Moho amarillo",
-			"source": "DMG-ES",
-			"page": 105,
-			"entries": [
-				"El moho amarillo crece en lugares oscuros, y una colonia cubre un cuadrado de 5 pies de lado. Si se le toca, expulsará una nube de esporas que cubrirá un cubo de 10 pies con su origen en el moho. Todas las criaturas que se encuentren en esta área deberán superar una tirada de salvación de Constitución CD 15 o recibirán 11 ({@dice 2d10}) de daño de veneno y estarán envenenadas durante 1 minuto. Mientras esté {@condition envenenado|PHB-ES|envenenada} de esta forma, cada criatura sufre 5 ({@dice 1d10}) de daño de veneno al principio de cada uno de sus turnos. La criatura puede repetir la tirada de salvación al final de cada uno de sus turnos, librándose del efecto si tiene éxito.",
-				"La luz solar o cualquier cantidad de daño de fuego destruirán instantáneamente una colonia de moho amarillo."
 			]
 		}
 	]

@@ -48,6 +48,131 @@
 			]
 		},
 		{
+			"name": "Encaramarse a una criatura más grande",
+			"source": "DMG-ES",
+			"page": 271,
+			"fromVariant": "Acciones opcionales|DMG-ES",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"entries": [
+				"Si una criatura quiere saltar encima de otra, puede hacerlo usando las reglas para {@action Agarrar|PHB-ES|agarrar}. Sin embargo, una criatura Pequeña o Mediana tiene pocas probabilidades, salvo que la magia intervenga, de agarrar con éxito a otra criatura Enorme o Gargantuesca.",
+				"Una alternativa es tratar a cualquier oponente lo bastante grande como un elemento de terreno a efectos de saltar sobre su espalda o trepar por una de sus extremidades. Tras realizar cualquier prueba de característica que sea necesaria para situarse sobre la criatura más grande, la criatura más pequeña utilizará su acción para hacer una tirada de Fuerza ({@skill Atletismo|PHB-ES}) o Destreza ({@skill Acrobacias|PHB-ES}) enfrentada a una de Destreza ({@skill Acrobacias|PHB-ES}) de su oponente. Si gana la tirada enfrentada, la criatura más pequeña logrará moverse al espacio de la más grande y aferrarse a su cuerpo. Mientras permanezca en el espacio de su objetivo, la criatura más pequeña se moverá con él y tendrá ventaja en las tiradas de ataque contra la criatura más grande.",
+				"La criatura más pequeña podrá moverse dentro del espacio de la más grande, pero considerando este espacio como {@book terreno difícil|PHB-ES|9|terreno difícil}. Que la criatura más grande pueda atacar o no a la más pequeña depende de ti. Juzga en función de dónde se encuentre esta con respecto a aquella. La criatura más grande puede utilizar una acción para librarse de la más pequeña: derribándola, golpeándola contra una pared o agarrándola y arrojándola lejos. Para ello tendrá que vencer en una tirada enfrentada de su Fuerza ({@skill Atletismo|PHB-ES}) contra la Fuerza ({@skill Atletismo|PHB-ES}) o Destreza ({@skill Acrobacias|PHB-ES}) de la criatura más pequeña. Esta última elige cuál de las dos opciones."
+			]
+		},
+		{
+			"name": "Desarmar",
+			"source": "DMG-ES",
+			"page": 271,
+			"fromVariant": "Acciones opcionales|DMG-ES",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"entries": [
+				"Una criatura puede realizar un ataque con arma para arrancar un arma o cualquier otro objeto de las manos de su objetivo. El atacante hace una tirada de ataque enfrentada a una prueba de Fuerza ({@skill Atletismo|PHB-ES}) o Destreza ({@skill Acrobacias|PHB-ES}) del defensor. Si vence el primero, el ataque no causará daño o efecto pernicioso alguno, pero el objetivo deberá soltar el objeto.",
+				"El atacante tiene desventaja en su tirada de ataque si el defensor está sujetando el objeto con dos o más manos. El objetivo tiene ventaja en su prueba de característica si es más grande que la criatura atacante, o desventaja si es más pequeño."
+			],
+			"seeAlsoAction": [
+				"Atacar|PHB-ES"
+			]
+		},
+		{
+			"name": "Curaciones súbitas",
+			"source": "DMG-ES",
+			"page": 266,
+			"fromVariant": "Curación|DMG-ES",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"entries": [
+				"Un personaje puede, como su acción, realizar una curación súbita y gastar hasta la mitad de sus Dados de Golpe. Por cada Dado de Golpe invertido de esta forma, tirará un dado y añadirá al resultado su modificador por Constitución. El personaje recuperará tantos puntos de golpe como el total, y podrá decidir si emplea otro Dado de Golpe tras cada tirada.",
+				"El personaje no podrá utilizar curación súbita de nuevo hasta que no termine un descanso corto o largo.",
+				"Si usas esta regla opcional, los personajes recuperan todos sus Dados de Golpe al finalizar un descanso largo. Además, cuando hagan un descanso corto recuperarán tantos Dados de Golpe como su nivel dividido entre cuatro (un dado como mínimo)."
+			]
+		},
+		{
+			"name": "Marcar",
+			"source": "DMG-ES",
+			"page": 271,
+			"fromVariant": "Acciones opcionales|DMG-ES",
+			"entries": [
+				"Esta opción facilita que los combatientes cuerpo a cuerpo se hostiguen entre sí con ataques de oportunidad.",
+				"Cuando una criatura realiza un ataque cuerpo a cuerpo también marca a su objetivo. Hasta el final del siguiente turno del atacante, cualquier ataque de oportunidad que haga contra el objetivo marcado tendrá ventaja. Este ataque de oportunidad no consume la reacción del atacante, pero seguirá sin poder realizarlo si cualquier circunstancia, como estar {@condition incapacitado|PHB-ES} o ser víctima de un conjuro de {@spell agarre electrizante|PHB-ES}, le impide hacer reacciones. Además, el atacante está limitado a un ataque de oportunidad por turno."
+			],
+			"seeAlsoAction": [
+				"Atacar|PHB-ES"
+			]
+		},
+		{
+			"name": "Abrirse paso",
+			"source": "DMG-ES",
+			"page": 271,
+			"fromVariant": "Acciones opcionales|DMG-ES",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				},
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"entries": [
+				"Una criatura que quiera moverse a través del espacio de otra criatura hostil podrá intentar abrirse paso por la fuerza. Como acción o acción adicional, la criatura que se está desplazando debe hacer una tirada de Fuerza ({@skill Atletismo|PHB-ES}) enfrentada a una de Fuerza ({@skill Atletismo|PHB-ES}) de su oponente. La criatura que intenta abrirse paso tendrá ventaja en la prueba si es más grande que su oponente, o desventaja si es más pequeña. Si la primera gana, podrá moverse a través del espacio de la criatura hostil una vez durante este turno."
+			],
+			"seeAlsoAction": [
+				"Rodar|DMG-ES"
+			]
+		},
+		{
+			"name": "Echar a un lado",
+			"source": "DMG-ES",
+			"page": 271,
+			"fromVariant": "Acciones opcionales|DMG-ES",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"entries": [
+				"Esta opción permite a cualquier criatura {@action empujar|PHB-ES} (tal y como se describe en el {@book Player's Handbook|PHB|9|Shoving a Creature}) a otra a un lado, en lugar de de frente. La criatura que haga esto tendrá desventaja en su prueba de Fuerza ({@skill Atletismo|PHB-ES}), pero si tiene éxito desplazará a su objetivo 5 pies, a un espacio dentro del alcance del atacante y distinto al que ocupaba originalmente el oponente."
+			]
+		},
+		{
+			"name": "Rodar",
+			"source": "DMG-ES",
+			"page": 272,
+			"fromVariant": "Acciones opcionales|DMG-ES",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				},
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"entries": [
+				"Una criatura puede intentar atravesar rodando el espacio de una criatura hostil, agachándose y zigzagueando para esquivar a su oponente. Como acción o acción adicional, la criatura que está rodando debe hacer una tirada de Destreza ({@skill Acrobacias|PHB-ES}) enfrentada a una de Destreza ({@skill Acrobacias|PHB-ES}) de la criatura hostil. S i la primera gana, podrá moverse a través del espacio de la criatura hostil una vez durante este turno."
+			],
+			"seeAlsoAction": [
+				"Abrirse paso|DMG-ES"
+			]
+		},
+		{
 			"name": "Atacar",
 			"source": "PHB-ES",
 			"page": 192,
@@ -87,23 +212,6 @@
 			]
 		},
 		{
-			"name": "Encaramarse a una criatura más grande",
-			"source": "DMG-ES",
-			"page": 271,
-			"fromVariant": "Acciones opcionales|DMG-ES",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"entries": [
-				"Si una criatura quiere saltar encima de otra, puede hacerlo usando las reglas para {@action Agarrar|PHB-ES|agarrar}. Sin embargo, una criatura Pequeña o Mediana tiene pocas probabilidades, salvo que la magia intervenga, de agarrar con éxito a otra criatura Enorme o Gargantuesca.",
-				"Una alternativa es tratar a cualquier oponente lo bastante grande como un elemento de terreno a efectos de saltar sobre su espalda o trepar por una de sus extremidades. Tras realizar cualquier prueba de característica que sea necesaria para situarse sobre la criatura más grande, la criatura más pequeña utilizará su acción para hacer una tirada de Fuerza ({@skill Atletismo|PHB-ES}) o Destreza ({@skill Acrobacias|PHB-ES}) enfrentada a una de Destreza ({@skill Acrobacias|PHB-ES}) de su oponente. Si gana la tirada enfrentada, la criatura más pequeña logrará moverse al espacio de la más grande y aferrarse a su cuerpo. Mientras permanezca en el espacio de su objetivo, la criatura más pequeña se moverá con él y tendrá ventaja en las tiradas de ataque contra la criatura más grande.",
-				"La criatura más pequeña podrá moverse dentro del espacio de la más grande, pero considerando este espacio como {@book terreno difícil|PHB-ES|9|terreno difícil}. Que la criatura más grande pueda atacar o no a la más pequeña depende de ti. Juzga en función de dónde se encuentre esta con respecto a aquella. La criatura más grande puede utilizar una acción para librarse de la más pequeña: derribándola, golpeándola contra una pared o agarrándola y arrojándola lejos. Para ello tendrá que vencer en una tirada enfrentada de su Fuerza ({@skill Atletismo|PHB-ES}) contra la Fuerza ({@skill Atletismo|PHB-ES}) o Destreza ({@skill Acrobacias|PHB-ES}) de la criatura más pequeña. Esta última elige cuál de las dos opciones."
-			]
-		},
-		{
 			"name": "Correr",
 			"source": "PHB-ES",
 			"page": 192,
@@ -118,25 +226,6 @@
 			"entries": [
 				"Al llevar a cabo una acción de Correr consigues movimiento adicional para ese turno. Este aumento es igual a tu velocidad tras aplicar cualquier modificador pertinente. Así, si tu velocidad fuera de 30 pies, podrías moverte hasta 60 pies en un turno en el que corrieras.",
 				"Si tu velocidad aumentara o disminuyera, el movimiento adicional también lo haría. Si, por ejemplo, tu velocidad de 30 pies se redujera a 15, podrías moverte hasta 30 pies en un turno en el que corrieras."
-			]
-		},
-		{
-			"name": "Desarmar",
-			"source": "DMG-ES",
-			"page": 271,
-			"fromVariant": "Acciones opcionales|DMG-ES",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"entries": [
-				"Una criatura puede realizar un ataque con arma para arrancar un arma o cualquier otro objeto de las manos de su objetivo. El atacante hace una tirada de ataque enfrentada a una prueba de Fuerza ({@skill Atletismo|PHB-ES}) o Destreza ({@skill Acrobacias|PHB-ES}) del defensor. Si vence el primero, el ataque no causará daño o efecto pernicioso alguno, pero el objetivo deberá soltar el objeto.",
-				"El atacante tiene desventaja en su tirada de ataque si el defensor está sujetando el objeto con dos o más manos. El objetivo tiene ventaja en su prueba de característica si es más grande que la criatura atacante, o desventaja si es más pequeño."
-			],
-			"seeAlsoAction": [
-				"Atacar|PHB-ES"
 			]
 		},
 		{
@@ -247,23 +336,6 @@
 			]
 		},
 		{
-			"name": "Curaciones súbitas",
-			"source": "DMG-ES",
-			"page": 266,
-			"fromVariant": "Curación|DMG-ES",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"entries": [
-				"Un personaje puede, como su acción, realizar una curación súbita y gastar hasta la mitad de sus Dados de Golpe. Por cada Dado de Golpe invertido de esta forma, tirará un dado y añadirá al resultado su modificador por Constitución. El personaje recuperará tantos puntos de golpe como el total, y podrá decidir si emplea otro Dado de Golpe tras cada tirada.",
-				"El personaje no podrá utilizar curación súbita de nuevo hasta que no termine un descanso corto o largo.",
-				"Si usas esta regla opcional, los personajes recuperan todos sus Dados de Golpe al finalizar un descanso largo. Además, cuando hagan un descanso corto recuperarán tantos Dados de Golpe como su nivel dividido entre cuatro (un dado como mínimo)."
-			]
-		},
-		{
 			"name": "Ayudar",
 			"source": "PHB-ES",
 			"page": 192,
@@ -297,27 +369,6 @@
 			]
 		},
 		{
-			"name": "Identificar un conjuro",
-			"source": "XGE-ES",
-			"page": 85,
-			"fromVariant": "Lanzamiento de conjuros|XGE-ES",
-			"time": [
-				{
-					"number": 1,
-					"unit": "reaction"
-				},
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"entries": [
-				"A veces un personaje quiere reconocer un conjuro que alguien está lanzando o ya se ha lanzado. Para ello, puede usar su reacción para identificarlo mientras está siendo ejecutado o puede emplear una acción en su turno para descubrirlo por medio del efecto provocado tras haber sido lanzado.",
-				"Si el aventurero percibió el lanzamiento, el efecto del conjuro o ambos, puede hacer una prueba de Inteligencia ({@skill Conocimiento Arcano|PHB-ES}) en su reacción o acción. La CD es 15 + el nivel del conjuro. Si se lanza como un conjuro de clase y el personaje es un miembro de la misma, la prueba se realiza con ventaja. Por ejemplo, si el lanzador ejecuta el conjuro como clérigo, otro clérigo tendrá ventaja en la prueba realizada para identificarlo. Algunos conjuros no están asociados con ninguna clase cuando son lanzados, como cuando un monstruo utiliza su atributo Lanzamiento de Conjuros Innato.",
-				"La prueba de Inteligencia ({@skill Conocimiento Arcano|PHB-ES}) representa que identificar un conjuro requiere de una mente rápida y familiaridad con la teoría y práctica de su lanzamiento. Esto es cierto incluso para un personaje cuya aptitud mágica sea Sabiduría o Carisma. Ser capaz de llevar a cabo conjuros no te hace un experto en deducir exactamente lo que hacen otros cuando los están lanzando."
-			]
-		},
-		{
 			"name": "Improvisar una acción",
 			"source": "PHB-ES",
 			"page": 193,
@@ -328,19 +379,6 @@
 			"entries": [
 				"Tu personaje puede hacer cosas que no están cubiertas por las acciones de este capítulo, como romper una puerta, intimidar a un enemigo, percibir debilidades en una defensa mágica o pedir una tregua para negociar a un enemigo. Los únicos límites a las acciones que puedes llegar a realizar son tu imaginación y las puntuaciones de característica de tu personaje. Consulta las descripciones de las características en el {@book capítulo 7|PHB-ES|7|Puntuaciones de característica y modificadores} para inspirarte a la hora de improvisar.",
 				"Para realizar una acción que no aparezca descrita en las reglas tendrás que preguntar al DM si dicha acción es posible y, en caso de serlo, este te dirá la tirada que tienes que hacer (de ser necesario) para determinar si fracasas o no."
-			]
-		},
-		{
-			"name": "Marcar",
-			"source": "DMG-ES",
-			"page": 271,
-			"fromVariant": "Acciones opcionales|DMG-ES",
-			"entries": [
-				"Esta opción facilita que los combatientes cuerpo a cuerpo se hostiguen entre sí con ataques de oportunidad.",
-				"Cuando una criatura realiza un ataque cuerpo a cuerpo también marca a su objetivo. Hasta el final del siguiente turno del atacante, cualquier ataque de oportunidad que haga contra el objetivo marcado tendrá ventaja. Este ataque de oportunidad no consume la reacción del atacante, pero seguirá sin poder realizarlo si cualquier circunstancia, como estar {@condition incapacitado|PHB-ES} o ser víctima de un conjuro de {@spell agarre electrizante|PHB-ES}, le impide hacer reacciones. Además, el atacante está limitado a un ataque de oportunidad por turno."
-			],
-			"seeAlsoAction": [
-				"Atacar|PHB-ES"
 			]
 		},
 		{
@@ -412,28 +450,6 @@
 			]
 		},
 		{
-			"name": "Abrirse paso",
-			"source": "DMG-ES",
-			"page": 271,
-			"fromVariant": "Acciones opcionales|DMG-ES",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				},
-				{
-					"number": 1,
-					"unit": "bonus"
-				}
-			],
-			"entries": [
-				"Una criatura que quiera moverse a través del espacio de otra criatura hostil podrá intentar abrirse paso por la fuerza. Como acción o acción adicional, la criatura que se está desplazando debe hacer una tirada de Fuerza ({@skill Atletismo|PHB-ES}) enfrentada a una de Fuerza ({@skill Atletismo|PHB-ES}) de su oponente. La criatura que intenta abrirse paso tendrá ventaja en la prueba si es más grande que su oponente, o desventaja si es más pequeña. Si la primera gana, podrá moverse a través del espacio de la criatura hostil una vez durante este turno."
-			],
-			"seeAlsoAction": [
-				"Rodar|DMG-ES"
-			]
-		},
-		{
 			"name": "Preparar una Acción",
 			"source": "PHB-ES",
 			"page": 193,
@@ -490,43 +506,6 @@
 			]
 		},
 		{
-			"name": "Echar a un lado",
-			"source": "DMG-ES",
-			"page": 271,
-			"fromVariant": "Acciones opcionales|DMG-ES",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"entries": [
-				"Esta opción permite a cualquier criatura {@action empujar|PHB-ES} (tal y como se describe en el {@book Player's Handbook|PHB|9|Shoving a Creature}) a otra a un lado, en lugar de de frente. La criatura que haga esto tendrá desventaja en su prueba de Fuerza ({@skill Atletismo|PHB-ES}), pero si tiene éxito desplazará a su objetivo 5 pies, a un espacio dentro del alcance del atacante y distinto al que ocupaba originalmente el oponente."
-			]
-		},
-		{
-			"name": "Rodar",
-			"source": "DMG-ES",
-			"page": 272,
-			"fromVariant": "Acciones opcionales|DMG-ES",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				},
-				{
-					"number": 1,
-					"unit": "bonus"
-				}
-			],
-			"entries": [
-				"Una criatura puede intentar atravesar rodando el espacio de una criatura hostil, agachándose y zigzagueando para esquivar a su oponente. Como acción o acción adicional, la criatura que está rodando debe hacer una tirada de Destreza ({@skill Acrobacias|PHB-ES}) enfrentada a una de Destreza ({@skill Acrobacias|PHB-ES}) de la criatura hostil. S i la primera gana, podrá moverse a través del espacio de la criatura hostil una vez durante este turno."
-			],
-			"seeAlsoAction": [
-				"Abrirse paso|DMG-ES"
-			]
-		},
-		{
 			"name": "Combate con dos armas",
 			"source": "PHB-ES",
 			"page": 195,
@@ -560,6 +539,27 @@
 			],
 			"entries": [
 				"Lo normal es interaccionar con un objeto mientras se hace otra cosa, como cuando desenvainas una espada al atacar. Tendrás que llevar a cabo la acción Usar un Objeto cuando quieras utilizar un objeto que precise de una acción para poder usarse. Esta acción también sirve para poder interaccionar con más de un objeto en un turno."
+			]
+		},
+		{
+			"name": "Identificar un conjuro",
+			"source": "XGE-ES",
+			"page": 85,
+			"fromVariant": "Lanzamiento de conjuros|XGE-ES",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction"
+				},
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"entries": [
+				"A veces un personaje quiere reconocer un conjuro que alguien está lanzando o ya se ha lanzado. Para ello, puede usar su reacción para identificarlo mientras está siendo ejecutado o puede emplear una acción en su turno para descubrirlo por medio del efecto provocado tras haber sido lanzado.",
+				"Si el aventurero percibió el lanzamiento, el efecto del conjuro o ambos, puede hacer una prueba de Inteligencia ({@skill Conocimiento Arcano|PHB-ES}) en su reacción o acción. La CD es 15 + el nivel del conjuro. Si se lanza como un conjuro de clase y el personaje es un miembro de la misma, la prueba se realiza con ventaja. Por ejemplo, si el lanzador ejecuta el conjuro como clérigo, otro clérigo tendrá ventaja en la prueba realizada para identificarlo. Algunos conjuros no están asociados con ninguna clase cuando son lanzados, como cuando un monstruo utiliza su atributo Lanzamiento de Conjuros Innato.",
+				"La prueba de Inteligencia ({@skill Conocimiento Arcano|PHB-ES}) representa que identificar un conjuro requiere de una mente rápida y familiaridad con la teoría y práctica de su lanzamiento. Esto es cierto incluso para un personaje cuya aptitud mágica sea Sabiduría o Carisma. Ser capaz de llevar a cabo conjuros no te hace un experto en deducir exactamente lo que hacen otros cuando los están lanzando."
 			]
 		},
 		{

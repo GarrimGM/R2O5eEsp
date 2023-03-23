@@ -431,34 +431,6 @@
 	],
 	"disease": [
 		{
-			"name": "Enfermedad cegadora",
-			"source": "PHB-ES",
-			"page": 228,
-			"entries": [
-				"El dolor atenaza la mente de la criatura mientras sus ojos se vuelven de color blanco lechoso. Queda {@condition cegado|PHB-ES|cegada} y tiene desventaja en las tiradas de salvación y pruebas de Sabiduría.",
-				"{@note Esta enfermedad puede ser infringida con el conjuro {@spell contagio|PHB-ES}.}"
-			]
-		},
-		{
-			"name": "Fiebre del mono loco",
-			"source": "ToA-ES",
-			"page": 40,
-			"entries": [
-				"Una bruma mágica repta por las junglas de Chult. El contacto con esta neblina poco espesa, azul e inodora puede infectar a gigantes y humanoides con la fiebre del mono loco. Un conjuro de {@spell disipar magia|PHB-ES} destruye la bruma en un cuadrado de 20 pies que empieza en un punto elegido por el lanzador dentro del alcance del conjuro. Un encuentro con esta bruma generalmente cubre {@dice 1d6} zonas de estas dimensiones (400-2.400 pies cuadrados).",
-				"Cualquier gigante o humanoide que entra en contacto con la bruma debe tener éxito en una tirada de salvación de Constitución CD 13 o se infectará con la fiebre del mono loco. La criatura infectada obtiene un tipo aleatorio de locura a largo plazo. Haz una tirada usando la tabla \"locura a largo plazo\" del capítulo 8 del {@i Dungeon Master's Guide}. Este tipo de locura se manifiesta {@dice 1d6} horas después de la infección y tiene una duración de 1d10 x 10 horas. Si se deja que la locura siga su curso hasta el final, la criatura debe repetir la tirada de salvación cuando acabe el enloquecimiento. Si falla la segunda tirada de salvación, la criatura sufre otro ataque de locura a largo plazo que se extiende la duración habitual. Vuelve a hacer una tirada en la tabla para determinar el ataque. Los síntomas de la locura continúan hasta que termina la enfermedad."
-			]
-		},
-		{
-			"name": "La podredumbre azul",
-			"source": "GoS-ES",
-			"page": 230,
-			"entries": [
-				"Esta enfermedad afecta a los humanoides. Al padecer la podredumbre azul, en la víctima proliferan unos grotescos forúnculos azules en la cara y la espalda. Este mal lo transmiten los muertos vivientes (incluidos los ahogados de {@i El Sino de la Tammeraut}) y los enfermos a  menudo se contagian a través de heridas causadas por otras criaturas infectadas.",
-				"Los forúnculos de la enfermedad se manifiestan en {@dice 1d4} horas, lo que hace que las puntuaciones de Constitución y Carisma de la víctima disminuyan en {@dice 1d4} cada una, hasta un mínimo de 3. A esto lo siguen con rapidez la fiebre y hormigueo en las extremidades. Una criatura infectada se vuelve vulnerable al daño radiante y obtiene la habilidad de respirar bajo el agua.",
-				"Al final de cada descanso largo, el enfermo deberá realizar una tirada de salvación de Constitución CD 1 2. Si la supera, recuperará 1 punto de Constitución y 1 punto de Carisma de los que haya perdido debido a la podredumbre azul. Si la criatura infectada recobra todos los puntos perdidos por la enfermedad, quedará curada. Otros efectos que aumenten las puntuaciones de característica de la víctima no curarán la enfermedad. Si falla la tirada de salvación, el enfermo sufrirá 18 ({@dice 4d8}) de daño necrótico al estallar y extenderse los forúnculos. Una criatura cuyos puntos de golpe se reduzcan a 0 al recibir este daño no podrá recuperar puntos de golpe hasta que haya superado la enfermedad, aunque podrá estabilizarse con normalidad."
-			]
-		},
-		{
 			"name": "Fiebre Carcajeante",
 			"source": "DMG-ES",
 			"page": 257,
@@ -485,6 +457,56 @@
 						" determinada al azar."
 					]
 				}
+			]
+		},
+		{
+			"name": "Plaga de las alcantarillas",
+			"source": "DMG-ES",
+			"page": 257,
+			"srd": true,
+			"entries": [
+				"El término \"plaga de las alcantarillas\" engloba a una amplia categoría de enfermedades que se incuban en alcantarillas, montones de basura y pantanos. A veces también las transmiten las alimañas que moran en esos lugares, como ratas y otyughs.",
+				"Cualquier humanoide que sea mordido por una criatura portadora de la enfermedad o e ntre en contacto con basura o vísceras contaminadas por ella, deberá superar una tirada de salvación de Constitución CD 11 o será infectado.",
+				"Los síntomas de la plaga de las alcantarillas comenzarán a manifestarse {@dice 1d4} días después. Entre ellos se encuentran la fatiga y los calambres, por lo que la criatura infectada sufrirá un nivel de {@condition cansancio|PHB-ES}. Además, solo recibirá la mitad de los puntos de golpe normales cuando utilice Dados de Golpe y no recuperará punto de golpe alguno tras finalizar un descanso largo.",
+				"Al final de cada uno de sus descansos largos, la criatura infectada deberá hacer una tirada de salvación de Constitución CD 11. Si falla, recibirá un nivel de {@condition cansancio|PHB-ES}, pero si tiene éxito, su nivel de {@condition cansancio|PHB-ES} bajará en uno. Además, si al superar esta tirada de salvación la criatura infectada baja su nivel de {@condition cansancio|PHB-ES} por debajo de 1, se curará."
+			]
+		},
+		{
+			"name": "Vista podrida",
+			"source": "DMG-ES",
+			"page": 257,
+			"srd": true,
+			"entries": [
+				"Esta dolorosa infección provoca sangrado en los ojos y acaba dejando a la víctima completamente ciega.",
+				"Cualquier bestia o humanoide que beba agua contaminada con vista podrida deberá superar una tirada de salvación de Constitución CD 15 o será infectada. Un día después de contraer la enfermedad, notará como su visión se empieza a nublar: la criatura recibirá un penalizador de -1 a las tiradas de ataque y pruebas de característica que dependan de la vista. Al final de cada descanso largo posterior a la aparición de los síntomas, este penalizador empeorará e n uno. Cuando llegue a -5, la víctima se habrá quedado {@condition cegado|PHB-ES|ciega} y solo podrá recuperar la visión mediante medios mágicos, como los conjuros {@spell restablecimiento menor|PHB-ES} o {@spell curar|PHB-ES}.",
+				"La vista podrida puede curarse utilizando una rara flor llamada ojoradiante, que crece en algunos pantanos. Un personaje que sea competente con {@item útiles de herborista|PHB-ES} tardará una hora en preparar una dosis de ungüento a partir de estas flores. Aplicarla sobre los ojos antes de un descanso largo evitará que la visión empeore después de dicho descanso. Tras tres dosis, el ungüento curará la enfermedad por completo."
+			]
+		},
+		{
+			"name": "La podredumbre azul",
+			"source": "GoS-ES",
+			"page": 230,
+			"entries": [
+				"Esta enfermedad afecta a los humanoides. Al padecer la podredumbre azul, en la víctima proliferan unos grotescos forúnculos azules en la cara y la espalda. Este mal lo transmiten los muertos vivientes (incluidos los ahogados de {@i El Sino de la Tammeraut}) y los enfermos a  menudo se contagian a través de heridas causadas por otras criaturas infectadas.",
+				"Los forúnculos de la enfermedad se manifiestan en {@dice 1d4} horas, lo que hace que las puntuaciones de Constitución y Carisma de la víctima disminuyan en {@dice 1d4} cada una, hasta un mínimo de 3. A esto lo siguen con rapidez la fiebre y hormigueo en las extremidades. Una criatura infectada se vuelve vulnerable al daño radiante y obtiene la habilidad de respirar bajo el agua.",
+				"Al final de cada descanso largo, el enfermo deberá realizar una tirada de salvación de Constitución CD 1 2. Si la supera, recuperará 1 punto de Constitución y 1 punto de Carisma de los que haya perdido debido a la podredumbre azul. Si la criatura infectada recobra todos los puntos perdidos por la enfermedad, quedará curada. Otros efectos que aumenten las puntuaciones de característica de la víctima no curarán la enfermedad. Si falla la tirada de salvación, el enfermo sufrirá 18 ({@dice 4d8}) de daño necrótico al estallar y extenderse los forúnculos. Una criatura cuyos puntos de golpe se reduzcan a 0 al recibir este daño no podrá recuperar puntos de golpe hasta que haya superado la enfermedad, aunque podrá estabilizarse con normalidad."
+			]
+		},
+		{
+			"name": "Caragrana",
+			"source": "GoS-ES",
+			"page": 168,
+			"entries": [
+				"Los efectos de la caragrana son idénticos a los de la {@disease vista podrida|PHB-ES} (consulta \"{@book Enfermedades|DMG|8|Diseases}\" en el capítulo 8 del {@book Dungeon Master's Guide|DMG}), pero los causan los contaminantes en el aire en lugar del agua potable, lo que hace que sea difícil de evitar."
+			]
+		},
+		{
+			"name": "Enfermedad cegadora",
+			"source": "PHB-ES",
+			"page": 228,
+			"entries": [
+				"El dolor atenaza la mente de la criatura mientras sus ojos se vuelven de color blanco lechoso. Queda {@condition cegado|PHB-ES|cegada} y tiene desventaja en las tiradas de salvación y pruebas de Sabiduría.",
+				"{@note Esta enfermedad puede ser infringida con el conjuro {@spell contagio|PHB-ES}.}"
 			]
 		},
 		{
@@ -515,14 +537,6 @@
 			]
 		},
 		{
-			"name": "Caragrana",
-			"source": "GoS-ES",
-			"page": 168,
-			"entries": [
-				"Los efectos de la caragrana son idénticos a los de la {@disease vista podrida|PHB-ES} (consulta \"{@book Enfermedades|DMG|8|Diseases}\" en el capítulo 8 del {@book Dungeon Master's Guide|DMG}), pero los causan los contaminantes en el aire en lugar del agua potable, lo que hace que sea difícil de evitar."
-			]
-		},
-		{
 			"name": "Convulsiones",
 			"source": "PHB-ES",
 			"page": 228,
@@ -532,15 +546,29 @@
 			]
 		},
 		{
-			"name": "Plaga de las alcantarillas",
-			"source": "DMG-ES",
-			"page": 257,
-			"srd": true,
+			"name": "Maldición legamosa",
+			"source": "PHB-ES",
+			"page": 228,
 			"entries": [
-				"El término \"plaga de las alcantarillas\" engloba a una amplia categoría de enfermedades que se incuban en alcantarillas, montones de basura y pantanos. A veces también las transmiten las alimañas que moran en esos lugares, como ratas y otyughs.",
-				"Cualquier humanoide que sea mordido por una criatura portadora de la enfermedad o e ntre en contacto con basura o vísceras contaminadas por ella, deberá superar una tirada de salvación de Constitución CD 11 o será infectado.",
-				"Los síntomas de la plaga de las alcantarillas comenzarán a manifestarse {@dice 1d4} días después. Entre ellos se encuentran la fatiga y los calambres, por lo que la criatura infectada sufrirá un nivel de {@condition cansancio|PHB-ES}. Además, solo recibirá la mitad de los puntos de golpe normales cuando utilice Dados de Golpe y no recuperará punto de golpe alguno tras finalizar un descanso largo.",
-				"Al final de cada uno de sus descansos largos, la criatura infectada deberá hacer una tirada de salvación de Constitución CD 11. Si falla, recibirá un nivel de {@condition cansancio|PHB-ES}, pero si tiene éxito, su nivel de {@condition cansancio|PHB-ES} bajará en uno. Además, si al superar esta tirada de salvación la criatura infectada baja su nivel de {@condition cansancio|PHB-ES} por debajo de 1, se curará."
+				"La criatura empieza a sangrar sin control. Tiene desventaja en las tiradas de salvación y pruebas de Constitución. Además, si recibe daño quedará {@condition aturdido|PHB-ES|aturdida} hasta el final de su siguiente turno.",
+				"{@note Esta enfermedad puede ser infringida con el conjuro {@spell contagio|PHB-ES}.}"
+			]
+		},
+		{
+			"name": "Supertétanos",
+			"source": "TftYP-ES",
+			"page": 104,
+			"entries": [
+				"Una criatura que contraiga la enfermedad del supertétanos se retorcerá de dolor mientras su corazón se acelera y tendrá espasmos musculares 10 bastante violentos como para romperle los huesos. Sufrirá 11 {@dice 2d10} de daño al comienzo de cada uno de sus turnos. Si no se cura a la víctima por cualquier otro medio, esta podrá repetir la tirada de salvación al cabo de cada minuto posterior a la contracción de la enfermedad, concluyendo sus efectos en caso de superarla."
+			]
+		},
+		{
+			"name": "Fiebre del mono loco",
+			"source": "ToA-ES",
+			"page": 40,
+			"entries": [
+				"Una bruma mágica repta por las junglas de Chult. El contacto con esta neblina poco espesa, azul e inodora puede infectar a gigantes y humanoides con la fiebre del mono loco. Un conjuro de {@spell disipar magia|PHB-ES} destruye la bruma en un cuadrado de 20 pies que empieza en un punto elegido por el lanzador dentro del alcance del conjuro. Un encuentro con esta bruma generalmente cubre {@dice 1d6} zonas de estas dimensiones (400-2.400 pies cuadrados).",
+				"Cualquier gigante o humanoide que entra en contacto con la bruma debe tener éxito en una tirada de salvación de Constitución CD 13 o se infectará con la fiebre del mono loco. La criatura infectada obtiene un tipo aleatorio de locura a largo plazo. Haz una tirada usando la tabla \"locura a largo plazo\" del capítulo 8 del {@i Dungeon Master's Guide}. Este tipo de locura se manifiesta {@dice 1d6} horas después de la infección y tiene una duración de 1d10 x 10 horas. Si se deja que la locura siga su curso hasta el final, la criatura debe repetir la tirada de salvación cuando acabe el enloquecimiento. Si falla la segunda tirada de salvación, la criatura sufre otro ataque de locura a largo plazo que se extiende la duración habitual. Vuelve a hacer una tirada en la tabla para determinar el ataque. Los síntomas de la locura continúan hasta que termina la enfermedad."
 			]
 		},
 		{
@@ -555,40 +583,12 @@
 			]
 		},
 		{
-			"name": "Vista podrida",
-			"source": "DMG-ES",
-			"page": 257,
-			"srd": true,
+			"name": "Sanguijuelas de la garganta",
+			"source": "ToA-ES",
+			"page": 40,
 			"entries": [
-				"Esta dolorosa infección provoca sangrado en los ojos y acaba dejando a la víctima completamente ciega.",
-				"Cualquier bestia o humanoide que beba agua contaminada con vista podrida deberá superar una tirada de salvación de Constitución CD 15 o será infectada. Un día después de contraer la enfermedad, notará como su visión se empieza a nublar: la criatura recibirá un penalizador de -1 a las tiradas de ataque y pruebas de característica que dependan de la vista. Al final de cada descanso largo posterior a la aparición de los síntomas, este penalizador empeorará e n uno. Cuando llegue a -5, la víctima se habrá quedado {@condition cegado|PHB-ES|ciega} y solo podrá recuperar la visión mediante medios mágicos, como los conjuros {@spell restablecimiento menor|PHB-ES} o {@spell curar|PHB-ES}.",
-				"La vista podrida puede curarse utilizando una rara flor llamada ojoradiante, que crece en algunos pantanos. Un personaje que sea competente con {@item útiles de herborista|PHB-ES} tardará una hora en preparar una dosis de ungüento a partir de estas flores. Aplicarla sobre los ojos antes de un descanso largo evitará que la visión empeore después de dicho descanso. Tras tres dosis, el ungüento curará la enfermedad por completo."
-			]
-		},
-		{
-			"name": "Maldición legamosa",
-			"source": "PHB-ES",
-			"page": 228,
-			"entries": [
-				"La criatura empieza a sangrar sin control. Tiene desventaja en las tiradas de salvación y pruebas de Constitución. Además, si recibe daño quedará {@condition aturdido|PHB-ES|aturdida} hasta el final de su siguiente turno.",
-				"{@note Esta enfermedad puede ser infringida con el conjuro {@spell contagio|PHB-ES}.}"
-			]
-		},
-		{
-			"name": "Huevos de araña",
-			"source": "WDMM-ES",
-			"page": 47,
-			"entries": [
-				"Si el grupo es derrotado, los aventureros estabilizados despertarán después de {@dice 1d4} horas. Estarán envueltos en telarañas pegajosas, suspendidos a 10 pies del suelo, y con huevos de araña implantados en sus cuerpos. Cualquier personaje que se encuentre dentro de un capullo arácnido estará {@condition apresado|PHB-ES} y podrá usar su acción para intentar escapar, lo que conseguirá superando una prueba de Fuerza CD 15.",
-				"Los huevos de araña implantados en un huésped eclosionarán en {@dice 2d12} horas, provocando su muerte cuando las crías de araña se abran paso a mordiscos para salir. Esta infestación funcionará como una enfermedad. Un conjuro de {@spell restablecimiento menor|PHB-ES}, o algún efecto mágico similar lanzado sobre el huésped, matará los huevos de araña y terminará con la amenaza."
-			]
-		},
-		{
-			"name": "Supertétanos",
-			"source": "TftYP-ES",
-			"page": 104,
-			"entries": [
-				"Una criatura que contraiga la enfermedad del supertétanos se retorcerá de dolor mientras su corazón se acelera y tendrá espasmos musculares 10 bastante violentos como para romperle los huesos. Sufrirá 11 {@dice 2d10} de daño al comienzo de cada uno de sus turnos. Si no se cura a la víctima por cualquier otro medio, esta podrá repetir la tirada de salvación al cabo de cada minuto posterior a la contracción de la enfermedad, concluyendo sus efectos en caso de superarla."
+				"Hay unos parásitos minúsculos, conocidos como sanguijuelas de la garganta, que emponzoñan las aguas de los bosques, pantanos y ríos de Chult. Cualquier gigante o humanoide que trague agua contaminada debe tener éxito en una tirada de Constitución CD 12 o acabará infestado de sanguijuelas de la garganta. Los síntomas inmediatos incluyen inflamación en la garganta y dificultad para respirar. Después de {@dice 1d6} horas, el personaje infectado sufre 1 nivel de {@condition cansancio|PHB-ES} que no se puede quitar (excepto como se describe a continuación) hasta que la enfermedad se cure. La criatura infectada debe repetir la tirada de salvación al final de cada uno de sus descansos largos. Si supera la tirada de salvación, el {@condition cansancio|PHB-ES} de la criatura sube 1 nivel. Si no supera la tirada, el {@condition cansancio|PHB-ES} de la criatura baja 1 nivel. Si la criatura infectada supera su tirada de salvación y su nivel de {@condition cansancio|PHB-ES} baja a menos de 1, se curará de la enfermedad.",
+				"Los exploradores pueden evitar contraer sanguijuelas de garganta bebiendo solo agua de lluvia, agua hervida o purificada a base de magia."
 			]
 		},
 		{
@@ -641,12 +641,12 @@
 			]
 		},
 		{
-			"name": "Sanguijuelas de la garganta",
-			"source": "ToA-ES",
-			"page": 40,
+			"name": "Huevos de araña",
+			"source": "WDMM-ES",
+			"page": 47,
 			"entries": [
-				"Hay unos parásitos minúsculos, conocidos como sanguijuelas de la garganta, que emponzoñan las aguas de los bosques, pantanos y ríos de Chult. Cualquier gigante o humanoide que trague agua contaminada debe tener éxito en una tirada de Constitución CD 12 o acabará infestado de sanguijuelas de la garganta. Los síntomas inmediatos incluyen inflamación en la garganta y dificultad para respirar. Después de {@dice 1d6} horas, el personaje infectado sufre 1 nivel de {@condition cansancio|PHB-ES} que no se puede quitar (excepto como se describe a continuación) hasta que la enfermedad se cure. La criatura infectada debe repetir la tirada de salvación al final de cada uno de sus descansos largos. Si supera la tirada de salvación, el {@condition cansancio|PHB-ES} de la criatura sube 1 nivel. Si no supera la tirada, el {@condition cansancio|PHB-ES} de la criatura baja 1 nivel. Si la criatura infectada supera su tirada de salvación y su nivel de {@condition cansancio|PHB-ES} baja a menos de 1, se curará de la enfermedad.",
-				"Los exploradores pueden evitar contraer sanguijuelas de garganta bebiendo solo agua de lluvia, agua hervida o purificada a base de magia."
+				"Si el grupo es derrotado, los aventureros estabilizados despertarán después de {@dice 1d4} horas. Estarán envueltos en telarañas pegajosas, suspendidos a 10 pies del suelo, y con huevos de araña implantados en sus cuerpos. Cualquier personaje que se encuentre dentro de un capullo arácnido estará {@condition apresado|PHB-ES} y podrá usar su acción para intentar escapar, lo que conseguirá superando una prueba de Fuerza CD 15.",
+				"Los huevos de araña implantados en un huésped eclosionarán en {@dice 2d12} horas, provocando su muerte cuando las crías de araña se abran paso a mordiscos para salir. Esta infestación funcionará como una enfermedad. Un conjuro de {@spell restablecimiento menor|PHB-ES}, o algún efecto mágico similar lanzado sobre el huésped, matará los huevos de araña y terminará con la amenaza."
 			]
 		}
 	],

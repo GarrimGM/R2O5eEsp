@@ -26,7 +26,7 @@ import com.google.gson.JsonObject;
 
 public class OrdenarDocumentos {
     public static void ordenar(boolean original) throws IOException {
-        System.out.println("Inicio - Ordenando documentos");
+        System.out.println("--- Inicio - Ordenando documentos");
         //Consulta la lista de sources activos para comparar
         //creo un hashmap para solo tener que recorrer esta lista una vez
         HashMap<String,SourcesModel> sourcesMap = new HashMap<>();
@@ -63,8 +63,9 @@ public class OrdenarDocumentos {
                 }
                 System.out.println("Documento "+importTable.getJsonDocument()+" creado");
             }
+            //Creamos una copia de como estaba inicialmente
+            JsonObject jsonEspOriginal = jsonEsp.deepCopy();
 
-            JsonObject jsonEspOrdenado = new JsonObject();
             JsonArray jsListaOrdenado = new JsonArray();
             if(original) {
                 //Ordenación por los nombres originales en ingles
@@ -133,19 +134,19 @@ public class OrdenarDocumentos {
                     jsListaOrdenado.add(listaDatosEspMap.get(clave));
                 }
             }
-            jsonEspOrdenado.add(importTable.getFieldName(), jsListaOrdenado);
+            jsonEsp.add(importTable.getFieldName(), jsListaOrdenado);
 
             //Comprobamos si se ha añadido algo al original
-            if(!jsListaOrdenado.isEmpty() && !jsonEspOrdenado.equals(jsonEsp)) {
+            if(!jsonEspOriginal.equals(jsonEsp)) {
                 //Actualiza el documento
                 try (Writer writer = new FileWriter(rutaDocEsp)) {
                     Gson gsonCreate = new GsonBuilder().create();
-                    gsonCreate.toJson(jsonEspOrdenado, writer);
+                    gsonCreate.toJson(jsonEsp, writer);
                 }
                 System.out.println("Documento "+importTable.getJsonDocument()+" guardado.");
             }
             System.out.println("Fin - Ordenando documento "+importTable.getJsonDocument());
         }
-        System.out.println("Fin - Ordenando documentos");
+        System.out.println("--- Fin - Ordenando documentos");
     }
 }
