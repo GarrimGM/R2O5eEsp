@@ -79,6 +79,14 @@ public class FormarDocumento {
                     jsonEsp.add(importTable.getFieldName(), jsLista);
                 }
                 JsonArray jsLista = jsonEsp.getAsJsonArray(importTable.getFieldName());
+                //Comprueba si el campo ya existe en el documento final
+                if(jsDocumento.has(importTable.getFieldName())){
+                    JsonArray jsListaFinal = jsDocumento.get(importTable.getFieldName()).getAsJsonArray();
+                    for (int i = 0; i < jsLista.size(); i++) {
+                        jsListaFinal.add(jsLista.get(i));
+                    }
+                    jsLista = jsListaFinal;
+                }
                 jsDocumento.add(importTable.getFieldName(), jsLista);
             } catch (FileNotFoundException e) {
                 System.out.println("Documento "+importTable.getJsonDocument()+" no encontrado");
