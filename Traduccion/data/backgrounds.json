@@ -1,7 +1,7 @@
 {
-	"background": [
+	"background": [		
 		{
-			"name": "Baldur's Gate Acolyte",
+			"name": "Acólito de Puerta de Baldur",
 			"source": "BGDIA-ES",
 			"page": 202,
 			"additionalSources": [
@@ -10,27 +10,260 @@
 					"page": 127
 				}
 			],
-			"_copy": {
-				"name": "Acolyte",
-				"source": "PHB-ES",
-				"_mod": {
-					"entries": {
-						"mode": "insertArr",
-						"index": 2,
-						"items": {
-							"name": "Baldur's Gate Feature: Religious Community",
-							"type": "entries",
-							"entries": [
-								"{@note The effects of a Baldur's Gate feature can be used only while the character is in Baldur's Gate—though, at the DM's discretion, they might have applicable effects in situations similar to those in Baldur's Gate.}",
-								"You're tightly connected with the religious community of Baldur's Gate. You know if a deity has a following in the city and any places that faith openly congregates and the neighborhoods those faithful typically inhabit. While this isn't remarkable for most of the city's larger faiths, keeping track of the hundreds of religions newcomers bring with them is no mean feat."
-							],
-							"data": {
-								"isFeature": true
-							}
-						}
-					}
+			"skillProficiencies": [
+				{
+					"insight": true,
+					"religion": true
 				}
-			},
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 2
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"item": "símbolo sagrado|PHB-ES",
+							"displayName": "símbolo sagrado (un regalo de cuando fuiste ordenado sacerdote)"
+						},
+						{
+							"special": "varas de incienso",
+							"quantity": 5
+						},
+						{
+							"special": "vestiduras"
+						},
+						"ropas comunes|PHB-ES",
+						{
+							"item": "bolsa|PHB-ES",
+							"containsValue": 1500
+						}
+					]
+				},
+				{
+					"a": [
+						{
+							"item": "libro|PHB-ES",
+							"displayName": "devocionario"
+						}
+					],
+					"b": [
+						{
+							"special": "rueda de oraciones"
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Competencias en habilidades:",
+							"entry": "{@skill Perspicacia|PHB-ES}, {@skill Religión|PHB-ES}"
+						},
+						{
+							"type": "item",
+							"name": "Idiomas:",
+							"entry": "Dos de tu elección"
+						},
+						{
+							"type": "item",
+							"name": "Equipo:",
+							"entry": "{@item Símbolo sagrado|PHB-ES} (un regalo de cuando fuiste ordenado sacerdote), {@item Libro|PHB-ES|devocionario} o rueda de oraciones, 5 varas de incienso, vestiduras, muda de {@item Ropas comunes|PHB-ES|ropas comunes} y una {@item Bolsa|PHB-ES|bolsa} con 15 po"
+						}
+					]
+				},
+				{
+					"name": "Rasgo: Refugio del Fiel",
+					"type": "entries",
+					"entries": [
+						"Como acólito de tu dios, puedes llevar a cabo sus ceremonias y mereces el respeto de aquellos que comparten tu fe. Puedes esperar que tanto tus compañeros de aventuras como tú recibáis sanación y cuidados sin coste alguno en templos, santuarios u otros lugares consagrados a tu fe, aunque debes aportar los componentes materiales necesarios para los conjuros que os lancen. Los que comparten tu religión te mantendrán (pero solo a ti) con un nivel de vida modesto.",
+						"También podrías poseer lazos con un templo en particular de los dedicados a tu deidad o panteón. Si es el caso, allí tendrás tu residencia. Este podría ser el templo en que solías oficiar, si es que aún mantienes una relación amigable con sus fieles, o el lugar en el que encontraste un nuevo hogar. Cuando estés cerca de este templo podrás pedir ayuda a sus sacerdotes, siempre y cuando el favor que solicites no sea peligroso y sigas estando bien considerado por ellos."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"name": "Rasgo de Puerta de Baldur: Comunidad Religiosa",
+					"type": "entries",
+					"entries": [
+						"{@note Los efectos de un rasgo de Puerta de Baldur solo pueden usarse mientras el personaje esté en dicha ciudad aunque, a discreción del DM, sus efectos podrían aplicarse también en situaciones parecidas a las de la referida metrópoli.}",
+						"Estás estrechamente ligado a la comunidad religiosa de Puerta de Baldur. Sabes si una deidad tiene seguidores en la ciudad y conoces los lugares donde una fe se congrega abiertamente, así como los vecindarios donde residen habitualmente sus fieles. Aunque esto no es algo destacable cuando se refiere a las religiones mayoritarias de la ciudad, hacer un seguimiento de los cientos de religiones que traen los recién llegados no es precisamente trivial."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"name": "Características recomendadas",
+					"type": "entries",
+					"entries": [
+						"Los acólitos han sido moldeados por sus experiencias en templos y otras comunidades religiosas. Su estudio de la historia y los mandatos de su fe, así como su relación con templos, santuarios y jerarquías, afectan a sus costumbres e ideales. Sus defectos podrían ser una hipocresía oculta o una idea herética. Quizá incluso un ideal o vínculo llevado al extremo.",
+						{
+							"type": "table",
+							"colLabels": [
+								"d8",
+								"Rasgo de personalidad"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"Idolatro a cierto héroe de mi fe, por lo que siempre pongo sus hazañas como ejemplo."
+								],
+								[
+									"2",
+									"Soy capaz de hallar un punto de encuentro incluso entre los enemigos más acérrimos, empatizando con ellos y trabajando para alcanzar la paz."
+								],
+								[
+									"3",
+									"Veo presagios en cada suceso o acción. Los dioses intentan hablarnos, simplemente nos falta escuchar."
+								],
+								[
+									"4",
+									"Nada puede apagar mi actitud optimista."
+								],
+								[
+									"5",
+									"Cito texto sagrados y proverbios, a veces erróneamente, en prácticamente cada situación."
+								],
+								[
+									"6",
+									"Soy tolerante (o intolerante) a otras fes y respeto (o condeno) su adoración a otros dioses."
+								],
+								[
+									"7",
+									"He disfrutado la comida, bebida y lujos de la alta sociedad típicos de la elite de mi templo. La vida sin comodidades me irrita."
+								],
+								[
+									"8",
+									"Llevo tanto tiempo en el templo que tengo muy poca experiencia tratando con quienes no pertenecen a él."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"Tradición. Las tradiciones ancestrales de adoración y sacrificio deben ser preservadas y mantenidas (Legal)."
+								],
+								[
+									"2",
+									"Caridad. Siempre trato de ayudar a los que lo necesitan, sin importar lo que pueda costarme (Bueno)."
+								],
+								[
+									"3",
+									"Cambio. Debemos impulsar los cambios que los dioses, incesantemente, están intentando traer al mundo (Caótico)."
+								],
+								[
+									"4",
+									"Poder. Confío en, algún día, alcanzar la cima de la jerarquía religiosa de mi fe (Legal)."
+								],
+								[
+									"5",
+									"Fe. Confío en que mi dios guiará mis actos. Tengo fe en que, si trabajo duro, las cosas me irán bien (Legal)."
+								],
+								[
+									"6",
+									"Aspiración. Intento mostrarme digno del favor de mi dios al comparar mis acciones con sus enseñanzas (Cualquiera)."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Vínculo"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"Moriría por recuperar una antigua reliquia de mi fe, que se perdió hace mucho."
+								],
+								[
+									"2",
+									"Algún día me vengare de la corrupta jerarquía del templo, que me marcó como hereje."
+								],
+								[
+									"3",
+									"Debo mi vida al sacerdote que me acogió cuando mis padres murieron."
+								],
+								[
+									"4",
+									"Todo lo que hago es por la gente humilde."
+								],
+								[
+									"5",
+									"Haría lo que fuera por proteger el tempo en el que serví."
+								],
+								[
+									"6",
+									"Busco preservar un texto sagrado que mis enemigos consideran herético y quieren destruir."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Defecto"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"Soy exigente con los demás, pero todavía más conmigo mismo."
+								],
+								[
+									"2",
+									"Confío demasiado en los miembros poderosos de la jerarquía de mi templo."
+								],
+								[
+									"3",
+									"A veces mi piedad me lleva a confiar ciegamente en aquellos que comparten mi fe."
+								],
+								[
+									"4",
+									"Soy de pensamiento inflexible."
+								],
+								[
+									"5",
+									"Sospecho de los extraños y siempre espero lo peor de ellos."
+								],
+								[
+									"6",
+									"En cuanto elijo un objetivo, me obsesiono tanto con él que ignoro el resto de los aspectos de mi vida."
+								]
+							]
+						}
+					]
+				}
+			],
 			"fluff": {
 				"entries": [
 					{
@@ -39,7 +272,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"It's said that every faith in the world has a believer in Baldur's Gate. Not only are most established faiths tolerated—even if some of them, including most of the openly evil faiths, are relegated to the Outer City's Twin Songs neighborhood—but new ones arrive constantly, carried by travelers and proselytizers from far-flung lands. A character with this background might aspire to greater things, not for themselves, but for their faith."
+									"Se dice que todos los credos del mundo tienen algún creyente en Puerta de Baldur. No solo se toleran la mayoría de religiones establecidas (aunque se releguen al barrio de Canciones Gemelas de la Ciudad Exterior, como ocurre con la mayoría de las religiones abiertamente malvadas), sino que constantemente llegan otras nuevas, traídas por viajeros y proselitistas de tierras lejanas. Un personaje con este trasfondo podría aspirar a cosas grandes, no para sí mismo, sino para su fe."
 								]
 							}
 						]
