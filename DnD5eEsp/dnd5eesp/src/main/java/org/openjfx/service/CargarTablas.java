@@ -13,9 +13,11 @@ import org.openjfx.AppProperties;
 import org.openjfx.repositories.ImportTableRepository;
 import org.openjfx.repositories.SourcesRepository;
 import org.openjfx.repositories.TypeTableARepository;
+import org.openjfx.repositories.TypeTableCRepository;
 import org.openjfx.repositories.model.ImportTableModel;
 import org.openjfx.repositories.model.SourcesModel;
 import org.openjfx.repositories.model.TypeTableAModel;
+import org.openjfx.repositories.model.TypeTableCModel;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -84,7 +86,7 @@ public class CargarTablas {
                         JsonObject datoFluff = listaDatosFluff.get(i).getAsJsonObject();
                         String sourceDocFluff = datoFluff.get("source").getAsString();
                         String textDocFluff = datoFluff.get("name").getAsString();
-                        fluffMap.put(textDocFluff+"|"+sourceDocFluff, datoFluff);
+                        fluffMap.put(importTable.getTableId()+"|"+textDocFluff+"|"+sourceDocFluff, datoFluff);
                     } 
                 } catch (FileNotFoundException e) {
                     System.out.println("Documento Fluff "+importTable.getFluffDocument()+" no encontrado");
@@ -102,12 +104,12 @@ public class CargarTablas {
                     for (int i = 0; i < listaDatos.size(); i++) {
                         JsonObject dato = listaDatos.get(i).getAsJsonObject();
                         String source = dato.get("source").getAsString();
-                        String text = dato.get("name").getAsString();
-                        if(sourcesMap.containsKey(source)) {
+                        if(sourcesMap.containsKey(source) && dato.has("name")) {
+                            String text = dato.get("name").getAsString();
                             String sourceEsp = sourcesMap.get(source).getSourceEsp();
                             String textEsp = "";
                             //Guardamos en el map la clave para ver si sobran registros luego en la base de datos
-                            String keyDocument = text+"|"+source;
+                            String keyDocument = importTable.getTableId()+"|"+text+"|"+source;
                             foundMap.put(keyDocument, keyDocument);
                             //Busca en la tabla si ya esta esta el registro del documento
                             List<TypeTableAModel> busqueda = TypeTableARepository.busqueda(importTable.getTableId(), source, "Text", text);
@@ -136,12 +138,12 @@ public class CargarTablas {
                         JsonObject dato = listaDatos.get(i).getAsJsonObject();
                         JsonObject datoHeredado = dato.getAsJsonObject("inherits");
                         String source = datoHeredado.get("source").getAsString();
-                        String text = dato.get("name").getAsString();
-                        if(sourcesMap.containsKey(source)) {
+                        if(sourcesMap.containsKey(source) && dato.has("name")) {
+                            String text = dato.get("name").getAsString();
                             String sourceEsp = sourcesMap.get(source).getSourceEsp();
                             String textEsp = "";
                             //Guardamos en el map la clave para ver si sobran registros luego en la base de datos
-                            String keyDocument = text+"|"+source;
+                            String keyDocument = importTable.getTableId()+"|"+text+"|"+source;
                             foundMap.put(keyDocument, keyDocument);
                             //Busca en la tabla si ya esta esta el registro del documento
                             List<TypeTableAModel> busqueda = TypeTableARepository.busqueda(importTable.getTableId(), source, "Text", text);
@@ -158,7 +160,49 @@ public class CargarTablas {
                 } catch (FileNotFoundException e) {
                     System.out.println("Documento original no encontrado");
                 }
-            }
+            } else if(importTable.getTypeTable().equals("C")) {
+                try {
+                    BufferedReader bufferedReader = new BufferedReader(new FileReader(rutaDocOriginal));
+                    Gson gson = new Gson();
+                    JsonObject json = gson.fromJson(bufferedReader, JsonObject.class);
+                    JsonArray listaDatos = json.get(importTable.getFieldName()).getAsJsonArray();
+                    //Recorre la lista original y mira si es uno de los sources a traducir
+                    for (int i = 0; i < listaDatos.size(); i++) {
+                        JsonObject dato = listaDatos.get(i).getAsJsonObject();
+                        String source = dato.get("source").getAsString();
+                        String raceSource = dato.get("raceSource").getAsString();
+                        String raceName = dato.get("raceName").getAsString();
+                        if(sourcesMap.containsKey(source) && dato.has("name")) {
+                            String text = dato.get("name").getAsString();
+                            String sourceEsp = sourcesMap.get(source).getSourceEsp();
+                            String textEsp = "";
+                            String raceSourceEsp = sourcesMap.get(raceSource).getSourceEsp();
+                            String raceNameEsp = "";
+                            //Guardamos en el map la clave para ver si sobran registros luego en la base de datos
+                            String keyDocument = importTable.getTableId()+"|"+text+"|"+source+"|"+raceSource+"|"+raceName;
+                            foundMap.put(keyDocument, keyDocument);
+                            //Busca en la tabla si ya esta esta el registro del documento
+                            List<TypeTableCModel> busqueda = TypeTableCRepository.busqueda(importTable.getTableId(), source, "Text", text, raceSource, raceName);
+                            if(busqueda.size()>0) {
+                                //Carga la variable de traducción
+                                textEsp = busqueda.get(0).getTextEsp();
+                            } else {
+                                //Como aún no existe se añade a la tabla de destino
+                                TypeTableCRepository.alta(importTable.getTableId(), new TypeTableCModel(source, text, raceSource, raceName, ""));
+                            }
+                            //Buscamos la traducción de la raza a la que pertenece
+                            List<TypeTableAModel> busquedaRace = TypeTableARepository.busqueda("Race", source, "Text", text);
+                            if(busquedaRace.size()>0) {
+                                //Carga la variable de traducción
+                                raceNameEsp = busquedaRace.get(0).getTextEsp();
+                            }
+                            jsonEsp = buscarActDocC(jsonEsp, importTable, listaDatosEsp, fluffMap, dato, source, sourceEsp, text, textEsp, raceSource, raceSourceEsp, raceName , raceNameEsp);
+                        }
+                    }
+                } catch (FileNotFoundException e) {
+                    System.out.println("Documento original no encontrado");
+                }
+            } 
             //Comprobamos si se ha añadido algo al original
             if(!jsonEspOriginal.equals(jsonEsp)) {
                 //Actualiza el documento
@@ -172,11 +216,21 @@ public class CargarTablas {
         }
 
         for (ImportTableModel importTable : listaTablas) {
-            List<TypeTableAModel> consultaTabla = TypeTableARepository.consulta(importTable.getTableId());
-            for (TypeTableAModel registro : consultaTabla) {
-                if(!foundMap.containsKey(registro.getText()+"|"+registro.getSource())) {
-                    TypeTableARepository.borrar(importTable.getTableId(), registro.getSource(), registro.getText());
-                    System.out.println("Registro '"+registro.getText()+"' de "+registro.getSource()+" borrado de la tabla "+importTable.getTableId());
+            if(importTable.getTypeTable().equals("A") || importTable.getTypeTable().equals("B")) {
+                List<TypeTableAModel> consultaTabla = TypeTableARepository.consulta(importTable.getTableId());
+                for (TypeTableAModel registro : consultaTabla) {
+                    if(!foundMap.containsKey(importTable.getTableId()+"|"+registro.getText()+"|"+registro.getSource())) {
+                        TypeTableARepository.borrar(importTable.getTableId(), registro.getSource(), registro.getText());
+                        System.out.println("Registro '"+registro.getText()+"' de "+registro.getSource()+" borrado de la tabla "+importTable.getTableId());
+                    }
+                }
+            } else if(importTable.getTypeTable().equals("C")) {
+                List<TypeTableCModel> consultaTabla = TypeTableCRepository.consulta(importTable.getTableId());
+                for (TypeTableCModel registro : consultaTabla) {
+                    if(!foundMap.containsKey(importTable.getTableId()+"|"+registro.getText()+"|"+registro.getSource()+"|"+registro.getRaceSource()+"|"+registro.getRaceName())) {
+                        TypeTableCRepository.borrar(importTable.getTableId(), registro.getSource(), registro.getText(), registro.getRaceSource(), registro.getRaceName());
+                        System.out.println("Registro '"+registro.getText()+"' de "+registro.getSource()+" borrado de la tabla "+importTable.getTableId());
+                    }
                 }
             }
         }
@@ -242,6 +296,132 @@ public class CargarTablas {
         return jsonEsp;
     }
 
+    private static JsonObject buscarActDocC(JsonObject jsonEsp, ImportTableModel importTable, JsonArray listaDatosEsp, 
+            HashMap<String,JsonObject> fluffMap, JsonObject dato, String source, String sourceEsp, String text, String textEsp,
+            String raceSource, String raceSourceEsp, String raceName , String raceNameEsp) throws IOException {
+        //Recorre la lista traducida para buscar si ya esta el registro añadido
+        boolean encontradoDocEsp = false;
+        for (int i = 0; i < listaDatosEsp.size(); i++) {
+            JsonObject datoEsp = listaDatosEsp.get(i).getAsJsonObject();
+            String sourceDocEsp = datoEsp.get("source").getAsString();
+            String textDocEsp = datoEsp.get("name").getAsString();
+            String raceSourceDocEsp = datoEsp.get("raceSource").getAsString();
+            String raceNameDocEsp = datoEsp.get("raceName").getAsString();
+            if((sourceDocEsp.equals(sourceEsp) &&
+                    (textDocEsp.equals(text) ||
+                    textDocEsp.equals(textEsp))) &&
+                    (raceSourceDocEsp.equals(raceSourceEsp) &&
+                    (raceNameDocEsp.equals(raceName) ||
+                    raceNameDocEsp.equals(raceNameEsp)))) {
+                encontradoDocEsp = true;
+                i = listaDatosEsp.size();
+            }
+        }
+        //Si no lo encuentra lo añade al documento
+        if(!encontradoDocEsp) {
+            dato.addProperty("source", sourceEsp);
+            dato.addProperty("raceSource", raceSourceEsp);
+            if(!raceNameEsp.isEmpty()) {
+                dato.addProperty("raceName", raceNameEsp);
+            }
+            //Comprobamos si esta tabla puede tener fluff
+            if(dato.has("hasFluff") || dato.has("hasFluffImages")){
+                dato.remove("hasFluff");
+                dato.remove("hasFluffImages");
+                
+                //Buscamos el identificador en la lista de fluff
+                String keyFluff = importTable.getTableId()+"|"+raceName+" ("+text+")"+"|"+source;
+                if(fluffMap.containsKey(keyFluff)) {
+                    JsonObject datoFluff = fluffMap.get(keyFluff);
+                    datoFluff.remove("name");
+                    datoFluff.remove("source");
+                    //Comprobamos si debe buscar el fluff de su raza
+                    if(datoFluff.has("_copy")) {
+                        String keyFluffRace = importTable.getTableId()+"|"+raceName+"|"+raceSource;
+                        if(fluffMap.containsKey(keyFluffRace)) {
+                            JsonObject datoFluffRace = fluffMap.get(keyFluffRace).deepCopy();
+                            datoFluffRace.remove("name");
+                            datoFluffRace.remove("source");
+                            if(datoFluff.get("_copy").getAsJsonObject().has("_mod")) {
+                                JsonObject datoFluffCopy = datoFluff.get("_copy").getAsJsonObject().get("_mod").getAsJsonObject();
+                                //Comprobamos primero entries
+                                if(datoFluffCopy.has("entries")) {
+                                    JsonObject datoFluffEntries = datoFluffCopy.get("entries").getAsJsonObject();
+                                    //Comprobamos si tiene el código para añadir más parrafos
+                                    if(datoFluffEntries.has("mode") && datoFluffEntries.has("items")) {
+                                        JsonObject datoFluffNuevoTexto = datoFluffEntries.get("items").getAsJsonObject();
+                                        JsonArray listaEntriesFinal = new JsonArray();
+                                        //Comprobamos el orden
+                                        if(datoFluffEntries.get("mode").getAsString().equals("prependArr")) {
+                                            listaEntriesFinal.add(datoFluffNuevoTexto);
+                                            //Comprobamos que el fluff de la raza tiene el tipo entries antes de añadir la parte nueva
+                                            if(datoFluffRace.has("entries")) {
+                                                JsonArray listaEntries = datoFluffRace.get("entries").getAsJsonArray();
+                                                listaEntriesFinal.addAll(listaEntries);
+                                            }
+                                        } else if(datoFluffEntries.get("mode").getAsString().equals("appendArr")) {
+                                            //Comprobamos que el fluff de la raza tiene el tipo entries antes de añadir la parte nueva
+                                            if(datoFluffRace.has("entries")) {
+                                                listaEntriesFinal = datoFluffRace.get("entries").getAsJsonArray();
+                                            }
+                                            listaEntriesFinal.add(datoFluffNuevoTexto);
+                                        } else {
+                                            listaEntriesFinal.add(datoFluffNuevoTexto);
+                                        }
+                                        //Guardamos la nueva lista de fluff
+                                        datoFluffRace.add("entries",listaEntriesFinal);
+                                    } else {
+                                        //Guardamos el fluff la subraza
+                                        datoFluffRace.add("entries", datoFluffEntries);
+                                    }
+                                }
+                                //Comprobamos si tiene imagenes
+                                if(datoFluffCopy.has("images")) {
+                                    JsonObject datoFluffImages = datoFluffCopy.get("images").getAsJsonObject();
+                                    //Comprobamos si tiene el código para añadir más imagenes
+                                    if(datoFluffImages.has("mode") && datoFluffImages.has("items")) {
+                                        JsonObject datoFluffNuevaImg = datoFluffImages.get("items").getAsJsonObject();
+                                        JsonArray listaEntriesFinal = new JsonArray();
+                                        //Comprobamos el orden
+                                        if(datoFluffImages.get("mode").getAsString().equals("prependArr")) {
+                                            listaEntriesFinal.add(datoFluffNuevaImg);
+                                            //Comprobamos que el fluff de la raza tiene el tipo entries antes de añadir la parte nueva
+                                            if(datoFluffRace.has("images")) {
+                                                JsonArray listaImages = datoFluffRace.get("images").getAsJsonArray();
+                                                listaEntriesFinal.addAll(listaImages);
+                                            }
+                                        } else if(datoFluffImages.get("mode").getAsString().equals("appendArr")) {
+                                            //Comprobamos que el fluff de la raza tiene el tipo entries antes de añadir la parte nueva
+                                            if(datoFluffRace.has("images")) {
+                                                listaEntriesFinal = datoFluffRace.get("images").getAsJsonArray();
+                                            }
+                                            listaEntriesFinal.add(datoFluffNuevaImg);
+                                        } else {
+                                            listaEntriesFinal.add(datoFluffNuevaImg);
+                                        }
+                                        //Guardamos la nueva lista de fluff
+                                        datoFluffRace.add("images",listaEntriesFinal);
+                                    } else {
+                                        //Guardamos el fluff de la subraza
+                                        datoFluffRace.add("images", datoFluffImages);
+                                    }
+                                }
+                            }
+                            datoFluff = datoFluffRace;
+                        }
+                    }
+                    //Se añade al fluff al dato que se llevará al json
+                    dato.add("fluff", datoFluff);
+                }
+            }
+            listaDatosEsp.add(dato);
+            jsonEsp.add(importTable.getFieldName(), listaDatosEsp);
+            System.out.println("Documento "+importTable.getJsonDocument()+" actualizado, registro: "
+                                +text+"|"+source);
+        }
+        return jsonEsp;
+    }
+
     private static JsonObject actualizarFluff(ImportTableModel importTable, HashMap<String,JsonObject> fluffMap, JsonObject dato, String source, String text) {
         //Comprobamos si tienes token
         if(dato.has("hasToken")) {
@@ -261,7 +441,7 @@ public class CargarTablas {
             dato.remove("hasFluffImages");
             
             //Buscamos el identificador en la lista de fluff
-            String keyFluff = text+"|"+source;
+            String keyFluff = importTable.getTableId()+"|"+text+"|"+source;
             if(fluffMap.containsKey(keyFluff)) {
                 JsonObject datoFluff = fluffMap.get(keyFluff);
                 datoFluff.remove("name");
