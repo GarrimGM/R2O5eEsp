@@ -87,7 +87,14 @@ public class CargarTablas {
                         String sourceDocFluff = datoFluff.get("source").getAsString();
                         String textDocFluff = datoFluff.get("name").getAsString();
                         fluffMap.put(importTable.getTableId()+"|"+textDocFluff+"|"+sourceDocFluff, datoFluff);
-                    } 
+                    }
+
+                    if(importTable.getTableId().equals("Race") || importTable.getTableId().equals("Subrace")) {
+                        JsonObject raceFluffMetaUncommon = json.get("raceFluffMeta").getAsJsonObject().get("uncommon").getAsJsonObject();
+                        fluffMap.put("raceFluffMeta|uncommon", raceFluffMetaUncommon);
+                        JsonObject raceFluffMetaMonstrous = json.get("raceFluffMeta").getAsJsonObject().get("monstrous").getAsJsonObject();
+                        fluffMap.put("raceFluffMeta|monstrous", raceFluffMetaMonstrous);
+                    }
                 } catch (FileNotFoundException e) {
                     System.out.println("Documento Fluff "+importTable.getFluffDocument()+" no encontrado");
                 }
@@ -410,6 +417,30 @@ public class CargarTablas {
                             datoFluff = datoFluffRace;
                         }
                     }
+                    //Comprueba si la raza tiene la etiqueta especial de uncommon
+                    if(datoFluff.has("uncommon") && fluffMap.containsKey("raceFluffMeta|uncommon")) {
+                        datoFluff.remove("uncommon");
+                        JsonObject datoRaceFluffMeta = fluffMap.get("raceFluffMeta|uncommon").deepCopy();
+                        //Comprueba si ya tiene una etiqueta entries o si tienes que añadirla
+                        JsonArray listaEntries = new JsonArray();
+                        if(datoFluff.has("entries")) {
+                            listaEntries = datoFluff.get("entries").getAsJsonArray();
+                        }
+                        listaEntries.add(datoRaceFluffMeta);
+                        datoFluff.add("entries", listaEntries);
+                    }
+                    //Comprueba si la raza tiene la etiqueta especial de monstrous
+                    if(datoFluff.has("monstrous") && fluffMap.containsKey("raceFluffMeta|monstrous")) {
+                        datoFluff.remove("monstrous");
+                        JsonObject datoRaceFluffMeta = fluffMap.get("raceFluffMeta|monstrous").deepCopy();
+                        //Comprueba si ya tiene una etiqueta entries o si tienes que añadirla
+                        JsonArray listaEntries = new JsonArray();
+                        if(datoFluff.has("entries")) {
+                            listaEntries = datoFluff.get("entries").getAsJsonArray();
+                        }
+                        listaEntries.add(datoRaceFluffMeta);
+                        datoFluff.add("entries", listaEntries);
+                    }
                     //Se añade al fluff al dato que se llevará al json
                     dato.add("fluff", datoFluff);
                 }
@@ -446,6 +477,30 @@ public class CargarTablas {
                 JsonObject datoFluff = fluffMap.get(keyFluff);
                 datoFluff.remove("name");
                 datoFluff.remove("source");
+                //Comprueba si la raza tiene la etiqueta especial de uncommon
+                if(datoFluff.has("uncommon") && fluffMap.containsKey("raceFluffMeta|uncommon")) {
+                    datoFluff.remove("uncommon");
+                    JsonObject datoRaceFluffMeta = fluffMap.get("raceFluffMeta|uncommon").deepCopy();
+                    //Comprueba si ya tiene una etiqueta entries o si tienes que añadirla
+                    JsonArray listaEntries = new JsonArray();
+                    if(datoFluff.has("entries")) {
+                        listaEntries = datoFluff.get("entries").getAsJsonArray();
+                    }
+                    listaEntries.add(datoRaceFluffMeta);
+                    datoFluff.add("entries", listaEntries);
+                }
+                //Comprueba si la raza tiene la etiqueta especial de monstrous
+                if(datoFluff.has("monstrous") && fluffMap.containsKey("raceFluffMeta|monstrous")) {
+                    datoFluff.remove("monstrous");
+                    JsonObject datoRaceFluffMeta = fluffMap.get("raceFluffMeta|monstrous").deepCopy();
+                    //Comprueba si ya tiene una etiqueta entries o si tienes que añadirla
+                    JsonArray listaEntries = new JsonArray();
+                    if(datoFluff.has("entries")) {
+                        listaEntries = datoFluff.get("entries").getAsJsonArray();
+                    }
+                    listaEntries.add(datoRaceFluffMeta);
+                    datoFluff.add("entries", listaEntries);
+                }
                 //Se añade al fluff al dato que se llevará al json
                 dato.add("fluff", datoFluff);
             }
