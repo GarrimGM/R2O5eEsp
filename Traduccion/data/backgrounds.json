@@ -5468,9 +5468,9 @@
 			}
 		},
 		{
-			"name": "Smuggler",
+			"name": "Contrabandista",
 			"source": "GoS-ES",
-			"page": 34,
+			"page": 31,
 			"skillProficiencies": [
 				{
 					"athletics": true,
@@ -5486,20 +5486,20 @@
 				{
 					"a": [
 						{
-							"special": "fancy leather vest"
+							"special": "chaleco elegante"
 						}
 					],
 					"b": [
 						{
-							"special": "pair of leather boots"
+							"special": "par de botas"
 						}
 					]
 				},
 				{
 					"_": [
-						"common clothes|phb",
+						"ropas comunes|PHB-ES",
 						{
-							"item": "pouch|phb",
+							"item": "bolsa|PHB-ES",
 							"containsValue": 1500
 						}
 					]
@@ -5512,26 +5512,26 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies:",
-							"entry": "{@skill Athletics}, {@skill Deception}"
+							"name": "Competencias en habilidades:",
+							"entry": "{@skill Atletismo|PHB-ES} y {@skill Engaño|PHB-ES}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies:",
-							"entry": "{@filter Vehicles (water)|items|source=phb;dmg|miscellaneous=mundane|type=vehicle (water)}"
+							"name": "Competencias con herramientas:",
+							"entry": "{@filter Vehículos (acuáticos)|items|source=PHB-ES;DMG-ES|miscellaneous=mundane|type=vehicle (water)}"
 						},
 						{
 							"type": "item",
-							"name": "Equipment:",
-							"entry": "A fancy leather vest or a pair of leather boots, a set of {@item common clothes|phb}, and a leather {@item pouch|phb} with 15 gp"
+							"name": "Equipo:",
+							"entry": "Un elegante chaleco o un par de botas, ambos de cuero; una muda de {@item ropas comunes|PHB-ES} y una {@item bolsa|PHB-ES} de cuero con 15 po"
 						}
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Feature: Down Low",
+					"name": "Rasgo: Bajos Fondos",
 					"entries": [
-						"You are acquainted with a network of smugglers who are willing to help you out of tight situations. While in a particular town, city, or other similarly sized community (DM's discretion), you and your companions can stay for free in safe houses. Safe houses provide a poor lifestyle. While staying at a safe house, you can choose to keep your presence (and that of your companions) a secret."
+						"Tienes contactos con una red de contrabandistas dispuestos a ayudarte en situaciones difíciles. Mientras estés en un pueblo, ciudad u otra comunidad de tamaño similar (a discreción de DM), tú y tus acompañantes podréis alojaros gratis en escondites seguros de la red. Estos lugares ofrecen un estilo de vida pobre. Mientras permanezcas en uno, tendrás la opción de mantener en secreto tu presencia (y la de tus compañeros)."
 					],
 					"data": {
 						"isFeature": true
@@ -5539,14 +5539,14 @@
 				},
 				{
 					"type": "entries",
-					"name": "Claim to Fame",
+					"name": "Recurrir a la fama",
 					"entries": [
-						"Every smuggler has that one tale that sets them apart from common criminals. By wits, sailing skill, or a silver tongue, you lived to tell the story—and you tell it often. You can roll on the following table to determine your claim or choose one that best fits your character.",
+						"Todos los contrabandistas poseen una historia personal que los distingue de los delincuentes comunes. Ya fuera por tu ingenio, tu pericia como marino o tu labia sin igual, sobreviviste para contar la hazaña, y lo haces a menudo. Puedes tirar en la siguiente tabla, que te ayudará a establecer tu relato, o bien elegir el que mejor se adapte a tu personaje.",
 						{
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Accomplishment"
+								"Logro"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -5555,27 +5555,27 @@
 							"rows": [
 								[
 									"1",
-									"Spirit of the Whale. You smuggled stolen dwarven spirits in the body of a dead whale being pulled behind a fishing boat. When you delivered the goods, the corpse suddenly exploded, sending whale meat and whiskey bottles for half a mile."
+									"La ballena espirituosa. Hacías contrabando de licores enanos robados; los transportabas dentro del cuerpo de una ballena muerta que arrastrabas tras tu bote de pesca. Al entregar la mercancía, el cadáver explotó de repente, lanzando carne de ballena y botellas de whisky a media milla de distancia."
 								],
 								[
 									"2",
-									"Cart and Sword. You drove a cart filled with stolen art through the middle of a battlefield while singing sea shanties to confuse the combatants."
+									"Carro entre espadazos. Condujiste un carro lleno de obras de arte robadas a través de un campo de batalla mientras entonabas salomas para confundir a los combatientes."
 								],
 								[
 									"3",
-									"The Recruit. You enlisted in another nation's navy for the purpose of smuggling stolen jewels to a distant port. You attained a minor rank before disappearing from the navy and making your way here."
+									"El recluta. Te alistaste en la marina de otra nación con el propósito de llevar de contrabando joyas robadas hasta un puerto lejano. Alcanzaste un rango menor antes de desaparecer de la flota y llegar hasta aquí."
 								],
 								[
 									"4",
-									"River of Shadows. Your riverboat accidentally slipped through the veil into the Shadowfell for several hours. While you were there, you sold some stolen dragonborn artifacts before returning to this plane and paddling home."
+									"Río de sombras. Tu barcaza atravesó por accidente el velo hacia el Shadowfell durante varias horas. Mientras estuviste allí, vendiste algunos artefactos dracónidos robados antes de regresar a este plano y volver remando a casa."
 								],
 								[
 									"5",
-									"Gold-Hearted. You agreed to transport a family escaping a war. The baby began to cry at a checkpoint, and you gave the guards all your gold to let you pass. The family never found out about this gesture."
+									"Corazón de oro. Accediste a llevar a una familia que escapaba de la guerra. El bebé comenzó a llorar en un puesto de control, de modo que tuviste que entregar a los guardias todo tu oro para que os dejaran pasar. La familia jamás tuvo conocimiento de ese gesto."
 								],
 								[
 									"6",
-									"Playing Both Sides. You once smuggled crates of crossbow bolts and bundles of arrows, each destined for an opposing side in a regional war, at the same time. The buyers arrived within moments of each other but did not discover your trickery."
+									"Jugar a dos bandas. En una ocasión pasaste de contrabando unas cajas de virotes de ballesta y haces de flechas destinadas a bandos opuestos de una guerra regional; y lo hiciste al mismo tiempo. Los compradores llegaron con unos instantes de diferencia, pero no descubrieron tu ardid."
 								]
 							]
 						}
@@ -5583,15 +5583,15 @@
 				},
 				{
 					"type": "entries",
-					"name": "Suggested Characteristics",
+					"name": "Características recomendadas",
 					"entries": [
-						"In general, smugglers value survival, and then profit, above other things. One could be a part of a larger organization, or might run a small smuggling vessel of their own. Smugglers live the lies they have told, and they have a natural ability to recall all the falsehoods and half-truths they have ever spouted.",
+						"En general, los contrabandistas valoran la supervivencia y luego los beneficios, por encima de todo. Los hay que forman parte de una organización mayor o que tienen un pequeño barco propio para el contrabando. Estos malhechores se creen las mentiras que cuentan y poseen una habilidad natural para recordar todas las falsedades y medias verdades que alguna vez han salido de sus bocas.",
 						{
 							"type": "table",
-							"caption": "Smuggler Personality Traits",
+							"caption": "Rasgos de personalidad del contrabandista",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"Rasgo de personalidad"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -5600,41 +5600,41 @@
 							"rows": [
 								[
 									"1",
-									"I love being on the water but hate fishing."
+									"Me encanta estar en el agua, pero odio pescar."
 								],
 								[
 									"2",
-									"I think of everything in terms of monetary value."
+									"Contemplo todos los asuntos en términos de valor monetario."
 								],
 								[
 									"3",
-									"I never stop smiling."
+									"Nunca dejo de sonreír."
 								],
 								[
 									"4",
-									"Nothing rattles me; I have a lie for every occasion."
+									"Nada me coge por sorpresa; tengo una mentira para cada ocasión."
 								],
 								[
 									"5",
-									"I love gold but won't cheat a friend."
+									"Me encanta el oro, pero no engañaría a un amigo."
 								],
 								[
 									"6",
-									"I enjoy doing things others believe to be impossible."
+									"Disfruto haciendo aquello que otros creen imposible."
 								],
 								[
 									"7",
-									"I become wistful when I see the sun rise over the ocean."
+									"Me invade la nostalgia cuando veo salir el sol sobre el océano."
 								],
 								[
 									"8",
-									"I am no common criminal; I am a mastermind."
+									"No soy un delincuente común, sino un cerebro criminal."
 								]
 							]
 						},
 						{
 							"type": "table",
-							"caption": "Smuggler Ideals",
+							"caption": "Ideales del contrabandista",
 							"colLabels": [
 								"d6",
 								"Ideal"
@@ -5646,36 +5646,36 @@
 							"rows": [
 								[
 									"1",
-									"{@b Wealth} Heaps of coins in a secure vault is all I dream of. (Any)"
+									"{@b Riqueza.} Solo sueño con tener un montón de monedas dentro de una cámara de seguridad (Cualquiera)"
 								],
 								[
 									"2",
-									"{@b Smuggler's Code} I uphold the unwritten rules of the smugglers, who do not cheat one another or directly harm innocents. (Lawful)"
+									"{@b Código del contrabandista.} Sigo las reglas no escritas de los contrabandistas: no engañarnos entre nosotros ni hacer daño directamente a personas inocentes (Legal)"
 								],
 								[
 									"3",
-									"{@b All for a Coin} I'll do nearly anything if it means I turn a profit. (Evil)"
+									"{@b Todo por la pasta.} Haré casi cualquier cosa si ello significa conseguir beneficios (Malvado)"
 								],
 								[
 									"4",
-									"{@b Peace and Prosperity} I smuggle only to achieve a greater goal that benefits my community. (Good)"
+									"{@b Paz y prosperidad.} Me dedico al contrabando solo para alcanzar un fin mayor que beneficie a mi comunidad (Bueno)"
 								],
 								[
 									"5",
-									"{@b People} For all my many lies, I place a high value on friendship. (Any)"
+									"{@b Las personas.} A pesar de todas mis mentiras, valoro mucho la amistad (Cualquiera)"
 								],
 								[
 									"6",
-									"{@b Daring} I am most happy when risking everything. (Any)"
+									"{@b Temerario.} Soy de lo más feliz cuando pongo toda la carne en el asador (Cualquiera)"
 								]
 							]
 						},
 						{
 							"type": "table",
-							"caption": "Smuggler Bonds",
+							"caption": "Vínculos del contrabandista",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"Vínculos"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -5684,36 +5684,36 @@
 							"rows": [
 								[
 									"1",
-									"My vessel was stolen from me, and I burn with the desire to recover it."
+									"Me robaron mi nave y ardo en deseos de recuperarla."
 								],
 								[
 									"2",
-									"I intend to become the leader of the network of smugglers that I belong to."
+									"Tengo la intención de convertirme en el líder de la red de contrabandistas a la que pertenezco."
 								],
 								[
 									"3",
-									"I owe a debt that cannot be repaid in gold."
+									"Tengo una deuda que no se puede pagar en oro."
 								],
 								[
 									"4",
-									"After one last job, I will retire from the business."
+									"Tras un último trabajo, me retiraré del negocio."
 								],
 								[
 									"5",
-									"I was tricked by a fellow smuggler who stole something precious from me. I will find that thief."
+									"Un contrabandista me engatusó y me robó algo muy preciado. Encontraré a ese ladrón."
 								],
 								[
 									"6",
-									"I give most of my profits to a charitable cause, and I don't like to brag about it."
+									"Entrego la mayor parte de mis ganancias a una causa benéfica, pero no me gusta alardear de ello."
 								]
 							]
 						},
 						{
 							"type": "table",
-							"caption": "Smuggler Flaws",
+							"caption": "Defectos del contrabandista",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"Defecto"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -5722,27 +5722,27 @@
 							"rows": [
 								[
 									"1",
-									"Lying is reflexive, and I sometimes engage in it without realizing."
+									"Miento como acto reflejo; de hecho, a veces acabo haciéndolo sin darme cuenta."
 								],
 								[
 									"2",
-									"I tend to assess my relationships in terms of profit and loss."
+									"Tiendo a valorar mis relaciones sociales en términos de pérdidas y ganancias."
 								],
 								[
 									"3",
-									"I believe everyone has a price and am cynical toward those who present themselves as virtuous."
+									"Creo que todo el mundo tiene un precio y me muestro escéptico con quienes dicen ser virtuosos."
 								],
 								[
 									"4",
-									"I struggle to trust the words of others."
+									"Me cuesta confiar en la palabra de los demás."
 								],
 								[
 									"5",
-									"Few people know the real me."
+									"Pocas personas conocen mi verdadero yo."
 								],
 								[
 									"6",
-									"Though I act charming, I feel nothing for others and don't know what friendship is."
+									"Aunque parezco encantador, no siento nada por los demás y no sé lo que es la amistad."
 								]
 							]
 						}
@@ -5757,7 +5757,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"On a rickety barge, you carried a hundred longswords in fish barrels right past the dock master's oblivious lackeys. You have paddled a riverboat filled with stolen elven wine under the gaze of the moon and sold it for twice its value in the morning. In your more charitable times, you have transported innocents out of war zones or helped guide herd animals to safety on the banks of a burning river."
+									"Usando una barcaza destartalada, pasaste cien espadas largas dentro de barriles de pescado ante las narices de los despistados lacayos del capataz del muelle. Has llevado a remo una batea cargada de vino elfo robado a la luz de la luna y lo has vendido por el doble de su valor a la mañana siguiente. En tu época más dadivosa, evacuaste a inocentes de zonas en guerra o ayudaste a llevar rebaños de animales a lugar seguro en las orillas de un río en llamas."
 								]
 							}
 						]
@@ -13120,7 +13120,7 @@
 			}
 		},
 		{
-			"name": "Anthropologist",
+			"name": "Antropólogo",
 			"source": "ToA-ES",
 			"page": 191,
 			"skillProficiencies": [
@@ -13138,17 +13138,17 @@
 				{
 					"_": [
 						{
-							"special": "leather-bound diary"
+							"special": "diario forrado en cuero"
 						},
-						"ink (1-ounce bottle)|phb",
-						"ink pen|phb",
-						"traveler's clothes|phb",
+						"tinta, botella de 1 onza|PHB-ES",
+						"pluma (para escribir)|PHB-ES",
+						"ropas de viaje|PHB-ES",
 						{
-							"item": "trinket|phb",
-							"displayName": "trinket of special significance"
+							"item": "bagatela|PHB-ES",
+							"displayName": "abalorio con un significado especial"
 						},
 						{
-							"item": "pouch|phb",
+							"item": "bolsa|PHB-ES",
 							"containsValue": 1000
 						}
 					]
@@ -13161,31 +13161,31 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies:",
-							"entry": "{@skill Insight}, {@skill Religion}"
+							"name": "Competencias en habilidades:",
+							"entry": "{@skill Perspicacia|PHB-ES} y {@skill Religión|PHB-ES}"
 						},
 						{
 							"type": "item",
-							"name": "Languages:",
-							"entry": "Two of your choice"
+							"name": "Idiomas:",
+							"entry": "Dos de tu elección"
 						},
 						{
 							"type": "item",
-							"name": "Equipment:",
-							"entry": "A leather-bound diary, a {@item Ink (1-ounce bottle)|phb|bottle of ink}, an {@item ink pen|phb}, a set of {@item traveler's clothes|phb}, one {@item trinket|phb} of special significance, and a {@item pouch|phb} containing 10 gp"
+							"name": "Equipo:",
+							"entry": "Un diario forrado en cuero, una {@item tinta, botella de 1 onza|PHB-ES|botella de tinta}, una {@item pluma (para escribir)|PHB-ES|pluma}, una muda de {@item ropas de viaje|PHB-ES}, un {@item bagatela|PHB-ES|abalorio} con un significado especial y una {@item bolsa|PHB-ES} con 10 po"
 						}
 					]
 				},
 				{
-					"name": "Cultural Chameleon",
+					"name": "Camaleón cultural",
 					"type": "entries",
 					"entries": [
-						"Before becoming an adventurer, you spent much of your adult life away from your homeland, living among people different from your kin. You came to understand these foreign cultures and the ways of their people, who eventually treated you as one of their own. One culture had more of an influence on you than any other, shaping your beliefs and customs Choose a race whose culture you've adopted, or roll on the Adopted Culture table.",
+						"Antes de convertirte en aventurero, pasaste gran parte de tu vida adulta lejos de tu tierra natal, viviendo entre personas de origen diferente al tuyo. Has llegado a entender esas culturas extranjeras y su forma de ser, y con el tiempo esas personas han llegado a tratarte como a uno más de entre los suyos. Una cultura ha tenido en ti más influencia que ninguna otra, de manera que ha moldeado tus creencias y costumbres. Elige una raza cuya cultura has adoptado o tira en la tabla \"cultura adoptada\".",
 						{
 							"type": "table",
 							"colLabels": [
 								"d8",
-								"Culture"
+								"Cultura"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -13198,11 +13198,11 @@
 								],
 								[
 									"2",
-									"Dwarf"
+									"Elfo"
 								],
 								[
 									"3",
-									"Elf"
+									"Enano"
 								],
 								[
 									"4",
@@ -13210,44 +13210,44 @@
 								],
 								[
 									"5",
-									"Halfling"
+									"Hombre lagarto"
 								],
 								[
 									"6",
-									"Human"
+									"Humano"
 								],
 								[
 									"7",
-									"Lizardfolk"
+									"Mediano"
 								],
 								[
 									"8",
-									"Orc"
+									"Orco"
 								]
 							]
 						}
 					]
 				},
 				{
-					"name": "Feature: Adept Linguist",
+					"name": "Rasgo: Lingüista Experto",
 					"type": "entries",
 					"entries": [
-						"You can communicate with humanoids who don't speak any language you know. You must observe the humanoids interacting with one another for at least 1 day, after which you learn a handful of important words, expressions, and gestures - enough to communicate on a rudimentary level."
+						"Puedes comunicarte con humanoides que no hablen ninguna lengua de las que conoces. Debes observarlos relacionándose entre ellos durante al menos 1 día, tras lo cual aprenderás un puñado de palabras, expresiones y gestos, suficientes para comunicarte con ellos a nivel elemental."
 					],
 					"data": {
 						"isFeature": true
 					}
 				},
 				{
-					"name": "Suggested Characteristics",
+					"name": "Características recomendadas",
 					"type": "entries",
 					"entries": [
-						"Anthropologists leave behind the societies into which they were born to discover what life is like in other parts of the world. They seek to see how other races and civilizations survive - or why they did not. Some anthropologists are driven by intellectual curiosity, while others want the fame and recognition that comes with being the first to discover a new people, a lost tribe, or the truth about an ancient empire's downfall.",
+						"Los antropólogos dejan atrás la sociedad en la que nacieron para descubrir cómo es la vida en otras partes del mundo. Tratan de establecer cómo sobreviven otras razas y civilizaciones... o por qué no lo consiguieron. Algunos antropólogos se mueven por curiosidad intelectual, mientras que otros buscan el reconocimiento y la fama que conlleva ser el primero en descubrir un nuevo pueblo, una tribu perdida o la verdad sobre la caída de un imperio antiguo.",
 						{
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Personality Trait"
+								"Rasgo de personalidad"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -13256,27 +13256,27 @@
 							"rows": [
 								[
 									"1",
-									"I prefer the company of those who aren't like me, including people of other races"
+									"Prefiero la compañía de los que no son como yo, incluyendo personas de otras razas."
 								],
 								[
 									"2",
-									"I'm a stickler when it comes to observing proper etiquette and local customs"
+									"Soy muy puntilloso cuando se trata de respetar la etiqueta y las costumbres locales."
 								],
 								[
 									"3",
-									"I would rather observe than meddle"
+									"Prefiero observar en lugar de entrometerme."
 								],
 								[
 									"4",
-									"By living among violent people, I have become desensitized to violence."
+									"Al vivir entre personas violentas, me he insensibilizado a la violencia."
 								],
 								[
 									"5",
-									"I would risk life and limb to discover a new culture or unravel the secrets of a dead one."
+									"Arriesgaría mi vida para descubrir otra cultura o desentrañar los secretos de una que haya desaparecido."
 								],
 								[
 									"6",
-									"When I arrive at a new settlement for the first time, I must learn all its customs."
+									"La primera vez que piso un nuevo asentamiento, tengo que aprender todas sus costumbres."
 								]
 							]
 						},
@@ -13293,27 +13293,27 @@
 							"rows": [
 								[
 									"1",
-									"Discovery. I want to be the first person to discover a lost culture. (Any)"
+									"Descubrimiento. Quiero ser el primero en descubrir una civilización perdida. (Cualquiera)"
 								],
 								[
 									"2",
-									"Distance. One must not interfere with the affairs of another culture - even one in need of aid. (Lawful)"
+									"Distancia. No se debe intervenir en los asuntos de otra cultura, ni siquiera aunque necesite ayuda. (Legal)"
 								],
 								[
 									"3",
-									"Knowledge. By understanding other races and cultures, we learn to understand ourselves. (Any)"
+									"Conocimiento. Al entender otras razas y culturas, aprendemos a entendernos a nosotros mismos. (Cualquiera)"
 								],
 								[
 									"4",
-									"Power. Common people crave strong leadership, and I do my utmost to provide it. (Lawful)"
+									"Poder. Las personas normales y corrientes anhelan un liderazgo fuerte, y yo hago lo máximo posible por proporcionárselo. (Legal)"
 								],
 								[
 									"5",
-									"Protection. I must do everything possible to save a society facing extinction. (Good)"
+									"Protección. Debo hacer todo lo posible para salvar a una sociedad que se enfrenta a la extinción. (Bueno)"
 								],
 								[
 									"6",
-									"Indifferent. Life is cruel. What's the point in saving people if they're going to die anyway? (Chaotic)"
+									"Indiferente. La vida es cruel. ¿De qué sirve salvar a la gente si van a morir de todas formas? (Caótico)"
 								]
 							]
 						},
@@ -13321,7 +13321,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"Vínculo"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -13330,27 +13330,27 @@
 							"rows": [
 								[
 									"1",
-									"My mentor gave me a journal filled with lore and wisdom. Losing it would devastate me."
+									"Mi mentor me dio un diario lleno de tradiciones y sabiduría. Perderlo me haría pedazos."
 								],
 								[
 									"2",
-									"Having lived among the people of a primeval tribe or clan, I long to return and see how they are faring."
+									"Tras haber vivido con personas de una tribu o clan primitivo, estoy deseando volver y ver qué tal les va."
 								],
 								[
 									"3",
-									"Years ago, tragedy struck the members of an isolated society I befriended, and I will honor them."
+									"Hace años, la tragedia sobrevino a los miembros de una sociedad aislada a los que apreciaba, y voy a honrarlos."
 								],
 								[
 									"4",
-									"I want to learn more about a particular humanoid culture that fascinates me."
+									"Quiero aprender más de una cultura humanoide en particular, que me fascina."
 								],
 								[
 									"5",
-									"I seek to avenge a clan, tribe, kingdom, or empire that was wiped out."
+									"Busco venganza por un clan, tribu, reino o imperio que fue aniquilado."
 								],
 								[
 									"6",
-									"I have a trinket that I believe is the key to finding a long-lost society."
+									"Tengo una baratija que creo que es la clave para encontrar una civilización perdida."
 								]
 							]
 						},
@@ -13358,7 +13358,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"Defecto"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -13367,27 +13367,27 @@
 							"rows": [
 								[
 									"1",
-									"Boats make me seasick."
+									"Me mareo en los barcos."
 								],
 								[
 									"2",
-									"I talk to myself, and I don't make friends easily."
+									"Hablo solo, y me cuesta hacer amigos."
 								],
 								[
 									"3",
-									"I believe that I'm intellectually superior to people from other cultures and have much to teach them."
+									"Creo que soy superior intelectualmente a personas de otras culturas y que tengo mucho que enseñarles."
 								],
 								[
 									"4",
-									"I've picked up some unpleasant habits living among goblins, lizardfolk, or orcs."
+									"He adquirido hábitos desagradables por vivir entre goblins, hombres lagarto u orcos."
 								],
 								[
 									"5",
-									"I complain about everything."
+									"Me quejo por todo."
 								],
 								[
 									"6",
-									"I wear a tribal mask and never take it off."
+									"Llevo una máscara tribal y nunca me la quito."
 								]
 							]
 						}
@@ -13402,7 +13402,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"You have always been fascinated by other cultures, from the most ancient and primeval lost lands to the most modern civilizations. By studying other cultures' customs, philosophies, laws, rituals, religious beliefs, languages, and art, you have learned how tribes, empires, and all forms of society in between craft their own destinies and doom. This knowledge came to you not only through books and scrolls, but also through firsthand observation—by visiting far-flung settlements and exploring local histories and customs."
+									"Siempre te han fascinado otras culturas, desde las tierras perdidas más antiguas y primitivas a las civilizaciones modernas. Al estudiar las costumbres, las ideologías, las leyes, los rituales y las creencias religiosas, los idiomas y el arte de otras culturas, has aprendido cómo las tribus, los imperios y todos los tipos de sociedad entre ambos extremos forman su propio destino y determinan su final. Has obtenido este conocimiento no solo de libros y pergaminos, sino también mediante la observación de primera mano, visitando asentamientos remotos y aprendiendo costumbres e historias locales."
 								]
 							}
 						]
@@ -13411,7 +13411,7 @@
 			}
 		},
 		{
-			"name": "Archaeologist",
+			"name": "Arqueólogo",
 			"source": "ToA-ES",
 			"page": 192,
 			"skillProficiencies": [
@@ -13439,20 +13439,20 @@
 				{
 					"_": [
 						{
-							"item": "map or scroll case|phb",
-							"displayName": "wooden case containing a map to a ruin or dungeon"
+							"item": "estuche para mapa o pergamino|PHB-ES",
+							"displayName": "funda de madera que contiene un mapa para llegar a una ruina o mazmorra"
 						},
-						"bullseye lantern|phb",
-						"miner's pick|phb",
-						"traveler's clothes|phb",
-						"shovel|phb",
-						"two-person tent|phb",
+						"linterna de ojo de buey|PHB-ES",
+						"pico de minero|PHB-ES",
+						"ropas de viaje|PHB-ES",
+						"pala|PHB-ES",
+						"tienda para dos personas|PHB-ES",
 						{
-							"item": "trinket|phb",
-							"displayName": "trinket recovered from a dig site"
+							"item": "bagatela|PHB-ES",
+							"displayName": "bagatela recogida en un yacimiento"
 						},
 						{
-							"item": "pouch|phb",
+							"item": "bolsa|PHB-ES",
 							"containsValue": 2500
 						}
 					]
@@ -13465,37 +13465,38 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies:",
-							"entry": "{@skill History}, {@skill Survival}"
+							"name": "Competencias en habilidades:",
+							"entry": "{@skill Historia|PHB-ES} y {@skill Supervivencia|PHB-ES}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies:",
-							"entry": "{@item Cartographer's tools|phb} or {@item navigator's tools|phb}"
+							"name": "Competencias con herramientas:",
+							"entry": "{@item Herramientas de cartógrafo|PHB-ES} o {@item herramientas de navegante|PHB-ES}"
 						},
 						{
 							"type": "item",
-							"name": "Languages:",
-							"entry": "One of your choice"
+							"name": "Idiomas:",
+							"entry": "Uno de tu elección"
 						},
 						{
 							"type": "item",
-							"name": "Equipment:",
-							"entry": "A {@item Map or Scroll Case|phb|wooden case} containing a map to a ruin or dungeon, a {@item bullseye lantern|phb}, a {@item miner's pick|phb}, a set of {@item traveler's clothes|phb}, a {@item shovel|phb}, a {@item two-person tent|phb}, a {@item trinket|phb|trinket} recovered from a dig site, and a {@item pouch|phb} containing 25 gp"
+							"name": "Equipo:",
+							"entry": "Una {@item estuche para mapa o pergamino|PHB-ES|funda de madera} que contiene un mapa para llegar a una ruina o mazmorra, una {@item linterna de ojo de buey|PHB-ES}, un {@item pico de minero|PHB-ES}, una muda de {@item ropas de viaje|PHB-ES}, una {@item pala|PHB-ES}, una {@item tienda para dos personas|PHB-ES|tienda de campaña para dos personas}, una {@item bagatela|PHB-ES} recogida en un yacimiento y una {@item bolsa|PHB-ES} con 25 po"
 						}
 					]
 				},
 				{
-					"name": "Dust Digger",
+					"name": "Excavador entre el polvo",
 					"type": "entries",
 					"entries": [
-						"Prior to becoming an adventurer, you spent most of your young life crawling around in the dust, pilfering relics of questionable value from crypts and ruins. Though you managed to sell a few of your discoveries and earn enough coin to buy proper adventuring gear, you have held onto an item that has great emotional value to you. Roll on the Signature Item table to see what you have, or choose an item from the table.",
+						"Antes de convertirte en un aventurero, pasaste la mayor parte de tu juventud arrastrándote entre el polvo, rapiñando reliquias de dudoso valor en criptas y ruinas. Aunque te las apañaste para vender algunos de tus descubrimientos y así ganar suficientes monedas para comprar un equipo de aventurero decente, has conservado un objeto que tiene un gran valor emocional para ti.",
+						"Tira en la tabla \"objetos distintivos\" para ver cuál posees o elige uno de la tabla.",
 						{
 							"type": "table",
-							"caption": "Signature Item",
+							"caption": "Objetos distintivos",
 							"colLabels": [
 								"d8",
-								"Item"
+								"Objeto"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -13504,60 +13505,60 @@
 							"rows": [
 								[
 									"1",
-									"{@item pole (10-foot)|phb|10-foot pole}"
+									"Gorro"
 								],
 								[
 									"2",
-									"{@item Crowbar|phb}"
+									"{@item Látigo|PHB-ES}"
 								],
 								[
 									"3",
-									"Hat"
+									"{@item Linterna sorda|PHB-ES}"
 								],
 								[
 									"4",
-									"{@item Hooded lantern|phb}"
+									"{@item Mazo|PHB-ES}"
 								],
 								[
 									"5",
-									"Medallion"
+									"Medallón"
 								],
 								[
 									"6",
-									"{@item Shovel|phb}"
+									"{@item Pala|PHB-ES}"
 								],
 								[
 									"7",
-									"{@item Sledgehammer|phb}"
+									"{@item Palanqueta|PHB-ES}"
 								],
 								[
 									"8",
-									"{@item Whip|phb}"
+									"{@item Vara (10 pies)|PHB-ES|Vara de 10 pies}"
 								]
 							]
 						}
 					]
 				},
 				{
-					"name": "Feature: Historical Knowledge",
+					"name": "Rasgo: Conocimiento Histórico",
 					"type": "entries",
 					"entries": [
-						"When you enter a ruin or dungeon, you can correctly ascertain its original purpose and determine its builders, whether those were dwarves, elves, humans, yuan-ti, or some other known race. In addition, you can determine the monetary value of art objects more than a century old."
+						"Cuando entras en unas ruinas o en una mazmorra, puedes determinar correctamente su propósito y quién las construyó, ya fuesen enanos, elfos, humanos, yuan-tis o cualquier otra raza conocida. Además, eres capaz de estimar el valor económico de objetos de arte que tengan más de un siglo."
 					],
 					"data": {
 						"isFeature": true
 					}
 				},
 				{
-					"name": "Suggested Characteristics",
+					"name": "Características recomendadas",
 					"type": "entries",
 					"entries": [
-						"Few archaeologists can resist the lure of an unexplored ruin or dungeon, particularly if such a site is the source of legends or is rumored to contain the treasures and relics of wizards, warlords, or royalty. Some archaeologists plunder for wealth or fame, while others consider it their calling to illuminate the past or keep the world's greatest treasures from falling into the wrong hands. Whatever their motivations, archaeologists combine the qualities of a scrappy historian with the self-made heroism of a treasure-hunting scoundrel.",
+						"Pocos arqueólogos pueden resistirse a la tentación de una mazmorra o unas ruinas inexploradas, sobre todo si ese emplazamiento es fuente de leyendas o si se rumorea que contiene tesoros y reliquias de magos, brujos o miembros de la realeza. Algunos arqueólogos expolian para conseguir fama o riquezas, mientras que otros consideran que es su misión iluminar el pasado, o impedir que las mayores maravillas caigan en las manos equivocadas. Cualesquiera sean sus motivaciones, los arqueólogos combinan las capacidades de historiadores con conocimientos rudimentarios y el heroísmo propio de un bribón cazatesoros.",
 						{
 							"type": "table",
 							"colLabels": [
 								"d8",
-								"Personality Trait"
+								"Rasgo de personalidad"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -13566,35 +13567,35 @@
 							"rows": [
 								[
 									"1",
-									"I love a good puzzle or mystery"
+									"Me encantan los rompecabezas y los misterios."
 								],
 								[
 									"2",
-									"I'm a pack rat who never throws anything away."
+									"Soy un acumulador, nunca me deshago de nada."
 								],
 								[
 									"3",
-									"Fame is more important to me than money."
+									"La fama me importa más que el dinero."
 								],
 								[
 									"4",
-									"I have no qualms about stealing from the dead."
+									"No siento escrúpulos por robar a los muertos."
 								],
 								[
 									"5",
-									"I'm happier in a dusty old tomb than I am in the centers of civilization."
+									"Soy más feliz en una tumba polvorienta que en plena civilización."
 								],
 								[
 									"6",
-									"Traps don't make me nervous. Idiots who trigger traps make me nervous."
+									"Las trampas no me inquietan. Son los idiotas que las activan los que me ponen nervioso."
 								],
 								[
 									"7",
-									"I might fail, but I will never give up."
+									"Es posible que fracase, pero nunca me rendiré."
 								],
 								[
 									"8",
-									"You might think I'm a scholar, but I love a good brawl. These fists were made for punching."
+									"Puede que parezca un académico, pero adoro una buena trifulca. Estos puños están hechos para atizar."
 								]
 							]
 						},
@@ -13611,27 +13612,27 @@
 							"rows": [
 								[
 									"1",
-									"Preservation. That artifact belongs in a museum. (Good)"
+									"Preservación. Este artefacto debe estar en un museo. (Bueno)"
 								],
 								[
 									"2",
-									"Greed. I won't risk my life for nothing. I expect some kind of payment. (Any)"
+									"Codicia. No pienso arriesgar mi vida por nada. Espero algún pago a cambio. (Cualquiera)"
 								],
 								[
 									"3",
-									"Death Wish. Nothing is more exhilarating than a narrow escape from the jaws of death. (Chaotic)"
+									"Deseo de morir. Nada es más estimulante que escapar por los pelos de las garras de la muerte. (Caótico)"
 								],
 								[
 									"4",
-									"Dignity. The dead and their belongings deserve to be treated with respect. (Lawful)"
+									"Dignidad. Los difuntos y sus pertenencias merecen ser tratados con respeto. (Legal)"
 								],
 								[
 									"5",
-									"Immortality. All of my exploring is part of a plan to find the secret of everlasting life. (Any)"
+									"Inmortalidad. Toda mi exploración es parte de un plan para encontrar el secreto de la vida eterna. (Cualquiera)"
 								],
 								[
 									"6",
-									"Danger. With every great discovery comes grave danger. The two walk hand in hand. (Any)"
+									"Peligro. Cada gran descubrimiento entraña un serio peligro. Ambos van de la mano. (Cualquiera)"
 								]
 							]
 						},
@@ -13639,7 +13640,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Bond"
+								"Vínculo"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -13648,27 +13649,27 @@
 							"rows": [
 								[
 									"1",
-									"Ever since I was a child, I've heard stories about a lost city. I aim to find it, learn its secrets, and earn my place in the history books."
+									"Desde niño, siempre he escuchado leyendas acerca de una ciudad perdida. Mi objetivo es encontrarla, aprender sus secretos y pasar a los libros de historia."
 								],
 								[
 									"2",
-									"I want to find my mentor, who disappeared on an expedition some time ago."
+									"Quiero encontrar a mi mentor, que desapareció hace algún tiempo en una expedición."
 								],
 								[
 									"3",
-									"I have a friendly rival. Only one of us can be the best, and I aim to prove it's me."
+									"Tengo un amigo rival. Solo uno de nosotros puede ser el mejor, y voy a demostrar que soy yo."
 								],
 								[
 									"4",
-									"I won't sell an art object or other treasure that has historical significance or is one of a kind."
+									"No pienso vender un objeto de arte u otro tesoro que tenga valor histórico o sea único."
 								],
 								[
 									"5",
-									"I'm secretly in love with the wealthy patron who sponsors my archaeological exploits."
+									"Amo en secreto al rico mecenas que patrocina mi explotación arqueológica."
 								],
 								[
 									"6",
-									"I hope to bring prestige to a library, a museum, or a university."
+									"Espero dar prestigio a una biblioteca, museo o universidad."
 								]
 							]
 						},
@@ -13676,7 +13677,7 @@
 							"type": "table",
 							"colLabels": [
 								"d6",
-								"Flaw"
+								"Defecto"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -13685,27 +13686,27 @@
 							"rows": [
 								[
 									"1",
-									"I have a secret fear of some common wild animal - and in my work, I see them everywhere."
+									"En secreto tengo miedo a un animal salvaje común, y, en mi trabajo, los veo por todas partes."
 								],
 								[
 									"2",
-									"I can't leave a room without searching it for secret doors."
+									"No puedo abandonar una habitación sin haber buscado puertas secretas."
 								],
 								[
 									"3",
-									"When I'm not exploring dungeons or ruins. I get jittery and impatient."
+									"Cuando no estoy explorando mazmorras o ruinas, me vuelvo nervioso e impaciente."
 								],
 								[
 									"4",
-									"I have no time for friends or family. I spend every waking moment thinking about and preparing for my next expedition."
+									"No tengo tiempo para amigos o familia. Dedico cada segundo que estoy despierto a pensar en mi próxima expedición y prepararla."
 								],
 								[
 									"5",
-									"When given the choice of going left or right, I always go left."
+									"Cuando hay que elegir si ir a la izquierda o a la derecha, siempre voy a la izquierda."
 								],
 								[
 									"6",
-									"I can't sleep except in total darkness."
+									"No puedo dormir a no ser que esté totalmente a oscuras."
 								]
 							]
 						}
@@ -13720,7 +13721,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"An archaeologist learns about the long-lost and fallen cultures of the past by studying their remains-their bones, their ruins, their surviving masterworks, and their tombs. Those who practice archaeology travel to the far corners of the world to root through crumbled cities and lost dungeons, digging in search of artifacts that might tell the stories of monarchs and high priests, wars and cataclysms."
+									"Un arqueólogo aprende sobre culturas desaparecidas hace tiempo estudiando sus restos materiales: sus huesos, sus ruinas, sus obras maestras supervivientes y sus sepulcros. Los que practican la arqueología viajan a los rincones más recónditos del mundo para examinar ciudades desmoronadas y mazmorras perdidas, excavando en busca de artefactos que pudieran narrar historias de monarcas y altos sacerdotes, de guerras y cataclismos."
 								]
 							}
 						]
@@ -13729,12 +13730,12 @@
 			}
 		},
 		{
-			"name": "Haunted One",
+			"name": "Atormentado",
 			"source": "VRGR-ES",
 			"page": 34,
 			"otherSources": [
 				{
-					"source": "CoS",
+					"source": "CoS-ES",
 					"page": 209
 				}
 			],
@@ -13771,11 +13772,11 @@
 			"startingEquipment": [
 				{
 					"_": [
-						"monster hunter's pack|vrgr",
-						"common clothes|phb",
+						"paquete de cazador de monstruos|VRGR-ES",
+						"ropas comunes|PHB-ES",
 						{
-							"item": "Horror Trinket|VRGR",
-							"displayName": "trinket of special significance (choose one or roll on the Horror Trinkets table)"
+							"item": "Bagatela espeluznante|VRGR-ES",
+							"displayName": "bagatela de significado especial (elige una o tira en la tabla \"Bagatelas espeluznantes\")"
 						},
 						{
 							"value": 10
@@ -13790,42 +13791,42 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies:",
-							"entry": "Choose two from among {@skill Arcana}, {@skill Investigation}, {@skill Religion}, or {@skill Survival}"
+							"name": "Competencias en habilidades:",
+							"entry": "Elige dos de entre {@skill Conocimiento Arcano|PHB-ES}, {@skill Investigación|PHB-ES}, {@skill Religión|PHB-ES} o {@skill Supervivencia|PHB-ES}"
 						},
 						{
 							"type": "item",
-							"name": "Languages:",
-							"entry": "Choose two, one of which must be {@language Abyssal}, {@language Celestial}, {@language Deep Speech}, {@language Draconic}, {@language Infernal}, {@language Primordial}, {@language Sylvan}, or {@language Undercommon}"
+							"name": "Idiomas:",
+							"entry": "Elige dos, uno de los cuales debe ser {@language abisal|PHB-ES}, {@language celestial|PHB-ES}, {@language dracónico|PHB-ES}, {@language habla de las profundidades|PHB-ES}, {@language infernal|PHB-ES}, {@language infracomún|PHB-ES}, {@language primordial|PHB-ES} o {@language silvano|PHB-ES}"
 						},
 						{
 							"type": "item",
-							"name": "Equipment:",
-							"entry": "{@item Monster hunter's pack|vrgr} (containing a {@item chest|PHB}, a {@item crowbar|PHB}, a {@item hammer|PHB}, three wooden stakes, a {@item holy symbol|PHB}, a {@item Holy Water (flask)|PHB|flask of holy water}, a {@item Manacles|PHB|set of manacles}, a {@item steel mirror|PHB}, a {@item Oil (flask)|PHB|flask of oil}, a {@item tinderbox|PHB}, and 3 {@item Torch|PHB|torches}), a set of {@item common clothes|phb}, one {@item trinket|CoS} of special significance (choose one or roll on the {@item Horror Trinket|VRGR|Horror Trinkets} table), and 1 sp"
+							"name": "Equipo:",
+							"entry": "Un {@item paquete de cazador de monstruos|VRGR-ES} (contiene un {@item cofre|PHB-ES}, una {@item palanqueta|PHB-ES}, un {@item martillo|PHB-ES}, tres estacas de madera, un {@item símbolo sagrado|PHB-ES}, un {@item agua bendita (frasco)|PHB-ES|frasco de agua bendita}, unas {@item esposas|PHB-ES}, {@item espejito de acero|PHB-ES}, un {@item aceite (frasco)|PHB-ES|frasco de aceite}, un {@item yesquero|PHB-ES} y tres {@item antorcha|PHB-ES|antorchas}), una {@item bagatela|CoS-ES} de significado especial (elige una o tira en la tabla \"{@item Bagatela espeluznante|VRGR-ES|Bagatelas espeluznantes}\" más adelante en este capítulo), muda de {@item ropas comunes|PHB-ES} y 1 pp"
 						}
 					]
 				},
 				{
-					"name": "Feature: Heart of Darkness",
+					"name": "Rasgo: Corazón de la Oscuridad",
 					"type": "entries",
 					"entries": [
-						"Those who look into your eyes can see that you have faced unimaginable horror and that you are no stranger to darkness. Though they might fear you, commoners will extend you every courtesy and do their utmost to help you. Unless you have shown yourself to be a danger to them, they will even take up arms to fight alongside you, should you find yourself facing an enemy alone."
+						"Quienes te miran fijamente a los ojos pueden ver que te has enfrentado a un horror inimaginable y que la oscuridad no te es ajena. Aunque la gente común quizá te tema, te tratará con la mayor cortesía e intentará hacer todo Jo posible por ayudarte. A menos que hayas demostrado ser un peligro para ellos, incluso tomarán sus armas para luchar a tu lado si te encuentras combatiendo a un enemigo en solitario."
 					],
 					"data": {
 						"isFeature": true
 					}
 				},
 				{
-					"name": "Harrowing Event",
+					"name": "Suceso desgarrador",
 					"type": "entries",
 					"entries": [
-						"Prior to becoming an adventurer, your path in life was defined by one dark moment, one fateful decision, or one tragedy. Now you feel a darkness threatening to consume you, and you fear there may be no hope of escape. Choose a harrowing event that haunts you, or roll one on the Harrowing Events table.",
+						"Antes de convertirte en aventurero, tu camino en la vida se vio definido por un momento oscuro, una decisión funesta o una tragedia. Ahora sientes una oscuridad que amenaza con consumirte y temes que tal vez no haya esperanza de escapar de ella. Elige un suceso desgarrador que te atormenta o tira en la tabla \"Suceso desgarrador\".",
 						{
 							"type": "table",
-							"caption": "Harrowing Event",
+							"caption": "Suceso desgarrador",
 							"colLabels": [
 								"d10",
-								"Event"
+								"Suceso"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -13834,43 +13835,43 @@
 							"rows": [
 								[
 									"1",
-									"A monster that slaughtered dozens of innocent people spared your life, and you don't know why."
+									"Un monstruo que asesinó a decenas de inocentes te perdonó la vida y no sabes por qué."
 								],
 								[
 									"2",
-									"You were born under a dark star. You can feel it watching you, coldly and distantly. Sometimes it beckons you in the dead of night."
+									"Naciste bajo la luz de una estrella oscura. Sientes cómo te observa, fría y distante, y a veces te llama en plena noche."
 								],
 								[
 									"3",
-									"An apparition that has haunted your family for generations now haunts you. You don't know what it wants, and it won't leave you alone."
+									"Una aparición que ha acosado a tu familia durante generaciones ahora te atormenta a ti. No sabes qué quiere y no te deja en paz."
 								],
 								[
 									"4",
-									"Your family has a history of practicing the dark arts. You dabbled once and felt something horrible clutch at your soul, whereupon you fled in terror."
+									"Tu familia tiene tradición de practicar las artes oscuras. Una vez probaste y sentiste que algo horrible se aferraba a tu alma, lo cual te hizo huir presa del terror."
 								],
 								[
 									"5",
-									"An oni took your sibling one cold, dark night, and you were unable to stop it."
+									"Un oni se llevó a tu hermano una noche fría y oscura y no pudiste impedirlo."
 								],
 								[
 									"6",
-									"You were cursed with lycanthropy and later cured. You are now haunted by the innocents you slaughtered."
+									"Sufriste la maldición de la licantropía y luego te la curaron. Ahora te atormentan los inocentes cuyas vidas segaste."
 								],
 								[
 									"7",
-									"A hag kidnapped and raised you. You escaped, but the hag still has a magical hold over you and fills your mind with evil thoughts."
+									"Una saga te secuestró y te crío. Escapaste, pero aún ejerce su poder mágico sobre ti y te llena la mente de pensamientos malvados."
 								],
 								[
 									"8",
-									"You opened an eldritch tome and saw things unfit for a sane mind. You burned the book, but its words and images are burned into your psyche."
+									"Abriste un libro sobrenatural y viste cosas inadecuadas para una mente cuerda. Lo quemaste, pero las palabras e imágenes aún están grabadas a fuego en tu psique."
 								],
 								[
 									"9",
-									"A fiend possessed you as a child. You were locked away but escaped. The fiend is still inside you, but now you try to keep it bottled up."
+									"Cuando eras niño, un infernal te poseyó. Fuiste encerrado, pero escapaste. El infernal sigue en tu interior, pero ahora tratas de impedir que salga."
 								],
 								[
 									"10",
-									"You did terrible things to avenge the murder of someone you loved. You became a monster, and it haunts your waking dreams."
+									"Hiciste cosas terribles para vengar la muerte de alguien a quien amabas. Te convertiste en un monstruo y eso te atormenta cuando sueñas despierto."
 								]
 							]
 						}
@@ -13878,16 +13879,16 @@
 				},
 				{
 					"type": "section",
-					"name": "Horror Characteristics",
+					"name": "Características de terror",
 					"id": "0a4",
 					"entries": [
-						"Characters in a horror-focused campaign might have distinct motivations and characteristics. Use the following tables to supplement your background's suggested characteristics or to inspire those of your own design.",
+						"Los personajes de una campaña centrada en el terror pueden tener motivaciones y características distintas. Utiliza las siguientes tablas para complementar las características sugeridas de tu trasfondo o como base para las que idees tú.",
 						{
 							"type": "table",
-							"caption": "Horror Character Personality Traits",
+							"caption": "Rasgos de personalidad de los personajes de terror",
 							"colLabels": [
 								"d12",
-								"Personality Trait"
+								"Rasgo de personalidad"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -13896,57 +13897,57 @@
 							"rows": [
 								[
 									"1",
-									"I had an encounter that I believe gives me a special affinity with a supernatural creature or event."
+									"Tuve un encuentro que creo que me confiere una afinidad especial con una criatura o un suceso sobrenatural."
 								],
 								[
 									"2",
-									"A signature piece of clothing or distinct weapon serves as an emblem of who I am."
+									"Una prenda de ropa caracterfstica o un arma distintiva sirve de emblema de quién soy."
 								],
 								[
 									"3",
-									"I never accept that I'm out of my depth."
+									"Nunca acepto que algo esté fuera de mi capacidad."
 								],
 								[
 									"4",
-									"I must know the answer to every secret. No door remains unopened in my presence."
+									"Debo conocer la respuesta a cualquier secreto: en mi presencia, ninguna puerta se queda sin abrir."
 								],
 								[
 									"5",
-									"I let people underestimate me, revealing my full competency only to those close to me."
+									"Dejo que me subestimen y solo muestro mi auténtica capacidad a las personas cercanas a mí."
 								],
 								[
 									"6",
-									"I compulsively seek to collect trophies of my travels and victories."
+									"Colecciono compulsivamente trofeos de mis viajes y victorias."
 								],
 								[
 									"7",
-									"It doesn't matter if the whole world's against me. I'll always do what I think is right."
+									"No me importa que todo el mundo esté en mi contra, siempre haré lo que considere correcto."
 								],
 								[
 									"8",
-									"I have morbid interests and a macabre aesthetic."
+									"Tengo intereses morbosos y una estética macabra."
 								],
 								[
 									"9",
-									"I have a personal ritual, mantra, or relaxation method I use to deal with stress."
+									"Tengo un ritual, un mantra o un método de relajación personal para aliviar el estrés."
 								],
 								[
 									"10",
-									"Nothing is more important than life, and I never leave anyone in danger."
+									"No hay nada más importante que la vida y nunca abandono a nadie que esté en peligro."
 								],
 								[
 									"11",
-									"I'm quick to jump to extreme solutions. Why risk a lesser option not working?"
+									"Enseguida recurro a soluciones extremas. ¿Por qué arriesgarse a que una opción inferior no funcione?"
 								],
 								[
 									"12",
-									"I'm easily startled, but I'm not a coward."
+									"Soy fácil de sobresaltar, pero no me acobardo."
 								]
 							]
 						},
 						{
 							"type": "table",
-							"caption": "Horror Character Ideals",
+							"caption": "Ideales de los personajes de terror",
 							"colLabels": [
 								"d12",
 								"Ideal"
@@ -13958,60 +13959,60 @@
 							"rows": [
 								[
 									"1",
-									"Adrenaline. I've experienced such strangeness that now I feel alive only in extreme situations."
+									"Adrenalina. He pasado por cosas tan raras que ahora solo me siento vivo en situaciones extremas."
 								],
 								[
 									"2",
-									"Balance. I strive to counter the deeds of someone for whom I feel responsible."
+									"Distracción. Trabajo enérgicamente para impedir que los demás perciban mis errores o flaquezas."
 								],
 								[
 									"3",
-									"Bound. I've wronged someone and must work their will to avoid their curse."
+									"Equilibrio. Me esfuerzo por contrarrestar las acciones de alguien por quien me siento responsable."
 								],
 								[
 									"4",
-									"Escape. I believe there is something beyond the world I know, and I need to find it."
+									"Huida. Creo que hay algo más allá del mundo que conozco y tengo que averiguarlo."
 								],
 								[
 									"5",
-									"Legacy. I must do something great so that I'm remembered, and my time is running out."
+									"Legado. Debo hacer algo grandioso para que se me recuerde, y se me acaba el tiempo."
 								],
 								[
 									"6",
-									"Misdirection. I work vigorously to keep others from realizing my flaws or misdeeds."
+									"Obligación. Le debo a mi gente, mi fe, mi familia o mi maestro continuar un honroso legado."
 								],
 								[
 									"7",
-									"Obsession. I've lived this way for so long that I can't imagine another way."
+									"Obsesión. He vivido de esta forma tanto tiempo que no puedo imaginar otro modo de hacerlo."
 								],
 								[
 									"8",
-									"Obligation. I owe it to my people, faith, family, or teacher to continue a vaunted legacy."
+									"Promesa. Mi vida ya no me pertenece. Debo cumplir el sueilo de alguien que ya no está."
 								],
 								[
 									"9",
-									"Promise. My life is no longer my own. I must fulfill the dream of someone who's gone."
+									"Revelación. Debo saber qué hay más allá de los misterios de la muerte, el mundo o las Brumas."
 								],
 								[
 									"10",
-									"Revelation. I need to know what lies beyond the mysteries of death, the world, or the Mists."
+									"Santuario. Conozco las fuerzas que controlan el mundo y trato de crear islas separadas de ellas."
 								],
 								[
 									"11",
-									"Sanctuary. I know the forces at work in the world and strive to create islands apart from them."
+									"Verdad. Me preocupa la verdad por encima de todas las cosas, aunque no beneficie a nadie."
 								],
 								[
 									"12",
-									"Truth. I care about the truth above all else, even if it doesn't benefit anyone."
+									"Vinculado. He agraviado a alguien y ahora debo trabajar para evitar su maldición."
 								]
 							]
 						},
 						{
 							"type": "table",
-							"caption": "Horror Character Bonds",
+							"caption": "Vínculos de los personajes de terror",
 							"colLabels": [
 								"d12",
-								"Bond"
+								"Vínculo"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -14020,60 +14021,60 @@
 							"rows": [
 								[
 									"1",
-									"I desperately need to get back to someone or someplace, but I lost them in the Mists."
+									"Tengo la necesidad desesperada de volver con alguien o a un lugar, pero lo perdí en las Brumas."
 								],
 								[
 									"2",
-									"Everything I do is in the service of a powerful master, one I must keep a secret from everyone."
+									"Todo lo que hago es por un maestro poderoso que debo mantener en secreto ante los demás."
 								],
 								[
 									"3",
-									"I owe much to my vanished mentor. I seek to continue their work even as I search to find them."
+									"Le debo mucho a mi mentor desaparecido. Trato de continuar su obra, incluso mientras lo busco."
 								],
 								[
 									"4",
-									"I've seen great darkness, and I'm committed to being a light against it—the light of all lights."
+									"He visto una gran oscuridad y he decidido ser una luz contra ella... La luz de todas las luces."
 								],
 								[
 									"5",
-									"Someone I love has become a monster, murderer, or other threat. It's up to me to redeem them."
+									"Alguien a quien amo se ha convertido en un monstruo, un asesino u otra amenaza. Debo redimir a esa persona."
 								],
 								[
 									"6",
-									"The world has been convinced of a terrible lie. It's up to me to reveal the truth."
+									"El mundo ha sido engañado para creer en una mentira terrible y depende de mí revelar la verdad."
 								],
 								[
 									"7",
-									"I deeply miss someone and am quick to adopt people who remind me of them."
+									"Echo mucho de menos a alguien y enseguida adopto a la gente que me recuerda a esa persona."
 								],
 								[
 									"8",
-									"A great evil dwells within me. I will fight against it and the world's other evils for as long as I can."
+									"Un gran mal mora en mí. Mientras pueda, lucharé contra él y contra los otros males del mundo."
 								],
 								[
 									"9",
-									"I'm desperately seeking a cure to an affliction or a curse, either for someone close to me for myself."
+									"Busco desesperadamente una cura para un mal o una maldición, para alguien cercano o para mí."
 								],
 								[
 									"10",
-									"Spirits are drawn to me. I do all I can to help them find peace."
+									"Atraigo a los espíritus y hago todo lo posible por ayudarles a encontrar la paz."
 								],
 								[
 									"11",
-									"I use my cunning mind to solve mysteries and find justice for those who've been wronged."
+									"Uso mi mente astuta para resolver misterios y buscar la justicia para quienes han sido agraviados."
 								],
 								[
 									"12",
-									"I lost someone I care about, but I still see them in guilty visions, recurring dreams, or as a spirit."
+									"He perdido a alguien que me importa y veo a esa persona en visiones culpables, sueños recurrentes o como espíritu."
 								]
 							]
 						},
 						{
 							"type": "table",
-							"caption": "Horror Character Flaws",
+							"caption": "Defectos de los personajes de terror",
 							"colLabels": [
 								"d12",
-								"Flaw"
+								"Defecto"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -14082,51 +14083,51 @@
 							"rows": [
 								[
 									"1",
-									"I believe doom follows me and that anyone who gets close to me will face a tragic end."
+									"Creo que me persigue un destino aciago y que quienes se me acerquen sufrirán un final trágico."
 								],
 								[
 									"2",
-									"I'm convinced something is after me, appearing in mirrors, dreams, and places where no one could."
+									"Estoy seguro de que algo me sigue y se me aparece en espejos, sueños y sitios donde nadie podría."
 								],
 								[
 									"3",
-									"I'm especially superstitious and live life seeking to avoid bad luck, wicked spirits, or the Mists."
+									"Soy muy supersticioso y vivo evitando la mala suerte, los espíritus malignos o las Brumas."
 								],
 								[
 									"4",
-									"I've done unspeakable evil and will do anything to prevent others from finding out."
+									"He causado un mal innombrable y haré todo lo necesario para impedir que otros lo descubran."
 								],
 								[
 									"5",
-									"I am exceptionally credulous and believe any story or legend immediately."
+									"Mi credulidad es excepcional y me creo cualquier historia y leyenda al instante."
 								],
 								[
 									"6",
-									"I'm a skeptic and don't believe in the power of rituals, religion, superstition, or spirits."
+									"Soy una persona escéptica y no creo en los rituales, la religión, la superstición ni los espíritus."
 								],
 								[
 									"7",
-									"I know my future is written and that anything I do will lead to a prophesied end."
+									"Sé que mi futuro está escrito y que todo lo que haga conducirá a un final ya profetizado."
 								],
 								[
 									"8",
-									"I need to find the best in everyone and everything, even when that means denying obvious malice."
+									"Busco lo mejor en todas las personas y las cosas, incluso si eso significa negar una malicia evidente."
 								],
 								[
 									"9",
-									"I've seen the evil of a type of place—like forests, cities, or graveyards—and resist going there."
+									"He visto el mal de un tipo de lugar (como bosques, ciudades o cementerios) y me resisto a ir ahí."
 								],
 								[
 									"10",
-									"I'm exceptionally cautious, planning laboriously and devising countless contingencies."
+									"Mi cautela es enorme, planeo detenidamente y pienso en infinidad de contingencias."
 								],
 								[
 									"11",
-									"I have a reputation for defeating a great evil, but that's a lie and the wicked force knows."
+									"Tengo la reputación de haber derrotado a un gran mal, pero es mentira y la fuerza maligna lo sabe."
 								],
 								[
 									"12",
-									"I know the ends always justify the means and am quick to make sacrifices to attain my goals."
+									"Sé que el fin justifica los medios y no me importa hacer sacrificios para alcanzar mis metas."
 								]
 							]
 						}
@@ -14141,7 +14142,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"You are haunted by something so terrible that you dare not speak of it. You've tried to bury it and run away from it, to no avail. Whatever this thing is that haunts you can't be slain with a sword or banished with a spell. It might come to you as a shadow on the wall, a bloodcurdling nightmare, a memory that refuses to die, or a demonic whisper in the dark. The burden has taken its toll, isolating you from most people and making you question your sanity. You must find a way to overcome it before it destroys you."
+									"Te atormenta algo tan terrible que no te atreves ni a hablar del tema. Has intentado enterrarlo y huir de ello, pero sin resultado. Te persiga lo que te persiga, no se puede matar con una espada ni hacer que desaparezca con un conjuro. Podría presentarse ante ti como una sombra en la pared, una pesadilla espeluznante, un recuerdo que se niega a morir o un susurro demoníaco en la oscuridad. Se trata de una carga con un alto precio: te has aislado de la mayoría de la gente y te cuestionas tu propia cordura. Debes encontrar el modo de superarlo antes de que te destruya."
 								]
 							}
 						]
@@ -14159,7 +14160,7 @@
 			}
 		},
 		{
-			"name": "Investigator",
+			"name": "Investigador",
 			"source": "VRGR-ES",
 			"page": 35,
 			"skillProficiencies": [
@@ -14183,11 +14184,11 @@
 			"startingEquipment": [
 				{
 					"_": [
-						"magnifying glass|PHB",
-						"common clothes|phb",
+						"lupa|PHB-ES",
+						"ropas comunes|PHB-ES",
 						{
-							"item": "Horror Trinket|VRGR",
-							"displayName": "evidence from a past case (choose one or roll for a trinket from the {@item Horror Trinket|VRGR|Horror Trinkets})"
+							"item": "Bagatela espeluznante|VRGR-ES",
+							"displayName": "prueba de un caso antiguo (elige una o tira en la tabla \"Bagatelas espeluznantes\")"
 						},
 						{
 							"value": 10
@@ -14202,42 +14203,42 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies:",
-							"entry": "Choose two from among {@skill Insight}, {@skill Investigation}, or {@skill Perception}"
+							"name": "Competencias en habilidades:",
+							"entry": "Elige dos de entre {@skill Investigación|PHB-ES}, {@skill Percepción|PHB-ES} o {@skill Perspicacia|PHB-ES}"
 						},
 						{
 							"type": "item",
-							"name": "Tool Proficiencies:",
-							"entry": "{@item Disguise kit|phb}, {@item Thieves' tools|phb}"
+							"name": "Competencias con herramientas:",
+							"entry": "{@item Herramientas de ladrón|PHB-ES}, {@item útiles para disfrazarse|PHB-ES}"
 						},
 						{
 							"type": "item",
-							"name": "Equipment:",
-							"entry": "A {@item magnifying glass|PHB}, evidence from a past case (choose one or roll for a trinket from the {@item Horror Trinket|VRGR|Horror Trinkets} later in this chapter), a {@item Common Clothes|PHB|set of common clothes}, and 10 gp"
+							"name": "Equipo:",
+							"entry": "Una {@item lupa|PHB-ES}, una prueba de un caso antiguo (elige una o tira en la tabla \"{@item Bagatela espeluznante|VRGR-ES|Bagatelas espeluznantes}\" más adelante en este capítulo), muda de {@item ropas comunes|PHB-ES} y 10 po"
 						}
 					]
 				},
 				{
-					"name": "Feature: Official Inquiry",
+					"name": "Rasgo: Indagación Oficial",
 					"type": "entries",
 					"entries": [
-						"You're experienced at gaining access to people and places to get the information you need. Through a combination of fast-talking, determination, and official-looking documentation, you can gain access to a place or an individual related to a crime you're investigating. Those who aren't involved in your investigation avoid impeding you or pass along your requests. Additionally, local law enforcement has firm opinions about you, viewing you as either a nuisance or one of their own."
+						"Tienes experiencia en acceder a personas y lugares para obtener la información que necesitas. Mediante una combinación de labia, determinación y documentos que parecen oficiales, puedes obtener acceso a un lugar o un individuo relacionado con un crimen que estés investigando. Quienes no estén implicados en tu investigación evitan molestarte o transmiten tus solicitudes a quien corresponda. Además, las fuerzas de la ley locales tienen una opinión clara sobre ti: te consideran o una molestia o uno de los suyos."
 					],
 					"data": {
 						"isFeature": true
 					}
 				},
 				{
-					"name": "Path to Mystery",
+					"name": "El camino del misterio",
 					"type": "entries",
 					"entries": [
-						"Your first case influenced the types of mysteries you're interested in. Why was this case so impactful, personal, or traumatic? Whom did it affect besides you? Why and how did you get involved? Was it solved? How did it set you on the path to investigating other mysteries? Roll on or choose details from the First Case table to develop the mystery that started your career as an investigator.",
+						"Tu primer caso influyó en los tipos de misterios que te interesan. ¿Por qué ese caso te impactó tanto, te resultó tan personal o fue tan traumático? ¿A quién más afectó además de a ti? ¿Cómo y por qué te implicaste en él? ¿Se resolvió? ¿Cómo te impulsó a investigar otros misterios? Tira en la tabla \"Primer caso\" o elige una opción de ella para desarrollar el misterio que supuso el inicio de tu carrera de investigador.",
 						{
 							"type": "table",
-							"caption": "First Case",
+							"caption": "Primer caso",
 							"colLabels": [
 								"d8",
-								"Case"
+								"Caso"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -14246,35 +14247,35 @@
 							"rows": [
 								[
 									"1",
-									"A friend was wrongfully accused of murder. You tracked down the actual killer, proving your friend's innocence and starting your career as a detective."
+									"Un amigo fue acusado falsamente de asesinato. Descubriste al verdadero asesino, lo que demostró la inocencia de tu amigo e inició tu carrera de detective."
 								],
 								[
 									"2",
-									"You're told you went missing for weeks. When you were found, you had no memory of being gone. Now you search to discover what happened to you."
+									"Te dijeron que desapareciste unas semanas. Cuando te encontraron, no tenías ningún recuerdo del suceso y ahora intentas descubrir qué ocurrió."
 								],
 								[
 									"3",
-									"You helped a spirit find peace by finding its missing corpse. Ever since, other spectral clients have sought you out to help them find rest."
+									"Ayudaste a un espíritu a hallar la paz encontrando su cadáver. Desde entonces, otros clientes espectrales acuden a ti para que los ayudes a descansar."
 								],
 								[
 									"4",
-									"You revealed that the monsters terrorizing your home were illusions created by a cruel mage. The magic-user escaped, but you've continued to uncover magical hoaxes."
+									"Demostraste que los monstruos que aterrorizaban tu hogar eran ilusiones creadas por un cruel mago. Este escapó, pero has seguido descubriendo engaños mágicos."
 								],
 								[
 									"5",
-									"You were wrongfully accused and convicted of a crime. You managed to escape and seek to help others avoid the experience you suffered, even while still being pursued by the law."
+									"Se te acusó falsamente de un delito y te condenaron por ello. Conseguiste escapar y tratas de ayudar a otros a evitar que les pase lo mismo, aunque todavía te persigue la ley."
 								],
 								[
 									"6",
-									"You survived the destructive use of a magic device that wiped out your home. Members of a secret organization found you. You now work with them, tracking down dangerous supernatural phenomena and preventing them from doing harm."
+									"Sobreviviste al uso destructor de un dispositivo mágico que arrasó tu hogar. Los miembros de una organización secreta te encontraron y ahora trabajas con ellos para perseguir fenómenos sobrenaturales peligrosos e impedir que causen daños."
 								],
 								[
 									"7",
-									"You found evidence of a conspiracy underpinning society. You tried to expose this mysterious cabal, but no one believed you. You're still trying to prove what you know is true."
+									"Encontraste pruebas de una conspiración que afectaba a toda la sociedad. Intentaste sacar a la luz el complot, pero nadie te creyó y sigues intentando demostrar que lo que sabes es cierto."
 								],
 								[
 									"8",
-									"You got a job with an agency that investigates crimes that local law enforcement can't solve. You often wonder which you value more, the truth or your pay."
+									"Encontraste trabajo en una agencia que investiga crímenes que las fuerzas de la ley locales no logran resolver. A veces te preguntas qué te gusta más: la verdad o la paga."
 								]
 							]
 						}
@@ -14282,16 +14283,16 @@
 				},
 				{
 					"type": "section",
-					"name": "Horror Characteristics",
+					"name": "Características de terror",
 					"id": "0a4",
 					"entries": [
-						"Characters in a horror-focused campaign might have distinct motivations and characteristics. Use the following tables to supplement your background's suggested characteristics or to inspire those of your own design.",
+						"Los personajes de una campaña centrada en el terror pueden tener motivaciones y características distintas. Utiliza las siguientes tablas para complementar las características sugeridas de tu trasfondo o como base para las que idees tú.",
 						{
 							"type": "table",
-							"caption": "Horror Character Personality Traits",
+							"caption": "Rasgos de personalidad de los personajes de terror",
 							"colLabels": [
 								"d12",
-								"Personality Trait"
+								"Rasgo de personalidad"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -14300,57 +14301,57 @@
 							"rows": [
 								[
 									"1",
-									"I had an encounter that I believe gives me a special affinity with a supernatural creature or event."
+									"Tuve un encuentro que creo que me confiere una afinidad especial con una criatura o un suceso sobrenatural."
 								],
 								[
 									"2",
-									"A signature piece of clothing or distinct weapon serves as an emblem of who I am."
+									"Una prenda de ropa caracterfstica o un arma distintiva sirve de emblema de quién soy."
 								],
 								[
 									"3",
-									"I never accept that I'm out of my depth."
+									"Nunca acepto que algo esté fuera de mi capacidad."
 								],
 								[
 									"4",
-									"I must know the answer to every secret. No door remains unopened in my presence."
+									"Debo conocer la respuesta a cualquier secreto: en mi presencia, ninguna puerta se queda sin abrir."
 								],
 								[
 									"5",
-									"I let people underestimate me, revealing my full competency only to those close to me."
+									"Dejo que me subestimen y solo muestro mi auténtica capacidad a las personas cercanas a mí."
 								],
 								[
 									"6",
-									"I compulsively seek to collect trophies of my travels and victories."
+									"Colecciono compulsivamente trofeos de mis viajes y victorias."
 								],
 								[
 									"7",
-									"It doesn't matter if the whole world's against me. I'll always do what I think is right."
+									"No me importa que todo el mundo esté en mi contra, siempre haré lo que considere correcto."
 								],
 								[
 									"8",
-									"I have morbid interests and a macabre aesthetic."
+									"Tengo intereses morbosos y una estética macabra."
 								],
 								[
 									"9",
-									"I have a personal ritual, mantra, or relaxation method I use to deal with stress."
+									"Tengo un ritual, un mantra o un método de relajación personal para aliviar el estrés."
 								],
 								[
 									"10",
-									"Nothing is more important than life, and I never leave anyone in danger."
+									"No hay nada más importante que la vida y nunca abandono a nadie que esté en peligro."
 								],
 								[
 									"11",
-									"I'm quick to jump to extreme solutions. Why risk a lesser option not working?"
+									"Enseguida recurro a soluciones extremas. ¿Por qué arriesgarse a que una opción inferior no funcione?"
 								],
 								[
 									"12",
-									"I'm easily startled, but I'm not a coward."
+									"Soy fácil de sobresaltar, pero no me acobardo."
 								]
 							]
 						},
 						{
 							"type": "table",
-							"caption": "Horror Character Ideals",
+							"caption": "Ideales de los personajes de terror",
 							"colLabels": [
 								"d12",
 								"Ideal"
@@ -14362,60 +14363,60 @@
 							"rows": [
 								[
 									"1",
-									"Adrenaline. I've experienced such strangeness that now I feel alive only in extreme situations."
+									"Adrenalina. He pasado por cosas tan raras que ahora solo me siento vivo en situaciones extremas."
 								],
 								[
 									"2",
-									"Balance. I strive to counter the deeds of someone for whom I feel responsible."
+									"Distracción. Trabajo enérgicamente para impedir que los demás perciban mis errores o flaquezas."
 								],
 								[
 									"3",
-									"Bound. I've wronged someone and must work their will to avoid their curse."
+									"Equilibrio. Me esfuerzo por contrarrestar las acciones de alguien por quien me siento responsable."
 								],
 								[
 									"4",
-									"Escape. I believe there is something beyond the world I know, and I need to find it."
+									"Huida. Creo que hay algo más allá del mundo que conozco y tengo que averiguarlo."
 								],
 								[
 									"5",
-									"Legacy. I must do something great so that I'm remembered, and my time is running out."
+									"Legado. Debo hacer algo grandioso para que se me recuerde, y se me acaba el tiempo."
 								],
 								[
 									"6",
-									"Misdirection. I work vigorously to keep others from realizing my flaws or misdeeds."
+									"Obligación. Le debo a mi gente, mi fe, mi familia o mi maestro continuar un honroso legado."
 								],
 								[
 									"7",
-									"Obsession. I've lived this way for so long that I can't imagine another way."
+									"Obsesión. He vivido de esta forma tanto tiempo que no puedo imaginar otro modo de hacerlo."
 								],
 								[
 									"8",
-									"Obligation. I owe it to my people, faith, family, or teacher to continue a vaunted legacy."
+									"Promesa. Mi vida ya no me pertenece. Debo cumplir el sueilo de alguien que ya no está."
 								],
 								[
 									"9",
-									"Promise. My life is no longer my own. I must fulfill the dream of someone who's gone."
+									"Revelación. Debo saber qué hay más allá de los misterios de la muerte, el mundo o las Brumas."
 								],
 								[
 									"10",
-									"Revelation. I need to know what lies beyond the mysteries of death, the world, or the Mists."
+									"Santuario. Conozco las fuerzas que controlan el mundo y trato de crear islas separadas de ellas."
 								],
 								[
 									"11",
-									"Sanctuary. I know the forces at work in the world and strive to create islands apart from them."
+									"Verdad. Me preocupa la verdad por encima de todas las cosas, aunque no beneficie a nadie."
 								],
 								[
 									"12",
-									"Truth. I care about the truth above all else, even if it doesn't benefit anyone."
+									"Vinculado. He agraviado a alguien y ahora debo trabajar para evitar su maldición."
 								]
 							]
 						},
 						{
 							"type": "table",
-							"caption": "Horror Character Bonds",
+							"caption": "Vínculos de los personajes de terror",
 							"colLabels": [
 								"d12",
-								"Bond"
+								"Vínculo"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -14424,60 +14425,60 @@
 							"rows": [
 								[
 									"1",
-									"I desperately need to get back to someone or someplace, but I lost them in the Mists."
+									"Tengo la necesidad desesperada de volver con alguien o a un lugar, pero lo perdí en las Brumas."
 								],
 								[
 									"2",
-									"Everything I do is in the service of a powerful master, one I must keep a secret from everyone."
+									"Todo lo que hago es por un maestro poderoso que debo mantener en secreto ante los demás."
 								],
 								[
 									"3",
-									"I owe much to my vanished mentor. I seek to continue their work even as I search to find them."
+									"Le debo mucho a mi mentor desaparecido. Trato de continuar su obra, incluso mientras lo busco."
 								],
 								[
 									"4",
-									"I've seen great darkness, and I'm committed to being a light against it—the light of all lights."
+									"He visto una gran oscuridad y he decidido ser una luz contra ella... La luz de todas las luces."
 								],
 								[
 									"5",
-									"Someone I love has become a monster, murderer, or other threat. It's up to me to redeem them."
+									"Alguien a quien amo se ha convertido en un monstruo, un asesino u otra amenaza. Debo redimir a esa persona."
 								],
 								[
 									"6",
-									"The world has been convinced of a terrible lie. It's up to me to reveal the truth."
+									"El mundo ha sido engañado para creer en una mentira terrible y depende de mí revelar la verdad."
 								],
 								[
 									"7",
-									"I deeply miss someone and am quick to adopt people who remind me of them."
+									"Echo mucho de menos a alguien y enseguida adopto a la gente que me recuerda a esa persona."
 								],
 								[
 									"8",
-									"A great evil dwells within me. I will fight against it and the world's other evils for as long as I can."
+									"Un gran mal mora en mí. Mientras pueda, lucharé contra él y contra los otros males del mundo."
 								],
 								[
 									"9",
-									"I'm desperately seeking a cure to an affliction or a curse, either for someone close to me for myself."
+									"Busco desesperadamente una cura para un mal o una maldición, para alguien cercano o para mí."
 								],
 								[
 									"10",
-									"Spirits are drawn to me. I do all I can to help them find peace."
+									"Atraigo a los espíritus y hago todo lo posible por ayudarles a encontrar la paz."
 								],
 								[
 									"11",
-									"I use my cunning mind to solve mysteries and find justice for those who've been wronged."
+									"Uso mi mente astuta para resolver misterios y buscar la justicia para quienes han sido agraviados."
 								],
 								[
 									"12",
-									"I lost someone I care about, but I still see them in guilty visions, recurring dreams, or as a spirit."
+									"He perdido a alguien que me importa y veo a esa persona en visiones culpables, sueños recurrentes o como espíritu."
 								]
 							]
 						},
 						{
 							"type": "table",
-							"caption": "Horror Character Flaws",
+							"caption": "Defectos de los personajes de terror",
 							"colLabels": [
 								"d12",
-								"Flaw"
+								"Defecto"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -14486,51 +14487,51 @@
 							"rows": [
 								[
 									"1",
-									"I believe doom follows me and that anyone who gets close to me will face a tragic end."
+									"Creo que me persigue un destino aciago y que quienes se me acerquen sufrirán un final trágico."
 								],
 								[
 									"2",
-									"I'm convinced something is after me, appearing in mirrors, dreams, and places where no one could."
+									"Estoy seguro de que algo me sigue y se me aparece en espejos, sueños y sitios donde nadie podría."
 								],
 								[
 									"3",
-									"I'm especially superstitious and live life seeking to avoid bad luck, wicked spirits, or the Mists."
+									"Soy muy supersticioso y vivo evitando la mala suerte, los espíritus malignos o las Brumas."
 								],
 								[
 									"4",
-									"I've done unspeakable evil and will do anything to prevent others from finding out."
+									"He causado un mal innombrable y haré todo lo necesario para impedir que otros lo descubran."
 								],
 								[
 									"5",
-									"I am exceptionally credulous and believe any story or legend immediately."
+									"Mi credulidad es excepcional y me creo cualquier historia y leyenda al instante."
 								],
 								[
 									"6",
-									"I'm a skeptic and don't believe in the power of rituals, religion, superstition, or spirits."
+									"Soy una persona escéptica y no creo en los rituales, la religión, la superstición ni los espíritus."
 								],
 								[
 									"7",
-									"I know my future is written and that anything I do will lead to a prophesied end."
+									"Sé que mi futuro está escrito y que todo lo que haga conducirá a un final ya profetizado."
 								],
 								[
 									"8",
-									"I need to find the best in everyone and everything, even when that means denying obvious malice."
+									"Busco lo mejor en todas las personas y las cosas, incluso si eso significa negar una malicia evidente."
 								],
 								[
 									"9",
-									"I've seen the evil of a type of place—like forests, cities, or graveyards—and resist going there."
+									"He visto el mal de un tipo de lugar (como bosques, ciudades o cementerios) y me resisto a ir ahí."
 								],
 								[
 									"10",
-									"I'm exceptionally cautious, planning laboriously and devising countless contingencies."
+									"Mi cautela es enorme, planeo detenidamente y pienso en infinidad de contingencias."
 								],
 								[
 									"11",
-									"I have a reputation for defeating a great evil, but that's a lie and the wicked force knows."
+									"Tengo la reputación de haber derrotado a un gran mal, pero es mentira y la fuerza maligna lo sabe."
 								],
 								[
 									"12",
-									"I know the ends always justify the means and am quick to make sacrifices to attain my goals."
+									"Sé que el fin justifica los medios y no me importa hacer sacrificios para alcanzar mis metas."
 								]
 							]
 						}
@@ -14545,7 +14546,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"You relentlessly seek the truth. Perhaps you're motivated by belief in the law and a sense of universal justice, or maybe that very law has failed you and you seek to make things right. You could have witnessed something remarkable or terrible, and now you must know more about this hidden truth. Or maybe you're a detective for hire, uncovering secrets for well-paying clients. Whether the mysteries you're embroiled in are local crimes or realm-spanning conspiracies, you're driven by a personal need to hunt down even the most elusive clues and reveal what others would keep hidden in the shadows."
+									"Buscas la verdad de manera implacable. Quizá tu motivación sean la creencia en la ley y un sentido de la justicia universal, o puede que sea la propia ley la que te ha fallado y trates de enderezar las cosas. Podrías haber sido testigo de un suceso excepcional o terrible y ahora debes saber más sobre esa verdad oculta. O tal vez seas un detective a sueldo que descubre secretos para clientes con la bolsa llena. Tanto si los misterios en los que te ves envuelto son crímenes locales como si se trata de conspiraciones que afectan a todo un dominio, te impulsa la necesidad personal de seguir hasta la más mínima pista y revelar lo que otros preferirían mantener oculto en las sombras."
 								]
 							}
 						]
