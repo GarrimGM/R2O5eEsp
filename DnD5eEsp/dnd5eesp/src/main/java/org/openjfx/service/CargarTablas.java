@@ -24,8 +24,23 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 
-public class CargarTablas {
-    public static void cargarTablas() throws IOException {
+import javafx.concurrent.Service;
+import javafx.concurrent.Task;
+
+public class CargarTablas extends Service<Void>{
+
+    @Override
+    protected Task<Void> createTask() {
+        return new Task<Void>() {
+            @Override
+            protected Void call() throws Exception {
+                cargarTablas();
+                return null;
+            }
+        };
+    }
+
+    private static void cargarTablas() throws IOException {
         System.out.println("--- Inicio - Carga de tablas");
         //Consulta la lista de sources activos para comparar
         //creo un hashmap para solo tener que recorrer esta lista una vez

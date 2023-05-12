@@ -18,7 +18,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("principal"), 370, 259);
+        scene = new Scene(loadFXML("principal"), 370, 245);
         stage.setScene(scene);
         stage.getIcons().add(new Image(App.class.getResourceAsStream("img/icon.png")));
         stage.setTitle("Traducción 5eTools");

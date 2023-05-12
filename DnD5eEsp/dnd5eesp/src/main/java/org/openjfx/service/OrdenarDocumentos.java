@@ -24,8 +24,29 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 
-public class OrdenarDocumentos {
-    public static void ordenar(boolean original) throws IOException {
+import javafx.concurrent.Service;
+import javafx.concurrent.Task;
+
+public class OrdenarDocumentos extends Service<Void> {
+
+    private boolean ordenOriginal;
+
+    public OrdenarDocumentos(boolean ordenOriginal) {
+        this.ordenOriginal = ordenOriginal;
+    }
+
+    @Override
+    protected Task<Void> createTask() {
+        return new Task<Void>() {
+            @Override
+            protected Void call() throws Exception {
+                ordenar(ordenOriginal);
+                return null;
+            }
+        };
+    }
+
+    private static void ordenar(boolean original) throws IOException {
         System.out.println("--- Inicio - Ordenando documentos");
         //Consulta la lista de sources activos para comparar
         //creo un hashmap para solo tener que recorrer esta lista una vez

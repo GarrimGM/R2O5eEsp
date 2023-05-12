@@ -1,4 +1,1483 @@
 {
 	"language": [
+		{
+			"name": "Aarakocra",
+			"source": "MM-ES",
+			"page": 12,
+			"typicalSpeakers": [
+				"{@creature aarakocra|MM-ES}"
+			]
+		},
+		{
+			"name": "Perro intermitente",
+			"source": "MM-ES",
+			"page": 336,
+			"typicalSpeakers": [
+				"{@creature perro intermitente|MM-ES|perros intermitentes}"
+			]
+		},
+		{
+			"name": "Bullywug",
+			"source": "MM-ES",
+			"page": 33,
+			"typicalSpeakers": [
+				"{@creature bullywug|MM-ES|bullywugs}"
+			]
+		},
+		{
+			"name": "Águila gigante",
+			"source": "MM-ES",
+			"page": 319,
+			"typicalSpeakers": [
+				"{@creature Águila gigante|MM-ES|águilas gigantes}"
+			]
+		},
+		{
+			"name": "Alce gigante",
+			"source": "MM-ES",
+			"page": 319,
+			"typicalSpeakers": [
+				"{@creature Alce gigante|MM-ES|alces gigantes}"
+			]
+		},
+		{
+			"name": "Búho gigante",
+			"source": "MM-ES",
+			"page": 322,
+			"typicalSpeakers": [
+				"{@creature Búho gigante|MM-ES|búhos gigantes}"
+			]
+		},
+		{
+			"name": "Gith",
+			"dialects": [
+				"Githzerai",
+				"Githyanki"
+			],
+			"source": "MM-ES",
+			"page": 169,
+			"typicalSpeakers": [
+				"{@creature Monje githzerai|MM-ES|Monjes githzerai}",
+				"{@creature Guerrero githyanki|MM-ES|guerreros githyanki}",
+				"{@creature Zerth githzerai|MM-ES|Zerths githzerai}",
+				"{@creature Caballero githyanki|MM-ES|caballeros githyanki}"
+			],
+			"script": "Tir'su",
+			"entries": [
+				{
+					"type": "inset",
+					"name": "El Alfabeto Gith",
+					"entries": [
+						"Los gith utilizan un lenguaje escrito compuesto por símbolos alfabéticos dispuestos en grupos circulares llamados tir'su. Cada \"radio\" de la rueda corresponde a una letra del alfabeto. Cada grupo de caracteres representa una sola palabra y múltiples tir' su conectan para formar frases y oraciones.",
+						"Los githyanki y los githzerai hablan Gith, pero cada raza tiene un dialecto y un acento distintos. Del mismo modo, las dos razas de gith diferencian su idioma por cómo lo escriben. Los githyanki escriben un tir'su en el sentido de las agujas del reloj, comenzando por arriba. Los githzerai usan el mismos símbolos de letras pero escriben sus tir'su en sentido contrario a las agujas del reloj, comenzando desde abajo"
+					]
+				}
+			]
+		},
+		{
+			"name": "Gnoll",
+			"source": "MM-ES",
+			"page": 174,
+			"typicalSpeakers": [
+				"{@creature Gnoll|MM-ES|gnolls}",
+				"{@creature Líder de manada gnoll|MM-ES|líderes de manada gnoll}",
+				"{@creature Gnoll colmillo de Yeenoghu|MM-ES|Gnolls colmillo de Yeenoghu}"
+			]
+		},
+		{
+			"name": "Grell",
+			"source": "MM-ES",
+			"page": 183,
+			"typicalSpeakers": [
+				"{@creature Grell|MM-ES|grells}"
+			]
+		},
+		{
+			"name": "Horror ganchudo",
+			"source": "MM-ES",
+			"page": 203,
+			"typicalSpeakers": [
+				"{@creature Horror ganchudo|MM-ES|horrores ganchudos}"
+			]
+		},
+		{
+			"name": "Modron",
+			"source": "MM-ES",
+			"page": 237,
+			"typicalSpeakers": [
+				"{@creature Monodron|MM-ES|monodrones}",
+				"{@creature Duodron|MM-ES|duodrones}",
+				"{@creature Tridron|MM-ES|tridrones}",
+				"{@creature Cuadron|MM-ES|cuadrones}",
+				"{@creature Pentadron|MM-ES|pentadrones}"
+			]
+		},
+		{
+			"name": "Otyugh",
+			"source": "MM-ES",
+			"page": 259,
+			"typicalSpeakers": [
+				"{@creature Otyugh|MM-ES|otyughs}"
+			]
+		},
+		{
+			"name": "Sahuagin",
+			"source": "MM-ES",
+			"page": 277,
+			"typicalSpeakers": [
+				"{@creature Sahuagin|MM-ES|sahuagines}",
+				"{@creature Sacerdotisa sahuagin|MM-ES|sacerdotisas sahuagin}",
+				"{@creature Barón sahuagin|MM-ES|barones sahuagin}"
+			]
+		},
+		{
+			"name": "Slaad",
+			"source": "MM-ES",
+			"page": 286,
+			"typicalSpeakers": [
+				"{@creature Renacuajo slaad|MM-ES|renacuajos slaad}",
+				"{@creature Slaad rojo|MM-ES|slaad rojos}",
+				"{@creature Slaad azul|MM-ES|slaad azules}",
+				"{@creature Slaad verde|MM-ES|slaad verdes}",
+				"{@creature Slaad gris|MM-ES|slaad grises}",
+				"{@creature Slaad de la muerte|MM-ES|slaads de la muerte}"
+			]
+		},
+		{
+			"name": "Esfinge",
+			"source": "MM-ES",
+			"page": 137,
+			"typicalSpeakers": [
+				"{@creature Ginoesfinge|MM-ES|ginoesfinges}",
+				"{@creature Androesfinge|MM-ES|androesfinges}"
+			]
+		},
+		{
+			"name": "Thri-kreen",
+			"source": "MM-ES",
+			"page": 296,
+			"typicalSpeakers": [
+				"{@creature Thri-kreen|MM-ES|thri-kreens}"
+			]
+		},
+		{
+			"name": "Troglodita",
+			"source": "MM-ES",
+			"page": 297,
+			"typicalSpeakers": [
+				"{@creature Troglodita|MM-ES|trogloditas}"
+			]
+		},
+		{
+			"name": "Mole sombría",
+			"source": "MM-ES",
+			"page": 240,
+			"typicalSpeakers": [
+				"{@creature Mole sombría|MM-ES|moles sombría}"
+			]
+		},
+		{
+			"name": "Lobo invernal",
+			"source": "MM-ES",
+			"page": 332,
+			"typicalSpeakers": [
+				"{@creature Lobo invernal|MM-ES|lobos invernales}"
+			]
+		},
+		{
+			"name": "Huargo",
+			"source": "MM-ES",
+			"page": 330,
+			"typicalSpeakers": [
+				"{@creature Huargo|MM-ES|huargos}"
+			]
+		},
+		{
+			"name": "Yeti",
+			"source": "MM-ES",
+			"page": 307,
+			"typicalSpeakers": [
+				"{@creature Yeti|MM-ES|yetis}",
+				"{@creature Yeti abominable|MM-ES|yetis abominables}"
+			]
+		},
+		{
+			"name": "Abisal",
+			"source": "PHB-ES",
+			"page": 123,
+			"srd": true,
+			"basicRules": true,
+			"type": "exotic",
+			"typicalSpeakers": [
+				"{@filter demonios|bestiary|tag=demon}"
+			],
+			"script": "Infernal",
+			"fonts": [
+				"fonts/languages/PHB/Infernal/Infernal.ttf",
+				"fonts/languages/PHB/Infernal/Barazhad.otf",
+				"fonts/languages/PHB/Infernal/Barazhad Bold.otf",
+				"fonts/languages/PHB/Infernal/Barazhad Italic.otf",
+				"fonts/languages/PHB/Infernal/Barazhad Bold Italic.otf"
+			]
+		},
+		{
+			"name": "Celestial",
+			"source": "PHB-ES",
+			"page": 123,
+			"srd": true,
+			"basicRules": true,
+			"type": "exotic",
+			"typicalSpeakers": [
+				"{@filter celestiales|bestiary|type=celestial}"
+			],
+			"script": "Celestial"
+		},
+		{
+			"name": "Común",
+			"source": "PHB-ES",
+			"page": 123,
+			"srd": true,
+			"basicRules": true,
+			"type": "standard",
+			"typicalSpeakers": [
+				"{@filter humanos|bestiary|type=humanoid|tag=any race;human}"
+			],
+			"script": "Común",
+			"fonts": [
+				"fonts/languages/PHB/Human/Harpers.ttf"
+			]
+		},
+		{
+			"name": "Habla de las profundidades",
+			"source": "PHB-ES",
+			"page": 123,
+			"srd": true,
+			"basicRules": true,
+			"type": "exotic",
+			"typicalSpeakers": [
+				"{@creature azotamentes|MM-ES|azotamentes}",
+				"{@creature contemplador|MM-ES|contempladores}"
+			],
+			"script": "Ninguno"
+		},
+		{
+			"name": "Dracónico",
+			"source": "PHB-ES",
+			"page": 123,
+			"srd": true,
+			"basicRules": true,
+			"additionalSources": [
+				{
+					"source": "PHB-ES",
+					"page": 34
+				}
+			],
+			"type": "exotic",
+			"typicalSpeakers": [
+				"{@filter dragones|bestiary|type=dragon}",
+				"{@race dracónido|PHB-ES|dracónidos}"
+			],
+			"script": "Dracónico",
+			"fonts": [
+				"fonts/languages/PHB/Draconic/Iokharic.otf",
+				"fonts/languages/PHB/Draconic/Iokharic Bold.otf",
+				"fonts/languages/PHB/Draconic/Iokharic Italic.otf",
+				"fonts/languages/PHB/Draconic/Iokharic Bold Italic.otf"
+			],
+			"entries": [
+				"Se piensa que el dracónico es uno de los idiomas más antiguos y suele emplearse en el estudio de la magia. Resulta áspero a oídos de la mayoría de las criaturas y utiliza muchas consonantes duras y sibilantes."
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "languages/PHB/Draconic.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Druídico",
+			"source": "PHB-ES",
+			"page": 72,
+			"srd": true,
+			"basicRules": true,
+			"type": "secret",
+			"typicalSpeakers": [
+				"{@class druid||druids}/{@creature druid||druids}",
+				"{@creature treant||treants}"
+			],
+			"entries": [
+				"Conoces el druídico, el idioma secreto de los druidas. Puedes hablarlo y utilizarlo para dejar mensajes ocultos. Tanto tu como cualquiera que conozca este idioma advertiréis inmediatamente de la presencia de estos mensajes. Los demás deberán superar una prueba de Sabiduría ({@skill Percepción|PHB-ES}) CD 15 para detectarlos, pero no podrán descifrarlos sin recurrir a la magia."
+			]
+		},
+		{
+			"name": "Enano",
+			"source": "PHB-ES",
+			"page": 123,
+			"srd": true,
+			"basicRules": true,
+			"additionalSources": [
+				{
+					"source": "PHB-ES",
+					"page": 18
+				}
+			],
+			"type": "standard",
+			"typicalSpeakers": [
+				"{@filter enanos|bestiary|type=humanoid|tag=any race;dwarf}"
+			],
+			"script": "Enano",
+			"fonts": [
+				"fonts/languages/PHB/Dwarvish/Dethek.otf",
+				"fonts/languages/PHB/Dwarvish/Dethek Bold.otf",
+				"fonts/languages/PHB/Dwarvish/Dethek Italic.otf",
+				"fonts/languages/PHB/Dwarvish/Dethek Bold Italic.otf",
+				"fonts/languages/PHB/Dwarvish/Dethek Stone.ttf",
+				"fonts/languages/PHB/Dwarvish/Dethek Alt.ttf",
+				"fonts/languages/PHB/Dwarvish/Olde Dethek.otf",
+				"fonts/languages/PHB/Dwarvish/Olde Dethek Italic.otf",
+				"fonts/languages/PHB/Dwarvish/Davek 4e.otf",
+				"fonts/languages/PHB/Dwarvish/Davek 4e Bold.otf",
+				"fonts/languages/PHB/Dwarvish/Davek 4e Italic.otf",
+				"fonts/languages/PHB/Dwarvish/Davek 4e Bold Italic.otf"
+			],
+			"entries": [
+				"El idioma enano está lleno de consonantes duras y sonidos guturales, y estas peculiaridades se traslucen en la forma que tienen los enanos de pronunciar cualquier otro lenguaje que conozcan."
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "languages/PHB/Dwarvish.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Elfo",
+			"source": "PHB-ES",
+			"page": 123,
+			"srd": true,
+			"basicRules": true,
+			"additionalSources": [
+				{
+					"source": "PHB-ES",
+					"page": 20
+				}
+			],
+			"type": "standard",
+			"typicalSpeakers": [
+				"{@filter elfos|bestiary|type=humanoid|tag=any race;elf}"
+			],
+			"script": "Élfico",
+			"fonts": [
+				"fonts/languages/PHB/Elvish/Espruar 5e.ttf",
+				"fonts/languages/PHB/Elvish/Espruar 3e.otf",
+				"fonts/languages/PHB/Elvish/Espruar 3e Bold.otf",
+				"fonts/languages/PHB/Elvish/Espruar 3e Italic.otf",
+				"fonts/languages/PHB/Elvish/Espruar 3e Bold Italic.otf",
+				"fonts/languages/PHB/Elvish/Espruar 2e.ttf",
+				"fonts/languages/PHB/Elvish/Olde Espruar.otf",
+				"fonts/languages/PHB/Elvish/Rellanic 4e.otf",
+				"fonts/languages/PHB/Elvish/Rellanic 4e Bold.otf",
+				"fonts/languages/PHB/Elvish/Rellanic 4e Italic.otf",
+				"fonts/languages/PHB/Elvish/Rellanic 4e Bold Italic.otf"
+			],
+			"entries": [
+				"El idioma elfo es fluido, con entonaciones sutiles y una gramática compleja. La literatura élfica es rica y variada. y sus canciones y poemas son famosos entre el resto de las razas. Muchos bardos aprenden este idioma para poder añadir baladas élficas a sus repertorios."
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "languages/PHB/Elvish.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Gigante",
+			"source": "PHB-ES",
+			"page": 123,
+			"srd": true,
+			"basicRules": true,
+			"type": "standard",
+			"typicalSpeakers": [
+				"{@creature ogro|MM-ES|ogros}",
+				"{@filter gigantes|bestiary|type=giant}"
+			],
+			"script": "Enano",
+			"fonts": [
+				"fonts/languages/PHB/Dwarvish/Dethek.otf",
+				"fonts/languages/PHB/Dwarvish/Dethek Bold.otf",
+				"fonts/languages/PHB/Dwarvish/Dethek Italic.otf",
+				"fonts/languages/PHB/Dwarvish/Dethek Bold Italic.otf",
+				"fonts/languages/PHB/Dwarvish/Dethek Stone.ttf",
+				"fonts/languages/PHB/Dwarvish/Dethek Alt.ttf",
+				"fonts/languages/PHB/Dwarvish/Olde Dethek.otf",
+				"fonts/languages/PHB/Dwarvish/Olde Dethek Italic.otf",
+				"fonts/languages/PHB/Dwarvish/Davek 4e.otf",
+				"fonts/languages/PHB/Dwarvish/Davek 4e Bold.otf",
+				"fonts/languages/PHB/Dwarvish/Davek 4e Italic.otf",
+				"fonts/languages/PHB/Dwarvish/Davek 4e Bold Italic.otf"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "languages/PHB/Dwarvish.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Gnomo",
+			"source": "PHB-ES",
+			"page": 123,
+			"srd": true,
+			"basicRules": true,
+			"additionalSources": [
+				{
+					"source": "PHB-ES",
+					"page": 37
+				}
+			],
+			"type": "standard",
+			"typicalSpeakers": [
+				"{@filter gnomos|bestiary|type=humanoid|tag=any race;gnome}"
+			],
+			"script": "Enano",
+			"fonts": [
+				"fonts/languages/PHB/Dwarvish/Dethek.otf",
+				"fonts/languages/PHB/Dwarvish/Dethek Bold.otf",
+				"fonts/languages/PHB/Dwarvish/Dethek Italic.otf",
+				"fonts/languages/PHB/Dwarvish/Dethek Bold Italic.otf",
+				"fonts/languages/PHB/Dwarvish/Dethek Stone.ttf",
+				"fonts/languages/PHB/Dwarvish/Dethek Alt.ttf",
+				"fonts/languages/PHB/Dwarvish/Olde Dethek.otf",
+				"fonts/languages/PHB/Dwarvish/Olde Dethek Italic.otf",
+				"fonts/languages/PHB/Dwarvish/Davek 4e.otf",
+				"fonts/languages/PHB/Dwarvish/Davek 4e Bold.otf",
+				"fonts/languages/PHB/Dwarvish/Davek 4e Italic.otf",
+				"fonts/languages/PHB/Dwarvish/Davek 4e Bold Italic.otf"
+			],
+			"entries": [
+				"El idioma gnomo, que se escribe con el alfabeto enano, es famoso por la cantidad de tratados técnicos y catálogos de conocimiento sobre el mundo natural escritos en él."
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "languages/PHB/Dwarvish.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Goblin",
+			"source": "PHB-ES",
+			"page": 123,
+			"srd": true,
+			"basicRules": true,
+			"type": "standard",
+			"typicalSpeakers": [
+				"{@filter goblinoides|bestiary|tag=goblinoid}"
+			],
+			"script": "Enano",
+			"fonts": [
+				"fonts/languages/PHB/Dwarvish/Dethek.otf",
+				"fonts/languages/PHB/Dwarvish/Dethek Bold.otf",
+				"fonts/languages/PHB/Dwarvish/Dethek Italic.otf",
+				"fonts/languages/PHB/Dwarvish/Dethek Bold Italic.otf",
+				"fonts/languages/PHB/Dwarvish/Dethek Stone.ttf",
+				"fonts/languages/PHB/Dwarvish/Dethek Alt.ttf",
+				"fonts/languages/PHB/Dwarvish/Olde Dethek.otf",
+				"fonts/languages/PHB/Dwarvish/Olde Dethek Italic.otf",
+				"fonts/languages/PHB/Dwarvish/Davek 4e.otf",
+				"fonts/languages/PHB/Dwarvish/Davek 4e Bold.otf",
+				"fonts/languages/PHB/Dwarvish/Davek 4e Italic.otf",
+				"fonts/languages/PHB/Dwarvish/Davek 4e Bold Italic.otf"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "languages/PHB/Dwarvish.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Mediano",
+			"source": "PHB-ES",
+			"page": 123,
+			"srd": true,
+			"basicRules": true,
+			"additionalSources": [
+				{
+					"source": "PHB-ES",
+					"page": 28
+				}
+			],
+			"type": "standard",
+			"typicalSpeakers": [
+				"{@filter medianos|bestiary|type=humanoid|tag=any race;halfling}"
+			],
+			"script": "Común",
+			"entries": [
+				"El idioma de los medianos no es secreto, pero estos son reticentes a compartirlo con otros. Escriben poco, por lo que no tienen una gran producción literaria. No obstante, su tradición oral es muy rica. Prácticamente todos los medianos hablan común para poder comunicarse con los que viven junto a ellos o en los lugares por los que viajan."
+			]
+		},
+		{
+			"name": "Infernal",
+			"source": "PHB-ES",
+			"page": 123,
+			"srd": true,
+			"basicRules": true,
+			"type": "exotic",
+			"typicalSpeakers": [
+				"{@filter diablos|bestiary|tag=devil}"
+			],
+			"script": "Infernal",
+			"fonts": [
+				"fonts/languages/PHB/Infernal/Infernal.ttf",
+				"fonts/languages/PHB/Infernal/Barazhad.otf",
+				"fonts/languages/PHB/Infernal/Barazhad Bold.otf",
+				"fonts/languages/PHB/Infernal/Barazhad Italic.otf",
+				"fonts/languages/PHB/Infernal/Barazhad Bold Italic.otf"
+			]
+		},
+		{
+			"name": "Orco",
+			"source": "PHB-ES",
+			"page": 123,
+			"srd": true,
+			"basicRules": true,
+			"type": "standard",
+			"typicalSpeakers": [
+				"{@filter orcos|bestiary|tag=orc}"
+			],
+			"script": "Enano",
+			"fonts": [
+				"fonts/languages/PHB/Dwarvish/Dethek.otf",
+				"fonts/languages/PHB/Dwarvish/Dethek Bold.otf",
+				"fonts/languages/PHB/Dwarvish/Dethek Italic.otf",
+				"fonts/languages/PHB/Dwarvish/Dethek Bold Italic.otf",
+				"fonts/languages/PHB/Dwarvish/Dethek Stone.ttf",
+				"fonts/languages/PHB/Dwarvish/Dethek Alt.ttf",
+				"fonts/languages/PHB/Dwarvish/Olde Dethek.otf",
+				"fonts/languages/PHB/Dwarvish/Olde Dethek Italic.otf",
+				"fonts/languages/PHB/Dwarvish/Davek 4e.otf",
+				"fonts/languages/PHB/Dwarvish/Davek 4e Bold.otf",
+				"fonts/languages/PHB/Dwarvish/Davek 4e Italic.otf",
+				"fonts/languages/PHB/Dwarvish/Davek 4e Bold Italic.otf"
+			],
+			"entries": [
+				"El orco es un idioma áspero y severo, con consonantes duras. No tiene escritura propia, pero para transcribirlo se usa el alfabeto enano."
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "languages/PHB/Dwarvish.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Primordial",
+			"dialects": [
+				"Aurano",
+				"Acuano",
+				"Ígneo",
+				"Terrano"
+			],
+			"source": "PHB-ES",
+			"page": 123,
+			"srd": true,
+			"basicRules": true,
+			"type": "exotic",
+			"typicalSpeakers": [
+				"{@filter elementales|bestiary|type=elemental}"
+			],
+			"script": "Enano",
+			"fonts": [
+				"fonts/languages/PHB/Dwarvish/Dethek.otf",
+				"fonts/languages/PHB/Dwarvish/Dethek Bold.otf",
+				"fonts/languages/PHB/Dwarvish/Dethek Italic.otf",
+				"fonts/languages/PHB/Dwarvish/Dethek Bold Italic.otf",
+				"fonts/languages/PHB/Dwarvish/Dethek Stone.ttf",
+				"fonts/languages/PHB/Dwarvish/Dethek Alt.ttf",
+				"fonts/languages/PHB/Dwarvish/Olde Dethek.otf",
+				"fonts/languages/PHB/Dwarvish/Olde Dethek Italic.otf",
+				"fonts/languages/PHB/Dwarvish/Davek 4e.otf",
+				"fonts/languages/PHB/Dwarvish/Davek 4e Bold.otf",
+				"fonts/languages/PHB/Dwarvish/Davek 4e Italic.otf",
+				"fonts/languages/PHB/Dwarvish/Davek 4e Bold Italic.otf"
+			],
+			"entries": [
+				"El primordial es un lenguaje gutural, lleno de sílabas ásperas y consonantes duras."
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "languages/PHB/Dwarvish.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Silvano",
+			"source": "PHB-ES",
+			"page": 123,
+			"srd": true,
+			"basicRules": true,
+			"type": "exotic",
+			"typicalSpeakers": [
+				"{@filter seres feéricos|bestiary|type=fey}"
+			],
+			"script": "Élfico",
+			"fonts": [
+				"fonts/languages/PHB/Elvish/Espruar 5e.ttf",
+				"fonts/languages/PHB/Elvish/Espruar 3e.otf",
+				"fonts/languages/PHB/Elvish/Espruar 3e Bold.otf",
+				"fonts/languages/PHB/Elvish/Espruar 3e Italic.otf",
+				"fonts/languages/PHB/Elvish/Espruar 3e Bold Italic.otf",
+				"fonts/languages/PHB/Elvish/Espruar 2e.ttf",
+				"fonts/languages/PHB/Elvish/Olde Espruar.otf",
+				"fonts/languages/PHB/Elvish/Rellanic 4e.otf",
+				"fonts/languages/PHB/Elvish/Rellanic 4e Bold.otf",
+				"fonts/languages/PHB/Elvish/Rellanic 4e Italic.otf",
+				"fonts/languages/PHB/Elvish/Rellanic 4e Bold Italic.otf"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "languages/PHB/Elvish.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Jerga de Ladrones",
+			"source": "PHB-ES",
+			"page": 117,
+			"srd": true,
+			"basicRules": true,
+			"type": "secret",
+			"typicalSpeakers": [
+				"{@creature asesino|MM-ES|asesinos}",
+				"{@class pícaro|PHB-ES|pícaros}"
+			],
+			"entries": [
+				"Durante tu entrenamiento como pícaro aprendiste la jerga de ladrones, una mezcla de dialecto, argot y código secreto que te permite esconder mensajes en lo que parece una conversación normal y corriente. Únicamente aquellas criaturas que conozcan la jerga de ladrones podrán en tender estos mensajes. Expresar un mensaje utilizando esta jerga precisa de cuatro veces el tiempo que tardarías en comunicar la misma idea directamente."
+			]
+		},
+		{
+			"name": "Infracomún",
+			"source": "PHB-ES",
+			"page": 123,
+			"srd": true,
+			"basicRules": true,
+			"type": "exotic",
+			"typicalSpeakers": [
+				"mercaderes del Underdark"
+			],
+			"script": "Élfico",
+			"fonts": [
+				"fonts/languages/PHB/Elvish/Espruar 5e.ttf",
+				"fonts/languages/PHB/Elvish/Espruar 3e.otf",
+				"fonts/languages/PHB/Elvish/Espruar 3e Bold.otf",
+				"fonts/languages/PHB/Elvish/Espruar 3e Italic.otf",
+				"fonts/languages/PHB/Elvish/Espruar 3e Bold Italic.otf",
+				"fonts/languages/PHB/Elvish/Espruar 2e.ttf",
+				"fonts/languages/PHB/Elvish/Olde Espruar.otf",
+				"fonts/languages/PHB/Elvish/Rellanic 4e.otf",
+				"fonts/languages/PHB/Elvish/Rellanic 4e Bold.otf",
+				"fonts/languages/PHB/Elvish/Rellanic 4e Italic.otf",
+				"fonts/languages/PHB/Elvish/Rellanic 4e Bold Italic.otf"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "languages/PHB/Elvish.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Alzhedo",
+			"source": "SCAG-ES",
+			"page": 112,
+			"typicalSpeakers": [
+				"Calishita, etnia humana"
+			],
+			"script": "Thorass",
+			"fonts": [
+				"fonts/languages/PHB/Human/Thorass.otf",
+				"fonts/languages/PHB/Human/Thorass Bold.otf",
+				"fonts/languages/PHB/Human/Thorass Italic.otf",
+				"fonts/languages/PHB/Human/Thorass Bold Italic.otf",
+				"fonts/languages/PHB/Human/Olde Thorass.otf"
+			],
+			"entries": [
+				{
+					"type": "inset",
+					"name": "Opción: idiomas humanos",
+					"entries": [
+						"Muchas etnias y naciones humanas de Faerûn tienen un idioma propio, además del común. La mayoría de las lenguas humanas están escritas en thorass, el alfabeto del antiguo común, que derivaba del chondathano que utilizaban los mercaderes como lengua cotidiana. Unos pocos lenguajes humanos usan otros alfabetos, como el dracónico, el dethek y el espruar.",
+						"Si el Dungeon Master acepta emplear esta opción, se le supondrá a cualquier humano de un grupo étnico con idioma propio el conocimiento de ese idioma además del común. El idioma étnico se considerará un idioma gratuito adicional para estos individuos."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "languages/SCAG/Thorass Common.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Chessentano",
+			"source": "SCAG-ES",
+			"page": 112,
+			"typicalSpeakers": [
+				"Mulano, etnia humana"
+			],
+			"script": "Thorass",
+			"fonts": [
+				"fonts/languages/PHB/Human/Thorass.otf",
+				"fonts/languages/PHB/Human/Thorass Bold.otf",
+				"fonts/languages/PHB/Human/Thorass Italic.otf",
+				"fonts/languages/PHB/Human/Thorass Bold Italic.otf",
+				"fonts/languages/PHB/Human/Olde Thorass.otf"
+			],
+			"entries": [
+				{
+					"type": "inset",
+					"name": "Opción: idiomas humanos",
+					"entries": [
+						"Muchas etnias y naciones humanas de Faerûn tienen un idioma propio, además del común. La mayoría de las lenguas humanas están escritas en thorass, el alfabeto del antiguo común, que derivaba del chondathano que utilizaban los mercaderes como lengua cotidiana. Unos pocos lenguajes humanos usan otros alfabetos, como el dracónico, el dethek y el espruar.",
+						"Si el Dungeon Master acepta emplear esta opción, se le supondrá a cualquier humano de un grupo étnico con idioma propio el conocimiento de ese idioma además del común. El idioma étnico se considerará un idioma gratuito adicional para estos individuos."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "languages/SCAG/Thorass Common.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Chondathano",
+			"source": "SCAG-ES",
+			"page": 112,
+			"typicalSpeakers": [
+				"Chondathano, etnia humana",
+				"Tethyriano, etnia humana"
+			],
+			"script": "Thorass",
+			"fonts": [
+				"fonts/languages/PHB/Human/Thorass.otf",
+				"fonts/languages/PHB/Human/Thorass Bold.otf",
+				"fonts/languages/PHB/Human/Thorass Italic.otf",
+				"fonts/languages/PHB/Human/Thorass Bold Italic.otf",
+				"fonts/languages/PHB/Human/Olde Thorass.otf"
+			],
+			"entries": [
+				{
+					"type": "inset",
+					"name": "Opción: idiomas humanos",
+					"entries": [
+						"Muchas etnias y naciones humanas de Faerûn tienen un idioma propio, además del común. La mayoría de las lenguas humanas están escritas en thorass, el alfabeto del antiguo común, que derivaba del chondathano que utilizaban los mercaderes como lengua cotidiana. Unos pocos lenguajes humanos usan otros alfabetos, como el dracónico, el dethek y el espruar.",
+						"Si el Dungeon Master acepta emplear esta opción, se le supondrá a cualquier humano de un grupo étnico con idioma propio el conocimiento de ese idioma además del común. El idioma étnico se considerará un idioma gratuito adicional para estos individuos."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "languages/SCAG/Thorass Common.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Damarano",
+			"source": "SCAG-ES",
+			"page": 112,
+			"typicalSpeakers": [
+				"Damarano, etnia humana",
+				"Nar, etnia humana"
+			],
+			"script": "Dethek",
+			"entries": [
+				{
+					"type": "inset",
+					"name": "Opción: idiomas humanos",
+					"entries": [
+						"Muchas etnias y naciones humanas de Faerûn tienen un idioma propio, además del común. La mayoría de las lenguas humanas están escritas en thorass, el alfabeto del antiguo común, que derivaba del chondathano que utilizaban los mercaderes como lengua cotidiana. Unos pocos lenguajes humanos usan otros alfabetos, como el dracónico, el dethek y el espruar.",
+						"Si el Dungeon Master acepta emplear esta opción, se le supondrá a cualquier humano de un grupo étnico con idioma propio el conocimiento de ese idioma además del común. El idioma étnico se considerará un idioma gratuito adicional para estos individuos."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "languages/SCAG/Thorass Common.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Dambrathano",
+			"source": "SCAG-ES",
+			"page": 112,
+			"typicalSpeakers": [
+				"Arkaiun, etnia humana"
+			],
+			"script": "Espruar",
+			"entries": [
+				{
+					"type": "inset",
+					"name": "Opción: idiomas humanos",
+					"entries": [
+						"Muchas etnias y naciones humanas de Faerûn tienen un idioma propio, además del común. La mayoría de las lenguas humanas están escritas en thorass, el alfabeto del antiguo común, que derivaba del chondathano que utilizaban los mercaderes como lengua cotidiana. Unos pocos lenguajes humanos usan otros alfabetos, como el dracónico, el dethek y el espruar.",
+						"Si el Dungeon Master acepta emplear esta opción, se le supondrá a cualquier humano de un grupo étnico con idioma propio el conocimiento de ese idioma además del común. El idioma étnico se considerará un idioma gratuito adicional para estos individuos."
+					]
+				}
+			]
+		},
+		{
+			"name": "Gurano",
+			"source": "SCAG-ES",
+			"page": 112,
+			"typicalSpeakers": [
+				"Gur, etnia humana"
+			],
+			"script": "Thorass",
+			"fonts": [
+				"fonts/languages/PHB/Human/Thorass.otf",
+				"fonts/languages/PHB/Human/Thorass Bold.otf",
+				"fonts/languages/PHB/Human/Thorass Italic.otf",
+				"fonts/languages/PHB/Human/Thorass Bold Italic.otf",
+				"fonts/languages/PHB/Human/Olde Thorass.otf"
+			],
+			"entries": [
+				"Un dialecto del {@language roushoum|SCAG-ES} y el {@language rashemí|SCAG-ES}.",
+				{
+					"type": "inset",
+					"name": "Opción: idiomas humanos",
+					"entries": [
+						"Muchas etnias y naciones humanas de Faerûn tienen un idioma propio, además del común. La mayoría de las lenguas humanas están escritas en thorass, el alfabeto del antiguo común, que derivaba del chondathano que utilizaban los mercaderes como lengua cotidiana. Unos pocos lenguajes humanos usan otros alfabetos, como el dracónico, el dethek y el espruar.",
+						"Si el Dungeon Master acepta emplear esta opción, se le supondrá a cualquier humano de un grupo étnico con idioma propio el conocimiento de ese idioma además del común. El idioma étnico se considerará un idioma gratuito adicional para estos individuos."
+					]
+				}
+			]
+		},
+		{
+			"name": "Halruaano",
+			"source": "SCAG-ES",
+			"page": 112,
+			"typicalSpeakers": [
+				"Halruaano, etnia humana"
+			],
+			"script": "Dracónico",
+			"fonts": [
+				"fonts/languages/PHB/Draconic/Iokharic.otf",
+				"fonts/languages/PHB/Draconic/Iokharic Bold.otf",
+				"fonts/languages/PHB/Draconic/Iokharic Italic.otf",
+				"fonts/languages/PHB/Draconic/Iokharic Bold Italic.otf"
+			],
+			"entries": [
+				{
+					"type": "inset",
+					"name": "Opción: idiomas humanos",
+					"entries": [
+						"Muchas etnias y naciones humanas de Faerûn tienen un idioma propio, además del común. La mayoría de las lenguas humanas están escritas en thorass, el alfabeto del antiguo común, que derivaba del chondathano que utilizaban los mercaderes como lengua cotidiana. Unos pocos lenguajes humanos usan otros alfabetos, como el dracónico, el dethek y el espruar.",
+						"Si el Dungeon Master acepta emplear esta opción, se le supondrá a cualquier humano de un grupo étnico con idioma propio el conocimiento de ese idioma además del común. El idioma étnico se considerará un idioma gratuito adicional para estos individuos."
+					]
+				}
+			]
+		},
+		{
+			"name": "Illuskano",
+			"source": "SCAG-ES",
+			"page": 112,
+			"typicalSpeakers": [
+				"Illuskano, etnia humana"
+			],
+			"script": "Thorass",
+			"fonts": [
+				"fonts/languages/PHB/Human/Thorass.otf",
+				"fonts/languages/PHB/Human/Thorass Bold.otf",
+				"fonts/languages/PHB/Human/Thorass Italic.otf",
+				"fonts/languages/PHB/Human/Thorass Bold Italic.otf",
+				"fonts/languages/PHB/Human/Olde Thorass.otf"
+			],
+			"entries": [
+				{
+					"type": "inset",
+					"name": "Opción: idiomas humanos",
+					"entries": [
+						"Muchas etnias y naciones humanas de Faerûn tienen un idioma propio, además del común. La mayoría de las lenguas humanas están escritas en thorass, el alfabeto del antiguo común, que derivaba del chondathano que utilizaban los mercaderes como lengua cotidiana. Unos pocos lenguajes humanos usan otros alfabetos, como el dracónico, el dethek y el espruar.",
+						"Si el Dungeon Master acepta emplear esta opción, se le supondrá a cualquier humano de un grupo étnico con idioma propio el conocimiento de ese idioma además del común. El idioma étnico se considerará un idioma gratuito adicional para estos individuos."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "languages/SCAG/Thorass Common.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Midano",
+			"source": "SCAG-ES",
+			"page": 112,
+			"typicalSpeakers": [
+				"Bedine, etnia humana"
+			],
+			"script": "Thorass",
+			"fonts": [
+				"fonts/languages/PHB/Human/Thorass.otf",
+				"fonts/languages/PHB/Human/Thorass Bold.otf",
+				"fonts/languages/PHB/Human/Thorass Italic.otf",
+				"fonts/languages/PHB/Human/Thorass Bold Italic.otf",
+				"fonts/languages/PHB/Human/Olde Thorass.otf"
+			],
+			"entries": [
+				{
+					"type": "inset",
+					"name": "Opción: idiomas humanos",
+					"entries": [
+						"Muchas etnias y naciones humanas de Faerûn tienen un idioma propio, además del común. La mayoría de las lenguas humanas están escritas en thorass, el alfabeto del antiguo común, que derivaba del chondathano que utilizaban los mercaderes como lengua cotidiana. Unos pocos lenguajes humanos usan otros alfabetos, como el dracónico, el dethek y el espruar.",
+						"Si el Dungeon Master acepta emplear esta opción, se le supondrá a cualquier humano de un grupo étnico con idioma propio el conocimiento de ese idioma además del común. El idioma étnico se considerará un idioma gratuito adicional para estos individuos."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "languages/SCAG/Thorass Common.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Mulhonrandín",
+			"source": "SCAG-ES",
+			"page": 112,
+			"typicalSpeakers": [
+				"Mulano, etnia humana"
+			],
+			"script": "Thorass",
+			"fonts": [
+				"fonts/languages/PHB/Human/Thorass.otf",
+				"fonts/languages/PHB/Human/Thorass Bold.otf",
+				"fonts/languages/PHB/Human/Thorass Italic.otf",
+				"fonts/languages/PHB/Human/Thorass Bold Italic.otf",
+				"fonts/languages/PHB/Human/Olde Thorass.otf"
+			],
+			"entries": [
+				{
+					"type": "inset",
+					"name": "Opción: idiomas humanos",
+					"entries": [
+						"Muchas etnias y naciones humanas de Faerûn tienen un idioma propio, además del común. La mayoría de las lenguas humanas están escritas en thorass, el alfabeto del antiguo común, que derivaba del chondathano que utilizaban los mercaderes como lengua cotidiana. Unos pocos lenguajes humanos usan otros alfabetos, como el dracónico, el dethek y el espruar.",
+						"Si el Dungeon Master acepta emplear esta opción, se le supondrá a cualquier humano de un grupo étnico con idioma propio el conocimiento de ese idioma además del común. El idioma étnico se considerará un idioma gratuito adicional para estos individuos."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "languages/SCAG/Thorass Common.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Rashemí",
+			"source": "SCAG-ES",
+			"page": 112,
+			"typicalSpeakers": [
+				"Rashemí, etnia humana"
+			],
+			"script": "Thorass",
+			"fonts": [
+				"fonts/languages/PHB/Human/Thorass.otf",
+				"fonts/languages/PHB/Human/Thorass Bold.otf",
+				"fonts/languages/PHB/Human/Thorass Italic.otf",
+				"fonts/languages/PHB/Human/Thorass Bold Italic.otf",
+				"fonts/languages/PHB/Human/Olde Thorass.otf"
+			],
+			"entries": [
+				{
+					"type": "inset",
+					"name": "Opción: idiomas humanos",
+					"entries": [
+						"Muchas etnias y naciones humanas de Faerûn tienen un idioma propio, además del común. La mayoría de las lenguas humanas están escritas en thorass, el alfabeto del antiguo común, que derivaba del chondathano que utilizaban los mercaderes como lengua cotidiana. Unos pocos lenguajes humanos usan otros alfabetos, como el dracónico, el dethek y el espruar.",
+						"Si el Dungeon Master acepta emplear esta opción, se le supondrá a cualquier humano de un grupo étnico con idioma propio el conocimiento de ese idioma además del común. El idioma étnico se considerará un idioma gratuito adicional para estos individuos."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "languages/SCAG/Thorass Common.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Roushoum",
+			"source": "SCAG-ES",
+			"page": 112,
+			"typicalSpeakers": [
+				"Imaskares, etnia humana"
+			],
+			"script": "Thorass",
+			"fonts": [
+				"fonts/languages/PHB/Human/Thorass.otf",
+				"fonts/languages/PHB/Human/Thorass Bold.otf",
+				"fonts/languages/PHB/Human/Thorass Italic.otf",
+				"fonts/languages/PHB/Human/Thorass Bold Italic.otf",
+				"fonts/languages/PHB/Human/Olde Thorass.otf"
+			],
+			"entries": [
+				{
+					"type": "inset",
+					"name": "Opción: idiomas humanos",
+					"entries": [
+						"Muchas etnias y naciones humanas de Faerûn tienen un idioma propio, además del común. La mayoría de las lenguas humanas están escritas en thorass, el alfabeto del antiguo común, que derivaba del chondathano que utilizaban los mercaderes como lengua cotidiana. Unos pocos lenguajes humanos usan otros alfabetos, como el dracónico, el dethek y el espruar.",
+						"Si el Dungeon Master acepta emplear esta opción, se le supondrá a cualquier humano de un grupo étnico con idioma propio el conocimiento de ese idioma además del común. El idioma étnico se considerará un idioma gratuito adicional para estos individuos."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "languages/SCAG/Thorass Common.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Shaarano",
+			"source": "SCAG-ES",
+			"page": 112,
+			"typicalSpeakers": [
+				"Shaarano, etnia humana"
+			],
+			"script": "Dethek",
+			"entries": [
+				{
+					"type": "inset",
+					"name": "Opción: idiomas humanos",
+					"entries": [
+						"Muchas etnias y naciones humanas de Faerûn tienen un idioma propio, además del común. La mayoría de las lenguas humanas están escritas en thorass, el alfabeto del antiguo común, que derivaba del chondathano que utilizaban los mercaderes como lengua cotidiana. Unos pocos lenguajes humanos usan otros alfabetos, como el dracónico, el dethek y el espruar.",
+						"Si el Dungeon Master acepta emplear esta opción, se le supondrá a cualquier humano de un grupo étnico con idioma propio el conocimiento de ese idioma además del común. El idioma étnico se considerará un idioma gratuito adicional para estos individuos."
+					]
+				}
+			]
+		},
+		{
+			"name": "Shou",
+			"source": "SCAG-ES",
+			"page": 112,
+			"typicalSpeakers": [
+				"Shou, etnia humana"
+			],
+			"script": "Thorass",
+			"fonts": [
+				"fonts/languages/PHB/Human/Thorass.otf",
+				"fonts/languages/PHB/Human/Thorass Bold.otf",
+				"fonts/languages/PHB/Human/Thorass Italic.otf",
+				"fonts/languages/PHB/Human/Thorass Bold Italic.otf",
+				"fonts/languages/PHB/Human/Olde Thorass.otf"
+			],
+			"entries": [
+				{
+					"type": "inset",
+					"name": "Opción: idiomas humanos",
+					"entries": [
+						"Muchas etnias y naciones humanas de Faerûn tienen un idioma propio, además del común. La mayoría de las lenguas humanas están escritas en thorass, el alfabeto del antiguo común, que derivaba del chondathano que utilizaban los mercaderes como lengua cotidiana. Unos pocos lenguajes humanos usan otros alfabetos, como el dracónico, el dethek y el espruar.",
+						"Si el Dungeon Master acepta emplear esta opción, se le supondrá a cualquier humano de un grupo étnico con idioma propio el conocimiento de ese idioma además del común. El idioma étnico se considerará un idioma gratuito adicional para estos individuos."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "languages/SCAG/Thorass Common.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Thayano",
+			"source": "SCAG-ES",
+			"page": 112,
+			"typicalSpeakers": [
+				"Mulano, etnia humana"
+			],
+			"script": "Thorass",
+			"fonts": [
+				"fonts/languages/PHB/Human/Thorass.otf",
+				"fonts/languages/PHB/Human/Thorass Bold.otf",
+				"fonts/languages/PHB/Human/Thorass Italic.otf",
+				"fonts/languages/PHB/Human/Thorass Bold Italic.otf",
+				"fonts/languages/PHB/Human/Olde Thorass.otf"
+			],
+			"entries": [
+				{
+					"type": "inset",
+					"name": "Opción: idiomas humanos",
+					"entries": [
+						"Muchas etnias y naciones humanas de Faerûn tienen un idioma propio, además del común. La mayoría de las lenguas humanas están escritas en thorass, el alfabeto del antiguo común, que derivaba del chondathano que utilizaban los mercaderes como lengua cotidiana. Unos pocos lenguajes humanos usan otros alfabetos, como el dracónico, el dethek y el espruar.",
+						"Si el Dungeon Master acepta emplear esta opción, se le supondrá a cualquier humano de un grupo étnico con idioma propio el conocimiento de ese idioma además del común. El idioma étnico se considerará un idioma gratuito adicional para estos individuos."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "languages/SCAG/Thorass Common.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Tuigano",
+			"source": "SCAG-ES",
+			"page": 112,
+			"typicalSpeakers": [
+				"Tuigano, etnia humana"
+			],
+			"script": "Thorass",
+			"fonts": [
+				"fonts/languages/PHB/Human/Thorass.otf",
+				"fonts/languages/PHB/Human/Thorass Bold.otf",
+				"fonts/languages/PHB/Human/Thorass Italic.otf",
+				"fonts/languages/PHB/Human/Thorass Bold Italic.otf",
+				"fonts/languages/PHB/Human/Olde Thorass.otf"
+			],
+			"entries": [
+				{
+					"type": "inset",
+					"name": "Opción: idiomas humanos",
+					"entries": [
+						"Muchas etnias y naciones humanas de Faerûn tienen un idioma propio, además del común. La mayoría de las lenguas humanas están escritas en thorass, el alfabeto del antiguo común, que derivaba del chondathano que utilizaban los mercaderes como lengua cotidiana. Unos pocos lenguajes humanos usan otros alfabetos, como el dracónico, el dethek y el espruar.",
+						"Si el Dungeon Master acepta emplear esta opción, se le supondrá a cualquier humano de un grupo étnico con idioma propio el conocimiento de ese idioma además del común. El idioma étnico se considerará un idioma gratuito adicional para estos individuos."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "languages/SCAG/Thorass Common.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Turmico",
+			"source": "SCAG-ES",
+			"page": 112,
+			"typicalSpeakers": [
+				"Turami, etnia humana"
+			],
+			"script": "Thorass",
+			"fonts": [
+				"fonts/languages/PHB/Human/Thorass.otf",
+				"fonts/languages/PHB/Human/Thorass Bold.otf",
+				"fonts/languages/PHB/Human/Thorass Italic.otf",
+				"fonts/languages/PHB/Human/Thorass Bold Italic.otf",
+				"fonts/languages/PHB/Human/Olde Thorass.otf"
+			],
+			"entries": [
+				{
+					"type": "inset",
+					"name": "Opción: idiomas humanos",
+					"entries": [
+						"Muchas etnias y naciones humanas de Faerûn tienen un idioma propio, además del común. La mayoría de las lenguas humanas están escritas en thorass, el alfabeto del antiguo común, que derivaba del chondathano que utilizaban los mercaderes como lengua cotidiana. Unos pocos lenguajes humanos usan otros alfabetos, como el dracónico, el dethek y el espruar.",
+						"Si el Dungeon Master acepta emplear esta opción, se le supondrá a cualquier humano de un grupo étnico con idioma propio el conocimiento de ese idioma además del común. El idioma étnico se considerará un idioma gratuito adicional para estos individuos."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "languages/SCAG/Thorass Common.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Uluik",
+			"source": "SCAG-ES",
+			"page": 112,
+			"typicalSpeakers": [
+				"Ulutiun, etnia humana"
+			],
+			"script": "Thorass",
+			"fonts": [
+				"fonts/languages/PHB/Human/Thorass.otf",
+				"fonts/languages/PHB/Human/Thorass Bold.otf",
+				"fonts/languages/PHB/Human/Thorass Italic.otf",
+				"fonts/languages/PHB/Human/Thorass Bold Italic.otf",
+				"fonts/languages/PHB/Human/Olde Thorass.otf"
+			],
+			"entries": [
+				{
+					"type": "inset",
+					"name": "Opción: idiomas humanos",
+					"entries": [
+						"Muchas etnias y naciones humanas de Faerûn tienen un idioma propio, además del común. La mayoría de las lenguas humanas están escritas en thorass, el alfabeto del antiguo común, que derivaba del chondathano que utilizaban los mercaderes como lengua cotidiana. Unos pocos lenguajes humanos usan otros alfabetos, como el dracónico, el dethek y el espruar.",
+						"Si el Dungeon Master acepta emplear esta opción, se le supondrá a cualquier humano de un grupo étnico con idioma propio el conocimiento de ese idioma además del común. El idioma étnico se considerará un idioma gratuito adicional para estos individuos."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "languages/SCAG/Thorass Common.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Untherico",
+			"source": "SCAG-ES",
+			"page": 112,
+			"typicalSpeakers": [
+				"Mulano, etnia humana"
+			],
+			"script": "Thorass",
+			"fonts": [
+				"fonts/languages/PHB/Human/Thorass.otf",
+				"fonts/languages/PHB/Human/Thorass Bold.otf",
+				"fonts/languages/PHB/Human/Thorass Italic.otf",
+				"fonts/languages/PHB/Human/Thorass Bold Italic.otf",
+				"fonts/languages/PHB/Human/Olde Thorass.otf"
+			],
+			"entries": [
+				{
+					"type": "inset",
+					"name": "Opción: idiomas humanos",
+					"entries": [
+						"Muchas etnias y naciones humanas de Faerûn tienen un idioma propio, además del común. La mayoría de las lenguas humanas están escritas en thorass, el alfabeto del antiguo común, que derivaba del chondathano que utilizaban los mercaderes como lengua cotidiana. Unos pocos lenguajes humanos usan otros alfabetos, como el dracónico, el dethek y el espruar.",
+						"Si el Dungeon Master acepta emplear esta opción, se le supondrá a cualquier humano de un grupo étnico con idioma propio el conocimiento de ese idioma además del común. El idioma étnico se considerará un idioma gratuito adicional para estos individuos."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "languages/SCAG/Thorass Common.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Waelano",
+			"source": "SCAG-ES",
+			"page": 112,
+			"typicalSpeakers": [
+				"Ffolk, etnia humana"
+			],
+			"script": "Thorass",
+			"fonts": [
+				"fonts/languages/PHB/Human/Thorass.otf",
+				"fonts/languages/PHB/Human/Thorass Bold.otf",
+				"fonts/languages/PHB/Human/Thorass Italic.otf",
+				"fonts/languages/PHB/Human/Thorass Bold Italic.otf",
+				"fonts/languages/PHB/Human/Olde Thorass.otf"
+			],
+			"entries": [
+				{
+					"type": "inset",
+					"name": "Opción: idiomas humanos",
+					"entries": [
+						"Muchas etnias y naciones humanas de Faerûn tienen un idioma propio, además del común. La mayoría de las lenguas humanas están escritas en thorass, el alfabeto del antiguo común, que derivaba del chondathano que utilizaban los mercaderes como lengua cotidiana. Unos pocos lenguajes humanos usan otros alfabetos, como el dracónico, el dethek y el espruar.",
+						"Si el Dungeon Master acepta emplear esta opción, se le supondrá a cualquier humano de un grupo étnico con idioma propio el conocimiento de ese idioma además del común. El idioma étnico se considerará un idioma gratuito adicional para estos individuos."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "languages/SCAG/Thorass Common.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Bothii",
+			"source": "SKT-ES",
+			"page": 66,
+			"typicalSpeakers": [
+				"{@creature Líder bárbaro uthgardt|SKT-ES|Bárbaros uthgardt}",
+				"{@creature Chamán uthgardt|SKT-ES|chamanes uthgardt}"
+			]
+		},
+		{
+			"name": "Yikaria",
+			"source": "SKT-ES",
+			"page": 244,
+			"typicalSpeakers": [
+				"{@creature Sacerdote yikaria|SKT-ES|sacerdotes yikaria}",
+				"{@creature Guerrero yikaria|SKT-ES|guerreros yikaria}"
+			]
+		},
+		{
+			"name": "Olmano",
+			"source": "TftYP-ES",
+			"page": 238
+		},
+		{
+			"name": "Grung",
+			"source": "VGM-ES",
+			"page": 156,
+			"typicalSpeakers": [
+				"{@creature Grung|VGM-ES|grungs}",
+				"{@creature Grung salvaje|VGM-ES|grungs salvajes}",
+				"{@creature Guerrero de élite grung|VGM-ES|guerreros de élite grung}"
+			]
+		},
+		{
+			"name": "Qualith",
+			"source": "VGM-ES",
+			"page": 10,
+			"typicalSpeakers": [
+				"{@creature Azotamentes|MM-ES|azotamentes}"
+			],
+			"script": "Qualith",
+			"entries": [
+				"La \"escritura\" de los azotamentes, conocida como qualith, no es tan simple como un conjunto de símbolos que representan sonidos o ideas. Una inscripción en qualith captura los pensamientos de su creador y los transmite psiónicamente a un ilícido que luego lee el texto tocándolo con sus tentáculos. Los azotamentes escriben en qualith imprimiendo psiónicamente sus mensajes en material no mágico y sin vida que agarran o acarician con sus tentáculos. La impresión provoca cambios imperceptibles en la superficie del objeto y la abrasión o degradación del material puede hacer que la inscripción se desvanezca y falle.",
+				"Una expresión en qualith se compone de estrofas de cuatro líneas empaquetadas en bloques entrelazados, creando patrones complejos que son indescifrables por otras criaturas. Sin embargo, alguien que toque una inscripción en qualith puede recibir una visión fragmentada de los pensamientos de las diferentes capas que contiene. Cualquiera que no sea ilícido y quiera entender una inscripción en qualith puede hacer una prueba de Inteligencia (CD basada en la complejidad de los pensamientos que contiene) para tratar de extraer parte de su significado. Múltiples intentos con éxito podrían descubrir diferentes aspectos sobre el autor ilícido, su significado previsto y su objetivo. Un intento fallido resulta en un dolor de cabeza aplastante y, en casos extremos, la locura. Un conjuro de {@spell entender idiomas|PHB-ES} proporciona una comprensión de la inscripción más o menos equivalente a la que obtendría un azotamentes."
+			]
+		},
+		{
+			"name": "Tlincalli",
+			"source": "VGM-ES",
+			"page": 194,
+			"typicalSpeakers": [
+				"{@creature Tlincalli|VGM-ES|tlincalli}"
+			]
+		},
+		{
+			"name": "Vegepigmeo",
+			"source": "VGM-ES",
+			"page": 197,
+			"typicalSpeakers": [
+				"{@creature Vegepigmeo|VGM-ES|vegepigmeos}",
+				"{@creature Jefe vegepigmeo|VGM-ES|jefes vegepigmeo}"
+			]
+		}
 	]
 }

@@ -21,8 +21,23 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 
-public class FormarDocumento {
-    public static void crear() throws IOException {
+import javafx.concurrent.Service;
+import javafx.concurrent.Task;
+
+public class FormarDocumento extends Service<Void>{
+
+    @Override
+    protected Task<Void> createTask() {
+        return new Task<Void>() {
+            @Override
+            protected Void call() throws Exception {
+                crear();
+                return null;
+            }
+        };
+    }
+
+    private static void crear() throws IOException {
         System.out.println("Inicio - Creando documento final");
         //Crea el documento json base
         String rutaDocumento = AppProperties.getInstance().getProperty("rutaEsp")+"DnD-ES.json";
