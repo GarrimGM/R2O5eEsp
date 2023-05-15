@@ -778,20 +778,20 @@
 			}
 		},
 		{
-			"name": "Holy Symbol of Ravenkind",
+			"name": "Símbolo Sagrado de los Cuervos",
 			"source": "CoS-ES",
-			"page": 222,
+			"page": 223,
 			"rarity": "legendary",
-			"reqAttune": "by a cleric or paladin of good alignment",
+			"reqAttune": "con un clérigo o un paladín de alineamiento bueno",
 			"reqAttuneTags": [
 				{
-					"class": "cleric",
+					"class": "clérigo|PHB-ES",
 					"alignment": [
 						"G"
 					]
 				},
 				{
-					"class": "paladin",
+					"class": "paladín|PHB-ES",
 					"alignment": [
 						"G"
 					]
@@ -802,28 +802,28 @@
 			"rechargeAmount": "{@dice 1d6 + 4}",
 			"charges": 10,
 			"entries": [
-				"The Holy Symbol of Ravenkind is a unique holy symbol sacred to the good-hearted faithful of Barovia. It predates the establishment of any church in Barovia. According to legend, it was delivered to a paladin named Lugdana by a giant raven—or an angel in the form of a giant raven. Lugdana used the holy symbol to root out and destroy nests of vampires until her death. The high priests of Ravenloft kept and wore the holy symbol after Lugdana's passing.",
-				"The holy symbol is a platinum amulet shaped like the sun, with a large crystal embedded in its center.",
-				"The holy symbol has 10 charges for the following properties. It regains {@dice 1d6 + 4} charges daily at dawn.",
+				"El Símbolo Sagrado de los Cuervos es un símbolo sagrado único para los fieles de buen corazón de Barovia. Ya existía antes de que se construyera cualquiera de las iglesias barovianas. Cuenta la leyenda que un cuervo gigante, o un ángel en forma de esta ave, entregó el objeto a una paladín llamada Lugdana. Esta última lo empleó para encontrar y destruir nidos de vampiros hasta su muerte. Los sumos sacerdotes de Ravenloft se encargaron de cuidarlo y usarlo tras el fallecimiento de Lugdana.",
+				"El símbolo sagrado es un amuleto de platino contorneado como un sol que posee un gran cristal engastado en su centro.",
+				"Dispone de 10 cargas para utilizar las siguientes propiedades. Cada día, al amanecer, recupera {@dice 1d6 + 4} cargas gastadas.",
 				{
-					"name": "Hold Vampires",
+					"name": "Inmovilizar vampiros",
 					"type": "entries",
 					"entries": [
-						"As an action, you can expend 1 charge and present the holy symbol to make it flare with holy power. Vampires and {@creature vampire spawn} within 30 feet of the holy symbol when it flares must make a DC 15 Wisdom saving throw. On a failed save, a target is {@condition paralyzed} for 1 minute. It can repeat the saving throw at the end of its turns to end the effect on itself."
+						"Como acción, puedes gastar 1 carga y esgrimir el símbolo sagrado para que irradie poder divino. Los vampiros y los {@creature engendro vampírico|MM-ES|engendros vampíricos} que se encuentren a menos de 30 pies del objeto cuando brille deberán hacer una tirada de salvación de Sabiduría CD 15. Aquellos que la fallen quedarán {@condition paralizado|PHB-ES|paralizados} durante 1 minuto. Las criaturas afectadas podrán repetir la tirada de salvación al final de cada uno de sus turnos, librándose del efecto si tienen éxito."
 					]
 				},
 				{
-					"name": "Turn Undead",
+					"name": "Expulsar muertos vivientes",
 					"type": "entries",
 					"entries": [
-						"If you have the Turn Undead or the Turn the Unholy feature, you can expend 3 charges when you present the holy symbol while using that feature. When you do so, undead have disadvantage on their saving throws against the effect."
+						"Si posees el rasgo Expulsar Muertos Vivientes o Expulsar lo Impío, puedes gastar 3 cargas cuando alces el símbolo sagrado mientras estés usando alguno de esos rasgos. Al hacerlo, los muertos vivientes tendrán desventaja en sus tiradas de salvación contra el efecto."
 					]
 				},
 				{
-					"name": "Sunlight",
+					"name": "Luz del sol",
 					"type": "entries",
 					"entries": [
-						"As an action, you can expend 5 charges while presenting the holy symbol to make it shed bright light in a 30-foot radius and dim light for an additional 30 feet. The light is sunlight and lasts for 10 minutes or until you end the effect (no action required)."
+						"Como acción, puedes gastar 5 cargas al presentar el símbolo sagrado para generar 30 pies de radio de luz brillante, además de otros 30 pies adicionales de luz tenue. Esta se considera luz solar y tiene una duración de 10 minutos o hasta que decidas finalizar el efecto (para ello no es necesario gastar una acción)."
 					]
 				}
 			],
@@ -840,11 +840,11 @@
 			}
 		},
 		{
-			"name": "Icon of Ravenloft",
+			"name": "Icono de Ravenloft",
 			"source": "CoS-ES",
 			"page": 222,
 			"rarity": "legendary",
-			"reqAttune": "by a creature of good alignment",
+			"reqAttune": "con una criatura de alineamiento bueno",
 			"reqAttuneTags": [
 				{
 					"alignment": [
@@ -855,34 +855,34 @@
 			"wondrous": true,
 			"weight": 10,
 			"entries": [
-				"The Icon of Ravenloft is a 12-inch tall statuette made of the purest silver, weighing 10 pounds. It depicts a cleric kneeling in supplication.",
-				"The icon was given to Strahd by the archpriest Ciril Romulich, an old family friend, to consecrate the castle and its chapel.",
-				"While within 30 feet of the icon, a creature is under the effect of a {@spell protection from evil and good} spell against fiends and undead. Only a creature attuned to the icon can use its other properties.",
+				"El Icono de Ravenloft es una estatuilla de 12 pulgadas de altura fabricada con la plata más pura y que pesa 10 libras. Representa a un clérigo arrodillado en actitud suplicante.",
+				"El icono fue entregado a Strahd por el arcipreste Ciril Romulich, un viejo amigo de la familia, para consagrar el castillo y su capilla.",
+				"Cualquier criatura que se encuentre a 30 pies o menos del icono queda bajo los efectos de un conjuro de {@spell protección contra el bien y el mal|PHB-ES} al enfrentarse a infernales y muertos vivientes. Solo una criatura en sintonía con el icono puede utilizar sus otras propiedades.",
 				{
-					"name": "Augury",
+					"name": "Augurio",
 					"type": "entries",
 					"entries": [
-						"You can use an action to cast an {@spell augury} spell from the icon, with no material components required. Once used, this property can't be used again until the next dawn."
+						"Puedes usar una acción para lanzar un conjuro de {@spell augurio|PHB-ES} desde el icono, sin necesidad de usar componentes materiales. Esta propiedad no puede volver a emplearse hasta el siguiente amanecer."
 					]
 				},
 				{
-					"name": "Bane of the Undead",
+					"name": "Azote de los muertos vivientes",
 					"type": "entries",
 					"entries": [
-						"You can use the icon as a holy symbol while using the Turn Undead or Turn the Unholy feature. If you do so, increase the save DC by 2."
+						"Puedes utilizar el icono como símbolo sagrado mientras haces uso de los rasgos Expulsar Muertos Vivientes o Expulsar lo Impío. Si lo haces, aumentas la CD en 2."
 					]
 				},
 				{
-					"name": "Cure Wounds",
+					"name": "Curar heridas",
 					"type": "entries",
 					"entries": [
-						"While holding the icon, you can take an action to heal one creature that you can see within 30 feet of you. The target regains {@dice 3d8 + 3} hit points, unless it is an undead, a construct, or a fiend. Once used, this property can't be used again until the next dawn."
+						"Mientras lo sostienes, puedes emplear una acción y gastar una carga para curar a una criatura que puedas ver y se encuentre a 30 pies o menos de ti. El objetivo recupera {@dice 3d8 + 3} puntos de golpe, a menos que sea un muerto viviente, un autómata o un infernal. Una vez usada, esta propiedad no puede volver a utilizarse hasta el siguiente amanecer."
 					]
 				}
 			],
 			"attachedSpells": [
-				"protection from evil and good",
-				"augury"
+				"protección contra el bien y el mal|PHB-ES",
+				"augurio|PHB-ES"
 			],
 			"fluff": {
 				"images": [
@@ -897,25 +897,59 @@
 			}
 		},
 		{
-			"name": "Jakarion's Staff of Frost",
+			"name": "Bastón de escarcha de Jakarion",
 			"source": "CoS-ES",
 			"page": 187,
-			"_copy": {
-				"name": "Staff of Frost",
-				"source": "DMG",
-				"_mod": {
-					"entries": {
-						"mode": "appendArr",
-						"items": "Imprinted on this staff is a fragment of a dead wizard's personality. The first character who touches the staff gains the following flaw: \"I crave power above all else, and will do anything to obtain more of it.\" This flaw trumps any conflicting personality trait."
-					}
+			"resist": [
+				"cold"
+			],
+			"tier": "major",
+			"rarity": "very rare",
+			"reqAttune": "con un brujo, druida, hechicero, o mago",
+			"reqAttuneTags": [
+				{
+					"class": "druida|PHB-ES"
+				},
+				{
+					"class": "hechicero|PHB-ES"
+				},
+				{
+					"class": "brujo|PHB-ES"
+				},
+				{
+					"class": "mago|PHB-ES"
 				}
-			}
+			],
+			"weight": 4,
+			"weaponCategory": "simple",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8",
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6 + 4}",
+			"charges": 10,
+			"staff": true,
+			"entries": [
+				"Tienes resistencia al daño de frío cuando empuñas este bastón.",
+				"El bastón posee 10 cargas. Si lo estás empuñando, puedes usar una acción para gastar 1 o más de sus cargas en lanzar uno de los siguientes conjuros desde el bastón, utilizando tu CD de salvación de conjuros: {@spell cono de frío|PHB-ES} (5 cargas), {@spell muro de hielo|PHB-ES} (4 cargas), {@spell nube de oscurecimiento|PHB-ES} (1 carga) o {@spell tormenta de hielo|PHB-ES} (4 cargas).",
+				"El bastón recupera {@dice 1d6 + 4} cargas empleadas cada día, al amanecer. Si gastas la última carga, tira {@dice 1d20}. Con un resultado de 1, el bastón se convierte en agua y queda destruido.",
+				"Imbuido en este hay un fragmento de la personalidad del mago. El primer aventurero que toque el bastón recibirá el siguiente defecto: \"Anhelo el poder sobre todas las cosas y haré lo que sea para obtener más\". Este defecto prevalecerá sobre cualquier conflicto con otro rasgo de personalidad."
+			],
+			"attachedSpells": [
+				"cono de frío|PHB-ES",
+				"nube de oscurecimiento|PHB-ES",
+				"tormenta de hielo|PHB-ES",
+				"muro de hielo|PHB-ES"
+			]
 		},
 		{
-			"name": "Lost Sword",
+			"name": "Espada perdida",
 			"source": "CoS-ES",
 			"page": 81,
-			"baseItem": "shortsword|phb",
+			"baseItem": "espada corta|PHB-ES",
 			"type": "M",
 			"rarity": "unknown (magic)",
 			"reqAttune": true,
@@ -930,23 +964,23 @@
 			"dmgType": "P",
 			"bonusWeapon": "+1",
 			"entries": [
-				"The Lost Sword is a sentient lawful good {@item +1 shortsword} (Intelligence 11, Wisdom 13, Charisma 13). It has hearing and normal vision out to a range of 120 feet. It communicates by transmitting emotion to the creature carrying or wielding it.",
-				"The sword's purpose is to fight evil. The sword has the following additional properties:",
+				"La espada perdida es una {@item espada corta +1|DMG-ES} consciente legal buena (Inteligencia 11, Sabiduría 13 y Carisma 13). Posee audición y visión normal hasta un alcance de 120 pies. Se comunica transmitiendo emociones a la criatura que la lleva consigo o la empuña.",
+				"El propósito del arma es luchar contra la maldad. Tiene las siguientes propiedades adicionales:",
 				{
 					"type": "list",
 					"items": [
-						"The sword continually sheds bright light in a 15-foot radius and dim light for an additional 15 feet. Only by destroying the sword can this light be extinguished.",
-						"A lawful good creature can attune itself to the sword in 1 minute.",
-						"While attuned to the weapon, the sword's wielder can use the sword to cast the {@spell crusader's mantle} spell. Once used, this property of the sword can't be used again until the next dawn."
+						"La espada irradia de forma permanente luz brillante en un radio de 15 pies y luz tenue otros 15 pies más allá. Esta solo puede extinguirse destruyendo la espada.",
+						"Una criatura legal buena puede sintonizarse con la espada en 1 minuto.",
+						"Mientras esté sintonizado con el arma, su portador podrá utilizarla para lanzar el conjuro {@spell manto del cruzado|PHB-ES}. Una vez usada esta propiedad de la espada, no podrá volver a emplearse hasta el siguiente amanecer."
 					]
 				}
 			],
 			"attachedSpells": [
-				"crusader's mantle"
+				"manto del cruzado|PHB-ES"
 			]
 		},
 		{
-			"name": "Order of the Silver Dragon +2 Shield",
+			"name": "Escudo de la Orden del Dragón de Plata",
 			"source": "CoS-ES",
 			"page": 68,
 			"type": "S",
@@ -956,13 +990,13 @@
 			"ac": 2,
 			"bonusAc": "+2",
 			"entries": [
-				"While holding this shield, you have a +2 bonus to AC. This bonus is in addition to the shield's normal bonus to AC.",
-				"The shield is emblazoned with a stylized silver dragon that is the emblem of the Order of the Silver Dragon (see {@adventure {@i Curse of Strahd}, chapter 7|CoS|7|The Order of the Silver Dragon}). The shield whispers warnings to its bearer, granting a +2 bonus to initiative if the bearer isn't {@condition incapacitated}.",
-				"A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time."
+				"Mientras empuñes este escudo, tienes un bonificador +2 a la CA. Este bonificador se añade al bonificador a la CA normal del escudo.",
+				"El escudo está adornado con un estilizado dragón de plata, el emblema de la Orden del Dragón de Plata (mira {@adventure {@i La Maldición de Strahd}, capítulo 7|CoS-ES|7|La Orden del Dragón de Plata}).El escudo susurra advertencias a su portador, proporcionándole un bonificador de +2 a su iniciativa si este último no está incapacitado.",
+				"Los escudos, ya sean de madera o metal, se portan en una mano. Empuñar un escudo aumenta tu Clase de Armadura en 2. Solo puedes usar un escudo al mismo tiempo."
 			]
 		},
 		{
-			"name": "Saint Markovia's Thighbone",
+			"name": "Fémur de santa Markovia",
 			"source": "CoS-ES",
 			"page": 222,
 			"type": "M",
@@ -972,13 +1006,13 @@
 			"dmg1": "1d6",
 			"dmgType": "B",
 			"entries": [
-				"Saint Markovia's thighbone has the properties of a {@item mace of disruption}. If it scores one or more hits against a {@creature vampire} or a {@creature vampire spawn} in the course of a single battle, the thighbone crumbles into dust once the battle concludes.",
-				"As a youth, Markovia followed her heart and became a priest of the Morninglord soon after her eighteenth birthday. She proved to be a charismatic proselytizer and, before the age of thirty, had gained a reputation for allowing no evil to stand before her.",
-				"Markovia had long considered Strahd a mad tyrant, but only after his transformation into a {@creature vampire} did she dare to challenge him. As she rallied her followers and prepared to march on Castle Ravenloft, Strahd sent a group of {@creature vampire spawn} to her abbey. They confronted Markovia and were destroyed to a one.",
-				"Suffused with confidence born of a righteous victory, Markovia advanced on Castle Ravenloft. A great battle raged from the catacombs to the parapets. In the end, Markovia never returned to Barovia, and Strahd long afterward walked with a limp and a grimace of pain. It is said that he trapped Markovia in a crypt beneath his castle, and her remains linger there yet.",
-				"The essence of Markovia's saintliness passed partly into her bones as the rest of her body decomposed. Her remaining thighbone is imbued with power that inflicts grievous injury on the undead.",
-				"{@item Mace of Disruption}. When you hit a fiend or an undead with this magic weapon, that creature takes an extra {@damage 2d6} radiant damage. If the target has 25 hit points or fewer after taking this damage, it must succeed on a DC 15 Wisdom saving throw or be destroyed. On a successful save, the creature becomes {@condition frightened} of you until the end of your next turn.",
-				"While you hold this weapon, it sheds bright light in a 20-foot radius and dim light for an additional 20 feet."
+				"El fémur de santa Markovia tiene las propiedades de una {@item maza disruptiva|DMG-ES}. Si impacta una o más veces contra un {@creature vampiro|MM-ES} o un {@creature engendro vampírico|MM-ES} durante el transcurso de un mismo combate, el objeto se convertirá en polvo una vez concluya la batalla.",
+				"Cuando era joven, Markovia siguió lo que su corazón le dictaba y se convirtió en sacerdotisa del Señor de la Mañana poco después de cumplir dieciocho años. Demostró ser carismática y devota, de manera que antes de los treinta años ya se había granjeado la reputación de ser inflexible para con el mal.",
+				"Markovia siempre había visto a Strahd como un tirano loco, pero solo después de su transformación en {@creature vampiro|MM-ES} se atrevió a desafiado. Mientras reunía a sus seguidores y se preparaba para marchar sobre el Castillo Ravenloft, Strahd envió un grupo de {@creature engendro vampírico|MM-ES|engendros vampíricos} a su abadía. Se enfrentaron a la mujer y, uno por uno, fueron destruidos.",
+				"Henchida de confianza tras la justa victoria, Markovia se dirigió hacia el Castillo Ravenloft. Una gran batalla tuvo lugar desde las catacumbas hasta los parapetos. Al final, Markovia nunca regresó a Barovia y, mucho después, Strahd aún mostraba una cojera y una mueca de dolor al caminar. Se dice que atrapó a la mujer en una cripta bajo su fortaleza y que sus restos aún permanecen allí.",
+				"La esencia de la santidad de Markovia quedó impregnada en parte en sus huesos cuando el resto de su cuerpo se descompuso. El fémur que aún perdura está imbuido de un poder que inflige graves daños a los muertos vivientes.",
+				"{@item Maza disruptiva|DMG-ES}. Cuando impactes a un infernal o muerto viviente con esta maza, el objetivo recibirá {@damage 2d6} de daño radiante adicional. Si al objetivo le quedan 25 puntos de golpe o menos tras sufrir este daño, deberá superar una tirada de salvación CD 15 o quedará destruido. S i tiene éxito en esta tirada, estará {@condition asustado|PHB-ES} de ti hasta el final de su siguiente turno.",
+				"Mientras la empuñes, esta arma, emitirá luz brillante en un radio de 20 pies y luz tenue 20 pies más allá."
 			],
 			"fluff": {
 				"images": [
@@ -993,7 +1027,7 @@
 			}
 		},
 		{
-			"name": "Statuette of Saint Markovia",
+			"name": "Estatuilla de santa Markovia",
 			"source": "CoS-ES",
 			"page": 152,
 			"type": "OTH",
@@ -1001,14 +1035,14 @@
 			"value": 25000,
 			"bonusSavingThrow": "+1",
 			"entries": [
-				"This golden statuette grants any good-aligned creature that carries it a +1 bonus to saving throws."
+				"Esta estatuilla dorada concede a cualquier criatura de alineamiento bueno un bonificador de +1 a las tiradas de salvación."
 			]
 		},
 		{
-			"name": "Sunsword",
+			"name": "Espada del Sol",
 			"source": "CoS-ES",
-			"page": 223,
-			"baseItem": "longsword|phb",
+			"page": 221,
+			"baseItem": "espada larga|PHB-ES",
 			"type": "M",
 			"rarity": "legendary",
 			"reqAttune": true,
@@ -1024,28 +1058,28 @@
 			"dmg2": "1d10",
 			"bonusWeapon": "+2",
 			"entries": [
-				"The Sunsword is a unique blade once possessed by Strahd's brother, Sergei von Zarovich. In its original form, it had a platinum hilt and guard, and a thin crystal blade as strong as steel.",
-				"Strahd employed a powerful wizard named Khazan to destroy the weapon after Sergei's death. The first part of the process required the hilt and the blade to be separated, which Khazan accomplished. While Khazan was busying himself destroying the blade, his apprentice stole the hilt and fled. Khazan later located his apprentice's mutilated corpse in the Svalich Woods, but the hilt was nowhere to be found. To avoid the vampire's wrath, Khazan told Strahd that the entire weapon had been destroyed.",
-				"The hilt, which is sentient, knows that it can never be reunited with its original crystal blade. It has, however, gained the properties of a {@item sun blade}:",
+				"La Espada del Sol es una espada única que en tiempos perteneció al hermano de Strahd, Sergei von Zarovich. En su forma original, tenía la empuñadura y las guardas de platino, así como una fina hoja de cristal tan dura como el acero.",
+				"El vampiro contrató a un poderoso mago llamado Khazan para destruir el arma tras la muerte de Sergei. La primera parte del proceso requería separar la empuñadura y la hoja, tarea que el mago logró llevar a cabo. Mientras Khazan estaba ocupado destruyendo la hoja, su aprendiz robó el puño de la espada y huyó. El mago encontraría más tarde el cadáver mutilado de su discípt1fo en los bosques de Svalich, pero no halló la empuñadura por ningún sitio. Para evitar la ira del vampiro, Khazan le dijo a Strahd que había destruido el arma por completo.",
+				"La empuñadura, que es consciente, sabe que nunca volverá a estar unida a su hoja de cristal original. Sin embargo, obtuvo las propiedades de una {@item espada solar|DMG-ES}.",
 				{
 					"type": "list",
 					"items": [
-						"You gain a +2 bonus to attack and damage rolls made with this weapon, which deals radiant damage instead of slashing damage. When you hit an undead with it, that target takes an extra {@damage 1d8} radiant damage.",
-						"The sword's luminous blade emits bright light in a 15-foot radius and dim light for an additional 15 feet. The light is sunlight. While the blade persists, you can use an action to expand or reduce its radius of bright and dim light by 5 feet each, to a maximum of 30 feet each or a minimum of 10 feet each."
+						"Obtienes un bonificador de +2 a las tiradas de ataque y daño realizadas con esta arma, que inflige daño radiante en vez de cortante. Cuando impactas a un muerto viviente con ella, el objetivo recibe {@damage 1d8} de daño radiante adicional.",
+						"La hoja luminosa de esta espada emite luz brillante en un radio de 15 pies, y luz tenue 15 pies más allá. Esta luz es luz solar. Siempre que la hoja exista, puedes utilizar una acción para agrandar o reducir el radio de luminosidad en 5 pies, hasta un máximo de 30 pies o un mínimo de 10 pies de cada tipo de luz."
 					]
 				},
 				{
-					"name": "Sentience",
+					"name": "Consciencia",
 					"type": "entries",
 					"entries": [
-						"The Sunsword is a sentient chaotic good weapon with an Intelligence of 11, a Wisdom of 17, and a Charisma of 16. It has hearing and normal vision out to a range of 60 feet. The weapon communicates by transmitting emotions to the creature carrying it or wielding it."
+						"La Espada del Sol es un arma consciente caótica buena con Inteligencia 11, Sabiduría 17 y Carisma 16. Puede oír y ver normalmente hasta un alcance de 60 pies. La espada se comunica transmitiendo emociones a la criatura que la porta o esgrime."
 					]
 				},
 				{
-					"name": "Personality",
+					"name": "Personalidad",
 					"type": "entries",
 					"entries": [
-						"The Sunsword's special purpose is to destroy Strahd, not so much because it wants to free the land of Barovia from evil but because it wants revenge for the loss of its crystal blade. The weapon secretly fears its own destruction."
+						"El propósito especial de la Espada del Sol es destruir a Strahd, no tanto por liberar la tierra de Barovia del mal, sino como venganza por la pérdida de su hoja de cristal. En secreto, el arma teme su propia destrucción."
 					]
 				}
 			],
@@ -1062,14 +1096,14 @@
 			}
 		},
 		{
-			"name": "Tome of Strahd",
+			"name": "Tomo de Strahd",
 			"source": "CoS-ES",
 			"page": 221,
 			"type": "G",
 			"rarity": "none",
 			"weight": 5,
 			"entries": [
-				"The Tome of Strahd is an ancient work penned by Strahd, a tragic tale of how he came to his fallen state. The book is bound in a thick leather cover with steel hinges and fastenings. The pages are of parchment and very brittle. Most of the book is written in the curious shorthand that only Strahd employs. Stains and age have made most of the work illegible, but several paragraphs remain intact."
+				"El Tomo de Strahd es un antiguo volumen obra de Strahd, la trágica historia de cómo llegó a convertirse en quien es. El libro está encuadernado con cubiertas de cuero grueso, con bisagras y cierres de acero. Las páginas son de un pergamino muy frágil. La mayor parte se ha escrito usando una curiosa grafía que solo utiliza Strahd. El paso del tiempo y las manchas han hecho que la mayor parte de la obra resulte ilegible, pero varios párrafos continúan intactos y se pueden comprender."
 			],
 			"fluff": {
 				"images": [
@@ -1084,10 +1118,10 @@
 			}
 		},
 		{
-			"name": "Treebane",
+			"name": "Perdición de los árboles",
 			"source": "CoS-ES",
 			"page": 198,
-			"baseItem": "battleaxe|phb",
+			"baseItem": "hacha de guerra|PHB-ES",
 			"type": "M",
 			"rarity": "unknown (magic)",
 			"weight": 2,
@@ -1099,23 +1133,23 @@
 			"dmgType": "S",
 			"dmg2": "1d10",
 			"entries": [
-				"The axe's handle is carved with leaves and vines, and it weighs half as much as a normal battleaxe. When the axe hits a plant, whether an ordinary plant or a plant creature, the target takes an extra {@damage 1d8} slashing damage. When a creature of non-good alignment wields the axe, it sprouts thorns whenever its wielder makes an attack with it. These thorns prick the wielder for 1 piercing damage after the attack is made, and this damage is considered magical."
+				"Su mango está tallado con hojas y enredaderas y pesa la mitad que un hacha de guerra normal. Cuando esta arma golpea una planta, ya sea una corriente o una criatura vegetal, el objetivo recibirá {@damage 1d8} de daño cortante adicional. Si una criatura que no sea de alineamiento bueno blande el hacha, brotarán espinas cada vez que quien la empuñe ataque con ella. Estas espinas pincharán al portador, que recibirá 1 de daño perforante tras realizar el ataque. Este daño se considerará mágico."
 			]
 		},
 		{
-			"name": "Trinket",
+			"name": "Bagatela",
 			"source": "CoS-ES",
 			"page": 2,
 			"type": "G",
 			"rarity": "none",
 			"entries": [
-				"When you make your character, you can roll once on the Trinkets table to gain a trinket, a simple item lightly touched by mystery. The DM might also use this table. It can help stock a room in a dungeon or fill a creatures pockets.",
+				"Cuando creas tu personaje, puedes tirar una vez en la tabla Bagatelas para obtener una bagatela, un objeto simple ligeramente misterioso. El DM también podría usar esta tabla. Puede ayudar a llenar una habitación en una mazmorra o llenar los bolsillos de una criatura.",
 				{
 					"type": "table",
-					"caption": "Curse of Strahd. Character Options, Gothic Trinket Table",
+					"caption": "La Maldición de Strahd. Opciones de personaje, tabla de bagatelas góticas",
 					"colLabels": [
 						"{@dice d100}",
-						"Trinket"
+						"Bagatela"
 					],
 					"colStyles": [
 						"col-2 text-center",
@@ -1124,203 +1158,203 @@
 					"rows": [
 						[
 							"01-02",
-							"A picture you drew as a child of your imaginary friend"
+							"El dibujo que hiciste de tu amigo imaginario cuando eras niño."
 						],
 						[
 							"03-04",
-							"A lock that opens when blood is dripped in its keyhole"
+							"Una cerradura que se abre al verter una gota de sangre en el ojo de la llave."
 						],
 						[
 							"05-06",
-							"Clothes stolen from a {@creature scarecrow}"
+							"Ropajes robados a un {@creature espantapájaros|MM-ES}."
 						],
 						[
 							"07-08",
-							"A spinning top carved with four faces: happy, sad, wrathful, and dead"
+							"Una peonza con cuatro caras talladas: feliz, triste, iracundo y muerto."
 						],
 						[
 							"09-10",
-							"The necklace of a sibling who died on the day you were born"
+							"El collar de un hermano que falleció el mismo día que naciste."
 						],
 						[
 							"11-12",
-							"A wig from someone executed by beheading"
+							"Una peluca de alguien que murió ejecutado por decapitación."
 						],
 						[
 							"13-14",
-							"The unopened letter to you from your dying father"
+							"Una carta para ti, sin abrir, de tu padre moribundo."
 						],
 						[
 							"15-16",
-							"A pocket watch that runs backward for an hour every midnight"
+							"Un reloj de bolsillo que se retrasa una hora cada medianoche."
 						],
 						[
 							"17-18",
-							"A winter coat stolen from a dying soldier"
+							"Un abrigo robado a un soldado moribundo."
 						],
 						[
 							"19-20",
-							"A bottle of invisible ink that can only be read at sunset"
+							"Un frasco de tinta invisible que solo puede leerse durante la puesta de sol."
 						],
 						[
 							"21-22",
-							"A wineskin that refills when interred with a dead person for a night"
+							"Un odre de vino que se rellena cuando se entierra junto a una persona muerta durante toda una noche."
 						],
 						[
 							"23-24",
-							"A set of silverware used by a king for his last meal"
+							"Un conjunto de cubiertos utilizados por un rey en su última comida."
 						],
 						[
 							"25-26",
-							"A spyglass that always shows the world suffering a terrible storm"
+							"Un catalejo que siempre muestra el mundo bajo una terrible tormenta."
 						],
 						[
 							"27-28",
-							"A cameo with the profile's face scratched away"
+							"Un camafeo cuya cara ha sido rayada hasta desaparecer."
 						],
 						[
 							"29-30",
-							"A lantern with a black candle that never runs out and that burns with green flame"
+							"Un candil con una vela negra que nunca se agota y que arde con una llama verde."
 						],
 						[
 							"31-32",
-							"A teacup from a child's tea set, stained with blood"
+							"Una taza de té, de un juego de té para niños, manchada de sangre."
 						],
 						[
 							"33-34",
-							"A little black book that records your dreams, and yours alone, when you sleep"
+							"Un pequeño libro negro que registra tus sueños, y solo los tuyos, cuando duermes."
 						],
 						[
 							"35-36",
-							"A necklace formed of the interlinked holy symbols of a dozen deities"
+							"Un collar formado por los símbolos sagrados interconectados de una docena de deidades."
 						],
 						[
 							"37-38",
-							"A hangman's noose that feels heavier than it should"
+							"Una soga de verdugo que pesa más de lo que debería."
 						],
 						[
 							"39-40",
-							"A birdcage into which small birds fly but once inside never eat or leave"
+							"Una jaula para pájaros en cuyo interior se introducen pequeñas aves que, una vez dentro, nunca comen ni se escapan."
 						],
 						[
 							"41-42",
-							"A lepidopterist's box filled dead moths with skulllike patterns on their wings"
+							"Una caja de coleccionista de lepidópteros llena de polillas cuyas alas muestran patrones de calaveras."
 						],
 						[
 							"43-44",
-							"A jar of pickled ghouls' tongues"
+							"Un frasco de lenguas de gul encurtidas."
 						],
 						[
 							"45-46",
-							"The wooden hand of a notorious pirate"
+							"La mano de madera de un famoso pirata."
 						],
 						[
 							"47-48",
-							"An urn with the ashes of a dead relative"
+							"Una urna con las cenizas de un pariente muerto."
 						],
 						[
 							"49-50",
-							"A hand mirror backed with a bronze depiction of a {@creature medusa}"
+							"Un espejo de mano cuyo reverso de bronce representa a una {@creature medusa|MM-ES}."
 						],
 						[
 							"51-52",
-							"Pallid leather gloves crafted with ivory fingernails"
+							"Unos guantes artesanales de cuero pálido con uñas de marfil."
 						],
 						[
 							"53-54",
-							"Dice made from the knuckles of a notorious charlatan"
+							"Unos dados hechos con los nudillos de un famoso embaucador."
 						],
 						[
 							"55-56",
-							"A ring of keys for forgotten locks"
+							"Un aro con llaves para cerraduras olvidadas."
 						],
 						[
 							"57-58",
-							"Nails from the coffin of a murderer"
+							"Clavos procedentes del ataúd de un asesino."
 						],
 						[
 							"59-60",
-							"A key to the family crypt"
+							"La llave de una cripta familiar."
 						],
 						[
 							"61-62",
-							"A bouquet of funerary flowers that always looks and smells fresh"
+							"Un ramo de flores funerario que siempre se ve y huele fresco."
 						],
 						[
 							"63-64",
-							"A switch used to discipline you as a child"
+							"Una vara utilizada para disciplinarte cuando eras niño."
 						],
 						[
 							"65-66",
-							"A music box that plays by itself whenever someone holding it dances"
+							"Una caja de música que suena sola cada vez que alguien la sostiene mientras baila."
 						],
 						[
 							"67-68",
-							"A walking cane with an iron ferrule that strikes sparks on stone"
+							"Un cayado con una extensión de hierro que hace chispas al golpear sobre piedra."
 						],
 						[
 							"69-70",
-							"A flag from a ship lost at sea"
+							"La bandera de un barco perdido en el mar."
 						],
 						[
 							"71-72",
-							"Porcelain doll's head that always seems to be looking at you"
+							"La cabeza de una muñeca de porcelana que siempre parece estar mirándote."
 						],
 						[
 							"73-74",
-							"A wolf's head wrought in silver that is also a whistle"
+							"La cabeza de un lobo labrada en plata que también es un silbato."
 						],
 						[
 							"75-76",
-							"A small mirror that shows a much older version of the viewer"
+							"Un espejito que muestra una versión mucho más envejecida del que se contempla."
 						],
 						[
 							"77-78",
-							"Small, worn book of children's nursery rhymes"
+							"Un pequeño y desgastado libro de cancioncillas infantiles."
 						],
 						[
 							"79-80",
-							"A mummified raven claw"
+							"Una garra de cuervo momificada."
 						],
 						[
 							"81-82",
-							"A broken pendent of a silver dragon that's always cold to the touch"
+							"Un colgante roto con forma de dragón plateado que siempre está frío al tacto."
 						],
 						[
 							"83-84",
-							"A small locked box that quietly hums a lovely melody at night but you always forget it in the morning"
+							"Una pequeña caja cerrada que tararea tranquilamente una preciosa melodía durante la noche, pero que siempre olvidas por la mañana."
 						],
 						[
 							"85-86",
-							"An inkwell that makes one a little nauseous when staring at it"
+							"Un tintero que hace que uno sienta un poco de náuseas cuando lo mira fijamente."
 						],
 						[
 							"87-88",
-							"An old little doll made from a dark, dense wood and missing a hand and a foot"
+							"Una vieja muñequita hecha de madera oscura y densa, a la que le falta una mano y un pie."
 						],
 						[
 							"89-90",
-							"A black executioner's hood"
+							"Una capucha negra de verdugo."
 						],
 						[
 							"91-92",
-							"A pouch made of flesh, with a sinew drawstring"
+							"Una bolsa hecha de carne, con un tendón como lazo."
 						],
 						[
 							"93-94",
-							"A tiny spool of black thread that never runs out"
+							"Una pequeña bobina de hilo negro que nunca se acaba."
 						],
 						[
 							"95-96",
-							"A tiny clockwork figurine of a dancer that's missing a gear and doesn't work"
+							"La diminuta figurilla mecánica de una bailarina que ha perdido un engranaje y no funciona."
 						],
 						[
 							"97-98",
-							"A black wooden pipe that creates puffs of smoke that look like skulls"
+							"Una pipa de madera negra que crea bocanadas de humo con aspecto de cráneos."
 						],
 						[
 							"99-00",
-							"A vial of perfume, the scent of which only certain creatures can detect"
+							"Un vial de perfume, cuyo aroma solo ciertas criaturas pueden detectar."
 						]
 					]
 				}
