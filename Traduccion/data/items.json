@@ -21275,9 +21275,9 @@
 			]
 		},
 		{
-			"name": "Pennant of the Vind Rune",
+			"name": "Gallardete de la runa vind",
 			"source": "SKT-ES",
-			"page": 235,
+			"page": 234,
 			"rarity": "very rare",
 			"reqAttune": true,
 			"wondrous": true,
@@ -21287,53 +21287,53 @@
 				}
 			},
 			"entries": [
-				"This blue pennant is crafted from silk and is five feet long and whips about as if buffeted by a wind. The vind (wind) rune appears on its surface, looking almost like a cloud. The pennant has the following properties, which work only while it's on your person.",
+				"Esta bandera azul está hecha de seda, mide cinco pies (1,5 m) de largo y ondea como si el viento la moviera. La runa vind (del viento) aparece en su superficie, casi con el aspecto de una nube. El gallardete posee las siguientes propiedades, que funcionarán solo mientras lo lleves contigo:",
 				{
 					"type": "entries",
-					"name": "Wind Step",
+					"name": "Paso aéreo",
 					"entries": [
-						"As an action, you fly up to 20 feet. If you don't land at the end of this flight, you fall unless you have another means of staying aloft."
+						"Como acción, vuelas hasta 20 pies. Si no aterrizas al final de esa distancia, caerás, a menos que tengas otra forma de permanecer en el aire."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Comforting Wind",
+					"name": "Viento reconfortante",
 					"entries": [
-						"You can't suffocate."
+						"No puedes asfixiarte."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Winds Grasp",
+					"name": "Agarre del viento",
 					"entries": [
-						"As a reaction when you fall, you can cause yourself to take no damage from the fall. Once you use this property, you can't use it again until you finish a short or long rest."
+						"Si caes, puedes usar tu reacción para hacer que desaparezca el daño sufrido por la calda. Una vez utilices esta propiedad, no podrás volver a hacerlo hasta completar un descanso largo."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Wind Walker",
+					"name": "Caminante del viento",
 					"entries": [
-						"While you are attuned to this rune, you can cast {@spell levitate} as a bonus action. Once you use this property, you can't use it again until you finish a short or long rest."
+						"Mientras estés sintonizado con esta runa, podrás lanzar el conjuro de {@spell levitar|PHB-ES} como acción adicional. Una vez que emplees esta propiedad, no podrás volver a hacerlo hasta completar un descanso largo."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Gift of Wind",
+					"name": "Don del viento",
 					"entries": [
-						"You can transfer the pennant's magic to a nonmagical item—a suit of armor, a pair of boots, or a cloak—by tracing the vind rune there with your finger. The transfer takes 8 hours of work that requires the two items to be within 5 feet of each other. At the end, the pennant is destroyed, and the rune appears in silver on the chosen item, which gains a benefit based on its form:",
+						"Puedes transferir la magia de la bandera a un objeto no mágico (una armadura, un par de botas o una capa) trazando sobre este la runa vind con el dedo. La transferencia requerirá 8 horas de trabajo y que entre ambos objetos haya una distancia de 5 pies o menos. Al final, el gallardete quedará destruido y la runa aparecerá, plateada. sobre el objeto elegido, que obtendrá un beneficio basado en su forma:",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
 									"type": "item",
-									"name": "Armor",
-									"entry": "The armor is now an uncommon magic item that requires attunement. You gain a bonus to speed of 5 feet while you wear the armor, and if it normally imposes disadvantage on {@skill Stealth} checks, it no longer does so."
+									"name": "Armadura",
+									"entry": "La armadura será en adelante un objeto mágico infrecuente que requerirá sintonización. Obtendrás un bonificador de velocidad de 5 pies mientras la lleves puesta; además, si la armadura impusiera normalmente desventaja en las pruebas de {@skill Sigilo|PHB-ES}, ya no lo hará."
 								},
 								{
 									"type": "item",
-									"name": "Boots/Cloak",
-									"entry": "The pair of boots or cloak is now a rare magic item that requires attunement. While wearing the item, you can convert up to 20 feet of your movement on each of your turns into flight. If you don't land at the end of this flight, you fall unless you have another means of staying aloft. You can also cast {@spell feather fall} once from the item, and you regain the ability to do so when you finish a short or long rest."
+									"name": "Botas/Capa",
+									"entry": "Las botas o la capa serán en adelante objetos mágicos raros que requerirán sintonización. Mientras los lleves puestos, en cada uno de tus turnos podrás usar hasta 20 pies de tu movimiento para desplazarte volando. Si no aterrizas al final del vuelo, caerás, a menos que dispongas de otra forma de mantenerte en el aire. Además, el objeto te permitirá lanzar el conjuro de {@spell caída de pluma|PHB-ES} una vez; podrás volver a hacerlo cuando bayas completado un descanso corto o largo."
 								}
 							]
 						}
@@ -21341,38 +21341,39 @@
 				}
 			],
 			"attachedSpells": [
-				"levitate",
-				"feather fall"
+				"levitar|PHB-ES",
+				"caída de pluma|PHB-ES"
 			]
 		},
 		{
-			"name": "Potion of Giant Size",
+			"name": "Poción de talla gigante",
 			"source": "SKT-ES",
 			"page": 236,
 			"type": "P",
 			"rarity": "legendary",
 			"entries": [
-				"When you drink this potion, you become Huge for 24 hours if you are Medium or smaller, otherwise the potion does nothing. For that duration, your Strength becomes 25, if it isn't already higher, and your hit point maximum is doubled (your current hit points are doubled when you drink the potion). In addition, the reach of your melee attacks increases by 5 feet.",
-				"Everything you are carrying and wearing also increases in size for the duration. When rolling damage for weapons enlarged in this manner, roll three times the normal number of dice; for example, an enlarged longsword would deal {@damage 3d8} slashing damage (instead of {@dice 1d8}), or {@damage 3d10} slashing damage (instead of {@dice 1d10}) when used with two hands.",
-				"When the effect ends, any hit points you have above your hit point maximum become temporary hit points. This potion is a pale white liquid made from the tongue of a giant clam, with a pungent aroma akin to that of rotting algae. It tastes sweet, however, when consumed."
+				"Cuando consumas esta poción, crecerás hasta tamaño Enorme durante 24 horas si eres de tamaño Mediano o menor; en caso contrario, esta no tendrá ningún efecto. Durante ese tiempo, tu puntuación de Fuerza será 25, si no es ya más alta, y tus puntos de golpe máximos se duplicarán (los puntos de golpe que poseas en el momento de beber la poción también se duplicarán). Además, el alcance de tus ataques cuerpo a cuerpo aumentará en 5 pies.",
+				"Todo lo que portes contigo y uses también se agrandará durante este periodo. Al tirar el daño de las armas afectadas por la poción, debes utilizar tres veces el número de dados habitual; por ejemplo, una espada larga agrandada infligiría {@damage 3d8} de daño cortante (en lugar de {@dice 1d8}) o {@damage 3d10} (en lugar de {@dice 1d10}) si se esgrime a dos manos.",
+				"Al finalizar el efecto, los puntos de golpe que tengas por encima de tus puntos de golpe máximos se convertirán en puntos de golpe temporales.",
+				"Esta poción es un líquido de color blanco pálido fabricado a partir de la lengua de una almeja gigante y posee un aroma acre similar al de las algas en descomposición. Sin embargo, al consumirla su sabor es dulce."
 			]
 		},
 		{
-			"name": "Robe of Serpents",
+			"name": "Túnica de sierpes",
 			"source": "SKT-ES",
-			"page": 236,
+			"page": 237,
 			"rarity": "uncommon",
 			"reqAttune": true,
 			"wondrous": true,
 			"entries": [
-				"A robe of serpents is a stylish silk garment that is popular among wealthy nobles and retired assassins. The robe is emblazoned with {@dice 1d4 + 3} stylized serpents, all brightly colored.",
-				"As a bonus action on your turn, you can transform one of the robe's serpents into a {@creature giant poisonous snake}. The snake instantly falls from the robe, slithers into an unoccupied space next to you, and acts on your initiative count. The snake can tell friendly creatures from hostile ones and attacks the latter. The snake disappears in a harmless puff of smoke after 1 hour, when it drops to 0 hit points, or when you dismiss it (no action required). Once detached, a snake can't return to the robe. When all of the robe's snakes have detached, the robe becomes a nonmagical garment."
+				"Una túnica de sierpes es una estilosa prenda de seda muy popular entre los nobles acaudalados y los asesinos retirados. Lleva estampadas {@dice 1d4 + 3} elegantes serpientes. todas de colores brillantes.",
+				"Como acción adicional durante tu turno, puedes transformar una de las víboras de la túnica en una {@creature serpiente venenosa gigante|MM-ES}. La bestia caerá al instante de la prenda, se deslizará hacia un espacio desocupado a tu lado y actuará en tu posición en el orden de iniciativa. La serpiente sabrá distinguir a las criaturas amistosas de las hostiles y atacará a estas últimas. Desaparecerá en una inofensiva nube de humo después de 1 hora, cuando sus puntos de golpe se reduzcan a 0 o cuando la desconvoques (lo que no precisará gastar una acción). Una vez separada, una sierpe no podrá volver a la túnica. Cuando todas las serpientes de la prenda se hayan desprendido, esta se convertirá en un objeto no mágico."
 			]
 		},
 		{
-			"name": "Rod of the Vonindod",
+			"name": "Vara del Vonindod",
 			"source": "SKT-ES",
-			"page": 236,
+			"page": 237,
 			"type": "RD",
 			"rarity": "rare",
 			"reqAttune": true,
@@ -21381,17 +21382,17 @@
 			"rechargeAmount": "{@dice 1d6 + 4}",
 			"charges": 10,
 			"entries": [
-				"The {@creature fire giant} Duke Zalto hired a wizard to craft several of these adamantine rods. Each measures 4 feet long, weighs 100 pounds, and is sized to fit comfortably in a {@creature fire giant||fire giant's} hand. The rod has two prongs at one end and a molded handle grip on the opposite end.",
-				"The rod has 10 charges and regains {@dice 1d6 + 4} of its expended charges daily at dawn. As an action, you can grasp it by the handle and expend 1 charge to cast the {@spell locate object} spell from it. When the rod is used to detect objects made of adamantine, such as fragments of the Vonindod construct, its range increases to 10 miles."
+				"Zalto, el duque {@creature gigante de fuego|MM-ES}, se hizo con los servicios de un mago para fabricar varias de estas varas adamantinas. Cada una mide 4 pies (1,20 m) de largo, pesa 100 libras (45 kg) y está dimensionada para adaptarse con comodidad a la mano de un {@creature gigante de fuego|MM-ES}. La vara tiene dos puntas en un extremo y un mango moldeado en el lado opuesto.",
+				"La vara dispone de 10 cargas y cada día, al amanecer, recuperará {@dice 1d6 + 4} de las cargas que se hayan gastado. Como acción, puedes sostenerla por el mango y gastar 1 carga para lanzar el conjuro de {@spell localizar objeto|PHB-ES}. Cuando la vara se usa para detectar objetos hechos de adamantina, como los fragmentos del autómata Vonindod, su alcance se incrementará hasta las 10 millas."
 			],
 			"attachedSpells": [
-				"locate object"
+				"localizar objeto|PHB-ES"
 			]
 		},
 		{
-			"name": "Shard of the Ise Rune",
+			"name": "Fragmento de la runa ise",
 			"source": "SKT-ES",
-			"page": 236,
+			"page": 233,
 			"resist": [
 				"fire"
 			],
@@ -21399,53 +21400,53 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"entries": [
-				"This shard of ice is long and slender, roughly the size of a dagger. The ise (ice) rune glows within it. The shard has the following properties, which work only while it's on your person.",
+				"Esta esquirla de hielo larga y delgada tiene aproximadamente el tamaño de una daga. La runa ise (del hielo) brilla en su interior. El fragmento posee las siguientes propiedades, que funcionarán solo mientras lo lleves contigo:",
 				{
-					"name": "Frigid Touch",
+					"name": "Toque glacial",
 					"type": "entries",
 					"entries": [
-						"As an action, you can touch a body of water and freeze the water in a 10-foot-radius sphere around the spot you touched. Once you use this property, you can't use it again until you finish a short or long rest."
+						"Como acción, puedes tocar una superficie acuática y congelar una esfera de 10 pies de radio de agua en torno al lugar que hayas tocado. Una vez que hayas empleado esta propiedad, no podrás volver a hacerlo hasta completar un descanso corto o largo."
 					]
 				},
 				{
-					"name": "Frost Friend",
+					"name": "Afín a la escarcha",
 					"type": "entries",
 					"entries": [
-						"You have resistance to fire damage."
+						"Obtienes resistencia al daño de fuego."
 					]
 				},
 				{
-					"name": "Icy Mantle",
+					"name": "Manto helado",
 					"type": "entries",
 					"entries": [
-						"As an action, you can touch yourself or another creature with water on your finger. The water creates an icy mantle of protection. The next time within the next minute that the target takes bludgeoning, slashing, or piercing damage, that damage is reduced to 0, and the mantle is destroyed. Once you use this property, you can't use it again until you finish a short or long rest."
+						"Como acción, puedes tocarte a ti mismo o a otra criatura con tu dedo mojado en agua. Esta creará un manto helado de protección. Durante el minuto siguiente, la primera vez que el objetivo sufra daño contundente, cortante o perforan te, ese daño quedará reducido a 0 y el manto se destruirá. Una vez que hayas usado esta propiedad, no podrás volver a hacerlo hasta completar un descanso corto o largo."
 					]
 				},
 				{
-					"name": "Winters Howl",
+					"name": "Aullido invernal",
 					"type": "entries",
 					"entries": [
-						"As an action, you can cast {@spell sleet storm} (spell save DC 17). You regain this ability after you finish a short or long rest."
+						"Como acción, podrás lanzar {@spell tormenta de aguanieve|PHB-ES} (salvación de conjuros CD 17). Recuperarás esta propiedad después de completar un descanso corto o largo."
 					]
 				},
 				{
-					"name": "Gift of Frost",
+					"name": "Don de la escarcha",
 					"type": "entries",
 					"entries": [
-						"You can transfer the shard's magic to a nonmagical item—a cloak or a pair of boots-by tracing the ise rune there with your finger. The transfer takes 8 hours of work that requires the two items to be within 5 feet of each other. At the end, the shard is destroyed, and the rune appears in blue on the chosen item, which gains a benefit based on its form:",
+						"Puedes transferir la magia de la esquirla a un objeto no mágico (una capa o un par de botas) trazando la runa ise sobre este con un dedo. La transferencia requerirá 8 horas de trabajo y que entre ambos objetos haya una distancia de 5 pies o menos. Al final, la esquirla quedará destruida y la runa aparecerá en color azul sobre el objeto elegido, que obtendrá un beneficio basado en su forma:",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
 									"type": "item",
-									"name": "Cloak",
-									"entry": "The cloak is now a rare magic item that requires attunement. While wearing it, you have resistance to fire damage, and you have advantage on Dexterity ({@skill Stealth}) checks made while in snowy terrain."
+									"name": "Capa",
+									"entry": "La capa será ahora un objeto mágico raro que precisará sintonización. Mientras la uses, tendrás resistencia al daño de fuego, además de ventaja en las pruebas de Destreza ({@skill Sigilo|PHB-ES}) que realices en terrenos nevados."
 								},
 								{
 									"type": "item",
-									"name": "Boots",
-									"entry": "The pair of boots is now a rare magic item that requires attunement. While wearing it, you ignore {@quickref difficult terrain||3} while walking, and you can walk on water."
+									"name": "Botas",
+									"entry": "El par de botas será en adelante un objeto mágico raro que requerirá sintonización. Cuando las lleves, ignorarás el {@book terreno difícil|PHB-ES|9|terreno difícil} al desplazarte y podrás caminar sobre el agua."
 								}
 							]
 						}
@@ -21453,46 +21454,46 @@
 				}
 			],
 			"attachedSpells": [
-				"sleet storm"
+				"tormenta de aguanieve|PHB-ES"
 			]
 		},
 		{
-			"name": "Wyrmskull Throne",
+			"name": "Trono de Wyrmskull",
 			"source": "SKT-ES",
-			"page": 237,
+			"page": 236,
 			"rarity": "artifact",
 			"wondrous": true,
 			"recharge": "dawn",
 			"rechargeAmount": 9,
 			"charges": 9,
 			"entries": [
-				"Built by dwarven gods and entrusted to the rulers of Shanatar, an ancient dwarven empire. The Wyrmskull Throne was a symbol of dwarven power and pride for ages untold. The throne hovers a foot off the ground and is a massive thing made of polished obsidian with oversized feet—the impaled skulls of four ancient blue dragons. Runes glisten in the carved obsidian winking to life with blue energy when the throne's powers are activated.",
-				"After the fall of Shanatar, the Wyrmskull Throne fell into the clutches of less honorable creatures. A band of adventurers wrested the throne from the aquatic elf tyrant Gantar Kraok and sold it to the {@creature storm giant} Neri for a considerable fortune. Neri had the throne magically enlarged and gave it to her husband, King Hekaton, as a gift, along with one of the Ruling Scepters of Shanatar, which she had found in a wreck at the bottom of the Trackless Sea. Only a creature attuned to a Ruling Scepter and in possession of it can harness the powers of the Wyrmskull Throne, which has become the centerpiece of King Hekaton's throne room in the undersea citadel of Maelstrom. Fear of the throne's power has helped prevent evil giants from challenging or threatening Hekaton's leadership.",
-				"Any creature not attuned to a Ruling Scepter who sits on the throne is {@condition paralyzed} and encased in a magical force field. While encased, the creature can't be touched or moved from the throne. Touching a Ruling Scepter to the force field dispels the field, though the creature remains {@condition paralyzed} until it is separated from the throne.",
-				"Any creature seated on the throne can hear faint Whispers in Draconic—the whisperings of four blue dragons whose skulls adorn the throne. Although powerless, these spirits try to influence the decisions of the throne's master.",
+				"Construido por dioses enanos y confiado a los gobernantes de Shanatar, un antiguo imperio enano, el Trono de Wyrmskull fue un símbolo del poder y el orgullo de los enanos durante innumerables siglos. El artefacto flota a un pie sobre el suelo y es una imponente obra de obsidiana pulida con unas patas de gran tamaño: los cráneos empalados de cuatro dragones azules ancianos. En la roca tallada brillan unas runas que cobran vida irradiando energía azul cuando se activan los poderes del trono.",
+				"Tras la caída de Shanatar, el Trono de Wyrmskull cayó en las garras de criaturas menos honorables. Una banda de aventureros arrebató el artefacto a un tirano, el elfo acuático Gantar Kraok, y se lo vendió a Neri, la {@creature gigante de las tormentas|MM-ES|giganta de las tormentas}, por una considerable fortuna. Neri logró agrandar el trono con medios mágicos y se lo regaló a su esposo, el rey Hekaton, junto con uno de los cetros de mando de Shanatar, que había hallado entre los restos de un naufragio en el lecho del Mar Impenetrable. Solo una criatura sintonizada con uno de estos cetros de mando y en posesión de este puede utilizar los poderes del Trono de Wyrmskull, que se ha convertido en el elemento central del salón del trono del monarca en la ciudadela submarina de Vorágine. El temor que infunde el poder del artefacto ha ayudado a Hekaton a evitar que los gigantes malvados desafíen o amenacen su liderazgo.",
+				"Cualquier criatura que no esté sintonizada con un cetro de mando y que se siente en el trono quedará {@condition paralizado|PHB-ES|paralizada} y cautiva dentro de un campo de fuerza mágica. Mientras esté encerrada, no se la podrá tocar o retirar del artefacto. Al tocar con un cetro de mando el campo de fuerza, este se disipará, aunque la criatura permanecerá {@condition paralizado|PHB-ES|paralizada} hasta que sea separada del trono.",
+				"Cualquier criatura que esté sentada en el artefacto podrá escuchar unos débiles susurros en idioma dracónico: se trata de las voces de los cuatro dragones azules cuyos cráneos adornan el sitial. Aunque despojados de su poder, estos espíritus tratarán de influir en las decisiones del amo del trono.",
 				{
-					"name": "Properties of the Throne",
+					"name": "Propiedades del trono",
 					"type": "entries",
 					"entries": [
-						"The throne has 9 charges and regains all expended charges daily at dawn. A creature that sits on the throne while attuned to a Ruling Sceptor in its possession can harness the throne's properties, which are as follows:",
-						"The throne gains a flying speed of 30 feet and can hover and flies where the creature wills. This property doesn't expend any charges.",
-						"Both the throne and the creature sitting on it can move through earth and stone without disturbing the material they move through. This property doesn't expend any charges.",
-						"As an action, the creature can expend 1 charge to cast {@spell lightning bolt} (spell save DC 19) from the throne. The spell is cast as though using a 9th-level spell slot and deals 49 ({@damage 14d6}) lightning damage. The bolt discharges from the mouth of one of the throne's blue dragon skulls.",
-						"As an action, the creature can expend 2 charges to cast the {@spell globe of invulnerability} spell from the throne. The globe encloses both the creature and the throne.",
-						"As an action, the creature can expend 3 charges to create a spectral image of an {@creature ancient blue dragon} that surrounds both it and the throne. The spectral dragon lasts for 1 minute. At the end of each of the creature's turns, the spectral dragon makes one bite attack and two claw attacks against targets of the creature's choice. These attacks have the same attack bonus, reach, and damage as an {@creature ancient blue dragon||ancient blue dragon's} bite and claw attacks."
+						"El artefacto dispone de 9 cargas y cada día, al amanecer, recuperará todas las gastadas. Una criatura que se siente en el trono mientras esté sintonizada con un cetro de mando de Shanatar que se encuentre en su poder podrá utilizar sus propiedades, que son las siguientes:",
+						"El trono posee una velocidad volando de 30 pies y puede flotar y volar donde la criatura desee. Esta propiedad no consume cargas.",
+						"Tanto el artefacto como la criatura sentada en este pueden moverse a través de la tierra y la piedra sin alterar el material por el que se desplazan. Esta propiedad no consume cargas.",
+						"Como acción, la criatura podrá gastar 1 carga para lanzar el conjuro de {@spell relámpago|PHB-ES} (salvación de conjuros CD 19) desde el trono. Se lanza como si se usara un espacio de conjuro de nivel 9 e inflige 49 ({@damage 14d6}) de daño de relámpago. El relámpago se desencadenará desde las fauces de uno de los cráneos de dragón azul del artefacto.",
+						"Como acción, la criatura podrá gastar 2 cargas para lanzar el conjuro de {@spell globo de invulnerabilidad|PHB-ES} desde el trono. El globo abarcará tanto a la criatura como al artefacto.",
+						"Como acción, la criatura podrá gastar 3 cargas para crear la imagen espectral de un {@creature dragón azul anciano|MM-ES} que rodeará al trono y a su invocador. La bestia permanecerá durante 1 minuto. Al final de cada turno de la criatura, el dragón realizará un ataque de mordisco y dos de garra contra los objetivos que su creador designe. Estos tendrán el mismo bonificador de ataque, alcance y daño que los ataques de mordisco y garra de un {@creature dragón azul anciano|MM-ES}."
 					]
 				},
 				{
-					"name": "Destroying the Throne",
+					"name": "Destruir el trono",
 					"type": "entries",
 					"entries": [
-						"The Wyrmskull Throne can be destroyed by breaking at least five Ruling Scepters of Shanatar simultaneously on it. This fact has never been recorded or sung of among the dwarves or any bards or storytellers, and it can't be discovered with an ability check. Characters who want to destroy the throne must go on a quest to learn the method for doing so. The throne's destruction triggers an explosion, as shards of obsidian fly out in all directions. Each creature and object within a 30-foot-radius sphere centered on the throne must succeed on a DC 21 Dexterity saving throw, taking 70 ({@damage 20d6}) slashing damage on a failed save, or half as much damage on a successful one."
+						"El Trono de Wyrmskull puede destruirse rompiendo al menos cinco cetros de mando de Shanatar contra este. Ni los enanos, ni los bardos, ni otros cronistas han registrado jamás este procedimiento por escrito; tampoco lo han transmitido oralmente, por lo que no se podrá averiguar mediante pruebas de característica. Los personajes que quieran destruir el artefacto deberán embarcarse en una misión para averiguar la forma de hacerlo. La destrucción del trono desencadenará una explosión y habrá fragmentos de obsidiana volando por todas partes. Todas las criaturas y objetos que se encuentren dentro de una esfera de 30 pies de radio centrada en el artefacto deberán superar una tirada de salvación de Destreza CD 21; recibirán 70 ({@damage 20d6}) de daño cortante si la fallan, o la mitad de ese daño si la superan."
 					]
 				}
 			],
 			"attachedSpells": [
-				"lightning bolt",
-				"globe of invulnerability"
+				"relámpago|PHB-ES",
+				"globo de invulnerabilidad|PHB-ES"
 			],
 			"fluff": {
 				"images": [
@@ -24742,7 +24743,7 @@
 			]
 		},
 		{
-			"name": "Amulet of Protection from Turning",
+			"name": "Amuleto protector contra la expulsión",
 			"source": "TftYP-ES",
 			"page": 228,
 			"rarity": "rare",
@@ -24750,26 +24751,27 @@
 			"wondrous": true,
 			"weight": 1,
 			"entries": [
-				"While you wear this amulet of silver and turquoise, you have advantage on saving throws against effects that turn undead.",
-				"If you fail a saving throw against such an effect, you can choose to succeed instead. You can do so three times, and expended uses recharge daily at dawn. Each time an effect that turns undead is used against you, the amulet glows with silvery blue light for a few seconds."
+				"Al llevar este amuleto de plata y turquesa, tienes ventaja en las tiradas de salvación contra efectos que expulsan a los muertos vivientes.",
+				"Puedes elegir superar una tirada de salvación que hayas fallado contra un efecto de este tipo. Puedes hacer esto hasta tres veces y los usos gastados se recargan cada día al amanecer.",
+				"Cada vez que se utiliza un efecto que expulsa a los muertos vivientes en tu contra, el amuleto brilla con una luz azul plateada durante unos segundos. (El Santuario Oculto de Tamoachan)"
 			]
 		},
 		{
-			"name": "Balance of Harmony",
+			"name": "Balanza de la armonía",
 			"source": "TftYP-ES",
 			"page": 228,
 			"rarity": "uncommon",
 			"wondrous": true,
 			"weight": 1,
 			"entries": [
-				"This scale bears celestial symbols on one pan and fiendish symbols on the other. You can use the scale to cast {@spell detect evil and good} as a ritual. Doing so requires you to place the scale on a solid surface, then sprinkle the pans with holy water or place a transparent gem worth 100 gp in each pan. The scale remains motionless if it detects nothing, tips to one side or the other for good (consecrated) or evil (desecrated), and fluctuates slightly if it detects a creature appropriate to the spell but neither good nor evil. By touching the scales after casting the ritual, you instantly learn any information the spell can normally convey, and then the effect ends."
+				"Esta balanza tiene símbolos celestiales en un platillo y símbolos infernales en el otro. Puedes emplear este objeto para lanzar {@spell detectar el bien y el mal|PHB-ES} como ritual. Para hacerlo, se necesita colocar la balanza en una superficie sólida, rociar los platillos con agua bendita o colocar una piedra preciosa transparente que valga 100 po en cada uno de ellos. El objeto no se desequilibra si no detecta nada, se inclina a un lado u otro para señalizar el bien (consagrado) y el mal (profanado) y fluctúa un poco si detecta una criatura apropiada al conjuro pero que no es ni buena ni malvada. Si tocas la balanza tras haberse realizado el ritual, conoces de forma instantánea cualquier dato que normalmente transmitiría el conjuro y, después, el efecto acaba. (El Santuario Oculto de Tamoachan)"
 			],
 			"attachedSpells": [
-				"detect evil and good"
+				"detectar el bien y el mal|PHB-ES"
 			]
 		},
 		{
-			"name": "Bracelet of Rock Magic",
+			"name": "Brazalete de magia pétrea",
 			"source": "TftYP-ES",
 			"page": 228,
 			"rarity": "very rare",
@@ -24778,24 +24780,24 @@
 			"curse": true,
 			"weight": 1,
 			"entries": [
-				"While you wear this gold bracelet, it grants you immunity to being {@condition petrified}, and it allows you to cast {@spell flesh to stone} (save DC 15) as an action. Once the spell has been cast three times, the bracelet can no longer cast it. Thereafter, you can cast {@spell stone shape} as an action. After you have done this thirteen times, the bracelet loses its magic and turns from gold to lead.",
+				"Mientras lleves este brazalete de oro, te concede inmunidad a ser {@condition petrificado|PHB-ES} y te permite lanzar {@spell de la carne a la piedra|PHB-ES} (tirada de salvación CD 15) como acción. Una vez se ha utilizado el conjuro tres veces, el objeto no puede volver a lanzarlo. A partir de entonces, puedes usar {@spell moldear la piedra|PHB-ES} como acción. Tras hacerlo trece veces, el brazalete pierde su magia y el oro se transforma en plomo.",
 				{
 					"type": "entries",
-					"name": "Curse",
+					"name": "Maldición",
 					"entries": [
-						"The bracelet's affinity with earth manifests as an unusual curse. Creatures of flesh that are strongly related to earth and stone, such as stone giants and dwarves, have advantage on the saving throw against {@spell flesh to stone} cast from the bracelet. If such a creature's save is successful, the bracelet breaks your attunement to it and casts the spell on you. You make your saving throw with disadvantage, and on a failed save you are {@condition petrified} instantly."
+						"La afinidad de este objeto mágico con la tierra se expresa como una maldición poco habitual. Las criaturas hechas de carne con un vínculo fuerte con la tierra y la piedra, como los gigantes de piedra y los enanos, tienen ventaja en la tirada de salvación contra el conjuro {@spell de la carne a la piedra|PHB-ES} que se lanza con el brazalete. Si una criatura de estas características supera la tirada, el brazalete deja de estar sintonizado con su portador y le lanza el conjuro a este. El portador hace la tirada de salvación con desventaja y, si la falla, queda {@condition petrificado|PHB-ES} al instante. (El Santuario Oculto de Tamoachan)"
 					]
 				}
 			],
 			"attachedSpells": [
-				"flesh to stone",
-				"stone shape"
+				"de la carne a la piedra|PHB-ES",
+				"moldear la piedra|PHB-ES"
 			]
 		},
 		{
-			"name": "Eagle Whistle",
+			"name": "Silbato del águila",
 			"source": "TftYP-ES",
-			"page": 228,
+			"page": 229,
 			"rarity": "rare",
 			"wondrous": true,
 			"weight": 1,
@@ -24808,14 +24810,14 @@
 				}
 			},
 			"entries": [
-				"While you blow an eagle whistle continuously, you can fly twice as fast as your walking speed. You can blow the whistle continuously for a number of rounds equal to 5 + five times your Constitution modifier (minimum of 1 round) or until you talk, hold your breath, or start suffocating. A use of the whistle also ends if you land. If you are aloft when you stop blowing the whistle, you fall. The whistle has three uses. It regains expended uses daily at dawn."
+				"Cuando haces sonar un silbato del águila de forma continuada, eres capaz de volar al doble de velocidad de tu velocidad caminando. Puedes utilizar el objeto de esta manera 5 + cinco veces tu modificador de Constitución asaltos (1 asalto como mínimo) o hasta que hables, aguantes la respiración o empieces a ahogarte. Si aterrizas, también acaba el uso del objeto. Si te encuentras en el aire cuando acabas de soplar el silbato, caerás. El objeto tiene tres usos, que se recargan cada día al amanecer. (El Santuario Oculto de Tamoachan)"
 			]
 		},
 		{
-			"name": "Flame Tongue Shortsword of Greed",
+			"name": "Espada corta lengua de fuego",
 			"source": "TftYP-ES",
 			"page": 179,
-			"baseItem": "shortsword|phb",
+			"baseItem": "espada corta|PHB-ES",
 			"type": "M",
 			"rarity": "unknown (magic)",
 			"reqAttune": true,
@@ -24830,12 +24832,12 @@
 			"sword": true,
 			"weapon": true,
 			"entries": [
-				"You can use a bonus action to speak this magic sword's command word, causing flames to erupt from the blade. These flames shed bright light in a 40-foot radius and dim light for an additional 40 feet. While the sword is ablaze, it deals an extra {@damage 2d6} fire damage to any target it hits. The flames last until you use a bonus action to speak the command word again or until you drop or sheathe the sword.",
-				"While you are attuned to this sword you can use an action to mentally command it to detect gems and jewels. You learn the kind and number of such objects within 60 feet of the sword."
+				"Puedes usar una acción adicional para pronunciar la palabra de activación de la espada, haciendo que se cubra de llamas. Este fuego emite luz brillante en un radio de 40 pies y luz tenue 40 pies más allá. Mientras la espada esté en llamas, infligirá {@damage 2d6} de daño de fuego adicional a cualquier objetivo golpeado. Las llamas permanecen hasta que emplees una acción adicional para pronunciar la palabra de activación de nuevo o hasta que sueltes o envaines el arma.",
+				"Un aventurero sintonizado con esta espada puede usar una acción para ordenarle mentalmente que detecte piedras preciosas y joyas. Quien lo haga, descubre cuántos de estos objetos se encuentran a 60 pies del arma y de qué tipo son."
 			]
 		},
 		{
-			"name": "Hell Hound Cloak",
+			"name": "Capa de sabueso infernal",
 			"source": "TftYP-ES",
 			"page": 228,
 			"rarity": "rare",
@@ -24844,25 +24846,25 @@
 			"curse": true,
 			"weight": 1,
 			"entries": [
-				"This dark cloak is made of cured {@creature hell hound} hide. As an action, you can command the cloak to transform you into a {@creature hell hound} for up to 1 hour. The transformation otherwise functions as the {@spell polymorph} spell, but you can use a bonus action to revert to your normal form.",
+				"Esta capa oscura está hecha de piel de {@creature sabueso infernal|MM-ES} curtida. Como acción, puedes ordenar al objeto que te convierta en este animal infernal hasta 1 hora. Por lo demás, la transformación funciona como un conjuro de {@spell polimorfar|PHB-ES}, pero puedes usar tu acción adicional para recuperar tu forma normal.",
 				{
 					"type": "entries",
-					"name": "Curse",
+					"name": "Maldición",
 					"entries": [
-						"This cloak is cursed with the essence of a {@creature hell hound}, and becoming attuned to it extends the curse to you. Until the curse is broken with {@spell remove curse} or similar magic, you are unwilling to part with the cloak, keeping it within reach at all times."
+						"Esta capa está maldita con la esencia de un {@creature sabueso infernal|MM-ES} y sintonizarte con ella te contagia la maldición. Hasta que se elimine esta maldición mediante {@spell levantar maldición|PHB-ES} o un efecto mágico similar, no estarás dispuesto a separarte del objeto y lo tendrás a mano constantemente."
 					]
 				},
-				"The sixth time you use the cloak, and each time thereafter, you must make a DC 15 Charisma saving throw. On a failed save, the transformation lasts until dispelled or until you drop to 0 hit points, and you can't willingly return to normal form. If you ever remain in {@creature hell hound} form for 6 hours, the transformation becomes permanent and you lose your sense of self. All your statistics are then replaced by those of a {@creature hell hound}. Thereafter, only {@spell remove curse} or similar magic allows you to regain your identity and return to normal. If you remain in this permanent form for 6 days, only a {@spell wish} spell can reverse the transformation."
+				"La sexta vez que utilices la capa y en todos los usos posteriores a este momento, deberás hacer una tirada de salvación de Carisma CD 15. Si no la superas, el cambio dura hasta que sea disipado o hasta que tus puntos de golpe desciendan a 0. No te será posible recuperar tu aspecto habitual por voluntad propia. Si permaneces como {@creature sabueso infernal|MM-ES} durante 6 horas seguidas, la transformación se volverá permanente y perderás tu identidad. Tu perfil será reemplazado por el de esta criatura. A partir de ese momento, solo un efecto mágico como {@spell levantar maldición|PHB-ES} te permite recuperarte y volver a la normalidad. Si mantienes esta forma permanente durante 6 días, solo podrá revertir la transformación un conjuro de {@spell deseo|PHB-ES}. (Contra los Gigantes)"
 			],
 			"attachedSpells": [
-				"polymorph"
+				"polimorfar|PHB-ES"
 			]
 		},
 		{
-			"name": "Javelin of Backbiting",
+			"name": "Jabalina traicionera",
 			"source": "TftYP-ES",
-			"page": 229,
-			"baseItem": "javelin|phb",
+			"page": 228,
+			"baseItem": "jabalina|PHB-ES",
 			"type": "M",
 			"rarity": "very rare",
 			"reqAttune": true,
@@ -24877,22 +24879,22 @@
 			"dmgType": "P",
 			"bonusWeapon": "+2",
 			"entries": [
-				"You gain a +2 bonus to attack and damage rolls made with this magic weapon. When you throw it, its normal and long ranges both increase by 30 feet, and it deals one extra die of damage on a hit. After you throw it and it hits or misses, it flies back to your hand immediately.",
+				"Recibes un bonificador de +2 a las tiradas de ataque y de daño que hagas con esta arma. Cuando la lanzas, su alcance normal y su alcance largo se incrementan en 30 pies y, además, hace un dado adicional de daño cuando impacta. Tras arrojarla, impacte o no, vuelve volando a tu mano de inmediato.",
 				{
 					"type": "entries",
-					"name": "Curse",
+					"name": "Maldición",
 					"entries": [
-						"This weapon is cursed, and becoming attuned to it extends the curse to you. Until the curse is broken with {@spell remove curse} or similar magic, you are unwilling to part with the weapon, keeping it within reach at all times. In addition, you have disadvantage on attack rolls made with weapons other than this one."
+						"Este objeto está maldito y al sintonizarte con él te afectará la maldición. Hasta que esta última se elimine mediante {@spell levantar maldición|PHB-ES} o un efecto mágico similar, no estarás dispuesto a separarte del arma y la tienes a mano constantemente. Además, mientras estés sintonizado con ella, tendrás desventaja en tiradas de ataque que realices con otras armas."
 					]
 				},
-				"Whenever you roll a 1 on an attack roll using this weapon, the weapon bends or flies to hit you in the back. Make a new attack roll with advantage against your own AC. If the result is a hit, you take damage as if you had attacked yourself with the javelin."
+				"Cuando saques un 1 en una tirada de ataque usando esta arma, esta se torcerá o volará para golpearte en la espalda. Haz una nueva tirada de ataque con ventaja contra tu propia CA. Si el resultado indica que impacta, recibes el daño como si te hubieras atacado a ti mismo con el arma. (Tumba de Jos Horrores)"
 			]
 		},
 		{
-			"name": "Junky +1 Dagger",
+			"name": "Daga +1 que parece chatarra",
 			"source": "TftYP-ES",
 			"page": 77,
-			"baseItem": "dagger|phb",
+			"baseItem": "daga|PHB-ES",
 			"type": "M",
 			"rarity": "unknown (magic)",
 			"weight": 1,
@@ -24908,11 +24910,11 @@
 			"bonusWeapon": "+1",
 			"weapon": true,
 			"entries": [
-				"You have a +1 bonus to attack and damage rolls made with this dagger, which looks like junk. When it is used, its grip frays, its blade chips, and it flakes rust. If you get a natural 1 on an attack roll while wielding this weapon, it breaks and becomes nonmagical."
+				"Recibes un bonificador +1 a las tiradas de ataque y de daño que hagas con esta daga, que parece chatarra. Cuando se utiliza, su empuñadura se rae, su hoja se agujerea y forma escamas de óxido. Si un personaje que emplee esta arma saca un 1 natural en la tirada de ataque, la daga se rompe y se convierte en no mágica."
 			]
 		},
 		{
-			"name": "Loadstone",
+			"name": "Calamita",
 			"source": "TftYP-ES",
 			"page": 228,
 			"rarity": "rare",
@@ -24920,12 +24922,12 @@
 			"curse": true,
 			"weight": 1,
 			"entries": [
-				"This stone is a large gem worth 150 gp.",
+				"Esta piedra es una gema grande que vale 150 po.",
 				{
 					"type": "entries",
-					"name": "Curse",
+					"name": "Maldición",
 					"entries": [
-						"The stone is cursed, but its magical nature is hidden; {@spell detect magic} doesn't detect it. An {@spell identify} spell reveals the stone's true nature. If you use the {@action Dash} or {@action Disengage} action while the stone is on your person, its curse activates. Until the curse is broken with {@spell remove curse} or similar magic, your speed is reduced by 5 feet, and your maximum load and maximum lift capacities are halved. You also become unwilling to part with the stone."
+						"El objeto está maldito, pero su naturaleza mágica se encuentra oculta y no se percibe al utilizar {@spell detectar magia|PHB-ES}. La naturaleza real de la piedra se muestra lanzando {@spell identificar|PHB-ES}. Si usas {@action Correr|PHB-ES} o {@action Destrabarse|PHB-ES} como acción mientras llevas el imán encima, la maldición se activará. Hasta que esta última sea eliminada mediante un conjuro de {@spell levantar maldición|PHB-ES} o un efecto mágico similar, tu velocidad se reduce en 5 pies y tanto tu capacidad de carga como el peso máximo que puedes levantar se reducen a la mitad. Además, no estarás dispuesto a separarte de la piedra. (Muerte en Thay)"
 					]
 				}
 			]
@@ -24934,7 +24936,7 @@
 			"name": "Macuahuitl",
 			"source": "TftYP-ES",
 			"page": 70,
-			"baseItem": "longsword|phb",
+			"baseItem": "espada larga|PHB-ES",
 			"type": "M",
 			"rarity": "unknown (magic)",
 			"weight": 3,
@@ -24949,80 +24951,80 @@
 			"sword": true,
 			"weapon": true,
 			"entries": [
-				"You have a +1 bonus to attack and damage rolls made with this longsword, which is made of laminated wood, and inset with jagged teeth of obsidian. It deals an extra {@damage 2d6} damage to any creature of the plant type."
+				"Recibes un bonificador +1 a las tiradas de ataque y de daño que hagas con esta espada larga, hecha de madera laminada, con un añadido serrado de dientes de obsidiana. Hace un daño adicional de {@damage 2d6} a cualquier criatura del tipo planta."
 			]
 		},
 		{
-			"name": "Mirror of the Past",
+			"name": "Espejo del pasado",
 			"source": "TftYP-ES",
 			"page": 228,
 			"rarity": "rare",
 			"wondrous": true,
 			"weight": 1,
 			"entries": [
-				"The holder of this platinum hand mirror can learn something about the history of a specific object or creature by taking an action to gaze into the mirror and think of the target. Instead of the holder's reflection, the mirror presents scenes from the target's past. Information conveyed is accurate, but it is random and cryptic, and presented in no particular order. Once it is activated, the mirror gives its information for 1 minute or less, then returns to normal. It can't be used again until the next dawn."
+				"Quien posea este espejito de mano de platino tal vez descubra algo sobre la historia de un objeto o una criatura en concreto si usa una acción para observar el espejo y pensar en el objetivo. En vez de mostrar el reflejo de quien lo sostiene, el espejo enseña escenas del pasado del objetivo. La información que se ofrece es certera, pero también aleatoria y críptica, ya que no se muestra en un orden concreto. Una vez activado, el espejo proporciona información hasta 1 minuto, tras lo cual vuelve a la normalidad. No puede emplearse de nuevo de esta manera hasta el siguiente amanecer. (El Santuario Oculto de Tamoachan)"
 			]
 		},
 		{
-			"name": "Night Caller",
+			"name": "Llamador nocturno",
 			"source": "TftYP-ES",
-			"page": 228,
+			"page": 229,
 			"rarity": "uncommon",
 			"wondrous": true,
 			"weight": 1,
 			"entries": [
-				"This whistle is carved from transparent crystal, and it resembles a tiny dragon curled up like a snail. The name Night Caller is etched on the whistle in Dwarvish runes. If a character succeeds on a DC 20 Intelligence ({@skill Arcana} or {@skill History}) check, the character recalls lore that says the {@creature duergar} made several such whistles for various groups in an age past.",
-				"If you blow the whistle in darkness or under the night sky, it allows you to cast the {@spell animate dead} spell. The target can be affected through up to 10 feet of soft earth or similar material, and if it is, it takes 1 minute to claw its way to the surface to serve you. Once the whistle has animated an undead creature, it can't do so again until 7 days have passed.",
-				"Once every 24 hours, you can blow the whistle to reassert control over one or two creatures you animated with it."
+				"Este silbato ha sido tallado en cristal transparente y parece un dragón diminuto enroscado cual caracol. En su superficie se ha grabado el nombre \"Llamador nocturno\" con runas enanas. Si un personaje supera una prueba de Inteligencia ({@skill Conocimiento Arcano|PHB-ES} o {@skill Historia|PHB-ES}) CD 20, este recuerda un relato que afirma que los {@creature duergar|MM-ES|duergars} hicieron varios silbatos así para varios grupos en tiempos pasados.",
+				"Si haces sonar el objeto en la oscuridad o bajo el cielo nocturno, te permite lanzar {@spell animar a los muertos|PHB-ES}. El objetivo puede verse afectado a través de 10 pies o menos de tierra blanda o un material similar. En el caso de que esto suceda, una criatura tarda 1 minuto en abrirse paso a la superficie empleando las uñas para ello. Cuando el silbato ha animado a una criatura muerta viviente, no podrá volver a hacerlo hasta que pasen 7 días.",
+				"Una vez cada 24 horas, puedes hacer sonar el objeto para reafirmar tu control sobre una o dos criaturas que hayas animado usándolo. (La Ciudadela Sombría)"
 			],
 			"attachedSpells": [
-				"animate dead"
+				"animar a los muertos|PHB-ES"
 			]
 		},
 		{
-			"name": "Potion of Mind Control (beast)",
+			"name": "Poción para controlar la mente (bestia)",
 			"source": "TftYP-ES",
 			"page": 229,
 			"type": "P",
 			"rarity": "rare",
 			"entries": [
-				"When you drink a potion of mind control, you can cast a dominate spell (save DC 15) on a specific creature if you do so before the end of your next turn. If you don't, the potion is wasted.",
-				"A potion of mind control produces the effect of a {@spell dominate beast} spell. If the target's initial saving throw fails, the effect lasts for 1 hour, with no {@status concentration} required on your part. The {@condition charmed} creature has disadvantage on new saving throws to break the effect during this time."
+				"Cuando bebes una poción para controlar la mente, puedes lanzar un conjuro de dominar (tirada de salvación CD 15) sobre una criatura concreta si lo haces antes de que acabe tu turno siguiente. Si no haces esto, la poción se malgasta.",
+				"Una poción para controlar la mente produce el efecto de un conjuro de {@spell dominar bestia|PHB-ES}. Si el objetivo no supera la tirada de salvación inicial, el efecto dura 1 hora y no es necesario que te {@status concentración|PHB-ES|concentres}. La criatura {@condition hechizado|PHB-ES|hechizada} tiene desventaja en tiradas de salvación posteriores para acabar con este efecto durante este tiempo. (Contra los Gigantes)"
 			],
 			"attachedSpells": [
-				"dominate beast"
+				"dominar bestia|PHB-ES"
 			]
 		},
 		{
-			"name": "Potion of Mind Control (humanoid)",
+			"name": "Poción para controlar la mente (humanoide)",
 			"source": "TftYP-ES",
 			"page": 229,
 			"type": "P",
 			"rarity": "rare",
 			"entries": [
-				"When you drink a potion of mind control, you can cast a dominate spell (save DC 15) on a specific creature if you do so before the end of your next turn. If you don't, the potion is wasted.",
-				"A potion of mind control produces the effect of a {@spell dominate person} spell. If the target's initial saving throw fails, the effect lasts for 1 hour, with no {@status concentration} required on your part. The {@condition charmed} creature has disadvantage on new saving throws to break the effect during this time."
+				"Cuando bebes una poción para controlar la mente, puedes lanzar un conjuro de dominar (tirada de salvación CD 15) sobre una criatura concreta si lo haces antes de que acabe tu turno siguiente. Si no haces esto, la poción se malgasta.",
+				"Una poción para controlar la mente produce el efecto de un conjuro de {@spell dominar persona|PHB-ES|dominar persona (humanoide)}. Si el objetivo no supera la tirada de salvación inicial, el efecto dura 1 hora y no es necesario que te {@status concentración|PHB-ES|concentres}. La criatura {@condition hechizado|PHB-ES|hechizada} tiene desventaja en tiradas de salvación posteriores para acabar con este efecto durante este tiempo. (Contra los Gigantes)"
 			],
 			"attachedSpells": [
-				"dominate person"
+				"dominar persona|PHB-ES"
 			]
 		},
 		{
-			"name": "Potion of Mind Control (monster)",
+			"name": "Poción para controlar la mente (monstruo)",
 			"source": "TftYP-ES",
 			"page": 229,
 			"type": "P",
 			"rarity": "very rare",
 			"entries": [
-				"When you drink a potion of mind control, you can cast a dominate spell (save DC 15) on a specific creature if you do so before the end of your next turn. If you don't, the potion is wasted.",
-				"A potion of mind control produces the effect of a {@spell dominate monster} spell. If the target's initial saving throw fails, the effect lasts for 1 hour, with no {@status concentration} required on your part. The {@condition charmed} creature has disadvantage on new saving throws to break the effect during this time."
+				"Cuando bebes una poción para controlar la mente, puedes lanzar un conjuro de dominar (tirada de salvación CD 15) sobre una criatura concreta si lo haces antes de que acabe tu turno siguiente. Si no haces esto, la poción se malgasta.",
+				"Una poción para controlar la mente produce el efecto de un conjuro de {@spell dominar monstruo|PHB-ES}. Si el objetivo no supera la tirada de salvación inicial, el efecto dura 1 hora y no es necesario que te {@status concentración|PHB-ES|concentres}. La criatura {@condition hechizado|PHB-ES|hechizada} tiene desventaja en tiradas de salvación posteriores para acabar con este efecto durante este tiempo. (Contra los Gigantes)"
 			],
 			"attachedSpells": [
-				"dominate monster"
+				"dominar monstruo|PHB-ES"
 			]
 		},
 		{
-			"name": "Robe of Summer",
+			"name": "Túnica veraniega",
 			"source": "TftYP-ES",
 			"page": 229,
 			"resist": [
@@ -25033,14 +25035,14 @@
 			"wondrous": true,
 			"weight": 1,
 			"entries": [
-				"This elegant garment is made from fine cloth in hues of red, orange, and gold. While you wear the robe, you have resistance to cold damage. In addition, you are comfortable as if the temperature were that of a balmy day, so you suffer no ill effects from the weather's temperature extremes."
+				"Esta prenda elegante se ha confeccionado con una tela delicada de tonos rojos, naranjas y dorados. Mientras lleves la túnica, obtendrás resistencia al daño de frío. Además, te sentirás cómodo cuando la portas, como si el clima fuera el de un día templado, de modo que no sufres los efectos nocivos de las temperaturas extremas. (Muerte en Thay)"
 			]
 		},
 		{
-			"name": "Shatterspike",
+			"name": "Despedazadora",
 			"source": "TftYP-ES",
 			"page": 229,
-			"baseItem": "longsword|phb",
+			"baseItem": "espada larga|PHB-ES",
 			"type": "M",
 			"rarity": "uncommon",
 			"reqAttune": true,
@@ -25054,14 +25056,14 @@
 			"dmg2": "1d10",
 			"bonusWeapon": "+1",
 			"entries": [
-				"You have a +1 bonus to attack and damage rolls made with this magic weapon. If it hits an object, the hit is automatically a critical hit, and it can deal bludgeoning or slashing damage to the object (your choice). Further, damage from nonmagical sources can't harm the weapon."
+				"Recibes un bonificador de +1 a las tiradas de ataque y de daño que hagas con esta arma mágica. Si impacta sobre un objeto, provoca un crítico de manera automática y el arma puede infligir daño contundente o cortante (según prefieras). Además, las fuentes no mágicas de daño no pueden afectar al arma. (La Ciudadela Sombría)"
 			]
 		},
 		{
-			"name": "Spear of Backbiting",
+			"name": "Lanza traicionera",
 			"source": "TftYP-ES",
-			"page": 229,
-			"baseItem": "spear|phb",
+			"page": 228,
+			"baseItem": "lanza|PHB-ES",
 			"type": "M",
 			"rarity": "very rare",
 			"reqAttune": true,
@@ -25078,19 +25080,19 @@
 			"dmg2": "1d8",
 			"bonusWeapon": "+2",
 			"entries": [
-				"You gain a +2 bonus to attack and damage rolls made with this magic weapon. When you throw it, its normal and long ranges both increase by 30 feet, and it deals one extra die of damage on a hit. After you throw it and it hits or misses, it flies back to your hand immediately.",
+				"Recibes un bonificador de +2 a las tiradas de ataque y de daño que hagas con esta arma. Cuando la lanzas, su alcance normal y su alcance largo se incrementan en 30 pies y, además, hace un dado adicional de daño cuando impacta. Tras arrojarla, impacte o no, vuelve volando a tu mano de inmediato.",
 				{
 					"type": "entries",
-					"name": "Curse",
+					"name": "Maldición",
 					"entries": [
-						"This weapon is cursed, and becoming attuned to it extends the curse to you. Until the curse is broken with {@spell remove curse} or similar magic, you are unwilling to part with the weapon, keeping it within reach at all times. In addition, you have disadvantage on attack rolls made with weapons other than this one."
+						"Este objeto está maldito y al sintonizarte con él te afectará la maldición. Hasta que esta última se elimine mediante {@spell levantar maldición|PHB-ES} o un efecto mágico similar, no estarás dispuesto a separarte del arma y la tienes a mano constantemente. Además, mientras estés sintonizado con ella, tendrás desventaja en tiradas de ataque que realices con otras armas."
 					]
 				},
-				"Whenever you roll a 1 on an attack roll using this weapon, the weapon bends or flies to hit you in the back. Make a new attack roll with advantage against your own AC. If the result is a hit, you take damage as if you had attacked yourself with the spear."
+				"Cuando saques un 1 en una tirada de ataque usando esta arma, esta se torcerá o volará para golpearte en la espalda. Haz una nueva tirada de ataque con ventaja contra tu propia CA. Si el resultado indica que impacta, recibes el daño como si te hubieras atacado a ti mismo con el arma. (Tumba de Jos Horrores)"
 			]
 		},
 		{
-			"name": "Stone of Ill Luck",
+			"name": "Piedra de la mala fortuna",
 			"source": "TftYP-ES",
 			"page": 229,
 			"rarity": "uncommon",
@@ -25101,23 +25103,23 @@
 			"bonusSavingThrow": "-2",
 			"bonusAbilityCheck": "-2",
 			"entries": [
-				"This polished agate appears to be a {@item stone of good luck} to anyone who tries to identify it, and it confers that item's property while on your person.",
+				"Esta ágata pulida parece una {@item piedra de la buena fortuna|DMG-ES} si alguien trata de identificarla y te confiere las propiedades de dicho objeto cuando la llevas encima.",
 				{
 					"type": "entries",
-					"name": "Curse",
+					"name": "Maldición",
 					"entries": [
-						"This item is cursed. While it is on your person, you take a -2 penalty to ability checks and saving throws. Until the curse is discovered, the DM secretly applies this penalty, assuming you are adding the item's bonus. You are unwilling to part with the stone until the curse is broken with {@spell remove curse} or similar magic."
+						"Este objeto está maldito. Mientras lo portes, tienes un penalizador de -2 en las pruebas de característica y tiradas de salvación. Hasta que se descubra la maldición el DM aplica el penalizador en secreto, asumiendo que añades el bonificador de la piedra. Hasta que la maldición se elimine mediante {@spell levantar maldición|PHB-ES} o un efecto mágico similar, no estarás dispuesto a separarte de esta ágata. (El Santuario Oculto de Tamoachan)"
 					]
 				}
 			]
 		},
 		{
-			"name": "Wand of Entangle",
+			"name": "Varita de enmarañar",
 			"source": "TftYP-ES",
 			"page": 229,
 			"type": "WD",
 			"rarity": "uncommon",
-			"reqAttune": "by a spellcaster",
+			"reqAttune": "con un lanzador de conjuros",
 			"reqAttuneTags": [
 				{
 					"spellcasting": true
@@ -25128,18 +25130,18 @@
 			"rechargeAmount": "{@dice 1d6 + 1}",
 			"charges": 7,
 			"entries": [
-				"This wand has 7 charges. While holding it, you can use an action to expend 1 of its charges to cast the {@spell entangle} spell (save DC 13) from it.",
-				"The wand regains {@dice 1d6 + 1} expended charges daily at dawn. If you expend the wand's last charge, roll a {@dice d20}. On a 1, the wand crumbles into ashes and is destroyed."
+				"Este objeto posee 7 cargas. Mientras lo empuñes, puedes usar una acción para gastar 1 o más de sus cargas en lanzar un conjuro de {@spell enmarañar|PHB-ES} desde ella, con salvación CD 13.",
+				"La varita recupera {@dice 1d6 + 1} cargas empleadas cada día al amanecer. Si utilizas la última de ellas, tira un {@dice d20}. Si sacas un 1, el objeto se convierte en cenizas y se destruye. (La Ciudadela Sombría)"
 			],
 			"attachedSpells": [
-				"entangle"
+				"enmarañar|PHB-ES"
 			]
 		},
 		{
 			"name": "Waythe",
 			"source": "TftYP-ES",
 			"page": 229,
-			"baseItem": "greatsword|phb",
+			"baseItem": "espadón|PHB-ES",
 			"type": "M",
 			"rarity": "legendary",
 			"reqAttune": true,
@@ -25154,28 +25156,28 @@
 			"dmgType": "S",
 			"bonusWeapon": "+1",
 			"entries": [
-				"Waythe is a unique greatsword most recently in the possession of a high-ranking {@creature cloud giant} ambassador.",
-				"You gain a +1 bonus to attack and damage rolls made with this magic weapon. When you hit a creature of the giant type with it, the giant takes an extra {@damage 2d6} slashing damage, and it must succeed on a DC 15 Strength saving throw or fall {@condition prone}.",
-				"The sword also functions as a {@item wand of enemy detection}. It regains all of its expended charges at dawn and isn't at risk of crumbling if its last charge is used.",
+				"Waythe es un espadón singular cuyo último dueño ha sido un embajador de alto rango que representaba a los {@creature gigante de las nubes|MM-ES|gigantes de las nubes}.",
+				"Recibes un bonificador de +1 a las tiradas de ataque y de daño que hagas con esta arma. Cuando impactes a una criatura usando esta espada, el objetivo recibe {@damage 2d6} de daño cortante adicional y deberá tener éxito en una tirada de salvación de Fuerza CD 15 o caerá {@condition derribado|PHB-ES}.",
+				"La espada también funciona como una {@item varita de detectar enemigos|DMG-ES}. Los usos gastados se recargan cada día al amanecer y no corre el riesgo de desintegrarse si se utiliza la última carga.",
 				{
-					"name": "Sentience",
+					"name": "Consciencia",
 					"type": "entries",
 					"entries": [
-						"Waythe is a sentient weapon of neutral good alignment, with an Intelligence of 12, a Wisdom of 2, and a Charisma of 14. It has hearing and {@sense darkvision} out to a range of 120 feet.",
-						"The weapon can speak and understand Giant and Common, and it can communicate telepathically with its wielder."
+						"Waythe es un arma consciente neutral buena, con Inteligencia 12, Sabiduría 2 y Carisma 14. Su oído y {@sense visión en la oscuridad|PHB-ES} tienen un alcance de 120 pies.",
+						"El espadón es capaz de hablar y comprender el común y el gigante y, además, puede comunicarse telepáticamente con quien lo empuña."
 					]
 				},
 				{
-					"name": "Personality",
+					"name": "Personalidad",
 					"type": "entries",
 					"entries": [
-						"This sword believes in freedom and allowing others to live as they see fit. It is protective of its friends, and wants to be friends with a like-minded wielder. (It takes only 1 minute for a good-aligned character to gain attunement with the sword.) Waythe is courageous to the point of foolhardiness, however, and vocally urges bold action. It is likely to come into conflict with an evil or a timid wielder."
+						"La espada cree en la libertad y en permitir que cada cual viva como escoja hacerlo. Es protectora con sus amigos y desea la amistad de alguien que la empuñe y tenga una mentalidad similar. Un personaje bueno solo requiere 1 minuto para sintonizarse con el arma. Sin embargo, Waythe es valiente hasta la temeridad e invita a su amo a actuar con coraje. Si quien la porta es malvado o tímido, la espada seguramente acabará teniendo un conflicto con su dueño. (Contra los Gigantes)"
 					]
 				}
 			]
 		},
 		{
-			"name": "White Dragon Cape",
+			"name": "Capa de dragón blanco",
 			"source": "TftYP-ES",
 			"page": 193,
 			"type": "OTH",
@@ -25184,7 +25186,7 @@
 			],
 			"rarity": "unknown (magic)",
 			"entries": [
-				"You have resistance to cold damage while wearing this cape."
+				"Capa mágica que concede resistencia al daño de frío a quien la lleva."
 			]
 		},
 		{
