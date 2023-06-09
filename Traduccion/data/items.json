@@ -25190,7 +25190,7 @@
 			]
 		},
 		{
-			"name": "Amulet of the Black Skull",
+			"name": "Amuleto del cráneo negro",
 			"source": "ToA-ES",
 			"page": 206,
 			"rarity": "very rare",
@@ -25201,15 +25201,15 @@
 			"rechargeAmount": "{@dice 1d6}",
 			"charges": 6,
 			"entries": [
-				"This amulet is carved from obsidian and shaped like a screaming humanoid skull, with ruby eyes and emeralds for teeth. It hangs from an iron chain necklace.",
-				"The amulet has 6 charges and regains {@dice 1d6} charges daily at dawn. While wearing the amulet, you can use an action to expend 1 of its charges to transport yourself and anything you are wearing or carrying to a location within 100 feet of you. The destination you choose doesn't need to be in your line of sight, but it must be familiar to you (in other words, a place you have seen or visited), and it must be on the same plane of existence as you. This effect isn't subject to the magic restrictions placed on the Tomb of the Nine Gods; thus, the amulet can be used to enter and exit the tomb.",
-				"If you aren't undead, you must make a DC 16 Constitution saving throw each time you use the amulet to teleport. On a failed saving throw, the black skull cackles as you are transformed in transit. The transformation takes effect as soon as you arrive at the destination, and is determined randomly by rolling percentile dice and consulting the Black Skull Transformation table.",
+				"Este amuleto está tallado en obsidiana con la forma de un cráneo de un humanoide gritando, con ojos de rubí y dientes de esmeralda. Cuelga de un collar de cadena de hierro.",
+				"El objeto tiene 6 cargas y recupera {@dice 1d6} cargas cada día al amanecer. Mientras se lleva puesto, se puede utilizar una acción para gastar una de sus cargas, teletransportándose uno mismo y cualquier cosa que cargue o que lleve puesta a una localización que se encuentre a 100 pies o menos de distancia. El destino elegido no tiene por qué estar en la línea de visión, pero debe ser familiar para el que se transporta (es decir, un lugar en el que haya estado o que haya visto) y encontrarse en el mismo plano de existencia. Este efecto no está sujeto a las restricciones de magia de la Tumba de los Nueve Dioses. Por tanto, el amuleto se puede emplear para entrar y salir de ella.",
+				"Si el portador no es un muerto viviente, cada vez que se use para teletransportarse se debe realizar una tirada de salvación de Constitución CD 16. Si se falla la tirada, el cráneo negro se ríe a carcajadas mientras su portador es transformado durante el trayecto. El cambio se produce en cuanto llega a su destino. Se determina aleatoriamente tirando un {@dice 1d100} y consultando la tabla \"transformación del cráneo negro\".",
 				{
 					"type": "table",
-					"caption": "Black Skull Transformation",
+					"caption": "Transformación del cráneo negro",
 					"colLabels": [
 						"{@dice d100}",
-						"Transformation"
+						"Transformación"
 					],
 					"colStyles": [
 						"col-1 text-center",
@@ -25218,48 +25218,48 @@
 					"rows": [
 						[
 							"01-20",
-							"The symbol of {@creature Acererak|ToA} is burned into your flesh, a curse that can only be removed with a {@spell remove curse} spell or similar magic. Until the curse ends, your hit points can't be restored by magic."
+							"El símbolo de {@creature Acererak|ToA-ES} se graba a fuego en tu piel, una maldición que solo puede eliminarse con un conjuro de {@spell levantar maldición|PHB-ES} o magia similar. Hasta que te libres de la maldición, no podrás recuperar puntos de golpe mediante magia."
 						],
 						[
 							"21-35",
-							"You grow larger as if affected by an {@spell enlarge/reduce} spell, except the effect lasts for 1 hour."
+							"Creces como si hubieras sido objetivo de un conjuro de {@spell agrandar/reducir|PHB-ES}, salvo porque el efecto dura 1 hora."
 						],
 						[
 							"36-50",
-							"You grow smaller as if affected by an {@spell enlarge/reduce} spell, except the effect lasts for 1 hour."
+							"Empequeñeces como si hubieras sido objetivo de un conjuro de {@spell agrandar/reducir|PHB-ES}, salvo porque el efecto dura 1 hora."
 						],
 						[
 							"51-70",
-							"You arrive at the destination wearing nothing but the amulet of the black skull. Everything else that you were wearing or carrying appears in a random unoccupied space within 100 feet of you."
+							"Llegas al destino sin llevar nada puesto, excepto el amuleto del cráneo negro. El resto de cosas que llevases equipadas o que estuvieras transportando aparecen en un espacio sin ocupar determinado al azar a 100 pies de ti o menos."
 						],
 						[
 							"71-95",
-							"You are {@condition paralyzed} for 1 minute or until this effect is ended with a {@spell lesser restoration} spell or similar magic."
+							"Quedas {@condition paralizado|PHB-ES} durante 1 minuto o hasta que se ponga fi n a este efecto utilizando el conjuro de {@spell restablecimiento menor|PHB-ES} o algún efecto mágico similar."
 						],
 						[
 							"96-00",
-							"You become {@condition petrified}. This effect can be ended only with a {@spell greater restoration} spell or similar magic."
+							"Quedas {@condition petrificado|PHB-ES}. Este efecto solo puede terminar con un conjuro de {@spell restablecimiento mayor|PHB-ES} o algún efecto mágico similar."
 						]
 					]
 				}
 			]
 		},
 		{
-			"name": "Arcanaloth's Music Box",
+			"name": "Caja de música de Arcanaloth",
 			"source": "ToA-ES",
 			"page": 188,
 			"type": "OTH",
 			"rarity": "unknown (magic)",
 			"value": 75000,
 			"entries": [
-				"This music box is made of dark wood with gold filigree. Each of its five sides is sculpted with the image of a horned woman playing a different {@item musical instrument|PHB}: a {@item dulcimer|PHB}, a {@item flute|PHB}, a harp, a {@item lyre|PHB}, and a {@item viol|PHB}. While touching the box, you can use an action to make it play music featuring one of the instruments shown, which can be heard up to 60 feet away. You can also use an action to stop the music."
+				"Es una caja de música hecha de madera oscura con una filigrana de oro. Cada uno de sus cinco lados está esculpido con la imagen de una mujer astada que toca un {@item instrumento musical|PHB-ES} diferente: un {@item dulcémele|PHB-ES}, una {@item flauta|PHB-ES}, un arpa, una {@item lira|PHB-ES} y una {@item viola|PHB-ES}. Mientras esté en contacto con la caja, una criatura puede usar una acción para hacer que suene música con uno de los instrumentos que se muestran. Es posible escuchar la melodía hasta a 60 pies de distancia. Un personaje también podrá utilizar una acción para detener la música."
 			]
 		},
 		{
 			"name": "Bob",
 			"source": "ToA-ES",
-			"page": 89,
-			"baseItem": "battleaxe|phb",
+			"page": 79,
+			"baseItem": "Hacha de guerra|PHB-ES",
 			"type": "M",
 			"rarity": "unknown (magic)",
 			"weight": 4,
@@ -25272,13 +25272,13 @@
 			"dmg2": "1d10",
 			"bonusWeapon": "+1",
 			"entries": [
-				"This +1 battleaxe floats on water and other liquids, and grants its bearer advantage on Strength ({@skill Athletics}) checks made to swim."
+				"Es un hacha de guerra +1 que flota en el agua y otros líquidos, y que concede a quien la lleva ventaja en las pruebas de Fuerza ({@skill Atletismo|PHB-ES}) que haga para nadar. En el mango del hacha de guerra hay un grabado en runas dethek (enano), que deletrean el nombre del arma: Bob."
 			]
 		},
 		{
-			"name": "Bookmark",
+			"name": "Marcapáginas",
 			"source": "ToA-ES",
-			"page": 206,
+			"page": 208,
 			"baseItem": "dagger|phb",
 			"type": "M",
 			"rarity": "legendary",
@@ -25295,26 +25295,26 @@
 			"dmgType": "P",
 			"bonusWeapon": "+3",
 			"entries": [
-				"This +3 dagger belongs to {@creature Artus Cimber|ToA}. While you have the dagger drawn, you can use a bonus action to activate one of the following properties:",
+				"Esta daga +3 pertenece a {@creature Artus Cimber|ToA-ES}. Mientras la tengas desenvainada, puedes utilizar una acción adicional para activar una de las propiedades siguientes:",
 				{
 					"type": "list",
 					"items": [
-						"Cause a blue gem set into the dagger's pommel to shed bright light in a 20-foot radius and dim light for an additional 20 feet, or make the gem go dark.",
-						"Turn the dagger into a compass that, while resting on your palm, points north.",
-						"Cast {@spell dimension door} from the dagger. Once this property is used, it can't be used again until the next dawn.",
-						"Cast {@spell compulsion} (save DC 15) from the dagger. The range of the spell increases to 90 feet but it targets only spiders that are beasts. Once this property is used, it can't be used again until the next dawn."
+						"Provocar que una gema azul incrustada en el pomo de la daga ilumine con luz brillante un radio de 20 pies y con luz tenue otros 20 pies, o hacer que la gema se apague.",
+						"Transformar la daga en una brújula que apunta al norte al colocarla en la palma de tu mano.",
+						"Lanzar {@spell puerta dimensional|PHB-ES} desde la daga. Esta propiedad no puede volver a usarse hasta el siguiente amanecer.",
+						"Lanzar {@spell compulsión|PHB-ES} (salvación CD 15) desde la daga. El alcance del conjuro aumenta en 90 pies, pero solo afecta a arañas que sean bestias. Esta propiedad no puede volver a usarse hasta el siguiente amanecer."
 					]
 				}
 			],
 			"attachedSpells": [
-				"dimension door",
-				"compulsion"
+				"puerta dimensional|PHB-ES",
+				"compulsión|PHB-ES"
 			]
 		},
 		{
-			"name": "Canoe",
+			"name": "Canoa",
 			"source": "ToA-ES",
-			"page": 31,
+			"page": 32,
 			"type": "SHP",
 			"rarity": "none",
 			"weight": 100,
@@ -25325,42 +25325,53 @@
 			"vehSpeed": 2,
 			"capPassenger": 6,
 			"entries": [
-				"A canoe can be purchased in Port Nyanzaru for 50 gp. It holds up to six Medium creatures and has a maximum speed of 2 mph. It is otherwise identical to a {@item rowboat}."
+				"En Puerto Nyanzaru se puede conseguir una canoa por 50 po. Puede llevar hasta seis criaturas medianas y tiene una velocidad máxima de 2 millas/h. Por lo demás es idéntica a un {@item bote de remos|PHB-ES}."
 			]
 		},
 		{
-			"name": "Dancing Monkey Fruit",
+			"name": "Fruta del mono bailongo",
 			"source": "ToA-ES",
 			"page": 205,
 			"type": "OTH",
 			"rarity": "unknown (magic)",
 			"value": 500,
 			"entries": [
-				"This rare magical fruit produces enough juice to fill a vial. Any humanoid that eats a dancing monkey fruit or drinks its juice must succeed on a DC 14 Constitution saving throw or begin a comic dance that lasts for 1 minute. Humanoids that can't be {@condition poisoned} are immune to this magical effect.",
-				"The dancer must use all its movement to dance without leaving its space and has disadvantage on attack rolls and Dexterity saving throws, and other creatures have advantage on attack rolls against it. Each time it takes damage, the dancer can repeat the saving throw, ending the effect on itself on a success. When the dancing effect ends, the humanoid suffers the {@condition poisoned} condition for 1 hour."
+				"Esta rara fruta mágica produce suficiente zumo para llenar un vial. Cualquier humanoide que coma una fruta del mono bailongo o beba su zumo deberá superar una tirada de salvación de Constitución CD 14; si no, empezará a bailar una cómica danza durante 1 minuto. Los humanoides que no pueden ser {@condition envenenado|PHB-ES|envenenados} son también inmunes a este efecto mágico.",
+				"El bailarín deberá usar todo su movimiento para danzar sin moverse del sitio y tendrá desventaja en tiradas de ataque y en tiradas de salvación de Destreza, mientras que otras criaturas tendrán ventaja en tiradas de ataque contra él. Cada vez que reciba daño, el afectado podrá repetir la tirada de salvación, dejando de sufrir los efectos de la fruta si tiene éxito. Cuando termine el baile, el humanoide padecerá el estado {@condition envenenado|PHB-ES} durante 1 hora."
 			]
 		},
 		{
-			"name": "Devlin's Staff of Striking",
+			"name": "Bastón de impacto de Devlin",
 			"source": "ToA-ES",
 			"page": 141,
-			"_copy": {
-				"name": "Staff of Striking",
-				"source": "DMG",
-				"_mod": {
-					"entries": {
-						"mode": "appendArr",
-						"items": "If you attune to this staff, you transform into a goat-humanoid hybrid over the course of 3 days. Tieflings are immune to this curse. Throughout the first day, shaggy fur begins to grow all over your body. After 24 hours, your eyes become goat-like, and stumpy horns sprout from your brow. On the last day, your fingers and toes meld into double digits, and the horns grow to full length. This transformation doesn't prevent you from wielding weapons or casting spells. {@spell Remove curse}, {@spell greater restoration}, or any other effect that ends a curse restores your original appearance, but only a {@spell wish} spell can rid the staff of its power to transform those who attune to it."
-					}
-				}
-			},
+			"tier": "major",
+			"rarity": "very rare",
+			"reqAttune": true,
+			"weight": 4,
+			"weaponCategory": "simple",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8",
+			"bonusWeapon": "+3",
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6 + 4}",
+			"charges": 10,
+			"staff": true,
+			"entries": [
+				"Este bastón puede ser utilizado como un bastón mágico que proporciona un +3 a las tiradas de ataque y de daño realizadas con él.",
+				"El bastón tiene 10 cargas. Cuando impactes con él en un ataque cuerpo a cuerpo, puedes gastar hasta 3 cargas. Por cada carga empleada, el objetivo recibe {@damage 1d6} de daño de fuerza adicional. El bastón recupera {@dice 1d6 + 4} cargas gastadas cada día, a l amanecer. Si usas la última carga tira {@dice 1d20}. Con un resultado de 1, el bastón deja de ser mágico.",
+				"Cualquier aventurero sintonizado con él se transformará paulatinamente en un híbrido de cabra y humanoide durante el curso de 3 días. Los tieflings son inmunes a esta maldición. Durante el primer día, una piel velluda comenzará a crecer por todo el cuerpo del personaje maldecido. Tras 24 horas, sus ojos adoptarán el aspecto de los de una cabra y unos recios cuernos comenzarán a brotarle en la frente. Al llegar el último día, los dedos de manos y pies del aventurero se fusionarán hasta convertirse en extremidades unguladas y los cuernos terminarán de desarrollarse completamente. Esta transformación no impedirá al personaje esgrimir armas o lanzar conjuros. {@spell Levantar maldición|PHB-ES}, {@spell restablecimiento mayor|PHB-ES} o cualquier otro efecto que ponga fin a una maldición devolverá al aventurero su aspecto original, pero solo un conjuro de {@spell deseo|PHB-ES} podrá librar al bastón de su poder de transformar a aquellos que se sintonicen con él."
+			],
 			"curse": true
 		},
 		{
-			"name": "Draconic Longsword",
+			"name": "Espada larga dracónica",
 			"source": "ToA-ES",
 			"page": 173,
-			"baseItem": "longsword|phb",
+			"baseItem": "espada larga|PHB-ES",
 			"type": "M",
 			"rarity": "unknown (magic)",
 			"weight": 3,
@@ -25374,26 +25385,26 @@
 			"sword": true,
 			"weapon": true,
 			"entries": [
-				"This longsword has a dragon-shaped hilt. While you carry it, you gain the ability to speak and understand the Draconic language."
+				"Una espada larga con la empuñadura en forma de dragón .Esta arma tiene una propiedad mágica menor: su portador gana la habilidad de hablar y comprender el idioma dracónico."
 			]
 		},
 		{
-			"name": "Ghost Lantern",
+			"name": "Linterna fantasmal",
 			"source": "ToA-ES",
-			"page": 206,
+			"page": 208,
 			"rarity": "rare",
 			"reqAttune": true,
 			"wondrous": true,
 			"weight": 1,
 			"entries": [
-				"A restless spirit is trapped inside this lantern. While holding the lantern, you can command the spirit as a bonus action to shed bright light in a 30-foot radius and dim light for an additional 30 feet.",
-				"While holding the lantern, you can use an action to order the spirit to leave the lantern and duplicate the effect of the {@spell mage hand} spell. The spirit returns to the lantern when the spell ends.",
-				"If you fall {@condition unconscious} within 10 feet of the lantern, the spirit emerges from it, magically stabilizes you with a touch, and then quickly returns to the lantern.",
-				"The spirit is bound to the lantern and can't be harmed, turned, or raised from the dead.",
-				"Casting a {@spell dispel evil and good} spell on the lantern releases the spirit to the afterlife and renders the lantern nonmagical."
+				"Un espíritu inquieto está atrapado en esta linterna. Mientras la sostienes, puedes utilizar una acción adicional para ordenar al espíritu que ilumine con luz brillante un radio de 30 pies y con luz tenue 30 pies adicionales.",
+				"Mientras la sostienes, puedes usar una acción para ordenar al espíritu que abandone la linterna y reproduzca el efecto del conjuro de {@spell mano de mago|PHB-ES}. El espíritu volverá a la linterna al terminar el conjuro.",
+				"Si quedas {@condition inconsciente|PHB-ES} a 10 pies de la linterna, el espíritu emergerá de ella y te estabilizará mágicamente con su toque, volviendo rápidamente al objeto.",
+				"El espíritu está vinculado a la lámpara y no puede recibir daño, ni ser alzado de entre los muertos ni expulsado.",
+				"Lanzar un conjuro de {@spell disipar el bien y el mal|PHB-ES} sobre la lámpara permite al espíritu liberarse y viajar al más allá, lo que transforma la linterna en un objeto no mágico."
 			],
 			"attachedSpells": [
-				"mage hand"
+				"mano de mago|PHB-ES"
 			],
 			"fluff": {
 				"images": [
@@ -25408,7 +25419,7 @@
 			}
 		},
 		{
-			"name": "Insect Repellent (block of incense)",
+			"name": "Repelente de insectos (pastilla de incienso)",
 			"source": "ToA-ES",
 			"page": 32,
 			"type": "G",
@@ -25416,12 +25427,12 @@
 			"value": 10,
 			"charges": 1,
 			"entries": [
-				"Insect repellent can be purchased in Port Nyanzaru in two forms: blocks of incense or a greasy salve. The merchant prince Kwayothe controls the sale of both. Neither kind of repellent protects against giant insects or the vile swarms of insects described in appendix A of the Monster Manual.",
-				"When lit, it burns for 8 hours and repels normal insects within a 20-foot-radius centered on it."
+				"En Puerto Nyanzaru se puede encontrar repelente de insectos en dos formas: pastillas de incienso o un bálsamo grasiento. La venta de ambos está controlada por la princesa mercante Kwayothé. Ninguno de los dos tipos de repelente protege contra los insectos gigantes o los terribles enjambres descritos en el apéndice A del Monster Manual.",
+				"Cuando se enciende, arde durante 8 horas y repele insectos normales en un radio de 20 pies con centro en ella."
 			]
 		},
 		{
-			"name": "Insect Repellent (greasy salve)",
+			"name": "Repelente de insectos (bálsamo grasiento)",
 			"source": "ToA-ES",
 			"page": 32,
 			"type": "G",
@@ -25429,14 +25440,14 @@
 			"value": 100,
 			"charges": 20,
 			"entries": [
-				"Insect repellent can be purchased in Port Nyanzaru in two forms: blocks of incense or a greasy salve. The merchant prince Kwayothe controls the sale of both. Neither kind of repellent protects against giant insects or the vile swarms of insects described in appendix A of the Monster Manual.",
-				"A gourd or vial of salve contains 20 applications of odorless grease. One application protects its wearer against normal insects for 24 hours. The salve is waterproof so it doesn't wash off in rain."
+				"En Puerto Nyanzaru se puede encontrar repelente de insectos en dos formas: pastillas de incienso o un bálsamo grasiento. La venta de ambos está controlada por la princesa mercante Kwayothé. Ninguno de los dos tipos de repelente protege contra los insectos gigantes o los terribles enjambres descritos en el apéndice A del Monster Manual.",
+				"Una calabaza o un vial de bálsamo contiene 20 aplicaciones de una grasa inodora. Cada una de estas últimas protege al usuario contra insectos normales durante 24 horas. El bálsamo es resistente al agua, por lo que no se va con la lluvia."
 			]
 		},
 		{
-			"name": "Mask of the Beast",
+			"name": "Máscara de la bestia",
 			"source": "ToA-ES",
-			"page": 207,
+			"page": 208,
 			"rarity": "uncommon",
 			"wondrous": true,
 			"weight": 1,
@@ -25444,10 +25455,10 @@
 			"rechargeAmount": 3,
 			"charges": 3,
 			"entries": [
-				"This wooden mask is shaped in the likeness of a beast's visage and has 3 charges. While wearing the mask you can expend 1 charge and use the mask to cast the {@spell animal friendship} spell as an action. The mask regains all expended charges at dawn."
+				"Esta máscara de madera tiene la forma del semblante de una bestia y cuenta con 3 cargas. Mientras lleves la máscara puesta, puedes gastar una carga para lanzar el conjuro de {@spell encantar animal|PHB-ES} utilizando una acción. La máscara recupera todas las cargas empleadas cada día, al amanecer."
 			],
 			"attachedSpells": [
-				"animal friendship"
+				"encantar animal|PHB-ES"
 			],
 			"fluff": {
 				"images": [
@@ -25462,7 +25473,7 @@
 			}
 		},
 		{
-			"name": "Menga leaves (1 ounce)",
+			"name": "Hojas de menga (1 onza)",
 			"source": "ToA-ES",
 			"page": 205,
 			"type": "G",
@@ -25470,33 +25481,33 @@
 			"weight": 0.0625,
 			"value": 200,
 			"entries": [
-				"The dried leaves of a menga bush can be ground, dissolved in a liquid, heated, and ingested. A creature that ingests 1 ounce of menga leaves in this fashion regains 1 hit point. A creature that ingests more than 5 ounces of menga leaves in a 24-hour period gains no additional benefit and must succeed on a DC 11 Constitution saving throw or fall {@condition unconscious} for 1 hour. The {@condition unconscious} creature awakens if it takes at least 5 damage on one turn.",
-				"A healthy menga bush usually has {@dice 2d6} ounces of leaves. Once picked, the leaves require 1 day to dry out before they can confer any benefit."
+				"Las hojas secas de un arbusto de menga se pueden moler, disolver en líquido, calentar e ingerir. Una criatura que tome 1 onza de hojas de menga preparadas de esta manera puede ganar 1 punto de golpe. Consumir más de 5 onzas en un espacio de 24 horas no aportará ya ningún beneficio. La criatura que ingiera más de esa cantidad deberá superar una tirada de salvación de Constitución CD 11 o quedará {@condition inconsciente|PHB-ES} durante 1 hora. Si recibe al menos 5 de daño en un turno, la criatura dejará de estar {@condition inconsciente|PHB-ES}.",
+				"Un arbusto de menga sano tiene normalmente {@dice 2d6} onzas de hojas. Tras recogerlas, es necesario que se sequen durante 1 día antes de que puedan dar sus beneficios."
 			]
 		},
 		{
-			"name": "Petrified Grung Egg",
+			"name": "Huevo de grung petrificado",
 			"source": "ToA-ES",
-			"page": 144,
+			"page": 143,
 			"type": "OTH",
 			"resist": [
 				"poison"
 			],
 			"rarity": "unknown (magic)",
-			"reqAttune": "by a spellcaster",
+			"reqAttune": "por un lanzador de conjuros",
 			"reqAttuneTags": [
 				{
 					"spellcasting": true
 				}
 			],
 			"entries": [
-				"While this egg is on your person, you can use an action to speak its command word and regain one expended spell slot. If the expended slot was of 4th level or higher, the new slot is 3rd level. Once you have used the egg, it can't be used again until the next dawn.",
-				"Additionally, while you are attuned to the egg, you gain resistance to poison damage.",
-				"The egg turns to dust and is destroyed if it leaves the Tomb of the Nine Gods."
+				"Mientras lleves este huevo, puedes usar una acción para pronunciar su palabra de activación y recuperar un espacio de conjuro gastado. Si el espacio gastado era de 4 nivel o superior, el nuevo espacio es de 3 nivel. Una vez que haya usado el huevo, no podrá volver a usarlo hasta el próximo amanecer.",
+				"Además, mientras estes sintonizado con el huevo también ganarás resistencia al daño de veneno.",
+				"El amuleto se convertirá en polvo si sale de la Tumba de los Nueve Dioses."
 			]
 		},
 		{
-			"name": "Rain Catcher",
+			"name": "Colector de lluvia",
 			"source": "ToA-ES",
 			"page": 32,
 			"type": "G",
@@ -25504,13 +25515,13 @@
 			"weight": 5,
 			"value": 100,
 			"entries": [
-				"A rain catcher is a simple contraption consisting of a 5-foot-square leather tarp and a wooden frame with legs. When the tarp is stretched across the wooden frame, it forms a basin that can catch 2 gallons of drinking water per inch of rainfall and hold up to 8 gallons. The tarp and wooden frame fold up for easy transport."
+				"Un colector de lluvia es un sencillo artilugio que consiste en una lona de cuero de 5 pies cuadrados y un bastidor de madera con patas. Cuando la lona se extiende sobre el bastidor, forma un depósito que puede recoger 2 galones de agua potable por pulgada de precipitación, con una capacidad máxima de 8 galones. La lona y el bastidor pueden plegarse para facilitar su transporte."
 			]
 		},
 		{
-			"name": "Ring of Winter",
+			"name": "Anillo del Invierno",
 			"source": "ToA-ES",
-			"page": 207,
+			"page": 206,
 			"type": "RG",
 			"immune": [
 				"cold"
@@ -25523,75 +25534,75 @@
 			"rechargeAmount": 12,
 			"charges": 12,
 			"entries": [
-				"{@creature Artus Cimber|ToA} has kept this item in his possession for over a century. The Ring of Winter is a golden band that resizes to fit snugly on the finger of its wearer. A thin layer of frost coats the outside of the ring, which normal heat can't melt. The ring feels ice cold to the touch and initially numbs the hand that wears it, but this cold ceases to be felt by one who is attuned to this ring.",
-				"The Ring of Winter is sentient and tries to take control of any creature that wears it (see \"Sentient Magic Items\" chapter 7 of the Dungeon Master's Guide). If it succeeds, the ring compels its wearer to cause undue harm to everyone and everything around it, in a cold-hearted attempt to incur the wrath of enemies and bring the wearer's doom.",
+				"{@creature Artus Cimber|ToA-ES} ha tenido este objeto en su poder durante más de un siglo. El Anillo del Invierno es una alianza que se ajusta para ceñirse al dedo de su portador. Una fina capa de escarcha que no se derrite con el calor cubre el exterior del anillo. Este artefacto está frío como el hielo al tacto y al principio entumece la mano de quien lo lleva puesto, que dejará de sentir el frío cuando se sintonice con el objeto.",
+				"El Anillo del Invierno tiene consciencia e intenta controlar a la criatura portadora (lee \"Objetos mágicos conscientes\" en el capítulo 7 del Dungeon Master’s Guide). Si tiene éxito, este artefacto obliga a quien lo lleva puesto a causar daño injustificado a todo y todos a su alrededor, en un desalmado intento por provocar la ira de los enemigos y arrastrar al portador a su perdición.",
 				{
 					"type": "entries",
-					"name": "Sentience",
+					"name": "Consciencia",
 					"entries": [
-						"The Ring of Winter is a sentient chaotic evil item with an Intelligence of 14, a Wisdom of 14, and a Charisma of 17. The ring communicates by transmitting emotion to the creature carrying or wielding it, and it has hearing and normal vision out to a range of 60 feet. The ring craves destruction, and it likes inflicting indiscriminate harm on others."
+						"El Anillo del Invierno es un objeto consciente, caótico malvado, con Inteligencia 14, Sabiduría 14 y Carisma 17. Esta alianza se comunica transmitiendo emociones a la criatura que lo lleve puesto o haga uso de él. Además, escucha y ve de forma normal con un alcance de 60 pies. El anillo ansía la destrucción, y le gusta infligir daño indiscriminado a los demás."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Nondetection",
+					"name": "Indetectable",
 					"entries": [
-						"The Ring of Winter defies attempts to magically locate it. Neither the ring nor its wearer can be targeted by any divination magic or perceived through magical scrying sensors."
+						"El Anillo del Invierno desafía todo intento de localizarlo mágicamente. Ni el objeto ni su portador pueden ser objetivos de magia de adivinación, ni percibidos mediante sensores mágicos de escudriñamiento."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Frozen Time",
+					"name": "Congelar el paso del tiempo",
 					"entries": [
-						"As long as you wear the ring, you don't age naturally. This effect is similar to suspended animation, in that your age doesn't catch up to you once the ring is removed. The ring doesn't protect its wearer from magical or supernatural aging effects, such as the Horrifying Visage of a {@creature ghost}."
+						"Mientras lleves puesto el anillo, no envejecerás naturalmente. El efecto es similar al de la animación suspendida, ya que al quitártelo no envejeces de golpe. El objeto no protege al portador de otras formas de envejecimiento mágico o sobrenatural, como la visión horripilante de un {@creature fantasma|MM-ES}."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Cold Immunity",
+					"name": "Inmunidad al frío",
 					"entries": [
-						"While attuned to and wearing the ring, you have immunity to cold damage and don't suffer any ill effects from extreme cold (see chapter 5 of the Dungeon's Master Guide)."
+						"Mientras estés sintonizado con el anillo y lo lleves puesto, serás inmune a daño de frío y no sufrirás ninguno de los efectos adversos que causa el frío extremo (consulta el capítulo 5 del Dungeon Master’s Guide)."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Magic",
+					"name": "Magia",
 					"entries": [
-						"The Ring of Winter has 12 charges and regains all its expended charges daily at dawn. While wearing the ring, you can expend the necessary number of charges to activate one of the following properties:",
+						"El Anillo del Invierno tiene 12 cargas, que se recuperan al amanecer. Mientras lo lleves puesto, puedes gastar el número de cargas que necesites para activar las siguientes propiedades:",
 						{
 							"type": "list",
 							"items": [
-								"You can expend 1 charge as an action and use the ring to lower the temperature in a 120-foot-radius sphere centered on a point you can see within 300 feet of you. The temperature in that area drops 20 degrees per minute, to a minimum of -30 degrees Fahrenheit. Frost and ice begin to form on surfaces once the temperature drops below 32 degrees. This effect is permanent unless you use the ring to end it as an action, at which point the temperature in the area returns to normal at a rate of 10 degrees per minute.",
-								"You can cast one of the following spells from the ring (spell save DC 17) by expending the necessary number of charges: {@spell Bigby's hand} (2 charges; the hand is made of ice, is immune to cold damage, and deals bludgeoning damage instead of force damage as a clenched fist), {@spell cone of cold} (2 charges), flesh to ice (3 charges; as {@spell flesh to stone} except that the target turns to solid ice with the density and durability of stone), {@spell ice storm} (2 charges), {@spell Otiluke's freezing sphere} (3 charges), {@spell sleet storm} (1 charge), {@spell spike growth} (1 charge; the spikes are made of ice), or {@spell wall of ice} (2 charges).",
-								"You can expend the necessary number of charges as an action and use the ring to create either an inanimate ice object (2 charges) or an animated ice creature (4 charges). The ice object can't have any moving parts, must be able to fit inside a 10-foot cube, and has the density and durability of metal or stone (your choice). The ice creature must be modeled after a beast with a challenge rating of 2 or less. The ice creature has the same statistics as the beast it models, with the following changes: the creature is a construct with vulnerability to fire damage, immunity to cold and poison damage, and immunity to the following conditions: {@condition charmed}, {@condition exhaustion}, {@condition frightened}, {@condition paralyzed}, {@condition petrified}, and {@condition poisoned}. The ice creature obeys only its creator's commands. The ice object or creature appears in an unoccupied space within 60 feet of you. It melts into a pool of normal water after 24 hours or when it drops to 0 hit points. In extreme heat, it loses 5 ({@dice 1d10}) hit points per minute as it melts. Use the guidelines in chapter 8 of the Dungeon Master's Guide to determine the hit points of an inanimate object if they become necessary."
+								"Puedes gastar 1 carga como acción y utilizar el anillo para bajar la temperatura en una esfera de 120 pies de radio centrada en un punto que puedas ver y que se encuentre a 300 pies de ti. La temperatura en esa zona descenderá 12 grados cada minuto, hasta un mínimo de -35 grados centígrados. La escarcha y el hielo empezarán a cubrir las superficies cuando se baje de los cero grados. Este efecto es permanente, a no ser que emplees el anillo para darlo por finalizado como acción, momento en el que la temperatura en la zona volverá a la normalidad a un ritmo de 6 grados por minuto.",
+								"Puedes lanzar uno de los siguientes conjuros del anillo (salvación de conjuros CD 17) gastando el número de cargas necesario: {@spell cono de frío|PHB-ES} (2 cargas), {@spell crecimiento espinoso|PHB-ES} (1 carga; los pinchos están hechos de hielo), de la carne al hielo (3 cargas; como {@spell de la carne a la piedra|PHB-ES} excepto porque el objetivo se vuelve de hielo sólido con la densidad y durabilidad de la piedra), {@spell esfera congelante de Otiluke|PHB-ES} (3 cargas), {@spell mano de Bigby|PHB-ES} (2 cargas; la mano está hecha de hielo, es inmune a daño de frío y causa daño contundente en lugar de daño de fuerza al hacer de puño cerrado), {@spell muro de hielo|PHB-ES} (2 cargas), {@spell tormenta de hielo|PHB-ES} (2 cargas) o {@spell tormenta de aguanieve|PHB-ES} (1 carga).",
+								"Puedes gastar el número de cargas requeridas como acción y utilizar el anillo para crear un objeto inanimado de hielo (2 cargas) o una criatura animada de hielo (4 cargas). El objeto de hielo no puede tener partes móviles y debe caber en un cubo de 10 pies. Poseerá la densidad y durabilidad del metal o de la piedra (a tu elección). La criatura de hielo debe tener como modelo una bestia de valor de desafío 2 o menor. Esta creación helada tiene el mismo perfil que la bestia que imita, salvo por los siguientes cambios: la criatura es un autómata vulnerable a daño de fuego, inmune a daño de frío y de veneno y a los siguientes estados: {@condition hechizado|PHB-ES}, {@condition cansancio|PHB-ES}, {@condition asustado|PHB-ES}, {@condition paralizado|PHB-ES}, {@condition petrificado|PHB-ES} y {@condition envenenado|PHB-ES}. Únicamente obedece a su creador. El objeto o criatura aparecerá en un espacio desocupado que se encuentre a 60 pies de ti o menos. Cuando pasen 24 horas, o cuando sus puntos de golpe se reduzcan a 0, se deshará formando un charco de agua normal. En condiciones de calor extremo, se va derritiendo y pierde 5 ({@dice 1d10}) puntos de golpe por minuto. Usa las sugerencias del capítulo 8 del Dungeon Master’s Guide para determinar los puntos de golpe de un objeto inanimado si es necesario."
 							]
 						}
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Other Properties",
+					"name": "Otras propiedades",
 					"entries": [
-						"The Ring of Winter is rumored to possess other properties that can be activated only by an evil being whose will the ring can't break. Frost giants have long believed that the ring can be used to freeze entire worlds, while a {@creature djinni} in the service of a Calishite pasha once claimed that the ring could be used to summon and control white dragons, as well as the mighty ice primordial named Cryonax."
+						"Se rumorea que el Anillo del Invierno posee otras propiedades que solo puede activar un ser malvado cuya voluntad el artefacto no pueda doblegar. Los gigantes de escarcha creen que este objeto puede ser usado para congelar mundos enteros. Por otro lado, un {@creature djinn|MM-ES} al servicio de un bajá calishita afirmó en una ocasión que el anillo podría emplearse para invocar y controlar dragones blancos, además de a un poderoso primordial de hielo llamado Cryonax."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Destroying the Ring",
+					"name": "Destrucción del anillo",
 					"entries": [
-						"The ring is nigh indestructible, resisting even the most intense magical heat. If it is placed on the finger of the powerful archfey known as the Summer Queen, the ring melts away and is destroyed forever."
+						"El anillo es casi indestructible, resiste incluso el calor mágico más intenso. Si se coloca en el dedo de la poderosa señora feérica conocida como la Reina del Verano, la sortija se derretirá y será destruida para siempre."
 					]
 				}
 			],
 			"attachedSpells": [
-				"cone of cold",
-				"ice storm",
-				"Otiluke's freezing sphere",
-				"sleet storm",
-				"wall of ice",
-				"Bigby's hand",
-				"flesh to stone",
-				"spike growth"
+				"cono de frío|PHB-ES",
+				"tormenta de hielo|PHB-ES",
+				"esfera congelante de Otiluke|PHB-ES",
+				"tormenta de aguanieve|PHB-ES",
+				"muro de hielo|PHB-ES",
+				"mano de Bigby|PHB-ES",
+				"de la carne a la piedra|PHB-ES",
+				"crecimiento espinoso|PHB-ES"
 			],
 			"fluff": {
 				"images": [
@@ -25606,20 +25617,20 @@
 			}
 		},
 		{
-			"name": "Ryath Root",
+			"name": "Raíz de ryath",
 			"source": "ToA-ES",
 			"page": 205,
 			"type": "G",
 			"rarity": "unknown",
 			"value": 5000,
 			"entries": [
-				"Any creature that ingests a ryath root gains {@dice 2d4} temporary hit points. A creature that consumes more than one ryath root in a 24-hour period must succeed on a DC 13 Constitution saving throw or suffer the {@condition poisoned} condition for 1 hour."
+				"Cualquiera que ingiera una raíz de ryath gana {@dice 2d4} puntos de golpe temporales. Una criatura que consuma más de una raíz en un periodo de 24 horas deberá superar una tirada de salvación de Constitución CD 13 o quedará {@condition envenenado|PHB-ES} durante 1 hora."
 			]
 		},
 		{
-			"name": "Scorpion Armor",
+			"name": "Armadura del escorpión",
 			"source": "ToA-ES",
-			"page": 208,
+			"page": 207,
 			"type": "HA",
 			"rarity": "rare",
 			"reqAttune": true,
@@ -25628,63 +25639,63 @@
 			"ac": 18,
 			"strength": "15",
 			"entries": [
-				"This suit of plate armor is fashioned from {@creature giant scorpion} chitin. While wearing this armor, you gain the following benefits:",
+				"Esta armadura de placas está confeccionada con quitina de {@creature escorpión gigante|MM-ES}. Mientras la lleves, obtendrás los siguientes beneficios:",
 				{
 					"type": "list",
 					"items": [
-						"The armor improves your combat readiness, granting you a +5 bonus to initiative as long as you aren't {@condition incapacitated}.",
-						"The armor doesn't impose disadvantage on your Dexterity ({@skill Stealth}) checks.",
-						"The armor doesn't impose disadvantage on saving throws made to resist the effects of extreme heat (see chapter 5 of the Dungeon Master's Guide)."
+						"La armadura mejora tu disposición para el combate, otorgándote un bonificador +5 a la iniciativa siempre y cuando no estés {@condition incapacitado|PHB-ES}.",
+						"Llevar esta armadura no te da desventaja en las pruebas de Destreza ({@skill Sigilo|PHB-ES}).",
+						"Llevar esta armadura no te da desventaja en tiradas de salvación para resistir los efectos del calor extremo (consulta el capítulo 5 del Dungeon Master’s Guide)."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Curse",
+					"name": "Maldición",
 					"entries": [
-						"This armor is cursed. Whenever you don or doff it, you must make a DC 15 Constitution saving throw, taking 100 ({@damage 10d10 + 45}) poison damage on a failed save, or half as much damage on a successful one. Only a {@spell wish} spell can remove the armor's curse."
+						"Esta armadura está maldita. Cuando te la quitas o te la pones, debes hacer una tirada de salvación de Constitución CD 15, sufriendo 100 ({@damage 10d10 + 45}) de daño de veneno si la fallas, o la mitad de ese daño si la superas. Solo un conjuro de {@spell deseo|PHB-ES} puede eliminar la maldición."
 					]
 				}
 			]
 		},
 		{
-			"name": "Shield of Shouting",
+			"name": "Escudo de gritos",
 			"source": "ToA-ES",
-			"page": 116,
+			"page": 117,
 			"type": "S",
 			"rarity": "unknown (magic)",
 			"weight": 6,
 			"ac": 2,
 			"entries": [
-				"A {@spell detect magic} spell reveals an aura of transmutation magic around this shield, which has a minor magical property: words spoken by the shield's bearer are amplified and sound ten times louder than normal."
+				"Un conjuro de {@spell detectar magia|PHB-ES} revelará un aura de magia de transmutación alrededor del escudo, que posee una propiedad mágica menor: lo hablado por el portador del escudo es amplificado y suena diez veces más fuerte de lo normal."
 			]
 		},
 		{
-			"name": "Sinda berries (10)",
+			"name": "Bayas de sinda (10)",
 			"source": "ToA-ES",
 			"page": 205,
 			"type": "G",
 			"rarity": "unknown",
 			"value": 500,
 			"entries": [
-				"These berries are dark brown and bitter. A full-grown sinda berry bush has {@dice 4d6} berries growing on it. A bush plucked of all its berries grows new berries in {@dice 1d4} months. Picked berries lose their freshness and efficacy after 24 hours.",
-				"Fresh sinda berries can be eaten raw or crushed and added to a drink to dull the bitterness. A creature that consumes at least ten fresh sinda berries gains advantage on saving throws against disease and poison for the next 24 hours."
+				"Estas bayas son amargas y de color marrón oscuro. Un ejemplar de arbusto de bayas de sinda tiene {@dice 4d6} frutos que crecen en sus ramas. Un arbusto al que se le arranquen todas las bayas tardará {@dice 1d4} meses en que le vuelvan a crecer. Los frutos que se recojan perderán su frescura y eficacia a las 24 horas.",
+				"Las bayas de sinda frescas pueden comerse crudas o aplastadas como condimento de una bebida, para aplacar el amargo sabor. Cuando una criatura consuma al menos diez bayas de sinda frescas obtendrá ventaja en tiradas de salvación contra enfermedades y veneno durante las siguientes 24 horas."
 			]
 		},
 		{
-			"name": "Staff of the Forgotten One",
+			"name": "Bastón del Olvidado",
 			"source": "ToA-ES",
-			"page": 208,
+			"page": 207,
 			"rarity": "artifact",
-			"reqAttune": "by a sorcerer, warlock, or wizard",
+			"reqAttune": "con un brujo, mago o hechicero",
 			"reqAttuneTags": [
 				{
-					"class": "sorcerer"
+					"class": "hechicero|PHB-ES"
 				},
 				{
-					"class": "warlock"
+					"class": "brujo|PHB-ES"
 				},
 				{
-					"class": "wizard"
+					"class": "mago|PHB-ES"
 				}
 			],
 			"weight": 4,
@@ -25701,42 +25712,42 @@
 			"charges": 7,
 			"staff": true,
 			"entries": [
-				"This crooked staff is carved from bone and topped with the skull of a forgotten {@creature archmage} whom {@creature Acererak|ToA} destroyed long ago. Etched into the skull's forehead is {@creature acererak|ToA|Acererak's} rune, which is known on many worlds as a sign of death.",
+				"Este bastón torcido está tallado en hueso y rematado en su parte superior por el cráneo de un {@creature archimago|MM-ES} olvidado que fue destruido por {@creature Acererak|ToA-ES} tiempo atrás. En la frente, la calavera tiene grabada la runa del {@creature Acererak|ToA-ES|archiliche}, que en muchos mundos se conoce como signo de muerte.",
 				{
 					"type": "entries",
-					"name": "Beneficial Properties",
+					"name": "Propiedades beneficiosas",
 					"entries": [
-						"While the staff is on your person, you gain the following benefits:",
+						"Mientras lleves encima el bastón, obtienes los siguientes beneficios:",
 						{
 							"type": "list",
 							"items": [
-								"Your proficiency bonus to Intelligence ({@skill Arcana}) and Intelligence ({@skill History}) checks is doubled.",
-								"You can't be {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition petrified}, or {@condition stunned}.",
-								"Undead with a challenge rating of 2 or lower will neither threaten nor attack you unless you harm them.",
-								"You can wield the staff as a +3 quarterstaff that deals an extra 10 ({@damage 3d6}) necrotic damage on a hit."
+								"Se duplica el valor de tu bonificador por competencia en pruebas de Inteligencia ({@skill Conocimiento Arcano|PHB-ES}) e Inteligencia ({@skill Historia|PHB-ES}).",
+								"No puedes ser {@condition cegado|PHB-ES}, {@condition hechizado|PHB-ES}, {@condition ensordecido|PHB-ES}, {@condition asustado|PHB-ES}, {@condition petrificado|PHB-ES} ni {@condition aturdido|PHB-ES}.",
+								"Los muertos vivientes con un valor de desafío de 2 o menos no te amenazarán ni te atacarán, a menos que les inflijas daño.",
+								"Puedes blandir el bastón como un bastón +3 que hace 10 ({@damage 3d6}) de daño adicional si impacta."
 							]
 						}
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Invoke Curse",
+					"name": "Invocar maldición",
 					"entries": [
-						"The Staff of the Forgotten One has 7 charges and regains {@dice 1d4 + 3} expended charges daily at dawn. While holding the staff, you can use an action to expend 1 charge and target one creature you can see within 60 feet of you. The target must succeed on a Constitution saving throw (using your spell save DC) or be cursed. While cursed in this way, the target can't regain hit points and has vulnerability to necrotic damage. A {@spell greater restoration}, {@spell remove curse}, or similar spell ends the curse on the target."
+						"El Bastón del Olvidado tiene 7 cargas y recupera {@dice 1d4 + 3} cargas cada día al amanecer. Mientras lo lleves, puedes utilizar una acción y gastar 1 carga eligiendo como objetivo a una criatura que puedas ver y que se encuentre a 60 pies o menos. Esta deberá tener éxito en una tirada de salvación de Constitución (utilizando el CD de tu salvación de conjuros) o, si no, quedará maldita. Mientras dure la maldición, el objetivo no podrá recuperar puntos de golpe y será vulnerable a daño necrótico. Un conjuro de {@spell restablecimiento mayor|PHB-ES}, {@spell levantar maldición|PHB-ES} u otro efecto similar pondría fin a la maldición."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "The Forgotten One",
+					"name": "El Olvidado",
 					"entries": [
-						"The bodiless life force of a dead {@creature archmage} empowers the staff and is imprisoned within it. The rune carved into the staff's skull protects {@creature Acererak|ToA} from this spirit's vengeance. Each time a creature other than {@creature Acererak|ToA} expends any of the staff's charges, there is a {@chance 50} chance that the life force tries to possess the staff wielder. The wielder must succeed on a DC 20 Charisma saving throw or be possessed, becoming an NPC under the DM's control. If the intruding life force is targeted by magic such as a {@spell dispel evil and good} spell, it becomes trapped in the staff once more. Once it takes control of another creature, the insane spirit of the dead {@creature archmage} attempts to destroy the staff."
+						"La fuerza vital incorpórea de un {@creature archimago|MM-ES} muerto es la fuente del poder del bastón y se encuentra prisionera en su interior. La runa en el cráneo del objeto protege a {@creature Acererak|ToA-ES} de la venganza de este espíritu. Cada vez que otra criatura distinta al {@creature Acererak|ToA-ES|archiliche} gaste una carga del bastón, hay una probabilidad del {@chance 50|50 %} de que la fuerza vital intente dominar al que lo empuña. Si no supera una tirada de salvación de Carisma CD 20, el portador del objeto será poseído y se convertirá en un PNJ bajo el control del DM. Si la fuerza vital es objetivo de magia como la del conjuro de {@spell disipar el bien y el mal|PHB-ES}, volverá a quedar atrapada en la vara. Cuando tome el control de otra criatura, el demencial espíritu del {@creature archimago|MM-ES} muerto tratará de destruir el báculo."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Destroying the Staff",
+					"name": "Destrucción del bastón",
 					"entries": [
-						"A creature in possession of the staff can use an action to break it over one knee or a solid surface. The staff is destroyed and releases its remaining magic in an explosion that expands to fill a 30-foot-radius sphere centered on it. Each creature in the area must make a DC 18 Dexterity saving throw, taking 132 ({@damage 24d10}) force damage on a failed save, or half as much damage on a successful one. When the staff is destroyed, the life force of the Forgotten One is released to the afterlife. Where it goes is anyone's guess."
+						"Una criatura que posea la vara puede utilizar una acción para romperlo con la rodilla o en una superficie sólida. Si es destruido, liberará la magia restante en una explosión que se expande en una esfera de 30 pies de radio centrada en el bastón. Todas las criaturas que se encuentren en la zona deberán realizar una tirada de salvación de Destreza CD 18, sufriendo 132 ({@damage 24d10}) de daño de fuerza si la fallan, o la mitad de ese daño si la superan. Cuando el báculo sea destruido, la fuerza vital del Olvidado es liberada hacia el más allá. Nadie sabe adónde irá."
 					]
 				}
 			]
@@ -25749,29 +25760,29 @@
 			"rarity": "none",
 			"weight": 5,
 			"entries": [
-				"Tej is an amber-colored, fermented drink made from honey. It's more common and popular in Chult than beer or ale. A mug of tej costs 4 cp in Port Nyanzaru or 6 cp in Fort Beluarian. A 1-gallon cask costs 2 sp in the city or 3 sp at the fort."
+				"El tej es una bebida fermentada a base de miel de color ambarino. En Chult es más común y popular que la cerveza o el vino. Una jarra de tej se vende por 4 pc en Puerto Nyanzaru y 6 pc en Fuerte Beluarian. Un tonel de 1 galón cuesta 2 pp en la ciudad y 3 pp en la fortaleza."
 			]
 		},
 		{
-			"name": "Wildroot",
+			"name": "Raíz silvestre",
 			"source": "ToA-ES",
 			"page": 205,
 			"type": "G",
 			"rarity": "unknown",
 			"value": 2500,
 			"entries": [
-				"Introducing the juice of a wildroot into a {@condition poisoned} creature's bloodstream (for example, by rubbing it on an open wound) rids the creature of the {@condition poisoned} condition. Once used in this way, a wildroot loses this property."
+				"Introducir el zumo de una raíz silvestre en el flujo sanguíneo de una criatura (por ejemplo, frotando con él una herida abierta) eliminará el estado {@condition envenenado|PHB-ES}. Tras ser utilizada una vez, la raíz silvestre perderá esta propiedad."
 			]
 		},
 		{
-			"name": "Wukka Nut",
+			"name": "Frutos secos wukka",
 			"source": "ToA-ES",
 			"page": 205,
 			"type": "G",
 			"rarity": "unknown",
 			"value": 100,
 			"entries": [
-				"These fist-sized nuts grow on wukka trees, which are popular haunts for {@creature jaculi|ToA}, {@creature su-monster|ToA|su-monsters}, and {@creature zorbo|ToA|zorbos}. A wukka nut rattles when shaken, causing its shell to shed bright light in a 10-foot radius and dim light for an additional 10 feet. This magical light fades after 1 minute, but shaking the nut again causes the light to reappear. If the shell of the nut is cracked open, it loses its magic."
+				"Estos frutos secos del tamaño de un puño crecen en los árboles wukka, muy frecuentados por {@creature jaculi|ToA-ES|jaculis}, {@creature sucarate|ToA-ES|sucarates} y {@creature zorbo|ToA-ES|zorbos}. Un fruto seco wukka repiquetea cuando se agita, lo que provoca que la cáscara arroje luz brillante en un radio de 10 pies y luz tenue en otros 10 pies. Esta luz mágica se desvanece después de 1 minuto, pero si se agita de nuevo el fruto, volverá a aparecer. La magia se pierde cuando se rompe la cáscara del fruto seco."
 			]
 		},
 		{
@@ -25782,7 +25793,7 @@
 			"rarity": "none",
 			"value": 100,
 			"entries": [
-				"A yahcha (pronounced YAH-chah) is a harmless, meaty beetle about the size of a human hand, which feeds on worms and maggots. It moves slowly (walking speed 10 feet) and is easy to catch. A creature with blue mist fever that eats a raw or cooked yahcha can immediately make a saving throw with advantage against that disease (see \"Diseases,\" page 40),"
+				"Un yahcha es un escarabajo inofensivo y carnoso del tamaño de una mano humana, que se alimenta de gusanos y larvas. Se mueve lentamente (su velocidad caminando es de 10 pies) y es fácil de atrapar. Una criatura con fiebre del mono loco que coma un yahcha, crudo o cocinado, podrá hacer inmediatamente una tirada de salvación con ventaja contra esa enfermedad (consulta \"Enfermedades\", en la página 40)."
 			]
 		},
 		{
@@ -25793,7 +25804,7 @@
 			"rarity": "none",
 			"value": 1000,
 			"entries": [
-				"Zabou mushrooms feed on offal and the rotting wood of dead trees. If handled carefully, a zabou can be picked or uprooted without causing it to release its spores. If crushed or struck, a zabou releases its spores in a 10-foot-radius sphere. A zabou can also be hurled up to 30 feet away or dropped like a grenade, releasing its cloud of spores on impact. Any creature in that area must succeed on a DC 10 Constitution saving throw or be {@condition poisoned} for 1 minute. The {@condition poisoned} creature's skin itches for the duration. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+				"Los hongos zabou se alimentan de desperdicios y de madera podrida de árboles muertos. Si se manipulan con cuidado, se pueden arrancar de raíz o recoger sin que liberen sus esporas. En caso de que se le aplaste o se golpee, un zabou soltará sus esporas en una esfera de 10 pies de radio. Uno de estos hongos también puede ser lanzado como una granada hasta a 30 pies, liberando una nube de esporas tras el impacto. Todas las criaturas que se encuentren en el área deberán superar una tirada de salvación de Constitución CD 10 o estarán {@condition envenenador|PHB-ES|envenenadas} durante 1 minuto. La piel de las que hayan sido {@condition envenenador|PHB-ES|envenenadas} picará mientras dure el efecto. La criatura puede repetir la tirada de salvación al final de cada uno de sus turnos, librándose del efecto si tiene éxito."
 			]
 		},
 		{
