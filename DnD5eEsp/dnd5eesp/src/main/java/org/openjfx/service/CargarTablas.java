@@ -57,184 +57,186 @@ public class CargarTablas extends Service<Void>{
         //Consulta la lista de documentos a importar
         List<ImportTableModel> listaTablas = ImportTableRepository.consultaActivos();
         for (ImportTableModel importTable : listaTablas) {
-            System.out.println("Inicio - Proceso de carga de la tabla "+importTable.getTableId());
-            //Recupera el json del documento
-            String rutaDocOriginal = AppProperties.getInstance().getProperty("rutaOriginal")+"data\\"+importTable.getJsonDocument();
-            String rutaDocEsp = AppProperties.getInstance().getProperty("rutaEsp")+"data\\"+importTable.getJsonDocument();
+            if(!importTable.getTypeTable().equals("X")) {
+                System.out.println("Inicio - Proceso de carga de la tabla "+importTable.getTableId());
+                //Recupera el json del documento
+                String rutaDocOriginal = AppProperties.getInstance().getProperty("rutaOriginal")+"data\\"+importTable.getJsonDocument();
+                String rutaDocEsp = AppProperties.getInstance().getProperty("rutaEsp")+"data\\"+importTable.getJsonDocument();
 
-            //Comprueba si existe el documento json de destino
-            JsonObject jsonEsp = new JsonObject();
-            try {
-                BufferedReader bufferedReaderEsp = new BufferedReader(new FileReader(rutaDocEsp));
-                Gson gsonEsp = new Gson();
-                jsonEsp = gsonEsp.fromJson(bufferedReaderEsp, JsonObject.class);
-                //Comprueba si tiene el campo
-                if(!jsonEsp.has(importTable.getFieldName())){
+                //Comprueba si existe el documento json de destino
+                JsonObject jsonEsp = new JsonObject();
+                try {
+                    BufferedReader bufferedReaderEsp = new BufferedReader(new FileReader(rutaDocEsp));
+                    Gson gsonEsp = new Gson();
+                    jsonEsp = gsonEsp.fromJson(bufferedReaderEsp, JsonObject.class);
+                    //Comprueba si tiene el campo
+                    if(!jsonEsp.has(importTable.getFieldName())){
+                        JsonArray jsLista = new JsonArray();
+                        jsonEsp.add(importTable.getFieldName(), jsLista);
+                    }
+                } catch (FileNotFoundException e) {
+                    //Si no encuentra el documento lo crea
                     JsonArray jsLista = new JsonArray();
                     jsonEsp.add(importTable.getFieldName(), jsLista);
-                }
-            } catch (FileNotFoundException e) {
-                //Si no encuentra el documento lo crea
-                JsonArray jsLista = new JsonArray();
-                jsonEsp.add(importTable.getFieldName(), jsLista);
-                try (Writer writer = new FileWriter(rutaDocEsp)) {
-                    Gson gsonCreate = new GsonBuilder().create();
-                    gsonCreate.toJson(jsonEsp, writer);
-                }
-                System.out.println("Documento "+importTable.getJsonDocument()+" creado");
-            }
-            JsonObject jsonEspOriginal = jsonEsp.deepCopy();
-            JsonArray listaDatosEsp = jsonEsp.get(importTable.getFieldName()).getAsJsonArray();
-
-            //Recuperamos el documento fluff
-            JsonArray listaDatosFluff = new JsonArray();
-            HashMap<String,JsonObject> fluffMap = new HashMap<>();
-            if(importTable.getFluffDocument()!=null && !importTable.getFluffDocument().isEmpty()) {
-                try {
-                    String rutaDocFluff = AppProperties.getInstance().getProperty("rutaOriginal")+"data\\"+importTable.getFluffDocument();
-                    BufferedReader bufferedReader = new BufferedReader(new FileReader(rutaDocFluff));
-                    Gson gson = new Gson();
-                    JsonObject json = gson.fromJson(bufferedReader, JsonObject.class);
-                    listaDatosFluff = json.get(importTable.getFluffFieldName()).getAsJsonArray();
-
-                    for (int i = 0; i < listaDatosFluff.size(); i++) {
-                        JsonObject datoFluff = listaDatosFluff.get(i).getAsJsonObject();
-                        String sourceDocFluff = datoFluff.get("source").getAsString();
-                        String textDocFluff = datoFluff.get("name").getAsString();
-                        fluffMap.put(importTable.getTableId()+"|"+textDocFluff+"|"+sourceDocFluff, datoFluff);
+                    try (Writer writer = new FileWriter(rutaDocEsp)) {
+                        Gson gsonCreate = new GsonBuilder().create();
+                        gsonCreate.toJson(jsonEsp, writer);
                     }
-
-                    if(importTable.getTableId().equals("Race") || importTable.getTableId().equals("Subrace")) {
-                        JsonObject raceFluffMetaUncommon = json.get("raceFluffMeta").getAsJsonObject().get("uncommon").getAsJsonObject();
-                        fluffMap.put("raceFluffMeta|uncommon", raceFluffMetaUncommon);
-                        JsonObject raceFluffMetaMonstrous = json.get("raceFluffMeta").getAsJsonObject().get("monstrous").getAsJsonObject();
-                        fluffMap.put("raceFluffMeta|monstrous", raceFluffMetaMonstrous);
-                    }
-                } catch (FileNotFoundException e) {
-                    System.out.println("Documento Fluff "+importTable.getFluffDocument()+" no encontrado");
+                    System.out.println("Documento "+importTable.getJsonDocument()+" creado");
                 }
-            }
+                JsonObject jsonEspOriginal = jsonEsp.deepCopy();
+                JsonArray listaDatosEsp = jsonEsp.get(importTable.getFieldName()).getAsJsonArray();
 
-            //Comprobar el tipo de tabla
-            if(importTable.getTypeTable().equals("A")) {
-                try {
-                    BufferedReader bufferedReader = new BufferedReader(new FileReader(rutaDocOriginal));
-                    Gson gson = new Gson();
-                    JsonObject json = gson.fromJson(bufferedReader, JsonObject.class);
-                    JsonArray listaDatos = json.get(importTable.getFieldName()).getAsJsonArray();
-                    //Recorre la lista original y mira si es uno de los sources a traducir
-                    for (int i = 0; i < listaDatos.size(); i++) {
-                        JsonObject dato = listaDatos.get(i).getAsJsonObject();
-                        String source = dato.get("source").getAsString();
-                        if(sourcesMap.containsKey(source) && dato.has("name")) {
-                            String text = dato.get("name").getAsString();
-                            String sourceEsp = sourcesMap.get(source).getSourceEsp();
-                            String textEsp = "";
-                            //Guardamos en el map la clave para ver si sobran registros luego en la base de datos
-                            String keyDocument = importTable.getTableId()+"|"+text+"|"+source;
-                            foundMap.put(keyDocument, keyDocument);
-                            //Busca en la tabla si ya esta esta el registro del documento
-                            List<TypeTableAModel> busqueda = TypeTableARepository.busqueda(importTable.getTableId(), source, "Text", text);
-                            if(busqueda.size()>0) {
-                                //Carga la variable de traducción
-                                textEsp = busqueda.get(0).getTextEsp();
-                            } else {
-                                //Como aún no existe se añade a la tabla de destino
-                                TypeTableARepository.alta(importTable.getTableId(), new TypeTableAModel(source, text, ""));
-                            }
-                            jsonEsp = buscarActDocA(jsonEsp, importTable, listaDatosEsp, fluffMap, dato, source, sourceEsp, text, textEsp);
+                //Recuperamos el documento fluff
+                JsonArray listaDatosFluff = new JsonArray();
+                HashMap<String,JsonObject> fluffMap = new HashMap<>();
+                if(importTable.getFluffDocument()!=null && !importTable.getFluffDocument().isEmpty()) {
+                    try {
+                        String rutaDocFluff = AppProperties.getInstance().getProperty("rutaOriginal")+"data\\"+importTable.getFluffDocument();
+                        BufferedReader bufferedReader = new BufferedReader(new FileReader(rutaDocFluff));
+                        Gson gson = new Gson();
+                        JsonObject json = gson.fromJson(bufferedReader, JsonObject.class);
+                        listaDatosFluff = json.get(importTable.getFluffFieldName()).getAsJsonArray();
+
+                        for (int i = 0; i < listaDatosFluff.size(); i++) {
+                            JsonObject datoFluff = listaDatosFluff.get(i).getAsJsonObject();
+                            String sourceDocFluff = datoFluff.get("source").getAsString();
+                            String textDocFluff = datoFluff.get("name").getAsString();
+                            fluffMap.put(importTable.getTableId()+"|"+textDocFluff+"|"+sourceDocFluff, datoFluff);
                         }
-                    }
-                } catch (FileNotFoundException e) {
-                    System.out.println("Documento original no encontrado");
-                }
-            } else if(importTable.getTypeTable().equals("B")) {
-                //Tabla de magicitems
-                try {
-                    BufferedReader bufferedReader = new BufferedReader(new FileReader(rutaDocOriginal));
-                    Gson gson = new Gson();
-                    JsonObject json = gson.fromJson(bufferedReader, JsonObject.class);
-                    JsonArray listaDatos = json.get(importTable.getFieldName()).getAsJsonArray();
-                    //Recorre la lista original y mira si es uno de los sources a traducir
-                    for (int i = 0; i < listaDatos.size(); i++) {
-                        JsonObject dato = listaDatos.get(i).getAsJsonObject();
-                        JsonObject datoHeredado = dato.getAsJsonObject("inherits");
-                        String source = datoHeredado.get("source").getAsString();
-                        if(sourcesMap.containsKey(source) && dato.has("name")) {
-                            String text = dato.get("name").getAsString();
-                            String sourceEsp = sourcesMap.get(source).getSourceEsp();
-                            String textEsp = "";
-                            //Guardamos en el map la clave para ver si sobran registros luego en la base de datos
-                            String keyDocument = importTable.getTableId()+"|"+text+"|"+source;
-                            foundMap.put(keyDocument, keyDocument);
-                            //Busca en la tabla si ya esta esta el registro del documento
-                            List<TypeTableAModel> busqueda = TypeTableARepository.busqueda(importTable.getTableId(), source, "Text", text);
-                            if(busqueda.size()>0) {
-                                //Carga la variable de traducción
-                                textEsp = busqueda.get(0).getTextEsp();
-                            } else {
-                                //Como aún no existe se añade a la tabla de destino
-                                TypeTableARepository.alta(importTable.getTableId(), new TypeTableAModel(source, text, ""));
-                            }
-                            jsonEsp = buscarActDocB(jsonEsp, importTable, listaDatosEsp, fluffMap, dato, source, sourceEsp, text, textEsp);
+
+                        if(importTable.getTableId().equals("Race") || importTable.getTableId().equals("Subrace")) {
+                            JsonObject raceFluffMetaUncommon = json.get("raceFluffMeta").getAsJsonObject().get("uncommon").getAsJsonObject();
+                            fluffMap.put("raceFluffMeta|uncommon", raceFluffMetaUncommon);
+                            JsonObject raceFluffMetaMonstrous = json.get("raceFluffMeta").getAsJsonObject().get("monstrous").getAsJsonObject();
+                            fluffMap.put("raceFluffMeta|monstrous", raceFluffMetaMonstrous);
                         }
+                    } catch (FileNotFoundException e) {
+                        System.out.println("Documento Fluff "+importTable.getFluffDocument()+" no encontrado");
                     }
-                } catch (FileNotFoundException e) {
-                    System.out.println("Documento original no encontrado");
                 }
-            } else if(importTable.getTypeTable().equals("C")) {
-                try {
-                    BufferedReader bufferedReader = new BufferedReader(new FileReader(rutaDocOriginal));
-                    Gson gson = new Gson();
-                    JsonObject json = gson.fromJson(bufferedReader, JsonObject.class);
-                    JsonArray listaDatos = json.get(importTable.getFieldName()).getAsJsonArray();
-                    //Recorre la lista original y mira si es uno de los sources a traducir
-                    for (int i = 0; i < listaDatos.size(); i++) {
-                        JsonObject dato = listaDatos.get(i).getAsJsonObject();
-                        String source = dato.get("source").getAsString();
-                        String raceSource = dato.get("raceSource").getAsString();
-                        String raceName = dato.get("raceName").getAsString();
-                        if(sourcesMap.containsKey(source) && dato.has("name")) {
-                            String text = dato.get("name").getAsString();
-                            String sourceEsp = sourcesMap.get(source).getSourceEsp();
-                            String textEsp = "";
-                            String raceSourceEsp = sourcesMap.get(raceSource).getSourceEsp();
-                            String raceNameEsp = "";
-                            //Guardamos en el map la clave para ver si sobran registros luego en la base de datos
-                            String keyDocument = importTable.getTableId()+"|"+text+"|"+source+"|"+raceSource+"|"+raceName;
-                            foundMap.put(keyDocument, keyDocument);
-                            //Busca en la tabla si ya esta esta el registro del documento
-                            List<TypeTableCModel> busqueda = TypeTableCRepository.busqueda(importTable.getTableId(), source, "Text", text, raceSource, raceName);
-                            if(busqueda.size()>0) {
-                                //Carga la variable de traducción
-                                textEsp = busqueda.get(0).getTextEsp();
-                            } else {
-                                //Como aún no existe se añade a la tabla de destino
-                                TypeTableCRepository.alta(importTable.getTableId(), new TypeTableCModel(source, text, raceSource, raceName, ""));
+
+                //Comprobar el tipo de tabla
+                if(importTable.getTypeTable().equals("A")) {
+                    try {
+                        BufferedReader bufferedReader = new BufferedReader(new FileReader(rutaDocOriginal));
+                        Gson gson = new Gson();
+                        JsonObject json = gson.fromJson(bufferedReader, JsonObject.class);
+                        JsonArray listaDatos = json.get(importTable.getFieldName()).getAsJsonArray();
+                        //Recorre la lista original y mira si es uno de los sources a traducir
+                        for (int i = 0; i < listaDatos.size(); i++) {
+                            JsonObject dato = listaDatos.get(i).getAsJsonObject();
+                            String source = dato.get("source").getAsString();
+                            if(sourcesMap.containsKey(source) && dato.has("name")) {
+                                String text = dato.get("name").getAsString();
+                                String sourceEsp = sourcesMap.get(source).getSourceEsp();
+                                String textEsp = "";
+                                //Guardamos en el map la clave para ver si sobran registros luego en la base de datos
+                                String keyDocument = importTable.getTableId()+"|"+text+"|"+source;
+                                foundMap.put(keyDocument, keyDocument);
+                                //Busca en la tabla si ya esta esta el registro del documento
+                                List<TypeTableAModel> busqueda = TypeTableARepository.busqueda(importTable.getTableId(), source, "Text", text);
+                                if(busqueda.size()>0) {
+                                    //Carga la variable de traducción
+                                    textEsp = busqueda.get(0).getTextEsp();
+                                } else {
+                                    //Como aún no existe se añade a la tabla de destino
+                                    TypeTableARepository.alta(importTable.getTableId(), new TypeTableAModel(source, text, ""));
+                                }
+                                jsonEsp = buscarActDocA(jsonEsp, importTable, listaDatosEsp, fluffMap, dato, source, sourceEsp, text, textEsp);
                             }
-                            //Buscamos la traducción de la raza a la que pertenece
-                            List<TypeTableAModel> busquedaRace = TypeTableARepository.busqueda("Race", source, "Text", text);
-                            if(busquedaRace.size()>0) {
-                                //Carga la variable de traducción
-                                raceNameEsp = busquedaRace.get(0).getTextEsp();
-                            }
-                            jsonEsp = buscarActDocC(jsonEsp, importTable, listaDatosEsp, fluffMap, dato, source, sourceEsp, text, textEsp, raceSource, raceSourceEsp, raceName , raceNameEsp);
                         }
+                    } catch (FileNotFoundException e) {
+                        System.out.println("Documento original no encontrado");
                     }
-                } catch (FileNotFoundException e) {
-                    System.out.println("Documento original no encontrado");
+                } else if(importTable.getTypeTable().equals("B")) {
+                    //Tabla de magicitems
+                    try {
+                        BufferedReader bufferedReader = new BufferedReader(new FileReader(rutaDocOriginal));
+                        Gson gson = new Gson();
+                        JsonObject json = gson.fromJson(bufferedReader, JsonObject.class);
+                        JsonArray listaDatos = json.get(importTable.getFieldName()).getAsJsonArray();
+                        //Recorre la lista original y mira si es uno de los sources a traducir
+                        for (int i = 0; i < listaDatos.size(); i++) {
+                            JsonObject dato = listaDatos.get(i).getAsJsonObject();
+                            JsonObject datoHeredado = dato.getAsJsonObject("inherits");
+                            String source = datoHeredado.get("source").getAsString();
+                            if(sourcesMap.containsKey(source) && dato.has("name")) {
+                                String text = dato.get("name").getAsString();
+                                String sourceEsp = sourcesMap.get(source).getSourceEsp();
+                                String textEsp = "";
+                                //Guardamos en el map la clave para ver si sobran registros luego en la base de datos
+                                String keyDocument = importTable.getTableId()+"|"+text+"|"+source;
+                                foundMap.put(keyDocument, keyDocument);
+                                //Busca en la tabla si ya esta esta el registro del documento
+                                List<TypeTableAModel> busqueda = TypeTableARepository.busqueda(importTable.getTableId(), source, "Text", text);
+                                if(busqueda.size()>0) {
+                                    //Carga la variable de traducción
+                                    textEsp = busqueda.get(0).getTextEsp();
+                                } else {
+                                    //Como aún no existe se añade a la tabla de destino
+                                    TypeTableARepository.alta(importTable.getTableId(), new TypeTableAModel(source, text, ""));
+                                }
+                                jsonEsp = buscarActDocB(jsonEsp, importTable, listaDatosEsp, fluffMap, dato, source, sourceEsp, text, textEsp);
+                            }
+                        }
+                    } catch (FileNotFoundException e) {
+                        System.out.println("Documento original no encontrado");
+                    }
+                } else if(importTable.getTypeTable().equals("C")) {
+                    try {
+                        BufferedReader bufferedReader = new BufferedReader(new FileReader(rutaDocOriginal));
+                        Gson gson = new Gson();
+                        JsonObject json = gson.fromJson(bufferedReader, JsonObject.class);
+                        JsonArray listaDatos = json.get(importTable.getFieldName()).getAsJsonArray();
+                        //Recorre la lista original y mira si es uno de los sources a traducir
+                        for (int i = 0; i < listaDatos.size(); i++) {
+                            JsonObject dato = listaDatos.get(i).getAsJsonObject();
+                            String source = dato.get("source").getAsString();
+                            String raceSource = dato.get("raceSource").getAsString();
+                            String raceName = dato.get("raceName").getAsString();
+                            if(sourcesMap.containsKey(source) && dato.has("name")) {
+                                String text = dato.get("name").getAsString();
+                                String sourceEsp = sourcesMap.get(source).getSourceEsp();
+                                String textEsp = "";
+                                String raceSourceEsp = sourcesMap.get(raceSource).getSourceEsp();
+                                String raceNameEsp = "";
+                                //Guardamos en el map la clave para ver si sobran registros luego en la base de datos
+                                String keyDocument = importTable.getTableId()+"|"+text+"|"+source+"|"+raceSource+"|"+raceName;
+                                foundMap.put(keyDocument, keyDocument);
+                                //Busca en la tabla si ya esta esta el registro del documento
+                                List<TypeTableCModel> busqueda = TypeTableCRepository.busqueda(importTable.getTableId(), source, "Text", text, raceSource, raceName);
+                                if(busqueda.size()>0) {
+                                    //Carga la variable de traducción
+                                    textEsp = busqueda.get(0).getTextEsp();
+                                } else {
+                                    //Como aún no existe se añade a la tabla de destino
+                                    TypeTableCRepository.alta(importTable.getTableId(), new TypeTableCModel(source, text, raceSource, raceName, ""));
+                                }
+                                //Buscamos la traducción de la raza a la que pertenece
+                                List<TypeTableAModel> busquedaRace = TypeTableARepository.busqueda("Race", source, "Text", text);
+                                if(busquedaRace.size()>0) {
+                                    //Carga la variable de traducción
+                                    raceNameEsp = busquedaRace.get(0).getTextEsp();
+                                }
+                                jsonEsp = buscarActDocC(jsonEsp, importTable, listaDatosEsp, fluffMap, dato, source, sourceEsp, text, textEsp, raceSource, raceSourceEsp, raceName , raceNameEsp);
+                            }
+                        }
+                    } catch (FileNotFoundException e) {
+                        System.out.println("Documento original no encontrado");
+                    }
+                } 
+                //Comprobamos si se ha añadido algo al original
+                if(!jsonEspOriginal.equals(jsonEsp)) {
+                    //Actualiza el documento
+                    try (Writer writer = new FileWriter(rutaDocEsp)) {
+                        Gson gsonCreate = new GsonBuilder().create();
+                        gsonCreate.toJson(jsonEsp, writer);
+                    }
+                    System.out.println("Documento "+importTable.getJsonDocument()+" guardado.");
                 }
-            } 
-            //Comprobamos si se ha añadido algo al original
-            if(!jsonEspOriginal.equals(jsonEsp)) {
-                //Actualiza el documento
-                try (Writer writer = new FileWriter(rutaDocEsp)) {
-                    Gson gsonCreate = new GsonBuilder().create();
-                    gsonCreate.toJson(jsonEsp, writer);
-                }
-                System.out.println("Documento "+importTable.getJsonDocument()+" guardado.");
+                System.out.println("Fin - Proceso de carga de la tabla "+importTable.getTableId());
             }
-            System.out.println("Fin - Proceso de carga de la tabla "+importTable.getTableId());
         }
 
         for (ImportTableModel importTable : listaTablas) {
