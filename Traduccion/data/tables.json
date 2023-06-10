@@ -1,4 +1,2711 @@
 {
 	"table": [
+		{
+			"name": "Ponerse y quitarse la armadura; Ponerse y quitarse la armadura",
+			"caption": "Ponerse y quitarse la armadura",
+			"source": "PHB-ES",
+			"page": 146,
+			"chapter": {
+				"name": "Equipo",
+				"ordinal": {
+					"type": "chapter",
+					"identifier": 5
+				},
+				"index": 5
+			},
+			"colLabels": [
+				"Categoría",
+				"Poner",
+				"Quitar"
+			],
+			"colStyles": [
+				"col-4",
+				"col-4",
+				"col-4"
+			],
+			"rows": [
+				[
+					"Armadura ligera",
+					"1 minuto",
+					"1 minuto"
+				],
+				[
+					"Armadura media",
+					"5 minutos",
+					"1 minuto"
+				],
+				[
+					"Armadura pesada",
+					"10 minutos",
+					"5 minutos"
+				],
+				[
+					"Escudo",
+					"1 acción",
+					"1 acción"
+				]
+			]
+		},
+		{
+			"name": "Sobrecarga de Magia Salvaje",
+			"caption": "Sobrecarga de Magia Salvaje",
+			"source": "PHB-ES",
+			"page": 93,
+			"subclass": {
+				"name": "Magia Salvaje",
+				"source": "PHB-ES",
+				"className": "Hechicero",
+				"classSource": "PHB-ES"
+			},
+			"colLabels": [
+				"{@dice d100}",
+				"Efecto"
+			],
+			"colStyles": [
+				"col-1 text-center",
+				"col-11"
+			],
+			"rows": [
+				[
+					"01-02",
+					"Tira en esta tabla al comienzo de cada uno de tus turnos durante el minuto siguiente, ignorando este resultado en esas tiradas."
+				],
+				[
+					"03-04",
+					"Durante el próximo minuto, puedes ver cualquier criatura {@condition invisible|PHB-ES} hasta la que tengas línea de visión."
+				],
+				[
+					"05-06",
+					"Un {@filter modron|bestiary|search=modron} elegido y controlado por el DM aparece en un espacio desocupado que se encuentre a 5 pies o menos de ti. Desaparece 1 minuto después."
+				],
+				[
+					"07-08",
+					"Lanzas una {@spell Bola de fuego|PHB-ES|bola de fuego} como conjuro de nivel 3 centrado en ti."
+				],
+				[
+					"09-10",
+					"Lanzas {@spell Proyectil mágico|PHB-ES|proyectil mágico} como conjuro de nivel 5."
+				],
+				[
+					"11-12",
+					"Tira {@dice 1d10}. Tu altura cambia el número de pulgadas que indica la tirada. Si el resultado es impar, encoges. Si el resultado es par, creces."
+				],
+				[
+					"13-14",
+					"Lanzas el conjuro {@spell Confusión|PHB-ES|confusión} centrado en ti mismo"
+				],
+				[
+					"15-16",
+					"Durante el próximo minuto, recuperas 5 puntos de golpe al comienzo de cada uno de tus turnos."
+				],
+				[
+					"17-18",
+					"Te crece una larga barba hecha de plumas que permanece en su sitio hasta que estornudas, momento en el cual las plumas salen despedidas de tu rostro."
+				],
+				[
+					"19-20",
+					"Lanzas el conjuro {@spell Grasa|PHB-ES|grasa} centrado en ti mismo."
+				],
+				[
+					"21-22",
+					"Todas las criaturas tienen desventaja en las tiradas de salvación contra el siguiente conjuro que lances durante el próximo minuto y que implique hacer tiradas de salvación."
+				],
+				[
+					"23-24",
+					"Tu piel se vuelve de un brillante color azul. El conjuro {@spell Levantar maldición|PHB-ES|levantar maldición} puede terminar con este efecto."
+				],
+				[
+					"25-26",
+					"En tu frente aparece un ojo durante el próximo minuto. Durante este periodo de tiempo, tienes ventaja en las pruebas de Sabiduría ({@skill Perception|Percepción}) que dependan de la vista."
+				],
+				[
+					"27-28",
+					"Durante el próximo minuto, todos tus conjuros con un tiempo de lanzamiento \"1 acción\" poseen un tiempo de lanzamiento \"1 acción adicional\"."
+				],
+				[
+					"29-30",
+					"Te teletransportas hasta 60 pies a un espacio desocupado de tu elección que puedas ver."
+				],
+				[
+					"31-32",
+					"Eres transportado al Plano Astral hasta el final de tu siguiente turno, momento en el que vuelves al espacio que ocupabas antes, o al más cercano si aquel en el que te encontrabas ya no está libre."
+				],
+				[
+					"33-34",
+					"El siguiente conjuro que cause daño que lances durante el próximo minuto infligirá el daño máximo posible."
+				],
+				[
+					"35-36",
+					"Tira {@dice 1d10}. Tu edad cambia el número de años que indica la tirada. Si el resultado es impar, rejuveneces (hasta una edad mínima de 1 año). Si el resultado es par, envejeces."
+				],
+				[
+					"37-38",
+					"{@dice 1d6} {@creature flumph|MM-ES|flumphs} controlados par el DM aparecen en espacios desocupados a 60 pies o menos de ti. Están {@condition asustado|PHB-ES|asustados} de ti. Desaparecen 1 minuto después."
+				],
+				[
+					"39-40",
+					"Recuperas {@dice 2d10} puntos de golpe."
+				],
+				[
+					"41-42",
+					"Te transformas en una planta en una maceta hasta el comienzo de tu siguiente turno. Mientras seas una planta estarás {@condition incapacitado|PHB-ES|incapacitado} y serás vulnerable a todo el daño. Si tus puntos de golpe se reducen a 0 tu maceta se romperá y volverás a tu forma original."
+				],
+				[
+					"43-44",
+					"Durante el próximo minuto, puedes teletransportarte hasta 20 pies como acción adicional durante cada uno de tus turnos."
+				],
+				[
+					"45-46",
+					"Lanzas el conjuro {@spell Levitar|PHB-ES|levitar} sobre ti mismo."
+				],
+				[
+					"47-48",
+					"Un {@creature unicorn|MM-ES|unicornio} controlado por el DM aparece en un espacio desocupado que se encuentre a 5 pies o menos de ti. Desaparece 1 minuto después."
+				],
+				[
+					"49-50",
+					"No puedes hablar durante el minuto siguiente. Cada vez que lo intentes saldrán flotando de tu boca burbujas rosas."
+				],
+				[
+					"51-52",
+					"Un escudo espectral levita cerca de ti durante el minuto siguiente, dándote un +2 a tu CA e inmunidad a {@spell Proyectil mágico|PHB-ES|proyectiles mágicos}."
+				],
+				[
+					"53-54",
+					"Eres inmune a la borrachera producida por el alcohol durante los siguientes {@dice 5d6} días."
+				],
+				[
+					"55-56",
+					"Se te cae todo el pelo, pero vuelve a crecer en 24 horas."
+				],
+				[
+					"57-58",
+					"Durante el próximo minuto, cualquier objeto inflamable que toques y no esté llevando o vistiendo otra criatura se prendera fuego."
+				],
+				[
+					"59-60",
+					"Recuperas el espacio de conjuro de menor nivel que hayas gastado ya."
+				],
+				[
+					"61-62",
+					"Durante el próximo minuto, deberás gritar siempre que hables."
+				],
+				[
+					"63-64",
+					"Lanzas el conjuro {@spell Nube de oscurecimiento|PHB-ES|nube de oscurecimiento} centrado en ti."
+				],
+				[
+					"65-66",
+					"Hasta tres criaturas de tu elección a 30 pies o menos de ti reciben {@damage 4d10} de daño de relámpago."
+				],
+				[
+					"67-68",
+					"Estas {@condition asustado|PHB-ES|asustado} de la criatura más cercana hasta el final de tu siguiente turno."
+				],
+				[
+					"69-70",
+					"Todas las criaturas a 30 pies o menos de ti se vuelven {@condition invisible|PHB-ES|invisibles} durante el próximo minuto. Cualquiera de estas criaturas dejara de ser invisible si ataca o lanza un conjuro."
+				],
+				[
+					"71-72",
+					"Obtienes resistencia a todo el daño durante el próximo minuto."
+				],
+				[
+					"73-74",
+					"Una criatura elegida al azar a 60 pies o menos de ti esta {@condition envenenado|PHB-ES|envenenada} durante {@dice 1d4} horas."
+				],
+				[
+					"75-76",
+					"Refulges, emitiendo luz brillante en un radio de 30 pies durante el minuto siguiente. Cualquier criatura que acabe su turno situada a 5 pies o menos de ti estará {@condition cegado|PHB-ES|cegada} hasta el final de tu siguiente turno."
+				],
+				[
+					"77-78",
+					"Lanzas el conjuro {@spell Polimorfar|PHB-ES|polimorfar} sobre ti mismo. Si fallas la tirada de salvación, te transformas en una oveja hasta el final de la duración del conjuro."
+				],
+				[
+					"79-80",
+					"Mariposas ilusorias y pétalos de flores llenan el aire a 10 pies o menos de ti durante el minuto siguiente."
+				],
+				[
+					"81-82",
+					"Puedes realizar una nueva acción inmediatamente. Esta acción es adicional a las que puedes hacer durante tu turno."
+				],
+				[
+					"83-84",
+					"Todas las criaturas a 30 pies a menas de ti reciben {@damage 1d10} de daño necrótico. Recuperas tantas puntas de golpe como la suma de todo el de daño necrótico infligido."
+				],
+				[
+					"85-86",
+					"Lanzas el conjuro {@spell Imagen múltiple|PHB-ES|imagen múltiple}."
+				],
+				[
+					"87-88",
+					"Lanzas el conjuro {@spell Volar|PHB-ES|volar} sobre una criatura elegida al azar a 60 pies o menos de ti."
+				],
+				[
+					"89-90",
+					"Te vuelves {@condition invisible|PHB-ES|invisible} durante el minuto siguiente. Además, durante este periodo de tiempo otras criaturas no podrán oírte. Esta invisibilidad termina si atacas o lanzas un conjuro."
+				],
+				[
+					"91-92",
+					"Si mueres durante el próximo minuto, volverás inmediatamente a la vida como si te hubieran lanzado el conjuro {@spell Reencarnar|PHB-ES|reencarnar}."
+				],
+				[
+					"93-94",
+					"Tu tamaño aumenta en una categoría durante el minuto siguiente."
+				],
+				[
+					"95-96",
+					"Tanto tu como todas las criaturas a 30 pies o menos de ti seréis vulnerables al daño perforante durante el próximo minuto."
+				],
+				[
+					"97-98",
+					"Durante el minuto siguiente estarás rodeado de una música suave etérea."
+				],
+				[
+					"99-00",
+					"Recuperas todos tus puntos de hechicería gastados."
+				]
+			]
+		},
+		{
+			"name": "Habilidades",
+			"source": "PHB-ES",
+			"page": 174,
+			"chapter": {
+				"name": "Usar puntuaciones de característica",
+				"ordinal": {
+					"type": "chapter",
+					"identifier": 7
+				},
+				"index": 7
+			},
+			"colLabels": [
+				"Característica",
+				"Habilidad"
+			],
+			"colStyles": [
+				"col-2",
+				"col-10"
+			],
+			"rows": [
+				[
+					"Fuerza",
+					"{@skill Atletismo|PHB-ES}"
+				],
+				[
+					"Destreza",
+					"{@skill Acrobacias|PHB-ES}, {@skill Juego de Manos|PHB-ES}, {@skill Sigilo|PHB-ES}"
+				],
+				[
+					"Inteligencia",
+					"{@skill Conocimiento Arcano|PHB-ES}, {@skill Historia|PHB-ES}, {@skill Investigación|PHB-ES}, {@skill Naturaleza|PHB-ES}, {@skill Religión|PHB-ES}"
+				],
+				[
+					"Sabiduría",
+					"{@skill Medicina|PHB-ES}, {@skill Percepción|PHB-ES}, {@skill Perspicacia|PHB-ES}, {@skill Supervivencia|PHB-ES}, {@skill Trato con Animales|PHB-ES}"
+				],
+				[
+					"Carisma",
+					"{@skill Engaño|PHB-ES}, {@skill Interpretación|PHB-ES}, {@skill Intimidación|PHB-ES}, {@skill Persuasión|PHB-ES}"
+				]
+			]
+		},
+		{
+            "name": "Rasgos especiales; ¿Quién fabricó o para quién se fabricó el objeto?",
+			"caption": "¿Quién fabricó o para quién se fabricó el objeto?",
+			"source": "DMG-ES",
+            "page": 142,
+            "chapter": {
+                "index": 7,
+                "name": "Tesoro",
+                "ordinal": {
+                    "identifier": 7,
+                    "type": "chapter"
+                }
+            },
+            "colLabels": [
+                "d20",
+                "Creador o destinatario"
+            ],
+            "colStyles": [
+                "col-2 text-center",
+                "col-10"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "{@b Aberración}. Este objeto fue creado por aberraciones en tiempos antiguos, posiblemente para que lo usaran algunos de los siervos humanos favoritos. Cuando es observado por el rabillo del ojo, da la sensación de estar moviéndose."
+                ],
+                [
+                    "2-4",
+                    "{@b Humano}. Este objeto se creó durante el apogeo de un reino humano ya caído o está relacionado con un humano legendario. Podría tener escritura en una lengua olvidada o símbolos cuyo significado se ha perdido en el pasado."
+                ],
+                [
+                    "5",
+                    "{@b Celestial}. Esta arma pesa la mitad de lo normal y está grabada con alas con plumas, soles y otros símbolos del bien. Los infernales consideran este objeto repulsivo."
+                ],
+                [
+                    "6",
+                    "{@b Dragón}. Este objeto está hecho de escamas y garras de la muda de un dragón. Quizá incluye metales y piedras preciosas del tesoro de ese mismo dragón. Se calienta ligeramente cuando está a 120 pies o menos de un dragón."
+                ],
+                [
+                    "7",
+                    "{@b Drow}. Este objeto pesa la mitad de lo normal. Es negro y está grabado con arañas y telarañas, en honor a Lolth. Si se le expone a la luz del sol durante 1 minuto o más, podría empezar a funcionar mal o incluso a desintegrarse."
+                ],
+                [
+                    "8-9",
+                    "{@b Enano}. El objeto es muy resistente y tiene runas enanas integradas en el diseño. Podría estar asociado con un clan, al que le gustaría que fuera devuelto a su morada ancestral."
+                ],
+                [
+                    "10",
+                    "{@b Aire elemental}. Este objeto pesa la mitad de lo normal y parece hueco. Si está hecho de un tejido, es prácticamente transparente."
+                ],
+                [
+                    "11",
+                    "{@b Tierra elemental}. Lo más probable es que este objeto esté fabricado en piedra. Si tiene partes de tela o cuero, estarán repujadas con piedras cuidadosamente pulidas."
+                ],
+                [
+                    "12",
+                    "{@b Fuego elemental}. Este objeto se nota ligeramente caliente, con sus partes metálicas hechas de hierro negro. Su superficie está cubierta de grabados de llamas y predominan en ella los tonos naranjas y rojos."
+                ],
+                [
+                    "13",
+                    "{@b Agua elemental}. El cuero y la tela de este objeto han sido sustituidos por lustrosas escamas de pez, mientras que las partes normalmente metálicas están hechas de conchas y coral trabajado, tan fuertes como cualquier metal."
+                ],
+                [
+                    "14-15",
+                    "{@b Elfo}. Este objeto pesa la mitad de lo normal. Está adornado con símbolos naturales: hojas, enredaderas, estrellas, etc."
+                ],
+                [
+                    "16",
+                    "{@b Feérico}. Este objeto está cuidadosamente fabricado a partir de los mejores materiales y brilla a la luz de la luna con un fulgor pálido, de modo que emite luz tenue en un radio de 5 pies. Cualquier fragmento de hierro o acero del objeto ha sido sustituido por su equivalente en plata o mithral."
+                ],
+                [
+                    "17",
+                    "{@b Infernal}. Este objeto está hecho de acero negro o de cuerno, y cualquier parte de cuero o tela ha sido sustituida por piel de infernales. Su tacto es cálido y su superficie muestra runas grabadas con caras maliciosas o runas repugnantes. los celestiales consideran este objeto repulsivo."
+                ],
+                [
+                    "18",
+                    "{@b Gigante}. Este objeto es más grande de lo normal. Fue hecho por gigantes para ser usado por aliados más pequeños."
+                ],
+                [
+                    "19",
+                    "{@b Gnomo}. Este objeto está fabricado para parecer normal, e incluso podría aparentar estar desgastado. Posiblemente incorpore engranajes y componentes mecánicos que no tienen por qué ser cruciales para su funcionamiento."
+                ],
+                [
+                    "20",
+                    "{@b Muerto viviente}. El objeto tiene imaginería de la muerte, como huesos y calaveras, y podría haber sido confeccionado a partir de trozos de cadáveres. Está frío al tacto."
+                ]
+            ]
+        },
+        {
+            "name": "Rasgos especiales; ¿Cual es su historia?",
+			"caption": "¿Cual es su historia?",
+			"source": "DMG-ES",
+            "page": 142,
+            "chapter": {
+                "index": 7,
+                "name": "Tesoro",
+                "ordinal": {
+                    "identifier": 7,
+                    "type": "chapter"
+                }
+            },
+            "colLabels": [
+                "d8",
+                "Historia"
+            ],
+            "colStyles": [
+                "col-2 text-center",
+                "col-10"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "{@b Arcano}. Fue creado para una antigua orden de lanzadores de conjuros y exhibe el emblema de dicha orden."
+                ],
+                [
+                    "2",
+                    "{@b Perdición}. El objeto fue creado por los enemigos de una cultura o tipo de criatura concreto. Si esta cultura o criatura todavía existe, podrían reconocer el objeto y señalar al portador como enemigo."
+                ],
+                [
+                    "3",
+                    "{@b Heroico}. Un gran héroe utilizó este objeto. Cualquiera familiarizado con la historia del objeto tendrá enormes expectativas de los actos del nuevo dueño."
+                ],
+                [
+                    "4",
+                    "{@b Ornamental}. Este objeto fue creado para conmemorar una ocasión especial. Tiene incrustaciones de oro y platino y está adornado con filigranas de plata."
+                ],
+                [
+                    "5",
+                    "{@b Profético}. Este objeto es parte de una profecía: su portador está destinado a desempeñar un papel clave en eventos futuros. Otra persona que ansíe ese papel podría intentar robar el objeto, del mismo modo que alguien que no quiera que se cumpla la profecía podría tratar de asesinar al portador."
+                ],
+                [
+                    "6",
+                    "{@b Religioso}. Este objeto fue utilizado en ceremonias religiosas de una deidad concreta. Tiene símbolos sagrados grabados. Los seguidores de ese dios podrían intentar persuadir a su dueño de que lo done a un templo, querer robarlo para quedárselo o celebrar que el objeto esté en manos de un paladín o clérigo de su mismo dios."
+                ],
+                [
+                    "7",
+                    "{@b Siniestro}. El objeto ha quedado ligado a un acto de terrible maldad, como una masacre o un asesinato. Podría tener un nombre propio o estar fuertemente asociado al villano que lo usó. Cualquiera que esté familiarizado con la historia del objeto tratará a su portador con suspicacia."
+                ],
+                [
+                    "8",
+                    "{@b Símbolo de poder}. El objeto se empleaba como parte de las vestiduras reales o como señal de un alto cargo. Puede que su dueño anterior o sus descendientes aún lo quieran o que alguien confunda a su nuevo dueño con el legítimo heredero del objeto."
+                ]
+            ]
+        },
+        {
+            "name": "Rasgos especiales; ¿Qué propiedad menor posee?",
+			"caption": "¿Qué propiedad menor posee?",
+			"source": "DMG-ES",
+            "page": 143,
+            "chapter": {
+                "index": 7,
+                "name": "Tesoro",
+                "ordinal": {
+                    "identifier": 7,
+                    "type": "chapter"
+                }
+            },
+            "colLabels": [
+                "d20",
+                "Propiedad menor"
+            ],
+            "colStyles": [
+                "col-2 text-center",
+                "col-10"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "{@b Guía}. El propietario puede emplear una acción adicional para hacer que el objeto emita luz brillante en un radio de 10 pies y luz tenue en un radio de 10 pies adicionales, o para apagar la luz."
+                ],
+                [
+                    "2",
+                    "{@b Brújula}. El portador puede utilizar una acción para saber dónde está el norte."
+                ],
+                [
+                    "3",
+                    "{@b Conciencia}. Cuando el portador del objeto considera cometer o comete un acto malvado, el objeto provoca que aumenten sus remordimientos."
+                ],
+                [
+                    "4",
+                    "{@b Subterráneo}. Mientras esté bajo tierra, el portador de este objeto siempre sabrá su profundidad y la dirección de la escalera, rampa o camino hacia el exterior más cercano."
+                ],
+                [
+                    "5",
+                    "{@b Reluciente}. Este objeto nunca se ensucia."
+                ],
+                [
+                    "6",
+                    "{@b Guardián}. Este objeto susurra avisos a su portador, proporcionándole un bonificador de +2 a su iniciativa si este último no está incapacitado."
+                ],
+                [
+                    "7",
+                    "{@b Harmonioso}. Sintonizarse con este objeto solo lleva 1 minuto."
+                ],
+                [
+                    "8",
+                    "{@b Mensaje oculto}. Hay un mensaje oculto en alguna parte de este objeto. Quizá solo sea visible en un cierto momento del año, bajo la luz de una de las fases de la luna o en una localización específica."
+                ],
+                [
+                    "9",
+                    "{@b Llave}. Este objeto sirve para abrir un contenedor, cámara, cripta u otro tipo de entrada."
+                ],
+                [
+                    "10",
+                    "{@b Idioma}. El portador puede hablar y entender un idioma a elección del DM mientras lleve el objeto encima."
+                ],
+                [
+                    "11",
+                    "{@b Centinela}. Elige un tipo de criatura que sea enemiga del creador del objeto. Este brillará tenuemente cuando haya criaturas de ese tipo a 120 pies o menos de distancia."
+                ],
+                [
+                    "12",
+                    "{@b Creador de canciones}. Cuando el objeto es golpeado o utilizado para golpear a un enemigo, el portador escucha un fragmento de una canción de otra era."
+                ],
+                [
+                    "13",
+                    "{@b Material extraño}. El objeto fue creado a partir de un material extraño para su propósito. Esto no afecta a su durabilidad."
+                ],
+                [
+                    "14",
+                    "{@b Templado}. El portador no sufre daño por la temperatura en ambientes donde esta se mantenga entre -30 °C y 50 °C."
+                ],
+                [
+                    "15",
+                    "{@b Irrompible}. Este objeto no se romperá. Es necesario tomar medidas especiales para destruirlo."
+                ],
+                [
+                    "16",
+                    "{@b Líder militar}. El portador puede usar una acción para que su voz alcance con claridad a 300 pies o menos de distancia hasta el final de su próximo turno."
+                ],
+                [
+                    "17",
+                    "{@b Acuático}. Este objeto flota en agua u otros líquidos. Su portador tiene ventaja en las pruebas de Fuerza ({@skill Atletismo|PHB-ES}) para nadar."
+                ],
+                [
+                    "18",
+                    "{@b Malvado}. Cuando al portador se le presente una oportunidad de actuar de manera egoísta o malvada, este objeto potenciará su deseo de hacerlo."
+                ],
+                [
+                    "19",
+                    "{@b Ilusorio}. Este objeto está saturado de magia de la escuela de ilusionismo, lo que permite a su portador alterar detalles menores de la apariencia del objeto. Este tipo de cambios no afectan a cómo se viste, porta o empuña el objeto y, por supuesto, no tiene ningún tipo de efecto en sus propiedades mágicas. Podría, por ejemplo, hacer que una túnica roja se viera azul o que un anillo de oro pareciera de marfil. El objeto vuelve a su apariencia normal si no lo lleva o porta nadie."
+                ],
+                [
+                    "20",
+                    "Tira dos veces en esta tabla, repitiendo los siguientes resultados de 20."
+                ]
+            ]
+        },
+        {
+            "name": "Rasgos especiales; ¿Qué peculiaridad tiene?",
+			"caption": "¿Qué peculiaridad tiene?",
+			"source": "DMG-ES",
+            "page": 143,
+            "chapter": {
+                "index": 7,
+                "name": "Tesoro",
+                "ordinal": {
+                    "identifier": 7,
+                    "type": "chapter"
+                }
+            },
+            "colLabels": [
+                "d12",
+                "Peculiaridad"
+            ],
+            "colStyles": [
+                "col-2 text-center",
+                "col-10"
+            ],
+            "rows": [
+                [
+                    "1",
+                    "{@b Dichoso}. Mientras posea el objeto, el portador se siente afortunado y optimista acerca del futuro. Las mariposas y otras criaturas juguetean en su presencia."
+                ],
+                [
+                    "2",
+                    "{@b Confiado}. Este objeto ayuda a su portador a sentirse seguro de sí mismo."
+                ],
+                [
+                    "3",
+                    "{@b Avaricioso}. El portador de este objeto se obsesiona con acumular riquezas materiales."
+                ],
+                [
+                    "4",
+                    "{@b Frágil}. El objeto se desmenuza, deshilacha, astilla o se resquebraja al usarlo, activarlo o llevarlo. Esta peculiaridad no posee ningún efecto en sus propiedades, pero si el objeto ha sido utilizado con frecuencia, tendrá un aspecto ruinoso."
+                ],
+                [
+                    "5",
+                    "{@b Hambriento}. Las propiedades mágicas de este objeto solo funcionan si se le aplica sangre de humanoide cada 24 horas. Solo es necesaria una gota en cada aplicación."
+                ],
+                [
+                    "6",
+                    "{@b Ruidoso}. Este objeto hace un ruido fuerte cuando se usa, como un golpe, grito o sonido de gong."
+                ],
+                [
+                    "7",
+                    "{@b Metamórfico}. La apariencia de este objeto cambia ligeramente de manera periódica y aleatoria. El portador no posee control alguno sobre estas alteraciones menores, pero no tienen efecto en el uso del objeto."
+                ],
+                [
+                    "8",
+                    "{@b Murmurante}. El objeto gruñe y murmura. Una criatura que le escuche cuidadosamente podría aprender algo interesante."
+                ],
+                [
+                    "9",
+                    "{@b Doloroso}. El portador experimenta una ráfaga de dolor inofensivo cuando utiliza el objeto."
+                ],
+                [
+                    "10",
+                    "{@b Posesivo}. El objeto exige sintonización cuando se empuña o viste por primera vez, y no permite que su portador se sintonice con otros objetos. Aquellos objetos que ya estuvieran sintonizados con el portador previamente seguirán estándolo de forma normal hasta que la sintonización sea finalizada. Si esto ocurre, el portador no podrá resintonizarse con ellos."
+                ],
+                [
+                    "11",
+                    "{@b Repulsivo}. El portador siente una sensación de desagrado cuando está en contacto con el objeto, que se mantendrá mientras siga llevándolo o empuñándolo."
+                ],
+                [
+                    "12",
+                    "{@b Perezoso}. El portador de este objeto se siente letárgico y perezoso. Mientras esté sintonizado con él, necesitará 10 horas para completar un descanso largo."
+                ]
+            ]
+        },
+		{
+            "name": "Tabla de Objetos Mágicos A",
+			"caption": "Tabla de Objetos Mágicos A",
+			"source": "DMG-ES",
+            "page": 144,
+            "chapter": {
+                "index": 7,
+                "name": "Tesoro",
+                "ordinal": {
+                    "identifier": 7,
+                    "type": "chapter"
+                }
+            },
+            "colLabels": [
+                "d100",
+                "Objeto mágico"
+            ],
+            "colStyles": [
+                "col-2 text-center",
+                "col-10"
+            ],
+            "rows": [
+                [
+                    "01-50",
+                    "{@item Poción de curación|DMG-ES}"
+                ],
+                [
+                    "51-60",
+                    "{@item Pergamino de conjuro (Truco)|DMG-ES}"
+                ],
+                [
+                    "61-70",
+                    "{@item Poción de trepar|DMG-ES}"
+                ],
+                [
+                    "71-90",
+                    "{@item Pergamino de conjuro (Nivel 1)|DMG-ES}"
+                ],
+                [
+                    "91-94",
+                    "{@item Pergamino de conjuro (Nivel 2)|DMG-ES}"
+                ],
+                [
+                    "95-98",
+                    "{@item Poción de curación mayor|DMG-ES}"
+                ],
+                [
+                    "99",
+                    "{@item Bolsa de contención|DMG-ES}"
+                ],
+                [
+                    "00",
+                    "{@item Globo flotante|DMG-ES}"
+                ]
+            ]
+        },
+        {
+            "name": "Tabla de Objetos Mágicos B",
+			"caption": "Tabla de Objetos Mágicos B",
+			"source": "DMG-ES",
+            "page": 144,
+            "chapter": {
+                "index": 7,
+                "name": "Tesoro",
+                "ordinal": {
+                    "identifier": 7,
+                    "type": "chapter"
+                }
+            },
+            "colLabels": [
+                "d100",
+                "Objeto mágico"
+            ],
+            "colStyles": [
+                "col-2 text-center",
+                "col-10"
+            ],
+            "rows": [
+                [
+                    "01-15",
+                    "{@item Poción de curación mayor|DMG-ES}"
+                ],
+                [
+                    "16-22",
+                    "{@item Poción de aliento de fuego|DMG-ES}"
+                ],
+                [
+                    "23-29",
+                    "{@item Poción de resistencia|DMG-ES}"
+                ],
+                [
+                    "30-34",
+                    "{@item Munición +1|DMG-ES}"
+                ],
+                [
+                    "35-39",
+                    "{@item Poción de amistad animal|DMG-ES}"
+                ],
+                [
+                    "40-44",
+                    "{@item Poción de fuerza de gigante de las colinas|DMG-ES}"
+                ],
+                [
+                    "45-49",
+                    "{@item Poción de crecimiento|DMG-ES}"
+                ],
+                [
+                    "50-54",
+                    "{@item Poción de respirar bajo el agua|DMG-ES}"
+                ],
+                [
+                    "55-59",
+                    "{@item Pergamino de conjuro (Nivel 2)|DMG-ES}"
+                ],
+                [
+                    "60-64",
+                    "{@item Pergamino de conjuro (Nivel 3)|DMG-ES}"
+                ],
+                [
+                    "65-67",
+                    "{@item Bolsa de contención|DMG-ES}"
+                ],
+                [
+                    "68-70",
+                    "{@item Ungüento de Keoghtom|DMG-ES}"
+                ],
+                [
+                    "71-73",
+                    "{@item Aceite escurridizo|DMG-ES}"
+                ],
+                [
+                    "74-75",
+                    "{@item Polvo de desaparición|DMG-ES}"
+                ],
+                [
+                    "76-77",
+                    "{@item Polvo de sequedad|DMG-ES}"
+                ],
+                [
+                    "78-79",
+                    "{@item Polvo de estornudar y atragantarse|DMG-ES}"
+                ],
+                [
+                    "80-81",
+                    "{@item Gema elemental|DMG-ES}"
+                ],
+                [
+                    "82-83",
+                    "{@item Filtro de amor|DMG-ES}"
+                ],
+                [
+                    "84",
+                    "{@item Vasija alquímica|DMG-ES}"
+                ],
+                [
+                    "85",
+                    "{@item Gorro de respirar bajo el agua|DMG-ES}"
+                ],
+                [
+                    "86",
+                    "{@item Capa de la mantarraya|DMG-ES}"
+                ],
+                [
+                    "87",
+                    "{@item Globo flotante|DMG-ES}"
+                ],
+                [
+                    "88",
+                    "{@item Anteojos de la noche|DMG-ES}"
+                ],
+                [
+                    "89",
+                    "{@item Yelmo de entender idiomas|DMG-ES}"
+                ],
+                [
+                    "90",
+                    "{@item Vara inamovible|DMG-ES}"
+                ],
+                [
+                    "91",
+                    "{@item Linterna de revelación|DMG-ES}"
+                ],
+                [
+                    "92",
+                    "{@item Armadura de marinero|DMG-ES}"
+                ],
+                [
+                    "93",
+                    "{@item Armadura de mithral|DMG-ES}"
+                ],
+                [
+                    "94",
+                    "{@item Poción de veneno|DMG-ES}"
+                ],
+                [
+                    "95",
+                    "{@item Anillo de natación|DMG-ES}"
+                ],
+                [
+                    "96",
+                    "{@item Túnica de objetos útiles|DMG-ES}"
+                ],
+                [
+                    "97",
+                    "{@item Cuerda de escalada|DMG-ES}"
+                ],
+                [
+                    "98",
+                    "{@item Silla de monta del caballero|DMG-ES}"
+                ],
+                [
+                    "99",
+                    "{@item Varita de detección mágica|DMG-ES}"
+                ],
+                [
+                    "00",
+                    "{@item Varita de secretos|DMG-ES}"
+                ]
+            ]
+        },
+        {
+            "name": "Tabla de Objetos Mágicos C",
+			"caption": "Tabla de Objetos Mágicos C",
+			"source": "DMG-ES"
+            "page": 145,
+            "chapter": {
+                "index": 7,
+                "name": "Tesoro",
+                "ordinal": {
+                    "identifier": 7,
+                    "type": "chapter"
+                }
+            },
+            "colLabels": [
+                "d100",
+                "Objeto mágico"
+            ],
+            "colStyles": [
+                "col-2 text-center",
+                "col-10"
+            ],
+            "rows": [
+                [
+                    "01-15",
+                    "{@item Poción de curación superior|DMG-ES}"
+                ],
+                [
+                    "16-22",
+                    "{@item Pergamino de conjuro (Nivel 4)|DMG-ES}"
+                ],
+                [
+                    "23-27",
+                    "{@item Munición +2|DMG-ES}"
+                ],
+                [
+                    "28-32",
+                    "{@item Poción de clarividencia|DMG-ES}"
+                ],
+                [
+                    "33-37",
+                    "{@item Poción de encoger|DMG-ES}"
+                ],
+                [
+                    "38-42",
+                    "{@item Poción de forma gaseosa|DMG-ES}"
+                ],
+                [
+                    "43-47",
+                    "{@item Poción de fuerza de gigante de escarcha|DMG-ES}"
+                ],
+                [
+                    "48-52",
+                    "{@item Poción de fuerza de gigante de piedra|DMG-ES}"
+                ],
+                [
+                    "53-57",
+                    "{@item Poción de heroísmo|DMG-ES}"
+                ],
+                [
+                    "58-62",
+                    "{@item Poción de invulnerabilidad|DMG-ES}"
+                ],
+                [
+                    "63-67",
+                    "{@item Poción de leer mentes|DMG-ES}"
+                ],
+                [
+                    "68-72",
+                    "{@item Pergamino de conjuro (Nivel 5)|DMG-ES}"
+                ],
+                [
+                    "73-75",
+                    "{@item Elixir de salud|DMG-ES}"
+                ],
+                [
+                    "76-78",
+                    "{@item Aceite de etereidad|DMG-ES}"
+                ],
+                [
+                    "79-81",
+                    "{@item Poción de fuerza de gigante de fuego|DMG-ES}"
+                ],
+                [
+                    "82-84",
+                    "{@item Ficha pluma de Quall|DMG-ES}"
+                ],
+                [
+                    "85-87",
+                    "{@item Pergamino de protección|DMG-ES}"
+                ],
+                [
+                    "88-89",
+                    "{@item Bolsa de judías|DMG-ES}"
+                ],
+                [
+                    "90-91",
+                    "{@item Canica de fuerza|DMG-ES}"
+                ],
+                [
+                    "92",
+                    "{@item Carillón de apertura|DMG-ES}"
+                ],
+                [
+                    "93",
+                    "{@item Decantador de agua interminable|DMG-ES}"
+                ],
+                [
+                    "94",
+                    "{@item Anteojos de visión minuciosa|DMG-ES}"
+                ],
+                [
+                    "95",
+                    "{@item Bote plegable|DMG-ES}"
+                ],
+                [
+                    "96",
+                    "{@item Morral práctico de Heward|DMG-ES}"
+                ],
+                [
+                    "97",
+                    "{@item Herraduras de velocidad|DMG-ES}"
+                ],
+                [
+                    "98",
+                    "{@item Collar de bolas de fuego|DMG-ES}"
+                ],
+                [
+                    "99",
+                    "{@item Talismán de salud|DMG-ES}"
+                ],
+                [
+                    "00",
+                    "{@item Piedras mensajeras|DMG-ES}"
+                ]
+            ]
+        },
+        {
+            "name": "Tabla de Objetos Mágicos D",
+			"caption": "Tabla de Objetos Mágicos D",
+			"source": "DMG-ES",
+            "page": 145,
+            "chapter": {
+                "index": 7,
+                "name": "Tesoro",
+                "ordinal": {
+                    "identifier": 7,
+                    "type": "chapter"
+                }
+            },
+            "colLabels": [
+                "d100",
+                "Objeto mágico"
+            ],
+            "colStyles": [
+                "col-2 text-center",
+                "col-10"
+            ],
+            "rows": [
+                [
+                    "01-20",
+                    "{@item Poción de curación suprema|DMG-ES}"
+                ],
+                [
+                    "21-30",
+                    "{@item Poción de invisibilidad|DMG-ES}"
+                ],
+                [
+                    "31-40",
+                    "{@item Poción de velocidad|DMG-ES}"
+                ],
+                [
+                    "41-50",
+                    "{@item Pergamino de conjuro (Nivel 6)|DMG-ES}"
+                ],
+                [
+                    "51-57",
+                    "{@item Pergamino de conjuro (Nivel 7)|DMG-ES}"
+                ],
+                [
+                    "58-62",
+                    "{@item Munición +3|DMG-ES}"
+                ],
+                [
+                    "63-67",
+                    "{@item Aceite de afilado|DMG-ES}"
+                ],
+                [
+                    "68-72",
+                    "{@item Poción de vuelo|DMG-ES}"
+                ],
+                [
+                    "73-77",
+                    "{@item Poción de fuerza de gigante de las nubes|DMG-ES}"
+                ],
+                [
+                    "78-82",
+                    "{@item Poción de longevidad|DMG-ES}"
+                ],
+                [
+                    "83-87",
+                    "{@item Poción de vitalidad|DMG-ES}"
+                ],
+                [
+                    "88-92",
+                    "{@item Pergamino de conjuro (Nivel 8)|DMG-ES}"
+                ],
+                [
+                    "93-95",
+                    "{@item Herraduras del céfiro|DMG-ES}"
+                ],
+                [
+                    "96-98",
+                    "{@item Maravillosos pigmentos de Nolzur|DMG-ES}"
+                ],
+                [
+                    "99",
+                    "{@item Bolsa devoradora|DMG-ES}"
+                ],
+                [
+                    "00",
+                    "{@item Agujero portátil|DMG-ES}"
+                ]
+            ]
+        },
+        {
+            "name": "Tabla de Objetos Mágicos E",
+			"caption": "Tabla de Objetos Mágicos E",
+			"source": "DMG-ES",
+            "page": 145,
+            "chapter": {
+                "index": 7,
+                "name": "Tesoro",
+                "ordinal": {
+                    "identifier": 7,
+                    "type": "chapter"
+                }
+            },
+            "colLabels": [
+                "d100",
+                "Objeto mágico"
+            ],
+            "colStyles": [
+                "col-2 text-center",
+                "col-10"
+            ],
+            "rows": [
+                [
+                    "01-30",
+                    "{@item Pergamino de conjuro (Nivel 8)|DMG-ES}"
+                ],
+                [
+                    "31-55",
+                    "{@item Poción de fuerza de gigante de las tormentas|DMG-ES}"
+                ],
+                [
+                    "56-70",
+                    "{@item Poción de curación suprema|DMG-ES}"
+                ],
+                [
+                    "71-85",
+                    "{@item Pergamino de conjuro (Nivel 9)|DMG-ES}"
+                ],
+                [
+                    "86-93",
+                    "{@item Disolvente universal|DMG-ES}"
+                ],
+                [
+                    "94-98",
+                    "{@item Flecha asesina|DMG-ES}"
+                ],
+                [
+                    "99-100",
+                    "{@item Pegamento soberano|DMG-ES}"
+                ]
+            ]
+        },
+        {
+            "name": "Tabla de Objetos Mágicos F",
+			"caption": "Tabla de Objetos Mágicos F",
+			"source": "DMG-ES",
+            "page": 146,
+            "chapter": {
+                "index": 7,
+                "name": "Tesoro",
+                "ordinal": {
+                    "identifier": 7,
+                    "type": "chapter"
+                }
+            },
+            "colLabels": [
+                "d100",
+                "Objeto mágico"
+            ],
+            "colStyles": [
+                "col-2 text-center",
+                "col-10"
+            ],
+            "rows": [
+                [
+                    "01-15",
+                    "{@item Arma +1|DMG-ES}"
+                ],
+                [
+                    "16-18",
+                    "{@item Escudo +1|DMG-ES}"
+                ],
+                [
+                    "19-21",
+                    "{@item Escudo centinela|DMG-ES}"
+                ],
+                [
+                    "22-23",
+                    "{@item Amuleto a prueba de detección y localización|DMG-ES}"
+                ],
+                [
+                    "24-25",
+                    "{@item Botas élficas|DMG-ES}"
+                ],
+                [
+                    "26-27",
+                    "{@item Botas de zancadas y brincos|DMG-ES}"
+                ],
+                [
+                    "28-29",
+                    "{@item Brazales de arquería|DMG-ES}"
+                ],
+                [
+                    "30-31",
+                    "{@item Broche escudo|DMG-ES}"
+                ],
+                [
+                    "32-33",
+                    "{@item Escoba voladora|DMG-ES}"
+                ],
+                [
+                    "34-35",
+                    "{@item Capa élfica|DMG-ES}"
+                ],
+                [
+                    "36-37",
+                    "{@item Capa de protección|DMG-ES}"
+                ],
+                [
+                    "38-39",
+                    "{@item Guanteletes de fuerza de ogro|DMG-ES}"
+                ],
+                [
+                    "40-41",
+                    "{@item Sombrero de disfraz|DMG-ES}"
+                ],
+                [
+                    "42-43",
+                    "{@item Jabalina del relámpago|DMG-ES}"
+                ],
+                [
+                    "44-45",
+                    "{@item Perla de poder|DMG-ES}"
+                ],
+                [
+                    "46-47",
+                    "{@item Vara del pacto +1|DMG-ES}"
+                ],
+                [
+                    "48-49",
+                    "{@item Babuchas de trepar cual arácnido|DMG-ES}"
+                ],
+                [
+                    "50-51",
+                    "{@item Bastón de la víbora|DMG-ES}"
+                ],
+                [
+                    "52-53",
+                    "{@item Bastón de la pitón|DMG-ES}"
+                ],
+                [
+                    "54-55",
+                    "{@item Espada de la venganza|DMG-ES}"
+                ],
+                [
+                    "56-57",
+                    "{@item Tridente de comandar peces|DMG-ES}"
+                ],
+                [
+                    "58-59",
+                    "{@item Varita de proyectiles mágicos|DMG-ES}"
+                ],
+                [
+                    "60-61",
+                    "{@item Varita del mago de guerra +1|DMG-ES}"
+                ],
+                [
+                    "62-63",
+                    "{@item Varita de telaraña|DMG-ES}"
+                ],
+                [
+                    "64-65",
+                    "{@item Arma de advertencia|DMG-ES}"
+                ],
+                [
+                    "66",
+                    "{@item Cota de malla de adamantina|DMG-ES}"
+                ],
+                [
+                    "67",
+                    "{@item Camisa de malla de adamantina|DMG-ES}"
+                ],
+                [
+                    "68",
+                    "{@item Cota de escamas de adamantina|DMG-ES}"
+                ],
+                [
+                    "69",
+                    "{@item Bolsa de trucos, gris|DMG-ES}"
+                ],
+                [
+                    "70",
+                    "{@item Bolsa de trucos, rojiza|DMG-ES}"
+                ],
+                [
+                    "71",
+                    "{@item Bolsa de trucos, marrón|DMG-ES}"
+                ],
+                [
+                    "72",
+                    "{@item Botas de las tierras invernales|DMG-ES}"
+                ],
+                [
+                    "73",
+                    "{@item Diadema de estallidos|DMG-ES}"
+                ],
+                [
+                    "74",
+                    "{@item Baraja de ilusiones|DMG-ES}"
+                ],
+                [
+                    "75",
+                    "{@item Botella siemprehumeante|DMG-ES}"
+                ],
+                [
+                    "76",
+                    "{@item Anteojos de encantamiento|DMG-ES}"
+                ],
+                [
+                    "77",
+                    "{@item Anteojos de vista de águila|DMG-ES}"
+                ],
+                [
+                    "78",
+                    "{@item Estatuilla de poder maravilloso, Cuervo de plata|DMG-ES}"
+                ],
+                [
+                    "79",
+                    "{@item Gema del resplandor|DMG-ES}"
+                ],
+                [
+                    "80",
+                    "{@item Guantes atrapaflechas|DMG-ES}"
+                ],
+                [
+                    "81",
+                    "{@item Guantes de natación y escalada|DMG-ES}"
+                ],
+                [
+                    "82",
+                    "{@item Guantes de ladrón|DMG-ES}"
+                ],
+                [
+                    "83",
+                    "{@item Diadema de intelecto|DMG-ES}"
+                ],
+                [
+                    "84",
+                    "{@item Yelmo de telepatía|DMG-ES}"
+                ],
+                [
+                    "85",
+                    "{@item Instrumento de los bardos, Laúd de Doss|DMG-ES}"
+                ],
+                [
+                    "86",
+                    "{@item Instrumento de los bardos, Bandura de Fochlucan|DMG-ES}"
+                ],
+                [
+                    "87",
+                    "{@item Instrumento de los bardos, Cistro de Mac-Fuirmidh|DMG-ES}"
+                ],
+                [
+                    "88",
+                    "{@item Medallón de los pensamientos|DMG-ES}"
+                ],
+                [
+                    "89",
+                    "{@item Collar de adaptación|DMG-ES}"
+                ],
+                [
+                    "90",
+                    "{@item Talismán de cerrar heridas|DMG-ES}"
+                ],
+                [
+                    "91",
+                    "{@item Flauta de la aparición|DMG-ES}"
+                ],
+                [
+                    "92",
+                    "{@item Flauta de las cloacas|DMG-ES}"
+                ],
+                [
+                    "93",
+                    "{@item Anillo de salto|DMG-ES}"
+                ],
+                [
+                    "94",
+                    "{@item Anillo de escudo mental|DMG-ES}"
+                ],
+                [
+                    "95",
+                    "{@item Anillo de calidez|DMG-ES}"
+                ],
+                [
+                    "96",
+                    "{@item Anillo de caminar sobre las aguas|DMG-ES}"
+                ],
+                [
+                    "97",
+                    "{@item Carcaj de Ehlonna|DMG-ES}"
+                ],
+                [
+                    "98",
+                    "{@item Piedra de la buena fortuna|DMG-ES}"
+                ],
+                [
+                    "99",
+                    "{@item Abanico del viento|DMG-ES}"
+                ],
+                [
+                    "00",
+                    "{@item Botas aladas|DMG-ES}"
+                ]
+            ]
+        },
+        {
+            "name": "Tabla de Objetos Mágicos G",
+			"caption": "Tabla de Objetos Mágicos G",
+			"source": "DMG-ES",
+            "page": 147,
+            "chapter": {
+                "index": 7,
+                "name": "Tesoro",
+                "ordinal": {
+                    "identifier": 7,
+                    "type": "chapter"
+                }
+            },
+            "colLabels": [
+                "d100",
+                "Objeto mágico"
+            ],
+            "colStyles": [
+                "col-2 text-center",
+                "col-10"
+            ],
+            "rows": [
+                [
+                    "01-11",
+                    "{@item Arma +2|DMG-ES}"
+                ],
+                [
+                    "12-14",
+                    {
+                        "caption": "Estatuilla de poder maravilloso",
+                        "colLabels": [
+                            "d8",
+                            "Objeto mágico"
+                        ],
+                        "colStyles": [
+                            "col-2 text-center",
+                            "col-10"
+                        ],
+                        "data": {
+                            "tableIgnore": true
+                        },
+                        "rows": [
+                            [
+                                "01",
+                                "{@item Estatuilla de poder maravilloso, Grifo de bronce|DMG-ES}"
+                            ],
+                            [
+                                "02",
+                                "{@item Estatuilla de poder maravilloso, Mosca de ébano|DMG-ES}"
+                            ],
+                            [
+                                "03",
+                                "{@item Estatuilla de poder maravilloso, Leones dorados|DMG-ES}"
+                            ],
+                            [
+                                "04",
+                                "{@item Estatuilla de poder maravilloso, Cabras de marfil|DMG-ES}"
+                            ],
+                            [
+                                "05",
+                                "{@item Estatuilla de poder maravilloso, Elefante de mármol|DMG-ES}"
+                            ],
+                            [
+                                "06-07",
+                                "{@item Estatuilla de poder maravilloso, Perro de ónice|DMG-ES}"
+                            ],
+                            [
+                                "08",
+                                "{@item Estatuilla de poder maravilloso, Búho de serpentina|DMG-ES}"
+                            ]
+                        ],
+                        "type": "table"
+                    }
+                ],
+                [
+                    "15",
+                    "{@item Coraza de adamantina|DMG-ES}"
+                ],
+                [
+                    "16",
+                    "{@item Armadura de bandas de adamantina|DMG-ES}"
+                ],
+                [
+                    "17",
+                    "{@item Amuleto de salud|DMG-ES}"
+                ],
+                [
+                    "18",
+                    "{@item Armadura de vulnerabilidad|DMG-ES}"
+                ],
+                [
+                    "19",
+                    "{@item Escudo atrapaflechas|DMG-ES}"
+                ],
+                [
+                    "20",
+                    "{@item Cinturón enano|DMG-ES}"
+                ],
+                [
+                    "21",
+                    "{@item Cinturón de fuerza de gigante de las colinas|DMG-ES}"
+                ],
+                [
+                    "22",
+                    "{@item Hacha berserker|DMG-ES}"
+                ],
+                [
+                    "23",
+                    "{@item Botas de levitación|DMG-ES}"
+                ],
+                [
+                    "24",
+                    "{@item Botas de velocidad|DMG-ES}"
+                ],
+                [
+                    "25",
+                    "{@item Cuenco para controlar elementales de agua|DMG-ES}"
+                ],
+                [
+                    "26",
+                    "{@item Brazales de defensa|DMG-ES}"
+                ],
+                [
+                    "27",
+                    "{@item Brasero para controlar elementales de fuego|DMG-ES}"
+                ],
+                [
+                    "28",
+                    "{@item Capa del charlatán|DMG-ES}"
+                ],
+                [
+                    "29",
+                    "{@item Incensario de controlar elementales de aire|DMG-ES}"
+                ],
+                [
+                    "30",
+                    "{@item Cota de malla +1|DMG-ES}"
+                ],
+                [
+                    "31",
+                    "{@item Armadura de resistencia|DMG-ES|Cota de malla de resistencia|}"
+                ],
+                [
+                    "32",
+                    "{@item Camisa de malla +1|DMG-ES}"
+                ],
+                [
+                    "33",
+                    "{@item Armadura de resistencia|DMG-ES|Camisa de malla de resistencia|}"
+                ],
+                [
+                    "34",
+                    "{@item Capa de desplazamiento|DMG-ES}"
+                ],
+                [
+                    "35",
+                    "{@item Capa de murciélago|DMG-ES}"
+                ],
+                [
+                    "36",
+                    "{@item Cubo de fuerza|DMG-ES}"
+                ],
+                [
+                    "37",
+                    "{@item Fortaleza instantánea de Daern|DMG-ES}"
+                ],
+                [
+                    "38",
+                    "{@item Daga de la ponzoña|DMG-ES}"
+                ],
+                [
+                    "39",
+                    "{@item Grilletes dimensionales|DMG-ES}"
+                ],
+                [
+                    "40",
+                    "{@item Matadragones|DMG-ES}"
+                ],
+                [
+                    "41",
+                    "{@item Malla élfica|DMG-ES}"
+                ],
+                [
+                    "42",
+                    "{@item Lengua de fuego|DMG-ES}"
+                ],
+                [
+                    "43",
+                    "{@item Gema de visión|DMG-ES}"
+                ],
+                [
+                    "44",
+                    "{@item Matagigantes|DMG-ES}"
+                ],
+                [
+                    "45",
+                    "{@item Cuero tachonado encantado|DMG-ES}"
+                ],
+                [
+                    "46",
+                    "{@item Yelmo de teletransporte|DMG-ES}"
+                ],
+                [
+                    "47",
+                    "{@item Cuerno de estallido|DMG-ES}"
+                ],
+                [
+                    "48",
+                    "Cuerno del Valhalla ({@item Cuerno del Valhalla, Plata|DMG-ES|plata|} o {@item Cuerno del Valhalla, Latón|DMG-ES|latón|})"
+                ],
+                [
+                    "49",
+                    "{@item Instrumento de los bardos, Mandolina de Canaith|DMG-ES}"
+                ],
+                [
+                    "50",
+                    "{@item Instrumento de los bardos, Lira de Cli|DMG-ES}"
+                ],
+                [
+                    "51",
+                    "{@item Piedra Ioun, Consciencia|DMG-ES}"
+                ],
+                [
+                    "52",
+                    "{@item Piedra Ioun, Protección|DMG-ES}"
+                ],
+                [
+                    "53",
+                    "{@item Piedra Ioun, Reserva|DMG-ES}"
+                ],
+                [
+                    "54",
+                    "{@item Piedra Ioun, Sustento|DMG-ES}"
+                ],
+                [
+                    "55",
+                    "{@item Bandas de hierro de Bilarro|DMG-ES}"
+                ],
+                [
+                    "56",
+                    "{@item Armadura de cuero +1|DMG-ES}"
+                ],
+                [
+                    "57",
+                    "{@item Armadura de resistencia|DMG-ES|Armadura de cuero de resistencia|}"
+                ],
+                [
+                    "58",
+                    "{@item Maza disruptiva|DMG-ES}"
+                ],
+                [
+                    "59",
+                    "{@item Maza castigadora|DMG-ES}"
+                ],
+                [
+                    "60",
+                    "{@item Maza del terror|DMG-ES}"
+                ],
+                [
+                    "61",
+                    "{@item Manto de resistencia a conjuros|DMG-ES}"
+                ],
+                [
+                    "62",
+                    "{@item Collar de plegarias|DMG-ES}"
+                ],
+                [
+                    "63",
+                    "{@item Colgante de inmunidad al veneno|DMG-ES}"
+                ],
+                [
+                    "64",
+                    "{@item Anillo de influencia animal|DMG-ES}"
+                ],
+                [
+                    "65",
+                    "{@item Anillo de evasión|DMG-ES}"
+                ],
+                [
+                    "66",
+                    "{@item Anillo de caída de pluma|DMG-ES}"
+                ],
+                [
+                    "67",
+                    "{@item Anillo de libertad de acción|DMG-ES}"
+                ],
+                [
+                    "68",
+                    "{@item Anillo de protección|DMG-ES}"
+                ],
+                [
+                    "69",
+                    "{@item Anillo de resistencia|DMG-ES}"
+                ],
+                [
+                    "70",
+                    "{@item Anillo de almacenamiento de conjuros|DMG-ES}"
+                ],
+                [
+                    "71",
+                    "{@item Anillo del carnero|DMG-ES}"
+                ],
+                [
+                    "72",
+                    "{@item Anillo de visión de rayos X|DMG-ES}"
+                ],
+                [
+                    "73",
+                    "{@item Túnica de los ojos|DMG-ES}"
+                ],
+                [
+                    "74",
+                    "{@item Cetro de mando|DMG-ES}"
+                ],
+                [
+                    "75",
+                    "{@item Vara del pacto +2|DMG-ES}"
+                ],
+                [
+                    "76",
+                    "{@item Cuerda enredadora|DMG-ES}"
+                ],
+                [
+                    "77",
+                    "{@item Cota de escamas +1|DMG-ES}"
+                ],
+                [
+                    "78",
+                    "{@item Armadura de resistencia|DMG-ES|Cota de escamas de resistencia|}"
+                ],
+                [
+                    "79",
+                    "{@item Escudo +2|DMG-ES}"
+                ],
+                [
+                    "80",
+                    "{@item Escudo de atraer proyectiles|DMG-ES}"
+                ],
+                [
+                    "81",
+                    "{@item Bastón del cautivador|DMG-ES}"
+                ],
+                [
+                    "82",
+                    "{@item Bastón de curación|DMG-ES}"
+                ],
+                [
+                    "83",
+                    "{@item Bastón de enjambre de insectos|DMG-ES}"
+                ],
+                [
+                    "84",
+                    "{@item Bastón de los bosques|DMG-ES}"
+                ],
+                [
+                    "85",
+                    "{@item Bastón de marchitamiento|DMG-ES}"
+                ],
+                [
+                    "86",
+                    "{@item Piedra de controlar elementales de tierra|DMG-ES}"
+                ],
+                [
+                    "87",
+                    "{@item Espada solar|DMG-ES}"
+                ],
+                [
+                    "88",
+                    "{@item Espada ladrona de vida|DMG-ES}"
+                ],
+                [
+                    "89",
+                    "{@item Espada hiriente|DMG-ES}"
+                ],
+                [
+                    "90",
+                    "{@item Vara de tentáculos|DMG-ES}"
+                ],
+                [
+                    "91",
+                    "{@item Arma feroz|DMG-ES}"
+                ],
+                [
+                    "92",
+                    "{@item Varita de atadura|DMG-ES}"
+                ],
+                [
+                    "93",
+                    "{@item Varita de detectar enemigos|DMG-ES}"
+                ],
+                [
+                    "94",
+                    "{@item Varita del terror|DMG-ES}"
+                ],
+                [
+                    "95",
+                    "{@item Varita de bolas de fuego|DMG-ES}"
+                ],
+                [
+                    "96",
+                    "{@item Varita de relámpagos|DMG-ES}"
+                ],
+                [
+                    "97",
+                    "{@item Varita de parálisis|DMG-ES}"
+                ],
+                [
+                    "98",
+                    "{@item Varita del mago de guerra +2|DMG-ES}"
+                ],
+                [
+                    "99",
+                    "{@item Varita de las maravillas|DMG-ES}"
+                ],
+                [
+                    "00",
+                    "{@item Alas de vuelo|DMG-ES}"
+                ]
+            ]
+        },
+        {
+            "name": "Tabla de Objetos Mágicos H",
+			"caption": "Tabla de Objetos Mágicos H",
+			"source": "DMG-ES",
+            "page": 148,
+            "chapter": {
+                "index": 7,
+                "name": "Tesoro",
+                "ordinal": {
+                    "identifier": 7,
+                    "type": "chapter"
+                }
+            },
+            "colLabels": [
+                "d100",
+                "Objeto mágico"
+            ],
+            "colStyles": [
+                "col-2 text-center",
+                "col-10"
+            ],
+            "rows": [
+                [
+                    "01-10",
+                    "{@item Arma +3|DMG-ES}"
+                ],
+                [
+                    "11-12",
+                    "{@item Amuleto de los planos|DMG-ES}"
+                ],
+                [
+                    "13-14",
+                    "{@item Alfombra voladora|DMG-ES}"
+                ],
+                [
+                    "15-16",
+                    "{@item Bola de cristal|DMG-ES}"
+                ],
+                [
+                    "17-18",
+                    "{@item Anillo de regeneración|DMG-ES}"
+                ],
+                [
+                    "19-20",
+                    "{@item Anillo de estrellas fugaces|DMG-ES}"
+                ],
+                [
+                    "21-22",
+                    "{@item Anillo de telequinesis|DMG-ES}"
+                ],
+                [
+                    "23-24",
+                    "{@item Túnica de colores hipnóticos|DMG-ES}"
+                ],
+                [
+                    "25-26",
+                    "{@item Túnica de las estrellas|DMG-ES}"
+                ],
+                [
+                    "27-28",
+                    "{@item Vara de la absorción|DMG-ES}"
+                ],
+                [
+                    "29-30",
+                    "{@item Vara de la alerta|DMG-ES}"
+                ],
+                [
+                    "31-32",
+                    "{@item Vara de la seguridad|DMG-ES}"
+                ],
+                [
+                    "33-34",
+                    "{@item Vara del pacto +3|DMG-ES}"
+                ],
+                [
+                    "35-36",
+                    "{@item Cimitarra de velocidad|DMG-ES}"
+                ],
+                [
+                    "37-38",
+                    "{@item Escudo +3|DMG-ES}"
+                ],
+                [
+                    "39-40",
+                    "{@item Bastón de fuego|DMG-ES}"
+                ],
+                [
+                    "41-42",
+                    "{@item Bastón de escarcha|DMG-ES}"
+                ],
+                [
+                    "43-44",
+                    "{@item Bastón de poder|DMG-ES}"
+                ],
+                [
+                    "45-46",
+                    "{@item Bastón de impacto|DMG-ES}"
+                ],
+                [
+                    "47-48",
+                    "{@item Bastón de truenos y relámpagos|DMG-ES}"
+                ],
+                [
+                    "49-50",
+                    "{@item Espada de hoja afilada|DMG-ES}"
+                ],
+                [
+                    "51-52",
+                    "{@item Varita de polimorfar|DMG-ES}"
+                ],
+                [
+                    "53-54",
+                    "{@item Varita del mago de guerra +3|DMG-ES}"
+                ],
+                [
+                    "55",
+                    "{@item Media armadura de adamantina|DMG-ES}"
+                ],
+                [
+                    "56",
+                    "{@item Armadura de placas de adamantina|DMG-ES}"
+                ],
+                [
+                    "57",
+                    "{@item Escudo animado|DMG-ES}"
+                ],
+                [
+                    "58",
+                    "{@item Cinturón de fuerza de gigante de fuego|DMG-ES}"
+                ],
+                [
+                    "59",
+                    "Cinturón de fuerza de gigante de {@item Cinturón de fuerza de gigante de escarcha|DMG-ES|escarcha|} o {@item Cinturón de fuerza de gigante de piedra|DMG-ES|piedra|}"
+                ],
+                [
+                    "60",
+                    "{@item Coraza +1|DMG-ES}"
+                ],
+                [
+                    "61",
+                    "{@item Armadura de resistencia|DMG-ES|Coraza de resistencia|}"
+                ],
+                [
+                    "62",
+                    "{@item Vela de invocación|DMG-ES}"
+                ],
+                [
+                    "63",
+                    "{@item Cota de malla +2|DMG-ES}"
+                ],
+                [
+                    "64",
+                    "{@item Camisa de malla +2|DMG-ES}"
+                ],
+                [
+                    "65",
+                    "{@item Capa arácnida|DMG-ES}"
+                ],
+                [
+                    "66",
+                    "{@item Espada danzarina|DMG-ES}"
+                ],
+                [
+                    "67",
+                    "{@item Armadura demoníaca|DMG-ES}"
+                ],
+                [
+                    "68",
+                    "{@item Cota de escamas de dragón|DMG-ES}"
+                ],
+                [
+                    "69",
+                    "{@item Armadura de placas enana|DMG-ES}"
+                ],
+                [
+                    "70",
+                    "{@item Martillo arrojadizo enano|DMG-ES}"
+                ],
+                [
+                    "71",
+                    "{@item Botella de ifrit|DMG-ES}"
+                ],
+                [
+                    "72",
+                    "{@item Estatuilla de poder maravilloso, Corcel de obsidiana|DMG-ES}"
+                ],
+                [
+                    "73",
+                    "{@item Hierro de escarcha|DMG-ES}"
+                ],
+                [
+                    "74",
+                    "{@item Yelmo de fulgor|DMG-ES}"
+                ],
+                [
+                    "75",
+                    "{@item Cuerno del Valhalla, Bronce|DMG-ES}"
+                ],
+                [
+                    "76",
+                    "{@item Instrumento de los bardos, Arpa de Anstruth|DMG-ES}"
+                ],
+                [
+                    "77",
+                    "{@item Piedra Ioun, Absorción|DMG-ES}"
+                ],
+                [
+                    "78",
+                    "{@item Piedra Ioun, Agilidad|DMG-ES}"
+                ],
+                [
+                    "79",
+                    "{@item Piedra Ioun, Fortaleza|DMG-ES}"
+                ],
+                [
+                    "80",
+                    "{@item Piedra Ioun, Perspicacia|DMG-ES}"
+                ],
+                [
+                    "81",
+                    "{@item Piedra Ioun, Intelecto|DMG-ES}"
+                ],
+                [
+                    "82",
+                    "{@item Piedra Ioun, Liderazgo|DMG-ES}"
+                ],
+                [
+                    "83",
+                    "{@item Piedra Ioun, Fuerza|DMG-ES}"
+                ],
+                [
+                    "84",
+                    "{@item Armadura de cuero +2|DMG-ES}"
+                ],
+                [
+                    "85",
+                    "{@item Manual de la salud corporal|DMG-ES}"
+                ],
+                [
+                    "86",
+                    "{@item Manual del ejercicio beneficioso|DMG-ES}"
+                ],
+                [
+                    "87",
+                    "{@item Manual de gólems|DMG-ES}"
+                ],
+                [
+                    "88",
+                    "{@item Manual de rapidez de acción|DMG-ES}"
+                ],
+                [
+                    "89",
+                    "{@item Espejo atrapavidas|DMG-ES}"
+                ],
+                [
+                    "90",
+                    "{@item Ladrona de nueve vidas|DMG-ES}"
+                ],
+                [
+                    "91",
+                    "{@item Arco juramentado|DMG-ES}"
+                ],
+                [
+                    "92",
+                    "{@item Cota de escamas +2|DMG-ES}"
+                ],
+                [
+                    "93",
+                    "{@item Escudo de guarda contra conjuros|DMG-ES}"
+                ],
+                [
+                    "94",
+                    "{@item Armadura de bandas +1|DMG-ES}"
+                ],
+                [
+                    "95",
+                    "{@item Armadura de resistencia|DMG-ES|Armadura de bandas de resistencia|}"
+                ],
+                [
+                    "96",
+                    "{@item Armadura de cuero tachonado +1|DMG-ES}"
+                ],
+                [
+                    "97",
+                    "{@item Armadura de resistencia|DMG-ES|Armadura de cuero tachonado de resistencia|}"
+                ],
+                [
+                    "98",
+                    "{@item Tomo de pensamiento claro|DMG-ES}"
+                ],
+                [
+                    "99",
+                    "{@item Tomo de liderazgo e influencia|DMG-ES}"
+                ],
+                [
+                    "00",
+                    "{@item Tomo de entendimiento|DMG-ES}"
+                ]
+            ]
+        },
+        {
+            "name": "Tabla de Objetos Mágicos I",
+			"caption": "Tabla de Objetos Mágicos I",
+			"source": "DMG-ES",
+            "page": 149,
+            "chapter": {
+                "index": 7,
+                "name": "Tesoro",
+                "ordinal": {
+                    "identifier": 7,
+                    "type": "chapter"
+                }
+            },
+            "colLabels": [
+                "d100",
+                "Objeto mágico"
+            ],
+            "colStyles": [
+                "col-2 text-center",
+                "col-10"
+            ],
+            "rows": [
+                [
+                    "01-05",
+                    "{@item Defensora|DMG-ES}"
+                ],
+                [
+                    "06-10",
+                    "{@item Martillo de rayos|DMG-ES}"
+                ],
+                [
+                    "11-15",
+                    "{@item Filo de la fortuna|DMG-ES}"
+                ],
+                [
+                    "16-20",
+                    "{@item Espada de la respuesta|DMG-ES}"
+                ],
+                [
+                    "21-23",
+                    "{@item Vengadora sagrada|DMG-ES}"
+                ],
+                [
+                    "24-26",
+                    "{@item Anillo de invocar djinns|DMG-ES}"
+                ],
+                [
+                    "27-29",
+                    "{@item Anillo de invisibilidad|DMG-ES}"
+                ],
+                [
+                    "30-32",
+                    "{@item Anillo de retorno de conjuros|DMG-ES}"
+                ],
+                [
+                    "33-35",
+                    "{@item Cetro de poder señorial|DMG-ES}"
+                ],
+                [
+                    "36-38",
+                    "{@item Bastón de los magos|DMG-ES}"
+                ],
+                [
+                    "39-41",
+                    "{@item Espada vorpal|DMG-ES}"
+                ],
+                [
+                    "42-43",
+                    "{@item Cinturón de fuerza de gigante de las nubes|DMG-ES}"
+                ],
+                [
+                    "44-45",
+                    "{@item Coraza +2|DMG-ES}"
+                ],
+                [
+                    "46-47",
+                    "{@item Cota de malla +3|DMG-ES}"
+                ],
+                [
+                    "48-49",
+                    "{@item Camisa de malla +3|DMG-ES}"
+                ],
+                [
+                    "50-51",
+                    "{@item Capa de invisibilidad|DMG-ES}"
+                ],
+                [
+                    "52-53",
+                    "{@item Bola de cristal (versión legendaria)|DMG-ES}"
+                ],
+                [
+                    "54-55",
+                    "{@item Media armadura +1|DMG-ES}"
+                ],
+                [
+                    "56-57",
+                    "{@item Frasco de hierro|DMG-ES}"
+                ],
+                [
+                    "58-59",
+                    "{@item Armadura de cuero +3|DMG-ES}"
+                ],
+                [
+                    "60-61",
+                    "{@item Armadura de placas +1|DMG-ES}"
+                ],
+                [
+                    "62-63",
+                    "{@item Túnica del archimago|DMG-ES}"
+                ],
+                [
+                    "64-65",
+                    "{@item Vara de la resurrección|DMG-ES}"
+                ],
+                [
+                    "66-67",
+                    "{@item Cota de escamas +1|DMG-ES}"
+                ],
+                [
+                    "68-69",
+                    "{@item Escarabajo protector|DMG-ES}"
+                ],
+                [
+                    "70-71",
+                    "{@item Armadura de bandas +2|DMG-ES}"
+                ],
+                [
+                    "72-73",
+                    "{@item Armadura de cuero +2|DMG-ES}"
+                ],
+                [
+                    "74-75",
+                    "{@item Pozo de los muchos mundos|DMG-ES}"
+                ],
+                [
+                    "76",
+                    {
+                        "caption": "Armadura mágica",
+                        "colLabels": [
+                            "1d12",
+                            ""
+                        ],
+                        "colStyles": [
+                            "col-2 text-center",
+                            "col-10"
+                        ],
+                        "data": {
+                            "tableIgnore": true
+                        },
+                        "rows": [
+                            [
+                                "1-2",
+                                "{@item Media armadura +2|DMG-ES}"
+                            ],
+                            [
+                                "3-4",
+                                "{@item Armadura de placas +2|DMG-ES}"
+                            ],
+                            [
+                                "5-6",
+                                "{@item Armadura de cuero tachonado +3|DMG-ES}"
+                            ],
+                            [
+                                "7-8",
+                                "{@item Coraza +3|DMG-ES}"
+                            ],
+                            [
+                                "9-10",
+                                "{@item Armadura de bandas +3|DMG-ES}"
+                            ],
+                            [
+                                "11",
+                                "{@item Media armadura +3|DMG-ES}"
+                            ],
+                            [
+                                "12",
+                                "{@item Armadura de placas +3|DMG-ES}"
+                            ]
+                        ],
+                        "type": "table"
+                    }
+                ],
+                [
+                    "77",
+                    "{@item Aparato de Kwalish|DMG-ES}"
+                ],
+                [
+                    "78",
+                    "{@item Armadura de invulnerabilidad|DMG-ES}"
+                ],
+                [
+                    "79",
+                    "{@item Cinturón de fuerza de gigante de las tormentas|DMG-ES}"
+                ],
+                [
+                    "80",
+                    "{@item Portal cúbico|DMG-ES}"
+                ],
+                [
+                    "81",
+                    "{@item Baraja de múltiples cosas|DMG-ES}"
+                ],
+                [
+                    "82",
+                    "{@item Malla de ifrit|DMG-ES}"
+                ],
+                [
+                    "83",
+                    "{@item Armadura de resistencia|DMG-ES|Media armadura de resistencia|}"
+                ],
+                [
+                    "84",
+                    "{@item Cuerno del Valhalla, Hierro|DMG-ES}"
+                ],
+                [
+                    "85",
+                    "{@item Instrumento de los bardos, Arpa de Ollamh|DMG-ES}"
+                ],
+                [
+                    "86",
+                    "{@item Piedra Ioun, Absorción mayor|DMG-ES}"
+                ],
+                [
+                    "87",
+                    "{@item Piedra Ioun, Maestría|DMG-ES}"
+                ],
+                [
+                    "88",
+                    "{@item Piedra Ioun, Regeneración|DMG-ES}"
+                ],
+                [
+                    "89",
+                    "{@item Armadura de placas de etereidad|DMG-ES}"
+                ],
+                [
+                    "90",
+                    "{@item Armadura de resistencia|DMG-ES|Armadura de placas de resistencia|}"
+                ],
+                [
+                    "91",
+                    "{@item Anillo de comandar elementales de aire|DMG-ES}"
+                ],
+                [
+                    "92",
+                    "{@item Anillo de comandar elementales de tierra|DMG-ES}"
+                ],
+                [
+                    "93",
+                    "{@item Anillo de comandar elementales de fuego|DMG-ES}"
+                ],
+                [
+                    "94",
+                    "{@item Anillo de los tres deseos|DMG-ES}"
+                ],
+                [
+                    "95",
+                    "{@item Anillo de comandar elementales de agua|DMG-ES}"
+                ],
+                [
+                    "96",
+                    "{@item Esfera de aniquilación|DMG-ES}"
+                ],
+                [
+                    "97",
+                    "{@item Talismán del bien puro|DMG-ES}"
+                ],
+                [
+                    "98",
+                    "{@item Talismán de la esfera|DMG-ES}"
+                ],
+                [
+                    "99",
+                    "{@item Talismán del mal definitivo|DMG-ES}"
+                ],
+                [
+                    "00",
+                    "{@item Tomo de la lengua detenida|DMG-ES}"
+                ]
+            ]
+        },
+		{
+			"name": "Propiedades de los artefactos; Propiedades beneficiosas menores",
+			"caption": "Propiedades beneficiosas menores",
+			"source": "DMG-ES",
+            "page": 219,
+            "chapter": {
+                "index": 7,
+                "name": "Tesoro",
+                "ordinal": {
+                    "identifier": 7,
+                    "type": "chapter"
+                }
+            },
+            "colLabels": [
+                "d100",
+                "Propiedad"
+            ],
+            "colStyles": [
+                "col-2 text-center",
+                "col-10"
+            ],
+            "rows": [
+                [
+                    "01-20",
+                    "Mientras estés sintonizado con el artefacto, te vuelves competente con una habilidad a elección del DM."
+                ],
+                [
+                    "21-30",
+                    "Mientras estés sintonizado con el artefacto, eres inmune a enfermedades."
+                ],
+                [
+                    "31-40",
+					"Mientras estés sintonizado con el artefacto, no puedes ser {@condition hechizado|PHB-ES} ni {@condition asustado|PHB-ES}."
+                ],
+                [
+                    "41-50",
+                    "Mientras estés sintonizado con el artefacto tienes resistencia a un tipo de daño a elección del DM."
+                ],
+                [
+                    "51-60",
+					"Mientras estés sintonizado con el artefacto puedes usar una acción para lanzar un {@filter truco|spells|level=0} desde él (elegido por el DM)."
+                ],
+                [
+                    "61-70",
+					"Mientras estés sintonizado con el artefacto, puedes usar una acción para lanzar un conjuro de {@filter nivel 1|spells|level=1} desde él (elegido por el DM). Después de lanzar el conjuro, tira {@dice 1d6}. Con una tirada de 1-5, no podrás volver a lanzarlo hasta el siguiente amanecer."
+                ],
+                [
+                    "71-80",
+					"Como la propiedad de 61-70, excepto que el conjuro es de {@filter nivel 2|spells|level=2}."
+                ],
+                [
+                    "81-90",
+					"Como la propiedad de 61-70, excepto que el conjuro es de {@filter nivel 3|spells|level=3}."
+                ],
+                [
+                    "91-00",
+                    "Mientras estés sintonizado con el artefacto ganas un bonificador de +1 a tu Clase de Armadura."
+                ]
+            ]
+        },
+		{
+			"name": "Propiedades de los artefactos; Propiedades beneficiosas mayores",
+			"caption": "Propiedades beneficiosas mayores",
+			"source": "DMG-ES",
+            "page": 219,
+            "chapter": {
+                "index": 7,
+                "name": "Tesoro",
+                "ordinal": {
+                    "identifier": 7,
+                    "type": "chapter"
+                }
+            },
+            "colLabels": [
+                "d100",
+                "Propiedad"
+            ],
+            "colStyles": [
+                "col-2 text-center",
+                "col-10"
+            ],
+            "rows": [
+                [
+                    "01-20",
+                    "Mientras estés sintonizado con el artefacto, una de tus puntuaciones de característica (a elección del DM) aumenta en 2, hasta un máximo de 24."
+                ],
+                [
+                    "21-30",
+					"Mientras estés sintonizado con el artefacto, siempre que tengas al menos 1 punto de golpe, recuperas {@dice 1d6} puntos de golpe al principio de tu turno."
+                ],
+                [
+                    "31-40",
+					"Mientras estés sintonizado con el artefacto, siempre que impactes con un ataque con arma, el objetivo recibe {@dice 1d6} de daño adicional del mismo tipo que el infligido por el arma."
+                ],
+                [
+                    "41-50",
+                    "Mientras estés sintonizado con el artefacto, tu velocidad caminando aumenta en 10 pies."
+                ],
+                [
+                    "51-60",
+					"Mientras estés sintonizado con el artefacto, puedes usar una acción para lanzar un conjuro de {@filter nivel 4|spells|level=4} desde él (elegido por el DM). Después de lanzar el conjuro, tira {@dice 1d6}. Con una tirada de 1-5, no podrás volver a lanzarlo hasta el siguiente amanecer."
+                ],
+                [
+                    "61-70",
+					"Como la propiedad de 51-60, excepto que el conjuro es de {@filter nivel 5|spells|level=5}."
+                ],
+                [
+                    "71-80",
+					"Como la propiedad de 51-60, excepto que el conjuro es de {@filter nivel 6|spells|level=6}."
+                ],
+                [
+                    "81-90",
+					"Como la propiedad de 51-60, excepto que el conjuro es de {@filter nivel 7|spells|level=7}."
+                ],
+                [
+                    "91-00",
+					"Mientras estés sintonizado con el artefacto, no puedes ser {@condition cegado|PHB-ES}, {@condition ensordecido|PHB-ES}, {@condition petrificado|PHB-ES} o {@condition aturdido|PHB-ES}."
+                ]
+            ]
+        },
+		{
+			"name": "Propiedades de los artefactos; Propiedades perjudiciales menores",
+			"caption": "Propiedades perjudiciales menores",
+			"source": "DMG-ES",
+            "page": 220,
+            "chapter": {
+                "index": 7,
+                "name": "Tesoro",
+                "ordinal": {
+                    "identifier": 7,
+                    "type": "chapter"
+                }
+            },
+            "colLabels": [
+                "d100",
+                "Propiedad"
+            ],
+            "colStyles": [
+                "col-2 text-center",
+                "col-10"
+            ],
+            "rows": [
+                [
+                    "01-05",
+                    "Mientras estés sintonizado con el artefacto, tienes desventaja en tiradas de salvación contra conjuros."
+                ],
+                [
+                    "06-10",
+                    "La primera vez que toques una gema o joya mientras estés sintonizado con el artefacto, el valor de esa gema o joya quedará reducido a la mitad."
+                ],
+                [
+                    "11-15",
+					"Mientras estés sintonizado con el artefacto, te verás {@condition cegado|PHB-ES} siempre que estés a más de 10 pies de él."
+                ],
+                [
+                    "16-20",
+                    "Mientras estés sintonizado con el artefacto, tendrás desventaja en las tiradas de salvación contra veneno."
+                ],
+                [
+                    "21-30",
+                    "Mientras estés sintonizado con el artefacto, emites un hedor agrio perceptible a 10 pies."
+                ],
+                [
+                    "31-35",
+                    "Mientras estés sintonizado con el artefacto, toda el agua bendita que se encuentre dentro de un radio de 10 pies alrededor de ti queda destruida."
+                ],
+                [
+                    "36-40",
+                    "Mientras estés sintonizado con el artefacto, te sentirás enfermo y tendrás desventaja en cualquier prueba de característica o tirada de salvación que utilice Fuerza o Constitución."
+                ],
+                [
+                    "41-45",
+					"Mientras estés sintonizado con el artefacto, tu peso se incrementa en {@dice 1d4 \u00d7 10} libras."
+                ],
+                [
+                    "46-50",
+                    "Mientras estés sintonizado con el artefacto, tu apariencia cambia según decida el DM."
+                ],
+                [
+                    "51-55",
+					"Mientras estés sintonizado con el artefacto, quedas {@condition ensordecido|PHB-ES} siempre que estés a más de 10 pies de él."
+                ],
+                [
+                    "56-60",
+					"Mientras estés sintonizado con el artefacto, tu peso se reduce en {@dice 1d4 \u00d7 5} libras."
+                ],
+                [
+                    "61-65",
+                    "Mientras estés sintonizado con el artefacto, perderás el olfato."
+                ],
+                [
+                    "66-70",
+                    "Mientras estés sintonizado con el artefacto, extinguirás todas las llamas no mágicas que se encuentren a 30 pies o menos de ti."
+                ],
+                [
+                    "71-80",
+                    "Mientras estés sintonizado con el artefacto, el resto de criaturas no pueden hacer descansos cortos o largos estando a 300 pies o menos de ti."
+                ],
+                [
+                    "81-85",
+					"Mientras estés sintonizado con el artefacto, infliges {@dice 1d6} de daño necrótico a cualquier planta que toques que no sea una criatura"
+                ],
+                [
+                    "86-90",
+                    "Mientras estés sintonizado con el artefacto, los animales que se encuentren a 30 pies o menos se mostrarán hostiles hacia ti."
+                ],
+                [
+                    "91-95",
+                    "Mientras estés sintonizado con el artefacto, cada día deberás comer y beber seis veces más de lo normal."
+                ],
+                [
+                    "96-00",
+                    "Mientras estés sintonizado con el artefacto, tu defecto se exagera de una manera que determinará el DM."
+                ]
+            ]
+        },
+        {
+            "name": "Propiedades de los artefactos; Propiedades perjudiciales mayores",
+			"caption": "Propiedades perjudiciales mayores",
+			"source": "DMG-ES",
+            "page": 220,
+            "chapter": {
+                "index": 7,
+                "name": "Tesoro",
+                "ordinal": {
+                    "identifier": 7,
+                    "type": "chapter"
+                }
+            },
+            "colLabels": [
+                "d100",
+                "Propiedad"
+            ],
+            "colStyles": [
+                "col-2 text-center",
+                "col-10"
+            ],
+            "rows": [
+                [
+                    "01-05",
+					"Mientras estés sintonizado con el artefacto, tu cuerpo se pudre a lo largo de cuatro días, tras lo cual la transformación para. El primer día perderás tu pelo; el segundo las puntas de los dedos de manos y pies; labios y nariz el tercer día; y las orejas al final del cuarto día. El conjuro {@spell regenerar|PHB-ES} recupera todas las partes del cuerpo perdidas."
+                ],
+                [
+                    "06-10",
+					"Mientras estés sintonizado con el artefacto, determinas tu alineamiento cada día, al amanecer, tirando {@dice 1d6} dos veces. En la primera tirada, 1-2 indica legal, 3-4 neutral y 5-6 caótico. En la segunda tirada, 1-2 indica bueno, 3-4 neutral y 5-6 malvado."
+                ],
+                [
+                    "11-15",
+					"Cuando te sintonizas con el artefacto por primera vez, este te encarga una misión elegida por el DM. Debes completarla como si estuvieras afectado por el conjuro {@spell geas|PHB-ES}. Una vez la completes, esta propiedad dejará de afectarte."
+                ],
+                [
+                    "16-20",
+					"El artefacto aloja a una fuerza vital sin cuerpo, hostil hacia ti. Cada vez que utilices una acción para usar una de las propiedades del artefacto, hay un {@chance 50|50 %} de probabilidades de que la fuerza vital intente abandonar el artefacto y entrar en tu cuerpo. Si fallas una tirada de salvación de Carisma CD 20, tiene éxito, y te conviertes en un PNJ bajo el control del DM hasta que esta fuerza vital intrusa sea exorcizada empleando magia como la del conjuro {@spell disipar el bien y el mal|PHB-ES}."
+                ],
+                [
+                    "21-25",
+                    "Las criaturas con un valor de desafío de 0, así como las plantas que no sean criaturas, verán sus puntos de golpe reducidos a 0 cuando estén a 10 pies o menos del artefacto."
+                ],
+                [
+                    "26-30",
+					"El artefacto encierra en su interior a un {@creature slaad de la muerte|MM-ES} (consulta el Monster Manual). Cada vez que utilices una acción para hacer uso de una de las propiedades del artefacto, el slaad tendrá un {@chance 10|10 %} de probabilidades de escapar. Si esto sucede, aparecerá en un punto a 15 pies o menos de ti y te atacará."
+                ],
+                [
+                    "31-35",
+                    "Mientras estés sintonizado con el artefacto, las criaturas de un tipo particular que no sea humanoide (elegido por el DM) serán siempre hostiles hacia ti."
+                ],
+                [
+                    "36-40",
+                    "El artefacto diluye las pociones mágicas que se encuentren a 10 pies del mismo, haciendo que pierdan su magia."
+                ],
+                [
+                    "41-45",
+                    "El artefacto borra los pergaminos mágicos que se encuentren a 10 pies del mismo, haciendo que pierdan su magia."
+                ],
+                [
+                    "46-50",
+					"Antes de emplear una acción para usar una de las propiedades del artefacto, debes utilizar una acción adicional para hacerte sangrar a ti o a una criatura voluntaria o incapacitada dentro de tu alcance, empleando un arma perforante o cortante para ello. El sujeto recibe {@dice 1d4} de daño del tipo adecuado."
+                ],
+                [
+                    "51-60",
+					"Cuando te sintonizas con el artefacto, adquieres una {@book locura a largo plazo|dmg|8|efectos de la locura} (consulta el capítulo 8, \"Dirigir el juego\")."
+                ],
+                [
+                    "61-65",
+					"Recibes {@dice 4d10} de daño psíquico al sintonizarle con el artefacto."
+                ],
+                [
+                    "66-70",
+                    "Recibes {@dice 8d10} de daño psíquico al sintonizarle con el artefacto."
+                ],
+                [
+                    "71-75",
+                    "Antes de poder sintonizarte con el artefacto, debes matar a una criatura de tu alineamiento."
+                ],
+                [
+                    "76-80",
+					"Cuando te sintonizas con el artefacto, una de tus puntuaciones de característica elegida al azar se ve reducida en 2. El conjuro {@spell restablecimiento mayor|PHB-ES} devolverá la puntuación a la normalidad."
+                ],
+                [
+                    "81-85",
+					"Cada vez que te sintonices con el artefacto, envejeces {@dice 3d10} años. Deberás tener éxito en una tirada de salvación CD 10 o morirás de la conmoción. Si mueres, te transformas inmediatamente en un {@creature tumulario|MM-ES} (ver el Monster Manual) que ha jurado proteger el artefacto, controlado por el DM."
+                ],
+                [
+                    "86-90",
+                    "Mientras estés sintonizado con el artefacto, pierdes la facultad de hablar."
+                ],
+                [
+                    "91-95",
+                    "Mientras estés sintonizado con el artefacto, eres vulnerable a todo el daño."
+                ],
+                [
+                    "96-00",
+					"Cuando te sintonizas con el artefacto, hay un {@chance 10|10 %} de probabilidades de atraer la atención de un dios, que enviará a un avatar para que te lo arrebate. El avatar tiene el alineamiento de su creador y el perfil de un {@creature empíreo|MM-ES} (ver el Monster Manual). Una vez obtenga el artefacto, el avatar desaparecerá."
+                ]
+            ]
+        }
 	]
 }

@@ -1,0 +1,463 @@
+{
+	"spell": [
+		{
+			"name": "Zancada de Ashardalon",
+			"source": "FTD-ES",
+			"page": 22,
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Las llamas que exhala un dragón surgen de tus pies y te otorgan una velocidad explosiva. Hasta que el conjuro termine, tu velocidad aumenta en 20 pies y moverte no provoca ataques de oportunidad.",
+				"Cuando te mueves a 5 pies o menos de una criatura o de un objeto que no lleve o vista nadie, recibe {@damage 1d6} de daño de fuego por tu rastro candente. Una criatura u objeto solo puede sufrir este daño una vez durante un turno."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"Cuando lanzas este conjuro mediante un espacio de conjuro de nivel 4 o superior, la velocidad aumenta en 5 pies por cada nivel por encima de 3 que tenga el espacio que hayas empleado. El conjuro inflige {@scaledamage 1d6|3-9|1d6} de daño de fuego adicional por cada nivel por encima de 3 que tenga el espacio que hayas empleado."
+					]
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"miscTags": [
+				"OBJ"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "spells/FTD/Ashardalon's Stride.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Transformación dracónica",
+			"source": "FTD-ES",
+			"page": 21,
+			"level": 7,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "una estatuilla de un dragón que valga al menos 500 po",
+					"cost": 50000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Con un rugido, utilizas la magia de los dragones para transformarte y adoptas rasgos dracónicos. Hasta que el conjuro termine, obtienes los siguientes beneficios:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Alas",
+							"entries": [
+								"De tu espalda brotan unas alas incorpóreas que te proporcionan una velocidad volando de 60 pies."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Ataque de aliento",
+							"entries": [
+								"Cuando lanzas este conjuro, y como acción adicional en los siguientes turnos hasta que el conjuro termine, puedes exhalar una energía resplandeciente en un cono de 60 pies. Todas las criaturas situadas en la zona deberán hacer una tirada de salvación de Destreza; sufrirán {@damage 6d8} de daño de fuerza si la fallan o la mitad del daño si la superan."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Visión ciega",
+							"entries": [
+								"Tienes {@sense visión ciega|PHB-ES} hasta 30 pies. Dentro de ese alcance, puedes ver cualquier cosa que no esté tras una cobertura completa, incluso si estás {@condition cegado|PHB-ES} o en oscuridad. Además, puedes ver a las criaturas {@condition invisible|PHB-ES|invisibles}, a no ser que consigan esconderse."
+							]
+						}
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SGT",
+				"UBA"
+			]
+		},
+		{
+			"name": "Escudo de platino de Fizban",
+			"source": "FTD-ES",
+			"page": 19,
+			"level": 6,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "una escama de dragón chapada en platino que valga al menos 500 po",
+					"cost": 50000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Creas un campo de luz plateada que rodea a una criatura de tu elección dentro del alcance (puedes elegirte a ti mismo). El campo emite luz tenue hasta 5 pies. Mientras una criatura esté rodeada por este campo, obtiene los siguientes beneficios:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Cobertura",
+							"entries": [
+								"La criatura tiene cobertura media."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Evasión",
+							"entries": [
+								"Si la criatura sufre un efecto que le permita hacer una tirada de salvación de Destreza para sufrir solo la mitad de daño, no recibe ningún daño si la supera y solo sufre la mitad si la falla."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Resistencia al daño",
+							"entries": [
+								"La criatura tiene resistencia al daño de ácido, frío, fuego, relámpago y veneno."
+							]
+						}
+					]
+				},
+				"Como acción adicional en los siguientes turnos, puedes mover el campo a otra criatura que esté a 60 pies o menos del campo."
+			],
+			"miscTags": [
+				"UBA"
+			]
+		},
+		{
+			"name": "Travesura de Nathair",
+			"source": "FTD-ES",
+			"page": 21,
+			"level": 2,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "un trozo de corteza de una tarta de manzana"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Llenas con magia feérica y dracónica un cubo de 20 pies que puedas ver dentro del alcance. Tira en la tabla \"Travesura súbita\" para determinar el efecto mágico producido y tira de nuevo al principio de cada uno de tus turnos hasta que el conjuro termine. Puedes mover el cubo hasta 10 pies antes de tirar.",
+				{
+					"type": "table",
+					"caption": "Travesura súbita",
+					"colLabels": [
+						"d4",
+						"Efecto"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"El olor a tarta de manzana impregna el ambiente y todas las criaturas situadas en el cubo deberán superar una tirada de salvación de Sabiduría o quedarán {@condition hechizado|PHB-ES|hechizadas} por ti hasta el principio de tu siguiente turno."
+						],
+						[
+							"2",
+							"Aparecen ramos de flores por doquier y todas las criaturas situadas en el cubo deberán superar una tirada de salvación de Destreza o quedarán {@condition cegado|PHB-ES|cegadas} hasta el principio de tu siguiente turno mientras las flores les rocían agua en la cara."
+						],
+						[
+							"3",
+							"Todas las criaturas situadas en el cubo deberán superar una tirada de salvación de Sabiduría o les dará la risa tonta hasta el principio de tu siguiente turno. Una criatura con la risa tonta estará {@condition incapacitado|PHB-ES|incapacitada} y usará todo su movimiento para moverse en una dirección aleatoria."
+						],
+						[
+							"4",
+							"Gotas de melaza flotan en el cubo, lo que lo convierte en {@book terreno difícil|PHB-ES|9|terreno difícil} hasta el principio de tu siguiente turno."
+						]
+					]
+				}
+			],
+			"savingThrow": [
+				"dexterity",
+				"wisdom"
+			],
+			"miscTags": [
+				"RO",
+				"SGT"
+			]
+		},
+		{
+			"name": "Lanza psíquica de Raulothim",
+			"source": "FTD-ES",
+			"page": 21,
+			"level": 4,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Arrojas una lanza centelleante de poder psíquico desde la frente contra una criatura que puedas ver dentro del alcance. De forma alternativa, puedes pronunciar el nombre de una criatura. Si está al alcance, se convierte en el objetivo del conjuro aunque no la puedas ver. Si no está al alcance, la lanza se desvanece sin efecto.",
+				"El objetivo tiene que hacer una tirada de salvación de Inteligencia. Si la falla, recibirá {@damage 7d6} de daño psíquico y quedará {@condition incapacitado|PHB-ES} hasta el principio de tu siguiente turno. Si la supera, sufrirá la mitad del daño y no quedará {@condition incapacitado|PHB-ES}."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"Cuando lanzas este conjuro mediante un espacio de conjuro de nivel 5 o superior, el daño aumenta en {@scaledamage 7d6|4-9|1d6} por cada nivel por encima de 4 que tenga el espacio que hayas empleado."
+					]
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"conditionInflict": [
+				"incapacitated"
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Hielo inmovilizador de escarcha",
+			"source": "FTD-ES",
+			"page": 20,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "un vial de agua de deshielo"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Una ráfaga de energía fría emana de ti en un cono de 9 m. Todas las criaturas situadas en esa zona deberán hacer una tirada de salvación de Constitución. Si la fallan, recibirán {@damage 3d8} de daño de frío y se verán entorpecidas por las formaciones de hielo durante 1 minuto o hasta que otra criatura a su alcance utilice una acción para romper el hielo. La velocidad de las criaturas entorpecidas se reduce a 0. Si la superan, recibirán la mitad de ese daño y no se verán entorpecidas por el hielo."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"Cuando lanzas este conjuro mediante un espacio de conjuro de nivel 3 o superior, el daño de frío aumenta en {@scaledamage 3d8|2-9|1d8} por cada nivel por encima de 2 que tenga el espacio que hayas empleado."
+					]
+				}
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"N"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "spells/FTD/Rime's Binding Ice.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Invocar espíritu draconico",
+			"source": "FTD-ES",
+			"page": 20,
+			"level": 5,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "un objeto con la imagen de un dragón grabada en él que valga al menos 500 po",
+					"cost": 50000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Invocas un {@creature espíritu dracónico|FTD-ES} que se manifiesta en un espacio sin ocupar que puedas ver dentro del alcance, Esta forma corpórea usa el perfil del espíritu dracónico. Cuando lances este conjuro, elige una familia de dragones: cromáticos, gema o metálicos. La criatura se parecerá a un dragón de la familia elegida, lo que determinará ciertos atributos de su perfil. La criatura desaparecerá si sus puntos de golpe se reducen a 0 o si el conjuro termina.",
+				"La criatura se considera un aliado para ti y para tus compañeros. En combate, la criatura comparte tu orden de iniciativa, pero su turno va justo después del tuyo. Obedece tus órdenes verbales (no requiere acción) y, si no le das ninguna, hace la acción de {@action Esquivar|PHB-ES} y usa su movimiento para evitar el peligro."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"Cuando lances este conjuro mediante un espacio de conjuro de nivel 6 o superior, usa el nivel más alto cuando se mencione el nivel del conjuro en el perfil."
+					]
+				}
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SGT",
+				"SMN"
+			]
+		}
+	]
+}

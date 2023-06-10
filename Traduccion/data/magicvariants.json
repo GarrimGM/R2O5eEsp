@@ -1838,7 +1838,7 @@
 			}
 		},
 		{
-			"name": "Ascendant Dragon's Wrath Weapon",
+			"name": "Arma de la ira del dragón ascendente",
 			"type": "GV",
 			"requires": [
 				{
@@ -1846,23 +1846,23 @@
 				}
 			],
 			"inherits": {
-				"namePrefix": "Ascendant Dragon's Wrath ",
+				"nameSuffix": " de la ira del dragón ascendente",
 				"source": "FTD-ES",
-				"page": 25,
+				"page": 26,
 				"rarity": "legendary",
 				"reqAttune": true,
 				"bonusWeapon": "+3",
 				"entries": [
-					"This weapon is decorated with dragon heads, claws, wings, scales, or Draconic letters. When it steeps in a dragon's hoard, it absorbs the energy of the dragon's breath weapon and deals damage of that type with its special properties.",
-					"Whenever you roll a 20 on your attack roll with this weapon, each creature of your choice within 5 feet of the target takes 5 damage of the type dealt by the dragon's breath weapon.",
-					"You gain a {=bonusWeapon} bonus to attack and damage rolls made using the weapon. On a hit, the weapon deals an extra {@damage 3d6} damage of the type dealt by the dragon's breath weapon.",
-					"As an action, you can unleash a 60-foot cone of destructive energy from the weapon. Each creature in that area must make a DC 18 Dexterity saving throw, taking {@damage 12d6} damage of the type dealt by the dragon's breath weapon on a failed save, or half as much damage on a successful one. Once this action is used, it can't be used again until the next dawn."
+					"Esta arma está decorada con cabezas, garras, alas, escamas de dragón o letras dracónicas. Cuando se impregna del tesoro de un dragón, absorbe la energía del ataque de aliento del dragón e inflige ese tipo de daño con sus propiedades especiales.",
+					"Si sacas un 20 en una tirada de ataque con esta arma, todas las criaturas de tu elección a 5 pies o menos del objetivo reciben 5 de daño del tipo causado por el ataque de aliento del dragón.",
+					"Recibes un bonificador de {=bonusWeapon} a las tiradas de ataque y de daño que hagas con esta arma. Si impacta, el arma inflige {@damage 3d6} de daño adicional del tipo causado por el ataque de aliento del dragón.",
+					"Como acción, puedes desatar un cono de 60 pies de energía destructora desde el arma. Todas las criaturas situadas en la zona deberán hacer una tirada de salvación de Destreza con CD 18; sufrirán {@damage 12d6} de daño del tipo causado por el ataque de aliento del dragón si la fallan o la mitad del daño si la superan. Una vez utilizada, esta acción no puede volver a usarse hasta el siguiente amanecer."
 				]
 			},
 			"source": "FTD-ES"
 		},
 		{
-			"name": "Crystal Blade",
+			"name": "Espada de cristal",
 			"type": "GV",
 			"requires": [
 				{
@@ -1870,24 +1870,24 @@
 				}
 			],
 			"inherits": {
-				"namePrefix": "Crystal ",
+				"nameSuffix": " de cristal",
 				"source": "FTD-ES",
-				"page": 22,
+				"page": 23,
 				"rarity": "rare",
 				"reqAttune": true,
 				"recharge": "dawn",
 				"rechargeAmount": "{@dice 1d3}",
 				"charges": 3,
 				"entries": [
-					"This magic sword's blade is fashioned from a horn or spine from a crystal dragon. When you hit with an attack roll using this sword, the target takes an extra {@damage 1d8} radiant damage.",
-					"The sword has 3 charges and regains {@dice 1d3} expended charges daily at dawn. When you hit a creature with an attack roll using the sword, you can expend 1 charge to regain a number of hit points equal to the extra radiant damage the sword dealt.",
-					"While you're holding the sword, you can use a bonus action to cause it to shed bright light in a 30-foot radius and dim light for an additional 30 feet, to cause it to shed dim light in a 10-foot radius, or to douse the light."
+					"La hoja de esta espada mágica está hecha con un cuerno o una púa de un dragón de cristal. Cuando impactes con una tirada de ataque usando esta espada, el objetivo recibirá {@damage 1d8} de daño radiante adicional.",
+					"La espada tiene 3 cargas y recupera {@dice 1d3} cargas empleadas cada día, al amanecer. Cuando impactes a una criatura con una tirada de ataque usando esta espada, podrás gastar 1 carga para recuperar una cantidad de puntos de golpe igual al daño radiante adicional infligido por la espada.",
+					"Mientras empuñes la espada, podrás usar una acción adicional para que el arma emita luz brillante en un radio de 30 pies y luz tenue 30 pies más allá, para que emita luz tenue en un radio de 10 pies o para apagar la luz."
 				]
 			},
 			"source": "FTD-ES"
 		},
 		{
-			"name": "Dragon Wing Bow",
+			"name": "Arco de ala de dragón",
 			"type": "GV",
 			"requires": [
 				{
@@ -1898,20 +1898,20 @@
 				}
 			],
 			"inherits": {
-				"namePrefix": "Dragon Wing ",
+				"nameSuffix": " de ala de dragón",
 				"source": "FTD-ES",
-				"page": 23,
+				"page": 22,
 				"rarity": "rare",
 				"reqAttune": true,
 				"entries": [
-					"The limb tips of this magic bow are shaped like a dragon's wings, and the weapon is infused with the essence of a chromatic, gem, or metallic dragon's breath. When you hit with an attack roll using this magic bow, the target takes an extra {@damage 1d6} damage of the same type as the breath infused in the bow—acid, cold, fire, force, lightning, necrotic, poison, psychic, radiant, or thunder.",
-					"If you load no ammunition in the weapon, it produces its own, automatically creating one piece of magic ammunition when you pull back the string. The ammunition created by the bow vanishes the instant after it hits or misses a target."
+					"Los extremos de este arco mágico tienen la forma de las alas de un dragón y el arma está impregnada de la esencia del aliento de un dragón cromático, gema o metálico. Cuando impactes con una tirada de ataque usando este arco mágico, el objetivo recibirá {@damage 1d6} de daño adicional del mismo que tipo que el aliento del que está imbuido el arco: ácido, frío, fuego, fuerza, necrótico, psíquico, radiante, relámpago, trueno o veneno.",
+					"Si no cargas el arma con munición, producirá la suya propia y creará automáticamente una unidad de munición mágica cuando tenses la cuerda. La munición creada por el arco se desvanece en cuanto impacta contra un objetivo o no acierta a uno."
 				]
 			},
 			"source": "FTD-ES"
 		},
 		{
-			"name": "Dragonlance",
+			"name": "Lanza de dragón",
 			"type": "GV",
 			"requires": [
 				{
@@ -1922,28 +1922,22 @@
 				}
 			],
 			"inherits": {
-				"namePrefix": "Dragonlance ",
+				"nameSuffix": " de dragón",
 				"source": "FTD-ES",
 				"page": 23,
-				"otherSources": [
-					{
-						"source": "DSotDQ",
-						"page": 23
-					}
-				],
 				"rarity": "legendary",
 				"reqAttune": true,
 				"bonusWeapon": "+3",
 				"entries": [
-					"A dragonlance is a renowned weapon forged from rare metal with the aid of powerful artifacts associated with Bahamut. Different lances are forged for use by foot soldiers (as pikes) and by riders (as lances), but the magical properties of the weapons are the same.",
-					"You gain a {=bonusWeapon} bonus to attack and damage rolls made with this magic weapon.",
-					"When you hit a Dragon with this weapon, the Dragon takes an extra {@damage 3d6} force damage, and any Dragon of your choice that you can see within 30 feet of you can immediately use its reaction to make a melee attack."
+					"Una lanza de dragón es un arma prestigiosa forjada a partir de un metal raro con la ayuda de poderosos artefactos asociados a Bahamut. Se forjan diferentes tipos de lanzas, ya sean para soldados de infantería (picas) o para jinetes (lanzas de caballería), pero las propiedades mágicas de estas armas son las mismas.",
+					"Recibes un bonificador de {=bonusWeapon} a las tiradas de ataque y de daño que hagas con esta arma mágica.",
+					"Cuando impactes a una criatura de tipo \"dragón\" con esta arma, recibe {@damage 3d6} de daño de fuerza adicional y cualquier criatura de tipo \"dragón\" de tu elección que puedas ver a 30 pies o menos de ti puede utilizar de inmediato su reacción para realizar un ataque cuerpo a cuerpo."
 				]
 			},
 			"source": "FTD-ES"
 		},
 		{
-			"name": "Slumbering Dragon's Wrath Weapon",
+			"name": "Arma de la ira del dragón durmiente",
 			"type": "GV",
 			"requires": [
 				{
@@ -1951,21 +1945,21 @@
 				}
 			],
 			"inherits": {
-				"namePrefix": "Slumbering Dragon's Wrath ",
+				"nameSuffix": " de la ira del dragón durmiente",
 				"source": "FTD-ES",
-				"page": 25,
+				"page": 26,
 				"rarity": "uncommon",
 				"reqAttune": true,
 				"bonusWeapon": "+1",
 				"entries": [
-					"This weapon is decorated with dragon heads, claws, wings, scales, or Draconic letters. When it steeps in a dragon's hoard, it absorbs the energy of the dragon's breath weapon and deals damage of that type with its special properties.",
-					"Whenever you roll a 20 on your attack roll with this weapon, each creature of your choice within 5 feet of the target takes 5 damage of the type dealt by the dragon's breath weapon."
+					"Esta arma está decorada con cabezas, garras, alas, escamas de dragón o letras dracónicas. Cuando se impregna del tesoro de un dragón, absorbe la energía del ataque de aliento del dragón e inflige ese tipo de daño con sus propiedades especiales.",
+					"Si sacas un 20 en una tirada de ataque con esta arma, todas las criaturas de tu elección a 5 pies o menos del objetivo reciben 5 de daño del tipo causado por el ataque de aliento del dragón."
 				]
 			},
 			"source": "FTD-ES"
 		},
 		{
-			"name": "Stirring Dragon's Wrath Weapon",
+			"name": "Arma de la ira del dragón turbada",
 			"type": "GV",
 			"requires": [
 				{
@@ -1973,22 +1967,22 @@
 				}
 			],
 			"inherits": {
-				"namePrefix": "Stirring Dragon's Wrath ",
+				"nameSuffix": " de la ira del dragón turbada",
 				"source": "FTD-ES",
-				"page": 25,
+				"page": 26,
 				"rarity": "rare",
 				"reqAttune": true,
 				"bonusWeapon": "+1",
 				"entries": [
-					"This weapon is decorated with dragon heads, claws, wings, scales, or Draconic letters. When it steeps in a dragon's hoard, it absorbs the energy of the dragon's breath weapon and deals damage of that type with its special properties.",
-					"Whenever you roll a 20 on your attack roll with this weapon, each creature of your choice within 5 feet of the target takes 5 damage of the type dealt by the dragon's breath weapon.",
-					"You gain a {=bonusWeapon} bonus to attack and damage rolls made using the weapon. On a hit, the weapon deals an extra {@damage 1d6} damage of the type dealt by the dragon's breath weapon."
+					"Esta arma está decorada con cabezas, garras, alas, escamas de dragón o letras dracónicas. Cuando se impregna del tesoro de un dragón, absorbe la energía del ataque de aliento del dragón e inflige ese tipo de daño con sus propiedades especiales.",
+					"Si sacas un 20 en una tirada de ataque con esta arma, todas las criaturas de tu elección a 5 pies o menos del objetivo reciben 5 de daño del tipo causado por el ataque de aliento del dragón.",
+					"Recibes un bonificador de {=bonusWeapon} a las tiradas de ataque y de daño que hagas con esta arma. Si impacta, el arma inflige {@damage 1d6} de daño adicional del tipo causado por el ataque de aliento del dragón."
 				]
 			},
 			"source": "FTD-ES"
 		},
 		{
-			"name": "Wakened Dragon's Wrath Weapon",
+			"name": "Arma de la ira del dragón despierta",
 			"type": "GV",
 			"requires": [
 				{
@@ -1996,17 +1990,17 @@
 				}
 			],
 			"inherits": {
-				"namePrefix": "Wakened Dragon's Wrath ",
+				"nameSuffix": " de la ira del dragón despierta",
 				"source": "FTD-ES",
-				"page": 25,
+				"page": 26,
 				"rarity": "very rare",
 				"reqAttune": true,
 				"bonusWeapon": "+2",
 				"entries": [
-					"This weapon is decorated with dragon heads, claws, wings, scales, or Draconic letters. When it steeps in a dragon's hoard, it absorbs the energy of the dragon's breath weapon and deals damage of that type with its special properties.",
-					"Whenever you roll a 20 on your attack roll with this weapon, each creature of your choice within 5 feet of the target takes 5 damage of the type dealt by the dragon's breath weapon.",
-					"You gain a {=bonusWeapon} bonus to attack and damage rolls made using the weapon. On a hit, the weapon deals an extra {@damage 2d6} damage of the type dealt by the dragon's breath weapon.",
-					"As an action, you can unleash a 30-foot cone of destructive energy from the weapon. Each creature in that area must make a DC 16 Dexterity saving throw, taking {@damage 8d6} damage of the type dealt by the dragon's breath weapon on a failed save, or half as much damage on a successful one. Once this action is used, it can't be used again until the next dawn."
+					"Esta arma está decorada con cabezas, garras, alas, escamas de dragón o letras dracónicas. Cuando se impregna del tesoro de un dragón, absorbe la energía del ataque de aliento del dragón e inflige ese tipo de daño con sus propiedades especiales.",
+					"Si sacas un 20 en una tirada de ataque con esta arma, todas las criaturas de tu elección a 5 pies o menos del objetivo reciben 5 de daño del tipo causado por el ataque de aliento del dragón.",
+					"Recibes un bonificador de {=bonusWeapon} a las tiradas de ataque y de daño que hagas con esta arma. Si impacta, el arma inflige {@damage 2d6} de daño adicional del tipo causado por el ataque de aliento del dragón.",
+					"Como acción, puedes desatar un cono de 30 pies de energía destructora desde el arma. Todas las criaturas situadas en la zona deberán hacer una tirada de salvación de Destreza con CD 16; sufrirán {@damage 8d6} de daño del tipo causado por el ataque de aliento del dragón si la fallan o la mitad del daño si la superan. Una vez utilizada, esta acción no puede volver a usarse hasta el siguiente amanecer."
 				]
 			},
 			"source": "FTD-ES"
