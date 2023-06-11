@@ -3930,7 +3930,7 @@
 			}
 		},
 		{
-			"name": "Dragonborn",
+			"name": "Dracónido",
 			"source": "PHB-ES",
 			"page": 32,
 			"srd": true,
@@ -3959,8 +3959,8 @@
 			],
 			"languageProficiencies": [
 				{
-					"common": true,
-					"draconic": true
+					"común|PHB-ES": true,
+					"dracónico|PHB-ES": true
 				}
 			],
 			"resist": [
@@ -3982,30 +3982,37 @@
 			},
 			"entries": [
 				{
-					"name": "Age",
+					"name": "Edad",
 					"type": "entries",
 					"entries": [
-						"Young dragonborn grow quickly. They walk hours after hatching, attain the size and development of a 10-year-old human child by the age of 3, and reach adulthood by 15. They live to be around 80."
+						"Los dracónidos crecen con celeridad. Pueden caminar horas después de salir del huevo y alcanzan el tamaño y desarrollo intelectual de un niño humano de diez años al llegar a los tres. Ya son adultos con quince años y viven hasta los ochenta."
+					]
+				},
+				{
+					"name": "Alineamiento",
+					"type": "entries",
+					"entries": [
+						"Los dracónidos tienden hacia los extremos, decidiendo de forma consciente a qué bando servir en la guerra cósmica entre el bien y el mal, representados por Bahamut y Tiamat, respectivamente. La mayoría son buenos, pero aquellos que se alían con Tiamat pueden ser villanos terribles."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Size",
+					"name": "Tamaño",
 					"entries": [
-						"Dragonborn are taller and heavier than humans, standing well over 6 feet tall and averaging almost 250 pounds. Your size is Medium."
+						"Los dracónidos son más altos y pesados que los humanos, sobrepasando los 6 pies de altura y pesando de media casi 250 libras (112 kilos). Eres de tamaño Mediano."
 					]
 				},
 				{
-					"name": "Draconic Ancestry",
+					"name": "Linaje Dracónico",
 					"entries": [
-						"You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table.",
+						"Posees la sangre de dragones. Escoge de qué tipo en la tabla \"linaje dracónico\". Tu Ataque de Aliento y Resistencia al Daño vendrán determinadas por el tipo de dragón, tal y como se indica en dicha tabla.",
 						{
 							"type": "table",
-							"caption": "Draconic Ancestry",
+							"caption": "Linaje dracónico",
 							"colLabels": [
-								"Dragon",
-								"Damage Type",
-								"Breath Weapon"
+								"Dragón",
+								"Tipo de daño",
+								"Ataque de aliento"
 							],
 							"colStyles": [
 								"col-3 text-center",
@@ -4014,54 +4021,54 @@
 							],
 							"rows": [
 								[
-									"Black",
-									"Acid",
-									"5 by 30 ft. line (Dex. save)"
+									"Azul",
+									"Relámpago",
+									"Línea de 5 por 30 pies (salvación Des)"
 								],
 								[
-									"Blue",
-									"Lightning",
-									"5 by 30 ft. line (Dex. save)"
+									"Blanco",
+									"Frío",
+									"Cono de 15 pies (salvación Con)"
 								],
 								[
-									"Brass",
-									"Fire",
-									"5 by 30 ft. line (Dex. save)"
+									"Bronce",
+									"Relámpago",
+									"Línea de 5 por 30 pies (salvación Des)"
 								],
 								[
-									"Bronze",
-									"Lightning",
-									"5 by 30 ft. line (Dex. save)"
+									"Cobre",
+									"Ácido",
+									"Línea de 5 por 30 pies (salvación Des)"
 								],
 								[
-									"Copper",
-									"Acid",
-									"5 by 30 ft. line (Dex. save)"
+									"Negro",
+									"Ácido",
+									"Línea de 5 por 30 pies (salvación Des)"
 								],
 								[
-									"Gold",
-									"Fire",
-									"15 ft. cone (Dex. save)"
+									"Oro",
+									"Fuego",
+									"Cono de 15 pies (salvación Des)"
 								],
 								[
-									"Green",
-									"Poison",
-									"15 ft. cone (Con. save)"
+									"Oropel",
+									"Fuego",
+									"Cono de 15 pies (salvación Des)"
 								],
 								[
-									"Red",
-									"Fire",
-									"15 ft. cone (Dex. save)"
+									"Plata",
+									"Frío",
+									"Cono de 15 pies (salvación Con)"
 								],
 								[
-									"Silver",
-									"Cold",
-									"15 ft. cone (Con. save)"
+									"Rojo",
+									"Fuego",
+									"Cono de 15 pies (salvación Des)"
 								],
 								[
-									"White",
-									"Cold",
-									"15 ft. cone (Con. save)"
+									"Verde",
+									"Veneno",
+									"Cono de 15 pies (salvación Con)"
 								]
 							]
 						}
@@ -4069,25 +4076,25 @@
 					"type": "entries"
 				},
 				{
-					"name": "Breath Weapon",
+					"name": "Ataque de Aliento",
 					"entries": [
-						"You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation.",
-						"When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes {@dice 2d6} damage on a failed save, and half as much damage on a successful one. The damage increases to {@dice 3d6} at 6th level, {@dice 4d6} at 11th level, and {@dice 5d6} at 16th level.",
-						"After you use your breath weapon, you can't use it again until you complete a short or long rest."
+						"Puedes utilizar tu acción para exhalar energía destructora. Tu Linaje Dracónico determina el tamaño, forma y tipo de daño del aliento.",
+						"Cuando uses tu Ataque de Aliento, las criaturas que se encuentren en la zona cubierta por este deberán hacer una tirada de salvación, cuyo tipo viene definido por tu linaje. La CD de esta tirada de salvación es de 8 + tu modificador por Constitución + tu bonificador por competencia. Las criaturas sufrirán {@dice 2d6} de daño si fallan la tirada o la mitad de ese daño si la superan. El daño aumenta a {@dice 3d6} cuando alcanzas el nivel 6, a {@dice 4d6} a nivel 11 y a {@dice 5d6} a nivel 16.",
+						"Una vez utilizado el Ataque de Aliento, no podrás volver a emplearlo hasta que finalices un descanso corto o largo."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Damage Resistance",
+					"name": "Resistencia al Daño",
 					"entries": [
-						"You have resistance to the damage type associated with your draconic ancestry."
+						"Posees resistencia al tipo de daño asociado a tu Linaje Dracónico."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Languages",
+					"name": "Idiomas",
 					"entries": [
-						"You can speak, read, and write Common and Draconic. Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants."
+						"Puedes hablar, leer y escribir en común y dracónico. Se piensa que el dracónico es uno de los idiomas más antiguos y suele emplearse en el estudio de la magia. Resulta áspero a oídos de la mayoría de las criaturas y utiliza muchas consonantes duras y sibilantes."
 					],
 					"type": "entries"
 				}
@@ -4100,52 +4107,52 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Born of dragons, as their name proclaims, the dragonborn walk proudly through a world that greets them with fearful incomprehension. Shaped by draconic gods or the dragons themselves, dragonborn originally hatched from dragon eggs as a unique race, combining the best attributes of dragons and humanoids. Some dragonborn are faithful servants to true dragons, others form the ranks of soldiers in great wars, and still others find themselves adrift, with no clear calling in life.",
+									"Nacidos de los dragones, los dracónidos caminan con orgullo en un mundo que les recibe con temor e incomprensión. Los dracónidos, cuya forma fue voluntad de los dragones o de sus dioses, nacieron por primera vez de los huevos de estas criaturas para convertirse en una raza única, que combina los mejores aspectos de los dragones y los humanoides. Algunos son fieles siervos de los auténticos dragones, otros luchan como soldados en grandes guerras y unos pocos son incapaces de encontrar su rumbo, un objetivo vital.",
 									{
 										"type": "entries",
-										"name": "Proud Dragon Kin",
+										"name": "Orgullosa estirpe de dragones",
 										"entries": [
-											"Dragonborn look very much like dragons standing erect in humanoid form, though they lack wings or a tail. The first dragonborn had scales of vibrant hues matching the colors of their dragon kin, but generations of interbreeding have created a more uniform appearance. Their small, fine scales are usually brass or bronze in color, sometimes ranging to scarlet, rust, gold, or copper-green. They are tall and strongly built, often standing close to 6½ feet tall and weighing 300 pounds or more. Their hands and feet are smiting, talonlike claws with three fingers and a thumb on each hand.",
-											"The blood of a particular type of dragon runs very strong through some dragonborn clans. These dragonborn often boast scales that more closely match those of their dragon ancestor-bright red, green, blue, or white, lustrous black, or gleaming metallic like gold, silver, brass, copper, or bronze."
+											"Los dracónidos parecen dragones erguidos sobre sus cuartos traseros, pero con la forma de un humanoide y sin alas o cola. Los primeros dracónidos poseían escamas brillantes, del mismo color del dragón con el que estaban emparentados, pero generaciones de mestizaje han acabado deviniendo en una coloración más uniforme. Sus escamas, pequeñas y delicadas, suelen ser del color del bronce o del oropel, aunque en algunos casos pueden verse tonos escarlatas, óxido, oro o cobre verde. Son altos, de complexión fuerte y lo habitual es que midan cerca de 6,5 pies (2 m) y pesen incluso más de 300 libras (135 kilos). Sus extremidades poseen cuatro dedos, uno de ellos el pulgar, terminados en garras fuertes y afiladas.",
+											"La sangre de un tipo concreto de dragón corre con fuerza por el cuerpo de algunos clanes de dracónidos. Sus miembros suelen presumir de escamas cuyo color se acerca más al de su ancestro dragón: brillantes rojo, verde, azul o blanco; lustroso negro; o refulgentes tonos metálicos como el oro, la plata, el bronce, el cobre y el oropel."
 										]
 									},
 									{
 										"type": "entries",
-										"name": "Self-Sufficient Clans",
+										"name": "Clanes autosuficientes",
 										"entries": [
-											"To any dragonborn, the clan is more important than life itself. Dragonborn owe their devotion and respect to their clan above all else, even the gods. Each dragonborn's conduct reflects on the honor of his or her clan, and bringing dishonor to the clan can result in expulsion and exile. Each dragonborn knows his or her station and duties within the clan, and honor demands maintaining the bounds of that position.",
-											"A continual drive for self-improvement reflects the self-sufficiency, of the race as a whole. Dragonborn value skill and excellence in all endeavors. They hate to fail, and they push themselves to extreme efforts before they give up on something. A dragonborn holds mastery of that particular skill as a lifetime goal. Members of other races who share the same commitment find it easy to earn the respect of a dragonborn.",
-											"Though all dragonborn strive to be self-sufficient, they recognize that help is sometimes needed in difficult situations. But the best source for such help is the clan, and when a client needs help, it turns to another dragonborn clan before seeking aid from other races or even from the gods."
+											"Para cualquier dracónido, el clan es más importante que la propia vida. Le debe devoción y respeto por encima de todas las cosas, incluso de los mismos dioses. La conducta de cada dracónido refleja el honor de su clan y traer la deshonra a este puede suponer la expulsión y el exilio. Todos los dracónidos conocen su posición y deberes dentro del clan, y el honor les exige mantener las responsabilidades que esto implica.",
+											"Su constante deseo de mejorarse a sí mismos se refleja en la autosuficiencia de la raza en su conjunto. Los dracónidos valoran la excelencia en todo aquello que hacen. Odian fracasar y se empujan constantemente hasta el límite, esforzándose al máximo antes de darse por vencidos. Uno de los objetivos vitales de un dracónido es dominar una disciplina concreta. Los miembros de otras razas que comparten este sentido del compromiso descubren que resulta fácil ganarse el respeto de un dracónido.",
+											"Aunque todos los dracónidos aspiran a ser autosuficientes, reconocen que en circunstancias difíciles necesitan ayuda. El mejor sitio en el que encontrarla es el clan, y cuando es este el que necesita auxilio, acudirán a otro clan dracónido antes de buscar ayuda en otras razas, o incluso en los dioses."
 										]
 									},
 									{
 										"type": "entries",
-										"name": "Dragonborn Names",
+										"name": "Nombres dracónidos",
 										"entries": [
-											"Dragonborn have personal names given at birth, but they put their clan names first as a mark of honor. A childhood name or nickname is often used among clutch mates as a descriptive term or endearment. The name might recall an event or center on a habit.",
+											"Los dracónidos reciben sus nombres propios al nacer, pero anteponen el nombre de su clan como marca de honor. A veces, los compañeros de nidada usan entre ellos un nombre de infancia o apodo como término descriptivo o apelativo cariñoso. Estos nombres podrían hacer referencia a un evento o un hábito.",
 											{
 												"type": "list",
 												"style": "list-hang-notitle",
 												"items": [
 													{
 														"type": "item",
-														"name": "Male Names:",
+														"name": "Nombres masculinos:",
 														"entry": "Arjhan, Balasar, Bharash, Donaar, Ghesh, Hesken, Kriv, Medrash, Mehen, Nadarr, Pandjed, Patrin, Rhogar, Shamash, Shedinn, Tarhun, Torinn"
 													},
 													{
 														"type": "item",
-														"name": "Female Names:",
+														"name": "Nombres femeninos:",
 														"entry": "Akra, Biri, Daar, Farideh, Harann, Havilar, Jheri, Kava, Korinn, Mishann, Nala, Perra, Raiann, Sora, Surina, Thava, Uadjit"
 													},
 													{
 														"type": "item",
-														"name": "Childhood Names:",
-														"entry": "Climber, Earbenden Leaper, Pious, Shieldbiter, Zealous"
+														"name": "Nombres de infancia:",
+														"entry": "Entusiasta, Muerdescudos, Piadoso, Saltarín, Trepador, Tuerceorejas."
 													},
 													{
 														"type": "item",
-														"name": "Clan Names:",
-														"entry": "Clethtinthiallor, Daardendrian, Delmirev, Drachedandion, Fenkenkabradon, Kepeshkmolik, Kerrhylon, Kimbatuul, Linxakasendalor, Myastan, Nemmonis, Norixius, Ophinshtalajiir, Prexijandilin, Shestendeliath, Turnuroth, Verthisathurgiesh, Yarjerit"
+														"name": "Nombres de clan:",
+														"entry": "Clethtinthiallor, Daardendrian, Delmirev, Drachedandion, Fenkenkabradon, Kepeshkmolik, Kerrhylon, Kimbatuul, Linxakasendalor, Myastan, Nemmonis, Narixius, Ophinstalajiir, Prexijandilin, Shestendeliath, Turnuroth, Verthisathurgiesh, Yarjerit"
 													}
 												]
 											}
@@ -4153,9 +4160,9 @@
 									},
 									{
 										"type": "inset",
-										"name": "Draconians",
+										"name": "Draconianos",
 										"entries": [
-											"In the Dragonlance setting, the followers of the evil goddess Takhisis learned a dark ritual that let them corrupt the eggs of metallic dragons, producing evil dragonborn called draconians. Five types of draconians, corresponding to the five types of metallic dragons, fought for Takhis is in the War of the Lance-auraks (gold), baaz (brass), bozak (bronze), kapak (copper), and sivak (silver). In place of their draconic breath weapons they have unique magical abilities."
+											"En la ambientación Dragonlance, los seguidores de la diosa malvada Takhisis aprendieron un oscuro ritual que les permitió corromper los huevos de los dragones metálicos, creando así unos dracónidos malignos llamados draconianos. Durante la Guerra de la Lanza en el bando de Takhisis combatieron cinco tipos de draconianos, que se corresponden con los cinco tipos de dragones metálicos: auraks (oro), baaz (oropel), bozak (bronce), kapkl (cobre) y sivak (plata). Poseen habilidades mágicas únicas en lugar del ataque de aliento."
 										]
 									}
 								]
@@ -4163,43 +4170,68 @@
 						]
 					},
 					{
-						"name": "Uncommon Races",
+						"name": "Razas poco comunes",
 						"type": "inset",
 						"entries": [
-							"This race, and those listed below, are uncommon. They don't exist in every world of D&D, and even where they are found, they are less widespread than dwarves, elves, halflings, and humans. In the cosmopolitan cities of the D&D multiverse, most people hardly look twice at members of even the most exotic races. But the small towns and villages that dot the countryside are different. The common folk aren't accustomed to seeing members of these races, and they react accordingly.",
+							"Esta raza y el resto de las razas en esta lista son poco comunes. No existen en todos los mundos de D&D, e incluso donde se encuentran, están menos extendidos que los enanos, elfos, medianos y humanos. En las ciudades cosmopolitas del multiverso D&D, la mayoría de las personas apenas miran a los miembros de las razas más exóticas. Pero las pequeñas ciudades y pueblos que salpican el campo son diferentes. La gente común no está acostumbrada a ver miembros de estas razas, y reaccionan en consecuencia.",
 							{
 								"type": "entries",
-								"name": "Dragonborn",
 								"entries": [
-									"It's easy to assume that a dragonborn is a monster, especially if his or her scales betray a chromatic heritage. Unless the dragonborn starts breathing fire and causing destruction, though, people are likely to respond with caution rather than outright fear."
+									{
+										"type": "entries",
+										"name": "Dracónido",
+										"entries": [
+											"Es fácil suponer que un dracónido es un monstruo, especialmente si sus escamas demuestran una herencia cromática. Sin embargo, a menos que el dracónido comience a escupir fuego y a causar destrucción, es probable que las personas respondan con precaución en lugar de un miedo absurdo."
+										]
+									}
 								]
 							},
 							{
 								"type": "entries",
-								"name": "Gnome",
 								"entries": [
-									"Gnomes don't look like a threat and can quickly disarm suspicion with good humor. The common folk are often curious about gnomes, likely never having seen one before, but they are rarely hostile or fearful."
+									{
+										"type": "entries",
+										"name": "Gnomo",
+										"entries": [
+											"Los gnomos no parecen una amenaza y pueden desarmar rápidamente cualquier sospecha mediante su buen humor. La gente común a menudo siente curiosidad por los gnomos, probablemente nunca hayan visto uno antes, pero rara vez se comportan de forma hostil o temerosa."
+										]
+									}
 								]
 							},
 							{
 								"type": "entries",
-								"name": "Half-Elf",
 								"entries": [
-									"Although many people have never seen a half-elf, virtually everyone knows they exist. A half-elf stranger's arrival is followed by gossip behind the half-elf's back and stolen glances across the common room, rather than any confrontation or open curiosity."
+									{
+										"type": "entries",
+										"name": "Semielfo",
+										"entries": [
+											"Aunque muchas personas nunca han visto a un semielfo, prácticamente todos saben que existen. La llegada de un extraño semielfo es seguida por chismes a la espalda del semielfo y miradas recelosas a través de la sala común, en lugar de cualquier confrontación o curiosidad abierta."
+										]
+									}
 								]
 							},
 							{
 								"type": "entries",
-								"name": "Half-Orc",
 								"entries": [
-									"It's usually safe to assume that a half-orc is belligerent and quick to anger, so people watch themselves around an unfamiliar half-orc. Shopkeepers might surreptitiously hide valuable or fragile goods when a half-orc comes in, and people slowly clear out of a tavern, assuming a fight will break out soon."
+									{
+										"type": "entries",
+										"name": "Semiorco",
+										"entries": [
+											"Por lo general, es seguro asumir que un semiorco es beligerante y se cabrea rápidamente, por lo que las personas se miran alrededor de un semiorco desconocido. Los comerciantes pueden esconder disimuladamente bienes valiosos o frágiles cuando entra un semiorco, y la gente se va lentamente de una taberna, suponiendo que pronto se desatará una pelea."
+										]
+									}
 								]
 							},
 							{
 								"type": "entries",
-								"name": "Tiefling",
 								"entries": [
-									"Half-orcs are greeted with a practical caution, but tieflings are the subject of supernatural fear. The evil of their heritage is plainly visible in their features, and as far as most people are concerned, a tiefling could very well be a devil straight from the Nine Hells. People might make warding signs as a tiefling approaches, cross the street to avoid passing near, or bar shop doors before a tiefling can enter."
+									{
+										"type": "entries",
+										"name": "Tiefling",
+										"entries": [
+											"Los semiorcos son recibidos con una precaución práctica, pero los tieflings son objeto de un miedo sobrenatural. El mal de su herencia es claramente visible en su físico, y en lo que respecta a la mayoría de las personas, un tiefling bien podría ser un demonio llegado directamente de los Nueve Infiernos. Las personas pueden hacer simbolos de protección cuando se acerca un tiefling, cruzar la calle para evitar pasar cerca o cerrar las puertas de las tiendas antes de que pueda entrar un tiefling."
+										]
+									}
 								]
 							}
 						]
@@ -4217,7 +4249,7 @@
 			}
 		},
 		{
-			"name": "Dwarf",
+			"name": "Enano",
 			"source": "PHB-ES",
 			"page": 18,
 			"srd": true,
@@ -4241,16 +4273,16 @@
 			],
 			"languageProficiencies": [
 				{
-					"common": true,
-					"dwarvish": true
+					"común|PHB-ES": true,
+					"enano|PHB-ES": true
 				}
 			],
 			"weaponProficiencies": [
 				{
-					"battleaxe|phb": true,
-					"handaxe|phb": true,
-					"light hammer|phb": true,
-					"warhammer|phb": true
+					"hacha de guerra|PHB-ES": true,
+					"hacha de mano|PHB-ES": true,
+					"martillo ligero|PHB-ES": true,
+					"martillo de guerra|PHB-ES": true
 				}
 			],
 			"resist": [
@@ -4262,65 +4294,72 @@
 			},
 			"entries": [
 				{
-					"name": "Age",
+					"name": "Edad",
 					"type": "entries",
 					"entries": [
-						"Dwarves mature at the same rate as humans, but they're considered young until they reach the age of 50. On average, they live about 350 years."
+						"Los enanos alcanzan la madurez a la misma edad que los humanos, pero se les considera jóvenes hasta los cincuenta años. Viven, de media, unos trescientos cincuenta años."
+					]
+				},
+				{
+					"name": "Alineamiento",
+					"type": "entries",
+					"entries": [
+						"La mayoría de los enanos son legales, pues creen firmemente en los beneficios de una sociedad bien estructurada. Además, también tienden a ser buenos, ya que poseen un fuerte sentido del juego limpio y creen que todos merecen compartir los frutos de un orden justo."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Size",
+					"name": "Tamaño",
 					"entries": [
-						"Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium."
+						"Los enanos miden entre 4 y 5 pies de altura y pesan unas 150 libras de media. Eres de tamaño Mediano."
 					]
 				},
 				{
-					"name": "Speed",
+					"name": "Velocidad",
 					"entries": [
-						"Your speed is not reduced by wearing heavy armor."
+						"Tu velocidad no se reduce por llevar armadura pesada."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Darkvision",
+					"name": "Visión en la Oscuridad",
 					"entries": [
-						"Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"Acostumbrado a la vida bajo tierra, puedes ver bien en la oscuridad o con poca luz. Eres capaz de percibir hasta a 60 pies en luz tenue como si hubiera luz brillante, y esa misma distancia en la oscuridad como si hubiera luz tenue. Eso sí, no puedes distinguir colores en la oscuridad, solo tonos de gris."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Dwarven Resilience",
+					"name": "Resistencia Enana",
 					"entries": [
-						"You have advantage on saving throws against poison, and you have resistance against poison damage."
+						"Tienes ventaja en las tiradas de salvación contra veneno y posees resistencia al daño de veneno."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Dwarven Combat Training",
+					"name": "Entrenamiento de Combate Enano",
 					"entries": [
-						"You have proficiency with the {@item battleaxe|phb}, {@item handaxe|phb}, {@item light hammer|phb}, and {@item warhammer|phb}."
+						"Eres competente con {@item Hacha de guerra|PHB-ES|hachas de guerra}, {@item Hacha de mano|PHB-ES|hachas de mano}, {@item Martillo de guerra|PHB-ES|martillos de guerra} y {@item Martillo ligero|PHB-ES|martillos ligeros}."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Tool Proficiency",
+					"name": "Competencia con Herramientas",
 					"entries": [
-						"You gain proficiency with the artisan's tools of your choice: {@item Smith's tools|phb}, {@item brewer's supplies|phb}, or {@item mason's tools|phb}."
+						"Eres competente con las herramientas de artesano que elijas de entre las siguientes: {@item Herramientas de albañil|PHB-ES|herramientas de albañil}, {@item Herramientas de herrero|PHB-ES|herramientas de herrero} o {@item Suministros de cervecero|PHB-ES|suministros de cervecero}."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Stonecunning",
+					"name": "Afinidad con la Piedra",
 					"entries": [
-						"Whenever you make an Intelligence ({@skill History}) check related to the origin of stonework, you are considered proficient in the {@skill History} skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
+						"Cuando hagas una prueba de Inteligencia ({@skill Historia|PHB-ES}) que tenga relación con el origen de un trabajo en piedra, se te considerará competente en la habilidad {@skill Historia|PHB-ES} y añadirás dos veces tu bonificador por competencia a la tirada, en lugar de solo una."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Languages",
+					"name": "Idiomas",
 					"entries": [
-						"You can speak, read, and write Common and Dwarvish. Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak."
+						"Puedes hablar, leer y escribir en común y enano. El idioma enano está lleno de consonantes duras y sonidos guturales, y estas peculiaridades se traslucen en la forma que tienen los enanos de pronunciar cualquier otro lenguaje que conozcan."
 					],
 					"type": "entries"
 				}
@@ -4333,92 +4372,90 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Kingdoms rich in ancient grandeur, halls carved into the roots of mountains, the echoing of picks and hammers in deep mines and blazing forges, a commitment to clan and tradition, and a burning hatred of goblins and orcs-these common threads unite all dwarves.",
+									"Reinos rebosantes de antiguo esplendor, salas excavadas en las raíces de las montañas, forjas abrasadoras, el resonar de los picos y martillos en las minas, el compromiso con el clan y la tradición, y el odio a los orcos y goblins. Estas son las hebras que todos los enanos comparten.",
 									{
 										"type": "entries",
-										"name": "Short and Stout",
+										"name": "Bajos y resistentes",
 										"entries": [
-											"Bold and hardy, dwarves are known as skilled warriors, miners, and workers of stone and metal. Though they stand well under 5 feet tall, dwarves are so broad and compact that they can weigh as much as a human standing nearly two feet taller. Their courage and endurance are also easily a match for any of the larger folk.",
-											"Dwarven skin ranges from deep brown to a paler hue tinged with red, but the most common shades are light brown or deep tan, like certain tones of earth.",
-											"Their hair, worn long but in simple styles, is usually black, gray, or brown, though paler dwarves often have red hair. Male dwarves value their beards highly and groom them carefully."
+											"Atrevidos y robustos, los enanos son conocidos por su habilidad como guerreros, mineros y trabajadores de la piedra y los metales. Aunque están bastante por debajo de los 5 pies (1,5 m) de altura, los enanos son tan anchos y compactos que pueden pesar tanto como un humano a pesar de medir un par de pies menos que ellos. Su valentía y aguante también pueden compararse fácilmente con los de la gente alta.",
+											"La piel de los enanos varía en color desde un marrón profundo hasta un tono más pálido y sonrosado. No obstante, las tonalidades más comunes son el marrón claro y un moreno intenso, parecidos a los colores de la tierra. Su cabello, que llevan largo, pero con peinados sencillos, suele ser negro, gris o marrón, aunque los enanos más pálidos a veces son pelirrojos. Los enanos de género masculino tienen sus barbas en alta estima, y las cuidan y adornan."
 										]
 									},
 									{
 										"type": "entries",
-										"name": "Long Memory, Long Grudges",
+										"name": "Una memoria portentosa, un enorme rencor",
 										"entries": [
-											"Dwarves can live to be more than 400 years old, so the oldest living dwarves often remember a very different world. For example, some of the oldest dwarves living in Citadel Felbarr (in the world of the Forgotten Realms) can recall the day, more than three centuries ago, when orcs conquered the fortress and drove them into an exile that lasted over 250 years. This longevity grants them a perspective on the world that shorter-lived races such as humans and halflings lack.",
-											"Dwarves are solid and enduring like the mountains they love, weathering the passage of centuries with stoic endurance and little change. They respect the traditions of their clans, tracing their ancestry back to the founding of their most ancient strongholds in the youth of the world, and don't abandon those traditions lightly. Part of those traditions is devotion to the gods of the dwarves, who uphold the dwarven ideals of industrious labor, skill in battle, and devotion to the forge.",
-											"Individual dwarves are determined and loyal, true to their word and decisive in action, sometimes to the point of stubbornness. Many dwarves have a strong sense of justice, and they are slow to forget wrongs they have suffered. A wrong done to one dwarf is a wrong done to the dwarf's entire clan, so what begins as one dwarf's hunt for vengeance can become a full-blown clan feud."
+											"Los enanos pueden vivir más de cuatrocientos años y por eso los más ancianos rememoran un mundo muy diferente al actual. Por ejemplo, los enanos más ancianos de Ciudadela Felbarr (en el mundo de los Reinos Olvidados) pueden recordar el día, hace ya más de tres siglos, en que los orcos conquistaron la fortaleza y le forzaron a un exilio que duró más de doscientos cincuenta años. Esta longevidad les da una perspectiva del mundo que las razas de vida más corta, como los humanos y los medianos, carecen.",
+											"Los enanos son firmes y tenaces como las montañas a las que aman, aguantan el desgaste de los siglos con estoicismo y sin apenas cambios. Respetan las tradiciones de sus clanes y no las abandonan sin una buena razón, pues pueden trazar su genealogía hasta los mismos fundadores de las fortalezas. más antiguas, que habitaban en el mundo cuando este aún era joven. Parte de estas tradiciones está dedicada a los dioses de los enanos, que encarnan los ideales del trabajo diligente, la habilidad en batalla y la devoción a la forja.",
+											"Como individuos, son decididos y leales, fieles a la palabra dada y comprometidos con el curso de acción elegido, rayando en la tozudez más extrema. Muchos enanos poseen un fuerte sentido de la justicia y tardan en olvidar las ocasiones en que han sido tratados injustamente. Si alguien provoca un mal a un enano se lo hace a todo su clan, así que la causa de la búsqueda de justicia por parte de un único enano puede acabar convirtiéndose en fuente de la enemistad de todo un clan."
 										]
 									},
 									{
 										"type": "entries",
-										"name": "Clans and Kingdoms",
+										"name": "Clanes y reinos",
 										"entries": [
-											"Dwarven kingdoms stretch deep beneath the mountains where the dwarves mine gems and precious metals and forge items of wonder. They love the beauty and artistry of precious metals and fine jewelry, and in some dwarves this love festers into avarice. Whatever wealth they can't find in their mountains, they gain through trade. They dislike boats, so enterprising humans and halflings frequently handle trade in dwarven goods along water routes. Trustworthy members of other races are welcome in dwarf settlements, though some areas are off limits even to them.",
-											"The chief unit of dwarven society is the clan, and dwarves highly value social standing. Even dwarves who live far from their own kingdoms cherish their clan identities and affiliations, recognize related dwarves, and invoke their ancestors' names in oaths and curses. To be clanless is the worst fate that can befall a dwarf.",
-											"Dwarves in other lands are typically artisans, especially weaponsmiths, armorers, and jewelers. Some become mercenaries or bodyguards, highly sought after for their courage and loyalty."
+											"Los reinos enanos se extienden por las profundidades de las montañas, donde éstos buscan gemas y metales preciosos y forjan objetos maravillosos. Los enanos aman la belleza y el arte intrínsecos a los metales nobles y la joyería delicada, aunque en algunos casos este amor se torna en avaricia. Obtienen mediante el comercio todo aquello que no pueden encontrar en la montaña. No les gustan los barcos, por lo que los humanos y medianos especialmente emprendedores suelen comerciar con bienes enanos siguiendo rutas fluviales o marítimas. Los miembros de otras razas que demuestran ser de confianza son bien recibidos en los asentamientos enanos, aunque ni siquiera a ellos se les permite el paso a algunas zonas.",
+											"El núcleo de la sociedad enana es el clan, y los miembros de esta raza tienen la posición social en alta estima. Incluso aquellos enanos que viven lejos de sus reinos mantienen la identidad y afiliaciones de su clan, reconocen a otros enanos con relación de parentesco y recurren a los nombres de sus ancestros para jurar y maldecir. Carecer de clan es lo peor que le podría suceder a un enano.",
+											"Los enanos que viven en otras tierras suelen ser artesanos, en especial herreros, armeros y joyeros. Algunos se convierten en mercenarios o guardaespaldas, y son valorados por su coraje y lealtad."
 										]
 									},
 									{
 										"type": "entries",
-										"name": "Gods, Gold, and Clan",
+										"name": "Dioses, oro y clan",
 										"entries": [
-											"Dwarves who take up the adventuring life might be motivated by a desire for treasure-for its own sake, for a specific purpose, or even out of an altruistic desire to help others. Other dwarves are driven by the command or inspiration of a deity, a direct calling or simply a desire to bring glory to one of the dwarf gods. Clan and ancestry are also important motivators. A dwarf might seek to restore a clan's lost honor, avenge an ancient wrong the clan suffered, or earn a new place within the clan after having been exiled. Or a dwarf might search for the axe wielded by a mighty ancestor, lost on the field of battle centuries ago."
+											"Algunos enanos que parten en aventuras pueden estar motivados por el ansia de tesoros, ya sean estos para su propio disfrute, un propósito específico o incluso un deseo altruista de ayudar a los demás. Otros enanos están impulsados por las órdenes o la inspiración de una deidad, su vocación o el simple deseo de traer gloria a uno de los dioses enanos. El clan y los ancestros también son fuentes de motivación importantes. Un enano podría querer restaurar el honor perdido de su clan, vengar una injusticia sufrida por este o volver a ocupar un lugar entre los suyos tras haber sido exiliado. O quizá esté buscando el hacha que un día portó un poderoso ancestro, perdida en el campo de batalla hace siglos."
 										]
 									},
 									{
 										"type": "inset",
-										"name": "Slow to Trust",
+										"name": "Lentos para confiar",
 										"entries": [
-											"Dwarves get along passably well with most other races. \"The difference between an acquaintance and a friend is about a hundred years,\" is a dwarf saying that might be hyperbole, but certainly points to how difficult it can be for a member of a short-lived race like humans to earn a dwarf's trust.",
+											"Los enanos se llevan razonablemente bien con la mayoría de las razas. \"La diferencia entre un conocido y un amigo son unos cien años\" es un dicho enano que podría ser una hipérbole, pero que desde luego ejemplifica cuán difícil es para un miembro de las razas de vida corta, como los humanos, ganarse la confianza de un enano.",
 											{
 												"type": "entries",
-												"name": "Elves",
+												"name": "Elfos",
 												"entries": [
-													"\"It's not wise to depend on the elves. No telling what an elf will do next; when the hammer meets the orc's head, they're as apt to start singing as to pull out a sword. They're flighty and frivolous. Two things to be said for them, though: They don't have many smiths, but the ones they have do very fine work. And when orcs or goblins come streaming down out of the mountains, an elf's good to have at your back. Not as good as a dwarf, maybe, but no doubt they hate the orcs as much as we do.\""
+													"\"No es sabio depender de los elfos. Son impredecibles; cuando el martillo acaba en la cabeza del orco, lo mismo se ponen a cantar que desenvainan sus espadas. Son frívolos y caprichosos. Eso sí, hay dos cosas que se pueden decir de ellos: no tienen muchos herreros, aunque los pocos que hay hacen un gran trabajo; y cuando los orcos o los goblins bajan en tromba de las montañas, es bueno tenerlos a tu lado. Siempre es mejor luchar junto a un enano, claro está, pero no cabe duda de que odian a los orcos tanto como nosotros\"."
 												]
 											},
 											{
 												"type": "entries",
-												"name": "Halflings",
+												"name": "Humanos",
 												"entries": [
-													"\"Sure, they're pleasant folk. But show me a halfling hero. An empire, a triumphant army. Even a treasure for the ages made by halfling hands. Nothing. How can you take them seriously?\""
+													"\"Cuando por fin has dedicado el tiempo necesario para conocer a un humano, este está en su lecho de muerte. O, si eres afortunado, tendrá parientes, quizá una hija o un nieto, que posean unas manos y un corazón tan buenos como los suyos. Y eso si eres capaz de hacerte amigo de un humano. ¡Para que luego se marche! Cuando ponen sus corazones en algo, lo consiguen, ya se trate del tesoro de un dragón o el trono de un imperio. No te queda otra que admirar tal dedicación, aunque acabe metiéndoles en problemas la mayoría de las veces\"."
 												]
 											},
 											{
 												"type": "entries",
-												"name": "Humans",
+												"name": "Medianos",
 												"entries": [
-													"\"You take the time to get to know a human, and by then the human's on her deathbed. If you're lucky, she's got kin-a daughter or granddaughter, maybe-who's got hands and heart as good as hers. That's when you can make a human friend. And watch them go!. They set their hearts on something, they'll get it whether it's a dragon's hoard or an empire's throne. You have to admire that kind of dedication, even if it gets them in trouble more often than not.\""
+													"\"Sí, son un pueblo agradable, pero muéstrame un héroe mediano. O un imperio, o un ejército victorioso. O tan siquiera un tesoro que pase a la historia y haya sido hecho por las manos de un mediano. Nada. ¿Cómo vas a tornártelos en serio?\"."
 												]
 											}
 										]
 									},
 									{
 										"type": "entries",
-										"name": "Dwarf Names",
+										"name": "Nombres enanos",
 										"entries": [
-											"A dwarf's name is granted by a clan elder, in accordance with tradition. Every proper dwarven name has been used and reused down through the generations. A dwarf's name belongs to the clan, not to the individual.",
-											"A dwarf who misuses or brings shame to a clan name is stripped of the name and forbidden by law to use any dwarven name in its place.",
+											"Un anciano del clan es quien pone nombre a cada enano, como dicta la tradición. Todos los nombres propios enanos han sido sados una y otra vez, generación tras generación. Así, el nombre de un enano pertenece al clan y no al individuo. Si un enano utiliza incorrectamente o trae vergüenza al nombre de un clan, este le será retirado y se le prohibirá por ley usar ningún otro nombre enano en su lugar.",
 											{
 												"type": "list",
 												"style": "list-hang-notitle",
 												"items": [
 													{
 														"type": "item",
-														"name": "Male Names:",
+														"name": "Nombres masculinos:",
 														"entry": "Adrik, Alberich, Baern, Barendd, Brottor, Bruenor, Dain, Darrak, Delg, Eberk, Einkil, Fargrim, Flint, Gardain, Harbek, Kildrak, Morgran, Orsik, Oskar, Rangrim, Rurik, Taklinn, Thoradin, Thorin, Tordek, Traubon, Travok, Ulfgar, Veit, Vondal"
 													},
 													{
 														"type": "item",
-														"name": "Female Names:",
+														"name": "Nombres femeninos:",
 														"entry": "Amber, Artin, Audhild, Bardryn, Dagnal, Diesa, Eldeth, Falkrunn, Finellen, Gunnloda, Gurdis, Helja, Hlin, Kathra, Kristryd, Ilde, Liftrasa, Mardred, Riswynn, Sannl, Torbera, Torgga, Vistra"
 													},
 													{
 														"type": "item",
-														"name": "Clan Names:",
+														"name": "Nombres de clan",
 														"entry": "Balderk, Battlehammer, Brawnanvil, Dankil, Fireforge, Frostbeard, Gorunn, Holderhek, Ironfist, Loderr, Lutgehr, Rumnaheim, Strakeln, Torunn, Ungart"
 													}
 												]
@@ -4429,7 +4466,7 @@
 										"type": "inset",
 										"name": "Duergar",
 										"entries": [
-											"In cities deep in the Underdark live the duergar, or gray dwarves. These vicious, stealthy slave traders raid the surface world for captives, then sell their prey to the other races of the Underdark. They have innate magical abilities to become invisible and to temporarily grow to giant size."
+											"Los duergars, o enanos grises, habitan en las ciudades de las profundidades del Underdark. Estos traficantes de esclavos, violentos y sigilosos, realizan incursiones en el mundo de la superficie en busca de prisioneros que después venden a otras razas del Underdark. Poseen habilidades mágicas innatas, que les permiten volverse invisibles y crecer, de forma temporal, hasta un tamaño gigantesco."
 										]
 									}
 								]
@@ -4449,7 +4486,7 @@
 			}
 		},
 		{
-			"name": "Elf",
+			"name": "Elfo",
 			"source": "PHB-ES",
 			"page": 21,
 			"srd": true,
@@ -4478,8 +4515,8 @@
 			],
 			"languageProficiencies": [
 				{
-					"common": true,
-					"elvish": true
+					"común|PHB-ES": true,
+					"elfo|PHB-ES": true
 				}
 			],
 			"soundClip": {
@@ -4488,52 +4525,59 @@
 			},
 			"entries": [
 				{
-					"name": "Age",
+					"name": "Edad",
 					"type": "entries",
 					"entries": [
-						"Although elves reach physical maturity at about the same age as humans, the elven understanding of adulthood goes beyond physical growth to encompass worldly experience. An elf typically claims adulthood and an adult name around the age of 100 and can live to be 750 years old."
+						"Aunque los elfos alcanzan la madurez aproximadamente a la misma edad que los humanos, la concepción de la mayoría de edad de los elfos va más allá del crecimiento e incluye la experiencia vital. Los elfos suelen llegar a la edad adulta y recibir su nuevo nombre tras unos cien años y pueden llegar a vivir hasta setecientos cincuenta."
+					]
+				},
+				{
+					"name": "Alineamiento",
+					"type": "entries",
+					"entries": [
+						"Los elfos aman la libertad, la variedad y la expresión personal, por lo que tienden hacia los aspectos más beneficiosos del caos. Valoran y protegen la libertad, tanto la suya como la de los demás, y la mayoría suelen ser buenos. Los drows son una excepción; su exilio al Underdark les ha hecho sanguinarios y peligrosos. La mayoría de los drows son malvados."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Size",
+					"name": "Tamaño",
 					"entries": [
-						"Elves range from under 5 to over 6 feet tall and have slender builds. Your size is Medium."
+						"Los elfos miden entre poco menos de 5 pies y algo más de 6 pies de altura y son esbeltos. Eres de tamaño Mediano."
 					]
 				},
 				{
-					"name": "Darkvision",
+					"name": "Visión en la Oscuridad",
 					"entries": [
-						"Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"Acostumbrado a la penumbra de los bosques y el cielo nocturno, puedes ver bien en la oscuridad o con poca luz. Hasta a un máximo de 60 pies, eres capaz de ver con luz tenue como si hubiera luz brillante y en la oscuridad como si hubiera luz tenue. Eso sí, no puedes distinguir colores en la oscuridad, solo tonos de gris."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Keen Senses",
+					"name": "Sentidos Agudos",
 					"entries": [
-						"You have proficiency in the {@skill Perception} skill."
+						"Eres competente en la habilidad {@skill Percepción|PHB-ES}."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Fey Ancestry",
+					"name": "Linaje Feérico",
 					"entries": [
-						"You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+						"Tienes ventaja en las tiradas de salvación para evitar ser {@condition hechizado|PHB-ES} y la magia no puede dormirte."
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Trance",
 					"entries": [
-						"Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.",
-						"{@note If you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed.}"
+						"Los elfos no necesitan dormir. Meditan profundamente, en un estado semiconsciente, durante 4 horas al día. La palabra en común para referirse a esta meditación es \"trance\". Mientras meditas, experimentas algo parecido a sueños, que en realidad son ejercicios mentales que se han vuelto automáticos tras años de práctica. Este trance es suficiente para obtener los mismos beneficios que un humano recibe de 8 horas de sueño.",
+						"{@note Si meditas durante un descanso largo, terminas el descanso después de solo 4 horas. De lo contrario, sigue todas las reglas para un descanso largo; solo cambia la duración.}"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Languages",
+					"name": "Idiomas",
 					"entries": [
-						"You can speak, read, and write Common and Elvish. Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires."
+						"Puedes hablar, leer en común y elfo. El idioma elfo es fluido, con entonaciones sutiles y una gramática compleja. La literatura élfica es rica y variada. y sus canciones y poemas son famosos entre el resto de las razas. Muchos bardos aprenden este idioma para poder añadir baladas élficas a sus repertorios."
 					],
 					"type": "entries"
 				}
@@ -4546,95 +4590,96 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Elves are a magical people of otherworldly grace, living in the world but not entirely part of it. They live in places of ethereal beauty, in the midst of ancient forests or in silvery spires glittering with faerie light, where soft music drifts through the air and gentle fragrances waft on the breeze. Elves love nature and magic, art and artistry, music and poetry, and the good things of the world.",
+									"Los elfos son un pueblo de gracia ultraterrena, que viven en el mundo, pero no forman completamente parte de él. Habitan en lugares de belleza etérea, en medio de ancianos bosques o en torres plateadas que brillan con una luz feérica. Son espacios en los que una suave música flota en el ambiente y la brisa trae una dulce fragancia. Los elfos aman la naturaleza y la magia, el arte y la artesanía, la música y la poesía.",
 									{
 										"type": "entries",
-										"name": "Slender and Graceful",
+										"name": "Esbeltos y elegantes",
 										"entries": [
-											"With their unearthly grace and fine features, elves appear hauntingly beautiful to humans and members of many other races. They are slightly shorter than humans on average, ranging from well under 5 feet tall to just over 6 feet. They are more slender than humans, weighing only 100 to 145 pounds. Males and females are about the same height, and males are only marginally heavier than females.",
-											"Elves' coloration encompasses the normal human range and also includes skin in shades of copper, bronze, and almost bluish-white, hair of green or blue, and eyes like pools of liquid gold or silver. Elves have no facial and little body hair. They favor elegant clothing in bright colors, and they enjoy simple yet lovely jewelry."
+											"Debido a su sobrenatural elegancia y rasgos delicados, los elfos parecen arrebatadoramente bellos a ojos tanto de humanos como de miembros de muchas otras razas. Son, de media, ligeramente más bajos que los humanos, midiendo entre poco menos de 5 pies (1,5 m) y algo más de 6 pies (1,8 m) de altura.",
+											"Son más estilizados que los humanos, con pesos que oscilan entre las 100 y 145 libras (45 a 65 kilos). Varones y hembras poseen más o menos la misma altura, y aquellos son solo ligeramente más pesados que éstas.",
+											"La gama de tonos de piel, cabello y ojos de los elfos incluye el habitual en los humanos, aunque su piel también puede ser de color cobre, bronce e incluso un azul casi blanco; su pelo verde o azul; y sus ojos estanques de oro y plata. Los elfos carecen por completo de vello corporal o facial. Prefieren las ropas elegantes en colores vivos y disfrutan de joyería sencilla pero bonita."
 										]
 									},
 									{
 										"type": "entries",
-										"name": "A Timeless Perspective",
+										"name": "Una perspectiva atemporal",
 										"entries": [
-											"Elves can live well over 700 years, giving them a broad perspective on events that might trouble the shorter-lived races more deeply. They are more often amused than excited, and more likely to be curious than greedy. They tend to remain aloof and unfazed by petty happenstance. When pursuing a goal, however, whether adventuring on a mission or learning a new skill or art, elves can be focused and relentless. They are slow to make friends and enemies, and even slower to forget them. They reply to petty insults with disdain and to serious insults with vengeance.",
-											"Like the branches of a young tree, elves are flexible in the face of danger. They trust in diplomacy and compromise to resolve differences before they escalate to violence. They have been known to retreat from intrusions into their woodland homes, confident that they can simply wait the invaders out. But when the need arises, elves reveal a stern martial side, demonstrating skill with sword, bow, and strategy."
+											"Los elfos pueden vivir más de setecientos años, lo que les permite poner en perspectiva eventos que podrían afectar más profundamente a las razas de vidas más cortas. Tienden a sentirse más entretenidos que entusiasmados y son más curiosos que avariciosos. Suelen mantener la compostura ante los imprevistos, pero cuando persiguen un objetivo, ya sea partir de aventuras con una misión o aprender una nueva habilidad o arte, los elfos pueden ser obsesivos e incansables. Les lleva tiempo hacer amigos o enemigos, aunque tardan aún más en olvidarlos. Responden a los pequeños insultos con el desprecio y a los agravios de más entidad con la venganza.",
+											"Como las ramas de un árbol joven, los elfos son flexibles frente al peligro. Confían en que la diplomacia y la negociación permitirán acabar con las diferencias antes de llegar a las manos. Se sabe que han llegado a retirarse ante incursiones contra sus hogares en el bosque, confiados en la seguridad de que pueden limitarse a esperar a que los invasores se marchen. No obstante, cuando la necesidad apremia, los elfos muestran su lado más severo y marcial, haciendo gala de su habilidad con la espada, el arco y la estrategia."
 										]
 									},
 									{
 										"type": "entries",
-										"name": "Hidden Woodland and Realms",
+										"name": "Reinos ocultos en los bosques",
 										"entries": [
-											"Most elves dwell in small forest villages hidden among the trees. Elves hunt game, gather food, and grow vegetables, and their skill and magic allow them to support themselves without the need for clearing and plowing land. They are talented artisans, crafting finely worked clothes and art objects. Their contact with outsiders is usually limited, though a few elves make a good living by trading crafted items for metals (which they have no interest in mining).",
-											"Elves encountered outside their own lands are commonly traveling minstrels, artists, or sages. Human nobles compete for the services of elf instructors to teach swordplay or magic to their children."
+											"La mayoría de los elfos viven en pequeñas poblaciones escondidas entre los árboles de los bosques. Cazan, recolectan y cultivan, pero su aptitud para la magia Les permite mantenerse sin la necesidad de limpiar y arar la tierra. Son artesanos muy habilidosos, capaces de tejer delicadas prendas y crear obras de arte. Su contacto con extranjeros suele ser muy limitado, aunque algunos elfos han hecho fortuna intercambiando bienes manufacturados por metales, pues tienen poco interés por la minería.",
+											"Los elfos que se dejan ver fuera de sus tierras suelen ser juglares, artistas o sabios. Los nobles humanos compiten por los servicios de los maestros elfos, que educan a sus hijos en la magia y la esgrima."
 										]
 									},
 									{
 										"type": "inset",
-										"name": "Haughty but Gracious",
+										"name": "Arrogantes pero corteses",
 										"entries": [
-											"Although they can be haughty, elves are generally gracious - even to those who fall short of their high expectations - which is most non-elves. Still, they can find good in just about anyone.",
+											"Aunque pueden ser arrogantes, los elfos suelen mostrarse corteses incluso con aquellos que no alcanzan sus elevadas expectativas...que suelen ser mayoría entre los que no son elfos. Eso sí, pueden encontrar bondad en casi cualquiera.",
 											{
 												"type": "entries",
-												"name": "Dwarves",
+												"name": "Enanos",
 												"entries": [
-													"\"Dwarves are dull, clumsy oafs. But what they lack in humor, sophistication, and manners, they make up in valor. And I must admit, their best smiths produce art that approaches elven quality.\""
+													"\"Los enanos son zoquetes torpes y aburridos. Sin embargo, lo que les falta en sentido del humor, sofisticación y modales, lo compensan con su valor. Y, debo admitir, los mejores entre sus herreros crean arte capaz de acercarse a la calidad élfica.\""
 												]
 											},
 											{
 												"type": "entries",
-												"name": "Halflings",
+												"name": "Humanos",
 												"entries": [
-													"\"Halflings are people of simple pleasures, and that is not a quality to scorn. They're a good folk, they care for each other and tend their gardens, and they have proven themselves tougher than they seem when the need arises.\""
+													"\"Tanta prisa, ambición y ansia por lograr algo antes de que sus cortas vidas terminen. A veces los esfuerzos de los humanos parecen tan fútiles ... Pero cuando te das cuenta de lo que han conseguido tienes que apreciar sus logros. Si tan solo pudieran detenerse un momento y aprender algo de sutileza.\""
 												]
 											},
 											{
 												"type": "entries",
-												"name": "Humans",
+												"name": "Medianos",
 												"entries": [
-													"\"All that haste, their ambitions and drive to accomplish something before their brief lives pass away - human endeavors seem so futile sometimes. But then you look at what they have accomplished, and you have to appreciate their achievements. If only they could slow down and learn some refinement.\""
+													"\"Tanta prisa, ambición y ansia por lograr algo antes de que sus cortas vidas terminen. A veces los esfuerzos de los humanos parecen tan fútiles ... Pero cuando te das cuenta de lo que han conseguido tienes que apreciar sus logros. Si tan solo pudieran detenerse un momento y aprender algo de sutileza.\""
 												]
 											}
 										]
 									},
 									{
 										"type": "entries",
-										"name": "Exploration and Adventure",
+										"name": "Exploración y aventura",
 										"entries": [
-											"Elves take up adventuring out of wanderlust. Since they are so long-lived, they can enjoy centuries of exploration and discovery. They dislike the pace of human society, which is regimented from day to day but constantly changing over decades, so they find careers that let them travel freely and set their own pace. Elves also enjoy exercising their martial prowess or gaining greater magical power, and adventuring allows them to do so. Some might join with rebels fighting against oppression, and others might become champions of moral causes."
+											"Los elfos parten de aventuras movidos por un ansia por viajar. Como sus vidas son tan largas, pueden disfrutar de siglos de exploración y descubrimientos. No les gusta el ritmo de la sociedad humana que, aunque es estricta en el día a día, cambia constantemente con el paso de las décadas, por lo que buscan profesiones que les permitan viajar libremente y marcarse su propio ritmo. Los elfos también disfrutan dando rienda suelta a su habilidad marcial u obteniendo poder mágico, y una vida de aventuras les permite hacerlo. Algunos podrían unirse a rebeldes que luchan contra la opresión, mientras que otros podrían convertirse en campeones de causas morales."
 										]
 									},
 									{
 										"type": "entries",
-										"name": "Elf Names",
+										"name": "Nombres elfos",
 										"entries": [
-											"Elves are considered children until they declare themselves adults, some time after the hundredth birthday, and before this period they are called by child names.",
-											"On declaring adulthood, an elf selects an adult name, although those who knew him or her as a youngster might continue to use the child name. Each elf's adult name is a unique creation, though it might reflect the names of respected individuals or other family members. Little distinction exists between male names and female names; the groupings here reflect only general tendencies. In addition, every elf bears a family name, typically a combination of other Elvish words. Some elves traveling among humans translate their family names into Common, but others retain the Elvish version.",
+											"Los elfos son considerados niños hasta que se declaran a sí mismos adultos, en algún momento tras su centésimo cumpleaños. Antes de esta declaración reciben nombres de niños.",
+											"Tras ella cada uno elige su propio nombre de adulto, pero aquellos que los conocían desde niños quizá sigan usando el nombre de niño. Los nombres de elfos adultos son creaciones únicas, aunque podrían hacer referencia a los nombres de personas respetadas u otros parientes. Hay poca distinción entre nombres masculinos y femeninos, por lo que la forma de agruparlos que aparece a continuación refleja únicamente las tendencias más habituales. Además, todo elfo tiene un apellido, que suele ser una combinación de palabras élficas. En ocasiones, algunos de ellos, los que viajan junto a otras razas, traducen sus apellidos al común, pero otros conservan la versión élfica.",
 											{
 												"type": "list",
 												"style": "list-hang-notitle",
 												"items": [
 													{
 														"type": "item",
-														"name": "Child Names:",
+														"name": "Nombres de niño:",
 														"entry": "Ara, Bryn, Del, Eryn, Faen, Innil, Lael, Mella, Naill, Naeris, Phann, Rael, Rinn, Sai, Syllin, Thia, Vall"
 													},
 													{
 														"type": "item",
-														"name": "Male Adult Names:",
+														"name": "Nombres masculinos adultos:",
 														"entry": "Adran, Aelar, Aramil, Arannis, Aust, Beiro, Berrian, Carric, Enialis, Erdan, Erevan, Galinndan, Hadarai, Heian, Himo, Immeral, Ivellios, Laucian, Mindartis, Paelias, Peren, Quarion, Riardon, Rolen, Soveliss, Thamior, Tharivol, Theren, Varis"
 													},
 													{
 														"type": "item",
-														"name": "Female Adult Names:",
+														"name": "Nombres femeninos adultos:",
 														"entry": "Adrie, Althaea, Anastrianna, Andraste, Antinua, Bethrynna, Birel, Caelynn, Drusilia, Enna, Felosial, Ielenia, Jelenneth, Keyleth, Leshanna, Lia, Meriele, Mialee, Naivara, Quelenna, Quillathe, Sariel, Shanairra, Shava, Silaqui, Theirastra, Thia, Vadania, Valanthe, Xanaphia"
 													},
 													{
 														"type": "item",
-														"name": "Family Names (Common Translations):",
-														"entry": "Amakiir (Gemflower), Amastacia (Starflower), Galanodel (Moonwhisper), Holimion (Diamonddew), Ilphelkiir (Gemblossom), Liadon (Silverfrond), Meliamne (Oakenheel), Nailo (Nightbreeze), Siannodel (Moonbrook), Xiloscient (Goldpetal)"
+														"name": "Apellidos (traducción al común):",
+														"entry": "Amakiir (Flor Enjoyada), Amastaeia (Flor Estelar), Galanodel (Susurro Lunar), Holimion (Rocío Diamantino), Ilphelkiir (Gema Floral), Liadon (Fronda Plateada), Meliamne (Talon de Roble), Naïlo (Brisa Nocturna), Siannodel (Arroyo Lunar), Xiloscient (Pétalo Dorado)"
 													}
 												]
 											}
@@ -4657,7 +4702,7 @@
 			}
 		},
 		{
-			"name": "Gnome",
+			"name": "Gnomo",
 			"source": "PHB-ES",
 			"page": 35,
 			"srd": true,
@@ -4685,8 +4730,8 @@
 			],
 			"languageProficiencies": [
 				{
-					"common": true,
-					"gnomish": true
+					"común|PHB-ES": true,
+					"gnomo|PHB-ES": true
 				}
 			],
 			"soundClip": {
@@ -4695,37 +4740,44 @@
 			},
 			"entries": [
 				{
-					"name": "Age",
+					"name": "Edad",
 					"type": "entries",
 					"entries": [
-						"Gnomes mature at the same rate humans do, and most are expected to settle down into an adult life by around age 40. They can live 350 to almost 500 years."
+						"Los gnomos alcanzan la madurez al mismo ritmo que los humanos y se espera que la mayoría de ellos se asiente y se comporte como un adulto en torno a los cuarenta años. Pueden vivir entre trescientos cincuenta y quinientos años."
+					]
+				},
+				{
+					"name": "Alineamiento",
+					"type": "entries",
+					"entries": [
+						"Los gnomos suelen ser buenos. Aquellos que tienden hacia la ley se convierten en sabios, ingenieros, investigadores, eruditos, detectives o inventores. Por su parte, los que prefieren alinearse con el caos acaban siendo juglares, embaucadores, vagabundos o joyeros imaginativos. Los gnomos tienen buen corazón, e incluso los que se dedican al engaño tienden a ser más juguetones que maliciosos."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Size",
+					"name": "Tamaño",
 					"entries": [
-						"Gnomes are between 3 and 4 feet tall and average about 40 pounds. Your size is Small."
+						"Los gnomos miden entre 3 y 4 pies de altura y pesan unas 40 libras de media. Eres de tamaño Pequeño."
 					]
 				},
 				{
-					"name": "Darkvision",
+					"name": "Visión en la Oscuridad",
 					"entries": [
-						"Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"Acostumbrado a la vida bajo tierra, puedes ver bien en la oscuridad o con poca luz. Eres capaz de percibir hasta a 60 pies en luz tenue como si hubiera luz brillante, y esa misma distancia en la oscuridad como si hubiera luz tenue. Eso sí, no puedes distinguir colores en la oscuridad, solo tonos de gris."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Gnome Cunning",
+					"name": "Astucia Gnoma",
 					"entries": [
-						"You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic."
+						"Tienes ventaja en las tiradas de salvación de Inteligencia, Sabiduría y Carisma contra magia."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Languages",
+					"name": "Idiomas",
 					"entries": [
-						"You can speak, read, and write Common and Gnomish. The Gnomish language, which uses the Dwarvish script, is renowned for its technical treatises and its catalogs of knowledge about the natural world."
+						"Puedes hablar, leer y escribir en común y gnomo. El idioma gnomo, que se escribe con el alfabeto enano, es famoso por la cantidad de tratados técnicos y catálogos de conocimiento sobre el mundo natural escritos en él."
 					],
 					"type": "entries"
 				}
@@ -4738,60 +4790,60 @@
 							{
 								"type": "entries",
 								"entries": [
-									"A constant hum of busy activity pervades the warrens and neighborhoods where gnomes form their close-knit communities. Louder sounds punctuate the hum: a crunch of grinding gears here, a minor explosion there, a yelp of surprise or triumph, and especially bursts of laughter. Gnomes take delight in life, enjoying every moment of invention, exploration, investigation, creation, and play.",
+									"Un murmullo de actividad constante permea las madrigueras y barriadas en las que las únicas comunidades de gnomos se establecen. Sonidos más fuertes interrumpen este ruido de fondo: el crujir de engranajes girando por aquí, una explosión menor por allá, un aullido de sorpresa o triunfo y, sobre todo, risotadas. Los gnomos disfrutan de la vida, saboreando cada instante de exploración, investigación, creación y juego.",
 									{
 										"type": "entries",
-										"name": "Vibrant Expression",
+										"name": "Rebosantes de energía",
 										"entries": [
-											"A gnome's energy and enthusiasm for living shines through every inch his or her tiny body. Gnomes average slightly over 3 feet tall and weigh 40 to 45 pounds. Their tan or brown faces are usually adorned with broad smiles (beneath their prodigious noses), and their bright eyes shine with excitement. Their fair hair has a tendency to stick out in every direction, as if expressing the gnome's insatiable interest in everything around.",
-											"A gnome's personality is writ large in his or her appearance. A male gnome's beard, in contrast to his wild hair, is kept carefully trimmed but often styled into curious forks or neat points. A gnome's clothing, though usually made in modest earth tones, is elaborately decorated with embroidery, embossing, or gleaming jewels."
+											"La energía y el entusiasmo por la vida de los gnomos quedan patentes a través de todos y cada uno de los músculos de sus diminutos cuerpos. Los gnomos miden de media un poco más de 3 pies (0,9 m) de altura y pesan entre 40 y 45 libras (18 y 20 kilos). Sus rostros, marrones o morenos, suelen lucir enormes sonrisas, que asoman bajos sus prodigiosas narices, y sus ojos brillan de excitación. Su cabello tiene tendencia a extenderse en todas direcciones, como si quisiera expresar el insaciable interés de los gnomos por todo lo que los rodea.",
+											"La personalidad de un gnomo queda escrita en su apariencia. No obstante, la barba de un gnomo, en claro contraste con sus revueltos cabellos, está bien cuidada, a menudo recortada para darle una forma curiosa, con bucles y puntas. Las ropas de los gnomos, a pesar de que suelen ser tejidas en modestos tonos naturales, están elaboradamente decoradas con bordados, repujados o brillantes joyas."
 										]
 									},
 									{
 										"type": "entries",
-										"name": "Delighted Dedication",
+										"name": "Encantados de esforzarse",
 										"entries": [
-											"As far as gnomes are concerned, being alive is a wonderful thing, and they squeeze every ounce of enjoyment out of their three to five centuries of life. Humans might wonder about getting bored over the course of such a long life, and elves take plenty of time to savor the beauties of the world in their long years, but gnomes seem to worry that even with all that time, they can't get in enough of the things they want to do and see.",
-											"Gnomes speak as if they can't get the thoughts out of their heads fast enough. Even as they offer ideas and opinions on a range of subjects, they manage to listen carefully to others, adding the appropriate exclamations of surprise and appreciation along the way.",
-											"Though gnomes love jokes of all kinds, particularly puns and pranks, they're just as dedicated to the more serious tasks they undertake. Many gnomes are skilled engineers, alchemists, tinkerers, and inventors. They're willing to make mistakes and laugh at themselves in the process of perfecting what they do, taking bold (sometimes foolhardy) risks and dreaming large."
+											"En lo que a los gnomos respecta, estar vivo es maravilloso, y extraen hasta la última gota de disfrute de los entre tres y cinco siglos de vida de los que disponen. Los humanos se preguntan cómo consiguen no aburrirse a lo largo de una vida tan extensa. Los elfos saborean con calma la belleza del mundo a lo largo de sus larga existencias, pero los gnomos están preocupados de que, aún con todo el tiempo que se les ha con cedido, no puedan hacer o ver todo lo que les gustaría.",
+											"Los gnomos hablan como si no pudieran sacarse los pensamientos de la cabeza a la velocidad suficiente. Pero incluso cuando ofrecen sus ideas y opiniones sobre un amplio espectro de temas, logran escuchar atentamente a los demás, añadiendo las exclamaciones de sorpresa y aprecio adecuadas durante el proceso.",
+											"Aunque los gnomos adoran las bromas de todo tipo, en especial las pullas y las inocentadas, son igual de entregados con aquellas tareas de índole más seria a las que se dedican. Muchos gnomos son hábiles ingenieros, alquimistas, manitas e inventores. Están dispuestos a cometer fallos y se ríen de sí mismos durante el proceso que conlleva perfeccionar sus creaciones, asumiendo riesgos valientes (ya veces imprudentes) y persiguiendo grandes sueños."
 										]
 									},
 									{
 										"type": "entries",
-										"name": "Bright Burrows",
+										"name": "Madrigueras luminosas",
 										"entries": [
-											"Gnomes makes their homes in hilly, wooded lands. They live underground but get more fresh air than dwarves do, enjoying the natural, living world on the surface where ever they can. Their homes are well hidden by both clever construction and simple illusions. Welcome visitors are quickly ushered into the bright, warm burrows. Those who are not welcome are unlikely to find the burrows in the first place.",
-											"Gnomes who settle in human lands are commonly gemcutters, engineers, sages, or tinkerers. Some human families retained gnome tutors, ensuring that their pupils enjoy a mix of serious learning and delighted enjoyment. A gnome might tutor several generations of a single human family over the course of his or her long life."
+											"Los gnomos construyen sus hogares en bosques y colinas. Viven bajo tierra, pero reciben más aire fresco que los enanos, ya que disfrutan del vital mundo de la superficie siempre que pueden. Sus viviendas están bien escondidas, gracias a ingeniosas construcciones y sencillas ilusiones. Los visitantes bienvenidos son rápidamente invitados a pasar a sus cálidas y luminosas madrigueras, que una visita indeseada no llegará siquiera a encontrar.",
+											"Los gnomos que se establecen en tierras humanas suelen ser talladores de gemas, ingenieros, sabios o manitas. Algunas familias humanas contratan a tutores gnomos, asegurándose así que sus pupilos reciben a un exigente profesor y una fuente de diversión al mismo tiempo. Un gnomo podría enseñar, a lo largo de su extensa vida, a varias generaciones de la misma familia humana."
 										]
 									},
 									{
 										"type": "entries",
-										"name": "Gnome Names",
+										"name": "Nombres gnomos",
 										"entries": [
-											"Gnomes love names, and most have half a dozen or so. A gnome's mother, father, clan elder, aunts, and uncles each give the gnome a name, and various nicknames from just about everyone else might or might not stick over time. Gnome names are typically variants on the names of ancestors or distant relatives, though some are truly new inventions. When dealing with humans and others who are \"Stuffy\" about names, a gnome learns to use no more than three names; A personal name, a clan name, and a nickname, choosing the one in each category that's the most fun to say.",
+											"Los gnomos aman los nombres y, por ello, la mayoría tiene una media docena. El padre, la madre, el anciano del clan, los tíos y las tías eligen cada uno un nombre para el gnomo. Además, varios apodos de diversos orígenes podrían acabar arraigando. Los nombres gnomos suelen ser variantes de los de ancestros o parientes lejanos, aunque algunos son creaciones completamente nuevas. Cuando tratan con humanos y otras razas más \"estiradas\" con los nombres, los gnomos aprenden a usar no más de tres: un nombre personal, un nombre de clan y un apodo. Escogen para cada categoría el que sea más divertido de pronunciar.",
 											{
 												"type": "list",
 												"style": "list-hang-notitle",
 												"items": [
 													{
 														"type": "item",
-														"name": "Male Names:",
+														"name": "Nombres masculinos:",
 														"entry": "Alston, Alvyn, Boddynock, Brocc, Ettrgell, Dimble, Eldon, Erky, Fonkin, Frug, Gerbo, Gimble, Glim, Jebeddo, Kellen, Namfoodle. Orryn, Roondar, Seebo, Warryn, Wrenn, Zook"
 													},
 													{
 														"type": "item",
-														"name": "Female Names:",
+														"name": "Nombres femeninos:",
 														"entry": "Bimpnottin, Breena, Caramip, Carlin, Donella, Duvamil, Ella, Ellyjobell, Ellywick, Lilli, Loopmottin, Lorilla, Mardnab, Nissa, Nyx, Oda, Orla, Roywyn, Shamil, Tana, Waywocket, Zanna"
 													},
 													{
 														"type": "item",
-														"name": "Clan Names:",
+														"name": "Nombres de clan:",
 														"entry": "Beren, Daergel, Folkor, Garrick, Nackle, Murnig, Ningcl, Raulnor, Seheppen, Timbers, Turen"
 													},
 													{
 														"type": "item",
-														"name": "Nicknames:",
-														"entry": "Aleslosh, Aslthearth, Badger, Cloak, Doublelock, Filchbatter, Fnipper, Ku, Nina, Oneshoe, Pock, Sparklegem, Scumbleduck"
+														"name": "Apodos:",
+														"entry": "Birlaypega, Capa, Derramacerveza, Doblecierre, Fnipper, Gemabrillante, Hogarceniza, Ku, Nim, Pock, Tropiezapato, Tejón, Unzapato."
 													}
 												]
 											}
@@ -4799,16 +4851,16 @@
 									},
 									{
 										"type": "entries",
-										"name": "Seeing The World",
+										"name": "Ver mundo",
 										"entries": [
-											"Curious and impulsive, gnomes might take up adventuring as a way to see the world or for the love of exploring. As lovers of gems and other fine items, some gnomes take to adventuring as s quick, if dangerous, path to wealth. Regardless of what spurs them to adventure, gnomes who adopt this way of life eke as much enjoyment out of it as they do out of any other activity they undertake, sometimes to the great annoyance of their adventuring companions."
+											"Curiosos e impulsivos, los gnomos pueden partir de aventuras como forma de conocer mundo o por el deseo de explorar. Dado que son amantes de las gemas y otros objetos hermosos, algunos gnomos ven la vida del aventurero como una manera rápida, aunque peligrosa, de amasar fortuna. Independientemente de que motivos tengan, los gnomos que adoptan esta forma de vida extraen de ella toda la diversión que pueden, como lo harían con cualquier otra actividad. A veces esto irrita sobremanera a sus compañeros de aventuras."
 										]
 									},
 									{
 										"type": "inset",
-										"name": "Deep Gnomes",
+										"name": "Gnomo de las profundidades",
 										"entries": [
-											"A third sub race of gnomes, the deep gnomes (or svirfneblin) live in small communities scattered in the Underdark. Unlike the duergar and the drow, svirfneblin are as good as their surface cousins. However, their humor and enthusiasm are dampened by their oppressive environment, and their inventive expertise is directed mostly toward stonework."
+											"Existe una tercera subraza de gnomos, los de las profundidades (o svirfneblins), que viven en pequeñas comunidades desperdigadas por el Underdark. A diferencia de los duergars y los drows, los svirfneblins son igual de bondadosos que sus primos de la superficie. Sin embargo, su humor y entusiasmo son atenuados por el entorno opresivo que les rodea, y su pericia e inventiva se centran en el trabajo con la piedra."
 										]
 									}
 								]
@@ -4816,43 +4868,68 @@
 						]
 					},
 					{
-						"name": "Uncommon Races",
+						"name": "Razas poco comunes",
 						"type": "inset",
 						"entries": [
-							"This race, and those listed below, are uncommon. They don't exist in every world of D&D, and even where they are found, they are less widespread than dwarves, elves, halflings, and humans. In the cosmopolitan cities of the D&D multiverse, most people hardly look twice at members of even the most exotic races. But the small towns and villages that dot the countryside are different. The common folk aren't accustomed to seeing members of these races, and they react accordingly.",
+							"Esta raza y el resto de las razas en esta lista son poco comunes. No existen en todos los mundos de D&D, e incluso donde se encuentran, están menos extendidos que los enanos, elfos, medianos y humanos. En las ciudades cosmopolitas del multiverso D&D, la mayoría de las personas apenas miran a los miembros de las razas más exóticas. Pero las pequeñas ciudades y pueblos que salpican el campo son diferentes. La gente común no está acostumbrada a ver miembros de estas razas, y reaccionan en consecuencia.",
 							{
 								"type": "entries",
-								"name": "Dragonborn",
 								"entries": [
-									"It's easy to assume that a dragonborn is a monster, especially if his or her scales betray a chromatic heritage. Unless the dragonborn starts breathing fire and causing destruction, though, people are likely to respond with caution rather than outright fear."
+									{
+										"type": "entries",
+										"name": "Dracónido",
+										"entries": [
+											"Es fácil suponer que un dracónido es un monstruo, especialmente si sus escamas demuestran una herencia cromática. Sin embargo, a menos que el dracónido comience a escupir fuego y a causar destrucción, es probable que las personas respondan con precaución en lugar de un miedo absurdo."
+										]
+									}
 								]
 							},
 							{
 								"type": "entries",
-								"name": "Gnome",
 								"entries": [
-									"Gnomes don't look like a threat and can quickly disarm suspicion with good humor. The common folk are often curious about gnomes, likely never having seen one before, but they are rarely hostile or fearful."
+									{
+										"type": "entries",
+										"name": "Gnomo",
+										"entries": [
+											"Los gnomos no parecen una amenaza y pueden desarmar rápidamente cualquier sospecha mediante su buen humor. La gente común a menudo siente curiosidad por los gnomos, probablemente nunca hayan visto uno antes, pero rara vez se comportan de forma hostil o temerosa."
+										]
+									}
 								]
 							},
 							{
 								"type": "entries",
-								"name": "Half-Elf",
 								"entries": [
-									"Although many people have never seen a half-elf, virtually everyone knows they exist. A half-elf stranger's arrival is followed by gossip behind the half-elf's back and stolen glances across the common room, rather than any confrontation or open curiosity."
+									{
+										"type": "entries",
+										"name": "Semielfo",
+										"entries": [
+											"Aunque muchas personas nunca han visto a un semielfo, prácticamente todos saben que existen. La llegada de un extraño semielfo es seguida por chismes a la espalda del semielfo y miradas recelosas a través de la sala común, en lugar de cualquier confrontación o curiosidad abierta."
+										]
+									}
 								]
 							},
 							{
 								"type": "entries",
-								"name": "Half-Orc",
 								"entries": [
-									"It's usually safe to assume that a half-orc is belligerent and quick to anger, so people watch themselves around an unfamiliar half-orc. Shopkeepers might surreptitiously hide valuable or fragile goods when a half-orc comes in, and people slowly clear out of a tavern, assuming a fight will break out soon."
+									{
+										"type": "entries",
+										"name": "Semiorco",
+										"entries": [
+											"Por lo general, es seguro asumir que un semiorco es beligerante y se cabrea rápidamente, por lo que las personas se miran alrededor de un semiorco desconocido. Los comerciantes pueden esconder disimuladamente bienes valiosos o frágiles cuando entra un semiorco, y la gente se va lentamente de una taberna, suponiendo que pronto se desatará una pelea."
+										]
+									}
 								]
 							},
 							{
 								"type": "entries",
-								"name": "Tiefling",
 								"entries": [
-									"Half-orcs are greeted with a practical caution, but tieflings are the subject of supernatural fear. The evil of their heritage is plainly visible in their features, and as far as most people are concerned, a tiefling could very well be a devil straight from the Nine Hells. People might make warding signs as a tiefling approaches, cross the street to avoid passing near, or bar shop doors before a tiefling can enter."
+									{
+										"type": "entries",
+										"name": "Tiefling",
+										"entries": [
+											"Los semiorcos son recibidos con una precaución práctica, pero los tieflings son objeto de un miedo sobrenatural. El mal de su herencia es claramente visible en su físico, y en lo que respecta a la mayoría de las personas, un tiefling bien podría ser un demonio llegado directamente de los Nueve Infiernos. Las personas pueden hacer simbolos de protección cuando se acerca un tiefling, cruzar la calle para evitar pasar cerca o cerrar las puertas de las tiendas antes de que pueda entrar un tiefling."
+										]
+									}
 								]
 							}
 						]
@@ -4870,7 +4947,7 @@
 			}
 		},
 		{
-			"name": "Half-Elf",
+			"name": "Semielfo",
 			"source": "PHB-ES",
 			"page": 38,
 			"srd": true,
@@ -4914,8 +4991,8 @@
 			],
 			"languageProficiencies": [
 				{
-					"common": true,
-					"elvish": true,
+					"común|PHB-ES": true,
+					"elfo|PHB-ES": true,
 					"anyStandard": 1
 				}
 			],
@@ -4925,44 +5002,51 @@
 			},
 			"entries": [
 				{
-					"name": "Age",
+					"name": "Edad",
 					"type": "entries",
 					"entries": [
-						"Half-elves mature at the same rate humans do and reach adulthood around the age of 20. They live much longer than humans, however, often exceeding 180 years."
+						"Los semielfos maduran al mismo ritmo que los humanos y alcanzan la edad adulta en torno a los veinte años. No obstante, viven mucho más que los humanos, superando a veces los ciento ochenta años."
+					]
+				},
+				{
+					"name": "Alineamiento",
+					"type": "entries",
+					"entries": [
+						"Los semielfos comparten la vena caótica de su linaje élfico. Valoran tanto la libertad individual como la creatividad, y no demuestran aprecio por los líderes ni desean seguidores. Les irritan las normas, se molestan con las órdenes de otros y a veces pueden no ser de confianza o, como mínimo, resultar impredecibles."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Size",
+					"name": "Tamaño",
 					"entries": [
-						"Half-elves are about the same size as humans, ranging from 5 to 6 feet tall. Your size is Medium."
+						"Los semielfos miden más o menos lo mismo que los humanos, entre 5 y 6 pies de alto. Eres de tamaño Mediano."
 					]
 				},
 				{
-					"name": "Darkvision",
+					"name": "Visión en la Oscuridad",
 					"entries": [
-						"Thanks to your elf blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"Debido a tu sangre élfica, puedes ver bien en la oscuridad o con poca luz. Eres capaz de percibir hasta a 60 pies en luz tenue como si hubiera luz brillante, y esa misma distancia en la oscuridad como si hubiera luz tenue. Eso sí, no puedes distinguir colores en la oscuridad, solo tonos de gris"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Fey Ancestry",
+					"name": "Linaje Feérico",
 					"entries": [
-						"You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+						"Tienes ventaja en las tiradas de salvación para evitar ser {@condition hechizado|PHB-ES} y la magia no puede dormirte."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Skill Versatility",
+					"name": "Versátil con Habilidades",
 					"entries": [
-						"You gain proficiency in two skills of your choice."
+						"Ganas competencia en dos habilidades de tu elección."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Languages",
+					"name": "Idiomas",
 					"entries": [
-						"You can speak, read, and write Common, Elvish, and one extra language of your choice."
+						"Puedes hablar, leer y escribir común, elfo y un idioma adicional de tu elección."
 					],
 					"type": "entries"
 				}
@@ -4975,34 +5059,34 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Walking in two worlds but truly belonging to neither, half-elves combine what some say are the best qualities of their elf and human parents: human curiosity, inventiveness, and ambition tempered by the refined senses, love of nature, and artistic tastes of the elves. Some half-elves live among humans, set apart by their emotional and physical differences, watching friends and loved ones age while time barely touches them. Others live with the elves, growing to adulthood while their peers continue to live as children, growing restless in the timeless elven realms. Many half-elves, unable to fit into either society, choose lives of solitary wandering or join with other misfits and outcasts in the adventuring life.",
+									"Caminando entre dos mundos, pero sin pertenecer realmente a ninguno de ellos, los semielfos combinan las que, según algunos, son las mejores cualidades de sus padres elfos y humanos: la curiosidad, inventiva y ambición de estos últimos, aunque moderadas por los sentidos refinados, amor por la naturaleza y gusto por el arte de los primeros. Ciertos semielfos viven entre los humanos, pero separados por sus diferencias físicas y emocionales, pues ven como sus amigos y seres queridos envejecen mientras que a ellos el tiempo no parece afectarles. Otros conviven con los elfos, sintiéndose inquietos al llegar a la edad adulta en los atemporales reinos élficos, mientras sus compañeros siguen viviendo como niños. Muchos semielfos, incapaces de encajar en ninguna de estas dos sociedades, eligen llevar vidas errantes, ya sea en solitario o con otros inadaptados o marginados, formando grupos de aventureros.",
 									{
 										"type": "entries",
-										"name": "Of Two Worlds",
+										"name": "De dos mundos",
 										"entries": [
-											"To humans, half-elves look like elves, and to elves, they look human. In height, they're on par with both parents, though they're neither as slender as elves nor as broad as humans. They range from under 5 feet to about 6 feet tall, and from 100 to 180 pounds, with men only slightly taller and heavier than women. Half-elf men do have facial hair, and sometimes grow beards to mask their elven ancestry. Half-elven coloration and features lie, somewhere between their human and elf parents, and thus show a variety even more pronounced than that found among either race. They tend to have the eyes of their elven parents."
+											"Para los humanos, los semielfos parecen elfos, mientras que, para los elfos, parecen humanos. Su altura es comparable a la de ambos progenitores, aunque no son ni tan esbeltos como los elfos ni tan robustos como los humanos. Miden entre 5 y 6 pies (1,5 a 1,8 m) y pesan entre 100 y 180 libras (45 a 80 kilos). Los hombres son sólo ligeramente más altos y pesados que las mujeres. Los varones semielfos poseen vello facial y, a veces, se dejan barba para ocultar su linaje elfo. Sus tonos de piel y pelo son una mezcla de los de los elfos y humanos de los que descienden, por lo que muestran una variedad de colores más extensa que la de cualquiera de las dos razas. Suelen tener los ojos de su lado elfo."
 										]
 									},
 									{
 										"type": "entries",
-										"name": "Diplomats or Wanderers",
+										"name": "Diplomáticos y vagabundos",
 										"entries": [
-											"Half-elves have no lands of their own, though they are welcome in human cities and somewhat less welcome in elven forests. In large cities in regions where elves and humans interact often, half-elves are sometimes numerous enough to form small communities of their own. They enjoy the company of other half-elves, the only people who truly understand what it is to live between these two worlds.",
-											"In most parts of the world, though, half-elves are uncommon enough that one might live for years without meeting another. Some prefer to avoid company altogether, wandering the wilds as foresters, hunters, or adventurers and visiting civilization only rarely. Like elves, they are driven by the wanderlust that comes of their longevity. Others, in contrast, throw themselves into the thick of society, putting their charisma and social skills to great use in diplomatic roles or as swindlers."
+											"Los semielfos no poseen un territorio propio, aunque son bienvenidos en las ciudades humanas y, en menor medida, los bosques élficos. A veces, en las grandes ciudades de zonas en las que los humanos y los elfos se encuentran a menudo, los semielfos son lo bastante numerosos como para formar sus propias comunidades. Disfrutan de la compañía de otros semielfos, pues son los únicos que pueden entender de verdad lo que implica vivir entre dos mundos.",
+											"Sin embargo, en la mayor parte del mundo los semielfos son lo bastante poco comunes como para que pasen muchos años sin que uno se tropiece con otro. Además, algunos prefieren evitar toda compañía, vagando por la naturaleza como tramperos, guardabosques, cazadores o aventureros que visitan la civilización muy de vez en cuando. Como los elfos, su longevidad se traduce en un anhelo por viajar. Aunque algunos semielfos prefieren abrazar por completo la sociedad, aprovechando su carisma y habilidades sociales para medrar como diplomáticos, mediadores o estafadores."
 										]
 									},
 									{
 										"type": "entries",
-										"name": "Half-Elf Names",
+										"name": "Nombres semielfos",
 										"entries": [
-											"Half-elves use either human or elven naming conventions. As if to emphasize that they don't really fit in to either society, half-elves raised among humans are often given elven names, and those raised among elves often take human names."
+											"Los semielfos adoptan nombres elfos o humanos. Como modo de enfatizar que no pertenecen realmente a ninguna de las dos sociedades de las que descienden, los semielfos criados junto a humanos suelen escoger nombres elfos, y los que crecieron junto a elfos, nombres humanos."
 										]
 									},
 									{
 										"type": "inset",
-										"name": "Excellent Ambassadors",
+										"name": "Embajadores sobresalientes",
 										"entries": [
-											"Many half-elves learn at an early age to get along with everyone, defusing hostility and finding common ground. As a race, they have elves grace without elves aloofness and human energy without human boorishness. They often make excellent ambassadors and go-betweens (except between elves and humans, since each side suspects the half-elf of favoring the other)."
+											"Muchos semielfos aprenden desde muy pequeños a llevarse bien con todos, apaciguando hostilidades y encontrando intereses comunes. Como raza, poseen la elegancia de los elfos, pero sin su arrogancia, así como la energía de los humanos, pero sin su grosería. Suelen ser embajadores e intermediarios excelentes, excepto cuando se trata de relaciones entre elfos y humanos, ya que ambos bandos sospechan que el semielfo está favoreciendo al otro."
 										]
 									}
 								]
@@ -5010,43 +5094,68 @@
 						]
 					},
 					{
-						"name": "Uncommon Races",
+						"name": "Razas poco comunes",
 						"type": "inset",
 						"entries": [
-							"This race, and those listed below, are uncommon. They don't exist in every world of D&D, and even where they are found, they are less widespread than dwarves, elves, halflings, and humans. In the cosmopolitan cities of the D&D multiverse, most people hardly look twice at members of even the most exotic races. But the small towns and villages that dot the countryside are different. The common folk aren't accustomed to seeing members of these races, and they react accordingly.",
+							"Esta raza y el resto de las razas en esta lista son poco comunes. No existen en todos los mundos de D&D, e incluso donde se encuentran, están menos extendidos que los enanos, elfos, medianos y humanos. En las ciudades cosmopolitas del multiverso D&D, la mayoría de las personas apenas miran a los miembros de las razas más exóticas. Pero las pequeñas ciudades y pueblos que salpican el campo son diferentes. La gente común no está acostumbrada a ver miembros de estas razas, y reaccionan en consecuencia.",
 							{
 								"type": "entries",
-								"name": "Dragonborn",
 								"entries": [
-									"It's easy to assume that a dragonborn is a monster, especially if his or her scales betray a chromatic heritage. Unless the dragonborn starts breathing fire and causing destruction, though, people are likely to respond with caution rather than outright fear."
+									{
+										"type": "entries",
+										"name": "Dracónido",
+										"entries": [
+											"Es fácil suponer que un dracónido es un monstruo, especialmente si sus escamas demuestran una herencia cromática. Sin embargo, a menos que el dracónido comience a escupir fuego y a causar destrucción, es probable que las personas respondan con precaución en lugar de un miedo absurdo."
+										]
+									}
 								]
 							},
 							{
 								"type": "entries",
-								"name": "Gnome",
 								"entries": [
-									"Gnomes don't look like a threat and can quickly disarm suspicion with good humor. The common folk are often curious about gnomes, likely never having seen one before, but they are rarely hostile or fearful."
+									{
+										"type": "entries",
+										"name": "Gnomo",
+										"entries": [
+											"Los gnomos no parecen una amenaza y pueden desarmar rápidamente cualquier sospecha mediante su buen humor. La gente común a menudo siente curiosidad por los gnomos, probablemente nunca hayan visto uno antes, pero rara vez se comportan de forma hostil o temerosa."
+										]
+									}
 								]
 							},
 							{
 								"type": "entries",
-								"name": "Half-Elf",
 								"entries": [
-									"Although many people have never seen a half-elf, virtually everyone knows they exist. A half-elf stranger's arrival is followed by gossip behind the half-elf's back and stolen glances across the common room, rather than any confrontation or open curiosity."
+									{
+										"type": "entries",
+										"name": "Semielfo",
+										"entries": [
+											"Aunque muchas personas nunca han visto a un semielfo, prácticamente todos saben que existen. La llegada de un extraño semielfo es seguida por chismes a la espalda del semielfo y miradas recelosas a través de la sala común, en lugar de cualquier confrontación o curiosidad abierta."
+										]
+									}
 								]
 							},
 							{
 								"type": "entries",
-								"name": "Half-Orc",
 								"entries": [
-									"It's usually safe to assume that a half-orc is belligerent and quick to anger, so people watch themselves around an unfamiliar half-orc. Shopkeepers might surreptitiously hide valuable or fragile goods when a half-orc comes in, and people slowly clear out of a tavern, assuming a fight will break out soon."
+									{
+										"type": "entries",
+										"name": "Semiorco",
+										"entries": [
+											"Por lo general, es seguro asumir que un semiorco es beligerante y se cabrea rápidamente, por lo que las personas se miran alrededor de un semiorco desconocido. Los comerciantes pueden esconder disimuladamente bienes valiosos o frágiles cuando entra un semiorco, y la gente se va lentamente de una taberna, suponiendo que pronto se desatará una pelea."
+										]
+									}
 								]
 							},
 							{
 								"type": "entries",
-								"name": "Tiefling",
 								"entries": [
-									"Half-orcs are greeted with a practical caution, but tieflings are the subject of supernatural fear. The evil of their heritage is plainly visible in their features, and as far as most people are concerned, a tiefling could very well be a devil straight from the Nine Hells. People might make warding signs as a tiefling approaches, cross the street to avoid passing near, or bar shop doors before a tiefling can enter."
+									{
+										"type": "entries",
+										"name": "Tiefling",
+										"entries": [
+											"Los semiorcos son recibidos con una precaución práctica, pero los tieflings son objeto de un miedo sobrenatural. El mal de su herencia es claramente visible en su físico, y en lo que respecta a la mayoría de las personas, un tiefling bien podría ser un demonio llegado directamente de los Nueve Infiernos. Las personas pueden hacer simbolos de protección cuando se acerca un tiefling, cruzar la calle para evitar pasar cerca o cerrar las puertas de las tiendas antes de que pueda entrar un tiefling."
+										]
+									}
 								]
 							}
 						]
@@ -5064,7 +5173,7 @@
 			}
 		},
 		{
-			"name": "Half-Orc",
+			"name": "Semiorco",
 			"source": "PHB-ES",
 			"page": 40,
 			"srd": true,
@@ -5099,8 +5208,8 @@
 			],
 			"languageProficiencies": [
 				{
-					"common": true,
-					"orc": true
+					"común|PHB-ES": true,
+					"orco|PHB-ES": true
 				}
 			],
 			"soundClip": {
@@ -5109,51 +5218,58 @@
 			},
 			"entries": [
 				{
-					"name": "Age",
+					"name": "Edad",
 					"type": "entries",
 					"entries": [
-						"Half-orcs mature a little faster than humans, reaching adulthood around age 14. They age noticeably faster and rarely live longer than 75 years."
+						"Los semiorcos maduran un poco más rápido que los humanos, llegando a la edad adulta en torno a los catorce años. También envejecen visiblemente más deprisa y rara vez viven más de setenta y cinco años."
+					]
+				},
+				{
+					"name": "Alineamiento",
+					"type": "entries",
+					"entries": [
+						"Los semiorcos han heredado la tendencia hacia el caos de su progenitor orco y no sienten una inclinación especial hacia el bien. Los que han sido criados entre orcos y aspiran a vivir junto a ellos suelen ser malvados."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Size",
+					"name": "Tamaño",
 					"entries": [
-						"Half-orcs are somewhat larger and bulkier than humans, and they range from 5 to well over 6 feet tall. Your size is Medium."
+						"Los semiorcos son ligeramente más altos y corpulentos que los humanos, midiendo desde 5 hasta bastante por encima de 6 pies de altura. Eres de tamaño Mediano."
 					]
 				},
 				{
-					"name": "Darkvision",
+					"name": "Visión en la Oscuridad",
 					"entries": [
-						"Thanks to your orc blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"Debido a tu sangre orca, puedes ver bien en la oscuridad o con poca luz. Eres capaz de percibir hasta a 60 pies en luz tenue como si hubiera luz brillante, y esa misma distancia en la oscuridad como si hubiera luz tenue. Eso sí, no puedes distinguir colores en la oscuridad, solo tonos de gris."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Menacing",
+					"name": "Amenazador",
 					"entries": [
-						"You gain proficiency in the {@skill Intimidation} skill."
+						"Eres competente en la habilidad {@skill Intimidación|PHB-ES}"
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Relentless Endurance",
+					"name": "Aguante Incansable",
 					"entries": [
-						"When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest."
+						"Cuando tus puntos de golpe se reducen a 0 pero no mueres instantáneamente, puedes volver a tener 1 punto de golpe. Una vez utilizado este atributo, deberás terminar un descanso largo para poder volver a usarlo otra vez."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Savage Attacks",
+					"name": "Ataques Salvajes",
 					"entries": [
-						"When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit."
+						"Cuando hagas un crítico con un ataque con arma cuerpo a cuerpo, podrás tirar uno de los dados de daño del arma una vez más y añadir el resultado al daño adicional causado por el crítico."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Languages",
+					"name": "Idiomas",
 					"entries": [
-						"You can speak, read, and write Common and Orc. Orc is a harsh, grating language with hard consonants. It has no script of its own but is written in the Dwarvish script."
+						"Puedes hablar, leer y escribir en común y orco. El orco es un idioma áspero y severo, con consonantes duras. No tiene escritura propia, pero para transcribirlo se usa el alfabeto enano."
 					],
 					"type": "entries"
 				}
@@ -5166,40 +5282,47 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Whether united under the leadership of a mighty warlock or having fought to a standstill after years of conflict, orc and human tribes sometimes form alliances, joining forces into a larger horde to the terror of civilized lands nearby. When these alliances are sealed by marriages, half-orcs are born. Some half-orcs rise to become proud chiefs of orc tribes, their human blood giving them an edge over their full-blooded orc rivals. Some venture into the world to prove their worth among humans and other civilized races. Many of these become adventurers, achieving greatness for their mighty deeds and notoriety for their barbaric customs and savage fury.",
+									"Ya sea unidas bajo el mando de un poderoso brujo o tras haber llegado a una tregua tras años de conflicto, las tribus orcas y humanas a veces forman alianzas, aunando fuerzas en una gran horda que aterroriza a sus vecinos más civilizados. Cuando estas alianzas se sellan con matrimonios, nacen los semiorcos. Algunos semiorcos medran hasta convertirse en orgullosos jefes de tribus orcas, apoyándose en la ventaja que su sangre humana les proporciona sobre sus rivales orcos. Otros parten para conocer el mundo y demostrar su valía entre humanos y otras razas civilizadas. De entre estos, muchos se convierten en aventureros, alcanzando la gloria mediante sus proezas y la fama gracias a sus costumbres bárbaras y su furia salvaje.",
 									{
 										"type": "entries",
-										"name": "Scarred and Strong",
+										"name": "Fuertes y cubiertos de cicatrices",
 										"entries": [
-											"Half-orcs' grayish pigmentation, sloping foreheads, jutting jaws, prominent teeth, and towering builds make their orcish heritage plain for all to see. Half-orcs stand between 6 and 7 feet tall and usually weigh between 180 and 250 pounds.",
-											"Orcs regard battle scars as tokens or pride and ornamental scars as things of beauty. Other scars, though, mark an Orc, or half-orc as a former slave or a disgraced exile. Any half-orc who has lived among or near orcs has scars, whether they are marks of humiliation or of pride, recounting their past exploits and injuries. Such a half-orc living among humans might display these scars proudly or hide them in shame."
+											"La pigmentación gris, frente huidiza, mandíbula prominente, dientes afilados e impresionante constitución denotan claramente la sangre orca de los semiorcos. Miden entre 5 y 7 pies (1,5 a 2,1 m) de altura y normalmente pesan entre 180 y 250 libras (80 a 115 kilos).",
+											"Los orcos consideran a las cicatrices de guerra trofeos de los que estar orgullosos y a las escarificaciones ornamentales hermosos adornos. Sin embargo, las cicatrices que tienen otro origen pueden marcar al orco o semiorco como un antiguo esclavo o un exiliado sin honor. Así, todo semiorco que haya vivido entre o cerca de orcos luce cicatrices, ya sean estas marcas de humillación o de orgullo, o señales de éxitos y heridas pasadas. Algunos de estos semiorcos muestran orgullosos sus cicatrices cuando se encuentran entre humanos, mientras que otros las ocultan avergonzados."
 										]
 									},
 									{
 										"type": "entries",
-										"name": "The Mark of Gruumsh",
+										"name": "La marca de Gruumsh",
 										"entries": [
-											"The one-eyed god Gruumsh created the Orcs, and even those orcs who turn away from his worship can't fully escape his influence. The same is true of half orcs, though their human blood moderates the impact of their orcish heritage. Some half-orcs hear the whispers of Grummsh in their dreams, calling them to unleash the rage that simmers within them. Others feel Gruumsh's exultation when they join in melee combat-and either exult along with him or shiver with fear and loathing. Half-orcs are not evil by nature, but evil does lurk within them, whether they embrace it or rebel against it.",
-											"Beyond the rage of Gruumsh, half-orcs feel emotion powerfully. Rage doesn't just quicken their pulse, it makes their bodies burn. An insult stings like acid, and sadness saps their strength. But they laugh loudly and heartily, and simple bodily pleasures-feasting, drinking, wrestling, drumming, and wild dancing-fill their hearts with joy. They tend to be short tempered and sometimes sullen, more inclined to action than contemplation and to fighting than arguing. The most accomplished half-orcs are those with enough self control to get by in a civilized land."
+											"Gruumsh, el dios tuerto, creó a los orcos, e incluso aquellos que se han apartado de su adoración no pueden escapar por completo de su influencia. Lo mismo puede decirse de los semiorcos, a pesar de que el linaje humano modera el peso de su herencia orca. Algunos semiorcos escuchan en sueños los susurros de Gruumsh, que les llama a descargar la ira que bulle en su interior. Otros sienten el júbilo de la deidad cuando combaten cuerpo a cuerpo, y o bien se dejan llevar por esta alegría o tiemblan de miedo y asco. Los semiorcos no son malvados por naturaleza, pero sí que habita en ellos la maldad. Es elección suya abrazarla o rebelarse contra ella.",
+											"Además de la furia de Gruumsh, los semiorcos también experimentan otras emociones con intensidad. La rabia no solo acelera su pulso, sino que hace sus cuerpos arder. Los insultos pican como el ácido y la tristeza les priva de fuerzas. Igualmente, ríen con fuerza y de corazón, y los placeres mundanos sencillos, como comer, beber, pelear, tocar tambores o bailar salvajemente, llenan sus almas de alegría. Suelen tener poca paciencia y ser taciturnos, además de preferir la acción a la reflexión y luchar frente a discutir. Los semiorcos que llegan más lejos son aquellos que poseen la autodisciplina suficiente como para vivir en la civilización."
 										]
 									},
 									{
 										"type": "entries",
-										"name": "Half-Orc Names",
+										"name": "Tribus y barrios pobres",
 										"entries": [
-											"Half-orcs usually have names appropriate to the culture in which they were raised. A half-orc who wants to fit in among humans might trade an orc name for a human name. Some half-orcs with human names decide to adopt a guttural orc name because they think it makes them more intimidating.",
+											"La mayoría de los semiorcos viven entre orcos. Del resto de razas, la que más probabilidad tiene de aceptarles son los humanos, por lo que los semiorcos casi siempre habitan en los territorios de esta raza cuando no lo hacen con orcos. Ya sea demostrando su valía entre las violentas tribus bárbaras o sobreviviendo con uñas y dientes en los peores barrios de ciudades grandes, los semiorcos salen adelante gracias a su poderío físico, su aguante y la determinación heredada de su linaje humano."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Nombres semiorcos",
+										"entries": [
+											"Los semiorcos suelen emplear nombres apropiados a la cultura en la que fueron criados. Aunque los que quieren encajar con humanos podrían cambiar un nombre orco por otro humano. De forma similar, algunos semiorcos con nombre humano deciden adoptar un nombre orco porque opinan que les hace más amenazadores.",
 											{
 												"type": "list",
 												"style": "list-hang-notitle",
 												"items": [
 													{
 														"type": "item",
-														"name": "Male Orc Names:",
+														"name": "Nombres orcos masculinos:",
 														"entry": "Dench, Feng, Gell, Henk, Holg, Imsh, Keth, Krusk, Mhurren, Ront, Shump, Thokk"
 													},
 													{
 														"type": "item",
-														"name": "Female Orc Names:",
+														"name": "Nombres orcos femeninos:",
 														"entry": "Baggi, Emen, Engong, Kansif, Myev, Neega, Ovak, Ownka, Shautha, Vola, Volen, Yevelda"
 													}
 												]
@@ -5208,9 +5331,9 @@
 									},
 									{
 										"type": "inset",
-										"name": "Grudging Acceptance",
+										"name": "Aceptados a regañadientes",
 										"entries": [
-											"Each half-orc finds a way to gain acceptance from those who hate orcs. Some are reserved, trying not to draw attention to themselves. A few demonstrate piety and good-heartedness as publicly as they can (whether or not such demonstrations are genuine). And some simply try to be so tough that others just avoid them."
+											"Cada semiorco encuentra su forma de ser aceptado por aquellos que odian a los orcos. Algunos son reservados y procuran no atraer la atención. Unos pocos demuestran piedad y buen corazón tan públicamente como pueden, sean auténticos o no estos gestos. Otros simplemente intentan ser lo bastante duros para que los demás los eviten."
 										]
 									}
 								]
@@ -5218,43 +5341,68 @@
 						]
 					},
 					{
-						"name": "Uncommon Races",
+						"name": "Razas poco comunes",
 						"type": "inset",
 						"entries": [
-							"This race, and those listed below, are uncommon. They don't exist in every world of D&D, and even where they are found, they are less widespread than dwarves, elves, halflings, and humans. In the cosmopolitan cities of the D&D multiverse, most people hardly look twice at members of even the most exotic races. But the small towns and villages that dot the countryside are different. The common folk aren't accustomed to seeing members of these races, and they react accordingly.",
+							"Esta raza y el resto de las razas en esta lista son poco comunes. No existen en todos los mundos de D&D, e incluso donde se encuentran, están menos extendidos que los enanos, elfos, medianos y humanos. En las ciudades cosmopolitas del multiverso D&D, la mayoría de las personas apenas miran a los miembros de las razas más exóticas. Pero las pequeñas ciudades y pueblos que salpican el campo son diferentes. La gente común no está acostumbrada a ver miembros de estas razas, y reaccionan en consecuencia.",
 							{
 								"type": "entries",
-								"name": "Dragonborn",
 								"entries": [
-									"It's easy to assume that a dragonborn is a monster, especially if his or her scales betray a chromatic heritage. Unless the dragonborn starts breathing fire and causing destruction, though, people are likely to respond with caution rather than outright fear."
+									{
+										"type": "entries",
+										"name": "Dracónido",
+										"entries": [
+											"Es fácil suponer que un dracónido es un monstruo, especialmente si sus escamas demuestran una herencia cromática. Sin embargo, a menos que el dracónido comience a escupir fuego y a causar destrucción, es probable que las personas respondan con precaución en lugar de un miedo absurdo."
+										]
+									}
 								]
 							},
 							{
 								"type": "entries",
-								"name": "Gnome",
 								"entries": [
-									"Gnomes don't look like a threat and can quickly disarm suspicion with good humor. The common folk are often curious about gnomes, likely never having seen one before, but they are rarely hostile or fearful."
+									{
+										"type": "entries",
+										"name": "Gnomo",
+										"entries": [
+											"Los gnomos no parecen una amenaza y pueden desarmar rápidamente cualquier sospecha mediante su buen humor. La gente común a menudo siente curiosidad por los gnomos, probablemente nunca hayan visto uno antes, pero rara vez se comportan de forma hostil o temerosa."
+										]
+									}
 								]
 							},
 							{
 								"type": "entries",
-								"name": "Half-Elf",
 								"entries": [
-									"Although many people have never seen a half-elf, virtually everyone knows they exist. A half-elf stranger's arrival is followed by gossip behind the half-elf's back and stolen glances across the common room, rather than any confrontation or open curiosity."
+									{
+										"type": "entries",
+										"name": "Semielfo",
+										"entries": [
+											"Aunque muchas personas nunca han visto a un semielfo, prácticamente todos saben que existen. La llegada de un extraño semielfo es seguida por chismes a la espalda del semielfo y miradas recelosas a través de la sala común, en lugar de cualquier confrontación o curiosidad abierta."
+										]
+									}
 								]
 							},
 							{
 								"type": "entries",
-								"name": "Half-Orc",
 								"entries": [
-									"It's usually safe to assume that a half-orc is belligerent and quick to anger, so people watch themselves around an unfamiliar half-orc. Shopkeepers might surreptitiously hide valuable or fragile goods when a half-orc comes in, and people slowly clear out of a tavern, assuming a fight will break out soon."
+									{
+										"type": "entries",
+										"name": "Semiorco",
+										"entries": [
+											"Por lo general, es seguro asumir que un semiorco es beligerante y se cabrea rápidamente, por lo que las personas se miran alrededor de un semiorco desconocido. Los comerciantes pueden esconder disimuladamente bienes valiosos o frágiles cuando entra un semiorco, y la gente se va lentamente de una taberna, suponiendo que pronto se desatará una pelea."
+										]
+									}
 								]
 							},
 							{
 								"type": "entries",
-								"name": "Tiefling",
 								"entries": [
-									"Half-orcs are greeted with a practical caution, but tieflings are the subject of supernatural fear. The evil of their heritage is plainly visible in their features, and as far as most people are concerned, a tiefling could very well be a devil straight from the Nine Hells. People might make warding signs as a tiefling approaches, cross the street to avoid passing near, or bar shop doors before a tiefling can enter."
+									{
+										"type": "entries",
+										"name": "Tiefling",
+										"entries": [
+											"Los semiorcos son recibidos con una precaución práctica, pero los tieflings son objeto de un miedo sobrenatural. El mal de su herencia es claramente visible en su físico, y en lo que respecta a la mayoría de las personas, un tiefling bien podría ser un demonio llegado directamente de los Nueve Infiernos. Las personas pueden hacer simbolos de protección cuando se acerca un tiefling, cruzar la calle para evitar pasar cerca o cerrar las puertas de las tiendas antes de que pueda entrar un tiefling."
+										]
+									}
 								]
 							}
 						]
@@ -5272,7 +5420,7 @@
 			}
 		},
 		{
-			"name": "Halfling",
+			"name": "Mediano",
 			"source": "PHB-ES",
 			"page": 26,
 			"srd": true,
@@ -5297,8 +5445,8 @@
 			},
 			"languageProficiencies": [
 				{
-					"common": true,
-					"halfling": true
+					"común|PHB-ES": true,
+					"mediano|PHB-ES": true
 				}
 			],
 			"soundClip": {
@@ -5307,44 +5455,51 @@
 			},
 			"entries": [
 				{
-					"name": "Age",
+					"name": "Edad",
 					"type": "entries",
 					"entries": [
-						"A halfling reaches adulthood at the age of 20 and generally lives into the middle of his or her second century."
+						"Los medianos alcanzan la edad adulta a los veinte años y suelen vivir hasta mediados de su segundo siglo."
+					]
+				},
+				{
+					"name": "Alineamiento",
+					"type": "entries",
+					"entries": [
+						"La mayoría de los medianos son legales buenos. Lo normal es que sean amables y de buen corazón, odian ver sufrir a otros y no toleren la opresión. También son muy ordenados y tradicionales, apoyándose en su comunidad y la comodidad que les proporcionan las viejas costumbres."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Size",
+					"name": "Tamaño",
 					"entries": [
-						"Halflings average about 3 feet tall and weigh about 40 pounds. Your size is Small."
+						"Los medianos miden unos 3 pies de altura y pesan unas 40 libras. Eres de tamaño Pequeño."
 					]
 				},
 				{
-					"name": "Lucky",
+					"name": "Afortunado",
 					"entries": [
-						"When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll."
+						"Cuando saques un 1 en el dado al hacer una tirada de ataque, prueba de característica o tirada de salvación, puedes volver a tirar el dado, pero tendrás que utilizar el resultado nuevo."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Brave",
+					"name": "Valiente",
 					"entries": [
-						"You have advantage on saving throws against being {@condition frightened}."
+						"Posees ventaja en las tiradas de salvación para evitar ser {@condition asustado|PHB-ES}."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Halfling Nimbleness",
+					"name": "Agilidad de Mediano",
 					"entries": [
-						"You can move through the space of any creature that is of a size larger than yours."
+						"Puedes moverte a través del espacio ocupado por una criatura cuyo tamaño sea, al menos, una categoría superior al tuyo."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Languages",
+					"name": "Idiomas",
 					"entries": [
-						"You can speak, read, and write Common and Halfling. The Halfling language isn't secret, but halflings are loath to share it with others. They write very little, so they don't have a rich body of literature. Their oral tradition, however, is very strong. Almost all halflings speak Common to converse with the people in whose lands they dwell or through which they are traveling."
+						"Puedes hablar, leer y escribir en común y mediano. El idioma de los medianos no es secreto, pero estos son reticentes a compartirlo con otros. Escriben poco, por lo que no tienen una gran producción literaria. No obstante, su tradición oral es muy rica. Prácticamente todos los medianos hablan común para poder comunicarse con los que viven junto a ellos o en los lugares por los que viajan."
 					],
 					"type": "entries"
 				}
@@ -5357,97 +5512,97 @@
 							{
 								"type": "entries",
 								"entries": [
-									"The comforts of home are the goals of most halflings' lives: a place to settle in peace and quiet, far from marauding monsters and clashing armies; a blazing fire and a generous meal; fine drink and fine conversation. Though some halflings live out their days in remote agricultural communities, others form nomadic bands that travel constantly, lured by the open road and the wide horizon to discover the wonders of new lands and peoples. But even these wanderers love peace, food, hearth, and home, though home might be a wagon jostling along an dirt road or a raft floating downriver.",
+									"Disfrutar las comodidades del hogar es el objetivo vital de la mayoría de los medianos: un lugar en el que asentarse en paz y tranquilidad, lejos de las depredaciones de los monstruos y los ejércitos en liza; dotado de un fuego calentito y comida abundante; y con bebida y conversación de calidad. Aunque algunos medianos viven en comunidades agrícolas remotas, otros forman bandas de nómadas que viajan constantemente, atraídas por la libertad del camino y los extensos horizontes, que les incitan a descubrir las maravillas que esconden pueblos y tierras nuevas. No obstante, incluso estos viajeros aman la paz, la comida y el hogar, a pesar de que este sea un carro que se desplaza raqueteando por un viejo camino de tierra o una balsa que flota río abajo.",
 									{
 										"type": "entries",
-										"name": "Small and Practical",
+										"name": "Pequeños y prácticos",
 										"entries": [
-											"The diminutive halflings survive in a world full of larger creatures by avoiding notice or, barring that, avoiding offense. Standing about 3 feet tall, they appear relatively harmless and so have managed to survive for centuries in the shadow of empires and on the edges of wars and political strife. They are inclined to be stout, weighing between 40 and 45 pounds.",
-											"Halflings' skin ranges from tan to pale with a ruddy cast, and their hair is usually brown or sandy brown and wavy. They have brown or hazel eyes. Halfling men often sport long sideburns, but beards are rare among them and mustaches even more so. They like to wear simple, comfortable, and practical clothes, favoring bright colors.",
-											"Halfling practicality extends beyond their clothing. They're concerned with basic needs and simple pleasures and have little use for ostentation. Even the wealthiest of halflings keep their treasures locked in a cellar rather than on display for all to see. They have a knack for finding the most straightforward solution to a problem, and have little patience for dithering."
+											"Los minúsculos medianos sobreviven en un mundo poblado de seres más grandes evitando ser detectados o, si esto no es posible, no atacando a otros. Miden unos 3 pies (90 cm) de alto y parecen relativamente inofensivos, lo que les ha permitido sobrevivir durante siglos a la sombra de imperios y evitar guerras y disputas políticas. Tienen tendencia a estar rechonchos y pesan entre 40 y 45 libras (18 y 20 kilos).",
+											"La piel de los medianos varía entre el moreno y un tono pálido pero rubicundo, y sus cabellos, habitualmente ondulados, suelen ser marrones o color arena oscura. Sus ojos son de color marrón o avellana. Los varones medianos tienden a lucir patillas prominentes, pero es raro ver a alguno con barba y, aún más, con bigote. Les gusta llevar ropas sencillas, cómodas y prácticas, a ser posible de colores vivas.",
+											"El espíritu práctico de los medianos no solo se extiende a sus prendas. Les preocupan las necesidades básicas y los placeres sencillos, y no son amigos de la ostentación. Incluso el más rico de los medianos guarda sus tesoros en un sótano bajo llave en lugar de hacer alarde de ellos. Poseen un don para encontrar la resolución más directa a los problemas y no tienen paciencia para la indecisión."
 										]
 									},
 									{
 										"type": "entries",
-										"name": "Kind and Curious",
+										"name": "Amables y curiosos",
 										"entries": [
-											"Halflings are an affable and cheerful people. They cherish the bonds of family and friendship as well as the comforts of hearth and home, harboring few dreams of gold or glory. Even adventurers among them usually venture into the world for reasons of community, friendship, wanderlust, or curiosity. They love discovering new things, even simple things, such as an exotic food or an unfamiliar style of clothing.",
-											"Halflings are easily moved to pity and hate to see any living thing suffer. They are generous, happily sharing what they have even in lean times."
+											"Los medianos son un pueblo cordial y alegre. Atesoran los lazos familiares y de amistad, así como las comodidades del hogar, y no albergan grandes sueños de gloria u oro. Incluso aquellos que acaban siendo aventureros y se atreven a conocer mundo lo hacen motivados por ayudar a su comunidad, la amistad, el espíritu viajero o la curiosidad. Adoran descubrir cosas nuevas, aunque éstas sean sencillas, como un alimento exótico o un estilo de ropa que no conocían.",
+											"Es fácil lograr la compasión de un mediano, pues odian ver sufrir a los seres vivos. Son generosos, y comparten con alegría sus posesiones incluso en épocas de penuria."
 										]
 									},
 									{
 										"type": "entries",
-										"name": "Blend into the Crowd",
+										"name": "Fundirse con la multitud",
 										"entries": [
-											"Halflings are adept at fitting into a community of humans, dwarves, or elves, making themselves valuable and welcome. The combination of their inherent stealth and their unassuming nature helps halflings to avoid unwanted attention.",
-											"Halflings work readily with others, and they are loyal to their friends, whether halfling or otherwise. They can display remarkable ferocity when their friends, families, or communities are threatened."
+											"Los medianos están acostumbrados a encajar en comunidades de humanos, enanos o elfos, en las que saben hacerse indispensables y son bienvenidos. Su sigilo innato y su natural modestia les ayudan a evitar atraer atenciones no deseadas.",
+											"Los medianos trabajan bien con los demás y son muy leales a sus amigos, ya sean estos medianos o miembros de otra raza. Pueden ser sorprendentemente feroces cuando se trata de defender a sus amigos, su familia o su comunidad."
 										]
 									},
 									{
 										"type": "entries",
-										"name": "Pastoral Pleasantries",
+										"name": "Placeres bucólicos",
 										"entries": [
-											"Most halflings live in small, peaceful communities with large farms and well-kept groves. They rarely build kingdoms of their own or even hold much land beyond their quiet shires. They typically don't recognize any sort of halfling nobility or royalty, instead looking to family elders to guide them. Families preserve their traditional ways despite the rise and fall of empires.",
-											"Many halflings live among other races, where the halflings' hard work and loyal outlook offer them abundant rewards and creature comforts. Some halfling communities travel as a way of life, driving wagons or guiding boats from place to place and maintaining no permanent home."
+											"La mayoría de las medianos viven en comunidades pacíficas, con grandes granjas y arboledas bien cuidadas. Rara vez levantan sus propios imperios u ocupan mucho territorio más allá de sus tranquilas comarcas. Lo habitual es que no reconozcan ningún tipo de nobleza o reyes medianos, por lo que suelen recurrir a los ancianos de la familia en busca de consejo. Las familias conservan sus costumbres tradicionales a pesar del auge y caída de imperios.",
+											"Muchos medianos viven entre miembros de otras razas, en lugares donde su duro trabajo y lealtad reciben recompensa y pueden disfrutar de comodidades. Algunas comunidades de medianos hacen del viaje un modo de vida, conduciendo carros o pilotando botes de un sitio a otro, sin un emplazamiento fijo al que llamar hogar."
 										]
 									},
 									{
 										"type": "inset",
-										"name": "Affable and Positive",
+										"name": "Afables y positivos",
 										"entries": [
-											"Halfling try to get along with everyone else and are loath to make sweeping generalizations-especially negative ones.",
+											"Los medianos intentan llevarse bien con prácticamente todo el mundo, por lo que no les gusta generalizar, especialmente si se trata de estereotipos negativos.",
 											{
 												"type": "entries",
-												"name": "Dwarves",
+												"name": "Elfos",
 												"entries": [
-													"\"Dwarves make loyal friends, and you can count on them to keep their word. But would it hurt them to smile once in a while?\""
+													"\"¡Son tan hermosos! Sus rostros, su música, su elegancia y todo lo demás. Es como si hubieran salido de un sueño maravilloso. Pero es imposible saber lo que se esconde tras sus bellas sonrisas. Segura que más de lo que dejan traslucir\"."
 												]
 											},
 											{
 												"type": "entries",
-												"name": "Elves",
+												"name": "Enanos",
 												"entries": [
-													"\"They're so beautiful! Their faces, their music, their grace and all. It's like they stepped out of a wonderful dream. But there's no telling what's going on behind their smiling faces-surely more than they ever let on.\""
+													"\"Los enanos son amigos leales y puedes contar con que mantendrán su palabra. Sin embargo, ¿no serían más felices si sonrieran de vez en cuando?\"."
 												]
 											},
 											{
 												"type": "entries",
-												"name": "Humans",
+												"name": "Humanos",
 												"entries": [
-													"\"Humans are a lot like us, really. At least some of them are. Step out of the castles and keeps, go talk to the farmers and herders and you'll find good, solid folk. Not that there's anything wrong with the barons and soldiers - you have to admire their conviction. And by protecting their own lands, they protect us as well.\""
+													"\"Los humanos se parecen mucho a nosotros. De verdad. O al menos algunos de ellos. Sal de sus castillos y fortalezas, dedica tiempo a hablar con las granjeros y ganaderos y descubrirás a gente buena y honesta. No es que haya nada intrínsecamente malo en los barones y soldados, su convicción es de admirar. Y, al proteger sus propias tierras, también nos salvaguardan a nosotros\"."
 												]
 											}
 										]
 									},
 									{
 										"type": "entries",
-										"name": "Exploring Opportunities",
+										"name": "Explorando oportunidades",
 										"entries": [
-											"Halflings usually set out on the adventurer's path to defend their communities, support their friends, or explore a wide and wonder-filled world. For them, adventuring is less a career than an opportunity or sometimes a necessity."
+											"Los medianos suelen seguir la senda de la aventura para defender sus comunidades, apoyar a sus amigos o explorar un mundo grande y lleno de maravillas. Para ellos, partir de aventuras es más una oportunidad, o a veces una necesidad, que una profesión."
 										]
 									},
 									{
 										"type": "entries",
-										"name": "Halfling Names",
+										"name": "Nombres medianos",
 										"entries": [
-											"A halfling has a given name, a family name, and possibly a nickname. Family names are often nicknames that stuck so tenaciously they have been passed down through the generations.",
+											"Los medianos poseen nombre propio, apellido y quizá un apodo. Los apellidos a veces provienen de apodos que han arraigado tanto que han acabado pasando de una generación a otra.",
 											{
 												"type": "list",
 												"style": "list-hang-notitle",
 												"items": [
 													{
 														"type": "item",
-														"name": "Male Names:",
+														"name": "Nombres masculinos:",
 														"entry": "Alton, Ander, Cade, Corrin, Eldon, Errich, Finnan, Garret, Lindal, Lyle, Merric, Milo, Osborn, Perrin, Reed, Roscoe, Wellby"
 													},
 													{
 														"type": "item",
-														"name": "Female Names:",
+														"name": "Nombres femeninos:",
 														"entry": "Andry, Bree, Callie, Cora, Euphemia, Jillian, Kithri, Lavinia, Lidda, Merla, Nedda, Paela, Portia, Seraphina, Shaena, Trym, Vani, Verna"
 													},
 													{
 														"type": "item",
-														"name": "Family Names:",
+														"name": "Apellidos:",
 														"entry": "Brushgather, Goodbarrel, Greenbottle, High-hill, Hilltopple, Leagallow, Tealeaf, Thorngage, Tosscobble, Underbough"
 													}
 												]
@@ -5471,7 +5626,7 @@
 			}
 		},
 		{
-			"name": "Human",
+			"name": "Humano",
 			"source": "PHB-ES",
 			"page": 29,
 			"srd": true,
@@ -5492,7 +5647,7 @@
 			},
 			"languageProficiencies": [
 				{
-					"common": true,
+					"común|PHB-ES": true,
 					"anyStandard": 1
 				}
 			],
@@ -5502,23 +5657,30 @@
 			},
 			"entries": [
 				{
-					"name": "Age",
+					"name": "Edad",
 					"type": "entries",
 					"entries": [
-						"Humans reach adulthood in their late teens and live less than a century."
+						"Alcanzan la madurez poco antes de los veinte años y viven menos de un siglo."
+					]
+				},
+				{
+					"name": "Alineamiento",
+					"type": "entries",
+					"entries": [
+						"Los humanos no tienen tendencia a ningún alineamiento en particular. Entre ellos puede encontrarse tanto lo mejor como lo peor."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Size",
+					"name": "Tamaño",
 					"entries": [
-						"Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium."
+						"La altura y complexión de los humanos varían enormemente de un individuo a otro, midiendo entre un poco menos de 5 pies y algo más de 6 pies de altura. Independientemente de cuál sea tu altura concreta, tu tamaño es Mediano."
 					]
 				},
 				{
-					"name": "Languages",
+					"name": "Idiomas",
 					"entries": [
-						"You can speak, read, and write Common and one extra language of your choice. Humans typically learn the languages of other peoples they deal with, including obscure dialects. They are fond of sprinkling their speech with words borrowed from other tongues: Orc curses, Elvish musical expressions, Dwarvish military phrases, and so on."
+						"Puedes hablar, leer y escribir común y un idioma adicional de tu elección. Los humanos normalmente aprenden los idiomas de aquellos con los que se relacionan, aunque sean dialectos poco conocidos. Les gusta adornar su habla con palabras tomadas de otras lenguas: maldiciones orcas, expresiones musicales elfas, términos militares enanos, y así."
 					],
 					"type": "entries"
 				}
@@ -5531,85 +5693,85 @@
 							{
 								"type": "entries",
 								"entries": [
-									"In the reckonings of most worlds, humans are the youngest of the common races, late to arrive on the world scene and short-lived in comparison to dwarves, elves, and dragons. Perhaps it is because of their shorter lives that they strive to achieve as much as they can in the years they are given. Or maybe they feel they have something to prove to the elder races, and that's why they build their mighty empires on the foundation of conquest and trade. Whatever drives them, humans are the innovators, the achievers, and the pioneers of the worlds.",
+									"En los registros de la mayoría de los mundos, los humanos son la más joven de las razas comunes. Han llegado comparativamente tarde al mundo y sus vidas son más cortas que las de enanos, elfos y dragones. Y quizá sea precisamente por estas breves existencias por lo que los humanos aspiran a conseguir tanto como sean capaces en los años que se les han concedido. O puede que sientan que tienen que demostrar su valía a las razas antiguas, y por eso construyen poderosos imperios, anclados en los cimientos del comercio y la conquista. Sea cual fuere su motivación, los humanos son los innovadores, los triunfadores y los pioneros del mundo.",
 									{
 										"type": "entries",
-										"name": "A Broad Spectrum",
+										"name": "Un amplio espectro",
 										"entries": [
-											"With their penchant for migration and conquest, humans are more physically diverse than other common races. There is no typical human. An individual can stand from 5 feet to a little over 6 feet tall and weigh from 125 to 250 pounds. Human skin shades range from nearly black to very pale, and hair colors from black to blond (curly, kinky, or straight); males might sport facial hair that is sparse or thick. A lot of humans have a dash of nonhuman blood, revealing hints of elf, orc, or other lineages. Humans reach adulthood in their late teens and rarely live even a single century."
+											"Debido a su tendencia a la emigración y la conquista, los humanos son más variopintos que otras razas comunes. No existe el humano típico. Un individuo concreto puede medir desde algo menos de 5 pies (1,5 m) hasta más de 6 pies (1,8 m), y pesar entre las 125 y las 250 libras (55 y 115 kilos). El color de la piel humana varía entre prácticamente el negro y un blanco muy pálido, y sus cabellos pueden ser desde negros hasta rubios (lisos, rizados u ondulados). Los varones pueden tener vello facial, tanto escaso como espeso. Muchos humanos poseen un poco de sangre de otras razas, con rasgos elfos, orcos o de otros linajes. Alcanzan la madurez poco antes de los veinte años y no suelen vivir ni siquiera un siglo."
 										]
 									},
 									{
 										"type": "entries",
-										"name": "Variety in All Things",
+										"name": "Variedad en todas las cosas",
 										"entries": [
-											"Humans are the most adaptable and ambitious people among the common races. They have widely varying tastes, morals, and customs in the many different lands where they have settled. When they settle, though, they stay: they build cities to last for the ages, and great kingdoms that can persist for long centuries. An individual human might have a relatively short life span, but a human nation or culture preserves traditions with origins far beyond the reach of any single human's memory. They live fully in the present-making them well suited to the adventuring life-but also plan for the future, striving to leave a lasting legacy. Individually and as a group, humans are adaptable opportunists, and they stay alert to changing political and social dynamics."
+											"Los humanos son el pueblo más flexible y ambicioso de entre las razas comunes. Poseen una amplia variedad de gustos, códigos morales y costumbres, repartidos por las numerosas tierras en las que habitan. Cuando se asientan en algún lugar, lo hacen para quedarse. Construyen ciudades que perviven durante eras y grandes reinos que pueden durar siglos. Un individuo concreto tiene una existencia corta, pero sus naciones o culturas preservan tradiciones cuyos orígenes se remontan mucho más allá de la memoria de cualquier humano.",
+											"Viven por completo en el presente, una filosofía ideal para la vida del aventurero, aunque también planean para el futuro, aspirando a dejar un legado que les sobreviva. Tanto individualmente como en grupo, los humanos son adaptables y oportunistas, capaces de estar atentos a cambios en la política y las dinámicas sociales."
 										]
 									},
 									{
 										"type": "entries",
-										"name": "Lasting Institutions",
+										"name": "Instituciones que perduran",
 										"entries": [
-											"Where a single elf or dwarf might take on the responsibility of guarding a special location or a powerful secret, humans found sacred orders and institutions for such purposes. While dwarf clans and halfling elders pass on the ancient traditions to each new generation, human temples, governments, libraries, and codes of law fix their traditions in the bedrock of history. Humans dream of immortality, but (except for those few who seek undeath or divine ascension to escape death's clutches) they achieve it by ensuring that they will be remembered when they are gone.",
-											"Although some humans can be xenophobic, in general their societies are inclusive. Human lands welcome large numbers of nonhumans compared to the proportion of humans who live in nonhuman lands."
+											"Donde un elfo o enano asumiría como individuo la responsabilidad de proteger una educación especial o un secreto poderoso, los humanos fundarían órdenes sagradas o instituciones para perseguir ese fin. Mientras que los clanes enanos y los ancianos medianos transmiten las costumbres ancestrales a la nueva generación, los humanos confían en las templos, gobiernos, bibliotecas y leyes para afianzar sus tradiciones en los cimientos de la historia. Los humanos sueñan con la inmortalidad, pero, con la excepción de aquellos que buscan resucitar como muertos vivientes o ascender a los cielos para escapar de las garras de la muerte, su forma de conseguirla es ser recordados cuando ya no estén.",
+											"Aunque algunos humanos pueden ser xenófobos, la mayoría de sus sociedades son abiertas a todos. Los territorios urbanos reciben a un gran número de no humanos en proporción a los humanos que viven en tierras de otras razas."
 										]
 									},
 									{
 										"type": "entries",
-										"name": "Exemplars of Ambition",
+										"name": "Ejemplos de ambición",
 										"entries": [
-											"Humans who seek adventure are the most daring and ambitious members of a daring and ambitious race. They seek to earn glory in the eyes of their fellows by amassing power, wealth, and fame. More than other people, humans champion causes rather than territories or groups."
+											"Los humanos que buscan aventuras son los miembros más osados y ambiciosos de una raza osada y ambiciosa. Desean alcanzar la gloria a los ojos de sus compañeros a base de amasar poder, riqueza y fama. Más que ningún otro pueblo, los humanos luchan por causas más que por territorios o grupos."
 										]
 									},
 									{
 										"type": "inset",
-										"name": "Everyone's Second-Best Friends",
+										"name": "Los segundos mejores amigos de todos",
 										"entries": [
-											"Just as readily as they mix with each other, humans mingle with members of other races. They get along with almost everyone, though they might not be close to many. Humans serve as ambassadors, diplomats, magistrates, merchants, and functionaries of all kinds.",
+											"Los humanos se mezclan con miembros de otras razas con la misma facilidad con la que lo hacen con otros humanos. Se llevan bien con prácticamente todo el mundo, aunque podrían no sentirse cercanos a la mayoría. Los humanos sirven como embajadores diplomáticos, magistrados, comerciantes y funcionarios de todo tipo.",
 											{
 												"type": "entries",
-												"name": "Dwarves",
+												"name": "Elfos",
 												"entries": [
-													"\"They're stout folk, stalwart friends, and true to their word. Their greed for gold is their downfall, though.\""
+													"\"Es mejor no internarse en los bosques élficos. No les gustan los intrusos, y tan probable es que acabes embrujado como asaeteado. Eso sí, si un elfo es capaz de superar su maldito orgullo racial y tratarte como a un igual, puedes aprender mucho de él\"."
 												]
 											},
 											{
 												"type": "entries",
-												"name": "Elves",
+												"name": "Enanos",
 												"entries": [
-													"\"It's best not to wander into elven woods. They don't like intruders, and you'll as likely be bewitched as peppered with arrows. Still, if an elf can get past that damned racial pride and actually treat you like an equal, you can learn a lot from them.\""
+													"\"Son gente robusta, amigos incondicionales y fieles a su palabra. Desgraciadamente, su codicia por el oro es su perdición\"."
 												]
 											},
 											{
 												"type": "entries",
-												"name": "Halflings",
+												"name": "Medianos",
 												"entries": [
-													"\"It's hard to beat a meal in a halfling home, as long as you don't crack your head on the ceiling - good food and good stories in front of a nice, warm fire. If halflings had a shred of ambition, they might really amount to something.\""
+													"\"Es difícil superar la comida de un hogar mediano, siempre y cuando un golpe con el techo no te la estropee; disfrutas de buena cocina y entretenidas historias frente a un fuego agradable y calentito. Si tan solo tuvieran un poco de ambición, los medianos podrían llegar muy lejos\"."
 												]
 											}
 										]
 									},
 									{
 										"type": "entries",
-										"name": "Human Names and Ethnicities",
+										"name": "Nombres y grupos étnicos humanos",
 										"entries": [
-											"Having so much more variety than other cultures, humans as a whole have no typical names. Some human parents give their children names from other languages, such as Dwarvish or Elvish (pronounced more or less correctly), but most parents give names that are linked to their region's culture or to the naming traditions of their ancestors.",
-											"The material culture and physical characteristics of humans can change wildly from region to region. In the Forgotten Realms, for example, the clothing, architecture, cuisine, music, and literature are different in the northwestern lands of the Silver Marches than in distant Turmish or Impiltur to the east-and even more distinctive in far-off Kara-Tur. Human physical characteristics, though, vary according to the ancient migrations of the earliest humans, so that the humans of the Silver Marches have every possible variation of coloration and features.",
-											"In the Forgotten Realms, nine human ethnic groups are widely recognized, though over a dozen others are found in more localized areas of Faerun. These groups, and the typical names of their members, can be used as inspiration no matter which world your human is in.",
+											"Siendo mucho más variada que el resto de las razas, la humanidad como conjunto no posee nombres que puedan considerarse típicos. Algunos padres humanos ponen a sus hijos nombres de otros idiomas, como el enano o el elfo (pronunciado con mejor o peor suerte), pero la mayoría de los progenitores escogen nombres relativos a la cultura de la región o a las tradiciones de sus ancestros.",
+											"Los productos de su cultura y las características físicas de los humanos pueden variar enormemente entre una región y otra. En las Reinos Olvidados, por ejemplo, la vestimenta, arquitectura, cocina, música y literatura de las tierras de la Marca Argéntea, en el noroeste, son muy distintas a las de sus contrapartidas en las distantes Turmish o Impiltur al este; y aún más que las de la lejana Kara-Tur. Las características físicas de los humanos varían conforme a las antiguas migraciones de los primeros hombres, por lo que los individuos de la Marca Argéntea poseen cualquier variación posible de rasgos y coloración.",
+											"En la mayor parte de las Reinos Olvidados se reconoce a nueve grupos étnicos de humanos, aunque hay al menos una docena más en zonas más concretas de Faerûn. Estos grupos, así como los nombres típicos de sus miembros, pueden servirte de inspiración independientemente del mundo del que provenga tu humano.",
 											{
 												"type": "entries",
-												"name": "Calishite",
+												"name": "Calishita",
 												"entries": [
-													"Shorter and slighter in build than most other humans, Calishites have dusky brown skin, hair, and eyes.",
-													"They're found primarily in southwest Faerun.",
+													"Más bajos y delgados que la mayoría de las otras etnias humanas, los calishitas tienen la tez morena, al igual que el pelo y los ojos. Se los encuentra sobre todo en el suroeste de Faerûn.",
 													{
 														"type": "list",
 														"style": "list-hang-notitle",
 														"items": [
 															{
 																"type": "item",
-																"name": "Calishite Names:",
-																"entry": "(Male) Aseir, Bardeid, Haseid, Khemed, Mehmen, Sudeiman, Zasheir; (female) Atala, Ceidil, Hama, ]asmal, Meilil, Seipora, Yasheira, Zasheida; (surnames) Basha, Dumein, ]assan, Khalid, Mostana, Pashar, Rein"
+																"name": "Nombres calishitas:",
+																"entry": "(masculinos) Aseir, Bardeid, Haseid, Khemed, Mehmen, Sudeiman, Zasheir; (femeninos) Atala, Ceidil, Hama, Jasmal, Meilil, Seipora, Yasheira, Zasheida; (apellidos) Basha, Dumein, Jassan, Khalid, Mostana, Pashar, Rein"
 															}
 														]
 													}
@@ -5617,17 +5779,17 @@
 											},
 											{
 												"type": "entries",
-												"name": "Chondathan",
+												"name": "Chondathano",
 												"entries": [
-													"Chondathans are slender, tawny-skinned folk with brown hair that ranges from almost blond to almost black. Most are tall and have green or brown eyes, but these traits are hardly universal. Humans of Chondathan descent dominate the central lands of Faerun, around the Inner Sea.",
+													"Los chondathanos son esbeltos, de piel olivácea y con cabellos de varios tonos de marrón, que van desde prácticamente rubio hasta casi negro. La mayoría son altos y tienen los ojos verdes o marrones, pero no es siempre el caso. Los humanos de ascendencia chondathana dominan la zona central de Faerûn, alrededor del Mar Interior.",
 													{
 														"type": "list",
 														"style": "list-hang-notitle",
 														"items": [
 															{
 																"type": "item",
-																"name": "Chondathan Names:",
-																"entry": "(Male) Darvin, Dorn, Evendur, Gorstag, Grim, Helm, Malark, Morn, Randal, Stedd; (female) Arveene, Esvele, Chessail, Kerri, Lureene, Miri, Rowan, Shandri, Tessele; (surnames) Amblecrown, Buckman, Dundragon, Evenwood, Greycastle, Tallstag"
+																"name": "Nombres chondathanos:",
+																"entry": "(masculinos) Darvin, Dorn, Evendur, Gorstag, Grim, Helm, Malark, Morn, Randal, Stedd; (femeninos) Arveene, Esvele, Jhessail, Kerri, Lureene, Miri, Rowan, Shandri, Tessele; (apellidos) Amblecrown, Buckman, Dundragon, Evenwood, Greycastle, Tallstag"
 															}
 														]
 													}
@@ -5635,17 +5797,17 @@
 											},
 											{
 												"type": "entries",
-												"name": "Damaran",
+												"name": "Damarano",
 												"entries": [
-													"Found primarily in the northwest of Faerun, Damarans are of moderate height and build, with skin hues ranging from tawny to fair. Their hair is usually brown or black, and their eye color varies widely, though brown is most common.",
+													"Los damaranos habitan sobre todo en el noroeste de Faerûn y son de altura y complexión medias, con tonos de piel que van desde la oliva hasta el blanco. Suelen tener el pelo castaño o negro y su color de ojos varía enormemente, aunque el marrón es el más común.",
 													{
 														"type": "list",
 														"style": "list-hang-notitle",
 														"items": [
 															{
 																"type": "item",
-																"name": "Damaran Names:",
-																"entry": "(Male) Bor, Fodel, Glar, Grigor, Igan, Ivor, Kosef, Mival, Orel, Pavel, Sergor; (female) Alethra, Kara, Katernin, Mara, Natali, Olma, Tana, Zora; (surnames) Bersk, Chernin, Dotsk, Kulenov, Marsk, Nemetsk, Shemov, Starag"
+																"name": "Nombres damaranos:",
+																"entry": "(masculinos) Bor, Fodel, Glar, Grigor, Igan, Ivor, Kosef, Mival, Orel, Pavel, Sergor: (femeninos) Alethra, Kara, Katernin, Mara, Natali, Olma, Tana, Zora; (apellidos) Bersk, Chernin, Dotsk, Kulenov, Marsk, Nemetsk, Shemov, Starag"
 															}
 														]
 													}
@@ -5653,17 +5815,17 @@
 											},
 											{
 												"type": "entries",
-												"name": "Illuskan",
+												"name": "Illuskano",
 												"entries": [
-													"Illuskans are tall, fair-skinned folk with blue or steely gray eyes. Most have raven-black hair, but those who inhabit the extreme northwest have blond, red, or light brown hair.",
+													"Los illuskanos son altos, de piel pálida y ojos azules o de un gris acerado. La mayoría tienen el pelo negro azabache, pero los que habitan más al noroeste poseen cabellos rubios, pelirrojos o castaños claros.",
 													{
 														"type": "list",
 														"style": "list-hang-notitle",
 														"items": [
 															{
 																"type": "item",
-																"name": "Illuskan Names:",
-																"entry": "(Male) Ander, Blath, Bran, Frath, Geth, Lander, Luth, Malcer, Stor, Taman, Urth; (female) Amafrey, Betha, Cefrey, Kethra, Mara, Olga, Silifrey, Westra; (surnames) Brightwood, Helder, Hornraven, Lackman, Stormwind, Windrivver"
+																"name": "Nombres illuskanos:",
+																"entry": "(masculinos) Ander, Blath, Bran, Frath, Geth, Lander, Luth, Malcer, Stor, Taman, Urth; (femeninos) Amafrey, Betha, Cefrey, Kethra, Mara, Olga, Silifrey, Westra; (apellidos) Brightwood, Helder, Hornraven, Lackman, Stormwind, Windrivver"
 															}
 														]
 													}
@@ -5671,17 +5833,17 @@
 											},
 											{
 												"type": "entries",
-												"name": "Mulan",
+												"name": "Mulano",
 												"entries": [
-													"Dominant in the eastern and southeastern shores of the Inner Sea, the Mulan are generally tall, slim, and amber-skinned, with eyes of hazel or brown. Their hair ranges from black to dark brown, but in the lands where the Mulan are most prominent, nobles and many other Mulan shave off all their hair.",
+													"Amos de las costas este y sureste del Mar Interior, los mulanos suelen ser altos, delgados, de piel ambarina y ojos marrones o avellana. El color de sus cabellos va desde el negro hasta el marrón oscuro, aunque, en las zonas donde están más presentes, los nobles y otros muchos mulanos se afeitan la cabeza.",
 													{
 														"type": "list",
 														"style": "list-hang-notitle",
 														"items": [
 															{
 																"type": "item",
-																"name": "Mulan Names:",
-																"entry": "(Male) Aoth, Bareris, Ehput-Ki, Kethoth, Mumed, Ramas, So-Kehur, Thazar-De, Urhur; (female) Arizima, Chathi, Nephis, Nulara, Murithi, Sefris, Thola, Umara, Zolis; (surnames) Ankhalab, Anskuld, Fezim, Hahpet, Nathandem, Sepret, Uuthrakt"
+																"name": "Nombres mulanos:",
+																"entry": "(masculinos) Aoth, Bareris, Ehput-Ki, Kethoth, Mumed, Ramas, So-Kehur, Thazar-De, Urhur; (femeninos) Arizima, Chathi, Nephis, Nulara, Murithi, Sefris, Thola, Umara, Zolis; (apellidos) Ankhalab, Anskuld, Fezim, Hahpet, Nathandem, Sepret, Uuthrakt"
 															}
 														]
 													}
@@ -5689,17 +5851,17 @@
 											},
 											{
 												"type": "entries",
-												"name": "Rashemi",
+												"name": "Rashemí",
 												"entries": [
-													"Most often found east of the Inner Sea and often intermingled with the Mulan, Rashemis tend to be short, stout, and muscular. They usually have dusky skin, dark eyes, and thick black hair.",
+													"Los rashemíes están presentes sobre todo al este del Mar Interior y muchas veces se mezclan con los mulanos. Tienden a ser bajos, robustos y musculosos. Suelen tener la piel morena, los ojos oscuros y el cabello, muy espeso, de color negro.",
 													{
 														"type": "list",
 														"style": "list-hang-notitle",
 														"items": [
 															{
 																"type": "item",
-																"name": "Rashemi Names:",
-																"entry": "(Male) Borivik, Faurgar, ]andar, Kanithar, Madislak, Ralmevik, Shaumar, Vladislak; (female) Fyevarra, Hulmarra, Immith, Imzel, Navarra, Shevarra, Tammith, Yuldra; (surnames) Chergoba, Dyernina, Iltazyara, Murnyethara, Stayanoga, Ulmokina"
+																"name": "Nombres rashemíes:",
+																"entry": "(masculinos) Borivik, Faurgar, Jandar, Kanithar, Madislak, Ralmevik, Shaumar, Vladislak; (femeninos) Fyevarra, Hulmarra, Immith, Imzel, Navarra, Shevarra, Tammith, Yuldra; (apellidos) Chergoba, Dyernina, Iltazyara, Murnyethara, Stayanoga, Ulmokina"
 															}
 														]
 													}
@@ -5709,15 +5871,15 @@
 												"type": "entries",
 												"name": "Shou",
 												"entries": [
-													"The Shou are the most numerous and powerful ethnic group in Kara-Tur, far to the east of Faerun. They are yellowish-bronze in hue, with black hair and dark eyes. Shou surnames are usually presented before the given name.",
+													"Los shou son el grupo étnico más grande y poderoso de KaraTur, en el lejano oriente de Faerûn. Su piel es amarillenta y bronceada, y tienen los ojos oscuros y el pelo negro. Los apellidos shou suelen enunciarse antes del nombre propio.",
 													{
 														"type": "list",
 														"style": "list-hang-notitle",
 														"items": [
 															{
 																"type": "item",
-																"name": "Shou Names:",
-																"entry": "(Male) An, Chen, Chi, Fai, Jiang, Jun, Lian, Long, Meng, On, Shan, Shui, Wen; (female) Bai, Chao, Lia, Lei, Mei, Qiao, Shui, Tai; (surnames) Chien, Huang, Kao, Kung, Lao, Ling, Mei, Pin, Shin, Sum, Tan, Wan"
+																"name": "Nombres shou:",
+																"entry": "(masculinos) An, Chen, Chi, Fai, Jiang, Jun, Lian, Long, Meng, On, Shan, Shui, Wen; (femeninos) Bai, Chao, Jia, Lei, Mei, Qiao, Shui, Tai; (apellidos) Chien, Huang, Kao, Kung, Lao, Ling, Mei, Pin, Shin, Sum, Tan, Wan"
 															}
 														]
 													}
@@ -5725,24 +5887,24 @@
 											},
 											{
 												"type": "entries",
-												"name": "Tethyrian",
+												"name": "Tethyriano",
 												"entries": [
-													"Widespread along the entire Sword Coast at the western edge of Faerun, Tethyrians are of medium build and height, with dusky skin that tends to grow fairer the farther north they dwell. Their hair and eye color varies widely, but brown hair and blue eyes are the most common. Tethyrians primarily use Chondathan names."
+													"Muy extendidos a lo largo de la Costa de la Espada, en la extrema occidental de Faerûn, los tethyrianos son de complexión y altura medias, con piel morena, aunque este color es tanto más claro cuanto más al norte habiten. Su color de pelo y ojos varía enormemente, pero el cabello marrón y los ojos azules son la combinación más común. Los tethyrianos suelen usar nombres chondathanos."
 												]
 											},
 											{
 												"type": "entries",
 												"name": "Turami",
 												"entries": [
-													"Native to the southern shore of the Inner Sea, the Turami people are generally tall and muscular, with dark mahogany skin, curly black hair, and dark eyes.",
+													"Originarios de la costa sur del Mar Interior, los turami suelen ser altos y musculosos, de piel oscura, color caoba, pelo negro y rizado, y ojos oscuros.",
 													{
 														"type": "list",
 														"style": "list-hang-notitle",
 														"items": [
 															{
 																"type": "item",
-																"name": "Turami Names:",
-																"entry": "(Male) Anton, Diero, Marcon, Pieron, Rimardo, Romero, Salazar, Umbero; (female) Balama, Dona, Faila, ]alana, Luisa, Marta, Quara, Selise, Vonda; (surnames) Agosto, Astorio, Calabra, Domine, Falone, Marivaldi, Pisacar, Ramondo"
+																"name": "Nombres turami:",
+																"entry": "(masculinos) Anton, Diero, Marcon, Pieron, Rimardo, Romero, Salazar, Umbero; (femeninos) Balama, Dona, Faila, Jalana, Luisa, Marta, Quara, Selise, Vonda; (apellidos) Agosto, Astorio, Calabra, Domine, Falone, Marivaldi, Pisacar, Ramondo"
 															}
 														]
 													}
@@ -5797,8 +5959,8 @@
 			],
 			"languageProficiencies": [
 				{
-					"common": true,
-					"infernal": true
+					"común|PHB-ES": true,
+					"infernal|PHB-ES": true
 				}
 			],
 			"resist": [
@@ -5814,14 +5976,14 @@
 						"3": {
 							"daily": {
 								"1": [
-									"hellish rebuke#2"
+									"reprensión infernal|PHB-ES#2"
 								]
 							}
 						},
 						"5": {
 							"daily": {
 								"1": [
-									"darkness"
+									"oscuridad|PHB-ES"
 								]
 							}
 						}
@@ -5829,51 +5991,58 @@
 					"ability": "cha",
 					"known": {
 						"1": [
-							"thaumaturgy#c"
+							"taumaturgia|PHB-ES#c"
 						]
 					}
 				}
 			],
 			"entries": [
 				{
-					"name": "Age",
+					"name": "Edad",
 					"type": "entries",
 					"entries": [
-						"Tieflings mature at the same rate as humans but live a few years longer."
+						"Los tieflings alcanzan la madurez al mismo ritmo que los humanos, pero viven unos pocos años más."
+					]
+				},
+				{
+					"name": "Alineamiento",
+					"type": "entries",
+					"entries": [
+						"Los tieflings no poseen una tendencia innata hacia el mal, aunque muchos acaban abrazándolo. Malvados o no, su naturaleza independiente les hace inclinarse hacia el alineamiento caótico."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Size",
+					"name": "Tamaño",
 					"entries": [
-						"Tieflings are about the same size and build as humans. Your size is Medium."
+						"Los tieflings son de aproximadamente la misma altura y constitución que los humanos. Eres de tamaño Mediano"
 					]
 				},
 				{
-					"name": "Darkvision",
+					"name": "Visión en la Oscuridad",
 					"entries": [
-						"Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"Debido a tu sangre infernal, puedes ver bien en la oscuridad o con poca luz. Eres capaz de percibir hasta a 60 pies en luz tenue como si hubiera luz brillante, y esa misma distancia en la oscuridad como si hubiera luz tenue. Eso sí, no puedes distinguir colores en la oscuridad, solo tonos de gris."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Hellish Resistance",
+					"name": "Resistencia Infernal",
 					"entries": [
-						"You have resistance to fire damage."
+						"Posees resistencia al daño de fuego."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Infernal Legacy",
+					"name": "Linaje Infernal",
 					"entries": [
-						"You know the {@spell thaumaturgy} cantrip. Once you reach 3rd level, you can cast the {@spell hellish rebuke} spell as a 2nd-level spell with this trait; you regain the ability to cast it when you finish a long rest. Once you reach 5th level, you can also cast the {@spell darkness} spell once per day with this trait; you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
+						"Conoces el truco {@spell taumaturgia|PHB-ES}. Cuando llegas a nivel 3, puedes lanzar el conjuro {@spell reprensión infernal|PHB-ES} como conjuro de nivel 2 una vez usando este atributo y recuperas la capacidad para hacerlo tras realizar un descanso largo. Cuando alcanzas el nivel 5, eres capaz de lanzar el conjuro {@spell oscuridad|PHB-ES} una vez empleando este atributo y recuperas la capacidad para hacerlo tras realizar un descanso largo. El Carisma es tu aptitud mágica para estos conjuros."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Languages",
+					"name": "Idiomas",
 					"entries": [
-						"You can speak, read, and write Common and Infernal."
+						"Puedes hablar, leer y escribir en común e infernal."
 					],
 					"type": "entries"
 				}
@@ -5886,45 +6055,45 @@
 							{
 								"type": "entries",
 								"entries": [
-									"To be greeted with stares and whispers, to suffer violence and insult on the street, to see mistrust and fear in every eye: this is the lot of the tiefling. And to twist the knife, tieflings know that this is because a pact struck generations ago infused the essence of Asmodeus-overlord of the Nine Hells-into their bloodline. Their appearance and their nature are not their fault but the result of an ancient sin, for which they and their children and their children's children will always be held accountable.",
+									"Ser recibido con miradas y susurros, ser víctima de la violencia y los insultos por la calle, observar desconfianza y miedo en todos los rostros; este es el destino de los tieflings. Y, para añadir sal a la herida, los tieflings saben que esto se debe a un pacto, sellado hace generaciones, que impregnó su linaje con la esencia de Asmodeo, amo de los Nueve Infiernos. La apariencia y naturaleza de los tieflings no son culpa suya, sino de un pecado ancestral, por el que tanto ellos como su descendencia deberán responder para siempre.",
 									{
 										"type": "entries",
-										"name": "Infernal Bloodline",
+										"name": "Linaje infernal",
 										"entries": [
-											"Tieflings are derived from human bloodlines, and in the broadest possible sense, they still look human. However, their infernal heritage has left a clear imprint on their appearance. Tieflings have large horns that take any of a variety of shapes - some have curling horns like a ram, others have straight and tall horns like a gazelle's, and some spiral upward like an antelopes' horns. They have thick tails, four to five feet long, which lash or coil around their legs when they get upset or nervous. Their canine teeth are sharply pointed, and their eyes are solid colors black, red, white, silver, or gold with no visible sclera or pupil. Their skin tones cover the full range of human coloration, but also include various shades of red. Their hair, cascading down from behind their horns, is usually dark, from black or brown to dark red, blue, or purple."
+											"Los tieflings descienden de humanos y, en el sentido más amplio posible, aún tienen aspecto humano. Sin embargo, su legado infernal ha marcado su apariencia. Poseen largos cuernos, que adoptan una gran variedad de formas: algunos son enroscados, como los de una cabra, mientras que otros son altos y rectos, como los de una gacela, o describen curvas ascendentes, como los de un antílope. También tienen gruesas colas, de hasta cuatro o cinco pies de largo, que agitan o esconden entre las piernas cuando se enfadan o se ponen nerviosos. Sus caninos son muy afilados, y sus ojos no poseen pupila o esclerótica apreciable, siendo de un único color uniforme: negro, rojo, blanco, plata u oro. Su piel puede ser de cualquiera de los colores propios de los humanos, pero también de varias tonalidades de rojo. En lo que a su cabello respecta, este nace tras sus cuernos y suele ser oscuro: negro, marrón, rojo, azul o púrpura."
 										]
 									},
 									{
 										"type": "entries",
-										"name": "Self-Reliant and Suspicious",
+										"name": "Autosuficientes y suspicaces",
 										"entries": [
-											"Tieflings subsist in small minorities found mostly in human cities or towns, often in the roughest quarters of those places, where they grow up to be swindlers, thieves or crime lords. Sometimes they live among other minority populations in enclaves where they are treated with more respect.",
-											"Lacking a homeland, tieflings know that they have to make their own way in the world and that they have to be strong to survive. They are not quick to trust anyone who claims to be a friend, but when a tiefling's companions demonstrate that they trust him or her, a tiefling learns to extend the same trust to them. And once a tiefling gives someone loyalty, the tiefling is a friend or ally for life."
+											"Los tieflings subsisten en pequeñas minorías que suelen encontrarse sobre todo en ciudades humanas, normalmente en los barrios más peligrosos, donde crecen para convertirse en estafadores, ladrones o líderes mafiosos. A veces viven, junto a otras minorías, en enclaves en los que son tratados con más respeto.",
+											"Dado que carecen de una tierra natal, los tieflings son conscientes de que tienen que forjar su propio camino y saben que deben ser fuertes si quieren sobrevivir. Recelan del primero que afirma ser su amigo, pero cuando los compañeros de un tiefling demuestran ser dignos de su confianza, este no duda en entregársela. Cuando un tiefling ofrece su lealtad, se convierte en un amigo fiel y en un aliado de por vida."
 										]
 									},
 									{
 										"type": "entries",
-										"name": "Tiefling Names",
+										"name": "Nombres tieflings",
 										"entries": [
-											"Tiefling names fall into three broad categories. Tieflings born into another culture typically have names reflective of that culture. Some have names derived from the infernal language passed down through generations, and reflect their fiendish heritage. And some younger tieflings striving to find a place in the world, adopt a name that signifies a virtue or other concept and then try to embody that concept. For some, the chosen name is a quest. For others, its a grim destiny.",
+											"Los nombres de las tieflings pueden clasificarse en tres grandes categorías. Por una parte, los nacidos en una cultura distinta a la suya suelen poseer nombres típicos de ella. Otros tienen nombres derivados del idioma infernal, heredados generación tras generación, que reflejan su legado diabólico. Y, por último, ciertos tieflings jóvenes adoptan un nombre que refleje una virtud u otro ideal, que intentan encarnar para así encontrar un lugar en el mundo. Para algunos, el nombre escogido representa una noble búsqueda, pero, para otros, se trata de un destino nefasto.",
 											{
 												"type": "list",
 												"style": "list-hang-notitle",
 												"items": [
 													{
 														"type": "item",
-														"name": "Male Infernal Names:",
+														"name": "Nombres infernales masculinos:",
 														"entry": "Akmenos, Amnon, Harahas, Ekernon, Tados, Kairon, Leucis, Melech, Morthos, Pelaios, Skamos, Therai"
 													},
 													{
 														"type": "item",
-														"name": "Female Infernal Names:",
+														"name": "Nombres infernales femeninos:",
 														"entry": "Akra, Anakis, Bryseis, Criella, Ea, Kallista, Lerissa, Makaria, Nemeia, Phelaia, Rieta"
 													},
 													{
 														"type": "item",
-														"name": "Virtue Names:",
-														"entry": "Art, Carrion, Chant, Creed, Despair, Fear, Glory, Hope, Ideal, Music, Nowhere, Poetry, Quest, Random, Reverence, Sorrow, Torment, Weary"
+														"name": "Nombres \"de virtud\"",
+														"entry": "Apertura, Arte, Azar, Cántico, Cansancio, Carroña, Credo, Desesperación, Esperanza, Excelencia, Gloria, Ideal, Miedo, Misión, Música, Ningún lugar, Pena, Poesía, Reverencia, Temeridad, Tormento."
 													}
 												]
 											}
@@ -5932,9 +6101,10 @@
 									},
 									{
 										"type": "inset",
-										"name": "Mutual Mistrust",
+										"name": "Desconfianza mutua",
 										"entries": [
-											"People tend to be suspicious of tieflings, assuming that their infernal heritage has left its mark on their personality and morality, not just their appearance. Shopkeepers keep a close eye on their goods when tieflings enter their stores, the town watch might follow a tiefling around for a while, and demagogues blame tieflings for strange happenings. The reality, though, is that a tiefling's bloodline doesn't affect his or her personality to any great degree. Years of dealing with mistrust does leave its mark on most tieflings, and they respond to it in different ways. Some choose to live up to the wicked stereotype, but others are virtuous. Most are simply very aware of how people respond to them. After dealing with this mistrust throughout youth, a tiefling often develops the ability to overcome prejudice through charm or intimidation."
+											"La gente tiende a mostrarse suspicaz con los tieflings, pues asumen que su sangre infernal ha dejado marca no solo en su apariencia, sino también en su personalidad y su brújula moral. Los tenderos no pierden de vista sus productos cuando los tieflings entran en sus establecimientos, la guardia de la ciudad los vigila estrechamente durante un tiempo y los demagogos les culpan de los sucesos inexplicables.",
+											"Sin embargo, la realidad es que la sangre de los tieflings no tiene prácticamente ningún efecto apreciable en su personalidad. En cambio, años de lidiar con la desconfianza dejan marca en la mayoría de los miembros de esta raza, que responden a ella de formas diferentes. Algunos eligen encarnar los estereotipos malvados de los que se les acusa, mientras que otros se comportan moralmente. La mayoría simplemente andan con cuidado, sabiendo cómo los demás van a reaccionar. Tras convivir con la suspicacia durante su juventud, la mayor parte de los tieflings desarrollan la habilidad para superar los prejuicios del resto de las personas mediante el encanto o la intimidación."
 										]
 									}
 								]
@@ -5942,43 +6112,68 @@
 						]
 					},
 					{
-						"name": "Uncommon Races",
+						"name": "Razas poco comunes",
 						"type": "inset",
 						"entries": [
-							"This race, and those listed below, are uncommon. They don't exist in every world of D&D, and even where they are found, they are less widespread than dwarves, elves, halflings, and humans. In the cosmopolitan cities of the D&D multiverse, most people hardly look twice at members of even the most exotic races. But the small towns and villages that dot the countryside are different. The common folk aren't accustomed to seeing members of these races, and they react accordingly.",
+							"Esta raza y el resto de las razas en esta lista son poco comunes. No existen en todos los mundos de D&D, e incluso donde se encuentran, están menos extendidos que los enanos, elfos, medianos y humanos. En las ciudades cosmopolitas del multiverso D&D, la mayoría de las personas apenas miran a los miembros de las razas más exóticas. Pero las pequeñas ciudades y pueblos que salpican el campo son diferentes. La gente común no está acostumbrada a ver miembros de estas razas, y reaccionan en consecuencia.",
 							{
 								"type": "entries",
-								"name": "Dragonborn",
 								"entries": [
-									"It's easy to assume that a dragonborn is a monster, especially if his or her scales betray a chromatic heritage. Unless the dragonborn starts breathing fire and causing destruction, though, people are likely to respond with caution rather than outright fear."
+									{
+										"type": "entries",
+										"name": "Dracónido",
+										"entries": [
+											"Es fácil suponer que un dracónido es un monstruo, especialmente si sus escamas demuestran una herencia cromática. Sin embargo, a menos que el dracónido comience a escupir fuego y a causar destrucción, es probable que las personas respondan con precaución en lugar de un miedo absurdo."
+										]
+									}
 								]
 							},
 							{
 								"type": "entries",
-								"name": "Gnome",
 								"entries": [
-									"Gnomes don't look like a threat and can quickly disarm suspicion with good humor. The common folk are often curious about gnomes, likely never having seen one before, but they are rarely hostile or fearful."
+									{
+										"type": "entries",
+										"name": "Gnomo",
+										"entries": [
+											"Los gnomos no parecen una amenaza y pueden desarmar rápidamente cualquier sospecha mediante su buen humor. La gente común a menudo siente curiosidad por los gnomos, probablemente nunca hayan visto uno antes, pero rara vez se comportan de forma hostil o temerosa."
+										]
+									}
 								]
 							},
 							{
 								"type": "entries",
-								"name": "Half-Elf",
 								"entries": [
-									"Although many people have never seen a half-elf, virtually everyone knows they exist. A half-elf stranger's arrival is followed by gossip behind the half-elf's back and stolen glances across the common room, rather than any confrontation or open curiosity."
+									{
+										"type": "entries",
+										"name": "Semielfo",
+										"entries": [
+											"Aunque muchas personas nunca han visto a un semielfo, prácticamente todos saben que existen. La llegada de un extraño semielfo es seguida por chismes a la espalda del semielfo y miradas recelosas a través de la sala común, en lugar de cualquier confrontación o curiosidad abierta."
+										]
+									}
 								]
 							},
 							{
 								"type": "entries",
-								"name": "Half-Orc",
 								"entries": [
-									"It's usually safe to assume that a half-orc is belligerent and quick to anger, so people watch themselves around an unfamiliar half-orc. Shopkeepers might surreptitiously hide valuable or fragile goods when a half-orc comes in, and people slowly clear out of a tavern, assuming a fight will break out soon."
+									{
+										"type": "entries",
+										"name": "Semiorco",
+										"entries": [
+											"Por lo general, es seguro asumir que un semiorco es beligerante y se cabrea rápidamente, por lo que las personas se miran alrededor de un semiorco desconocido. Los comerciantes pueden esconder disimuladamente bienes valiosos o frágiles cuando entra un semiorco, y la gente se va lentamente de una taberna, suponiendo que pronto se desatará una pelea."
+										]
+									}
 								]
 							},
 							{
 								"type": "entries",
-								"name": "Tiefling",
 								"entries": [
-									"Half-orcs are greeted with a practical caution, but tieflings are the subject of supernatural fear. The evil of their heritage is plainly visible in their features, and as far as most people are concerned, a tiefling could very well be a devil straight from the Nine Hells. People might make warding signs as a tiefling approaches, cross the street to avoid passing near, or bar shop doors before a tiefling can enter."
+									{
+										"type": "entries",
+										"name": "Tiefling",
+										"entries": [
+											"Los semiorcos son recibidos con una precaución práctica, pero los tieflings son objeto de un miedo sobrenatural. El mal de su herencia es claramente visible en su físico, y en lo que respecta a la mayoría de las personas, un tiefling bien podría ser un demonio llegado directamente de los Nueve Infiernos. Las personas pueden hacer simbolos de protección cuando se acerca un tiefling, cruzar la calle para evitar pasar cerca o cerrar las puertas de las tiendas antes de que pueda entrar un tiefling."
+										]
+									}
 								]
 							}
 						]
