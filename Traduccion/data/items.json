@@ -28356,57 +28356,57 @@
 			]
 		},
 		{
-			"name": "+1 Dragonhide Belt",
+			"name": "Cinturón de cuero de dragón +1",
 			"source": "FTD-ES",
 			"page": 23,
 			"rarity": "uncommon",
-			"reqAttune": "by a monk",
+			"reqAttune": "con un monje",
 			"reqAttuneTags": [
 				{
-					"class": "monk"
+					"class": "monje|PHB-ES"
 				}
 			],
 			"wondrous": true,
 			"entries": [
-				"This finely detailed belt is made of dragonhide. While wearing it, you gain a +1 bonus to the saving throw DCs of your ki features. In addition, you can use an action to regain ki points equal to a roll of your Martial Arts die. You can't use this action again until the next dawn."
+				"Este hermoso y detallado cinturón está hecho de cuero de dragón. Mientras lo lleves puesto, obtienes un bonificador de +1 a la CD de las tiradas de salvación de tus rasgos de ki. Además, puedes usar una acción para recuperar una cantidad de puntos de ki igual a una tirada de tu dado de Artes Marciales. No podrás volver a usar esta acción hasta el siguiente amanecer."
 			]
 		},
 		{
-			"name": "+2 Dragonhide Belt",
+			"name": "Cinturón de cuero de dragón +2",
 			"source": "FTD-ES",
 			"page": 23,
 			"rarity": "rare",
-			"reqAttune": "by a monk",
+			"reqAttune": "con un monje",
 			"reqAttuneTags": [
 				{
-					"class": "monk"
+					"class": "monje|PHB-ES"
 				}
 			],
 			"wondrous": true,
 			"entries": [
-				"This finely detailed belt is made of dragonhide. While wearing it, you gain a +2 bonus to the saving throw DCs of your ki features. In addition, you can use an action to regain ki points equal to a roll of your Martial Arts die. You can't use this action again until the next dawn."
+				"Este hermoso y detallado cinturón está hecho de cuero de dragón. Mientras lo lleves puesto, obtienes un bonificador de +2 a la CD de las tiradas de salvación de tus rasgos de ki. Además, puedes usar una acción para recuperar una cantidad de puntos de ki igual a una tirada de tu dado de Artes Marciales. No podrás volver a usar esta acción hasta el siguiente amanecer."
 			]
 		},
 		{
-			"name": "+3 Dragonhide Belt",
+			"name": "Cinturón de cuero de dragón +3",
 			"source": "FTD-ES",
 			"page": 23,
 			"rarity": "very rare",
-			"reqAttune": "by a monk",
+			"reqAttune": "con un monje",
 			"reqAttuneTags": [
 				{
-					"class": "monk"
+					"class": "monje|PHB-ES"
 				}
 			],
 			"wondrous": true,
 			"entries": [
-				"This finely detailed belt is made of dragonhide. While wearing it, you gain a +3 bonus to the saving throw DCs of your ki features. In addition, you can use an action to regain ki points equal to a roll of your Martial Arts die. You can't use this action again until the next dawn."
+				"Este hermoso y detallado cinturón está hecho de cuero de dragón. Mientras lo lleves puesto, obtienes un bonificador de +3 a la CD de las tiradas de salvación de tus rasgos de ki. Además, puedes usar una acción para recuperar una cantidad de puntos de ki igual a una tirada de tu dado de Artes Marciales. No podrás volver a usar esta acción hasta el siguiente amanecer."
 			]
 		},
 		{
-			"name": "Amethyst Lodestone",
+			"name": "Imán de amatista",
 			"source": "FTD-ES",
-			"page": 22,
+			"page": 24,
 			"rarity": "very rare",
 			"reqAttune": true,
 			"wondrous": true,
@@ -28419,159 +28419,177 @@
 			"rechargeAmount": "{@dice 1d6}",
 			"charges": 6,
 			"entries": [
-				"This fist-sized chunk of amethyst is infused with an amethyst dragon's ability to bend gravitational forces. While you are carrying the lodestone, you have advantage on Strength saving throws.",
-				"The lodestone has 6 charges for the following properties, which you can use while you are holding the stone. The stone regains {@dice 1d6} expended charges daily at dawn.",
+				"Este trozo de amatista del tamaño de un puño está imbuido de la capacidad de los dragones de amatista para controlar las fuerzas gravitatorias. Mientras lleves el imán, tienes ventaja en las tiradas de salvación de Fuerza.",
+				"El imán tiene 6 cargas para las siguientes propiedades, que puedes usar mientras lo sostengas. El imán recupera {@dice 1d6} cargas empleadas cada día, al amanecer.",
 				{
 					"type": "entries",
-					"name": "Flight",
+					"name": "Impulso gravitatorio",
 					"entries": [
-						"As a bonus action, you can expend 1 charge to gain the power of flight for 10 minutes. For the duration, you gain a flying speed equal to your walking speed, and you can hover."
+						"Como acción, puedes gastar 1 carga para centrar la gravedad en torno a una criatura que puedas ver a 60 pies o menos de ti. El objetivo deberá superar una tirada de salvación de Fuerza con CD 18 o será empujado hasta 20 pies en la dirección que elijas."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Gravitational Thrust",
+					"name": "Invertir la gravedad",
 					"entries": [
-						"As an action, you can expend 1 charge to focus gravity around a creature you can see within 60 feet of you. The target must succeed on a DC 18 Strength saving throw or be pushed up to 20 feet in a direction of your choice."
+						"Como acción, puedes gastar 3 cargas para lanzar el conjuro {@spell invertir la gravedad|PHB-ES} desde el imán (CD de salvación 18)."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Reverse Gravity",
+					"name": "Volar",
 					"entries": [
-						"As an action, you can expend 3 charges to cast {@spell reverse gravity} from the stone (save DC 18)."
+						"Como acción adicional, puedes gastar 1 carga para obtener la capacidad de volar durante 10 minutos. Hasta que el efecto termine, obtienes una velocidad volando igual a tu velocidad caminando y puedes levitar."
 					]
 				}
 			],
 			"attachedSpells": [
-				"reverse gravity"
+				"invertir la gravedad|PHB-ES"
 			]
 		},
 		{
-			"name": "Ascendant Dragon Vessel",
+			"name": "Recipiente del dragón ascendente",
 			"source": "FTD-ES",
-			"_copy": {
-				"name": "Wakened Dragon Vessel",
-				"source": "FTD",
-				"_preserve": {
-					"page": true
-				}
-			},
+			"page": 27,
 			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
 			"entries": [
-				"This vessel can be a potion bottle, drinking horn, or other container meant to hold a liquid.",
-				"As a bonus action, if the vessel is empty, you can speak the command word to fill the vessel with one of the following (your choice): ale, olive oil, mead, wine, whiskey, a {@item potion of healing}, a {@item potion of greater healing}, a {@item potion of superior healing}, a {@item potion of supreme healing}, a {@item potion of climbing}, a {@item potion of fire breath}, a {@item potion of flying}, or a {@item potion of dragon's majesty|FTD}. Once this property is used, it can't be used until the next dawn. A potion you create in this way loses its magical properties if it isn't imbibed within 24 hours."
+				"Este recipiente puede ser una botella de una poción, un cuerno para beber u otro objeto diseñado para guardar líquidos.",
+				"Como acción adicional, si el recipiente está vacío, puedes pronunciar la palabra de activación para llenarlo de uno de los siguientes líquidos (a tu elección): cerveza, aceite de oliva, hidromiel, vino, whisky, una {@item poción de curación|DMG-ES}, una {@item poción de curación (mayor)|DMG-ES}, una {@item poción de curación (superior)|DMG-ES}, una {@item poción de curación (suprema)|DMG-ES}, una {@item poción de trepar|DMG-ES}, una {@item poción de aliento de fuego|DMG-ES}, una {@item poción de vuelo|DMG-ES} o una {@item poción de majestad del dragón|FTD-ES}. Una vez utilizada, esta propiedad no puede usarse hasta el siguiente amanecer. Una poción que crees de esta forma pierde sus propiedades mágicas si no se bebe en un plazo de 24 horas."
 			]
 		},
 		{
-			"name": "Ascendant Dragon-Touched Focus",
+			"name": "Canalizador tocado por dragones ascendente",
 			"source": "FTD-ES",
-			"_copy": {
-				"name": "Wakened Dragon-Touched Focus",
-				"source": "FTD",
-				"_preserve": {
-					"page": true
-				}
-			},
+			"page": 26,
 			"rarity": "legendary",
+			"reqAttune": "con un lanzador de conjuros",
+			"reqAttuneTags": [
+				{
+					"spellcasting": true
+				}
+			],
+			"wondrous": true,
+			"focus": [
+				"Artificer",
+				"Bard",
+				"Cleric",
+				"Druid",
+				"Paladin",
+				"Ranger",
+				"Sorcerer",
+				"Warlock",
+				"Wizard"
+			],
 			"entries": [
-				"This wondrous item can be a scepter, an orb, an amulet, a crystal, or another finely crafted object. It typically incorporates imagery of dragons' wings, claws, teeth, or scales.",
-				"You have advantage on initiative rolls. While you are holding the focus, it can function as a spellcasting focus for all your spells.",
-				"The focus gains an additional property determined by the family of the dragon in whose hoard it became Stirring:",
+				"Este objeto maravilloso puede ser un cetro, un orbe, un amuleto, un cristal u otro objeto elaborado con esmero. Suele incluir imágenes de alas, garras, colmillos o escamas de dragón.",
+				"Tienes ventaja en las tiradas de iniciativa. Mientras sostengas el canalizador, puede funcionar como canalizador mágico para todos tus conjuros.",
+				"El canalizador obtiene una propiedad adicional según la familia del dragón en cuyo tesoro pasó al estado \"turbado\":",
 				{
 					"type": "list",
 					"style": "list-hang-notitle",
 					"items": [
 						{
 							"type": "item",
-							"name": "Chromatic",
+							"name": "Cromático",
 							"entries": [
-								"Whenever you use a spell slot to cast a spell that deals acid, cold, fire, lightning, or poison damage, roll a {@dice d6}, and you gain a bonus equal to the number rolled to one of the spell's damage rolls."
+								"Siempre que uses un espacio de conjuro para lanzar un conjuro que inflija daño de ácido, frío, fuego, relámpago o veneno, tiras {@dice 1d6} y obtienes un bonificador igual al resultado para una de las tiradas de daño de conjuro."
 							]
 						},
 						{
 							"type": "item",
-							"name": "Gem",
+							"name": "Gema",
 							"entries": [
-								"Whenever you use a spell slot to cast a spell, you can immediately teleport to an unoccupied space you can see within 15 feet of you."
+								"Siempre que uses un espacio de conjuro para lanzar un conjuro, puedes teletransportarte inmediata- mente a un espacio sin ocupar que puedas ver a 15 pies o menos de ti."
 							]
 						},
 						{
 							"type": "item",
-							"name": "Metallic",
+							"name": "Metálico",
 							"entries": [
-								"When a creature you can see within 30 feet of you makes a saving throw, you can use your reaction to give that creature advantage on the saving throw."
+								"Cuando una criatura que puedas ver a 30 pies o menos de ti haga una tirada de salvación, puedes usar tu reacción para dar ventaja a esa criatura en la tirada de salvación."
 							]
 						}
 					]
 				},
-				"While you are holding a Wakened focus, you can use it to cast certain spells. Once the item is used to cast a given spell, it can't be used to cast that spell again until the next dawn. The spells are determined by the family of the dragon in whose hoard it became Wakened.",
+				"Mientras sostengas un canalizador \"despierto\", puedes usarlo para lanzar ciertos conjuros. Una vez utilizado para lanzar un determinado conjuro, el objeto no puede volver a usarse para lanzar ese conjuro hasta el siguiente amanecer. Los conjuros se determinan según la familia del dragón en cuyo tesoro pasó al estado \"despierto\".",
 				{
 					"type": "list",
 					"style": "list-hang-notitle",
 					"items": [
 						{
 							"type": "item",
-							"name": "Chromatic",
+							"name": "Cromático",
 							"entries": [
-								"{@spell Hold monster}, {@spell Rime's binding ice|FTD}"
+								"{@spell Inmovilizar monstruo|PHB-ES}, {@spell Hielo inmovilizador de Escarcha|FTD-ES}"
 							]
 						},
 						{
 							"type": "item",
-							"name": "Gem",
+							"name": "Gema",
 							"entries": [
-								"{@spell Rary's telepathic bond}, {@spell Raulothim's psychic lance|FTD}"
+								"{@spell Enlace telepático de Rary|PHB-ES}, {@spell Lanza psíquica de Raulothim|FTD-ES}"
 							]
 						},
 						{
 							"type": "item",
-							"name": "Metallic",
+							"name": "Metálico",
 							"entries": [
-								"{@spell Fizban's platinum shield|FTD}, {@spell legend lore}"
+								"{@spell Escudo de platino de Fizban|FTD-ES}, {@spell Conocer las leyendas|PHB-ES}"
 							]
 						}
 					]
 				},
-				"When you cast a spell of 1st level or higher while holding this focus, you can treat the spell as if it were cast using a 9th-level spell slot. Once this property is used, it can't be used again until the next dawn."
+				"Además, cuando lances un conjuro de nivel 1 o superior mientras sostienes este canalizador, puedes tratar el con- juro como si se lanzara mediante un espacio de conjuro de nivel 9. Una vez utilizada, esta propiedad no puede volver a usarse hasta el siguiente amanecer."
+			],
+			"attachedSpells": [
+				"Inmovilizar monstruo|PHB-ES",
+				"Hielo inmovilizador de Escarcha|FTD-ES",
+				"Enlace telepático de Rary|PHB-ES",
+				"Lanza psíquica de Raulothim|FTD-ES",
+				"Escudo de platino de Fizban|FTD-ES",
+				"Conocer las leyendas|PHB-ES"
 			]
 		},
 		{
-			"name": "Ascendant Scaled Ornament",
+			"name": "Adorno escamoso ascendente",
 			"source": "FTD-ES",
-			"_copy": {
-				"name": "Wakened Scaled Ornament",
-				"source": "FTD",
-				"_preserve": {
-					"page": true
+			"page": 26,
+			"rarity": "legendary",
+			"reqAttune": true,
+			"wondrous": true,
+			"modifySpeed": {
+				"equal": {
+					"fly": "walk"
 				}
 			},
-			"rarity": "legendary",
+			"bonusAc": "+1",
 			"entries": [
-				"This ornament can be jewelry, a cloak, or another wearable accessory. It appears to be fashioned from a dragon's scale, tooth, or claw, or it incorporates images in those shapes.",
-				"You gain a +1 bonus to AC, and you can't be {@condition charmed} or {@condition frightened}. Moreover, each creature of your choice within 30 feet of you has advantage on saving throws it makes to avoid being {@condition charmed} or {@condition frightened} or to end those conditions on itself.",
-				"When you would take damage of the type dealt by the breath of the dragon in whose hoard the ornament became Wakened, you can use your reaction to take no damage instead, and you regain hit points equal to the damage you would have taken. Once this property is used, it can't be used again until the next dawn.",
-				"While you are wearing the ornament, you gain a flying speed equal to your walking speed and can hover. While you are flying using this speed, spectral dragon wings appear on your back."
+				"Este adorno puede ser una joya, una capa u otro accesorio que te puedas poner. Parece estar elaborado con una escama, un colmillo o una garra de dragón o incluye imágenes con esas formas.",
+				"Recibes un bonificador de +1 a la CA y no puedes ser {@condition asustado|PHB-ES} ni {@condition hechizado|PHB-ES}. Además, todas las criaturas de tu elección a 30 pies o menos de ti tienen ventaja en las tiradas de salvación para evitar los estados de {@condition asustado|PHB-ES} o {@condition hechizado|PHB-ES} o poner fin a esos estados sobre sí mismas.",
+				"Cuando fueras a recibir daño del tipo causado por el aliento del dragón en cuyo tesoro el adorno pasó al estado \"despierto\", puedes usar tu reacción para no recibir ningún daño y recuperar una cantidad de puntos de golpe igual al daño que habrías recibido. Una vez utilizada, esta propiedad no puede volver a usarse hasta el siguiente amanecer.",
+				"Mientras lleves puesto el adorno, obtienes una velocidad volando igual a tu velocidad caminando y puedes levitar. Mientras vueles con esta velocidad, unas alas de dragón espectrales te aparecen en la espalda."
 			]
 		},
 		{
-			"name": "Emerald Pen",
+			"name": "Pluma de esmeralda",
 			"source": "FTD-ES",
-			"page": 23,
+			"page": 24,
 			"rarity": "uncommon",
 			"wondrous": true,
 			"entries": [
-				"This pen is tipped with an emerald nib and requires no ink to write. While holding this pen, you can cast {@spell illusory script} at will, requiring no material components."
+				"Esta pluma tiene la punta de esmeralda y no requiere tinta para escribir. Mientras sostengas esta pluma, puedes lanzar el conjuro {@spell texto ilusorio|PHB-ES} a voluntad y sin necesidad de componentes materiales."
 			],
 			"attachedSpells": [
-				"illusory script"
+				"texto ilusorio|PHB-ES"
 			]
 		},
 		{
-			"name": "Flail of Tiamat",
+			"name": "Mangual de Tiamat",
 			"source": "FTD-ES",
-			"page": 23,
-			"baseItem": "flail|PHB",
+			"page": 24,
+			"baseItem": "Flagelo|PHB-ES",
 			"type": "M",
 			"rarity": "legendary",
 			"reqAttune": true,
@@ -28582,117 +28600,87 @@
 			"bonusWeapon": "+3",
 			"weapon": true,
 			"entries": [
-				"This magic flail is made in the image of Tiamat, with five jagged heads shaped like the heads of five different chromatic dragons. You gain a +3 bonus to attack and damage rolls made with this flail. When you hit with an attack roll using it, the target takes an extra {@damage 5d4} damage of your choice of one of the following damage types: acid, cold, fire, lightning, or poison.",
-				"While holding the flail, you can use an action and speak a command word to cause the heads to breathe multicolored flames in a 90-foot cone. Each creature in that area must make a DC 18 Dexterity saving throw. On a failed save, it takes {@damage 14d6} damage of one of the following damage types (your choice): acid, cold, fire, lightning, or poison. On a successful save, it takes half as much damage. Once this action is used, it can't be used again until the next dawn."
+				"Este mangual se ha hecho a imagen y semejanza de Tiamat, con cinco cabezas dentadas que imitan las cabezas de cinco dragones cromáticos diferentes. Recibes un bonificador de +3 a las tiradas de ataque y de daño que hagas con este mangual. Cuando impactes con una tirada de ataque usando esta arma, el objetivo recibirá {@damage 5d4} de daño adicional de uno de los siguientes tipos a tu elección: ácido, frío, fuego, relámpago o veneno.",
+				"Mientras sostengas el mangual, puedes usar una acción y pronunciar una palabra de activación para hacer que las cabezas exhalen llamas multicolores en un cono de 90 pies. Todas las criaturas situadas en esa zona deberán hacer una tirada de salvación de Destreza con CD 18. Si la fallan, recibirán {@damage 14d6} de uno de los siguientes tipos de daño (a tu elección): ácido, frío, fuego, relámpago o veneno. Si la superan, recibirán la mitad de daño. Una vez utilizada, esta acción no puede volver a usarse hasta el siguiente amanecer."
 			]
 		},
 		{
-			"name": "Gold Canary Figurine of Wondrous Power",
+			"name": "Estatuilla de poder maravilloso de canario de oro",
 			"source": "FTD-ES",
 			"page": 23,
 			"rarity": "legendary",
 			"wondrous": true,
 			"entries": [
-				"This gold statuette is carved in the likeness of a canary and is small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature in one of two forms (you choose). If there isn't enough space for the creature where it would appear, the figurine doesn't become a creature. The two forms are as follows:",
+				"Esta estatuilla de oro se ha tallado con la apariencia de un canario y es lo bastante pequeña para caber en un bolsillo. Si usas una acción para pronunciar la palabra de activación y lanzar la estatuilla a un punto del suelo a 60 pies o menos de ti, la estatuilla se convierte en una criatura viviente que adopta una de dos posibles formas (a tu elección). Si no hay suficiente espacio en el lugar donde tendría que aparecer la criatura, la estatuilla no se convertirá en una criatura. Las dos formas son las siguientes:",
 				{
 					"type": "entries",
-					"name": "Giant Canary Form",
+					"name": "Forma de canario gigante",
 					"entries": [
-						"The figurine becomes a {@creature giant canary|FTD} for up to 8 hours and can be ridden as a mount. Once the figurine has become a {@creature giant canary|FTD}, it can't be used this way again until the next dawn."
+						"La estatuilla se convierte en un {@creature canario gigante|FTD-ES} durante un máximo de 8 horas y puede usarse como montura. Una vez que la estatuilla se haya convertido en un {@creature canario gigante|FTD-ES}, no puede volver a usarse de este modo de nuevo hasta el siguiente amanecer."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Gold Dragon Form",
+					"name": "Forma de dragón de oro",
 					"entries": [
-						"While you are missing half or more of your hit points, you can speak a different command word and the figurine becomes an {@creature adult gold dragon} (see its stat block in the Monster Manual) for up to 1 hour. The dragon can't use any legendary actions or lair actions. Once the figurine has become an {@creature adult gold dragon}, it can't be used this way again until 1 year has passed.",
-						"In either form, the creature is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions.",
-						"The creature exists for a duration specific to each form. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the description."
+						"Si te faltan la mitad o más. de tus puntos de golpe, puedes pronunciar una palabra de activación diferente y la estatuilla se convierte en un {@creature dragón de oro adulto|MM-ES} (consulta su perfil en el Manual de Monstruos) durante un máximo de 1 hora. El dragón no puede usar acciones legendarias ni acciones en guarida. Una vez que la estatuilla se haya convertido en un {@creature dragón de oro adulto|MM-ES}, no puede volver a usarse de este modo hasta que transcurra un año.",
+						"En ambas formas, la criatura es amistosa contigo y tus compañeros. Entiende tus idiomas y obedece tus órdenes verbales. Si no le das ninguna orden, la criatura se defiende a sí misma, pero no realiza ninguna otra acción.",
+						"La criatura existirá durante el tiempo específico de cada forma. Cuando acabe ese tiempo, la criatura volverá a su forma de estatuilla. Recuperará la forma de estatuilla antes si sus puntos de golpe se reducen a 0 o si usas una acción para pronunciar una palabra de activación de nuevo mientras la tocas. Cuando la criatura recupere su forma de estatuilla, su propiedad no puede volver a usarse hasta que pase un tiempo determinado, según se especifica en la descripción."
 					]
 				}
 			]
 		},
 		{
-			"name": "Javelin of Backbiting",
-			"source": "TftYP-ES",
-			"page": 229,
-			"baseItem": "javelin|phb",
-			"type": "M",
-			"rarity": "very rare",
-			"reqAttune": true,
-			"curse": true,
-			"weight": 2,
-			"weaponCategory": "simple",
-			"property": [
-				"T"
-			],
-			"range": "60/150",
-			"dmg1": "1d6",
-			"dmgType": "P",
-			"bonusWeapon": "+2",
-			"entries": [
-				"You gain a +2 bonus to attack and damage rolls made with this magic weapon. When you throw it, its normal and long ranges both increase by 30 feet, and it deals one extra die of damage on a hit. After you throw it and it hits or misses, it flies back to your hand immediately.",
-				{
-					"type": "entries",
-					"name": "Curse",
-					"entries": [
-						"This weapon is cursed, and becoming attuned to it extends the curse to you. Until the curse is broken with {@spell remove curse} or similar magic, you are unwilling to part with the weapon, keeping it within reach at all times. In addition, you have disadvantage on attack rolls made with weapons other than this one."
-					]
-				},
-				"Whenever you roll a 1 on an attack roll using this weapon, the weapon bends or flies to hit you in the back. Make a new attack roll with advantage against your own AC. If the result is a hit, you take damage as if you had attacked yourself with the javelin."
-			]
-		},
-		{
-			"name": "Platinum Scarf",
+			"name": "Bufanda de platino",
 			"source": "FTD-ES",
-			"page": 24,
+			"page": 23,
 			"rarity": "legendary",
 			"reqAttune": true,
 			"wondrous": true,
 			"bonusAc": "+1",
 			"entries": [
-				"This scarf is made of sturdy cloth and covered in platinum-colored scales.",
-				"As an action, you can pull a scale from the scarf and speak a command word. When you do so, choose one of the following effects:",
+				"Esta bufanda está hecha de una tela recia y revestida de escamas de color platino.",
+				"Como acción, puedes arrancar una escama de la bufanda y pronunciar una palabra de activación. Cuando lo hagas, elige uno de los siguientes efectos:",
 				{
 					"type": "entries",
-					"name": "Breath of Life",
+					"name": "Aliento de vida",
 					"entries": [
-						"The scale disappears, and you or a creature you touch regains {@dice 10d4} hit points."
+						"La escama desaparece y tú o una criatura a la que toques recuperáis {@dice 10d4} puntos de golpe."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Platinum Shield",
+					"name": "Escudo de platino",
 					"entries": [
-						"For 1 hour or until you dismiss it (no action required), the scale becomes a {@item +1 shield}, which you or another creature can use. A creature wielding the shield has immunity to radiant damage."
+						"Durante 1 hora o hasta que la descartes (no requiere acción), la escama se convierte en un {@item escudo +1|DMG-ES}, que tú u otra criatura podéis usar. La criatura que porte el escudo tiene inmunidad al daño radiante."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Radiant Hammer",
+					"name": "Martillo radiante",
 					"entries": [
-						"For 1 hour or until you dismiss it (no action required), the scale becomes a magic {@item light hammer|phb}, which you or another creature can use. The weapon deals {@damage 2d4} radiant damage, instead of the bludgeoning damage normal for a light hammer. It deals an extra {@damage 2d4} radiant damage to chromatic dragons.",
-						"Once three scales have been pulled from the scarf, no more scales can be removed until the next dawn, when all the missing scales grow back. If you pull off a scale but don't speak a command word, it disappears after 1 minute."
+						"Durante 1 hora o hasta que la descartes (no requiere acción), la escama se convierte en un {@item martillo ligero|PHB-ES} mágico, que tú u otra criatura podéis usar. El arma inflige {@damage 2d4} de daño radiante en vez del daño contundente normal de un martillo ligero, e inflige {@damage 2d4} de daño radiante adicional a dragones cromáticos."
 					]
-				}
+				},
+				"Una vez que arranques tres escamas de la bufanda, no podrás quitar ninguna más hasta el siguiente amanecer, en el que vuelven a crecer todas las escamas que falten. Si arrancas una escama pero no pronuncias la palabra de activación, desaparecerá tras 1 minuto."
 			]
 		},
 		{
-			"name": "Potion of Dragon's Majesty",
+			"name": "Poción de majestad del dragón",
 			"source": "FTD-ES",
 			"page": 24,
 			"type": "P",
 			"rarity": "legendary",
 			"entries": [
-				"This potion looks like liquid gold, with a single scale from a {@filter chromatic|bestiary|search=chromatic dragon}, {@filter gem|bestiary|search=gem dragon}, or {@filter metallic|bestiary|search=metallic dragon} dragon suspended in it. When you drink this potion, you transform into an adult dragon of the same kind as the dragon the scale came from. The transformation lasts for 1 hour. Any equipment you are wearing or carrying melds into your new form or falls to the ground (your choice). For the duration, you use the game statistics of the adult dragon instead of your own, but you retain your languages, personality, and memories. You can't use a dragon's Change Shape or its legendary or lair actions."
+				"Esta poción parece oro líquido con una sola escama de un {@filter dragón cromático|bestiary|search=chromatic dragon}, {@filter gema|bestiary|search=gem dragon} o {@filter metálico|bestiary|search=metallic dragon} suspendida en ella. Cuando la bebes, te transformas en un dragón adulto del mismo tipo que el dragón del que procedía la escama. La transformación dura 1 hora. Cualquier equipo que vistas o lleves se funde con tu nueva forma o cae al suelo (a tu elección). Hasta que el efecto termine, usas el perfil del dragón adulto en vez del tuyo, pero conservas tus idiomas, personalidad y recuerdos. No puedes usar la acción de cambiar de forma de un dragón ni sus acciones legendarias o en guarida."
 			]
 		},
 		{
-			"name": "Ruby Weave Gem",
+			"name": "Gema de urdimbre de rubí",
 			"source": "FTD-ES",
 			"page": 24,
 			"rarity": "legendary",
-			"reqAttune": "by a spellcaster",
+			"reqAttune": "con un lanzador de conjuros",
 			"reqAttuneTags": [
 				{
 					"spellcasting": true
@@ -28714,16 +28702,16 @@
 				"Wizard"
 			],
 			"entries": [
-				"While you are holding this gem, you can use it as a spellcasting focus for your spells.",
-				"The gem has 3 charges and regains all expended charges daily at dawn. When you cast a spell while holding this gem, you can expend up to 3 charges to ignore the spell's material components with a gold piece cost, up to 500 gp per charge expended.",
-				"When you finish a long rest, choose a spell from any class list. The spell you choose must be of a level you can cast. You know the chosen spell and can cast it with your spell slots of the appropriate level until the end of your next long rest."
+				"Mientras sostengas esta gema, puedes usarla como canalizar mágico para tus conjuros.",
+				"La gema tiene 3 cargas y recupera todas las cargas empleadas cada día, al amanecer. Cuando lances un conjuro mientras sostienes esta gema, puedes gastar hasta 3 cargas para ignorar los componentes materiales del conjuro con un coste en piezas de oro, hasta 500 po por cada carga que gastes.",
+				"Cuando finalices un descanso largo, elige un conjuro de la lista de cualquier clase. El conjuro que elijas debe ser de un nivel que puedas lanzar. Conoces el conjuro elegido y puedes lanzarlo con tus espacios de conjuro del nivel adecuado hasta el final de tu siguiente descanso largo."
 			]
 		},
 		{
-			"name": "Sapphire Buckler",
+			"name": "Broquel de zafiro",
 			"source": "FTD-ES",
-			"page": 24,
-			"baseItem": "shield|PHB",
+			"page": 22,
+			"baseItem": "escudo|PHB-ES",
 			"type": "S",
 			"resist": [
 				"psychic",
@@ -28734,28 +28722,28 @@
 			"weight": 6,
 			"ac": 2,
 			"entries": [
-				"This crystalline blue shield is fashioned from a sapphire dragon's scale and is created to aid in rooting out the influence of Aberrations. While wielding the shield, you have resistance to psychic and thunder damage. Also, when you take damage from a creature that is within 5 feet of you, you can use your reaction to deal {@damage 2d6} thunder damage to that creature.",
-				"As an action, you can use the shield to help you locate Aberrations until the end of your next turn. If any Aberrations are within 1 mile of you, the shield emits a low humming tone for a moment, and you know the direction of all Aberrations within that range. Once this property is used, it can't be used again until the next dawn."
+				"Este escudo azul cristalino está hecho con una escama de un dragón de zafiro y está diseñado para ayudar a acabar con la influencia de las aberraciones. Mientras empuñes el escudo, tienes resistencia al daño psíquico y de trueno. Además, cuando recibas daño de una criatura que esté a 5 pies o menos de ti, puedes usar tu reacción para infligirle {@damage 2d6} de daño de trueno.",
+				"Como acción, puedes usar el escudo para ayudarte a localizar aberraciones hasta el final de tu siguiente turno. Si hay alguna aberración a 1 milla o menos de ti, el escudo emitirá un breve zumbido grave y sabrás la dirección de todas las aberraciones que haya en ese alcance. Una vez utilizada, esta propiedad no puede volver a usarse hasta el siguiente amanecer."
 			]
 		},
 		{
-			"name": "Slumbering Dragon Vessel",
+			"name": "Recipiente del dragón durmiente",
 			"source": "FTD-ES",
 			"page": 27,
 			"rarity": "uncommon",
 			"reqAttune": true,
 			"wondrous": true,
 			"entries": [
-				"This vessel can be a potion bottle, drinking horn, or other container meant to hold a liquid.",
-				"As a bonus action, if the vessel is empty, you can speak the command word to fill the vessel with one of the following (your choice): ale, olive oil, a {@item potion of healing}, or a {@item potion of climbing}. Once this property is used, it can't be used until the next dawn. A potion you create in this way loses its magical properties if it isn't imbibed within 24 hours."
+				"Este recipiente puede ser una botella de una poción, un cuerno para beber u otro objeto diseñado para guardar líquidos.",
+				"Como acción adicional, si el recipiente está vacío, puedes pronunciar la palabra de activación para llenarlo de uno de los siguientes líquidos (a tu elección): cerveza, aceite de oliva, una {@item poción de curación|DMG-ES} o una {@item poción de trepar|DMG-ES}. Una vez utilizada, esta propiedad no puede usarse hasta el siguiente amanecer. Una poción que crees de esta forma pierde sus propiedades mágicas si no se bebe en un plazo de 24 horas."
 			]
 		},
 		{
-			"name": "Slumbering Dragon-Touched Focus",
+			"name": "Canalizador tocado por dragones durmiente",
 			"source": "FTD-ES",
 			"page": 26,
 			"rarity": "uncommon",
-			"reqAttune": "by a spellcaster",
+			"reqAttune": "con un lanzador de conjuros",
 			"reqAttuneTags": [
 				{
 					"spellcasting": true
@@ -28774,14 +28762,14 @@
 				"Wizard"
 			],
 			"entries": [
-				"This wondrous item can be a scepter, an orb, an amulet, a crystal, or another finely crafted object. It typically incorporates imagery of dragons' wings, claws, teeth, or scales.",
-				"You have advantage on initiative rolls. While you are holding the focus, it can function as a spellcasting focus for all your spells."
+				"Este objeto maravilloso puede ser un cetro, un orbe, un amuleto, un cristal u otro objeto elaborado con esmero. Suele incluir imágenes de alas, garras, colmillos o escamas de dragón.",
+				"Tienes ventaja en las tiradas de iniciativa. Mientras sostengas el canalizador, puede funcionar como canalizador mágico para todos tus conjuros."
 			]
 		},
 		{
-			"name": "Slumbering Scaled Ornament",
+			"name": "Adorno escamoso durmiente",
 			"source": "FTD-ES",
-			"page": 27,
+			"page": 26,
 			"rarity": "uncommon",
 			"reqAttune": true,
 			"wondrous": true,
@@ -28791,64 +28779,72 @@
 				}
 			},
 			"entries": [
-				"This ornament can be jewelry, a cloak, or another wearable accessory. It appears to be fashioned from a dragon's scale, tooth, or claw, or it incorporates images in those shapes.",
-				"You have advantage on saving throws you make to avoid being {@condition charmed} or {@condition frightened} or to end those conditions on you."
+				"Este adorno puede ser una joya, una capa u otro accesorio que te puedas poner. Parece estar elaborado con una escama, un colmillo o una garra de dragón o incluye imágenes con esas formas.",
+				"Tienes ventaja en las tiradas de salvación para evitar los estados de {@condition asustado|PHB-ES} o {@condition hechizado|PHB-ES} o poner fin a esos estados sobre ti mismo."
 			]
 		},
 		{
-			"name": "Stirring Dragon Vessel",
+			"name": "Recipiente del dragón turbado",
 			"source": "FTD-ES",
-			"_copy": {
-				"name": "Slumbering Dragon Vessel",
-				"source": "FTD",
-				"_preserve": {
-					"page": true
-				}
-			},
+			"page": 27,
 			"rarity": "rare",
+			"reqAttune": true,
+			"wondrous": true,
 			"entries": [
-				"This vessel can be a potion bottle, drinking horn, or other container meant to hold a liquid.",
-				"As a bonus action, if the vessel is empty, you can speak the command word to fill the vessel with one of the following (your choice): ale, olive oil, mead, a {@item potion of healing}, a {@item potion of greater healing}, a {@item potion of climbing}, or a {@item potion of fire breath}. Once this property is used, it can't be used until the next dawn. A potion you create in this way loses its magical properties if it isn't imbibed within 24 hours."
+				"Este recipiente puede ser una botella de una poción, un cuerno para beber u otro objeto diseñado para guardar líquidos.",
+				"Como acción adicional, si el recipiente está vacío, puedes pronunciar la palabra de activación para llenarlo de uno de los siguientes líquidos (a tu elección): cerveza, aceite de oliva, hidromiel, una {@item poción de curación|DMG-ES}, una {@item poción de curación (mayor)|DMG-ES}, una {@item poción de trepar|DMG-ES} o una {@item poción de aliento de fuego|DMG-ES}. Una vez utilizada, esta propiedad no puede usarse hasta el siguiente amanecer. Una poción que crees de esta forma pierde sus propiedades mágicas si no se bebe en un plazo de 24 horas."
 			]
 		},
 		{
-			"name": "Stirring Dragon-Touched Focus",
+			"name": "Canalizador tocado por dragones turbado",
 			"source": "FTD-ES",
-			"_copy": {
-				"name": "Slumbering Dragon-Touched Focus",
-				"source": "FTD",
-				"_preserve": {
-					"page": true
-				}
-			},
+			"page": 26,
 			"rarity": "rare",
+			"reqAttune": "con un lanzador de conjuros",
+			"reqAttuneTags": [
+				{
+					"spellcasting": true
+				}
+			],
+			"wondrous": true,
+			"focus": [
+				"Artificer",
+				"Bard",
+				"Cleric",
+				"Druid",
+				"Paladin",
+				"Ranger",
+				"Sorcerer",
+				"Warlock",
+				"Wizard"
+			],
 			"entries": [
-				"This wondrous item can be a scepter, an orb, an amulet, a crystal, or another finely crafted object. It typically incorporates imagery of dragons' wings, claws, teeth, or scales.",
-				"You have advantage on initiative rolls. While you are holding the focus, it can function as a spellcasting focus for all your spells.",
-				"The focus gains an additional property determined by the family of the dragon in whose hoard it became Stirring:",
+				"Este objeto maravilloso puede ser un cetro, un orbe, un amuleto, un cristal u otro objeto elaborado con esmero. Suele incluir imágenes de alas, garras, colmillos o escamas de dragón.",
+				"Tienes ventaja en las tiradas de iniciativa. Mientras sostengas el canalizador, puede funcionar como canalizador mágico para todos tus conjuros.",
+				"El canalizador obtiene una propiedad adicional según la familia del dragón en cuyo tesoro pasó al estado \"turbado\":",
 				{
 					"type": "list",
 					"style": "list-hang-notitle",
 					"items": [
 						{
 							"type": "item",
-							"name": "Chromatic",
+							"name": "Cromático",
 							"entries": [
-								"Whenever you use a spell slot to cast a spell that deals acid, cold, fire, lightning, or poison damage, roll a {@dice d6}, and you gain a bonus equal to the number rolled to one of the spell's damage rolls."
+								"Siempre que uses un espacio de conjuro para lanzar un conjuro que inflija daño de ácido, frío, fuego, relámpago o veneno, tiras {@dice 1d6} y obtienes un bonificador igual al resultado para una de las tiradas de daño de conjuro."
 							]
 						},
 						{
 							"type": "item",
-							"name": "Gem",
+							"name": "Gema",
 							"entries": [
-								"Whenever you use a spell slot to cast a spell, you can immediately teleport to an unoccupied space you can see within 15 feet of you."
+								"Siempre que uses un espacio de conjuro para lanzar un conjuro, puedes teletransportarte inmediata- mente a un espacio sin ocupar que puedas ver a 15 pies o menos de ti."
 							]
 						},
 						{
 							"type": "item",
-							"name": "Metallic",
+							"name": "Metálico",
 							"entries": [
-								"When a creature you can see within 30 feet of you makes a saving throw, you can use your reaction to give that creature advantage on the saving throw."
+								"Cuando una criatura que puedas ver a 30 pies o menos de ti haga una tirada de salvación, puedes usar tu reacción para dar ventaja a esa criatura en la tirada de salvación."
 							]
 						}
 					]
@@ -28856,26 +28852,27 @@
 			]
 		},
 		{
-			"name": "Stirring Scaled Ornament",
+			"name": "Adorno escamoso turbado",
 			"source": "FTD-ES",
-			"_copy": {
-				"name": "Slumbering Scaled Ornament",
-				"source": "FTD",
-				"_preserve": {
-					"page": true
+			"page": 26,
+			"rarity": "rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"modifySpeed": {
+				"equal": {
+					"fly": "walk"
 				}
 			},
-			"rarity": "rare",
 			"bonusAc": "+1",
 			"entries": [
-				"This ornament can be jewelry, a cloak, or another wearable accessory. It appears to be fashioned from a dragon's scale, tooth, or claw, or it incorporates images in those shapes.",
-				"You gain a +1 bonus to AC, and you can't be {@condition charmed} or {@condition frightened}. Moreover, each creature of your choice within 30 feet of you has advantage on saving throws it makes to avoid being {@condition charmed} or {@condition frightened} or to end those conditions on itself."
+				"Este adorno puede ser una joya, una capa u otro accesorio que te puedas poner. Parece estar elaborado con una escama, un colmillo o una garra de dragón o incluye imágenes con esas formas.",
+				"Recibes un bonificador de +1 a la CA y no puedes ser {@condition asustado|PHB-ES} ni {@condition hechizado|PHB-ES}. Además, todas las criaturas de tu elección a 30 pies o menos de ti tienen ventaja en las tiradas de salvación para evitar los estados de {@condition asustado|PHB-ES} o {@condition hechizado|PHB-ES} o poner fin a esos estados sobre sí mismas."
 			]
 		},
 		{
-			"name": "Topaz Annihilator",
+			"name": "Aniquilador de topacio",
 			"source": "FTD-ES",
-			"page": 24,
+			"page": 22,
 			"type": "R",
 			"rarity": "legendary",
 			"reqAttune": true,
@@ -28888,125 +28885,135 @@
 			"firearm": true,
 			"weapon": true,
 			"entries": [
-				"This magic ranged weapon resembles a {@item musket|DMG}, but in lieu of any ammunition, it holds a glowing yellow scale from a topaz dragon in its heart.",
-				"The weapon has a normal range of 100 feet and a long range of 300 feet, and it has the two-handed property. It deals {@damage 2d6} necrotic damage on a hit. If this damage reduces a creature or object to 0 hit points, the target is reduced to dust. A creature reduced to dust can be restored to life only by a {@spell true resurrection} or {@spell wish} spell.",
-				"While the weapon is on your person, you can use an action to cast the {@spell disintegrate} spell (save DC 18). Once this property is used, it can't be used again until the next dawn."
+				"Esta arma mágica a distancia se parece a un {@item mosquete|DMG-ES}, pero, en lugar de munición, el núcleo alberga una escama amarilla brillante de un dragón de topacio.",
+				"El arma tiene un alcance normal de 100 pies, un alcance largo de 300 pies y la propiedad \"a dos manos\". Causa {@damage 2d6} de daño necrótico al impactar. Si este daño reduce a 0 los puntos de golpe de una criatura o un objeto, el objetivo queda reducido a polvo. Una criatura convertida en polvo solo puede volver a la vida mediante un conjuro {@spell deseo|PHB-ES} o {@spell resurrección verdadera|PHB-ES}.",
+				"Mientras lleves el arma contigo, puedes usar una acción para lanzar el conjuro {@spell desintegrar|PHB-ES} (CD de salvación 18). Una vez utilizada, esta propiedad no puede volver a usarse hasta el siguiente amanecer."
 			],
 			"attachedSpells": [
-				"disintegrate"
+				"desintegrar|PHB-ES"
 			]
 		},
 		{
-			"name": "Wakened Dragon Vessel",
+			"name": "Recipiente del dragón despierto",
 			"source": "FTD-ES",
-			"_copy": {
-				"name": "Stirring Dragon Vessel",
-				"source": "FTD",
-				"_preserve": {
-					"page": true
-				}
-			},
+			"page": 27,
 			"rarity": "very rare",
+			"reqAttune": true,
+			"wondrous": true,
 			"entries": [
-				"This vessel can be a potion bottle, drinking horn, or other container meant to hold a liquid.",
-				"As a bonus action, if the vessel is empty, you can speak the command word to fill the vessel with one of the following (your choice): ale, olive oil, mead, wine, a {@item potion of healing}, a {@item potion of greater healing}, a {@item potion of superior healing}, a {@item potion of climbing}, a {@item potion of fire breath}, or a {@item potion of flying}. Once this property is used, it can't be used until the next dawn. A potion you create in this way loses its magical properties if it isn't imbibed within 24 hours."
+				"Este recipiente puede ser una botella de una poción, un cuerno para beber u otro objeto diseñado para guardar líquidos.",
+				"Como acción adicional, si el recipiente está vacío, puedes pronunciar la palabra de activación para llenarlo de uno de los siguientes líquidos (a tu elección): cerveza, aceite de oliva, hidromiel, vino, una {@item poción de curación|DMG-ES}, una {@item poción de curación (mayor)|DMG-ES}, una {@item poción de curación (superior)|DMG-ES}, una {@item poción de trepar|DMG-ES}, una {@item poción de aliento de fuego|DMG-ES} o una {@item poción de vuelo|DMG-ES}. Una vez utilizada, esta propiedad no puede usarse hasta el siguiente amanecer. Una poción que crees de esta forma pierde sus propiedades mágicas si no se bebe en un plazo de 24 horas."
 			]
 		},
 		{
-			"name": "Wakened Dragon-Touched Focus",
+			"name": "Canalizador tocado por dragones despierto",
 			"source": "FTD-ES",
-			"_copy": {
-				"name": "Stirring Dragon-Touched Focus",
-				"source": "FTD",
-				"_preserve": {
-					"page": true
-				}
-			},
+			"page": 26,
 			"rarity": "very rare",
+			"reqAttune": "con un lanzador de conjuros",
+			"reqAttuneTags": [
+				{
+					"spellcasting": true
+				}
+			],
+			"wondrous": true,
+			"focus": [
+				"Artificer",
+				"Bard",
+				"Cleric",
+				"Druid",
+				"Paladin",
+				"Ranger",
+				"Sorcerer",
+				"Warlock",
+				"Wizard"
+			],
 			"entries": [
-				"This wondrous item can be a scepter, an orb, an amulet, a crystal, or another finely crafted object. It typically incorporates imagery of dragons' wings, claws, teeth, or scales.",
-				"You have advantage on initiative rolls. While you are holding the focus, it can function as a spellcasting focus for all your spells.",
-				"The focus gains an additional property determined by the family of the dragon in whose hoard it became Stirring:",
+				"Este objeto maravilloso puede ser un cetro, un orbe, un amuleto, un cristal u otro objeto elaborado con esmero. Suele incluir imágenes de alas, garras, colmillos o escamas de dragón.",
+				"Tienes ventaja en las tiradas de iniciativa. Mientras sostengas el canalizador, puede funcionar como canalizador mágico para todos tus conjuros.",
+				"El canalizador obtiene una propiedad adicional según la familia del dragón en cuyo tesoro pasó al estado \"turbado\":",
 				{
 					"type": "list",
 					"style": "list-hang-notitle",
 					"items": [
 						{
 							"type": "item",
-							"name": "Chromatic",
+							"name": "Cromático",
 							"entries": [
-								"Whenever you use a spell slot to cast a spell that deals acid, cold, fire, lightning, or poison damage, roll a {@dice d6}, and you gain a bonus equal to the number rolled to one of the spell's damage rolls."
+								"Siempre que uses un espacio de conjuro para lanzar un conjuro que inflija daño de ácido, frío, fuego, relámpago o veneno, tiras {@dice 1d6} y obtienes un bonificador igual al resultado para una de las tiradas de daño de conjuro."
 							]
 						},
 						{
 							"type": "item",
-							"name": "Gem",
+							"name": "Gema",
 							"entries": [
-								"Whenever you use a spell slot to cast a spell, you can immediately teleport to an unoccupied space you can see within 15 feet of you."
+								"Siempre que uses un espacio de conjuro para lanzar un conjuro, puedes teletransportarte inmediata- mente a un espacio sin ocupar que puedas ver a 15 pies o menos de ti."
 							]
 						},
 						{
 							"type": "item",
-							"name": "Metallic",
+							"name": "Metálico",
 							"entries": [
-								"When a creature you can see within 30 feet of you makes a saving throw, you can use your reaction to give that creature advantage on the saving throw."
+								"Cuando una criatura que puedas ver a 30 pies o menos de ti haga una tirada de salvación, puedes usar tu reacción para dar ventaja a esa criatura en la tirada de salvación."
 							]
 						}
 					]
 				},
-				"While you are holding a Wakened focus, you can use it to cast certain spells. Once the item is used to cast a given spell, it can't be used to cast that spell again until the next dawn. The spells are determined by the family of the dragon in whose hoard it became Wakened.",
+				"Mientras sostengas un canalizador \"despierto\", puedes usarlo para lanzar ciertos conjuros. Una vez utilizado para lanzar un determinado conjuro, el objeto no puede volver a usarse para lanzar ese conjuro hasta el siguiente amanecer. Los conjuros se determinan según la familia del dragón en cuyo tesoro pasó al estado \"despierto\".",
 				{
 					"type": "list",
 					"style": "list-hang-notitle",
 					"items": [
 						{
 							"type": "item",
-							"name": "Chromatic",
+							"name": "Cromático",
 							"entries": [
-								"{@spell Hold monster}, {@spell Rime's binding ice|FTD}"
+								"{@spell Inmovilizar monstruo|PHB-ES}, {@spell Hielo inmovilizador de Escarcha|FTD-ES}"
 							]
 						},
 						{
 							"type": "item",
-							"name": "Gem",
+							"name": "Gema",
 							"entries": [
-								"{@spell Rary's telepathic bond}, {@spell Raulothim's psychic lance|FTD}"
+								"{@spell Enlace telepático de Rary|PHB-ES}, {@spell Lanza psíquica de Raulothim|FTD-ES}"
 							]
 						},
 						{
 							"type": "item",
-							"name": "Metallic",
+							"name": "Metálico",
 							"entries": [
-								"{@spell Fizban's platinum shield|FTD}, {@spell legend lore}"
+								"{@spell Escudo de platino de Fizban|FTD-ES}, {@spell Conocer las leyendas|PHB-ES}"
 							]
 						}
 					]
 				}
 			],
 			"attachedSpells": [
-				"hold monster",
-				"rime's binding ice|ftd",
-				"rary's telepathic bond",
-				"raulothim's psychic lance|ftd",
-				"fizban's platinum shield|ftd",
-				"legend lore"
+				"Inmovilizar monstruo|PHB-ES",
+				"Hielo inmovilizador de Escarcha|FTD-ES",
+				"Enlace telepático de Rary|PHB-ES",
+				"Lanza psíquica de Raulothim|FTD-ES",
+				"Escudo de platino de Fizban|FTD-ES",
+				"Conocer las leyendas|PHB-ES"
 			]
 		},
 		{
-			"name": "Wakened Scaled Ornament",
+			"name": "Adorno escamoso despierto",
 			"source": "FTD-ES",
-			"_copy": {
-				"name": "Stirring Scaled Ornament",
-				"source": "FTD",
-				"_preserve": {
-					"page": true
+			"page": 26,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"modifySpeed": {
+				"equal": {
+					"fly": "walk"
 				}
 			},
-			"rarity": "very rare",
+			"bonusAc": "+1",
 			"entries": [
-				"This ornament can be jewelry, a cloak, or another wearable accessory. It appears to be fashioned from a dragon's scale, tooth, or claw, or it incorporates images in those shapes.",
-				"You gain a +1 bonus to AC, and you can't be {@condition charmed} or {@condition frightened}. Moreover, each creature of your choice within 30 feet of you has advantage on saving throws it makes to avoid being {@condition charmed} or {@condition frightened} or to end those conditions on itself.",
-				"When you would take damage of the type dealt by the breath of the dragon in whose hoard the ornament became Wakened, you can use your reaction to take no damage instead, and you regain hit points equal to the damage you would have taken. Once this property is used, it can't be used again until the next dawn."
+				"Este adorno puede ser una joya, una capa u otro accesorio que te puedas poner. Parece estar elaborado con una escama, un colmillo o una garra de dragón o incluye imágenes con esas formas.",
+				"Recibes un bonificador de +1 a la CA y no puedes ser {@condition asustado|PHB-ES} ni {@condition hechizado|PHB-ES}. Además, todas las criaturas de tu elección a 30 pies o menos de ti tienen ventaja en las tiradas de salvación para evitar los estados de {@condition asustado|PHB-ES} o {@condition hechizado|PHB-ES} o poner fin a esos estados sobre sí mismas.",
+				"Cuando fueras a recibir daño del tipo causado por el aliento del dragón en cuyo tesoro el adorno pasó al estado \"despierto\", puedes usar tu reacción para no recibir ningún daño y recuperar una cantidad de puntos de golpe igual al daño que habrías recibido. Una vez utilizada, esta propiedad no puede volver a usarse hasta el siguiente amanecer."
 			]
 		}
 	],
@@ -30035,45 +30042,45 @@
 			]
 		},
 		{
-			"name": "Dragon Vessel",
+			"name": "Recipiente del dragón",
 			"source": "FTD-ES",
 			"page": 27,
 			"rarity": "varies",
 			"reqAttune": true,
 			"wondrous": true,
 			"entries": [
-				"This vessel can be a potion bottle, drinking horn, or other container meant to hold a liquid."
+				"Este recipiente puede ser una botella de una poción, un cuerno para beber u otro objeto diseñado para guardar líquidos."
 			],
 			"items": [
-				"Slumbering Dragon Vessel|FTD",
-				"Stirring Dragon Vessel|FTD",
-				"Wakened Dragon Vessel|FTD",
-				"Ascendant Dragon Vessel|FTD"
+				"Recipiente del dragón durmiente|FTD-ES",
+				"Recipiente del dragón turbado|FTD-ES",
+				"Recipiente del dragón despierto|FTD-ES",
+				"Recipiente del dragón ascendente|FTD-ES"
 			]
 		},
 		{
-			"name": "Dragon's Wrath Weapon",
+			"name": "Arma de la ira del dragón",
 			"source": "FTD-ES",
-			"page": 25,
+			"page": 26,
 			"type": "GV",
 			"rarity": "varies",
 			"reqAttune": true,
 			"entries": [
-				"This weapon is decorated with dragon heads, claws, wings, scales, or Draconic letters. When it steeps in a dragon's hoard, it absorbs the energy of the dragon's breath weapon and deals damage of that type with its special properties."
+				"Esta arma está decorada con cabezas, garras, alas, escamas de dragón o letras dracónicas. Cuando se impregna del tesoro de un dragón, absorbe la energía del ataque de aliento del dragón e inflige ese tipo de daño con sus propiedades especiales."
 			],
 			"items": [
-				"Slumbering Dragon's Wrath Weapon|FTD",
-				"Stirring Dragon's Wrath Weapon|FTD",
-				"Wakened Dragon's Wrath Weapon|FTD",
-				"Ascendant Dragon's Wrath Weapon|FTD"
+				"Arma de la ira del dragón durmiente|FTD-ES",
+				"Arma de la ira del dragón turbada|FTD-ES",
+				"Arma de la ira del dragón despierta|FTD-ES",
+				"Arma de la ira del dragón ascendente|FTD-ES"
 			]
 		},
 		{
-			"name": "Dragon-Touched Focus",
+			"name": "Canalizador tocado por dragones",
 			"source": "FTD-ES",
 			"page": 26,
 			"rarity": "varies",
-			"reqAttune": "by a spellcaster",
+			"reqAttune": "con un lanzador de conjuros",
 			"reqAttuneTags": [
 				{
 					"spellcasting": true
@@ -30092,19 +30099,19 @@
 				"Wizard"
 			],
 			"entries": [
-				"This wondrous item can be a scepter, an orb, an amulet, a crystal, or another finely crafted object. It typically incorporates imagery of dragons' wings, claws, teeth, or scales."
+				"Este objeto maravilloso puede ser un cetro, un orbe, un amuleto, un cristal u otro objeto elaborado con esmero. Suele incluir imágenes de alas, garras, colmillos o escamas de dragón."
 			],
 			"items": [
-				"Slumbering Dragon-Touched Focus|FTD",
-				"Stirring Dragon-Touched Focus|FTD",
-				"Wakened Dragon-Touched Focus|FTD",
-				"Ascendant Dragon-Touched Focus|FTD"
+				"Canalizador tocado por dragones durmiente|FTD-ES",
+				"Canalizador tocado por dragones turbado|FTD-ES",
+				"Canalizador tocado por dragones despierto|FTD-ES",
+				"Canalizador tocado por dragones ascendente|FTD-ES"
 			]
 		},
 		{
-			"name": "Scaled Ornament",
+			"name": "Adorno escamoso",
 			"source": "FTD-ES",
-			"page": 27,
+			"page": 26,
 			"rarity": "varies",
 			"reqAttune": true,
 			"wondrous": true,
@@ -30115,13 +30122,13 @@
 				}
 			},
 			"entries": [
-				"This ornament can be jewelry, a cloak, or another wearable accessory. It appears to be fashioned from a dragon's scale, tooth, or claw, or it incorporates images in those shapes."
+				"Este adorno puede ser una joya, una capa u otro accesorio que te puedas poner. Parece estar elaborado con una escama, un colmillo o una garra de dragón o incluye imágenes con esas formas."
 			],
 			"items": [
-				"Slumbering Scaled Ornament|FTD",
-				"Stirring Scaled Ornament|FTD",
-				"Wakened Scaled Ornament|FTD",
-				"Ascendant Scaled Ornament|FTD"
+				"Adorno escamoso durmiente|FTD-ES",
+				"Adorno escamoso turbado|FTD-ES",
+				"Adorno escamoso despierto|FTD-ES",
+				"Adorno escamoso ascendente|FTD-ES"
 			]
 		}
 	]
