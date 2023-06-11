@@ -23,28 +23,28 @@
 			],
 			"languageProficiencies": [
 				{
-					"auran": true
+					"aurano|PHB-ES": true
 				}
 			],
 			"entries": [
 				{
-					"name": "Dive Attack",
+					"name": "Ataque en Picado",
 					"entries": [
-						"If you are flying and dive at least 30 ft. straight toward a target and then hit it with a melee weapon attack, the attack deals an extra {@dice 1d6} damage to the target."
+						"Si estás volando y caes en picado al menos 30 pies directamente hacia un objetivo y después consigue impactarle con un ataque con arma cuerpo a cuerpo, este ataque inflige {@dice 1d6} de daño adicional al objetivo."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Talons",
+					"name": "Garra",
 					"entries": [
-						"You are proficient with your unarmed strikes, which deal {@damage 1d4} slashing damage on a hit."
+						"Eres competente con golpes desarmados, que provocan {@damage 1d4} de daño cortante."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Language",
+					"name": "Idiomas",
 					"entries": [
-						"You can speak, read, and write Auran."
+						"Puedes hablar, leer y escribir aurano."
 					],
 					"type": "entries"
 				}
@@ -71,8 +71,8 @@
 			"darkvision": 60,
 			"languageProficiencies": [
 				{
-					"common": true,
-					"celestial": true
+					"común|PHB-ES": true,
+					"celestial|PHB-ES": true
 				}
 			],
 			"resist": [
@@ -89,14 +89,14 @@
 						"3": {
 							"daily": {
 								"1": [
-									"lesser restoration"
+									"restablecimiento menor|PHB-ES"
 								]
 							}
 						},
 						"5": {
 							"daily": {
 								"1": [
-									"daylight"
+									"luz del día|PHB-ES"
 								]
 							}
 						}
@@ -104,51 +104,58 @@
 					"ability": "cha",
 					"known": {
 						"1": [
-							"light#c"
+							"luz|PHB-ES#c"
 						]
 					}
 				}
 			],
 			"entries": [
 				{
-					"name": "Age",
+					"name": "Edad",
 					"type": "entries",
 					"entries": [
-						"Aasimar mature at the same rate as humans but live a few years longer."
+						"Los aasimars maduran al mismo ritmo que los humanos, pero viven unos pocos años más."
+					]
+				},
+				{
+					"name": "Alineamiento",
+					"type": "entries",
+					"entries": [
+						"Debido a su naturaleza celestial, lo más habitual es que los aasimars sean buenos. Aunque siempre hay alguno que cae en las garras del mal, renegando de su linaje."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Size",
+					"name": "Tamaño",
 					"entries": [
-						"Aasimar are built like well-proportioned humans. Your size is Medium."
+						"La complexión de los aasimars es como la de los humanos, pero mejor proporcionada. Eres de tamaño Mediano."
 					]
 				},
 				{
-					"name": "Darkvision",
+					"name": "Visión en la oscuridad",
 					"entries": [
-						"Thanks to your celestial heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+						"Debido a tu sangre celestial, puedes ver bien en la oscuridad o con poca luz. Eres capaz de ver hasta a 60 pies en luz tenue como si hubiera luz brillante, y esa misma distancia en la oscuridad como si hubiera luz tenue. Eso sí, no puedes distinguir colores en la oscuridad, solo tonos de gris."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Celestial Resistance",
+					"name": "Resistencia Celestial",
 					"entries": [
-						"You have resistance to necrotic and radiant damage."
+						"Posees resistencia a los daños necrótico y radiante."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Celestial Legacy",
+					"name": "Linaje Celestial",
 					"entries": [
-						"You know the {@spell light} cantrip. Once you reach 3rd level, you can cast the {@spell lesser restoration} spell once with this trait, and you regain the ability to do so when you finish a long rest. Once you reach 5th level, you can cast the {@spell daylight} spell once with this trait, and you regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+						"Conoces el truco {@spell luz|PHB-ES}. Cuando llegas a nivel 3, puedes lanzar el conjuro {@spell restablecimiento menor|PHB-ES} una vez usando este atributo, y recuperas la capacidad para hacerlo tras realizar un descanso largo. Cuando alcanzas el nivel 5, eres capaz de lanzar el conjuro {@spell luz del día|PHB-ES} a nivel 3 una vez empleando este atributo, y recuperas la capacidad para hacerlo tras realizar un descanso largo. El Carisma es tu aptitud mágica para estos conjuros."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Language",
+					"name": "Idiomas",
 					"entries": [
-						"You can speak, read, and write Common and Celestial."
+						"Puedes hablar, leer y escribir en común y celestial."
 					],
 					"type": "entries"
 				}
@@ -183,37 +190,37 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Amphibious",
+					"name": "Anfibio",
 					"entries": [
-						"You can breathe air and water."
+						"Puedes respirar tanto dentro del agua como fuera de ella."
 					]
 				},
 				{
-					"name": "Speak with Frogs and Toads",
+					"name": "Hablar con Sapos y Ranas",
 					"type": "entries",
 					"entries": [
-						"You can communicate simple concepts to frogs and toads when you speak in Bullywug."
+						"Eres capaz de transmitir conceptos sencillos a ranas y sapos cuando hablas en bullywug."
 					]
 				},
 				{
-					"name": "Swamp Camouflage",
+					"name": "Camuflarse en Pantanos",
 					"type": "entries",
 					"entries": [
-						"You have advantage on Dexterity ({@skill Stealth}) checks made to hide in swampy terrain."
+						"Tienes ventaja en las pruebas de Destreza ({@skill Sigilo|PHB-ES}) para esconderte en terrenos pantanosos."
 					]
 				},
 				{
-					"name": "Standing Leap",
+					"name": "Saltar sin Carrera",
 					"type": "entries",
 					"entries": [
-						"Your long jump is up to 20 feet and your high jump is up to 10 feet, with or without a running start."
+						"Puedes hacer un salto de longitud de 20 pies o un salto de altura de 10 pies, tanto si has cogido carrerilla como si no."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Languages",
+					"name": "Idiomas",
 					"entries": [
-						"You can speak, read, and write Bullywug."
+						"Puedes hablar, leer y escribir en bullywug."
 					]
 				}
 			]
@@ -239,30 +246,30 @@
 			],
 			"entries": [
 				{
-					"name": "Bite",
+					"name": "Mordisco",
 					"entries": [
-						"Your fanged maw is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to {@damage 1d4} + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
+						"Tu boca con colmillos es un arma natural, que puedes usar para realizar golpes desarmados. Si aciertas, infliges daño perforante igual a {@damage 1d4} + tu modificador de Fuerza, en lugar del daño contundente normal de un golpe desarmado."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Darkvision",
+					"name": "Visión en la oscuridad",
 					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"Puedes ver en una luz tenue dentro de los 60 pies de ti como si fuera una luz brillante, y en la oscuridad como si fuera una luz tenue. No puedes distinguir colores en la oscuridad, solo tonos de gris."
 					],
 					"type": "entries"
 				},
 				{
 					"type": "entries",
-					"name": "Rampage",
+					"name": "Rabia",
 					"entries": [
-						"When you reduce a creature to 0 hit points with a melee attack on your turn, you can take a bonus action to move up to half your speed and make a bite attack."
+						"Si reduces los puntos de golpe de una criatura a 0 mediante un ataque cuerpo a cuerpo durante tu turno, puedes utilizar una acción adicional para moverte hasta la mitad de su velocidad y realizar un ataque de mordisco."
 					]
 				}
 			]
 		},
 		{
-			"name": "Gnome (Deep)",
+			"name": "Gnomo de las profundidades",
 			"source": "DMG-ES",
 			"page": 282,
 			"size": [
@@ -281,9 +288,9 @@
 			],
 			"languageProficiencies": [
 				{
-					"gnomish": true,
-					"terran": true,
-					"undercommon": true
+					"gnomo|PHB-ES": true,
+					"terrano|PHB-ES": true,
+					"infracomún|PHB-ES": true
 				}
 			],
 			"additionalSpells": [
@@ -291,67 +298,67 @@
 					"ability": "int",
 					"known": {
 						"1": [
-							"nondetection",
-							"blindness/deafness",
-							"blur",
-							"disguise self"
+							"indetectable|PHB-ES",
+							"sordera/ceguera|PHB-ES",
+							"contorno borroso|PHB-ES",
+							"disfrazarse|PHB-ES"
 						]
 					}
 				}
 			],
 			"entries": [
 				{
-					"name": "Innate Spellcasting",
+					"name": "Lanzamiento de Conjuros Innato",
 					"entries": [
-						"You have an innate ability to cast the following spells, requiring no material components:",
+						"Puedes lanzar de forma innata los siguientes conjuros, sin necesidad de componentes materiales:",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
 									"type": "itemSpell",
-									"name": "At will:",
-									"entry": "{@spell nondetection} (self only)"
+									"name": "A voluntad:",
+									"entry": "{@spell indetectable|PHB-ES} (solo lanzador)"
 								},
 								{
 									"type": "itemSpell",
-									"name": "1/day each:",
-									"entry": "{@spell blindness/deafness}, {@spell blur}, {@spell disguise self}"
+									"name": "1/día cada uno:",
+									"entry": "{@spell sordera/ceguera|PHB-ES}, {@spell contorno borroso|PHB-ES}, {@spell disfrazarse|PHB-ES}"
 								}
 							]
 						},
-						"Intelligence is your spellcasting ability for these spells."
+						"La inteligencia es tu habilidad para lanzar conjuros para estos hechizos."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Stone Camouflage",
+					"name": "Camuflarse en la Piedra",
 					"entries": [
-						"You have advantage on Dexterity ({@skill Stealth}) checks to hide in rocky terrain."
+						"Tienes ventaja en las pruebas de Destreza ({@skill Sigilo|PHB-ES}) para esconderte en terrenos rocosos."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Gnome Cunning",
+					"name": "Astucia Gnoma",
 					"entries": [
-						"You have advantage on Intelligence, Wisdom, and Charisma saving throws against magic."
+						"Tienes ventaja en las tiradas de salvación de Inteligencia, Sabiduría y Carisma contra magia."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Superior Darkvision",
+					"name": "Visión en la Oscuridad Superior",
 					"entries": [
-						"Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"Acostumbrado a la vida subterránea, puedes ver bien en la oscuridad o con poca luz. Hasta a un máximo de 120 pies, eres capaz de ver con luz tenue como si hubiera luz brillante y en la oscuridad como si hubiera luz tenue. Eso sí, no puedes distinguir colores en la oscuridad, solo tonos de gris."
 					],
 					"data": {
-						"overwrite": "Darkvision"
+						"overwrite": "Visión en la Oscuridad"
 					},
 					"type": "entries"
 				},
 				{
-					"name": "Languages",
+					"name": "Idiomas",
 					"entries": [
-						"You can speak, read, and write Gnomish, Terran, and Undercommon."
+						"Puedes hablar, leer y escribir en gnomo, infracomún y terrano."
 					],
 					"type": "entries"
 				}
@@ -377,28 +384,29 @@
 			],
 			"languageProficiencies": [
 				{
-					"common": true,
-					"goblin": true
+					"común|PHB-ES": true,
+					"goblin|PHB-ES": true
 				}
 			],
 			"entries": [
 				{
-					"name": "Nimble Escape",
+					"name": "Huida veloz",
 					"entries": [
-						"You can take the {@action Disengage} or {@action Hide} action as a bonus action on each of your turns."
+						"Puedes, en cada uno de tus turnos, usar una acción adicional para {@action Destrabarse|PHB-ES} o {@action Esconderse|PHB-ES}."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Darkvision",
+					"name": "Visión en la oscuridad",
 					"entries": [
-						"Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"Acostumbrado a la vida subterránea, puedes ver bien en la oscuridad o con poca luz. Hasta a un máximo de 120 pies, eres capaz de ver con luz tenue como si hubiera luz brillante y en la oscuridad como si hubiera luz tenue. Eso sí, no puedes distinguir colores en la oscuridad, solo tonos de gris."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Languages",
+					"name": "Idiomas",
 					"entries": [
+						"Puedes hablar, leer y escribir en común y goblin."
 						"You can speak, read, and write Common and Goblin."
 					],
 					"type": "entries"
@@ -10934,7 +10942,7 @@
 		{
 			"name": "Hill",
 			"source": "PHB-ES",
-			"raceName": "Dwarf",
+			"raceName": "Enano",
 			"raceSource": "PHB-ES",
 			"page": 20,
 			"srd": true,
@@ -11096,7 +11104,7 @@
 		{
 			"name": "Mountain",
 			"source": "PHB-ES",
-			"raceName": "Dwarf",
+			"raceName": "Enano",
 			"raceSource": "PHB-ES",
 			"page": 20,
 			"basicRules": true,
@@ -11266,7 +11274,7 @@
 				"Dark"
 			],
 			"source": "PHB-ES",
-			"raceName": "Elf",
+			"raceName": "Elfo",
 			"raceSource": "PHB-ES",
 			"page": 24,
 			"ability": [
@@ -11483,7 +11491,7 @@
 		{
 			"name": "Eladrin",
 			"source": "DMG-ES",
-			"raceName": "Elf",
+			"raceName": "Elfo",
 			"raceSource": "PHB-ES",
 			"page": 286,
 			"ability": [
@@ -11533,7 +11541,7 @@
 		{
 			"name": "High",
 			"source": "PHB-ES",
-			"raceName": "Elf",
+			"raceName": "Elfo",
 			"raceSource": "PHB-ES",
 			"page": 23,
 			"srd": true,
@@ -11738,7 +11746,7 @@
 		{
 			"name": "Wood",
 			"source": "PHB-ES",
-			"raceName": "Elf",
+			"raceName": "Elfo",
 			"raceSource": "PHB-ES",
 			"page": 24,
 			"basicRules": true,
@@ -12230,7 +12238,7 @@
 		{
 			"name": "Deep/Svirfneblin",
 			"source": "SCAG-ES",
-			"raceName": "Gnome",
+			"raceName": "Gnomo",
 			"raceSource": "PHB-ES",
 			"page": 115,
 			"otherSources": [
@@ -12551,7 +12559,7 @@
 		{
 			"name": "Forest",
 			"source": "PHB-ES",
-			"raceName": "Gnome",
+			"raceName": "Gnomo",
 			"raceSource": "PHB-ES",
 			"page": 37,
 			"ability": [
@@ -12738,7 +12746,7 @@
 		{
 			"name": "Rock",
 			"source": "PHB-ES",
-			"raceName": "Gnome",
+			"raceName": "Gnomo",
 			"raceSource": "PHB-ES",
 			"page": 37,
 			"srd": true,
@@ -12941,7 +12949,7 @@
 		{
 			"name": "Variant; Aquatic Elf Descent",
 			"source": "SCAG-ES",
-			"raceName": "Half-Elf",
+			"raceName": "Semielfo",
 			"raceSource": "PHB-ES",
 			"page": 116,
 			"speed": {
@@ -13022,7 +13030,7 @@
 		{
 			"name": "Variant; Drow Descent",
 			"source": "SCAG-ES",
-			"raceName": "Half-Elf",
+			"raceName": "Semielfo",
 			"raceSource": "PHB-ES",
 			"page": 116,
 			"skillProficiencies": [
@@ -13124,7 +13132,7 @@
 		{
 			"name": "Variant; Moon Elf or Sun Elf Descent",
 			"source": "SCAG-ES",
-			"raceName": "Half-Elf",
+			"raceName": "Semielfo",
 			"raceSource": "PHB-ES",
 			"page": 116,
 			"skillProficiencies": [
@@ -13246,7 +13254,7 @@
 		{
 			"name": "Variant; Wood Elf Descent",
 			"source": "SCAG-ES",
-			"raceName": "Half-Elf",
+			"raceName": "Semielfo",
 			"raceSource": "PHB-ES",
 			"page": 116,
 			"skillProficiencies": [
@@ -13379,7 +13387,7 @@
 		{
 			"name": "Ghostwise",
 			"source": "SCAG-ES",
-			"raceName": "Halfling",
+			"raceName": "Mediano",
 			"raceSource": "PHB-ES",
 			"page": 110,
 			"ability": [
@@ -13538,7 +13546,7 @@
 		{
 			"name": "Lightfoot",
 			"source": "PHB-ES",
-			"raceName": "Halfling",
+			"raceName": "Mediano",
 			"raceSource": "PHB-ES",
 			"page": 28,
 			"srd": true,
@@ -13693,7 +13701,7 @@
 		{
 			"name": "Stout",
 			"source": "PHB-ES",
-			"raceName": "Halfling",
+			"raceName": "Mediano",
 			"raceSource": "PHB-ES",
 			"page": 28,
 			"basicRules": true,
@@ -13849,7 +13857,7 @@
 		{
 			"name": "Variant",
 			"source": "PHB-ES",
-			"raceName": "Human",
+			"raceName": "Humano",
 			"raceSource": "PHB-ES",
 			"page": 31,
 			"basicRules": true,
