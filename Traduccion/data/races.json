@@ -399,7 +399,7 @@
 				{
 					"name": "Visión en la oscuridad",
 					"entries": [
-						"Acostumbrado a la vida subterránea, puedes ver bien en la oscuridad o con poca luz. Hasta a un máximo de 120 pies, eres capaz de ver con luz tenue como si hubiera luz brillante y en la oscuridad como si hubiera luz tenue. Eso sí, no puedes distinguir colores en la oscuridad, solo tonos de gris."
+						"Acostumbrado a la vida subterránea, puedes ver bien en la oscuridad o con poca luz. Hasta a un máximo de 60 pies, eres capaz de ver con luz tenue como si hubiera luz brillante y en la oscuridad como si hubiera luz tenue. Eso sí, no puedes distinguir colores en la oscuridad, solo tonos de gris."
 					],
 					"type": "entries"
 				},
@@ -407,7 +407,6 @@
 					"name": "Idiomas",
 					"entries": [
 						"Puedes hablar, leer y escribir en común y goblin."
-						"You can speak, read, and write Common and Goblin."
 					],
 					"type": "entries"
 				}
@@ -433,35 +432,35 @@
 			],
 			"languageProficiencies": [
 				{
-					"undercommon": true
+					"infracomún|PHB-ES": true
 				}
 			],
 			"entries": [
 				{
-					"name": "Blindsight",
+					"name": "Visión ciega",
 					"entries": [
-						"You have no eyes, and cannot be {@condition blinded}. You can perceive your surroundings within 30 ft., or 10 ft. while {@condition deafened}. You are considered blind beyond this radius."
+						"No tienes ojos y no puedes quedar {@condition cegado|PHB-ES}. Puedes percibir tu entorno dentro de un radio de 30 pies, o 10 pies cuando estés {@condition ensordecido|PHB-ES}. Se considera que estás ciego/a más allá de este radio."
 					],
 					"type": "entries"
 				},
 				{
 					"type": "entries",
-					"name": "Keen Hearing and Smell",
+					"name": "Oído y Olfato Agudos",
 					"entries": [
-						"You have advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+						"Tienes ventaja en las pruebas de Sabiduría ({@skill Percepción|PHB-ES}) que dependan del oído o del olfato."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Stone Camouflage",
+					"name": "Camuflarse en la Piedra",
 					"entries": [
-						"You have advantage on Dexterity ({@skill Stealth}) checks made to hide in rocky terrain."
+						"Tienes ventaja en las pruebas de Destreza ({@skill Sigilo|PHB-ES}) para esconderte en terrenos rocosos."
 					]
 				},
 				{
-					"name": "Languages",
+					"name": "Idiomas",
 					"entries": [
-						"You can speak, read, and write Undercommon."
+						"Puedes hablar, leer y escribir en infracomún."
 					],
 					"type": "entries"
 				}
@@ -481,29 +480,29 @@
 			],
 			"languageProficiencies": [
 				{
-					"common": true,
-					"goblin": true
+					"común|PHB-ES": true,
+					"goblin|PHB-ES": true
 				}
 			],
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Martial Advantage",
+					"name": "Ventaja marcial",
 					"entries": [
-						"Once per turn, you can deal an extra {@dice 2d6} damage to a creature you hit with a weapon attack if that creature is within 5 ft. of an ally of yours that isn't {@condition incapacitated}."
+						"Puedes, una vez por turno, infligir {@dice 2d6} de daño adicional a una criatura a la que impacte con un ataque con arma si dicha criatura está a 5 pies o menos de un aliado no esté {@condition incapacitado|PHB-ES}."
 					]
 				},
 				{
-					"name": "Darkvision",
+					"name": "Visión en la oscuridad",
 					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"Hasta a un máximo de 60 pies, eres capaz de ver con luz tenue como si hubiera luz brillante y en la oscuridad como si hubiera luz tenue. No puedes distinguir colores en la oscuridad, solo tonos de gris."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Languages",
+					"name": "Idiomas",
 					"entries": [
-						"You can speak, read, and write Common and Goblin."
+						"Puedes hablar, leer y escribir en común y goblin."
 					],
 					"type": "entries"
 				}
@@ -528,8 +527,8 @@
 			],
 			"languageProficiencies": [
 				{
-					"common": true,
-					"auran": true
+					"común|PHB-ES": true,
+					"aurano|PHB-ES": true
 				}
 			],
 			"soundClip": {
@@ -538,23 +537,24 @@
 			},
 			"entries": [
 				{
-					"name": "Ambusher",
+					"name": "Emboscador",
 					"entries": [
-						"In the first round of a combat, you have advantage on attack rolls against any creature who is {@quickref Surprise|PHB|3|0|surprised}."
+						"Durante el primer asalto de un combate, tienes ventaja en las tiradas de ataque contra cualquier criatura a la que hayas {@book sorprendido|PHB-ES|9|sorprendido}."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Mimicry",
+					"name": "Imitación",
 					"entries": [
-						"You can mimic any sounds you have heard, including voices. A creature that hears the sounds can tell they are imitations with a successful DC 14 Wisdom ({@skill Insight}) check."
+						"Puedes imitar cualquier sonido que hayas escuchado antes, incluso voces. Cualquier criatura que oiga estos sonidos se dará cuenta de que son imitaciones si supera una prueba de Sabiduría ({@skill Perspicacia|PHB-ES}) CD 14."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Languages",
+					"name": "Idiomas",
 					"entries": [
-						"You can read and write Common and Auran, but you can only speak using your Mimicry trait."
+						"Puedes hablar, leer y escribir en común y aurano,"
+						"You can read and write Common and Auran, pero solo puedes hablar utilizando tu habilidad de Imitación."
 					],
 					"type": "entries"
 				}
@@ -581,36 +581,36 @@
 			],
 			"languageProficiencies": [
 				{
-					"common": true,
-					"draconic": true
+					"común|PHB-ES": true,
+					"dracónico|PHB-ES": true
 				}
 			],
 			"entries": [
 				{
-					"name": "Pack Tactics",
+					"name": "Atacar en Manada",
 					"entries": [
-						"You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+						"Tienes ventaja en las tiradas de ataque contra criaturas que estén a 5 pies o menos de, al menos, un aliado que no esté {@condition incapacitado|PHB-ES}."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Sunlight Sensitivity",
+					"name": "Sensibilidad a la Luz Solar",
 					"entries": [
-						"You have disadvantage on attack rolls and on Wisdom ({@skill Perception}) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight."
+						"Tienes desventaja en las tiradas de ataque y las pruebas de Sabiduría ({@skill Percepción|PHB-ES}) que dependan de la vista hechas bajo la luz del sol."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Darkvision",
+					"name": "Visión en la oscuridad",
 					"entries": [
-						"Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"Acostumbrado a la vida subterránea, puedes ver bien en la oscuridad o con poca luz. Hasta a un máximo de 60 pies, eres capaz de ver con luz tenue como si hubiera luz brillante y en la oscuridad como si hubiera luz tenue. Eso sí, no puedes distinguir colores en la oscuridad, solo tonos de gris."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Languages",
+					"name": "Idiomas",
 					"entries": [
-						"You can speak, read, and write Common and Draconic."
+						"Puedes hablar, leer y escribir en común y dracónico."
 					],
 					"type": "entries"
 				}
@@ -635,56 +635,56 @@
 			],
 			"languageProficiencies": [
 				{
-					"undercommon": true
+					"infracomún|PHB-ES": true
 				}
 			],
 			"entries": [
 				{
-					"name": "Amphibious",
+					"name": "Anfibio",
 					"type": "entries",
 					"entries": [
-						"You can breathe air and water."
+						"Puedes respirar tanto dentro del agua como fuera de ella."
 					]
 				},
 				{
-					"name": "Otherworldly Perception",
+					"name": "Percepción Sobrenatural",
 					"type": "entries",
 					"entries": [
-						"You can sense the presence of any creature within 30 feet of you that is {@condition invisible} or on the Ethereal Plane. You can pinpoint such a creature that is moving."
+						"Puedes sentir la presencia de cualquier criatura situada a 30 pies o menos y que sea {@condition invisible|PHB-ES} o se encuentre en el Plano Etéreo. También podrás indicar con precisión donde se hallan estas criaturas cuando se mueven."
 					]
 				},
 				{
-					"name": "Slippery",
+					"name": "Escurridizo",
 					"type": "entries",
 					"entries": [
-						"You have advantage on ability checks and saving throws made to escape a grapple."
+						"Tienes ventaja en las pruebas de característica y las tiradas de salvación para escapar de un agarre."
 					]
 				},
 				{
-					"name": "Sunlight Sensitivity",
+					"name": "Sensibilidad a la Luz Solar",
 					"type": "entries",
 					"entries": [
-						"While in sunlight, you have disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+						"Tienes desventaja en las tiradas de ataque y las pruebas de Sabiduría ({@skill Percepción|PHB-ES}) que dependan de la vista hechas bajo la luz del sol."
 					]
 				},
 				{
-					"name": "Superior Darkvision",
+					"name": "Visión en la Oscuridad Superior",
 					"entries": [
-						"You have superior vision in dark and dim conditions. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"Puedes ver bien en la oscuridad o con poca luz. Hasta a un máximo de 120 pies, eres capaz de ver con luz tenue como si hubiera luz brillante y en la oscuridad como si hubiera luz tenue. Eso sí, no puedes distinguir colores en la oscuridad, solo tonos de gris."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Languages",
+					"name": "Idiomas",
 					"entries": [
-						"You can speak, read, and write Undercommon."
+						"Puedes hablar, leer y escribir en infracomún."
 					],
 					"type": "entries"
 				}
 			]
 		},
 		{
-			"name": "Lizardfolk",
+			"name": "Hombre lagarto",
 			"source": "DMG-ES",
 			"page": 282,
 			"size": [
@@ -706,35 +706,35 @@
 			],
 			"languageProficiencies": [
 				{
-					"draconic": true
+					"dracónico|PHB-ES": true
 				}
 			],
 			"entries": [
 				{
-					"name": "Hold Breath",
+					"name": "Aguantar la Respiración",
 					"entries": [
-						"You can hold your breath for up to 15 minutes at a time."
+						"Puedes aguantar la respiración durante 15 minutos."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Natural Armor",
+					"name": "Armadura natural",
 					"entries": [
-						"Your scales function as natural armor, granting you a +3 bonus to Armor Class."
+						"Tus escamas funcionan como armadura natural, otorgándote un bono de +3 a la Clase de Armadura."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Languages",
+					"name": "Idiomas",
 					"entries": [
-						"You can speak, read, and write Draconic."
+						"Puedes hablar, leer y escribir en dracónico."
 					],
 					"type": "entries"
 				}
 			]
 		},
 		{
-			"name": "Merfolk",
+			"name": "Sirénido",
 			"source": "DMG-ES",
 			"page": 282,
 			"size": [
@@ -750,29 +750,29 @@
 			],
 			"languageProficiencies": [
 				{
-					"common": true,
-					"aquan": true
+					"común|PHB-ES": true,
+					"acuano|PHB-ES": true
 				}
 			],
 			"entries": [
 				{
-					"name": "Amphibious",
+					"name": "Anfibio",
 					"entries": [
-						"You can breathe air and water."
+						"Puedes respirar tanto dentro del agua como fuera de ella."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Languages",
+					"name": "Idiomas",
 					"entries": [
-						"You can speak, read, and write Common and Aquan."
+						"Puedes hablar, leer y escribir en común y acuano."
 					],
 					"type": "entries"
 				}
 			]
 		},
 		{
-			"name": "Orc",
+			"name": "Orco",
 			"source": "DMG-ES",
 			"page": 282,
 			"size": [
@@ -791,36 +791,36 @@
 			],
 			"languageProficiencies": [
 				{
-					"common": true,
-					"orc": true
+					"común|PHB-ES": true,
+					"orco|PHB-ES": true
 				}
 			],
 			"entries": [
 				{
-					"name": "Aggressive",
+					"name": "Agresivo",
 					"entries": [
-						"As a bonus action, you can move up to your speed toward a hostile creature that you can see."
+						"Puedes utilizar una acción adicional para moverte hasta tu velocidad hacia una criatura hostil a la que pueda ver."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Darkvision",
+					"name": "Visión en la oscuridad",
 					"entries": [
-						"Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"Acostumbrado a la vida subterránea, puedes ver bien en la oscuridad o con poca luz. Hasta a un máximo de 60 pies, eres capaz de ver con luz tenue como si hubiera luz brillante y en la oscuridad como si hubiera luz tenue. Eso sí, no puedes distinguir colores en la oscuridad, solo tonos de gris."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Languages",
+					"name": "Idiomas",
 					"entries": [
-						"You can speak, read, and write Common and Orc."
+						"Puedes hablar, leer y escribir en común y orco."
 					],
 					"type": "entries"
 				}
 			]
 		},
 		{
-			"name": "Skeleton",
+			"name": "Esqueleto",
 			"source": "DMG-ES",
 			"page": 282,
 			"size": [
@@ -852,36 +852,36 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Brittle Bones",
+					"name": "Huesos frágiles",
 					"entries": [
-						"You are vulnerable to bludgeoning damage."
+						"Eres vulnerable al daño contundente."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Undead Nature",
+					"name": "Naturaleza de Muerto Viviente",
 					"entries": [
-						"You are immune to poison damage and {@condition exhaustion}, and you can't be {@condition poisoned}. You don't require air, food, drink, or sleep."
+						"Eres inmune al daño de veneno y al {@condition cansancio|PHB-ES}, y no puedes ser {@condition envenenado|PHB-ES}. No necesitas aire, comida, bebida ni dormir"
 					]
 				},
 				{
-					"name": "Darkvision",
+					"name": "Visión en la oscuridad",
 					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"Puedes ver bien en la oscuridad o con poca luz. Hasta a un máximo de 60 pies, eres capaz de ver con luz tenue como si hubiera luz brillante y en la oscuridad como si hubiera luz tenue. Eso sí, no puedes distinguir colores en la oscuridad, solo tonos de gris."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Languages",
+					"name": "Idiomas",
 					"entries": [
-						"You can't speak, but you can understand the languages you knew in life."
+						"No puedes hablar, pero puedes entender los idiomas que conocías en vida."
 					],
 					"type": "entries"
 				}
 			]
 		},
 		{
-			"name": "Troglodyte",
+			"name": "Troglodita",
 			"source": "DMG-ES",
 			"page": 282,
 			"size": [
@@ -909,51 +909,51 @@
 			],
 			"entries": [
 				{
-					"name": "Chameleon Skin",
+					"name": "Piel Camaleónica",
 					"type": "entries",
 					"entries": [
-						"You have advantage on Dexterity ({@skill Stealth}) checks made to hide."
+						"Tienes ventaja en las pruebas de Destreza ({@skill Sigilo|PHB-ES}) para esconderte."
 					]
 				},
 				{
-					"name": "Stench",
+					"name": "Hedor",
 					"type": "entries",
 					"entries": [
-						"Any creature other than a troglodyte that starts its turn within 5 ft. of you must succeed on a DC 12 Constitution saving throw or be {@condition poisoned} until the start of the creature's next turn. On a successful saving throw, the creature is immune to the stench of all troglodytes for 1 hour."
+						"Cualquier criatura que no sea un troglodita y empiece su turno situada a 5 pies o menos de ti deberá superar una tirada de salvación de Constitución CD 12 o estará {@condition envenenado|PHB-ES|envenenada} hasta el principio de su siguiente turno. Si tiene éxito en la tirada de salvación, será inmune al hedor de todos los trogloditas durante la próxima hora."
 					]
 				},
 				{
-					"name": "Sunlight Sensitivity",
+					"name": "Sensibilidad a la Luz Solar",
 					"type": "entries",
 					"entries": [
-						"While in sunlight, you have disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+						"Tienes desventaja en las tiradas de ataque y las pruebas de Sabiduría ({@skill Percepción|PHB-ES}) que dependan de la vista realizadas bajo la luz del sol."
 					]
 				},
 				{
-					"name": "Natural Armor",
+					"name": "Armadura natural",
 					"entries": [
-						"Your thick hide grants you a +1 bonus to Armor Class."
+						"Tu gruesa piel te otorga un bono de +1 a la Clase de Armadura."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Darkvision",
+					"name": "Visión en la oscuridad",
 					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"Puedes ver bien en la oscuridad o con poca luz. Hasta a un máximo de 60 pies, eres capaz de ver con luz tenue como si hubiera luz brillante y en la oscuridad como si hubiera luz tenue. Eso sí, no puedes distinguir colores en la oscuridad, solo tonos de gris."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Languages",
+					"name": "Idiomas",
 					"entries": [
-						"You can speak, read, and write Troglodyte."
+						"Puedes hablar, leer y escribir en troglodita."
 					],
 					"type": "entries"
 				}
 			]
 		},
 		{
-			"name": "Zombie",
+			"name": "Zombi",
 			"source": "DMG-ES",
 			"page": 282,
 			"size": [
@@ -983,29 +983,29 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Undead Fortitude",
+					"name": "Fortaleza de Muerto Viviente",
 					"entries": [
-						"If damage reduces you to 0 hit points, you must make a Constitution saving throw with a DC of 5+the damage taken, unless the damage is radiant or from a critical hit. On a success, you drop to 1 hit point instead."
+						"Si el daño reduce a 0 tus puntos de golpe, deberás hacer una tirada de salvación de Constitución con CD 5 + el daño sufrido, siempre que este no sea radiante o proveniente de un crítico. Si tienes éxito, pasas a tener 1 punto de golpe en lugar de 0."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Undead Nature",
+					"name": "Naturaleza de Muerto Viviente",
 					"entries": [
-						"You are immune to poison damage, and you can't be {@condition poisoned}. You don't require air, food, drink, or sleep."
+						"Eres inmune al daño de veneno y no puedes ser {@condition envenenado|PHB-ES}. No necesitas aire, comida, bebida ni dormir"
 					]
 				},
 				{
-					"name": "Darkvision",
+					"name": "Visión en la oscuridad",
 					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"Puedes ver bien en la oscuridad o con poca luz. Hasta a un máximo de 60 pies, eres capaz de ver con luz tenue como si hubiera luz brillante y en la oscuridad como si hubiera luz tenue. Eso sí, no puedes distinguir colores en la oscuridad, solo tonos de gris."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Languages",
+					"name": "Idiomas",
 					"entries": [
-						"You can't speak, but you can understand the languages you knew in life."
+						"No puedes hablar, pero puedes entender los idiomas que conocías en vida."
 					],
 					"type": "entries"
 				}
