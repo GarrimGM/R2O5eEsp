@@ -1014,8 +1014,8 @@
 		{
 			"name": "Aarakocra",
 			"source": "MPMM-ES",
-			"page": 5,
-			"lineage": "VRGR",
+			"page": 6,
+			"lineage": "VRGR-ES",
 			"size": [
 				"M"
 			],
@@ -1030,7 +1030,7 @@
 				{
 					"innate": {
 						"3": [
-							"gust of wind"
+							"ráfaga de viento|PHB-ES"
 						]
 					},
 					"ability": {
@@ -1045,31 +1045,31 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Flight",
+					"name": "Garras",
 					"entries": [
-						"Because of your wings, you have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor."
+						"Tienes unas garras que puedes usar para hacer ataques sin armas. Cuando impactes con ellas, el ataque infligirá {@damage 1d6} + tu modificador por Fuerza de daño cortante, en lugar del daño contundente normal de un ataque sin armas."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Talons",
+					"name": "Llamada al Viento",
 					"entries": [
-						"You have talons that you can use to make unarmed strikes. When you hit with them, the strike deals {@damage 1d6} + your Strength modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike."
+						"A partir del nivel 3, puedes lanzar el conjuro {@spell ráfaga de viento|PHB-ES} con este atributo sin necesidad de componentes materiales. Cuando lances el conjuro con este atributo, no podrás volver a hacerlo hasta que finalices un descanso largo. También puedes lanzar el conjuro usando cualquier espacio de conjuro que tengas de nivel 2 o superior.",
+						"La Inteligencia, la Sabiduría o el Carisma es tu aptitud mágica para lanzar {@spell ráfaga de viento|PHB-ES} con este atributo (elígela cuando selecciones esta raza)."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Wind Caller",
+					"name": "Volar",
 					"entries": [
-						"Starting at 3rd level, you can cast the {@spell gust of wind} spell with this trait, without requiring a material component. Once you cast the spell with this trait, you can't do so again until you finish a long rest. You can also cast the spell using any spell slots you have of 2nd level or higher.",
-						"Intelligence, Wisdom, or Charisma is your spellcasting ability for when you cast {@spell gust of wind} with this trait (choose when you select this race)."
+						"Gracias a tus alas, tienes una velocidad volando igual a tu velocidad caminando. No puedes usar esta velocidad volando si llevas puesta una armadura media o pesada."
 					]
 				}
 			],
 			"fluff": {
 				"entries": [
-					"A winged people who originated on the Elemental Plane of Air, aarakocra soar through the sky wherever they wander. The first aarakocra served the Wind Dukes of Aaqa—mighty beings of air—and were imbued with a measure of their masters' power over winds. Their descendants still command echoes of that power.",
-					"From below, aarakocra look like large birds and thus are sometimes called birdfolk. Only when they roost on a branch or walk across the ground is their Humanoid nature clear. Standing upright, aarakocra are typically about 5 feet tall, and they have long, narrow legs that taper to sharp talons. Feathers cover their bodies—usually red, orange, yellow, brown, or gray. Their heads are also avian, often resembling those of parrots or eagles."
+					"Los aarakocras, un pueblo alado originario del Plano Elemental del Aire, vagan por el mundo surcando los cielos. Los primeros aarakocras servían a los duques del Viento de Aaqa (poderosos seres del aire) y estaban imbuidos del poder sobre el viento de sus señores. Sus descendientes aún poseen vestigios de ese poder.",
+					"Vistos desde abajo, los aarakocras tienen el aspecto de aves de gran tamaño, por lo que a veces se les llama \"hombres pájaro\". Su naturaleza humanoide solo se hace evidente cuando se posan en una rama o caminan por el suelo. Erguidos, los aarakocras suelen medir en torno a 5 pies y poseen unas piernas largas y cada vez más delgadas que acaban en garras afiladas. Sus cuerpos están cubiertos de plumas, generalmente de color rojo, naranja, amarillo, marrón o gris. También sus cabezas son de ave y, a menudo, se parecen a la de un loro o un águila."
 				],
 				"images": [
 					{
@@ -1086,7 +1086,7 @@
 			"name": "Aasimar",
 			"source": "MPMM-ES",
 			"page": 7,
-			"lineage": "VRGR",
+			"lineage": "VRGR-ES",
 			"size": [
 				"S",
 				"M"
@@ -1119,118 +1119,118 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Size",
+					"name": "Tamaño",
 					"entries": [
-						"You are Medium or Small. You choose the size when you select this race."
+						"Eres Mediano o Pequeño. Eliges el tamaño cuando seleccionas esta raza."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Celestial Resistance",
+					"name": "Manos Curativas",
 					"entries": [
-						"You have resistance to necrotic damage and radiant damage."
+						"Como acción, puedes tocar a una criatura y tirar una cantidad de d4 igual a tu bonificador por competencia. La criatura recupera una cantidad de puntos de golpe igual al resultado total de la tirada. Cuando uses este atributo, no podrás volver a hacerlo hasta que finalices un descanso largo."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Darkvision",
+					"name": "Portador de Luz",
 					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+						"Conoces el truco {@spell luz|PHB-ES}. El Carisma es tu aptitud mágica para lanzarlo."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Healing Hands",
+					"name": "Resistencia Celestial",
 					"entries": [
-						"As an action, you can touch a creature and roll a number of d4s equal to your proficiency bonus. The creature regains a number of hit points equal to the total rolled. Once you use this trait, you can't use it again until you finish a long rest."
+						"Tienes resistencia al daño necrótico y al radiante."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Light Bearer",
+					"name": "Revelación Celestial",
 					"entries": [
-						"You know the {@spell light} cantrip. Charisma is your spellcasting ability for it."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Celestial Revelation",
-					"entries": [
-						"When you reach 3rd level, choose one of the revelation options below. Thereafter, you can use a bonus action to unleash the celestial energy within yourself, gaining the benefits of that revelation. Your transformation lasts for 1 minute or until you end it as a bonus action. Once you transform using your revelation below, you can't use it again until you finish a long rest.",
+						"Cuando alcances el nivel 3, elige una de las siguientes opciones de revelación. A partir de entonces, podrás usar una acción adicional para desatar la energía celestial de tu interior y obtendrás los beneficios de esa revelación. Tu transformación dura 1 minuto o hasta que le pongas fin como acción adicional. Cuando te transformes usando tu revelación, no podrás volver a hacerlo hasta que finalices un descanso largo:",
 						{
 							"type": "list",
 							"items": [
 								{
 									"type": "item",
-									"name": "Necrotic Shroud",
-									"entry": "Your eyes briefly become pools of darkness, and ghostly, flightless wings sprout from your back temporarily. Creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw (DC 8 + your proficiency bonus + your Charisma modifier) or become {@condition frightened} of you until the end of your next turn. Until the transformation ends, once on each of your turns, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus."
+									"name": "Alma Radiante",
+									"entry": "Dos alas espectrales luminosas brotan temporalmente de tu espalda. Hasta que finalice la transformación, tienes una velocidad volando igual a tu velocidad caminando y, una vez en cada uno de tus turnos, puedes infligir daño radiante adicional a un objetivo cuando le hagas daño con un ataque o un conjuro. Este daño adicional es igual a tu bonificador por competencia."
 								},
 								{
 									"type": "item",
-									"name": "Radiant Consumption",
-									"entry": "Searing light temporarily radiates from your eyes and mouth. For the duration, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes radiant damage equal to your proficiency bonus. Until the transformation ends, once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus."
+									"name": "Consunción Radiante",
+									"entry": "De tus ojos y tu boca brota temporalmente una luz abrasadora. Durante este tiempo, emites luz brillante en un radio de 10 pies y luz tenue 10 pies más allá y, al final de cada uno de tus turnos, cada criatura a 10 pies o menos de ti recibirá una cantidad de daño radiante igual a tu bonificador por competencia. Hasta que finalice la transformación, una vez en cada uno de tus turnos, puedes infligir daño radiante adicional a un objetivo cuando le hagas daño con un ataque o un conjuro. Este daño adicional es igual a tu bonificador por competencia."
 								},
 								{
 									"type": "item",
-									"name": "Radiant Soul",
-									"entry": "Two luminous, spectral wings sprout from your back temporarily. Until the transformation ends, you have a flying speed equal to your walking speed, and once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus."
+									"name": "Mortaja Necrótica",
+									"entry": "Tus ojos se vuelven brevemente pozos de oscuridad y unas alas fantasmales que no permiten volar brotan temporalmente de tu espalda. Las criaturas que no sean tus aliados a 10 pies o menos de ti y que te puedan ver deberán superar una tirada de salvación de Carisma (CD 8 + tu bonificador por competencia + tu modificador por Carisma) o quedarán {@condition asustado|PHB-ES|asustadas} de ti hasta el final de tu siguiente turno. Hasta que finalice la transformación, una vez en cada uno de tus turnos, puedes infligir daño necrótico adicional a un objetivo cuando le hagas daño con un ataque o un conjuro. Este daño adicional es igual a tu bonificador por competencia."
 								}
 							],
 							"style": "list-hang-notitle"
 						}
 					]
+				},
+				{
+					"type": "entries",
+					"name": "Visión en la Oscuridad",
+					"entries": [
+						"Puedes ver con luz tenue a 60 pies o menos de ti como si hubiera luz brillante, y en la oscuridad como si hubiera luz tenue. En esa oscuridad, solo disciernes los colores como tonos de gris."
+					]
 				}
 			],
 			"_versions": [
 				{
-					"name": "Aasimar; Necrotic Shroud",
+					"name": "Aasimar; Mortaja Necrótica",
 					"source": "MPMM-ES",
 					"_mod": {
 						"entries": {
 							"mode": "replaceArr",
-							"replace": "Celestial Revelation",
+							"replace": "Revelación Celestial",
 							"items": {
-								"name": "Celestial Revelation (Necrotic Shroud)",
+								"name": "Revelación Celestial (Mortaja Necrótica)",
 								"type": "entries",
 								"entries": [
-									"When you reach 3rd level, you can use a bonus action to transform yourself. Your transformation lasts for 1 minute or until you end it as a bonus action. Once you transform using your revelation, you can't use it again until you finish a long rest.",
-									"Your eyes briefly become pools of darkness, and ghostly, flightless wings sprout from your back temporarily. Creatures other than your allies within 10 feet of you that can see you must succeed on a Charisma saving throw (DC 8 + your proficiency bonus + your Charisma modifier) or become {@condition frightened} of you until the end of your next turn. Until the transformation ends, once on each of your turns, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus."
+									"Cuando alcances el nivel 3, podrás usar una acción adicional para transformarte. Tu transformación dura 1 minuto o hasta que le pongas fin como acción adicional. Cuando te transformes usando tu revelación, no podrás volver a hacerlo hasta que finalices un descanso largo.",
+									"Tus ojos se vuelven brevemente pozos de oscuridad y unas alas fantasmales que no permiten volar brotan temporalmente de tu espalda. Las criaturas que no sean tus aliados a 10 pies o menos de ti y que te puedan ver deberán superar una tirada de salvación de Carisma (CD 8 + tu bonificador por competencia + tu modificador por Carisma) o quedarán {@condition asustado|PHB-ES|asustadas} de ti hasta el final de tu siguiente turno. Hasta que finalice la transformación, una vez en cada uno de tus turnos, puedes infligir daño necrótico adicional a un objetivo cuando le hagas daño con un ataque o un conjuro. Este daño adicional es igual a tu bonificador por competencia."
 								]
 							}
 						}
 					}
 				},
 				{
-					"name": "Aasimar; Radiant Consumption",
+					"name": "Aasimar; Consunción Radiante",
 					"source": "MPMM-ES",
 					"_mod": {
 						"entries": {
 							"mode": "replaceArr",
-							"replace": "Celestial Revelation",
+							"replace": "Revelación Celestial",
 							"items": {
-								"name": "Celestial Revelation (Radiant Consumption)",
+								"name": "Revelación Celestial (Consunción Radiante)",
 								"type": "entries",
 								"entries": [
-									"When you reach 3rd level, you can use a bonus action to transform yourself. Your transformation lasts for 1 minute or until you end it as a bonus action. Once you transform using your revelation, you can't use it again until you finish a long rest.",
-									"Searing light temporarily radiates from your eyes and mouth. For the duration, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes radiant damage equal to your proficiency bonus. Until the transformation ends, once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus."
+									"Cuando alcances el nivel 3, podrás usar una acción adicional para transformarte. Tu transformación dura 1 minuto o hasta que le pongas fin como acción adicional. Cuando te transformes usando tu revelación, no podrás volver a hacerlo hasta que finalices un descanso largo.",
+									"De tus ojos y tu boca brota temporalmente una luz abrasadora. Durante este tiempo, emites luz brillante en un radio de 10 pies y luz tenue 10 pies más allá y, al final de cada uno de tus turnos, cada criatura a 10 pies o menos de ti recibirá una cantidad de daño radiante igual a tu bonificador por competencia. Hasta que finalice la transformación, una vez en cada uno de tus turnos, puedes infligir daño radiante adicional a un objetivo cuando le hagas daño con un ataque o un conjuro. Este daño adicional es igual a tu bonificador por competencia."
 								]
 							}
 						}
 					}
 				},
 				{
-					"name": "Aasimar; Radiant Soul",
+					"name": "Aasimar; Alma Radiante",
 					"source": "MPMM-ES",
 					"_mod": {
 						"entries": {
 							"mode": "replaceArr",
-							"replace": "Celestial Revelation",
+							"replace": "Revelación Celestial",
 							"items": {
-								"name": "Celestial Revelation (Radiant Soul)",
+								"name": "Revelación Celestial (Alma Radiante)",
 								"type": "entries",
 								"entries": [
-									"When you reach 3rd level, you can use a bonus action to transform yourself. Your transformation lasts for 1 minute or until you end it as a bonus action. Once you transform using your revelation, you can't use it again until you finish a long rest.",
-									"Two luminous, spectral wings sprout from your back temporarily. Until the transformation ends, you have a flying speed equal to your walking speed, and once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your proficiency bonus."
+									"Cuando alcances el nivel 3, podrás usar una acción adicional para transformarte. Tu transformación dura 1 minuto o hasta que le pongas fin como acción adicional. Cuando te transformes usando tu revelación, no podrás volver a hacerlo hasta que finalices un descanso largo.",
+									"Dos alas espectrales luminosas brotan temporalmente de tu espalda. Hasta que finalice la transformación, tienes una velocidad volando igual a tu velocidad caminando y, una vez en cada uno de tus turnos, puedes infligir daño radiante adicional a un objetivo cuando le hagas daño con un ataque o un conjuro. Este daño adicional es igual a tu bonificador por competencia."
 								]
 							}
 						}
@@ -1239,14 +1239,14 @@
 			],
 			"fluff": {
 				"entries": [
-					"Whether descended from a celestial being or infused with heavenly power, aasimar are mortals who carry a spark of the Upper Planes within their souls. They can fan that spark to bring light, ease wounds, and unleash the fury of the heavens.",
-					"Aasimar can arise among any population of mortals. They resemble their parents, but they live for up to 160 years and often have features that hint at their celestial heritage. These often begin subtle and become more obvious when the aasimar gains the ability to reveal their full celestial nature. The Aasimar Celestial Features table has examples you can choose or use as inspiration to create your own.",
+					"Tanto si descienden de un ser celestial como si han sido imbuidos con poder celestial, los aasimars son mortales que portan en su alma una chispa de los Planos Superiores, que pueden avivar para generar luz, aliviar heridas o desatar la furia de los cielos.",
+					"Los aasimars pueden surgir entre cualquier población de mortales. Se parecen a sus padres, pero viven hasta 160 años y suelen tener rasgos que insinúan su herencia celestial. Estos rasgos suelen ser sutiles y se vuelven más evidentes cuando el aasimar obtiene la capacidad de mostrar toda su naturaleza celestial. La tabla \"Rasgos celestiales de los aasimars\" contiene ejemplos que puedes elegir o usar de inspiración para crear los tuyos propios.",
 					{
 						"type": "table",
-						"caption": "Aasimar Celestial Features",
+						"caption": "Rasgos celestiales de los aasimars",
 						"colLabels": [
 							"d6",
-							"Celestial Feature"
+							"Rasgo celestial"
 						],
 						"colStyles": [
 							"col-1 text-center",
@@ -1255,27 +1255,27 @@
 						"rows": [
 							[
 								"1",
-								"A dusting of metallic, white, or charcoal freckles"
+								"Pecas de color metálico, blanco o carbón."
 							],
 							[
 								"2",
-								"Metallic, luminous, or dark eyes"
+								"Ojos metálicos, luminosos u oscuros."
 							],
 							[
 								"3",
-								"Starkly colored hair"
+								"Pelo de un color muy vívido."
 							],
 							[
 								"4",
-								"An unusual hue tinting your shadow"
+								"Una sombra con un tono inusual."
 							],
 							[
 								"5",
-								"A ghostly halo crowning your head"
+								"Un halo fantasmal te corona la cabeza."
 							],
 							[
 								"6",
-								"Rainbows gleaming on your skin"
+								"Tu piel tiene brillos arcoíris."
 							]
 						]
 					}
@@ -1292,10 +1292,10 @@
 			}
 		},
 		{
-			"name": "Bugbear",
+			"name": "Osgo",
 			"source": "MPMM-ES",
-			"page": 8,
-			"lineage": "VRGR",
+			"page": 29,
+			"lineage": "VRGR-ES",
 			"creatureTypes": [
 				"humanoid"
 			],
@@ -1318,58 +1318,58 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Creature Type",
+					"name": "Tipo de criatura",
 					"entries": [
-						"You are a Humanoid. You are also considered a goblinoid for any prerequisite or effect that requires you to be a goblinoid."
+						"Eres humanoide. También se te considera trasgo para cualquier requisito o efecto que requiera que seas trasgo."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Darkvision",
+					"name": "Ataque por Sorpresa",
 					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+						"Si impactas a una criatura con una tirada de ataque, la criatura recibe {@damage 2d6} de daño adicional si aún no ha jugado un turno en el combate actual."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Fey Ancestry",
+					"name": "Constitución Poderosa",
 					"entries": [
-						"You have advantage on saving throws you make to avoid or end the {@condition charmed} condition on yourself."
+						"Cuentas como un tamaño mayor cuando determinas tu capacidad de carga y el peso que puedes empujar, arrastrar o levantar."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Long-Limbed",
+					"name": "Extremidades Largas",
 					"entries": [
-						"When you make a melee attack on your turn, your reach for it is 5 feet greater than normal."
+						"Cuando haces un ataque cuerpo a cuerpo en tu turno, tienes 5 pies de alcance adicional."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Powerful Build",
+					"name": "Furtivo",
 					"entries": [
-						"You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+						"Eres competente en la habilidad {@skill Sigilo|PHB-ES}. Además, sin tener que apretarte, puedes atravesar y pararte en un espacio por el que quepa una criatura Pequeña."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Sneaky",
+					"name": "Linaje Feérico",
 					"entries": [
-						"You are proficient in the {@skill Stealth} skill. In addition, without squeezing, you can move through and stop in a space large enough for a Small creature."
+						"Tienes ventaja en las tiradas de salvación para evitar o poner fin al estado de {@condition hechizado|PHB-ES} sobre ti mismo."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Surprise Attack",
+					"name": "Visión en la Oscuridad",
 					"entries": [
-						"If you hit a creature with an attack roll, the creature takes an extra {@damage 2d6} damage if it hasn't taken a turn yet in the current combat."
+						"Puedes ver con luz tenue a 60 pies o menos de ti como si hubiera luz brillante, y en la oscuridad como si hubiera luz tenue. En esa oscuridad, solo disciernes los colores como tonos de gris."
 					]
 				}
 			],
 			"fluff": {
 				"entries": [
-					"Neither bugs nor bears, bugbears are the hulking cousins of goblins and hobgoblins. With roots in the Feywild, early bugbears resided in hidden places, in hard-to-reach and shadowed spaces. Long ago and from out of the corner of your eye, they came to the Material Plane, urged to spread throughout the multiverse by the conquering god Maglubiyet. Centuries later, they still bear a fey gift for lurking just out of sight, and many of them have sneaked away from that god's influence.",
-					"They are long of limb and covered in coarse hair, with wedge-shaped ears and pointed teeth. Despite their formidable build, bugbears are quiet skulkers, thanks to a fey magic that allows them to hide in spaces seemingly too small for them."
+					"Ni osos ni goblins, los osgos son los parientes descomunales de goblins y hobgoblins. Con sus raíces en los Parajes Feéricos, los primeros osgos residían en lugares ocultos, en espacios sombríos de difícil acceso. Hace mucho tiempo, y sin que nos diéramos cuenta, llegaron al Plano Material, empujados a extenderse por todo el multiverso por el dios conquistador Maglubiyet. Siglos después, siguen poseyendo el don feérico de acechar desde donde no se les ve y muchos de ellos han escapado de la influencia de ese dios.",
+					"Cuentan con extremidades largas y están recubiertos de un pelaje espeso, con orejas puntiagudas y dientes afilados. Pese a su formidable constitución, los osgos son acechadores silenciosos gracias a una magia feérica que les permite esconderse en espacios aparentemente demasiado pequeños para ellos."
 				],
 				"images": [
 					{
@@ -1383,10 +1383,10 @@
 			}
 		},
 		{
-			"name": "Centaur",
+			"name": "Centauro",
 			"source": "MPMM-ES",
 			"page": 9,
-			"lineage": "VRGR",
+			"lineage": "VRGR-ES",
 			"creatureTypes": [
 				"fey"
 			],
@@ -1413,44 +1413,44 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Creature Type",
+					"name": "Tipo de criatura",
 					"entries": [
-						"You are a Fey."
+						"Eres feérico."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Charge",
+					"name": "Afinidad Natural",
 					"entries": [
-						"If you move at least 30 feet straight toward a target and then hit it with a melee weapon attack on the same turn, you can immediately follow that attack with a bonus action, making one attack against the target with your hooves."
+						"Tu conexión feérica te proporciona una conexión intuitiva con el mundo natural y los animales que lo habitan. Por tanto, tienes competencia en una de las siguientes habilidades a tu elección: {@skill Medicina|PHB-ES}, {@skill Naturaleza|PHB-ES}, {@skill Supervivencia|PHB-ES} o {@skill Trato con Animales|PHB-ES}."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Equine Build",
+					"name": "Carga",
 					"entries": [
-						"You count as one size larger when determining your carrying capacity and the weight you can push or drag.",
-						"In addition, any climb that requires hands and feet is especially difficult for you because of your equine legs. When you make such a climb, each foot of movement costs you 4 extra feet instead of the normal 1 extra foot."
+						"Si te mueves al menos 30 pies en línea recta hacia un objetivo y luego impactas a ese objetivo con un ataque con arma cuerpo a cuerpo durante el mismo turno, puedes seguir ese ataque inmediatamente con una acción adicional y realizar un ataque contra el objetivo con tus cascos."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Hooves",
+					"name": "Cascos",
 					"entries": [
-						"You have hooves that you can use to make unarmed strikes. When you hit with them, the strike deals {@damage 1d6} + your Strength modifier bludgeoning damage, instead of the bludgeoning damage normal for an unarmed strike."
+						"Tienes unos cascos que puedes usar para hacer ataques sin armas. Cuando impactes con ellos, el ataque infligirá {@damage 1d6} + tu modificador por Fuerza de daño contundente, en lugar del daño contundente normal de un ataque sin armas."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Natural Affinity",
+					"name": "Constitución Equina",
 					"entries": [
-						"Your fey connection to nature gives you an intuitive connection to the natural world and the animals within it. You therefore have proficiency in one of the following skills of your choice: {@skill Animal Handling}, {@skill Medicine}, {@skill Nature}, or {@skill Survival}."
+						"Cuentas como un tamaño mayor cuando determinas tu capacidad de carga y el peso que puedes empujar o arrastrar.",
+						"Además, cualquier tipo de escalada que requiera manos y pies te resulta especialmente difícil debido a tus patas equinas. Cuando realices ese tipo de escalada, moverte te costará el quíntuple de movimiento, en lugar del doble."
 					]
 				}
 			],
 			"fluff": {
 				"entries": [
-					"Centaurs gallop throughout the multiverse and trace their origins to many different realms. The centaurs presented here hail from the Feywild and mystically resonate with the natural world. From the waist up, they resemble elves, displaying all the elf varieties of skin tone. From the waist down, they have the bodies of horses."
+					"Los centauros galopan a través del multiverso y sus orígenes pueden trazarse hasta muchos reinos distintos. Los que se presentan en este libro proceden de los Parajes Feéricos y poseen una conexión mística con el mundo natural. De cintura para arriba, parecen elfos y poseen todas las variedades de piel de esta raza. De cintura para abajo, tienen cuerpo de caballo."
 				],
 				"images": [
 					{
@@ -1464,10 +1464,10 @@
 			}
 		},
 		{
-			"name": "Changeling",
+			"name": "Replicante",
 			"source": "MPMM-ES",
-			"page": 10,
-			"lineage": "VRGR",
+			"page": 30,
+			"lineage": "VRGR-ES",
 			"creatureTypes": [
 				"fey"
 			],
@@ -1493,40 +1493,40 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Creature Type",
+					"name": "Tipo de criatura",
 					"entries": [
-						"You are a Fey."
+						"Eres feérico."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Size",
+					"name": "Tamaño",
 					"entries": [
-						"You are Medium or Small. You choose the size when you select this race."
+						"Eres Mediano o Pequeño. Eliges el tamaño cuando seleccionas esta raza."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Changeling Instincts",
+					"name": "Cambiaformas",
 					"entries": [
-						"Thanks to your connection to the fey realm, you gain proficiency with two of the following skills of your choice: {@skill Deception}, {@skill Insight}, {@skill Intimidation}, {@skill Performance}, or {@skill Persuasion}."
+						"Como acción, puedes cambiar tu aspecto y tu voz. Tú determinas los detalles de los cambios, como tus colores, la longitud del pelo y el sexo. También puedes ajustar tu altura y tu peso y cambiar tu tamaño entre Mediano y Pequeño. Puedes presentarte como un miembro de otra raza, aunque esto no modificará tu perfil de juego. No puedes replicar el aspecto de una persona a la que nunca hayas visto y debes adoptar una forma que tenga las extremidades dispuestas como tú. Este atributo no cambia ni tu ropa ni tu equipo.",
+						"Permanecerás en la nueva forma hasta que uses una acción para revertir a tu auténtica forma o hasta que mueras."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Shapechanger",
+					"name": "Instintos de Replicante",
 					"entries": [
-						"As an action, you change your appearance and your voice. You determine the specifics of the changes, including your coloration, hair length, and sex. You can also adjust your height between Medium and Small. You can make yourself appear as a member of another race, though none of your game statistics change. You can't duplicate the appearance of an individual you've never seen, and you must adopt a form that has the same basic arrangement of limbs that you have. Your clothing and equipment aren't changed by this trait.",
-						"You stay in the new form until you use an action to revert to your true form or until you die."
+						"Gracias a tu conexión con el reino feérico, ganas competencia en dos de las siguientes habilidades a tu elección: {@skill Engaño|PHB-ES}, {@skill Interpretación|PHB-ES}, {@skill Intimidación|PHB-ES}, {@skill Perspicacia|PHB-ES} o {@skill Persuasión|PHB-ES}."
 					]
 				}
 			],
 			"fluff": {
 				"entries": [
-					"With ever-changing appearances, changelings reside in many societies undetected. Each changeling can supernaturally adopt any face they like. For some changelings, a new face is only a disguise. For other changelings, a new face may reveal an aspect of their soul.",
-					"The first changelings in the multiverse appeared in the Feywild, and the wondrous, mutable essence of that plane lingers in changelings today—even in those changelings who have never set foot in the fey realm. Each changeling decides how to use their shape-shifting ability, channeling either the peril or the joy of the Feywild. Sometimes they adopt new forms for the sake of mischief or malice, and other times they don a new identity to right wrongs or delight the downtrodden.",
-					"In their true form, changelings appear faded, their features almost devoid of detail. It is rare to see a changeling in that form, for a typical changeling changes their shape the way others might change clothes. A casual shape—one created on the spur of the moment, with no depth or history—is called a mask. A mask can be used to express a mood or to serve a specific purpose and then might never be used again. However, many changelings develop identities that have more depth, crafting whole personas complete with histories and beliefs. A changeling adventurer might have personas for many situations, including negotiation, investigation, and combat.",
-					"Personas can be shared by multiple changelings; a community might be home to three healer changelings, with whoever is on duty adopting the persona of Andrea, the gentle physician. Personas can even be passed down through a family, allowing a younger changeling to take advantage of contacts established by the persona's previous users."
+					"Gracias a su aspecto en continuo cambio, los replicantes viven en muchas sociedades pasando desapercibidos. Cada replicante puede adoptar el rostro que desee de forma sobrenatural. Para algunos de ellos, una nueva cara es solo un disfraz. Para otros, puede revelar un aspecto de su alma.",
+					"Los primeros replicantes del multiverso aparecieron en los Parajes Feéricos y la esencia maravillosa y mutable de ese plano aún permanece en ellos, incluso en los que nunca han puesto un pie en el reino feérico. Cada replicante decide cómo usar su capacidad de cambio de forma, en la que canaliza el peligro o la alegría de los Parajes Feéricos. A veces adoptan nuevas formas solo por travesura o malicia, mientras que otras asumen una nueva identidad para enmendar injusticias o deleitar a los oprimidos.",
+					"En su auténtica forma, los replicantes parecen difuminados y con rasgos casi carentes de detalle. Es raro ver a un replicante con esa forma, ya que suelen cambiar de aspecto igual que otros cambian de ropajes. Una forma casual, creada en un instante, sin detalles ni historia, se conoce como \"máscara\". Una máscara sirve para expresar un estado de ánimo o cumplir un fin específico y no volver a usarse más. Sin embargo, muchos replicantes desarrollan identidades que poseen mayor profundidad y crean imágenes públicas completas, con historias y creencias. Un aventurero replicante puede tener imágenes públicas para muchas situaciones, como negociaciones, investigaciones o combates.",
+					"Varios replicantes pueden compartir esas imágenes públicas; por ejemplo, una comunidad podría albergar a tres replicantes sanadores y cualquiera que esté de guardia adoptará la imagen de Andrea, la médica amable. Las imágenes públicas incluso se pueden transmitir en una familia, lo que permite a un replicante joven aprovechar los contactos creados por los usuarios anteriores de esa imagen."
 				],
 				"images": [
 					{
@@ -1540,10 +1540,10 @@
 			}
 		},
 		{
-			"name": "Deep Gnome",
+			"name": "Gnomo de las profundidades",
 			"source": "MPMM-ES",
-			"page": 11,
-			"lineage": "VRGR",
+			"page": 18,
+			"lineage": "VRGR-ES",
 			"creatureTypes": [
 				"humanoid"
 			],
@@ -1567,14 +1567,14 @@
 						"3": {
 							"daily": {
 								"1": [
-									"disguise self"
+									"disfrazarse|PHB-ES"
 								]
 							}
 						},
 						"5": {
 							"daily": {
 								"1": [
-									"nondetection"
+									"indetectable|PHB-ES"
 								]
 							}
 						}
@@ -1591,45 +1591,45 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Creature Type",
+					"name": "Tipo de criatura",
 					"entries": [
-						"You are a Humanoid. You are also considered a gnome for any prerequisite or effect that requires you to be a gnome."
+						"Eres humanoide. También se te considera gnomo para cualquier requisito o efecto que requiera que seas gnomo."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Darkvision",
+					"name": "Camuflaje Svirfneblin",
 					"entries": [
-						"You can see in dim light within 120 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+						"Cuando realices una prueba de Destreza ({@skill Sigilo|PHB-ES}), puedes hacerla con ventaja. Puedes usar este atributo una cantidad de veces igual a tu bonificador por competencia y recuperas todos los usos tras finalizar un descanso largo."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Gift of the Svirfneblin",
+					"name": "Don de los Svirfneblins",
 					"entries": [
-						"Starting at 3rd level, you can cast the {@spell disguise self} spell with this trait. Starting at 5th level, you can also cast the {@spell nondetection} spell with it, without requiring a material component. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these using spell slots you have of the appropriate level.",
-						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+						"A partir del nivel 3, puedes lanzar el conjuro {@spell disfrazarse|PHB-ES} con este atributo. A partir del nivel 5, también puedes lanzar el conjuro {@spell indetectable|PHB-ES} con él, sin necesidad de componentes materiales. Cuando lances cualquiera de estos conjuros con este atributo, no podrás volver a lanzar ese conjuro con él hasta que finalices un descanso largo. También puedes lanzar estos conjuros usando espacios de conjuro que tengas del nivel apropiado.",
+						"La Inteligencia, la Sabiduría o el Carisma es tu aptitud mágica para lanzar estos conjuros con este atributo (elígela cuando selecciones esta raza)."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Gnomish Magic Resistance",
+					"name": "Resistencia Mágica Gnoma",
 					"entries": [
-						"You have advantage on Intelligence, Wisdom, and Charisma saving throws against spells."
+						"Tienes ventaja en las tiradas de salvación de Inteligencia, Sabiduría y Carisma contra conjuros."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Svirfneblin Camouflage",
+					"name": "Visión en la Oscuridad",
 					"entries": [
-						"When you make a Dexterity ({@skill Stealth}) check, you can make the check with advantage. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+						"Puedes ver con luz tenue a 120 pies o menos de ti como si hubiera luz brillante, y en la oscuridad como si hubiera luz tenue. En esa oscuridad, solo disciernes los colores como tonos de gris."
 					]
 				}
 			],
 			"fluff": {
 				"entries": [
-					"Deep gnomes, or svirfneblin, are natives of the Underdark and are suffused with that subterranean realm's magic. They can supernaturally camouflage themselves, and their svirfneblin magic renders them difficult to locate. These abilities have enabled them to survive for generations among the perils of the Underdark.",
-					"Like other gnomes, deep gnomes can live for centuries, up to 500 years."
+					"Los gnomos de las profundidades, o svirfneblins, son nativos de la Infraoscuridad y están imbuidos de la magia de ese reino subterráneo. Pueden camuflarse de forma sobrenatural y su magia svirfneblin los vuelve difíciles de localizar. Estas capacidades les han permitido sobrevivir durante generaciones entre los peligros de la Infraoscuridad.",
+					"Al igual que otros gnomos, los svirfneblins pueden vivir siglos, hasta 500 años."
 				],
 				"images": [
 					{
@@ -1645,8 +1645,8 @@
 		{
 			"name": "Duergar",
 			"source": "MPMM-ES",
-			"page": 12,
-			"lineage": "VRGR",
+			"page": 10,
+			"lineage": "VRGR-ES",
 			"creatureTypes": [
 				"humanoid"
 			],
@@ -1670,14 +1670,14 @@
 						"3": {
 							"daily": {
 								"1": [
-									"enlarge/reduce"
+									"agrandar/reducir|PHB-ES"
 								]
 							}
 						},
 						"5": {
 							"daily": {
 								"1": [
-									"invisibility"
+									"invisibilidad|PHB-ES"
 								]
 							}
 						}
@@ -1694,45 +1694,45 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Creature Type",
+					"name": "Tipo de criatura",
 					"entries": [
-						"You are a Humanoid. You are also considered a dwarf for any prerequisite or effect that requires you to be a dwarf."
+						"Eres humanoide. También se te considera enano para cualquier requisito o efecto que requiera que seas enano."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Darkvision",
+					"name": "Fortaleza Psiónica",
 					"entries": [
-						"You can see in dim light within 120 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+						"Tienes ventaja en las tiradas de salvación para evitar o poner fin a los estados de {@condition aturdido|PHB-ES} o {@condition hechizado|PHB-ES} sobre ti mismo."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Duergar Magic",
+					"name": "Magia Duergar",
 					"entries": [
-						"Starting at 3rd level, you can cast the {@spell enlarge/reduce} spell on yourself with this trait, without requiring a material component. Starting at 5th level, you can also cast the {@spell invisibility} spell on yourself with this trait, without requiring a material component. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level.",
-						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+						"A partir del nivel 3, puedes lanzar el conjuro {@spell agrandar/reducir|PHB-ES} sobre ti mismo con este atributo sin necesidad de componentes materiales. A partir del nivel 5, también puedes lanzar el conjuro {@spell invisibilidad|PHB-ES} sobre ti mismo con este atributo sin necesidad de componentes materiales. Cuando lances cualquiera de estos conjuros con este atributo, no podrás volver a lanzar ese conjuro con él hasta que finalices un descanso largo. También puedes lanzar estos conjuros usando espacios de conjuro que tengas del nivel apropiado.",
+						"La Inteligencia, la Sabiduría o el Carisma es tu aptitud mágica para lanzar estos conjuros con este atributo (elígela cuando selecciones esta raza)."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Dwarven Resilience",
+					"name": "Resistencia Enana",
 					"entries": [
-						"You have advantage on saving throws you make to avoid or end the {@condition poisoned} condition on yourself. You also have resistance to poison damage."
+						"Tienes ventaja en las tiradas de salvación para evitar o poner fin al estado de {@condition envenenado|PHB-ES} sobre ti mismo. También posees resistencia al daño de veneno."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Psionic Fortitude",
+					"name": "Visión en la Oscuridad",
 					"entries": [
-						"You have advantage on saving throws you make to avoid or end the {@condition charmed} or {@condition stunned} condition on yourself."
+						"Puedes ver con luz tenue a 120 pies o menos de ti como si hubiera luz brillante, y en la oscuridad como si hubiera luz tenue. En esa oscuridad, solo disciernes los colores como tonos de gris."
 					]
 				}
 			],
 			"fluff": {
 				"entries": [
-					"Duergar are dwarves whose ancestors were transformed by centuries living in the deepest places of the Underdark. That chthonic realm is saturated with strange magical energy, and over generations, early duergar absorbed traces of it. They were further altered when mind flayers and other Aberrations invaded and performed horrific experiments on them. Fueled by Underdark magic, those experiments left early duergar with psionic powers, which have been passed down to their descendants. In time, they liberated themselves from their aberrant tyrants and forged a new life for themselves in the Underdark and beyond.",
-					"Like other dwarves, duergar typically have a life span of 350 years."
+					"Los duergars son enanos cuyos ancestros fueron transformados tras siglos de vivir en los lugares más profundos de la Infraoscuridad. Este reino ctónico está saturado de energía mágica extraña y, con el paso de las generaciones, los primeros duergars absorbieron trazas de ella. Sus alteraciones aumentaron tras ser los sujetos de horrorosos experimentos realizados por azotamentes y otras aberraciones invasoras. Alimentados por la magia de la Infraoscuridad, estos experimentos hicieron que los primeros duergars adquirieran poderes psiónicos que se han transmitido a sus descendientes. Con el tiempo, se liberaron de sus tiranos aberrantes y se forjaron una nueva vida en la Infraoscuridad y más allá de ella.",
+					"Al igual que otros enanos, los duergars suelen vivir 350 años."
 				],
 				"images": [
 					{
@@ -1748,8 +1748,8 @@
 		{
 			"name": "Eladrin",
 			"source": "MPMM-ES",
-			"page": 13,
-			"lineage": "VRGR",
+			"page": 11,
+			"lineage": "VRGR-ES",
 			"creatureTypes": [
 				"humanoid"
 			],
@@ -1775,56 +1775,49 @@
 				}
 			],
 			"entries": [
-				"{@i Choose your eladrin's season: autumn, winter, spring, or summer. When finishing a long rest, you can change your season. See the \"Info\" tab for more information.}",
+				"{@i Elige la estación de tu eladrin: otoño, invierno, primavera o verano. Al finalizar un descanso largo, puedes cambiar de estación. Consulta la pestaña \"Info\" para obtener más detalles.}",
 				{
 					"type": "entries",
-					"name": "Creature Type",
+					"name": "Tipo de criatura",
 					"entries": [
-						"You are a Humanoid. You are also considered an elf for any prerequisite or effect that requires you to be an elf."
+						"Eres humanoide. También se te considera elfo para cualquier requisito o efecto que requiera que seas elfo."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Darkvision",
+					"name": "Linaje Feérico",
 					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+						"Tienes ventaja en las tiradas de salvación para evitar o poner fin al estado de {@condition hechizado|PHB-ES} sobre ti mismo."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Fey Ancestry",
+					"name": "Paso Feérico",
 					"entries": [
-						"You have advantage on saving throws you make to avoid or end the {@condition charmed} condition on yourself."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Fey Step",
-					"entries": [
-						"As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
-						"When you reach 3rd level, your Fey Step gain an additional effect based on your season; if the effect requires a saving throw, the DC equals 8 + your proficiency bonus + your Intelligence, Wisdom, or Charisma modifier (choose when you select this race):",
+						"Como acción adicional, puedes teletransportarte mágicamente hasta 30 pies a un espacio sin ocupar que puedas ver. Puedes usar este atributo una cantidad de veces igual a tu bonificador por competencia y recuperas todos los usos tras finalizar un descanso largo.",
+						"Cuando alcanzas el nivel 3, tu Paso Feérico gana un efecto adicional basado en tu estación; si el efecto requiere una tirada de salvación, la CD es igual a 8 + tu bonificador por competencia+ tu modificador por Inteligencia, Sabiduría o Carisma (elígelo cuando selecciones esta raza):",
 						{
 							"type": "list",
 							"items": [
 								{
 									"type": "item",
-									"name": "Autumn",
-									"entry": "Immediately after you use your Fey Step, up to two creatures of your choice that you can see within 10 feet of you must succeed on a Wisdom saving throw or be {@condition charmed} by you for 1 minute, or until you or your companions deal any damage to the creatures."
+									"name": "Otoño",
+									"entry": "Inmediatamente después de usar tu Paso Feérico, hasta dos criaturas de tu elección que puedas ver a 10 pies o menos de ti deberán superar una tirada de salvación de Sabiduría o quedarán {@condition hechizado|PHB-ES|hechizadas} por ti durante 1 minuto o hasta que tus compañeros o tú les hagáis algún daño."
 								},
 								{
 									"type": "item",
-									"name": "Winter",
-									"entry": "When you use your Fey Step, one creature of your choice that you can see within 5 feet of you before you teleport must succeed on a Wisdom saving throw or be {@condition frightened} of you until the end of your next turn."
+									"name": "Invierno",
+									"entry": "Cuando uses tu Paso Feérico, una criatura de tu elección que puedas ver a 5 pies o menos de ti antes de teletransportarte deberá superar una tirada de salvación de Sabiduría o quedará {@condition asustado|PHB-ES|asustada} de ti hasta el final de tu siguiente turno."
 								},
 								{
 									"type": "item",
-									"name": "Spring",
-									"entry": "When you use your Fey Step, you can touch one willing creature within 5 feet of you. That creature then teleports instead of you, appearing in an unoccupied space of your choice that you can see within 30 feet of you."
+									"name": "Primavera",
+									"entry": "Cuando uses tu Paso Feérico, podrás tocar a una criatura voluntaria a 5 pies o menos de ti. Luego esa criatura se teletransportará en vez de ti y aparecerá en un espacio sin ocupar de tu elección que puedas ver a 30 pies o menos de ti."
 								},
 								{
 									"type": "item",
-									"name": "Summer",
-									"entry": "Immediately after you use your Fey Step, each creature of your choice that you can see within 5 feet of you takes fire damage equal to your proficiency bonus."
+									"name": "Verano",
+									"entry": "Inmediatamente después de usar tu Paso Feérico, cada criatura de tu elección que puedas ver a 5 pies o menos de ti recibirá una cantidad de daño de fuego igual a tu bonificador por competencia."
 								}
 							],
 							"style": "list-hang-notitle"
@@ -1833,30 +1826,37 @@
 				},
 				{
 					"type": "entries",
-					"name": "Keen Senses",
+					"name": "Sentidos Agudos",
 					"entries": [
-						"You have proficiency in the {@skill Perception} skill."
+						"Tienes competencia en la habilidad {@skill Percepción|PHB-ES}."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Trance",
 					"entries": [
-						"You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness.",
-						"Whenever you finish this trance, you can change your season, and you can gain two proficiencies that you don't have, each one with a weapon or a tool of your choice selected from the Player's Handbook. You mystically acquire these proficiencies by drawing them from shared elven memory, and you retain them until you finish your next long rest."
+						"No necesitas dormir y la magia no puede dormirte. Puedes finalizar un descanso largo en 4 horas si las pasas en una meditación similar a un trance, tiempo durante el cual conservas la consciencia.",
+						"Siempre que termines este trance, puedes cambiar tu estación y puedes ganar dos competencias que no tengas, cada una con un arma o una herramienta de tu elección del Manual del Jugador. Adquieres estas competencias místicamente, extrayéndolas de la memoria élfica compartida, y las conservarás hasta que finalices tu siguiente descanso largo."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Visión en la Oscuridad",
+					"entries": [
+						"Puedes ver con luz tenue a 60 pies o menos de ti como si hubiera luz brillante, y en la oscuridad como si hubiera luz tenue. En esa oscuridad, solo disciernes los colores como tonos de gris."
 					]
 				}
 			],
 			"fluff": {
 				"entries": [
-					"Eladrin are elves of the Feywild, a realm of perilous beauty and boundless magic. Using that magic, eladrin can step from one place to another in the blink of an eye, and each eladrin resonates with emotions captured in the Feywild in the form of seasons—affinities that affect the eladrin's mood and appearance. An eladrin's season can change, though some remain in one season forever. Choose your season or roll on the Eladrin Seasons table. Your Trance trait lets you change your season.",
-					"Like other elves, eladrin can live to be over 750 years old.",
+					"Los eladrins son elfos de los Parajes Feéricos, un reino de peligrosa belleza y magia ilimitada. Con el empleo de esa magia, los eladrins pueden ir de un lugar a otro en un abrir y cerrar de ojos. Además, todos los eladrins están conectados a las emociones captadas en los Parajes Feéricos en forma de estaciones, afinidades que afectan al estado anímico y al aspecto del eladrin. La estación de un eladrin puede cambiar, aunque algunos permanecen en una misma para siempre. Elige tu estación o tira en la tabla \"Estaciones de los eladrins\". Tu atributo Trance te permite cambiar de estación. ",
+					"Al igual que otros elfos, los eladrins pueden llegar a vivir más de 750 años.",
 					{
 						"type": "table",
-						"caption": "Eladrin Seasons",
+						"caption": "Estaciones de los eladrins",
 						"colLabels": [
 							"d4",
-							"Season"
+							"Estación"
 						],
 						"colStyles": [
 							"col-2 text-center",
@@ -1865,19 +1865,19 @@
 						"rows": [
 							[
 								1,
-								"Autumn: peace and goodwill, when summer's harvest is shared with all."
+								"Otoño: paz y buena voluntad, cuando todo el mundo comparte la cosecha del verano."
 							],
 							[
 								2,
-								"Winter: contemplation and dolor, when the vibrant energy of the world slumbers."
+								"Invierno: contemplación y recogimiento, cuando la vibrante energía del mundo está adormecida."
 							],
 							[
 								3,
-								"Spring: cheerfulness and celebration, marked by merriment and hope as winter's sorrow passes."
+								"Primavera: entusiasmo y celebración, resaltados por a alegría y la esperanza al terminar la tristeza del invierno."
 							],
 							[
 								4,
-								"Summer: boldness and aggression, a time of unfettered energy and calls to action."
+								"Verano: valentía y agresividad, una época de energía desbordada y llamadas a la acción."
 							]
 						]
 					}
@@ -1894,10 +1894,10 @@
 			}
 		},
 		{
-			"name": "Fairy",
+			"name": "Hada",
 			"source": "MPMM-ES",
-			"page": 14,
-			"lineage": "VRGR",
+			"page": 21,
+			"lineage": "VRGR-ES",
 			"creatureTypes": [
 				"fey"
 			],
@@ -1914,14 +1914,14 @@
 						"3": {
 							"daily": {
 								"1": [
-									"faerie fire"
+									"fuego feérico|PHB-ES"
 								]
 							}
 						},
 						"5": {
 							"daily": {
 								"1": [
-									"enlarge/reduce"
+									"agrandar/reducir|PHB-ES"
 								]
 							}
 						}
@@ -1935,7 +1935,7 @@
 					},
 					"known": {
 						"1": [
-							"druidcraft#c"
+							"saber druídico|PHB-ES#c"
 						]
 					}
 				}
@@ -1943,37 +1943,37 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Creature Type",
+					"name": "Tipo de criatura",
 					"entries": [
-						"You are a Fey."
+						"Eres feérico."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Fairy Magic",
+					"name": "Magia de las Hadas",
 					"entries": [
-						"You know the {@spell druidcraft} cantrip. Starting at 3rd level, you can cast the {@spell faerie fire} spell with this trait. Starting at 5th level, you can also cast the {@spell enlarge/reduce} spell with this trait. Once you cast {@spell faerie fire} or {@spell enlarge/reduce} with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.",
-						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+						"Conoces el truco {@spell saber druídico|PHB-ES}. A partir del nivel 3, puedes lanzar el conjuro {@spell fuego feérico|PHB-ES} con este atributo. A partir del nivel 5, también puedes lanzar el conjuro {@spell agrandar/reducir|PHB-ES} con este atributo. Cuando lances {@spell fuego feérico|PHB-ES} o {@spell agrandar/reducir|PHB-ES} con este atributo, no podrás volver a lanzar ese conjuro con él hasta que finalices un descanso largo. También puedes lanzar cualquiera de esos conjuros usando espacios de conjuro que tengas del nivel apropiado.",
+						"La Inteligencia, la Sabiduría o el Carisma es tu aptitud mágica para lanzar estos conjuros con este atributo (elígela cuando selecciones esta raza)."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Flight",
+					"name": "Volar",
 					"entries": [
-						"Because of your wings, you have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor."
+						"Gracias a tus alas, tienes una velocidad volando igual a tu velocidad caminando. No puedes usar esta velocidad volando si llevas puesta una armadura media o pesada."
 					]
 				}
 			],
 			"fluff": {
 				"entries": [
-					"The Feywild is home to many fantastic peoples, including fairies. Fairies are a wee folk, but not nearly as much so as their pixie and sprite friends. The first fairies spoke Elvish, Goblin, or Sylvan, and encounters with human visitors prompted many of them to learn Common as well.",
-					"Infused with the magic of the Feywild, most fairies look like Small elves with insectile wings, but each fairy has a special physical characteristic that sets the fairy apart. For your fairy, roll on the Fey Characteristics table or choose an option from it. You're also free to come up with your own characteristic if none of the suggestions below fit your character.",
+					"Los Parajes Feéricos son el hogar de muchas criaturas fantásticas, como las hadas. Las hadas son un pueblo de tamaño minúsculo, pero no tanto como sus amigos pixies y duendes. Las primeras hadas hablaban elfo, goblin o silvano, pero sus encuentros con visitantes humanos llevaron a que muchas de ellas aprendieran también el común.",
+					"Imbuidas de la magia de los Parajes Feéricos, la mayoría de las hadas parecen elfos Pequeños con alas de insecto, pero cada una de ellas tiene una característica física que la diferencia del resto. Para tu hada, tira en la tabla \"Características feéricas\" o elige una opción de ella. También puedes idear tu propia característica personal si ninguna de las sugerencias siguientes encaja con tu personaje.",
 					{
 						"type": "table",
-						"caption": "Fey Characteristics",
+						"caption": "Características feéricas",
 						"colLabels": [
 							"d8",
-							"Characteristic"
+							"Característica"
 						],
 						"colStyles": [
 							"col-1 text-center",
@@ -1982,35 +1982,35 @@
 						"rows": [
 							[
 								"1",
-								"Your wings are like those of a bird."
+								"Tus alas son como las de un pájaro."
 							],
 							[
 								"2",
-								"You have shimmering, multicolored skin."
+								"Tienes una piel brillante y multicolor."
 							],
 							[
 								"3",
-								"You have exceptionally large ears."
+								"Posees unas orejas excepcionalmente grandes."
 							],
 							[
 								"4",
-								"A glittering mist constantly surrounds you."
+								"Siempre te rodea una niebla rutilante."
 							],
 							[
 								"5",
-								"You have a small spectral horn on your forehead, like a little unicorn horn."
+								"Tienes un pequeño cuerno espectral en la frente, como el de un unicornio."
 							],
 							[
 								"6",
-								"Your legs are insectile."
+								"Tus piernas son similares las de un insecto."
 							],
 							[
 								"7",
-								"You smell like fresh brownies."
+								"Emanas un olor a pastelitos recién horneados."
 							],
 							[
 								"8",
-								"A noticeable, harmless chill surrounds you."
+								"Te rodea un frío apreciable pero inofensivo."
 							]
 						]
 					}
@@ -2029,8 +2029,8 @@
 		{
 			"name": "Firbolg",
 			"source": "MPMM-ES",
-			"page": 15,
-			"lineage": "VRGR",
+			"page": 13,
+			"lineage": "VRGR-ES",
 			"size": [
 				"M"
 			],
@@ -2052,8 +2052,8 @@
 					},
 					"innate": {
 						"1": [
-							"detect magic",
-							"disguise self"
+							"detectar magia|PHB-ES",
+							"disfrazarse|PHB-ES"
 						]
 					}
 				}
@@ -2061,39 +2061,39 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Firbolg Magic",
+					"name": "Constitución Poderosa",
 					"entries": [
-						"You can cast {@spell detect magic} and {@spell disguise self} spells with this trait. When you use this version of {@spell disguise self}, you can seem up to 3 feet shorter or taller. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have.",
-						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+						"Cuentas como un tamaño mayor cuando determinas tu capacidad de carga y el peso que puedes empujar, arrastrar o levantar."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Hidden Step",
+					"name": "Habla de las Bestias y las Hojas",
 					"entries": [
-						"As a bonus action, you can magically turn {@condition invisible} until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+						"Tienes la capacidad de comunicarte de manera limitada con las bestias, las plantas y la vegetación. Estas pueden comprender el significado de tus palabras, aunque tú no tienes ninguna capacidad especial para comprenderlas a ellas. Tienes ventaja en todas las pruebas de Carisma que hagas para influir en ellas."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Powerful Build",
+					"name": "Magia Firbolg",
 					"entries": [
-						"You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+						"Puedes lanzar los conjuros {@spell detectar magia|PHB-ES} y {@spell disfrazarse|PHB-ES} con este atributo. Cuando uses esta versión de {@spell disfrazarse|PHB-ES}, puedes parecer hasta 3 pies más alto o más bajo. Cuando lances cualquiera de estos conjuros con este atributo, no podrás volver a lanzar ese conjuro con él hasta que finalices un descanso largo. También puedes lanzar estos conjuros usando cualquier espacio de conjuro que tengas.",
+						"La Inteligencia, la Sabiduría o el Carisma es tu aptitud mágica para lanzar estos conjuros con este atributo (elígela cuando selecciones esta raza)."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Speech of Beast and Leaf",
+					"name": "Paso Oculto",
 					"entries": [
-						"You have the ability to communicate in a limited manner with Beasts, Plants, and vegetation. They can understand the meaning of your words, though you have no special ability to understand them in return. You have advantage on all Charisma checks you make to influence them."
+						"Como acción adicional, puedes hacer que tanto tú como todo el equipo que vistas o lleves contigo os hagáis {@condition invisible|PHB-ES|invisibles} mágica mente hasta el principio de tu siguiente turno o hasta que ataques, hagas una tirada de daño u obligues a alguien a realizar una tirada de salvación. Puedes usar este atributo una cantidad de veces igual a tu bonificador por competencia y recuperas todos los usos tras finalizar un descanso largo."
 					]
 				}
 			],
 			"fluff": {
 				"entries": [
-					"Distant cousins of giants, the first firbolgs wandered the primeval forests of the multiverse, and the magic of those forests entwined itself with the firbolgs' souls. Centuries later, that magic still thrums inside a firbolg, even one who has never lived under the boughs of a great forest.",
-					"A firbolg's magic is an obscuring sort, which allowed their ancestors to pass through a forest without disturbing it. So deep is the connection between a firbolg and the wild places of the world that they can communicate with flora and fauna.",
-					"Firbolgs can live up to 500 years."
+					"Primos lejanos de los gigantes, los primeros firbolgs vagaban por los bosques primigenios del multiverso y la magia de estos lugares se entrelazó con sus almas. Siglos después, esa magia sigue vibrando en el interior de todo firbolg, incluso de aquellos que nunca han vivido bajo las ramas de un gran bosque.",
+					"La magia de un firbolg es de naturaleza ocultadora, lo que permitía a sus ancestros atravesar un bosque sin perturbarlo. Tan profunda es la conexión entre los espacios naturales del mundo y los firbolgs que estos se pueden comunicar con la flora y la fauna.",
+					"Los firbolgs pueden vivir hasta 500 años."
 				],
 				"images": [
 					{
@@ -2107,10 +2107,10 @@
 			}
 		},
 		{
-			"name": "Genasi",
+			"name": "Genasí",
 			"source": "MPMM-ES",
-			"page": 16,
-			"lineage": "VRGR",
+			"page": 14,
+			"lineage": "VRGR-ES",
 			"size": [
 				"S",
 				"M"
@@ -2123,23 +2123,23 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Size",
+					"name": "Tamaño",
 					"entries": [
-						"You are Medium or Small. You choose the size when you select this race."
+						"Eres Mediano o Pequeño. Eliges el tamaño cuando seleccionas esta raza."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Darkvision",
+					"name": "Visión en la Oscuridad",
 					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+						"Puedes ver con luz tenue a 60 pies o menos de ti como si hubiera luz brillante, y en la oscuridad como si hubiera luz tenue. En esa oscuridad, solo disciernes los colores como tonos de gris."
 					]
 				}
 			],
 			"fluff": {
 				"entries": [
-					"Tracing their ancestry to the genies of the Elemental Planes, each genasi can tap into the power of one of the elements. Air, earth, fire, and water—these are the four pillars of the Material Plane and the four types of genasi. Some genasi are direct descendants of a genie, while others were born to non-genasi parents who lived near a place suffused by a genie's magic.",
-					"A typical genasi has a life span of 120 years."
+					"Todos los genasíes, cuyo linaje se remonta hasta Jos genios de los Planos Elementales, pueden aprovechar el poder de uno de los elementos. Agua, aire, fuego y tierra: estos son los cuatro pilares del Plano Material y los cuatro tipos de genasíes. Algunos de ellos son descendientes directos de un genio, mientras que otros nacen de padres que no son genasíes, pero que vivían cerca de algún lugar imbuido de la magia de un genio.",
+					"Un genasí suele vivir 120 años."
 				],
 				"images": [
 					{
@@ -2155,8 +2155,8 @@
 		{
 			"name": "Githyanki",
 			"source": "MPMM-ES",
-			"page": 18,
-			"lineage": "VRGR",
+			"page": 16,
+			"lineage": "VRGR-ES",
 			"size": [
 				"M"
 			],
@@ -2183,14 +2183,14 @@
 						"3": {
 							"daily": {
 								"1": [
-									"jump"
+									"salto|PHB-ES"
 								]
 							}
 						},
 						"5": {
 							"daily": {
 								"1": [
-									"misty step"
+									"paso brumoso|PHB-ES"
 								]
 							}
 						}
@@ -2204,7 +2204,7 @@
 					},
 					"known": {
 						"1": [
-							"mage hand#c"
+							"mano de mago|PHB-ES#c"
 						]
 					}
 				}
@@ -2212,33 +2212,33 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Astral Knowledge",
+					"name": "Conocimiento Astral",
 					"entries": [
-						"You can mystically access a reservoir of experiences of entities connected to the Astral Plane. Whenever you finish a long rest, you gain proficiency in one skill of your choice and with one weapon or tool of your choice, selected from the Player's Handbook, as you momentarily project your consciousness into the Astral Plane. These proficiencies last until the end of your next long rest."
+						"Puedes acceder místicamente a un reservorio de experiencias de entidades conectadas al Plano Astral. Siempre que finalices un descanso largo, mientras proyectas momentáneamente tu consciencia en el Plano Astral, obtendrás competencia en una habilidad de tu elección y con un arma o herramienta de tu elección, seleccionadas del Manual del Jugador. Estas competencias duran hasta el final de tu siguiente descanso largo."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Githyanki Psionics",
+					"name": "Psiónica Githyanki",
 					"entries": [
-						"You know the {@spell mage hand} cantrip, and the hand is {@condition invisible} when you cast the cantrip with this trait.",
-						"Starting at 3rd level, you can cast the {@spell jump} spell with this trait. Starting at 5th level, you can also cast {@spell misty step} with it. Once you cast {@spell jump} or {@spell misty step} with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.",
-						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race). None of these spells require spell components when you cast them with this trait."
+						"Conoces el truco {@spell mano de mago|PHB-ES} y la mano es {@condition invisible|PHB-ES} cuando lanzas el truco con este atributo.",
+						"A partir del nivel 3, puedes lanzar el conjuro {@spell salto|PHB-ES} con este atributo. A partir del nivel 5, también puedes lanzar el conjuro {@spell paso brumoso|PHB-ES} con él. Cuando lances {@spell salto|PHB-ES} o {@spell paso brumoso|PHB-ES} con este atributo, no podrás volver a lanzar ese conjuro con él hasta que finalices un descanso largo. También puedes lanzar cualquiera de esos conjuros usando espacios de conjuro que tengas del nivel apropiado.",
+						"La Inteligencia, la Sabiduría o el Carisma es tu aptitud mágica para lanzar estos conjuros con este atributo (elígela cuando selecciones esta raza). Ninguno de estos conjuros requiere componentes de conjuros cuando los lanzas con este atributo."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Psychic Resilience",
+					"name": "Resistencia Psíquica",
 					"entries": [
-						"You have resistance to psychic damage."
+						"Tienes resistencia al daño psíquico."
 					]
 				}
 			],
 			"fluff": {
 				"entries": [
-					"Once members of a people who escaped servitude to mind flayers, githyanki split from their cousins, githzerai, and fled to the Astral Plane. In that timeless, silvery realm, githyanki honed their psionic powers and built a great city called Tu'narath. They have since spread throughout the multiverse, starting in outposts outside the Astral Plane, called creches, where time passes and their children can reach adulthood.",
-					"A lanky people with skin tones of yellows, greens, and browns, githyanki complement their physical prowess with psionic might, instilled in them by mind flayers and cultivated over eons in the Astral Plane. Now all githyanki can use their psychic bond with that plane to access splinters of knowledge left behind by beings who travel, live, and die among the silver astral clouds.",
-					"Githyanki who reside in the Astral Plane can live indefinitely."
+					"Antaño miembros de un mismo pueblo que escapó de la servidumbre a los azotamentes, los githyankis se separaron de sus primos, los githzerais, y huyeron al Plano Astral. En ese reino argénteo y atemporal, los githyankis perfeccionaron sus poderes psiónicos y construyeron una gran ciudad llamada Tu'narath. Desde entonces se han extendido por todo el multiverso, empezando por puestos de avanzada situados fuera del Plano Astral y llamados \"jardines de infancia\", en los que el tiempo pasa y sus hijos pueden hacerse adultos.",
+					"Larguiruchos y con tonos de piel amarillentos, verdes y marrones, los githyankis complementan su capacidad física con su fuerza psiónica, imbuida en ellos por los azota mentes y cultivada durante eones en el Plano Astral. Ahora todos los githyankis pueden usar su vínculo psíquico con ese plano para acceder a fragmentos de conocimiento dejados atrás por seres que viajan, viven y mueren entre las plateadas nubes astrales.",
+					"Los githyankis que residen en el Plano Astral pueden vivir indefinidamente."
 				],
 				"images": [
 					{
@@ -2254,8 +2254,8 @@
 		{
 			"name": "Githzerai",
 			"source": "MPMM-ES",
-			"page": 19,
-			"lineage": "VRGR",
+			"page": 17,
+			"lineage": "VRGR-ES",
 			"size": [
 				"M"
 			],
@@ -2269,14 +2269,14 @@
 						"3": {
 							"daily": {
 								"1": [
-									"shield"
+									"escudo|PHB-ES"
 								]
 							}
 						},
 						"5": {
 							"daily": {
 								"1": [
-									"detect thoughts"
+									"detectar pensamientos|PHB-ES"
 								]
 							}
 						}
@@ -2290,7 +2290,7 @@
 					},
 					"known": {
 						"1": [
-							"mage hand#c"
+							"mano de mago|PHB-ES#c"
 						]
 					}
 				}
@@ -2298,32 +2298,32 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Githzerai Psionics",
+					"name": "Disciplina Mental",
 					"entries": [
-						"You know the {@spell mage hand} cantrip, and the hand is {@condition invisible} when you cast the cantrip with this trait.",
-						"Starting at 3rd level, you can cast the {@spell shield} spell with this trait. Starting at 5th level, you can also cast the {@spell detect thoughts} spell with it. Once you cast {@spell shield} or {@spell detect thoughts} spell with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.",
-						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race). None of these spells require spell components when you cast them with this trait."
+						"Tus defensas psíquicas innatas te otorgan ventaja en las tiradas de salvación para evitar o poner fin a los estados de {@condition asustado|PHB-ES} o {@condition hechizado|PHB-ES} sobre ti mismo."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Mental Discipline",
+					"name": "Psiónica Githzerai",
 					"entries": [
-						"Your innate psychic defenses grant you advantage on saving throws you make to avoid or end the {@condition charmed} and {@condition frightened} conditions on yourself."
+						"Conoces el truco {@spell mano de mago|PHB-ES} y la mano es {@condition invisible|PHB-ES} cuando lanzas el truco con este atributo.",
+						"A partir del nivel 3, puedes lanzar el conjuro {@spell escudo|PHB-ES} con este atributo. A partir del nivel 5, también puedes lanzar el conjuro {@spell detectar pensamientos|PHB-ES} con él. Cuando lances {@spell escudo|PHB-ES} o {@spell detectar pensamientos|PHB-ES} con este atributo, no podrás volver a lanzar ese conjuro con él hasta que finalices un descanso largo. También puedes lanzar cualquiera de esos conjuros usando espacios de conjuro que tengas del nivel apropiado.",
+						"La Inteligencia, la Sabiduría o el Carisma es tu aptitud mágica para lanzar estos conjuros con este atributo (elígela cuando selecciones esta raza). Ninguno de estos conjuros requiere componentes de conjuros cuando los lanzas con este atributo."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Psychic Resilience",
+					"name": "Resistencia Psíquica",
 					"entries": [
-						"You have resistance to psychic damage."
+						"Tienes resistencia al daño psíquico."
 					]
 				}
 			],
 			"fluff": {
 				"entries": [
-					"Githzerai migrated to the Everchanging Chaos of Limbo after the ancient schism that split their ancestors from their cousins, githyanki. Limbo is a roiling maelstrom of matter and energy, collapsing and reforming without purpose or direction, until a creature exerts deliberate will to stabilize it. Through their potent psionic power, githzerai carved a home for themselves amid the chaos. As the ages passed, githzerai explorers ranged out to other planes and worlds of the multiverse.",
-					"Githzerai are generally slender, with speckled skin in shades of yellow, green, or brown. Eons of cultivating their mental powers within the endless chaos of Limbo have imbued githzerai with the ability to shape psionic energy to protect themselves and probe minds."
+					"Los githzerais migraron al Caos en Perpetua Mutación de Limbo tras el cisma que dividió a sus ancestros de sus primos, los githyankis. Limbo es una agitada vorágine de materia y energía que se colapsa y cambia de forma sin finalidad ni dirección, hasta que una criatura impone su voluntad deliberadamente para estabilizarla. Mediante su potente poder psiónico, los githzerais se labraron un hogar entre el caos. Con el paso de los siglos, los exploradores githzerais se aventuraron a otros planos y mundos del multiverso.",
+					"Generalmente, los githzerais son esbeltos y poseen pieles moteadas con tonos de amarillo, verde o marrón. Eones de cultivar sus poderes mentales en el caos infinito de Limbo han otorgado a los githzerais la capacidad de moldear la energía psiónica para protegerse a sí mismos y sondear las mentes."
 				],
 				"images": [
 					{
@@ -2339,8 +2339,8 @@
 		{
 			"name": "Goblin",
 			"source": "MPMM-ES",
-			"page": 20,
-			"lineage": "VRGR",
+			"page": 19,
+			"lineage": "VRGR-ES",
 			"creatureTypes": [
 				"humanoid"
 			],
@@ -2355,44 +2355,44 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Creature Type",
+					"name": "Tipo de criatura",
 					"entries": [
-						"You are a Humanoid. You are also considered a goblinoid for any prerequisite or effect that requires you to be a goblinoid."
+						"Eres humanoide. También se te considera trasgo para cualquier requisito o efecto que requiera que seas trasgo."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Darkvision",
+					"name": "Furia de los Pequeños",
 					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were in dim light. You discern colors in that darkness only as shades of gray."
+						"Cuando inflijas daño a una criatura con un ataque o un conjuro y el tamaño de esa criatura sea mayor que el tuyo, podrás hacer que el ataque o el conjuro inflija daño adicional a la criatura. Este daño adicional es igual a tu bonificador por competencia.",
+						"Puedes usar este atributo una cantidad de veces igual a tu bonificador por competencia, no puedes usarlo más de una vez por turno y recuperas todos los usos tras finalizar un descanso largo."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Fey Ancestry",
+					"name": "Huida Veloz",
 					"entries": [
-						"You have advantage on saving throws you make to avoid or end the {@condition charmed} condition on yourself."
+						"En cada uno de tus turnos, puedes usar las acciones de {@action Destrabarse|PHB-ES} o {@action Esconderse|PHB-ES} como acción adicional."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Fury of the Small",
+					"name": "Linaje Feérico",
 					"entries": [
-						"When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals your proficiency bonus.",
-						"You can use this trait a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest, and you can use it no more than once per turn."
+						"Tienes ventaja en las tiradas de salvación para evitar o poner fin al estado de {@condition hechizado|PHB-ES} sobre ti mismo."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Nimble Escape",
+					"name": "Visión en la Oscuridad",
 					"entries": [
-						"You can take the {@action Disengage} or {@action Hide} action as a bonus action on each of your turns."
+						"Puedes ver con luz tenue a 60 pies o menos de ti como si hubiera luz brillante, y en la oscuridad como si hubiera luz tenue. En esa oscuridad, solo disciernes los colores como tonos de gris."
 					]
 				}
 			],
 			"fluff": {
 				"entries": [
-					"A subterranean folk, goblins can be found in every corner of the multiverse, often beside their bugbear and hobgoblin kin. Long before the god Maglubiyet conquered them, early goblins served in the court of the Queen of Air and Darkness, one of the Feywild's archfey. Goblins thrived in her dangerous domain thanks to a special boon from her—a supernatural knack for finding the weak spots in foes larger than themselves and for getting out of trouble. Goblins brought this fey boon with them to worlds across the Material Plane, even if they don't remember the fey realm they inhabited before Maglubiyet's rise. Now many goblins pursue their own destinies, escaping the plots of both archfey and gods."
+					"Los goblins son un pueblo subterráneo que se encuentra en todos los rincones del multiverso, a menudo junto a sus parientes, los hobgoblins y los osgos. Mucho antes de que el dios Maglubiyet los conquistara, los primeros goblins servían en la corte de la Reina del Aire y la Oscuridad, una de los grandes señores de los Parajes Feéricos. Los goblins prosperaron en el peligroso dominio de su reina gracias a una dádiva especial que recibieron de ella: un don sobrenatural para encontrar los puntos débiles en enemigos más grandes que ellos y para escabullirse de los problemas. Los goblins han llevado consigo este don feérico a mundos de todo el Plano Material, incluso si no recuerdan el reino feérico en el que habitaban antes del ascenso de Maglubiyet. Ahora muchos goblins persiguen sus propios destinos y huyen de las maquinaciones tanto de los señores feéricos como de los dioses."
 				],
 				"images": [
 					{
@@ -2409,7 +2409,7 @@
 			"name": "Goliath",
 			"source": "MPMM-ES",
 			"page": 21,
-			"lineage": "VRGR",
+			"lineage": "VRGR-ES",
 			"size": [
 				"M"
 			],
@@ -2468,7 +2468,7 @@
 			"name": "Harengon",
 			"source": "MPMM-ES",
 			"page": 22,
-			"lineage": "VRGR",
+			"lineage": "VRGR-ES",
 			"size": [
 				"S",
 				"M"
@@ -2536,7 +2536,7 @@
 			"name": "Hobgoblin",
 			"source": "MPMM-ES",
 			"page": 23,
-			"lineage": "VRGR",
+			"lineage": "VRGR-ES",
 			"creatureTypes": [
 				"humanoid"
 			],
@@ -2628,7 +2628,7 @@
 			"name": "Kenku",
 			"source": "MPMM-ES",
 			"page": 24,
-			"lineage": "VRGR",
+			"lineage": "VRGR-ES",
 			"size": [
 				"S",
 				"M"
@@ -2690,7 +2690,7 @@
 			"name": "Kobold",
 			"source": "MPMM-ES",
 			"page": 25,
-			"lineage": "VRGR",
+			"lineage": "VRGR-ES",
 			"size": [
 				"S"
 			],
@@ -2845,7 +2845,7 @@
 			"name": "Lizardfolk",
 			"source": "MPMM-ES",
 			"page": 26,
-			"lineage": "VRGR",
+			"lineage": "VRGR-ES",
 			"size": [
 				"M"
 			],
@@ -2936,7 +2936,7 @@
 			"name": "Minotaur",
 			"source": "MPMM-ES",
 			"page": 27,
-			"lineage": "VRGR",
+			"lineage": "VRGR-ES",
 			"size": [
 				"M"
 			],
@@ -2995,7 +2995,7 @@
 			"name": "Orc",
 			"source": "MPMM-ES",
 			"page": 28,
-			"lineage": "VRGR",
+			"lineage": "VRGR-ES",
 			"size": [
 				"M"
 			],
@@ -3055,7 +3055,7 @@
 			"name": "Satyr",
 			"source": "MPMM-ES",
 			"page": 29,
-			"lineage": "VRGR",
+			"lineage": "VRGR-ES",
 			"creatureTypes": [
 				"fey"
 			],
@@ -3134,7 +3134,7 @@
 			"name": "Sea Elf",
 			"source": "MPMM-ES",
 			"page": 30,
-			"lineage": "VRGR",
+			"lineage": "VRGR-ES",
 			"creatureTypes": [
 				"humanoid"
 			],
@@ -3245,7 +3245,7 @@
 			"name": "Shadar-Kai",
 			"source": "MPMM-ES",
 			"page": 31,
-			"lineage": "VRGR",
+			"lineage": "VRGR-ES",
 			"creatureTypes": [
 				"humanoid"
 			],
@@ -3348,7 +3348,7 @@
 			"name": "Shifter",
 			"source": "MPMM-ES",
 			"page": 32,
-			"lineage": "VRGR",
+			"lineage": "VRGR-ES",
 			"size": [
 				"M"
 			],
@@ -3557,7 +3557,7 @@
 			"name": "Tabaxi",
 			"source": "MPMM-ES",
 			"page": 33,
-			"lineage": "VRGR",
+			"lineage": "VRGR-ES",
 			"size": [
 				"S",
 				"M"
@@ -3640,7 +3640,7 @@
 			"name": "Tortle",
 			"source": "MPMM-ES",
 			"page": 34,
-			"lineage": "VRGR",
+			"lineage": "VRGR-ES",
 			"size": [
 				"S",
 				"M"
@@ -3728,7 +3728,7 @@
 			"name": "Triton",
 			"source": "MPMM-ES",
 			"page": 35,
-			"lineage": "VRGR",
+			"lineage": "VRGR-ES",
 			"size": [
 				"M"
 			],
@@ -3842,7 +3842,7 @@
 			"name": "Yuan-Ti",
 			"source": "MPMM-ES",
 			"page": 36,
-			"lineage": "VRGR",
+			"lineage": "VRGR-ES",
 			"size": [
 				"S",
 				"M"
@@ -9262,7 +9262,7 @@
 			"name": "Dhampir",
 			"source": "VRGR-ES",
 			"page": 16,
-			"lineage": "VRGR",
+			"lineage": "VRGR-ES",
 			"size": [
 				"S",
 				"M"
@@ -9448,7 +9448,7 @@
 			"name": "Hexblood",
 			"source": "VRGR-ES",
 			"page": 18,
-			"lineage": "VRGR",
+			"lineage": "VRGR-ES",
 			"creatureTypes": [
 				"fey"
 			],
@@ -9622,7 +9622,7 @@
 			"name": "Reborn",
 			"source": "VRGR-ES",
 			"page": 20,
-			"lineage": "VRGR",
+			"lineage": "VRGR-ES",
 			"size": [
 				"S",
 				"M"
@@ -9789,10 +9789,10 @@
 			}
 		},
 		{
-			"name": "Dragonborn (Chromatic)",
+			"name": "Dracónido (Cromático)",
 			"source": "FTD-ES",
 			"page": 10,
-			"lineage": "VRGR",
+			"lineage": "VRGR-ES",
 			"size": [
 				"M"
 			],
@@ -9813,15 +9813,15 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Chromatic Ancestry",
+					"name": "Linaje Cromático",
 					"entries": [
-						"You have a chromatic dragon ancestor, granting you a special magical affinity. Choose one kind of dragon from the Chromatic Ancestry table. This determines the damage type for your other traits, as shown in the table.",
+						"Tienes un ancestro dragón cromático, lo que te otorga una afinidad mágica especial. Elige un tipo de dragón de la tabla \"Linaje cromático\", que determinará el tipo de daño de tus otros atributos tal y como se muestra en la tabla.",
 						{
 							"type": "table",
-							"caption": "Chromatic Ancestry",
+							"caption": "Linaje Cromático",
 							"colLabels": [
-								"Dragon",
-								"Damage Type"
+								"Dragón",
+								"Tipo de daño"
 							],
 							"colStyles": [
 								"col-6 text-center",
@@ -9829,24 +9829,24 @@
 							],
 							"rows": [
 								[
-									"Black",
-									"Acid"
+									"Azul",
+									"Relámpago"
 								],
 								[
-									"Blue",
-									"Lightning"
+									"Blanco",
+									"Frío"
 								],
 								[
-									"Green",
-									"Poison"
+									"Negro",
+									"Ácido"
 								],
 								[
-									"Red",
-									"Fire"
+									"Rojo",
+									"Fuego"
 								],
 								[
-									"White",
-									"Cold"
+									"Verde",
+									"Veneno"
 								]
 							]
 						}
@@ -9854,58 +9854,69 @@
 				},
 				{
 					"type": "entries",
-					"name": "Breath Weapon",
+					"name": "Ataque de Aliento",
 					"entries": [
-						"When you take the {@action Attack} action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 30-foot line that is 5 feet wide. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes {@damage 1d10} damage of the type associated with your Chromatic Ancestry. On a successful save, it takes half as much damage. This damage increases by {@dice 1d10} when you reach 5th level ({@dice 2d10}), 11th level ({@dice 3d10}), and 17th level ({@dice 4d10}).",
-						"You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+						"Cuando realizas la acción de {@action Atacar|PHB-ES} en tu turno, puedes sustituir uno de tus ataques por una exhalación de energía mágica en una línea de 30 pies de largo y 5 pies de ancho. Todas las criaturas situadas en esa zona deberán hacer una tirada de salvación de Destreza (CD8 + tu modificador por Constitución + tu bonificador por competencia). Si la fallan, recibirán {@damage 1d10} del tipo de daño asociado a tu Linaje Cromático. Si la superan, recibirán la mitad de daño. Este daño aumenta en {@dice 1d10} cuando alcanzas el nivel 5 ({@dice 2d10}), el nivel 11 ({@dice 3d10}) y el nivel 17 ({@dice 4d10}).",
+						"Puedes usar tu Ataque de Aliento una cantidad de veces igual a tu bonificador por competencia y recuperas todos los usos tras finalizar un descanso largo."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Draconic Resistance",
+					"name": "Resiliencia Dracónica",
 					"entries": [
-						"You have resistance to the damage type associated with your Chromatic Ancestry."
+						"Posees resistencia al tipo de daño asociado a tu Linaje Cromático."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Chromatic Warding",
+					"name": "Protección Cromática",
 					"entries": [
-						"Starting at 5th level, as an action, you can channel your draconic energy to protect yourself. For 1 minute, you become immune to the damage type associated with your Chromatic Ancestry. Once you use this trait, you can't do so again until you finish a long rest."
+						"A partir del nivel 5, como acción, canalizas tu energía dracónica para protegerte. Durante 1 minuto, te vuelves inmune al tipo de daño asociado a tu Linaje Cromático. Cuando uses este atributo, no podrás volver a hacerlo hasta que finalices un descanso largo."
 					]
 				}
 			],
 			"_versions": [
 				{
 					"_template": {
-						"name": "Dragonborn (Chromatic; {{color}})",
-						"source": "FTD",
+						"name": "Dracónido (Cromático; {{color}})",
+						"source": "FTD-ES",
 						"_mod": {
 							"entries": [
 								{
 									"mode": "removeArr",
-									"names": "Chromatic Ancestry"
+									"names": "Linaje Cromático"
 								},
 								{
 									"mode": "replaceArr",
-									"replace": "Breath Weapon",
+									"replace": "Ataque de Aliento",
 									"items": {
 										"type": "entries",
-										"name": "Breath Weapon",
+										"name": "Ataque de Aliento",
 										"entries": [
-											"When you take the {@action Attack} action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 30-foot line that is 5 feet wide. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes {@damage 1d10} {{damageType}} damage. On a successful save, it takes half as much damage. This damage increases by {@dice 1d10} when you reach 5th level ({@dice 2d10}), 11th level ({@dice 3d10}), and 17th level ({@dice 4d10}).",
-											"You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+											"Cuando realizas la acción de {@action Atacar|PHB-ES} en tu turno, puedes sustituir uno de tus ataques por una exhalación de energía mágica en una línea de 30 pies de largo y 5 pies de ancho. Todas las criaturas situadas en esa zona deberán hacer una tirada de salvación de Destreza (CD8 + tu modificador por Constitución + tu bonificador por competencia). Si la fallan, recibirán {@damage 1d10} de daño {{damageType}}. Si la superan, recibirán la mitad de daño. Este daño aumenta en {@dice 1d10} cuando alcanzas el nivel 5 ({@dice 2d10}), el nivel 11 ({@dice 3d10}) y el nivel 17 ({@dice 4d10}).",
+											"Puedes usar tu Ataque de Aliento una cantidad de veces igual a tu bonificador por competencia y recuperas todos los usos tras finalizar un descanso largo."
 										]
 									}
 								},
 								{
 									"mode": "replaceArr",
-									"replace": "Draconic Resistance",
+									"replace": "Resiliencia Dracónica",
 									"items": {
 										"type": "entries",
-										"name": "Draconic Resistance",
+										"name": "Resiliencia Dracónica",
 										"entries": [
-											"You have resistance to {{damageType}} damage."
+											"Posees resistencia al daño de {{damageType}}."
+										]
+									}
+								},
+								{
+									"mode": "replaceArr",
+									"replace": "Protección Cromática",
+									"items": {
+										"type": "entries",
+										"name": "Protección Cromática",
+										"entries": [
+											"A partir del nivel 5, como acción, canalizas tu energía dracónica para protegerte. Durante 1 minuto, te vuelves inmune daño de {{damageType}}. Cuando uses este atributo, no podrás volver a hacerlo hasta que finalices un descanso largo."
 										]
 									}
 								}
@@ -9915,31 +9926,31 @@
 					"_implementations": [
 						{
 							"_variables": {
-								"color": "Black",
+								"color": "Negro",
 								"damageType": "acid"
 							}
 						},
 						{
 							"_variables": {
-								"color": "Blue",
+								"color": "Azul",
 								"damageType": "lightning"
 							}
 						},
 						{
 							"_variables": {
-								"color": "Green",
+								"color": "Verde",
 								"damageType": "poison"
 							}
 						},
 						{
 							"_variables": {
-								"color": "Red",
+								"color": "Rojo",
 								"damageType": "fire"
 							}
 						},
 						{
 							"_variables": {
-								"color": "White",
+								"color": "Blanco",
 								"damageType": "cold"
 							}
 						}
@@ -9948,7 +9959,7 @@
 			],
 			"fluff": {
 				"entries": [
-					"Dragonborn with chromatic ancestry claim the raw elemental power of chromatic dragons. The vibrant colors of black, blue, green, red, and white dragons gleam in those dragonborn's scaled skin and in the deadly energy of their breath weapons. Theirs is the raw elemental fury of the volcano, of biting arctic winds, and of raging lightning storms, as well as the subtle whisper of swamp and forest, toxic and corrosive."
+					"Los dracónidos con linaje cromático se atribuyen el poder elemental puro de los dragones cromáticos. Los colores vivos de los dragones azules, blancos, negros, rojos y verdes resplandecen en la piel escamosa de estos dracónidos y en la energía letal de sus ataques de aliento. Suya es la violencia elemental pura de los volcanes, de los vientos árticos cortantes y de las rugientes tormentas eléctricas, además del susurro sutil de las ciénagas y bosques, tóxicos y corrosivos al mismo tiempo."
 				],
 				"images": [
 					{
@@ -9957,16 +9968,16 @@
 							"type": "internal",
 							"path": "races/FTD/Chromatic Dragonborn.webp"
 						},
-						"title": "A red dragonborn sell-sword waits for a client"
+						"title": "Una mercenaria dracónida roja espera a un cliente"
 					}
 				]
 			}
 		},
 		{
-			"name": "Dragonborn (Gem)",
+			"name": "Dracónido (Gema)",
 			"source": "FTD-ES",
 			"page": 11,
-			"lineage": "VRGR",
+			"lineage": "VRGR-ES",
 			"size": [
 				"M"
 			],
@@ -9987,15 +9998,15 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Gem Ancestry",
+					"name": "Linaje de Gema",
 					"entries": [
-						"You have a gem dragon ancestor, granting you a special magical affinity. Choose one kind of dragon from the Gem Ancestry table. This determines the damage type for your other traits, as shown in the table.",
+						"Tienes un ancestro dragón gema, lo que te otorga una afinidad mágica especial. Elige un tipo de dragón de la tabla \"Linaje de gema\", que determinará el tipo de daño de tus otros atributos tal y como se muestra en la tabla.",
 						{
 							"type": "table",
-							"caption": "Gem Ancestry",
+							"caption": "Linaje de Gema",
 							"colLabels": [
-								"Dragon",
-								"Damage Type"
+								"Dragón",
+								"Tipo de daño"
 							],
 							"colStyles": [
 								"col-6 text-center",
@@ -10003,24 +10014,24 @@
 							],
 							"rows": [
 								[
-									"Amethyst",
-									"Force"
+									"Amatista",
+									"Fuerza"
 								],
 								[
-									"Crystal",
-									"Radiant"
+									"Cristal",
+									"Radiante"
 								],
 								[
-									"Emerald",
-									"Psychic"
+									"Esmeralda",
+									"Psíquico"
 								],
 								[
-									"Sapphire",
-									"Thunder"
+									"Topacio",
+									"Necrótico"
 								],
 								[
-									"Topaz",
-									"Necrotic"
+									"Zafiro",
+									"Trueno"
 								]
 							]
 						}
@@ -10028,65 +10039,65 @@
 				},
 				{
 					"type": "entries",
-					"name": "Breath Weapon",
+					"name": "Ataque de Aliento",
 					"entries": [
-						"When you take the {@action Attack} action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 15-foot cone. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes {@damage 1d10} damage of the type associated with your Gem Ancestry. On a successful save, it takes half as much damage. This damage increases by {@dice 1d10} when you reach 5th level ({@dice 2d10}), 11th level ({@dice 3d10}), and 17th level ({@dice 4d10}).",
-						"You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+						"Cuando realizas la acción de {@action Atacar|PHB-ES} en tu turno, puedes sustituir uno de tus ataques por una exhalación de energía mágica en un cono de 15 pies. Todas las criaturas situadas en esa zona deberán hacer una tirada de salvación de Destreza (CD = 8 + tu modificador por Constitución + tu bonificador por competencia). Si la fallan, recibirán {@damage 1d10} del tipo de daño asociado a tu Linaje de Gema. Si la superan, recibirán la mitad de daño. Este daño aumenta en {@dice 1d10} cuando alcanzas el nivel 5 ({@dice 2d10}), el nivel 11 ({@dice 3d10}) y el nivel 17 ({@dice 4d10}).",
+						"Puedes usar tu Ataque de Aliento una cantidad de veces igual a tu bonificador por competencia y recuperas todos los usos tras finalizar un descanso largo."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Draconic Resistance",
+					"name": "Resiliencia Dracónica",
 					"entries": [
-						"You have resistance to the damage type associated with your Gem Ancestry."
+						"Posees resistencia al tipo de daño asociado a tu Linaje de Gema."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Psionic Mind",
+					"name": "Mente Psiónica",
 					"entries": [
-						"You can send telepathic messages to any creature you can see within 30 feet of you. You don't need to share a language with the creature for it to understand these messages, but it must be able to understand at least one language to comprehend them."
+						"Puedes mandar mensajes telepáticos a cualquier criatura que puedas ver a 30 pies o menos de ti. No tienes que hablar un idioma en común con la criatura para que entienda estos mensajes, pero debe ser capaz de entender al menos un idioma para comprenderlos."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Gem Flight",
+					"name": "Vuelo de Gema",
 					"entries": [
-						"Starting at 5th level, you can use a bonus action to manifest spectral wings on your body. These wings last for 1 minute. For the duration, you gain a flying speed equal to your walking speed and can hover. Once you use this trait, you can't do so again until you finish a long rest."
+						"A partir del nivel 5, puedes utilizar una acción adicional para manifestar unas alas espectrales en tu cuerpo. Estas alas duran 1 minuto. Durante este tiempo, obtienes una velocidad volando igual a tu velocidad caminando y puedes levitar. Cuando uses este atributo, no podrás volver a hacerlo hasta que finalices un descanso largo."
 					]
 				}
 			],
 			"_versions": [
 				{
 					"_template": {
-						"name": "Dragonborn (Gem; {{color}})",
-						"source": "FTD",
+						"name": "Dracónido (Gema; {{color}})",
+						"source": "FTD-ES",
 						"_mod": {
 							"entries": [
 								{
 									"mode": "removeArr",
-									"names": "Gem Ancestry"
+									"names": "Linaje de Gema"
 								},
 								{
 									"mode": "replaceArr",
-									"replace": "Breath Weapon",
+									"replace": "Ataque de Aliento",
 									"items": {
 										"type": "entries",
-										"name": "Breath Weapon",
+										"name": "Ataque de Aliento",
 										"entries": [
-											"When you take the {@action Attack} action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 15-foot cone. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes {@damage 1d10} {{damageType}} damage. On a successful save, it takes half as much damage. This damage increases by {@dice 1d10} when you reach 5th level ({@dice 2d10}), 11th level ({@dice 3d10}), and 17th level ({@dice 4d10}).",
-											"You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+											"Cuando realizas la acción de {@action Atacar|PHB-ES} en tu turno, puedes sustituir uno de tus ataques por una exhalación de energía mágica en un cono de 15 pies. Todas las criaturas situadas en esa zona deberán hacer una tirada de salvación de Destreza (CD = 8 + tu modificador por Constitución + tu bonificador por competencia). Si la fallan, recibirán {@damage 1d10} del daño de {{damageType}}. Si la superan, recibirán la mitad de daño. Este daño aumenta en {@dice 1d10} cuando alcanzas el nivel 5 ({@dice 2d10}), el nivel 11 ({@dice 3d10}) y el nivel 17 ({@dice 4d10}).",
+											"Puedes usar tu Ataque de Aliento una cantidad de veces igual a tu bonificador por competencia y recuperas todos los usos tras finalizar un descanso largo."
 										]
 									}
 								},
 								{
 									"mode": "replaceArr",
-									"replace": "Draconic Resistance",
+									"replace": "Resiliencia Dracónica",
 									"items": {
 										"type": "entries",
-										"name": "Draconic Resistance",
+										"name": "Resiliencia Dracónica",
 										"entries": [
-											"You have resistance to {{damageType}} damage."
+											"Posees resistencia al daño de {{damageType}}."
 										]
 									}
 								}
@@ -10096,7 +10107,7 @@
 					"_implementations": [
 						{
 							"_variables": {
-								"color": "Amethyst",
+								"color": "Amatista",
 								"damageType": "force"
 							},
 							"resist": [
@@ -10105,7 +10116,7 @@
 						},
 						{
 							"_variables": {
-								"color": "Crystal",
+								"color": "Cristal",
 								"damageType": "radiant"
 							},
 							"resist": [
@@ -10114,7 +10125,7 @@
 						},
 						{
 							"_variables": {
-								"color": "Emerald",
+								"color": "Esmeralda",
 								"damageType": "psychic"
 							},
 							"resist": [
@@ -10123,7 +10134,7 @@
 						},
 						{
 							"_variables": {
-								"color": "Sapphire",
+								"color": "Zafiro",
 								"damageType": "thunder"
 							},
 							"resist": [
@@ -10132,7 +10143,7 @@
 						},
 						{
 							"_variables": {
-								"color": "Topaz",
+								"color": "Topacio",
 								"damageType": "necrotic"
 							},
 							"resist": [
@@ -10144,7 +10155,7 @@
 			],
 			"fluff": {
 				"entries": [
-					"Gem dragonborn partake of the heritage of gem dragons, who claim to be heirs of Sardior, the Ruby Dragon. The colors and mysterious powers of gem dragons—amethyst, crystal, emerald, sapphire, and topaz—gleam in these dragonborn's scaled skin and course through their veins. Theirs are the wonders of the mind, the force of will, the brilliant light of insight, and the resounding echo of discovery—but also the desiccation of despair."
+					"Los dracónidos gema comparten el acervo de los dragones gema, que aseguran ser los herederos de Sardior, el Dragón de Rubí. Los colores y los poderes misteriosos de los dragones gema (de amatista, cristal, esmeralda, topacio y zafiro) resplandecen en la piel escamosa de estos dracónidos y fluyen por sus venas. Suyas son las maravillas de la mente, la fuerza de voluntad, la luz brillante de la perspicacia y el eco retumbante del descubrimiento, pero también la desecación de la desesperación."
 				],
 				"images": [
 					{
@@ -10153,16 +10164,16 @@
 							"type": "internal",
 							"path": "races/FTD/Gem Dragonborn.webp"
 						},
-						"title": "Sapphire, amethyst, and emerald dragonborn share stories around the fire"
+						"title": "Unos dracónidos de zafiro, amatista y esmeralda comparten historias alrededor del fuego"
 					}
 				]
 			}
 		},
 		{
-			"name": "Dragonborn (Metallic)",
+			"name": "Dracónido (Metálico)",
 			"source": "FTD-ES",
 			"page": 12,
-			"lineage": "VRGR",
+			"lineage": "VRGR-ES",
 			"size": [
 				"M"
 			],
@@ -10182,15 +10193,15 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Metallic Ancestry",
+					"name": "Linaje Metálico",
 					"entries": [
-						"You have a metallic dragon ancestor, granting you a special magical affinity. Choose one kind of dragon from the Metallic Ancestry table. This determines the damage type for your other traits, as shown in the table.",
+						"Tienes un ancestro dragón metálico, lo que te otorga una afinidad mágica especial. Elige un tipo de dragón de la tabla \"Linaje metálico\", que determinará el tipo de daño de tus otros atributos tal y como se muestra en la tabla.",
 						{
 							"type": "table",
-							"caption": "Metallic Ancestry",
+							"caption": "Linaje Metálico",
 							"colLabels": [
-								"Dragon",
-								"Damage Type"
+								"Dragón",
+								"Tipo de daño"
 							],
 							"colStyles": [
 								"col-6 text-center",
@@ -10198,24 +10209,24 @@
 							],
 							"rows": [
 								[
-									"Brass",
-									"Fire"
+									"Bronce",
+									"Relámpago"
 								],
 								[
-									"Bronze",
-									"Lightning"
+									"Cobre",
+									"Ácido"
 								],
 								[
-									"Copper",
-									"Acid"
+									"Oropel",
+									"Fuego"
 								],
 								[
-									"Gold",
-									"Fire"
+									"Oro",
+									"Fuego"
 								],
 								[
-									"Silver",
-									"Cold"
+									"Plata",
+									"Frío"
 								]
 							]
 						}
@@ -10223,79 +10234,79 @@
 				},
 				{
 					"type": "entries",
-					"name": "Breath Weapon",
+					"name": "Ataque de Aliento",
 					"entries": [
-						"When you take the {@action Attack} action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 15-foot cone. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes {@damage 1d10} damage of the type associated with your Metallic Ancestry. On a successful save, it takes half as much damage. This damage increases by {@dice 1d10} when you reach 5th level ({@dice 2d10}), 11th level ({@dice 3d10}), and 17th level ({@dice 4d10}).",
-						"You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+						"Cuando realizas la acción de {@action Atacar|PHB-ES} en tu turno, puedes sustituir uno de tus ataques por una exhalación de energía mágica en un cono de 15 pies. Todas las criaturas situadas en esa zona deberán hacer una tirada de salvación de Destreza (CD = 8 + tu modificador por Constitución + tu bonificador por competencia). Si la fallan, recibirán {@damage 1d10} del tipo de daño asociado a tu Linaje Metálico. Si la superan, recibirán la mitad de daño. Este daño aumenta en {@dice 1d10} cuando alcanzas el nivel 5 ({@dice 2d10}), el nivel 11 ({@dice 3d10}) y el nivel 17 ({@dice 4d10}).",
+						"Puedes usar tu Ataque de Aliento una cantidad de veces igual a tu bonificador por competencia y recuperas todos los usos tras finalizar un descanso largo."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Draconic Resistance",
+					"name": "Resiliencia Dracónica",
 					"entries": [
-						"You have resistance to the damage type associated with your Metallic Ancestry."
+						"Posees resistencia al tipo de daño asociado a tu Linaje Metálico."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Metallic Breath Weapon",
+					"name": "Ataque de Aliento Metálico",
 					"entries": [
-						"At 5th level, you gain a second breath weapon. When you take the {@action Attack} action on your turn, you can replace one of your attacks with an exhalation in a 15-foot cone. The save DC for this breath is 8 + your Constitution modifier + your proficiency bonus. Whenever you use this trait, choose one:",
+						"A nivel 5, obtienes un segundo ataque de aliento. Cuando realizas la acción de {@action Atacar|PHB-ES} en tu turno, puedes sustituir uno de tus ataques por una exhalación en un cono de 15 pies. La CD de salvación para este aliento es 8 + tu modificador por Constitución + tu bonificador por competencia. Al usar este atributo, elige uno:",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
 							"items": [
 								{
 									"type": "item",
-									"name": "Enervating Breath",
+									"name": "Aliento enervador",
 									"entries": [
-										"Each creature in the cone must succeed on a Constitution saving throw or become {@condition incapacitated} until the start of your next turn."
+										"Todas las criaturas situadas en el cono deberán superar una tirada de salvación de Constitución o quedarán {@condition incapacitado|PHB-ES|incapacitadas} hasta el principio de tu siguiente turno."
 									]
 								},
 								{
 									"type": "item",
-									"name": "Repulsion Breath",
+									"name": "Aliento repulsor",
 									"entries": [
-										"Each creature in the cone must succeed on a Strength saving throw or be pushed 20 feet away from you and be knocked {@condition prone}."
+										"Todas las criaturas situadas en el cono deberán superar una tirada de salvación de Fuerza o serán empujadas 20 pies respecto a ti y serán {@condition derribado|PHB-ES|derribadas}."
 									]
 								}
 							]
 						},
-						"Once you use your Metallic Breath Weapon, you can't do so again until you finish a long rest."
+						"Cuando uses tu Ataque de Aliento Metálico, no podrás volver a hacerlo hasta que finalices un descanso largo."
 					]
 				}
 			],
 			"_versions": [
 				{
 					"_template": {
-						"name": "Dragonborn (Metallic; {{color}})",
-						"source": "FTD",
+						"name": "Dracónido (Metálico; {{color}})",
+						"source": "FTD-ES",
 						"_mod": {
 							"entries": [
 								{
 									"mode": "removeArr",
-									"names": "Metallic Ancestry"
+									"names": "Linaje Metálico"
 								},
 								{
 									"mode": "replaceArr",
-									"replace": "Breath Weapon",
+									"replace": "Ataque de Aliento",
 									"items": {
 										"type": "entries",
-										"name": "Breath Weapon",
+										"name": "Ataque de Aliento",
 										"entries": [
-											"When you take the {@action Attack} action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 15-foot cone. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes {@damage 1d10} {{damageType}} damage. On a successful save, it takes half as much damage. This damage increases by {@dice 1d10} when you reach 5th level ({@dice 2d10}), 11th level ({@dice 3d10}), and 17th level ({@dice 4d10}).",
-											"You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+											"Cuando realizas la acción de {@action Atacar|PHB-ES} en tu turno, puedes sustituir uno de tus ataques por una exhalación de energía mágica en un cono de 15 pies. Todas las criaturas situadas en esa zona deberán hacer una tirada de salvación de Destreza (CD = 8 + tu modificador por Constitución + tu bonificador por competencia). Si la fallan, recibirán {@damage 1d10} del daño de {{damageType}}. Si la superan, recibirán la mitad de daño. Este daño aumenta en {@dice 1d10} cuando alcanzas el nivel 5 ({@dice 2d10}), el nivel 11 ({@dice 3d10}) y el nivel 17 ({@dice 4d10}).",
+											"Puedes usar tu Ataque de Aliento una cantidad de veces igual a tu bonificador por competencia y recuperas todos los usos tras finalizar un descanso largo."
 										]
 									}
 								},
 								{
 									"mode": "replaceArr",
-									"replace": "Draconic Resistance",
+									"replace": "Resiliencia Dracónica",
 									"items": {
 										"type": "entries",
-										"name": "Draconic Resistance",
+										"name": "Resiliencia Dracónica",
 										"entries": [
-											"You have resistance to {{damageType}} damage."
+											"Posees resistencia al daño de {{damageType}}."
 										]
 									}
 								}
@@ -10305,7 +10316,7 @@
 					"_implementations": [
 						{
 							"_variables": {
-								"color": "Brass",
+								"color": "Oropel",
 								"damageType": "fire"
 							},
 							"resist": [
@@ -10314,7 +10325,7 @@
 						},
 						{
 							"_variables": {
-								"color": "Bronze",
+								"color": "Bronce",
 								"damageType": "lightning"
 							},
 							"resist": [
@@ -10323,7 +10334,7 @@
 						},
 						{
 							"_variables": {
-								"color": "Copper",
+								"color": "Cobre",
 								"damageType": "acid"
 							},
 							"resist": [
@@ -10332,7 +10343,7 @@
 						},
 						{
 							"_variables": {
-								"color": "Gold",
+								"color": "Oro",
 								"damageType": "fire"
 							},
 							"resist": [
@@ -10341,7 +10352,7 @@
 						},
 						{
 							"_variables": {
-								"color": "Silver",
+								"color": "Plata",
 								"damageType": "cold"
 							},
 							"resist": [
@@ -10353,7 +10364,7 @@
 			],
 			"fluff": {
 				"entries": [
-					"Dragonborn with metallic ancestry lay claim to the tenacity of metallic dragons—brass, bronze, copper, gold, and silver—whose hues glint in their scales. Theirs is the fire of hearth and forge, the cold of high mountain air, the spark of inspiration, and the scouring touch of acid that purifies."
+					"Los dracónidos con linaje metálico se atribuyen la tenacidad de los dragones metálicos (de bronce, cobre, oro, oropel y plata), cuyas tonalidades centellean en sus escamas. Suyos son el fuego del hogar y de la fragua, el frío del aire en las cumbres montañosas, la chispa de la inspiración y el toque abrasivo del ácido que purifica."
 				],
 				"images": [
 					{
@@ -10362,7 +10373,7 @@
 							"type": "internal",
 							"path": "races/FTD/Metallic Dragonborn.webp"
 						},
-						"title": "A copper dragonborn readies her acidic breath as foes approach"
+						"title": "Una dracónida de cobre prepara su aliento ácido para los enemigos que se acercan"
 					}
 				]
 			}
