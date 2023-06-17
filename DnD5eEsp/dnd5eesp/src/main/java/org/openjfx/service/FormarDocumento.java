@@ -86,7 +86,7 @@ public class FormarDocumento extends Service<Void>{
 
             try {
                 BufferedReader bufferedReaderEsp = new BufferedReader(new FileReader(rutaDocEsp));
-                Gson gsonEsp = new Gson();
+                Gson gsonEsp = new GsonBuilder().serializeNulls().create();
                 JsonObject jsonEsp = gsonEsp.fromJson(bufferedReaderEsp, JsonObject.class);
                 //Comprueba si tiene el campo
                 if(!jsonEsp.has(importTable.getFieldName())){
@@ -111,7 +111,7 @@ public class FormarDocumento extends Service<Void>{
 
         //Crea el documento físico
         try (Writer writer = new FileWriter(rutaDocumento)) {
-            Gson gson = new GsonBuilder().create();
+            Gson gson = new GsonBuilder().serializeNulls().create();
             gson.toJson(jsDocumento, writer);
         }
 

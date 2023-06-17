@@ -553,8 +553,7 @@
 				{
 					"name": "Idiomas",
 					"entries": [
-						"Puedes hablar, leer y escribir en común y aurano,"
-						"You can read and write Common and Auran, pero solo puedes hablar utilizando tu habilidad de Imitación."
+						"Puedes hablar, leer y escribir en común y aurano, pero solo puedes hablar utilizando tu habilidad de Imitación."
 					],
 					"type": "entries"
 				}
@@ -2642,38 +2641,38 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Size",
+					"name": "Tamaño",
 					"entries": [
-						"Your size is Medium or Small. You choose the size when you select this race."
+						"Eres de tamaño Mediano o Pequeño. Eliges el tamaño cuando seleccionas esta raza."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Expert Duplication",
+					"name": "Duplicación Experta",
 					"entries": [
-						"When you copy writing or craftwork produced by yourself or someone else, you have advantage on any ability checks you make to produce an exact duplicate."
+						"Cuando reproduces escritos u objetos artesanales creados por ti o por otros, tienes ventaja en todas las pruebas de característica que hagas para crear un duplicado exacto."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Kenku Recall",
+					"name": "Imitación",
 					"entries": [
-						"Thanks to your supernaturally good memory, you have proficiency in two skills of your choice.",
-						"Moreover, when you make an ability check using any skill in which you have proficiency, you can give yourself advantage on the check before rolling the {@dice d20}. You can give yourself advantage in this way a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+						"Puedes imitar con precisión sonidos que hayas escuchados, incluidas voces. Una criatura que oiga los sonidos que produces solo puede darse cuenta de que son imitaciones si supera una prueba de Sabiduría ({@skill Perspicacia|PHB-ES}) contra una CD de 8 + tu bonificador por competencia + tu modificador por Carisma."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Mimicry",
+					"name": "Memoria Kenku",
 					"entries": [
-						"You can accurately mimic sounds you have heard, including voices. A creature that hears the sounds you make can tell they are imitations only with a successful Wisdom ({@skill Insight}) check against a DC of 8 + your proficiency bonus + your Charisma modifier."
+						"Gracias a tu memoria sobrenaturalmente buena, tienes competencia en dos habilidades de tu elección.",
+						"Además, cuando hagas una prueba de característica usando cualquier habilidad en la que tengas competencia, podrás concederte ventaja en la prueba antes de tirar el {@dice d20}. Puedes concederte ventaja de esta forma una cantidad de veces igual a tu bonificador por competencia y recuperas todos los usos tras finalizar un descanso largo."
 					]
 				}
 			],
 			"fluff": {
 				"entries": [
-					"Feathered folk who resemble ravens, kenku are blessed with keen observation and supernaturally accurate memories. None of them can remember the origin of the first kenku, however, and they often joke that there are as many kenku origin stories as there are kenku. Some of them paint their genesis as a curse, being a flightless bird people doomed to mimic other people's creations. Other kenku recite cryptic but beautiful poems about their advent being a blessed event in which they were sent into the multiverse to observe and catalog its many wonders.",
-					"Whatever their true origin, kenku are most often found in the Shadowfell and the Material Plane, and they tend to have the coloration typical of ravens."
+					"Los kenkus, una gente con plumas que recuerda a los cuervos, están bendecidos con una aguda capacidad de observación y una memoria de precisión sobrenatural. Sin embargo, ninguno de ellos puede recordar el origen del primer kenku y suelen bromear con que hay tantas historias sobre su procedencia como kenkus existen. Algunos de ellos describen su génesis como una maldición, al ser un pueblo de pájaros que no puede volar y está condenado a imitar las creaciones de otros. Otros kenkus recitan poemas crípticos pero hermosos que describen su advenimiento como una bendición por la cual se les envió al multiverso para observar y catalogar sus muchas maravillas.",
+					"Sea cual sea su auténtico origen, suelen encontrarse en el Páramo Sombrío y en el Plano Material y tienden a poseer una coloración similar a la de los cuervos."
 				],
 				"images": [
 					{
@@ -2721,7 +2720,7 @@
 					"known": {
 						"_": [
 							{
-								"choose": "level=0|class=Sorcerer",
+								"choose": "level=0|class=Hechicero (PHB-ES)",
 								"count": 1
 							}
 						]
@@ -2731,60 +2730,60 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Darkvision",
+					"name": "Grito Dracónico",
 					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were in dim light. You discern colors in that darkness only as shades of gray."
+						"Como acción adicional, lanzas un grito a tus enemigos a 10 pies o menos de ti. Hasta el principio de tu siguiente turno, tus aliados y tú tenéis ventaja en las tiradas de ataque contra cualquiera de esos enemigos que haya podido oírte. Puedes usar este atributo una cantidad de veces igual a tu bonificador por competencia y recuperas todos los usos tras finalizar un descanso largo."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Draconic Cry",
+					"name": "Legado Kobold",
 					"entries": [
-						"As a bonus action, you let out a cry at your enemies within 10 feet of you. Until the start of your next turn, you and your allies have advantage on attack rolls against any of those enemies who could hear you. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Kobold Legacy",
-					"entries": [
-						"Kobold's connections to dragons can manifest in unpredictable ways in an individual kobold. Choose one of the following legacy options for your kobold.",
+						"El vínculo de los kobolds con los dragones se puede manifestar de formas impredecibles en cada kobold. Elige una de las siguientes opciones de legado para tu kobold:",
 						{
 							"type": "list",
 							"items": [
 								{
 									"type": "item",
-									"name": "Craftiness",
-									"entry": "You have proficiency in one of the following skills of your choice: {@skill Arcana}, {@skill Investigation}, {@skill Medicine}, {@skill Sleight of Hand}, or {@skill Survival}."
+									"name": "Hechicería Dracónica",
+									"entry": "Conoces un {@filter truco de tu elección escogido de entre los de la lista de conjuros de hechicero|spells|level=0|class=Hechicero (PHB-ES)}. La Inteligencia, la Sabiduría o el Carisma es tu aptitud mágica para ese truco (elígela cuando selecciones esta raza)."
 								},
 								{
 									"type": "item",
-									"name": "Defiance",
-									"entry": "You have advantage on saving throws to avoid or end the {@condition frightened} condition on yourself."
+									"name": "Talento artesano",
+									"entry": "Tienes competencia en una de las siguientes habilidades a tu elección: {@skill Conocimiento Arcano|PHB-ES}, {@skill Investigación|PHB-ES}, {@skill Juego de Manos|PHB-ES}, {@skill Medicina|PHB-ES} o {@skill Supervivencia|PHB-ES}."
 								},
 								{
 									"type": "item",
-									"name": "Draconic Sorcery",
-									"entry": "You know one {@filter cantrip of your choice from the sorcerer spell list|spells|level=0|class=Sorcerer}. Intelligence, Wisdom, or Charisma is your spellcasting ability for that cantrip (choose when you select this race)."
+									"name": "Tenacidad",
+									"entry": "Tienes ventaja en las tiradas de salvación para evitar o poner fin al estado de {@condition asustado|PHB-ES} sobre ti mismo."
 								}
 							],
 							"style": "list-hang-notitle"
 						}
 					]
-				}
+				},
+				{
+					"type": "entries",
+					"name": "Visión en la Oscuridad",
+					"entries": [
+						"Puedes ver con luz tenue a 60 pies o menos de ti como si hubiera luz brillante, y en la oscuridad como si hubiera luz tenue. En esa oscuridad, solo disciernes Jos colores como tonos de gris."
+					]
+				},
 			],
 			"_versions": [
 				{
-					"name": "Kobold; Craftiness",
+					"name": "Kobold; Talento artesano",
 					"source": "MPMM-ES",
 					"_mod": {
 						"entries": {
 							"mode": "replaceArr",
-							"replace": "Kobold Legacy",
+							"replace": "Legado Kobold",
 							"items": {
-								"name": "Kobold Legacy (Craftiness)",
+								"name": "Legado Kobold (Talento artesano)",
 								"type": "entries",
 								"entries": [
-									"You have proficiency in one of the following skills of your choice: {@skill Arcana}, {@skill Investigation}, {@skill Medicine}, {@skill Sleight of Hand}, or {@skill Survival}."
+									"Tienes competencia en una de las siguientes habilidades a tu elección: {@skill Conocimiento Arcano|PHB-ES}, {@skill Investigación|PHB-ES}, {@skill Juego de Manos|PHB-ES}, {@skill Medicina|PHB-ES} o {@skill Supervivencia|PHB-ES}."
 								]
 							}
 						}
@@ -2792,17 +2791,17 @@
 					"additionalSpells": null
 				},
 				{
-					"name": "Kobold; Defiance",
+					"name": "Kobold; Tenacidad",
 					"source": "MPMM-ES",
 					"_mod": {
 						"entries": {
 							"mode": "replaceArr",
-							"replace": "Kobold Legacy",
+							"replace": "Legado Kobold",
 							"items": {
-								"name": "Kobold Legacy (Defiance)",
+								"name": "Legado Kobold (Tenacidad)",
 								"type": "entries",
 								"entries": [
-									"You have advantage on saving throws to avoid or end the {@condition frightened} condition on yourself."
+									"Tienes ventaja en las tiradas de salvación para evitar o poner fin al estado de {@condition asustado|PHB-ES} sobre ti mismo."
 								]
 							}
 						}
@@ -2811,17 +2810,17 @@
 					"additionalSpells": null
 				},
 				{
-					"name": "Kobold; Draconic Sorcery",
+					"name": "Kobold; Hechicería Dracónica",
 					"source": "MPMM-ES",
 					"_mod": {
 						"entries": {
 							"mode": "replaceArr",
-							"replace": "Kobold Legacy",
+							"replace": "Legado Kobold",
 							"items": {
-								"name": "Kobold Legacy (Draconic Sorcery)",
+								"name": "Legado Kobold (Hechicería Dracónica)",
 								"type": "entries",
 								"entries": [
-									"You know one {@filter cantrip of your choice from the sorcerer spell list|spells|level=0|class=Sorcerer}. Intelligence, Wisdom, or Charisma is your spellcasting ability for that cantrip (choose when you select this race)."
+									"Conoces un {@filter truco de tu elección escogido de entre los de la lista de conjuros de hechicero|spells|level=0|class=Hechicero (PHB-ES)}. La Inteligencia, la Sabiduría o el Carisma es tu aptitud mágica para ese truco (elígela cuando selecciones esta raza)."
 								]
 							}
 						}
@@ -2831,8 +2830,8 @@
 			],
 			"fluff": {
 				"entries": [
-					"Some of the smallest draconic creatures in the multiverse, kobolds display their draconic ancestry in the glint of their scales and in their roars. Legends tell of the first kobolds emerging from the Underdark near the lairs of the earliest dragons. In some lands, kobolds serve chromatic or metallic dragons—even worshiping them as divine beings. In other places, kobolds know too well how dangerous those dragons can be and help others defend against draconic destruction.",
-					"Whatever their relationship to dragons, kobold scales tend to be rust colored, although the occasional kobold sports a scale color more akin to that of a chromatic or a metallic dragon. A kobold's cry can express a range of emotion: anger, resolve, elation, fear, and more. Regardless of the emotion expressed, their cry resonates with draconic power."
+					"Los kobolds son unas de las criaturas dracónicas de menor tamaño del multiverso, pero su linaje se puede apreciar en el brillo de sus escamas y en sus rugidos. Las leyendas cuentan que los primeros kobolds emergieron de la lnfraoscuridad cerca de las guaridas de los dragones primigenios. En algunas regiones, los kobolds sirven a dragones cromáticos o metálicos e incluso llegan a adorarlos como a seres divinos. En otros lugares, los kobolds saben demasiado bien lo peligrosos que pueden ser esos dragones y ayudan a otros a defenderse contra la destrucción dracónica.",
+					"Sea cual sea su relación con los dragones, las escamas de los kobolds tienden a ser del color del óxido, aunque las de algunos son más parecidas a las de un dragón cromático o metálico. El grito de un kobold puede expresar muy diversas emociones, como rabia, resolución, euforia, miedo, etc. Independientemente de la emoción que expresen, su grito está repleto de poder dracónico."
 				],
 				"images": [
 					{
@@ -2846,9 +2845,9 @@
 			}
 		},
 		{
-			"name": "Lizardfolk",
+			"name": "Hombre lagarto",
 			"source": "MPMM-ES",
-			"page": 26,
+			"page": 23,
 			"lineage": "VRGR-ES",
 			"size": [
 				"M"
@@ -2879,51 +2878,51 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Speed",
+					"name": "Velocidad",
 					"entries": [
-						"Your walking speed is 30 feet, and you have a swimming speed equal to your walking speed."
+						"Tu velocidad caminando es de 30 pies y tienes una velocidad nadando igual a tu velocidad caminando."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Bite",
+					"name": "Aguantar la Respiración",
 					"entries": [
-						"You have a fanged maw that you can use to make unarmed strikes. When you hit with it, the strike deals {@damage 1d6} + your Strength modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike."
+						"Puedes aguantar la respiración hasta 15 minutos seguidos."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Hold Breath",
+					"name": "Armadura Natural",
 					"entries": [
-						"You can hold your breath for up to 15 minutes at a time."
+						"Posees una piel escamosa y resistente. Cuando no vistas armadura alguna, tu CA será de 13 + tu modificador por Destreza. Puedes usar tu armadura natural para determinar tu CA si la armadura que llevas daría como resultado una CA menor. Los beneficios de un escudo se aplicarán del modo normal mientras uses tu armadura natural."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Hungry Jaws",
+					"name": "Intuición de la Naturaleza",
 					"entries": [
-						"You can throw yourself into a feeding frenzy. As a bonus action, you can make a special attack with your Bite. If the attack hits, it deals its normal damage, and you gain temporary hit points equal to your proficiency bonus. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+						"Gracias a tu conexión mística con la naturaleza, ganas competencia en dos de las siguientes habilidades a tu elección: {@skill Medicina|PHB-ES}, {@skill Naturaleza|PHB-ES}, {@skill Percepción|PHB-ES}, {@skill Sigilo|PHB-ES}, {@skill Supervivencia|PHB-ES} o {@skill Trato con Animales|PHB-ES}."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Natural Armor",
+					"name": "Mandíbulas Hambrientas",
 					"entries": [
-						"You have tough, scaly skin. When you aren't wearing armor, your base AC is 13 + Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor."
+						"Puedes lanzarte a un frenesí alimentario. Como acción adicional, puedes hacer un ataque especial con tu mordisco. Si el ataque impacta, infligirá su daño normal y obtendrás una cantidad de puntos de golpe temporales igual a tu bonificador por competencia. Puedes usar este atributo una cantidad de veces igual a tu bonificador por competencia y recuperas todos los usos tras finalizar un descanso largo."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Nature's Intuition",
+					"name": "Mordisco",
 					"entries": [
-						"Thanks to your mystical connection to nature, you gain proficiency with two of the following skills of your choice: {@skill Animal Handling}, {@skill Medicine}, {@skill Nature}, {@skill Perception}, {@skill Stealth}, or {@skill Survival}."
+						"Tienes unas fauces con colmillos que puedes usar para hacer ataques sin armas. Cuando impactes con ellas, el ataque infligirá {@damage 1d6} + tu modificador por Fuerza de daño cortante, en lugar del daño contundente normal de un ataque sin armas."
 					]
 				}
 			],
 			"fluff": {
 				"entries": [
-					"The saurian lizardfolk are thought by some sages to be distant cousins of dragonborn and kobolds. Despite their resemblance to those other scaled folk, however, lizardfolk are their own people and have lived on the worlds of the Material Plane since the worlds' creation. Gifted by the gods with remarkable physical defenses and a mystical connection to the natural world, lizardfolk can survive with just their wits in situations that would be deadly for other folk. Because of that fact, many lizardfolk myths state that their people were placed by the gods in the Material Plane to guard its natural wonders.",
-					"Lizardfolk have colorful scales and exhibit a wide array of scale patterns. Their individual facial features are as varied as those of lizards."
+					"Algunos sabios creen que los reptilianos hombres lagarto son primos lejanos de los dracónidos y los kobolds. Pese a su semejanza con esas otras gentes con escamas, los hombres lagarto son un pueblo por derecho propio y han vivido en los mundos del Plano Material desde su creación. Obsequiados por los dioses con unas notables defensas físicas y una conexión mística con el mundo natural, los hombres lagarto pueden sobrevivir valiéndose solo de su ingenio en situaciones que resultarían letales para otras razas. Debido a esto, muchos mitos de los hombres lagarto afirman que los dioses los trajeron al Plano Material para proteger sus maravillas naturales.",
+					"Los hombres lagarto poseen escamas coloridas con patrones muy variados y sus rasgos faciales individuales también son tan diversos como los de los lagartos."
 				],
 				"images": [
 					{
@@ -2937,7 +2936,7 @@
 			}
 		},
 		{
-			"name": "Minotaur",
+			"name": "Minotauro",
 			"source": "MPMM-ES",
 			"page": 27,
 			"lineage": "VRGR-ES",
@@ -2951,38 +2950,38 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Horns",
+					"name": "Cuernos",
 					"entries": [
-						"You have horns that you can use to make unarmed strikes. When you hit with them, the strike deals {@damage 1d6} + your Strength modifier piercing damage, instead of the bludgeoning damage normal for an unarmed strike."
+						"Tienes unos cuernos que puedes usar para hacer ataques sin armas. Cuando impactes con ellos, el ataque infligirá {@damage 1d6} + tu modificador por Fuerza de daño perforante, en lugar del daño contundente normal de un ataque sin armas."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Goring Rush",
+					"name": "Cuernos Martilleantes",
 					"entries": [
-						"Immediately after you take the {@action Dash} action on your turn and move at least 20 feet, you can make one melee attack with your Horns as a bonus action."
+						"Inmediatamente después de impactar a una criatura con un ataque cuerpo a cuerpo como parte de la acción de {@action Atacar|PHB-ES} en tu turno, puedes usar una acción adicional para intentar empujar a ese objetivo con tus cuernos. El objetivo debe estar a 5 pies o menos de ti y tener un tamaño que esté, como mucho, una categoría por encima de la tuya. A menos que supere una tirada de salvación de Fuerza contra una CD igual a 8 + tu bonificador por competencia +tu modificador por Fuerza, lo empujarás a hasta 10 pies de ti."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Hammering Horns",
+					"name": "Embestida de Cuernos",
 					"entries": [
-						"Immediately after you hit a creature with a melee attack as part of the {@action Attack} action on your turn, you can use a bonus action to attempt to push that target with your horns. The target must be within 5 feet of you and no more than one size larger than you. Unless it succeeds on a Strength saving throw against a DC equal to 8 + your proficiency bonus + your Strength modifier, you can push it up to 10 feet away from you."
+						"Inmediatamente después de realizar la acción de {@action Correr|PHB-ES} en tu turno y moverte al menos 20 pies, puedes hacer un ataque cuerpo a cuerpo con tus cuernos como acción adicional."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Labyrinthine Recall",
+					"name": "Recordar Laberinto",
 					"entries": [
-						"You always know which direction is north, and you have advantage on any Wisdom ({@skill Survival}) check you make to navigate or track."
+						"Siempre sabes en qué dirección está el norte y tienes ventaja en cualquier prueba de Sabiduría ({@skill Supervivencia|PHB-ES}) que hagas para orientarte o rastrear."
 					]
 				}
 			],
 			"fluff": {
 				"entries": [
-					"Minotaurs are barrel-chested humanoids with heads resembling those of bulls. Blessed with a supernaturally strong sense of direction, minotaurs make great navigators. Some sages believe minotaurs were first created by the Lady of Pain to patrol the magical mazes that she uses to trap her foes.",
-					"Minotaur horns range in size from about 1 foot long to easily three times that length. Minotaurs often carve their horns to sharpen their edges, etch symbols of power into them, or sheathe them in bronze to prevent them from shattering during battle.",
-					"Thick hair extends down minotaurs' necks and powerful backs, and some have long patches of hair on their chins and cheeks. Their legs end in heavy, cloven hooves, and they have long, tufted tails."
+					"Los minotauros son humanoides de torso ancho y fuerte y con cabeza similar a la de un toro. Bendecidos con un sentido de la orientación sobrenaturalmente preciso, los minotauros son guías magníficos. Algunos sabios creen que los minotauros fueron creados originalmente por la Señora del Dolor para patrullar los laberintos mágicos que utiliza para atrapar a sus enemigos.",
+					"Los cuernos de los minotauros tienen tamaños que varían entre aproximadamente 30 cm de largo a fácilmente el triple de esa longitud. A menudo, se los labran para afilar las puntas, graban símbolos de poder en ellos o los recubren de bronce para evitar que se rompan durante el combate.",
+					"Un pelo abundante crece en el cuello de los minotauros y baja por sus poderosas espaldas, y muchos cuentan con grandes matas de pelo en la barbilla y las mejillas. Sus piernas terminan en unas pesadas pezuñas hendidas y poseen colas largas y encopetadas."
 				],
 				"images": [
 					{
@@ -2996,7 +2995,7 @@
 			}
 		},
 		{
-			"name": "Orc",
+			"name": "Orco",
 			"source": "MPMM-ES",
 			"page": 28,
 			"lineage": "VRGR-ES",
@@ -3011,38 +3010,38 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Adrenaline Rush",
+					"name": "Aguante Incansable",
 					"entries": [
-						"You can take the {@action Dash} action as a bonus action. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
-						"Whenever you use this trait, you gain a number of temporary hit points equal to your proficiency bonus."
+						"Cuando tus puntos de golpe se reducen a 0 pero no mueres instantáneamente, puedes volver a tener 1 punto de golpe. Cuando uses este atributo, no podrás volver a hacerlo hasta que finalices un descanso largo."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Darkvision",
+					"name": "Constitución Poderosa",
 					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+						"Cuentas como un tamaño mayor cuando determinas tu capacidad de carga y el peso que puedes empujar, arrastrar o levantar."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Powerful Build",
+					"name": "Descarga de Adrenalina",
 					"entries": [
-						"You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+						"Puedes usar la acción de {@action Correr|PHB-ES} como acción adicional. Puedes usar este atributo una cantidad de veces igual a tu bonificador por competencia y recuperas todos los usos tras finalizar un descanso largo.",
+						"Siempre que uses este atributo, ganarás una cantidad de puntos de golpe temporales igual a tu bonificador por competencia."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Relentless Endurance",
+					"name": "Visión en la Oscuridad",
 					"entries": [
-						"When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. Once you use this trait, you can't do so again until you finish a long rest."
+						"Puedes ver con luz tenue a 60 pies o menos de ti como si hubiera luz brillante, y en la oscuridad como si hubiera luz tenue. En esa oscuridad, solo disciernes los colores como tonos de gris."
 					]
 				}
 			],
 			"fluff": {
 				"entries": [
-					"Orcs trace their creation to the one-eyed god Gruumsh, an unstoppable warrior and powerful leader. The divine qualities of Gruumsh resonate within orcs, granting them a reflection of his toughness and tenacity that can't be matched, and the god equipped his children to be able to live above or below ground.",
-					"On some worlds, such as Eberron, orcs were among the first defenders of the natural order from the encroachments of Fiends and other extraplanar threats. Gruumsh's blessings have made orcs tireless guardians and mighty allies wherever they are found, even when they turn their devotion to other gods."
+					"Los orcos atribuyen su creación al dios tuerto Gruumsh, un guerrero imparable y un poderoso líder. Las cualidades divinas de Gruumsh resuenan en el interior de los orcos y les conceden un reflejo de su inigualable dureza y su incomparable tenacidad. Además, el dios preparó a sus hijos para que pudieran vivir tanto en la superficie como bajo tierra.",
+					"En algunos mundos, como Eberron, los orcos estuvieron entre los primeros defensores del orden natural frente a las invasiones de infernales y otras amenazas extraplanares. Las bendiciones de Gruumsh han hecho de los orcos guardianes incansables y aliados poderosos allí donde estén, incluso cuando dirigen su devoción hacia otros dioses."
 				],
 				"images": [
 					{
@@ -3056,9 +3055,9 @@
 			}
 		},
 		{
-			"name": "Satyr",
+			"name": "Sátiro",
 			"source": "MPMM-ES",
-			"page": 29,
+			"page": 31,
 			"lineage": "VRGR-ES",
 			"creatureTypes": [
 				"fey"
@@ -3085,43 +3084,43 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Creature Type",
+					"name": "Tipo de criatura",
 					"entries": [
-						"You are a Fey."
+						"Eres feérico."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Ram",
+					"name": "Embestir",
 					"entries": [
-						"You can use your head and horns to make unarmed strikes. When you hit with them, the strike deals {@damage 1d6} + your Strength modifier bludgeoning damage, instead of the bludgeoning damage normal for an unarmed strike."
+						"Puedes usar la cabeza y los cuernos para hacer ataques sin armas. Cuando impactes con ellos, el ataque infligirá {@damage 1d6} + tu modificador por Fuerza de daño contundente, en lugar del daño contundente normal de un ataque sin armas."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Magic Resistance",
+					"name": "Juerguista",
 					"entries": [
-						"You have advantage on saving throws against spells."
+						"Como encarnación de la fiesta y la parranda, tienes competencia en las habilidades {@skill Interpretación|PHB-ES} y {@skill Persuasión|PHB-ES}, además de con un {@item instrumento musical|PHB-ES} de tu elección."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Mirthful Leaps",
+					"name": "Resistencia Mágica",
 					"entries": [
-						"Whenever you make a long jump or a high jump, you can roll a {@dice d8} and add the number rolled to the number of feet you cover, even when making a standing jump. This extra distance costs movement as usual."
+						"Tienes ventaja en las tiradas de salvación contra conjuros."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Reveler",
+					"name": "Saltos Alegres",
 					"entries": [
-						"As an embodiment of revelry, you have proficiency in the {@skill Performance} and {@skill Persuasion} skills, and you have proficiency with one {@item musical instrument|PHB} of your choice."
+						"Siempre que hagas un salto de longitud o de altura, puedes tirar {@dice 1d8} y sumar el número obtenido a la cantidad de pies de la distancia que recorres, incluso si no tomas carrerilla. Esta distancia adicional cuesta movimiento de forma normal."
 					]
 				}
 			],
 			"fluff": {
 				"entries": [
-					"Originating in the Feywild—a realm of pure emotion-satyrs thrive on the energy of merriment. They resemble elves but have goatlike legs, cloven hooves, and ram or goat horns. The magic of the fey realm has given them an innate ability to perform, to delight, and to resist magical intrusion. While they're usually found in the Feywild, satyrs do wander to other planes of existence, most often to the Material Plane. There they seek to bring a bit of their home plane's splendor to other worlds."
+					"Originarios de los Parajes Feéricos, un reino de emoción pura, los sátiros prosperan gracias a la energía de la alegría. Tienen un aspecto élfico, pero sus piernas son similares a las de las cabras y cuentan con pezuñas hendidas y cuernos de carnero o cabra. La magia del reino feérico les ha otorgado una capacidad innata para actuar, divertir a los demás y resistir las intrusiones mágicas. Aunque suelen encontrarse en los Parajes Feéricos, a los sátiros también les gusta vagar por otros planos de existencia, sobre todo el Plano Material. Allí tratan de aportar a otros mundos un poco del esplendor de su plano natal."
 				],
 				"images": [
 					{
@@ -3135,9 +3134,9 @@
 			}
 		},
 		{
-			"name": "Sea Elf",
+			"name": "Elfo marino",
 			"source": "MPMM-ES",
-			"page": 30,
+			"page": 12,
 			"lineage": "VRGR-ES",
 			"creatureTypes": [
 				"humanoid"
@@ -3173,66 +3172,66 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Creature Type",
+					"name": "Tipo de criatura",
 					"entries": [
-						"You are a Humanoid. You are also considered an elf for any prerequisite or effect that requires you to be an elf."
+						"Eres humanoide. También se te considera elfo para cualquier requisito o efecto que requiera que seas elfo."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Speed",
+					"name": "Velocidad",
 					"entries": [
-						"Your walking speed is 30 feet, and you have a swimming speed equal to your walking speed."
+						"Tu velocidad caminando es de 30 pies y tienes una velocidad nadando igual a tu velocidad caminando."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Child of the Sea",
+					"name": "Amistad con el Mar",
 					"entries": [
-						"You can breathe air and water, and you have a resistance to cold damage."
+						"Los animales acuáticos sienten una afinidad extraordinaria con tu pueblo. Puedes comunicar ideas sencillas a cualquier bestia que tenga velocidad nadando. Esta puede comprender tus palabras, aunque tú no tienes ninguna capacidad especial para comprenderla a ella."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Darkvision",
+					"name": "Linaje Feérico",
 					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+						"Tienes ventaja en las tiradas de salvación para evitar o poner fin al estado de {@condition hechizado|PHB-ES} sobre ti mismo."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Fey Ancestry",
+					"name": "Sentidos Agudos",
 					"entries": [
-						"You have advantage on saving throws you make to avoid or end the {@condition charmed} condition on yourself."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Friend of the Sea",
-					"entries": [
-						"Aquatic animals have an extraordinary affinity with your people. You can communicate simple ideas to any Beast that has a swimming speed. It can understand your words, though you have no special ability to understand it in return."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Keen Senses",
-					"entries": [
-						"You have proficiency in the {@skill Perception} skill."
+						"Tienes competencia en la habilidad {@skill Percepción|PHB-ES}."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Trance",
 					"entries": [
-						"You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness.",
-						"Whenever you finish this trance, you can gain two proficiencies that you don't have, each one with a weapon or a tool of your choice selected from the Player's Handbook. You mystically acquire these proficiencies by drawing them from shared elven memory, and you retain them until you finish your next long rest."
+						"No necesitas dormir y la magia no puede dormirte. Puedes finalizar un descanso largo en 4 horas si las pasas en una meditación similar a un trance, tiempo durante el cual conservas la consciencia.",
+						"Siempre que termines este trance, puedes ganar dos competencias que no tengas, cada una con un arma o una herramienta de tu elección del Manual del Jugador. Adquieres estas competencias místicamente, extrayéndolas de la memoria élfica compartida, y las conservarás hasta que finalices tu siguiente descanso largo."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Vástago del Mar",
+					"entries": [
+						"Puedes respirar tanto dentro como fuera del agua y tienes resistencia al daño de frío."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Visión en la Oscuridad",
+					"entries": [
+						"Puedes ver con luz tenue a 60 pies o menos de ti como si hubiera luz brillante, y en la oscuridad como si hubiera luz tenue. En esa oscuridad, solo disciernes los colores como tonos de gris."
 					]
 				}
 			],
 			"fluff": {
 				"entries": [
-					"Sea elves fell in love with the wild beauty of the ocean in the earliest days of the multiverse. While other elves traveled from realm to realm, sea elves navigated the currents and explored the waters of many worlds. Today these elves can be found wherever oceans exist, as well as in the Elemental Plane of Water.",
-					"Like other elves, sea elves can live to be over 750 years old."
+					"Los elfos marinos se enamoraron de la belleza salvaje del océano en los primeros días del multiverso. Mientras otros elfos viajaban de reino en reino, los elfos marinos navegaban por las corrientes y exploraban las aguas de muchos mundos. En la actualidad, estos elfos se pueden encontrar en cualquier lugar en el que haya mares, así como en el Plano Elemental del Agua.",
+					"Al igual que otros elfos, los marinos pueden llegar a vivir más de 750 años."
 				],
 				"images": [
 					{
@@ -3248,7 +3247,7 @@
 		{
 			"name": "Shadar-Kai",
 			"source": "MPMM-ES",
-			"page": 31,
+			"page": 32,
 			"lineage": "VRGR-ES",
 			"creatureTypes": [
 				"humanoid"
@@ -3280,62 +3279,62 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Creature Type",
+					"name": "Tipo de criatura",
 					"entries": [
-						"You are a Humanoid. You are also considered an elf for any prerequisite or effect that requires you to be an elf."
+						"Eres humanoide. También se te considera elfo para cualquier requisito o efecto que requiera que seas elfo."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Blessing of the Raven Queen",
+					"name": "Bendición de la Reina Cuervo",
 					"entries": [
-						"As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
-						"Start at 3rd level, you also gain resistance to all damage when you teleport using this trait. The resistance lasts until the start of your next turn. During that time, you appear ghostly and translucent."
+						"Como acción adicional, puedes teletransportarte mágicamente hasta 30 pies a un espacio sin ocupar que puedas ver. Puedes usar este atributo una cantidad de veces igual a tu bonificador por competencia y recuperas todos los usos tras finalizar un descanso largo.",
+						"A partir del nivel 3, también obtienes resistencia a todo el daño cuando te teletransportas con este atributo. La resistencia dura hasta el principio de tu siguiente turno. Durante ese tiempo, tu apariencia es fantasmal y traslúcida."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Darkvision",
+					"name": "Linaje Feérico",
 					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+						"Tienes ventaja en las tiradas de salvación para evitar o poner fin al estado de {@condition hechizado|PHB-ES} sobre ti mismo."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Fey Ancestry",
+					"name": "Resistencia Necrótica",
 					"entries": [
-						"You have advantage on saving throws you make to avoid or end the {@condition charmed} condition on yourself."
+						"Tienes resistencia al daño necrótico."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Keen Senses",
+					"name": "Sentidos Agudos",
 					"entries": [
-						"You have proficiency in the {@skill Perception} skill."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Necrotic Resistance",
-					"entries": [
-						"You have resistance to necrotic damage."
+						"Tienes competencia en la habilidad {@skill Percepción|PHB-ES}."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Trance",
 					"entries": [
-						"You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness.",
-						"Whenever you finish this trance, you can gain two proficiencies that you don't have, each one with a weapon or a tool of your choice selected from the Player's Handbook. You mystically acquire these proficiencies by drawing them from shared elven memory, and you retain them until you finish your next long rest."
+						"No necesitas dormir y la magia no puede dormirte. Puedes finalizar un descanso largo en 4 horas si las pasas en una meditación similar a un trance, tiempo durante el cual conservas la consciencia.",
+						"Siempre que termines este trance, puedes ganar dos competencias que no tengas, cada una con un arma o una herramienta de tu elección del Manual del Jugador. Adquieres estas competencias místicamente, extrayéndolas de la memoria élfica compartida, y las conservarás hasta que finalices tu siguiente descanso largo."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Visión en la Oscuridad",
+					"entries": [
+						"Puedes ver con luz tenue a 60 pies o menos de ti como si hubiera luz brillante, y en la oscuridad como sí hubiera luz tenue. En esa oscuridad, solo disciernes los colores como tonos de gris."
 					]
 				}
 			],
 			"fluff": {
 				"entries": [
-					"Shadar-kai are the elves of the Shadowfell, originally drawn to that dread realm by the Raven Queen. Over the centuries, some of them have continued to serve her, while others have ventured into the Material Plane to forge their own destinies.",
-					"Once shadar-kai were Fey like the rest of their elven kin; now they exist in a state between life and death, thanks to being transformed by the Shadowfell's grim energy.",
-					"Shadar-kai have ashen skin tones, and while they're in the Shadowfell, they also become wizened, reflecting the somber nature of that gloomy plane.",
-					"Like other elves, shadar-kai can live to be over 750 years old."
+					"Los shadar-kai son los elfos del Páramo Sombrío, atraídos originalmente a ese reino aterrador por la Reina Cuervo. Con el paso de los siglos, algunos de ellos han seguido sirviéndola, mientras que otros se han aventurado al Plano Material para forjar sus propios destinos.",
+					"Antaño, los shadar-kai eran feéricos, como el resto de los elfos, pero ahora existen en un estado entre la vida y la muerte debido a la transformación sufrida por la energía nefasta del Páramo Sombrío.",
+					"Los shadar-kai poseen tonos de piel cenicientos y, mientras están en el Páramo Sombrío, también parecen marchitos, lo que refleja la naturaleza sombría de ese lugar oscuro.",
+					"Al igual que otros elfos, los shadar-kai pueden llegar a vivir más de 750 años."
 				],
 				"images": [
 					{
@@ -3349,9 +3348,9 @@
 			}
 		},
 		{
-			"name": "Shifter",
+			"name": "Cambiante",
 			"source": "MPMM-ES",
-			"page": 32,
+			"page": 8,
 			"lineage": "VRGR-ES",
 			"size": [
 				"M"
@@ -3373,121 +3372,121 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Bestial Instincts",
+					"name": "Cambio",
 					"entries": [
-						"Channeling the beast within, you have proficiency in one of the following skills of your choice: {@skill Acrobatics}, {@skill Athletics}, {@skill Intimidation}, or {@skill Survival}."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Darkvision",
-					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were in dim light. You discern colors in that darkness only as shades of gray."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Shifting",
-					"entries": [
-						"As a bonus action, you can assume a more bestial appearance. This transformation lasts for 1 minute, until you die, or until you revert to your normal appearance as a bonus action. When you shift, you gain temporary hit points equal to 2 × your proficiency bonus. You can shift a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
-						"Whenever you shift, you gain an additional benefit based on one of the following options (choose when you select this race):",
+						"Como acción adicional, puedes adoptar un aspecto más salvaje. Esta transformación dura 1 minuto, hasta que mueras o hasta que vuelvas a tu aspecto normal como acción adicional. Cuando cambies, obtendrás una cantidad de puntos de golpe temporales igual a 2 x tu bonificador por competencia. Puedes cambiar una cantidad de veces igual a tu bonificador por competencia y recuperas todos los usos tras finalizar un descanso largo.",
+						"Siempre que cambies, obtendrás un beneficio adicional basado en una de las siguientes opciones (elígela cuando selecciones esta raza):",
 						{
 							"type": "list",
 							"items": [
 								{
 									"type": "item",
-									"name": "Beasthide",
-									"entry": "You gain {@dice 1d6} additional temporary hit points. While shifted, you have a +1 bonus to your Armor Class."
+									"name": "Caza salvaje",
+									"entry": "Mientras estés cambiado, tendrás ventaja en las pruebas de Sabiduría y ninguna criatura a 30 pies o menos de ti podrá realizar una tirada de ataque con ventaja contra ti, a menos que estés {@condition incapacitado|PHB-ES}."
 								},
 								{
 									"type": "item",
-									"name": "Longtooth",
-									"entry": "When you shift and as a bonus action on your other turns while shifted, you can use your elongated fangs to make an unarmed strike. If you hit with your fangs, you can deal piercing damage equal to {@dice 1d6} + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
+									"name": "Dientes largos",
+									"entry": "Cuando cambias, y como acción adicional en tus otros turnos mientras estás cambiado, puedes emplear tus colmillos alargados para realizar un ataque sin armas. Si impactas con tus colmillos, podrás infligir una cantidad de daño perforante igual {@dice 1d6} + tu modificador por Fuerza, en lugar del daño contundente normal de un ataque sin armas."
 								},
 								{
 									"type": "item",
-									"name": "Swiftstride",
-									"entry": "While shifted, your walking speed increases by 10 feet. Additionally, you can move up to 10 feet as a reaction when a creature ends its turn within 5 feet of you. This reactive movement doesn't provoke opportunity attacks."
+									"name": "Paso rápido",
+									"entry": "Mientras estás cambiado, tu velocidad caminando aumenta en 10 pies. Además, puedes moverte hasta 10 pies como reacción cuando una criatura termine su turno a 5 pies o menos de ti. Este movimiento reactivo no provocará ataques de oportunidad."
 								},
 								{
 									"type": "item",
-									"name": "Wildhunt",
-									"entry": "While shifted, you have advantage on Wisdom checks, and no creature within 30 feet of you can make an attack roll with advantage against you unless you're {@condition incapacitated}."
+									"name": "Piel de bestia",
+									"entry": "Obtienes {@dice 1d6} puntos de golpe temporales adicionales. Mientras estás cambiado, tienes un bonificador de +1 a tu Clase de Armadura."
 								}
 							],
 							"style": "list-hang-notitle"
 						}
 					]
+				},
+				{
+					"type": "entries",
+					"name": "Instintos de Bestia",
+					"entries": [
+						"Canalizando a la bestia de tu interior, tienes competencia en una de las siguientes habilidades a tu elección: {@skill Acrobacias|PHB-ES}, {@skill Atletismo|PHB-ES}, {@skill Intimidación|PHB-ES} o {@skill Supervivencia|PHB-ES}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Visión en la Oscuridad",
+					"entries": [
+						"Puedes ver con luz tenue a 60 pies o menos de ti como si hubiera luz brillante, y en la oscuridad como si hubiera luz tenue. En esa oscuridad, solo disciernes los colores como tonos de gris."
+					]
 				}
 			],
 			"_versions": [
 				{
-					"name": "Shifter; Beasthide",
+					"name": "Cambiante; Piel de bestia",
 					"source": "MPMM-ES",
 					"_mod": {
 						"entries": {
 							"mode": "replaceArr",
-							"replace": "Shifting",
+							"replace": "Cambio",
 							"items": {
-								"name": "Shifting (Beasthide)",
+								"name": "Cambio (Piel de bestia)",
 								"type": "entries",
 								"entries": [
-									"As a bonus action, you can assume a more bestial appearance. This transformation lasts for 1 minute, until you die, or until you revert to your normal appearance as a bonus action. When you shift, you gain temporary hit points equal to 2 × your proficiency bonus + {@dice 1d6}, and you regain all expended uses when you finish a long rest.",
-									"While shifted, you have a +1 bonus to your Armor Class."
+									"Como acción adicional, puedes adoptar un aspecto más salvaje. Esta transformación dura 1 minuto, hasta que mueras o hasta que vuelvas a tu aspecto normal como acción adicional. Cuando cambies, obtendrás una cantidad de puntos de golpe temporales igual a 2 x tu bonificador por competencia. Puedes cambiar una cantidad de veces igual a tu bonificador por competencia y recuperas todos los usos tras finalizar un descanso largo.",
+									"Obtienes {@dice 1d6} puntos de golpe temporales adicionales. Mientras estás cambiado, tienes un bonificador de +1 a tu Clase de Armadura."
 								]
 							}
 						}
 					}
 				},
 				{
-					"name": "Shifter; Longtooth",
+					"name": "Cambiante; Dientes largos",
 					"source": "MPMM-ES",
 					"_mod": {
 						"entries": {
 							"mode": "replaceArr",
-							"replace": "Shifting",
+							"replace": "Cambio",
 							"items": {
-								"name": "Shifting (Longtooth)",
+								"name": "Cambio (Dientes largos)",
 								"type": "entries",
 								"entries": [
-									"As a bonus action, you can assume a more bestial appearance. This transformation lasts for 1 minute, until you die, or until you revert to your normal appearance as a bonus action. When you shift, you gain temporary hit points equal to 2 × your proficiency bonus, and you regain all expended uses when you finish a long rest.",
-									"When you shift and as a bonus action on your other turns while shifted, you can use your elongated fangs to make an unarmed strike. If you hit with your fangs, you can deal piercing damage equal to {@dice 1d6} + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
+									"Como acción adicional, puedes adoptar un aspecto más salvaje. Esta transformación dura 1 minuto, hasta que mueras o hasta que vuelvas a tu aspecto normal como acción adicional. Cuando cambies, obtendrás una cantidad de puntos de golpe temporales igual a 2 x tu bonificador por competencia. Puedes cambiar una cantidad de veces igual a tu bonificador por competencia y recuperas todos los usos tras finalizar un descanso largo.",
+									"Cuando cambias, y como acción adicional en tus otros turnos mientras estás cambiado, puedes emplear tus colmillos alargados para realizar un ataque sin armas. Si impactas con tus colmillos, podrás infligir una cantidad de daño perforante igual {@dice 1d6} + tu modificador por Fuerza, en lugar del daño contundente normal de un ataque sin armas."
 								]
 							}
 						}
 					}
 				},
 				{
-					"name": "Shifter; Swiftstride",
+					"name": "Cambiante; Paso rápido",
 					"source": "MPMM-ES",
 					"_mod": {
 						"entries": {
 							"mode": "replaceArr",
-							"replace": "Shifting",
+							"replace": "Cambio",
 							"items": {
-								"name": "Shifting (Swiftstride)",
+								"name": "Cambio (Paso rápido)",
 								"type": "entries",
 								"entries": [
-									"As a bonus action, you can assume a more bestial appearance. This transformation lasts for 1 minute, until you die, or until you revert to your normal appearance as a bonus action. When you shift, you gain temporary hit points equal to 2 × your proficiency bonus, and you regain all expended uses when you finish a long rest.",
-									"While shifted, your walking speed increases by 10 feet. Additionally, you can move up to 10 feet as a reaction when a creature ends its turn within 5 feet of you. This reactive movement doesn't provoke opportunity attacks."
+									"Como acción adicional, puedes adoptar un aspecto más salvaje. Esta transformación dura 1 minuto, hasta que mueras o hasta que vuelvas a tu aspecto normal como acción adicional. Cuando cambies, obtendrás una cantidad de puntos de golpe temporales igual a 2 x tu bonificador por competencia. Puedes cambiar una cantidad de veces igual a tu bonificador por competencia y recuperas todos los usos tras finalizar un descanso largo.",
+									"Mientras estás cambiado, tu velocidad caminando aumenta en 10 pies. Además, puedes moverte hasta 10 pies como reacción cuando una criatura termine su turno a 5 pies o menos de ti. Este movimiento reactivo no provocará ataques de oportunidad."
 								]
 							}
 						}
 					}
 				},
 				{
-					"name": "Shifter; Wildhunt",
+					"name": "Cambiante; Caza salvaje",
 					"source": "MPMM-ES",
 					"_mod": {
 						"entries": {
 							"mode": "replaceArr",
-							"replace": "Shifting",
+							"replace": "Cambio",
 							"items": {
-								"name": "Shifting (Wildhunt)",
+								"name": "Cambio (Caza salvaje)",
 								"type": "entries",
 								"entries": [
-									"As a bonus action, you can assume a more bestial appearance. This transformation lasts for 1 minute, until you die, or until you revert to your normal appearance as a bonus action. When you shift, you gain temporary hit points equal to 2 × your proficiency bonus, and you regain all expended uses when you finish a long rest.",
-									"While shifted, you have advantage on Wisdom checks, and no creature within 30 feet of you can make an attack roll with advantage against you unless you're {@condition incapacitated}."
+									"Como acción adicional, puedes adoptar un aspecto más salvaje. Esta transformación dura 1 minuto, hasta que mueras o hasta que vuelvas a tu aspecto normal como acción adicional. Cuando cambies, obtendrás una cantidad de puntos de golpe temporales igual a 2 x tu bonificador por competencia. Puedes cambiar una cantidad de veces igual a tu bonificador por competencia y recuperas todos los usos tras finalizar un descanso largo.",
+									"Mientras estés cambiado, tendrás ventaja en las pruebas de Sabiduría y ninguna criatura a 30 pies o menos de ti podrá realizar una tirada de ataque con ventaja contra ti, a menos que estés {@condition incapacitado|PHB-ES}."
 								]
 							}
 						}
@@ -3496,16 +3495,16 @@
 			],
 			"fluff": {
 				"entries": [
-					"Shifters are sometimes called weretouched, as they are descendants of people who contracted full or partial lycanthropy. Humanoids with a bestial aspect, shifters can't fully change shape, but they can temporarily enhance their animalistic features by entering a state they call shifting.",
-					"Shifters are similar to humans in height and build but are typically more lithe and flexible. Their facial features have a bestial cast, often with large eyes and pointed ears; most shifters also have prominent canine teeth. They grow fur-like hair on nearly every part of their bodies. While a shifter's appearance might remind an onlooker of an animal, they remain clearly identifiable as shifters even when at their most feral.",
-					"Most shifters resemble a particular kind of lycanthrope. You can choose the kind of lycanthrope in your past, or you can determine it randomly by rolling on the Lycanthrope Ancestor table. The table also provides a suggestion for the Shifting option you might have as a result of your ancestry.",
+					"Los cambiantes a veces también son llamados \"licadeudos\", ya que descienden de gente que contrajo licantropía total o parcial. Los cambiantes son humanoides con aspecto de bestia y no pueden cambiar por completo de forma, pero sí de realzar temporalmente sus rasgos animales si entran en un estado que denominan \"el cambio\".",
+					"Los cambiantes son similares a los humanos en cuanto a altura y constitución, pero generalmente son más ágiles y flexibles. Sus rostros poseen facciones de bestia, a menudo con ojos grandes y orejas puntiagudas. Además, la mayoría de los cambiantes también cuentan con unos dientes caninos prominentes y casi todas las partes de su cuerpo están recubiertas por un pelo semejante al pelaje de un animal. A ojos de un observador, el aspecto de los cambiantes quizá recuerde al de un animal, pero se les puede identificar claramente como cambiantes incluso en su forma más salvaje.",
+					"La mayoría de los cambiantes se asemejan a un tipo concreto de licántropo. Puedes elegir el tipo de licántropo de tu pasado o tirar en la tabla \"Ancestro licántropo\" para determinarlo al azar. La tabla también ofrece una sugerencia sobre la opción de Cambio que podrías tener como resultado de tu ancestro.",
 					{
 						"type": "table",
-						"caption": "Lycanthrope Ancestor",
+						"caption": "Ancestro licántropo",
 						"colLabels": [
 							"d6",
-							"Ancestor",
-							"Suggested Shifting Option"
+							"Ancestro",
+							"Opción de cambio sugerida"
 						],
 						"colStyles": [
 							"col-1 text-center",
@@ -3515,33 +3514,33 @@
 						"rows": [
 							[
 								"1",
-								"Werebear",
-								"Beasthide"
+								"Hombre oso",
+								"Piel de bestia"
 							],
 							[
 								"2",
-								"Wereboar",
-								"Beasthide"
+								"Hombre jabalí",
+								"Piel de bestia"
 							],
 							[
 								"3",
-								"Wererat",
-								"Swiftstride"
+								"Hombre rata",
+								"Paso rápido"
 							],
 							[
 								"4",
-								"Weretiger",
-								"Swiftstride"
+								"Hombre tigre",
+								"Paso rápido"
 							],
 							[
 								"5",
-								"Werewolf (wolflike)",
-								"Longtooth"
+								"Hombre lobo (lupino)",
+								"Dientes largos"
 							],
 							[
 								"6",
-								"Werewolf (doglike)",
-								"Wildhunt"
+								"Hombre lobo (canino)",
+								"Caza salvaje"
 							]
 						]
 					}
@@ -3583,51 +3582,51 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Size",
+					"name": "Tamaño",
 					"entries": [
-						"You are Medium or Small. You choose the size when you select this race."
+						"Eres Mediano o Pequeño. Eliges el tamaño cuando seleccionas esta raza."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Speed",
+					"name": "Velocidad",
 					"entries": [
-						"Your walking speed is 30 feet, and you have a climbing speed equal to your walking speed."
+						"Tu velocidad caminando es de 30 pies y tienes una velocidad trepando igual a tu velocidad caminando."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Cat's Claws",
+					"name": "Agilidad Felina",
 					"entries": [
-						"You can use your claws to make unarmed strikes. When you hit with them, the strike deals {@damage 1d6} + your Strength modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike."
+						"Tus reflejos y tu agilidad te permiten realizar movimientos veloces explosivos. Cuando te muevas durante tu turno en un combate, podrás duplicar tu velocidad hasta el final del turno. Cuando uses este atributo, no podrás volver a hacerlo hasta que te muevas 0 pies en uno de tus turnos."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Cat's Talent",
+					"name": "Garras de Gato",
 					"entries": [
-						"You have proficiency in the {@skill Perception} and {@skill Stealth} skills."
+						"Puedes usar tus garras para hacer ataques sin armas. Cuando impactes con ellas, el ataque infligirá {@damage 1d6} + tu modificador por Fuerza de daño cortante, en lugar del daño contundente normal de un ataque sin armas."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Darkvision",
+					"name": "Talento de Gato",
 					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+						"Tienes competencia en las habilidades {@skill Percepción|PHB-ES} y {@skill Sigilo|PHB-ES}."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Feline Agility",
+					"name": "Visión en la Oscuridad",
 					"entries": [
-						"Your reflexes and agility allow you to move with a burst of speed. When you move on your turn in combat, you can double your speed until the end of the turn. Once you use this trait, you can't use it again until you move 0 feet on one of your turns."
+						"Puedes ver con luz tenue a 60 pies o menos de ti como si hubiera luz brillante, y en la oscuridad como si hubiera luz tenue. En esa oscuridad, solo disciernes los colores como tonos de gris."
 					]
 				}
 			],
 			"fluff": {
 				"entries": [
-					"Created by the Cat Lord—a divine being of the Upper Planes—to blend the qualities of humanoids and cats, tabaxi are a varied people in both attitude and appearance. In some lands, tabaxi live like the cats they resemble, naturally curious and at home in playful environments. In other places, tabaxi live as other folk do, not exhibiting the feline behavior the Cat Lord intended.",
-					"Tabaxi's appearance is as varied as their attitudes. Some tabaxi have features or patterning in their fur like tigers, jaguars, or other big cats, while others have appearances more like a house cat. Still others have unique patterns or might style their fur to their preferences—or might even be hairless!"
+					"Creados por el Señor de los Gatos (un ser divino de los Planos Superiores) para combinar las cualidades de los humanoides y los felinos, los tabaxis son un pueblo variado tanto en su actitud como en su aspecto. En algunas tierras, los tabaxis viven como los felinos a los que se parecen, son curiosos por naturaleza y se encuentran a gusto en entornos lúdicos. En otros lugares, los tabaxis viven igual que otros pueblos y no muestran el comportamiento felino que pretendía el Señor de los Gatos.",
+					"El aspecto de los tabaxis es tan variado como sus actitudes. Algunos tienen pelajes con características o patrones parecidos a los de los tigres, los jaguares u otros grandes felinos, mientras que otros poseen aspectos más similares a los de un gato doméstico. También los hay con patrones únicos o que adaptan su pelaje a sus preferencias, ¡o incluso que carecen de pelo!"
 				],
 				"images": [
 					{
@@ -3641,7 +3640,7 @@
 			}
 		},
 		{
-			"name": "Tortle",
+			"name": "Tortoga",
 			"source": "MPMM-ES",
 			"page": 34,
 			"lineage": "VRGR-ES",
@@ -3671,51 +3670,51 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Size",
+					"name": "Tamaño",
 					"entries": [
-						"You are Medium or Small. You choose the size when you select this race."
+						"Eres Mediano o Pequeño. Eliges el tamaño cuando seleccionas esta raza."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Claws",
+					"name": "Aguantar la Respiración",
 					"entries": [
-						"You have claws that you can use to make unarmed strikes. When you hit with them, the strike deals {@damage 1d6} + your Strength modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike."
+						"Puedes aguantar la respiración hasta 1 hora."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Hold Breath",
+					"name": "Armadura Natural",
 					"entries": [
-						"You can hold your breath for up to 1 hour."
+						"Tu caparazón te proporciona una CA de 17 (tu modificador por Destreza no afecta a este valor). No puedes llevar armaduras ligeras, medias ni pesadas, pero si utilizas un escudo, puedes aplicar el bonificador del escudo de manera normal."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Natural Armor",
+					"name": "Defensa con Caparazón",
 					"entries": [
-						"Your shell provides you a base AC of 17 (your Dexterity modifier doesn't affect this number). You can't wear light, medium, or heavy armor, but if you are using a shield, you can apply the shield's bonus as normal."
+						"Puedes esconderte en tu caparazón como acción. Hasta que salgas, obtendrás un bonificador de +4 a tu CA y tendrás ventaja en las tiradas de salvación de Fuerza y Constitución. Mientras estés en el caparazón, estarás {@condition derribado|PHB-ES}, tu velocidad será 0 y no podrá aumentar, tendrás desventaja en las tiradas de salvación de Destreza, no podrás llevar a cabo reacciones y la única acción que podrás realizar es una acción adicional para salir del caparazón."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Nature's Intuition",
+					"name": "Garras",
 					"entries": [
-						"Thanks to your mystical connection to nature, you gain proficiency with one of the following skills of your choice: {@skill Animal Handling}, {@skill Medicine}, {@skill Nature}, {@skill Perception}, {@skill Stealth}, or {@skill Survival}."
+						"Tienes unas garras que puedes usar para hacer ataques sin armas. Cuando impactes con ellas, el ataque infligirá {@damage 1d6} + tu modificador por Fuerza de daño cortante, en lugar del daño contundente normal de un ataque sin armas."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Shell Defense",
+					"name": "Intuición de la Naturaleza",
 					"entries": [
-						"You can withdraw into your shell as an action. Until you emerge, you gain a +4 bonus to your AC, and you have advantage on Strength and Constitution saving throws. While in your shell, you are {@condition prone}, your speed is 0 and can't increase, you have disadvantage on Dexterity saving throws, you can't take reactions, and the only action you can take is a bonus action to emerge from your shell."
+						"Gracias a tu conexión mística con la naturaleza, ganas competencia en una de las siguientes habilidades a tu elección: {@skill Medicina|PHB-ES}, {@skill Naturaleza|PHB-ES}, {@skill Percepción|PHB-ES}, {@skill Sigilo|PHB-ES}, {@skill Supervivencia|PHB-ES} o {@skill Trato con Animales|PHB-ES}."
 					]
 				}
 			],
 			"fluff": {
 				"entries": [
-					"Tortles have a saying: \"We wear our homes on our backs.\" These turtle folk live on many worlds, most often journeying up and down coasts, along waterways, and across the sea. Tortles don't have a unified story of how they were created, but they all have a sense of being mystically connected to the natural world. Carrying their shelter on their backs gives tortles a special feeling of security wherever they go, for even if they visit a far, unknown country, they have a place to lay their heads.",
-					"Tortles exhibit the same range of coloration and patterns found among turtles, and many tortles enjoy adorning their shells in distinctive ways."
+					"Los tortogas tienen un dicho: \"Llevamos nuestra casa a la espalda\". Este pueblo de gente tortuga habita en muchos mundos, en la mayoría de los casos viajando por sus costas, junto a cursos de agua y por el mar. Los tortogas no poseen una historia unificada sobre su creación, pero todos tienen la sensación de que están místicamente conectados al mundo natural. Llevar su refugio sobre la espalda proporciona a los tortogas una sensación especial de seguridad allí donde van, porque, incluso si visitan un país lejano y desconocido, cuentan con un sitio para descansar.",
+					"Los tortogas muestran la misma gama de colores y patrones que se encuentran entre las tortugas y a muchos de ellos les encanta adornar sus caparazones de maneras distintivas."
 				],
 				"images": [
 					{
@@ -3729,7 +3728,7 @@
 			}
 		},
 		{
-			"name": "Triton",
+			"name": "Tritón",
 			"source": "MPMM-ES",
 			"page": 35,
 			"lineage": "VRGR-ES",
@@ -3753,21 +3752,21 @@
 						"1": {
 							"daily": {
 								"1": [
-									"fog cloud"
+									"nube de oscurecimiento|PHB-ES"
 								]
 							}
 						},
 						"3": {
 							"daily": {
 								"1": [
-									"gust of wind"
+									"ráfaga de viento|PHB-ES"
 								]
 							}
 						},
 						"5": {
 							"daily": {
 								"1": [
-									"water walk"
+									"caminar sobre el agua|PHB-ES"
 								]
 							}
 						}
@@ -3784,52 +3783,52 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Speed",
+					"name": "Velocidad",
 					"entries": [
-						"Your walking speed is 30 feet, and you have a swimming speed equal to your walking speed."
+						"Tu velocidad caminando es de 30 pies y tienes una velocidad nadando igual a tu velocidad caminando."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Amphibious",
+					"name": "Anfibio",
 					"entries": [
-						"You can breathe air and water."
+						"Puedes respirar tanto dentro como fuera del agua."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Control Air and Water",
+					"name": "Control del Aire y del Agua",
 					"entries": [
-						"You can cast {@spell fog cloud} with this trait. Starting at 3rd level, you can cast the {@spell gust of wind} spell with this trait. Starting at 5th level, you can also cast the {@spell water walk} spell with it. Once you cast any of these spells with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.",
-						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+						"Puedes lanzar {@spell nube de oscurecimiento|PHB-ES} con este atributo. A partir del nivel 3, puedes lanzar el conjuro {@spell ráfaga de viento|PHB-ES} con este atributo. A partir del nivel 5, también puedes lanzar el conjuro {@spell caminar sobre el agua|PHB-ES} con él. Cuando lances cualquiera de estos conjuros con este atributo, no podrás volver a lanzar ese conjuro con él hasta que finalices un descanso largo. También puedes lanzar estos conjuros usando cualquier espacio de conjuro que tengas del nivel apropiado.",
+						"La Inteligencia, la Sabiduría o el Carisma es tu aptitud mágica para lanzar estos conjuros con este atributo (elígela cuando selecciones esta raza)."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Darkvision",
+					"name": "Emisario del Mar",
 					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+						"Puedes comunicar ideas sencillas a cualquier bestia, elemental o monstruosidad que tenga velocidad nadando. La criatura puede comprender tus palabras, aunque tú no tienes ninguna capacidad especial para comprenderla a ella."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Emissary of the Sea",
+					"name": "Guardia de las Profundidades",
 					"entries": [
-						"You can communicate simple ideas to any Beast, Elemental, or Monstrosity that has a swimming speed. It can understand your words, though you have no special ability to understand it in return."
+						"Tras habituarte a las gélidas profundidades del océano, tienes resistencia al daño de frío."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Guardian of the Depths",
+					"name": "Visión en la Oscuridad",
 					"entries": [
-						"Adapted to the frigid ocean depths, you have resistance to cold damage."
+						"Puedes ver con luz tenue a 60 pies o menos de ti como si hubiera luz brillante, y en la oscuridad como si hubiera luz tenue. En esa oscuridad, solo disciernes los colores como tonos de gris."
 					]
 				}
 			],
 			"fluff": {
 				"entries": [
-					"Originally from the Elemental Plane of Water, many tritons entered the Material Plane centuries ago in response to the growing threat of evil elementals. Those tritons spread across the worlds' oceans, protecting the surface from terrors in the deep. Over time, triton have extended their stewardship over the sea floor to the ocean's surface.",
-					"Tritons have webbed hands and feet, small fins on their calves, and coloration that favors blues and greens."
+					"Originarios del Plano Elemental del Agua, muchos tritones entraron en el Plano Material hace siglos como respuesta a la amenaza creciente de los elementales malvados. Estos tritones se extendieron por los océanos de los mundos para proteger la superficie frente a los terrores de sus profundidades. Con el paso del tiempo, los tritones han ampliado su protección del lecho marino a la superficie del océano.",
+					"Los tritones poseen manos y pies palmeados, pequeñas aletas en las pantorrillas y colores que tienden hacia los azules y los verdes."
 				],
 				"images": [
 					{
@@ -3863,12 +3862,12 @@
 				{
 					"innate": {
 						"1": [
-							"animal friendship"
+							"encantar animal|PHB-ES"
 						],
 						"3": {
 							"daily": {
 								"1": [
-									"suggestion"
+									"sugestión|PHB-ES"
 								]
 							}
 						}
@@ -3882,7 +3881,7 @@
 					},
 					"known": {
 						"1": [
-							"poison spray#c"
+							"rociada venenosa|PHB-ES#c"
 						]
 					}
 				}
@@ -3890,45 +3889,45 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Size",
+					"name": "Tamaño",
 					"entries": [
-						"You are Medium or Small. You choose the size when you select this race."
+						"Eres Mediano o Pequeño. Eliges el tamaño cuando seleccionas esta raza."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Darkvision",
+					"name": "Lanzamiento de Conjuros Serpentino",
 					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+						"Conoces el truco {@spell rociada venenosa|PHB-ES}. Puedes lanzar {@spell encantar animal|PHB-ES} una cantidad ilimitada de veces con este atributo, pero solo puedes hacer objetivo a serpientes. A partir del nivel 3, también puedes lanzar {@spell sugestión|PHB-ES} con este atributo. Cuando lo lances, no podrás volver a hacerlo hasta que finalices un descanso largo. También puedes lanzarlo usando cualquier espacio de conjuro que tengas de nivel 2 o superior.",
+						"La inteligencia, la Sabiduría o el Carisma es tu aptitud mágica para lanzar estos conjuros con este atributo (elígela cuando selecciones esta raza)."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Magic Resistance",
+					"name": "Resistencia al Veneno",
 					"entries": [
-						"You have advantage on saving throws against spells."
+						"Tienes ventaja en las tiradas de salvación para evitar o poner fin al estado de {@condition envenenado|PHB-ES} sobre ti mismo. También posees resistencia al daño de veneno."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Poison Resilience",
+					"name": "Resistencia Mágica",
 					"entries": [
-						"You have advantage on saving throws you make to avoid or end the {@condition poisoned} condition on yourself. You also have resistance to poison damage."
+						"Tienes ventaja en las tiradas de salvación contra conjuros."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Serpentine Spellcasting",
+					"name": "Visión en la Oscuridad",
 					"entries": [
-						"You know the {@spell poison spray} cantrip. You can cast {@spell animal friendship} an unlimited number of times with this trait, but you can target only snakes with it. Starting at 3rd level, you can also cast {@spell suggestion} with this trait. Once you cast it, you can't do so again until you finish a long rest. You can also cast it using any spell slots you have of 2nd level or higher.",
-						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+						"Puedes ver con luz tenue a 60 pies o menos de ti como si hubiera luz brillante, y en la oscuridad como si hubiera luz tenue. En esa oscuridad, solo disciernes los colores como tonos de gris."
 					]
 				}
 			],
 			"fluff": {
 				"entries": [
-					"Yuan-ti were originally humans who transformed themselves into serpent folk through ancient rituals. Most yuan-ti were corrupted into monsters by those rites, but some yuan-ti instead became a new people who mix characteristics of humans and snakes.",
-					"Blessed with resistance to magical and poisonous effects by the rituals that created them, each of these yuan-ti manifests their serpentine heritage in a variety of ways: a forked tongue, snake eyes, a snakelike nose, or some other ophidian characteristic. However a yuan-ti looks, they have the power to pursue great good or evil in the multiverse."
+					"Los yuan-tis eran originalmente humanos que se transformaron en un pueblo ofidio mediante rituales ancestrales. Estos rituales hicieron que muchos yuan-tis se corrompieran y se volvieran monstruos, pero otros se convirtieron en un nuevo pueblo que combina características de los humanos y las serpientes.",
+					"Bendecidos con resistencia a los efectos mágicos y venenosos por los rituales que los crearon, cada uno de estos yuan-tis manifiesta su herencia serpentina de diversas formas: una lengua bifurcada, ojos de serpiente, nariz similar al de una sierpe o cualquier otra característica ofidia. Sea cual sea su aspecto, los yuan-tis tienen el poder de realizar un gran bien o un gran mal en el multiverso."
 				],
 				"images": [
 					{
@@ -6203,7 +6202,7 @@
 			}
 		},
 		{
-			"name": "Custom Lineage",
+			"name": "Linaje personalizado",
 			"source": "TCE-ES",
 			"page": 8,
 			"lineage": true,
@@ -6240,62 +6239,62 @@
 			],
 			"languageProficiencies": [
 				{
-					"common": true,
+					"común|PHB-ES": true,
 					"anyStandard": 1
 				}
 			],
 			"entries": [
-				"Instead of choosing one of the game's races for your character at 1st level, you can use the following traits to represent your character's lineage, giving you full control over how your character's origin shaped them:",
+				"En lugar de elegir una de las razas del juego para tu personaje en el nivel 1, puedes usar los siguientes atributos para representar el linaje de tu personaje, lo que te brinda un control total sobre cómo ha influido su origen en tu personaje:",
 				{
 					"type": "entries",
-					"name": "Creature Type",
+					"name": "Tipo de criatura",
 					"entries": [
-						"You are a humanoid. You determine your appearance and whether you resemble any of your kin."
+						"Eres humanoide. Tú eliges tu aspecto y si quieres o no parecerte a otros miembros de tu raza."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Size",
+					"name": "Tamaño",
 					"entries": [
-						"You are Small or Medium (your choice)."
+						"Eres Pequeño o Mediano (a tu elección)."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Feat",
+					"name": "Dote",
 					"entries": [
-						"You gain one {@5etools feat|feats.html} of your choice for which you qualify."
+						"Ganas una {@5etools dote|feats.html} de tu elección para la que cumplas las condiciones."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Variable Trait",
+					"name": "Atributo variable",
 					"entries": [
-						"You gain one of the following options of your choice: (a) {@sense darkvision} with a range of 60 feet or (b) proficiency in one skill of your choice."
+						"Ganas una de las siguientes opciones, a tu elección: (a) {@sense visión en la oscuridad|PHB-ES} con un alcance de 60 pies o (b) competencia en una habilidad de tu elección."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Languages",
+					"name": "Idiomas",
 					"entries": [
-						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
+						"Puedes hablar, leer y escribir en común y en otro idioma que tu DM y tú acordéis que es apropiado para tu personaje."
 					]
 				},
-				"Your race is considered to be a Custom Lineage for any game feature that requires a certain race, such as elf or dwarf."
+				"Tu raza se considera una Linaje personalizado para cualquier característica del juego que requiera una raza específica, como elfo o enano."
 			],
 			"_versions": [
 				{
-					"name": "Custom Lineage; Darkvision",
+					"name": "Linaje personalizado; Visión en la oscuridad",
 					"source": "TCE-ES",
 					"_mod": {
 						"entries": {
 							"mode": "replaceArr",
-							"replace": "Variable Trait",
+							"replace": "Atributo variable",
 							"items": {
-								"name": "Variable Trait; Darkvision",
+								"name": "Atributo variable; Visión en la oscuridad",
 								"type": "entries",
 								"entries": [
-									"You gain {@sense darkvision} with a range of 60 feet."
+									"Ganas {@sense visión en la oscuridad|PHB-ES} con un alcance de 60 pies."
 								]
 							}
 						}
@@ -6303,17 +6302,17 @@
 					"skillProficiencies": null
 				},
 				{
-					"name": "Custom Lineage; Skill Proficiency",
+					"name": "Linaje personalizado; Competencia en una habilidad",
 					"source": "TCE-ES",
 					"_mod": {
 						"entries": {
 							"mode": "replaceArr",
-							"replace": "Variable Trait",
+							"replace": "Atributo variable",
 							"items": {
-								"name": "Variable Trait; Skill Proficiency",
+								"name": "Atributo variable; Competencia en una habilidad",
 								"type": "entries",
 								"entries": [
-									"You gain proficiency in one skill of your choice."
+									"Ganas competencia en una habilidad de tu elección."
 								]
 							}
 						}
@@ -6326,12 +6325,6 @@
 			"name": "Aasimar",
 			"source": "VGM-ES",
 			"page": 104,
-			"otherSources": [
-				{
-					"source": "EGW-ES",
-					"page": 166
-				}
-			],
 			"reprintedAs": [
 				"Aasimar|MPMM-ES"
 			],
@@ -6357,8 +6350,8 @@
 			"darkvision": 60,
 			"languageProficiencies": [
 				{
-					"common": true,
-					"celestial": true
+					"común|PHB-ES": true,
+					"celestial|PHB-ES": true
 				}
 			],
 			"resist": [
@@ -6374,58 +6367,65 @@
 					"ability": "cha",
 					"known": {
 						"1": [
-							"light#c"
+							"luz|PHB-ES#c"
 						]
 					}
 				}
 			],
 			"entries": [
 				{
-					"name": "Age",
+					"name": "Edad",
 					"type": "entries",
 					"entries": [
-						"Aasimar mature at the same rate as humans, but they can live up to 160 years."
+						"Los aasimars maduran al mismo ritmo que los humanos, pero pueden vivir hasta los 160 años."
+					]
+				},
+				{
+					"name": "Alineamiento",
+					"type": "entries",
+					"entries": [
+						"Imbuidos de poder celestial, la mayoría de los aasimars son buenos. Los aasimars marginados suelen ser neutrales o incluso malvados."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Size",
+					"name": "Tamaño",
 					"entries": [
-						"Aasimar have the same range of height and weight as humans."
+						"Un aasimar tiene el mismo abanico de alturas y pesos que los humanos."
 					]
 				},
 				{
-					"name": "Darkvision",
+					"name": "Visión en la Oscuridad",
 					"entries": [
-						"Blessed with a radiant soul, your vision can easily cut through darkness. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+						"Bendecido con un alma radiante, tu visión puede atravesar fácilmente la oscuridad. Eres capaz de ver hasta 60 pies con luz tenue como si hubiera luz brillante y esa misma distancia en la oscuridad como si se tratara de luz tenue. Eso sí, no puedes distinguir colores en la oscuridad, solo tonos de gris."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Celestial Resistance",
+					"name": "Resistencia Celestial",
 					"entries": [
-						"You have resistance to necrotic damage and radiant damage."
+						"Posees resistencia a los daños necrótico y radiante."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Healing Hands",
+					"name": "Manos Curativas",
 					"entries": [
-						"As an action, you can touch a creature and cause it to regain a number of hit points equal to your level. Once you use this trait, you can't use it again until you finish a long rest."
+						"Como acción, puedes tocar una criatura y hacer que esta recupere tantos puntos de golpe como tu nivel. Una vez uses este atributo, no podrás volver a emplearlo hasta finalizar un descanso largo."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Light Bearer",
+					"name": "Portador de Luz",
 					"entries": [
-						"You know the {@spell light} cantrip. Charisma is your spellcasting ability for it."
+						"Conoces el truco de {@spell luz|PHB-ES}. El Carisma es tu aptitud mágica para lanzar conjuros."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Languages",
+					"name": "Idiomas",
 					"entries": [
-						"You can speak, read, and write Common and Celestial."
+						"Puedes hablar, leer y escribir en común y celestial."
 					],
 					"type": "entries"
 				}
@@ -6438,44 +6438,44 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Aasimar bear within their souls the light of the heavens. They are descended from humans with a touch of the power of Mount Celestia, the divine realm of many lawful good deities. Aasimar are born to serve as champions of the gods, their births hailed as blessed events. They are a people of otherworldly visages, with luminous features that reveal their celestial heritage.",
+									"Los aasimars llevan dentro del alma la luz de los cielos. Descienden de humanos que cuentan con una brizna del poder del Monte Celestia, el reino divino en el que habitan muchas deidades legales buenas. Los aasimars han venido al mundo para ser los campeones de los dioses, por lo que sus nacimientos son aclamados como eventos benditos. Son personas de rostros de ultraterrenales, con rasgos luminosos que revelan su herencia celestial.",
 									{
 										"type": "inset",
-										"name": "Falling from Grace or Rising to It",
+										"name": "Perder la gracia o alcanzarla",
 										"entries": [
-											"With your DM's consent, you can change your character's subrace to fallen aasimar if your protector/scourge aasimar turns to evil. To do so, replace your subrace benefits, including the ability score increase, with those of a fallen aasimar.",
-											"Similarly, if your fallen aasimar turns to good, your DM might allow you to become a protector or scourge aasimar."
+											"Con el consentimiento de tu DM, puedes cambiar la subraza de tu personaje a aasimar caído si tu protector o azote aasimar se convierte en malvado. Si haces esto, reemplaza los beneficios de tu subraza, incluido el aumento de la puntuación de característica, por los de un aasimar caído.",
+											"Del mismo modo, si tu aasimar caído se vuelve bueno, tu DM puede permitirte convertirte en un protector o azote aasimar."
 										]
 									},
 									{
 										"type": "entries",
-										"name": "Celestial Champions",
+										"name": "Campeones celestiales",
 										"entries": [
-											"Aasimar are placed in the world to serve as guardians of law and good. Their patrons expect them to strike at evil, lead by example, and further the cause of justice.",
-											"From an early age, an aasimar receives visions and guidance from celestial entities via dreams. These dreams help shape an aasimar, granting a sense of destiny and a desire for righteousness.",
-											"Each aasimar can count a specific celestial agent of the gods as a guide. This entity is typically a deva, an angel who acts as a messenger to the mortal world."
+											"Los aasimars son enviados al mundo para servir como guardianes de la ley y el bien. Sus patrones esperan que combatan al mal, prediquen con el ejemplo y promuevan la causa de la justicia.",
+											"Desde edad temprana, un aasimar recibe visiones y orientación de entidades celestiales a través de los sueños. Estos sueños ayudan a dar forma a su personalidad, otorgándole la sensación de que su vida tiene un propósito y dándole un deseo de justicia.",
+											"Cada aasimar puede contar con un agente celestial específico de los dioses como guía. Esta entidad es típicamente un deva; un ángel que actúa como mensajero en el mundo mortal."
 										]
 									},
 									{
 										"type": "entries",
-										"name": "Hidden Wanderers",
+										"name": "Vagabundos ocultos",
 										"entries": [
-											"While aasimar are strident foes of evil, they typically prefer to keep a low profile. An aasimar inevitably draws the attention of evil cultists, fiends, and other enemies of good, all of whom would be eager to strike down a celestial champion if they had the chance.",
-											"When traveling, aasimar prefer hoods, closed helms, and other gear that allows them to conceal their identities. They nevertheless have no compunction about striking openly at evil. The secrecy they desire is never worth endangering the innocent."
+											"Si bien los aasimars son estridentes enemigos del mal, generalmente prefieren mantener un perfil bajo. Un aasimar llama inevitablemente la atención de los sectarios malvados, los infernales y otros adversarios del bien, quienes estarían ansiosos por derrotar a un campeón celestial si tuvieran la oportunidad.",
+											"Cuando viajan, los aasimars prefieren llevar capuchas, cascos cerrados y otros elementos de equipo que les permitan ocultar sus identidades. Sin embargo, no tienen reparos en atacar abiertamente al mal. La discreción que anhelan nunca justifica poner en peligro a los inocentes."
 										]
 									},
 									{
 										"type": "entries",
-										"name": "Aasimar Guides",
+										"name": "Guías de aasimar",
 										"entries": [
-											"An aasimar, except for one who has turned to evil, has a link to an angelic being. That being—usually a deva—provides guidance to the aasimar, though this connection functions only in dreams. As such, the guidance is not a direct command or a simple spoken word. Instead, the aasimar receives visions, prophecies, and feelings.",
-											"The angelic being is far from omniscient. Its guidance is based on its understanding of the tenets of law and good, and it might have insight into combating especially powerful evils that it knows about.",
-											"As part of fleshing out an aasimar character, consider the nature of that character's angelic guide. The Angelic Guide tables offer names and natures that you can use to flesh out your character's guide.",
+											"Un aasimar, excepto uno que se ha convertido en malvado, posee un vínculo con un ser angelical. Este último, generalmente un deva, proporciona orientación al aasimar. aunque esta conexión funciona solo en los sueños. Por tanto, el guía no imparte órdenes ni habla directamente a su protegido. En cambio, el aasimar recibe visiones, profecías y sensaciones.",
+											"El ser angelical está lejos de ser omnisciente. Su guía se basa en la comprensión de los principios de la ley y el bien, y podría saber cómo combatir aquellos males especialmente poderosos que conoce.",
+											"A la vez que desarrollas un personaje aasimar, considera la naturaleza del guía angelical del aventurero. Las tablas de \"guía angelical\" ofrecen nombres y naturalezas que puedes usar para dar forma al guía de tu personaje.",
 											{
 												"type": "table",
 												"colLabels": [
 													"d6",
-													"Name"
+													"Nombre"
 												],
 												"colStyles": [
 													"col-2 text-center",
@@ -6512,7 +6512,7 @@
 												"type": "table",
 												"colLabels": [
 													"d6",
-													"Nature"
+													"Naturaleza"
 												],
 												"colStyles": [
 													"col-2 text-center",
@@ -6521,54 +6521,54 @@
 												"rows": [
 													[
 														"1",
-														"Bookish and lecturing"
+														"Estudioso y didáctico"
 													],
 													[
 														"2",
-														"Compassionate and hopeful"
+														"Compasivo y esperanzado"
 													],
 													[
 														"3",
-														"Practical and lighthearted"
+														"Práctico y alegre"
 													],
 													[
 														"4",
-														"Fierce and vengeful"
+														"Feroz y vengativo"
 													],
 													[
 														"5",
-														"Stern and judgmental"
+														"Severo y crítico"
 													],
 													[
 														"6",
-														"Kind and parental"
+														"Amable y parental"
 													]
 												]
 											},
 											{
 												"type": "inset",
-												"name": "Note to the DM: Playing an Angelic Guide",
+												"name": "Nota para el DM: Jugar un guía angelical",
 												"entries": [
-													"As DM, you take on the role of an aasimar's angelic guide and decide what kind of advice or omens to send in dreams.",
-													"The deva, or other celestial being, is your chance to add special roleplaying opportunities to the game. Remember, a deva lives in a realm of absolute law and good. The deva might not understand the compromises and hard choices that mortals must grapple with in the world. To the deva, an aasimar is a prized student who must live up to high, sometimes inflexible standards."
+													"Como DM, asumes el papel de guía angelical de un aasimar y decides qué tipo de consejos o presagios envías a través de sus sueños.",
+													"El deva, o cualquier otro ser celestial, es tu oportunidad de añadir situaciones excepcionales que poder interpretar. Recuerda que los devas viven en un reino de ley absoluta y bondad. Podrían no entender los compromisos y las difíciles decisiones con las que los mortales deben lidiar en su mundo. Para el deva, un aasimar es un estudiante preciado que debe cumplir con estándares altos, a veces inflexibles."
 												]
 											}
 										]
 									},
 									{
 										"type": "entries",
-										"name": "Conflicted Souls",
+										"name": "Almas en conflicto",
 										"entries": [
-											"Despite its celestial origin, an aasimar is mortal and possesses free will. Most aasimar follow their ordained path, but some grow to see their abilities as a curse. These disaffected aasimar are typically content to turn away from the world, but a few become agents of evil. In their minds, their exposure to celestial powers amounted to little more than brainwashing.",
-											"Evil aasimar make deadly foes. The radiant power they once commanded becomes corrupted into a horrid, draining magic. And their angelic guides abandon them.",
-											"Even aasimar wholly dedicated to good sometimes feel torn between two worlds. The angels that guide them see the world from a distant perch. An aasimar who wishes to stop and help a town recover from a drought might be told by an angelic guide to push forward on a greater quest. To a distant angel, saving a few commoners might pale in comparison to defeating a cult of Orcus. An aasimar's guide is wise but not infallible."
+											"A pesar de su origen celestial, un aasimar es mortal y posee libre albedrío. La mayoría de ellos siguen su camino predestinado, pero algunos llegan a ver sus habilidades como una maldición. Estos aasimars descontentos suelen conformarse con alejarse del mundo, pero unos pocos se convierten en agentes del mal. En sus mentes, su exposición a los poderes celestes equivalía a poco más que un lavado de cerebro.",
+											"Los aasimars malvados son enemigos mortales. El poder radiante que alguna vez controlaron es corrompido, transformándose en una magia horrible y agotadora. Además, sus guías angelicales los abandonan.",
+											"Incluso los aasimars totalmente dedicados al bien a veces se sienten divididos entre dos mundos. Los ángeles que los orientan ven lo terrenal desde una posición distante. Un guía angelical puede decirle a un aasimar que desea detenerse y ayudar a un pueblo a recuperarse de una sequía que avance en pos de una cruzada mayor. Para un ángel lejano, salvar a algunos plebeyos podría palidecer en comparación con derrotar a un culto de Orcus. El guía de un aasimar es sabio, pero no infalible."
 										]
 									},
 									{
 										"type": "entries",
-										"name": "Aasimar Names",
+										"name": "Nombres aasimars",
 										"entries": [
-											"Most aasimar are born from human parents, and they use the same naming conventions as their native culture."
+											"La mayoría de los aasimars nacen de padres humanos y utilizan las mismas convenciones de nombres que su cultura nativa."
 										]
 									}
 								]
@@ -11943,7 +11943,7 @@
 		{
 			"name": "Air",
 			"source": "MPMM-ES",
-			"raceName": "Genasi",
+			"raceName": "Genasí",
 			"raceSource": "MPMM-ES",
 			"page": 16,
 			"speed": 35,
@@ -12025,7 +12025,7 @@
 		{
 			"name": "Earth",
 			"source": "MPMM-ES",
-			"raceName": "Genasi",
+			"raceName": "Genasí",
 			"raceSource": "MPMM-ES",
 			"page": 17,
 			"additionalSpells": [
@@ -12086,7 +12086,7 @@
 		{
 			"name": "Fire",
 			"source": "MPMM-ES",
-			"raceName": "Genasi",
+			"raceName": "Genasí",
 			"raceSource": "MPMM-ES",
 			"page": 17,
 			"resist": [
@@ -12160,7 +12160,7 @@
 		{
 			"name": "Water",
 			"source": "MPMM-ES",
-			"raceName": "Genasi",
+			"raceName": "Genasí",
 			"raceSource": "MPMM-ES",
 			"page": 17,
 			"speed": {

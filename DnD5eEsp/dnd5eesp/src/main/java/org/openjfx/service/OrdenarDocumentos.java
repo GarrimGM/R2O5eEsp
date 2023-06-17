@@ -67,7 +67,7 @@ public class OrdenarDocumentos extends Service<Void> {
             JsonObject jsonEsp = new JsonObject();
             try {
                 BufferedReader bufferedReaderEsp = new BufferedReader(new FileReader(rutaDocEsp));
-                Gson gsonEsp = new Gson();
+                Gson gsonEsp = new GsonBuilder().serializeNulls().create();
                 jsonEsp = gsonEsp.fromJson(bufferedReaderEsp, JsonObject.class);
                 //Comprueba si tiene el campo
                 if(!jsonEsp.has(importTable.getFieldName())){
@@ -79,7 +79,7 @@ public class OrdenarDocumentos extends Service<Void> {
                 JsonArray jsLista = new JsonArray();
                 jsonEsp.add(importTable.getFieldName(), jsLista);
                 try (Writer writer = new FileWriter(rutaDocEsp)) {
-                    Gson gsonCreate = new GsonBuilder().create();
+                    Gson gsonCreate = new GsonBuilder().serializeNulls().create();
                     gsonCreate.toJson(jsonEsp, writer);
                 }
                 System.out.println("Documento "+importTable.getJsonDocument()+" creado");
@@ -161,7 +161,7 @@ public class OrdenarDocumentos extends Service<Void> {
             if(!jsonEspOriginal.equals(jsonEsp)) {
                 //Actualiza el documento
                 try (Writer writer = new FileWriter(rutaDocEsp)) {
-                    Gson gsonCreate = new GsonBuilder().create();
+                    Gson gsonCreate = new GsonBuilder().serializeNulls().create();
                     gsonCreate.toJson(jsonEsp, writer);
                 }
                 System.out.println("Documento "+importTable.getJsonDocument()+" guardado.");

@@ -67,7 +67,7 @@ public class CargarTablas extends Service<Void>{
                 JsonObject jsonEsp = new JsonObject();
                 try {
                     BufferedReader bufferedReaderEsp = new BufferedReader(new FileReader(rutaDocEsp));
-                    Gson gsonEsp = new Gson();
+                    Gson gsonEsp = new GsonBuilder().serializeNulls().create();
                     jsonEsp = gsonEsp.fromJson(bufferedReaderEsp, JsonObject.class);
                     //Comprueba si tiene el campo
                     if(!jsonEsp.has(importTable.getFieldName())){
@@ -79,7 +79,7 @@ public class CargarTablas extends Service<Void>{
                     JsonArray jsLista = new JsonArray();
                     jsonEsp.add(importTable.getFieldName(), jsLista);
                     try (Writer writer = new FileWriter(rutaDocEsp)) {
-                        Gson gsonCreate = new GsonBuilder().create();
+                        Gson gsonCreate = new GsonBuilder().serializeNulls().create();
                         gsonCreate.toJson(jsonEsp, writer);
                     }
                     System.out.println("Documento "+importTable.getJsonDocument()+" creado");
@@ -94,7 +94,7 @@ public class CargarTablas extends Service<Void>{
                     try {
                         String rutaDocFluff = AppProperties.getInstance().getProperty("rutaOriginal")+"data\\"+importTable.getFluffDocument();
                         BufferedReader bufferedReader = new BufferedReader(new FileReader(rutaDocFluff));
-                        Gson gson = new Gson();
+                        Gson gson = new GsonBuilder().serializeNulls().create();
                         JsonObject json = gson.fromJson(bufferedReader, JsonObject.class);
                         listaDatosFluff = json.get(importTable.getFluffFieldName()).getAsJsonArray();
 
@@ -120,7 +120,7 @@ public class CargarTablas extends Service<Void>{
                 if(importTable.getTypeTable().equals("A")) {
                     try {
                         BufferedReader bufferedReader = new BufferedReader(new FileReader(rutaDocOriginal));
-                        Gson gson = new Gson();
+                        Gson gson = new GsonBuilder().serializeNulls().create();
                         JsonObject json = gson.fromJson(bufferedReader, JsonObject.class);
                         JsonArray listaDatos = json.get(importTable.getFieldName()).getAsJsonArray();
                         //Recorre la lista original y mira si es uno de los sources a traducir
@@ -153,7 +153,7 @@ public class CargarTablas extends Service<Void>{
                     //Tabla de magicitems
                     try {
                         BufferedReader bufferedReader = new BufferedReader(new FileReader(rutaDocOriginal));
-                        Gson gson = new Gson();
+                        Gson gson = new GsonBuilder().serializeNulls().create();
                         JsonObject json = gson.fromJson(bufferedReader, JsonObject.class);
                         JsonArray listaDatos = json.get(importTable.getFieldName()).getAsJsonArray();
                         //Recorre la lista original y mira si es uno de los sources a traducir
@@ -186,7 +186,7 @@ public class CargarTablas extends Service<Void>{
                 } else if(importTable.getTypeTable().equals("C")) {
                     try {
                         BufferedReader bufferedReader = new BufferedReader(new FileReader(rutaDocOriginal));
-                        Gson gson = new Gson();
+                        Gson gson = new GsonBuilder().serializeNulls().create();
                         JsonObject json = gson.fromJson(bufferedReader, JsonObject.class);
                         JsonArray listaDatos = json.get(importTable.getFieldName()).getAsJsonArray();
                         //Recorre la lista original y mira si es uno de los sources a traducir
@@ -230,7 +230,7 @@ public class CargarTablas extends Service<Void>{
                 if(!jsonEspOriginal.equals(jsonEsp)) {
                     //Actualiza el documento
                     try (Writer writer = new FileWriter(rutaDocEsp)) {
-                        Gson gsonCreate = new GsonBuilder().create();
+                        Gson gsonCreate = new GsonBuilder().serializeNulls().create();
                         gsonCreate.toJson(jsonEsp, writer);
                     }
                     System.out.println("Documento "+importTable.getJsonDocument()+" guardado.");
