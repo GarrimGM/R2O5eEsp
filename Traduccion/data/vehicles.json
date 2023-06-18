@@ -1,6 +1,2520 @@
 {
 	"vehicle": [
+		{
+			"name": "Aparato de Kwalish",
+			"source": "DMG-ES",
+			"page": 156,
+			"srd": "Apparatus of the Crab",
+			"vehicleType": "OBJECT",
+			"size": "L",
+			"terrain": [
+				"sea"
+			],
+			"capCrew": 1,
+			"capPassenger": 1,
+			"ac": 20,
+			"speed": {
+				"walk": 30,
+				"swim": 30,
+				"note": "(o 0 pies en ambos casos si no se han extendido patas y cola)"
+			},
+			"hp": 200,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"entries": [
+				"A primera vista, este objeto parece un barril de hierro sellado, Grande, que pesa 500 libras. Tiene un resorte escondido, que es posible encontrar teniendo éxito en una prueba de Inteligencia ({@skill Investigación|PHB-ES}) CD 20. Activar el resorte abre una escotilla en uno de los extremos del barril, permitiendo entrar arrastrándose a dos criaturas de tamaño Mediano o más pequeñas. Dentro, en el otro extremo, hay 10 palancas, todas ellas en posición neutra y que pueden ser movidas hacia arriba o hacia abajo. Cuando se pulsan ciertas palancas, el aparato se transforma hasta parecer una langosta gigante.",
+				"El Aparato de Kwalish es un objeto Grande con el siguiente perfil:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Clase de Armadura:",
+							"entry": "20"
+						},
+						{
+							"type": "item",
+							"name": "Puntos de golpe:",
+							"entry": "200"
+						},
+						{
+							"type": "item",
+							"name": "Velocidad:",
+							"entry": "30 pies, 30 pies nadando (o 0 pies en ambos casos si no se han extendido patas y cola)"
+						},
+						{
+							"type": "item",
+							"name": "Inmunidad a daño:",
+							"entry": "psíquico, veneno"
+						}
+					]
+				},
+				"El aparato puede ser usado como vehículo, pero para ello necesita un piloto. Mientras la escotilla esté cerrada, el compartimento es estanco y hermético. Contiene suficiente aire para respirar durante 10 horas, divididas entre el número de criaturas del interior que necesiten respirar.",
+				"El aparato flota en el agua. También puede sumergirse hasta una profundidad de 900 pies. Si desciende por debajo de ella, recibirá {@damage 2d6} de daño por minuto debido a la presión.",
+				"Una criatura en el compartimento puede emplear una acción para mover hasta dos de las palancas arriba o abajo. Después de cada uso, la palanca vuelve a la posición neutra. Cada palanca, de izquierda a derecha, funciona como se muestra en la tabla \"palancas del Aparato de Kwalish\".",
+				{
+					"type": "table",
+					"caption": "Palancas del Aparato de Kwalish",
+					"colLabels": [
+						"Palanca",
+						"Arriba",
+						"Abajo"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-5-5",
+						"col-5-5"
+					],
+					"rows": [
+						[
+							"1",
+							"La cola y las patas se extienden, permitiendo que el aparato camine y nade.",
+							"Las patas y la cola se retraen, reduciendo la velocidad del aparato a 0 e impidiendo que se beneficie de ningún bonificador a su velocidad."
+						],
+						[
+							"2",
+							"La persiana de la ventana delantera se abre.",
+							"La persiana de la ventana delantera se cierra."
+						],
+						[
+							"3",
+							"Las persianas de las ventanas laterales se abren (dos por lado).",
+							"Las persianas de las ventanas laterales se cierran (dos por lado)."
+						],
+						[
+							"4",
+							"Se extienden dos garras de la parte frontal del aparato.",
+							"Se retraen las garras."
+						],
+						[
+							"5",
+							"Cada garra, si está extendida, hace el siguiente ataque con arma cuerpo a cuerpo: {@hit 8} a impactar, alcance 5 pies, un objetivo. {@italic Impacto:} 7 ({@damage 2d6}) de daño contundente.",
+							"Cada garra, si está extendida, hace el siguiente ataque con arma cuerpo a cuerpo: {@hit 8} a impactar, alcance 5 pies, un objetivo. {@italic Impacto:} la criatura es {@condition agarrado|PHB-ES|agarrada} (CD 15 para escapar)."
+						],
+						[
+							"6",
+							"El aparato camina o nada hacia delante.",
+							"El aparato camina o nada hacia atrás."
+						],
+						[
+							"7",
+							"El aparato gira 90 grados a la izquierda.",
+							"El aparato gira 90 grados a la derecha."
+						],
+						[
+							"8",
+							"Unas linternas con forma de ojo emiten luz brillante en un radio de 30 pies y luz tenue 30 pies más allá.",
+							"La luz se apaga."
+						],
+						[
+							"9",
+							"El aparato desciende hasta 20 pies en un medio líquido.",
+							"El aparato asciende hasta 20 pies en un medio líquido."
+						],
+						[
+							"10",
+							"La escotilla trasera se abre.",
+							"La escotilla trasera se cierra."
+						]
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/DMG/Apparatus of Kwalish.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Demon Grinder",
+			"source": "BGDIA-ES",
+			"page": 219,
+			"vehicleType": "INFWAR",
+			"size": "G",
+			"weight": 12000,
+			"terrain": [
+				"land"
+			],
+			"capCreature": 8,
+			"capCargo": 2000,
+			"speed": 100,
+			"str": 18,
+			"dex": 10,
+			"con": 18,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"hp": {
+				"hp": 200,
+				"dt": 10,
+				"mt": 20
+			},
+			"immune": [
+				"fire",
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"stunned",
+				"unconscious"
+			],
+			"trait": [
+				{
+					"name": "Crushing Wheels",
+					"entries": [
+						"The Demon Grinder can move through the space of any Large or smaller creature. When it does, the creature must succeed on a DC 11 Dexterity saving throw or take 22 ({@damage 4d10}) bludgeoning damage and be knocked {@condition prone}. If the creature was already {@condition prone}, it takes an extra 22 ({@damage 4d10}) bludgeoning damage. This trait can't be used against a particular creature more than once each turn."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The Demon Grinder's weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Prone Deficiency",
+					"entries": [
+						"If the Demon Grinder rolls over and falls {@condition prone}, it can't right itself and is {@condition incapacitated} until flipped upright."
+					]
+				}
+			],
+			"actionStation": [
+				{
+					"name": "Helm (Requires 1 Crew and Grants Three-Quarters Cover)",
+					"entries": [
+						"Drive and steer the Demon Grinder."
+					]
+				},
+				{
+					"name": "Chomper (Requires 1 Crew and Grants Half Cover)",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}25 ({@damage 6d6 + 4}) piercing damage. A target reduced to 0 hit points by this damage is ground to bits and spit out through pipes on both sides of the Demon Grinder. Any nonmagical items the target was holding or carrying are destroyed as well."
+					]
+				},
+				{
+					"name": "Wrecking Ball (Requires 1 Crew and Grants Half Cover)",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 15 ft., one target. {@h}40 ({@damage 8d8 + 4}) bludgeoning damage. Double the damage if the target is an object or a structure."
+					]
+				},
+				{
+					"name": "2 Harpoon Flingers (Each Station Requires 1 Crew and Grants Half Cover)",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 120 ft., one target. {@h}9 ({@damage 2d8}) piercing damage."
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/5etools-mirror-1/5etools-mirror-1.github.io/master/img/BGDIA/Demon%20Grinder.png",
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"A Demon Grinder is a bulky, armored coach that rumbles loudly as it crushes obstacles and enemies in its path with the help of a swinging wrecking ball. Iron jaws are mounted on the front of the vehicle, which handles like a garbage truck."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "vehicles/BGDIA/Demon Grinder.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Devil's Ride",
+			"source": "BGDIA-ES",
+			"page": 218,
+			"vehicleType": "INFWAR",
+			"size": "L",
+			"weight": 500,
+			"terrain": [
+				"land"
+			],
+			"capCreature": 1,
+			"capCargo": 100,
+			"speed": 120,
+			"str": 14,
+			"dex": 18,
+			"con": 12,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"hp": {
+				"hp": 30,
+				"dt": 5,
+				"mt": 10
+			},
+			"immune": [
+				"fire",
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"stunned",
+				"unconscious"
+			],
+			"trait": [
+				{
+					"name": "Jump",
+					"entries": [
+						"If the Devil's Ride moves at least 30 feet in a straight line, it can clear a distance of up to 60 feet when jumping over a chasm, ravine, or other gap. Each foot it clears on the jump costs a foot of movement."
+					]
+				},
+				{
+					"name": "Prone Deficiency",
+					"entries": [
+						"If the Devil's Ride falls {@condition prone}, it can't right itself and is {@condition incapacitated} until pulled upright."
+					]
+				},
+				{
+					"name": "Stunt",
+					"entries": [
+						"On its turn, the driver of the Devil's Ride can expend 10 feet of movement to perform one free vehicle stunt, such as a wheelie or a burnout. Before the stunt can be performed, the Devil's Ride must move at least 10 feet in a straight line. If the driver succeeds on a DC 10 Dexterity check using the bike's Dexterity, the stunt is successful. Otherwise, the driver is unable to perform the stunt and can't attempt another stunt until the start of its next turn. If the check fails by 5 or more, the Devil's Ride and all creatures riding it immediately fall {@condition prone} as the bike wipes out and comes to a dead stop."
+					]
+				}
+			],
+			"actionStation": [
+				{
+					"name": "Helm (Requires 1 Crew and Grants Half Cover)",
+					"entries": [
+						"Drive and steer the Devil's Ride."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"type": "entries",
+					"name": "Juke",
+					"entries": [
+						"If the Devil's Ride is able to move, the driver can use its reaction to grant the Devil's Ride advantage on a Dexterity saving throw."
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/5etools-mirror-1/5etools-mirror-1.github.io/master/img/BGDIA/Devil's%20Ride.png",
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"A Devil's Ride is a two-wheeled infernal war machine that handles like a motorcycle. It has spiked wheels, a screaming engine, and a cowl shaped vaguely like a grinning devil's visage, with horns for handle bars. What the vehicle lacks in weapons, it makes up for with speed and maneuverability."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "vehicles/BGDIA/Devil's Ride.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Galley",
+			"source": "GoS-ES",
+			"page": 187,
+			"vehicleType": "SHIP",
+			"size": "G",
+			"dimensions": [
+				"130 ft.",
+				"20 ft."
+			],
+			"terrain": [
+				"sea"
+			],
+			"capCrew": 80,
+			"capPassenger": 40,
+			"capCargo": 150,
+			"pace": 4,
+			"str": 24,
+			"dex": 4,
+			"con": 20,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"stunned",
+				"unconscious"
+			],
+			"hull": {
+				"ac": 15,
+				"hp": 500,
+				"dt": 20
+			},
+			"control": [
+				{
+					"name": "Helm",
+					"ac": 16,
+					"hp": 50,
+					"entries": [
+						"Move up to the speed of one of its movement components, with one 90-degree turn. If the helm is destroyed, the galley can't turn."
+					]
+				}
+			],
+			"movement": [
+				{
+					"name": "Oars",
+					"ac": 12,
+					"hp": 100,
+					"hpNote": "-5 ft. speed per 25 damage taken",
+					"speed": [
+						{
+							"mode": "water",
+							"entries": [
+								"30 ft. (requires at least 40 crew)"
+							]
+						}
+					]
+				},
+				{
+					"name": "Sails",
+					"ac": 12,
+					"hp": 100,
+					"hpNote": "-10 ft. speed per 25 damage taken",
+					"speed": [
+						{
+							"mode": "water",
+							"entries": [
+								"35 ft.; 15 ft. while sailing into the wind; 50 ft. while sailing with the wind"
+							]
+						}
+					]
+				}
+			],
+			"weapon": [
+				{
+					"name": "Ballistas",
+					"count": 4,
+					"ac": 15,
+					"hp": 50,
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}16 ({@damage 3d10}) piercing damage."
+					]
+				},
+				{
+					"name": "Mangonels",
+					"count": 2,
+					"ac": 15,
+					"hp": 100,
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 200/800 ft. (can't hit targets within 60 ft. of it), one target. {@h}27 ({@damage 5d10}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Naval Ram",
+					"ac": 20,
+					"hp": 100,
+					"dt": 10,
+					"entries": [
+						"The galley has advantage on all saving throws relating to crashing when it crashes into a creature or an object. Any damage it takes from the crash is applied to the naval ram rather than to the ship. These benefits don't apply if another vessel crashes into the galley."
+					]
+				}
+			],
+			"actionThresholds": {
+				"0": 0,
+				"1": 3,
+				"2": 20,
+				"3": 40
+			},
+			"action": [
+				"On its turn, the galley can take 3 actions, choosing from the options below. It can take only 2 actions if it has fewer than forty crew and only 1 action if it has fewer than twenty. It can't take these actions if it has fewer than three crew.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Fire Ballistas",
+							"entry": "The galley can fire its {@object ballista||ballistas} (DMG, ch. 8)."
+						},
+						{
+							"type": "item",
+							"name": "Fire Mangonels",
+							"entry": "The galley can fire its {@object mangonel||mangonels} (DMG, ch. 8)."
+						},
+						{
+							"type": "item",
+							"name": "Move",
+							"entry": "The galley can use its helm to move with its oars or sails. As part of this move, it can use its naval ram."
+						}
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Galleys are long vessels that rely on sails and sizable rowing crews to move. These ships can carry siege weapons and soldiers to war or transport large amounts of cargo for merchants. No matter the ship's purpose, the crew almost always hires extra protection, since galleys make large, cargo-rich targets for pirates.",
+							"A galley has the following features:",
+							{
+								"type": "list",
+								"style": "list-hang-notitle",
+								"items": [
+									{
+										"type": "item",
+										"name": "Ceilings",
+										"entry": "The ceiling of the galley's lower deck is 8 feet high."
+									},
+									{
+										"type": "item",
+										"name": "Light",
+										"entry": "Hanging lanterns cast bright light throughout the ship."
+									},
+									{
+										"type": "item",
+										"name": "Rigging",
+										"entry": "Rigging on the ship can be climbed without an ability check."
+									},
+									{
+										"type": "item",
+										"name": "Sails and Oars",
+										"entry": "The galley has one 120-foot-tall mast with sails to catch the wind and oars on the lower deck for rowing the vessel."
+									}
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Example Galley Crew",
+								"entries": [
+									"A galley requires a crew of eighty to properly sail or row the vessel and might carry extra passengers or soldiers. If the characters are guests on a galley, the crew consists of the following creatures, all of which have proficiency with water vehicles in addition to their normal statistics:",
+									{
+										"type": "list",
+										"items": [
+											"One captain ({@creature bandit captain})",
+											"Five other officers: a first mate, a bosun, a quartermaster, a surgeon, and a cook ({@creature scout||scouts})",
+											"Forty-two sailors ({@creature commoner||commoners})",
+											"Twelve siege engineers ({@creature guard||guards})",
+											"Twenty {@creature guard||guards}"
+										]
+									}
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Main Deck",
+								"entries": [
+									"The main deck of the galley has the following features:",
+									{
+										"type": "list",
+										"style": "list-hang-notitle",
+										"items": [
+											{
+												"type": "item",
+												"name": "Ballistas",
+												"entry": "Four ballistas (DMG, ch. 8) are attached to the fore of the deck. Ten ballista arrows are stacked and secured near each."
+											},
+											{
+												"type": "item",
+												"name": "Mangonels",
+												"entry": "Two mangonels (DMG, ch. 8) are attached to the aft of the deck. Ten mangonel stones are stacked and secured near each catapult."
+											},
+											{
+												"type": "item",
+												"name": "Naval Ram",
+												"entry": "The galley's stern features an iron naval ram used for attacking other ships."
+											},
+											{
+												"type": "item",
+												"name": "Opening",
+												"entry": "A 10-foot-wide, 80-foot-long open space in the middle of the deck stretches fore to aft and leads down to the lower deck."
+											},
+											{
+												"type": "item",
+												"name": "Railing",
+												"entry": "A 3-foot-high rail is built around the deck's perimeter, providing half cover for Medium creatures and three-quarters cover for Small creatures behind it."
+											},
+											{
+												"type": "item",
+												"name": "Rowboats",
+												"entry": "Eight rowboats are stacked in two groups of four on this deck. Ropes and pulleys can hoist these boats in and out of the water."
+											},
+											{
+												"type": "item",
+												"name": "Timpani",
+												"entry": "A timpani with two attached mallets sits on the aft of the main deck just before the opening to the lower deck. A crew member plays this instrument while the sailors on the lower deck row, the beat helping to synchronize the rowers' strokes."
+											},
+											{
+												"type": "item",
+												"name": "Wheel",
+												"entry": "The ship's wheel stands at the aft of the deck."
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Lower Deck",
+								"entries": [
+									"The cramped lower deck of the galley ship reeks of body odor and has the following features:",
+									{
+										"type": "list",
+										"style": "list-hang-notitle",
+										"items": [
+											{
+												"type": "item",
+												"name": "Cargo Holds",
+												"entry": "Cargo holds at the fore and aft of the lower deck hold crates, barrels, and ammunition secured with rope."
+											},
+											{
+												"type": "item",
+												"name": "Oars",
+												"entry": "Thirty-two benches are built into the deck, each with a 20-foot-long oar. When the ship is rowed, crew members sit on these benches to work the oars. Ten spare oars hang on the walls."
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "vehicles/GoS/galley-ship.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Keelboat",
+			"source": "GoS-ES",
+			"page": 188,
+			"vehicleType": "SHIP",
+			"size": "G",
+			"dimensions": [
+				"60 ft.",
+				"20 ft."
+			],
+			"terrain": [
+				"sea"
+			],
+			"capCrew": 3,
+			"capPassenger": 4,
+			"capCargo": 0.5,
+			"pace": 3,
+			"str": 16,
+			"dex": 7,
+			"con": 13,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"stunned",
+				"unconscious"
+			],
+			"hull": {
+				"ac": 15,
+				"hp": 100,
+				"dt": 10
+			},
+			"control": [
+				{
+					"name": "Helm",
+					"ac": 12,
+					"hp": 50,
+					"entries": [
+						"Move up to the speed of one of its movement components, with one 90-degree turn. If the helm is destroyed, the keelboat can't turn."
+					]
+				}
+			],
+			"movement": [
+				{
+					"name": "Oars",
+					"ac": 12,
+					"hp": 100,
+					"hpNote": "-5 ft. speed per 25 damage taken",
+					"speed": [
+						{
+							"mode": "water",
+							"entries": [
+								"20 ft."
+							]
+						}
+					]
+				},
+				{
+					"name": "Sails",
+					"ac": 12,
+					"hp": 100,
+					"hpNote": "-5 ft. speed per 20 damage taken ",
+					"speed": [
+						{
+							"mode": "water",
+							"entries": [
+								"25 ft.; 15 ft. while sailing into the wind; 35 ft. while sailing with the wind."
+							]
+						}
+					]
+				}
+			],
+			"weapon": [
+				{
+					"name": "Ballista",
+					"ac": 15,
+					"hp": 50,
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}16 ({@damage 3d10}) piercing damage.",
+						"Keelboats typically include a ballista only when they are equipped for combat."
+					]
+				}
+			],
+			"actionThresholds": {
+				"0": 0,
+				"1": 1,
+				"2": 2
+			},
+			"action": [
+				"On its turn, the keelboat can take 2 actions, choosing from the options below. It can take only 1 action if it has only one crew. It can't take these actions if it has no crew.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Fire Ballista",
+							"entry": "The keelboat can fire its {@object ballista} (DMG, ch. 8)."
+						},
+						{
+							"type": "item",
+							"name": "Move",
+							"entry": "The keelboat can use its helm to move with its oars or sails."
+						}
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"One of the smallest sailing vessels, keelboats can be sailed or rowed by a single person. These ships often transport small amounts of cargo or passengers. They're perfect for pleasure cruises, as they're easier and less expensive to operate than larger vessels.",
+							"A keelboat has the following features:",
+							{
+								"type": "list",
+								"style": "list-hang-notitle",
+								"items": [
+									{
+										"type": "item",
+										"name": "Light",
+										"entry": "A hanging lantern or two casts bright light across the ship."
+									},
+									{
+										"type": "item",
+										"name": "Rigging",
+										"entry": "Rigging on the ship can be climbed without an ability check."
+									},
+									{
+										"type": "item",
+										"name": "Sails",
+										"entry": "The keelboat has one 10-foot-tall mast with sails."
+									}
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Example Keelboat Crew",
+								"entries": [
+									"A keelboat requires a single crew member to operate smoothly. If the characters are guests on a keelboat, the crew consists of a single captain who has the statistics of a {@creature bandit captain} with proficiency with water vehicles."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Keelboat Deck",
+								"entries": [
+									"The deck of the keelboat has the following features:",
+									{
+										"type": "list",
+										"style": "list-hang-notitle",
+										"items": [
+											{
+												"type": "item",
+												"name": "Ballista",
+												"entry": "A ballista (DMG, ch. 8) is mounted on the fore of the deck. Ten ballista arrows are stacked and secured nearby."
+											},
+											{
+												"type": "item",
+												"name": "Oars",
+												"entry": "The deck of the ship holds twelve benches and four 15-foot-long oars. When the ship is rowed, crew members sit on these benches to work the oars."
+											},
+											{
+												"type": "item",
+												"name": "Railing",
+												"entry": "The deck has a 3-foot-high rail around its perimeter that provides half cover for Medium creatures and three-quarters cover for Small creatures behind it."
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Keelboat Cabin",
+								"entries": [
+									"The keelboat cabin has the following features:",
+									{
+										"type": "list",
+										"style": "list-hang-notitle",
+										"items": [
+											{
+												"type": "item",
+												"name": "Footlockers",
+												"entry": "Beneath each bed is a footlocker. The footlockers are iron and have AC 19, 18 hit points, and immunity to poison and psychic damage."
+											},
+											{
+												"type": "item",
+												"name": "Furnishings",
+												"entry": "Two beds and a desk with a chair stand at the aft of the cabin."
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "vehicles/GoS/smaller-ships.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Longship",
+			"source": "GoS-ES",
+			"page": 190,
+			"vehicleType": "SHIP",
+			"size": "G",
+			"dimensions": [
+				"70 ft.",
+				"20 ft."
+			],
+			"terrain": [
+				"sea"
+			],
+			"capCrew": 40,
+			"capPassenger": 100,
+			"capCargo": 10,
+			"pace": 5,
+			"str": 20,
+			"dex": 6,
+			"con": 17,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"stunned",
+				"unconscious"
+			],
+			"hull": {
+				"ac": 15,
+				"hp": 300,
+				"dt": 15
+			},
+			"control": [
+				{
+					"name": "Helm",
+					"ac": 16,
+					"hp": 50,
+					"entries": [
+						"Move up to the speed of one of its movement components, with one 90-degree turn. If the helm is destroyed, the longship can't turn."
+					]
+				}
+			],
+			"movement": [
+				{
+					"name": "Oars",
+					"ac": 12,
+					"hp": 100,
+					"hpNote": "-5 ft. speed per 25 damage taken",
+					"speed": [
+						{
+							"mode": "water",
+							"entries": [
+								"20 ft. (requires at least 20 crew)"
+							]
+						}
+					]
+				},
+				{
+					"name": "Sails",
+					"ac": 12,
+					"hp": 100,
+					"hpNote": "-10 ft. speed per 25 damage taken",
+					"speed": [
+						{
+							"mode": "water",
+							"entries": [
+								"45 ft.; 15 ft. while sailing into the wind; 60 ft. while sailing with the wind."
+							]
+						}
+					]
+				}
+			],
+			"actionThresholds": {
+				"0": 0,
+				"1": 1
+			},
+			"action": [
+				"On its turn, the longship can take the move action below. It can't take this action if it has no crew.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Move",
+							"entry": "The longship can use its helm to move with its oars or sails."
+						}
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Longships are vessels that rely on a rowing crew and sails to move across the sea. These ships are typically used to carry soldiers into combat. The size of a longship makes it easy for troops to get on and off quickly, making it the perfect ship for engaging in surprise strikes.",
+							"A longship has the following features:",
+							{
+								"type": "list",
+								"style": "list-hang-notitle",
+								"items": [
+									{
+										"type": "item",
+										"name": "Light",
+										"entry": "Hanging lanterns cast bright light over the deck."
+									},
+									{
+										"type": "item",
+										"name": "Rigging",
+										"entry": "Rigging on the ship can be climbed without an ability check."
+									},
+									{
+										"type": "item",
+										"name": "Rudder",
+										"entry": "The ship is steered by a rudder control on the aft of the deck."
+									},
+									{
+										"type": "item",
+										"name": "Sails",
+										"entry": "The longship has one 20-foot-tall mast with sails that can be used to sail the ship."
+									}
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Example Longship Crew",
+								"entries": [
+									"A longship requires a crew of forty to properly sail or row the vessel and often carries extra passengers or soldiers. If the characters are guests on a longship, the crew consists of the following creatures, all of which have proficiency with water vehicles in addition to their normal statistics:",
+									{
+										"type": "list",
+										"items": [
+											"One captain ({@creature berserker})",
+											"Five other officers: a first mate, a bosun, a quartermaster, a surgeon, and a cook ({@creature berserker||berserkers})",
+											"Thirty-four sailors ({@creature commoner||commoners})"
+										]
+									}
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Longship Deck",
+								"entries": [
+									"The deck of the longship has the following features:",
+									{
+										"type": "list",
+										"style": "list-hang-notitle",
+										"items": [
+											{
+												"type": "item",
+												"name": "Oars",
+												"entry": "Sixteen benches are built into the deck, each with a 15-foot-long oar. When the ship is rowed, crew members sit on these benches to work the oars. Five spare oars hang on the walls."
+											},
+											{
+												"type": "item",
+												"name": "Railing",
+												"entry": "The deck has a 3-foot-high rail covered in wooden shields around its perimeter that provides half cover for Medium creatures and three-quarters cover for Small creatures behind it."
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "vehicles/GoS/smaller-ships.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Rowboat",
+			"source": "GoS-ES",
+			"page": 190,
+			"vehicleType": "SHIP",
+			"size": "L",
+			"dimensions": [
+				"10 ft.",
+				"5 ft."
+			],
+			"terrain": [
+				"sea"
+			],
+			"capCrew": 2,
+			"capPassenger": 2,
+			"capCargo": 0.25,
+			"pace": 3,
+			"str": 11,
+			"dex": 8,
+			"con": 11,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"stunned",
+				"unconscious"
+			],
+			"hull": {
+				"ac": 11,
+				"hp": 50
+			},
+			"movement": [
+				{
+					"name": "Oars",
+					"isControl": true,
+					"ac": 12,
+					"hp": 25,
+					"speed": [
+						{
+							"mode": "water",
+							"entries": [
+								"15 ft.",
+								"Move up to its speed, with one 90-degree turn. Without oars, the rowboat's speed is 0."
+							]
+						}
+					]
+				}
+			],
+			"actionThresholds": {
+				"0": 0,
+				"1": 1
+			},
+			"action": [
+				"On its turn, the rowboat can take the move action below. It can't take this action if it has no crew.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Move",
+							"entry": "The rowboat can move using its oars."
+						}
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/5etools-mirror-1/5etools-mirror-1.github.io/master/img/GoS/Rowboat.png",
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"The humble rowboat serves to ferry passengers back and forth from larger ships or to navigate lakes and rivers. Due to its simple, versatile design, a rowboat has no decks or typical crew. Weighing 100 pounds, a rowboat is easy to transport and might be carried by larger ships."
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Sailing Ship",
+			"source": "GoS-ES",
+			"page": 192,
+			"vehicleType": "SHIP",
+			"size": "G",
+			"dimensions": [
+				"100 ft.",
+				"20 ft."
+			],
+			"terrain": [
+				"sea"
+			],
+			"capCrew": 30,
+			"capPassenger": 20,
+			"capCargo": 100,
+			"pace": 5,
+			"str": 20,
+			"dex": 7,
+			"con": 17,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"stunned",
+				"unconscious"
+			],
+			"hull": {
+				"ac": 15,
+				"hp": 300,
+				"dt": 15
+			},
+			"control": [
+				{
+					"name": "Helm",
+					"ac": 18,
+					"hp": 50,
+					"entries": [
+						"Move up to the speed of its sails, with one 90-degree turn. If the helm is destroyed, the ship can't turn."
+					]
+				}
+			],
+			"movement": [
+				{
+					"name": "Sails",
+					"ac": 12,
+					"hp": 100,
+					"hpNote": "-5 ft. speed per 25 damage taken",
+					"speed": [
+						{
+							"mode": "water",
+							"entries": [
+								"45 ft.; 15 ft. while sailing into the wind; 60 ft. while sailing with the wind."
+							]
+						}
+					]
+				}
+			],
+			"weapon": [
+				{
+					"name": "Ballista",
+					"ac": 15,
+					"hp": 50,
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}16 ({@damage 3d10}) piercing damage."
+					]
+				},
+				{
+					"name": "Mangonel",
+					"ac": 15,
+					"hp": 100,
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 200/800 ft. (can't hit targets within 60 ft. of it), one target. {@h}27 ({@damage 5d10}) bludgeoning damage."
+					]
+				}
+			],
+			"actionThresholds": {
+				"0": 0,
+				"1": 3,
+				"2": 10,
+				"3": 20
+			},
+			"action": [
+				"On its turn, the ship can take 3 actions, choosing from the options below. It can take only 2 actions if it has fewer than twenty crew and only 1 action if it has fewer than ten. It can't take these actions if it has fewer than three crew.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Fire Ballista",
+							"entry": "The ship can fire its {@object ballista} (DMG, ch. 8)."
+						},
+						{
+							"type": "item",
+							"name": "Fire Mangonel",
+							"entry": "The ship can fire its {@object mangonel} (DMG, ch. 8)."
+						},
+						{
+							"type": "item",
+							"name": "Move",
+							"entry": "The ship can use its helm to move with its sails."
+						}
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Sailing ships are fast-moving designs focused on travel.",
+							"A sailing ship has the following features:",
+							{
+								"type": "list",
+								"style": "list-hang-notitle",
+								"items": [
+									{
+										"type": "item",
+										"name": "Ceilings",
+										"entry": "The ceilings in the lower deck, holds, and cabins are 8 feet high with 6-foot-high doorways."
+									},
+									{
+										"type": "item",
+										"name": "Doors",
+										"entry": "The ship's doors are made of wood and have AC 15, 18 hit points, and immunity to poison and psychic damage. A lock can be picked with a successful DC 15 Dexterity check made using thieves' tools, or the door can be forced open with a successful DC 20 Strength (Athletics) check."
+									},
+									{
+										"type": "item",
+										"name": "Footlockers",
+										"entry": "Footlockers on the ship are iron and have AC 19, 18 hit points, and immunity to poison and psychic damage."
+									},
+									{
+										"type": "item",
+										"name": "Light",
+										"entry": "Hanging lanterns cast bright light throughout the ship."
+									},
+									{
+										"type": "item",
+										"name": "Rigging",
+										"entry": "Rigging on the ship can be climbed without an ability check."
+									},
+									{
+										"type": "item",
+										"name": "Sails",
+										"entry": "The ship has three 80-foot-tall masts with sails to catch the wind and oars on the lower deck for rowing."
+									}
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Example Crew",
+								"entries": [
+									"A sailing ship requires a large crew to properly sail the vessel. If the characters are guests on a sailing ship, the crew consists of the following creatures, all of which have proficiency with water vehicles in addition to their normal statistics:",
+									{
+										"type": "list",
+										"items": [
+											"One captain ({@creature bandit captain})",
+											"Four other officers: a first mate, a bosun, a quartermaster, and a cook ({@creature noble||nobles})",
+											"Twenty-five sailors ({@creature commoner||commoners})"
+										]
+									}
+								]
+							},
+							{
+								"type": "entries",
+								"name": "1. Main Deck",
+								"entries": [
+									"The main deck of the ship has the following features:",
+									{
+										"type": "list",
+										"style": "list-hang-notitle",
+										"items": [
+											{
+												"type": "item",
+												"name": "Mangonel",
+												"entry": "Sailing ships have one {@object mangonel} (DMG, ch. 8) attached to the deck.  Each weapon has 10 mangonel stones stacked and secured near it."
+											},
+											{
+												"type": "item",
+												"name": "Hatch",
+												"entry": "A covered, 10-foot-square opening leads to the lower deck (area W8)."
+											},
+											{
+												"type": "item",
+												"name": "Railing",
+												"entry": "The main deck has a 3-foot-high rail around its perimeter that provides half cover for Medium creatures and three-quarters cover for Small creatures behind it."
+											},
+											{
+												"type": "item",
+												"name": "Rowboats",
+												"entry": "Four {@vehicle rowboat||rowboats} are stacked on top of each other on this deck. Ropes and pulleys can hoist these boats in and out of the water."
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "entries",
+								"name": "2. Officers' Quarters",
+								"entries": [
+									"Four beds stand in the officer's quarters. Beneath each is an iron footlocker that holds the officers' belongings. The officers sleep in shifts so someone remains on duty to command the crew and carry out the captain's orders."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "3. Captain's Quarters",
+								"entries": [
+									"The captain's quarters hold a bed and a desk. Beneath the bed is an iron footlocker that holds the captain's belongings."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "4. Siege Weapon Ammunition",
+								"entries": [
+									"Shelves and rope on the walls of this cabin secure mangonel stones and ballista arrows."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "5. Supplies",
+								"entries": [
+									"This area holds tools, barrels of tar, rope, extra material to repair sails, and other supplies needed to maintain the ship."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "6. Forecastle",
+								"entries": [
+									"The forecastle has the following features:",
+									{
+										"type": "list",
+										"style": "list-hang-notitle",
+										"items": [
+											{
+												"type": "item",
+												"name": "Ballista",
+												"entry": "A {@object ballista} (DMG, ch. 8) is attached to the deck. Ten ballista arrows are stacked and secured nearby."
+											},
+											{
+												"type": "item",
+												"name": "Railing",
+												"entry": "The forecastle has a 3-foot-high rail around its perimeter that provides half cover for Medium creatures and three-quarters cover for Small creatures behind it."
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "entries",
+								"name": "7. Quarterdeck",
+								"entries": [
+									"The quarterdeck has the following features:",
+									{
+										"type": "list",
+										"style": "list-hang-notitle",
+										"items": [
+											{
+												"type": "item",
+												"name": "Railing",
+												"entry": "The quarterdeck has a 3-foot-high rail around its perimeter that provides half cover for Medium creatures and three-quarters cover for Small creatures behind it."
+											},
+											{
+												"type": "item",
+												"name": "Wheel",
+												"entry": "The ship's wheel stands at the aft of the quarterdeck."
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "entries",
+								"name": "8. Oar Deck",
+								"entries": [
+									"Twenty-two benches are built into the deck of the lower deck, each with a 20-foot-long oar. When the ship is rowed, crew members sit on these benches to work the oars. Ten spare oars hang on the walls of the ship."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "9. Privy",
+								"entries": [
+									"Benches line the walls of this room. Four holes carved in them house chamber pots."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "10. Medical Cabin",
+								"entries": [
+									"Hooks and shelves on the walls hold medical instruments, bandages, balms, tonics, jars of leeches, and more, ready to treat injuries from combat or sailing mishaps."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "11. Guest Cabin",
+								"entries": [
+									"This cabin is meant for guests and visiting high-ranking officials along for the journey."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "12. Hold",
+								"entries": [
+									"This area houses both passengers and cargo. The ship's off-duty crew sleep on bedrolls among the crates and barrels of food, water, and other supplies."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "13. Armory",
+								"entries": [
+									"The ship's supply of weapons and armor is held in this cabin. Its walls are fitted with built-in weapon and armor racks. The door to this cabin is usually locked, the key kept by one of the ship's officers."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "vehicles/GoS/sailing-ship.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Scavenger",
+			"source": "BGDIA-ES",
+			"page": 219,
+			"vehicleType": "INFWAR",
+			"size": "H",
+			"weight": 9000,
+			"terrain": [
+				"land"
+			],
+			"capCreature": 8,
+			"capCargo": 4000,
+			"speed": 100,
+			"str": 20,
+			"dex": 12,
+			"con": 20,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"hp": {
+				"hp": 150,
+				"dt": 10,
+				"mt": 20
+			},
+			"immune": [
+				"fire",
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"stunned",
+				"unconscious"
+			],
+			"trait": [
+				{
+					"name": "Crushing Wheels",
+					"entries": [
+						"The Scavenger can move through the space of any Large or smaller creature. When it does, the creature must succeed on a DC 12 Dexterity saving throw or take 16 ({@damage 3d10}) bludgeoning damage and be knocked {@condition prone}. If the creature was already {@condition prone}, it takes an extra 16 ({@damage 3d10}) bludgeoning damage. This trait can't be used against a particular creature more than once each turn."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The Scavenger's weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Prone Deficiency",
+					"entries": [
+						"If the Scavenger rolls over and falls {@condition prone}, it can't right itself and is {@condition incapacitated} until flipped upright."
+					]
+				}
+			],
+			"actionStation": [
+				{
+					"name": "Helm (Requires 1 Crew and Grants Three-Quarters Cover)",
+					"entries": [
+						"Drive and steer the Scavenger."
+					]
+				},
+				{
+					"name": "Grappling Claw (Requires 1 Crew and Grants Half Cover)",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 15 ft., one target. {@h}The target is {@condition grappled} (escape DC 12). If the target is a creature, it is {@condition restrained} until the grapple ends. The grappling claw can grapple only one target at a time, and the claw's operator can use a bonus action to make the claw release whatever it's holding."
+					]
+				},
+				{
+					"name": "2 Harpoon Flingers (Each Station Requires 1 Crew and Grants Half Cover)",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 120 ft., one target. {@h}10 ({@damage 2d8 + 1}) piercing damage."
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/5etools-mirror-1/5etools-mirror-1.github.io/master/img/BGDIA/Scavenger.png",
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"The Scavenger handles like a small bus and is used to sift through battlefield detritus for scrap metal and other materials worth salvaging. Attached to the back of the vehicle is a swinging crane with an iron grappling claw fastened to the end of a winch and a 50-foot-long chain."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "vehicles/BGDIA/Scavenger.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Tormentor",
+			"source": "BGDIA-ES",
+			"page": 218,
+			"vehicleType": "INFWAR",
+			"size": "H",
+			"weight": 3000,
+			"terrain": [
+				"land"
+			],
+			"capCreature": 4,
+			"capCargo": 500,
+			"speed": 100,
+			"str": 16,
+			"dex": 14,
+			"con": 14,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"hp": {
+				"hp": 60,
+				"dt": 10,
+				"mt": 20
+			},
+			"immune": [
+				"fire",
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"stunned",
+				"unconscious"
+			],
+			"trait": [
+				{
+					"name": "Crushing Wheels",
+					"entries": [
+						"The Tormentor can move through the space of any Medium or smaller creature. When it does, the creature must succeed on a DC 13 Dexterity saving throw or take 11 ({@damage 2d10}) bludgeoning damage and be knocked {@condition prone}.If the creature was already {@condition prone}, it takes an extra 11 ({@damage 2d10}) bludgeoning damage.This trait can't be used against a particular creature more than once each turn."
+					]
+				},
+				{
+					"name": "Prone Deficiency",
+					"entries": [
+						"If the Tormentor rolls over and falls {@condition prone}, it can't right itself and is {@condition incapacitated} until flipped upright."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The Tormentor's weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Raking Scythes",
+					"entries": [
+						"When the Tormentor moves within 5 feet of a creature that isn't {@condition prone} or another vehicle for the first time on a turn, it can rake the creature or vehicle with its protruding blades for 13 ({@damage 2d10 + 2}) slashing damage. A creature moves out of the way and takes no damage if it succeeds on a DC 13 Dexterity saving throw.A vehicle moves out of the way and takes no damage if its driver succeeds on the saving throw."
+					]
+				}
+			],
+			"actionStation": [
+				{
+					"name": "Helm (Requires 1 Crew and Grants Three-Quarters Cover)",
+					"entries": [
+						"Drive and steer the Tormentor"
+					]
+				},
+				{
+					"name": "Harpoon Flinger (Requires 1 Crew and Grants Half Cover)",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 120 ft., one target. {@h}11 ({@damage 2d8 + 2}) piercing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"type": "entries",
+					"name": "Juke",
+					"entries": [
+						"If the Tormentor is able to move, the driver can use its reaction to grant the Tormentor advantage on a Dexterity saving throw."
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/5etools-mirror-1/5etools-mirror-1.github.io/master/img/BGDIA/Tormentor.png",
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"The Tormentor handles like a dune buggy and is designed for raiding and scouting. Bladed iron wheels drive the vehicle forward."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "vehicles/BGDIA/Tormentor.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Warship",
+			"source": "GoS-ES",
+			"page": 194,
+			"vehicleType": "SHIP",
+			"size": "G",
+			"dimensions": [
+				"100 ft.",
+				"20 ft."
+			],
+			"terrain": [
+				"sea"
+			],
+			"capCrew": 40,
+			"capPassenger": 60,
+			"capCargo": 200,
+			"pace": 4,
+			"str": 20,
+			"dex": 4,
+			"con": 20,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"stunned",
+				"unconscious"
+			],
+			"hull": {
+				"ac": 15,
+				"hp": 500,
+				"dt": 20
+			},
+			"control": [
+				{
+					"name": "Helm",
+					"ac": 18,
+					"hp": 50,
+					"entries": [
+						"Move up to the speed of one of its movement components, with one 90-degree turn. If the helm is destroyed, the warship can't turn."
+					]
+				}
+			],
+			"movement": [
+				{
+					"name": "Oars",
+					"ac": 12,
+					"hp": 100,
+					"hpNote": "-5 ft. speed per 25 damage taken",
+					"speed": [
+						{
+							"mode": "water",
+							"entries": [
+								"20 ft. (requires at least 20 crew)"
+							]
+						}
+					]
+				},
+				{
+					"name": "Sails",
+					"ac": 12,
+					"hp": 100,
+					"hpNote": "-10 ft. speed per 25 damage taken",
+					"speed": [
+						{
+							"mode": "water",
+							"entries": [
+								"35 ft.; 15 ft. while sailing into the wind; 50 ft. while sailing with the wind."
+							]
+						}
+					]
+				}
+			],
+			"weapon": [
+				{
+					"name": "Ballistas",
+					"count": 2,
+					"ac": 15,
+					"hp": 50,
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}16 ({@damage 3d10}) piercing damage."
+					]
+				},
+				{
+					"name": "Mangonels",
+					"count": 2,
+					"ac": 15,
+					"hp": 100,
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 200/800 ft. (can't hit targets within 60 ft. of it), one target. {@h}27 ({@damage 5d10}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Naval Ram",
+					"ac": 20,
+					"hp": 100,
+					"dt": 10,
+					"entries": [
+						"The warship has advantage on all saving throws relating to crashing when it crashes into a creature or object. Any damage it takes from the crash is applied to the naval ram rather than to the ship. These benefits don't apply if another vessel crashes into the warship."
+					]
+				}
+			],
+			"actionThresholds": {
+				"0": 0,
+				"1": 3,
+				"2": 10,
+				"3": 20
+			},
+			"action": [
+				"On its turn, the warship can take 3 actions, choosing from the options below. It can take only 2 actions if it has fewer than twenty crew and only 1 action if it has fewer than ten. It can't take these actions if it has fewer than three crew.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Fire Ballistas",
+							"entry": "The warship can fire its {@object ballista||ballistas} (DMG, ch. 8)."
+						},
+						{
+							"type": "item",
+							"name": "Fire Mangonels",
+							"entry": "The warship can fire its {@object mangonel||mangonels} (DMG, ch. 8)."
+						},
+						{
+							"type": "item",
+							"name": "Move",
+							"entry": "The warship can use its helm to move with its oars or sails. As part of this move, it can use its naval ram."
+						}
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Warships are slow, heavily armed vessels capable of taking on large amounts of cargo.",
+							"A warship ship has the following features:",
+							{
+								"type": "list",
+								"style": "list-hang-notitle",
+								"items": [
+									{
+										"type": "item",
+										"name": "Ceilings",
+										"entry": "The ceilings in the lower deck, holds, and cabins are 8 feet high with 6-foot-high doorways."
+									},
+									{
+										"type": "item",
+										"name": "Doors",
+										"entry": "The ship's doors are made of wood and have AC 15, 18 hit points, and immunity to poison and psychic damage. A lock can be picked with a successful DC 15 Dexterity check made using thieves' tools, or the door can be forced open with a successful DC 20 Strength (Athletics) check."
+									},
+									{
+										"type": "item",
+										"name": "Footlockers",
+										"entry": "Footlockers on the ship are iron and have AC 19, 18 hit points, and immunity to poison and psychic damage."
+									},
+									{
+										"type": "item",
+										"name": "Light",
+										"entry": "Hanging lanterns cast bright light throughout the ship."
+									},
+									{
+										"type": "item",
+										"name": "Rigging",
+										"entry": "Rigging on the ship can be climbed without an ability check."
+									},
+									{
+										"type": "item",
+										"name": "Sails",
+										"entry": "The ship has three 80-foot-tall masts with sails to catch the wind and oars on the lower deck for rowing."
+									}
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Example Crew",
+								"entries": [
+									"A warship requires a large crew to properly sail the vessel. Warships carry extra soldiers to fight battles and fire the siege weapons. If the characters are guests on a warship, the crew consists of the following creatures, all of which have proficiency with water vehicles in addition to their normal statistics:",
+									{
+										"type": "list",
+										"items": [
+											"One captain ({@creature bandit captain})",
+											"Four other officers: a first mate, a bosun, a quartermaster, and a cook ({@creature noble||nobles})",
+											"Twenty-five sailors ({@creature commoner||commoners})"
+										]
+									},
+									"A warship typically includes the following additional crew to augment its fighting ability:",
+									{
+										"type": "list",
+										"items": [
+											"Forty soldiers ({@creature guard||guards})",
+											"Eight siege engineers ({@creature guard||guards})",
+											"One {@creature priest} (the ship's surgeon)"
+										]
+									}
+								]
+							},
+							{
+								"type": "entries",
+								"name": "1. Main Deck",
+								"entries": [
+									"The main deck of the ship has the following features:",
+									{
+										"type": "list",
+										"style": "list-hang-notitle",
+										"items": [
+											{
+												"type": "item",
+												"name": "Mangonel",
+												"entry": "Sailing ships have one {@object mangonel} (DMG, ch. 8) attached to the deck. Warships have two mangonels (DMG, ch. 8). Each weapon has 10 mangonel stones stacked and secured near it."
+											},
+											{
+												"type": "item",
+												"name": "Hatch",
+												"entry": "A covered, 10-foot-square opening leads to the lower deck (area W8)."
+											},
+											{
+												"type": "item",
+												"name": "Railing",
+												"entry": "The main deck has a 3-foot-high rail around its perimeter that provides half cover for Medium creatures and three-quarters cover for Small creatures behind it."
+											},
+											{
+												"type": "item",
+												"name": "Rowboats",
+												"entry": "Four {@vehicle rowboat||rowboats} are stacked on top of each other on this deck. Ropes and pulleys can hoist these boats in and out of the water."
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "entries",
+								"name": "2. Officers' Quarters",
+								"entries": [
+									"Four beds stand in the officer's quarters. Beneath each is an iron footlocker that holds the officers' belongings. The officers sleep in shifts so someone remains on duty to command the crew and carry out the captain's orders."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "3. Captain's Quarters",
+								"entries": [
+									"The captain's quarters hold a bed and a desk. Beneath the bed is an iron footlocker that holds the captain's belongings."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "4. Siege Weapon Ammunition",
+								"entries": [
+									"Shelves and rope on the walls of this cabin secure mangonel stones and ballista arrows."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "5. Supplies",
+								"entries": [
+									"This area holds tools, barrels of tar, rope, extra material to repair sails, and other supplies needed to maintain the ship."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "6. Forecastle",
+								"entries": [
+									"The forecastle has the following features:",
+									{
+										"type": "list",
+										"style": "list-hang-notitle",
+										"items": [
+											{
+												"type": "item",
+												"name": "Ballista",
+												"entry": "A {@object ballista} (DMG, ch. 8) is attached to the deck. Ten ballista arrows are stacked and secured nearby."
+											},
+											{
+												"type": "item",
+												"name": "Figurehead",
+												"entry": "Warships have an iron figurehead at the front of their forecastle, often shaped to look like a fearsome sea predator. This figurehead serves as the ship's naval ram."
+											},
+											{
+												"type": "item",
+												"name": "Railing",
+												"entry": "The forecastle has a 3-foot-high rail around its perimeter that provides half cover for Medium creatures and three-quarters cover for Small creatures behind it."
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "entries",
+								"name": "7. Quarterdeck",
+								"entries": [
+									"The quarterdeck has the following features:",
+									{
+										"type": "list",
+										"style": "list-hang-notitle",
+										"items": [
+											{
+												"type": "item",
+												"name": "Ballista",
+												"entry": "On a warship, a {@object ballista} (DMG, ch. 8) is attached to the deck. Ten ballista arrows are stacked and secured nearby."
+											},
+											{
+												"type": "item",
+												"name": "Railing",
+												"entry": "The quarterdeck has a 3-foot-high rail around its perimeter that provides half cover for Medium creatures and three-quarters cover for Small creatures behind it."
+											},
+											{
+												"type": "item",
+												"name": "Wheel",
+												"entry": "The ship's wheel stands at the aft of the quarterdeck."
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "entries",
+								"name": "8. Oar Deck",
+								"entries": [
+									"Twenty-two benches are built into the deck of the lower deck, each with a 20-foot-long oar. When the ship is rowed, crew members sit on these benches to work the oars. Ten spare oars hang on the walls of the ship."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "9. Privy",
+								"entries": [
+									"Benches line the walls of this room. Four holes carved in them house chamber pots."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "10. Medical Cabin",
+								"entries": [
+									"Hooks and shelves on the walls hold medical instruments, bandages, balms, tonics, jars of leeches, and more, ready to treat injuries from combat or sailing mishaps."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "11. Brig",
+								"entries": [
+									"This cabin is meant for guests and visiting high-ranking officials along for the journey. Since warships often have a greater need to house prisoners rather than guests, each bed aboard such a vessel also has a set of {@item manacles|phb} (see chapter 5 in the Player's Handbook) attached to its frame."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "12. Hold",
+								"entries": [
+									"This area houses both passengers and cargo. The ship's off-duty crew sleep on bedrolls among the crates and barrels of food, water, and other supplies."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "13. Armory",
+								"entries": [
+									"The ship's supply of weapons and armor is held in this cabin. Its walls are fitted with built-in weapon and armor racks. The door to this cabin is usually locked, the key kept by one of the ship's officers."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "vehicles/GoS/warship.png"
+						}
+					}
+				]
+			}
+		}
 	],
 	"vehicleUpgrade": [
+		{
+			"name": "Acidic Bile Sprayer",
+			"source": "BGDIA-ES",
+			"page": 221,
+			"upgradeType": [
+				"IWM:W"
+			],
+			"entries": [
+				"This hose weapon is attached to demonic organs that produce an acidic bile that dissolves flesh on contact.",
+				{
+					"type": "entries",
+					"name": "Acidic Bile Sprayer (Requires 1 Crew and Grants Half Cover, {@recharge 5|m})",
+					"entries": [
+						"Acidic bile sprays from a nozzle in a 30-foot cone. Each creature in the cone must make a DC 12 Dexterity saving throw, taking 40 ({@damage 9d8}) acid damage on a failed save, or half as much damage on a successful one. A creature reduced to 0 hit points by this damage is dissolved, leaving behind any objects it was carrying or wearing."
+					]
+				}
+			]
+		},
+		{
+			"name": "Arcane Artillery",
+			"source": "GoS-ES",
+			"page": 197,
+			"upgradeType": [
+				"SHP:W"
+			],
+			"entries": [
+				"Using methods similar to those used to produce magic weapons, a skilled spellcaster imbues a ship's weapon with destructive energy. This weapon gains a +2 bonus to its attack and damage rolls, and its attacks count as magical."
+			]
+		},
+		{
+			"name": "Bones of Endless Toil",
+			"source": "GoS-ES",
+			"page": 198,
+			"upgradeType": [
+				"SHP:O"
+			],
+			"entries": [
+				"The bones of ancient, mysterious creatures festoon the ship. Potent runes crawl across these remains, emitting a sickly green radiance. When a humanoid dies aboard the ship, that creature must make a DC 12 Wisdom saving throw. On a successful save, it dies as normal. If it fails, it immediately rises as a {@creature zombie} obedient to the ship's captain. The zombie gains a working knowledge of the ship, allowing it to serve as a member of the crew. A number of creatures equal to the ship's creature capacity can be animated in this manner at any given time."
+			]
+		},
+		{
+			"name": "Canian Armor",
+			"source": "BGDIA-ES",
+			"page": 221,
+			"upgradeType": [
+				"IWM:A"
+			],
+			"entries": [
+				"The infernal iron used to make the vehicle was mined on Cania, the coldest layer of the Nine Hells. An infernal war machine with Canian armor has an Armor Class of 22 + its Dexterity modifier. While the vehicle is not moving, attack rolls made against it have advantage. The infernal war machine also has immunity to cold damage in addition to its other damage immunities, and it's immune to the effects of extreme cold."
+			]
+		},
+		{
+			"name": "Churning Hull",
+			"source": "GoS-ES",
+			"page": 196,
+			"upgradeType": [
+				"SHP:H"
+			],
+			"entries": [
+				"A tempest rages within these rune-etched, iron chains. Raiders and pirates who operate under the blessings of a storm god sometimes make use of this upgrade.",
+				"By draping the chains over a ship's hull, the storm's fury thrashes into the water around it. The water within 210 feet of the ship is {@quickref difficult terrain||3} for everything other than this ship."
+			]
+		},
+		{
+			"name": "Clockwork Oars",
+			"source": "GoS-ES",
+			"page": 197,
+			"upgradeType": [
+				"SHP:M"
+			],
+			"entries": [
+				"Using a combination of magic and clockwork, the oars on this ship require only one crew member to use them, pushing the button or lever that activates them."
+			]
+		},
+		{
+			"name": "Concussive Rounds",
+			"source": "GoS-ES",
+			"page": 197,
+			"upgradeType": [
+				"SHP:W"
+			],
+			"entries": [
+				"Enhanced by abjuration magic, this weapon's attacks burst with raucous noise capable of momentarily distracting and disorienting enemy crews. If this weapon hits a vehicle's hull, that vehicle's speed decreases by {@dice 2d10} feet until the start of the attacker's next turn."
+			]
+		},
+		{
+			"name": "Death Vessel",
+			"source": "GoS-ES",
+			"page": 196,
+			"upgradeType": [
+				"SHP:H"
+			],
+			"entries": [
+				"Crafted with materials harvested from the Shadowfell, this upgrade grants a ship an aura of dread. As an action, the ship can create a pulse of horrific energy. Every creature that is an enemy of the ship who is on board or within 210 feet of it must make DC 14 Wisdom saving throw. On a failed save, a creature is {@condition frightened} of the ship for 1 minute. On a successful save, the creature is immune to this ability for 24 hours. Once this ability is used, it can't be used again until {@dice 1d4} hours have passed."
+			]
+		},
+		{
+			"name": "Defiant Sails",
+			"source": "GoS-ES",
+			"page": 197,
+			"upgradeType": [
+				"SHP:M"
+			],
+			"entries": [
+				"These sails glitter with a fine coat of mithral treated with abjuration magic. While the sails are unfurled, ranged weapon attacks made against the ship and anyone aboard it are made with disadvantage, as a result of the sails' protective magic. This drawback doesn't apply if the attacker is aboard the ship."
+			]
+		},
+		{
+			"name": "Dragon Sails",
+			"source": "GoS-ES",
+			"page": 197,
+			"upgradeType": [
+				"SHP:M"
+			],
+			"entries": [
+				"Dragon scales woven into these sails make them more resistant to damage. The sails gain a +3 bonus to AC, and they have resistance to a damage type based on the type of scales used to craft them, as shown on the Dragon Sails table.",
+				{
+					"type": "table",
+					"caption": "Dragon Sails",
+					"colStyles": [
+						"col-6 text-center",
+						"col-6 text-center"
+					],
+					"colLabels": [
+						"Dragon Type",
+						"Damage Type"
+					],
+					"rows": [
+						[
+							"Black",
+							"Acid"
+						],
+						[
+							"Blue",
+							"Lightning"
+						],
+						[
+							"Brass",
+							"Fire"
+						],
+						[
+							"Bronze",
+							"Lightning"
+						],
+						[
+							"Copper",
+							"Acid"
+						],
+						[
+							"Gold",
+							"Fire"
+						],
+						[
+							"Green",
+							"Acid"
+						],
+						[
+							"Red",
+							"Fire"
+						],
+						[
+							"Silver",
+							"Cold"
+						],
+						[
+							"White",
+							"Cold"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Ever-Full Sails",
+			"source": "GoS-ES",
+			"page": 197,
+			"upgradeType": [
+				"SHP:M"
+			],
+			"entries": [
+				"These billowing sails are woven from cloud-stuff drawn from the Elemental Plane of Air. Wind whips and whistles around them, allowing a ship to move with a speed of 60 feet regardless of direction relative to the wind."
+			]
+		},
+		{
+			"name": "Explosive Rounds",
+			"source": "GoS-ES",
+			"page": 197,
+			"upgradeType": [
+				"SHP:W"
+			],
+			"entries": [
+				"Drawing on powerful evocation magic, this weapon's attacks are imbued with unstable energy that explodes in a fiery blast. When this weapon hits, it deals an extra {@damage 2d6} fire damage."
+			]
+		},
+		{
+			"name": "Flamethrower",
+			"source": "BGDIA-ES",
+			"page": 221,
+			"upgradeType": [
+				"IWM:W"
+			],
+			"entries": [
+				"Although useless against demons, this weapon is great against flammable creatures and objects.",
+				{
+					"type": "entries",
+					"name": "Flamethrower (Requires 1 Crew and Grants Half Cover)",
+					"entries": [
+						"Fire shoots out of the weapon's nozzle in a 60-foot line that is 5 feet wide. Each creature in the line must make a DC 15 Dexterity saving throw, taking 18 ({@damage 4d8}) fire damage on a failed save, or half as much damage on a successful one. The fire ignites any flammable objects in the area that aren't being carried or worn."
+					]
+				}
+			]
+		},
+		{
+			"name": "Frost-Locked Hull",
+			"source": "GoS-ES",
+			"page": 196,
+			"upgradeType": [
+				"SHP:H"
+			],
+			"entries": [
+				"This upgrade replaces a ship's hull with supernatural ice drawn from the elemental planes. The hull and the other components of the ship are immune to cold damage but vulnerable to fire damage. The ship can also move at its normal speed over ice of any thickness, floating on the ice at the same depth as it would in water."
+			]
+		},
+		{
+			"name": "Gilded Death Armor",
+			"source": "BGDIA-ES",
+			"page": 222,
+			"upgradeType": [
+				"IWM:A"
+			],
+			"entries": [
+				"Gold stolen or bartered from the archdevil Mammon plates the vehicle's exterior. This gold can't be removed without destroying the vehicle and turns to dust when the infernal war machine drops to 0 hit points. Gilded death armor grants the infernal war machine resistance to bludgeoning, piercing, and slashing damage."
+			]
+		},
+		{
+			"name": "Grasping Rounds",
+			"source": "GoS-ES",
+			"page": 197,
+			"upgradeType": [
+				"SHP:W"
+			],
+			"entries": [
+				"This weapon creates spectral chains that trail after its shots, restraining enemy vessels in their grasp. When this weapon hits a ship, that vehicle must succeed on a DC 14 Strength saving throw or it can't move away from the attacker. As an action, the attacking ship can end this effect, and the target can end it by taking an action and succeeding on a DC 14 Strength check."
+			]
+		},
+		{
+			"name": "Guardian Figurehead",
+			"source": "GoS-ES",
+			"page": 198,
+			"upgradeType": [
+				"SHP:F"
+			],
+			"entries": [
+				"This figurehead depicts an armored knight. As an action, the ship can activate this item, causing it to animate as an {@creature iron golem}. The golem acts on the ship's turn when the captain uses one of the ship's actions. The golem remains animated for 1 minute. At the end of that time, it teleports back to its position as a figurehead. Once a ship uses this action, it can't use it again for 24 hours."
+			]
+		},
+		{
+			"name": "Infernal Screamer",
+			"source": "BGDIA-ES",
+			"page": 221,
+			"upgradeType": [
+				"IWM:W"
+			],
+			"entries": [
+				"A writhing humanoid torso made of melting wax juts out from this station, with a barbed hand crank between its shoulder blades. The figure telepathically shrieks in agony when the crank is turned.",
+				{
+					"type": "entries",
+					"name": "Infernal Screamer (Requires 1 Crew and Grants Half Cover)",
+					"entries": [
+						"The screamer's operator targets one creature it can see within 120 feet of the screamer. The target must make a DC 15 Wisdom saving throw, taking 26 ({@damage 4d12}) psychic damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			]
+		},
+		{
+			"name": "Living Vessel",
+			"source": "GoS-ES",
+			"page": 196,
+			"upgradeType": [
+				"SHP:H"
+			],
+			"entries": [
+				"This vessel's hull was crafted in the Feywild under the direction of master eladrin shipwrights. It is a living plant, drawing sustenance from water and sunlight. Vines covered in thick leaves hang over its side, and the wood runs with fresh sap when damaged. The ship gains a +2 bonus to all Constitution checks or saving throws. As long as the ship has at least 1 hit point, it regains 10 hit points every minute."
+			]
+		},
+		{
+			"name": "Necrotic Smoke Screen",
+			"source": "BGDIA-ES",
+			"page": 222,
+			"upgradeType": [
+				"IWM:G"
+			],
+			"entries": [
+				"The vehicle's driver can activate this magical device as a bonus action, causing the vehicle to expel a 30-foot cube of opaque smoke directly in front of it or behind it. The cloud is stationary and lasts for 1 minute. The area within it is heavily obscured. Any creature that enters the cloud for the first time on a turn or starts its turn there takes 21 ({@damage 6d6}) necrotic damage. A strong wind disperses the cloud. This device needs 24 hours to recharge before it can be used again."
+			]
+		},
+		{
+			"name": "Red Dragon Figurehead",
+			"source": "GoS-ES",
+			"page": 198,
+			"upgradeType": [
+				"SHP:F"
+			],
+			"entries": [
+				"This figurehead depicts a red dragon rearing to strike, its mouth open. As an action, the ship can activate this item to create a 60-foot cone of flame that originates from the figurehead. Each creature and object in the cone must make a DC 12 Dexterity saving throw, taking 21 ({@damage 6d6}) fire damage on a failed save, or half as much damage on a successful one. Once a ship uses this action, it can't use it again for 1 minute."
+			]
+		},
+		{
+			"name": "Reinforced Hull",
+			"source": "GoS-ES",
+			"page": 197,
+			"upgradeType": [
+				"SHP:H"
+			],
+			"entries": [
+				"A master shipwright can use superior materials and clever design to make a ship's hull more resilient. Such reinforcement doubles the hull's hit point maximum."
+			]
+		},
+		{
+			"name": "Screaming Sails",
+			"source": "GoS-ES",
+			"page": 197,
+			"upgradeType": [
+				"SHP:M"
+			],
+			"entries": [
+				"Woven from the energy of captured wraiths and bound with the spirit of a banshee, these sails groan mournfully when they catch the wind. As an action, while within 5 feet of the sails, the ship's captain can cause the sails to unleash a howl. Every creature hostile to the ship who is on board or within 300 feet of it must succeed on a DC 14 Wisdom saving throw, or the creature takes {@damage 4d6} psychic damage and is then {@condition frightened} for 1 minute. Once this ability has been used, it can't be used again until {@dice 2d6} hours have passed."
+			]
+		},
+		{
+			"name": "Scything Oars",
+			"source": "GoS-ES",
+			"page": 197,
+			"upgradeType": [
+				"SHP:M"
+			],
+			"entries": [
+				"Sharpened, magically reinforced oars make a vessel dangerous to approach. When the ship takes an action that moves it with these oars, any creature or object in the water within 10 feet of it at any point of the move must make a DC 10 Dexterity saving throw, taking {@damage 2d6} slashing damage on a failed save or half as much damage on a successful one."
+			]
+		},
+		{
+			"name": "Smuggler's Banner",
+			"source": "GoS-ES",
+			"page": 198,
+			"upgradeType": [
+				"SHP:O"
+			],
+			"entries": [
+				"This flag is meant to be flown from a ship's mast. Its powerful magic causes it to appear as a flag or banner displaying the symbol of a group, captain, or realm friendly to the viewer. Multiple viewers might see different flags or crests.",
+				"The banner's true power is its ability to aid a ship in making rapid escapes. As an action, the ship and all friendly creatures aboard it teleport up to 3 miles to a known destination of the captain's choice. Hostile creatures aboard the ship don't move with the ship and fall into the water it once occupied. Once this item is used to teleport, it can't teleport in this way again for {@dice 2d6} days."
+			]
+		},
+		{
+			"name": "Soul Spike Armor",
+			"source": "BGDIA-ES",
+			"page": 222,
+			"upgradeType": [
+				"IWM:W"
+			],
+			"entries": [
+				"The vehicle is covered with spikes inscribed with blasphemous symbols. Luminous, ghostly figures impaled on these spikes wail and reach out in agony.",
+				"If a creature that isn't a devil dies within 30 feet of the infernal war machine, its soul (if it has one) is torn from its body and joins the wailing throng impaled on the spikes. As long as its soul remains trapped, a creature can't be raised from the dead by any means. A trapped soul is freed if the vehicle is destroyed, if the spike anchoring it is the target of a {@spell remove curse} spell or similar magic, or if the spike is destroyed. Each spike is a Small object with AC 19, 15 hit points, and resistance to all damage except radiant damage."
+			]
+		},
+		{
+			"name": "Storm Giant Figurehead",
+			"source": "GoS-ES",
+			"page": 198,
+			"upgradeType": [
+				"SHP:F"
+			],
+			"entries": [
+				"This figurehead depicts a storm giant clutching a thunderbolt. As an action, the ship can activate this item to create a 60-foot cone that originates from the figurehead. Each creature in the cone must make DC 12 Constitution saving throw, taking 14 ({@damage 4d6}) thunder damage on a failed save, or half as much damage on a successful one. A creature that fails its saving throw is also pushed 10 feet away from the figurehead. Once a ship uses this action, it can't use it again for 1 minute."
+			]
+		},
+		{
+			"name": "Styx Sprayer",
+			"source": "BGDIA-ES",
+			"page": 221,
+			"upgradeType": [
+				"IWM:W"
+			],
+			"entries": [
+				"This flexible hose is connected to a tank that holds 30 gallons of water from the {@area River Styx|1a3|x}. Each use of the weapon depletes 10 gallons of the water. Refilling the tank requires access to the Styx.",
+				{
+					"type": "entries",
+					"name": "Styx Sprayer (Requires 1 Crew and Grants Half Cover; 3 Uses)",
+					"entries": [
+						"{@atk rs}: +5 to hit, range 30 ft., one creature. {@h}The creature is struck by water from the River Styx and targeted by a {@spell feeblemind} spell (save DC 20). An already feebleminded creature is immune to this effect, as is a creature adapted to the River Styx. If the target fails its saving throw and the spell's effect on it is not ended within 30 days, the effect becomes permanent, whereupon the creature loses all its memories and becomes a near-mindless shell of its former self. At that point, nothing short of divine intervention can undo the effect."
+					]
+				}
+			]
+		},
+		{
+			"name": "Taskmaster's Drums",
+			"source": "GoS-ES",
+			"page": 198,
+			"upgradeType": [
+				"SHP:O"
+			],
+			"entries": [
+				"This 4-foot-tall bronze drum comes with a pair of iron mallets. A creature can activate the drums as an action, causing the hammers to float above the drum and strike it to produce a thundering rhythm. For the next minute, the ship gains one additional action, as long as it has at least one action. Once this item is used, it can't be activated again for {@dice 2d10} hours."
+			]
+		},
+		{
+			"name": "Teleporter",
+			"source": "BGDIA-ES",
+			"page": 222,
+			"upgradeType": [
+				"IWM:G"
+			],
+			"entries": [
+				"The vehicle's driver can activate this magical device as a bonus action, causing the vehicle to teleport to an unoccupied space that the driver can see up to 300 feet away from the vehicle's current position. All creatures and objects in contact with the vehicle are teleported along with it. This device needs 24 hours to recharge before it can be used again."
+			]
+		},
+		{
+			"name": "Vigilant Watch",
+			"source": "GoS-ES",
+			"page": 197,
+			"upgradeType": [
+				"SHP:H"
+			],
+			"entries": [
+				"A row of crystal orbs, each filled with viscous liquid and a beholder's eyeball, is mounted along this ship's hull. {@condition Invisible} creatures are visible while on the ship or within 120 feet of it."
+			]
+		}
 	]
 }
