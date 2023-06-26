@@ -135,7 +135,7 @@
 			}
 		},
 		{
-			"name": "Demon Grinder",
+			"name": "Picadora de demonios",
 			"source": "BGDIA-ES",
 			"page": 219,
 			"vehicleType": "INFWAR",
@@ -176,51 +176,51 @@
 			],
 			"trait": [
 				{
-					"name": "Crushing Wheels",
+					"name": "Armas Mágicas",
 					"entries": [
-						"The Demon Grinder can move through the space of any Large or smaller creature. When it does, the creature must succeed on a DC 11 Dexterity saving throw or take 22 ({@damage 4d10}) bludgeoning damage and be knocked {@condition prone}. If the creature was already {@condition prone}, it takes an extra 22 ({@damage 4d10}) bludgeoning damage. This trait can't be used against a particular creature more than once each turn."
+						"Los ataques con arma de la picadora de demonios son mágicos."
 					]
 				},
 				{
-					"name": "Magic Weapons",
+					"name": "Ruedas Aplastantes",
 					"entries": [
-						"The Demon Grinder's weapon attacks are magical."
+						"La picadora de demonios puede moverse a través del espacio de cualquier criatura Grande o más pequeña. Cuando lo hace, la criatura debe superar una tirada de salvación de Destreza CD 11 o sufrirá 22 ({@damage 4d10}) de daño contundente y quedará {@condition derribado|PHB-ES|derribada}. Si ya lo estaba, sufre 22 ({@damage 4d10}) de daño contundente adicionales. Este atributo no puede usarse contra una criatura concreta más de una vez por turno."
 					]
 				},
 				{
-					"name": "Prone Deficiency",
+					"name": "Vulnerable a Ser Derribado",
 					"entries": [
-						"If the Demon Grinder rolls over and falls {@condition prone}, it can't right itself and is {@condition incapacitated} until flipped upright."
+						"Si la picadora de demonios vuelca y queda {@condition derribado|PHB-ES|derribada}, no puede enderezarse por sr misma y queda {@condition incapacitado|PHB-ES|incapacitada} hasta que recupere la verticalidad."
 					]
 				}
 			],
 			"actionStation": [
 				{
-					"name": "Helm (Requires 1 Crew and Grants Three-Quarters Cover)",
+					"name": "Dirección (requiere 1 tripulante y proporciona cobertura tres cuartos)",
 					"entries": [
-						"Drive and steer the Demon Grinder."
+						"Conduce y dirige la picadora de demonios."
 					]
 				},
 				{
-					"name": "Chomper (Requires 1 Crew and Grants Half Cover)",
+					"name": "Triturador (requiere 1 tripulante y proporciona cobertura media)",
 					"entries": [
-						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}25 ({@damage 6d6 + 4}) piercing damage. A target reduced to 0 hit points by this damage is ground to bits and spit out through pipes on both sides of the Demon Grinder. Any nonmagical items the target was holding or carrying are destroyed as well."
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}25 ({@damage 6d6 + 4}) piercing damage. Un objetivo reducido a 0 puntos de golpe por este daño es triturado y expulsado a través de unas tuberías a ambos lados de la picadora de demonios. Todos los objetos no mágicos que el objetivo llevara o empuñara también son destruidos."
 					]
 				},
 				{
-					"name": "Wrecking Ball (Requires 1 Crew and Grants Half Cover)",
+					"name": "Bola de demolición (requiere 1 tripulante y proporciona cobertura media)",
 					"entries": [
-						"{@atk mw} {@hit 9} to hit, reach 15 ft., one target. {@h}40 ({@damage 8d8 + 4}) bludgeoning damage. Double the damage if the target is an object or a structure."
+						"{@atk mw} {@hit 9} to hit, reach 15 ft., one target. {@h}40 ({@damage 8d8 + 4}) bludgeoning damage. Duplica el daño si el objetivo es un objeto o una estructura."
 					]
 				},
 				{
-					"name": "2 Harpoon Flingers (Each Station Requires 1 Crew and Grants Half Cover)",
+					"name": "2 lanza arpones (cada puesto requiere 1 tripulante y proporciona cobertura media)",
 					"entries": [
 						"{@atk rw} {@hit 5} to hit, range 120 ft., one target. {@h}9 ({@damage 2d8}) piercing damage."
 					]
 				}
 			],
-			"tokenUrl": "https://raw.githubusercontent.com/5etools-mirror-1/5etools-mirror-1.github.io/master/img/BGDIA/Demon%20Grinder.png",
+			"tokenUrl": "https://raw.githubusercontent.com/5etools-mirror-1/5etools-mirror-1.github.io/master/img/vehicles/tokens/BGDIA/Demon%20Grinder.png",
 			"fluff": {
 				"entries": [
 					{
@@ -229,7 +229,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"A Demon Grinder is a bulky, armored coach that rumbles loudly as it crushes obstacles and enemies in its path with the help of a swinging wrecking ball. Iron jaws are mounted on the front of the vehicle, which handles like a garbage truck."
+									"Una picadora de demonios es un vehículo voluminoso y acorazado que retumba ruidosamente mientras aplasta obstáculos y enemigos a su paso con la ayuda de una bola de demolición móvil. El vehículo, que se maneja como un camión de basura, tiene unas grandes pinzas de hierro en la parte frontal."
 								]
 							}
 						]
@@ -247,7 +247,7 @@
 			}
 		},
 		{
-			"name": "Devil's Ride",
+			"name": "Cabalgadura diabólica",
 			"source": "BGDIA-ES",
 			"page": 218,
 			"vehicleType": "INFWAR",
@@ -288,42 +288,42 @@
 			],
 			"trait": [
 				{
-					"name": "Jump",
+					"name": "Maniobra Especial",
 					"entries": [
-						"If the Devil's Ride moves at least 30 feet in a straight line, it can clear a distance of up to 60 feet when jumping over a chasm, ravine, or other gap. Each foot it clears on the jump costs a foot of movement."
+						"El piloto de la cabalgadura diabólica puede gastar 10 pies de movimiento en su turno para realizar una maniobra especial de vehículo gratuita, como un caballito o un trompo. Antes de poder hacer la maniobra especial la cabalgadura diabólica debe recorrer al menos 10 pies en línea recta. Si el conductor supera una prueba de Destreza CD 10 usando la Destreza del vehículo, la maniobra tiene éxito. De lo contrario, el piloto no puede realizarla ni volver a intentar otra hasta el comienzo de su próximo turno. Si la prueba falla por 5 o más, la cabalgadura diabólica y todas las criaturas montadas en ella resultan {@condition derribado|PHB-ES|derribadas} inmediatamente cuando el vehículo queda tumbado y se detiene por completo."
 					]
 				},
 				{
-					"name": "Prone Deficiency",
+					"name": "Saltar",
 					"entries": [
-						"If the Devil's Ride falls {@condition prone}, it can't right itself and is {@condition incapacitated} until pulled upright."
+						"Si la cabalgadura diabólica recorre al menos 30 pies en línea recta, puede salvar una distancia de hasta 60 pies saltando sobre un abismo, barranco u otra abertura. Cada pie que salve en el salto cuesta un pie de movimiento."
 					]
 				},
 				{
-					"name": "Stunt",
+					"name": "Vulnerable a Ser Derribado",
 					"entries": [
-						"On its turn, the driver of the Devil's Ride can expend 10 feet of movement to perform one free vehicle stunt, such as a wheelie or a burnout. Before the stunt can be performed, the Devil's Ride must move at least 10 feet in a straight line. If the driver succeeds on a DC 10 Dexterity check using the bike's Dexterity, the stunt is successful. Otherwise, the driver is unable to perform the stunt and can't attempt another stunt until the start of its next turn. If the check fails by 5 or more, the Devil's Ride and all creatures riding it immediately fall {@condition prone} as the bike wipes out and comes to a dead stop."
+						"Si la cabalgadura diabólica cae {@condition derribado|PHB-ES|derribada}, no puede enderezarse y queda {@condition incapacitado|PHB-ES|incapacitada} hasta que la pongan en posición de pie."
 					]
 				}
 			],
 			"actionStation": [
 				{
-					"name": "Helm (Requires 1 Crew and Grants Half Cover)",
+					"name": "Dirección (requiere 1 tripulante y proporciona cobertura media).",
 					"entries": [
-						"Drive and steer the Devil's Ride."
+						"Pilota y dirige la cabalgadura diabólica."
 					]
 				}
 			],
 			"reaction": [
 				{
 					"type": "entries",
-					"name": "Juke",
+					"name": "Finta",
 					"entries": [
-						"If the Devil's Ride is able to move, the driver can use its reaction to grant the Devil's Ride advantage on a Dexterity saving throw."
+						"Si la cabalgadura diabólica puede moverse, el piloto puede usar su reacción para proporcionar al vehículo ventaja en una tirada de salvación de Destreza."
 					]
 				}
 			],
-			"tokenUrl": "https://raw.githubusercontent.com/5etools-mirror-1/5etools-mirror-1.github.io/master/img/BGDIA/Devil's%20Ride.png",
+			"tokenUrl": "https://raw.githubusercontent.com/5etools-mirror-1/5etools-mirror-1.github.io/master/img/vehicles/tokens/BGDIA/Devil's%20Ride.png",
 			"fluff": {
 				"entries": [
 					{
@@ -332,7 +332,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"A Devil's Ride is a two-wheeled infernal war machine that handles like a motorcycle. It has spiked wheels, a screaming engine, and a cowl shaped vaguely like a grinning devil's visage, with horns for handle bars. What the vehicle lacks in weapons, it makes up for with speed and maneuverability."
+									"Una cabalgadura diabólica es una máquina de guerra infernal de dos ruedas que se conduce como una motocicleta. Tiene ruedas con pinchos, un motor aullante y un carenado que se parece vagamente al rostro de un diablo sonriente con cuernos por manillar. La carencia de armamento de este vehículo se compensa con su velocidad y maniobrabilidad."
 								]
 							}
 						]
@@ -350,9 +350,9 @@
 			}
 		},
 		{
-			"name": "Galley",
+			"name": "Galera",
 			"source": "GoS-ES",
-			"page": 187,
+			"page": 188,
 			"vehicleType": "SHIP",
 			"size": "G",
 			"dimensions": [
@@ -397,39 +397,39 @@
 			},
 			"control": [
 				{
-					"name": "Helm",
+					"name": "Timón",
 					"ac": 16,
 					"hp": 50,
 					"entries": [
-						"Move up to the speed of one of its movement components, with one 90-degree turn. If the helm is destroyed, the galley can't turn."
+						"Avanza tanto como la velocidad de uno de los componentes de movimiento de la nave, pudiendo efectuar un viraje de 90 grados. Si el timón resulta destruido, la galera no puede virar."
 					]
 				}
 			],
 			"movement": [
 				{
-					"name": "Oars",
+					"name": "Remos",
 					"ac": 12,
 					"hp": 100,
-					"hpNote": "-5 ft. speed per 25 damage taken",
+					"hpNote": "-5 pies de velocidad por cada 25 de daño recibidos",
 					"speed": [
 						{
 							"mode": "water",
 							"entries": [
-								"30 ft. (requires at least 40 crew)"
+								"30 ft. (requiere al menos 40 tripulantes)"
 							]
 						}
 					]
 				},
 				{
-					"name": "Sails",
+					"name": "Velamen",
 					"ac": 12,
 					"hp": 100,
-					"hpNote": "-10 ft. speed per 25 damage taken",
+					"hpNote": "-10 pies de velocidad por cada 25 de daño recibidos",
 					"speed": [
 						{
 							"mode": "water",
 							"entries": [
-								"35 ft.; 15 ft. while sailing into the wind; 50 ft. while sailing with the wind"
+								"35 ft.; 15 pies navegando contra el viento; 50 pies navegando a favor del viento"
 							]
 						}
 					]
@@ -437,7 +437,16 @@
 			],
 			"weapon": [
 				{
-					"name": "Ballistas",
+					"name": "Ariete naval",
+					"ac": 20,
+					"hp": 100,
+					"dt": 10,
+					"entries": [
+						"Cuando embista a una criatura o un objeto, la galera tendrá ventaja en todas las tiradas de salvación derivadas del choque. Cualquier daño que resulte de la acometida se aplicará al ariete naval en vez de a la nave. Estos beneficios no se tendrán en cuenta si otro buque choca con la galera."
+					]
+				},
+				{
+					"name": "Balistas",
 					"count": 4,
 					"ac": 15,
 					"hp": 50,
@@ -446,21 +455,12 @@
 					]
 				},
 				{
-					"name": "Mangonels",
+					"name": "Manganas",
 					"count": 2,
 					"ac": 15,
 					"hp": 100,
 					"entries": [
-						"{@atk rw} {@hit 5} to hit, range 200/800 ft. (can't hit targets within 60 ft. of it), one target. {@h}27 ({@damage 5d10}) bludgeoning damage."
-					]
-				},
-				{
-					"name": "Naval Ram",
-					"ac": 20,
-					"hp": 100,
-					"dt": 10,
-					"entries": [
-						"The galley has advantage on all saving throws relating to crashing when it crashes into a creature or an object. Any damage it takes from the crash is applied to the naval ram rather than to the ship. These benefits don't apply if another vessel crashes into the galley."
+						"{@atk rw} {@hit 5} to hit, range 200/800 ft. (no pueden golpear a objetivos que se encuentren a menos de 60 pies de estas), one target. {@h}27 ({@damage 5d10}) bludgeoning damage."
 					]
 				}
 			],
@@ -471,25 +471,25 @@
 				"3": 40
 			},
 			"action": [
-				"On its turn, the galley can take 3 actions, choosing from the options below. It can take only 2 actions if it has fewer than forty crew and only 1 action if it has fewer than twenty. It can't take these actions if it has fewer than three crew.",
+				"Durante su turno, la galera puede realizar 3 acciones de entre las opciones que se presentan a continuación. Solo puede llevar a cabo 2 acciones si tiene menos de cuarenta tripulantes y únicamente 1 acción si cuenta con menos de veinte. No puede hacer ninguna de estas acciones si posee menos de tres tripulantes.",
 				{
 					"type": "list",
 					"style": "list-hang-notitle",
 					"items": [
 						{
 							"type": "item",
-							"name": "Fire Ballistas",
-							"entry": "The galley can fire its {@object ballista||ballistas} (DMG, ch. 8)."
+							"name": "Disparar las balistas",
+							"entry": "El barco puede disparar sus {@object balista|DMG-ES|balistas} (DMG, cap. 8)."
 						},
 						{
 							"type": "item",
-							"name": "Fire Mangonels",
-							"entry": "The galley can fire its {@object mangonel||mangonels} (DMG, ch. 8)."
+							"name": "Disparar las manganas",
+							"entry": "El navío puede disparar sus {@object mangana|DMG-ES|manganas} (DMG, cap. 8)."
 						},
 						{
 							"type": "item",
-							"name": "Move",
-							"entry": "The galley can use its helm to move with its oars or sails. As part of this move, it can use its naval ram."
+							"name": "Moverse",
+							"entry": "La galera puede usar el timón para desplazarse a remo o a vela. Como parte de este movimiento, puede utilizar su ariete naval."
 						}
 					]
 				}
@@ -499,99 +499,99 @@
 					{
 						"type": "entries",
 						"entries": [
-							"Galleys are long vessels that rely on sails and sizable rowing crews to move. These ships can carry siege weapons and soldiers to war or transport large amounts of cargo for merchants. No matter the ship's purpose, the crew almost always hires extra protection, since galleys make large, cargo-rich targets for pirates.",
-							"A galley has the following features:",
+							"Las galeras son naves alargadas que dependen de su velamen y de grandes tripulaciones de remeros para desplazarse. Estos barcos pueden transportar armas de asedio y soldados a la guerra o grandes cantidades de carga para los comerciantes. Con independencia del propósito del navío, la tripulación casi siempre contrata protección adicional, ya que las galeras son objetivos grandes y cargados de riquezas para los piratas.",
+							"Una galera tiene las siguientes características:",
 							{
 								"type": "list",
 								"style": "list-hang-notitle",
 								"items": [
 									{
 										"type": "item",
-										"name": "Ceilings",
-										"entry": "The ceiling of the galley's lower deck is 8 feet high."
+										"name": "Iluminación",
+										"entry": "Unos fanales colgados por todo el barco proyectan luz brillante."
 									},
 									{
 										"type": "item",
-										"name": "Light",
-										"entry": "Hanging lanterns cast bright light throughout the ship."
+										"name": "Jarcia",
+										"entry": "Se puede trepar por la jarcia de la nave sin necesidad de hacer ninguna prueba de característica."
 									},
 									{
 										"type": "item",
-										"name": "Rigging",
-										"entry": "Rigging on the ship can be climbed without an ability check."
+										"name": "Techos",
+										"entry": "El techo de la cubierta inferior de una galera tiene 8 pies de alto."
 									},
 									{
 										"type": "item",
-										"name": "Sails and Oars",
-										"entry": "The galley has one 120-foot-tall mast with sails to catch the wind and oars on the lower deck for rowing the vessel."
+										"name": "Velamen y remos",
+										"entry": "La galera posee un mástil de 120 pies de alto provisto de velas para aprovechar el viento y remos en la cubierta inferior para impulsar el barco bogando."
 									}
 								]
 							},
 							{
 								"type": "entries",
-								"name": "Example Galley Crew",
+								"name": "Tripulación típica de una galera",
 								"entries": [
-									"A galley requires a crew of eighty to properly sail or row the vessel and might carry extra passengers or soldiers. If the characters are guests on a galley, the crew consists of the following creatures, all of which have proficiency with water vehicles in addition to their normal statistics:",
+									"Una galera requiere de ochenta tripulantes para gobernar la embarcación o impulsarla remando como es debido, y puede transportar a pasajeros o soldados adicionales. Si los personajes viajan en una de estas naves como pasajeros, la tripulación se compondrá de las siguientes criaturas, que tendrán competencia en el manejo de vehículos acuáticos, además de sus perfiles normales:",
 									{
 										"type": "list",
 										"items": [
-											"One captain ({@creature bandit captain})",
-											"Five other officers: a first mate, a bosun, a quartermaster, a surgeon, and a cook ({@creature scout||scouts})",
-											"Forty-two sailors ({@creature commoner||commoners})",
-											"Twelve siege engineers ({@creature guard||guards})",
-											"Twenty {@creature guard||guards}"
+											"Un capitán ({@creature capitán bandido|MM-ES}).",
+											"Otros cinco oficiales: un primer oficial, un contramaestre, un navegante, un cirujano y un cocinero ({@creature Batidor|MM-ES|batidores}).",
+											"Cuarenta y dos marineros ({@creature plebeyo|MM-ES|plebeyos}).",
+											"Doce ingenieros de asedio ({@creature guardia|MM-ES|guardias}).",
+											"Veinte {@creature guardia|MM-ES|guardias}."
 										]
 									}
 								]
 							},
 							{
 								"type": "entries",
-								"name": "Main Deck",
+								"name": "Cubierta principal",
 								"entries": [
-									"The main deck of the galley has the following features:",
+									"La cubierta principal de la galera tiene las siguientes características:",
 									{
 										"type": "list",
 										"style": "list-hang-notitle",
 										"items": [
 											{
 												"type": "item",
-												"name": "Ballistas",
-												"entry": "Four ballistas (DMG, ch. 8) are attached to the fore of the deck. Ten ballista arrows are stacked and secured near each."
+												"name": "Abertura",
+												"entry": "Un espacio abierto de 10 pies de ancho por 80 pies de largo en mitad de la cubierta principal recorre el navío de proa a popa y da a la cubierta inferior."
 											},
 											{
 												"type": "item",
-												"name": "Mangonels",
-												"entry": "Two mangonels (DMG, ch. 8) are attached to the aft of the deck. Ten mangonel stones are stacked and secured near each catapult."
+												"name": "Ariete naval",
+												"entry": "La proa de la galera presenta un ariete naval de hierro que se usa para embestir a otras naves."
 											},
 											{
 												"type": "item",
-												"name": "Naval Ram",
-												"entry": "The galley's stern features an iron naval ram used for attacking other ships."
+												"name": "Balistas",
+												"entry": "Hay cuatro balistas (DMG, cap. 8) montadas en la sección de proa de la cubierta. Junto a cada una se apilan, bien amarradas, diez flechas de dichas armas."
 											},
 											{
 												"type": "item",
-												"name": "Opening",
-												"entry": "A 10-foot-wide, 80-foot-long open space in the middle of the deck stretches fore to aft and leads down to the lower deck."
+												"name": "Batayola",
+												"entry": "Hay una borda de 3 pies de alto construida alrededor del perímetro de la cubierta; proporciona cobertura media a las criaturas Medianas y cobertura tres cuartos a las criaturas Pequeñas mientras se encuentran tras esta."
 											},
 											{
 												"type": "item",
-												"name": "Railing",
-												"entry": "A 3-foot-high rail is built around the deck's perimeter, providing half cover for Medium creatures and three-quarters cover for Small creatures behind it."
+												"name": "Botes de remos",
+												"entry": "En esta cubierta se agrupan ocho botes de remos en dos grupos de cuatro. Se pueden arriar o izar mediante un sistema de cuerdas y poleas."
 											},
 											{
 												"type": "item",
-												"name": "Rowboats",
-												"entry": "Eight rowboats are stacked in two groups of four on this deck. Ropes and pulleys can hoist these boats in and out of the water."
+												"name": "Manganas",
+												"entry": "Hay dos manganas (DMG, cap. 8) montadas en la sección de popa de la cubierta. Junto a cada una se apilan, bien amarradas, diez piedras de esta arma."
 											},
 											{
 												"type": "item",
-												"name": "Timpani",
-												"entry": "A timpani with two attached mallets sits on the aft of the main deck just before the opening to the lower deck. A crew member plays this instrument while the sailors on the lower deck row, the beat helping to synchronize the rowers' strokes."
+												"name": "Rueda del timón",
+												"entry": "La rueda del timón del barco se encuentra en la popa de la cubierta principal."
 											},
 											{
 												"type": "item",
-												"name": "Wheel",
-												"entry": "The ship's wheel stands at the aft of the deck."
+												"name": "Timbal",
+												"entry": "Hay un timbal con dos mazos instalado a popa de la cubierta principal, justo ante la abertura que da a la cubierta inferior. Un miembro de la tripulación toca este instrumento mientras los marineros reman en la cubierta inferior; el ritmo les ayuda a sincronizar la boga."
 											}
 										]
 									}
@@ -599,22 +599,22 @@
 							},
 							{
 								"type": "entries",
-								"name": "Lower Deck",
+								"name": "Cubierta inferior",
 								"entries": [
-									"The cramped lower deck of the galley ship reeks of body odor and has the following features:",
+									"La estrecha cubierta inferior de la galera apesta a olor corporal y tiene las siguientes características:",
 									{
 										"type": "list",
 										"style": "list-hang-notitle",
 										"items": [
 											{
 												"type": "item",
-												"name": "Cargo Holds",
-												"entry": "Cargo holds at the fore and aft of the lower deck hold crates, barrels, and ammunition secured with rope."
+												"name": "Bodegas de carga",
+												"entry": "Las bodegas de carga situadas a proa y popa en la cubierta inferior contienen cajas, barriles y munición estibados con cuerdas."
 											},
 											{
 												"type": "item",
-												"name": "Oars",
-												"entry": "Thirty-two benches are built into the deck, each with a 20-foot-long oar. When the ship is rowed, crew members sit on these benches to work the oars. Ten spare oars hang on the walls."
+												"name": "Remos",
+												"entry": "Hay treinta y dos bancos integrados en la cubierta, cada uno equipado con un remo de 20 pies de largo. Cuando es necesario impulsar el barco usando los remos, los tripulantes se sientan en estos bancos para bogar. En las paredes cuelgan diez remos de repuesto."
 											}
 										]
 									}
@@ -635,9 +635,9 @@
 			}
 		},
 		{
-			"name": "Keelboat",
+			"name": "Barcaza",
 			"source": "GoS-ES",
-			"page": 188,
+			"page": 187,
 			"vehicleType": "SHIP",
 			"size": "G",
 			"dimensions": [
@@ -682,20 +682,20 @@
 			},
 			"control": [
 				{
-					"name": "Helm",
+					"name": "Timón",
 					"ac": 12,
 					"hp": 50,
 					"entries": [
-						"Move up to the speed of one of its movement components, with one 90-degree turn. If the helm is destroyed, the keelboat can't turn."
+						"Avanza tanto como la velocidad de uno de los componentes de movimiento de la nave, pudiendo efectuar un viraje de 90 grados. Si el timón resulta destruido, la barcaza no puede virar."
 					]
 				}
 			],
 			"movement": [
 				{
-					"name": "Oars",
+					"name": "Remos",
 					"ac": 12,
 					"hp": 100,
-					"hpNote": "-5 ft. speed per 25 damage taken",
+					"hpNote": "-5 pies de velocidad por cada 25 de daño recibidos",
 					"speed": [
 						{
 							"mode": "water",
@@ -709,12 +709,12 @@
 					"name": "Sails",
 					"ac": 12,
 					"hp": 100,
-					"hpNote": "-5 ft. speed per 20 damage taken ",
+					"hpNote": "-5 pies de velocidad por cada 20 de daño recibidos",
 					"speed": [
 						{
 							"mode": "water",
 							"entries": [
-								"25 ft.; 15 ft. while sailing into the wind; 35 ft. while sailing with the wind."
+								"25 ft.; 15 pies navegando contra el viento; 35 pies navegando a favor del viento."
 							]
 						}
 					]
@@ -722,12 +722,12 @@
 			],
 			"weapon": [
 				{
-					"name": "Ballista",
+					"name": "Balista",
 					"ac": 15,
 					"hp": 50,
 					"entries": [
 						"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}16 ({@damage 3d10}) piercing damage.",
-						"Keelboats typically include a ballista only when they are equipped for combat."
+						"Las barcazas incluyen una {@object balista|DMG-ES} solo cuando se las equipa para el combate."
 					]
 				}
 			],
@@ -737,20 +737,20 @@
 				"2": 2
 			},
 			"action": [
-				"On its turn, the keelboat can take 2 actions, choosing from the options below. It can take only 1 action if it has only one crew. It can't take these actions if it has no crew.",
+				"Durante su turno, la barcaza puede realizar 2 acciones de entre las opciones que se presentan a continuación. Solo puede llevar a cabo 1 acción si cuenta con un único tripulante. No puede hacer ninguna de ellas si carece de tripulación.",
 				{
 					"type": "list",
 					"style": "list-hang-notitle",
 					"items": [
 						{
 							"type": "item",
-							"name": "Fire Ballista",
-							"entry": "The keelboat can fire its {@object ballista} (DMG, ch. 8)."
+							"name": "Disparar balista",
+							"entry": "La embarcación puede disparar su {@object balista|DMG-ES} (DMG, capítulo 8)."
 						},
 						{
 							"type": "item",
-							"name": "Move",
-							"entry": "The keelboat can use its helm to move with its oars or sails."
+							"name": "Moverse",
+							"entry": "La nave puede usar el timón para desplazarse a remo o a vela."
 						}
 					]
 				}
@@ -760,59 +760,59 @@
 					{
 						"type": "entries",
 						"entries": [
-							"One of the smallest sailing vessels, keelboats can be sailed or rowed by a single person. These ships often transport small amounts of cargo or passengers. They're perfect for pleasure cruises, as they're easier and less expensive to operate than larger vessels.",
-							"A keelboat has the following features:",
+							"La barcaza es una de las embarcaciones más pequeñas y la puede gobernar o impulsar una sola persona con un remo. Estas naves se usan a menudo para transportar pequeñas cantidades de carga o pasajeros. Son perfectas para las travesías de placer, ya que son más fáciles y menos costosas de operar que otros buques más grandes.",
+							"Una barcaza posee las siguientes características:",
 							{
 								"type": "list",
 								"style": "list-hang-notitle",
 								"items": [
 									{
 										"type": "item",
-										"name": "Light",
-										"entry": "A hanging lantern or two casts bright light across the ship."
+										"name": "Iluminación",
+										"entry": "Uno o dos fanales proporcionan luz brillante a toda la embarcación."
 									},
 									{
 										"type": "item",
-										"name": "Rigging",
-										"entry": "Rigging on the ship can be climbed without an ability check."
+										"name": "Jarcia",
+										"entry": "Se puede trepar por la jarcia de la nave sin necesidad de hacer ninguna prueba de característica."
 									},
 									{
 										"type": "item",
-										"name": "Sails",
-										"entry": "The keelboat has one 10-foot-tall mast with sails."
+										"name": "Velamen",
+										"entry": "La barcaza tiene un mástil de 10 pies de alto provisto de velas."
 									}
 								]
 							},
 							{
 								"type": "entries",
-								"name": "Example Keelboat Crew",
+								"name": "Tripulación típica de una barcaza",
 								"entries": [
-									"A keelboat requires a single crew member to operate smoothly. If the characters are guests on a keelboat, the crew consists of a single captain who has the statistics of a {@creature bandit captain} with proficiency with water vehicles."
+									"Una barcaza solo necesita un tripulante para gobernarla sin contratiempos. Si los personajes van en uno de estos barcos como pasajeros, el único tripulante será el capitán, que usará el perfil de un {@creature capitán bandido|MM-ES} con competencia en vehículos acuáticos."
 								]
 							},
 							{
 								"type": "entries",
-								"name": "Keelboat Deck",
+								"name": "Cubierta de una barcaza",
 								"entries": [
-									"The deck of the keelboat has the following features:",
+									"La cubierta principal de la barcaza tiene las siguientes características:",
 									{
 										"type": "list",
 										"style": "list-hang-notitle",
 										"items": [
 											{
 												"type": "item",
-												"name": "Ballista",
-												"entry": "A ballista (DMG, ch. 8) is mounted on the fore of the deck. Ten ballista arrows are stacked and secured nearby."
+												"name": "Balista",
+												"entry": "Hay una balista (DMG, cap. 8) montada en la sección de proa de la cubierta. Junto a esta se apilan, bien amarradas, diez flechas de esta arma."
 											},
 											{
 												"type": "item",
-												"name": "Oars",
-												"entry": "The deck of the ship holds twelve benches and four 15-foot-long oars. When the ship is rowed, crew members sit on these benches to work the oars."
+												"name": "Batayola",
+												"entry": "Hay una borda de 3 pies de alto construida alrededor del perímetro de la cubierta; proporciona cobertura media a las criaturas Medianas y cobertura tres cuartos a las criaturas Pequeñas mientras se encuentran tras esta."
 											},
 											{
 												"type": "item",
-												"name": "Railing",
-												"entry": "The deck has a 3-foot-high rail around its perimeter that provides half cover for Medium creatures and three-quarters cover for Small creatures behind it."
+												"name": "Remos",
+												"entry": "La cubierta de la embarcación cuenta con doce bancos y cuatro remos de 15 pies de largo. Cuando es necesario impulsar la nave utilizando los remos, los tripulantes se sientan en estos bancos para bogar."
 											}
 										]
 									}
@@ -820,22 +820,22 @@
 							},
 							{
 								"type": "entries",
-								"name": "Keelboat Cabin",
+								"name": "Camarote de la barcaza",
 								"entries": [
-									"The keelboat cabin has the following features:",
+									"El camarote de la barcaza tiene las siguientes características:",
 									{
 										"type": "list",
 										"style": "list-hang-notitle",
 										"items": [
 											{
 												"type": "item",
-												"name": "Footlockers",
-												"entry": "Beneath each bed is a footlocker. The footlockers are iron and have AC 19, 18 hit points, and immunity to poison and psychic damage."
+												"name": "Arcones",
+												"entry": "Debajo de cada cama hay un arcón. Estos son de hierro y tienen CA 19, 18 puntos de golpe e inmunidad a los daños psíquico y de veneno."
 											},
 											{
 												"type": "item",
-												"name": "Furnishings",
-												"entry": "Two beds and a desk with a chair stand at the aft of the cabin."
+												"name": "Mobiliario",
+												"entry": "Al fondo del camarote se sitúan dos catres y un escritorio con su silla."
 											}
 										]
 									}
@@ -856,9 +856,9 @@
 			}
 		},
 		{
-			"name": "Longship",
+			"name": "Drakkar",
 			"source": "GoS-ES",
-			"page": 190,
+			"page": 189,
 			"vehicleType": "SHIP",
 			"size": "G",
 			"dimensions": [
@@ -903,39 +903,39 @@
 			},
 			"control": [
 				{
-					"name": "Helm",
+					"name": "Timón",
 					"ac": 16,
 					"hp": 50,
 					"entries": [
-						"Move up to the speed of one of its movement components, with one 90-degree turn. If the helm is destroyed, the longship can't turn."
+						"Avanza tanto como la velocidad de uno de los componentes de movimiento de la nave, pudiendo efectuar un viraje de 90 grados. Si el timón resulta destruido, el drakkar no puede virar."
 					]
 				}
 			],
 			"movement": [
 				{
-					"name": "Oars",
+					"name": "Remos",
 					"ac": 12,
 					"hp": 100,
-					"hpNote": "-5 ft. speed per 25 damage taken",
+					"hpNote": "-5 pies de velocidad por cada 25 de daño recibidos",
 					"speed": [
 						{
 							"mode": "water",
 							"entries": [
-								"20 ft. (requires at least 20 crew)"
+								"20 ft. (requiere al menos 20 tripulantes)"
 							]
 						}
 					]
 				},
 				{
-					"name": "Sails",
+					"name": "Velas",
 					"ac": 12,
 					"hp": 100,
-					"hpNote": "-10 ft. speed per 25 damage taken",
+					"hpNote": "-10 pies de velocidad por cada 25 de daño recibidos",
 					"speed": [
 						{
 							"mode": "water",
 							"entries": [
-								"45 ft.; 15 ft. while sailing into the wind; 60 ft. while sailing with the wind."
+								"45 ft.; 15 pies navegando contra el viento; 60 pies navegando a favor del viento"
 							]
 						}
 					]
@@ -946,15 +946,15 @@
 				"1": 1
 			},
 			"action": [
-				"On its turn, the longship can take the move action below. It can't take this action if it has no crew.",
+				"En su turno, el drakkar puede realizar la acción de movimiento que se explica a continuación. No podrá llevarla a cabo si no dispone de tripulantes.",
 				{
 					"type": "list",
 					"style": "list-hang-notitle",
 					"items": [
 						{
 							"type": "item",
-							"name": "Move",
-							"entry": "The longship can use its helm to move with its oars or sails."
+							"name": "Moverse",
+							"entry": "El drakkar puede usar el timón para desplazarse a remo o a vela."
 						}
 					]
 				}
@@ -964,67 +964,67 @@
 					{
 						"type": "entries",
 						"entries": [
-							"Longships are vessels that rely on a rowing crew and sails to move across the sea. These ships are typically used to carry soldiers into combat. The size of a longship makes it easy for troops to get on and off quickly, making it the perfect ship for engaging in surprise strikes.",
-							"A longship has the following features:",
+							"Los drakkars son unas embarcaciones alargadas que dependen de su velamen y de grandes tripulaciones de remeros para surcar los mares. Estas naves se usan por lo general para transportar soldados al combate. El tamaño de un drakkar hace que sea fácil para las tropas embarcar y desembarcar con rapidez, lo que lo convierte en el barco perfecto para realizar incursiones sorpresa.",
+							"Un drakkar tiene las siguientes características:",
 							{
 								"type": "list",
 								"style": "list-hang-notitle",
 								"items": [
 									{
 										"type": "item",
-										"name": "Light",
-										"entry": "Hanging lanterns cast bright light over the deck."
+										"name": "Iluminación",
+										"entry": "Unos fanales colgados proporcionan luz brillante a la cubierta."
 									},
 									{
 										"type": "item",
-										"name": "Rigging",
-										"entry": "Rigging on the ship can be climbed without an ability check."
+										"name": "Jarcia",
+										"entry": "Se puede trepar por la jarcia de la nave sin necesidad de hacer ninguna prueba de característica."
 									},
 									{
 										"type": "item",
-										"name": "Rudder",
-										"entry": "The ship is steered by a rudder control on the aft of the deck."
+										"name": "Rueda del timón",
+										"entry": "El barco puede virar gracias a un timón controlado desde la popa de la cubierta."
 									},
 									{
 										"type": "item",
-										"name": "Sails",
-										"entry": "The longship has one 20-foot-tall mast with sails that can be used to sail the ship."
+										"name": "Velamen",
+										"entry": "El buque tiene un mástil de 20 pies de alto con velas que impulsan el navío."
 									}
 								]
 							},
 							{
 								"type": "entries",
-								"name": "Example Longship Crew",
+								"name": "Tripulación típica de un drakkar",
 								"entries": [
-									"A longship requires a crew of forty to properly sail or row the vessel and often carries extra passengers or soldiers. If the characters are guests on a longship, the crew consists of the following creatures, all of which have proficiency with water vehicles in addition to their normal statistics:",
+									"Un drakkar requiere de cuarenta tripulantes para gobernar la embarcación o propulsarla remando sin contratiempos, y a menudo transporta a pasajeros o soldados adicionales. Si los personajes van en una de estas naves como pasajeros, la tripulación se compondrá de las siguientes criaturas, que tendrán competencia en el manejo de vehículos acuáticos, además de sus perfiles normales:",
 									{
 										"type": "list",
 										"items": [
-											"One captain ({@creature berserker})",
-											"Five other officers: a first mate, a bosun, a quartermaster, a surgeon, and a cook ({@creature berserker||berserkers})",
-											"Thirty-four sailors ({@creature commoner||commoners})"
+											"Un capitán ({@creature berserker|MM-ES}).",
+											"Otros cinco oficiales: un primer oficial, un contramaestre, un navegante, un cirujano y un cocinero ({@creature berserker|MM-ES|berserkers}).",
+											"Treinta y cuatro marineros ({@creature plebeyo|MM-ES|plebeyos)."
 										]
 									}
 								]
 							},
 							{
 								"type": "entries",
-								"name": "Longship Deck",
+								"name": "Cubierta de un drakkar",
 								"entries": [
-									"The deck of the longship has the following features:",
+									"La cubierta principal del drakar tiene las siguientes características:",
 									{
 										"type": "list",
 										"style": "list-hang-notitle",
 										"items": [
 											{
 												"type": "item",
-												"name": "Oars",
-												"entry": "Sixteen benches are built into the deck, each with a 15-foot-long oar. When the ship is rowed, crew members sit on these benches to work the oars. Five spare oars hang on the walls."
+												"name": "Batayola",
+												"entry": "Una borda de 3 pies de alto está construida alrededor del perímetro de la cubierta y guarnecida con escudos de madera; proporciona cobertura media a las criaturas Medianas y cobertura tres cuartos a las criaturas Pequeñas mientras se encuentran tras esta."
 											},
 											{
 												"type": "item",
-												"name": "Railing",
-												"entry": "The deck has a 3-foot-high rail covered in wooden shields around its perimeter that provides half cover for Medium creatures and three-quarters cover for Small creatures behind it."
+												"name": "Remos",
+												"entry": "Hay dieciséis bancos integrados en la cubierta, cada uno equipado con un remo de 15 pies de largo. Cuando se impulsa el barco usando los remos, los tripulantes se sientan en estos bancos para bogar. En las paredes cuelgan remos de repuesto."
 											}
 										]
 									}
@@ -1045,9 +1045,9 @@
 			}
 		},
 		{
-			"name": "Rowboat",
+			"name": "Bote de remos",
 			"source": "GoS-ES",
-			"page": 190,
+			"page": 188,
 			"vehicleType": "SHIP",
 			"size": "L",
 			"dimensions": [
@@ -1091,7 +1091,7 @@
 			},
 			"movement": [
 				{
-					"name": "Oars",
+					"name": "Remos",
 					"isControl": true,
 					"ac": 12,
 					"hp": 25,
@@ -1100,7 +1100,7 @@
 							"mode": "water",
 							"entries": [
 								"15 ft.",
-								"Move up to its speed, with one 90-degree turn. Without oars, the rowboat's speed is 0."
+								"Se mueve a la velocidad de la nave, pudiendo efectuar un viraje de 90 grados. Sin remos, la velocidad del bote de remos es 0."
 							]
 						}
 					]
@@ -1111,20 +1111,20 @@
 				"1": 1
 			},
 			"action": [
-				"On its turn, the rowboat can take the move action below. It can't take this action if it has no crew.",
+				"En su turno, el bote puede realizar la acción de movimiento que se explica a continuación. No podrá llevarla a cabo si no dispone de tripulantes.",
 				{
 					"type": "list",
 					"style": "list-hang-notitle",
 					"items": [
 						{
 							"type": "item",
-							"name": "Move",
-							"entry": "The rowboat can move using its oars."
+							"name": "Moverse",
+							"entry": "El bote de remos puede desplazarse usando sus remos."
 						}
 					]
 				}
 			],
-			"tokenUrl": "https://raw.githubusercontent.com/5etools-mirror-1/5etools-mirror-1.github.io/master/img/GoS/Rowboat.png",
+			"tokenUrl": "https://raw.githubusercontent.com/5etools-mirror-1/5etools-mirror-1.github.io/master/img/vehicles/tokens/GoS/Rowboat.png",
 			"fluff": {
 				"entries": [
 					{
@@ -1133,7 +1133,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"The humble rowboat serves to ferry passengers back and forth from larger ships or to navigate lakes and rivers. Due to its simple, versatile design, a rowboat has no decks or typical crew. Weighing 100 pounds, a rowboat is easy to transport and might be carried by larger ships."
+									"El humilde bote de remos sirve para llevar pasajeros hasta y desde barcos más grandes o, también, para navegar en lagos y ríos. Debido a su diseño sencillo y versátil, esta embarcación no tiene cubiertas ni una tripulación típica. Con un peso de 100 libras (unos 45 kg), esta nave es fácil de transportar y la pueden cargar barcos de mayor calado."
 								]
 							}
 						]
@@ -1142,9 +1142,9 @@
 			}
 		},
 		{
-			"name": "Sailing Ship",
+			"name": "Velero",
 			"source": "GoS-ES",
-			"page": 192,
+			"page": 190,
 			"vehicleType": "SHIP",
 			"size": "G",
 			"dimensions": [
@@ -1189,25 +1189,25 @@
 			},
 			"control": [
 				{
-					"name": "Helm",
+					"name": "Timón",
 					"ac": 18,
 					"hp": 50,
 					"entries": [
-						"Move up to the speed of its sails, with one 90-degree turn. If the helm is destroyed, the ship can't turn."
+						"Se mueve a la velocidad de las velas de la nave, pudiendo efectuar un viraje de 90 grados. Si el timón resulta destruido, el barco no puede virar."
 					]
 				}
 			],
 			"movement": [
 				{
-					"name": "Sails",
+					"name": "Velas",
 					"ac": 12,
 					"hp": 100,
-					"hpNote": "-5 ft. speed per 25 damage taken",
+					"hpNote": "-5 pies de velocidad por cada 25 de daño recibidos",
 					"speed": [
 						{
 							"mode": "water",
 							"entries": [
-								"45 ft.; 15 ft. while sailing into the wind; 60 ft. while sailing with the wind."
+								"45 ft.; 15 pies navegando contra el viento; 60 pies navegando a favor del viento."
 							]
 						}
 					]
@@ -1215,7 +1215,7 @@
 			],
 			"weapon": [
 				{
-					"name": "Ballista",
+					"name": "Balista",
 					"ac": 15,
 					"hp": 50,
 					"entries": [
@@ -1223,11 +1223,11 @@
 					]
 				},
 				{
-					"name": "Mangonel",
+					"name": "Mangana",
 					"ac": 15,
 					"hp": 100,
 					"entries": [
-						"{@atk rw} {@hit 5} to hit, range 200/800 ft. (can't hit targets within 60 ft. of it), one target. {@h}27 ({@damage 5d10}) bludgeoning damage."
+						"{@atk rw} {@hit 5} to hit, range 200/800 ft. (no puede golpear a objetivos que se encuentren a menos de 60 pies de esta), one target. {@h}27 ({@damage 5d10}) bludgeoning damage."
 					]
 				}
 			],
@@ -1238,25 +1238,25 @@
 				"3": 20
 			},
 			"action": [
-				"On its turn, the ship can take 3 actions, choosing from the options below. It can take only 2 actions if it has fewer than twenty crew and only 1 action if it has fewer than ten. It can't take these actions if it has fewer than three crew.",
+				"Durante su turno, el barco puede realizar 3 acciones de entre las opciones que se presentan a continuación. Solo puede llevar a cabo 2 acciones si tiene menos de veinte tripulantes, y únicamente 1 acción si cuenta con menos de diez. No puede hacer ninguna de estas acciones si posee menos de tres tripulantes.",
 				{
 					"type": "list",
 					"style": "list-hang-notitle",
 					"items": [
 						{
 							"type": "item",
-							"name": "Fire Ballista",
-							"entry": "The ship can fire its {@object ballista} (DMG, ch. 8)."
+							"name": "Disparar balista",
+							"entry": "La embarcación puede disparar su {@object balista|DMG-ES} (DMG, cap. 8)."
 						},
 						{
 							"type": "item",
-							"name": "Fire Mangonel",
-							"entry": "The ship can fire its {@object mangonel} (DMG, ch. 8)."
+							"name": "Disparar mangana",
+							"entry": "El velero puede disparar su {@object mangana|DMG-ES} (DMG, cap. 8)."
 						},
 						{
 							"type": "item",
-							"name": "Move",
-							"entry": "The ship can use its helm to move with its sails."
+							"name": "Moverse",
+							"entry": "El barco puede usar el timón para desplazarse a remo o a vela."
 						}
 					]
 				}
@@ -1266,87 +1266,87 @@
 					{
 						"type": "entries",
 						"entries": [
-							"Sailing ships are fast-moving designs focused on travel.",
-							"A sailing ship has the following features:",
+							"Los veleros son barcos rápidos que se usan sobre todo para viajar.",
+							"El velero tiene las siguientes características:",
 							{
 								"type": "list",
 								"style": "list-hang-notitle",
 								"items": [
 									{
 										"type": "item",
-										"name": "Ceilings",
-										"entry": "The ceilings in the lower deck, holds, and cabins are 8 feet high with 6-foot-high doorways."
+										"name": "Arcones",
+										"entry": "Los arcones de la nave son de hierro y tienen CA 19, 18 puntos de golpe e inmunidad a los daños psíquico y de veneno."
 									},
 									{
 										"type": "item",
-										"name": "Doors",
-										"entry": "The ship's doors are made of wood and have AC 15, 18 hit points, and immunity to poison and psychic damage. A lock can be picked with a successful DC 15 Dexterity check made using thieves' tools, or the door can be forced open with a successful DC 20 Strength (Athletics) check."
+										"name": "Iluminación",
+										"entry": "Unos fanales colgados por todo el barco le proporcionan luz brillante."
 									},
 									{
 										"type": "item",
-										"name": "Footlockers",
-										"entry": "Footlockers on the ship are iron and have AC 19, 18 hit points, and immunity to poison and psychic damage."
+										"name": "Jarcias",
+										"entry": "Se puede trepar por la jarcia de la embarcación sin necesidad de hacer ninguna prueba de característica."
 									},
 									{
 										"type": "item",
-										"name": "Light",
-										"entry": "Hanging lanterns cast bright light throughout the ship."
+										"name": "Puertas",
+										"entry": "Las puertas del barco están hechas de madera y cuentan con CA 1 5, 18 puntos de golpe e inmunidad a los daños psíquico y de veneno. Pueden abrirse usando herramientas de ladrón y superando una prueba de Destreza CD 15 o teniendo éxito en una prueba de Fuerza (Atletismo) CD 20."
 									},
 									{
 										"type": "item",
-										"name": "Rigging",
-										"entry": "Rigging on the ship can be climbed without an ability check."
+										"name": "Techos",
+										"entry": "Los techos de cubierta inferior, bodegas y camarotes alcanzan Jos 8 pies de alto, mientras que sus puertas son de 6 pies de alto."
 									},
 									{
 										"type": "item",
-										"name": "Sails",
-										"entry": "The ship has three 80-foot-tall masts with sails to catch the wind and oars on the lower deck for rowing."
+										"name": "Velamen",
+										"entry": "El barco posee tres mástiles de 80 pies de alto provistos de velas para aprovechar el viento y remos en la cubierta inferior para propulsar la nave bogando."
 									}
 								]
 							},
 							{
 								"type": "entries",
-								"name": "Example Crew",
+								"name": "Tripulación típica",
 								"entries": [
-									"A sailing ship requires a large crew to properly sail the vessel. If the characters are guests on a sailing ship, the crew consists of the following creatures, all of which have proficiency with water vehicles in addition to their normal statistics:",
+									"Un velero requiere de una gran tripulación para gobernar el buque como es debido. Si los personajes viajan en alguna de estas naves como pasajeros, la tripulación se compondrá de las siguientes criaturas, que tendrán competencia en el manejo de vehículos acuáticos, además de sus perfiles normales:",
 									{
 										"type": "list",
 										"items": [
-											"One captain ({@creature bandit captain})",
-											"Four other officers: a first mate, a bosun, a quartermaster, and a cook ({@creature noble||nobles})",
-											"Twenty-five sailors ({@creature commoner||commoners})"
+											"Un capitán ({@creature capitán bandido|MM-ES}).",
+											"Otros cuatro oficiales: un primer oficial, un contramaestre, un navegante y un cocinero ({@creature noble|MM-ES|nobles}).",
+											"Veinticinco marineros ({@creature plebeyo|MM-ES|plebeyos)."
 										]
 									}
 								]
 							},
 							{
 								"type": "entries",
-								"name": "1. Main Deck",
+								"name": "1. Cubierta principal",
 								"entries": [
-									"The main deck of the ship has the following features:",
+									"La cubierta principal de la nave tiene las siguientes características:",
 									{
 										"type": "list",
 										"style": "list-hang-notitle",
 										"items": [
 											{
 												"type": "item",
-												"name": "Mangonel",
-												"entry": "Sailing ships have one {@object mangonel} (DMG, ch. 8) attached to the deck.  Each weapon has 10 mangonel stones stacked and secured near it."
+												"name": "Mangana",
+												"entry": "Los veleros llevan una {@object mangana|DMG-ES} (DMG, cap. 8) montada en la cubierta. Junto a ella hay 10 piedras, empleadas como proyectiles de esta arma, apiladas y amarradas."
 											},
 											{
 												"type": "item",
-												"name": "Hatch",
-												"entry": "A covered, 10-foot-square opening leads to the lower deck (area W8)."
+												"name": "Escotilla",
+												"entry": "Una abertura cubierta cuadrada de 10 pies de lado permite acceder a la cubierta inferior (zona 12)."
 											},
 											{
 												"type": "item",
-												"name": "Railing",
-												"entry": "The main deck has a 3-foot-high rail around its perimeter that provides half cover for Medium creatures and three-quarters cover for Small creatures behind it."
+												"name": "Batayola",
+												"entry": "Una borda de 3 pies de alto está construida en torno al perímetro de la cubierta principal; proporciona cobertura media a las criaturas Medianas y cobertura tres cuartos a las criaturas Pequeñas mientras se encuentran tras esta."
 											},
 											{
 												"type": "item",
-												"name": "Rowboats",
-												"entry": "Four {@vehicle rowboat||rowboats} are stacked on top of each other on this deck. Ropes and pulleys can hoist these boats in and out of the water."
+												"name": "Botes de remos",
+												"entry": "Cuatro {@vehicle bote de remos|GoS-ES|botes de remos} se apilan uno sobre otro en esta cubierta. Se pueden arriar o izar mediante un sistema de cuerdas y poleas."
 											}
 										]
 									}
@@ -1354,50 +1354,50 @@
 							},
 							{
 								"type": "entries",
-								"name": "2. Officers' Quarters",
+								"name": "2. Dependencias de los oficiales",
 								"entries": [
-									"Four beds stand in the officer's quarters. Beneath each is an iron footlocker that holds the officers' belongings. The officers sleep in shifts so someone remains on duty to command the crew and carry out the captain's orders."
+									"Cuatro camas están dispuestas en el camarote de los oficiales. Debajo de cada una hay un arcón de hierro donde estos pueden guardar sus pertenencias. Los oficiales duermen por turnos para que siempre haya alguien de guardia para dar las órdenes a la tripulación y cumplir con las del capitán."
 								]
 							},
 							{
 								"type": "entries",
-								"name": "3. Captain's Quarters",
+								"name": "3. Dependencias del capitán",
 								"entries": [
-									"The captain's quarters hold a bed and a desk. Beneath the bed is an iron footlocker that holds the captain's belongings."
+									"El camarote del capitán cuenta con una cama y un escritorio. Bajo la cama se sitúa un arcón de hierro donde este puede guardar sus efectos personales."
 								]
 							},
 							{
 								"type": "entries",
-								"name": "4. Siege Weapon Ammunition",
+								"name": "4. Munición de las armas de asedio",
 								"entries": [
-									"Shelves and rope on the walls of this cabin secure mangonel stones and ballista arrows."
+									"Hay piedras de mangana y flechas de balista estibadas con cuerdas en unos estantes ubicados en las paredes de este compartimento."
 								]
 							},
 							{
 								"type": "entries",
-								"name": "5. Supplies",
+								"name": "5. Suministros",
 								"entries": [
-									"This area holds tools, barrels of tar, rope, extra material to repair sails, and other supplies needed to maintain the ship."
+									"En esta zona se almacenan herramientas, barriles de brea, cuerdas, material adicional para reparar velas, así como otros suministros necesarios para el mantenimiento del barco."
 								]
 							},
 							{
 								"type": "entries",
-								"name": "6. Forecastle",
+								"name": "6. Castillo de proa",
 								"entries": [
-									"The forecastle has the following features:",
+									"El castillo tiene las siguientes características:",
 									{
 										"type": "list",
 										"style": "list-hang-notitle",
 										"items": [
 											{
 												"type": "item",
-												"name": "Ballista",
-												"entry": "A {@object ballista} (DMG, ch. 8) is attached to the deck. Ten ballista arrows are stacked and secured nearby."
+												"name": "Balista",
+												"entry": "Hay una {@object balista|DMG-ES} (DMG, cap. 8) montada en la cubierta. Junto a esta se apilan, bien amarradas, diez flechas de esta arma."
 											},
 											{
 												"type": "item",
-												"name": "Railing",
-												"entry": "The forecastle has a 3-foot-high rail around its perimeter that provides half cover for Medium creatures and three-quarters cover for Small creatures behind it."
+												"name": "Batayola",
+												"entry": "Una borda de 3 pies de alto está construida en torno al perímetro de la cubierta del castillo de proa; proporciona cobertura media a las criaturas Medianas y cobertura tres cuartos a las criaturas Pequeñas mientras se encuentran tras esta."
 											}
 										]
 									}
@@ -1405,22 +1405,22 @@
 							},
 							{
 								"type": "entries",
-								"name": "7. Quarterdeck",
+								"name": "7. Alcázar de popa",
 								"entries": [
-									"The quarterdeck has the following features:",
+									"El alcázar tiene las siguientes características:",
 									{
 										"type": "list",
 										"style": "list-hang-notitle",
 										"items": [
 											{
 												"type": "item",
-												"name": "Railing",
-												"entry": "The quarterdeck has a 3-foot-high rail around its perimeter that provides half cover for Medium creatures and three-quarters cover for Small creatures behind it."
+												"name": "Batayola",
+												"entry": "Una borda de 3 pies de alto está construida en torno al perímetro de la cubierta del castillo de proa; proporciona cobertura media a las criaturas Medianas y cobertura tres cuartos a las criaturas Pequeñas mientras se encuentran tras esta."
 											},
 											{
 												"type": "item",
-												"name": "Wheel",
-												"entry": "The ship's wheel stands at the aft of the quarterdeck."
+												"name": "Rueda del timón",
+												"entry": "La rueda del timón del barco se sitúa en la popa del alcázar."
 											}
 										]
 									}
@@ -1428,44 +1428,44 @@
 							},
 							{
 								"type": "entries",
-								"name": "8. Oar Deck",
+								"name": "8. Cubierta de boga",
 								"entries": [
-									"Twenty-two benches are built into the deck of the lower deck, each with a 20-foot-long oar. When the ship is rowed, crew members sit on these benches to work the oars. Ten spare oars hang on the walls of the ship."
+									"Hay veintidós bancos integrados en la cubierta, cada uno con un remo de 20 pies de largo. Cuando se propulsa el barco usando los remos, los tripulantes se sientan en estos bancos para bogar. En las paredes cuelgan diez remos de repuesto."
 								]
 							},
 							{
 								"type": "entries",
-								"name": "9. Privy",
+								"name": "9. Letrinas",
 								"entries": [
-									"Benches line the walls of this room. Four holes carved in them house chamber pots."
+									"Unos bancos están alineados en las paredes de este compartimento. Los cuatro agujeros practicados en estos contienen orinales."
 								]
 							},
 							{
 								"type": "entries",
-								"name": "10. Medical Cabin",
+								"name": "10. Camarote médico",
 								"entries": [
-									"Hooks and shelves on the walls hold medical instruments, bandages, balms, tonics, jars of leeches, and more, ready to treat injuries from combat or sailing mishaps."
+									"Los ganchos y estantes de las paredes contienen instrumental médico, vendas, bálsamos, tónicos, frascos llenos de sanguijuelas y demás material; todo preparado para atender las heridas de los combates o los accidentes."
 								]
 							},
 							{
 								"type": "entries",
-								"name": "11. Guest Cabin",
+								"name": "11. Camarote de los huéspedes",
 								"entries": [
-									"This cabin is meant for guests and visiting high-ranking officials along for the journey."
+									"Este camarote está destinado a alojar durante el viaje a los pasajeros invitados y a los funcionarios de alto rango."
 								]
 							},
 							{
 								"type": "entries",
-								"name": "12. Hold",
+								"name": "12. Bodega",
 								"entries": [
-									"This area houses both passengers and cargo. The ship's off-duty crew sleep on bedrolls among the crates and barrels of food, water, and other supplies."
+									"Esta zona contiene tanto pasajeros como carga. La tripulación fuera de servicio del barco duerme en sacos de dormir, entre las cajas y los barriles de comida, agua y otros suministros."
 								]
 							},
 							{
 								"type": "entries",
-								"name": "13. Armory",
+								"name": "13. Armería",
 								"entries": [
-									"The ship's supply of weapons and armor is held in this cabin. Its walls are fitted with built-in weapon and armor racks. The door to this cabin is usually locked, the key kept by one of the ship's officers."
+									"En este camarote se guardan los suministros de armas y armaduras de la nave. Sus paredes están cubiertas de estantes integrados que sostienen armas y armaduras. La puerta del compartimento está cerrada por lo general, y la llave la lleva consigo uno de los oficiales del barco."
 								]
 							}
 						]
@@ -1483,7 +1483,7 @@
 			}
 		},
 		{
-			"name": "Scavenger",
+			"name": "Carroñero",
 			"source": "BGDIA-ES",
 			"page": 219,
 			"vehicleType": "INFWAR",
@@ -1524,45 +1524,45 @@
 			],
 			"trait": [
 				{
-					"name": "Crushing Wheels",
+					"name": "Armas Mágicas",
 					"entries": [
-						"The Scavenger can move through the space of any Large or smaller creature. When it does, the creature must succeed on a DC 12 Dexterity saving throw or take 16 ({@damage 3d10}) bludgeoning damage and be knocked {@condition prone}. If the creature was already {@condition prone}, it takes an extra 16 ({@damage 3d10}) bludgeoning damage. This trait can't be used against a particular creature more than once each turn."
+						"Los ataques con arma del carroñero son mágicos."
 					]
 				},
 				{
-					"name": "Magic Weapons",
+					"name": "Ruedas Aplastantes",
 					"entries": [
-						"The Scavenger's weapon attacks are magical."
+						"El carroñero puede moverse a través del espacio de cualquier criatura Grande o más pequeña. Cuando lo hace, la criatura debe superar una tirada de salvación de Destreza CD 12 o sufrirá 16 ({@damage 3d10}) de daño contundente y quedará {@condition derribado|PHB-ES|derribada}. Si ya lo estaba, sufre 16 ({@damage 3d10}) de daño contundente adicional. Este atributo no puede usarse contra una criatura concreta más de una vez por turno."
 					]
 				},
 				{
-					"name": "Prone Deficiency",
+					"name": "Vulnerable a ser Derribado",
 					"entries": [
-						"If the Scavenger rolls over and falls {@condition prone}, it can't right itself and is {@condition incapacitated} until flipped upright."
+						"Si el carroñero vuelca y queda {@condition derribado|PHB-ES}, no puede enderezarse por sí mismo y queda {@condition incapacitado|PHB-ES} hasta que recupere la verticalidad."
 					]
 				}
 			],
 			"actionStation": [
 				{
-					"name": "Helm (Requires 1 Crew and Grants Three-Quarters Cover)",
+					"name": "Dirección (requiere 1 tripulante y proporciona cobertura tres cuartos)",
 					"entries": [
-						"Drive and steer the Scavenger."
+						"Conduce y dirige el carroñero."
 					]
 				},
 				{
-					"name": "Grappling Claw (Requires 1 Crew and Grants Half Cover)",
+					"name": "Garfio prensil (requiere 1 tripulante y proporciona cobertura media)",
 					"entries": [
-						"{@atk mw} {@hit 10} to hit, reach 15 ft., one target. {@h}The target is {@condition grappled} (escape DC 12). If the target is a creature, it is {@condition restrained} until the grapple ends. The grappling claw can grapple only one target at a time, and the claw's operator can use a bonus action to make the claw release whatever it's holding."
+						"{@atk mw} {@hit 10} to hit, reach 15 ft., one target. {@h}The target is {@condition grappled} (escape DC 12). Si el objetivo es una criatura, queda {@condition apresado|PHB-ES|apresada} hasta que finaliza el agarre. El garfio prensil solo puede agarrar a un objetivo a la vez, y su operador puede usar una acción adicional para hacer que el garfio suelte lo que tuviera agarrado."
 					]
 				},
 				{
-					"name": "2 Harpoon Flingers (Each Station Requires 1 Crew and Grants Half Cover)",
+					"name": "2 lanza arpones (cada puesto requiere 1 tripulante y proporciona cobertura media)",
 					"entries": [
 						"{@atk rw} {@hit 6} to hit, range 120 ft., one target. {@h}10 ({@damage 2d8 + 1}) piercing damage."
 					]
 				}
 			],
-			"tokenUrl": "https://raw.githubusercontent.com/5etools-mirror-1/5etools-mirror-1.github.io/master/img/BGDIA/Scavenger.png",
+			"tokenUrl": "https://raw.githubusercontent.com/5etools-mirror-1/5etools-mirror-1.github.io/master/img/vehicles/tokens/BGDIA/Scavenger.png",
 			"fluff": {
 				"entries": [
 					{
@@ -1571,7 +1571,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"The Scavenger handles like a small bus and is used to sift through battlefield detritus for scrap metal and other materials worth salvaging. Attached to the back of the vehicle is a swinging crane with an iron grappling claw fastened to the end of a winch and a 50-foot-long chain."
+									"El carroñero se maneja como un pequeño autobús y se utiliza para filtrar los detritos del campo de batalla en busca de chatarra y materiales que valga la pena recuperar. La parte trasera del vehículo tiene una grúa giratoria con un garfio prensil de hierro al final de un cabrestante y una cadena de 50 pies de largo."
 								]
 							}
 						]
@@ -1589,7 +1589,7 @@
 			}
 		},
 		{
-			"name": "Tormentor",
+			"name": "Atormentador",
 			"source": "BGDIA-ES",
 			"page": 218,
 			"vehicleType": "INFWAR",
@@ -1630,39 +1630,39 @@
 			],
 			"trait": [
 				{
-					"name": "Crushing Wheels",
+					"name": "Armas Mágicas",
 					"entries": [
-						"The Tormentor can move through the space of any Medium or smaller creature. When it does, the creature must succeed on a DC 13 Dexterity saving throw or take 11 ({@damage 2d10}) bludgeoning damage and be knocked {@condition prone}.If the creature was already {@condition prone}, it takes an extra 11 ({@damage 2d10}) bludgeoning damage.This trait can't be used against a particular creature more than once each turn."
+						"Los ataques con arma del atormentador son mágicos."
 					]
 				},
 				{
-					"name": "Prone Deficiency",
+					"name": "Barrido de Guadañas",
 					"entries": [
-						"If the Tormentor rolls over and falls {@condition prone}, it can't right itself and is {@condition incapacitated} until flipped upright."
+						"Cuando el atormentador se mueve a 5 pies o menos de una criatura que no esté {@condition derribado|PHB-ES|derribada} o de otro vehículo por primera vez en un turno, puede barrer a la criatura o vehículo con sus cuchillas externas, causando 13 ({@damage 2d10 + 2}) de daño cortante. Una criatura se aparta de la trayectoria y no sufre daño si tiene éxito en una tirada de salvación de Destreza CD 13. Un vehículo se aparta de la trayectoria y no sufre daño si su conductor supera la tirada de salvación."
 					]
 				},
 				{
-					"name": "Magic Weapons",
+					"name": "Ruedas Aplastantes",
 					"entries": [
-						"The Tormentor's weapon attacks are magical."
+						"El atormentador puede moverse a través del espacio de cualquier criatura Mediana o Pequeña. Cuando lo hace, la criatura debe superar una tirada de salvación de Destreza CD 13 o sufrirá 11 ({@damage 2d10}) de daño contundente y quedará {@condition derribado|PHB-ES|derribada}. Si ya lo estaba, sufre 11 ({@damage 2d10}) de daño contundente adicionales. Este atributo no puede usarse contra una criatura concreta más de una vez por turno."
 					]
 				},
 				{
-					"name": "Raking Scythes",
+					"name": "Vulnerable a Ser Derribado",
 					"entries": [
-						"When the Tormentor moves within 5 feet of a creature that isn't {@condition prone} or another vehicle for the first time on a turn, it can rake the creature or vehicle with its protruding blades for 13 ({@damage 2d10 + 2}) slashing damage. A creature moves out of the way and takes no damage if it succeeds on a DC 13 Dexterity saving throw.A vehicle moves out of the way and takes no damage if its driver succeeds on the saving throw."
+						". Si el atormentador vuelca y queda {@condition derribado|PHB-ES}, no puede enderezarse por sí mismo y queda {@condition incapacitado|PHB-ES} hasta que recupere la verticalidad."
 					]
 				}
 			],
 			"actionStation": [
 				{
-					"name": "Helm (Requires 1 Crew and Grants Three-Quarters Cover)",
+					"name": "Dirección (requiere 1 tripulante y proporciona cobertura tres cuartos)",
 					"entries": [
-						"Drive and steer the Tormentor"
+						"Conduce y dirige el atormentador."
 					]
 				},
 				{
-					"name": "Harpoon Flinger (Requires 1 Crew and Grants Half Cover)",
+					"name": "Lanza arpones (requiere 1 tripulante y proporciona cobertura media)",
 					"entries": [
 						"{@atk rw} {@hit 7} to hit, range 120 ft., one target. {@h}11 ({@damage 2d8 + 2}) piercing damage."
 					]
@@ -1671,13 +1671,13 @@
 			"reaction": [
 				{
 					"type": "entries",
-					"name": "Juke",
+					"name": "Finta",
 					"entries": [
-						"If the Tormentor is able to move, the driver can use its reaction to grant the Tormentor advantage on a Dexterity saving throw."
+						"Si el atormentador puede moverse, el conductor puede usar su reacción para proporcionar al vehículo ventaja en una tirada de salvación de Destreza."
 					]
 				}
 			],
-			"tokenUrl": "https://raw.githubusercontent.com/5etools-mirror-1/5etools-mirror-1.github.io/master/img/BGDIA/Tormentor.png",
+			"tokenUrl": "https://raw.githubusercontent.com/5etools-mirror-1/5etools-mirror-1.github.io/master/img/vehicles/tokens/BGDIA/Tormentor.png",
 			"fluff": {
 				"entries": [
 					{
@@ -1686,7 +1686,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"The Tormentor handles like a dune buggy and is designed for raiding and scouting. Bladed iron wheels drive the vehicle forward."
+									"El atormentador se conduce como un buggy y está diseñado para asaltos y misiones de exploración. Unas ruedas de hierro con cuchillas propulsan el vehículo hacia adelante."
 								]
 							}
 						]
@@ -1704,9 +1704,9 @@
 			}
 		},
 		{
-			"name": "Warship",
+			"name": "Navío de guerra",
 			"source": "GoS-ES",
-			"page": 194,
+			"page": 190,
 			"vehicleType": "SHIP",
 			"size": "G",
 			"dimensions": [
@@ -1751,39 +1751,39 @@
 			},
 			"control": [
 				{
-					"name": "Helm",
+					"name": "Timón",
 					"ac": 18,
 					"hp": 50,
 					"entries": [
-						"Move up to the speed of one of its movement components, with one 90-degree turn. If the helm is destroyed, the warship can't turn."
+						"Avanza tanto como la velocidad de uno de los componentes de movimiento de la nave, pudiendo efectuar un viraje de 90 grados. Si el timón resulta destruido, el barco no puede virar."
 					]
 				}
 			],
 			"movement": [
 				{
-					"name": "Oars",
+					"name": "Remos",
 					"ac": 12,
 					"hp": 100,
-					"hpNote": "-5 ft. speed per 25 damage taken",
+					"hpNote": "-5 pies de velocidad por cada 25 de daño recibidos",
 					"speed": [
 						{
 							"mode": "water",
 							"entries": [
-								"20 ft. (requires at least 20 crew)"
+								"20 ft. (requiere al menos 20 tripulantes)"
 							]
 						}
 					]
 				},
 				{
-					"name": "Sails",
+					"name": "Velas",
 					"ac": 12,
 					"hp": 100,
-					"hpNote": "-10 ft. speed per 25 damage taken",
+					"hpNote": "-10 pies de velocidad por cada 25 de daño recibidos",
 					"speed": [
 						{
 							"mode": "water",
 							"entries": [
-								"35 ft.; 15 ft. while sailing into the wind; 50 ft. while sailing with the wind."
+								"35 ft.; 15 pies navegando contra el viento; 50 pies navegando a favor del viento."
 							]
 						}
 					]
@@ -1791,7 +1791,7 @@
 			],
 			"weapon": [
 				{
-					"name": "Ballistas",
+					"name": "Balistas",
 					"count": 2,
 					"ac": 15,
 					"hp": 50,
@@ -1800,21 +1800,21 @@
 					]
 				},
 				{
-					"name": "Mangonels",
+					"name": "Manganas",
 					"count": 2,
 					"ac": 15,
 					"hp": 100,
 					"entries": [
-						"{@atk rw} {@hit 5} to hit, range 200/800 ft. (can't hit targets within 60 ft. of it), one target. {@h}27 ({@damage 5d10}) bludgeoning damage."
+						"{@atk rw} {@hit 5} to hit, range 200/800 ft. (no puede golpear a objetivos que se encuentren a menos de 60 pies), one target. {@h}27 ({@damage 5d10}) bludgeoning damage."
 					]
 				},
 				{
-					"name": "Naval Ram",
+					"name": "Ariete naval",
 					"ac": 20,
 					"hp": 100,
 					"dt": 10,
 					"entries": [
-						"The warship has advantage on all saving throws relating to crashing when it crashes into a creature or object. Any damage it takes from the crash is applied to the naval ram rather than to the ship. These benefits don't apply if another vessel crashes into the warship."
+						"Cuando embista a una criatura o a un objeto, el navío de guerra tendrá ventaja en todas las tiradas de salvación derivadas del choque. Cualquier daño que resulte de la acometida se aplicará al ariete naval en vez de a la nave. Estos beneficios no se tendrán en cuenta si otro buque choca con el navío."
 					]
 				}
 			],
@@ -1825,25 +1825,25 @@
 				"3": 20
 			},
 			"action": [
-				"On its turn, the warship can take 3 actions, choosing from the options below. It can take only 2 actions if it has fewer than twenty crew and only 1 action if it has fewer than ten. It can't take these actions if it has fewer than three crew.",
+				"Durante su turno, el barco puede realizar 3 acciones de entre las opciones que se presentan a continuación. Solo puede llevar a cabo 2 acciones si tiene menos de veinte tripulantes, y únicamente 1 acción si cuenta con menos de diez. No puede hacer ninguna de estas acciones si posee menos de tres tripulantes.",
 				{
 					"type": "list",
 					"style": "list-hang-notitle",
 					"items": [
 						{
 							"type": "item",
-							"name": "Fire Ballistas",
-							"entry": "The warship can fire its {@object ballista||ballistas} (DMG, ch. 8)."
+							"name": "Disparar las balistas",
+							"entry": "La embarcación puede disparar sus {@object balista|DMG-ES|balistas} (DMG, cap. 8)."
 						},
 						{
 							"type": "item",
-							"name": "Fire Mangonels",
-							"entry": "The warship can fire its {@object mangonel||mangonels} (DMG, ch. 8)."
+							"name": "Disparar las manganas",
+							"entry": "La nave puede disparar sus {@object mangana|DMG-ES|manganas} (DMG, cap. 8)."
 						},
 						{
 							"type": "item",
-							"name": "Move",
-							"entry": "The warship can use its helm to move with its oars or sails. As part of this move, it can use its naval ram."
+							"name": "Moverse",
+							"entry": "El navío de guerra puede usar el timón para moverse a remo o a vela. Como parte de este movimiento, puede utilizar su ariete naval."
 						}
 					]
 				}
@@ -1853,96 +1853,96 @@
 					{
 						"type": "entries",
 						"entries": [
-							"Warships are slow, heavily armed vessels capable of taking on large amounts of cargo.",
-							"A warship ship has the following features:",
+							"Los navíos de guerra son naves más lentas, pero mejor armadas y capaces de transportar más cargamento.",
+							"El navío de guerra tiene las siguientes características:",
 							{
 								"type": "list",
 								"style": "list-hang-notitle",
 								"items": [
 									{
 										"type": "item",
-										"name": "Ceilings",
-										"entry": "The ceilings in the lower deck, holds, and cabins are 8 feet high with 6-foot-high doorways."
+										"name": "Arcones",
+										"entry": "Los arcones de la nave son de hierro y tienen CA 19, 18 puntos de golpe e inmunidad a los daños psíquico y de veneno."
 									},
 									{
 										"type": "item",
-										"name": "Doors",
-										"entry": "The ship's doors are made of wood and have AC 15, 18 hit points, and immunity to poison and psychic damage. A lock can be picked with a successful DC 15 Dexterity check made using thieves' tools, or the door can be forced open with a successful DC 20 Strength (Athletics) check."
+										"name": "Iluminación",
+										"entry": "Unos fanales colgados por todo el barco le proporcionan luz brillante."
 									},
 									{
 										"type": "item",
-										"name": "Footlockers",
-										"entry": "Footlockers on the ship are iron and have AC 19, 18 hit points, and immunity to poison and psychic damage."
+										"name": "Jarcias",
+										"entry": "Se puede trepar por la jarcia de la embarcación sin necesidad de hacer ninguna prueba de característica."
 									},
 									{
 										"type": "item",
-										"name": "Light",
-										"entry": "Hanging lanterns cast bright light throughout the ship."
+										"name": "Puertas",
+										"entry": "Las puertas del barco están hechas de madera y cuentan con CA 1 5, 18 puntos de golpe e inmunidad a los daños psíquico y de veneno. Pueden abrirse usando herramientas de ladrón y superando una prueba de Destreza CD 15 o teniendo éxito en una prueba de Fuerza (Atletismo) CD 20."
 									},
 									{
 										"type": "item",
-										"name": "Rigging",
-										"entry": "Rigging on the ship can be climbed without an ability check."
+										"name": "Techos",
+										"entry": "Los techos de cubierta inferior, bodegas y camarotes alcanzan Jos 8 pies de alto, mientras que sus puertas son de 6 pies de alto."
 									},
 									{
 										"type": "item",
-										"name": "Sails",
-										"entry": "The ship has three 80-foot-tall masts with sails to catch the wind and oars on the lower deck for rowing."
+										"name": "Velamen",
+										"entry": "El barco posee tres mástiles de 80 pies de alto provistos de velas para aprovechar el viento y remos en la cubierta inferior para propulsar la nave bogando."
 									}
 								]
 							},
 							{
 								"type": "entries",
-								"name": "Example Crew",
+								"name": "Tripulación típica",
 								"entries": [
-									"A warship requires a large crew to properly sail the vessel. Warships carry extra soldiers to fight battles and fire the siege weapons. If the characters are guests on a warship, the crew consists of the following creatures, all of which have proficiency with water vehicles in addition to their normal statistics:",
+									"Un navío de guerra requiere de una gran tripulación para gobernar el buque como es debido. Los navíos de guerra transportan soldados adicionales para pelear y disparar las armas de asedio. Si los personajes viajan en alguna de estas naves como pasajeros, la tripulación se compondrá de las siguientes criaturas, que tendrán competencia en el manejo de vehículos acuáticos, además de sus perfiles normales:",
 									{
 										"type": "list",
 										"items": [
-											"One captain ({@creature bandit captain})",
-											"Four other officers: a first mate, a bosun, a quartermaster, and a cook ({@creature noble||nobles})",
-											"Twenty-five sailors ({@creature commoner||commoners})"
+											"Un capitán ({@creature capitán bandido|MM-ES}).",
+											"Otros cuatro oficiales: un primer oficial, un contramaestre, un navegante y un cocinero ({@creature noble|MM-ES|nobles}).",
+											"Veinticinco marineros ({@creature plebeyo|MM-ES|plebeyos)."
 										]
 									},
-									"A warship typically includes the following additional crew to augment its fighting ability:",
+									"Por lo general, un navío de guerra incluye la siguiente tripulación adicional para potenciar su capacidad de combate:",
 									{
 										"type": "list",
 										"items": [
-											"Forty soldiers ({@creature guard||guards})",
-											"Eight siege engineers ({@creature guard||guards})",
-											"One {@creature priest} (the ship's surgeon)"
+											"Cuarenta soldados ({@creature guardia|MM-ES|guardias}).",
+											"Ocho ingenieros de asedio ({@creature guardia|MM-ES|guardias}).",
+											"Un {@creature sacerdote|MM-ES} (el cirujano del barco)."
 										]
 									}
 								]
 							},
 							{
 								"type": "entries",
-								"name": "1. Main Deck",
+								"name": "1. Cubierta principal",
 								"entries": [
-									"The main deck of the ship has the following features:",
+									"La cubierta principal de la nave tiene las siguientes características:",
 									{
 										"type": "list",
 										"style": "list-hang-notitle",
 										"items": [
 											{
 												"type": "item",
-												"name": "Mangonel",
-												"entry": "Sailing ships have one {@object mangonel} (DMG, ch. 8) attached to the deck. Warships have two mangonels (DMG, ch. 8). Each weapon has 10 mangonel stones stacked and secured near it."
+												"name": "Mangana",
+												"entry": "Los navíos de guerra cuentan con dos {@object mangana|DMG-ES|manganas} (DMG, cap. 8) . Junto a cada una hay 10 piedras, empleadas como proyectiles de esta arma, apiladas y amarradas."
 											},
 											{
 												"type": "item",
-												"name": "Hatch",
-												"entry": "A covered, 10-foot-square opening leads to the lower deck (area W8)."
+												"name": "Escotilla",
+												"entry": "Una abertura cubierta cuadrada de 10 pies de lado permite acceder a la cubierta inferior (zona 8)."
 											},
 											{
 												"type": "item",
-												"name": "Railing",
-												"entry": "The main deck has a 3-foot-high rail around its perimeter that provides half cover for Medium creatures and three-quarters cover for Small creatures behind it."
+												"name": "Batayola",
+												"entry": "Una borda de 3 pies de alto está construida en torno al perímetro de la cubierta principal; proporciona cobertura media a las criaturas Medianas y cobertura tres cuartos a las criaturas Pequeñas mientras se encuentran tras esta."
 											},
 											{
 												"type": "item",
-												"name": "Rowboats",
-												"entry": "Four {@vehicle rowboat||rowboats} are stacked on top of each other on this deck. Ropes and pulleys can hoist these boats in and out of the water."
+												"name": "Botes de remos",
+												"entry": "Cuatro {@vehicle bote de remos|GoS-ES|botes de remos} se apilan uno sobre otro en esta cubierta. Se pueden arriar o izar mediante un sistema de cuerdas y poleas."
 											}
 										]
 									}
@@ -1950,55 +1950,55 @@
 							},
 							{
 								"type": "entries",
-								"name": "2. Officers' Quarters",
+								"name": "2. Dependencias de los oficiales",
 								"entries": [
-									"Four beds stand in the officer's quarters. Beneath each is an iron footlocker that holds the officers' belongings. The officers sleep in shifts so someone remains on duty to command the crew and carry out the captain's orders."
+									"Cuatro camas están dispuestas en el camarote de los oficiales. Debajo de cada una hay un arcón de hierro donde estos pueden guardar sus pertenencias. Los oficiales duermen por turnos para que siempre haya alguien de guardia para dar las órdenes a la tripulación y cumplir con las del capitán."
 								]
 							},
 							{
 								"type": "entries",
-								"name": "3. Captain's Quarters",
+								"name": "3. Dependencias del capitán",
 								"entries": [
-									"The captain's quarters hold a bed and a desk. Beneath the bed is an iron footlocker that holds the captain's belongings."
+									"El camarote del capitán cuenta con una cama y un escritorio. Bajo la cama se sitúa un arcón de hierro donde este puede guardar sus efectos personales."
 								]
 							},
 							{
 								"type": "entries",
-								"name": "4. Siege Weapon Ammunition",
+								"name": "4. Munición de las armas de asedio",
 								"entries": [
-									"Shelves and rope on the walls of this cabin secure mangonel stones and ballista arrows."
+									"Hay piedras de mangana y flechas de balista estibadas con cuerdas en unos estantes ubicados en las paredes de este compartimento."
 								]
 							},
 							{
 								"type": "entries",
-								"name": "5. Supplies",
+								"name": "5. Suministros",
 								"entries": [
-									"This area holds tools, barrels of tar, rope, extra material to repair sails, and other supplies needed to maintain the ship."
+									"En esta zona se almacenan herramientas, barriles de brea, cuerdas, material adicional para reparar velas, así como otros suministros necesarios para el mantenimiento del barco."
 								]
 							},
 							{
 								"type": "entries",
-								"name": "6. Forecastle",
+								"name": "6. Castillo de proa",
 								"entries": [
-									"The forecastle has the following features:",
+									"El castillo tiene las siguientes características:",
 									{
 										"type": "list",
 										"style": "list-hang-notitle",
 										"items": [
 											{
 												"type": "item",
-												"name": "Ballista",
-												"entry": "A {@object ballista} (DMG, ch. 8) is attached to the deck. Ten ballista arrows are stacked and secured nearby."
+												"name": "Balista",
+												"entry": "Hay una {@object balista|DMG-ES} (DMG, cap. 8) montada en la cubierta. Junto a esta se apilan, bien amarradas, diez flechas de esta arma."
 											},
 											{
 												"type": "item",
-												"name": "Figurehead",
-												"entry": "Warships have an iron figurehead at the front of their forecastle, often shaped to look like a fearsome sea predator. This figurehead serves as the ship's naval ram."
+												"name": "Mascarón de proa",
+												"entry": "Los navíos de guerra llevan un mascarón de proa de hierro en la parte frontal de su castillo de proa, a menudo con la forma de algún temible depredador marino. Este mascarón hace las veces de ariete naval del barco."
 											},
 											{
 												"type": "item",
-												"name": "Railing",
-												"entry": "The forecastle has a 3-foot-high rail around its perimeter that provides half cover for Medium creatures and three-quarters cover for Small creatures behind it."
+												"name": "Batayola",
+												"entry": "Una borda de 3 pies de alto está construida en torno al perímetro de la cubierta del castillo de proa; proporciona cobertura media a las criaturas Medianas y cobertura tres cuartos a las criaturas Pequeñas mientras se encuentran tras esta."
 											}
 										]
 									}
@@ -2006,27 +2006,27 @@
 							},
 							{
 								"type": "entries",
-								"name": "7. Quarterdeck",
+								"name": "7. Alcázar de popa",
 								"entries": [
-									"The quarterdeck has the following features:",
+									"El alcázar tiene las siguientes características:",
 									{
 										"type": "list",
 										"style": "list-hang-notitle",
 										"items": [
 											{
 												"type": "item",
-												"name": "Ballista",
-												"entry": "On a warship, a {@object ballista} (DMG, ch. 8) is attached to the deck. Ten ballista arrows are stacked and secured nearby."
+												"name": "Balista",
+												"entry": "En un navío de guerra hay una {@object balista|DMG-ES} (DMG, cap. 8) montada en la cubierta. Junto a esta se apilan, bien amarradas, diez flechas de esta arma."
 											},
 											{
 												"type": "item",
-												"name": "Railing",
-												"entry": "The quarterdeck has a 3-foot-high rail around its perimeter that provides half cover for Medium creatures and three-quarters cover for Small creatures behind it."
+												"name": "Batayola",
+												"entry": "Una borda de 3 pies de alto está construida en torno al perímetro de la cubierta del castillo de proa; proporciona cobertura media a las criaturas Medianas y cobertura tres cuartos a las criaturas Pequeñas mientras se encuentran tras esta."
 											},
 											{
 												"type": "item",
-												"name": "Wheel",
-												"entry": "The ship's wheel stands at the aft of the quarterdeck."
+												"name": "Rueda del timón",
+												"entry": "La rueda del timón del barco se sitúa en la popa del alcázar."
 											}
 										]
 									}
@@ -2034,44 +2034,44 @@
 							},
 							{
 								"type": "entries",
-								"name": "8. Oar Deck",
+								"name": "8. Cubierta de boga",
 								"entries": [
-									"Twenty-two benches are built into the deck of the lower deck, each with a 20-foot-long oar. When the ship is rowed, crew members sit on these benches to work the oars. Ten spare oars hang on the walls of the ship."
+									"Hay veintidós bancos integrados en la cubierta, cada uno con un remo de 20 pies de largo. Cuando se propulsa el barco usando los remos, los tripulantes se sientan en estos bancos para bogar. En las paredes cuelgan diez remos de repuesto."
 								]
 							},
 							{
 								"type": "entries",
-								"name": "9. Privy",
+								"name": "9. Letrinas",
 								"entries": [
-									"Benches line the walls of this room. Four holes carved in them house chamber pots."
+									"Unos bancos están alineados en las paredes de este compartimento. Los cuatro agujeros practicados en estos contienen orinales."
 								]
 							},
 							{
 								"type": "entries",
-								"name": "10. Medical Cabin",
+								"name": "10. Camarote médico",
 								"entries": [
-									"Hooks and shelves on the walls hold medical instruments, bandages, balms, tonics, jars of leeches, and more, ready to treat injuries from combat or sailing mishaps."
+									"Los ganchos y estantes de las paredes contienen instrumental médico, vendas, bálsamos, tónicos, frascos llenos de sanguijuelas y demás material; todo preparado para atender las heridas de los combates o los accidentes."
 								]
 							},
 							{
 								"type": "entries",
-								"name": "11. Brig",
+								"name": "11. Calabozo",
 								"entries": [
-									"This cabin is meant for guests and visiting high-ranking officials along for the journey. Since warships often have a greater need to house prisoners rather than guests, each bed aboard such a vessel also has a set of {@item manacles|phb} (see chapter 5 in the Player's Handbook) attached to its frame."
+									"Este camarote está destinado a alojar durante el viaje a los pasajeros invitados y a los funcionarios de alto rango. Dado que los navíos de guerra a menudo necesitan mucho espacio para albergar prisioneros en lugar de viajeros, las camas de estos buques también cuentan con {@item Esposas|PHB-ES|grilletes} (consulta el capítulo 5 del Player's Handbook) unidos a sus somieres."
 								]
 							},
 							{
 								"type": "entries",
-								"name": "12. Hold",
+								"name": "12. Bodega",
 								"entries": [
-									"This area houses both passengers and cargo. The ship's off-duty crew sleep on bedrolls among the crates and barrels of food, water, and other supplies."
+									"Esta zona contiene tanto pasajeros como carga. La tripulación fuera de servicio del barco duerme en sacos de dormir, entre las cajas y los barriles de comida, agua y otros suministros."
 								]
 							},
 							{
 								"type": "entries",
-								"name": "13. Armory",
+								"name": "13. Armería",
 								"entries": [
-									"The ship's supply of weapons and armor is held in this cabin. Its walls are fitted with built-in weapon and armor racks. The door to this cabin is usually locked, the key kept by one of the ship's officers."
+									"En este camarote se guardan los suministros de armas y armaduras de la nave. Sus paredes están cubiertas de estantes integrados que sostienen armas y armaduras. La puerta del compartimento está cerrada por lo general, y la llave la lleva consigo uno de los oficiales del barco."
 								]
 							}
 						]
@@ -2091,429 +2091,429 @@
 	],
 	"vehicleUpgrade": [
 		{
-			"name": "Acidic Bile Sprayer",
+			"name": "Pulverizador de bilis ácida",
 			"source": "BGDIA-ES",
 			"page": 221,
 			"upgradeType": [
-				"IWM:W"
+				"Variante infernal, Armamento"
 			],
 			"entries": [
-				"This hose weapon is attached to demonic organs that produce an acidic bile that dissolves flesh on contact.",
+				"Esta arma de manguera está adherida a órganos demoníacos que producen una bilis ácida capaz de disolver la carne al entrar en contacto.",
 				{
 					"type": "entries",
-					"name": "Acidic Bile Sprayer (Requires 1 Crew and Grants Half Cover, {@recharge 5|m})",
+					"name": "Pulverizador de bilis 6cida (requiere 1 tripulante y proporciona cobertura media, {@recharge 5|m})",
 					"entries": [
-						"Acidic bile sprays from a nozzle in a 30-foot cone. Each creature in the cone must make a DC 12 Dexterity saving throw, taking 40 ({@damage 9d8}) acid damage on a failed save, or half as much damage on a successful one. A creature reduced to 0 hit points by this damage is dissolved, leaving behind any objects it was carrying or wearing."
+						"La bilis ácida sale de una boquilla formando un cono de 30 pies. Cada criatura en el cono debe hacer una tirada de salvación de Destreza CD 12, sufriendo 40 ({@damage 9d8}) de daño de ácido si falla, o la mitad si la supera. Una criatura cuyos puntos de golpe sean reducidos a 0 por este daño se disuelve, dejando atrás los objetos que llevara o empuñara."
 					]
 				}
 			]
 		},
 		{
-			"name": "Arcane Artillery",
-			"source": "GoS-ES",
-			"page": 197,
-			"upgradeType": [
-				"SHP:W"
-			],
-			"entries": [
-				"Using methods similar to those used to produce magic weapons, a skilled spellcaster imbues a ship's weapon with destructive energy. This weapon gains a +2 bonus to its attack and damage rolls, and its attacks count as magical."
-			]
-		},
-		{
-			"name": "Bones of Endless Toil",
+			"name": "Artillería arcana",
 			"source": "GoS-ES",
 			"page": 198,
 			"upgradeType": [
-				"SHP:O"
+				"Mejora de Embarcación, Armamento"
 			],
 			"entries": [
-				"The bones of ancient, mysterious creatures festoon the ship. Potent runes crawl across these remains, emitting a sickly green radiance. When a humanoid dies aboard the ship, that creature must make a DC 12 Wisdom saving throw. On a successful save, it dies as normal. If it fails, it immediately rises as a {@creature zombie} obedient to the ship's captain. The zombie gains a working knowledge of the ship, allowing it to serve as a member of the crew. A number of creatures equal to the ship's creature capacity can be animated in this manner at any given time."
+				"Usando métodos similares a los utilizados para crear armas mágicas, un lanzador de conjuros experto puede imbuir el arma de un navío con energía destructiva. Esta gana un bonificador de +2 a sus tiradas de ataque y daño; además, sus ataques se consideran mágicos."
 			]
 		},
 		{
-			"name": "Canian Armor",
+			"name": "Huesos del trabajo eterno",
+			"source": "GoS-ES",
+			"page": 198,
+			"upgradeType": [
+				"Mejora de Embarcación, Misceláneas"
+			],
+			"entries": [
+				"Los huesos de unas antiguas y misteriosas criaturas adornan el navío. A través de estos restos se deslizan unas potentes runas, emitiendo un enfermizo resplandor verde. Cuando un humanoide muere a bordo de la nave, este deberá hacer una tirada de salvación de Sabiduría CD 12. Si la supera, fallecerá de forma natural. Si falla, se alzará de inmediato convertido en un {@creature zombi|MM-ES} a las órdenes del capitán del barco. El muerto viviente adquiere un conocimiento práctico del funcionamiento de la embarcación, lo que le permite servir como miembro de la tripulación. En cualquier momento se puede animar de esta manera a un número de zombis igual a la capacidad de transporte de criaturas de la nave."
+			]
+		},
+		{
+			"name": "Blindaje caniano",
 			"source": "BGDIA-ES",
 			"page": 221,
 			"upgradeType": [
-				"IWM:A"
+				"Variante infernal, Blindaje"
 			],
 			"entries": [
-				"The infernal iron used to make the vehicle was mined on Cania, the coldest layer of the Nine Hells. An infernal war machine with Canian armor has an Armor Class of 22 + its Dexterity modifier. While the vehicle is not moving, attack rolls made against it have advantage. The infernal war machine also has immunity to cold damage in addition to its other damage immunities, and it's immune to the effects of extreme cold."
+				"El hierro infernal utilizado para hacer el vehículo se extrajo en Cania, la capa más fría de los Nueve Infiernos. Una máquina de guerra infernal con blindaje caniano tiene una clase de armadura de 22 + su modificador de Destreza. Mientras el vehículo no se mueva, las tiradas de ataque realizadas contra él tienen ventaja. Además de sus inmunidades al daño normales, la máquina de guerra infernal también tiene inmunidad al daño de frío y es inmune a los efectos del frío extremo."
 			]
 		},
 		{
-			"name": "Churning Hull",
-			"source": "GoS-ES",
-			"page": 196,
-			"upgradeType": [
-				"SHP:H"
-			],
-			"entries": [
-				"A tempest rages within these rune-etched, iron chains. Raiders and pirates who operate under the blessings of a storm god sometimes make use of this upgrade.",
-				"By draping the chains over a ship's hull, the storm's fury thrashes into the water around it. The water within 210 feet of the ship is {@quickref difficult terrain||3} for everything other than this ship."
-			]
-		},
-		{
-			"name": "Clockwork Oars",
+			"name": "Casco tempestuoso",
 			"source": "GoS-ES",
 			"page": 197,
 			"upgradeType": [
-				"SHP:M"
+				"Mejora de Embarcación, Casco"
 			],
 			"entries": [
-				"Using a combination of magic and clockwork, the oars on this ship require only one crew member to use them, pushing the button or lever that activates them."
+				"Una tempestad ruge dentro de estas cadenas de hierro grabadas con runas. Los salteadores y piratas que actúan con las bendiciones del dios de las tormentas a veces hacen uso de esta mejora.",
+				"Al rodear con las cadenas el casco de un navío, la furia de una tormenta se extiende por el agua que lo rodea. El agua que está a 210 pies o menos de la embarcación se convierte en {@book terreno difícil|PHB-ES|9|terreno difícil} para todo lo que no sea ese barco en particular."
 			]
 		},
 		{
-			"name": "Concussive Rounds",
+			"name": "Remos mecánicos",
 			"source": "GoS-ES",
 			"page": 197,
 			"upgradeType": [
-				"SHP:W"
+				"Mejora de Embarcación, Movimiento"
 			],
 			"entries": [
-				"Enhanced by abjuration magic, this weapon's attacks burst with raucous noise capable of momentarily distracting and disorienting enemy crews. If this weapon hits a vehicle's hull, that vehicle's speed decreases by {@dice 2d10} feet until the start of the attacker's next turn."
+				"Gracias a una combinación de magia y mecánica, los remos en esta nave solo requieren de un miembro de la tripulación para funcionar: quien presiona el botón o la palanca que los activa."
 			]
 		},
 		{
-			"name": "Death Vessel",
+			"name": "Salvas de conmoción",
 			"source": "GoS-ES",
-			"page": 196,
+			"page": 198,
 			"upgradeType": [
-				"SHP:H"
+				"Mejora de Embarcación, Armamento"
 			],
 			"entries": [
-				"Crafted with materials harvested from the Shadowfell, this upgrade grants a ship an aura of dread. As an action, the ship can create a pulse of horrific energy. Every creature that is an enemy of the ship who is on board or within 210 feet of it must make DC 14 Wisdom saving throw. On a failed save, a creature is {@condition frightened} of the ship for 1 minute. On a successful save, the creature is immune to this ability for 24 hours. Once this ability is used, it can't be used again until {@dice 1d4} hours have passed."
+				"Mejorados mediante magia de abjuración, los ataques de esta arma estallan con un estridente ruido capaz de distraer y desorientar momentáneamente a las tripulaciones enemigas. Si esta arma golpea el casco de un vehículo, la velocidad de este disminuye en {@dice 2d10} pies hasta el comienzo del siguiente turno del atacante."
 			]
 		},
 		{
-			"name": "Defiant Sails",
-			"source": "GoS-ES",
-			"page": 197,
-			"upgradeType": [
-				"SHP:M"
-			],
-			"entries": [
-				"These sails glitter with a fine coat of mithral treated with abjuration magic. While the sails are unfurled, ranged weapon attacks made against the ship and anyone aboard it are made with disadvantage, as a result of the sails' protective magic. This drawback doesn't apply if the attacker is aboard the ship."
-			]
-		},
-		{
-			"name": "Dragon Sails",
+			"name": "Navío de la muerte",
 			"source": "GoS-ES",
 			"page": 197,
 			"upgradeType": [
-				"SHP:M"
+				"Mejora de Embarcación, Casco"
 			],
 			"entries": [
-				"Dragon scales woven into these sails make them more resistant to damage. The sails gain a +3 bonus to AC, and they have resistance to a damage type based on the type of scales used to craft them, as shown on the Dragon Sails table.",
+				"Construido a mano con materiales cosechados en el Shadowfell, esta mejora otorga a la nave un aura de terror. Como acción, el barco puede generar un pulso de energía terrorífica. Todas las criaturas que se encuentren a bordo y que se consideren enemigas de la embarcación, o que estén a 210 pies o menos de esta, deberán realizar una tirada de salvación de Sabiduría CD 14. Aquellas que fallen quedarán {@condition asustado|PHB-ES|asustadas} por el navío durante 1 minuto. Si la supera, la criatura será inmune a este efecto durante 24 horas. Una vez usada esta habilidad, no se puede volver a utilizar hasta que hayan transcurrido {@dice 1d4} horas."
+			]
+		},
+		{
+			"name": "Velas desafiantes",
+			"source": "GoS-ES",
+			"page": 197,
+			"upgradeType": [
+				"Mejora de Embarcación, Movimiento"
+			],
+			"entries": [
+				"Estas velas brillan con una fina capa de mithral tratada con magia de abjuración. Mientras están desplegadas, los ataques con armas a distancia que se hacen contra el barco y contra cualquiera a bordo se hacen con desventaja, gracias a la magia protectora de las velas. Esta penalización no se aplica si el atacante se encuentra a bordo de la nave."
+			]
+		},
+		{
+			"name": "Velas de dragón",
+			"source": "GoS-ES",
+			"page": 197,
+			"upgradeType": [
+				"Mejora de Embarcación, Movimiento"
+			],
+			"entries": [
+				"Las escamas de dragón entretejidas en estas velas las hacen más resistentes al daño. Además, tienen un bonificador de +3 a la CA y resistencia a un tipo de daño basado en la clase de escamas que se hayan utilizado al fabricarlas, como se muestra en la tabla \"Velas de dragón\".",
 				{
 					"type": "table",
-					"caption": "Dragon Sails",
+					"caption": "Velas de dragón",
 					"colStyles": [
 						"col-6 text-center",
 						"col-6 text-center"
 					],
 					"colLabels": [
-						"Dragon Type",
-						"Damage Type"
+						"Tipo de dragón",
+						"Tipo de daño"
 					],
 					"rows": [
 						[
-							"Black",
-							"Acid"
+							"Azul",
+							"Relámpago"
 						],
 						[
-							"Blue",
-							"Lightning"
+							"Blanco",
+							"Frío"
 						],
 						[
-							"Brass",
-							"Fire"
+							"Bronce",
+							"Relámpago"
 						],
 						[
-							"Bronze",
-							"Lightning"
+							"Cobre",
+							"Ácido"
 						],
 						[
-							"Copper",
-							"Acid"
+							"Negro",
+							"Ácido"
 						],
 						[
-							"Gold",
-							"Fire"
+							"Oro",
+							"Fuego"
 						],
 						[
-							"Green",
-							"Acid"
+							"Oropel",
+							"Fuego"
 						],
 						[
-							"Red",
-							"Fire"
+							"Plata",
+							"Frío"
 						],
 						[
-							"Silver",
-							"Cold"
+							"Rojo",
+							"Fuego"
 						],
 						[
-							"White",
-							"Cold"
+							"Verde",
+							"Ácido"
 						]
 					]
 				}
 			]
 		},
 		{
-			"name": "Ever-Full Sails",
+			"name": "Velas siempre hinchadas",
 			"source": "GoS-ES",
 			"page": 197,
 			"upgradeType": [
-				"SHP:M"
+				"Mejora de Embarcación, Movimiento"
 			],
 			"entries": [
-				"These billowing sails are woven from cloud-stuff drawn from the Elemental Plane of Air. Wind whips and whistles around them, allowing a ship to move with a speed of 60 feet regardless of direction relative to the wind."
+				"Estas ondulantes velas están tejidas a partir de un material nuboso extraído del Plano Elemental del Aire. La brisa azota y silba a su alrededor, lo que permite a un navío moverse a una velocidad de 60 pies con independencia de la dirección que lleve con respecto al viento."
 			]
 		},
 		{
-			"name": "Explosive Rounds",
+			"name": "Salvas explosivas",
 			"source": "GoS-ES",
-			"page": 197,
+			"page": 198,
 			"upgradeType": [
-				"SHP:W"
+				"Mejora de Embarcación, Armamento"
 			],
 			"entries": [
-				"Drawing on powerful evocation magic, this weapon's attacks are imbued with unstable energy that explodes in a fiery blast. When this weapon hits, it deals an extra {@damage 2d6} fire damage."
+				"Valiéndose de una poderosa magia de evocación, los ataques de esta arma están imbuidos de una energía inestable que desata un estallido de fuego. Cuando esta arma impacta, inflige {@damage 2d6} de daño de fuego adicional."
 			]
 		},
 		{
-			"name": "Flamethrower",
+			"name": "Lanzallamas",
 			"source": "BGDIA-ES",
 			"page": 221,
 			"upgradeType": [
-				"IWM:W"
+				"Variante infernal, Armamento"
 			],
 			"entries": [
-				"Although useless against demons, this weapon is great against flammable creatures and objects.",
+				"Aunque es inútil contra los demonios, esta arma es excelente contra criaturas y objetos inflamables.",
 				{
 					"type": "entries",
-					"name": "Flamethrower (Requires 1 Crew and Grants Half Cover)",
+					"name": "Lanzallamas (requiere 1 tripulante y proporciona cobertura media)",
 					"entries": [
-						"Fire shoots out of the weapon's nozzle in a 60-foot line that is 5 feet wide. Each creature in the line must make a DC 15 Dexterity saving throw, taking 18 ({@damage 4d8}) fire damage on a failed save, or half as much damage on a successful one. The fire ignites any flammable objects in the area that aren't being carried or worn."
+						"El fuego sale disparado de la boquilla del arma en una línea de 60 pies de largo y S de ancho. Cada criatura en dicha línea debe hacer una tirada de salvación de Destreza CD 15, sufriendo 18 ({@damage 4d8}) de daño de fuego si falla, o la mitad si la supera. El fuego prende cualquier objeto inflamable en el área que no sea transportado o vestido."
 					]
 				}
 			]
 		},
 		{
-			"name": "Frost-Locked Hull",
-			"source": "GoS-ES",
-			"page": 196,
-			"upgradeType": [
-				"SHP:H"
-			],
-			"entries": [
-				"This upgrade replaces a ship's hull with supernatural ice drawn from the elemental planes. The hull and the other components of the ship are immune to cold damage but vulnerable to fire damage. The ship can also move at its normal speed over ice of any thickness, floating on the ice at the same depth as it would in water."
-			]
-		},
-		{
-			"name": "Gilded Death Armor",
-			"source": "BGDIA-ES",
-			"page": 222,
-			"upgradeType": [
-				"IWM:A"
-			],
-			"entries": [
-				"Gold stolen or bartered from the archdevil Mammon plates the vehicle's exterior. This gold can't be removed without destroying the vehicle and turns to dust when the infernal war machine drops to 0 hit points. Gilded death armor grants the infernal war machine resistance to bludgeoning, piercing, and slashing damage."
-			]
-		},
-		{
-			"name": "Grasping Rounds",
+			"name": "Casco congelado",
 			"source": "GoS-ES",
 			"page": 197,
 			"upgradeType": [
-				"SHP:W"
+				"Mejora de Embarcación, Casco"
 			],
 			"entries": [
-				"This weapon creates spectral chains that trail after its shots, restraining enemy vessels in their grasp. When this weapon hits a ship, that vehicle must succeed on a DC 14 Strength saving throw or it can't move away from the attacker. As an action, the attacking ship can end this effect, and the target can end it by taking an action and succeeding on a DC 14 Strength check."
+				"Esta mejora reemplaza el casco de un barco con hielo sobrenatural traído de los planos elementales. El casco y los demás componentes de la nave son inmunes al daño de frío, pero vulnerables al daño de fuego. La embarcación también puede moverse a su velocidad normal sobre hielo de cualquier espesor, desplazándose sobre este a la misma profundidad que lo haría sobre el agua."
 			]
 		},
 		{
-			"name": "Guardian Figurehead",
+			"name": "Blindaje de muerte dorada",
+			"source": "BGDIA-ES",
+			"page": 222,
+			"upgradeType": [
+				"Variante infernal, Blindaje"
+			],
+			"entries": [
+				"El exterior del vehículo está recubierto de oro robado (o intercambiado) al archidiablo Mammón. Este oro no puede extraerse sin destruir el vehículo y se convierte en polvo cuando los puntos de golpe de la máquina de guerra infernal se reducen a O. El blindaje de muerte dorada proporciona a la máquina de guerra infernal resistencia al daño contundente, cortante y perforante."
+			]
+		},
+		{
+			"name": "Salvas captoras",
 			"source": "GoS-ES",
 			"page": 198,
 			"upgradeType": [
-				"SHP:F"
+				"Mejora de Embarcación, Armamento"
 			],
 			"entries": [
-				"This figurehead depicts an armored knight. As an action, the ship can activate this item, causing it to animate as an {@creature iron golem}. The golem acts on the ship's turn when the captain uses one of the ship's actions. The golem remains animated for 1 minute. At the end of that time, it teleports back to its position as a figurehead. Once a ship uses this action, it can't use it again for 24 hours."
+				"Esta arma crea unas cadenas espectrales que siguen a sus disparos y apresan a las embarcaciones enemigas. Cuando impacte en una nave, ese vehículo deberá superar una tirada de salvación de Fuerza CD 14 o será incapaz de alejarse de su atacante. Como acción, el barco atacante puede terminar este efecto, y el objetivo puede anularlo gastando una acción y teniendo éxito en una prueba de Fuerza CD 14."
 			]
 		},
 		{
-			"name": "Infernal Screamer",
+			"name": "Mascarón de proa guardián",
+			"source": "GoS-ES",
+			"page": 198,
+			"upgradeType": [
+				"Mejora de Embarcación, Mascarón de proa"
+			],
+			"entries": [
+				"Este mascarón representa a un caballero embutido en su armadura. Como acción, la nave puede activarlo, haciendo que se anime como un {@creature gólem de hierro|MM-ES}. Este autómata actúa en el turno del barco cuando el capitán usa una de las acciones de la nave. El gólem permanecerá animado durante 1 minuto. Transcurrido ese tiempo, se teletransportará de vuelta a su posición como mascarón de proa decorativo. Una vez el navío ha usado esta acción, no puede volver a utilizarla hasta transcurridas 24 horas."
+			]
+		},
+		{
+			"name": "Chillador infernal",
 			"source": "BGDIA-ES",
 			"page": 221,
 			"upgradeType": [
-				"IWM:W"
+				"Variante infernal, Armamento"
 			],
 			"entries": [
-				"A writhing humanoid torso made of melting wax juts out from this station, with a barbed hand crank between its shoulder blades. The figure telepathically shrieks in agony when the crank is turned.",
+				"Un torso humanoide retorcido hecho de cera fundida con una manivela con púas entre los omóplatos sobresale de este puesto. La figura chilla telepática mente de agonía cuando se gira la manivela.",
 				{
 					"type": "entries",
-					"name": "Infernal Screamer (Requires 1 Crew and Grants Half Cover)",
+					"name": "Chillador infernal (requiere 1 tripulante y proporciona cobertura media)",
 					"entries": [
-						"The screamer's operator targets one creature it can see within 120 feet of the screamer. The target must make a DC 15 Wisdom saving throw, taking 26 ({@damage 4d12}) psychic damage on a failed save, or half as much damage on a successful one."
+						"El operador del chillador apunta a una criatura que pueda ver a 120 pies o menos del arma. El objetivo debe realizar una tirada de salvación de Sabiduría CD 15, sufriendo 26 ({@damage 4d12}) de daño psíquico si la falla, o la mitad si la supera."
 					]
 				}
 			]
 		},
 		{
-			"name": "Living Vessel",
+			"name": "Buque viviente",
 			"source": "GoS-ES",
-			"page": 196,
+			"page": 197,
 			"upgradeType": [
-				"SHP:H"
+				"Mejora de Embarcación, Casco"
 			],
 			"entries": [
-				"This vessel's hull was crafted in the Feywild under the direction of master eladrin shipwrights. It is a living plant, drawing sustenance from water and sunlight. Vines covered in thick leaves hang over its side, and the wood runs with fresh sap when damaged. The ship gains a +2 bonus to all Constitution checks or saving throws. As long as the ship has at least 1 hit point, it regains 10 hit points every minute."
+				"El casco de esta embarcación se creó en el Feywild bajo la dirección de maestros constructores navales eladrins. Se trata de una planta viva que obtiene su sustento del agua y la luz solar. A sus costados cuelgan enredaderas cubiertas de gruesas hojas, y por la madera circula savia fresca cuando sufre daño. El barco gana un bonificador de +2 a todas las pruebas de Constitución o tiradas de salvación. Mientras al navío le quede al menos 1 punto de golpe, recuperará 10 puntos de golpe por minuto."
 			]
 		},
 		{
-			"name": "Necrotic Smoke Screen",
+			"name": "Pantalla de humo necrótico",
 			"source": "BGDIA-ES",
 			"page": 222,
 			"upgradeType": [
-				"IWM:G"
+				"Variante infernal, Dispositivos mágicos"
 			],
 			"entries": [
-				"The vehicle's driver can activate this magical device as a bonus action, causing the vehicle to expel a 30-foot cube of opaque smoke directly in front of it or behind it. The cloud is stationary and lasts for 1 minute. The area within it is heavily obscured. Any creature that enters the cloud for the first time on a turn or starts its turn there takes 21 ({@damage 6d6}) necrotic damage. A strong wind disperses the cloud. This device needs 24 hours to recharge before it can be used again."
+				"El conductor puede activar este dispositivo mágico con una acción adicional, haciendo que el vehículo expulse un cubo de humo opaco de 30 pies de lado directamente delante o detrás. La nube permanece estacionaria, dura 1 minuto y puede ser dispersada por un viento fuerte. La zona en el interior de la nube está muy oscura. Una criatura que entre en la nube por primera vez en un turno o que comience un turno en su interior sufrirá 21 ({@damage 6d6}) de daño necrótico. Este dispositivo necesita 24 horas para recargarse antes de poder usarse de nuevo."
 			]
 		},
 		{
-			"name": "Red Dragon Figurehead",
+			"name": "Mascarón de proa de dragón rojo",
 			"source": "GoS-ES",
 			"page": 198,
 			"upgradeType": [
-				"SHP:F"
+				"Mejora de Embarcación, Mascarón de proa"
 			],
 			"entries": [
-				"This figurehead depicts a red dragon rearing to strike, its mouth open. As an action, the ship can activate this item to create a 60-foot cone of flame that originates from the figurehead. Each creature and object in the cone must make a DC 12 Dexterity saving throw, taking 21 ({@damage 6d6}) fire damage on a failed save, or half as much damage on a successful one. Once a ship uses this action, it can't use it again for 1 minute."
+				"Esta figura representa a un dragón rojo rampante con sus fauces abiertas, listo para atacar. Como acción, la nave puede activarlo para producir un cono de llamas de 60 pies con origen en el mascarón. Todas las criaturas que se encuentren dentro del área deberán hacer una tirada de salvación de Destreza CD 12, sufriendo 21 ({@damage 6d6}) de daño de fuego si la fallan, o la mitad si la superan. Una vez el barco ha usado esta acción, no puede volver a utilizarla hasta transcurrido 1 minuto."
 			]
 		},
 		{
-			"name": "Reinforced Hull",
+			"name": "Casco reforzado",
 			"source": "GoS-ES",
 			"page": 197,
 			"upgradeType": [
-				"SHP:H"
+				"Mejora de Embarcación, Casco"
 			],
 			"entries": [
-				"A master shipwright can use superior materials and clever design to make a ship's hull more resilient. Such reinforcement doubles the hull's hit point maximum."
+				"Un maestro constructor naval puede usar materiales de calidad superior y mejorar el diseño para hacer que el casco de un barco sea más resistente. Este refuerzo duplica los puntos de golpe máximos del casco."
 			]
 		},
 		{
-			"name": "Screaming Sails",
+			"name": "Velas dolientes",
 			"source": "GoS-ES",
 			"page": 197,
 			"upgradeType": [
-				"SHP:M"
+				"Mejora de Embarcación, Movimiento"
 			],
 			"entries": [
-				"Woven from the energy of captured wraiths and bound with the spirit of a banshee, these sails groan mournfully when they catch the wind. As an action, while within 5 feet of the sails, the ship's captain can cause the sails to unleash a howl. Every creature hostile to the ship who is on board or within 300 feet of it must succeed on a DC 14 Wisdom saving throw, or the creature takes {@damage 4d6} psychic damage and is then {@condition frightened} for 1 minute. Once this ability has been used, it can't be used again until {@dice 2d6} hours have passed."
+				"Tejidas con la energía de espectros capturados y vinculadas al espíritu de una banshee, estas velas gimen con tristeza al atrapar el viento. Como acción, mientras se encuentra a 5 pies o menos de ellas, el capitán del barco puede hacer que las velas desencadenen un aullido. Cada una de las criaturas hostiles a la nave que esté a bordo o a 300 pies o menos de esta deberá superar una tirada de salvación de Sabiduría CD 14 o sufrirá {@damage 4d6} de daño psíquico, y luego quedará {@condition asustado|PHB-ES|asustada} durante 1 minuto. Una vez usada esta habilidad, no se puede volver a utilizar hasta transcurridas {@dice 2d6} horas."
 			]
 		},
 		{
-			"name": "Scything Oars",
+			"name": "Remos segadores",
 			"source": "GoS-ES",
 			"page": 197,
 			"upgradeType": [
-				"SHP:M"
+				"Mejora de Embarcación, Movimiento"
 			],
 			"entries": [
-				"Sharpened, magically reinforced oars make a vessel dangerous to approach. When the ship takes an action that moves it with these oars, any creature or object in the water within 10 feet of it at any point of the move must make a DC 10 Dexterity saving throw, taking {@damage 2d6} slashing damage on a failed save or half as much damage on a successful one."
+				"Estos remos afilados y reforzados por medios mágicos hacen que acercarse al barco sea una empresa peligrosa. Cuando la embarcación realiza una acción para moverse usando estos remos, cualquier criatura u objeto que se encuentre en el agua a 10 pies o menos del barco, en cualquier punto del movimiento, deberá realizar una tirada de salvación de Destreza CD 10; sufrirá {@damage 2d6} de daño cortante si la falla, o la mitad del daño si la supera."
 			]
 		},
 		{
-			"name": "Smuggler's Banner",
+			"name": "Pendón del contrabandista",
 			"source": "GoS-ES",
 			"page": 198,
 			"upgradeType": [
-				"SHP:O"
+				"Mejora de Embarcación, Misceláneas"
 			],
 			"entries": [
-				"This flag is meant to be flown from a ship's mast. Its powerful magic causes it to appear as a flag or banner displaying the symbol of a group, captain, or realm friendly to the viewer. Multiple viewers might see different flags or crests.",
-				"The banner's true power is its ability to aid a ship in making rapid escapes. As an action, the ship and all friendly creatures aboard it teleport up to 3 miles to a known destination of the captain's choice. Hostile creatures aboard the ship don't move with the ship and fall into the water it once occupied. Once this item is used to teleport, it can't teleport in this way again for {@dice 2d6} days."
+				"Esta bandera debe ondear en el mástil de un barco. Su poderosa magia la hace parecer un perdón o estandarte blasonado con el símbolo de un grupo, capitán o reino amistoso para quien la divisa. Si hay múltiples espectadores, estos verán diferentes banderas o enseñas.",
+				"El verdadero poder del pendón es su capacidad para ayudar a un navío a escapar con rapidez. Como acción, la nave y todas las criaturas aliadas a bordo se teletransportan hasta una distancia de 3 millas, a un destino conocido a elección del capitán. Las criaturas hostiles no se desplazarán con el barco y caerán al agua en el lugar que ocupaba la embarcación un momento antes. Una vez este elemento se usa para teletransportarse, no puede utilizarse de nuevo hasta transcurridos {@dice 2d6} días."
 			]
 		},
 		{
-			"name": "Soul Spike Armor",
+			"name": "Blindaje empalador de almas",
 			"source": "BGDIA-ES",
 			"page": 222,
 			"upgradeType": [
-				"IWM:W"
+				"Variante infernal, Armamento"
 			],
 			"entries": [
-				"The vehicle is covered with spikes inscribed with blasphemous symbols. Luminous, ghostly figures impaled on these spikes wail and reach out in agony.",
-				"If a creature that isn't a devil dies within 30 feet of the infernal war machine, its soul (if it has one) is torn from its body and joins the wailing throng impaled on the spikes. As long as its soul remains trapped, a creature can't be raised from the dead by any means. A trapped soul is freed if the vehicle is destroyed, if the spike anchoring it is the target of a {@spell remove curse} spell or similar magic, or if the spike is destroyed. Each spike is a Small object with AC 19, 15 hit points, and resistance to all damage except radiant damage."
+				"El vehículo está cubierto de estacas con símbolos blasfemos inscritos. Figuras luminosas y fantasmales empaladas en estos pinchos gimen y se retuercen de agonía.",
+				"Si una criatura que no sea un demonio muere a 30 pies o menos de la máquina de guerra infernal, su alma (si la tiene) es arrancada de su cuerpo para quedar empalada en las estacas junto con las demás. Mientras su alma permanezca atrapada la criatura no puede ser resucitada de ninguna manera. Un alma atrapada queda libre si el vehículo es destruido o si la estaca que la sujeta es objeto de un conjuro de {@spell levantar maldición|PHB-ES} (o de un efecto mágico similar) o resulta destruida. Cada estaca es un objeto pequeño con CA 19, 15 puntos de golpe y resistencia a todo el daño salvo el radiante."
 			]
 		},
 		{
-			"name": "Storm Giant Figurehead",
+			"name": "Mascarón de proa de gigante de las tormentas",
 			"source": "GoS-ES",
 			"page": 198,
 			"upgradeType": [
-				"SHP:F"
+				"Mejora de Embarcación, Mascarón de proa"
 			],
 			"entries": [
-				"This figurehead depicts a storm giant clutching a thunderbolt. As an action, the ship can activate this item to create a 60-foot cone that originates from the figurehead. Each creature in the cone must make DC 12 Constitution saving throw, taking 14 ({@damage 4d6}) thunder damage on a failed save, or half as much damage on a successful one. A creature that fails its saving throw is also pushed 10 feet away from the figurehead. Once a ship uses this action, it can't use it again for 1 minute."
+				"Este mascarón representa a un gigante de las tormentas agarrando un rayo. Como acción, la embarcación puede activarlo para producir un cono de 60 pies con origen en el mascarón. Cada criatura que quede dentro del área deberá realizar una tirada de salvación de Constitución CD 12, sufriendo 14 ({@damage 4d6}) de daño de trueno si la falla, o la mitad si la supera. Alguien que no tenga éxito en su tirada de salvación también saldrá despedido hacia atrás 10 pies. Una vez el barco ha usado esta acción, no puede volver a utilizarla hasta pasado 1 minuto."
 			]
 		},
 		{
-			"name": "Styx Sprayer",
+			"name": "Atomizador estigio",
 			"source": "BGDIA-ES",
 			"page": 221,
 			"upgradeType": [
-				"IWM:W"
+				"Variante infernal, Armamento"
 			],
 			"entries": [
-				"This flexible hose is connected to a tank that holds 30 gallons of water from the {@area River Styx|1a3|x}. Each use of the weapon depletes 10 gallons of the water. Refilling the tank requires access to the Styx.",
+				"Esta manguera flexible está conectada a un tanque que contiene 30 galones de agua del {@area río Estigio|1a3|x}. Cada uso del arma consume 10 galones de agua. Rellenar el tanque requiere poder acceder al Estigio.",
 				{
 					"type": "entries",
-					"name": "Styx Sprayer (Requires 1 Crew and Grants Half Cover; 3 Uses)",
+					"name": "Atomizador estigio (requiere 1 tripulante y proporciona cobertura media; 3 usos)",
 					"entries": [
-						"{@atk rs}: +5 to hit, range 30 ft., one creature. {@h}The creature is struck by water from the River Styx and targeted by a {@spell feeblemind} spell (save DC 20). An already feebleminded creature is immune to this effect, as is a creature adapted to the River Styx. If the target fails its saving throw and the spell's effect on it is not ended within 30 days, the effect becomes permanent, whereupon the creature loses all its memories and becomes a near-mindless shell of its former self. At that point, nothing short of divine intervention can undo the effect."
+						"{@atk rs}: +5 to hit, range 30 ft., one creature. {@h}: La criatura es golpeada por el agua del río Estigio y es objetivo de un conjuro de {@spell romper la mente|PHB-ES} (salvación CD 20). Una criatura que ya tuviera la mente rota es inmune a este efecto, al igual que una criatura adaptada al río Estigio. Si el objetivo falla su tirada de salvación y permanece bajo el efecto del conjuro durante 30 días consecutivos, el efecto se vuelve permanente y la criatura pierde todos sus recuerdos, convirtiéndose en un cascarón casi sin mente de su antiguo yo. Llegados a ese punto, solo algo al nivel de una intervención divina puede deshacer el efecto."
 					]
 				}
 			]
 		},
 		{
-			"name": "Taskmaster's Drums",
+			"name": "Timbal del cómitre",
 			"source": "GoS-ES",
 			"page": 198,
 			"upgradeType": [
-				"SHP:O"
+				"Mejora de Embarcación, Misceláneas"
 			],
 			"entries": [
-				"This 4-foot-tall bronze drum comes with a pair of iron mallets. A creature can activate the drums as an action, causing the hammers to float above the drum and strike it to produce a thundering rhythm. For the next minute, the ship gains one additional action, as long as it has at least one action. Once this item is used, it can't be activated again for {@dice 2d10} hours."
+				"Este timbal de bronce de 4 pies de alto viene acompañado de un par de baquetas de hierro. Una criatura puede activar el timbal como acción, haciendo que sus mazos floten sobre este y lo golpeen para producir un ritmo atronador. Durante el minuto siguiente, el barco ganará una acción adicional, siempre que disponga de al menos una acción. Una vez utilizado este elemento, no se puede volver a emplear hasta pasadas {@dice 2d10} horas."
 			]
 		},
 		{
-			"name": "Teleporter",
+			"name": "Teletransportador",
 			"source": "BGDIA-ES",
 			"page": 222,
 			"upgradeType": [
-				"IWM:G"
+				"Variante infernal, Dispositivos mágicos"
 			],
 			"entries": [
-				"The vehicle's driver can activate this magical device as a bonus action, causing the vehicle to teleport to an unoccupied space that the driver can see up to 300 feet away from the vehicle's current position. All creatures and objects in contact with the vehicle are teleported along with it. This device needs 24 hours to recharge before it can be used again."
+				"El conductor del vehículo puede activar este dispositivo mágico mediante una acción adicional, haciendo que el vehículo se teletransporte a un espacio desocupado que el conductor pueda ver y a 300 pies o menos de distancia de la posición actual del vehículo. Todas las criaturas y objetos en contacto con el vehículo se teletransportan con él. Este dispositivo necesita 24 horas para recargarse antes de poder usarse de nuevo."
 			]
 		},
 		{
-			"name": "Vigilant Watch",
+			"name": "Ojos vigilantes",
 			"source": "GoS-ES",
 			"page": 197,
 			"upgradeType": [
-				"SHP:H"
+				"Mejora de Embarcación, Casco"
 			],
 			"entries": [
-				"A row of crystal orbs, each filled with viscous liquid and a beholder's eyeball, is mounted along this ship's hull. {@condition Invisible} creatures are visible while on the ship or within 120 feet of it."
+				"Hay una hilera de orbes de cristal y cada uno de ellos contiene un líquido viscoso y un ojo de contemplador; están montados por todo el casco de la nave. Las criaturas {@condition invisible|PHB-ES|invisibles} son visibles mientras se encuentran a bordo o están situadas a 120 pies o menos del barco."
 			]
 		}
 	]

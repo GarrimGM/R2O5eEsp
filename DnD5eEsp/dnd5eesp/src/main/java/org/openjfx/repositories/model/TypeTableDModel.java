@@ -3,11 +3,12 @@ package org.openjfx.repositories.model;
 public class TypeTableDModel {
     public TypeTableDModel() {
     }
-    public TypeTableDModel(String source, String text, String classSource, String className, String textEsp) {
+    public TypeTableDModel(String source, String text, String classSource, String className, Integer level, String textEsp) {
         this.source = source;
         this.text = text;
         this.classSource = classSource;
         this.className = className;
+        this.level = level;
         this.textEsp = textEsp;
     }
     
@@ -15,6 +16,7 @@ public class TypeTableDModel {
     private String text;
     private String classSource;
     private String className;
+    private Integer level;
     private String textEsp;
 
     public String getSource() {
@@ -41,6 +43,14 @@ public class TypeTableDModel {
     public void setClassName(String className) {
         this.className = className;
     }
+
+    public Integer getLevel() {
+        return level;
+    }
+    public void setLevel(Integer level) {
+        this.level = level;
+    }
+
     public String getTextEsp() {
         return textEsp;
     }

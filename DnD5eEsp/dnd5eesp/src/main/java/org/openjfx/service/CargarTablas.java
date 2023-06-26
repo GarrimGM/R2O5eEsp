@@ -15,11 +15,15 @@ import org.openjfx.repositories.SourcesRepository;
 import org.openjfx.repositories.TypeTableARepository;
 import org.openjfx.repositories.TypeTableCRepository;
 import org.openjfx.repositories.TypeTableDRepository;
+import org.openjfx.repositories.TypeTableERepository;
+import org.openjfx.repositories.TypeTableFRepository;
 import org.openjfx.repositories.model.ImportTableModel;
 import org.openjfx.repositories.model.SourcesModel;
 import org.openjfx.repositories.model.TypeTableAModel;
 import org.openjfx.repositories.model.TypeTableCModel;
 import org.openjfx.repositories.model.TypeTableDModel;
+import org.openjfx.repositories.model.TypeTableEModel;
+import org.openjfx.repositories.model.TypeTableFModel;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -239,6 +243,7 @@ public class CargarTablas extends Service<Void>{
                             String source = dato.get("source").getAsString();
                             String classSource = dato.get("classSource").getAsString();
                             String className = dato.get("className").getAsString();
+                            Integer level = dato.get("level").getAsInt();
                             if(sourcesMap.containsKey(source) && sourcesMap.containsKey(classSource) && dato.has("name")) {
                                 String text = dato.get("name").getAsString();
                                 String sourceEsp = sourcesMap.get(source).getSourceEsp();
@@ -246,16 +251,16 @@ public class CargarTablas extends Service<Void>{
                                 String classSourceEsp = sourcesMap.get(classSource).getSourceEsp();
                                 String classNameEsp = "";
                                 //Guardamos en el map la clave para ver si sobran registros luego en la base de datos
-                                String keyDocument = importTable.getTableId()+"|"+text+"|"+source+"|"+classSource+"|"+className;
+                                String keyDocument = importTable.getTableId()+"|"+text+"|"+source+"|"+classSource+"|"+className+"|"+level;
                                 foundMap.put(keyDocument, keyDocument);
                                 //Busca en la tabla si ya esta esta el registro del documento
-                                List<TypeTableDModel> busqueda = TypeTableDRepository.busqueda(importTable.getTableId(), source, "Text", text, classSource, className);
+                                List<TypeTableDModel> busqueda = TypeTableDRepository.busqueda(importTable.getTableId(), source, "Text", text, classSource, className, level);
                                 if(busqueda.size()>0) {
                                     //Carga la variable de traducción
                                     textEsp = busqueda.get(0).getTextEsp();
                                 } else {
                                     //Como aún no existe se añade a la tabla de destino
-                                    TypeTableDRepository.alta(importTable.getTableId(), new TypeTableDModel(source, text, classSource, className, ""));
+                                    TypeTableDRepository.alta(importTable.getTableId(), new TypeTableDModel(source, text, classSource, className, level, ""));
                                 }
                                 //Buscamos la traducción de la raza a la que pertenece
                                 List<TypeTableAModel> busquedaRace = TypeTableARepository.busqueda("Class", classSource, "Text", className);
@@ -263,7 +268,115 @@ public class CargarTablas extends Service<Void>{
                                     //Carga la variable de traducción
                                     classNameEsp = busquedaRace.get(0).getTextEsp();
                                 }
-                                jsonEsp = buscarActDocD(jsonEsp, importTable, listaDatosEsp, dato, source, sourceEsp, text, textEsp, classSource, classSourceEsp, className , classNameEsp);
+                                jsonEsp = buscarActDocD(jsonEsp, importTable, listaDatosEsp, dato, source, sourceEsp, text, textEsp, classSource, classSourceEsp, className , classNameEsp, level);
+                            }
+                        }
+                    } catch (FileNotFoundException e) {
+                        System.out.println("Documento original no encontrado");
+                    }
+                } else if(importTable.getTypeTable().equals("E")) {
+                    try {
+                        BufferedReader bufferedReader = new BufferedReader(new FileReader(rutaDocOriginal));
+                        Gson gson = new GsonBuilder().serializeNulls().create();
+                        JsonObject json = gson.fromJson(bufferedReader, JsonObject.class);
+                        JsonArray listaDatos = json.get(importTable.getFieldName()).getAsJsonArray();
+                        //Recorre la lista original y mira si es uno de los sources a traducir
+                        for (int i = 0; i < listaDatos.size(); i++) {
+                            JsonObject dato = listaDatos.get(i).getAsJsonObject();
+                            String source = dato.get("source").getAsString();
+                            String classSource = dato.get("classSource").getAsString();
+                            String className = dato.get("className").getAsString();
+                            String subclassShortName = dato.get("subclassShortName").getAsString();
+                            if(sourcesMap.containsKey(source) && sourcesMap.containsKey(classSource) && dato.has("name")) {
+                                String text = dato.get("name").getAsString();
+                                String sourceEsp = sourcesMap.get(source).getSourceEsp();
+                                String textEsp = "";
+                                String classSourceEsp = sourcesMap.get(classSource).getSourceEsp();
+                                String classNameEsp = "";
+                                String subclassShortNameEsp = "";
+                                //Guardamos en el map la clave para ver si sobran registros luego en la base de datos
+                                String keyDocument = importTable.getTableId()+"|"+text+"|"+source+"|"+classSource+"|"+className+"|"+subclassShortName;
+                                foundMap.put(keyDocument, keyDocument);
+                                //Busca en la tabla si ya esta esta el registro del documento
+                                List<TypeTableEModel> busqueda = TypeTableERepository.busqueda(importTable.getTableId(), source, "Text", text, 
+                                    classSource, className, subclassShortName);
+                                if(busqueda.size()>0) {
+                                    //Carga la variable de traducción
+                                    textEsp = busqueda.get(0).getTextEsp();
+                                } else {
+                                    //Como aún no existe se añade a la tabla de destino
+                                    TypeTableERepository.alta(importTable.getTableId(), 
+                                        new TypeTableEModel(source, text, classSource, className, subclassShortName, "", ""));
+                                }
+                                //Buscamos la traducción de la raza a la que pertenece
+                                List<TypeTableAModel> busquedaRace = TypeTableARepository.busqueda("Class", classSource, "Text", className);
+                                if(busquedaRace.size()>0) {
+                                    //Carga la variable de traducción
+                                    classNameEsp = busquedaRace.get(0).getTextEsp();
+                                }
+                                //Buscamos la traducción de la subclase abreviada
+                                List<TypeTableEModel> busquedaSubclass = TypeTableERepository.busqueda("Subclass", source, "Text", text, classSource, className, subclassShortName);
+                                if(busquedaSubclass.size()>0) {
+                                    //Carga la variable de traducción
+                                    subclassShortNameEsp = busquedaSubclass.get(0).getTextEsp();
+                                }
+                                jsonEsp = buscarActDocE(jsonEsp, importTable, listaDatosEsp, dato, source, sourceEsp, text, textEsp, 
+                                    classSource, classSourceEsp, className , classNameEsp, subclassShortName, subclassShortNameEsp);
+                            }
+                        }
+                    } catch (FileNotFoundException e) {
+                        System.out.println("Documento original no encontrado");
+                    }
+                } else if(importTable.getTypeTable().equals("F")) {
+                    try {
+                        BufferedReader bufferedReader = new BufferedReader(new FileReader(rutaDocOriginal));
+                        Gson gson = new GsonBuilder().serializeNulls().create();
+                        JsonObject json = gson.fromJson(bufferedReader, JsonObject.class);
+                        JsonArray listaDatos = json.get(importTable.getFieldName()).getAsJsonArray();
+                        //Recorre la lista original y mira si es uno de los sources a traducir
+                        for (int i = 0; i < listaDatos.size(); i++) {
+                            JsonObject dato = listaDatos.get(i).getAsJsonObject();
+                            String source = dato.get("source").getAsString();
+                            String classSource = dato.get("classSource").getAsString();
+                            String className = dato.get("className").getAsString();
+                            Integer level = dato.get("level").getAsInt();
+                            String subclassShortName = dato.get("subclassShortName").getAsString();
+                            if(sourcesMap.containsKey(source) && sourcesMap.containsKey(classSource) && dato.has("name")) {
+                                String text = dato.get("name").getAsString();
+                                String sourceEsp = sourcesMap.get(source).getSourceEsp();
+                                String textEsp = "";
+                                String classSourceEsp = sourcesMap.get(classSource).getSourceEsp();
+                                String classNameEsp = "";
+                                String subclassShortNameEsp = "";
+                                //Guardamos en el map la clave para ver si sobran registros luego en la base de datos
+                                String keyDocument = importTable.getTableId()+"|"+text+"|"+source+"|"+classSource+"|"+className+"|"+level+"|"+subclassShortName;
+                                foundMap.put(keyDocument, keyDocument);
+                                //Busca en la tabla si ya esta esta el registro del documento
+                                List<TypeTableFModel> busqueda = TypeTableFRepository.busqueda(importTable.getTableId(), source, "Text", text, 
+                                    classSource, className, level, subclassShortName);
+                                if(busqueda.size()>0) {
+                                    //Carga la variable de traducción
+                                    textEsp = busqueda.get(0).getTextEsp();
+                                } else {
+                                    //Como aún no existe se añade a la tabla de destino
+                                    TypeTableFRepository.alta(importTable.getTableId(), new TypeTableFModel(source, text, classSource, 
+                                        className, level, subclassShortName, ""));
+                                }
+                                //Buscamos la traducción de la raza a la que pertenece
+                                List<TypeTableAModel> busquedaRace = TypeTableARepository.busqueda("Class", classSource, "Text", className);
+                                if(busquedaRace.size()>0) {
+                                    //Carga la variable de traducción
+                                    classNameEsp = busquedaRace.get(0).getTextEsp();
+                                }
+                                //Buscamos la traducción de la subclase abreviada
+                                List<TypeTableEModel> busquedaSubclass = TypeTableERepository.busqueda("Subclass", source, "Text", text, 
+                                    classSource, className, subclassShortName);
+                                if(busquedaSubclass.size()>0) {
+                                    //Carga la variable de traducción
+                                    subclassShortNameEsp = busquedaSubclass.get(0).getTextEsp();
+                                }
+                                jsonEsp = buscarActDocF(jsonEsp, importTable, listaDatosEsp, dato, source, sourceEsp, text, textEsp, 
+                                    classSource, classSourceEsp, className , classNameEsp, level, subclassShortName, subclassShortNameEsp);
                             }
                         }
                     } catch (FileNotFoundException e) {
@@ -297,6 +410,36 @@ public class CargarTablas extends Service<Void>{
                 for (TypeTableCModel registro : consultaTabla) {
                     if(!foundMap.containsKey(importTable.getTableId()+"|"+registro.getText()+"|"+registro.getSource()+"|"+registro.getRaceSource()+"|"+registro.getRaceName())) {
                         TypeTableCRepository.borrar(importTable.getTableId(), registro.getSource(), registro.getText(), registro.getRaceSource(), registro.getRaceName());
+                        System.out.println("Registro '"+registro.getText()+"' de "+registro.getSource()+" borrado de la tabla "+importTable.getTableId());
+                    }
+                }
+            } else if(importTable.getTypeTable().equals("D")) {
+                List<TypeTableDModel> consultaTabla = TypeTableDRepository.consulta(importTable.getTableId());
+                for (TypeTableDModel registro : consultaTabla) {
+                    if(!foundMap.containsKey(importTable.getTableId()+"|"+registro.getText()+"|"+registro.getSource()+"|"+registro.getClassSource()+"|"
+                            +registro.getClassName()+"|"+registro.getLevel())) {
+                        TypeTableDRepository.borrar(importTable.getTableId(), registro.getSource(), registro.getText(), registro.getClassSource(),
+                            registro.getClassName(), registro.getLevel());
+                        System.out.println("Registro '"+registro.getText()+"' de "+registro.getSource()+" borrado de la tabla "+importTable.getTableId());
+                    }
+                }
+            } else if(importTable.getTypeTable().equals("E")) {
+                List<TypeTableEModel> consultaTabla = TypeTableERepository.consulta(importTable.getTableId());
+                for (TypeTableEModel registro : consultaTabla) {
+                    if(!foundMap.containsKey(importTable.getTableId()+"|"+registro.getText()+"|"+registro.getSource()+"|"+registro.getClassSource()+"|"
+                            +registro.getClassName()+"|"+registro.getSubclassShortName())) {
+                        TypeTableERepository.borrar(importTable.getTableId(), registro.getSource(), registro.getText(), registro.getClassSource(),
+                            registro.getClassName(), registro.getSubclassShortName());
+                        System.out.println("Registro '"+registro.getText()+"' de "+registro.getSource()+" borrado de la tabla "+importTable.getTableId());
+                    }
+                }
+            } else if(importTable.getTypeTable().equals("F")) {
+                List<TypeTableFModel> consultaTabla = TypeTableFRepository.consulta(importTable.getTableId());
+                for (TypeTableFModel registro : consultaTabla) {
+                    if(!foundMap.containsKey(importTable.getTableId()+"|"+registro.getText()+"|"+registro.getSource()+"|"+registro.getClassSource()+"|"
+                            +registro.getClassName()+"|"+registro.getLevel()+"|"+registro.getSubclassShortName())) {
+                        TypeTableFRepository.borrar(importTable.getTableId(), registro.getSource(), registro.getText(), registro.getClassSource(),
+                            registro.getClassName(), registro.getLevel(), registro.getSubclassShortName());
                         System.out.println("Registro '"+registro.getText()+"' de "+registro.getSource()+" borrado de la tabla "+importTable.getTableId());
                     }
                 }
@@ -516,7 +659,8 @@ public class CargarTablas extends Service<Void>{
 
     private static JsonObject buscarActDocD(JsonObject jsonEsp, ImportTableModel importTable, JsonArray listaDatosEsp, 
             JsonObject dato, String source, String sourceEsp, String text, String textEsp,
-            String classSource, String classSourceEsp, String className , String classNameEsp) throws IOException {
+            String classSource, String classSourceEsp, String className , String classNameEsp,
+            Integer level) throws IOException {
         //Recorre la lista traducida para buscar si ya esta el registro añadido
         boolean encontradoDocEsp = false;
         for (int i = 0; i < listaDatosEsp.size(); i++) {
@@ -525,12 +669,14 @@ public class CargarTablas extends Service<Void>{
             String textDocEsp = datoEsp.get("name").getAsString();
             String raceSourceDocEsp = datoEsp.get("classSource").getAsString();
             String raceNameDocEsp = datoEsp.get("className").getAsString();
+            Integer levelEsp = datoEsp.get("level").getAsInt();
             if((sourceDocEsp.equals(sourceEsp) &&
                     (textDocEsp.equals(text) ||
                     textDocEsp.equals(textEsp))) &&
                     (raceSourceDocEsp.equals(classSourceEsp) &&
                     (raceNameDocEsp.equals(className) ||
-                    raceNameDocEsp.equals(classNameEsp)))) {
+                    raceNameDocEsp.equals(classNameEsp))) &&
+                    levelEsp.equals(level)) {
                 encontradoDocEsp = true;
                 i = listaDatosEsp.size();
             }
@@ -550,13 +696,103 @@ public class CargarTablas extends Service<Void>{
         return jsonEsp;
     }
 
+    private static JsonObject buscarActDocE(JsonObject jsonEsp, ImportTableModel importTable, JsonArray listaDatosEsp, 
+            JsonObject dato, String source, String sourceEsp, String text, String textEsp,
+            String classSource, String classSourceEsp, String className , String classNameEsp,
+            String subclassShortName, String subclassShortNameEsp) throws IOException {
+        //Recorre la lista traducida para buscar si ya esta el registro añadido
+        boolean encontradoDocEsp = false;
+        for (int i = 0; i < listaDatosEsp.size(); i++) {
+            JsonObject datoEsp = listaDatosEsp.get(i).getAsJsonObject();
+            String sourceDocEsp = datoEsp.get("source").getAsString();
+            String textDocEsp = datoEsp.get("name").getAsString();
+            String raceSourceDocEsp = datoEsp.get("classSource").getAsString();
+            String raceNameDocEsp = datoEsp.get("className").getAsString();
+            String subclassShortNameDocEsp = datoEsp.get("subclassShortName").getAsString();
+            if((sourceDocEsp.equals(sourceEsp) &&
+                    (textDocEsp.equals(text) ||
+                    textDocEsp.equals(textEsp))) &&
+                    (raceSourceDocEsp.equals(classSourceEsp) &&
+                    (raceNameDocEsp.equals(className) ||
+                    raceNameDocEsp.equals(classNameEsp))) &&
+                    (subclassShortNameDocEsp.equals(subclassShortName) ||
+                    subclassShortNameDocEsp.equals(subclassShortNameEsp))) {
+                encontradoDocEsp = true;
+                i = listaDatosEsp.size();
+            }
+        }
+        //Si no lo encuentra lo añade al documento
+        if(!encontradoDocEsp) {
+            dato.addProperty("source", sourceEsp);
+            dato.addProperty("classSource", classSourceEsp);
+            if(!classNameEsp.isEmpty()) {
+                dato.addProperty("className", classNameEsp);
+            }
+            if(!subclassShortNameEsp.isEmpty()) {
+                dato.addProperty("subclassShortName", subclassShortNameEsp);
+            }             
+            listaDatosEsp.add(dato);
+            jsonEsp.add(importTable.getFieldName(), listaDatosEsp);
+            System.out.println("Documento "+importTable.getJsonDocument()+" actualizado, registro: "
+                                +text+"|"+source);
+        }
+        return jsonEsp;
+    }
+
+    private static JsonObject buscarActDocF(JsonObject jsonEsp, ImportTableModel importTable, JsonArray listaDatosEsp, 
+            JsonObject dato, String source, String sourceEsp, String text, String textEsp,
+            String classSource, String classSourceEsp, String className , String classNameEsp,
+            Integer level, String subclassShortName, String subclassShortNameEsp) throws IOException {
+        //Recorre la lista traducida para buscar si ya esta el registro añadido
+        boolean encontradoDocEsp = false;
+        for (int i = 0; i < listaDatosEsp.size(); i++) {
+            JsonObject datoEsp = listaDatosEsp.get(i).getAsJsonObject();
+            String sourceDocEsp = datoEsp.get("source").getAsString();
+            String textDocEsp = datoEsp.get("name").getAsString();
+            String raceSourceDocEsp = datoEsp.get("classSource").getAsString();
+            String raceNameDocEsp = datoEsp.get("className").getAsString();
+            Integer levelEsp = datoEsp.get("level").getAsInt();
+            String subclassShortNameDocEsp = datoEsp.get("subclassShortName").getAsString();
+            if((sourceDocEsp.equals(sourceEsp) &&
+                    (textDocEsp.equals(text) ||
+                    textDocEsp.equals(textEsp))) &&
+                    (raceSourceDocEsp.equals(classSourceEsp) &&
+                    (raceNameDocEsp.equals(className) ||
+                    raceNameDocEsp.equals(classNameEsp))) &&
+                    levelEsp.equals(level) &&
+                    (subclassShortNameDocEsp.equals(subclassShortName) ||
+                    subclassShortNameDocEsp.equals(subclassShortNameEsp))) {
+                encontradoDocEsp = true;
+                i = listaDatosEsp.size();
+            }
+        }
+        //Si no lo encuentra lo añade al documento
+        if(!encontradoDocEsp) {
+            dato.addProperty("source", sourceEsp);
+            dato.addProperty("classSource", classSourceEsp);
+            if(!classNameEsp.isEmpty()) {
+                dato.addProperty("className", classNameEsp);
+            }
+            if(!subclassShortNameEsp.isEmpty()) {
+                dato.addProperty("subclassShortName", subclassShortNameEsp);
+            }             
+            listaDatosEsp.add(dato);
+            jsonEsp.add(importTable.getFieldName(), listaDatosEsp);
+            System.out.println("Documento "+importTable.getJsonDocument()+" actualizado, registro: "
+                                +text+"|"+source);
+        }
+        return jsonEsp;
+    }
+
     private static JsonObject actualizarFluff(ImportTableModel importTable, HashMap<String,JsonObject> fluffMap, JsonObject dato, String source, String text) {
         //Comprobamos si tienes token
         if(dato.has("hasToken")) {
             dato.remove("hasToken");
             String rutaToken = "img/";
             if(importTable.getFieldName().equals("object")) {
-                rutaToken = rutaToken+"object/tokens/";
+                rutaToken = rutaToken+"objects/tokens/";
+            } else if(importTable.getFieldName().equals("vehicle")) {
+                rutaToken = rutaToken+"vehicles/tokens/";
             }
             rutaToken = rutaToken+source+"/";
             String nombreToken = text.trim().replaceAll(" ", "%20")+".png";
