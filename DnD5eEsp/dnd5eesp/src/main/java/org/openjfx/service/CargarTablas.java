@@ -286,27 +286,27 @@ public class CargarTablas extends Service<Void>{
                             String source = dato.get("source").getAsString();
                             String classSource = dato.get("classSource").getAsString();
                             String className = dato.get("className").getAsString();
-                            String subclassShortName = dato.get("subclassShortName").getAsString();
+                            String shortName = dato.get("shortName").getAsString();
                             if(sourcesMap.containsKey(source) && sourcesMap.containsKey(classSource) && dato.has("name")) {
                                 String text = dato.get("name").getAsString();
                                 String sourceEsp = sourcesMap.get(source).getSourceEsp();
                                 String textEsp = "";
                                 String classSourceEsp = sourcesMap.get(classSource).getSourceEsp();
                                 String classNameEsp = "";
-                                String subclassShortNameEsp = "";
+                                String shortNameEsp = "";
                                 //Guardamos en el map la clave para ver si sobran registros luego en la base de datos
-                                String keyDocument = importTable.getTableId()+"|"+text+"|"+source+"|"+classSource+"|"+className+"|"+subclassShortName;
+                                String keyDocument = importTable.getTableId()+"|"+text+"|"+source+"|"+classSource+"|"+className+"|"+shortName;
                                 foundMap.put(keyDocument, keyDocument);
                                 //Busca en la tabla si ya esta esta el registro del documento
                                 List<TypeTableEModel> busqueda = TypeTableERepository.busqueda(importTable.getTableId(), source, "Text", text, 
-                                    classSource, className, subclassShortName);
+                                    classSource, className, shortName);
                                 if(busqueda.size()>0) {
                                     //Carga la variable de traducción
                                     textEsp = busqueda.get(0).getTextEsp();
                                 } else {
                                     //Como aún no existe se añade a la tabla de destino
                                     TypeTableERepository.alta(importTable.getTableId(), 
-                                        new TypeTableEModel(source, text, classSource, className, subclassShortName, "", ""));
+                                        new TypeTableEModel(source, text, classSource, className, shortName, "", ""));
                                 }
                                 //Buscamos la traducción de la raza a la que pertenece
                                 List<TypeTableAModel> busquedaRace = TypeTableARepository.busqueda("Class", classSource, "Text", className);
@@ -315,13 +315,13 @@ public class CargarTablas extends Service<Void>{
                                     classNameEsp = busquedaRace.get(0).getTextEsp();
                                 }
                                 //Buscamos la traducción de la subclase abreviada
-                                List<TypeTableEModel> busquedaSubclass = TypeTableERepository.busqueda("Subclass", source, "Text", text, classSource, className, subclassShortName);
+                                List<TypeTableEModel> busquedaSubclass = TypeTableERepository.busqueda("Subclass", source, "Text", text, classSource, className, shortName);
                                 if(busquedaSubclass.size()>0) {
                                     //Carga la variable de traducción
-                                    subclassShortNameEsp = busquedaSubclass.get(0).getTextEsp();
+                                    shortNameEsp = busquedaSubclass.get(0).getTextEsp();
                                 }
                                 jsonEsp = buscarActDocE(jsonEsp, importTable, listaDatosEsp, dato, source, sourceEsp, text, textEsp, 
-                                    classSource, classSourceEsp, className , classNameEsp, subclassShortName, subclassShortNameEsp);
+                                    classSource, classSourceEsp, className , classNameEsp, shortName, shortNameEsp);
                             }
                         }
                     } catch (FileNotFoundException e) {
@@ -427,9 +427,9 @@ public class CargarTablas extends Service<Void>{
                 List<TypeTableEModel> consultaTabla = TypeTableERepository.consulta(importTable.getTableId());
                 for (TypeTableEModel registro : consultaTabla) {
                     if(!foundMap.containsKey(importTable.getTableId()+"|"+registro.getText()+"|"+registro.getSource()+"|"+registro.getClassSource()+"|"
-                            +registro.getClassName()+"|"+registro.getSubclassShortName())) {
+                            +registro.getClassName()+"|"+registro.getShortName())) {
                         TypeTableERepository.borrar(importTable.getTableId(), registro.getSource(), registro.getText(), registro.getClassSource(),
-                            registro.getClassName(), registro.getSubclassShortName());
+                            registro.getClassName(), registro.getShortName());
                         System.out.println("Registro '"+registro.getText()+"' de "+registro.getSource()+" borrado de la tabla "+importTable.getTableId());
                     }
                 }
@@ -699,7 +699,7 @@ public class CargarTablas extends Service<Void>{
     private static JsonObject buscarActDocE(JsonObject jsonEsp, ImportTableModel importTable, JsonArray listaDatosEsp, 
             JsonObject dato, String source, String sourceEsp, String text, String textEsp,
             String classSource, String classSourceEsp, String className , String classNameEsp,
-            String subclassShortName, String subclassShortNameEsp) throws IOException {
+            String shortName, String shortNameEsp) throws IOException {
         //Recorre la lista traducida para buscar si ya esta el registro añadido
         boolean encontradoDocEsp = false;
         for (int i = 0; i < listaDatosEsp.size(); i++) {
@@ -708,15 +708,15 @@ public class CargarTablas extends Service<Void>{
             String textDocEsp = datoEsp.get("name").getAsString();
             String raceSourceDocEsp = datoEsp.get("classSource").getAsString();
             String raceNameDocEsp = datoEsp.get("className").getAsString();
-            String subclassShortNameDocEsp = datoEsp.get("subclassShortName").getAsString();
+            String shortNameDocEsp = datoEsp.get("shortName").getAsString();
             if((sourceDocEsp.equals(sourceEsp) &&
                     (textDocEsp.equals(text) ||
                     textDocEsp.equals(textEsp))) &&
                     (raceSourceDocEsp.equals(classSourceEsp) &&
                     (raceNameDocEsp.equals(className) ||
                     raceNameDocEsp.equals(classNameEsp))) &&
-                    (subclassShortNameDocEsp.equals(subclassShortName) ||
-                    subclassShortNameDocEsp.equals(subclassShortNameEsp))) {
+                    (shortNameDocEsp.equals(shortName) ||
+                    shortNameDocEsp.equals(shortNameEsp))) {
                 encontradoDocEsp = true;
                 i = listaDatosEsp.size();
             }
@@ -728,8 +728,8 @@ public class CargarTablas extends Service<Void>{
             if(!classNameEsp.isEmpty()) {
                 dato.addProperty("className", classNameEsp);
             }
-            if(!subclassShortNameEsp.isEmpty()) {
-                dato.addProperty("subclassShortName", subclassShortNameEsp);
+            if(!shortNameEsp.isEmpty()) {
+                dato.addProperty("shortName", shortNameEsp);
             }             
             listaDatosEsp.add(dato);
             jsonEsp.add(importTable.getFieldName(), listaDatosEsp);

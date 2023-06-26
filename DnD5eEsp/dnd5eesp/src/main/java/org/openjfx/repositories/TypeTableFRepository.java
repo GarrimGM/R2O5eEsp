@@ -46,7 +46,7 @@ public class TypeTableFRepository {
             preparedStatement.setString(3, rSource);
             preparedStatement.setString(4, rName);
             preparedStatement.setInt(5, rLevel);
-            preparedStatement.setString(5, rSubclassShortName);
+            preparedStatement.setString(6, rSubclassShortName);
             ResultSet resultSet=preparedStatement.executeQuery();
             while(resultSet.next()){
                 String source=resultSet.getString("Source");

@@ -3,13 +3,13 @@ package org.openjfx.repositories.model;
 public class TypeTableEModel {
     public TypeTableEModel() {
     }
-    public TypeTableEModel(String source, String text, String classSource, String className, String subclassShortName, String subclassShortNameEsp, String textEsp) {
+    public TypeTableEModel(String source, String text, String classSource, String className, String shortName, String shortNameEsp, String textEsp) {
         this.source = source;
         this.text = text;
         this.classSource = classSource;
         this.className = className;
-        this.subclassShortName = subclassShortName;
-        this.subclassShortNameEsp = subclassShortNameEsp;
+        this.shortName = shortName;
+        this.shortNameEsp = shortNameEsp;
         this.textEsp = textEsp;
     }
     
@@ -17,8 +17,8 @@ public class TypeTableEModel {
     private String text;
     private String classSource;
     private String className;
-    private String subclassShortName;
-    private String subclassShortNameEsp;
+    private String shortName;
+    private String shortNameEsp;
     private String textEsp;
 
     public String getSource() {
@@ -45,17 +45,17 @@ public class TypeTableEModel {
     public void setClassName(String className) {
         this.className = className;
     }
-    public String getSubclassShortName() {
-        return subclassShortName;
+    public String getShortName() {
+        return shortName;
     }
-    public void setSubclassShortName(String subclassShortName) {
-        this.subclassShortName = subclassShortName;
+    public void setShortName(String shortName) {
+        this.shortName = shortName;
     }
-    public String getSubclassShortNameEsp() {
-        return subclassShortNameEsp;
+    public String getShortNameEsp() {
+        return shortNameEsp;
     }
-    public void setSubclassShortNameEsp(String subclassShortNameEsp) {
-        this.subclassShortNameEsp = subclassShortNameEsp;
+    public void setShortNameEsp(String shortNameEsp) {
+        this.shortNameEsp = shortNameEsp;
     }
     public String getTextEsp() {
         return textEsp;
