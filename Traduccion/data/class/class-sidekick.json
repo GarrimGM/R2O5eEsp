@@ -376,16 +376,16 @@
 			],
 			"classFeatures": [
 				"Clase de un acompañante|Acompañante lanzador de conjuros|TCE-ES|1",
-				"Bonus Proficiencies|Acompañante lanzador de conjuros|TCE-ES|1",
-				"Spellcasting|Acompañante lanzador de conjuros|TCE-ES|1",
+				"Competencias Adicionales|Acompañante lanzador de conjuros|TCE-ES|1",
+				"Lanzamiento de Conjuros|Acompañante lanzador de conjuros|TCE-ES|1",
 				"Mejora de Característica|Acompañante lanzador de conjuros|TCE-ES|4",
-				"Potent Cantrips|Acompañante lanzador de conjuros|TCE-ES|6",
+				"Trucos Potentes|Acompañante lanzador de conjuros|TCE-ES|6",
 				"Mejora de Característica|Acompañante lanzador de conjuros|TCE-ES|8",
 				"Mejora de Característica|Acompañante lanzador de conjuros|TCE-ES|12",
-				"Empowered Spells|Acompañante lanzador de conjuros|TCE-ES|14",
+				"Conjuros Potenciados|Acompañante lanzador de conjuros|TCE-ES|14",
 				"Mejora de Característica|Acompañante lanzador de conjuros|TCE-ES|16",
 				"Mejora de Característica|Acompañante lanzador de conjuros|TCE-ES|18",
-				"Focused Casting|Acompañante lanzador de conjuros|TCE-ES|20"
+				"Lanzamiento con Concentración|Acompañante lanzador de conjuros|TCE-ES|20"
 			],
 			"fluff": [
 				{
@@ -405,23 +405,23 @@
 			"isSidekick": true,
 			"classFeatures": [
 				"Clase de un acompañante|Acompañante guerrero|TCE-ES|1",
-				"Bonus Proficiencies|Acompañante guerrero|TCE-ES|1",
-				"Martial Role|Acompañante guerrero|TCE-ES|1",
-				"Second Wind|Acompañante guerrero|TCE-ES|2",
-				"Improved Critical|Acompañante guerrero|TCE-ES|3",
+				"Competencias Adicionales|Acompañante guerrero|TCE-ES|1",
+				"Rol Marcial|Acompañante guerrero|TCE-ES|1",
+				"Tomar Aliento|Acompañante guerrero|TCE-ES|2",
+				"Crítico Mejorado|Acompañante guerrero|TCE-ES|3",
 				"Mejora de Característica|Acompañante guerrero|TCE-ES|4",
-				"Extra Attack|Acompañante guerrero|TCE-ES|6",
-				"Battle Readiness|Acompañante guerrero|TCE-ES|7",
+				"Ataque Adicional|Acompañante guerrero|TCE-ES|6",
+				"Preparación para la Batalla|Acompañante guerrero|TCE-ES|7",
 				"Mejora de Característica|Acompañante guerrero|TCE-ES|8",
-				"Improved Defense|Acompañante guerrero|TCE-ES|10",
-				"Indomitable|Acompañante guerrero|TCE-ES|11",
+				"Defensa Mejorada|Acompañante guerrero|TCE-ES|10",
+				"Indómito|Acompañante guerrero|TCE-ES|11",
 				"Mejora de Característica|Acompañante guerrero|TCE-ES|12",
 				"Mejora de Característica|Acompañante guerrero|TCE-ES|14",
-				"Extra Attack Improvement|Acompañante guerrero|TCE-ES|15",
+				"Ataque Adicional Mejorado|Acompañante guerrero|TCE-ES|15",
 				"Mejora de Característica|Acompañante guerrero|TCE-ES|16",
-				"Indomitable Improvement|Acompañante guerrero|TCE-ES|18",
+				"Indómito Mejorado|Acompañante guerrero|TCE-ES|18",
 				"Mejora de Característica|Acompañante guerrero|TCE-ES|19",
-				"Second Wind Improvement|Acompañante guerrero|TCE-ES|20"
+				"Tomar Aliento Mejorado|Acompañante guerrero|TCE-ES|20"
 			],
 			"fluff": [
 				{
@@ -657,49 +657,49 @@
 			]
 		},
 		{
-			"name": "Bonus Proficiencies",
+			"name": "Competencias Adicionales",
 			"source": "TCE-ES",
-			"page": 144,
+			"page": 145,
 			"className": "Acompañante lanzador de conjuros",
 			"classSource": "TCE-ES",
 			"level": 1,
 			"entries": [
-				"{@i 1st-level Spellcaster feature}",
-				"The sidekick gains proficiency in one saving throw of your choice: Wisdom, Intelligence, or Charisma.",
-				"In addition, the sidekick gains proficiency in two skills of your choice from the following list: {@skill Arcana}, {@skill History}, {@skill Insight}, {@skill Investigation}, {@skill Medicine}, {@skill Performance}, {@skill Persuasion}, and {@skill Religion}.",
-				"The sidekick gains proficiency with light armor, and if it is a humanoid or has a {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon} in its stat block, it also gains proficiency with all simple weapons."
+				"{@i Rasgo de lanzador de conjuros de nivel 1}",
+				"El acompañante gana competencia en una tirada de salvación de tu elección: Sabiduría, Inteligencia o Carisma.",
+				"Además, el acompañante gana competencia en dos habilidades de tu elección de la siguiente lista: {@skill Conocimiento Arcano|PHB-ES}, {@skill Historia|PHB-ES}, {@skill Perspicacia|PHB-ES}, {@skill Investigación|PHB-ES}, {@skill Medicina|PHB-ES}, {@skill Interpretación|PHB-ES}, {@skill Persuasión|PHB-ES} y {@skill Religión|PHB-ES}.",
+				"El acompañante gana competencia con armaduras ligeras y, si es un humanoide o tiene un {@filter arma sencilla o marcial|items|source=PHB-ES|category=basic|type=martial weapon;simple weapon} en su perfil, también gana competencia con todas las armas sencillas."
 			]
 		},
 		{
 			"name": "Clase de un acompañante",
 			"source": "TCE-ES",
-			"page": 144,
+			"page": 145,
 			"className": "Acompañante lanzador de conjuros",
 			"classSource": "TCE-ES",
 			"level": 1,
 			"type": "inset",
 			"entries": [
-				"To gain the Spellcaster class, a creature must have at least one language in its stat block that it can speak.",
+				"Para poder obtener la clase lanzador de conjuros, la criatura debe tener en su perfil al menos un idioma que pueda hablar.",
 				"{@note Nota: Esta clase está diseñada para PNJ {@variantrule acompañantes|TCE-ES}.}"
 			]
 		},
 		{
-			"name": "Spellcasting",
+			"name": "Lanzamiento de Conjuros",
 			"source": "TCE-ES",
-			"page": 144,
+			"page": 145,
 			"className": "Acompañante lanzador de conjuros",
 			"classSource": "TCE-ES",
 			"level": 1,
 			"entries": [
-				"{@i 1st-level Spellcaster feature}",
-				"The sidekick gains the ability to cast spells. (If the creature already has the Spellcasting trait, this feature replaces that trait.) Choose the Spellcaster's role: Mage, Healer, or Prodigy. This choice determines the spell list and spellcasting ability used by the sidekick, as shown on the Spellcasting table.",
+				"{@i Rasgo de lanzador de conjuros de nivel 1}",
+				"El acompañante obtiene la capacidad de lanzar conjuros. (Si la criatura ya tiene el atributo Lanzamiento de Conjuros, este rasgo sustituye a ese atributo). Elige el rol del lanzador de conjuros: mago, sanador o prodigio. Esta elección determina la lista de conjuros y la aptitud mágica del acompañante, tal y como aparece en la tabla \"Lanzamiento de conjuros\".",
 				{
 					"type": "table",
-					"caption": "Spellcasting",
+					"caption": "Lanzamiento de conjuros",
 					"colLabels": [
-						"Role",
-						"Spell List",
-						"Ability"
+						"Rol",
+						"Lista de conjuros",
+						"Característica"
 					],
 					"colStyles": [
 						"col-4 text-center",
@@ -708,19 +708,19 @@
 					],
 					"rows": [
 						[
-							"Mage",
-							"{@filter Wizard|spells|class=Wizard}",
-							"Intelligence"
+							"Mago",
+							"{@filter Mago|spells|class=Mago (PHB-ES)}",
+							"Inteligencia"
 						],
 						[
-							"Healer",
-							"{@filter Cleric and Druid|spells|class=Cleric;Druid}",
-							"Wisdom"
+							"Sanador",
+							"{@filter Clérigo y druida|spells|class=Clérigo (PHB-ES);Druida (PHB-ES)}",
+							"Sabiduría"
 						],
 						[
-							"Prodigy",
-							"{@filter Bard and Warlock|spells|class=Bard;Warlock}",
-							"Charisma"
+							"Prodigio",
+							"{@filter Bardo y brujo|spells|class=Bardo (PHB-ES);Brujo (PHB-ES)}",
+							"Carisma"
 						]
 					]
 				},
@@ -729,47 +729,47 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "Spell Slots",
+							"name": "Espacios de conjuro",
 							"entries": [
-								"The Spellcaster table shows how many spell slots the sidekick has to cast its Spellcaster spells of 1st level and higher. To cast one of these spells, the sidekick must expend a slot of the spell's level or higher. The sidekick regains all expended spell slots when it finishes a long rest."
+								"La tabla \"Lanzador de Conjuros\" muestra de cuántos espacios de conjuro dispone el acompañante para lanzar sus conjuros de lanzador de conjuros de nivel 1 y superiores. Para lanzar uno de estos conjuros, deberá invertir un espacio de al menos el nivel del conjuro. El acompañante recupera todos los espacios de conjuro tras finalizar un descanso largo."
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Spells Known",
+							"name": "Conjuros conocidos",
 							"entries": [
-								"The sidekick knows two cantrips and one 1st-level spell of your choice from its spell list. Here are recommendations for a 1st-level spellcaster of each role:",
+								"El acompañante conoce dos trucos y un conjuro de nivel 1 de tu elección de la lista de conjuros. Estas son algunas recomendaciones para un lanzador de conjuros de nivel 1 de cada rol:",
 								{
 									"type": "list",
 									"style": "list-hang-notitle",
 									"items": [
 										{
 											"type": "item",
-											"name": "Mage:",
-											"entry": "{@spell mage hand}, {@spell ray of frost}, {@spell thunderwave}"
+											"name": "Mago:",
+											"entry": "{@spell mano de mago|PHB-ES}, {@spell rayo de escarcha|PHB-ES}, {@spell ola atronadora|PHB-ES}"
 										},
 										{
 											"type": "item",
-											"name": "Healer:",
-											"entry": "{@spell cure wounds}, {@spell guidance}, {@spell sacred flame}"
+											"name": "Sanador:",
+											"entry": "{@spell curar heridas|PHB-ES}, {@spell guía|PHB-ES}, {@spell llama sagrada|PHB-ES}"
 										},
 										{
 											"type": "item",
-											"name": "Prodigy:",
-											"entry": "{@spell eldritch blast}, {@spell healing word}, {@spell light}"
+											"name": "Prodigio:",
+											"entry": "{@spell descarga sobrenatural|PHB-ES}, {@spell palabra de curación|PHB-ES}, {@spell luz|PHB-ES}"
 										},
-										"The Cantrips Known and Spells Known columns of the Spellcaster table shows when the sidekick learns more spells of your choice. Each of the spells in the Spells Known column must be of a level for which the sidekick has spell slots, as shown on the table. For instance, when the sidekick reaches 5th level in this class, it can learn one new spell of 1st or 2nd level.",
-										"Additionally, when the sidekick gains a level in this class, you can choose one of the spells it knows from this class and replace it with another spell from its spell list. The new spell must be a cantrip or of a level for which the sidekick has spell slots."
+										"Las columnas \"Trucos conocidos\" y \"Conjuros conocidos\" de la tabla del lanzador de conjuros te indica cuándo podrá aprender más conjuros el acompañante y cuáles podrás escoger. Los conjuros de la tabla \"Conjuros conocidos\" deben ser de un nivel para el que el acompañante tenga espacios de conjuro, tal y como se indica en esa tabla. Así, cuando el acompañante suba al nivel 5 en esta clase, podrá aprender un conjuro nuevo, que puede ser de nivel 1 o 2.",
+										"Además, cada vez que suba un nivel de esta clase, podrás elegir uno de los conjuros que ya conoce de esta clase y reemplazarlo por otro de los que aparecen en la lista de conjuros. El nuevo conjuro debe ser un truco o de un nivel para el que el acompañante tenga espacios de conjuro."
 									]
 								}
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Spellcasting Ability",
+							"name": "Aptitud mágica",
 							"entries": [
-								"The sidekick's spellcasting ability for these spells depends on the choice you made on the Spellcasting table.",
-								"The sidekick uses its spellcasting ability whenever a spell refers to that ability. In addition, it uses its spellcasting ability modifier when setting the saving throw DC for a spell it casts and when making an attack roll with one.",
+								"La aptitud mágica del acompañante para esos conjuros dependerá de lo que hayas elegido en la tabla \"Lanzamiento de conjuros\".",
+								"El acompañante utilizará su aptitud mágica siempre que un conjuro haga referencia a ella. Además, también usará su modificador por aptitud mágica para determinar la CD de las tiradas de salvación de los conjuros que lance y para hacer tiradas de ataque con uno de estos conjuros.",
 								{
 									"type": "abilityDc",
 									"name": "Spell",
@@ -788,9 +788,9 @@
 						},
 						{
 							"type": "entries",
-							"name": "Spellcasting Focus",
+							"name": "Canalizador mágico",
 							"entries": [
-								"The sidekick can use a focus for its spells depending on the choice you made on the Spellcasting table. A Mage can use an arcane focus, a Healer can use a holy symbol, and a Prodigy can use an arcane focus or a {@item musical instrument|PHB}."
+								"El acompañante podrá usar un canalizador para sus conjuros en función de lo que hayas elegido en la tabla \"Lanzamiento de conjuros\", Un mago podrá usar un canalizador arcano, un sanador un símbolo sagrado, y un prodigio un canalizador arcano o un {@item instrumento musical|PHB-ES}."
 							]
 						}
 					]
@@ -810,15 +810,15 @@
 			]
 		},
 		{
-			"name": "Potent Cantrips",
+			"name": "Trucos Potentes",
 			"source": "TCE-ES",
-			"page": 144,
+			"page": 146,
 			"className": "Acompañante lanzador de conjuros",
 			"classSource": "TCE-ES",
 			"level": 6,
 			"entries": [
-				"{@i 6th-level Spellcaster feature}",
-				"The sidekick can add its spellcasting ability modifier to the damage it deals with any cantrip."
+				"{@i Rasgo de lanzador de conjuros de nivel 6}",
+				"El acompañante puede añadir su modificador por aptitud mágica al daño que causa con cualquier truco."
 			]
 		},
 		{
@@ -846,15 +846,15 @@
 			]
 		},
 		{
-			"name": "Empowered Spells",
+			"name": "Conjuros Potenciados",
 			"source": "TCE-ES",
-			"page": 144,
+			"page": 146,
 			"className": "Acompañante lanzador de conjuros",
 			"classSource": "TCE-ES",
 			"level": 14,
 			"entries": [
-				"{@i 14th-level Spellcaster feature}",
-				"Choose one school of magic. Whenever the sidekick casts a spell of that school by expending a spell slot, the sidekick can add its spellcasting ability modifier to the spell's damage roll or healing roll, if any."
+				"{@i Rasgo de lanzador de conjuros de nivel 14}",
+				"Elige una escuela mágica. Cada vez que el acompañante lance un conjuro de dicha escuela mediante el gasto de un espacio de conjuro, podrá añadir su modificador por aptitud mágica a la tirada de daño o de curación del conjuro, si las hay."
 			]
 		},
 		{
@@ -882,54 +882,54 @@
 			]
 		},
 		{
-			"name": "Focused Casting",
+			"name": "Lanzamiento con Concentración",
 			"source": "TCE-ES",
-			"page": 144,
+			"page": 146,
 			"className": "Acompañante lanzador de conjuros",
 			"classSource": "TCE-ES",
 			"level": 20,
 			"entries": [
-				"{@i 20th-level Spellcaster feature}",
-				"Taking damage can't break the sidekick's {@status concentration} on a spell."
+				"{@i Rasgo de lanzador de conjuros de nivel 20}",
+				"Recibir daño no hace que se rompa la {@status concentración|PHB-ES} del acompañante en un conjuro."
 			]
 		},
 		{
-			"name": "Bonus Proficiencies",
+			"name": "Competencias Adicionales",
 			"source": "TCE-ES",
-			"page": 146,
+			"page": 144,
 			"className": "Acompañante guerrero",
 			"classSource": "TCE-ES",
 			"level": 1,
 			"entries": [
-				"{@i 1st-level Warrior feature}",
-				"The sidekick gains proficiency in one saving throw of your choice: Strength, Dexterity, or Constitution.",
-				"In addition, the sidekick gains proficiency in two skills of your choice from the following list: {@skill Acrobatics}, {@skill Animal Handling}, {@skill Athletics}, {@skill Intimidation}, {@skill Nature}, {@skill Perception}, and {@skill Survival}.",
-				"The sidekick gains proficiency with all armor, and if it is a humanoid or has a {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon} in its stat block, it gains proficiency with shields and all simple and martial weapons."
+				"{@i Rasgo de guerrero de nivel 1}",
+				"El acompañante gana competencia en una tirada de salvación de tu elección: Fuerza, Destreza o Constitución.",
+				"Además, el acompañante gana competencia en dos habilidades de tu elección de la siguiente lista: {@skill Acrobacias|PHB-ES}, {@skill Trato con Animales|PHB-ES}, {@skill Atletismo|PHB-ES}, {@skill Intimidación|PHB-ES}, {@skill Naturaleza|PHB-ES}, {@skill Percepción|PHB-ES} y {@skill Supervivencia|PHB-ES}.",
+				"El acompañante gana competencia con todo tipo de armaduras y, si es un humanoide o tiene un {@filter arma sencilla o marcial|items|source=PHB-ES|category=basic|type=martial weapon;simple weapon} en su perfil, también gana competencia con escudos y con todas las armas sencillas y marciales."
 			]
 		},
 		{
-			"name": "Martial Role",
+			"name": "Rol Marcial",
 			"source": "TCE-ES",
-			"page": 146,
+			"page": 145,
 			"className": "Acompañante guerrero",
 			"classSource": "TCE-ES",
 			"level": 1,
 			"entries": [
-				"{@i 1st-level Warrior feature}",
-				"Each warrior focuses on offense or defense in their training. Choose one of the following options:",
+				"{@i Rasgo de guerrero de nivel 1}",
+				"En su entrenamiento, cada guerrero se centra en el ataque o en la defensa. Elige una de las siguientes opciones:",
 				{
 					"type": "list",
 					"style": "list-hang-notitle",
 					"items": [
 						{
 							"type": "item",
-							"name": "Attacker",
-							"entry": "The sidekick gains a +2 bonus to all attack rolls."
+							"name": "Atacante",
+							"entry": "El acompañante recibe un bonificador de +2 a todas las tiradas de ataque."
 						},
 						{
 							"type": "item",
-							"name": "Defender",
-							"entry": "The sidekick can use its reaction to impose disadvantage on the attack roll of a creature within 5 feet of it whose target isn't the sidekick, provided the sidekick can see the attacker."
+							"name": "Defensor",
+							"entry": "El acompañante puede usar su reacción para dar desventaja a la tirada de ataque de una criatura que se encuentre a 5 pies o menos de él cuyo objetivo no sea el acompañante, siempre que este pueda ver al atacante."
 						}
 					]
 				}
@@ -938,7 +938,7 @@
 		{
 			"name": "Clase de un acompañante",
 			"source": "TCE-ES",
-			"page": 146,
+			"page": 144,
 			"className": "Acompañante guerrero",
 			"classSource": "TCE-ES",
 			"level": 1,
@@ -948,28 +948,28 @@
 			]
 		},
 		{
-			"name": "Second Wind",
+			"name": "Tomar Aliento",
 			"source": "TCE-ES",
-			"page": 146,
+			"page": 145,
 			"className": "Acompañante guerrero",
 			"classSource": "TCE-ES",
 			"level": 2,
 			"entries": [
-				"{@i 2nd-level Warrior feature}",
-				"The sidekick can use a bonus action on its turn to regain hit points equal to {@dice 1d10} + its level in this class. Once it uses this feature, it must finish a short or long rest before it can use it again.",
-				"The sidekick can use this feature twice between rests starting at 20th level."
+				"{@i Rasgo de guerrero de nivel 2}",
+				"El acompañante puede usar una acción adicional en su turno para recuperar una cantidad de puntos de golpe igual a {@dice 1d10} + su nivel en esta clase. Una vez utilizado este rasgo, deberá terminar un descanso corto o largo para poder emplearlo de nuevo.",
+				"El acompañante podrá usar este rasgo dos veces entre descansos a partir del nivel 20."
 			]
 		},
 		{
-			"name": "Improved Critical",
+			"name": "Crítico Mejorado",
 			"source": "TCE-ES",
-			"page": 146,
+			"page": 145,
 			"className": "Acompañante guerrero",
 			"classSource": "TCE-ES",
 			"level": 3,
 			"entries": [
-				"{@i 3rd-level Warrior feature}",
-				"The sidekick's attack rolls score a critical hit on a roll of 19 or 20 on the {@dice d20}."
+				"{@i Rasgo de guerrero de nivel 3}",
+				"Las tiradas de ataque del acompañante causarán críticos con un resultado de 19 o 20 en el {@dice d20}."
 			]
 		},
 		{
@@ -985,29 +985,29 @@
 			]
 		},
 		{
-			"name": "Extra Attack",
+			"name": "Ataque Adicional",
 			"source": "TCE-ES",
-			"page": 146,
+			"page": 145,
 			"className": "Acompañante guerrero",
 			"classSource": "TCE-ES",
 			"level": 6,
 			"entries": [
-				"{@i 6th-level Warrior feature}",
-				"The sidekick can attack twice, instead of once, whenever it takes the {@action Attack} action on its turn.",
-				"The number of attacks increases to three when the sidekick reaches 15th level.",
-				"If the sidekick has the Multiattack action, it can use Extra Attack or Multiattack on a turn, not both."
+				"{@i Rasgo de guerrero de nivel 6}",
+				"El acompañante puede atacar dos veces en vez de una cuando realice la acción de {@action Atacar|PHB-ES} en su turno.",
+				"El número de ataques aumenta a tres cuando el acompañante alcanza el nivel 15.",
+				"Si el acompañante tiene la acción de Ataque Múltiple, puede utilizar Ataque Adicional o Ataque Múltiple durante un turno, no ambas."
 			]
 		},
 		{
-			"name": "Battle Readiness",
+			"name": "Preparación para la Batalla",
 			"source": "TCE-ES",
-			"page": 146,
+			"page": 145,
 			"className": "Acompañante guerrero",
 			"classSource": "TCE-ES",
 			"level": 7,
 			"entries": [
-				"{@i 7th-level Warrior feature}",
-				"The sidekick has advantage on initiative rolls."
+				"{@i Rasgo de guerrero de nivel 7}",
+				"El acompañante tiene ventaja en las tiradas de iniciativa."
 			]
 		},
 		{
@@ -1023,28 +1023,28 @@
 			]
 		},
 		{
-			"name": "Improved Defense",
+			"name": "Defensa Mejorada",
 			"source": "TCE-ES",
-			"page": 146,
+			"page": 145,
 			"className": "Acompañante guerrero",
 			"classSource": "TCE-ES",
 			"level": 10,
 			"entries": [
-				"{@i 10th-level Warrior feature}",
-				"The sidekick's Armor Class increases by 1."
+				"{@i Rasgo de guerrero de nivel 10}",
+				"La Clase de Armadura aumenta en 1."
 			]
 		},
 		{
-			"name": "Indomitable",
+			"name": "Indómito",
 			"source": "TCE-ES",
-			"page": 146,
+			"page": 145,
 			"className": "Acompañante guerrero",
 			"classSource": "TCE-ES",
 			"level": 11,
 			"entries": [
-				"{@i 11th-level Warrior feature}",
-				"The sidekick can reroll a saving throw that it fails, but it must use the new roll. When it uses this feature, it can't use the feature again until it finishes a long rest.",
-				"The sidekick can use this feature twice between long rests starting at 18th level."
+				"{@i Rasgo de guerrero de nivel 11}",
+				"El acompañante puede repetir una tirada de salvación si falla, pero debe usar el nuevo resultado. Si usa este rasgo, no podrá volver a usarlo hasta que concluya un descanso largo.",
+				"El acompañante podrá usar este rasgo dos veces entre descansos largos a partir del nivel 18."
 			]
 		},
 		{
@@ -1072,17 +1072,16 @@
 			]
 		},
 		{
-			"name": "Extra Attack Improvement",
+			"name": "Ataque Adicional Mejorado",
 			"source": "TCE-ES",
-			"page": 146,
+			"page": 145,
 			"className": "Acompañante guerrero",
 			"classSource": "TCE-ES",
 			"level": 15,
 			"entries": [
 				"{@i 15th-level Warrior feature}",
-				"The sidekick can attack twice, instead of once, whenever it takes the {@action Attack} action on its turn.",
-				"The number of attacks increases to three when the sidekick reaches 15th level.",
-				"If the sidekick has the Multiattack action, it can use Extra Attack or Multiattack on a turn, not both."
+				"El acompañante puede atacar tres veces en vez de dos cuando realice la acción de {@action Atacar|PHB-ES} en su turno.",
+				"Si el acompañante tiene la acción de Ataque Múltiple, puede utilizar Ataque Adicional o Ataque Múltiple durante un turno, no ambas."
 			]
 		},
 		{
@@ -1098,16 +1097,15 @@
 			]
 		},
 		{
-			"name": "Indomitable Improvement",
+			"name": "Indómito Mejorado",
 			"source": "TCE-ES",
-			"page": 146,
+			"page": 145,
 			"className": "Acompañante guerrero",
 			"classSource": "TCE-ES",
 			"level": 18,
 			"entries": [
-				"{@i 18th-level Warrior feature}",
-				"The sidekick can reroll a saving throw that it fails, but it must use the new roll. When it uses this feature, it can't use the feature again until it finishes a long rest.",
-				"The sidekick can use this feature twice between long rests starting at 18th level."
+				"{@i Rasgo de guerrero de nivel 18}",
+				"El acompañante puede repetir una tirada de salvación si falla, pero debe usar el nuevo resultado. Podrá usar este rasgo dos veces entre descansos largos."
 			]
 		},
 		{
@@ -1123,15 +1121,15 @@
 			]
 		},
 		{
-			"name": "Second Wind Improvement",
+			"name": "Tomar Aliento Mejorado",
 			"source": "TCE-ES",
-			"page": 146,
+			"page": 145,
 			"className": "Acompañante guerrero",
 			"classSource": "TCE-ES",
 			"level": 20,
 			"entries": [
-				"{@i 20th-level Warrior feature}",
-				"The sidekick can use their Second Wind feature twice between rests."
+				"{@i Rasgo de guerrero de nivel 20}",
+				"El acompañante puede usar el rasgo \"Tomar Aliento\" dos veces entre descansos."
 			]
 		}
 	]
