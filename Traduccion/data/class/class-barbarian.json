@@ -247,43 +247,43 @@
 				}
 			],
 			"classFeatures": [
-				"Rage|Bárbaro|PHB-ES|1",
-				"Unarmored Defense|Bárbaro|PHB-ES|1",
-				"Danger Sense|Bárbaro|PHB-ES|2",
-				"Reckless Attack|Bárbaro|PHB-ES|2",
+				"Furia|Bárbaro|PHB-ES|1",
+				"Defensa sin Armadura|Bárbaro|PHB-ES|1",
+				"Sentir el Peligro|Bárbaro|PHB-ES|2",
+				"Ataque Temerario|Bárbaro|PHB-ES|2",
 				{
-					"classFeature": "Primal Path|Bárbaro|PHB-ES|3",
+					"classFeature": "Senda Primordial|Bárbaro|PHB-ES|3",
 					"gainSubclassFeature": true
 				},
-				"Primal Knowledge|Bárbaro|PHB-ES|3|TCE-ES",
-				"Ability Score Improvement|Bárbaro|PHB-ES|4",
-				"Extra Attack|Bárbaro|PHB-ES|5",
-				"Fast Movement|Bárbaro|PHB-ES|5",
+				"Conocimiento Primigenio|Bárbaro|PHB-ES|3|TCE-ES",
+				"Mejora de Característica|Bárbaro|PHB-ES|4",
+				"Ataque Adicional|Bárbaro|PHB-ES|5",
+				"Movimiento Rápido|Bárbaro|PHB-ES|5",
 				{
-					"classFeature": "Path Feature|Bárbaro|PHB-ES|6",
+					"classFeature": "Rasgo de Senda|Bárbaro|PHB-ES|6",
 					"gainSubclassFeature": true
 				},
-				"Feral Instinct|Bárbaro|PHB-ES|7",
-				"Instinctive Pounce|Bárbaro|PHB-ES|7|TCE-ES",
-				"Ability Score Improvement|Bárbaro|PHB-ES|8",
-				"Brutal Critical (1 die)|Bárbaro|PHB-ES|9",
+				"Instinto Salvaje|Bárbaro|PHB-ES|7",
+				"Salto Instintivo|Bárbaro|PHB-ES|7|TCE-ES",
+				"Mejora de Característica|Bárbaro|PHB-ES|8",
+				"Crítico Brutal (1 dado)|Bárbaro|PHB-ES|9",
 				{
-					"classFeature": "Path feature|Bárbaro|PHB-ES|10",
+					"classFeature": "Rasgo de Senda|Bárbaro|PHB-ES|10",
 					"gainSubclassFeature": true
 				},
-				"Relentless Rage|Bárbaro|PHB-ES|11",
-				"Ability Score Improvement|Bárbaro|PHB-ES|12",
-				"Brutal Critical (2 dice)|Bárbaro|PHB-ES|13",
+				"Furia Implacable|Bárbaro|PHB-ES|11",
+				"Mejora de Característica|Bárbaro|PHB-ES|12",
+				"Crítico Brutal (2 dados)|Bárbaro|PHB-ES|13",
 				{
-					"classFeature": "Path feature|Bárbaro|PHB-ES|14",
+					"classFeature": "Rasgo de Senda|Bárbaro|PHB-ES|14",
 					"gainSubclassFeature": true
 				},
-				"Persistent Rage|Bárbaro|PHB-ES|15",
-				"Ability Score Improvement|Bárbaro|PHB-ES|16",
-				"Brutal Critical (3 dice)|Bárbaro|PHB-ES|17",
-				"Indomitable Might|Bárbaro|PHB-ES|18",
-				"Ability Score Improvement|Bárbaro|PHB-ES|19",
-				"Primal Champion|Bárbaro|PHB-ES|20"
+				"Furia Persistente|Bárbaro|PHB-ES|15",
+				"Mejora de Característica|Bárbaro|PHB-ES|16",
+				"Crítico Brutal (3 dados)|Bárbaro|PHB-ES|17",
+				"Poderío Indómito|Bárbaro|PHB-ES|18",
+				"Mejora de Característica|Bárbaro|PHB-ES|19",
+				"Campeón Primordial|Bárbaro|PHB-ES|20"
 			],
 			"subclassTitle": "Senda primordial",
 			"fluff": [
@@ -583,67 +583,68 @@
 	],
 	"classFeature": [
 		{
-			"name": "Rage",
+			"name": "Furia",
 			"source": "PHB-ES",
-			"page": 46,
+			"page": 48,
 			"srd": true,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"level": 1,
 			"entries": [
-				"In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action.",
-				"While raging, you gain the following benefits if you aren't wearing heavy armor:",
+				"Cuando estás en medio de un combate luchas con una ferocidad primordial. Durante tu turno, puedes usar tu acción adicional para dejarte llevar por la furia.",
+				"Mientras estés enfurecido, obtendrás, siempre y cuando no lleves armadura pesada, los siguientes beneficios:",
 				{
 					"type": "list",
 					"items": [
-						"You have advantage on Strength checks and Strength saving throws.",
-						"When you make a melee weapon attack using Strength, you gain a +2 bonus to the damage roll. This bonus increases as you level.",
-						"You have resistance to bludgeoning, piercing, and slashing damage."
+						"Tienes ventaja en las pruebas de Fuerza y las tiradas de salvación de Fuerza.",
+						"Cuando haces un ataque con arma cuerpo a cuerpo utilizando Fuerza, ganas un bonificador a la tirada de daño que aumenta según subes de nivel como bárbaro, tal y como se indica en la columna \"daño por furia\" de la tabla del bárbaro.",
+						"Posees resistencia al daño contundente, cortante y perforante."
 					]
 				},
-				"If you are able to cast spells, you can't cast them or concentrate on them while raging.",
-				"Your rage lasts for 1 minute. It ends early if you are knocked {@condition unconscious} or if your turn ends and you haven't attacked a hostile creature since your last turn or taken damage since then. You can also end your rage on your turn as a bonus action.",
-				"Once you have raged the maximum number of times for your barbarian level, you must finish a long rest before you can rage again. You may rage 2 times at 1st level, 3 at 3rd, 4 at 6th, 5 at 12th, and 6 at 17th."
+				"Si normalmente eras capaz de lanzar conjuros, no podrás lanzarlos ni concentrarte en ellos mientras estés enfurecido.",
+				"Tu furia dura 1 minuto, aunque acabará antes de este tiempo si quedas {@condition inconsciente|PHB-ES}, o si terminas tu turno sin haber atacado a una criatura hostil o sin haber recibido daño desde tu turno anterior. Si lo deseas, también puedes finalizar tu furia empleando una acción adicional, durante tu turno.",
+				"Una vez te hayas enfurecido tantas veces como el número indicado en la columna \"n.° furias\" de la tabla del bárbaro, tendrás que llevar a cabo un descanso largo antes de poder dejarte llevar por la furia de nuevo."
 			]
 		},
 		{
-			"name": "Unarmored Defense",
+			"name": "Defensa sin Armadura",
 			"source": "PHB-ES",
-			"page": 46,
+			"page": 48,
 			"srd": true,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"level": 1,
 			"entries": [
-				"While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit."
+				"Si no estás portando armadura alguna, tu Clase de Armadura será 10 + tu modificador por Destreza + tu modificador por Constitución. Podrás usar escudo sin tener que renunciar a este beneficio."
 			]
 		},
 		{
-			"name": "Danger Sense",
+			"name": "Sentir el Peligro",
 			"source": "PHB-ES",
-			"page": 46,
+			"page": 48,
 			"srd": true,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"level": 2,
 			"entries": [
-				"At 2nd level, you gain an uncanny sense of when things nearby aren't as they should be, giving you an edge when you dodge away from danger. You have advantage on Dexterity saving throws against effects that you can see, such as traps and spells. To gain this benefit, you can't be {@condition blinded}, {@condition deafened}, or {@condition incapacitated}."
+				"A nivel 2, eres capaz de percibir de forma casi sobrenatural cuando lo que te rodea no es como debería ser. Gracias a ello se te da bien evitar el peligro.",
+				"Tienes ventaja en las tiradas de salvación de Destreza para evitar efectos que puedas ver, como trampas o conjuros. No obtendrás este beneficio si estás {@condition cegado|PHB-ES}, {@condition ensordecido|PHB-ES} o {@condition incapacitado|PHB-ES}."
 			]
 		},
 		{
-			"name": "Reckless Attack",
+			"name": "Ataque Temerario",
 			"source": "PHB-ES",
-			"page": 46,
+			"page": 48,
 			"srd": true,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"level": 2,
 			"entries": [
-				"Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn."
+				"A partir de nivel 2, puedes abandonar por completo tu defensa para atacar con una fiereza desesperada. Cuando vayas a realizar el primer ataque de cada turno, puedes decidir atacar temerariamente. Si eliges hacer esto, tendrás ventaja en las tiradas de ataque con armas cuerpo a cuerpo que utilicen Fuerza durante este turno, pero las tiradas de ataque que te tengan como objetivo hasta el final de tu siguiente turno también tendrán ventaja."
 			]
 		},
 		{
-			"name": "Primal Knowledge",
+			"name": "Conocimiento Primigenio",
 			"source": "TCE-ES",
 			"page": 24,
 			"className": "Bárbaro",
@@ -651,86 +652,86 @@
 			"level": 3,
 			"isClassFeatureVariant": true,
 			"entries": [
-				"{@i 3rd-level barbarian {@variantrule optional class features|tce|optional feature}}",
-				"When you reach 3rd level and again at 10th level, you gain proficiency in one skill of your choice from the list of skills available to barbarians at 1st level."
+				"{@i {@variantrule Rasgos de clase opcionales|TCE-ES|Rasgo opcional} de bárbaro de nivel 3}",
+				"Cuando alcanzas los niveles 3 y 10, ganas competencia en una habilidad de tu elección de la lista de habilidades disponibles para los bárbaros en el nivel 1."
 			]
 		},
 		{
-			"name": "Primal Path",
+			"name": "Senda Primordial",
 			"source": "PHB-ES",
-			"page": 46,
+			"page": 48,
 			"srd": true,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"level": 3,
 			"entries": [
-				"At 3rd level, you choose a path that shapes the nature of your rage from the list of available paths. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th levels."
+				"A nivel 3 debes escoger una senda, que determinará la naturaleza de tu furia. Elige entre la Senda del Berserker y la Senda del Guerrero Totémico. Ambas se detallan al final de la descripción de esta clase. Esta elección te proporciona ciertos rasgos cuando alcanzas los niveles 3, 6, 10 y 14."
 			]
 		},
 		{
-			"name": "Ability Score Improvement",
+			"name": "Mejora de Característica",
 			"source": "PHB-ES",
-			"page": 46,
+			"page": 49,
 			"srd": true,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"level": 4,
 			"entries": [
-				"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+				"Cuando alcances el nivel 4 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
 			]
 		},
 		{
-			"name": "Extra Attack",
+			"name": "Ataque Adicional",
 			"source": "PHB-ES",
-			"page": 46,
+			"page": 49,
 			"srd": true,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"level": 5,
 			"entries": [
-				"Beginning at 5th level, you can attack twice, instead of once, whenever you take the {@action Attack} action on your turn."
+				"A partir de nivel 5, cuando lleves a cabo la acción de {@action Atacar|PHB-ES} durante tu turno, podrás hacer dos ataques en lugar de uno."
 			]
 		},
 		{
-			"name": "Fast Movement",
+			"name": "Movimiento Rápido",
 			"source": "PHB-ES",
-			"page": 46,
+			"page": 49,
 			"srd": true,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"level": 5,
 			"entries": [
-				"Starting at 5th level, your speed increases by 10 feet while you aren't wearing heavy armor."
+				"A partir de nivel 5, si no estás llevando armadura pesada, tu velocidad aumenta en 10 pies."
 			]
 		},
 		{
-			"name": "Path Feature",
+			"name": "Rasgo de Senda",
 			"source": "PHB-ES",
-			"page": 46,
+			"page": 48,
 			"srd": true,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"level": 6,
 			"entries": [
-				"At 6th level, you gain a feature from your Primal Path."
+				"A nivel 6 ganas un rasgo de tu Senda primordial"
 			]
 		},
 		{
-			"name": "Feral Instinct",
+			"name": "Instinto Salvaje",
 			"source": "PHB-ES",
-			"page": 46,
+			"page": 49,
 			"srd": true,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"level": 7,
 			"entries": [
-				"By 7th level, your instincts are so honed that you have advantage on initiative rolls.",
-				"Additionally, if you are {@quickref Surprise|PHB|3|0|surprised} at the beginning of combat and aren't {@condition incapacitated}, you can act normally on your first turn, but only if you enter your rage before doing anything else on that turn."
+				"A partir de nivel 7, tus instintos están tan afilados que tienes ventaja en las tiradas de iniciativa.",
+				"Además, aunque estés {@book sorprendido|PHB-ES|9|sorprendido} al empezar un combate, podrás actuar con normalidad a lo largo de tu primer turno si no estás {@condition incapacitado|PHB-ES} y te enfureces antes de hacer cualquier otra cosa durante dicho turno."
 			]
 		},
 		{
-			"name": "Instinctive Pounce",
+			"name": "Salto Instintivo",
 			"source": "TCE-ES",
 			"page": 24,
 			"className": "Bárbaro",
@@ -738,171 +739,171 @@
 			"level": 7,
 			"isClassFeatureVariant": true,
 			"entries": [
-				"{@i 7th-level barbarian {@variantrule optional class features|tce|optional feature}}",
-				"As part of the bonus action you take to enter your rage, you can move up to half your speed."
+				"{@i {@variantrule Rasgos de clase opcionales|TCE-ES|Rasgo opcional} de bárbaro de nivel 7}",
+				"Como parte de la acción adicional para dejarte llevar por la furia, puedes moverte hacia arriba a la mitad de tu velocidad."
 			]
 		},
 		{
-			"name": "Ability Score Improvement",
+			"name": "Mejora de Característica",
 			"source": "PHB-ES",
-			"page": 46,
+			"page": 49,
 			"srd": true,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"level": 8,
 			"entries": [
-				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+				"Cuando alcances el nivel 8 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
 			]
 		},
 		{
-			"name": "Brutal Critical (1 die)",
+			"name": "Crítico Brutal (1 dado)",
 			"source": "PHB-ES",
-			"page": 46,
+			"page": 49,
 			"srd": true,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"level": 9,
 			"entries": [
-				"Beginning at 9th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack.",
-				"This increases to two additional dice at 13th level and three additional dice at 17th level."
+				"A partir de nivel 9, cuando hagas un crítico con un ataque cuerpo a cuerpo, podrás tirar uno de los dados de daño del arma una vez más y añadir el resultado al daño adicional causado.",
+				"Podrás tirar dos dados adicionales a partir de nivel 13 y tres dados adicionales a partir de nivel 17."
 			]
 		},
 		{
-			"name": "Path feature",
+			"name": "Rasgo de Senda",
 			"source": "PHB-ES",
-			"page": 46,
+			"page": 48,
 			"srd": true,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"level": 10,
 			"entries": [
-				"At 10th level, you gain a feature from your Primal Path."
+				"A nivel 10 ganas un rasgo de tu Senda primordial"
 			]
 		},
 		{
-			"name": "Relentless Rage",
+			"name": "Furia Implacable",
 			"source": "PHB-ES",
-			"page": 46,
+			"page": 49,
 			"srd": true,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"level": 11,
 			"entries": [
-				"Starting at 11th level, your rage can keep you fighting despite grievous wounds. If you drop to 0 hit points while you're raging and don't die outright, you can make a DC 10 Constitution saving throw. If you succeed, you drop to 1 hit point instead.",
-				"Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10."
+				"A partir de nivel 11, tu furia te permite seguir luchando incluso tras sufrir heridas graves. Si tus puntos de golpe se reducen a 0 mientras estás enfurecido, pero no mueres instantáneamente, puedes hacer una tirada de salvación de Constitución CD 10. Si tienes éxito, pasas a tener 1 punto de golpe en lugar de 0.",
+				"Cada vez que usas este rasgo la CD aumenta en 5 puntos, pero si finalizas un descanso corto o largo, dicha CD vuelve a ser 10."
 			]
 		},
 		{
-			"name": "Ability Score Improvement",
+			"name": "Mejora de Característica",
 			"source": "PHB-ES",
-			"page": 46,
+			"page": 49,
 			"srd": true,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"level": 12,
 			"entries": [
-				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+				"Cuando alcances el nivel 12 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
 			]
 		},
 		{
-			"name": "Brutal Critical (2 dice)",
+			"name": "Crítico Brutal (2 dados)",
 			"source": "PHB-ES",
-			"page": 46,
+			"page": 49,
 			"srd": true,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"level": 13,
 			"entries": [
-				"At 13th level, you can roll two additional weapon damage dice when determining the extra damage for a critical hit with a melee attack.",
-				"This increases to three additional dice at 17th level."
+				"A partir de nivel 13, cuando hagas un crítico con un ataque cuerpo a cuerpo, podrás tirar dos de los dados de daño del arma una vez más y añadir el resultado al daño adicional causado.",
+				"Podrás tirar tres dados adicionales a partir de nivel 17."
 			]
 		},
 		{
-			"name": "Path feature",
+			"name": "Rasgo de Senda",
 			"source": "PHB-ES",
-			"page": 46,
+			"page": 48,
 			"srd": true,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"level": 14,
 			"entries": [
-				"At 14th level, you gain a feature from your Primal Path."
+				"A nivel 14 ganas un rasgo de tu Senda primordial"
 			]
 		},
 		{
-			"name": "Persistent Rage",
+			"name": "Furia Persistente",
 			"source": "PHB-ES",
-			"page": 46,
+			"page": 49,
 			"srd": true,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"level": 15,
 			"entries": [
-				"Beginning at 15th level, your rage is so fierce that it ends early only if you fall {@condition unconscious} or if you choose to end it."
+				"A partir de nivel 15, tu furia es tan violenta que solo terminará antes de tiempo si quedas {@condition inconsciente|PHB-ES} o eliges finalizarla voluntariamente."
 			]
 		},
 		{
-			"name": "Ability Score Improvement",
+			"name": "Mejora de Característica",
 			"source": "PHB-ES",
-			"page": 46,
+			"page": 49,
 			"srd": true,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"level": 16,
 			"entries": [
-				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+				"Cuando alcances el nivel 16 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
 			]
 		},
 		{
-			"name": "Brutal Critical (3 dice)",
+			"name": "Crítico Brutal (3 dados)",
 			"source": "PHB-ES",
-			"page": 46,
+			"page": 49,
 			"srd": true,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"level": 17,
 			"entries": [
-				"At 17th level, you can roll three additional weapon damage dice when determining the extra damage for a critical hit with a melee attack."
+				"A partir de nivel 17, cuando hagas un crítico con un ataque cuerpo a cuerpo, podrás tirar tres de los dados de daño del arma una vez más y añadir el resultado al daño adicional causado."
 			]
 		},
 		{
-			"name": "Indomitable Might",
+			"name": "Poderío Indómito",
 			"source": "PHB-ES",
-			"page": 46,
+			"page": 49,
 			"srd": true,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"level": 18,
 			"entries": [
-				"Beginning at 18th level, if your total for a Strength check is less than your Strength score, you can use that score in place of the total."
+				"A partir de nivel 18, si el resultado de una de tus pruebas de Fuerza es inferior a tu puntuación de Fuerza, puedes usar esa puntuación en lugar del resultado."
 			]
 		},
 		{
-			"name": "Ability Score Improvement",
+			"name": "Mejora de Característica",
 			"source": "PHB-ES",
-			"page": 46,
+			"page": 49,
 			"srd": true,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"level": 19,
 			"entries": [
-				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+				"Cuando alcances el nivel 19 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
 			]
 		},
 		{
-			"name": "Primal Champion",
+			"name": "Campeón Primordial",
 			"source": "PHB-ES",
-			"page": 46,
+			"page": 49,
 			"srd": true,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"level": 20,
 			"entries": [
-				"At 20th level, you embody the power of the wilds. Your Strength and Constitution scores increase by 4. Your maximum for those scores is now 24."
+				"Cuando llegas a nivel 20 encarnas el poder de la naturaleza salvaje. Tus puntuaciones de Fuerza y de Constitución aumentan en 4. Tu valor máximo para dichas puntuaciones pasa a ser 24."
 			]
 		}
 	],
@@ -916,10 +917,10 @@
 			"page": 49,
 			"srd": true,
 			"subclassFeatures": [
-				"Path of the Berserker|Bárbaro|PHB-ES|Berserker|PHB-ES|3",
-				"Mindless Rage|Bárbaro|PHB-ES|Berserker|PHB-ES|6",
-				"Intimidating Presence|Bárbaro|PHB-ES|Berserker|PHB-ES|10",
-				"Retaliation|Bárbaro|PHB-ES|Berserker|PHB-ES|14"
+				"Senda del Berserker|Bárbaro|PHB-ES|Berserker|PHB-ES|3",
+				"Furia Irracional|Bárbaro|PHB-ES|Berserker|PHB-ES|6",
+				"Presencia Intimidante|Bárbaro|PHB-ES|Berserker|PHB-ES|10",
+				"Represalia|Bárbaro|PHB-ES|Berserker|PHB-ES|14"
 			]
 		},
 		{
@@ -947,10 +948,10 @@
 				}
 			],
 			"subclassFeatures": [
-				"Path of the Totem Warrior|Bárbaro|PHB-ES|Guerrero Totémico|PHB-ES|3",
-				"Aspect of the Beast|Bárbaro|PHB-ES|Guerrero Totémico|PHB-ES|6",
-				"Spirit Walker|Bárbaro|PHB-ES|Guerrero Totémico|PHB-ES|10",
-				"Totemic Attunement|Bárbaro|PHB-ES|Guerrero Totémico|PHB-ES|14"
+				"Senda del Guerrero Totémico|Bárbaro|PHB-ES|Guerrero Totémico|PHB-ES|3",
+				"Semblanza de la Bestia|Bárbaro|PHB-ES|Guerrero Totémico|PHB-ES|6",
+				"Caminante Espiritual|Bárbaro|PHB-ES|Guerrero Totémico|PHB-ES|10",
+				"Armonía Totémica|Bárbaro|PHB-ES|Guerrero Totémico|PHB-ES|14"
 			]
 		},
 		{
@@ -961,10 +962,10 @@
 			"classSource": "PHB-ES",
 			"page": 121,
 			"subclassFeatures": [
-				"Path of the Battlerager|Bárbaro|PHB-ES|Camorrista|SCAG-ES|3",
-				"Reckless Abandon|Bárbaro|PHB-ES|Camorrista|SCAG-ES|6",
-				"Battlerager Charge|Bárbaro|PHB-ES|Camorrista|SCAG-ES|10",
-				"Spiked Retribution|Bárbaro|PHB-ES|Camorrista|SCAG-ES|14"
+				"Senda del Camorrista|Bárbaro|PHB-ES|Camorrista|SCAG-ES|3",
+				"Desenfreno Temerario|Bárbaro|PHB-ES|Camorrista|SCAG-ES|6",
+				"Carga de Camorrista|Bárbaro|PHB-ES|Camorrista|SCAG-ES|10",
+				"Castigo Punzante|Bárbaro|PHB-ES|Camorrista|SCAG-ES|14"
 			]
 		},
 		{
@@ -986,10 +987,10 @@
 				}
 			],
 			"subclassFeatures": [
-				"Path of the Ancestral Guardian|Bárbaro|PHB-ES|Guardián Ancestral|XGE-ES|3",
-				"Spirit Shield|Bárbaro|PHB-ES|Guardián Ancestral|XGE-ES|6",
-				"Consult the Spirits|Bárbaro|PHB-ES|Guardián Ancestral|XGE-ES|10",
-				"Vengeful Ancestors|Bárbaro|PHB-ES|Guardián Ancestral|XGE-ES|14"
+				"Senda del Guardián Ancestral|Bárbaro|PHB-ES|Guardián Ancestral|XGE-ES|3",
+				"Escudo de los Espíritus|Bárbaro|PHB-ES|Guardián Ancestral|XGE-ES|6",
+				"Consultar a los Espíritus|Bárbaro|PHB-ES|Guardián Ancestral|XGE-ES|10",
+				"Ancestros Vengativos|Bárbaro|PHB-ES|Guardián Ancestral|XGE-ES|14"
 			]
 		},
 		{
@@ -1000,10 +1001,10 @@
 			"classSource": "PHB-ES",
 			"page": 10,
 			"subclassFeatures": [
-				"Path of the Storm Herald|Bárbaro|PHB-ES|Heraldo de las Tormentas|XGE-ES|3",
-				"Storm Soul|Bárbaro|PHB-ES|Heraldo de las Tormentas|XGE-ES|6",
-				"Shielding Storm|Bárbaro|PHB-ES|Heraldo de las Tormentas|XGE-ES|10",
-				"Raging Storm|Bárbaro|PHB-ES|Heraldo de las Tormentas|XGE-ES|14"
+				"Senda del Heraldo de las Tormentas|Bárbaro|PHB-ES|Heraldo de las Tormentas|XGE-ES|3",
+				"Alma de Tormenta|Bárbaro|PHB-ES|Heraldo de las Tormentas|XGE-ES|6",
+				"Tormenta Protectora|Bárbaro|PHB-ES|Heraldo de las Tormentas|XGE-ES|10",
+				"Tormenta Enfurecida|Bárbaro|PHB-ES|Heraldo de las Tormentas|XGE-ES|14"
 			]
 		},
 		{
@@ -1014,10 +1015,10 @@
 			"classSource": "PHB-ES",
 			"page": 11,
 			"subclassFeatures": [
-				"Path of the Zealot|Bárbaro|PHB-ES|Fanático|XGE-ES|3",
-				"Fanatical Focus|Bárbaro|PHB-ES|Fanático|XGE-ES|6",
-				"Zealous Presence|Bárbaro|PHB-ES|Fanático|XGE-ES|10",
-				"Rage beyond Death|Bárbaro|PHB-ES|Fanático|XGE-ES|14"
+				"Senda del Fanático|Bárbaro|PHB-ES|Fanático|XGE-ES|3",
+				"Foco Fanático|Bárbaro|PHB-ES|Fanático|XGE-ES|6",
+				"Presencia Ferviente|Bárbaro|PHB-ES|Fanático|XGE-ES|10",
+				"Furia más allá de la muerte|Bárbaro|PHB-ES|Fanático|XGE-ES|14"
 			]
 		},
 		{
@@ -1028,10 +1029,10 @@
 			"classSource": "PHB-ES",
 			"page": 24,
 			"subclassFeatures": [
-				"Path of the Beast|Bárbaro|PHB-ES|Bestia|TCE-ES|3",
-				"Bestial Soul|Bárbaro|PHB-ES|Bestia|TCE-ES|6",
-				"Infectious Fury|Bárbaro|PHB-ES|Bestia|TCE-ES|10",
-				"Call the Hunt|Bárbaro|PHB-ES|Bestia|TCE-ES|14"
+				"Senda de la Bestia|Bárbaro|PHB-ES|Bestia|TCE-ES|3",
+				"Alma Bestial|Bárbaro|PHB-ES|Bestia|TCE-ES|6",
+				"Furia Infecciosa|Bárbaro|PHB-ES|Bestia|TCE-ES|10",
+				"Llamada a la Caza|Bárbaro|PHB-ES|Bestia|TCE-ES|14"
 			]
 		},
 		{
@@ -1042,16 +1043,16 @@
 			"classSource": "PHB-ES",
 			"page": 25,
 			"subclassFeatures": [
-				"Path of Wild Magic|Bárbaro|PHB-ES|Magia Salvaje|TCE-ES|3",
-				"Bolstering Magic|Bárbaro|PHB-ES|Magia Salvaje|TCE-ES|6",
-				"Unstable Backlash|Bárbaro|PHB-ES|Magia Salvaje|TCE-ES|10",
-				"Controlled Surge|Bárbaro|PHB-ES|Magia Salvaje|TCE-ES|14"
+				"Senda de la Magia Salvaje|Bárbaro|PHB-ES|Magia Salvaje|TCE-ES|3",
+				"Magia Estimulante|Bárbaro|PHB-ES|Magia Salvaje|TCE-ES|6",
+				"Reacción Inestable|Bárbaro|PHB-ES|Magia Salvaje|TCE-ES|10",
+				"Oleada Controlada|Bárbaro|PHB-ES|Magia Salvaje|TCE-ES|14"
 			]
 		}
 	],
 	"subclassFeature": [
 		{
-			"name": "Path of the Berserker",
+			"name": "Senda del Berserker",
 			"source": "PHB-ES",
 			"page": 49,
 			"srd": true,
@@ -1061,15 +1062,15 @@
 			"subclassSource": "PHB-ES",
 			"level": 3,
 			"entries": [
-				"For some barbarians, rage is a means to an end—that end being violence. The Path of the Berserker is a path of untrammeled fury, slick with blood. As you enter the berserker's rage, you thrill in the chaos of battle, heedless of your own health or well-being.",
+				"Para ciertos bárbaros la furia es el medio para alcanzar un fin: la violencia. La Senda del Berserker se asienta en una rabia sin cortapisas, cubierta de sangre. Al dejarte llevar por la furia del berserker experimentarás el entusiasmo que proporciona el caos del combate, sin reparar en tu propia seguridad o bienestar.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Frenzy|Bárbaro|PHB-ES|Berserker|PHB-ES|3"
+					"subclassFeature": "Frenesí|Bárbaro|PHB-ES|Berserker|PHB-ES|3"
 				}
 			]
 		},
 		{
-			"name": "Frenzy",
+			"name": "Frenesí",
 			"source": "PHB-ES",
 			"page": 49,
 			"srd": true,
@@ -1080,11 +1081,11 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Starting when you choose this path at 3rd level, you can go into a frenzy when you rage. If you do so, for the duration of your rage you can make a single melee weapon attack as a bonus action on each of your turns after this one. When your rage ends, you suffer one level of {@condition exhaustion}."
+				"A partir del momento en el que escoges esta senda, a nivel 3, puedes abandonarte al frenesí cuando te enfurezcas. Si eliges hacer esto, mientras estés enfurecido podrás hacer un ataque con arma cuerpo a cuerpo como acción adicional durante cada uno de tus turnos (empezando por el siguiente a haberte enfurecido). A cambio, cuando tu furia termine sufrirás un nivel de {@condition cansancio|PHB-ES}."
 			]
 		},
 		{
-			"name": "Mindless Rage",
+			"name": "Furia Irracional",
 			"source": "PHB-ES",
 			"page": 49,
 			"srd": true,
@@ -1095,11 +1096,11 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"Beginning at 6th level, you can't be {@condition charmed} or {@condition frightened} while raging. If you are {@condition charmed} or {@condition frightened} when you enter your rage, the effect is suspended for the duration of the rage."
+				"A partir de nivel 6, no puedes ser {@condition asustado|PHB-ES} ni {@condition hechizado|PHB-ES} mientras estés enfurecido. Si estabas {@condition asustado|PHB-ES} o {@condition hechizado|PHB-ES} antes de enfurecerte, dejarás de estarlo temporalmente, mientras dure la furia."
 			]
 		},
 		{
-			"name": "Intimidating Presence",
+			"name": "Presencia Intimidante",
 			"source": "PHB-ES",
 			"page": 49,
 			"srd": true,
@@ -1110,14 +1111,14 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"Beginning at 10th level, you can use your action to frighten someone with your menacing presence. When you do so, choose one creature that you can see within 30 feet of you. If the creature can see or hear you, it must succeed on a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Charisma modifier) or be {@condition frightened} of you until the end of your next turn. On subsequent turns, you can use your action to extend the duration of this effect on the {@condition frightened} creature until the end of your next turn. This effect ends if the creature ends its turn out of line of sight or more than 60 feet away from you.",
-				"If the creature succeeds on its saving throw, you can't use this feature on that creature again for 24 hours."
+				"A partir de nivel 10, puedes usar tu acción para asustar a alguien con tu mera presencia. Para hacer esto, elige a una criatura que puedas ver a 30 pies o menos de ti. Si dicha criatura puede verte u oírte, deberá superar una tirada de salvación de Sabiduría (CD 8 + tu bonificador por competencia + tu bonificador por Carisma) o estará {@condition Asustado|PHB-ES|asustada} de ti hasta el final de tu siguiente turno. En cada uno de los turnos subsiguientes, podrás utilizar tu acción para alargar la duración de este efecto sobre la criatura {@condition Asustado|PHB-ES|asustada} hasta el final de tu siguiente turno. Este efecto termina si la criatura termina su turno fuera de tu línea de visión o a 60 pies o más de ti.",
+				"Si tiene éxito en su tirada de salvación, no podrás volver a usar este rasgo sobre esa criatura hasta que pasen 24 horas."
 			]
 		},
 		{
-			"name": "Retaliation",
+			"name": "Represalia",
 			"source": "PHB-ES",
-			"page": 49,
+			"page": 50,
 			"srd": true,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
@@ -1126,11 +1127,11 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Starting at 14th level, when you take damage from a creature that is within 5 feet of you, you can use your reaction to make a melee weapon attack against that creature."
+				"A partir de nivel 14, cuando recibas daño de una criatura que se encuentre a 5 pies o menos de ti, podrás utilizar tu reacción para hacer un ataque con arma cuerpo a cuerpo contra ella."
 			]
 		},
 		{
-			"name": "Bear",
+			"name": "Senda del Guerrero Totémico",
 			"source": "PHB-ES",
 			"page": 50,
 			"className": "Bárbaro",
@@ -1139,59 +1140,20 @@
 			"subclassSource": "PHB-ES",
 			"level": 3,
 			"entries": [
-				"While raging, you have resistance to all damage except psychic damage. The spirit of the bear makes you tough enough to stand up to any punishment."
-			]
-		},
-		{
-			"name": "Eagle",
-			"source": "PHB-ES",
-			"page": 50,
-			"className": "Bárbaro",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Guerrero Totémico",
-			"subclassSource": "PHB-ES",
-			"level": 3,
-			"entries": [
-				"While you're raging and aren't wearing heavy armor, other creatures have disadvantage on opportunity attack rolls against you, and you can use the {@action Dash} action as a bonus action on your turn. The spirit of the eagle makes you into a predator who can weave through the fray with ease."
-			]
-		},
-		{
-			"name": "Path of the Totem Warrior",
-			"source": "PHB-ES",
-			"page": 50,
-			"className": "Bárbaro",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Guerrero Totémico",
-			"subclassSource": "PHB-ES",
-			"level": 3,
-			"entries": [
-				"The Path of the Totem Warrior is a spiritual journey, as the barbarian accepts a spirit animal as guide, protector, and inspiration. In battle, your totem spirit fills you with supernatural might, adding magical fuel to your barbarian rage.",
-				"Most barbarian tribes consider a totem animal to be kin to a particular clan. In such cases, it is unusual for an individual to have more than one totem animal spirit, though exceptions exist.",
+				"La Senda del Guerrero Totémico es un viaje espiritual, mediante el cual el bárbaro acepta a un espíritu animal como guía, protector e inspiración. Durante el combate, tu espíritu totémico te llena de poder sobrenatural, añadiendo energías mágicas a tu furia de bárbaro.",
+				"La mayoría de las tribus bárbaras consideran que cada animal totémico está unido a un clan concreto. En estas tribus no suele ser frecuente ver bárbaros con más de un espíritu animal como tótem, aunque siempre hay excepciones.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Spirit Seeker|Bárbaro|PHB-ES|Guerrero Totémico|PHB-ES|3"
+					"subclassFeature": "Buscador de Espíritus|Bárbaro|PHB-ES|Guerrero Totémico|PHB-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Totem Spirit|Bárbaro|PHB-ES|Guerrero Totémico|PHB-ES|3"
+					"subclassFeature": "Espíritu Totémico|Bárbaro|PHB-ES|Guerrero Totémico|PHB-ES|3"
 				}
 			]
 		},
 		{
-			"name": "Wolf",
-			"source": "PHB-ES",
-			"page": 50,
-			"className": "Bárbaro",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Guerrero Totémico",
-			"subclassSource": "PHB-ES",
-			"level": 3,
-			"entries": [
-				"While you're raging, your friends have advantage on melee attack rolls against any creature within 5 feet of you that is hostile to you. The spirit of the wolf makes you a leader of hunters."
-			]
-		},
-		{
-			"name": "Spirit Seeker",
+			"name": "Buscador de Espíritus",
 			"source": "PHB-ES",
 			"page": 50,
 			"className": "Bárbaro",
@@ -1201,11 +1163,11 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Yours is a path that seeks attunement with the natural world, giving you a kinship with beasts. At 3rd level when you adopt this path, you gain the ability to cast the {@spell beast sense} and {@spell speak with animals} spells, but only as rituals, as described in {@book chapter 10|PHB|10|rituals}."
+				"Tu senda busca la armonía con el mundo natural, por lo que posees un vínculo especial con las bestias. A nivel 3, cuando adoptes esta senda, serás capaz de lanzar los conjuros {@spell hablar con los animales|PHB-ES} y {@spell sentidos de la bestia|PHB-ES}, pero únicamente como rituales, tal y como se describe en el {@book capítulo 10: \"Lanzamiento de conjuros\"|PHB-ES|10|rituales|0}."
 			]
 		},
 		{
-			"name": "Totem Spirit",
+			"name": "Espíritu Totémico",
 			"source": "PHB-ES",
 			"page": 50,
 			"className": "Bárbaro",
@@ -1215,77 +1177,104 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"At 3rd level, when you adopt this path, you choose a totem spirit and gain its feature. You must make or acquire a physical totem object—an amulet or similar adornment—that incorporates fur or feathers, claws, teeth, or bones of the totem animal. At your option, you also gain minor physical attributes that are reminiscent of your totem spirit. For example, if you have a bear totem spirit, you might be unusually hairy and thick-skinned, or if your totem is the eagle, your eyes turn bright yellow.",
-				"Your totem animal might be an animal related to those listed here but more appropriate to your homeland. For example, you could choose a hawk or vulture in place of an eagle.",
+				"A nivel 3, cuando escoges esta senda, también eliges un espíritu totémico y obtienes su rasgo asociado. Debes fabricar o hacerte con un tótem físico (un amuleto o adorno similar) confeccionado a partir de pelaje, plumas, garras, dientes o huesos del animal totémico. Si quieres, también puedes desarrollar pequeños rasgos físicos que recuerden a tu espíritu totémico. De este modo, si tu espíritu totémico es un oso, podrías ser especialmente velludo o tener la piel gruesa, mientras que, si tu tótem es el águila, quizá tus ojos se vuelvan de un color amarillo brillante.",
+				"Tu animal totémico podría no ser exactamente uno de los enumerados a continuación, sino uno emparentado con alguno de ellos, pero más apropiado a tu tierra natal.",
+				"Podrías, por ejemplo, elegir un halcón o buitre en vez de un águila.",
 				{
 					"type": "options",
 					"count": 1,
 					"entries": [
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Bear|Bárbaro|PHB-ES|Guerrero Totémico|PHB-ES|3"
+							"subclassFeature": "Águila|Bárbaro|PHB-ES|Guerrero Totémico|PHB-ES|3"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Eagle|Bárbaro|PHB-ES|Guerrero Totémico|PHB-ES|3"
+							"subclassFeature": "Alce|Bárbaro|SCAG-ES|Guerrero Totémico|PHB-ES|3|SCAG-ES"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Elk|Barbarian|SCAG|Guerrero Totémico|PHB-ES|3|SCAG-ES"
+							"subclassFeature": "Lobo|Bárbaro|PHB-ES|Guerrero Totémico|PHB-ES|3"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Tiger|Barbarian|SCAG|Guerrero Totémico|PHB-ES|3|SCAG-ES"
+							"subclassFeature": "Oso|Bárbaro|PHB-ES|Guerrero Totémico|PHB-ES|3"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Wolf|Bárbaro|PHB-ES|Guerrero Totémico|PHB-ES|3"
+							"subclassFeature": "Tigre|Bárbaro|SCAG-ES|Guerrero Totémico|PHB-ES|3|SCAG-ES"
 						}
 					]
 				}
 			]
 		},
 		{
-			"name": "Bear",
+			"name": "Oso",
 			"source": "PHB-ES",
 			"page": 50,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Guerrero Totémico",
 			"subclassSource": "PHB-ES",
-			"level": 6,
+			"level": 3,
 			"entries": [
-				"You gain the might of a bear. Your carrying capacity (including maximum load and maximum lift) is doubled, and you have advantage on Strength checks made to push, pull, lift, or break objects."
+				"Mientras estés enfurecido, posees resistencia contra todo el daño, excepto el psíquico. El espíritu del oso te da la dureza necesaria para aguantar cualquier castigo."
 			]
 		},
 		{
-			"name": "Eagle",
+			"name": "Águila",
 			"source": "PHB-ES",
 			"page": 50,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Guerrero Totémico",
 			"subclassSource": "PHB-ES",
-			"level": 6,
+			"level": 3,
 			"entries": [
-				"You gain the eyesight of an eagle. You can see up to 1 mile away with no difficulty, able to discern even fine details as though looking at something no more than 100 feet away from you. Additionally, dim light doesn't impose disadvantage on your Wisdom ({@skill Perception}) checks."
+				"Mientras estés enfurecido y no lleves armadura pesada, el resto de las criaturas tendrán desventaja en sus ataques de oportunidad contra ti y podrás usar la acción de {@action Correr|PHB-ES} como acción adicional durante tu turno. El espíritu del águila te convierte en un depredador capaz de moverse sin dificultad en medio del combate."
 			]
 		},
 		{
-			"name": "Wolf",
+			"name": "Alce",
+			"source": "SCAG-ES",
+			"page": 121,
+			"className": "Bárbaro",
+			"classSource": "SCAG-ES",
+			"subclassShortName": "Guerrero Totémico",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"entries": [
+				"Cuando estés enfurecido, tu velocidad caminando aumenta 15 pies si no llevas armadura pesada. El espíritu del alce te confiere una rapidez extraordinaria."
+			]
+		},
+		{
+			"name": "Tigre",
+			"source": "SCAG-ES",
+			"page": 121,
+			"className": "Bárbaro",
+			"classSource": "SCAG-ES",
+			"subclassShortName": "Guerrero Totémico",
+			"subclassSource": "PHB-ES",
+			"level": 3,
+			"entries": [
+				"Estando enfurecido, puedes sumar 10 pies a tu distancia de salto de longitud y 3 pies a la distancia de salto de altura. El espíritu del tigre fortalece tus saltos."
+			]
+		},
+		{
+			"name": "Lobo",
 			"source": "PHB-ES",
 			"page": 50,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Guerrero Totémico",
 			"subclassSource": "PHB-ES",
-			"level": 6,
+			"level": 3,
 			"entries": [
-				"You gain the hunting sensibilities of a wolf. You can track other creatures while traveling at a fast pace, and you can move stealthily while traveling at a normal pace."
+				"Mientras estés enfurecido, tus aliados tendrán ventaja en las tiradas de ataque cuerpo a cuerpo contra cualquier criatura que te sea hostil y esté a 5 pies o menos de ti. El espíritu del lobo te transforma en un líder de cazadores."
 			]
 		},
 		{
-			"name": "Aspect of the Beast",
+			"name": "Semblanza de la Bestia",
 			"source": "PHB-ES",
 			"page": 50,
 			"className": "Bárbaro",
@@ -1295,37 +1284,102 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"At 6th level, you gain a magical benefit based on the totem animal of your choice. You can choose the same animal you selected at 3rd level or a different one.",
+				"A nivel 6 recibes un poder mágico basado en un tótem animal de tu elección. Puedes volver a escoger el mismo animal que elegiste a nivel 3 o uno distinto.",
 				{
 					"type": "options",
 					"count": 1,
 					"entries": [
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Bear|Bárbaro|PHB-ES|Guerrero Totémico|PHB-ES|6"
+							"subclassFeature": "Águila|Bárbaro|PHB-ES|Guerrero Totémico|PHB-ES|6"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Eagle|Bárbaro|PHB-ES|Guerrero Totémico|PHB-ES|6"
+							"subclassFeature": "Alce|Bárbaro|SCAG-ES|Guerrero Totémico|PHB-ES|6|SCAG-ES"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Elk|Barbarian|SCAG|Guerrero Totémico|PHB-ES|6|SCAG-ES"
+							"subclassFeature": "Lobo|Bárbaro|PHB-ES|Guerrero Totémico|PHB-ES|6"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Tiger|Barbarian|SCAG|Guerrero Totémico|PHB-ES|6|SCAG-ES"
+							"subclassFeature": "Oso|Bárbaro|PHB-ES|Guerrero Totémico|PHB-ES|6"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Wolf|Bárbaro|PHB-ES|Guerrero Totémico|PHB-ES|6"
+							"subclassFeature": "Tigre|Bárbaro|SCAG-ES|Guerrero Totémico|PHB-ES|6|SCAG-ES"
 						}
 					]
 				}
 			]
 		},
 		{
-			"name": "Spirit Walker",
+			"name": "Oso",
+			"source": "PHB-ES",
+			"page": 50,
+			"className": "Bárbaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Guerrero Totémico",
+			"subclassSource": "PHB-ES",
+			"level": 6,
+			"entries": [
+				"Obtienes el poderío de un oso. Tu capacidad de carga se duplica, tanto para el peso que puedes llevar encima como para el que puedes empujar, arrastrar o levantar. Además, tienes ventaja en las pruebas de Fuerza hechas para levantar, romper, empujar o tirar de objetos."
+			]
+		},
+		{
+			"name": "Águila",
+			"source": "PHB-ES",
+			"page": 50,
+			"className": "Bárbaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Guerrero Totémico",
+			"subclassSource": "PHB-ES",
+			"level": 6,
+			"entries": [
+				"Obtienes la agudeza visual de un águila. Puedes ver hasta a 1 milla de distancia sin problemas y eres capaz de distinguir incluso los detalles más pequeños de los objetos que estén a 100 pies o menos de ti. Además, no sufres desventaja al hacer pruebas de Sabiduría ({@skill Percepción|PHB-ES}) con luz tenue."
+			]
+		},
+		{
+			"name": "Alce",
+			"source": "SCAG-ES",
+			"page": 122,
+			"className": "Bárbaro",
+			"classSource": "SCAG-ES",
+			"subclassShortName": "Guerrero Totémico",
+			"subclassSource": "PHB-ES",
+			"level": 6,
+			"entries": [
+				"Estés cabalgando o vayas a pie, tu ritmo de viaje se duplica, así como el de hasta diez compañeros que se encuentren a 60 pies o menos de ti y que no estén {@condition incapacitado|PHB-ES|incapacitados}. Consulta el capítulo 8 del {@i Player's Handbook} para obtener más información acerca del ritmo de viaje. El espíritu del alce te permite viajar mucho y con rapidez."
+			]
+		},
+		{
+			"name": "Tigre",
+			"source": "SCAG-ES",
+			"page": 122,
+			"className": "Bárbaro",
+			"classSource": "SCAG-ES",
+			"subclassShortName": "Guerrero Totémico",
+			"subclassSource": "PHB-ES",
+			"level": 6,
+			"entries": [
+				"Obtienes competencia en dos habilidades de esta lista: {@skill Atletismo|PHB-ES}, {@skill Acrobacias|PHB-ES}, {@skill Sigilo|PHB-ES} y {@skill Supervivencia|PHB-ES}. El espíritu felino perfecciona tus instintos de supervivencia."
+			]
+		},
+		{
+			"name": "Lobo",
+			"source": "PHB-ES",
+			"page": 50,
+			"className": "Bárbaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Guerrero Totémico",
+			"subclassSource": "PHB-ES",
+			"level": 6,
+			"entries": [
+				"Consigues el instinto para la caza de un lobo. Eres capaz de rastrear a otras criaturas mientras viajas a un ritmo rápido y puedes moverte con sigilo mientras viajas a un ritmo normal (el {@book capítulo 8: \"Aventuras\"|PHB-ES|8|velocidad|0} contiene las reglas relativas al ritmo de viaje)."
+			]
+		},
+		{
+			"name": "Caminante Espiritual",
 			"source": "PHB-ES",
 			"page": 50,
 			"className": "Bárbaro",
@@ -1335,50 +1389,11 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"At 10th level, you can cast the {@spell commune with nature} spell, but only as a ritual. When you do so, a spiritual version of one of the animals you chose for Totem Spirit or Aspect of the Beast appears to you to convey the information you seek."
+				"A nivel 10 eres capaz de lanzar el conjuro {@spell comunión con la naturaleza|PHB-ES}, pero solo como ritual. Cuando lo hagas, será una versión espiritual de uno de los animales que escogiste para los rasgos Espíritu Totémico o Semblanza de la Bestia quien te comunique la información que buscas."
 			]
 		},
 		{
-			"name": "Bear",
-			"source": "PHB-ES",
-			"page": 50,
-			"className": "Bárbaro",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Guerrero Totémico",
-			"subclassSource": "PHB-ES",
-			"level": 14,
-			"entries": [
-				"While you're raging, any creature within 5 feet of you that's hostile to you has disadvantage on attack rolls against targets other than you or another character with this feature. An enemy is immune to this effect if it can't see or hear you or if it can't be {@condition frightened}."
-			]
-		},
-		{
-			"name": "Eagle",
-			"source": "PHB-ES",
-			"page": 50,
-			"className": "Bárbaro",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Guerrero Totémico",
-			"subclassSource": "PHB-ES",
-			"level": 14,
-			"entries": [
-				"While raging, you have a flying speed equal to your current walking speed. This benefit works only in short bursts; you fall if you end your turn in the air and nothing else is holding you aloft."
-			]
-		},
-		{
-			"name": "Wolf",
-			"source": "PHB-ES",
-			"page": 50,
-			"className": "Bárbaro",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Guerrero Totémico",
-			"subclassSource": "PHB-ES",
-			"level": 14,
-			"entries": [
-				"While you're raging, you can use a bonus action on your turn to knock a Large or smaller creature {@condition prone} when you hit it with melee weapon attack."
-			]
-		},
-		{
-			"name": "Totemic Attunement",
+			"name": "Armonía Totémica",
 			"source": "PHB-ES",
 			"page": 50,
 			"className": "Bárbaro",
@@ -1388,37 +1403,102 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"At 14th level, you gain a magical benefit based on a totem animal of your choice. You can choose the same animal you selected previously or a different one.",
+				"A nivel 14 recibes un poder mágico basado en un tótem animal de tu elección, Puedes volver a escoger uno de los animales que elegiste anteriormente u otro distinto.",
 				{
 					"type": "options",
 					"count": 1,
 					"entries": [
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Bear|Bárbaro|PHB-ES|Guerrero Totémico|PHB-ES|14"
+							"subclassFeature": "Águila|Bárbaro|PHB-ES|Guerrero Totémico|PHB-ES|14"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Eagle|Bárbaro|PHB-ES|Guerrero Totémico|PHB-ES|14"
+							"subclassFeature": "Alce|Bárbaro|SCAG-ES|Guerrero Totémico|PHB-ES|14|SCAG-ES"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Elk|Barbarian|SCAG|Guerrero Totémico|PHB-ES|14|SCAG-ES"
+							"subclassFeature": "Lobo|Bárbaro|PHB-ES|Guerrero Totémico|PHB-ES|14"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Tiger|Barbarian|SCAG|Guerrero Totémico|PHB-ES|14|SCAG-ES"
+							"subclassFeature": "Oso|Bárbaro|PHB-ES|Guerrero Totémico|PHB-ES|14"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Wolf|Bárbaro|PHB-ES|Guerrero Totémico|PHB-ES|14"
+							"subclassFeature": "Tigre|Bárbaro|SCAG-ES|Guerrero Totémico|PHB-ES|14|SCAG-ES"
 						}
 					]
 				}
 			]
 		},
 		{
-			"name": "Path of the Battlerager",
+			"name": "Oso",
+			"source": "PHB-ES",
+			"page": 50,
+			"className": "Bárbaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Guerrero Totémico",
+			"subclassSource": "PHB-ES",
+			"level": 14,
+			"entries": [
+				"Mientras estés enfurecido, cualquier criatura que te sea hostil que se encuentre a 5 pies o menos de ti tendrá desventaja en las tiradas de ataque contra objetivos que no seáis ni tu ni otro personaje con este rasgo. Los enemigos que no puedan verte ni oírte o no puedan ser {@condition Asustado|PHB-ES|asustados} son inmunes a este efecto."
+			]
+		},
+		{
+			"name": "Águila",
+			"source": "PHB-ES",
+			"page": 50,
+			"className": "Bárbaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Guerrero Totémico",
+			"subclassSource": "PHB-ES",
+			"level": 14,
+			"entries": [
+				"Mientras estés enfurecido, tendrás una velocidad volando igual a tu velocidad caminando actual. Esta capacidad se basa en impulsos breves, por lo que caerás si terminas tu turno en el aire y no hay nada que te sujete."
+			]
+		},
+		{
+			"name": "Alce",
+			"source": "SCAG-ES",
+			"page": 122,
+			"className": "Bárbaro",
+			"classSource": "SCAG-ES",
+			"subclassShortName": "Guerrero Totémico",
+			"subclassSource": "PHB-ES",
+			"level": 14,
+			"entries": [
+				"Si estás enfurecido, puedes usar una acción adicional mientras te mueves para atravesar el espacio de una criatura Grande o más pequeña. La criatura debe superar una tirada de salvación de Fuerza (CD 8 + tu bonificador de Fuerza +tu bonificador por competencia) o será {@condition derribado|PHB-ES|derribaba} y recibirá un daño contundente equivalente a {@dice 1d12} + tu modificador de Fuerza."
+			]
+		},
+		{
+			"name": "Tigre",
+			"source": "SCAG-ES",
+			"page": 122,
+			"className": "Bárbaro",
+			"classSource": "SCAG-ES",
+			"subclassShortName": "Guerrero Totémico",
+			"subclassSource": "PHB-ES",
+			"level": 14,
+			"entries": [
+				"Mientras estás enfurecido, si te mueves como mínimo 20 pies en línea recta hacia un objetivo Grande o más pequeño justo antes de atacarlo con un ataque con arma cuerpo a cuerpo, puedes emplear una acción adicional para atacarle otra vez con un ataque con arma cuerpo a cuerpo."
+			]
+		},
+		{
+			"name": "Lobo",
+			"source": "PHB-ES",
+			"page": 50,
+			"className": "Bárbaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Guerrero Totémico",
+			"subclassSource": "PHB-ES",
+			"level": 14,
+			"entries": [
+				"Mientras estés enfurecido, cuando impactes a una criatura Grande o más pequeña con un ataque con arma cuerpo a cuerpo durante tu turno, podrás usar una acción adicional para {@condition Derribado|PHB-ES|derribarla}."
+			]
+		},
+		{
+			"name": "Senda del Camorrista",
 			"source": "SCAG-ES",
 			"page": 121,
 			"className": "Bárbaro",
@@ -1427,19 +1507,19 @@
 			"subclassSource": "SCAG-ES",
 			"level": 3,
 			"entries": [
-				"Known as Kuldjargh (literally \"axe idiot\") in Dwarvish, battleragers are dwarf followers of the gods of war and take the Path of the Battlerager. They specialize in wearing bulky, {@item spiked armor|scag} and throwing themselves into combat, striking with their body itself and giving themselves over to the fury of battle.",
+				"Conocidos en enano como kuldjargh (literalmente, \"idiota con hacha\"), los camorristas son los seguidores enanos de los dioses de la guerra y siguen la Senda del Camorrista. Se especializan en llevar una {@item armadura con pinchos|SCAG-ES|armadura voluminosa y llena de pinchos} y en lanzarse al combate, golpeando con sus propios cuerpos y dejándose arrastrar por la furia de la batalla.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Restriction—Dwarves Only|Bárbaro|PHB-ES|Camorrista|SCAG-ES|3"
+					"subclassFeature": "Restricción: Solo enanos|Bárbaro|PHB-ES|Camorrista|SCAG-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Battlerager Armor|Bárbaro|PHB-ES|Camorrista|SCAG-ES|3"
+					"subclassFeature": "Armadura de Camorrista|Bárbaro|PHB-ES|Camorrista|SCAG-ES|3"
 				}
 			]
 		},
 		{
-			"name": "Battlerager Armor",
+			"name": "Armadura de Camorrista",
 			"source": "SCAG-ES",
 			"page": 121,
 			"className": "Bárbaro",
@@ -1449,13 +1529,13 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"When you choose this path at 3rd level, you gain the ability to use {@item spiked armor|scag} as a weapon.",
-				"While you are wearing {@item spiked armor|scag} and are raging, you can use a bonus action to make one melee weapon attack with your armor spikes at a target within 5 feet of you. If the attack hits, the spikes deal {@damage 1d4} piercing damage. You use your Strength modifier for the attack and damage rolls.",
-				"Additionally, when you use the {@action Attack} action to grapple a creature, the target takes 3 piercing damage if your grapple check succeeds."
+				"A nivel 3, cuando escoges esta senda, obtienes la habilidad de usar {@item armadura con pinchos|SCAG-ES} como arma.",
+				"Mientras llevas {@item armadura con pinchos|SCAG-ES} y estás enfurecido, puedes utilizar una acción adicional para hacer un ataque con arma cuerpo a cuerpo empleando los pinchos de tu armadura contra un objetivo que se encuentre a 5 pies o menos de ti. Si el ataque impacta, los pinchos infligen {@damage 1d4} de daño perforante. Usas el modificador de Fuerza para las tiradas de ataque y de daño.",
+				"Además, cuando utilizas una acción de {@action Atacar|PHB-ES|Ataque} para agarrar a una criatura, el objetivo recibe 3 de daño perforante si superas la prueba de agarrar."
 			]
 		},
 		{
-			"name": "Restriction—Dwarves Only",
+			"name": "Restricción: Solo enanos",
 			"source": "SCAG-ES",
 			"page": 121,
 			"className": "Bárbaro",
@@ -1465,12 +1545,12 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Only dwarves can follow the Path of the Battlerager. The battlerager fills a particular niche in dwarven society and culture.",
-				"Your DM can lift this restriction to better suit the campaign. The restriction exists for the Forgotten Realms. It might not apply to your DM's setting or your DM's version of the Realms."
+				"Solo los enanos pueden seguir la Senda del Camorrista. Un camorrista ocupa un lugar concreto en la sociedad y la cultura de los enanos.",
+				"Tu DM puede eliminar esta restricción para que encaje con su campaña. La restricción existe en Reinos Olvidados. Puede que no se aplique a la ambientación de tu DM o a la versión de los Reinos de tu DM."
 			]
 		},
 		{
-			"name": "Reckless Abandon",
+			"name": "Desenfreno Temerario",
 			"source": "SCAG-ES",
 			"page": 121,
 			"className": "Bárbaro",
@@ -1480,11 +1560,11 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"Beginning at 6th level, when you use Reckless Attack while raging, you also gain temporary hit points equal to your Constitution modifier (minimum of 1). They vanish if any of them are left when your rage ends."
+				"A partir del nivel 6, cuando uses Ataque Temerario estando enfurecido, también ganas tantos puntos de golpe temporales como tu modificador de Constitución (1 como mínimo). Si queda algún punto de golpe temporal cuando acaba la furia, se desvanece."
 			]
 		},
 		{
-			"name": "Battlerager Charge",
+			"name": "Carga de Camorrista",
 			"source": "SCAG-ES",
 			"page": 121,
 			"className": "Bárbaro",
@@ -1494,11 +1574,11 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"Beginning at 10th level, you can take the {@action Dash} action as a bonus action while you are raging."
+				"A partir del nivel 10, puedes usar {@action Correr|PHB-ES} como acción adicional mientras estás enfurecido."
 			]
 		},
 		{
-			"name": "Spiked Retribution",
+			"name": "Castigo Punzante",
 			"source": "SCAG-ES",
 			"page": 121,
 			"className": "Bárbaro",
@@ -1508,11 +1588,11 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Starting at 14th level, when a creature within 5 feet of you hits you with a melee attack, the attacker takes 3 piercing damage if you are raging, aren't {@condition incapacitated}, and are wearing {@item spiked armor|scag}."
+				"A partir del nivel 14, cuando una criatura que se encuentra a 5 pies o menos de ti te golpea con un ataque cuerpo a cuerpo, dicho atacante recibe 3 de daño perforante si estás enfurecido, no estás {@condition incapacitado|PHB-ES} y llevas {@item armadura con pinchos|SCAG-ES}."
 			]
 		},
 		{
-			"name": "Path of the Beast",
+			"name": "Senda de la Bestia",
 			"source": "TCE-ES",
 			"page": 24,
 			"className": "Bárbaro",
@@ -1521,14 +1601,14 @@
 			"subclassSource": "TCE-ES",
 			"level": 3,
 			"entries": [
-				"Barbarians who walk the Path of the Beast draw their rage from a bestial spark burning within their souls. That beast bursts forth in the throes of rage, physically transforming the barbarian.",
-				"Such a barbarian might be inhabited by a primal spirit or be descended from shape-shifters. You can choose the origin of your feral might or determine it by rolling on the Origin of the Beast table.",
+				"Los bárbaros que recorren la Senda de la Bestia obtienen su furia de una chispa bestial que arde en sus almas. Esa bestia estalla en un ataque de furia y transforma físicamente al bárbaro.",
+				"Los bárbaros de este tipo podrían albergar en su interior un espíritu primordial o descender de un cambiaformas. Puedes elegir el origen de tu fuerza salvaje o determinarlo con una tirada en la tabla \"Origen de la bestia\".",
 				{
 					"type": "table",
-					"caption": "Origin of the Beast",
+					"caption": "Origen de la bestia",
 					"colLabels": [
 						"d4",
-						"Origin"
+						"Origen"
 					],
 					"colStyles": [
 						"col-2 text-center",
@@ -1537,30 +1617,30 @@
 					"rows": [
 						[
 							"1",
-							"One of your parents is a lycanthrope, and you've inherited some of their curse."
+							"Uno de tus padres es un licántropo y has heredado parte de su maldición."
 						],
 						[
 							"2",
-							"You are descended from an archdruid and inherited the ability to partially change shape."
+							"Desciendes de un archidruida y has heredado su capacidad de cambiar de forma parcialmente."
 						],
 						[
 							"3",
-							"A fey spirit gifted you with the ability to adopt different bestial aspects."
+							"Un espíritu feérico te concedió la capacidad de adoptar distintas formas de bestia."
 						],
 						[
 							"4",
-							"An ancient animal spirit dwells within you, allowing you to walk this path."
+							"En tu interior reside un espíritu animal ancestral que te permite recorrer esta senda."
 						]
 					]
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Form of the Beast|Bárbaro|PHB-ES|Bestia|TCE-ES|3"
+					"subclassFeature": "Forma de la Bestia|Bárbaro|PHB-ES|Bestia|TCE-ES|3"
 				}
 			]
 		},
 		{
-			"name": "Form of the Beast",
+			"name": "Forma de la Bestia",
 			"source": "TCE-ES",
 			"page": 24,
 			"className": "Bárbaro",
@@ -1570,36 +1650,36 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"{@i 3rd-level Path of the Beast feature}",
-				"When you enter your rage, you can transform, revealing the bestial power within you. Until the rage ends, you manifest a natural weapon. It counts as a simple melee weapon for you, and you add your Strength modifier to the attack and damage rolls when you attack with it, as normal.",
-				"You choose the weapon's form each time you rage:",
+				"{@i Rasgo de la Senda de la Bestia de nivel 3}",
+				"Cuando te dejas llevar por la furia, puedes transformarte y mostrar el poder bestial que albergas en tu interior. Hasta que la furia termine, manifestarás un arma natural. Para ti es como un arma cuerpo a cuerpo sencilla y añadirás tu modificador por Fuerza a las tiradas de ataque y daño cuando atacas con ella, como es habitual.",
+				"Cada vez que te dejas llevar por la furia, eliges la forma del arma:",
 				{
 					"type": "list",
 					"style": "list-hang-notitle",
 					"items": [
 						{
 							"type": "item",
-							"name": "Bite",
-							"entry": "Your mouth transforms into a bestial muzzle or great mandibles (your choice). It deals {@damage 1d8} piercing damage on a hit. Once on each of your turns when you damage a creature with this bite, you regain a number of hit points equal to your proficiency bonus, provided you have less than half your hit points when you hit."
+							"name": "Mordisco",
+							"entry": "Tu boca se transforma en un hocico bestial o en unas mandíbulas enormes (a tu elección). Causa {@damage 1d8} de daño perforante al impactar. Una vez en cada uno de tus turnos, cuando causes daño a una criatura con este mordisco, recuperarás una cantidad de puntos de golpe igual a tu bonificador por competencia, siempre que tengas menos de la mitad de los puntos de golpe al impactar."
 						},
 						{
 							"type": "item",
-							"name": "Claws",
-							"entry": "Each of your hands transforms into a claw, which you can use as a weapon if it's empty. It deals {@damage 1d6} slashing damage on a hit. Once on each of your turns when you attack with a claw using the {@action Attack} action, you can make one additional claw attack as part of the same action."
+							"name": "Garras",
+							"entry": "Cada una de tus manos se transforma en una garra que puedes utilizar como arma si está vacía. Causa {@damage 1d6} de daño cortante al impactar. Una vez en cada uno de tus turnos, cuando ataques con una de las garras con la acción de {@action Atacar|PHB-ES}, podrás hacer un ataque de garra adicional como parte de la misma acción."
 						},
 						{
 							"type": "item",
-							"name": "Tail",
-							"entry": "You grow a lashing, spiny tail, which deals {@damage 1d8} piercing damage on a hit and has the reach property. If a creature you can see within 10 feet of you hits you with an attack roll, you can use your reaction to swipe your tail and roll a {@dice d8}, applying a bonus to your AC equal to the number rolled, potentially causing the attack to miss you."
+							"name": "Cola",
+							"entry": "Te crece una cola látigo cubierta de espinas que causa {@damage 1d8} de daño perforante al impactar y tiene la propiedad \"alcance\". Si una criatura que puedas ver a 10 pies o menos de ti te impacta con una tirada de ataque, puedes usar tu reacción para mover tu cola y tirar {@dice 1d8}, aplicando un bonificador a tu CA igual al resultado, lo que podría hacer que falle."
 						}
 					]
 				}
 			]
 		},
 		{
-			"name": "Bestial Soul",
+			"name": "Alma Bestial",
 			"source": "TCE-ES",
-			"page": 24,
+			"page": 25,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Bestia",
@@ -1607,23 +1687,23 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"{@i 6th-level Path of the Beast feature}",
-				"The feral power within you increases, causing the natural weapons of your Form of the Beast to count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.",
-				"You can also alter your form to help you adapt to your surroundings. When you finish a short or long rest, choose one of the following benefits, which lasts until you finish your next short or long rest:",
+				"{@i Rasgo de la Senda de la Bestia de nivel 6}",
+				"El poder salvaje de tu interior aumenta, por lo que ahora las armas naturales de tu Forma de la Bestia se consideran mágicas en lo que respecta a ignorar la resistencia y la inmunidad contra daño y ataques no mágicos.",
+				"También podrás modificar tu forma para que te ayude a adaptarte a tu entorno. Tras finalizar un descanso corto o largo, elige uno de los siguientes beneficios, que durará hasta que finalices tu siguiente descanso corto o largo:",
 				{
 					"type": "list",
 					"items": [
-						"You gain a swimming speed equal to your walking speed, and you can breathe underwater.",
-						"You gain a climbing speed equal to your walking speed, and you can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
-						"When you jump, you can make a Strength ({@skill Athletics}) check and extend your jump by a number of feet equal to the check's total. You can make this special check only once per turn."
+						"Obtienes una velocidad nadando igual a tu velocidad caminando y puedes respirar bajo el agua.",
+						"Obtienes una velocidad trepando igual a tu velocidad caminando y puedes trepar por superficies difíciles e incluso recorrer techos boca abajo sin tener que realizar pruebas de característica.",
+						"Cuando saltas, puedes realizar una prueba de Fuerza ({@skill Atletismo|PHB-ES}) y ampliar tu salto una cantidad de pies igual al resultado de la prueba. Solo puedes usar esta prueba especial una vez por turno."
 					]
 				}
 			]
 		},
 		{
-			"name": "Infectious Fury",
+			"name": "Furia Infecciosa",
 			"source": "TCE-ES",
-			"page": 24,
+			"page": 25,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Bestia",
@@ -1631,22 +1711,22 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"{@i 10th-level Path of the Beast feature}",
-				"When you hit a creature with your natural weapons while you are raging, the beast within you can curse your target with rabid fury. The target must succeed on a Wisdom saving throw (DC equal to 8 + your Constitution modifier + your proficiency bonus) or suffer one of the following effects (your choice):",
+				"{@i Rasgo de la Senda de la Bestia de nivel 10}",
+				"Cuando impactas a una criatura con tus armas naturales mientras estás enfurecido, la bestia que albergas en tu interior puede maldecir al objetivo con una ira furibunda. El objetivo deberá tener éxito en una tirada de salvación de Sabiduría (CD igual a 8 + tu modificador por Constitución + tu bonificador por competencia) o sufrirá uno de los siguientes efectos (a tu elección):",
 				{
 					"type": "list",
 					"items": [
-						"The target must use its reaction to make a melee attack against another creature of your choice that you can see.",
-						"The target takes {@damage 2d12} psychic damage."
+						"El objetivo debe usar su reacción para realizar un ataque cuerpo a cuerpo contra otra criatura de tu elección que puedas ver.",
+						"El objetivo recibe {@damage 2d12} de daño psíquico."
 					]
 				},
-				"You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+				"Puedes usar este rasgo una cantidad de veces igual a tu bonificador por competencia y recuperas todos los usos tras finalizar un descanso largo."
 			]
 		},
 		{
-			"name": "Call the Hunt",
+			"name": "Llamada a la Caza",
 			"source": "TCE-ES",
-			"page": 24,
+			"page": 25,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Bestia",
@@ -1654,14 +1734,14 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"{@i 14th-level Path of the Beast feature}",
-				"The beast within you grows so powerful that you can spread its ferocity to others and gain resilience from them joining your hunt. When you enter your rage, you can choose a number of other willing creatures you can see within 30 feet of you equal to your Constitution modifier (minimum of one creature).",
-				"You gain 5 temporary hit points for each creature that accepts this feature. Until the rage ends, the chosen creatures can each use the following benefit once on each of their turns: when the creature hits a target with an attack roll and deals damage to it, the creature can roll a {@dice d6} and gain a bonus to the damage equal to the number rolled.",
-				"You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+				"{@i Rasgo de la Senda de la Bestia de nivel 14}",
+				"La bestia que albergas en tu interior se vuelve tan poderosa que puedes transmitir su ferocidad a otros y conseguir resistencia de ellos cuando se unen a tu caza. Cuando te dejas llevar por la furia, puedes elegir una cantidad de otras criaturas voluntarias que puedas ver a 30 pies o menos de ti igual a tu modificador por Constitución (mínimo una criatura).",
+				"Ganas 5 puntos de golpe temporales por cada criatura que acepte este rasgo. Hasta que la furia termine, las criaturas elegidas podrán usar el siguiente beneficio una vez en cada uno de sus turnos: cuando la criatura impacte a un objetivo con una tirada de ataque y le cause daño, podrá lanzar {@dice 1d6} y ganará un bonificador al daño igual al resultado.",
+				"Puedes usar este rasgo una cantidad de veces igual a tu bonificador por competencia y recuperas todos los usos tras finalizar un descanso largo."
 			]
 		},
 		{
-			"name": "Path of Wild Magic",
+			"name": "Senda de la Magia Salvaje",
 			"source": "TCE-ES",
 			"page": 25,
 			"className": "Bárbaro",
@@ -1670,19 +1750,19 @@
 			"subclassSource": "TCE-ES",
 			"level": 3,
 			"entries": [
-				"Many places in the multiverse abound with beauty, intense emotion, and rampant magic; the Feywild, the Upper Planes, and other realms of supernatural power radiate with such forces and can profoundly influence people. As folk of deep feeling, barbarians are especially susceptible to these wild influences, with some barbarians being transformed by the magic. These magic-suffused barbarians walk the Path of Wild Magic. Elf, tiefling, aasimar, and genasi barbarians often seek this path, eager to manifest the otherworldly magic of their ancestors.",
+				"La belleza, la emoción y la magia abundan en muchos lugares del multiverso: Feywild, los Planos Superiores y otros reinos de poder sobrenatural rebosan de dichas fuerzas y pueden ejercer una gran influencia en la gente. Los bárbaros, un pueblo de sentimientos muy intensos, son especialmente susceptibles a estas influencias salvajes. Tanto que, a veces, alguno de ellos se ve transformado por la magia. Estos bárbaros henchidos de magia recorren la Senda de la Magia Salvaje. Los bárbaros elfos, tieflings, aasimar y genasi suelen buscar este camino, deseosos de manifestar la magia mística de sus ancestros.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Magic Awareness|Bárbaro|PHB-ES|Magia Salvaje|TCE-ES|3"
+					"subclassFeature": "Conciencia Mágica|Bárbaro|PHB-ES|Magia Salvaje|TCE-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Wild Surge|Bárbaro|PHB-ES|Magia Salvaje|TCE-ES|3"
+					"subclassFeature": "Oleada Salvaje|Bárbaro|PHB-ES|Magia Salvaje|TCE-ES|3"
 				}
 			]
 		},
 		{
-			"name": "Magic Awareness",
+			"name": "Conciencia Mágica",
 			"source": "TCE-ES",
 			"page": 25,
 			"className": "Bárbaro",
@@ -1692,13 +1772,13 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"{@i 3rd-level Path of Wild Magic feature}",
-				"As an action, you can open your awareness to the presence of concentrated magic. Until the end of your next turn, you know the location of any spell or magic item within 60 feet of you that isn't behind total cover. When you sense a spell, you learn which school of magic it belongs to.",
-				"You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+				"{@i Rasgo de la Senda de la Magia Salvaje de nivel 3}",
+				"Como acción, puedes abrir tu conciencia a la presencia de magia concentrada. Hasta el final del siguiente turno, sabrás la ubicación de cualquier conjuro u objeto mágico que esté a 60 pies o menos de ti y que no se encuentre tras una cobertura completa. Cuando percibes un conjuro, sabes a qué escuela mágica pertenece.",
+				"Puedes usar este rasgo una cantidad de veces igual a tu bonificador por competencia y recuperas todos los usos tras finalizar un descanso largo."
 			]
 		},
 		{
-			"name": "Wild Surge",
+			"name": "Oleada Salvaje",
 			"source": "TCE-ES",
 			"page": 25,
 			"className": "Bárbaro",
@@ -1708,15 +1788,15 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"{@i 3rd-level Path of Wild Magic feature}",
-				"The magical energy roiling inside you sometimes erupts from you. When you enter your rage, roll on the Wild Magic table to determine the magical effect produced.",
-				"If the effect requires a saving throw, the DC equals 8 + your proficiency bonus + your Constitution modifier.",
+				"{@i Rasgo de la Senda de la Magia Salvaje de nivel 3}",
+				"La energía mágica que borbotea en tu interior a veces se desborda. Cuando te dejes llevar por la furia, haz una tirada en la tabla \"Magia Salvaje\" para determinar el efecto mágico producido.",
+				"Si el efecto obliga a hacer una tirada de salvación, tu CD es igual a 8 + tu bonificador por Competencia + tu modificador por Constitución.",
 				{
 					"type": "table",
-					"caption": "Wild Magic",
+					"caption": "Magia Salvaje",
 					"colLabels": [
 						"d8",
-						"Magical Effect"
+						"Efecto mágico"
 					],
 					"colStyles": [
 						"col-2 text-center",
@@ -1725,35 +1805,35 @@
 					"rows": [
 						[
 							"1",
-							"Shadowy tendrils lash around you. Each creature of your choice that you can see within 30 feet of you must succeed on a Constitution saving throw or take {@damage 1d12} necrotic damage. You also gain {@dice 1d12} temporary hit points."
+							"Unos zarcillos sombríos dan latigazos a tu alrededor Cada criatura de tu elección que puedas ver a 30 pies o menos de ti deberá tener éxito en una tirada de salvación de Constitución o sufrirá {@damage 1d12} de daño necrótico. También ganas {@dice 1d12} puntos de golpe temporales."
 						],
 						[
 							"2",
-							"You teleport up to 30 feet to an unoccupied space you can see. Until your rage ends, you can use this effect again on each of your turns as a bonus action."
+							"Te teletransportas un máximo de 30 pies hasta un espacio sin ocupar que puedas ver, Hasta que finalice tu furia, podrás volver a usar este efecto en cada uno de tus turnos como acción adicional."
 						],
 						[
 							"3",
-							"An intangible spirit, which looks like a {@creature flumph} or a {@creature pixie} (your choice), appears within 5 feet of one creature of your choice that you can see within 30 feet of you. At the end of the current turn, the spirit explodes, and each creature within 5 feet of it must succeed on a Dexterity saving throw or take {@damage 1d6} force damage. Until your rage ends, you can use this effect again, summoning another spirit, on each of your turns as a bonus action."
+							"Un espíritu intangible, con aspecto de {@creature flumph|MM-ES} a {@creature pixie|MM-ES} (a tu elección), aparece a 5 pies o menos de una criatura de tu elección que puedas ver a 30 pies o menos de tu Al final de ese turno, el espíritu explota y cada criatura que esté a 5 pies o menos de él deberá tener éxito en una tirada de salvación de Destreza o recibirá {@damage 1d6} de daño de fuerza. Hasta que finalice tu furia, podrás volver a usar este efecto e invocar a otro espíritu en cada uno de tus turnos como acción adicional."
 						],
 						[
 							"4",
-							"Magic infuses one weapon of your choice that you are holding. Until your rage ends, the weapon's damage type changes to force, and it gains the light and thrown properties, with a normal range of 20 feet and a long range of 60 feet. If the weapon leaves your hand, the weapon reappears in your hand at the end of the current turn."
+							"La magia imbuye un arma de tu elección que sostengas. Hasta que finalice tu furia, el tipo de daño del arma cambiará a fuerza y tendrá las propiedades \"ligera\" y \"arrojadiza\", con un alcance normal de 20 pies y un alcance largo de 60. Si el arma abandona tu mano, volverá a aparecer en ella al final de ese turno."
 						],
 						[
 							"5",
-							"Whenever a creature hits you with an attack roll before your rage ends, that creature takes {@damage 1d6} force damage, as magic lashes out in retribution."
+							"Cuando una criatura te impacte con una tirada de ata- que antes de que finalice tu furia, recibirá {@damage 1d6} de daño de fuerza, ya que la magia la atacará como castigo."
 						],
 						[
 							"6",
-							"Until your rage ends, you are surrounded by multi colored, protective lights; you gain a +1 bonus to AC, and while within 10 feet of you, your allies gain the same bonus."
+							"Hasta que finalice tu furia, estarás rodeado de luces protectoras de varios colores; obtienes un bonificador de +1 a la CA y tus aliados obtendrán lo mismo mientras estén a 10 pies o menos de ti."
 						],
 						[
 							"7",
-							"Flowers and vines temporarily grow around you. Until your rage ends, the ground within 15 feet of you is {@quickref difficult terrain||3} for your enemies."
+							"A tu alrededor, crecen temporalmente flores y parras; hasta que finalice tu furia, el suelo a 15 pies o menos de ti será {@book terreno difícil|PHB-ES|9|terreno difícil} para tus enemigos."
 						],
 						[
 							"8",
-							"A bolt of light shoots from your chest. Another creature of your choice that you can see within 30 feet of you must succeed on a Constitution saving throw or take {@damage 1d6} radiant damage and be {@condition blinded} until the start of your next turn. Until your rage ends, you can use this effect again on each of your turns as a bonus action."
+							"De tu pecho sale un rayo de luz. Otra criatura de tu elección que puedas ver a 30 pies o menos de ti deberá tener éxito en una tirada de salvación de Constitución o sufrirá {@damage 1d6} de daño radiante y quedará {@condition cegado|PHB-ES|cegada} hasta el principio de tu siguiente turno. Hasta que finalice tu furia, podrás volver a usar este efecto en cada uno de tus turnos como acción adicional."
 						]
 					],
 					"data": {
@@ -1763,9 +1843,9 @@
 			]
 		},
 		{
-			"name": "Bolstering Magic",
+			"name": "Magia Estimulante",
 			"source": "TCE-ES",
-			"page": 25,
+			"page": 26,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Magia Salvaje",
@@ -1773,22 +1853,22 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"{@i 6th-level Path of Wild Magic feature}",
-				"You can harness your wild magic to bolster yourself or a companion. As an action, you can touch one creature (which can be yourself) and confer one of the following benefits of your choice to that creature:",
+				"{@i Rasgo de la Senda de la Magia Salvaje de nivel 6}",
+				"Puedes aprovechar tu magia salvaje para levantar la moral de un compañero o la tuya propia. Como acción, puedes tocar a una criatura (que puedes ser tu) y conferirle uno de los siguientes beneficios de tu elección:",
 				{
 					"type": "list",
 					"items": [
-						"For 10 minutes, the creature can roll a {@dice d3} whenever making an attack roll or an ability check and add the number rolled to the {@dice d20} roll.",
-						"Roll a {@dice d3}. The creature regains one expended spell slot, the level of which equals the number rolled or lower (the creature's choice). Once a creature receives this benefit, that creature can't receive it again until after a long rest."
+						"Durante 10 minutos, la criatura podrá tirar {@dice 1d3} cada vez que haga una tirada de ataque o una prueba de característica y añadir el resultado al resultado del {@dice d20}.",
+						"Tira {@dice 1d3}. La criatura recuperará un espacio de conjuro gastado, cuyo nivel será igual al resultado de la tirada o inferior (a elección de la criatura). Una vez que la criatura reciba este beneficio, no podrá volver a recibirlo hasta que realice un descanso largo."
 					]
 				},
-				"You can take this action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+				"Puedes realizar esta acción una cantidad de veces igual a tu bonificador por competencia y recuperas todos los usos tras finalizar un descanso largo."
 			]
 		},
 		{
-			"name": "Unstable Backlash",
+			"name": "Reacción Inestable",
 			"source": "TCE-ES",
-			"page": 25,
+			"page": 26,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Magia Salvaje",
@@ -1796,14 +1876,14 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"{@i 10th-level Path of Wild Magic feature}",
-				"When you are imperiled during your rage, the magic within you can lash out; immediately after you take damage or fail a saving throw while raging, you can use your reaction to roll on the Wild Magic table and immediately produce the effect rolled. This effect replaces your current Wild Magic effect."
+				"{@i Rasgo de la Senda de la Magia Salvaje de nivel 10}",
+				"Si te encuentras en peligro durante tu furia, puedes desatar la magia que albergas: justo después de que recibas daño o falles una tirada de salvación mientras estés enfurecido, puedes usar tu reacción para hacer una tirada en la tabla \"Magia Salvaje\" y el efecto de la tirada se producirá de inmediato. Este efecto sustituirá al efecto de Magia Salvaje que tengas en ese momento."
 			]
 		},
 		{
-			"name": "Controlled Surge",
+			"name": "Oleada Controlada",
 			"source": "TCE-ES",
-			"page": 25,
+			"page": 26,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Magia Salvaje",
@@ -1811,32 +1891,32 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"{@i 14th-level Path of Wild Magic feature}",
-				"Whenever you roll on the Wild Magic table, you can roll the die twice and choose which of the two effects to unleash. If you roll the same number on both dice, you can ignore the number and choose any effect on the table."
+				"{@i Rasgo de la Senda de la Magia Salvaje de Nivel 14}",
+				"Siempre que hagas una tirada en la tabla \"Magia Salvaje\" tirarás el dado dos veces y elegirás cuál de los dos efectos quieres. Si obtienes el resultado en ambos dados, puedes ignorarlo y elegir cualquier efecto de la tabla."
 			]
 		},
 		{
-			"name": "Path of the Ancestral Guardian",
+			"name": "Senda del Guardián Ancestral",
 			"source": "XGE-ES",
-			"page": 9,
+			"page": 10,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Guardián Ancestral",
 			"subclassSource": "XGE-ES",
 			"level": 3,
 			"entries": [
-				"Some barbarians hail from cultures that revere their ancestors. These tribes teach that the warriors of the past linger in the world as mighty spirits, who can guide and protect the living. When a barbarian who follows this path rages, the barbarian contacts the spirit world and calls on these guardian spirits for aid.",
-				"Barbarians who draw on their ancestral guardians can better fight to protect their tribes and their allies. In order to cement ties to their ancestral guardians, barbarians who follow this path cover themselves in elaborate tattoos that celebrate their ancestors' deeds. These tattoos tell sagas of victories against terrible monsters and other fearsome rivals.",
+				"Algunos bárbaros descienden de culturas que veneran a sus ancestros. Estas tribus enseñan que los guerreros del pasado permanecen en el mundo como poderosos espíritus, de modo que pueden guiar y proteger a los vivos. Cuando uno de los seguidores de esta senda se enfurece, entra en contacto con el mundo de los espíritus y recurre a la ayuda de estos guardianes.",
+				"Los bárbaros que buscan el apoyo de estos espíritus ancestrales son más capaces de proteger a sus tribus y a sus aliados. Para afianzar los vínculos con estos guardianes, los bárbaros que siguen esta senda se cubren de elaborados tatuajes en homenaje a las gestas de sus ancestros. Estos dibujos cuentan sagas de victorias contra monstruos terribles y rivales imponentes.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Ancestral Protectors|Bárbaro|PHB-ES|Guardián Ancestral|XGE-ES|3"
+					"subclassFeature": "Protectores Ancestrales|Bárbaro|PHB-ES|Guardián Ancestral|XGE-ES|3"
 				}
 			]
 		},
 		{
-			"name": "Ancestral Protectors",
+			"name": "Protectores Ancestrales",
 			"source": "XGE-ES",
-			"page": 9,
+			"page": 10,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Guardián Ancestral",
@@ -1844,13 +1924,13 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Starting when you choose this path at 3rd level, spectral warriors appear when you enter your rage. While you're raging, the first creature you hit with an attack on your turn becomes the target of the warriors, which hinder its attacks. Until the start of your next turn, that target has disadvantage on any attack roll that isn't against you, and when the target hits a creature other than you with an attack, that creature has resistance to the damage dealt by the attack. The effect on the target ends early if your rage ends."
+				"Desde el momento en que elijas esta senda a nivel 3, cada vez que te enfurezcas aparecerán guerreros espectrales. Mientras estés en ese estado, la primera criatura que impactes con un ataque en tu turno se convertirá en el objetivo de estos espíritus, que entorpecerán sus ataques. Hasta el principio de tu siguiente turno, el objetivo tiene desventaja en cualquier tirada de ataque que no sea contra ti y, además, cuando golpee a una criatura que no seas tú con un ataque, esta última disfrutará de resistencia contra el daño de dicho ataque. Este efecto finaliza antes de tiempo si tu furia termina."
 			]
 		},
 		{
-			"name": "Spirit Shield",
+			"name": "Escudo de los Espíritus",
 			"source": "XGE-ES",
-			"page": 9,
+			"page": 10,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Guardián Ancestral",
@@ -1858,14 +1938,14 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"Beginning at 6th level, the guardian spirits that aid you can provide supernatural protection to those you defend. If you are raging and another creature you can see within 30 feet of you takes damage, you can use your reaction to reduce that damage by {@dice 2d6}.",
-				"When you reach certain levels in this class, you can reduce the damage by more: by {@dice 3d6} at 10th level and by {@dice 4d6} at 14th level."
+				"A partir de nivel 6, tus espíritus guardianes pueden otorgar una protección sobrenatural a aquellos que defiendas. Si estás enfurecido y otra criatura que puedas ver y se encuentre a 30 pies o menos de ti recibe daño, puedes usar tu reacción para reducir ese daño en {@dice 2d6}.",
+				"Según alcances ciertos niveles de esta clase, esta reducción de daño se incrementa: {@dice 3d6} a nivel 10 y {@dice 4d6} a nivel 14."
 			]
 		},
 		{
-			"name": "Consult the Spirits",
+			"name": "Consultar a los Espíritus",
 			"source": "XGE-ES",
-			"page": 9,
+			"page": 10,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Guardián Ancestral",
@@ -1873,14 +1953,14 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"At 10th level, you gain the ability to consult with your ancestral spirits. When you do so, you cast the {@spell augury} or {@spell clairvoyance} spell, without using a spell slot or material components. Rather than creating a spherical sensor, this use of {@spell clairvoyance} invisibly summons one of your ancestral spirits to the chosen location. Wisdom is your spellcasting ability for these spells.",
-				"After you cast either spell in this way, you can't use this feature again until you finish a short or long rest."
+				"A nivel 10, obtienes la capacidad de comunicarte con tus espíritus ancestrales. Cuando lo haces, lanzas el conjuro de {@spell augurio|PHB-ES} o {@spell clarividencia|PHB-ES} sin utilizar un espacio de conjuro o componentes materiales. En vez de crear un sensor esférico, esta manera de emplear {@spell clarividencia|PHB-ES} invoca a una de las ánimas de tus antepasados en la localización deseada. Tu aptitud mágica para estos conjuros es Sabiduría.",
+				"Después de lanzar uno de los dos conjuros de este modo, no puedes volver a usar este rasgo hasta que termines un descanso corto o largo."
 			]
 		},
 		{
-			"name": "Vengeful Ancestors",
+			"name": "Ancestros Vengativos",
 			"source": "XGE-ES",
-			"page": 9,
+			"page": 10,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Guardián Ancestral",
@@ -1888,11 +1968,11 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"At 14th level, your ancestral spirits grow powerful enough to retaliate. When you use your Spirit Shield to reduce the damage of an attack, the attacker takes an amount of force damage equal to the damage that your Spirit Shield prevents."
+				"A nivel 14, tus espíritus ancestrales se han vuelto tan poderosos que son capaces de contraatacar. Cuando utilizas tu Escudo de los Espíritus para reducir el daño de un ataque, el atacante recibe tanto daño de fuerza como el daño prevenido por el Escudo de los Espíritus."
 			]
 		},
 		{
-			"name": "Path of the Storm Herald",
+			"name": "Senda del Heraldo de las Tormentas",
 			"source": "XGE-ES",
 			"page": 10,
 			"className": "Bárbaro",
@@ -1901,16 +1981,16 @@
 			"subclassSource": "XGE-ES",
 			"level": 3,
 			"entries": [
-				"All barbarians harbor a fury within. Their rage grants them superior strength, durability, and speed. Barbarians who follow the Path of the Storm Herald learn to transform that rage into a mantle of primal magic, which swirls around them. When in a fury, a barbarian of this path taps into the forces of nature to create powerful magical effects.",
-				"Storm heralds are typically elite champions who train alongside druids, rangers, and others sworn to protect nature. Other storm heralds hone their craft in lodges in regions wracked by storms, in the frozen reaches at the world's end, or deep in the hottest deserts.",
+				"Todos los bárbaros albergan furia en su interior. Su rabia les otorga una fuerza, velocidad y durabilidad superiores a las de los hombres ordinarios. Aquellos que siguen la Senda del Heraldo de las Tormentas aprenden a transformar esa ira en un manto de magia primordial que se arremolina a su alrededor. Cuando la furia le consume, un bárbaro que siga esta senda es capaz de utilizar las fuerzas de la naturaleza para crear poderosos efectos mágicos.",
+				"Los heraldos de la tormenta suelen ser guerreros de élite, que entrenan junto a druidas, exploradores y ciertos protectores jurados de la naturaleza. Otros seguidores de esta senda perfeccionan sus habilidades en regiones castigadas por tempestades, en los confines helados del fin del mundo o en la profundidad de ardientes desiertos.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Storm Aura|Bárbaro|PHB-ES|Heraldo de las Tormentas|XGE-ES|3"
+					"subclassFeature": "Aura de Tormenta|Bárbaro|PHB-ES|Heraldo de las Tormentas|XGE-ES|3"
 				}
 			]
 		},
 		{
-			"name": "Storm Aura",
+			"name": "Aura de Tormenta",
 			"source": "XGE-ES",
 			"page": 10,
 			"className": "Bárbaro",
@@ -1920,130 +2000,247 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Starting at 3rd level, you emanate a stormy, magical aura while you rage. The aura extends 10 feet from you in every direction, but not through total cover.",
-				"Your aura has an effect that activates when you enter your rage, and you can activate the effect again on each of your turns as a bonus action. Choose desert, sea, or tundra. Your aura's effect depends on that chosen environment, as detailed below. You can change your environment choice whenever you gain a level in this class.",
-				"If your aura's effects require a saving throw, the DC equals 8 + your proficiency bonus + your Constitution modifier.",
+				"Desde el nivel 3 emanas un aura mágica y tormentosa cuando te encuentras enfurecido. Esta aura cubre 10 pies alrededor de ti en todas direcciones, pero no atraviesa la cobertura completa.",
+				"Esta aura tiene un efecto que se activa cuando te enfureces y que, además, puedes activar de nuevo en cada uno de tus turnos como acción adicional. Elige desierto, mar o tundra. El efecto de tu aura depende del entorno elegido, como se detalla más abajo. Puedes cambiar tu elección de ambiente cada vez que ganes un nivel en esta clase.",
+				"Si los efectos de tu aura requieren de una tirada de salvación, la CD es igual a 8 + tu bonificador por competencia + tu modificador por Constitución.",
 				{
 					"type": "options",
 					"entries": [
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Desert|Barbarian|XGE|Heraldo de las Tormentas|XGE-ES|3"
+							"subclassFeature": "Desierto|Bárbaro|XGE-ES|Heraldo de las Tormentas|XGE-ES|3"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Sea|Barbarian|XGE|Heraldo de las Tormentas|XGE-ES|3"
+							"subclassFeature": "Mar|Bárbaro|XGE-ES|Heraldo de las Tormentas|XGE-ES|3"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Tundra|Barbarian|XGE|Heraldo de las Tormentas|XGE-ES|3"
+							"subclassFeature": "Tundra|Bárbaro|XGE-ES|Heraldo de las Tormentas|XGE-ES|3"
 						}
 					]
 				}
 			]
 		},
 		{
-			"name": "Storm Soul",
-			"source": "XGE-ES",
-			"page": 10,
-			"className": "Bárbaro",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Heraldo de las Tormentas",
-			"subclassSource": "XGE-ES",
-			"level": 6,
-			"header": 2,
-			"entries": [
-				"At 6th level, the storm grants you benefits even when your aura isn't active. The benefits are based on the environment you chose for your Storm Aura.",
-				{
-					"type": "options",
-					"entries": [
-						{
-							"type": "refSubclassFeature",
-							"subclassFeature": "Desert|Barbarian|XGE|Heraldo de las Tormentas|XGE-ES|6"
-						},
-						{
-							"type": "refSubclassFeature",
-							"subclassFeature": "Sea|Barbarian|XGE|Heraldo de las Tormentas|XGE-ES|6"
-						},
-						{
-							"type": "refSubclassFeature",
-							"subclassFeature": "Tundra|Barbarian|XGE|Heraldo de las Tormentas|XGE-ES|6"
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Shielding Storm",
-			"source": "XGE-ES",
-			"page": 10,
-			"className": "Bárbaro",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Heraldo de las Tormentas",
-			"subclassSource": "XGE-ES",
-			"level": 10,
-			"header": 2,
-			"entries": [
-				"At 10th level, you learn to use your mastery of the storm to protect others. Each creature of your choice has the damage resistance you gained from the Storm Soul feature while the creature is in your Storm Aura."
-			]
-		},
-		{
-			"name": "Raging Storm",
-			"source": "XGE-ES",
-			"page": 10,
-			"className": "Bárbaro",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Heraldo de las Tormentas",
-			"subclassSource": "XGE-ES",
-			"level": 14,
-			"header": 2,
-			"entries": [
-				"At 14th level, the power of the storm you channel grows mightier, lashing out at your foes. The effect is based on the environment you chose for your Storm Aura.",
-				{
-					"type": "options",
-					"entries": [
-						{
-							"type": "refSubclassFeature",
-							"subclassFeature": "Desert|Barbarian|XGE|Heraldo de las Tormentas|XGE-ES|14"
-						},
-						{
-							"type": "refSubclassFeature",
-							"subclassFeature": "Sea|Barbarian|XGE|Heraldo de las Tormentas|XGE-ES|14"
-						},
-						{
-							"type": "refSubclassFeature",
-							"subclassFeature": "Tundra|Barbarian|XGE|Heraldo de las Tormentas|XGE-ES|14"
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Path of the Zealot",
+			"name": "Alma de Tormenta",
 			"source": "XGE-ES",
 			"page": 11,
+			"className": "Bárbaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Heraldo de las Tormentas",
+			"subclassSource": "XGE-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A nivel 6, la tormenta te proporciona beneficios incluso cuando tu aura no está activa. Estos beneficios dependen del entorno elegido para tu Aura de Tormenta.",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Desierto|Bárbaro|XGE-ES|Heraldo de las Tormentas|XGE-ES|6"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Mar|Bárbaro|XGE-ES|Heraldo de las Tormentas|XGE-ES|6"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Tundra|Bárbaro|XGE-ES|Heraldo de las Tormentas|XGE-ES|6"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Tormenta Protectora",
+			"source": "XGE-ES",
+			"page": 11,
+			"className": "Bárbaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Heraldo de las Tormentas",
+			"subclassSource": "XGE-ES",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"A nivel 10, aprendes a utilizar tu dominio sobre la tormenta para proteger a otros. Todas las criaturas de tu elección tienen la resistencia al daño que ganaste del rasgo Alma de Tormenta mientras se encuentren en tu Aura de Tormenta."
+			]
+		},
+		{
+			"name": "Tormenta Enfurecida",
+			"source": "XGE-ES",
+			"page": 11,
+			"className": "Bárbaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Heraldo de las Tormentas",
+			"subclassSource": "XGE-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"A nivel 14, tu tormenta se vuelve aún más poderosa, atacando a tus enemigos. Este efecto está basado en el entorno que hayas elegido para tu Aura de Tormenta.",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Desierto|Bárbaro|XGE-ES|Heraldo de las Tormentas|XGE-ES|14"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Mar|Bárbaro|XGE-ES|Heraldo de las Tormentas|XGE-ES|14"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Tundra|Bárbaro|XGE-ES|Heraldo de las Tormentas|XGE-ES|14"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Desierto",
+			"source": "XGE-ES",
+			"page": 11,
+			"className": "Bárbaro",
+			"classSource": "XGE-ES",
+			"subclassShortName": "Heraldo de las Tormentas",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"Cuando se activa este efecto, todas las criaturas situadas en tu aura (excepto tú) sufren 2 de daño de fuego cada una. Este daño aumenta cuando alcanzas ciertos niveles en esta clase: 3 a nivel 5, 4 a nivel 10, 5 a nivel 15 y 6 a nivel 20."
+			]
+		},
+		{
+			"name": "Mar",
+			"source": "XGE-ES",
+			"page": 11,
+			"className": "Bárbaro",
+			"classSource": "XGE-ES",
+			"subclassShortName": "Heraldo de las Tormentas",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"Cuando se activa este efecto, puedes escoger a una criatura que puedas ver y se encuentre en tu aura. El objetivo deberá hacer una tirada de salvación de Destreza. Sufrirá {@damage 1d6} puntos de daño de relámpago si falla la tirada o la mitad del daño si la supera. Este daño aumenta cuando alcanzas ciertos niveles de esta clase: {@dice 2d6} a nivel 10, {@dice 3d6} a nivel 15 y {@dice 4d6} a nivel 20."
+			]
+		},
+		{
+			"name": "Tundra",
+			"source": "XGE-ES",
+			"page": 11,
+			"className": "Bárbaro",
+			"classSource": "XGE-ES",
+			"subclassShortName": "Heraldo de las Tormentas",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"Cuando se activa este efecto, cada criatura de tu elección situada en el aura gana 2 puntos de golpe temporales, gracias a los espíritus de hielo que les habitúan al daño. Los puntos de golpe temporales aumentan cuando alcanzas ciertos niveles en esta clase: 3 a nivel 5, 4 a nivel 10, 5 a nivel 15 y 6 a nivel 20."
+			]
+		},
+		{
+			"name": "Desierto",
+			"source": "XGE-ES",
+			"page": 11,
+			"className": "Bárbaro",
+			"classSource": "XGE-ES",
+			"subclassShortName": "Heraldo de las Tormentas",
+			"subclassSource": "XGE-ES",
+			"level": 6,
+			"entries": [
+				"Ganas resistencia al daño de fuego y no sufres los efectos del calor extremo, tal y como se describen en el Dungeon Master's Guide. Adicionalmente, utilizando una acción, puedes tocar un objeto inflamable que no lleve o vista nadie y hacerlo arder."
+			]
+		},
+		{
+			"name": "Mar",
+			"source": "XGE-ES",
+			"page": 11,
+			"className": "Bárbaro",
+			"classSource": "XGE-ES",
+			"subclassShortName": "Heraldo de las Tormentas",
+			"subclassSource": "XGE-ES",
+			"level": 6,
+			"entries": [
+				"Adquieres resistencia al daño de relámpago y la capacidad de respirar bajo el agua. También ganas una velocidad nadando de 30 pies."
+			]
+		},
+		{
+			"name": "Tundra",
+			"source": "XGE-ES",
+			"page": 11,
+			"className": "Bárbaro",
+			"classSource": "XGE-ES",
+			"subclassShortName": "Heraldo de las Tormentas",
+			"subclassSource": "XGE-ES",
+			"level": 6,
+			"entries": [
+				"Obtienes resistencia al daño de frío y no sufres los efectos del frío extremo, tal y como se describen en el Dungeon Master's Guide. Además, empleando una acción, eres capaz de tocar agua y convertir un cubo de 5 pies de lado de la misma en hielo. Se derretirá pasado 1 minuto. Esta acción falla si alguna criatura está dentro del cubo."
+			]
+		},
+		{
+			"name": "Desierto",
+			"source": "XGE-ES",
+			"page": 11,
+			"className": "Bárbaro",
+			"classSource": "XGE-ES",
+			"subclassShortName": "Heraldo de las Tormentas",
+			"subclassSource": "XGE-ES",
+			"level": 14,
+			"entries": [
+				"Inmediatamente después de que una criatura situada dentro de tu aura te impacte con un ataque, puedes usar tu reacción para obligarla a realizar una tirada de salvación de Destreza. Si la falla, dicha criatura sufrirá la mitad de tu nivel de bárbaro de daño de fuego."
+			]
+		},
+		{
+			"name": "Mar",
+			"source": "XGE-ES",
+			"page": 11,
+			"className": "Bárbaro",
+			"classSource": "XGE-ES",
+			"subclassShortName": "Heraldo de las Tormentas",
+			"subclassSource": "XGE-ES",
+			"level": 14,
+			"entries": [
+				"Cuando impactas a una criatura que se encuentra dentro de tu aura con un ataque, puedes usar tu reacción para obligarla a realizar una tirada de salvación de Fuerza. Si falla la tirada, dicha criatura queda {@condition derribado|PHB-ES|derribada}, como si hubiera sido golpeada por una ola."
+			]
+		},
+		{
+			"name": "Tundra",
+			"source": "XGE-ES",
+			"page": 11,
+			"className": "Bárbaro",
+			"classSource": "XGE-ES",
+			"subclassShortName": "Heraldo de las Tormentas",
+			"subclassSource": "XGE-ES",
+			"level": 14,
+			"entries": [
+				"Cuando el efecto de tu Aura de Tormentas se activa, puedes elegir una criatura que puedas ver y esté situada dentro del aura. El objetivo deberá tener éxito en una tirada de salvación de Fuerza o su velocidad quedará reducida a 0 hasta el principio de tu próximo turno debido a la escarcha mágica que la cubre."
+			]
+		},
+		{
+			"name": "Senda del Fanático",
+			"source": "XGE-ES",
+			"page": 9,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Fanático",
 			"subclassSource": "XGE-ES",
 			"level": 3,
 			"entries": [
-				"Some deities inspire their followers to pitch themselves into a ferocious battle fury. These barbarians are zealots—warriors who channel their rage into powerful displays of divine power.",
-				"A variety of gods across the worlds of D&D inspire their followers to embrace this path. Tempus from the Forgotten Realms and Hextor and Erythnul of Greyhawk are all prime examples. In general, the gods who inspire zealots are deities of combat, destruction, and violence. Not all are evil, but few are good.",
+				"Algunas deidades exhortan a sus seguidores a dejarse llevar por una feroz furia de batalla. Estos bárbaros son fanáticos, guerreros que canalizan su rabia en poderosos alardes de poder divino. ",
+				"Varios dioses de los mundos de D&D conducen a sus seguidores por este camino. Tempus, de los Reinos Olvidados, y Hextor y Erythnul, de Falcongrís, son claros ejemplos. En general, las divinidades que inspiran a fanáticos son deidades del combate, la destrucción y la violencia. No todas son malvadas, pero pocas son buenas.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Divine Fury|Bárbaro|PHB-ES|Fanático|XGE-ES|3"
+					"subclassFeature": "Furia Divina|Bárbaro|PHB-ES|Fanático|XGE-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Warrior of the Gods|Bárbaro|PHB-ES|Fanático|XGE-ES|3"
+					"subclassFeature": "Guerrero de los Dioses|Bárbaro|PHB-ES|Fanático|XGE-ES|3"
 				}
 			]
 		},
 		{
-			"name": "Divine Fury",
+			"name": "Furia Divina",
 			"source": "XGE-ES",
-			"page": 11,
+			"page": 9,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Fanático",
@@ -2051,13 +2248,13 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Starting when you choose this path at 3rd level, you can channel divine fury into your weapon strikes. While you're raging, the first creature you hit on each of your turns with a weapon attack takes extra damage equal to {@dice 1d6} + half your barbarian level. The extra damage is necrotic or radiant; you choose the type of damage when you gain this feature."
+				"Desde el momento en que elijas esta senda a nivel 3, puedes canalizar la furia divina en los golpes de tus armas. Cuando estés enfurecido, la primera criatura a la que impactes en cada uno de tus turnos con un ataque con arma recibe {@dice 1d6} + la mitad de tu nivel de bárbaro de daño adicional. Este daño adicional es necrótico o radiante. El tipo de daño se elige al obtener este rasgo."
 			]
 		},
 		{
-			"name": "Warrior of the Gods",
+			"name": "Guerrero de los Dioses",
 			"source": "XGE-ES",
-			"page": 11,
+			"page": 9,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Fanático",
@@ -2065,13 +2262,13 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"At 3rd level, your soul is marked for endless battle. If a spell, such as {@spell raise dead}, has the sole effect of restoring you to life (but not undeath), the caster doesn't need material components to cast the spell on you."
+				"A nivel 3, tu alma queda marcada para la batalla eterna. Si un conjuro, como {@spell alzar a los muertos|PHB-ES}, tiene como único efecto devolverte a la vida (pero no la muerte en vida), el lanzador no necesita componentes materiales para lanzarlo sobre ti."
 			]
 		},
 		{
-			"name": "Fanatical Focus",
+			"name": "Foco Fanático",
 			"source": "XGE-ES",
-			"page": 11,
+			"page": 9,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Fanático",
@@ -2079,13 +2276,13 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"Starting at 6th level, the divine power that fuels your rage can protect you. If you fail a saving throw while you're raging, you can reroll it, and you must use the new roll. You can use this ability only once per rage."
+				"A partir de nivel 6, el poder divino que alimenta tu rabia también puede protegerte. Si fallas una tirada de salvación mientras estás enfurecido, puedes repetir dicha tirada, quedándote con el nuevo resultado. Puedes usar esta habilidad solo una vez por furia."
 			]
 		},
 		{
-			"name": "Zealous Presence",
+			"name": "Presencia Ferviente",
 			"source": "XGE-ES",
-			"page": 11,
+			"page": 10,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Fanático",
@@ -2093,14 +2290,14 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"At 10th level, you learn to channel divine power to inspire zealotry in others. As a bonus action, you unleash a battle cry infused with divine energy. Up to ten other creatures of your choice within 60 feet of you that can hear you gain advantage on attack rolls and saving throws until the start of your next turn.",
-				"Once you use this feature, you can't use it again until you finish a long rest."
+				"A nivel 10 aprendes a canalizar el poder divino para inspirar fanatismo en otros. Como acción adicional, puedes dar rienda suelta a un grito de guerra infundido con energía sagrada. Hasta diez criaturas de tu elección (excepto tú), que se encuentren hasta un máximo de 60 pies de ti y que puedan oírte, ganan ventaja en las tiradas de salvación y de ataque hasta el principio de tu siguiente turno. ",
+				"Una vez utilizado este rasgo, deberás terminar un descanso largo para poder volver a usarlo."
 			]
 		},
 		{
-			"name": "Rage beyond Death",
+			"name": "Furia más allá de la muerte",
 			"source": "XGE-ES",
-			"page": 11,
+			"page": 10,
 			"className": "Bárbaro",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Fanático",
@@ -2108,203 +2305,8 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Beginning at 14th level, the divine power that fuels your rage allows you to shrug off fatal blows.",
-				"While you're raging, having 0 hit points doesn't knock you {@condition unconscious}. You still must make death saving throws, and you suffer the normal effects of taking damage while at 0 hit points. However, if you would die due to failing death saving throws, you don't die until your rage ends, and you die then only if you still have 0 hit points."
-			]
-		},
-		{
-			"name": "Elk",
-			"source": "SCAG-ES",
-			"page": 122,
-			"className": "Bárbaro",
-			"classSource": "SCAG-ES",
-			"subclassShortName": "Guerrero Totémico",
-			"subclassSource": "PHB-ES",
-			"level": 3,
-			"entries": [
-				"While you're raging and aren't wearing heavy armor, your walking speed increases by 15 feet. The spirit of the elk makes you extraordinarily swift."
-			]
-		},
-		{
-			"name": "Tiger",
-			"source": "SCAG-ES",
-			"page": 122,
-			"className": "Bárbaro",
-			"classSource": "SCAG-ES",
-			"subclassShortName": "Guerrero Totémico",
-			"subclassSource": "PHB-ES",
-			"level": 3,
-			"entries": [
-				"While raging, you can add 10 feet to your long jump distance and 3 feet to your high jump distance. The spirit of the tiger empowers your leaps."
-			]
-		},
-		{
-			"name": "Elk",
-			"source": "SCAG-ES",
-			"page": 122,
-			"className": "Bárbaro",
-			"classSource": "SCAG-ES",
-			"subclassShortName": "Guerrero Totémico",
-			"subclassSource": "PHB-ES",
-			"level": 6,
-			"entries": [
-				"Whether mounted or on foot, your travel pace is doubled, as is the travel pace of up to ten companions while they're within 60 feet of you and you're not {@condition incapacitated}. The elk spirit helps you roam far and fast."
-			]
-		},
-		{
-			"name": "Tiger",
-			"source": "SCAG-ES",
-			"page": 122,
-			"className": "Bárbaro",
-			"classSource": "SCAG-ES",
-			"subclassShortName": "Guerrero Totémico",
-			"subclassSource": "PHB-ES",
-			"level": 6,
-			"entries": [
-				"You gain proficiency in two skills from the following list: {@skill Athletics}, {@skill Acrobatics}, {@skill Stealth}, and {@skill Survival}. The cat spirit hones your survival instincts."
-			]
-		},
-		{
-			"name": "Elk",
-			"source": "SCAG-ES",
-			"page": 122,
-			"className": "Bárbaro",
-			"classSource": "SCAG-ES",
-			"subclassShortName": "Guerrero Totémico",
-			"subclassSource": "PHB-ES",
-			"level": 14,
-			"entries": [
-				"While raging, you can use a bonus action during your move to pass through the space of a Large or smaller creature. That creature must succeed on a Strength saving throw (DC 8 + your Strength bonus + your proficiency bonus) or be knocked {@condition prone} and take bludgeoning damage equal to {@dice 1d12} + your Strength modifier."
-			]
-		},
-		{
-			"name": "Tiger",
-			"source": "SCAG-ES",
-			"page": 122,
-			"className": "Bárbaro",
-			"classSource": "SCAG-ES",
-			"subclassShortName": "Guerrero Totémico",
-			"subclassSource": "PHB-ES",
-			"level": 14,
-			"entries": [
-				"While you're raging, if you move at least 20 feet in a straight line toward a Large or smaller target right before making a melee weapon attack against it, you can use a bonus action to make an additional melee weapon attack against it."
-			]
-		},
-		{
-			"name": "Desert",
-			"source": "XGE-ES",
-			"page": 10,
-			"className": "Bárbaro",
-			"classSource": "XGE-ES",
-			"subclassShortName": "Heraldo de las Tormentas",
-			"subclassSource": "XGE-ES",
-			"level": 3,
-			"entries": [
-				"When this effect is activated, all other creatures in your aura take 2 fire damage each. The damage increases when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level."
-			]
-		},
-		{
-			"name": "Sea",
-			"source": "XGE-ES",
-			"page": 10,
-			"className": "Bárbaro",
-			"classSource": "XGE-ES",
-			"subclassShortName": "Heraldo de las Tormentas",
-			"subclassSource": "XGE-ES",
-			"level": 3,
-			"entries": [
-				"When this effect is activated, you can choose one other creature you can see in your aura. The target must make a Dexterity saving throw. The target takes {@damage 1d6} lightning damage on a failed save, or half as much damage on a successful one. The damage increases when you reach certain levels in this class, increasing to {@dice 2d6} at 10th level, {@dice 3d6} at 15th level, and {@dice 4d6} at 20th level."
-			]
-		},
-		{
-			"name": "Tundra",
-			"source": "XGE-ES",
-			"page": 10,
-			"className": "Bárbaro",
-			"classSource": "XGE-ES",
-			"subclassShortName": "Heraldo de las Tormentas",
-			"subclassSource": "XGE-ES",
-			"level": 3,
-			"entries": [
-				"When this effect is activated, each creature of your choice in your aura gains 2 temporary hit points, as icy spirits inure it to suffering. The temporary hit points increase when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level."
-			]
-		},
-		{
-			"name": "Desert",
-			"source": "XGE-ES",
-			"page": 10,
-			"className": "Bárbaro",
-			"classSource": "XGE-ES",
-			"subclassShortName": "Heraldo de las Tormentas",
-			"subclassSource": "XGE-ES",
-			"level": 6,
-			"entries": [
-				"You gain resistance to fire damage, and you don't suffer the effects of extreme heat, as described in the Dungeon Master's Guide. Moreover, as an action, you can touch a flammable object that isn't being worn or carried by anyone else and set it on fire."
-			]
-		},
-		{
-			"name": "Sea",
-			"source": "XGE-ES",
-			"page": 10,
-			"className": "Bárbaro",
-			"classSource": "XGE-ES",
-			"subclassShortName": "Heraldo de las Tormentas",
-			"subclassSource": "XGE-ES",
-			"level": 6,
-			"entries": [
-				"You gain resistance to lightning damage, and you can breathe underwater. You also gain a swimming speed of 30 feet."
-			]
-		},
-		{
-			"name": "Tundra",
-			"source": "XGE-ES",
-			"page": 10,
-			"className": "Bárbaro",
-			"classSource": "XGE-ES",
-			"subclassShortName": "Heraldo de las Tormentas",
-			"subclassSource": "XGE-ES",
-			"level": 6,
-			"entries": [
-				"You gain resistance to cold damage, and you don't suffer the effects of extreme cold, as described in the Dungeon Master's Guide. Moreover, as an action, you can touch water and turn a 5-foot cube of it into ice, which melts after 1 minute. This action fails if a creature is in the cube."
-			]
-		},
-		{
-			"name": "Desert",
-			"source": "XGE-ES",
-			"page": 10,
-			"className": "Bárbaro",
-			"classSource": "XGE-ES",
-			"subclassShortName": "Heraldo de las Tormentas",
-			"subclassSource": "XGE-ES",
-			"level": 14,
-			"entries": [
-				"Immediately after a creature in your aura hits you with an attack, you can use your reaction to force that creature to make a Dexterity saving throw. On a failed save, the creature takes fire damage equal to half your barbarian level."
-			]
-		},
-		{
-			"name": "Sea",
-			"source": "XGE-ES",
-			"page": 10,
-			"className": "Bárbaro",
-			"classSource": "XGE-ES",
-			"subclassShortName": "Heraldo de las Tormentas",
-			"subclassSource": "XGE-ES",
-			"level": 14,
-			"entries": [
-				"When you hit a creature in your aura with an attack, you can use your reaction to force that creature to make a Strength saving throw. On a failed save, the creature is knocked {@condition prone}, as if struck by a wave."
-			]
-		},
-		{
-			"name": "Tundra",
-			"source": "XGE-ES",
-			"page": 10,
-			"className": "Bárbaro",
-			"classSource": "XGE-ES",
-			"subclassShortName": "Heraldo de las Tormentas",
-			"subclassSource": "XGE-ES",
-			"level": 14,
-			"entries": [
-				"Whenever the effect of your Storm Aura is activated, you can choose one creature you can see in the aura. That creature must succeed on a Strength saving throw, or its speed is reduced to 0 until the start of your next turn, as magical frost covers it."
+				"A partir de nivel 14, el poder divino que alimenta tu furia te permite ignorar golpes letales.",
+				"Mientras estés enfurecido, tener 0 puntos de golpe no te hace caer {@condition inconsciente|PHB-ES}. Todavía debes realizar tiradas de salvación contra muerte, del mismo modo que sufres los efectos normales de recibir daño estando a 0 puntos de golpe. Sin embargo, si fueras a fallecer debido a haber fallado tiradas de salvación contra muerte, no mueres hasta que tu furia termine. Incluso en ese caso, solo fallecerías si todavía tienes 0 puntos de golpe."
 			]
 		}
 	]
