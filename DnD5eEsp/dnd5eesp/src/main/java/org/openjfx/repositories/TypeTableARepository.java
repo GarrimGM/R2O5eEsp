@@ -55,6 +55,29 @@ public class TypeTableARepository {
         return listaTabla;
     }
 
+    public static List<TypeTableAModel> busquedaClassNameEsp(String className) {
+        List<TypeTableAModel> listaTabla = new ArrayList<>();
+        try{
+            Connection connection = conectarDB();
+            PreparedStatement preparedStatement=connection.prepareStatement(
+                "SELECT * FROM Class WHERE Text=?");
+            preparedStatement.setString(1, className);
+            ResultSet resultSet=preparedStatement.executeQuery();
+            while(resultSet.next()){
+                    String source=resultSet.getString("Source");
+                    String text=resultSet.getString("Text");
+                    String textEsp=resultSet.getString("TextEsp");
+
+                    TypeTableAModel dato = new TypeTableAModel(source, text, textEsp);
+                    listaTabla.add(dato);
+            }
+
+        }catch(Exception e){
+            System.out.println("Error al lanzar la consulta SQL");
+        }
+        return listaTabla;
+    }
+
     public static void alta(String tabla, TypeTableAModel dato) {
         try{
             Connection connection = conectarDB();

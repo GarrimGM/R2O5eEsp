@@ -3,12 +3,13 @@ package org.openjfx.repositories.model;
 public class TypeTableFModel {
     public TypeTableFModel() {
     }
-    public TypeTableFModel(String source, String text, String classSource, String className, Integer level, String subclassShortName, String textEsp) {
+    public TypeTableFModel(String source, String text, String classSource, String className, Integer level, String subclassSource, String subclassShortName, String textEsp) {
         this.source = source;
         this.text = text;
         this.classSource = classSource;
         this.className = className;
         this.level = level;
+        this.subclassSource = subclassSource;
         this.subclassShortName = subclassShortName;
         this.textEsp = textEsp;
     }
@@ -18,6 +19,7 @@ public class TypeTableFModel {
     private String classSource;
     private String className;
     private Integer level;
+    private String subclassSource;
     private String subclassShortName;
     private String textEsp;
 
@@ -50,6 +52,12 @@ public class TypeTableFModel {
     }
     public void setLevel(Integer level) {
         this.level = level;
+    }
+    public String getSubclassSource() {
+        return subclassSource;
+    }
+    public void setSubclassSource(String subclassSource) {
+        this.subclassSource = subclassSource;
     }
     public String getSubclassShortName() {
         return subclassShortName;

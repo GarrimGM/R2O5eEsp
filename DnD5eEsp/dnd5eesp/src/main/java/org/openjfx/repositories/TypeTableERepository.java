@@ -66,6 +66,34 @@ public class TypeTableERepository {
         return listaTabla;
     }
 
+    public static List<TypeTableEModel> busquedaSubclassShortnameEsp(String cClassName, String cShortName) {
+        List<TypeTableEModel> listaTabla = new ArrayList<>();
+        try{
+            Connection connection = conectarDB();
+            PreparedStatement preparedStatement=connection.prepareStatement(
+                "SELECT * FROM Subclass WHERE ClassName=? AND ShortName=?");
+            preparedStatement.setString(1, cClassName);
+            preparedStatement.setString(2, cShortName);
+            ResultSet resultSet=preparedStatement.executeQuery();
+            while(resultSet.next()){
+                String source=resultSet.getString("Source");
+                String text=resultSet.getString("Text");
+                String classSource=resultSet.getString("ClassSource");
+                String className=resultSet.getString("ClassName");
+                String shortName = resultSet.getString("ShortName");
+                String shortNameEsp = resultSet.getString("ShortNameEsp");
+                String textEsp=resultSet.getString("TextEsp");
+
+                TypeTableEModel dato = new TypeTableEModel(source, text, classSource, className, shortName, shortNameEsp, textEsp);
+                listaTabla.add(dato);
+            }
+
+        }catch(Exception e){
+            System.out.println("Error al lanzar la consulta SQL");
+        }
+        return listaTabla;
+    }
+
     public static void alta(String tabla, TypeTableEModel dato) {
         try{
             Connection connection = conectarDB();
