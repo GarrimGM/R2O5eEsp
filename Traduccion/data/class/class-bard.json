@@ -1,7 +1,7 @@
 {
 	"class": [
 		{
-			"name": "Bard",
+			"name": "Bardo",
 			"source": "PHB-ES",
 			"page": 51,
 			"srd": true,
@@ -96,13 +96,13 @@
 				],
 				"weapons": [
 					"simple",
-					"{@item hand crossbow|phb|hand crossbows}",
-					"{@item longsword|phb|longswords}",
-					"{@item rapier|phb|rapiers}",
-					"{@item shortsword|phb|shortswords}"
+					"{@item ballesta de mano|PHB-ES|ballestas de mano}",
+					"{@item espada corta|PHB-ES|espadas cortas}",
+					"{@item espada larga|PHB-ES|espadas largas}",
+					"{@item estoque|PHB-ES|estoques}"
 				],
 				"tools": [
-					"three {@item musical instrument|PHB|musical instruments} of your choice"
+					"tres {@item Instrumento musical|PHB-ES|instrumentos musicales} a tu elección"
 				],
 				"toolProficiencies": [
 					{
@@ -118,19 +118,19 @@
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"default": [
-					"(a) a {@item rapier|phb}, (b) a {@item longsword|phb}, or (c) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
-					"(a) a {@item diplomat's pack|phb} or (b) an {@item entertainer's pack|phb}",
-					"(a) a {@item lute|phb} or (b) any other {@filter musical instrument|items|miscellaneous=mundane|type=instrument}",
-					"{@item Leather armor|phb}, and a {@item dagger|phb}"
+					"(a) un {@item estoque|PHB-ES}, (b) una {@item espada larga|PHB-ES} o (c) cualquier {@filter arma sencilla|items|source=PHB-ES|category=basic|type=simple weapon}",
+					"(a) un {@item paquete de diplomático|PHB-ES} o (b) un {@item paquete de artista|PHB-ES}",
+					"(a) un {@item flauta|PHB-ES} o (b) cualquier otro {@filter instrumento musical|items|miscellaneous=mundane|type=instrument}",
+					"{@item armadura de cuero|PHB-ES} y una {@item daga|PHB-ES}"
 				],
 				"goldAlternative": "{@dice 5d4 × 10|5d4 × 10|Starting Gold}",
 				"defaultData": [
 					{
 						"a": [
-							"rapier|phb"
+							"estoque|PHB-ES"
 						],
 						"b": [
-							"longsword|phb"
+							"espada larga|PHB-ES"
 						],
 						"c": [
 							{
@@ -140,15 +140,15 @@
 					},
 					{
 						"a": [
-							"diplomat's pack|phb"
+							"paquete de diplomático|PHB-ES"
 						],
 						"b": [
-							"entertainer's pack|phb"
+							"paquete de artista|PHB-ES"
 						]
 					},
 					{
 						"a": [
-							"lute|phb"
+							"flauta|PHB-ES"
 						],
 						"b": [
 							{
@@ -158,8 +158,8 @@
 					},
 					{
 						"_": [
-							"Leather armor|phb",
-							"dagger|phb"
+							"armadura de cuero|PHB-ES",
+							"daga|PHB-ES"
 						]
 					}
 				]
@@ -200,7 +200,7 @@
 						}
 					],
 					"tools": [
-						"one {@item musical instrument|PHB} of your choice"
+						"un {@item instrumento musical|PHB-ES} a tu elección"
 					],
 					"toolProficiencies": [
 						{
@@ -212,8 +212,8 @@
 			"classTableGroups": [
 				{
 					"colLabels": [
-						"{@filter Cantrips Known|spells|level=0|class=bard}",
-						"{@filter Spells Known|spells|class=bard}"
+						"{@filter Trucos conocidos|spells|level=0|class=bardo (PHB-ES)}",
+						"{@filter Conjuros conocidos|spells|class=bardo (PHB-ES)}"
 					],
 					"rows": [
 						[
@@ -299,17 +299,17 @@
 					]
 				},
 				{
-					"title": "Spell Slots per Spell Level",
+					"title": "Espacios de conjuro por cada nivel de conjuro",
 					"colLabels": [
-						"{@filter 1st|spells|level=1|class=bard}",
-						"{@filter 2nd|spells|level=2|class=bard}",
-						"{@filter 3rd|spells|level=3|class=bard}",
-						"{@filter 4th|spells|level=4|class=bard}",
-						"{@filter 5th|spells|level=5|class=bard}",
-						"{@filter 6th|spells|level=6|class=bard}",
-						"{@filter 7th|spells|level=7|class=bard}",
-						"{@filter 8th|spells|level=8|class=bard}",
-						"{@filter 9th|spells|level=9|class=bard}"
+						"{@filter 1|spells|level=1|class=bardo (PHB-ES)}",
+						"{@filter 2|spells|level=2|class=bardo (PHB-ES)}",
+						"{@filter 3|spells|level=3|class=bardo (PHB-ES)}",
+						"{@filter 4|spells|level=4|class=bardo (PHB-ES)}",
+						"{@filter 5|spells|level=5|class=bardo (PHB-ES)}",
+						"{@filter 6|spells|level=6|class=bardo (PHB-ES)}",
+						"{@filter 7|spells|level=7|class=bardo (PHB-ES)}",
+						"{@filter 8|spells|level=8|class=bardo (PHB-ES)}",
+						"{@filter 9|spells|level=9|class=bardo (PHB-ES)}"
 					],
 					"rowsSpellProgression": [
 						[
@@ -536,94 +536,87 @@
 				}
 			],
 			"classFeatures": [
-				"Bardic Inspiration|Bard||1",
-				"Magical Inspiration|Bard||1|UAClassFeatureVariants",
-				"Spellcasting|Bard||1",
-				"Spell Versatility|Bard||1|UAClassFeatureVariants",
-				"Jack of All Trades|Bard||2",
-				"Song of Rest (d6)|Bard||2",
-				"Magical Inspiration|Bard||2|TCE",
+				"Inspiración Bárdica|Bardo|PHB-ES|1",
+				"Lanzamiento de Conjuros|Bardo|PHB-ES|1",
+				"Aprendiz de Mucho|Bardo|PHB-ES|2",
+				"Canción de Descanso (d6)|Bardo|PHB-ES|2",
+				"Inspiración Mágica|Bardo|PHB-ES|2|TCE-ES",
 				{
-					"classFeature": "Bard College|Bard||3",
+					"classFeature": "Colegio Bárdico|Bardo|PHB-ES|3",
 					"gainSubclassFeature": true
 				},
-				"Expertise|Bard||3",
-				"Ability Score Improvement|Bard||4",
-				"Proficiency Versatility|Bard||4|UAClassFeatureVariants",
-				"Bardic Versatility|Bard||4|TCE",
-				"Bardic Inspiration (d8)|Bard||5",
-				"Font of Inspiration|Bard||5",
-				"Countercharm|Bard||6",
+				"Pericia|Bardo|PHB-ES|3",
+				"Mejora de Característica|Bardo|PHB-ES|4",
+				"Versatilidad Bárdica|Bardo|PHB-ES|4|TCE-ES",
+				"Inspiración Bárdica (d8)|Bardo|PHB-ES|5",
+				"Fuente de Inspiración|Bardo|PHB-ES|5",
+				"Contraencantamiento|Bardo|PHB-ES|6",
 				{
-					"classFeature": "Bard College feature|Bard||6",
+					"classFeature": "Rasgo de Colegio Bárdico|Bardo|PHB-ES|6",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Bard||8",
-				"Proficiency Versatility|Bard||8|UAClassFeatureVariants",
-				"Song of Rest (d8)|Bard||9",
-				"Bardic Inspiration (d10)|Bard||10",
-				"Expertise|Bard||10",
-				"Magical Secrets|Bard||10",
-				"Ability Score Improvement|Bard||12",
-				"Proficiency Versatility|Bard||12|UAClassFeatureVariants",
-				"Song of Rest (d10)|Bard||13",
-				"Magical Secrets|Bard||14",
+				"Mejora de Característica|Bardo|PHB-ES|8",
+				"Canción de Descanso (d8)|Bardo|PHB-ES|9",
+				"Inspiración Bárdica (d10)|Bardo|PHB-ES|10",
+				"Pericia|Bardo|PHB-ES|10",
+				"Secretos Mágicos|Bardo|PHB-ES|10",
+				"Mejora de Característica|Bardo|PHB-ES|12",
+				"Canción de Descanso (d10)|Bardo|PHB-ES|13",
+				"Secretos Mágicos|Bardo|PHB-ES|14",
 				{
-					"classFeature": "Bard College feature|Bard||14",
+					"classFeature": "Rasgo de Colegio Bárdico|Bardo|PHB-ES|14",
 					"gainSubclassFeature": true
 				},
-				"Bardic Inspiration (d12)|Bard||15",
-				"Ability Score Improvement|Bard||16",
-				"Proficiency Versatility|Bard||16|UAClassFeatureVariants",
-				"Song of Rest (d12)|Bard||17",
-				"Magical Secrets|Bard||18",
-				"Ability Score Improvement|Bard||19",
-				"Proficiency Versatility|Bard||19|UAClassFeatureVariants",
-				"Superior Inspiration|Bard||20"
+				"Inspiración Bárdica (d12)|Bardo|PHB-ES|15",
+				"Mejora de Característica|Bardo|PHB-ES|16",
+				"Canción de Descanso (d12)|Bardo|PHB-ES|17",
+				"Secretos Mágicos|Bardo|PHB-ES|18",
+				"Mejora de Característica|Bardo|PHB-ES|19",
+				"Inspiración Superior|Bardo|PHB-ES|20"
 			],
-			"subclassTitle": "Bard College",
+			"subclassTitle": "Colegio bárdico",
 			"fluff": [
 				{
-					"name": "Bard",
+					"name": "Bardo",
 					"type": "section",
 					"entries": [
-						"Humming as she traces her fingers over an ancient monument in a long-forgotten ruin, a half-elf in rugged leathers finds knowledge springing into her mind, conjured forth by the magic of her song—knowledge of the people who constructed the monument and the mythic saga it depicts.",
-						"A stern human warrior bangs his sword rhythmically against his scale mail, setting the tempo for his war chant and exhorting his companions to bravery and heroism. The magic of his song fortifies and emboldens them.",
-						"Laughing as she tunes her cittern, a gnome weaves her subtle magic over the assembled nobles, ensuring that her companions' words will be well received.",
-						"Whether scholar, skald, or scoundrel, a bard weaves magic through words and music to inspire allies, demoralize foes, manipulate minds, create illusions, and even heal wounds.",
+						"Una semielfa cubierta de resistentes pieles canturrea mientras traza con sus dedos el perfil de un antiguo monumento, encontrado en unas ruinas olvidadas. Siente cómo, gracias a la magia de su canción, su mente se llena de conocimiento: la historia del pueblo que construye el monumento y la saga mítica que este representa.",
+						"Un adusto combatiente humano golpea rítmicamente su espada contra su cota de escamas, marcando el compás de su canto marcial y exhortando a sus compañeros a protagonizar actos de coraje y heroísmo. La magia de su canción les fortalece y envalentona.",
+						"Riendo mientras afina su cistro, una gnoma teje su sutil magia sobre los nobles reunidos en la sala, asegurándose así de que las palabras de sus compañeros serán bien recibidas.",
+						"Un bardo, ya sea este un erudito, un escaldo o un bribón, es capaz de tejer magia a través de sus palabras y su música, inspirando a sus aliados, desmoralizando a sus enemigos, manipulando mentes, creando ilusiones e incluso sanando heridas.",
 						{
 							"type": "entries",
-							"name": "Music and Magic",
+							"name": "Música y magia",
 							"entries": [
-								"In the worlds of D&D, words and music are not just vibrations of air, but vocalizations with power all their own. The bard is a master of song, speech, and the magic they contain. Bards say that the multiverse was spoken into existence, that the words of the gods gave it shape, and that echoes of these primordial Words of Creation still resound throughout the cosmos. The music of bards is an attempt to snatch and harness those echoes, subtly woven into their spells and powers.",
-								"The greatest strength of bards is their sheer versatility. Many bards prefer to stick to the sidelines in combat, using their magic to inspire their allies and hinder their foes from a distance. But bards are capable of defending themselves in melee if necessary, using their magic to bolster their swords and armor. Their spells lean toward charms and illusions rather than blatantly destructive spells. They have a wide-ranging knowledge of many subjects and a natural aptitude that lets them do almost anything well. Bards become masters of the talents they set their minds to perfecting, from musical performance to esoteric knowledge."
+								"En los mundos de D&D, las palabras y la música no son solo vibraciones del aire, sino vocalizaciones que contienen poder en sí mismas. El bardo es un maestro de la canción, el discurso y la magia que ambos albergan. Los bardos afirman que el multiverso nació del habla de los dioses, que sus palabras le dieron forma y que los ecos de estas Palabras de Creación primordiales aún resuenan a través del cosmos. La música de los bardos es un intento de atrapar y tomar el control de dichos ecos, tejiéndolos sutilmente en sus conjuros y poderes.",
+								"La mayor fortaleza de los bardos es su increíble versatilidad. Muchos prefieren echarse a un lado durante el combate, recurriendo a su magia para inspirar a sus aliados y obstaculizar a sus enemigos desde la distancia. No obstante, los bardos también son capaces de defenderse en cuerpo a cuerpo si se da el caso, empleando su magia para potenciar sus espadas y armadura. Sus conjuros no suelen desencadenar fuerzas destructoras, sino que tienden a manifestarse como encantamientos e ilusiones. Poseen un amplio espectro de conocimientos sobre muchas disciplinas, así como un talento natural que les permite sobresalir en prácticamente todo lo que hacen. Los bardos acaban transformándose en auténticos maestros de las artes que deciden perfeccionar; desde la interpretación musical hasta conocimientos esotéricos."
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Learning from Experience",
+							"name": "Aprender de la experiencia",
 							"entries": [
-								"True bards are not common in the world. Not every minstrel singing in a tavern or jester cavorting in a royal court is a bard. Discovering the magic hidden in music requires hard study and some measure of natural talent that most troubadours and jongleurs lack. It can be hard to spot the difference between these performers and true bards, though. A bard's life is spent wandering across the land gathering lore, telling stories, and living on the gratitude of audiences, much like any other entertainer. But a depth of knowledge, a level of musical skill, and a touch of magic set bards apart from their fellows.",
-								"Only rarely do bards settle in one place for long, and their natural desire to travel—to find new tales to tell, new skills to learn, and new discoveries beyond the horizon—makes an adventuring career a natural calling. Every adventure is an opportunity to learn, practice a variety of skills, enter long-forgotten tombs, discover lost works of magic, decipher old tomes, travel to strange places, or encounter exotic creatures. Bards love to accompany heroes to witness their deeds firsthand. A bard who can tell an awe-inspiring story from personal experience earns renown among other bards. Indeed, after telling so many stories about heroes accomplishing mighty deeds, many bards take these themes to heart and assume heroic roles themselves."
+								"Los auténticos bardos son muy poco frecuentes. No todos las juglares que cantan en una taberna o bufones que brincan en una corte real son bardos. Desentrañar la magia escondida en la música precisa de un intenso estudio y un talento natural de los que la mayoría de los trovadores y rapsodas carecen. Con todo, a veces es difícil distinguir entre verdaderos bardos y simples artistas. Los bardos pasan sus vidas vagabundeando de un lugar a otro, recopilando conocimientos, contando historias y viviendo de la buena voluntad de sus audiencias, como les suele suceder a la mayoría de los animadores. Pero su amplitud de conocimientos, su gran aptitud para la música y su dominio de la magia les distingue del resto de intérpretes.",
+								"Rara vez un bardo pasará una temporada larga en el mismo sitio. Su ansia viajera, que les lleva a buscar nuevas historias que contar, nuevas habilidades que aprender y nuevos horizontes que descubrir, hace que la vida del aventurero sea una vocación bastante habitual entre ellos. Toda aventura es una nueva oportunidad para aprender, practicar una gran variedad de habilidades, penetrar en tumbas ya olvidadas, descubrir artefactos mágicos perdidos, descifrar tomos antiguos, viajar a lugares extraños o encontrarse con criaturas exóticas. Los bardos adoran acompañar a héroes, para así poder ser testigos presenciales de sus hazañas, pues un bardo capaz de contar una impresionante epopeya basada en sus propias vivencias gozará de gran renombre entre los suyos. De hecho, tras narrar numerosas gestas protagonizadas por héroes, muchos bardos acaban interiorizando sus ideales y ellos mismos terminan asumiendo roles heroicos."
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Creating a Bard",
+							"name": "Creación de un bardo",
 							"entries": [
-								"Bards thrive on stories, whether those stories are true or not. Your character's background and motivations are not as important as the stories that he or she tells about them. Perhaps you had a secure and mundane childhood. There's no good story to be told about that, so you might paint yourself as an orphan raised by a hag in a dismal swamp. Or your childhood might be worthy of a story. Some bards acquire their magical music through extraordinary means, including the inspiration of fey or other supernatural creatures.",
-								"Did you serve an apprenticeship, studying under a master, following the more experienced bard until you were ready to strike out on your own? Or did you attend a college where you studied bardic lore and practiced your musical magic? Perhaps you were a young runaway or orphan, befriended by a wandering bard who became your mentor. Or you might have been a spoiled noble child tutored by a master. Perhaps you stumbled into the clutches of a hag, making a bargain for a musical gift in addition to your life and freedom, but at what cost?",
+								"Las historias dan vida a los bardos, tanto si son ciertas como si no. El trasfondo y las motivaciones de tu personaje no son tan importantes como los relatos en los que los plasma. Puede que hayas disfrutado de una infancia segura y prosaica, pero como es imposible elaborar una historia decente a partir de ella, quizá afirmes ser un huérfano criado por una saga en medio de un pantano lúgubre. O puede que tu infancia sí haya sido digna de ser contada, ya que algunos bardos reciben su magia musical a través de medios extraordinarios, como los seres feéricos u otras criaturas sobrenaturales.",
+								"¿Serviste como aprendiz a un maestro, obedeciendo las órdenes de un bardo más experto hasta que estuviste listo para partir? ¿O estudiaste en una universidad, un lugar donde practicar tu magia musical y adquirir conocimientos bárdicos? Tal vez te escapaste de tu hogar o tuviste la desgracia de ser huérfano, y un bardo que pasaba por allí se convirtió en tu mentor. O puede que seas el hijo malcriado de un noble, que disfrutó de un tutor extraordinario. Incluso podrías haber caído en las garras de una saga, con la que llegaste a un acuerdo que te proporcionó no solo tu vida y tu libertad, sino también tu don para la música. ¿Pero a qué precio?",
 								{
 									"type": "entries",
-									"name": "Quick Build",
+									"name": "Creación rápida",
 									"entries": [
-										"You can make a bard quickly by following these suggestions. First, Charisma should be your highest ability score, followed by Dexterity. Second, choose the {@background entertainer} background. Third, choose the {@spell dancing lights} and {@spell vicious mockery} cantrips, along with the following 1st-level spells: {@spell charm person}, {@spell detect magic}, {@spell healing word}, and {@spell thunderwave}."
+										"Para crear un bardo de forma rápida sugerimos lo siguiente. Para empezar, Carisma debería ser tu característica más alta, seguida de Destreza. A continuación, elige el trasfondo \"{@background animador|PHB-ES}\". Después, escoge los trucos {@spell burla dañina|PHB-ES} y {@spell luces danzantes|PHB-ES} y los siguientes conjuros de nivel 1: {@spell detectar magia|PHB-ES}, {@spell hechizar persona|PHB-ES}, {@spell ola atronadora|PHB-ES} y {@spell palabra de curación|PHB-ES}."
 									]
 								}
 							]
 						}
 					],
-					"source": "PHB",
+					"source": "PHB-ES",
 					"page": 51
 				},
 				{
@@ -632,27 +625,27 @@
 						{
 							"type": "quote",
 							"entries": [
-								"Music is the fruit of the divine tree that vibrates with the Words of Creation. But the question I ask you is, can a bard go to the root of this tree? Can one tap into the source of that power? Ah, then what manner of music they would bring to this world!"
+								"La música es la fruta del árbol divino que vibra con las Palabras de Creación. Pero lo que yo te pregunto es: ¿Puede un bardo llegar a la raíz de este árbol? ¿Es posible acceder a la fuente de ese poder? Ah, ¡la música que podría traer a este mundo!"
 							],
-							"by": "Fletcher Danairia, master bard"
+							"by": "Fletcher Danairia, maestro bardo"
 						},
-						"Bards bring levity during grave times; they impart wisdom to offset ignorance; and they make the ridiculous seem sublime. Bards are preservers of ancient history, their songs and tales perpetuating the memory of great events down through time—knowledge so important that it is memorized and passed along as oral history, to survive even when no written record remains.",
-						"It is also the bard's role to chronicle smaller and more contemporary events—the stories of today's heroes, including their feats of valor as well as their less than impressive failures.",
-						"Of course, the world has many people who can carry a tune or tell a good story, and there's much more to any adventuring bard than a glib tongue and a melodious voice. Yet what truly sets bards apart from others—and from one another—are the style and substance of their performances.",
-						"To grab and hold the attention of an audience, bards are typically flamboyant and outgoing when they perform. The most famous of them are essentially the D&D world's equivalent of pop stars. If you're playing a bard, consider using one of your favorite musicians as a role model for your character.",
-						"You can add some unique aspects to your bard character by considering the suggestions that follow.",
+						"Los bardos proporcionan desenfado en tiempos oscuros, otorgan sabiduría para contrarrestar la ignorancia y hacen que lo ridículo parezca sublime. Son conservadores de la historia más antigua, usando canciones y relatos para perpetuar a través de los tiempos la memoria de grandes acontecimientos. Este conocimiento es tan importante que será aprendido y difundido, sobreviviendo de esta manera cuando no quede nada escrito.",
+						"También es parte del papel de un bardo ser cronista de hechos menores y más contemporáneos: las historias de los héroes de hoy, desde sus mayores gestas a sus poco impresionantes fracasos.",
+						"No obstante, en el mundo hay muchas personas que pueden seguir una melodía o contar bien una historia, razón por la que un bardo aventurero no posee solo su labia y una voz melodiosa. Lo que realmente distingue a una de estas personas (y lo diferencia de otros bardos) es el estilo y la sustancia de su interpretación.",
+						"Para conquistar y mantener la atención del público, los bardos normalmente actúan de forma ostentosa y extrovertida. Los más famosos son el equivalente en el mundo de D&D a una estrella del pop. Si tu personaje es un miembro de esta clase, considera usar a uno de tus músicos favoritos como referente para tu aventurero.",
+						"Puedes añadir aspectos únicos a tu personaje con las siguientes sugerencias.",
 						{
 							"type": "entries",
-							"name": "Defining Work",
+							"name": "Obra característica",
 							"entries": [
-								"Every successful bard is renowned for at least one piece of performance art, typically a song or a poem that is popular with everyone who hears it. These performances are spoken about for years by those who view them, and some spectators have had their lives forever changed because of the experience.",
-								"If your character is just starting out, your ultimate defining work is likely in the future. But in order to make any sort of living at your profession, chances are you already have a piece or two in your repertoire that have proven to be audience pleasers.",
+								"Todo bardo de éxito es conocido por una obra de arte interpretativo, normalmente una canción o un poema que encandila a quien quiera que la escuche. Estas piezas son capaces de cambiar la vida del público o, por lo menos, de hacer que hablen de ella durante años.",
+								"Si tu personaje está empezando, tu obra característica probablemente aún no ha llegado, pero, para poder ganarte la vida con tu profesión, seguro que ya tienes dos o tres piezas que han sido un éxito en tu repertorio.",
 								{
 									"type": "table",
-									"caption": "Defining Work",
+									"caption": "Obra característica",
 									"colLabels": [
 										"{@dice d6}",
-										"Defining Work"
+										"Obra característica"
 									],
 									"colStyles": [
 										"col-1 text-center",
@@ -666,7 +659,7 @@
 													"exact": 1
 												}
 											},
-											"\"The Three Flambinis,\" a ribald song concerning mistaken identities and unfettered desire"
+											"\"Los tres flambinis\", una atrevida canción de identidades equivocadas y deseo sin trabas."
 										],
 										[
 											{
@@ -675,7 +668,7 @@
 													"exact": 2
 												}
 											},
-											"\"Waltz of the Myconids,\" an upbeat tune that children in particular enjoy"
+											"\"El vals de los micónidos\", una alegre melodía que gusta especialmente a los niños."
 										],
 										[
 											{
@@ -684,7 +677,7 @@
 													"exact": 3
 												}
 											},
-											"\"Asmodeus's Golden Arse,\" a dramatic poem you claim was inspired by your personal visit to Avernus"
+											"\"El trasero dorado de Asmodeo\", un poema dramático cuya inspiración fue tu supuesta visita personal al Averno."
 										],
 										[
 											{
@@ -693,7 +686,7 @@
 													"exact": 4
 												}
 											},
-											"\"The Pirates of Luskan,\" your firsthand account of being kidnapped by sea reavers as a child"
+											"\"Los piratas de Luskan\", un relato de primera mano de tu secuestro por unos piratas cuando eras solo un niño."
 										],
 										[
 											{
@@ -702,7 +695,7 @@
 													"exact": 5
 												}
 											},
-											"\"A Hoop, Two Pigeons, and a Hell Hound,\" a subtle parody of an incompetent noble"
+											"\"Un aro, dos pichones y un sabueso infernal\", una sutil parodia de un noble incompetente."
 										],
 										[
 											{
@@ -711,7 +704,7 @@
 													"exact": 6
 												}
 											},
-											"\"A Fool in the Abyss,\" a comedic poem about a jester's travels among demons"
+											"\"Un pardillo en el Abismo\", poema cómico sobre un bufón y sus viajes entre demonios."
 										]
 									]
 								}
@@ -719,16 +712,16 @@
 						},
 						{
 							"type": "entries",
-							"name": "Instrument",
+							"name": "Instrumento",
 							"entries": [
-								"In a bard's quest for the ultimate performance and the highest acclaim, one's instrument is at least as important as one's vocal ability. The instrument's quality of manufacture is a critical factor, of course; the best ones make the best music, and some bards are continually on the lookout for an improvement. Perhaps just as important, though, is the instrument's own entertainment value; those that are bizarrely constructed or made of exotic materials are likely to leave a lasting impression on an audience.",
-								"You might have an \"off the rack\" instrument, perhaps because it's all you can afford right now. Or, if your first instrument was gifted to you, it might be of a more elaborate sort. Are you satisfied with the instrument you have, or do you aspire to replace it with something truly distinctive?",
+								"En la búsqueda de un bardo de la interpretación definitiva y el máximo aplauso, su instrumento es tan importante como su habilidad vocal. La calidad de su manufactura es, por tanto, crítica: los mejores instrumentos crean la mejor música, por lo que algunos bardos no paran de buscar uno mejor. Pero quizá sea igual de importante el impacto que pueda causar el instrumento en sí mismo. Es más probable que aquellos construidos de forma extraña o con materiales exóticos dejen un recuerdo duradero en el público.",
+								"Puede que tu instrumento actual sea \"de tienda\", porque no te podías permitir otra cosa, o que haya sido un regalo y sea muy elaborado. ¿Estás satisfecho con el que tienes o quieres reemplazarlo por uno realmente peculiar?",
 								{
 									"type": "table",
-									"caption": "Instrument",
+									"caption": "Instrumento",
 									"colLabels": [
 										"{@dice d6}",
-										"Instrument"
+										"Instrumento"
 									],
 									"colStyles": [
 										"col-1 text-center",
@@ -742,7 +735,7 @@
 													"exact": 1
 												}
 											},
-											"A masterfully crafted halfling fiddle"
+											"Un violín mediano de excelente manufactura "
 										],
 										[
 											{
@@ -751,7 +744,7 @@
 													"exact": 2
 												}
 											},
-											"A mithral {@item horn|PHB} made by elves"
+											"Un {@item cuerno|PHB-ES} de mithral hecho por elfos"
 										],
 										[
 											{
@@ -760,7 +753,7 @@
 													"exact": 3
 												}
 											},
-											"A zither made with drow spider silk"
+											"Una citara fabricada con seda de araña drow"
 										],
 										[
 											{
@@ -769,7 +762,7 @@
 													"exact": 4
 												}
 											},
-											"An orcish {@item drum|PHB}"
+											"Un {@item tambor|PHB-ES} orco"
 										],
 										[
 											{
@@ -778,7 +771,7 @@
 													"exact": 5
 												}
 											},
-											"A wooden bullywug croak box"
+											"Una caja de madera que croa como un bullywug"
 										],
 										[
 											{
@@ -787,7 +780,7 @@
 													"exact": 6
 												}
 											},
-											"A tinker's harp of gnomish design"
+											"El arpa de un manitas, de diseño gnomo"
 										]
 									]
 								}
@@ -795,16 +788,16 @@
 						},
 						{
 							"type": "entries",
-							"name": "Embarrassment",
+							"name": "Vergüenza",
 							"entries": [
-								"Almost every bard has suffered at least one bad experience in front of an audience, and chances are you're no exception. No one becomes famous right away, after all; perhaps you had a few small difficulties early in your career, or maybe it took you a while to restore your reputation after one agonizing night when the fates conspired to bring about your theatrical ruin.",
-								"The ways that a performance can go wrong are as varied as the fish in the sea. No matter what sort of disaster might occur, however, a bard has the courage and the confidence to rebound from it—either pressing on with the show (if possible) or promising to come back tomorrow with a new performance that's guaranteed to please.",
+								"Casi cualquier bardo ha sufrido al menos una mala experiencia de cara al público, y lo normal es que tú no seas la excepción. Al fin y al cabo, nadie se vuelve famoso de golpe. Quizá tuviste alguna dificultad al principio de tu carrera o necesitaste tiempo para limpiar tu reputación tras una noche agónica en la que el destino conspiró para traer la ruina a tus interpretaciones.",
+								"Una actuación puede ir mal de tantas maneras como peces hay en el mar. Pero, sea cual sea el desastre, un bardo tiene el coraje y la confianza necesaria para recuperarse tras el descalabro, ya sea continuando la actuación, si es posible, o prometiendo volver mañana con un éxito seguro.",
 								{
 									"type": "table",
-									"caption": "Embarrassment",
+									"caption": "Vergüenzas",
 									"colLabels": [
 										"{@dice d6}",
-										"Embarrassment"
+										"Vergüenza"
 									],
 									"colStyles": [
 										"col-1 text-center",
@@ -818,7 +811,7 @@
 													"exact": 1
 												}
 											},
-											"The time when your comedic song, \"Big Tom's Hijinks\"—which, by the way, you thought was brilliant—did not go over well with Big Tom"
+											"Esa vez que tu canción cómica \"Las travesuras del Gran Tom\" (que, por cierto, crees que es brillante) no le sentó bien al Gran Tom."
 										],
 										[
 											{
@@ -827,7 +820,7 @@
 													"exact": 2
 												}
 											},
-											"The matinee performance when a circus's owlbear got loose and terrorized the crowd"
+											"La matiné en la que el oso lechuza del circo escapó y aterrorizó al público."
 										],
 										[
 											{
@@ -836,7 +829,7 @@
 													"exact": 3
 												}
 											},
-											"When your opening song was your enthusiastic but universally hated rendition of \"Song of the Froghemoth\""
+											"Cuando tu primer acto fue tu entusiástica, pero universalmente aborrecida, interpretación de \"La canción del ranamot\"."
 										],
 										[
 											{
@@ -845,7 +838,7 @@
 													"exact": 4
 												}
 											},
-											"The first and last public performance of \"Mirt, Man about Town\""
+											"La primera y última interpretación en público de \"Mirt, hombre de mundo\"."
 										],
 										[
 											{
@@ -854,7 +847,7 @@
 													"exact": 5
 												}
 											},
-											"The time on stage when your wig caught fire and you threw it down—which set fire to the stage"
+											"La vez que tu peluca se prendió fuego y la tiraste al suelo, incendiando el escenario."
 										],
 										[
 											{
@@ -863,7 +856,7 @@
 													"exact": 6
 												}
 											},
-											"When you sat on your {@item lute|PHB} by mistake during the final stanza of \"Starlight Serenade\""
+											"Cuando te sentaste por error en tu {@item laúd|PHB-ES} durante la última estrofa de \"Serenata a la luz de las estrellas\"."
 										]
 									]
 								}
@@ -871,33 +864,33 @@
 						},
 						{
 							"type": "entries",
-							"name": "A Bard's Muse",
+							"name": "La musa del bardo",
 							"entries": [
-								"Naturally, every bard has a repertoire of songs and stories. Some bards are generalists who can draw from a wide range of topics for each performance, and who take pride in their versatility. Others adopt a more personal approach to their art, driven by their attachment to a muse—a particular concept that inspires much of what those bards do in front of an audience.",
-								"A bard who follows a muse generally does so to gain a deeper understanding of what that muse represents and how to best convey that understanding to others through performance.",
-								"If your bard character has a muse, it could be one of the three described here, or one of your own devising.",
+								"Como es natural, todo bardo posee un repertorio de canciones e historias. Algunos son generalistas, capaces de recurrir a una amplia variedad de temas para cada actuación, y están orgullosos de su versatilidad. Otros tienen un enfoque más personal en su arte, llevados por su apego a una musa, un concepto especial que inspira mucho de lo que esos artistas despliegan delante de una audiencia.",
+								"Un bardo que sigue a una musa normalmente lo hace para ganar una comprensión más profunda de lo que esta representa, con el fin de ser capaz de transmitir este conocimiento a otros a través de su interpretación.",
+								"Si tu personaje bardo tiene una musa, podría ser una de las tres descritas aquí, pero también otra creada por ti.",
 								{
 									"type": "entries",
 									"entries": [
 										{
 											"type": "entries",
-											"name": "Nature",
+											"name": "Naturaleza",
 											"entries": [
-												"You feel a kinship with the natural world, and its beauty and mystery inspire you. For you, a tree is deeply symbolic, its roots delving into the dark unknown to draw forth the power of the earth, while its branches reach toward the sun to nourish their flowers and fruit. Nature is the ancient witness who has seen every kingdom rise and fall, even those whose names have been forgotten and wait to be rediscovered. The gods of nature share their secrets with druids and sages, opening their hearts and minds to new ways of seeing, and as with those individuals, you find that your creativity blossoms while you wander in an open field of waving grass or walk in silent reverence through a grove of ancient oaks."
+												"Sientes una afinidad por la naturaleza. Su belleza y misterio te inspiran. Para ti, un árbol es profundamente simbólico. Sus profundas raíces ahondan en lo desconocido para extraer el poder de la tierra, mientras sus ramas se estiran hacia el sol para alimentar sus flores y fruta. La naturaleza ha sido testigo del alzamiento y caída de todos los reinos, incluso aquellos cuyos nombres han sido olvidados y esperan ser redescubiertos. Los dioses de la naturaleza comparten sus secretos con druidas y sabios, abriendo sus corazones y mentes a nuevas maneras de ver. Tú, al igual que ellos, sientes que tu creatividad florece cuando vagas por un campo abierto de ondulada hierba o cuando caminas en silencio por una arboleda de robles ancianos."
 											]
 										},
 										{
 											"type": "entries",
-											"name": "Love",
+											"name": "Amor",
 											"entries": [
-												"You are on a quest to identify the essence of true love. Though you do not disdain the superficial love of flesh and form, the deeper form of love that can inspire thousands or bring joy to one's every moment is what you are interested in. Love of this sort takes on many forms, and you can see its presence everywhere—from the sparkling of a beautiful gem to the song of a simple fisher thanking the sea for its bounty. You are on the trail of love, that most precious and mysterious of emotions, and your search fills your stories and your songs with vitality and passion."
+												"Buscas identificar la esencia del amor verdadero. Aunque no desdeñas el amor superficial de la carne y el aspecto, lo que realmente te interesa es esa forma de amor profundo que puede inspirar a miles o llenar de alegría cada pequeño momento. El amor de este tipo es omnipresente, por lo que puede tomar muchos aspectos: desde el brillo de una piedra preciosa a la canción de un simple pescador, que agradece al mar su abundancia. Sigues el rastro del amor, la emoción más preciosa y misteriosa de todas y, así, tu búsqueda llena tus historias y canciones con vitalidad y pasión."
 											]
 										},
 										{
 											"type": "entries",
-											"name": "Conflict",
+											"name": "Conflicto",
 											"entries": [
-												"Drama embodies conflict, and the best stories have conflict as a key element. From the morning-after tale of a tavern brawl to the saga of an epic battle, from a lover's spat to a rift between powerful dynasties, conflict is what inspires tale-tellers like you to create your best work. Conflict can bring out the best in some people, causing their heroic nature to shine forth and transform the world, but it can cause others to gravitate toward darkness and fall under the sway of evil. You strive to experience or witness all forms of conflict, great and small, so as to study this eternal aspect of life and immortalize it in your words and music."
+												"El drama supone el enfrentamiento encarnado: las mejores historias giran alrededor del conflicto. Desde la historia de la mañana siguiente de una pelea de taberna a la saga que recuerda una batalla épica; desde una disputa de enamorados a una pugna entre poderosas dinastías, el conflicto es lo que inspira a los cuentacuentos a crear sus mejores obras. El conflicto puede sacar lo mejor de algunos, haciendo que brille su naturaleza heroica y transformen el mundo, pero también provoca que otros se vean atraídos hacia la oscuridad y caigan bajo el influjo del mal. Aspiras a experimentar o ser testigo de todas las formas de conflicto, grandes y pequeñas, para estudiar este aspecto eterno de la vida y poder inmortalizarlo en tus palabras y tu música."
 											]
 										}
 									]
@@ -905,7 +898,7 @@
 							]
 						}
 					],
-					"source": "XGE",
+					"source": "XGE-ES",
 					"page": 12
 				}
 			]
@@ -913,59 +906,59 @@
 	],
 	"classFeature": [
 		{
-			"name": "Bardic Inspiration",
+			"name": "Inspiración Bárdica",
 			"source": "PHB-ES",
-			"page": 51,
+			"page": 53,
 			"srd": true,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"level": 1,
 			"entries": [
-				"You can inspire others through stirring words or music. To do so, you use a bonus action on your turn to choose one creature other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a {@dice d6}.",
-				"Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after it rolls the {@dice d20} before deciding to use the Bardic Inspiration die, but must decide before the DM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A creature can have only one Bardic Inspiration die at a time.",
-				"You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain any expended uses when you finish a long rest.",
-				"Your Bardic Inspiration die changes when you reach certain levels in this class. The die becomes a {@dice d8} at 5th level, a {@dice d10} at 10th level, and a {@dice d12} at 15th level."
+				"Puedes recurrir a tus palabras o a tu música, especialmente emotivas, para inspirar a las demás. Para hacer esto, deberás utilizar una acción adicional durante tu turno y elegir a una criatura que no seas tú, pueda oírte y esté a 60 pies o menos de ti. Dicho objetivo recibe un dado de Inspiración Bárdica, {@dice d6}.",
+				"Una sola vez, antes de que pasen 10 minutos, la criatura puede tirar el dado y añadir el resultado a una de sus pruebas de característica, tiradas de ataque o tiradas de salvación. Puede esperar a ver el resultado del {@dice d20} antes de elegir si usar el dado de Inspiración Bárdica, pero debe tomar la decisión antes de que el DM diga si la tirada tiene éxito o no. Una vez se tira el dado de Inspiración Bárdica, este se pierde. Además, cada criatura solo puede tener un dado de Inspiración Bárdica al mismo tiempo.",
+				"Puedes utilizar este rasgo tantas veces como tu modificador por Carisma (mínimo una vez). Recuperas todos los usos tras finalizar un descanso largo.",
+				"Tu dado de Inspiración Bárdica cambia cuando alcanzas ciertos niveles de esta clase: pasa a ser {@dice d8} a nivel 5, {@dice d10} a nivel 10 y {@dice d12} a nivel 15."
 			]
 		},
 		{
-			"name": "Spellcasting",
+			"name": "Lanzamiento de Conjuros",
 			"source": "PHB-ES",
-			"page": 51,
+			"page": 52,
 			"srd": true,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"level": 1,
 			"entries": [
-				"You have learned to untangle and reshape the fabric of reality in harmony with your wishes and music. Your spells are part of your vast repertoire, magic that you can tune to different situations. See {@book chapter 10|PHB|10} for the general rules of spellcasting and {@book chapter 11|PHB|11} for the {@filter bard spell list|spells|class=bard}.",
+				"Has aprendido a desenmarañar y remodelar el tejido de la realidad, en armonía con tus deseos y la música. Los conjuros que puedes lanzar son parte de tu vasto repertorio; una magia que afinas para adaptarte a diferentes situaciones. El {@book capítulo 10|PHB-ES|10} contiene las reglas de lanzamiento de conjuros y el {@book capítulo 11|PHB-ES|11} la {@filter lista de conjuros de bardo|spells|class=bardo (PHB-ES)}.",
 				{
 					"type": "entries",
-					"name": "Cantrips",
+					"name": "Trucos",
 					"entries": [
-						"You know two cantrips of your choice from the bard spell list. You learn additional bard cantrips of your choice at higher levels, learning a 3rd cantrip at 4th level and a 4th at 10th level."
+						"Conoces dos trucos de tu elección escogidos de entre los de la lista de conjuros de bardo. Podrás elegir más trucos de bardo cuando llegues a niveles más altos, como se indica en la columna “trucos conocidos” de la tabla del bardo."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Spell Slots",
+					"name": "Espacios de conjuro",
 					"entries": [
-						"The Bard table shows how many spell slots you have to cast your {@filter bard spells|spells|class=bard} of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
-						"For example, if you know the 1st-level spell {@spell cure wounds} and have a 1st-level and a 2nd-level spell slot available, you can cast {@spell cure wounds} using either slot."
+						"La tabla del bardo muestra de cuantos espacios de conjuro dispones para lanzar {@filter conjuros de bardo|spells|class=bardo (PHB-ES)} de nivel 1 y superiores. Para lanzar uno de estos conjuros deberás invertir un espacio de al menos el nivel del conjuro. Recuperas todos los espacios utilizados tras finalizar un descanso largo.",
+						"Si, por ejemplo, conoces el conjuro de nivel 1 {@spell curar heridas|PHB-ES} y posees un espacio de conjuro de nivel 1 y otro de nivel 2, podrías lanzar {@spell curar heridas|PHB-ES} empleando cualquiera de los dos espacios."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Spells Known of 1st Level and Higher",
+					"name": "Conjuros conocidos de nivel 1 y superiores",
 					"entries": [
-						"You know four 1st-level spells of your choice from the bard spell list.",
-						"You learn an additional bard spell of your choice at each level except 12th, 16th, 19th, and 20th. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 3rd level in this class, you can learn one new spell of 1st or 2nd level.",
-						"Additionally, when you gain a level in this class, you can choose one of the bard spells you know and replace it with another spell from the bard spell list, which also must be of a level for which you have spell slots."
+						"Conoces cuatro conjuros de nivel 1 de tu elección, escogidos de entre la lista de conjuros de bardo.",
+						"La columna “conjuros conocidos” de la tabla del bardo te indica cuando podrás aprender más conjuros de bardo y cuántos elegir. Estos conjuros deben ser de un nivel para el que tengas espacios de conjuro, tal y como se indica en la tabla. Así, cuando subes a nivel 3 en esta clase puedes aprender un conjuro nuevo, que puede ser de nivel 1 o 2.",
+						"Además, cada vez que subas un nivel de esta clase podrás elegir uno de los conjuros de bardo que ya conoces y reemplazarlo por otro de los que aparecen en la lista de conjuros de bardo. Este reemplazo deberá ser de un nivel para el que poseas espacios de conjuro."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Spellcasting Ability",
+					"name": "Aptitud mágica",
 					"entries": [
-						"Charisma is your spellcasting ability for your bard spells. Your magic comes from the heart and soul you pour into the performance of your music or oration. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a bard spell you cast and when making an attack roll with one.",
+						"El Carisma es tu aptitud mágica en lo que a conjuros de bardo respecta, ya que tu magia proviene del corazón y el alma que pones cuando interpretas tus canciones o discursos. Así, utilizarás tu Carisma siempre que un conjuro de bardo haga referencia a tu aptitud mágica. Además, también usarás tu modificador por Carisma para determinar la CD de las tiradas de salvación y las tiradas de ataque de los conjuros de bardo que lances.",
 						{
 							"type": "abilityDc",
 							"name": "Spell",
@@ -984,359 +977,359 @@
 				},
 				{
 					"type": "entries",
-					"name": "Ritual Casting",
+					"name": "Lanzamiento ritual",
 					"entries": [
-						"You can cast any bard spell you know as a ritual if that spell has the ritual tag."
+						"Puedes lanzar de forma ritual aquellos conjuros de bardo que conozcas y estén marcados come \"ritual\"."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Spellcasting Focus",
+					"name": "Canalizador mágico",
 					"entries": [
-						"You can use a {@item musical instrument|PHB} as a spellcasting focus for your bard spells."
+						"Puedes utilizar un {@item instrumento musical|PHB-ES} como canalizador mágico para los conjuros de bardo."
 					]
 				}
 			]
 		},
 		{
-			"name": "Jack of All Trades",
+			"name": "Aprendiz de Mucho",
 			"source": "PHB-ES",
-			"page": 51,
+			"page": 54,
 			"srd": true,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"level": 2,
 			"entries": [
-				"Starting at 2nd level, you can add half your proficiency bonus, rounded down, to any ability check you make that doesn't already include your proficiency bonus."
+				"A partir de nivel 2, puedes añadir la mitad de tu bonificador por competencia (redondeado hacia abajo) a cualquier prueba de característica que hagas que no se beneficie ya de tu bonificador por competencia."
 			]
 		},
 		{
-			"name": "Magical Inspiration",
+			"name": "Inspiración Mágica",
 			"source": "TCE-ES",
-			"page": 27,
-			"className": "Bard",
+			"page": 28,
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"level": 2,
 			"isClassFeatureVariant": true,
 			"entries": [
-				"{@i 2nd-level bard {@variantrule optional class features|tce|optional feature}}",
-				"If a creature has a Bardic Inspiration die from you and casts a spell that restores hit points or deals damage, the creature can roll that die and choose a target affected by the spell. Add the number rolled as a bonus to the hit points regained or the damage dealt. The Bardic Inspiration die is then lost."
+				"{@i {@variantrule Rasgos de clase opcionales|TCE-ES|Rasgo opcional} de bardo de nivel 2}",
+				"Si una criatura tiene un dado de Inspiración Bárdica de ti y lanza un conjuro que haga recuperar puntos de golpe o cause daño, podrá tirar ese dado y elegir un objetivo afectado por el conjuro. Suma el resultado como bonificador a los puntos de golpe recuperados o al daño causado. Luego, el dado de Inspiración Bárdica se pierde."
 			]
 		},
 		{
-			"name": "Song of Rest (d6)",
+			"name": "Canción de Descanso (d6)",
 			"source": "PHB-ES",
-			"page": 51,
+			"page": 54,
 			"srd": true,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"level": 2,
 			"entries": [
-				"Beginning at 2nd level, you can use soothing music or oration to help revitalize your wounded allies during a short rest. If you or any friendly creatures who can hear your performance regain hit points by spending Hit Dice at the end of the short rest, each of those creatures regains an extra {@dice 1d6} hit points.",
-				"The extra hit points increase when you reach certain levels in this class: to {@dice 1d8} at 9th level, to {@dice 1d10} at 13th level, and to {@dice 1d12} at 17th level."
+				"A partir de nivel 2, puedes recurrir a palabras o canciones reconfortantes para ayudar a tus aliados heridos a recuperarse durante un descanso corto. Si cualquiera de las criaturas amistosas (incluyéndote a ti) que escuchan tu interpretación gasta Dados de Golpe para recuperar puntos de golpe al final del descanso corto, cada una de ellas recobrará {@dice 1d6} puntos de golpe adicionales.",
+				"Estos puntos de golpe adicionales aumentan cuando alcanzas ciertos niveles de esta clase: a {@dice 1d8} a nivel 9, a {@dice 1d10} a nivel 13 y a {@dice 1d12} a nivel 17."
 			]
 		},
 		{
-			"name": "Bard College",
+			"name": "Colegio Bárdico",
 			"source": "PHB-ES",
-			"page": 51,
+			"page": 54,
 			"srd": true,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"level": 3,
 			"entries": [
-				"At 3rd level, you delve into the advanced techniques of a bard college of your choice from the list of available colleges. Your choice grants you features at 3rd level and again at 6th and 14th level."
+				"A nivel 3 profundizas en las técnicas avanzadas de un colegio bárdico a tu elección: el Colegio del Conocimiento o el Colegio del Valor. Ambos están explicados al final de la descripción de esta clase. Esta elección te proporciona ciertos rasgos cuando alcanzas los niveles 3, 6 y 14."
 			]
 		},
 		{
-			"name": "Expertise",
+			"name": "Pericia",
 			"source": "PHB-ES",
-			"page": 51,
+			"page": 54,
 			"srd": true,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"level": 3,
 			"entries": [
-				"At 3rd level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.",
-				"At 10th level, you can choose another two skill proficiencies to gain this benefit."
+				"A nivel 3, escoge dos habilidades en las que seas competente. Tu bonificador por competencia se duplica para cualquier prueba de característica que hagas utilizando cualquiera de las dos habilidades elegidas.",
+				"A nivel 10 puedes elegir otras dos habilidades en las que seas competente, para que estas también disfruten de este beneficio."
 			]
 		},
 		{
-			"name": "Ability Score Improvement",
+			"name": "Mejora de Característica",
 			"source": "PHB-ES",
-			"page": 51,
+			"page": 54,
 			"srd": true,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"level": 4,
 			"entries": [
-				"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+				"Cuando alcances el nivel 4, podrás escoger una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
 			]
 		},
 		{
-			"name": "Bardic Versatility",
+			"name": "Versatilidad Bárdica",
 			"source": "TCE-ES",
-			"page": 27,
-			"className": "Bard",
+			"page": 28,
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"level": 4,
 			"isClassFeatureVariant": true,
 			"entries": [
-				"{@i 4th-level bard {@variantrule optional class features|tce|optional feature}}",
-				"Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can do one of the following, representing a change in focus as you use your skills and magic:",
+				"{@i {@variantrule Rasgos de clase opcionales|TCE-ES|Rasgo opcional} de bardo de nivel 4}",
+				"Cuando alcanzas un nivel en esta clase que otorga el rasgo Mejora de Característica, puedes hacer una de las cosas que se explican a continuación, lo que representa un cambio en el enfoque de cómo usas tus habilidades y tu magia:",
 				{
 					"type": "list",
 					"items": [
-						"Replace one of the skills you chose for the Expertise feature with one of your other skill proficiencies that isn't benefiting from Expertise.",
-						"Replace one cantrip you learned from this class's Spellcasting feature with another cantrip from the {@filter bard spell list|spells|level=0|class=bard}."
+						"Sustituir una de las habilidades que elegiste para el rasgo Pericia por una de tus otras competencias en habilidades que no se beneficie de Pericia.",
+						"Sustituir un truco aprendido del rasgo Lanzamiento de Conjuros de esta clase por otro truco de la {@filter lista de conjuros de bardo|spells|level=0|class=bardo (PHB-ES)}."
 					]
 				}
 			]
 		},
 		{
-			"name": "Bardic Inspiration (d8)",
+			"name": "Inspiración Bárdica (d8)",
 			"source": "PHB-ES",
-			"page": 51,
+			"page": 54,
 			"srd": true,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"level": 5,
 			"entries": [
-				"At 5th level, your Bardic Inspiration die changes to a {@dice d8}."
+				"A nivel 5, tu dado de Inspiración Bárdica cambia a un {@dice d8}."
 			]
 		},
 		{
-			"name": "Font of Inspiration",
+			"name": "Fuente de Inspiración",
 			"source": "PHB-ES",
-			"page": 51,
+			"page": 54,
 			"srd": true,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"level": 5,
 			"entries": [
-				"Beginning when you reach 5th level, you regain all of your expended uses of Bardic Inspiration when you finish a short or long rest."
+				"A partir de nivel 5 recuperas todos los usos de Inspiración Bárdica tras hacer un descanso corto o largo."
 			]
 		},
 		{
-			"name": "Bard College feature",
+			"name": "Rasgo de Colegio Bárdico",
 			"source": "PHB-ES",
-			"page": 51,
+			"page": 54,
 			"srd": true,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"level": 6,
 			"entries": [
-				"At 6th level, you gain a feature from your Bard College."
+				"A nivel 6 ganas un rasgo de tu Colegio Bárdico."
 			]
 		},
 		{
-			"name": "Countercharm",
+			"name": "Contraencantamiento",
 			"source": "PHB-ES",
-			"page": 51,
+			"page": 54,
 			"srd": true,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"level": 6,
 			"entries": [
-				"At 6th level, you gain the ability to use musical notes or words of power to disrupt mind-influencing effects. As an action, you can start a performance that lasts until the end of your next turn. During that time, you and any friendly creatures within 30 feet of you have advantage on saving throws against being {@condition frightened} or {@condition charmed}. A creature must be able to hear you to gain this benefit. The performance ends early if you are {@condition incapacitated} or silenced or if you voluntarily end it (no action required)."
+				"A partir de nivel 6, obtienes la capacidad de utilizar notas musicales o palabras de poder para interrumpir efectos que afecten a la mente. Como acción, puedes dar comienzo a una interpretación que durará hasta el final de tu siguiente turno. Durante este periodo, tanto tú como las criaturas amistosas a 30 pies o menos de ti tendréis ventaja en las tiradas de salvación para evitar ser {@condition Asustado|PHB-ES|asustados} o {@condition Hechizado|PHB-ES|hechizados}. Para que una criatura pueda beneficiarse de este efecto deberá ser capaz de oírte. La interpretación terminará si quedas {@condition incapacitado|PHB-ES}, eres silenciado o decides finalizarla voluntariamente (no es necesario gastar ninguna acción)."
 			]
 		},
 		{
-			"name": "Ability Score Improvement",
+			"name": "Mejora de Característica",
 			"source": "PHB-ES",
-			"page": 51,
+			"page": 54,
 			"srd": true,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"level": 8,
 			"entries": [
-				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+				"Cuando alcances el nivel 8, podrás escoger una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
 			]
 		},
 		{
-			"name": "Song of Rest (d8)",
+			"name": "Canción de Descanso (d8)",
 			"source": "PHB-ES",
-			"page": 51,
+			"page": 54,
 			"srd": true,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"level": 9,
 			"entries": [
-				"At 9th level, the extra hit points gained from Song of Rest increases to {@dice 1d8}."
+				"A nivel 9, los puntos de golpe adicionales recuperados por Canción de Descanso aumentan a un {@dice 1d8}."
 			]
 		},
 		{
-			"name": "Bardic Inspiration (d10)",
+			"name": "Inspiración Bárdica (d10)",
 			"source": "PHB-ES",
-			"page": 51,
+			"page": 54,
 			"srd": true,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"level": 10,
 			"entries": [
-				"At 10th level, your Bardic Inspiration die changes to a {@dice d10}."
+				"A nivel 10, tu dado de Inspiración Bárdica cambia a un {@dice d10}."
 			]
 		},
 		{
-			"name": "Expertise",
+			"name": "Pericia",
 			"source": "PHB-ES",
-			"page": 51,
+			"page": 54,
 			"srd": true,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"level": 10,
 			"entries": [
-				"At 10th level, you can choose another two skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies."
+				"A nivel 10 puedes elegir otras dos habilidades en las que seas competente. Tu bonificador por competencia se duplica para cualquier prueba de característica que hagas utilizando cualquiera de las dos habilidades elegidas."
 			]
 		},
 		{
-			"name": "Magical Secrets",
+			"name": "Secretos Mágicos",
 			"source": "PHB-ES",
-			"page": 51,
+			"page": 54,
 			"srd": true,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"level": 10,
 			"entries": [
-				"By 10th level, you have plundered magical knowledge from a wide spectrum of disciplines. Choose two spells from any classes, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip.",
-				"The chosen spells count as bard spells for you and are included in the number in the Spells Known column of the Bard table.",
-				"You learn two additional spells from any classes at 14th level and again at 18th level."
+				"Para cuando llegas a nivel 10 ya has saqueado conocimientos mágicos pertenecientes a un amplio espectro de disciplinas. Escoge dos conjuros de cualquier clase (no tienen por qué ser los dos de la misma), esta incluida. Ambos conjuros deben ser de un nivel que puedas lanzar, tal y como se indica en la tabla del bardo, o un truco",
+				"Estos conjuros se consideran, en lo que a ti respecta, conjuros de bardo, y cuentan para el número de conjuros conocidos que puedes tener (consulta la tabla del bardo).",
+				"Aprendes otros dos conjuros de cualquier clase cuando alcanzas los niveles 14 y 18."
 			]
 		},
 		{
-			"name": "Ability Score Improvement",
+			"name": "Mejora de Característica",
 			"source": "PHB-ES",
-			"page": 51,
+			"page": 54,
 			"srd": true,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"level": 12,
 			"entries": [
-				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+				"Cuando alcances el nivel 12, podrás escoger una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
 			]
 		},
 		{
-			"name": "Song of Rest (d10)",
+			"name": "Canción de Descanso (d10)",
 			"source": "PHB-ES",
-			"page": 51,
+			"page": 54,
 			"srd": true,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"level": 13,
 			"entries": [
-				"At 13th level, the extra hit points gained from Song of Rest increases to {@dice 1d10}."
+				"A nivel 13, los puntos de golpe adicionales recuperados por Canción de Descanso aumentan a un {@dice 1d10}."
 			]
 		},
 		{
-			"name": "Bard College feature",
+			"name": "Rasgo de Colegio Bárdico",
 			"source": "PHB-ES",
-			"page": 51,
+			"page": 54,
 			"srd": true,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"level": 14,
 			"entries": [
-				"At 14th level, you gain a feature from your Bard College."
+				"A nivel 14 ganas un rasgo de tu Colegio Bárdico."
 			]
 		},
 		{
-			"name": "Magical Secrets",
+			"name": "Secretos Mágicos",
 			"source": "PHB-ES",
-			"page": 51,
+			"page": 54,
 			"srd": true,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"level": 14,
 			"entries": [
-				"At 14th level, choose two additional spells from any classes, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip.",
-				"The chosen spells count as bard spells for you and are included in the number in the Spells Known column of the Bard table."
+				"A nivel 14, escoge dos conjuros de cualquier clase (no tienen por qué ser los dos de la misma), esta incluida. Ambos conjuros deben ser de un nivel que puedas lanzar, tal y como se indica en la tabla del bardo, o un truco",
+				"Estos conjuros se consideran, en lo que a ti respecta, conjuros de bardo, y cuentan para el número de conjuros conocidos que puedes tener (consulta la tabla del bardo)."
 			]
 		},
 		{
-			"name": "Bardic Inspiration (d12)",
+			"name": "Inspiración Bárdica (d12)",
 			"source": "PHB-ES",
-			"page": 51,
+			"page": 54,
 			"srd": true,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"level": 15,
 			"entries": [
-				"At 15th level, your Bardic Inspiration die changes to a {@dice d12}."
+				"A nivel 15, tu dado de Inspiración Bárdica cambia a un {@dice d12}."
 			]
 		},
 		{
-			"name": "Ability Score Improvement",
+			"name": "Mejora de Característica",
 			"source": "PHB-ES",
-			"page": 51,
+			"page": 54,
 			"srd": true,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"level": 16,
 			"entries": [
-				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+				"Cuando alcances el nivel 16, podrás escoger una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
 			]
 		},
 		{
-			"name": "Song of Rest (d12)",
+			"name": "Canción de Descanso (d12)",
 			"source": "PHB-ES",
-			"page": 51,
+			"page": 54,
 			"srd": true,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"level": 17,
 			"entries": [
-				"At 17th level, the extra hit points gained from Song of Rest increases to {@dice 1d12}."
+				"A nivel 17, los puntos de golpe adicionales recuperados por Canción de Descanso aumentan a un {@dice 1d12}."
 			]
 		},
 		{
-			"name": "Magical Secrets",
+			"name": "Secretos Mágicos",
 			"source": "PHB-ES",
-			"page": 51,
+			"page": 54,
 			"srd": true,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"level": 18,
 			"entries": [
-				"At 18th level, choose two additional spells from any class, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip.",
-				"The chosen spells count as bard spells for you and are included in the number in the Spells Known column of the Bard table."
+				"A nivel 18, escoge dos conjuros de cualquier clase (no tienen por qué ser los dos de la misma), esta incluida. Ambos conjuros deben ser de un nivel que puedas lanzar, tal y como se indica en la tabla del bardo, o un truco",
+				"Estos conjuros se consideran, en lo que a ti respecta, conjuros de bardo, y cuentan para el número de conjuros conocidos que puedes tener (consulta la tabla del bardo)."
 			]
 		},
 		{
-			"name": "Ability Score Improvement",
+			"name": "Mejora de Característica",
 			"source": "PHB-ES",
-			"page": 51,
+			"page": 54,
 			"srd": true,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"level": 19,
 			"entries": [
-				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+				"Cuando alcances el nivel 19, podrás escoger una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
 			]
 		},
 		{
-			"name": "Superior Inspiration",
+			"name": "Inspiración Superior",
 			"source": "PHB-ES",
-			"page": 51,
+			"page": 54,
 			"srd": true,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"level": 20,
 			"entries": [
-				"At 20th level, when you roll initiative and have no uses of Bardic Inspiration left, you regain one use."
+				"A partir de nivel 20, si cuando tiras iniciativa no te quedan usos de Inspiración Bárdica, recuperas uno de ellos."
 			]
 		}
 	],
 	"subclass": [
 		{
-			"name": "College of Lore",
-			"shortName": "Lore",
+			"name": "Colegio del Conocimiento",
+			"shortName": "Conocimiento",
 			"source": "PHB-ES",
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"page": 54,
 			"srd": true,
@@ -1356,58 +1349,58 @@
 				}
 			],
 			"subclassFeatures": [
-				"College of Lore|Bard||Lore||3",
-				"Additional Magical Secrets|Bard||Lore||6",
-				"Peerless Skill|Bard||Lore||14"
+				"Colegio del Conocimiento|Bardo|PHB-ES|Conocimiento|PHB-ES|3",
+				"Secretos Mágicos adicionales|Bardo|PHB-ES|Conocimiento|PHB-ES|6",
+				"Habilidad sin Parangón|Bardo|PHB-ES|Conocimiento|PHB-ES|14"
 			]
 		},
 		{
-			"name": "College of Valor",
+			"name": "Colegio del Valor",
 			"shortName": "Valor",
 			"source": "PHB-ES",
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"page": 55,
 			"subclassFeatures": [
-				"College of Valor|Bard||Valor||3",
-				"Extra Attack|Bard||Valor||6",
-				"Battle Magic|Bard||Valor||14"
+				"Colegio del Valor|Bardo|PHB-ES|Valor|PHB-ES|3",
+				"Ataque Adicional|Bardo|PHB-ES|Valor|PHB-ES|6",
+				"Magia de Batalla|Bardo|PHB-ES|Valor|PHB-ES|14"
 			]
 		},
 		{
-			"name": "College of Glamour",
+			"name": "Colegio del Glamour",
 			"shortName": "Glamour",
 			"source": "XGE-ES",
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
-			"page": 14,
+			"page": 15,
 			"additionalSpells": [
 				{
 					"innate": {
 						"6": [
-							"command"
+							"orden imperiosa|PHB-ES"
 						]
 					}
 				}
 			],
 			"subclassFeatures": [
-				"College of Glamour|Bard||Glamour|XGE|3",
-				"Mantle of Majesty|Bard||Glamour|XGE|6",
-				"Unbreakable Majesty|Bard||Glamour|XGE|14"
+				"Colegio del Glamour|Bardo|PHB-ES|Glamour|XGE-ES|3",
+				"Manto de Majestad|Bardo|PHB-ES|Glamour|XGE-ES|6",
+				"Majestad Inquebrantable|Bardo|PHB-ES|Glamour|XGE-ES|14"
 			]
 		},
 		{
-			"name": "College of Swords",
-			"shortName": "Swords",
+			"name": "Colegio de las Espadas",
+			"shortName": "Espadas",
 			"source": "XGE-ES",
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
-			"page": 15,
+			"page": 14,
 			"optionalfeatureProgression": [
 				{
-					"name": "Fighting Style",
+					"name": "Estilo de Combate",
 					"featureType": [
-						"FS:B"
+						"FS_Esp:B"
 					],
 					"progression": {
 						"3": 1
@@ -1415,529 +1408,523 @@
 				}
 			],
 			"subclassFeatures": [
-				"College of Swords|Bard||Swords|XGE|3",
-				"Extra Attack|Bard||Swords|XGE|6",
-				"Master's Flourish|Bard||Swords|XGE|14"
+				"Colegio de las Espadas|Bardo|PHB-ES|Espadas|XGE-ES|3",
+				"Ataque Adicional|Bardo|PHB-ES|Espadas|XGE-ES|6",
+				"Floritura del Maestro|Bardo|PHB-ES|Espadas|XGE-ES|14"
 			]
 		},
 		{
-			"name": "College of Whispers",
-			"shortName": "Whispers",
+			"name": "Colegio de los Susurros",
+			"shortName": "Susurros",
 			"source": "XGE-ES",
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"page": 16,
 			"subclassFeatures": [
-				"College of Whispers|Bard||Whispers|XGE|3",
-				"Mantle of Whispers|Bard||Whispers|XGE|6",
-				"Shadow Lore|Bard||Whispers|XGE|14"
+				"Colegio de los Susurros|Bardo|PHB-ES|Susurros|XGE-ES|3",
+				"Manto de Susurros|Bardo|PHB-ES|Susurros|XGE-ES|6",
+				"Saber de las sombras|Bardo|PHB-ES|Susurros|XGE-ES|14"
 			]
 		},
 		{
-			"name": "College of Creation",
-			"shortName": "Creation",
+			"name": "Colegio de la Creación",
+			"shortName": "Creación",
 			"source": "TCE-ES",
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"page": 28,
 			"subclassFeatures": [
-				"College of Creation|Bard||Creation|TCE|3",
-				"Animating Performance|Bard||Creation|TCE|6",
-				"Creative Crescendo|Bard||Creation|TCE|14"
+				"Colegio de la Creación|Bardo|PHB-ES|Creación|TCE-ES|3",
+				"Interpretación Animadora|Bardo|PHB-ES|Creación|TCE-ES|6",
+				"Crescendo Creativo|Bardo|PHB-ES|Creación|TCE-ES|14"
 			]
 		},
 		{
-			"name": "College of Eloquence",
-			"shortName": "Eloquence",
+			"name": "Colegio de la Elocuencia",
+			"shortName": "Elocuencia",
 			"source": "TCE-ES",
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"page": 29,
-			"otherSources": [
-				{
-					"source": "MOT",
-					"page": 28
-				}
-			],
 			"subclassFeatures": [
-				"College of Eloquence|Bard||Eloquence|TCE|3",
-				"Unfailing Inspiration|Bard||Eloquence|TCE|6",
-				"Universal Speech|Bard||Eloquence|TCE|6",
-				"Infectious Inspiration|Bard||Eloquence|TCE|14"
+				"Colegio de la Elocuencia|Bardo|PHB-ES|Elocuencia|TCE-ES|3",
+				"Inspiración Constante|Bardo|PHB-ES|Elocuencia|TCE-ES|6",
+				"Discurso Universal|Bardo|PHB-ES|Elocuencia|TCE-ES|6",
+				"Inspiración Contagiosa|Bardo|PHB-ES|Elocuencia|TCE-ES|14"
 			]
 		},
 		{
-			"name": "College of Spirits",
-			"shortName": "Spirits",
+			"name": "Colegio de los Espíritus",
+			"shortName": "Espíritus",
 			"source": "VRGR-ES",
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"page": 28,
 			"additionalSpells": [
 				{
 					"known": {
 						"3": [
-							"guidance#c"
+							"guía|PHB-ES#c"
 						]
 					}
 				}
 			],
 			"subclassFeatures": [
-				"College of Spirits|Bard||Spirits|VRGR|3",
-				"Spirit Session|Bard||Spirits|VRGR|6",
-				"Mystical Connection|Bard||Spirits|VRGR|14"
+				"Colegio de los Espíritus|Bardo|PHB-ES|Espíritus|VRGR-ES|3",
+				"Sesión Espiritual|Bardo|PHB-ES|Espíritus|VRGR-ES|6",
+				"Conexión Mística|Bardo|PHB-ES|Espíritus|VRGR-ES|14"
 			]
 		}
 	],
 	"subclassFeature": [
 		{
-			"name": "College of Lore",
+			"name": "Colegio del Conocimiento",
 			"source": "PHB-ES",
 			"page": 54,
 			"srd": true,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Lore",
-			"subclassSource": "PHB",
+			"subclassShortName": "Conocimiento",
+			"subclassSource": "PHB-ES",
 			"level": 3,
 			"entries": [
-				"Bards of the College of Lore know something about most things, collecting bits of knowledge from sources as diverse as scholarly tomes and peasant tales. Whether singing folk ballads in taverns or elaborate compositions in royal courts, these bards use their gifts to hold audiences spellbound. When the applause dies down, the audience members might find themselves questioning everything they held to be true, from their faith in the priesthood of the local temple to their loyalty to the king.",
-				"The loyalty of these bards lies in the pursuit of beauty and truth, not in fealty to a monarch or following the tenets of a deity. A noble who keeps such a bard as a herald or advisor knows that the bard would rather be honest than politic.",
-				"The college's members gather in libraries and sometimes in actual colleges, complete with classrooms and dormitories, to share their lore with one another. They also meet at festivals or affairs of state, where they can expose corruption, unravel lies, and poke fun at self-important figures of authority.",
+				"Los bardos del Colegio del Conocimiento siempre saben algo sobre prácticamente cualquier tema, pues coleccionan perlas de conocimiento procedentes de fuentes muy diversas; desde tratados sobre temas muy especializados hasta cuentos de campesinos. Ya sea cantando baladas populares en una taberna o interpretando elaboradas composiciones en una corte real, estos bardos emplean sus dones para fascinar a sus audiencias. Cuando los aplausos por fin se apagan, los espectadores podrían llegar a plantearse incluso sus creencias más arraigadas; desde la fe en los sacerdotes del templo local hasta su fidelidad al rey.",
+				"Estos bardos depositan su lealtad en la búsqueda de la belleza y la verdad, no en reyes ni en los preceptos de una deidad. Los nobles que recurren a uno de estos bardos como consejero o heraldo saben que este tenderá a comportarse de forma más honesta que diplomática.",
+				"Los miembros de este colegio se reúnen en bibliotecas y, a veces, en auténticos colegios, con sus aulas y dormitorios, en las que comparten con otros sus conocimientos. También se encuentran en festivales o reuniones de estado, en los que pueden sacar a la luz casos de corrupción, desvelar mentiras o reírse de los vanidosos representantes de la autoridad.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Bonus Proficiencies|Bard||Lore||3"
+					"subclassFeature": "Competencias Adicionales|Bardo|PHB-ES|Conocimiento|PHB-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Cutting Words|Bard||Lore||3"
+					"subclassFeature": "Palabras Cortantes|Bardo|PHB-ES|Conocimiento|PHB-ES|3"
 				}
 			]
 		},
 		{
-			"name": "Bonus Proficiencies",
+			"name": "Competencias Adicionales",
 			"source": "PHB-ES",
 			"page": 54,
 			"srd": true,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Lore",
-			"subclassSource": "PHB",
+			"subclassShortName": "Conocimiento",
+			"subclassSource": "PHB-ES",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"When you join the College of Lore at 3rd level, you gain proficiency with three skills of your choice."
+				"Cuando te unes al Colegio del Conocimiento, a nivel 3, ganas competencia en tres habilidades cualquiera, las que elijas."
 			]
 		},
 		{
-			"name": "Cutting Words",
+			"name": "Palabras Cortantes",
 			"source": "PHB-ES",
 			"page": 54,
 			"srd": true,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Lore",
-			"subclassSource": "PHB",
+			"subclassShortName": "Conocimiento",
+			"subclassSource": "PHB-ES",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Also at 3rd level, you learn how to use your wit to distract, confuse, and otherwise sap the confidence and competence of others. When a creature that you can see within 60 feet of you makes an attack roll, an ability check, or a damage roll, you can use your reaction to expend one of your uses of Bardic Inspiration, rolling a Bardic Inspiration die and subtracting the number rolled from the creature's roll. You can choose to use this feature after the creature makes its roll, but before the DM determines whether the attack roll or ability check succeeds or fails, or before the creature deals its damage. The creature is immune if it can't hear you or if it's immune to being {@condition charmed}."
+				"También a nivel 3, aprendes cómo usar tu astucia para distraer, confundir y minar la confianza y aptitudes de otros. Cuando una criatura que puedas ver a 60 pies o menos de ti haga una tirada de ataque, prueba de característica o tirada de daño, podrás emplear tu reacción y gastar uno de los usos de Inspiración Bárdica para tirar el dado de Inspiración Bárdica y restar el número obtenido del resultado de la tirada de la criatura. Puedes elegir utilizar este rasgo después de que la criatura haga su tirada, pero antes de que el DM indique si la tirada de ataque o prueba de característica ha tenido éxito, o la criatura cause el daño. Las criaturas que no puedan oírte o sean inmunes al estado \"{@condition hechizado|PHB-ES}\" no pueden verse afectadas por este rasgo."
 			]
 		},
 		{
-			"name": "Additional Magical Secrets",
+			"name": "Secretos Mágicos adicionales",
 			"source": "PHB-ES",
-			"page": 54,
+			"page": 55,
 			"srd": true,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Lore",
-			"subclassSource": "PHB",
+			"subclassShortName": "Conocimiento",
+			"subclassSource": "PHB-ES",
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"At 6th level, you learn two spells of your choice from any class. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip. The chosen spells count as bard spells for you but don't count against the number of bard spells you know."
+				"A nivel 6, aprendes dos conjuros a tu elección de los de las listas de cualquier clase. Ambos conjuros deben ser de un nivel que puedas lanzar, tal y como se indica en la tabla del bardo, o un truco. Estos conjuros se consideran, en lo que a ti respecta, conjuros de bardo, pero no cuentan para el numero de conjuros conocidos que puedes tener."
 			]
 		},
 		{
-			"name": "Peerless Skill",
+			"name": "Habilidad sin Parangón",
 			"source": "PHB-ES",
-			"page": 54,
+			"page": 55,
 			"srd": true,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Lore",
-			"subclassSource": "PHB",
+			"subclassShortName": "Conocimiento",
+			"subclassSource": "PHB-ES",
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Starting at 14th level, when you make an ability check, you can expend one use of Bardic Inspiration. Roll a Bardic Inspiration die and add the number rolled to your ability check. You can choose to do so after you roll the die for the ability check, but before the DM tells you whether you succeed or fail."
+				"A partir de nivel 14, cuando hagas una prueba de característica podrás gastar uno de tus usos de Inspiración Bárdica. Tira el dado de Inspiración Bárdica y suma el número obtenido al resultado de la prueba. Puedes elegir hacer esto después de haber hecho la tirada, pero antes de que el DM te diga si tienes éxito o no."
 			]
 		},
 		{
-			"name": "College of Valor",
+			"name": "Colegio del Valor",
 			"source": "PHB-ES",
 			"page": 55,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Valor",
-			"subclassSource": "PHB",
+			"subclassSource": "PHB-ES",
 			"level": 3,
 			"entries": [
-				"Bards of the College of Valor are daring skalds whose tales keep alive the memory of the great heroes of the past, and thereby inspire a new generation of heroes. These bards gather in mead halls or around great bonfires to sing the deeds of the mighty, both past and present. They travel the land to witness great events firsthand and to ensure that the memory of those events doesn't pass from the world. With their songs, they inspire others to reach the same heights of accomplishment as the heroes of old.",
+				"Los bardos del Colegio del Valor son atrevidos escaldos, cuyas historias mantienen vivo el recuerdo de los grandes campeones del pasado, inspirando así a una nueva generación de héroes. Estos bardos se reúnen en salas de hidromiel o en torno a grandes hogueras para cantar las hazañas de los poderosos, tanto del presente como del pasado. Viajan por el mundo con el fin de ser testigos de grandes eventos en primera persona, para que la memoria de dichos sucesos no se pierda. A través de sus canciones, inspiran a otros para alcanzar las mismas cotas de éxito que los héroes de antaño.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Bonus Proficiencies|Bard||Valor||3"
+					"subclassFeature": "Competencias Adicionales|Bardo|PHB-ES|Valor|PHB-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Combat Inspiration|Bard||Valor||3"
+					"subclassFeature": "Inspiración en Combate|Bardo|PHB-ES|Valor|PHB-ES|3"
 				}
 			]
 		},
 		{
-			"name": "Bonus Proficiencies",
+			"name": "Competencias Adicionales",
 			"source": "PHB-ES",
 			"page": 55,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Valor",
-			"subclassSource": "PHB",
+			"subclassSource": "PHB-ES",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"When you join the College of Valor at 3rd level, you gain proficiency with medium armor, shields, and martial weapons."
+				"Cuando te unes al Colegio del Valor, a nivel 3, ganas competencia con armaduras medias, escudos y armas marciales."
 			]
 		},
 		{
-			"name": "Combat Inspiration",
+			"name": "Inspiración en Combate",
 			"source": "PHB-ES",
 			"page": 55,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Valor",
-			"subclassSource": "PHB",
+			"subclassSource": "PHB-ES",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Also at 3rd level, you learn to inspire others in battle. A creature that has a Bardic Inspiration die from you can roll that die and add the number rolled to a weapon damage roll it just made. Alternatively, when an attack roll is made against the creature, it can use its reaction to roll the Bardic Inspiration die and add the number rolled to its AC against that attack, after seeing the roll but before knowing whether it hits or misses."
+				"También a nivel 3, aprendes como inspirar a los demás en combate. Una criatura que posea un dado de Inspiración Bárdica que tú le hayas dado podrá tirarlo y añadir el resultado a una tirada de daño con un arma que acabe de hacer. Además, cuando se realice una tirada de ataque que tenga como objetivo a dicha criatura, esta puede usar su reacción para tirar el dado de Inspiración Bárdica y añadir el resultado obtenido a su CA contra ese ataque. Puede hacer esto tras ver el resultado de la tirada de ataque, pero antes de saber si impacta o no."
 			]
 		},
 		{
-			"name": "Extra Attack",
+			"name": "Ataque Adicional",
 			"source": "PHB-ES",
 			"page": 55,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Valor",
-			"subclassSource": "PHB",
+			"subclassSource": "PHB-ES",
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"Starting at 6th level, you can attack twice, instead of once, whenever you take the {@action Attack} action on your turn."
+				"A partir de nivel 6, cuando lleves a cabo la acción de {@action Atacar|PHB-ES} durante tu turno, podrás hacer dos ataques en lugar de uno."
 			]
 		},
 		{
-			"name": "Battle Magic",
+			"name": "Magia de Batalla",
 			"source": "PHB-ES",
 			"page": 55,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Valor",
-			"subclassSource": "PHB",
+			"subclassSource": "PHB-ES",
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"At 14th level, you have mastered the art of weaving spellcasting and weapon use into a single harmonious act. When you use your action to cast a bard spell, you can make one weapon attack as a bonus action."
+				"A nivel 14 has logrado dominar el arte de conjugar el lanzamiento de conjuros y el manejo de las armas, mezclándolos armoniosamente. Cuando usas tu acción para lanzar un conjuro de bardo, puedes emplear tu acción adicional para hacer un ataque con arma."
 			]
 		},
 		{
-			"name": "College of Creation",
+			"name": "Colegio de la Creación",
 			"source": "TCE-ES",
-			"page": 27,
-			"className": "Bard",
+			"page": 28,
+			"className": "Bardo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Creation",
-			"subclassSource": "TCE",
+			"subclassShortName": "Creación",
+			"subclassSource": "TCE-ES",
 			"level": 3,
 			"entries": [
-				"Bards believe the cosmos is a work of art-the creation of the first dragons and gods. That creative work included harmonies that continue to resound through existence today, a power known as the Song of Creation. The bards of the College of Creation draw on that primeval song through dance, music, and poetry, and their teachers share this lesson:",
-				"\"Before the sun and the moon, there was the Song, and its music awoke the first dawn. Its melodies so delighted the stones and trees that some of them gained a voice of their own. And now they sing too. Learn the Song, students, and you too can teach the mountains to sing and dance.\"",
-				"Dwarves and gnomes often encourage their bards to become students of the Song of Creation. And among dragonborn, the Song of Creation is revered, for legends portray Bahamut and Tiamat-the greatest of dragons-as two of the song's first singers.",
+				"Los bardos consideran que el cosmos es una obra de arte, la creación de los primeros dioses y dragones. En este trabajo creativo se incluyeron armonías que aún siguen resonando hoy, un poder conocido como la Canción de la Creación. Los bardos del Colegio de la Creación se inspiran en esta canción primigenia a través de la danza, la música y la poesía, y sus maestros cuentan esta historia:",
+				"\"Antes del sol y la luna, ya existía la Canción, que con su música creó el primer amanecer. Tanto gustaron sus melodías a las piedras y a los árboles, que algunos incluso una voz pudieron tener. Y ahora también pueden cantar. Aprended esta Canción, alumnos míos, y podréis enseñar a las montañas a cantar y bailar\".",
+				"Los enanos y los gnomos suelen animar a sus bardos a que se hagan estudiantes de la Canción de la Creación. Entre los dracónidos se venera la Canción de la Creación ya que, según la leyenda, Bahamut y Tiamat, los más grandes dragones, fueron dos de los primeros en cantarla.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Mote of Potential|Bard||Creation|TCE|3"
+					"subclassFeature": "Mota de Potencial|Bardo|PHB-ES|Creación|TCE-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Performance of Creation|Bard||Creation|TCE|3"
+					"subclassFeature": "Interpretación de la Creación|Bardo|PHB-ES|Creación|TCE-ES|3"
 				}
 			]
 		},
 		{
-			"name": "Mote of Potential",
+			"name": "Mota de Potencial",
 			"source": "TCE-ES",
-			"page": 27,
-			"className": "Bard",
+			"page": 28,
+			"className": "Bardo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Creation",
-			"subclassSource": "TCE",
+			"subclassShortName": "Creación",
+			"subclassSource": "TCE-ES",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"{@i 3rd-level College of Creation feature}",
-				"Whenever you give a creature a Bardic Inspiration die, you can utter a note from the Song of Creation to create a Tiny mote of potential, which orbits within 5 feet of that creature. The mote is intangible and invulnerable, and it lasts until the Bardic Inspiration die is lost. The mote looks like a musical note, a star, a flower, or another symbol of art or life that you choose.",
-				"When the creature uses the Bardic Inspiration die, the mote provides an additional effect based on whether the die benefits an ability check, an attack roll, or a saving throw, as detailed below:",
+				"{@i Rasgo del Colegio de la Creación de nivel 3}",
+				"Cada vez que des a una criatura un dado de Inspiración Bárdica, podrás cantar una nota de la Canción de la Creación para crear una mota de potencial Diminuta, la cual orbitará a 5 pies o menos de esa criatura. La mota es intangible e invulnerable y dura hasta que se pierde el dado de Inspiración Bárdica. La mota tiene el aspecto de una nota musical, una estrella, una flor u otro símbolo del arte o la vida de tu elección.",
+				"Cuando la criatura use el dado de Inspiración Bárdica, la mota le proporcionará un efecto adicional en función de si este dado beneficia a una prueba de característica, una tirada de ataque o una tirada de salvación, tal y como se detalla a continuación:",
 				{
 					"type": "list",
 					"style": "list-hang-notitle",
 					"items": [
 						{
 							"type": "item",
-							"name": "Ability Check",
-							"entry": "When the creature rolls the Bardic Inspiration die to add it to an ability check, the creature can roll the Bardic Inspiration die again and choose which roll to use, as the mote pops and emits colorful, harmless sparks for a moment."
+							"name": "Prueba de característica",
+							"entry": "Cuando la criatura tire el dado de Inspiración Bárdica para sumarlo a una prueba de característica, podrá volver a tirarlo y elegir qué resultado usar, al tiempo que la mota estalla y, por un momento, emite chispas inocuas llenas de color."
 						},
 						{
 							"type": "item",
-							"name": "Attack Roll",
-							"entry": "Immediately after the creature rolls the Bardic Inspiration die to add it to an attack roll against a target, the mote thunderously shatters. The target and each creature of your choice that you can see within 5 feet of it must succeed on a Constitution saving throw against your spell save DC or take thunder damage equal to the number rolled on the Bardic Inspiration die."
+							"name": "Tirada de ataque",
+							"entry": "Inmediatamente después de que la criatura tire el dado de Inspiración Bárdica para sumarlo a una tirada de ataque contra un objetivo, la mota se hará añicos con un gran estruendo. El objetivo y cada criatura de tu elección que puedas ver a 5 pies o menos de ti deberá tener éxito en una tirada de salvación de Constitución contra tu CD de salvación de conjuros o sufrirá daño de trueno igual al resultado del dado de Inspiración Bárdica."
 						},
 						{
 							"type": "item",
-							"name": "Saving Throw",
-							"entry": "Immediately after the creature rolls the Bardic Inspiration die and adds it to a saving throw, the mote vanishes with the sound of soft music, causing the creature to gain temporary hit points equal to the number rolled on the Bardic Inspiration die plus your Charisma modifier (minimum of 1 temporary hit point)."
+							"name": "Tirada de salvación",
+							"entry": "Inmediatamente después de que la criatura lance el dado de Inspiración Bárdica y lo sume a una tirada de salvación, la mota se desvanecerá con el sonido de una suave música; esto hará que la criatura obtenga una cantidad de puntos de golpe temporales igual al resultado del dado de Inspiración Bárdica más tu modificador por Carisma (mínimo de 1 punto de golpe temporal)."
 						}
 					]
 				}
 			]
 		},
 		{
-			"name": "Performance of Creation",
+			"name": "Interpretación de la Creación",
 			"source": "TCE-ES",
-			"page": 27,
-			"className": "Bard",
+			"page": 28,
+			"className": "Bardo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Creation",
-			"subclassSource": "TCE",
+			"subclassShortName": "Creación",
+			"subclassSource": "TCE-ES",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"{@i 3rd-level College of Creation feature}",
-				"As an action, you can channel the magic of the Song of Creation to create one nonmagical item of your choice in an unoccupied space within 10 feet of you. The item must appear on a surface or in a liquid that can support it. The gp value of the item can't be more than 20 times your bard level, and the item must be Medium or smaller. The item glimmers softly, and a creature can faintly hear music when touching it. The created item disappears after a number of hours equal to your proficiency bonus. For examples of items you can create, see the equipment chapter of the {@book Player's Handbook|PHB|5}.",
-				"Once you create an item with this feature, you can't do so again until you finish a long rest, unless you expend a spell slot of 2nd level or higher to use this feature again. You can have only one item created by this feature at a time; if you use this action and already have an item from this feature, the first one immediately vanishes.",
-				"The size of the item you can create with this feature increases by one size category when you reach 6th level (Large) and 14th level (Huge)."
+				"{@i Rasgo del Colegio de la Creación de nivel 3}",
+				"Como acción, puedes canalizar la magia de la Canción de la Creación para crear un objeto no mágico de tu elección en un espacio sin ocupar a 10 pies o menos de ti. El objeto deberá aparecer sobre una superficie o un líquido que pueda sostenerlo. El valor de po del objeto no puede ser superior a 20 veces tu nivel de bardo y debe ser Mediano o más pequeño. El objeto brilla suavemente y la criatura puede escuchar una música muy tenue al tocarlo. El objeto creado desaparece tras una cantidad de horas igual a tu bonificador por competencia. Para ver ejemplos de objetos que puedas crear, consulta el capítulo sobre el equipo del {@book Player's Handbook|PHB-ES|5}.",
+				"Cuando crees un objeto con este rasgo, no podrás volver a hacerlo hasta que finalices un descanso largo, a menos que gastes un espacio de conjuro de nivel 2 o superior para volver a utilizarlo. Solo puedes tener un objeto creado con este rasgo a la vez; si usas esta acción y ya tienes otro objeto de este rasgo, el primero se desvanecerá inmediatamente.",
+				"El tamaño del objeto que crees con este rasgo aumentará en una categoría de tamaño cuando alcances el nivel 6 (Grande) y el nivel 14 (Enorme)."
 			]
 		},
 		{
-			"name": "Animating Performance",
+			"name": "Interpretación Animadora",
 			"source": "TCE-ES",
-			"page": 27,
-			"className": "Bard",
+			"page": 29,
+			"className": "Bardo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Creation",
-			"subclassSource": "TCE",
+			"subclassShortName": "Creación",
+			"subclassSource": "TCE-ES",
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"{@i 6th-level College of Creation feature}",
-				"As an action, you can animate one Large or smaller nonmagical item within 30 feet of you that isn't being worn or carried.. The animate item uses the {@creature Dancing Item|TCE} stat block, which uses your proficiency bonus (PB). The item is friendly to you and your companions and obeys your commands. It lives for 1 hour, until it is reduced to 0 hit points, or until you die.",
-				"In combat, the item shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the {@action Dodge} action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are {@condition incapacitated}, the item can take any action of its choice, not just {@action Dodge}.",
-				"When you use your Bardic Inspiration feature, you can command the item as part of the same bonus action you use for Bardic Inspiration.",
-				"Once you animate an item with this feature, you can't do so again until you finish a long rest, unless you expend a spell slot of 3rd level or higher to use this feature again. You can have only one item animated by this feature at a time; if you use this action and already have a {@creature dancing item|TCE} from this feature, the first one immediately becomes inanimate."
+				"{@i Rasgo del Colegio de la Creación de nivel 6}",
+				"Como acción, puedes elegir como objetivo un objeto no mágico Grande o más pequeño que puedas ver a 30 pies o menos de ti y animarlo. El objeto animado usará el perfil de {@creature Objeto Danzante|TCE-ES}, que utiliza tu bonificador por competencia (BC). El objeto es amistoso contigo y tus compañeros, y obedece tus órdenes. Vivirá durante 1 hora, hasta que sus puntos de golpe se reduzcan a 0 o hasta que tú mueras.",
+				"En combate, el objeto comparte tu orden de iniciativa, pero su turno va justo después del tuyo. Se puede mover y usar su propia reacción, pero la única acción que hace en su turno es la de {@action Esquivar|PHB-ES}, a menos que realices una acción adicional en tu turno para ordenarle que haga otra. Esa acción puede ser una de su perfil u otra. Si estás {@condition incapacitado|PHB-ES}, el objeto puede hacer cualquier acción que elija, no solo la de {@action Esquivar|PHB-ES}.",
+				"Cuando uses tu rasgo Inspiración Bárdica, puedes dar órdenes al objeto como parte de la misma acción adicional que uses para Inspiración Bárdica.",
+				"Cuando animes un objeto con este rasgo, no podrás volver a hacerlo hasta que finalices un descanso largo, a menos que gastes un espacio de conjuro de nivel 3 o superior para volver a utilizarlo. Solo puedes tener un objeto animado con este rasgo a la vez; si usas esta acción y ya tienes otro {@creature objeto danzante|TCE-ES} de este rasgo, el primero volverá a ser inanimado inmediatamente."
 			]
 		},
 		{
-			"name": "Creative Crescendo",
+			"name": "Crescendo Creativo",
 			"source": "TCE-ES",
-			"page": 27,
-			"className": "Bard",
+			"page": 29,
+			"className": "Bardo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Creation",
-			"subclassSource": "TCE",
+			"subclassShortName": "Creación",
+			"subclassSource": "TCE-ES",
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"{@i 14th-level College of Creation feature}",
-				"When you use your Performance of Creation feature, you can create more than one item at once. The number of items equals your Charisma modifier (minimum of two items). If you create an item that would exceed that number, you choose which of the previously created items disappears. Only one of these items can be of the maximum size you can create; the rest must be Small or Tiny.",
-				"You are no longer limited by gp value when creating items with Performance of Creation."
+				"{@i Rasgo del Colegio de la Creación de nivel 14}",
+				"Cuando usas el rasgo Interpretación de la Creación, puedes crear más de un objeto a la vez. La cantidad de objetos es igual a tu modificador por Carisma (mínimo de dos objetos). Si creas un objeto que fuera a superar esa cantidad, elige cuál de los anteriores quieres que desaparezca. Solo uno de estos objetos puede ser del tamaño máximo que puedes crear; el resto deben ser de tamaño Pequeño o Diminuto.",
+				"A partir de ahora, cuando crees objetos con Interpretación de la Creación, ya no estarás limitado por el valor de po."
 			]
 		},
 		{
-			"name": "College of Eloquence",
+			"name": "Colegio de la Elocuencia",
 			"source": "TCE-ES",
 			"page": 29,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Eloquence",
-			"subclassSource": "TCE",
+			"subclassShortName": "Elocuencia",
+			"subclassSource": "TCE-ES",
 			"level": 3,
 			"entries": [
-				"Adherents of the College of Eloquence master the art of oratory. Persuasion is regarded as a high art, and a well-reasoned, well-spoken argument often proves more persuasive than facts. These bards wield a blend of logic and theatrical wordplay, winning over skeptics and detractors with logical arguments and plucking at heartstrings to appeal to the emotions of audiences.",
+				"Los integrantes del Colegio de la Elocuencia dominan el arte de la oratoria. Estos bardos mezclan la lógica con una oratoria de estilo teatral. Con esta combinación, se ganan a escépticos y detractores con argumentos lógicos y apelan a la fibra sensible del público para que afloren sus emociones.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Silver Tongue|Bard||Eloquence|TCE|3"
+					"subclassFeature": "Lengua de Plata|Bardo|PHB-ES|Elocuencia|TCE-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Unsettling Words|Bard||Eloquence|TCE|3"
+					"subclassFeature": "Palabras Inquietantes|Bardo|PHB-ES|Elocuencia|TCE-ES|3"
 				}
 			]
 		},
 		{
-			"name": "Silver Tongue",
+			"name": "Lengua de Plata",
 			"source": "TCE-ES",
-			"page": 29,
-			"className": "Bard",
+			"page": 30,
+			"className": "Bardo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Eloquence",
-			"subclassSource": "TCE",
+			"subclassShortName": "Elocuencia",
+			"subclassSource": "TCE-ES",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"{@i 3rd-level College of Eloquence feature}",
-				"You are a master at saying the right thing at the right time. When you make a Charisma ({@skill Persuasion}) or Charisma ({@skill Deception}) check, you can treat a {@dice d20} roll of 9 or lower as a 10."
+				"{@i Rasgo del Colegio de la Elocuencia de nivel 3}",
+				"Eres un experto en decir las palabras adecuadas en el momento justo. Cuando hagas una prueba de Carisma ({@skill Persuasión|PHB-ES}) o Carisma ({@skill Engaño|PHB-ES}), podrás sustituir un resultado de 9 o menos en el {@dice d20} por un 10."
 			]
 		},
 		{
-			"name": "Unsettling Words",
+			"name": "Palabras Inquietantes",
 			"source": "TCE-ES",
-			"page": 29,
-			"className": "Bard",
+			"page": 30,
+			"className": "Bardo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Eloquence",
-			"subclassSource": "TCE",
+			"subclassShortName": "Elocuencia",
+			"subclassSource": "TCE-ES",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"{@i 3rd-level College of Eloquence feature}",
-				"You can spin words laced with magic that unsettle a creature and cause it to doubt itself. As a bonus action, you can expend one use of your Bardic Inspiration and choose one creature you can see within 60 feet of you. Roll the Bardic Inspiration die. The creature must subtract the number rolled from the next saving throw it makes before the start of your next turn."
+				"{@i Rasgo del Colegio de la Elocuencia de nivel 3}",
+				"Puedes hilar palabras entrelazadas con magia para inquietar a una criatura y hacer que dude de sí misma. Como acción adicional, gasta un uso de tu Inspiración Bárdica y elige una criatura que puedas ver a 60 pies o menos de ti. Tira el dado de Inspiración Bárdica. La criatura deberá restar el resultado de la siguiente tirada de salvación que haga antes del principio de tu siguiente turno."
 			]
 		},
 		{
-			"name": "Unfailing Inspiration",
+			"name": "Inspiración Constante",
 			"source": "TCE-ES",
-			"page": 29,
-			"className": "Bard",
+			"page": 30,
+			"className": "Bardo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Eloquence",
-			"subclassSource": "TCE",
+			"subclassShortName": "Elocuencia",
+			"subclassSource": "TCE-ES",
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"{@i 6th-level College of Eloquence feature}",
-				"Your inspiring words are so persuasive that others feel driven to succeed. When a creature adds one of your Bardic Inspiration dice to its ability check, attack roll, or saving throw and the roll fails, the creature can keep the Bardic Inspiration die."
+				"{@i Rasgo del Colegio de la Elocuencia de nivel 6}",
+				"Tus palabras inspiradoras son tan persuasivas que otros se sienten destinados al éxito. Cuando una criatura añada uno de tus dados de Inspiración Bárdica a su prueba de característica, tirada de ataque o tirada de salvación, podrá conservarlo."
 			]
 		},
 		{
-			"name": "Universal Speech",
+			"name": "Discurso Universal",
 			"source": "TCE-ES",
-			"page": 29,
-			"className": "Bard",
+			"page": 30,
+			"className": "Bardo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Eloquence",
-			"subclassSource": "TCE",
+			"subclassShortName": "Elocuencia",
+			"subclassSource": "TCE-ES",
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"{@i 6th-level College of Eloquence feature}",
-				"You have gained the ability to make your speech intelligible to any creature. As an action, choose one or more creatures within 60 feet of you, up to a number equal to your Charisma modifier (minimum of one creature). The chosen creatures can magically understand you, regardless of the language you speak, for 1 hour.",
-				"Once you use this feature, you can't use it again until you finish a long rest, unless you expend a spell slot to use it again."
+				"{@i Rasgo del Colegio de la Elocuencia de nivel 6}",
+				"Obtienes la capacidad de hacer que cualquier criatura pueda entender tus palabras. Como acción, elige una o más criaturas que puedas ver a 60 pies o menos de ti, hasta una cantidad igual a tu modificador por Carisma o menos (mínimo una criatura). Las criaturas que elijas te podrán entender mágicamente durante 1 hora, independientemente del idioma que hables.",
+				"Cuando uses este rasgo, no podrás volver a hacerlo hasta que finalices un descanso largo, a menos que gastes un espacio de conjuro de cualquier nivel para volver a usarlo."
 			]
 		},
 		{
-			"name": "Infectious Inspiration",
+			"name": "Inspiración Contagiosa",
 			"source": "TCE-ES",
-			"page": 29,
-			"className": "Bard",
+			"page": 30,
+			"className": "Bardo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Eloquence",
-			"subclassSource": "TCE",
+			"subclassShortName": "Elocuencia",
+			"subclassSource": "TCE-ES",
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"{@i 14th-level College of Eloquence feature}",
-				"When you successfully inspire someone, the power of your eloquence can now spread to someone else. When a creature within 60 feet of you adds one of your Bardic Inspiration dice to its ability check, attack roll, or saving throw and the roll succeeds, you can use your reaction to encourage a different creature (other than yourself) that can hear you within 60 feet of you, giving it a Bardic Inspiration die without expending any of your Bardic Inspiration uses.",
-				"You can use this reaction a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a long rest."
+				"{@i Rasgo del Colegio de la Elocuencia de nivel 14}",
+				"Cuando consigas inspirar a alguien, ahora el poder de tu elocuencia se extenderá a alguien más. Cuando una criatura a 60 pies o menos de ti añada uno de tus dados de Inspiración Bárdica a su prueba de característica, tirada de ataque o tirada de salvación y la supere, puedes usar tu reacción para dar ánimos a una criatura diferente (que no seas tú) que pueda escucharte a 60 pies o menos de ti, lo que le dará un dado de Inspiración Bárdica sin gastar ninguno de tus usos de Inspiración Bárdica.",
+				"Puedes usar esta reacción una cantidad de veces igual a tu modificador por Carisma (mínimo una vez) y recuperas todos los usos tras finalizar un descanso largo."
 			]
 		},
 		{
-			"name": "College of Spirits",
+			"name": "Colegio de los Espíritus",
 			"source": "VRGR-ES",
 			"page": 28,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Spirits",
-			"subclassSource": "VRGR",
+			"subclassShortName": "Espíritus",
+			"subclassSource": "VRGR-ES",
 			"level": 3,
 			"entries": [
-				"Bards of the College of Spirits seek tales with inherent power—be they legends, histories, or fictions—and bring their subjects to life. Using occult trappings, these bards conjure spiritual embodiments of powerful forces to change the world once more. Such spirits are capricious, though, and what a bard summons isn't always entirely under their control.",
+				"Los bardos del Colegio de los Espíritus buscan relatos con un poder inherente (que pueden ser leyendas, historias reales o ficciones) y hacen que los temas que tratan cobren vida. Mediante símbolos místicos, estos bardos conjuran encarnaciones espirituales de fuerzas poderosas para volver a cambiar el mundo. Sin embargo, se trata de espíritus caprichosos, por lo que los bardos no siempre invocan entes bajo su control.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Guiding Whispers|Bard||Spirits|VRGR|3"
+					"subclassFeature": "Susurros Guía|Bardo|PHB-ES|Espíritus|VRGR-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Spiritual Focus|Bard||Spirits|VRGR|3"
+					"subclassFeature": "Canalizador Espiritual|Bardo|PHB-ES|Espíritus|VRGR-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Tales from Beyond|Bard||Spirits|VRGR|3"
+					"subclassFeature": "Historias del Más Allá|Bardo|PHB-ES|Espíritus|VRGR-ES|3"
 				}
 			]
 		},
 		{
-			"name": "Guiding Whispers",
+			"name": "Susurros Guía",
 			"source": "VRGR-ES",
 			"page": 28,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Spirits",
-			"subclassSource": "VRGR",
+			"subclassShortName": "Espíritus",
+			"subclassSource": "VRGR-ES",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"{@i 3rd-level College of Spirits feature}",
-				"You can reach out to spirits to guide you and others. You learn the {@spell guidance} cantrip, which doesn't count against the number of bard cantrips you know. For you, it has a range of 60 feet when you cast it."
+				"{@i Rasgo del Colegio de los Espíritus de nivel 3}",
+				"Puedes contactar con espíritus para que os guíen a otros y a ti. Aprendes el truco {@spell guía|PHB-ES#}, que no cuenta para la cantidad de trucos de bardo que conoces. Para ti, tiene un alcance de 60 pies cuando lo lanzas."
 			]
 		},
 		{
-			"name": "Spiritual Focus",
+			"name": "Canalizador Espiritual",
 			"source": "VRGR-ES",
 			"page": 28,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Spirits",
-			"subclassSource": "VRGR",
+			"subclassShortName": "Espíritus",
+			"subclassSource": "VRGR-ES",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"{@i 3rd-level College of Spirits feature}",
-				"You employ tools that aid you in channeling spirits, be they historical figures or fictional archetypes. You can use the following objects as a spellcasting focus for your bard spells: a candle, crystal ball, skull, spirit board, or {@deck tarokka deck|CoS}.",
-				"Starting at 6th level, when you cast a bard spell that deals damage or restores hit points through the Spiritual Focus, roll a {@dice d6}, and you gain a bonus to one damage or healing roll of the spell equal to the number rolled."
+				"{@i Rasgo del Colegio de los Espíritus de nivel 3}",
+				"Empleas herramientas que te ayudan a canalizar espíritus, que pueden ser figuras históricas o arquetipos ficticios. Puedes emplear los siguientes objetos como canalizador mágico de tus conjuros de bardo: una vela, una bola de cristal, una calavera, un tablero de espiritismo o una {@deck baraja del tarokka|CoS-ES}.",
+				"A partir de nivel 6, cuando lances un conjuro de bardo que inflija daño o haga recuperar puntos de golpe usando el Canalizador Espiritual, tira {@dice 1d6} y obtendrás un bonificador igual al resultado para una tirada de daño o de curación del conjuro."
 			]
 		},
 		{
-			"name": "Tales from Beyond",
+			"name": "Historias del Más Allá",
 			"source": "VRGR-ES",
 			"page": 28,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Spirits",
-			"subclassSource": "VRGR",
+			"subclassShortName": "Espíritus",
+			"subclassSource": "VRGR-ES",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"{@i 3rd-level College of Spirits feature}",
-				"You reach out to spirits who tell their tales through you. While you are holding your Spiritual Focus, you can use a bonus action to expend one use of your Bardic Inspiration and roll on the Spirit Tales table using your Bardic Inspiration die to determine the tale the spirits direct you to tell. You retain the tale in mind until you bestow the tale's effect or you finish a short or long rest.",
-				"You can use an action to choose one creature you can see within 30 feet of you (this can be you) to be the target of the tale's effect. Once you do so, you can't bestow the tale's effect again until you roll it again.",
-				"You can retain only one of these tales in mind at a time, and rolling on the Spirit Tales table immediately ends the effect of the previous tale.",
-				"If the tale requires a saving throw, the DC equals your spell save DC.",
+				"{@i Rasgo del Colegio de los Espíritus de nivel 3}",
+				"Contactas con espíritus que narran sus historias a través de ti. Mientras sostengas tu Canalizador Espiritual, podrás usar una acción adicional para gastar un uso de tu Inspiración Bárdica y tirar en la tabla \"Historias de los espíritus\" usando tu dado de Inspiración Bárdica para determinar qué historia te indican que narres los espíritus. Conservarás la historia en la mente hasta que otorgues el efecto de la narración o finalices un descanso corto o largo.",
+				"Puedes usar una acción para elegir una criatura que puedas ver a 30 pies o menos de ti (puedes ser tú) para que sea el objetivo del efecto de la narración. Una vez lo hagas, no podrás volver a otorgar el efecto de la narración hasta que vuelvas a sacar ese resultado.",
+				"Solo puedes conservar una de estas historias en la cabeza en cada momento. Si tiras en la tabla \"Historias de los espíritus\", el efecto de la historia anterior finaliza de inmediato.",
+				"Si la historia obliga a realizar una tirada de salvación, el CD es igual a tu CD de salvación de conjuros.",
 				{
 					"type": "table",
-					"caption": "Spirit Tales",
+					"caption": "Historias de los espíritus",
 					"colLabels": [
-						"Bardic Insp. Die",
-						"Tale Told Through You"
+						"Dado de lnsp. Bár.",
+						"Historia que se cuenta a través de ti"
 					],
 					"colStyles": [
 						"col-2 text-center",
@@ -1946,441 +1933,439 @@
 					"rows": [
 						[
 							"1",
-							"Tale of the Clever Animal. For the next 10 minutes, whenever the target makes an Intelligence, a Wisdom, or a Charisma check, the target can roll an extra die immediately after rolling the {@dice d20} and add the extra die's number to the check. The extra die is the same type as your Bardic Inspiration die."
+							"Fábula del animal inteligente. Durante los próximos 10 minutos, siempre que el objetivo realice una prueba de Inteligencia, Sabiduría o Carisma, ese objetivo puede tirar un dato adicional tras lanzar el {@dice d20} y sumar el resultado a la prueba. El dado adicional es del mismo tipo que tu dado de Inspiración Bárdica."
 						],
 						[
 							"2",
-							"Tale of the Renowned Duelist. You make a melee spell attack against the target. On a hit, the target takes force damage equal to two rolls of your Bardic Inspiration die + your Charisma modifier."
+							"Historia del duelista famoso. Realizas un ataque de conjuro cuerpo a cuerpo contra el objetivo. Si impacta, el objetivo recibe una cantidad de daño de fuerza igual al resultado de dos tiradas de tu dado de Inspiración Bárdica + tu modificador por Carisma."
 						],
 						[
 							"3",
-							"Tale of the Beloved Friends. The target and another creature of its choice it can see within 5 feet of it gains temporary hit points equal to a roll of your Bardic Inspiration die + your Charisma modifier."
+							"Relato de los amigos queridos. El objetivo y otra criatura de su elección que pueda ver a 5 pies o menos de él obtiene una cantidad de puntos de golpe temporales igual al resultado de una tirada de tu dado de Inspiración Bárdica + tu modificador por Carisma."
 						],
 						[
 							"4",
-							"Tale of the Runaway. The target can immediately use its reaction to teleport up to 30 feet to an unoccupied space it can see. When the target teleports, it can choose a number of creatures it can see within 30 feet of it up to your Charisma modifier (minimum of 0) to immediately use the same reaction."
+							"Cuento del fugitivo. El objetivo puede usar su reacción inmediatamente para teletransportarse hasta 30 pies a un espacio sin ocupar que pueda ver. Cuando el objetivo se teletransporta, puede elegir una cantidad de criaturas que pueda ver a 30 pies o menos de él igual a tu modificador por Carisma (mínimo de 0) para que usen inmediatamente la misma reacción."
 						],
 						[
 							"5",
-							"Tale of the Avenger. For 1 minute, any creature that hits the target with a melee attack takes force damage equal to a roll of your Bardic Inspiration die."
+							"Lance del vengador. Durante 1 minuto, cualquier criatura que impacte al objetivo con un ataque cuerpo a cuerpo recibirá una cantidad de daño de fuerza igual al resultado de una tirada de tu dado de Inspiración Bárdica."
 						],
 						[
 							"6",
-							"Tale of the Traveler. The target gains temporary hit points equal to a roll of your Bardic Inspiration die + your bard level. While it has these temporary hit points, the target's walking speed increases by 10 feet and it gains a +1 bonus to its AC."
+							"Recuerdos del viajero. El objetivo obtiene una cantidad de puntos de golpe temporales igual al resultado de una tirada de tu dado de Inspiración Bárdica +tu nivel de bardo. Mientras tenga estos puntos de golpe temporales, la velocidad caminando del objetivo aumentará en 10 pies y obtendrá un bonificador de +1 a su CA."
 						],
 						[
 							"7",
-							"Tale of the Beguiler. The target must succeed on a Wisdom saving throw or take psychic damage equal to two rolls of your Bardic Inspiration die, and the target is {@condition incapacitated} until the end of its next turn."
+							"Cuento del embaucador. El objetivo deberá superar una tirada de salvación de Sabiduría o recibirá una cantidad de daño psíquico igual al resultado de dos tiradas de tu dado de Inspiración Bárdica y quedará {@condition incapacitado|PHB-ES} hasta el final de su siguiente turno."
 						],
 						[
 							"8",
-							"Tale of the Phantom. The target becomes {@condition invisible} until the end of its next turn or until it hits a creature with an attack. If the target hits a creature with an attack during this invisibility, the creature it hits takes necrotic damage equal to a roll of your Bardic Inspiration die and is {@condition frightened} of the target until the end of the {@condition frightened} creature's next turn."
+							"Memorias del fantasma. El objetivo se vuelve {@condition invisible|PHB-ES} hasta el final de su siguiente turno o hasta que impacte a una criatura con un ataque. Si el objetivo impacta a una criatura con un ataque durante esta invisibilidad, la criatura impactada recibirá una cantidad de daño necrótico igual al resultado de una tirada de tu dado de Inspiración Bárdica y quedará {@condition asustado|PHB-ES|asustada} del objetivo hasta el final del siguiente turno de la criatura {@condition asustado|PHB-ES|asustada}."
 						],
 						[
 							"9",
-							"Tale of the Brute. Each creature of the target's choice it can see within 30 feet of it must make a Strength saving throw. On a failed save, a creature takes thunder damage equal to three rolls of your Bardic Inspiration die and is knocked {@condition prone}. A creature that succeeds on its saving throw takes half as much damage and isn't knocked {@condition prone}."
+							"Anécdota del bruto. Cada criatura a elección del objetivo que pueda ver y que esté a 30 pies o menos de él deberá realizar una tirada de salvación de Fuerza. Si la falla, recibirá una cantidad de daño contundente igual al resultado de tres tiradas de tu dado de Inspiración Bárdica y será {@condition derribado|PHB-ES|derribada}. Si la supera, recibirá la mitad de ese daño y no será {@condition derribado|PHB-ES|derribada}."
 						],
 						[
 							"10",
-							"Tale of the Dragon. The target spews fire from the mouth in a 30-foot cone. Each creature in that area must make a Dexterity saving throw, taking fire damage equal to four rolls of your Bardic Inspiration die on a failed save, or half as much damage on a successful one."
+							"Mito del dragón. El objetivo escupe fuego por la boca en un cono de 30 pies. Todas las criaturas situadas en esa zona deberán hacer una tirada de salvación de Destreza; recibirán una cantidad de daño de fuego igual al resultado de cuatro tiradas de tu dado de Inspiración Bárdica si la fallan o la mitad del daño si la superan."
 						],
 						[
 							"11",
-							"Tale of the Angel. The target regains hit points equal to two rolls of your Bardic Inspiration die + your Charisma modifier, and you end one condition from the following list affecting the target: {@condition blinded}, {@condition deafened}, {@condition paralyzed}, {@condition petrified}, or {@condition poisoned}."
+							"Leyenda del ángel. El objetivo recupera una cantidad de puntos de golpe igual al resultado de dos tiradas de tu dado de Inspiración Bárdica + tu modificador por Carisma, y pones fin a un estado de la siguiente lista que afecte al objetivo: {@condition cegado|PHB-ES}, {@condition ensordecido|PHB-ES}, {@condition envenenado|PHB-ES}, {@condition paralizado|PHB-ES} o {@condition petrificado|PHB-ES}."
 						],
 						[
 							"12",
-							"Tale of the Mind-Bender. You evoke an incomprehensible fable from an otherworldly being. The target must succeed on an Intelligence saving throw or take psychic damage equal to three rolls of your Bardic Inspiration die and be {@condition stunned} until the end of its next turn."
+							"Delirio del enloquecedor. Evocas una fábula incomprensible de un ser sobrenatural. El objetivo deberá superar una tirada de salvación de Inteligencia o recibirá una cantidad de daño psíquico igual al resultado de tres tiradas de tu dado de Inspiración Bárdica y quedará {@condition aturdido|PHB-ES} hasta el final de su siguiente turno."
 						]
 					]
 				}
 			]
 		},
 		{
-			"name": "Spirit Session",
+			"name": "Sesión Espiritual",
 			"source": "VRGR-ES",
-			"page": 28,
-			"className": "Bard",
+			"page": 29,
+			"className": "Bardo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Spirits",
-			"subclassSource": "VRGR",
+			"subclassShortName": "Espíritus",
+			"subclassSource": "VRGR-ES",
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"{@i 6th-level College of Spirits feature}",
-				"Spirits provide you with supernatural insights. You can conduct an hour-long ritual channeling spirits (which can be done during a short or long rest) using your Spiritual Focus. You can conduct the ritual with a number of willing creatures equal to your proficiency bonus (including yourself). At the end of the ritual, you temporarily learn {@filter one spell of your choice from any class|spells|school=d;n|level=0;1;2;3;4;5;6}.",
-				"The spell you choose must be of a level equal to the number of creatures that conducted the ritual or less, the spell must be of a level you can cast, and it must be in the school of divination or necromancy. The chosen spell counts as a bard spell for you but doesn't count against the number of bard spells you know.",
-				"Once you perform the ritual, you can't do so again until you start a long rest, and you know the chosen spell until you start a long rest."
+				"{@i Rasgo del Colegio de los Espíritus de nivel 6}",
+				"Los espíritus te proporcionan conocimientos sobrenaturales. Puedes realizar un ritual de una hora para canalizar los espíritus (que puede realizarse durante un descanso corto o largo) utilizando tu Canalizador Espiritual. Puedes llevar a cabo el ritual con una cantidad de criaturas voluntarias igual a tu bonificador por competencia (incluyéndote a ti). Al final del ritual, aprenderás temporalmente {@filter un conjuro de tu elección de cualquier clase|spells|school=d;n|level=0;1;2;3;4;5;6}.",
+				"El conjuro que elijas debe ser de un nivel igual o inferior a la cantidad de criaturas que realizaron el ritual, debe ser de un nivel que puedas lanzar y debe ser de la escuela de adivinación o de nigromancia. El conjuro elegido se considera, en lo que a ti respecta, un conjuro de bardo, pero no cuenta para el total de conjuros de bardo que conoces.",
+				"Cuando realices el ritual, no podrás volver a hacerlo hasta que finalices un descanso largo y conocerás el conjuro elegido hasta que empieces un descanso largo."
 			]
 		},
 		{
-			"name": "Mystical Connection",
+			"name": "Conexión Mística",
 			"source": "VRGR-ES",
-			"page": 28,
-			"className": "Bard",
+			"page": 29,
+			"className": "Bardo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Spirits",
-			"subclassSource": "VRGR",
+			"subclassShortName": "Espíritus",
+			"subclassSource": "VRGR-ES",
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"{@i 14th-level College of Spirits feature}",
-				"You now have the ability to nudge the spirits of Tales from Beyond toward certain tales. Whenever you roll on the Spirit Tales table, you can roll the die twice and choose which of the two effects to bestow. If you roll the same number on both dice, you can ignore the number and choose any effect on the table.",
+				"{@i Rasgo del Colegio de los Espíritus de nivel 14}",
+				"Ahora tienes la capacidad de alentar a los espíritus de las Historias del Más Allá para que narren ciertos cuentos. Siempre que hagas una tirada en la tabla \"Historias de los espíritus\", podrás tirar el dado dos veces y elegir cuál de los dos efectos concedes. Si obtienes el mismo resultado en ambos dados, puedes ignorarlo y elegir cualquier efecto de la tabla.",
 				{
 					"type": "inset",
-					"name": "Spirit Tales",
+					"name": "Historias de los espíritus",
 					"entries": [
-						"Storytellers, like bards of the College of Spirits, often give voice to tales inspired by some greater theme or body of work. When determining what stories you tell, consider what unites them. Do they all feature characters from a specific group, like archetypes from the {@deck tarokka deck|CoS}, figures from constellations, childhood imaginary friends, or characters in a particular storybook? Or are your inspirations more general, incorporating historic champions, mythological heroes, or urban legends? Use the tales you tell to define your niche as a storytelling adventurer."
+						"Los narradores de historias, como los bardos del Colegio de los Espíritus, suelen dar voz a cuentos inspirados por una temática o una serie de obras de mayor envergadura. Al determinar qué historias cuentas, piensa en cuál es su nexo de unión. ¿Todas incluyen personajes de un grupo específico, como arquetipos de la {@deck baraja del tarokka|CoS-ES}, figuras de constelaciones, amigos imaginarios infantiles o personajes de un libro concreto? ¿O tu inspiración es de índole más general e incorporas campeones históricos, héroes mitológicos o leyendas urbanas? Aprovecha las historias que cuentas para definir tu nicho como aventurero narrador."
 					]
 				}
 			]
 		},
 		{
-			"name": "College of Glamour",
+			"name": "Colegio del Glamour",
 			"source": "XGE-ES",
-			"page": 14,
-			"className": "Bard",
+			"page": 15,
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Glamour",
-			"subclassSource": "XGE",
+			"subclassSource": "XGE-ES",
 			"level": 3,
 			"entries": [
-				"The College of Glamour is the home of bards who mastered their craft in the vibrant realm of the Feywild or under the tutelage of someone who dwelled there. Tutored by satyrs, eladrin, and other fey, these bards learn to use their magic to delight and captivate others.",
-				"The bards of this college are regarded with a mixture of awe and fear. Their performances are the stuff of legend. These bards are so eloquent that a speech or song that one of them performs can cause captors to release the bard unharmed and can lull a furious dragon into complacency. The same magic that allows them to quell beasts can also bend minds. Villainous bards of this college can leech off a community for weeks, misusing their magic to turn their hosts into thralls. Heroic bards of this college instead use this power to gladden the downtrodden and undermine oppressors.",
+				"El Colegio del Glamour es el hogar de aquellos bardos que han afinado su habilidad en el vibrante reino del Feywild o bajo la tutela de alguien que vivió allí. Con sátiros, eladrines y otros feéricos como profesores, estos aventureros aprenden a usar su magia para cautivar y hacer las delicias de quienes los escuchan.",
+				"Los bardos de este colegio son recibidos con una mezcla de admiración y miedo. Sus actuaciones son legendarias. Su elocuencia es tal que un discurso o una de sus canciones puede conseguir que sus captores los liberen o, incluso, acunar a un furioso dragón y que se vuelva autocomplaciente. La misma magia que les permite apaciguar a las bestias es capaz de someter voluntades. Los bardos malvados son capaces de explotar a una comunidad durante semanas, usando su magia para convertir a sus anfitriones en siervos. En contraste, aquellos miembros más heroicos de este colegio utilizan su poder para regocijar a los oprimidos y debilitar a los opresores.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Mantle of Inspiration|Bard||Glamour|XGE|3"
+					"subclassFeature": "Manto de Inspiración|Bardo|PHB-ES|Glamour|XGE-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Enthralling Performance|Bard||Glamour|XGE|3"
+					"subclassFeature": "Interpretación Cautivadora|Bardo|PHB-ES|Glamour|XGE-ES|3"
 				}
 			]
 		},
 		{
-			"name": "Enthralling Performance",
+			"name": "Interpretación Cautivadora",
 			"source": "XGE-ES",
-			"page": 14,
-			"className": "Bard",
+			"page": 15,
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Glamour",
-			"subclassSource": "XGE",
+			"subclassSource": "XGE-ES",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Starting at 3rd level, you can charge your performance with seductive, fey magic.",
-				"If you perform for at least 1 minute, you can attempt to inspire wonder in your audience by singing, reciting a poem, or dancing. At the end of the performance, choose a number of humanoids within 60 feet of you who watched and listened to all of it, up to a number equal to your Charisma modifier (minimum of one). Each target must succeed on a Wisdom saving throw against your spell save DC or be {@condition charmed} by you. While {@condition charmed} in this way, the target idolizes you, it speaks glowingly of you to anyone who talks to it, and it hinders anyone who opposes you, although it avoids violence unless it was already inclined to fight on your behalf. This effect ends on a target after 1 hour, if it takes any damage, if you attack it, or if it witnesses you attacking or damaging any of its allies.",
-				"If a target succeeds on its saving throw, the target has no hint that you tried to charm it.",
-				"Once you use this feature, you can't use it again until you finish a short or long rest."
+				"A partir de nivel 3, puedes cargar tu interpretación de energía seductora, usando para ello magia feérica.",
+				"Si actúas durante al menos 1 minuto, puedes intentar maravillar a tu público, ya sea cantando, recitando un poema o bailando. Al final de la actuación, elige tantos humanoides como tu modificador de Carisma. Deben estar situados a 60 pies o menos de ti y haber escuchado o visto todo el espectáculo. Cada objetivo deberá tener éxito en una tirada de salvación de Sabiduría contra tu salvación de conjuros o quedará {@condition hechizado|PHB-ES} por ti. Mientras esté {@condition hechizado|PHB-ES} de esta manera, esa criatura te idolatrará, hablará muy bien de ti a cualquiera con el que se encuentre y tratará de obstaculizar a cualquiera que esté en tu contra, aunque evitará la violencia si no estaba ya dispuesto a luchar por ti. Este efecto se desvanece tras 1 hora, si el objetivo recibe cualquier tipo de daño, si le atacas o si te ve atacando o dañando a cualquiera de sus aliados.",
+				"Si una criatura tiene éxito en su tirada de salvación, no será consciente de que has intentado hechizarla.",
+				"Una vez utilizado este rasgo, deberás terminar un des canso corto o largo para poder volver a emplearlo."
 			]
 		},
 		{
-			"name": "Mantle of Inspiration",
+			"name": "Manto de Inspiración",
 			"source": "XGE-ES",
-			"page": 14,
-			"className": "Bard",
+			"page": 15,
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Glamour",
-			"subclassSource": "XGE",
+			"subclassSource": "XGE-ES",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"When you join the College of Glamour at 3rd level, you gain the ability to weave a song of fey magic that imbues your allies with vigor and speed.",
-				"As a bonus action, you can expend one use of your Bardic Inspiration to grant yourself a wondrous appearance. When you do so, choose a number of creatures you can see and that can see you within 60 feet of you, up to a number equal to your Charisma modifier (minimum of one). Each of them gains 5 temporary hit points. When a creature gains these temporary hit points, it can immediately use its reaction to move up to its speed, without provoking opportunity attacks.",
-				"The number of temporary hit points increases when you reach certain levels in this class, increasing to 8 at 5th level, 11 at 10th level, and 14 at 15th level."
+				"Cuando te unes al Colegio del Glamour, en el nivel 3, ganas la habilidad de urdir una canción con magia feérica, la cual infundirá en tus aliados vigor y velocidad.",
+				"Como acción adicional, puedes gastar uno de tus usos de Inspiración Bárdica para imbuirte de una apariencia maravillosa. Cuando lo hagas, elige un número de criaturas igual a tu modificador de Carisma, que puedas ver y que te puedan ver y se encuentren a 60 pies o menos de ti. Cada una de ellas gana 5 puntos de golpe temporales. Cuando una criatura consigue estos puntos de golpe temporales, puede utilizar inmediatamente su reacción para mover hasta su velocidad, sin provocar ataques de oportunidad.",
+				"El número de puntos de golpe temporales aumenta según alcanzas ciertos niveles en esta clase, incrementándose a 8 en el nivel 5, a 11 en el nivel 10 y finalmente a 14 en el nivel 15."
 			]
 		},
 		{
-			"name": "Mantle of Majesty",
+			"name": "Manto de Majestad",
 			"source": "XGE-ES",
-			"page": 14,
-			"className": "Bard",
+			"page": 15,
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Glamour",
-			"subclassSource": "XGE",
+			"subclassSource": "XGE-ES",
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"At 6th level, you gain the ability to cloak yourself in a fey magic that makes others want to serve you. As a bonus action, you cast {@spell command}, without expending a spell slot, and you take on an appearance of unearthly beauty for 1 minute or until your {@status concentration} ends (as if you were {@status concentration||concentrating} on a spell). During this time, you can cast {@spell command} as a bonus action on each of your turns, without expending a spell slot.",
-				"Any creature {@condition charmed} by you automatically fails its saving throw against the {@spell command} you cast with this feature.",
-				"Once you use this feature, you can't use it again until you finish a long rest."
+				"A nivel 6 obtienes la capacidad de cubrirte de una magia feérica que incita a los demás a servirte. Como acción adicional, puedes lanzar un conjuro de {@spell orden imperiosa|PHB-ES} sin utilizar un espacio de conjuro y, además, tu aspecto queda envuelto en una belleza sobrenatural durante 1 minuto o hasta que tu {@status concentración|PHB-ES} termine (como si estuvieras {@status concentración|PHB-ES|concentrándote} en un conjuro). Durante este espacio de tiempo, puedes lanzar {@spell orden imperiosa|PHB-ES} como acción adicional cada turno, sin emplear un espacio de conjuro.",
+				"Cualquier criatura {@condition hechizado|PHB-ES|hechizada} por ti falla automáticamente su tirada de salvación contra la {@spell orden imperiosa|PHB-ES} que lanzas con este rasgo.",
+				"Una vez utilizado este rasgo, deberás finalizar un descanso largo para poder volver a usarlo."
 			]
 		},
 		{
-			"name": "Unbreakable Majesty",
+			"name": "Majestad Inquebrantable",
 			"source": "XGE-ES",
-			"page": 14,
-			"className": "Bard",
+			"page": 15,
+			"className": "Bardo",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Glamour",
-			"subclassSource": "XGE",
+			"subclassSource": "XGE-ES",
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"At 14th level, your appearance permanently gains an otherworldly aspect that makes you look more lovely and fierce.",
-				"In addition, as a bonus action, you can assume a magically majestic presence for 1 minute or until you are {@condition incapacitated}. For the duration, whenever any creature tries to attack you for the first time on a turn, the attacker must make a Charisma saving throw against your spell save DC. On a failed save, it can't attack you on this turn, and it must choose a new target for its attack or the attack is wasted. On a successful save, it can attack you on this turn, but it has disadvantage on any saving throw it makes against your spells on your next turn.",
-				"Once you assume this majestic presence, you can't do so again until you finish a short or long rest."
+				"A nivel 14, tu apariencia se altera de forma permanente, adoptando un aspecto de otro mundo, que te hace parecer más agradable y fiero.",
+				"Además, como acción adicional, puedes asumir una presencia mágica majestuosa durante 1 minuto o hasta que quedes {@condition incapacitado|PHB-ES}. Hasta que termine la duración de este efecto, cuando cualquier criatura te ataque por primera vez en un turno, deberá realizar una tirada de salvación de Carisma contra tu salvación de conjuros. Si falla, no podrá atacarte ese turno y deberá elegir un nuevo objetivo para su ataque o este será desperdiciado. En cambio, si tiene éxito, podrá atacarte ese turno, pero tendrá desventaja en cualquier tirada de salvación que haga contra tus conjuros durante tu próximo turno.",
+				"Una vez asumes esta presencia majestuosa, no puedes emplearla de nuevo hasta que termines un descanso corto o largo."
 			]
 		},
 		{
-			"name": "College of Swords",
+			"name": "Colegio de las Espadas",
 			"source": "XGE-ES",
-			"page": 15,
-			"className": "Bard",
+			"page": 14,
+			"className": "Bardo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Swords",
-			"subclassSource": "XGE",
+			"subclassShortName": "Espadas",
+			"subclassSource": "XGE-ES",
 			"level": 3,
 			"entries": [
-				"Bards of the College of Swords are called blades, and they entertain through daring feats of weapon prowess. Blades perform stunts such as sword swallowing, knife throwing and juggling, and mock combats. Though they use their weapons to entertain, they are also highly trained and skilled warriors in their own right.",
-				"Their talent with weapons inspires many blades to lead double lives. One blade might use a circus troupe as cover for nefarious deeds such as assassination, robbery, and blackmail. Other blades strike at the wicked, bringing justice to bear against the cruel and powerful. Most troupes are happy to accept a blade's talent for the excitement it adds to a performance, but few entertainers fully trust a blade in their ranks.",
-				"Blades who abandon their lives as entertainers have often run into trouble that makes maintaining their secret activities impossible. A blade caught stealing or engaging in vigilante justice is too great a liability for most troupes. With their weapon skills and magic, these blades either take up work as enforcers for thieves' guilds or strike out on their own as adventurers.",
+				"Los bardos del Colegio de las Espadas reciben el nombre de filos, ya que entretienen con osadas proezas de pericia en armas. Realizan interpretaciones tales como combates fingidos, tragarse sables, lanzamiento de cuchillos o malabares con dagas. Aunque utilizan sus armas para entretener, también son guerreros entrenados y de gran habilidad.",
+				"Su talento con las armas lleva a muchos filos a llevar dobles vidas. Uno de estos bardos quizá use a una compañía circense como tapadera para perversos actos, como asesinatos, robos y chantajes. Otros filos cazan a los malvados, dispensando justicia a los crueles y poderosos. La mayoría de compañías no tienen problema en añadir el talento de uno de ellos a sus filas, debido a la gran emoción que añaden a una actuación, pero pocos se fían por completo de lo que puedan hacer.",
+				"Aquellos bardos que dejan sus vidas como animadores muchas veces acaban teniendo problemas que les impiden mantener en secreto sus otras actividades. Un filo al que pillen robando o haciendo de justiciero supone un lastre demasiado grande para la mayor parte de compañías. Con su habilidad con las armas y su magia, estos bardos acaban encontrando trabajo como sicarios de algún gremio de ladrones o salen en busca de aventuras.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Bonus Proficiencies|Bard||Swords|XGE|3"
+					"subclassFeature": "Competencias Adicionales|Bardo|PHB-ES|Espadas|XGE-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Fighting Style|Bard||Swords|XGE|3"
+					"subclassFeature": "Estilo de Combate|Bardo|PHB-ES|Espadas|XGE-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Blade Flourish|Bard||Swords|XGE|3"
+					"subclassFeature": "Floritura con la Espada|Bardo|PHB-ES|Espadas|XGE-ES|3"
 				}
 			]
 		},
 		{
-			"name": "Blade Flourish",
+			"name": "Floritura con la Espada",
 			"source": "XGE-ES",
-			"page": 15,
-			"className": "Bard",
+			"page": 14,
+			"className": "Bardo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Swords",
-			"subclassSource": "XGE",
+			"subclassShortName": "Espadas",
+			"subclassSource": "XGE-ES",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"At 3rd level, you learn to perform impressive displays of martial prowess and speed.",
-				"Whenever you take the {@action Attack} action on your turn, your walking speed increases by 10 feet until the end of the turn, and if a weapon attack that you make as part of this action hits a creature, you can use one of the following Blade Flourish options of your choice. You can use only one Blade Flourish option per turn.",
+				"A nivel 3, aprendes a realizar impresionantes muestras de velocidad y de habilidad marcial.",
+				"Cuando realizas una acción de {@action Atacar|PHB-ES} en tu turno, tu velocidad aumenta en 10 pies hasta el final del turno. Además. si un ataque que haces como parte de esta acción impacta a una criatura, puedes usar una de las siguientes Florituras con la Espada a tu elección. Solo puedes emplear una de las opciones de Floritura con la Espada cada turno.",
 				{
 					"type": "options",
 					"entries": [
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Defensive Flourish|Bard|XGE|Swords|XGE|3"
+							"subclassFeature": "Floritura defensiva|Bardo|XGE-ES|Espadas|XGE-ES|3"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Slashing Flourish|Bard|XGE|Swords|XGE|3"
+							"subclassFeature": "Floritura cortante|Bardo|XGE-ES|Espadas|XGE-ES|3"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Mobile Flourish|Bard|XGE|Swords|XGE|3"
+							"subclassFeature": "Floritura móvil|Bardo|XGE-ES|Espadas|XGE-ES|3"
 						}
 					]
 				}
 			]
 		},
 		{
-			"name": "Bonus Proficiencies",
+			"name": "Floritura defensiva",
 			"source": "XGE-ES",
-			"page": 15,
-			"className": "Bard",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Swords",
-			"subclassSource": "XGE",
+			"page": 14,
+			"className": "Bardo",
+			"classSource": "XGE-ES",
+			"subclassShortName": "Espadas",
+			"subclassSource": "XGE-ES",
 			"level": 3,
-			"header": 1,
 			"entries": [
-				"When you join the College of Swords at 3rd level, you gain proficiency with medium armor and the {@item scimitar|phb}.",
-				"If you're proficient with a simple or martial melee weapon, you can use it as a spellcasting focus for your bard spells."
+				"Puedes gastar uno de tus usos de Inspiración Bárdica para que el arma inflija daño adicional al objetivo impactado. El daño es igual al número que obtengas en el dado de Inspiración Bárdica. También añades ese dado a tu CA hasta el comienzo de tu próximo turno."
 			]
 		},
 		{
-			"name": "Fighting Style",
+			"name": "Floritura móvil",
 			"source": "XGE-ES",
-			"page": 15,
-			"className": "Bard",
+			"page": 14,
+			"className": "Bardo",
+			"classSource": "XGE-ES",
+			"subclassShortName": "Espadas",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"Puedes emplear uno de tus usos de Inspiración Bárdica para que el arma inflija daño adicional al objetivo impactado. El daño es igual al número que obtengas en el dado de Inspiración Bárdica. Además, puedes empujar a tu objetivo hasta 5 pies más el número que hayas obtenido en este dado. Inmediatamente después, puedes utilizar tu reacción para moverte hasta tu velocidad caminando a un espacio libre que se encuentre a 5 pies o menos del objetivo."
+			]
+		},
+		{
+			"name": "Floritura cortante",
+			"source": "XGE-ES",
+			"page": 14,
+			"className": "Bardo",
+			"classSource": "XGE-ES",
+			"subclassShortName": "Espadas",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"Puedes utilizar uno de tus usos de Inspiración Bárdica para hacer que el arma inflija daño adicional a la criatura impactada y a cualquier otra criatura de tu elección que se encuentre hasta a 5 pies de ti y a la que puedas ver. El daño es igual al número que obtengas en el dado de Inspiración Bárdica."
+			]
+		},
+		{
+			"name": "Competencias Adicionales",
+			"source": "XGE-ES",
+			"page": 14,
+			"className": "Bardo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Swords",
-			"subclassSource": "XGE",
+			"subclassShortName": "Espadas",
+			"subclassSource": "XGE-ES",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"At 3rd level, you adopt a style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if something in the game lets you choose again.",
+				"Cuando te unes al Colegio de las Espadas, al alcanzar el nivel 3, ganas competencia con armaduras medias y con {@item cimitarra|PHB-ES|cimitarras}.",
+				"Si eres competente en el uso de un arma cuerpo a cuerpo sencilla o marcial, puedes utilizarla como canalizador mágico para tus conjuros de bardo."
+			]
+		},
+		{
+			"name": "Estilo de Combate",
+			"source": "XGE-ES",
+			"page": 14,
+			"className": "Bardo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Espadas",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A nivel 3, te especializas en un estilo de combate. Elige una de las siguientes opciones que aparecen a continuación. No puedes volver a escoger una de las opciones de este rasgo, incluso si algún elemento del juego te deja seleccionar de nuevo entre varios estilos de combate.",
 				{
 					"type": "options",
 					"count": 1,
 					"entries": [
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Dueling"
+							"optionalfeature": "Duelo|PHB-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Two-Weapon Fighting"
+							"optionalfeature": "Combate con dos armas|PHB-ES"
 						}
 					]
 				}
 			]
 		},
 		{
-			"name": "Extra Attack",
+			"name": "Ataque Adicional",
 			"source": "XGE-ES",
 			"page": 15,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Swords",
-			"subclassSource": "XGE",
+			"subclassShortName": "Espadas",
+			"subclassSource": "XGE-ES",
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"Starting at 6th level, you can attack twice, instead of once, whenever you take the {@action Attack} action on your turn."
+				"A partir de nivel 6, cuando lleves a cabo la acción de {@action Atacar|PHB-ES} durante tu turno, podrás hacer dos ataques en lugar de uno."
 			]
 		},
 		{
-			"name": "Master's Flourish",
+			"name": "Floritura del Maestro",
 			"source": "XGE-ES",
 			"page": 15,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Swords",
-			"subclassSource": "XGE",
+			"subclassShortName": "Espadas",
+			"subclassSource": "XGE-ES",
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Starting at 14th level, whenever you use a Blade Flourish option, you can roll a {@dice d6} and use it instead of expending a Bardic Inspiration die."
+				"A partir de nivel 14, siempre que uses una de las opciones de Floritura con la Espada, puedes lanzar un {@dice d6} y utilizarlo en vez de emplear uno de tus dados de Inspiración Bárdica."
 			]
 		},
 		{
-			"name": "College of Whispers",
+			"name": "Colegio de los Susurros",
 			"source": "XGE-ES",
 			"page": 16,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Whispers",
-			"subclassSource": "XGE",
+			"subclassShortName": "Susurros",
+			"subclassSource": "XGE-ES",
 			"level": 3,
 			"entries": [
-				"Most folk are happy to welcome a bard into their midst. Bards of the College of Whispers use this to their advantage. They appear to be like other bards, sharing news, singing songs, and telling tales to the audiences they gather. In truth, the College of Whispers teaches its students that they are wolves among sheep. These bards use their knowledge and magic to uncover secrets and turn them against others through extortion and threats.",
-				"Many other bards hate the College of Whispers, viewing it as a parasite that uses a bard's reputation to acquire wealth and power. For this reason, members of this college rarely reveal their true nature. They typically claim to follow some other college, or they keep their actual calling secret in order to infiltrate and exploit royal courts and other settings of power.",
+				"La mayoría de la gente no tiene problema en acoger a un bardo. De esto se aprovechan los miembros del Colegio de los Susurros. Se comportan como el resto de bardos: comparten noticias, cantan canciones y cuentan historias para el público. Pero, en realidad, este colegio enseña a sus estudiantes a ser como lobos entre el rebaño. Sus integrantes utilizan su conocimiento y su magia para descubrir secretos y volverlos contra otros, normalmente en forma de extorsión y amenazas.",
+				"Muchos otros bardos odian al Colegio de los Susurros. Lo ven como un parásito que usa la reputación de los de su clase para adquirir riqueza y poder. Por este motivo, los miembros de este colegio rara vez revelan su verdadera naturaleza. Normalmente dicen ser de otro colegio o no descubren su verdadera afiliación para poder infiltrarse y aprovecharse de cortes reales o entornos similares.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Psychic Blades|Bard||Whispers|XGE|3"
+					"subclassFeature": "Hoja Psíquica|Bardo|PHB-ES|Susurros|XGE-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Words of Terror|Bard||Whispers|XGE|3"
+					"subclassFeature": "Palabras de Terror|Bardo|PHB-ES|Susurros|XGE-ES|3"
 				}
 			]
 		},
 		{
-			"name": "Psychic Blades",
+			"name": "Hoja Psíquica",
 			"source": "XGE-ES",
 			"page": 16,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Whispers",
-			"subclassSource": "XGE",
+			"subclassShortName": "Susurros",
+			"subclassSource": "XGE-ES",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"When you join the College of Whispers at 3rd level, you gain the ability to make your weapon attacks magically toxic to a creature's mind.",
-				"When you hit a creature with a weapon attack, you can expend one use of your Bardic Inspiration to deal an extra {@damage 2d6} psychic damage to that target. You can do so only once per round on your turn.",
-				"The psychic damage increases when you reach certain levels in this class, increasing to {@dice 3d6} at 5th level, {@dice 5d6} at 10th level, and {@dice 8d6} at 15th level."
+				"Cuando te unes al Colegio de los Susurros, a nivel 3, consigues la capacidad de hacer que tu arma intoxique de forma mágica la mente de una criatura.",
+				"Cuando impactas a una criatura con un ataque con arma, puedes emplear uno de tus usos de Inspiración Bárdica para infligir {@damage 2d6} de daño psíquico adicional al objetivo. Solo puedes realizar esto una vez por asalto, en tu turno.",
+				"El daño psíquico toma nuevos valores cuando llegas a niveles concretos de esta clase: {@dice 3d6} a nivel 5, {@dice 5d6} a nivel 10 y {@dice 8d6} a nivel 15."
 			]
 		},
 		{
-			"name": "Words of Terror",
+			"name": "Palabras de Terror",
 			"source": "XGE-ES",
 			"page": 16,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Whispers",
-			"subclassSource": "XGE",
+			"subclassShortName": "Susurros",
+			"subclassSource": "XGE-ES",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"At 3rd level, you learn to infuse innocent-seeming words with an insidious magic that can inspire terror.",
-				"If you speak to a humanoid alone for at least 1 minute, you can attempt to seed paranoia in its mind. At the end of the conversation, the target must succeed on a Wisdom saving throw against your spell save DC or be {@condition frightened} of you or another creature of your choice. The target is {@condition frightened} in this way for 1 hour, until it is attacked or damaged, or until it witnesses its allies being attacked or damaged.",
-				"If the target succeeds on its saving throw, the target has no hint that you tried to frighten it.",
-				"Once you use this feature, you can't use it again until you finish a short or long rest."
+				"A nivel 3, aprendes a infundir palabras aparentemente inocentes con una magia insidiosa, capaz de infundir terror.",
+				"Si hablas a solas con un humanoide durante por lo menos 1 minuto, puedes intentar plantar la semilla de la paranoia en su mente. Al final de la conversación, el objetivo deberá tener éxito en una tirada de salvación de Sabiduría contra tu CD de salvación de conjuros o quedará {@condition asustado|PHB-ES} de ti o de otra criatura de tu elección. Este efecto dura 1 hora, hasta que el objetivo sea atacado o dañado, o hasta que vea a sus aliados ser atacados o dañados.",
+				"Si la criatura tiene éxito en su tirada de salvación, no será consciente de que has intentado asustarla.",
+				"Una vez utilizado este rasgo, deberás terminar un des canso corto o largo para poder volver a usarlo."
 			]
 		},
 		{
-			"name": "Mantle of Whispers",
+			"name": "Manto de Susurros",
 			"source": "XGE-ES",
 			"page": 16,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Whispers",
-			"subclassSource": "XGE",
+			"subclassShortName": "Susurros",
+			"subclassSource": "XGE-ES",
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"At 6th level, you gain the ability to adopt a humanoid's persona. When a humanoid dies within 30 feet of you, you can magically capture its shadow using your reaction. You retain this shadow until you use it or you finish a long rest.",
-				"You can use the shadow as an action. When you do so, it vanishes, magically transforming into a disguise that appears on you. You now look like the dead person, but healthy and alive. This disguise lasts for 1 hour or until you end it as a bonus action.",
-				"While you're in the disguise, you gain access to all information that the humanoid would freely share with a casual acquaintance. Such information includes general details on its background and personal life, but doesn't include secrets. The information is enough that you can pass yourself off as the person by drawing on its memories.",
-				"Another creature can see through this disguise by succeeding on a Wisdom ({@skill Insight}) check contested by your Charisma ({@skill Deception}) check. You gain a +5 bonus to your check.",
-				"Once you capture a shadow with this feature, you can't capture another one with it until you finish a short or long rest."
+				"A nivel 6 consigues la capacidad de adoptar la identidad de otra persona. Cuando un humanoide situado a 30 pies o menos de ti muere, puedes capturar su sombra de forma mágica usando tu reacción. De este modo, la retienes hasta que la utilices o hasta que completes un descanso largo.",
+				"Como acción, puedes emplear la sombra. Si lo haces, esta desaparece, transformándose en un disfraz mágico que se coloca sobre ti. Pasas a tener el aspecto de la persona muerta, pero vivo y en perfecto estado de salud. El disfraz dura 1 hora o hasta que decidas retirarlo como acción adicional.",
+				"Mientras estás disfrazado, tienes acceso a toda la información que el humanoide hubiera compartido libremente con un conocido. Esta incluye detalles generales sobre su trasfondo y vida personal, pero no secretos. Estos datos son suficientes como para hacerte pasar por esta persona usando sus recuerdos.",
+				"Otra criatura podría detectar el disfraz teniendo éxito en una tirada enfrentada entre su prueba de Sabiduría ({@skill Perspicacia|PHB-ES}) y tu prueba de Carisma ({@skill Engaño|PHB-ES}). Disfrutas de un bonificador de +5 en esta prueba.",
+				"Una vez capturas una sombra utilizando este rasgo, puedes apresar otra hasta que no termines un descanso corto o largo."
 			]
 		},
 		{
-			"name": "Shadow Lore",
+			"name": "Saber de las sombras",
 			"source": "XGE-ES",
 			"page": 16,
-			"className": "Bard",
+			"className": "Bardo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Whispers",
-			"subclassSource": "XGE",
+			"subclassShortName": "Susurros",
+			"subclassSource": "XGE-ES",
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"At 14th level, you gain the ability to weave dark magic into your words and tap into a creature's deepest fears.",
-				"As an action, you magically whisper a phrase that only one creature of your choice within 30 feet of you can hear. The target must make a Wisdom saving throw against your spell save DC. It automatically succeeds if it doesn't share a language with you or if it can't hear you. On a successful saving throw, your whisper sounds like unintelligible mumbling and has no effect.",
-				"On a failed saving throw, the target is {@condition charmed} by you for the next 8 hours or until you or your allies attack it, damage it, or force it to make a saving throw. It interprets the whispers as a description of its most mortifying secret. You gain no knowledge of this secret, but the target is convinced you know it.",
-				"The {@condition charmed} creature obeys your commands for fear that you will reveal its secret. It won't risk its life for you or fight for you, unless it was already inclined to do so. It grants you favors and gifts it would offer to a close friend.",
-				"When the effect ends, the creature has no understanding of why it held you in such fear.",
-				"Once you use this feature, you can't use it again until you finish a long rest."
-			]
-		},
-		{
-			"name": "Defensive Flourish",
-			"source": "XGE-ES",
-			"page": 15,
-			"className": "Bard",
-			"classSource": "XGE-ES",
-			"subclassShortName": "Swords",
-			"subclassSource": "XGE",
-			"level": 3,
-			"entries": [
-				"You can expend one use of your Bardic Inspiration to cause the weapon to deal extra damage to the target you hit. The damage equals the number you roll on the Bardic Inspiration die. You also add the number rolled to your AC until the start of your next turn."
-			]
-		},
-		{
-			"name": "Mobile Flourish",
-			"source": "XGE-ES",
-			"page": 15,
-			"className": "Bard",
-			"classSource": "XGE-ES",
-			"subclassShortName": "Swords",
-			"subclassSource": "XGE",
-			"level": 3,
-			"entries": [
-				"You can expend one use of your Bardic Inspiration to cause the weapon to deal extra damage to the target you hit. The damage equals the number you roll on the Bardic Inspiration die. You can also push the target up to 5 feet away from you, plus a number of feet equal to the number you roll on that die. You can then immediately use your reaction to move up to your walking speed to an unoccupied space within 5 feet of the target."
-			]
-		},
-		{
-			"name": "Slashing Flourish",
-			"source": "XGE-ES",
-			"page": 15,
-			"className": "Bard",
-			"classSource": "XGE-ES",
-			"subclassShortName": "Swords",
-			"subclassSource": "XGE",
-			"level": 3,
-			"entries": [
-				"You can expend one use of your Bardic Inspiration to cause the weapon to deal extra damage to the target you hit and to any other creature of your choice that you can see within 5 feet of you. The damage equals the number you roll on the Bardic Inspiration die."
+				"A nivel 14 eres capaz de entretejer magia oscura en tus palabras y acceder a los miedos más profundos de una criatura. Como acción, puedes pronunciar una frase que solo será oída por un objetivo de tu elección que se encuentre a 30 pies o menos de ti. Este deberá hacer una tirada de salvación de Sabiduría contra tu CD de salvación de conjuros. Tiene éxito de forma automática si no comparte un lenguaje contigo o si no puede oírte. Si la supera, tu susurro parecerá un murmullo ininteligible y no tendrá efecto. En cambio, si la falla, quedará {@condition hechizado|PHB-ES} por ti durante 8 horas, o hasta que tú o uno de tus aliados le ataquéis, dañéis o forcéis a realizar una tirada de salvación. El susurro le parecerá una descripción de su secreto más vergonzoso. No consigues ninguna información sobre este, pero tu objetivo estará convencido de que conoces su secreto.",
+				"La criatura {@condition hechizado|PHB-ES|hechizada} obedecerá tus instrucciones por miedo a que reveles el secreto. No arriesgará su vida o luchará por ti, a menos que ya estuviera dispuesta a hacerlo antes. Te otorgará favores y regalos que ofrecería a un amigo muy cercano.",
+				"Cuando el efecto termina, la criatura no entiende por qué te tenía tanto miedo.",
+				"Una vez utilizado este rasgo, deberás finalizar un descanso largo para poder volver a usarlo."
 			]
 		}
 	]
