@@ -1,28 +1,28 @@
 {
 	"optionalfeature": [
 		{
-			"name": "Agonizing Blast",
+			"name": "Descarga Agónica",
 			"source": "PHB-ES",
-			"page": 110,
+			"page": 61,
 			"srd": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
 					"spell": [
-						"eldritch blast#c"
+						"descarga sobrenatural|PHB-ES#c"
 					]
 				}
 			],
 			"entries": [
-				"When you cast {@spell eldritch blast}, add your Charisma modifier to the damage it deals on a hit."
+				"Cuando lanzas {@spell descarga sobrenatural|PHB-ES} añades tu modificador por Carisma al daño que causas si impactas."
 			]
 		},
 		{
-			"name": "Ambush",
+			"name": "Emboscada",
 			"source": "TCE-ES",
-			"page": 42,
+			"page": 53,
 			"isClassFeatureVariant": true,
 			"featureType": [
 				"MV_Esp:B"
@@ -31,38 +31,38 @@
 				"name": "Dado de supremacía"
 			},
 			"entries": [
-				"When you make a Dexterity ({@skill Stealth}) check or an initiative roll, you can expend one superiority die and add the die to the roll, provided you aren't {@condition incapacitated}."
+				"Cuando haces una prueba de Destreza ({@skill Sigilo|PHB-ES}) o una tirada de iniciativa, puedes gastar un dado de supremacía y añadirlo a la tirada, siempre que no estés {@condition incapacitado|PHB-ES}."
 			]
 		},
 		{
-			"name": "Arcane Propulsion Armor",
+			"name": "Armadura de Propulsión Arcana",
 			"source": "TCE-ES",
-			"page": 20,
+			"page": 21,
 			"featureType": [
-				"AI"
+				"AI_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 14,
 						"class": {
-							"name": "Artificer"
+							"name": "Artífice"
 						}
 					},
 					"item": [
-						"A suit of armor (requires attunement)"
+						"Una armadura (requiere sintonización)"
 					]
 				}
 			],
 			"entries": [
-				"The wearer of this armor gains these benefits:",
+				"El portador de esta armadura obtiene estos beneficios:",
 				{
 					"type": "list",
 					"items": [
-						"The wearer's walking speed increases by 5 feet.",
-						"The armor includes gauntlets, each of which is a magic melee weapon that can be wielded only when the hand is holding nothing. The wearer is proficient with the gauntlets, and each one deals {@damage 1d8} force damage on a hit and has the thrown property, with a normal range of 20 feet and a long range of 60 feet. When thrown, the gauntlet detaches and flies at the attack's target, then immediately returns to the wearer and reattaches.",
-						"The armor can't be removed against the wearer's will.",
-						"If the wearer is missing any limbs, the armor replaces those limbs—hands, arms, feet, legs, or similar appendages. The replacements function identically to the body parts they replace."
+						"Su velocidad caminando aumenta en 5 pies.",
+						"La armadura incluye guanteletes, cada uno de los cuales es un arma cuerpo a cuerpo mágica que solo puede usarse cuando la mano no sostiene nada. El portador es competente con los guanteletes y cada uno hace {@damage 1d8} de daño de fuerza si impacta y tiene la propiedad \"arrojadiza\", con un alcance normal de 20 pies y un alcance largo de 60. Cuando se lanza, el guantelete se desprende y vuela hacia el objetivo del ataque, y luego vuelve inmediatamente al portador y se recoloca.",
+						"La armadura no se puede quitar en contra de la voluntad del portador.",
+						"Si al portador le falta alguna extremidad, la armadura la sustituye (manos, brazos, pies, piernas o miembros similares). Las extremidades sustitutas funcionan exactamente igual que las partes del cuerpo a las que reemplazan."
 					]
 				}
 			]
@@ -87,66 +87,67 @@
 			]
 		},
 		{
-			"name": "Armor of Magical Strength",
+			"name": "Armadura de Fuerza Mágica",
 			"source": "TCE-ES",
-			"page": 20,
+			"page": 21,
 			"featureType": [
-				"AI"
+				"AI_Esp"
 			],
 			"prerequisite": [
 				{
 					"item": [
-						"A suit of armor (requires attunement)"
+						"Una armadura (requiere sintonización)"
 					]
 				}
 			],
 			"entries": [
-				"This armor has 6 charges. The wearer can expend the armor's charges in the following ways:",
+				"Esta armadura tiene 6 cargas. El portador puede gastar las cargas de la armadura de las siguientes formas:",
 				{
 					"type": "list",
 					"items": [
-						"When the wearer makes a Strength check or a Strength saving throw, it can expend 1 charge to add a bonus to the roll equal to its Intelligence modifier.",
-						"If the creature would be knocked {@condition prone}, it can use its reaction to expend 1 charge to avoid being knocked prone."
+						"Cuando realice una prueba de Fuerza o una tirada de salvación de Fuerza, podrá gastar 1 carga para añadir un bonificador a la tirada igual a su modificador por Inteligencia.",
+						"Si la criatura fuera a ser {@condition derribado|PHB-ES|derribada}, puede usar su reacción para gastar 1 carga y evitarlo."
 					]
 				},
-				"The armor regains {@dice 1d6} expended charges daily at dawn."
+				"La armadura recupera {@dice 1d6} cargas empleadas cada día, al amanecer."
 			]
 		},
 		{
-			"name": "Armor of Shadows",
+			"name": "Capa de Sombras",
 			"source": "PHB-ES",
-			"page": 110,
+			"page": 61,
 			"srd": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"additionalSpells": [
 				{
 					"innate": {
 						"_": [
-							"mage armor"
+							"armadura de mago|PHB-ES"
 						]
 					}
 				}
 			],
 			"entries": [
-				"You can cast {@spell mage armor} on yourself at will, without expending a spell slot or material components."
+				"Puedes lanzar {@spell armadura de mago|PHB-ES} sobre ti mismo a voluntad, sin tener que gastar un espacio de conjuro ni componentes materiales."
 			]
 		},
 		{
-			"name": "Ascendant Step",
+			"name": "Paso Ascendente",
 			"source": "PHB-ES",
-			"page": 110,
+			"page": 62,
 			"srd": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 9,
 						"class": {
-							"name": "Warlock"
+							"name": "Brujo",
+							"source": "PHB-ES"
 						}
 					}
 				}
@@ -155,35 +156,35 @@
 				{
 					"innate": {
 						"_": [
-							"levitate"
+							"levitar|PHB-ES"
 						]
 					}
 				}
 			],
 			"entries": [
-				"You can cast {@spell levitate} on yourself at will, without expending a spell slot or material components."
+				"Puedes lanzar {@spell levitar|PHB-ES} sobre ti mismo a voluntad, sin tener que gastar un espacio de conjuro ni componentes materiales."
 			]
 		},
 		{
-			"name": "Aspect of the Moon",
+			"name": "Aspecto de la Luna",
 			"source": "XGE-ES",
-			"page": 56,
+			"page": 20,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
-					"pact": "Tome"
+					"pact": "Pacto del Grimorio"
 				}
 			],
 			"entries": [
-				"You no longer need to sleep and can't be forced to sleep by any means. To gain the benefits of a long rest, you can spend all 8 hours doing light activity, such as reading your Book of Shadows and keeping watch."
+				"Ya no necesitas dormir y no pueden forzarte a hacerlo de ninguna manera. Para conseguir los beneficios de un des canso largo, puedes pasar 8 horas realizando actividades poco intensas, como leer tu Libro de las Sombras o montar guardia."
 			]
 		},
 		{
-			"name": "Bait and Switch",
+			"name": "Cambio de Posición Ventajoso",
 			"source": "TCE-ES",
-			"page": 42,
+			"page": 53,
 			"isClassFeatureVariant": true,
 			"featureType": [
 				"MV_Esp:B"
@@ -192,68 +193,68 @@
 				"name": "Dado de supremacía"
 			},
 			"entries": [
-				"When you're within 5 feet of a creature on your turn, you can expend one superiority die and switch places with that creature, provided you spend at least 5 feet of movement and the creature is willing and isn't {@condition incapacitated}. This movement doesn't provoke opportunity attacks.",
-				"Roll the superiority die. Until the start of your next turn, you or the other creature (your choice) gains a bonus to AC equal to the number rolled."
+				"Si en tu turno estás a 5 pies o menos de una criatura, puedes gastar un dado de supremacía y cambiar tu posición por la de ella, siempre que gastes al menos 5 pies de movimiento y que esa criatura acceda voluntariamente y no esté {@condition incapacitado|PHB-ES|incapacitada}. Este movimiento no provocará ataques de oportunidad.",
+				"Tira el dado de supremacía. Hasta el principio de tu siguiente turno, tú o la otra criatura (a tu elección) obtenéis un bonificador a la CA igual al resultado."
 			]
 		},
 		{
-			"name": "Banishing Arrow",
+			"name": "Flecha Desterradora",
 			"source": "XGE-ES",
-			"page": 29,
+			"page": 38,
 			"featureType": [
-				"AS"
+				"AS_Esp"
 			],
 			"consumes": {
-				"name": "Arcane Shot"
+				"name": "Disparo Arcano"
 			},
 			"entries": [
-				"You use abjuration magic to try to temporarily banish your target to a harmless location in the Feywild. The creature hit by the arrow must also succeed on a Charisma saving throw or be banished. While banished in this way, the target's speed is 0, and it is {@condition incapacitated}. At the end of its next turn, the target reappears in the space it vacated or in the nearest unoccupied space if that space is occupied.",
-				"After you reach 18th level in this class, a target also takes {@damage 2d6} force damage when the arrow hits it."
+				"Utilizas magia de abjuración para intentar desterrar de forma temporal a tu objetivo a un lugar inofensivo en el Feywild. La criatura impactada por el proyectil deberá tener éxito en una tirada de salvación de Carisma o quedará desterrada. Mientras esté desterrada de esta manera, su velocidad será 0 y estará {@condition incapacitado|PHB-ES|incapacitada}. Al final de su siguiente turno, volverá a aparecer en el mismo lugar en el que estaba o, en su defecto, en el espacio libre más cercano si aquel está ocupado.",
+				"Cuando alcances el nivel 18 en esta clase, el objetivo también sufre {@damage 2d6} puntos de daño de fuerza adicional cuando es impactado por la flecha."
 			]
 		},
 		{
-			"name": "Beast Speech",
+			"name": "Habla Bestial",
 			"source": "PHB-ES",
-			"page": 110,
+			"page": 61,
 			"srd": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"additionalSpells": [
 				{
 					"innate": {
 						"_": [
-							"speak with animals"
+							"hablar con los animales|PHB-ES"
 						]
 					}
 				}
 			],
 			"entries": [
-				"You can cast {@spell speak with animals} at will, without expending a spell slot."
+				"Puedes lanzar {@spell hablar con los animales|PHB-ES} a voluntad, sin tener que gastar un espacio de conjuro."
 			]
 		},
 		{
-			"name": "Beguiling Arrow",
+			"name": "Flecha Encantadora",
 			"source": "XGE-ES",
-			"page": 29,
+			"page": 38,
 			"featureType": [
-				"AS"
+				"AS_Esp"
 			],
 			"consumes": {
-				"name": "Arcane Shot"
+				"name": "Disparo Arcano"
 			},
 			"entries": [
-				"Your enchantment magic causes this arrow to temporarily beguile its target. The creature hit by the arrow takes an extra {@damage 2d6} psychic damage, and choose one of your allies within 30 feet of the target. The target must succeed on a Wisdom saving throw, or it is {@condition charmed} by the chosen ally until the start of your next turn. This effect ends early if the chosen ally attacks the {@condition charmed} target, deals damage to it, or forces it to make a saving throw.",
-				"The psychic damage increases to {@damage 4d6} when you reach 18th level in this class."
+				"Tu magia de encantamiento hace que la flecha cautive temporalmente al objetivo. La criatura impactada por el proyectil recibe {@damage 2d6} de daño psíquico adicional y, además, puedes elegir a uno de tus aliados situado a 30 pies o menos del objetivo. Este último deberá realizar una tirada de salvación de Sabiduría o quedará {@condition hechizado|PHB-ES} por el aliado escogido hasta el comienzo de tu siguiente turno. Este efecto termina antes de tiempo si el aliado seleccionado ataca al objetivo {@condition hechizado|PHB-ES}, le inflige daño o le fuerza a realizar una tirada de salvación.",
+				"El daño psíquico se incrementa a {@damage 4d6} cuando llegas al nivel 18 de esta clase."
 			]
 		},
 		{
-			"name": "Beguiling Influence",
+			"name": "Influencia Seductora",
 			"source": "PHB-ES",
-			"page": 110,
+			"page": 61,
 			"srd": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"skillProficiencies": [
 				{
@@ -262,23 +263,24 @@
 				}
 			],
 			"entries": [
-				"You gain proficiency in the {@skill Deception} and {@skill Persuasion} skills."
+				"Obtienes competencia en las habilidades {@skill Engaño|PHB-ES} y {@skill Persuasión|PHB-ES}."
 			]
 		},
 		{
-			"name": "Bewitching Whispers",
+			"name": "Susurros Embrujados",
 			"source": "PHB-ES",
-			"page": 110,
+			"page": 62,
 			"srd": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 7,
 						"class": {
-							"name": "Warlock"
+							"name": "Brujo",
+							"source": "PHB-ES"
 						}
 					}
 				}
@@ -289,7 +291,7 @@
 						"_": {
 							"daily": {
 								"1e": [
-									"compulsion"
+									"compulsión|PHB-ES"
 								]
 							}
 						}
@@ -297,16 +299,16 @@
 				}
 			],
 			"entries": [
-				"You can cast {@spell compulsion} once using a warlock spell slot. You can't do so again until you finish a long rest."
+				"Puedes lanzar {@spell compulsión|PHB-ES} una vez utilizando un espacio de conjuro de brujo. Para volver a hacer esto tienes que finalizar primero un descanso largo."
 			]
 		},
 		{
-			"name": "Blessed Warrior",
+			"name": "Guerrero Bendito",
 			"source": "TCE-ES",
-			"page": 52,
+			"page": 71,
 			"isClassFeatureVariant": true,
 			"featureType": [
-				"FS:P"
+				"FS_Esp:P"
 			],
 			"additionalSpells": [
 				{
@@ -314,7 +316,7 @@
 					"known": {
 						"_": [
 							{
-								"choose": "level=0|class=cleric",
+								"choose": "level=0|class=clérigo (PHB-ES)",
 								"count": 2
 							}
 						]
@@ -322,18 +324,18 @@
 				}
 			],
 			"entries": [
-				"You learn two cantrips of your choice from the {@filter cleric spell list|spells|level=0|class=Cleric}. They count as paladin spells for you, and Charisma is your spellcasting ability for them. Whenever you gain a level in this class, you can replace one of these cantrips with another cantrip from the cleric spell list."
+				"Aprendes dos trucos de tu elección escogidos de entre los de la {@filter lista de conjuros de clérigo|spells|level=0|class=Clérigo (PHB-ES)}. En lo que a ti respecta, cuentan como conjuros de paladín, y el Carisma es tu aptitud mágica para lanzarlos. Además, cada vez que subas un nivel en esta clase, podrás sustituir uno de estos trucos por otro de los que aparecen en la lista de conjuros de clérigo."
 			]
 		},
 		{
-			"name": "Blind Fighting",
+			"name": "Lucha a Ciegas",
 			"source": "TCE-ES",
-			"page": 41,
+			"page": 72,
 			"isClassFeatureVariant": true,
 			"featureType": [
-				"FS:F",
-				"FS:P",
-				"FS:R"
+				"FS_Esp:F",
+				"FS_Esp:P",
+				"FS_Esp:R"
 			],
 			"senses": [
 				{
@@ -341,43 +343,44 @@
 				}
 			],
 			"entries": [
-				"You have {@sense blindsight} with a range of 10 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're {@condition blinded} or in darkness. Moreover, you can see an {@condition invisible} creature within that range, unless the creature successfully hides from you."
+				"Tienes {@sense visión ciega|PHB-ES} hasta 10 pies. Dentro de ese alcance, puedes ver cualquier cosa que no esté tras una cobertura completa, incluso si estás {@condition cegado|PHB-ES} o en oscuridad. Además, puedes ver a las criaturas {@condition invisible|PHB-ES|invisibles|PHB-ES} que estén a ese alcance, a no ser que consigan esconderse."
 			]
 		},
 		{
-			"name": "Bond of the Talisman",
+			"name": "Vínculo del talismán",
 			"source": "TCE-ES",
-			"page": 70,
+			"page": 32,
 			"isClassFeatureVariant": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 12,
 						"class": {
-							"name": "Warlock"
+							"name": "Brujo",
+							"source": "PHB-ES"
 						}
 					},
-					"pact": "Talisman"
+					"pact": "Pacto del Talismán"
 				}
 			],
 			"entries": [
-				"While someone else is wearing your talisman, you can use your action to teleport to the unoccupied space closest to them, provided the two of you are on the same plane of existence. The wearer of your talisman can do the same thing, using their action to teleport to you. The teleportation can be used a number of times equal to your proficiency bonus, and all expended uses are restored when you finish a long rest."
+				"Mientras alguien lleve puesto tu talismán, puedes usar tu acción para teletransportarte al espacio sin ocupar más cercano al portador, siempre que ambos estéis en el mismo plano de existencia. El portador de tu talismán puede hacer lo mismo, usando su acción para teletransportarse hasta donde tú estés. Este teletransporte se puede usar una cantidad de veces igual a tu bonificador por competencia y recuperas todos los usos tras finalizar un descanso largo."
 			]
 		},
 		{
-			"name": "Book of Ancient Secrets",
+			"name": "Libro de los Secretos Ancestrales",
 			"source": "PHB-ES",
-			"page": 110,
+			"page": 62,
 			"srd": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
-					"pact": "Tome"
+					"pact": "Pacto del Grimorio"
 				}
 			],
 			"additionalSpells": [
@@ -396,44 +399,38 @@
 				}
 			],
 			"entries": [
-				"You can now inscribe magical rituals in your Book of Shadows. Choose two {@filter 1st-level spells that have the ritual tag from any class's spell list|spells|Components & Miscellaneous=ritual|level=1}. The spells needn't be from the same spell list. The spells appear in the book and don't count against the number of spells you know. With your Book of Shadows in hand, you can cast the chosen spells as rituals. You can't cast the spells except as rituals, unless you've learned them by some other means. You can also cast a warlock spell you know as a ritual if it has the ritual tag.",
-				"On your adventures, you can add other ritual spells to your Book of Shadows. When you find such a spell, you can add it to the book if the spell's level is equal to or less than half your warlock level (rounded up) and if you can spare the time to transcribe the spell. For each level of the spell, the transcription process takes 2 hours and costs 50 gp for the rare inks needed to inscribe it."
+				"Ahora puedes escribir rituales mágicos en tu Libro de las Sombras. Escoge dos {@filter conjuros de nivel 1 que estén marcados como \"ritual\" de entre los de la lista de conjuros de cualquier clase|spells|Components & Miscellaneous=ritual|level=1}. No tienen por qué ser los dos de la misma lista. Los conjuros que escribas en el libro no cuentan dentro del límite de conjuros que puedes conocer. Siempre que tengas tu Libro de las Sombras a mano podrás lanzar los conjuros elegidos como rituales. No serás capaz de lanzarlos de otra forma que no sea ritual, salvo si has obtenido estos conjuros por otros medios. También puedes lanzar de forma ritual aquellos conjuros de brujo que conozcas y estén marcados como \"ritual\".",
+				"Además, podrás añadir a tu Libro de las Sombras otros conjuros rituales que encuentres durante tus aventuras. Cuando te hagas con un conjuro marcado de esta forma, serás capaz de incorporarlo al libro si su nivel es igual o inferior a la mitad de tu nivel de brujo (redondeando hacia arriba) y dispones del tiempo necesario para transcribir el conjuro. El proceso de copia exige 2 horas y 50 po por cada nivel del conjuro. El coste se debe a las raras tintas que son necesarias para grabarlo."
 			]
 		},
 		{
-			"name": "Boots of the Winding Path",
+			"name": "Botas del Sendero Sinuoso",
 			"source": "TCE-ES",
 			"page": 21,
-			"otherSources": [
-				{
-					"source": "ERLW",
-					"page": 62
-				}
-			],
 			"featureType": [
-				"AI"
+				"AI_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 6,
 						"class": {
-							"name": "Artificer"
+							"name": "Artífice"
 						}
 					},
 					"item": [
-						"A pair of boots (requires attunement)"
+						"Unas botas (requiere sintonización)"
 					]
 				}
 			],
 			"entries": [
-				"While wearing these boots, a creature can teleport up to 15 feet as a bonus action to an unoccupied space the creature can see. The creature must have occupied that space at some point during the current turn."
+				"Cuando lleve puestas estas botas, una criatura podrá teletransportarse hasta 15 pies como acción adicional hasta un espacio sin ocupar que pueda ver. La criatura deberá haber ocupado ese espacio en algún momento durante ese turno."
 			]
 		},
 		{
-			"name": "Brace",
+			"name": "Presteza",
 			"source": "TCE-ES",
-			"page": 42,
+			"page": 53,
 			"isClassFeatureVariant": true,
 			"featureType": [
 				"MV_Esp:B"
@@ -442,25 +439,27 @@
 				"name": "Dado de supremacía"
 			},
 			"entries": [
-				"When a creature you can see moves into the reach you have with the melee weapon you're wielding, you can use your reaction to expend one superiority die and make one attack against the creature, using that weapon. If the attack hits, add the superiority die to the weapon's damage roll."
+				"Cuando una criatura que puedas ver pase a estar al alcance del arma cuerpo a cuerpo que estés empuñando, puedes usar tu reacción para gastar un dado de supremacía y atacar a la criatura con esa arma. Si el ataque impacta, añade el dado de supremacía a la tirada de daño del arma."
 			]
 		},
 		{
-			"name": "Breath of Winter",
+			"name": "Aliento del Invierno",
 			"source": "PHB-ES",
-			"page": 81,
+			"page": 107,
 			"featureType": [
-				"ED"
+				"ED_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 17,
 						"class": {
-							"name": "Monk"
+							"name": "Monje",
+							"source": "PHB-ES"
 						},
 						"subclass": {
-							"name": "Four Elements"
+							"name": "Cuatro Elementos",
+							"source": "PHB-ES"
 						}
 					}
 				}
@@ -471,7 +470,7 @@
 						"_": {
 							"resource": {
 								"6": [
-									"cone of cold"
+									"cono de frío|PHB-ES"
 								]
 							}
 						}
@@ -481,54 +480,55 @@
 				}
 			],
 			"entries": [
-				"You can spend 6 ki points to cast {@spell cone of cold}."
+				"Puedes gastar 6 puntos de ki para lanzar {@spell cono de frío|PHB-ES}."
 			]
 		},
 		{
-			"name": "Bursting Arrow",
+			"name": "Flecha Explosiva",
 			"source": "XGE-ES",
-			"page": 29,
+			"page": 38,
 			"featureType": [
-				"AS"
+				"AS_Esp"
 			],
 			"consumes": {
-				"name": "Arcane Shot"
+				"name": "Disparo Arcano"
 			},
 			"entries": [
-				"You imbue your arrow with force energy drawn from the school of evocation. The energy detonates after your attack. Immediately after the arrow hits the creature, the target and all other creatures within 10 feet of it take {@damage 2d6} force damage each.",
-				"The force damage increases to {@damage 4d6} when you reach 18th level in this class."
+				"Imbuyes tu flecha con energía de fuerza de la escuela de evocación. Esta energía detona tras tu ataque. Inmediatamente después de que el proyectil impacte a una criatura, esta y todas las demás situadas a 10 pies o menos de ella reciben {@damage 2d6} de daño de fuerza cada una.",
+				"El daño de fuerza se incrementa a {@damage 4d6} cuando llegas al nivel 18 de esta clase."
 			]
 		},
 		{
-			"name": "Careful Spell",
+			"name": "Conjuro Cuidadoso",
 			"source": "PHB-ES",
-			"page": 102,
+			"page": 91,
 			"srd": true,
 			"featureType": [
-				"MM"
+				"MM_Esp"
 			],
 			"consumes": {
-				"name": "Sorcery Point"
+				"name": "Punto de hechicería"
 			},
 			"entries": [
-				"When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell's full force. To do so, you spend 1 sorcery point and choose a number of those creatures up to your Charisma modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell."
+				"Cuando lanzas un conjuro que obliga a otras criaturas a realizar una tirada de salvación, puedes proteger a algunas de esas criaturas de la fuerza completa del conjuro. Para hacer esto, debes gastar 1 punto de hechicería y escoger, como mucho, tantas criaturas como tu modificador por Carisma (como mínimo una criatura). Las criaturas elegidas tendrán éxito en sus tiradas de salvación contra el conjuro automáticamente."
 			]
 		},
 		{
-			"name": "Chains of Carceri",
+			"name": "Cadenas de Carceri",
 			"source": "PHB-ES",
-			"page": 110,
+			"page": 61,
 			"srd": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
-					"pact": "Chain",
+					"pact": "Pacto de la Cadena",
 					"level": {
 						"level": 15,
 						"class": {
-							"name": "Warlock"
+							"name": "Brujo",
+							"source": "PHB-ES"
 						}
 					}
 				}
@@ -539,7 +539,7 @@
 						"_": {
 							"daily": {
 								"1e": [
-									"hold monster"
+									"inmovilizar monstruo|PHB-ES"
 								]
 							}
 						}
@@ -547,25 +547,27 @@
 				}
 			],
 			"entries": [
-				"You can cast {@spell hold monster} at will—targeting a celestial, fiend, or elemental—without expending a spell slot or material components. You must finish a long rest before you can use this invocation on the same creature again."
+				"Puedes lanzar {@spell inmovilizar monstruo|PHB-ES} sobre un celestial, un infernal o un elemental a voluntad, sin tener que gastar un espacio de conjuro ni componentes materiales. Deberás terminar un descanso largo para poder volver a usar esta invocación en la misma criatura otra vez."
 			]
 		},
 		{
-			"name": "Clench of the North Wind",
+			"name": "Agarre del Viento del Norte",
 			"source": "PHB-ES",
-			"page": 81,
+			"page": 107,
 			"featureType": [
-				"ED"
+				"ED_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 6,
 						"class": {
-							"name": "Monk"
+							"name": "Monje",
+							"source": "PHB-ES"
 						},
 						"subclass": {
-							"name": "Four Elements"
+							"name": "Cuatro Elementos",
+							"source": "PHB-ES"
 						}
 					}
 				}
@@ -576,7 +578,7 @@
 						"_": {
 							"resource": {
 								"3": [
-									"hold person"
+									"inmovilizar persona|PHB-ES"
 								]
 							}
 						}
@@ -586,42 +588,43 @@
 				}
 			],
 			"entries": [
-				"You can spend 3 ki points to cast {@spell hold person}."
+				"Puedes gastar 3 puntos de ki para lanzar {@spell inmovilizar persona|PHB-ES}."
 			]
 		},
 		{
-			"name": "Cloak of Flies",
+			"name": "Capa de Moscas",
 			"source": "XGE-ES",
-			"page": 56,
+			"page": 20,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 5,
 						"class": {
-							"name": "Warlock"
+							"name": "Brujo",
+							"source": "PHB-ES"
 						}
 					}
 				}
 			],
 			"entries": [
-				"As a bonus action, you can surround yourself with a magical aura that looks like buzzing flies. The aura extends 5 feet from you in every direction, but not through total cover. It lasts until you're {@condition incapacitated} or you dismiss it as a bonus action.",
-				"The aura grants you advantage on Charisma ({@skill Intimidation}) checks but disadvantage on all other Charisma checks. Any other creature that starts its turn in the aura takes poison damage equal to your Charisma modifier (minimum of 0 damage).",
-				"Once you use this invocation, you can't use it again until you finish a short or long rest."
+				"Como acción adicional, puedes rodearte de un aura mágica con apariencia de moscas zumbando. Esta cubre un área de 5 pies alrededor de ti en todas direcciones, pero no atraviesa la cobertura completa. Dura hasta que quedes {@condition incapacitado|PHB-ES} o la des por terminada usando una acción adicional.",
+				"El aura te otorga ventaja en las pruebas de Carisma ({@skill Intimidación|PHB-ES}) y desventaja en todo el resto de pruebas de Carisma. Cualquier otra criatura que comience su turno en el área recibe tanto daño de veneno como tu modificador de Carisma (mínimo 0 de daño).",
+				"Una vez utilizada esta invocación, deberás terminar un descanso corto o largo para poder volver a usarla."
 			]
 		},
 		{
-			"name": "Cloud Rune",
+			"name": "Runa de las Nubes",
 			"source": "TCE-ES",
-			"page": 44,
+			"page": 54,
 			"featureType": [
-				"RN"
+				"RN_Esp"
 			],
 			"entries": [
-				"This rune emulates the deceptive magic used by some cloud giants. While wearing or carrying an object inscribed with this rune, you have advantage on Dexterity ({@skill Sleight of Hand}) checks and Charisma ({@skill Deception}) checks.",
-				"In addition, when you or a creature you can see within 30 feet of you is hit by an attack roll, you can use your reaction to invoke the rune and choose a different creature within 30 feet of you, other than the attacker. The chosen creature becomes the target of the attack, using the same roll. This magic can transfer the attack's effects regardless of the attack's range. Once you invoke this rune, you can't do so again until you finish a short or long rest."
+				"Esta runa emula la magia de engaño utilizada por algunos gigantes de las nubes. Mientras vistas o lleves contigo un objeto que tenga grabada esta runa, tendrás ventaja en las pruebas de Destreza ({@skill Juego de manos|PHB-ES}) y Carisma ({@skill Engaño|PHB-ES}).",
+				"Además, si una tirada de ataque os impacta a ti o a una criatura que puedas ver a 30 pies o menos de ti, podrás usar tu reacción para invocar la runa y elegir una criatura diferente a 30 pies o menos de ti que no sea el atacante. La criatura elegida se convierte en el objetivo del ataque, utilizando el mismo resultado. Esta magia puede transferir los efectos del ataque independientemente del alcance de dicho ataque. Cuando invoques esta runa, no podrás volver a hacerlo hasta que finalices un descanso corto o largo."
 			]
 		},
 		{
@@ -639,9 +642,9 @@
 			]
 		},
 		{
-			"name": "Commanding Presence",
+			"name": "Presencia Imponente",
 			"source": "TCE-ES",
-			"page": 42,
+			"page": 53,
 			"isClassFeatureVariant": true,
 			"featureType": [
 				"MV_Esp:B"
@@ -650,7 +653,7 @@
 				"name": "Dado de supremacía"
 			},
 			"entries": [
-				"When you make a Charisma ({@skill Intimidation}), a Charisma ({@skill Performance}), or a Charisma ({@skill Persuasion}) check, you can expend one superiority die and add the superiority die to the ability check."
+				"Cuando haces una prueba de Carisma ({@skill Intimidación|PHB-ES}), Carisma ({@skill Interpretación|PHB-ES}) o Carisma ({@skill Persuasión|PHB-ES}), puedes gastar un dado de supremacía y añadirlo a la prueba de característica."
 			]
 		},
 		{
@@ -678,15 +681,15 @@
 			]
 		},
 		{
-			"name": "Devil's Sight",
+			"name": "Vista del Diablo",
 			"source": "PHB-ES",
-			"page": 110,
+			"page": 62,
 			"srd": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"entries": [
-				"You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet."
+				"Puedes ver con normalidad en la oscuridad, tanto si esta es mágica como si no, a una distancia de hasta 120 pies."
 			]
 		},
 		{
@@ -704,19 +707,19 @@
 			]
 		},
 		{
-			"name": "Distant Spell",
+			"name": "Conjuro Distante",
 			"source": "PHB-ES",
-			"page": 102,
+			"page": 91,
 			"srd": true,
 			"featureType": [
-				"MM"
+				"MM_Esp"
 			],
 			"consumes": {
-				"name": "Sorcery Point"
+				"name": "Punto de hechicería"
 			},
 			"entries": [
-				"When you cast a spell that has a range of 5 feet or greater, you can spend 1 sorcery point to double the range of the spell.",
-				"When you cast a spell that has a range of touch, you can spend 1 sorcery point to make the range of the spell 30 feet."
+				"Cuando lanzas un conjuro que tenga un alcance de, como mínimo, 5 pies, puedes gastar 1 punto de hechicería para duplicar el alcance del conjuro.",
+				"Cuando lanzas un conjuro que posea un alcance de toque, puedes gastar 1 punto de hechicería para hacer que su alcance sea de 30 pies."
 			]
 		},
 		{
@@ -734,19 +737,20 @@
 			]
 		},
 		{
-			"name": "Dreadful Word",
+			"name": "Palabra Aterradora",
 			"source": "PHB-ES",
-			"page": 110,
+			"page": 62,
 			"srd": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 7,
 						"class": {
-							"name": "Warlock"
+							"name": "Brujo",
+							"source": "PHB-ES"
 						}
 					}
 				}
@@ -757,7 +761,7 @@
 						"_": {
 							"daily": {
 								"1e": [
-									"confusion"
+									"confusión|PHB-ES"
 								]
 							}
 						}
@@ -765,16 +769,16 @@
 				}
 			],
 			"entries": [
-				"You can cast {@spell confusion} once using a warlock spell slot. You can't do so again until you finish a long rest."
+				"Puedes lanzar {@spell confusión|PHB-ES} una vez utilizando un espacio de conjuro de brujo. Para volver a hacer esto tienes que finalizar primero un descanso largo."
 			]
 		},
 		{
-			"name": "Druidic Warrior",
+			"name": "Guerrero Druídico",
 			"source": "TCE-ES",
-			"page": 57,
+			"page": 47,
 			"isClassFeatureVariant": true,
 			"featureType": [
-				"FS:R"
+				"FS_Esp:R"
 			],
 			"additionalSpells": [
 				{
@@ -782,7 +786,7 @@
 					"known": {
 						"_": [
 							{
-								"choose": "level=0|class=druid",
+								"choose": "level=0|class=druida (PHB-ES)",
 								"count": 2
 							}
 						]
@@ -790,7 +794,7 @@
 				}
 			],
 			"entries": [
-				"You learn two cantrips of your choice from the {@filter druid spell list|spells|level=0|class=druid}. They count as ranger spells for you, and Wisdom is your spellcasting ability for them. Whenever you gain a level in this class, you can replace one of these cantrips with another cantrip from the druid spell list."
+				"Aprendes dos trucos de tu elección escogidos de entre los de la {@filter lista de conjuros de druida|spells|level=0|class=druida (PHB-ES)}. En lo que a ti respecta, cuentan como conjuros de explorador, y la Sabiduría es tu aptitud mágica para lanzarlos. Cada vez que subas un nivel en esta clase, podrás sustituir uno de estos trucos por otro de los que aparecen en la lista de conjuros de druida."
 			]
 		},
 		{
@@ -823,221 +827,206 @@
 			]
 		},
 		{
-			"name": "Eldritch Mind",
+			"name": "Mente Sobrenatural",
 			"source": "TCE-ES",
-			"page": 71,
+			"page": 31,
 			"isClassFeatureVariant": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"entries": [
-				"You have advantage on Constitution saving throws that you make to maintain your {@status concentration} on a spell."
+				"Tienes ventaja en las tiradas de salvación de Constitución que realices para mantener la {@status concentración|PHB-ES} en un conjuro."
 			]
 		},
 		{
-			"name": "Eldritch Sight",
+			"name": "Visión Sobrenatural",
 			"source": "PHB-ES",
-			"page": 110,
+			"page": 62,
 			"srd": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"additionalSpells": [
 				{
 					"innate": {
 						"_": [
-							"detect magic"
+							"detectar magia|PHB-ES"
 						]
 					}
 				}
 			],
 			"entries": [
-				"You can cast {@spell detect magic} at will, without expending a spell slot."
+				"Puedes lanzar {@spell detectar magia|PHB-ES} a voluntad, sin tener que gastar un espacio de conjuro."
 			]
 		},
 		{
-			"name": "Eldritch Smite",
+			"name": "Castigo Arcano",
 			"source": "XGE-ES",
-			"page": 56,
+			"page": 20,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
-					"pact": "Blade",
+					"pact": "Pacto del Filo",
 					"level": {
 						"level": 5,
 						"class": {
-							"name": "Warlock"
+							"name": "Brujo",
+							"source": "PHB-ES"
 						}
 					}
 				}
 			],
 			"entries": [
-				"Once per turn when you hit a creature with your pact weapon, you can expend a warlock spell slot to deal an extra {@damage 1d8} force damage to the target, plus another {@damage 1d8} per level of the spell slot, and you can knock the target {@condition prone} if it is Huge or smaller."
+				"Una vez por turno, cuando impactas a una criatura con tu arma de pacto, puedes utilizar un espacio de conjuro de brujo para infligir {@damage 1d8} de daño de fuerza adicional, más {@damage 1d8} por cada nivel del espacio de conjuro empleado. Además, si el objetivo es de tamaño Enorme o menor, puedes {@condition derribado|PHB-ES|derribarlo}."
 			]
 		},
 		{
-			"name": "Eldritch Spear",
+			"name": "Lanza Sobrenatural",
 			"source": "PHB-ES",
-			"page": 111,
+			"page": 61,
 			"srd": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
 					"spell": [
-						"eldritch blast#c"
+						"descarga sobrenatural|PHB-ES#c"
 					]
 				}
 			],
 			"entries": [
-				"When you cast {@spell eldritch blast}, its range is 300 feet."
+				"Cuando lanzas {@spell descarga sobrenatural|PHB-ES} su alcance es de 300 pies."
 			]
 		},
 		{
-			"name": "Elemental Attunement",
+			"name": "Armonía con los Elementos",
 			"source": "PHB-ES",
-			"page": 81,
+			"page": 107,
 			"featureType": [
-				"ED"
+				"ED_Esp"
 			],
 			"entries": [
-				"You can use your action to briefly control elemental forces within 30 feet of you, causing one of the following effects of your choice:",
+				"Puedes usar tu acción para controlar brevemente las fuerzas elementales a 30 pies de ti, produciendo uno de los efectos siguientes, a tu elección:",
 				{
 					"type": "list",
 					"items": [
-						"Create a harmless, instantaneous sensory effect related to air, earth, fire, or water, such as a shower of sparks, a puff of wind, a spray of light mist, or a gentle rumbling of stone.",
-						"Instantaneously light or snuff out a candle, a torch, or a small campfire.",
-						"Chill or warm up to 1 pound of nonliving material for up to 1 hour.",
-						"Cause earth, fire, water, or mist that can fit within a 1-foot cube to shape itself into a crude form you designate for 1 minute."
+						"Creas un efecto sensorial inocuo e instantáneo relacionado con el aire, la tierra, el fuego o el agua, como una lluvia de chispas, una ráfaga de aire, una nube de vapor poco espesa o el suave retumbar de unas piedras.",
+						"Apagas o enciendes de forma instantánea una vela, antorcha u hoguera pequeña.",
+						"Enfrías o calientas hasta 1 libra de material inerte durante 1 hora.",
+						"Haces que 1 pie cúbico de tierra, fuego, agua o vapor tome (de forma aproximada) la forma que elijas durante 1 minuto."
 					]
 				}
 			]
 		},
 		{
-			"name": "Empowered Spell",
+			"name": "Conjuro Potenciado",
 			"source": "PHB-ES",
-			"page": 102,
+			"page": 91,
 			"srd": true,
 			"featureType": [
-				"MM"
+				"MM_Esp"
 			],
 			"consumes": {
-				"name": "Sorcery Point"
+				"name": "Punto de hechicería"
 			},
 			"entries": [
-				"When you roll damage for a spell, you can spend 1 sorcery point to reroll a number of the damage dice up to your Charisma modifier (minimum of one). You must use the new rolls.",
-				"You can use Empowered Spell even if you have already used a different Metamagic option during the casting of the spell."
+				"Cuando tiras el daño de un conjuro, puedes gastar 1 punto de hechicería para repetir la tirada de, como mucho, tantos dados de daño como tu modificador por Carisma (como mínimo un dado). Eso sí, deberás usar los nuevos resultados.",
+				"Puedes emplear Conjuro Potenciado incluso si ya has utilizado otra opción de Metamagia durante el lanzamiento del conjuro."
 			]
 		},
 		{
-			"name": "Enfeebling Arrow",
+			"name": "Flecha Debilitadora",
 			"source": "XGE-ES",
-			"page": 29,
+			"page": 38,
 			"featureType": [
-				"AS"
+				"AS_Esp"
 			],
 			"consumes": {
-				"name": "Arcane Shot"
+				"name": "Disparo Arcano"
 			},
 			"entries": [
-				"You weave necromantic magic into your arrow. The creature hit by the arrow takes an extra {@damage 2d6} necrotic damage. The target must also succeed on a Constitution saving throw, or the damage dealt by its weapon attacks is halved until the start of your next turn.",
-				"The necrotic damage increases to {@damage 4d6} when you reach 18th level in this class."
+				"Entretejes magia nigromántica en tu flecha. La criatura impactada por el proyectil recibe {@damage 2d6} de daño necrótico adicional. El objetivo también deberá tener éxito en una tirada de salvación de Constitución o el daño realizado por sus ataques con arma quedará reducido a la mitad hasta el comienzo de tu siguiente turno.",
+				"El daño necrótico se incrementa a {@damage 4d6} cuando llegas al nivel 18 de esta clase."
 			]
 		},
 		{
-			"name": "Enhanced Arcane Focus",
+			"name": "Canalizador Arcano Mejorado",
 			"source": "TCE-ES",
 			"page": 21,
-			"otherSources": [
-				{
-					"source": "ERLW",
-					"page": 62
-				}
-			],
 			"featureType": [
-				"AI"
+				"AI_Esp"
 			],
 			"prerequisite": [
 				{
 					"item": [
-						"A rod, staff, or wand (requires attunement)"
+						"Una vara, un bastón o una varita (requiere sintonización)"
 					]
 				}
 			],
 			"entries": [
-				"While holding this item, a creature gains a +1 bonus to spell attack rolls. In addition, the creature ignores half cover when making a spell attack.",
-				"The bonus increases to +2 when you reach 10th level in this class."
+				"Mientras sostenga este objeto, una criatura recibirá un bonificador de +1 a las tiradas de ataque de conjuro. Además, la criatura ignorará la cobertura media cuando realice un ataque de conjuro.",
+				"El bonificador aumenta a +2 cuando alcanzas el nivel 10 de esta clase."
 			]
 		},
 		{
-			"name": "Enhanced Defense",
+			"name": "Defensa Mejorada",
 			"source": "TCE-ES",
 			"page": 21,
-			"otherSources": [
-				{
-					"source": "ERLW",
-					"page": 62
-				}
-			],
 			"featureType": [
-				"AI"
+				"AI_Esp"
 			],
 			"prerequisite": [
 				{
 					"item": [
-						"A suit of armor or a shield"
+						"Una armadura o un escudo"
 					]
 				}
 			],
 			"entries": [
-				"A creature gains a +1 bonus to Armor Class while wearing (armor) or wielding (shield) the infused item.",
-				"The bonus increases to +2 when you reach 10th level in this class."
+				"Una criatura recibe un bonificador de +1 a la Clase de Armadura mientras lleva (si es una armadura) o porta (si es un escudo) el objeto con la infusión.",
+				"El bonificador aumenta a +2 cuando alcanzas el nivel 10 de esta clase."
 			]
 		},
 		{
-			"name": "Enhanced Weapon",
+			"name": "Arma Mejorada",
 			"source": "TCE-ES",
-			"page": 21,
-			"otherSources": [
-				{
-					"source": "ERLW",
-					"page": 62
-				}
-			],
+			"page": 20,
 			"featureType": [
-				"AI"
+				"AI_Esp"
 			],
 			"prerequisite": [
 				{
 					"item": [
-						"A simple or martial weapon"
+						"Un arma sencilla o marcial"
 					]
 				}
 			],
 			"entries": [
-				"This magic weapon grants a +1 bonus to attack and damage rolls made with it.",
-				"The bonus increases to +2 when you reach 10th level in this class."
+				"Esta arma mágica concede un bonificador de +1 a las tiradas de ataque y de daño que hagas con ella.",
+				"El bonificador aumenta a +2 cuando alcanzas el nivel 10 de esta clase."
 			]
 		},
 		{
-			"name": "Eternal Mountain Defense",
+			"name": "Defensa de la Montaña Eterna",
 			"source": "PHB-ES",
-			"page": 81,
+			"page": 107,
 			"featureType": [
-				"ED"
+				"ED_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 17,
 						"class": {
-							"name": "Monk"
+							"name": "Monje",
+							"source": "PHB-ES"
 						},
 						"subclass": {
-							"name": "Four Elements"
+							"name": "Cuatro Elementos",
+							"source": "PHB-ES"
 						}
 					}
 				}
@@ -1048,7 +1037,7 @@
 						"_": {
 							"resource": {
 								"5": [
-									"stoneskin"
+									"piel pétrea|PHB-ES"
 								]
 							}
 						}
@@ -1058,7 +1047,7 @@
 				}
 			],
 			"entries": [
-				"You can spend 5 ki points to cast {@spell stoneskin}, targeting yourself."
+				"Puedes gastar 5 puntos de ki para lanzar {@spell piel pétrea|PHB-ES} eligiéndote como objetivo a ti mismo."
 			]
 		},
 		{
@@ -1076,76 +1065,77 @@
 			]
 		},
 		{
-			"name": "Extended Spell",
+			"name": "Conjuro Extendido",
 			"source": "PHB-ES",
-			"page": 102,
+			"page": 91,
 			"srd": true,
 			"featureType": [
-				"MM"
+				"MM_Esp"
 			],
 			"consumes": {
-				"name": "Sorcery Point",
+				"name": "Punto de hechicería",
 				"amount": 1
 			},
 			"entries": [
-				"When you cast a spell that has a duration of 1 minute or longer, you can spend 1 sorcery point to double its duration, to a maximum duration of 24 hours."
+				"Cuando lanzas un conjuro que tenga una duración de al menos 1 minuto, puedes gastar 1 punto de hechicería para duplicar su duración, hasta un máximo de 24 horas."
 			]
 		},
 		{
-			"name": "Eyes of the Rune Keeper",
+			"name": "Ojos del Guardián de las Runas",
 			"source": "PHB-ES",
-			"page": 111,
+			"page": 62,
 			"srd": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"entries": [
-				"You can read all writing."
+				"Puedes leer cualquier escrito."
 			]
 		},
 		{
-			"name": "Fangs of the Fire Snake",
+			"name": "Colmillos de la Serpiente Ígnea",
 			"source": "PHB-ES",
-			"page": 81,
+			"page": 107,
 			"featureType": [
-				"ED"
+				"ED_Esp"
 			],
 			"entries": [
-				"When you use the {@action Attack} action on your turn, you can spend 1 ki point to cause tendrils of flame to stretch out from your fists and feet. Your reach with your unarmed strikes increases by 10 feet for that action, as well as the rest of the turn. A hit with such an attack deals fire damage instead of bludgeoning damage, and if you spend 1 ki point when the attack hits, it also deals an extra {@damage 1d10} fire damage."
+				"Cuando usas tu acción para {@action Atacar|PHB-ES} durante tu turno, puedes gastar 1 punto de ki para hacer que unos zarcillos de fuego se extiendan desde tus puños y tus pies. Tu alcance con los ataques sin armas se extiende en 10 pies para dicha acción y durante el resto del turno. Cualquier impacto con un ataque realizado de esta forma causa daño de fuego en lugar de contundente, y si gastas 1 punto de ki cuando el ataque impacta, también infliges {@dice 1d10} de daño de fuego adicional."
 			]
 		},
 		{
-			"name": "Far Scribe",
+			"name": "Escriba Lejano",
 			"source": "TCE-ES",
-			"page": 71,
+			"page": 31,
 			"isClassFeatureVariant": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 5,
 						"class": {
-							"name": "Warlock"
+							"name": "Brujo",
+							"source": "PHB-ES"
 						}
 					},
-					"pact": "Tome"
+					"pact": "Pacto del Grimorio"
 				}
 			],
 			"additionalSpells": [
 				{
 					"innate": {
 						"_": [
-							"sending"
+							"recado|PHB-ES"
 						]
 					}
 				}
 			],
 			"entries": [
-				"A new page appears in your Book of Shadows. With your permission, a creature can use its action to write its name on that page, which can contain a number of names equal to your proficiency bonus.",
-				"You can cast the {@spell sending} spell, targeting a creature whose name is on the page, without using a spell slot and without using material components. To do so, you must write the message on the page. The target hears the message in their mind, and if the target replies, their message appears on the page, rather than in your mind. The writing disappears after 1 minute.",
-				"As an action, you can magically erase a name on the page by touching it."
+				"Aparece una nueva página en tu Libro de las Sombras. Con tu permiso, una criatura puede usar su acción para escribir su nombre en esa página, que puede contener una cantidad de nombres igual a tu bonificador por competencia.",
+				"Puedes lanzar el conjuro {@spell recado|PHB-ES} y hacer objetivo a una criatura cuyo nombre esté en la página, sin usar un espacio de conjuro y sin gastar componentes materiales. Para ello, debes escribir el mensaje en la página. El objetivo escuchará el mensaje en su mente y, si responde, dicho mensaje aparecerá en la página, no en tu mente. Las palabras desaparecerán al cabo de 1 minuto.",
+				"Como acción, puedes borrar mágicamente un nombre de la página tocándolo."
 			]
 		},
 		{
@@ -1164,44 +1154,44 @@
 			]
 		},
 		{
-			"name": "Fiendish Vigor",
+			"name": "Vigor Infernal",
 			"source": "PHB-ES",
-			"page": 111,
+			"page": 62,
 			"srd": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"additionalSpells": [
 				{
 					"innate": {
 						"_": [
-							"false life"
+							"falsa vida|PHB-ES"
 						]
 					}
 				}
 			],
 			"entries": [
-				"You can cast {@spell false life} on yourself at will as a 1st-level spell, without expending a spell slot or material components."
+				"Puedes lanzar {@spell falsa vida|PHB-ES} sobre ti mismo a voluntad como un conjuro de nivel 1, sin tener que gastar un espacio de conjuro ni componentes materiales."
 			]
 		},
 		{
-			"name": "Fire Rune",
+			"name": "Runa de Fuego",
 			"source": "TCE-ES",
-			"page": 44,
+			"page": 54,
 			"featureType": [
-				"RN"
+				"RN_Esp"
 			],
 			"entries": [
-				"This rune's magic channels the masterful craftsmanship of great smiths. While wearing or carrying an object inscribed with this rune, your proficiency bonus is doubled for any ability check you make that uses your proficiency with a tool.",
-				"In addition, when you hit a creature with an attack using a weapon, you can invoke the rune to summon fiery shackles: the target takes an extra {@damage 2d6} fire damage, and it must succeed on a Strength saving throw or be {@condition restrained} for 1 minute. While {@condition restrained} by the shackles, the target takes {@damage 2d6} fire damage at the start of each of its turns. The target can repeat the saving throw at the end of each of its turns, banishing the shackles on a success. Once you invoke this rune, you can't do so again until you finish a short or long rest."
+				"La magia de esta runa canaliza la artesanía magistral de los grandes herreros. Mientras vistas o lleves contigo un objeto que tenga grabada esta runa, tu bonificador por competencia se duplicará para cualquier prueba de característica que hagas utilizando tu competencia con una herramienta.",
+				"Además, cuando impactes a una criatura con un ataque con arma, podrás invocar la runa para hacer aparecer unos grilletes de fuego: el objetivo recibirá {@damage 2d6} de daño de fuego adicional y deberá tener éxito en una tirada de salvación de Fuerza o quedará {@condition apresado|PHB-ES} durante 1 minuto. Mientras esté {@condition apresado|PHB-ES} por los grilletes, el objetivo recibirá {@damage 2d6} de daño de fuego al comienzo de cada uno de sus turnos. El objetivo puede repetir la tirada de salvación al final de cada uno de sus turnos y, si tiene éxito, se librará de los grilletes. Cuando invoques esta runa, no podrás volver a hacerlo hasta que finalices un descanso corto o largo."
 			]
 		},
 		{
-			"name": "Fist of Four Thunders",
+			"name": "Puño de los Cuatro Truenos",
 			"source": "PHB-ES",
-			"page": 81,
+			"page": 107,
 			"featureType": [
-				"ED"
+				"ED_Esp"
 			],
 			"additionalSpells": [
 				{
@@ -1209,7 +1199,7 @@
 						"_": {
 							"resource": {
 								"2": [
-									"thunderwave"
+									"ola atronadora|PHB-ES"
 								]
 							}
 						}
@@ -1219,25 +1209,27 @@
 				}
 			],
 			"entries": [
-				"You can spend 2 ki points to cast {@spell thunderwave}."
+				"Puedes gastar 2 puntos de ki para lanzar {@spell ola atronadora|PHB-ES}."
 			]
 		},
 		{
-			"name": "Flames of the Phoenix",
+			"name": "Llamas del Fénix",
 			"source": "PHB-ES",
-			"page": 81,
+			"page": 107,
 			"featureType": [
-				"ED"
+				"ED_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 11,
 						"class": {
-							"name": "Monk"
+							"name": "Monje",
+							"source": "PHB-ES"
 						},
 						"subclass": {
-							"name": "Four Elements"
+							"name": "Cuatro Elementos",
+							"source": "PHB-ES"
 						}
 					}
 				}
@@ -1248,7 +1240,7 @@
 						"_": {
 							"resource": {
 								"4": [
-									"fireball"
+									"bola de fuego|PHB-ES"
 								]
 							}
 						}
@@ -1258,68 +1250,70 @@
 				}
 			],
 			"entries": [
-				"You can spend 4 ki points to cast {@spell fireball}."
+				"Puedes gastar 4 puntos de ki para lanzar {@spell bola de fuego|PHB-ES}."
 			]
 		},
 		{
-			"name": "Frost Rune",
+			"name": "Runa de Escarcha",
 			"source": "TCE-ES",
-			"page": 45,
+			"page": 54,
 			"featureType": [
-				"RN"
+				"RN_Esp"
 			],
 			"entries": [
-				"This rune's magic evokes the might of those who survive in the wintry wilderness, such as frost giants. While wearing or carrying an object inscribed with this rune, you have advantage on Wisdom ({@skill Animal Handling}) checks and Charisma ({@skill Intimidation}) checks.",
-				"In addition, you can invoke the rune as a bonus action to increase your sturdiness. For 10 minutes, you gain a +2 bonus to all ability checks and saving throws that use Strength or Constitution. Once you invoke this rune, you can't do so again until you finish a short or long rest."
+				"La magia de esta runa evoca el poder de las criaturas que sobreviven en los parajes invernales, como los gigantes de escarcha. Mientras vistas o lleves contigo un objeto que tenga grabada esta runa, tendrás ventaja en las pruebas de Sabiduría ({@skill Trato con Animales|PHB-ES}) y Carisma ({@skill Intimidación|PHB-ES}).",
+				"Además, podrás invocar la runa como acción adicional para aumentar tu resistencia. Durante 10 minutos, obtendrás un bonificador de +2 a todas las pruebas de característica y las tiradas de salvación que usen Fuerza o Constitución. Cuando invoques esta runa, no podrás volver a hacerlo hasta que finalices un descanso corto o largo."
 			]
 		},
 		{
-			"name": "Gaze of Two Minds",
+			"name": "Mirada de las Dos Mentes",
 			"source": "PHB-ES",
-			"page": 111,
+			"page": 62,
 			"srd": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"entries": [
-				"You can use your action to touch a willing humanoid and perceive through its senses until the end of your next turn. As long as the creature is on the same plane of existence as you, you can use your action on subsequent turns to maintain this connection, extending the duration until the end of your next turn. While perceiving through the other creature's senses, you benefit from any special senses possessed by that creature, and you are {@condition blinded} and {@condition deafened} to your own surroundings."
+				"Puedes usar tu acción para tocar a un humanoide voluntario y percibir el mundo a través de sus sentidos hasta el final de tu siguiente turno. Mientras la criatura permanezca en el mismo plano de existencia que tú, podrás utilizar tu acción en cada uno de los turnos subsiguientes para mantener esta conexión, alargando la duración de este efecto hasta el final de tu siguiente turno. Cuando estás percibiendo el mundo a través de los sentidos de la otra criatura, ganas los beneficios de cualquier sentido especial que esta tenga, pero se te considera {@condition cegado|PHB-ES} y {@condition ensordecido|PHB-ES} en tu propio entorno."
 			]
 		},
 		{
-			"name": "Ghostly Gaze",
+			"name": "Mirada Fantasmal",
 			"source": "XGE-ES",
-			"page": 56,
+			"page": 21,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 7,
 						"class": {
-							"name": "Warlock"
+							"name": "Brujo",
+							"source": "PHB-ES"
 						}
 					}
 				}
 			],
 			"entries": [
-				"As an action, you gain the ability to see through solid objects to a range of 30 feet. Within that range, you have {@sense darkvision} if you don't already have it. This special sight lasts for 1 minute or until your {@status concentration} ends (as if you were {@status concentration||concentrating} on a spell). During that time, you perceive objects as ghostly, transparent images.",
-				"Once you use this invocation, you can't use it again until you finish a short or long rest."
+				"Como acción, obtienes la habilidad de ver a través de objetos sólidos situados hasta a 30 pies de distancia. Dentro de ese alcance, además, tienes {@sense visión en la oscuridad|PHB-ES} si no la tenías ya. Esta vista especial dura 1 minuto o hasta que acabe tu {@status concentración|PHB-ES} (como si te estuvieras {@status concentración|PHB-ES|concentrando} en un conjuro). Durante ese tiempo, percibes los objetos como imágenes fantasmales, transparentes.",
+				"Una vez utilizada esta invocación, deberás terminar un descanso corto o largo para poder volver a usarla."
 			]
 		},
 		{
-			"name": "Gift of the Depths",
+			"name": "Don de las Profundidades",
 			"source": "XGE-ES",
-			"page": 57,
+			"page": 21,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 5,
 						"class": {
-							"name": "Warlock"
+							"name": "Brujo",
+							"source": "PHB-ES"
 						}
 					}
 				}
@@ -1330,7 +1324,7 @@
 						"_": {
 							"daily": {
 								"1e": [
-									"water breathing"
+									"respirar bajo el agua|PHB-ES"
 								]
 							}
 						}
@@ -1338,49 +1332,50 @@
 				}
 			],
 			"entries": [
-				"You can breathe underwater, and you gain a swimming speed equal to your walking speed.",
-				"You can also cast {@spell water breathing} once without expending a spell slot. You regain the ability to do so when you finish a long rest."
+				"Puedes respirar bajo el agua y ganas una velocidad nadando igual a tu velocidad caminando.",
+				"También puedes lanzar {@spell respirar bajo el agua|PHB-ES} una vez sin gastar un espacio de conjuro. Recuperas la capacidad para hacerlo tras finalizar un descanso largo."
 			]
 		},
 		{
-			"name": "Gift of the Ever-Living Ones",
+			"name": "Don de los Siempre Vivos",
 			"source": "XGE-ES",
-			"page": 57,
+			"page": 21,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
-					"pact": "Chain"
+					"pact": "Pacto de la Cadena"
 				}
 			],
 			"entries": [
-				"Whenever you regain hit points while your familiar is within 100 feet of you, treat any dice rolled to determine the hit points you regain as having rolled their maximum value for you."
+				"Cuando recuperes puntos de golpe y tu familiar esté a 100 pies o menos de ti, trata el resultado de cualquier dado tirado para determinar los puntos de golpe que recuperas como si hubiera obtenido el máximo resultado."
 			]
 		},
 		{
-			"name": "Gift of the Protectors",
+			"name": "Don de los Protectores",
 			"source": "TCE-ES",
-			"page": 71,
+			"page": 31,
 			"isClassFeatureVariant": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 9,
 						"class": {
-							"name": "Warlock"
+							"name": "Brujo",
+							"source": "PHB-ES"
 						}
 					},
-					"pact": "Tome"
+					"pact": "Pacto del Grimorio"
 				}
 			],
 			"entries": [
-				"A new page appears in your Book of Shadows. With your permission, a creature can use its action to write its name on that page, which can contain a number of names equal to your proficiency bonus.",
-				"When any creature whose name is on the page is reduced to 0 hit points but not killed outright, the creature magically drops to 1 hit point instead. Once this magic is triggered, no creature can benefit from it until you finish a long rest.",
-				"As an action, you can magically erase a name on the page by touching it."
+				"Aparece una nueva página en tu Libro de las Sombras. Con tu permiso, una criatura puede usar su acción para escribir su nombre en esa página, que puede contener una cantidad de nombres igual a tu bonificador por competencia.",
+				"Cuando los puntos de golpe de cualquier criatura cuyo nombre esté en la página se reduzcan a 0, pero no muera, en vez de eso pasará a tener 1 punto de golpe mágicamente. Cuando esta magia se active, ninguna criatura podrá beneficiarse de ella hasta que finalices un descanso largo.",
+				"Como acción, puedes borrar mágica mente un nombre de la página tocándolo."
 			]
 		},
 		{
@@ -1398,21 +1393,23 @@
 			]
 		},
 		{
-			"name": "Gong of the Summit",
+			"name": "Gong de la Cumbre",
 			"source": "PHB-ES",
-			"page": 81,
+			"page": 107,
 			"featureType": [
-				"ED"
+				"ED_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 6,
 						"class": {
-							"name": "Monk"
+							"name": "Monje",
+							"source": "PHB-ES"
 						},
 						"subclass": {
-							"name": "Four Elements"
+							"name": "Cuatro Elementos",
+							"source": "PHB-ES"
 						}
 					}
 				}
@@ -1423,7 +1420,7 @@
 						"_": {
 							"resource": {
 								"3": [
-									"shatter"
+									"hacer añicos|PHB-ES"
 								]
 							}
 						}
@@ -1433,13 +1430,13 @@
 				}
 			],
 			"entries": [
-				"You can spend 3 ki points to cast {@spell shatter}."
+				"Puedes gastar 3 puntos de ki para lanzar {@spell hacer añicos|PHB-ES}."
 			]
 		},
 		{
-			"name": "Grappling Strike",
+			"name": "Ataque y Agarre",
 			"source": "TCE-ES",
-			"page": 42,
+			"page": 53,
 			"isClassFeatureVariant": true,
 			"featureType": [
 				"MV_Esp:B"
@@ -1448,40 +1445,40 @@
 				"name": "Dado de supremacía"
 			},
 			"entries": [
-				"Immediately after you hit a creature with a melee attack on your turn, you can expend one superiority die and then try to grapple the target as a bonus action (see the Player's Handbook for rules on grappling). Add the superiority die to your Strength ({@skill Athletics}) check."
+				"Justo después de impactar a una criatura en tu turno con un ataque cuerpo a cuerpo, puedes gastar un dado de supremacía e intentar agarrarla como acción adicional (consulta las reglas sobre agarrar en el Player's Handbook). Añade el dado de supremacía a tu prueba de Fuerza ({@skill Atletismo|PHB-ES})."
 			]
 		},
 		{
-			"name": "Grasp of Hadar",
+			"name": "Agarre de Hadar",
 			"source": "XGE-ES",
-			"page": 57,
+			"page": 20,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
 					"spell": [
-						"eldritch blast#c"
+						"descarga sobrenatural|PHB-ES#c"
 					]
 				}
 			],
 			"entries": [
-				"Once on each of your turns when you hit a creature with your {@spell eldritch blast}, you can move that creature in a straight line 10 feet closer to you."
+				"Una vez en cada uno de tus turnos, cuando impactes a una criatura con tu {@spell descarga sobrenatural|PHB-ES}, puedes mover a ese objetivo en línea recta 10 pies acercándolo a ti."
 			]
 		},
 		{
-			"name": "Grasping Arrow",
+			"name": "Flecha Enredadora",
 			"source": "XGE-ES",
-			"page": 29,
+			"page": 38,
 			"featureType": [
-				"AS"
+				"AS_Esp"
 			],
 			"consumes": {
-				"name": "Arcane Shot"
+				"name": "Disparo Arcano"
 			},
 			"entries": [
-				"When this arrow strikes its target, conjuration magic creates grasping, poisonous brambles, which wrap around the target. The creature hit by the arrow takes an extra {@damage 2d6} poison damage, its speed is reduced by 10 feet, and it takes {@damage 2d6} slashing damage the first time on each turn it moves 1 foot or more without teleporting. The target or any creature that can reach it can use its action to remove the brambles with a successful Strength ({@skill Athletics}) check against your Arcane Shot save DC. Otherwise, the brambles last for 1 minute or until you use this option again.",
-				"The poison damage and slashing damage both increase to {@damage 4d6} when you reach 18th level in this class."
+				"Cuando la flecha impacta al objetivo, tu magia de conjuración crea zarzas venenosas que lo envuelven. La criatura impactada por el proyectil recibe {@damage 2d6} de daño de veneno adicional, su velocidad se reduce en 10 pies y sufrirá {@damage 2d6} de daño cortante la primera vez, cada turno, que se mueva al menos 1 pie sin teletransportarse. El objetivo, o cualquier criatura que pueda alcanzarle, puede usar una acción para retirar las zarzas mediante una prueba de Fuerza ({@skill Atletismo|PHB-ES}) con éxito contra tu CD de Disparo Arcano. De otro modo, las zarzas duran 1 minuto o hasta que vuelvas a emplear esta opción.",
+				"El daño de veneno y el daño cortante se incrementan a {@damage 4d6} cuando alcanzas el nivel 18 de esta clase."
 			]
 		},
 		{
@@ -1504,195 +1501,192 @@
 			]
 		},
 		{
-			"name": "Heightened Spell",
+			"name": "Conjuro Intensificado",
 			"source": "PHB-ES",
-			"page": 102,
+			"page": 91,
 			"srd": true,
 			"featureType": [
-				"MM"
+				"MM_Esp"
 			],
 			"consumes": {
-				"name": "Sorcery Point",
+				"name": "Punto de hechicería",
 				"amount": 3
 			},
 			"entries": [
-				"When you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 3 sorcery points to give one target of the spell disadvantage on its first saving throw made against the spell."
+				"Cuando lanzas un conjuro que obliga a al menos una criatura a hacer una tirada de salvación para resistir sus efectos, puedes gastar 3 puntos de hechicería para conseguir que uno de los objetivos del conjuro tenga desventaja en la primer a tirada de salvación que realice contra el conjuro."
 			]
 		},
 		{
-			"name": "Helm of Awareness",
+			"name": "Yelmo de Perspicacia",
 			"source": "TCE-ES",
-			"page": 21,
+			"page": 23,
 			"featureType": [
-				"AI"
+				"AI_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 10,
 						"class": {
-							"name": "Artificer"
+							"name": "Artífice"
 						}
 					},
 					"item": [
-						"A helmet (requires attunement)"
+						"Un casco (requiere sintonización)"
 					]
 				}
 			],
 			"entries": [
-				"While wearing this helmet, a creature has advantage on initiative rolls. In addition, the wearer can't be {@quickref Surprise|PHB|3|0|surprised}, provided it isn't {@condition incapacitated}."
+				"Mientras lleve este casco, una criatura tendrá ventaja en las tiradas de iniciativa. Además, siempre y cuando no esté {@condition incapacitado|PHB-ES}, el portador no podrá ser {@book sorprendido|PHB-ES|9|sorprendido}."
 			]
 		},
 		{
-			"name": "Hill Rune",
+			"name": "Runa de las Colinas",
 			"source": "TCE-ES",
-			"page": 45,
+			"page": 55,
 			"featureType": [
-				"RN"
+				"RN_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 7,
 						"class": {
-							"name": "Fighter"
+							"name": "Guerrero",
+							"source": "PHB-ES"
 						},
 						"subclass": {
-							"name": "Rune Knight"
+							"name": "Caballero rúnico",
+							"source": "TCE-ES"
 						}
 					}
 				}
 			],
 			"entries": [
-				"This rune's magic bestows a resilience reminiscent of a hill giant. While wearing or carrying an object that bears this rune, you have advantage on saving throws against being {@condition poisoned}, and you have resistance against poison damage.",
-				"In addition, you can invoke the rune as a bonus action, gaining resistance to bludgeoning, piercing, and slashing damage for 1 minute. Once you invoke this rune, you can't do so again until you finish a short or long rest."
+				"La magia de esta runa otorga una resistencia que recuerda a la de los gigantes de las colinas. Mientras vistas o lleves contigo un objeto que tenga grabada esta runa, tendrás ventaja en las tiradas de salvación para evitar que te {@condition envenenado|PHB-ES|envenenen} y poseerás resistencia al daño de veneno.",
+				"Además, podrás invocar la runa como acción adicional para obtener resistencia al daño contundente, perforante y cortante durante 1 minuto. Cuando invoques esta runa, no podrás volver a hacerlo hasta que finalices un descanso corto o largo."
 			]
 		},
 		{
-			"name": "Homunculus Servant",
+			"name": "Sirviente Homúnculo",
 			"source": "TCE-ES",
-			"page": 21,
-			"otherSources": [
-				{
-					"source": "ERLW",
-					"page": 62
-				}
-			],
+			"page": 22,
 			"featureType": [
-				"AI"
+				"AI_Esp"
 			],
 			"prerequisite": [
 				{
 					"item": [
-						"A gem or crystal worth at least 100 gp"
+						"Una gema o un cristal que valga al menos 100 po"
 					]
 				}
 			],
 			"entries": [
-				"You learn intricate methods for magically creating a special {@creature Homunculus Servant|TCE|homunculus} that serves you. The item you infuse serves as the creature's heart, around which the creature's body instantly forms.",
-				"You determine the homunculus's appearance. Some artificers prefer mechanical-looking birds, whereas some like winged vials or miniature, animate cauldrons.",
-				"The homunculus is friendly to you and your companions, and it obeys your commands. See this creature's game statistics in the Homunculus Servant stat block, which uses your proficiency bonus (PB) in several places.",
-				"In combat, the homunculus shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the {@action Dodge} action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are {@condition incapacitated}, the homunculus can take any action of its choice, not just {@action Dodge}.",
-				"The homunculus regains {@dice 2d6} hit points if the {@spell mending} spell is cast on it. If you or the homunculus dies, it vanishes, leaving its heart in its space."
+				"Aprendes métodos intrincados para crear mágicamente un {@creature Sirviente Homúnculo|TCE-ES|homúnculo} especial que te sirve. El objeto imbuido será el corazón de la criatura y el cuerpo se creará a su alrededor inmediatamente.",
+				"Tú decides el aspecto del homúnculo. A algunos artífices les gustan los pájaros de aspecto mecánico, mientras que otros optan por viales alados o calderos animados en miniatura.",
+				"El homúnculo es amistoso contigo y con tus compañeros, y obedece tus órdenes. Consulta las estadísticas de esta criatura en el perfil del {@creature sirviente homúnculo|TCE-ES}. En algunos casos, usará tu bonificador por competencia (BC).",
+				"En combate, el homúnculo comparte tu orden de iniciativa, pero su turno va justo después del tuyo. Se puede mover y usar su propia reacción, pero la única acción que hace en su turno es la de {@action Esquivar|PHB-ES}, a menos que realices una acción adicional en tu turno para ordenarle que haga otra. Esa acción puede ser una de su perfil u otra. Si estás {@condition incapacitado|PHB-ES}, el homúnculo puede realizar cualquier acción que elija, no solo la de {@action Esquivar|PHB-ES}.",
+				"El homúnculo recupera {@dice 2d6} puntos de golpe si se le lanza el conjuro {@spell reparar|PHB-ES}. Si tú o el homúnculo morís, desaparece y su corazón ocupa su espacio."
 			]
 		},
 		{
-			"name": "Improved Pact Weapon",
+			"name": "Arma de Pacto Mejorada",
 			"source": "XGE-ES",
-			"page": 57,
+			"page": 20,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
-					"pact": "Blade"
+					"pact": "Pacto del Filo"
 				}
 			],
 			"entries": [
-				"You can use any weapon you summon with your Pact of the Blade feature as a spellcasting focus for your warlock spells.",
-				"In addition, the weapon gains a +1 bonus to its attack and damage rolls, unless it is a magic weapon that already has a bonus to those rolls.",
-				"Finally, the weapon you conjure can be a {@item shortbow|phb}, {@item longbow|phb}, {@item light crossbow|phb}, or {@item heavy crossbow|phb}."
+				"Puedes usar cualquier arma que invoques con tu rasgo Pacto del Filo como canalizador mágico para tus conjuros de brujo.",
+				"Además, el arma gana un bonificador de +1 a sus tiradas de ataque y daño, a menos que esta sea mágica y ya tenga un bonificador a esas tiradas.",
+				"Por último, el arma que conjuras puede ser un {@item arco corto|PHB-ES}, {@item arco largo|PHB-ES}, {@item ballesta ligera|PHB-ES} o {@item ballesta pesada|PHB-ES}."
 			]
 		},
 		{
-			"name": "Interception",
-			"source": "TCE-ES",
-			"page": 41,
-			"isClassFeatureVariant": true,
-			"featureType": [
-				"FS:F",
-				"FS:P"
-			],
-			"entries": [
-				"When a creature you can see hits a target, other than you, within 5 feet of you with an attack, you can use your reaction to reduce the damage the target takes by {@dice 1d10} + your proficiency bonus (to a minimum of 0 damage). You must be wielding a {@item shield|phb} or a {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon} to use this reaction."
-			]
-		},
-		{
-			"name": "Investment of the Chain Master",
+			"name": "Intercepción",
 			"source": "TCE-ES",
 			"page": 71,
 			"isClassFeatureVariant": true,
 			"featureType": [
-				"EI"
+				"FS_Esp:F",
+				"FS_Esp:P"
+			],
+			"entries": [
+				"Cuando una criatura que puedas ver impacte con un ataque a un objetivo que esté a 5 pies o menos de ti y no seas tú, puedes utilizar tu reacción para reducir el daño que recibe el objetivo en {@dice 1d10} + tu bonificador por competencia (hasta un mínimo de 0 de daño). Para usar esta reacción, debes estar empuñando un {@item escudo|PHB-ES} o un {@filter arma sencilla o marcial|items|source=PHB-ES|category=basic|type=martial weapon;simple weapon}."
+			]
+		},
+		{
+			"name": "Inversión del Amo de las Cadenas",
+			"source": "TCE-ES",
+			"page": 31,
+			"isClassFeatureVariant": true,
+			"featureType": [
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
-					"pact": "Chain"
+					"pact": "Pacto de la Cadena"
 				}
 			],
 			"entries": [
-				"When you cast {@spell find familiar}, you infuse the summoned familiar with a measure of your eldritch power, granting the creature the following benefits:",
+				"Cuando lanzas {@spell encontrar familiar|PHB-ES}, imbuyes al familiar invocado de una cierta cantidad de tu poder sobrenatural, otorgando a la criatura los siguientes beneficios:",
 				{
 					"type": "list",
 					"items": [
-						"The familiar gains either a flying speed or a swimming speed (your choice) of 40 feet.",
-						"As a bonus action, you can command the familiar to take the {@action Attack} action.",
-						"The familiar's weapon attacks are considered magical for the purpose of overcoming immunity and resistance to nonmagical attacks.",
-						"If the familiar forces a creature to make a saving throw, it uses your spell save DC.",
-						"When the familiar takes damage, you can use your reaction to grant it resistance against that damage."
+						"El familiar obtiene una velocidad volando o una velocidad nadando (a tu elección) de 40 pies.",
+						"Como acción adicional, puedes ordenar al familiar que realice la acción de {@action Atacar|PHB-ES}.",
+						"Los ataques con arma del familiar se consideran mágicos en lo que respecta a ignorar la inmunidad y la resistencia a ataques no mágicos.",
+						"Si el familiar obliga a una criatura a realizar una tirada de salvación, esta utiliza tu CD de salvación de conjuros.",
+						"Cuando el familiar recibe daño, puedes usar tu reacción para otorgarle resistencia contra ese daño."
 					]
 				}
 			]
 		},
 		{
-			"name": "Lance of Lethargy",
+			"name": "Lanza de Letargo",
 			"source": "XGE-ES",
-			"page": 57,
+			"page": 21,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
 					"spell": [
-						"eldritch blast#c"
+						"descarga sobrenatural|PHB-ES#c"
 					]
 				}
 			],
 			"entries": [
-				"Once on each of your turns when you hit a creature with your {@spell eldritch blast}, you can reduce that creature's speed by 10 feet until the end of your next turn."
+				"Una vez en cada uno de tus turnos, cuando impactes a un objetivo con tu {@spell descarga sobrenatural|PHB-ES}, puedes reducir la velocidad de esa criatura en 10 pies hasta el final de tu próximo turno."
 			]
 		},
 		{
-			"name": "Lifedrinker",
+			"name": "Devorador de Vida",
 			"source": "PHB-ES",
-			"page": 111,
+			"page": 61,
 			"srd": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 12,
 						"class": {
-							"name": "Warlock"
+							"name": "Brujo",
+							"source": "PHB-ES"
 						}
 					},
-					"pact": "Blade"
+					"pact": "Pacto del Filo"
 				}
 			],
 			"entries": [
-				"When you hit a creature with your pact weapon, the creature takes extra necrotic damage equal to your Charisma modifier (minimum of 1)."
+				"Cuando impactes a una criatura con tu arma de pacto, infligirás tanto daño necrótico adicional como tu modificador por Carisma (como mínimo 1)."
 			]
 		},
 		{
@@ -1710,27 +1704,28 @@
 			]
 		},
 		{
-			"name": "Maddening Hex",
+			"name": "Maldición Enloquecedora",
 			"source": "XGE-ES",
-			"page": 57,
+			"page": 21,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 5,
 						"class": {
-							"name": "Warlock"
+							"name": "Brujo",
+							"source": "PHB-ES"
 						}
 					},
 					"spell": [
-						"hex/curse#x"
+						"maleficio/maldición#x"
 					]
 				}
 			],
 			"entries": [
-				"As a bonus action, you cause a psychic disturbance around the target cursed by your {@spell hex} spell or by a warlock feature of yours, such as Hexblade's Curse or Sign of Ill Omen. When you do so, you deal psychic damage to the cursed target and each creature of your choice that you can see within 5 feet of it. The psychic damage equals your Charisma modifier (minimum of 1 damage). To use this invocation, you must be able to see the cursed target, and it must be within 30 feet of you."
+				"Como acción adicional, causas una perturbación psíquica alrededor de una criatura afectada por tu conjuro {@spell maleficio|PHB-ES} o por uno de tus rasgos de Brujo, como la Marca del Mal Augurio o la Maldición del Filo Maléfico. Cuando lo hagas, infliges daño psíquico al objetivo y a cada criatura de tu elección que puedas ver y esté a 5 pies o menos de él. El daño psíquico es igual a tu modificador de Carisma (mínimo 1 de daño). Para utilizar esta invocación, debes ser capaz de ver al objetivo maldito, que ha de encontrarse a 30 pies o menos de ti."
 			]
 		},
 		{
@@ -1748,40 +1743,41 @@
 			]
 		},
 		{
-			"name": "Mask of Many Faces",
+			"name": "Máscara de los Mil Rostros",
 			"source": "PHB-ES",
-			"page": 111,
+			"page": 62,
 			"srd": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"additionalSpells": [
 				{
 					"innate": {
 						"_": [
-							"disguise self"
+							"disfrazarse|PHB-ES"
 						]
 					}
 				}
 			],
 			"entries": [
-				"You can cast {@spell disguise self} at will, without expending a spell slot."
+				"Puedes lanzar {@spell disfrazarse|PHB-ES} a voluntad, sin tener que gastar un espacio de conjuro."
 			]
 		},
 		{
-			"name": "Master of Myriad Forms",
+			"name": "Maestro de las Formas Innumerables",
 			"source": "PHB-ES",
 			"page": 111,
 			"srd": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 15,
 						"class": {
-							"name": "Warlock"
+							"name": "Brujo",
+							"source": "PHB-ES"
 						}
 					}
 				}
@@ -1790,13 +1786,13 @@
 				{
 					"innate": {
 						"_": [
-							"alter self"
+							"alterar el propio aspecto|PHB-ES"
 						]
 					}
 				}
 			],
 			"entries": [
-				"You can cast {@spell alter self} at will, without expending a spell slot."
+				"Puedes lanzar {@spell alterar el propio aspecto|PHB-ES} a voluntad, sin tener que gastar un espacio de conjuro."
 			]
 		},
 		{
@@ -1814,37 +1810,38 @@
 			]
 		},
 		{
-			"name": "Mind Sharpener",
+			"name": "Despejamentes",
 			"source": "TCE-ES",
-			"page": 22,
+			"page": 21,
 			"featureType": [
-				"AI"
+				"AI_Esp"
 			],
 			"prerequisite": [
 				{
 					"item": [
-						"A suit of armor or robes"
+						"Una armadura o una túnica"
 					]
 				}
 			],
 			"entries": [
-				"The infused item can send a jolt to the wearer to refocus their mind. The item has 4 charges. When the wearer fails a Constitution saving throw to maintain {@status concentration} on a spell, the wearer can use its reaction to expend 1 of the item's charges to succeed instead. The item regains {@dice 1d4} expended charges daily at dawn."
+				"El objeto imbuido puede enviar una descarga a su portador que le permitirá centrar su mente. El objeto tiene 4 cargas. Si el portador falla una tirada de salvación de Constitución para mantener la {@status concentración|PHB-ES} en un conjuro, puede usar su reacción para gastar 1 de las cargas del objeto y tener éxito. El objeto recupera {@dice 1d4} cargas empleadas cada día, al amanecer."
 			]
 		},
 		{
-			"name": "Minions of Chaos",
+			"name": "Esbirros del Caos",
 			"source": "PHB-ES",
-			"page": 111,
+			"page": 61,
 			"srd": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 9,
 						"class": {
-							"name": "Warlock"
+							"name": "Brujo",
+							"source": "PHB-ES"
 						}
 					}
 				}
@@ -1855,7 +1852,7 @@
 						"_": {
 							"daily": {
 								"1e": [
-									"conjure elemental"
+									"conjurar elemental|PHB-ES"
 								]
 							}
 						}
@@ -1863,23 +1860,24 @@
 				}
 			],
 			"entries": [
-				"You can cast {@spell conjure elemental} once using a warlock spell slot. You can't do so again until you finish a long rest."
+				"Puedes lanzar {@spell conjurar elemental|PHB-ES} una vez utilizando un espacio de conjuro de brujo. Para volver a hacer esto tienes que finalizar primero un descanso largo."
 			]
 		},
 		{
-			"name": "Mire the Mind",
+			"name": "Enfangar la Muerte",
 			"source": "PHB-ES",
-			"page": 111,
+			"page": 61,
 			"srd": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 5,
 						"class": {
-							"name": "Warlock"
+							"name": "Brujo",
+							"source": "PHB-ES"
 						}
 					}
 				}
@@ -1890,7 +1888,7 @@
 						"_": {
 							"daily": {
 								"1e": [
-									"slow"
+									"ralentizar|PHB-ES"
 								]
 							}
 						}
@@ -1898,25 +1896,27 @@
 				}
 			],
 			"entries": [
-				"You can cast {@spell slow} once using a warlock spell slot. You can't do so again until you finish a long rest."
+				"Puedes lanzar {@spell ralentizar|PHB-ES} una vez utilizando un espacio de conjuro de brujo. Para volver a hacer esto tienes que finalizar primero un descanso largo."
 			]
 		},
 		{
-			"name": "Mist Stance",
+			"name": "Postura de la Niebla",
 			"source": "PHB-ES",
-			"page": 81,
+			"page": 107,
 			"featureType": [
-				"ED"
+				"ED_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 11,
 						"class": {
-							"name": "Monk"
+							"name": "Monje",
+							"source": "PHB-ES"
 						},
 						"subclass": {
-							"name": "Four Elements"
+							"name": "Cuatro Elementos",
+							"source": "PHB-ES"
 						}
 					}
 				}
@@ -1927,7 +1927,7 @@
 						"_": {
 							"resource": {
 								"4": [
-									"gaseous form"
+									"forma gaseosa|PHB-ES"
 								]
 							}
 						}
@@ -1937,66 +1937,68 @@
 				}
 			],
 			"entries": [
-				"You can spend 4 ki points to cast {@spell gaseous form}, targeting yourself."
+				"Puedes gastar 4 puntos de ki para lanzar {@spell forma gaseosa|PHB-ES} eligiéndote como objetivo a ti mismo."
 			]
 		},
 		{
-			"name": "Misty Visions",
+			"name": "Visiones Brumosas",
 			"source": "PHB-ES",
-			"page": 111,
+			"page": 62,
 			"srd": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"additionalSpells": [
 				{
 					"innate": {
 						"_": [
-							"silent image"
+							"imagen silenciosa|PHB-ES"
 						]
 					}
 				}
 			],
 			"entries": [
-				"You can cast {@spell silent image} at will, without expending a spell slot or material components."
+				"Puedes lanzar {@spell imagen silenciosa|PHB-ES} a voluntad, sin tener que gastar un espacio de conjuro ni componentes materiales."
 			]
 		},
 		{
-			"name": "One with Shadows",
+			"name": "Uno con las Sombras",
 			"source": "PHB-ES",
-			"page": 111,
+			"page": 62,
 			"srd": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 5,
 						"class": {
-							"name": "Warlock"
+							"name": "Brujo",
+							"source": "PHB-ES"
 						}
 					}
 				}
 			],
 			"entries": [
-				"When you are in an area of dim light or darkness, you can use your action to become {@condition invisible} until you move or take an action or a reaction."
+				"Cuando estás en una zona de luz tenue u oscuridad, puedes usar tu acción para volverte {@condition invisible|PHB-ES} hasta que te muevas o realices una acción o una reacción."
 			]
 		},
 		{
-			"name": "Otherworldly Leap",
+			"name": "Salto Sobrenatural",
 			"source": "PHB-ES",
-			"page": 111,
+			"page": 62,
 			"srd": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 9,
 						"class": {
-							"name": "Warlock"
+							"name": "Brujo",
+							"source": "PHB-ES"
 						}
 					}
 				}
@@ -2005,36 +2007,36 @@
 				{
 					"innate": {
 						"_": [
-							"jump"
+							"salto|PHB-ES"
 						]
 					}
 				}
 			],
 			"entries": [
-				"You can cast {@spell jump} on yourself at will, without expending a spell slot or material components."
+				"Puedes lanzar {@spell salto|PHB-ES} sobre ti mismo a voluntad, sin tener que gastar un espacio de conjuro ni componentes materiales."
 			]
 		},
 		{
-			"name": "Pact of the Blade",
+			"name": "Pacto del Filo",
 			"source": "PHB-ES",
-			"page": 107,
+			"page": 58,
 			"srd": true,
 			"featureType": [
-				"PB"
+				"PB_Esp"
 			],
 			"entries": [
-				"You can use your action to create a pact weapon in your empty hand. You can choose the form that this melee weapon takes each time you create it (see chapter 5 for weapon options). You are proficient with it while you wield it. This weapon counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.",
-				"Your pact weapon disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature again, if you dismiss the weapon (no action required), or if you die.",
-				"You can transform one magic weapon into your pact weapon by performing a special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. You can then dismiss the weapon, shunting it into an extradimensional space, and it appears whenever you create your pact weapon thereafter. You can't affect an artifact or a sentient weapon in this way. The weapon ceases being your pact weapon if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks."
+				"Puedes usar tu acción para crear un arma de pacto en tu mano vacía. Puedes elegir qué forma adopta esta arma cuerpo a cuerpo cada vez que la crees (consulta el capítulo 5 para ver las armas disponibles). Mientras la empuñes serás competente con ella. Esta arma cuenta como mágica a efectos de superar las resistencias e inmunidades a ataques y daño no mágicos.",
+				"Tu arma de pacto desaparecerá si se encuentra a más de 5 pies de distancia de ti durante al menos 1 minuto. También desaparecerá si usas este rasgo otra vez, si haces desaparecer el arma voluntariamente (no es necesaria acción) o si mueres.",
+				"Puedes transformar un arma mágica en tu arma de pacto llevando a cabo un ritual especial mientras la empuñas. Para ejecutar este ritual necesitas 1 hora, que puede ser la de un descanso corto. Puedes hacer desaparecer el arma, depositándola en un espacio extradimensional, y a partir de ese momento será esta arma la que aparezca cuando crees tu arma de pacto. Los artefactos o armas conscientes no pueden ser afectados de esta forma. Además, dicha arma mágica dejará de ser tu arma de pacto si mueres, si ejecutas el ritual de 1 hora con un arma distinta o si usas el ritual de hora para romper tu vínculo con ella. El arma aparecerá a tus pies si se encontraba en el espacio extradimensional cuando se rompe el vínculo."
 			]
 		},
 		{
-			"name": "Pact of the Chain",
+			"name": "Pacto de la Cadena",
 			"source": "PHB-ES",
-			"page": 107,
+			"page": 58,
 			"srd": true,
 			"featureType": [
-				"PB"
+				"PB_Esp"
 			],
 			"additionalSpells": [
 				{
@@ -2042,38 +2044,38 @@
 					"innate": {
 						"_": {
 							"ritual": [
-								"find familiar"
+								"encontrar familiar|PHB-ES"
 							]
 						}
 					}
 				}
 			],
 			"entries": [
-				"You learn the {@spell find familiar} spell and can cast it as a ritual. The spell doesn't count against your number of spells known.",
-				"When you cast the spell, you can choose one of the normal forms for your familiar or one of the following special forms: {@creature imp}, {@creature pseudodragon}, {@creature quasit}, or {@creature sprite}.",
-				"Additionally, when you take the {@action Attack} action, you can forgo one of your own attacks to allow your familiar to use its reaction to make one attack of its own."
+				"Aprendes el conjuro {@spell encontrar familiar|PHB-ES} y puedes lanzarlo como ritual. Este conjuro no cuenta dentro de tu límite de conjuros conocidos.",
+				"Cuando lo lances, escoge entre una de las formas habituales para un familiar o una de las siguientes formas especiales: {@creature diablillo|MM-ES}, {@creature duende|MM-ES}, {@creature pseudodragón|MM-ES} o {@creature quasit|MM-ES}.",
+				"Además, cuando llevas a cabo la acción de {@action Atacar|PHB-ES}, puedes renunciar a uno de tus ataques para permitir a tu familiar realizar uno de sus propios ataques utilizando su reacción."
 			]
 		},
 		{
-			"name": "Pact of the Talisman",
+			"name": "Pacto del Talismán",
 			"source": "TCE-ES",
-			"page": 71,
+			"page": 31,
 			"isClassFeatureVariant": true,
 			"featureType": [
-				"PB"
+				"PB_Esp"
 			],
 			"entries": [
-				"Your patron gives you an amulet, a talisman that can aid the wearer when the need is great. When the wearer fails an ability check, they can add a {@dice d4} to the roll, potentially turning the roll into a success. This benefit can be used a number of times equal to your proficiency bonus, and all expended uses are restored when you finish a long rest.",
-				"If you lose the talisman, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous amulet. The talisman turns to ash when you die."
+				"Tu patrón te da un amuleto, un talismán que puede ayudar al portador en momentos de gran necesidad. Si el portador falla una prueba de característica, puede añadir {@dice 1d4} a la tirada, lo que puede convertirla en un éxito. Este beneficio se puede usar una cantidad de veces igual a tu bonificador por competencia y recuperas todos los usos tras finalizar un descanso largo.",
+				"Si pierdes el talismán, puedes realizar una ceremonia de 1 hora para recibir uno de sustitución de tu patrón. Esta ceremonia se puede llevar a cabo durante un descanso corto o largo y destruye el amuleto anterior. El talismán se convierte en cenizas cuando mueres."
 			]
 		},
 		{
-			"name": "Pact of the Tome",
+			"name": "Pacto del Grimorio",
 			"source": "PHB-ES",
-			"page": 108,
+			"page": 59,
 			"srd": true,
 			"featureType": [
-				"PB"
+				"PB_Esp"
 			],
 			"additionalSpells": [
 				{
@@ -2089,7 +2091,8 @@
 				}
 			],
 			"entries": [
-				"Your patron gives you a grimoire called a Book of Shadows. When you gain this feature, choose three {@filter cantrips|spells|level=0} from any class's spell list. The cantrips do not need to be from the same spell list. While the book is on your person, you can cast those cantrips at will. They don't count against your number of cantrips known. Any cantrip you cast with this feature is considered a warlock cantrip for you. If you lose your Book of Shadows, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous book. The book turns to ash when you die."
+				"Tu patrón te hace entrega de un grimorio que recibe el nombre de Libro de las Sombras. Cuando obtengas este rasgo, elige tres {@filter trucos|spells|level=0} de la lista de conjuros de cualquier clase. No tienen por qué ser los tres de la misma lista. Mientras tengas el libro contigo, puedes lanzar esos trucos a voluntad y no cuentan dentro de tu límite de trucos conocidos. Además, aunque no aparezcan en la lista de conjuros de brujo, para ti sí que se considerarán como conjuros de brujo.",
+				"Si pierdes el Libro de las Sombras, puedes llevar a cabo una ceremonia de 1 hora a través de la cual tu patrón te proporcionará un reemplazo. Puedes ejecutarla como parte de un descanso corto o largo, y esta ceremonia destruye el libro anterior. El Libro de las Sombras se convierte en cenizas cuando mueres."
 			]
 		},
 		{
@@ -2107,18 +2110,18 @@
 			]
 		},
 		{
-			"name": "Piercing Arrow",
+			"name": "Flecha Penetrante",
 			"source": "XGE-ES",
-			"page": 29,
+			"page": 39,
 			"featureType": [
-				"AS"
+				"AS_Esp"
 			],
 			"consumes": {
-				"name": "Arcane Shot"
+				"name": "Disparo Arcano"
 			},
 			"entries": [
-				"You use transmutation magic to give your arrow an ethereal quality. When you use this option, you don't make an attack roll for the attack. Instead, the arrow shoots forward in a line, which is 1 foot wide and 30 feet long, before disappearing. The arrow passes harmlessly through objects, ignoring cover. Each creature in that line must make a Dexterity saving throw. On a failed save, a creature takes damage as if it were hit by the arrow, plus an extra {@damage 1d6} piercing damage. On a successful save, a target takes half as much damage.",
-				"The piercing damage increases to {@damage 2d6} when you reach 18th level in this class."
+				"Utilizas magia de transmutación para que tu flecha tenga atributos etéreos. Cuando empleas esta opción, no realizas una tirada de ataque para el ataque. En vez de eso, el proyectil avanza en una línea recta, de 1 pie de ancho y 30 pies de largo, antes de desaparecer. La flecha atraviesa los objetos sin dañarlos, ignorando cobertura. Todas las criaturas en la línea deberán hacer una tirada de salvación de Destreza. Si alguna falla, recibirá daño como si hubiera sido impactada por la flecha, más {@damage 1d6} de daño perforante adicional. Si tiene éxito, recibe la mitad de daño.",
+				"El daño perforante aumenta a {@damage 2d6} cuando alcanzas el nivel 18 de esta clase."
 			]
 		},
 		{
@@ -2155,26 +2158,27 @@
 			]
 		},
 		{
-			"name": "Protection of the Talisman",
+			"name": "Protección del Talismán",
 			"source": "TCE-ES",
-			"page": 71,
+			"page": 31,
 			"isClassFeatureVariant": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 7,
 						"class": {
-							"name": "Warlock"
+							"name": "Brujo",
+							"source": "PHB-ES"
 						}
 					},
-					"pact": "Talisman"
+					"pact": "Pacto del Talismán"
 				}
 			],
 			"entries": [
-				"When the wearer of your talisman fails a saving throw, they can add a {@dice d4} to the roll, potentially turning the save into a success. This benefit can be used a number of times equal to your proficiency bonus, and all expended uses are restored when you finish a long rest."
+				"Cuando el portador de tu talismán falla una tirada de salvación, puede añadir un {@dice d4} a la tirada, lo que puede convertirla en un éxito. Este beneficio se puede usar una cantidad de veces igual a tu bonificador por competencia y recuperas todos los usos tras finalizar un descanso largo."
 			]
 		},
 		{
@@ -2192,9 +2196,9 @@
 			]
 		},
 		{
-			"name": "Quick Toss",
+			"name": "Lanzamiento Raudo",
 			"source": "TCE-ES",
-			"page": 42,
+			"page": 53,
 			"isClassFeatureVariant": true,
 			"featureType": [
 				"MV_Esp:B"
@@ -2203,54 +2207,48 @@
 				"name": "Dado de supremacía"
 			},
 			"entries": [
-				"As a bonus action, you can expend one superiority die and make a ranged attack with a weapon that has the thrown property. You can draw the weapon as part of making this attack. If you hit, add the superiority die to the weapon's damage roll."
+				"Como acción adicional, puedes gastar un dado de supremacía y hacer un ataque a distancia con un arma que tenga la propiedad \"arrojadiza\". Puedes desenvainar el arma como parte de este ataque. Si impactas, añade el dado de supremacía a la tirada de daño del arma."
 			]
 		},
 		{
-			"name": "Quickened Spell",
+			"name": "Conjuro Acelerado",
 			"source": "PHB-ES",
-			"page": 102,
+			"page": 90,
 			"srd": true,
 			"featureType": [
-				"MM"
+				"MM_Esp"
 			],
 			"consumes": {
-				"name": "Sorcery Point",
+				"name": "Punto de hechicería",
 				"amount": 2
 			},
 			"entries": [
-				"When you cast a spell that has a casting time of 1 action, you can spend 2 sorcery points to change the casting time to 1 bonus action for this casting."
+				"Cuando lanzas un conjuro con un tiempo de lanzamiento de 1 acción, puedes gastar 2 puntos de hechicería para hacer que el tiempo de lanzamiento sea solo de 1 acción adicional a efectos de este lanzamiento."
 			]
 		},
 		{
-			"name": "Radiant Weapon",
+			"name": "Arma Radiante",
 			"source": "TCE-ES",
-			"page": 22,
-			"otherSources": [
-				{
-					"source": "ERLW",
-					"page": 62
-				}
-			],
+			"page": 20,
 			"featureType": [
-				"AI"
+				"AI_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 6,
 						"class": {
-							"name": "Artificer"
+							"name": "Artífice"
 						}
 					},
 					"item": [
-						"A simple or martial weapon (requires attunement)"
+						"Un arma sencilla o marcial (requiere sinton ización)"
 					]
 				}
 			],
 			"entries": [
-				"This magic weapon grants a +1 bonus to attack and damage rolls made with it. While holding it, the wielder can take a bonus action to cause it to shed bright light in a 30-foot radius and dim light for an additional 30 feet. The wielder can extinguish the light as a bonus action.",
-				"The weapon has 4 charges. As a reaction immediately after being hit by an attack, the wielder can expend 1 charge and cause the attacker to be {@condition blinded} until the end of the attacker's next turn, unless the attacker succeeds on a Constitution saving throw against your spell save DC. The weapon regains {@dice 1d4} expended charges daily at dawn."
+				"Esta arma mágica concede un bonificador de +1 a las tiradas de ataque y de daño que hagas con ella. Mientras la sostenga, el portador podrá usar una acción adicional para que emita luz brillante en un radio de 30 pies y luz tenue 30 pies más allá. Además, podrá apagar la luz como acción adicional.",
+				"El arma tiene 4 cargas. Como reacción inmediatamente después de que le impacte un ataque, el portador podrá gastar 1 carga y dejar {@condition cegado|PHB-ES} al atacante basta el final del siguiente turno de este atacante, a menos que este tenga éxito en una tirada de salvación de Constitución contra tu CD de salvación de conjuros. El arma recupera {@dice 1d4} cargas empleadas cada día, al amanecer."
 			]
 		},
 		{
@@ -2268,112 +2266,101 @@
 			]
 		},
 		{
-			"name": "Rebuke of the Talisman",
+			"name": "Repulsión del Talismán",
 			"source": "TCE-ES",
-			"page": 71,
+			"page": 31,
 			"isClassFeatureVariant": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
-					"pact": "Talisman"
+					"pact": "Pacto del Talismán"
 				}
 			],
 			"entries": [
-				"When the wearer of your talisman is hit by an attacker you can see within 30 feet of you, you can use your reaction to deal psychic damage to the attacker equal to your proficiency bonus and push it up to 10 feet away from the talisman's wearer."
+				"Cuando el portador de tu talismán recibe el impacto de un atacante que puedas ver a 30 pies o menos de ti, puedes usar tu reacción para infligir un daño psíquico al atacante igual a tu bonificador por competencia y empujarlo para alejarlo hasta a 10 pies del portador del talismán."
 			]
 		},
 		{
-			"name": "Relentless Hex",
+			"name": "Maldición Implacable",
 			"source": "XGE-ES",
-			"page": 57,
+			"page": 21,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 7,
 						"class": {
-							"name": "Warlock"
+							"name": "Brujo",
+							"source": "PHB-ES"
 						}
 					},
 					"spell": [
-						"hex/curse#x"
+						"maleficio/maldición#x"
 					]
 				}
 			],
 			"entries": [
-				"Your curse creates a temporary bond between you and your target. As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see within 5 feet of the target cursed by your {@spell hex} spell or by a warlock feature of yours, such as Hexblade's Curse or Sign of Ill Omen. To teleport in this way, you must be able to see the cursed target."
+				"Tu maldición crea un vínculo temporal entre ti y tu objetivo. Como acción adicional, puedes teletransportarte mágica mente hasta 30 pies a un espacio libre que puedas ver y se encuentre a 5 pies o menos del objetivo maldito por tu conjuro de {@spell maleficio|PHB-ES} o por uno de tus rasgos de Brujo, como la Marca del Mal Augurio o la Maldición del Filo Maléfico. Para teletransportarte de esta manera, debes ser capaz de ver al objetivo."
 			]
 		},
 		{
-			"name": "Repeating Shot",
+			"name": "Tiro de Repetición",
 			"source": "TCE-ES",
-			"page": 22,
-			"otherSources": [
-				{
-					"source": "ERLW",
-					"page": 62
-				}
-			],
+			"page": 23,
 			"featureType": [
-				"AI"
+				"AI_Esp"
 			],
 			"prerequisite": [
 				{
 					"item": [
-						"A simple or martial weapon with the ammunition property (requires attunement)"
+						"Un arma sencilla o marcial con la propiedad \"munición\" (requiere sintonización)"
 					]
 				}
 			],
 			"entries": [
-				"This magic weapon grants a +1 bonus to attack and damage rolls made with it when it's used to make a ranged attack, and it ignores the loading property if it has it.",
-				"If the weapon lacks ammunition, it produces its own, automatically creating one piece of magic ammunition when the wielder makes a ranged attack with it. The ammunition created by the weapon vanishes the instant after it hits or misses a target."
+				"Esta arma mágica concede un bonificador de +1 a las tiradas de ataque y de daño que hagas con ella cuando se use para un ataque a distancia e ignora la propiedad \"recarga\" si la tiene.",
+				"Si no cargas el arma con munición, producirá la suya propia y creará automáticamente una pieza de munición mágica cuando realices un ataque a distancia con ella. La munición creada por el arma se desvanece en cuanto impacta contra un objetivo o no acierta a uno."
 			]
 		},
 		{
-			"name": "Repelling Blast",
+			"name": "Descarga Ahuyentadora",
 			"source": "PHB-ES",
-			"page": 111,
+			"page": 61,
 			"srd": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
 					"spell": [
-						"eldritch blast#c"
+						"descarga sobrenatural|PHB-ES#c"
 					]
 				}
 			],
 			"entries": [
-				"When you hit a creature with {@spell eldritch blast}, you can push the creature up to 10 feet away from you in a straight line."
+				"Cuando impactes a una criatura con tu {@spell descarga sobrenatural|PHB-ES}, puedes empujarla hasta 10 pies en dirección contraria a ti."
 			]
 		},
 		{
-			"name": "Replicate Magic Item",
+			"name": "Replicar Objeto Mágico",
 			"source": "TCE-ES",
-			"page": 22,
-			"otherSources": [
-				{
-					"source": "ERLW",
-					"page": 63
-				}
-			],
+			"page": 21,
 			"featureType": [
-				"AI"
+				"AI_Esp"
 			],
 			"entries": [
-				"Using this infusion, you replicate a particular magic item. You can learn this infusion multiple times; each time you do so, choose a magic item that you can make with it, picking from the Replicable Items tables below. A table's title tells you the level you must be in the class to choose an item from the table. Alternatively, you can choose the magic item from among the {@filter common magic items|items|type=!potion;!scroll|rarity=common} in the game, not including potions or scrolls.",
-				"In the tables, an item's entry tells you whether the item requires attunement. See the item's description in the {@book Dungeon Master's Guide|DMG} for more information about it, including the type of object required for its making.",
+				"Con esta infusión, replicas un objeto mágico concreto. Puede aprender esta infusión varias veces. Cada vez que lo hagas, elige un objeto mágico que puedas hacer con ella de los que hay disponibles en las tablas \"Objetos replicables\". El título de la tabla te indica el nivel que debes tener en la clase para elegir un objeto de ella. De forma alternativa, puedes elegir un objeto mágico de entre los {@filter objetos mágicos comunes|items|type=!potion;!scroll|rarity=common} del juego, excepto pociones y pergaminos.",
+				"En cada tabla, podrás ver si el objeto necesita sintonización o no. Puedes consultar la descripción del objeto en la {@book Dungeon Master's Guide|DMG-ES} para obtener más información sobre él, incluido el tipo de objeto necesario para su fabricación.",
 				{
 					"type": "table",
-					"caption": "Replicable Items (2nd-Level Artificer)",
+					"caption": "Objetos replicables (artífice de nivel 2)",
 					"colLabels": [
-						"Magic Item",
-						"Attunement"
+						"Objeto mágico",
+						"Sintonización"
 					],
 					"colStyles": [
 						"col-10",
@@ -2381,45 +2368,45 @@
 					],
 					"rows": [
 						[
-							"{@item Alchemy jug}",
+							"{@item Anteojos de la noche|DMG-ES}",
 							"No"
 						],
 						[
-							"{@item Bag of holding}",
+							"{@item Bolsa de contención|DMG-ES}",
 							"No"
 						],
 						[
-							"{@item Cap of water breathing}",
+							"{@item Cuerda de escalada|DMG-ES}",
 							"No"
 						],
 						[
-							"{@item Goggles of night}",
+							"{@item Gorro de respirar bajo el agua|DMG-ES}",
 							"No"
 						],
 						[
-							"{@item Rope of climbing}",
+							"{@item Piedras mensajeras|DMG-ES}",
 							"No"
 						],
 						[
-							"{@item Sending stones}",
+							"{@item Varita de detección mágica|DMG-ES}",
 							"No"
 						],
 						[
-							"{@item Wand of magic detection}",
+							"{@item Varita de secretos|DMG-ES}",
 							"No"
 						],
 						[
-							"{@item Wand of secrets}",
+							"{@item Vasija alquímica|DMG-ES}",
 							"No"
 						]
 					]
 				},
 				{
 					"type": "table",
-					"caption": "Replicable Items (6th-Level Artificer)",
+					"caption": "Objetos replicables (artífice de nivel 6)",
 					"colLabels": [
-						"Magic Item",
-						"Attunement"
+						"Objeto mágico",
+						"Sintonización"
 					],
 					"colStyles": [
 						"col-10",
@@ -2427,45 +2414,45 @@
 					],
 					"rows": [
 						[
-							"{@item Boots of elvenkind}",
+							"{@item Anillo de caminar sobre las aguas|DMG-ES}",
 							"No"
 						],
 						[
-							"{@item Cloak of elvenkind}",
-							"Yes"
+							"{@item Anteojos de encantamiento|DMG-ES}",
+							"Sí"
 						],
 						[
-							"{@item Cloak of the manta ray}",
+							"{@item Botas élficas|DMG-ES}",
 							"No"
 						],
 						[
-							"{@item Eyes of charming}",
-							"Yes"
-						],
-						[
-							"{@item Gloves of thievery}",
+							"{@item Capa de la mantarraya|DMG-ES}",
 							"No"
 						],
 						[
-							"{@item Lantern of revealing}",
+							"{@item Capa élfica|DMG-ES}",
+							"Sí"
+						],
+						[
+							"{@item Flauta de la aparición|DMG-ES}",
 							"No"
 						],
 						[
-							"{@item Pipes of haunting}",
+							"{@item Guantes de ladrón|DMG-ES}",
 							"No"
 						],
 						[
-							"{@item Ring of water walking}",
+							"{@item Linterna de revelación|DMG-ES}",
 							"No"
 						]
 					]
 				},
 				{
 					"type": "table",
-					"caption": "Replicable Items (10th-Level Artificer)",
+					"caption": "Objetos replicables (artífice de nivel 10)",
 					"colLabels": [
-						"Magic Item",
-						"Attunement"
+						"Objeto mágico",
+						"Sintonización"
 					],
 					"colStyles": [
 						"col-11",
@@ -2473,101 +2460,97 @@
 					],
 					"rows": [
 						[
-							"{@item Boots of striding and springing}",
-							"Yes"
+							"{@item Anillo de escudo mental|DMG-ES}",
+							"Sí"
 						],
 						[
-							"{@item Boots of the winterlands}",
-							"Yes"
+							"{@item Anillo de salto|DMG-ES}",
+							"Sí"
 						],
 						[
-							"{@item Bracers of archery}",
-							"Yes"
+							"{@item Anteojos de vista de águila|DMG-ES}",
+							"Sí"
 						],
 						[
-							"{@item Brooch of shielding}",
-							"Yes"
+							"{@item Babuchas de trepar cual arácnido|DMG-ES}",
+							"Sí"
 						],
 						[
-							"{@item Cloak of protection}",
-							"Yes"
+							"{@item Botas aladas|DMG-ES}",
+							"Sí"
 						],
 						[
-							"{@item Eyes of the eagle}",
-							"Yes"
+							"{@item Botas de las tierras invernales|DMG-ES}",
+							"Sí"
 						],
 						[
-							"{@item Gauntlets of ogre power}",
-							"Yes"
+							"{@item Botas de zancadas y brincos|DMG-ES}",
+							"Sí"
 						],
 						[
-							"{@item Gloves of missile snaring}",
-							"Yes"
+							"{@item Brazales de arquería|DMG-ES}",
+							"Sí"
 						],
 						[
-							"{@item Gloves of swimming and climbing}",
-							"Yes"
+							"{@item Broche escudo|DMG-ES}",
+							"Sí"
 						],
 						[
-							"{@item Hat of disguise}",
-							"Yes"
+							"{@item Capa de protección|DMG-ES}",
+							"Sí"
 						],
 						[
-							"{@item Headband of intellect}",
-							"Yes"
-						],
-						[
-							"{@item Helm of telepathy}",
-							"Yes"
-						],
-						[
-							"{@item Medallion of thoughts}",
-							"Yes"
-						],
-						[
-							"{@item Necklace of adaptation}",
-							"Yes"
-						],
-						[
-							"{@item Periapt of wound closure}",
-							"Yes"
-						],
-						[
-							"{@item Pipes of the sewers}",
-							"Yes"
-						],
-						[
-							"{@item Quiver of Ehlonna}",
+							"{@item Carcaj de Ehlonna|DMG-ES}",
 							"No"
 						],
 						[
-							"{@item Ring of jumping}",
-							"Yes"
+							"{@item Collar de adaptación|DMG-ES}",
+							"Sí"
 						],
 						[
-							"{@item Ring of mind shielding}",
-							"Yes"
+							"{@item Diadema de intelecto|DMG-ES}",
+							"Sí"
 						],
 						[
-							"{@item Slippers of spider climbing}",
-							"Yes"
+							"{@item Flauta de las cloacas|DMG-ES}",
+							"Sí"
 						],
 						[
-							"{@item Ventilating lungs|ERLW} (detailed in {@book chapter 5|ERLW|13})",
-							"Yes"
+							"{@item Guanteletes de fuerza de ogro|DMG-ES}",
+							"Sí"
 						],
 						[
-							"{@item Winged boots}",
-							"Yes"
+							"{@item Guantes atrapaflechas|DMG-ES}",
+							"Sí"
+						],
+						[
+							"{@item Guantes de natación y escalada|DMG-ES}",
+							"Sí"
+						],
+						[
+							"{@item Medallón de los pensamientos|DMG-ES}",
+							"Sí"
+						],
+						[
+							"{@item Sombrero de disfraz|DMG-ES}",
+							"Sí"
+						],
+						[
+							"{@item Talismán de cerrar heridas|DMG-ES}",
+							"Sí"
+						],
+						[
+							"{@item Yelmo de telepatía|DMG-ES}",
+							"Sí"
 						]
 					]
 				},
 				{
 					"type": "table",
-					"caption": "Replicable Items (14th-Level Artificer)",
+					"caption": "Objetos replicables (artífice de nivel 14)",
 					"colLabels": [
-						"Magic Item",
-						"Attunement"
+						"Objeto mágico",
+						"Sintonización"
 					],
 					"colStyles": [
 						"col-11",
@@ -2575,162 +2558,142 @@
 					],
 					"rows": [
 						[
-							"{@item Amulet of health}",
-							"Yes"
+							"{@item Amuleto de salud|DMG-ES}",
+							"Sí"
 						],
 						[
-							"{@item Arcane propulsion arm|ERLW} (detailed in {@book chapter 5|ERLW|13})",
-							"Yes"
+							"{@item Anillo de libertad de acción|DMG-ES}",
+							"Sí"
 						],
 						[
-							"{@item Belt of hill giant strength}",
-							"Yes"
+							"{@item Anillo de protección|DMG-ES}",
+							"Sí"
 						],
 						[
-							"{@item Boots of levitation}",
-							"Yes"
+							"{@item Anillo del carnero|DMG-ES}",
+							"Sí"
 						],
 						[
-							"{@item Boots of speed}",
-							"Yes"
+							"{@item Botas de levitación|DMG-ES}",
+							"Sí"
 						],
 						[
-							"{@item Bracers of defense}",
-							"Yes"
+							"{@item Botas de velocidad|DMG-ES}",
+							"Sí"
 						],
 						[
-							"{@item Cloak of the bat}",
-							"Yes"
+							"{@item Brazales de defensa|DMG-ES}",
+							"Sí"
 						],
 						[
-							"{@item Dimensional shackles}",
+							"{@item Capa de murciélago|DMG-ES}",
+							"Sí"
+						],
+						[
+							"{@item Cinturón de fuerza de gigante de las colinas|DMG-ES}",
+							"Sí"
+						],
+						[
+							"{@item Cuerno de estallido|DMG-ES}",
 							"No"
 						],
 						[
-							"{@item Gem of seeing}",
-							"Yes"
+							"{@item Gema de visión|DMG-ES}",
+							"Sí"
 						],
 						[
-							"{@item Horn of blasting}",
+							"{@item Grilletes dimensionales|DMG-ES}",
 							"No"
-						],
-						[
-							"{@item Ring of free action}",
-							"Yes"
-						],
-						[
-							"{@item Ring of protection}",
-							"Yes"
-						],
-						[
-							"{@item Ring of the ram}",
-							"Yes"
 						]
 					]
 				}
 			]
 		},
 		{
-			"name": "Repulsion Shield",
+			"name": "Escudo de Repulsión",
 			"source": "TCE-ES",
-			"page": 23,
-			"otherSources": [
-				{
-					"source": "ERLW",
-					"page": 63
-				}
-			],
+			"page": 21,
 			"featureType": [
-				"AI"
+				"AI_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 6,
 						"class": {
-							"name": "Artificer"
+							"name": "Artífice"
 						}
 					},
 					"item": [
-						"A shield (requires attunement)"
+						"Un escudo (requiere sintonización)"
 					]
 				}
 			],
 			"entries": [
-				"A creature gains a +1 bonus to Armor Class while wielding this shield.",
-				"The shield has 4 charges. While holding it, the wielder can use a reaction immediately after being hit by a melee attack to expend 1 of the shield's charges and push the attacker up to 15 feet away. The shield regains {@dice 1d4} expended charges daily at dawn."
+				"Una criatura recibe un bonificador de +1 a la Clase de Armadura mientras porta este escudo.",
+				"El escudo tiene 4 cargas. Mientras lo sostenga, la criatura podrá usar una reacción inmediatamente tras el impacto de un ataque cuerpo a cuerpo para gastar 1 de las cargas del escudo y empujar al atacante a hasta 15 pies de ella. El escudo recupera {@dice 1d4} cargas empleadas cada día, al amanecer."
 			]
 		},
 		{
-			"name": "Resistant Armor",
+			"name": "Armadura Resistente",
 			"source": "TCE-ES",
-			"page": 23,
-			"otherSources": [
-				{
-					"source": "ERLW",
-					"page": 63
-				}
-			],
+			"page": 21,
 			"featureType": [
-				"AI"
+				"AI_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 6,
 						"class": {
-							"name": "Artificer"
+							"name": "Artífice"
 						}
 					},
 					"item": [
-						"A suit of armor (requires attunement)"
+						"Una armadura (requiere sintonización)"
 					]
 				}
 			],
 			"entries": [
-				"While wearing this armor, a creature has resistance to one of the following damage types, which you choose when you infuse the item: acid, cold, fire, force, lightning, necrotic, poison, psychic, radiant, or thunder."
+				"Mientras lleve esta armadura, una criatura tendrá resistencia a uno de los siguientes tipos de daño, el cual eliges al aplicar la infusión al objeto: ácido, frío, fuego, fuerza, relámpago, necrótico, veneno, psíquico, radiante o trueno."
 			]
 		},
 		{
-			"name": "Returning Weapon",
+			"name": "Arma Bumerán",
 			"source": "TCE-ES",
-			"page": 23,
-			"otherSources": [
-				{
-					"source": "ERLW",
-					"page": 63
-				}
-			],
+			"page": 20,
 			"featureType": [
-				"AI"
+				"AI_Esp"
 			],
 			"prerequisite": [
 				{
 					"item": [
-						"A simple or martial weapon with the thrown property"
+						"Un arma sencilla o marcial con la propiedad \"arrojadiza\""
 					]
 				}
 			],
 			"entries": [
-				"This magic weapon grants a +1 bonus to attack and damage rolls made with it, and it returns to the wielder's hand immediately after it is used to make a ranged attack."
+				"Esta arma mágica concede un bonificador de +1 a las tiradas de ataque y de daño que hagas con ella y vuelve a la mano de su portador inmediatamente después de usarla para hacer un ataque a distancia."
 			]
 		},
 		{
-			"name": "Ride the Wind",
+			"name": "Cabalgar el Viento",
 			"source": "PHB-ES",
-			"page": 81,
+			"page": 107,
 			"featureType": [
-				"ED"
+				"ED_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 11,
 						"class": {
-							"name": "Monk"
+							"name": "Monje",
+							"source": "PHB-ES"
 						},
 						"subclass": {
-							"name": "Four Elements"
+							"name": "Cuatro Elementos",
+							"source": "PHB-ES"
 						}
 					}
 				}
@@ -2741,7 +2704,7 @@
 						"_": {
 							"resource": {
 								"4": [
-									"fly"
+									"volar|PHB-ES"
 								]
 							}
 						}
@@ -2751,7 +2714,7 @@
 				}
 			],
 			"entries": [
-				"You can spend 4 ki points to cast {@spell fly}, targeting yourself."
+				"Puedes gastar 4 puntos de ki para lanzar {@spell volar|PHB-ES} eligiéndote como objetivo a ti mismo."
 			]
 		},
 		{
@@ -2769,21 +2732,23 @@
 			]
 		},
 		{
-			"name": "River of Hungry Flame",
+			"name": "Río de la Llama Insaciable",
 			"source": "PHB-ES",
-			"page": 81,
+			"page": 107,
 			"featureType": [
-				"ED"
+				"ED_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 17,
 						"class": {
-							"name": "Monk"
+							"name": "Monje",
+							"source": "PHB-ES"
 						},
 						"subclass": {
-							"name": "Four Elements"
+							"name": "Cuatro Elementos",
+							"source": "PHB-ES"
 						}
 					}
 				}
@@ -2794,7 +2759,7 @@
 						"_": {
 							"resource": {
 								"5": [
-									"wall of fire"
+									"muro de fuego|PHB-ES"
 								]
 							}
 						}
@@ -2804,15 +2769,15 @@
 				}
 			],
 			"entries": [
-				"You can spend 5 ki points to cast {@spell wall of fire}."
+				"Puedes gastar 5 puntos de ki para lanzar {@spell muro de fuego|PHB-ES}."
 			]
 		},
 		{
-			"name": "Rush of the Gale Spirits",
+			"name": "Ráfaga de los Espíritus del Vendaval",
 			"source": "PHB-ES",
-			"page": 81,
+			"page": 107,
 			"featureType": [
-				"ED"
+				"ED_Esp"
 			],
 			"additionalSpells": [
 				{
@@ -2820,7 +2785,7 @@
 						"_": {
 							"resource": {
 								"2": [
-									"gust of wind"
+									"ráfaga de viento|PHB-ES"
 								]
 							}
 						}
@@ -2830,23 +2795,24 @@
 				}
 			],
 			"entries": [
-				"You can spend 2 ki points to cast {@spell gust of wind}."
+				"Puedes gastar 2 puntos de ki para lanzar {@spell ráfaga de viento|PHB-ES}."
 			]
 		},
 		{
-			"name": "Sculptor of Flesh",
+			"name": "Escultor de Carne",
 			"source": "PHB-ES",
-			"page": 111,
+			"page": 61,
 			"srd": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 7,
 						"class": {
-							"name": "Warlock"
+							"name": "Brujo",
+							"source": "PHB-ES"
 						}
 					}
 				}
@@ -2857,7 +2823,7 @@
 						"_": {
 							"daily": {
 								"1e": [
-									"polymorph"
+									"polimorfar|PHB-ES"
 								]
 							}
 						}
@@ -2865,80 +2831,81 @@
 				}
 			],
 			"entries": [
-				"You can cast {@spell polymorph} once using a warlock spell slot. You can't do so again until you finish a long rest."
+				"Puedes lanzar {@spell polimorfar|PHB-ES} una vez utilizando un espacio de conjuro de brujo. Para volver a hacer esto tienes que finalizar primero un descanso largo."
 			]
 		},
 		{
-			"name": "Seeking Arrow",
+			"name": "Flecha Buscadora",
 			"source": "XGE-ES",
-			"page": 30,
+			"page": 37,
 			"featureType": [
-				"AS"
+				"AS_Esp"
 			],
 			"consumes": {
-				"name": "Arcane Shot"
+				"name": "Disparo Arcano"
 			},
 			"entries": [
-				"Using divination magic, you grant your arrow the ability to seek out a target. When you use this option, you don't make an attack roll for the attack. Instead, choose one creature you have seen in the past minute. The arrow flies toward that creature, moving around corners if necessary and ignoring three-quarters cover and half cover. If the target is within the weapon's range and there is a path large enough for the arrow to travel to the target, the target must make a Dexterity saving throw. Otherwise, the arrow disappears after traveling as far as it can. On a failed save, the target takes damage as if it were hit by the arrow, plus an extra {@damage 1d6} force damage, and you learn the target's current location. On a successful save, the target takes half as much damage, and you don't learn its location.",
-				"The force damage increases to {@damage 2d6} when you reach 18th level in this class."
+				"Utilizando magia de adivinación, haces que tu flecha sea capaz de buscar a un objetivo. Cuando utilizas esta opción, no realizas una tirada de ataque para el ataque. En vez de eso, elige a una criatura a la que hayas visto en el último minuto. El proyectil vuela hacia el objetivo, doblando esquinas de ser necesario e ignorando cobertura media y tres cuartos. Si la criatura está dentro del alcance del arma y hay un camino suficientemente amplio para que viaje la flecha, el objetivo deberá realizar una tirada de salvación de Destreza. Si no se cumplen estas condiciones, el proyectil desaparecerá después de viajar tanto como pueda. Si falla la tirada, el objetivo recibirá daño como si hubiera sido impactado por la flecha, más {@damage 1d6} de daño de fuerza adicional. Además, sabrás la localización de la criatura. Si tiene éxito, recibe la mitad del daño y no averiguas su posición.",
+				"El daño de fuerza se incrementa a {@damage 2d6} cuando llegas al nivel 18 de esta clase."
 			]
 		},
 		{
-			"name": "Seeking Spell",
+			"name": "Conjuro Buscador",
 			"source": "TCE-ES",
-			"page": 66,
+			"page": 59,
 			"isClassFeatureVariant": true,
 			"featureType": [
-				"MM"
+				"MM_Esp"
 			],
 			"consumes": {
-				"name": "Sorcery Point",
+				"name": "Punto de hechicería",
 				"amount": 2
 			},
 			"entries": [
-				"If you make an attack roll for a spell and miss, you can spend 2 sorcery points to reroll the {@dice d20}, and you must use the new roll.",
-				"You can use Seeking Spell even if you have already used a different Metamagic option during the casting of the spell."
+				"Si realizas una tirada de ataque para un conjuro y fallas, puedes gastar 2 puntos de hechicería para volver a tirar el {@dice d20}, pero tendrás que usar el nuevo resultado.",
+				"Puedes usar Conjuro Buscador aunque ya hayas empleado una opción diferente de Meta magia durante el lanzamiento del conjuro."
 			]
 		},
 		{
-			"name": "Shadow Arrow",
+			"name": "Flecha de Sombras",
 			"source": "XGE-ES",
-			"page": 30,
+			"page": 38,
 			"featureType": [
-				"AS"
+				"AS_Esp"
 			],
 			"consumes": {
-				"name": "Arcane Shot"
+				"name": "Disparo Arcano"
 			},
 			"entries": [
-				"You weave illusion magic into your arrow, causing it to occlude your foe's vision with shadows. The creature hit by the arrow takes an extra {@damage 2d6} psychic damage, and it must succeed on a Wisdom saving throw or be unable to see anything farther than 5 feet away until the start of your next turn.",
-				"The psychic damage increases to {@damage 4d6} when you reach 18th level in this class."
+				"Entretejes magia de ilusión en tu flecha, haciendo que oscurezca la visión de tu rival. La criatura impactada por el proyectil sufre {@damage 2d6} de daño psíquico adicional. Además, deberá tener éxito en una tirada de salvación de Sabiduría o le resultará imposible ver a más de 5 pies de distancia hasta el principio de tu siguiente turno.",
+				"El daño psíquico se incrementa a {@damage 4d6} cuando alcanzas el nivel 18 de esta clase."
 			]
 		},
 		{
-			"name": "Shape the Flowing River",
+			"name": "Moldear el Río que Fluye",
 			"source": "PHB-ES",
-			"page": 81,
+			"page": 107,
 			"featureType": [
-				"ED"
+				"ED_Esp"
 			],
 			"entries": [
-				"As an action, you can spend 1 ki point to choose an area of ice or water no larger than 30 feet on a side within 120 feet of you. You can change water to ice within the area and vice versa, and you can reshape ice in the area in any manner you choose. You can raise or lower the ice's elevation, create or fill in a trench, erect or flatten a wall, or form a pillar. The extent of any such changes can't exceed half the area's largest dimension. For example, if you affect a 30-foot square, you can create a pillar up to 15 feet high. raise or lower the square's elevation by up to 15 feet, dig a trench up to 15 feet deep, and so on. You can't shape the ice to trap or injure a creature in the area."
+				"Como acción, puedes gastar 1 punto de ki y designar una zona de agua o hielo (ninguno de sus lados puede ser mayor de 30 pies) a 120 pies o menos de ti. Eres capaz de transformar el agua en hielo (y viceversa) en el interior de esa zona, así como dar al hielo la forma que desees: puedes subir o bajar su elevación, crear o llenar una zanja, construir o derribar un muro o crear un pilar. La magnitud de estos cambios no puede exceder la mitad de la mayor de las dimensiones del área. De esta manera, si afectas a un cuadrado de 30 pies de lado, podrías crear un pilar de hasta 15 pies de altura, subir o bajar la elevación del cuadrado hasta 15 pies, cavar una zanja de 15 pies de profundidad, etc. No puedes dar forma al hielo de tal forma que atrape o dañe a una criatura que se encuentre en la zona."
 			]
 		},
 		{
-			"name": "Shroud of Shadow",
+			"name": "Sudario de Sombras",
 			"source": "XGE-ES",
-			"page": 57,
+			"page": 21,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 15,
 						"class": {
-							"name": "Warlock"
+							"name": "Brujo",
+							"source": "PHB-ES"
 						}
 					}
 				}
@@ -2947,29 +2914,30 @@
 				{
 					"innate": {
 						"_": [
-							"invisibility"
+							"invisibilidad|PHB-ES"
 						]
 					}
 				}
 			],
 			"entries": [
-				"You can cast {@spell invisibility} at will, without expending a spell slot."
+				"Puedes lanzar {@spell invisibilidad|PHB-ES} a voluntad, sin utilizar un espacio de conjuro."
 			]
 		},
 		{
-			"name": "Sign of Ill Omen",
+			"name": "Marca del Mal Augurio",
 			"source": "PHB-ES",
-			"page": 111,
+			"page": 62,
 			"srd": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 5,
 						"class": {
-							"name": "Warlock"
+							"name": "Brujo",
+							"source": "PHB-ES"
 						}
 					}
 				}
@@ -2980,7 +2948,7 @@
 						"_": {
 							"daily": {
 								"1e": [
-									"bestow curse"
+									"imponer maldición|PHB-ES"
 								]
 							}
 						}
@@ -2988,39 +2956,39 @@
 				}
 			],
 			"entries": [
-				"You can cast {@spell bestow curse} once using a warlock spell slot. You can't do so again until you finish a long rest."
+				"Puedes lanzar {@spell imponer maldición|PHB-ES} una vez utilizando un espacio de conjuro de brujo. Para volver a hacer esto tienes que finalizar primero un descanso largo."
 			]
 		},
 		{
-			"name": "Spell-Refueling Ring",
+			"name": "Anillo de Recarga de Conjuros",
 			"source": "TCE-ES",
 			"page": 23,
 			"featureType": [
-				"AI"
+				"AI_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 6,
 						"class": {
-							"name": "Artificer"
+							"name": "Artífice"
 						}
 					},
 					"item": [
-						"A ring (requires attunement)"
+						"Un anillo (requiere sintonización)"
 					]
 				}
 			],
 			"entries": [
-				"While wearing this ring, the creature can recover one expended spell slot as an action. The recovered slot can be of 3rd level or lower. Once used, the ring can't be used again until the next dawn."
+				"Mientre lleve este anillo, la criatura puede recuperar un espacio de conjuro gastado como acción. El espacio recuperado puede ser de nivel 3 o inferior. Una vez utilizado, el anillo no puede volver a usarse hasta el siguiente amanecer."
 			]
 		},
 		{
-			"name": "Stone Rune",
+			"name": "Runa de Piedra",
 			"source": "TCE-ES",
-			"page": 45,
+			"page": 54,
 			"featureType": [
-				"RN"
+				"RN_Esp"
 			],
 			"senses": [
 				{
@@ -3028,61 +2996,63 @@
 				}
 			],
 			"entries": [
-				"This rune's magic channels the judiciousness associated with stone giants. While wearing or carrying an object inscribed with this rune, you have advantage on Wisdom ({@skill Insight}) checks, and you have {@sense darkvision} out to a range of 120 feet.",
-				"In addition, when a creature you can see ends its turn within 30 feet of you, you can use your reaction to invoke the rune and force the creature to make a Wisdom saving throw. Unless the save succeeds, the creature is {@condition charmed} by you for 1 minute. While {@condition charmed} in this way, the creature has a speed of 0 and is {@condition incapacitated}, descending into a dreamy stupor. The creature repeats the saving throw at the end of each of its turns, ending the effect on a success. Once you invoke this rune, you can't do so again until you finish a short or long rest."
+				"La magia de esta runa canaliza la sensatez habitual de los gigantes de piedra. Mientras vistas o lleves contigo un objeto que tenga grabada esta runa, tendrás ventaja en las pruebas de Sabiduría ({@skill Perspicacia|PHB-ES}) y poseerás {@sense visión en la oscuridad|PHB-ES} hasta 120 pies.",
+				"Además, cuando una criatura que puedas ver termine su turno a 30 pies o menos de ti, podrás usar tu reacción para invocar esta runa y obligar a esa criatura a realizar una tirada de salvación de Sabiduría. Si falla, quedará {@condition hechizado|PHB-ES|hechizada} durante 1 minuto. Mientras esté {@condition hechizado|PHB-ES|hechizada} de esta manera, la criatura tendrá una velocidad de 0 y quedará {@condition incapacitado|PHB-ES|incapacitada}, sumiéndose en un estado de estupor. La criatura repite la tirada de salvación al final de cada uno de sus turnos y, si tiene éxito, se librará del efecto. Cuando invoques esta runa, no podrás volver a hacerlo hasta que finalices un descanso corto o largo."
 			]
 		},
 		{
-			"name": "Storm Rune",
+			"name": "Runa de las Tormentas",
 			"source": "TCE-ES",
-			"page": 45,
+			"page": 55,
 			"featureType": [
-				"RN"
+				"RN_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 7,
 						"class": {
-							"name": "Fighter"
+							"name": "Guerrero",
+							"source": "PHB-ES"
 						},
 						"subclass": {
-							"name": "Rune Knight"
+							"name": "Caballero rúnico",
+							"source": "TCE-ES"
 						}
 					}
 				}
 			],
 			"entries": [
-				"Using this rune, you can glimpse the future like a storm giant seer. While wearing or carrying an object inscribed with this rune, you have advantage on Intelligence ({@skill Arcana}) checks, and you can't be {@quickref Surprise|PHB|3|0|surprised} as long as you aren't {@condition incapacitated}.",
-				"In addition, you can invoke the rune as a bonus action to enter a prophetic state for 1 minute or until you're {@condition incapacitated}. Until the state ends, when you or another creature you can see within 60 feet of you makes an attack roll, a saving throw, or an ability check, you can use your reaction to cause the roll to have advantage or disadvantage. Once you invoke this rune, you can't do so again until you finish a short or long rest."
+				"Esta runa te permite ver el futuro como si fueras un vidente de los gigantes de las tormentas. Mientras vistas o lleves contigo un objeto que tenga grabada esta runa, tendrás ventaja en las pruebas de Inteligencia ({@skill Conocimiento Arcano|PHB-ES}) y no podrán {@book sorprenderte|PHB-ES|9|sorprendido} a menos que estés {@condition incapacitado|PHB-ES}.",
+				"Además, podrás invocar la runa como acción adicional para entrar en un estado profético durante 1 minuto o hasta que quedes {@condition incapacitado|PHB-ES}. Hasta que termine el estado, cuando tú o una criatura que puedas ver a 60 pies o menos de ti haga una tirada de ataque, una tirada de salvación o una prueba de característica, puedes usar tu reacción para hacer que la tirada tenga ventaja o desventaja. Cuando invoques esta runa, no podrás volver a hacerlo hasta que finalices un descanso corto o largo."
 			]
 		},
 		{
-			"name": "Subtle Spell",
+			"name": "Conjuro Sutil",
 			"source": "PHB-ES",
-			"page": 102,
+			"page": 91,
 			"srd": true,
 			"featureType": [
-				"MM"
+				"MM_Esp"
 			],
 			"consumes": {
-				"name": "Sorcery Point"
+				"name": "Punto de hechicería"
 			},
 			"entries": [
-				"When you cast a spell, you can spend 1 sorcery point to cast it without any somatic or verbal components."
+				"Cuando lanzas un conjuro, puedes gastar punto de hechicería para realizarlo sin tener que utilizar componentes somáticos ni verbales."
 			]
 		},
 		{
-			"name": "Superior Technique",
+			"name": "Técnica Superior",
 			"source": "TCE-ES",
-			"page": 41,
+			"page": 53,
 			"isClassFeatureVariant": true,
 			"featureType": [
-				"FS:F"
+				"FS_Esp:F"
 			],
 			"optionalfeatureProgression": [
 				{
-					"name": "Maneuvers",
+					"name": "Maniobras",
 					"featureType": [
 						"MV_Esp:B"
 					],
@@ -3092,8 +3062,8 @@
 				}
 			],
 			"entries": [
-				"You learn one {@filter maneuver|optionalfeatures|feature type=MV:B} of your choice from among those available to the {@class fighter|phb|Battle Master|Battle Master|phb|2-0} archetype. If a maneuver you use requires your target to make a saving throw to resist the maneuver's effects, the saving throw DC equals 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).",
-				"You gain one superiority die, which is a {@dice d6} (this die is added to any superiority dice you have from another source). This die is used to fuel your maneuvers. A superiority die is expended when you use it. You regain your expended superiority dice when you finish a short or long rest."
+				"Aprendes una {@filter maniobra|optionalfeatures|feature type=MV_Esp:B} de tu elección de entre las disponibles para el arquetipo {@class guerrero|PHB-ES|Maestro del Combate|Maestro del Combate|PHB-ES|2-0}. Si una maniobra que usas obliga a tu objetivo a hacer una tirada de salvación para resistir sus efectos, la CD de la tirada de salvación será 8 + tu bonificador por competencia + tu modificador por Fuerza o Destreza (a tu elección).",
+				"Obtienes un dado de supremacía, {@dice 1d6}, que se añade a cualquier cantidad de dados de supremacía que pudieras tener ya. Puedes usar este dado para ejecutar tus maniobras y se gastará cuando lo uses. Recuperas todos los dados de supremacía tras finalizar un descanso corto o largo."
 			]
 		},
 		{
@@ -3111,11 +3081,11 @@
 			]
 		},
 		{
-			"name": "Sweeping Cinder Strike",
+			"name": "Barrido de las Ascuas",
 			"source": "PHB-ES",
-			"page": 81,
+			"page": 107,
 			"featureType": [
-				"ED"
+				"ED_Esp"
 			],
 			"additionalSpells": [
 				{
@@ -3123,7 +3093,7 @@
 						"_": {
 							"resource": {
 								"2": [
-									"burning hands"
+									"manos ardientes|PHB-ES"
 								]
 							}
 						}
@@ -3133,13 +3103,13 @@
 				}
 			],
 			"entries": [
-				"You can spend 2 ki points to cast {@spell burning hands}."
+				"Puedes gastar 2 puntos de ki para lanzar {@spell manos ardientes|PHB-ES}."
 			]
 		},
 		{
-			"name": "Tactical Assessment",
+			"name": "Evaluación Táctica",
 			"source": "TCE-ES",
-			"page": 42,
+			"page": 53,
 			"isClassFeatureVariant": true,
 			"featureType": [
 				"MV_Esp:B"
@@ -3148,16 +3118,16 @@
 				"name": "Dado de supremacía"
 			},
 			"entries": [
-				"When you make an Intelligence ({@skill Investigation}), an Intelligence ({@skill History}), or a Wisdom ({@skill Insight}) check, you can expend one superiority die and add the superiority die to the ability check."
+				"Cuando haces una prueba de Inteligencia ({@skill Investigación|PHB-ES}), Inteligencia ({@skill Historia|PHB-ES}) o Sabiduría ({@skill Perspicacia|PHB-ES}), puedes gastar un dado de supremacía y añadirlo a la prueba de característica."
 			]
 		},
 		{
-			"name": "Thief of Five Fates",
+			"name": "Ladrón de los Cinco Destinos",
 			"source": "PHB-ES",
-			"page": 111,
+			"page": 61,
 			"srd": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"additionalSpells": [
 				{
@@ -3165,7 +3135,7 @@
 						"_": {
 							"daily": {
 								"1e": [
-									"bane"
+									"perdición|PHB-ES"
 								]
 							}
 						}
@@ -3173,96 +3143,99 @@
 				}
 			],
 			"entries": [
-				"You can cast {@spell bane} once using a warlock spell slot. You can't do so again until you finish a long rest."
+				"Puedes lanzar {@spell perdición|PHB-ES} una vez utilizando un espacio de conjuro de brujo. Para volver a hacer esto tienes que finalizar primero un descanso largo."
 			]
 		},
 		{
-			"name": "Thirsting Blade",
+			"name": "Filo Sediento",
 			"source": "PHB-ES",
-			"page": 111,
+			"page": 61,
 			"srd": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
-					"pact": "Blade",
+					"pact": "Pacto del Filo",
 					"level": {
 						"level": 5,
 						"class": {
-							"name": "Warlock"
+							"name": "Brujo",
+							"source": "PHB-ES"
 						}
 					}
 				}
 			],
 			"entries": [
-				"You can attack with your pact weapon twice, instead of once, whenever you take the {@action Attack} action on your turn."
+				"Puedes atacar con tu arma de pacto dos veces, en lugar de una, cuando realices una acción de {@action Atacar|PHB-ES} durante tu turno."
 			]
 		},
 		{
-			"name": "Thrown Weapon Fighting",
+			"name": "Combate con Armas Arrojadizas",
 			"source": "TCE-ES",
-			"page": 42,
+			"page": 47,
 			"isClassFeatureVariant": true,
 			"featureType": [
-				"FS:F",
-				"FS:R"
+				"FS_Esp:F",
+				"FS_Esp:R"
 			],
 			"entries": [
-				"You can draw a weapon that has the thrown property as part of the attack you make with the weapon.",
-				"In addition, when you hit with a ranged attack using a thrown weapon, you gain a +2 bonus to the damage roll."
+				"Puedes desenvainar un arma que tenga la propiedad \"arrojadiza\" como parte del ataque que realizas con el arma.",
+				"Además, cuando impactas con un ataque a distancia con un arma arrojadiza, obtienes un bonificador de +2 a la tirada de daño."
 			]
 		},
 		{
-			"name": "Tomb of Levistus",
+			"name": "Tumba de Levistus",
 			"source": "XGE-ES",
-			"page": 57,
+			"page": 21,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 5,
 						"class": {
-							"name": "Warlock"
+							"name": "Brujo",
+							"source": "PHB-ES"
 						}
 					}
 				}
 			],
 			"entries": [
-				"As a reaction when you take damage, you can entomb yourself in ice, which melts away at the end of your next turn. You gain 10 temporary hit points per warlock level, which take as much of the triggering damage as possible. Immediately after you take the damage, you gain vulnerability to fire damage, your speed is reduced to 0, and you are {@condition incapacitated}. These effects, including any remaining temporary hit points, all end when the ice melts.",
-				"Once you use this invocation, you can't use it again until you finish a short or long rest."
+				"Como reacción cuando recibes daño, puedes encerrarte en un bloque de hielo, que se derretirá al final de tu próximo turno. Obtienes 10 puntos de golpe temporales por cada nivel de brujo, que absorben todo el daño que sea posible del ataque. Inmediatamente después de recibir el daño, te vuelves vulnerable al daño de fuego, tu velocidad se reduce a 0 y quedas {@condition incapacitado|PHB-ES}. Estos efectos, incluyendo cualesquiera puntos de golpe temporales que quedaran, terminan cuando el hielo se derrita.",
+				"Una vez utilizada esta invocación, deberás terminar un descanso corto o largo para poder volver a usarla."
 			]
 		},
 		{
-			"name": "Transmuted Spell",
+			"name": "Conjuro Transmutado",
 			"source": "TCE-ES",
-			"page": 66,
+			"page": 59,
 			"isClassFeatureVariant": true,
 			"featureType": [
-				"MM"
+				"MM_Esp"
 			],
 			"consumes": {
-				"name": "Sorcery Point"
+				"name": "Punto de hechicería"
 			},
 			"entries": [
-				"When you cast a spell that deals a type of damage from the following list, you can spend 1 sorcery point to change that damage type to one of the other listed types: acid, cold, fire, lightning, poison, thunder."
+				"Cuando lances un conjuro que inflija un tipo de daño de la siguiente lista, puedes gastar 1 punto de hechicería para cambiar ese tipo de daño a uno de los otros tipos indicados: ácido, frío, fuego, relámpago, veneno y trueno."
 			]
 		},
 		{
-			"name": "Trickster's Escape",
+			"name": "Huida Sagaz",
 			"source": "XGE-ES",
-			"page": 57,
+			"page": 21,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 7,
 						"class": {
-							"name": "Warlock"
+							"name": "Brujo",
+							"source": "PHB-ES"
 						}
 					}
 				}
@@ -3273,7 +3246,7 @@
 						"_": {
 							"daily": {
 								"1e": [
-									"freedom of movement"
+									"libertad de movimiento|PHB-ES"
 								]
 							}
 						}
@@ -3281,7 +3254,7 @@
 				}
 			],
 			"entries": [
-				"You can cast {@spell freedom of movement} once on yourself without expending a spell slot. You regain the ability to do so when you finish a long rest."
+				"Puedes lanzar {@spell libertad de movimiento|PHB-ES} una vez sobre ti mismo sin utilizar un espacio de conjuro. Recuperas la capacidad para hacerlo tras finalizar un descanso largo."
 			]
 		},
 		{
@@ -3299,21 +3272,21 @@
 			]
 		},
 		{
-			"name": "Twinned Spell",
+			"name": "Conjuro Gemelo",
 			"source": "PHB-ES",
-			"page": 102,
+			"page": 91,
 			"srd": true,
 			"featureType": [
-				"MM"
+				"MM_Esp"
 			],
 			"consumes": {
-				"name": "Sorcery Point",
+				"name": "Punto de hechicería",
 				"amountMin": 1,
 				"amountMax": 9
 			},
 			"entries": [
-				"When you cast a spell that targets only one creature and doesn't have a range of self, you can spend a number of sorcery points equal to the spell's level to target a second creature in range with the same spell (1 sorcery point if the spell is a cantrip).",
-				"To be eligible, a spell must be incapable of targeting more than one creature at the spell's current level. For example, {@spell magic missile} and {@spell scorching ray} aren't eligible, but {@spell ray of frost} and {@spell chromatic orb} are."
+				"Cuando lanzas un conjuro que tiene como objetivo a una sola criatura y no posee un alcance de lanzador, puedes gastar tantos puntos de hechicería como el nivel del conjuro para elegir también como objetivo del mismo conjuro a una segunda criatura dentro del alcance (1 punto de hechicería si el conjuro es un truco).",
+				"Para que un conjuro pueda beneficiarse de esta opción, este debe ser incapaz de escoger más de un objetivo al nivel al que lo lanzas. Así, {@spell proyectil mágico|PHB-ES} y {@spell rayo abrasador|PHB-ES} no podrían verse afectados por Conjuro Gemelo, pero {@spell rayo de escarcha|PHB-ES} y {@spell orbe cromático|PHB-ES} sí."
 			]
 		},
 		{
@@ -3341,43 +3314,44 @@
 			]
 		},
 		{
-			"name": "Unarmed Fighting",
+			"name": "Combate sin Armas",
 			"source": "TCE-ES",
-			"page": 42,
+			"page": 52,
 			"isClassFeatureVariant": true,
 			"featureType": [
-				"FS:F"
+				"FS_Esp:F"
 			],
 			"entries": [
-				"Your unarmed strikes can deal bludgeoning damage equal to {@damage 1d6} + your Strength modifier on a hit. If you aren't wielding any weapons or a {@item shield|phb} when you make the attack roll, the {@damage d6} becomes a {@damage d8}.",
-				"At the start of each of your turns, you can deal {@damage 1d4} bludgeoning damage to one creature {@condition grappled} by you."
+				"Al impactar, tus ataques sin armas causan un daño contundente igual a {@damage 1d6} + tu modificador por Fuerza. Si al hacer la tirada de ataque no estás empuñando armas ni un {@item escudo|PHB-ES}, el {@damage d6} se convierte en {@damage 1d8}.",
+				"Al comienzo de cada uno de tus turnos, puedes infligir {@damage 1d4} de daño contundente a una criatura a la que tengas {@condition agarrado|PHB-ES|agarrada}."
 			]
 		},
 		{
-			"name": "Unbroken Air",
+			"name": "Puño del Aire Inquebrantable",
 			"source": "PHB-ES",
-			"page": 81,
+			"page": 107,
 			"featureType": [
-				"ED"
+				"ED_Esp"
 			],
 			"entries": [
-				"You can create a blast of compressed air that strikes like a mighty fist. As an action, you can spend 2 ki points and choose a creature within 30 feet of you. That creature must make a Strength saving throw. On a failed save, the creature takes {@damage 3d10} bludgeoning damage, plus an extra {@damage 1d10} bludgeoning damage for each additional ki point you spend, and you can push the creature up to 20 feet away from you and knock it {@condition prone}. On a successful save, the creature takes half as much damage, and you don't push it or knock it {@condition prone}."
+				"Puedes crear un estallido de aire comprimido que golpea como si de un fuerte puño se tratara. Como acción, puedes gastar 2 puntos de ki y escoger a una criatura a 30 pies o menos de ti, que deberá hacer una tirada de salvación de Fuerza. Si falla la tirada, la criatura sufrirá {@dice 3d10} de daño contundente, además de otros {@dice 1d10} de daño contundente adicionales por cada punto de ki adicional que inviertas, y podrás empujarla hasta 20 pies en dirección contraria a ti y {@condition Derribado|PHB-ES|derribarla}. Si tiene éxito, la criatura solo recibirá la mitad de este daño y no será empujada ni {@condition Derribado|PHB-ES|derribada}."
 			]
 		},
 		{
-			"name": "Undying Servitude",
+			"name": "Servidumbre Eterna",
 			"source": "TCE-ES",
-			"page": 71,
+			"page": 31,
 			"isClassFeatureVariant": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 5,
 						"class": {
-							"name": "Warlock"
+							"name": "Brujo",
+							"source": "PHB-ES"
 						}
 					}
 				}
@@ -3388,7 +3362,7 @@
 						"_": {
 							"daily": {
 								"1e": [
-									"animate dead"
+									"animar a los muertos|PHB-ES"
 								]
 							}
 						}
@@ -3396,23 +3370,24 @@
 				}
 			],
 			"entries": [
-				"You can cast {@spell animate dead} without using a spell slot. Once you do so, you can't cast it in this way again until you finish a long rest."
+				"Puedes lanzar {@spell animar a los muertos|PHB-ES} sin gastar un espacio de conjuro. Una vez lo lances, no podrás volver a hacerlo hasta que finalices un descanso largo."
 			]
 		},
 		{
-			"name": "Visions of Distant Realms",
+			"name": "Visiones de Reinos Remotos",
 			"source": "PHB-ES",
-			"page": 111,
+			"page": 62,
 			"srd": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 15,
 						"class": {
-							"name": "Warlock"
+							"name": "Brujo",
+							"source": "PHB-ES"
 						}
 					}
 				}
@@ -3421,59 +3396,61 @@
 				{
 					"innate": {
 						"_": [
-							"arcane eye"
+							"ojo arcano|PHB-ES"
 						]
 					}
 				}
 			],
 			"entries": [
-				"You can cast {@spell arcane eye} at will, without expending a spell slot."
+				"Puedes lanzar {@spell ojo arcano|PHB-ES} a voluntad, sin tener que gastar un espacio de conjuro."
 			]
 		},
 		{
-			"name": "Voice of the Chain Master",
+			"name": "Voz del Amo de la Cadena",
 			"source": "PHB-ES",
-			"page": 111,
+			"page": 62,
 			"srd": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
-					"pact": "Chain"
+					"pact": "Pacto de la Cadena"
 				}
 			],
 			"entries": [
-				"You can communicate telepathically with your familiar and perceive through your familiar's senses as long as you are on the same plane of existence. Additionally, while perceiving through your familiar's senses, you can also speak through your familiar in your own voice, even if your familiar is normally incapable of speech."
+				"Puedes comunicarte telepáticamente con tu familiar y percibir el mundo a través de sus sentidos siempre que los dos estéis en el mismo plano de existencia. Además, mientras estés percibiendo por medio de los sentidos de tu familiar también podrás hablar a través de él con tu propia voz, incluso aunque tu familiar sea incapaz de hablar normalmente."
 			]
 		},
 		{
-			"name": "Water Whip",
+			"name": "Látigo de Agua",
 			"source": "PHB-ES",
-			"page": 81,
+			"page": 107,
 			"featureType": [
-				"ED"
+				"ED_Esp"
 			],
 			"entries": [
-				"You can spend 2 ki points as an action to create a whip of water that shoves and pulls a creature to unbalance it. A creature that you can see that is within 30 feet of you must make a Dexterity saving throw. On a failed save, the creature takes {@damage 3d10} bludgeoning damage, plus an extra {@damage 1d10} bludgeoning damage for each additional ki point you spend, and you can either knock it {@condition prone} or pull it up to 25 feet closer to you. On a successful save, the creature takes half as much damage, and you don't pull it or knock it {@condition prone}."
+				"Como acción, puedes gastar 2 puntos de ki para crear un látigo de agua que empuja y tira de una criatura para desequilibrarla. Una criatura de tu elección que puedas ver y se encuentre a 30 pies o menos de ti debe hacer una tirada de salvación de Destreza. Si falla la tirada, la criatura sufrirá {@dice 3d10} de daño contundente, además de otros {@dice 1d10} de daño contundente adicionales por cada punto de ki adicional que inviertas, y podrás elegir entre {@condition Derribado|PHB-ES|derribarla} o tirar de ella hasta 25 pies directamente hacia ti. Si tiene éxito, la criatura solo recibirá la mitad de este daño y no será {@condition Derribado|PHB-ES|derribada} ni podrás tirar de ella."
 			]
 		},
 		{
-			"name": "Wave of Rolling Earth",
+			"name": "Ola de la Tierra Ondulante",
 			"source": "PHB-ES",
-			"page": 81,
+			"page": 107,
 			"featureType": [
-				"ED"
+				"ED_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 17,
 						"class": {
-							"name": "Monk"
+							"name": "Monje",
+							"source": "PHB-ES"
 						},
 						"subclass": {
-							"name": "Four Elements"
+							"name": "Cuatro Elementos",
+							"source": "PHB-ES"
 						}
 					}
 				}
@@ -3484,7 +3461,7 @@
 						"_": {
 							"resource": {
 								"6": [
-									"wall of stone"
+									"muro de piedra|PHB-ES"
 								]
 							}
 						}
@@ -3494,23 +3471,24 @@
 				}
 			],
 			"entries": [
-				"You can spend 6 ki points to cast {@spell wall of stone}."
+				"Puedes gastar 6 puntos de ki para lanzar {@spell muro de piedra|PHB-ES}."
 			]
 		},
 		{
-			"name": "Whispers of the Grave",
+			"name": "Susurros del Sepulcro",
 			"source": "PHB-ES",
-			"page": 111,
+			"page": 62,
 			"srd": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 9,
 						"class": {
-							"name": "Warlock"
+							"name": "Brujo",
+							"source": "PHB-ES"
 						}
 					}
 				}
@@ -3519,35 +3497,36 @@
 				{
 					"innate": {
 						"_": [
-							"speak with dead"
+							"hablar con los muertos|PHB-ES"
 						]
 					}
 				}
 			],
 			"entries": [
-				"You can cast {@spell speak with dead} at will, without expending a spell slot."
+				"Puedes lanzar {@spell hablar con los muertos|PHB-ES} a voluntad, sin tener que gastar un espacio de conjuro."
 			]
 		},
 		{
-			"name": "Witch Sight",
+			"name": "Visión Bruja",
 			"source": "PHB-ES",
-			"page": 111,
+			"page": 62,
 			"srd": true,
 			"featureType": [
-				"EI"
+				"EI_Esp"
 			],
 			"prerequisite": [
 				{
 					"level": {
 						"level": 15,
 						"class": {
-							"name": "Warlock"
+							"name": "Brujo",
+							"source": "PHB-ES"
 						}
 					}
 				}
 			],
 			"entries": [
-				"You can see the true form of any shapechanger or creature concealed by illusion or transmutation magic while the creature is within 30 feet of you and within line of sight."
+				"Puedes contemplar la verdadera forma de cualquier cambiaformas o criatura oculta tras un efecto mágico de ilusionismo o transmutación, siempre y cuando esta se encuentre a 30 pies o menos de ti y en tu línea de visión."
 			]
 		}
 	]
