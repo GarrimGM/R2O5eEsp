@@ -43,7 +43,7 @@
 				"armor": [
 					"light",
 					"medium",
-					"{@item shield|phb|shields}"
+					"{@item escudo|PHB-ES|escudos}"
 				],
 				"weapons": [
 					"simple"
@@ -66,37 +66,37 @@
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"default": [
-					"(a) a {@item mace|phb} or (b) a {@item warhammer|phb} (if proficient)",
-					"(a) {@item scale mail|phb}, (b) {@item leather armor|phb}, or (c) {@item chain mail|phb} (if proficient)",
-					"(a) a {@item light crossbow|phb} and {@item Crossbow Bolts (20)|phb|20 bolts} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
-					"(a) a {@item priest's pack|phb} or (b) an {@item explorer's pack|phb}",
-					"A {@item shield|phb} and a {@item holy symbol|phb}"
+					"(a) una {@item maza|PHB-ES} o (b) un {@item martillo de guerra|PHB-ES} (si eres competente)",
+					"(a) {@item cota de escamas|PHB-ES}, (b) {@item armadura de cuero|PHB-ES} o (c) {@item cota de malla|PHB-ES} (si eres competente)",
+					"(a) una {@item ballesta ligera|PHB-ES} y {@item Virotes de ballesta (20)|PHB-ES|20 virotes} o (b) cualquier {@filter arma sencilla|items|source=PHB-ES|category=basic|type=simple weapon}",
+					"(a) un {@item paquete de sacerdote|PHB-ES} o (b) un {@item paquete de explorador|PHB-ES}",
+					"Un {@item escudo|PHB-ES} y un {@item símbolo sagrado|PHB-ES}"
 				],
 				"goldAlternative": "{@dice 5d4 × 10|5d4 × 10|Starting Gold}",
 				"defaultData": [
 					{
 						"a": [
-							"mace|phb"
+							"maza|PHB-ES"
 						],
 						"b": [
-							"warhammer|phb"
+							"martillo de guerra|PHB-ES"
 						]
 					},
 					{
 						"a": [
-							"scale mail|phb"
+							"cota de escamas|PHB-ES"
 						],
 						"b": [
-							"leather armor|phb"
+							"armadura de cuero|PHB-ES"
 						],
 						"c": [
-							"chain mail|phb"
+							"cota de malla|PHB-ES"
 						]
 					},
 					{
 						"a": [
-							"light crossbow|phb",
-							"Crossbow Bolts (20)|phb"
+							"ballesta ligera|PHB-ES",
+							"virotes de ballesta (20)|PHB-ES"
 						],
 						"b": [
 							{
@@ -106,16 +106,16 @@
 					},
 					{
 						"a": [
-							"priest's pack|phb"
+							"paquete de sacerdote|PHB-ES"
 						],
 						"b": [
-							"explorer's pack|phb"
+							"paquete de explorador|PHB-ES"
 						]
 					},
 					{
 						"_": [
-							"shield|phb",
-							"holy symbol|phb"
+							"escudo|PHB-ES",
+							"símbolo sagrado|PHB-ES"
 						]
 					}
 				]
@@ -128,14 +128,14 @@
 					"armor": [
 						"light",
 						"medium",
-						"{@item shield|phb|shields}"
+						"{@item escudo|PHB-ES|escudos}"
 					]
 				}
 			},
 			"classTableGroups": [
 				{
 					"colLabels": [
-						"{@filter Cantrips Known|spells|level=0|class=Clérigo (PHB-ES)}"
+						"{@filter Trucos conocidos|spells|level=0|class=Clérigo (PHB-ES)}"
 					],
 					"rows": [
 						[
@@ -201,7 +201,7 @@
 					]
 				},
 				{
-					"title": "Spell Slots per Spell Level",
+					"title": "Espacios de conjuro por cada nivel de conjuro",
 					"colLabels": [
 						"{@filter 1|spells|level=1|class=Clérigo (PHB-ES)}",
 						"{@filter 2|spells|level=2|class=Clérigo (PHB-ES)}",
@@ -438,100 +438,100 @@
 				}
 			],
 			"classFeatures": [
-				"Spellcasting|Clérigo|PHB-ES|1",
+				"Lanzamiento de Conjuros|Clérigo|PHB-ES|1",
 				{
-					"classFeature": "Divine Domain|Clérigo|PHB-ES|1",
+					"classFeature": "Dominio Divino|Clérigo|PHB-ES|1",
 					"gainSubclassFeature": true
 				},
 				{
-					"classFeature": "Channel Divinity|Clérigo|PHB-ES|2",
-					"tableDisplayName": "Channel Divinity (1/rest)"
+					"classFeature": "Canalizar Divinidad|Clérigo|PHB-ES|2",
+					"tableDisplayName": "Canalizar Divinidad (1/descanso)"
 				},
-				"Channel Divinity: Harness Divine Power|Clérigo|PHB-ES|2|TCE-ES",
+				"Canalizar Divinidad: Servirse del Poder Divino|Clérigo|PHB-ES|2|TCE-ES",
 				{
-					"classFeature": "Divine Domain feature|Clérigo|PHB-ES|2",
+					"classFeature": "Rasgo de Dominio Divino|Clérigo|PHB-ES|2",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Clérigo|PHB-ES|4",
-				"Cantrip Versatility|Clérigo|PHB-ES|4|TCE-ES",
-				"Destroy Undead (CR 1/2)|Clérigo|PHB-ES|5",
+				"Mejora de Característica|Clérigo|PHB-ES|4",
+				"Versatilidad de Trucos|Clérigo|PHB-ES|4|TCE-ES",
+				"Destruir Muertos Vivientes (VD 1/2)|Clérigo|PHB-ES|5",
 				{
-					"classFeature": "Channel Divinity|Clérigo|PHB-ES|6",
-					"tableDisplayName": "Channel Divinity (2/rest)"
+					"classFeature": "Canalizar Divinidad|Clérigo|PHB-ES|6",
+					"tableDisplayName": "Canalizar Divinidad (2/descanso)"
 				},
 				{
-					"classFeature": "Divine Domain feature|Clérigo|PHB-ES|6",
+					"classFeature": "Rasgo de Dominio Divino|Clérigo|PHB-ES|6",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Clérigo|PHB-ES|8",
-				"Destroy Undead (CR 1)|Clérigo|PHB-ES|8",
+				"Mejora de Característica|Clérigo|PHB-ES|8",
+				"Destruir Muertos Vivientes (VD 1)|Clérigo|PHB-ES|8",
 				{
-					"classFeature": "Divine Domain feature|Clérigo|PHB-ES|8",
+					"classFeature": "Rasgo de Dominio Divino|Clérigo|PHB-ES|8",
 					"gainSubclassFeature": true
 				},
-				"Divine Intervention|Clérigo|PHB-ES|10",
-				"Destroy Undead (CR 2)|Clérigo|PHB-ES|11",
-				"Ability Score Improvement|Clérigo|PHB-ES|12",
-				"Destroy Undead (CR 3)|Clérigo|PHB-ES|14",
-				"Ability Score Improvement|Clérigo|PHB-ES|16",
-				"Destroy Undead (CR 4)|Clérigo|PHB-ES|17",
+				"Intercesión Divina|Clérigo|PHB-ES|10",
+				"Destruir Muertos Vivientes (VD 2)|Clérigo|PHB-ES|11",
+				"Mejora de Característica|Clérigo|PHB-ES|12",
+				"Destruir Muertos Vivientes (VD 3)|Clérigo|PHB-ES|14",
+				"Mejora de Característica|Clérigo|PHB-ES|16",
+				"Destruir Muertos Vivientes (VD 4)|Clérigo|PHB-ES|17",
 				{
-					"classFeature": "Divine Domain feature|Clérigo|PHB-ES|17",
+					"classFeature": "Rasgo de Dominio Divino|Clérigo|PHB-ES|17",
 					"gainSubclassFeature": true
 				},
 				{
-					"classFeature": "Channel Divinity|Clérigo|PHB-ES|18",
-					"tableDisplayName": "Channel Divinity (3/rest)"
+					"classFeature": "Canalizar Divinidad|Clérigo|PHB-ES|18",
+					"tableDisplayName": "Canalizar Divinidad (3/descanso)"
 				},
-				"Ability Score Improvement|Clérigo|PHB-ES|19",
-				"Divine Intervention Improvement|Clérigo|PHB-ES|20"
+				"Mejora de Característica|Clérigo|PHB-ES|19",
+				"Intercesión Divina Mejorada|Clérigo|PHB-ES|20"
 			],
-			"subclassTitle": "Divine Domain",
+			"subclassTitle": "Dominio divino",
 			"fluff": [
 				{
 					"name": "Clérigo",
 					"type": "section",
 					"entries": [
-						"Arms and eyes upraised toward the sun and a prayer on his lips, an elf begins to glow with an inner light that spills out to heal his battle-worn companions.",
-						"Chanting a song of glory, a dwarf swings his axe in wide swaths to cut through the ranks of orcs arrayed against him, shouting praise to the gods with every foe's fall.",
-						"Calling down a curse upon the forces of undeath, a human lifts her holy symbol as light pours from it to drive back the zombies crowding in on her companions.",
-						"Clerics are intermediaries between the mortal world and the distant planes of the gods. As varied as the gods they serve, clerics strive to embody the handiwork of their deities. No ordinary priest, a cleric is imbued with divine magic.",
+						"Con los brazos en alto, mirando hacia el sol y con una oración en sus labios, una elfa refulge con una luz interior que se expande y sana a sus compañeros, agotados por el combate.",
+						"Mientras entona una canción de gloria, un enano gira su hacha en grandes arcos que hacen mella en las filas de orcos que forman contra él, proclamando a gritos su alabanza a los dioses con cada enemigo caído.",
+						"Invocando una maldición sobre las hordas de muertos vivientes, una humana alza su símbolo sagrado, del que emana una luz que hace retroceder a los zombis que se agolpan sobre sus compañeros.",
+						"Los clérigos son intermediarios entre el mundo mortal y los remotos planos de los dioses. Tan variopintos como las deidades a las que sirven, estos se esfuerzan por personificar las obras de sus dioses. Un clérigo no es un sacerdote corriente, pues está imbuido de magia divina.",
 						{
 							"type": "entries",
-							"name": "Healers and Warriors",
+							"name": "Sanadores y guerreros",
 							"entries": [
-								"Divine magic, as the name suggests, is the power of the gods, flowing from them into the world. Clerics are conduits for that power, manifesting it as miraculous effects. The gods don't grant this power to everyone who seeks it, but only to those chosen to fulfill a high calling.",
-								"Harnessing divine magic doesn't rely on study or training. A cleric might learn formulaic prayers and ancient rites, but the ability to cast cleric spells relies on devotion and an intuitive sense of a deity's wishes.",
-								"Clerics combine the helpful magic of healing and inspiring their allies with spells that harm and hinder foes. They can provoke awe and dread, lay curses of plague or poison, and even call down flames from heaven to consume their enemies. For those evildoers who will benefit most from a mace to the head, clerics depend on their combat training to let them wade into melee with the power of the gods on their side."
+								"La magia divina, como su propio nombre indica, es el poder de los dioses, que fluye de ellos hasta el mundo. Los clérigos son los catalizadores de dicho poder, que se manifiesta en forma de efectos milagrosos. Los dioses no conceden este poder a todo el que lo busca, sino únicamente a los elegidos para cumplir con una vocación excelsa.",
+								"Dominar la magia divina no depende del estudio o del entrenamiento; un clérigo podría memorizar de forma literal oraciones y ritos antiguos, pero la capacidad de lanzar conjuros clericales yace en la devoción y en una comprensión intuitiva de los deseos de la deidad.",
+								"Los clérigos combinan la útil magia curativa y la capacidad de inspirar a sus aliados con conjuros que dañan y obstaculizan a sus enemigos. Pueden infundir admiración y terror, maldecir con plagas y venenos e incluso hacer descender llamas desde los cielos para que consuman a sus enemigos. Y para tratar con aquellos maleantes que se merecen un mazazo en la cabeza, los clérigos recurren a su entrenamiento marcial, que les permite entrar en combate con el poder de los dioses a su lado."
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Divine Agents",
+							"name": "Agentes divinos",
 							"entries": [
-								"Not every acolyte or officiant at a temple or shrine is a cleric. Some priests are called to a simple life of temple service, carrying out their gods' will through prayer and sacrifice, not by magic and strength of arms. In some cities, priesthood amounts to a political office, viewed as a stepping stone to higher positions of authority and involving no communion with a god at all. True clerics are rare in most hierarchies.",
-								"When a cleric takes up an adventuring life, it is usually because his or her god demands it. Pursuing the goals of the gods often involves braving dangers beyond the walls of civilization, smiting evil or seeking holy relics in ancient tombs. Many clerics are also expected to protect their deities' worshipers, which can mean fighting rampaging orcs, negotiating peace between warring nations, or sealing a portal that would allow a demon prince to enter the world.",
-								"Most adventuring clerics maintain some connection to established temples and orders of their faiths. A temple might ask for a cleric's aid, or a high priest might be in a position to demand it."
+								"No todos los acólitos y celebrantes de un templo o santuario son clérigos. Algunos sacerdotes son llamados a vivir una vida sencilla de servicio al templo, ejecutando la voluntad de sus dioses a través de la oración y el sacrificio en vez de mediante la magia y la fuerza de las armas. En ciertas ciudades el sacerdocio no es sino un cargo político, un paso previo para alcanzar cargos de mayor autoridad que no implican comunión con deidad alguna. Los auténticos clérigos son raros en la mayoría de las jerarquías.",
+								"Cuando un clérigo se embarca en una vida de aventuras suele ser porque su deidad lo exige. Perseguir los objetivos de los dioses normalmente implica enfrentarse a peligros más allá de las fronteras de la civilización, castigar el mal o buscar reliquias sagradas en tumbas antiguas. También se espera de la mayor parte de clérigos que protejan a los adoradores de sus dioses, lo que puede significar luchar contra invasores orcos, negociar tratados de paz entre naciones en conflicto o sellar un portal que permitiría a un príncipe demonio penetrar en este mundo.",
+								"La mayoría de los clérigos que salen a vivir aventuras mantienen el contacto con los templos y órdenes de su fe. Un templo podría solicitar la ayuda de un clérigo, y un sumo sacerdote incluso estar en situación de exigirla."
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Creating a Cleric",
+							"name": "Creación de un clérigo",
 							"entries": [
-								"As you create a cleric, the most important question to consider is which deity to serve and what principles you want your character to embody. Appendix B includes lists of many of the gods of the multiverse. Check with your DM to learn which deities are in your campaign.",
-								"Once you've chosen a deity, consider your cleric's relationship to that god. Did you enter this service willingly? Or did the god choose you, impelling you into service with no regard for your wishes? How do the temple priests of your faith regard you: as a champion or a troublemaker? What are your ultimate goals? Does your deity have a special task in mind for you? Or are you striving to prove yourself worthy of a great quest?",
+								"Cuando crees un clérigo, las preguntas más importantes que debes hacerte son a qué deidad sirve tu personaje y qué principios quieres que encarne. El apéndice B contiene una lista con muchos de los dioses del multiverso. Consulta con tu DM qué deidades forman parte de vuestra campaña.",
+								"Una vez hayas escogido un dios, piensa qué relación tiene tu personaje con él. ¿Comenzó a servirle voluntariamente o le escogió el dios a él, forzándole a una vida de servicio sin tener en consideración sus deseos? ¿Cómo te ven los sacerdotes de los templos de tu fe, como un héroe o como una fuente de problemas? ¿Cuáles son tus objetivos finales? ¿Ha pensado tu dios en una tarea especial para ti? ¿O intentas demostrar que eres digno de una misión importante?",
 								{
 									"type": "entries",
-									"name": "Quick Build",
+									"name": "Creación rápida",
 									"entries": [
-										"You can make a cleric quickly by following these suggestions. First, Wisdom should be your highest ability score, followed by Strength or Constitution. Second, choose the {@background acolyte} background."
+										"Para crear un clérigo de forma rápida sugerimos lo siguiente. Para empezar, Sabiduría debería ser tu característica más alta, seguida de Fuerza o Constitución. A continuación, elige el trasfondo \"{@background acólito|PHB-ES}\"."
 									]
 								}
 							]
 						}
 					],
-					"source": "PHB",
-					"page": 56
+					"source": "PHB-ES",
+					"page": 63
 				},
 				{
 					"type": "section",
@@ -539,25 +539,25 @@
 						{
 							"type": "quote",
 							"entries": [
-								"To become a cleric is to become a messenger of the gods. The power the divine offers is great, but it always comes with tremendous responsibility."
+								"Hacerse clérigo es convertirse en mensajero de los dioses. El poder que ofrece lo divino es impresionante, pero también conlleva una enorme responsabilidad."
 							],
-							"by": "Riggby the patriarch"
+							"by": "Riggby el Patriarcal"
 						},
-						"Almost all the folk in the world who revere a deity live their lives without ever being directly touched by a divine being. As such, they can never know what it feels like to be a cleric—someone who is not only a devout worshiper, but who has also been invested with a measure of a deity's power.",
-						"The question has long been debated: Does a mortal become a cleric as a consequence of deep devotion to one's deity, thereby attracting the god's favor? Or is it the deity who sees the potential in a person and calls that individual into service? Ultimately, perhaps, the answer doesn't matter. However clerics come into being, the world needs clerics as much as clerics and deities need each other.",
-						"If you're playing a cleric character, the following sections offer ways to add some detail to that character's history and personality.",
+						"Casi todas las personas que adoran a una deidad viven sus vidas sin ser directamente tocados por un ser divino. Así, no pueden saber lo que es ser un clérigo, alguien que no solo es un adorador devoto, sino que también ha sido imbuido con una pizca del poder de ese dios.",
+						"Esta cuestión ha sido debatida largo y tendido: ¿Se convierte el mortal en clérigo como consecuencia de su profunda devoción hacia su deidad, atrayendo de esta manera el favor del dios? ¿O es la divinidad la que ve el potencial de una persona y la llama a su servicio? Al final, quizá, no importe la respuesta. Independientemente de cómo se creen los clérigos, el mundo los necesita tanto como los clérigos y las deidades se necesitan los unos a los otros.",
+						"Si juegas un aventurero clérigo, las siguientes secciones te ofrecen maneras de añadir algo de detalle a la historia y personalidad de ese personaje.",
 						{
 							"type": "entries",
-							"name": "Temple",
+							"name": "Templo",
 							"entries": [
-								"Most clerics start their lives of service as priests in an order, then later realize that they have been blessed by their god with the qualities needed to become a cleric. To prepare for this new duty, candidates typically receive instruction from a cleric of a temple or another place of study devoted to their deity.",
-								"Some temples are cut off from the world so that their occupants can focus on devotions, while other temples open their doors to minister to and heal the masses. What is noteworthy about the temple you studied at?",
+								"La mayoría de los miembros de esta clase comienzan sus vidas como sacerdotes en una orden. Más tarde, se dan cuenta de que han sido bendecidos por su dios con las cualidades necesarias para convertirse en clérigos. Para prepararse para este nuevo deber, normalmente los candidatos reciben entrenamiento de otro miembro de su clase, venido de un templo o de un lugar de estudio similar dedicado a su deidad.",
+								"Algunos santuarios se aíslan del mundo para que sus ocupantes puedan concentrarse en su devoción, mientras que otros abren sus puertas para cuidar y curar a las masas. ¿Qué característica del templo en que estudiaste destaca?",
 								{
 									"type": "table",
-									"caption": "Temple",
+									"caption": "Templos",
 									"colLabels": [
 										"{@dice d6}",
-										"Temple"
+										"Templo"
 									],
 									"colStyles": [
 										"col-1 text-center",
@@ -571,7 +571,7 @@
 													"exact": 1
 												}
 											},
-											"Your temple is said to be the oldest surviving structure built to honor your god."
+											"Se dice que tu templo es la estructura más antigua aún en pie que se construyó en honor de tu dios."
 										],
 										[
 											{
@@ -580,7 +580,7 @@
 													"exact": 2
 												}
 											},
-											"Acolytes of several like-minded deities all received instruction together in your temple."
+											"Acólitos de varias deidades de ideologías similares recibían instrucción en tu templo, todos juntos."
 										],
 										[
 											{
@@ -589,7 +589,7 @@
 													"exact": 3
 												}
 											},
-											"You come from a temple famed for the brewery it operates. Some say you smell like one of its ales."
+											"Vienes de un templo famoso por la cervecería que en el opera. Hay quien dice que hueles como una de sus cervezas."
 										],
 										[
 											{
@@ -598,7 +598,7 @@
 													"exact": 4
 												}
 											},
-											"Your temple is a fortress and a proving ground that trains warrior-priests."
+											"Tu templo es una fortaleza y área de entrenamiento para monjes guerreros."
 										],
 										[
 											{
@@ -607,7 +607,7 @@
 													"exact": 5
 												}
 											},
-											"Your temple is a peaceful, humble place, filled with vegetable gardens and simple priests."
+											"Tu templo es un lugar pacífico y humilde, con monjes sencillos y huertos de vegetales."
 										],
 										[
 											{
@@ -616,21 +616,21 @@
 													"exact": 6
 												}
 											},
-											"You served in a temple in the Outer Planes."
+											"Serviste en un templo en los Planos Exteriores."
 										]
 									]
 								},
 								{
 									"type": "entries",
-									"name": "Keepsake",
+									"name": "Recuerdo",
 									"entries": [
-										"Many clerics have items among their personal gear that symbolize their faith, remind them of their vows, or otherwise help to keep them on their chosen paths. Even though such an item is not imbued with divine power, it is vitally important to its owner because of what it represents.",
+										"Muchos clérigos cuentan entre sus efectos personales con objetos que simbolizan su fe, les recuerdan sus votos o les ayudan de alguna otra manera a mantenerse en el camino elegido. Aunque estos objetos no están imbuidos de poder divino, son de vital importancia para su propietario por lo que representan.",
 										{
 											"type": "table",
-											"caption": "Keepsake",
+											"caption": "Recuerdos",
 											"colLabels": [
 												"{@dice d6}",
-												"Keepsake"
+												"Recuerdo"
 											],
 											"colStyles": [
 												"col-1 text-center",
@@ -644,7 +644,7 @@
 															"exact": 1
 														}
 													},
-													"The finger bone of a saint"
+													"El hueso del dedo de un santo."
 												],
 												[
 													{
@@ -653,7 +653,7 @@
 															"exact": 2
 														}
 													},
-													"A metal-bound book that tells how to hunt and destroy infernal creatures"
+													"Un libro forrado en metal que te ayuda a cazar y destruir criaturas infernales."
 												],
 												[
 													{
@@ -662,7 +662,7 @@
 															"exact": 3
 														}
 													},
-													"A pig's whistle that reminds you of your humble and beloved mentor"
+													"Un silbato para cerdos que te recuerda a tu querido y humilde mentor."
 												],
 												[
 													{
@@ -671,7 +671,7 @@
 															"exact": 4
 														}
 													},
-													"A braid of hair woven from the tail of a unicorn"
+													"Una trenza de pelo de la cola de un unicornio."
 												],
 												[
 													{
@@ -680,7 +680,7 @@
 															"exact": 5
 														}
 													},
-													"A scroll that describes how best to rid the world of necromancers"
+													"Un pergamino que describe cómo librar al mundo de nigromantes."
 												],
 												[
 													{
@@ -689,7 +689,7 @@
 															"exact": 6
 														}
 													},
-													"A runestone said to be blessed by your god"
+													"Una piedra rúnica que se dice fue bendecida por tu dios."
 												]
 											]
 										}
@@ -697,16 +697,16 @@
 								},
 								{
 									"type": "entries",
-									"name": "Secret",
+									"name": "Secreto",
 									"entries": [
-										"No mortal soul is entirely free of second thoughts or doubt. Even a cleric must grapple with dark desires or the forbidden attraction of turning against the teachings of one's deity.",
-										"If you haven't considered this aspect of your character yet, see the table entries for some possibilities, or use them for inspiration. Your deep, dark secret might involve something you did (or are doing), or it could be rooted in the way you feel about the world and your role in it.",
+										"Ningún alma mortal está completamente libre de dudas. Incluso un clérigo debe luchar contra deseos oscuros o la atracción prohibida de lo opuesto a las enseñanzas de su deidad.",
+										"Si no has considerado este aspecto de tu personaje todavía, en la siguiente tabla encontrarás algunas posibilidades, que puedes utilizar o dejar que te sirvan como inspiración para idear algo apropiado. Tu sombrío y profundo secreto puede ser sobre algo que has hecho (o estás haciendo) o puede relacionarse con la manera en que te sientes sobre el mundo y tu papel en él.",
 										{
 											"type": "table",
-											"caption": "Secret",
+											"caption": "Secreto",
 											"colLabels": [
 												"{@dice d6}",
-												"Secret"
+												"Secreto"
 											],
 											"colStyles": [
 												"col-1 text-center",
@@ -720,7 +720,7 @@
 															"exact": 1
 														}
 													},
-													"An imp offers you counsel. You try to ignore the creature, but sometimes its advice is helpful."
+													"Un diablillo te aconseja. Intentas ignorar a la criatura, pero a veces su consejo es de ayuda."
 												],
 												[
 													{
@@ -729,7 +729,7 @@
 															"exact": 2
 														}
 													},
-													"You believe that, in the final analysis, the gods are nothing more than ultrapowerful mortal creatures."
+													"Crees que, al final, los dioses no son nada más que mortales ultrapoderosos."
 												],
 												[
 													{
@@ -738,7 +738,7 @@
 															"exact": 3
 														}
 													},
-													"You acknowledge the power of the gods, but you think that most events are dictated by pure chance."
+													"Aceptas el poder de las deidades, pero crees que la mayoría de acontecimientos vienen dictados por puro azar."
 												],
 												[
 													{
@@ -747,7 +747,7 @@
 															"exact": 4
 														}
 													},
-													"Even though you can work divine magic, you have never truly felt the presence of a divine essence within yourself."
+													"Aunque puedes usar magia divina, nunca has sentido de verdad la presencia de una esencia divina dentro de ti."
 												],
 												[
 													{
@@ -756,7 +756,7 @@
 															"exact": 5
 														}
 													},
-													"You are plagued by nightmares that you believe are sent by your god as punishment for some unknown transgression."
+													"Te asolan pesadillas que crees que tu dios te manda como castigo por alguna transgresión desconocida."
 												],
 												[
 													{
@@ -765,7 +765,7 @@
 															"exact": 6
 														}
 													},
-													"In times of despair, you feel that you are but a plaything of the gods, and you resent their remoteness."
+													"En momentos sin esperanza, sientes que no eres más que un juguete de las deidades, y te molesta su lejanía."
 												]
 											]
 										}
@@ -773,78 +773,78 @@
 								},
 								{
 									"type": "inset",
-									"name": "Serving a Pantheon, Philosophy, or Force",
+									"name": "Servir a un panteón, filosofía o fuerza",
 									"entries": [
-										"The typical cleric is an ordained servant of a particular god and chooses a Divine Domain associated with that deity. The cleric's magic flows from the god or the god's sacred realm, and often the cleric bears a holy symbol that represents that divinity.",
-										"Some clerics, especially in a world like Eberron, serve a whole pantheon, rather than a single deity. In certain campaigns, a cleric might instead serve a cosmic force, such as life or death, or a philosophy or concept, such as love, peace, or one of the nine alignments. Chapter 1 of the Dungeon Master's Guide explores options like these, in the section \"Gods of Your World.\"",
-										"Talk with your DM about the divine options available in your campaign, whether they're gods, pantheons, philosophies, or cosmic forces. Whatever being or thing your cleric ends up serving, choose a Divine Domain that is appropriate for it, and if it doesn't have a holy symbol, work with your DM to design one.",
-										"The cleric's class features often refer to your deity. If you are devoted to a pantheon, cosmic force, or philosophy, your cleric features still work for you as written. Think of the references to a god as references to the divine thing you serve that gives you your magic."
+										"El clérigo típico es un sirviente ordenado de un dios concreto, que elige un Dominio Divino asociado con esa deidad. La magia de los miembros de esta clase procede de la propia divinidad o del reino del dios. Muchas veces los clérigos llevan un símbolo sagrado que representa a esta misma divinidad.",
+										"Algunos clérigos, especialmente en un mundo como Eberron, sirven a todo un panteón. En ciertas campañas, podrían seguir a una fuerza cósmica, como la vida o la muerte, a una filosofía o concepto, como el amor o la paz, o incluso a uno de los nueve alineamientos. El capítulo 1 del Dungeon Master's Guide explora opciones como estas, en el apartado \"Dioses de tu mundo\".",
+										"Habla con tu DM sobre las opciones divinas disponibles en tu campaña, ya sean dioses, panteones, filosofías o fuerzas cósmicas. Sea lo que sea que elija servir tu clérigo, escoge un Dominio Divino que sea apropiado, y si no tiene un símbolo sagrado, diseña uno junto a tu DM.",
+										"Los rasgos de clase del clérigo se referirán muchas veces a tu deidad. Si eres devoto de un panteón, fuerza cósmica o filosofía, estos rasgos seguirán funcionando tal y como están escritos. Piensa en las referencias a dioses como referencias al poder divino que te otorga tu magia."
 									]
 								}
 							]
 						}
 					],
-					"source": "XGE",
-					"page": 17
+					"source": "XGE-ES",
+					"page": 22
 				}
 			]
 		}
 	],
 	"classFeature": [
 		{
-			"name": "Divine Domain",
+			"name": "Dominio Divino",
 			"source": "PHB-ES",
-			"page": 56,
+			"page": 64,
 			"srd": true,
 			"basicRules": true,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
 			"level": 1,
 			"entries": [
-				"Choose one domain related to your deity from the list of available domains. Each domain is detailed in their own feature, and each one provides examples of gods associated with it. Your choice grants you domain spells and other features when you choose it at 1st level. It also grants you additional ways to use Channel Divinity when you gain that feature at 2nd level, and additional benefits at 6th, 8th, and 17th levels.",
+				"Escoge uno de los siguientes dominios, que debe estar relacionado con tu dios: Conocimiento, Engaño, Guerra, Luz, Naturaleza, Tempestad o Vida. Estos dominios están detallados al final de la descripción de esta clase y cada uno de ellos incluye ejemplos de dioses asociados al mismo. Tu elección determinará qué conjuros de dominio y otros rasgos recibes a nivel 1. Además, también te proporcionará formas adicionales de usar Canalizar Divinidad, un rasgo que obtendrás a nivel 2. Por último, te otorgará ventajas específicas a los niveles 6, 8 y 17.",
 				{
 					"type": "entries",
-					"name": "Domain Spells",
+					"name": "Conjuros de dominio",
 					"entries": [
-						"Each domain has a list of spells—its domain spells—that you gain at the cleric levels noted in the domain description. Once you gain a domain spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day.",
-						"If you have a domain spell that doesn't appear on the cleric spell list, the spell is nonetheless a cleric spell for you."
+						"Cada dominio tiene su propia lista de conjuros, llamados conjuros de dominio, que conseguirás cuando alcances el nivel de clérigo indicado en la descripción de dicho dominio. Una vez obtenidos, estos conjuros siempre se considerarán preparados y no cuentan para el total de conjuros que puedes preparar cada día.",
+						"Aunque recibas un conjuro de dominio que no aparezca en la lista de los de clérigo, para ti sí que se considerará como conjuro de clérigo."
 					]
 				}
 			]
 		},
 		{
-			"name": "Spellcasting",
+			"name": "Lanzamiento de Conjuros",
 			"source": "PHB-ES",
-			"page": 56,
+			"page": 64,
 			"srd": true,
 			"basicRules": true,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
 			"level": 1,
 			"entries": [
-				"As a conduit for divine power, you can cast cleric spells. See {@book chapter 10|PHB|10} for the general rules of spellcasting and {@book chapter 11|PHB|11} for a selection of {@filter cleric spells|spells|class=Clérigo (PHB-ES)}.",
+				"Como canalizador de poder divino, puedes lanzar conjuros de clérigo. El {@book capítulo 10|PHB-ES|10} contiene las reglas de lanzamiento de conjuros y el {@book capítulo 11|PHB-ES|11} la lista de {@filter conjuros de clérigo|spells|class=clérigo (PHB-ES)}.",
 				{
 					"type": "entries",
-					"name": "Cantrips",
+					"name": "Trucos",
 					"entries": [
-						"At 1st level, you know three cantrips of your choice from the cleric spell list. You learn additional cleric cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Cleric table."
+						"A nivel 1 conoces tres trucos de tu elección escogidos de entre los de la lista de conjuros de clérigo. Podrás elegir más trucos de clérigo cuando llegues a niveles más altos, como se indica en la columna \"trucos conocidos\" de la tabla del clérigo."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Preparing and Casting Spells",
+					"name": "Preparar y lanzar conjuros",
 					"entries": [
-						"The Cleric table shows how many spell slots you have to cast your {@filter cleric spells|spells|class=Clérigo (PHB-ES)} of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
-						"You prepare the list of cleric spells that are available for you to cast, choosing from the cleric spell list. When you do so, choose a number of cleric spells equal to your Wisdom modifier + your cleric level (minimum of one spell). The spells must be of a level for which you have spell slots.",
-						"For example, if you are a 3rd-level cleric, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell {@spell cure wounds}, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
-						"You can change your list of prepared spells when you finish a long rest. Preparing a new list of cleric spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list."
+						"La tabla del clérigo muestra de cuántos espacios de conjuro dispones para lanzar {@filter conjuros de clérigo|spells|class=clérigo (PHB-ES)} de nivel 1 y superiores. Para lanzar uno de estos conjuros deberás invertir un espacio de al menos el nivel del conjuro. Recuperas todos los espacios utilizados tras finalizar un descanso largo.",
+						"Puedes preparar una serie de conjuros, que son los que podrás lanzar, de entre la lista de conjuros de clérigo. Para hacer esto, escoge tantos conjuros de clérigo como tu nivel de clérigo + tu modificador por Sabiduría (como mínimo un conjuro). Estos conjuros deben ser de un nivel para el que tengas espacios.",
+						"De esta forma, si eres un clérigo de nivel 3, tendrás cuatro espacios de nivel 1 y dos espacios de nivel 2. Con una Sabiduría de 16, podrías preparar cualquier combinación de seis conjuros de nivel 1 o 2. Además, si prepararas un conjuro de nivel 1, como {@spell curar heridas|PHB-ES}, podrías lanzarlo usando un espacio tanto de nivel 1 como de nivel 2. Lanzar un conjuro no hace que desaparezca de tu lista de conjuros preparados.",
+						"Puedes cambiar qué conjuros tienes preparados tras finalizar un descanso largo. Preparar una nueva serie de conjuros precisa de cierto tiempo de estudio y meditación: al menos 1 minuto por cada nivel de cada conjuro que prepares."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Spellcasting Ability",
+					"name": "Aptitud mágica",
 					"entries": [
-						"Wisdom is your spellcasting ability for your cleric spells. The power of your spells comes from your devotion to your deity. You use your Wisdom whenever a cleric spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a cleric spell you cast and when making an attack roll with one.",
+						"La Sabiduría es tu aptitud mágica en lo que a conjuros de clérigo respecta, ya que el poder de tus conjuros proviene de tu devoción hacia tu dios. Así, utilizarás tu Sabiduría siempre que un conjuro de clérigo haga referencia a tu aptitud mágica. Además, también usarás tu modificador por Sabiduría para determinar la CD de las tiradas de salvación y las tiradas de ataque de los conjuros de clérigo que lances.",
 						{
 							"type": "abilityDc",
 							"name": "Spell",
@@ -863,60 +863,60 @@
 				},
 				{
 					"type": "entries",
-					"name": "Ritual Casting",
+					"name": "Lanzamiento ritual",
 					"entries": [
-						"You can cast a cleric spell as a ritual if that spell has the ritual tag and you have the spell prepared."
+						"Puedes lanzar de forma ritual aquellos conjuros de clérigo que tengas preparados y estén marcados como \"ritual\"."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Spellcasting Focus",
+					"name": "Canalizador mágico",
 					"entries": [
-						"You can use a {@item holy symbol|phb} as a spellcasting focus for your cleric spells."
+						"Puedes utilizar un {@item símbolo sagrado|PHB-ES} como canalizador mágico para los conjuros de clérigo."
 					]
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity",
+			"name": "Canalizar Divinidad",
 			"source": "PHB-ES",
-			"page": 56,
+			"page": 65,
 			"srd": true,
 			"basicRules": true,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
 			"level": 2,
 			"entries": [
-				"At 2nd level, you gain the ability to channel divine energy directly from your deity, using that energy to fuel magical effects. You start with two such effects: Turn Undead and an effect determined by your domain. Some domains grant you additional effects as you advance in levels, as noted in the domain description.",
-				"When you use your Channel Divinity, you choose which effect to create. You must then finish a short or long rest to use your Channel Divinity again.",
-				"Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your cleric spell save DC.",
-				"Beginning at 6th level, you can use your Channel Divinity twice between rests, and beginning at 18th level, you can use it three times between rests. When you finish a short or long rest, you regain your expended uses.",
+				"A nivel 2 ganas la habilidad para canalizar energía divina directamente desde tu deidad y usar dicha energía para alimentar varios efectos mágicos. Empiezas con dos de estos efectos: Expulsar Muertos Vivientes y un segundo poder determinado por tu dominio. Algunos dominios te otorgan efectos adicionales al subir de nivel, tal y como se indica en sus descripciones.",
+				"Cuando utilices Canalizar Divinidad, elige cuál de los efectos vas a crear. Deberás terminar un descanso corto o largo para poder volver a usar Canalizar Divinidad otra vez.",
+				"Algunos efectos de Canalizar Divinidad exigen hacer tiradas de salvación. Cuando utilices uno de los proporcionados por esta clase, la CD será la misma que la de las tiradas de salvación de tus conjuros de clérigo.",
+				"A partir de nivel 6, puedes emplear Canalizar Divinidad dos veces entre descansos y, a partir de nivel 18, tres veces. Recuperas todos los usos tras realizar un descanso corto o largo.",
 				{
 					"type": "refClassFeature",
-					"classFeature": "Channel Divinity: Turn Undead|Clérigo|PHB-ES|2"
+					"classFeature": "Canalizar Divinidad: Expulsar Muertos Vivientes|Clérigo|PHB-ES|2"
 				}
 			]
 		},
 		{
-			"name": "Channel Divinity: Harness Divine Power",
+			"name": "Canalizar Divinidad: Servirse del Poder Divino",
 			"source": "TCE-ES",
-			"page": 30,
+			"page": 36,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
 			"level": 2,
 			"isClassFeatureVariant": true,
 			"consumes": {
-				"name": "Channel Divinity"
+				"name": "Canalizar Divinidad"
 			},
 			"entries": [
-				"{@i 2nd-level cleric {@variantrule optional class features|TCE-ES|optional feature}}",
-				"You can expend a use of your Channel Divinity to fuel your spells. As a bonus action, you touch your holy symbol, utter a prayer, and regain one expended spell slot, the level of which can be no higher than half your proficiency bonus (rounded up). The number of times you can use this feature is based on the level you've reached in this class: 2nd level, once; 6th level, twice; and 18th level, thrice. You regain all expended uses when you finish a long rest."
+				"{@i {@variantrule Rasgos de clase opcionales|TCE-ES|Rasgo opcional} de clérigo de nivel 2}",
+				"Puedes gastar un uso de Canalizar Divinidad para alimentar tus conjuros. Como acción adicional, tocas tu símbolo sagrado, pronuncias una oración y recuperas un espacio de conjuro gastado, cuyo nivel no puede ser superior a la mitad de tu bonificador por competencia (redondeando hacia arriba). La cantidad de veces que puedes usar este rasgo depende del nivel que tengas en esta clase: una vez en el nivel 2, dos veces en el nivel 6 y tres veces en el nivel 18. Recuperas todos los usos tras finalizar un descanso largo."
 			]
 		},
 		{
-			"name": "Channel Divinity: Turn Undead",
+			"name": "Canalizar Divinidad: Expulsar Muertos Vivientes",
 			"source": "PHB-ES",
-			"page": 56,
+			"page": 65,
 			"srd": true,
 			"basicRules": true,
 			"className": "Clérigo",
@@ -924,582 +924,583 @@
 			"level": 2,
 			"header": 2,
 			"consumes": {
-				"name": "Channel Divinity"
+				"name": "Canalizar Divinidad"
 			},
 			"entries": [
-				"As an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.",
-				"A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the {@action Dash} action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the {@action Dodge} action."
+				"Puedes utilizar tu acción para mostrar tu símbolo sagrado y rezar una oración que condene a los muertos vivientes. Todos los muertos vivientes que puedan verte u oírte a 30 pies o menos de ti deben realizar una tirada de salvación de Sabiduría. Si el objetivo falla su tirada de salvación, estará expulsado durante 1 minuto o hasta recibir daño.",
+				"Una criatura expulsada deberá dedicar su turno a moverse lo más lejos posible de ti, si es que puede, y no podrá acercarse a ningún espacio a 30 pies o menos de ti. Además, tampoco será capaz de llevar a cabo reacciones. Solo puede realizar la acción de {@action Correr|PHB-ES} o intentar escapar de un efecto que le impida moverse. Si no tiene a dónde moverse, llevará a cabo la acción de {@action Esquivar|PHB-ES}."
 			]
 		},
 		{
-			"name": "Divine Domain feature",
+			"name": "Rasgo de Dominio Divino",
 			"source": "PHB-ES",
-			"page": 56,
+			"page": 64,
 			"srd": true,
 			"basicRules": true,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
 			"level": 2,
 			"entries": [
-				"At 2nd level, you gain a feature from your Divine Domain."
+				"A nivel 2 ganas un rasgo de tu Dominio Divino."
 			]
 		},
 		{
-			"name": "Ability Score Improvement",
+			"name": "Mejora de Característica",
 			"source": "PHB-ES",
-			"page": 56,
+			"page": 65,
 			"srd": true,
 			"basicRules": true,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
 			"level": 4,
 			"entries": [
-				"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+				"Cuando alcances el nivel 4 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
 			]
 		},
 		{
-			"name": "Cantrip Versatility",
+			"name": "Versatilidad de Trucos",
 			"source": "TCE-ES",
-			"page": 30,
+			"page": 36,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
 			"level": 4,
 			"isClassFeatureVariant": true,
 			"entries": [
-				"{@i 4th-level cleric {@variantrule optional class features|TCE-ES|optional feature}}",
-				"Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace one cantrip you learned from this class's Spellcasting feature with another cantrip from the {@filter cleric spell list|spells|level=0|class=Clérigo (PHB-ES)}."
+				"{@i {@variantrule Rasgos de clase opcionales|TCE-ES|Rasgo opcional} de clérigo de nivel 4}",
+				"Cuando alcanzas un nivel en esta clase que otorga el rasgo Mejora de Característica, puedes sustituir un truco aprendido del rasgo Lanzamiento de Conjuros de esta clase por otro truco de la {@filter lista de conjuros de clérigo|spells|level=0|class=Clérigo (PHB-ES)}."
 			]
 		},
 		{
-			"name": "Destroy Undead (CR 1/2)",
+			"name": "Destruir Muertos Vivientes (VD 1/2)",
 			"source": "PHB-ES",
-			"page": 56,
+			"page": 65,
 			"srd": true,
 			"basicRules": true,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
 			"level": 5,
 			"entries": [
-				"Starting at 5th level, when an {@filter undead of CR 1/2 or lower|bestiary|challenge rating=[&0;&1/2]|type=undead|miscellaneous=!swarm} fails its saving throw against your Turn Undead feature, the creature is instantly destroyed."
+				"A partir de nivel 5, cuando un {@filter muerto viviente de valor de desafío 1/2 o inferior|bestiary|challenge rating=[&0;&1/2]|tag=undead|miscellaneous=!swarm} falle la tirada de salvación contra tu rasgo Expulsar Muertos Vivientes, la criatura es destruida."
 			]
 		},
 		{
-			"name": "Channel Divinity",
+			"name": "Canalizar Divinidad",
 			"source": "PHB-ES",
-			"page": 56,
+			"page": 65,
 			"srd": true,
 			"basicRules": true,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
 			"level": 6,
 			"entries": [
-				"Beginning at 6th level, you can use your Channel Divinity twice between rests."
+				"A partir de nivel 6, puedes emplear Canalizar Divinidad dos veces entre descansos.",
 			]
 		},
 		{
-			"name": "Divine Domain feature",
+			"name": "Rasgo de Dominio Divino",
 			"source": "PHB-ES",
-			"page": 56,
+			"page": 64,
 			"srd": true,
 			"basicRules": true,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
 			"level": 6,
 			"entries": [
-				"At 6th level, you gain a feature from your Divine Domain."
+				"A nivel 6 ganas un rasgo de tu Dominio Divino."
 			]
 		},
 		{
-			"name": "Ability Score Improvement",
+			"name": "Mejora de Característica",
 			"source": "PHB-ES",
-			"page": 56,
+			"page": 65,
 			"srd": true,
 			"basicRules": true,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
 			"level": 8,
 			"entries": [
-				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+				"Cuando alcances el nivel 8 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
 			]
 		},
 		{
-			"name": "Destroy Undead (CR 1)",
+			"name": "Destruir Muertos Vivientes (VD 1)",
 			"source": "PHB-ES",
-			"page": 56,
+			"page": 65,
 			"srd": true,
 			"basicRules": true,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
 			"level": 8,
 			"entries": [
-				"Starting at 8th level, when an {@filter undead of CR 1 or lower|bestiary|challenge rating=[&0;&1]|type=undead|miscellaneous=!swarm} fails its saving throw against your Turn Undead feature, the creature is instantly destroyed."
+				"A partir de nivel 8, cuando un {@filter muerto viviente de valor de desafío 1 o inferior|bestiary|challenge rating=[&0;&1]|tag=undead|miscellaneous=!swarm} falle la tirada de salvación contra tu rasgo Expulsar Muertos Vivientes, la criatura es destruida."
 			]
 		},
 		{
-			"name": "Divine Domain feature",
+			"name": "Rasgo de Dominio Divino",
 			"source": "PHB-ES",
-			"page": 56,
+			"page": 64,
 			"srd": true,
 			"basicRules": true,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
 			"level": 8,
 			"entries": [
-				"At 8th level, you gain a feature from your Divine Domain."
+				"A nivel 8 ganas un rasgo de tu Dominio Divino."
 			]
 		},
 		{
-			"name": "Divine Intervention",
+			"name": "Intercesión Divina",
 			"source": "PHB-ES",
-			"page": 56,
+			"page": 66,
 			"srd": true,
 			"basicRules": true,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
 			"level": 10,
 			"entries": [
-				"Beginning at 10th level, you can call on your deity to intervene on your behalf when your need is great.",
-				"Imploring your deity's aid requires you to use your action. Describe the assistance you seek, and roll percentile dice. If you roll a number equal to or lower than your cleric level, your deity intervenes. The DM chooses the nature of the intervention; the effect of any cleric spell or cleric domain spell would be appropriate. If your deity intervenes, you can't use this feature again for 7 days. Otherwise, you can use it again after you finish a long rest.",
-				"At 20th level, your call for intervention succeeds automatically, no roll required."
+				"A partir de nivel 10, puedes solicitar a tu deidad que interceda por ti en momentos de gran necesidad.",
+				"Para implorar el auxilio de tu dios es necesario que utilices tu acción. Describe el tipo de ayuda que solicitas y tira 1d100. Si sacas un resultado igual o inferior a tu nivel de clérigo, tu deidad intercederá. El DM decide la naturaleza exacta de la intercesión; el efecto de cualquier conjuro de clérigo o de dominio, por ejemplo, sería un resultado apropiado.",
+				"Si la divinidad interviene, no podrás volver a emplear este rasgo durante 7 días. Si no, puedes volver a usarlo tras finalizar un descanso largo.",
+				"A nivel 20 tu petición de auxilio tiene éxito automáticamente, no es necesario tirar."
 			]
 		},
 		{
-			"name": "Destroy Undead (CR 2)",
+			"name": "Destruir Muertos Vivientes (VD 2)",
 			"source": "PHB-ES",
-			"page": 56,
+			"page": 65,
 			"srd": true,
 			"basicRules": true,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
 			"level": 11,
 			"entries": [
-				"Starting at 11th level, when an {@filter undead of CR 2 or lower|bestiary|challenge rating=[&0;&2]|type=undead|miscellaneous=!swarm} fails its saving throw against your Turn Undead feature, the creature is instantly destroyed."
+				"A partir de nivel 11, cuando un {@filter muerto viviente de valor de desafío 2 o inferior|bestiary|challenge rating=[&0;&2]|tag=undead|miscellaneous=!swarm} falle la tirada de salvación contra tu rasgo Expulsar Muertos Vivientes, la criatura es destruida."
 			]
 		},
 		{
-			"name": "Ability Score Improvement",
+			"name": "Mejora de Característica",
 			"source": "PHB-ES",
-			"page": 56,
+			"page": 64,
 			"srd": true,
 			"basicRules": true,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
 			"level": 12,
 			"entries": [
-				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+				"Cuando alcances el nivel 12 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
 			]
 		},
 		{
-			"name": "Destroy Undead (CR 3)",
+			"name": "Destruir Muertos Vivientes (VD 3)",
 			"source": "PHB-ES",
-			"page": 56,
+			"page": 65,
 			"srd": true,
 			"basicRules": true,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
 			"level": 14,
 			"entries": [
-				"Starting at 14th level, when an {@filter undead of CR 3 or lower|bestiary|challenge rating=[&0;&3]|type=undead|miscellaneous=!swarm} fails its saving throw against your Turn Undead feature, the creature is instantly destroyed."
+				"A partir de nivel 14, cuando un {@filter muerto viviente de valor de desafío 3 o inferior|bestiary|challenge rating=[&0;&3]|tag=undead|miscellaneous=!swarm} falle la tirada de salvación contra tu rasgo Expulsar Muertos Vivientes, la criatura es destruida."
 			]
 		},
 		{
-			"name": "Ability Score Improvement",
+			"name": "Mejora de Característica",
 			"source": "PHB-ES",
-			"page": 56,
+			"page": 65,
 			"srd": true,
 			"basicRules": true,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
 			"level": 16,
 			"entries": [
-				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+				"Cuando alcances el nivel 16 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
 			]
 		},
 		{
-			"name": "Destroy Undead (CR 4)",
+			"name": "Destruir Muertos Vivientes (VD 4)",
 			"source": "PHB-ES",
-			"page": 56,
+			"page": 65,
 			"srd": true,
 			"basicRules": true,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
 			"level": 17,
 			"entries": [
-				"Starting at 17th level, when an {@filter undead of CR 4 or lower|bestiary|challenge rating=[&0;&4]|type=undead|miscellaneous=!swarm} fails its saving throw against your Turn Undead feature, the creature is instantly destroyed."
+				"A partir de nivel 17, cuando un {@filter muerto viviente de valor de desafío 4 o inferior|bestiary|challenge rating=[&0;&4]|tag=undead|miscellaneous=!swarm} falle la tirada de salvación contra tu rasgo Expulsar Muertos Vivientes, la criatura es destruida."
 			]
 		},
 		{
-			"name": "Divine Domain feature",
+			"name": "Rasgo de Dominio Divino",
 			"source": "PHB-ES",
-			"page": 56,
+			"page": 64,
 			"srd": true,
 			"basicRules": true,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
 			"level": 17,
 			"entries": [
-				"At 17th level, you gain a feature from your Divine Domain."
+				"A nivel 17 ganas un rasgo de tu Dominio Divino."
 			]
 		},
 		{
-			"name": "Channel Divinity",
+			"name": "Canalizar Divinidad",
 			"source": "PHB-ES",
-			"page": 56,
+			"page": 65,
 			"srd": true,
 			"basicRules": true,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
 			"level": 18,
 			"entries": [
-				"Beginning at 18th level, you can use your Channel Divinity three times between rests."
+				"A partir de nivel 18, puedes emplear Canalizar Divinidad tres veces entre descansos."
 			]
 		},
 		{
-			"name": "Ability Score Improvement",
+			"name": "Mejora de Característica",
 			"source": "PHB-ES",
-			"page": 56,
+			"page": 65,
 			"srd": true,
 			"basicRules": true,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
 			"level": 19,
 			"entries": [
-				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+				"Cuando alcances el nivel 19 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
 			]
 		},
 		{
-			"name": "Divine Intervention Improvement",
+			"name": "Intercesión Divina Mejorada",
 			"source": "PHB-ES",
-			"page": 56,
+			"page": 66,
 			"srd": true,
 			"basicRules": true,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
 			"level": 20,
 			"entries": [
-				"At 20th level, your call for intervention succeeds automatically, no roll required."
+				"A nivel 20 tu petición de auxilio tiene éxito automáticamente, no es necesario tirar."
 			]
 		}
 	],
 	"subclass": [
 		{
-			"name": "Knowledge Domain",
-			"shortName": "Knowledge",
+			"name": "Dominio del Conocimiento",
+			"shortName": "Conocimiento",
 			"source": "PHB-ES",
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"page": 59,
+			"page": 66,
 			"additionalSpells": [
 				{
 					"prepared": {
 						"1": [
-							"command",
-							"identify"
+							"orden imperiosa|PHB-ES",
+							"identificar|PHB-ES"
 						],
 						"3": [
-							"augury",
-							"suggestion"
+							"augurio|PHB-ES",
+							"sugestión|PHB-ES"
 						],
 						"5": [
-							"nondetection",
-							"speak with dead"
+							"indetectable|PHB-ES",
+							"hablar con los muertos|PHB-ES"
 						],
 						"7": [
-							"arcane eye",
-							"confusion"
+							"ojo arcano|PHB-ES",
+							"confusión|PHB-ES"
 						],
 						"9": [
-							"legend lore",
-							"scrying"
+							"conocer las leyendas|PHB-ES",
+							"escudriñar|PHB-ES"
 						]
 					}
 				}
 			],
 			"subclassFeatures": [
-				"Knowledge Domain|Clérigo|PHB-ES|Knowledge||1",
-				"Channel Divinity: Knowledge of the Ages|Clérigo|PHB-ES|Knowledge||2",
-				"Channel Divinity: Read Thoughts|Clérigo|PHB-ES|Knowledge||6",
-				"Potent Spellcasting|Clérigo|PHB-ES|Knowledge||8",
-				"Blessed Strikes|Clérigo|PHB-ES|Knowledge||8|TCE-ES",
-				"Visions of the Past|Clérigo|PHB-ES|Knowledge||17"
+				"Knowledge Domain|Clérigo|PHB-ES|Conocimiento|PHB-ES|1",
+				"Channel Divinity: Knowledge of the Ages|Clérigo|PHB-ES|Conocimiento|PHB-ES|2",
+				"Channel Divinity: Read Thoughts|Clérigo|PHB-ES|Conocimiento|PHB-ES|6",
+				"Potent Spellcasting|Clérigo|PHB-ES|Conocimiento|PHB-ES|8",
+				"Blessed Strikes|Clérigo|PHB-ES|Conocimiento|PHB-ES|8|TCE-ES",
+				"Visions of the Past|Clérigo|PHB-ES|Conocimiento|PHB-ES|17"
 			]
 		},
 		{
-			"name": "Life Domain",
-			"shortName": "Life",
+			"name": "Dominio de la Vida",
+			"shortName": "Vida",
 			"source": "PHB-ES",
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"page": 60,
+			"page": 70,
 			"srd": true,
 			"basicRules": true,
 			"additionalSpells": [
 				{
 					"prepared": {
 						"1": [
-							"bless",
-							"cure wounds"
+							"bendición|PHB-ES",
+							"curar heridas|PHB-ES"
 						],
 						"3": [
-							"lesser restoration",
-							"spiritual weapon"
+							"restablecimiento menor|PHB-ES",
+							"arma espiritual|PHB-ES"
 						],
 						"5": [
-							"beacon of hope",
-							"revivify"
+							"señal de esperanza|PHB-ES",
+							"revivir|PHB-ES"
 						],
 						"7": [
-							"death ward",
-							"guardian of faith"
+							"guarda contra la muerte|PHB-ES",
+							"guardián de la fe|PHB-ES"
 						],
 						"9": [
-							"mass cure wounds",
-							"raise dead"
+							"curar heridas en masa|PHB-ES",
+							"alzar a los muertos|PHB-ES"
 						]
 					}
 				}
 			],
 			"subclassFeatures": [
-				"Life Domain|Clérigo|PHB-ES|Life||1",
-				"Channel Divinity: Preserve Life|Clérigo|PHB-ES|Life||2",
-				"Blessed Healer|Clérigo|PHB-ES|Life||6",
-				"Divine Strike|Clérigo|PHB-ES|Life||8",
-				"Blessed Strikes|Clérigo|PHB-ES|Life||8|TCE-ES",
-				"Supreme Healing|Clérigo|PHB-ES|Life||17"
+				"Life Domain|Clérigo|PHB-ES|Vida|PHB-ES|1",
+				"Channel Divinity: Preserve Life|Clérigo|PHB-ES|Vida|PHB-ES|2",
+				"Blessed Healer|Clérigo|PHB-ES|Vida|PHB-ES|6",
+				"Divine Strike|Clérigo|PHB-ES|Vida|PHB-ES|8",
+				"Blessed Strikes|Clérigo|PHB-ES|Vida|PHB-ES|8|TCE-ES",
+				"Supreme Healing|Clérigo|PHB-ES|Vida|PHB-ES|17"
 			]
 		},
 		{
-			"name": "Light Domain",
-			"shortName": "Light",
+			"name": "Dominio de la Luz",
+			"shortName": "Luz",
 			"source": "PHB-ES",
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"page": 60,
+			"page": 68,
 			"additionalSpells": [
 				{
 					"prepared": {
 						"1": [
-							"burning hands",
-							"faerie fire"
+							"manos ardientes|PHB-ES",
+							"fuego feérico|PHB-ES"
 						],
 						"3": [
-							"flaming sphere",
-							"scorching ray"
+							"esfera de llamas|PHB-ES",
+							"rayo abrasador|PHB-ES"
 						],
 						"5": [
-							"daylight",
-							"fireball"
+							"luz del día|PHB-ES",
+							"bola de fuego|PHB-ES"
 						],
 						"7": [
-							"guardian of faith",
-							"wall of fire"
+							"guardián de la fe|PHB-ES",
+							"muro de fuego|PHB-ES"
 						],
 						"9": [
-							"flame strike",
-							"scrying"
+							"golpe flamígero|PHB-ES",
+							"escudriñar|PHB-ES"
 						]
 					},
 					"known": {
 						"1": [
-							"light#c"
+							"luz|PHB-ES#c"
 						]
 					}
 				}
 			],
 			"subclassFeatures": [
-				"Light Domain|Clérigo|PHB-ES|Light||1",
-				"Channel Divinity: Radiance of the Dawn|Clérigo|PHB-ES|Light||2",
-				"Improved Flare|Clérigo|PHB-ES|Light||6",
-				"Potent Spellcasting|Clérigo|PHB-ES|Light||8",
-				"Blessed Strikes|Clérigo|PHB-ES|Light||8|TCE-ES",
-				"Corona of Light|Clérigo|PHB-ES|Light||17"
+				"Light Domain|Clérigo|PHB-ES|Luz|PHB-ES|1",
+				"Channel Divinity: Radiance of the Dawn|Clérigo|PHB-ES|Luz|PHB-ES|2",
+				"Improved Flare|Clérigo|PHB-ES|Luz|PHB-ES|6",
+				"Potent Spellcasting|Clérigo|PHB-ES|Luz|PHB-ES|8",
+				"Blessed Strikes|Clérigo|PHB-ES|Luz|PHB-ES|8|TCE-ES",
+				"Corona of Light|Clérigo|PHB-ES|Luz|PHB-ES|17"
 			]
 		},
 		{
-			"name": "Nature Domain",
-			"shortName": "Nature",
+			"name": "Dominio de la Naturaleza",
+			"shortName": "Naturaleza",
 			"source": "PHB-ES",
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"page": 61,
+			"page": 69,
 			"additionalSpells": [
 				{
 					"known": {
 						"1": {
 							"_": [
 								{
-									"choose": "level=0|class=Druid"
+									"choose": "level=0|class=Druida (PHB-ES)"
 								}
 							]
 						}
 					},
 					"prepared": {
 						"1": [
-							"animal friendship",
-							"speak with animals"
+							"encantar animal|PHB-ES",
+							"hablar con los animales|PHB-ES"
 						],
 						"3": [
-							"barkskin",
-							"spike growth"
+							"piel robliza|PHB-ES",
+							"crecimiento espinoso|PHB-ES"
 						],
 						"5": [
-							"plant growth",
-							"wind wall"
+							"crecimiento vegetal|PHB-ES",
+							"muro de viento|PHB-ES"
 						],
 						"7": [
-							"dominate beast",
-							"grasping vine"
+							"dominar bestia|PHB-ES",
+							"enredadera|PHB-ES"
 						],
 						"9": [
-							"insect plague",
-							"tree stride"
+							"plaga de insectos|PHB-ES",
+							"paso arbóreo|PHB-ES"
 						]
 					}
 				}
 			],
 			"subclassFeatures": [
-				"Nature Domain|Clérigo|PHB-ES|Nature||1",
-				"Channel Divinity: Charm Animals and Plants|Clérigo|PHB-ES|Nature||2",
-				"Dampen Elements|Clérigo|PHB-ES|Nature||6",
-				"Divine Strike|Clérigo|PHB-ES|Nature||8",
-				"Blessed Strikes|Clérigo|PHB-ES|Nature||8|TCE-ES",
-				"Master of Nature|Clérigo|PHB-ES|Nature||17"
+				"Nature Domain|Clérigo|PHB-ES|Naturaleza|PHB-ES|1",
+				"Channel Divinity: Charm Animals and Plants|Clérigo|PHB-ES|Naturaleza|PHB-ES|2",
+				"Dampen Elements|Clérigo|PHB-ES|Naturaleza|PHB-ES|6",
+				"Divine Strike|Clérigo|PHB-ES|Naturaleza|PHB-ES|8",
+				"Blessed Strikes|Clérigo|PHB-ES|Naturaleza|PHB-ES|8|TCE-ES",
+				"Master of Nature|Clérigo|PHB-ES|Naturaleza|PHB-ES|17"
 			]
 		},
 		{
-			"name": "Tempest Domain",
-			"shortName": "Tempest",
+			"name": "Dominio de la Tempestad",
+			"shortName": "Tempestad",
 			"source": "PHB-ES",
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"page": 62,
+			"page": 69,
 			"additionalSpells": [
 				{
 					"prepared": {
 						"1": [
-							"fog cloud",
-							"thunderwave"
+							"nube de oscurecimiento|PHB-ES",
+							"ola atronadora|PHB-ES"
 						],
 						"3": [
-							"gust of wind",
-							"shatter"
+							"ráfaga de viento|PHB-ES",
+							"hacer añicos|PHB-ES"
 						],
 						"5": [
-							"call lightning",
-							"sleet storm"
+							"llamar al relámpago|PHB-ES",
+							"tormenta de aguanieve|PHB-ES"
 						],
 						"7": [
-							"control water",
-							"ice storm"
+							"controlar agua|PHB-ES",
+							"tormenta de hielo|PHB-ES"
 						],
 						"9": [
-							"destructive wave",
-							"insect plague"
+							"ola destructora|PHB-ES",
+							"plaga de insectos|PHB-ES"
 						]
 					}
 				}
 			],
 			"subclassFeatures": [
-				"Tempest Domain|Clérigo|PHB-ES|Tempest||1",
-				"Channel Divinity: Destructive Wrath|Clérigo|PHB-ES|Tempest||2",
-				"Thunderbolt Strike|Clérigo|PHB-ES|Tempest||6",
-				"Divine Strike|Clérigo|PHB-ES|Tempest||8",
-				"Blessed Strikes|Clérigo|PHB-ES|Tempest||8|TCE-ES",
-				"Stormborn|Clérigo|PHB-ES|Tempest||17"
+				"Tempest Domain|Clérigo|PHB-ES|Tempestad|PHB-ES|1",
+				"Channel Divinity: Destructive Wrath|Clérigo|PHB-ES|Tempestad|PHB-ES|2",
+				"Thunderbolt Strike|Clérigo|PHB-ES|Tempestad|PHB-ES|6",
+				"Divine Strike|Clérigo|PHB-ES|Tempestad|PHB-ES|8",
+				"Blessed Strikes|Clérigo|PHB-ES|Tempestad|PHB-ES|8|TCE-ES",
+				"Stormborn|Clérigo|PHB-ES|Tempestad|PHB-ES|17"
 			]
 		},
 		{
-			"name": "Trickery Domain",
-			"shortName": "Trickery",
+			"name": "Dominio del Engaño",
+			"shortName": "Engaño",
 			"source": "PHB-ES",
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"page": 62,
+			"page": 67,
 			"additionalSpells": [
 				{
 					"prepared": {
 						"1": [
-							"charm person",
-							"disguise self"
+							"hechizar persona|PHB-ES",
+							"disfrazarse|PHB-ES"
 						],
 						"3": [
-							"mirror image",
-							"pass without trace"
+							"imagen múltiple|PHB-ES",
+							"pasar sin rastro|PHB-ES"
 						],
 						"5": [
-							"blink",
-							"dispel magic"
+							"desplazamiento|PHB-ES",
+							"disipar magia|PHB-ES"
 						],
 						"7": [
-							"dimension door",
-							"polymorph"
+							"puerta dimensional|PHB-ES",
+							"polimorfar|PHB-ES"
 						],
 						"9": [
-							"dominate person",
-							"modify memory"
+							"dominar persona|PHB-ES",
+							"alterar los recuerdos|PHB-ES"
 						]
 					}
 				}
 			],
 			"subclassFeatures": [
-				"Trickery Domain|Clérigo|PHB-ES|Trickery||1",
-				"Channel Divinity: Invoke Duplicity|Clérigo|PHB-ES|Trickery||2",
-				"Channel Divinity: Cloak of Shadows|Clérigo|PHB-ES|Trickery||6",
-				"Divine Strike|Clérigo|PHB-ES|Trickery||8",
-				"Blessed Strikes|Clérigo|PHB-ES|Trickery||8|TCE-ES",
-				"Improved Duplicity|Clérigo|PHB-ES|Trickery||17"
+				"Trickery Domain|Clérigo|PHB-ES|Engaño|PHB-ES|1",
+				"Channel Divinity: Invoke Duplicity|Clérigo|PHB-ES|Engaño|PHB-ES|2",
+				"Channel Divinity: Cloak of Shadows|Clérigo|PHB-ES|Engaño|PHB-ES|6",
+				"Divine Strike|Clérigo|PHB-ES|Engaño|PHB-ES|8",
+				"Blessed Strikes|Clérigo|PHB-ES|Engaño|PHB-ES|8|TCE-ES",
+				"Improved Duplicity|Clérigo|PHB-ES|Engaño|PHB-ES|17"
 			]
 		},
 		{
-			"name": "War Domain",
-			"shortName": "War",
+			"name": "Dominio de la Guerra",
+			"shortName": "Guerra",
 			"source": "PHB-ES",
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"page": 63,
+			"page": 67,
 			"additionalSpells": [
 				{
 					"prepared": {
 						"1": [
-							"divine favor",
-							"shield of faith"
+							"favor divino|PHB-ES",
+							"escudo de fe|PHB-ES"
 						],
 						"3": [
-							"magic weapon",
-							"spiritual weapon"
+							"arma mágica|PHB-ES",
+							"arma espiritual|PHB-ES"
 						],
 						"5": [
-							"crusader's mantle",
-							"spirit guardians"
+							"el manto del cruzado|PHB-ES",
+							"espíritus guardianes|PHB-ES"
 						],
 						"7": [
-							"freedom of movement",
-							"stoneskin"
+							"libertad de movimiento|PHB-ES",
+							"piel pétrea|PHB-ES"
 						],
 						"9": [
-							"flame strike",
-							"hold monster"
+							"golpe flamígero|PHB-ES",
+							"inmovilizar monstruo|PHB-ES"
 						]
 					}
 				}
 			],
 			"subclassFeatures": [
-				"War Domain|Clérigo|PHB-ES|War||1",
-				"Channel Divinity: Guided Strike|Clérigo|PHB-ES|War||2",
-				"Channel Divinity: War God's Blessing|Clérigo|PHB-ES|War||6",
-				"Divine Strike|Clérigo|PHB-ES|War||8",
-				"Blessed Strikes|Clérigo|PHB-ES|War||8|TCE-ES",
-				"Avatar of Battle|Clérigo|PHB-ES|War||17"
+				"War Domain|Clérigo|PHB-ES|Guerra|PHB-ES|1",
+				"Channel Divinity: Guided Strike|Clérigo|PHB-ES|Guerra|PHB-ES|2",
+				"Channel Divinity: War God's Blessing|Clérigo|PHB-ES|Guerra|PHB-ES|6",
+				"Divine Strike|Clérigo|PHB-ES|Guerra|PHB-ES|8",
+				"Blessed Strikes|Clérigo|PHB-ES|Guerra|PHB-ES|8|TCE-ES",
+				"Avatar of Battle|Clérigo|PHB-ES|Guerra|PHB-ES|17"
 			]
 		},
 		{
-			"name": "Death Domain",
-			"shortName": "Death",
+			"name": "Dominio de la Muerte",
+			"shortName": "Muerte",
 			"source": "DMG-ES",
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
@@ -1518,51 +1519,51 @@
 					},
 					"prepared": {
 						"1": [
-							"false life",
-							"ray of sickness"
+							"falsa vida|PHB-ES",
+							"rayo nauseabundo|PHB-ES"
 						],
 						"3": [
-							"blindness/deafness",
-							"ray of enfeeblement"
+							"rayo debilitador|PHB-ES",
+							"sordera/ceguera|PHB-ES"
 						],
 						"5": [
-							"animate dead",
-							"vampiric touch"
+							"animar a los muertos|PHB-ES",
+							"toque vampírico|PHB-ES"
 						],
 						"7": [
-							"blight",
-							"death ward"
+							"guarda contra la muerte|PHB-ES",
+							"marchitar|PHB-ES"
 						],
 						"9": [
-							"antilife shell",
-							"cloudkill"
+							"caparazón antivida|PHB-ES",
+							"nube aniquiladora|PHB-ES"
 						]
 					}
 				}
 			],
 			"subclassFeatures": [
-				"Death Domain|Clérigo|PHB-ES|Death|DMG-ES|1",
-				"Channel Divinity: Touch of Death|Clérigo|PHB-ES|Death|DMG-ES|2",
-				"Inescapable Destruction|Clérigo|PHB-ES|Death|DMG-ES|6",
-				"Divine Strike|Clérigo|PHB-ES|Death|DMG-ES|8",
-				"Blessed Strikes|Clérigo|PHB-ES|Death|DMG-ES|8|TCE-ES",
-				"Improved Reaper|Clérigo|PHB-ES|Death|DMG-ES|17"
+				"Death Domain|Clérigo|PHB-ES|Muerte|DMG-ES|1",
+				"Channel Divinity: Touch of Death|Clérigo|PHB-ES|Muerte|DMG-ES|2",
+				"Inescapable Destruction|Clérigo|PHB-ES|Muerte|DMG-ES|6",
+				"Divine Strike|Clérigo|PHB-ES|Muerte|DMG-ES|8",
+				"Blessed Strikes|Clérigo|PHB-ES|Muerte|DMG-ES|8|TCE-ES",
+				"Improved Reaper|Clérigo|PHB-ES|Muerte|DMG-ES|17"
 			]
 		},
 		{
-			"name": "Arcana Domain",
-			"shortName": "Arcana",
+			"name": "Dominio del Conocimiento Arcano",
+			"shortName": "Conocimiento Arcano",
 			"source": "SCAG-ES",
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"page": 125,
+			"page": 127,
 			"additionalSpells": [
 				{
 					"known": {
 						"1": {
 							"_": [
 								{
-									"choose": "level=0|class=Wizard",
+									"choose": "level=0|class=Mago (PHB-ES)",
 									"count": 2
 								}
 							]
@@ -1570,270 +1571,264 @@
 					},
 					"prepared": {
 						"1": [
-							"detect magic",
-							"magic missile"
+							"detectar magia|PHB-ES",
+							"proyectil mágico|PHB-ES"
 						],
 						"3": [
-							"magic weapon",
-							"Nystul's magic aura"
+							"arma mágica|PHB-ES",
+							"aura mágica de Nystul|PHB-ES"
 						],
 						"5": [
-							"dispel magic",
-							"magic circle"
+							"disipar magia|PHB-ES",
+							"círculo mágico|PHB-ES"
 						],
 						"7": [
-							"arcane eye",
-							"Leomund's secret chest"
+							"ojo arcano|PHB-ES",
+							"cofre oculto de Leomund|PHB-ES"
 						],
 						"9": [
-							"planar binding",
-							"teleportation circle"
+							"atadura planar|PHB-ES",
+							"círculo de teletransportación|PHB-ES"
 						],
 						"17": [
 							{
-								"choose": "level=6|class=Wizard"
+								"choose": "level=6|class=Mago (PHB-ES)"
 							},
 							{
-								"choose": "level=7|class=Wizard"
+								"choose": "level=7|class=Mago (PHB-ES)"
 							},
 							{
-								"choose": "level=8|class=Wizard"
+								"choose": "level=8|class=Mago (PHB-ES)"
 							},
 							{
-								"choose": "level=9|class=Wizard"
+								"choose": "level=9|class=Mago (PHB-ES)"
 							}
 						]
 					}
 				}
 			],
 			"subclassFeatures": [
-				"Arcana Domain|Clérigo|PHB-ES|Arcana|SCAG-ES|1",
-				"Channel Divinity: Arcane Abjuration|Clérigo|PHB-ES|Arcana|SCAG-ES|2",
-				"Spell Breaker|Clérigo|PHB-ES|Arcana|SCAG-ES|6",
-				"Potent Spellcasting|Clérigo|PHB-ES|Arcana|SCAG-ES|8",
-				"Blessed Strikes|Clérigo|PHB-ES|Arcana|SCAG-ES|8|TCE-ES",
-				"Arcane Mastery|Clérigo|PHB-ES|Arcana|SCAG-ES|17"
+				"Arcana Domain|Clérigo|PHB-ES|Conocimiento Arcano|SCAG-ES|1",
+				"Channel Divinity: Arcane Abjuration|Clérigo|PHB-ES|Conocimiento Arcano|SCAG-ES|2",
+				"Spell Breaker|Clérigo|PHB-ES|Conocimiento Arcano|SCAG-ES|6",
+				"Potent Spellcasting|Clérigo|PHB-ES|Conocimiento Arcano|SCAG-ES|8",
+				"Blessed Strikes|Clérigo|PHB-ES|Conocimiento Arcano|SCAG-ES|8|TCE-ES",
+				"Arcane Mastery|Clérigo|PHB-ES|Conocimiento Arcano|SCAG-ES|17"
 			]
 		},
 		{
-			"name": "Forge Domain",
-			"shortName": "Forge",
+			"name": "Dominio de la Forja",
+			"shortName": "Forja",
 			"source": "XGE-ES",
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"page": 18,
+			"page": 23,
 			"additionalSpells": [
 				{
 					"prepared": {
 						"1": [
-							"identify",
-							"searing smite"
+							"identificar|PHB-ES",
+							"castigo abrasador|PHB-ES"
 						],
 						"3": [
-							"heat metal",
-							"magic weapon"
+							"calentar metal|PHB-ES",
+							"arma mágica|PHB-ES"
 						],
 						"5": [
-							"elemental weapon",
-							"protection from energy"
+							"arma elemental|PHB-ES",
+							"protección contra energía|PHB-ES"
 						],
 						"7": [
-							"fabricate",
-							"wall of fire"
+							"fabricar|PHB-ES",
+							"muro de fuego|PHB-ES"
 						],
 						"9": [
-							"animate objects",
-							"creation"
+							"animar objetos|PHB-ES",
+							"creación|PHB-ES"
 						]
 					}
 				}
 			],
 			"subclassFeatures": [
-				"Forge Domain|Clérigo|PHB-ES|Forge|XGE-ES|1",
-				"Channel Divinity: Artisan's Blessing|Clérigo|PHB-ES|Forge|XGE-ES|2",
-				"Soul of the Forge|Clérigo|PHB-ES|Forge|XGE-ES|6",
-				"Divine Strike|Clérigo|PHB-ES|Forge|XGE-ES|8",
-				"Blessed Strikes|Clérigo|PHB-ES|Forge|XGE-ES|8|TCE-ES",
-				"Saint of Forge and Fire|Clérigo|PHB-ES|Forge|XGE-ES|17"
+				"Forge Domain|Clérigo|PHB-ES|Forja|XGE-ES|1",
+				"Channel Divinity: Artisan's Blessing|Clérigo|PHB-ES|Forja|XGE-ES|2",
+				"Soul of the Forge|Clérigo|PHB-ES|Forja|XGE-ES|6",
+				"Divine Strike|Clérigo|PHB-ES|Forja|XGE-ES|8",
+				"Blessed Strikes|Clérigo|PHB-ES|Forja|XGE-ES|8|TCE-ES",
+				"Saint of Forge and Fire|Clérigo|PHB-ES|Forja|XGE-ES|17"
 			]
 		},
 		{
-			"name": "Grave Domain",
-			"shortName": "Grave",
+			"name": "Dominio de la Sepultura",
+			"shortName": "Sepultura",
 			"source": "XGE-ES",
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"page": 19,
+			"page": 24,
 			"additionalSpells": [
 				{
 					"prepared": {
 						"1": [
-							"bane",
-							"false life"
+							"perdición|PHB-ES",
+							"falsa vida|PHB-ES"
 						],
 						"3": [
-							"gentle repose",
-							"ray of enfeeblement"
+							"dulce descanso|PHB-ES",
+							"rayo debilitador|PHB-ES"
 						],
 						"5": [
-							"revivify",
-							"vampiric touch"
+							"revivir|PHB-ES",
+							"toque vampírico|PHB-ES"
 						],
 						"7": [
-							"blight",
-							"death ward"
+							"marchitar|PHB-ES",
+							"guarda contra la muerte|PHB-ES"
 						],
 						"9": [
-							"antilife shell",
-							"raise dead"
+							"caparazón antivida|PHB-ES",
+							"alzar a los muertos|PHB-ES"
 						]
 					},
 					"known": {
 						"1": [
-							"spare the dying#c"
+							"piedad con los moribundos|PHB-ES#c"
 						]
 					}
 				}
 			],
 			"subclassFeatures": [
-				"Grave Domain|Clérigo|PHB-ES|Grave|XGE-ES|1",
-				"Channel Divinity: Path to the Grave|Clérigo|PHB-ES|Grave|XGE-ES|2",
-				"Sentinel at Death's Door|Clérigo|PHB-ES|Grave|XGE-ES|6",
-				"Potent Spellcasting|Clérigo|PHB-ES|Grave|XGE-ES|8",
-				"Blessed Strikes|Clérigo|PHB-ES|Grave|XGE-ES|8|TCE-ES",
-				"Keeper of Souls|Clérigo|PHB-ES|Grave|XGE-ES|17"
+				"Grave Domain|Clérigo|PHB-ES|Sepultura|XGE-ES|1",
+				"Channel Divinity: Path to the Grave|Clérigo|PHB-ES|Sepultura|XGE-ES|2",
+				"Sentinel at Death's Door|Clérigo|PHB-ES|Sepultura|XGE-ES|6",
+				"Potent Spellcasting|Clérigo|PHB-ES|Sepultura|XGE-ES|8",
+				"Blessed Strikes|Clérigo|PHB-ES|Sepultura|XGE-ES|8|TCE-ES",
+				"Keeper of Souls|Clérigo|PHB-ES|Sepultura|XGE-ES|17"
 			]
 		},
 		{
-			"name": "Order Domain",
-			"shortName": "Order",
+			"name": "Dominio del Orden",
+			"shortName": "Orden",
 			"source": "TCE-ES",
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"page": 31,
-			"otherSources": [
-				{
-					"source": "GGR",
-					"page": 25
-				}
-			],
+			"page": 39,
 			"additionalSpells": [
 				{
 					"prepared": {
 						"1": [
-							"command",
-							"heroism"
+							"orden imperiosa|PHB-ES",
+							"heroísmo|PHB-ES"
 						],
 						"3": [
-							"hold person",
-							"zone of truth"
+							"inmovilizar persona|PHB-ES",
+							"zona de la verdad|PHB-ES"
 						],
 						"5": [
-							"mass healing word",
-							"slow"
+							"palabra de curación en masa|PHB-ES",
+							"ralentizar|PHB-ES"
 						],
 						"7": [
-							"compulsion",
-							"locate creature"
+							"compulsión|PHB-ES",
+							"localizar criatura|PHB-ES"
 						],
 						"9": [
-							"commune",
-							"dominate person"
+							"comunión|PHB-ES",
+							"dominar persona|PHB-ES"
 						]
 					}
 				}
 			],
 			"subclassFeatures": [
-				"Order Domain|Clérigo|PHB-ES|Order|TCE-ES|1",
-				"Channel Divinity: Order's Demand|Clérigo|PHB-ES|Order|TCE-ES|2",
-				"Embodiment of the Law|Clérigo|PHB-ES|Order|TCE-ES|6",
-				"Divine Strike|Clérigo|PHB-ES|Order|TCE-ES|8",
-				"Blessed Strikes|Clérigo|PHB-ES|Order|TCE-ES|8|TCE-ES",
-				"Order's Wrath|Clérigo|PHB-ES|Order|TCE-ES|17"
+				"Order Domain|Clérigo|PHB-ES|Orden|TCE-ES|1",
+				"Channel Divinity: Order's Demand|Clérigo|PHB-ES|Orden|TCE-ES|2",
+				"Embodiment of the Law|Clérigo|PHB-ES|Orden|TCE-ES|6",
+				"Divine Strike|Clérigo|PHB-ES|Orden|TCE-ES|8",
+				"Blessed Strikes|Clérigo|PHB-ES|Orden|TCE-ES|8|TCE-ES",
+				"Order's Wrath|Clérigo|PHB-ES|Orden|TCE-ES|17"
 			]
 		},
 		{
-			"name": "Peace Domain",
-			"shortName": "Peace",
+			"name": "Dominio de la Paz",
+			"shortName": "Paz",
 			"source": "TCE-ES",
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"page": 32,
+			"page": 36,
 			"additionalSpells": [
 				{
 					"prepared": {
 						"1": [
-							"heroism",
-							"sanctuary"
+							"heroísmo|PHB-ES",
+							"santuario|PHB-ES"
 						],
 						"3": [
-							"aid",
-							"warding bond"
+							"auxilio|PHB-ES",
+							"vínculo protector|PHB-ES"
 						],
 						"5": [
-							"beacon of hope",
-							"sending"
+							"señal de esperanza|PHB-ES",
+							"recado|PHB-ES"
 						],
 						"7": [
-							"aura of purity",
-							"Otiluke's resilient sphere"
+							"aura de pureza|PHB-ES",
+							"esfera elástica de Otiluke|PHB-ES"
 						],
 						"9": [
-							"greater restoration",
-							"Rary's telepathic bond"
+							"restablecimiento mayor|PHB-ES",
+							"enlace telepático de Rary|PHB-ES"
 						]
 					}
 				}
 			],
 			"subclassFeatures": [
-				"Peace Domain|Clérigo|PHB-ES|Peace|TCE-ES|1",
-				"Channel Divinity: Balm of Peace|Clérigo|PHB-ES|Peace|TCE-ES|2",
-				"Protective Bond|Clérigo|PHB-ES|Peace|TCE-ES|6",
-				"Potent Spellcasting|Clérigo|PHB-ES|Peace|TCE-ES|8",
-				"Blessed Strikes|Clérigo|PHB-ES|Peace|TCE-ES|8|TCE-ES",
-				"Expansive Bond|Clérigo|PHB-ES|Peace|TCE-ES|17"
+				"Peace Domain|Clérigo|PHB-ES|Paz|TCE-ES|1",
+				"Channel Divinity: Balm of Peace|Clérigo|PHB-ES|Paz|TCE-ES|2",
+				"Protective Bond|Clérigo|PHB-ES|Paz|TCE-ES|6",
+				"Potent Spellcasting|Clérigo|PHB-ES|Paz|TCE-ES|8",
+				"Blessed Strikes|Clérigo|PHB-ES|Paz|TCE-ES|8|TCE-ES",
+				"Expansive Bond|Clérigo|PHB-ES|Paz|TCE-ES|17"
 			]
 		},
 		{
-			"name": "Twilight Domain",
-			"shortName": "Twilight",
+			"name": "Dominio del Crepúsculo",
+			"shortName": "Crepúsculo",
 			"source": "TCE-ES",
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"page": 34,
+			"page": 37,
 			"additionalSpells": [
 				{
 					"prepared": {
 						"1": [
-							"faerie fire",
-							"sleep"
+							"fuego feérico|PHB-ES",
+							"dormir|PHB-ES"
 						],
 						"3": [
-							"moonbeam",
-							"see invisibility"
+							"rayo de luna|PHB-ES",
+							"ver invisibilidad|PHB-ES"
 						],
 						"5": [
-							"aura of vitality",
-							"Leomund's tiny hut"
+							"aura de vitalidad|PHB-ES",
+							"pequeña choza de Leomund|PHB-ES"
 						],
 						"7": [
-							"aura of life",
-							"greater invisibility"
+							"aura de vida|PHB-ES",
+							"invisibilidad mejorada|PHB-ES"
 						],
 						"9": [
-							"circle of power",
-							"mislead"
+							"círculo de poder|PHB-ES",
+							"engañar|PHB-ES"
 						]
 					}
 				}
 			],
 			"subclassFeatures": [
-				"Twilight Domain|Clérigo|PHB-ES|Twilight|TCE-ES|1",
-				"Channel Divinity: Twilight Sanctuary|Clérigo|PHB-ES|Twilight|TCE-ES|2",
-				"Steps of Night|Clérigo|PHB-ES|Twilight|TCE-ES|6",
-				"Divine Strike|Clérigo|PHB-ES|Twilight|TCE-ES|8",
-				"Blessed Strikes|Clérigo|PHB-ES|Twilight|TCE-ES|8|TCE-ES",
-				"Twilight Shroud|Clérigo|PHB-ES|Twilight|TCE-ES|17"
+				"Twilight Domain|Clérigo|PHB-ES|Crepúsculo|TCE-ES|1",
+				"Channel Divinity: Twilight Sanctuary|Clérigo|PHB-ES|Crepúsculo|TCE-ES|2",
+				"Steps of Night|Clérigo|PHB-ES|Crepúsculo|TCE-ES|6",
+				"Divine Strike|Clérigo|PHB-ES|Crepúsculo|TCE-ES|8",
+				"Blessed Strikes|Clérigo|PHB-ES|Crepúsculo|TCE-ES|8|TCE-ES",
+				"Twilight Shroud|Clérigo|PHB-ES|Crepúsculo|TCE-ES|17"
 			]
 		}
 	],
@@ -1844,7 +1839,7 @@
 			"page": 96,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Death",
+			"subclassShortName": "Muerte",
 			"subclassSource": "DMG-ES",
 			"level": 1,
 			"entries": [
@@ -1886,11 +1881,11 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Bonus Proficiency|Clérigo|PHB-ES|Death|DMG-ES|1"
+					"subclassFeature": "Bonus Proficiency|Clérigo|PHB-ES|Muerte|DMG-ES|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Reaper|Clérigo|PHB-ES|Death|DMG-ES|1"
+					"subclassFeature": "Reaper|Clérigo|PHB-ES|Muerte|DMG-ES|1"
 				}
 			]
 		},
@@ -1900,7 +1895,7 @@
 			"page": 96,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Death",
+			"subclassShortName": "Muerte",
 			"subclassSource": "DMG-ES",
 			"level": 1,
 			"header": 1,
@@ -1914,7 +1909,7 @@
 			"page": 96,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Death",
+			"subclassShortName": "Muerte",
 			"subclassSource": "DMG-ES",
 			"level": 1,
 			"header": 1,
@@ -1928,7 +1923,7 @@
 			"page": 96,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Death",
+			"subclassShortName": "Muerte",
 			"subclassSource": "DMG-ES",
 			"level": 2,
 			"header": 2,
@@ -1946,7 +1941,7 @@
 			"page": 96,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Death",
+			"subclassShortName": "Muerte",
 			"subclassSource": "DMG-ES",
 			"level": 6,
 			"header": 2,
@@ -1960,7 +1955,7 @@
 			"page": 30,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Death",
+			"subclassShortName": "Muerte",
 			"subclassSource": "DMG-ES",
 			"level": 8,
 			"isClassFeatureVariant": true,
@@ -1976,7 +1971,7 @@
 			"page": 96,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Death",
+			"subclassShortName": "Muerte",
 			"subclassSource": "DMG-ES",
 			"level": 8,
 			"header": 2,
@@ -1990,7 +1985,7 @@
 			"page": 96,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Death",
+			"subclassShortName": "Muerte",
 			"subclassSource": "DMG-ES",
 			"level": 17,
 			"header": 2,
@@ -2004,7 +1999,7 @@
 			"page": 59,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Knowledge",
+			"subclassShortName": "Conocimiento",
 			"subclassSource": "PHB-ES",
 			"level": 1,
 			"entries": [
@@ -2046,7 +2041,7 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Blessings of Knowledge|Clérigo|PHB-ES|Knowledge||1"
+					"subclassFeature": "Blessings of Knowledge|Clérigo|PHB-ES|Conocimiento|PHB-ES|1"
 				}
 			]
 		},
@@ -2056,7 +2051,7 @@
 			"page": 59,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Knowledge",
+			"subclassShortName": "Conocimiento",
 			"subclassSource": "PHB-ES",
 			"level": 1,
 			"header": 1,
@@ -2071,7 +2066,7 @@
 			"page": 59,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Knowledge",
+			"subclassShortName": "Conocimiento",
 			"subclassSource": "PHB-ES",
 			"level": 2,
 			"header": 2,
@@ -2088,7 +2083,7 @@
 			"page": 59,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Knowledge",
+			"subclassShortName": "Conocimiento",
 			"subclassSource": "PHB-ES",
 			"level": 6,
 			"header": 2,
@@ -2108,7 +2103,7 @@
 			"page": 30,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Knowledge",
+			"subclassShortName": "Conocimiento",
 			"subclassSource": "PHB-ES",
 			"level": 8,
 			"isClassFeatureVariant": true,
@@ -2124,7 +2119,7 @@
 			"page": 59,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Knowledge",
+			"subclassShortName": "Conocimiento",
 			"subclassSource": "PHB-ES",
 			"level": 8,
 			"header": 2,
@@ -2138,7 +2133,7 @@
 			"page": 59,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Knowledge",
+			"subclassShortName": "Conocimiento",
 			"subclassSource": "PHB-ES",
 			"level": 17,
 			"header": 2,
@@ -2179,7 +2174,7 @@
 			"basicRules": true,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Life",
+			"subclassShortName": "Vida",
 			"subclassSource": "PHB-ES",
 			"level": 1,
 			"entries": [
@@ -2221,11 +2216,11 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Bonus Proficiency|Clérigo|PHB-ES|Life||1"
+					"subclassFeature": "Bonus Proficiency|Clérigo|PHB-ES|Vida|PHB-ES|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Disciple of Life|Clérigo|PHB-ES|Life||1"
+					"subclassFeature": "Disciple of Life|Clérigo|PHB-ES|Vida|PHB-ES|1"
 				}
 			]
 		},
@@ -2237,7 +2232,7 @@
 			"basicRules": true,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Life",
+			"subclassShortName": "Vida",
 			"subclassSource": "PHB-ES",
 			"level": 1,
 			"header": 1,
@@ -2253,7 +2248,7 @@
 			"basicRules": true,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Life",
+			"subclassShortName": "Vida",
 			"subclassSource": "PHB-ES",
 			"level": 1,
 			"header": 1,
@@ -2269,7 +2264,7 @@
 			"basicRules": true,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Life",
+			"subclassShortName": "Vida",
 			"subclassSource": "PHB-ES",
 			"level": 2,
 			"header": 2,
@@ -2289,7 +2284,7 @@
 			"basicRules": true,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Life",
+			"subclassShortName": "Vida",
 			"subclassSource": "PHB-ES",
 			"level": 6,
 			"header": 2,
@@ -2303,7 +2298,7 @@
 			"page": 30,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Life",
+			"subclassShortName": "Vida",
 			"subclassSource": "PHB-ES",
 			"level": 8,
 			"isClassFeatureVariant": true,
@@ -2321,7 +2316,7 @@
 			"basicRules": true,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Life",
+			"subclassShortName": "Vida",
 			"subclassSource": "PHB-ES",
 			"level": 8,
 			"header": 2,
@@ -2337,7 +2332,7 @@
 			"basicRules": true,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Life",
+			"subclassShortName": "Vida",
 			"subclassSource": "PHB-ES",
 			"level": 17,
 			"header": 2,
@@ -2351,7 +2346,7 @@
 			"page": 60,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Light",
+			"subclassShortName": "Luz",
 			"subclassSource": "PHB-ES",
 			"level": 1,
 			"entries": [
@@ -2393,11 +2388,11 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Bonus Cantrip|Clérigo|PHB-ES|Light||1"
+					"subclassFeature": "Bonus Cantrip|Clérigo|PHB-ES|Luz|PHB-ES|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Warding Flare|Clérigo|PHB-ES|Light||1"
+					"subclassFeature": "Warding Flare|Clérigo|PHB-ES|Luz|PHB-ES|1"
 				}
 			]
 		},
@@ -2407,7 +2402,7 @@
 			"page": 60,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Light",
+			"subclassShortName": "Luz",
 			"subclassSource": "PHB-ES",
 			"level": 1,
 			"header": 1,
@@ -2421,7 +2416,7 @@
 			"page": 60,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Light",
+			"subclassShortName": "Luz",
 			"subclassSource": "PHB-ES",
 			"level": 1,
 			"header": 1,
@@ -2436,7 +2431,7 @@
 			"page": 60,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Light",
+			"subclassShortName": "Luz",
 			"subclassSource": "PHB-ES",
 			"level": 2,
 			"header": 2,
@@ -2454,7 +2449,7 @@
 			"page": 60,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Light",
+			"subclassShortName": "Luz",
 			"subclassSource": "PHB-ES",
 			"level": 6,
 			"header": 2,
@@ -2468,7 +2463,7 @@
 			"page": 30,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Light",
+			"subclassShortName": "Luz",
 			"subclassSource": "PHB-ES",
 			"level": 8,
 			"isClassFeatureVariant": true,
@@ -2484,7 +2479,7 @@
 			"page": 60,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Light",
+			"subclassShortName": "Luz",
 			"subclassSource": "PHB-ES",
 			"level": 8,
 			"header": 2,
@@ -2498,7 +2493,7 @@
 			"page": 60,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Light",
+			"subclassShortName": "Luz",
 			"subclassSource": "PHB-ES",
 			"level": 17,
 			"header": 2,
@@ -2512,7 +2507,7 @@
 			"page": 61,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Nature",
+			"subclassShortName": "Naturaleza",
 			"subclassSource": "PHB-ES",
 			"level": 1,
 			"entries": [
@@ -2554,11 +2549,11 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Acolyte of Nature|Clérigo|PHB-ES|Nature||1"
+					"subclassFeature": "Acolyte of Nature|Clérigo|PHB-ES|Naturaleza|PHB-ES|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Bonus Proficiency|Clérigo|PHB-ES|Nature||1"
+					"subclassFeature": "Bonus Proficiency|Clérigo|PHB-ES|Naturaleza|PHB-ES|1"
 				}
 			]
 		},
@@ -2568,7 +2563,7 @@
 			"page": 61,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Nature",
+			"subclassShortName": "Naturaleza",
 			"subclassSource": "PHB-ES",
 			"level": 1,
 			"header": 1,
@@ -2582,7 +2577,7 @@
 			"page": 61,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Nature",
+			"subclassShortName": "Naturaleza",
 			"subclassSource": "PHB-ES",
 			"level": 1,
 			"header": 1,
@@ -2596,7 +2591,7 @@
 			"page": 61,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Nature",
+			"subclassShortName": "Naturaleza",
 			"subclassSource": "PHB-ES",
 			"level": 2,
 			"header": 2,
@@ -2614,7 +2609,7 @@
 			"page": 61,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Nature",
+			"subclassShortName": "Naturaleza",
 			"subclassSource": "PHB-ES",
 			"level": 6,
 			"header": 2,
@@ -2628,7 +2623,7 @@
 			"page": 30,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Nature",
+			"subclassShortName": "Naturaleza",
 			"subclassSource": "PHB-ES",
 			"level": 8,
 			"isClassFeatureVariant": true,
@@ -2644,7 +2639,7 @@
 			"page": 61,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Nature",
+			"subclassShortName": "Naturaleza",
 			"subclassSource": "PHB-ES",
 			"level": 8,
 			"header": 2,
@@ -2658,7 +2653,7 @@
 			"page": 61,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Nature",
+			"subclassShortName": "Naturaleza",
 			"subclassSource": "PHB-ES",
 			"level": 17,
 			"header": 2,
@@ -2672,7 +2667,7 @@
 			"page": 62,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Tempest",
+			"subclassShortName": "Tempestad",
 			"subclassSource": "PHB-ES",
 			"level": 1,
 			"entries": [
@@ -2714,11 +2709,11 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Bonus Proficiencies|Clérigo|PHB-ES|Tempest||1"
+					"subclassFeature": "Bonus Proficiencies|Clérigo|PHB-ES|Tempestad|PHB-ES|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Wrath of the Storm|Clérigo|PHB-ES|Tempest||1"
+					"subclassFeature": "Wrath of the Storm|Clérigo|PHB-ES|Tempestad|PHB-ES|1"
 				}
 			]
 		},
@@ -2728,7 +2723,7 @@
 			"page": 62,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Tempest",
+			"subclassShortName": "Tempestad",
 			"subclassSource": "PHB-ES",
 			"level": 1,
 			"header": 1,
@@ -2742,7 +2737,7 @@
 			"page": 62,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Tempest",
+			"subclassShortName": "Tempestad",
 			"subclassSource": "PHB-ES",
 			"level": 1,
 			"header": 1,
@@ -2757,7 +2752,7 @@
 			"page": 62,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Tempest",
+			"subclassShortName": "Tempestad",
 			"subclassSource": "PHB-ES",
 			"level": 2,
 			"header": 2,
@@ -2775,7 +2770,7 @@
 			"page": 62,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Tempest",
+			"subclassShortName": "Tempestad",
 			"subclassSource": "PHB-ES",
 			"level": 6,
 			"header": 2,
@@ -2789,7 +2784,7 @@
 			"page": 30,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Tempest",
+			"subclassShortName": "Tempestad",
 			"subclassSource": "PHB-ES",
 			"level": 8,
 			"isClassFeatureVariant": true,
@@ -2805,7 +2800,7 @@
 			"page": 62,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Tempest",
+			"subclassShortName": "Tempestad",
 			"subclassSource": "PHB-ES",
 			"level": 8,
 			"header": 2,
@@ -2819,7 +2814,7 @@
 			"page": 62,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Tempest",
+			"subclassShortName": "Tempestad",
 			"subclassSource": "PHB-ES",
 			"level": 17,
 			"header": 2,
@@ -2833,7 +2828,7 @@
 			"page": 62,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Trickery",
+			"subclassShortName": "Engaño",
 			"subclassSource": "PHB-ES",
 			"level": 1,
 			"entries": [
@@ -2875,7 +2870,7 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Blessing of the Trickster|Clérigo|PHB-ES|Trickery||1"
+					"subclassFeature": "Blessing of the Trickster|Clérigo|PHB-ES|Engaño|PHB-ES|1"
 				}
 			]
 		},
@@ -2885,7 +2880,7 @@
 			"page": 62,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Trickery",
+			"subclassShortName": "Engaño",
 			"subclassSource": "PHB-ES",
 			"level": 1,
 			"header": 1,
@@ -2899,7 +2894,7 @@
 			"page": 62,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Trickery",
+			"subclassShortName": "Engaño",
 			"subclassSource": "PHB-ES",
 			"level": 2,
 			"header": 2,
@@ -2918,7 +2913,7 @@
 			"page": 62,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Trickery",
+			"subclassShortName": "Engaño",
 			"subclassSource": "PHB-ES",
 			"level": 6,
 			"header": 2,
@@ -2936,7 +2931,7 @@
 			"page": 30,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Trickery",
+			"subclassShortName": "Engaño",
 			"subclassSource": "PHB-ES",
 			"level": 8,
 			"isClassFeatureVariant": true,
@@ -2952,7 +2947,7 @@
 			"page": 62,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Trickery",
+			"subclassShortName": "Engaño",
 			"subclassSource": "PHB-ES",
 			"level": 8,
 			"header": 2,
@@ -2966,7 +2961,7 @@
 			"page": 62,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Trickery",
+			"subclassShortName": "Engaño",
 			"subclassSource": "PHB-ES",
 			"level": 17,
 			"header": 2,
@@ -2980,7 +2975,7 @@
 			"page": 63,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "War",
+			"subclassShortName": "Guerra",
 			"subclassSource": "PHB-ES",
 			"level": 1,
 			"entries": [
@@ -3022,11 +3017,11 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Bonus Proficiencies|Clérigo|PHB-ES|War||1"
+					"subclassFeature": "Bonus Proficiencies|Clérigo|PHB-ES|Guerra|PHB-ES|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "War Priest|Clérigo|PHB-ES|War||1"
+					"subclassFeature": "War Priest|Clérigo|PHB-ES|Guerra|PHB-ES|1"
 				}
 			]
 		},
@@ -3036,7 +3031,7 @@
 			"page": 63,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "War",
+			"subclassShortName": "Guerra",
 			"subclassSource": "PHB-ES",
 			"level": 1,
 			"header": 1,
@@ -3050,7 +3045,7 @@
 			"page": 63,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "War",
+			"subclassShortName": "Guerra",
 			"subclassSource": "PHB-ES",
 			"level": 1,
 			"header": 1,
@@ -3064,7 +3059,7 @@
 			"page": 63,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "War",
+			"subclassShortName": "Guerra",
 			"subclassSource": "PHB-ES",
 			"level": 2,
 			"header": 2,
@@ -3081,7 +3076,7 @@
 			"page": 63,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "War",
+			"subclassShortName": "Guerra",
 			"subclassSource": "PHB-ES",
 			"level": 6,
 			"header": 2,
@@ -3098,7 +3093,7 @@
 			"page": 30,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "War",
+			"subclassShortName": "Guerra",
 			"subclassSource": "PHB-ES",
 			"level": 8,
 			"isClassFeatureVariant": true,
@@ -3114,7 +3109,7 @@
 			"page": 63,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "War",
+			"subclassShortName": "Guerra",
 			"subclassSource": "PHB-ES",
 			"level": 8,
 			"header": 2,
@@ -3128,7 +3123,7 @@
 			"page": 63,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "War",
+			"subclassShortName": "Guerra",
 			"subclassSource": "PHB-ES",
 			"level": 17,
 			"header": 2,
@@ -3142,7 +3137,7 @@
 			"page": 125,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Arcana",
+			"subclassShortName": "Conocimiento Arcano",
 			"subclassSource": "SCAG-ES",
 			"level": 1,
 			"entries": [
@@ -3185,7 +3180,7 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Arcane Initiate|Clérigo|PHB-ES|Arcana|SCAG-ES|1"
+					"subclassFeature": "Arcane Initiate|Clérigo|PHB-ES|Conocimiento Arcano|SCAG-ES|1"
 				}
 			]
 		},
@@ -3195,7 +3190,7 @@
 			"page": 125,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Arcana",
+			"subclassShortName": "Conocimiento Arcano",
 			"subclassSource": "SCAG-ES",
 			"level": 1,
 			"header": 1,
@@ -3209,7 +3204,7 @@
 			"page": 125,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Arcana",
+			"subclassShortName": "Conocimiento Arcano",
 			"subclassSource": "SCAG-ES",
 			"level": 2,
 			"header": 2,
@@ -3263,7 +3258,7 @@
 			"page": 125,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Arcana",
+			"subclassShortName": "Conocimiento Arcano",
 			"subclassSource": "SCAG-ES",
 			"level": 6,
 			"header": 2,
@@ -3277,7 +3272,7 @@
 			"page": 30,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Arcana",
+			"subclassShortName": "Conocimiento Arcano",
 			"subclassSource": "SCAG-ES",
 			"level": 8,
 			"isClassFeatureVariant": true,
@@ -3293,7 +3288,7 @@
 			"page": 125,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Arcana",
+			"subclassShortName": "Conocimiento Arcano",
 			"subclassSource": "SCAG-ES",
 			"level": 8,
 			"header": 2,
@@ -3307,7 +3302,7 @@
 			"page": 125,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Arcana",
+			"subclassShortName": "Conocimiento Arcano",
 			"subclassSource": "SCAG-ES",
 			"level": 17,
 			"header": 2,
@@ -3327,7 +3322,7 @@
 			],
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Order",
+			"subclassShortName": "Orden",
 			"subclassSource": "TCE-ES",
 			"level": 1,
 			"entries": [
@@ -3371,11 +3366,11 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Bonus Proficiencies|Clérigo|PHB-ES|Order|TCE-ES|1"
+					"subclassFeature": "Bonus Proficiencies|Clérigo|PHB-ES|Orden|TCE-ES|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Voice of Authority|Clérigo|PHB-ES|Order|TCE-ES|1"
+					"subclassFeature": "Voice of Authority|Clérigo|PHB-ES|Orden|TCE-ES|1"
 				}
 			]
 		},
@@ -3391,7 +3386,7 @@
 			],
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Order",
+			"subclassShortName": "Orden",
 			"subclassSource": "TCE-ES",
 			"level": 1,
 			"header": 1,
@@ -3411,7 +3406,7 @@
 			],
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Order",
+			"subclassShortName": "Orden",
 			"subclassSource": "TCE-ES",
 			"level": 1,
 			"header": 1,
@@ -3432,7 +3427,7 @@
 			],
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Order",
+			"subclassShortName": "Orden",
 			"subclassSource": "TCE-ES",
 			"level": 2,
 			"header": 2,
@@ -3456,7 +3451,7 @@
 			],
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Order",
+			"subclassShortName": "Orden",
 			"subclassSource": "TCE-ES",
 			"level": 6,
 			"header": 2,
@@ -3472,7 +3467,7 @@
 			"page": 31,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Order",
+			"subclassShortName": "Orden",
 			"subclassSource": "TCE-ES",
 			"level": 8,
 			"isClassFeatureVariant": true,
@@ -3494,7 +3489,7 @@
 			],
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Order",
+			"subclassShortName": "Orden",
 			"subclassSource": "TCE-ES",
 			"level": 8,
 			"header": 2,
@@ -3514,7 +3509,7 @@
 			],
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Order",
+			"subclassShortName": "Orden",
 			"subclassSource": "TCE-ES",
 			"level": 17,
 			"header": 2,
@@ -3528,7 +3523,7 @@
 			"page": 32,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Peace",
+			"subclassShortName": "Paz",
 			"subclassSource": "TCE-ES",
 			"level": 1,
 			"entries": [
@@ -3624,11 +3619,11 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Implement of Peace|Clérigo|PHB-ES|Peace|TCE-ES|1"
+					"subclassFeature": "Implement of Peace|Clérigo|PHB-ES|Paz|TCE-ES|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Emboldening Bond|Clérigo|PHB-ES|Peace|TCE-ES|1"
+					"subclassFeature": "Emboldening Bond|Clérigo|PHB-ES|Paz|TCE-ES|1"
 				}
 			]
 		},
@@ -3638,7 +3633,7 @@
 			"page": 32,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Peace",
+			"subclassShortName": "Paz",
 			"subclassSource": "TCE-ES",
 			"level": 1,
 			"header": 1,
@@ -3654,7 +3649,7 @@
 			"page": 32,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Peace",
+			"subclassShortName": "Paz",
 			"subclassSource": "TCE-ES",
 			"level": 1,
 			"header": 1,
@@ -3669,7 +3664,7 @@
 			"page": 32,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Peace",
+			"subclassShortName": "Paz",
 			"subclassSource": "TCE-ES",
 			"level": 2,
 			"header": 2,
@@ -3687,7 +3682,7 @@
 			"page": 32,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Peace",
+			"subclassShortName": "Paz",
 			"subclassSource": "TCE-ES",
 			"level": 6,
 			"header": 2,
@@ -3702,7 +3697,7 @@
 			"page": 32,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Peace",
+			"subclassShortName": "Paz",
 			"subclassSource": "TCE-ES",
 			"level": 8,
 			"isClassFeatureVariant": true,
@@ -3718,7 +3713,7 @@
 			"page": 32,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Peace",
+			"subclassShortName": "Paz",
 			"subclassSource": "TCE-ES",
 			"level": 8,
 			"header": 2,
@@ -3733,7 +3728,7 @@
 			"page": 32,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Peace",
+			"subclassShortName": "Paz",
 			"subclassSource": "TCE-ES",
 			"level": 17,
 			"header": 2,
@@ -3748,7 +3743,7 @@
 			"page": 34,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Twilight",
+			"subclassShortName": "Crepúsculo",
 			"subclassSource": "TCE-ES",
 			"level": 1,
 			"entries": [
@@ -3844,15 +3839,15 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Bonus Proficiencies|Clérigo|PHB-ES|Twilight|TCE-ES|1"
+					"subclassFeature": "Bonus Proficiencies|Clérigo|PHB-ES|Crepúsculo|TCE-ES|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Eyes of Night|Clérigo|PHB-ES|Twilight|TCE-ES|1"
+					"subclassFeature": "Eyes of Night|Clérigo|PHB-ES|Crepúsculo|TCE-ES|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Vigilant Blessing|Clérigo|PHB-ES|Twilight|TCE-ES|1"
+					"subclassFeature": "Vigilant Blessing|Clérigo|PHB-ES|Crepúsculo|TCE-ES|1"
 				}
 			]
 		},
@@ -3862,7 +3857,7 @@
 			"page": 34,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Twilight",
+			"subclassShortName": "Crepúsculo",
 			"subclassSource": "TCE-ES",
 			"level": 1,
 			"header": 1,
@@ -3877,7 +3872,7 @@
 			"page": 34,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Twilight",
+			"subclassShortName": "Crepúsculo",
 			"subclassSource": "TCE-ES",
 			"level": 1,
 			"header": 1,
@@ -3893,7 +3888,7 @@
 			"page": 34,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Twilight",
+			"subclassShortName": "Crepúsculo",
 			"subclassSource": "TCE-ES",
 			"level": 1,
 			"header": 1,
@@ -3908,7 +3903,7 @@
 			"page": 34,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Twilight",
+			"subclassShortName": "Crepúsculo",
 			"subclassSource": "TCE-ES",
 			"level": 2,
 			"header": 2,
@@ -3934,7 +3929,7 @@
 			"page": 34,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Twilight",
+			"subclassShortName": "Crepúsculo",
 			"subclassSource": "TCE-ES",
 			"level": 6,
 			"header": 2,
@@ -3949,7 +3944,7 @@
 			"page": 34,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Twilight",
+			"subclassShortName": "Crepúsculo",
 			"subclassSource": "TCE-ES",
 			"level": 8,
 			"isClassFeatureVariant": true,
@@ -3965,7 +3960,7 @@
 			"page": 34,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Twilight",
+			"subclassShortName": "Crepúsculo",
 			"subclassSource": "TCE-ES",
 			"level": 8,
 			"header": 2,
@@ -3980,7 +3975,7 @@
 			"page": 34,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Twilight",
+			"subclassShortName": "Crepúsculo",
 			"subclassSource": "TCE-ES",
 			"level": 17,
 			"header": 2,
@@ -3995,7 +3990,7 @@
 			"page": 18,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Forge",
+			"subclassShortName": "Forja",
 			"subclassSource": "XGE-ES",
 			"level": 1,
 			"entries": [
@@ -4037,11 +4032,11 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Bonus Proficiency|Clérigo|PHB-ES|Forge|XGE-ES|1"
+					"subclassFeature": "Bonus Proficiency|Clérigo|PHB-ES|Forja|XGE-ES|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Blessing of the Forge|Clérigo|PHB-ES|Forge|XGE-ES|1"
+					"subclassFeature": "Blessing of the Forge|Clérigo|PHB-ES|Forja|XGE-ES|1"
 				}
 			]
 		},
@@ -4051,7 +4046,7 @@
 			"page": 18,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Forge",
+			"subclassShortName": "Forja",
 			"subclassSource": "XGE-ES",
 			"level": 1,
 			"header": 1,
@@ -4066,7 +4061,7 @@
 			"page": 18,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Forge",
+			"subclassShortName": "Forja",
 			"subclassSource": "XGE-ES",
 			"level": 1,
 			"header": 1,
@@ -4080,7 +4075,7 @@
 			"page": 18,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Forge",
+			"subclassShortName": "Forja",
 			"subclassSource": "XGE-ES",
 			"level": 2,
 			"header": 2,
@@ -4099,7 +4094,7 @@
 			"page": 18,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Forge",
+			"subclassShortName": "Forja",
 			"subclassSource": "XGE-ES",
 			"level": 6,
 			"header": 2,
@@ -4120,7 +4115,7 @@
 			"page": 30,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Forge",
+			"subclassShortName": "Forja",
 			"subclassSource": "XGE-ES",
 			"level": 8,
 			"isClassFeatureVariant": true,
@@ -4136,7 +4131,7 @@
 			"page": 18,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Forge",
+			"subclassShortName": "Forja",
 			"subclassSource": "XGE-ES",
 			"level": 8,
 			"header": 2,
@@ -4150,7 +4145,7 @@
 			"page": 18,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Forge",
+			"subclassShortName": "Forja",
 			"subclassSource": "XGE-ES",
 			"level": 17,
 			"header": 2,
@@ -4171,7 +4166,7 @@
 			"page": 19,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Grave",
+			"subclassShortName": "Sepultura",
 			"subclassSource": "XGE-ES",
 			"level": 1,
 			"entries": [
@@ -4212,11 +4207,11 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Circle of Mortality|Clérigo|PHB-ES|Grave|XGE-ES|1"
+					"subclassFeature": "Circle of Mortality|Clérigo|PHB-ES|Sepultura|XGE-ES|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Eyes of the Grave|Clérigo|PHB-ES|Grave|XGE-ES|1"
+					"subclassFeature": "Eyes of the Grave|Clérigo|PHB-ES|Sepultura|XGE-ES|1"
 				}
 			]
 		},
@@ -4226,7 +4221,7 @@
 			"page": 19,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Grave",
+			"subclassShortName": "Sepultura",
 			"subclassSource": "XGE-ES",
 			"level": 1,
 			"header": 1,
@@ -4241,7 +4236,7 @@
 			"page": 19,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Grave",
+			"subclassShortName": "Sepultura",
 			"subclassSource": "XGE-ES",
 			"level": 1,
 			"header": 1,
@@ -4256,7 +4251,7 @@
 			"page": 19,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Grave",
+			"subclassShortName": "Sepultura",
 			"subclassSource": "XGE-ES",
 			"level": 2,
 			"header": 2,
@@ -4274,7 +4269,7 @@
 			"page": 19,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Grave",
+			"subclassShortName": "Sepultura",
 			"subclassSource": "XGE-ES",
 			"level": 6,
 			"header": 2,
@@ -4289,7 +4284,7 @@
 			"page": 30,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Grave",
+			"subclassShortName": "Sepultura",
 			"subclassSource": "XGE-ES",
 			"level": 8,
 			"isClassFeatureVariant": true,
@@ -4305,7 +4300,7 @@
 			"page": 19,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Grave",
+			"subclassShortName": "Sepultura",
 			"subclassSource": "XGE-ES",
 			"level": 8,
 			"header": 2,
@@ -4319,7 +4314,7 @@
 			"page": 19,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Grave",
+			"subclassShortName": "Sepultura",
 			"subclassSource": "XGE-ES",
 			"level": 17,
 			"header": 2,
