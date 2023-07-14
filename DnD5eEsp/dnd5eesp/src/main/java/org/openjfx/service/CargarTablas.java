@@ -17,6 +17,7 @@ import org.openjfx.repositories.TypeTableCRepository;
 import org.openjfx.repositories.TypeTableDRepository;
 import org.openjfx.repositories.TypeTableERepository;
 import org.openjfx.repositories.TypeTableFRepository;
+import org.openjfx.repositories.TypeTableGRepository;
 import org.openjfx.repositories.model.ImportTableModel;
 import org.openjfx.repositories.model.SourcesModel;
 import org.openjfx.repositories.model.TypeTableAModel;
@@ -24,6 +25,7 @@ import org.openjfx.repositories.model.TypeTableCModel;
 import org.openjfx.repositories.model.TypeTableDModel;
 import org.openjfx.repositories.model.TypeTableEModel;
 import org.openjfx.repositories.model.TypeTableFModel;
+import org.openjfx.repositories.model.TypeTableGModel;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -379,6 +381,44 @@ public class CargarTablas extends Service<Void>{
                                 jsonEsp = buscarActDocF(jsonEsp, importTable, listaDatosEsp, dato, source, sourceEsp, text, textEsp, 
                                     classSource, classSourceEsp, className , classNameEsp, level, subclassSource, subclassSourceEsp,
                                     subclassShortName, subclassShortNameEsp);
+                            }
+                        }
+                    } catch (FileNotFoundException e) {
+                        System.out.println("Documento original no encontrado");
+                    }
+                } else if(importTable.getTypeTable().equals("G")) {
+                    try {
+                        BufferedReader bufferedReader = new BufferedReader(new FileReader(rutaDocOriginal));
+                        Gson gson = new GsonBuilder().serializeNulls().create();
+                        JsonObject json = gson.fromJson(bufferedReader, JsonObject.class);
+                        JsonArray listaDatos = json.get(importTable.getFieldName()).getAsJsonArray();
+                        //Recorre la lista original y mira si es uno de los sources a traducir
+                        for (int i = 0; i < listaDatos.size(); i++) {
+                            JsonObject dato = listaDatos.get(i).getAsJsonObject();
+                            String source = dato.get("source").getAsString();
+                            String pantheon = dato.get("pantheon").getAsString();
+                            if(sourcesMap.containsKey(source) && dato.has("name")) {
+                                String text = dato.get("name").getAsString();
+                                String sourceEsp = sourcesMap.get(source).getSourceEsp();
+                                String textEsp = "";
+                                String pantheonEsp = "";
+                                //Guardamos en el map la clave para ver si sobran registros luego en la base de datos
+                                String keyDocument = importTable.getTableId()+"|"+text+"|"+source+"|"+pantheon;
+                                foundMap.put(keyDocument, keyDocument);
+                                //Busca en la tabla si ya esta esta el registro del documento
+                                List<TypeTableGModel> busqueda = TypeTableGRepository.busqueda(importTable.getTableId(), source, "Text", text, 
+                                    pantheon);
+                                if(busqueda.size()>0) {
+                                    //Carga la variable de traducción
+                                    textEsp = busqueda.get(0).getTextEsp();
+                                    pantheonEsp = busqueda.get(0).getPantheonEsp();
+                                } else {
+                                    //Como aún no existe se añade a la tabla de destino
+                                    TypeTableGRepository.alta(importTable.getTableId(), new TypeTableGModel(source, pantheon, text, 
+                                        "", ""));
+                                }
+                                jsonEsp = buscarActDocG(jsonEsp, importTable, listaDatosEsp, dato, source, sourceEsp, text, textEsp, 
+                                    pantheon, pantheonEsp);
                             }
                         }
                     } catch (FileNotFoundException e) {
@@ -783,6 +823,36 @@ public class CargarTablas extends Service<Void>{
             if(!subclassShortNameEsp.isEmpty()) {
                 dato.addProperty("subclassShortName", subclassShortNameEsp);
             }             
+            listaDatosEsp.add(dato);
+            jsonEsp.add(importTable.getFieldName(), listaDatosEsp);
+            System.out.println("Documento "+importTable.getJsonDocument()+" actualizado, registro: "
+                                +text+"|"+source);
+        }
+        return jsonEsp;
+    }
+
+    private static JsonObject buscarActDocG(JsonObject jsonEsp, ImportTableModel importTable, JsonArray listaDatosEsp, 
+            JsonObject dato, String source, String sourceEsp, String text, String textEsp,
+            String pantheon, String pantheonEsp) throws IOException {
+        //Recorre la lista traducida para buscar si ya esta el registro añadido
+        boolean encontradoDocEsp = false;
+        for (int i = 0; i < listaDatosEsp.size(); i++) {
+            JsonObject datoEsp = listaDatosEsp.get(i).getAsJsonObject();
+            String sourceDocEsp = datoEsp.get("source").getAsString();
+            String textDocEsp = datoEsp.get("name").getAsString();
+            String pantheonDocEsp = datoEsp.get("pantheon").getAsString();
+            if((sourceDocEsp.equals(sourceEsp) &&
+                    (textDocEsp.equals(text) ||
+                    textDocEsp.equals(textEsp))) &&
+                    (pantheonDocEsp.equals(pantheon) ||
+                    pantheonDocEsp.equals(pantheonEsp))) {
+                encontradoDocEsp = true;
+                i = listaDatosEsp.size();
+            }
+        }
+        //Si no lo encuentra lo añade al documento
+        if(!encontradoDocEsp) {
+            dato.addProperty("source", sourceEsp);        
             listaDatosEsp.add(dato);
             jsonEsp.add(importTable.getFieldName(), listaDatosEsp);
             System.out.println("Documento "+importTable.getJsonDocument()+" actualizado, registro: "

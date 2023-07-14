@@ -3,9 +3,11 @@ package org.openjfx.repositories.model;
 public class TypeTableGModel {
     public TypeTableGModel() {
     }
-    public TypeTableGModel(String source, String text, String textEsp) {
+    public TypeTableGModel(String source, String pantheon, String text, String pantheonEsp, String textEsp) {
         this.source = source;
+        this.pantheon = pantheon;
         this.text = text;
+        this.pantheonEsp = pantheonEsp;
         this.textEsp = textEsp;
     }
     
@@ -21,11 +23,23 @@ public class TypeTableGModel {
     public void setSource(String source) {
         this.source = source;
     }
+    public String getPantheon() {
+        return pantheon;
+    }
+    public void setPantheon(String pantheon) {
+        this.pantheon = pantheon;
+    }
     public String getText() {
         return text;
     }
     public void setText(String text) {
         this.text = text;
+    }
+    public String getPantheonEsp() {
+        return pantheonEsp;
+    }
+    public void setPantheonEsp(String pantheonEsp) {
+        this.pantheonEsp = pantheonEsp;
     }
     public String getTextEsp() {
         return textEsp;
