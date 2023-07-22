@@ -1222,12 +1222,12 @@
 				}
 			],
 			"subclassFeatures": [
-				"Knowledge Domain|Clérigo|PHB-ES|Conocimiento|PHB-ES|1",
-				"Channel Divinity: Knowledge of the Ages|Clérigo|PHB-ES|Conocimiento|PHB-ES|2",
-				"Channel Divinity: Read Thoughts|Clérigo|PHB-ES|Conocimiento|PHB-ES|6",
-				"Potent Spellcasting|Clérigo|PHB-ES|Conocimiento|PHB-ES|8",
-				"Blessed Strikes|Clérigo|PHB-ES|Conocimiento|PHB-ES|8|TCE-ES",
-				"Visions of the Past|Clérigo|PHB-ES|Conocimiento|PHB-ES|17"
+				"Dominio del Conocimiento|Clérigo|PHB-ES|Conocimiento|PHB-ES|1",
+				"Canalizar Divinidad: Conocimientos de las Eras|Clérigo|PHB-ES|Conocimiento|PHB-ES|2",
+				"Canalizar Divinidad: Leer Pensamientos|Clérigo|PHB-ES|Conocimiento|PHB-ES|6",
+				"Lanzamiento Potente|Clérigo|PHB-ES|Conocimiento|PHB-ES|8",
+				"Golpes Benditos|Clérigo|PHB-ES|Conocimiento|PHB-ES|8|TCE-ES",
+				"Visiones del Pasado|Clérigo|PHB-ES|Conocimiento|PHB-ES|17"
 			]
 		},
 		{
@@ -1994,23 +1994,22 @@
 			]
 		},
 		{
-			"name": "Knowledge Domain",
+			"name": "Dominio del Conocimiento",
 			"source": "PHB-ES",
-			"page": 59,
+			"page": 66,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Conocimiento",
 			"subclassSource": "PHB-ES",
 			"level": 1,
 			"entries": [
-				"The gods of knowledge—including {@deity Oghma}, {@deity Boccob|Greyhawk}, {@deity Gilean|Dragonlance}, {@deity Aureon|Eberron}, and {@deity Thoth|Egyptian}—value learning and understanding above all. Some teach that knowledge is to be gathered and shared in libraries and universities, or promote the practical knowledge of craft and invention. Some deities hoard knowledge and keep its secrets to themselves. And some promise their followers that they will gain tremendous power if they unlock the secrets of the multiverse. Followers of these gods study esoteric lore, collect old tomes, delve into the secret places of the earth, and learn all they can. Some gods of knowledge promote the practical knowledge of craft and invention, including smith deities like {@deity Gond}, {@deity Reorx|Dragonlance}, {@deity Onatar|Eberron}, {@deity Moradin|Nonhuman}, {@deity Hephaestus|Greek}, and {@deity Goibhniu|Celtic}.",
-				"At each indicated cleric level, you add the listed spells to your spells prepared.",
+				"Los dioses del conocimiento, entre los que se incluyen {@deity Oghma|Faerûnense|SCAG-ES}, {@deity Boccob|Falcongrís|PHB-ES}, {@deity Gilean|Dragonlance|PHB-ES}, {@deity Aureon|Eberron|PHB-ES} y {@deity Tot|Egipcio|PHB-ES}, valoran el aprendizaje y el entendimiento por encima de todo. Algunos de ellos enseñan que el conocimiento debe ser reunido y compartido en bibliotecas y universidades, o promueven el saber práctico de la artesanía y la invención. Otras deidades atesoran el conocimiento y se guardan sus secretos solo para ellos. Y ciertos dioses prometen a sus seguidores un tremendo poder si consiguen descifrar los secretos del multiverso. Sus fieles estudian saberes esotéricos, coleccionan volúmenes antiguos, exploran los lugares secretos de la tierra y aprenden todo lo que pueden. Algunos dioses, entre los que se encuentran herreros como {@deity Gond|Faerûnense|SCAG-ES}, {@deity Reorx|Dragonlance|PHB-ES}, {@deity Onatar|Eberron|PHB-ES}, {@deity Moradin|Enano|SCAG-ES}, {@deity Hefesto|Griego|PHB-ES} y {@deity Goibniu|Celta|PHB-ES}, favorecen el conocimiento aplicado de los inventores y artesanos.",
 				{
 					"type": "table",
-					"caption": "Knowledge Domain Spells",
+					"caption": "Conjuros de dominio del Conocimiento",
 					"colLabels": [
-						"Cleric Level",
-						"Spells"
+						"Nivel de clérigo",
+						"Conjuros"
 					],
 					"colStyles": [
 						"col-2 text-center",
@@ -2018,37 +2017,37 @@
 					],
 					"rows": [
 						[
-							"1st",
-							"{@spell command}, {@spell identify}"
+							"1",
+							"{@spell orden imperiosa|PHB-ES}, {@spell identificar|PHB-ES}"
 						],
 						[
-							"3rd",
-							"{@spell augury}, {@spell suggestion}"
+							"3",
+							"{@spell augurio|PHB-ES}, {@spell sugestión|PHB-ES}"
 						],
 						[
-							"5th",
-							"{@spell nondetection}, {@spell speak with dead}"
+							"5",
+							"{@spell indetectable|PHB-ES}, {@spell hablar con los muertos|PHB-ES}"
 						],
 						[
-							"7th",
-							"{@spell arcane eye}, {@spell confusion}"
+							"7",
+							"{@spell ojo arcano|PHB-ES}, {@spell confusión|PHB-ES}"
 						],
 						[
-							"9th",
-							"{@spell legend lore}, {@spell scrying}"
+							"9",
+							"{@spell conocer las leyendas|PHB-ES}, {@spell escudriñar|PHB-ES}"
 						]
 					]
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Blessings of Knowledge|Clérigo|PHB-ES|Conocimiento|PHB-ES|1"
+					"subclassFeature": "Bendiciones del Conocimiento|Clérigo|PHB-ES|Conocimiento|PHB-ES|1"
 				}
 			]
 		},
 		{
-			"name": "Blessings of Knowledge",
+			"name": "Bendiciones del Conocimiento",
 			"source": "PHB-ES",
-			"page": 59,
+			"page": 66,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Conocimiento",
@@ -2056,14 +2055,14 @@
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"At 1st level, you learn two languages of your choice. You also become proficient in your choice of two of the following skills: {@skill Arcana}, {@skill History}, {@skill Nature}, or {@skill Religion}.",
-				"Your proficiency bonus is doubled for any ability check you make that uses either of those skills."
+				"A nivel 1, aprendes dos idiomas de tu elección. También ganas competencia en dos habilidades a elegir de entre las siguientes: {@skill Arcano|PHB-ES}, {@skill Historia|PHB-ES}, {@skill Naturaleza|PHB-ES}, or {@skill Religión|PHB-ES}.",
+				"Tu bonificador por competencia se duplica para cualquier prueba de característica que hagas utilizando cualquiera de las dos habilidades escogidas."
 			]
 		},
 		{
-			"name": "Channel Divinity: Knowledge of the Ages",
+			"name": "Canalizar Divinidad: Conocimientos de las Eras",
 			"source": "PHB-ES",
-			"page": 59,
+			"page": 66,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Conocimiento",
@@ -2071,16 +2070,16 @@
 			"level": 2,
 			"header": 2,
 			"consumes": {
-				"name": "Channel Divinity"
+				"name": "Canalizar Divinidad"
 			},
 			"entries": [
-				"Starting at 2nd level, you can use your Channel Divinity to tap into a divine well of knowledge. As an action, you choose one skill or tool. For 10 minutes, you have proficiency with the chosen skill or tool."
+				"A partir de nivel 2, puedes utilizar tu Canalizar Divinidad para acceder a un repositorio divino de conocimientos. Como acción, escoge una habilidad o herramienta. Durante 10 minutos, poseerás competencia en ella."
 			]
 		},
 		{
-			"name": "Channel Divinity: Read Thoughts",
+			"name": "Canalizar Divinidad: Leer Pensamientos",
 			"source": "PHB-ES",
-			"page": 59,
+			"page": 66,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Conocimiento",
@@ -2088,19 +2087,19 @@
 			"level": 6,
 			"header": 2,
 			"consumes": {
-				"name": "Channel Divinity"
+				"name": "Canalizar Divinidad"
 			},
 			"entries": [
-				"At 6th level, you can use your Channel Divinity to read a creature's thoughts. You can then use your access to the creature's mind to command it.",
-				"As an action, choose one creature that you can see within 60 feet of you. That creature must make a Wisdom saving throw. If the creature succeeds on the saving throw, you can't use this feature on it again until you finish a long rest.",
-				"If the creature fails its save, you can read its surface thoughts (those foremost in its mind, reflecting its current emotions and what it is actively thinking about) when it is within 60 feet of you. This effect lasts for 1 minute.",
-				"During that time, you can use your action to end this effect and cast the {@spell suggestion} spell on the creature without expending a spell slot. The target automatically fails its saving throw against the spell."
+				"A partir de nivel 6, puedes usar tu Canalizar Divinidad para leer los pensamientos de una criatura. Puedes aprovecharte de tu acceso a la mente de la criatura para darle órdenes.",
+				"Como acción, elige a una criatura que puedas ver a 60 pies o menos de ti. Dicho objetivo deberá hacer una tirada de salvación de Sabiduría. Si tiene éxito, no podrás volver a utilizar este rasgo sobre él hasta que termines un descanso largo.",
+				"Si falla, serás capaz de leer sus pensamientos superficiales (los dominantes en este momento, que suelen reflejar sus emociones actuales y en qué está pensando ahora mismo) siempre que se encuentre a 60 pies o menos de ti. Este efecto dura 1 minuto.",
+				"Durante este periodo de tiempo, puedes usar tu acción para dar por concluido el efecto y lanzar el conjuro {@spell sugestión|PHB-ES} sin gastar un espacio de conjuro. El objetivo fallará automáticamente su tirada de salvación contra este conjuro."
 			]
 		},
 		{
-			"name": "Blessed Strikes",
+			"name": "Golpes Benditos",
 			"source": "TCE-ES",
-			"page": 30,
+			"page": 36,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Conocimiento",
@@ -2109,14 +2108,14 @@
 			"isClassFeatureVariant": true,
 			"header": 2,
 			"entries": [
-				"{@i 8th-level cleric {@variantrule optional class features|TCE-ES|optional feature}, which replaces the Potent Spellcasting feature}",
-				"You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
+				"{@i {@variantrule Rasgos de clase opcionales|TCE-ES|Rasgo opcional} de clérigo de nivel 8} que sustituye al rasgo Lanzamiento Potente",
+				"En combate, cuentas con la bendición de una fuerza divina. Cuando una criatura reciba daño de uno de tus trucos o ataques con arma, también podrás causar {@damage 1d8} de daño radiante a esa criatura. Cuando causas este daño, ya no puedes usar este rasgo hasta el principio de tu siguiente turno."
 			]
 		},
 		{
-			"name": "Potent Spellcasting",
+			"name": "Lanzamiento Potente",
 			"source": "PHB-ES",
-			"page": 59,
+			"page": 67,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Conocimiento",
@@ -2124,13 +2123,13 @@
 			"level": 8,
 			"header": 2,
 			"entries": [
-				"Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip."
+				"A partir de nivel 8, puedes añadir tu modificador por Sabiduría al daño que causas con cualquier truco de clérigo."
 			]
 		},
 		{
-			"name": "Visions of the Past",
+			"name": "Visiones del Pasado",
 			"source": "PHB-ES",
-			"page": 59,
+			"page": 67,
 			"className": "Clérigo",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Conocimiento",
@@ -2138,16 +2137,16 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"Starting at 17th level, you can call up visions of the past that relate to an object you hold or your immediate surroundings. You spend at least 1 minute in meditation and prayer, then receive dreamlike, shadowy glimpses of recent events. You can meditate in this way for a number of minutes equal to your Wisdom score and must maintain {@status concentration} during that time, as if you were casting a spell.",
-				"Once you use this feature, you can't use it again until you finish a short or long rest.",
+				"A partir de nivel 17, puedes invocar visiones del pasado relativas a un objeto que sostengas o a tu entorno inmediato. Tras pasar al menos 1 minuto sumido en la meditación y la oración, podrás entrever una imagen sombría y onírica de eventos recientes. Puedes meditar de esta forma durante tantos minutos como tu puntuación de Sabiduría. Deberás pasar este tiempo {@status concentrado|PHB-ES}, como si estuvieras lanzando un conjuro.",
+				"Una vez utilizado este rasgo, deberás terminar un descanso corto o largo para poder volver a usarlo otra vez.",
 				{
 					"type": "entries",
 					"entries": [
 						{
 							"type": "entries",
-							"name": "Object Reading",
+							"name": "Leer un objeto",
 							"entries": [
-								"Holding an object as you meditate, you can see visions of the object's previous owner. After meditating for 1 minute, you learn how the owner acquired and lost the object, as well as the most recent significant event involving the object and that owner. If the object was owned by another creature in the recent past (within a number of days equal to your Wisdom score), you can spend 1 additional minute for each owner to learn the same information about that creature."
+								"Si sostienes un objeto mientras meditas, podrás contemplar visiones de su anterior dueño. Tras meditar durante al menos 1 minuto, descubrirás cómo dicho dueño consiguió y perdió el objeto, así como el evento importante más reciente que haya implicado tanto al objeto como al dueño. Si el objeto tuvo otros dueños en el pasado reciente (tantos días como tu puntuación de Sabiduría o menos), podrás invertir 1 minuto adicional por cada dueño para obtener esta misma información sobre él."
 							]
 						}
 					]
@@ -2157,9 +2156,9 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "Area Reading",
+							"name": "Leer una zona",
 							"entries": [
-								"As you meditate, you see visions of recent events in your immediate vicinity (a room, street, tunnel, clearing, or the like, up to a 50-foot cube), going back a number of days equal to your Wisdom score. For each minute you meditate, you learn about one significant event, beginning with the most recent. Significant events typically involve powerful emotions, such as battles and betrayals, marriages and murders, births and funerals. However, they might also include more mundane events that are nevertheless important in your current situation."
+								"Mientras meditas, puedes vislumbrar visiones de tu entorno inmediato (una habitación, calle, túnel, claro o similar de tamaño igual o inferior a un cubo de 50 pies) que se remontan a tantos días hacia el pasado como tu puntuación de Sabiduría. Por cada minuto que pases meditando descubrirás un suceso importante, empezando por el más reciente. Los eventos de este tipo suelen ser aquellos que implican emociones poderosas, como batallas y traiciones, matrimonios y asesinatos, o nacimientos y funerales. Con todo, también pueden tratarse de sucesos más mundanos que, por la razón que sea, son relevantes para tus circunstancias actuales."
 							]
 						}
 					]

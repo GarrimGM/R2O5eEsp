@@ -1,5 +1,5 @@
 {
-	"background": [		
+	"background": [
 		{
 			"name": "Acólito de Puerta de Baldur",
 			"source": "BGDIA-ES",
@@ -988,7 +988,7 @@
 					"source": "PHB-ES",
 					"page": 127
 				}
-			],			
+			],
 			"skillProficiencies": [
 				{
 					"acrobatics": true,
@@ -1768,7 +1768,7 @@
 					"type": "entries",
 					"entries": [
 						"Los gremios suelen encontrarse en aquellas ciudades lo bastante grandes como para albergar varios artesanos de la misma profesión. Sin embargo, tu gremio podría tratarse de una red informal de artesanos, en la que cada uno trabaja en un pueblo distinto, todos ellos son parte del mismo reino. Habla con tu DM para decidir la naturaleza exacta de tu gremio. Puedes elegir tu oficio de entre los de la tabla siguiente o tirar para determinarlo aleatoriamente.",
-{
+						{
 							"type": "table",
 							"colLabels": [
 								"d20",
@@ -2691,7 +2691,7 @@
 					"source": "PHB-ES",
 					"page": 139
 				}
-			],			
+			],
 			"skillProficiencies": [
 				{
 					"athletics": true,
@@ -7329,7 +7329,7 @@
 					"type": "entries",
 					"entries": [
 						"Los gremios suelen encontrarse en aquellas ciudades lo bastante grandes como para albergar varios artesanos de la misma profesión. Sin embargo, tu gremio podría tratarse de una red informal de artesanos, en la que cada uno trabaja en un pueblo distinto, todos ellos son parte del mismo reino. Habla con tu DM para decidir la naturaleza exacta de tu gremio. Puedes elegir tu oficio de entre los de la tabla siguiente o tirar para determinarlo aleatoriamente.",
-{
+						{
 							"type": "table",
 							"colLabels": [
 								"d20",
@@ -10295,7 +10295,7 @@
 					"type": "entries",
 					"entries": [
 						"Los gremios suelen encontrarse en aquellas ciudades lo bastante grandes como para albergar varios artesanos de la misma profesión. Sin embargo, tu gremio podría tratarse de una red informal de artesanos, en la que cada uno trabaja en un pueblo distinto, todos ellos son parte del mismo reino. Habla con tu DM para decidir la naturaleza exacta de tu gremio. Puedes elegir tu oficio de entre los de la tabla siguiente o tirar para determinarlo aleatoriamente.",
-{
+						{
 							"type": "table",
 							"colLabels": [
 								"d20",
@@ -13757,14 +13757,14 @@
 					"anyStandard": 1,
 					"choose": {
 						"from": [
-							"abyssal",
-							"celestial",
-							"deep speech",
-							"draconic",
-							"infernal",
-							"primordial",
-							"sylvan",
-							"undercommon"
+							"abisal|PHB-ES",
+							"celestial|PHB-ES",
+							"habla de las profundidades|PHB-ES",
+							"dracónico|PHB-ES",
+							"infernal|PHB-ES",
+							"primordial|PHB-ES",
+							"silvano|PHB-ES",
+							"infracomún|PHB-ES"
 						]
 					}
 				}
@@ -14558,6 +14558,754 @@
 						"href": {
 							"type": "internal",
 							"path": "backgrounds/VRGR/Investigator.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Extraviado feérico",
+			"source": "WBtW-ES",
+			"page": 9,
+			"skillProficiencies": [
+				{
+					"deception": true,
+					"survival": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 1,
+					"choose": {
+						"from": [
+							"elfo|PHB-ES",
+							"gnomo|PHB-ES",
+							"goblin|PHB-ES",
+							"silvano|PHB-ES"
+						]
+					}
+				}
+			],
+			"toolProficiencies": [
+				{
+					"musical instrument": true
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"equipmentType": "instrumentMusical"
+						},
+						"ropas de viaje|PHB-ES",
+						{
+							"item": "bagatela de los parajes feéricos|WBtW-ES",
+							"quantity": 3
+						},
+						{
+							"item": "bolsa|PHB-ES",
+							"containsValue": 800
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Competencias en habilidades:",
+							"entry": "{@skill Engaño|PHB-ES}, {@skill Supervivencia|PHB-ES}"
+						},
+						{
+							"type": "item",
+							"name": "Competencias con herramientas:",
+							"entry": "Un tipo de {@filter instrumento musical|items|source=PHB-ES|miscellaneous=mundane|type=instrument}."
+						},
+						{
+							"type": "item",
+							"name": "Idiomas:",
+							"entry": "Uno de tu elección entre {@language elfo|PHB-ES}, {@language gnomo|PHB-ES}, {@language goblin|PHB-ES}, or {@language silvano|PHB-ES}"
+						},
+						{
+							"type": "item",
+							"name": "Equipo:",
+							"entry": "Un {@filter instrumento musical|items|source=PHB-ES|miscellaneous=mundane|type=instrument} de tu elección, un {@item Ropas de viaje|PHB-ES|conjunto de ropas de viaje}, tres bagatelas (para determinarlas, tira en la tabla \"{@item Bagatela de los Parajes Feéricos|WBtW-ES|Bagatelas de los Parajes Feéricos}\") y una {@item bolsa|PHB-ES} que contiene 8 po."
+						}
+					]
+				},
+				{
+					"name": "Rasgo: Conexión con los Parajes Feéricos",
+					"type": "entries",
+					"entries": [
+						"Los oriundos de los Parajes Feéricos te consideran de los suyos, pues reconocen tu carácter y tu conocimiento de las costumbres feéricas. Debido a esto, las criaturas feéricas amistosas suelen acudir en tu ayuda si te pierdes o necesitas ayuda en los Parajes Feéricos."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Marca feérica",
+					"entries": [
+						"Tu estancia en los Parajes Feéricos te transformó y te dejó una marca, que se determina tirando en la tabla \"Marca feérica\".",
+						{
+							"type": "table",
+							"caption": "Marca feérica",
+							"colLabels": [
+								"d8",
+								"Marca feérica"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Tus ojos tienen colores iridiscentes que se mueven."
+								],
+								[
+									"2",
+									"Despides un olor dulce, como el del néctar o la miel."
+								],
+								[
+									"3",
+									"Tienes bigotes largos, como los de un gato."
+								],
+								[
+									"4",
+									"Tienes las orejas cubiertas de pelo suave similar al de un animal."
+								],
+								[
+									"5",
+									"Tu piel brilla a la luz de la luna."
+								],
+								[
+									"6",
+									"Las flores se abren o se marchitan (a tu elección) en tu presencia."
+								],
+								[
+									"7",
+									"Tu cabello son enredaderas o zarzas y vuelve a tener su largo normal 1 hora después de cortarlo."
+								],
+								[
+									"8",
+									"Tienes una cola de perro u otro animal."
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Visitante de los Parajes Feéricos ",
+					"entries": [
+						"Cuando duermes profundamente o entras en trance durante un descanso largo, un espíritu de los Parajes Feéricos podría visitarte si el DM lo desea. Determina de qué espíritu se trata tirando en la tabla \"Visitante de los Parajes Feéricos\". El espíritu no te hará ningún daño durante estas visitas, que pueden durar minutos u horas, y te acuerdas de la interacción al despertar. Durante la conversación, el visitante puede darte todo tipo de información, desde mensajes y consejos hasta sinsentidos y pistas falsas, a discreción del DM. Estas conversaciones siempre se llevan a cabo en un idioma que entiendas, incluso si el visitante de los Parajes Feéricos no habla ese idioma.",
+						{
+							"type": "table",
+							"caption": "Visitante de los Parajes Feéricos",
+							"colLabels": [
+								"d8",
+								"Visitante"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Una criatura despertada (una bestia o una planta normal a la que se la ha lanzado el conjuro {@spell despertar|PHB-ES})"
+								],
+								[
+									"2",
+									"Un {@creature centauro|MM-ES}"
+								],
+								[
+									"3",
+									"Una {@creature dríade|MM-ES}"
+								],
+								[
+									"4",
+									"Un {@creature dragón feérico (Violeta)|MM-ES|dragón feérico}"
+								],
+								[
+									"5",
+									"Un {@creature pixie|MM-ES}"
+								],
+								[
+									"6",
+									"Un {@creature sátiro|MM-ES}"
+								],
+								[
+									"7",
+									"Un {@creature duende|MM-ES}"
+								],
+								[
+									"8",
+									"Un {@creature unicornio|MM-ES}"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Atributos de los personajes",
+					"entries": [
+						"Cuando los jugadores elijan trasfondos para sus personajes, pueden usar las siguientes tablas para determinar sus rasgos de personalidad, ideales, vínculos y defectos. Los jugadores pueden usar estas tablas en lugar de las que aparecen en el {@book Player's Handbook|PHB-ES|Manual del Jugador}, o también mezclarlas y combinarlas. Si el resultado no pega con el personaje, el jugador puede tirar de nuevo o elegir una opción más apropiada de la tabla.",
+						"Estas tablas son opcionales pero se adaptan bien a las aventuras en los Parajes Feéricos y son ideales para cualquier personaje que tenga el trasfondo de extraviado feérico o peón de Brujaluz.",
+						{
+							"type": "table",
+							"caption": "Rasgos de personalidad",
+							"colLabels": [
+								"d8",
+								"Rasgo"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Me atormentan unas risas feéricas que solo yo puedo oír, aunque sé que es solo mi mente, que me juega una mala pasada."
+								],
+								[
+									"2",
+									"Soy como un nómada y no puedo quedarme en un lugar por mucho tiempo."
+								],
+								[
+									"3",
+									"La buena música me hace llorar como un bebé."
+								],
+								[
+									"4",
+									"Dondequiera que voy, trato de llevar conmigo un poco de la calidez y la tranquilidad de mi hogar."
+								],
+								[
+									"5",
+									"Nunca perdí la capacidad de maravillarse que tienen los niños."
+								],
+								[
+									"6",
+									"Cuando tengo una idea nueva, me emociono mucho hasta que se me ocurre otra idea mejor."
+								],
+								[
+									"7",
+									"Vivo según mis raras y maravillosas reglas."
+								],
+								[
+									"8",
+									"No consigo confiar en la mayoría de los adultos."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Ideales",
+							"colLabels": [
+								"d8",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Amistad. Nunca abandonaré a un amigo. (Bueno)"
+								],
+								[
+									"2",
+									"Empatía. Ninguna criatura merece sufrir. (Bueno)"
+								],
+								[
+									"3",
+									"Espíritu viajero. Prefiero ir por los caminos menos transitados. (Caótico)"
+								],
+								[
+									"4",
+									"Mutabilidad. Como los cambios son buenos, en mi vida sigo unas reglas que cambian todo el rato. (Caótico)"
+								],
+								[
+									"5",
+									"Honor. Un trato es un trato, y nunca rompería uno. (Legal)"
+								],
+								[
+									"6",
+									"La Regla del Tres. En el multiverso, todo pasa de tres en tres, y veo la \"Regla del Tres\" por todas partes. (Legal)"
+								],
+								[
+									"7",
+									"Obsesión. Los rencores los guardo para siempre. (Malvado)"
+								],
+								[
+									"8",
+									"Codicia. Haré lo que haga falta para conseguir lo que quiero, sin importar el daño que cause. (Malvado)"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Vínculos",
+							"colLabels": [
+								"d8",
+								"Vínculo"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Nunca faltaría a mi palabra."
+								],
+								[
+									"2",
+									"Me fascina la magia en sus múltiples manifestaciones. Cuanto más mágico sea un lugar, más me atrae."
+								],
+								[
+									"3",
+									"Hago lo que puedo para proteger el mundo natural."
+								],
+								[
+									"4",
+									"Para mí, un amigo de confianza es lo más importante del multiverso."
+								],
+								[
+									"5",
+									"Soy incapaz de hacer daño a una criatura feérica, ya sea porque me considero una o porque temo las consecuencias."
+								],
+								[
+									"6",
+									"La feria Brujaluz es como mi hogar."
+								],
+								[
+									"7",
+									"Los Parajes Feéricos me llaman y anhelo volver, aunque solo sea durante un rato."
+								],
+								[
+									"8",
+									"Me siento en deuda con el {@creature señor Bruja|WBtW-ES} y el {@creature señor Luz|WBtW-ES} por darme un hogar y un propósito."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Defectos",
+							"colLabels": [
+								"d8",
+								"Defecto"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Pierdo fácilmente la noción del tiempo, por lo que siempre llego tarde adonde sea."
+								],
+								[
+									"2",
+									"Siento que todo el multiverso va a por mí."
+								],
+								[
+									"3",
+									"Siempre voy con el tiempo justo y me obsesiona que todo se haga con puntualidad."
+								],
+								[
+									"4",
+									"Sufro de cleptomanía y siempre ando buscando tesoros brillantes."
+								],
+								[
+									"5",
+									"Me despisto mucho. A veces ni me acuerdo de las cosas más simples."
+								],
+								[
+									"6",
+									"Nunca doy nada gratis y siempre espero recibir algo a cambio."
+								],
+								[
+									"7",
+									"Tengo muchos vicios y suelo caer en ellos."
+								],
+								[
+									"8",
+									"Siempre estoy cambiando de opinión; bueno, casi siempre."
+								]
+							]
+						}
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Creciste en los Parajes Feéricos tras desaparecer de tu plano natal a muy corta edad. Tal vez un feérico amable que pensaba que el destino te deparaba grandes cosas te llevó a sus tierras. O puede que encontrases por casualidad una travesía feérica mientras paseabas por el bosque al atardecer. O quizá te secuestró un feérico malvado, pero escapaste de sus garras. Independientemente de cómo desaparecieras, poco a poco caíste bajo el embrujo de los Parajes Feéricos y aprendiste un poco sobre la naturaleza de los granujillas volubles que moran allí.",
+					"Cuando por fin regresaste a tu plano de origen, algo en ti había cambiado. Te obsesiona la idea de que los Parajes Feéricos, un mundo especular escondido tras el fino velo de la percepción, estén tan cerca que casi se pueden rozar. Aunque tus recuerdos de los Parajes Feéricos son cada vez más borrosos con cada día que pasa, tu corazón se agita con una mezcla de miedo y alegría ante la perspectiva de regresar al Plano Feérico, tu segundo y lejano hogar."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "backgrounds/WBtW/Feylost.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Peón de Brujaluz",
+			"source": "WBtW-ES",
+			"page": 11,
+			"skillProficiencies": [
+				{
+					"performance": true,
+					"sleight of hand": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 1
+				}
+			],
+			"toolProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"útiles para disfrazarse",
+							"instrumento musical"
+						]
+					}
+				}
+			],
+			"startingEquipment": [
+				{
+					"a": [
+						"útiles para disfrazarse|PHB-ES"
+					],
+					"b": [
+						{
+							"equipmentType": "instrumentMusical"
+						}
+					]
+				},
+				{
+					"_": [
+						{
+							"special": "baraja de cartas"
+						},
+						"ropas, disfraz|PHB-ES",
+						"bagatela de los parajes feéricos|WBtW-ES",
+						{
+							"item": "bolsa|PHB-ES",
+							"containsValue": 800
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Competencias en habilidades:",
+							"entry": "{@skill Interpretación|PHB-ES}, {@skill Juego de Manos|PHB-ES}."
+						},
+						{
+							"type": "item",
+							"name": "Competencias con herramientas:",
+							"entry": "{@item Útiles para disfrazarse|PHB-ES} o un tipo de {@filter instrumento musical|items|source=PHB-ES|miscellaneous=mundane|type=instrument}."
+						},
+						{
+							"type": "item",
+							"name": "Idiomas:",
+							"entry": "Uno de tu elección."
+						},
+						{
+							"type": "item",
+							"name": "Equipo:",
+							"entry": "{@item Útiles para disfrazarse|PHB-ES} o un {@filter instrumento musical|items|source=PHB-ES|miscellaneous=mundane|type=instrument} de tu elección, una baraja de cartas, un uniforme o {@item Ropas, disfraz|PHB-ES|disfraz} de la feria, una bagatela (se determina tirando en la tabla \"{@item Bagatela de los Parajes Feéricos|WBtW-ES|Bagatelas de los Parajes Feéricos}\") y una {@item bolsa|PHB-ES} que contiene 8 po."
+						}
+					]
+				},
+				{
+					"name": "Rasgo: Integrante de la Feria",
+					"type": "entries",
+					"entries": [
+						"La feria Brujaluz te ofrece comida y alojamiento modestos de forma gratuita. Además, puedes pasearte por la feria y disfrutar de sus magníficas atracciones sin coste alguno, siempre que no interrumpas los espectáculos ni causes ningún otro problema."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"type": "entries",
+					"name": "Compañero de la feria",
+					"entries": [
+						"Con los años, te has ganado la amistad de otro integrante de la feria. Tira {@dice 1d8} y consulta la tabla \"Compañero de la feria\" para decidir quién o qué es tu amigo. Si no, también puedes elegir una opción que te guste. Colabora con tu DM para desarrollar esta figura amistosa. Este compañero tratará contigo mientras estés en la feria, pero no abandonará el recinto voluntariamente.",
+						"Como DM, puedes usar el perfil del {@creature peón de Brujaluz (Mediano)|WBtW-ES|peón de Brujaluz} del {@adventure capítulo 1|WBtW-ES|1} para representar a los peones, los artistas y los entrenadores de animales que pueden ser compañeros. Los perfiles de los otros compañeros están en el {@book Monster Manual|MM-ES|Manual de Monstruos}.",
+						{
+							"type": "table",
+							"caption": "Compañero de la feria",
+							"colLabels": [
+								"d8",
+								"Compañero"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Un peón de Brujaluz viejo y cascarrabias"
+								],
+								[
+									"2",
+									"Un peón de Brujaluz joven e impresionable"
+								],
+								[
+									"3",
+									"Un artista (como un acróbata, un payaso o un músico)"
+								],
+								[
+									"4",
+									"Un artista retirado"
+								],
+								[
+									"5",
+									"Un entrenador de animales experimentado"
+								],
+								[
+									"6",
+									"Un {@creature perro intermitente|MM-ES} viejo"
+								],
+								[
+									"7",
+									"Un {@creature duende|MM-ES} alegre"
+								],
+								[
+									"8",
+									"Una lucecita mágica inofensiva (no se necesita un perfil) que tiene una velocidad volando de 30 pies, levita y emite luz brillante en un radio de 5 pies y luz tenue 5 pies más allá."
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"name": "Atributos de los personajes",
+					"entries": [
+						"Cuando los jugadores elijan trasfondos para sus personajes, pueden usar las siguientes tablas para determinar sus rasgos de personalidad, ideales, vínculos y defectos. Los jugadores pueden usar estas tablas en lugar de las que aparecen en el {@book Player's Handbook|PHB-ES|Manual del Jugador}, o también mezclarlas y combinarlas. Si el resultado no pega con el personaje, el jugador puede tirar de nuevo o elegir una opción más apropiada de la tabla.",
+						"Estas tablas son opcionales pero se adaptan bien a las aventuras en los Parajes Feéricos y son ideales para cualquier personaje que tenga el trasfondo de extraviado feérico o peón de Brujaluz.",
+						{
+							"type": "table",
+							"caption": "Rasgos de personalidad",
+							"colLabels": [
+								"d8",
+								"Rasgo"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Me atormentan unas risas feéricas que solo yo puedo oír, aunque sé que es solo mi mente, que me juega una mala pasada."
+								],
+								[
+									"2",
+									"Soy como un nómada y no puedo quedarme en un lugar por mucho tiempo."
+								],
+								[
+									"3",
+									"La buena música me hace llorar como un bebé."
+								],
+								[
+									"4",
+									"Dondequiera que voy, trato de llevar conmigo un poco de la calidez y la tranquilidad de mi hogar."
+								],
+								[
+									"5",
+									"Nunca perdí la capacidad de maravillarse que tienen los niños."
+								],
+								[
+									"6",
+									"Cuando tengo una idea nueva, me emociono mucho hasta que se me ocurre otra idea mejor."
+								],
+								[
+									"7",
+									"Vivo según mis raras y maravillosas reglas."
+								],
+								[
+									"8",
+									"No consigo confiar en la mayoría de los adultos."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Ideales",
+							"colLabels": [
+								"d8",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Amistad. Nunca abandonaré a un amigo. (Bueno)"
+								],
+								[
+									"2",
+									"Empatía. Ninguna criatura merece sufrir. (Bueno)"
+								],
+								[
+									"3",
+									"Espíritu viajero. Prefiero ir por los caminos menos transitados. (Caótico)"
+								],
+								[
+									"4",
+									"Mutabilidad. Como los cambios son buenos, en mi vida sigo unas reglas que cambian todo el rato. (Caótico)"
+								],
+								[
+									"5",
+									"Honor. Un trato es un trato, y nunca rompería uno. (Legal)"
+								],
+								[
+									"6",
+									"La Regla del Tres. En el multiverso, todo pasa de tres en tres, y veo la \"Regla del Tres\" por todas partes. (Legal)"
+								],
+								[
+									"7",
+									"Obsesión. Los rencores los guardo para siempre. (Malvado)"
+								],
+								[
+									"8",
+									"Codicia. Haré lo que haga falta para conseguir lo que quiero, sin importar el daño que cause. (Malvado)"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Vínculos",
+							"colLabels": [
+								"d8",
+								"Vínculo"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Nunca faltaría a mi palabra."
+								],
+								[
+									"2",
+									"Me fascina la magia en sus múltiples manifestaciones. Cuanto más mágico sea un lugar, más me atrae."
+								],
+								[
+									"3",
+									"Hago lo que puedo para proteger el mundo natural."
+								],
+								[
+									"4",
+									"Para mí, un amigo de confianza es lo más importante del multiverso."
+								],
+								[
+									"5",
+									"Soy incapaz de hacer daño a una criatura feérica, ya sea porque me considero una o porque temo las consecuencias."
+								],
+								[
+									"6",
+									"La feria Brujaluz es como mi hogar."
+								],
+								[
+									"7",
+									"Los Parajes Feéricos me llaman y anhelo volver, aunque solo sea durante un rato."
+								],
+								[
+									"8",
+									"Me siento en deuda con el {@creature señor Bruja|WBtW-ES} y el {@creature señor Luz|WBtW-ES} por darme un hogar y un propósito."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"caption": "Defectos",
+							"colLabels": [
+								"d8",
+								"Defecto"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"Pierdo fácilmente la noción del tiempo, por lo que siempre llego tarde adonde sea."
+								],
+								[
+									"2",
+									"Siento que todo el multiverso va a por mí."
+								],
+								[
+									"3",
+									"Siempre voy con el tiempo justo y me obsesiona que todo se haga con puntualidad."
+								],
+								[
+									"4",
+									"Sufro de cleptomanía y siempre ando buscando tesoros brillantes."
+								],
+								[
+									"5",
+									"Me despisto mucho. A veces ni me acuerdo de las cosas más simples."
+								],
+								[
+									"6",
+									"Nunca doy nada gratis y siempre espero recibir algo a cambio."
+								],
+								[
+									"7",
+									"Tengo muchos vicios y suelo caer en ellos."
+								],
+								[
+									"8",
+									"Siempre estoy cambiando de opinión; bueno, casi siempre."
+								]
+							]
+						}
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Llegaste muy joven o de adolescente a la feria Brujaluz y dejaste tu pasado atrás, ganándote un lugar entre quienes trabajan entre bastidores para que la feria siga funcionando. Como peón, trabajas mucho, pero te lo pasas de fábula. La feria te ha llevado a muchos mundos fantásticos y vuelves a tu mundo natal cada ocho años, pero no sabes casi nada sobre estos lugares porque pasas todo el tiempo en la feria. Conoces bien a los otros peones, pero los propietarios de la feria, el señor Bruja y el señor Luz, siguen siendo un misterio para ti incluso después de tantos años.",
+					"Tal vez te uniste a la feria para escapar de una mala vida en tu hogar, o quizá te encandiló la idea de visitar nuevos lugares o el sueño de convertirte en una estrella del espectáculo. Ahora que has madurado, la vida en la feria ha perdido parte de su encanto. La rutina diaria se te antoja tediosa y los viajes cíclicos de la compañía resultan monótonos. El mundo de fantasía de la feria ya no te llena, pero quizá vivas grandes aventuras si sales de ella."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "backgrounds/WBtW/Witchlight Hand.png"
 						}
 					}
 				]

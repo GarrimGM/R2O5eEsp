@@ -29018,6 +29018,1016 @@
 				"Recibes un bonificador de +1 a la CA y no puedes ser {@condition asustado|PHB-ES} ni {@condition hechizado|PHB-ES}. Además, todas las criaturas de tu elección a 30 pies o menos de ti tienen ventaja en las tiradas de salvación para evitar los estados de {@condition asustado|PHB-ES} o {@condition hechizado|PHB-ES} o poner fin a esos estados sobre sí mismas.",
 				"Cuando fueras a recibir daño del tipo causado por el aliento del dragón en cuyo tesoro el adorno pasó al estado \"despierto\", puedes usar tu reacción para no recibir ningún daño y recuperar una cantidad de puntos de golpe igual al daño que habrías recibido. Una vez utilizada, esta propiedad no puede volver a usarse hasta el siguiente amanecer."
 			]
+		},
+		{
+			"name": "Rosa cromática negra",
+			"source": "WBtW-ES",
+			"page": 213,
+			"resist": [
+				"acid"
+			],
+			"detail1": "gotea ácido",
+			"rarity": "rare",
+			"wondrous": true,
+			"hasRefs": true,
+			"entries": [
+				"{#itemEntry Rosa cromática|WBtW-ES}"
+			]
+		},
+		{
+			"name": "Rosa cromática azul",
+			"source": "WBtW-ES",
+			"page": 213,
+			"resist": [
+				"lightning"
+			],
+			"detail1": "crepita con relámpagos",
+			"rarity": "rare",
+			"wondrous": true,
+			"hasRefs": true,
+			"entries": [
+				"{#itemEntry Rosa cromática|WBtW-ES}"
+			]
+		},
+		{
+			"name": "Nenúfar oscilante",
+			"source": "WBtW-ES",
+			"page": 211,
+			"rarity": "very rare",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"Este vehículo mágico es una hoja de 10 pies de diámetro que flota en el agua. Posee unos zarcillos que lo propulsan por tierra y por la superficie del agua (pero no bajo esta), así como por el aire. Tiene una velocidad caminando, nadando y volando de 20 pies y puede levitar. Se mueve según las indicaciones orales que se le den mientras se va montado en él.",
+				"El nenúfar puede transportar un peso de hasta 150 kg (300 libras) sin impedimentos. Puede transportar hasta el doble de ese peso, pero se mueve a la mitad de su velocidad si transporta más carga de su capacidad normal."
+			]
+		},
+		{
+			"name": "Polvo corrosivo",
+			"source": "WBtW-ES",
+			"page": 212,
+			"rarity": "uncommon",
+			"wondrous": true,
+			"entries": [
+				"Como acción, puedes lanzar este polvo al aire para llenar un cubo de 10 pies que se extenderá desde ti. Las superficies y los objetos hechos de metal férrico no mágico que estén en la zona se corroerán al instante y se convertirán en polvo, volviéndose inútiles e irrecuperables. Cualquier criatura situada en la zona que esté hecha total o parcialmente de metal férrico deberá hacer una tirada de salvación de Constitución con CD 13: sufrirá {@damage 4d8} de daño necrótico si la falla o la mitad del daño si la supera.",
+				"Este polvo se presenta en un paquete pequeño y está hecho de antenas de monstruo corrosivo finamente molidas. En cada paquete hay polvo para un solo uso."
+			]
+		},
+		{
+			"name": "Bastón sobrenatural",
+			"source": "WBtW-ES",
+			"page": 208,
+			"srd": true,
+			"type": "M",
+			"rarity": "very rare",
+			"reqAttune": true,
+			"weight": 4,
+			"weaponCategory": "simple",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8",
+			"bonusWeapon": "+1",
+			"recharge": "dawn",
+			"rechargeAmount": "{@dice 1d6 + 4}",
+			"charges": 10,
+			"staff": true,
+			"entries": [
+				"Este bastón se puede usar a modo de bastón mágico que otorga un bonificador de +1 a las tiradas de ataque y de daño.",
+				"El bastón tiene 10 cargas y recupera {@dice 1d6 + 4} cargas empleadas cada día, al amanecer. Si gastas la última carga, tira {@dice d20}. Si el resultado es 1, el bastón se destruye en un estallido de energía sobrenatural que, por lo demás, es inofensiva.",
+				{
+					"type": "entries",
+					"name": "Ataque sobrenatural",
+					"entries": [
+						"Cuando impactes con un ataque cuerpo a cuerpo con el bastón, podrás gastar hasta 3 cargas. Por cada carga gastada, el objetivo recibirá {@damage 1d8} de daño de relámpago adicional."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Huida sobrenatural",
+					"entries": [
+						"Si recibes daño mientras sostienes el bastón, puedes usar tu reacción para gastar 3 cargas, tras lo que te volverás {@condition invisible|PHB-ES} y te teletransportarás, junto con cualquier equipo que vistas o lleves contigo, hasta 60 pies a un espacio sin ocupar que puedas ver. Permanecerás {@condition invisible|PHB-ES} hasta el principio de tu siguiente turno o hasta que ataques, lances un conjuro 0 inflijas daño."
+					]
+				}
+			]
+		},
+		{
+			"name": "Bagatela de los Parajes Feéricos",
+			"source": "WBtW-ES",
+			"page": 7,
+			"type": "G",
+			"rarity": "none",
+			"entries": [
+				"La tabla \"Bagatelas de los Parajes Feéricos\" que hay a continuación presenta una selección de bagatelas apropiadas para aventuras que, como esta, discurren en los Parajes Feéricos. Los jugadores cuyos personajes tengan el trasfondo de extraviado feérico o peón de Brujaluz pueden tirar en esta tabla en lugar de la tabla \"{@book Bagatelas|PHB-ES|5|Bagatelas}\" del {@book Player's Handbook|PHB-ES|Manual del Jugador} para determinar qué bagatelas tienen sus personajes. La aventura incluye algunos encuentros que te harán tirar en esta tabla para determinar qué bagatelas encuentran los personajes en ciertos lugares clave.",
+				{
+					"type": "table",
+					"caption": "Bagatelas de los Parajes Feéricos",
+					"colLabels": [
+						"d100",
+						"Bagatela"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"01",
+							"Un molde de galletas con forma de unicornio"
+						],
+						[
+							"02",
+							"Dos anillos de tejo entrelazados"
+						],
+						[
+							"03",
+							"Un espejo de mano plateado con un mango en forma de ninfa"
+						],
+						[
+							"04",
+							"Una llave de madera pintada cuyos dientes cambian cada amanecer"
+						],
+						[
+							"05",
+							"Un delicado camafeo de plata con imágenes de niños gemelos, uno frente a otro"
+						],
+						[
+							"06",
+							"Un colgante dorado con un abalorio en forma de leprechaun"
+						],
+						[
+							"07",
+							"Una diminuta caja de madera que contiene equipo de croquet para pixies o duendes"
+						],
+						[
+							"08",
+							"Unas diminutas y afiladas tijeras de hierro"
+						],
+						[
+							"09",
+							"Una pieza de ajedrez con forma de sátiro danzante que lleva sombrero de obispo y empuña un bastón nudoso"
+						],
+						[
+							"10",
+							"Un salero con forma de torre de mago"
+						],
+						[
+							"11",
+							"Un orbe de cristal que ayuda a dormirse al elfo que lo sujete"
+						],
+						[
+							"12",
+							"Un colgante con las fases de la luna"
+						],
+						[
+							"13",
+							"Una uña grande de hierro"
+						],
+						[
+							"14",
+							"Un silbato de electro diminuto que solo pueden oír los feéricos"
+						],
+						[
+							"15",
+							"Una pieza de rompecabezas de madera del tamaño de un plato de té, con un dibujo de una jarra"
+						],
+						[
+							"16",
+							"Un carrete de hilo de plata brillante"
+						],
+						[
+							"17",
+							"La partitura de una pieza de música que, cantada o tocada, molesta mucho a los goblins"
+						],
+						[
+							"18",
+							"Un diente de ogro podrido en el que está grabado el glifo élfico de la luna"
+						],
+						[
+							"19",
+							"El ojo vitrificado de una bestia trémula"
+						],
+						[
+							"20",
+							"Un diminuto ataúd de madera oscura que contiene las cenizas de un troll"
+						],
+						[
+							"21",
+							"Una antigua invitación a un banquete en la Corte del Verano, escrita en silvano con tinta sobre vitela"
+						],
+						[
+							"22",
+							"Un chal de gasa que brilla débilmente a la luz de la luna"
+						],
+						[
+							"23",
+							"Un juguete de bola y cazoleta que emite una musiquilla triunfal cuando se mete la bola en la cazoleta"
+						],
+						[
+							"24",
+							"Un cráneo de duende cubierto de huellas de dedos con tinta"
+						],
+						[
+							"25",
+							"Un tenedor plateado con los dientes exteriores doblados hacia los lados"
+						],
+						[
+							"26",
+							"Un calcetín manchado de hollín en el que cada amanecer aparece mágicamente una pepita de carbón"
+						],
+						[
+							"27",
+							"Un taburete de madera diminuto para un pixie o un duende que clava astillas a quienes lo sostienen"
+						],
+						[
+							"28",
+							"Una libélula mecánica diminuta que bate lentamente las alas (pero no puede volar) cuando se le da cuerda"
+						],
+						[
+							"29",
+							"Un unicornio de juguete hecho de madera y pintado con colores vivos"
+						],
+						[
+							"30",
+							"Un peluche de pixie que canta al apretarlo"
+						],
+						[
+							"31",
+							"Una pintura de 6 cm cuadrados de un elfo durmiendo"
+						],
+						[
+							"32",
+							"Un dedal que te hace soñar despierto si te lo pones"
+						],
+						[
+							"33",
+							"Una magdalena de calabaza que mágicamente se regenera en su envoltorio cada amanecer"
+						],
+						[
+							"34",
+							"Un naipe falso de Apuesta de los Tres Dragones con un dragón feérico"
+						],
+						[
+							"35",
+							"Una taza de té hecha con el sombrero barnizado de una seta que mágicamente mantiene calientes los líquidos"
+						],
+						[
+							"36",
+							"Una roca que flota y cabe en el puño"
+						],
+						[
+							"37",
+							"Una botella diminuta llena de lluvia de los Parajes Feéricos"
+						],
+						[
+							"38",
+							"Una caracola opalescente que se ríe cuando te la acercas a la oreja"
+						],
+						[
+							"39",
+							"Un vial de líquido viscoso con una etiqueta que pone: \"Saliva de fomoré. ¡No beber!\""
+						],
+						[
+							"40",
+							"Una vela de cera que, al encenderse, crepita como una hoguera"
+						],
+						[
+							"41",
+							"Una maceta con un narciso que se balancea si hay música cerca"
+						],
+						[
+							"42",
+							"Una botella de vino de cuarto de litro hecha de un vidrio que, si se rompe, se repara mágicamente 1 minuto después"
+						],
+						[
+							"43",
+							"Un diminuto mascarón de proa de madera en forma de sílfide que pertenecía a una maqueta"
+						],
+						[
+							"44",
+							"Un diminuto caldero en forma de calabaza tallado a partir de madera de turbera"
+						],
+						[
+							"45",
+							"Una pastilla de jabón que huele a algo de tu infancia"
+						],
+						[
+							"46",
+							"Un pedazo de pergamino naranja doblado para que parezca un caballero montado en unicornio"
+						],
+						[
+							"47",
+							"Unas gafas con unos cristales tintados tan oscuros que no se puede ver a través de ellos"
+						],
+						[
+							"48",
+							"Una figurilla de vidrio de una hormiga de 20 cm de largo"
+						],
+						[
+							"49",
+							"Un pedazo de pergamino con un dibujo infantil de un oni"
+						],
+						[
+							"50",
+							"Un reloj de arena diminuto sin arena"
+						],
+						[
+							"51",
+							"Un vial vacío con corchos en las partes superior e inferior"
+						],
+						[
+							"52",
+							"Un par de botas verdes de leprechaun atadas por los cordones"
+						],
+						[
+							"53",
+							"Una pipa hecha con la raíz de un árbol"
+						],
+						[
+							"54",
+							"Un gorro rojo que cuelga hasta los hombros cuando te lo pones"
+						],
+						[
+							"55",
+							"Una máscara que hace que te acuerdes de los sueños si te la pones mientras duermes"
+						],
+						[
+							"56",
+							"Un cuaderno que solo muestra lo que está escrito si se sostiene del revés"
+						],
+						[
+							"57",
+							"Una peonza de madera con cuatro caras, cada una con la imagen de un niño feliz en una estación diferente"
+						],
+						[
+							"58",
+							"Una diminuta peluca alta para duendes o pixies"
+						],
+						[
+							"59",
+							"Un ratoncito de madera que chilla cuando lo sujetas"
+						],
+						[
+							"60",
+							"Un oni de peluche con una sonrisa espeluznante al que le falta un ojo"
+						],
+						[
+							"61",
+							"Una bolsa vacía en la que pone \"Caramelos\""
+						],
+						[
+							"62",
+							"Un monóculo de vidrio tintado que te hace ver todo en verde"
+						],
+						[
+							"63",
+							"Una capucha de verdugo negra para un pixie o duende"
+						],
+						[
+							"64",
+							"Una tecla de piano hecha de cuerno de sátiro"
+						],
+						[
+							"65",
+							"Un laúd de madera diminuto con pelos de gato por cuerdas"
+						],
+						[
+							"66",
+							"Una aguja de hierro con un ojo en el que es imposible enhebrar un hilo"
+						],
+						[
+							"67",
+							"Un reloj de sol diminuto que solo proyecta sombra a la luz de la luna"
+						],
+						[
+							"68",
+							"Una flauta de pan que atrae a fauna local inofensiva"
+						],
+						[
+							"69",
+							"Una piña de árbol plateada"
+						],
+						[
+							"70",
+							"Un frasco de luciérnagas espectrales que cambian de color según el estado de ánimo de quien lo sostiene"
+						],
+						[
+							"71",
+							"Una manzana de madera pintada de azul"
+						],
+						[
+							"72",
+							"Un diapasón que emite un fa"
+						],
+						[
+							"73",
+							"Un nunchaku para un pixie o duende"
+						],
+						[
+							"74",
+							"Una moneda de cobre con un sátiro sonriente en una cara y un cráneo de sátiro en la otra"
+						],
+						[
+							"75",
+							"Una pata de pollo atada a un cordón de cuero"
+						],
+						[
+							"76",
+							"Una cajita de madera diminuta con dientes de leche"
+						],
+						[
+							"77",
+							"Un molinillo que gira incluso si no hay viento"
+						],
+						[
+							"78",
+							"Una sombrilla infantil cubierta de musgo y hojas"
+						],
+						[
+							"79",
+							"Una lupa de madera sin lente"
+						],
+						[
+							"80",
+							"Un hongo brillante con un sombrero rojo acampanado que tintinea al agitarse"
+						],
+						[
+							"81",
+							"Una bolsita de semillas cuyo olor te evoca tu hogar"
+						],
+						[
+							"82",
+							"Un huevo petrificado de petirrojo"
+						],
+						[
+							"83",
+							"Una cuchara de madera con un agujero en el centro"
+						],
+						[
+							"84",
+							"Un nido de avispas de papel metido en un jarro"
+						],
+						[
+							"85",
+							"Un manojo de romero atado con una cinta en un extremo"
+						],
+						[
+							"86",
+							"Una casa de muñecas diminuta y sin muebles para jóvenes pixies"
+						],
+						[
+							"87",
+							"Un pincel hecho completamente de cerámica, incluso las cerdas"
+						],
+						[
+							"88",
+							"Un candelero cuya luz parece una diminuta hada danzante hecha de fuego"
+						],
+						[
+							"89",
+							"Una montura de gafas en forma de alas de mariposa"
+						],
+						[
+							"90",
+							"Una dentadura postiza de madera"
+						],
+						[
+							"91",
+							"Un libro diminuto de cuentos de hadas"
+						],
+						[
+							"92",
+							"Una mochila en la que aparece mágicamente una patata cada amanecer"
+						],
+						[
+							"93",
+							"Una chaqueta de invierno para pixies forrada con piel de zorro"
+						],
+						[
+							"94",
+							"Un marcador de copas en forma de duende y con borlas"
+						],
+						[
+							"95",
+							"Una varita magnética débil"
+						],
+						[
+							"96",
+							"Un dado de 100 caras del tamaño de una ciruela hecho de carbón"
+						],
+						[
+							"97",
+							"Un zapatito de cristal desparejado"
+						],
+						[
+							"98",
+							"Un atrapasueños diminuto"
+						],
+						[
+							"99",
+							"Una haltera para un pixie o duende"
+						],
+						[
+							"100",
+							"Una caja de música que reproduce una melodía animada de tu infancia"
+						]
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/WBtW/Feywild Trinket.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Rosa cromática verde",
+			"source": "WBtW-ES",
+			"page": 213,
+			"resist": [
+				"poison"
+			],
+			"detail1": "emite gas verde",
+			"rarity": "rare",
+			"wondrous": true,
+			"hasRefs": true,
+			"entries": [
+				"{#itemEntry Rosa cromática|WBtW-ES}"
+			]
+		},
+		{
+			"name": "Caldero de Iggwilv",
+			"source": "WBtW-ES",
+			"page": 208,
+			"rarity": "artifact",
+			"reqAttune": "por parte de un lanzador de conjuros",
+			"reqAttuneTags": [
+				{
+					"spellcasting": true
+				}
+			],
+			"wondrous": true,
+			"weight": 80,
+			"charges": 3,
+			"entries": [
+				"{@creature Iggwilv la Reina Bruja|WBtW-ES|Iggwilv} elaboró este caldero maravilloso con ayuda de su madre adoptiva, la señora feérica Baba Yaga. El caldero tiene dos formas. Solo Iggwilv o Baba Yaga pueden hacer que el caldero cambie de una forma a otra (usando una acción para tocarlo), lo que cualquiera de las dos puede hacer sin estar sintonizada con el objeto. En su primera forma, el caldero está hecho de oro macizo y en su exterior hay grabadas imágenes de árboles de ramas desnudas, hojas que caen y palos de escoba. En su segunda forma, el caldero está hecho de hierro y en su exterior hay grabadas imágenes de murciélagos, sapos, gatos, lagartos y serpientes, ocho representantes de cada animal. En cualquiera de sus formas, el caldero tiene aproximadamente 3 pies de diámetro y cuenta con una boca de 2 pies de ancho, una tapa redonda con un asa moldeada encima y ocho patas con forma de garra para estabilizarlo. El caldero pesa 40 kg (80 libras) cuando está vacío y puede contener hasta 400 litros (100 galones) de líquido.",
+				{
+					"type": "entries",
+					"name": "Sintonización",
+					"entries": [
+						"Cualquier criatura humanoide que se sintonice con el caldero deberá superar una tirada de salvación de Constitución con CD 15 o envejecerá hasta el punto de estar decrépita. En este estado, la velocidad de la criatura se reduce a la mitad, solo puede ver y oír hasta 30 pies y tiene desventaja en todas las pruebas de característica, las tiradas de ataque y las tiradas de salvación. La criatura llegará al final de su vida natural en un plazo de {@dice 3d8} días. Solo un conjuro {@spell deseo|PHB-ES} o la intercesión divina podrán revertir este efecto de envejecimiento de la criatura.",
+						"Tres sagas pueden sintonizarse con el caldero a la vez, siempre que hayan formado un aquelarre. Si el aquelarre se disuelve, la sintonización finaliza para las tres sagas."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Propiedades aleatorias",
+					"entries": [
+						"Con independencia de la forma que tenga, el caldero posee las siguientes propiedades aleatorias:",
+						{
+							"type": "list",
+							"items": [
+								"1 {@table Propiedades de los artefactos; Propiedades beneficiosas menores|DMG-ES|propiedad beneficiosa menor} (se determina tirando en la tabla \"{@table Propiedades de los artefactos; Propiedades beneficiosas menores|DMG-ES|Propiedades beneficiosas menores}\" de la Guía del Dungeon Master).",
+								"1 {@table Propiedades de los artefactos; Propiedades perjudiciales menores|DMG-ES|propiedad perjudicial menor} (se determina tirando en la tabla \"{@table Propiedades de los artefactos; Propiedades perjudiciales menores|DMG-ES|Propiedades perjudiciales menores}\" de la Guía del Dungeon Master)."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Caldero de oro",
+					"entries": [
+						"El caldero de oro tiene las siguientes propiedades:",
+						{
+							"type": "list",
+							"items": [
+								"Si se vierte agua en el caldero y se remueve durante 1 minuto, este se transforma en un estofado caliente y abundante que proporciona una comida nutritiva para hasta 4 personas por cada 4 litros (1 galón) de agua usados. El estofado permanece caliente mientras está en el caldero y se enfría de manera natural cuando se saca de él. No hay peligro si se toca el exterior del caldero. pese al calor del estofado.",
+								"Si se vierte vino en el caldero y se remueve durante 10 minutos, esta se transforma en un elixir mágico que fortifica a hasta 4 personas por cada 4 litros (1 galón) de vino usados. Cualquier criatura que beba el elixir obtendrá 10 puntos de golpe temporales. Todo el elixir que no se consuma en 1 hora desaparecerá. Una vez utilizada, esta propiedad del caldero no puede volver a usarse hasta el siguiente amanecer.",
+								"Cuando el caldero se llena con 360 litros (90 galones) de agua mezclados con 40 litros (10 galones) de vino, se puede usar como canalizador de un conjuro {@spell escudriñar|PHB-ES}. Cuando este conjuro se lanza usando el caldero como canalizador, el objetivo del conjuro falla su tirada de salvación automáticamente y el conjuro funciona incluso si su lanzador y el objetivo están en planos de existencia distintos. Cuando el conjuro termina, todo el líquido del caldero se desvanece.",
+								"Mojar las cerdas de una escoba ordinaria en el caldero lleno de agua la transforma en una escoba voladora durante 3 días. Una vez utilizada, esta propiedad del caldero no puede volver a usarse hasta el siguiente amanecer."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Caldero de hierro",
+					"entries": [
+						"El caldero de hierro tiene las siguientes propiedades:",
+						{
+							"type": "list",
+							"items": [
+								"Puedes usar una acción para gritar en el interior del caldero vacío, lo que invocará mágicamente un {@creature enjambre de murciélagos|MM-ES} que saldrá volando del caldero y actuará inmediatamente después de ti en el orden de iniciativa. El enjambre obedecerá tus órdenes y desaparecerá 1 minuto después si no ha sido destruido para entonces. Una vez utilizada, esta propiedad del caldero no puede volver a usarse hasta el siguiente amanecer.",
+								"Si se vierten al menos 4 litros (1 galón) de sangre en el caldero y se remueven durante 1 minuto, esta se convierte en una nube de humo negro inofensivo que sale del caldero y se disipa rápidamente. Al mismo tiempo, todas las criaturas humanoides que estén en un cierto radio del caldero caerán {@condition inconsciente|PHB-ES|inconscientes} durante 1 hora, excepto aquellas que estén sintonizadas con el caldero o sean inmunes a ser {@condition hechizado|PHB-ES|hechizadas}. El radio del efecto es de 100 pies por cada 4 litros (1 galón) de sangre usados. Una criatura {@condition inconsciente|PHB-ES} se despierta si recibe daño o si alguien utiliza una acción para sacudirla o abofetearla. Una vez utilizada, esta propiedad del caldero no puede volver a usarse hasta el siguiente amanecer.",
+								"Si se atan una rana o un sapo muertos al extremo de una rama normal y se sumerge en el caldero lleno de agua, la rama se transforma en una {@item varita de polimorfar|DMG-ES} con 3 cargas. Esta varita no se puede recargar y se reduce a cenizas cuando se gasta su última carga. Una vez utilizada, esta propiedad del caldero no puede volver a usarse en 8 días.",
+								"Si dedicas 1 minuto a tocar el caldero con un cuerno de unicornio mientras recitas el poema El caldero de la Reina Bruja (consulta el cuadro correspondiente), todas las criaturas que estén a 1000 pies o menos del caldero, excepto las que estén sintonizadas con él. quedarán congeladas en el tiempo. Una criatura congelada en el tiempo está {@condition incapacitado|PHB-ES|incapacitada}, no puede moverse ni hablar, no envejece y no es consciente de su entorno ni del paso del tiempo. Además, no se la puede mover o dañar de ninguna forma ni se ve afectada por ninguna otra magia. Todos los demás estados y efectos que tenga la criatura se suprimen hasta que deja de estar congelada en el tiempo. Destruir el caldero, mandarlo a otro plano de existencia o tocarlo con un cuerno de unicornio durante 1 minuto mientras se recita el poema El caldero de la Reina Bruja pone fin al efecto de congelación del tiempo en todas las criaturas. El efecto también termina para cualquier criatura que entre en contacto con un campo antimagia o a la que se toque con un cuerno de unicornio."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Destruir el caldero",
+					"entries": [
+						"El caldero es un objeto Mediano con una CA de 19, 80 puntos de golpe e inmunidad al daño de cualquier fuente que no sea un arma hierro de escarcha o lengua de fuego. Si los puntos de golpe del caldero se reducen a 0 con un arma así, este se rompe en 8 trozos de aproximadamente el mismo tamaño y todos los efectos continuos creados por él finalizan, ya que pierde su magia.",
+						"La destrucción del Caldero de Iggwilv hace que todas las sagas del multiverso pierdan el atributo Lanzamiento de Conjuros Compartido obtenido por estar en un aquelarre (consulta el cuadro \"Aquelarres de sagas\" del Manual de Monstruos)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Reconstruir el caldero",
+					"entries": [
+						"Si los 8 trozos del caldero roto están a 5 pies o menos unos de otros, un conjuro {@spell deseo|PHB-ES} puede volver a unirlos, lo que restaurará el caldero y todas sus propiedades. La reconstrucción del caldero también restaurará el atributo Lanzamiento de Conjuros Compartido de los aquelarres de sagas de todo el multiverso."
+					]
+				},
+				{
+					"type": "inset",
+					"name": "El caldero de la Reina Bruja",
+					"entries": [
+						"Como se explica en la descripción del Caldero de Iggwilv, el poema titulado El caldero de la Reina Bruja es un encantamiento que da pistas sobre la propiedad de congelación del tiempo del artefacto:",
+						{
+							"type": "quote",
+							"entries": [
+								"Ocho gatos encaramados sobre ocho muertos en constante llegada",
+								"Ocho lagartos huyen de ocho ratas siempre escarbando",
+								"Ocho sapos que trepan conocen a ocho muertos en constante caída",
+								"Ocho serpientes se deslizan bajo ocho murciélagos siempre gritando",
+								"Ocho ojos abiertos en constante sueño",
+								"Todos en el caldero siempre presente"
+							]
+						}
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/WBtW/Iggwilvs Cauldron.png"
+						}
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/WBtW/Iggwilvs Cauldron (Iron).png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Ornitóptero volante",
+			"source": "WBtW-ES",
+			"page": 212,
+			"rarity": "very rare",
+			"wondrous": true,
+			"weight": 25,
+			"entries": [
+				"Puedes usar este artefacto para volar, siempre que tu peso (incluido todo lo que portes o lleves contigo) no supere los 150 kg (300 libras). El ornitóptero tiene una velocidad volando de 30 pies y se mueve según las indicaciones orales que se le den mientras se va montado en él. No puede levitar. Si el ornitóptero pierde a su piloto mientras está en el aire, caerá y no podrá volver a volar durante {@dice 1d6 + 4} días.",
+				"El ornitóptero tiene 8 pies de longitud, posee una envergadura de 14 pies y pesa 12,5 kg (25 libras)."
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/WBtW/Ornithopter of Flying.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Polvo de pixie",
+			"source": "WBtW-ES",
+			"page": 213,
+			"rarity": "uncommon",
+			"wondrous": true,
+			"entries": [
+				"Como acción, puedes espolvorear este polvo sobre ti o sobre otra criatura que puedas ver a 5 pies o menos de ti. El receptor obtendrá una velocidad volando de 30 pies y la capacidad de levitar durante 1 minuto. Si la criatura está en el aire cuando finaliza este efecto, cae de forma segura al suelo: no recibe daño y aterriza de pie.",
+				"Un paquete pequeño contiene polvo de pixie suficiente para un uso."
+			]
+		},
+		{
+			"name": "Poción de ventaja",
+			"source": "WBtW-ES",
+			"page": 212,
+			"type": "P",
+			"rarity": "uncommon",
+			"entries": [
+				"Cuando bebas esta poción, obtendrás ventaja en una prueba de característica, tirada de ataque o tirada de salvación de tu elección que realices durante la siguiente hora.",
+				"Esta poción tiene la forma de una neblina dorada y burbujeante y se vierte como el agua."
+			]
+		},
+		{
+			"name": "Rosa cromática roja",
+			"source": "WBtW-ES",
+			"page": 213,
+			"resist": [
+				"fire"
+			],
+			"detail1": "envuelta en fuego",
+			"rarity": "rare",
+			"wondrous": true,
+			"hasRefs": true,
+			"entries": [
+				"{#itemEntry Rosa cromática|WBtW-ES}"
+			]
+		},
+		{
+			"name": "Tijeras cortasombras",
+			"source": "WBtW-ES",
+			"page": 213,
+			"rarity": "rare",
+			"reqAttune": "por parte de un feérico o un lanzador de conjuros",
+			"reqAttuneTags": [
+				{
+					"creatureType": "fey"
+				},
+				{
+					"spellcasting": true
+				}
+			],
+			"wondrous": true,
+			"entries": [
+				"Como acción, puedes dar unos tijeretazos con estas tijeras de hierro y hacer que la sombra de una criatura humanoide que puedas ver a 5 pies o menos de ti se separe de su fuente. Si la criatura no quiere renunciar a su sombra. puede realizar una tirada de salvación de Carisma con CD 15 y, si la supera, la conservará. Tanto si la sombra se recorta como si no, esta propiedad de las tijeras no puede volver a usarse hasta el siguiente amanecer.",
+				"La sombra separada estará ahora fijada al lugar donde se recortó, hasta que uses una acción adicional para hacer que se comporte de una de las siguientes formas, que solo son posibles si ves a la sombra:",
+				{
+					"type": "list",
+					"items": [
+						"Controlas los movimientos de la sombra y puedes hacer que se mueva hasta 30 pies a través de una superficie sólida o líquida en cualquier dirección que elijas (incluidas superficies verticales), siempre que la mantengas a la vista en todo momento. La sombra es inofensiva, no puede ser dañada y es {@condition invisible|PHB-ES} en la oscuridad. No puede hablar y no necesita aire ni dormir ni alimentarse.",
+						"Puedes renunciar al control de la sombra, en cuyo momento se volverá autónoma y se comportará según desee el DM. Tiene el perfil de la {@creature sombra|MM-ES} del Manual de Monstruos, pero su tipo de criatura es feérico en lugar de muerto viviente. Una criatura cuya Fuerza quede reducida a 0 por la acción de consumir fuerza de esta sombra no muere, sino que se queda {@condition inconsciente|PHB-ES}. La criatura recupera la consciencia y todos sus puntos de Fuerza tras finalizar un descanso corto o largo."
+					]
+				},
+				"Una criatura cuya sombra se haya separado estará maldita. Si una criatura sin sombra recibe cualquier conjuro que ponga fin a una maldición o si los puntos de golpe de su sombra separada se reducen a 0, la sombra separada desaparecerá y la criatura recuperará su sombra normal al instante."
+			]
+		},
+		{
+			"name": "Zis Zas",
+			"source": "WBtW-ES",
+			"page": 214,
+			"baseItem": "espadón|PHB-ES",
+			"type": "M",
+			"rarity": "legendary",
+			"reqAttune": "por parte de una criatura que no sea malvada",
+			"reqAttuneTags": [
+				{
+					"alignment": [
+						"L",
+						"NX",
+						"C",
+						"G",
+						"NY"
+					]
+				}
+			],
+			"sentient": true,
+			"weight": 6,
+			"weaponCategory": "martial",
+			"property": [
+				"H",
+				"2H"
+			],
+			"dmg1": "2d6",
+			"dmgType": "S",
+			"grantsProficiency": true,
+			"bonusWeapon": "+3",
+			"sword": true,
+			"weapon": true,
+			"entries": [
+				"Recibes un bonificador de +3 a las tiradas de ataque y de daño que hagas con esta espada vorpal mágica. Además, el arma ignora la resistencia al daño cortante.",
+				"Cuando uses esta arma para atacar a una criatura que tenga al menos una cabeza y el resultado de la tirada de ataque sea 20, cortarás una de las cabezas de esa criatura. La criatura muere si no puede sobrevivir sin la cabeza perdida. Una criatura es inmune a este efecto si tiene inmunidad al daño cortante, no tiene o no necesita una cabeza, tiene acciones legendarias o el DM decide que la criatura es demasiado grande como para que esta arma le corte la cabeza. En su lugar, una criatura así recibirá {@damage 6d8} de daño cortante adicional por el impacto.",
+				"Mientras mantengas la sintonización con Zis Zas, eres competente con espadones y puedes usar tu modificador por Carisma en lugar de tu modificador por Fuerza para las tiradas de ataque y de daño hechas con el arma.",
+				{
+					"type": "entries",
+					"name": "Consciencia",
+					"entries": [
+						"Zis Zas es un espadón consciente y caótico bueno con una Inteligencia de 9, una Sabiduría de 14 y un Carisma de 18. Puede oír y tiene {@sense visión en la oscuridad|PHB-ES} hasta 120 pies. Puede hablar, leer y entender común y su voz suena plateada y melodiosa. Zis Zas ansía destruir criaturas malvadas de tipo \"dragón\" y te insta a que las busques y acabes con ellas.",
+						"Zis Zas tiene una personalidad voluble y pone fin a la sintonización si fallas 3 tiradas de ataque seguidas con el arma. Cada vez que termines un descanso largo después de que eso ocurra, puedes intentar recuperar la confianza de la espada si realizas una prueba de Carisma enfrentada contra Zis Zas. Si ganas la tirada enfrentada, tu sintonización con el arma se restaurará al instante. Tu sintonización con ella no se puede restaurar de ninguna otra forma."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/WBtW/Snicker-Snack.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Acero",
+			"source": "WBtW-ES",
+			"page": 208,
+			"baseItem": "espada larga|PHB-ES",
+			"type": "M",
+			"rarity": "very rare",
+			"reqAttune": "por parte de una criatura de alineamiento bueno",
+			"reqAttuneTags": [
+				{
+					"alignment": [
+						"G"
+					]
+				}
+			],
+			"sentient": true,
+			"weight": 3,
+			"weaponCategory": "martial",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"bonusWeapon": "+2",
+			"sword": true,
+			"weapon": true,
+			"entries": [
+				"Tienes un bonificador de +2 a las tiradas de ataque y de daño que hagas con esta arma mágica.",
+				{
+					"type": "entries",
+					"name": "Consciencia",
+					"entries": [
+						"Acero es una espada larga consciente y legal buena con una Inteligencia de 8, una Sabiduría de 11 y un Carisma de 15. Puede ver y oír hasta 60 pies. La espada puede hablar, leer y entender común y dracónico. Se preocupa por tu bienestar mientras mantienes tu sintonización con ella y no le gusta retirarse de un combate."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Revivir",
+					"entries": [
+						"Puedes usar una acción para lanzar el conjuro {@spell revivir|PHB-ES} desde la espada. Debes tocar al objetivo con ella para lanzar el conjuro. Una vez utilizada, esta propiedad del arma no puede volver a usarse hasta el siguiente amanecer."
+					]
+				}
+			],
+			"attachedSpells": [
+				"revivir|PHB-ES"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/WBtW/Steel.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Rosa cromática blanca",
+			"source": "WBtW-ES",
+			"page": 213,
+			"resist": [
+				"cold"
+			],
+			"detail1": "cubierta de escarcha",
+			"rarity": "rare",
+			"wondrous": true,
+			"hasRefs": true,
+			"entries": [
+				"{#itemEntry Rosa cromática|WBtW-ES}"
+			]
+		},
+		{
+			"name": "Veleta de Brujaluz",
+			"source": "WBtW-ES",
+			"page": 27,
+			"baseItem": "maza|PHB-ES",
+			"typeAlt": "M",
+			"rarity": "legendary",
+			"reqAttune": "por parte del señor Luz o de un sucesor elegido por él",
+			"sentient": true,
+			"weight": 3,
+			"bonusWeapon": "+3",
+			"entries": [
+				"Esta vara adornada con detalles de vidrio rojo está coronada por un par de alas de mariposa y pesa 1,3 kg (3 libras).",
+				{
+					"type": "entries",
+					"name": "Arma mágica",
+					"entries": [
+						"En manos de una persona que esté sintonizada con ella, la veleta se puede usar a modo de maza mágica que otorga un bonificador de +3 a las tiradas de ataque y de daño hechas con ella. Además, la veleta inflige {@damage 1d8} de daño radiante adicional si impacta."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sentir los ánimos",
+					"entries": [
+						"Si la veleta se encuentra dentro del perímetro de la feria Brujaluz, puede sentir el estado. de ánimo de todas las criaturas de la feria que tengan una Inteligencia de 4 o más. Como acción, una criatura sintonizada con la veleta puede usarla para detectar la ubicación de la criatura más feliz de la feria.",
+						"Las alas de mariposa que rematan la veleta giran lentamente en sentido horario cuando en la feria reina el buen ambiente: por el contrario, si el ánimo general es sombrío, giran lentamente en sentido antihorario."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Consciencia",
+					"entries": [
+						"La veleta es un objeto maravilloso consciente y caótico bueno con una Inteligencia de 11, una Sabiduría de 14 y un Carisma de 14. Puede oír y ver en un radio de 30 pies y se comunica transmitiendo emociones a la criatura con la que está sintonizada. Su propósito es asegurarse de que todo el mundo se divierta en la feria Brujaluz."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Propiedades adicionales",
+					"entries": [
+						"La veleta tiene las siguientes propiedades adicionales:",
+						{
+							"type": "list",
+							"items": [
+								"La criatura que sostiene la veleta es vulnerable al daño de relámpago.",
+								"A la criatura sintonizada con la veleta no se la puede {@condition aturdido|PHB-ES|aturdir}, {@condition cegado|PHB-ES|cegar}, {@condition ensordecido|PHB-ES|ensordecer} ni {@condition petrificado|PHB-ES|petrificar}.",
+								"Mientras lleve la veleta, la criatura sintonizada con ella puede lanzar como acción el conjuro {@spell luces danzantes|PHB-ES}, {@spell polimorfar|PHB-ES} o {@spell rayo de escarcha|PHB-ES}, que no requiere componentes y utiliza el Carisma como aptitud mágica. Después de lanzar el conjuro {@spell polimorfar|PHB-ES} de la veleta, tira {@dice 1d8}; si sacas un 3 o un 8, no se podrá usar la veleta para volver a lanzar este conjuro hasta el próximo amanecer."
+							]
+						}
+					]
+				}
+			],
+			"attachedSpells": [
+				"luces danzantes|PHB-ES"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "items/WBtW/Witchlight Vane.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Reloj de Brujaluz",
+			"source": "WBtW-ES",
+			"page": 25,
+			"rarity": "legendary",
+			"reqAttune": "por parte del señor Bruja o de un sucesor elegido por él",
+			"wondrous": true,
+			"entries": [
+				"Este reloj de bolsillo ornamentado está sujeto al extremo de una leontina de oro. Emite una tenue luz dorada al abrirse, y su suave tictac solo es audible para la criatura que lo sostiene. La esfera del reloj muestra una pintura en miniatura de la feria Brujaluz rodeada por un diminuto círculo de megalitos, a cuyo alrededor gira cada noche una mota de luz tan pequeña que podría pasar por el ojo de una aguja. Por la acción de esta luz, el círculo proyecta sombras que permiten al propietario del reloj saber la hora.",
+				{
+					"type": "entries",
+					"name": "Montar y recoger la feria",
+					"entries": [
+						"La criatura sintonizada con el reloj puede usar una acción para comenzar a montar o recoger la feria Brujaluz, siempre que la criatura y la feria estén en el mismo plano de existencia. A lo largo de 1 hora, todos los objetos que forman parte de la feria se mueven mágicamente hasta que todo esté recogido y listo para el viaje, o sacado y montado. El reloj no tiene efecto sobre las criaturas, que pueden moverse con libertad y seguridad mientras se monta o recoge la feria. El proceso de montar o recoger la feria no podrá detenerse una vez comience. Si el reloj se utiliza para montar o recoger la feria, esta propiedad no podrá volver a usarse hasta que hayan transcurrido 8 horas."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Propiedades adicionales",
+					"entries": [
+						"El reloj de bolsillo tiene las siguientes propiedades adicionales:",
+						{
+							"type": "list",
+							"items": [
+								"Mientras lleve el reloj, la criatura sintonizada con él puede lanzar como acción el conjuro {@spell descarga de fuego|PHB-ES}, {@spell invisibilidad|PHB-ES} o {@spell mensaje|PHB-ES}, que no requiere componentes y utiliza la Inteligencia como aptitud mágica. Después de lanzar el conjuro {@spell invisibilidad|PHB-ES} del reloj, tira {@dice 1d8}; si sacas un 3 o un 8. no se podrá usar el reloj para volver a lanzar este conjuro hasta el próximo amanecer.",
+								"La criatura sintonizada con el reloj gana 13 kg (30 libras) de peso y los pierde cuando termina la sintonización.",
+								"La criatura sintonizada con el reloj debe comer y beber ocho veces la cantidad normal cada día."
+							]
+						}
+					]
+				}
+			],
+			"attachedSpells": [
+				"descarga de fuego|PHB-ES"
+			]
+		},
+		{
+			"name": "Hacha de leñador",
+			"source": "WBtW-ES",
+			"page": 211,
+			"baseItem": "hacha a dos manos|PHB-ES",
+			"type": "M",
+			"rarity": "rare",
+			"weight": 7,
+			"weaponCategory": "martial",
+			"property": [
+				"H",
+				"2H"
+			],
+			"dmg1": "1d12",
+			"dmgType": "S",
+			"bonusWeapon": "+1",
+			"axe": true,
+			"weapon": true,
+			"entries": [
+				"Tienes un bonificador de +1 a las tiradas de ataque y de daño que hagas con esta arma mágica.",
+				"Cuando uses esta hacha para realizar un ataque contra una planta (una planta normal o una criatura de tipo planta) o contra un objeto de madera que no vista o lleve consigo nadie, el ataque infligirá {@damage 2d6} de daño cortante adicional al impactar."
+			]
 		}
 	],
 	"itemGroup": [
@@ -30132,6 +31142,66 @@
 				"Adorno escamoso turbado|FTD-ES",
 				"Adorno escamoso despierto|FTD-ES",
 				"Adorno escamoso ascendente|FTD-ES"
+			]
+		},
+		{
+			"name": "Rosa cromática",
+			"source": "WBtW-ES",
+			"page": 213,
+			"rarity": "rare",
+			"wondrous": true,
+			"entries": [
+				"Esta rosa mágica puede aparecer en cinco colores distintos, como se muestra en la tabla \"Rosas cromáticas\". Mientras se sostiene una de estas rosas, obtiene el efecto visual inofensivo que indica la tabla.",
+				"Mientras sostienes la rosa por el tallo, obtienes resistencia al daño del tipo asociado con su color. Si fueras a recibir más de 10 de daño de este tipo de una sola fuente (tras aplicar la resistencia), la rosa se desintegrará y, en su lugar, no recibirás ningún daño.",
+				"Como acción, puedes soplar los pétalos de la rosa para producir un cono de 20 pies de relámpagos, frío, ácido, fuego o gas venenoso, según marque el tipo de daño de la flor. Todas las criaturas situadas en el cono deberán hacer una tirada de salvación de Constitución con CD 15; sufrirán {@damage 3d10} de daño del tipo correspondiente si la fallan o la mitad del daño si la superan. Al usar esta propiedad, la rosa se destruye.",
+				{
+					"type": "table",
+					"caption": "Rosas cromáticas",
+					"colStyles": [
+						"col-2 text-center",
+						"col-7 text-center",
+						"col-3 text-center"
+					],
+					"colLabels": [
+						"Color",
+						"Efecto visual",
+						"Tipo de daño"
+					],
+					"rows": [
+						[
+							"{@item Rosa cromática azul|WBtW-ES|Azul}",
+							"Crepita con relámpagos",
+							"Relámpago"
+						],
+						[
+							"{@item Rosa cromática blanca|WBtW-ES|Blanca}",
+							"Cubierta de escarcha",
+							"Frío"
+						],
+						[
+							"{@item Rosa cromática negra|WBtW-ES|Negra}",
+							"Gotea ácido",
+							"Ácido"
+						],
+						[
+							"{@item Rosa cromática roja|WBtW-ES|Roja}",
+							"Envuelta en fuego",
+							"Fuego"
+						],
+						[
+							"{@item Rosa cromática verde|WBtW-ES|Verde}",
+							"Emite gas verde",
+							"Veneno"
+						]
+					]
+				}
+			],
+			"items": [
+				"Rosa cromática azul|WBtW-ES",
+				"Rosa cromática blanca|WBtW-ES",
+				"Rosa cromática negra|WBtW-ES",
+				"Rosa cromática roja|WBtW-ES",
+				"Rosa cromática verde|WBtW-ES"
 			]
 		}
 	]

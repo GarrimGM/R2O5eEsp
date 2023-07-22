@@ -10418,6 +10418,214 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Hada",
+			"source": "WBtW-ES",
+			"page": 12,
+			"reprintedAs": [
+				"Hada|MPMM-ES"
+			],
+			"lineage": "VRGR-ES",
+			"creatureTypes": [
+				"fey"
+			],
+			"size": [
+				"S"
+			],
+			"speed": {
+				"walk": 30,
+				"fly": true
+			},
+			"additionalSpells": [
+				{
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": [
+							"saber druídico|PHB-ES#c"
+						]
+					},
+					"innate": {
+						"3": {
+							"daily": {
+								"1": [
+									"fuego feérico|PHB-ES"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"agrandar/reducir|PHB-ES"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Tipo de criatura",
+					"entries": [
+						"Eres feérico."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Volar",
+					"entries": [
+						"Gracias a tus alas, tienes una velocidad volando igual a tu velocidad caminando. No puedes usar esta velocidad volando si llevas puesta una armadura media o pesada."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Magia de las Hadas",
+					"entries": [
+						"Conoces el truco {@spell saber druídico|PHB-ES}.",
+						"A partir del nivel 3, puedes lanzar el conjuro {@spell fuego feérico|PHB-ES} con este atributo. A partir del nivel 5, también puedes lanzar el conjuro {@spell agrandar/reducir|PHB-ES} con este atributo. Cuando lances {@spell fuego feérico|PHB-ES} o {@spell agrandar/reducir|PHB-ES} con este atributo, no podrás volver a lanzar ese conjuro con él hasta que finalices un descanso largo. También puedes lanzar cualquiera de esos conjuros usando espacios de conjuro que tengas del nivel apropiado. ",
+						"La Inteligencia, la Sabiduría o el Carisma es tu aptitud mágica para lanzar estos conjuros con este atributo (elígela cuando selecciones esta raza)."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Los Parajes Feéricos son el hogar de muchas criaturas fantásticas, como las hadas. Las hadas son un pueblo de tamaño minúsculo, pero no tanto como sus amigos pixies y duendes. Las primeras hadas hablaban elfo, goblin o silvano, pero sus encuentros con visitantes humanos llevaron a que muchas de ellas aprendieran también el común.",
+					"Imbuidas de la magia de los Parajes Feéricos, la mayoría de las hadas parecen elfos Pequeños con alas de insecto, pero cada una de ellas tiene una característica física que la diferencia del resto. Para tu hada, tira en la tabla \"Características feéricas\" o elige una opción de ella. También puedes idear tu propia característica personal si ninguna de las sugerencias siguientes encaja con tu personaje.",
+					{
+						"type": "table",
+						"caption": "Características feéricas",
+						"colLabels": [
+							"d8",
+							"Característica"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"Tus alas son como las de un pájaro."
+							],
+							[
+								"2",
+								"Tienes una piel brillante y multicolor."
+							],
+							[
+								"3",
+								"Posees unas orejas excepcionalmente grandes."
+							],
+							[
+								"4",
+								"Siempre te rodea una niebla rutilante."
+							],
+							[
+								"5",
+								"Tienes un pequeño cuerno espectral en la frente, como el de un unicornio."
+							],
+							[
+								"6",
+								"Tus piernas son similares las de un insecto."
+							],
+							[
+								"7",
+								"Emanas un olor a pastelitos recién horneados."
+							],
+							[
+								"8",
+								"Te rodea un frío apreciable pero inofensivo."
+							]
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "races/WBtW/Fairy.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Liebrén",
+			"source": "WBtW-ES",
+			"page": 13,
+			"reprintedAs": [
+				"Liebrén|MPMM-ES"
+			],
+			"lineage": "VRGR-ES",
+			"size": [
+				"S",
+				"M"
+			],
+			"speed": 30,
+			"skillProficiencies": [
+				{
+					"perception": true
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Tamaño",
+					"entries": [
+						"Eres Mediano o Pequeño. Eliges el tamaño cuando seleccionas esta raza."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Brincar a la Mínima",
+					"entries": [
+						"Puedes sumar tu bonificador por competencia a tus tiradas de iniciativa."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sentidos Leporinos",
+					"entries": [
+						"Tienes competencia en la habilidad {@skill Percepción|PHB-ES}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Juego de Pies Afortunado",
+					"entries": [
+						"Si fallas una tirada de salvación de Destreza, puedes usar tu reacción para tirar {@dice 1d4} y sumarlo a la tirada, lo que podría convertir el fracaso en un éxito. No puedes usar esta reacción si estás {@condition derribado|PHB-ES} o si tu velocidad es 0."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Salto Conejil",
+					"entries": [
+						"Como acción adicional, puedes saltar una distancia de pies igual a cinco veces tu bonificador de competencia, sin provocar ataques de oportunidad. Solo puedes usar este atributo si tu velocidad es mayor que 0. Puedes usarlo una cantidad de veces igual a tu bonificador por competencia y recuperas todos los usos tras finalizar un descanso largo."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Los liebrenes tienen sus orígenes en los Parajes Feéricos, donde hablaban silvano y encarnaban el espíritu de la libertad y el viaje. Con el tiempo, este pueblo conejil saltó a otros mundos, a los que llevó consigo la exuberancia del reino feérico y en los que aprendió nuevos idiomas.",
+					"Los liebrenes son bípedos y poseen los característicos pies alargados de los conejos y un pelaje de diversos colores. Comparten los agudos sentidos y las potentes patas de las criaturas leporinas y están repletos de energía, como un muelle en tensión. Los liebrenes están bendecidos con un poco de suerte feérica y, durante las aventuras, no es raro que estén justo a unos pocos y afortunados metros del peligro."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "races/WBtW/Harengon.png"
+						}
+					}
+				]
+			}
 		}
 	],
 	"subrace": [
