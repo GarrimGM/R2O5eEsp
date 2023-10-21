@@ -1,9 +1,9 @@
 {
 	"class": [
 		{
-			"name": "Druid",
+			"name": "Druida",
 			"source": "PHB-ES",
-			"page": 64,
+			"page": 71,
 			"srd": true,
 			"hd": {
 				"number": 1,
@@ -43,24 +43,24 @@
 					"light",
 					"medium",
 					{
-						"proficiency": "{@item shield|phb|shields}",
-						"full": "shields (druids will not wear armor or use shields made of metal)"
+						"proficiency": "{@item escudo|PHB-ES|escudos}",
+						"full": "escudos (aunque los druidas nunca llevan armaduras ni escudos hechos de metal)"
 					}
 				],
 				"weapons": [
-					"{@item club|phb|clubs}",
-					"{@item dagger|phb|daggers}",
-					"{@item dart|phb|darts}",
-					"{@item javelin|phb|javelins}",
-					"{@item mace|phb|maces}",
-					"{@item quarterstaff|phb|quarterstaffs}",
-					"{@item scimitar|phb|scimitars}",
-					"{@item sickle|phb|sickles}",
-					"{@item sling|phb|slings}",
-					"{@item spear|phb|spears}"
+					"{@item garrote|PHB-ES|garrotes}",
+					"{@item daga|PHB-ES|dagas}",
+					"{@item dardo|PHB-ES|dardos}",
+					"{@item jabalina|PHB-ES|jabalinas}",
+					"{@item maza|PHB-ES|mazas}",
+					"{@item bastón|PHB-ES|bastones}",
+					"{@item cimitarra|PHB-ES|cimitarras}",
+					"{@item hoz|PHB-ES|hoces}",
+					"{@item honda|PHB-ES|hondas}",
+					"{@item lanza|PHB-ES|lanzas}"
 				],
 				"tools": [
-					"{@item Herbalism kit|PHB}"
+					"{@item Útiles de herborista|PHB-ES|Útiles de herborista}"
 				],
 				"toolProficiencies": [
 					{
@@ -88,15 +88,15 @@
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"default": [
-					"(a) a wooden {@item shield|phb} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
-					"(a) a {@item scimitar|phb} or (b) any {@filter simple melee weapon|items|source=phb|category=basic|type=simple weapon;melee weapon=sand}",
-					"{@item Leather armor|phb}, an {@item explorer's pack|phb}, and a {@item druidic focus|phb}"
+					"(a) un {@item escudo|PHB-ES} de madera o (b) cualquier {@filter arma sencilla|items|source=PHB-ES|category=basic|type=simple weapon}",
+					"(a) una {@item cimitarra|PHB-ES} o (b) cualquier {@filter arma cuerpo a cuerpo sencilla|items|source=PHB-ES|category=basic|type=simple weapon;melee weapon=sand}",
+					"{@item Armadura de cuero|PHB-ES}, un {@item paquete de explorador|PHB-ES} y un {@item Canalizadores druídicos|PHB-ES|canalizador druídico}"
 				],
 				"goldAlternative": "{@dice 2d4 × 10|2d4 × 10|Starting Gold}",
 				"defaultData": [
 					{
 						"a": [
-							"shield|phb"
+							"escudo|PHB-ES"
 						],
 						"b": [
 							{
@@ -106,7 +106,7 @@
 					},
 					{
 						"a": [
-							"scimitar|phb"
+							"cimitarra|PHB-ES"
 						],
 						"b": [
 							{
@@ -116,9 +116,9 @@
 					},
 					{
 						"_": [
-							"Leather armor|phb",
-							"explorer's pack|phb",
-							"druidic focus|phb"
+							"Armadura de cuero|PHB-ES",
+							"paquete de explorador|PHB-ES",
+							"canalizadores druídicos|PHB-ES"
 						]
 					}
 				]
@@ -132,8 +132,8 @@
 						"light",
 						"medium",
 						{
-							"proficiency": "{@item shield|phb|shields}",
-							"full": "shields (druids will not wear armor or use shields made of metal)"
+							"proficiency": "{@item escudo|PHB-ES|escudos}",
+							"full": "escudos (aunque los druidas nunca llevan armaduras ni escudos hechos de metal)"
 						}
 					]
 				}
@@ -141,7 +141,7 @@
 			"classTableGroups": [
 				{
 					"colLabels": [
-						"{@filter Cantrips Known|spells|level=0|class=Druid}"
+						"{@filter Trucos conocidos|spells|level=0|class=Druida (PHB-ES)}"
 					],
 					"rows": [
 						[
@@ -207,17 +207,17 @@
 					]
 				},
 				{
-					"title": "Spell Slots per Spell Level",
+					"title": "Espacios de conjuro por cada nivel de conjuro",
 					"colLabels": [
-						"{@filter 1st|spells|level=1|class=Druid}",
-						"{@filter 2nd|spells|level=2|class=Druid}",
-						"{@filter 3rd|spells|level=3|class=Druid}",
-						"{@filter 4th|spells|level=4|class=Druid}",
-						"{@filter 5th|spells|level=5|class=Druid}",
-						"{@filter 6th|spells|level=6|class=Druid}",
-						"{@filter 7th|spells|level=7|class=Druid}",
-						"{@filter 8th|spells|level=8|class=Druid}",
-						"{@filter 9th|spells|level=9|class=Druid}"
+						"{@filter 1|spells|level=1|class=Druida (PHB-ES)}",
+						"{@filter 2|spells|level=2|class=Druida (PHB-ES)}",
+						"{@filter 3|spells|level=3|class=Druida (PHB-ES)}",
+						"{@filter 4|spells|level=4|class=Druida (PHB-ES)}",
+						"{@filter 5|spells|level=5|class=Druida (PHB-ES)}",
+						"{@filter 6|spells|level=6|class=Druida (PHB-ES)}",
+						"{@filter 7|spells|level=7|class=Druida (PHB-ES)}",
+						"{@filter 8|spells|level=8|class=Druida (PHB-ES)}",
+						"{@filter 9|spells|level=9|class=Druida (PHB-ES)}"
 					],
 					"rowsSpellProgression": [
 						[
@@ -444,108 +444,101 @@
 				}
 			],
 			"classFeatures": [
-				"Druidic|Druid||1",
-				"Spellcasting|Druid||1",
-				"Cantrip Versatility|Druid||1|UAClassFeatureVariants",
-				"Wild Shape|Druid||2",
-				"Wild Companion|Druid||2|UAClassFeatureVariants",
-				"Wild Companion|Druid||2|TCE",
+				"Druidic|Druida|PHB-ES|1",
+				"Spellcasting|Druida|PHB-ES|1",
+				"Wild Shape|Druida|PHB-ES|2",
+				"Wild Companion|Druida|PHB-ES|2|TCE-ES",
 				{
-					"classFeature": "Druid Circle|Druid||2",
+					"classFeature": "Druid Circle|Druida|PHB-ES|2",
 					"gainSubclassFeature": true
 				},
-				"Wild Shape Improvement|Druid||4",
-				"Ability Score Improvement|Druid||4",
-				"Proficiency Versatility|Druid||4|UAClassFeatureVariants",
-				"Cantrip Versatility|Druid||4|TCE",
+				"Wild Shape Improvement|Druida|PHB-ES|4",
+				"Ability Score Improvement|Druida|PHB-ES|4",
+				"Cantrip Versatility|Druida|PHB-ES|4|TCE-ES",
 				{
-					"classFeature": "Druid Circle feature|Druid||6",
+					"classFeature": "Druid Circle feature|Druida|PHB-ES|6",
 					"gainSubclassFeature": true
 				},
-				"Wild Shape Improvement|Druid||8",
-				"Ability Score Improvement|Druid||8",
-				"Proficiency Versatility|Druid||8|UAClassFeatureVariants",
+				"Wild Shape Improvement|Druida|PHB-ES|8",
+				"Ability Score Improvement|Druida|PHB-ES|8",
 				{
-					"classFeature": "Druid Circle feature|Druid||10",
+					"classFeature": "Druid Circle feature|Druida|PHB-ES|10",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Druid||12",
-				"Proficiency Versatility|Druid||12|UAClassFeatureVariants",
+				"Ability Score Improvement|Druida|PHB-ES|12",
 				{
-					"classFeature": "Druid Circle feature|Druid||14",
+					"classFeature": "Druid Circle feature|Druida|PHB-ES|14",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Druid||16",
-				"Proficiency Versatility|Druid||16|UAClassFeatureVariants",
-				"Timeless Body|Druid||18",
-				"Beast Spells|Druid||18",
-				"Ability Score Improvement|Druid||19",
-				"Proficiency Versatility|Druid||19|UAClassFeatureVariants",
-				"Archdruid|Druid||20"
+				"Ability Score Improvement|Druida|PHB-ES|16",
+				"Timeless Body|Druida|PHB-ES|18",
+				"Beast Spells|Druida|PHB-ES|18",
+				"Ability Score Improvement|Druida|PHB-ES|19",
+				"Archdruid|Druida|PHB-ES|20"
 			],
-			"subclassTitle": "Druid Circle",
+			"subclassTitle": "Círculo druídico",
 			"fluff": [
 				{
-					"name": "Druid",
+					"name": "Druida",
 					"type": "section",
 					"entries": [
-						"Holding high a gnarled staff wreathed with holly, an elf summons the fury of the storm and calls down explosive bolts of lightning to smite the torch-carrying orcs who threaten her forest.",
-						"Crouching out of sight on a high tree branch in the form of a leopard, a human peers out of the jungle at the strange construction of a temple of Evil Elemental Air, keeping a close eye on the cultists' activities.",
-						"Swinging a blade formed of pure fire, a half-elf charges into a mass of skeletal soldiers, sundering the unnatural magic that gives the foul creatures the mocking semblance of life.",
-						"Whether calling on the elemental forces of nature or emulating the creatures of the animal world, druids are an embodiment of nature's resilience, cunning, and fury. They claim no mastery over nature. Instead, they see themselves as extensions of nature's indomitable will.",
+						"Sujetando un nudoso bastón envuelto en acebo, una elfa invoca a la furia de la tormenta, llamando a los relámpagos para que bajen de los cielos y aniquilen a los orcos que, con sus antorchas, amenazan el bosque.",
+						"Agazapándose sobre las ramas altas de un árbol, con el fin de permanecer oculto, un humano que ha adoptado la forma de un leopardo observa detenidamente una extraña construcción: el templo del Aire Elemental Malvado. No quita el ojo a las actividades de los sectarios.",
+						"Agitando una espada hecha de puro fuego, una semielfa carga contra una masa de soldados esqueléticos, sesgando la magia antinatural que otorga a las repugnantes criaturas su parodia de vida.",
+						"Ya sea convocando las fuerzas elementales de la naturaleza o emulando a las criaturas del reino animal, los druidas encarnan la adaptabilidad, astucia y furia de la naturaleza. Pero no se consideran amos de esta, sino que se ven a sí mismos como meras extensiones de la voluntad indómita de la naturaleza.",
 						{
 							"type": "entries",
-							"name": "Power of Nature",
+							"name": "El poder de la naturaleza",
 							"entries": [
-								"Druids revere nature above all, gaining their spells and other magical powers either from the force of nature itself or from a nature deity. Many druids pursue a mystic spirituality of transcendent union with nature rather than devotion to a divine entity, while others serve gods of wild nature, animals, or elemental forces. The ancient druidic traditions are sometimes called the Old Faith, in contrast to the worship of gods in temples and shrines.",
-								"Druid spells are oriented toward nature and animals—the power of tooth and claw, of sun and moon, of fire and storm. Druids also gain the ability to take on animal forms, and some druids make a particular study of this practice, even to the point where they prefer animal form to their natural form."
+								"Los druidas veneran la naturaleza por encima de todas las cosas, por lo que obtienen tanto sus conjuros como el resto de sus poderes mágicos de la propia fuerza de la naturaleza o de una deidad asociada a ella. Muchos druidas persiguen una espiritualidad mística, que los lleve a una unión trascendente con la naturaleza, en lugar de adorar a un ser superior. Otros, sin embargo, sirven a dioses de la naturaleza salvaje, de los animales o de las fuerzas elementales. Las ancestrales tradiciones druídicas a veces reciben el nombre de la Antigua Fe, un término que destaca su contraste con la adoración a los dioses llevada a cabo en templos y santuarios.",
+								"Los conjuros de los druidas están orientados hacia la naturaleza y el reino animal; el poder del colmillo y la garra, del sol y la luna, y del fuego y la tormenta. Los druidas también poseen la facultad de adoptar formas animales y algunos se centran tanto en el estudio de esta práctica que acaban prefiriendo una de sus formas animales a su forma natural."
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Preserve the Balance",
+							"name": "Preservar el equilibrio",
 							"entries": [
-								"For druids, nature exists in a precarious balance. The four elements that make up a world—air, earth, fire, and water—must remain in equilibrium. If one element were to gain power over the others, the world could be destroyed, drawn into one of the elemental planes and broken apart into its component elements. Thus, druids oppose cults of Elemental Evil and others who promote one element to the exclusion of others.",
-								"Druids are also concerned with the delicate ecological balance that sustains plant and animal life, and the need for civilized folk to live in harmony with nature, not in opposition to it. Druids accept that which is cruel in nature, and they hate that which is unnatural, including aberrations (such as beholders and mind flayers) and undead (such as zombies and vampires). Druids sometimes lead raids against such creatures, especially when the monsters encroach on the druids' territory.",
-								"Druids are often found guarding sacred sites or watching over regions of unspoiled nature. But when a significant danger arises, threatening nature's balance or the lands they protect, druids take on a more active role in combating the threat, as adventurers."
+								"Los druidas piensan que la naturaleza existe en medio de un delicado equilibrio. Los cuatro elementos de los que está hecho el mundo (aire, tierra, fuego y agua) deben permanecer en armonía. Si uno de ellos creciera en poder por encima de los demás, el mundo podría resultar destruido, absorbido por uno de los Planos Elementales y reducido a sus elementos constituyentes. Por eso los druidas se oponen a los cultos del Mal Elemental y a aquellos que favorecen un elemento por encima de los demás.",
+								"Los druidas también están preocupados por el delicado equilibrio del ecosistema, que hace posible la vida tanto vegetal como animal. Piensan que es imperativo que los pueblos civilizados vivan en armonía con la naturaleza, en lugar de oponiéndose a ella. Los druidas aceptan los aspectos crueles de la naturaleza, pero odian aquello que es antinatural, como las aberraciones, entre las que se encuentran los contempladores y los azotamentes, y los muertos vivientes, como pueden ser los zombis y los vampiros. Tan grande es este odio que algunas veces llegan a dirigir incursiones contra este tipo de criaturas, especialmente cuando dichos monstruos penetran en los territorios de un druida.",
+								"Los druidas suelen custodiar lugares sagrados o vigilar extensiones de naturaleza virgen. Sin embargo, cuando un gran peligro aparece, ya sea para amenazar el equilibrio de la naturaleza o las tierras que protegen, los druidas se ven obligados a combatir la amenaza de forma más activa: convirtiéndose en aventureros."
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Creating a Druid",
+							"name": "Creación de un druida",
 							"entries": [
-								"When making a druid, consider why your character has such a close bond with nature. Perhaps your character lives in a society where the Old Faith still thrives, or was raised by a druid after being abandoned in the depths of a forest. Perhaps your character had a dramatic encounter with the spirits of nature, coming face to face with a giant eagle or dire wolf and surviving the experience. Maybe your character was born during an epic storm or a volcanic eruption, which was interpreted as a sign that becoming a druid was part of your character's destiny.",
-								"Have you always been an adventurer as part of your druidic calling, or did you first spend time as a caretaker of a sacred grove or spring? Perhaps your homeland was befouled by evil, and you took up an adventuring life in hopes of finding a new home or purpose.",
+								"Cuando crees un druida, piensa en por que tu personaje posee un lazo tan fuerte con la naturaleza. Quizá viva en una sociedad en la que la Antigua Fe aún medra o fue criado por un druida tras ser abandonado en las profundidades de un bosque. Puede que tu personaje haya sufrido un encuentro dramático con los espíritus de la naturaleza, enfrentándose cara a cara con un águila gigante o un lobo terrible y logrando sobrevivir a la experiencia. O quizá naciera durante una tormenta de proporciones épicas o una erupción volcánica y esto fuera interpretado como una señal de que parte de su destine era convertirse en druida.",
+								"¿Ha formado la aventura parte de tu vocación como druida desde el principio? ¿O eras el guardián de un claro u arroyo sagrados? Puede que tu tierra natal haya sido corrompida por el mal y hayas decidido seguir el camino del aventurero con la esperanza de encontrar un nuevo propósito u hogar.",
 								{
 									"type": "entries",
-									"name": "Quick Build",
+									"name": "Creación rápida",
 									"entries": [
-										"You can make a druid quickly by following these suggestions. First, Wisdom should be your highest ability score, followed by Constitution. Second, choose the {@background hermit} background."
+										"Para crear un druida de forma rápida sugerimos lo siguiente. Para empezar, Sabiduría debería ser tu característica más alta, seguida de Constitución. A continuación, elige el trasfondo \"{@background ermitaño|PHB-ES}\"."
 									]
 								}
 							]
 						},
 						{
 							"type": "inset",
-							"name": "Sacred Plants and Wood",
+							"name": "Plantas y maderas sagradas",
 							"entries": [
-								"A druid holds certain plants to be sacred, particularly alder, ash, birch, elder, hazel, holly, juniper, mistletoe, oak, rowan, willow, and yew. Druids often use such plants as part of a spellcasting focus, incorporating lengths of oak or yew or sprigs of mistletoe.",
-								"Similarly, a druid uses such woods to make other objects, such as weapons and shields. Yew is associated with death and rebirth, so weapon handles for scimitars or sickles might be fashioned from it. Ash is associated with life and oak with strength. These woods make excellent hafts or whole weapons, such as clubs or quarterstaffs, as well as shields. Alder is associated with air, and it might be used for thrown weapons, such as darts or javelins.",
-								"Druids from regions that lack the plants described here have chosen other plants to take on similar uses. For instance, a druid of a desert region might value the yucca tree and cactus plants."
+								"Los druidas consideran que ciertos árboles y plantas son sagrados, en especial el abedul, el acebo, el aliso, el avellano, el enebro, el fresno, el muérdago, el roble, el sauce, el sauco, el serbal y el tejo. Suelen usar estas especies vegetales como parte de sus canalizadores mágicos, incorporando además trozos de roble o tejo y ramitas de muérdago.",
+								"Por la misma razón, los druidas también emplean estas maderas para fabricar otros objetos, como escudos o armas. El tejo está asociado a la muerte y el renacimiento, por lo que podrían confeccionar los mangos de sus cimitarras u hoces con esta madera. El fresno se relaciona con la vida y el roble con la fuerza, así que estos materiales son ideales para fabricar empuñaduras e incluso armas enteras, como es el caso de las garrotes y armaduras. También son útiles para crear escudos. Suele asociarse al aliso con el aire, por lo que esta madera es perfecta para armas arrojadizas, como los dardos y las jabalinas.",
+								"Los druidas de aquellas regiones que carecen de especies vegetales aquí descritas han elegido otras que llevan a cabo funciones similares. De esta forma, un druida de una región desértica podría emplear arboles de yuca y cactus."
 							]
 						},
 						{
 							"type": "inset",
-							"name": "Druids and the Gods",
+							"name": "Los druidas y los dioses",
 							"entries": [
-								"Some druids venerate the forces of nature themselves, but most druids are devoted to one of the many nature deities worshiped in the multiverse (the lists of gods in appendix B include many such deities). The worship of these deities is often considered a more ancient tradition than the faiths of clerics and urbanized peoples. In fact, in the world of Greyhawk, the druidic faith is called the Old Faith, and it claims many adherents among farmers, foresters, fishers, and others who live closely with nature. This tradition includes the worship of Nature as a primal force beyond personification, but also encompasses the worship of Beory, the Oerth Mother, as well as devotees of Obad-Hai, Ehlonna, and Ulaa.",
-								"In the worlds of Greyhawk and the Forgotten Realms, druidic circles are not usually connected to the faith of a single nature deity. Any given circle in the Forgotten Realms, for example, might include druids who revere Silvanus, Mielikki, Eldath, Chauntea, or even the harsh Gods of Fury: Talos, Malar, Auril, and Umberlee. These nature gods are often called the First Circle, the first among the druids, and most druids count them all (even the violent ones) as worthy of veneration.",
-								"The druids of Eberron hold animistic beliefs completely unconnected to the Sovereign Host, the Dark Six, or any of the other religions of the world. They believe that every living thing and every natural phenomenon—sun, moon, wind, fire, and the world itself—has a spirit. Their spells, then, are a means to communicate with and command these spirits. Different druidic sects, though, hold different philosophies about the proper relationship of these spirits to each other and to the forces of civilization. The Ashbound, for example, believe that arcane magic is an abomination against nature, the Children of Winter venerate the forces of death, and the Gatekeepers preserve ancient traditions meant to protect the world from the incursion of aberrations."
+								"Algunos druidas veneran a las propias fuerzas de la naturaleza, pero la mayoría son devotos de una de las muchas deidades de la naturaleza adoradas en el multiverso (la lista de dioses del apéndice B incluye muchas de estas divinidades). La adoración de estas deidades suele ser considerada como una tradición más antigua que las creencias de los clérigos y las comunidades urbanizadas. Es más, en el mundo de Falcongrís, la fe druídica recibe el nombre de la Antigua Fe y cuenta con muchos adeptos entre granjeros, guardabosques, pescadores y otras personas que viven en contacto con la naturaleza. Esta tradición se centra en la veneración de la Naturaleza como una fuerza primordial que no puede ser personificada, pero también incluye la adoración de Beory, la Madre Oerth, así como la devoción a Obad-Hai, Ehlonna, y Ulaa.",
+								"En los mundos de Falcongrís y los Reinos Olvidados, los círculos druídicos no suelen estar conectados con la fe de una única deidad de la naturaleza. Así, un círculo concreto en los Reinos Olvidados podría, por ejemplo, incluir a druidas que veneran a Silvanus, Mielikki, Eldath, Chauntea o incluso a los severos Dioses de la Furia: Talos, Malar, Auril y Umberlee. Estas divinidades de la naturaleza suelen ser conocidos como el Primer Círculo, los primeros druidas, pues la mayoría de los miembros de esta clase consideran a estos dioses, incluso a los más violentos, dignos de veneración.",
+								"Los druidas de Eberron poseen creencias animistas que están completamente desconectadas de las Hueste Soberana, los Seis Oscuros o cualquier otra de las religiones del mundo. Creen que cada ser vicio y cada fenómeno natural, como el sol, la luna, el viento, el fuego e incluso el propio mundo, posee un espíritu. Sus conjuros son, por tanto, un medio para comunicarse con estos espíritus y darles órdenes. Aunque diferentes sectas druídicas defienden filosofías distintas en lo que a la relación de estos espíritus entre sí y con fuerzas de la civilización respecta. Los Cenicientos, por ejemplo, piensan que la magia arcana es una abominación contra natura, mientras que los Hijos del Invierno veneran fuerzas de la muerte y los Canerberos preservan las antiguas tradiciones, cuyo fin es proteger el mundo de las incursiones de aberraciones."
 							]
 						}
 					],
-					"source": "PHB",
-					"page": 64
+					"source": "PHB-ES",
+					"page": 71
 				},
 				{
 					"type": "section",
@@ -553,24 +546,24 @@
 						{
 							"type": "quote",
 							"entries": [
-								"Even in death, each creature plays its part in maintaining the Great Balance. But now an imbalance grows, a force that seeks to hold sway over nature. This is the destructive behavior of the mortal races. The farther away from nature their actions take them, the more corrupting their influence becomes. As druids, we seek mainly to protect and educate, to preserve the Great Balance, but there are times when we must rise up against danger and eradicate it."
+								"Incluso al morir, cada criatura juega su papel en mantener el Gran Equilibrio. Pero ahora el desequilibrio crece, una fuerza que busca dominar la naturaleza. Es el comportamiento destructivo de las razas mortales. Cuanto más lejos de la naturaleza les llevan sus acciones, más corrupta se vuelve su influencia. Como druidas, buscamos principalmente proteger y educar, para preservar el Gran Equilibrio, pero hay ocasiones en las que debemos alzarnos contra el peligro y erradicarlo."
 							],
-							"by": "Safhran, archdruid"
+							"by": "Safhran, archidruida"
 						},
-						"Druids are the caretakers of the natural world, and it is said that in time a druid becomes the voice of nature, speaking the truth that is too subtle for the general populace to hear. Many who become druids find that they naturally gravitate toward nature; its forces, cycles, and movements fill their minds and spirits with wonder and insight. Many sages and wise folk have studied nature, writing volumes about its mystery and power, but druids are a special kind of being: at some point, they begin to embody these natural forces, producing magical phenomena that link them to the spirit of nature and the flow of life. Because of their strange and mysterious power, druids are often revered, shunned, or considered dangerous by the people around them.",
-						"Your druid character might be a true worshiper of nature, one who has always scorned civilization and found solace in the wild. Or your character could be a child of the city who now strives to bring the civilized world into harmony with the wilderness. You can use the sections that follow to flesh out your druid, regardless of how your character came to the profession.",
+						"Los druidas son los protectores del mundo natural. Se dice que llegado el momento se convierten en la voz del orden natural, contando verdades demasiado sutiles para el gran público. Muchos de los que se hacen druidas se ven atraídos hacia la naturaleza: sus fuerzas, ciclos y movimientos llenan sus mentes y espíritus de maravillas y conocimientos. Sabios de todo tipo han estudiado el mundo natural, escribiendo tomos sobre su misterio y poder, pero los druidas son seres especiales: en un momento de sus vidas, comienzan a encarnar estas fuerzas naturales, produciendo fenómenos mágicos que los unen a los espíritus de la naturaleza y al ciclo de la vida. Debido a sus extraños y misteriosos poderes los miembros de esta clase son muchas veces reverenciados, rehuidos o incluso considerados peligrosos por la gente que les rodea.",
+						"Tu druida podría ser un verdadero adorador de la naturaleza, alguien que siempre ha despreciado la civilización y que encuentra regocijo viviendo en tierras agrestes. O quizá tu personaje creció en la ciudad y ahora intenta que el mundo civilizado y la naturaleza salvaje convivan en armonía. Puedes usar las siguientes secciones para dar sustancia a tu druida, independientemente de cómo adoptara la profesión.",
 						{
 							"type": "entries",
-							"name": "Treasured Item",
+							"name": "Objeto precioso",
 							"entries": [
-								"Some druids carry one or more items that are sacred to them or have deep personal significance. Such items are not necessarily magical, but every one is an object whose meaning connects the druid's mind and heart to a profound concept or spiritual outlook.",
-								"When you decide what your character's treasured item is, think about giving it an origin story: how did you come by the item, and why is it important to you?",
+								"Algunos druidas llevan uno o más objetos que son sagrados para ellos o poseen un significado personal. Estos objetos no son necesariamente mágicos, pero cada uno de ellos tiene un significado que conecta la mente y el corazón del druida a un concepto profundo o a una perspectiva espiritual.",
+								"Cuando decidas cuál es el objeto precioso para tu personaje, piensa en darle un origen: ¿cómo encontraste el objeto y por qué es tan importante para ti?",
 								{
 									"type": "table",
-									"caption": "Treasured Item",
+									"caption": "Objetos preciosos",
 									"colLabels": [
 										"{@dice d6}",
-										"Treasured Item"
+										"Objeto"
 									],
 									"colStyles": [
 										"col-1 text-center",
@@ -584,7 +577,7 @@
 													"exact": 1
 												}
 											},
-											"A twig from the meeting tree that stands in the center of your village"
+											"Una ramita del árbol de reuniones que se yergue en el centro de tu aldea."
 										],
 										[
 											{
@@ -593,7 +586,7 @@
 													"exact": 2
 												}
 											},
-											"A vial of water from the source of a sacred river"
+											"Un vial de agua procedente del nacimiento de un río sagrado."
 										],
 										[
 											{
@@ -602,7 +595,7 @@
 													"exact": 3
 												}
 											},
-											"Special herbs tied together in a bundle"
+											"Un hatillo de hierbas especiales."
 										],
 										[
 											{
@@ -611,7 +604,7 @@
 													"exact": 4
 												}
 											},
-											"A small bronze bowl engraved with animal images"
+											"Un cuenco de bronce grabado con imágenes de animales."
 										],
 										[
 											{
@@ -620,7 +613,7 @@
 													"exact": 5
 												}
 											},
-											"A rattle made from a dried gourd and holly berries"
+											"Un sonajero hecho con un calabacín seco y bayas sagradas."
 										],
 										[
 											{
@@ -629,7 +622,7 @@
 													"exact": 6
 												}
 											},
-											"A miniature golden sickle handed down to you by your mentor"
+											"Una hoz de oro en miniatura, legado de tu mentor."
 										]
 									]
 								}
@@ -637,15 +630,15 @@
 						},
 						{
 							"type": "entries",
-							"name": "Guiding Aspects",
+							"name": "Aspecto guía",
 							"entries": [
-								"Many druids feel a strong link to a specific aspect of the natural world, such as a body of water, an animal, a type of tree, or some other sort of plant. You identify with your chosen aspect; by its behavior or its very nature, it sets an example that you seek to emulate.",
+								"Muchos druidas sienten un fuerte vínculo con un aspecto concreto del mundo natural, como una masa de agua, un animal, un tipo de árbol o alguna otra planta. Te identificas con el aspecto elegido: ya sea por su comportamiento o su propia naturaleza, es un ejemplo a seguir.",
 								{
 									"type": "table",
-									"caption": "Guiding Aspects",
+									"caption": "Aspectos guía",
 									"colLabels": [
 										"{@dice d6}",
-										"Guiding Aspects"
+										"Aspecto guía"
 									],
 									"colStyles": [
 										"col-1 text-center",
@@ -659,7 +652,7 @@
 													"exact": 1
 												}
 											},
-											"Yew trees remind you of renewing your mind and spirit, letting the old die and the new spring forth."
+											"Los tejos te recuerdan renovar la mente y el espíritu, dejar que lo anciano muera y lo nuevo prospere."
 										],
 										[
 											{
@@ -668,7 +661,7 @@
 													"exact": 2
 												}
 											},
-											"Oak trees represent strength and vitality. Meditating under an oak fills your body and mind with resolve and fortitude."
+											"Los robles representan fuerza y vitalidad. Meditar bajo uno de estos árboles llena tu cuerpo y tu mente de decisión y fortaleza."
 										],
 										[
 											{
@@ -677,7 +670,7 @@
 													"exact": 3
 												}
 											},
-											"The river's endless flow reminds you of the great span of the world. You seek to act with the long-term interests of nature in mind."
+											"El fluir infinito del río te recuerda la gran extensión del mundo. Buscas tener los intereses a largo plazo de la naturaleza siempre presentes. El mar es un caldero siempre batiente de poder y caos."
 										],
 										[
 											{
@@ -686,7 +679,7 @@
 													"exact": 4
 												}
 											},
-											"The sea is a constant, churning cauldron of power and chaos. It reminds you that accepting change is necessary to sustain yourself in the world."
+											"Te recuerda que aceptar el cambio es necesario para poder mantenerte en el mundo."
 										],
 										[
 											{
@@ -695,7 +688,7 @@
 													"exact": 5
 												}
 											},
-											"The birds in the sky are evidence that even the smallest creatures can survive if they remain above the fray."
+											"Las aves del cielo son prueba de que incluso las criaturas más pequeñas pueden sobrevivir si se mantienen fuera de la liza."
 										],
 										[
 											{
@@ -704,7 +697,7 @@
 													"exact": 6
 												}
 											},
-											"As demonstrated by the actions of the wolf, an individual's strength is nothing compared to the power of the pack."
+											"Como demuestran las acciones del lobo, la fuerza del individuo no puede compararse al poder de la manada."
 										]
 									]
 								}
@@ -712,16 +705,16 @@
 						},
 						{
 							"type": "entries",
-							"name": "Mentors",
+							"name": "Mentor",
 							"entries": [
-								"It's not unusual for would-be druids to seek out (or be sought out by) instructors or elders who teach them the basics of their magical arts. Most druids who learn from a mentor begin their training at a young age, and the mentor has a vital role in shaping a student's attitudes and beliefs.",
-								"If your character received training from someone else, who or what was that individual, and what was the nature of your relationship? Did your mentor imbue you with a particular outlook or otherwise influence your approach to achieving the goals of your chosen path?",
+								"Es normal que futuros druidas busquen instructores o sabios que puedan enseñarles lo básico de las artes mágicas. La mayoría de los miembros de esta clase que aprenden de un mentor comienzan su entrenamiento a una edad temprana, por lo que su maestro cumple un papel vital en dar forma a sus actitudes y creencias.",
+								"Si tu personaje ha recibido entrenamiento de alguien, ¿quién o qué era esa persona y cuál era la naturaleza de vuestra relación? ¿Te empapó tu mentor de una perspectiva concreta o influyó en tu forma de intentar alcanzar las metas que le propones?",
 								{
 									"type": "table",
-									"caption": "Mentors",
+									"caption": "Mentores",
 									"colLabels": [
 										"{@dice d6}",
-										"Mentors"
+										"Mentor"
 									],
 									"colStyles": [
 										"col-1 text-center",
@@ -735,7 +728,7 @@
 													"exact": 1
 												}
 											},
-											"Your mentor was a wise treant who taught you to think in terms of years and decades rather than days or months."
+											"Tu mentor fue un ent sabio, que te enseñó a pensar en términos de años y décadas en vez de en días o meses."
 										],
 										[
 											{
@@ -744,7 +737,7 @@
 													"exact": 2
 												}
 											},
-											"You were tutored by a dryad who watched over a slumbering portal to the Abyss. During your training, you were tasked with watching for hidden threats to the world."
+											"Aprendiste con una dríade que vigilaba un portal durmiente al Abismo. Durante tu entrenamiento, te encargaba buscar amenazas ocultas para el mundo."
 										],
 										[
 											{
@@ -753,7 +746,7 @@
 													"exact": 3
 												}
 											},
-											"Your tutor always interacted with you in the form of a falcon. You never saw the tutor's humanoid form."
+											"Tu tutor siempre interactuaba contigo en forma de halcón. Nunca viste su forma humanoide."
 										],
 										[
 											{
@@ -762,7 +755,7 @@
 													"exact": 4
 												}
 											},
-											"You were one of several youngsters who were mentored by an old druid, until one of your fellow pupils betrayed your group and killed your master."
+											"Eras uno de varios jovenzuelos bajo la tutela de un viejo druida, hasta que uno de tus compañeros traicionó al grupo y asesinó a tu maestro."
 										],
 										[
 											{
@@ -771,7 +764,7 @@
 													"exact": 5
 												}
 											},
-											"Your mentor has appeared to you only in visions. You have yet to meet this person, and you are not sure such a person exists in mortal form."
+											"Solo has visto a tu mentor en visiones. Todavía no te has encontrado nunca con él. De hecho, ni siquiera estás seguro de que tenga forma mortal."
 										],
 										[
 											{
@@ -780,7 +773,7 @@
 													"exact": 6
 												}
 											},
-											"Your mentor was a werebear who taught you to treat all living things with equal regard."
+											"Tu mentor fue un hombre oso que te enseñó a tratar a todos los seres vivos con el mismo respeto."
 										]
 									]
 								}
@@ -788,19 +781,19 @@
 						},
 						{
 							"type": "section",
-							"name": "Learning Beast Shapes",
+							"name": "Aprendiendo formas de bestias",
 							"entries": [
-								"The Wild Shape feature in the player's handbook lets you transform into a beast that you've seen. That rule gives you a tremendous amount of flexibility, making it easy to amass an array of beast form options for yourself, but you must abide by the limitations in the Beast Shapes table in that book.",
-								"When you gain Wild Shape as a 2nd-level druid, you might wonder which beasts you've already seen. The following tables organize beasts from the monster manual according to the beasts' most likely environments. Consider the environment your druid grew up in, then consult the appropriate table for a list of animals that your druid has probably seen by 2nd level.",
-								"These tables can also help you and your DM determine which animals you might see on your travels. In addition, the tables include each beast's challenge rating and note whether a beast has a flying or swimming speed. This information will help you determine whether you qualify to assume that beast's form.",
-								"The tables include all the individual beasts that are eligible for Wild Shape (up to a challenge rating of 1) or the Circle Forms feature of the Circle of the Moon (up to a challenge rating of 6).",
+								"El rasgo Forma Salvaje, explicado en el {@i Player's Handbook}, te permite transformarte en una bestia que hayas visto. Esa regla te proporciona muchísima flexibilidad, haciendo que sea fácil acumular una gran cantidad de opciones de apariencias de animales, pero debes seguir cumpliendo las limitaciones de la tabla \"Formas de bestia\" de dicho libro.",
+								"Cuando consigues, a nivel 2 de druida, Forma Salvaje, puede que te preguntes qué animales has visto ya. Las siguientes tablas organizan bestias del {@i Monster Manual} de acuerdo a sus entornos más probables. Considerando el ambiente en que tu druida creció, puedes consultar la tabla correspondiente para encontrar una lista de animales que tu aventurero probablemente ya ha visto al llegar a nivel 2.",
+								"Estas tablas también pueden ayudarte a ti y a tu DM a determinar qué bestias podrías ver en tus viajes. Además, también incluyen el valor de desafío de cada animal y si este posee velocidad volando o nadando. Esta información te ayudará a saber si estás cualificado para asumir la forma de esa bestia.",
+								"Las tablas incluyen todos los animales que se pueden elegir mediante Forma Salvaje (hasta valor de desafío 1) o mediante el rasgo Formas del Círculo del Círculo de la Luna (hasta valor de desafío 6).",
 								{
 									"type": "table",
-									"caption": "Arctic",
+									"caption": "Bajo el agua",
 									"colLabels": [
-										"CR",
-										"Beast",
-										"Fly/Swim"
+										"VD",
+										"Bestia",
+										"Volar/Nadar"
 									],
 									"colStyles": [
 										"col-2 text-center",
@@ -810,48 +803,815 @@
 									"rows": [
 										[
 											"0",
-											"{@creature Owl}",
-											"Fly"
-										],
-										[
-											"1/8",
-											"{@creature Blood hawk}",
-											"Fly"
+											"{@creature Mordedor|MM-ES}",
+											"Nadar"
 										],
 										[
 											"1/4",
-											"{@creature Giant owl}",
-											"Fly"
+											"{@creature Serpiente constrictora|MM-ES}",
+											"Nadar"
+										],
+										[
+											"1/2",
+											"{@creature Caballito de mar gigante|MM-ES}",
+											"Nadar"
+										],
+										[
+											"1/2",
+											"{@creature Tiburón de arrecife|MM-ES}",
+											"Nadar"
 										],
 										[
 											"1",
-											"{@creature Brown bear}",
+											"{@creature Pulpo gigante|MM-ES}",
+											"Nadar"
+										],
+										[
+											"2",
+											"{@creature Plesiosaurio|MM-ES}",
+											"Nadar"
+										],
+										[
+											"2",
+											"{@creature Serpiente constrictora gigante|MM-ES}",
+											"Nadar"
+										],
+										[
+											"2",
+											"{@creature Tiburón cazador|MM-ES}",
+											"Nadar"
+										],
+										[
+											"3",
+											"{@creature Orca|MM-ES}",
+											"Nadar"
+										],
+										[
+											"5",
+											"{@creature Tiburón gigante|MM-ES}",
+											"Nadar"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Bosque",
+									"colLabels": [
+										"VD",
+										"Bestia",
+										"Volar/Nadar"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-8",
+										"col-2"
+									],
+									"rows": [
+										[
+											"0",
+											"{@creature Babuino|MM-ES}",
+											"—"
+										],
+										[
+											"0",
+											"{@creature Búho|MM-ES}",
+											"Volar"
+										],
+										[
+											"0",
+											"{@creature Ciervo|MM-ES}",
+											"—"
+										],
+										[
+											"0",
+											"{@creature Gato|MM-ES}",
+											"—"
+										],
+										[
+											"0",
+											"{@creature Hiena|MM-ES}",
+											"—"
+										],
+										[
+											"0",
+											"{@creature Tejón|MM-ES}",
+											"—"
+										],
+										[
+											"1/8",
+											"{@creature Comadreja gigante|MM-ES}",
+											"—"
+										],
+										[
+											"1/8",
+											"{@creature Estirge|MM-ES}",
+											"Volar"
+										],
+										[
+											"1/8",
+											"{@creature Halcón sangriento|MM-ES}",
+											"Volar"
+										],
+										[
+											"1/8",
+											"{@creature Mastín|MM-ES}",
+											"—"
+										],
+										[
+											"1/8",
+											"{@creature Rata gigante|MM-ES}",
+											"—"
+										],
+										[
+											"1/8",
+											"{@creature Serpiente venenosa|MM-ES}",
+											"Nadar"
+										],
+										[
+											"1/8",
+											"{@creature Serpiente voladora|MM-ES}",
+											"Volar"
+										],
+										[
+											"1/4",
+											"{@creature Alce|MM-ES}",
+											"—"
+										],
+										[
+											"1/4",
+											"{@creature Búho gigante|MM-ES}",
+											"Volar"
+										],
+										[
+											"1/4",
+											"{@creature Jabalí|MM-ES}",
+											"—"
+										],
+										[
+											"1/4",
+											"{@creature Lagarto gigante|MM-ES}",
+											"—"
+										],
+										[
+											"1/4",
+											"{@creature Lobo|MM-ES}",
+											"—"
+										],
+										[
+											"1/4",
+											"{@creature Murciélago gigante|MM-ES}",
+											"Volar"
+										],
+										[
+											"1/4",
+											"{@creature Pantera|MM-ES}",
+											"—"
+										],
+										[
+											"1/4",
+											"{@creature Rana gigante|MM-ES}",
+											"Nadar"
+										],
+										[
+											"1/4",
+											"{@creature Serpiente constrictora|MM-ES}",
+											"Nadar"
+										],
+										[
+											"1/4",
+											"{@creature Serpiente venenosa gigante|MM-ES}",
+											"Nadar"
+										],
+										[
+											"1/4",
+											"{@creature Tarántula gigante|MM-ES}",
+											"—"
+										],
+										[
+											"1/4",
+											"{@creature Tejón gigante|MM-ES}",
+											"—"
+										],
+										[
+											"1/2",
+											"{@creature Avispa gigante|MM-ES}",
+											"Volar"
+										],
+										[
+											"1/2",
+											"{@creature Oso negro|MM-ES}",
+											"—"
+										],
+										[
+											"1/2",
+											"{@creature Simio|MM-ES}",
+											"—"
+										],
+										[
+											"1",
+											"{@creature Araña gigante|MM-ES}",
+											"—"
+										],
+										[
+											"1",
+											"{@creature Hiena gigante|MM-ES}",
+											"—"
+										],
+										[
+											"1",
+											"{@creature Lobo terrible|MM-ES}",
+											"—"
+										],
+										[
+											"1",
+											"{@creature Oso pardo|MM-ES}",
+											"—"
+										],
+										[
+											"1",
+											"{@creature Sapo gigante|MM-ES}",
+											"Nadar"
+										],
+										[
+											"1",
+											"{@creature Tigre|MM-ES}",
 											"—"
 										],
 										[
 											"2",
-											"{@creature Polar bear}",
-											"Swim"
+											"{@creature Alce gigante|MM-ES}",
+											"—"
 										],
 										[
 											"2",
-											"{@creature Saber-toothed tiger}",
+											"{@creature Jabalí gigante|MM-ES}",
+											"—"
+										],
+										[
+											"2",
+											"{@creature Serpiente constrictora gigante|MM-ES}",
+											"Nadar"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Colina",
+									"colLabels": [
+										"VD",
+										"Bestia",
+										"Volar/Nadar"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-8",
+										"col-2"
+									],
+									"rows": [
+										[
+											"0",
+											"{@creature Águila|MM-ES}",
+											"Volar"
+										],
+										[
+											"0",
+											"{@creature Babuino|MM-ES}",
+											"—"
+										],
+										[
+											"0",
+											"{@creature Buitre|MM-ES}",
+											"Volar"
+										],
+										[
+											"0",
+											"{@creature Cabra|MM-ES}",
+											"—"
+										],
+										[
+											"0",
+											"{@creature Cuervo|MM-ES}",
+											"Volar"
+										],
+										[
+											"0",
+											"{@creature Hiena|MM-ES}",
+											"—"
+										],
+										[
+											"1/8",
+											"{@creature Comadreja gigante|MM-ES}",
+											"—"
+										],
+										[
+											"1/8",
+											"{@creature Estirge|MM-ES}",
+											"Volar"
+										],
+										[
+											"1/8",
+											"{@creature Halcón sangriento|MM-ES}",
+											"Volar"
+										],
+										[
+											"1/8",
+											"{@creature Mastín|MM-ES}",
+											"—"
+										],
+										[
+											"1/8",
+											"{@creature Mula|MM-ES}",
+											"—"
+										],
+										[
+											"1/8",
+											"{@creature Serpiente venenosa|MM-ES}",
+											"Nadar"
+										],
+										[
+											"1/4",
+											"{@creature Alce|MM-ES}",
+											"—"
+										],
+										[
+											"1/4",
+											"{@creature Búho gigante|MM-ES}",
+											"Volar"
+										],
+										[
+											"1/4",
+											"{@creature Jabalí|MM-ES}",
+											"—"
+										],
+										[
+											"1/4",
+											"{@creature Lobo|MM-ES}",
+											"—"
+										],
+										[
+											"1/4",
+											"{@creature Pantera|MM-ES} (puma)",
+											"—"
+										],
+										[
+											"1/4",
+											"{@creature Pico de hacha|MM-ES}",
+											"—"
+										],
+										[
+											"1/4",
+											"{@creature Tarántula gigante|MM-ES}",
+											"—"
+										],
+										[
+											"1/2",
+											"{@creature Cabra gigante|MM-ES}",
+											"—"
+										],
+										[
+											"1",
+											"{@creature Águila gigante|MM-ES}",
+											"Volar"
+										],
+										[
+											"1",
+											"{@creature Hiena gigante|MM-ES}",
+											"—"
+										],
+										[
+											"1",
+											"{@creature León|MM-ES}",
+											"—"
+										],
+										[
+											"1",
+											"{@creature Lobo terrible|MM-ES}",
+											"—"
+										],
+										[
+											"1",
+											"{@creature Oso pardo|MM-ES}",
+											"—"
+										],
+										[
+											"2",
+											"{@creature Alce gigante|MM-ES}",
+											"—"
+										],
+										[
+											"2",
+											"{@creature Jabalí gigante|MM-ES}",
+											"—"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Costa",
+									"colLabels": [
+										"VD",
+										"Bestia",
+										"Volar/Nadar"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-8",
+										"col-2"
+									],
+									"rows": [
+										[
+											"0",
+											"{@creature Águila|MM-ES}",
+											"Volar"
+										],
+										[
+											"0",
+											"{@creature Cangrejo|MM-ES}",
+											"Nadar"
+										],
+										[
+											"1/8",
+											"{@creature Cangrejo gigante|MM-ES}",
+											"Nadar"
+										],
+										[
+											"1/8",
+											"{@creature Estirge|MM-ES}",
+											"Volar"
+										],
+										[
+											"1/8",
+											"{@creature Halcón sangriento|MM-ES}",
+											"Volar"
+										],
+										[
+											"1/8",
+											"{@creature Serpiente venenosa|MM-ES}",
+											"Nadar"
+										],
+										[
+											"1/4",
+											"{@creature Lagarto gigante|MM-ES}",
+											"—"
+										],
+										[
+											"1/4",
+											"{@creature Pteranodon|MM-ES}",
+											"Volar"
+										],
+										[
+											"1/4",
+											"{@creature Tarántula gigante|MM-ES}",
+											"—"
+										],
+										[
+											"1",
+											"{@creature Águila gigante|MM-ES}",
+											"Volar"
+										],
+										[
+											"1",
+											"{@creature Sapo gigante|MM-ES}",
+											"Nadar"
+										],
+										[
+											"2",
+											"{@creature Plesiosaurio|MM-ES}",
+											"Nadar"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Desierto",
+									"colLabels": [
+										"VD",
+										"Bestia",
+										"Volar/Nadar"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-8",
+										"col-2"
+									],
+									"rows": [
+										[
+											"0",
+											"{@creature Buitre|MM-ES}",
+											"Volar"
+										],
+										[
+											"0",
+											"{@creature Chacal|MM-ES}",
+											"—"
+										],
+										[
+											"0",
+											"{@creature Escorpión|MM-ES}",
+											"—"
+										],
+										[
+											"0",
+											"{@creature Gato|MM-ES}",
+											"—"
+										],
+										[
+											"0",
+											"{@creature Hiena|MM-ES}",
+											"—"
+										],
+										[
+											"1/8",
+											"{@creature Camello|MM-ES}",
+											"—"
+										],
+										[
+											"1/8",
+											"{@creature Estirge|MM-ES}",
+											"Volar"
+										],
+										[
+											"1/8",
+											"{@creature Mula|MM-ES}",
+											"—"
+										],
+										[
+											"1/8",
+											"{@creature Serpiente venenosa|MM-ES}",
+											"Nadar"
+										],
+										[
+											"1/8",
+											"{@creature Serpiente voladora|MM-ES}",
+											"Volar"
+										],
+										[
+											"1/4",
+											"{@creature Lagarto gigante|MM-ES}",
+											"—"
+										],
+										[
+											"1/4",
+											"{@creature Serpiente constrictora|MM-ES}",
+											"Nadar"
+										],
+										[
+											"1/4",
+											"{@creature Serpiente venenosa gigante|MM-ES}",
+											"Nadar"
+										],
+										[
+											"1/4",
+											"{@creature Tarántula gigante|MM-ES}",
+											"—"
+										],
+										[
+											"1",
+											"{@creature Araña gigante|MM-ES}",
+											"—"
+										],
+										[
+											"1",
+											"{@creature Buitre gigante|MM-ES}",
+											"Volar"
+										],
+										[
+											"1",
+											"{@creature Hiena gigante|MM-ES}",
+											"—"
+										],
+										[
+											"1",
+											"{@creature León|MM-ES}",
+											"—"
+										],
+										[
+											"1",
+											"{@creature Sapo gigante|MM-ES}",
+											"Nadar"
+										],
+										[
+											"2",
+											"{@creature Serpiente constrictora gigante|MM-ES}",
+											"Nadar"
+										],
+										[
+											"3",
+											"{@creature Escorpión gigante|MM-ES}",
+											"—"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Montaña",
+									"colLabels": [
+										"VD",
+										"Bestia",
+										"Volar/Nadar"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-8",
+										"col-2"
+									],
+									"rows": [
+										[
+											"0",
+											"{@creature Águila|MM-ES}",
+											"Volar"
+										],
+										[
+											"0",
+											"{@creature Cabra|MM-ES}",
+											"—"
+										],
+										[
+											"1/8",
+											"{@creature Estirge|MM-ES}",
+											"Volar"
+										],
+										[
+											"1/8",
+											"{@creature Halcón sangriento|MM-ES}",
+											"Volar"
+										],
+										[
+											"1/4",
+											"{@creature Pteranodon|MM-ES}",
+											"Volar"
+										],
+										[
+											"1/2",
+											"{@creature Cabra gigante|MM-ES}",
+											"—"
+										],
+										[
+											"1",
+											"{@creature Águila gigante|MM-ES}",
+											"Volar"
+										],
+										[
+											"1",
+											"{@creature León|MM-ES}",
+											"—"
+										],
+										[
+											"2",
+											"{@creature Alce gigante|MM-ES}",
+											"—"
+										],
+										[
+											"2",
+											"{@creature Tigre dientes de sable|MM-ES}",
+											"—"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Pantano",
+									"colLabels": [
+										"VD",
+										"Bestia",
+										"Volar/Nadar"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-8",
+										"col-2"
+									],
+									"rows": [
+										[
+											"0",
+											"{@creature Cuervo|MM-ES}",
+											"Volar"
+										],
+										[
+											"0",
+											"{@creature Rata|MM-ES}",
+											"—"
+										],
+										[
+											"1/8",
+											"{@creature Estirge|MM-ES}",
+											"Volar"
+										],
+										[
+											"1/8",
+											"{@creature Rata gigante|MM-ES}",
+											"—"
+										],
+										[
+											"1/8",
+											"{@creature Serpiente venenosa|MM-ES}",
+											"Nadar"
+										],
+										[
+											"1/4",
+											"{@creature Lagarto gigante|MM-ES}",
+											"—"
+										],
+										[
+											"1/4",
+											"{@creature Rana gigante|MM-ES}",
+											"Nadar"
+										],
+										[
+											"1/4",
+											"{@creature Serpiente constrictora|MM-ES}",
+											"Nadar"
+										],
+										[
+											"1/4",
+											"{@creature Serpiente venenosa gigante|MM-ES}",
+											"Nadar"
+										],
+										[
+											"1/2",
+											"{@creature Cocodrilo|MM-ES}",
+											"Nadar"
+										],
+										[
+											"1",
+											"{@creature Araña gigante|MM-ES}",
+											"—"
+										],
+										[
+											"1",
+											"{@creature Sapo gigante|MM-ES}",
+											"Nadar"
+										],
+										[
+											"2",
+											"{@creature Serpiente constrictora gigante|MM-ES}",
+											"Nadar"
+										],
+										[
+											"5",
+											"{@creature Cocodrilo gigante|MM-ES}",
+											"Nadar"
+										]
+									]
+								},
+								{
+									"type": "table",
+									"caption": "Polar",
+									"colLabels": [
+										"VD",
+										"Bestia",
+										"Volar/Nadar"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-8",
+										"col-2"
+									],
+									"rows": [
+										[
+											"0",
+											"{@creature Búho|MM-ES}",
+											"Volar"
+										],
+										[
+											"1/8",
+											"{@creature Halcón sangriento|MM-ES}",
+											"Volar"
+										],
+										[
+											"1/4",
+											"{@creature Búho gigante|MM-ES}",
+											"Volar"
+										],
+										[
+											"1",
+											"{@creature Oso pardo|MM-ES}",
+											"—"
+										],
+										[
+											"2",
+											"{@creature Oso polar|MM-ES}",
+											"Nadar"
+										],
+										[
+											"2",
+											"{@creature Tigre dientes de sable|MM-ES}",
 											"—"
 										],
 										[
 											"6",
-											"{@creature Mammoth}",
+											"{@creature Mamut|MM-ES}",
 											"—"
 										]
 									]
 								},
 								{
 									"type": "table",
-									"caption": "Coast",
+									"caption": "Pradera",
 									"colLabels": [
-										"CR",
-										"Beast",
-										"Fly/Swim"
+										"VD",
+										"Bestia",
+										"Volar/Nadar"
 									],
 									"colStyles": [
 										"col-2 text-center",
@@ -861,879 +1621,178 @@
 									"rows": [
 										[
 											"0",
-											"{@creature Crab}",
-											"Swim"
+											"{@creature Águila|MM-ES}",
+											"Volar"
 										],
 										[
 											"0",
-											"{@creature Eagle}",
-											"Fly"
+											"{@creature Buitre|MM-ES}",
+											"Volar"
 										],
-										[
-											"1/8",
-											"{@creature Blood hawk}",
-											"Fly"
-										],
-										[
-											"1/8",
-											"{@creature Giant crab}",
-											"Swim"
-										],
-										[
-											"1/8",
-											"{@creature Poisonous snake}",
-											"Swim"
-										],
-										[
-											"1/8",
-											"{@creature Stirge}",
-											"Fly"
-										],
-										[
-											"1/4",
-											"{@creature Giant lizard}",
-											"—"
-										],
-										[
-											"1/4",
-											"{@creature Giant wolf spider}",
-											"—"
-										],
-										[
-											"1/4",
-											"{@creature Pteranodon}",
-											"Fly"
-										],
-										[
-											"1",
-											"{@creature Giant eagle}",
-											"Fly"
-										],
-										[
-											"1",
-											"{@creature Giant toad}",
-											"Swim"
-										],
-										[
-											"2",
-											"{@creature Plesiosaurus}",
-											"Swim"
-										]
-									]
-								},
-								{
-									"type": "table",
-									"caption": "Desert",
-									"colLabels": [
-										"CR",
-										"Beast",
-										"Fly/Swim"
-									],
-									"colStyles": [
-										"col-2 text-center",
-										"col-8",
-										"col-2"
-									],
-									"rows": [
 										[
 											"0",
-											"{@creature Cat}",
+											"{@creature Cabra|MM-ES}",
 											"—"
 										],
 										[
 											"0",
-											"{@creature Hyena}",
+											"{@creature Chacal|MM-ES}",
 											"—"
 										],
 										[
 											"0",
-											"{@creature Jackal}",
+											"{@creature Ciervo|MM-ES}",
 											"—"
 										],
 										[
 											"0",
-											"{@creature Scorpion}",
+											"{@creature Gato|MM-ES}",
 											"—"
 										],
 										[
 											"0",
-											"{@creature Vulture}",
-											"Fly"
-										],
-										[
-											"1/8",
-											"{@creature Camel}",
+											"{@creature Hiena|MM-ES}",
 											"—"
 										],
 										[
 											"1/8",
-											"{@creature Flying snake}",
-											"Fly"
-										],
-										[
-											"1/8",
-											"{@creature Mule}",
+											"{@creature Comadreja gigante|MM-ES}",
 											"—"
 										],
 										[
 											"1/8",
-											"{@creature Poisonous snake}",
-											"Swim"
+											"{@creature Estirge|MM-ES}",
+											"Volar"
 										],
 										[
 											"1/8",
-											"{@creature Stirge}",
-											"Fly"
-										],
-										[
-											"1/4",
-											"{@creature Constrictor snake}",
-											"Swim"
-										],
-										[
-											"1/4",
-											"{@creature Giant lizard}",
-											"—"
-										],
-										[
-											"1/4",
-											"{@creature Giant poisonous snake}",
-											"Swim"
-										],
-										[
-											"1/4",
-											"{@creature Giant wolf spider}",
-											"—"
-										],
-										[
-											"1",
-											"{@creature Giant hyena}",
-											"—"
-										],
-										[
-											"1",
-											"{@creature Giant spider}",
-											"—"
-										],
-										[
-											"1",
-											"{@creature Giant toad}",
-											"Swim"
-										],
-										[
-											"1",
-											"{@creature Giant vulture}",
-											"Fly"
-										],
-										[
-											"1",
-											"{@creature Lion}",
-											"—"
-										],
-										[
-											"2",
-											"{@creature Giant constrictor snake}",
-											"Swim"
-										],
-										[
-											"3",
-											"{@creature Giant scorpion}",
-											"—"
-										]
-									]
-								},
-								{
-									"type": "table",
-									"caption": "Forest",
-									"colLabels": [
-										"CR",
-										"Beast",
-										"Fly/Swim"
-									],
-									"colStyles": [
-										"col-2 text-center",
-										"col-8",
-										"col-2"
-									],
-									"rows": [
-										[
-											"0",
-											"{@creature Baboon}",
-											"—"
-										],
-										[
-											"0",
-											"{@creature Badger}",
-											"—"
-										],
-										[
-											"0",
-											"{@creature Cat}",
-											"—"
-										],
-										[
-											"0",
-											"{@creature Deer}",
-											"—"
-										],
-										[
-											"0",
-											"{@creature Hyena}",
-											"—"
-										],
-										[
-											"0",
-											"{@creature Owl}",
-											"Fly"
+											"{@creature Halcón sangriento|MM-ES}",
+											"Volar"
 										],
 										[
 											"1/8",
-											"{@creature Blood hawk}",
-											"Fly"
+											"{@creature Serpiente venenosa|MM-ES}",
+											"Nadar"
 										],
 										[
 											"1/8",
-											"{@creature Flying snake}",
-											"Fly"
-										],
-										[
-											"1/8",
-											"{@creature Giant rat}",
-											"—"
-										],
-										[
-											"1/8",
-											"{@creature Giant weasel}",
-											"—"
-										],
-										[
-											"1/8",
-											"{@creature Poisonous snake}",
-											"Swim"
-										],
-										[
-											"1/8",
-											"{@creature Mastiff}",
-											"—"
-										],
-										[
-											"1/8",
-											"{@creature Stirge}",
-											"Fly"
+											"{@creature Serpiente voladora|MM-ES}",
+											"Volar"
 										],
 										[
 											"1/4",
-											"{@creature Boar}",
+											"{@creature Alce|MM-ES}",
 											"—"
 										],
 										[
 											"1/4",
-											"{@creature Constrictor snake}",
-											"Swim"
-										],
-										[
-											"1/4",
-											"{@creature Elk}",
+											"{@creature Caballo de monta|MM-ES}",
 											"—"
 										],
 										[
 											"1/4",
-											"{@creature Giant badger}",
+											"{@creature Jabalí|MM-ES}",
 											"—"
 										],
 										[
 											"1/4",
-											"{@creature Giant bat}",
-											"Fly"
-										],
-										[
-											"1/4",
-											"{@creature Giant frog}",
-											"Swim"
-										],
-										[
-											"1/4",
-											"{@creature Giant lizard}",
+											"{@creature Lobo|MM-ES}",
 											"—"
 										],
 										[
 											"1/4",
-											"{@creature Giant owl}",
-											"Fly"
-										],
-										[
-											"1/4",
-											"{@creature Giant poisonous snake}",
-											"Swim"
-										],
-										[
-											"1/4",
-											"{@creature Giant wolf spider}",
+											"{@creature Pantera|MM-ES} (leopardo)",
 											"—"
 										],
 										[
 											"1/4",
-											"{@creature Panther}",
+											"{@creature Pico de hacha|MM-ES}",
 											"—"
 										],
 										[
 											"1/4",
-											"{@creature Wolf}",
+											"{@creature Pteranodon|MM-ES}",
+											"Volar"
+										],
+										[
+											"1/4",
+											"{@creature Serpiente venenosa gigante|MM-ES}",
+											"Nadar"
+										],
+										[
+											"1/4",
+											"{@creature Tarántula gigante|MM-ES}",
 											"—"
 										],
 										[
 											"1/2",
-											"{@creature Ape}",
-											"—"
+											"{@creature Avispa gigante|MM-ES}",
+											"Volar"
 										],
 										[
 											"1/2",
-											"{@creature Black bear}",
-											"—"
-										],
-										[
-											"1/2",
-											"{@creature Giant wasp}",
-											"Fly"
-										],
-										[
-											"1",
-											"{@creature Brown bear}",
+											"{@creature Cabra gigante|MM-ES}",
 											"—"
 										],
 										[
 											"1",
-											"{@creature Dire wolf}",
+											"{@creature Águila gigante|MM-ES}",
+											"Volar"
+										],
+										[
+											"1",
+											"{@creature Buitre gigante|MM-ES}",
+											"Volar"
+										],
+										[
+											"1",
+											"{@creature Hiena gigante|MM-ES}",
 											"—"
 										],
 										[
 											"1",
-											"{@creature Giant hyena}",
+											"{@creature León|MM-ES}",
 											"—"
 										],
 										[
 											"1",
-											"{@creature Giant spider}",
-											"—"
-										],
-										[
-											"1",
-											"{@creature Giant toad}",
-											"Swim"
-										],
-										[
-											"1",
-											"{@creature Tiger}",
+											"{@creature Tigre|MM-ES}",
 											"—"
 										],
 										[
 											"2",
-											"{@creature Giant boar}",
+											"{@creature Alce gigante|MM-ES}",
 											"—"
 										],
 										[
 											"2",
-											"{@creature Giant constrictor snake}",
-											"Swim"
-										],
-										[
-											"2",
-											"{@creature Giant elk}",
-											"—"
-										]
-									]
-								},
-								{
-									"type": "table",
-									"caption": "Grassland",
-									"colLabels": [
-										"CR",
-										"Beast",
-										"Fly/Swim"
-									],
-									"colStyles": [
-										"col-2 text-center",
-										"col-8",
-										"col-2"
-									],
-									"rows": [
-										[
-											"0",
-											"{@creature Cat}",
-											"—"
-										],
-										[
-											"0",
-											"{@creature Deer}",
-											"—"
-										],
-										[
-											"0",
-											"{@creature Eagle}",
-											"Fly"
-										],
-										[
-											"0",
-											"{@creature Goat}",
-											"—"
-										],
-										[
-											"0",
-											"{@creature Hyena}",
-											"—"
-										],
-										[
-											"0",
-											"{@creature Jackal}",
-											"—"
-										],
-										[
-											"0",
-											"{@creature Vulture}",
-											"Fly"
-										],
-										[
-											"1/8",
-											"{@creature Blood hawk}",
-											"Fly"
-										],
-										[
-											"1/8",
-											"{@creature Flying snake}",
-											"Fly"
-										],
-										[
-											"1/8",
-											"{@creature Giant weasel}",
-											"—"
-										],
-										[
-											"1/8",
-											"{@creature Poisonous snake}",
-											"Swim"
-										],
-										[
-											"1/8",
-											"{@creature Stirge}",
-											"Fly"
-										],
-										[
-											"1/4",
-											"{@creature Axe beak}",
-											"—"
-										],
-										[
-											"1/4",
-											"{@creature Boar}",
-											"—"
-										],
-										[
-											"1/4",
-											"{@creature Elk}",
-											"—"
-										],
-										[
-											"1/4",
-											"{@creature Giant poisonous snake}",
-											"Swim"
-										],
-										[
-											"1/4",
-											"{@creature Giant wolf spider}",
-											"—"
-										],
-										[
-											"1/4",
-											"{@creature Panther} (leopard)",
-											"—"
-										],
-										[
-											"1/4",
-											"{@creature Pteranodon}",
-											"Fly"
-										],
-										[
-											"1/4",
-											"{@creature Riding horse}",
-											"—"
-										],
-										[
-											"1/4",
-											"{@creature Wolf}",
-											"—"
-										],
-										[
-											"1/2",
-											"{@creature Giant goat}",
-											"—"
-										],
-										[
-											"1/2",
-											"{@creature Giant wasp}",
-											"Fly"
-										],
-										[
-											"1",
-											"{@creature Giant eagle}",
-											"Fly"
-										],
-										[
-											"1",
-											"{@creature Giant hyena}",
-											"—"
-										],
-										[
-											"1",
-											"{@creature Giant vulture}",
-											"Fly"
-										],
-										[
-											"1",
-											"{@creature Lion}",
-											"—"
-										],
-										[
-											"1",
-											"{@creature Tiger}",
+											"{@creature Alosaurio|MM-ES}",
 											"—"
 										],
 										[
 											"2",
-											"{@creature Allosaurus}",
+											"{@creature Jabalí gigante|MM-ES}",
 											"—"
 										],
 										[
 											"2",
-											"{@creature Giant boar}",
-											"—"
-										],
-										[
-											"2",
-											"{@creature Giant elk}",
-											"—"
-										],
-										[
-											"2",
-											"{@creature Rhinoceros}",
+											"{@creature Rinoceronte|MM-ES}",
 											"—"
 										],
 										[
 											"3",
-											"{@creature Ankylosaurus}",
+											"{@creature Anquilosaurio|MM-ES}",
 											"—"
 										],
 										[
 											"4",
-											"{@creature Elephant}",
+											"{@creature Elefante|MM-ES}",
 											"—"
 										],
 										[
 											"5",
-											"{@creature Triceratops}",
+											"{@creature Triceratops|MM-ES}",
 											"—"
-										]
-									]
-								},
-								{
-									"type": "table",
-									"caption": "Hill",
-									"colLabels": [
-										"CR",
-										"Beast",
-										"Fly/Swim"
-									],
-									"colStyles": [
-										"col-2 text-center",
-										"col-8",
-										"col-2"
-									],
-									"rows": [
-										[
-											"0",
-											"{@creature Baboon}",
-											"—"
-										],
-										[
-											"0",
-											"{@creature Eagle}",
-											"Fly"
-										],
-										[
-											"0",
-											"{@creature Goat}",
-											"—"
-										],
-										[
-											"0",
-											"{@creature Hyena}",
-											"—"
-										],
-										[
-											"0",
-											"{@creature Raven}",
-											"Fly"
-										],
-										[
-											"0",
-											"{@creature Vulture}",
-											"Fly"
-										],
-										[
-											"1/8",
-											"{@creature Blood hawk}",
-											"Fly"
-										],
-										[
-											"1/8",
-											"{@creature Giant weasel}",
-											"—"
-										],
-										[
-											"1/8",
-											"{@creature Mastiff}",
-											"—"
-										],
-										[
-											"1/8",
-											"{@creature Mule}",
-											"—"
-										],
-										[
-											"1/8",
-											"{@creature Poisonous snake}",
-											"Swim"
-										],
-										[
-											"1/8",
-											"{@creature Stirge}",
-											"Fly"
-										],
-										[
-											"1/4",
-											"{@creature Axe beak}",
-											"—"
-										],
-										[
-											"1/4",
-											"{@creature Boar}",
-											"—"
-										],
-										[
-											"1/4",
-											"{@creature Elk}",
-											"—"
-										],
-										[
-											"1/4",
-											"{@creature Giant owl}",
-											"Fly"
-										],
-										[
-											"1/4",
-											"{@creature Giant wolf spider}",
-											"—"
-										],
-										[
-											"1/4",
-											"{@creature Panther} (cougar)",
-											"—"
-										],
-										[
-											"1/4",
-											"{@creature Wolf}",
-											"—"
-										],
-										[
-											"1/2",
-											"{@creature Giant goat}",
-											"—"
-										],
-										[
-											"1",
-											"{@creature Brown bear}",
-											"—"
-										],
-										[
-											"1",
-											"{@creature Dire wolf}",
-											"—"
-										],
-										[
-											"1",
-											"{@creature Giant eagle}",
-											"Fly"
-										],
-										[
-											"1",
-											"{@creature Giant hyena}",
-											"—"
-										],
-										[
-											"1",
-											"{@creature Lion}",
-											"—"
-										],
-										[
-											"2",
-											"{@creature Giant boar}",
-											"—"
-										],
-										[
-											"2",
-											"{@creature Giant elk}",
-											"—"
-										]
-									]
-								},
-								{
-									"type": "table",
-									"caption": "Mountain",
-									"colLabels": [
-										"CR",
-										"Beast",
-										"Fly/Swim"
-									],
-									"colStyles": [
-										"col-2 text-center",
-										"col-8",
-										"col-2"
-									],
-									"rows": [
-										[
-											"0",
-											"{@creature Eagle}",
-											"Fly"
-										],
-										[
-											"0",
-											"{@creature Goat}",
-											"—"
-										],
-										[
-											"1/8",
-											"{@creature Blood hawk}",
-											"Fly"
-										],
-										[
-											"1/8",
-											"{@creature Stirge}",
-											"Fly"
-										],
-										[
-											"1/4",
-											"{@creature Pteranodon}",
-											"Fly"
-										],
-										[
-											"1/2",
-											"{@creature Giant goat}",
-											"—"
-										],
-										[
-											"1",
-											"{@creature Giant eagle}",
-											"Fly"
-										],
-										[
-											"1",
-											"{@creature Lion}",
-											"—"
-										],
-										[
-											"2",
-											"{@creature Giant elk}",
-											"—"
-										],
-										[
-											"2",
-											"{@creature Saber-toothed tiger}",
-											"—"
-										]
-									]
-								},
-								{
-									"type": "table",
-									"caption": "Swamp",
-									"colLabels": [
-										"CR",
-										"Beast",
-										"Fly/Swim"
-									],
-									"colStyles": [
-										"col-2 text-center",
-										"col-8",
-										"col-2"
-									],
-									"rows": [
-										[
-											"0",
-											"{@creature Rat}",
-											"—"
-										],
-										[
-											"0",
-											"{@creature Raven}",
-											"Fly"
-										],
-										[
-											"1/8",
-											"{@creature Giant rat}",
-											"—"
-										],
-										[
-											"1/8",
-											"{@creature Poisonous snake}",
-											"Swim"
-										],
-										[
-											"1/8",
-											"{@creature Stirge}",
-											"Fly"
-										],
-										[
-											"1/4",
-											"{@creature Constrictor snake}",
-											"Swim"
-										],
-										[
-											"1/4",
-											"{@creature Giant frog}",
-											"Swim"
-										],
-										[
-											"1/4",
-											"{@creature Giant lizard}",
-											"—"
-										],
-										[
-											"1/4",
-											"{@creature Giant poisonous snake}",
-											"Swim"
-										],
-										[
-											"1/2",
-											"{@creature Crocodile}",
-											"Swim"
-										],
-										[
-											"1",
-											"{@creature Giant spider}",
-											"—"
-										],
-										[
-											"1",
-											"{@creature Giant toad}",
-											"Swim"
-										],
-										[
-											"2",
-											"{@creature Giant constrictor snake}",
-											"Swim"
-										],
-										[
-											"5",
-											"{@creature Giant crocodile}",
-											"Swim"
 										]
 									]
 								},
@@ -1741,9 +1800,9 @@
 									"type": "table",
 									"caption": "Underdark",
 									"colLabels": [
-										"CR",
-										"Beast",
-										"Fly/Swim"
+										"VD",
+										"Bestia",
+										"Volar/Nadar"
 									],
 									"colStyles": [
 										"col-2 text-center",
@@ -1753,132 +1812,66 @@
 									"rows": [
 										[
 											"0",
-											"{@creature Giant fire beetle}",
+											"{@creature Escarabajo de fuego gigante|MM-ES}",
 											"—"
 										],
 										[
 											"1/8",
-											"{@creature Giant rat}",
-											"—"
+											"{@creature Estirge|MM-ES}",
+											"Volar"
 										],
 										[
 											"1/8",
-											"{@creature Stirge}",
-											"Fly"
-										],
-										[
-											"1/4",
-											"{@creature Giant bat}",
-											"Fly"
-										],
-										[
-											"1/4",
-											"{@creature Giant centipede}",
+											"{@creature Rata gigante|MM-ES}",
 											"—"
 										],
 										[
 											"1/4",
-											"{@creature Giant lizard}",
+											"{@creature Ciempiés gigante|MM-ES}",
 											"—"
 										],
 										[
 											"1/4",
-											"{@creature Giant poisonous snake}",
-											"Swim"
+											"{@creature Lagarto gigante|MM-ES}",
+											"—"
+										],
+										[
+											"1/4",
+											"{@creature Murciélago gigante|MM-ES}",
+											"Volar"
+										],
+										[
+											"1/4",
+											"{@creature Serpiente venenosa gigante|MM-ES}",
+											"Nadar"
 										],
 										[
 											"1",
-											"{@creature Giant spider}",
+											"{@creature Araña gigante|MM-ES}",
 											"—"
 										],
 										[
 											"1",
-											"{@creature Giant toad}",
-											"Swim"
+											"{@creature Sapo gigante|MM-ES}",
+											"Nadar"
 										],
 										[
 											"2",
-											"{@creature Giant constrictor snake}",
-											"Swim"
+											"{@creature Oso de las cavernas|MM-ES}",
+											"Nadar"
 										],
 										[
 											"2",
-											"{@creature Polar bear} (cave bear)",
-											"Swim"
-										]
-									]
-								},
-								{
-									"type": "table",
-									"caption": "Underwater",
-									"colLabels": [
-										"CR",
-										"Beast",
-										"Fly/Swim"
-									],
-									"colStyles": [
-										"col-2 text-center",
-										"col-8",
-										"col-2"
-									],
-									"rows": [
-										[
-											"0",
-											"{@creature Quipper}",
-											"Swim"
-										],
-										[
-											"1/4",
-											"{@creature Constrictor snake}",
-											"Swim"
-										],
-										[
-											"1/2",
-											"{@creature Giant sea horse}",
-											"Swim"
-										],
-										[
-											"1/2",
-											"{@creature Reef shark}",
-											"Swim"
-										],
-										[
-											"1",
-											"{@creature Giant octopus}",
-											"Swim"
-										],
-										[
-											"2",
-											"{@creature Giant constrictor snake}",
-											"Swim"
-										],
-										[
-											"2",
-											"{@creature Hunter shark}",
-											"Swim"
-										],
-										[
-											"2",
-											"{@creature Plesiosaurus}",
-											"Swim"
-										],
-										[
-											"3",
-											"{@creature Killer whale}",
-											"Swim"
-										],
-										[
-											"5",
-											"{@creature Giant shark}",
-											"Swim"
+											"{@creature Serpiente constrictora gigante|MM-ES}",
+											"Nadar"
 										]
 									]
 								}
 							]
 						}
 					],
-					"source": "XGE",
-					"page": 21
+					"source": "XGE-ES",
+					"page": 26
 				}
 			]
 		}
@@ -2478,10 +2471,10 @@
 				}
 			],
 			"subclassFeatures": [
-				"Circle of the Land|Druid||Land||2",
-				"Land's Stride|Druid||Land||6",
-				"Nature's Ward|Druid||Land||10",
-				"Nature's Sanctuary|Druid||Land||14"
+				"Circle of the Land|Druida|PHB-ES|Land||2",
+				"Land's Stride|Druida|PHB-ES|Land||6",
+				"Nature's Ward|Druida|PHB-ES|Land||10",
+				"Nature's Sanctuary|Druida|PHB-ES|Land||14"
 			]
 		},
 		{
@@ -2501,10 +2494,10 @@
 				}
 			],
 			"subclassFeatures": [
-				"Circle of the Moon|Druid||Moon||2",
-				"Primal Strike|Druid||Moon||6",
-				"Elemental Wild Shape|Druid||Moon||10",
-				"Thousand Forms|Druid||Moon||14"
+				"Circle of the Moon|Druida|PHB-ES|Moon||2",
+				"Primal Strike|Druida|PHB-ES|Moon||6",
+				"Elemental Wild Shape|Druida|PHB-ES|Moon||10",
+				"Thousand Forms|Druida|PHB-ES|Moon||14"
 			]
 		},
 		{
@@ -2515,10 +2508,10 @@
 			"classSource": "PHB-ES",
 			"page": 22,
 			"subclassFeatures": [
-				"Circle of Dreams|Druid||Dreams|XGE|2",
-				"Hearth of Moonlight and Shadow|Druid||Dreams|XGE|6",
-				"Hidden Paths|Druid||Dreams|XGE|10",
-				"Walker in Dreams|Druid||Dreams|XGE|14"
+				"Circle of Dreams|Druida|PHB-ES|Dreams|XGE|2",
+				"Hearth of Moonlight and Shadow|Druida|PHB-ES|Dreams|XGE|6",
+				"Hidden Paths|Druida|PHB-ES|Dreams|XGE|10",
+				"Walker in Dreams|Druida|PHB-ES|Dreams|XGE|14"
 			]
 		},
 		{
@@ -2529,10 +2522,10 @@
 			"classSource": "PHB-ES",
 			"page": 23,
 			"subclassFeatures": [
-				"Circle of the Shepherd|Druid||Shepherd|XGE|2",
-				"Mighty Summoner|Druid||Shepherd|XGE|6",
-				"Guardian Spirit|Druid||Shepherd|XGE|10",
-				"Faithful Summons|Druid||Shepherd|XGE|14"
+				"Circle of the Shepherd|Druida|PHB-ES|Shepherd|XGE|2",
+				"Mighty Summoner|Druida|PHB-ES|Shepherd|XGE|6",
+				"Guardian Spirit|Druida|PHB-ES|Shepherd|XGE|10",
+				"Faithful Summons|Druida|PHB-ES|Shepherd|XGE|14"
 			]
 		},
 		{
@@ -2576,10 +2569,10 @@
 				}
 			],
 			"subclassFeatures": [
-				"Circle of Spores|Druid||Spores|TCE|2",
-				"Fungal Infestation|Druid||Spores|TCE|6",
-				"Spreading Spores|Druid||Spores|TCE|10",
-				"Fungal Body|Druid||Spores|TCE|14"
+				"Circle of Spores|Druida|PHB-ES|Spores|TCE|2",
+				"Fungal Infestation|Druida|PHB-ES|Spores|TCE|6",
+				"Spreading Spores|Druida|PHB-ES|Spores|TCE|10",
+				"Fungal Body|Druida|PHB-ES|Spores|TCE|14"
 			]
 		},
 		{
@@ -2604,10 +2597,10 @@
 				}
 			],
 			"subclassFeatures": [
-				"Circle of Stars|Druid||Stars|TCE|2",
-				"Cosmic Omen|Druid||Stars|TCE|6",
-				"Twinkling Constellations|Druid||Stars|TCE|10",
-				"Full of Stars|Druid||Stars|TCE|14"
+				"Circle of Stars|Druida|PHB-ES|Stars|TCE|2",
+				"Cosmic Omen|Druida|PHB-ES|Stars|TCE|6",
+				"Twinkling Constellations|Druida|PHB-ES|Stars|TCE|10",
+				"Full of Stars|Druida|PHB-ES|Stars|TCE|14"
 			]
 		},
 		{
@@ -2644,10 +2637,10 @@
 				}
 			],
 			"subclassFeatures": [
-				"Circle of Wildfire|Druid||Wildfire|TCE|2",
-				"Enhanced Bond|Druid||Wildfire|TCE|6",
-				"Cauterizing Flames|Druid||Wildfire|TCE|10",
-				"Blazing Revival|Druid||Wildfire|TCE|14"
+				"Circle of Wildfire|Druida|PHB-ES|Wildfire|TCE|2",
+				"Enhanced Bond|Druida|PHB-ES|Wildfire|TCE|6",
+				"Cauterizing Flames|Druida|PHB-ES|Wildfire|TCE|10",
+				"Blazing Revival|Druida|PHB-ES|Wildfire|TCE|14"
 			]
 		}
 	],
@@ -2666,15 +2659,15 @@
 				"The Circle of the Land is made up of mystics and sages who safeguard ancient knowledge and rites through a vast oral tradition. These druids meet within sacred circles of trees or standing stones to whisper primal secrets in {@language Druidic}. The circle's wisest members preside as the chief priests of communities that hold to the Old Faith and serve as advisors to the rulers of those folk. As a member of this circle, your magic is influenced by the land where you were initiated into the circle's mysterious rites.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Bonus Cantrip|Druid||Land||2"
+					"subclassFeature": "Bonus Cantrip|Druida|PHB-ES|Land||2"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Natural Recovery|Druid||Land||2"
+					"subclassFeature": "Natural Recovery|Druida|PHB-ES|Land||2"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Circle Spells|Druid||Land||2"
+					"subclassFeature": "Circle Spells|Druida|PHB-ES|Land||2"
 				}
 			]
 		},
@@ -3026,11 +3019,11 @@
 				"Changeable as the moon, a druid of this circle might prowl as a great cat one night, soar over the treetops as an eagle the next day, and crash through the undergrowth in bear form to drive off a trespassing monster. The wild is in the druid's blood.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Combat Wild Shape|Druid||Moon||2"
+					"subclassFeature": "Combat Wild Shape|Druida|PHB-ES|Moon||2"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Circle Forms|Druid||Moon||2"
+					"subclassFeature": "Circle Forms|Druida|PHB-ES|Moon||2"
 				}
 			]
 		},
@@ -3187,15 +3180,15 @@
 				"Druids of this circle have a complex relationship with the undead. Unlike most other druids, they see nothing inherently wrong with undeath, which they consider to be a companion to life and death. But these druids believe that the natural cycle is healthiest when each segment of it is vibrant and changing. Undead that seek to replace all life with undeath, or that try to avoid passing to a final rest, violate the cycle and must be thwarted.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Circle Spells|Druid||Spores|TCE|2"
+					"subclassFeature": "Circle Spells|Druida|PHB-ES|Spores|TCE|2"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Halo of Spores|Druid||Spores|TCE|2"
+					"subclassFeature": "Halo of Spores|Druida|PHB-ES|Spores|TCE|2"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Symbiotic Entity|Druid||Spores|TCE|2"
+					"subclassFeature": "Symbiotic Entity|Druida|PHB-ES|Spores|TCE|2"
 				}
 			]
 		},
@@ -3379,11 +3372,11 @@
 				"Many druids of this circle keep records of the constellations and the stars' effects on the world. Some groups document these observations at megalithic sites, which serve as enigmatic libraries of lore. These repositories might take the form of stone circles, pyramids, petroglyphs, and underground temples-any construction durable enough to protect the circle's sacred knowledge even against a great cataclysm.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Star Map|Druid||Stars|TCE|2"
+					"subclassFeature": "Star Map|Druida|PHB-ES|Stars|TCE|2"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Starry Form|Druid||Stars|TCE|2"
+					"subclassFeature": "Starry Form|Druida|PHB-ES|Stars|TCE|2"
 				}
 			]
 		},
@@ -3567,11 +3560,11 @@
 				"Druids within the Circle of Wildfire understand that destruction is sometimes the precursor of creation, such as when a forest fire promotes later growth. These druids bond with a primal spirit that harbors both destructive and creative power, allowing the druids to create controlled flames that burn away one thing but give life to another.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Circle Spells|Druid||Wildfire|TCE|2"
+					"subclassFeature": "Circle Spells|Druida|PHB-ES|Wildfire|TCE|2"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Summon Wildfire Spirit|Druid||Wildfire|TCE|2"
+					"subclassFeature": "Summon Wildfire Spirit|Druida|PHB-ES|Wildfire|TCE|2"
 				}
 			]
 		},
@@ -3708,7 +3701,7 @@
 				"Druids who are members of the Circle of Dreams hail from regions that have strong ties to the Feywild and its dreamlike realms. The druids' guardianship of the natural world makes for a natural alliance between them and good-aligned fey. These druids seek to fill the world with dreamy wonder. Their magic mends wounds and brings joy to downcast hearts, and the realms they protect are gleaming, fruitful places, where dream and reality blur together and where the weary can find rest.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Balm of the Summer Court|Druid||Dreams|XGE|2"
+					"subclassFeature": "Balm of the Summer Court|Druida|PHB-ES|Dreams|XGE|2"
 				}
 			]
 		},
@@ -3790,11 +3783,11 @@
 				"Members of this circle become adventurers to oppose forces that threaten their charges or to seek knowledge and power that will help them safeguard their charges better. Wherever these druids go, the spirits of the wilderness are with them.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Speech of the Woods|Druid||Shepherd|XGE|2"
+					"subclassFeature": "Speech of the Woods|Druida|PHB-ES|Shepherd|XGE|2"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Spirit Totem|Druid||Shepherd|XGE|2"
+					"subclassFeature": "Spirit Totem|Druida|PHB-ES|Shepherd|XGE|2"
 				}
 			]
 		},

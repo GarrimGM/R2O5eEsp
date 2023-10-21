@@ -21,7 +21,7 @@
 						"type": "image",
 						"href": {
 							"type": "internal",
-							"path": "conditionsdiseases/PHB/blinded.png"
+							"path": "conditionsdiseases/PHB/blinded.webp"
 						}
 					}
 				]
@@ -48,7 +48,7 @@
 						"type": "image",
 						"href": {
 							"type": "internal",
-							"path": "conditionsdiseases/PHB/charmed.png"
+							"path": "conditionsdiseases/PHB/charmed.webp"
 						}
 					}
 				]
@@ -74,7 +74,7 @@
 						"type": "image",
 						"href": {
 							"type": "internal",
-							"path": "conditionsdiseases/PHB/deafened.png"
+							"path": "conditionsdiseases/PHB/deafened.webp"
 						}
 					}
 				]
@@ -152,7 +152,7 @@
 						"type": "image",
 						"href": {
 							"type": "internal",
-							"path": "conditionsdiseases/PHB/frightened.png"
+							"path": "conditionsdiseases/PHB/frightened.webp"
 						}
 					}
 				]
@@ -180,7 +180,7 @@
 						"type": "image",
 						"href": {
 							"type": "internal",
-							"path": "conditionsdiseases/PHB/grappled.png"
+							"path": "conditionsdiseases/PHB/grappled.webp"
 						}
 					}
 				]
@@ -222,7 +222,7 @@
 						"type": "image",
 						"href": {
 							"type": "internal",
-							"path": "conditionsdiseases/PHB/invisible.png"
+							"path": "conditionsdiseases/PHB/invisible.webp"
 						}
 					}
 				]
@@ -251,7 +251,7 @@
 						"type": "image",
 						"href": {
 							"type": "internal",
-							"path": "conditionsdiseases/PHB/paralyzed.png"
+							"path": "conditionsdiseases/PHB/paralyzed.webp"
 						}
 					}
 				]
@@ -282,7 +282,7 @@
 						"type": "image",
 						"href": {
 							"type": "internal",
-							"path": "conditionsdiseases/PHB/petrified.png"
+							"path": "conditionsdiseases/PHB/petrified.webp"
 						}
 					}
 				]
@@ -308,7 +308,7 @@
 						"type": "image",
 						"href": {
 							"type": "internal",
-							"path": "conditionsdiseases/PHB/poisoned.png"
+							"path": "conditionsdiseases/PHB/poisoned.webp"
 						}
 					}
 				]
@@ -336,7 +336,7 @@
 						"type": "image",
 						"href": {
 							"type": "internal",
-							"path": "conditionsdiseases/PHB/prone.png"
+							"path": "conditionsdiseases/PHB/prone.webp"
 						}
 					}
 				]
@@ -364,7 +364,7 @@
 						"type": "image",
 						"href": {
 							"type": "internal",
-							"path": "conditionsdiseases/PHB/restrained.png"
+							"path": "conditionsdiseases/PHB/restrained.webp"
 						}
 					}
 				]
@@ -392,7 +392,7 @@
 						"type": "image",
 						"href": {
 							"type": "internal",
-							"path": "conditionsdiseases/PHB/stunned.png"
+							"path": "conditionsdiseases/PHB/stunned.webp"
 						}
 					}
 				]
@@ -422,7 +422,7 @@
 						"type": "image",
 						"href": {
 							"type": "internal",
-							"path": "conditionsdiseases/PHB/unconscious.png"
+							"path": "conditionsdiseases/PHB/unconscious.webp"
 						}
 					}
 				]
@@ -440,23 +440,7 @@
 				"Los síntomas se ma nifiestan {@dice 1d4} horas después de haber sido infectado, e incluyen fiebre y desorientación. La criatura afectada recibe un nivel de {@condition cansancio|PHB-ES}, del que no podrá recuperarse hasta que la enfermedad sea curada.",
 				"Cualquier situación que provoque un fuerte estrés a la criatura infectada (como entrar en combate, recibir daño, pasar miedo o sufrir una pesadilla) la forzará a hacer una tirada de salvación de Constitución CD 13. Si falla, sufrirá 5 ({@dice 1d10}) de daño psíquico y quedará {@condition incapacitado|PHB-ES|incapacitada}, riéndose maníacamente, durante 1 minuto. La criatura puede repetir la tirada de salvación al final de cada uno de sus turnos, dejando de reírse y de estar {@condition incapacitado|PHB-ES|incapacitada} si tiene éxito.",
 				"Cualquier humanoide que empiece su turno a 10 pies o menos de una criatura infectada que esté poseída por la risa deberá superar una tirada de salvación de Constitución CD 10 o también contraerá la enfermedad. Si tiene éxito en esta lirada de salvación, será inmune a la risa maníaca de esa criatura concreta durante las siguie ntes 24 horas.",
-				{
-					"type": "inline",
-					"entries": [
-						"Al final de cada uno de sus descansos largos, una criatura infectada puede hacer una tirada de salvación de Constitución CD 13. Si tiene éxito, las CD tanto de esta salvación como de la que se ve obligada a hacer para evitar un ataque de risa maníaca bajarán en {@dice 1d6}. Si estas CD descienden a 0, la criatura se habrá curado. Sin embargo, si falla tres de estas tiradas de salvación. sufrirá una forma de ",
-						{
-							"type": "link",
-							"href": {
-								"type": "internal",
-								"path": "variantrules.html",
-								"hash": "madness_dmg",
-								"hashPreEncoded": true
-							},
-							"text": "locura indefinida"
-						},
-						" determinada al azar."
-					]
-				}
+				"Al final de cada uno de sus descansos largos, una criatura infectada puede hacer una tirada de salvación de Constitución CD 13. Si tiene éxito, las CD tanto de esta salvación como de la que se ve obligada a hacer para evitar un ataque de risa maníaca bajarán en {@dice 1d6}. Si estas CD descienden a 0, la criatura se habrá curado. Sin embargo, si falla tres de estas tiradas de salvación. sufrirá una forma de {@variantrule locura|DMG-ES|locura indefinida} determinada al azar."
 			]
 		},
 		{

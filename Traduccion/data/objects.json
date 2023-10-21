@@ -4,7 +4,9 @@
 			"name": "Balista",
 			"source": "DMG-ES",
 			"page": 255,
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"objectType": "SW",
 			"ac": 15,
 			"hp": 50,
@@ -39,7 +41,9 @@
 			"name": "Cañón",
 			"source": "DMG-ES",
 			"page": 255,
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"objectType": "SW",
 			"ac": 19,
 			"hp": 75,
@@ -76,7 +80,9 @@
 			"source": "DMG-ES",
 			"page": 246,
 			"srd": true,
-			"size": "V",
+			"size": [
+				"V"
+			],
 			"objectType": "GEN",
 			"ac": {
 				"special": "Varies (see below)"
@@ -218,7 +224,9 @@
 			"name": "Mangana",
 			"source": "DMG-ES",
 			"page": 256,
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"objectType": "SW",
 			"ac": 15,
 			"hp": 100,
@@ -254,7 +262,9 @@
 			"name": "Ariete",
 			"source": "DMG-ES",
 			"page": 255,
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"objectType": "SW",
 			"ac": 15,
 			"hp": 100,
@@ -290,7 +300,9 @@
 			"name": "Torre de asedio",
 			"source": "DMG-ES",
 			"page": 256,
-			"size": "G",
+			"size": [
+				"G"
+			],
 			"objectType": "SW",
 			"ac": 15,
 			"hp": 200,
@@ -307,7 +319,9 @@
 			"name": "Caldero suspendido",
 			"source": "DMG-ES",
 			"page": 255,
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"objectType": "SW",
 			"ac": 19,
 			"hp": 20,
@@ -334,7 +348,9 @@
 			"name": "Fundíbulo",
 			"source": "DMG-ES",
 			"page": 256,
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"objectType": "SW",
 			"ac": 15,
 			"hp": 150,
@@ -370,7 +386,9 @@
 			"name": "El Árbol de Gulthias",
 			"source": "TftYP-ES",
 			"page": 31,
-			"size": "G",
+			"size": [
+				"G"
+			],
 			"objectType": "U",
 			"ac": 10,
 			"hp": 35,
@@ -420,6 +438,225 @@
 				}
 			],
 			"tokenUrl": "https://raw.githubusercontent.com/5etools-mirror-1/5etools-mirror-1.github.io/master/img/objects/tokens/TftYP/Gulthias%20Tree.png"
+		},
+		{
+			"name": "Cañón sobrenatural, Lanzallamas",
+			"source": "TCE-ES",
+			"page": 18,
+			"size": [
+				"T",
+				"S"
+			],
+			"objectType": "U",
+			"ac": 18,
+			"hp": {
+				"special": "igual a cinco veces tu nivel de artífice"
+			},
+			"str": 10,
+			"dex": 10,
+			"con": 10,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"incapacitated",
+				"invisible",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"entries": [
+				"{@note Creado para el rasgo de subclase {@subclassFeature Cañón Sobrenatural|Artífice|TCE-ES|Artillero|TCE-ES|3}.}"
+			],
+			"actionEntries": [
+				{
+					"type": "entries",
+					"name": "Lanzallamas",
+					"entries": [
+						"El cañón exhala fuego en un cono adyacente de 15 pies que tú designes. Todas las criaturas situadas en la zona deberán hacer una tirada de salvación de Destreza frente a tu CD de salvación de conjuros; sufrirán {@damage 2d8} de daño de fuego si fallan o la mitad del daño si la superan. Los objetos inflamables de la zona arderán siempre y cuando no los lleve o vista alguien."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "objects/TCE/Eldritch Cannon.webp"
+						},
+						"title": "Artillero humano con un Cañón Sobrenatural"
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "objects/TCE/Eldritch Cannon 2.webp"
+						},
+						"title": "La gnomo artífice Vi y su Cañón Sobrenatural con aspecto de cocatriz combaten contra sus enemigos a bordo de un tren relámpago"
+					}
+				]
+			}
+		},
+		{
+			"name": "Cañón sobrenatural, Balista de Fuerza",
+			"source": "TCE-ES",
+			"page": 18,
+			"size": [
+				"T",
+				"S"
+			],
+			"objectType": "U",
+			"ac": 18,
+			"hp": {
+				"special": "igual a cinco veces tu nivel de artífice"
+			},
+			"str": 10,
+			"dex": 10,
+			"con": 10,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"incapacitated",
+				"invisible",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"entries": [
+				"{@note Creado para el rasgo de subclase {@subclassFeature Cañón Sobrenatural|Artífice|TCE-ES|Artillero|TCE-ES|3}.}"
+			],
+			"actionEntries": [
+				{
+					"type": "entries",
+					"name": "Balista de Fuerza",
+					"entries": [
+						"Haz un ataque de conjuro a distancia, que se origina en el cañón, contra una criatura o un objeto que esté a 120 pies o menos de él. Si impacta, el objetivo recibirá {@damage 2d8} de daño de fuerza y, si es una criatura, será empujada a 5 pies respecto al cañón."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "objects/TCE/Eldritch Cannon.webp"
+						},
+						"title": "Artillero humano con un Cañón Sobrenatural"
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "objects/TCE/Eldritch Cannon 2.webp"
+						},
+						"title": "La gnomo artífice Vi y su Cañón Sobrenatural con aspecto de cocatriz combaten contra sus enemigos a bordo de un tren relámpago"
+					}
+				]
+			}
+		},
+		{
+			"name": "Cañón sobrenatural, Protector",
+			"source": "TCE-ES",
+			"page": 18,
+			"size": [
+				"T",
+				"S"
+			],
+			"objectType": "U",
+			"ac": 18,
+			"hp": {
+				"special": "igual a cinco veces tu nivel de artífice"
+			},
+			"str": 10,
+			"dex": 10,
+			"con": 10,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"incapacitated",
+				"invisible",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"entries": [
+				"{@note Creado para el rasgo de subclase {@subclassFeature Cañón Sobrenatural|Artífice|TCE-ES|Artillero|TCE-ES|3}.}"
+			],
+			"actionEntries": [
+				{
+					"type": "entries",
+					"name": "Protector",
+					"entries": [
+						"El cañón emite una explosión de energía positiva que les proporciona tanto a él como a cada criatura de tu elección que esté a 10 pies o menos de él una cantidad de puntos de golpe temporales igual a {@damage 1d8} + tu modificador por Inteligencia (mínimo de +1)."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "objects/TCE/Eldritch Cannon.webp"
+						},
+						"title": "Artillero humano con un Cañón Sobrenatural"
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "objects/TCE/Eldritch Cannon 2.webp"
+						},
+						"title": "La gnomo artífice Vi y su Cañón Sobrenatural con aspecto de cocatriz combaten contra sus enemigos a bordo de un tren relámpago"
+					}
+				]
+			}
 		}
 	]
 }
