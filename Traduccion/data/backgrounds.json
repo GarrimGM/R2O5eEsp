@@ -15314,6 +15314,74 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Trasfondo personalizadod",
+			"source": "PHB-ES",
+			"page": 125,
+			"skillProficiencies": [
+				{
+					"any": 2
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 2
+				}
+			],
+			"skillToolLanguageProficiencies": [
+				{
+					"anyLanguage": 2
+				},
+				{
+					"anyLanguage": 1,
+					"anyTool": 1
+				},
+				{
+					"anyTool": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Competencias en habilidades:",
+							"entry": "Dos de tu elección."
+						},
+						{
+							"type": "item",
+							"name": "Idiomas y competencias con herramientas:",
+							"entry": "Dos de tu elección."
+						},
+						{
+							"type": "item",
+							"name": "Equipo:",
+							"entry": "El paquete de equipamiento de cualquier trasfondo."
+						}
+					]
+				},
+				{
+					"name": "Rasgo: Elige un rago",
+					"type": "entries",
+					"entries": [
+						"Elige un rasgo de cualquier trasfondo."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"name": "Características recomendadas",
+					"type": "entries",
+					"entries": [
+						"Usa las características recomendadas de cualquier trasfondo."
+					]
+				},
+				"{@note Consulta la sección sobre {@book Personalizar un trasfondo|PHB-ES|4|Personalizar un trasfondo} en el {@book Player's Handbook|PHB-ES} para obtener más información.}"
+			]
 		}
 	]
 }
