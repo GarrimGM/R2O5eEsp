@@ -1,9 +1,9 @@
 {
 	"class": [
 		{
-			"name": "Fighter",
+			"name": "Guerrero",
 			"source": "PHB-ES",
-			"page": 70,
+			"page": 82,
 			"srd": true,
 			"basicRules": true,
 			"hd": {
@@ -16,9 +16,9 @@
 			],
 			"optionalfeatureProgression": [
 				{
-					"name": "Fighting Style",
+					"name": "Estilo de Combate",
 					"featureType": [
-						"FS:F"
+						"FS_Esp:F"
 					],
 					"progression": {
 						"1": 1
@@ -30,7 +30,7 @@
 					"light",
 					"medium",
 					"heavy",
-					"{@item shield|phb|shields}"
+					"{@item escudo|phb-es|escudos}"
 				],
 				"weapons": [
 					"simple",
@@ -57,21 +57,21 @@
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"default": [
-					"(a) {@item chain mail|phb} or (b) {@item leather armor|phb}, {@item longbow|phb}, and {@item arrows (20)|phb|20 arrows}",
-					"(a) a {@filter martial weapon|items|source=phb|category=basic|type=martial weapon} and a {@item shield|phb} or (b) two {@filter martial weapons|items|source=phb|category=basic|type=martial weapon}",
-					"(a) a {@item light crossbow|phb} and {@item crossbow bolts (20)|phb|20 bolts} or (b) two {@item handaxe|phb|handaxes}",
-					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}"
+					"(a) {@item cota de malla|PHB-ES} o (b) {@item armadura de cuero|PHB-ES}, {@item arco largo|PHB-ES} y {@item Flechas (20)|PHB-ES|20 flechas}",
+					"(a) un {@filter arma marcial|items|source=PHB-ES|category=basic|type=martial weapon} y un {@item escudo|PHB-ES} o (b) dos {@filter armas marciales|items|source=PHB-ES|category=basic|type=martial weapon}",
+					"(a) una {@item ballesta ligera|PHB-ES} y {@item Virotes de ballesta (20)|PHB-ES|20 virotes} o (b) dos {@item hacha de mano|PHB-ES}",
+					"(a) un {@item paquete de explorador de mazmorras|PHB-ES} o (b) un {@item paquete de explorador|PHB-ES}"
 				],
 				"goldAlternative": "{@dice 5d4 × 10|5d4 × 10|Starting Gold}",
 				"defaultData": [
 					{
 						"a": [
-							"chain mail|phb"
+							"cota de malla|PHB-ES"
 						],
 						"b": [
-							"leather armor|phb",
-							"longbow|phb",
-							"arrows (20)|phb"
+							"armadura de cuero|PHB-ES",
+							"arco largo|PHB-ES",
+							"flechas (20)|PHB-ES"
 						]
 					},
 					{
@@ -79,7 +79,7 @@
 							{
 								"equipmentType": "weaponMartial"
 							},
-							"shield|phb"
+							"escudo|PHB-ES"
 						],
 						"b": [
 							{
@@ -90,22 +90,22 @@
 					},
 					{
 						"a": [
-							"light crossbow|phb",
-							"crossbow bolts (20)|phb"
+							"ballesta ligera|PHB-ES",
+							"virotes de ballesta (20)|PHB-ES"
 						],
 						"b": [
 							{
-								"item": "handaxe|phb",
+								"item": "hacha de mano|PHB-ES",
 								"quantity": 2
 							}
 						]
 					},
 					{
 						"a": [
-							"dungeoneer's pack|phb"
+							"paquete de explorador de mazmorras|PHB-ES"
 						],
 						"b": [
-							"explorer's pack|phb"
+							"paquete de explorador|PHB-ES"
 						]
 					}
 				]
@@ -123,7 +123,7 @@
 					"armor": [
 						"light",
 						"medium",
-						"{@item shield|phb|shields}"
+						"{@item escudo|PHB-ES|escudos}"
 					],
 					"weapons": [
 						"simple",
@@ -132,88 +132,88 @@
 				}
 			},
 			"classFeatures": [
-				"Fighting Style|Fighter||1",
-				"Second Wind|Fighter||1",
-				"Action Surge|Fighter||2",
+				"Fighting Style|Guerrero|PHB-ES|1",
+				"Second Wind|Guerrero|PHB-ES|1",
+				"Action Surge|Guerrero|PHB-ES|2",
 				{
-					"classFeature": "Martial Archetype|Fighter||3",
+					"classFeature": "Martial Archetype|Guerrero|PHB-ES|3",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Fighter||4",
-				"Martial Versatility|Fighter||4|TCE",
-				"Extra Attack|Fighter||5",
-				"Ability Score Improvement|Fighter||6",
+				"Ability Score Improvement|Guerrero|PHB-ES|4",
+				"Martial Versatility|Guerrero|PHB-ES|4|TCE-ES",
+				"Extra Attack|Guerrero|PHB-ES|5",
+				"Ability Score Improvement|Guerrero|PHB-ES|6",
 				{
-					"classFeature": "Martial Archetype feature|Fighter||7",
+					"classFeature": "Martial Archetype feature|Guerrero|PHB-ES|7",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Fighter||8",
-				"Indomitable|Fighter||9",
+				"Ability Score Improvement|Guerrero|PHB-ES|8",
+				"Indomitable|Guerrero|PHB-ES|9",
 				{
-					"classFeature": "Martial Archetype feature|Fighter||10",
+					"classFeature": "Martial Archetype feature|Guerrero|PHB-ES|10",
 					"gainSubclassFeature": true
 				},
-				"Extra Attack (2)|Fighter||11",
-				"Ability Score Improvement|Fighter||12",
-				"Indomitable (two uses)|Fighter||13",
-				"Ability Score Improvement|Fighter||14",
+				"Extra Attack (2)|Guerrero|PHB-ES|11",
+				"Ability Score Improvement|Guerrero|PHB-ES|12",
+				"Indomitable (two uses)|Guerrero|PHB-ES|13",
+				"Ability Score Improvement|Guerrero|PHB-ES|14",
 				{
-					"classFeature": "Martial Archetype feature|Fighter||15",
+					"classFeature": "Martial Archetype feature|Guerrero|PHB-ES|15",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Fighter||16",
-				"Action Surge (two uses)|Fighter||17",
-				"Indomitable (three uses)|Fighter||17",
+				"Ability Score Improvement|Guerrero|PHB-ES|16",
+				"Action Surge (two uses)|Guerrero|PHB-ES|17",
+				"Indomitable (three uses)|Guerrero|PHB-ES|17",
 				{
-					"classFeature": "Martial Archetype feature|Fighter||18",
+					"classFeature": "Martial Archetype feature|Guerrero|PHB-ES|18",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Fighter||19",
-				"Extra Attack (3)|Fighter||20"
+				"Ability Score Improvement|Guerrero|PHB-ES|19",
+				"Extra Attack (3)|Guerrero|PHB-ES|20"
 			],
-			"subclassTitle": "Martial Archetype",
+			"subclassTitle": "Arquetipo Marcial",
 			"fluff": [
 				{
-					"name": "Fighter",
+					"name": "Guerrero",
 					"type": "section",
 					"entries": [
-						"A human in clanging plate armor holds her shield before her as she runs toward the massed goblins. An elf behind her, clad in studded leather armor, peppers the goblins with arrows loosed from his exquisite bow. The half-orc nearby shouts orders, helping the two combatants coordinate their assault to the best advantage.",
-						"A dwarf in chain mail interposes his shield between the ogre's club and his companion, knocking the deadly blow aside. His companion, a half-elf in scale armor, swings two scimitars in a blinding whirl as she circles the ogre, looking for a blind spot in its defenses.",
-						"A gladiator fights for sport in an arena, a master with his trident and net, skilled at toppling foes and moving them around for the crowd's delight—and his own tactical advantage. His opponent's sword flares with blue light an instant before she sends lightning flashing forth to smite him.",
-						"All of these heroes are fighters, perhaps the most diverse class of characters in the worlds of Dungeons & Dragons. Questing knights, conquering overlords, royal champions, elite foot soldiers, hardened mercenaries, and bandit kings—as fighters, they all share an unparalleled mastery with weapons and armor, and a thorough knowledge of the skills of combat. And they are well acquainted with death, both meting it out and staring it defiantly in the face.",
+						"Una humana alza su escudo mientras carga contra una horda de goblins, acompañada por el traqueteo de su pesada armadura de placas. Tras ella se encuentra un elfo que, protegido por una armadura de cuero tachonado, asaeta a los goblins con las flechas que lanza desde su bellísimo arco. Les da órdenes una semiorca, ayudándoles así a coordinar su asalto para sacar la máxima ventaja posible.",
+						"Un enano cubierto por una cota de malla interpone su escudo entre el garrote de un ogro y sus compañeros, desviando un golpe mortal. Su compañera, una semielfa con armadura de escamas, mueve sus dos cimitarras en un remolino cegador mientras rodea al ogro, buscando una brecha en sus defensas.",
+						"Un gladiador combate por deporte en la arena. Es un maestro del tridente y la red, experto en derribar y arrastrar a sus enemigos de un lado a otro para mayor disfrute del público... y para obtener una posición de ventaja. La espada de su oponente brilla con una luz azul un breve instante, anunciando un relámpago que surge de ella para golpearle.",
+						"Todos estos héroes son guerreros, miembros de la que probablemente sea la clase de personaje más variopinta de los mundos de Dungeons & Dragons. Caballeros andantes, generales conquistadores, campeones reales, soldados de élite, mercenarios endurecidos y reyes bandidos ... Todos ellos son guerreros y, como tales, comparten una maestría sin par con las armas y armaduras, así como un conocimiento profundo de las artes del combate. También están acostumbrados a la muerte, pues se han cruzado con ella y la han desafiado con valentía.",
 						{
 							"type": "entries",
-							"name": "Well-Rounded Specialists",
+							"name": "Especialistas equilibrados",
 							"entries": [
-								"Fighters learn the basics of all combat styles. Every fighter can swing an axe, fence with a rapier, wield a longsword or a greatsword, use a bow, and even trap foes in a net with some degree of skill. Likewise, a fighter is adept with shields and every form of armor. Beyond that basic degree of familiarity, each fighter specializes in a certain style of combat. Some concentrate on archery, some on fighting with two weapons at once, and some on augmenting their martial skills with magic. This combination of broad general ability and extensive specialization makes fighters superior combatants on battlefields and in dungeons alike."
+								"Los guerreros aprenden los rudimentos de todos los estilos de combate. Todos y cada uno de ellos son lo bastante hábiles para atacar con un hacha, participar en un duelo con un estoque, empuñar una espada larga o un espadón, tirar con arco e incluso atrapar a sus enemigos en una red. De la misma forma, cualquier guerrero está familiarizado con los escudos y todos los tipos de armaduras. Sin embargo, los guerreros van más allá de estos conocimientos básicos, pues cada uno de ellos se especializa en un estilo de combate concreto. Algunos se centran en el tiro con arco, otros en el combate con dos armas a la vez y los hay que incluso complementan sus habilidades marciales mediante la magia. Esta combinación de amplias capacidades y especialización intensiva convierte a los guerreros en combatientes supremos, que destacan tanto en campos de batalla como en mazmorras."
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Trained for Danger",
+							"name": "Entrenados para el Peligro",
 							"entries": [
-								"Not every member of the city watch, the village militia, or the queen's army is a fighter. Most of these troops are relatively untrained soldiers with only the most basic combat knowledge. Veteran soldiers, military officers, trained bodyguards, dedicated knights, and similar figures are fighters.",
-								"Some fighters feel drawn to use their training as adventurers. The dungeon delving, monster slaying, and other dangerous work common among adventurers is second nature for a fighter, not all that different from the life he or she left behind. There are greater risks, perhaps, but also much greater rewards—few fighters in the city watch have the opportunity to discover a magic flame tongue sword, for example."
+								"No todos los miembros de la guardia de la ciudad, la milicia del pueblo o el ejército de la reina son guerreros. La mayoría de estos soldados no están especialmente bien entrenados y solo poseen los conocimientos marciales más básicos. Únicamente los soldados veteranos, oficiales del ejército, guardaespaldas diestros, caballeros entregados y figuras similares son guerreros.",
+								"Algunos guerreros se sienten llamados a poner su entrenamiento al servicio de una vida de aventuras. Explorar mazmorras, matar monstruos y otras actividades peligrosas típicas de los aventureros son algo natural para un guerrero, parte del día a día de la vida que dejaron atrás. Y si bien es cierto que el riesgo es mayor, también lo es la recompensa; pocos guerreros de la guardia de la ciudad tendrán la oportunidad de encontrar una espada {@italic lengua de fuego}, por ejemplo."
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Creating a Fighter",
+							"name": "Creación de un guerrero",
 							"entries": [
-								"As you build your fighter, think about two related elements of your character's background: Where did you get your combat training, and what set you apart from the mundane warriors around you? Were you particularly ruthless? Did you get extra help from a mentor, perhaps because of your exceptional dedication? What drove you to this training in the first place? A threat to your homeland, a thirst for revenge, or a need to prove yourself might all have been factors.",
-								"You might have enjoyed formal training in a noble's army or in a local militia. Perhaps you trained in a war academy, learning strategy, tactics, and military history. Or you might be self-taught—unpolished but well tested. Did you take up the sword as a way to escape the limits of life on a farm, or are you following a proud family tradition? Where did you acquire your weapons and armor? They might have been military issue or family heirlooms, or perhaps you scrimped and saved for years to buy them. Your armaments are now among your most important possessions—the only things that stand between you and death's embrace.",
+								"Cuando crees tú guerrero, piensa en los dos siguientes aspectos de su pasado, que están relacionados: dónde recibió su entrenamiento en combate y qué le distingue de otros combatientes menos capaces. ¿Eres especialmente despiadado?, ¿recibiste ayuda de un mentor, quizá debido a tu entrega excepcional?, ¿qué te motivó a comenzar tu entrenamiento? Puede que se tratara de una amenaza sobre tu hogar, el ansia de venganza o la necesidad de demostrar tu valía. O incluso una mezcla de todos ellos.",
+								"Tal vez hayas disfrutado de adiestramiento militar en el ejército de un noble o en una milicia local. O puede que te hayas formado en una academia militar, aprendiendo estrategia, táctica e historia militar. O incluso podrías ser autodidacta, alguien poco pulido, pero con experiencia real. ¿Escogiste la espada como vía de escape, para dejar atrás las penurias de una vida en la granja? ¿O eres el heredero de una orgullosa tradición familiar? ¿Cómo conseguiste tus armas y armadura? Bien podrían ser equipamiento militar o un legado de tu familia. También cabe la posibilidad de que hayas ahorrado durante años para poder comprarlos. Independientemente de su origen, tu armamento es ahora una de tus posesiones más valiosas, pues es lo único que te protege del abrazo de la muerte.",
 								{
 									"type": "entries",
-									"name": "Quick Build",
+									"name": "Creación rápida",
 									"entries": [
-										"You can make a fighter quickly by following these suggestions. First, make Strength or Dexterity your highest ability score, depending on whether you want to focus on melee weapons or on archery (or finesse weapons). Your next-highest score should be Constitution, or Intelligence if you plan to adopt the Eldritch Knight martial archetype. Second, choose the {@background soldier} background."
+										"Para crear un guerrero de forma rápida sugerimos lo siguiente. Para empezar, Fuerza o Destreza debería ser tu característica más alta, en función de si prefieres centrarte en las armas cuerpo a cuerpo o en el tiro con arco y las armas sutiles. Tu siguiente característica más elevada debería ser o bien Constitución o Inteligencia, esta última si aspiras a seguir el arquetipo marcial Caballero Arcano. A continuación, elige el trasfondo \"{@background soldado|PHB-ES}\"."
 									]
 								}
 							]
 						}
 					],
-					"source": "PHB",
-					"page": 70
+					"source": "PHB-ES",
+					"page": 82
 				},
 				{
 					"type": "section",
@@ -221,25 +221,25 @@
 						{
 							"type": "quote",
 							"entries": [
-								"Let me know when you're all done talking."
+								"Avísame cuando hayas acabado de hablar."
 							],
 							"by": "Tordek"
 						},
-						"Of all the adventurers in the worlds of D&D, the fighter is perhaps the greatest paradox. On the one hand, a singular feature of the class is that no two fighters ply their craft in quite the same way; their weapons, armor, and tactics differ across a vast spectrum. On the other hand, regardless of the tools and methods one uses, at the heart of every fighter's motivation lies the same basic truth: it is better to wound than to be wounded.",
-						"Although some adventuring fighters risk their lives fighting for glory or treasure, others are primarily concerned with the welfare of others. They put more value on the well-being of the society, the village, or the group than on their own safety. Even if there's gold in the offing, the true reward for most fighters comes from sending enemies to their doom.",
-						"The sections below offer ways to add a little depth and a few personal touches to your fighter character.",
+						"De todos los aventureros del mundo de D&D, el guerrero es quizá la mayor paradoja. Por un lado, una característica singular de la clase es que no hay dos miembros con las mismas habilidades: sus armaduras, armas y tácticas cubren un amplio espectro. Por otro lado, independientemente de sus herramientas y métodos, en el corazón de todo guerrero yace la misma verdad: es mejor herir que ser herido.",
+						"Aunque algunos aventureros de esta clase arriesgan su vida por gloria o muchos de ellos se ven movidos por proteger a los demás; dan más valor al bienestar de la sociedad, la aldea o el grupo que a su propia seguridad. Incluso aunque haya oro de por medio, la verdadera recompensa de la mayoría de los guerreros está en mandar enemigos al Abismo.",
+						"La siguiente sección ofrece maneras de añadir profundidad y toques personales a personajes de esta clase.",
 						{
 							"type": "entries",
-							"name": "Heraldic Sign",
+							"name": "Símbolo heráldico",
 							"entries": [
-								"Fighters typically do battle for a cause. Some fight on behalf of kingdoms besieged by monsters, while others quest only for personal glory. In either case, a fighter often displays a heraldic sign that represents that cause, either adopting the symbol of a nation or a royal line, or creating a crest to represent one's self-interest.",
-								"Your character could be affiliated with an organization or a cause, and thus might already travel under a banner of some sort. If that's not the case, consider devising a heraldic sign that symbolizes an aspect of your nature or speaks to what you see as your purpose in the world.",
+								"Los guerreros normalmente pelean por una causa. Algunos para defender a reinos sitiados por monstruos y otros en una búsqueda personal de gloria. Sea como fuere, un miembro de esta clase suele lucir un símbolo heráldico que representa su causa. Puede haber adoptado el de una nación o linaje real, o haber creado su escudo para representar su propio interés.",
+								"Tu personaje podría estar ya afiliado a una organización o causa, de modo que viaje bajo su estandarte. Si no es el caso, piensa en crear un símbolo heráldico que represente un aspecto de tu naturaleza o esté relacionado con tu propósito en el mundo.",
 								{
 									"type": "table",
-									"caption": "Heraldic Signs",
+									"caption": "Símbolo heráldico",
 									"colLabels": [
 										"{@dice d6}",
-										"Heraldic Signs"
+										"Símbolo"
 									],
 									"colStyles": [
 										"col-1 text-center",
@@ -253,7 +253,7 @@
 													"exact": 1
 												}
 											},
-											"A rampant golden dragon on a green field, representing valor and a quest for wealth"
+											"Un dragón dorado rampante sobre un campo verde, representando el valor y la búsqueda de la riqueza."
 										],
 										[
 											{
@@ -262,7 +262,7 @@
 													"exact": 2
 												}
 											},
-											"The fist of a storm giant clutching lightning before a storm cloud, symbolizing wrath and power"
+											"El puño de un gigante de las tormentas ante una nube tormentosa, que simboliza la ira y el poder."
 										],
 										[
 											{
@@ -271,7 +271,7 @@
 													"exact": 3
 												}
 											},
-											"Crossed greatswords in front of a castle gate, signifying the defense of a city or kingdom"
+											"Espadones cruzados delante de la puerta de un castillo, señal de defensa de una ciudad o reino."
 										],
 										[
 											{
@@ -280,7 +280,7 @@
 													"exact": 4
 												}
 											},
-											"A skull with a dagger through it, representing the doom you bring to your enemies"
+											"Una calavera con una daga atravesada, que representa la condenación que llevas a tus enemigos."
 										],
 										[
 											{
@@ -289,7 +289,7 @@
 													"exact": 5
 												}
 											},
-											"A phoenix in a ring of fire, an expression of an indomitable spirit"
+											"Un fénix en un anillo de fuego, expresión de un espíritu indomable."
 										],
 										[
 											{
@@ -298,7 +298,7 @@
 													"exact": 6
 												}
 											},
-											"Three drops of blood beneath a horizontal sword blade on a black background, symbolizing three foes you have sworn to kill"
+											"Tres gotas de sangre bajo una espada horizontal sobre un fondo negro, simbolizando tres enemigos a los que has jurado matar."
 										]
 									]
 								}
@@ -308,12 +308,12 @@
 							"type": "entries",
 							"name": "Instructor",
 							"entries": [
-								"Some fighters are natural-born combatants who have a talent for surviving in battle. Others learned the basics of their combat prowess in their formative years from spending time in a military or some other martial organization, when they were taught by the leaders of the group.",
-								"A third type of fighter comes from the ranks of those who received one-on-one instruction from an accomplished veteran of the craft. That instructor was, or perhaps still is, well versed in a certain aspect of combat that relates to the student's background.",
-								"If you decide that your character had an individual instructor, what is that person's specialty? Do you emulate your instructor in how you fight, or did you take the instructor's teachings and adapt them to your own purposes?",
+								"Algunos guerreros son luchadores natos, con un talento especial para sobrevivir en la batalla. Otros han desarrollado los fundamentos del combate en sus años de formación, aprendiendo de los líderes del ejército u otra organización marcial.",
+								"Un tercer tipo de guerrero viene de entre los que han recibido entrenamiento personal de un veterano consumado. Este instructor es, posiblemente, un experto en un aspecto del combate relacionado con el pasado del estudiante.",
+								"Si decides que tu personaje estudió bajo un maestro, ¿cuál era su especialidad? ¿Emulaste a tu instructor en su estilo o tomaste sus enseñanzas y las adaptaste a tus propósitos?",
 								{
 									"type": "table",
-									"caption": "Instructor",
+									"caption": "Instructores",
 									"colLabels": [
 										"{@dice d6}",
 										"Instructor"
@@ -330,7 +330,7 @@
 													"exact": 1
 												}
 											},
-											"Gladiator. Your instructor was a slave who fought for freedom in the arena, or one who willingly chose the gladiator's life to earn money and fame."
+											"Gladiador. Tu mentor fue un esclavo que luchó por su libertad en la arena o uno que eligió la vida del gladiador para ganar fama y fortuna. "
 										],
 										[
 											{
@@ -339,7 +339,7 @@
 													"exact": 2
 												}
 											},
-											"Military. Your trainer served with a group of soldiers and knows much about working as a team."
+											"Militar. Tu entrenador sirvió con un grupo de soldados y sabe mucho de trabajar en equipo."
 										],
 										[
 											{
@@ -348,7 +348,7 @@
 													"exact": 3
 												}
 											},
-											"City Watch. Crowd control and peacekeeping are your instructor's specialties."
+											"Guardia de la ciudad. El control de multitudes y mantener la paz son las especialidades de tu instructor."
 										],
 										[
 											{
@@ -357,7 +357,7 @@
 													"exact": 4
 												}
 											},
-											"Tribal Warrior. Your instructor grew up in a tribe, where fighting for one's life was practically an everyday occurrence."
+											"Guerrero tribal. Tu maestro creció en una tribu, donde luchar por la propia vida es algo habitual. "
 										],
 										[
 											{
@@ -366,7 +366,7 @@
 													"exact": 5
 												}
 											},
-											"Street Fighter. Your trainer excels at urban combat, combining close-quarters work with silence and efficiency."
+											"Luchador callejero. Tu entrenador sobresale en el combate urbano, combinando la lucha codo con codo con el silencio y la eficacia."
 										],
 										[
 											{
@@ -375,7 +375,7 @@
 													"exact": 6
 												}
 											},
-											"Weapon Master. Your mentor helped you to become one with your chosen weapon, by imparting highly specialized knowledge of how to wield it most effectively."
+											"Maestro de armas. Tu mentor te ayudó a hacerte uno con tu arma elegida, transmitiéndote el conocimiento específico para blandirla lo mejor posible."
 										]
 									]
 								}
@@ -383,16 +383,16 @@
 						},
 						{
 							"type": "entries",
-							"name": "Style",
+							"name": "Estilo característico",
 							"entries": [
-								"Many fighters distinguish themselves from their peers by adopting and perfecting a particular style or method of waging combat. Although this style might be a natural outgrowth of a fighter's personality, that's not always the case—someone's approach to the world in general does not necessarily dictate how that person operates when lives are on the line.",
-								"Do you have a combat style that mirrors your outlook on life, or is something else inside you unleashed when weapons are drawn?",
+								"Muchos guerreros se distinguen de sus pares al adoptar y perfeccionar un estilo particular de combate. Aunque este puede ser una consecuencia natural de la personalidad del luchador, no siempre es así. El enfoque vital de cada uno no siempre dicta cómo esa persona actúa cuando hay vidas en juego.",
+								"¿Tienes un estilo de combate que refleja tu actitud frente a la vida o hay algo más dentro de ti, que liberas cuando se desenvainan las armas?",
 								{
 									"type": "table",
-									"caption": "Style",
+									"caption": "Estilos característicos",
 									"colLabels": [
 										"{@dice d6}",
-										"Style"
+										"Estilo"
 									],
 									"colStyles": [
 										"col-1 text-center",
@@ -406,7 +406,7 @@
 													"exact": 1
 												}
 											},
-											"Elegant. You move with precise grace and total control, never using more energy than you need."
+											"Elegante. Te mueves con gracia y control total, nunca empleas más energía de la necesaria."
 										],
 										[
 											{
@@ -415,7 +415,7 @@
 													"exact": 2
 												}
 											},
-											"Brutal. Your attacks rain down like hammer blows, meant to splinter bone or send blood flying."
+											"Brutal. Tus ataques son verdaderos mazazos, capaces de romper huesos y derramar sangre."
 										],
 										[
 											{
@@ -424,7 +424,7 @@
 													"exact": 3
 												}
 											},
-											"Cunning. You dart in to attack at just the right moment and use small-scale tactics to tilt the odds in your favor."
+											"Astuto. Cuando llega el momento justo, atacas como un rayo, usando tácticas a pequeña escala para cambiar las tornas a tu favor."
 										],
 										[
 											{
@@ -433,7 +433,7 @@
 													"exact": 4
 												}
 											},
-											"Effortless. You rarely perspire or display anything other than a stoic expression in battle."
+											"Naturalidad. En batalla, raramente sudas o muestras algo que no sea una expresión estoica."
 										],
 										[
 											{
@@ -442,7 +442,7 @@
 													"exact": 5
 												}
 											},
-											"Energetic. You sing and laugh during combat as your spirit soars. You are happiest when you have a foe in front of you and a weapon in hand."
+											"Energético. Cantas y bailas durante el combate mientras tu espíritu se eleva. Eres feliz cuando tienes un enemigo enfrente y un arma en la mano."
 										],
 										[
 											{
@@ -451,15 +451,15 @@
 													"exact": 6
 												}
 											},
-											"Sinister. You scowl and sneer while fighting, and you enjoy mocking your foes as you defeat them."
+											"Siniestro. Luchas con el ceño fruncido y miradas de desdén, burlándote de tus adversarios mientras los derrotas."
 										]
 									]
 								}
 							]
 						}
 					],
-					"source": "XGE",
-					"page": 27
+					"source": "XGE-ES",
+					"page": 36
 				}
 			]
 		}
@@ -471,7 +471,7 @@
 			"page": 72,
 			"srd": true,
 			"basicRules": true,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"level": 1,
 			"entries": [
@@ -483,10 +483,6 @@
 						{
 							"type": "refOptionalfeature",
 							"optionalfeature": "Archery"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Close Quarters Shooter|UALightDarkUnderdark"
 						},
 						{
 							"type": "refOptionalfeature",
@@ -502,15 +498,7 @@
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Mariner|UAWaterborneAdventures"
-						},
-						{
-							"type": "refOptionalfeature",
 							"optionalfeature": "Protection"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Tunnel Fighter|UALightDarkUnderdark"
 						},
 						{
 							"type": "refOptionalfeature",
@@ -518,43 +506,23 @@
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Superior Technique|UAClassFeatureVariants"
+							"optionalfeature": "Blind Fighting|TCE-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Blind Fighting|UAClassFeatureVariants"
+							"optionalfeature": "Interception|TCE-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Interception|UAClassFeatureVariants"
+							"optionalfeature": "Superior Technique|TCE-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Thrown Weapon Fighting|UAClassFeatureVariants"
+							"optionalfeature": "Thrown Weapon Fighting|TCE-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Unarmed Fighting|UAClassFeatureVariants"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Blind Fighting|TCE"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Interception|TCE"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Superior Technique|TCE"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Thrown Weapon Fighting|TCE"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Unarmed Fighting|TCE"
+							"optionalfeature": "Unarmed Fighting|TCE-ES"
 						}
 					]
 				}
@@ -566,7 +534,7 @@
 			"page": 72,
 			"srd": true,
 			"basicRules": true,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"level": 1,
 			"entries": [
@@ -580,7 +548,7 @@
 			"page": 72,
 			"srd": true,
 			"basicRules": true,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"level": 2,
 			"entries": [
@@ -594,7 +562,7 @@
 			"page": 72,
 			"srd": true,
 			"basicRules": true,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"level": 3,
 			"entries": [
@@ -607,7 +575,7 @@
 			"page": 72,
 			"srd": true,
 			"basicRules": true,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"level": 4,
 			"entries": [
@@ -619,7 +587,7 @@
 			"name": "Martial Versatility",
 			"source": "TCE-ES",
 			"page": 41,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"level": 4,
 			"isClassFeatureVariant": true,
@@ -641,7 +609,7 @@
 			"page": 72,
 			"srd": true,
 			"basicRules": true,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"level": 5,
 			"entries": [
@@ -655,7 +623,7 @@
 			"page": 72,
 			"srd": true,
 			"basicRules": true,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"level": 6,
 			"entries": [
@@ -669,7 +637,7 @@
 			"page": 72,
 			"srd": true,
 			"basicRules": true,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"level": 7,
 			"entries": [
@@ -682,7 +650,7 @@
 			"page": 72,
 			"srd": true,
 			"basicRules": true,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"level": 8,
 			"entries": [
@@ -696,7 +664,7 @@
 			"page": 72,
 			"srd": true,
 			"basicRules": true,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"level": 9,
 			"entries": [
@@ -710,7 +678,7 @@
 			"page": 72,
 			"srd": true,
 			"basicRules": true,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"level": 10,
 			"entries": [
@@ -723,7 +691,7 @@
 			"page": 72,
 			"srd": true,
 			"basicRules": true,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"level": 11,
 			"entries": [
@@ -736,7 +704,7 @@
 			"page": 72,
 			"srd": true,
 			"basicRules": true,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"level": 12,
 			"entries": [
@@ -750,7 +718,7 @@
 			"page": 72,
 			"srd": true,
 			"basicRules": true,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"level": 13,
 			"entries": [
@@ -763,7 +731,7 @@
 			"page": 72,
 			"srd": true,
 			"basicRules": true,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"level": 14,
 			"entries": [
@@ -777,7 +745,7 @@
 			"page": 72,
 			"srd": true,
 			"basicRules": true,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"level": 15,
 			"entries": [
@@ -790,7 +758,7 @@
 			"page": 72,
 			"srd": true,
 			"basicRules": true,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"level": 16,
 			"entries": [
@@ -804,7 +772,7 @@
 			"page": 72,
 			"srd": true,
 			"basicRules": true,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"level": 17,
 			"entries": [
@@ -817,7 +785,7 @@
 			"page": 72,
 			"srd": true,
 			"basicRules": true,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"level": 17,
 			"entries": [
@@ -830,7 +798,7 @@
 			"page": 72,
 			"srd": true,
 			"basicRules": true,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"level": 18,
 			"entries": [
@@ -843,7 +811,7 @@
 			"page": 72,
 			"srd": true,
 			"basicRules": true,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"level": 19,
 			"entries": [
@@ -857,7 +825,7 @@
 			"page": 72,
 			"srd": true,
 			"basicRules": true,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"level": 20,
 			"entries": [
@@ -867,17 +835,17 @@
 	],
 	"subclass": [
 		{
-			"name": "Battle Master",
-			"shortName": "Battle Master",
+			"name": "Maestro del Combate",
+			"shortName": "Maestro del Combate",
 			"source": "PHB-ES",
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"page": 73,
 			"optionalfeatureProgression": [
 				{
 					"name": "Maneuvers",
 					"featureType": [
-						"MV:B"
+						"MV_Esp:B"
 					],
 					"progression": {
 						"3": 3,
@@ -888,23 +856,23 @@
 				}
 			],
 			"subclassFeatures": [
-				"Battle Master|Fighter||Battle Master||3",
-				"Additional Maneuvers|Fighter||Battle Master||7",
-				"Additional Superiority Die|Fighter||Battle Master||7",
-				"Know Your Enemy|Fighter||Battle Master||7",
-				"Additional Maneuvers|Fighter||Battle Master||10",
-				"Improved Combat Superiority (d10)|Fighter||Battle Master||10",
-				"Additional Maneuvers|Fighter||Battle Master||15",
-				"Additional Superiority Die|Fighter||Battle Master||15",
-				"Relentless|Fighter||Battle Master||15",
-				"Improved Combat Superiority (d12)|Fighter||Battle Master||18"
+				"Battle Master|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|3",
+				"Additional Maneuvers|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|7",
+				"Additional Superiority Die|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|7",
+				"Know Your Enemy|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|7",
+				"Additional Maneuvers|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|10",
+				"Improved Combat Superiority (d10)|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|10",
+				"Additional Maneuvers|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|15",
+				"Additional Superiority Die|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|15",
+				"Relentless|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|15",
+				"Improved Combat Superiority (d12)|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|18"
 			]
 		},
 		{
-			"name": "Champion",
-			"shortName": "Champion",
+			"name": "Campeón",
+			"shortName": "Campeón",
 			"source": "PHB-ES",
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"page": 72,
 			"srd": true,
@@ -913,7 +881,7 @@
 				{
 					"name": "Fighting Style",
 					"featureType": [
-						"FS:F"
+						"FS_Esp:F"
 					],
 					"progression": {
 						"10": 1
@@ -921,18 +889,18 @@
 				}
 			],
 			"subclassFeatures": [
-				"Champion|Fighter||Champion||3",
-				"Remarkable Athlete|Fighter||Champion||7",
-				"Additional Fighting Style|Fighter||Champion||10",
-				"Superior Critical|Fighter||Champion||15",
-				"Survivor|Fighter||Champion||18"
+				"Champion|Guerrero|PHB-ES|Campeón|PHB-ES|3",
+				"Remarkable Athlete|Guerrero|PHB-ES|Campeón|PHB-ES|7",
+				"Additional Fighting Style|Guerrero|PHB-ES|Campeón|PHB-ES|10",
+				"Superior Critical|Guerrero|PHB-ES|Campeón|PHB-ES|15",
+				"Survivor|Guerrero|PHB-ES|Campeón|PHB-ES|18"
 			]
 		},
 		{
-			"name": "Eldritch Knight",
-			"shortName": "Eldritch Knight",
+			"name": "Caballero Arcano",
+			"shortName": "Caballero Arcano",
 			"source": "PHB-ES",
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"page": 74,
 			"spellcastingAbility": "int",
@@ -1015,7 +983,7 @@
 					"subclasses": [
 						{
 							"name": "Eldritch Knight",
-							"source": "PHB"
+							"source": "PHB-ES"
 						}
 					],
 					"colLabels": [
@@ -1110,7 +1078,7 @@
 					"subclasses": [
 						{
 							"name": "Eldritch Knight",
-							"source": "PHB"
+							"source": "PHB-ES"
 						}
 					],
 					"colLabels": [
@@ -1244,33 +1212,33 @@
 				}
 			],
 			"subclassFeatures": [
-				"Eldritch Knight|Fighter||Eldritch Knight||3",
-				"War Magic|Fighter||Eldritch Knight||7",
-				"Eldritch Strike|Fighter||Eldritch Knight||10",
-				"Arcane Charge|Fighter||Eldritch Knight||15",
-				"Improved War Magic|Fighter||Eldritch Knight||18"
+				"Eldritch Knight|Guerrero|PHB-ES|Caballero Arcano|PHB-ES|3",
+				"War Magic|Guerrero|PHB-ES|Caballero Arcano|PHB-ES|7",
+				"Eldritch Strike|Guerrero|PHB-ES|Caballero Arcano|PHB-ES|10",
+				"Arcane Charge|Guerrero|PHB-ES|Caballero Arcano|PHB-ES|15",
+				"Improved War Magic|Guerrero|PHB-ES|Caballero Arcano|PHB-ES|18"
 			]
 		},
 		{
-			"name": "Purple Dragon Knight (Banneret)",
-			"shortName": "Purple Dragon Knight (Banneret)",
+			"name": "Caballero del Dragón Púrpura (Mesnadero)",
+			"shortName": "Caballero del Dragón Púrpura (Mesnadero)",
 			"source": "SCAG-ES",
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"page": 128,
 			"subclassFeatures": [
-				"Purple Dragon Knight (Banneret)|Fighter||Purple Dragon Knight (Banneret)|SCAG|3",
-				"Royal Envoy|Fighter||Purple Dragon Knight (Banneret)|SCAG|7",
-				"Inspiring Surge|Fighter||Purple Dragon Knight (Banneret)|SCAG|10",
-				"Bulwark|Fighter||Purple Dragon Knight (Banneret)|SCAG|15",
-				"Inspiring Surge|Fighter||Purple Dragon Knight (Banneret)|SCAG|18"
+				"Purple Dragon Knight (Banneret)|Guerrero|PHB-ES|Caballero del Dragón Púrpura (Mesnadero)|SCAG-ES|3",
+				"Royal Envoy|Guerrero|PHB-ES|Caballero del Dragón Púrpura (Mesnadero)|SCAG-ES|7",
+				"Inspiring Surge|Guerrero|PHB-ES|Caballero del Dragón Púrpura (Mesnadero)|SCAG-ES|10",
+				"Bulwark|Guerrero|PHB-ES|Caballero del Dragón Púrpura (Mesnadero)|SCAG-ES|15",
+				"Inspiring Surge|Guerrero|PHB-ES|Caballero del Dragón Púrpura (Mesnadero)|SCAG-ES|18"
 			]
 		},
 		{
-			"name": "Arcane Archer",
-			"shortName": "Arcane Archer",
+			"name": "Arquero Arcano",
+			"shortName": "Arquero Arcano",
 			"source": "XGE-ES",
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"page": 28,
 			"additionalSpells": [
@@ -1293,7 +1261,7 @@
 				{
 					"name": "Arcane Shots",
 					"featureType": [
-						"AS"
+						"AS_Esp"
 					],
 					"progression": {
 						"3": 2,
@@ -1305,73 +1273,73 @@
 				}
 			],
 			"subclassFeatures": [
-				"Arcane Archer|Fighter||Arcane Archer|XGE|3",
-				"Magic Arrow|Fighter||Arcane Archer|XGE|7",
-				"Curving Shot|Fighter||Arcane Archer|XGE|7",
-				"Additional Arcane Shot Option|Fighter||Arcane Archer|XGE|7",
-				"Additional Arcane Shot Option|Fighter||Arcane Archer|XGE|10",
-				"Ever-Ready Shot|Fighter||Arcane Archer|XGE|15",
-				"Additional Arcane Shot Option|Fighter||Arcane Archer|XGE|15",
-				"Additional Arcane Shot Option|Fighter||Arcane Archer|XGE|18"
+				"Arcane Archer|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|3",
+				"Magic Arrow|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|7",
+				"Curving Shot|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|7",
+				"Additional Arcane Shot Option|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|7",
+				"Additional Arcane Shot Option|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|10",
+				"Ever-Ready Shot|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|15",
+				"Additional Arcane Shot Option|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|15",
+				"Additional Arcane Shot Option|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|18"
 			]
 		},
 		{
-			"name": "Cavalier",
-			"shortName": "Cavalier",
+			"name": "Caballero",
+			"shortName": "Caballero",
 			"source": "XGE-ES",
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"page": 30,
 			"subclassFeatures": [
-				"Cavalier|Fighter||Cavalier|XGE|3",
-				"Warding Maneuver|Fighter||Cavalier|XGE|7",
-				"Hold the Line|Fighter||Cavalier|XGE|10",
-				"Ferocious Charger|Fighter||Cavalier|XGE|15",
-				"Vigilant Defender|Fighter||Cavalier|XGE|18"
+				"Cavalier|Guerrero|PHB-ES|Caballero|XGE-ES|3",
+				"Warding Maneuver|Guerrero|PHB-ES|Caballero|XGE-ES|7",
+				"Hold the Line|Guerrero|PHB-ES|Caballero|XGE-ES|10",
+				"Ferocious Charger|Guerrero|PHB-ES|Caballero|XGE-ES|15",
+				"Vigilant Defender|Guerrero|PHB-ES|Caballero|XGE-ES|18"
 			]
 		},
 		{
-			"name": "Samurai",
-			"shortName": "Samurai",
+			"name": "Samurái",
+			"shortName": "Samurái",
 			"source": "XGE-ES",
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"page": 31,
 			"subclassFeatures": [
-				"Samurai|Fighter||Samurai|XGE|3",
-				"Elegant Courtier|Fighter||Samurai|XGE|7",
-				"Tireless Spirit|Fighter||Samurai|XGE|10",
-				"Rapid Strike|Fighter||Samurai|XGE|15",
-				"Strength before Death|Fighter||Samurai|XGE|18"
+				"Samurai|Guerrero|PHB-ES|Samurái|XGE-ES|3",
+				"Elegant Courtier|Guerrero|PHB-ES|Samurái|XGE-ES|7",
+				"Tireless Spirit|Guerrero|PHB-ES|Samurái|XGE-ES|10",
+				"Rapid Strike|Guerrero|PHB-ES|Samurái|XGE-ES|15",
+				"Strength before Death|Guerrero|PHB-ES|Samurái|XGE-ES|18"
 			]
 		},
 		{
-			"name": "Psi Warrior",
-			"shortName": "Psi Warrior",
+			"name": "Guerrero Psiónico",
+			"shortName": "Guerrero Psiónico",
 			"source": "TCE-ES",
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"page": 42,
 			"subclassFeatures": [
-				"Psi Warrior|Fighter||Psi Warrior|TCE|3",
-				"Telekinetic Adept|Fighter||Psi Warrior|TCE|7",
-				"Guarded Mind|Fighter||Psi Warrior|TCE|10",
-				"Bulwark of Force|Fighter||Psi Warrior|TCE|15",
-				"Telekinetic Master|Fighter||Psi Warrior|TCE|18"
+				"Psi Warrior|Guerrero|PHB-ES|Guerrero Psiónico|TCE-ES|3",
+				"Telekinetic Adept|Guerrero|PHB-ES|Guerrero Psiónico|TCE-ES|7",
+				"Guarded Mind|Guerrero|PHB-ES|Guerrero Psiónico|TCE-ES|10",
+				"Bulwark of Force|Guerrero|PHB-ES|Guerrero Psiónico|TCE-ES|15",
+				"Telekinetic Master|Guerrero|PHB-ES|Guerrero Psiónico|TCE-ES|18"
 			]
 		},
 		{
-			"name": "Rune Knight",
-			"shortName": "Rune Knight",
+			"name": "Caballero Rúnico",
+			"shortName": "Caballero Rúnico",
 			"source": "TCE-ES",
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"page": 44,
 			"optionalfeatureProgression": [
 				{
 					"name": "Runes",
 					"featureType": [
-						"RN"
+						"RN_Esp"
 					],
 					"progression": {
 						"3": 2,
@@ -1382,14 +1350,14 @@
 				}
 			],
 			"subclassFeatures": [
-				"Rune Knight|Fighter||Rune Knight|TCE|3",
-				"Runic Shield|Fighter||Rune Knight|TCE|7",
-				"Additional Rune Known|Fighter||Rune Knight|TCE|7",
-				"Great Stature|Fighter||Rune Knight|TCE|10",
-				"Additional Rune Known|Fighter||Rune Knight|TCE|10",
-				"Master of Runes|Fighter||Rune Knight|TCE|15",
-				"Additional Rune Known|Fighter||Rune Knight|TCE|15",
-				"Runic Juggernaut|Fighter||Rune Knight|TCE|18"
+				"Rune Knight|Guerrero|PHB-ES|Caballero Rúnico|TCE-ES|3",
+				"Runic Shield|Guerrero|PHB-ES|Caballero Rúnico|TCE-ES|7",
+				"Additional Rune Known|Guerrero|PHB-ES|Caballero Rúnico|TCE-ES|7",
+				"Great Stature|Guerrero|PHB-ES|Caballero Rúnico|TCE-ES|10",
+				"Additional Rune Known|Guerrero|PHB-ES|Caballero Rúnico|TCE-ES|10",
+				"Master of Runes|Guerrero|PHB-ES|Caballero Rúnico|TCE-ES|15",
+				"Additional Rune Known|Guerrero|PHB-ES|Caballero Rúnico|TCE-ES|15",
+				"Runic Juggernaut|Guerrero|PHB-ES|Caballero Rúnico|TCE-ES|18"
 			]
 		}
 	],
@@ -1398,32 +1366,28 @@
 			"name": "Battle Master",
 			"source": "PHB-ES",
 			"page": 73,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Battle Master",
+			"subclassShortName": "Maestro del Combate",
 			"subclassSource": "PHB-ES",
 			"level": 3,
 			"entries": [
 				"Those who emulate the archetypal Battle Master employ martial techniques passed down through generations. To a Battle Master, combat is an academic field, sometimes including subjects beyond battle such as weaponsmithing and calligraphy. Not every fighter absorbs the lessons of history, theory, and artistry that are reflected in the Battle Master archetype, but those who do are well-rounded fighters of great skill and knowledge.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Student of War|Fighter||Battle Master||3"
+					"subclassFeature": "Student of War|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Combat Superiority|Fighter||Battle Master||3"
+					"subclassFeature": "Combat Superiority|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Maneuvers|Fighter||Battle Master||3"
+					"subclassFeature": "Maneuvers|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Maneuver Options|Fighter||Battle Master||3|UAClassFeatureVariants"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Maneuver Options|Fighter||Battle Master||3|TCE"
+					"subclassFeature": "Maneuver Options|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|3|TCE-ES"
 				}
 			]
 		},
@@ -1431,9 +1395,9 @@
 			"name": "Combat Superiority",
 			"source": "PHB-ES",
 			"page": 73,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Battle Master",
+			"subclassShortName": "Maestro del Combate",
 			"subclassSource": "PHB-ES",
 			"level": 3,
 			"header": 1,
@@ -1491,9 +1455,9 @@
 			"name": "Maneuver Options",
 			"source": "TCE-ES",
 			"page": 41,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Battle Master",
+			"subclassShortName": "Maestro del Combate",
 			"subclassSource": "PHB-ES",
 			"level": 3,
 			"isClassFeatureVariant": true,
@@ -1509,31 +1473,31 @@
 							"entries": [
 								{
 									"type": "refOptionalfeature",
-									"optionalfeature": "Ambush|TCE"
+									"optionalfeature": "Ambush|TCE-ES"
 								},
 								{
 									"type": "refOptionalfeature",
-									"optionalfeature": "Bait and Switch|TCE"
+									"optionalfeature": "Bait and Switch|TCE-ES"
 								},
 								{
 									"type": "refOptionalfeature",
-									"optionalfeature": "Brace|TCE"
+									"optionalfeature": "Brace|TCE-ES"
 								},
 								{
 									"type": "refOptionalfeature",
-									"optionalfeature": "Commanding Presence|TCE"
+									"optionalfeature": "Commanding Presence|TCE-ES"
 								},
 								{
 									"type": "refOptionalfeature",
-									"optionalfeature": "Grappling Strike|TCE"
+									"optionalfeature": "Grappling Strike|TCE-ES"
 								},
 								{
 									"type": "refOptionalfeature",
-									"optionalfeature": "Quick Toss|TCE"
+									"optionalfeature": "Quick Toss|TCE-ES"
 								},
 								{
 									"type": "refOptionalfeature",
-									"optionalfeature": "Tactical Assessment|TCE"
+									"optionalfeature": "Tactical Assessment|TCE-ES"
 								}
 							]
 						}
@@ -1545,9 +1509,9 @@
 			"name": "Maneuvers",
 			"source": "PHB-ES",
 			"page": 73,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Battle Master",
+			"subclassShortName": "Maestro del Combate",
 			"subclassSource": "PHB-ES",
 			"level": 3,
 			"header": 1,
@@ -1629,9 +1593,9 @@
 			"name": "Student of War",
 			"source": "PHB-ES",
 			"page": 73,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Battle Master",
+			"subclassShortName": "Maestro del Combate",
 			"subclassSource": "PHB-ES",
 			"level": 3,
 			"header": 1,
@@ -1643,9 +1607,9 @@
 			"name": "Additional Maneuvers",
 			"source": "PHB-ES",
 			"page": 73,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Battle Master",
+			"subclassShortName": "Maestro del Combate",
 			"subclassSource": "PHB-ES",
 			"level": 7,
 			"header": 2,
@@ -1657,9 +1621,9 @@
 			"name": "Additional Superiority Die",
 			"source": "PHB-ES",
 			"page": 73,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Battle Master",
+			"subclassShortName": "Maestro del Combate",
 			"subclassSource": "PHB-ES",
 			"level": 7,
 			"header": 2,
@@ -1671,9 +1635,9 @@
 			"name": "Know Your Enemy",
 			"source": "PHB-ES",
 			"page": 73,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Battle Master",
+			"subclassShortName": "Maestro del Combate",
 			"subclassSource": "PHB-ES",
 			"level": 7,
 			"header": 2,
@@ -1697,9 +1661,9 @@
 			"name": "Additional Maneuvers",
 			"source": "PHB-ES",
 			"page": 73,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Battle Master",
+			"subclassShortName": "Maestro del Combate",
 			"subclassSource": "PHB-ES",
 			"level": 10,
 			"header": 2,
@@ -1711,9 +1675,9 @@
 			"name": "Improved Combat Superiority (d10)",
 			"source": "PHB-ES",
 			"page": 73,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Battle Master",
+			"subclassShortName": "Maestro del Combate",
 			"subclassSource": "PHB-ES",
 			"level": 10,
 			"header": 2,
@@ -1725,9 +1689,9 @@
 			"name": "Additional Maneuvers",
 			"source": "PHB-ES",
 			"page": 73,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Battle Master",
+			"subclassShortName": "Maestro del Combate",
 			"subclassSource": "PHB-ES",
 			"level": 15,
 			"header": 2,
@@ -1739,9 +1703,9 @@
 			"name": "Additional Superiority Die",
 			"source": "PHB-ES",
 			"page": 73,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Battle Master",
+			"subclassShortName": "Maestro del Combate",
 			"subclassSource": "PHB-ES",
 			"level": 15,
 			"header": 2,
@@ -1753,9 +1717,9 @@
 			"name": "Relentless",
 			"source": "PHB-ES",
 			"page": 73,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Battle Master",
+			"subclassShortName": "Maestro del Combate",
 			"subclassSource": "PHB-ES",
 			"level": 15,
 			"header": 2,
@@ -1767,9 +1731,9 @@
 			"name": "Improved Combat Superiority (d12)",
 			"source": "PHB-ES",
 			"page": 73,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Battle Master",
+			"subclassShortName": "Maestro del Combate",
 			"subclassSource": "PHB-ES",
 			"level": 18,
 			"header": 2,
@@ -1783,16 +1747,16 @@
 			"page": 72,
 			"srd": true,
 			"basicRules": true,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Champion",
+			"subclassShortName": "Campeón",
 			"subclassSource": "PHB-ES",
 			"level": 3,
 			"entries": [
 				"The archetypal Champion focuses on the development of raw physical power honed to deadly perfection. Those who model themselves on this archetype combine rigorous training with physical excellence to deal devastating blows.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Improved Critical|Fighter||Champion||3"
+					"subclassFeature": "Improved Critical|Guerrero|PHB-ES|Campeón|PHB-ES|3"
 				}
 			]
 		},
@@ -1802,9 +1766,9 @@
 			"page": 72,
 			"srd": true,
 			"basicRules": true,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Champion",
+			"subclassShortName": "Campeón",
 			"subclassSource": "PHB-ES",
 			"level": 3,
 			"header": 1,
@@ -1818,9 +1782,9 @@
 			"page": 72,
 			"srd": true,
 			"basicRules": true,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Champion",
+			"subclassShortName": "Campeón",
 			"subclassSource": "PHB-ES",
 			"level": 7,
 			"header": 2,
@@ -1835,9 +1799,9 @@
 			"page": 72,
 			"srd": true,
 			"basicRules": true,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Champion",
+			"subclassShortName": "Campeón",
 			"subclassSource": "PHB-ES",
 			"level": 10,
 			"header": 2,
@@ -1851,9 +1815,9 @@
 			"page": 72,
 			"srd": true,
 			"basicRules": true,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Champion",
+			"subclassShortName": "Campeón",
 			"subclassSource": "PHB-ES",
 			"level": 15,
 			"header": 2,
@@ -1867,9 +1831,9 @@
 			"page": 72,
 			"srd": true,
 			"basicRules": true,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Champion",
+			"subclassShortName": "Campeón",
 			"subclassSource": "PHB-ES",
 			"level": 18,
 			"header": 2,
@@ -1881,20 +1845,20 @@
 			"name": "Eldritch Knight",
 			"source": "PHB-ES",
 			"page": 74,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Eldritch Knight",
+			"subclassShortName": "Caballero Arcano",
 			"subclassSource": "PHB-ES",
 			"level": 3,
 			"entries": [
 				"The archetypal Eldritch Knight combines the martial mastery common to all fighters with a careful study of magic. Eldritch Knights use magical techniques similar to those practiced by wizards. They focus their study on two of the eight schools of magic—abjuration and evocation. Abjuration spells grant an Eldritch Knight additional protection in battle, and evocation spells deal damage to many foes at once, extending the fighter's reach in combat. These knights learn a comparatively small number of spells, committing them to memory instead of keeping them in a spellbook.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Spellcasting|Fighter||Eldritch Knight||3"
+					"subclassFeature": "Spellcasting|Guerrero|PHB-ES|Caballero Arcano|PHB-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Weapon Bond|Fighter||Eldritch Knight||3"
+					"subclassFeature": "Weapon Bond|Guerrero|PHB-ES|Caballero Arcano|PHB-ES|3"
 				}
 			]
 		},
@@ -1902,9 +1866,9 @@
 			"name": "Spellcasting",
 			"source": "PHB-ES",
 			"page": 74,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Eldritch Knight",
+			"subclassShortName": "Caballero Arcano",
 			"subclassSource": "PHB-ES",
 			"level": 3,
 			"header": 1,
@@ -1977,9 +1941,9 @@
 			"name": "Weapon Bond",
 			"source": "PHB-ES",
 			"page": 74,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Eldritch Knight",
+			"subclassShortName": "Caballero Arcano",
 			"subclassSource": "PHB-ES",
 			"level": 3,
 			"header": 1,
@@ -1993,9 +1957,9 @@
 			"name": "War Magic",
 			"source": "PHB-ES",
 			"page": 74,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Eldritch Knight",
+			"subclassShortName": "Caballero Arcano",
 			"subclassSource": "PHB-ES",
 			"level": 7,
 			"header": 2,
@@ -2007,9 +1971,9 @@
 			"name": "Eldritch Strike",
 			"source": "PHB-ES",
 			"page": 74,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Eldritch Knight",
+			"subclassShortName": "Caballero Arcano",
 			"subclassSource": "PHB-ES",
 			"level": 10,
 			"header": 2,
@@ -2021,9 +1985,9 @@
 			"name": "Arcane Charge",
 			"source": "PHB-ES",
 			"page": 74,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Eldritch Knight",
+			"subclassShortName": "Caballero Arcano",
 			"subclassSource": "PHB-ES",
 			"level": 15,
 			"header": 2,
@@ -2035,9 +1999,9 @@
 			"name": "Improved War Magic",
 			"source": "PHB-ES",
 			"page": 74,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Eldritch Knight",
+			"subclassShortName": "Caballero Arcano",
 			"subclassSource": "PHB-ES",
 			"level": 18,
 			"header": 2,
@@ -2049,9 +2013,9 @@
 			"name": "Purple Dragon Knight (Banneret)",
 			"source": "SCAG-ES",
 			"page": 128,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Purple Dragon Knight (Banneret)",
+			"subclassShortName": "Caballero del Dragón Púrpura (Mesnadero)",
 			"subclassSource": "SCAG-ES",
 			"level": 3,
 			"entries": [
@@ -2060,11 +2024,11 @@
 				"A knight prefers to lead through deeds, not words. As a knight spearheads an attack, the knight's actions can awaken reserves of courage and conviction in allies that they never suspected they had.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Restriction: Knighthood|Fighter||Purple Dragon Knight (Banneret)|SCAG|3"
+					"subclassFeature": "Restriction: Knighthood|Guerrero|PHB-ES|Caballero del Dragón Púrpura (Mesnadero)|SCAG-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Rallying Cry|Fighter||Purple Dragon Knight (Banneret)|SCAG|3"
+					"subclassFeature": "Rallying Cry|Guerrero|PHB-ES|Caballero del Dragón Púrpura (Mesnadero)|SCAG-ES|3"
 				}
 			]
 		},
@@ -2072,9 +2036,9 @@
 			"name": "Rallying Cry",
 			"source": "SCAG-ES",
 			"page": 128,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Purple Dragon Knight (Banneret)",
+			"subclassShortName": "Caballero del Dragón Púrpura (Mesnadero)",
 			"subclassSource": "SCAG-ES",
 			"level": 3,
 			"header": 1,
@@ -2087,9 +2051,9 @@
 			"name": "Restriction: Knighthood",
 			"source": "SCAG-ES",
 			"page": 128,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Purple Dragon Knight (Banneret)",
+			"subclassShortName": "Caballero del Dragón Púrpura (Mesnadero)",
 			"subclassSource": "SCAG-ES",
 			"level": 3,
 			"header": 1,
@@ -2102,9 +2066,9 @@
 			"name": "Royal Envoy",
 			"source": "SCAG-ES",
 			"page": 128,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Purple Dragon Knight (Banneret)",
+			"subclassShortName": "Caballero del Dragón Púrpura (Mesnadero)",
 			"subclassSource": "SCAG-ES",
 			"level": 7,
 			"header": 2,
@@ -2118,9 +2082,9 @@
 			"name": "Inspiring Surge",
 			"source": "SCAG-ES",
 			"page": 128,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Purple Dragon Knight (Banneret)",
+			"subclassShortName": "Caballero del Dragón Púrpura (Mesnadero)",
 			"subclassSource": "SCAG-ES",
 			"level": 10,
 			"header": 2,
@@ -2133,9 +2097,9 @@
 			"name": "Bulwark",
 			"source": "SCAG-ES",
 			"page": 128,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Purple Dragon Knight (Banneret)",
+			"subclassShortName": "Caballero del Dragón Púrpura (Mesnadero)",
 			"subclassSource": "SCAG-ES",
 			"level": 15,
 			"header": 2,
@@ -2147,9 +2111,9 @@
 			"name": "Inspiring Surge",
 			"source": "SCAG-ES",
 			"page": 128,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Purple Dragon Knight (Banneret)",
+			"subclassShortName": "Caballero del Dragón Púrpura (Mesnadero)",
 			"subclassSource": "SCAG-ES",
 			"level": 18,
 			"header": 2,
@@ -2161,9 +2125,9 @@
 			"name": "Psi Warrior",
 			"source": "TCE-ES",
 			"page": 42,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Psi Warrior",
+			"subclassShortName": "Guerrero Psiónico",
 			"subclassSource": "TCE-ES",
 			"level": 3,
 			"entries": [
@@ -2171,7 +2135,7 @@
 				"As a Psi Warrior, you might have honed your psionic abilities through solo discipline, unlocked it under the tutelage of a master, or refined it at an academy dedicated to wielding the mind's power as both weapon and shield.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Psionic Power|Fighter||Psi Warrior|TCE|3"
+					"subclassFeature": "Psionic Power|Guerrero|PHB-ES|Guerrero Psiónico|TCE-ES|3"
 				}
 			]
 		},
@@ -2179,9 +2143,9 @@
 			"name": "Psionic Power",
 			"source": "TCE-ES",
 			"page": 42,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Psi Warrior",
+			"subclassShortName": "Guerrero Psiónico",
 			"subclassSource": "TCE-ES",
 			"level": 3,
 			"header": 1,
@@ -2197,15 +2161,15 @@
 					"entries": [
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Protective Field|Fighter|TCE|Psi Warrior|TCE|3"
+							"subclassFeature": "Protective Field|Fighter|TCE|Guerrero Psiónico|TCE-ES|3"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Psionic Strike|Fighter|TCE|Psi Warrior|TCE|3"
+							"subclassFeature": "Psionic Strike|Fighter|TCE|Guerrero Psiónico|TCE-ES|3"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Telekinetic Movement|Fighter|TCE|Psi Warrior|TCE|3"
+							"subclassFeature": "Telekinetic Movement|Fighter|TCE|Guerrero Psiónico|TCE-ES|3"
 						}
 					]
 				}
@@ -2215,9 +2179,9 @@
 			"name": "Telekinetic Adept",
 			"source": "TCE-ES",
 			"page": 42,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Psi Warrior",
+			"subclassShortName": "Guerrero Psiónico",
 			"subclassSource": "TCE-ES",
 			"level": 7,
 			"header": 2,
@@ -2230,11 +2194,11 @@
 					"entries": [
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Psi-Powered Leap|Fighter|TCE|Psi Warrior|TCE|7"
+							"subclassFeature": "Psi-Powered Leap|Fighter|TCE|Guerrero Psiónico|TCE-ES|7"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Telekinetic Thrust|Fighter|TCE|Psi Warrior|TCE|7"
+							"subclassFeature": "Telekinetic Thrust|Fighter|TCE|Guerrero Psiónico|TCE-ES|7"
 						}
 					]
 				}
@@ -2244,9 +2208,9 @@
 			"name": "Guarded Mind",
 			"source": "TCE-ES",
 			"page": 42,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Psi Warrior",
+			"subclassShortName": "Guerrero Psiónico",
 			"subclassSource": "TCE-ES",
 			"level": 10,
 			"header": 2,
@@ -2259,9 +2223,9 @@
 			"name": "Bulwark of Force",
 			"source": "TCE-ES",
 			"page": 42,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Psi Warrior",
+			"subclassShortName": "Guerrero Psiónico",
 			"subclassSource": "TCE-ES",
 			"level": 15,
 			"header": 2,
@@ -2275,9 +2239,9 @@
 			"name": "Telekinetic Master",
 			"source": "TCE-ES",
 			"page": 42,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Psi Warrior",
+			"subclassShortName": "Guerrero Psiónico",
 			"subclassSource": "TCE-ES",
 			"level": 18,
 			"header": 2,
@@ -2291,24 +2255,24 @@
 			"name": "Rune Knight",
 			"source": "TCE-ES",
 			"page": 44,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Rune Knight",
+			"subclassShortName": "Caballero Rúnico",
 			"subclassSource": "TCE-ES",
 			"level": 3,
 			"entries": [
 				"Rune Knights enhance their martial prowess using the supernatural power of runes, an ancient practice that originated with giants. Rune cutters can be found among any family of giants, and you likely learned your methods first or second hand from such a mystical artisan. Whether you found the giant's work carved into a hill or cave, learned of the runes from a sage, or met the giant in person, you studied the giant's craft and learned how to apply magic runes to empower your equipment.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Bonus Proficiencies|Fighter||Rune Knight|TCE|3"
+					"subclassFeature": "Bonus Proficiencies|Guerrero|PHB-ES|Caballero Rúnico|TCE-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Rune Carver|Fighter||Rune Knight|TCE|3"
+					"subclassFeature": "Rune Carver|Guerrero|PHB-ES|Caballero Rúnico|TCE-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Giant's Might|Fighter||Rune Knight|TCE|3"
+					"subclassFeature": "Giant's Might|Guerrero|PHB-ES|Caballero Rúnico|TCE-ES|3"
 				}
 			]
 		},
@@ -2316,9 +2280,9 @@
 			"name": "Bonus Proficiencies",
 			"source": "TCE-ES",
 			"page": 44,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Rune Knight",
+			"subclassShortName": "Caballero Rúnico",
 			"subclassSource": "TCE-ES",
 			"level": 3,
 			"header": 1,
@@ -2331,9 +2295,9 @@
 			"name": "Giant's Might",
 			"source": "TCE-ES",
 			"page": 44,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Rune Knight",
+			"subclassShortName": "Caballero Rúnico",
 			"subclassSource": "TCE-ES",
 			"level": 3,
 			"header": 1,
@@ -2355,9 +2319,9 @@
 			"name": "Rune Carver",
 			"source": "TCE-ES",
 			"page": 44,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Rune Knight",
+			"subclassShortName": "Caballero Rúnico",
 			"subclassSource": "TCE-ES",
 			"level": 3,
 			"header": 1,
@@ -2402,28 +2366,28 @@
 					"entries": [
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Cloud Rune|TCE"
+							"optionalfeature": "Cloud Rune|TCE-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Fire Rune|TCE"
+							"optionalfeature": "Fire Rune|TCE-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Frost Rune|TCE"
+							"optionalfeature": "Frost Rune|TCE-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Stone Rune|TCE"
+							"optionalfeature": "Stone Rune|TCE-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Hill Rune|TCE",
+							"optionalfeature": "Hill Rune|TCE-ES",
 							"name": "Hill Rune (7th Level or Higher)"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Storm Rune|TCE",
+							"optionalfeature": "Storm Rune|TCE-ES",
 							"name": "Storm Rune (7th Level or Higher)"
 						}
 					]
@@ -2434,9 +2398,9 @@
 			"name": "Additional Rune Known",
 			"source": "TCE-ES",
 			"page": 44,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Rune Knight",
+			"subclassShortName": "Caballero Rúnico",
 			"subclassSource": "TCE-ES",
 			"level": 7,
 			"header": 2,
@@ -2449,9 +2413,9 @@
 			"name": "Runic Shield",
 			"source": "TCE-ES",
 			"page": 44,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Rune Knight",
+			"subclassShortName": "Caballero Rúnico",
 			"subclassSource": "TCE-ES",
 			"level": 7,
 			"header": 2,
@@ -2465,9 +2429,9 @@
 			"name": "Additional Rune Known",
 			"source": "TCE-ES",
 			"page": 44,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Rune Knight",
+			"subclassShortName": "Caballero Rúnico",
 			"subclassSource": "TCE-ES",
 			"level": 10,
 			"header": 2,
@@ -2480,9 +2444,9 @@
 			"name": "Great Stature",
 			"source": "TCE-ES",
 			"page": 44,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Rune Knight",
+			"subclassShortName": "Caballero Rúnico",
 			"subclassSource": "TCE-ES",
 			"level": 10,
 			"header": 2,
@@ -2496,9 +2460,9 @@
 			"name": "Additional Rune Known",
 			"source": "TCE-ES",
 			"page": 44,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Rune Knight",
+			"subclassShortName": "Caballero Rúnico",
 			"subclassSource": "TCE-ES",
 			"level": 15,
 			"header": 2,
@@ -2511,9 +2475,9 @@
 			"name": "Master of Runes",
 			"source": "TCE-ES",
 			"page": 44,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Rune Knight",
+			"subclassShortName": "Caballero Rúnico",
 			"subclassSource": "TCE-ES",
 			"level": 15,
 			"header": 2,
@@ -2526,9 +2490,9 @@
 			"name": "Runic Juggernaut",
 			"source": "TCE-ES",
 			"page": 44,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Rune Knight",
+			"subclassShortName": "Caballero Rúnico",
 			"subclassSource": "TCE-ES",
 			"level": 18,
 			"header": 2,
@@ -2541,24 +2505,24 @@
 			"name": "Arcane Archer",
 			"source": "XGE-ES",
 			"page": 28,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Arcane Archer",
+			"subclassShortName": "Arquero Arcano",
 			"subclassSource": "XGE-ES",
 			"level": 3,
 			"entries": [
 				"An Arcane Archer studies a unique elven method of archery that weaves magic into attacks to produce supernatural effects. Arcane Archers are some of the most elite warriors among the elves. They stand watch over the fringes of elven domains, keeping a keen eye out for trespassers and using magic-infused arrows to defeat monsters and invaders before they can reach elven settlements. Over the centuries, the methods of these elf archers have been learned by members of other races who can also balance arcane aptitude with archery.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Arcane Archer Lore|Fighter||Arcane Archer|XGE|3"
+					"subclassFeature": "Arcane Archer Lore|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Arcane Shot|Fighter||Arcane Archer|XGE|3"
+					"subclassFeature": "Arcane Shot|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Arcane Shot Options|Fighter||Arcane Archer|XGE|3"
+					"subclassFeature": "Arcane Shot Options|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|3"
 				}
 			]
 		},
@@ -2566,9 +2530,9 @@
 			"name": "Arcane Archer Lore",
 			"source": "XGE-ES",
 			"page": 28,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Arcane Archer",
+			"subclassShortName": "Arquero Arcano",
 			"subclassSource": "XGE-ES",
 			"level": 3,
 			"header": 1,
@@ -2580,9 +2544,9 @@
 			"name": "Arcane Shot",
 			"source": "XGE-ES",
 			"page": 28,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Arcane Archer",
+			"subclassShortName": "Arquero Arcano",
 			"subclassSource": "XGE-ES",
 			"level": 3,
 			"header": 1,
@@ -2596,9 +2560,9 @@
 			"name": "Arcane Shot Options",
 			"source": "XGE-ES",
 			"page": 28,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Arcane Archer",
+			"subclassShortName": "Arquero Arcano",
 			"subclassSource": "XGE-ES",
 			"level": 3,
 			"header": 1,
@@ -2656,9 +2620,9 @@
 			"name": "Additional Arcane Shot Option",
 			"source": "XGE-ES",
 			"page": 28,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Arcane Archer",
+			"subclassShortName": "Arquero Arcano",
 			"subclassSource": "XGE-ES",
 			"level": 7,
 			"header": 2,
@@ -2670,9 +2634,9 @@
 			"name": "Curving Shot",
 			"source": "XGE-ES",
 			"page": 28,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Arcane Archer",
+			"subclassShortName": "Arquero Arcano",
 			"subclassSource": "XGE-ES",
 			"level": 7,
 			"header": 2,
@@ -2684,9 +2648,9 @@
 			"name": "Magic Arrow",
 			"source": "XGE-ES",
 			"page": 28,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Arcane Archer",
+			"subclassShortName": "Arquero Arcano",
 			"subclassSource": "XGE-ES",
 			"level": 7,
 			"header": 2,
@@ -2698,9 +2662,9 @@
 			"name": "Additional Arcane Shot Option",
 			"source": "XGE-ES",
 			"page": 28,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Arcane Archer",
+			"subclassShortName": "Arquero Arcano",
 			"subclassSource": "XGE-ES",
 			"level": 10,
 			"header": 2,
@@ -2712,9 +2676,9 @@
 			"name": "Additional Arcane Shot Option",
 			"source": "XGE-ES",
 			"page": 28,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Arcane Archer",
+			"subclassShortName": "Arquero Arcano",
 			"subclassSource": "XGE-ES",
 			"level": 15,
 			"header": 2,
@@ -2726,9 +2690,9 @@
 			"name": "Ever-Ready Shot",
 			"source": "XGE-ES",
 			"page": 28,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Arcane Archer",
+			"subclassShortName": "Arquero Arcano",
 			"subclassSource": "XGE-ES",
 			"level": 15,
 			"header": 2,
@@ -2740,9 +2704,9 @@
 			"name": "Additional Arcane Shot Option",
 			"source": "XGE-ES",
 			"page": 28,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Arcane Archer",
+			"subclassShortName": "Arquero Arcano",
 			"subclassSource": "XGE-ES",
 			"level": 18,
 			"header": 2,
@@ -2754,24 +2718,24 @@
 			"name": "Cavalier",
 			"source": "XGE-ES",
 			"page": 30,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Cavalier",
+			"subclassShortName": "Caballero",
 			"subclassSource": "XGE-ES",
 			"level": 3,
 			"entries": [
 				"The archetypal Cavalier excels at mounted combat. Usually born among the nobility and raised at court, a Cavalier is equally at home leading a cavalry charge or exchanging repartee at a state dinner. Cavaliers also learn how to guard those in their charge from harm, often serving as the protectors of their superiors and of the weak. Compelled to right wrongs or earn prestige, many of these fighters leave their lives of comfort to embark on glorious adventure.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Bonus Proficiency|Fighter||Cavalier|XGE|3"
+					"subclassFeature": "Bonus Proficiency|Guerrero|PHB-ES|Caballero|XGE-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Born to the Saddle|Fighter||Cavalier|XGE|3"
+					"subclassFeature": "Born to the Saddle|Guerrero|PHB-ES|Caballero|XGE-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Unwavering Mark|Fighter||Cavalier|XGE|3"
+					"subclassFeature": "Unwavering Mark|Guerrero|PHB-ES|Caballero|XGE-ES|3"
 				}
 			]
 		},
@@ -2779,9 +2743,9 @@
 			"name": "Bonus Proficiency",
 			"source": "XGE-ES",
 			"page": 30,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Cavalier",
+			"subclassShortName": "Caballero",
 			"subclassSource": "XGE-ES",
 			"level": 3,
 			"header": 1,
@@ -2793,9 +2757,9 @@
 			"name": "Born to the Saddle",
 			"source": "XGE-ES",
 			"page": 30,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Cavalier",
+			"subclassShortName": "Caballero",
 			"subclassSource": "XGE-ES",
 			"level": 3,
 			"header": 1,
@@ -2808,9 +2772,9 @@
 			"name": "Unwavering Mark",
 			"source": "XGE-ES",
 			"page": 30,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Cavalier",
+			"subclassShortName": "Caballero",
 			"subclassSource": "XGE-ES",
 			"level": 3,
 			"header": 1,
@@ -2825,9 +2789,9 @@
 			"name": "Warding Maneuver",
 			"source": "XGE-ES",
 			"page": 30,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Cavalier",
+			"subclassShortName": "Caballero",
 			"subclassSource": "XGE-ES",
 			"level": 7,
 			"header": 2,
@@ -2840,9 +2804,9 @@
 			"name": "Hold the Line",
 			"source": "XGE-ES",
 			"page": 30,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Cavalier",
+			"subclassShortName": "Caballero",
 			"subclassSource": "XGE-ES",
 			"level": 10,
 			"header": 2,
@@ -2854,9 +2818,9 @@
 			"name": "Ferocious Charger",
 			"source": "XGE-ES",
 			"page": 30,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Cavalier",
+			"subclassShortName": "Caballero",
 			"subclassSource": "XGE-ES",
 			"level": 15,
 			"header": 2,
@@ -2868,9 +2832,9 @@
 			"name": "Vigilant Defender",
 			"source": "XGE-ES",
 			"page": 30,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Cavalier",
+			"subclassShortName": "Caballero",
 			"subclassSource": "XGE-ES",
 			"level": 18,
 			"header": 2,
@@ -2882,20 +2846,20 @@
 			"name": "Samurai",
 			"source": "XGE-ES",
 			"page": 31,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Samurai",
+			"subclassShortName": "Samurái",
 			"subclassSource": "XGE-ES",
 			"level": 3,
 			"entries": [
 				"The Samurai is a fighter who draws on an implacable fighting spirit to overcome enemies. A Samurai's resolve is nearly unbreakable, and the enemies in a Samurai's path have two choices: yield or die fighting.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Bonus Proficiency|Fighter||Samurai|XGE|3"
+					"subclassFeature": "Bonus Proficiency|Guerrero|PHB-ES|Samurái|XGE-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Fighting Spirit|Fighter||Samurai|XGE|3"
+					"subclassFeature": "Fighting Spirit|Guerrero|PHB-ES|Samurái|XGE-ES|3"
 				}
 			]
 		},
@@ -2903,9 +2867,9 @@
 			"name": "Bonus Proficiency",
 			"source": "XGE-ES",
 			"page": 31,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Samurai",
+			"subclassShortName": "Samurái",
 			"subclassSource": "XGE-ES",
 			"level": 3,
 			"header": 1,
@@ -2917,9 +2881,9 @@
 			"name": "Fighting Spirit",
 			"source": "XGE-ES",
 			"page": 31,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Samurai",
+			"subclassShortName": "Samurái",
 			"subclassSource": "XGE-ES",
 			"level": 3,
 			"header": 1,
@@ -2932,9 +2896,9 @@
 			"name": "Elegant Courtier",
 			"source": "XGE-ES",
 			"page": 31,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Samurai",
+			"subclassShortName": "Samurái",
 			"subclassSource": "XGE-ES",
 			"level": 7,
 			"header": 2,
@@ -2947,9 +2911,9 @@
 			"name": "Tireless Spirit",
 			"source": "XGE-ES",
 			"page": 31,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Samurai",
+			"subclassShortName": "Samurái",
 			"subclassSource": "XGE-ES",
 			"level": 10,
 			"header": 2,
@@ -2961,9 +2925,9 @@
 			"name": "Rapid Strike",
 			"source": "XGE-ES",
 			"page": 31,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Samurai",
+			"subclassShortName": "Samurái",
 			"subclassSource": "XGE-ES",
 			"level": 15,
 			"header": 2,
@@ -2975,9 +2939,9 @@
 			"name": "Strength before Death",
 			"source": "XGE-ES",
 			"page": 31,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Samurai",
+			"subclassShortName": "Samurái",
 			"subclassSource": "XGE-ES",
 			"level": 18,
 			"header": 2,
@@ -2990,9 +2954,9 @@
 			"name": "Protective Field",
 			"source": "TCE-ES",
 			"page": 42,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "TCE-ES",
-			"subclassShortName": "Psi Warrior",
+			"subclassShortName": "Guerrero Psiónico",
 			"subclassSource": "TCE-ES",
 			"level": 3,
 			"consumes": {
@@ -3006,9 +2970,9 @@
 			"name": "Psionic Strike",
 			"source": "TCE-ES",
 			"page": 42,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "TCE-ES",
-			"subclassShortName": "Psi Warrior",
+			"subclassShortName": "Guerrero Psiónico",
 			"subclassSource": "TCE-ES",
 			"level": 3,
 			"consumes": {
@@ -3022,9 +2986,9 @@
 			"name": "Telekinetic Movement",
 			"source": "TCE-ES",
 			"page": 42,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "TCE-ES",
-			"subclassShortName": "Psi Warrior",
+			"subclassShortName": "Guerrero Psiónico",
 			"subclassSource": "TCE-ES",
 			"level": 3,
 			"entries": [
@@ -3035,9 +2999,9 @@
 			"name": "Psi-Powered Leap",
 			"source": "TCE-ES",
 			"page": 42,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "TCE-ES",
-			"subclassShortName": "Psi Warrior",
+			"subclassShortName": "Guerrero Psiónico",
 			"subclassSource": "TCE-ES",
 			"level": 7,
 			"entries": [
@@ -3048,9 +3012,9 @@
 			"name": "Telekinetic Thrust",
 			"source": "TCE-ES",
 			"page": 42,
-			"className": "Fighter",
+			"className": "Guerrero",
 			"classSource": "TCE-ES",
-			"subclassShortName": "Psi Warrior",
+			"subclassShortName": "Guerrero Psiónico",
 			"subclassSource": "TCE-ES",
 			"level": 7,
 			"entries": [
