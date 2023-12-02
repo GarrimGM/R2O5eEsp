@@ -840,7 +840,7 @@
 			"source": "PHB-ES",
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"page": 73,
+			"page": 85,
 			"optionalfeatureProgression": [
 				{
 					"name": "Maniobras",
@@ -856,16 +856,16 @@
 				}
 			],
 			"subclassFeatures": [
-				"Battle Master|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|3",
-				"Additional Maneuvers|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|7",
-				"Additional Superiority Die|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|7",
-				"Know Your Enemy|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|7",
-				"Additional Maneuvers|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|10",
-				"Improved Combat Superiority (d10)|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|10",
-				"Additional Maneuvers|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|15",
-				"Additional Superiority Die|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|15",
-				"Relentless|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|15",
-				"Improved Combat Superiority (d12)|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|18"
+				"Maestro del Combate|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|3",
+				"Maniobras Adicionales|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|7",
+				"Dado de Supremacía Adicional|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|7",
+				"Conoce a tu Enemigo|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|7",
+				"Maniobras Adicionales|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|10",
+				"Supremacía en Combate Mejorada (d10)|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|10",
+				"Maniobras Adicionales|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|15",
+				"Dado de Supremacía Adicional|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|15",
+				"Incansable|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|15",
+				"Supremacía en Combate Mejorada (d12)|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|18"
 			]
 		},
 		{
@@ -874,7 +874,7 @@
 			"source": "PHB-ES",
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"page": 72,
+			"page": 84,
 			"srd": true,
 			"basicRules": true,
 			"optionalfeatureProgression": [
@@ -889,11 +889,11 @@
 				}
 			],
 			"subclassFeatures": [
-				"Champion|Guerrero|PHB-ES|Campeón|PHB-ES|3",
-				"Remarkable Athlete|Guerrero|PHB-ES|Campeón|PHB-ES|7",
-				"Additional Fighting Style|Guerrero|PHB-ES|Campeón|PHB-ES|10",
-				"Superior Critical|Guerrero|PHB-ES|Campeón|PHB-ES|15",
-				"Survivor|Guerrero|PHB-ES|Campeón|PHB-ES|18"
+				"Campeón|Guerrero|PHB-ES|Campeón|PHB-ES|3",
+				"Atleta Sobresaliente|Guerrero|PHB-ES|Campeón|PHB-ES|7",
+				"Estilo de Combate Adicional|Guerrero|PHB-ES|Campeón|PHB-ES|10",
+				"Crítico Superior|Guerrero|PHB-ES|Campeón|PHB-ES|15",
+				"Superviviente|Guerrero|PHB-ES|Campeón|PHB-ES|18"
 			]
 		},
 		{
@@ -902,7 +902,7 @@
 			"source": "PHB-ES",
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"page": 74,
+			"page": 86,
 			"spellcastingAbility": "int",
 			"casterProgression": "1/3",
 			"cantripProgression": [
@@ -954,25 +954,25 @@
 					"expanded": {
 						"3": [
 							{
-								"all": "level=0|class=Wizard"
+								"all": "level=0|class=Mago (PHB-ES)"
 							},
 							{
-								"all": "level=1|class=Wizard"
+								"all": "level=1|class=Mago (PHB-ES)"
 							}
 						],
 						"7": [
 							{
-								"all": "level=2|class=Wizard"
+								"all": "level=2|class=Mago (PHB-ES)"
 							}
 						],
 						"13": [
 							{
-								"all": "level=3|class=Wizard"
+								"all": "level=3|class=Mago (PHB-ES)"
 							}
 						],
 						"19": [
 							{
-								"all": "level=4|class=Wizard"
+								"all": "level=4|class=Mago (PHB-ES)"
 							}
 						]
 					}
@@ -982,13 +982,13 @@
 				{
 					"subclasses": [
 						{
-							"name": "Eldritch Knight",
+							"name": "Caballero Arcano",
 							"source": "PHB-ES"
 						}
 					],
 					"colLabels": [
-						"{@filter Cantrips Known|spells|level=0|subclass=Fighter: Eldritch Knight}",
-						"{@filter Spells Known|spells|subclass=Fighter: Eldritch Knight}"
+						"{@filter Trucos conocidos|spells|level=0|subclass=Guerrero: Caballero Arcano (PHB-ES)}",
+						"{@filter Conjuros conocidos|spells|subclass=Guerrero: Caballero Arcano (PHB-ES)}"
 					],
 					"rows": [
 						[
@@ -1074,18 +1074,18 @@
 					]
 				},
 				{
-					"title": "Spell Slots per Spell Level",
+					"title": "Espacios de conjuro por cada nivel de conjuro",
 					"subclasses": [
 						{
-							"name": "Eldritch Knight",
+							"name": "Caballero Arcano",
 							"source": "PHB-ES"
 						}
 					],
 					"colLabels": [
-						"{@filter 1st|spells|level=1|subclass=Fighter: Eldritch Knight}",
-						"{@filter 2nd|spells|level=2|subclass=Fighter: Eldritch Knight}",
-						"{@filter 3rd|spells|level=3|subclass=Fighter: Eldritch Knight}",
-						"{@filter 4th|spells|level=4|subclass=Fighter: Eldritch Knight}"
+						"{@filter 1|spells|level=1|subclass=Guerrero: Caballero Arcano (PHB-ES)}",
+						"{@filter 2|spells|level=2|subclass=Guerrero: Caballero Arcano (PHB-ES)}",
+						"{@filter 3|spells|level=3|subclass=Guerrero: Caballero Arcano (PHB-ES)}",
+						"{@filter 4|spells|level=4|subclass=Guerrero: Caballero Arcano (PHB-ES)}"
 					],
 					"rowsSpellProgression": [
 						[
@@ -1212,11 +1212,11 @@
 				}
 			],
 			"subclassFeatures": [
-				"Eldritch Knight|Guerrero|PHB-ES|Caballero Arcano|PHB-ES|3",
-				"War Magic|Guerrero|PHB-ES|Caballero Arcano|PHB-ES|7",
-				"Eldritch Strike|Guerrero|PHB-ES|Caballero Arcano|PHB-ES|10",
-				"Arcane Charge|Guerrero|PHB-ES|Caballero Arcano|PHB-ES|15",
-				"Improved War Magic|Guerrero|PHB-ES|Caballero Arcano|PHB-ES|18"
+				"Caballero Arcano|Guerrero|PHB-ES|Caballero Arcano|PHB-ES|3",
+				"Magia de Guerra|Guerrero|PHB-ES|Caballero Arcano|PHB-ES|7",
+				"Golpe Sobrenatural|Guerrero|PHB-ES|Caballero Arcano|PHB-ES|10",
+				"Carga Arcana|Guerrero|PHB-ES|Caballero Arcano|PHB-ES|15",
+				"Magia de Guerra Mejorada|Guerrero|PHB-ES|Caballero Arcano|PHB-ES|18"
 			]
 		},
 		{
@@ -1225,13 +1225,13 @@
 			"source": "SCAG-ES",
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"page": 128,
+			"page": 131,
 			"subclassFeatures": [
-				"Purple Dragon Knight (Banneret)|Guerrero|PHB-ES|Caballero del Dragón Púrpura (Mesnadero)|SCAG-ES|3",
-				"Royal Envoy|Guerrero|PHB-ES|Caballero del Dragón Púrpura (Mesnadero)|SCAG-ES|7",
-				"Inspiring Surge|Guerrero|PHB-ES|Caballero del Dragón Púrpura (Mesnadero)|SCAG-ES|10",
-				"Bulwark|Guerrero|PHB-ES|Caballero del Dragón Púrpura (Mesnadero)|SCAG-ES|15",
-				"Inspiring Surge|Guerrero|PHB-ES|Caballero del Dragón Púrpura (Mesnadero)|SCAG-ES|18"
+				"Caballero del Dragón Púrpura (Mesnadero)|Guerrero|PHB-ES|Caballero del Dragón Púrpura (Mesnadero)|SCAG-ES|3",
+				"Enviado Real|Guerrero|PHB-ES|Caballero del Dragón Púrpura (Mesnadero)|SCAG-ES|7",
+				"Inspiración Súbita|Guerrero|PHB-ES|Caballero del Dragón Púrpura (Mesnadero)|SCAG-ES|10",
+				"Bastión|Guerrero|PHB-ES|Caballero del Dragón Púrpura (Mesnadero)|SCAG-ES|15",
+				"Inspiración Súbita|Guerrero|PHB-ES|Caballero del Dragón Púrpura (Mesnadero)|SCAG-ES|18"
 			]
 		},
 		{
@@ -1240,26 +1240,26 @@
 			"source": "XGE-ES",
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"page": 28,
+			"page": 37,
 			"additionalSpells": [
 				{
 					"known": {
 						"3": [
-							"prestidigitation#c"
+							"prestidigitación|PHB-ES#c"
 						]
 					}
 				},
 				{
 					"known": {
 						"3": [
-							"druidcraft#c"
+							"saber druídico|PHB-ES#c"
 						]
 					}
 				}
 			],
 			"optionalfeatureProgression": [
 				{
-					"name": "Arcane Shots",
+					"name": "Disparos Arcanos",
 					"featureType": [
 						"AS_Esp"
 					],
@@ -1273,14 +1273,14 @@
 				}
 			],
 			"subclassFeatures": [
-				"Arcane Archer|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|3",
-				"Magic Arrow|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|7",
-				"Curving Shot|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|7",
-				"Additional Arcane Shot Option|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|7",
-				"Additional Arcane Shot Option|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|10",
-				"Ever-Ready Shot|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|15",
-				"Additional Arcane Shot Option|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|15",
-				"Additional Arcane Shot Option|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|18"
+				"Arquero Arcano|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|3",
+				"Flecha Mágica|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|7",
+				"Disparo Curvo|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|7",
+				"Opción adicional de Disparo Arcano|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|7",
+				"Opción adicional de Disparo Arcano|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|10",
+				"Disparo Siempre Listo|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|15",
+				"Opción adicional de Disparo Arcano|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|15",
+				"Opción adicional de Disparo Arcano|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|18"
 			]
 		},
 		{
@@ -1289,13 +1289,13 @@
 			"source": "XGE-ES",
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"page": 30,
+			"page": 39,
 			"subclassFeatures": [
-				"Cavalier|Guerrero|PHB-ES|Caballero|XGE-ES|3",
-				"Warding Maneuver|Guerrero|PHB-ES|Caballero|XGE-ES|7",
-				"Hold the Line|Guerrero|PHB-ES|Caballero|XGE-ES|10",
-				"Ferocious Charger|Guerrero|PHB-ES|Caballero|XGE-ES|15",
-				"Vigilant Defender|Guerrero|PHB-ES|Caballero|XGE-ES|18"
+				"Caballero|Guerrero|PHB-ES|Caballero|XGE-ES|3",
+				"Maniobra de Protección|Guerrero|PHB-ES|Caballero|XGE-ES|7",
+				"Mantener la Formación|Guerrero|PHB-ES|Caballero|XGE-ES|10",
+				"Carga Feroz|Guerrero|PHB-ES|Caballero|XGE-ES|15",
+				"Defensor Atento|Guerrero|PHB-ES|Caballero|XGE-ES|18"
 			]
 		},
 		{
@@ -1304,13 +1304,13 @@
 			"source": "XGE-ES",
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"page": 31,
+			"page": 40,
 			"subclassFeatures": [
-				"Samurai|Guerrero|PHB-ES|Samurái|XGE-ES|3",
-				"Elegant Courtier|Guerrero|PHB-ES|Samurái|XGE-ES|7",
-				"Tireless Spirit|Guerrero|PHB-ES|Samurái|XGE-ES|10",
-				"Rapid Strike|Guerrero|PHB-ES|Samurái|XGE-ES|15",
-				"Strength before Death|Guerrero|PHB-ES|Samurái|XGE-ES|18"
+				"Samurái|Guerrero|PHB-ES|Samurái|XGE-ES|3",
+				"Cortesano Elegante|Guerrero|PHB-ES|Samurái|XGE-ES|7",
+				"Espíritu Incansable|Guerrero|PHB-ES|Samurái|XGE-ES|10",
+				"Golpe Súbito|Guerrero|PHB-ES|Samurái|XGE-ES|15",
+				"Fortaleza ante la Muerte|Guerrero|PHB-ES|Samurái|XGE-ES|18"
 			]
 		},
 		{
@@ -1334,11 +1334,11 @@
 				}
 			],
 			"subclassFeatures": [
-				"Psi Warrior|Guerrero|PHB-ES|Guerrero Psiónico|TCE-ES|3",
-				"Telekinetic Adept|Guerrero|PHB-ES|Guerrero Psiónico|TCE-ES|7",
-				"Guarded Mind|Guerrero|PHB-ES|Guerrero Psiónico|TCE-ES|10",
-				"Bulwark of Force|Guerrero|PHB-ES|Guerrero Psiónico|TCE-ES|15",
-				"Telekinetic Master|Guerrero|PHB-ES|Guerrero Psiónico|TCE-ES|18"
+				"Guerrero Psiónico|Guerrero|PHB-ES|Guerrero Psiónico|TCE-ES|3",
+				"Adepto Telequinético|Guerrero|PHB-ES|Guerrero Psiónico|TCE-ES|7",
+				"Mente Robusta|Guerrero|PHB-ES|Guerrero Psiónico|TCE-ES|10",
+				"Bastión de Fuerza|Guerrero|PHB-ES|Guerrero Psiónico|TCE-ES|15",
+				"Maestro Telequinético|Guerrero|PHB-ES|Guerrero Psiónico|TCE-ES|18"
 			]
 		},
 		{
@@ -1347,10 +1347,10 @@
 			"source": "TCE-ES",
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
-			"page": 44,
+			"page": 53,
 			"optionalfeatureProgression": [
 				{
-					"name": "Runes",
+					"name": "Runas",
 					"featureType": [
 						"RN_Esp"
 					],
@@ -1363,51 +1363,51 @@
 				}
 			],
 			"subclassFeatures": [
-				"Rune Knight|Guerrero|PHB-ES|Caballero Rúnico|TCE-ES|3",
-				"Runic Shield|Guerrero|PHB-ES|Caballero Rúnico|TCE-ES|7",
-				"Additional Rune Known|Guerrero|PHB-ES|Caballero Rúnico|TCE-ES|7",
-				"Great Stature|Guerrero|PHB-ES|Caballero Rúnico|TCE-ES|10",
-				"Additional Rune Known|Guerrero|PHB-ES|Caballero Rúnico|TCE-ES|10",
-				"Master of Runes|Guerrero|PHB-ES|Caballero Rúnico|TCE-ES|15",
-				"Additional Rune Known|Guerrero|PHB-ES|Caballero Rúnico|TCE-ES|15",
-				"Runic Juggernaut|Guerrero|PHB-ES|Caballero Rúnico|TCE-ES|18"
+				"Caballero Rúnico|Guerrero|PHB-ES|Caballero Rúnico|TCE-ES|3",
+				"Escudo Rúnico|Guerrero|PHB-ES|Caballero Rúnico|TCE-ES|7",
+				"Runa conocida adicional|Guerrero|PHB-ES|Caballero Rúnico|TCE-ES|7",
+				"Estatura Imponente|Guerrero|PHB-ES|Caballero Rúnico|TCE-ES|10",
+				"Runa conocida adicional|Guerrero|PHB-ES|Caballero Rúnico|TCE-ES|10",
+				"Maestro Rúnico|Guerrero|PHB-ES|Caballero Rúnico|TCE-ES|15",
+				"Runa conocida adicional|Guerrero|PHB-ES|Caballero Rúnico|TCE-ES|15",
+				"Coloso Rúnico|Guerrero|PHB-ES|Caballero Rúnico|TCE-ES|18"
 			]
 		}
 	],
 	"subclassFeature": [
 		{
-			"name": "Battle Master",
+			"name": "Maestro del Combate",
 			"source": "PHB-ES",
-			"page": 73,
+			"page": 85,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Maestro del Combate",
 			"subclassSource": "PHB-ES",
 			"level": 3,
 			"entries": [
-				"Those who emulate the archetypal Battle Master employ martial techniques passed down through generations. To a Battle Master, combat is an academic field, sometimes including subjects beyond battle such as weaponsmithing and calligraphy. Not every fighter absorbs the lessons of history, theory, and artistry that are reflected in the Battle Master archetype, but those who do are well-rounded fighters of great skill and knowledge.",
+				"Los que eligen imitar al Maestro del Combate arquetípico recurren a técnicas marciales que han sido transmitidas durante generaciones. El Maestro del Combate entiende la lucha como un campo de estudio, en el que algunos también incluyen otras disciplinas como la forja de armas o la caligrafía. No todos los combatientes interiorizan las lecciones que imparte la historia, la teoría y el arte que se ven reflejadas en el arquetipo Maestro del Combate, pero aquellos que lo hacen se convierten en luchadores equilibrados, de gran habilidad y poseedores de amplios conocimientos.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Student of War|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|3"
+					"subclassFeature": "Estudioso de la Guerra|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Combat Superiority|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|3"
+					"subclassFeature": "Supremacía en Combate|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Maneuvers|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|3"
+					"subclassFeature": "Maniobras|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Maneuver Options|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|3|TCE-ES"
+					"subclassFeature": "Opciones de Maniobras|Guerrero|PHB-ES|Maestro del Combate|PHB-ES|3|TCE-ES"
 				}
 			]
 		},
 		{
-			"name": "Combat Superiority",
+			"name": "Supremacía en Combate",
 			"source": "PHB-ES",
-			"page": 73,
+			"page": 85,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Maestro del Combate",
@@ -1415,16 +1415,16 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"When you choose this archetype at 3rd level, you learn maneuvers that are fueled by special dice called superiority dice.",
+				"A nivel 3, cuando escoges este arquetipo, aprendes una serie de maniobras que se alimentan de dados especiales llamados dados de supremacía.",
 				{
 					"type": "entries",
 					"entries": [
 						{
 							"type": "entries",
-							"name": "Maneuvers",
+							"name": "Maniobras",
 							"entries": [
-								"You learn three maneuvers of your choice, which are listed under \"Maneuvers\" below. Many maneuvers enhance an attack in some way. You can use only one maneuver per attack.",
-								"You learn two additional maneuvers of your choice at 7th, 10th, and 15th level. Each time you learn new maneuvers, you can also replace one maneuver you know with a different one."
+								"Aprendes tres maniobras de tu elección. Puedes elegir entre las que se explican más adelante, en el apartado \"Maniobras\". Una gran parte de las maniobras mejoran un ataque de alguna forma. Solo puedes usar una maniobra por ataque.",
+								"Adquieres dos nuevas maniobras más a tu elección cuando alcanzas los niveles 7, 10 y 15. Cada vez que aprendas una maniobra, también podrás reemplazar una de las que ya conozcas por otra distinta."
 							]
 						}
 					]
@@ -1434,10 +1434,10 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "Superiority Dice",
+							"name": "Dados de supremacía",
 							"entries": [
-								"You have four superiority dice, which are {@dice d8}s. A superiority die is expended when you use it. You regain all of your expended superiority dice when you finish a short or long rest.",
-								"You gain another superiority die at 7th level and one more at 15th level."
+								"Posees cuatro dados de supremacía, todos ellos {@dice d8}. Cada vez que empleas uno de ellos, se gasta. Recuperas todos los dados de supremacía tras realizar un descanso corto o largo.",
+								"Además, recibes un dado adicional de supremacía a nivel 7 y otro más a nivel 15."
 							]
 						}
 					]
@@ -1447,12 +1447,12 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "Saving Throws",
+							"name": "Tiradas de salvación",
 							"entries": [
-								"Some of your maneuvers require your target to make a saving throw to resist the maneuver's effects. The saving throw DC is calculated as follows:",
+								"Algunas de tus maniobras exigen a tu objetivo hacer una tirada de salvación para resistir sus efectos. La CD para estas tiradas de salvación se calcula de la siguiente forma:",
 								{
 									"type": "abilityDc",
-									"name": "Maneuver",
+									"name": "Maniobras",
 									"attributes": [
 										"str",
 										"dex"
@@ -1465,9 +1465,9 @@
 			]
 		},
 		{
-			"name": "Maneuver Options",
+			"name": "Opciones de Maniobras",
 			"source": "TCE-ES",
-			"page": 41,
+			"page": 53,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Maestro del Combate",
@@ -1476,8 +1476,8 @@
 			"isClassFeatureVariant": true,
 			"header": 1,
 			"entries": [
-				"{@i 3rd-level fighter {@variantrule optional class features|tce|optional feature}}",
-				"If you have access to maneuvers, the following maneuvers are added to the list of options available to you. Maneuvers are available to Battle Masters but also to characters who have a special feature like the {@optfeature Superior Technique|TCE} fighting style or the {@feat Martial Adept} feat.",
+				"{@i {@variantrule Rasgos de clase opcionales|TCE-ES|Rasgo opcional} de guerrero de nivel 3}",
+				"Si puedes usar maniobras, las siguientes se agregan a la lista de opciones que tienes disponibles. Las maniobras están disponibles para los Maestros del Combate, pero también para los personajes que tengan un rasgo especial, como el estilo de combate {@optfeature Técnica Superior|TCE-ES} o la dote {@feat Versado en las Armas|PHB-ES}.",
 				{
 					"type": "entries",
 					"entries": [
@@ -1486,31 +1486,31 @@
 							"entries": [
 								{
 									"type": "refOptionalfeature",
-									"optionalfeature": "Ambush|TCE-ES"
+									"optionalfeature": "Ataque y Agarre|TCE-ES"
 								},
 								{
 									"type": "refOptionalfeature",
-									"optionalfeature": "Bait and Switch|TCE-ES"
+									"optionalfeature": "Cambio de Posición Ventajoso|TCE-ES"
 								},
 								{
 									"type": "refOptionalfeature",
-									"optionalfeature": "Brace|TCE-ES"
+									"optionalfeature": "Emboscada|TCE-ES"
 								},
 								{
 									"type": "refOptionalfeature",
-									"optionalfeature": "Commanding Presence|TCE-ES"
+									"optionalfeature": "Evaluación Táctica|TCE-ES"
 								},
 								{
 									"type": "refOptionalfeature",
-									"optionalfeature": "Grappling Strike|TCE-ES"
+									"optionalfeature": "Lanzamiento Raudo|TCE-ES"
 								},
 								{
 									"type": "refOptionalfeature",
-									"optionalfeature": "Quick Toss|TCE-ES"
+									"optionalfeature": "Presencia Imponente|TCE-ES"
 								},
 								{
 									"type": "refOptionalfeature",
-									"optionalfeature": "Tactical Assessment|TCE-ES"
+									"optionalfeature": "Presteza|TCE-ES"
 								}
 							]
 						}
@@ -1519,9 +1519,9 @@
 			]
 		},
 		{
-			"name": "Maneuvers",
+			"name": "Maniobras",
 			"source": "PHB-ES",
-			"page": 73,
+			"page": 86,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Maestro del Combate",
@@ -1529,83 +1529,83 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"The maneuvers are presented in alphabetical order.",
+				"Las maniobras se presentan en orden alfabético.",
 				{
 					"type": "options",
 					"count": 3,
 					"entries": [
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Commander's Strike"
+							"optionalfeature": "Orden de Ataque|PHB-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Disarming Attack"
+							"optionalfeature": "Ataque y Desarme|PHB-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Distracting Strike"
+							"optionalfeature": "Ataque y Distracción|PHB-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Evasive Footwork"
+							"optionalfeature": "Juego de Pies Evasivo|PHB-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Feinting Attack"
+							"optionalfeature": "Finta|PHB-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Goading Attack"
+							"optionalfeature": "Ataque Provocador|PHB-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Lunging Attack"
+							"optionalfeature": "Arremetida|PHB-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Maneuvering Attack"
+							"optionalfeature": "Ataque y Maniobra|PHB-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Menacing Attack"
+							"optionalfeature": "Ataque Amenazador|PHB-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Parry"
+							"optionalfeature": "Parada|PHB-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Precision Attack"
+							"optionalfeature": "Ataque Preciso|PHB-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Pushing Attack"
+							"optionalfeature": "Ataque y Empujón|PHB-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Rally"
+							"optionalfeature": "Reagrupar|PHB-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Riposte"
+							"optionalfeature": "Contraataque|PHB-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Sweeping Attack"
+							"optionalfeature": "Ataque de Barrido|PHB-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Trip Attack"
+							"optionalfeature": "Ataque y Derribo|PHB-ES"
 						}
 					]
 				}
 			]
 		},
 		{
-			"name": "Student of War",
+			"name": "Estudioso de la Guerra",
 			"source": "PHB-ES",
-			"page": 73,
+			"page": 85,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Maestro del Combate",
@@ -1613,13 +1613,13 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"At 3rd level, you gain proficiency with one type of {@filter artisan's tools|items|source=phb|miscellaneous=mundane|type=artisan's tools} of your choice."
+				"A nivel 3 ganas competencia en un tipo de {@filter herramientas de artesano|items|source=PHB-ES|miscellaneous=mundane|type=Artisan's tools} de tu elección."
 			]
 		},
 		{
-			"name": "Additional Maneuvers",
+			"name": "Maniobras Adicionales",
 			"source": "PHB-ES",
-			"page": 73,
+			"page": 85,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Maestro del Combate",
@@ -1627,13 +1627,13 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"At 7th level, you learn two additional maneuvers of your choice."
+				"A nivel 7, adquieres dos nuevas maniobras más a tu elección."
 			]
 		},
 		{
-			"name": "Additional Superiority Die",
+			"name": "Dado de Supremacía Adicional",
 			"source": "PHB-ES",
-			"page": 73,
+			"page": 85,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Maestro del Combate",
@@ -1641,13 +1641,13 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"You gain another superiority die at 7th level."
+				"Recibes un dado adicional de supremacía a nivel 7."
 			]
 		},
 		{
-			"name": "Know Your Enemy",
+			"name": "Conoce a tu Enemigo",
 			"source": "PHB-ES",
-			"page": 73,
+			"page": 85,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Maestro del Combate",
@@ -1655,25 +1655,25 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"If you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own. The DM tells you if the creature is your equal, superior, or inferior in regard to two of the following characteristics of your choice:",
+				"A partir de nivel 7, si inviertes al menos 1 minuto en observar o interactuar con otra criatura fuera del combate, podrás evaluar hasta cierto punto sus capacidades en comparación con las tuyas. El DM te dirá si el objetivo es tu igual, tu superior o tu inferior en lo que a dos de las siguientes características (a tu elección) respecta:",
 				{
 					"type": "list",
 					"items": [
-						"Strength score",
-						"Dexterity score",
-						"Constitution score",
-						"Armor Class",
-						"Current hit points",
-						"Total class levels (if any)",
-						"Fighter class levels (if any)"
+						"Puntuación de Fuerza",
+						"Puntuación de Destreza",
+						"Puntuación de Constitución",
+						"Clase de Armadura",
+						"Puntos de golpe actuales",
+						"Niveles de clase totales (si posee alguno)",
+						"Niveles de clase de guerrero (si posee alguno)"
 					]
 				}
 			]
 		},
 		{
-			"name": "Additional Maneuvers",
+			"name": "Maniobras Adicionales",
 			"source": "PHB-ES",
-			"page": 73,
+			"page": 85,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Maestro del Combate",
@@ -1681,13 +1681,13 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"At 10th level, you learn two additional maneuvers of your choice."
+				"A nivel 10, adquieres dos nuevas maniobras más a tu elección."
 			]
 		},
 		{
-			"name": "Improved Combat Superiority (d10)",
+			"name": "Supremacía en Combate Mejorada (d10)",
 			"source": "PHB-ES",
-			"page": 73,
+			"page": 86,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Maestro del Combate",
@@ -1695,13 +1695,13 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"At 10th level, your superiority dice turn into {@dice d10}s."
+				"A nivel 10 tus dados de supremacía se convierten en {@dice d10}."
 			]
 		},
 		{
-			"name": "Additional Maneuvers",
+			"name": "Maniobras Adicionales",
 			"source": "PHB-ES",
-			"page": 73,
+			"page": 85,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Maestro del Combate",
@@ -1709,13 +1709,13 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"At 15th level, you learn two additional maneuvers of your choice."
+				"A nivel 15, adquieres dos nuevas maniobras más a tu elección."
 			]
 		},
 		{
-			"name": "Additional Superiority Die",
+			"name": "Dado de Supremacía Adicional",
 			"source": "PHB-ES",
-			"page": 73,
+			"page": 85,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Maestro del Combate",
@@ -1723,13 +1723,13 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"You gain another superiority die at 15th level."
+				"Recibes un dado adicional de supremacía a nivel 15."
 			]
 		},
 		{
-			"name": "Relentless",
+			"name": "Incansable",
 			"source": "PHB-ES",
-			"page": 73,
+			"page": 86,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Maestro del Combate",
@@ -1737,13 +1737,13 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"Starting at 15th level, when you roll initiative and have no superiority dice remaining, you regain 1 superiority die."
+				"A partir de nivel 15, si cuando tiras iniciativa no te quedan dados de supremacía, recuperas uno de ellos."
 			]
 		},
 		{
-			"name": "Improved Combat Superiority (d12)",
+			"name": "Supremacía en Combate Mejorada (d12)",
 			"source": "PHB-ES",
-			"page": 73,
+			"page": 86,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Maestro del Combate",
@@ -1751,13 +1751,13 @@
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"At 18th level, your superiority dice turn into {@dice d12}s."
+				"A nivel 18 tus dados de supremacía se convierten en {@dice d12}."
 			]
 		},
 		{
-			"name": "Champion",
+			"name": "Campeón",
 			"source": "PHB-ES",
-			"page": 72,
+			"page": 84,
 			"srd": true,
 			"basicRules": true,
 			"className": "Guerrero",
@@ -1766,17 +1766,17 @@
 			"subclassSource": "PHB-ES",
 			"level": 3,
 			"entries": [
-				"The archetypal Champion focuses on the development of raw physical power honed to deadly perfection. Those who model themselves on this archetype combine rigorous training with physical excellence to deal devastating blows.",
+				"El Campeón arquetípico se centra en desarrollar su poderío físico en bruto hasta alcanzar una perfección mortal. Aquellos que deciden emular este arquetipo combinan un riguroso entrenamiento con un estado físico excelente, que les permite dar golpes devastadores.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Improved Critical|Guerrero|PHB-ES|Campeón|PHB-ES|3"
+					"subclassFeature": "Crítico Mejorado|Guerrero|PHB-ES|Campeón|PHB-ES|3"
 				}
 			]
 		},
 		{
-			"name": "Improved Critical",
+			"name": "Crítico Mejorado",
 			"source": "PHB-ES",
-			"page": 72,
+			"page": 84,
 			"srd": true,
 			"basicRules": true,
 			"className": "Guerrero",
@@ -1786,13 +1786,13 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Beginning when you choose this archetype at 3rd level, your weapon attacks score a critical hit on a roll of 19 or 20."
+				"A partir del momento en el que eliges este arquetipo, a nivel 3, tus ataques con arma causarán críticos con un resultado de 19 o 20 en la tirada."
 			]
 		},
 		{
-			"name": "Remarkable Athlete",
+			"name": "Atleta Sobresaliente",
 			"source": "PHB-ES",
-			"page": 72,
+			"page": 84,
 			"srd": true,
 			"basicRules": true,
 			"className": "Guerrero",
@@ -1802,14 +1802,14 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"Starting at 7th level, you can add half your proficiency bonus (round up) to any Strength, Dexterity, or Constitution check you make that doesn't already use your proficiency bonus.",
-				"In addition, when you make a running long jump, the distance you can cover increases by a number of feet equal to your Strength modifier."
+				"A partir de nivel 7, puedes añadir la mitad de tu bonificador por competencia (redondeado hacia abajo) a cualquier prueba de Fuerza, Destreza o Constitución que hagas que no se beneficie ya de tu bonificador por competencia.",
+				"Además. cuando realices un salto de longitud habiendo tomado carrerilla, aumentarás la distancia que saltas en tantos pies como tu modificador por Fuerza."
 			]
 		},
 		{
-			"name": "Additional Fighting Style",
+			"name": "Estilo de Combate Adicional",
 			"source": "PHB-ES",
-			"page": 72,
+			"page": 84,
 			"srd": true,
 			"basicRules": true,
 			"className": "Guerrero",
@@ -1819,13 +1819,13 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"At 10th level, you can choose a second option from the Fighting Style class feature."
+				"A nivel 10 puedes escoger una segunda opción del rasgo Estilo de Combate."
 			]
 		},
 		{
-			"name": "Superior Critical",
+			"name": "Crítico Superior",
 			"source": "PHB-ES",
-			"page": 72,
+			"page": 84,
 			"srd": true,
 			"basicRules": true,
 			"className": "Guerrero",
@@ -1835,13 +1835,13 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"Starting at 15th level, your weapon attacks score a critical hit on a roll of 18-20."
+				"A partir de nivel 15, tus ataques con arma causarán críticos con un resultado de 18 a 20 en la tirada."
 			]
 		},
 		{
-			"name": "Survivor",
+			"name": "Superviviente",
 			"source": "PHB-ES",
-			"page": 72,
+			"page": 85,
 			"srd": true,
 			"basicRules": true,
 			"className": "Guerrero",
@@ -1851,34 +1851,34 @@
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"At 18th level, you attain the pinnacle of resilience in battle. At the start of each of your turns, you regain hit points equal to 5 + your Constitution modifier if you have no more than half of your hit points left. You don't gain this benefit if you have 0 hit points."
+				"A nivel 18 alcanzas el pináculo de la resistencia en batalla. Al comienzo de cada uno de tus turnos, recuperas 5 + tu modificador por Constitución puntos de golpe si no te quedan más de la mitad de tus puntos de golpe máximos. Con todo, no puedes disfrutar de este beneficio si te quedan 0 puntos de golpe."
 			]
 		},
 		{
-			"name": "Eldritch Knight",
+			"name": "Caballero Arcano",
 			"source": "PHB-ES",
-			"page": 74,
+			"page": 86,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Caballero Arcano",
 			"subclassSource": "PHB-ES",
 			"level": 3,
 			"entries": [
-				"The archetypal Eldritch Knight combines the martial mastery common to all fighters with a careful study of magic. Eldritch Knights use magical techniques similar to those practiced by wizards. They focus their study on two of the eight schools of magic—abjuration and evocation. Abjuration spells grant an Eldritch Knight additional protection in battle, and evocation spells deal damage to many foes at once, extending the fighter's reach in combat. These knights learn a comparatively small number of spells, committing them to memory instead of keeping them in a spellbook.",
+				"El Caballero Arcano arquetípico combina la maestría marcial típica de los guerreros con un cuidadoso estudio de la magia. Los Caballeros Arcanos emplean técnicas mágicas similares a las utilizadas por los magos. Centran sus estudios en dos de las ocho escuelas mágicas: abjuración y evocación. Los conjuros de la primera dan al Caballero Arcano una protección adicional durante el combate, mientras que los de la segunda le permiten hacer daño a muchos enemigos al mismo tiempo, ampliando así el repertorio del guerrero. Estos caballeros aprenden una cantidad relativamente pequeña de conjuros, memorizándolos en lugar de apuntándolos en un libro de conjuros.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Spellcasting|Guerrero|PHB-ES|Caballero Arcano|PHB-ES|3"
+					"subclassFeature": "Lanzamiento de Conjuros|Guerrero|PHB-ES|Caballero Arcano|PHB-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Weapon Bond|Guerrero|PHB-ES|Caballero Arcano|PHB-ES|3"
+					"subclassFeature": "Vínculo con Arma|Guerrero|PHB-ES|Caballero Arcano|PHB-ES|3"
 				}
 			]
 		},
 		{
-			"name": "Spellcasting",
+			"name": "Lanzamiento de Conjuros",
 			"source": "PHB-ES",
-			"page": 74,
+			"page": 86,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Caballero Arcano",
@@ -1886,12 +1886,12 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"When you reach 3rd level, you augment your martial prowess with the ability to cast spells. See {@book chapter 10|PHB|10} for the general rules of spellcasting and {@book chapter 11|PHB|11} for the {@filter wizard spell list|spells|class=wizard}.",
+				"Cuando llegas a nivel 3, puedes complementar tu habilidad marcial con la capacidad de lanzar conjuros. El  {@book capítulo 10|PHB-ES|10} contiene las reglas de lanzamiento de conjuros y el {@book 11|PHB-ES|11} la lista de {@filter conjuros de mago|spells|class=mago (PHB-ES)}.",
 				{
 					"type": "entries",
-					"name": "Cantrips",
+					"name": "Trucos",
 					"entries": [
-						"You learn two cantrips of your choice from the {@filter wizard spell list|spells|class=wizard}. You learn an additional wizard cantrip of your choice at 10th level."
+						"Aprendes dos trucos de tu elección escogidos de entre los de la {@filter lista de conjuros de mago|spells|class=mago (PHB-ES)}. Adquieres otro nuevo truco de mago tu elección cuando alcanzas el nivel 10."
 					]
 				},
 				{
@@ -1899,10 +1899,10 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "Spell Slots",
+							"name": "Espacios de conjuro",
 							"entries": [
-								"The Eldritch Knight Spellcasting table shows how many spell slots you have to cast your {@filter wizard spells|spells|class=wizard} of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
-								"For example, if you know the 1st-level spell {@spell shield} and have a 1st-level and a 2nd-level spell slot available, you can cast {@spell shield} using either slot."
+								"La tabla \"lanzamiento de conjuros del Caballero Arcano\" muestra de cuántos espacios de conjuro de Caballero Arcano dispones para lanzar {@filter conjuros|spells|class=mago (PHB-ES)} de nivel 1 y superiores. Para lanzar uno de estos conjuros deberás invertir un espacio de al menos el nivel del conjuro. Recuperas todos los espacios utilizados tras finalizar un descanso largo.",
+								"Si, por ejemplo, conoces el conjuro de nivel 1 {@spell Escudo|PHB-ES|escudo} y posees un espacio de conjuro de nivel 1 y otro de nivel 2, podrías lanzar {@spell Escudo|PHB-ES|escudo} empleando cualquiera de los dos espacios."
 							]
 						}
 					]
@@ -1912,12 +1912,12 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "Spells Known of 1st-Level and Higher",
+							"name": "Conjuros conocidos de nivel 1 y superiores",
 							"entries": [
-								"You know three 1st-level wizard spells of your choice, two of which you must choose from the abjuration and evocation spells on the wizard spell list.",
-								"The Spells Known column of the Eldritch Knight Spellcasting table shows when you learn more wizard spells of 1st level or higher. Each of these spells must be an abjuration or evocation spell of your choice, and must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.",
-								"The spells you learn at 8th, 14th, and 20th level can come from any school of magic.",
-								"Whenever you gain a level in this class, you can replace one of the wizard spells you know with another spell of your choice from the wizard spell list. The new spell must be of a level for which you have spell slots, and it must be an abjuration or evocation spell, unless you're replacing the spell you gained at 3rd, 8th, 14th, or 20th level from any school of magic."
+								"Conoces tres conjuros de mago de nivel 1 a tu elección, dos de los cuales deben ser de abjuración o evocación. Todos ellos deben pertenecer a la lista de conjuros de mago.",
+								"La columna \"conjuros conocidos\" de la tabla \"lanzamiento de conjuros del Caballero Arcano\" te indica cuándo podrás aprender más conjuros de mago de nivel 1 o superiores. Tú eliges cuales, pero todos estos conjuros deben ser de abjuración o evocación y de un nivel para el que tengas espacios de conjuro. Así, cuando subes a nivel 7 en esta clase puedes aprender un conjuro nuevo, que puede ser de nivel 1 o 2.",
+								"Los conjuros que aprendes al alcanzar los niveles 8, 14 y 20 pueden ser de cualquier escuela mágica.",
+								"Además, cada vez que subas un nivel de esta clase podrás elegir uno de los conjuros de mago que ya conoces y reemplazarlo por otro de los que aparecen en la lista de conjuros de mago. El nuevo conjuro deberá ser de un nivel para el que tengas espacios de conjuro. Además, ha de ser de abjuración o evocación, salvo si estás reemplazando los conjuros que obtuviste a los niveles 3, 8, 14 o 20 y que podían pertenecer a cualquier escuela de magia."
 							]
 						}
 					]
@@ -1927,19 +1927,19 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "Spellcasting Ability",
+							"name": "Aptitud mágica",
 							"entries": [
-								"Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.",
+								"La Inteligencia es tu aptitud mágica en lo que a conjuros de mago respecta, ya que aprendes tus conjuros mediante el estudio y la memorización. Así, utilizarás tu Inteligencia siempre que un conjuro de mago haga referencia a tu aptitud mágica. Además, también usarás tu modificador por Inteligencia para determinar la CD de las tiradas de salvación y las tiradas de ataque de los conjuros de mago que lances.",
 								{
 									"type": "abilityDc",
-									"name": "Spell",
+									"name": "Conjuros",
 									"attributes": [
 										"int"
 									]
 								},
 								{
 									"type": "abilityAttackMod",
-									"name": "Spell",
+									"name": "Conjuros",
 									"attributes": [
 										"int"
 									]
@@ -1951,9 +1951,9 @@
 			]
 		},
 		{
-			"name": "Weapon Bond",
+			"name": "Vínculo con Arma",
 			"source": "PHB-ES",
-			"page": 74,
+			"page": 87,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Caballero Arcano",
@@ -1961,15 +1961,15 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"At 3rd level, you learn a ritual that creates a magical bond between yourself and one weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. The weapon must be within your reach throughout the ritual, at the conclusion of which you touch the weapon and forge the bond.",
-				"Once you have bonded a weapon to yourself, you can't be disarmed of that weapon unless you are {@condition incapacitated}. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand.",
-				"You can have up to two bonded weapons, but can summon only one at a time with your bonus action. If you attempt to bond with a third weapon, you must break the bond with one of the other two."
+				"A nivel 3 aprendes un ritual que crea un vínculo mágico entre una de tus armas y tú. Para ejecutar este ritual necesitas 1 hora, que puede ser la de un descanso corto. El arma debe estar dentro de tu alcance durante todo el proceso, y al final de este la tocarás, estableciendo así el vínculo.",
+				"Una vez te hayas vinculado con un arma, la única forma de desarmarte será dejándote {@condition incapacitado|PHB-ES}. Además, si ambos os encontráis en el mismo plano de existencia, podrás invocar a tu arma empleando una acción adicional durante tu turno; el arma se teletransportará instantáneamente a tu mano.",
+				"Puedes tener vinculadas hasta dos armas, pero solo puedes invocar una de ellas cuando usas tu acción adicional. Si intentas vincularte con una tercera, deberás antes romper uno de los vínculos existentes con una de las otras dos."
 			]
 		},
 		{
-			"name": "War Magic",
+			"name": "Magia de Guerra",
 			"source": "PHB-ES",
-			"page": 74,
+			"page": 87,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Caballero Arcano",
@@ -1977,13 +1977,13 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"Beginning at 7th level, when you use your action to cast a cantrip, you can make one weapon attack as a bonus action."
+				"A partir de nivel 7, cuando utilizas tu acción para lanzar un truco, puedes emplear tu acción adicional para hacer un ataque con arma."
 			]
 		},
 		{
-			"name": "Eldritch Strike",
+			"name": "Golpe Sobrenatural",
 			"source": "PHB-ES",
-			"page": 74,
+			"page": 87,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Caballero Arcano",
@@ -1991,13 +1991,13 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"At 10th level, you learn how to make your weapon strikes undercut a creature's resistance to your spells. When you hit a creature with a weapon attack, that creature has disadvantage on the next saving throw it makes against a spell you cast before the end of your next turn."
+				"A nivel 10 aprendes a hacer que los golpes de tus armas debiliten la resistencia del objetivo a tus conjuros. Cuando impactas a una criatura con un ataque con arma, dicha criatura tendrá desventaja en la siguiente tirada de salvación que realice por causa de un conjuro que lances antes del final de tu próximo turno."
 			]
 		},
 		{
-			"name": "Arcane Charge",
+			"name": "Carga Arcana",
 			"source": "PHB-ES",
-			"page": 74,
+			"page": 87,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Caballero Arcano",
@@ -2005,13 +2005,13 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"At 15th level, you gain the ability to teleport up to 30 feet to an unoccupied space you can see when you use your Action Surge. You can teleport before or after the additional action."
+				"A nivel 15 obtienes la capacidad de, cuando usas tu Acción Súbita, teletransportarte hasta 30 pies a un espacio desocupado que puedas ver. Puedes teletransportarte antes o después de hacer la acción adicional."
 			]
 		},
 		{
-			"name": "Improved War Magic",
+			"name": "Magia de Guerra Mejorada",
 			"source": "PHB-ES",
-			"page": 74,
+			"page": 87,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Caballero Arcano",
@@ -2019,36 +2019,36 @@
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"Starting at 18th level, when you use your action to cast a spell, you can make one weapon attack as a bonus action."
+				"A partir de nivel 18, cuando utilizas tu acción para lanzar un conjuro, puedes emplear tu acción adicional para hacer un ataque con arma."
 			]
 		},
 		{
-			"name": "Purple Dragon Knight (Banneret)",
+			"name": "Caballero del Dragón Púrpura (Mesnadero)",
 			"source": "SCAG-ES",
-			"page": 128,
+			"page": 131,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Caballero del Dragón Púrpura (Mesnadero)",
 			"subclassSource": "SCAG-ES",
 			"level": 3,
 			"entries": [
-				"Purple Dragon Knights are warriors who hail from the kingdom of Cormyr. Pledged to protect the crown, they take the fight against evil beyond the kingdom's borders. They are tasked with wandering the land as knights errant, relying on their judgment, bravery, and fidelity to guide them in defeating evildoers.",
-				"A Purple Dragon Knight inspires greatness in others by committing brave deeds in battle. The mere presence of a knight in a hamlet is enough to cause some orcs and bandits to seek easier prey. A lone knight is a skilled warrior, but a knight leading a band of allies can transform even the most poorly equipped militia into a ferocious war band.",
-				"A knight prefers to lead through deeds, not words. As a knight spearheads an attack, the knight's actions can awaken reserves of courage and conviction in allies that they never suspected they had.",
+				"Los Caballeros del Dragón Púrpura son guerreros que provienen del reino de Cormyr. Juran proteger la corona y luchan contra el mal más allá de las fronteras del reino. Se ocupan de recorrer el mundo como caballeros errantes y se basan en su juicio, valentía y lealtad, que conforman un código caballeresco que les guía para derrotar a los maleantes.",
+				"Un Caballero del Dragón Púrpura inspira grandeza a otros emprendiendo hazañas valientes en combate. Su mera presencia en una aldea basta para que algunos orcos y bandidos busquen presas más fáciles. Un caballero solitario es un guerrero habilidoso, pero un caballero que lidere a un grupo de aliados transforma incluso a la milicia peor equipada en una partida de guerra feroz.",
+				"Un Caballero del Dragón Púrpura prefiere liderar con hechos y no con palabras. Cuando encabeza un ataque, sus acciones pueden despertar reservas de valor y convicción insospechadas en sus aliados.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Restriction: Knighthood|Guerrero|PHB-ES|Caballero del Dragón Púrpura (Mesnadero)|SCAG-ES|3"
+					"subclassFeature": "Restricción: Caballería|Guerrero|PHB-ES|Caballero del Dragón Púrpura (Mesnadero)|SCAG-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Rallying Cry|Guerrero|PHB-ES|Caballero del Dragón Púrpura (Mesnadero)|SCAG-ES|3"
+					"subclassFeature": "Llamada a las Armas|Guerrero|PHB-ES|Caballero del Dragón Púrpura (Mesnadero)|SCAG-ES|3"
 				}
 			]
 		},
 		{
-			"name": "Rallying Cry",
+			"name": "Llamada a las Armas",
 			"source": "SCAG-ES",
-			"page": 128,
+			"page": 132,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Caballero del Dragón Púrpura (Mesnadero)",
@@ -2056,14 +2056,14 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"When you choose this archetype at 3rd level, you learn how to inspire your allies to fight on past their injuries.",
-				"When you use your Second Wind feature, you can choose up to three creatures within 60 feet of you that are allied with you. Each one regains hit points equal to your fighter level, provided that the creature can see or hear you."
+				"A partir del momento en el que eliges este arquetipo, a nivel 3, aprendes a inspirar a tus aliados para que luchen aunque estén heridos.",
+				"Al usar tu rasgo Tomar Aliento, puedes elegir hasta tres criaturas aliadas que se encuentren a 60 pies o menos de ti. Todas recuperan tantos puntos de golpe como tu nivel de guerrero, siempre puedan verte u oírte."
 			]
 		},
 		{
-			"name": "Restriction: Knighthood",
+			"name": "Restricción: Caballería",
 			"source": "SCAG-ES",
-			"page": 128,
+			"page": 132,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Caballero del Dragón Púrpura (Mesnadero)",
@@ -2071,14 +2071,14 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Purple Dragon Knights are tied to a specific order of Cormyrean knighthood.",
-				"Banneret serves as the generic name for this archetype if you use it in other campaign settings or to model warlords other than the Purple Dragon Knights."
+				"Los caballeros del Dragón Púrpura están ligados a una orden específica de caballeros de Cormyr.",
+				"Puedes usar Mesnadero como nombre genérico para este arquetipo si lo utilizas en otros entornos de campaña o para crear otros señores de la guerra que no sean los Caballeros del Dragón Purpura."
 			]
 		},
 		{
-			"name": "Royal Envoy",
+			"name": "Enviado Real",
 			"source": "SCAG-ES",
-			"page": 128,
+			"page": 132,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Caballero del Dragón Púrpura (Mesnadero)",
@@ -2086,15 +2086,15 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"A Purple Dragon Knight serves as an envoy of the Cormyrean crown. Knights of high standing are expected to conduct themselves with grace.",
-				"At 7th level, you gain proficiency in the {@skill Persuasion} skill. If you are already proficient in it, you gain proficiency in one of the following skills of your choice: {@skill Animal Handling}, {@skill Insight}, {@skill Intimidation}, or {@skill Performance}.",
-				"Your proficiency bonus is doubled for any ability check you make that uses {@skill Persuasion}. You receive this benefit regardless of the skill proficiency you gain from this feature."
+				"Un Caballero del Dragón Púrpura ejerce de enviado de la corona de Cormyr. Se espera de los caballeros de alto rango un comportamiento elegante.",
+				"A nivel 7, obtienes competencia en la habilidad {@skill Persuasión|PHB-ES}. Si ya tienes competencia en ella, adquieres competencia en la habilidad que prefieras entre las siguientes: {@skill Interpretación|PHB-ES}, {@skill Intimidación|PHB-ES}, {@skill Perspicacia|PHB-ES} o {@skill Trato con Animales|PHB-ES}.",
+				"Tu bonificador por competencia se duplica para cualquier prueba de característica que hagas utilizando {@skill Persuasión|PHB-ES}. Recibes este beneficio sin tener en cuenta la competencia en habilidad que consigas con este rasgo."
 			]
 		},
 		{
-			"name": "Inspiring Surge",
+			"name": "Inspiración Súbita",
 			"source": "SCAG-ES",
-			"page": 128,
+			"page": 132,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Caballero del Dragón Púrpura (Mesnadero)",
@@ -2102,14 +2102,14 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"Starting at 10th level, when you use your Action Surge feature, you can choose one creature within 60 feet of you that is allied with you. That creature can make one melee or ranged weapon attack with its reaction, provided that it can see or hear you.",
-				"Starting at 18th level, you can choose two allies within 60 feet of you, rather than one."
+				"A partir del nivel 10, cuando usas el rasgo Acción Súbita, puedes escoger a una criatura que se encuentre a 60 pies o menos de ti y esté aliada contigo. Esta podrá hacer un ataque con arma cuerpo a cuerpo o arma a distancia utilizando su reacción, siempre que pueda verte u oírte.",
+				"A partir del nivel 18, puedes elegir a dos aliados situados a 60 pies o menos de ti en vez de solo uno."
 			]
 		},
 		{
-			"name": "Bulwark",
+			"name": "Bastión",
 			"source": "SCAG-ES",
-			"page": 128,
+			"page": 132,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Caballero del Dragón Púrpura (Mesnadero)",
@@ -2117,13 +2117,13 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"Beginning at 15th level, you can extend the benefit of your Indomitable feature to an ally. When you decide to use Indomitable to reroll an Intelligence, a Wisdom, or a Charisma saving throw and you aren't {@condition incapacitated}, you can choose one ally within 60 feet of you that also failed its saving throw against the same effect. If that creature can see or hear you, it can reroll its saving throw and must use the new roll."
+				"A partir del nivel 15, puedes trasladar a un aliado los beneficios de tu rasgo Indómito. Cuando decidas emplear Indómito para volver a hacer una tirada de salvación de Inteligencia, Sabiduría o Carisma, siempre que no estés {@condition incapacitado|PHB-ES}, puedes escoger a un aliado que se encuentre a 60 pies o menos de ti y que tampoco haya superado su tirada de salvación contra el mismo efecto. Si la criatura puede verte u oírte, puede volver a hacer su tirada de salvación y debe quedarse con el nuevo resultado."
 			]
 		},
 		{
-			"name": "Inspiring Surge",
+			"name": "Inspiración Súbita",
 			"source": "SCAG-ES",
-			"page": 128,
+			"page": 132,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Caballero del Dragón Púrpura (Mesnadero)",
@@ -2131,31 +2131,31 @@
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"Starting at 18th level, you can choose two allies within 60 feet of you, rather than one."
+				"A partir del nivel 18, puedes elegir a dos aliados situados a 60 pies o menos de ti en vez de solo uno."
 			]
 		},
 		{
-			"name": "Psi Warrior",
+			"name": "Guerrero Psiónico",
 			"source": "TCE-ES",
-			"page": 42,
+			"page": 55,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Guerrero Psiónico",
 			"subclassSource": "TCE-ES",
 			"level": 3,
 			"entries": [
-				"Awake to the psionic power within, a Psi Warrior is a fighter who augments their physical might with psi-infused weapon strikes, telekinetic lashes, and barriers of mental force. Many githyanki train to become such warriors, as do some of the most disciplined high elves. In the world of Eberron, many young kalashtar dream of becoming Psi Warriors.",
-				"As a Psi Warrior, you might have honed your psionic abilities through solo discipline, unlocked it under the tutelage of a master, or refined it at an academy dedicated to wielding the mind's power as both weapon and shield.",
+				"Estos guerreros, sensibles al poder psiónico, aumentan su poder físico imbuyendo los golpes de sus armas con energía psiónica, propinando latigazos telequinéticos y creando barreras de fuerza mental. Muchos githyanki se entrenan para convertirse en este tipo de guerreros, al igual que algunos de los altos elfos más disciplinados. En el mundo de Eberron, muchos jóvenes kalashtar sueñan con convertirse en Guerreros Psiónicos.",
+				"Como Guerrero Psiónico, es posible que hayas perfeccionado tus habilidades psiónicas a través de la autodisciplina, que las hayas desbloqueado bajo la tutela de un maestro o que las hayas pulido en una academia dedicada a desarrollar las capacidades ofensivas y defensivas de la mente.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Psionic Power|Guerrero|PHB-ES|Guerrero Psiónico|TCE-ES|3"
+					"subclassFeature": "Poder Psiónico|Guerrero|PHB-ES|Guerrero Psiónico|TCE-ES|3"
 				}
 			]
 		},
 		{
-			"name": "Psionic Power",
+			"name": "Poder Psiónico",
 			"source": "TCE-ES",
-			"page": 42,
+			"page": 55,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Guerrero Psiónico",
@@ -2163,35 +2163,80 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"{@i 3rd-level Psi Warrior feature}",
-				"You harbor a wellspring of psionic energy within yourself. This energy is represented by your Psionic Energy dice, which are each a {@dice d6}. You have a number of these dice equal to twice your proficiency bonus, and they fuel various psionic powers you have, which are detailed below.",
-				"Some of your powers expend the Psionic Energy die they use, as specified in a power's description, and you can't use a power if it requires you to use a die when your dice are all expended. You regain all your expended Psionic Energy dice when you finish a long rest. In addition, as a bonus action, you can regain one expended Psionic Energy die, but you can't do so again until you finish a short or long rest.",
-				"When you reach certain levels in this class, the size of your Psionic Energy dice increases: at 5th level ({@dice d8}), 11th level ({@dice d10}), and 17th level ({@dice d12}).",
-				"The powers below use your Psionic Energy dice.",
+				"{@i Rasgo de Guerrero Psiónico de nivel 3}",
+				"Albergas una fuente de energía psiónica en tu interior. Esta energía está representada por tus dados de Energía Psiónica, que son {@dice d6}. Tienes una cantidad de estos dados igual al doble de tu bonificador por competencia, y sirven para alimentar los distintos poderes psiónicos que posees, que se explican debajo.",
+				"Algunos de tus poderes gastan el dado de Energía Psiónica que usan, tal y como se especifica en la correspondiente descripción, por lo que no podrás usar un poder que te obligue a usar un dado si ya los has gastado todos. Recuperas todos los dados de Energía Psiónica tras finalizar un descanso largo. Además, como acción adicional, puedes recuperar un dado de Energía Psiónica gastado, pero no podrás volver a hacerlo hasta que finalices un descanso corto o largo.",
+				"Cuando alcanzas determinados niveles en esta clase, el tamaño de tus dados de Energía Psiónica aumenta: en el nivel 5 ({@dice d8}), en el 11 ({@dice d10}) y en el 17 ({@dice d12}).",
+				"Los poderes especificados a continuación usan tus dados de Energía Psiónica.",
 				{
 					"type": "options",
 					"style": "list-hang-notitle",
 					"entries": [
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Protective Field|Fighter|TCE|Guerrero Psiónico|TCE-ES|3"
+							"subclassFeature": "Campo Protector|Guerrero|PHB-ES|Guerrero Psiónico|TCE-ES|3"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Psionic Strike|Fighter|TCE|Guerrero Psiónico|TCE-ES|3"
+							"subclassFeature": "Golpe Psiónico|Guerrero|PHB-ES|Guerrero Psiónico|TCE-ES|3"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Telekinetic Movement|Fighter|TCE|Guerrero Psiónico|TCE-ES|3"
+							"subclassFeature": "Movimiento Telequinético|Guerrero|PHB-ES|Guerrero Psiónico|TCE-ES|3"
 						}
 					]
 				}
 			]
 		},
 		{
-			"name": "Telekinetic Adept",
+			"name": "Campo Protector",
 			"source": "TCE-ES",
-			"page": 42,
+			"page": 55,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Guerrero Psiónico",
+			"subclassSource": "TCE-ES",
+			"level": 3,
+			"consumes": {
+				"name": "Dado de Energía Psiónica"
+			},
+			"entries": [
+				"Cuando tú u otra criatura que puedas ver a 30 pies o menos de ti reciba daño, puedes usar tu reacción para gastar un dado de Energía Psiónica; tira el dado y reduce el daño recibido en una cantidad igual al resultado más tu modificador por Inteligencia (el daño se reduce en 1 como mínimo), ya que creas un escudo momentáneo de fuerza telequinética."
+			]
+		},
+		{
+			"name": "Golpe Psiónico",
+			"source": "TCE-ES",
+			"page": 55,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Guerrero Psiónico",
+			"subclassSource": "TCE-ES",
+			"level": 3,
+			"consumes": {
+				"name": "Dado de Energía Psiónica"
+			},
+			"entries": [
+				"Puedes impulsar tus armas con fuerza psiónica. Una vez en cada uno de tus turnos, inmediatamente después de impactar a un objetivo que esté a 30 pies o menos de ti con un ataque e infligirle daño con un arma, puedes gastar un dado de Energía Psiónica, tirarlo e infligir una cantidad de daño de fuerza al objetivo igual al resultado más tu modificador por Inteligencia."
+			]
+		},
+		{
+			"name": "Movimiento Telequinético",
+			"source": "TCE-ES",
+			"page": 55,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Guerrero Psiónico",
+			"subclassSource": "TCE-ES",
+			"level": 3,
+			"entries": [
+				"Puedes mover objetos o criaturas con la mente. Como acción, eliges como objetivo a un objeto suelto Grande o más pequeño o a una criatura voluntaria que no seas tú. Si puedes ver el objetivo y está a 30 pies o menos de ti, puedes moverlo hasta 30 pies a un espacio sin ocupar que puedas ver. Como alternativa, si se trata de un objeto Diminuto, puedes moverlo hacia tu mano o desde ella. En cualquiera de los dos casos, puedes mover el objetivo horizontalmente, verticalmente o una combinación de ambos. Cuando realices esta acción, no podrás volver a hacerla hasta que finalices un descanso corto o largo, a menos que gastes un dado de Energía Psiónica para volver a realizarla."
+			]
+		},
+		{
+			"name": "Adepto Telequinético",
+			"source": "TCE-ES",
+			"page": 56,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Guerrero Psiónico",
@@ -2199,28 +2244,54 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"{@i 7th-level Psi Warrior feature}",
-				"You have mastered new ways to use your telekinetic abilities, detailed below.",
+				"{@i Rasgo de Guerrero Psiónico de nivel 7}",
+				"Has dominado nuevas formas de usar tus habilidades telequinéticas, que se detallan a continuación.",
 				{
 					"type": "options",
 					"style": "list-hang-notitle",
 					"entries": [
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Psi-Powered Leap|Fighter|TCE|Guerrero Psiónico|TCE-ES|7"
+							"subclassFeature": "Salto Psiónico|Guerrero|PHB-ES|Guerrero Psiónico|TCE-ES|7"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Telekinetic Thrust|Fighter|TCE|Guerrero Psiónico|TCE-ES|7"
+							"subclassFeature": "Empujón Telequinético|Guerrero|PHB-ES|Guerrero Psiónico|TCE-ES|7"
 						}
 					]
 				}
 			]
 		},
 		{
-			"name": "Guarded Mind",
+			"name": "Salto Psiónico",
 			"source": "TCE-ES",
-			"page": 42,
+			"page": 56,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Guerrero Psiónico",
+			"subclassSource": "TCE-ES",
+			"level": 7,
+			"entries": [
+				"Como acción adicional, puedes impulsar tu cuerpo con la mente. Hasta el final de ese turno, obtienes una velocidad volando igual al doble de tu velocidad caminando. Cuando realices esta acción adicional, no podrás volver a hacerla hasta que finalices un descanso corto o largo, a menos que gastes un dado de Energía Psiónica para volver a realizarla."
+			]
+		},
+		{
+			"name": "Empujón Telequinético",
+			"source": "TCE-ES",
+			"page": 56,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Guerrero Psiónico",
+			"subclassSource": "TCE-ES",
+			"level": 7,
+			"entries": [
+				"Cuando infliges daño a un objetivo con tu Golpe Psiónico, puedes obligarlo a hacer una tirada de salvación de Fuerza contra una CD igual a 8 + tu bonificador por competencia + tu modificador por Inteligencia. Si la falla, podrás {@condition derribado|PHB-ES|derribarlo} o moverlo horizontalmente hasta 10 pies en cualquier dirección."
+			]
+		},
+		{
+			"name": "Mente Robusta",
+			"source": "TCE-ES",
+			"page": 56,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Guerrero Psiónico",
@@ -2228,14 +2299,14 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"{@i 10th-level Psi Warrior feature}",
-				"The psionic energy flowing through you has bolstered your mind. You have resistance to psychic damage. Moreover, if you start your turn {@condition charmed} or {@condition frightened}, you can expend a Psionic Energy die and end every effect on yourself subjecting you to those conditions."
+				"{@i Rasgo de Guerrero Psiónico de nivel 10}",
+				"La energía psiónica que fluye en ti ha reforzado tu mente. Tienes resistencia al daño psíquico. Además, si comienzas tu turno {@condition hechizado|PHB-ES} o {@condition asustado|PHB-ES}, puedes gastar un dado de Energía Psiónica y poner fin a todos los efectos que te causen dichos estados."
 			]
 		},
 		{
-			"name": "Bulwark of Force",
+			"name": "Bastión de Fuerza",
 			"source": "TCE-ES",
-			"page": 42,
+			"page": 56,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Guerrero Psiónico",
@@ -2243,15 +2314,15 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"{@i 15th-level Psi Warrior feature}",
-				"You can shield yourself and others with telekinetic force. As a bonus action, you can choose creatures, which can include you, that you can see within 30 feet of you, up to a number of creatures equal to your Intelligence modifier (minimum of one creature). Each of the chosen creatures is protected by half cover for 1 minute or until you're {@condition incapacitated}.",
-				"Once you take this bonus action, you can't do so again until you finish a long rest, unless you expend a Psionic Energy die to take it again."
+				"{@i Rasgo de Guerrero Psiónico de nivel 15}",
+				"Puedes protegerte a ti mismo y a los demás con fuerza telequinética. Como acción adicional, puedes elegir a una cantidad de criaturas (que puede incluirte a ti) que puedas ver a 30 pies o menos de ti igual a tu modificador por Inteligencia o menos (mínimo una criatura). Cada una de las criaturas elegidas queda protegida por una cobertura media durante 1 minuto o hasta que quedes {@condition incapacitado|PHB-ES}.",
+				"Cuando realices esta acción adicional, no podrás volver a hacerla hasta que finalices un descanso largo, a menos que gastes un dado de Energía Psiónica para volver a realizarla."
 			]
 		},
 		{
-			"name": "Telekinetic Master",
+			"name": "Maestro Telequinético",
 			"source": "TCE-ES",
-			"page": 42,
+			"page": 57,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Guerrero Psiónico",
@@ -2259,40 +2330,40 @@
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"{@i 18th-level Psi Warrior feature}",
-				"Your ability to move creatures and objects with your mind is matched by few. You can cast the {@spell telekinesis} spell, requiring no components, and your spellcasting ability for the spell is Intelligence. On each of your turns while you concentrate on the spell, including the turn when you cast it, you can make one attack with a weapon as a bonus action.",
-				"Once you cast the spell with this feature, you can't do so again until you finish a long rest, unless you expend a Psionic Energy die to cast it again."
+				"{@i Rasgo de Guerrero Psiónico de nivel 18}",
+				"Pocos pueden igualar tu capacidad de mover criaturas y objetos con la mente. Puedes lanzar el conjuro {@spell telequinesis|PHB-ES} sin necesidad de componentes y tu aptitud mágica para el hechizo es Inteligencia. En cada uno de tus turnos en los que te estés concentrando en el conjuro, incluido el turno en el que lo lances, podrás realizar un ataque con un arma como acción adicional.",
+				"Cuando lances este conjuro con este rasgo, no podrás volver a hacerlo hasta que finalices un descanso largo, a menos que gastes un dado de Energía Psiónica para volver a lanzarlo."
 			]
 		},
 		{
-			"name": "Rune Knight",
+			"name": "Caballero Rúnico",
 			"source": "TCE-ES",
-			"page": 44,
+			"page": 53,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Caballero Rúnico",
 			"subclassSource": "TCE-ES",
 			"level": 3,
 			"entries": [
-				"Rune Knights enhance their martial prowess using the supernatural power of runes, an ancient practice that originated with giants. Rune cutters can be found among any family of giants, and you likely learned your methods first or second hand from such a mystical artisan. Whether you found the giant's work carved into a hill or cave, learned of the runes from a sage, or met the giant in person, you studied the giant's craft and learned how to apply magic runes to empower your equipment.",
+				"Los Caballeros Rúnicos mejoran su destreza marcial con el poder sobrenatural de las runas, una práctica antigua originaria de los gigantes. Los talladores de runas pueden pertenecer a cualquier familia de los gigantes, y probablemente hayas aprendido tu estilo directa o indirectamente de uno de estos artesanos místicos. Independientemente de si encontraste la obra de un gigante tallada en una colina o una cueva, aprendiste las runas de un erudito o conociste al gigante en persona, has estudiado el arte de los gigantes y has aprendido a aplicar runas mágicas para potenciar tu equipo.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Bonus Proficiencies|Guerrero|PHB-ES|Caballero Rúnico|TCE-ES|3"
+					"subclassFeature": "Competencias Adicionales|Guerrero|PHB-ES|Caballero Rúnico|TCE-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Rune Carver|Guerrero|PHB-ES|Caballero Rúnico|TCE-ES|3"
+					"subclassFeature": "Tallador de Runas|Guerrero|PHB-ES|Caballero Rúnico|TCE-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Giant's Might|Guerrero|PHB-ES|Caballero Rúnico|TCE-ES|3"
+					"subclassFeature": "Fuerza de los Gigantes|Guerrero|PHB-ES|Caballero Rúnico|TCE-ES|3"
 				}
 			]
 		},
 		{
-			"name": "Bonus Proficiencies",
+			"name": "Competencias Adicionales",
 			"source": "TCE-ES",
-			"page": 44,
+			"page": 53,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Caballero Rúnico",
@@ -2300,14 +2371,14 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"{@i 3rd-level Rune Knight feature}",
-				"You gain proficiency with {@item smith's tools|PHB}, and you learn to speak, read, and write {@language Giant}."
+				"{@i Rasgo de Caballero Rúnico de nivel 3}",
+				"Obtienes competencia con {@item herramientas de herrero|PHB-ES} y aprendes a hablar, leer y escribir en {@language gigante|PHB-ES}."
 			]
 		},
 		{
-			"name": "Giant's Might",
+			"name": "Fuerza de los Gigantes",
 			"source": "TCE-ES",
-			"page": 44,
+			"page": 55,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Caballero Rúnico",
@@ -2315,23 +2386,23 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"{@i 3rd-level Rune Knight feature}",
-				"You have learned how to imbue yourself with the might of giants. As a bonus action, you magically gain the following benefits, which last for 1 minute:",
+				"{@i Rasgo de Caballero Rúnico de nivel 3}",
+				"Has aprendido a imbuirte de la fuerza de los gigantes. Como acción adicional, obtienes mágicamente los siguientes beneficios, que duran 1 minuto:",
 				{
 					"type": "list",
 					"items": [
-						"If you are smaller than Large, you become Large, along with anything you are wearing. If you lack the room to become Large, your size doesn't change.",
-						"You have advantage on Strength checks and Strength saving throws.",
-						"Once on each of your turns, one of your attacks with a weapon or an unarmed strike can deal an extra {@damage 1d6} damage to a target on a hit."
+						"Si tu tamaño es menor que Grande, te vuelves Grande, y también todo lo que lleves puesto. Si no tienes espacio para hacerte Grande, tu tamaño no cambia.",
+						"Tienes ventaja en las pruebas de Fuerza y en las tiradas de salvación de Fuerza.",
+						"Una vez en cada uno de tus turnos, uno de tus ataques con arma o un ataque sin armas puede infligir {@damage 1d6} de daño adicional a un objetivo si impacta."
 					]
 				},
-				"You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses of it when you finish a long rest."
+				"Puedes usar este rasgo una cantidad de veces igual a tu bonificador por competencia y recuperas todos los usos tras finalizar un descanso largo."
 			]
 		},
 		{
-			"name": "Rune Carver",
+			"name": "Tallador de Runas",
 			"source": "TCE-ES",
-			"page": 44,
+			"page": 54,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Caballero Rúnico",
@@ -2339,15 +2410,15 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"{@i 3rd-level Rune Knight feature}",
-				"You can use magic runes to enhance your gear. You learn two runes of your choice, from among the runes described below, and each time you gain a level in this class, you can replace one rune you know with a different one from this feature. When you reach certain levels in this class, you learn additional runes, as shown in the Runes Known table.",
-				"Whenever you finish a long rest, you can touch a number of objects equal to the number of runes you know, and you inscribe a different rune onto each of the objects. To be eligible, an object must be a weapon, a suit of armor, a shield, a piece of jewelry, or something else you can wear or hold in a hand. Your rune remains on an object until you finish a long rest, and an object can bear only one of your runes at a time.",
+				"{@i Rasgo de Caballero Rúnico de nivel 3}",
+				"Puedes usar runas mágicas para mejorar tu equipo. Aprendes dos runas de tu elección de entre las descritas más adelante; además, cada vez que subas un nivel en esta clase, podrás sustituir una runa que ya conoces por otra distinta de este rasgo. Aprendes runas adicionales cuando alcanzas determinados niveles de esta clase, tal y como se muestra en la tabla \"Runas conocidas\".",
+				"Tras finalizar un descanso largo, puedes tocar un número de objetos igual a la cantidad de runas que conoces y grabar una runa diferente en cada uno de ellos. El objeto debe ser un arma, una armadura, un escudo, una joya o cualquier otra cosa que puedas llevar puesta o sostener en la mano. La runa estará activa en el objeto hasta que finalices un descanso largo y ningún objeto puede tener más de una runa a la vez.",
 				{
 					"type": "table",
-					"caption": "Runes Known",
+					"caption": "Runas conocidas",
 					"colLabels": [
-						"Fighter Level",
-						"Number of Runes"
+						"Nivel de guerrero",
+						"Número de runas"
 					],
 					"colStyles": [
 						"col-6 text-center",
@@ -2355,60 +2426,75 @@
 					],
 					"rows": [
 						[
-							"3rd",
+							"3",
 							"2"
 						],
 						[
-							"7th",
+							"7",
 							"3"
 						],
 						[
-							"10th",
+							"10",
 							"4"
 						],
 						[
-							"15th",
+							"15",
 							"5"
 						]
 					]
 				},
-				"The following runes are available to you when you learn a rune. If a rune has a level requirement, you must be at least that level in this class to learn the rune. If a rune requires a saving throw, your Rune Magic save DC equals 8 + your proficiency bonus + your Constitution modifier.",
+				"Cuando aprendas una runa, elige una de las que se detallan más adelante. Si una runa tiene un requisito de nivel, debes tener al menos dicho nivel en esta clase para aprenderla. Si una runa obliga a hacer una tirada de salvación, tu CD de salvación de magia rúnica es igual a 8 + tu bonificador por competencia + tu modificador por Constitución.",
 				{
 					"type": "options",
 					"count": 2,
 					"entries": [
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Cloud Rune|TCE-ES"
+							"optionalfeature": "Runa de las Nubes|TCE-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Fire Rune|TCE-ES"
+							"optionalfeature": "Runa de Fuego|TCE-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Frost Rune|TCE-ES"
+							"optionalfeature": "Runa de Escarcha|TCE-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Stone Rune|TCE-ES"
+							"optionalfeature": "Runa de Piedra|TCE-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Hill Rune|TCE-ES",
-							"name": "Hill Rune (7th Level or Higher)"
+							"optionalfeature": "Runa de las Colinas|TCE-ES",
+							"name": "Runa de las Colinas (nivel 7 o superior)"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Storm Rune|TCE-ES",
-							"name": "Storm Rune (7th Level or Higher)"
+							"optionalfeature": "Runa de las Tormentas|TCE-ES",
+							"name": "Runa de las Tormentas (nivel 7 o superior)"
 						}
 					]
 				}
 			]
 		},
 		{
-			"name": "Additional Rune Known",
+			"name": "Runa conocida adicional",
+			"source": "TCE-ES",
+			"page": 54,
+			"className": "Guerrero",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Caballero Rúnico",
+			"subclassSource": "TCE-ES",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i Rasgo de Caballero Rúnico de nivel 7}",
+				"Aprendes una runa adicional."
+			]
+		},
+		{
+			"name": "Escudo Rúnico",
 			"source": "TCE-ES",
 			"page": 44,
 			"className": "Guerrero",
@@ -2418,30 +2504,15 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"{@i 7th-level Rune Knight feature}",
-				"You learn an additional Rune."
+				"{@i Rasgo de Caballero Rúnico de nivel 7}",
+				"Aprendes a invocar tu magia rúnica para proteger a tus aliados. Si una tirada de ataque impacta contra otra criatura que puedas ver a 60 pies o menos de ti, puedes usar tu reacción para obligar al atacante a volver a tirar un {@dice d20} y usar el nuevo resultado.",
+				"Puedes usar este rasgo una cantidad de veces igual a tu bonificador por competencia y recuperas todos los usos tras finalizar un descanso largo."
 			]
 		},
 		{
-			"name": "Runic Shield",
+			"name": "Runa conocida adicional",
 			"source": "TCE-ES",
-			"page": 44,
-			"className": "Guerrero",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Caballero Rúnico",
-			"subclassSource": "TCE-ES",
-			"level": 7,
-			"header": 2,
-			"entries": [
-				"{@i 7th-level Rune Knight feature}",
-				"You learn to invoke your rune magic to protect your allies. When another creature you can see within 60 feet of you is hit by an attack roll, you can use your reaction to force the attacker to reroll the {@dice d20} and use the new roll.",
-				"You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
-			]
-		},
-		{
-			"name": "Additional Rune Known",
-			"source": "TCE-ES",
-			"page": 44,
+			"page": 54,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Caballero Rúnico",
@@ -2449,14 +2520,14 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"{@i 10th-level Rune Knight feature}",
-				"You learn an additional Rune."
+				"{@i Rasgo de Caballero Rúnico de nivel 10}",
+				"Aprendes una runa adicional."
 			]
 		},
 		{
-			"name": "Great Stature",
+			"name": "Estatura Imponente",
 			"source": "TCE-ES",
-			"page": 44,
+			"page": 55,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Caballero Rúnico",
@@ -2464,15 +2535,15 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"{@i 10th-level Rune Knight feature}",
-				"The magic of your runes permanently alters you. When you gain this feature, roll {@dice 3d4}. You grow a number of inches in height equal to the roll.",
-				"Moreover, the extra damage you deal with your Giant's Might feature increases to {@dice 1d8}."
+				"{@i Rasgo de Caballero Rúnico de nivel 10}",
+				"La magia de tus runas te altera permanentemente. Cuando obtengas este rasgo, tira {@dice 3d4}. Creces un número de pulgadas igual al resultado obtenido.",
+				"Además, el daño adicional que infliges con tu rasgo Fuerza de los Gigantes aumentará a {@dice 1d8}."
 			]
 		},
 		{
-			"name": "Additional Rune Known",
+			"name": "Runa conocida adicional",
 			"source": "TCE-ES",
-			"page": 44,
+			"page": 54,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Caballero Rúnico",
@@ -2480,14 +2551,14 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"{@i 15th-level Rune Knight feature}",
-				"You learn an additional Rune."
+				"{@i Rasgo de Caballero Rúnico de nivel 15}",
+				"Aprendes una runa adicional."
 			]
 		},
 		{
-			"name": "Master of Runes",
+			"name": "Maestro Rúnico",
 			"source": "TCE-ES",
-			"page": 44,
+			"page": 55,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Caballero Rúnico",
@@ -2495,14 +2566,14 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"{@i 15th-level Rune Knight feature}",
-				"You can invoke each rune you know from your Rune Carver feature twice, rather than once, and you regain all expended uses when you finish a short or long rest."
+				"{@i Rasgo de Caballero Rúnico de nivel 15}",
+				"Puedes invocar dos veces en lugar de una las runas que conoces del rasgo Tallador de Runas y recuperas todos los usos tras finalizar un descanso corto o largo."
 			]
 		},
 		{
-			"name": "Runic Juggernaut",
+			"name": "Coloso Rúnico",
 			"source": "TCE-ES",
-			"page": 44,
+			"page": 55,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Caballero Rúnico",
@@ -2510,39 +2581,39 @@
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"{@i 18th-level Rune Knight feature}",
-				"You learn how to amplify your rune-powered transformation. As a result, the extra damage you deal with the Giant's Might feature increases to {@dice 1d10}. Moreover, when you use that feature, your size can increase to Huge, and while you are that size, your reach increases by 5 feet."
+				"{@i Rasgo de Caballero Rúnico de nivel 18}",
+				"Aprendes a amplificar tu transformación rúnica. Como resultado, el daño adicional que infliges con el rasgo Fuerza de los Gigantes aumentará a {@dice 1d10}. Además, cuando usas este rasgo, tu tamaño puede aumentar a Enorme y, mientras tengas ese tamaño, tu alcance aumentará en 5 pies."
 			]
 		},
 		{
-			"name": "Arcane Archer",
+			"name": "Arquero Arcano",
 			"source": "XGE-ES",
-			"page": 28,
+			"page": 37,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Arquero Arcano",
 			"subclassSource": "XGE-ES",
 			"level": 3,
 			"entries": [
-				"An Arcane Archer studies a unique elven method of archery that weaves magic into attacks to produce supernatural effects. Arcane Archers are some of the most elite warriors among the elves. They stand watch over the fringes of elven domains, keeping a keen eye out for trespassers and using magic-infused arrows to defeat monsters and invaders before they can reach elven settlements. Over the centuries, the methods of these elf archers have been learned by members of other races who can also balance arcane aptitude with archery.",
+				"El arquero arcano estudia un método único de arquería de origen élfico que entreteje magia en sus ataques para producir efectos sobrenaturales. Estos guerreros son parte de los cuerpos de élite élficos. Guardianes de las fronteras de los dominios de esta raza, se mantienen alerta en busca de invasores y usan sus flechas infundidas con magia para derrotarlos antes de que puedan llegar a sus asentamientos. A lo largo de los siglos, los métodos de estos arqueros elfos se han extendido también a miembros de otras razas, por tanto capaces de conjugar aptitud arcana y arquería.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Arcane Archer Lore|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|3"
+					"subclassFeature": "Conocimiento de Arquero Arcano|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Arcane Shot|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|3"
+					"subclassFeature": "Disparo Arcano|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Arcane Shot Options|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|3"
+					"subclassFeature": "Opciones de Disparo Arcano|Guerrero|PHB-ES|Arquero Arcano|XGE-ES|3"
 				}
 			]
 		},
 		{
-			"name": "Arcane Archer Lore",
+			"name": "Conocimiento de Arquero Arcano",
 			"source": "XGE-ES",
-			"page": 28,
+			"page": 37,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Arquero Arcano",
@@ -2550,13 +2621,13 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"At 3rd level, you learn magical theory or some of the secrets of nature—typical for practitioners of this elven martial tradition. You choose to gain proficiency in either the {@skill Arcana} or the {@skill Nature} skill, and you choose to learn either the {@spell prestidigitation} or the {@spell druidcraft} cantrip."
+				"A nivel 3, puedes conocer teoría mágica o secretos de la naturaleza, algo normal para los practicantes de esta disciplina marcial élfica. Elige una habilidad entre {@skill Conocimiento Arcano|PHB-ES} o {@skill Naturaleza|PHB-ES}, con la que obtienes competencia, y aprendes un truco, a elegir entre {@spell prestidigitación|PHB-ES} o {@spell saber druídico|PHB-ES}."
 			]
 		},
 		{
-			"name": "Arcane Shot",
+			"name": "Disparo Arcano",
 			"source": "XGE-ES",
-			"page": 28,
+			"page": 37,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Arquero Arcano",
@@ -2564,15 +2635,15 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"At 3rd level, you learn to unleash special magical effects with some of your shots. When you gain this feature, you learn two Arcane Shot options of your choice (see \"Arcane Shot Options\" below).",
-				"Once per turn when you fire an arrow from a shortbow or longbow as part of the {@action Attack} action, you can apply one of your Arcane Shot options to that arrow. You decide to use the option when the arrow hits a creature, unless the option doesn't involve an attack roll. You have two uses of this ability, and you regain all expended uses of it when you finish a short or long rest.",
-				"You gain an additional Arcane Shot option of your choice when you reach certain levels in this class: 7th, 10th, 15th, and 18th level. Each option also improves when you become an 18th-level fighter."
+				"A nivel 3 consigues desatar efectos mágicos con algunos de tus disparos. Cuando obtienes este rasgo, aprendes dos opciones de Disparo Arcano a tu elección (consulta \"Opciones de Disparo Arcano\" más adelante).",
+				"Una vez por turno, cuando dispares una flecha desde un arco corto o largo como parte de una acción de {@action Atacar|PHB-ES|Ataque}, puedes aplicar una de tus opciones de Disparo Arcano a ese proyectil. Decides usar la opción cuando la flecha impacta a una criatura, a menos que la opción no implique tirada de ataque alguna. Posees dos usos de esta habilidad, los cuales recuperas cuando completas un descanso corto o largo.",
+				"Ganas una opción adicional de Disparo Arcano a tu elección cuando alcanzas ciertos niveles en esta clase: 7, 10, 15 y 18. Todas las opciones mejoran cuando llegas a ser un guerrero de nivel 18."
 			]
 		},
 		{
-			"name": "Arcane Shot Options",
+			"name": "Opciones de Disparo Arcano",
 			"source": "XGE-ES",
-			"page": 28,
+			"page": 37,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Arquero Arcano",
@@ -2580,11 +2651,11 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"The Arcane Shot feature lets you choose options for it at certain levels. The options are presented here in alphabetical order. They are all magical effects, and each one is associated with one of the schools of magic.",
-				"If an option requires a saving throw, your Arcane Shot save DC is calculated as follows:",
+				"El rasgo Disparo Arcano te permite elegir entre varias opciones a ciertos niveles. Aquí se presentan en orden alfabético. Se consideran efectos mágicos, por lo que cada flecha está asociada a una de las escuelas de magia.",
+				"Si una de las opciones requiere una tirada de salvación, la de tu Disparo Arcano es igual a la siguiente:",
 				{
 					"type": "abilityDc",
-					"name": "Arcane Shot",
+					"name": "Disparo Arcano",
 					"attributes": [
 						"int"
 					]
@@ -2595,44 +2666,44 @@
 					"entries": [
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Banishing Arrow|XGE"
+							"optionalfeature": "Flecha Buscadora|XGE-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Beguiling Arrow|XGE"
+							"optionalfeature": "Flecha Debilitadora|XGE-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Bursting Arrow|XGE"
+							"optionalfeature": "Flecha de Sombras|XGE-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Enfeebling Arrow|XGE"
+							"optionalfeature": "Flecha Desterradora|XGE-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Grasping Arrow|XGE"
+							"optionalfeature": "Flecha Encantadora|XGE-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Piercing Arrow|XGE"
+							"optionalfeature": "Flecha Enredadora|XGE-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Seeking Arrow|XGE"
+							"optionalfeature": "Flecha Explosiva|XGE-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Shadow Arrow|XGE"
+							"optionalfeature": "Flecha Penetrante|XGE-ES"
 						}
 					]
 				}
 			]
 		},
 		{
-			"name": "Additional Arcane Shot Option",
+			"name": "Opción adicional de Disparo Arcano",
 			"source": "XGE-ES",
-			"page": 28,
+			"page": 37,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Arquero Arcano",
@@ -2640,13 +2711,13 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"You gain an additional Arcane Shot option of your choice when you reach 7th level."
+				"Obtienes una opción adicional de Disparo Arcano a tu elección cuando alcanzas el nivel 7."
 			]
 		},
 		{
-			"name": "Curving Shot",
+			"name": "Disparo Curvo",
 			"source": "XGE-ES",
-			"page": 28,
+			"page": 37,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Arquero Arcano",
@@ -2654,13 +2725,13 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"At 7th level, you learn how to direct an errant arrow toward a new target. When you make an attack roll with a magic arrow and miss, you can use a bonus action to reroll the attack roll against a different target within 60 feet of the original target."
+				"A nivel 7 aprendes a dirigir un proyectil errante hacia un nuevo objetivo. Cuando realizas una tirada de ataque con una flecha mágica y fallas, puedes usar una acción adicional para volver a hacer la tirada de ataque contra un objetivo distinto situado a 60 pies o menos del original."
 			]
 		},
 		{
-			"name": "Magic Arrow",
+			"name": "Flecha Mágica",
 			"source": "XGE-ES",
-			"page": 28,
+			"page": 37,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Arquero Arcano",
@@ -2668,13 +2739,13 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"At 7th level, you gain the ability to infuse arrows with magic. Whenever you fire a nonmagical arrow from a shortbow or longbow, you can make it magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. The magic fades from the arrow immediately after it hits or misses its target."
+				"A nivel 7 eres capaz de infundir magia en tus proyectiles. Cuando disparas una flecha no mágica desde un arco corto o largo, puedes convertirla en mágica en lo que a superar resistencias e inmunidades a ataques y daño no mágico se refiere. La magia se desvanece del proyectil inmediatamente después de impactar o fallar a su objetivo."
 			]
 		},
 		{
-			"name": "Additional Arcane Shot Option",
+			"name": "Opción adicional de Disparo Arcano",
 			"source": "XGE-ES",
-			"page": 28,
+			"page": 37,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Arquero Arcano",
@@ -2682,13 +2753,13 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"You gain an additional Arcane Shot option of your choice when you reach 10th level."
+				"Obtienes una opción adicional de Disparo Arcano a tu elección cuando alcanzas el nivel 10."
 			]
 		},
 		{
-			"name": "Additional Arcane Shot Option",
+			"name": "Opción adicional de Disparo Arcano",
 			"source": "XGE-ES",
-			"page": 28,
+			"page": 37,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Arquero Arcano",
@@ -2696,13 +2767,13 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"You gain an additional Arcane Shot option of your choice when you reach 15th level."
+				"Obtienes una opción adicional de Disparo Arcano a tu elección cuando alcanzas el nivel 15."
 			]
 		},
 		{
-			"name": "Ever-Ready Shot",
+			"name": "Disparo Siempre Listo",
 			"source": "XGE-ES",
-			"page": 28,
+			"page": 37,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Arquero Arcano",
@@ -2710,13 +2781,13 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"Starting at 15th level, your magical archery is available whenever battle starts. If you roll initiative and have no uses of Arcane Shot remaining, you regain one use of it."
+				"A partir de nivel 15, tu arquería mágica está disponible en cuanto empieza el combate, Si al realizar una tirada de iniciativa no te quedan usos de Disparo Arcano, recuperas uno."
 			]
 		},
 		{
-			"name": "Additional Arcane Shot Option",
+			"name": "Opción adicional de Disparo Arcano",
 			"source": "XGE-ES",
-			"page": 28,
+			"page": 37,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Arquero Arcano",
@@ -2724,38 +2795,38 @@
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"You gain an additional Arcane Shot option of your choice when you reach 18th level. Each option also improves when you become an 18th-level fighter."
+				"Obtienes una opción adicional de Disparo Arcano a tu elección cuando alcanzas el nivel 18. Cada opción también mejora cuando te conviertes en un guerrero de nivel 18."
 			]
 		},
 		{
-			"name": "Cavalier",
+			"name": "Caballero",
 			"source": "XGE-ES",
-			"page": 30,
+			"page": 39,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Caballero",
 			"subclassSource": "XGE-ES",
 			"level": 3,
 			"entries": [
-				"The archetypal Cavalier excels at mounted combat. Usually born among the nobility and raised at court, a Cavalier is equally at home leading a cavalry charge or exchanging repartee at a state dinner. Cavaliers also learn how to guard those in their charge from harm, often serving as the protectors of their superiors and of the weak. Compelled to right wrongs or earn prestige, many of these fighters leave their lives of comfort to embark on glorious adventure.",
+				"El arquetipo Caballero sobresale en el combate montado. Normalmente de nacimiento noble y criado en la corte, se siente como en casa tanto en una conversación ingeniosa en una cena de estado como liderando una carga de caballería. Estos guerreros también aprenden a proteger del peligro a aquellos a su cargo, siendo frecuentemente guardianes tanto de sus superiores como de los más débiles. Motivados por el afán por deshacer entuertos o conseguir prestigio, muchos de ellos dejan sus vidas confortables para embarcarse en gloriosas aventuras.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Bonus Proficiency|Guerrero|PHB-ES|Caballero|XGE-ES|3"
+					"subclassFeature": "Competencia adicional|Guerrero|PHB-ES|Caballero|XGE-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Born to the Saddle|Guerrero|PHB-ES|Caballero|XGE-ES|3"
+					"subclassFeature": "Nacido en la Silla|Guerrero|PHB-ES|Caballero|XGE-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Unwavering Mark|Guerrero|PHB-ES|Caballero|XGE-ES|3"
+					"subclassFeature": "Marca Inquebrantable|Guerrero|PHB-ES|Caballero|XGE-ES|3"
 				}
 			]
 		},
 		{
-			"name": "Bonus Proficiency",
+			"name": "Competencia adicional",
 			"source": "XGE-ES",
-			"page": 30,
+			"page": 39,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Caballero",
@@ -2763,13 +2834,13 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"When you choose this archetype at 3rd level, you gain proficiency in one of the following skills of your choice: {@skill Animal Handling}, {@skill History}, {@skill Insight}, {@skill Performance}, or {@skill Persuasion}. Alternatively, you learn one language of your choice."
+				"Cuando eliges este arquetipo a nivel 3, obtienes competencia en una de las siguientes habilidades, a tu elección: {@skill Historia|PHB-ES}, {@skill Interpretación|PHB-ES}, {@skill Perspicacia|PHB-ES}, {@skill Persuasión|PHB-ES} o {@skill Trato con Animales|PHB-ES}. Como alternativa, puedes aprender un idioma, el que prefieras."
 			]
 		},
 		{
-			"name": "Born to the Saddle",
+			"name": "Nacido en la Silla",
 			"source": "XGE-ES",
-			"page": 30,
+			"page": 39,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Caballero",
@@ -2777,14 +2848,14 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Starting at 3rd level, your mastery as a rider becomes apparent. You have advantage on saving throws made to avoid falling off your mount. If you fall off your mount and descend no more than 10 feet, you can land on your feet if you're not {@condition incapacitated}.",
-				"Finally, mounting or dismounting a creature costs you only 5 feet of movement, rather than half your speed."
+				"A nivel 3, tu maestría como jinete se vuelve evidente. Tienes ventaja en tiradas de salvación que realices para evitar caer de tu montura. Además, si al caer de ella desciendes menos de 10 pies y no estás {@condition incapacitado|PHB-ES}, puedes aterrizar de pie.",
+				"Por último, montar o desmontar de una criatura solo te cuesta 5 pies de movimiento, en vez de la mitad de tu velocidad. "
 			]
 		},
 		{
-			"name": "Unwavering Mark",
+			"name": "Marca Inquebrantable",
 			"source": "XGE-ES",
-			"page": 30,
+			"page": 39,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Caballero",
@@ -2792,16 +2863,16 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Starting at 3rd level, you can menace your foes, foiling their attacks and punishing them for harming others. When you hit a creature with a melee weapon attack, you can mark the creature until the end of your next turn. This effect ends early if you are {@condition incapacitated} or you die, or if someone else marks the creature.",
-				"While it is within 5 feet of you, a creature marked by you has disadvantage on any attack roll that doesn't target you.",
-				"In addition, if a creature marked by you deals damage to anyone other than you, you can make a special melee weapon attack against the marked creature as a bonus action on your next turn. You have advantage on the attack roll, and if it hits, the attack's weapon deals extra damage to the target equal to half your fighter level.",
-				"Regardless of the number of creatures you mark, you can make this special attack a number of times equal to your Strength modifier (minimum of once), and you regain all expended uses of it when you finish a long rest."
+				"A partir de nivel 3, puedes amenazar a tus enemigos, impidiendo sus ataques y castigándoles por dañar a otros. Cuando impactas a una criatura con un ataque cuerpo a cuerpo con arma, puedes marcarla hasta el final de tu siguiente turno. Este efecto acaba si quedas {@condition incapacitado|PHB-ES}, mueres u otro marca a la misma criatura.",
+				"Mientras esté a 5 pies o menos de ti, una criatura marcada por ti tendrá desventaja en cualquier tirada de ataque que no te tenga como objetivo.",
+				"Además, si una criatura marcada por ti inflige daño a cualquiera que no seas tú, podrás realizar un ataque cuerpo a cuerpo con arma especial contra ella, usando una acción adicional en tu próximo turno. Tienes ventaja en la tirada de ataque y, si impactas, infliges daño adicional al objetivo igual a la mitad de tu nivel de guerrero.",
+				"Independientemente del número de criaturas que marques, puedes realizar este ataque especial tantas veces como tu modificador por Fuerza (mínimo de uno). Recuperas todos los usos cuando completas un descanso largo."
 			]
 		},
 		{
-			"name": "Warding Maneuver",
+			"name": "Maniobra de Protección",
 			"source": "XGE-ES",
-			"page": 30,
+			"page": 39,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Caballero",
@@ -2809,14 +2880,14 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"At 7th level, you learn to fend off strikes directed at you, your mount, or other creatures nearby. If you or a creature you can see within 5 feet of you is hit by an attack, you can roll {@dice 1d8} as a reaction if you're wielding a melee weapon or a shield. Roll the die, and add the number rolled to the target's AC against that attack. If the attack still hits, the target has resistance against the attack's damage.",
-				"You can use this feature a number of times equal to your Constitution modifier (minimum of once), and you regain all expended uses of it when you finish a long rest."
+				"A nivel 7, has aprendido a eludir golpes dirigidos contra ti, tu montura u otros compañeros cercanos. Si tú o una criatura que puedas ver y se encuentre a 5 pies o menos de ti es impactada por un ataque y blandes un arma cuerpo a cuerpo o un escudo, puedes tirar {@dice 1d8} como reacción. Añade el resultado de la tirada a la CA del objetivo contra ese ataque. Si, aun así, el ataque impactara, el objetivo tendría resistencia contra el daño del ataque.",
+				"Puedes utilizar este rasgo tantas veces como tu modificador por Constitución (mínimo una vez) y recuperas todos los usos tras finalizar un descanso largo."
 			]
 		},
 		{
-			"name": "Hold the Line",
+			"name": "Mantener la Formación",
 			"source": "XGE-ES",
-			"page": 30,
+			"page": 39,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Caballero",
@@ -2824,13 +2895,13 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"At 10th level, you become a master of locking down your enemies. Creatures provoke an opportunity attack from you when they move 5 feet or more while within your reach, and if you hit a creature with an opportunity attack, the target's speed is reduced to 0 until the end of the current turn."
+				"A nivel 10 te conviertes en un maestro en impedir el movimiento de tus enemigos. Las criaturas provocan un ataque de oportunidad tuyo cuando se mueven 5 pies o más dentro de tu alcance. Además, si impactas a un objetivo con un ataque de oportunidad, su velocidad quedará reducida a 0 hasta el final del turno actual."
 			]
 		},
 		{
-			"name": "Ferocious Charger",
+			"name": "Carga Feroz",
 			"source": "XGE-ES",
-			"page": 30,
+			"page": 40,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Caballero",
@@ -2838,13 +2909,13 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"Starting at 15th level, you can run down your foes, whether you're mounted or not. If you move at least 10 feet in a straight line right before attacking a creature and you hit it with the attack, that target must succeed on a Strength saving throw (DC 8 + your proficiency bonus + your Strength modifier) or be knocked {@condition prone}. You can use this feature only once on each of your turns."
+				"A partir de nivel 15 eres capaz de atropellar a tus enemigos, estés montado o no. Si te mueves al menos 10 pies en línea recta justo antes de atacar a una criatura, y le impactas con el ataque, esta deberá tener éxito en una tirada de salvación de Fuerza (CD 8 + tu bonificador por competencia + modificador por Fuerza) o quedará {@condition derribado|PHB-ES|derribada}. Solo puedes usar este rasgo una vez en cada uno de tus turnos."
 			]
 		},
 		{
-			"name": "Vigilant Defender",
+			"name": "Defensor Atento",
 			"source": "XGE-ES",
-			"page": 30,
+			"page": 40,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Caballero",
@@ -2852,34 +2923,34 @@
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"Starting at 18th level, you respond to danger with extraordinary vigilance. In combat, you get a special reaction that you can take once on every creature's turn, except your turn. You can use this special reaction only to make an opportunity attack, and you can't use it on the same turn that you take your normal reaction."
+				"A nivel 18, te enfrentas al peligro con una atención extraordinaria. En combate, recibes una reacción especial, que puedes usar una vez en el turno de cada criatura, menos en el tuyo. Esta reacción especial solo puedes emplearla para realizar un ataque de oportunidad, así que no puedes utilizarla en el mismo turno en que uses tu reacción normal."
 			]
 		},
 		{
-			"name": "Samurai",
+			"name": "Samurái",
 			"source": "XGE-ES",
-			"page": 31,
+			"page": 40,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Samurái",
 			"subclassSource": "XGE-ES",
 			"level": 3,
 			"entries": [
-				"The Samurai is a fighter who draws on an implacable fighting spirit to overcome enemies. A Samurai's resolve is nearly unbreakable, and the enemies in a Samurai's path have two choices: yield or die fighting.",
+				"El Samurái es un guerrero que usa su implacable espíritu de lucha para superar a sus enemigos. Su determinación es inquebrantable, por lo que los adversarios que se encuentren en su camino tienen dos opciones: rendirse o morir luchando.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Bonus Proficiency|Guerrero|PHB-ES|Samurái|XGE-ES|3"
+					"subclassFeature": "Competencia Adicional|Guerrero|PHB-ES|Samurái|XGE-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Fighting Spirit|Guerrero|PHB-ES|Samurái|XGE-ES|3"
+					"subclassFeature": "Espíritu de Lucha|Guerrero|PHB-ES|Samurái|XGE-ES|3"
 				}
 			]
 		},
 		{
-			"name": "Bonus Proficiency",
+			"name": "Competencia Adicional",
 			"source": "XGE-ES",
-			"page": 31,
+			"page": 40,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Samurái",
@@ -2887,13 +2958,13 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"When you choose this archetype at 3rd level, you gain proficiency in one of the following skills of your choice: {@skill History}, {@skill Insight}, {@skill Performance}, or {@skill Persuasion}. Alternatively, you learn one language of your choice."
+				"Cuando eliges este arquetipo a nivel 3, obtienes competencia en una de las siguientes habilidades, a tu elección: {@skill Historia|PHB-ES}, {@skill Interpretación|PHB-ES}, {@skill Perspicacia|PHB-ES} o {@skill Persuasión|PHB-ES}. Como alternativa, puedes aprender un idioma, el que prefieras."
 			]
 		},
 		{
-			"name": "Fighting Spirit",
+			"name": "Espíritu de Lucha",
 			"source": "XGE-ES",
-			"page": 31,
+			"page": 40,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Samurái",
@@ -2901,14 +2972,14 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Starting at 3rd level, your intensity in battle can shield you and help you strike true. As a bonus action on your turn, you can give yourself advantage on weapon attack rolls until the end of the current turn. When you do so, you also gain 5 temporary hit points. The number of temporary hit points increases when you reach certain levels in this class, increasing to 10 at 10th level and 15 at 15th level.",
-				"You can use this feature three times, and you regain all expended uses of it when you finish a long rest."
+				"A nivel 3, tu intensidad en batalla puede escudarte y ayudarte a golpear de forma certera. Como acción adicional en tu turno puedes obtener ventaja en las tiradas de ataque con arma hasta el final del mismo turno. Si lo haces, también ganas 5 puntos de golpe temporales. Este número de puntos de golpe temporales aumenta según alcanzas ciertos niveles en esta clase, incrementándose a 10 en el nivel 10 y a 15 en el nivel 15.",
+				"Puedes utilizar este rasgo tres veces, recuperando todos los usos gastados cuando terminas un descanso largo."
 			]
 		},
 		{
-			"name": "Elegant Courtier",
+			"name": "Cortesano Elegante",
 			"source": "XGE-ES",
-			"page": 31,
+			"page": 40,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Samurái",
@@ -2916,14 +2987,14 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"Starting at 7th level, your discipline and attention to detail allow you to excel in social situations. Whenever you make a Charisma ({@skill Persuasion}) check, you gain a bonus to the check equal to your Wisdom modifier.",
-				"Your self-control also causes you to gain proficiency in Wisdom saving throws. If you already have this proficiency, you instead gain proficiency in Intelligence or Charisma saving throws (your choice)."
+				"A partir de nivel 7, tu disciplina y atención al detalle te permiten brillar en situaciones sociales. Cuando realices una prueba de Carisma ({@skill Persuasión|PHB-ES}), recibes un bonificador igual a tu modificador de Sabiduría.",
+				"Tu autocontrol también te hace ganar competencia en tira das de salvación de Sabiduría. Si ya tienes esta competencia, en vez de eso obtienes competencia en tiradas de salvación de Inteligencia o Carisma, a tu elección."
 			]
 		},
 		{
-			"name": "Tireless Spirit",
+			"name": "Espíritu Incansable",
 			"source": "XGE-ES",
-			"page": 31,
+			"page": 40,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Samurái",
@@ -2931,13 +3002,13 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"Starting at 10th level, when you roll initiative and have no uses of Fighting Spirit remaining, you regain one use."
+				"A partir de nivel 10, siempre que realices una tirada de iniciativa y no te queden usos de Espíritu de Lucha, recuperas uno de ellos."
 			]
 		},
 		{
-			"name": "Rapid Strike",
+			"name": "Golpe Súbito",
 			"source": "XGE-ES",
-			"page": 31,
+			"page": 40,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Samurái",
@@ -2945,13 +3016,13 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"Starting at 15th level, you learn to trade accuracy for swift strikes. If you take the {@action Attack} action on your turn and have advantage on an attack roll against one of the targets, you can forgo the advantage for that roll to make an additional weapon attack against that target, as part of the same action. You can do so no more than once per turn."
+				"A nivel 15 aprendes a intercambiar precisión por rapidez en el ataque. Si realizas una acción de {@action Atacar|PHB-ES} en tu turno y tienes ventaja contra uno de los objetivos, puedes renunciar a la ventaja en esa tirada para realizar un ataque con arma adicional contra el objetivo, como parte de la misma acción. No puedes hacer esto más de una vez por turno."
 			]
 		},
 		{
-			"name": "Strength before Death",
+			"name": "Fortaleza ante la Muerte",
 			"source": "XGE-ES",
-			"page": 31,
+			"page": 40,
 			"className": "Guerrero",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Samurái",
@@ -2959,79 +3030,8 @@
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"Starting at 18th level, your fighting spirit can delay the grasp of death. If you take damage that reduces you to 0 hit points and doesn't kill you outright, you can use your reaction to delay falling {@condition unconscious}, and you can immediately take an extra turn, interrupting the current turn. While you have 0 hit points during that extra turn, taking damage causes death saving throw failures as normal, and three death saving throw failures can still kill you. When the extra turn ends, you fall {@condition unconscious} if you still have 0 hit points.",
-				"Once you use this feature, you can't use it again until you finish a long rest."
-			]
-		},
-		{
-			"name": "Protective Field",
-			"source": "TCE-ES",
-			"page": 42,
-			"className": "Guerrero",
-			"classSource": "TCE-ES",
-			"subclassShortName": "Guerrero Psiónico",
-			"subclassSource": "TCE-ES",
-			"level": 3,
-			"consumes": {
-				"name": "Psionic Energy Die"
-			},
-			"entries": [
-				"When you or another creature you can see within 30 feet of you takes damage, you can use your reaction to expend one Psionic Energy die, roll the die, and reduce the damage taken by the number rolled plus your Intelligence modifier (minimum reduction of 1), as you create a momentary shield of telekinetic force."
-			]
-		},
-		{
-			"name": "Psionic Strike",
-			"source": "TCE-ES",
-			"page": 42,
-			"className": "Guerrero",
-			"classSource": "TCE-ES",
-			"subclassShortName": "Guerrero Psiónico",
-			"subclassSource": "TCE-ES",
-			"level": 3,
-			"consumes": {
-				"name": "Psionic Energy Die"
-			},
-			"entries": [
-				"You can propel your weapons with psionic force. Once on each of your turns, immediately after you hit a target within 30 feet of you with an attack and deal damage to it with a weapon, you can expend one Psionic Energy die, rolling it and dealing force damage to the target equal to the number rolled plus your Intelligence modifier."
-			]
-		},
-		{
-			"name": "Telekinetic Movement",
-			"source": "TCE-ES",
-			"page": 42,
-			"className": "Guerrero",
-			"classSource": "TCE-ES",
-			"subclassShortName": "Guerrero Psiónico",
-			"subclassSource": "TCE-ES",
-			"level": 3,
-			"entries": [
-				"You can move an object or a creature with your mind. As an action, you target one loose object that is Large or smaller or one willing creature, other than yourself. If you can see the target and it is within 30 feet of you, you can move it up to 30 feet to an unoccupied space you can see. Alternatively, if it is a Tiny object, you can move it to or from your hand. Either way, you can move the target horizontally, vertically, or both. Once you take this action, you can't do so again until you finish a short or long rest, unless you expend a Psionic Energy die to take it again."
-			]
-		},
-		{
-			"name": "Psi-Powered Leap",
-			"source": "TCE-ES",
-			"page": 42,
-			"className": "Guerrero",
-			"classSource": "TCE-ES",
-			"subclassShortName": "Guerrero Psiónico",
-			"subclassSource": "TCE-ES",
-			"level": 7,
-			"entries": [
-				"As a bonus action, you can propel your body with your mind. You gain a flying speed equal to twice your walking speed until the end of the current turn. Once you take this bonus action, you can't do so again until you finish a short or long rest, unless you expend a Psionic Energy die to take it again."
-			]
-		},
-		{
-			"name": "Telekinetic Thrust",
-			"source": "TCE-ES",
-			"page": 42,
-			"className": "Guerrero",
-			"classSource": "TCE-ES",
-			"subclassShortName": "Guerrero Psiónico",
-			"subclassSource": "TCE-ES",
-			"level": 7,
-			"entries": [
-				"When you deal damage to a target with your Psionic Strike, you can force the target to make a Strength saving throw against a DC equal to 8 + your proficiency bonus + your Intelligence modifier. If the save fails, you can knock the target {@condition prone} or move it up to 10 feet in any direction horizontally."
+				"A partir de nivel 18, la fuerza de tu espíritu es capaz de impedir el abrazo de la muerte. Si sufres una cantidad de daño que reduce tus puntos de golpe a 0, pero no te mata, puedes usar tu reacción para no caer {@condition inconsciente|PHB-ES} y obtener un turno adicional inmediatamente, interrumpiendo el actual. Mientras tengas 0 puntos de golpe durante ese turno adicional, recibir daño causa fallos en tiradas de salvación contra muerte de la forma habitual y tres fallos en tiradas de salvación contra muerte todavía pueden matarte. Cuando el turno adicional termina, caes {@condition inconsciente|PHB-ES} si todavía tienes 0 puntos de golpe.",
+				"Una vez utilizado este rasgo, deberás terminar un descanso largo para poder volver a usarlo."
 			]
 		}
 	]
