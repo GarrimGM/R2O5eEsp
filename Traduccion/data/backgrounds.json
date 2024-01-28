@@ -15316,7 +15316,7 @@
 			}
 		},
 		{
-			"name": "Trasfondo personalizadod",
+			"name": "Trasfondo personalizado",
 			"source": "PHB-ES",
 			"page": 125,
 			"skillProficiencies": [
@@ -15384,75 +15384,7 @@
 			]
 		},
 		{
-			"name": "Custom Background",
-			"source": "PHB-ES",
-			"page": 126,
-			"skillProficiencies": [
-				{
-					"any": 2
-				}
-			],
-			"languageProficiencies": [
-				{
-					"anyStandard": 2
-				}
-			],
-			"skillToolLanguageProficiencies": [
-				{
-					"anyLanguage": 2
-				},
-				{
-					"anyLanguage": 1,
-					"anyTool": 1
-				},
-				{
-					"anyTool": 1
-				}
-			],
-			"entries": [
-				{
-					"type": "list",
-					"style": "list-hang-notitle",
-					"items": [
-						{
-							"type": "item",
-							"name": "Skill Proficiencies:",
-							"entry": "Two of your choice"
-						},
-						{
-							"type": "item",
-							"name": "Languages and Tool Proficiencies:",
-							"entry": "Two of your choice"
-						},
-						{
-							"type": "item",
-							"name": "Equipment:",
-							"entry": "The equipment package from any background"
-						}
-					]
-				},
-				{
-					"name": "Feature: Choose a Feature",
-					"type": "entries",
-					"entries": [
-						"Choose a feature from any background."
-					],
-					"data": {
-						"isFeature": true
-					}
-				},
-				{
-					"name": "Suggested Characteristics",
-					"type": "entries",
-					"entries": [
-						"Use the suggested characteristics from any background."
-					]
-				},
-				"{@note See the section on {@book Customizing a Background|PHB|4|Customizing a Background} in the {@book Player's Handbook|PHB} for more information.}"
-			]
-		},
-		{
-			"name": "Knight of Solamnia",
+			"name": "Caballero de Solamnia",
 			"source": "DSotDQ-ES",
 			"page": 30,
 			"prerequisite": [
@@ -15464,7 +15396,7 @@
 			],
 			"feats": [
 				{
-					"squire of solamnia|dsotdq": true
+					"Escudero de Solamnia|DSotDQ-ES": true
 				}
 			],
 			"skillProficiencies": [
@@ -15482,12 +15414,12 @@
 				{
 					"_": [
 						{
-							"special": "insignia of rank"
+							"special": "insignia de rango"
 						},
-						"playing card set|phb",
-						"common clothes|phb",
+						"naipes|PHB-ES",
+						"ropas comunes|PHB-ES",
 						{
-							"item": "pouch|phb",
+							"item": "bolsa|PHB-ES",
 							"containsValue": 1000
 						}
 					]
@@ -15503,27 +15435,27 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies:",
-							"entry": "{@skill Athletics}, {@skill Survival}"
+							"name": "Competencias en habilidades:",
+							"entry": "{@skill Atletismo|PHB-ES}, {@skill Supervivencia|PHB-ES}."
 						},
 						{
 							"type": "item",
-							"name": "Languages:",
-							"entry": "Two of your choice"
+							"name": "Idiomas:",
+							"entry": "Dos de tu elección."
 						},
 						{
 							"type": "item",
-							"name": "Equipment:",
-							"entry": "An insignia of rank, a {@item playing card set|phb|deck of cards}, a set of {@item common clothes|PHB}, and a {@item pouch|PHB} containing 10 gp"
+							"name": "Equipo:",
+							"entry": "Una insignia de rango, una {@item naipes|PHB-ES|baraja de cartas}, una muda de {@item ropas comunes|PHB-ES} y una {@item bolsa|PHB-ES} que contiene 10 po."
 						}
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Feature: Squire of Solamnia",
+					"name": "Rasgo: Escudero de Solamnia",
 					"entries": [
-						"You gain the {@feat Squire of Solamnia|DSotDQ} feat.",
-						"In addition, the Knights of Solamnia provide you free, modest lodging and food at any of their fortresses or encampments."
+						"Obtienes la dote {@feat Escudero de Solamnia|DSotDQ-ES}.",
+						"Además, los Caballeros de Solamnia te proporcionan comida y alojamiento modestos de forma gratuita en cualquiera de sus fortalezas o campamentos."
 					],
 					"data": {
 						"isFeature": true
@@ -15531,21 +15463,21 @@
 				},
 				{
 					"type": "entries",
-					"name": "Building a Knight of Solamnia Character",
+					"name": "Crear un personaje Caballero de Solamnia",
 					"entries": [
-						"Any class that has martial prowess can be a good fit in the Knights of Solamnia. {@class Fighter||Fighters} and {@class paladin||paladins} make up the bulk of the knighthood's forces. {@class Cleric||Clerics} (often with the {@class Cleric|PHB|War|War} domain) can also be found among the knights' ranks.",
-						"For a more unusual take on a Knight of Solamnia character, consider playing a bard of the {@class Bard|PHB|College of Valor|Valor} (or the {@class Bard|PHB|College of Swords|Swords|XGE} from {@book Xanathar's Guide to Everything|XGE}) or a {@class barbarian} devoted to the ideals of the nature god {@deity Habbakuk|dragonlance} (perhaps adopting the {@class barbarian||Path of the Zealot|Zealot|xge} from {@book Xanathar's Guide to Everything|XGE}).",
+						"Cualquier clase que posea destreza marcial puede encajar bien en los Caballeros de Solamnia. Los {@class guerrero|PHB-ES|guerreros} y los {@class paladín|PHB-ES|paladines} conforman el grueso de las fuerzas de la organización, pero entre sus filas también se pueden encontrar {@class clérigo|PHB-ES|clérigos} (a menudo del dominio de la {@class clérigo|PHB-ES|Guerra|Guerra|PHB-ES}).",
+						"Si quieres darle un enfoque más inusual a tu Caballero de Solamnia, considera jugar como un bardo del {@class Bardo|PHB-ES|Colegio del Valor|Valor|PHB-ES} (o del {@class Bardo|PHB-ES|Colegio de las Espadas|Espadas|XGE-ES}, de la {@book Guía de Xanathar para Todo|XGE-ES}) o un {@class bárbaro|PHB-ES} devoto a los ideales del dios de la naturaleza {@deity Habbakuk|dragonlance|PHB-ES} (quizá adoptando la {@class bárbaro|PHB-ES|Senda del Fanático|Fanático|XGE-ES} de la {@book Guía de Xanathar para Todo|XGE-ES}).",
 						{
 							"type": "entries",
-							"name": "Knight of Solamnia Trinkets",
+							"name": "Bagatelas de Caballero de Solamnia",
 							"entries": [
-								"When you make your character, roll once on the Knight of Solamnia Trinkets table instead of on the {@item Trinket|PHB|Trinkets table} in the Player's Handbook for your starting trinket.",
+								"Cuando crees tu personaje, tira una vez en la tabla \"Bagatelas de un Caballero de Solamnia\" en lugar de la {@item Bagatela|PHB-ES|tabla \"Bagatelas\"} del Manual del Jugador para conocer tu bagatela inicial.",
 								{
 									"type": "table",
-									"caption": "Knight of Solamnia Trinkets",
+									"caption": "Bagatelas de un Caballero de Solamnia",
 									"colLabels": [
 										"d6",
-										"Trinket"
+										"Bagatela"
 									],
 									"colStyles": [
 										"col-1 text-center",
@@ -15554,27 +15486,27 @@
 									"rows": [
 										[
 											"1",
-											"A flat silver disk you record your heroics upon"
+											"Un disco plano de plata en el que registras tus heroicidades"
 										],
 										[
 											"2",
-											"A piece of a fallen knight's armor"
+											"Una parte de la armadura de un caballero caído"
 										],
 										[
 											"3",
-											"A pendant featuring a crown, a rose, or a sword"
+											"Un colgante en el que aparecen una corona, una rosa o una espada"
 										],
 										[
 											"4",
-											"The pommel of your mentor's sword"
+											"El pomo de la empuñadura de la espada de tu mentor"
 										],
 										[
 											"5",
-											"A meaningful favor from someone you defended—perhaps a handkerchief or glove"
+											"Un regalo significativo de alguien a quien defendiste (quizá un pañuelo o un guante)"
 										],
 										[
 											"6",
-											"A locket with a sketch of a silver dragon inside"
+											"Un relicario con un dibujo de un dragón de plata en su interior"
 										]
 									]
 								}
@@ -15585,7 +15517,7 @@
 			],
 			"fluff": {
 				"entries": [
-					"You have trained to be a valorous warrior known as a Knight of Solamnia. Strict rules guide your every action, and you work to uphold them as you strive to defend the weak and oppose evil. Your honor is as important to you as your life."
+					"Te has entrenado para ser un valeroso guerrero conocido como Caballero de Solamnia. Todos tus actos se rigen por normas estrictas y te aplicas en preservarlas, al tiempo que te esfuerzas por defender a los débiles y oponerte al mal. Para ti, tu honor es tan importante como tu vida."
 				],
 				"images": [
 					{
@@ -15600,9 +15532,9 @@
 			}
 		},
 		{
-			"name": "Mage of High Sorcery",
+			"name": "Mago de la Alta Hechicería",
 			"source": "DSotDQ-ES",
-			"page": 30,
+			"page": 31,
 			"prerequisite": [
 				{
 					"campaign": [
@@ -15612,7 +15544,7 @@
 			],
 			"feats": [
 				{
-					"initiate of high sorcery|dsotdq": true
+					"Iniciado de la Alta Hechicería|DSotDQ-ES": true
 				}
 			],
 			"skillProficiencies": [
@@ -15629,11 +15561,11 @@
 			"startingEquipment": [
 				{
 					"_": [
-						"ink (1-ounce bottle)|phb",
-						"ink pen|phb",
-						"common clothes|phb",
+						"tinta, botella de 1 onza|PHB-ES",
+						"pluma (para escribir)|PHB-ES",
+						"ropas comunes|PHB-ES",
 						{
-							"item": "pouch|phb",
+							"item": "bolsa|PHB-ES",
 							"containsValue": 1000
 						}
 					]
@@ -15649,27 +15581,27 @@
 					"items": [
 						{
 							"type": "item",
-							"name": "Skill Proficiencies:",
-							"entry": "{@skill Arcana}, {@skill History}"
+							"name": "Competencias en habilidades:",
+							"entry": "{@skill Conocimiento Arcano|PHB-ES}, {@skill Historia|PHB-ES}"
 						},
 						{
 							"type": "item",
-							"name": "Languages:",
-							"entry": "Two of your choice"
+							"name": "Idiomas:",
+							"entry": "Dos de tu elección."
 						},
 						{
 							"type": "item",
-							"name": "Equipment:",
-							"entry": "A {@item Ink (1-ounce bottle)|PHB|bottle of colored ink}, an {@item ink pen|phb}, a set of {@item common clothes|phb}, and a {@item pouch|phb} containing 10 gp"
+							"name": "Equipo:",
+							"entry": "Una {@item tinta, botella de 1 onza|PHB-ES|botella de tinta de color}, una {@item pluma (para escribir)|PHB-ES|pluma}, una muda de {@item ropas comunes|PHB-ES} y una {@item bolsa|PHB-ES} que contiene 10 po."
 						}
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Feature: Initiate of High Sorcery",
+					"name": "Rasgo: Iniciado de la Alta Hechicería",
 					"entries": [
-						"You gain the {@feat Initiate of High Sorcery|DSotDQ} feat.",
-						"In addition, the Mages of High Sorcery provide you with free, modest lodging and food indefinitely at any occupied Tower of High Sorcery and for one night at the home of an organization member."
+						"Obtienes la dote {@feat Iniciado de la Alta Hechicería|DSotDQ-ES}.",
+						"Además, los Magos de la Alta Hechicería te proporcionan comida y alojamiento modestos de forma gratuita en cualquier Torre de la Alta Hechicería ocupada y durante una noche en casa de un miembro de la organización."
 					],
 					"data": {
 						"isFeature": true
@@ -15677,20 +15609,20 @@
 				},
 				{
 					"type": "entries",
-					"name": "Building a Mage of High Sorcery Character",
+					"name": "Crear un personaje Mago de la Alta Hechicería",
 					"entries": [
-						"Mages of High Sorcery are typically sorcerers, warlocks, or wizards and might have any subclass. Spellcasters who gain their magic through devotion are less likely to be welcomed among the traditionalist mages. Nevertheless, the Mages of High Sorcery are shrewd, and they rarely let unique opportunities or individuals pass them by. Even members of martial classes who train in magic might find a rare place among the group's three orders.",
+						"Normalmente, los Magos de la Alta Hechicería son brujos, hechiceros o magos y pueden tener cualquier subclase. Es menos probable que los lanzadores de conjuros que obtienen su magia por la devoción sean acogidos entre la tradicionalista institución. Sin embargo, los Magos de la Alta Hechicería son astutos y rara vez permiten que se les escapen oportunidades únicas o personas singulares. En raras ocasiones, incluso miembros de clases marciales que se entrenen en la magia podrían encontrar un lugar entre las tres órdenes del grupo.",
 						{
 							"type": "entries",
-							"name": "Mage of High Sorcery Trinkets",
+							"name": "Bagatelas de Mago de la Alta Hechicería",
 							"entries": [
-								"When you make your character, roll once on the Mage of High Sorcery Trinkets table instead of on the {@item trinket|phb|Trinkets table} in the Player's Handbook for your starting trinket.",
+								"Cuando crees tu personaje, tira una vez en la tabla \"Bagatelas de un Mago de la Alta Hechicería\" en lugar de la {@item Bagatela|PHB-ES|tabla \"Bagatelas\"} del Manual del Jugador para conocer tu bagatela inicial.",
 								{
 									"type": "table",
-									"caption": "Mage of High Sorcery Trinkets",
+									"caption": "Bagatelas de un Mago de la Alta Hechicería",
 									"colLabels": [
 										"d6",
-										"Trinket"
+										"Bagatela"
 									],
 									"colStyles": [
 										"col-1 text-center",
@@ -15699,27 +15631,27 @@
 									"rows": [
 										[
 											"1",
-											"An unopened letter from your first teacher"
+											"Una carta sin abrir de tu primer maestro"
 										],
 										[
 											"2",
-											"A broken wand made of black, red, or white wood"
+											"Una varita rota de madera blanca, negra o roja"
 										],
 										[
 											"3",
-											"A scroll bearing an incomprehensible formula"
+											"Un pergamino que contiene una fórmula incomprensible"
 										],
 										[
 											"4",
-											"A purposeless device covered in colored stones that can fold into various enigmatic shapes"
+											"Un dispositivo sin finalidad alguna recubierto de piedras de colores que se puede plegar para que adopte distintas formas enigmáticas"
 										],
 										[
 											"5",
-											"A pouch or spellbook emblazoned with the triple moon symbol of the Mages of High Sorcery"
+											"Una bolsa o un libro de conjuros adornado con el símbolo de las tres lunas de los Magos de la Alta Hechicería"
 										],
 										[
 											"6",
-											"A lens through which you can see Krynn's invisible black moon, Nuitari"
+											"Una lente a través de la que puedes ver la luna negra invisible de Krynn, Nuitari"
 										]
 									]
 								}
@@ -15730,8 +15662,8 @@
 			],
 			"fluff": {
 				"entries": [
-					"Your talent for magic came to the attention of the Mages of High Sorcery, an organization of spellcasters that studies magic and prevents its misuse. You've trained among the Mages, but whether you'll face the dangerous test required to become a full member of the group remains to be determined. Your passion for studying magic has likely already predisposed you toward one of the organization's three orders: the benevolent Order of the White Robes, the balance-pursuing Order of the Red Robes, or the ruthless Order of the Black Robes.",
-					"In the world of Krynn, many refer to the Mages of High Sorcery as the Wizards of High Sorcery. The organization accepts more than wizards, though, with sorcerers, warlocks, and other spellcasters included among their ranks."
+					"Tu talento para la hechicería llamó la atención de los Magos de la Alta Hechicería, una organización de lanzadores de conjuros que estudia la magia e impide que esta se use de forma incorrecta. Te has entrenado entre estos Magos, pero aún queda por determinar si te enfrentarás a la peligrosa prueba necesaria para ser miembro de pleno derecho del grupo. Tu pasión por el estudio de la magia probablemente ya te habrá predispuesto hacia una de las tres órdenes de la organización: la benevolente Orden de los Túnicas Blancas, la Orden de los Túnicas Rojas y su búsqueda del equilibrio o la despiadada Orden de los Túnicas Negras.",
+					"Pese a denominarse Magos de la Alta Hechicería, la organización no solo acepta magos, y entre sus filas se encuentran brujos, hechiceros y otros lanzadores de conjuros."
 				],
 				"images": [
 					{
@@ -15740,7 +15672,7 @@
 							"type": "internal",
 							"path": "backgrounds/DSotDQ/Mage of High Sorcery.webp"
 						},
-						"title": "Mages of High Sorcery of the Orders of the Black, Red, and White Robes",
+						"title": "Magas de la Alta Hechicería de las Órdenes de los Túnicas Negras, Rojas y Blancas",
 						"credit": "Linda Lithén"
 					}
 				]
