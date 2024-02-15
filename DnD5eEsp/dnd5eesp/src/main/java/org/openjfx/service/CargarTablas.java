@@ -865,14 +865,14 @@ public class CargarTablas extends Service<Void>{
         //Comprobamos si tienes token
         if(dato.has("hasToken")) {
             dato.remove("hasToken");
-            String rutaToken = "img/";
+            String rutaToken = "";
             if(importTable.getFieldName().equals("object")) {
                 rutaToken = rutaToken+"objects/tokens/";
             } else if(importTable.getFieldName().equals("vehicle")) {
                 rutaToken = rutaToken+"vehicles/tokens/";
             }
             rutaToken = rutaToken+source+"/";
-            String nombreToken = text.trim().replaceAll(" ", "%20")+".png";
+            String nombreToken = text.trim().replaceAll(" ", "%20")+".webp";
             String urlToken = AppProperties.getInstance().getProperty("urlToken")+rutaToken+nombreToken;
             dato.addProperty("tokenUrl", urlToken);
         }
