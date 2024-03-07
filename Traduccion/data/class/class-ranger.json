@@ -1,9 +1,9 @@
 {
 	"class": [
 		{
-			"name": "Ranger",
+			"name": "Explorador",
 			"source": "PHB-ES",
-			"page": 89,
+			"page": 77,
 			"srd": true,
 			"hd": {
 				"number": 1,
@@ -39,9 +39,9 @@
 			],
 			"optionalfeatureProgression": [
 				{
-					"name": "Fighting Style",
+					"name": "Estilo de Combate",
 					"featureType": [
-						"FS:R"
+						"FS_Esp:R"
 					],
 					"progression": {
 						"2": 1
@@ -52,7 +52,7 @@
 				"armor": [
 					"light",
 					"medium",
-					"{@item shield|phb|shields}"
+					"{@item escudo|PHB-ES|escudos}"
 				],
 				"weapons": [
 					"simple",
@@ -79,25 +79,25 @@
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"default": [
-					"(a) {@item scale mail|phb} or (b) {@item leather armor|phb}",
-					"(a) two {@item shortsword|phb|shortswords} or (b) two {@filter simple melee weapons|items|source=phb|category=basic|type=simple weapon;melee weapon=sand}",
-					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}",
-					"A {@item longbow|phb} and a {@item quiver|phb} of {@item arrows (20)|phb|20 arrows}"
+					"(a) {@item cota de escamas|PHB-ES} o (b) {@item armadura de cuero|PHB-ES}",
+					"(a) dos {@item espada corta|PHB-ES|espadas cortas} o (b) dos {@filter armas sencillas|items|source=PHB-ES|category=basic|type=simple weapon;melee weapon=sand}",
+					"(a) un {@item paquete de explorador de mazmorras|PHB-ES} o (b) un {@item paquete de explorador|PHB-ES}",
+					"Un {@item arco largo|PHB-ES} y una {@item aljaba|PHB-ES} con {@item flechas (20)|PHB-ES|20 flechas}"
 				],
 				"goldAlternative": "{@dice 5d4 × 10|5d4 × 10|Starting Gold}",
 				"defaultData": [
 					{
 						"a": [
-							"scale mail|phb"
+							"cota de escamas|PHB-ES"
 						],
 						"b": [
-							"leather armor|phb"
+							"armadura de cuero|PHB-ES"
 						]
 					},
 					{
 						"a": [
 							{
-								"item": "shortsword|phb",
+								"item": "espada corta|PHB-ES",
 								"quantity": 2
 							}
 						],
@@ -110,16 +110,16 @@
 					},
 					{
 						"a": [
-							"dungeoneer's pack|phb"
+							"paquete de explorador de mazmorras|PHB-ES"
 						],
 						"b": [
-							"explorer's pack|phb"
+							"paquete de explorador|PHB-ES"
 						]
 					},
 					{
 						"_": [
-							"longbow|phb",
-							"arrows (20)|phb"
+							"arco largo|PHB-ES",
+							"flechas (20)|PHB-ES"
 						]
 					}
 				]
@@ -133,7 +133,7 @@
 					"armor": [
 						"light",
 						"medium",
-						"{@item shield|phb|shields}"
+						"{@item escudo|PHB-ES|escudos}"
 					],
 					"skills": [
 						{
@@ -161,7 +161,7 @@
 			"classTableGroups": [
 				{
 					"colLabels": [
-						"{@filter Spells Known|spells|class=ranger}"
+						"{@filter Trucos conocidos|spells|class=Explorador (PHB-ES)}"
 					],
 					"rows": [
 						[
@@ -227,13 +227,13 @@
 					]
 				},
 				{
-					"title": "Spell Slots per Spell Level",
+					"title": "Espacios de conjuro por cada nivel de conjuro",
 					"colLabels": [
-						"{@filter 1st|spells|level=1|class=Ranger}",
-						"{@filter 2nd|spells|level=2|class=Ranger}",
-						"{@filter 3rd|spells|level=3|class=Ranger}",
-						"{@filter 4th|spells|level=4|class=Ranger}",
-						"{@filter 5th|spells|level=5|class=Ranger}"
+						"{@filter 1|spells|level=1|class=Explorador (PHB-ES)}",
+						"{@filter 2|spells|level=2|class=Explorador (PHB-ES)}",
+						"{@filter 3|spells|level=3|class=Explorador (PHB-ES)}",
+						"{@filter 4|spells|level=4|class=Explorador (PHB-ES)}",
+						"{@filter 5|spells|level=5|class=Explorador (PHB-ES)}"
 					],
 					"rowsSpellProgression": [
 						[
@@ -380,94 +380,94 @@
 				}
 			],
 			"classFeatures": [
-				"Favored Enemy|Ranger||1",
-				"Favored Foe|Ranger||1|TCE",
-				"Natural Explorer|Ranger||1",
-				"Deft Explorer|Ranger||1|TCE",
-				"Fighting Style|Ranger||2",
-				"Spellcasting|Ranger||2",
-				"Spellcasting Focus|Ranger||2|TCE",
+				"Enemigo Predilecto|Explorador|PHB-ES|1",
+				"Oponente Predilecto|Explorador|PHB-ES|1|TCE-ES",
+				"Explorador Nato|Explorador|PHB-ES|1",
+				"Explorador Hábil|Explorador|PHB-ES|1|TCE-ES",
+				"Estilo de Combate|Explorador|PHB-ES|2",
+				"Lanzamiento de Conjuros|Explorador|PHB-ES|2",
+				"Canalizador Mágico|Explorador|PHB-ES|2|TCE-ES",
 				{
-					"classFeature": "Ranger Archetype|Ranger||3",
+					"classFeature": "Arquetipo de Explorador|Explorador|PHB-ES|3",
 					"gainSubclassFeature": true
 				},
-				"Primeval Awareness|Ranger||3",
-				"Primal Awareness|Ranger||3|TCE",
-				"Ability Score Improvement|Ranger||4",
-				"Martial Versatility|Ranger||4|TCE",
-				"Extra Attack|Ranger||5",
-				"Favored Enemy and Natural Explorer improvements|Ranger||6",
-				"Deft Explorer Improvement|Ranger||6|TCE",
+				"Percepción Primigenia|Explorador|PHB-ES|3",
+				"Conciencia Primigenia|Explorador|PHB-ES|3|TCE-ES",
+				"Mejora de Característica|Explorador|PHB-ES|4",
+				"Versatilidad Marcial|Explorador|PHB-ES|4|TCE-ES",
+				"Ataque Adicional|Explorador|PHB-ES|5",
+				"Mejora de Enemigo Predilecto y Explorador Nato|Explorador|PHB-ES|6",
+				"Mejora de Explorador Hábil|Explorador|PHB-ES|6|TCE-ES",
 				{
-					"classFeature": "Ranger Archetype feature|Ranger||7",
+					"classFeature": "Rasgo de Arquetipo de Explorador|Explorador|PHB-ES|7",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Ranger||8",
-				"Land's Stride|Ranger||8",
-				"Hide in Plain Sight|Ranger||10",
-				"Nature's Veil|Ranger||10|TCE",
-				"Natural Explorer improvement|Ranger||10",
-				"Deft Explorer Improvement|Ranger||10|TCE",
+				"Mejora de Característica|Explorador|PHB-ES|8",
+				"Paso de la Tierra|Explorador|PHB-ES|8",
+				"Esconderse a Plena Vista|Explorador|PHB-ES|10",
+				"Velo de la Naturaleza|Explorador|PHB-ES|10|TCE-ES",
+				"Mejora de Explorador Nato|Explorador|PHB-ES|10",
+				"Mejora de Explorador Hábil|Explorador|PHB-ES|10|TCE-ES",
 				{
-					"classFeature": "Ranger Archetype feature|Ranger||11",
+					"classFeature": "Rasgo de Arquetipo de Explorador|Explorador|PHB-ES|11",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Ranger||12",
-				"Vanish|Ranger||14",
-				"Favored Enemy improvement|Ranger||14",
+				"Mejora de Característica|Explorador|PHB-ES|12",
+				"Desvanecerse|Explorador|PHB-ES|14",
+				"Mejora de Enemigo Predilecto|Explorador|PHB-ES|14",
 				{
-					"classFeature": "Ranger Archetype feature|Ranger||15",
+					"classFeature": "Rasgo de Arquetipo de Explorador|Explorador|PHB-ES|15",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Ranger||16",
-				"Feral Senses|Ranger||18",
-				"Ability Score Improvement|Ranger||19",
-				"Foe Slayer|Ranger||20"
+				"Mejora de Característica|Explorador|PHB-ES|16",
+				"Sentidos Salvajes|Explorador|PHB-ES|18",
+				"Mejora de Característica|Explorador|PHB-ES|19",
+				"Azote de Enemigos|Explorador|PHB-ES|20"
 			],
-			"subclassTitle": "Ranger Archetype",
+			"subclassTitle": "Arquetipo de Explorador",
 			"fluff": [
 				{
-					"name": "Ranger",
+					"name": "Explorador",
 					"type": "section",
 					"entries": [
-						"Rough and wild looking, a human stalks alone through the shadows of trees, hunting the orcs he knows are planning a raid on a nearby farm. Clutching a shortsword in each hand, he becomes a whirlwind of steel, cutting down one enemy after another.",
-						"After tumbling away from a cone of freezing air, an elf finds her feet and draws back her bow to loose an arrow at the white dragon. Shrugging off the wave of fear that emanates from the dragon like the cold of its breath, she sends one arrow after another to find the gaps between the dragon's thick scales.",
-						"Holding his hand high, a half-elf whistles to the hawk that circles high above him, calling the bird back to his side. Whispering instructions in Elvish, he points to the owlbear he's been tracking and sends the hawk to distract the creature while he readies his bow.",
-						"Far from the bustle of cities and towns, past the hedges that shelter the most distant farms from the terrors of the wild, amid the dense-packed trees of trackless forests and across wide and empty plains, rangers keep their unending watch.",
+						"Duro y de aspecto salvaje, un explorador humano acecha en solitario entre las sombras de los árboles, cazando a un grupo de orcos, sabedor de que planean una incursión a una granja cercana. Agarrando con fuerza una espada corta en cada mano, se transforma en un torbellino de acero, cortando en pedazos a un enemigo tras otro.",
+						"Tras esquivar un cono de aire helado, una elfa se pone en pie y tensa la cuerda de su arco para disparar una flecha contra el dragón blanco. Sin dejarse dominar por la ola de terror que surge de la horrible bestia con una fuerza comparable a la de su gélido aliento, la arquera lanza una flecha tras otra, penetrando en los huecos entre las gruesas escamas del dragón",
+						"Alzando su mano, un semielfo silba para llamar la atención del halcón que vuela describiendo círculos sobre él, ordenándolo que vuelva a su lado. Susurrando a la rapaz instrucciones en lengua élfica, señala a un oso lechuza al que ha estado rastreando y manda al halcón que distraiga a la criatura mientras él tensa su arco.",
+						"Los exploradores persisten en su eterna vigilancia lejos del bullicio de las ciudades y los pueblos, fuera de los muros que defienden las granjas más remotas de los terrores de la naturaleza salvaje, entre los densos bosques que carecen de sendero alguno y a través de extensas llanuras deshabitadas.",
 						{
 							"type": "entries",
-							"name": "Deadly Hunters",
+							"name": "Cazadores Letales",
 							"entries": [
-								"Warriors of the wilderness, rangers specialize in hunting the monsters that threaten the edges of civilization—humanoid raiders, rampaging beasts and monstrosities, terrible giants, and deadly dragons. They learn to track their quarry as a predator does, moving stealthily through the wilds and hiding themselves in brush and rubble. Rangers focus their combat training on techniques that are particularly useful against their specific favored foes.",
-								"Thanks to their familiarity with the wilds, rangers acquire the ability to cast spells that harness nature's power, much as a druid does. Their spells, like their combat abilities, emphasize speed, stealth, and the hunt. A ranger's talents and abilities are honed with deadly focus on the grim task of protecting the borderlands."
+								"Los exploradores son combatientes acostumbrados a la naturaleza salvaje, que se especializan en cazar a los monstruos que amenazan los lindes de la civilización: incursores humanoides, bestias u otras monstruosidades enfurecidas, gigantes terribles y mortíferos dragones. Aprenden a rastrear a sus presas como si de depredadores se tratara, moviéndose con sigilo a través del entorno natural y escondiéndose entre arbustos y escombros. Los exploradores enfocan su entrenamiento para el combate en aquellas técnicas que son especialmente útiles contra sus enemigos predilectos.",
+								"Gracias a su conexión con la tierra y el entorno, los exploradores, de forma similar a los druidas, desarrollan la capacidad de lanzar conjuros que emplean el poder de la naturaleza. Sus conjuros, al igual que sus habilidades para el combate, enfatizan la velocidad, el sigilo y otros aspectos de la caza. Los mortíferos talentos y capacidades de un explorador han sido perfeccionados con el fin de defender las tierras fronterizas, una tarea desalentadora."
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Independent Adventurers",
+							"name": "Aventureros Independientes",
 							"entries": [
-								"Though a ranger might make a living as a hunter, a guide, or a tracker, a ranger's true calling is to defend the outskirts of civilization from the ravages of monsters and humanoid hordes that press in from the wild. In some places, rangers gather in secretive orders or join forces with druidic circles. Many rangers, though, are independent almost to a fault, knowing that, when a dragon or a band of orcs attacks, a ranger might be the first—and possibly the last—line of defense.",
-								"This fierce independence makes rangers well suited to adventuring, since they are accustomed to life far from the comforts of a dry bed and a hot bath. Faced with city-bred adventurers who grouse and whine about the hardships of the wild, rangers respond with some mixture of amusement, frustration, and compassion. But they quickly learn that other adventurers who can carry their own weight in a fight against civilization's foes are worth any extra burden. Coddled city folk might not know how to feed themselves or find fresh water in the wild, but they make up for it in other ways."
+								"Aunque un explorador podría ganarse la vida como cazador, guía o rastreador, su verdadera vocación es defender las zonas periféricas de la civilización de las depredaciones de monstruos y hordas de humanoides, que surgen de las tierras salvajes. En algunos lugares, los exploradores se reúnen en órdenes herméticas o unen fuerzas con círculos druídicos. Con todo, muchos exploradores son extremadamente independientes, pues saben que, si un dragón o una banda de orcos ataca, ellos podrían ser la primera, y quizá la última, línea de defensa",
+								"Esta feroz independencia hace de los exploradores muy buenos aventureros, ya que están acostumbrados a la vida lejos de la comodidad de una cama seca y un baño caliente. Cuando se encuentran con los aventureros criados en una ciudad, que se quejan y lamentan de las privaciones del campo, los exploradores reaccionan con una mezcla de diversión, frustración y compasión. No obstante, pronto aprenden que poder apoyarse en otros aventureros, capaces de colaborar en la lucha contra los enemigos de la civilización, compensa de sobra la carga que conlleva relacionarse con ellos. Puede que los consentidos habitantes de una ciudad no sean capaces ni siquiera de encontrar alimento y agua fresca en la naturaleza, pero tienen otros talentos que ofrecer."
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Creating a Ranger",
+							"name": "Creación de un explorador",
 							"entries": [
-								"As you create your ranger character, consider the nature of the training that gave you your particular capabilities. Did you train with a single mentor, wandering the wilds together until you mastered the ranger's ways? Did you leave your apprenticeship, or was your mentor slain—perhaps by the same kind of monster that became your favored enemy? Or perhaps you learned your skills as part of a band of rangers affiliated with a druidic circle, trained in mystic paths as well as wilderness lore. You might be self-taught, a recluse who learned combat skills, tracking, and even a magical connection to nature through the necessity of surviving in the wilds.",
-								"What's the source of your particular hatred of a certain kind of enemy? Did a monster kill someone you loved or destroy your home village? Or did you see too much of the destruction these monsters cause and commit yourself to reining in their depredations? Is your adventuring career a continuation of your work in protecting the borderlands, or a significant change? What made you join up with a band of adventurers? Do you find it challenging to teach new allies the ways of the wild, or do you welcome the relief from solitude that they offer?",
+								"Cuando crees a tu explorador, medita sobre cómo se desarrolló el entrenamiento que le dotó de sus excepcionales facultades. ¿Aprendiste junto a un mentor, vagabundeando por la naturaleza juntos mientras descubrías el camino del explorador? Si fue este el caso, ¿abandonaste tu entrenamiento por voluntad propia?, ¿fue asesinado tu mentor? Si ocurrió esto último, quizá el perpetrador del crimen fuera el tipo de monstruo que acabó convirtiéndose en tu enemigo predilecto. Otra opción es que aprendieras tus habilidades como parte de una banda de exploradores afiliados a un círculo druídico, conocedores tanto de las sendas místicas como del saber de la naturaleza. Tal vez seas un autodidacta, un ermitaño que ha aprendido sus técnicas de combate, rastreo e incluso su conexión mágica con la naturaleza por necesidad, para sobrevivir en las tierras salvajes.",
+								"¿Cuál es la fuente de tu especial odio a cierto tipo de enemigos? Puede que un monstruo quitara la vida a alguien al que amabas o destruyera tu aldea natal. O quizá fuiste testigo de la excesiva destrucción que estos seres causan y decidieras tomarte la justicia por tu mano y acabar con sus estragos. ¿Es tu carrera como aventurero una continuación de tu tarea como protector de las fronteras o un cambio con respecto a ella? ¿Qué te ha movido a unirte a una banda de aventureros? A lo mejor encuentras estimulante enseñar a tus nuevos aliados cómo convivir con la naturaleza o puede que aprecies cómo su presencia ofrece un respiro a tu habitual soledad.",
 								{
 									"type": "entries",
-									"name": "Quick Build",
+									"name": "Creación rápida",
 									"entries": [
-										"You can make a ranger quickly by following these suggestions. First, make Dexterity your highest ability score, followed by Wisdom. (Some rangers who focus on two-weapon fighting make Strength higher than Dexterity.) Second, choose the {@background outlander} background."
+										"Para crear un explorador de forma rápida sugerimos lo siguiente. Para empezar, Destreza debería ser tu característica más alta, seguida de Sabiduría. Aunque algunos de los exploradores que se especializan en el combate con dos armas prefieren que su Fuerza sea superior a su Destreza. A continuación, elige el trasfondo \"{@background salvaje|PHB-ES}\"."
 									]
 								}
 							]
 						}
 					],
-					"source": "PHB",
-					"page": 89
+					"source": "PHB-ES",
+					"page": 77
 				},
 				{
 					"type": "section",
@@ -475,25 +475,25 @@
 						{
 							"type": "quote",
 							"entries": [
-								"I spend a lot of my life away from civilization, keeping to its fringes to protect it. Don't assume that because I don't bend the knee to your king that I haven't done more to protect him than all his knights put together."
+								"Paso gran parte de mi vida lejos de la civilización, quedándome en la periferia para protegerla. No pienses que porque no hinco mi rodilla ante tu rey no he hecho más para defenderle que todos sus caballeros juntos."
 							],
 							"by": "Soveliss"
 						},
-						"Rangers are free-minded wanderers and seekers who patrol the edges of civilized territory, turning back the denizens of the wild lands beyond. It is a thankless job, since their efforts are rarely understood and almost never rewarded. Yet rangers persist in their duties, never doubting that their work makes the world a safer place.",
-						"A relationship with civilization informs every ranger's personality and history. Some rangers see themselves as enforcers of the law and bringers of justice on civilization's frontier, answering to no sovereign power. Others are survivalists who eschew civilization altogether. They vanquish monsters to keep themselves safe while they live in and travel through the perilous wild areas of the world. If their efforts also benefit the kingdoms and other civilized realms that they avoid, so be it.",
-						"If you're creating or playing a ranger character, the following sections offer ideas for embellishing the character and enhancing your roleplaying experience.",
+						"Los exploradores son vagabundos de mente libre y rastreadores que patrullan las fronteras de la civilización, repeliendo a los habitantes de las tierras salvajes que acechan en el exterior. Es un trabajo desagradecido, ya que sus esfuerzos son rara vez comprendidos y casi nunca recompensados. Aun así, los miembros de esta clase siguen cumpliendo con su deber y nunca dudan de que su trabajo hace del mundo un lugar más seguro.",
+						"Su relación con la civilización es lo que define la personalidad e historia de un explorador. Algunos se ven a sí mismos como encargados de hacer cumplir la ley, llevando la justicia a los límites de lo salvaje, que no responden ante ningún gobierno. Otros son supervivientes, que rehúyen por completo la civilización. Matan monstruos para mantenerse seguros mientras viven y viajan por las peligrosas zonas agrestes del mundo. Si sus esfuerzos también benefician a los reinos y estados civilizados a los que evitan, que así sea.",
+						"Si estás creando o jugando un personaje explorador, las siguientes secciones ofrecen ideas para dar profundidad al aventurero y ayudarte a interpretarlo.",
 						{
 							"type": "entries",
-							"name": "View of the World",
+							"name": "Visión del mundo",
 							"entries": [
-								"A ranger's view of the world begins (and sometimes ends) with that character's outlook toward civilized folk and the places they occupy. Some rangers have an attitude toward civilization that's deeply rooted in disdain, while others pity the people they have sworn to protect—though on the battlefield, it's impossible to tell the difference between one ranger and another. Indeed, to those who have seen them operate and been the beneficiaries of their prowess, it scarcely matters why rangers do what they do. That said, no two rangers are likely to express their opinions on any matter in the same way.",
-								"If you haven't yet thought about the details of your character's worldview, consider putting a finer point on things by summarizing that viewpoint in a short statement (such as the entries on the following table). How might that feeling affect the way you conduct yourself?",
+								"La visión del mundo de un explorador comienza (y a veces termina) con la opinión de ese personaje de la gente civilizada y los lugares que habitan. Algunos de ellos tienen una actitud hacia la civilización profundamente arraigada en el desdén, mientas que otros solo compadecen a aquellos a los que han jurado proteger. En el campo de batalla, sin embargo, es imposible diferenciar entre un explorador y otro. Para los que los han visto trabajar y han sido beneficiarios de su habilidad, poco importa por qué hacen lo que hacen. Dicho esto, no hay dos miembros de esta clase que expresen su opinión sobre un asunto de la misma manera.",
+								"Si todavía no te has planteado los detalles de la visión del mundo que tiene tu personaje, puedes resumirlo en una frase, como las que puedes encontrar en la tabla siguiente. ¿Cómo afecta ese punto de vista a la manera en que te comportas?",
 								{
 									"type": "table",
-									"caption": "View of the World",
+									"caption": "Visión del mundo",
 									"colLabels": [
 										"{@dice d6}",
-										"View"
+										"Visión"
 									],
 									"colStyles": [
 										"col-1 text-center",
@@ -507,7 +507,7 @@
 													"exact": 1
 												}
 											},
-											"Towns and cities are the best places for those who can't survive on their own."
+											"Los pueblos y las ciudades son los mejores sitios para aquellos que no pueden sobrevivir por sí mismos."
 										],
 										[
 											{
@@ -516,7 +516,7 @@
 													"exact": 2
 												}
 											},
-											"The advancement of civilization is the best way to thwart chaos, but its reach must be monitored."
+											"El avance de la civilización es la mejor manera de frustrar el avance del caos, pero hay que tener cuidado."
 										],
 										[
 											{
@@ -525,7 +525,7 @@
 													"exact": 3
 												}
 											},
-											"Towns and cities are a necessary evil, but once the wilderness is purged of supernatural threats, we will need them no more."
+											"Los pueblos y las ciudades son un mal necesario, aunque en cuanto la naturaleza sea purgada de amenazas sobrenaturales ya no los necesitaremos."
 										],
 										[
 											{
@@ -534,7 +534,7 @@
 													"exact": 4
 												}
 											},
-											"Walls are for cowards, who huddle behind them while others do the work of making the world safe."
+											"Los muros son para cobardes, que se esconden detrás de ellos mientras otros hacen del mundo un lugar más seguro."
 										],
 										[
 											{
@@ -543,7 +543,7 @@
 													"exact": 5
 												}
 											},
-											"Visiting a town is not unpleasant, but after a few days I feel the irresistible call to return to the wild."
+											"Visitar un pueblo no es desagradable, pero después de unos días siento una irresistible llamada de vuelta a la naturaleza."
 										],
 										[
 											{
@@ -552,7 +552,7 @@
 													"exact": 6
 												}
 											},
-											"Cities breed weakness by isolating folk from the harsh lessons of the wild."
+											"Las ciudades crean debilidad, aislando a las personas de las rigurosas lecciones de la naturaleza."
 										]
 									]
 								}
@@ -560,16 +560,16 @@
 						},
 						{
 							"type": "entries",
-							"name": "Homelands",
+							"name": "Tierra natal",
 							"entries": [
-								"All rangers, regardless of how they came to take up the profession, have a strong connection to the natural world and its various terrains. For some rangers, the wilderness is where they grew up, either as a result of being born there or moving there at a young age. For other rangers, civilization was originally home, but the wilderness became a second homeland.",
-								"Think of your character's backstory and decide what terrain feels most like home, whether or not you were born there. What does that terrain say about your personality? Does it influence which spells you choose to learn? Have your experiences there shaped who your favored enemies are?",
+								"Todos los exploradores, independientemente de cómo hayan acabado en su profesión, tienen una fuerte conexión con el mundo natural y sus variados terrenos. Para algunos miembros de esta clase, la naturaleza es donde crecieron, ya sea como resultado de haber nacido en ella o haber llegado allí a una edad temprana. Para otros, la civilización era su hogar, pero la naturaleza se volvió su segunda casa.",
+								"Piensa en el trasfondo de tu personaje y decide qué terreno siente como su hogar, naciera allí o no. ¿Qué dice ese lugar sobre tu personalidad? ¿Tiene que ver con los conjuros que has decidido aprender? ¿Tus experiencias allí influyeron en cuáles son tus enemigos predilectos?",
 								{
 									"type": "table",
-									"caption": "Homelands",
+									"caption": "Tierras natales",
 									"colLabels": [
 										"{@dice d6}",
-										"Homeland"
+										"Tierra natal"
 									],
 									"colStyles": [
 										"col-1 text-center",
@@ -583,7 +583,7 @@
 													"exact": 1
 												}
 											},
-											"You patrolled an ancient forest, darkened and corrupted by several crossings to the Shadowfell."
+											"Patrullaste un bosque antiguo, oscuro y corrompido por muchos portales al Shadowfell."
 										],
 										[
 											{
@@ -592,7 +592,7 @@
 													"exact": 2
 												}
 											},
-											"As part of a group of nomads, you acquired the skills for surviving in the desert."
+											"Como parte de un grupo de nómadas, aprendiste las habilidades necesarias para sobrevivir en el desierto."
 										],
 										[
 											{
@@ -601,7 +601,7 @@
 													"exact": 3
 												}
 											},
-											"Your early life in the Underdark prepared you for the challenges of combating its denizens."
+											"Tus primeros años, pasados en el Underdark, te prepararon para enfrentarte a sus habitantes."
 										],
 										[
 											{
@@ -610,7 +610,7 @@
 													"exact": 4
 												}
 											},
-											"You dwelled on the edge of a swamp, in an area imperiled by land creatures as well as aquatic ones."
+											"Vivías en el borde de un pantano, un área amenazada tanto por criaturas terrestres como acuáticas."
 										],
 										[
 											{
@@ -619,7 +619,7 @@
 													"exact": 5
 												}
 											},
-											"Because you grew up among the peaks, finding the best path through the mountains is second nature to you."
+											"Como creciste entre las cumbres, encontrar el mejor camino a través de las montañas es instintivo para ti."
 										],
 										[
 											{
@@ -628,7 +628,7 @@
 													"exact": 6
 												}
 											},
-											"You wandered the far north, learning how to protect yourself and prosper in a realm overrun by ice."
+											"Erraste por el lejano norte, aprendiendo a protegerte y prosperar en un reino cubierto de hielo."
 										]
 									]
 								}
@@ -636,16 +636,16 @@
 						},
 						{
 							"type": "entries",
-							"name": "Sworn Enemy",
+							"name": "Enemigo jurado",
 							"entries": [
-								"Every ranger begins with a favored enemy (or two). The determination of a favored enemy might be tied to a specific event in the character's early life, or it might be entirely a matter of choice.",
-								"What spurred your character to select a particular enemy? Was the choice made because of tradition or curiosity, or do you have a grudge to settle?",
+								"Todo explorador comienza con un enemigo predilecto (o dos). Determinar cuál es puede estar vinculado a un evento en la primera etapa de la vida del personaje o, simplemente, puede ser una elección.",
+								"¿Qué llevó a tu personaje a elegir a un enemigo concreto? Esta decisión. ¿estuvo motivada por la tradición y la curiosidad o es una cuestión de rencor?",
 								{
 									"type": "table",
-									"caption": "Sworn Enemies",
+									"caption": "Enemigos jurados",
 									"colLabels": [
 										"{@dice d6}",
-										"Enemy"
+										"Enemigo"
 									],
 									"colStyles": [
 										"col-1 text-center",
@@ -659,7 +659,7 @@
 													"exact": 1
 												}
 											},
-											"You seek revenge on nature's behalf for the great transgressions your foe has committed."
+											"Buscas vengarte en nombre de la naturaleza por las terribles transgresiones que ha cometido tu enemigo."
 										],
 										[
 											{
@@ -668,7 +668,7 @@
 													"exact": 2
 												}
 											},
-											"Your forebears or predecessors fought these creatures, and so shall you."
+											"Tus ancestros o predecesores lucharon contra estas criaturas, por lo que tú también lo harás."
 										],
 										[
 											{
@@ -677,7 +677,7 @@
 													"exact": 3
 												}
 											},
-											"You bear no enmity toward your foe. You stalk such creatures as a hunter tracks down a wild animal."
+											"No sientes enemistad por tu adversario. Acechas a estas criaturas como un cazador rastrea a un animal salvaje."
 										],
 										[
 											{
@@ -686,7 +686,7 @@
 													"exact": 4
 												}
 											},
-											"You find your foe fascinating, and you collect books of tales and history concerning it."
+											"Encuentras a tu rival fascinante, de modo que coleccionas libros de historia y relatos sobre él."
 										],
 										[
 											{
@@ -695,7 +695,7 @@
 													"exact": 5
 												}
 											},
-											"You collect tokens of your fallen enemies to remind you of each kill."
+											"Acumulas símbolos de tus enemigos caídos para recordarte cada muerte."
 										],
 										[
 											{
@@ -704,176 +704,176 @@
 													"exact": 6
 												}
 											},
-											"You respect your chosen enemy, and you see your battles as a test of respective skills."
+											"Respetas a tu enemigo elegido y ves vuestras batallas como una prueba de las habilidades de cada uno."
 										]
 									]
 								}
 							]
 						}
 					],
-					"page": 40,
-					"source": "XGE"
+					"page": 32,
+					"source": "XGE-ES"
 				}
 			]
 		}
 	],
 	"classFeature": [
 		{
-			"name": "Deft Explorer",
+			"name": "Explorador Hábil",
 			"source": "TCE-ES",
-			"page": 56,
-			"className": "Ranger",
+			"page": 46,
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"level": 1,
 			"isClassFeatureVariant": true,
 			"entries": [
-				"{@i 1st-level ranger {@variantrule optional class features|tce|optional feature}, which replaces the Natural Explorer feature}",
-				"You are an unsurpassed explorer and survivor, both in the wilderness and in dealing with others on your travels. You gain the Canny benefit below, and you gain an additional benefit below when you reach 6th level and 10th level in this class.",
+				"{@i {@variantrule Rasgos de clase opcionales|TCE-ES|Rasgo opcional} de explorador de nivel 1 que sustituye al rasgo Explorador Nato}",
+				"Eres un explorador y un superviviente sin par, tanto en la naturaleza como en el trato con otros durante tus viajes. Obtienes el beneficio de Sagacidad descrito debajo. Además, en los niveles 6 y 10 de esta clase, consigues los beneficios adicionales indicados más adelante.",
 				{
-					"name": "Canny",
+					"name": "Sagacidad",
 					"type": "entries",
 					"entries": [
-						"Choose one of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses the chosen skill.",
-						"You can also speak, read, and write two additional languages of your choice."
+						"Escoge una de tus competencias en habilidades. Tu bonificador por competencia se duplica para cualquier prueba de característica que hagas utilizando la habilidad elegida.",
+						"También puedes hablar, leer y escribir en dos idiomas adicionales de tu elección."
 					]
 				}
 			]
 		},
 		{
-			"name": "Favored Enemy",
+			"name": "Enemigo Predilecto",
 			"source": "PHB-ES",
-			"page": 89,
+			"page": 79,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"level": 1,
 			"entries": [
-				"Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy.",
-				"Choose a type of favored enemy: {@filter aberrations|bestiary|type=aberration}, {@filter beasts|bestiary|type=beast}, {@filter celestials|bestiary|type=celestial}, {@filter constructs|bestiary|type=construct}, {@filter dragons|bestiary|type=dragon}, {@filter elementals|bestiary|type=elemental}, {@filter fey|bestiary|type=fey}, {@filter fiends|bestiary|type=fiend}, {@filter giants|bestiary|type=giant}, {@filter monstrosities|bestiary|type=monstrosity}, {@filter oozes|bestiary|type=ooze}, {@filter plants|bestiary|type=plant}, or {@filter undead|bestiary|type=undead}. Alternatively, you can select two races of {@filter humanoid|bestiary|type=humanoid} (such as {@creature gnoll||gnolls} and {@creature orc||orcs}) as favored enemies.",
-				"You have advantage on Wisdom ({@skill Survival}) checks to track your favored enemies, as well as on Intelligence checks to recall information about them.",
-				"When you gain this feature, you also learn one language of your choice that is spoken by your favored enemies, if they speak one at all.",
-				"You choose one additional favored enemy, as well as an associated language, at 6th and 14th level. As you gain levels, your choices should reflect the types of monsters you have encountered on your adventures."
+				"Desde el nivel 1 posees una enorme experiencia estudiando, rastreando, cazando e incluso hablando con un tipo concreto de enemigo.",
+				"Escoge un tipo de enemigo predilecto: {@filter aberraciones|bestiary|type=aberration}, {@filter autómatas|bestiary|type=construct}, {@filter bestias|bestiary|type=beast}, {@filter celestiales|bestiary|type=celestial}, {@filter cienos|bestiary|type=ooze}, {@filter dragones|bestiary|type=dragon}, {@filter elementales|bestiary|type=elemental}, {@filter feéricos|bestiary|type=fey}, {@filter gigantes|bestiary|type=giant}, {@filter infernales|bestiary|type=fiend}, {@filter monstruosidades|bestiary|type=monstrosity}, {@filter muertos vivientes|bestiary|type=undead} o {@filter plantas|bestiary|type=plant}. De forma alternativa, puedes elegir dos razas de {@filter humanoides|bestiary|type=humanoid} (como {@creature gnoll|MM-ES|gnolls} y {@creature orco|MM-ES|orcos}, por ejemplo) como enemigos predilectos.",
+				"Posees ventaja en las pruebas de Sabiduría ({@skill Survival|PHB-ES|Supervivencia}) para rastrear a tus enemigos predilectos, así como en las pruebas de Inteligencia para recordar información sobre ellos.",
+				"Cuando obtienes este rasgo también aprendes un idioma de tu elección que sea hablado por tus enemigos predilectos (si es que poseen alguno).",
+				"Puedes elegir un enemigo predilecto adicional, así como el idioma asociado al mismo, cuando alcanzas los niveles 6 y 14. Estas elecciones deberían representar aquellos tipos de monstruos con los que te has encontrado durante tus aventuras."
 			]
 		},
 		{
-			"name": "Favored Foe",
+			"name": "Oponente Predilecto",
 			"source": "TCE-ES",
-			"page": 56,
-			"className": "Ranger",
+			"page": 46,
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"level": 1,
 			"isClassFeatureVariant": true,
 			"entries": [
-				"{@i 1st-level ranger {@variantrule optional class features|tce|optional feature}, which replaces the Favored Enemy feature and works with the Foe Slayer feature}",
-				"When you hit a creature with an attack roll, you can call on your mystical bond with nature to mark the target as your favored enemy for 1 minute or until you lose your {@status concentration} (as if you were {@status concentration||concentrating} on a spell).",
-				"The first time on each of your turns that you hit the favored enemy and deal damage to it, including when you mark it, you can increase that damage by {@dice 1d4}.",
-				"You can use this feature to mark a favored enemy a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
-				"This feature's extra damage increases when you reach certain levels in this class: to {@dice 1d6} at 6th level and to {@dice 1d8} at 14th level."
+				"{@i {@variantrule Rasgos de clase opcionales|TCE-ES|Rasgo opcional} de explorador de nivel 1 que sustituye al rasgo Enemigo Predilecto y funciona con el rasgo Azote de Enemigos}",
+				"Cuando impactes a una criatura con una tirada de ataque, podrás recurrir a tu vínculo místico con la naturaleza para marcar al objetivo como tu enemigo predilecto durante 1 minuto o hasta que pierdas la {@status concentración|PHB-ES} (como si te estuvieras {@status concentración|PHB-ES|concentrando} en un conjuro).",
+				"La primera vez en cada uno de tus turnos que impactes al enemigo predilecto y le causes daño, incluido cuando lo marques, podrás aumentar el daño en {@dice 1d4}.",
+				"Puedes usar este rasgo para marcar a un objetivo como enemigo predilecto una cantidad de veces igual a tu bonificador por competencia y recuperas todos los usos tras finalizar un descanso largo.",
+				"El daño adicional de este rasgo aumenta cuando alcanzas ciertos niveles en esta clase: a {@dice 1d6} en el nivel 6 y a {@dice 1d8} en el nivel 14."
 			]
 		},
 		{
-			"name": "Natural Explorer",
+			"name": "Explorador Nato",
 			"source": "PHB-ES",
-			"page": 89,
+			"page": 79,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"level": 1,
 			"entries": [
-				"You are particularly familiar with one type of natural environment and are adept at traveling and surviving in such regions. Choose one type of favored terrain: arctic, coast, desert, forest, grassland, mountain, swamp, or the Underdark. When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency bonus is doubled if you are using a skill that you're proficient in.",
-				"While traveling for an hour or more in your favored terrain, you gain the following benefits:",
+				"Estás muy familiarizado con un tipo de entorno natural concreto, por lo que eres un experto en viajar por y sobrevivir en las regiones de ese tipo. Escoge un tipo de terreno predilecto: bosque, costa, desierto, montaña, pantano, pradera, polar o Underdark. Cuando hagas una prueba de Inteligencia o Sabiduría que tenga relación con tu terreno predilecto, añadirás dos veces tu bonificador por competencia si estás usando una habilidad en la que eres competente.",
+				"Cuando viajas durante al menos una hora por tu terreno favorito, obtienes los siguientes beneficios:",
 				{
 					"type": "list",
 					"items": [
-						"Difficult terrain doesn't slow your group's travel.",
-						"Your group can't become lost except by magical means.",
-						"Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.",
-						"If you are traveling alone, you can move stealthily at a normal pace.",
-						"When you forage, you find twice as much food as you normally would.",
-						"While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area."
+						"El terreno difícil no ralentiza el viaje de tu grupo.",
+						"Tu grupo no puede perderse por causas no mágicas.",
+						"Incluso aunque estés ocupado con otra actividad mientras viajas (como forrajear, orientarse o rastrear), permaneces atento al peligro.",
+						"Si estás viajando en solitario, puedes moverte con sigilo a un ritmo de viaje normal.",
+						"Cuando forrajeas, encuentras el doble de comida de lo normal.",
+						"Cuando rastreas a otras criaturas, también descubres el número exacto de las mismas, sus tamaños y hace cuánto pasaron por la zona."
 					]
 				},
-				"You choose additional favored terrain types at 6th and 10th level."
+				"Puedes elegir un terreno predilecto adicional cuando alcanzas los niveles 6 y 10."
 			]
 		},
 		{
-			"name": "Fighting Style",
+			"name": "Estilo de Combate",
 			"source": "PHB-ES",
-			"page": 89,
+			"page": 79,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"level": 2,
 			"entries": [
-				"At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again.",
+				"A nivel 2 adoptas un estilo de combate concreto como tu especialidad. Elige una de las siguientes opciones que aparecen a continuación. No puedes escoger el mismo Estilo de Combate más de una vez, incluso aunque luego puedas elegir de nuevo un Estilo de Combate.",
 				{
 					"type": "options",
 					"count": 1,
 					"entries": [
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Archery"
+							"optionalfeature": "Combate con Dos Armas|PHB-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Defense"
+							"optionalfeature": "Defensa|PHB-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Dueling"
+							"optionalfeature": "Duelo|PHB-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Two-Weapon Fighting"
+							"optionalfeature": "Tiro con Arco|PHB-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Blind Fighting|TCE"
+							"optionalfeature": "Combate con Armas Arrojadizas|TCE-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Druidic Warrior|TCE"
+							"optionalfeature": "Guerrero Druídico|TCE-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Thrown Weapon Fighting|TCE"
+							"optionalfeature": "Lucha a Ciegas|TCE-ES"
 						}
 					]
 				}
 			]
 		},
 		{
-			"name": "Spellcasting",
+			"name": "Lanzamiento de Conjuros",
 			"source": "PHB-ES",
-			"page": 89,
+			"page": 79,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"level": 2,
 			"entries": [
-				"By the time you reach 2nd level, you have learned to use the magical essence of nature to cast spells, much as a druid does. See {@book chapter 10|PHB|10} for the general rules of spellcasting and {@book chapter 11|PHB|11} for the {@filter ranger spell list|spells|class=ranger}.",
+				"Cuando alcanzas el nivel 2 has aprendido a emplear la esencia mágica de la naturaleza, lanzando conjuros como lo haría un druida. El {@book capítulo 10|PHB-ES|10} contiene las reglas de lanzamiento de conjuros y el {@book capítulo 11|PHB-ES|11} la {@filter lista de conjuros de explorador|spells|class=explorador (PHB-ES)}.",
 				{
 					"type": "entries",
-					"name": "Spell Slots",
+					"name": "Espacios de conjuro",
 					"entries": [
-						"The Ranger table shows how many spell slots you have to cast your {@filter ranger spells|spells|class=ranger} of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
-						"For example, if you know the 1st-level spell {@spell animal friendship} and have a 1st-level and a 2nd-level spell slot available, you can cast {@spell animal friendship} using either slot."
+						"La tabla del explorador muestra de cuantos espacios de {@filter conjuro de explorador|spells|class=explorador (PHB-ES)} dispones para lanzar conjuros de nivel 1 y superiores. Para lanzar uno de estos conjuros deberás invertir un espacio de al menos el nivel del conjuro. Recuperas todos los espacios utilizados tras finalizar un descanso largo.",
+						"Si, por ejemplo, conoces el conjuro de nivel 1 {@spell Encantar animal|PHB-ES|encantar animal} y posees un espacio de conjuro de nivel 1 y otro de nivel 2, podrías lanzar {@spell Encantar animal|PHB-ES|encantar animal} empleando cualquiera de los dos espacios."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Spells Known of 1st Level and Higher",
+					"name": "Conjuros conocidos de nivel 1 y superiores",
 					"entries": [
-						"You know two 1st-level spells of your choice from the ranger spell list.",
-						"The Spells Known column of the Ranger table shows when you learn more ranger spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level.",
-						"Additionally, when you gain a level in this class, you can choose one of the ranger spells you know and replace it with another spell from the ranger spell list, which also must be of a level for which you have spell slots."
+						"Conoces dos conjuros de nivel 1 de tu elección, escogidos de entre la lista de conjuros de explorador.",
+						"La columna \"conjuros conocidos\" de la tabla del explorador te indica cuándo podrás aprender más conjuros de explorador y cuántos elegir. Estos conjuros deben ser de un nivel para el que tengas espacios de conjuro. Así, cuando subes a nivel 5 en esta clase puedes aprender un conjuro nuevo, que puede ser de nivel 1 o 2.",
+						"Además, cada vez que subas un nivel de esta clase podrás elegir uno de los conjuros de explorador que ya conoces y reemplazarlo por otro de los que aparecen en la lista de conjuros de explorador. Este reemplazo deberá ser de un nivel para el que poseas espacios de conjuro."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Spellcasting Ability",
+					"name": "Aptitud mágica",
 					"entries": [
-						"Wisdom is your spellcasting ability for your ranger spells, since your magic draws on your attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a ranger spell you cast and when making an attack roll with one.",
+						"La Sabiduría es tu aptitud mágica en lo que a conjuros de explorador respecta, ya que tu magia proviene de tu sintonía con la naturaleza. Así, utilizarás tu Sabiduría siempre que un conjuro de explorador haga referencia a tu aptitud mágica. Además, también usarás tu modificador por Sabiduría para determinar la CD de las tiradas de salvación y las tiradas de ataque de los conjuros de explorador que lances.",
 						{
 							"type": "abilityDc",
 							"name": "Spell",
@@ -893,35 +893,35 @@
 			]
 		},
 		{
-			"name": "Spellcasting Focus",
+			"name": "Canalizador Mágico",
 			"source": "TCE-ES",
-			"page": 56,
-			"className": "Ranger",
+			"page": 47,
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"level": 2,
 			"isClassFeatureVariant": true,
 			"entries": [
-				"{@i 2nd-level ranger {@variantrule optional class features|tce|optional feature}}",
-				"You can use a {@item druidic focus|phb} as a spellcasting focus for your ranger spells. A druidic focus might be a sprig of mistletoe or holly, a wand or rod made of yew or another special wood, a staff drawn whole from a living tree, or an object incorporating feathers, fur, bones, and teeth from sacred animals."
+				"{@i {@variantrule Rasgos de clase opcionales|TCE-ES|Rasgo opcional} de explorador de nivel 2}",
+				"Puedes usar un {@item canalizadores druídicos|PHB-ES|canalizador druídico} como canalizador mágico para tus conjuros de explorador. Un canalizador druídico puede ser una rama de muérdago o acebo, una varita o una vara hechas de tejo o de otra madera especial, un bastón extraído al completo de un árbol vivo o un objeto con plumas, pieles, huesos y dientes de animales sagrados."
 			]
 		},
 		{
-			"name": "Primal Awareness",
+			"name": "Conciencia Primigenia",
 			"source": "TCE-ES",
-			"page": 56,
-			"className": "Ranger",
+			"page": 47,
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"level": 3,
 			"isClassFeatureVariant": true,
 			"entries": [
-				"{@i 3rd-level ranger {@variantrule optional class features|tce|optional feature}, which replaces the Primeval Awareness feature}",
-				"You can focus your awareness through the interconnections of nature: you learn additional spells when you reach certain levels in this class if you don't already know them, as shown in the Primal Awareness Spells table. These spells don't count against the number of ranger spells you know.",
+				"{@i {@variantrule Rasgos de clase opcionales|TCE-ES|Rasgo opcional} de explorador de nivel 3 que sustituye al rasgo Percepción Primigenia}",
+				"Puedes potenciar tu conciencia mediante las interconexiones de la naturaleza: aprendes conjuros adicionales cuando alcanzas determinados niveles de esta clase si aún no los conoces, tal y como se muestra en la tabla \"Conjuros de Conciencia Primigenia\". Estos conjuros no cuentan para el total de conjuros de explorador que conoces.",
 				{
 					"type": "table",
-					"caption": "Primal Awareness Spells",
+					"caption": "Conjuros de Conciencia Primigenia",
 					"colLabels": [
-						"Ranger Level",
-						"Spell"
+						"Nivel de explorador",
+						"Conjuro"
 					],
 					"colStyles": [
 						"col-2 text-center",
@@ -929,330 +929,331 @@
 					],
 					"rows": [
 						[
-							"3rd",
-							"{@spell speak with animals}"
+							"3",
+							"{@spell hablar con los animales|PHB-ES}"
 						],
 						[
-							"5th",
-							"{@spell beast sense}"
+							"5",
+							"{@spell sentidos de la bestia|PHB-ES}"
 						],
 						[
-							"9th",
-							"{@spell speak with plants}"
+							"9",
+							"{@spell hablar con las plantas|PHB-ES}"
 						],
 						[
-							"13th",
-							"{@spell locate creature}"
+							"13",
+							"{@spell localizar criatura|PHB-ES}"
 						],
 						[
-							"17th",
-							"{@spell commune with nature}"
+							"17",
+							"{@spell comunión con la naturaleza|PHB-ES}"
 						]
 					]
 				},
-				"You can cast each of these spells once without expending a spell slot. Once you cast a spell in this way, you can't do so again until you finish a long rest."
+				"Puedes lanzar cada uno de estos conjuros una vez sin gastar un espacio de conjuro. Cuando lances un conjuro de esta forma, no podrás volver a hacerlo hasta que finalices un descanso largo."
 			]
 		},
 		{
-			"name": "Primeval Awareness",
+			"name": "Percepción Primigenia",
 			"source": "PHB-ES",
-			"page": 89,
+			"page": 80,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"level": 3,
 			"entries": [
-				"Beginning at 3rd level, you can use your action and expend one ranger spell slot to focus your awareness on the region around you. For 1 minute per level of the spell slot you expend, you can sense whether the following types of creatures are present within 1 mile of you (or within up to 6 miles if you are in your favored terrain): aberrations, celestials, dragons, elementals, fey, fiends, and undead. This feature doesn't reveal the creatures' location or number."
+				"A partir de nivel 3, puedes usar tu acción y gastar uno de tus espacios de conjuro de explorador para concentrar tu percepción en la región en la que te encuentras. Durante 1 minuto por cada nivel del espacio de conjuro que hayas invertido, puedes sentir si los siguientes tipos de criatura están presentes a, como mucho, 1 milla de distancia de ti: aberraciones, celestiales, dragones, elementales, feéricos, infernales y muertos vivientes. Esta percepción se extiende a 6 millas si estás en tu terreno predilecto. Este rasgo no revela ni el número de criaturas ni su ubicación."
 			]
 		},
 		{
-			"name": "Ranger Archetype",
+			"name": "Arquetipo de Explorador",
 			"source": "PHB-ES",
-			"page": 89,
+			"page": 80,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"level": 3,
 			"entries": [
-				"At 3rd level, you choose an archetype that you strive to emulate from the list of available archetypes. Your choice grants features at 3rd level, and again at 7th, 11th, and 15th level."
+				"A nivel 3, escoges un arquetipo al que aspiras emular. Elige entre Cazador o Señor de las Bestias. Ambos están detallados al final de la descripción de esta clase. Esta elección le proporciona ciertos rasgos cuando alcanzas los niveles 3, 7, 11 y 15."
 			]
 		},
 		{
-			"name": "Ability Score Improvement",
+			"name": "Mejora de Característica",
 			"source": "PHB-ES",
-			"page": 89,
+			"page": 80,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"level": 4,
 			"entries": [
-				"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+				"Cuando alcances el nivel 4 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
 			]
 		},
 		{
-			"name": "Martial Versatility",
+			"name": "Versatilidad Marcial",
 			"source": "TCE-ES",
-			"page": 56,
-			"className": "Ranger",
+			"page": 47,
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"level": 4,
 			"isClassFeatureVariant": true,
 			"entries": [
-				"{@i 4th-level ranger {@variantrule optional class features|tce|optional feature}}",
-				"Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace a fighting style you know with another fighting style available to rangers. This replacement represents a shift of focus in your martial practice."
+				"{@i {@variantrule Rasgos de clase opcionales|TCE-ES|Rasgo opcional} de explorador de nivel 4}",
+				"Cuando alcanzas un nivel en esta clase que otorga el rasgo Mejora de Característica, puedes sustituir un Estilo de Combate que conozcas por otro de los disponibles para el explorador, lo que representa un cambio en el enfoque de tu entrenamiento marcial."
 			]
 		},
 		{
-			"name": "Extra Attack",
+			"name": "Ataque Adicional",
 			"source": "PHB-ES",
-			"page": 89,
+			"page": 80,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"level": 5,
 			"entries": [
-				"Beginning at 5th level, you can attack twice, instead of once, whenever you take the {@action Attack} action on your turn."
+				"A partir de nivel 5, cuando lleves a cabo la acción de {@action Atacar|PHB-ES} durante tu turno, podrás hacer dos ataques en lugar de uno."
 			]
 		},
 		{
-			"name": "Deft Explorer Improvement",
+			"name": "Mejora de Explorador Hábil",
 			"source": "TCE-ES",
-			"page": 56,
-			"className": "Ranger",
+			"page": 46,
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"level": 6,
 			"isClassFeatureVariant": true,
 			"entries": [
-				"You gain an additional benefit when you reach 6th level in this class.",
+				"En el nivel 6 de esta clase consigues el siguiente beneficio adicional.",
 				{
 					"type": "entries",
-					"name": "Roving",
+					"name": "Errante",
 					"entries": [
-						"Your walking speed increases by 5, and you gain a climbing speed and a swimming speed equal to your walking speed."
+						"Tu velocidad caminando aumenta en 5 y obtienes una velocidad trepando y nadando igual a tu velocidad caminando."
 					]
 				}
 			]
 		},
 		{
-			"name": "Favored Enemy and Natural Explorer improvements",
+			"name": "Mejora de Enemigo Predilecto y Explorador Nato",
 			"source": "PHB-ES",
-			"page": 89,
+			"page": 79,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"level": 6,
 			"entries": [
-				"At 6th level, you gain an additional favored terrain.",
-				"At 6th level, you choose one additional favored enemy, as well as an associated language. Your choice should reflect the types of monsters you have encountered on your adventures."
+				"A nivel 6 puedes elegir un terreno predilecto adicional.",
+				"A nivel 6 puedes elegir un enemigo predilecto adicional, así como el idioma asociado al mismo. Estas elecciones deberían representar aquellos tipos de monstruos con los que te has encontrado durante tus aventuras."
 			]
 		},
 		{
-			"name": "Ranger Archetype feature",
+			"name": "Rasgo de Arquetipo de Explorador",
 			"source": "PHB-ES",
-			"page": 89,
+			"page": 80,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"level": 7,
 			"entries": [
-				"At 7th level, you gain a feature granted to you by your Ranger Archetype."
+				"A nivel 7 ganas un rasgo de tu Arquetipo de Explorador."
 			]
 		},
 		{
-			"name": "Ability Score Improvement",
+			"name": "Mejora de Característica",
 			"source": "PHB-ES",
-			"page": 89,
+			"page": 80,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"level": 8,
 			"entries": [
-				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+				"Cuando alcances el nivel 8 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
 			]
 		},
 		{
-			"name": "Land's Stride",
+			"name": "Paso de la Tierra",
 			"source": "PHB-ES",
-			"page": 89,
+			"page": 80,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"level": 8,
 			"entries": [
-				"Starting at 8th level, moving through nonmagical {@quickref difficult terrain||3} costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.",
-				"In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such as those created by the {@spell entangle} spell."
+				"A partir de nivel 8, moverte a través de {@book terreno difícil|PHB-ES|9|terreno difícil} no mágico no te cuesta movimiento adicional. También puedes pasar a través de plantas no mágicas sin que éstas reduzcan tu velocidad y, aunque dichas plantas posean espinas, pinchos o peligros similares, no recibirás daño de ellas.",
+				"Además, tienes ventaja en las tiradas de salvación contra plantas que han sido creadas o manipuladas mágicamente con el fin de obstaculizar el movimiento, como las producidas por el conjuro {@spell Enmarañar|PHB-ES|enmarañar}"
 			]
 		},
 		{
-			"name": "Deft Explorer Improvement",
+			"name": "Mejora de Explorador Hábil",
 			"source": "TCE-ES",
-			"page": 56,
-			"className": "Ranger",
+			"page": 46,
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"level": 10,
 			"isClassFeatureVariant": true,
 			"entries": [
-				"You gain an additional benefit when you reach 10th level in this class.",
+				"En el nivel 10 de esta clase consigues el siguiente beneficio adicional.",
 				{
 					"type": "entries",
-					"name": "Tireless",
+					"name": "Incansable",
 					"entries": [
-						"As an action, you can give yourself a number of temporary hit points equal to {@dice 1d8} + your Wisdom modifier (minimum of 1 temporary hit point). You can use this action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
-						"In addition, whenever you finish a short rest, your {@condition exhaustion} level, if any, is decreased by 1."
+						"Como acción, puedes concederte una cantidad de puntos de golpe temporales igual a {@dice 1d8} + tu modificador por Sabiduría (mínimo de 1 punto de golpe temporal). Puedes usar esta acción una cantidad de veces igual a tu bonificador por competencia y recuperas todos los usos tras finalizar un descanso largo.",
+						"Además, cada vez que finalizas un descanso corto, tu nivel de {@condition cansancio|PHB-ES}, si lo tienes, se reduce en 1."
 					]
 				}
 			]
 		},
 		{
-			"name": "Hide in Plain Sight",
+			"name": "Esconderse a Plena Vista",
 			"source": "PHB-ES",
-			"page": 89,
+			"page": 80,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"level": 10,
 			"entries": [
-				"Starting at 10th level, you can spend 1 minute creating camouflage for yourself. You must have access to fresh mud, dirt, plants, soot, and other naturally occurring materials with which to create your camouflage.",
-				"Once you are camouflaged in this way, you can try to hide by pressing yourself up against a solid surface, such as a tree or wall, that is at least as tall and wide as you are. You gain a +10 bonus to Dexterity ({@skill Stealth}) checks as long as you remain there without moving or taking actions. Once you move or take an action or a reaction, you must camouflage yourself again to gain this benefit."
+				"A partir de nivel 10, puedes pasar 1 minuto confeccionando un camuflaje que te oculte. Debes tener acceso a barro fresco, tierra, plantas, hollín o cualquier otro tipo de materiales que se den de forma habitual en la naturaleza y que quieras emplear para crear tu camuflaje.",
+				"Una vez te hayas camuflado de esta forma, puedes intentar esconderte apoyándote sobre una superficie sólida, como un árbol o un muro, que sea al menos tan alta y ancha como tú. Obtienes un bonificador de + 10 a las pruebas de Destreza ({@skill Stealth|Sigilo}) mientras permanezcas estático y no realices acción alguna. En cuanto te muevas o lleves a cabo una acción o reacción, deberás volver a camuflarte de nuevo para disfrutar de este beneficio."
 			]
 		},
 		{
-			"name": "Natural Explorer improvement",
+			"name": "Mejora de Explorador Nato",
 			"source": "PHB-ES",
-			"page": 89,
+			"page": 79,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"level": 10,
 			"entries": [
-				"You gain an additional favored terrain."
+				"A nivel 10 puedes elegir un terreno predilecto adicional."
 			]
 		},
 		{
-			"name": "Nature's Veil",
+			"name": "Velo de la Naturaleza",
 			"source": "TCE-ES",
-			"page": 56,
-			"className": "Ranger",
+			"page": 47,
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"level": 10,
 			"isClassFeatureVariant": true,
 			"entries": [
-				"{@i 10th-level ranger {@variantrule optional class features|tce|optional feature}, which replaces the Hide in Plain Sight feature}",
-				"You draw on the powers of nature to hide yourself from view briefly. As a bonus action, you can magically become {@condition invisible}, along with any equipment you are wearing or carrying, until the start of your next turn.",
-				"You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+				"{@i {@variantrule Rasgos de clase opcionales|TCE-ES|Rasgo opcional} de explorador de nivel 10 que sustituye al rasgo Esconderse a Plena Vista}",
+				"Recurres a los poderes de la naturaleza para esconderte durante un breve periodo de tiempo. Como acción adicional, puedes hacer que tanto tú como todo el equipo que vistas o lleves contigo os hagáis {@condition invisible|PHB-ES|invisibles} mágicamente hasta el principio de tu siguiente turno.",
+				"Puedes usar este rasgo una cantidad de veces igual a tu bonificador por competencia y recuperas todos los usos tras finalizar un descanso largo."
 			]
 		},
 		{
-			"name": "Ranger Archetype feature",
+			"name": "Rasgo de Arquetipo de Explorador",
 			"source": "PHB-ES",
-			"page": 89,
+			"page": 80,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"level": 11,
 			"entries": [
-				"At 11th level, you gain a feature granted to you by your Ranger Archetype."
+				"A nivel 11 ganas un rasgo de tu Arquetipo de Explorador."
 			]
 		},
 		{
-			"name": "Ability Score Improvement",
+			"name": "Mejora de Característica",
 			"source": "PHB-ES",
-			"page": 89,
+			"page": 80,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"level": 12,
 			"entries": [
-				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+				"Cuando alcances el nivel 12 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
 			]
 		},
 		{
-			"name": "Favored Enemy improvement",
+			"name": "Mejora de Enemigo Predilecto",
 			"source": "PHB-ES",
 			"page": 89,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"level": 14,
 			"entries": [
-				"At 14th level, you choose one additional favored enemy, as well as an associated language. Your choice should reflect the types of monsters you have encountered on your adventures."
+				"A nivel 14 puedes elegir un enemigo predilecto adicional, así como el idioma asociado al mismo. Estas elecciones deberían representar aquellos tipos de monstruos con los que te has encontrado durante tus aventuras."
 			]
 		},
 		{
-			"name": "Vanish",
+			"name": "Desvanecerse",
 			"source": "PHB-ES",
-			"page": 89,
+			"page": 80,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"level": 14,
 			"entries": [
-				"Starting at 14th level, you can use the {@action Hide} action as a bonus action on your turn. Also, you can't be tracked by nonmagical means, unless you choose to leave a trail."
+				"A partir de nivel 14, puedes realizar la acción de {@action Esconderse|PHB-ES|Esconderse} como acción adicional durante tu turno. Además, no puedes ser rastreado empleando medios no mágicos, salvo que decidas dejar un rastro de forma voluntaria."
 			]
 		},
 		{
-			"name": "Ranger Archetype feature",
+			"name": "Rasgo de Arquetipo de Explorador",
 			"source": "PHB-ES",
-			"page": 89,
+			"page": 80,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"level": 15,
 			"entries": [
-				"At 15th level, you gain a feature granted to you by your Ranger Archetype."
+				"A nivel 15 ganas un rasgo de tu Arquetipo de Explorador."
 			]
 		},
 		{
-			"name": "Ability Score Improvement",
+			"name": "Mejora de Característica",
 			"source": "PHB-ES",
-			"page": 89,
+			"page": 80,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"level": 16,
 			"entries": [
-				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+				"Cuando alcances el nivel 16 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
 			]
 		},
 		{
-			"name": "Feral Senses",
+			"name": "Sentidos Salvajes",
 			"source": "PHB-ES",
-			"page": 89,
+			"page": 80,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"level": 18,
 			"entries": [
-				"At 18th level, you gain preternatural senses that help you fight creatures you can't see. When you attack a creature you can't see, your inability to see it doesn't impose disadvantage on your attack rolls against it. You are also aware of the location of any {@condition invisible} creature within 30 feet of you, provided that the creature isn't hidden from you and you aren't {@condition blinded} or {@condition deafened}."
+				"A nivel 18 desarrollas unos sentidos sobrenaturales, que te ayudan a luchar contra criaturas a las que no puedes ver. Cuando ataques a un objetivo que no seas capaz de ver, tu incapacidad para verlo no te dará desventaja en tus tiradas de ataque contra él.",
+				"Además, también eres consciente de la ubicación de cualquier criatura {@condition Invisible|PHB-ES|invisible} que esté a 30 pies o menos de ti, siempre y cuando dicha criatura no esté escondida de ti y no estés {@condition Cegado|PHB-ES|cegado} ni {@condition Ensordecido|PHB-ES|ensordecido}."
 			]
 		},
 		{
-			"name": "Ability Score Improvement",
+			"name": "Mejora de Característica",
 			"source": "PHB-ES",
-			"page": 89,
+			"page": 80,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"level": 19,
 			"entries": [
-				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+				"Cuando alcances el nivel 19 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
 			]
 		},
 		{
-			"name": "Foe Slayer",
+			"name": "Azote de Enemigos",
 			"source": "PHB-ES",
-			"page": 89,
+			"page": 80,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"level": 20,
 			"entries": [
-				"At 20th level, you become an unparalleled hunter of your enemies. Once on each of your turns, you can add your Wisdom modifier to the attack roll or the damage roll of an attack you make against one of your favored enemies. You can choose to use this feature before or after the roll, but before any effects of the roll are applied."
+				"A nivel 20 te conviertes en un cazador sin parangón en lo que a tus enemigos respecta. Una vez en cada uno de tus turnos, puedes añadir tu modificador por Sabiduría a una tirada de ataque o de daño de uno de tus ataques que tenga como objetivo a uno de tus enemigos predilectos. Puedes elegir usar este rasgo antes o después de tirar, pero siempre previamente a que los efectos de la tirada se apliquen."
 			]
 		}
 	],
@@ -1261,36 +1262,36 @@
 			"name": "Beast Master",
 			"shortName": "Beast Master",
 			"source": "PHB-ES",
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"page": 93,
 			"subclassFeatures": [
-				"Beast Master|Ranger||Beast Master||3",
-				"Exceptional Training|Ranger||Beast Master||7",
-				"Bestial Fury|Ranger||Beast Master||11",
-				"Share Spells|Ranger||Beast Master||15"
+				"Beast Master|Explorador|PHB-ES|Beast Master||3",
+				"Exceptional Training|Explorador|PHB-ES|Beast Master||7",
+				"Bestial Fury|Explorador|PHB-ES|Beast Master||11",
+				"Share Spells|Explorador|PHB-ES|Beast Master||15"
 			]
 		},
 		{
 			"name": "Hunter",
 			"shortName": "Hunter",
 			"source": "PHB-ES",
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"page": 93,
 			"srd": true,
 			"subclassFeatures": [
-				"Hunter|Ranger||Hunter||3",
-				"Defensive Tactics|Ranger||Hunter||7",
-				"Multiattack|Ranger||Hunter||11",
-				"Superior Hunter's Defense|Ranger||Hunter||15"
+				"Hunter|Explorador|PHB-ES|Hunter||3",
+				"Defensive Tactics|Explorador|PHB-ES|Hunter||7",
+				"Multiattack|Explorador|PHB-ES|Hunter||11",
+				"Superior Hunter's Defense|Explorador|PHB-ES|Hunter||15"
 			]
 		},
 		{
 			"name": "Gloom Stalker",
 			"shortName": "Gloom Stalker",
 			"source": "XGE-ES",
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"page": 41,
 			"additionalSpells": [
@@ -1315,17 +1316,17 @@
 				}
 			],
 			"subclassFeatures": [
-				"Gloom Stalker|Ranger||Gloom Stalker|XGE|3",
-				"Iron Mind|Ranger||Gloom Stalker|XGE|7",
-				"Stalker's Flurry|Ranger||Gloom Stalker|XGE|11",
-				"Shadowy Dodge|Ranger||Gloom Stalker|XGE|15"
+				"Gloom Stalker|Explorador|PHB-ES|Gloom Stalker|XGE|3",
+				"Iron Mind|Explorador|PHB-ES|Gloom Stalker|XGE|7",
+				"Stalker's Flurry|Explorador|PHB-ES|Gloom Stalker|XGE|11",
+				"Shadowy Dodge|Explorador|PHB-ES|Gloom Stalker|XGE|15"
 			]
 		},
 		{
 			"name": "Horizon Walker",
 			"shortName": "Horizon Walker",
 			"source": "XGE-ES",
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"page": 42,
 			"additionalSpells": [
@@ -1350,17 +1351,17 @@
 				}
 			],
 			"subclassFeatures": [
-				"Horizon Walker|Ranger||Horizon Walker|XGE|3",
-				"Ethereal Step|Ranger||Horizon Walker|XGE|7",
-				"Distant Strike|Ranger||Horizon Walker|XGE|11",
-				"Spectral Defense|Ranger||Horizon Walker|XGE|15"
+				"Horizon Walker|Explorador|PHB-ES|Horizon Walker|XGE|3",
+				"Ethereal Step|Explorador|PHB-ES|Horizon Walker|XGE|7",
+				"Distant Strike|Explorador|PHB-ES|Horizon Walker|XGE|11",
+				"Spectral Defense|Explorador|PHB-ES|Horizon Walker|XGE|15"
 			]
 		},
 		{
 			"name": "Monster Slayer",
 			"shortName": "Monster Slayer",
 			"source": "XGE-ES",
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"page": 43,
 			"additionalSpells": [
@@ -1385,17 +1386,17 @@
 				}
 			],
 			"subclassFeatures": [
-				"Monster Slayer|Ranger||Monster Slayer|XGE|3",
-				"Supernatural Defense|Ranger||Monster Slayer|XGE|7",
-				"Magic-User's Nemesis|Ranger||Monster Slayer|XGE|11",
-				"Slayer's Counter|Ranger||Monster Slayer|XGE|15"
+				"Monster Slayer|Explorador|PHB-ES|Monster Slayer|XGE|3",
+				"Supernatural Defense|Explorador|PHB-ES|Monster Slayer|XGE|7",
+				"Magic-User's Nemesis|Explorador|PHB-ES|Monster Slayer|XGE|11",
+				"Slayer's Counter|Explorador|PHB-ES|Monster Slayer|XGE|15"
 			]
 		},
 		{
 			"name": "Fey Wanderer",
 			"shortName": "Fey Wanderer",
 			"source": "TCE-ES",
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"page": 58,
 			"additionalSpells": [
@@ -1420,17 +1421,17 @@
 				}
 			],
 			"subclassFeatures": [
-				"Fey Wanderer|Ranger||Fey Wanderer|TCE|3",
-				"Beguiling Twist|Ranger||Fey Wanderer|TCE|7",
-				"Fey Reinforcements|Ranger||Fey Wanderer|TCE|11",
-				"Misty Wanderer|Ranger||Fey Wanderer|TCE|15"
+				"Fey Wanderer|Explorador|PHB-ES|Fey Wanderer|TCE|3",
+				"Beguiling Twist|Explorador|PHB-ES|Fey Wanderer|TCE|7",
+				"Fey Reinforcements|Explorador|PHB-ES|Fey Wanderer|TCE|11",
+				"Misty Wanderer|Explorador|PHB-ES|Fey Wanderer|TCE|15"
 			]
 		},
 		{
 			"name": "Swarmkeeper",
 			"shortName": "Swarmkeeper",
 			"source": "TCE-ES",
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"page": 59,
 			"additionalSpells": [
@@ -1456,17 +1457,17 @@
 				}
 			],
 			"subclassFeatures": [
-				"Swarmkeeper|Ranger||Swarmkeeper|TCE|3",
-				"Writhing Tide|Ranger||Swarmkeeper|TCE|7",
-				"Mighty Swarm|Ranger||Swarmkeeper|TCE|11",
-				"Swarming Dispersal|Ranger||Swarmkeeper|TCE|15"
+				"Swarmkeeper|Explorador|PHB-ES|Swarmkeeper|TCE|3",
+				"Writhing Tide|Explorador|PHB-ES|Swarmkeeper|TCE|7",
+				"Mighty Swarm|Explorador|PHB-ES|Swarmkeeper|TCE|11",
+				"Swarming Dispersal|Explorador|PHB-ES|Swarmkeeper|TCE|15"
 			]
 		},
 		{
 			"name": "Drakewarden",
 			"shortName": "Drakewarden",
 			"source": "FTD-ES",
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"page": 15,
 			"additionalSpells": [
@@ -1479,10 +1480,10 @@
 				}
 			],
 			"subclassFeatures": [
-				"Drakewarden|Ranger||Drakewarden|FTD|3",
-				"Bond of Fang and Scale|Ranger||Drakewarden|FTD|7",
-				"Drake's Breath|Ranger||Drakewarden|FTD|11",
-				"Perfected Bond|Ranger||Drakewarden|FTD|15"
+				"Drakewarden|Explorador|PHB-ES|Drakewarden|FTD|3",
+				"Bond of Fang and Scale|Explorador|PHB-ES|Drakewarden|FTD|7",
+				"Drake's Breath|Explorador|PHB-ES|Drakewarden|FTD|11",
+				"Perfected Bond|Explorador|PHB-ES|Drakewarden|FTD|15"
 			]
 		}
 	],
@@ -1491,7 +1492,7 @@
 			"name": "Drakewarden",
 			"source": "FTD-ES",
 			"page": 15,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Drakewarden",
 			"subclassSource": "FTD-ES",
@@ -1539,11 +1540,11 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Draconic Gift|Ranger||Drakewarden|FTD|3"
+					"subclassFeature": "Draconic Gift|Explorador|PHB-ES|Drakewarden|FTD|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Drake Companion|Ranger||Drakewarden|FTD|3"
+					"subclassFeature": "Drake Companion|Explorador|PHB-ES|Drakewarden|FTD|3"
 				}
 			]
 		},
@@ -1551,7 +1552,7 @@
 			"name": "Draconic Gift",
 			"source": "FTD-ES",
 			"page": 15,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Drakewarden",
 			"subclassSource": "FTD-ES",
@@ -1582,7 +1583,7 @@
 			"name": "Drake Companion",
 			"source": "FTD-ES",
 			"page": 15,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Drakewarden",
 			"subclassSource": "FTD-ES",
@@ -1601,7 +1602,7 @@
 			"name": "Bond of Fang and Scale",
 			"source": "FTD-ES",
 			"page": 15,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Drakewarden",
 			"subclassSource": "FTD-ES",
@@ -1644,7 +1645,7 @@
 			"name": "Drake's Breath",
 			"source": "FTD-ES",
 			"page": 15,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Drakewarden",
 			"subclassSource": "FTD-ES",
@@ -1661,7 +1662,7 @@
 			"name": "Perfected Bond",
 			"source": "FTD-ES",
 			"page": 15,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Drakewarden",
 			"subclassSource": "FTD-ES",
@@ -1703,7 +1704,7 @@
 			"name": "Beast Master",
 			"source": "PHB-ES",
 			"page": 93,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Beast Master",
 			"subclassSource": "PHB-ES",
@@ -1712,11 +1713,11 @@
 				"The Beast Master archetype embodies a friendship between the civilized races and the beasts of the world. United in focus, beast and ranger work as one to fight the monstrous foes that threaten civilization and the wilderness alike. Emulating the Beast Master archetype means committing yourself to this ideal, working in partnership with an animal as its companion and friend.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Ranger's Companion|Ranger||Beast Master||3"
+					"subclassFeature": "Ranger's Companion|Explorador|PHB-ES|Beast Master||3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Primal Companion|Ranger||Beast Master||3|TCE"
+					"subclassFeature": "Primal Companion|Explorador|PHB-ES|Beast Master||3|TCE-ES"
 				}
 			]
 		},
@@ -1724,7 +1725,7 @@
 			"name": "Primal Companion",
 			"source": "TCE-ES",
 			"page": 61,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Beast Master",
 			"subclassSource": "PHB-ES",
@@ -1743,7 +1744,7 @@
 			"name": "Ranger's Companion",
 			"source": "PHB-ES",
 			"page": 93,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Beast Master",
 			"subclassSource": "PHB-ES",
@@ -1761,7 +1762,7 @@
 			"name": "Exceptional Training",
 			"source": "PHB-ES",
 			"page": 93,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Beast Master",
 			"subclassSource": "PHB-ES",
@@ -1775,7 +1776,7 @@
 			"name": "Bestial Fury",
 			"source": "PHB-ES",
 			"page": 93,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Beast Master",
 			"subclassSource": "PHB-ES",
@@ -1789,7 +1790,7 @@
 			"name": "Share Spells",
 			"source": "PHB-ES",
 			"page": 93,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Beast Master",
 			"subclassSource": "PHB-ES",
@@ -1804,7 +1805,7 @@
 			"source": "PHB-ES",
 			"page": 93,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Hunter",
 			"subclassSource": "PHB-ES",
@@ -1813,7 +1814,7 @@
 				"Emulating the Hunter archetype means accepting your place as a bulwark between civilization and the terrors of the wilderness. As you walk the Hunter's path, you learn specialized techniques for fighting the threats you face, from rampaging ogres and hordes of orcs to towering giants and terrifying dragons.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Hunter's Prey|Ranger||Hunter||3"
+					"subclassFeature": "Hunter's Prey|Explorador|PHB-ES|Hunter||3"
 				}
 			]
 		},
@@ -1822,7 +1823,7 @@
 			"source": "PHB-ES",
 			"page": 93,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Hunter",
 			"subclassSource": "PHB-ES",
@@ -1837,7 +1838,7 @@
 			"source": "PHB-ES",
 			"page": 93,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Hunter",
 			"subclassSource": "PHB-ES",
@@ -1851,15 +1852,15 @@
 					"entries": [
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Colossus Slayer|Ranger||Hunter||3"
+							"subclassFeature": "Colossus Slayer|Explorador|PHB-ES|Hunter||3"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Giant Killer|Ranger||Hunter||3"
+							"subclassFeature": "Giant Killer|Explorador|PHB-ES|Hunter||3"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Horde Breaker|Ranger||Hunter||3"
+							"subclassFeature": "Horde Breaker|Explorador|PHB-ES|Hunter||3"
 						}
 					]
 				}
@@ -1870,7 +1871,7 @@
 			"source": "PHB-ES",
 			"page": 93,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Hunter",
 			"subclassSource": "PHB-ES",
@@ -1885,7 +1886,7 @@
 			"source": "PHB-ES",
 			"page": 93,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Hunter",
 			"subclassSource": "PHB-ES",
@@ -1900,7 +1901,7 @@
 			"source": "PHB-ES",
 			"page": 93,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Hunter",
 			"subclassSource": "PHB-ES",
@@ -1914,15 +1915,15 @@
 					"entries": [
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Escape the Horde|Ranger||Hunter||7"
+							"subclassFeature": "Escape the Horde|Explorador|PHB-ES|Hunter||7"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Multiattack Defense|Ranger||Hunter||7"
+							"subclassFeature": "Multiattack Defense|Explorador|PHB-ES|Hunter||7"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Steel Will|Ranger||Hunter||7"
+							"subclassFeature": "Steel Will|Explorador|PHB-ES|Hunter||7"
 						}
 					]
 				}
@@ -1933,7 +1934,7 @@
 			"source": "PHB-ES",
 			"page": 93,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Hunter",
 			"subclassSource": "PHB-ES",
@@ -1948,7 +1949,7 @@
 			"source": "PHB-ES",
 			"page": 93,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Hunter",
 			"subclassSource": "PHB-ES",
@@ -1963,7 +1964,7 @@
 			"source": "PHB-ES",
 			"page": 93,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Hunter",
 			"subclassSource": "PHB-ES",
@@ -1978,7 +1979,7 @@
 			"source": "PHB-ES",
 			"page": 93,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Hunter",
 			"subclassSource": "PHB-ES",
@@ -1992,11 +1993,11 @@
 					"entries": [
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Volley|Ranger||Hunter||11"
+							"subclassFeature": "Volley|Explorador|PHB-ES|Hunter||11"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Whirlwind Attack|Ranger||Hunter||11"
+							"subclassFeature": "Whirlwind Attack|Explorador|PHB-ES|Hunter||11"
 						}
 					]
 				}
@@ -2007,7 +2008,7 @@
 			"source": "PHB-ES",
 			"page": 93,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Hunter",
 			"subclassSource": "PHB-ES",
@@ -2022,7 +2023,7 @@
 			"source": "PHB-ES",
 			"page": 93,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Hunter",
 			"subclassSource": "PHB-ES",
@@ -2037,7 +2038,7 @@
 			"source": "PHB-ES",
 			"page": 93,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Hunter",
 			"subclassSource": "PHB-ES",
@@ -2052,7 +2053,7 @@
 			"source": "PHB-ES",
 			"page": 93,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Hunter",
 			"subclassSource": "PHB-ES",
@@ -2067,7 +2068,7 @@
 			"source": "PHB-ES",
 			"page": 93,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Hunter",
 			"subclassSource": "PHB-ES",
@@ -2081,15 +2082,15 @@
 					"entries": [
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Evasion|Ranger||Hunter||15"
+							"subclassFeature": "Evasion|Explorador|PHB-ES|Hunter||15"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Stand Against the Tide|Ranger||Hunter||15"
+							"subclassFeature": "Stand Against the Tide|Explorador|PHB-ES|Hunter||15"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Uncanny Dodge|Ranger||Hunter||15"
+							"subclassFeature": "Uncanny Dodge|Explorador|PHB-ES|Hunter||15"
 						}
 					]
 				}
@@ -2100,7 +2101,7 @@
 			"source": "PHB-ES",
 			"page": 93,
 			"srd": true,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Hunter",
 			"subclassSource": "PHB-ES",
@@ -2114,7 +2115,7 @@
 			"name": "Fey Wanderer",
 			"source": "TCE-ES",
 			"page": 58,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Fey Wanderer",
 			"subclassSource": "TCE-ES",
@@ -2123,15 +2124,15 @@
 				"A fey mystique surrounds you, thanks to the boon of an archfey, the shining fruit you ate from a talking tree, the magic spring you swam in, or some other auspicious event. However you acquired your fey magic, you are now a Fey Wanderer, a ranger who represents both the mortal and the fey realms. As you wander the multiverse, your joyful laughter brightens the hearts of the downtrodden, and your martial prowess strikes terror in your foes, for great is the mirth of the fey and dreadful is their fury.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Dreadful Strikes|Ranger||Fey Wanderer|TCE|3"
+					"subclassFeature": "Dreadful Strikes|Explorador|PHB-ES|Fey Wanderer|TCE|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Fey Wanderer Magic|Ranger||Fey Wanderer|TCE|3"
+					"subclassFeature": "Fey Wanderer Magic|Explorador|PHB-ES|Fey Wanderer|TCE|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Otherworldly Glamour|Ranger||Fey Wanderer|TCE|3"
+					"subclassFeature": "Otherworldly Glamour|Explorador|PHB-ES|Fey Wanderer|TCE|3"
 				}
 			]
 		},
@@ -2139,7 +2140,7 @@
 			"name": "Dreadful Strikes",
 			"source": "TCE-ES",
 			"page": 58,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Fey Wanderer",
 			"subclassSource": "TCE-ES",
@@ -2155,7 +2156,7 @@
 			"name": "Fey Wanderer Magic",
 			"source": "TCE-ES",
 			"page": 58,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Fey Wanderer",
 			"subclassSource": "TCE-ES",
@@ -2243,7 +2244,7 @@
 			"name": "Otherworldly Glamour",
 			"source": "TCE-ES",
 			"page": 58,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Fey Wanderer",
 			"subclassSource": "TCE-ES",
@@ -2259,7 +2260,7 @@
 			"name": "Beguiling Twist",
 			"source": "TCE-ES",
 			"page": 58,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Fey Wanderer",
 			"subclassSource": "TCE-ES",
@@ -2275,7 +2276,7 @@
 			"name": "Fey Reinforcements",
 			"source": "TCE-ES",
 			"page": 58,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Fey Wanderer",
 			"subclassSource": "TCE-ES",
@@ -2291,7 +2292,7 @@
 			"name": "Misty Wanderer",
 			"source": "TCE-ES",
 			"page": 58,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Fey Wanderer",
 			"subclassSource": "TCE-ES",
@@ -2307,7 +2308,7 @@
 			"name": "Swarmkeeper",
 			"source": "TCE-ES",
 			"page": 59,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Swarmkeeper",
 			"subclassSource": "TCE-ES",
@@ -2316,11 +2317,11 @@
 				"Feeling a deep connection to the environment around them, some rangers reach out through their magical connection to the world and bond with a swarm of nature spirits. The swarm becomes a potent force in battle, as well as helpful company for the ranger. Some Swarmkeepers are outcasts or hermits, keeping to themselves and their attendant swarms rather than dealing with the discomfort of others. Other Swarmkeepers enjoy building vibrant communities that work for the mutual benefit of all those they consider part of their swarm.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Gathered Swarm|Ranger||Swarmkeeper|TCE|3"
+					"subclassFeature": "Gathered Swarm|Explorador|PHB-ES|Swarmkeeper|TCE|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Swarmkeeper Magic|Ranger||Swarmkeeper|TCE|3"
+					"subclassFeature": "Swarmkeeper Magic|Explorador|PHB-ES|Swarmkeeper|TCE|3"
 				}
 			]
 		},
@@ -2328,7 +2329,7 @@
 			"name": "Gathered Swarm",
 			"source": "TCE-ES",
 			"page": 59,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Swarmkeeper",
 			"subclassSource": "TCE-ES",
@@ -2390,7 +2391,7 @@
 			"name": "Swarmkeeper Magic",
 			"source": "TCE-ES",
 			"page": 59,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Swarmkeeper",
 			"subclassSource": "TCE-ES",
@@ -2440,7 +2441,7 @@
 			"name": "Writhing Tide",
 			"source": "TCE-ES",
 			"page": 59,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Swarmkeeper",
 			"subclassSource": "TCE-ES",
@@ -2456,7 +2457,7 @@
 			"name": "Mighty Swarm",
 			"source": "TCE-ES",
 			"page": 59,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Swarmkeeper",
 			"subclassSource": "TCE-ES",
@@ -2479,7 +2480,7 @@
 			"name": "Swarming Dispersal",
 			"source": "TCE-ES",
 			"page": 59,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Swarmkeeper",
 			"subclassSource": "TCE-ES",
@@ -2495,7 +2496,7 @@
 			"name": "Gloom Stalker",
 			"source": "XGE-ES",
 			"page": 41,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Gloom Stalker",
 			"subclassSource": "XGE-ES",
@@ -2504,15 +2505,15 @@
 				"Gloom Stalkers are at home in the darkest places: deep under the earth, in gloomy alleyways, in primeval forests, and wherever else the light dims. Most folk enter such places with trepidation, but a Gloom Stalker ventures boldly into the darkness, seeking to ambush threats before they can reach the broader world. Such rangers are often found in the Underdark, but they will go any place where evil lurks in the shadows.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Gloom Stalker Magic|Ranger||Gloom Stalker|XGE|3"
+					"subclassFeature": "Gloom Stalker Magic|Explorador|PHB-ES|Gloom Stalker|XGE|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Dread Ambusher|Ranger||Gloom Stalker|XGE|3"
+					"subclassFeature": "Dread Ambusher|Explorador|PHB-ES|Gloom Stalker|XGE|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Umbral Sight|Ranger||Gloom Stalker|XGE|3"
+					"subclassFeature": "Umbral Sight|Explorador|PHB-ES|Gloom Stalker|XGE|3"
 				}
 			]
 		},
@@ -2520,7 +2521,7 @@
 			"name": "Dread Ambusher",
 			"source": "XGE-ES",
 			"page": 41,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Gloom Stalker",
 			"subclassSource": "XGE-ES",
@@ -2535,7 +2536,7 @@
 			"name": "Gloom Stalker Magic",
 			"source": "XGE-ES",
 			"page": 41,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Gloom Stalker",
 			"subclassSource": "XGE-ES",
@@ -2583,7 +2584,7 @@
 			"name": "Umbral Sight",
 			"source": "XGE-ES",
 			"page": 41,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Gloom Stalker",
 			"subclassSource": "XGE-ES",
@@ -2598,7 +2599,7 @@
 			"name": "Iron Mind",
 			"source": "XGE-ES",
 			"page": 41,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Gloom Stalker",
 			"subclassSource": "XGE-ES",
@@ -2612,7 +2613,7 @@
 			"name": "Stalker's Flurry",
 			"source": "XGE-ES",
 			"page": 41,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Gloom Stalker",
 			"subclassSource": "XGE-ES",
@@ -2626,7 +2627,7 @@
 			"name": "Shadowy Dodge",
 			"source": "XGE-ES",
 			"page": 41,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Gloom Stalker",
 			"subclassSource": "XGE-ES",
@@ -2640,7 +2641,7 @@
 			"name": "Horizon Walker",
 			"source": "XGE-ES",
 			"page": 42,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Horizon Walker",
 			"subclassSource": "XGE-ES",
@@ -2649,15 +2650,15 @@
 				"Horizon Walkers guard the world against threats that originate from other planes or that seek to ravage the mortal realm with otherworldly magic. They seek out planar portals and keep watch over them, venturing to the Inner Planes and the Outer Planes as needed to pursue their foes. These rangers are also friends to any forces in the multiverse—especially benevolent dragons, fey, and elementals—that work to preserve life and the order of the planes.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Horizon Walker Magic|Ranger||Horizon Walker|XGE|3"
+					"subclassFeature": "Horizon Walker Magic|Explorador|PHB-ES|Horizon Walker|XGE|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Detect Portal|Ranger||Horizon Walker|XGE|3"
+					"subclassFeature": "Detect Portal|Explorador|PHB-ES|Horizon Walker|XGE|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Planar Warrior|Ranger||Horizon Walker|XGE|3"
+					"subclassFeature": "Planar Warrior|Explorador|PHB-ES|Horizon Walker|XGE|3"
 				}
 			]
 		},
@@ -2665,7 +2666,7 @@
 			"name": "Detect Portal",
 			"source": "XGE-ES",
 			"page": 42,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Horizon Walker",
 			"subclassSource": "XGE-ES",
@@ -2681,7 +2682,7 @@
 			"name": "Horizon Walker Magic",
 			"source": "XGE-ES",
 			"page": 42,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Horizon Walker",
 			"subclassSource": "XGE-ES",
@@ -2729,7 +2730,7 @@
 			"name": "Planar Warrior",
 			"source": "XGE-ES",
 			"page": 42,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Horizon Walker",
 			"subclassSource": "XGE-ES",
@@ -2744,7 +2745,7 @@
 			"name": "Ethereal Step",
 			"source": "XGE-ES",
 			"page": 42,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Horizon Walker",
 			"subclassSource": "XGE-ES",
@@ -2759,7 +2760,7 @@
 			"name": "Distant Strike",
 			"source": "XGE-ES",
 			"page": 42,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Horizon Walker",
 			"subclassSource": "XGE-ES",
@@ -2774,7 +2775,7 @@
 			"name": "Spectral Defense",
 			"source": "XGE-ES",
 			"page": 42,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Horizon Walker",
 			"subclassSource": "XGE-ES",
@@ -2788,7 +2789,7 @@
 			"name": "Monster Slayer",
 			"source": "XGE-ES",
 			"page": 43,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Monster Slayer",
 			"subclassSource": "XGE-ES",
@@ -2797,15 +2798,15 @@
 				"You have dedicated yourself to hunting down creatures of the night and wielders of grim magic. A Monster Slayer seeks out vampires, dragons, evil fey, fiends, and other magical threats. Trained in supernatural techniques to overcome such monsters, slayers are experts at unearthing and defeating mighty, mystical foes.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Monster Slayer Magic|Ranger||Monster Slayer|XGE|3"
+					"subclassFeature": "Monster Slayer Magic|Explorador|PHB-ES|Monster Slayer|XGE|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Hunter's Sense|Ranger||Monster Slayer|XGE|3"
+					"subclassFeature": "Hunter's Sense|Explorador|PHB-ES|Monster Slayer|XGE|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Slayer's Prey|Ranger||Monster Slayer|XGE|3"
+					"subclassFeature": "Slayer's Prey|Explorador|PHB-ES|Monster Slayer|XGE|3"
 				}
 			]
 		},
@@ -2813,7 +2814,7 @@
 			"name": "Hunter's Sense",
 			"source": "XGE-ES",
 			"page": 43,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Monster Slayer",
 			"subclassSource": "XGE-ES",
@@ -2828,7 +2829,7 @@
 			"name": "Monster Slayer Magic",
 			"source": "XGE-ES",
 			"page": 43,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Monster Slayer",
 			"subclassSource": "XGE-ES",
@@ -2876,7 +2877,7 @@
 			"name": "Slayer's Prey",
 			"source": "XGE-ES",
 			"page": 43,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Monster Slayer",
 			"subclassSource": "XGE-ES",
@@ -2891,7 +2892,7 @@
 			"name": "Supernatural Defense",
 			"source": "XGE-ES",
 			"page": 43,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Monster Slayer",
 			"subclassSource": "XGE-ES",
@@ -2905,7 +2906,7 @@
 			"name": "Magic-User's Nemesis",
 			"source": "XGE-ES",
 			"page": 43,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Monster Slayer",
 			"subclassSource": "XGE-ES",
@@ -2920,7 +2921,7 @@
 			"name": "Slayer's Counter",
 			"source": "XGE-ES",
 			"page": 43,
-			"className": "Ranger",
+			"className": "Explorador",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Monster Slayer",
 			"subclassSource": "XGE-ES",
