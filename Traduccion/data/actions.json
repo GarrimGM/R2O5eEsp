@@ -576,6 +576,23 @@
 				"Una criatura que está durmiendo de forma natural, no como resultado de un sueño inducido mediante magia o drogas, se despierta si recibe cualquier cantidad de daño o si alguien utiliza una acción para despertarla, sacudiéndola o abofeteándola. Un sonido fuerte y súbito, como un grito, trueno o el tañido de una campana, también despertará a alguien que duerme de forma natural.",
 				"Los susurros no perturban el descanso a menos que la puntuación de Sabiduría ({@skill Percepción|PHB-ES}) pasiva del durmiente sea igual o mayor a 20 y los susurros ocurran a 10 pies o menos. Hablar a un volumen normal despierta a un durmiente si el entorno está en silencio (no hay viento, canciones de pájaros, sonidos de la calle, grillos, etc.) y este tiene una puntuación de Sabiduría ({@skill Percepción|PHB-ES}) igual o superior a 15."
 			]
+		},
+		{
+			"name": "Estabilizar a una criatura",
+			"source": "PHB-ES",
+			"page": 197,
+			"srd": true,
+			"basicRules": true,
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"entries": [
+				"Puedes usar tu acción para administrar primeros auxilios a una criatura {@condition inconsciente|PHB-ES} con el fin de estabilizarla. Para ello debes tener éxito en una prueba de Sabiduría ({@skill Medicina|PHB-ES}) CD 10.",
+				"Una criatura estable no tendrá que hacer tiradas de salvación contra muerte, incluso si está a 0 puntos de golpe. Eso sí, permanecerá {@condition inconsciente|PHB-ES}. Si sufre cualquier cantidad de daño, dejará de estar estable y deberá volver a hacer tiradas de salvación contra muerte. Las criaturas estables que no sean curadas recuperarán 1 punto de golpe tras {@dice 1d4} horas."
+			]
 		}
 	]
 }
