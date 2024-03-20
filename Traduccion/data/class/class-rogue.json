@@ -1,9 +1,9 @@
 {
 	"class": [
 		{
-			"name": "Rogue",
+			"name": "Pícaro",
 			"source": "PHB-ES",
-			"page": 94,
+			"page": 115,
 			"srd": true,
 			"basicRules": true,
 			"hd": {
@@ -20,13 +20,13 @@
 				],
 				"weapons": [
 					"simple",
-					"{@item hand crossbow|phb|hand crossbows}",
-					"{@item longsword|phb|longswords}",
-					"{@item rapier|phb|rapiers}",
-					"{@item shortsword|phb|shortswords}"
+					"{@item Ballesta de mano|PHB-ES|ballestas de mano}",
+					"{@item Espada larga|PHB-ES|espadas largas}",
+					"{@item Estoque|PHB-ES|estoques}",
+					"{@item Espada corta|PHB-ES|espadas cortas}"
 				],
 				"tools": [
-					"{@item thieves' tools|PHB}"
+					"{@item herramientas de ladrón|PHB-ES}"
 				],
 				"toolProficiencies": [
 					{
@@ -57,49 +57,49 @@
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"default": [
-					"(a) a {@item rapier|phb} or (b) a {@item shortsword|phb}",
-					"(a) a {@item shortbow|phb} and {@item quiver|phb} of {@item arrows (20)|phb|20 arrows} or (b) a {@item shortsword|phb}",
-					"(a) a {@item burglar's pack|phb}, (b) a {@item dungeoneer's pack|phb}, or (c) an {@item explorer's pack|phb}",
-					"{@item Leather armor|phb}, two {@item dagger|phb|daggers}, and {@item thieves' tools|phb}"
+					"(a) un {@item estoque|PHB-ES} o (b) una {@item espada corta|PHB-ES}",
+					"(a) un {@item arco corto|PHB-ES} y una {@item aljaba|PHB-ES} de {@item Flechas (20)|PHB-ES|20 20 flechas} o (b) una {@item espada corta|PHB-ES}",
+					"(a) un {@item paquete de ladrón|PHB-ES}, (b) un {@item paquete de explorador de mazmorras|PHB-ES} o (c) un {@item paquete de explorador|PHB-ES}",
+					"{@item Armadura de cuero|PHB-ES}, dos {@item daga|PHB-ES|dagas} y {@item herramientas de ladrón|PHB-ES}"
 				],
 				"goldAlternative": "{@dice 4d4 × 10|4d4 × 10|Starting Gold}",
 				"defaultData": [
 					{
 						"a": [
-							"rapier|phb"
+							"estoque|PHB-ES"
 						],
 						"b": [
-							"shortsword|phb"
+							"espada corta|PHB-ES"
 						]
 					},
 					{
 						"a": [
-							"shortbow|phb",
-							"arrows (20)|phb"
+							"arco corto|PHB-ES",
+							"flechas (20)|PHB-ES"
 						],
 						"b": [
-							"shortsword|phb"
+							"espada corta|PHB-ES"
 						]
 					},
 					{
 						"a": [
-							"burglar's pack|phb"
+							"paquete de ladrón|PHB-ES"
 						],
 						"b": [
-							"dungeoneer's pack|phb"
+							"paquete de explorador de mazmorras|PHB-ES"
 						],
 						"c": [
-							"explorer's pack|phb"
+							"paquete de explorador|PHB-ES"
 						]
 					},
 					{
 						"_": [
-							"Leather armor|phb",
+							"Armadura de cuero|PHB-ES",
 							{
-								"item": "dagger|phb",
+								"item": "daga|PHB-ES",
 								"quantity": 2
 							},
-							"thieves' tools|phb"
+							"herramientas de ladrón|PHB-ES"
 						]
 					}
 				]
@@ -133,7 +133,7 @@
 						}
 					],
 					"tools": [
-						"{@item thieves' tools|PHB}"
+						"{@item herramientas de ladrón|PHB-ES}"
 					],
 					"toolProficiencies": [
 						{
@@ -145,7 +145,7 @@
 			"classTableGroups": [
 				{
 					"colLabels": [
-						"Sneak Attack"
+						"Ataque Furtivo"
 					],
 					"rows": [
 						[
@@ -392,86 +392,85 @@
 				}
 			],
 			"classFeatures": [
-				"Expertise|Rogue||1",
-				"Sneak Attack|Rogue||1",
-				"Thieves' Cant|Rogue||1",
-				"Cunning Action|Rogue||2",
+				"Expertise|Pícaro|PHB-ES|1",
+				"Sneak Attack|Pícaro|PHB-ES|1",
+				"Thieves' Cant|Pícaro|PHB-ES|1",
+				"Cunning Action|Pícaro|PHB-ES|2",
 				{
-					"classFeature": "Roguish Archetype|Rogue||3",
+					"classFeature": "Roguish Archetype|Pícaro|PHB-ES|3",
 					"gainSubclassFeature": true
 				},
-				"Steady Aim|Rogue||3|TCE",
-				"Ability Score Improvement|Rogue||4",
-				"Uncanny Dodge|Rogue||5",
-				"Expertise|Rogue||6",
-				"Evasion|Rogue||7",
-				"Ability Score Improvement|Rogue||8",
+				"Steady Aim|Pícaro|PHB-ES|3|TCE-ES",
+				"Ability Score Improvement|Pícaro|PHB-ES|4",
+				"Uncanny Dodge|Pícaro|PHB-ES|5",
+				"Expertise|Pícaro|PHB-ES|6",
+				"Evasion|Pícaro|PHB-ES|7",
+				"Ability Score Improvement|Pícaro|PHB-ES|8",
 				{
-					"classFeature": "Roguish Archetype feature|Rogue||9",
+					"classFeature": "Roguish Archetype feature|Pícaro|PHB-ES|9",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Rogue||10",
-				"Reliable Talent|Rogue||11",
-				"Ability Score Improvement|Rogue||12",
+				"Ability Score Improvement|Pícaro|PHB-ES|10",
+				"Reliable Talent|Pícaro|PHB-ES|11",
+				"Ability Score Improvement|Pícaro|PHB-ES|12",
 				{
-					"classFeature": "Roguish Archetype feature|Rogue||13",
+					"classFeature": "Roguish Archetype feature|Pícaro|PHB-ES|13",
 					"gainSubclassFeature": true
 				},
-				"Blindsense|Rogue||14",
-				"Slippery Mind|Rogue||15",
-				"Ability Score Improvement|Rogue||16",
+				"Blindsense|Pícaro|PHB-ES|14",
+				"Slippery Mind|Pícaro|PHB-ES|15",
+				"Ability Score Improvement|Pícaro|PHB-ES|16",
 				{
-					"classFeature": "Roguish Archetype feature|Rogue||17",
+					"classFeature": "Roguish Archetype feature|Pícaro|PHB-ES|17",
 					"gainSubclassFeature": true
 				},
-				"Elusive|Rogue||18",
-				"Ability Score Improvement|Rogue||19",
-				"Stroke of Luck|Rogue||20"
+				"Elusive|Pícaro|PHB-ES|18",
+				"Ability Score Improvement|Pícaro|PHB-ES|19",
+				"Stroke of Luck|Pícaro|PHB-ES|20"
 			],
-			"subclassTitle": "Roguish Archetype",
+			"subclassTitle": "Arquetipo de pícaro",
 			"fluff": [
 				{
-					"name": "Rogue",
+					"name": "Pícaro",
 					"type": "section",
 					"entries": [
-						"Signaling for her companions to wait, a halfling creeps forward through the dungeon hall. She presses an ear to the door, then pulls out a set of tools and picks the lock in the blink of an eye. Then she disappears into the shadows as her fighter friend moves forward to kick the door open.",
-						"A human lurks in the shadows of an alley while his accomplice prepares for her part in the ambush. When their target—a notorious slaver—passes the alleyway, the accomplice cries out, the slaver comes to investigate, and the assassin's blade cuts his throat before he can make a sound.",
-						"Suppressing a giggle, a gnome waggles her fingers and magically lifts the key ring from the guard's belt. In a moment, the keys are in her hand, the cell door is open, and she and her companions are free to make their escape.",
-						"Rogues rely on skill, stealth, and their foes' vulnerabilities to get the upper hand in any situation. They have a knack for finding the solution to just about any problem, demonstrating a resourcefulness and versatility that is the cornerstone of any successful adventuring party.",
+						"Indicando a sus compañeros que esperen, una mediana avanza con precaución por una de las salas de una mazmorra. Apoya su oreja contra una puerta, saca su juego de herramientas y ganzúas y fuerza la cerradura en un abrir y cerrar de ojos. Desaparece entre las sombras tras terminar con éxito el proceso, apartándose para que su compañero, un guerrero, abra la puerta de una patada.",
+						"Un humano acecha entre la oscuridad de un callejón mientras su cómplice se prepara para la emboscada. Cuando su objetivo, un famoso esclavista, cruza el callejón, la cómplice deja escapar un grito. El esclavista acude a investigar, pero lo único que encuentra es el filo de un asesino, que atraviesa su garganta antes de poder emitir sonido alguno.",
+						"Aguantándose una risita, la gnoma agita sus dedos, haciendo que, por arte de magia, el llavero del guardia vuele alejándose del cinturón de este. Instantes después, las llaves se encuentran en las manos de la mujer, la celda está abierta y tanto ella como su compañero son libres para marcharse.",
+						"Los pícaros recurren a la habilidad, el sigilo y explotar las debilidades de sus enemigos para sacar ventaja de cualquier situación. Tienen un don para encontrar la solución a casi cualquier problema. Su ingenio y versatilidad les convierten en la piedra angular de prácticamente cualquier grupo que culmina sus aventuras con éxito.",
 						{
 							"type": "entries",
-							"name": "Skill and Precision",
+							"name": "Habilidad y precisión",
 							"entries": [
-								"Rogues devote as much effort to mastering the use of a variety of skills as they do to perfecting their combat abilities, giving them a broad expertise that few other characters can match. Many rogues focus on stealth and deception, while others refine the skills that help them in a dungeon environment, such as climbing, finding and disarming traps, and opening locks.",
-								"When it comes to combat, rogues prioritize cunning over brute strength. A rogue would rather make one precise strike, placing it exactly where the attack will hurt the target most, than wear an opponent down with a barrage of attacks. Rogues have an almost supernatural knack for avoiding danger, and a few learn magical tricks to supplement their other abilities."
+								"Los pícaros dedican mucho esfuerzo a dominar una gran variedad de habilidades y perfeccionar sus técnicas de combate. Toda esto les da una perspectiva muy amplia, que muy pocos personajes pueden igualar. Muchos pícaros se especializan en el sigilo y el engaño, mientras que otros pulen aquellas habilidades que les ayudan a explorar mazmorras, como trepar, encontrar y desactivar trampas o forzar cerraduras.",
+								"Cuando llega la hora de combatir, los pícaros prefieren recurrir a la astucia antes que a la fuerza bruta. Un pícaro, por ejemplo, siempre escogerá ejecutar un único golpe preciso, que hiera a su enemigo en su punto más vulnerable, frente a desgastar a su oponente con un torrente de ataques. Los pícaros tienen un don casi sobrenatural para evitar el peligro, y algunos de ellos incluso aprenden ciertos trucos mágicos con los que complementar sus otros talentos."
 							]
 						},
 						{
 							"type": "entries",
-							"name": "A Shady Living",
+							"name": "Una vida turbia",
 							"entries": [
-								"Every town and city has its share of rogues. Most of them live up to the worst stereotypes of the class, making a living as burglars, assassins, cutpurses, and con artists. Often, these scoundrels are organized into thieves' guilds or crime families. Plenty of rogues operate independently, but even they sometimes recruit apprentices to help them in their scams and heists. A few rogues make an honest living as locksmiths, investigators, or exterminators, which can be a dangerous job in a world where dire rats—and wererats—haunt the sewers.",
-								"As adventurers, rogues fall on both sides of the law. Some are hardened criminals who decide to seek their fortune in treasure hoards, while others take up a life of adventure to escape from the law. Some have learned and perfected their skills with the explicit purpose of infiltrating ancient ruins and hidden crypts in search of treasure."
+								"En toda población de cierto tamaño aparecen pícaros. Muchos de ellos están a la altura de los peores estereotipos de su clase, ganándose la vida como ladrones, asesinos, carteristas y timadores. Es frecuente que estos sinvergüenzas se organicen en gremios de ladrones o familias criminales. Aun así, un gran número de pícaros operan de forma independiente, pero incluso ellos pueden acabar contratando aprendices que les ayuden con sus estafas y golpes. Unos pocos pícaros se ganan la vida de forma honesta, trabajando como cerrajeros, investigadores o exterminadores. Aunque parezca extraño, este último oficio puede ser muy peligroso en un mundo en el que las ratas terribles (e incluso los hombres rata) acechan en las alcantarillas. Como aventureros, los pícaros pueden acabar tanto defendiendo la ley como oponiéndose a ella. Algunos son encallecidos criminales que deciden hacer fortuna buscando tesoros, mientras que otros parten de aventuras para escapar de la ley. Los hay que incluso han aprendido y perfeccionado sus habilidades con el fin expreso de saquear los tesoros ocultos en ruinas ancestrales y criptas ocultas."
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Creating a Rogue",
+							"name": "Creación de un pícaro",
 							"entries": [
-								"As you create your rogue character, consider the character's relationship to the law. Do you have a criminal past—or present? Are you on the run from the law or from an angry thieves' guild master? Or did you leave your guild in search of bigger risks and bigger rewards? Is it greed that drives you in your adventures, or some other desire or ideal?",
-								"What was the trigger that led you away from your previous life? Did a great con or heist gone terribly wrong cause you to reevaluate your career? Maybe you were lucky and a successful robbery gave you the coin you needed to escape the squalor of your life. Did wanderlust finally call you away from your home? Perhaps you suddenly found yourself cut off from your family or your mentor, and you had to find a new means of support. Or maybe you made a new friend—another member of your adventuring party—who showed you new possibilities for earning a living and employing your particular talents.",
+								"Cuando crees tú pícaro, ten en consideración su relación con la ley. ¿Tienes un pasado (o presente) criminal? ¿Estás huyendo de la ley o del enfadado maestro de un gremio de ladrones? Puede que abandonaras tu gremio en busca de mayores recompensas (y, por tanto, también riesgos). ¿Es la codicia lo que te motiva o algún otro deseo o ideal? ¿Qué fue lo que te apartó de tu anterior vida? Quizá uno de tus golpes o estafas acabará siendo un fracaso absoluto, forzándote a replantearte tu carrera como criminal. O a lo mejor sucedió lo contrario, y un robo que salió a pedir de boca te proporcionó los medios para salir de la miseria en la que te encontrabas.",
+								"Es posible que el ansia por viajar te apartara de tu hogar. Si te viste separado súbitamente de tu familia o tu mentor, probablemente tuvieras que encontrar otra forma de mantenerte. O puede que hicieras un amigo nuevo (otro miembro de tu grupo de aventureros), que te enseñó nuevas maneras de emplear tus especiales talentos y, de paso, ganarte la vida haciéndolo.",
 								{
 									"type": "entries",
-									"name": "Quick Build",
+									"name": "Creación rápida",
 									"entries": [
-										"You can make a rogue quickly by following these suggestions. First, Dexterity should be your highest ability score. Make Intelligence your next-highest if you want to excel at Investigation or plan to take up the Arcane Trickster archetype. Choose Charisma instead if you plan to emphasize deception and social interaction. Second, choose the {@background charlatan} background."
+										"Para crear un pícaro de forma rápida sugerimos lo siguiente. Para empezar, Destreza debería ser tu característica más alta. Si te gusta destacar cuando uses Investigación o planeas elegir el arquetipo Embaucador Arcano, tu siguiente característica más alta debería ser la Inteligencia. Sin embargo, si prefieres recurrir al engaño y la interacción social, lo mejor es que elijas el Carisma como tu siguiente característica más alta después de Destreza. A continuación, escoge el trasfondo \"{@background charlatán|PHB-ES}\"."
 									]
 								}
 							]
 						}
 					],
-					"page": 94,
-					"source": "PHB"
+					"page": 115,
+					"source": "PHB-ES"
 				},
 				{
 					"type": "section",
@@ -479,27 +478,27 @@
 						{
 							"type": "quote",
 							"entries": [
-								"People forget that the entire point of venturing down into a dusty tomb is to bring back the prizes hidden away there. Fighting is for fools. Dead men can't spend their fortunes."
+								"La gente se olvida de que la verdadera razón por la que bajas a una tumba polvorienta es para traer de vuelta los tesoros escondidos que puedas encontrar. Pelear es para idiotas. Un hombre muerto no puede gastar su dinero."
 							],
 							"by": "Barnabas Bladecutter"
 						},
-						"When brute force won't get the job done, or when magic isn't available or appropriate, the rogue rises to the fore. With skills tied to stealth, subterfuge, and trickery, rogues can get into and out of trouble in ways that few other characters can emulate.",
-						"Some rogues who turn to adventuring are former criminals who have decided that dodging monsters is preferable to remaining one step ahead of the law. Others are professional killers in search of a profitable application of their talents between contracts. Some simply love the thrill of overcoming any challenge that stands in their way.",
-						"On adventures, a rogue is likely to mix an outwardly cautious approach—few rogues enjoy combat—with a ravenous hunger for loot. Most of the time, in a rogue's mind, taking up arms against a creature is not about killing the creature but about becoming the new owner of its treasure.",
-						"The following sections explore certain facets of what it means to be a rogue, which you can use to add depth to your character.",
+						"Cuando la fuerza bruta no consigue terminar el trabajo, o la magia no está disponible o no es útil, el pícaro entra en acción. Con habilidades ligadas al sigilo, el subterfugio y el engaño, los miembros de esta clase son capaces de meterse y salir de los problemas de maneras que pocos otros personajes pueden emular.",
+						"Algunos pícaros que se meten a aventureros antes eran criminales, habiendo decidido que esquivar monstruos es mejor que esquivar el largo brazo de la ley. Otros son asesinos profesionales que buscan un uso productivo de sus talentos entre contrato y contrato. A otros simplemente les encanta la emoción de superar cualquier desafío que se les presente.",
+						"De aventuras, un pícaro suele combinar un enfoque aparentemente cauteloso (pocos miembros de esta clase disfrutan del combate) con un hambre voraz por el botín. La mayor parte del tiempo, piensa el pícaro, enfrentarse a una criatura no tiene como objetivo matarla, sino convertirse en el nuevo dueño de sus tesoros.",
+						"Las siguientes secciones exploran ciertos aspectos de lo que implica ser un pícaro, y podrás usarlos para añadir profundidad a tu personaje.",
 						{
 							"type": "entries",
-							"name": "Guilty Pleasures",
+							"name": "Placer culpable",
 							"entries": [
-								"Most of what rogues do revolves around obtaining treasure and preventing others from doing the same. Little gets in the way of attaining those goals, except that many rogues are enticed away from that path by a compulsion that clouds their thinking—an irresistible need that must be satisfied, even if doing so is risky.",
-								"A rogue's guilty pleasure could be the acquisition of a physical item, something to be experienced, or a way of conducting oneself at certain times. One rogue might not be able to pass up any loot made of silver, for instance, even if said loot is hanging around the neck of a castle guard. Another one can't go through a day in the city without lifting a purse or two, just to keep in practice.",
-								"What's the one form of temptation that your rogue character can't resist when the opportunity presents itself, even if giving into it might mean trouble for you and your companions?",
+								"La mayor parte de las cosas que hace un pícaro giran alrededor de obtener tesoro y evitar que otros lo consigan. Pocos se interpondrán entre ellos y esos objetivos, aunque muchos picaros se ven desviados del camino por una compulsión que nubla su juicio: una irresistible necesidad que debe ser satisfecha, incluso aunque hacerlo sea arriesgado.",
+								"El placer culpable de un pícaro podría ser conseguir un determinado objeto, experimentar algo o simplemente una manera de comportarse en ciertas circunstancias. Por ejemplo, un pícaro podría ser incapaz de dejar pasar la oportunidad de robar cualquier cosa hecha de plata, incluso si esta está colgando del cuello de un guardia del castillo. En cambio, para otro podría ser imposible permanecer un día en la ciudad sin birlar un par de bolsas, solo para mantenerse en forma.",
+								"¿Cuál es la tentación a la que tu pícaro es incapaz de resistirse cuando se presenta la oportunidad, incluso aunque sea problemático para ti y tus compañeros?",
 								{
 									"type": "table",
-									"caption": "Guilty Pleasures",
+									"caption": "Placeres culpables",
 									"colLabels": [
 										"{@dice d6}",
-										"Pleasure"
+										"Placer"
 									],
 									"colStyles": [
 										"col-1 text-center",
@@ -513,7 +512,7 @@
 													"exact": 1
 												}
 											},
-											"Large gems"
+											"Las piedras preciosas grandes"
 										],
 										[
 											{
@@ -522,7 +521,7 @@
 													"exact": 2
 												}
 											},
-											"A smile from a pretty face"
+											"La sonrisa de una cara bonita."
 										],
 										[
 											{
@@ -531,7 +530,7 @@
 													"exact": 3
 												}
 											},
-											"A new ring for your finger"
+											"Un anillo nuevo para tus dedos"
 										],
 										[
 											{
@@ -540,7 +539,7 @@
 													"exact": 4
 												}
 											},
-											"The chance to deflate someone's ego"
+											"La oportunidad de desinflar el ego de alguien"
 										],
 										[
 											{
@@ -549,7 +548,7 @@
 													"exact": 5
 												}
 											},
-											"The finest food and drink"
+											"La mejor comida y bebida"
 										],
 										[
 											{
@@ -558,7 +557,7 @@
 													"exact": 6
 												}
 											},
-											"Adding to your collection of exotic coins"
+											"Añadir una pieza a tu colección de monedas exóticas"
 										]
 									]
 								}
@@ -566,17 +565,17 @@
 						},
 						{
 							"type": "entries",
-							"name": "Adversaries",
+							"name": "Adversario",
 							"entries": [
-								"Naturally, those who enforce the law are bound to come up against those who break it, and it's the rare rogue who isn't featured on at least one wanted poster. Beyond that, it's in the nature of their profession that rogues often come into contact with criminal elements, whether out of choice or necessity. Some of those people can be adversaries too, and they're likely to be harder to deal with than the average member of the city watch.",
-								"If your character's backstory doesn't already include a personage of this sort, you could work with your DM to come up with a reason why an adversary has appeared in your life. Perhaps you've been the subject of scrutiny for a while from someone who wants to use you for nefarious purposes and has just now become known to you. Such an incident could be the basis for an upcoming adventure.",
-								"Does your rogue character have an adversary who also happens to be a criminal? If so, how is this relationship affecting your life?",
+								"Naturalmente, aquellos que hacen cumplir la ley acaban encontrándose con los que la rompen, por lo que un pícaro que no tiene su cara en un cartel de \"Se busca\" es poco común. Además, como parte de su profesión, es normal que los miembros de esta clase entren en contacto con elementos criminales, ya sea por elección o necesidad. Algunas de esas personas pueden ser adversarios y normalmente será más difícil encargarse de ellos que de la guardia de la ciudad.",
+								"Si el trasfondo de tu aventurero no incluye todavía a un personaje de este tipo, puedes trabajar con tu DM para encontrar una razón por la que un adversario ha entrado en tu vida. Quizá hay alguien que lleva tiempo vigilándote y quiere usarte para terribles propósitos, pero tú acabas de ser consciente de su existencia. Este tipo de incidente podría ser la base de una aventura futura.",
+								"¿Tiene tu pícaro un adversario que también es un criminal? Si es así, ¿cómo afecta esta relación a tu vida?",
 								{
 									"type": "table",
-									"caption": "Adversaries",
+									"caption": "Adversarios",
 									"colLabels": [
 										"{@dice d6}",
-										"Adversary"
+										"Adversario"
 									],
 									"colStyles": [
 										"col-1 text-center",
@@ -590,7 +589,7 @@
 													"exact": 1
 												}
 											},
-											"The pirate captain on whose ship you once served; what you call moving on, the captain calls mutiny"
+											"El capitán pirata en cuyo barco serviste tiempo atrás. Lo que tú llamas \"pasar a otra cosa\", el capitán lo llama motín."
 										],
 										[
 											{
@@ -599,7 +598,7 @@
 													"exact": 2
 												}
 											},
-											"A master spy to whom you unwittingly fed bad information, which led to the assassination of the wrong target"
+											"Un maestro espía al que sin querer diste información errónea, lo que le llevó a asesinar al objetivo incorrecto."
 										],
 										[
 											{
@@ -608,7 +607,7 @@
 													"exact": 3
 												}
 											},
-											"The master of the local thieves' guild, who wants you to join the organization or leave town"
+											"El maestro del gremio de ladrones local, que quiere que te unas a él o salgas de la ciudad."
 										],
 										[
 											{
@@ -617,7 +616,7 @@
 													"exact": 4
 												}
 											},
-											"An art collector who uses illegal means to acquire masterpieces"
+											"Un coleccionista de arte que utiliza medios ilegales para conseguir obras maestras."
 										],
 										[
 											{
@@ -626,7 +625,7 @@
 													"exact": 5
 												}
 											},
-											"A fence who uses you as a messenger to set up illicit meetings"
+											"Un comerciante de objetos robados, que te usa como mensajero para reuniones ilícitas."
 										],
 										[
 											{
@@ -635,7 +634,7 @@
 													"exact": 6
 												}
 											},
-											"The proprietor of an illegal pit fighting arena where you once took bets"
+											"El propietario de una arena de luchadores del pozo en la que fuiste corredor de apuestas."
 										]
 									]
 								}
@@ -645,11 +644,11 @@
 							"type": "entries",
 							"name": "Benefactor",
 							"entries": [
-								"Few rogues make it far in life before needing someone's help, which means thereafter owing that benefactor a significant debt.",
-								"If your character's backstory doesn't already include a personage of this sort, you could work with your DM to determine why a benefactor has appeared in your life. Perhaps you benefited from something your benefactor did for you without realizing who was responsible, and that person has now just become known to you. Who helped you in the past, whether or not you knew it at the time, and what do you owe that person as recompense?",
+								"Pocos pícaros llegan lejos sin necesitar la ayuda de alguien, lo que implica deber un gran favor a ese benefactor.",
+								"Si el trasfondo de tu aventurero no incluye este tipo de personaje, puedes colaborar con tu DM para determinar por qué hay un benefactor en tu vida. Quizá fuiste favorecido por algo que hizo tu benefactor, sin que supieras quién era el responsable de ello, y acabas de conocer la existencia de esa persona. ¿Quién te ayudó en el pasado, lo supieras o no en ese momento, y qué le debes a esa persona como recompensa?",
 								{
 									"type": "table",
-									"caption": "Benefactors",
+									"caption": "Benefactores",
 									"colLabels": [
 										"{@dice d6}",
 										"Benefactor"
@@ -666,7 +665,7 @@
 													"exact": 1
 												}
 											},
-											"A smuggler kept you from getting caught but lost a valuable shipment in doing so. Now you owe that person an equally valuable favor."
+											"Un contrabandista que evitó que te capturaran, pero perdió un importante cargamento al hacerlo. Ahora le debes a esa persona un favor igual de valioso."
 										],
 										[
 											{
@@ -675,7 +674,7 @@
 													"exact": 2
 												}
 											},
-											"The Beggar King has hidden you from your pursuers many times, in return for future considerations."
+											"El Rey Mendigo te ha escondido muchas veces de tus perseguidores, a cambio de favores futuros."
 										],
 										[
 											{
@@ -684,7 +683,7 @@
 													"exact": 3
 												}
 											},
-											"A magistrate once kept you out of jail in return for information on a powerful crime lord."
+											"Un magistrado te mantuvo fuera de la cárcel, pero en compensación tuviste que dar información sobre un poderoso señor del crimen."
 										],
 										[
 											{
@@ -693,7 +692,7 @@
 													"exact": 4
 												}
 											},
-											"Your parents used their savings to bail you out of trouble in your younger days and are now destitute."
+											"Tus padres utilizaron sus ahorros para sacarte de un problema y ahora están desamparados."
 										],
 										[
 											{
@@ -702,7 +701,7 @@
 													"exact": 5
 												}
 											},
-											"A dragon didn't eat you when it had a chance, and in return you promised to set aside choice pieces of treasure for it."
+											"Un dragón no te comió cuando tuvo la oportunidad y, a cambio, prometiste guardarle los mejores tesoros."
 										],
 										[
 											{
@@ -711,15 +710,15 @@
 													"exact": 6
 												}
 											},
-											"A druid once helped you out of a tight spot; now any random animal you see could be that benefactor, perhaps come to claim a return favor."
+											"Un druida te ayudó una vez a salir de una situación difícil. Ahora cualquier animal que ves podría ser ese benefactor, quizá llegado para pedirte que le devuelvas el favor."
 										]
 									]
 								}
 							]
 						}
 					],
-					"page": 44,
-					"source": "XGE"
+					"page": 57,
+					"source": "XGE-ES"
 				}
 			]
 		}
@@ -735,8 +734,8 @@
 			"classSource": "PHB-ES",
 			"level": 1,
 			"entries": [
-				"At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with {@item thieves' tools|phb}. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.",
-				"At 6th level, you can choose two more of your proficiencies (in skills or with {@item thieves' tools|phb}) to gain this benefit."
+				"At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with {@item thieves' tools|PHB-ES}. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.",
+				"At 6th level, you can choose two more of your proficiencies (in skills or with {@item thieves' tools|PHB-ES}) to gain this benefit."
 			]
 		},
 		{
@@ -844,7 +843,7 @@
 			"classSource": "PHB-ES",
 			"level": 6,
 			"entries": [
-				"At 6th level, you can choose two more of your proficiencies (in skills or with {@item thieves' tools|phb}) to gain the benefit of Expertise."
+				"At 6th level, you can choose two more of your proficiencies (in skills or with {@item thieves' tools|PHB-ES}) to gain the benefit of Expertise."
 			]
 		},
 		{
@@ -1358,10 +1357,10 @@
 				}
 			],
 			"subclassFeatures": [
-				"Arcane Trickster|Rogue||Arcane Trickster||3",
-				"Magical Ambush|Rogue||Arcane Trickster||9",
-				"Versatile Trickster|Rogue||Arcane Trickster||13",
-				"Spell Thief|Rogue||Arcane Trickster||17"
+				"Arcane Trickster|Pícaro|PHB-ES|Arcane Trickster||3",
+				"Magical Ambush|Pícaro|PHB-ES|Arcane Trickster||9",
+				"Versatile Trickster|Pícaro|PHB-ES|Arcane Trickster||13",
+				"Spell Thief|Pícaro|PHB-ES|Arcane Trickster||17"
 			]
 		},
 		{
@@ -1372,10 +1371,10 @@
 			"classSource": "PHB-ES",
 			"page": 97,
 			"subclassFeatures": [
-				"Assassin|Rogue||Assassin||3",
-				"Infiltration Expertise|Rogue||Assassin||9",
-				"Impostor|Rogue||Assassin||13",
-				"Death Strike|Rogue||Assassin||17"
+				"Assassin|Pícaro|PHB-ES|Assassin||3",
+				"Infiltration Expertise|Pícaro|PHB-ES|Assassin||9",
+				"Impostor|Pícaro|PHB-ES|Assassin||13",
+				"Death Strike|Pícaro|PHB-ES|Assassin||17"
 			]
 		},
 		{
@@ -1388,10 +1387,10 @@
 			"srd": true,
 			"basicRules": true,
 			"subclassFeatures": [
-				"Thief|Rogue||Thief||3",
-				"Supreme Sneak|Rogue||Thief||9",
-				"Use Magic Device|Rogue||Thief||13",
-				"Thief's Reflexes|Rogue||Thief||17"
+				"Thief|Pícaro|PHB-ES|Thief||3",
+				"Supreme Sneak|Pícaro|PHB-ES|Thief||9",
+				"Use Magic Device|Pícaro|PHB-ES|Thief||13",
+				"Thief's Reflexes|Pícaro|PHB-ES|Thief||17"
 			]
 		},
 		{
@@ -1402,10 +1401,10 @@
 			"classSource": "PHB-ES",
 			"page": 45,
 			"subclassFeatures": [
-				"Inquisitive|Rogue||Inquisitive|XGE|3",
-				"Steady Eye|Rogue||Inquisitive|XGE|9",
-				"Unerring Eye|Rogue||Inquisitive|XGE|13",
-				"Eye for Weakness|Rogue||Inquisitive|XGE|17"
+				"Inquisitive|Pícaro|PHB-ES|Inquisitive|XGE|3",
+				"Steady Eye|Pícaro|PHB-ES|Inquisitive|XGE|9",
+				"Unerring Eye|Pícaro|PHB-ES|Inquisitive|XGE|13",
+				"Eye for Weakness|Pícaro|PHB-ES|Inquisitive|XGE|17"
 			]
 		},
 		{
@@ -1422,10 +1421,10 @@
 				}
 			],
 			"subclassFeatures": [
-				"Mastermind|Rogue||Mastermind|XGE|3",
-				"Insightful Manipulator|Rogue||Mastermind|XGE|9",
-				"Misdirection|Rogue||Mastermind|XGE|13",
-				"Soul of Deceit|Rogue||Mastermind|XGE|17"
+				"Mastermind|Pícaro|PHB-ES|Mastermind|XGE|3",
+				"Insightful Manipulator|Pícaro|PHB-ES|Mastermind|XGE|9",
+				"Misdirection|Pícaro|PHB-ES|Mastermind|XGE|13",
+				"Soul of Deceit|Pícaro|PHB-ES|Mastermind|XGE|17"
 			]
 		},
 		{
@@ -1436,10 +1435,10 @@
 			"classSource": "PHB-ES",
 			"page": 47,
 			"subclassFeatures": [
-				"Scout|Rogue||Scout|XGE|3",
-				"Superior Mobility|Rogue||Scout|XGE|9",
-				"Ambush Master|Rogue||Scout|XGE|13",
-				"Sudden Strike|Rogue||Scout|XGE|17"
+				"Scout|Pícaro|PHB-ES|Scout|XGE|3",
+				"Superior Mobility|Pícaro|PHB-ES|Scout|XGE|9",
+				"Ambush Master|Pícaro|PHB-ES|Scout|XGE|13",
+				"Sudden Strike|Pícaro|PHB-ES|Scout|XGE|17"
 			]
 		},
 		{
@@ -1456,10 +1455,10 @@
 				}
 			],
 			"subclassFeatures": [
-				"Swashbuckler|Rogue||Swashbuckler|XGE|3",
-				"Panache|Rogue||Swashbuckler|XGE|9",
-				"Elegant Maneuver|Rogue||Swashbuckler|XGE|13",
-				"Master Duelist|Rogue||Swashbuckler|XGE|17"
+				"Swashbuckler|Pícaro|PHB-ES|Swashbuckler|XGE|3",
+				"Panache|Pícaro|PHB-ES|Swashbuckler|XGE|9",
+				"Elegant Maneuver|Pícaro|PHB-ES|Swashbuckler|XGE|13",
+				"Master Duelist|Pícaro|PHB-ES|Swashbuckler|XGE|17"
 			]
 		},
 		{
@@ -1470,10 +1469,10 @@
 			"classSource": "PHB-ES",
 			"page": 62,
 			"subclassFeatures": [
-				"Phantom|Rogue||Phantom|TCE|3",
-				"Tokens of the Departed|Rogue||Phantom|TCE|9",
-				"Ghost Walk|Rogue||Phantom|TCE|13",
-				"Death's Friend|Rogue||Phantom|TCE|17"
+				"Phantom|Pícaro|PHB-ES|Phantom|TCE|3",
+				"Tokens of the Departed|Pícaro|PHB-ES|Phantom|TCE|9",
+				"Ghost Walk|Pícaro|PHB-ES|Phantom|TCE|13",
+				"Death's Friend|Pícaro|PHB-ES|Phantom|TCE|17"
 			]
 		},
 		{
@@ -1484,10 +1483,10 @@
 			"classSource": "PHB-ES",
 			"page": 63,
 			"subclassFeatures": [
-				"Soulknife|Rogue||Soulknife|TCE|3",
-				"Soul Blades|Rogue||Soulknife|TCE|9",
-				"Psychic Veil|Rogue||Soulknife|TCE|13",
-				"Rend Mind|Rogue||Soulknife|TCE|17"
+				"Soulknife|Pícaro|PHB-ES|Soulknife|TCE|3",
+				"Soul Blades|Pícaro|PHB-ES|Soulknife|TCE|9",
+				"Psychic Veil|Pícaro|PHB-ES|Soulknife|TCE|13",
+				"Rend Mind|Pícaro|PHB-ES|Soulknife|TCE|17"
 			]
 		}
 	],
@@ -1505,11 +1504,11 @@
 				"Some rogues enhance their fine-honed skills of stealth and agility with magic, learning tricks of enchantment and illusion. These rogues include pickpockets and burglars, but also pranksters, mischief-makers, and a significant number of adventurers.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Spellcasting|Rogue||Arcane Trickster||3"
+					"subclassFeature": "Spellcasting|Pícaro|PHB-ES|Arcane Trickster||3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Mage Hand Legerdemain|Rogue||Arcane Trickster||3"
+					"subclassFeature": "Mage Hand Legerdemain|Pícaro|PHB-ES|Arcane Trickster||3"
 				}
 			]
 		},
@@ -1530,7 +1529,7 @@
 					"items": [
 						"You can stow one object the hand is holding in a container worn or carried by another creature.",
 						"You can retrieve an object in a container worn or carried by another creature.",
-						"You can use {@item thieves' tools|phb} to pick locks and disarm traps at range."
+						"You can use {@item thieves' tools|PHB-ES} to pick locks and disarm traps at range."
 					]
 				},
 				"You can perform one of these tasks without being noticed by a creature if you succeed on a Dexterity ({@skill Sleight of Hand}) check contested by the creature's Wisdom ({@skill Perception}) check.",
@@ -1548,7 +1547,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"When you reach 3rd level, you gain the ability to cast spells. See {@book chapter 10|PHB|10} for the general rules of spellcasting and {@book chapter 11|PHB|11} for the {@filter wizard spell list|spells|class=wizard}.",
+				"When you reach 3rd level, you gain the ability to cast spells. See {@book chapter 10|PHB-ES|10} for the general rules of spellcasting and {@book chapter 11|PHB-ES|11} for the {@filter wizard spell list|spells|class=wizard}.",
 				{
 					"type": "entries",
 					"entries": [
@@ -1675,11 +1674,11 @@
 				"Your archetype grants you features at 3rd level and then again at 9th, 13th, and 17th level.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Assassinate|Rogue||Assassin||3"
+					"subclassFeature": "Assassinate|Pícaro|PHB-ES|Assassin||3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Bonus Proficiencies|Rogue||Assassin||3"
+					"subclassFeature": "Bonus Proficiencies|Pícaro|PHB-ES|Assassin||3"
 				}
 			]
 		},
@@ -1694,7 +1693,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Starting at 3rd level, you are at your deadliest when you get the drop on your enemies. You have advantage on attack rolls against any creature that hasn't taken a turn in the combat yet. In addition, any hit you score against a creature that is {@quickref Surprise|PHB|3|0|surprised} is a critical hit."
+				"Starting at 3rd level, you are at your deadliest when you get the drop on your enemies. You have advantage on attack rolls against any creature that hasn't taken a turn in the combat yet. In addition, any hit you score against a creature that is {@quickref Surprise|PHB-ES|3|0|surprised} is a critical hit."
 			]
 		},
 		{
@@ -1708,7 +1707,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"When you choose this archetype at 3rd level, you gain proficiency with the {@item disguise kit|phb} and the {@item poisoner's kit|phb}."
+				"When you choose this archetype at 3rd level, you gain proficiency with the {@item disguise kit|PHB-ES} and the {@item poisoner's kit|PHB-ES}."
 			]
 		},
 		{
@@ -1752,7 +1751,7 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"Starting at 17th level, you become a master of instant death. When you attack and hit a creature that is {@quickref Surprise|PHB|3|0|surprised}, it must make a Constitution saving throw (DC 8 + your Dexterity modifier + your proficiency bonus). On a failed save, double the damage of your attack against the creature."
+				"Starting at 17th level, you become a master of instant death. When you attack and hit a creature that is {@quickref Surprise|PHB-ES|3|0|surprised}, it must make a Constitution saving throw (DC 8 + your Dexterity modifier + your proficiency bonus). On a failed save, double the damage of your attack against the creature."
 			]
 		},
 		{
@@ -1770,11 +1769,11 @@
 				"You hone your skills in the larcenous arts. Burglars, bandits, cutpurses, and other criminals typically follow this archetype, but so do rogues who prefer to think of themselves as professional treasure seekers, explorers, delvers, and investigators. In addition to improving your agility and stealth, you learn skills useful for delving into ancient ruins, reading unfamiliar languages, and using magic items you normally couldn't employ.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Fast Hands|Rogue||Thief||3"
+					"subclassFeature": "Fast Hands|Pícaro|PHB-ES|Thief||3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Second-Story Work|Rogue||Thief||3"
+					"subclassFeature": "Second-Story Work|Pícaro|PHB-ES|Thief||3"
 				}
 			]
 		},
@@ -1791,7 +1790,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Starting at 3rd level, you can use the bonus action granted by your Cunning Action to make a Dexterity ({@skill Sleight of Hand}) check, use your {@item thieves' tools|phb} to disarm a trap or open a lock, or take the {@action Use an Object} action."
+				"Starting at 3rd level, you can use the bonus action granted by your Cunning Action to make a Dexterity ({@skill Sleight of Hand}) check, use your {@item thieves' tools|PHB-ES} to disarm a trap or open a lock, or take the {@action Use an Object} action."
 			]
 		},
 		{
@@ -1856,7 +1855,7 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"When you reach 17th level, you have become adept at laying ambushes and quickly escaping danger. You can take two turns during the first round of any combat. You take your first turn at your normal initiative and your second turn at your initiative minus 10. You can't use this feature when you are {@quickref Surprise|PHB|3|0|surprised}."
+				"When you reach 17th level, you have become adept at laying ambushes and quickly escaping danger. You can take two turns during the first round of any combat. You take your first turn at your normal initiative and your second turn at your initiative minus 10. You can't use this feature when you are {@quickref Surprise|PHB-ES|3|0|surprised}."
 			]
 		},
 		{
@@ -1874,11 +1873,11 @@
 				"How did you discover this grim power? Did you sleep in a graveyard and awaken to your new abilities? Or did you cultivate them in a temple or thieves' guild dedicated to a deity of death?",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Whispers of the Dead|Rogue||Phantom|TCE|3"
+					"subclassFeature": "Whispers of the Dead|Pícaro|PHB-ES|Phantom|TCE|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Wails from the Grave|Rogue||Phantom|TCE|3"
+					"subclassFeature": "Wails from the Grave|Pícaro|PHB-ES|Phantom|TCE|3"
 				}
 			]
 		},
@@ -1925,7 +1924,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 9th-level Phantom feature}",
-				"When a life ends in your presence, you're able to snatch a token from the departing soul, a sliver of its life essence that takes physical form: as a reaction when a creature you can see dies within 30 feet of you, you can open your free hand and cause a Tiny trinket to appear there, a soul trinket. The DM determines the trinket's form or has you roll on the {@item Trinket|phb|Trinkets} table in the {@i Player's Handbook} to generate it. You can have a maximum number of soul trinkets equal to your proficiency bonus, and you can't create one while at your maximum.",
+				"When a life ends in your presence, you're able to snatch a token from the departing soul, a sliver of its life essence that takes physical form: as a reaction when a creature you can see dies within 30 feet of you, you can open your free hand and cause a Tiny trinket to appear there, a soul trinket. The DM determines the trinket's form or has you roll on the {@item Trinket|PHB-ES|Trinkets} table in the {@i Player's Handbook} to generate it. You can have a maximum number of soul trinkets equal to your proficiency bonus, and you can't create one while at your maximum.",
 				"You can use soul trinkets in the following ways:",
 				{
 					"type": "list",
@@ -1985,16 +1984,16 @@
 			"subclassSource": "TCE-ES",
 			"level": 3,
 			"entries": [
-				"Most assassins strike with physical weapons, and many burglars and spies use {@item thieves' tools|PHB} to infiltrate secure locations. In contrast, a Soulknife strikes and infiltrates with the mind, cutting through barriers both physical and psychic. These rogues discover psionic power within themselves and channel it to do their roguish work. They find easy employment as members of thieves' guilds, though they are often mistrusted by rogues who are leery of anyone using strange mind powers to conduct their business. Most governments would also be happy to employ a Soulknife as a spy.",
+				"Most assassins strike with physical weapons, and many burglars and spies use {@item thieves' tools|PHB-ES} to infiltrate secure locations. In contrast, a Soulknife strikes and infiltrates with the mind, cutting through barriers both physical and psychic. These rogues discover psionic power within themselves and channel it to do their roguish work. They find easy employment as members of thieves' guilds, though they are often mistrusted by rogues who are leery of anyone using strange mind powers to conduct their business. Most governments would also be happy to employ a Soulknife as a spy.",
 				"Amid the trees of ancient forests on the Material Plane and in the Feywild, some wood elves walk the path of the Soulknife, serving as silent, lethal guardians of their woods. In the endless war among the gith, a githzerai is encouraged to become a Soulknife when stealth is required against the githyanki foe.",
 				"As a Soulknife, your psionic abilities might have haunted you since you were a child, only revealing their full potential as you experienced the stress of adventure. Or you might have sought out a reclusive order of psychic adepts and spent years learning how to manifest your power.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Psionic Power|Rogue||Soulknife|TCE|3"
+					"subclassFeature": "Psionic Power|Pícaro|PHB-ES|Soulknife|TCE|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Psychic Blades|Rogue||Soulknife|TCE|3"
+					"subclassFeature": "Psychic Blades|Pícaro|PHB-ES|Soulknife|TCE|3"
 				}
 			]
 		},
@@ -2118,15 +2117,15 @@
 				"As an archetypal Inquisitive, you excel at rooting out secrets and unraveling mysteries. You rely on your sharp eye for detail, but also on your finely honed ability to read the words and deeds of other creatures to determine their true intent. You excel at defeating creatures that hide among and prey upon ordinary folk, and your mastery of lore and your keen deductions make you well equipped to expose and end hidden evils.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Ear for Deceit|Rogue||Inquisitive|XGE|3"
+					"subclassFeature": "Ear for Deceit|Pícaro|PHB-ES|Inquisitive|XGE|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Eye for Detail|Rogue||Inquisitive|XGE|3"
+					"subclassFeature": "Eye for Detail|Pícaro|PHB-ES|Inquisitive|XGE|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Insightful Fighting|Rogue||Inquisitive|XGE|3"
+					"subclassFeature": "Insightful Fighting|Pícaro|PHB-ES|Inquisitive|XGE|3"
 				}
 			]
 		},
@@ -2229,11 +2228,11 @@
 				"Your focus is on people and on the influence and secrets they have. Many spies, courtiers, and schemers follow this archetype, leading lives of intrigue. Words are your weapons as often as knives or poison, and secrets and favors are some of your favorite treasures.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Master of Intrigue|Rogue||Mastermind|XGE|3"
+					"subclassFeature": "Master of Intrigue|Pícaro|PHB-ES|Mastermind|XGE|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Master of Tactics|Rogue||Mastermind|XGE|3"
+					"subclassFeature": "Master of Tactics|Pícaro|PHB-ES|Mastermind|XGE|3"
 				}
 			]
 		},
@@ -2248,7 +2247,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"When you choose this archetype at 3rd level, you gain proficiency with the {@item disguise kit|phb}, the {@item forgery kit|phb}, and one {@item gaming set|PHB} of your choice. You also learn two languages of your choice.",
+				"When you choose this archetype at 3rd level, you gain proficiency with the {@item disguise kit|PHB-ES}, the {@item forgery kit|PHB-ES}, and one {@item gaming set|PHB-ES} of your choice. You also learn two languages of your choice.",
 				"Additionally, you can unerringly mimic the speech patterns and accent of a creature that you hear speak for at least 1 minute, enabling you to pass yourself off as a native speaker of a particular land, provided that you know the language."
 			]
 		},
@@ -2332,11 +2331,11 @@
 				"You are skilled in stealth and surviving far from the streets of a city, allowing you to scout ahead of your companions during expeditions. Rogues who embrace this archetype are at home in the wilderness and among barbarians and rangers, and many Scouts serve as the eyes and ears of war bands. Ambusher, spy, bounty hunter—these are just a few of the roles that Scouts assume as they range the world.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Skirmisher|Rogue||Scout|XGE|3"
+					"subclassFeature": "Skirmisher|Pícaro|PHB-ES|Scout|XGE|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Survivalist|Rogue||Scout|XGE|3"
+					"subclassFeature": "Survivalist|Pícaro|PHB-ES|Scout|XGE|3"
 				}
 			]
 		},
@@ -2425,11 +2424,11 @@
 				"A Swashbuckler excels in single combat, and can fight with two weapons while safely darting away from an opponent.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Fancy Footwork|Rogue||Swashbuckler|XGE|3"
+					"subclassFeature": "Fancy Footwork|Pícaro|PHB-ES|Swashbuckler|XGE|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Rakish Audacity|Rogue||Swashbuckler|XGE|3"
+					"subclassFeature": "Rakish Audacity|Pícaro|PHB-ES|Swashbuckler|XGE|3"
 				}
 			]
 		},
