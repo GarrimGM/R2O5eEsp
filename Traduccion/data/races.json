@@ -1849,7 +1849,7 @@
 					"name": "Trance",
 					"entries": [
 						"No necesitas dormir y la magia no puede dormirte. Puedes finalizar un descanso largo en 4 horas si las pasas en una meditación similar a un trance, tiempo durante el cual conservas la consciencia.",
-						"Siempre que termines este trance, puedes cambiar tu estación y puedes ganar dos competencias que no tengas, cada una con un arma o una herramienta de tu elección del Manual del Jugador. Adquieres estas competencias místicamente, extrayéndolas de la memoria élfica compartida, y las conservarás hasta que finalices tu siguiente descanso largo."
+						"Siempre que termines este trance, puedes cambiar tu estación y puedes ganar dos competencias que no tengas, cada una con un {@book arma|PHB-ES|5|armas} o una {@book herramienta|PHB-ES|5|herramientas} de tu elección del Manual del Jugador. Adquieres estas competencias místicamente, extrayéndolas de la memoria élfica compartida, y las conservarás hasta que finalices tu siguiente descanso largo."
 					]
 				},
 				{
@@ -3239,7 +3239,7 @@
 					"name": "Trance",
 					"entries": [
 						"No necesitas dormir y la magia no puede dormirte. Puedes finalizar un descanso largo en 4 horas si las pasas en una meditación similar a un trance, tiempo durante el cual conservas la consciencia.",
-						"Siempre que termines este trance, puedes ganar dos competencias que no tengas, cada una con un arma o una herramienta de tu elección del Manual del Jugador. Adquieres estas competencias místicamente, extrayéndolas de la memoria élfica compartida, y las conservarás hasta que finalices tu siguiente descanso largo."
+						"Siempre que termines este trance, puedes ganar dos competencias que no tengas, cada una con un un {@book arma|PHB-ES|5|armas} o una {@book herramienta|PHB-ES|5|herramientas} de tu elección del Manual del Jugador. Adquieres estas competencias místicamente, extrayéndolas de la memoria élfica compartida, y las conservarás hasta que finalices tu siguiente descanso largo."
 					]
 				},
 				{
@@ -3348,7 +3348,7 @@
 					"name": "Trance",
 					"entries": [
 						"No necesitas dormir y la magia no puede dormirte. Puedes finalizar un descanso largo en 4 horas si las pasas en una meditación similar a un trance, tiempo durante el cual conservas la consciencia.",
-						"Siempre que termines este trance, puedes ganar dos competencias que no tengas, cada una con un arma o una herramienta de tu elección del Manual del Jugador. Adquieres estas competencias místicamente, extrayéndolas de la memoria élfica compartida, y las conservarás hasta que finalices tu siguiente descanso largo."
+						"Siempre que termines este trance, puedes ganar dos competencias que no tengas, cada una con un un {@book arma|PHB-ES|5|armas} o una {@book herramienta|PHB-ES|5|herramientas} de tu elección del Manual del Jugador. Adquieres estas competencias místicamente, extrayéndolas de la memoria élfica compartida, y las conservarás hasta que finalices tu siguiente descanso largo."
 					]
 				},
 				{
@@ -4315,13 +4315,21 @@
 				"max": 350
 			},
 			"darkvision": 60,
-			"traitTags": [
-				"Tool Proficiency"
-			],
 			"languageProficiencies": [
 				{
 					"común|PHB-ES": true,
 					"enano|PHB-ES": true
+				}
+			],
+			"toolProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"herramientas de herrero|PHB-ES",
+							"suministros de cervecero|PHB-ES",
+							"herramientas de albañil|PHB-ES"
+						]
+					}
 				}
 			],
 			"weaponProficiencies": [
@@ -13164,8 +13172,10 @@
 					"con": 1
 				}
 			],
-			"traitTags": [
-				"Tool Proficiency"
+			"toolProficiencies": [
+				{
+					"herramientas de manitas|PHB-ES": true
+				}
 			],
 			"entries": [
 				{
