@@ -392,41 +392,41 @@
 				}
 			],
 			"classFeatures": [
-				"Expertise|Pícaro|PHB-ES|1",
-				"Sneak Attack|Pícaro|PHB-ES|1",
-				"Thieves' Cant|Pícaro|PHB-ES|1",
-				"Cunning Action|Pícaro|PHB-ES|2",
+				"Pericia|Pícaro|PHB-ES|1",
+				"Ataque Furtivo|Pícaro|PHB-ES|1",
+				"Jerga de Ladrones|Pícaro|PHB-ES|1",
+				"Acción Astuta|Pícaro|PHB-ES|2",
 				{
-					"classFeature": "Roguish Archetype|Pícaro|PHB-ES|3",
+					"classFeature": "Arquetipo de Pícaro|Pícaro|PHB-ES|3",
 					"gainSubclassFeature": true
 				},
-				"Steady Aim|Pícaro|PHB-ES|3|TCE-ES",
-				"Ability Score Improvement|Pícaro|PHB-ES|4",
-				"Uncanny Dodge|Pícaro|PHB-ES|5",
-				"Expertise|Pícaro|PHB-ES|6",
-				"Evasion|Pícaro|PHB-ES|7",
-				"Ability Score Improvement|Pícaro|PHB-ES|8",
+				"Puntería Certera|Pícaro|PHB-ES|3|TCE-ES",
+				"Mejora de Característica|Pícaro|PHB-ES|4",
+				"Esquiva Asombrosa|Pícaro|PHB-ES|5",
+				"Pericia|Pícaro|PHB-ES|6",
+				"Evasión|Pícaro|PHB-ES|7",
+				"Mejora de Característica|Pícaro|PHB-ES|8",
 				{
-					"classFeature": "Roguish Archetype feature|Pícaro|PHB-ES|9",
+					"classFeature": "Rasgo de Arquetipo de Pícaro|Pícaro|PHB-ES|9",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Pícaro|PHB-ES|10",
-				"Reliable Talent|Pícaro|PHB-ES|11",
-				"Ability Score Improvement|Pícaro|PHB-ES|12",
+				"Mejora de Característica|Pícaro|PHB-ES|10",
+				"Talentos Fiables|Pícaro|PHB-ES|11",
+				"Mejora de Característica|Pícaro|PHB-ES|12",
 				{
-					"classFeature": "Roguish Archetype feature|Pícaro|PHB-ES|13",
+					"classFeature": "Rasgo de Arquetipo de Pícaro|Pícaro|PHB-ES|13",
 					"gainSubclassFeature": true
 				},
-				"Blindsense|Pícaro|PHB-ES|14",
-				"Slippery Mind|Pícaro|PHB-ES|15",
-				"Ability Score Improvement|Pícaro|PHB-ES|16",
+				"Sentir sin Ver|Pícaro|PHB-ES|14",
+				"Mente Escurridiza|Pícaro|PHB-ES|15",
+				"Mejora de Característica|Pícaro|PHB-ES|16",
 				{
-					"classFeature": "Roguish Archetype feature|Pícaro|PHB-ES|17",
+					"classFeature": "Rasgo de Arquetipo de Pícaro|Pícaro|PHB-ES|17",
 					"gainSubclassFeature": true
 				},
-				"Elusive|Pícaro|PHB-ES|18",
-				"Ability Score Improvement|Pícaro|PHB-ES|19",
-				"Stroke of Luck|Pícaro|PHB-ES|20"
+				"Elusivo|Pícaro|PHB-ES|18",
+				"Mejora de Característica|Pícaro|PHB-ES|19",
+				"Golpe de Suerte|Pícaro|PHB-ES|20"
 			],
 			"subclassTitle": "Arquetipo de pícaro",
 			"fluff": [
@@ -725,324 +725,324 @@
 	],
 	"classFeature": [
 		{
-			"name": "Expertise",
+			"name": "Pericia",
 			"source": "PHB-ES",
-			"page": 94,
+			"page": 116,
 			"srd": true,
 			"basicRules": true,
-			"className": "Rogue",
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
 			"level": 1,
 			"entries": [
-				"At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with {@item thieves' tools|PHB-ES}. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.",
-				"At 6th level, you can choose two more of your proficiencies (in skills or with {@item thieves' tools|PHB-ES}) to gain this benefit."
+				"A nivel 1, escoge dos de tus competencias en habilidades, o bien solo una y tu competencia con las {@item herramientas de ladrón|PHB-ES}. Tu bonificador por competencia se duplica para cualquier prueba de característica que hagas utilizando cualquiera de las dos competencias elegidas.",
+				"A nivel 6 puedes elegir otras dos competencias (en habilidades o con {@item herramientas de ladrón|PHB-ES}) y obtener este beneficio para ellas."
 			]
 		},
 		{
-			"name": "Sneak Attack",
+			"name": "Ataque Furtivo",
 			"source": "PHB-ES",
-			"page": 94,
+			"page": 117,
 			"srd": true,
 			"basicRules": true,
-			"className": "Rogue",
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
 			"level": 1,
 			"entries": [
-				"Beginning at 1st level, you know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra {@damage 1d6} damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.",
-				"You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't {@condition incapacitated}, and you don't have disadvantage on the attack roll.",
-				"The amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table."
+				"A partir de nivel 1 sabes cómo golpear sutilmente y aprovecharte de un enemigo distraído. Una vez por turno, puedes infligir {@damage 1d6} de daño adicional a una criatura a la que impactes con un ataque en cuya tirada de ataque tuvieras ventaja. Este ataque debe haber sido hecho utilizando un arma sutil o a distancia.",
+				"No necesitas tener ventaja en la tirada de ataque si otro enemigo del objetivo está a 5 pies o menos de él, dicho enemigo no está {@condition incapacitado|PHB-ES}, y no sufres desventaja en la tirada de ataque.",
+				"La cantidad de daño adicional aumenta según subes de nivel en esta clase, tal y como se indica en la columna \"ataque furtivo\" de la tabla del pícaro."
 			]
 		},
 		{
-			"name": "Thieves' Cant",
+			"name": "Jerga de Ladrones",
 			"source": "PHB-ES",
-			"page": 94,
+			"page": 117,
 			"srd": true,
 			"basicRules": true,
-			"className": "Rogue",
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
 			"level": 1,
 			"entries": [
-				"During your rogue training you learned thieves' cant, a secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation. Only another creature that knows thieves' cant understands such messages. It takes four times longer to convey such a message than it does to speak the same idea plainly.",
-				"In addition, you understand a set of secret signs and symbols used to convey short, simple messages, such as whether an area is dangerous or the territory of a thieves' guild, whether loot is nearby, or whether the people in an area are easy marks or will provide a safe house for thieves on the run."
+				"Durante tu entrenamiento como pícaro aprendiste la jerga de ladrones, una mezcla de dialecto, argot y código secreto que te permite esconder mensajes en lo que parece una conversación normal y corriente. Únicamente aquellas criaturas que conozcan la jerga de ladrones podrán en tender estos mensajes. Expresar un mensaje utilizando esta jerga precisa de cuatro veces el tiempo que tardarías en comunicar la misma idea directamente.",
+				"Además, también comprendes un conjunto de señales y símbolos secretos que se usan para dejar mensajes cortos y sencillos, como el hecho de que una zona sea peligrosa o el territorio de un gremio de ladrones, si hay o no botín cerca, o si los lugareños de los alrededores son presas fáciles o pueden proporcionar un piso franco para ladrones a la fuga."
 			]
 		},
 		{
-			"name": "Cunning Action",
+			"name": "Acción Astuta",
 			"source": "PHB-ES",
-			"page": 94,
+			"page": 117,
 			"srd": true,
 			"basicRules": true,
-			"className": "Rogue",
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
 			"level": 2,
 			"entries": [
-				"Starting at 2nd level, your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the {@action Dash}, {@action Disengage}, or {@action Hide} action."
+				"A partir de nivel 2 tu agilidad mental y rapidez te permiten moverte y actuar con presteza, por lo que puedes llevar a cabo una acción adicional en cada uno de tus turnos durante un combate. Solo puedes utilizar esta acción adicional para realizar las acciones de {@action Correr|PHB-ES}, {@action Destrabarse|PHB-ES} o {@action Esconderse|PHB-ES}."
 			]
 		},
 		{
-			"name": "Roguish Archetype",
+			"name": "Arquetipo de Pícaro",
 			"source": "PHB-ES",
-			"page": 94,
+			"page": 117,
 			"srd": true,
 			"basicRules": true,
-			"className": "Rogue",
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
 			"level": 3,
 			"entries": [
-				"At 3rd level, you choose an archetype that you emulate in the exercise of your rogue abilities from the list of available archetypes. Your archetype choice grants you features at 3rd level and then again at 9th, 13th, and 17th level."
+				"A nivel 3, escoges un arquetipo al que aspiras emular, desarrollando tus habilidades como pícaro siguiendo ese modelo. Elige entre Ladrón, Asesino o Embaucador Arcano. Todos ellos están detallados al final de la descripción de esta clase. Esta elección te proporciona ciertos rasgos cuando alcanzas los niveles 3, 9, 13 y 17."
 			]
 		},
 		{
-			"name": "Steady Aim",
+			"name": "Puntería Certera",
 			"source": "TCE-ES",
-			"page": 62,
-			"className": "Rogue",
+			"page": 75,
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
 			"level": 3,
 			"isClassFeatureVariant": true,
 			"entries": [
-				"{@i 3rd-level rogue {@variantrule optional class features|tce|optional feature}}",
-				"As a bonus action, you give yourself advantage on your next attack roll on the current turn. You can use this bonus action only if you haven't moved during this turn, and after you use the bonus action, your speed is 0 until the end of the current turn."
+				"{@i {@variantrule Rasgos de clase opcionales|TCE-ES|Rasgo opcional} de pícaro de nivel 3}",
+				"Como acción adicional, obtienes ventaja en tu siguiente tirada de ataque del turno actual. Solo puedes usar esta acción adicional si no te has movido durante ese turno y después de usarla tu velocidad se reduce a 0 hasta el final de ese turno."
 			]
 		},
 		{
-			"name": "Ability Score Improvement",
+			"name": "Mejora de Característica",
 			"source": "PHB-ES",
-			"page": 94,
+			"page": 117,
 			"srd": true,
 			"basicRules": true,
-			"className": "Rogue",
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
 			"level": 4,
 			"entries": [
-				"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+				"Cuando alcances el nivel 4 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
 			]
 		},
 		{
-			"name": "Uncanny Dodge",
+			"name": "Esquiva Asombrosa",
 			"source": "PHB-ES",
-			"page": 94,
+			"page": 117,
 			"srd": true,
 			"basicRules": true,
-			"className": "Rogue",
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
 			"level": 5,
 			"entries": [
-				"Starting at 5th level, when an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you."
+				"A partir de nivel 5, cuando un atacante que puedas ver te impacte con un ataque, puedes usar tu reacción para reducir a la mitad el daño que te causa dicho ataque."
 			]
 		},
 		{
-			"name": "Expertise",
+			"name": "Pericia",
 			"source": "PHB-ES",
-			"page": 94,
+			"page": 117,
 			"srd": true,
 			"basicRules": true,
-			"className": "Rogue",
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
 			"level": 6,
 			"entries": [
-				"At 6th level, you can choose two more of your proficiencies (in skills or with {@item thieves' tools|PHB-ES}) to gain the benefit of Expertise."
+				"A nivel 6 puedes elegir otras dos competencias (en habilidades o con {@item herramientas de ladrón|PHB-ES}) y obtener este beneficio para ellas."
 			]
 		},
 		{
-			"name": "Evasion",
+			"name": "Evasión",
 			"source": "PHB-ES",
-			"page": 94,
+			"page": 117,
 			"srd": true,
 			"basicRules": true,
-			"className": "Rogue",
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
 			"level": 7,
 			"entries": [
-				"Beginning at 7th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or an {@spell ice storm} spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
+				"A partir de nivel 7 puedes evitar con agilidad ciertos efectos de área, como el aliento ígneo de un dragón rojo o un conjuro de {@spell tormenta de hielo|PHB-ES}. Cuando seas víctima de un efecto que le permita hacer una tirada de salvación de Destreza para recibir solo la mitad del daño, no recibirás daño alguno si tienes éxito en la tirada de salvación y solo la mitad si la fallas."
 			]
 		},
 		{
-			"name": "Ability Score Improvement",
+			"name": "Mejora de Característica",
 			"source": "PHB-ES",
-			"page": 94,
+			"page": 117,
 			"srd": true,
 			"basicRules": true,
-			"className": "Rogue",
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
 			"level": 8,
 			"entries": [
-				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+				"Cuando alcances el nivel 8 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
 			]
 		},
 		{
-			"name": "Roguish Archetype feature",
+			"name": "Rasgo de Arquetipo de Pícaro",
 			"source": "PHB-ES",
-			"page": 94,
+			"page": 117,
 			"srd": true,
 			"basicRules": true,
-			"className": "Rogue",
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
 			"level": 9,
 			"entries": [
-				"At 9th level, you gain a feature granted by your Roguish Archetype."
+				"A nivel 9 ganas un rasgo de tu Arquetipo de Pícaro."
 			]
 		},
 		{
-			"name": "Ability Score Improvement",
+			"name": "Mejora de Característica",
 			"source": "PHB-ES",
-			"page": 94,
+			"page": 117,
 			"srd": true,
 			"basicRules": true,
-			"className": "Rogue",
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
 			"level": 10,
 			"entries": [
-				"When you reach 10th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+				"Cuando alcances el nivel 10 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
 			]
 		},
 		{
-			"name": "Reliable Talent",
+			"name": "Talentos Fiables",
 			"source": "PHB-ES",
-			"page": 94,
+			"page": 117,
 			"srd": true,
 			"basicRules": true,
-			"className": "Rogue",
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
 			"level": 11,
 			"entries": [
-				"By 11th level, you have refined your chosen skills until they approach perfection. Whenever you make an ability check that lets you add your proficiency bonus, you can treat a {@dice d20} roll of 9 or lower as a 10."
+				"Cuando llegas a nivel 11 has pulido tus habilidades escogidas hasta prácticamente alcanzar la perfección. Cuando hagas una prueba de característica que te permita añadir tu bonificador por competencia, puedes considerar cualquier resultado de 9 o menos en el {@dice d20} como si fuera un 10."
 			]
 		},
 		{
-			"name": "Ability Score Improvement",
+			"name": "Mejora de Característica",
 			"source": "PHB-ES",
-			"page": 94,
+			"page": 117,
 			"srd": true,
 			"basicRules": true,
-			"className": "Rogue",
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
 			"level": 12,
 			"entries": [
-				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+				"Cuando alcances el nivel 12 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
 			]
 		},
 		{
-			"name": "Roguish Archetype feature",
+			"name": "Rasgo de Arquetipo de Pícaro",
 			"source": "PHB-ES",
-			"page": 94,
+			"page": 117,
 			"srd": true,
 			"basicRules": true,
-			"className": "Rogue",
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
 			"level": 13,
 			"entries": [
-				"At 13th level, you gain a feature granted by your Roguish Archetype."
+				"A nivel 13 ganas un rasgo de tu Arquetipo de Pícaro."
 			]
 		},
 		{
-			"name": "Blindsense",
+			"name": "Sentir sin Ver",
 			"source": "PHB-ES",
-			"page": 94,
+			"page": 117,
 			"srd": true,
 			"basicRules": true,
-			"className": "Rogue",
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
 			"level": 14,
 			"entries": [
-				"Starting at 14th level, if you are able to hear, you are aware of the location of any hidden or {@condition invisible} creature within 10 feet of you."
+				"A partir de nivel 14, si eres capaz de escuchar, también eres consciente de la ubicación de cualquier criatura escondida o {@condition invisible|PHB-ES} a 10 pies o menos de ti."
 			]
 		},
 		{
-			"name": "Slippery Mind",
+			"name": "Mente Escurridiza",
 			"source": "PHB-ES",
-			"page": 94,
+			"page": 117,
 			"srd": true,
 			"basicRules": true,
-			"className": "Rogue",
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
 			"level": 15,
 			"entries": [
-				"By 15th level, you have acquired greater mental strength. You gain proficiency in Wisdom saving throws."
+				"A nivel 15 has adquirido una Fortaleza mental considerable. Ganas competencia en las tiradas de salvación de Sabiduría."
 			]
 		},
 		{
-			"name": "Ability Score Improvement",
+			"name": "Mejora de Característica",
 			"source": "PHB-ES",
-			"page": 94,
+			"page": 117,
 			"srd": true,
 			"basicRules": true,
-			"className": "Rogue",
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
 			"level": 16,
 			"entries": [
-				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+				"Cuando alcances el nivel 16 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
 			]
 		},
 		{
-			"name": "Roguish Archetype feature",
+			"name": "Rasgo de Arquetipo de Pícaro",
 			"source": "PHB-ES",
-			"page": 94,
+			"page": 117,
 			"srd": true,
 			"basicRules": true,
-			"className": "Rogue",
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
 			"level": 17,
 			"entries": [
-				"At 17th level, you gain a feature granted by your Roguish Archetype."
+				"A nivel 17 ganas un rasgo de tu Arquetipo de Pícaro."
 			]
 		},
 		{
-			"name": "Elusive",
+			"name": "Elusivo",
 			"source": "PHB-ES",
-			"page": 94,
+			"page": 117,
 			"srd": true,
 			"basicRules": true,
-			"className": "Rogue",
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
 			"level": 18,
 			"entries": [
-				"Beginning at 18th level, you are so evasive that attackers rarely gain the upper hand against you. No attack roll has advantage against you while you aren't {@condition incapacitated}."
+				"A partir de nivel 18, eres tan escurridizo que será raro que un atacante pueda tomar el control de la situación. Ninguna tirada de ataque hecha contra ti tendrá ventaja mientras no estés {@condition incapacitado|PHB-ES}."
 			]
 		},
 		{
-			"name": "Ability Score Improvement",
+			"name": "Mejora de Característica",
 			"source": "PHB-ES",
-			"page": 94,
+			"page": 117,
 			"srd": true,
 			"basicRules": true,
-			"className": "Rogue",
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
 			"level": 19,
 			"entries": [
-				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+				"Cuando alcances el nivel 19 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
 			]
 		},
 		{
-			"name": "Stroke of Luck",
+			"name": "Golpe de Suerte",
 			"source": "PHB-ES",
-			"page": 94,
+			"page": 117,
 			"srd": true,
 			"basicRules": true,
-			"className": "Rogue",
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
 			"level": 20,
 			"entries": [
-				"At 20th level, you have an uncanny knack for succeeding when you need to. If your attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the {@dice d20} roll as a 20.",
-				"Once you use this feature, you can't use it again until you finish a short or long rest."
+				"A nivel 20 has desarrollado una capacidad asombrosa para tener éxito justo cuando lo necesitas. Si fallas al atacar a un objetivo dentro del alcance, puedes transformar el fallo en un impacto. También puedes emplear este rasgo para, si fallas al hacer una prueba de característica, considerar el resultado de la tirada del {@dice d20} como un 20.",
+				"Una vez utilizado este rasgo, deberás terminar un descanso corto o largo para poder volver a usarlo otra vez."
 			]
 		}
 	],
 	"subclass": [
 		{
-			"name": "Arcane Trickster",
-			"shortName": "Arcane Trickster",
+			"name": "Embaucador Arcano",
+			"shortName": "Embaucador Arcano",
 			"source": "PHB-ES",
-			"className": "Rogue",
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
-			"page": 97,
+			"page": 118,
 			"spellcastingAbility": "int",
 			"casterProgression": "1/3",
 			"cantripProgression": [
@@ -1093,31 +1093,31 @@
 				{
 					"known": {
 						"3": [
-							"mage hand#c"
+							"mano de mago|PHB-ES#c"
 						]
 					},
 					"expanded": {
 						"3": [
 							{
-								"all": "level=0|class=Wizard"
+								"all": "level=0|class=Mago (PHB-ES)"
 							},
 							{
-								"all": "level=1|class=Wizard"
+								"all": "level=1|class=Mago (PHB-ES)"
 							}
 						],
 						"7": [
 							{
-								"all": "level=2|class=Wizard"
+								"all": "level=2|class=Mago (PHB-ES)"
 							}
 						],
 						"13": [
 							{
-								"all": "level=3|class=Wizard"
+								"all": "level=3|class=Mago (PHB-ES)"
 							}
 						],
 						"19": [
 							{
-								"all": "level=4|class=Wizard"
+								"all": "level=4|class=Mago (PHB-ES)"
 							}
 						]
 					}
@@ -1127,13 +1127,13 @@
 				{
 					"subclasses": [
 						{
-							"name": "Arcane Trickster",
-							"source": "PHB"
+							"name": "Embaucador Arcano",
+							"source": "PHB-ES"
 						}
 					],
 					"colLabels": [
-						"{@filter Cantrips Known|spells|level=0|subclass=Rogue: Arcane Trickster}",
-						"{@filter Spells Known|spells|subclass=Rogue: Arcane Trickster}"
+						"{@filter Trucos conocidos|spells|level=0|subclass=Pícaro: Embaucador Arcano (PHB-ES)}",
+						"{@filter Conjuros conocidos|spells|subclass=Pícaro: Embaucador Arcano (PHB-ES)}"
 					],
 					"rows": [
 						[
@@ -1219,18 +1219,18 @@
 					]
 				},
 				{
-					"title": "Spell Slots per Spell Level",
+					"title": "Espacios de conjuro por cada nivel de conjuro",
 					"subclasses": [
 						{
-							"name": "Arcane Trickster",
-							"source": "PHB"
+							"name": "Embaucador Arcano",
+							"source": "PHB-ES"
 						}
 					],
 					"colLabels": [
-						"{@filter 1st|spells|level=1|subclass=Rogue: Arcane Trickster}",
-						"{@filter 2nd|spells|level=2|subclass=Rogue: Arcane Trickster}",
-						"{@filter 3rd|spells|level=3|subclass=Rogue: Arcane Trickster}",
-						"{@filter 4th|spells|level=4|subclass=Rogue: Arcane Trickster}"
+						"{@filter 1|spells|level=1|subclass=Pícaro: Embaucador Arcano (PHB-ES)}",
+						"{@filter 2|spells|level=2|subclass=Pícaro: Embaucador Arcano (PHB-ES)}",
+						"{@filter 3|spells|level=3|subclass=Pícaro: Embaucador Arcano (PHB-ES)}",
+						"{@filter 4|spells|level=4|subclass=Pícaro: Embaucador Arcano (PHB-ES)}"
 					],
 					"rowsSpellProgression": [
 						[
@@ -1357,205 +1357,205 @@
 				}
 			],
 			"subclassFeatures": [
-				"Arcane Trickster|Pícaro|PHB-ES|Arcane Trickster||3",
-				"Magical Ambush|Pícaro|PHB-ES|Arcane Trickster||9",
-				"Versatile Trickster|Pícaro|PHB-ES|Arcane Trickster||13",
-				"Spell Thief|Pícaro|PHB-ES|Arcane Trickster||17"
+				"Embaucador Arcano|Pícaro|PHB-ES|Embaucador Arcano|PHB-ES|3",
+				"Emboscada Mágica|Pícaro|PHB-ES|Embaucador Arcano|PHB-ES|9",
+				"Embaucador Versátil|Pícaro|PHB-ES|Embaucador Arcano|PHB-ES|13",
+				"Ladrón de Conjuros|Pícaro|PHB-ES|Embaucador Arcano|PHB-ES|17"
 			]
 		},
 		{
-			"name": "Assassin",
-			"shortName": "Assassin",
+			"name": "Asesino",
+			"shortName": "Asesino",
 			"source": "PHB-ES",
-			"className": "Rogue",
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
-			"page": 97,
+			"page": 118,
 			"subclassFeatures": [
-				"Assassin|Pícaro|PHB-ES|Assassin||3",
-				"Infiltration Expertise|Pícaro|PHB-ES|Assassin||9",
-				"Impostor|Pícaro|PHB-ES|Assassin||13",
-				"Death Strike|Pícaro|PHB-ES|Assassin||17"
+				"Asesino|Pícaro|PHB-ES|Asesino|PHB-ES|3",
+				"Pericia en Infiltrarse|Pícaro|PHB-ES|Asesino|PHB-ES|9",
+				"Impostor|Pícaro|PHB-ES|Asesino|PHB-ES|13",
+				"Golpe Mortal|Pícaro|PHB-ES|Asesino|PHB-ES|17"
 			]
 		},
 		{
-			"name": "Thief",
-			"shortName": "Thief",
+			"name": "Ladrón",
+			"shortName": "Ladrón",
 			"source": "PHB-ES",
-			"className": "Rogue",
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
-			"page": 97,
+			"page": 118,
 			"srd": true,
 			"basicRules": true,
 			"subclassFeatures": [
-				"Thief|Pícaro|PHB-ES|Thief||3",
-				"Supreme Sneak|Pícaro|PHB-ES|Thief||9",
-				"Use Magic Device|Pícaro|PHB-ES|Thief||13",
-				"Thief's Reflexes|Pícaro|PHB-ES|Thief||17"
+				"Ladrón|Pícaro|PHB-ES|Ladrón|PHB-ES|3",
+				"Sigilo Supremo|Pícaro|PHB-ES|Ladrón|PHB-ES|9",
+				"Usar Objetos Mágicos|Pícaro|PHB-ES|Ladrón|PHB-ES|13",
+				"Reflejos de Ladrón|Pícaro|PHB-ES|Ladrón|PHB-ES|17"
 			]
 		},
 		{
-			"name": "Inquisitive",
-			"shortName": "Inquisitive",
+			"name": "Inquisitivo",
+			"shortName": "Inquisitivo",
 			"source": "XGE-ES",
-			"className": "Rogue",
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
-			"page": 45,
+			"page": 59,
 			"subclassFeatures": [
-				"Inquisitive|Pícaro|PHB-ES|Inquisitive|XGE|3",
-				"Steady Eye|Pícaro|PHB-ES|Inquisitive|XGE|9",
-				"Unerring Eye|Pícaro|PHB-ES|Inquisitive|XGE|13",
-				"Eye for Weakness|Pícaro|PHB-ES|Inquisitive|XGE|17"
+				"Inquisitivo|Pícaro|PHB-ES|Inquisitivo|XGE-ES|3",
+				"Ojo Estable|Pícaro|PHB-ES|Inquisitivo|XGE-ES|9",
+				"Vista Infalible|Pícaro|PHB-ES|Inquisitivo|XGE-ES|13",
+				"Ojo para la Debilidad|Pícaro|PHB-ES|Inquisitivo|XGE-ES|17"
 			]
 		},
 		{
-			"name": "Mastermind",
-			"shortName": "Mastermind",
+			"name": "Mente Maestra",
+			"shortName": "Mente Maestra",
 			"source": "XGE-ES",
-			"className": "Rogue",
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
-			"page": 46,
+			"page": 60,
 			"otherSources": [
 				{
-					"source": "SCAG",
+					"source": "SCAG-ES",
 					"page": 135
 				}
 			],
 			"subclassFeatures": [
-				"Mastermind|Pícaro|PHB-ES|Mastermind|XGE|3",
-				"Insightful Manipulator|Pícaro|PHB-ES|Mastermind|XGE|9",
-				"Misdirection|Pícaro|PHB-ES|Mastermind|XGE|13",
-				"Soul of Deceit|Pícaro|PHB-ES|Mastermind|XGE|17"
+				"Mente Maestra|Pícaro|PHB-ES|Mente Maestra|XGE-ES|3",
+				"Manipulador Perspicaz|Pícaro|PHB-ES|Mente Maestra|XGE-ES|9",
+				"Distracción|Pícaro|PHB-ES|Mente Maestra|XGE-ES|13",
+				"Alma Engañosa|Pícaro|PHB-ES|Mente Maestra|XGE-ES|17"
 			]
 		},
 		{
-			"name": "Scout",
-			"shortName": "Scout",
+			"name": "Batidor",
+			"shortName": "Batidor",
 			"source": "XGE-ES",
-			"className": "Rogue",
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
-			"page": 47,
+			"page": 58,
 			"subclassFeatures": [
-				"Scout|Pícaro|PHB-ES|Scout|XGE|3",
-				"Superior Mobility|Pícaro|PHB-ES|Scout|XGE|9",
-				"Ambush Master|Pícaro|PHB-ES|Scout|XGE|13",
-				"Sudden Strike|Pícaro|PHB-ES|Scout|XGE|17"
+				"Batidor|Pícaro|PHB-ES|Batidor|XGE-ES|3",
+				"Movilidad Superior|Pícaro|PHB-ES|Batidor|XGE-ES|9",
+				"Maestro de la Emboscada|Pícaro|PHB-ES|Batidor|XGE-ES|13",
+				"Ataque Súbito|Pícaro|PHB-ES|Batidor|XGE-ES|17"
 			]
 		},
 		{
-			"name": "Swashbuckler",
-			"shortName": "Swashbuckler",
+			"name": "Espadachín",
+			"shortName": "Espadachín",
 			"source": "XGE-ES",
-			"className": "Rogue",
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
-			"page": 48,
+			"page": 59,
 			"otherSources": [
 				{
-					"source": "SCAG",
+					"source": "SCAG-ES",
 					"page": 135
 				}
 			],
 			"subclassFeatures": [
-				"Swashbuckler|Pícaro|PHB-ES|Swashbuckler|XGE|3",
-				"Panache|Pícaro|PHB-ES|Swashbuckler|XGE|9",
-				"Elegant Maneuver|Pícaro|PHB-ES|Swashbuckler|XGE|13",
-				"Master Duelist|Pícaro|PHB-ES|Swashbuckler|XGE|17"
+				"Espadachín|Pícaro|PHB-ES|Espadachín|XGE-ES|3",
+				"Garbo|Pícaro|PHB-ES|Espadachín|XGE-ES|9",
+				"Maniobra elegante|Pícaro|PHB-ES|Espadachín|XGE-ES|13",
+				"Duelista Experto|Pícaro|PHB-ES|Espadachín|XGE-ES|17"
 			]
 		},
 		{
-			"name": "Phantom",
-			"shortName": "Phantom",
+			"name": "Fantasma",
+			"shortName": "Fantasma",
 			"source": "TCE-ES",
-			"className": "Rogue",
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
-			"page": 62,
+			"page": 75,
 			"subclassFeatures": [
-				"Phantom|Pícaro|PHB-ES|Phantom|TCE|3",
-				"Tokens of the Departed|Pícaro|PHB-ES|Phantom|TCE|9",
-				"Ghost Walk|Pícaro|PHB-ES|Phantom|TCE|13",
-				"Death's Friend|Pícaro|PHB-ES|Phantom|TCE|17"
+				"Fantasma|Pícaro|PHB-ES|Fantasma|TCE-ES|3",
+				"Recuerdos de los Difuntos|Pícaro|PHB-ES|Fantasma|TCE-ES|9",
+				"Paseo Fantasmal|Pícaro|PHB-ES|Fantasma|TCE-ES|13",
+				"Amigo de la Muerte|Pícaro|PHB-ES|Fantasma|TCE-ES|17"
 			]
 		},
 		{
-			"name": "Soulknife",
-			"shortName": "Soulknife",
+			"name": "Rebanaalmas",
+			"shortName": "Rebanaalmas",
 			"source": "TCE-ES",
-			"className": "Rogue",
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
-			"page": 63,
+			"page": 76,
 			"subclassFeatures": [
-				"Soulknife|Pícaro|PHB-ES|Soulknife|TCE|3",
-				"Soul Blades|Pícaro|PHB-ES|Soulknife|TCE|9",
-				"Psychic Veil|Pícaro|PHB-ES|Soulknife|TCE|13",
-				"Rend Mind|Pícaro|PHB-ES|Soulknife|TCE|17"
+				"Rebanaalmas|Pícaro|PHB-ES|Rebanaalmas|TCE-ES|3",
+				"Cuchillas del Alma|Pícaro|PHB-ES|Rebanaalmas|TCE-ES|9",
+				"Velo Psíquico|Pícaro|PHB-ES|Rebanaalmas|TCE-ES|13",
+				"Desgarro Mental|Pícaro|PHB-ES|Rebanaalmas|TCE-ES|17"
 			]
 		}
 	],
 	"subclassFeature": [
 		{
-			"name": "Arcane Trickster",
+			"name": "Embaucador Arcano",
 			"source": "PHB-ES",
-			"page": 97,
-			"className": "Rogue",
+			"page": 118,
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Arcane Trickster",
+			"subclassShortName": "Embaucador Arcano",
 			"subclassSource": "PHB-ES",
 			"level": 3,
 			"entries": [
-				"Some rogues enhance their fine-honed skills of stealth and agility with magic, learning tricks of enchantment and illusion. These rogues include pickpockets and burglars, but also pranksters, mischief-makers, and a significant number of adventurers.",
+				"Algunos pícaros complementan sus bien pulidas habilidades para el sigilo y su agilidad con magia, aprendiendo trucos de encantamiento e ilusionismo. Muchos de estos pícaros pueden ser carteristas o ladrones, pero también bromistas o alborotadores. Y, por qué no decirlo, un número no despreciable de ellos son aventureros.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Spellcasting|Pícaro|PHB-ES|Arcane Trickster||3"
+					"subclassFeature": "Lanzamiento de Conjuros|Pícaro|PHB-ES|Embaucador Arcano|PHB-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Mage Hand Legerdemain|Pícaro|PHB-ES|Arcane Trickster||3"
+					"subclassFeature": "Destreza con Mano de Mago|Pícaro|PHB-ES|Embaucador Arcano|PHB-ES|3"
 				}
 			]
 		},
 		{
-			"name": "Mage Hand Legerdemain",
+			"name": "Destreza con Mano de Mago",
 			"source": "PHB-ES",
-			"page": 97,
-			"className": "Rogue",
+			"page": 119,
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Arcane Trickster",
+			"subclassShortName": "Embaucador Arcano",
 			"subclassSource": "PHB-ES",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Starting at 3rd level, when you cast {@spell mage hand}, you can make the spectral hand {@condition invisible}, and you can perform the following additional tasks with it:",
+				"A partir de nivel 3, cuando lances {@spell mano de mago|PHB-ES} podrás hacer que la mano espectral sea {@condition invisible|PHB-ES} y serás capaz de llevar a cabo las siguientes tareas adicionales con ella:",
 				{
 					"type": "list",
 					"items": [
-						"You can stow one object the hand is holding in a container worn or carried by another creature.",
-						"You can retrieve an object in a container worn or carried by another creature.",
-						"You can use {@item thieves' tools|PHB-ES} to pick locks and disarm traps at range."
+						"Puedes guardar un objeto en un contenedor que esté llevando o vistiendo otra criatura.",
+						"Puedes sacar un objeto de un contenedor que esté llevando o vistiendo otra criatura.",
+						"Puedes usar las {@item herramientas de ladrón|PHB-ES} para forzar cerraduras y desarmar trampas a distancia."
 					]
 				},
-				"You can perform one of these tasks without being noticed by a creature if you succeed on a Dexterity ({@skill Sleight of Hand}) check contested by the creature's Wisdom ({@skill Perception}) check.",
-				"In addition, you can use the bonus action granted by your Cunning Action to control the hand."
+				"Para realizar cualquiera de estas tareas sin ser detectado por una criatura deberás vencer en una tirada enfrentada entre tu Destreza ({@skill Juego de Manos|PHB-ES}) y la Sabiduría ({@skill Percepción|PHB-ES}) de la criatura.",
+				"Además, puedes utilizar la acción adicional que te da Acción Astuta para controlar la mano."
 			]
 		},
 		{
-			"name": "Spellcasting",
+			"name": "Lanzamiento de Conjuros",
 			"source": "PHB-ES",
-			"page": 97,
-			"className": "Rogue",
+			"page": 118,
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Arcane Trickster",
+			"subclassShortName": "Embaucador Arcano",
 			"subclassSource": "PHB-ES",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"When you reach 3rd level, you gain the ability to cast spells. See {@book chapter 10|PHB-ES|10} for the general rules of spellcasting and {@book chapter 11|PHB-ES|11} for the {@filter wizard spell list|spells|class=wizard}.",
+				"Cuando llegas a nivel 3, obtienes la capacidad de lanzar conjuro. El {@book capítulo 10|PHB-ES|10} contiene las reglas de lanzamiento de conjuros y el {@book capítulo 11|PHB-ES|11} la {@filter lista de conjuros de mago|spells|class=mago (PHB-ES)}.",
 				{
 					"type": "entries",
 					"entries": [
 						{
 							"type": "entries",
-							"name": "Cantrips",
+							"name": "Trucos",
 							"entries": [
-								"You learn three cantrips: {@spell mage hand} and two other cantrips of your choice from the wizard spell list. You learn another wizard cantrip of your choice at 10th level."
+								"Aprendes tres trucos: {@spell mano de mago|PHB-ES} y otros dos de tu elección de la lista de conjuros de mago. Adquieres otro nuevo truco de mago de tu elección cuando alcanzas el nivel 10."
 							]
 						}
 					]
@@ -1565,10 +1565,10 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "Spell Slots",
+							"name": "Espacios de conjuro",
 							"entries": [
-								"The Arcane Trickster Spellcasting table shows how many spell slots you have to cast your {@filter wizard spells|spells|class=wizard} of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
-								"For example, if you know the 1st-level spell {@spell charm person} and have a 1st-level and a 2nd-level spell slot available, you can cast {@spell charm person} using either slot."
+								"La tabla \"lanzamiento de conjuros del Embaucador Arcano\" muestra de cuántos espacios de conjuro dispones para lanzar conjuros de {@filter Embaucador Arcano|spells|class=mago (PHB-ES)} nivel 1 y superiores. Para lanzar uno de estos conjuros deberás invertir un espacio de al menos el nivel del conjuro. Recuperas todos los espacios utilizados tras finalizar un descanso largo.",
+								"Si, por ejemplo, conoces el conjuro de nivel 1 {@spell hechizar persona|PHB-ES} y posees un espacio de conjuro de nivel 1 y otro de nivel 2, podrías lanzar {@spell hechizar persona|PHB-ES} empleando cualquiera de los dos espacios."
 							]
 						}
 					]
@@ -1578,12 +1578,12 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "Spells Known of 1st-Level and Higher",
+							"name": "Conjuros conocidos de nivel 1 y superiores",
 							"entries": [
-								"You know three 1st-level wizard spells of your choice, two of which you must choose from the enchantment and illusion spells on the wizard spell list.",
-								"The Spells Known column of the Arcane Trickster Spellcasting table shows when you learn more wizard spells of 1st level or higher. Each of these spells must be an enchantment or illusion spell of your choice, and must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.",
-								"The spells you learn at 8th, 14th, and 20th level can come from any school of magic.",
-								"Whenever you gain a level in this class, you can replace one of the wizard spells you know with another spell of your choice from the wizard spell list. The new spell must be of a level for which you have spell slots, and it must be an enchantment or illusion spell, unless you're replacing the spell you gained at 3rd, 8th, 14th, or 20th level from any school of magic."
+								"Conoces tres conjuros de mago de nivel 1 a tu elección, dos de los cuales deben ser de encantamiento o ilusionismo. Todos ellos han de pertenecer a la lista de conjuros de mago.",
+								"La columna \"conjuros conocidos\" de la tabla \"lanzamiento de conjuros del Embaucador Arcano\" te indica cuándo podrás aprender más conjuros de mago de nivel 1 o superiores. Tú eliges cuales, pero todos estos conjuros deben ser de encantamiento o ilusionismo y de un nivel para el que tengas espacios de conjuro. Así, cuando subes a nivel 7 en esta clase puedes aprender un conjuro nuevo, que puede ser de nivel 1 o 2.",
+								"Los conjuros que aprendes al alcanzar las niveles 8, 14 y 20 pueden ser de cualquier escuela mágica.",
+								"Además, cada vez que subas un nivel de esta clase podrás elegir uno de los conjuros de mago que ya conoces y reemplazarlo por otro de los que aparecen en la lista de conjuros de mago. El nuevo conjuro deberá ser de un nivel para el que tengas espacios de conjuro. Además, ha de ser de encantamiento o ilusionismo, salvo si estás reemplazando los conjuros que obtuviste a los niveles 8, 14 o 20."
 							]
 						}
 					]
@@ -1593,9 +1593,9 @@
 					"entries": [
 						{
 							"type": "entries",
-							"name": "Spellcasting Ability",
+							"name": "Aptitud mágica",
 							"entries": [
-								"Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.",
+								"La Inteligencia es tu aptitud mágica en lo que a conjuros de mago respecta, ya que aprendes tus conjuros mediante el estudio concienzudo y la memorización. Así, utilizarás tu Inteligencia siempre que un conjuro de rango haga referencia a tu aptitud mágica. Además, también usarás tu modificador por Inteligencia para determinar la CD de las tiradas de salvación y las tiradas de ataque de los conjuros de mago que lances.",
 								{
 									"type": "abilityDc",
 									"name": "Spell",
@@ -1617,948 +1617,949 @@
 			]
 		},
 		{
-			"name": "Magical Ambush",
+			"name": "Emboscada Mágica",
 			"source": "PHB-ES",
-			"page": 97,
-			"className": "Rogue",
+			"page": 119,
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Arcane Trickster",
+			"subclassShortName": "Embaucador Arcano",
 			"subclassSource": "PHB-ES",
 			"level": 9,
 			"header": 2,
 			"entries": [
-				"Starting at 9th level, if you are hidden from a creature when you cast a spell on it, the creature has disadvantage on any saving throw it makes against the spell this turn."
+				"A partir de nivel 9, si estás escondido de una criatura cuando lanzas un conjuro sobre ella, el objetivo tendrá desventaja en cualquier tirada de salvación que deba hacer contra el conjuro este turno."
 			]
 		},
 		{
-			"name": "Versatile Trickster",
+			"name": "Embaucador Versátil",
 			"source": "PHB-ES",
-			"page": 97,
-			"className": "Rogue",
+			"page": 119,
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Arcane Trickster",
+			"subclassShortName": "Embaucador Arcano",
 			"subclassSource": "PHB-ES",
 			"level": 13,
 			"header": 2,
 			"entries": [
-				"At 13th level, you gain the ability to distract targets with your {@spell mage hand}. As a bonus action on your turn, you can designate a creature within 5 feet of the spectral hand created by the spell. Doing so gives you advantage on attack rolls against that creature until the end of the turn."
+				"A nivel 13 obtienes la capacidad para distraer a tus objetivos con tu {@spell mano de mago|PHB-ES}. Como acción adicional durante tu turno, puedes designar una criatura que se encuentre a 5 pies o menos de la mano espectral creada por el conjuro. Hacer esto te da ventaja en las tiradas de ataque contra el objetivo hasta el final del turno."
 			]
 		},
 		{
-			"name": "Spell Thief",
+			"name": "Ladrón de Conjuros",
 			"source": "PHB-ES",
-			"page": 97,
-			"className": "Rogue",
+			"page": 119,
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Arcane Trickster",
+			"subclassShortName": "Embaucador Arcano",
 			"subclassSource": "PHB-ES",
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"At 17th level, you gain the ability to magically steal the knowledge of how to cast a spell from another spellcaster.",
-				"Immediately after a creature casts a spell that targets you or includes you in its area of effect, you can use your reaction to force the creature to make a saving throw with its spellcasting ability modifier. The DC equals your spell save DC. On a failed save, you negate the spell's effect against you, and you steal the knowledge of the spell if it is at least 1st level and of a level you can cast (it doesn't need to be a wizard spell). For the next 8 hours, you know the spell and can cast it using your spell slots. The creature can't cast that spell until the 8 hours have passed.",
-				"Once you use this feature, you can't use it again until you finish a long rest."
+				"A nivel 17 obtienes la capacidad para robar mágicamente el conocimiento de cómo lanzar un conjuro a otro lanzador.",
+				"Inmediatamente después de que una criatura lance un conjuro que te tenga como objetivo cuya área de efecto te incluya, puedes usar tu reacción para obligar a la criatura a hacer una tirada de salvación con su modificador por aptitud mágica. La CD es tu CD de salvación de conjuros. Si falla, anularás los efectos del conjuro sobre ti y robarás el conocimiento de cómo lanzarlo si es de al menos nivel 1 y de un nivel que puedas lanzar (no tiene por qué ser un conjuro de mago). Durante las siguientes 8 horas, conocerás el conjuro y serás capaz de lanzarlo utilizando uno de tus espacios de conjuro. Además, la criatura no podrá lanzar el conjuro hasta que las 8 horas hayan pasado.",
+				"Una vez empleado este rasgo, deberás terminar un descanso largo para poder volver a usarlo otra vez."
 			]
 		},
 		{
-			"name": "Assassin",
+			"name": "Asesino",
 			"source": "PHB-ES",
-			"page": 97,
-			"className": "Rogue",
+			"page": 118,
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Assassin",
+			"subclassShortName": "Asesino",
 			"subclassSource": "PHB-ES",
 			"level": 3,
 			"entries": [
-				"You focus your training on the grim art of death. Those who adhere to this archetype are diverse—hired killers, spies, bounty hunters, and even specially anointed priests trained to exterminate the enemies of their deity. Stealth, poison, and disguise help you eliminate your foes with deadly efficiency.",
-				"Your archetype grants you features at 3rd level and then again at 9th, 13th, and 17th level.",
+				"Enfocas tu entrenamiento en el sombrío arte de la muerte. A este arquetipo pueden pertenecer personas muy diversas: asesinos a sueldo, espías, cazarrecompensas e incluso sacerdotes que han sido ungidos y entrenados específicamente para exterminar a los enemigos de su deidad. El sigilo, el veneno y el disfraz te ayudan a eliminar a tus oponentes con una eficacia mortífera.",
+				"Tu arquetipo te otorga rasgos en el nivel 3 y luego nuevamente en el 9, 13 y 17.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Assassinate|Pícaro|PHB-ES|Assassin||3"
+					"subclassFeature": "Competencias Adicionales|Pícaro|PHB-ES|Asesino|PHB-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Bonus Proficiencies|Pícaro|PHB-ES|Assassin||3"
+					"subclassFeature": "Asesinar|Pícaro|PHB-ES|Asesino|PHB-ES|3"
 				}
 			]
 		},
 		{
-			"name": "Assassinate",
+			"name": "Asesinar",
 			"source": "PHB-ES",
-			"page": 97,
-			"className": "Rogue",
+			"page": 118,
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Assassin",
+			"subclassShortName": "Asesino",
 			"subclassSource": "PHB-ES",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Starting at 3rd level, you are at your deadliest when you get the drop on your enemies. You have advantage on attack rolls against any creature that hasn't taken a turn in the combat yet. In addition, any hit you score against a creature that is {@quickref Surprise|PHB-ES|3|0|surprised} is a critical hit."
+				"A partir de nivel 3, eres especialmente mortífero cuando consigues sorprender a tus enemigos. Tienes ventaja en las tiradas de ataque contra cualquier criatura que aún no haya llevado a cabo ningún turno en el combate actual. Además, cualquier impacto contra una criatura {@book sorprendido|PHB-ES|9|sorprendida} será automáticamente un crítico."
 			]
 		},
 		{
-			"name": "Bonus Proficiencies",
+			"name": "Competencias Adicionales",
 			"source": "PHB-ES",
-			"page": 97,
-			"className": "Rogue",
+			"page": 118,
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Assassin",
+			"subclassShortName": "Asesino",
 			"subclassSource": "PHB-ES",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"When you choose this archetype at 3rd level, you gain proficiency with the {@item disguise kit|PHB-ES} and the {@item poisoner's kit|PHB-ES}."
+				"A nivel 3, cuando escoges este arquetipo, ganas competencia con los {@item útiles para disfrazarse|PHB-ES} y los {@item útiles de envenenador|PHB-ES}."
 			]
 		},
 		{
-			"name": "Infiltration Expertise",
+			"name": "Pericia en Infiltrarse",
 			"source": "PHB-ES",
-			"page": 97,
-			"className": "Rogue",
+			"page": 118,
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Assassin",
+			"subclassShortName": "Asesino",
 			"subclassSource": "PHB-ES",
 			"level": 9,
 			"header": 2,
 			"entries": [
-				"Starting at 9th level, you can unfailingly create false identities for yourself. You must spend seven days and 25 gp to establish the history, profession, and affiliations for an identity. You can't establish an identity that belongs to someone else. For example, you might acquire appropriate clothing, letters of introduction, and official-looking certification to establish yourself as a member of a trading house from a remote city so you can insinuate yourself into the company of other wealthy merchants.",
-				"Thereafter, if you adopt the new identity as a disguise, other creatures believe you to be that person until given an obvious reason not to."
+				"A partir de nivel 9 puedes crearte identidades falsas. Debes invertir siete días y 25 po para establecer la historia, profesión y afiliaciones de la identidad. Además, no puedes crear una identidad que ya pertenezca a otra persona. Por ejemplo, podrías adquirir la ropa, cartas de presentación y certificados de aspecto oficial necesarios para poder hacerte pasar por un miembro de alguna casa comercial de una ciudad remota, para así acceder a la compañía de otros ricos mercaderes.",
+				"A partir de ese momento, si adoptas la nueva identidad como un disfraz, otras criaturas creerán, salvo que les des una razón obvia para no hacerlo, que eres esa persona."
 			]
 		},
 		{
 			"name": "Impostor",
 			"source": "PHB-ES",
-			"page": 97,
-			"className": "Rogue",
+			"page": 118,
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Assassin",
+			"subclassShortName": "Asesino",
 			"subclassSource": "PHB-ES",
 			"level": 13,
 			"header": 2,
 			"entries": [
-				"At 13th level, you gain the ability to unerringly mimic another person's speech, writing, and behavior. You must spend at least three hours studying these three components of the person's behavior, listening to speech, examining handwriting, and observing mannerism.",
-				"Your ruse is indiscernible to the casual observer. If a wary creature suspects something is amiss, you have advantage on any Charisma ({@skill Deception}) check you make to avoid detection."
+				"A nivel 13 adquieres la capacidad para imitar de forma infalible el habla, caligrafía y comportamiento de otra persona. Debes pasar al menos 3 horas estudiando tres aspectos de la conducta del objetivo: escucharle hablar, examinar su caligrafía y observar sus gestos.",
+				"Tu ardid es indiscernible para un observador casual. Si una criatura recelosa sospecha que algo no anda bien, tendrás ventaja en cualquier prueba de Carisma ({@skill Engaño|PHB-ES}) para evitar ser descubierto."
 			]
 		},
 		{
-			"name": "Death Strike",
+			"name": "Golpe Mortal",
 			"source": "PHB-ES",
-			"page": 97,
-			"className": "Rogue",
+			"page": 118,
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Assassin",
+			"subclassShortName": "Asesino",
 			"subclassSource": "PHB-ES",
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"Starting at 17th level, you become a master of instant death. When you attack and hit a creature that is {@quickref Surprise|PHB-ES|3|0|surprised}, it must make a Constitution saving throw (DC 8 + your Dexterity modifier + your proficiency bonus). On a failed save, double the damage of your attack against the creature."
+				"A partir de nivel 17 te conviertes en un experto en matar instantáneamente. Cuando atacas e impactas a una criatura {@book sorprendido|PHB-ES|9|sorprendida}, esta debe hacer una tirada de salvación de Constitución (CD 8 + tu modificador por Destreza + tu bonificador por competencia). Si falla, duplicarás el daño de tu ataque contra el objetivo."
 			]
 		},
 		{
-			"name": "Thief",
+			"name": "Ladrón",
 			"source": "PHB-ES",
-			"page": 97,
+			"page": 118,
 			"srd": true,
 			"basicRules": true,
-			"className": "Rogue",
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Thief",
+			"subclassShortName": "Ladrón",
 			"subclassSource": "PHB-ES",
 			"level": 3,
 			"entries": [
-				"You hone your skills in the larcenous arts. Burglars, bandits, cutpurses, and other criminals typically follow this archetype, but so do rogues who prefer to think of themselves as professional treasure seekers, explorers, delvers, and investigators. In addition to improving your agility and stealth, you learn skills useful for delving into ancient ruins, reading unfamiliar languages, and using magic items you normally couldn't employ.",
+				"Has decidido pulir aquellas habilidades útiles para el arte del latrocinio. Rateros, bandidos, carteristas y otros criminales tienden a seguir este arquetipo, pero también lo hacen aquellos pícaros que prefieren verse a sí mismo como buscadores de tesoros profesionales, exploradores, descubridores o investigadores. Además de mejorar tu agilidad y sigilo, también aprendes habilidades útiles para la exploración de ruinas antiguas, a leer idiomas con los que no estás familiarizado y a usar objetos mágicos que normalmente no podrías emplear.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Fast Hands|Pícaro|PHB-ES|Thief||3"
+					"subclassFeature": "Manos Rápidas|Pícaro|PHB-ES|Ladrón|PHB-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Second-Story Work|Pícaro|PHB-ES|Thief||3"
+					"subclassFeature": "Balconero|Pícaro|PHB-ES|Ladrón|PHB-ES|3"
 				}
 			]
 		},
 		{
-			"name": "Fast Hands",
+			"name": "Manos Rápidas",
 			"source": "PHB-ES",
-			"page": 97,
+			"page": 118,
 			"srd": true,
 			"basicRules": true,
-			"className": "Rogue",
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Thief",
+			"subclassShortName": "Ladrón",
 			"subclassSource": "PHB-ES",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Starting at 3rd level, you can use the bonus action granted by your Cunning Action to make a Dexterity ({@skill Sleight of Hand}) check, use your {@item thieves' tools|PHB-ES} to disarm a trap or open a lock, or take the {@action Use an Object} action."
+				"A partir de nivel 3, puedes utilizar la acción adicional que obtuviste de Acción Astuta para hacer una prueba de Destreza ({@skill Juego de Manos|PHB-ES}), realizar una acción de {@action Usar un Objeto|PHB-ES} o usar tus {@item herramientas de ladrón|PHB-ES} para intentar desarmar una trampa o forzar una cerradura."
 			]
 		},
 		{
-			"name": "Second-Story Work",
+			"name": "Balconero",
 			"source": "PHB-ES",
-			"page": 97,
+			"page": 118,
 			"srd": true,
 			"basicRules": true,
-			"className": "Rogue",
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Thief",
+			"subclassShortName": "Ladrón",
 			"subclassSource": "PHB-ES",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"When you choose this archetype at 3rd level, you gain the ability to climb faster than normal; climbing no longer costs you extra movement.",
-				"In addition, when you make a running jump, the distance you cover increases by a number of feet equal to your Dexterity modifier."
+				"Cuando escoges este arquetipo, a nivel 3, obtienes la capacidad para trepar más rápido de lo normal, por lo que trepar ya no te cuesta movimiento adicional.",
+				"Además, cuando saltes con carrerilla aumentarás la distancia que saltas en tantos pies como tu modificador por Destreza."
 			]
 		},
 		{
-			"name": "Supreme Sneak",
+			"name": "Sigilo Supremo",
 			"source": "PHB-ES",
-			"page": 97,
+			"page": 118,
 			"srd": true,
 			"basicRules": true,
-			"className": "Rogue",
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Thief",
+			"subclassShortName": "Ladrón",
 			"subclassSource": "PHB-ES",
 			"level": 9,
 			"header": 2,
 			"entries": [
-				"Starting at 9th level, you have advantage on a Dexterity ({@skill Stealth}) check if you move no more than half your speed on the same turn."
+				"A partir de nivel 9, si no te mueves más de la mitad de tu velocidad, tendrás ventaja en las pruebas de Destreza ({@skill Sigilo|PHB-ES}) hechas durante el mismo turno."
 			]
 		},
 		{
-			"name": "Use Magic Device",
+			"name": "Usar Objetos Mágicos",
 			"source": "PHB-ES",
-			"page": 97,
+			"page": 118,
 			"srd": true,
 			"basicRules": true,
-			"className": "Rogue",
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Thief",
+			"subclassShortName": "Ladrón",
 			"subclassSource": "PHB-ES",
 			"level": 13,
 			"header": 2,
 			"entries": [
-				"By 13th level, you have learned enough about the workings of magic that you can improvise the use of items even when they are not intended for you. You ignore all class, race, and level requirements on the use of magic items."
+				"A nivel 13 has aprendido lo suficiente sobre el funcionamiento de la magia como para poder apañártelas para usar incluso aquellos objetos mágicos que no están destinados a alguien como tú. Ignoras todas las restricciones de clase, raza y nivel a la hora de emplear objetos mágicos."
 			]
 		},
 		{
-			"name": "Thief's Reflexes",
+			"name": "Reflejos de Ladrón",
 			"source": "PHB-ES",
-			"page": 97,
+			"page": 118,
 			"srd": true,
 			"basicRules": true,
-			"className": "Rogue",
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Thief",
+			"subclassShortName": "Ladrón",
 			"subclassSource": "PHB-ES",
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"When you reach 17th level, you have become adept at laying ambushes and quickly escaping danger. You can take two turns during the first round of any combat. You take your first turn at your normal initiative and your second turn at your initiative minus 10. You can't use this feature when you are {@quickref Surprise|PHB-ES|3|0|surprised}."
+				"Cuando alcanzas el nivel 17 te has vuelto un experto en preparar emboscadas y escapar rápidamente del peligro. Puedes hacer dos turnos durante el primer asalto de cualquier combate. Llevarás a cabo tu primer turno según el orden de iniciativa normal y el segundo en tu iniciativa menos 10. No puedes usar este rasgo si estás {@book sorprendido|PHB-ES|9|sorprendido}."
 			]
 		},
 		{
-			"name": "Phantom",
-			"source": "TCE-ES",
-			"page": 62,
-			"className": "Rogue",
+			"name": "Inquisitivo",
+			"source": "XGE-ES",
+			"page": 59,
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Phantom",
-			"subclassSource": "TCE-ES",
+			"subclassShortName": "Inquisitivo",
+			"subclassSource": "XGE-ES",
 			"level": 3,
 			"entries": [
-				"Many rogues walk a fine line between life and death, risking their own lives and taking the lives of others. While adventuring on that line, some rogues discover a mystical connection to death itself. These rogues take knowledge from the dead and become immersed in negative energy, eventually becoming like ghosts. Thieves' guilds value them as highly effective information gatherers and spies.",
-				"Many shadar-kai of the Shadowfell are masters of these macabre techniques, and some are willing to teach this path. In places like Thay in the Forgotten Realms and Karrnath in Eberron, where many necromancers practice their craft, a Phantom can become a wizard's confidant and right hand. In temples of gods of death, the Phantom might work as an agent to track down those who try to cheat death and to recover knowledge that might otherwise be lost to the grave.",
-				"How did you discover this grim power? Did you sleep in a graveyard and awaken to your new abilities? Or did you cultivate them in a temple or thieves' guild dedicated to a deity of death?",
+				"Como Inquisitivo arquetípico, te distingues por tu capacidad para desenterrar secretos y desentrañar misterios. Recurres a tu enorme atención al detalle y tu bien entrenada habilidad para leer las palabras y acciones de los demás para determinar sus verdaderas intenciones. Eres un experto en derrotar a criaturas que se ocultan entre la gente común y hacen de ellos tu presa. Tu maestría de la cultura popular y tus sagaces deducciones te permiten estar bien equipado para sacar a la luz y acabar con males ocultos.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Whispers of the Dead|Pícaro|PHB-ES|Phantom|TCE|3"
+					"subclassFeature": "Oído para el Engaño|Pícaro|PHB-ES|Inquisitivo|XGE-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Wails from the Grave|Pícaro|PHB-ES|Phantom|TCE|3"
+					"subclassFeature": "Ojo para el Detalle|Pícaro|PHB-ES|Inquisitivo|XGE-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Lucha Perspicaz|Pícaro|PHB-ES|Inquisitivo|XGE-ES|3"
 				}
 			]
 		},
 		{
-			"name": "Wails from the Grave",
-			"source": "TCE-ES",
-			"page": 62,
-			"className": "Rogue",
+			"name": "Oído para el Engaño",
+			"source": "XGE-ES",
+			"page": 59,
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Phantom",
-			"subclassSource": "TCE-ES",
+			"subclassShortName": "Inquisitivo",
+			"subclassSource": "XGE-ES",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"{@i 3rd-level Phantom feature}",
-				"As you nudge someone closer to the grave, you can channel the power of death to harm someone else as well. Immediately after you deal your Sneak Attack damage to a creature on your turn, you can target a second creature that you can see within 30 feet of the first creature. Roll half the number of Sneak Attack dice for your level (round up), and the second creature takes necrotic damage equal to the roll's total, as wails of the dead sound around them for a moment.",
-				"You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+				"Cuando eliges este arquetipo a nivel 3, desarrollas tu talento para detectar mentiras. Siempre que hagas una prueba de Sabiduría ({@skill Perspicacia|PHB-ES}) para determinar si una criatura miente, trata una tirada de 7 o menos en el {@dice d20} como si fuera un 8."
 			]
 		},
 		{
-			"name": "Whispers of the Dead",
-			"source": "TCE-ES",
-			"page": 62,
-			"className": "Rogue",
+			"name": "Ojo para el Detalle",
+			"source": "XGE-ES",
+			"page": 60,
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Phantom",
-			"subclassSource": "TCE-ES",
+			"subclassShortName": "Inquisitivo",
+			"subclassSource": "XGE-ES",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"{@i 3rd-level Phantom feature}",
-				"Echoes of those who have died cling to you. Whenever you finish a short or long rest, you can choose one skill or tool proficiency that you lack and gain it, as a ghostly presence shares its knowledge with you. You lose this proficiency when you use this feature to choose a different proficiency that you lack."
+				"A partir de nivel 3, puedes usar una acción adicional para realizar una prueba de Sabiduría ({@skill Percepción|PHB-ES}) para detectar a una criatura u objeto oculto o para hacer una prueba de Inteligencia ({@skill Investigación|PHB-ES}) para descubrir o descifrar una pista."
 			]
 		},
 		{
-			"name": "Tokens of the Departed",
-			"source": "TCE-ES",
-			"page": 62,
-			"className": "Rogue",
+			"name": "Lucha Perspicaz",
+			"source": "XGE-ES",
+			"page": 60,
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Phantom",
-			"subclassSource": "TCE-ES",
+			"subclassShortName": "Inquisitivo",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A nivel 3, obtienes la capacidad de conocer las tácticas de un oponente y contrarrestarlas. Como acción adicional, puedes realizar una prueba de Sabiduría ({@skill Perspicacia|PHB-ES}) contra una criatura que puedas ver y que no esté {@condition incapacitado|PHB-ES|incapacitada}, enfrentándote a la prueba de Carisma ({@skill Engaño|PHB-ES}) del objetivo. Si tienes éxito, puedes usar tu Ataque Furtivo contra él aunque no tengas ventaja en la tirada de ataque, pero no si tienes desventaja.",
+				"Este beneficio dura 1 minuto o hasta que utilices esta habilidad con éxito contra un objetivo diferente."
+			]
+		},
+		{
+			"name": "Ojo Estable",
+			"source": "XGE-ES",
+			"page": 60,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Inquisitivo",
+			"subclassSource": "XGE-ES",
 			"level": 9,
 			"header": 2,
 			"entries": [
-				"{@i 9th-level Phantom feature}",
-				"When a life ends in your presence, you're able to snatch a token from the departing soul, a sliver of its life essence that takes physical form: as a reaction when a creature you can see dies within 30 feet of you, you can open your free hand and cause a Tiny trinket to appear there, a soul trinket. The DM determines the trinket's form or has you roll on the {@item Trinket|PHB-ES|Trinkets} table in the {@i Player's Handbook} to generate it. You can have a maximum number of soul trinkets equal to your proficiency bonus, and you can't create one while at your maximum.",
-				"You can use soul trinkets in the following ways:",
+				"A partir de nivel 9, tienes ventaja en cualquier prueba de Sabiduría ({@skill Percepción|PHB-ES}) o Inteligencia ({@skill Investigación|PHB-ES}) si no te desplazas más de la mitad de tu velocidad en el mismo turno."
+			]
+		},
+		{
+			"name": "Vista Infalible",
+			"source": "XGE-ES",
+			"page": 60,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Inquisitivo",
+			"subclassSource": "XGE-ES",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"A nivel 13, tus sentidos son prácticamente imposibles de engañar. Como acción, puedes sentir la presencia de ilusiones, cambiaformas que no estén en su forma original y otros efectos mágicos diseñados para engañar a los sentidos que se encuentren a 30 pies o menos de ti, siempre que no estés {@condition cegado|PHB-ES} o {@condition ensordecido|PHB-ES}. Sientes que un efecto está intentando engañarte, pero no sabes lo que esconde o su verdadera naturaleza.",
+				"Puedes emplear este rasgo tantas veces como tu modificador por Sabiduría (mínimo una vez) y recuperas todos los usos tras finalizar un descanso largo."
+			]
+		},
+		{
+			"name": "Ojo para la Debilidad",
+			"source": "XGE-ES",
+			"page": 60,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Inquisitivo",
+			"subclassSource": "XGE-ES",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"A nivel 17 aprendes a aprovechar las debilidades de una criatura estudiando cuidadosamente sus tácticas y sus movimientos. Si tu rasgo Lucha Perspicaz se aplica sobre un objetivo, tu daño de Ataque Furtivo contra este aumenta en {@dice 3d6}."
+			]
+		},
+		{
+			"name": "Mente Maestra",
+			"source": "XGE-ES",
+			"page": 60,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Mente Maestra",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"Te centras en las personas y en la influencia o los secretos que poseen. Muchos espías, cortesanos y estrategas siguen este arquetipo y llevan vidas llenas de intriga. Usas las palabras como arma con tanta frecuencia como los cuchillos o el veneno, y entre tus tesoros favoritos destacan los secretos y favores.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Maestro de la Intriga|Pícaro|PHB-ES|Mente Maestra|XGE-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Maestro de la Táctica|Pícaro|PHB-ES|Mente Maestra|XGE-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Maestro de la Intriga",
+			"source": "XGE-ES",
+			"page": 60,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Mente Maestra",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Cuando escoges este arquetipo a nivel 3, obtienes competencia con {@item útiles para disfrazarse|PHB-ES}, {@item útiles para falsificar|PHB-ES} y un {@item juegos|PHB-ES|juego} a tu elección. También aprendes los dos idiomas adicionales que elijas.",
+				"Además, puedes imitar sin equivocarte el dialecto y el acento de una criatura a la que hayas oído hablar durante como mínimo 1 minuto, lo que te permite hacerte pasar por hablante nativo de una zona concreta, siempre que sepas el idioma."
+			]
+		},
+		{
+			"name": "Maestro de la Táctica",
+			"source": "XGE-ES",
+			"page": 60,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Mente Maestra",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A partir de nivel 3, puedes utilizar la acción {@action Ayudar|PHB-ES} como acción adicional. Además, puedes utilizarla para echar una mano a un aliado que ataca a una criatura. El objetivo de ese ataque puede estar a 30 pies o menos de ti, en vez de a solo 5, siempre y cuando el objetivo pueda verte u oírte."
+			]
+		},
+		{
+			"name": "Manipulador Perspicaz",
+			"source": "XGE-ES",
+			"page": 60,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Mente Maestra",
+			"subclassSource": "XGE-ES",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 9, si dedicas al menos 1 minuto en observar o interactuar con otra criatura fuera del combate, podrás dilucidar hasta cierto punto sus capacidades en comparación con las tuyas. El DM te dirá si la criatura es tu igual, tu superior o tu inferior en lo que respecta a dos de las siguientes características a tu elección:",
 				{
 					"type": "list",
 					"items": [
-						"While a soul trinket is on your person, you have advantage on death saving throws and Constitution saving throws, for your vitality is enhanced by the life essence within the object.",
-						"When you deal Sneak Attack damage on your turn, you can destroy one of your soul trinkets that's on your person and then immediately use Wails from the Grave, without expending a use of that feature.",
-						"As an action, you can destroy one of your soul trinkets, no matter where it's located. When you do so, you can ask the spirit associated with the trinket one question. The spirit appears to you and answers in a language it knew in life. It's under no obligation to be truthful, and it answers as concisely as possible, eager to be free. The spirit knows only what it knew in life, as determined by the DM."
+						"Puntuación de Inteligencia ",
+						"Puntuación de Sabiduría",
+						"Puntuación de Carisma",
+						"Nivel de clase (si lo tiene)"
+					]
+				},
+				"Si el DM lo prefiere, también puedes darte cuenta de que conoces parte de la historia de la criatura o uno de sus rasgos de personalidad, si es que tiene."
+			]
+		},
+		{
+			"name": "Distracción",
+			"source": "XGE-ES",
+			"page": 60,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Mente Maestra",
+			"subclassSource": "XGE-ES",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 13, eres capaz de provocar que una criatura reciba un ataque que iba dirigido a ti. Cuando seas el objetivo de un ataque en el que una criatura situada a 5 pies o menos de ti te da cobertura para ese ataque, puedes usar tu reacción para que dicha criatura se convierta en el objetivo en tu lugar."
+			]
+		},
+		{
+			"name": "Alma Engañosa",
+			"source": "XGE-ES",
+			"page": 60,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Mente Maestra",
+			"subclassSource": "XGE-ES",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 17, tus pensamientos ya no pueden ser leídos mediante telepatía o cualquier otro medio sin que tú lo permitas. Puedes mostrar pensamientos falsos mediante una tirada enfrentada de Carisma ({@skill Engaño|PHB-ES}) contra la prueba de Sabiduría ({@skill Perspicacia|PHB-ES}) del telépata.",
+				"Además, independientemente de lo que digas, cualquier efecto mágico que determine si estás diciendo la verdad indica que estás siendo sincero si así lo deseas y no se te puede obligar a decir la verdad mediante magia."
+			]
+		},
+		{
+			"name": "Batidor",
+			"source": "XGE-ES",
+			"page": 58,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Batidor",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"Estás versado en el sigilo y en la supervivencia lejos de las calles de la ciudad, lo que te permite explorar por delante de tus compañeros de expedición. Los pícaros que adoptan este arquetipo se sienten como en casa en la naturaleza, entre bárbaros y exploradores. Muchos batidores son los ojos y oídos de una escuadra militar. Emboscador, espía, cazarrecompensas: estos son solo algunos de los roles desempeñados por estos pícaros cuando viajan por el mundo.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Experto en Escaramuzas|Pícaro|PHB-ES|Batidor|XGE-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Superviviente Nato|Pícaro|PHB-ES|Batidor|XGE-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Experto en Escaramuzas",
+			"source": "XGE-ES",
+			"page": 58,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Batidor",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A partir de nivel 3, resultas difícil de arrinconar en batalla Cuando un enemigo termina su turno situado a 5 pies o menos de ti, puedes usar tu reacción parar moverte hasta la mitad de tu velocidad. Este movimiento no provoca ataques de oportunidad."
+			]
+		},
+		{
+			"name": "Superviviente Nato",
+			"source": "XGE-ES",
+			"page": 59,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Batidor",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Cuando eliges este arquetipo a nivel 3, ganas competencia en las habilidades {@skill Naturaleza|PHB-ES} y {@skill Supervivencia|PHB-ES}, si no la tenías ya. Tu bonificador por competencia se duplica para cualquier prueba de característica que hagas utilizando cualquiera de estas dos habilidades."
+			]
+		},
+		{
+			"name": "Movilidad Superior",
+			"source": "XGE-ES",
+			"page": 59,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Batidor",
+			"subclassSource": "XGE-ES",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"A nivel 9 tu velocidad caminando se incrementa en 10 pies. Si tienes una velocidad nadando o trepando, también aumenta en la misma cantidad."
+			]
+		},
+		{
+			"name": "Maestro de la Emboscada",
+			"source": "XGE-ES",
+			"page": 59,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Batidor",
+			"subclassSource": "XGE-ES",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 13, sobresales iniciando emboscadas y actuando el primero en una pelea.",
+				"Tienes ventaja en las tiradas de iniciativa. Además, la primera criatura a la que impactes durante el primer asalto de un combate es más fácil de golpear para ti y para otros: las tiradas de ataque contra ese objetivo se realizan con ventaja hasta el principio de tu siguiente turno."
+			]
+		},
+		{
+			"name": "Ataque Súbito",
+			"source": "XGE-ES",
+			"page": 59,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Batidor",
+			"subclassSource": "XGE-ES",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 17, puedes golpear con una velocidad letal. Si realizas la acción de {@action Atacar|PHB-ES} en tu turno, puedes hacer un ataque más como acción adicional. Este ataque puede beneficiarse de tu Ataque Furtivo incluso si ya lo has usado este turno, pero no puedes emplear Ataque Furtivo contra un mismo objetivo más de una vez por turno."
+			]
+		},
+		{
+			"name": "Espadachín",
+			"source": "XGE-ES",
+			"page": 59,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Espadachín",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"entries": [
+				"Centras tu entrenamiento en el arte de la espada y lo basas en igual medida en la velocidad, la elegancia y el carisma. Aunque hay guerreros que son brutos y llevan armadura pesada, tu estilo de lucha casi parece un espectáculo. Los duelistas y los piratas suelen pertenecer a este arquetipo.",
+				"Un Espadachín sobresale en duelos y puede luchar con dos armas mientras se escapa como un rayo de su oponente.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Juego de Pies Elegante|Pícaro|PHB-ES|Espadachín|XGE-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Audacia Galante|Pícaro|PHB-ES|Espadachín|XGE-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Juego de Pies Elegante",
+			"source": "XGE-ES",
+			"page": 59,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Espadachín",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Cuando escoges este arquetipo a nivel 3, aprendes a dar un golpe y apartarte sin represalias. Si en tu turno realizas un ataque cuerpo a cuerpo contra una criatura, esta no podrá realizar ataques de oportunidad contra ti durante el resto de tu turno."
+			]
+		},
+		{
+			"name": "Audacia Galante",
+			"source": "XGE-ES",
+			"page": 59,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Espadachín",
+			"subclassSource": "XGE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A partir de nivel 3, tu confianza inconfundible te impulsa a luchar. Puedes añadir el modificador de Carisma a tus tiradas de iniciativa.",
+				"Además, no necesitas ventaja en tu tirada de ataque para usar Ataque Furtivo si ninguna criatura además de tu objetivo está a 5 pies o menos de ti. Se te siguen aplicando el resto de reglas del rasgo de clase Ataque Furtivo."
+			]
+		},
+		{
+			"name": "Garbo",
+			"source": "XGE-ES",
+			"page": 59,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Espadachín",
+			"subclassSource": "XGE-ES",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 9, tu encanto se vuelve increíblemente seductor. Puedes emplear una acción en hacer una tirada de Carisma ({@skill Persuasión|PHB-ES}) enfrentada a la prueba de Sabiduría ({@skill Perspicacia|PHB-ES}) de una criatura. La criatura debe poder oírte y debéis tener un idioma en común.",
+				"Si superas la tirada y la criatura te es hostil, esta tendrá desventaja en las tiradas de ataque contra objetivos distintos a ti y no podrá hacer ataques de oportunidad contra cualquier objetivo que no seas tú. El efecto dura 1 minuto, hasta que uno de tus compañeros ataque al objetivo, use un conjuro que le afecte o hasta que el objetivo y tú os encontréis a más de 60 pies de distancia.",
+				"Si superas la tirada y la criatura no te es hostil, la habrás {@condition hechizado|PHB-ES} durante 1 minuto y te considerará un conocido amistoso. Este efecto acaba de forma inmediata si tú o tus compañeros le hacéis algún daño."
+			]
+		},
+		{
+			"name": "Maniobra elegante",
+			"source": "XGE-ES",
+			"page": 59,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Espadachín",
+			"subclassSource": "XGE-ES",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 13, puedes usar una acción adicional durante tu turno para conseguir ventaja en la siguiente prueba de Destreza ({@skill Acrobacias|PHB-ES}) o Fuerza ({@skill Atletismo|PHB-ES}) que hagas en el mismo turno."
+			]
+		},
+		{
+			"name": "Duelista Experto",
+			"source": "XGE-ES",
+			"page": 59,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Espadachín",
+			"subclassSource": "XGE-ES",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 17, tu dominio de la espada te permite convertir un fallo durante el combate en un éxito. Si fallas una tirada de ataque, puedes volver a tirar con ventaja. Una vez hecho esto, deberás terminar un descanso corto o largo para poder volver a usar este rasgo."
+			]
+		},
+		{
+			"name": "Fantasma",
+			"source": "TCE-ES",
+			"page": 75,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Fantasma",
+			"subclassSource": "TCE-ES",
+			"level": 3,
+			"entries": [
+				"Muchos pícaros caminan por una delgada línea entre la vida y la muerte, arriesgando su propio cuello y cortándoselo a otros. Al recorrer esta línea, algunos pícaros descubren una conexión mística con la propia muerte. Estos pícaros obtienen conocimiento de los muertos y se impregnan de energía negativa, por lo que acaban convirtiéndose en fantasmas. Los gremios de ladrones los consideran muy valiosos por sus grandes capacidades para el espionaje y la obtención de información.",
+				"Muchos shadar-kai de Shadowfell son maestros en estas técnicas macabras y algunos están dispuestos a compartir sus conocimientos. En lugares como Thay, en los Reinos Olvidados, y Karrnath, en Eberron, en los que numerosos nigromantes practican su arte, es posible que un Fantasma pueda llegar a ser confidente y mano derecha de un mago. El Fantasma podría trabajar de agente en un templo dedicado a los dioses de la muerte, para rastrear a quienes intentan burlar a la muerte y recuperar conocimientos que de otro modo la gente se llevaría a la tumba.",
+				"¿Cómo descubriste este poder siniestro? ¿Te quedaste dormido en un cementerio y despertaste con tus nuevas capacidades? ¿O las cultivaste en un templo o en un gremio de ladrones consagrados a una deidad de la muerte?",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Susurros de los Muertos|Pícaro|PHB-ES|Fantasma|TCE-ES|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Lamentos de Ultratumba|Pícaro|PHB-ES|Fantasma|TCE-ES|3"
+				}
+			]
+		},
+		{
+			"name": "Lamentos de Ultratumba",
+			"source": "TCE-ES",
+			"page": 75,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Fantasma",
+			"subclassSource": "TCE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i Rasgo de Fantasma de nivel 3}",
+				"Cuando haces que una criatura se acerque a su final, puedes canalizar el poder de la muerte para dañar también a otro objetivo. justo después de infligir daño con tu Ataque Furtivo a una criatura en tu turno, puedes elegir como objetivo a otra criatura que puedas ver a 30 pies o menos de la primera. Tira una cantidad de dados de Ataque Furtivo igual a la mitad de tu nivel (redondeando hacia arriba). La segunda criatura recibirá daño necrótico igual al resultado, mientras, por un momento, a su alrededor resuenan los lamentos de los muertos.",
+				"Puedes usar este rasgo una cantidad de veces igual a tu bonificador por competencia y recuperas todos los usos tras finalizar un descanso largo."
+			]
+		},
+		{
+			"name": "Susurros de los Muertos",
+			"source": "TCE-ES",
+			"page": 75,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Fantasma",
+			"subclassSource": "TCE-ES",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i Rasgo de Fantasma de nivel 3}",
+				"Los ecos de los difuntos se aferran a ti. Tras finalizar un descanso corto o largo, puedes elegir una habilidad o una competencia con herramientas que no tengas y obtenerla, pues un ser fantasmal comparte su conocimiento contigo. Perderás esta competencia cuando uses este rasgo para elegir otra competencia que te falte."
+			]
+		},
+		{
+			"name": "Recuerdos de los Difuntos",
+			"source": "TCE-ES",
+			"page": 76,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Fantasma",
+			"subclassSource": "TCE-ES",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"{@i Rasgo de Fantasma de nivel 9}",
+				"Cuando alguien muere en tu presencia, puedes arrebatar un recuerdo de su alma, un fragmento de su esencia vital que adopta una forma física: como reacción, cuando una criatura que puedas ver muera a 30 pies o menos de ti, podrás abrir tu mano libre y hacer que aparezca en ella una bagatela de alma Diminuta. El DM elige el aspecto de la bagatela o te hace tirar un dado en la tabla \"{@item Bagatela|PHB-ES|Bagatelas}\" del {@i Player's Handbook} para determinarlo.",
+				"Puedes tener una cantidad máxima de bagatelas de alma igual a tu bonificador por competencia y no puedes crear una mientras tengas el máximo.",
+				"Puedes usar las bagatelas de alma de las siguientes formas:",
+				{
+					"type": "list",
+					"items": [
+						"Mientras llevas contigo una bagatela de alma, tienes ventaja en las tiradas de salvación contra muerte y en las tiradas de salvación de Constitución, ya que tu vitalidad se ve reforzada por la esencia vital del objeto.",
+						"Cuando causas daño en tu turno con Ataque Furtivo, puedes destruir una de las bagatelas de alma que lleves contigo y luego usar inmediatamente Lamentos de Ultratumba sin gastar un uso de ese rasgo.",
+						"Como acción, puedes destruir una de tus bagatelas de alma sin importar dónde se encuentre. Si lo haces, podrás hacerle una pregunta al espíritu vinculado a la bagatela. El espíritu se te aparecerá y te responderá en un idioma que conocía en vida. No tiene la obligación de ser sincero y responderá de la manera más concisa posible, ansioso por ser libre. El espíritu solo sabe lo que ya sabía en vida, según determine el DM."
 					]
 				}
 			]
 		},
 		{
-			"name": "Ghost Walk",
+			"name": "Paseo Fantasmal",
 			"source": "TCE-ES",
-			"page": 62,
-			"className": "Rogue",
+			"page": 76,
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Phantom",
+			"subclassShortName": "Fantasma",
 			"subclassSource": "TCE-ES",
 			"level": 13,
 			"header": 2,
 			"entries": [
-				"{@i 13th-level Phantom feature}",
-				"You can phase partially into the realm of the dead, becoming like a ghost. As a bonus action, you assume a spectral form. While in this form, you have a flying speed of 10 feet, you can hover, and attack rolls have disadvantage against you. You can also move through creatures and objects as if they were {@quickref difficult terrain||3}, but you take {@damage 1d10} force damage if you end your turn inside a creature or an object.",
-				"You stay in this form for 10 minutes or until you end it as a bonus action. To use this feature again, you must finish a long rest or destroy one of your soul trinkets as part of the bonus action you use to activate Ghost Walk."
+				"{@i Rasgo de Fantasma de nivel 13}",
+				"Puedes entrar parcialmente en el reino de los muertos, volviéndote incorpóreo. Como acción adicional, adoptas una forma espectral. Mientras tengas esta forma, tendrás una velocidad volando de 10 pies, podrás levitar y las tiradas de ataque tendrán desventaja contra ti. También podrás moverte a través de criaturas y objetos como si fueran {@book terreno difícil|PHB-ES|9|terreno difícil}, pero recibirás {@damage 1d10} de daño de fuerza si terminas tu turno dentro de una criatura o un objeto.",
+				"Mantienes esta forma durante 10 minutos o hasta que la termines como acción adicional. Para volver a usar este rasgo, debes finalizar un descanso largo o destruir una de tus bagatelas de alma como parte de la acción adicional que uses para activar Paseo Fantasmal."
 			]
 		},
 		{
-			"name": "Death's Friend",
+			"name": "Amigo de la Muerte",
 			"source": "TCE-ES",
-			"page": 62,
-			"className": "Rogue",
+			"page": 76,
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Phantom",
+			"subclassShortName": "Fantasma",
 			"subclassSource": "TCE-ES",
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"{@i 17th-level Phantom feature}",
-				"Your association with death has become so close that you gain the following benefits:",
+				"{@i Rasgo de Fantasma de nivel 17}",
+				"Tu asociación con la muerte ha llegado a ser tan estrecha que obtienes los siguientes beneficios:",
 				{
 					"type": "list",
 					"items": [
-						"When you use your Wails from the Grave, you can deal the necrotic damage to both the first and the second creature.",
-						"At the end of a long rest, a soul trinket appears in your hand if you don't have any soul trinkets, as the spirits of the dead are drawn to you."
+						"Cuando uses Lamentos de Ultratumba, podrás causar daño necrótico tanto a la primera como a la segunda criatura.",
+						"Tras finalizar un descanso largo, en tu mano aparecerá una bagatela de alma si no tienes ninguna, ya que atraes a los espíritus de los muertos."
 					]
 				}
 			]
 		},
 		{
-			"name": "Soulknife",
+			"name": "Rebanaalmas",
 			"source": "TCE-ES",
-			"page": 63,
-			"className": "Rogue",
+			"page": 76,
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Soulknife",
+			"subclassShortName": "Rebanaalmas",
 			"subclassSource": "TCE-ES",
 			"level": 3,
 			"entries": [
-				"Most assassins strike with physical weapons, and many burglars and spies use {@item thieves' tools|PHB-ES} to infiltrate secure locations. In contrast, a Soulknife strikes and infiltrates with the mind, cutting through barriers both physical and psychic. These rogues discover psionic power within themselves and channel it to do their roguish work. They find easy employment as members of thieves' guilds, though they are often mistrusted by rogues who are leery of anyone using strange mind powers to conduct their business. Most governments would also be happy to employ a Soulknife as a spy.",
-				"Amid the trees of ancient forests on the Material Plane and in the Feywild, some wood elves walk the path of the Soulknife, serving as silent, lethal guardians of their woods. In the endless war among the gith, a githzerai is encouraged to become a Soulknife when stealth is required against the githyanki foe.",
-				"As a Soulknife, your psionic abilities might have haunted you since you were a child, only revealing their full potential as you experienced the stress of adventure. Or you might have sought out a reclusive order of psychic adepts and spent years learning how to manifest your power.",
+				"La mayoría de los asesinos atacan con armas físicas, y muchos ladrones y espías utilizan {@item herramientas de ladrón|PHB-ES} para infiltrarse en lugares protegidos. Un Rebanaalmas, por su parte, ataca y se infiltra empleando la mente, atravesando barreras tanto físicas como psíquicas. Estos pícaros descubren el poder psiónico de su interior y lo canalizan para llevar a cabo sus actos. Encuentran trabajo fácilmente como miembros de los gremios de ladrones, aunque los otros pícaros no suelen confiar en ellos, pues recelan de cualquiera que use poderes mentales extraños para su negocio. A la mayoría de los gobiernos también les encantaría contratar a un Rebanaalmas como espía.",
+				"Entre los árboles de los bosques ancestrales del Plano Material y de Feywild, algunos elfos de los bosques siguen la vía del Rebanaalmas, sirviendo como guardianes silenciosos y letales de sus arboledas. En la interminable guerra entre los gith, se anima a los githzerai a convertirse en Rebanaalmas cuando se requiere emplear el sigilo contra los githyanki.",
+				"Como Rebanaalmas, tus capacidades psiónicas podrían haber estado latentes desde niño, sin haber revelado todo su potencial hasta que experimentaste la tensión de la aventura. O puede que buscaras una orden apartada de adeptos psíquicos y hayas pasado años aprendiendo a manifestar tu poder.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Psionic Power|Pícaro|PHB-ES|Soulknife|TCE|3"
+					"subclassFeature": "Poder Psiónico|Pícaro|PHB-ES|Rebanaalmas|TCE-ES|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Psychic Blades|Pícaro|PHB-ES|Soulknife|TCE|3"
+					"subclassFeature": "Cuchillas Psíquicas|Pícaro|PHB-ES|Rebanaalmas|TCE-ES|3"
 				}
 			]
 		},
 		{
-			"name": "Psionic Power",
+			"name": "Poder Psiónico",
 			"source": "TCE-ES",
-			"page": 63,
-			"className": "Rogue",
+			"page": 77,
+			"className": "Pícaro",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Soulknife",
+			"subclassShortName": "Rebanaalmas",
 			"subclassSource": "TCE-ES",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"{@i 3rd-level Soulknife feature}",
-				"You harbor a wellspring of psionic energy within yourself. This energy is represented by your Psionic Energy dice, which are each a {@dice d6}. You have a number of these dice equal to twice your proficiency bonus, and they fuel various psionic powers you have, which are detailed below.",
-				"Some of your powers expend the Psionic Energy die they use, as specified in a power's description, and you can't use a power if it requires you to use a die when your dice are all expended. You regain all your expended Psionic Energy dice when you finish a long rest. In addition, as a bonus action, you can regain one expended Psionic Energy die, but you can't do so again until you finish a short or long rest.",
-				"When you reach certain levels in this class, the size of your Psionic Energy dice increases: at 5th level ({@dice d8}), 11th level ({@dice d10}), and 17th level ({@dice d12}).",
-				"The powers below use your Psionic Energy dice.",
+				"{@i Rasgo de Rebanaalmas de nivel 3}",
+				"Albergas una fuente de energía psiónica en tu interior. Esta energía está representada por tus dados de Energía Psiónica, que son {@dice d6}. Tienes una cantidad de estos dados igual al doble de tu bonificador por competencia, y sirven para alimentar los distintos poderes psiónicos que posees, que se explican debajo.",
+				"Algunos de tus poderes gastan el dado de Energía Psiónica que usan, tal y como se especifica en la correspondiente descripción, por lo que no podrás usar un poder que te obligue a usar un dado si ya los has gastado todos. Recuperas todos los dados de Energía Psiónica tras finalizar un descanso largo. Además, como acción adicional, puedes recuperar un dado de Energía Psiónica gastado, pero no podrás volver a hacerlo hasta que finalices un descanso corto o largo.",
+				"Cuando alcanzas determinados niveles en esta clase, el tamaño de tus dados de Energía Psiónica aumenta: en el nivel 5 ({@dice d8}), en el 11 ({@dice d10}) y en el 17 ({@dice d12}).",
+				"Los poderes especificados a continuación usan tus dados de Energía Psiónica.",
 				{
 					"type": "options",
 					"entries": [
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Psi-Bolstered Knack|Rogue|TCE|Soulknife|TCE|3"
+							"subclassFeature": "Don Psirreforzado|Pícaro|TCE-ES|Rebanaalmas|TCE-ES|3"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Psychic Whispers|Rogue|TCE|Soulknife|TCE|3"
+							"subclassFeature": "Susurros Psíquicos|Pícaro|TCE-ES|Rebanaalmas|TCE-ES|3"
 						}
 					]
 				}
 			]
 		},
 		{
-			"name": "Psychic Blades",
+			"name": "Don Psirreforzado",
 			"source": "TCE-ES",
-			"page": 63,
-			"className": "Rogue",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Soulknife",
-			"subclassSource": "TCE-ES",
-			"level": 3,
-			"header": 1,
-			"entries": [
-				"{@i 3rd-level Soulknife feature}",
-				"You can manifest your psionic power as shimmering blades of psychic energy. Whenever you take the {@action Attack} action, you can manifest a psychic blade from your free hand and make the attack with that blade. This magic blade is a simple melee weapon with the finesse and thrown properties. It has a normal range of 60 feet and no long range, and on a hit, it deals psychic damage equal to {@dice 1d6} plus the ability modifier you used for the attack roll. The blade vanishes immediately after it hits or misses its target, and it leaves no mark on its target if it deals damage.",
-				"After you attack with the blade, you can make a melee or ranged weapon attack with a second psychic blade as a bonus action on the same turn, provided your other hand is free to create it. The damage die of this bonus attack is {@dice 1d4}, instead of {@dice 1d6}."
-			]
-		},
-		{
-			"name": "Soul Blades",
-			"source": "TCE-ES",
-			"page": 63,
-			"className": "Rogue",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Soulknife",
-			"subclassSource": "TCE-ES",
-			"level": 9,
-			"header": 2,
-			"entries": [
-				"{@i 9th-level Soulknife feature}",
-				"Your Psychic Blades are now an expression of your psi-suffused soul, giving you these powers that use your Psionic Energy dice:",
-				{
-					"type": "options",
-					"entries": [
-						{
-							"type": "refSubclassFeature",
-							"subclassFeature": "Homing Strikes|Rogue|TCE|Soulknife|TCE|9"
-						},
-						{
-							"type": "refSubclassFeature",
-							"subclassFeature": "Psychic Teleportation|Rogue|TCE|Soulknife|TCE|9"
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Psychic Veil",
-			"source": "TCE-ES",
-			"page": 63,
-			"className": "Rogue",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Soulknife",
-			"subclassSource": "TCE-ES",
-			"level": 13,
-			"header": 2,
-			"entries": [
-				"{@i 13th-level Soulknife feature}",
-				"You can weave a veil of psychic static to mask yourself. As an action, you can magically become {@condition invisible}, along with anything you are wearing or carrying, for 1 hour or until you dismiss this effect (no action required). This invisibility ends early immediately after you deal damage to a creature or you force a creature to make a saving throw.",
-				"Once you use this feature, you can't do so again until you finish a long rest, unless you expend a Psionic Energy die to use this feature again."
-			]
-		},
-		{
-			"name": "Rend Mind",
-			"source": "TCE-ES",
-			"page": 63,
-			"className": "Rogue",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Soulknife",
-			"subclassSource": "TCE-ES",
-			"level": 17,
-			"header": 2,
-			"entries": [
-				"{@i 17th-level Soulknife feature}",
-				"You can sweep your Psychic Blades directly through a creature's mind. When you use your Psychic Blades to deal Sneak Attack damage to a creature, you can force that target to make a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Dexterity modifier). If the save fails, the target is {@condition stunned} for 1 minute. The {@condition stunned} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
-				"Once you use this feature, you can't do so again until you finish a long rest, unless you expend three Psionic Energy dice to use it again."
-			]
-		},
-		{
-			"name": "Inquisitive",
-			"source": "XGE-ES",
-			"page": 45,
-			"className": "Rogue",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Inquisitive",
-			"subclassSource": "XGE-ES",
-			"level": 3,
-			"entries": [
-				"As an archetypal Inquisitive, you excel at rooting out secrets and unraveling mysteries. You rely on your sharp eye for detail, but also on your finely honed ability to read the words and deeds of other creatures to determine their true intent. You excel at defeating creatures that hide among and prey upon ordinary folk, and your mastery of lore and your keen deductions make you well equipped to expose and end hidden evils.",
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Ear for Deceit|Pícaro|PHB-ES|Inquisitive|XGE|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Eye for Detail|Pícaro|PHB-ES|Inquisitive|XGE|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Insightful Fighting|Pícaro|PHB-ES|Inquisitive|XGE|3"
-				}
-			]
-		},
-		{
-			"name": "Ear for Deceit",
-			"source": "XGE-ES",
-			"page": 45,
-			"className": "Rogue",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Inquisitive",
-			"subclassSource": "XGE-ES",
-			"level": 3,
-			"header": 1,
-			"entries": [
-				"When you choose this archetype at 3rd level, you develop a talent for picking out lies. Whenever you make a Wisdom ({@skill Insight}) check to determine whether a creature is lying, treat a roll of 7 or lower on the {@dice d20} as an 8."
-			]
-		},
-		{
-			"name": "Eye for Detail",
-			"source": "XGE-ES",
-			"page": 45,
-			"className": "Rogue",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Inquisitive",
-			"subclassSource": "XGE-ES",
-			"level": 3,
-			"header": 1,
-			"entries": [
-				"Starting at 3rd level, you can use a bonus action to make a Wisdom ({@skill Perception}) check to spot a hidden creature or object or to make an Intelligence ({@skill Investigation}) check to uncover or decipher clues."
-			]
-		},
-		{
-			"name": "Insightful Fighting",
-			"source": "XGE-ES",
-			"page": 45,
-			"className": "Rogue",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Inquisitive",
-			"subclassSource": "XGE-ES",
-			"level": 3,
-			"header": 1,
-			"entries": [
-				"At 3rd level, you gain the ability to decipher an opponent's tactics and develop a counter to them. As a bonus action, you can make a Wisdom ({@skill Insight}) check against a creature you can see that isn't {@condition incapacitated}, contested by the target's Charisma ({@skill Deception}) check. If you succeed, you can use your Sneak Attack against that target even if you don't have advantage on the attack roll, but not if you have disadvantage on it.",
-				"This benefit lasts for 1 minute or until you successfully use this feature against a different target."
-			]
-		},
-		{
-			"name": "Steady Eye",
-			"source": "XGE-ES",
-			"page": 45,
-			"className": "Rogue",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Inquisitive",
-			"subclassSource": "XGE-ES",
-			"level": 9,
-			"header": 2,
-			"entries": [
-				"Starting at 9th level, you have advantage on any Wisdom ({@skill Perception}) or Intelligence ({@skill Investigation}) check if you move no more than half your speed on the same turn."
-			]
-		},
-		{
-			"name": "Unerring Eye",
-			"source": "XGE-ES",
-			"page": 45,
-			"className": "Rogue",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Inquisitive",
-			"subclassSource": "XGE-ES",
-			"level": 13,
-			"header": 2,
-			"entries": [
-				"Beginning at 13th level, your senses are almost impossible to foil. As an action, you sense the presence of illusions, shapechangers not in their original form, and other magic designed to deceive the senses within 30 feet of you, provided you aren't {@condition blinded} or {@condition deafened}. You sense that an effect is attempting to trick you, but you gain no insight into what is hidden or into its true nature.",
-				"You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a long rest."
-			]
-		},
-		{
-			"name": "Eye for Weakness",
-			"source": "XGE-ES",
-			"page": 45,
-			"className": "Rogue",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Inquisitive",
-			"subclassSource": "XGE-ES",
-			"level": 17,
-			"header": 2,
-			"entries": [
-				"At 17th level, you learn to exploit a creature's weaknesses by carefully studying its tactics and movement. While your Insightful Fighting feature applies to a creature, your Sneak Attack damage against that creature increases by {@dice 3d6}."
-			]
-		},
-		{
-			"name": "Mastermind",
-			"source": "XGE-ES",
-			"page": 46,
-			"className": "Rogue",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Mastermind",
-			"subclassSource": "XGE-ES",
-			"level": 3,
-			"entries": [
-				"Your focus is on people and on the influence and secrets they have. Many spies, courtiers, and schemers follow this archetype, leading lives of intrigue. Words are your weapons as often as knives or poison, and secrets and favors are some of your favorite treasures.",
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Master of Intrigue|Pícaro|PHB-ES|Mastermind|XGE|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Master of Tactics|Pícaro|PHB-ES|Mastermind|XGE|3"
-				}
-			]
-		},
-		{
-			"name": "Master of Intrigue",
-			"source": "XGE-ES",
-			"page": 46,
-			"className": "Rogue",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Mastermind",
-			"subclassSource": "XGE-ES",
-			"level": 3,
-			"header": 1,
-			"entries": [
-				"When you choose this archetype at 3rd level, you gain proficiency with the {@item disguise kit|PHB-ES}, the {@item forgery kit|PHB-ES}, and one {@item gaming set|PHB-ES} of your choice. You also learn two languages of your choice.",
-				"Additionally, you can unerringly mimic the speech patterns and accent of a creature that you hear speak for at least 1 minute, enabling you to pass yourself off as a native speaker of a particular land, provided that you know the language."
-			]
-		},
-		{
-			"name": "Master of Tactics",
-			"source": "XGE-ES",
-			"page": 46,
-			"className": "Rogue",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Mastermind",
-			"subclassSource": "XGE-ES",
-			"level": 3,
-			"header": 1,
-			"entries": [
-				"Starting at 3rd level, you can use the {@action Help} action as a bonus action. Additionally, when you use the {@action Help} action to aid an ally in attacking a creature, the target of that attack can be within 30 feet of you, rather than within 5 feet of you, if the target can see or hear you."
-			]
-		},
-		{
-			"name": "Insightful Manipulator",
-			"source": "XGE-ES",
-			"page": 46,
-			"className": "Rogue",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Mastermind",
-			"subclassSource": "XGE-ES",
-			"level": 9,
-			"header": 2,
-			"entries": [
-				"Starting at 9th level, if you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own. The DM tells you if the creature is your equal, superior, or inferior in regard to two of the following characteristics of your choice:",
-				{
-					"type": "list",
-					"items": [
-						"Intelligence score",
-						"Wisdom score",
-						"Charisma score",
-						"Class levels (if any)"
-					]
-				},
-				"At the DM's option, you might also realize you know a piece of the creature's history or one of its personality traits, if it has any."
-			]
-		},
-		{
-			"name": "Misdirection",
-			"source": "XGE-ES",
-			"page": 46,
-			"className": "Rogue",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Mastermind",
-			"subclassSource": "XGE-ES",
-			"level": 13,
-			"header": 2,
-			"entries": [
-				"Beginning at 13th level, you can sometimes cause another creature to suffer an attack meant for you. When you are targeted by an attack while a creature within 5 feet of you is granting you cover against that attack, you can use your reaction to have the attack target that creature instead of you."
-			]
-		},
-		{
-			"name": "Soul of Deceit",
-			"source": "XGE-ES",
-			"page": 46,
-			"className": "Rogue",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Mastermind",
-			"subclassSource": "XGE-ES",
-			"level": 17,
-			"header": 2,
-			"entries": [
-				"Starting at 17th level, your thoughts can't be read by telepathy or other means, unless you allow it. You can present false thoughts by succeeding on a Charisma ({@skill Deception}) check contested by the mind reader's Wisdom ({@skill Insight}) check.",
-				"Additionally, no matter what you say, magic that would determine if you are telling the truth indicates you are being truthful if you so choose, and you can't be compelled to tell the truth by magic."
-			]
-		},
-		{
-			"name": "Scout",
-			"source": "XGE-ES",
-			"page": 47,
-			"className": "Rogue",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Scout",
-			"subclassSource": "XGE-ES",
-			"level": 3,
-			"entries": [
-				"You are skilled in stealth and surviving far from the streets of a city, allowing you to scout ahead of your companions during expeditions. Rogues who embrace this archetype are at home in the wilderness and among barbarians and rangers, and many Scouts serve as the eyes and ears of war bands. Ambusher, spy, bounty hunter—these are just a few of the roles that Scouts assume as they range the world.",
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Skirmisher|Pícaro|PHB-ES|Scout|XGE|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Survivalist|Pícaro|PHB-ES|Scout|XGE|3"
-				}
-			]
-		},
-		{
-			"name": "Skirmisher",
-			"source": "XGE-ES",
-			"page": 47,
-			"className": "Rogue",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Scout",
-			"subclassSource": "XGE-ES",
-			"level": 3,
-			"header": 1,
-			"entries": [
-				"Starting at 3rd level, you are difficult to pin down during a fight. You can move up to half your speed as a reaction when an enemy ends its turn within 5 feet of you. This movement doesn't provoke opportunity attacks."
-			]
-		},
-		{
-			"name": "Survivalist",
-			"source": "XGE-ES",
-			"page": 47,
-			"className": "Rogue",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Scout",
-			"subclassSource": "XGE-ES",
-			"level": 3,
-			"header": 1,
-			"entries": [
-				"When you choose this archetype at 3rd level, you gain proficiency in the {@skill Nature} and {@skill Survival} skills if you don't already have it. Your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies."
-			]
-		},
-		{
-			"name": "Superior Mobility",
-			"source": "XGE-ES",
-			"page": 47,
-			"className": "Rogue",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Scout",
-			"subclassSource": "XGE-ES",
-			"level": 9,
-			"header": 2,
-			"entries": [
-				"At 9th level, your walking speed increases by 10 feet. If you have a climbing or swimming speed, this increase applies to that speed as well."
-			]
-		},
-		{
-			"name": "Ambush Master",
-			"source": "XGE-ES",
-			"page": 47,
-			"className": "Rogue",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Scout",
-			"subclassSource": "XGE-ES",
-			"level": 13,
-			"header": 2,
-			"entries": [
-				"Starting at 13th level, you excel at leading ambushes and acting first in a fight.",
-				"You have advantage on initiative rolls. In addition, the first creature you hit during the first round of a combat becomes easier for you and others to strike; attack rolls against that target have advantage until the start of your next turn."
-			]
-		},
-		{
-			"name": "Sudden Strike",
-			"source": "XGE-ES",
-			"page": 47,
-			"className": "Rogue",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Scout",
-			"subclassSource": "XGE-ES",
-			"level": 17,
-			"header": 2,
-			"entries": [
-				"Starting at 17th level, you can strike with deadly speed. If you take the {@action Attack} action on your turn, you can make one additional attack as a bonus action. This attack can benefit from your Sneak Attack even if you have already used it this turn, but you can't use your Sneak Attack against the same target more than once in a turn."
-			]
-		},
-		{
-			"name": "Swashbuckler",
-			"source": "XGE-ES",
-			"page": 48,
-			"className": "Rogue",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Swashbuckler",
-			"subclassSource": "XGE-ES",
-			"level": 3,
-			"entries": [
-				"You focus your training on the art of the blade, relying on speed, elegance, and charm in equal parts. While some warriors are brutes clad in heavy armor, your method of fighting looks almost like a performance. Duelists and pirates typically belong to this archetype.",
-				"A Swashbuckler excels in single combat, and can fight with two weapons while safely darting away from an opponent.",
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Fancy Footwork|Pícaro|PHB-ES|Swashbuckler|XGE|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Rakish Audacity|Pícaro|PHB-ES|Swashbuckler|XGE|3"
-				}
-			]
-		},
-		{
-			"name": "Fancy Footwork",
-			"source": "XGE-ES",
-			"page": 48,
-			"className": "Rogue",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Swashbuckler",
-			"subclassSource": "XGE-ES",
-			"level": 3,
-			"header": 1,
-			"entries": [
-				"When you choose this archetype at 3rd level, you learn how to land a strike and then slip away without reprisal. During your turn, if you make a melee attack against a creature, that creature can't make opportunity attacks against you for the rest of your turn."
-			]
-		},
-		{
-			"name": "Rakish Audacity",
-			"source": "XGE-ES",
-			"page": 48,
-			"className": "Rogue",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Swashbuckler",
-			"subclassSource": "XGE-ES",
-			"level": 3,
-			"header": 1,
-			"entries": [
-				"Starting at 3rd level, your confidence propels you into battle. You can give yourself a bonus to your initiative rolls equal to your Charisma modifier.",
-				"You also gain an additional way to use your Sneak Attack; you don't need advantage on your attack roll to use Sneak Attack against a creature if you are within 5 feet of it, no other creatures are within 5 feet of you, and you don't have disadvantage on the attack roll. All the other rules for Sneak Attack still apply to you."
-			]
-		},
-		{
-			"name": "Panache",
-			"source": "XGE-ES",
-			"page": 48,
-			"className": "Rogue",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Swashbuckler",
-			"subclassSource": "XGE-ES",
-			"level": 9,
-			"header": 2,
-			"entries": [
-				"At 9th level, your charm becomes extraordinarily beguiling. As an action, you can make a Charisma ({@skill Persuasion}) check contested by a creature's Wisdom ({@skill Insight}) check. The creature must be able to hear you, and the two of you must share a language.",
-				"If you succeed on the check and the creature is hostile to you, it has disadvantage on attack rolls against targets other than you and can't make opportunity attacks against targets other than you. This effect lasts for 1 minute, until one of your companions attacks the target or affects it with a spell, or until you and the target are more than 60 feet apart.",
-				"If you succeed on the check and the creature isn't hostile to you, it is {@condition charmed} by you for 1 minute. While {@condition charmed}, it regards you as a friendly acquaintance. This effect ends immediately if you or your companions do anything harmful to it."
-			]
-		},
-		{
-			"name": "Elegant Maneuver",
-			"source": "XGE-ES",
-			"page": 48,
-			"className": "Rogue",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Swashbuckler",
-			"subclassSource": "XGE-ES",
-			"level": 13,
-			"header": 2,
-			"entries": [
-				"Starting at 13th level, you can use a bonus action on your turn to gain advantage on the next Dexterity ({@skill Acrobatics}) or Strength ({@skill Athletics}) check you make during the same turn."
-			]
-		},
-		{
-			"name": "Master Duelist",
-			"source": "XGE-ES",
-			"page": 48,
-			"className": "Rogue",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Swashbuckler",
-			"subclassSource": "XGE-ES",
-			"level": 17,
-			"header": 2,
-			"entries": [
-				"Beginning at 17th level, your mastery of the blade lets you turn failure into success in combat. If you miss with an attack roll, you can roll it again with advantage. Once you do so, you can't use this feature again until you finish a short or long rest."
-			]
-		},
-		{
-			"name": "Psi-Bolstered Knack",
-			"source": "TCE-ES",
-			"page": 63,
-			"className": "Rogue",
+			"page": 77,
+			"className": "Pícaro",
 			"classSource": "TCE-ES",
-			"subclassShortName": "Soulknife",
+			"subclassShortName": "Rebanaalmas",
 			"subclassSource": "TCE-ES",
 			"level": 3,
 			"consumes": {
-				"name": "Psionic Energy Die"
+				"name": "Dado de Energía Psiónica"
 			},
 			"entries": [
-				"When your nonpsionic training fails you, your psionic power can help: if you fail an ability check using a skill or tool with which you have proficiency, you can roll one Psionic Energy die and add the number rolled to the check, potentially turning failure into success. You expend the die only if the roll succeeds."
+				"Cuando tu entrenamiento no psiónico te falle, tu poder psiónico podría ser de ayuda: si fallas una prueba de característica usando una habilidad o una herramienta en la que seas competente, podrás tirar un dado de Energía Psiónica y sumar el resultado a la prueba, lo que puede convertir un fallo en un éxito. Solo gastas el dado si la tirada tiene éxito."
 			]
 		},
 		{
-			"name": "Psychic Whispers",
+			"name": "Susurros Psíquicos",
 			"source": "TCE-ES",
-			"page": 63,
-			"className": "Rogue",
+			"page": 77,
+			"className": "Pícaro",
 			"classSource": "TCE-ES",
-			"subclassShortName": "Soulknife",
+			"subclassShortName": "Rebanaalmas",
 			"subclassSource": "TCE-ES",
 			"level": 3,
 			"entries": [
-				"You can establish telepathic communication between yourself and others-perfect for quiet infiltration. As an action, choose one or more creatures you can see, up to a number of creatures equal to your proficiency bonus, and then roll one Psionic Energy die. For a number of hours equal to the number rolled, the chosen creatures can speak telepathically with you, and you can speak telepathically with them. To send or receive a message (no action required), you and the other creature must be within 1 mile of each other. A creature can't use this telepathy if it can't speak any languages, and a creature can end the telepathic connection at any time (no action required). You and the creature don't need to speak a common language to understand each other.",
-				"The first time you use this power after each long rest, you don't expend the Psionic Energy die. All other times you use the power, you expend the die."
+				"Puedes establecer comunicación telepática con otras criaturas: ¡una opción perfecta para infiltrarte sin llamar la atención! Como acción, elige una o más criaturas que puedas ver, hasta una cantidad igual a tu bonificador por competencia, y luego tira un dado de Energía Psiónica. Durante un número de horas igual al resultado, las criaturas elegidas podrán hablar contigo telepáticamente y tú podrás hablar telepática mente con ellas. Para enviar o recibir un mensaje (no requiere acción), tú y la criatura en cuestión debéis estar a 1 milla o menos la una de la otra. Una criatura no podrá usar este tipo de telepatía si no habla ningún idioma y, además, podrá finalizar la conexión telepática en cualquier momento (no requiere acción). La criatura y tú no tenéis por qué hablar un idioma en común para entenderos.",
+				"La primera vez que utilices este poder tras cada descanso largo, no gastarás el dado de Energía Psiónica. El resto de veces que uses el poder, gastarás el dado."
 			]
 		},
 		{
-			"name": "Homing Strikes",
+			"name": "Cuchillas Psíquicas",
 			"source": "TCE-ES",
-			"page": 63,
-			"className": "Rogue",
-			"classSource": "TCE-ES",
-			"subclassShortName": "Soulknife",
+			"page": 77,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Rebanaalmas",
 			"subclassSource": "TCE-ES",
-			"level": 9,
+			"level": 3,
+			"header": 1,
 			"entries": [
-				"If you make an attack roll with your Psychic Blades and miss the target, you can roll one Psionic Energy die and add the number rolled to the attack roll. If this causes the attack to hit, you expend the Psionic Energy die."
+				"{@i Rasgo de Rebanaalmas de nivel 3}",
+				"Puedes hacer que tu poder psiónico se manifieste en forma de resplandecientes cuchillas de energía psíquica. Siempre que uses la acción de {@action Atacar|PHB-ES}, podrás hacer que aparezca una cuchilla psíquica en tu mano libre y realizar el ataque con esa arma. Esta cuchilla mágica es un arma cuerpo a cuerpo sencilla con las propiedades \"sutil\" y \"arrojadiza\". Tiene un alcance normal de 60 pies, pero no alcance largo, y al impactar inflige daño psíquico igual a {@dice 1d6} más el modificador por característica empleado para la tirada de ataque. La cuchilla se desvanecerá inmediatamente después de impactar o fallar contra su objetivo y no le dejará ninguna marca aunque le inflija daño.",
+				"Tras atacar con la cuchilla, puedes realizar un ataque con arma a distancia o cuerpo a cuerpo con una segunda cuchilla psíquica como acción adicional en el mismo turno, siempre que tu otra mano esté libre para crearla. El dado de daño de este ataque adicional es {@dice 1d4}, en vez de {@dice 1d6}."
 			]
 		},
 		{
-			"name": "Psychic Teleportation",
+			"name": "Cuchillas del Alma",
 			"source": "TCE-ES",
-			"page": 63,
-			"className": "Rogue",
+			"page": 78,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Rebanaalmas",
+			"subclassSource": "TCE-ES",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"{@i Rasgo de Rebanaalmas de nivel 9}",
+				"Tu Hoja Psíquica es ahora una expresión de tu alma henchida de fuerza psíquica, otorgándote estos poderes que utilizan tus dados de Energía Psiónica:",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Golpes Teledirigidos|Pícaro|TCE-ES|Rebanaalmas|TCE-ES|9"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Teletransporte Psíquico|Pícaro|TCE-ES|Rebanaalmas|TCE-ES|9"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Golpes Teledirigidos",
+			"source": "TCE-ES",
+			"page": 78,
+			"className": "Pícaro",
 			"classSource": "TCE-ES",
-			"subclassShortName": "Soulknife",
+			"subclassShortName": "Rebanaalmas",
 			"subclassSource": "TCE-ES",
 			"level": 9,
 			"entries": [
-				"As a bonus action, you manifest one of your Psychic Blades, expend one Psionic Energy die and roll it, and throw the blade at an unoccupied space you can see, up to a number of feet away equal to 10 times the number rolled. You then teleport to that space, and the blade vanishes."
+				"Si realizas una tirada de ataque con tu Hoja Psíquica y fallas, podrás tirar un dado de Energía Psiónica y sumar el número obtenido a la tirada de ataque. Si eso hace que el ataque impacte, gastarás el dado de Energía Psiónica."
+			]
+		},
+		{
+			"name": "Teletransporte Psíquico",
+			"source": "TCE-ES",
+			"page": 78,
+			"className": "Pícaro",
+			"classSource": "TCE-ES",
+			"subclassShortName": "Rebanaalmas",
+			"subclassSource": "TCE-ES",
+			"level": 9,
+			"entries": [
+				"Como acción adicional, manifiestas una Hoja Psíquica, gastas un dado de Energía Psiónica y lo tiras, y lanzas la cuchilla a un espacio sin ocupar que puedas ver a hasta una cantidad de pies igual a 10 veces el resultado. Luego te teletransportarás a ese espacio y la cuchilla desparecerá."
+			]
+		},
+		{
+			"name": "Velo Psíquico",
+			"source": "TCE-ES",
+			"page": 78,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Rebanaalmas",
+			"subclassSource": "TCE-ES",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"{@i Rasgo de Rebanaalmas de nivel 13}",
+				"Puedes tejer un velo de interferencias psíquicas para enmascararte. Como acción, puedes hacer que tanto tú como cualquier cosa que vistas o lleves contigo os volváis {@condition invisible|PHB-ES|invisibles} mágicamente durante 1 hora o hasta que desactives este efecto (no requiere acción). Esta invisibilidad terminará inmediatamente si infliges daño a una criatura o si obligas a una criatura a realizar una tirada de salvación.",
+				"Cuando uses este rasgo, no podrás volver a hacerlo hasta que finalices un descanso largo, a menos que gastes un dado de Energía Psiónica para volver a utilizarlo."
+			]
+		},
+		{
+			"name": "Desgarro Mental",
+			"source": "TCE-ES",
+			"page": 78,
+			"className": "Pícaro",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Rebanaalmas",
+			"subclassSource": "TCE-ES",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"{@i Rasgo de Rebanaalmas de nivel 17}",
+				"Puedes pegar un tajo a la mente de una criatura con tu Hoja Psíquica. Cuando uses tu Hoja Psíquica para infligir daño de Ataque Furtivo a una criatura, podrás obligar a ese objetivo a realizar una tirada de salvación de Sabiduría (CD igual a 8 + tu bonificador por competencia + tu modificador por Destreza). Si la falla, el objetivo quedará {@condition aturdido|PHB-ES} durante 1 minuto. El objetivo {@condition aturdido|PHB-ES} puede repetir la tirada de salvación al final de cada uno de sus turnos y, si tiene éxito, se librará del efecto.",
+				"Cuando uses este rasgo, no podrás volver a hacerlo hasta que finalices un descanso largo, a menos que gastes tres dados de Energía Psiónica para volver a usarlo."
 			]
 		}
 	]
