@@ -1145,35 +1145,35 @@
 					"entries": [
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Careful Spell|PHB-ES"
+							"optionalfeature": "Conjuro Acelerado|PHB-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Distant Spell|PHB-ES"
+							"optionalfeature": "Conjuro Cuidadoso|PHB-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Empowered Spell|PHB-ES"
+							"optionalfeature": "Conjuro Distante|PHB-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Extended Spell|PHB-ES"
+							"optionalfeature": "Conjuro Extendido|PHB-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Heightened Spell|PHB-ES"
+							"optionalfeature": "Conjuro Gemelo|PHB-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Quickened Spell|PHB-ES"
+							"optionalfeature": "Conjuro Intensificado|PHB-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Subtle Spell|PHB-ES"
+							"optionalfeature": "Conjuro Potenciado|PHB-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Twinned Spell|PHB-ES"
+							"optionalfeature": "Conjuro Sutil|PHB-ES"
 						}
 					]
 				}
@@ -1188,18 +1188,18 @@
 			"level": 3,
 			"isClassFeatureVariant": true,
 			"entries": [
-				"{@i 3rd-level sorcerer {@variantrule optional class features|tce|optional feature}}",
+				"{@i 3rd-level sorcerer {@variantrule optional class features|TCE-ES|optional feature}}",
 				"When you choose Metamagic options, you have access to the following additional options.",
 				{
 					"type": "options",
 					"entries": [
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Seeking Spell|TCE-ES"
+							"optionalfeature": "Conjuro Buscador|TCE-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Transmuted Spell|TCE-ES"
+							"optionalfeature": "Conjuro Transmutado|TCE-ES"
 						}
 					]
 				}
@@ -1227,7 +1227,7 @@
 			"level": 4,
 			"isClassFeatureVariant": true,
 			"entries": [
-				"{@i 4th-level sorcerer {@variantrule optional class features|tce|optional feature}}",
+				"{@i 4th-level sorcerer {@variantrule optional class features|TCE-ES|optional feature}}",
 				"Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can do one of the following, representing the magic within you flowing in new ways:",
 				{
 					"type": "list",
@@ -1250,7 +1250,7 @@
 				"name": "Sorcery Point"
 			},
 			"entries": [
-				"{@i 5th-level sorcerer {@variantrule optional class features|tce|optional feature}}",
+				"{@i 5th-level sorcerer {@variantrule optional class features|TCE-ES|optional feature}}",
 				"You can tap into your inner wellspring of magic to try to conjure success from failure. When you make an ability check that fails, you can spend 1 sorcery point to reroll the {@dice d20}, and you must use the new roll, potentially turning the failure into a success."
 			]
 		},
@@ -1381,32 +1381,32 @@
 	],
 	"subclass": [
 		{
-			"name": "Draconic Bloodline",
-			"shortName": "Draconic",
+			"name": "Linaje Dracónico",
+			"shortName": "Dracónico",
 			"source": "PHB-ES",
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"page": 102,
+			"page": 91,
 			"srd": true,
 			"subclassFeatures": [
-				"Draconic Bloodline|Hechicero|PHB-ES|Draconic||1",
-				"Elemental Affinity|Hechicero|PHB-ES|Draconic||6",
-				"Dragon Wings|Hechicero|PHB-ES|Draconic||14",
-				"Draconic Presence|Hechicero|PHB-ES|Draconic||18"
+				"Draconic Bloodline|Hechicero|PHB-ES|Dracónico|PHB-ES|1",
+				"Elemental Affinity|Hechicero|PHB-ES|Dracónico|PHB-ES|6",
+				"Dragon Wings|Hechicero|PHB-ES|Dracónico|PHB-ES|14",
+				"Draconic Presence|Hechicero|PHB-ES|Dracónico|PHB-ES|18"
 			]
 		},
 		{
-			"name": "Wild Magic",
-			"shortName": "Wild",
+			"name": "Magia Salvaje",
+			"shortName": "Salvaje",
 			"source": "PHB-ES",
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"page": 103,
+			"page": 92,
 			"subclassFeatures": [
-				"Wild Magic|Hechicero|PHB-ES|Wild||1",
-				"Bend Luck|Hechicero|PHB-ES|Wild||6",
-				"Controlled Chaos|Hechicero|PHB-ES|Wild||14",
-				"Spell Bombardment|Hechicero|PHB-ES|Wild||18"
+				"Wild Magic|Hechicero|PHB-ES|Salvaje|PHB-ES|1",
+				"Bend Luck|Hechicero|PHB-ES|Salvaje|PHB-ES|6",
+				"Controlled Chaos|Hechicero|PHB-ES|Salvaje|PHB-ES|14",
+				"Spell Bombardment|Hechicero|PHB-ES|Salvaje|PHB-ES|18"
 			],
 			"fluff": {
 				"images": [
@@ -1421,12 +1421,12 @@
 			}
 		},
 		{
-			"name": "Divine Soul",
-			"shortName": "Divine Soul",
+			"name": "Alma Divina",
+			"shortName": "Alma Divina",
 			"source": "XGE-ES",
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"page": 50,
+			"page": 43,
 			"additionalSpells": [
 				{
 					"name": "Good",
@@ -1720,19 +1720,19 @@
 				}
 			],
 			"subclassFeatures": [
-				"Divine Soul|Hechicero|PHB-ES|Divine Soul|XGE|1",
-				"Empowered Healing|Hechicero|PHB-ES|Divine Soul|XGE|6",
-				"Otherworldly Wings|Hechicero|PHB-ES|Divine Soul|XGE|14",
-				"Unearthly Recovery|Hechicero|PHB-ES|Divine Soul|XGE|18"
+				"Divine Soul|Hechicero|PHB-ES|Alma Divina|XGE-ES|1",
+				"Empowered Healing|Hechicero|PHB-ES|Alma Divina|XGE-ES|6",
+				"Otherworldly Wings|Hechicero|PHB-ES|Alma Divina|XGE-ES|14",
+				"Unearthly Recovery|Hechicero|PHB-ES|Alma Divina|XGE-ES|18"
 			]
 		},
 		{
-			"name": "Shadow Magic",
-			"shortName": "Shadow",
+			"name": "Magia de las Sombras",
+			"shortName": "Sombras",
 			"source": "XGE-ES",
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"page": 50,
+			"page": 44,
 			"additionalSpells": [
 				{
 					"known": {
@@ -1743,40 +1743,40 @@
 				}
 			],
 			"subclassFeatures": [
-				"Shadow Magic|Hechicero|PHB-ES|Shadow|XGE|1",
-				"Hound of Ill Omen|Hechicero|PHB-ES|Shadow|XGE|6",
-				"Shadow Walk|Hechicero|PHB-ES|Shadow|XGE|14",
-				"Umbral Form|Hechicero|PHB-ES|Shadow|XGE|18"
+				"Shadow Magic|Hechicero|PHB-ES|Sombras|XGE-ES|1",
+				"Hound of Ill Omen|Hechicero|PHB-ES|Sombras|XGE-ES|6",
+				"Shadow Walk|Hechicero|PHB-ES|Sombras|XGE-ES|14",
+				"Umbral Form|Hechicero|PHB-ES|Sombras|XGE-ES|18"
 			]
 		},
 		{
-			"name": "Storm Sorcery",
-			"shortName": "Storm",
+			"name": "Hechicería de Tormenta",
+			"shortName": "Tormenta",
 			"source": "XGE-ES",
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"page": 51,
+			"page": 43,
 			"otherSources": [
 				{
-					"source": "SCAG",
-					"page": 137
+					"source": "SCAG-ES",
+					"page": 133
 				}
 			],
 			"subclassFeatures": [
-				"Storm Sorcery|Hechicero|PHB-ES|Storm|XGE|1",
-				"Heart of the Storm|Hechicero|PHB-ES|Storm|XGE|6",
-				"Storm Guide|Hechicero|PHB-ES|Storm|XGE|6",
-				"Storm's Fury|Hechicero|PHB-ES|Storm|XGE|14",
-				"Wind Soul|Hechicero|PHB-ES|Storm|XGE|18"
+				"Storm Sorcery|Hechicero|PHB-ES|Tormenta|XGE-ES|1",
+				"Heart of the Storm|Hechicero|PHB-ES|Tormenta|XGE-ES|6",
+				"Storm Guide|Hechicero|PHB-ES|Tormenta|XGE-ES|6",
+				"Storm's Fury|Hechicero|PHB-ES|Tormenta|XGE-ES|14",
+				"Wind Soul|Hechicero|PHB-ES|Tormenta|XGE-ES|18"
 			]
 		},
 		{
-			"name": "Aberrant Mind",
-			"shortName": "Aberrant Mind",
+			"name": "Mente Aberrante",
+			"shortName": "Mente Aberrante",
 			"source": "TCE-ES",
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"page": 66,
+			"page": 61,
 			"additionalSpells": [
 				{
 					"known": {
@@ -1805,11 +1805,11 @@
 				}
 			],
 			"subclassFeatures": [
-				"Aberrant Mind|Hechicero|PHB-ES|Aberrant Mind|TCE|1",
-				"Psionic Sorcery|Hechicero|PHB-ES|Aberrant Mind|TCE|6",
-				"Psychic Defenses|Hechicero|PHB-ES|Aberrant Mind|TCE|6",
-				"Revelation in Flesh|Hechicero|PHB-ES|Aberrant Mind|TCE|14",
-				"Warping Implosion|Hechicero|PHB-ES|Aberrant Mind|TCE|18"
+				"Aberrant Mind|Hechicero|PHB-ES|Mente Aberrante|TCE-ES|1",
+				"Psionic Sorcery|Hechicero|PHB-ES|Mente Aberrante|TCE-ES|6",
+				"Psychic Defenses|Hechicero|PHB-ES|Mente Aberrante|TCE-ES|6",
+				"Revelation in Flesh|Hechicero|PHB-ES|Mente Aberrante|TCE-ES|14",
+				"Warping Implosion|Hechicero|PHB-ES|Mente Aberrante|TCE-ES|18"
 			],
 			"fluff": {
 				"images": [
@@ -1824,12 +1824,12 @@
 			}
 		},
 		{
-			"name": "Clockwork Soul",
-			"shortName": "Clockwork Soul",
+			"name": "Alma Mecánica",
+			"shortName": "Alma Mecánica",
 			"source": "TCE-ES",
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"page": 68,
+			"page": 60,
 			"additionalSpells": [
 				{
 					"known": {
@@ -1857,10 +1857,10 @@
 				}
 			],
 			"subclassFeatures": [
-				"Clockwork Soul|Hechicero|PHB-ES|Clockwork Soul|TCE|1",
-				"Bastion of Law|Hechicero|PHB-ES|Clockwork Soul|TCE|6",
-				"Trance of Order|Hechicero|PHB-ES|Clockwork Soul|TCE|14",
-				"Clockwork Cavalcade|Hechicero|PHB-ES|Clockwork Soul|TCE|18"
+				"Clockwork Soul|Hechicero|PHB-ES|Alma Mecánica|TCE-ES|1",
+				"Bastion of Law|Hechicero|PHB-ES|Alma Mecánica|TCE-ES|6",
+				"Trance of Order|Hechicero|PHB-ES|Alma Mecánica|TCE-ES|14",
+				"Clockwork Cavalcade|Hechicero|PHB-ES|Alma Mecánica|TCE-ES|18"
 			],
 			"fluff": {
 				"images": [
@@ -1875,7 +1875,7 @@
 			}
 		},
 		{
-			"name": "Lunar Sorcery",
+			"name": "Hechicería Lunar",
 			"shortName": "Lunar",
 			"source": "DSotDQ-ES",
 			"className": "Hechicero",
@@ -1944,11 +1944,11 @@
 				}
 			],
 			"subclassFeatures": [
-				"Lunar Sorcery|Hechicero|PHB-ES|Lunar|DSotDQ|1",
-				"Lunar Boons|Hechicero|PHB-ES|Lunar|DSotDQ|6",
-				"Waxing and Waning|Hechicero|PHB-ES|Lunar|DSotDQ|6",
-				"Lunar Empowerment|Hechicero|PHB-ES|Lunar|DSotDQ|14",
-				"Lunar Phenomenon|Hechicero|PHB-ES|Lunar|DSotDQ|18"
+				"Lunar Sorcery|Hechicero|PHB-ES|Lunar|DSotDQ-ES|1",
+				"Lunar Boons|Hechicero|PHB-ES|Lunar|DSotDQ-ES|6",
+				"Waxing and Waning|Hechicero|PHB-ES|Lunar|DSotDQ-ES|6",
+				"Lunar Empowerment|Hechicero|PHB-ES|Lunar|DSotDQ-ES|14",
+				"Lunar Phenomenon|Hechicero|PHB-ES|Lunar|DSotDQ-ES|18"
 			],
 			"fluff": {
 				"images": [
@@ -1971,18 +1971,18 @@
 			"srd": true,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Draconic",
+			"subclassShortName": "Dracónico",
 			"subclassSource": "PHB-ES",
 			"level": 1,
 			"entries": [
 				"Your innate magic comes from draconic magic that was mingled with your blood or that of your ancestors. Most often, sorcerers with this origin trace their descent back to a mighty sorcerer of ancient times who made a bargain with a dragon or who might even have claimed a dragon parent. Some of these bloodlines are well established in the world, but most are obscure. Any given sorcerer could be the first of a new bloodline, as a result of a pact or some other exceptional circumstance.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Dragon Ancestor|Hechicero|PHB-ES|Draconic||1"
+					"subclassFeature": "Dragon Ancestor|Hechicero|PHB-ES|Dracónico|PHB-ES|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Draconic Resilience|Hechicero|PHB-ES|Draconic||1"
+					"subclassFeature": "Draconic Resilience|Hechicero|PHB-ES|Dracónico|PHB-ES|1"
 				}
 			]
 		},
@@ -1993,7 +1993,7 @@
 			"srd": true,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Draconic",
+			"subclassShortName": "Dracónico",
 			"subclassSource": "PHB-ES",
 			"level": 1,
 			"header": 1,
@@ -2009,7 +2009,7 @@
 			"srd": true,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Draconic",
+			"subclassShortName": "Dracónico",
 			"subclassSource": "PHB-ES",
 			"level": 1,
 			"header": 1,
@@ -2079,7 +2079,7 @@
 			"srd": true,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Draconic",
+			"subclassShortName": "Dracónico",
 			"subclassSource": "PHB-ES",
 			"level": 6,
 			"header": 2,
@@ -2097,7 +2097,7 @@
 			"srd": true,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Draconic",
+			"subclassShortName": "Dracónico",
 			"subclassSource": "PHB-ES",
 			"level": 14,
 			"header": 2,
@@ -2113,7 +2113,7 @@
 			"srd": true,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Draconic",
+			"subclassShortName": "Dracónico",
 			"subclassSource": "PHB-ES",
 			"level": 18,
 			"header": 2,
@@ -2131,18 +2131,18 @@
 			"page": 103,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Wild",
+			"subclassShortName": "Salvaje",
 			"subclassSource": "PHB-ES",
 			"level": 1,
 			"entries": [
 				"Your innate magic comes from the wild forces of chaos that underlie the order of creation. You might have endured exposure to some form of raw magic, perhaps through a planar portal leading to Limbo, the Elemental Planes, or the mysterious Far Realm. Perhaps you were blessed by a powerful fey creature or marked by a demon. Or your magic could be a fluke of your birth, with no apparent cause or reason. However it came to be, this chaotic magic churns within you, waiting for any outlet.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Wild Magic Surge|Hechicero|PHB-ES|Wild||1"
+					"subclassFeature": "Wild Magic Surge|Hechicero|PHB-ES|Salvaje|PHB-ES|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Tides of Chaos|Hechicero|PHB-ES|Wild||1"
+					"subclassFeature": "Tides of Chaos|Hechicero|PHB-ES|Salvaje|PHB-ES|1"
 				}
 			]
 		},
@@ -2152,7 +2152,7 @@
 			"page": 103,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Wild",
+			"subclassShortName": "Salvaje",
 			"subclassSource": "PHB-ES",
 			"level": 1,
 			"header": 1,
@@ -2167,7 +2167,7 @@
 			"page": 103,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Wild",
+			"subclassShortName": "Salvaje",
 			"subclassSource": "PHB-ES",
 			"level": 1,
 			"header": 1,
@@ -2399,7 +2399,7 @@
 			"page": 103,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Wild",
+			"subclassShortName": "Salvaje",
 			"subclassSource": "PHB-ES",
 			"level": 6,
 			"header": 2,
@@ -2417,7 +2417,7 @@
 			"page": 103,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Wild",
+			"subclassShortName": "Salvaje",
 			"subclassSource": "PHB-ES",
 			"level": 14,
 			"header": 2,
@@ -2431,7 +2431,7 @@
 			"page": 103,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Wild",
+			"subclassShortName": "Salvaje",
 			"subclassSource": "PHB-ES",
 			"level": 18,
 			"header": 2,
@@ -2445,7 +2445,7 @@
 			"page": 66,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Aberrant Mind",
+			"subclassShortName": "Mente Aberrante",
 			"subclassSource": "TCE-ES",
 			"level": 1,
 			"entries": [
@@ -2491,11 +2491,11 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Psionic Spells|Hechicero|PHB-ES|Aberrant Mind|TCE|1"
+					"subclassFeature": "Psionic Spells|Hechicero|PHB-ES|Mente Aberrante|TCE-ES|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Telepathic Speech|Hechicero|PHB-ES|Aberrant Mind|TCE|1"
+					"subclassFeature": "Telepathic Speech|Hechicero|PHB-ES|Mente Aberrante|TCE-ES|1"
 				}
 			]
 		},
@@ -2505,7 +2505,7 @@
 			"page": 66,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Aberrant Mind",
+			"subclassShortName": "Mente Aberrante",
 			"subclassSource": "TCE-ES",
 			"level": 1,
 			"header": 1,
@@ -2555,7 +2555,7 @@
 			"page": 66,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Aberrant Mind",
+			"subclassShortName": "Mente Aberrante",
 			"subclassSource": "TCE-ES",
 			"level": 1,
 			"header": 1,
@@ -2571,7 +2571,7 @@
 			"page": 66,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Aberrant Mind",
+			"subclassShortName": "Mente Aberrante",
 			"subclassSource": "TCE-ES",
 			"level": 6,
 			"header": 2,
@@ -2587,7 +2587,7 @@
 			"page": 66,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Aberrant Mind",
+			"subclassShortName": "Mente Aberrante",
 			"subclassSource": "TCE-ES",
 			"level": 6,
 			"header": 2,
@@ -2602,7 +2602,7 @@
 			"page": 66,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Aberrant Mind",
+			"subclassShortName": "Mente Aberrante",
 			"subclassSource": "TCE-ES",
 			"level": 14,
 			"header": 2,
@@ -2626,7 +2626,7 @@
 			"page": 66,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Aberrant Mind",
+			"subclassShortName": "Mente Aberrante",
 			"subclassSource": "TCE-ES",
 			"level": 18,
 			"header": 2,
@@ -2642,18 +2642,18 @@
 			"page": 68,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Clockwork Soul",
+			"subclassShortName": "Alma Mecánica",
 			"subclassSource": "TCE-ES",
 			"level": 1,
 			"entries": [
 				"The cosmic force of order has suffused you with magic. That power arises from Mechanus or a realm like it-a plane of existence shaped entirely by clockwork efficiency. You, or someone from your lineage, might have become entangled in the machinations of the modrons, the orderly beings who inhabit Mechanus. Perhaps your ancestor even took part in the Great Modron March. Whatever its origin within you, the power of order can seem strange to others, but for you, it is part of a vast and glorious system.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Clockwork Magic|Hechicero|PHB-ES|Clockwork Soul|TCE|1"
+					"subclassFeature": "Clockwork Magic|Hechicero|PHB-ES|Alma Mecánica|TCE-ES|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Restore Balance|Hechicero|PHB-ES|Clockwork Soul|TCE|1"
+					"subclassFeature": "Restore Balance|Hechicero|PHB-ES|Alma Mecánica|TCE-ES|1"
 				}
 			]
 		},
@@ -2663,7 +2663,7 @@
 			"page": 68,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Clockwork Soul",
+			"subclassShortName": "Alma Mecánica",
 			"subclassSource": "TCE-ES",
 			"level": 1,
 			"header": 1,
@@ -2752,7 +2752,7 @@
 			"page": 68,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Clockwork Soul",
+			"subclassShortName": "Alma Mecánica",
 			"subclassSource": "TCE-ES",
 			"level": 1,
 			"header": 1,
@@ -2768,7 +2768,7 @@
 			"page": 68,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Clockwork Soul",
+			"subclassShortName": "Alma Mecánica",
 			"subclassSource": "TCE-ES",
 			"level": 6,
 			"header": 2,
@@ -2787,7 +2787,7 @@
 			"page": 68,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Clockwork Soul",
+			"subclassShortName": "Alma Mecánica",
 			"subclassSource": "TCE-ES",
 			"level": 14,
 			"header": 2,
@@ -2803,7 +2803,7 @@
 			"page": 68,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Clockwork Soul",
+			"subclassShortName": "Alma Mecánica",
 			"subclassSource": "TCE-ES",
 			"level": 18,
 			"header": 2,
@@ -2827,7 +2827,7 @@
 			"page": 50,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Divine Soul",
+			"subclassShortName": "Alma Divina",
 			"subclassSource": "XGE-ES",
 			"level": 1,
 			"entries": [
@@ -2837,11 +2837,11 @@
 				"In some cultures, only those who can claim the power of a Divine Soul may command religious power. In these lands, ecclesiastical positions are dominated by a few bloodlines and preserved over generations.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Divine Magic|Hechicero|PHB-ES|Divine Soul|XGE|1"
+					"subclassFeature": "Divine Magic|Hechicero|PHB-ES|Alma Divina|XGE-ES|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Favored by the Gods|Hechicero|PHB-ES|Divine Soul|XGE|1"
+					"subclassFeature": "Favored by the Gods|Hechicero|PHB-ES|Alma Divina|XGE-ES|1"
 				}
 			]
 		},
@@ -2851,7 +2851,7 @@
 			"page": 50,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Divine Soul",
+			"subclassShortName": "Alma Divina",
 			"subclassSource": "XGE-ES",
 			"level": 1,
 			"header": 1,
@@ -2899,7 +2899,7 @@
 			"page": 50,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Divine Soul",
+			"subclassShortName": "Alma Divina",
 			"subclassSource": "XGE-ES",
 			"level": 1,
 			"header": 1,
@@ -2913,7 +2913,7 @@
 			"page": 50,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Divine Soul",
+			"subclassShortName": "Alma Divina",
 			"subclassSource": "XGE-ES",
 			"level": 6,
 			"header": 2,
@@ -2930,7 +2930,7 @@
 			"page": 50,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Divine Soul",
+			"subclassShortName": "Alma Divina",
 			"subclassSource": "XGE-ES",
 			"level": 14,
 			"header": 2,
@@ -2945,7 +2945,7 @@
 			"page": 50,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Divine Soul",
+			"subclassShortName": "Alma Divina",
 			"subclassSource": "XGE-ES",
 			"level": 18,
 			"header": 2,
@@ -2960,7 +2960,7 @@
 			"page": 50,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Shadow",
+			"subclassShortName": "Sombras",
 			"subclassSource": "XGE-ES",
 			"level": 1,
 			"entries": [
@@ -3006,11 +3006,11 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Eyes of the Dark|Hechicero|PHB-ES|Shadow|XGE|1"
+					"subclassFeature": "Eyes of the Dark|Hechicero|PHB-ES|Sombras|XGE-ES|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Strength of the Grave|Hechicero|PHB-ES|Shadow|XGE|1"
+					"subclassFeature": "Strength of the Grave|Hechicero|PHB-ES|Sombras|XGE-ES|1"
 				}
 			]
 		},
@@ -3020,7 +3020,7 @@
 			"page": 50,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Shadow",
+			"subclassShortName": "Sombras",
 			"subclassSource": "XGE-ES",
 			"level": 1,
 			"header": 1,
@@ -3035,7 +3035,7 @@
 			"page": 50,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Shadow",
+			"subclassShortName": "Sombras",
 			"subclassSource": "XGE-ES",
 			"level": 1,
 			"header": 1,
@@ -3050,7 +3050,7 @@
 			"page": 50,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Shadow",
+			"subclassShortName": "Sombras",
 			"subclassSource": "XGE-ES",
 			"level": 6,
 			"header": 2,
@@ -3078,7 +3078,7 @@
 			"page": 50,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Shadow",
+			"subclassShortName": "Sombras",
 			"subclassSource": "XGE-ES",
 			"level": 14,
 			"header": 2,
@@ -3092,7 +3092,7 @@
 			"page": 50,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Shadow",
+			"subclassShortName": "Sombras",
 			"subclassSource": "XGE-ES",
 			"level": 18,
 			"header": 2,
@@ -3111,7 +3111,7 @@
 			"page": 51,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Storm",
+			"subclassShortName": "Tormenta",
 			"subclassSource": "XGE-ES",
 			"level": 1,
 			"entries": [
@@ -3119,11 +3119,11 @@
 				"Storm sorcerers are invaluable members of a ship's crew. Their magic allows them to exert control over wind and weather in their immediate area. Their abilities also prove useful in repelling attacks by sahuagin, pirates, and other waterborne threats.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Wind Speaker|Hechicero|PHB-ES|Storm|XGE|1"
+					"subclassFeature": "Wind Speaker|Hechicero|PHB-ES|Tormenta|XGE-ES|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Tempestuous Magic|Hechicero|PHB-ES|Storm|XGE|1"
+					"subclassFeature": "Tempestuous Magic|Hechicero|PHB-ES|Tormenta|XGE-ES|1"
 				}
 			]
 		},
@@ -3133,7 +3133,7 @@
 			"page": 51,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Storm",
+			"subclassShortName": "Tormenta",
 			"subclassSource": "XGE-ES",
 			"level": 1,
 			"header": 1,
@@ -3147,7 +3147,7 @@
 			"page": 51,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Storm",
+			"subclassShortName": "Tormenta",
 			"subclassSource": "XGE-ES",
 			"level": 1,
 			"header": 1,
@@ -3161,7 +3161,7 @@
 			"page": 51,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Storm",
+			"subclassShortName": "Tormenta",
 			"subclassSource": "XGE-ES",
 			"level": 6,
 			"header": 2,
@@ -3175,7 +3175,7 @@
 			"page": 51,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Storm",
+			"subclassShortName": "Tormenta",
 			"subclassSource": "XGE-ES",
 			"level": 6,
 			"header": 2,
@@ -3191,7 +3191,7 @@
 			"page": 51,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Storm",
+			"subclassShortName": "Tormenta",
 			"subclassSource": "XGE-ES",
 			"level": 14,
 			"header": 2,
@@ -3205,7 +3205,7 @@
 			"page": 51,
 			"className": "Hechicero",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Storm",
+			"subclassShortName": "Tormenta",
 			"subclassSource": "XGE-ES",
 			"level": 18,
 			"header": 2,
