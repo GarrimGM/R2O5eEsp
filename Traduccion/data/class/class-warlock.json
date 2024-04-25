@@ -1,9 +1,9 @@
 {
 	"class": [
 		{
-			"name": "Warlock",
+			"name": "Brujo",
 			"source": "PHB-ES",
-			"page": 105,
+			"page": 56,
 			"srd": true,
 			"hd": {
 				"number": 1,
@@ -75,9 +75,9 @@
 			},
 			"optionalfeatureProgression": [
 				{
-					"name": "Eldritch Invocations",
+					"name": "Invocaciones Sobrenaturales",
 					"featureType": [
-						"EI"
+						"EI_Esp"
 					],
 					"progression": [
 						0,
@@ -103,9 +103,9 @@
 					]
 				},
 				{
-					"name": "Pact Boon",
+					"name": "Beneficio del Pacto",
 					"featureType": [
-						"PB"
+						"PB_Esp"
 					],
 					"progression": {
 						"3": 1
@@ -139,17 +139,17 @@
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"default": [
-					"(a) a {@item light crossbow|phb} and {@item crossbow bolts (20)|phb|20 bolts} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
-					"(a) a {@item component pouch|phb} or (b) an {@item arcane focus|phb}",
-					"(a) a {@item scholar's pack|phb} or (b) a {@item dungeoneer's pack|phb}",
-					"{@item Leather armor|phb}, any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}, and two {@item dagger|phb|daggers}"
+					"(a) una {@item ballesta ligera|PHB-ES} y {@item Virotes de ballesta (20)|PHB-ES|20 virotes} o (b) cualquier {@filter arma sencilla|items|source=PHB-ES|category=basic|type=simple weapon}",
+					"(a) un {@item saquito de componentes|PHB-ES} o (b) un {@item canalizadores arcanos|PHB-ES|canalizador arcano}",
+					"(a) un {@item paquete de erudito|PHB-ES} o (b) un {@item paquete de explorador de mazmorras|PHB-ES}",
+					"{@item Armadura de cuero|PHB-ES}, cualquier {@filter arma sencilla|items|source=PHB-ES|category=basic|type=simple weapon} y dos {@item daga|PHB-ES|dagas}"
 				],
 				"goldAlternative": "{@dice 4d4 × 10|4d4 × 10|Starting Gold}",
 				"defaultData": [
 					{
 						"a": [
-							"light crossbow|phb",
-							"crossbow bolts (20)|phb"
+							"ballesta ligera|PHB-ES",
+							"virotes de ballesta (20)|PHB-ES"
 						],
 						"b": [
 							{
@@ -159,28 +159,28 @@
 					},
 					{
 						"a": [
-							"component pouch|phb"
+							"saquito de componentes|PHB-ES"
 						],
 						"b": [
-							"arcane focus|phb"
+							"canalizadores arcanos|PHB-ES"
 						]
 					},
 					{
 						"a": [
-							"scholar's pack|phb"
+							"paquete de erudito|PHB-ES"
 						],
 						"b": [
-							"dungeoneer's pack|phb"
+							"paquete de explorador de mazmorras|PHB-ES"
 						]
 					},
 					{
 						"_": [
-							"Leather armor|phb",
+							"Armadura de cuero|PHB-ES",
 							{
 								"equipmentType": "weaponSimple"
 							},
 							{
-								"item": "dagger|phb",
+								"item": "daga|PHB-ES",
 								"quantity": 2
 							}
 						]
@@ -203,236 +203,235 @@
 			"classTableGroups": [
 				{
 					"colLabels": [
-						"{@filter Cantrips Known|spells|level=0|class=Warlock}",
-						"{@filter Spells Known|spells|class=Warlock}",
-						"Spell Slots",
-						"Slot Level",
-						"{@filter Invocations Known|optionalfeatures|feature type=ei}"
+						"{@filter Trucos conocidos|spells|level=0|class=Brujo (PHB-ES)}",
+						"{@filter Conjuros conocidos|spells|class=Brujo (PHB-ES)}",
+						"Espacios de conjuro",
+						"Nivel de los espacios",
+						"{@filter Invocaciones conocidas|optionalfeatures|feature type=EI_Esp}"
 					],
 					"rows": [
 						[
 							2,
 							2,
 							1,
-							"{@filter 1st|spells|level=1|class=Warlock}",
+							"{@filter 1|spells|level=1|class=Brujo (PHB-ES)}",
 							0
 						],
 						[
 							2,
 							3,
 							2,
-							"{@filter 1st|spells|level=1|class=Warlock}",
+							"{@filter 1|spells|level=1|class=Brujo (PHB-ES)}",
 							2
 						],
 						[
 							2,
 							4,
 							2,
-							"{@filter 2nd|spells|level=2|class=Warlock}",
+							"{@filter 2|spells|level=2|class=Brujo (PHB-ES)}",
 							2
 						],
 						[
 							3,
 							5,
 							2,
-							"{@filter 2nd|spells|level=2|class=Warlock}",
+							"{@filter 2|spells|level=2|class=Brujo (PHB-ES)}",
 							2
 						],
 						[
 							3,
 							6,
 							2,
-							"{@filter 3rd|spells|level=3|class=Warlock}",
+							"{@filter 3|spells|level=3|class=Brujo (PHB-ES)}",
 							3
 						],
 						[
 							3,
 							7,
 							2,
-							"{@filter 3rd|spells|level=3|class=Warlock}",
+							"{@filter 3|spells|level=3|class=Brujo (PHB-ES)}",
 							3
 						],
 						[
 							3,
 							8,
 							2,
-							"{@filter 4th|spells|level=4|class=Warlock}",
+							"{@filter 4|spells|level=4|class=Brujo (PHB-ES)}",
 							4
 						],
 						[
 							3,
 							9,
 							2,
-							"{@filter 4th|spells|level=4|class=Warlock}",
+							"{@filter 4|spells|level=4|class=Brujo (PHB-ES)}",
 							4
 						],
 						[
 							3,
 							10,
 							2,
-							"{@filter 5th|spells|level=5|class=Warlock}",
+							"{@filter 5|spells|level=5|class=Brujo (PHB-ES)}",
 							5
 						],
 						[
 							4,
 							10,
 							2,
-							"{@filter 5th|spells|level=5|class=Warlock}",
+							"{@filter 5|spells|level=5|class=Brujo (PHB-ES)}",
 							5
 						],
 						[
 							4,
 							11,
 							3,
-							"{@filter 5th|spells|level=5|class=Warlock}",
+							"{@filter 5|spells|level=5|class=Brujo (PHB-ES)}",
 							5
 						],
 						[
 							4,
 							11,
 							3,
-							"{@filter 5th|spells|level=5|class=Warlock}",
+							"{@filter 5|spells|level=5|class=Brujo (PHB-ES)}",
 							6
 						],
 						[
 							4,
 							12,
 							3,
-							"{@filter 5th|spells|level=5|class=Warlock}",
+							"{@filter 5|spells|level=5|class=Brujo (PHB-ES)}",
 							6
 						],
 						[
 							4,
 							12,
 							3,
-							"{@filter 5th|spells|level=5|class=Warlock}",
+							"{@filter 5|spells|level=5|class=Brujo (PHB-ES)}",
 							6
 						],
 						[
 							4,
 							13,
 							3,
-							"{@filter 5th|spells|level=5|class=Warlock}",
+							"{@filter 5|spells|level=5|class=Brujo (PHB-ES)}",
 							7
 						],
 						[
 							4,
 							13,
 							3,
-							"{@filter 5th|spells|level=5|class=Warlock}",
+							"{@filter 5|spells|level=5|class=Brujo (PHB-ES)}",
 							7
 						],
 						[
 							4,
 							14,
 							4,
-							"{@filter 5th|spells|level=5|class=Warlock}",
+							"{@filter 5|spells|level=5|class=Brujo (PHB-ES)}",
 							7
 						],
 						[
 							4,
 							14,
 							4,
-							"{@filter 5th|spells|level=5|class=Warlock}",
+							"{@filter 5|spells|level=5|class=Brujo (PHB-ES)}",
 							8
 						],
 						[
 							4,
 							15,
 							4,
-							"{@filter 5th|spells|level=5|class=Warlock}",
+							"{@filter 5|spells|level=5|class=Brujo (PHB-ES)}",
 							8
 						],
 						[
 							4,
 							15,
 							4,
-							"{@filter 5th|spells|level=5|class=Warlock}",
+							"{@filter 5|spells|level=5|class=Brujo (PHB-ES)}",
 							8
 						]
 					]
 				}
 			],
 			"classFeatures": [
-				"Pact Magic|Warlock||1",
+				"Magia del Pacto|Brujo|PHB-ES|1",
 				{
-					"classFeature": "Otherworldly Patron|Warlock||1",
+					"classFeature": "Patrón Sobrenatural|Brujo|PHB-ES|1",
 					"gainSubclassFeature": true
 				},
-				"Eldritch Invocations|Warlock||2",
-				"Pact Boon|Warlock||3",
-				"Ability Score Improvement|Warlock||4",
-				"Eldritch Versatility|Warlock||4|TCE",
+				"Invocaciones Sobrenaturales|Brujo|PHB-ES|2",
+				"Beneficio del Pacto|Brujo|PHB-ES|3",
+				"Mejora de Característica|Brujo|PHB-ES|4",
+				"Versatilidad Sobrenatural|Brujo|PHB-ES|4|TCE-ES",
 				{
-					"classFeature": "Otherworldly Patron feature|Warlock||6",
+					"classFeature": "Rasgo de Patrón Sobrenatural|Brujo|PHB-ES|6",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Warlock||8",
+				"Mejora de Característica|Brujo|PHB-ES|8",
 				{
-					"classFeature": "Otherworldly Patron feature|Warlock||10",
+					"classFeature": "Rasgo de Patrón Sobrenatural|Brujo|PHB-ES|10",
 					"gainSubclassFeature": true
 				},
-				"Mystic Arcanum (6th level)|Warlock||11",
-				"Ability Score Improvement|Warlock||12",
-				"Mystic Arcanum (7th level)|Warlock||13",
+				"Arcanum Místico (nivel 6)|Brujo|PHB-ES|11",
+				"Mejora de Característica|Brujo|PHB-ES|12",
+				"Arcanum Místico (nivel 7)|Brujo|PHB-ES|13",
 				{
-					"classFeature": "Otherworldly Patron feature|Warlock||14",
+					"classFeature": "Rasgo de Patrón Sobrenatural|Brujo|PHB-ES|14",
 					"gainSubclassFeature": true
 				},
-				"Mystic Arcanum (8th level)|Warlock||15",
-				"Ability Score Improvement|Warlock||16",
-				"Mystic Arcanum (9th level)|Warlock||17",
-				"Ability Score Improvement|Warlock||19",
-				"Eldritch Master|Warlock||20"
+				"Arcanum Místico (nivel 8)|Brujo|PHB-ES|15",
+				"Mejora de Característica|Brujo|PHB-ES|16",
+				"Arcanum Místico (nivel 9)|Brujo|PHB-ES|17",
+				"Mejora de Característica|Brujo|PHB-ES|19",
+				"Maestro Sobrenatural|Brujo|PHB-ES|20"
 			],
-			"subclassTitle": "Otherworldly Patron",
+			"subclassTitle": "Patrón sobrenatural",
 			"fluff": {
 				"entries": [
 					{
-						"name": "Warlock",
+						"name": "Brujo",
 						"type": "section",
 						"entries": [
-							"With a pseudodragon curled on his shoulder, a young elf in golden robes smiles warmly, weaving a magical charm into his honeyed words and bending the palace sentinel to his will.",
-							"As flames spring to life in her hands, a wizened human whispers the secret name of her demonic patron, infusing her spell with fiendish magic.",
-							"Shifting his gaze between a battered tome and the odd alignment of the stars overhead, a wild-eyed tiefling chants the mystic ritual that will open a doorway to a distant world.",
-							"Warlocks are seekers of the knowledge that lies hidden in the fabric of the multiverse. Through pacts made with mysterious beings of supernatural power, warlocks unlock magical effects both subtle and spectacular. Drawing on the ancient knowledge of beings such as fey nobles, demons, devils, hags, and alien entities of the Far Realm, warlocks piece together arcane secrets to bolster their own power.",
+							"Envuelto en una túnica dorada y con su pseudodragón enroscado en torno al hombro, un joven elfo sonríe con calidez, tejiendo un encantamiento mágico en sus melifluas palabras y doblegando a los centinelas de palacio a su voluntad.",
+							"Mientras las llamas cobran vida en sus manos, una marchita humana susurra el nombre secreto de su patrón demoníaco, que como respuesta llena el conjuro de magia infernal.",
+							"Un tiefling de ojos salvajes levanta la vista de un maltratado tomo para observar el extraño alineamiento estelar que brilla en el ciclo. Sus labios pronuncian las salmodias de un ritual místico, que abrirá un portal a un mundo remoto.",
+							"Los brujos buscan el conocimiento que yace escondido tras el tejido mismo del multiverso. A través de pactos forjados con misteriosos seres de poder sobrenatural, desvelan efectos mágicos sutiles y espectaculares a partes iguales. A partir del conocimiento ancestral poseído por entidades como nobles feéricos, demonios, diablos, sagas o los extraños seres del Reino Lejano, los brujos descubren secretos arcanos que refuerzan sus propios poderes.",
 							{
 								"type": "entries",
-								"name": "Sworn and Beholden",
+								"name": "Atados por un pacto",
 								"entries": [
-									"A warlock is defined by a pact with an otherworldly being. Sometimes the relationship between warlock and patron is like that of a cleric and a deity, though the beings that serve as patrons for warlocks are not gods. A warlock might lead a cult dedicated to a demon prince, an archdevil, or an utterly alien entity—beings not typically served by clerics. More often, though, the arrangement is similar to that between a master and an apprentice. The warlock learns and grows in power, at the cost of occasional services performed on the patron's behalf.",
-									"The magic bestowed on a warlock ranges from minor but lasting alterations to the warlock's being (such as the ability to see in darkness or to read any language) to access to powerful spells. Unlike bookish wizards, warlocks supplement their magic with some facility at hand-to-hand combat. They are comfortable in light armor and know how to use simple weapons."
+									"Cada brujo se define por el pacto que ha forjado con un ser sobrenatural. A veces la relación entre un brujo y su patrón es similar a la de un clérigo con su deidad, aunque las entidades con las que los brujos pactan no son dioses. Un brujo podría liderar una secta dedicada a un príncipe demonio, un archidiablo o un ente fuera de la comprensión humana; todos ellos ejemplos de amos a los que los clérigos no suelen servir. De hecho, en la mayoría de los casos la relación es más asimilable a la de un maestro y su aprendiz. El brujo aprende y desarrolla sus poderes y, a cambio, hace servicios puntuales en nombre de su patrón.",
+									"La magia conferida a un brujo puede manifestarse en forma de pequeñas alteraciones sobre el propio brujo (como la facultad para ver en la oscuridad o leer cualquier idioma) o en la capacidad para acceder a conjuros poderosos. A diferencia de los estudiosos magos, los brujos complementan su magia con cierta aptitud para el combate cuerpo a cuerpo. Se encuentran cómodos con armaduras ligeras y saben utilizar armas sencillas."
 								]
 							},
 							{
 								"type": "entries",
-								"name": "Delvers into Secrets",
+								"name": "Exploradores de secretos",
 								"entries": [
-									"Warlocks are driven by an insatiable need for knowledge and power, which compels them into their pacts and shapes their lives. This thirst drives warlocks into their pacts and shapes their later careers as well.",
-									"Stories of warlocks binding themselves to fiends are widely known. But many warlocks serve patrons that are not fiendish. Sometimes a traveler in the wilds comes to a strangely beautiful tower, meets its fey lord or lady, and stumbles into a pact without being fully aware of it. And sometimes, while poring over tomes of forbidden lore, a brilliant but crazed student's mind is opened to realities beyond the material world and to the alien beings that dwell in the outer void.",
-									"Once a pact is made, a warlock's thirst for knowledge and power can't be slaked with mere study and research. No one makes a pact with such a mighty patron if he or she doesn't intend to use the power thus gained. Rather, the vast majority of warlocks spend their days in active pursuit of their goals, which typically means some kind of adventuring. Furthermore, the demands of their patrons drive warlocks toward adventure."
+									"Los brujos están movidos por un insaciable deseo de conocimiento y poder, que les insta a forjar sus pactos y marca sus vidas. Es un ansia que acaba determinando su destino.",
+									"Existen abundantes historias sobre brujos que se atan a infernales, pero también los hay que sirven a otro tipo de patrones. Cabe la posibilidad de que un viajero se encuentre, en medio de la naturaleza, una torre extrañamente hermosa, conozca al señor (o señora) feérico que la habita y cierre un pacto con él sin ser totalmente consciente de lo que ha hecho. Y a veces, mientras estudia detenidamente tomos de conocimiento prohibido, la brillante pero enloquecida mente de un estudiante se abre a realidades más allá del mundo material y a las entidades alienígenas que habitan en el vacío exterior.",
+									"Una vez cerrado un pacto, el ansia por el conocimiento y poder de un brujo no puede ser saciada únicamente por el estudio y la investigación. Nadie forja un acuerdo con un patrón de tamaño poderío si no planea dar uso a los regalos recibidos. Es más, la mayoría de los brujos pasan los días persiguiendo activamente sus objetivos, lo que suele implicar partir de aventuras. De hecho, suelen ser las demandas de sus patrones lo que muchas veces les empuja a convertirse en aventureros."
 								]
 							},
 							{
 								"type": "entries",
-								"name": "Creating a Warlock",
+								"name": "Creación de un brujo",
 								"entries": [
-									"As you make your warlock character, spend some time thinking about your patron and the obligations that your pact imposes upon you. What led you to make the pact, and how did you make contact with your patron? Were you seduced into summoning a devil, or did you seek out the ritual that would allow you to make contact with an alien elder god? Did you search for your patron, or did your patron find and choose you? Do you chafe under the obligations of your pact or serve joyfully in anticipation of the rewards promised to you?",
-									"Work with your DM to determine how big a part your pact will play in your character's adventuring career. Your patron's demands might drive you into adventures, or they might consist entirely of small favors you can do between adventures.",
-									"What kind of relationship do you have with your patron? Is it friendly, antagonistic, uneasy, or romantic? How important does your patron consider you to be? What part do you play in your patron's plans? Do you know other servants of your patron?",
-									"How does your patron communicate with you? If you have a familiar, it might occasionally speak with your patron's voice. Some warlocks find messages from their patrons etched on trees, mingled among tea leaves, or adrift in the clouds—messages that only the warlock can see. Other warlocks converse with their patrons in dreams or waking visions, or deal only with intermediaries.",
+									"Cuando crees tú brujo, dedica un tiempo a pensar en tu patrón y las obligaciones que tu pacto te impone. ¿Qué te llevo a forjar el pacto? ¿Como contactaste con tu patrón? Quizá fuiste tentado para invocar un diablo, o buscaste tú mismo el ritual que te permitió contactar con una antigua deidad alienígena. ¿Buscaste tú a tu patrón o te encontró y escogió él a ti? ¿Te irritan las responsabilidades de tu pacto o sirves a tu señor con alegría, esperando con impaciencia las recompensas prometidas?",
+									"Habla con tu DM para decidir hasta qué punto el pacto desempeñará un papel en la carrera como aventurero de tu personaje. Las demandas de tu patrón podrían conducirte a aventuras o, por el contrario, limitarse a pequeños favores que puedes realizar entre ellas.",
+									"¿Qué tipo de relación mantienes con tu patrón? Puede ser amistosa, antagónica, incomoda o incluso romántica. ¿Cuán importante es para ti tu patrón, ¿qué papel juegas en sus planes?, ¿conoces a algún otro de sus siervos?, ¿cómo se comunica contigo? Si posees un familiar, tu patrón podría hablar a través de sus labios de vez en cuando. Algunos brujos encuentran mensajes de sus patrones grabados en los árboles, entre los posos del té o dibujados por las nubes; misivas que solo el propio brujo puede percibir. Otros patrones conversan con sus siervos a través de sueños o visiones, y los hay que incluso se limitan a interactuar mediante intermediarios.",
 									{
 										"type": "entries",
-										"name": "Quick Build",
+										"name": "Creación rápida",
 										"entries": [
-											"You can make a warlock quickly by following these suggestions. First, Charisma should be your highest ability score, followed by Constitution. Second, choose the {@background charlatan} background. Third, choose the {@spell eldritch blast} and {@spell chill touch} cantrips, along with the 1st-level spells {@spell charm person} and {@spell witch bolt}."
+											"Para crear un brujo de forma rápida sugerimos lo siguiente. Para empezar, Carisma debería ser tu característica más alta, seguida de Constitución. A continuación, elige el trasfondo \"{@background charlatán|PHB-ES}\". Después, escoge los trucos {@spell descarga sobrenatural|PHB-ES} y {@spell toque helado|PHB-ES} y los siguientes conjuros de nivel 1: {@spell hechizar persona|PHB-ES} y {@spell rayo de hechicería|PHB-ES}."
 										]
 									}
 								]
 							}
 						],
-						"page": 105,
-						"source": "PHB"
+						"page": 56,
+						"source": "PHB-ES"
 					},
 					{
 						"type": "section",
@@ -440,25 +439,25 @@
 							{
 								"type": "quote",
 								"entries": [
-									"You think me mad? I think true insanity is being content to live a life of mortal drudgery when knowledge and power is there for the taking in the realm beyond."
+									"¿Crees que estoy loco? La verdadera locura es conformarse con vivir una vida mortal de monotonía y aburrimiento cuando el poder y el conocimiento están a tu alcance en el reino del más allá."
 								],
-								"by": "Xarren, herald of Acamar"
+								"by": "Xarren, heraldo de Acamar"
 							},
-							"Warlocks are finders and keepers of secrets. They push at the edge of our understanding of the world, always seeking to expand their expertise. Where sages or wizards might heed a clear sign of danger and end their research, a warlock plunges ahead, heedless of the cost. Thus, it takes a peculiar mixture of intelligence, curiosity, and recklessness to produce a warlock. Many folk would describe that combination as evidence of madness. Warlocks see it as a demonstration of bravery.",
-							"Warlocks are defined by two elements that work in concert to forge their path into this class. The first element is the event or circumstances that led to a warlock's entering into a pact with a planar entity. The second one is the nature of the entity a warlock is bound to. Unlike clerics, who typically embrace a deity and that god's ethos, a warlock might have no love for a patron, or vice versa.",
-							"The sections that follow provide ways to embellish a warlock character that could generate some intriguing story and roleplaying opportunities.",
+							"Los brujos encuentran y guardan secretos. Amplían los horizontes de nuestro conocimiento del mundo, siempre en búsqueda de expandir su habilidad. Allí donde un sabio o un mago hará caso de un obvio signo de peligro y dará por terminada su investigación, un brujo se lanzará hacia delante, sin importar el coste. Es por tanto necesario contar con una mezcla particular de inteligencia, curiosidad e insensatez para poder convertirse en un miembro de esta clase. Muchos dirían que esa combinación es una prueba de su locura, pero para un brujo es una prueba de su valentía.",
+							"Los brujos siempre están definidos por dos elementos, que trabajan conjuntamente para forjar su camino dentro de esta clase. El primero es el evento o circunstancia que llevó a que el individuo forjara un pacto con una entidad planar. La segunda es la naturaleza de este patrón con el que el brujo queda vinculado. A diferencia de un clérigo. que normalmente adopta la ética y principios de una deidad, un brujo no tiene por qué sentir nada por su patrón, ni viceversa.",
+							"Los siguientes apartados proporcionan maneras de enriquecer a un personaje brujo, creando interesantes oportunidades narrativas y de interpretación.",
 							{
 								"type": "entries",
-								"name": "Patron's Attitude",
+								"name": "Actitud del patrón",
 								"entries": [
-									"Every relationship is a two-way street, but in the case of warlocks and their patrons it's not necessarily true that both sides of the street are the same width or made of the same stuff. The feeling that a warlock holds for their patron, whether positive or negative, might be reciprocated by the patron, or the two participants in the pact might view one another with opposing emotions.",
-									"When you determine the attitude your warlock character holds toward your patron, also consider how things look from the patron's perspective. How does your patron behave toward you? Is your patron a friend and ally, or an enemy that grants you power only because you forced a pact upon it?",
+									"Toda relación es un camino de doble sentido, pero en el caso de los brujos y sus patrones no es necesariamente cierto que ambos lados del camino sean del mismo ancho o estén hechos del mismo material. Los sentimientos que un brujo tenga hacia su patrón, ya sean positivos o negativos, pueden ser recíprocos o contrarios desde el punto de vista de la otra parte.",
+									"Cuando determines la actitud que tu personaje brujo mantiene respecto a su patrón, considera también el punto de vista de este. ¿Cómo se comporta tu patrón contigo? ¿Es tu patrón un amigo o aliado o, por el contrario, un enemigo que te otorga poder porque le forzaste a aceptar un pacto?",
 									{
 										"type": "table",
-										"caption": "Patron Attitudes",
+										"caption": "Actitudes del patrón",
 										"colLabels": [
 											"{@dice d6}",
-											"Attitude"
+											"Actitud"
 										],
 										"colStyles": [
 											"col-1 text-center",
@@ -472,7 +471,7 @@
 														"exact": 1
 													}
 												},
-												"Your patron has guided and helped your family for generations and is kindly toward you."
+												"Tu patrón ha guiado y ayudado a tu familia durante generaciones, por lo que es amable contigo."
 											],
 											[
 												{
@@ -481,7 +480,7 @@
 														"exact": 2
 													}
 												},
-												"Each interaction with your capricious patron is a surprise, whether pleasant or painful."
+												"Cualquier interacción con tu caprichoso patrón es una sorpresa, agradable o dolorosa."
 											],
 											[
 												{
@@ -490,7 +489,7 @@
 														"exact": 3
 													}
 												},
-												"Your patron is the spirit of a long-dead hero who sees your pact as a way for it to continue to influence the world."
+												"Tu patrón es el espíritu de un héroe muerto hace tiempo, que ve su pacto contigo como una manera de continuar su influencia en el mundo."
 											],
 											[
 												{
@@ -499,7 +498,7 @@
 														"exact": 4
 													}
 												},
-												"Your patron is a strict disciplinarian but treats you with a measure of respect."
+												"Tu patrón es de disciplina rígida, pero te trata con cierto respeto."
 											],
 											[
 												{
@@ -508,7 +507,7 @@
 														"exact": 5
 													}
 												},
-												"Your patron tricked you into a pact and treats you as a slave."
+												"Tu patrón te engañó para aceptar el pacto y te trata como a un esclavo."
 											],
 											[
 												{
@@ -517,7 +516,7 @@
 														"exact": 6
 													}
 												},
-												"You are mostly left to your own devices with no interference from your patron. Sometimes you dread the demands it will make when it does appear."
+												"Tu patrón te deja a tu aire, sin interferencia. A veces temes las peticiones que hará cuando aparezca."
 											]
 										]
 									}
@@ -525,16 +524,16 @@
 							},
 							{
 								"type": "entries",
-								"name": "Special Terms of the Pact",
+								"name": "Términos especiales del pacto",
 								"entries": [
-									"A pact can range from a loose agreement to a formal contract with lengthy, detailed clauses and lists of requirements. The terms of a pact—what a warlock must do to receive a patron's favor—are always dictated by the patron. On occasion, those terms include a special proviso that might seem odd or whimsical, but warlocks take these dictates as seriously as they do the other requirements of their pacts.",
-									"Does your character have a pact that requires you to change your behavior in an unusual or seemingly frivolous way? Even if your patron hasn't imposed such a duty on you already, that's not to say it couldn't still happen.",
+									"Un pacto puede ser desde un acuerdo de términos imprecisos hasta un contrato formal con largas y detalladas cláusulas y listas de requisitos. Sus términos (lo que el brujo debe hacer para recibir el favor de la entidad sobrenatural) son siempre dictados por el patrón. En ocasiones, incluyen disposiciones especiales que pueden parecer caprichosas o extrañas, pero los brujos se las toman tan en serio como el resto de requisitos de sus pactos.",
+									"¿Tiene tu personaje un acuerdo que le obliga a cambiar de comportamiento de una manera inusual o aparentemente frívola? Incluso si tu patrón aún no te ha impuesto una de estas obligaciones, eso no quiere decir que no vaya a pasar.",
 									{
 										"type": "table",
-										"caption": "Special Terms",
+										"caption": "Términos especiales",
 										"colLabels": [
 											"{@dice d6}",
-											"Term"
+											"Término"
 										],
 										"colStyles": [
 											"col-1 text-center",
@@ -548,7 +547,7 @@
 														"exact": 1
 													}
 												},
-												"When directed, you must take immediate action against a specific enemy of your patron."
+												"Cuando se te indique, debes tomar acciones inmediatas contra un enemigo específico de tu patrón."
 											],
 											[
 												{
@@ -557,7 +556,7 @@
 														"exact": 2
 													}
 												},
-												"Your pact tests your willpower; you are required to abstain from alcohol and other intoxicants."
+												"Tu pacto pone a prueba tu fuerza de voluntad: estás obligado a no tomar alcohol ni estupefacientes."
 											],
 											[
 												{
@@ -566,7 +565,7 @@
 														"exact": 3
 													}
 												},
-												"At least once a day, you must inscribe or carve your patron's name or symbol on the wall of a building."
+												"Por lo menos una vez al día has de inscribir o grabar el símbolo o nombre de tu patrón en el muro de un edificio."
 											],
 											[
 												{
@@ -575,7 +574,7 @@
 														"exact": 4
 													}
 												},
-												"You must occasionally conduct bizarre rituals to maintain your pact."
+												"De vez en cuando debes llevar a cabo extravagantes rituales para mantener tu pacto."
 											],
 											[
 												{
@@ -584,7 +583,7 @@
 														"exact": 5
 													}
 												},
-												"You can never wear the same outfit twice, since your patron finds such predictability to be boring."
+												"Nunca puedes repetir tu atuendo, ya que tu patrón considera que ser predecible es ser aburrido."
 											],
 											[
 												{
@@ -593,7 +592,7 @@
 														"exact": 6
 													}
 												},
-												"When you use an eldritch invocation, you must speak your patron's name aloud or risk incurring its displeasure."
+												"Cuando utilizas una invocación sobrenatural, has de decir el nombre de tu patrón en voz alta o arriesgarte a atraer su ira."
 											]
 										]
 									}
@@ -601,16 +600,16 @@
 							},
 							{
 								"type": "entries",
-								"name": "Binding Mark",
+								"name": "Marca vinculante",
 								"entries": [
-									"Some patrons make a habit of, and often enjoy, marking the warlocks under their sway in some fashion. A binding mark makes it clear—to those who know about such things—that the individual in question is bound to the patron's service. A warlock might take advantage of such a mark, claiming it as proof of one's pact, or might want to keep it under wraps (if possible) to avoid the difficulties it might bring.",
-									"If your warlock's pact comes with a binding mark, how you feel about displaying it probably depends on the nature of your relationship with the one who gave it to you. Is the mark a source of pride or something you are secretly ashamed of?",
+									"Algunos patrones tienen como hábito marcar de algún modo a los brujos que están bajo su influencia. Una marca vinculante deja claro (para aquellos que saben de ello), que el individuo en cuestión está bajo patronazgo. Este puede querer aprovecharse de esa marca, usándola como prueba del pacto, o preferir ocultarla (si es posible) para evitar las dificultades que pueda traer.",
+									"Si tu pacto de brujo tiene una marca vinculante, cómo te sientes acerca de mostrarla depende de la naturaleza de tu relación con quien te la dio. ¿Es esta marca un motivo de orgullo o algo de lo que te avergüenzas en secreto?",
 									{
 										"type": "table",
-										"caption": "Binding Marks",
+										"caption": "Marcas vinculantes",
 										"colLabels": [
 											"d6",
-											"Mark"
+											"Marca"
 										],
 										"colStyles": [
 											"col-1 text-center",
@@ -618,36 +617,36 @@
 										],
 										"rows": [
 											[
-												"1",
-												"One of your eyes looks the same as one of your patron's eyes."
+											"1",
+											"Uno de tus ojos tiene el mismo aspecto que el de tu patrón."
 											],
 											[
 												"2",
-												"Each time you wake up, the small blemish on your face appears in a different place."
+												"Cada vez que te levantas, la pequeña marca de tu cara aparece en un sitio distinto."
 											],
 											[
 												"3",
-												"You display outward symptoms of a disease but suffer no ill effects from it."
+												"Muestras los síntomas de una enfermedad, pero no sufres los efectos negativos."
 											],
 											[
 												"4",
-												"Your tongue is an unnatural color."
+												"Tu lengua es de un color antinatural."
 											],
 											[
 												"5",
-												"You have a vestigial tail."
+												"Tienes una cola vestigial."
 											],
 											[
 												"6",
-												"Your nose glows in the dark."
+												"Tu nariz brilla en la oscuridad."
 											]
 										]
 									}
 								]
 							}
 						],
-						"page": 53,
-						"source": "XGE"
+						"page": 17,
+						"source": "XGE-ES"
 					}
 				],
 				"images": [
@@ -664,56 +663,57 @@
 	],
 	"classFeature": [
 		{
-			"name": "Otherworldly Patron",
+			"name": "Patrón Sobrenatural",
 			"source": "PHB-ES",
-			"page": 105,
+			"page": 57,
 			"srd": true,
-			"className": "Warlock",
+			"className": "Brujo",
 			"classSource": "PHB-ES",
 			"level": 1,
 			"entries": [
-				"At 1st level, you have struck a bargain with an otherworldly being chosen from the list of available patrons. Your choice grants you features at 1st level and again at 6th, 10th, and 14th level."
+				"A nivel 1 has acordado un trato con un ser sobrenatural de tu elección: el Señor Feérico, el Infernal o el Primigenio. Todos ellos están detallados al final de la descripción de esta clase. Esta elección te proporciona ciertos rasgos cuando alcanzas los niveles 1, 6, 10 y 14."
 			]
 		},
 		{
-			"name": "Pact Magic",
+			"name": "Magia del Pacto",
 			"source": "PHB-ES",
-			"page": 105,
+			"page": 57,
 			"srd": true,
-			"className": "Warlock",
+			"className": "Brujo",
 			"classSource": "PHB-ES",
 			"level": 1,
 			"entries": [
-				"Your arcane research and the magic bestowed on you by your patron have given you facility with spells. See {@book chapter 10|PHB|10} for the general rules of spellcasting and {@book chapter 11|PHB|11} for the {@filter warlock spell list|spells|class=warlock}.",
+				"Tus investigaciones en lo arcano y la magia que te ha sido concedida por tu patrón te han dotado de cierta habilidad con los conjuros. El {@book capítulo 10|PHB-ES|10} contiene las reglas de lanzamiento de conjuros y el {@book capítulo 11|PHB-ES|11} la {@filter lista de conjuros de brujo|spells|class=Brujo (PHB-ES)}.",
 				{
 					"type": "entries",
-					"name": "Cantrips",
+					"name": "Trucos",
 					"entries": [
-						"You know two cantrips of your choice from the warlock spell list. You learn additional warlock cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Warlock table."
+						"Conoces dos trucos de tu elección escogidos de entre los de la lista de conjuros de brujo. Podrás elegir más trucos de brujo cuando llegues a niveles más altos, como se indica en la columna \"trucos conocidos\" de la tabla del brujo."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Spell Slots",
+					"name": "Espacios de conjuro",
 					"entries": [
-						"The Warlock table shows how many spell slots you have to cast your {@filter warlock spells|spells|class=warlock} of 1st through 5th level. The table also shows what the level of those slots is; all of your spell slots are the same level. To cast one of your warlock spells of 1st level or higher, you must expend a spell slot. You regain all expended spell slots when you finish a short or long rest.",
-						"For example, when you are 5th level, you have two 3rd-level spell slots. To cast the 1st-level spell {@spell witch bolt}, you must spend one of those slots, and you cast it as a 3rd-level spell."
+						"La tabla del brujo muestra de cuántos espacios de conjuro dispones.",
+						"Esta tabla también te indica de qué nivel son dichos espacios. Todos tus espacios son del mismo nivel. Para lanzar uno de tus {@filter conjuros de brujo|spells|class=Brujo (PHB-ES)} de nivel 1 o superiores deberás gastar un espacio de conjuro. Recuperas todos los espacios utilizados tras finalizar un descanso corto o largo.",
+						"Así, si eres un brujo de nivel 5, dispondrás de dos espacios de conjuro de nivel 3. Para lanzar el conjuro de nivel 1 {@spell rayo de hechicería|PHB-ES} deberás invertir uno de estos espacios, y lo lanzarás como un conjuro de nivel 3."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Spells Known of 1st Level and Higher",
+					"name": "Conjuros conocidos de nivel 1 y superiores",
 					"entries": [
-						"At 1st level, you know two 1st-level spells of your choice from the warlock spell list.",
-						"The Spells Known column of the Warlock table shows when you learn more warlock spells of your choice of 1st level and higher. A spell you choose must be of a level no higher than what's shown in the table's Slot Level column for your level. When you reach 6th level, for example, you learn a new warlock spell, which can be 1st, 2nd, or 3rd level.",
-						"Additionally, when you gain a level in this class, you can choose one of the warlock spells you know and replace it with another spell from the warlock spell list, which also must be of a level for which you have spell slots."
+						"A nivel 1 conoces dos conjuros de nivel 1 de tu elección, escogidos de entre la lista de conjuros de brujo.",
+						"La columna \"conjuros conocidos\" de la tabla del brujo te indica cuándo podrás aprender más conjuros de brujo de nivel 1 o superiores. Siempre que elijas un conjuro, este debe ser de un nivel igual o inferior al que aparece en la columna \"nivel de los espacios\" para tu nivel de brujo. Así, cuando subes a nivel 6 en esta clase puedes aprender un conjuro de brujo nuevo, que puede ser de nivel 1, 2 o 3.",
+						"Además, cada vez que subas un nivel de esta clase podrás elegir uno de los conjuros de brujo que ya conoces y reemplazarlo por otro de las que aparecen en la lista de conjuros de brujo. Este reemplazo deberá ser de un nivel para el que poseas espacios de conjuro."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Spellcasting Ability",
+					"name": "Aptitud mágica",
 					"entries": [
-						"Charisma is your spellcasting ability for your warlock spells, so you use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a warlock spell you cast and when making an attack roll with one.",
+						"El Carisma es tu aptitud mágica en lo que a conjuros de brujo respecta. Así, utilizarás tu Carisma siempre que un conjuro de brujo haga referencia a tu aptitud mágica. Además, también usarás tu modificador por Carisma para determinar la CD de las tiradas de salvación y las tiradas de ataque de los conjuros de brujo que lances.",
 						{
 							"type": "abilityDc",
 							"name": "Spell",
@@ -732,462 +732,461 @@
 				},
 				{
 					"type": "entries",
-					"name": "Spellcasting Focus",
+					"name": "Canalizador mágico",
 					"entries": [
-						"You can use an {@item arcane focus|phb} as a spellcasting focus for your warlock spells."
+						"Puedes utilizar un {@item canalizadores arcanos|PHB-ES|canalizador arcano} como canalizador mágico para los conjuros de brujo."
 					]
 				}
 			]
 		},
 		{
-			"name": "Eldritch Invocations",
+			"name": "Invocaciones Sobrenaturales",
 			"source": "PHB-ES",
-			"page": 105,
+			"page": 58,
 			"srd": true,
-			"className": "Warlock",
+			"className": "Brujo",
 			"classSource": "PHB-ES",
 			"level": 2,
 			"entries": [
-				"In your study of occult lore, you have unearthed eldritch invocations, fragments of forbidden knowledge that imbue you with an abiding magical ability.",
-				"At 2nd level, you gain two eldritch invocations of your choice. A list of the available options can be found on the {@filter Optional Features|optionalfeatures|Feature Type=EI} page. When you gain certain warlock levels, you gain additional invocations of your choice, as shown in the Invocations Known column of the Warlock table.",
-				"Additionally, when you gain a level in this class, you can choose one of the invocations you know and replace it with another invocation that you could learn at that level.",
-				"If an eldritch invocation has prerequisites, you must meet them to learn it. You can learn the invocation at the same time that you meet its prerequisites. A level prerequisite refers to your level in this class."
+				"Durante tu estudio de lo oculto, has desenterrado invocaciones sobrenaturales: fragmentos de conocimiento prohibido que te imbuyen de una capacidad mágica perpetua.",
+				"A nivel 2, obtienes dos invocaciones sobrenaturales a tu elección. Las {@filter invocaciones|optionalfeatures|feature type=EI_Esp} entre las que puedes elegir están detalladas al final de la descripción de esta clase. Podrás escoger más invocaciones sobrenaturales cuando subas a niveles de brujo más altos, como se indica en la columna \"invocaciones conocidas\" de la tabla del brujo.",
+				"Además, cada vez que subas un nivel de esta clase podrás elegir una de las invocaciones que ya conoces y reemplazarla por otra que puedas aprender a tu nuevo nivel."
 			]
 		},
 		{
-			"name": "Pact Boon",
+			"name": "Beneficio del Pacto",
 			"source": "PHB-ES",
-			"page": 105,
+			"page": 58,
 			"srd": true,
-			"className": "Warlock",
+			"className": "Brujo",
 			"classSource": "PHB-ES",
 			"level": 3,
 			"entries": [
-				"At 3rd level, your otherworldly patron bestows a gift upon you for your loyal service. You gain one of the following features of your choice.",
+				"A nivel 3 tu patrón sobrenatural le concede un regalo como recompensa por tus leales servicios. Obtienes uno de los siguientes rasgos, a tu elección.",
 				{
 					"type": "options",
 					"count": 1,
 					"entries": [
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Pact of the Chain"
+							"optionalfeature": "Pacto de la Cadena|PHB-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Pact of the Blade"
+							"optionalfeature": "Pacto del Filo|PHB-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Pact of the Tome"
+							"optionalfeature": "Pacto del Grimorio|PHB-ES"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Pact of the Talisman|TCE"
+							"optionalfeature": "Pacto del Talismán|TCE-ES"
 						}
 					]
 				}
 			]
 		},
 		{
-			"name": "Ability Score Improvement",
+			"name": "Mejora de Característica",
 			"source": "PHB-ES",
-			"page": 105,
+			"page": 59,
 			"srd": true,
-			"className": "Warlock",
+			"className": "Brujo",
 			"classSource": "PHB-ES",
 			"level": 4,
 			"entries": [
-				"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+				"Cuando alcances el nivel 4 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
 			]
 		},
 		{
-			"name": "Eldritch Versatility",
+			"name": "Versatilidad Sobrenatural",
 			"source": "TCE-ES",
-			"page": 70,
-			"className": "Warlock",
+			"page": 31,
+			"className": "Brujo",
 			"classSource": "PHB-ES",
 			"level": 4,
 			"isClassFeatureVariant": true,
 			"entries": [
-				"{@i 4th-level warlock {@variantrule optional class features|tce|optional feature}}",
-				"Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can do one of the following, representing a change of focus in your occult studies:",
+				"{@i {@variantrule Rasgos de clase opcionales|TCE-ES|Rasgo opcional} de brujo de nivel 4}",
+				"Cuando alcanzas un nivel en esta clase que otorga el rasgo Mejora de Característica, puedes hacer una de las cosas que se explican a continuación, lo que representa un cambio en el enfoque de tus estudios de lo oculto:",
 				{
 					"type": "list",
 					"items": [
-						"Replace one cantrip you learned from this class's Pact Magic feature with another cantrip from the {@filter warlock spell list|spells|level=0|class=Warlock}.",
-						"Replace the option you chose for the Pact Boon feature with one of that feature's other options.",
-						"If you're 12th level or higher, replace one spell from your Mystic Arcanum feature with another warlock spell of the same level."
+						"Sustituir un truco aprendido del rasgo Magia del Pacto de esta clase por otro truco de la {@filter lista de conjuros de brujo|spells|level=0|class=Brujo (PHB-ES)}.",
+						"Sustituir la opción que elegiste para el rasgo Beneficio del Pacto por una de las otras opciones de ese rasgo.",
+						"Si eres de nivel 12 o superior, sustituir un conjuro de tu rasgo Arcanum Místico por otro conjuro de brujo del mismo nivel."
 					]
 				},
-				"If this change makes you ineligible for any of your Eldritch Invocations, you must also replace them now, choosing invocations for which you qualify."
+				"Si este cambio hace que no puedas realizar alguna de tus Invocaciones Sobrenaturales, también puedes sustituirlas ahora y elegir invocaciones que sí puedas usar."
 			]
 		},
 		{
-			"name": "Otherworldly Patron feature",
+			"name": "Rasgo de Patrón Sobrenatural",
 			"source": "PHB-ES",
-			"page": 105,
+			"page": 59,
 			"srd": true,
-			"className": "Warlock",
+			"className": "Brujo",
 			"classSource": "PHB-ES",
 			"level": 6,
 			"entries": [
-				"At 6th level, you gain a feature granted by your Otherworldly Patron."
+				"A nivel 6 ganas un rasgo de tu Patrón Sobrenatural."
 			]
 		},
 		{
-			"name": "Ability Score Improvement",
+			"name": "Mejora de Característica",
 			"source": "PHB-ES",
-			"page": 105,
+			"page": 59,
 			"srd": true,
-			"className": "Warlock",
+			"className": "Brujo",
 			"classSource": "PHB-ES",
 			"level": 8,
 			"entries": [
-				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+				"Cuando alcances el nivel 8 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
 			]
 		},
 		{
-			"name": "Otherworldly Patron feature",
+			"name": "Rasgo de Patrón Sobrenatural",
 			"source": "PHB-ES",
-			"page": 105,
+			"page": 59,
 			"srd": true,
-			"className": "Warlock",
+			"className": "Brujo",
 			"classSource": "PHB-ES",
 			"level": 10,
 			"entries": [
-				"At 10th level, you gain a feature granted by your Otherworldly Patron."
+				"A nivel 10 ganas un rasgo de tu Patrón Sobrenatural."
 			]
 		},
 		{
-			"name": "Mystic Arcanum (6th level)",
+			"name": "Arcanum Místico (nivel 6)",
 			"source": "PHB-ES",
-			"page": 105,
+			"page": 59,
 			"srd": true,
-			"className": "Warlock",
+			"className": "Brujo",
 			"classSource": "PHB-ES",
 			"level": 11,
 			"entries": [
-				"At 11th level, your patron bestows upon you a magical secret called an arcanum. Choose one {@filter 6th-level spell from the warlock spell list|spells|level=6|class=Warlock} as this arcanum.",
-				"You can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again.",
-				"At higher levels, you gain more warlock spells of your choice that can be cast in this way: one 7th-level spell at 13th level, one 8th-level spell at 15th level, and one 9th-level spell at 17th level. You regain all uses of your Mystic Arcanum when you finish a long rest."
+				"A nivel 11, tu patrón te recompensa con un secreto mágico llamado arcanum. Escoge uno de los {@filter conjuros de nivel 6 de la lista del brujo|spells|level=6|class=Brujo (PHB-ES)} como este arcanum.",
+				"Puedes lanzar tu conjuro de arcanum una vez sin gastar ningún espacio de conjuro, pero debes terminar un descanso largo para poder volver a hacerlo otra vez.",
+				"A niveles superiores puedes elegir más conjuros de brujo, que serás capaz de lanzar de esta forma: un conjuro de nivel 7 cuando subas a nivel 13, uno de nivel 8 cuando subas a nivel 15 y uno de nivel 9 cuando subas a nivel 17. Recuperas todos los usos de Arcanum Místico tras finalizar un descanso largo."
 			]
 		},
 		{
-			"name": "Ability Score Improvement",
+			"name": "Mejora de Característica",
 			"source": "PHB-ES",
-			"page": 105,
+			"page": 59,
 			"srd": true,
-			"className": "Warlock",
+			"className": "Brujo",
 			"classSource": "PHB-ES",
 			"level": 12,
 			"entries": [
-				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+				"Cuando alcances el nivel 12 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
 			]
 		},
 		{
-			"name": "Mystic Arcanum (7th level)",
+			"name": "Arcanum Místico (nivel 7)",
 			"source": "PHB-ES",
-			"page": 105,
+			"page": 59,
 			"srd": true,
-			"className": "Warlock",
+			"className": "Brujo",
 			"classSource": "PHB-ES",
 			"level": 13,
 			"entries": [
-				"At 13th level, your patron bestows upon you a magical secret called an arcanum. Choose one {@filter 7th-level spell from the warlock spell list|spells|level=7|class=Warlock} as this arcanum.",
-				"You can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again."
+				"A nivel 13, tu patrón te recompensa con un secreto mágico llamado arcanum. Escoge uno de los {@filter conjuros de nivel 7 de la lista del brujo|spells|level=7|class=Brujo (PHB-ES)} como este arcanum.",
+				"Puedes lanzar tu conjuro de arcanum una vez sin gastar ningún espacio de conjuro, pero debes terminar un descanso largo para poder volver a hacerlo otra vez."
 			]
 		},
 		{
-			"name": "Otherworldly Patron feature",
+			"name": "Rasgo de Patrón Sobrenatural",
 			"source": "PHB-ES",
-			"page": 105,
+			"page": 59,
 			"srd": true,
-			"className": "Warlock",
+			"className": "Brujo",
 			"classSource": "PHB-ES",
 			"level": 14,
 			"entries": [
-				"At 14th level, you gain a feature granted by your Otherworldly Patron."
+				"A nivel 14 ganas un rasgo de tu Patrón Sobrenatural."
 			]
 		},
 		{
-			"name": "Mystic Arcanum (8th level)",
+			"name": "Arcanum Místico (nivel 8)",
 			"source": "PHB-ES",
-			"page": 105,
+			"page": 59,
 			"srd": true,
-			"className": "Warlock",
+			"className": "Brujo",
 			"classSource": "PHB-ES",
 			"level": 15,
 			"entries": [
-				"At 15th level, your patron bestows upon you a magical secret called an arcanum. Choose one {@filter 8th-level spell from the warlock spell list|spells|level=8|class=Warlock} as this arcanum.",
-				"You can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again."
+				"A nivel 15, tu patrón te recompensa con un secreto mágico llamado arcanum. Escoge uno de los {@filter conjuros de nivel 8 de la lista del brujo|spells|level=8|class=Brujo (PHB-ES)} como este arcanum.",
+				"Puedes lanzar tu conjuro de arcanum una vez sin gastar ningún espacio de conjuro, pero debes terminar un descanso largo para poder volver a hacerlo otra vez."
 			]
 		},
 		{
-			"name": "Ability Score Improvement",
+			"name": "Mejora de Característica",
 			"source": "PHB-ES",
-			"page": 105,
+			"page": 59,
 			"srd": true,
-			"className": "Warlock",
+			"className": "Brujo",
 			"classSource": "PHB-ES",
 			"level": 16,
 			"entries": [
-				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+				"Cuando alcances el nivel 16 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
 			]
 		},
 		{
-			"name": "Mystic Arcanum (9th level)",
+			"name": "Arcanum Místico (nivel 9)",
 			"source": "PHB-ES",
-			"page": 105,
+			"page": 59,
 			"srd": true,
-			"className": "Warlock",
+			"className": "Brujo",
 			"classSource": "PHB-ES",
 			"level": 17,
 			"entries": [
-				"At 17th level, your patron bestows upon you a magical secret called an arcanum. Choose one {@filter 9th-level spell from the warlock spell list|spells|level=9|class=Warlock} as this arcanum.",
-				"You can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again."
+				"A nivel 17, tu patrón te recompensa con un secreto mágico llamado arcanum. Escoge uno de los {@filter conjuros de nivel 9 de la lista del brujo|spells|level=9|class=Brujo (PHB-ES)} como este arcanum.",
+				"Puedes lanzar tu conjuro de arcanum una vez sin gastar ningún espacio de conjuro, pero debes terminar un descanso largo para poder volver a hacerlo otra vez."
 			]
 		},
 		{
-			"name": "Ability Score Improvement",
+			"name": "Mejora de Característica",
 			"source": "PHB-ES",
-			"page": 105,
+			"page": 59,
 			"srd": true,
-			"className": "Warlock",
+			"className": "Brujo",
 			"classSource": "PHB-ES",
 			"level": 19,
 			"entries": [
-				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+				"Cuando alcances el nivel 19 podrás elegir una puntuación de característica y aumentarla en 2 o dos puntuaciones de característica y aumentarlas en 1 cada una. Como es habitual, no puedes aumentar una puntuación de característica por encima de 20.",
+				"Si tu DM permite usar dotes, podrías en su lugar coger una {@5etools dote|feats.html}."
 			]
 		},
 		{
-			"name": "Eldritch Master",
+			"name": "Maestro Sobrenatural",
 			"source": "PHB-ES",
-			"page": 105,
+			"page": 59,
 			"srd": true,
-			"className": "Warlock",
+			"className": "Brujo",
 			"classSource": "PHB-ES",
 			"level": 20,
 			"entries": [
-				"At 20th level, you can draw on your inner reserve of mystical power while entreating your patron to regain expended spell slots. You can spend 1 minute entreating your patron for aid to regain all your expended spell slots from your Pact Magic feature. Once you regain spell slots with this feature, you must finish a long rest before you can do so again."
+				"A nivel 20 puedes acceder a tu reserva interior de poder místico mientras ruegas a tu patrón que te permita recuperar espacios de conjuro gastados. Puedes pasar 1 minuto suplicando a tu patrón que te ayude y este te hará recuperar todos los espacios de conjuro obtenidos mediante el rasgo Magia del Pacto que hayas gastado ya. Una vez utilizado este rasgo, deberás terminar un descanso largo para poder volver a usarlo otra vez."
 			]
 		}
 	],
 	"subclass": [
 		{
-			"name": "The Archfey",
-			"shortName": "Archfey",
+			"name": "El Señor Feérico",
+			"shortName": "Señor Feérico",
 			"source": "PHB-ES",
-			"className": "Warlock",
+			"className": "Brujo",
 			"classSource": "PHB-ES",
-			"page": 108,
+			"page": 60,
 			"additionalSpells": [
 				{
 					"expanded": {
 						"s1": [
-							"faerie fire",
-							"sleep"
+							"fuego feérico|PHB-ES",
+							"dormir|PHB-ES"
 						],
 						"s2": [
-							"calm emotions",
-							"phantasmal force"
+							"calmar emociones|PHB-ES",
+							"fuerza fantasmal|PHB-ES"
 						],
 						"s3": [
-							"blink",
-							"plant growth"
+							"desplazamiento|PHB-ES",
+							"crecimiento vegetal|PHB-ES"
 						],
 						"s4": [
-							"dominate beast",
-							"greater invisibility"
+							"dominar bestia|PHB-ES",
+							"invisibilidad mejorada|PHB-ES"
 						],
 						"s5": [
-							"dominate person",
-							"seeming"
+							"dominar persona|PHB-ES",
+							"apariencia|PHB-ES"
 						]
 					}
 				}
 			],
 			"subclassFeatures": [
-				"The Archfey|Warlock||Archfey||1",
-				"Misty Escape|Warlock||Archfey||6",
-				"Beguiling Defenses|Warlock||Archfey||10",
-				"Dark Delirium|Warlock||Archfey||14"
+				"El Señor Feérico|Brujo|PHB-ES|Señor Feérico|PHB-ES|1",
+				"Escape Brumoso|Brujo|PHB-ES|Señor Feérico|PHB-ES|6",
+				"Defensas Seductoras|Brujo|PHB-ES|Señor Feérico|PHB-ES|10",
+				"Delirio Oscuro|Brujo|PHB-ES|Señor Feérico|PHB-ES|14"
 			]
 		},
 		{
-			"name": "The Fiend",
-			"shortName": "Fiend",
+			"name": "El Infernal",
+			"shortName": "Infernal",
 			"source": "PHB-ES",
-			"className": "Warlock",
+			"className": "Brujo",
 			"classSource": "PHB-ES",
-			"page": 109,
+			"page": 59,
 			"srd": true,
 			"additionalSpells": [
 				{
 					"expanded": {
 						"s1": [
-							"burning hands",
-							"command"
+							"manos ardientes|PHB-ES",
+							"orden imperiosa|PHB-ES"
 						],
 						"s2": [
-							"blindness/deafness",
-							"scorching ray"
+							"sordera/ceguera|PHB-ES",
+							"rayo abrasador|PHB-ES"
 						],
 						"s3": [
-							"fireball",
-							"stinking cloud"
+							"bola de fuego|PHB-ES",
+							"nube apestosa|PHB-ES"
 						],
 						"s4": [
-							"fire shield",
-							"wall of fire"
+							"escudo de fuego|PHB-ES",
+							"muro de fuego|PHB-ES"
 						],
 						"s5": [
-							"flame strike",
-							"hallow"
+							"golpe flamígero|PHB-ES",
+							"consagrar|PHB-ES"
 						]
 					}
 				}
 			],
 			"subclassFeatures": [
-				"The Fiend|Warlock||Fiend||1",
-				"Dark One's Own Luck|Warlock||Fiend||6",
-				"Fiendish Resilience|Warlock||Fiend||10",
-				"Hurl Through Hell|Warlock||Fiend||14"
+				"El Infernal|Brujo|PHB-ES|Infernal|PHB-ES|1",
+				"La Suerte del Oscuro|Brujo|PHB-ES|Infernal|PHB-ES|6",
+				"Resistencia Infernal|Brujo|PHB-ES|Infernal|PHB-ES|10",
+				"Arrastrar por el Infierno|Brujo|PHB-ES|Infernal|PHB-ES|14"
 			]
 		},
 		{
-			"name": "The Great Old One",
-			"shortName": "Great Old One",
+			"name": "El Primigenio",
+			"shortName": "Primigenio",
 			"source": "PHB-ES",
-			"className": "Warlock",
+			"className": "Brujo",
 			"classSource": "PHB-ES",
-			"page": 109,
+			"page": 60,
 			"additionalSpells": [
 				{
 					"expanded": {
 						"s1": [
-							"dissonant whispers",
-							"Tasha's hideous laughter"
+							"susurros discordantes|PHB-ES",
+							"risa horrible de Tasha|PHB-ES"
 						],
 						"s2": [
-							"detect thoughts",
-							"phantasmal force"
+							"detectar pensamientos|PHB-ES",
+							"fuerza fantasmal|PHB-ES"
 						],
 						"s3": [
-							"clairvoyance",
-							"sending"
+							"clarividencia|PHB-ES",
+							"recado|PHB-ES"
 						],
 						"s4": [
-							"dominate beast",
-							"Evard's black tentacles"
+							"dominar bestia|PHB-ES",
+							"tentáculos negros de Evard|PHB-ES"
 						],
 						"s5": [
-							"dominate person",
-							"telekinesis"
+							"dominar persona|PHB-ES",
+							"telequinesis|PHB-ES"
 						]
 					}
 				}
 			],
 			"subclassFeatures": [
-				"The Great Old One|Warlock||Great Old One||1",
-				"Entropic Ward|Warlock||Great Old One||6",
-				"Thought Shield|Warlock||Great Old One||10",
-				"Create Thrall|Warlock||Great Old One||14"
+				"El Primigenio|Brujo|PHB-ES|Primigenio|PHB-ES|1",
+				"Salvaguarda Entrópica|Brujo|PHB-ES|Primigenio|PHB-ES|6",
+				"Escudo Mental|Brujo|PHB-ES|Primigenio|PHB-ES|10",
+				"Crear Siervo|Brujo|PHB-ES|Primigenio|PHB-ES|14"
 			]
 		},
 		{
-			"name": "The Undying",
-			"shortName": "Undying",
+			"name": "El Inmortal",
+			"shortName": "Inmortal",
 			"source": "SCAG-ES",
-			"className": "Warlock",
+			"className": "Brujo",
 			"classSource": "PHB-ES",
-			"page": 139,
+			"page": 126,
 			"additionalSpells": [
 				{
 					"known": {
 						"1": [
-							"spare the dying#c"
+							"piedad con los moribundos|PHB-ES#c"
 						]
 					},
 					"expanded": {
 						"s1": [
-							"false life",
-							"ray of sickness"
+							"falsa vida|PHB-ES",
+							"rayo nauseabundo|PHB-ES"
 						],
 						"s2": [
-							"blindness/deafness",
-							"silence"
+							"silencio|PHB-ES",
+							"sordera/ceguera|PHB-ES"
 						],
 						"s3": [
-							"feign death",
-							"speak with dead"
+							"fingir muerte|PHB-ES",
+							"hablar con los muertos|PHB-ES"
 						],
 						"s4": [
-							"aura of life",
-							"death ward"
+							"aura de vida|PHB-ES",
+							"guarda contra la muerte|PHB-ES"
 						],
 						"s5": [
-							"contagion",
-							"legend lore"
+							"conocer las leyendas|PHB-ES",
+							"contagio|PHB-ES"
 						]
 					}
 				}
 			],
 			"subclassFeatures": [
-				"The Undying|Warlock||Undying|SCAG|1",
-				"Defy Death|Warlock||Undying|SCAG|6",
-				"Undying Nature|Warlock||Undying|SCAG|10",
-				"Indestructible Life|Warlock||Undying|SCAG|14"
+				"El Inmortal|Brujo|PHB-ES|Inmortal|SCAG-ES|1",
+				"Desafiar a la Muerte|Brujo|PHB-ES|Inmortal|SCAG-ES|6",
+				"Naturaleza Imperecedera|Brujo|PHB-ES|Inmortal|SCAG-ES|10",
+				"Vida indestructible|Brujo|PHB-ES|Inmortal|SCAG-ES|14"
 			]
 		},
 		{
-			"name": "The Celestial",
+			"name": "El Celestial",
 			"shortName": "Celestial",
 			"source": "XGE-ES",
-			"className": "Warlock",
+			"className": "Brujo",
 			"classSource": "PHB-ES",
-			"page": 54,
+			"page": 18,
 			"additionalSpells": [
 				{
 					"known": {
 						"1": [
-							"sacred flame#c",
-							"light#c"
+							"llama sagrada|PHB-ES#c",
+							"luz|PHB-ES#c"
 						]
 					},
 					"expanded": {
 						"s1": [
-							"cure wounds",
-							"guiding bolt"
+							"curar heridas|PHB-ES",
+							"saeta guía|PHB-ES"
 						],
 						"s2": [
-							"flaming sphere",
-							"lesser restoration"
+							"esfera de llamas|PHB-ES",
+							"restablecimiento menor|PHB-ES"
 						],
 						"s3": [
-							"daylight",
-							"revivify"
+							"luz del día|PHB-ES",
+							"revivir|PHB-ES"
 						],
 						"s4": [
-							"guardian of faith",
-							"wall of fire"
+							"guardián de la fe|PHB-ES",
+							"muro de fuego|PHB-ES"
 						],
 						"s5": [
-							"flame strike",
-							"greater restoration"
+							"golpe flamígero|PHB-ES",
+							"restablecimiento mayor|PHB-ES"
 						]
 					}
 				}
 			],
 			"subclassFeatures": [
-				"The Celestial|Warlock||Celestial|XGE|1",
-				"Radiant Soul|Warlock||Celestial|XGE|6",
-				"Celestial Resilience|Warlock||Celestial|XGE|10",
-				"Searing Vengeance|Warlock||Celestial|XGE|14"
+				"El Celestial|Brujo|PHB-ES|Celestial|XGE-ES|1",
+				"Alma Radiante|Brujo|PHB-ES|Celestial|XGE-ES|6",
+				"Resiliencia Celestial|Brujo|PHB-ES|Celestial|XGE-ES|10",
+				"Venganza Ardiente|Brujo|PHB-ES|Celestial|XGE-ES|14"
 			],
 			"fluff": {
 				"images": [
@@ -1202,43 +1201,43 @@
 			}
 		},
 		{
-			"name": "The Hexblade",
-			"shortName": "Hexblade",
+			"name": "El Filo Maléfico",
+			"shortName": "Filo Maléfico",
 			"source": "XGE-ES",
-			"className": "Warlock",
+			"className": "Brujo",
 			"classSource": "PHB-ES",
-			"page": 55,
+			"page": 19,
 			"additionalSpells": [
 				{
 					"expanded": {
 						"s1": [
-							"shield",
-							"wrathful smite"
+							"escudo|PHB-ES",
+							"castigo furioso|PHB-ES"
 						],
 						"s2": [
-							"blur",
-							"branding smite"
+							"contorno borroso|PHB-ES",
+							"castigo marcador|PHB-ES"
 						],
 						"s3": [
-							"blink",
-							"elemental weapon"
+							"desplazamiento|PHB-ES",
+							"arma elemental|PHB-ES"
 						],
 						"s4": [
-							"phantasmal killer",
-							"staggering smite"
+							"asesino fantasmal|PHB-ES",
+							"castigo abrumador|PHB-ES"
 						],
 						"s5": [
-							"banishing smite",
-							"cone of cold"
+							"castigo desterrador|PHB-ES",
+							"cono de frío|PHB-ES"
 						]
 					}
 				}
 			],
 			"subclassFeatures": [
-				"The Hexblade|Warlock||Hexblade|XGE|1",
-				"Accursed Specter|Warlock||Hexblade|XGE|6",
-				"Armor of Hexes|Warlock||Hexblade|XGE|10",
-				"Master of Hexes|Warlock||Hexblade|XGE|14"
+				"El Filo Maléfico|Brujo|PHB-ES|Filo Maléfico|XGE-ES|1",
+				"Espectro Maldito|Brujo|PHB-ES|Filo Maléfico|XGE-ES|6",
+				"Armadura de Maleficios|Brujo|PHB-ES|Filo Maléfico|XGE-ES|10",
+				"Maestro de Maldiciones|Brujo|PHB-ES|Filo Maléfico|XGE-ES|14"
 			],
 			"fluff": {
 				"images": [
@@ -1253,41 +1252,41 @@
 			}
 		},
 		{
-			"name": "The Fathomless",
-			"shortName": "Fathomless",
+			"name": "El Insondable",
+			"shortName": "Insondable",
 			"source": "TCE-ES",
-			"className": "Warlock",
+			"className": "Brujo",
 			"classSource": "PHB-ES",
-			"page": 72,
+			"page": 34,
 			"additionalSpells": [
 				{
 					"expanded": {
 						"s1": [
-							"create or destroy water",
-							"thunderwave"
+							"crear o destruir agua|PHB-ES",
+							"ola atronadora|PHB-ES"
 						],
 						"s2": [
-							"gust of wind",
-							"silence"
+							"ráfaga de viento|PHB-ES",
+							"silencio|PHB-ES"
 						],
 						"s3": [
-							"lightning bolt",
-							"sleet storm"
+							"relámpago|PHB-ES",
+							"tormenta de aguanieve|PHB-ES"
 						],
 						"s4": [
-							"control water",
-							"summon elemental|tce"
+							"controlar agua|PHB-ES",
+							"invocar elemental|TCE-ES"
 						],
 						"s5": [
-							"Bigby's hand",
-							"cone of cold"
+							"cono de frio|PHB-ES",
+							"mano de Bigby|PHB-ES"
 						]
 					},
 					"known": {
 						"10": {
 							"daily": {
 								"1": [
-									"Evard's black tentacles"
+									"tentáculos negros de Evard|PHB-ES"
 								]
 							}
 						}
@@ -1295,11 +1294,11 @@
 				}
 			],
 			"subclassFeatures": [
-				"The Fathomless|Warlock||Fathomless|TCE|1",
-				"Oceanic Soul|Warlock||Fathomless|TCE|6",
-				"Guardian Coil|Warlock||Fathomless|TCE|6",
-				"Grasping Tentacles|Warlock||Fathomless|TCE|10",
-				"Fathomless Plunge|Warlock||Fathomless|TCE|14"
+				"El Insondable|Brujo|PHB-ES|Insondable|TCE-ES|1",
+				"Alma Oceánica|Brujo|PHB-ES|Insondable|TCE-ES|6",
+				"Bucle Guardián|Brujo|PHB-ES|Insondable|TCE-ES|6",
+				"Tentáculos Prensiles|Brujo|PHB-ES|Insondable|TCE-ES|10",
+				"Zambullida Insondable|Brujo|PHB-ES|Insondable|TCE-ES|14"
 			],
 			"fluff": {
 				"images": [
@@ -1314,38 +1313,38 @@
 			}
 		},
 		{
-			"name": "The Genie",
-			"shortName": "Genie",
+			"name": "El Genio",
+			"shortName": "Genio",
 			"source": "TCE-ES",
-			"className": "Warlock",
+			"className": "Brujo",
 			"classSource": "PHB-ES",
-			"page": 73,
+			"page": 32,
 			"additionalSpells": [
 				{
 					"name": "Dao",
 					"expanded": {
 						"9": [
-							"wish"
+							"deseo|PHB-ES"
 						],
 						"s1": [
-							"detect evil and good",
-							"sanctuary"
+							"detectar el bien y el mal|PHB-ES",
+							"santuario|PHB-ES"
 						],
 						"s2": [
-							"phantasmal force",
-							"spike growth"
+							"fuerza fantasmal|PHB-ES",
+							"crecimiento espinoso|PHB-ES"
 						],
 						"s3": [
-							"create food and water",
-							"meld into stone"
+							"crear comida y agua|PHB-ES",
+							"fundirse con la piedra|PHB-ES"
 						],
 						"s4": [
-							"phantasmal killer",
-							"stone shape"
+							"asesino fantasmal|PHB-ES",
+							"moldear la piedra|PHB-ES"
 						],
 						"s5": [
-							"creation",
-							"wall of stone"
+							"creación|PHB-ES",
+							"muro de piedra|PHB-ES"
 						]
 					}
 				},
@@ -1353,27 +1352,27 @@
 					"name": "Djinni",
 					"expanded": {
 						"9": [
-							"wish"
+							"deseo|PHB-ES"
 						],
 						"s1": [
-							"detect evil and good",
-							"thunderwave"
+							"detectar el bien y el mal|PHB-ES",
+							"ola atronadora|PHB-ES"
 						],
 						"s2": [
-							"phantasmal force",
-							"gust of wind"
+							"fuerza fantasmal|PHB-ES",
+							"ráfaga de viento|PHB-ES"
 						],
 						"s3": [
-							"create food and water",
-							"wind wall"
+							"crear comida y agua|PHB-ES",
+							"muro de viento|PHB-ES"
 						],
 						"s4": [
-							"phantasmal killer",
-							"greater invisibility"
+							"asesino fantasmal|PHB-ES",
+							"invisibilidad mejorada|PHB-ES"
 						],
 						"s5": [
-							"creation",
-							"seeming"
+							"creación|PHB-ES",
+							"apariencia|PHB-ES"
 						]
 					}
 				},
@@ -1381,27 +1380,27 @@
 					"name": "Efreeti",
 					"expanded": {
 						"9": [
-							"wish"
+							"deseo|PHB-ES"
 						],
 						"s1": [
-							"detect evil and good",
-							"burning hands"
+							"detectar el bien y el mal|PHB-ES",
+							"manos ardientes|PHB-ES"
 						],
 						"s2": [
-							"phantasmal force",
-							"scorching ray"
+							"fuerza fantasmal|PHB-ES",
+							"rayo abrasador|PHB-ES"
 						],
 						"s3": [
-							"create food and water",
-							"fireball"
+							"crear comida y agua|PHB-ES",
+							"bola de fuego|PHB-ES"
 						],
 						"s4": [
-							"phantasmal killer",
-							"fire shield"
+							"asesino fantasmal|PHB-ES",
+							"escudo de fuego|PHB-ES"
 						],
 						"s5": [
-							"creation",
-							"flame strike"
+							"creación|PHB-ES",
+							"golpe flamígero|PHB-ES"
 						]
 					}
 				},
@@ -1409,36 +1408,36 @@
 					"name": "Marid",
 					"expanded": {
 						"9": [
-							"wish"
+							"deseo|PHB-ES"
 						],
 						"s1": [
-							"detect evil and good",
-							"fog cloud"
+							"detectar el bien y el mal|PHB-ES",
+							"nube de oscurecimiento|PHB-ES"
 						],
 						"s2": [
-							"phantasmal force",
-							"blur"
+							"fuerza fantasmal|PHB-ES",
+							"contorno borroso|PHB-ES"
 						],
 						"s3": [
-							"create food and water",
-							"sleet storm"
+							"crear comida y agua|PHB-ES",
+							"tormenta de aguanieve|PHB-ES"
 						],
 						"s4": [
-							"phantasmal killer",
-							"control water"
+							"asesino fantasmal|PHB-ES",
+							"controlar agua|PHB-ES"
 						],
 						"s5": [
-							"creation",
-							"cone of cold"
+							"creación|PHB-ES",
+							"cono de frío|PHB-ES"
 						]
 					}
 				}
 			],
 			"subclassFeatures": [
-				"The Genie|Warlock||Genie|TCE|1",
-				"Elemental Gift|Warlock||Genie|TCE|6",
-				"Sanctuary Vessel|Warlock||Genie|TCE|10",
-				"Limited Wish|Warlock||Genie|TCE|14"
+				"El Genio|Brujo|PHB-ES|Genio|TCE-ES|1",
+				"Don Elemental|Brujo|PHB-ES|Genio|TCE-ES|6",
+				"Recipiente Santuario|Brujo|PHB-ES|Genio|TCE-ES|10",
+				"Deseo Limitado|Brujo|PHB-ES|Genio|TCE-ES|14"
 			],
 			"fluff": {
 				"images": [
@@ -1453,43 +1452,43 @@
 			}
 		},
 		{
-			"name": "The Undead",
-			"shortName": "Undead",
+			"name": "El No Muerto",
+			"shortName": "No Muerto",
 			"source": "VRGR-ES",
-			"className": "Warlock",
+			"className": "Brujo",
 			"classSource": "PHB-ES",
 			"page": 30,
 			"additionalSpells": [
 				{
 					"expanded": {
 						"s1": [
-							"bane",
-							"false life"
+							"perdición|PHB-ES",
+							"falsa vida|PHB-ES"
 						],
 						"s2": [
-							"blindness/deafness",
-							"phantasmal force"
+							"ceguera/sordera|PHB-ES",
+							"fuerza fantasmal|PHB-ES"
 						],
 						"s3": [
-							"phantom steed",
-							"speak with dead"
+							"corcel fantasma|PHB-ES",
+							"hablar con los muertos|PHB-ES"
 						],
 						"s4": [
-							"death ward",
-							"greater invisibility"
+							"guarda contra la muerte|PHB-ES",
+							"invisibilidad mejorada|PHB-ES"
 						],
 						"s5": [
-							"antilife shell",
-							"cloudkill"
+							"caparazón antivida|PHB-ES",
+							"nube aniquiladora|PHB-ES"
 						]
 					}
 				}
 			],
 			"subclassFeatures": [
-				"The Undead|Warlock||Undead|VRGR|1",
-				"Grave Touched|Warlock||Undead|VRGR|6",
-				"Necrotic Husk|Warlock||Undead|VRGR|10",
-				"Spirit Projection|Warlock||Undead|VRGR|14"
+				"El No Muerto|Brujo|PHB-ES|No Muerto|VRGR-ES|1",
+				"Tocado por la Tumba|Brujo|PHB-ES|No Muerto|VRGR-ES|6",
+				"Cascarón Necrótico|Brujo|PHB-ES|No Muerto|VRGR-ES|10",
+				"Proyección Espiritual|Brujo|PHB-ES|No Muerto|VRGR-ES|14"
 			],
 			"fluff": {
 				"images": [
@@ -1506,27 +1505,28 @@
 	],
 	"subclassFeature": [
 		{
-			"name": "The Archfey",
+			"name": "El Señor Feérico",
 			"source": "PHB-ES",
-			"page": 108,
-			"className": "Warlock",
+			"page": 60,
+			"className": "Brujo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Archfey",
+			"subclassShortName": "Señor Feérico",
 			"subclassSource": "PHB-ES",
 			"level": 1,
 			"entries": [
-				"Your patron is a lord or lady of the fey, a creature of legend who holds secrets that were forgotten before the mortal races were born. This being's motivations are often inscrutable, and sometimes whimsical, and might involve a striving for greater magical power or the settling of age-old grudges. Beings of this sort include the Prince of Frost; the Queen of Air and Darkness, ruler of the Gloaming Court; Titania of the Summer Court; her consort Oberon, the Green Lord; Hyrsam, the Prince of Fools; and ancient hags.",
+				"Tu patrón es un señor o señora feérico: una criatura de leyenda que atesora secretos que ya habían sido olvidados antes de que las razas mortales vieran la luz. Las motivaciones de una entidad como esta suelen ser incognoscibles y a veces parecen caprichosas, pues lo mismo pueden aspirar a aumentar su poder mágico como buscar vengarse de un agravio ancestral.",
+				"Ejemplos de seres de este tipo son el Príncipe de la Escarcha; la Reina del Aire y la Oscuridad, gobernante de la Corte Crepuscular; Titania de la Corte del Verano; su consorte Oberón, el Lord Verde; Hyrsam, el Príncipe de los Locos; y sagas muy ancianas.",
 				{
 					"type": "entries",
-					"name": "Expanded Spell List",
+					"name": "Lista de conjuros ampliada",
 					"entries": [
-						"The Archfey lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
+						"El Señor Feérico te permite elegir de entre una lista de conjuros ampliada cada vez que aprendes un conjuro de brujo. Los siguientes conjuros también forman parte de tu lista de conjuros de brujo.",
 						{
 							"type": "table",
-							"caption": "Archfey Expanded Spells",
+							"caption": "Conjuros adicionales del Señor Feérico",
 							"colLabels": [
-								"Spell Level",
-								"Spells"
+								"Nivel de Conjuro",
+								"Conjuros"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -1534,24 +1534,24 @@
 							],
 							"rows": [
 								[
-									"1st",
-									"{@spell faerie fire}, {@spell sleep}"
+									"1",
+									"{@spell dormir|PHB-ES}, {@spell fuego feérico|PHB-ES}"
 								],
 								[
-									"2nd",
-									"{@spell calm emotions}, {@spell phantasmal force}"
+									"2",
+									"{@spell calmar emociones|PHB-ES}, {@spell fuerza fantasmal|PHB-ES}"
 								],
 								[
-									"3rd",
-									"{@spell blink}, {@spell plant growth}"
+									"3",
+									"{@spell crecimiento vegetal|PHB-ES}, {@spell desplazamiento|PHB-ES}"
 								],
 								[
-									"4th",
-									"{@spell dominate beast}, {@spell greater invisibility}"
+									"4",
+									"{@spell dominar bestia|PHB-ES}, {@spell invisibilidad mejorada|PHB-ES}"
 								],
 								[
-									"5th",
-									"{@spell dominate person}, {@spell seeming}"
+									"5",
+									"{@spell apariencia|PHB-ES}, {@spell dominar persona|PHB-ES}"
 								]
 							]
 						}
@@ -1559,93 +1559,93 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Fey Presence|Warlock||Archfey||1"
+					"subclassFeature": "Presencia Feérica|Brujo|PHB-ES|Señor Feérico|PHB-ES|1"
 				}
 			]
 		},
 		{
-			"name": "Fey Presence",
+			"name": "Presencia Feérica",
 			"source": "PHB-ES",
-			"page": 108,
-			"className": "Warlock",
+			"page": 60,
+			"className": "Brujo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Archfey",
+			"subclassShortName": "Señor Feérico",
 			"subclassSource": "PHB-ES",
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"Starting at 1st level, your patron bestows upon you the ability to project the beguiling and fearsome presence of the fey. As an action, you can cause each creature in a 10-foot cube originating from you to make a Wisdom saving throw against your warlock spell save DC. The creatures that fail their saving throws are all {@condition charmed} or {@condition frightened} by you (your choice) until the end of your next turn.",
-				"Once you use this feature, you can't use it again until you finish a short or long rest."
+				"A partir de nivel 1 tu patrón te concede la facultad para proyectar la seductora e imponente presencia de los seres feéricos. Como acción, puedes provocar que todas las criaturas en un cubo de 10 pies adyacente a ti tengan que hacer una tirada de salvación de Sabiduría con la misma CD que las tiradas de salvación de tus conjuros de brujo. Aquellas que fallen la tirada de salvación estarán {@condition hechizado|PHB-ES|hechizadas} o {@condition asustado|PHB-ES|asustadas} (tú eliges) por ti hasta el final de tu siguiente turno.",
+				"Una vez utilizado este rasgo, deberás terminar un descanso corto o largo para poder volver a usarlo otra vez."
 			]
 		},
 		{
-			"name": "Misty Escape",
+			"name": "Escape Brumoso",
 			"source": "PHB-ES",
-			"page": 108,
-			"className": "Warlock",
+			"page": 61,
+			"className": "Brujo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Archfey",
+			"subclassShortName": "Señor Feérico",
 			"subclassSource": "PHB-ES",
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"Starting at 6th level, you can vanish in a puff of mist in response to harm. When you take damage, you can use your reaction to turn {@condition invisible} and teleport up to 60 feet to an unoccupied space you can see. You remain {@condition invisible} until the start of your next turn or until you attack or cast a spell.",
-				"Once you use this feature, you can't use it again until you finish a short or long rest."
+				"A partir de nivel 6, puedes responder a un peligro desvaneciéndote en una leve niebla. Cuando recibas daño, puedes usar tu reacción para volverte {@condition invisible|PHB-ES} y teletransportarte hasta 60 pies a una casilla desocupada que puedas ver. Seguirás siendo {@condition invisible|PHB-ES} hasta que dé comienzo tu siguiente turno, ataques o lances un conjuro.",
+				"Una vez utilizado este rasgo, deberás terminar un descanso corto o largo para poder volver a usarlo otra vez."
 			]
 		},
 		{
-			"name": "Beguiling Defenses",
+			"name": "Defensas Seductoras",
 			"source": "PHB-ES",
-			"page": 108,
-			"className": "Warlock",
+			"page": 61,
+			"className": "Brujo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Archfey",
+			"subclassShortName": "Señor Feérico",
 			"subclassSource": "PHB-ES",
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"Beginning at 10th level, your patron teaches you how to turn the mind-affecting magic of your enemies against them. You are immune to being {@condition charmed}, and when another creature attempts to charm you, you can use your reaction to attempt to turn the charm back on that creature. The creature must succeed on a Wisdom saving throw against your warlock spell save DC or be {@condition charmed} by you for 1 minute or until the creature takes any damage."
+				"A nivel 10, tu patrón te enseña cómo volver contra tus enemigos sus propios intentos de embotar tus sentidos mediante la magia. No puedes ser {@condition hechizado|PHB-ES} y, cuando otra criatura trate de hechizarte, podrás emplear tu reacción para tratar de volver su intento contra ella. La criatura deberá hacer una tirada de salvación de Sabiduría con la misma CD que las tiradas de salvación de tus conjuros de brujo. Si falla, estará {@condition hechizado|PHB-ES|hechizada} por ti durante 1 minuto o hasta que reciba daño."
 			]
 		},
 		{
-			"name": "Dark Delirium",
+			"name": "Delirio Oscuro",
 			"source": "PHB-ES",
-			"page": 108,
-			"className": "Warlock",
+			"page": 61,
+			"className": "Brujo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Archfey",
+			"subclassShortName": "Señor Feérico",
 			"subclassSource": "PHB-ES",
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Starting at 14th level, you can plunge a creature into an illusory realm. As an action, choose a creature that you can see within 60 feet of you. It must make a Wisdom saving throw against your warlock spell save DC. On a failed save, it is {@condition charmed} or {@condition frightened} by you (your choice) for 1 minute or until your {@status concentration} is broken (as if you are {@status concentration||concentrating} on a spell). This effect ends early if the creature takes any damage.",
-				"Until this illusion ends, the creature thinks it is lost in a misty realm, the appearance of which you choose. The creature can see and hear only itself, you, and the illusion.",
-				"You must finish a short or long rest before you can use this feature again."
+				"A partir de nivel 14 puedes sumergir a una criatura en un reino imaginario. Como acción, elige una criatura que puedas ver a 60 pies o menos de ti. Deberá hacer una tirada de salvación de Sabiduría con la misma CD que las tiradas de salvación de tus conjuros de brujo. Si falla, estará {@condition hechizado|PHB-ES|hechizada} o {@condition asustado|PHB-ES|asustada} (tú eliges) por ti durante 1 minuto o hasta que se rompa tu {@status concentración|PHB-ES} (como si te estuvieras {@status concentración|PHB-ES|concentrando} en un conjuro). Este efecto termina antes de tiempo si el objetivo recibe cualquier tipo de daño.",
+				"Hasta que la ilusión termine, la criatura pensará que está perdida en un reino brumoso, que tomará la apariencia que tú prefieras. El objetivo únicamente puede ver y oír a la ilusión y a sí mismo.",
+				"Una vez utilizado este rasgo, deberás terminar un descanso corto o largo para poder volver a usarlo otra vez."
 			]
 		},
 		{
-			"name": "The Fiend",
+			"name": "El Infernal",
 			"source": "PHB-ES",
-			"page": 109,
+			"page": 59,
 			"srd": true,
-			"className": "Warlock",
+			"className": "Brujo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Fiend",
+			"subclassShortName": "Infernal",
 			"subclassSource": "PHB-ES",
 			"level": 1,
 			"entries": [
-				"You have made a pact with a fiend from the lower planes of existence, a being whose aims are evil, even if you strive against those aims. Such beings desire the corruption or destruction of all things, ultimately including you. Fiends powerful enough to forge a pact include demon lords such as Demogorgon, Orcus, Fraz'Urb-luu, and Baphomet; archdevils such as Asmodeus, Dispater, Mephistopheles, and Belial; pit fiends and balors that are especially mighty; and ultroloths and other lords of the yugoloths.",
+				"Has cerrado un trato con un infernal de los Planos Inferiores; un ser de fines malvados, a los que incluso tú mismo podrías oponerte. Este tipo de seres desean la corrupción y destrucción de todas las cosas, lo que, en última instancia, también te incluye. Entre los infernales lo bastante importantes para formar un pacto se encuentran señores demonio como Demogorgon, Orcus, Fraz'Urb-luu o Bafomet; archidiablos como Asmodeo, Dispater, Mefistófeles o Belial; diablos de la sima y balors especialmente poderosos; y ultroloths u otros señores de los yugoloths.",
 				{
 					"type": "entries",
-					"name": "Expanded Spell List",
+					"name": "Lista de conjuros ampliada",
 					"entries": [
-						"The Fiend lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
+						"El Infernal te permite elegir de entre una lista de conjuros ampliada cada vez que aprendes un conjuro de brujo. Los siguientes conjuros también forman parte de tu lista de conjuros de brujo.",
 						{
 							"type": "table",
-							"caption": "Fiend Expanded Spells",
+							"caption": "Conjuros adicionales del Infernal",
 							"colLabels": [
-								"Spell Level",
-								"Spells"
+								"Nivel de Conjuro",
+								"Conjuros"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -1653,24 +1653,24 @@
 							],
 							"rows": [
 								[
-									"1st",
-									"{@spell burning hands}, {@spell command}"
+									"1",
+									"{@spell manos ardientes|PHB-ES}, {@spell orden imperiosa|PHB-ES}"
 								],
 								[
-									"2nd",
-									"{@spell blindness/deafness}, {@spell scorching ray}"
+									"2",
+									"{@spell rayo abrasador|PHB-ES}, {@spell sordera/ceguera|PHB-ES}"
 								],
 								[
-									"3rd",
-									"{@spell fireball}, {@spell stinking cloud}"
+									"3",
+									"{@spell bola de fuego|PHB-ES}, {@spell nube apestosa|PHB-ES}"
 								],
 								[
-									"4th",
-									"{@spell fire shield}, {@spell wall of fire}"
+									"4",
+									"{@spell escudo de fuego|PHB-ES}, {@spell muro de fuego|PHB-ES}"
 								],
 								[
-									"5th",
-									"{@spell flame strike}, {@spell hallow}"
+									"5",
+									"{@spell consagrar|PHB-ES}, {@spell golpe flamígero|PHB-ES}"
 								]
 							]
 						}
@@ -1678,95 +1678,96 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Dark One's Blessing|Warlock||Fiend||1"
+					"subclassFeature": "Bendición del Oscuro|Brujo|PHB-ES|Infernal|PHB-ES|1"
 				}
 			]
 		},
 		{
-			"name": "Dark One's Blessing",
+			"name": "Bendición del Oscuro",
 			"source": "PHB-ES",
-			"page": 109,
+			"page": 59,
 			"srd": true,
-			"className": "Warlock",
+			"className": "Brujo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Fiend",
+			"subclassShortName": "Infernal",
 			"subclassSource": "PHB-ES",
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"Starting at 1st level, when you reduce a hostile creature to 0 hit points, you gain temporary hit points equal to your Charisma modifier + your warlock level (minimum of 1)."
+				"A partir de nivel 1, cuando reduces a una criatura hostil a 0 puntos de golpe, ganas tantos puntos de golpe temporales como tu modificador por Carisma + tu nivel de brujo (mínimo de 1)."
 			]
 		},
 		{
-			"name": "Dark One's Own Luck",
+			"name": "La Suerte del Oscuro",
 			"source": "PHB-ES",
-			"page": 109,
+			"page": 59,
 			"srd": true,
-			"className": "Warlock",
+			"className": "Brujo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Fiend",
+			"subclassShortName": "Infernal",
 			"subclassSource": "PHB-ES",
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"Starting at 6th level, you can call on your patron to alter fate in your favor. When you make an ability check or a saving throw, you can use this feature to add a {@dice d10} to your roll. You can do so after seeing the initial roll but before any of the roll's effects occur.",
-				"Once you use this feature, you can't use it again until you finish a short or long rest."
+				"A partir de nivel 6 puedes invocar a tu patrón para alterar el destino a tu favor. Cuando hagas una prueba de característica o una tirada de salvación, puedes utilizar este rasgo para añadir {@dice 1d10} a tu tirada. Puedes realizar esto después de ver el resultado de la tirada, pero antes de que se resuelvan los efectos de esta misma.",
+				"Una vez empleado este rasgo, deberás terminar un descanso corto o largo para poder volver a usarlo otra vez."
 			]
 		},
 		{
-			"name": "Fiendish Resilience",
+			"name": "Resistencia Infernal",
 			"source": "PHB-ES",
-			"page": 109,
+			"page": 60,
 			"srd": true,
-			"className": "Warlock",
+			"className": "Brujo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Fiend",
+			"subclassShortName": "Infernal",
 			"subclassSource": "PHB-ES",
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"Starting at 10th level, you can choose one damage type when you finish a short or long rest. You gain resistance to that damage type until you choose a different one with this feature. Damage from magical weapons or silver weapons ignores this resistance."
+				"A partir de nivel 10 puedes elegir un tipo de daño cada vez que finalices un descanso corto o largo. Obtienes resistencia a ese tipo de daño hasta que vuelvas a usar este rasgo para escoger uno distinto. El daño que provenga de armas mágicas o de plata no se ve afectado por esta resistencia."
 			]
 		},
 		{
-			"name": "Hurl Through Hell",
+			"name": "Arrastrar por el Infierno",
 			"source": "PHB-ES",
-			"page": 109,
+			"page": 60,
 			"srd": true,
-			"className": "Warlock",
+			"className": "Brujo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Fiend",
+			"subclassShortName": "Infernal",
 			"subclassSource": "PHB-ES",
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Starting at 14th level, when you hit a creature with an attack, you can use this feature to instantly transport the target through the lower planes. The creature disappears and hurtles through a nightmare landscape.",
-				"At the end of your next turn, the target returns to the space it previously occupied, or the nearest unoccupied space. If the target is not a fiend, it takes {@damage 10d10} psychic damage as it reels from its horrific experience.",
-				"Once you use this feature, you can't use it again until you finish a long rest."
+				"A partir de nivel 14, cuando impactas a una criatura con un ataque, puedes utilizar este rasgo para teletransportar instantáneamente al objetivo a los Planos Inferiores. La criatura desaparece y se precipita a través de un paisaje de pesadilla.",
+				"Al final de tu siguiente turno, el objetivo vuelve al espacio que ocupaba anteriormente o al espacio desocupado más cercano si el original está ahora ocupado. Si la criatura no es un infernal, sufrirá {@damage 10d10} de daño psíquico, debido al profundo impacto que le ha producido la terrorífica experiencia.",
+				"Una vez empleado este rasgo, deberás terminar un descanso largo para poder volver a usarlo otra vez."
 			]
 		},
 		{
-			"name": "The Great Old One",
+			"name": "El Primigenio",
 			"source": "PHB-ES",
-			"page": 109,
-			"className": "Warlock",
+			"page": 60,
+			"className": "Brujo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Great Old One",
+			"subclassShortName": "Primigenio",
 			"subclassSource": "PHB-ES",
 			"level": 1,
 			"entries": [
-				"Your patron is a mysterious entity whose nature is utterly foreign to the fabric of reality. It might come from the Far Realm, the space beyond reality, or it could be one of the elder gods known only in legends. Its motives are incomprehensible to mortals, and its knowledge so immense and ancient that even the greatest libraries pale in comparison to the vast secrets it holds. The Great Old One might be unaware of your existence or entirely indifferent to you, but the secrets you have learned allow you to draw your magic from it. Entities of this type include Ghaunadar, called That Which Lurks; Tharizdun, the Chained God; Dendar, the Night Serpent; Zargon, the Returner; Great Cthulhu; and other unfathomable beings.",
+				"Tu patrón es una misteriosa entidad cuya naturaleza es completamente ajena al tejido de la realidad. Puede que provenga del Reino Lejano, un espacio más allá de la realidad, o quizá se trate de uno de los dioses antiguos que solo se recuerdan a través de leyendas. Sus motivos son incomprensibles para los mortales y su conocimiento es tan inmenso y antiguo que incluso las bibliotecas más grandes palidecen en comparación con los vastos secretos que este ser cobija. Es posible que el Primigenio no sea siquiera consciente de tu existencia o que le seas completamente indiferente, pero los secretos que has descubierto te permiten extraer poder mágico de él.",
+				"Entre las entidades de este tipo se encuentran Ghaunadar, también llamado Aquel Que Acecha; Tharizdun, el Dios Encadenado; Dendar, la Serpiente Nocturna; Zargon, El Que Regresa; el Gran Cthulhu; y otros seres insondables.",
 				{
 					"type": "entries",
-					"name": "Expanded Spell List",
+					"name": "Lista de conjuros ampliada",
 					"entries": [
-						"The Great Old One lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
+						"El Primigenio te permite elegir de entre una lista de conjuros ampliada cada vez que aprendes un conjuro de brujo. Los siguientes conjuros también forma parte de tu lista de conjuros de brujo.",
 						{
 							"type": "table",
-							"caption": "Great Old One Expanded Spells",
+							"caption": "Conjuros adicionales del Primigenio",
 							"colLabels": [
-								"Spell Level",
-								"Spells"
+								"Nivel de Conjuro",
+								"Conjuros"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -1774,24 +1775,24 @@
 							],
 							"rows": [
 								[
-									"1st",
-									"{@spell dissonant whispers}, {@spell Tasha's hideous laughter}"
+									"1",
+									"{@spell risa horrible de Tasha|PHB-ES}, {@spell susurros discordantes|PHB-ES}"
 								],
 								[
-									"2nd",
-									"{@spell detect thoughts}, {@spell phantasmal force}"
+									"2",
+									"{@spell detectar pensamientos|PHB-ES}, {@spell fuerza fantasmal|PHB-ES}"
 								],
 								[
-									"3rd",
-									"{@spell clairvoyance}, {@spell sending}"
+									"3",
+									"{@spell clarividencia|PHB-ES}, {@spell recado|PHB-ES}"
 								],
 								[
-									"4th",
-									"{@spell dominate beast}, {@spell Evard's black tentacles}"
+									"4",
+									"{@spell dominar bestia|PHB-ES}, {@spell tentáculos negros de Evard|PHB-ES}"
 								],
 								[
-									"5th",
-									"{@spell dominate person}, {@spell telekinesis}"
+									"5",
+									"{@spell dominar persona|PHB-ES}, {@spell telequinesis|PHB-ES}"
 								]
 							]
 						}
@@ -1799,91 +1800,91 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Awakened Mind|Warlock||Great Old One||1"
+					"subclassFeature": "Mente Iluminada|Brujo|PHB-ES|Primigenio|PHB-ES|1"
 				}
 			]
 		},
 		{
-			"name": "Awakened Mind",
+			"name": "Mente Iluminada",
 			"source": "PHB-ES",
-			"page": 109,
-			"className": "Warlock",
+			"page": 60,
+			"className": "Brujo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Great Old One",
+			"subclassShortName": "Primigenio",
 			"subclassSource": "PHB-ES",
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"Starting at 1st level, your alien knowledge gives you the ability to touch the minds of other creatures. You can telepathically speak to any creature you can see within 30 feet of you. You don't need to share a language with the creature for it to understand your telepathic utterances, but the creature must be able to understand at least one language."
+				"A partir de nivel 1 tus conocimientos ultraterrenos te dotan de la facultad de tocar las mentes de otras criaturas. Eres capaz de hablar telepáticamente con cualquier criatura que puedas ver a 30 pies o menos de ti. La criatura y tú no tenéis por qué compartir un idioma para que esta entienda tus locuciones telepáticas, pero sí que es necesario que tu objetivo comprenda al menos un idioma."
 			]
 		},
 		{
-			"name": "Entropic Ward",
+			"name": "Salvaguarda Entrópica",
 			"source": "PHB-ES",
-			"page": 109,
-			"className": "Warlock",
+			"page": 60,
+			"className": "Brujo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Great Old One",
+			"subclassShortName": "Primigenio",
 			"subclassSource": "PHB-ES",
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"At 6th level, you learn to magically ward yourself against attack and to turn an enemy's failed strike into good luck for yourself. When a creature makes an attack roll against you, you can use your reaction to impose disadvantage on that roll. If the attack misses you, your next attack roll against the creature has advantage if you make it before the end of your next turn.",
-				"Once you use this feature, you can't use it again until you finish a short or long rest."
+				"A nivel 6 aprendes cómo protegerte mágicamente de los ataques y cómo transformar el golpe fallido de un oponente en buena suerte para ti mismo. Cuando una criatura haga una tirada de ataque contra ti, podrás usar tu reacción para dar desventaja a la tirada. Si el ataque falla, tu siguiente tirada de ataque contra dicha criatura tendrá ventaja, siempre y cuando la realices antes del final de tu siguiente turno.",
+				"Una vez utilizado este rasgo, deberás terminar un descanso corto o largo para poder volver a usarlo otra vez."
 			]
 		},
 		{
-			"name": "Thought Shield",
+			"name": "Escudo Mental",
 			"source": "PHB-ES",
-			"page": 109,
-			"className": "Warlock",
+			"page": 60,
+			"className": "Brujo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Great Old One",
+			"subclassShortName": "Primigenio",
 			"subclassSource": "PHB-ES",
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"Starting at 10th level, your thoughts can't be read by telepathy or other means unless you allow it. You also have resistance to psychic damage, and whenever a creature deals psychic damage to you, that creature takes the same amount of damage that you do."
+				"A partir de nivel 10 tus pensamientos ya no pueden ser leídos mediante telepatía o cualquier otro medio sin que tú lo permitas. Además, tienes resistencia al daño psíquico, y siempre que una criatura te inflija daño psíquico, ella también recibirá la misma cantidad de daño que tú has sufrido."
 			]
 		},
 		{
-			"name": "Create Thrall",
+			"name": "Crear Siervo",
 			"source": "PHB-ES",
-			"page": 109,
-			"className": "Warlock",
+			"page": 60,
+			"className": "Brujo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Great Old One",
+			"subclassShortName": "Primigenio",
 			"subclassSource": "PHB-ES",
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"At 14th level, you gain the ability to infect a humanoid's mind with the alien magic of your patron. You can use your action to touch an {@condition incapacitated} humanoid. That creature is then {@condition charmed} by you until a {@spell remove curse} spell is cast on it, the {@condition charmed} condition is removed from it, or you use this feature again.",
-				"You can communicate telepathically with the {@condition charmed} creature as long as the two of you are on the same plane of existence."
+				"A nivel 14, obtienes la capacidad de infectar la mente de un humanoide con la magia extraterrenal de tu patrón. Puedes utilizar tu acción para tocar a un humanoide {@condition incapacitado|PHB-ES}. Tras hacer esto, la criatura estará {@condition hechizado|PHB-ES|hechizada} por ti hasta que se lance un conjuro de {@spell levantar maldición|PHB-ES} sobre ella, se la libre del estado \"{@condition hechizado|PHB-ES}\" o uses este rasgo de nuevo.",
+				"Mientras los dos estéis en el mismo plano de existencia podrás comunicarte telepáticamente con la criatura {@condition hechizado|PHB-ES|hechizada}."
 			]
 		},
 		{
-			"name": "The Undying",
+			"name": "El Inmortal",
 			"source": "SCAG-ES",
-			"page": 139,
-			"className": "Warlock",
+			"page": 126,
+			"className": "Brujo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Undying",
+			"subclassShortName": "Inmortal",
 			"subclassSource": "SCAG-ES",
 			"level": 1,
 			"entries": [
-				"Death holds no sway over your patron, who has unlocked the secrets of everlasting life, although such a prize—like all power—comes at a price. Once mortal, the Undying has seen mortal lifetimes pass like the seasons, like the flicker of endless days and nights. It has the secrets of the ages to share, secrets of life and death. Beings of this sort include Vecna, Lord of the Hand and the Eye; the dread Iuz; the lich-queen Vol; the Undying Court of Aerenal; Vlaakith, lich-queen of the githyanki; and the deathless wizard Fistandantalus.",
-				"In the Realms, Undying patrons include Larloch the Shadow King, legendary master of Warlock's Crypt, and Gilgeam, the God-King of Unther.",
+				"La muerte no controla a tu patrón, que ha desentrañado los secretos de la vida eterna, aunque tal recompensa tiene un precio, como cualquier poder. El Inmortal, que antaño fue mortal, ha visto pasar vidas mortales como si fueran estaciones, como el parpadeo de días y noches sin fin. Puede compartir los secretos de eras, de la vida y la muerte. Entre este tipo de seres están Vecna, el Señor de la Mano y el Ojo; el temible Iuz; la reina liche Vol; la Corte Eterna de Aerenal: Vlaakith, la reina liche de los githyankis; y Fistandantalus, el mago inmortal.",
+				"En los Reinos, entre los patrones Inmortales se encuentran Larloch, el Rey Sombra y amo legendario de la Cripta del Brujo; y Gilgeam, el Dios y Rey de Unther.",
 				{
 					"type": "entries",
-					"name": "Expanded Spell List",
+					"name": "Lista de conjuros ampliada",
 					"entries": [
-						"The Undying lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
+						"El Inmortal te permite elegir de entre una lista de conjuros ampliada cada vez que aprendes un conjuro de brujo. Los siguientes conjuros también forman parte de tu lista de conjuros de brujo.",
 						{
 							"type": "table",
-							"caption": "Undying Expanded Spells",
+							"caption": "Lista de conjuros ampliada de Inmortal",
 							"colLabels": [
-								"Spell Level",
-								"Spells"
+								"Nivel de conjuro",
+								"Conjuros"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -1891,24 +1892,24 @@
 							],
 							"rows": [
 								[
-									"1st",
-									"{@spell false life}, {@spell ray of sickness}"
+									"1",
+									"{@spell falsa vida|PHB-ES}, {@spell rayo nauseabundo|PHB-ES}"
 								],
 								[
-									"2nd",
-									"{@spell blindness/deafness}, {@spell silence}"
+									"2",
+									"{@spell silencio|PHB-ES}, {@spell sordera/ceguera|PHB-ES}"
 								],
 								[
-									"3rd",
-									"{@spell feign death}, {@spell speak with dead}"
+									"3",
+									"{@spell fingir muerte|PHB-ES}, {@spell hablar con los muertos|PHB-ES}"
 								],
 								[
-									"4th",
-									"{@spell aura of life}, {@spell death ward}"
+									"4",
+									"{@spell aura de vida|PHB-ES}, {@spell guarda contra la muerte|PHB-ES}"
 								],
 								[
-									"5th",
-									"{@spell contagion}, {@spell legend lore}"
+									"5",
+									"{@spell conocer las leyendas|PHB-ES}, {@spell contagio|PHB-ES}"
 								]
 							]
 						}
@@ -1916,95 +1917,95 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Among the Dead|Warlock||Undying|SCAG|1"
+					"subclassFeature": "Entre los Muertos|Brujo|PHB-ES|Inmortal|SCAG-ES|1"
 				}
 			]
 		},
 		{
-			"name": "Among the Dead",
+			"name": "Entre los Muertos",
 			"source": "SCAG-ES",
-			"page": 139,
-			"className": "Warlock",
+			"page": 126,
+			"className": "Brujo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Undying",
+			"subclassShortName": "Inmortal",
 			"subclassSource": "SCAG-ES",
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"Starting at 1st level, you learn the {@spell spare the dying} cantrip, which counts as a warlock cantrip for you. You also have advantage on saving throws against any disease.",
-				"Additionally, undead have difficulty harming you. If an undead targets you directly with an attack or a harmful spell, that creature must make a Wisdom saving throw against your spell save DC (an undead needn't make the save when it includes you in an area effect, such as the explosion of {@spell fireball}). On a failed save, the creature must choose a new target or forfeit targeting someone instead of you, potentially wasting the attack or spell. On a successful save, the creature is immune to this effect for 24 hours. An undead is also immune to this effect for 24 hours if you target it with an attack or a harmful spell."
+				"A partir del nivel 1, aprendes el truco {@spell piedad con los moribundos|PHB-ES}, que para ti es un truco de brujo. También tienes ventaja en las tiradas de salvación contra cualquier enfermedad.",
+				"Además, los muertos vivientes tienen problemas para herirte. Si un muerto viviente te elige como objetivo directo de un ataque o conjuro dañino, la criatura debe hacer una tirada de salvación de Sabiduría contra la CD de tu salvación de conjuros. El muerto viviente no necesita realizar la tirada si tú simplemente estás en la zona afectada, como en la explosión de {@spell bola de fuego|PHB-ES}. Si no supera la tirada, la criatura debe escoger a un nuevo objetivo o renunciar a atacar a alguien que no seas tú, lo que puede significar malgastar el ataque o conjuro. Si supera la tirada, será inmune a este efecto durante 24 horas. Un muerto viviente también será inmune a este efecto durante 24 horas si le eliges como objetivo de un ataque o conjuro dañino."
 			]
 		},
 		{
-			"name": "Defy Death",
+			"name": "Desafiar a la Muerte",
 			"source": "SCAG-ES",
-			"page": 139,
-			"className": "Warlock",
+			"page": 127,
+			"className": "Brujo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Undying",
+			"subclassShortName": "Inmortal",
 			"subclassSource": "SCAG-ES",
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"Starting at 6th level, you can give yourself vitality when you cheat death or when you help someone else cheat it. You can regain hit points equal to {@dice 1d8} + your Constitution modifier (minimum of 1 hit point) when you succeed on a death saving throw or when you stabilize a creature with {@spell spare the dying}.",
-				"Once you use this feature, you can't use it again until you finish a long rest."
+				"A partir del nivel 6, puedes obtener vitalidad cuando burlas a la muerte o cuando ayudas a hacerlo a otro. Recuperas {@dice 1d8} + tu modificador de Constitución puntos de golpe (mínimo 1 punto de golpe) cuando superas una tirada de salvación contra muerte o cuando estabilizas a una criatura usando {@spell piedad con los moribundos|PHB-ES}.",
+				"Una vez utilizado este rasgo, deberás terminar un des canso largo para poder volver a usarlo."
 			]
 		},
 		{
-			"name": "Undying Nature",
+			"name": "Naturaleza Imperecedera",
 			"source": "SCAG-ES",
-			"page": 139,
-			"className": "Warlock",
+			"page": 127,
+			"className": "Brujo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Undying",
+			"subclassShortName": "Inmortal",
 			"subclassSource": "SCAG-ES",
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"Beginning at 10th level, you can hold your breath indefinitely, and you don't require food, water, or sleep, although you still require rest to reduce {@condition exhaustion} and still benefit from finishing short and long rests.",
-				"In addition, you age at a slower rate. For every 10 years that pass, your body ages only 1 year, and you are immune to being magically aged."
+				"A partir del nivel 10, puedes aguantar el aliento infinitamente y no necesitas comida, agua o sueño, aunque sigues requiriendo descansar para reducir el {@condition cansancio|PHB-ES} y seguir aprovechando los descansos cortos y largos.",
+				"Además, envejeces a menor velocidad. Por cada 10 años que pasan, tu cuerpo solo envejece 1 año y eres inmune al envejecimiento mágico."
 			]
 		},
 		{
-			"name": "Indestructible Life",
+			"name": "Vida indestructible",
 			"source": "SCAG-ES",
-			"page": 139,
-			"className": "Warlock",
+			"page": 127,
+			"className": "Brujo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Undying",
+			"subclassShortName": "Inmortal",
 			"subclassSource": "SCAG-ES",
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"When you reach 14th level, you partake some of the true secrets of the Undying. On your turn, you can use a bonus action to regain hit points equal to {@dice 1d8} + your warlock level. Additionally, if you put a severed body part of yours back in place when you use this feature, the part reattaches.",
-				"Once you use this feature, you can't use it again until you finish a short or long rest."
+				"Cuando llegas a nivel 14, eres partícipe de algunos de los verdaderos secretos de los Inmortales. Puedes usar una acción adicional durante tu turno para recuperar {@dice 1d8} + tu nivel de brujo puntos de golpe. Además, si recolocas una parte de tu cuerpo cercenada en su lugar cuando empleas este rasgo, se volverá a unir.",
+				"Una vez utilizado este rasgo, deberás terminar un descanso corto o largo para poder volver a usarlo."
 			]
 		},
 		{
-			"name": "The Fathomless",
+			"name": "El Insondable",
 			"source": "TCE-ES",
-			"page": 72,
-			"className": "Warlock",
+			"page": 34,
+			"className": "Brujo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Fathomless",
+			"subclassShortName": "Insondable",
 			"subclassSource": "TCE-ES",
 			"level": 1,
 			"entries": [
-				"You have plunged into a pact with the deeps. An entity of the ocean, the Elemental Plane of Water, or another otherworldly sea now allows you to draw on its thalassic power. Is it merely using you to learn about terrestrial realms, or does it want you to open cosmic floodgates and drown the world?",
-				"Perhaps you were born into a generational cult that venerates the Fathomless and its spawn. Or you might have been shipwrecked and on the brink of drowning when your patron's grasp offered you a chance at life. Whatever the reason for your pact, the sea and its unknown depths call to you.",
-				"Entities of the deep that might empower a warlock include krakens, ancient water elementals, godlike hallucinations dreamed into being by kuo-toa, merfolk demigods, and sea hag covens.",
+				"Te has sumido en un pacto con las profundidades. Una entidad del océano, el Plano Elemental del Agua u otro mar espectral ahora te permite aprovechar su poder talásico. ¿Te está usando para aprender sobre los reinos terrestres o quiere que abras unas esclusas cósmicas para inundar el mundo?",
+				"Quizá naciste en un culto generacional que venera al Insondable y a su prole. O quizá hayas sufrido un naufragio y estuvieras a punto de ahogarte cuando la ayuda de tu patrón te brindó una posibilidad de vivir. Sea cual sea el motivo de tu pacto, el mar y sus desconocidas profundidades te llaman.",
+				"Entre las entidades de lo profundo que podrían potenciar a un brujo encontramos krakens, elementales de agua ancestrales, alucinaciones divinas soñadas y que toman cuerpo en forma de kuo-toa, semidioses sirénidos y aquelarres de sagas de los mares.",
 				{
 					"type": "entries",
-					"name": "Expanded Spell List",
+					"name": "Lista de Conjuros Ampliada",
 					"entries": [
-						"{@i 1st-level Fathomless feature}",
-						"The Fathomless lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
+						"{@i Rasgo del Insondable de nivel 1}",
+						"El Insondable te permite elegir entre una lista de conjuros ampliada cuando aprendes un conjuro de brujo. Los siguientes conjuros se añaden a la lista de conjuros de brujo para ti.",
 						{
 							"type": "table",
-							"caption": "Fathomless Expanded Spells",
+							"caption": "Conjuros Adicionales del Insondable",
 							"colLabels": [
-								"Spell Level",
-								"Spells"
+								"Nivel de conjuro",
+								"Conjuros"
 							],
 							"colStyles": [
 								"col-2 text-center",
@@ -2012,24 +2013,24 @@
 							],
 							"rows": [
 								[
-									"1st",
-									"{@spell create or destroy water}, {@spell thunderwave}"
+									"1",
+									"{@spell crear o destruir agua|PHB-ES}, {@spell ola atronadora|PHB-ES}"
 								],
 								[
-									"2nd",
-									"{@spell gust of wind}, {@spell silence}"
+									"2",
+									"{@spell ráfaga de viento|PHB-ES}, {@spell silencio|PHB-ES}"
 								],
 								[
-									"3rd",
-									"{@spell lightning bolt}, {@spell sleet storm}"
+									"3",
+									"{@spell relámpago|PHB-ES}, {@spell tormenta de aguanieve|PHB-ES}"
 								],
 								[
-									"4th",
-									"{@spell control water}, {@spell summon elemental|tce} (water only)"
+									"4",
+									"{@spell controlar agua|PHB-ES}, {@spell invocar elemental|TCE-ES} (solo agua)"
 								],
 								[
-									"5th",
-									"{@spell Bigby's hand} (appears as a tentacle), {@spell cone of cold}"
+									"5",
+									"{@spell cono de frío|PHB-ES}, {@spell mano de Bigby|PHB-ES} (aparece en forma de tentáculo)"
 								]
 							]
 						}
@@ -2037,128 +2038,128 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Tentacle of the Deeps|Warlock||Fathomless|TCE|1"
+					"subclassFeature": "Tentáculo de las Profundidades|Brujo|PHB-ES|Insondable|TCE-ES|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Gift of the Sea|Warlock||Fathomless|TCE|1"
+					"subclassFeature": "Don de los Mares|Brujo|PHB-ES|Insondable|TCE-ES|1"
 				}
 			]
 		},
 		{
-			"name": "Gift of the Sea",
+			"name": "Don de los Mares",
 			"source": "TCE-ES",
-			"page": 72,
-			"className": "Warlock",
+			"page": 35,
+			"className": "Brujo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Fathomless",
+			"subclassShortName": "Insondable",
 			"subclassSource": "TCE-ES",
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"{@i 1st-level Fathomless feature}",
-				"You gain a swimming speed of 40 feet, and you can breathe underwater."
+				"{@i Rasgo del Insondable de nivel 1}",
+				"Obtienes una velocidad nadando de 40 pies y puedes respirar bajo el agua."
 			]
 		},
 		{
-			"name": "Tentacle of the Deeps",
+			"name": "Tentáculo de las Profundidades",
 			"source": "TCE-ES",
-			"page": 72,
-			"className": "Warlock",
+			"page": 34,
+			"className": "Brujo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Fathomless",
+			"subclassShortName": "Insondable",
 			"subclassSource": "TCE-ES",
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"{@i 1st-level Fathomless feature}",
-				"You can magically summon a spectral tentacle that strikes at your foes. As a bonus action, you create a 10-foot-long tentacle at a point you can see within 60 feet of you. The tentacle lasts for 1 minute or until you use this feature to create another tentacle.",
-				"When you create the tentacle, you can make a melee spell attack against one creature within 10 feet of it. On a hit, the target takes {@damage 1d8} cold damage, and its speed is reduced by 10 feet until the start of your next turn. When you reach 10th level in this class, the damage increases to {@dice 2d8}.",
-				"As a bonus action on your turn, you can move the tentacle up to 30 feet and repeat the attack.",
-				"You can summon the tentacle a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+				"{@i Rasgo del Insondable de nivel 1}",
+				"Puedes invocar mágicamente un tentáculo espectral que ataque a tus enemigos. Como acción adicional, creas un tentáculo de 10 pies de largo en un punto que puedas ver a 60 pies o menos de ti. El tentáculo dura 1 minuto o hasta que utilices este rasgo para crear otro tentáculo.",
+				"Cuando crees el tentáculo, podrás hacer un ataque de conjuro cuerpo a cuerpo contra una criatura que se encuentre a 10 pies o menos de él. Si impacta, el objetivo recibe {@damage 1d8} de daño de frío y su velocidad se reduce en 10 pies hasta el principio de tu siguiente turno. Cuando alcanzas el nivel 10 de esta clase, el daño adicional aumenta a {@dice 2d8}.",
+				"Como acción adicional durante tu turno, puedes mover el tentáculo hasta 30 pies y repetir el ataque.",
+				"Puedes invocar el tentáculo una cantidad de veces igual a tu bonificador por competencia y recuperas todos los usos tras finalizar un descanso largo."
 			]
 		},
 		{
-			"name": "Guardian Coil",
+			"name": "Bucle Guardián",
 			"source": "TCE-ES",
-			"page": 72,
-			"className": "Warlock",
+			"page": 35,
+			"className": "Brujo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Fathomless",
+			"subclassShortName": "Insondable",
 			"subclassSource": "TCE-ES",
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"{@i 6th-level Fathomless feature}",
-				"Your Tentacle of the Deeps can defend you and others, interposing itself between them and harm. When you or a creature you can see takes damage while within 10 feet of the tentacle, you can use your reaction to choose one of those creatures and reduce the damage to that creature by {@dice 1d8}. When you reach 10th level in this class, the damage reduced by the tentacle increases to {@dice 2d8}."
+				"{@i Rasgo del Insondable de nivel 6}",
+				"Tu Tentáculo de las Profundidades puede defenderos a ti y a otros, interponiéndose entre vosotros y el daño. Cuando tú o una criatura que puedas ver recibáis daño mientras estéis a 10 pies o menos del tentáculo, podrás usar tu reacción para elegir una de esas criaturas y reducir el daño que recibe en {@dice 1d8}. Cuando alcanzas el nivel 10 de esta clase, el daño reducido por el tentáculo aumenta a {@dice 2d8}."
 			]
 		},
 		{
-			"name": "Oceanic Soul",
+			"name": "Alma Oceánica",
 			"source": "TCE-ES",
-			"page": 72,
-			"className": "Warlock",
+			"page": 35,
+			"className": "Brujo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Fathomless",
+			"subclassShortName": "Insondable",
 			"subclassSource": "TCE-ES",
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"{@i 6th-level Fathomless feature}",
-				"You are now even more at home in the depths. You gain resistance to cold damage. In addition, when you are fully submerged, any creature that is also fully submerged can understand your speech, and you can understand theirs."
+				"{@i Rasgo del Insondable de nivel 6}",
+				"Ahora te sientes aún más a gusto cuando estás en las profundidades. Ganas resistencia al daño de frío. Además, cuando estés totalmente sumergido, cualquier criatura que también esté enteramente sumergida podrá entender lo que digas, y viceversa."
 			]
 		},
 		{
-			"name": "Grasping Tentacles",
+			"name": "Tentáculos Prensiles",
 			"source": "TCE-ES",
-			"page": 72,
-			"className": "Warlock",
+			"page": 35,
+			"className": "Brujo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Fathomless",
+			"subclassShortName": "Insondable",
 			"subclassSource": "TCE-ES",
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"{@i 10th-level Fathomless feature}",
-				"You learn the spell {@spell Evard's black tentacles}. It counts as a warlock spell for you, but it doesn't count against the number of spells you know. You can also cast it once without a spell slot, and you regain the ability to do so when you finish a long rest.",
-				"Whenever you cast this spell, your patron's magic bolsters you, granting you a number of temporary hit points equal to your warlock level. Moreover, damage can't break your {@status concentration} on this spell."
+				"{@i Rasgo del Insondable de nivel 10}",
+				"Aprendes el conjuro {@spell tentáculos negros de Evard|PHB-ES}. Este conjuro se considera, en lo que a ti respecta, un conjuro de brujo, pero no cuenta para el total de conjuros que conoces. También puedes lanzarlo una vez sin ningún espacio de conjuro y recuperas la capacidad de hacerlo tras finalizar un descanso largo.",
+				"Cuando lanzas este conjuro, la magia de tu patrón te potencia y te otorga una cantidad de puntos de golpe temporales igual a tu nivel de brujo. Además, el daño no puede romper tu {@status concentración|PHB-ES} en este conjuro."
 			]
 		},
 		{
-			"name": "Fathomless Plunge",
+			"name": "Zambullida Insondable",
 			"source": "TCE-ES",
-			"page": 72,
-			"className": "Warlock",
+			"page": 35,
+			"className": "Brujo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Fathomless",
+			"subclassShortName": "Insondable",
 			"subclassSource": "TCE-ES",
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"{@i 14th-level Fathomless feature}",
-				"You can magically open temporary conduits to watery destinations. As an action, you can teleport yourself and up to five other willing creatures that you can see within 30 feet of you. Amid a whirl of tentacles, you all vanish and then reappear up to 1 mile away in a body of water you've seen (pond size or larger) or within 30 feet of it, each of you appearing in an unoccupied space within 30 feet of the others.",
-				"Once you use this feature, you can't use it again until you finish a short or long rest."
+				"{@i Rasgo del Insondable de nivel 14}",
+				"Puedes abrir mágicamente conductos temporales a destinos acuáticos. Como acción, puedes teletransportarte a ti y a hasta otras cinco criaturas voluntarias que puedas ver a 30 pies o menos de ti. Entre un remolino de tentáculos, todos os desvaneceréis y reapareceréis hasta a 1 milla de distancia en una masa de agua que hayas visto (con el tamaño de un estanque o mayor) o a 30 pies o menos de ella, y cada uno de vosotros apareceréis en un espacio sin ocupar a 30 pies o menos de los demás.",
+				"Cuando uses este rasgo, no podrás volver a hacerlo hasta que finalices un descanso corto o largo."
 			]
 		},
 		{
-			"name": "The Genie",
+			"name": "El Genio",
 			"source": "TCE-ES",
-			"page": 73,
-			"className": "Warlock",
+			"page": 32,
+			"className": "Brujo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Genie",
+			"subclassShortName": "Genio",
 			"subclassSource": "TCE-ES",
 			"level": 1,
 			"entries": [
-				"You have made a pact with one of the rarest kinds of genie, a noble genie. Such entities rule vast fiefs on the Elemental Planes and have great influence over lesser genies and elemental creatures. Noble genies are varied in their motivations, but most are arrogant and wield power that rivals that of lesser deities. They delight in turning the table on mortals, who often bind genies into servitude, and readily enter into pacts that expand their reach.",
-				"You choose your patron's kind or determine it randomly, using the Genie Kind table.",
+				"Has hecho un pacto con uno de Jos tipos de genio más inusuales: un genio noble. Dichas entidades gobiernan vastos feudos de los Planos Elementales y tienen gran influencia sobre genios inferiores y criaturas elementales. Los genios nobles tienen cada cual sus motivaciones, pero la mayoría son arrogantes y ostentan un poder que rivaliza con el de las deidades menores. Les gusta pagar a los humanos con su misma moneda, dado que estos a menudo obligan a los genios a servirlos, y siempre están dispuestos a hacer pactos que expandan sus dominios.",
+				"Eliges tu tipo de patrón o lo determinas de forma aleatoria usando la tabla \"Tipo de genio\".",
 				{
 					"type": "table",
-					"caption": "Genie Kind",
+					"caption": "Tipo de genio",
 					"colLabels": [
 						"d4",
-						"Kind",
-						"Element"
+						"Tipo",
+						"Elemento"
 					],
 					"colStyles": [
 						"col-2 text-center",
@@ -2168,42 +2169,42 @@
 					"rows": [
 						[
 							1,
-							"{@creature Dao}",
-							"Earth"
+							"{@creature Dao|MM-ES}",
+							"Tierra"
 						],
 						[
 							2,
-							"{@creature Djinni}",
-							"Air"
+							"{@creature Djinni|MM-ES}",
+							"Aire"
 						],
 						[
 							3,
-							"{@creature Efreeti}",
-							"Fire"
+							"{@creature Efreeti|MM-ES}",
+							"Fuego"
 						],
 						[
 							4,
-							"{@creature Marid}",
-							"Water"
+							"{@creature Marid|MM-ES}",
+							"Agua"
 						]
 					]
 				},
 				{
-					"name": "Expanded Spell List",
+					"name": "Lista de Conjuros Ampliada",
 					"type": "entries",
 					"entries": [
-						"{@i 1st-level Genie feature}",
-						"The Genie lets you choose from an expanded list of spells when you learn a warlock spell. The Genie Expanded Spells table shows the genie spells that are added to the warlock spell list for you, along with the spells associated in the table with your patron's kind: dao, djinni, efreeti, or marid.",
+						"{@i Rasgo del Genio de nivel 1}",
+						"El Genio te permite elegir entre una lista de conjuros ampliada cuando aprendes un conjuro de brujo. La tabla \"Conjuros adicionales del Genio\" muestra Jos conjuros de genio que se añaden a la lista de conjuros de brujo para ti, además de los conjuros asociados en la tabla con tu tipo de patrón: dao, djinni, efreeti o marid.",
 						{
 							"type": "table",
-							"caption": "Genie Expanded Spells",
+							"caption": "Conjuros Adicionales del Genio",
 							"colLabels": [
-								"Spell Level",
-								"Genie Spells",
-								"Dao Spells",
-								"Djinni Spells",
-								"Efreeti Spells",
-								"Marid Spells"
+								"Nivel de conjuro",
+								"Conjuros de genio",
+								"Conjuros de dao",
+								"Conjuros de djinni",
+								"Conjuros de efreeti",
+								"Conjuros de marid"
 							],
 							"colStyles": [
 								"col-1 text-center",
@@ -2215,48 +2216,48 @@
 							],
 							"rows": [
 								[
-									"1st",
-									"{@spell detect evil and good}",
-									"{@spell sanctuary}",
-									"{@spell thunderwave}",
-									"{@spell burning hands}",
-									"{@spell fog cloud}"
+									"1",
+									"{@spell detectar el bien y el mal|PHB-ES}",
+									"{@spell santuario|PHB-ES}",
+									"{@spell ola atronadora|PHB-ES}",
+									"{@spell manos ardientes|PHB-ES}",
+									"{@spell nube de oscurecimiento|PHB-ES}"
 								],
 								[
-									"2nd",
-									"{@spell phantasmal force}",
-									"{@spell spike growth}",
-									"{@spell gust of wind}",
-									"{@spell scorching ray}",
-									"{@spell blur}"
+									"2",
+									"{@spell fuerza fantasmal|PHB-ES}",
+									"{@spell crecimiento espinoso|PHB-ES}",
+									"{@spell ráfaga de viento|PHB-ES}",
+									"{@spell rayo abrasador|PHB-ES}",
+									"{@spell contorno borroso|PHB-ES}"
 								],
 								[
-									"3rd",
-									"{@spell create food and water}",
-									"{@spell meld into stone}",
-									"{@spell wind wall}",
-									"{@spell fireball}",
-									"{@spell sleet storm}"
+									"3",
+									"{@spell crear comida y agua|PHB-ES}",
+									"{@spell fundirse con la piedra|PHB-ES}",
+									"{@spell muro de viento|PHB-ES}",
+									"{@spell bola de fuego|PHB-ES}",
+									"{@spell tormenta de aguanieve|PHB-ES}"
 								],
 								[
-									"4th",
-									"{@spell phantasmal killer}",
-									"{@spell stone shape}",
-									"{@spell greater invisibility}",
-									"{@spell fire shield}",
-									"{@spell control water}"
+									"4",
+									"{@spell asesino fantasmal|PHB-ES}",
+									"{@spell moldear la piedra|PHB-ES}",
+									"{@spell invisibilidad mejorada|PHB-ES}",
+									"{@spell escudo de fuego|PHB-ES}",
+									"{@spell controlar agua|PHB-ES}"
 								],
 								[
-									"5th",
-									"{@spell creation}",
-									"{@spell wall of stone}",
-									"{@spell seeming}",
-									"{@spell flame strike}",
-									"{@spell cone of cold}"
+									"5",
+									"{@spell creación|PHB-ES}",
+									"{@spell muro de piedra|PHB-ES}",
+									"{@spell apariencia|PHB-ES}",
+									"{@spell golpe flamígero|PHB-ES}",
+									"{@spell cono de frío|PHB-ES}"
 								],
 								[
-									"9th",
-									"{@spell wish}",
+									"9",
+									"{@spell deseo|PHB-ES}",
 									"—",
 									"—",
 									"—",
@@ -2268,29 +2269,29 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Genie's Vessel|Warlock||Genie|TCE|1"
+					"subclassFeature": "Recipiente del Genio|Brujo|PHB-ES|Genio|TCE-ES|1"
 				}
 			]
 		},
 		{
-			"name": "Genie's Vessel",
+			"name": "Recipiente del Genio",
 			"source": "TCE-ES",
-			"page": 73,
-			"className": "Warlock",
+			"page": 32,
+			"className": "Brujo",
 			"classSource": "PHB-ES",
-			"subclassShortName": "Genie",
+			"subclassShortName": "Genio",
 			"subclassSource": "TCE-ES",
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"{@i 1st-level Genie feature}",
-				"Your patron gifts you a magical vessel that grants you a measure of the genie's power. The vessel is a Tiny object, and you can use it as a spellcasting focus for your warlock spells. You decide what the object is, or you can determine what it is randomly by rolling on the Genie's Vessel table.",
+				"{@i Rasgo del Genio de nivel 1}",
+				"Tu patrón tu regala un recipiente mágico que te otorga una medida del poder del genio. Es un objeto Diminuto y puedes utilizarlo como canalizador mágico para tus conjuros de brujo. Tú decides Jo que es el objeto o puedes determinarlo aleatoriamente tirando en la tabla \"Recipiente del Genio\".",
 				{
 					"type": "table",
-					"caption": "Genie's Vessel",
+					"caption": "Recipiente del Genio",
 					"colLabels": [
 						"d6",
-						"Vessel"
+						"Recipiente"
 					],
 					"colStyles": [
 						"col-2 text-center",
@@ -2299,547 +2300,545 @@
 					"rows": [
 						[
 							"1",
-							"Oil lamp"
+							"Lámpara de aceite"
 						],
 						[
 							"2",
-							"Urn"
+							"Urna"
 						],
 						[
 							"3",
-							"Ring with a compartment"
+							"Anillo con un compartimento"
 						],
 						[
 							"4",
-							"Stoppered bottle"
+							"Botella con tapón"
 						],
 						[
 							"5",
-							"Hollow statuette"
+							"Estatuilla hueca"
 						],
 						[
 							"6",
-							"Ornate lantern"
+							"Farol ornamentado"
 						]
 					]
 				},
-				"While you are touching the vessel, you can use it in the following ways:",
+				"Mientras estés tocando el recipiente, puedes usarlo de las siguientes formas:",
 				{
 					"type": "options",
 					"style": "list-hang-notitle",
 					"entries": [
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Bottled Respite|Warlock|TCE|Genie|TCE|1"
+							"subclassFeature": "Alivio Embotellado|Brujo|TCE-ES|Genio|TCE-ES|1"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Genie's Wrath|Warlock|TCE|Genie|TCE|1"
+							"subclassFeature": "Ira del Genio|Brujo|TCE-ES|Genio|TCE-ES|1"
 						}
 					]
 				},
-				"The vessel's AC equals your spell save DC. Its hit points equal your warlock level plus your proficiency bonus, and it is immune to poison and psychic damage.",
-				"If the vessel is destroyed or you lose it, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and the previous vessel is destroyed if it still exists. The vessel vanishes in a flare of elemental power when you die."
+				"La CA del recipiente es igual a tu CD de salvación de conjuros. Sus puntos de golpe son iguales a tu nivel de brujo más tu bonificador por competencia y es inmune al daño de veneno y al psíquico.",
+				"Si el recipiente es destruido o lo pierdes, puedes realizar una ceremonia de 1 hora para recibir uno de sustitución de tu patrón. Esta ceremonia se puede llevar a cabo durante un descanso corto o largo y destruye el recipiente anterior, si aún existe. El recipiente se desvanece con un destello de poder elemental cuando mueres."
 			]
 		},
 		{
-			"name": "Elemental Gift",
+			"name": "Alivio Embotellado",
 			"source": "TCE-ES",
-			"page": 73,
-			"className": "Warlock",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Genie",
-			"subclassSource": "TCE-ES",
-			"level": 6,
-			"header": 2,
-			"entries": [
-				"{@i 6th-level Genie feature}",
-				"You begin to take on characteristics of your patron's kind. You now have resistance to a damage type determined by your patron's kind: bludgeoning (dao), thunder (djinni), fire (efreeti), or cold (marid).",
-				"In addition, as a bonus action, you can give yourself a flying speed of 30 feet that lasts for 10 minutes, during which you can hover. You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
-			]
-		},
-		{
-			"name": "Sanctuary Vessel",
-			"source": "TCE-ES",
-			"page": 73,
-			"className": "Warlock",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Genie",
-			"subclassSource": "TCE-ES",
-			"level": 10,
-			"header": 2,
-			"entries": [
-				"{@i 10th-level Genie feature}",
-				"When you enter your Genie's Vessel via the Bottled Respite feature, you can now choose up to five willing creatures that you can see within 30 feet of you, and the chosen creatures are drawn into the vessel with you.",
-				"As a bonus action, you can eject any number of creatures from the vessel, and everyone is ejected if you leave or die or if the vessel is destroyed.",
-				"In addition, anyone (including you) who remains within the vessel for at least 10 minutes gains the benefit of finishing a short rest, and anyone can add your proficiency bonus to the number of hit points they regain if they spend any Hit Dice as part of a short rest there."
-			]
-		},
-		{
-			"name": "Limited Wish",
-			"source": "TCE-ES",
-			"page": 73,
-			"className": "Warlock",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Genie",
-			"subclassSource": "TCE-ES",
-			"level": 14,
-			"header": 2,
-			"entries": [
-				"{@i 14th-level Genie feature}",
-				"You entreat your patron to grant you a small wish. As an action, you can speak your desire to your Genie's Vessel, requesting the effect of one spell that is 6th level or lower and has a casting time of 1 action. The spell can be from any class's spell list, and you don't need to meet the requirements in that spell, including costly components; the spell simply takes effect as part of this action.",
-				"Once you use this feature, you can't use it again until you finish {@dice 1d4} long rests."
-			]
-		},
-		{
-			"name": "The Undead",
-			"source": "VRGR-ES",
-			"page": 30,
-			"className": "Warlock",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Undead",
-			"subclassSource": "VRGR-ES",
-			"level": 1,
-			"entries": [
-				"You've made a pact with a deathless being, a creature that defies the cycle and life and death, forsaking its mortal shell so it might eternally pursue its unfathomable ambitions. For such beings, time and morality are fleeting things, the concerns of those for whom grains of sand still rush through life's hourglass. Having once been mortal themselves, these ancient undead know firsthand the paths of ambition and the routes past the doors of death. They eagerly share this profane knowledge, along with other secrets, with those who work their will among the living.",
-				"Beings of this type include the demilich Acererak, the vampire tyrant Kas the Bloody-Handed, the githyanki lich-queen Vlaakith, the dracolich Dragotha, the undead pharaoh Ankhtepot, and the elusive Darklord, Azalin Rex.",
-				{
-					"type": "entries",
-					"name": "Expanded Spell List",
-					"entries": [
-						"{@i 1st-level Undead feature}",
-						"The Undead lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
-						{
-							"type": "table",
-							"caption": "Undead Expanded Spells",
-							"colLabels": [
-								"Spell Level",
-								"Spells"
-							],
-							"colStyles": [
-								"col-2 text-center",
-								"col-10"
-							],
-							"rows": [
-								[
-									"1st",
-									"{@spell bane}, {@spell false life}"
-								],
-								[
-									"2nd",
-									"{@spell blindness/deafness}, {@spell phantasmal force}"
-								],
-								[
-									"3rd",
-									"{@spell phantom steed}, {@spell speak with dead}"
-								],
-								[
-									"4th",
-									"{@spell death ward}, {@spell greater invisibility}"
-								],
-								[
-									"5th",
-									"{@spell antilife shell}, {@spell cloudkill}"
-								]
-							]
-						}
-					]
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Form of Dread|Warlock||Undead|VRGR|1"
-				}
-			]
-		},
-		{
-			"name": "Form of Dread",
-			"source": "VRGR-ES",
-			"page": 30,
-			"className": "Warlock",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Undead",
-			"subclassSource": "VRGR-ES",
-			"level": 1,
-			"header": 1,
-			"entries": [
-				"{@i 1st-level Undead feature}",
-				"You manifest an aspect of your patron's dreadful power. As a bonus action, you transform for 1 minute. You gain the following benefits while transformed:",
-				{
-					"type": "list",
-					"items": [
-						"You gain temporary hit points equal to {@dice 1d10} + your warlock level.",
-						"Once during each of your turns, when you hit a creature with an attack roll, you can force it to make a Wisdom saving throw, and if the saving throw fails, the target is {@condition frightened} of you until the end of your next turn.",
-						"You are immune to the {@condition frightened} condition."
-					]
-				},
-				"You can transform a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
-				"The appearance of your Form of Dread reflects some aspect of your patron. For example, your form could be a shroud of shadows forming the crown and robes of your lich patron, or your body might glow with glyphs from ancient funerary rites and be surrounded by desert winds, suggesting your mummy patron."
-			]
-		},
-		{
-			"name": "Grave Touched",
-			"source": "VRGR-ES",
-			"page": 30,
-			"className": "Warlock",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Undead",
-			"subclassSource": "VRGR-ES",
-			"level": 6,
-			"header": 2,
-			"entries": [
-				"{@i 6th-level Undead feature}",
-				"Your patron's powers have a profound effect on your body and magic. You don't need to eat, drink, or breathe.",
-				"In addition, once during each of your turns, when you hit a creature with an attack roll and roll damage against the creature, you can replace the damage type with necrotic damage. While you are using your Form of Dread, you can roll one additional damage die when determining the necrotic damage the target takes."
-			]
-		},
-		{
-			"name": "Necrotic Husk",
-			"source": "VRGR-ES",
-			"page": 30,
-			"className": "Warlock",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Undead",
-			"subclassSource": "VRGR-ES",
-			"level": 10,
-			"header": 2,
-			"entries": [
-				"{@i 10th-level Undead feature}",
-				"Your connection to undeath and necrotic energy now saturates your body. You have resistance to necrotic damage. If you are transformed using your Form of Dread, you instead become immune to necrotic damage.",
-				"In addition, when you would be reduced to 0 hit points, you can use your reaction to drop to 1 hit point instead and cause your body to erupt with deathly energy. Each creature of your choice that is within 30 feet of you takes necrotic damage equal to {@damage 2d10} + your warlock level. You then gain 1 level of {@condition exhaustion}. Once you use this reaction, you can't do so again until you finish {@dice 1d4} long rests."
-			]
-		},
-		{
-			"name": "Spirit Projection",
-			"source": "VRGR-ES",
-			"page": 30,
-			"className": "Warlock",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Undead",
-			"subclassSource": "VRGR-ES",
-			"level": 14,
-			"header": 2,
-			"entries": [
-				"{@i 14th-level Undead feature}",
-				"Your spirit can become untethered from your physical form. As an action, you can project your spirit from your body. The body you leave behind is {@condition unconscious} and in a state of suspended animation.",
-				"Your spirit resembles your mortal form in almost every way, replicating your game statistics but not your possessions. Any damage or other effects that apply to your spirit or physical body affects the other. Your spirit can remain outside your body for up to 1 hour or until your {@status concentration} is broken (as if {@status concentration||concentrating} on a spell). When your projection ends, your spirit returns to your body or your body magically teleports to your spirit's space (your choice).",
-				"While projecting your spirit, you gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"Your spirit and body gain resistance to bludgeoning, piercing, and slashing damage.",
-						"When you cast a spell of the conjuration or necromancy school, the spell doesn't require verbal or somatic components or material components that lack a gold cost.",
-						"You have a flying speed equal to your walking speed and can hover. You can move through creatures and objects as if they were {@quickref difficult terrain||3}, but you take {@dice 1d10} force damage if you end your turn inside a creature or an object.",
-						"While you are using your Form of Dread, once during each of your turns when you deal necrotic damage to a creature, you regain hit points equal to half the amount of necrotic damage dealt."
-					]
-				},
-				"Once you use this feature, you can't do so again until you finish a long rest."
-			]
-		},
-		{
-			"name": "The Celestial",
-			"source": "XGE-ES",
-			"page": 54,
-			"className": "Warlock",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Celestial",
-			"subclassSource": "XGE-ES",
-			"level": 1,
-			"entries": [
-				"Your patron is a powerful being of the Upper Planes. You have bound yourself to an ancient empyrean, solar, ki-rin, unicorn, or other entity that resides in the planes of everlasting bliss. Your pact with that being allows you to experience the barest touch of the holy light that illuminates the multiverse.",
-				"Being connected to such power can cause changes in your behavior and beliefs. You might find yourself driven to annihilate the undead, to defeat fiends, and to protect the innocent. At times, your heart might also be filled with a longing for the celestial realm of your patron, and a desire to wander that paradise for the rest of your days. But you know that your mission is among mortals for now, and that your pact binds you to bring light to the dark places of the world.",
-				{
-					"type": "entries",
-					"name": "Expanded Spell List",
-					"entries": [
-						"The Celestial lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
-						{
-							"type": "table",
-							"caption": "Celestial Expanded Spells",
-							"colLabels": [
-								"Spell Level",
-								"Spells"
-							],
-							"colStyles": [
-								"col-2 text-center",
-								"col-10"
-							],
-							"rows": [
-								[
-									"1st",
-									"{@spell cure wounds}, {@spell guiding bolt}"
-								],
-								[
-									"2nd",
-									"{@spell flaming sphere}, {@spell lesser restoration}"
-								],
-								[
-									"3rd",
-									"{@spell daylight}, {@spell revivify}"
-								],
-								[
-									"4th",
-									"{@spell guardian of faith}, {@spell wall of fire}"
-								],
-								[
-									"5th",
-									"{@spell flame strike}, {@spell greater restoration}"
-								]
-							]
-						}
-					]
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Bonus Cantrips|Warlock||Celestial|XGE|1"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Healing Light|Warlock||Celestial|XGE|1"
-				}
-			]
-		},
-		{
-			"name": "Bonus Cantrips",
-			"source": "XGE-ES",
-			"page": 54,
-			"className": "Warlock",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Celestial",
-			"subclassSource": "XGE-ES",
-			"level": 1,
-			"header": 1,
-			"entries": [
-				"At 1st level, you learn the {@spell sacred flame} and {@spell light} cantrips. They count as warlock cantrips for you, but they don't count against your number of cantrips known."
-			]
-		},
-		{
-			"name": "Healing Light",
-			"source": "XGE-ES",
-			"page": 54,
-			"className": "Warlock",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Celestial",
-			"subclassSource": "XGE-ES",
-			"level": 1,
-			"header": 1,
-			"entries": [
-				"At 1st level, you gain the ability to channel celestial energy to heal wounds. You have a pool of {@dice d6}s that you spend to fuel this healing. The number of dice in the pool equals 1 + your warlock level.",
-				"As a bonus action, you can heal one creature you can see within 60 feet of you, spending dice from the pool. The maximum number of dice you can spend at once equals your Charisma modifier (minimum of one die). Roll the dice you spend, add them together, and restore a number of hit points equal to the total.",
-				"Your pool regains all expended dice when you finish a long rest."
-			]
-		},
-		{
-			"name": "Radiant Soul",
-			"source": "XGE-ES",
-			"page": 54,
-			"className": "Warlock",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Celestial",
-			"subclassSource": "XGE-ES",
-			"level": 6,
-			"header": 2,
-			"entries": [
-				"Starting at 6th level, your link to the Celestial allows you to serve as a conduit for radiant energy. You have resistance to radiant damage, and when you cast a spell that deals radiant or fire damage, you can add your Charisma modifier to one radiant or fire damage roll of that spell against one of its targets."
-			]
-		},
-		{
-			"name": "Celestial Resilience",
-			"source": "XGE-ES",
-			"page": 54,
-			"className": "Warlock",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Celestial",
-			"subclassSource": "XGE-ES",
-			"level": 10,
-			"header": 2,
-			"entries": [
-				"Starting at 10th level, you gain temporary hit points whenever you finish a short or long rest. These temporary hit points equal your warlock level + your Charisma modifier. Additionally, choose up to five creatures you can see at the end of the rest. Those creatures each gain temporary hit points equal to half your warlock level + your Charisma modifier."
-			]
-		},
-		{
-			"name": "Searing Vengeance",
-			"source": "XGE-ES",
-			"page": 54,
-			"className": "Warlock",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Celestial",
-			"subclassSource": "XGE-ES",
-			"level": 14,
-			"header": 2,
-			"entries": [
-				"Starting at 14th level, the radiant energy you channel allows you to resist death. When you have to make a death saving throw at the start of your turn, you can instead spring back to your feet with a burst of radiant energy. You regain hit points equal to half your hit point maximum, and then you stand up if you so choose. Each creature of your choice that is within 30 feet of you takes radiant damage equal to {@dice 2d8} + your Charisma modifier, and it is {@condition blinded} until the end of the current turn.",
-				"Once you use this feature, you can't use it again until you finish a long rest."
-			]
-		},
-		{
-			"name": "The Hexblade",
-			"source": "XGE-ES",
-			"page": 55,
-			"className": "Warlock",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Hexblade",
-			"subclassSource": "XGE-ES",
-			"level": 1,
-			"entries": [
-				"You have made your pact with a mysterious entity from the Shadowfell—a force that manifests in sentient magic weapons carved from the stuff of shadow. The mighty sword Blackrazor is the most notable of these weapons, which have been spread across the multiverse over the ages. The shadowy force behind these weapons can offer power to warlocks who form pacts with it. Many hexblade warlocks create weapons that emulate those formed in the Shadowfell. Others forgo such arms, content to weave the dark magic of that plane into their spellcasting.",
-				"Because the Raven Queen is known to have forged the first of these weapons, many sages speculate that she and the force are one and that the weapons, along with hexblade warlocks, are tools she uses to manipulate events on the Material Plane to her inscrutable ends.",
-				{
-					"type": "entries",
-					"name": "Expanded Spell List",
-					"entries": [
-						"The Hexblade lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
-						{
-							"type": "table",
-							"caption": "Hexblade Expanded Spells",
-							"colLabels": [
-								"Spell Level",
-								"Spells"
-							],
-							"colStyles": [
-								"col-2 text-center",
-								"col-10"
-							],
-							"rows": [
-								[
-									"1st",
-									"{@spell shield}, {@spell wrathful smite}"
-								],
-								[
-									"2nd",
-									"{@spell blur}, {@spell branding smite}"
-								],
-								[
-									"3rd",
-									"{@spell blink}, {@spell elemental weapon}"
-								],
-								[
-									"4th",
-									"{@spell phantasmal killer}, {@spell staggering smite}"
-								],
-								[
-									"5th",
-									"{@spell banishing smite}, {@spell cone of cold}"
-								]
-							]
-						}
-					]
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Hexblade's Curse|Warlock||Hexblade|XGE|1"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Hex Warrior|Warlock||Hexblade|XGE|1"
-				}
-			]
-		},
-		{
-			"name": "Hex Warrior",
-			"source": "XGE-ES",
-			"page": 55,
-			"className": "Warlock",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Hexblade",
-			"subclassSource": "XGE-ES",
-			"level": 1,
-			"header": 1,
-			"entries": [
-				"At 1st level, you acquire the training necessary to effectively arm yourself for battle. You gain proficiency with medium armor, shields, and martial weapons.",
-				"The influence of your patron also allows you to mystically channel your will through a particular weapon. Whenever you finish a long rest, you can touch one weapon that you are proficient with and that lacks the two-handed property. When you attack with that weapon, you can use your Charisma modifier, instead of Strength or Dexterity, for the attack and damage rolls. This benefit lasts until you finish a long rest. If you later gain the Pact of the Blade feature, this benefit extends to every pact weapon you conjure with that feature, no matter the weapon's type."
-			]
-		},
-		{
-			"name": "Hexblade's Curse",
-			"source": "XGE-ES",
-			"page": 55,
-			"className": "Warlock",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Hexblade",
-			"subclassSource": "XGE-ES",
-			"level": 1,
-			"header": 1,
-			"entries": [
-				"Starting at 1st level, you gain the ability to place a baleful curse on someone. As a bonus action, choose one creature you can see within 30 feet of you. The target is cursed for 1 minute. The curse ends early if the target dies, you die, or you are {@condition incapacitated}. Until the curse ends, you gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"You gain a bonus to damage rolls against the cursed target. The bonus equals your proficiency bonus.",
-						"Any attack roll you make against the cursed target is a critical hit on a roll of 19 or 20 on the {@dice d20}.",
-						"If the cursed target dies, you regain hit points equal to your warlock level + your Charisma modifier (minimum of 1 hit point)."
-					]
-				},
-				"You can't use this feature again until you finish a short or long rest."
-			]
-		},
-		{
-			"name": "Accursed Specter",
-			"source": "XGE-ES",
-			"page": 55,
-			"className": "Warlock",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Hexblade",
-			"subclassSource": "XGE-ES",
-			"level": 6,
-			"header": 2,
-			"entries": [
-				"Starting at 6th level, you can curse the soul of a person you slay, temporarily binding it to your service. When you slay a humanoid, you can cause its spirit to rise from its corpse as a {@creature specter}, the statistics for which are in the Monster Manual. When the specter appears, it gains temporary hit points equal to half your warlock level. Roll initiative for the specter, which has its own turns. It obeys your verbal commands, and it gains a special bonus to its attack rolls equal to your Charisma modifier (minimum of +0).",
-				"The specter remains in your service until the end of your next long rest, at which point it vanishes to the afterlife.",
-				"Once you bind a specter with this feature, you can't use the feature again until you finish a long rest."
-			]
-		},
-		{
-			"name": "Armor of Hexes",
-			"source": "XGE-ES",
-			"page": 55,
-			"className": "Warlock",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Hexblade",
-			"subclassSource": "XGE-ES",
-			"level": 10,
-			"header": 2,
-			"entries": [
-				"At 10th level, your hex grows more powerful. If the target cursed by your Hexblade's Curse hits you with an attack roll, you can use your reaction to roll a {@dice d6}. On a 4 or higher, the attack instead misses you, regardless of its roll."
-			]
-		},
-		{
-			"name": "Master of Hexes",
-			"source": "XGE-ES",
-			"page": 55,
-			"className": "Warlock",
-			"classSource": "PHB-ES",
-			"subclassShortName": "Hexblade",
-			"subclassSource": "XGE-ES",
-			"level": 14,
-			"header": 2,
-			"entries": [
-				"Starting at 14th level, you can spread your Hexblade's Curse from a slain creature to another creature. When the creature cursed by your Hexblade's Curse dies, you can apply the curse to a different creature you can see within 30 feet of you, provided you aren't {@condition incapacitated}. When you apply the curse in this way, you don't regain hit points from the death of the previously cursed creature."
-			]
-		},
-		{
-			"name": "Bottled Respite",
-			"source": "TCE-ES",
-			"page": 73,
-			"className": "Warlock",
+			"page": 33,
+			"className": "Brujo",
 			"classSource": "TCE-ES",
-			"subclassShortName": "Genie",
+			"subclassShortName": "Genio",
 			"subclassSource": "TCE-ES",
 			"level": 1,
 			"entries": [
-				"As an action, you can magically vanish and enter your vessel, which remains in the space you left. The interior of the vessel is an extradimensional space in the shape of a 20-foot-radius cylinder, 20 feet high, and resembles your vessel. The interior is appointed with cushions and low tables and is a comfortable temperature. While inside, you can hear the area around your vessel as if you were in its space. You can remain inside the vessel up to a number of hours equal to twice your proficiency bonus. You exit the vessel early if you use a bonus action to leave, if you die, or if the vessel is destroyed. When you exit the vessel, you appear in the unoccupied space closest to it. Any objects left in the vessel remain there until carried out, and if the vessel is destroyed, every object stored there harmlessly appears in the unoccupied spaces closest to the vessel's former space. Once you enter the vessel, you can't enter again until you finish a long rest."
+				"Como acción, puedes desvanecerte mágica mente y entrar en tu recipiente, que permanece en el espacio que has abandonado. El interior del recipiente es un espacio extradimensional con forma de cilindro, con un radio de 20 pies y 20 pies de altura, y se asemeja a tu recipiente. El interior está equipado con cojines y mesas bajas y está a una temperatura agradable. Mientras estés dentro, puedes escuchar lo que ocurre en la zona de alrededor de tu recipiente como si estuvieras en su espacio. Puedes permanecer en su interior una cantidad de horas igual a dos veces tu bonificador por competencia. Sales del recipiente si usas una acción adicional para abandonarlo, si mueres o si el recipiente es destruido. Cuando sales del recipiente, apareces en el espacio sin ocupar más cercano a él. Cualquier objeto que dejes en el recipiente permanecerá allí hasta que lo saques y, si es destruido, los objetos guardados en él aparecerán sin daño en los espacios sin ocupar más cercanos a aquel en el que estaba el recipiente. Cuando entres en el recipiente, no podrás volver a hacerlo hasta que finalices un descanso largo."
 			]
 		},
 		{
-			"name": "Genie's Wrath",
+			"name": "Ira del Genio",
 			"source": "TCE-ES",
-			"page": 73,
-			"className": "Warlock",
+			"page": 33,
+			"className": "Brujo",
 			"classSource": "TCE-ES",
-			"subclassShortName": "Genie",
+			"subclassShortName": "Genio",
 			"subclassSource": "TCE-ES",
 			"level": 1,
 			"entries": [
-				"Once during each of your turns when you hit with an attack roll, you can deal extra damage to the target equal to your proficiency bonus. The type of this damage is determined by your patron: bludgeoning (dao), thunder (djinni), fire (efreeti), or cold (marid)."
+				"Una vez durante cada uno de tus turnos, cuando impactas con una tirada de ataque, puedes infligir daño extra al objetivo igual a tu bonificador por competencia. El tipo de daño lo determina tu patrón: contundente (dao), trueno (djinni), fuego (efreeti) o frío (marid)."
+			]
+		},
+		{
+			"name": "Don Elemental",
+			"source": "TCE-ES",
+			"page": 33,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Genio",
+			"subclassSource": "TCE-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i Rasgo del Genio de nivel 6}",
+				"Comienzas a adquirir características de tu tipo de patrón. Ahora tienes resistencia a un tipo de daño determinado por el tipo de tu patrón: contundente (dao), trueno (djinni), fuego (efreeti) o frío (marid).",
+				"Además, como acción adicional, puedes concederte una velocidad volando de 30 pies que dura 10 minutos, durante los cuales puedes levitar. Puedes usar esta acción adicional una cantidad de veces igual a tu bonificador por competencia y recuperas todos los usos tras finalizar un descanso largo."
+			]
+		},
+		{
+			"name": "Recipiente Santuario",
+			"source": "TCE-ES",
+			"page": 34,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Genio",
+			"subclassSource": "TCE-ES",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i Rasgo del Genio de nivel 10}",
+				"Cuando entras en tu Recipiente del Genio mediante el rasgo Alivio Embotellado, ahora puedes elegir hasta a cinco criaturas voluntarias que puedas ver a 30 pies o menos de ti y entrarán en el recipiente contigo.",
+				"Como acción adicional, puedes expulsar a la cantidad de criaturas que quieras de tu recipiente, y todo el mundo será expulsado si tú lo abandonas, si mueres o si se destruye el recipiente.",
+				"Además, cualquiera que permanezca en el recipiente al menos 10 minutos (incluido tú) obtiene el beneficio de un descanso corto, y quien quiera puede añadir tu bonificador por competencia al número de puntos de golpe que recupera si gasta Dados de Golpe como parte de un descanso corto allí."
+			]
+		},
+		{
+			"name": "Deseo Limitado",
+			"source": "TCE-ES",
+			"page": 34,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Genio",
+			"subclassSource": "TCE-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i Rasgo del Genio de nivel 14}",
+				"Suplicas a tu patrón que te otorgue un pequeño deseo. Como acción, puedes expresarle tu deseo a tu Vasija del Genio, solicitando el efecto de un conjuro que sea de nivel 6 o inferior o que tenga un tiempo de lanzamiento de 1 acción. El conjuro puede ser de la lista de conjuros de cualquier clase y no necesitas cumplir sus requisitos, como costosos componentes; el conjuro simplemente surte efecto como parte de esta acción.",
+				"Cuando uses este rasgo, no podrás volver a hacerlo hasta que finalices {@dice 1d4} descansos largos."
+			]
+		},
+		{
+			"name": "El No Muerto",
+			"source": "VRGR-ES",
+			"page": 30,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "No Muerto",
+			"subclassSource": "VRGR-ES",
+			"level": 1,
+			"entries": [
+				"Has hecho un pacto con un ser imperecedero, una criatura que desafía al ciclo de la vida y la muerte, abandonando su caparazón mortal para poder perseguir eternamente sus insondables ambiciones. Para tales seres, el tiempo y la moralidad son cosas efímeras, preocupaciones de aquellos cuyos granos de arena siguen cayendo por el reloj de arena de sus vidas. Habiendo sido antaño mortales, estos muertos vivientes antiguos conocen los caminos de la ambición y las rutas más allá de las puertas de la muerte. Comparten con entusiasmo este conocimiento profano, junto a otros secretos, con aquellos que realicen su voluntad entre los vivos.",
+				"Los seres de este tipo incluyen al demiliche Acererak, el tirano vampiro Kas el Manos Sangrientas, la reina liche githyanki Vlaakith, el dracoliche Dragotha, el faraón muerto viviente Ankhtepot, y el elusivo Señor Oscuro, Azalin Rex.",
+				{
+					"type": "entries",
+					"name": "Lista de Conjuros Expandida",
+					"entries": [
+						"{@i Rasgo del No Muerto de nivel 1}",
+						"El No Muerto te permite elegir de una lista expandida de conjuros cuando aprendes un conjuro de brujo. Los siguientes conjuros se añaden a la lista de conjuros de brujo para ti.",
+						{
+							"type": "table",
+							"caption": "Conjuros Expandidos de No Muerto",
+							"colLabels": [
+								"Nivel de Conjuro",
+								"Conjuros"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"{@spell perdición|PHB-ES}, {@spell falsa vida|PHB-ES}"
+								],
+								[
+									"2",
+									"{@spell ceguera/sordera|PHB-ES}, {@spell fuerza fantasmal|PHB-ES}"
+								],
+								[
+									"3",
+									"{@spell corcel fantasma|PHB-ES}, {@spell hablar con los muertos|PHB-ES}"
+								],
+								[
+									"4",
+									"{@spell guarda contra la muerte|PHB-ES}, {@spell invisibilidad mejorada|PHB-ES}"
+								],
+								[
+									"5",
+									"{@spell caparazón antivida|PHB-ES}, {@spell nube aniquiladora|PHB-ES}"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Forma de Terror|Brujo|PHB-ES|No Muerto|VRGR-ES|1"
+				}
+			]
+		},
+		{
+			"name": "Forma de Terror",
+			"source": "VRGR-ES",
+			"page": 31,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "No Muerto",
+			"subclassSource": "VRGR-ES",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"{@i Rasgo del No Muerto de nivel 1}",
+				"Manifiestas un aspecto del tenebroso poder de tu patrón. Como acción adicional, te transformas durante 1 minuto. Ganas los siguientes beneficios mientras estés transformado:",
+				{
+					"type": "list",
+					"items": [
+						"Ganas puntos de golpe temporales iguales a {@dice 1d10} + tu nivel de brujo.",
+						"Una vez durante cada uno de tus turnos, cuando impactas a una criatura con una tirada de ataque, puedes forzar a esa criatura a realizar una tirada de salvación de Sabiduría, y si falla la tirada de salvación, el objetivo queda {@condition asustado|PHB-ES} de ti hasta el final de tu próximo turno.",
+						"Eres inmune a la condición {@condition asustado|PHB-ES}."
+					]
+				},
+				"Puedes transformarte un número de veces iguales a tu bonificador por competencia, y recuperas todos los usos gastados cuando finalizas un descanso largo.",
+				"La apariencia de tu Forma de Terror refleja algún aspecto de tu patrón. Por ejemplo, tu forma podría ser un velo de sombras formando la corona y la túnica de tu patrón liche, o tu cuerpo podría brillar con glifos de ritos funerarios antiguos y estar rodeado por vientos desérticos, sugiriendo a tu patrón momia."
+			]
+		},
+		{
+			"name": "Tocado por la Tumba",
+			"source": "VRGR-ES",
+			"page": 31,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "No Muerto",
+			"subclassSource": "VRGR-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i Rasgo del No Muerto de nivel 6}",
+				"Los poderes de tu patrón tienen un profundo efecto sobre tu cuerpo y tu magia. No necesitas comer, beber, o respirar. Además, una vez durante cada uno de tus turnos, cuando impactas a una criatura con una tirada de ataque y tiras daño contra esa criatura, puedes reemplazar el tipo de daño con daño necrótico. Mientras estés usando tu Forma de Terror, puedes lanzar un dado de daño adicional mientras determinas el daño necrótico que recibe el objetivo."
+			]
+		},
+		{
+			"name": "Cascarón Necrótico",
+			"source": "VRGR-ES",
+			"page": 31,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "No Muerto",
+			"subclassSource": "VRGR-ES",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i Rasgo del No Muerto de nivel 10}",
+				"Ahora tu conexión con la energía no muerta y necrótica satura tu cuerpo. Tienes resistencia al daño necrótico. Si estás transformado usando tu Forma de Terror, en su lugar te vuelves inmune al daño necrótico.",
+				"Además, cuando tus puntos de golpe fueran a ser reducidos a 0, puedes usar tu reacción para reducirlos a 1 punto de golpe en su lugar y causar que tu cuerpo erupcione con energía mortal. Cada criatura a tu elección que esté a 30 de ti recibe daño necrótico igual a {@damage 2d10} + tu nivel de brujo. Luego ganas 1 nivel de {@condition cansancio|PHB-ES}. Una vez uses esta reacción, no puedes usarla de nuevo hasta que finalices {@dice 1d4} descansos largos."
+			]
+		},
+		{
+			"name": "Proyección Espiritual",
+			"source": "VRGR-ES",
+			"page": 31,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "No Muerto",
+			"subclassSource": "VRGR-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i Rasgo del No Muerto de nivel 14}",
+				"Tu espíritu puede desatarse de tu forma física. Como acción, puedes proyectar tu espíritu desde tu cuerpo. El cuerpo que dejas atrás está {@condition inconsciente|PHB-ES} y en un estado de animación suspendida.",
+				"Tu espíritu se asemeja a tu forma mortal en casi todos los aspectos, replicando tus estadísticas del juego pero no tus posesiones. Cualquier daño u otros efectos que se apliquen a tu espíritu o a tu cuerpo físico afectan al otro. Tu espíritu puede mantenerse fuera de tu cuerpo hasta 1 hora o hasta que pierdas la {@status concentración|PHB-ES} (como si estuvieses {@status concentración|PHB-ES|concentrándote} en un conjuro). Cuando tu proyección finaliza, tu espíritu vuelve a tu cuerpo o tu cuerpo se teletransporta mágicamente al espacio de tu espíritu (a tu elección). Mientras estás proyectando tu espíritu, ganas los siguientes beneficios:",
+				{
+					"type": "list",
+					"items": [
+						"Tu espíritu y tu cuerpo ganan resistencia al daño contundente, perforante, y cortante.",
+						"Cuando lanzas un conjuro de la escuela de conjuración o nigromancia, el conjuro no requiere componentes somáticos o verbales o componentes materiales que carezcan de un coste de oro.",
+						"Tienes una velocidad volando igual a tu velocidad caminando y puedes levitar. Puedes moverte entre criaturas y objetos como si fuesen {@book terreno difícil|PHB-ES|9|terreno difícil}, pero recibes {@dice 1d10} de daño de fuerza si finalizas tu turno dentro de una criatura o un objeto.",
+						"Mientras estés usando tu Forma de Terror, una vez durante cada uno de tus turnos cuando causes daño necrótico a una criatura, recuperas puntos de golpe iguales a la mitad de la cantidad de daño necrótico causado."
+					]
+				},
+				"Una vez uses este rasgo, no puedes usarlo de nuevo hasta que finalices un descanso largo."
+			]
+		},
+		{
+			"name": "El Celestial",
+			"source": "XGE-ES",
+			"page": 18,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Celestial",
+			"subclassSource": "XGE-ES",
+			"level": 1,
+			"entries": [
+				"Tu patrón es un poderoso ser de los Planos Superiores. Te has vinculado con un antiguo empíreo, solar, kirin, unicornio u otra entidad que resida en los planos de dicha dimensión Tu pacto con este ser te permite experimentar hasta el más mínimo rayo de luz sagrada que ilumina el multiverso.",
+				"Estar conectado con estos poderes puede causar cambios en tu comportamiento y en tus creencias. Puede que te encuentres impulsado a aniquilar muertos vivientes, derrotar infernales y proteger a los inocentes. A veces, tu corazón añorará el reino celestial de tu patrón, poder vagar por ese paraíso el resto de tus días. No obstante, sabes que tu misión está entre los mortales por ahora y que tu pacto te obliga a llevar luz a los rincones más oscuros del mundo.",
+				{
+					"type": "entries",
+					"name": "Lista de Conjuros Ampliada",
+					"entries": [
+						"El Celestial te permite elegir de entre una lista de conjuros ampliada cada vez que aprendes un conjuro de brujo. Los siguientes conjuros también forman parte de tu lista de conjuros de brujo.",
+						{
+							"type": "table",
+							"caption": "Lista de conjuros ampliada del Celestial",
+							"colLabels": [
+								"Nivel de conjuro",
+								"Conjuros"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"{@spell curar heridas|PHB-ES}, {@spell saeta guía|PHB-ES}"
+								],
+								[
+									"2",
+									"{@spell esfera de llamas|PHB-ES}, {@spell restablecimiento menor|PHB-ES}"
+								],
+								[
+									"3",
+									"{@spell luz del día|PHB-ES}, {@spell revivir|PHB-ES}"
+								],
+								[
+									"4",
+									"{@spell guardián de la fe|PHB-ES}, {@spell muro de fuego|PHB-ES}"
+								],
+								[
+									"5",
+									"{@spell golpe flamígero|PHB-ES}, {@spell restablecimiento mayor|PHB-ES}"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Trucos Adicionales|Brujo|PHB-ES|Celestial|XGE-ES|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Luz Sanadora|Brujo|PHB-ES|Celestial|XGE-ES|1"
+				}
+			]
+		},
+		{
+			"name": "Trucos Adicionales",
+			"source": "XGE-ES",
+			"page": 18,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Celestial",
+			"subclassSource": "XGE-ES",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"A nivel 1, aprendes los trucos {@spell luz|PHB-ES} y {@spell llama sagrada|PHB-ES}. Se consideran trucos de brujo para ti, pero no cuentan como parte de tu número de trucos conocidos."
+			]
+		},
+		{
+			"name": "Luz Sanadora",
+			"source": "XGE-ES",
+			"page": 18,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Celestial",
+			"subclassSource": "XGE-ES",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"A nivel 1 obtienes la capacidad de canalizar energía celestial para curar heridas. Tienes una reserva de dados ({@dice d6}) que puedes gastar para realizar esta curación. La cantidad de estos dados es igual a 1 + tu nivel de brujo.",
+				"Como acción adicional, puedes sanar a una criatura que puedas ver y se encuentre a 60 pies o menos de ti, gastando dados de dicha reserva. El máximo número de ellos que pue des emplear a la vez es igual a tu modificador de Carisma (mínimo de 1 dado). Lanza los dados que hayas decidido, suma los resultados y restaura ese número total de puntos de golpe a la criatura escogida.",
+				"Tu reserva recupera todos los dados gastados cuando completas un descanso largo."
+			]
+		},
+		{
+			"name": "Alma Radiante",
+			"source": "XGE-ES",
+			"page": 19,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Celestial",
+			"subclassSource": "XGE-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 6, tu vínculo con el Celestial te permite servir como conducto para la energía luminosa. Obtienes resistencia al daño radiante y, además, cuando lanzas un conjuro que inflige daño de fuego o radiante, puedes añadir tu modificador de Carisma a una tirada de daño radiante o de fuego de ese conjuro, contra uno de sus objetivos."
+			]
+		},
+		{
+			"name": "Resiliencia Celestial",
+			"source": "XGE-ES",
+			"page": 19,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Celestial",
+			"subclassSource": "XGE-ES",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 10, consigues puntos de golpe temporales siempre que termines un descanso corto o largo. Estos son iguales a tu nivel de brujo + tu modificador de Carisma. Además, elige hasta a cinco criaturas que puedas ver en el momento de terminar el descanso. Cada una de ellas consigue tantos puntos de golpe temporales iguales como la mitad de tu nivel de brujo + tu modificador de Carisma."
+			]
+		},
+		{
+			"name": "Venganza Ardiente",
+			"source": "XGE-ES",
+			"page": 19,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Celestial",
+			"subclassSource": "XGE-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"A nivel 14, la energía radiante que canalizas te permite resistir a la muerte. Cuando tengas que realizar una tirada de salvación contra muerte al principio de tu turno, en vez de eso puedes ponerte en pie súbitamente en un estallido de energía radiante. Recuperas tantos puntos de golpe como tus puntos de golpe máximos y después puedes levantarte si así lo deseas. Cada criatura de tu elección que se encuentre a 30 pies o menos de ti recibirá {@dice 2d8} + tu modificador de Carisma de daño radiante y quedará {@condition cegado|PHB-ES|cegada} hasta el final del turno actual.",
+				"Una vez utilizado este rasgo, deberás terminar un des canso largo para poder volver a usarlo."
+			]
+		},
+		{
+			"name": "El Filo Maléfico",
+			"source": "XGE-ES",
+			"page": 19,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Filo Maléfico",
+			"subclassSource": "XGE-ES",
+			"level": 1,
+			"entries": [
+				"Has forjado un pacto con una misteriosa entidad del Shadowfell: una fuerza que se manifiesta en armas conscientes hechas de jirones de sombra. La poderosa espada Negrarma es la más notable de todas ellas, que se han extendido por el multiverso a lo largo de los años. La fuerza sombría tras estas armas puede ofrecer poder a los brujos que forjen pactos con ellas. Muchos seguidores del Filo Maléfico crean armas que emulan a las que se forman en el Shadowfell. Otros las ignoran y se contentan con entretejer la magia oscura de ese plano en su lanzamiento de conjuros.",
+				"Como es sabido, la Reina Cuervo forjó la primera de estas armas, por lo que muchos sabios sostienen que ella y la fuerza son en realidad una, y que las armas, junto con los brujos filo maléfico, son herramientas que utiliza para manipular los eventos del Plano Material para sus propios fines inescrutables.",
+				{
+					"type": "entries",
+					"name": "Lista de Conjuros Ampliada",
+					"entries": [
+						"El Filo Maléfico te permite elegir de entre una lista de con juros ampliada cada vez que aprendes un conjuro de brujo. Los siguientes conjuros también forman parte de tu lista de conjuros de brujo.",
+						{
+							"type": "table",
+							"caption": "Lista de conjuros ampliada del Filo Maléfico",
+							"colLabels": [
+								"Nivel de conjuro",
+								"Conjuros"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1",
+									"{@spell castigo furioso|PHB-ES}, {@spell escudo|PHB-ES}"
+								],
+								[
+									"2",
+									"{@spell castigo marcador|PHB-ES}, {@spell contorno borroso|PHB-ES}"
+								],
+								[
+									"3",
+									"{@spell arma elemental|PHB-ES}, {@spell desplazamiento|PHB-ES}"
+								],
+								[
+									"4",
+									"{@spell asesino fantasmal|PHB-ES}, {@spell castigo abrumador|PHB-ES}"
+								],
+								[
+									"5",
+									"{@spell castigo desterrador|PHB-ES}, {@spell cono de frío|PHB-ES}"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Maldición del Filo Maléfico|Brujo|PHB-ES|Filo Maléfico|XGE-ES|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Guerrero Maléfico|Brujo|PHB-ES|Filo Maléfico|XGE-ES|1"
+				}
+			]
+		},
+		{
+			"name": "Guerrero Maléfico",
+			"source": "XGE-ES",
+			"page": 19,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Filo Maléfico",
+			"subclassSource": "XGE-ES",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"A nivel 1, adquieres el entrenamiento necesario para armarte de forma efectiva para la batalla. Obtienes competencia con armaduras medias, escudos y armas marciales.",
+				"La influencia de tu patrón también te permite canalizar tu voluntad místicamente a través de un arma concreta. Tras terminar un descanso largo, puedes tocar un arma con la que seas competente y que no tenga la propiedad \"a dos manos\". Cuando ataques con esa arma, puedes usar tu modificador de Carisma, en vez del de Fuerza o Destreza, tanto para las tiradas de ataque como para las de daño. Este beneficio dura hasta que completes un descanso largo. Si consigues más tarde el rasgo Pacto del Filo, este efecto se extiende a cualquier arma de pacto que conjures con ese rasgo, independientemente del tipo que sea."
+			]
+		},
+		{
+			"name": "Maldición del Filo Maléfico",
+			"source": "XGE-ES",
+			"page": 19,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Filo Maléfico",
+			"subclassSource": "XGE-ES",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"A nivel 1, eres capaz de imponer una maldición terrible. Como acción adicional, elige a una criatura que puedas ver y se encuentre a 30 pies o menos de ti. El objetivo queda maldito durante 1 minuto. Esta maldición termina antes de ese tiempo si el objetivo o tú morís, o si quedas {@condition incapacitado|PHB-ES}. Hasta que la maldición finalice, obtienes los siguientes beneficios:",
+				{
+					"type": "list",
+					"items": [
+						"Consigues un bonificador a las tiradas de ataque contra el objetivo. Este bonificador es igual a tu bonificador por competencia.",
+						"Cualquier tirada de ataque que realices contra la criatura maldita es un crítico con un resultado de 19 o 20 en el {@dice d20}.",
+						"Si el objetivo maldito muere, recuperas tantos puntos de golpe como tu nivel de brujo + tu modificador de Carisma (mínimo 1 punto de golpe)."
+					]
+				},
+				"Una vez utilizado este rasgo, deberás terminar un descanso corto o largo para poder volver a usarlo."
+			]
+		},
+		{
+			"name": "Espectro Maldito",
+			"source": "XGE-ES",
+			"page": 20,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Filo Maléfico",
+			"subclassSource": "XGE-ES",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 6, puedes maldecir el alma de una persona a la que mates, forzándola a servirte temporalmente. Cuando acabas con la vida de un humanoide, puedes hacer que su espíritu se alce de su cadáver como un espectro. Puedes encontrar su perfil en el Monster Manual. Cuando el {@creature espectro|MM-ES} aparece, este obtiene tantos puntos de golpe temporales como la mitad de tu nivel de brujo. Haz una tirada de iniciativa para el espectro, que tiene sus propios turnos. Obedecerá tus órdenes verbales y, además, cuenta con un bonificador especial a sus tiradas de ataque igual a tu modificador de Carisma (mínimo de +0).",
+				"El espectro estará a tu servicio hasta el final de tu siguiente descanso largo, momento en el que se disipará en el más allá.",
+				"Una vez ates a un alma con este rasgo, no podrás utilizarlo de nuevo hasta que acabes un descanso largo."
+			]
+		},
+		{
+			"name": "Armadura de Maleficios",
+			"source": "XGE-ES",
+			"page": 20,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Filo Maléfico",
+			"subclassSource": "XGE-ES",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"A nivel 10, tu maleficio se vuelve más poderoso. Si el objetivo de tu Maldición del Filo Maléfico te impacta con una tirada de ataque, puedes utilizar tu reacción para tirar un {@dice d6}. Con un resultado de 4 o superior, el ataque falla, independientemente de su tirada."
+			]
+		},
+		{
+			"name": "Maestro de Maldiciones",
+			"source": "XGE-ES",
+			"page": 20,
+			"className": "Brujo",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Filo Maléfico",
+			"subclassSource": "XGE-ES",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"A partir de nivel 14, puedes extender tu Maldición del Filo Maléfico de una criatura derrotada a otra. Cuando el objetivo afectado por tu Maldición del Filo Maléfico muera, puedes trasladar la maldición a una criatura diferente que puedas ver y se encuentre a 30 pies o menos de ti, siempre que no estés {@condition incapacitado|PHB-ES}. Cuando transfieres la maldición de este modo, no recuperas puntos de golpe por la muerte de la criatura previamente maldita."
 			]
 		}
 	]

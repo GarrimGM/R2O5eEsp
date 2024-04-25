@@ -1,7 +1,7 @@
 {
 	"class": [
 		{
-			"name": "Wizard",
+			"name": "Mago",
 			"source": "PHB-ES",
 			"page": 112,
 			"srd": true,
@@ -64,11 +64,11 @@
 			"spellsKnownProgressionFixedAllowLowerLevel": true,
 			"startingProficiencies": {
 				"weapons": [
-					"{@item dagger|phb|daggers}",
-					"{@item dart|phb|darts}",
-					"{@item sling|phb|slings}",
-					"{@item quarterstaff|phb|quarterstaffs}",
-					"{@item light crossbow|phb|light crossbows}"
+					"{@item dagger|PHB-ES|daggers}",
+					"{@item dart|PHB-ES|darts}",
+					"{@item sling|PHB-ES|slings}",
+					"{@item quarterstaff|PHB-ES|quarterstaffs}",
+					"{@item light crossbow|PHB-ES|light crossbows}"
 				],
 				"skills": [
 					{
@@ -89,40 +89,40 @@
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"default": [
-					"(a) a {@item quarterstaff|phb} or (b) a {@item dagger|phb}",
-					"(a) a {@item component pouch|phb} or (b) an {@item arcane focus|phb}",
-					"(a) a {@item scholar's pack|phb} or (b) an {@item explorer's pack|phb}",
-					"A {@item spellbook|phb}"
+					"(a) a {@item quarterstaff|PHB-ES} or (b) a {@item dagger|PHB-ES}",
+					"(a) a {@item component pouch|PHB-ES} or (b) an {@item arcane focus|PHB-ES}",
+					"(a) a {@item scholar's pack|PHB-ES} or (b) an {@item explorer's pack|PHB-ES}",
+					"A {@item spellbook|PHB-ES}"
 				],
 				"goldAlternative": "{@dice 4d4 × 10|4d4 × 10|Starting Gold}",
 				"defaultData": [
 					{
 						"a": [
-							"quarterstaff|phb"
+							"quarterstaff|PHB-ES"
 						],
 						"b": [
-							"dagger|phb"
+							"dagger|PHB-ES"
 						]
 					},
 					{
 						"a": [
-							"component pouch|phb"
+							"component pouch|PHB-ES"
 						],
 						"b": [
-							"arcane focus|phb"
+							"arcane focus|PHB-ES"
 						]
 					},
 					{
 						"a": [
-							"scholar's pack|phb"
+							"scholar's pack|PHB-ES"
 						],
 						"b": [
-							"explorer's pack|phb"
+							"explorer's pack|PHB-ES"
 						]
 					},
 					{
 						"_": [
-							"spellbook|phb"
+							"spellbook|PHB-ES"
 						]
 					}
 				]
@@ -135,7 +135,7 @@
 			"classTableGroups": [
 				{
 					"colLabels": [
-						"{@filter Cantrips Known|spells|level=0|class=Wizard}"
+						"{@filter Cantrips Known|spells|level=0|class=Mago (PHB-ES)}"
 					],
 					"rows": [
 						[
@@ -203,15 +203,15 @@
 				{
 					"title": "Spell Slots per Spell Level",
 					"colLabels": [
-						"{@filter 1st|spells|level=1|class=Wizard}",
-						"{@filter 2nd|spells|level=2|class=Wizard}",
-						"{@filter 3rd|spells|level=3|class=Wizard}",
-						"{@filter 4th|spells|level=4|class=Wizard}",
-						"{@filter 5th|spells|level=5|class=Wizard}",
-						"{@filter 6th|spells|level=6|class=Wizard}",
-						"{@filter 7th|spells|level=7|class=Wizard}",
-						"{@filter 8th|spells|level=8|class=Wizard}",
-						"{@filter 9th|spells|level=9|class=Wizard}"
+						"{@filter 1st|spells|level=1|class=Mago (PHB-ES)}",
+						"{@filter 2nd|spells|level=2|class=Mago (PHB-ES)}",
+						"{@filter 3rd|spells|level=3|class=Mago (PHB-ES)}",
+						"{@filter 4th|spells|level=4|class=Mago (PHB-ES)}",
+						"{@filter 5th|spells|level=5|class=Mago (PHB-ES)}",
+						"{@filter 6th|spells|level=6|class=Mago (PHB-ES)}",
+						"{@filter 7th|spells|level=7|class=Mago (PHB-ES)}",
+						"{@filter 8th|spells|level=8|class=Mago (PHB-ES)}",
+						"{@filter 9th|spells|level=9|class=Mago (PHB-ES)}"
 					],
 					"rowsSpellProgression": [
 						[
@@ -438,32 +438,32 @@
 				}
 			],
 			"classFeatures": [
-				"Arcane Recovery|Wizard||1",
-				"Spellcasting|Wizard||1",
+				"Arcane Recovery|Mago|PHB-ES|1",
+				"Spellcasting|Mago|PHB-ES|1",
 				{
-					"classFeature": "Arcane Tradition|Wizard||2",
+					"classFeature": "Arcane Tradition|Mago|PHB-ES|2",
 					"gainSubclassFeature": true
 				},
-				"Cantrip Formulas|Wizard||3|TCE",
-				"Ability Score Improvement|Wizard||4",
+				"Cantrip Formulas|Mago|PHB-ES|3|TCE-ES",
+				"Ability Score Improvement|Mago|PHB-ES|4",
 				{
-					"classFeature": "Arcane Tradition feature|Wizard||6",
+					"classFeature": "Arcane Tradition feature|Mago|PHB-ES|6",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Wizard||8",
+				"Ability Score Improvement|Mago|PHB-ES|8",
 				{
-					"classFeature": "Arcane Tradition feature|Wizard||10",
+					"classFeature": "Arcane Tradition feature|Mago|PHB-ES|10",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Wizard||12",
+				"Ability Score Improvement|Mago|PHB-ES|12",
 				{
-					"classFeature": "Arcane Tradition feature|Wizard||14",
+					"classFeature": "Arcane Tradition feature|Mago|PHB-ES|14",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Wizard||16",
-				"Spell Mastery|Wizard||18",
-				"Ability Score Improvement|Wizard||19",
-				"Signature Spells|Wizard||20"
+				"Ability Score Improvement|Mago|PHB-ES|16",
+				"Spell Mastery|Mago|PHB-ES|18",
+				"Ability Score Improvement|Mago|PHB-ES|19",
+				"Signature Spells|Mago|PHB-ES|20"
 			],
 			"subclassTitle": "Arcane Tradition",
 			"fluff": {
@@ -509,7 +509,7 @@
 							}
 						],
 						"page": 112,
-						"source": "PHB"
+						"source": "PHB-ES"
 					},
 					{
 						"type": "section",
@@ -753,7 +753,7 @@
 							}
 						],
 						"page": 58,
-						"source": "XGE"
+						"source": "XGE-ES"
 					}
 				],
 				"images": [
@@ -775,7 +775,7 @@
 			"page": 112,
 			"srd": true,
 			"basicRules": true,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"level": 1,
 			"entries": [
@@ -790,11 +790,11 @@
 			"page": 112,
 			"srd": true,
 			"basicRules": true,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"level": 1,
 			"entries": [
-				"As a student of arcane magic, you have a spellbook containing spells that show the first glimmerings of your true power. See {@book chapter 10|PHB|10} for the general rules of spellcasting and {@book chapter 11|PHB|11} for the {@filter wizard spell list|spells|class=wizard}.",
+				"As a student of arcane magic, you have a spellbook containing spells that show the first glimmerings of your true power. See {@book chapter 10|PHB-ES|10} for the general rules of spellcasting and {@book chapter 11|PHB-ES|11} for the {@filter wizard spell list|spells|class=Mago (PHB-ES)}.",
 				{
 					"type": "entries",
 					"name": "Cantrips",
@@ -806,7 +806,7 @@
 					"type": "entries",
 					"name": "Spellbook",
 					"entries": [
-						"At 1st level, you have a spellbook containing six 1st-level {@filter wizard spells|spells|class=wizard} of your choice. Your spellbook is the repository of the wizard spells you know, except your cantrips, which are fixed in your mind."
+						"At 1st level, you have a spellbook containing six 1st-level {@filter wizard spells|spells|class=Mago (PHB-ES)} of your choice. Your spellbook is the repository of the wizard spells you know, except your cantrips, which are fixed in your mind."
 					]
 				},
 				{
@@ -851,7 +851,7 @@
 					"type": "entries",
 					"name": "Spellcasting Focus",
 					"entries": [
-						"You can use an {@item arcane focus|phb} as a spellcasting focus for your wizard spells."
+						"You can use an {@item arcane focus|PHB-ES} as a spellcasting focus for your wizard spells."
 					]
 				},
 				{
@@ -925,7 +925,7 @@
 			"page": 112,
 			"srd": true,
 			"basicRules": true,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"level": 2,
 			"entries": [
@@ -936,12 +936,12 @@
 			"name": "Cantrip Formulas",
 			"source": "TCE-ES",
 			"page": 75,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"level": 3,
 			"isClassFeatureVariant": true,
 			"entries": [
-				"{@i 3rd-level wizard {@variantrule optional class features|tce|optional feature}}",
+				"{@i 3rd-level wizard {@variantrule optional class features|TCE-ES|optional feature}}",
 				"You have scribed a set of arcane formulas in your spellbook that you can use to formulate a cantrip in your mind. Whenever you finish a long rest and consult those formulas in your spellbook, you can replace one wizard cantrip you know with another cantrip from the wizard spell list."
 			]
 		},
@@ -951,7 +951,7 @@
 			"page": 112,
 			"srd": true,
 			"basicRules": true,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"level": 4,
 			"entries": [
@@ -965,7 +965,7 @@
 			"page": 112,
 			"srd": true,
 			"basicRules": true,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"level": 6,
 			"entries": [
@@ -978,7 +978,7 @@
 			"page": 112,
 			"srd": true,
 			"basicRules": true,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"level": 8,
 			"entries": [
@@ -992,7 +992,7 @@
 			"page": 112,
 			"srd": true,
 			"basicRules": true,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"level": 10,
 			"entries": [
@@ -1005,7 +1005,7 @@
 			"page": 112,
 			"srd": true,
 			"basicRules": true,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"level": 12,
 			"entries": [
@@ -1019,7 +1019,7 @@
 			"page": 112,
 			"srd": true,
 			"basicRules": true,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"level": 14,
 			"entries": [
@@ -1032,7 +1032,7 @@
 			"page": 112,
 			"srd": true,
 			"basicRules": true,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"level": 16,
 			"entries": [
@@ -1046,7 +1046,7 @@
 			"page": 112,
 			"srd": true,
 			"basicRules": true,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"level": 18,
 			"entries": [
@@ -1060,7 +1060,7 @@
 			"page": 112,
 			"srd": true,
 			"basicRules": true,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"level": 19,
 			"entries": [
@@ -1074,7 +1074,7 @@
 			"page": 112,
 			"srd": true,
 			"basicRules": true,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"level": 20,
 			"entries": [
@@ -1088,137 +1088,137 @@
 			"name": "School of Abjuration",
 			"shortName": "Abjuration",
 			"source": "PHB-ES",
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"page": 115,
 			"subclassFeatures": [
-				"School of Abjuration|Wizard||Abjuration||2",
-				"Projected Ward|Wizard||Abjuration||6",
-				"Improved Abjuration|Wizard||Abjuration||10",
-				"Spell Resistance|Wizard||Abjuration||14"
+				"School of Abjuration|Mago|PHB-ES|Abjuration|PHB-ES|2",
+				"Projected Ward|Mago|PHB-ES|Abjuration|PHB-ES|6",
+				"Improved Abjuration|Mago|PHB-ES|Abjuration|PHB-ES|10",
+				"Spell Resistance|Mago|PHB-ES|Abjuration|PHB-ES|14"
 			]
 		},
 		{
 			"name": "School of Conjuration",
 			"shortName": "Conjuration",
 			"source": "PHB-ES",
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"page": 116,
 			"subclassFeatures": [
-				"School of Conjuration|Wizard||Conjuration||2",
-				"Benign Transposition|Wizard||Conjuration||6",
-				"Focused Conjuration|Wizard||Conjuration||10",
-				"Durable Summons|Wizard||Conjuration||14"
+				"School of Conjuration|Mago|PHB-ES|Conjuration|PHB-ES|2",
+				"Benign Transposition|Mago|PHB-ES|Conjuration|PHB-ES|6",
+				"Focused Conjuration|Mago|PHB-ES|Conjuration|PHB-ES|10",
+				"Durable Summons|Mago|PHB-ES|Conjuration|PHB-ES|14"
 			]
 		},
 		{
 			"name": "School of Divination",
 			"shortName": "Divination",
 			"source": "PHB-ES",
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"page": 116,
 			"subclassFeatures": [
-				"School of Divination|Wizard||Divination||2",
-				"Expert Divination|Wizard||Divination||6",
-				"The Third Eye|Wizard||Divination||10",
-				"Greater Portent|Wizard||Divination||14"
+				"School of Divination|Mago|PHB-ES|Divination|PHB-ES|2",
+				"Expert Divination|Mago|PHB-ES|Divination|PHB-ES|6",
+				"The Third Eye|Mago|PHB-ES|Divination|PHB-ES|10",
+				"Greater Portent|Mago|PHB-ES|Divination|PHB-ES|14"
 			]
 		},
 		{
 			"name": "School of Enchantment",
 			"shortName": "Enchantment",
 			"source": "PHB-ES",
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"page": 117,
 			"subclassFeatures": [
-				"School of Enchantment|Wizard||Enchantment||2",
-				"Instinctive Charm|Wizard||Enchantment||6",
-				"Split Enchantment|Wizard||Enchantment||10",
-				"Alter Memories|Wizard||Enchantment||14"
+				"School of Enchantment|Mago|PHB-ES|Enchantment|PHB-ES|2",
+				"Instinctive Charm|Mago|PHB-ES|Enchantment|PHB-ES|6",
+				"Split Enchantment|Mago|PHB-ES|Enchantment|PHB-ES|10",
+				"Alter Memories|Mago|PHB-ES|Enchantment|PHB-ES|14"
 			]
 		},
 		{
 			"name": "School of Evocation",
 			"shortName": "Evocation",
 			"source": "PHB-ES",
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"page": 117,
 			"srd": true,
 			"basicRules": true,
 			"subclassFeatures": [
-				"School of Evocation|Wizard||Evocation||2",
-				"Potent Cantrip|Wizard||Evocation||6",
-				"Empowered Evocation|Wizard||Evocation||10",
-				"Overchannel|Wizard||Evocation||14"
+				"School of Evocation|Mago|PHB-ES|Evocation|PHB-ES|2",
+				"Potent Cantrip|Mago|PHB-ES|Evocation|PHB-ES|6",
+				"Empowered Evocation|Mago|PHB-ES|Evocation|PHB-ES|10",
+				"Overchannel|Mago|PHB-ES|Evocation|PHB-ES|14"
 			]
 		},
 		{
 			"name": "School of Illusion",
 			"shortName": "Illusion",
 			"source": "PHB-ES",
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"page": 118,
 			"additionalSpells": [
 				{
 					"known": {
 						"1": [
-							"minor illusion#c"
+							"minor illusion|PHB-ES#c"
 						]
 					}
 				}
 			],
 			"subclassFeatures": [
-				"School of Illusion|Wizard||Illusion||2",
-				"Malleable Illusions|Wizard||Illusion||6",
-				"Illusory Self|Wizard||Illusion||10",
-				"Illusory Reality|Wizard||Illusion||14"
+				"School of Illusion|Mago|PHB-ES|Illusion|PHB-ES|2",
+				"Malleable Illusions|Mago|PHB-ES|Illusion|PHB-ES|6",
+				"Illusory Self|Mago|PHB-ES|Illusion|PHB-ES|10",
+				"Illusory Reality|Mago|PHB-ES|Illusion|PHB-ES|14"
 			]
 		},
 		{
 			"name": "School of Necromancy",
 			"shortName": "Necromancy",
 			"source": "PHB-ES",
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"page": 118,
 			"subclassFeatures": [
-				"School of Necromancy|Wizard||Necromancy||2",
-				"Undead Thralls|Wizard||Necromancy||6",
-				"Inured to Undeath|Wizard||Necromancy||10",
-				"Command Undead|Wizard||Necromancy||14"
+				"School of Necromancy|Mago|PHB-ES|Necromancy|PHB-ES|2",
+				"Undead Thralls|Mago|PHB-ES|Necromancy|PHB-ES|6",
+				"Inured to Undeath|Mago|PHB-ES|Necromancy|PHB-ES|10",
+				"Command Undead|Mago|PHB-ES|Necromancy|PHB-ES|14"
 			]
 		},
 		{
 			"name": "School of Transmutation",
 			"shortName": "Transmutation",
 			"source": "PHB-ES",
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"page": 119,
 			"subclassFeatures": [
-				"School of Transmutation|Wizard||Transmutation||2",
-				"Transmuter's Stone|Wizard||Transmutation||6",
-				"Shapechanger|Wizard||Transmutation||10",
-				"Master Transmuter|Wizard||Transmutation||14"
+				"School of Transmutation|Mago|PHB-ES|Transmutation|PHB-ES|2",
+				"Transmuter's Stone|Mago|PHB-ES|Transmutation|PHB-ES|6",
+				"Shapechanger|Mago|PHB-ES|Transmutation|PHB-ES|10",
+				"Master Transmuter|Mago|PHB-ES|Transmutation|PHB-ES|14"
 			]
 		},
 		{
 			"name": "War Magic",
 			"shortName": "War",
 			"source": "XGE-ES",
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"page": 59,
 			"subclassFeatures": [
-				"War Magic|Wizard||War|XGE|2",
-				"Power Surge|Wizard||War|XGE|6",
-				"Durable Magic|Wizard||War|XGE|10",
-				"Deflecting Shroud|Wizard||War|XGE|14"
+				"War Magic|Mago|PHB-ES|War|XGE-ES|2",
+				"Power Surge|Mago|PHB-ES|War|XGE-ES|6",
+				"Durable Magic|Mago|PHB-ES|War|XGE-ES|10",
+				"Deflecting Shroud|Mago|PHB-ES|War|XGE-ES|14"
 			],
 			"fluff": {
 				"images": [
@@ -1236,20 +1236,20 @@
 			"name": "Bladesinging",
 			"shortName": "Bladesinging",
 			"source": "TCE-ES",
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"page": 76,
 			"otherSources": [
 				{
-					"source": "SCAG",
+					"source": "SCAG-ES",
 					"page": 141
 				}
 			],
 			"subclassFeatures": [
-				"Bladesinging|Wizard||Bladesinging|TCE|2",
-				"Extra Attack|Wizard||Bladesinging|TCE|6",
-				"Song of Defense|Wizard||Bladesinging|TCE|10",
-				"Song of Victory|Wizard||Bladesinging|TCE|14"
+				"Bladesinging|Mago|PHB-ES|Bladesinging|TCE-ES|2",
+				"Extra Attack|Mago|PHB-ES|Bladesinging|TCE-ES|6",
+				"Song of Defense|Mago|PHB-ES|Bladesinging|TCE-ES|10",
+				"Song of Victory|Mago|PHB-ES|Bladesinging|TCE-ES|14"
 			],
 			"fluff": {
 				"images": [
@@ -1267,14 +1267,14 @@
 			"name": "Order of Scribes",
 			"shortName": "Scribes",
 			"source": "TCE-ES",
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"page": 77,
 			"subclassFeatures": [
-				"Order of Scribes|Wizard||Scribes|TCE|2",
-				"Manifest Mind|Wizard||Scribes|TCE|6",
-				"Master Scrivener|Wizard||Scribes|TCE|10",
-				"One with the Word|Wizard||Scribes|TCE|14"
+				"Order of Scribes|Mago|PHB-ES|Scribes|TCE-ES|2",
+				"Manifest Mind|Mago|PHB-ES|Scribes|TCE-ES|6",
+				"Master Scrivener|Mago|PHB-ES|Scribes|TCE-ES|10",
+				"One with the Word|Mago|PHB-ES|Scribes|TCE-ES|14"
 			],
 			"fluff": {
 				"images": [
@@ -1294,7 +1294,7 @@
 			"name": "School of Abjuration",
 			"source": "PHB-ES",
 			"page": 115,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Abjuration",
 			"subclassSource": "PHB-ES",
@@ -1304,11 +1304,11 @@
 				"Called abjurers, members of this school are sought when baleful spirits require exorcism, when important locations must be guarded against magical spying, and when portals to other planes of existence must be closed.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Abjuration Savant|Wizard||Abjuration||2"
+					"subclassFeature": "Abjuration Savant|Mago|PHB-ES|Abjuration|PHB-ES|2"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Arcane Ward|Wizard||Abjuration||2"
+					"subclassFeature": "Arcane Ward|Mago|PHB-ES|Abjuration|PHB-ES|2"
 				}
 			]
 		},
@@ -1316,7 +1316,7 @@
 			"name": "Abjuration Savant",
 			"source": "PHB-ES",
 			"page": 115,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Abjuration",
 			"subclassSource": "PHB-ES",
@@ -1330,7 +1330,7 @@
 			"name": "Arcane Ward",
 			"source": "PHB-ES",
 			"page": 115,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Abjuration",
 			"subclassSource": "PHB-ES",
@@ -1346,7 +1346,7 @@
 			"name": "Projected Ward",
 			"source": "PHB-ES",
 			"page": 115,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Abjuration",
 			"subclassSource": "PHB-ES",
@@ -1360,7 +1360,7 @@
 			"name": "Improved Abjuration",
 			"source": "PHB-ES",
 			"page": 115,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Abjuration",
 			"subclassSource": "PHB-ES",
@@ -1374,7 +1374,7 @@
 			"name": "Spell Resistance",
 			"source": "PHB-ES",
 			"page": 115,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Abjuration",
 			"subclassSource": "PHB-ES",
@@ -1389,7 +1389,7 @@
 			"name": "School of Conjuration",
 			"source": "PHB-ES",
 			"page": 116,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Conjuration",
 			"subclassSource": "PHB-ES",
@@ -1398,11 +1398,11 @@
 				"As a conjurer, you favor spells that produce objects and creatures out of thin air. You can conjure billowing clouds of killing fog or summon creatures from elsewhere to fight on your behalf. As your mastery grows, you learn spells of transportation and can teleport yourself across vast distances, even to other planes of existence, in an instant.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Conjuration Savant|Wizard||Conjuration||2"
+					"subclassFeature": "Conjuration Savant|Mago|PHB-ES|Conjuration|PHB-ES|2"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Minor Conjuration|Wizard||Conjuration||2"
+					"subclassFeature": "Minor Conjuration|Mago|PHB-ES|Conjuration|PHB-ES|2"
 				}
 			]
 		},
@@ -1410,7 +1410,7 @@
 			"name": "Conjuration Savant",
 			"source": "PHB-ES",
 			"page": 116,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Conjuration",
 			"subclassSource": "PHB-ES",
@@ -1424,7 +1424,7 @@
 			"name": "Minor Conjuration",
 			"source": "PHB-ES",
 			"page": 116,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Conjuration",
 			"subclassSource": "PHB-ES",
@@ -1439,7 +1439,7 @@
 			"name": "Benign Transposition",
 			"source": "PHB-ES",
 			"page": 116,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Conjuration",
 			"subclassSource": "PHB-ES",
@@ -1454,21 +1454,21 @@
 			"name": "Focused Conjuration",
 			"source": "PHB-ES",
 			"page": 116,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Conjuration",
 			"subclassSource": "PHB-ES",
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"Beginning at 10th level, while you are {@status concentration||concentrating} on a conjuration spell, your {@status concentration} can't be broken as a result of taking damage."
+				"Beginning at 10th level, while you are {@status concentration|PHB-ES|concentrating} on a conjuration spell, your {@status concentration} can't be broken as a result of taking damage."
 			]
 		},
 		{
 			"name": "Durable Summons",
 			"source": "PHB-ES",
 			"page": 116,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Conjuration",
 			"subclassSource": "PHB-ES",
@@ -1482,7 +1482,7 @@
 			"name": "School of Divination",
 			"source": "PHB-ES",
 			"page": 116,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Divination",
 			"subclassSource": "PHB-ES",
@@ -1491,11 +1491,11 @@
 				"The counsel of a diviner is sought by royalty and commoners alike, for all seek a clearer understanding of the past, present, and future. As a diviner, you strive to part the veils of space, time, and consciousness so that you can see clearly. You work to master spells of discernment, remote viewing, supernatural knowledge, and foresight.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Divination Savant|Wizard||Divination||2"
+					"subclassFeature": "Divination Savant|Mago|PHB-ES|Divination|PHB-ES|2"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Portent|Wizard||Divination||2"
+					"subclassFeature": "Portent|Mago|PHB-ES|Divination|PHB-ES|2"
 				}
 			]
 		},
@@ -1503,7 +1503,7 @@
 			"name": "Divination Savant",
 			"source": "PHB-ES",
 			"page": 116,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Divination",
 			"subclassSource": "PHB-ES",
@@ -1517,7 +1517,7 @@
 			"name": "Portent",
 			"source": "PHB-ES",
 			"page": 116,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Divination",
 			"subclassSource": "PHB-ES",
@@ -1532,7 +1532,7 @@
 			"name": "Expert Divination",
 			"source": "PHB-ES",
 			"page": 116,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Divination",
 			"subclassSource": "PHB-ES",
@@ -1546,7 +1546,7 @@
 			"name": "The Third Eye",
 			"source": "PHB-ES",
 			"page": 116,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Divination",
 			"subclassSource": "PHB-ES",
@@ -1593,7 +1593,7 @@
 			"name": "Greater Portent",
 			"source": "PHB-ES",
 			"page": 116,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Divination",
 			"subclassSource": "PHB-ES",
@@ -1607,7 +1607,7 @@
 			"name": "School of Enchantment",
 			"source": "PHB-ES",
 			"page": 117,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Enchantment",
 			"subclassSource": "PHB-ES",
@@ -1616,11 +1616,11 @@
 				"As a member of the School of Enchantment, you have honed your ability to magically entrance and beguile other people and monsters. Some enchanters are peacemakers who bewitch the violent to lay down their arms and charm the cruel into showing mercy. Others are tyrants who magically bind the unwilling into their service. Most enchanters fall somewhere in between.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Enchantment Savant|Wizard||Enchantment||2"
+					"subclassFeature": "Enchantment Savant|Mago|PHB-ES|Enchantment|PHB-ES|2"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Hypnotic Gaze|Wizard||Enchantment||2"
+					"subclassFeature": "Hypnotic Gaze|Mago|PHB-ES|Enchantment|PHB-ES|2"
 				}
 			]
 		},
@@ -1628,7 +1628,7 @@
 			"name": "Enchantment Savant",
 			"source": "PHB-ES",
 			"page": 117,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Enchantment",
 			"subclassSource": "PHB-ES",
@@ -1642,7 +1642,7 @@
 			"name": "Hypnotic Gaze",
 			"source": "PHB-ES",
 			"page": 117,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Enchantment",
 			"subclassSource": "PHB-ES",
@@ -1658,7 +1658,7 @@
 			"name": "Instinctive Charm",
 			"source": "PHB-ES",
 			"page": 117,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Enchantment",
 			"subclassSource": "PHB-ES",
@@ -1673,7 +1673,7 @@
 			"name": "Split Enchantment",
 			"source": "PHB-ES",
 			"page": 117,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Enchantment",
 			"subclassSource": "PHB-ES",
@@ -1687,7 +1687,7 @@
 			"name": "Alter Memories",
 			"source": "PHB-ES",
 			"page": 117,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Enchantment",
 			"subclassSource": "PHB-ES",
@@ -1704,7 +1704,7 @@
 			"page": 117,
 			"srd": true,
 			"basicRules": true,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Evocation",
 			"subclassSource": "PHB-ES",
@@ -1713,11 +1713,11 @@
 				"You focus your study on magic that creates powerful elemental effects such as bitter cold, searing flame, rolling thunder, crackling lightning, and burning acid. Some evokers find employment in military forces, serving as artillery to blast enemy armies from afar. Others use their spectacular power to protect the weak, while some seek their own gain as bandits, adventurers, or aspiring tyrants.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Evocation Savant|Wizard||Evocation||2"
+					"subclassFeature": "Evocation Savant|Mago|PHB-ES|Evocation|PHB-ES|2"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Sculpt Spells|Wizard||Evocation||2"
+					"subclassFeature": "Sculpt Spells|Mago|PHB-ES|Evocation|PHB-ES|2"
 				}
 			]
 		},
@@ -1727,7 +1727,7 @@
 			"page": 117,
 			"srd": true,
 			"basicRules": true,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Evocation",
 			"subclassSource": "PHB-ES",
@@ -1743,7 +1743,7 @@
 			"page": 117,
 			"srd": true,
 			"basicRules": true,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Evocation",
 			"subclassSource": "PHB-ES",
@@ -1759,7 +1759,7 @@
 			"page": 117,
 			"srd": true,
 			"basicRules": true,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Evocation",
 			"subclassSource": "PHB-ES",
@@ -1775,7 +1775,7 @@
 			"page": 117,
 			"srd": true,
 			"basicRules": true,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Evocation",
 			"subclassSource": "PHB-ES",
@@ -1791,7 +1791,7 @@
 			"page": 117,
 			"srd": true,
 			"basicRules": true,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Evocation",
 			"subclassSource": "PHB-ES",
@@ -1806,7 +1806,7 @@
 			"name": "School of Illusion",
 			"source": "PHB-ES",
 			"page": 118,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Illusion",
 			"subclassSource": "PHB-ES",
@@ -1815,11 +1815,11 @@
 				"You focus your studies on magic that dazzles the senses, befuddles the mind, and tricks even the wisest folk. Your magic is subtle, but the illusions crafted by your keen mind make the impossible seem real. Some illusionists—including many gnome wizards—are benign tricksters who use their spells to entertain. Others are more sinister masters of deception, using their illusions to frighten and fool others for their personal gain.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Illusion Savant|Wizard||Illusion||2"
+					"subclassFeature": "Illusion Savant|Mago|PHB-ES|Illusion|PHB-ES|2"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Improved Minor Illusion|Wizard||Illusion||2"
+					"subclassFeature": "Improved Minor Illusion|Mago|PHB-ES|Illusion|PHB-ES|2"
 				}
 			]
 		},
@@ -1827,7 +1827,7 @@
 			"name": "Illusion Savant",
 			"source": "PHB-ES",
 			"page": 118,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Illusion",
 			"subclassSource": "PHB-ES",
@@ -1841,7 +1841,7 @@
 			"name": "Improved Minor Illusion",
 			"source": "PHB-ES",
 			"page": 118,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Illusion",
 			"subclassSource": "PHB-ES",
@@ -1856,7 +1856,7 @@
 			"name": "Malleable Illusions",
 			"source": "PHB-ES",
 			"page": 118,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Illusion",
 			"subclassSource": "PHB-ES",
@@ -1870,7 +1870,7 @@
 			"name": "Illusory Self",
 			"source": "PHB-ES",
 			"page": 118,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Illusion",
 			"subclassSource": "PHB-ES",
@@ -1885,7 +1885,7 @@
 			"name": "Illusory Reality",
 			"source": "PHB-ES",
 			"page": 118,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Illusion",
 			"subclassSource": "PHB-ES",
@@ -1900,7 +1900,7 @@
 			"name": "School of Necromancy",
 			"source": "PHB-ES",
 			"page": 118,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Necromancy",
 			"subclassSource": "PHB-ES",
@@ -1910,11 +1910,11 @@
 				"Most people see necromancers as menacing, or even villainous, due to the close association with death. Not all necromancers are evil, but the forces they manipulate are considered taboo by many societies.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Necromancy Savant|Wizard||Necromancy||2"
+					"subclassFeature": "Necromancy Savant|Mago|PHB-ES|Necromancy|PHB-ES|2"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Grim Harvest|Wizard||Necromancy||2"
+					"subclassFeature": "Grim Harvest|Mago|PHB-ES|Necromancy|PHB-ES|2"
 				}
 			]
 		},
@@ -1922,7 +1922,7 @@
 			"name": "Grim Harvest",
 			"source": "PHB-ES",
 			"page": 118,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Necromancy",
 			"subclassSource": "PHB-ES",
@@ -1936,7 +1936,7 @@
 			"name": "Necromancy Savant",
 			"source": "PHB-ES",
 			"page": 118,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Necromancy",
 			"subclassSource": "PHB-ES",
@@ -1950,7 +1950,7 @@
 			"name": "Undead Thralls",
 			"source": "PHB-ES",
 			"page": 118,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Necromancy",
 			"subclassSource": "PHB-ES",
@@ -1972,7 +1972,7 @@
 			"name": "Inured to Undeath",
 			"source": "PHB-ES",
 			"page": 118,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Necromancy",
 			"subclassSource": "PHB-ES",
@@ -1986,7 +1986,7 @@
 			"name": "Command Undead",
 			"source": "PHB-ES",
 			"page": 118,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Necromancy",
 			"subclassSource": "PHB-ES",
@@ -2001,7 +2001,7 @@
 			"name": "School of Transmutation",
 			"source": "PHB-ES",
 			"page": 119,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Transmutation",
 			"subclassSource": "PHB-ES",
@@ -2011,11 +2011,11 @@
 				"Some transmuters are tinkerers and pranksters, turning people into toads and transforming copper into silver for fun and occasional profit. Others pursue their magical studies with deadly seriousness, seeking the power of the gods to make and destroy worlds.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Transmutation Savant|Wizard||Transmutation||2"
+					"subclassFeature": "Transmutation Savant|Mago|PHB-ES|Transmutation|PHB-ES|2"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Minor Alchemy|Wizard||Transmutation||2"
+					"subclassFeature": "Minor Alchemy|Mago|PHB-ES|Transmutation|PHB-ES|2"
 				}
 			]
 		},
@@ -2023,21 +2023,21 @@
 			"name": "Minor Alchemy",
 			"source": "PHB-ES",
 			"page": 119,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Transmutation",
 			"subclassSource": "PHB-ES",
 			"level": 2,
 			"header": 1,
 			"entries": [
-				"Starting at 2nd level when you select this school, you can temporarily alter the physical properties of one nonmagical object, changing it from one substance into another. You perform a special alchemical procedure on one object composed entirely of wood, stone (but not a gemstone), iron, copper, or silver, transforming it into a different one of those materials. For each 10 minutes you spend performing the procedure, you can transform up to 1 cubic foot of material. After 1 hour, or until you lose your {@status concentration} (as if you were {@status concentration||concentrating} on a spell), the material reverts to its original substance."
+				"Starting at 2nd level when you select this school, you can temporarily alter the physical properties of one nonmagical object, changing it from one substance into another. You perform a special alchemical procedure on one object composed entirely of wood, stone (but not a gemstone), iron, copper, or silver, transforming it into a different one of those materials. For each 10 minutes you spend performing the procedure, you can transform up to 1 cubic foot of material. After 1 hour, or until you lose your {@status concentration} (as if you were {@status concentration|PHB-ES|concentrating} on a spell), the material reverts to its original substance."
 			]
 		},
 		{
 			"name": "Transmutation Savant",
 			"source": "PHB-ES",
 			"page": 119,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Transmutation",
 			"subclassSource": "PHB-ES",
@@ -2051,7 +2051,7 @@
 			"name": "Transmuter's Stone",
 			"source": "PHB-ES",
 			"page": 119,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Transmutation",
 			"subclassSource": "PHB-ES",
@@ -2076,7 +2076,7 @@
 			"name": "Shapechanger",
 			"source": "PHB-ES",
 			"page": 119,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Transmutation",
 			"subclassSource": "PHB-ES",
@@ -2091,7 +2091,7 @@
 			"name": "Master Transmuter",
 			"source": "PHB-ES",
 			"page": 119,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Transmutation",
 			"subclassSource": "PHB-ES",
@@ -2144,7 +2144,7 @@
 					"page": 141
 				}
 			],
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Bladesinging",
 			"subclassSource": "TCE-ES",
@@ -2154,15 +2154,15 @@
 				"In combat, a bladesinger uses a series of intricate, elegant maneuvers that fend off harm and allow the bladesinger to channel magic into devastating attacks and a cunning defense. Many who have observed a bladesinger at work remember the display as one of the more beautiful experiences in their life, a glorious dance accompanied by a singing blade.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Training in War and Song (Bladesinging)|Wizard||Bladesinging|TCE|2"
+					"subclassFeature": "Training in War and Song (Bladesinging)|Mago|PHB-ES|Bladesinging|TCE-ES|2"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Bladesong|Wizard||Bladesinging|TCE|2"
+					"subclassFeature": "Bladesong|Mago|PHB-ES|Bladesinging|TCE-ES|2"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Bladesinger Styles|Wizard||Bladesinging|TCE|2"
+					"subclassFeature": "Bladesinger Styles|Mago|PHB-ES|Bladesinging|TCE-ES|2"
 				}
 			]
 		},
@@ -2176,7 +2176,7 @@
 					"page": 141
 				}
 			],
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Bladesinging",
 			"subclassSource": "TCE-ES",
@@ -2219,7 +2219,7 @@
 					"page": 141
 				}
 			],
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Bladesinging",
 			"subclassSource": "TCE-ES",
@@ -2251,7 +2251,7 @@
 					"page": 141
 				}
 			],
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Bladesinging",
 			"subclassSource": "TCE-ES",
@@ -2272,7 +2272,7 @@
 					"page": 141
 				}
 			],
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Bladesinging",
 			"subclassSource": "TCE-ES",
@@ -2292,7 +2292,7 @@
 					"page": 141
 				}
 			],
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Bladesinging",
 			"subclassSource": "TCE-ES",
@@ -2312,7 +2312,7 @@
 					"page": 141
 				}
 			],
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Bladesinging",
 			"subclassSource": "TCE-ES",
@@ -2326,7 +2326,7 @@
 			"name": "Order of Scribes",
 			"source": "TCE-ES",
 			"page": 77,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Scribes",
 			"subclassSource": "TCE-ES",
@@ -2336,11 +2336,11 @@
 				"Among wizards, the Order of Scribes is the most bookish. It takes many forms in different worlds, but its primary mission is the same everywhere: recording magical discoveries so that wizardry can flourish. And while all wizards value spellbooks, a wizard in the Order of Scribes magically awakens their book, turning it into a trusted companion. All wizards study books, but a wizardly scribe talks to theirs!",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Wizardly Quill|Wizard||Scribes|TCE|2"
+					"subclassFeature": "Wizardly Quill|Mago|PHB-ES|Scribes|TCE-ES|2"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Awakened Spellbook|Wizard||Scribes|TCE|2"
+					"subclassFeature": "Awakened Spellbook|Mago|PHB-ES|Scribes|TCE-ES|2"
 				}
 			]
 		},
@@ -2348,7 +2348,7 @@
 			"name": "Awakened Spellbook",
 			"source": "TCE-ES",
 			"page": 77,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Scribes",
 			"subclassSource": "TCE-ES",
@@ -2373,7 +2373,7 @@
 			"name": "Wizardly Quill",
 			"source": "TCE-ES",
 			"page": 77,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Scribes",
 			"subclassSource": "TCE-ES",
@@ -2397,7 +2397,7 @@
 			"name": "Manifest Mind",
 			"source": "TCE-ES",
 			"page": 78,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Scribes",
 			"subclassSource": "TCE-ES",
@@ -2417,7 +2417,7 @@
 			"name": "Master Scrivener",
 			"source": "TCE-ES",
 			"page": 78,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Scribes",
 			"subclassSource": "TCE-ES",
@@ -2434,7 +2434,7 @@
 			"name": "One with the Word",
 			"source": "TCE-ES",
 			"page": 78,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "Scribes",
 			"subclassSource": "TCE-ES",
@@ -2452,7 +2452,7 @@
 			"name": "War Magic",
 			"source": "XGE-ES",
 			"page": 59,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "War",
 			"subclassSource": "XGE-ES",
@@ -2463,11 +2463,11 @@
 				"In great battles, a war mage often works with evokers, abjurers, and other types of wizards. Evokers, in particular, sometimes tease war mages for splitting their attention between offense and defense. A war mage's typical response: \"What good is being able to throw a mighty {@spell fireball} if I die before I can cast it?\"",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Arcane Deflection|Wizard||War|XGE|2"
+					"subclassFeature": "Arcane Deflection|Mago|PHB-ES|War|XGE-ES|2"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Tactical Wit|Wizard||War|XGE|2"
+					"subclassFeature": "Tactical Wit|Mago|PHB-ES|War|XGE-ES|2"
 				}
 			]
 		},
@@ -2475,7 +2475,7 @@
 			"name": "Arcane Deflection",
 			"source": "XGE-ES",
 			"page": 59,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "War",
 			"subclassSource": "XGE-ES",
@@ -2490,7 +2490,7 @@
 			"name": "Tactical Wit",
 			"source": "XGE-ES",
 			"page": 59,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "War",
 			"subclassSource": "XGE-ES",
@@ -2504,7 +2504,7 @@
 			"name": "Power Surge",
 			"source": "XGE-ES",
 			"page": 59,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "War",
 			"subclassSource": "XGE-ES",
@@ -2520,7 +2520,7 @@
 			"name": "Durable Magic",
 			"source": "XGE-ES",
 			"page": 59,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "War",
 			"subclassSource": "XGE-ES",
@@ -2534,7 +2534,7 @@
 			"name": "Deflecting Shroud",
 			"source": "XGE-ES",
 			"page": 59,
-			"className": "Wizard",
+			"className": "Mago",
 			"classSource": "PHB-ES",
 			"subclassShortName": "War",
 			"subclassSource": "XGE-ES",
