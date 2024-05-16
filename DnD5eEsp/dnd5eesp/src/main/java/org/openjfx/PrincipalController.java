@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import org.openjfx.service.ActualizarConjuros;
 import org.openjfx.service.CargarTablas;
 import org.openjfx.service.FormarDocumento;
 import org.openjfx.service.OrdenarDocumentos;
@@ -21,6 +22,7 @@ public class PrincipalController implements Initializable {
     private FormarDocumento formarDocumentoService;
     private OrdenarDocumentos ordenarDocumentosOriginalService;
     private OrdenarDocumentos ordenarDocumentosInglesService;
+    private ActualizarConjuros actualizarConjurosService;
 
     //Botones
     @FXML
@@ -72,6 +74,12 @@ public class PrincipalController implements Initializable {
     private void ordenarOriginal() throws IOException {
         ordenarDocumentosOriginalService.reset();
         ordenarDocumentosOriginalService.start();
+    }
+
+    @FXML
+    private void actualizarConjuros() throws IOException {
+        actualizarConjurosService.reset();
+        actualizarConjurosService.start();
     }
 
     public void initialize() {
@@ -138,6 +146,21 @@ public class PrincipalController implements Initializable {
             progressIndicator.setProgress(1.0);
         });
         ordenarDocumentosInglesService.stateProperty().addListener((observable, oldState, newState) -> {
+            if (newState == State.SUCCEEDED || newState == State.CANCELLED || newState == State.FAILED) {
+                activarBotones();
+            } else if (newState == State.RUNNING) {
+                desactivarBotones();
+            }
+        });
+
+        actualizarConjurosService = new ActualizarConjuros();
+        actualizarConjurosService.setOnRunning(event -> {
+            progressIndicator.setProgress(ProgressIndicator.INDETERMINATE_PROGRESS);
+        });
+        actualizarConjurosService.setOnSucceeded(event -> {
+            progressIndicator.setProgress(1.0);
+        });
+        actualizarConjurosService.stateProperty().addListener((observable, oldState, newState) -> {
             if (newState == State.SUCCEEDED || newState == State.CANCELLED || newState == State.FAILED) {
                 activarBotones();
             } else if (newState == State.RUNNING) {

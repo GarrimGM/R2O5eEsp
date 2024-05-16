@@ -9,9 +9,9 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.StackPane?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="245.0" prefWidth="370.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.PrincipalController">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="370.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.PrincipalController">
    <children>
-      <Pane prefHeight="245.0" prefWidth="370.0">
+      <Pane prefHeight="323.0" prefWidth="370.0">
          <children>
             <Label layoutX="155.0" layoutY="29.0" text="5etools ESP" />
             <GridPane layoutX="35.0" layoutY="72.0" prefHeight="90.0" prefWidth="301.0">
@@ -25,17 +25,17 @@
                </rowConstraints>
                <children>
                   <Button fx:id="cargarTablas" alignment="TOP_CENTER" onAction="#cargarTablas" prefHeight="25.0" prefWidth="130.0" text="Carga de JSONs" />
-                  <Button fx:id="actualizarConjuros" prefHeight="25.0" prefWidth="130.0" text="Actualizar conjuros " GridPane.rowIndex="1" />
+                  <Button fx:id="actualizarConjuros" onAction="#actualizarConjuros" prefHeight="25.0" prefWidth="130.0" text="Actualizar conjuros " GridPane.rowIndex="1" />
                   <Button fx:id="ordenar" alignment="TOP_CENTER" onAction="#ordenar" prefHeight="25.0" prefWidth="130.0" text="Orden alfabético" GridPane.columnIndex="1" />
                   <Button fx:id="ordenarOriginal" alignment="TOP_CENTER" onAction="#ordenarOriginal" prefHeight="25.0" prefWidth="130.0" text="Orden original" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                </children>
             </GridPane>
-            <Button fx:id="formarDocumento" layoutX="45.0" layoutY="187.0" onAction="#formarDocumento" prefHeight="25.0" prefWidth="281.0" text="Generar Json final" />
+            <Button fx:id="formarDocumento" layoutX="45.0" layoutY="238.0" onAction="#formarDocumento" prefHeight="25.0" prefWidth="281.0" text="Generar Json final" />
          </children>
       </Pane>
       <Pane fx:id="overlay" prefHeight="245.0" prefWidth="370.0" style="-fx-background-color: rgba(0, 0, 0, 0.4);" visible="false">
          <children>
-            <ProgressIndicator fx:id="progressIndicator" layoutX="174.0" layoutY="103.0" progress="0.0" visible="false"/>
+            <ProgressIndicator fx:id="progressIndicator" layoutX="174.0" layoutY="103.0" progress="0.0" visible="false" />
          </children>
       </Pane>
    </children>

@@ -70,6 +70,37 @@ public class ImportTableRepository {
         return listaTabla;
     }
 
+    public static List<ImportTableModel> consultaDocumentSpellsActivos(){
+        List<ImportTableModel> listaTabla = new ArrayList<>();
+        try{
+            Connection connection = conectarDB();
+
+            PreparedStatement preparedStatement=connection.prepareStatement(
+                "SELECT * FROM ImportTable WHERE TableId=? AND Import=true");
+                preparedStatement.setString(1, "Spell");
+            ResultSet resultSet=preparedStatement.executeQuery();
+            while(resultSet.next()){
+                String tableId=resultSet.getString("TableId");
+                String jsonDocument=resultSet.getString("JsonDocument");
+                String fluffDocument=resultSet.getString("FluffDocument");
+                String fieldName=resultSet.getString("FieldName");
+                String fluffFieldName=resultSet.getString("FluffFieldName");
+                String typeTable=resultSet.getString("TypeTable");
+                boolean importDoc=resultSet.getBoolean("Import");
+
+                ImportTableModel dato = new ImportTableModel(
+                    tableId, jsonDocument, fieldName, fluffDocument, fluffFieldName, typeTable, importDoc);
+                listaTabla.add(dato);
+            }
+
+        }catch(Exception e){
+            System.out.println("Error al lanzar la consulta SQL");
+
+        }
+
+        return listaTabla;
+    }
+
     private static Connection conectarDB() {
         Connection connection = null;
         try {
