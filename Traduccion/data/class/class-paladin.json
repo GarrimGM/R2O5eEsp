@@ -2907,7 +2907,7 @@
 					"subclassFeature": "Canalizar Divinidad|Paladín|PHB-ES|Vigilantes|TCE-ES|3"
 				}
 			]
-		},
+		},		
 		{
 			"name": "Canalizar Divinidad",
 			"source": "TCE-ES",
@@ -2925,20 +2925,48 @@
 				"{@i Rasgo de Juramento de los Vigilantes de nivel 3}",
 				"Obtienes las siguientes opciones de Canalizar Divinidad. Consulta el rasgo de clase juramento Sagrado para saber cómo funciona Canalizar Divinidad.",
 				{
-					"type": "entries",
-					"name": "Voluntad del Vigilante",
-					"entries": [
-						"Puedes usar Canalizar Divinidad para revestirte del poder protector de tu fe. Como acción, puedes elegir una cantidad de criaturas que puedas ver a 30 pies o menos de ti igual a tu modificador por Carisma o menos (mínimo una criatura). Durante 1 minuto, tú y las criaturas elegidas tendréis ventaja en las tiradas de salvación de Inteligencia, Sabiduría y Carisma."
-					]
+					"type": "refSubclassFeature",
+					"subclassFeature": "Voluntad del Vigilante|Paladín|PHB-ES|Vigilantes|TCE-ES|3"
 				},
 				{
-					"type": "entries",
-					"name": "Expulsar a los Extraplanares",
-					"entries": [
-						"Puedes usar tu rasgo Canalizar Divinidad para castigar a los seres de otros mundos. Como acción, muestras tu símbolo sagrado y cada aberración, celestial, elemental, feérico o infernal a 30 pies o menos de ti que pueda oírte deberá hacer una tirada de salvación de Sabiduría. Si falla, será expulsada durante 1 minuto o hasta que reciba daño.",
-						"Una criatura expulsada deberá dedicar sus turnos a tratar de alejarse de ti todo lo que pueda y no podrá acabar su movimiento voluntariamente en ningún espacio que se encuentre a 30 pies o menos de ti. Tan solo podrá realizar la acción de {@action Correr|PHB-ES} o intentar escapar de un efecto que le impida moverse. Si no tiene adónde ir, la criatura podrá usar la acción de {@action Esquivar|PHB-ES}."
-					]
+					"type": "refSubclassFeature",
+					"subclassFeature": "Expulsar a los Extraplanares|Paladín|PHB-ES|Vigilantes|TCE-ES|3"
 				}
+			]
+		},
+		{
+			"name": "Expulsar a los Extraplanares",
+			"source": "TCE-ES",
+			"page": 74,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Vigilantes",
+			"subclassSource": "TCE-ES",
+			"level": 3,
+			"header": 2,
+			"consumes": {
+				"name": "Canalizar Divinidad"
+			},
+			"entries": [
+				"Puedes usar tu rasgo Canalizar Divinidad para castigar a los seres de otros mundos. Como acción, muestras tu símbolo sagrado y cada aberración, celestial, elemental, feérico o infernal a 30 pies o menos de ti que pueda oírte deberá hacer una tirada de salvación de Sabiduría. Si falla, será expulsada durante 1 minuto o hasta que reciba daño.",
+				"Una criatura expulsada deberá dedicar sus turnos a tratar de alejarse de ti todo lo que pueda y no podrá acabar su movimiento voluntariamente en ningún espacio que se encuentre a 30 pies o menos de ti. Tan solo podrá realizar la acción de {@action Correr|PHB-ES} o intentar escapar de un efecto que le impida moverse. Si no tiene adónde ir, la criatura podrá usar la acción de {@action Esquivar|PHB-ES}."
+			]
+		},
+		{
+			"name": "Voluntad del Vigilante",
+			"source": "TCE-ES",
+			"page": 74,
+			"className": "Paladín",
+			"classSource": "PHB-ES",
+			"subclassShortName": "Vigilantes",
+			"subclassSource": "TCE-ES",
+			"level": 3,
+			"header": 2,
+			"consumes": {
+				"name": "Canalizar Divinidad"
+			},
+			"entries": [
+				"Puedes usar Canalizar Divinidad para revestirte del poder protector de tu fe. Como acción, puedes elegir una cantidad de criaturas que puedas ver a 30 pies o menos de ti igual a tu modificador por Carisma o menos (mínimo una criatura). Durante 1 minuto, tú y las criaturas elegidas tendréis ventaja en las tiradas de salvación de Inteligencia, Sabiduría y Carisma."
 			]
 		},
 		{
