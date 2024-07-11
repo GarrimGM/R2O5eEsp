@@ -73,7 +73,10 @@
 			"type": "AF",
 			"rarity": "none",
 			"weight": 0.3125,
-			"age": "futuristic"
+			"age": "futuristic",
+			"miscTags": [
+				"CNS"
+			]
 		},
 		{
 			"name": "Rifle de caza",
@@ -147,7 +150,10 @@
 			"type": "AF",
 			"rarity": "none",
 			"weight": 0.1,
-			"age": "modern"
+			"age": "modern",
+			"miscTags": [
+				"CNS"
+			]
 		},
 		{
 			"name": "Balas modernas (10)",
@@ -162,6 +168,9 @@
 					"item": "Bala moderna",
 					"quantity": 10
 				}
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -215,7 +224,10 @@
 			"rarity": "none",
 			"weight": 0.2,
 			"value": 30,
-			"age": "renaissance"
+			"age": "renaissance",
+			"miscTags": [
+				"CNS"
+			]
 		},
 		{
 			"name": "Balas renacentistas (10)",
@@ -231,6 +243,9 @@
 					"item": "Bala renacentista",
 					"quantity": 10
 				}
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -1806,6 +1821,13 @@
 				"Mientras se sostiene esta rosa, obtiene el efecto visual inofensivo de {{item.detail1}}.",
 				"Mientras sostienes la rosa por el tallo, obtienes resistencia al daño de tipo {{item.resist}}. Si fueras a recibir más de 10 de daño de este tipo de una sola fuente (tras aplicar la resistencia), la rosa se desintegrará y, en su lugar, no recibirás ningún daño.",
 				"Como acción, puedes soplar los pétalos de la rosa para producir un cono de 20 pies de {{item.resist}}. Todas las criaturas situadas en el cono deberán hacer una tirada de salvación de Constitución con CD 15; sufrirán {@damage 3d10} de daño del tipo {{item.resist}} si la fallan o la mitad del daño si la superan. Al usar esta propiedad, la rosa se destruye."
+			]
+		},
+		{
+			"name": "Granada",
+			"source": "DMG-ES",
+			"entriesTemplate": [
+				"Un personaje puede, como acción, lanzar una granada a un punto situado a 60 pies o menos de distancia. Si dispone de un lanzagranadas, la distancia aumentará a 120 pies"
 			]
 		}
 	]

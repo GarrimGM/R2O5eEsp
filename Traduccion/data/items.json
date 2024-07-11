@@ -2075,6 +2075,9 @@
 			],
 			"poisonTypes": [
 				"ingerido"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -2579,6 +2582,9 @@
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos C|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -3013,6 +3019,9 @@
 			"age": "renaissance",
 			"entries": [
 				"Un personaje puede, como acción, encender la mecha de esta bomba y arrojarla a un punto que se encuentre a 60 pies o menos de distancia. Todas las criaturas situadas a 5 pies o menos del punto de impacto deberán tener éxito en una tirada de salvación de Destreza CD 12 o sufrirán {@damage 3d6} de daño de fuego."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -3642,6 +3651,9 @@
 			],
 			"poisonTypes": [
 				"inhalado"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -3713,6 +3725,9 @@
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos H|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			],
 			"fluff": {
 				"images": [
@@ -3849,7 +3864,10 @@
 				"Este veneno debe recogerse del cuerpo de un {@creature carroñero reptante|MM-ES} {@condition incapacitado|PHB-ES} o muerto. La criatura afectada por este veneno deberá superar una tirada de salvación de Constitución CD 13 o estará {@condition envenenado|PHB-ES|envenenada} durante 1 minuto. Cualquier criatura {@condition envenenado|PHB-ES|envenenada} de esta forma también estará {@condition paralizado|PHB-ES|paralizada}. La criatura puede repetir la tirada de salvación al final de cada uno de sus turnos, librándose del efecto si tiene éxito."
 			],
 			"poisonTypes": [
-				"Contacto"
+				"contacto"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -5548,6 +5566,9 @@
 			],
 			"poisonTypes": [
 				"herida"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -5563,6 +5584,9 @@
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos B|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			],
 			"fluff": {
 				"images": [
@@ -5710,6 +5734,9 @@
 				"Un personaje puede, como acción, encender una barra de dinamita y arrojarla a un punto que se encuentre a 60 pies o menos de distancia. Todas las criaturas situadas a 5 pies o menos del punto de impacto deberán hacer una tirada de salvación de Destreza CD 12, recibiendo {@damage 3d6} de daño contundente si la fallan, o la mitad de ese daño si la superan.",
 				"Se pueden agrupar varias barras de dinamita para que exploten al mismo tiempo. Cada barra adicional aumenta el daño en {@damage 1d6} (hasta un máximo de {@damage 10d6}) y el radio de la explosión en 5 pies (hasta un máximo de 20 pies).",
 				"También se le puede poner una mecha más larga, que hará que la dinamita explote pasado un tiempo, normalmente entre 1 y 6 asaltos. Tira iniciativa para la dinamita. Una vez hayan pasado el número de asaltos correspondiente, la dinamita explotará en esa posición en el orden de iniciativa."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -5874,6 +5901,9 @@
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos C|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -5955,6 +5985,9 @@
 			],
 			"poisonTypes": [
 				"inhalado"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -6053,7 +6086,7 @@
 							"items": [
 								"Eres inmune a enfermedades y venenos.",
 								"Utilizar la visión de rayos X del ojo no te hace sufrir {@condition cansancio|PHB-ES}.",
-								"Tendrás premoniciones, que te avisarán del peligro y, a menos que estes {@condition incapacitado|PHB-ES}, no podrás ser {@book sorprendido|PHB-ES|9|sorpresa}.",
+								"Tendrás premoniciones, que te avisarán del peligro y, a menos que estes {@condition incapacitado|PHB-ES}, no podrás ser {@status sorprendido|PHB-ES|sorpresa}.",
 								"Si comienzas tu turno con al menos 1 punto de golpe, recuperas {@dice 1d10} puntos de golpe.",
 								"Si una criatura posee esqueleto, puedes intentar convertir sus huesos en gelatina simplemente con tocarla con la {@item Mano de Vecna|DMG-ES}. Para ello, puedes usar una acción para realizar un ataque cuerpo a cuerpo contra una criatura dentro de tu alcance, empleando, a tu elección, tu bonificador de ataque cuerpo a cuerpo con armas o con conjuros. Si impactas, el objetivo deberá tener éxito en una tirada de salvación de Constitución CD 18 o sus puntos de golpe descenderán a 0.",
 								"Puedes utilizar una acción para lanzar {@spell deseo|PHB-ES}. No puedes volver a usar esta propiedad hasta que hayan pasado 30 días."
@@ -6421,9 +6454,13 @@
 			"rarity": "none",
 			"weight": 1,
 			"age": "modern",
+			"hasRefs": true,
 			"entries": [
-				"Un personaje puede, como acción, lanzar una granada a un punto situado a 60 pies o menos de distancia. Si dispone de un lanzagranadas, la distancia aumentará a 120 pies.",
+				"{#itemEntry Granada|DMG-ES}",
 				"Todas las criaturas que se encuentren a 20 pies o menos de una granada de fragmentación que explota deberán hacer una tirada de salvación de Destreza CD 15, sufriendo {@damage 5d6} de daño perforante si la fallan, o la mitad de ese daño si la superan."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -6796,8 +6833,9 @@
 			"rarity": "none",
 			"weight": 7,
 			"age": "modern",
+			"hasRefs": true,
 			"entries": [
-				"Un personaje puede, como acción, lanzar una granada a un punto situado a 60 pies o menos de distancia. Con un lanzagranadas, la distancia aumentará a 120 pies."
+				"{#itemEntry Granada|DMG-ES}"
 			]
 		},
 		{
@@ -6812,6 +6850,9 @@
 			"entries": [
 				"La pólvora suele emplearse para propulsar una bala a través del cañón de una pistola o rifle, o para hacer bombas con ella. Se vende en pequeños barriles de madera y en cuernos para pólvora resistentes al agua.",
 				"Prender fuego a un contenedor lleno de pólvora lo hará explotar, infligiendo daño de fuego a las criaturas situadas a 10 pies o menos de distancia de {@damage 3d6}. Una tirada de salvación de Destreza CD 12 con éxito reduce este daño a la mitad. Si se prende fuego a una onza (28 g) de pólvora, esta brillará con fuerza durante un asalto, emitiendo luz brillante en un radio de 30 pies y luz tenue 30 pies más allá."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -6826,6 +6867,9 @@
 			"entries": [
 				"La pólvora suele emplearse para propulsar una bala a través del cañón de una pistola o rifle, o para hacer bombas con ella. Se vende en pequeños barriles de madera y en cuernos para pólvora resistentes al agua.",
 				"Prender fuego a un contenedor lleno de pólvora lo hará explotar, infligiendo daño de fuego a las criaturas situadas a 10 pies o menos de distancia de {@damage 7d6}. Una tirada de salvación de Destreza CD 12 con éxito reduce este daño a la mitad. Si se prende fuego a una onza (28 g) de pólvora, esta brillará con fuerza durante un asalto, emitiendo luz brillante en un radio de 30 pies y luz tenue 30 pies más allá."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -6940,7 +6984,7 @@
 							"items": [
 								"Eres inmune a enfermedades y venenos.",
 								"Utilizar la visión de rayos X del ojo no te hace sufrir {@condition cansancio|PHB-ES}.",
-								"Tendrás premoniciones, que te avisarán del peligro y, a menos que estes {@condition incapacitado|PHB-ES}, no podrás ser {@book sorprendido|PHB-ES|9|sorpresa}.",
+								"Tendrás premoniciones, que te avisarán del peligro y, a menos que estes {@condition incapacitado|PHB-ES}, no podrás ser {@status sorprendido|PHB-ES|sorpresa}.",
 								"Si comienzas tu turno con al menos 1 punto de golpe, recuperas {@dice 1d10} puntos de golpe.",
 								"Si una criatura posee esqueleto, puedes intentar convertir sus huesos en gelatina simplemente con tocarla con la Mano de Vecna. Para ello, puedes usar una acción para realizar un ataque cuerpo a cuerpo contra una criatura dentro de tu alcance, empleando, a tu elección, tu bonificador de ataque cuerpo a cuerpo con armas o con conjuros. Si impactas, el objetivo deberá tener éxito en una tirada de salvación de Constitución CD 18 o sus puntos de golpe descenderán a 0.",
 								"Puedes utilizar una acción para lanzar {@spell deseo|PHB-ES}. No puedes volver a usar esta propiedad hasta que hayan pasado 30 días."
@@ -7766,7 +7810,7 @@
 				"Las {@italic piedras Ioun} se llaman así por Ioun, un dios del conocimiento y la profecía adorado en algunos mundos. Existen muchos tipos de estas {@italic piedras Ioun}, cada una de ellas con una combinación distinta de forma y color.",
 				"Si usas una acción para lanzar una de estas piedras al aire, esta se quedará orbitando alrededor de tu cabeza, a una distancia de {@dice 1d3} pies, y te proporcionará un beneficio. En cualquier momento posterior, otra criatura podrá emplear una acción para intentar agarrar o atrapar la piedra y separarla de ti, ya sea con una tirada de ataque con éxito contra CA 24 o superando una prueba de Destreza ({@skill Acrobacias|PHB-ES}) CD 24. Puedes utilizar una acción para coger y guardar la piedra, finalizando así su efecto.",
 				"Una piedra tiene CA 24, 10 puntos de golpe y resistencia a todo el daño. Mientras orbite sobre tu cabeza, se considera un objeto que llevas puesto.",
-				"No puedes ser {@book sorprendido|PHB-ES|9|sorpresa} mientras este romboide azul oscuro orbite a tu alrededor."
+				"No puedes ser {@status sorprendido|PHB-ES|sorpresa} mientras este romboide azul oscuro orbite a tu alrededor."
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos G|DMG-ES"
@@ -8560,6 +8604,9 @@
 			],
 			"poisonTypes": [
 				"inhalado"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -8823,6 +8870,9 @@
 			],
 			"poisonTypes": [
 				"ingerido"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -9283,6 +9333,9 @@
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos C|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -9299,6 +9352,9 @@
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos D|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -9318,6 +9374,9 @@
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos B|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -9334,6 +9393,9 @@
 			],
 			"poisonTypes": [
 				"contacto"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -9480,6 +9542,9 @@
 			],
 			"poisonTypes": [
 				"ingerido"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -9618,6 +9683,9 @@
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos B|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -9756,6 +9824,9 @@
 			"hasRefs": true,
 			"entries": [
 				"Cuando bebes esta poción, ganas resistencia al daño de tipo ácido durante 1 hora."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -9774,6 +9845,9 @@
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos B|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -9792,6 +9866,9 @@
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos C|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -9812,6 +9889,9 @@
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos A|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -9833,6 +9913,9 @@
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos D|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -9849,6 +9932,9 @@
 			"hasRefs": true,
 			"entries": [
 				"Cuando bebes esta poción, ganas resistencia al daño de tipo frío durante 1 hora."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -9867,6 +9953,9 @@
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos C|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -9882,6 +9971,9 @@
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos B|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -9903,6 +9995,9 @@
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos C|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -9919,6 +10014,9 @@
 			"hasRefs": true,
 			"entries": [
 				"Cuando bebes esta poción, ganas resistencia al daño de tipo fuego durante 1 hora."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -9941,6 +10039,9 @@
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos D|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -9957,6 +10058,9 @@
 			"hasRefs": true,
 			"entries": [
 				"Cuando bebes esta poción, ganas resistencia al daño de tipo fuerza durante 1 hora."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -9978,6 +10082,9 @@
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos C|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -9996,6 +10103,9 @@
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos C|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -10012,6 +10122,9 @@
 			"lootTables": [
 				"Tabla de Objetos Mágicos A|DMG-ES",
 				"Tabla de Objetos Mágicos B|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -10030,6 +10143,9 @@
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos B|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -10053,6 +10169,9 @@
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos A|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -10071,6 +10190,9 @@
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos C|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -10092,6 +10214,9 @@
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos B|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -10108,6 +10233,9 @@
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos D|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -10137,6 +10265,9 @@
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos C|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -10153,6 +10284,9 @@
 			"hasRefs": true,
 			"entries": [
 				"Cuando bebes esta poción, ganas resistencia al daño de tipo relámpago durante 1 hora."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -10167,6 +10301,9 @@
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos D|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -10185,6 +10322,9 @@
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos C|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -10201,6 +10341,9 @@
 			"hasRefs": true,
 			"entries": [
 				"Cuando bebes esta poción, ganas resistencia al daño de tipo necrótico durante 1 hora."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -10217,6 +10360,9 @@
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos B|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -10233,6 +10379,9 @@
 			"hasRefs": true,
 			"entries": [
 				"Cuando bebes esta poción, ganas resistencia al daño de tipo veneno durante 1 hora."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -10249,6 +10398,9 @@
 			"hasRefs": true,
 			"entries": [
 				"Cuando bebes esta poción, ganas resistencia al daño de tipo psíquico durante 1 hora."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -10265,6 +10417,9 @@
 			"hasRefs": true,
 			"entries": [
 				"Cuando bebes esta poción, ganas resistencia al daño de tipo radiante durante 1 hora."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -10283,6 +10438,9 @@
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos D|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -10304,6 +10462,9 @@
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos C|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -10325,6 +10486,9 @@
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos E|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -10340,6 +10504,9 @@
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos C|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -10356,6 +10523,9 @@
 			"lootTables": [
 				"Tabla de Objetos Mágicos D|DMG-ES",
 				"Tabla de Objetos Mágicos E|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -10372,6 +10542,9 @@
 			"hasRefs": true,
 			"entries": [
 				"Cuando bebes esta poción, ganas resistencia al daño de tipo trueno durante 1 hora."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -10387,6 +10560,9 @@
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos D|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -10402,6 +10578,9 @@
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos B|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			],
 			"fluff": {
 				"images": [
@@ -10430,6 +10609,9 @@
 			],
 			"poisonTypes": [
 				"herida"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -12245,6 +12427,9 @@
 			"lootTables": [
 				"Tabla de Objetos Mágicos I|DMG-ES"
 			],
+			"miscTags": [
+				"CNS"
+			],
 			"fluff": {
 				"images": [
 					{
@@ -12294,6 +12479,9 @@
 				"Utilizar una acción para leer el pergamino te encierra en una barrera {@condition invisible|PHB-ES} que se extiende alrededor de ti, formando un cilindro de 5 pies de radio y 10 de altura. Durante 5 minutos, esta barrera impide a las aberraciones entrar o afectar a cualquier cosa al otro lado de la barrera.",
 				"El cilindro se mueve contigo, manteniéndose centrado en ti. Sin embargo, si te desplazas de tal manera que una aberración fuera a acabar dentro del cilindro, el efecto termina.",
 				"Una criatura puede intentar sobreponerse al efecto de la barrera empleando una acción para realizar una prueba de Carisma CD 15. Si lo consigue, dejará de estar afectada por la barrera."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -12307,6 +12495,9 @@
 				"Utilizar una acción para leer el pergamino te encierra en una barrera {@condition invisible|PHB-ES} que se extiende alrededor de ti, formando un cilindro de 5 pies de radio y 10 de altura. Durante 5 minutos, esta barrera impide a las bestias entrar o afectar a cualquier cosa al otro lado de la barrera.",
 				"El cilindro se mueve contigo, manteniéndose centrado en ti. Sin embargo, si te desplazas de tal manera que una bestia fuera a acabar dentro del cilindro, el efecto termina.",
 				"Una criatura puede intentar sobreponerse al efecto de la barrera empleando una acción para realizar una prueba de Carisma CD 15. Si lo consigue, dejará de estar afectada por la barrera."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -12320,6 +12511,9 @@
 				"Utilizar una acción para leer el pergamino te encierra en una barrera {@condition invisible|PHB-ES} que se extiende alrededor de ti, formando un cilindro de 5 pies de radio y 10 de altura. Durante 5 minutos, esta barrera impide a los celestiales entrar o afectar a cualquier cosa al otro lado de la barrera.",
 				"El cilindro se mueve contigo, manteniéndose centrado en ti. Sin embargo, si te desplazas de tal manera que un celestial fuera a acabar dentro del cilindro, el efecto termina.",
 				"Una criatura puede intentar sobreponerse al efecto de la barrera empleando una acción para realizar una prueba de Carisma CD 15. Si lo consigue, dejará de estar afectada por la barrera."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -12333,6 +12527,9 @@
 				"Utilizar una acción para leer el pergamino te encierra en una barrera {@condition invisible|PHB-ES} que se extiende alrededor de ti, formando un cilindro de 5 pies de radio y 10 de altura. Durante 5 minutos, esta barrera impide a los elementales entrar o afectar a cualquier cosa al otro lado de la barrera.",
 				"El cilindro se mueve contigo, manteniéndose centrado en ti. Sin embargo, si te desplazas de tal manera que un elemental fuera a acabar dentro del cilindro, el efecto termina.",
 				"Una criatura puede intentar sobreponerse al efecto de la barrera empleando una acción para realizar una prueba de Carisma CD 15. Si lo consigue, dejará de estar afectada por la barrera."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -12346,6 +12543,9 @@
 				"Utilizar una acción para leer el pergamino te encierra en una barrera {@condition invisible|PHB-ES} que se extiende alrededor de ti, formando un cilindro de 5 pies de radio y 10 de altura. Durante 5 minutos, esta barrera impide a los feéricos entrar o afectar a cualquier cosa al otro lado de la barrera.",
 				"El cilindro se mueve contigo, manteniéndose centrado en ti. Sin embargo, si te desplazas de tal manera que un feérico fuera a acabar dentro del cilindro, el efecto termina.",
 				"Una criatura puede intentar sobreponerse al efecto de la barrera empleando una acción para realizar una prueba de Carisma CD 15. Si lo consigue, dejará de estar afectada por la barrera."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -12359,6 +12559,9 @@
 				"Utilizar una acción para leer el pergamino te encierra en una barrera {@condition invisible|PHB-ES} que se extiende alrededor de ti, formando un cilindro de 5 pies de radio y 10 de altura. Durante 5 minutos, esta barrera impide a los infernales entrar o afectar a cualquier cosa al otro lado de la barrera.",
 				"El cilindro se mueve contigo, manteniéndose centrado en ti. Sin embargo, si te desplazas de tal manera que un infernal fuera a acabar dentro del cilindro, el efecto termina.",
 				"Una criatura puede intentar sobreponerse al efecto de la barrera empleando una acción para realizar una prueba de Carisma CD 15. Si lo consigue, dejará de estar afectada por la barrera."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -12372,6 +12575,9 @@
 				"Utilizar una acción para leer el pergamino te encierra en una barrera {@condition invisible|PHB-ES} que se extiende alrededor de ti, formando un cilindro de 5 pies de radio y 10 de altura. Durante 5 minutos, esta barrera impide a las plantas entrar o afectar a cualquier cosa al otro lado de la barrera.",
 				"El cilindro se mueve contigo, manteniéndose centrado en ti. Sin embargo, si te desplazas de tal manera que una planta fuera a acabar dentro del cilindro, el efecto termina.",
 				"Una criatura puede intentar sobreponerse al efecto de la barrera empleando una acción para realizar una prueba de Carisma CD 15. Si lo consigue, dejará de estar afectada por la barrera."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -12385,6 +12591,9 @@
 				"Utilizar una acción para leer el pergamino te encierra en una barrera {@condition invisible|PHB-ES} que se extiende alrededor de ti, formando un cilindro de 5 pies de radio y 10 de altura. Durante 5 minutos, esta barrera impide a los muertos vivientes entrar o afectar a cualquier cosa al otro lado de la barrera.",
 				"El cilindro se mueve contigo, manteniéndose centrado en ti. Sin embargo, si te desplazas de tal manera que un muerto viviente fuera a acabar dentro del cilindro, el efecto termina.",
 				"Una criatura puede intentar sobreponerse al efecto de la barrera empleando una acción para realizar una prueba de Carisma CD 15. Si lo consigue, dejará de estar afectada por la barrera."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -12449,6 +12658,9 @@
 			],
 			"poisonTypes": [
 				"herida"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -12633,8 +12845,9 @@
 			"rarity": "none",
 			"weight": 2,
 			"age": "modern",
+			"hasRefs": true,
 			"entries": [
-				"Un personaje puede, como acción, lanzar una granada a un punto situado a 60 pies o menos de distancia. Si dispone de un lanzagranadas, la distancia aumentará a 120 pies.",
+				"{#itemEntry Granada|DMG-ES}",
 				"Un asalto después de aterrizar, una granada de humo producirá una nube de humo que creará una zona muy oscura en un radio de 20 pies. Un viento moderado (al menos 10 millas por hora) dispersará el humo en 4 asaltos y uno fuerte (al menos 20 millas por hora) lo disipará en 1 asalto."
 			]
 		},
@@ -12685,6 +12898,9 @@
 			"spellScrollLevel": 1,
 			"lootTables": [
 				"Tabla de Objetos Mágicos A|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -12707,6 +12923,9 @@
 			"lootTables": [
 				"Tabla de Objetos Mágicos A|DMG-ES",
 				"Tabla de Objetos Mágicos B|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -12728,6 +12947,9 @@
 			"spellScrollLevel": 3,
 			"lootTables": [
 				"Tabla de Objetos Mágicos B|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -12749,6 +12971,9 @@
 			"spellScrollLevel": 4,
 			"lootTables": [
 				"Tabla de Objetos Mágicos C|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -12770,6 +12995,9 @@
 			"spellScrollLevel": 5,
 			"lootTables": [
 				"Tabla de Objetos Mágicos C|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -12791,6 +13019,9 @@
 			"spellScrollLevel": 6,
 			"lootTables": [
 				"Tabla de Objetos Mágicos D|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -12812,6 +13043,9 @@
 			"spellScrollLevel": 7,
 			"lootTables": [
 				"Tabla de Objetos Mágicos D|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -12834,6 +13068,9 @@
 			"lootTables": [
 				"Tabla de Objetos Mágicos D|DMG-ES",
 				"Tabla de Objetos Mágicos E|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -12855,6 +13092,9 @@
 			"spellScrollLevel": 9,
 			"lootTables": [
 				"Tabla de Objetos Mágicos E|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -12875,6 +13115,9 @@
 			"spellScrollLevel": 0,
 			"lootTables": [
 				"Tabla de Objetos Mágicos A|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -12948,6 +13191,9 @@
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos I|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -14368,6 +14614,9 @@
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos I|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -14424,6 +14673,9 @@
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos I|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			],
 			"fluff": {
 				"images": [
@@ -14617,6 +14869,9 @@
 			],
 			"poisonTypes": [
 				"ingerido"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -14691,6 +14946,9 @@
 			],
 			"attachedSpells": [
 				"zona de la verdad|PHB-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -15740,6 +15998,9 @@
 			],
 			"poisonTypes": [
 				"herida"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -15835,6 +16096,9 @@
 			"wondrous": true,
 			"entries": [
 				"Esta pequeña cápsula está hecha de cera de abejas mezclada con arena y diversas plantas acuáticas encantadas. Una criatura que consuma una píldora antipresión ignorará los efectos de nadar a profundidades mayores a los 100 pies (mira \"{@book Entornos inusuales|DMG-ES|5|Entornos inusuales}\" en el capítulo 5 del Dungeon Master's Guide)."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -16128,7 +16392,10 @@
 			"basicRules": true,
 			"type": "FD",
 			"rarity": "none",
-			"value": 20
+			"value": 20,
+			"miscTags": [
+				"CNS"
+			]
 		},
 		{
 			"name": "Cerveza (Jarra)",
@@ -16138,7 +16405,10 @@
 			"basicRules": true,
 			"type": "FD",
 			"rarity": "none",
-			"value": 4
+			"value": 4,
+			"miscTags": [
+				"CNS"
+			]
 		},
 		{
 			"name": "Amuleto",
@@ -16245,6 +16515,9 @@
 			"poison": true,
 			"entries": [
 				"Puedes usar el veneno contenido en este vial para untar un arma cortante o perforante o hasta tres unidades de munición. Para hacer esto deberás invertir una acción. Cualquier criatura impactada por el arma o munición {@condition Envenenado|PHB-ES|envenenadas} deberá superar una tirada de salvación de Constitución CD 10 o sufrirá {@dice 1d4} de daño de veneno. Una vez aplicado al arma o munición, el veneno mantendrá su efectividad durante 1 minuto, tras el cual se habrá secado."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -16935,7 +17208,10 @@
 			"basicRules": true,
 			"type": "FD",
 			"rarity": "none",
-			"value": 30
+			"value": 30,
+			"miscTags": [
+				"CNS"
+			]
 		},
 		{
 			"name": "Canela",
@@ -17069,7 +17345,10 @@
 			"basicRules": true,
 			"type": "FD",
 			"rarity": "none",
-			"value": 20
+			"value": 20,
+			"miscTags": [
+				"CNS"
+			]
 		},
 		{
 			"name": "Saquito de componentes",
@@ -17685,14 +17964,17 @@
 			"value": 1500
 		},
 		{
-			"name": "Fine Wine (Bottle)",
+			"name": "Vino de calidad (Botella)",
 			"source": "PHB-ES",
 			"page": 158,
 			"srd": true,
 			"basicRules": true,
 			"type": "FD",
 			"rarity": "none",
-			"value": 1000
+			"value": 1000,
+			"miscTags": [
+				"CNS"
+			]
 		},
 		{
 			"name": "Caña de pescar",
@@ -18167,7 +18449,10 @@
 			"basicRules": true,
 			"type": "FD",
 			"rarity": "none",
-			"value": 10
+			"value": 10,
+			"miscTags": [
+				"CNS"
+			]
 		},
 		{
 			"name": "Trampa para cazar",
@@ -18459,7 +18744,10 @@
 			"basicRules": true,
 			"type": "FD",
 			"rarity": "none",
-			"value": 2
+			"value": 2,
+			"miscTags": [
+				"CNS"
+			]
 		},
 		{
 			"name": "Cerradura",
@@ -21178,6 +21466,9 @@
 				"Todo lo que portes contigo y uses también se agrandará durante este periodo. Al tirar el daño de las armas afectadas por la poción, debes utilizar tres veces el número de dados habitual; por ejemplo, una espada larga agrandada infligiría {@damage 3d8} de daño cortante (en lugar de {@dice 1d8}) o {@damage 3d10} (en lugar de {@dice 1d10}) si se esgrime a dos manos.",
 				"Al finalizar el efecto, los puntos de golpe que tengas por encima de tus puntos de golpe máximos se convertirán en puntos de golpe temporales.",
 				"Esta poción es un líquido de color blanco pálido fabricado a partir de la lengua de una almeja gigante y posee un aroma acre similar al de las algas en descomposición. Sin embargo, al consumirla su sabor es dulce."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -24263,6 +24554,9 @@
 			"entries": [
 				"Creado por una aguja especial, este tatuaje mágico contiene un único {@filter conjuro de nivel 1|spells|level=1} que queda grabado en tu piel con una aguja mágica. Para usar el tatuaje, debes sostener la aguja en contacto con tu piel y pronunciar la palabra de activación. La aguja se transforma en la tinta del tatuaje, que aparece entonces sobre la piel con el diseño que elijas. Una vez que tengas el tatuaje, podrás lanzar su conjuro sin necesidad de componentes materiales. El tatuaje resplandece débilmente mientras lanzas el conjuro y hasta que el conjuro termine. Una vez que finalice el conjuro, el tatuaje desaparecerá de tu piel.",
 				"El modificador por aptitud mágica es +3, el CD de las tiradas de salvación es 13 y el bonificador de ataque es +5."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -24275,6 +24569,9 @@
 			"entries": [
 				"Creado por una aguja especial, este tatuaje mágico contiene un único {@filter conjuro de nivel 2|spells|level=2} que queda grabado en tu piel con una aguja mágica. Para usar el tatuaje, debes sostener la aguja en contacto con tu piel y pronunciar la palabra de activación. La aguja se transforma en la tinta del tatuaje, que aparece entonces sobre la piel con el diseño que elijas. Una vez que tengas el tatuaje, podrás lanzar su conjuro sin necesidad de componentes materiales. El tatuaje resplandece débilmente mientras lanzas el conjuro y hasta que el conjuro termine. Una vez que finalice el conjuro, el tatuaje desaparecerá de tu piel.",
 				"El modificador por aptitud mágica es +3, el CD de las tiradas de salvación es 13 y el bonificador de ataque es +5."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -24287,6 +24584,9 @@
 			"entries": [
 				"Creado por una aguja especial, este tatuaje mágico contiene un único {@filter conjuro de nivel 3|spells|level=3} que queda grabado en tu piel con una aguja mágica. Para usar el tatuaje, debes sostener la aguja en contacto con tu piel y pronunciar la palabra de activación. La aguja se transforma en la tinta del tatuaje, que aparece entonces sobre la piel con el diseño que elijas. Una vez que tengas el tatuaje, podrás lanzar su conjuro sin necesidad de componentes materiales. El tatuaje resplandece débilmente mientras lanzas el conjuro y hasta que el conjuro termine. Una vez que finalice el conjuro, el tatuaje desaparecerá de tu piel.",
 				"El modificador por aptitud mágica es +4, el CD de las tiradas de salvación es 15 y el bonificador de ataque es +7."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -24299,6 +24599,9 @@
 			"entries": [
 				"Creado por una aguja especial, este tatuaje mágico contiene un único {@filter conjuro de nivel 4|spells|level=4} que queda grabado en tu piel con una aguja mágica. Para usar el tatuaje, debes sostener la aguja en contacto con tu piel y pronunciar la palabra de activación. La aguja se transforma en la tinta del tatuaje, que aparece entonces sobre la piel con el diseño que elijas. Una vez que tengas el tatuaje, podrás lanzar su conjuro sin necesidad de componentes materiales. El tatuaje resplandece débilmente mientras lanzas el conjuro y hasta que el conjuro termine. Una vez que finalice el conjuro, el tatuaje desaparecerá de tu piel.",
 				"El modificador por aptitud mágica es +4, el CD de las tiradas de salvación es 15 y el bonificador de ataque es +7."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -24311,6 +24614,9 @@
 			"entries": [
 				"Creado por una aguja especial, este tatuaje mágico contiene un único {@filter conjuro de nivel 5|spells|level=5} que queda grabado en tu piel con una aguja mágica. Para usar el tatuaje, debes sostener la aguja en contacto con tu piel y pronunciar la palabra de activación. La aguja se transforma en la tinta del tatuaje, que aparece entonces sobre la piel con el diseño que elijas. Una vez que tengas el tatuaje, podrás lanzar su conjuro sin necesidad de componentes materiales. El tatuaje resplandece débilmente mientras lanzas el conjuro y hasta que el conjuro termine. Una vez que finalice el conjuro, el tatuaje desaparecerá de tu piel.",
 				"El modificador por aptitud mágica es +5, el CD de las tiradas de salvación es 17 y el bonificador de ataque es +9."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -24323,6 +24629,9 @@
 			"entries": [
 				"Creado por una aguja especial, este tatuaje mágico contiene un único {@filter truco|spells|level=0} que queda grabado en tu piel con una aguja mágica. Para usar el tatuaje, debes sostener la aguja en contacto con tu piel y pronunciar la palabra de activación. La aguja se transforma en la tinta del tatuaje, que aparece entonces sobre la piel con el diseño que elijas. Una vez que tengas el tatuaje, podrás lanzar su conjuro sin necesidad de componentes materiales. El tatuaje resplandece débilmente mientras lanzas el conjuro y hasta que el conjuro termine. Una vez que finalice el conjuro, el tatuaje desaparecerá de tu piel.",
 				"El modificador por aptitud mágica es +3, el CD de las tiradas de salvación es 13 y el bonificador de ataque es +5."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -24827,6 +25136,9 @@
 			],
 			"attachedSpells": [
 				"dominar bestia|PHB-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -24841,6 +25153,9 @@
 			],
 			"attachedSpells": [
 				"dominar persona|PHB-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -24855,6 +25170,9 @@
 			],
 			"attachedSpells": [
 				"dominar monstruo|PHB-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -25459,6 +25777,9 @@
 			"value": 5000,
 			"entries": [
 				"Cualquiera que ingiera una raíz de ryath gana {@dice 2d4} puntos de golpe temporales. Una criatura que consuma más de una raíz en un periodo de 24 horas deberá superar una tirada de salvación de Constitución CD 13 o quedará {@condition envenenado|PHB-ES} durante 1 hora."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -25513,6 +25834,9 @@
 			"entries": [
 				"Estas bayas son amargas y de color marrón oscuro. Un ejemplar de arbusto de bayas de sinda tiene {@dice 4d6} frutos que crecen en sus ramas. Un arbusto al que se le arranquen todas las bayas tardará {@dice 1d4} meses en que le vuelvan a crecer. Los frutos que se recojan perderán su frescura y eficacia a las 24 horas.",
 				"Las bayas de sinda frescas pueden comerse crudas o aplastadas como condimento de una bebida, para aplacar el amargo sabor. Cuando una criatura consuma al menos diez bayas de sinda frescas obtendrá ventaja en tiradas de salvación contra enfermedades y veneno durante las siguientes 24 horas."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -25595,6 +25919,9 @@
 			"weight": 5,
 			"entries": [
 				"El tej es una bebida fermentada a base de miel de color ambarino. En Chult es más común y popular que la cerveza o el vino. Una jarra de tej se vende por 4 pc en Puerto Nyanzaru y 6 pc en Fuerte Beluarian. Un tonel de 1 galón cuesta 2 pp en la ciudad y 3 pp en la fortaleza."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -26201,6 +26528,9 @@
 			],
 			"attachedSpells": [
 				"ensueño|PHB-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -27308,6 +27638,9 @@
 			"rarity": "common",
 			"entries": [
 				"Al beber esta poción se obtiene el efecto de un conjuro de {@spell entender idiomas|PHB-ES} durante 1 hora. Este líquido es un brebaje claro con pedacitos de sal y hollín que se arremolinan en su interior."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -27318,6 +27651,9 @@
 			"rarity": "common",
 			"entries": [
 				"Al beber esta poción se obtienen estos beneficios durante las siguientes 8 horas: no se te puede dormir por medios mágicos y, además, puedes permanecer despierto durante un descanso largo y seguir obteniendo sus beneficios. Esta mezcla dulce de color ambarino no surte efecto en criaturas que no necesitan dormir, como los elfos."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -27533,7 +27869,8 @@
 				"Esta cuenta esponjosa, sin sabor y gelatinosa se disuelve en tu lengua y proporciona tanto alimento como las raciones de 1 día."
 			],
 			"miscTags": [
-				"CF/W"
+				"CF/W",
+				"CNS"
 			]
 		},
 		{
@@ -27545,6 +27882,9 @@
 			"wondrous": true,
 			"entries": [
 				"Esta cuenta esponjosa, sin sabor y gelatinosa se disuelve en un líquido, transformando hasta una pinta de ese fluido en agua potable fresca. El abalorio no tiene efecto en líquidos mágicos o sustancias dañinas como un veneno."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -28516,6 +28856,9 @@
 			"rarity": "legendary",
 			"entries": [
 				"Esta poción parece oro líquido con una sola escama de un {@filter dragón cromático|bestiary|search=chromatic dragon}, {@filter gema|bestiary|search=gem dragon} o {@filter metálico|bestiary|search=metallic dragon} suspendida en ella. Cuando la bebes, te transformas en un dragón adulto del mismo tipo que el dragón del que procedía la escama. La transformación dura 1 hora. Cualquier equipo que vistas o lleves se funde con tu nueva forma o cae al suelo (a tu elección). Hasta que el efecto termine, usas el perfil del dragón adulto en vez del tuyo, pero conservas tus idiomas, personalidad y recuerdos. No puedes usar la acción de cambiar de forma de un dragón ni sus acciones legendarias o en guarida."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -29574,6 +29917,9 @@
 			"entries": [
 				"Cuando bebas esta poción, obtendrás ventaja en una prueba de característica, tirada de ataque o tirada de salvación de tu elección que realices durante la siguiente hora.",
 				"Esta poción tiene la forma de una neblina dorada y burbujeante y se vierte como el agua."
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -30429,6 +30775,9 @@
 				"Poción de fuerza de gigante de las colinas|DMG-ES",
 				"Poción de fuerza de gigante de piedra|DMG-ES",
 				"Poción de fuerza de gigante de las tormentas|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -30446,6 +30795,9 @@
 				"Poción de curación mayor|DMG-ES",
 				"Poción de curación superior|DMG-ES",
 				"Poción de curación suprema|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -30469,6 +30821,9 @@
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos B|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -30678,6 +31033,9 @@
 			],
 			"lootTables": [
 				"Tabla de Objetos Mágicos C|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -30697,6 +31055,9 @@
 				"Pergamino de conjuro (Nivel 7)|DMG-ES",
 				"Pergamino de conjuro (Nivel 8)|DMG-ES",
 				"Pergamino de conjuro (Nivel 9)|DMG-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -30996,6 +31357,9 @@
 				"Tatuaje hechizado (Nivel 3)|TCE-ES",
 				"Tatuaje hechizado (Nivel 4)|TCE-ES",
 				"Tatuaje hechizado (Nivel 5)|TCE-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -31008,6 +31372,9 @@
 				"Poción para controlar la mente (bestia)|TftYP-ES",
 				"Poción para controlar la mente (humanoide)|TftYP-ES",
 				"Poción para controlar la mente (monstruo)|TftYP-ES"
+			],
+			"miscTags": [
+				"CNS"
 			]
 		},
 		{
@@ -31252,7 +31619,7 @@
 							"items": [
 								"You are immune to disease and poison.",
 								"Using the eye's X-ray vision never causes you to suffer {@condition exhaustion}.",
-								"You experience premonitions of danger and, unless you are {@condition incapacitated}, can't be {@quickref Surprise|PHB|3|0|surprised}.",
+								"You experience premonitions of danger and, unless you are {@condition incapacitated}, can't be {@status Surprise|PHB|surprised}.",
 								"If you start your turn with at least 1 hit point, you regain {@dice 1d10} hit points.",
 								"If a creature has a skeleton, you can attempt to turn its bones to jelly with a touch of the {@item Hand of Vecna}. You can do so by using an action to make a melee attack against a creature you can reach, using your choice of your melee attack bonus for weapons or spells. On a hit, the target must succeed on a DC 18 Constitution saving throw or drop to 0 hit points.",
 								"You can use an action to cast {@spell wish}. This property can't be used again until 30 days have passed."
